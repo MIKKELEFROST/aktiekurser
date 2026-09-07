@@ -189,12 +189,14 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       if (hi === lo) return;
       const from = chart.closes[lo], to = chart.closes[hi];
       const pct = from ? ((to - from) / from) * 100 : null;
+      const dates = chart.dates.slice(lo, hi + 1), closes = chart.closes.slice(lo, hi + 1);
       $('#selSummary').innerHTML = '<span class="font-bold" style="color:var(--text-primary)">Valgt periode:</span> '
         + K.fmtDate(chart.dates[lo]) + ' → ' + K.fmtDate(chart.dates[hi])
         + ' · ' + (hi - lo + 1) + ' handelsdage · '
         + K.fmtPrice(from) + ' → ' + K.fmtPrice(to) + ' ' + K.esc(chart.currency)
         + ' · <span class="num font-bold ' + K.dirClass(pct) + '">' + K.fmtPct(pct) + '</span>'
-        + ' <button id="selClear" class="range-btn" style="padding:2px 9px;margin-left:6px">Ryd</button>';
+        + ' <button id="selClear" class="range-btn" style="padding:2px 9px;margin-left:6px">Ryd</button>'
+        + '<br>' + peakLine(dates, closes, chart.currency, 'Højeste i markeringen');
       $('#selSummary').hidden = false;
       $('#selClear').addEventListener('click', () => {
         sel.a = sel.b = null; paintSelection(); $('#selSummary').hidden = true;
@@ -276,6 +278,36 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     return '<div class="stat py-2.5 flex items-baseline justify-between gap-4">'
       + '<span class="text-xs muted">' + lab + '</span>'
       + '<span class="text-sm num font-semibold ' + (cls || '') + '">' + value + '</span></div>';
+  }
+
+  // The change across a period only compares its two ends, which hides how far
+  // the price ran and fell back inside it. The peak within the window, and the
+  // distance from it, is what says whether a fall is still in progress.
+  function peakOf(dates, closes) {
+    if (!closes || closes.length < 2) return null;
+    let mi = 0;
+    for (let i = 1; i < closes.length; i++) if (closes[i] > closes[mi]) mi = i;
+    const peak = closes[mi], last = closes[closes.length - 1];
+    return {
+      value: peak,
+      date: dates[mi],
+      pct: peak ? ((last - peak) / peak) * 100 : null,
+      atPeak: mi === closes.length - 1,
+    };
+  }
+
+  function peakLine(dates, closes, currency, label) {
+    const pk = peakOf(dates, closes);
+    if (!pk) return '';
+    return '<span class="hint" tabindex="0" data-hint-title="Toppen i perioden" '
+      + 'data-hint="Den højeste lukkekurs inden for netop den viste periode, og hvor langt kursen ligger under den i dag. '
+      + 'Det er noget andet end all-time high, som gælder hele selskabets historie.">'
+      + label + '</span> <span class="num font-semibold">' + K.fmtPrice(pk.value) + ' ' + K.esc(currency) + '</span>'
+      + ' <span class="faint">den ' + K.fmtDate(pk.date) + '</span>'
+      + (pk.atPeak
+          ? ' · <span class="up font-bold">kursen står i periodens top</span>'
+          : ' · <span class="num font-bold ' + K.dirClass(pk.pct) + '">' + K.fmtPct(pk.pct) + '</span>'
+            + ' <span class="faint">fra det niveau</span>');
   }
 
   // ── Did-you-know facts ─────────────────────────────────────────────────
@@ -371,6 +403,9 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       ? K.fmtDate(s.dates[0]) + ' – ' + K.fmtDate(s.dates[s.dates.length - 1])
         + ' · ' + s.dates.length + ' handelsdage · '
         + '<span class="num font-bold ' + K.dirClass(move) + '">' + K.fmtPct(move) + '</span> i perioden'
+        + (s.closes.length > 1
+            ? '<br>' + peakLine(s.dates, s.closes, row.currency, 'Højeste i perioden')
+            : '')
       : 'Ingen handelsdage i den valgte periode.';
   }
 
