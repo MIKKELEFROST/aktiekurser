@@ -128,6 +128,25 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
         <input id="raiseR" type="range" min="0" max="10" step="0.5" value="0" aria-label="Årlig stigning i indskud">
       </div>
 
+      <div class="row adv" hidden style="grid-template-columns:1fr">
+        <div>
+          <span style="font-size:13px;font-weight:600">Beskatning</span><span class="hint-i" tabindex="0" role="note" aria-label="Om beskatning" data-hint-title="Beskatning" data-hint="Aktiesparekonto og lagerbeskattede ETF'er beskattes hvert år af årets værdistigning — også den del du ikke har solgt. Enkeltaktier i frit depot beskattes derimod først når du sælger, og det regner beregneren ikke på.">i</span>
+          <div class="flex gap-1.5 mt-2 flex-wrap" style="display:flex;flex-wrap:wrap;gap:6px">
+            <button type="button" class="scenario-btn" data-tax="none" aria-pressed="true">Uden skat</button>
+            <button type="button" class="scenario-btn" data-tax="ask" aria-pressed="false">Aktiesparekonto</button>
+            <button type="button" class="scenario-btn" data-tax="etf" aria-pressed="false">Lagerbeskattet ETF</button>
+          </div>
+          <p id="taxNote" class="text-xs faint mt-2" hidden></p>
+        </div>
+      </div>
+
+      <div class="row" id="taxRateWrap" hidden>
+        <label for="taxRate">
+          Skattesats<span class="hint-i" tabindex="0" role="note" aria-label="Om skattesatsen" data-hint-title="Skattesats" data-hint="Satsen trækkes af årets gevinst. Den er sat efter den valgte kontotype, men du kan rette den — satser og grænser fastsættes politisk og ændrer sig.">i</span>
+        </label>
+        <span><input id="taxRate" class="amount num" type="number" min="0" max="60" step="0.5" value="17"> <span class="unit">%</span></span>
+      </div>
+
       <!-- Advanced fields sit behind this switch. Simple mode leaves costs,
            the yearly rise and inflation out entirely rather than applying
            them invisibly — the note says so, so nothing is assumed silently. -->
@@ -135,8 +154,8 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
         <div class="flex items-start gap-2 text-sm">
           <input id="adv" type="checkbox" style="margin-top:3px;accent-color:var(--accent)">
           <div>
-            <label for="adv" style="cursor:pointer;font-weight:600">Aktivér avanceret beregner</label><span class="hint-i" tabindex="0" role="note" aria-label="Om avanceret beregner" data-hint-title="Avanceret beregner" data-hint="Åbner tre ekstra felter: årlige omkostninger, en årlig stigning i det du indbetaler, og omregning til nutidskroner. Uden dem regner beregneren rent på indskud og afkast.">i</span>
-            <span id="advNote" class="block text-xs faint mt-0.5">Tilføj omkostninger, årlig stigning i indskuddet og inflation. Uden dem regnes der kun på indskud og afkast.</span>
+            <label for="adv" style="cursor:pointer;font-weight:600">Aktivér avanceret beregner</label><span class="hint-i" tabindex="0" role="note" aria-label="Om avanceret beregner" data-hint-title="Avanceret beregner" data-hint="Åbner de faktorer der trækker fra i virkeligheden: beskatning, årlige omkostninger, en årlig stigning i det du indbetaler, og omregning til nutidskroner. Uden dem regner beregneren rent på indskud og afkast.">i</span>
+            <span id="advNote" class="block text-xs faint mt-0.5">Tilføj skat, omkostninger, årlig stigning i indskuddet og inflation. Uden dem regnes der kun på indskud og afkast.</span>
           </div>
         </div>
 
@@ -227,6 +246,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
               <th class="py-2 px-2 font-semibold">År</th>
               <th class="py-2 px-2 font-semibold text-right">Indbetalt i alt</th>
               <th class="py-2 px-2 font-semibold text-right">Afkast i alt</th>
+              <th class="py-2 px-2 font-semibold text-right" id="taxHead" hidden>Skat i året</th>
               <th class="py-2 px-2 font-semibold text-right">Værdi ved årets slutning</th>
             </tr></thead>
             <tbody id="tbody"></tbody>
@@ -242,9 +262,16 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
         <p class="mt-2">Den simple beregner regner kun på indskud og afkast. Slår du den avancerede
           til, trækkes omkostningerne af hele formuen hvert år — ikke af indbetalingen — og
           slutbeløbet kan omregnes til nutidskroner.</p>
-        <p class="mt-2"><strong>Skat er ikke med.</strong> Hvad du betaler afhænger af, om du investerer
-          frit, gennem en aktiesparekonto eller i pension, og satserne ændrer sig. Beløbene her er
-          derfor før skat — det faktiske udbetalte beløb bliver lavere.</p>
+        <p class="mt-2"><strong>Om skatten.</strong> Vælger du aktiesparekonto eller lagerbeskattet ETF,
+          regnes der efter lagerprincippet: årets værdistigning beskattes ved årsskiftet, uanset om du
+          har solgt noget. Et år i minus fremføres og modregnes i senere års gevinst. Skatten trækkes af
+          opsparingen, så den også koster det fremtidige afkast af de penge — på en aktiesparekonto sker
+          det automatisk, mens du med en ETF i et almindeligt depot typisk betaler med penge udefra;
+          så er kontoen større end her, men din formue i alt den samme.</p>
+        <p class="mt-2"><strong>Enkeltaktier regnes der ikke på.</strong> Køber du aktier for frie midler,
+          betaler du først skat den dag du sælger, og det udskudte skattebeløb arbejder for dig indtil da.
+          Det er en anden beregning end denne. Satser og grænser fastsættes politisk og ændrer sig — tjek
+          dem hos Skattestyrelsen frem for at stole på feltet her.</p>
         <p class="mt-2"><strong>Et fast afkast findes ikke.</strong> Beregningen lader formuen vokse med
           samme procent hvert eneste år. Virkelige aktier gør ikke det: de samme 7% i gennemsnit kan
           komme som +25%, -18% og +12%, og rækkefølgen betyder noget, når du indbetaler undervejs.
@@ -274,27 +301,73 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
   // on again does not lose what was typed.
   const ADVANCED = ['fee', 'raise'];
 
+  // Two account types that are taxed the same way — on the year's rise, sold or
+  // not — and differ only in the rate. The rates are starting points the reader
+  // can change, because they are set politically and do move.
+  const TAX = {
+    none: { rate: 0, note: '' },
+    ask: { rate: 17,
+      note: 'Aktiesparekonto. Satsen har været 17% siden ordningen kom i 2019, men den fastsættes '
+        + 'politisk. Der er også et loft over, hvor meget du må indskyde — beregneren håndhæver det ikke.' },
+    etf: { rate: 27,
+      note: 'Lagerbeskattet ETF eller investeringsselskab. For aktiebaserede fonde i frie midler er '
+        + 'gevinsten aktieindkomst: 27% op til progressionsgrænsen og 42% over. Beregneren bruger én '
+        + 'sats — sæt den højere, hvis dine årlige gevinster overstiger grænsen.' },
+  };
+  const taxMode = () => {
+    const on = document.querySelector('[data-tax][aria-pressed="true"]');
+    return on ? on.dataset.tax : 'none';
+  };
+
   // ── The projection ────────────────────────────────────────────────────
   // Monthly steps, deposit first: the month's contribution is added before the
   // month's return, which is how a savings plan actually behaves. The annual
   // return is converted geometrically, so twelve months compound to exactly the
   // yearly figure rather than to a twelfth of it twelve times over.
+  //
+  // Tax follows lagerprincippet: the year's rise is taxed at the turn of the
+  // year whether or not anything was sold, and the bill is taken out of the
+  // savings, so it costs the future return on that money too. A year in the red
+  // is carried forward and set against later gains, the way a negative tax on
+  // an aktiesparekonto is.
   function project(p) {
     const growth = Math.pow(1 + p.rate / 100, 1 / 12);
     const cost = Math.pow(1 - p.fee / 100, 1 / 12);
     const step = growth * cost;
 
     let value = p.start, paid = p.start, monthly = p.monthly;
-    const years = [{ year: 0, value: value, paid: paid, gain: 0 }];
+    let carried = 0, taxTotal = 0;
+    const years = [{ year: 0, value: value, paid: paid, gain: 0, tax: 0, taxTotal: 0 }];
 
     for (let y = 1; y <= p.years; y++) {
+      const opening = value;
+      let deposited = 0;
+
       for (let m = 0; m < 12; m++) {
         value += monthly;
-        paid += monthly;
+        deposited += monthly;
         value *= step;
       }
+      paid += deposited;
+
+      // What the year earned, with the year's own deposits taken back out —
+      // money you put in is not a gain.
+      let tax = 0;
+      if (p.taxRate > 0) {
+        const result = value - opening - deposited;
+        if (result > 0) {
+          const taxable = Math.max(0, result - carried);
+          carried = Math.max(0, carried - result);
+          tax = taxable * (p.taxRate / 100);
+          value -= tax;
+          taxTotal += tax;
+        } else {
+          carried += -result;
+        }
+      }
+
       monthly *= 1 + p.raise / 100;      // næste års indskud
-      years.push({ year: y, value: value, paid: paid, gain: value - paid });
+      years.push({ year: y, value: value, paid: paid, gain: value - paid, tax: tax, taxTotal: taxTotal });
     }
     return years;
   }
@@ -305,11 +378,16 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       return Number.isFinite(v) ? Math.min(Math.max(v, +el.min || -Infinity), +el.max || Infinity) : DEFAULTS[id];
     };
     const adv = $('#adv').checked;
+    const tax = adv ? taxMode() : 'none';
     return {
-      adv: adv,
+      adv: adv, tax: tax,
       start: n('start'), monthly: n('monthly'), years: Math.round(n('years')), rate: n('rate'),
       fee: adv ? n('fee') : 0,
       raise: adv ? n('raise') : 0,
+      // An emptied rate field falls back to the account type's own rate rather
+      // than to nothing, which would take the tax out of the projection.
+      taxRate: tax === 'none' ? 0
+        : (Number.isFinite(parseFloat($('#taxRate').value)) ? n('taxRate') : TAX[tax].rate),
       real: adv && $('#real').checked, infl: n('infl'),
     };
   }
@@ -318,6 +396,24 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     $('#adv').checked = on;
     document.querySelectorAll('.adv').forEach((el) => { el.hidden = !on; });
     if (!on) $('#inflWrap').hidden = true;
+    syncTax();
+  }
+
+  // The rate field and its note belong to the chosen account type, so they are
+  // only on screen when there is a tax to state a rate for.
+  function syncTax() {
+    const mode = taxMode(), on = $('#adv').checked && mode !== 'none';
+    $('#taxRateWrap').hidden = !on;
+    $('#taxNote').hidden = !on;
+    if (on) $('#taxNote').textContent = TAX[mode].note;
+  }
+
+  function setTaxMode(mode) {
+    document.querySelectorAll('[data-tax]').forEach((b) => {
+      b.setAttribute('aria-pressed', String(b.dataset.tax === mode));
+    });
+    if (mode !== 'none') $('#taxRate').value = TAX[mode].rate;
+    syncTax();
   }
 
   // ── Chart ─────────────────────────────────────────────────────────────
@@ -467,21 +563,32 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     }
 
     const note = $('#realNote');
-    note.hidden = !p.real;
+    const parts = [];
     if (p.real) {
-      note.textContent = 'I nutidskroner ved ' + p.infl.toString().replace('.', ',') + '% inflation. '
-        + 'Uden inflationsjustering står der ' + kr.format(Math.round(last.value)) + ' kr på kontoen.';
+      parts.push('I nutidskroner ved ' + p.infl.toString().replace('.', ',') + '% inflation. '
+        + 'Uden inflationsjustering står der ' + kr.format(Math.round(last.value)) + ' kr på kontoen.');
     }
+    if (last.taxTotal > 0) {
+      parts.push('Betalt i skat undervejs: ' + kr.format(Math.round(last.taxTotal)) + ' kr. '
+        + 'Uden årlig beskatning ville der stå '
+        + kr.format(Math.round(project(Object.assign({}, p, { taxRate: 0 })).pop().value / deflate)) + ' kr.');
+    }
+    note.hidden = !parts.length;
+    note.textContent = parts.join(' ');
 
     // The chart always shows kroner as they will be, since the shape of the
     // curve is the point; the deflated figure lives in the headline.
     drawChart(rows);
     hidePoint();
 
+    // The tax column only exists when there is tax to show.
+    const taxed = last.taxTotal > 0;
+    $('#taxHead').hidden = !taxed;
     $('#tbody').innerHTML = rows.slice(1).map((r) => '<tr class="border-t divider">'
       + '<td class="py-2 px-2 num faint">' + r.year + '</td>'
       + '<td class="py-2 px-2 num text-right">' + kr.format(Math.round(r.paid)) + '</td>'
-      + '<td class="py-2 px-2 num text-right up">' + kr.format(Math.round(r.gain)) + '</td>'
+      + '<td class="py-2 px-2 num text-right ' + (r.gain < 0 ? 'down' : 'up') + '">' + kr.format(Math.round(r.gain)) + '</td>'
+      + (taxed ? '<td class="py-2 px-2 num text-right muted">' + kr.format(Math.round(r.tax)) + '</td>' : '')
       + '<td class="py-2 px-2 num text-right font-semibold">' + kr.format(Math.round(r.value)) + '</td>'
       + '</tr>').join('');
 
@@ -515,6 +622,11 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
 
   $('#real').addEventListener('change', () => { $('#inflWrap').hidden = !$('#real').checked; render(); });
   $('#adv').addEventListener('change', (e) => { setAdvanced(e.target.checked); render(); });
+  $('#taxRate').addEventListener('input', render);
+  document.querySelectorAll('[data-tax]').forEach((b) => b.addEventListener('click', () => {
+    setTaxMode(b.dataset.tax);
+    render();
+  }));
 
   $('#reset').addEventListener('click', () => {
     Object.keys(DEFAULTS).forEach((id) => {
@@ -522,6 +634,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       const s = $('#' + id + 'R'); if (s) s.value = DEFAULTS[id];
     });
     $('#real').checked = false; $('#inflWrap').hidden = true;
+    setTaxMode('none');
     setAdvanced(false);          // tilbage til den simple beregner
     render();
   });
@@ -538,6 +651,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       if (p[k] !== DEFAULTS[k]) q.set(k, p[k]);
     });
     if (p.adv) q.set('adv', '1');
+    if (p.tax !== 'none') { q.set('tax', p.tax); q.set('taxRate', p.taxRate); }
     if (p.real) q.set('real', '1');
     const url = location.pathname + (q.toString() ? '?' + q : '');
     history.replaceState(null, '', url);
@@ -555,7 +669,12 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     // An advanced value in the link implies the advanced view, so a shared plan
     // opens showing the fields it was actually calculated with.
     const advImplied = q.get('adv') === '1' || q.get('real') === '1'
-      || ADVANCED.some((k) => q.has(k));
+      || q.has('tax') || ADVANCED.some((k) => q.has(k));
+    if (TAX[q.get('tax')]) {
+      setTaxMode(q.get('tax'));
+      const rate = parseFloat(q.get('taxRate'));
+      if (Number.isFinite(rate)) $('#taxRate').value = Math.min(Math.max(rate, 0), 60);
+    }
     setAdvanced(advImplied);
     if (advImplied && q.get('real') === '1') { $('#real').checked = true; $('#inflWrap').hidden = false; }
   }

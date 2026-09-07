@@ -66,6 +66,11 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
   // Presets are counted in trading sessions rather than calendar days, so a
   // window always holds the number of points it claims regardless of holidays.
   const PRESETS = [
+    // The short windows are counted so the move they report matches the
+    // list's columns: a trading week is five sessions, not seven days.
+    { key: '1d',  label: '1 dag',  sessions: 2 },
+    { key: '7d',  label: '7 dage', sessions: 6 },
+    { key: '14d', label: '14 dage', sessions: 11 },
     { key: '1m',  label: '1 md.',  sessions: 21 },
     { key: '3m',  label: '3 mdr.', sessions: 63 },
     { key: '6m',  label: '6 mdr.', sessions: 126 },
@@ -87,7 +92,8 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       }
       return out;
     }
-    const p = PRESETS.find((x) => x.key === state.range) || PRESETS[1];
+    // Fall back by key, not by position: the array grows at the front.
+    const p = PRESETS.find((x) => x.key === state.range) || PRESETS.find((x) => x.key === '3m');
 
     // Year to date is measured off the previous year's final close, the way a
     // YTD return is normally quoted — starting at the first session in January
@@ -474,7 +480,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     const chartCard = '<div class="card rounded-2xl p-4 md:p-5 mb-5">'
       + '<div class="flex items-center justify-between gap-3 flex-wrap mb-3">'
         + '<h2 class="text-sm font-bold">Kursudvikling</h2>'
-        + '<div class="flex items-center gap-1.5 flex-wrap">' + buttons
+        + '<div class="flex items-center gap-1.5 flex-wrap" style="display:flex;flex-wrap:wrap;gap:6px;align-items:center">' + buttons
           + '<span class="mx-1 faint text-xs" aria-hidden="true">|</span>'
           + '<label class="text-xs faint hint" tabindex="0" data-hint-title="Egen periode"'
           + ' data-hint="Vælg selv fra- og til-dato. Grafen viser kun handelsdage, så weekender og helligdage springes over.">Fra</label>'
