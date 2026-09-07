@@ -82,8 +82,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
 
       <div class="row">
         <label for="start">
-          <span class="hint" tabindex="0" data-hint-title="Startindskud"
-            data-hint="Det beløb du starter med. Det får hele perioden til at forrente sig og vejer derfor tungere end en enkelt månedlig indbetaling.">Startindskud</span>
+          Startindskud<span class="hint-i" tabindex="0" role="note" aria-label="Om Startindskud" data-hint-title="Startindskud" data-hint="Det beløb du starter med. Det får hele perioden til at forrente sig og vejer derfor tungere end en enkelt månedlig indbetaling.">i</span>
         </label>
         <span><input id="start" class="amount num" type="number" min="0" step="1000" value="25000"> <span class="unit">kr</span></span>
         <input id="startR" type="range" min="0" max="500000" step="1000" value="25000" aria-label="Startindskud">
@@ -91,8 +90,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
 
       <div class="row">
         <label for="monthly">
-          <span class="hint" tabindex="0" data-hint-title="Månedligt indskud"
-            data-hint="Det beløb du lægger til hver måned. Indbetalingen sker først på måneden, så den forrentes i den måned der følger.">Månedligt indskud</span>
+          Månedligt indskud<span class="hint-i" tabindex="0" role="note" aria-label="Om Månedligt indskud" data-hint-title="Månedligt indskud" data-hint="Det beløb du lægger til hver måned. Indbetalingen sker først på måneden, så den forrentes i den måned der følger.">i</span>
         </label>
         <span><input id="monthly" class="amount num" type="number" min="0" step="100" value="2000"> <span class="unit">kr</span></span>
         <input id="monthlyR" type="range" min="0" max="25000" step="100" value="2000" aria-label="Månedligt indskud">
@@ -100,8 +98,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
 
       <div class="row">
         <label for="years">
-          <span class="hint" tabindex="0" data-hint-title="Antal år"
-            data-hint="Hvor længe pengene får lov at stå. Tid er den enkeltfaktor der betyder mest: renters rente vokser eksponentielt, så de sidste år bidrager langt mere end de første.">Antal år</span>
+          Antal år<span class="hint-i" tabindex="0" role="note" aria-label="Om Antal år" data-hint-title="Antal år" data-hint="Hvor længe pengene får lov at stå. Tid er den enkeltfaktor der betyder mest: renters rente vokser eksponentielt, så de sidste år bidrager langt mere end de første.">i</span>
         </label>
         <span><input id="years" class="amount num" type="number" min="1" max="50" step="1" value="20"> <span class="unit">år</span></span>
         <input id="yearsR" type="range" min="1" max="50" step="1" value="20" aria-label="Antal år">
@@ -109,8 +106,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
 
       <div class="row">
         <label for="rate">
-          <span class="hint" tabindex="0" data-hint-title="Forventet årligt afkast"
-            data-hint="Det gennemsnitlige årlige afkast du regner med, før omkostninger og skat. Et globalt aktieindeks har historisk givet omkring 7% om året efter inflation — men med enkeltår fra -40% til +30%.">Forventet årligt afkast</span>
+          Forventet årligt afkast<span class="hint-i" tabindex="0" role="note" aria-label="Om Forventet årligt afkast" data-hint-title="Forventet årligt afkast" data-hint="Det gennemsnitlige årlige afkast du regner med, før omkostninger og skat. Et globalt aktieindeks har historisk givet omkring 7% om året efter inflation — men med enkeltår fra -40% til +30%.">i</span>
         </label>
         <span><input id="rate" class="amount num" type="number" min="-10" max="30" step="0.5" value="7"> <span class="unit">%</span></span>
         <input id="rateR" type="range" min="-5" max="20" step="0.5" value="7" aria-label="Forventet årligt afkast">
@@ -118,8 +114,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
 
       <div class="row">
         <label for="fee">
-          <span class="hint" tabindex="0" data-hint-title="Årlige omkostninger"
-            data-hint="Depotgebyr, kurtage og fondsomkostninger, tilsammen ofte kaldet ÅOP. De trækkes af formuen hvert år, så de æder sig ind i renters rente og koster meget mere end tallet lyder.">Årlige omkostninger</span>
+          Årlige omkostninger<span class="hint-i" tabindex="0" role="note" aria-label="Om Årlige omkostninger" data-hint-title="Årlige omkostninger" data-hint="Depotgebyr, kurtage og fondsomkostninger, tilsammen ofte kaldet ÅOP. De trækkes af formuen hvert år, så de æder sig ind i renters rente og koster meget mere end tallet lyder.">i</span>
         </label>
         <span><input id="fee" class="amount num" type="number" min="0" max="5" step="0.1" value="0.5"> <span class="unit">%</span></span>
         <input id="feeR" type="range" min="0" max="3" step="0.1" value="0.5" aria-label="Årlige omkostninger">
@@ -127,22 +122,22 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
 
       <div class="row">
         <label for="raise">
-          <span class="hint" tabindex="0" data-hint-title="Årlig stigning i indskud"
-            data-hint="Sæt indbetalingen op hvert år, for eksempel i takt med lønnen. 0% betyder at du lægger det samme beløb til side om ti år som i dag.">Indskud stiger med</span>
+          Indskud stiger med<span class="hint-i" tabindex="0" role="note" aria-label="Om Årlig stigning i indskud" data-hint-title="Årlig stigning i indskud" data-hint="Sæt indbetalingen op hvert år, for eksempel i takt med lønnen. 0% betyder at du lægger det samme beløb til side om ti år som i dag.">i</span>
         </label>
         <span><input id="raise" class="amount num" type="number" min="0" max="15" step="0.5" value="0"> <span class="unit">% / år</span></span>
         <input id="raiseR" type="range" min="0" max="10" step="0.5" value="0" aria-label="Årlig stigning i indskud">
       </div>
 
       <div class="mt-5 pt-4" style="border-top:1px solid var(--gridline)">
-        <label class="flex items-start gap-2 text-sm cursor-pointer">
+        <!-- The badge sits outside the label: inside it, a click on the icon
+             would toggle the checkbox as well as open the explanation. -->
+        <div class="flex items-start gap-2 text-sm">
           <input id="real" type="checkbox" style="margin-top:3px;accent-color:var(--accent)">
-          <span>
-            <span class="hint" tabindex="0" data-hint-title="Nutidskroner"
-              data-hint="Omregner slutbeløbet til hvad det ville kunne købe i dag. 1.000.000 kr om 30 år svarer ved 2% inflation til cirka 552.000 kr i nutidens priser — samme tal, mindre indkøbskurv.">Vis i nutidskroner</span>
+          <div>
+            <label for="real" style="cursor:pointer">Vis i nutidskroner</label><span class="hint-i" tabindex="0" role="note" aria-label="Om nutidskroner" data-hint-title="Nutidskroner" data-hint="Omregner slutbeløbet til hvad det ville kunne købe i dag. 1.000.000 kr om 30 år svarer ved 2% inflation til cirka 552.000 kr i nutidens priser — samme tal, mindre indkøbskurv.">i</span>
             <span class="block text-xs faint mt-0.5">Justér for inflation, så beløbet kan sammenlignes med priser i dag.</span>
-          </span>
-        </label>
+          </div>
+        </div>
         <div id="inflWrap" class="row mt-3" hidden>
           <label for="infl" class="text-xs">Inflation</label>
           <span><input id="infl" class="amount num" type="number" min="0" max="10" step="0.1" value="2"> <span class="unit">%</span></span>
@@ -163,23 +158,22 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
           <div>
             <p class="text-xs faint font-bold">
               <span class="swatch" style="background:var(--text-muted)"></span>
-              <span class="hint" tabindex="0" data-hint-title="Indbetalt"
-                data-hint="Summen af startindskuddet og alle de månedlige indbetalinger. Dine egne penge, uden afkast.">Indbetalt</span>
+              Indbetalt<span class="hint-i" tabindex="0" role="note" aria-label="Om Indbetalt" data-hint-title="Indbetalt" data-hint="Summen af startindskuddet og alle de månedlige indbetalinger. Dine egne penge, uden afkast.">i</span>
             </p>
             <p class="text-xl font-extrabold num mt-1"><span id="paid">–</span> <span class="text-xs faint">kr</span></p>
           </div>
           <div>
             <p class="text-xs faint font-bold">
               <span class="swatch" style="background:var(--accent)"></span>
-              <span class="hint" tabindex="0" data-hint-title="Afkast"
-                data-hint="Forskellen mellem slutværdien og det du har indbetalt. Det er de penge pengene har tjent — efter omkostninger, før skat.">Afkast</span>
+              Afkast<span class="hint-i" tabindex="0" role="note" aria-label="Om Afkast" data-hint-title="Afkast" data-hint="Forskellen mellem slutværdien og det du har indbetalt. Det er de penge pengene har tjent — efter omkostninger, før skat.">i</span>
             </p>
             <p class="text-xl font-extrabold num mt-1 up"><span id="gain">–</span> <span class="text-xs faint">kr</span></p>
           </div>
           <div>
             <p class="text-xs faint font-bold">
-              <span id="shareLabel" class="hint" tabindex="0" data-hint-title="Afkastets andel"
-                data-hint="Hvor stor en del af slutværdien der er afkast frem for dine egne indbetalinger. Andelen vokser kraftigt med tiden — det er renters rente sat på tal.">Afkastets andel</span>
+              <span id="shareLabel">Afkastets andel</span><span id="shareHint" class="hint-i" tabindex="0"
+                role="note" aria-label="Om afkastets andel" data-hint-title="Afkastets andel"
+                data-hint="Hvor stor en del af slutværdien der er afkast frem for dine egne indbetalinger. Andelen vokser kraftigt med tiden — det er renters rente sat på tal.">i</span>
             </p>
             <p class="text-xl font-extrabold num mt-1"><span id="share">–</span></p>
           </div>
@@ -429,18 +423,20 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     // A share of the final value only reads sensibly while the value exceeds
     // what was paid in. Below that the honest figure is the loss measured
     // against the deposits, so the label changes with it.
-    const label = $('#shareLabel');
+    const label = $('#shareLabel'), badge = $('#shareHint');
     if (last.gain < 0) {
       $('#share').textContent = last.paid > 0 ? Math.round((last.gain / last.paid) * 100) + '%' : '–';
       label.textContent = 'Tab af det indbetalte';
-      label.dataset.hintTitle = 'Tab af det indbetalte';
-      label.dataset.hint = 'Hvor stor en del af dine egne indbetalinger der er væk ved periodens slutning. '
+      badge.dataset.hintTitle = 'Tab af det indbetalte';
+      badge.setAttribute('aria-label', 'Om tab af det indbetalte');
+      badge.dataset.hint = 'Hvor stor en del af dine egne indbetalinger der er væk ved periodens slutning. '
         + 'Vises i stedet for afkastets andel, fordi der ikke er noget afkast at tage en andel af.';
     } else {
       $('#share').textContent = last.value > 0 ? Math.round((last.gain / last.value) * 100) + '%' : '–';
       label.textContent = 'Afkastets andel';
-      label.dataset.hintTitle = 'Afkastets andel';
-      label.dataset.hint = 'Hvor stor en del af slutværdien der er afkast frem for dine egne indbetalinger. '
+      badge.dataset.hintTitle = 'Afkastets andel';
+      badge.setAttribute('aria-label', 'Om afkastets andel');
+      badge.dataset.hint = 'Hvor stor en del af slutværdien der er afkast frem for dine egne indbetalinger. '
         + 'Andelen vokser kraftigt med tiden — det er renters rente sat på tal.';
     }
 

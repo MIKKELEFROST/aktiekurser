@@ -509,7 +509,21 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
 
     const right = '<div class="card rounded-2xl p-5">'
       + '<h2 class="text-sm font-bold mb-2">Interval og udvikling</h2>'
-      + '<div class="my-3">' + K.rangeBar(r, 260, 22) + '</div>'
+      // The bar carried no scale: a line with a dot on it says nothing on its
+      // own. The two ends and the dot are now named on the page rather than
+      // only in the rows underneath.
+      + (r.week52pos == null ? '' : '<div class="my-3" style="max-width:280px">'
+        + '<p class="text-xs faint mb-1">Kursen i dag mellem årets laveste og højeste</p>'
+        + '<div class="flex items-center justify-between text-xs num muted mb-1"'
+          + ' style="display:flex;justify-content:space-between">'
+          + '<span>' + K.fmtPrice(r.week52_low) + '</span>'
+          + '<span>' + K.fmtPrice(r.week52_high) + '</span>'
+        + '</div>'
+        + K.rangeBar(r, 280, 22)
+        + '<p class="text-xs muted mt-2">Prikken er <strong class="num" style="color:var(--text-primary)">'
+          + K.fmtPrice(r.price) + ' ' + K.esc(cur) + '</strong> — '
+          + Math.round(r.week52pos * 100) + '% oppe i intervallet.</p>'
+      + '</div>')
       + statRow('52 ugers laveste', K.fmtPrice(r.week52_low), '', 'Den laveste kurs aktien har været i det seneste år.')
       + statRow('52 ugers højeste', K.fmtPrice(r.week52_high), '', 'Den højeste kurs aktien har været i det seneste år.')
       + statRow('Placering i intervallet', r.week52pos == null ? '–' : Math.round(r.week52pos * 100) + '%', '',

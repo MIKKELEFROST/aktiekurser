@@ -103,6 +103,21 @@ th[aria-sort="none"]       .caret::after { content: "⌄"; opacity: .45; }
 }
 th .hint { cursor: pointer; }           /* header is still a sort control */
 
+/* The same explanation, carried by a badge beside the text instead of under
+   it. Used where there are few enough labels for an icon to read as an
+   invitation; a dense table header would collect dozens of them. */
+.hint-i {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 15px; height: 15px; margin-left: 5px; vertical-align: 1px;
+  border: 1px solid var(--hairline); border-radius: 50%;
+  background: transparent; color: var(--text-muted);
+  font-size: 10px; font-weight: 800; font-style: normal; line-height: 1;
+  cursor: help; user-select: none; flex: 0 0 auto;
+}
+.hint-i:hover, .hint-i:focus-visible {
+  color: var(--text-primary); border-color: var(--text-muted);
+}
+
 #kl-hint {
   position: fixed;
   z-index: 60;
