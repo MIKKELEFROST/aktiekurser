@@ -18,6 +18,9 @@
 
   function fmtBig(n) {
     if (n == null) return '–';
+    // Above a trillion, whole units would round 5.563 to "6" and lose the
+    // figure entirely, so the largest tier keeps two decimals.
+    if (n >= 1e12) return da2.format(n / 1e12) + ' bio.';
     if (n >= 1e9) return da0.format(n / 1e9) + ' mia.';
     if (n >= 1e6) return da0.format(n / 1e6) + ' mio.';
     if (n >= 1e3) return da0.format(n / 1e3) + ' t.';
