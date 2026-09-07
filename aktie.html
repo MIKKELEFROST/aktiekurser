@@ -294,10 +294,6 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
         flat ? 'Kursen står i sit højeste niveau nogensinde.'
              : 'Højeste kurs var ' + K.fmtPrice(r.ath) + ' ' + K.esc(r.currency) + ' den ' + K.fmtDate(r.ath_date) + '.');
     }
-    if (r.above_atl_pct != null) {
-      card('Over bunden nogensinde', K.fmtPct(r.above_atl_pct), 'up',
-        'Laveste kurs var ' + K.fmtPrice(r.atl) + ' ' + K.esc(r.currency) + ' den ' + K.fmtDate(r.atl_date) + '.');
-    }
     if (r.first_trade_date) {
       const years = Math.floor((Date.now() - new Date(r.first_trade_date)) / 31557600000);
       card('År på børsen', years, '', 'Første registrerede kurs ' + K.fmtDate(r.first_trade_date) + '.');
@@ -487,9 +483,6 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       + (r.drawdown_pct != null ? statRow('Fra toppen nogensinde', K.fmtPct(r.drawdown_pct), K.dirClass(r.drawdown_pct),
           'Hvor langt kursen ligger under sin højeste nogensinde, ' + K.fmtPrice(r.ath) + ' ' + K.esc(cur)
           + ' den ' + K.fmtDate(r.ath_date) + '. Baseret på lukkekurser.') : '')
-      + (r.above_atl_pct != null ? statRow('Over bunden nogensinde', K.fmtPct(r.above_atl_pct), 'up',
-          'Hvor langt kursen ligger over sin laveste nogensinde, ' + K.fmtPrice(r.atl) + ' ' + K.esc(cur)
-          + ' den ' + K.fmtDate(r.atl_date) + '.') : '')
       + (conv
           ? statRow('Kurs omregnet', '≈ ' + K.fmtPrice(r.price_dkk) + ' DKK', '',
               'Kursen ganget med ECB’s referencekurs. Et beregnet tal, ikke en noteret kurs — derfor ≈.')

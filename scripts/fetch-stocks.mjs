@@ -412,8 +412,7 @@ function normalise(result, company, usdDkk) {
       week52_low: round(meta.fiftyTwoWeekLow),
       week52_high: round(meta.fiftyTwoWeekHigh),
       stats: computeStats(dates, closes, volumes),
-      ath: null, ath_date: null, atl: null, atl_date: null,
-      first_trade_date: null, drawdown_pct: null, above_atl_pct: null,
+      ath: null, ath_date: null, first_trade_date: null, drawdown_pct: null,
       spark: closes.slice(-SPARK_POINTS),
       quote_time: meta.regularMarketTime ? new Date(meta.regularMarketTime * 1000).toISOString() : null,
     },
@@ -506,13 +505,10 @@ async function main() {
       const all = monthly.concat(recent);
 
       const hi = all.reduce((a, x) => (x.close > a.close ? x : a));
-      const lo = all.reduce((a, x) => (x.close < a.close ? x : a));
       r.ath = round(hi.close); r.ath_date = hi.date;
-      r.atl = round(lo.close); r.atl_date = lo.date;
       r.first_trade_date = monthly[0].date;
       // Drawdown is negative or zero; a stock at its peak reads 0.
       r.drawdown_pct = hi.close ? round(((r.price - hi.close) / hi.close) * 100, 2) : null;
-      r.above_atl_pct = lo.close ? round(((r.price - lo.close) / lo.close) * 100, 2) : null;
       athOk++;
     } catch { /* uden all-time-data står felterne tomme */ }
   });
