@@ -1,0 +1,533 @@
+<!-- Title: Investeringsberegner -->
+<!-- filepath: beregner.html -->
+<!DOCTYPE html>
+<html lang="da" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Investeringsberegner</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/kursliste.css">
+<script>
+tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] } } } }
+</script>
+<style>
+  /* ── Inputs ─────────────────────────────────────────────────────────── */
+  .row { display: grid; grid-template-columns: 1fr auto; align-items: baseline; gap: 8px 12px; }
+  .row + .row { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--gridline); }
+  .row label { font-size: 13px; font-weight: 600; }
+  .row .unit { font-size: 12px; color: var(--text-muted); }
+
+  .amount {
+    width: 8.5rem; text-align: right; background: transparent; color: var(--text-primary);
+    border: 1px solid var(--hairline); border-radius: 8px; padding: 6px 9px;
+    font-size: 14px; font-weight: 700; font-variant-numeric: tabular-nums;
+  }
+  .amount:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+  /* The spinners are redundant next to the sliders and cramp the digits. */
+  .amount::-webkit-outer-spin-button, .amount::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+  .amount { -moz-appearance: textfield; }
+
+  input[type="range"] { grid-column: 1 / -1; width: 100%; accent-color: var(--accent); }
+
+  /* ── Result ─────────────────────────────────────────────────────────── */
+  .headline { font-size: clamp(2rem, 6vw, 3.25rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1; }
+  .split { display: grid; gap: 1px; background: var(--gridline); border-radius: 12px; overflow: hidden; }
+  .split > div { background: var(--surface-1); padding: 12px 14px; }
+  @media (min-width: 560px) { .split { grid-template-columns: repeat(3, 1fr); } }
+
+  .swatch { display: inline-block; width: 10px; height: 10px; border-radius: 3px; vertical-align: baseline; }
+
+  /* ── Chart ──────────────────────────────────────────────────────────── */
+  .chart-wrap { position: relative; }
+  #tooltip {
+    position: absolute; pointer-events: none; opacity: 0; transition: opacity .12s;
+    background: var(--surface-1); border: 1px solid var(--hairline);
+    border-radius: 8px; padding: 7px 10px; font-size: 12px; white-space: nowrap;
+    box-shadow: 0 4px 14px rgba(0,0,0,.10); z-index: 5;
+  }
+  .crosshair { pointer-events: none; }
+
+  .scenario-btn {
+    border: 1px solid var(--hairline); color: var(--text-secondary); background: transparent;
+    border-radius: 999px; padding: 4px 12px; font-size: 12px; font-weight: 700; cursor: pointer;
+  }
+  .scenario-btn[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+  @media (prefers-reduced-motion: reduce) { #tooltip { transition: none; } }
+</style>
+</head>
+
+<body class="font-sans antialiased">
+<header id="sitenav"></header>
+
+<div class="max-w-[1200px] mx-auto px-4 py-8">
+
+  <div class="mb-6">
+    <h1 class="text-2xl md:text-3xl font-extrabold tracking-tight" style="text-wrap:balance">Investeringsberegner</h1>
+    <p class="text-sm mt-1 muted" style="max-width:68ch">
+      Se hvad et startindskud og et fast månedligt beløb vokser til over tid. Beregningen er en
+      fremskrivning med et <em>antaget</em> fast afkast — ikke en forudsigelse. Rigtige aktiekurser
+      svinger, og et enkelt år kan ligge langt fra gennemsnittet.
+    </p>
+  </div>
+
+  <div class="grid lg:grid-cols-[minmax(300px,380px)_1fr] gap-5 items-start">
+
+    <!-- ─── Inputs ──────────────────────────────────────────────────────── -->
+    <form id="form" class="card rounded-2xl p-5" autocomplete="off">
+      <h2 class="text-sm font-extrabold uppercase tracking-wide faint mb-4">Din plan</h2>
+
+      <div class="row">
+        <label for="start">
+          <span class="hint" tabindex="0" data-hint-title="Startindskud"
+            data-hint="Det beløb du starter med. Det får hele perioden til at forrente sig og vejer derfor tungere end en enkelt månedlig indbetaling.">Startindskud</span>
+        </label>
+        <span><input id="start" class="amount num" type="number" min="0" step="1000" value="25000"> <span class="unit">kr</span></span>
+        <input id="startR" type="range" min="0" max="500000" step="1000" value="25000" aria-label="Startindskud">
+      </div>
+
+      <div class="row">
+        <label for="monthly">
+          <span class="hint" tabindex="0" data-hint-title="Månedligt indskud"
+            data-hint="Det beløb du lægger til hver måned. Indbetalingen sker først på måneden, så den forrentes i den måned der følger.">Månedligt indskud</span>
+        </label>
+        <span><input id="monthly" class="amount num" type="number" min="0" step="100" value="2000"> <span class="unit">kr</span></span>
+        <input id="monthlyR" type="range" min="0" max="25000" step="100" value="2000" aria-label="Månedligt indskud">
+      </div>
+
+      <div class="row">
+        <label for="years">
+          <span class="hint" tabindex="0" data-hint-title="Antal år"
+            data-hint="Hvor længe pengene får lov at stå. Tid er den enkeltfaktor der betyder mest: renters rente vokser eksponentielt, så de sidste år bidrager langt mere end de første.">Antal år</span>
+        </label>
+        <span><input id="years" class="amount num" type="number" min="1" max="50" step="1" value="20"> <span class="unit">år</span></span>
+        <input id="yearsR" type="range" min="1" max="50" step="1" value="20" aria-label="Antal år">
+      </div>
+
+      <div class="row">
+        <label for="rate">
+          <span class="hint" tabindex="0" data-hint-title="Forventet årligt afkast"
+            data-hint="Det gennemsnitlige årlige afkast du regner med, før omkostninger og skat. Et globalt aktieindeks har historisk givet omkring 7% om året efter inflation — men med enkeltår fra -40% til +30%.">Forventet årligt afkast</span>
+        </label>
+        <span><input id="rate" class="amount num" type="number" min="-10" max="30" step="0.5" value="7"> <span class="unit">%</span></span>
+        <input id="rateR" type="range" min="-5" max="20" step="0.5" value="7" aria-label="Forventet årligt afkast">
+      </div>
+
+      <div class="row">
+        <label for="fee">
+          <span class="hint" tabindex="0" data-hint-title="Årlige omkostninger"
+            data-hint="Depotgebyr, kurtage og fondsomkostninger, tilsammen ofte kaldet ÅOP. De trækkes af formuen hvert år, så de æder sig ind i renters rente og koster meget mere end tallet lyder.">Årlige omkostninger</span>
+        </label>
+        <span><input id="fee" class="amount num" type="number" min="0" max="5" step="0.1" value="0.5"> <span class="unit">%</span></span>
+        <input id="feeR" type="range" min="0" max="3" step="0.1" value="0.5" aria-label="Årlige omkostninger">
+      </div>
+
+      <div class="row">
+        <label for="raise">
+          <span class="hint" tabindex="0" data-hint-title="Årlig stigning i indskud"
+            data-hint="Sæt indbetalingen op hvert år, for eksempel i takt med lønnen. 0% betyder at du lægger det samme beløb til side om ti år som i dag.">Indskud stiger med</span>
+        </label>
+        <span><input id="raise" class="amount num" type="number" min="0" max="15" step="0.5" value="0"> <span class="unit">% / år</span></span>
+        <input id="raiseR" type="range" min="0" max="10" step="0.5" value="0" aria-label="Årlig stigning i indskud">
+      </div>
+
+      <div class="mt-5 pt-4" style="border-top:1px solid var(--gridline)">
+        <label class="flex items-start gap-2 text-sm cursor-pointer">
+          <input id="real" type="checkbox" style="margin-top:3px;accent-color:var(--accent)">
+          <span>
+            <span class="hint" tabindex="0" data-hint-title="Nutidskroner"
+              data-hint="Omregner slutbeløbet til hvad det ville kunne købe i dag. 1.000.000 kr om 30 år svarer ved 2% inflation til cirka 552.000 kr i nutidens priser — samme tal, mindre indkøbskurv.">Vis i nutidskroner</span>
+            <span class="block text-xs faint mt-0.5">Justér for inflation, så beløbet kan sammenlignes med priser i dag.</span>
+          </span>
+        </label>
+        <div id="inflWrap" class="row mt-3" hidden>
+          <label for="infl" class="text-xs">Inflation</label>
+          <span><input id="infl" class="amount num" type="number" min="0" max="10" step="0.1" value="2"> <span class="unit">%</span></span>
+        </div>
+      </div>
+
+      <button type="button" id="reset" class="mt-5 w-full scenario-btn" style="padding:7px">Nulstil</button>
+    </form>
+
+    <!-- ─── Result ──────────────────────────────────────────────────────── -->
+    <div>
+      <div class="card rounded-2xl p-5 md:p-6">
+        <p class="text-xs uppercase tracking-wide faint font-extrabold">Værdi efter <span id="hYears">20</span> år</p>
+        <p class="headline num mt-1"><span id="total">–</span> <span class="text-lg font-bold faint">kr</span></p>
+        <p id="realNote" class="text-xs muted mt-1" hidden></p>
+
+        <div class="split mt-5">
+          <div>
+            <p class="text-xs faint font-bold">
+              <span class="swatch" style="background:var(--text-muted)"></span>
+              <span class="hint" tabindex="0" data-hint-title="Indbetalt"
+                data-hint="Summen af startindskuddet og alle de månedlige indbetalinger. Dine egne penge, uden afkast.">Indbetalt</span>
+            </p>
+            <p class="text-xl font-extrabold num mt-1"><span id="paid">–</span> <span class="text-xs faint">kr</span></p>
+          </div>
+          <div>
+            <p class="text-xs faint font-bold">
+              <span class="swatch" style="background:var(--accent)"></span>
+              <span class="hint" tabindex="0" data-hint-title="Afkast"
+                data-hint="Forskellen mellem slutværdien og det du har indbetalt. Det er de penge pengene har tjent — efter omkostninger, før skat.">Afkast</span>
+            </p>
+            <p class="text-xl font-extrabold num mt-1 up"><span id="gain">–</span> <span class="text-xs faint">kr</span></p>
+          </div>
+          <div>
+            <p class="text-xs faint font-bold">
+              <span id="shareLabel" class="hint" tabindex="0" data-hint-title="Afkastets andel"
+                data-hint="Hvor stor en del af slutværdien der er afkast frem for dine egne indbetalinger. Andelen vokser kraftigt med tiden — det er renters rente sat på tal.">Afkastets andel</span>
+            </p>
+            <p class="text-xl font-extrabold num mt-1"><span id="share">–</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chart -->
+      <div class="card rounded-2xl p-5 md:p-6 mt-5">
+        <div class="flex items-baseline justify-between gap-3 flex-wrap mb-1">
+          <h2 class="text-sm font-extrabold">Sådan vokser det</h2>
+          <p class="text-xs faint">
+            <span class="swatch" style="background:var(--text-muted)"></span> Indbetalt
+            <span class="swatch ml-3" style="background:var(--accent)"></span> Afkast
+          </p>
+        </div>
+        <p class="text-xs muted mb-3">Hold musen over kurven for at se et enkelt år.</p>
+        <div class="chart-wrap">
+          <svg id="chart" viewBox="0 0 900 300" width="100%" height="300" role="img"
+               aria-label="Udvikling i opsparingens værdi år for år"></svg>
+          <div id="tooltip" role="status"></div>
+        </div>
+      </div>
+
+      <!-- Sensitivity -->
+      <div class="card rounded-2xl p-5 md:p-6 mt-5">
+        <h2 class="text-sm font-extrabold">Hvis afkastet bliver et andet</h2>
+        <p class="text-xs muted mt-1" style="max-width:70ch">
+          Ingen kender det fremtidige afkast. Samme plan med tre forskellige antagelser viser hvor
+          meget resultatet afhænger af netop det tal — og hvorfor et enkelt beløb aldrig er hele svaret.
+        </p>
+        <div id="scenarios" class="split mt-4"></div>
+      </div>
+
+      <!-- Year table -->
+      <div class="card rounded-2xl p-5 md:p-6 mt-5">
+        <h2 class="text-sm font-extrabold mb-3">År for år</h2>
+        <div class="overflow-x-auto" style="overflow-x:auto;max-height:380px;overflow-y:auto">
+          <table class="w-full text-sm border-collapse">
+            <thead><tr class="text-xs faint text-left">
+              <th class="py-2 px-2 font-semibold">År</th>
+              <th class="py-2 px-2 font-semibold text-right">Indbetalt i alt</th>
+              <th class="py-2 px-2 font-semibold text-right">Afkast i alt</th>
+              <th class="py-2 px-2 font-semibold text-right">Værdi ved årets slutning</th>
+            </tr></thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Assumptions -->
+      <div class="card rounded-2xl p-5 mt-5 text-xs leading-relaxed muted" style="max-width:80ch">
+        <p class="font-bold mb-1" style="color:var(--text-primary)">Sådan regner vi</p>
+        <p>Indbetalingen sker først på måneden, og afkastet tilskrives månedligt med den rente der
+          svarer til det årlige afkast. Omkostningerne trækkes af hele formuen hvert år, ikke af
+          indbetalingen.</p>
+        <p class="mt-2"><strong>Skat er ikke med.</strong> Hvad du betaler afhænger af, om du investerer
+          frit, gennem en aktiesparekonto eller i pension, og satserne ændrer sig. Beløbene her er
+          derfor før skat — det faktiske udbetalte beløb bliver lavere.</p>
+        <p class="mt-2"><strong>Et fast afkast findes ikke.</strong> Beregningen lader formuen vokse med
+          samme procent hvert eneste år. Virkelige aktier gør ikke det: de samme 7% i gennemsnit kan
+          komme som +25%, -18% og +12%, og rækkefølgen betyder noget, når du indbetaler undervejs.
+          Brug tallet som en størrelsesorden, ikke som et løfte.</p>
+        <p class="mt-2">Vejledende beregning, ikke investeringsrådgivning.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="assets/kursliste.js"></script>
+<script>
+(() => {
+  'use strict';
+  const K = window.KL;
+  const $ = (s) => document.querySelector(s);
+
+  K.renderNav('beregner');
+  K.initHints();
+
+  const kr = new Intl.NumberFormat('da-DK', { maximumFractionDigits: 0 });
+
+  const FIELDS = ['start', 'monthly', 'years', 'rate', 'fee', 'raise', 'infl'];
+  const DEFAULTS = { start: 25000, monthly: 2000, years: 20, rate: 7, fee: 0.5, raise: 0, infl: 2 };
+
+  // ── The projection ────────────────────────────────────────────────────
+  // Monthly steps, deposit first: the month's contribution is added before the
+  // month's return, which is how a savings plan actually behaves. The annual
+  // return is converted geometrically, so twelve months compound to exactly the
+  // yearly figure rather than to a twelfth of it twelve times over.
+  function project(p) {
+    const growth = Math.pow(1 + p.rate / 100, 1 / 12);
+    const cost = Math.pow(1 - p.fee / 100, 1 / 12);
+    const step = growth * cost;
+
+    let value = p.start, paid = p.start, monthly = p.monthly;
+    const years = [{ year: 0, value: value, paid: paid, gain: 0 }];
+
+    for (let y = 1; y <= p.years; y++) {
+      for (let m = 0; m < 12; m++) {
+        value += monthly;
+        paid += monthly;
+        value *= step;
+      }
+      monthly *= 1 + p.raise / 100;      // næste års indskud
+      years.push({ year: y, value: value, paid: paid, gain: value - paid });
+    }
+    return years;
+  }
+
+  function read() {
+    const n = (id) => {
+      const el = $('#' + id), v = parseFloat(el.value);
+      return Number.isFinite(v) ? Math.min(Math.max(v, +el.min || -Infinity), +el.max || Infinity) : DEFAULTS[id];
+    };
+    return {
+      start: n('start'), monthly: n('monthly'), years: Math.round(n('years')),
+      rate: n('rate'), fee: n('fee'), raise: n('raise'),
+      real: $('#real').checked, infl: n('infl'),
+    };
+  }
+
+  // ── Chart ─────────────────────────────────────────────────────────────
+  const G = { W: 900, H: 300, L: 68, R: 16, T: 14, B: 28 };
+  G.iw = G.W - G.L - G.R; G.ih = G.H - G.T - G.B;
+  let series = [];
+
+  // Rounded steps up to the first one at or above the peak, so the topmost
+  // gridline is always a value the curve actually reaches under — otherwise
+  // the line runs off the top of its own scale.
+  function niceTicks(max) {
+    const raw = max / 4;
+    const mag = Math.pow(10, Math.floor(Math.log10(raw || 1)));
+    const stepChoice = [1, 2, 2.5, 5, 10].find((s) => s * mag >= raw) || 10;
+    const step = stepChoice * mag;
+    const top = Math.ceil(max / step) * step;
+    const out = [];
+    for (let v = 0; v <= top + step * 0.001; v += step) out.push(v);
+    return out;
+  }
+
+  function drawChart(rows) {
+    series = rows;
+    const max = Math.max(...rows.map((r) => r.value), 1);
+    const ticks = niceTicks(max);
+    const top = ticks[ticks.length - 1];
+    const x = (i) => G.L + (rows.length < 2 ? G.iw : (i / (rows.length - 1)) * G.iw);
+    const y = (v) => G.T + G.ih - (v / top) * G.ih;
+
+    const area = (get) => {
+      let d = 'M ' + x(0) + ' ' + y(0);
+      rows.forEach((r, i) => { d += ' L ' + x(i).toFixed(1) + ' ' + y(get(r)).toFixed(1); });
+      return d + ' L ' + x(rows.length - 1).toFixed(1) + ' ' + y(0) + ' Z';
+    };
+    const line = (get) => rows.map((r, i) =>
+      (i ? 'L ' : 'M ') + x(i).toFixed(1) + ' ' + y(get(r)).toFixed(1)).join(' ');
+
+    // A year label every whole number would collide; thin them to about eight.
+    const every = Math.max(1, Math.ceil((rows.length - 1) / 8));
+
+    $('#chart').innerHTML =
+      // The root SVG only receives pointer events where it is painted, so an
+      // invisible plate under the marks makes the whole plot area hoverable.
+      '<rect x="' + G.L + '" y="' + G.T + '" width="' + G.iw + '" height="' + G.ih + '" fill="transparent"/>'
+      + ticks.map((t) => '<line x1="' + G.L + '" x2="' + (G.W - G.R) + '" y1="' + y(t).toFixed(1)
+        + '" y2="' + y(t).toFixed(1) + '" stroke="var(--gridline)" stroke-width="1"/>'
+        + '<text x="' + (G.L - 8) + '" y="' + (y(t) + 4).toFixed(1) + '" text-anchor="end" '
+        + 'font-size="11" fill="var(--text-muted)">' + K.fmtBig(t) + '</text>').join('')
+
+      // Total first, then the paid-in band on top of it: what is left showing
+      // above the band is the return, so the two never need a stacked path.
+      + '<path d="' + area((r) => r.value) + '" fill="var(--accent)" opacity="0.30"/>'
+      + '<path d="' + area((r) => r.paid) + '" fill="var(--text-muted)" opacity="0.34"/>'
+      + '<path d="' + line((r) => r.paid) + '" fill="none" stroke="var(--text-muted)" stroke-width="2"/>'
+      + '<path d="' + line((r) => r.value) + '" fill="none" stroke="var(--accent)" stroke-width="2"/>'
+
+      + rows.filter((r, i) => i % every === 0 || i === rows.length - 1).map((r) =>
+          '<text x="' + x(r.year).toFixed(1) + '" y="' + (G.H - 8) + '" text-anchor="middle" '
+          + 'font-size="11" fill="var(--text-muted)">' + (r.year === 0 ? 'Nu' : 'År ' + r.year) + '</text>').join('')
+
+      + '<circle cx="' + x(rows.length - 1).toFixed(1) + '" cy="' + y(rows[rows.length - 1].value).toFixed(1)
+        + '" r="4" fill="var(--accent)"/>'
+      + '<g class="crosshair" id="cross" style="opacity:0">'
+        + '<line y1="' + G.T + '" y2="' + (G.T + G.ih) + '" stroke="var(--text-muted)" stroke-width="1" stroke-dasharray="3 3"/>'
+        + '<circle r="4" fill="var(--accent)" stroke="var(--surface-1)" stroke-width="2"/>'
+      + '</g>';
+
+    $('#chart').__x = x; $('#chart').__y = y;
+  }
+
+  // Screen pixels to viewBox units through the SVG's own matrix: the drawing is
+  // letterboxed inside a wider element, so the element's width is not the scale.
+  function pointAt(evt) {
+    const svg = $('#chart'), ctm = svg.getScreenCTM();
+    if (!ctm) return null;
+    const p = svg.createSVGPoint(); p.x = evt.clientX; p.y = evt.clientY;
+    const local = p.matrixTransform(ctm.inverse());
+    if (!series.length) return null;
+    const i = Math.round(((local.x - G.L) / G.iw) * (series.length - 1));
+    return series[Math.min(Math.max(i, 0), series.length - 1)];
+  }
+
+  function showPoint(evt) {
+    const r = pointAt(evt);
+    if (!r) return;
+    const svg = $('#chart'), cross = svg.querySelector('#cross');
+    const px = svg.__x(r.year), py = svg.__y(r.value);
+    cross.style.opacity = '1';
+    cross.querySelector('line').setAttribute('x1', px);
+    cross.querySelector('line').setAttribute('x2', px);
+    cross.querySelector('circle').setAttribute('cx', px);
+    cross.querySelector('circle').setAttribute('cy', py);
+
+    const tip = $('#tooltip');
+    tip.innerHTML = '<strong>' + (r.year === 0 ? 'I dag' : 'Efter ' + r.year + (r.year === 1 ? ' år' : ' år')) + '</strong><br>'
+      + '<span class="num">' + kr.format(Math.round(r.value)) + ' kr</span><br>'
+      + '<span class="faint">Indbetalt ' + kr.format(Math.round(r.paid)) + ' · afkast '
+      + kr.format(Math.round(r.gain)) + '</span>';
+    tip.style.opacity = '1';
+
+    const box = svg.getBoundingClientRect();
+    const left = box.width * (px / G.W);
+    tip.style.left = Math.min(Math.max(left - tip.offsetWidth / 2, 0), box.width - tip.offsetWidth) + 'px';
+    tip.style.top = Math.max(box.height * (py / G.H) - tip.offsetHeight - 12, 0) + 'px';
+  }
+
+  function hidePoint() {
+    const c = $('#chart').querySelector('#cross');
+    if (c) c.style.opacity = '0';
+    $('#tooltip').style.opacity = '0';
+  }
+
+  $('#chart').addEventListener('mousemove', showPoint);
+  $('#chart').addEventListener('mouseleave', hidePoint);
+
+  // ── Render ────────────────────────────────────────────────────────────
+  function render() {
+    const p = read();
+    const rows = project(p);
+    const last = rows[rows.length - 1];
+    const deflate = p.real ? Math.pow(1 + p.infl / 100, p.years) : 1;
+
+    $('#hYears').textContent = p.years;
+    $('#total').textContent = kr.format(Math.round(last.value / deflate));
+    $('#paid').textContent = kr.format(Math.round(last.paid / (p.real ? deflate : 1)));
+    $('#gain').textContent = kr.format(Math.round(last.gain / (p.real ? deflate : 1)));
+    $('#gain').className = 'text-xl font-extrabold num mt-1 ' + (last.gain < 0 ? 'down' : 'up');
+
+    // A share of the final value only reads sensibly while the value exceeds
+    // what was paid in. Below that the honest figure is the loss measured
+    // against the deposits, so the label changes with it.
+    const label = $('#shareLabel');
+    if (last.gain < 0) {
+      $('#share').textContent = last.paid > 0 ? Math.round((last.gain / last.paid) * 100) + '%' : '–';
+      label.textContent = 'Tab af det indbetalte';
+      label.dataset.hintTitle = 'Tab af det indbetalte';
+      label.dataset.hint = 'Hvor stor en del af dine egne indbetalinger der er væk ved periodens slutning. '
+        + 'Vises i stedet for afkastets andel, fordi der ikke er noget afkast at tage en andel af.';
+    } else {
+      $('#share').textContent = last.value > 0 ? Math.round((last.gain / last.value) * 100) + '%' : '–';
+      label.textContent = 'Afkastets andel';
+      label.dataset.hintTitle = 'Afkastets andel';
+      label.dataset.hint = 'Hvor stor en del af slutværdien der er afkast frem for dine egne indbetalinger. '
+        + 'Andelen vokser kraftigt med tiden — det er renters rente sat på tal.';
+    }
+
+    const note = $('#realNote');
+    note.hidden = !p.real;
+    if (p.real) {
+      note.textContent = 'I nutidskroner ved ' + p.infl.toString().replace('.', ',') + '% inflation. '
+        + 'Uden inflationsjustering står der ' + kr.format(Math.round(last.value)) + ' kr på kontoen.';
+    }
+
+    // The chart always shows kroner as they will be, since the shape of the
+    // curve is the point; the deflated figure lives in the headline.
+    drawChart(rows);
+    hidePoint();
+
+    $('#tbody').innerHTML = rows.slice(1).map((r) => '<tr class="border-t divider">'
+      + '<td class="py-2 px-2 num faint">' + r.year + '</td>'
+      + '<td class="py-2 px-2 num text-right">' + kr.format(Math.round(r.paid)) + '</td>'
+      + '<td class="py-2 px-2 num text-right up">' + kr.format(Math.round(r.gain)) + '</td>'
+      + '<td class="py-2 px-2 num text-right font-semibold">' + kr.format(Math.round(r.value)) + '</td>'
+      + '</tr>').join('');
+
+    // Same plan, three assumptions. Anchored on the chosen rate so the middle
+    // card is always the one the inputs describe.
+    const rates = [p.rate - 3, p.rate, p.rate + 3];
+    $('#scenarios').innerHTML = rates.map((rate) => {
+      const alt = project(Object.assign({}, p, { rate: rate }));
+      const end = alt[alt.length - 1];
+      const on = rate === p.rate;
+      return '<div' + (on ? ' style="background:var(--surface-1);box-shadow:inset 3px 0 0 var(--accent)"' : '') + '>'
+        + '<p class="text-xs faint font-bold">' + (rate > 0 ? '+' : '') + rate.toFixed(1).replace('.', ',') + '% om året'
+          + (on ? ' <span class="faint">· din antagelse</span>' : '') + '</p>'
+        + '<p class="text-lg font-extrabold num mt-1">' + kr.format(Math.round(end.value / deflate)) + ' <span class="text-xs faint">kr</span></p>'
+        + '<p class="text-xs faint num mt-0.5">Afkast ' + kr.format(Math.round(end.gain / deflate)) + ' kr</p>'
+      + '</div>';
+    }).join('');
+
+    writeUrl(p);
+  }
+
+  // ── Inputs: number and slider stay in step ────────────────────────────
+  FIELDS.forEach((id) => {
+    const box = $('#' + id), slider = $('#' + id + 'R');
+    box.addEventListener('input', () => {
+      if (slider && box.value !== '') slider.value = box.value;
+      render();
+    });
+    if (slider) slider.addEventListener('input', () => { box.value = slider.value; render(); });
+  });
+
+  $('#real').addEventListener('change', () => { $('#inflWrap').hidden = !$('#real').checked; render(); });
+
+  $('#reset').addEventListener('click', () => {
+    Object.keys(DEFAULTS).forEach((id) => {
+      $('#' + id).value = DEFAULTS[id];
+      const s = $('#' + id + 'R'); if (s) s.value = DEFAULTS[id];
+    });
+    $('#real').checked = false; $('#inflWrap').hidden = true;
+    render();
+  });
+
+  // ── Sharable state ────────────────────────────────────────────────────
+  // The whole calculation lives in the query string, so a plan can be
+  // bookmarked or sent to someone else without a login or a backend.
+  function writeUrl(p) {
+    const q = new URLSearchParams();
+    Object.keys(DEFAULTS).forEach((k) => { if (p[k] !== DEFAULTS[k]) q.set(k, p[k]); });
+    if (p.real) q.set('real', '1');
+    const url = location.pathname + (q.toString() ? '?' + q : '');
+    history.replaceState(null, '', url);
+  }
+
+  function readUrl() {
+    const q = new URLSearchParams(location.search);
+    Object.keys(DEFAULTS).forEach((k) => {
+      const v = parseFloat(q.get(k));
+      if (Number.isFinite(v)) {
+        $('#' + k).value = v;
+        const s = $('#' + k + 'R'); if (s) s.value = v;
+      }
+    });
+    if (q.get('real') === '1') { $('#real').checked = true; $('#inflWrap').hidden = false; }
+  }
+
+  readUrl();
+  render();
+})();
+</script>
+</body>
+</html>

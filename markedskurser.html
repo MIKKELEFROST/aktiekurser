@@ -413,16 +413,21 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
   const BY_KEY = new Map(COLUMNS.map((c) => [c.key, c]));
   const DEFAULT_COLS = ['rank', 'name', 'spark30', 'pct_today', 'pct_7d', 'pct_30d', 'price', 'sector', 'currency', 'volume'];
 
+  // The table always reads in the registry's order — the same order the picker
+  // lists the columns in — so a column sits in the same place no matter when it
+  // was switched on.
+  const inOrder = (keys) => COLUMNS.filter((c) => keys.includes(c.key)).map((c) => c.key);
+
   function loadCols() {
     try {
       const saved = JSON.parse(localStorage.getItem(STORE));
       // Drop keys from an older build rather than rendering an empty column.
       if (Array.isArray(saved) && saved.length) {
-        const kept = saved.filter((k) => BY_KEY.has(k));
+        const kept = inOrder(saved.filter((k) => BY_KEY.has(k)));
         if (kept.length) return kept;
       }
     } catch { /* ingen eller ulæselig indstilling */ }
-    return DEFAULT_COLS.slice();
+    return inOrder(DEFAULT_COLS);
   }
   function saveCols() {
     try { localStorage.setItem(STORE, JSON.stringify(state.cols)); } catch { /* privat vindue */ }
@@ -524,8 +529,8 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
 
     $('#picker').innerHTML =
       '<div class="flex items-center justify-between gap-3 mb-3 flex-wrap">'
-        + '<p class="text-xs muted" style="max-width:46ch">Vælg hvad tabellen viser. Nye kolonner lægges bagest, '
-          + 'og valget huskes i denne browser.</p>'
+        + '<p class="text-xs muted" style="max-width:46ch">Vælg hvad tabellen viser. Kolonnerne står i tabellen '
+          + 'i samme rækkefølge som her, og valget huskes i denne browser.</p>'
         + '<div class="flex gap-1.5">'
           + '<button class="chip rounded-full px-3 py-1 text-xs font-semibold" data-preset="default">Standard</button>'
           + '<button class="chip rounded-full px-3 py-1 text-xs font-semibold" data-preset="all">Alle</button>'
@@ -542,21 +547,17 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
 
     $$('#picker input[data-col]').forEach((box) => box.addEventListener('change', () => {
       const key = box.dataset.col;
-      if (box.checked) {
-        // Added last, so the columns already on screen never move under the
-        // reader's eyes — and the standard set keeps the order it was given.
-        if (!state.cols.includes(key)) state.cols = state.cols.concat(key);
-      } else {
-        state.cols = state.cols.filter((k) => k !== key);
-      }
+      state.cols = box.checked
+        ? inOrder(state.cols.concat(key))
+        : state.cols.filter((k) => k !== key);
       if (!state.cols.length) { state.cols = ['name']; syncPicker(); }
       afterColChange();
     }));
 
     $$('#picker [data-preset]').forEach((btn) => btn.addEventListener('click', () => {
       state.cols = btn.dataset.preset === 'all' ? COLUMNS.map((c) => c.key)
-        : btn.dataset.preset === 'min' ? ['name', 'pct_today', 'price']
-        : DEFAULT_COLS.slice();
+        : btn.dataset.preset === 'min' ? inOrder(['name', 'pct_today', 'price'])
+        : inOrder(DEFAULT_COLS);
       syncPicker(); afterColChange();
     }));
   }

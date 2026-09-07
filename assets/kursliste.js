@@ -170,6 +170,8 @@
       hint: 'Hele listen med kurser, filtre og sortering for begge markeder.' },
     { key: 'inspiration', href: 'inspiration.html',   label: 'Aktieinspiration',
       hint: 'Temalister beregnet ud fra kursdataene — vindere, mest handlede og 52-ugers yderpunkter.' },
+    { key: 'beregner',    href: 'beregner.html',      label: 'Beregner',
+      hint: 'Fremskriv en opsparing: startindskud, månedligt beløb, antal år og forventet afkast.' },
   ];
 
   function renderNav(activeKey) {
