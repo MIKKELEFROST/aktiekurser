@@ -69,6 +69,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     { key: '1m',  label: '1 md.',  sessions: 21 },
     { key: '3m',  label: '3 mdr.', sessions: 63 },
     { key: '6m',  label: '6 mdr.', sessions: 126 },
+    { key: 'ytd', label: 'I år',   ytd: true },
     { key: '1y',  label: '1 år',   sessions: 252 },
     { key: 'all', label: 'Alt',    sessions: Infinity },
   ];
@@ -87,6 +88,19 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       return out;
     }
     const p = PRESETS.find((x) => x.key === state.range) || PRESETS[1];
+
+    // Year to date is measured off the previous year's final close, the way a
+    // YTD return is normally quoted — starting at the first session in January
+    // instead would silently drop that first day's move. The window therefore
+    // opens on a December date, which the summary states plainly.
+    if (p.ytd) {
+      const jan1 = new Date().getFullYear() + '-01-01';
+      let i = dates.findIndex((d) => d >= jan1);
+      if (i === -1) i = dates.length - 1;      // nothing this year yet
+      if (i > 0) i -= 1;                       // include the previous close as the base
+      return { dates: dates.slice(i), closes: closes.slice(i) };
+    }
+
     const n = Math.min(dates.length, p.sessions === Infinity ? dates.length : p.sessions);
     return { dates: dates.slice(-n), closes: closes.slice(-n) };
   }
