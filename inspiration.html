@@ -1,0 +1,299 @@
+<!-- Title: Aktieinspiration -->
+<!-- filepath: inspiration.html -->
+<!DOCTYPE html>
+<html lang="da" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aktieinspiration</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/kursliste.css">
+<script>
+tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] } } } }
+</script>
+<style>
+  .hero { background: var(--text-primary); color: var(--page-plane); }
+  .hero h1 { letter-spacing: -0.02em; }
+
+  /* Horizontal card rail, scrollable on narrow screens rather than wrapping
+     into a ragged grid. */
+  .rail { display: flex; gap: 14px; overflow-x: auto; padding-bottom: 6px; scroll-snap-type: x proximity; }
+  .rail > * { scroll-snap-align: start; flex: 0 0 260px; }
+  .rail::-webkit-scrollbar { height: 8px; }
+  .rail::-webkit-scrollbar-thumb { background: var(--gridline); border-radius: 4px; }
+
+  .list-card {
+    display: block; text-decoration: none; color: inherit;
+    border-radius: 14px; overflow: hidden; border: 1px solid var(--hairline);
+    background: var(--surface-1); transition: transform .12s;
+  }
+  .list-card:hover { transform: translateY(-2px); }
+  .list-card .top { height: 96px; display: flex; align-items: flex-end; padding: 12px; }
+  .badge {
+    background: rgba(255,255,255,.92); color: #0b0b0b; border-radius: 999px;
+    font-size: 10px; font-weight: 800; padding: 3px 8px;
+  }
+  @media (prefers-reduced-motion: reduce) { .list-card:hover { transform: none; } }
+</style>
+</head>
+
+<body class="font-sans antialiased">
+<header id="sitenav"></header>
+
+<!-- ─── Hero ──────────────────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="max-w-[1200px] mx-auto px-4 py-12 md:py-16">
+    <h1 class="text-4xl md:text-5xl font-extrabold">Aktieinspiration.</h1>
+    <p class="mt-3 text-sm md:text-base max-w-2xl" style="opacity:.82">
+      Find en vinkel på markedet. Alle lister herunder er beregnet ud fra de samme kursdata
+      som kurslisten — ingen redaktionel udvælgelse og ingen anbefalinger.
+    </p>
+  </div>
+</section>
+
+<div class="max-w-[1200px] mx-auto px-4 py-8">
+
+  <!-- ─── List rail ───────────────────────────────────────────────────── -->
+  <div class="flex items-baseline justify-between gap-3 mb-3 flex-wrap">
+    <h2 class="text-xl font-extrabold tracking-tight">Lister</h2>
+    <div class="flex flex-wrap gap-2 items-center">
+      <button class="chip rounded-full px-3 py-1.5 text-xs font-semibold" data-market="DK" aria-pressed="false"
+              data-hint-title="Danmark" data-hint="Vis kun selskaber noteret på Nasdaq København.">🇩🇰 Danmark</button>
+      <button class="chip rounded-full px-3 py-1.5 text-xs font-semibold" data-market="US" aria-pressed="false"
+              data-hint-title="USA" data-hint="Vis kun selskaber noteret på NasdaqGS eller NYSE.">🇺🇸 USA</button>
+      <button class="chip rounded-full px-3 py-1.5 text-xs font-semibold" data-index="SP500" aria-pressed="false"
+              data-hint-title="S&amp;P 500" data-hint="De 500 største amerikanske børsnoterede selskaber.">S&amp;P 500</button>
+      <button class="chip rounded-full px-3 py-1.5 text-xs font-semibold" data-index="NDX" aria-pressed="false"
+              data-hint-title="Nasdaq-100" data-hint="De 100 største ikke-finansielle selskaber på Nasdaq.">Nasdaq-100</button>
+      <select id="sector" class="rounded-full px-3 py-1.5 text-xs bg-transparent" aria-label="Sektor"
+              style="border: 1px solid var(--hairline); color: var(--text-secondary)">
+        <option value="">Alle sektorer</option>
+      </select>
+    </div>
+  </div>
+  <div id="rail" class="rail mb-10"></div>
+
+  <!-- ─── Themes ──────────────────────────────────────────────────────── -->
+  <div id="themes" class="space-y-10"></div>
+
+  <!-- ─── Most traded table ───────────────────────────────────────────── -->
+  <section class="mt-12" aria-labelledby="h-table">
+    <h2 id="h-table" class="text-xl font-extrabold tracking-tight">Mest handlede aktier</h2>
+    <p class="text-sm muted mt-1 mb-4 max-w-3xl">
+      Sorteret efter hvor mange aktier der blev handlet den seneste handelsdag. Det er et mål for
+      <span class="hint" tabindex="0" data-hint-title="Aktivitet, ikke popularitet"
+            data-hint="Volumen siger hvor meget der blev handlet — ikke hvor mange der ejer aktien. Ejerantal er data en konkret bank har om sine egne kunder, og det findes ikke i vores kilde.">aktivitet, ikke popularitet</span>.
+    </p>
+    <div class="card rounded-2xl overflow-hidden">
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm border-collapse min-w-[620px]">
+          <thead>
+            <tr class="text-xs faint">
+              <th class="text-left  font-semibold py-3 px-4">Navn</th>
+              <th class="text-right font-semibold py-3 px-4">
+                <span class="hint" tabindex="0" data-hint-title="I dag %"
+                      data-hint="Kursændring siden forrige handelsdags lukkekurs, i procent.">I dag %</span></th>
+              <th class="text-right font-semibold py-3 px-4">
+                <span class="hint" tabindex="0" data-hint-title="1 år %"
+                      data-hint="Kursændring over de seneste 252 handelsdage, cirka et børsår.">1 år %</span></th>
+              <th class="text-right font-semibold py-3 px-4">
+                <span class="hint" tabindex="0" data-hint-title="Volumen"
+                      data-hint="Antal aktier handlet den seneste handelsdag — stykker, ikke beløb.">Volumen</span></th>
+              <th class="text-right font-semibold py-3 px-4">
+                <span class="hint" tabindex="0" data-hint-title="Seneste kurs"
+                      data-hint="Den senest registrerede kurs, i den valuta børsen handler i.">Seneste</span></th>
+            </tr>
+          </thead>
+          <tbody id="tradedRows"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Method ──────────────────────────────────────────────────────── -->
+  <div class="card rounded-2xl p-5 mt-10 text-xs leading-relaxed muted">
+    <p class="font-bold mb-1" style="color: var(--text-primary)">Sådan er listerne lavet</p>
+    <p>
+      Hver liste er en ren sortering af de kursdata siden allerede viser — ingen redaktionel
+      udvælgelse, ingen anbefalinger, og ingen vurdering af om et selskab er en god investering.
+    </p>
+    <p class="mt-2">
+      <strong>Der er ingen “populære aktier”-liste</strong>, selvom det er den mest oplagte overskrift.
+      Popularitet måles på hvor mange kunder der ejer en aktie hos en konkret bank, og den slags
+      data har vi ikke. “Mest handlede” er det nærmeste ægte mål: antal omsatte aktier den seneste
+      handelsdag. Det er et andet tal, og listen hedder derfor det den er.
+    </p>
+    <p class="mt-2" id="foot"></p>
+  </div>
+</div>
+
+<script src="assets/kursliste.js"></script>
+<script>
+(() => {
+  'use strict';
+  const K = window.KL;
+  const $  = (s) => document.querySelector(s);
+  const $$ = (s) => Array.from(document.querySelectorAll(s));
+  K.renderNav('inspiration');
+
+  const state = { rows: [], market: null, index: null, sector: '', fx: null, updatedAt: null };
+
+  // Every theme is a filter plus a sort over the same rows, and names the real
+  // measure it ranks by. `metric` is what each card prints under the name.
+  const THEMES = [
+    { id: 'gainers', title: 'Størst fremgang i dag', tint: 'linear-gradient(135deg,#0b6b2f,#0ca30c)',
+      blurb: 'Rangeret efter procentvis ændring siden forrige lukkekurs.',
+      hint: 'Aktier der er steget mest i dag, målt i procent — ikke i kroner, så store og små selskaber kan sammenlignes.',
+      pick: (r) => r.filter((s) => (s.percent_change ?? 0) > 0).sort((a, b) => b.percent_change - a.percent_change),
+      metric: (s) => ({ value: K.fmtPct(s.percent_change), cls: K.dirClass(s.percent_change), label: 'i dag' }) },
+
+    { id: 'losers', title: 'Størst tilbagegang i dag', tint: 'linear-gradient(135deg,#7a1f1f,#d03b3b)',
+      blurb: 'Samme mål, den anden vej.',
+      hint: 'Aktier der er faldet mest i dag. Et fald er hverken et købssignal eller en advarsel i sig selv.',
+      pick: (r) => r.filter((s) => (s.percent_change ?? 0) < 0).sort((a, b) => a.percent_change - b.percent_change),
+      metric: (s) => ({ value: K.fmtPct(s.percent_change), cls: K.dirClass(s.percent_change), label: 'i dag' }) },
+
+    { id: 'traded', title: 'Mest handlede', tint: 'linear-gradient(135deg,#1c3f6e,#2a78d6)',
+      blurb: 'Antal omsatte aktier seneste handelsdag.',
+      hint: 'Hvor mange aktier der skiftede hænder. Høj volumen betyder livlig handel — ikke at aktien er populær at eje.',
+      pick: (r) => r.filter((s) => s.volume != null).sort((a, b) => b.volume - a.volume),
+      metric: (s) => ({ value: K.fmtBig(s.volume), cls: '', label: 'aktier' }) },
+
+    { id: 'year', title: 'Bedste år', tint: 'linear-gradient(135deg,#4a3aa7,#7a6fd6)',
+      blurb: 'Udvikling over de seneste 252 handelsdage.',
+      hint: 'Kursændring over cirka et børsår. Siger noget om retningen, intet om fremtiden.',
+      pick: (r) => r.filter((s) => s.change_1y != null).sort((a, b) => b.change_1y - a.change_1y),
+      metric: (s) => ({ value: K.fmtPct(s.change_1y), cls: K.dirClass(s.change_1y), label: '1 år' }) },
+
+    { id: 'near-high', title: 'Tæt på 52-ugers top', tint: 'linear-gradient(135deg,#8a5a00,#eda100)',
+      blurb: 'Hvor højt kursen ligger i sit eget 52-ugers interval.',
+      hint: 'Kursen ligger tæt på det højeste niveau det seneste år. Det betyder ikke at den er dyr — kun hvor den ligger i sit eget spænd.',
+      pick: (r) => r.filter((s) => s.week52pos != null).sort((a, b) => b.week52pos - a.week52pos),
+      metric: (s) => ({ value: Math.round(s.week52pos * 100) + '%', cls: '', label: 'af intervallet' }) },
+
+    { id: 'near-low', title: 'Tæt på 52-ugers bund', tint: 'linear-gradient(135deg,#3c3c3a,#6b6b66)',
+      blurb: 'De samme intervaller, set fra bunden.',
+      hint: 'Kursen ligger tæt på det laveste niveau det seneste år. Det betyder ikke at den er billig — kun hvor den ligger i sit eget spænd.',
+      pick: (r) => r.filter((s) => s.week52pos != null).sort((a, b) => a.week52pos - b.week52pos),
+      metric: (s) => ({ value: Math.round(s.week52pos * 100) + '%', cls: '', label: 'af intervallet' }) },
+  ];
+
+  const CARDS = 6;
+  function rowsNow() {
+    let out = state.rows;
+    if (state.market) out = out.filter((r) => r.market === state.market);
+    if (state.index)  out = out.filter((r) => (r.indices || []).includes(state.index));
+    if (state.sector) out = out.filter((r) => r.sector === state.sector);
+    return out;
+  }
+
+  function card(s, metric) {
+    return '<a class="card rounded-xl p-4 block row-link transition-transform active:scale-[.99]" '
+      + 'href="' + K.stockUrl(s.symbol) + '">'
+      + '<div class="flex items-start justify-between gap-2 mb-2">'
+        + '<div class="min-w-0">'
+          + '<div class="font-bold text-sm row-name truncate">' + K.esc(s.name) + '</div>'
+          + '<div class="text-xs faint">' + (s.market === 'DK' ? '🇩🇰' : '🇺🇸') + ' ' + K.esc(s.symbol) + '</div>'
+        + '</div>'
+        + '<div class="text-right shrink-0">'
+          + '<div class="text-sm font-extrabold num ' + metric.cls + '">' + metric.value + '</div>'
+          + '<div class="text-[11px] faint">' + metric.label + '</div>'
+        + '</div></div>'
+      + '<div class="flex items-end justify-between gap-2">'
+        + K.sparkline(s.spark, s.change30d, 110, 28)
+        + '<div class="text-right"><div class="text-sm num font-semibold">' + K.fmtPrice(s.price) + '</div>'
+        + '<div class="text-[11px] faint">' + K.esc(s.currency) + '</div></div>'
+      + '</div></a>';
+  }
+
+  function renderRail() {
+    const rows = rowsNow();
+    $('#rail').innerHTML = THEMES.map((t) => {
+      const picked = t.pick(rows);
+      const names = picked.slice(0, 3).map((s) => s.name).join(' · ') || 'Ingen match';
+      return '<a class="list-card" href="#h-' + t.id + '" data-hint-title="' + K.esc(t.title) + '"'
+        + ' data-hint="' + K.esc(t.hint) + '">'
+        + '<div class="top" style="background:' + t.tint + '"><span class="badge">' + picked.length + ' selskaber</span></div>'
+        + '<div class="p-3">'
+          + '<div class="font-bold text-sm mb-1">' + t.title + '</div>'
+          + '<div class="text-xs faint leading-snug">' + K.esc(names) + '</div>'
+        + '</div></a>';
+    }).join('');
+  }
+
+  function renderThemes() {
+    const rows = rowsNow();
+    $('#themes').innerHTML = THEMES.map((t) => {
+      const picked = t.pick(rows).slice(0, CARDS);
+      const body = picked.length
+        ? '<div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">' + picked.map((s) => card(s, t.metric(s))).join('') + '</div>'
+        : '<p class="text-sm muted">Ingen aktier matcher denne liste lige nu.</p>';
+
+      return '<section aria-labelledby="h-' + t.id + '" style="scroll-margin-top:120px">'
+        + '<div class="flex items-baseline justify-between gap-3 mb-1 flex-wrap">'
+          + '<h2 id="h-' + t.id + '" class="text-lg font-extrabold tracking-tight">'
+            + '<span class="hint" tabindex="0" data-hint-title="' + K.esc(t.title) + '" data-hint="' + K.esc(t.hint) + '">'
+            + t.title + '</span></h2>'
+          + '<span class="text-xs faint num">' + picked.length + ' af ' + rows.length + '</span>'
+        + '</div>'
+        + '<p class="text-xs muted mb-3">' + t.blurb + '</p>' + body + '</section>';
+    }).join('');
+  }
+
+  function renderTable() {
+    const rows = rowsNow().filter((r) => r.volume != null)
+      .sort((a, b) => b.volume - a.volume).slice(0, 10);
+
+    $('#tradedRows').innerHTML = rows.map((s) =>
+      '<tr class="border-t divider hover:bg-black/[.02]">'
+      + '<td class="py-3 px-4"><a class="row-link block" href="' + K.stockUrl(s.symbol) + '">'
+        + '<div class="font-semibold row-name">' + K.esc(s.name) + '</div>'
+        + '<div class="text-xs faint">' + (s.market === 'DK' ? '🇩🇰' : '🇺🇸') + ' ' + K.esc(s.symbol) + '</div></a></td>'
+      + '<td class="px-4 text-right num font-semibold ' + K.dirClass(s.percent_change) + '">' + K.fmtPct(s.percent_change) + '</td>'
+      + '<td class="px-4 text-right num ' + K.dirClass(s.change_1y) + '">' + K.fmtPct(s.change_1y) + '</td>'
+      + '<td class="px-4 text-right num">' + K.fmtBig(s.volume) + '</td>'
+      + '<td class="px-4 text-right num font-semibold">' + K.fmtPrice(s.price)
+        + ' <span class="text-xs faint">' + K.esc(s.currency) + '</span></td>'
+      + '</tr>').join('')
+      || '<tr><td colspan="5" class="py-6 text-center text-sm muted">Ingen aktier matcher.</td></tr>';
+  }
+
+  function render() { renderRail(); renderThemes(); renderTable(); }
+
+  [['data-market', 'market'], ['data-index', 'index']].forEach(([attr, key]) => {
+    $$('[' + attr + ']').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const v = btn.getAttribute(attr);
+        state[key] = state[key] === v ? null : v;
+        $$('[' + attr + ']').forEach((b) => b.setAttribute('aria-pressed', String(b.getAttribute(attr) === state[key])));
+        render();
+      });
+    });
+  });
+
+  $('#sector').addEventListener('change', (e) => { state.sector = e.target.value; render(); });
+
+  (async () => {
+    try {
+      const list = await K.loadList();
+      state.rows = list.rows; state.fx = list.fx; state.updatedAt = list.updatedAt;
+      // Sector options come from the data, so a new sector needs no code change.
+      const sectors = (list.sectors && list.sectors.length)
+        ? list.sectors : [...new Set(list.rows.map((r) => r.sector).filter(Boolean))].sort();
+      $('#sector').innerHTML = '<option value="">Alle sektorer</option>'
+        + sectors.map((x) => '<option value="' + K.esc(x) + '">' + K.esc(x) + '</option>').join('');
+      render();
+      $('#foot').textContent = 'Kilde: Yahoo Finance · forsinkede kurser hentet ' + K.fmtAge(list.updatedAt)
+        + ' · opdateres tre gange på hverdage.'
+        + (list.fx ? ' Valutakurs USD/DKK ' + K.fmtPrice(list.fx.rate) + ' (ECB ' + list.fx.date + ').' : '');
+    } catch (err) {
+      $('#themes').innerHTML = '<div class="card rounded-2xl p-6 text-sm" style="color: var(--delta-down)">'
+        + 'Kunne ikke indlæse kursdata: ' + K.esc(err.message) + '</div>';
+    }
+  })();
+})();
+</script>
+</body>
+</html>

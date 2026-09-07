@@ -1,0 +1,371 @@
+<!-- Title: Aktie – detaljer -->
+<!-- filepath: aktie.html -->
+<!DOCTYPE html>
+<html lang="da" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aktie – detaljer</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/kursliste.css">
+<script>
+tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] } } } }
+</script>
+<style>
+  .chart-wrap { position: relative; }
+  .crosshair { pointer-events: none; }
+  #tooltip {
+    position: absolute; pointer-events: none; opacity: 0; transition: opacity .12s;
+    background: var(--surface-1); border: 1px solid var(--hairline);
+    border-radius: 8px; padding: 6px 10px; font-size: 12px; white-space: nowrap;
+    box-shadow: 0 4px 14px rgba(0,0,0,.10); z-index: 5;
+  }
+  .stat { border-top: 1px solid var(--gridline); }
+  .range-btn {
+    border: 1px solid var(--hairline); color: var(--text-secondary);
+    border-radius: 999px; padding: 4px 12px; font-size: 12px; font-weight: 700;
+  }
+  .range-btn[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .date-input {
+    border: 1px solid var(--hairline); border-radius: 8px; padding: 5px 8px;
+    font-size: 12px; background: transparent; color: var(--text-primary);
+  }
+</style>
+</head>
+
+<body class="font-sans antialiased">
+<header id="sitenav"></header>
+
+<div class="max-w-[1100px] mx-auto px-4 py-8">
+  <div id="content"></div>
+  <p id="status" class="text-xs mt-6 muted" role="status" aria-live="polite"></p>
+</div>
+
+<script src="assets/kursliste.js"></script>
+<script>
+(() => {
+  'use strict';
+  const K = window.KL;
+  const $ = (s) => document.querySelector(s);
+  K.renderNav('kurser');
+
+  const params = new URLSearchParams(location.search);
+  const wanted = (params.get('symbol') || '').toUpperCase();
+
+  // ── Chart geometry, shared by draw and hover ───────────────────────────
+  const G = { W: 900, H: 280, L: 60, R: 14, T: 16, B: 30 };
+  G.iw = G.W - G.L - G.R;
+  G.ih = G.H - G.T - G.B;
+
+  const chart = { dates: [], closes: [], currency: '' };
+
+  // Presets are counted in trading sessions rather than calendar days, so a
+  // window always holds the number of points it claims regardless of holidays.
+  const PRESETS = [
+    { key: '1m',  label: '1 md.',  sessions: 21 },
+    { key: '3m',  label: '3 mdr.', sessions: 63 },
+    { key: '6m',  label: '6 mdr.', sessions: 126 },
+    { key: '1y',  label: '1 år',   sessions: 252 },
+    { key: 'all', label: 'Alt',    sessions: Infinity },
+  ];
+
+  const state = { range: '3m', from: '', to: '' };
+
+  function slice(full) {
+    const { dates, closes } = full;
+    if (state.range === 'custom' && (state.from || state.to)) {
+      const out = { dates: [], closes: [] };
+      for (let i = 0; i < dates.length; i++) {
+        if (state.from && dates[i] < state.from) continue;
+        if (state.to && dates[i] > state.to) continue;
+        out.dates.push(dates[i]); out.closes.push(closes[i]);
+      }
+      return out;
+    }
+    const p = PRESETS.find((x) => x.key === state.range) || PRESETS[1];
+    const n = Math.min(dates.length, p.sessions === Infinity ? dates.length : p.sessions);
+    return { dates: dates.slice(-n), closes: closes.slice(-n) };
+  }
+
+  function drawChart(dates, closes, currency) {
+    if (closes.length < 2) {
+      return '<p class="text-sm muted py-10 text-center">Perioden indeholder for få handelsdage til en graf.</p>';
+    }
+    chart.dates = dates; chart.closes = closes; chart.currency = currency;
+
+    const min = Math.min.apply(null, closes), max = Math.max.apply(null, closes);
+    const pad = (max - min) * 0.08 || 1;
+    const lo = min - pad, hi = max + pad;
+    const x = (i) => G.L + (G.iw * i) / (closes.length - 1);
+    const y = (v) => G.T + G.ih * (1 - (v - lo) / (hi - lo));
+
+    // Four gridlines read a level without competing with the line itself.
+    const grid = Array.from({ length: 4 }, (_, k) => lo + ((hi - lo) * k) / 3).map((v) =>
+      '<line x1="' + G.L + '" y1="' + y(v).toFixed(1) + '" x2="' + (G.W - G.R) + '" y2="' + y(v).toFixed(1) + '" '
+      + 'stroke="var(--gridline)" stroke-width="1"/>'
+      + '<text x="' + (G.L - 8) + '" y="' + (y(v) + 4).toFixed(1) + '" text-anchor="end" '
+      + 'font-size="11" fill="var(--text-muted)">' + K.fmtPrice(v) + '</text>').join('');
+
+    // Three date ticks; one per session would collide at any width.
+    const idx = [0, Math.floor((dates.length - 1) / 2), dates.length - 1];
+    const xLabels = idx.map((i, n) =>
+      '<text x="' + x(i).toFixed(1) + '" y="' + (G.H - 9) + '" text-anchor="'
+      + (n === 0 ? 'start' : n === 2 ? 'end' : 'middle') + '" font-size="11" fill="var(--text-muted)">'
+      + new Date(dates[i]).toLocaleDateString('da-DK', { day: 'numeric', month: 'short', year: '2-digit' })
+      + '</text>').join('');
+
+    const d = closes.map((v, i) => (i ? 'L' : 'M') + x(i).toFixed(1) + ' ' + y(v).toFixed(1)).join(' ');
+    const stroke = closes[closes.length - 1] >= closes[0] ? 'var(--delta-up)' : 'var(--delta-down)';
+    chart.lo = lo; chart.hi = hi;
+
+    return '<div class="chart-wrap">'
+      + '<svg id="chart" viewBox="0 0 ' + G.W + ' ' + G.H + '" width="100%" height="' + G.H + '" '
+      + 'role="img" aria-label="Kursudvikling ' + K.esc(dates[0]) + ' til ' + K.esc(dates[dates.length - 1])
+      + ', fra ' + K.fmtPrice(closes[0]) + ' til ' + K.fmtPrice(closes[closes.length - 1]) + ' ' + K.esc(currency)
+      + '" style="display:block">'
+      + grid + xLabels
+      + '<path d="' + d + '" fill="none" stroke="' + stroke + '" stroke-width="2" '
+      + 'stroke-linecap="round" stroke-linejoin="round"/>'
+      + '<g class="crosshair" opacity="0">'
+      + '<line id="chx" y1="' + G.T + '" y2="' + (G.T + G.ih) + '" stroke="var(--text-muted)" stroke-width="1" stroke-dasharray="3 3"/>'
+      + '<circle id="chd" r="4.5" fill="' + stroke + '" stroke="var(--surface-1)" stroke-width="2"/></g>'
+      + '<rect id="hit" x="' + G.L + '" y="' + G.T + '" width="' + G.iw + '" height="' + G.ih + '" fill="transparent"/>'
+      + '</svg><div id="tooltip"></div></div>';
+  }
+
+  function wireChart() {
+    const svg = $('#chart'); if (!svg) return;
+    const hit = $('#hit'), tip = $('#tooltip');
+    const cross = svg.querySelector('.crosshair'), line = $('#chx'), dot = $('#chd');
+
+    function move(evt) {
+      const box = svg.getBoundingClientRect();
+      const px = ((evt.clientX - box.left) / box.width) * G.W;   // back to viewBox units
+      const t = Math.min(1, Math.max(0, (px - G.L) / G.iw));
+      const i = Math.round(t * (chart.closes.length - 1));
+
+      const cx = G.L + (G.iw * i) / (chart.closes.length - 1);
+      const cy = G.T + G.ih * (1 - (chart.closes[i] - chart.lo) / (chart.hi - chart.lo));
+
+      cross.setAttribute('opacity', '1');
+      line.setAttribute('x1', cx); line.setAttribute('x2', cx);
+      dot.setAttribute('cx', cx); dot.setAttribute('cy', cy);
+
+      tip.style.opacity = '1';
+      tip.innerHTML = '<strong class="num">' + K.fmtPrice(chart.closes[i]) + ' ' + K.esc(chart.currency) + '</strong>'
+        + '<br><span class="faint">' + K.fmtDate(chart.dates[i]) + '</span>';
+
+      const leftPx = (cx / G.W) * box.width;
+      const flip = leftPx > box.width - 130;
+      tip.style.left = (flip ? leftPx - tip.offsetWidth - 12 : leftPx + 12) + 'px';
+      tip.style.top = ((cy / G.H) * box.height - 10) + 'px';
+    }
+
+    hit.addEventListener('mousemove', move);
+    hit.addEventListener('mouseleave', () => { cross.setAttribute('opacity', '0'); tip.style.opacity = '0'; });
+  }
+
+  // ── Stat rows ──────────────────────────────────────────────────────────
+  function statRow(label, value, cls, hint) {
+    const lab = hint
+      ? '<span class="hint" tabindex="0" data-hint-title="' + K.esc(label) + '" data-hint="' + K.esc(hint) + '">' + label + '</span>'
+      : label;
+    return '<div class="stat py-2.5 flex items-baseline justify-between gap-4">'
+      + '<span class="text-xs muted">' + lab + '</span>'
+      + '<span class="text-sm num font-semibold ' + (cls || '') + '">' + value + '</span></div>';
+  }
+
+  // ── Render ─────────────────────────────────────────────────────────────
+  let full = null, row = null, fxRate = null;
+
+  function renderChartBlock() {
+    const s = slice(full);
+    $('#chartHost').innerHTML = drawChart(s.dates, s.closes, row.currency);
+    wireChart();
+
+    const move = s.closes.length > 1 ? ((s.closes[s.closes.length - 1] - s.closes[0]) / s.closes[0]) * 100 : null;
+    $('#chartSummary').innerHTML = s.dates.length
+      ? K.fmtDate(s.dates[0]) + ' – ' + K.fmtDate(s.dates[s.dates.length - 1])
+        + ' · ' + s.dates.length + ' handelsdage · '
+        + '<span class="num font-bold ' + K.dirClass(move) + '">' + K.fmtPct(move) + '</span> i perioden'
+      : 'Ingen handelsdage i den valgte periode.';
+  }
+
+  function setRange(key) {
+    state.range = key;
+    document.querySelectorAll('[data-range]').forEach((b) =>
+      b.setAttribute('aria-pressed', String(b.dataset.range === key)));
+    renderChartBlock();
+  }
+
+  function render(r, hist, fx, updatedAt, neighbours) {
+    row = r; full = hist; fxRate = fx;
+    const cur = r.currency;
+    const conv = cur !== 'DKK' && r.price_dkk != null;
+    document.title = r.name + ' (' + r.symbol + ') – aktiekurs';
+
+    const head = '<div class="flex items-start justify-between gap-4 flex-wrap mb-5">'
+      + '<div><h1 class="text-2xl md:text-3xl font-extrabold tracking-tight">' + K.esc(r.name) + '</h1>'
+      + '<p class="text-sm mt-1 muted">' + K.esc(r.symbol) + ' · ' + K.esc(r.exchange || '–')
+      + ' · ' + K.esc(cur) + (r.market === 'DK' ? ' · 🇩🇰 Danmark' : ' · 🇺🇸 USA') + '</p>'
+      + '<div class="flex flex-wrap gap-1.5 mt-2">'
+        + (r.sector ? '<span class="chip rounded-full px-2.5 py-0.5 text-[11px] font-semibold hint" tabindex="0"'
+            + ' data-hint-title="Sektor" data-hint="Selskabets branche efter GICS-systemet.">' + K.esc(r.sector) + '</span>' : '')
+        + (r.indices || []).map(function (i) {
+            var label = { SP500: 'S&P 500', NDX: 'Nasdaq-100', 'DK-LARGE': 'København' }[i] || i;
+            var hint = { SP500: 'Indgår i S&P 500 — de 500 største amerikanske børsnoterede selskaber.',
+                         NDX: 'Indgår i Nasdaq-100 — de 100 største ikke-finansielle selskaber på Nasdaq.',
+                         'DK-LARGE': 'Blandt de største selskaber på Nasdaq København.' }[i] || '';
+            return '<span class="chip rounded-full px-2.5 py-0.5 text-[11px] font-semibold hint" tabindex="0"'
+              + ' data-hint-title="' + K.esc(label) + '" data-hint="' + K.esc(hint) + '">' + K.esc(label) + '</span>';
+          }).join('')
+      + '</div></div>'
+      + '<div class="text-right"><div class="text-3xl font-extrabold num">' + K.fmtPrice(r.price) + '</div>'
+      + '<div class="text-sm num font-semibold ' + K.dirClass(r.percent_change) + '">'
+      + K.fmtDelta(r.change) + ' (' + K.fmtPct(r.percent_change) + ')</div>'
+      + (conv ? '<div class="text-xs faint num mt-1">≈ ' + K.fmtPrice(r.price_dkk) + ' DKK</div>' : '')
+      + '</div></div>';
+
+    const buttons = PRESETS.map((p) =>
+      '<button class="range-btn" data-range="' + p.key + '" aria-pressed="' + (p.key === state.range) + '">'
+      + p.label + '</button>').join('');
+
+    const chartCard = '<div class="card rounded-2xl p-4 md:p-5 mb-5">'
+      + '<div class="flex items-center justify-between gap-3 flex-wrap mb-3">'
+        + '<h2 class="text-sm font-bold">Kursudvikling</h2>'
+        + '<div class="flex items-center gap-1.5 flex-wrap">' + buttons
+          + '<span class="mx-1 faint text-xs" aria-hidden="true">|</span>'
+          + '<label class="text-xs faint hint" tabindex="0" data-hint-title="Egen periode"'
+          + ' data-hint="Vælg selv fra- og til-dato. Grafen viser kun handelsdage, så weekender og helligdage springes over.">Fra</label>'
+          + '<input type="date" id="from" class="date-input num">'
+          + '<label class="text-xs faint" for="to">Til</label>'
+          + '<input type="date" id="to" class="date-input num">'
+          + '<button id="clearRange" class="range-btn">Nulstil</button>'
+        + '</div>'
+      + '</div>'
+      + '<p id="chartSummary" class="text-xs muted mb-3"></p>'
+      + '<div id="chartHost"></div></div>';
+
+    const left = '<div class="card rounded-2xl p-5">'
+      + '<h2 class="text-sm font-bold mb-2">Dagens handel</h2>'
+      + statRow('Seneste', K.fmtPrice(r.price) + ' ' + K.esc(cur), '',
+          'Den senest registrerede kurs. Dataene er forsinkede og opdateres tre gange på hverdage.')
+      + statRow('Ændring i dag', K.fmtDelta(r.change) + ' (' + K.fmtPct(r.percent_change) + ')', K.dirClass(r.percent_change),
+          'Forskellen mellem seneste kurs og forrige handelsdags lukkekurs — i kroner og i procent.')
+      + statRow('Forrige lukning', K.fmtPrice(r.previous_close), '',
+          'Kursen da børsen lukkede den foregående handelsdag. Grundlaget for dagens ændring.')
+      + statRow('Dagens højeste', K.fmtPrice(r.high), '', 'Den højeste kurs aktien er handlet til i dag.')
+      + statRow('Dagens laveste', K.fmtPrice(r.low), '', 'Den laveste kurs aktien er handlet til i dag.')
+      + statRow('Volumen', K.fmtBig(r.volume), '',
+          'Antal aktier handlet i dag — altså stykker, ikke beløb. Høj volumen betyder livlig handel.')
+      + statRow('Gns. volumen' + (r.average_volume_days ? ' (' + r.average_volume_days + ' dage)' : ''),
+          K.fmtBig(r.average_volume), '',
+          'Gennemsnittet af de daglige volumener. Beregnet af os ud fra kurshistorikken — kilden opgiver ikke selv et gennemsnit.')
+      + '</div>';
+
+    const right = '<div class="card rounded-2xl p-5">'
+      + '<h2 class="text-sm font-bold mb-2">Interval og udvikling</h2>'
+      + '<div class="my-3">' + K.rangeBar(r, 260, 22) + '</div>'
+      + statRow('52 ugers laveste', K.fmtPrice(r.week52_low), '', 'Den laveste kurs aktien har været i det seneste år.')
+      + statRow('52 ugers højeste', K.fmtPrice(r.week52_high), '', 'Den højeste kurs aktien har været i det seneste år.')
+      + statRow('Placering i intervallet', r.week52pos == null ? '–' : Math.round(r.week52pos * 100) + '%', '',
+          'Hvor kursen ligger mellem årets laveste (0%) og højeste (100%). Prikken på bjælken viser det samme.')
+      + statRow('Udvikling 30 dage', K.fmtPct(r.change30d), K.dirClass(r.change30d),
+          'Kursændring over de seneste 30 handelsdage.')
+      + statRow('Udvikling 6 måneder', K.fmtPct(r.change_6m), K.dirClass(r.change_6m),
+          'Kursændring over de seneste 126 handelsdage, cirka et halvt år.')
+      + statRow('Udvikling 1 år', K.fmtPct(r.change_1y), K.dirClass(r.change_1y),
+          'Kursændring over de seneste 252 handelsdage, cirka et børsår.')
+      + (conv
+          ? statRow('Kurs omregnet', '≈ ' + K.fmtPrice(r.price_dkk) + ' DKK', '',
+              'Kursen ganget med ECB’s referencekurs. Et beregnet tal, ikke en noteret kurs — derfor ≈.')
+            + '<p class="text-xs faint mt-2">Omregnet til ' + K.fmtPrice(fx ? fx.rate : null)
+            + ' DKK pr. USD (ECB ' + K.esc(fx ? fx.date : '–') + ').</p>'
+          : '')
+      + '</div>';
+
+    const nav = '<div class="flex items-center justify-between gap-3 mt-6 text-xs">'
+      + (neighbours.prev ? '<a class="link-accent font-semibold" href="' + K.stockUrl(neighbours.prev.symbol) + '">← '
+          + K.esc(neighbours.prev.name) + '</a>' : '<span></span>')
+      + (neighbours.next ? '<a class="link-accent font-semibold text-right" href="' + K.stockUrl(neighbours.next.symbol) + '">'
+          + K.esc(neighbours.next.name) + ' →</a>' : '<span></span>')
+      + '</div>';
+
+    const risk = '<p class="text-xs faint mt-6 leading-relaxed">'
+      + 'Kurserne er vejledende og forsinkede markedsdata fra Yahoo Finance, hentet ' + K.fmtAge(updatedAt)
+      + ', og udgør ikke investeringsrådgivning. Historiske afkast er ingen garanti for fremtidige afkast.</p>';
+
+    $('#content').innerHTML = head + chartCard
+      + '<div class="grid md:grid-cols-2 gap-5">' + left + right + '</div>' + nav + risk;
+
+    document.querySelectorAll('[data-range]').forEach((b) =>
+      b.addEventListener('click', () => { $('#from').value = ''; $('#to').value = ''; setRange(b.dataset.range); }));
+
+    const onDate = () => {
+      state.from = $('#from').value; state.to = $('#to').value;
+      if (state.from || state.to) {
+        state.range = 'custom';
+        document.querySelectorAll('[data-range]').forEach((b) => b.setAttribute('aria-pressed', 'false'));
+      }
+      renderChartBlock();
+    };
+    $('#from').addEventListener('change', onDate);
+    $('#to').addEventListener('change', onDate);
+    $('#clearRange').addEventListener('click', () => { $('#from').value = ''; $('#to').value = ''; setRange('3m'); });
+
+    // Bound the pickers to the data we actually have, so an empty chart is
+    // not reachable by picking a date outside the series.
+    if (full && full.dates.length) {
+      const lo = full.dates[0], hi = full.dates[full.dates.length - 1];
+      ['#from', '#to'].forEach((s) => { $(s).min = lo; $(s).max = hi; });
+    }
+
+    renderChartBlock();
+  }
+
+  function renderMissing(rows) {
+    const list = rows.slice(0, 12).map((r) =>
+      '<li><a class="link-accent" href="' + K.stockUrl(r.symbol) + '">' + K.esc(r.name) + '</a></li>').join('');
+    $('#content').innerHTML = '<div class="card rounded-2xl p-6">'
+      + '<h1 class="text-lg font-bold mb-2">Aktien blev ikke fundet</h1>'
+      + '<p class="text-sm muted mb-4">'
+      + (wanted ? 'Symbolet <code>' + K.esc(wanted) + '</code> er ikke i listen.' : 'Der er ikke angivet noget symbol.')
+      + ' Prøv en af disse:</p><ul class="text-sm space-y-1 list-disc pl-5">' + list + '</ul>'
+      + '<p class="mt-4 text-sm"><a class="link-accent font-semibold" href="markedskurser.html">Se alle aktiekurser →</a></p></div>';
+  }
+
+  (async () => {
+    $('#status').textContent = 'Indlæser…';
+    try {
+      const list = await K.loadList();
+      const idx = list.rows.findIndex((r) => r.symbol.toUpperCase() === wanted);
+      if (idx === -1) { renderMissing(list.rows); $('#status').textContent = ''; return; }
+
+      const r = list.rows[idx];
+      // History is a separate file, and the page is still useful without it,
+      // so a failure there falls back to the 30-point sparkline series.
+      let hist = null;
+      try { hist = await K.loadHistory(r.symbol); }
+      catch { hist = { dates: [], closes: r.spark || [] }; }
+      if (!hist.dates.length && hist.closes.length) {
+        hist.dates = hist.closes.map((_, i) => String(i));   // no dates: index axis
+      }
+
+      render(r, hist, list.fx, list.updatedAt, {
+        prev: idx > 0 ? list.rows[idx - 1] : null,
+        next: idx < list.rows.length - 1 ? list.rows[idx + 1] : null,
+      });
+      $('#status').textContent = 'Kilde: Yahoo Finance · hentet ' + K.fmtAge(list.updatedAt)
+        + ' · opdateres tre gange på hverdage';
+    } catch (err) {
+      $('#content').innerHTML = '<div class="card rounded-2xl p-6 text-sm" style="color: var(--delta-down)">'
+        + 'Kunne ikke indlæse data: ' + K.esc(err.message) + '</div>';
+      $('#status').textContent = '';
+    }
+  })();
+})();
+</script>
+</body>
+</html>

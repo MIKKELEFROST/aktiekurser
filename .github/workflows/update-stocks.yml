@@ -1,0 +1,78 @@
+name: Opdatér aktiekurser
+
+# Henter kurser for hele universet (S&P 500, Nasdaq-100 og Nasdaq København)
+# og committer dem som JSON. Kører server-side, så der er hverken
+# CORS-begrænsning eller API-nøgle involveret.
+#
+# To slags kørsler, fordi historikken fylder ~8 MB og kun ændrer sig én gang
+# i døgnet, mens kurserne ændrer sig løbende:
+#   • i løbet af dagen  → kun data/aktier.json (én fil på ~600 KB)
+#   • efter lukketid    → også universet og alle historikfiler
+#
+# Bemærk: planlagte kørsler sker kun på default-branchen. På andre brancher
+# kan workflowet startes manuelt under fanen Actions.
+
+on:
+  schedule:
+    # Hverdage. Kort efter åbning og midt på dagen henter vi kun kurser;
+    # kørslen kl. 16:30 UTC er efter lukketid i København uanset sommertid
+    # og opdaterer også historik og indekssammensætning.
+    - cron: '30 7,11 * * 1-5'
+    - cron: '30 16 * * 1-5'
+  workflow_dispatch:
+    inputs:
+      full:
+        description: 'Opdatér også univers og historik'
+        type: boolean
+        default: true
+
+concurrency:
+  group: update-stocks
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # Kun aftenkørslen og et manuelt "full" rører historikken.
+      - name: Afgør kørselstype
+        id: mode
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            FULL="${{ inputs.full }}"
+          elif [ "${{ github.event.schedule }}" = "30 16 * * 1-5" ]; then
+            FULL=true
+          else
+            FULL=false
+          fi
+          echo "full=$FULL" >> "$GITHUB_OUTPUT"
+          echo "Fuld kørsel: $FULL"
+
+      - name: Hent kurser
+        run: |
+          if [ "${{ steps.mode.outputs.full }}" = "true" ]; then
+            node scripts/fetch-stocks.mjs
+          else
+            node scripts/fetch-stocks.mjs --quotes-only --no-history
+          fi
+
+      - name: Commit hvis der er ændringer
+        run: |
+          if git diff --quiet -- data/; then
+            echo "Ingen kursændringer — intet at committe."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git commit -m "Opdatér aktiekurser ($(date -u '+%Y-%m-%d %H:%M UTC'))"
+          git push

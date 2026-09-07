@@ -1,0 +1,506 @@
+<!-- Title: Aktiekurser – danske og amerikanske -->
+<!-- filepath: markedskurser.html -->
+<!DOCTYPE html>
+<html lang="da" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aktiekurser – danske og amerikanske</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/kursliste.css">
+<script>
+tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] } } } }
+</script>
+<style>
+  .pager-btn {
+    border: 1px solid var(--hairline); color: var(--text-secondary);
+    border-radius: 8px; padding: 5px 11px; font-size: 12px; font-weight: 700;
+  }
+  .pager-btn[disabled] { opacity: .35; cursor: default; }
+  .pager-btn:not([disabled]):hover { color: var(--text-primary); }
+</style>
+</head>
+
+<body class="font-sans antialiased">
+<header id="sitenav"></header>
+
+<div class="max-w-[1400px] mx-auto px-4 py-8">
+
+  <div class="flex items-start justify-between gap-4 mb-6 flex-wrap">
+    <div>
+      <h1 class="text-2xl md:text-3xl font-extrabold tracking-tight">
+        Aktiekurser – se danske og amerikanske aktier
+      </h1>
+      <p class="text-sm mt-1 muted" id="lede">
+        Kurser fra Nasdaq København, S&amp;P 500 og Nasdaq-100. Filtrér på marked, indeks og
+        sektor, skift valuta, og klik på et selskab for at se detaljer.
+      </p>
+    </div>
+    <a href="inspiration.html"
+       class="btn-primary shrink-0 inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-bold transition-transform active:scale-95">
+      Aktieinspiration <span aria-hidden="true">→</span>
+    </a>
+  </div>
+
+  <div class="card rounded-2xl p-4 md:p-6">
+
+    <!-- ─── Filter row ─────────────────────────────────────────────────── -->
+    <div class="flex flex-wrap items-center gap-3 mb-4">
+      <div class="relative">
+        <label for="q" class="sr-only">Søg efter navn eller symbol</label>
+        <input id="q" type="search" placeholder="Navn / symbol" autocomplete="off"
+               class="w-56 rounded-lg pl-9 pr-3 py-2 text-sm bg-transparent focus:outline-none focus:ring-2"
+               style="border: 1px solid var(--hairline); color: var(--text-primary); --tw-ring-color: var(--accent)">
+        <span class="absolute left-3 top-1/2 -translate-y-1/2 text-sm faint" aria-hidden="true">⌕</span>
+      </div>
+
+      <select id="sector" class="rounded-lg px-3 py-2 text-sm bg-transparent" aria-label="Sektor"
+              style="border: 1px solid var(--hairline); color: var(--text-primary)">
+        <option value="">Alle sektorer</option>
+      </select>
+
+      <select id="sortField" class="rounded-lg px-3 py-2 text-sm bg-transparent" aria-label="Sortér efter"
+              style="border: 1px solid var(--hairline); color: var(--text-primary)">
+        <option value="percent_change">Ændring i dag</option>
+        <option value="change30d">Ændring 30 dage</option>
+        <option value="change_6m">Ændring 6 måneder</option>
+        <option value="change_1y">Ændring 1 år</option>
+        <option value="sortPrice">Seneste kurs</option>
+        <option value="volume">Volumen</option>
+        <option value="week52pos">Placering i 52-ugers interval</option>
+        <option value="name">Navn</option>
+      </select>
+
+      <!-- Currency view. "Noteret" keeps every figure a raw source value;
+           "Alt i DKK" converts the USD rows so prices sort across markets. -->
+      <div class="inline-flex rounded-lg overflow-hidden" style="border: 1px solid var(--hairline)"
+           role="group" aria-label="Valuta">
+        <button id="curNative" class="px-3 py-2 text-xs font-bold" aria-pressed="true"
+                data-hint-title="Noteret valuta"
+                data-hint="Viser hver kurs i den valuta børsen handler i. Alle tal er rå kildeværdier, men kurssortering blander DKK og USD.">Noteret</button>
+        <button id="curDkk" class="px-3 py-2 text-xs font-bold" aria-pressed="false"
+                data-hint-title="Alt i DKK"
+                data-hint="Omregner de amerikanske kurser til kroner med ECB-kursen, så sortering på kurs bliver meningsfuld. Omregnede tal markeres med ≈.">Alt i DKK</button>
+      </div>
+
+      <span id="freshness" class="inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-xs font-bold" tabindex="0"
+            data-hint-title="Dataalder"
+            data-hint="Hvornår kurserne sidst ændrede sig. De hentes tre gange på hverdage, så de er forsinkede — ikke live."
+            style="border: 1px solid var(--hairline); color: var(--text-secondary)"></span>
+
+      <button id="refresh" type="button"
+              class="ml-auto inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold muted"
+              style="border: 1px solid var(--hairline)">
+        <span id="refreshIcon" aria-hidden="true">⟳</span> Genindlæs
+      </button>
+    </div>
+
+    <!-- ─── Chips ──────────────────────────────────────────────────────── -->
+    <div class="flex flex-wrap items-center gap-2 mb-4">
+      <span class="text-xs font-bold mr-1 muted">Filtre</span>
+      <!-- Market, index and category are three independent toggle groups, so
+           "Danmark", "S&P 500" and "Vindere i dag" never cancel each other. -->
+      <button class="chip rounded-full px-3 py-1 text-xs font-semibold" data-market="DK" aria-pressed="false"
+              data-hint-title="Danmark" data-hint="Viser kun selskaber noteret på Nasdaq København.">🇩🇰 Danmark</button>
+      <button class="chip rounded-full px-3 py-1 text-xs font-semibold" data-market="US" aria-pressed="false"
+              data-hint-title="USA" data-hint="Viser kun selskaber noteret på NasdaqGS eller NYSE.">🇺🇸 USA</button>
+      <span class="mx-1 faint" aria-hidden="true">|</span>
+      <button class="chip rounded-full px-3 py-1 text-xs font-semibold" data-index="SP500" aria-pressed="false"
+              data-hint-title="S&amp;P 500" data-hint="De 500 største amerikanske børsnoterede selskaber målt på markedsværdi.">S&amp;P 500</button>
+      <button class="chip rounded-full px-3 py-1 text-xs font-semibold" data-index="NDX" aria-pressed="false"
+              data-hint-title="Nasdaq-100" data-hint="De 100 største ikke-finansielle selskaber på Nasdaq-børsen. Overlapper i høj grad med S&amp;P 500.">Nasdaq-100</button>
+      <span class="mx-1 faint" aria-hidden="true">|</span>
+      <button class="chip rounded-full px-3 py-1 text-xs font-semibold" data-chip="gainers" aria-pressed="false"
+              data-hint-title="Vindere i dag" data-hint="Viser kun aktier der er steget siden forrige lukkekurs.">Vindere i dag</button>
+      <button class="chip rounded-full px-3 py-1 text-xs font-semibold" data-chip="losers" aria-pressed="false"
+              data-hint-title="Tabere i dag" data-hint="Viser kun aktier der er faldet siden forrige lukkekurs.">Tabere i dag</button>
+      <button class="chip rounded-full px-3 py-1 text-xs font-semibold" data-chip="near52" aria-pressed="false"
+              data-hint-title="Nær 52-ugers top" data-hint="Viser aktier hvis kurs ligger i den øverste tiendedel af deres eget 52-ugers interval.">Nær 52-ugers top</button>
+      <button id="clearFilters" class="chip rounded-full px-3 py-1 text-xs font-semibold">Nulstil</button>
+      <span id="count" class="ml-auto text-xs num muted"></span>
+    </div>
+
+    <!-- ─── Risk notice ────────────────────────────────────────────────── -->
+    <div id="risk" class="rounded-xl p-4 mb-4 flex gap-3" style="background: var(--page-plane); border: 1px solid var(--hairline)">
+      <span aria-hidden="true" class="faint">ⓘ</span>
+      <div class="flex-1">
+        <p class="text-sm font-bold">Risikooplysning vedrørende aktiehandel</p>
+        <p class="text-xs mt-1 muted">
+          Kurserne er vejledende og forsinkede markedsdata, og udgør ikke investeringsrådgivning.
+          En investeret opsparing kan både stige og falde i værdi, og historiske afkast er ingen
+          garanti for fremtidige afkast. Der er risiko for, at du ikke får de investerede penge tilbage.
+        </p>
+      </div>
+      <button type="button" id="riskClose" aria-label="Luk risikooplysning"
+              class="shrink-0 self-start text-lg leading-none faint">×</button>
+    </div>
+
+    <!-- ─── Tabs ───────────────────────────────────────────────────────── -->
+    <div class="flex gap-6 mb-2 border-b divider overflow-x-auto" role="tablist">
+      <button class="tab pb-2 text-sm whitespace-nowrap" role="tab" data-tab="oversigt" aria-selected="true">Oversigt</button>
+      <button class="tab pb-2 text-sm whitespace-nowrap" role="tab" data-tab="kurser"   aria-selected="false">Kurser</button>
+      <button class="tab pb-2 text-sm whitespace-nowrap" role="tab" data-tab="nogletal" aria-selected="false">Nøgletal</button>
+    </div>
+
+    <!-- ─── Table ──────────────────────────────────────────────────────── -->
+    <div class="overflow-x-auto">
+      <table class="w-full text-sm border-collapse min-w-[980px]">
+        <thead>
+          <tr class="text-xs faint">
+            <th class="text-left  font-semibold py-3 pr-3 whitespace-nowrap" data-sort="name" aria-sort="none"><span class="hint" tabindex="0" data-hint-title="Navn" data-hint="Selskabets navn og børssymbol. Klik på en række for at se detaljer.">Navn</span> <span class="caret"></span></th>
+            <th class="text-left  font-semibold py-3 px-3 whitespace-nowrap" data-sort="change30d" aria-sort="none" data-col="oversigt kurser"><span class="hint" tabindex="0" data-hint-title="Udv. 30 dage" data-hint="Kurslinje for de seneste 30 handelsdage. Grøn betyder op over perioden, rød ned.">Udv. 30 dage</span> <span class="caret"></span></th>
+            <th class="text-right font-semibold py-3 px-3 whitespace-nowrap" data-sort="percent_change" aria-sort="descending"><span class="hint" tabindex="0" data-hint-title="I dag %" data-hint="Kursændring siden forrige handelsdags lukkekurs, i procent. Kan sammenlignes på tværs af valutaer.">I dag %</span> <span class="caret"></span></th>
+            <th class="text-right font-semibold py-3 px-3 whitespace-nowrap" data-sort="sortPrice" aria-sort="none"><span class="hint" tabindex="0" data-hint-title="Seneste" data-hint="Den senest registrerede kurs. Forsinket data, opdateret tre gange på hverdage.">Seneste</span> <span class="caret"></span></th>
+            <th class="text-right font-semibold py-3 px-3 whitespace-nowrap" data-col="oversigt kurser"><span class="hint" tabindex="0" data-hint-title="I dag +/-" data-hint="Kursændringen i kroner eller dollar — samme bevægelse som “I dag %”, bare i beløb.">I dag +/-</span></th>
+            <th class="text-right font-semibold py-3 px-3 whitespace-nowrap" data-col="kurser"><span class="hint" tabindex="0" data-hint-title="Høj" data-hint="Den højeste kurs aktien er handlet til i dag.">Høj</span></th>
+            <th class="text-right font-semibold py-3 px-3 whitespace-nowrap" data-col="kurser"><span class="hint" tabindex="0" data-hint-title="Lav" data-hint="Den laveste kurs aktien er handlet til i dag.">Lav</span></th>
+            <th class="text-right font-semibold py-3 px-3 whitespace-nowrap" data-col="kurser"><span class="hint" tabindex="0" data-hint-title="Forrige luk" data-hint="Kursen da børsen lukkede forrige handelsdag. Grundlaget for dagens ændring.">Forrige luk</span></th>
+            <th class="text-left  font-semibold py-3 px-3 whitespace-nowrap" data-sort="week52pos" aria-sort="none" data-col="nogletal"><span class="hint" tabindex="0" data-hint-title="52 ugers interval" data-hint="Prikken viser hvor kursen ligger mellem årets laveste og højeste niveau.">52 ugers interval</span> <span class="caret"></span></th>
+            <th class="text-right font-semibold py-3 px-3 whitespace-nowrap" data-sort="change_6m" aria-sort="none" data-col="nogletal"><span class="hint" tabindex="0" data-hint-title="6 mdr. %" data-hint="Kursændring over de seneste 126 handelsdage, cirka et halvt år.">6 mdr. %</span> <span class="caret"></span></th>
+            <th class="text-right font-semibold py-3 px-3 whitespace-nowrap" data-sort="change_1y" aria-sort="none" data-col="nogletal"><span class="hint" tabindex="0" data-hint-title="1 år %" data-hint="Kursændring over de seneste 252 handelsdage, cirka et børsår.">1 år %</span> <span class="caret"></span></th>
+            <th class="text-left  font-semibold py-3 px-3 whitespace-nowrap" data-col="oversigt nogletal"><span class="hint" tabindex="0" data-hint-title="Sektor" data-hint="Selskabets branche efter GICS-systemet, som S&amp;P bruger. Nasdaq-100-selskaber er oversat til samme navne.">Sektor</span></th>
+            <th class="text-left  font-semibold py-3 px-3 whitespace-nowrap" data-col="oversigt"><span class="hint" tabindex="0" data-hint-title="Valuta" data-hint="Den valuta børsen handler aktien i. DKK for danske, USD for amerikanske.">Valuta</span></th>
+            <th class="text-right font-semibold py-3 px-3 whitespace-nowrap" data-sort="volume" aria-sort="none" data-col="oversigt nogletal"><span class="hint" tabindex="0" data-hint-title="Volumen" data-hint="Antal aktier handlet i dag — stykker, ikke beløb i kroner.">Volumen</span> <span class="caret"></span></th>
+            <th class="text-left  font-semibold py-3 pl-3 whitespace-nowrap" data-col="oversigt"><span class="hint" tabindex="0" data-hint-title="Børs" data-hint="Den børs aktien er noteret på.">Børs</span></th>
+          </tr>
+        </thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+
+    <!-- ─── Pager ──────────────────────────────────────────────────────── -->
+    <div class="flex items-center justify-between gap-3 mt-4 flex-wrap">
+      <div class="flex items-center gap-2">
+        <button id="prev" class="pager-btn">← Forrige</button>
+        <span id="pageInfo" class="text-xs num muted"></span>
+        <button id="next" class="pager-btn">Næste →</button>
+      </div>
+      <label class="text-xs muted flex items-center gap-2">
+        Rækker pr. side
+        <select id="pageSize" class="rounded-lg px-2 py-1 text-xs bg-transparent"
+                style="border: 1px solid var(--hairline); color: var(--text-primary)">
+          <option value="25">25</option>
+          <option value="50" selected>50</option>
+          <option value="100">100</option>
+          <option value="0">Alle</option>
+        </select>
+      </label>
+    </div>
+
+    <p id="status" class="text-xs mt-4 muted" role="status" aria-live="polite"></p>
+  </div>
+
+  <!-- ─── Source ─────────────────────────────────────────────────────── -->
+  <div id="kilde" class="card rounded-2xl p-5 mt-6 text-xs leading-relaxed muted">
+    <p class="font-bold mb-1" style="color: var(--text-primary)">Om datakilden</p>
+    <p>
+      Kurserne hentes fra Yahoo Finance af en GitHub Action, som committer dem til
+      <code>data/aktier.json</code> i dette repo. Siden læser den fil. Hentningen sker altså
+      på en server og ikke i din browser, hvilket er grunden til at der hverken er brug for
+      en API-nøgle eller for at datakilden tillader CORS.
+    </p>
+    <p class="mt-2" id="universeNote"></p>
+    <p class="mt-2">
+      <strong>Kurserne er forsinkede, ikke live.</strong> De opdateres tre gange på hverdage —
+      kort efter åbning, midt på dagen og efter lukketid.
+    </p>
+    <p class="mt-2" id="fxNote"></p>
+    <p class="mt-2">
+      Alle øvrige kolonner er rigtige felter fra kilden. Børsværdi vises ikke, fordi den ikke
+      indgår i svaret, og et beregnet gæt ville være misvisende. Sparklinjen viser de seneste 30
+      handelsdages lukkekurser. Volumen er antallet af handlede aktier, ikke omsætning i kroner.
+    </p>
+  </div>
+</div>
+
+<script src="assets/kursliste.js"></script>
+<script>
+(() => {
+  'use strict';
+  const K = window.KL;
+  const $  = (s) => document.querySelector(s);
+  const $$ = (s) => Array.from(document.querySelectorAll(s));
+  K.renderNav('kurser');
+
+  const state = {
+    all: [], updatedAt: null, markets: [], fx: null, universe: null,
+    market: null, index: null, sector: '', currency: 'native',
+    sort: 'percent_change', dir: -1, q: '', chip: null, tab: 'oversigt',
+    page: 1, pageSize: 50,
+  };
+
+  // ── Currency view ──────────────────────────────────────────────────────
+  // In DKK mode every USD figure is multiplied by the ECB rate. The result is
+  // for display and sorting only; the row keeps its native values, and
+  // `converted` lets each cell mark derived numbers with a ≈.
+  function view(r) {
+    const rate = state.fx ? state.fx.rate : 1;
+    const conv = state.currency === 'dkk' && r.currency !== 'DKK';
+    const c = (n) => (n == null ? null : conv ? n * rate : n);
+    return {
+      converted: conv, currency: conv ? 'DKK' : r.currency,
+      price: c(r.price), change: c(r.change), high: c(r.high), low: c(r.low),
+      previous_close: c(r.previous_close),
+    };
+  }
+
+  const sortPrice = (r) =>
+    state.currency === 'dkk' ? (r.price_dkk != null ? r.price_dkk : r.price) : r.price;
+
+  function filtered() {
+    let out = state.all;
+
+    if (state.market) out = out.filter((r) => r.market === state.market);
+    if (state.index)  out = out.filter((r) => (r.indices || []).includes(state.index));
+    if (state.sector) out = out.filter((r) => r.sector === state.sector);
+
+    if (state.q) {
+      const q = state.q.toLowerCase();
+      out = out.filter((r) => r.name.toLowerCase().includes(q) || r.symbol.toLowerCase().includes(q));
+    }
+
+    switch (state.chip) {
+      case 'gainers': out = out.filter((r) => (r.percent_change ?? 0) > 0); break;
+      case 'losers':  out = out.filter((r) => (r.percent_change ?? 0) < 0); break;
+      case 'near52':  out = out.filter((r) => (r.week52pos ?? 0) >= 0.9); break;
+    }
+
+    // Names sort under 'en', not 'da': Danish collation folds "Aa" into "Å" and
+    // files it after Z, which would send Aave-like names to the bottom.
+    const f = state.sort;
+    const key = (r) => (f === 'sortPrice' ? sortPrice(r) : r[f]);
+    return [...out].sort((a, b) => {
+      const x = key(a), y = key(b);
+      if (typeof x === 'string') return state.dir * x.localeCompare(y, 'en', { sensitivity: 'base' });
+      return state.dir * ((x ?? -Infinity) - (y ?? -Infinity));
+    });
+  }
+
+  function render() {
+    const rows = filtered();
+    const size = state.pageSize || rows.length || 1;
+    const pages = Math.max(1, Math.ceil(rows.length / size));
+    if (state.page > pages) state.page = pages;
+    const start = (state.page - 1) * size;
+    const slice = state.pageSize ? rows.slice(start, start + size) : rows;
+
+    $('#count').textContent = K.fmtInt(rows.length)
+      + (rows.length === 1 ? ' resultat' : ' resultater')
+      + (rows.length !== state.all.length ? ' af ' + K.fmtInt(state.all.length) : '');
+
+    $('#pageInfo').textContent = rows.length
+      ? 'Viser ' + K.fmtInt(start + 1) + '–' + K.fmtInt(Math.min(start + slice.length, rows.length))
+        + ' · side ' + state.page + ' af ' + pages
+      : 'Ingen resultater';
+    $('#prev').disabled = state.page <= 1;
+    $('#next').disabled = state.page >= pages;
+
+    $('#rows').innerHTML = slice.map((r) => {
+      const v = view(r);
+      const approx = v.converted ? '≈ ' : '';
+      return '<tr class="border-t divider hover:bg-black/[.02]">'
+        + '<td class="py-3 pr-3">'
+          + '<a class="row-link block" href="' + K.stockUrl(r.symbol) + '">'
+            + '<div class="font-semibold row-name">' + K.esc(r.name) + '</div>'
+            + '<div class="text-xs faint">' + (r.market === 'DK' ? '🇩🇰' : '🇺🇸') + ' ' + K.esc(r.symbol) + '</div>'
+          + '</a></td>'
+        + '<td class="px-3" data-col="oversigt kurser">' + K.sparkline(r.spark, r.change30d) + '</td>'
+        + '<td class="px-3 text-right num font-semibold ' + K.dirClass(r.percent_change) + '">' + K.fmtPct(r.percent_change) + '</td>'
+        + '<td class="px-3 text-right num font-semibold">' + approx + K.fmtPrice(v.price) + '</td>'
+        + '<td class="px-3 text-right num ' + K.dirClass(r.change) + '" data-col="oversigt kurser">' + approx + K.fmtDelta(v.change) + '</td>'
+        + '<td class="px-3 text-right num" data-col="kurser">' + approx + K.fmtPrice(v.high) + '</td>'
+        + '<td class="px-3 text-right num" data-col="kurser">' + approx + K.fmtPrice(v.low) + '</td>'
+        + '<td class="px-3 text-right num" data-col="kurser">' + approx + K.fmtPrice(v.previous_close) + '</td>'
+        + '<td class="px-3" data-col="nogletal">' + K.rangeBar(r) + '</td>'
+        + '<td class="px-3 text-right num ' + K.dirClass(r.change_6m) + '" data-col="nogletal">' + K.fmtPct(r.change_6m) + '</td>'
+        + '<td class="px-3 text-right num ' + K.dirClass(r.change_1y) + '" data-col="nogletal">' + K.fmtPct(r.change_1y) + '</td>'
+        + '<td class="px-3 muted text-xs" data-col="oversigt nogletal">' + K.esc(r.sector || '–') + '</td>'
+        + '<td class="px-3 muted" data-col="oversigt">' + K.esc(v.currency) + '</td>'
+        + '<td class="px-3 text-right num" data-col="oversigt nogletal">' + K.fmtBig(r.volume) + '</td>'
+        + '<td class="pl-3 muted text-xs" data-col="oversigt">' + K.esc(r.exchange || '–') + '</td>'
+      + '</tr>';
+    }).join('');
+
+    applyTab();
+  }
+
+  // Tabs hide columns rather than swapping tables, so sort state survives.
+  function applyTab() {
+    $$('[data-col]').forEach((el) => {
+      el.hidden = !el.dataset.col.split(' ').includes(state.tab);
+    });
+  }
+
+  function skeleton() {
+    $('#rows').innerHTML = Array.from({ length: 12 }, () =>
+      '<tr class="border-t divider"><td colspan="15" class="py-4">'
+      + '<div class="skeleton h-4 rounded"></div></td></tr>').join('');
+  }
+
+  function setCurrency(mode) {
+    state.currency = mode;
+    [['#curNative', 'native'], ['#curDkk', 'dkk']].forEach(([sel, m]) => {
+      const on = mode === m;
+      $(sel).setAttribute('aria-pressed', String(on));
+      $(sel).style.background = on ? 'var(--accent)' : 'transparent';
+      $(sel).style.color = on ? '#fff' : 'var(--text-secondary)';
+    });
+    render();
+  }
+
+  // Any filter change invalidates the current page number.
+  const reset = () => { state.page = 1; render(); };
+
+  // ── Load ───────────────────────────────────────────────────────────────
+  let loading = false;
+
+  async function load() {
+    if (loading) return;
+    loading = true;
+    $('#refreshIcon').style.opacity = '.4';
+    if (!state.all.length) skeleton();
+
+    try {
+      const list = await K.loadList();
+      state.all = list.rows;
+      state.updatedAt = list.updatedAt;
+      state.markets = list.markets;
+      state.fx = list.fx;
+
+      // Sector options come from the data, so a new sector never needs a code
+      // change here.
+      const sectors = list.sectors && list.sectors.length
+        ? list.sectors
+        : [...new Set(list.rows.map((r) => r.sector).filter(Boolean))].sort();
+      const sel = $('#sector');
+      sel.innerHTML = '<option value="">Alle sektorer</option>'
+        + sectors.map((s) => '<option value="' + K.esc(s) + '">' + K.esc(s) + '</option>').join('');
+      sel.value = state.sector;
+
+      render();
+
+      const when = list.updatedAt
+        ? new Date(list.updatedAt).toLocaleString('da-DK', { day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit' })
+        : 'ukendt tidspunkt';
+      const where = state.markets.length ? state.markets.map((m) => m.exchange).join(' + ') : 'Nasdaq København';
+
+      $('#freshness').textContent = 'Opdateret ' + K.fmtAge(list.updatedAt);
+      $('#status').textContent = 'Forsinkede kurser fra Yahoo Finance · ' + where
+        + ' · hentet ' + when + ' · opdateres tre gange på hverdage'
+        + (list.failed && list.failed.length ? ' · ' + list.failed.length + ' symboler kunne ikke hentes' : '');
+
+      const dk = list.rows.filter((r) => r.market === 'DK').length;
+      $('#universeNote').innerHTML = '<strong>Universet</strong> er ' + K.fmtInt(list.rows.length)
+        + ' selskaber: hele S&amp;P 500 og Nasdaq-100 plus ' + dk + ' store danske. Indeksernes sammensætning '
+        + 'hentes fra Wikipedia ved hver kørsel, så listen følger med når et selskab kommer ind eller ud.';
+
+      $('#fxNote').innerHTML = list.fx
+        ? '<strong>Valuta.</strong> “Noteret” viser kursen i den valuta børsen handler i, og hvert tal er '
+          + 'en rå kildeværdi. “Alt i DKK” omregner de amerikanske til ' + K.fmtPrice(list.fx.rate)
+          + ' DKK pr. USD (ECB-referencekurs ' + K.esc(list.fx.date) + ') og markerer dem med ≈, fordi de så er '
+          + 'beregnede tal og ikke noterede kurser. Sortering på kurs følger den valgte visning.'
+        : '';
+    } catch (err) {
+      if (state.all.length) {
+        // Keep the last good table standing; wiping it because one reload
+        // failed is worse than showing what we had, as long as we say so.
+        $('#status').innerHTML = '<span style="color: var(--delta-down)">Kunne ikke genindlæse ('
+          + K.esc(err.message) + '). Viser sidst hentede kurser.</span>';
+      } else {
+        $('#rows').innerHTML = '<tr><td colspan="15" class="py-8 text-center" style="color: var(--delta-down)">'
+          + 'Kunne ikke indlæse kurser: ' + K.esc(err.message) + '<br>'
+          + '<span class="text-xs muted">data/aktier.json mangler. Kør <code>node scripts/fetch-stocks.mjs</code>, '
+          + 'eller start workflowet “Opdatér aktiekurser” under Actions.</span></td></tr>';
+        $('#status').textContent = '';
+      }
+    } finally {
+      loading = false;
+      $('#refreshIcon').style.opacity = '1';
+    }
+  }
+
+  // ── Events ─────────────────────────────────────────────────────────────
+  let qTimer;
+  $('#q').addEventListener('input', (e) => {
+    clearTimeout(qTimer);
+    qTimer = setTimeout(() => { state.q = e.target.value.trim(); reset(); }, 150);
+  });
+
+  $('#sector').addEventListener('change', (e) => { state.sector = e.target.value; reset(); });
+
+  $('#sortField').addEventListener('change', (e) => {
+    state.sort = e.target.value;
+    state.dir = e.target.value === 'name' ? 1 : -1;
+    syncCarets(); reset();
+  });
+
+  $('#pageSize').addEventListener('change', (e) => { state.pageSize = Number(e.target.value); reset(); });
+  $('#prev').addEventListener('click', () => { if (state.page > 1) { state.page--; render(); window.scrollTo({ top: 0, behavior: 'smooth' }); } });
+  $('#next').addEventListener('click', () => { state.page++; render(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
+  $('#refresh').addEventListener('click', load);
+  $('#riskClose').addEventListener('click', () => { $('#risk').hidden = true; });
+  $('#curNative').addEventListener('click', () => setCurrency('native'));
+  $('#curDkk').addEventListener('click', () => setCurrency('dkk'));
+
+  // Three independent toggle groups; within a group the buttons are exclusive.
+  [['data-market', 'market'], ['data-index', 'index'], ['data-chip', 'chip']].forEach(([attr, key]) => {
+    $$('[' + attr + ']').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const v = btn.getAttribute(attr);
+        state[key] = state[key] === v ? null : v;
+        $$('[' + attr + ']').forEach((b) => b.setAttribute('aria-pressed', String(b.getAttribute(attr) === state[key])));
+        reset();
+      });
+    });
+  });
+
+  $('#clearFilters').addEventListener('click', () => {
+    state.market = state.index = state.chip = null;
+    state.sector = ''; state.q = '';
+    $('#q').value = ''; $('#sector').value = '';
+    $$('[data-market],[data-index],[data-chip]').forEach((b) => b.setAttribute('aria-pressed', 'false'));
+    reset();
+  });
+
+  $$('[role="tab"]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      state.tab = btn.dataset.tab;
+      $$('[role="tab"]').forEach((b) => b.setAttribute('aria-selected', String(b === btn)));
+      applyTab();
+    });
+  });
+
+  function syncCarets() {
+    $$('th[data-sort]').forEach((th) => {
+      th.setAttribute('aria-sort', th.dataset.sort !== state.sort ? 'none'
+        : state.dir === 1 ? 'ascending' : 'descending');
+    });
+  }
+
+  $$('th[data-sort]').forEach((th) => {
+    th.addEventListener('click', () => {
+      const f = th.dataset.sort;
+      if (state.sort === f) state.dir = -state.dir;
+      else { state.sort = f; state.dir = f === 'name' ? 1 : -1; }
+      if ($('#sortField').querySelector('option[value="' + state.sort + '"]')) $('#sortField').value = state.sort;
+      syncCarets(); reset();
+    });
+  });
+
+  // The JSON only changes when the Action commits and the site redeploys, so
+  // this is a slow poll to catch that for a tab left open — not live pricing.
+  setInterval(() => { if (!document.hidden) load(); }, 900_000);
+  setInterval(() => {
+    if (state.updatedAt) $('#freshness').textContent = 'Opdateret ' + K.fmtAge(state.updatedAt);
+  }, 60_000);
+
+  setCurrency('native');
+  syncCarets();
+  load();
+})();
+</script>
+</body>
+</html>
