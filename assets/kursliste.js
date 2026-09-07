@@ -66,6 +66,25 @@
     return mode === 'dkk' && row.currency !== 'DKK';
   }
 
+  // ── Markets ───────────────────────────────────────────────────────────
+  // One registry, so a flag or an exchange name is never spelled out twice.
+  // bench names the index a company from that market is measured against.
+  const MARKETS = {
+    DK: { label: 'Danmark', flag: '🇩🇰', exchange: 'Nasdaq København', bench: 'OMXC25' },
+    SE: { label: 'Sverige', flag: '🇸🇪', exchange: 'Nasdaq Stockholm', bench: 'OMXS30' },
+    NO: { label: 'Norge',   flag: '🇳🇴', exchange: 'Oslo Børs',        bench: 'OSEAX'  },
+    FI: { label: 'Finland', flag: '🇫🇮', exchange: 'Nasdaq Helsinki',  bench: 'OMXH25' },
+    IS: { label: 'Island',  flag: '🇮🇸', exchange: 'Nasdaq Iceland',   bench: null     },
+    US: { label: 'USA',     flag: '🇺🇸', exchange: 'Nasdaq / NYSE',    bench: 'SP500'  },
+  };
+  const marketOf = (code) => MARKETS[code] || { label: code || '–', flag: '', exchange: '', bench: null };
+  const flagOf = (code) => marketOf(code).flag;
+
+  const INDEX_LABELS = {
+    SP500: 'S&P 500', NDX: 'Nasdaq-100', SP400: 'S&P 400', SP600: 'S&P 600', 'DK-LARGE': 'København',
+  };
+  const indexLabel = (code) => INDEX_LABELS[code] || code;
+
   // ── Derived fields ────────────────────────────────────────────────────
   function decorate(stock) {
     const spark = stock.spark || [];
@@ -314,6 +333,7 @@
     priceIn, currencyLabel, isConverted,
     decorate, loadList, loadHistory, loadKeyFigures, loadBenchmarks, loadFundamentals,
     peOf, moveBetween, nearestIndex, drawdownSeries,
+    MARKETS, marketOf, flagOf, indexLabel,
     sparkline, rangeBar, slug, stockUrl,
   };
 })(window);

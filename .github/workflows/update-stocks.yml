@@ -36,6 +36,10 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
+    # A full run fetches three endpoints for every company in the universe and
+    # takes a few minutes; the default 6-hour limit is generous, but a hung
+    # request should not hold a runner all day.
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
 

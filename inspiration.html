@@ -59,10 +59,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
   <div class="flex items-baseline justify-between gap-3 mb-3 flex-wrap">
     <h2 class="text-xl font-extrabold tracking-tight">Lister</h2>
     <div class="flex flex-wrap gap-2 items-center">
-      <button class="chip rounded-full px-3 py-1.5 text-xs font-semibold" data-market="DK" aria-pressed="false"
-              data-hint-title="Danmark" data-hint="Vis kun selskaber noteret på Nasdaq København.">🇩🇰 Danmark</button>
-      <button class="chip rounded-full px-3 py-1.5 text-xs font-semibold" data-market="US" aria-pressed="false"
-              data-hint-title="USA" data-hint="Vis kun selskaber noteret på NasdaqGS eller NYSE.">🇺🇸 USA</button>
+      <span id="marketChips" class="contents"></span>
       <button class="chip rounded-full px-3 py-1.5 text-xs font-semibold" data-index="SP500" aria-pressed="false"
               data-hint-title="S&amp;P 500" data-hint="De 500 største amerikanske børsnoterede selskaber.">S&amp;P 500</button>
       <button class="chip rounded-full px-3 py-1.5 text-xs font-semibold" data-index="NDX" aria-pressed="false"
@@ -201,7 +198,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       + '<div class="flex items-start justify-between gap-2 mb-2">'
         + '<div class="min-w-0">'
           + '<div class="font-bold text-sm row-name truncate">' + K.esc(s.name) + '</div>'
-          + '<div class="text-xs faint">' + (s.market === 'DK' ? '🇩🇰' : '🇺🇸') + ' ' + K.esc(s.symbol) + '</div>'
+          + '<div class="text-xs faint">' + K.flagOf(s.market) + ' ' + K.esc(s.symbol) + '</div>'
         + '</div>'
         + '<div class="text-right shrink-0">'
           + '<div class="text-sm font-extrabold num ' + metric.cls + '">' + metric.value + '</div>'
@@ -256,7 +253,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       '<tr class="border-t divider hover:bg-black/[.02]">'
       + '<td class="py-3 px-4"><a class="row-link block" href="' + K.stockUrl(s.symbol) + '">'
         + '<div class="font-semibold row-name">' + K.esc(s.name) + '</div>'
-        + '<div class="text-xs faint">' + (s.market === 'DK' ? '🇩🇰' : '🇺🇸') + ' ' + K.esc(s.symbol) + '</div></a></td>'
+        + '<div class="text-xs faint">' + K.flagOf(s.market) + ' ' + K.esc(s.symbol) + '</div></a></td>'
       + '<td class="px-4 text-right num font-semibold ' + K.dirClass(s.percent_change) + '">' + K.fmtPct(s.percent_change) + '</td>'
       + '<td class="px-4 text-right num ' + K.dirClass(s.change_1y) + '">' + K.fmtPct(s.change_1y) + '</td>'
       + '<td class="px-4 text-right num">' + K.fmtBig(s.volume) + '</td>'
@@ -268,16 +265,22 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
 
   function render() { renderRail(); renderThemes(); renderTable(); }
 
-  [['data-market', 'market'], ['data-index', 'index']].forEach(([attr, key]) => {
-    $$('[' + attr + ']').forEach((btn) => {
-      btn.addEventListener('click', () => {
-        const v = btn.getAttribute(attr);
-        state[key] = state[key] === v ? null : v;
-        $$('[' + attr + ']').forEach((b) => b.setAttribute('aria-pressed', String(b.getAttribute(attr) === state[key])));
-        render();
+  // Called again once the market chips are rendered from the data.
+  function bindFilterGroups() {
+    [['data-market', 'market'], ['data-index', 'index']].forEach(([attr, key]) => {
+      $$('[' + attr + ']').forEach((btn) => {
+        if (btn.dataset.bound) return;
+        btn.dataset.bound = '1';
+        btn.addEventListener('click', () => {
+          const v = btn.getAttribute(attr);
+          state[key] = state[key] === v ? null : v;
+          $$('[' + attr + ']').forEach((b) => b.setAttribute('aria-pressed', String(b.getAttribute(attr) === state[key])));
+          render();
+        });
       });
     });
-  });
+  }
+  bindFilterGroups();
 
   $('#sector').addEventListener('change', (e) => { state.sector = e.target.value; render(); });
 
@@ -285,6 +288,19 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     try {
       const list = await K.loadList();
       state.rows = list.rows; state.fx = list.fx; state.updatedAt = list.updatedAt;
+
+      // One chip per market present in the data.
+      const chips = $('#marketChips');
+      if (chips) {
+        chips.innerHTML = (list.markets || []).map((m) => {
+          const info = K.marketOf(m.code);
+          return '<button class="chip rounded-full px-3 py-1.5 text-xs font-semibold" data-market="' + m.code
+            + '" aria-pressed="false" data-hint-title="' + K.esc(m.label) + '" data-hint="Vis kun selskaber '
+            + 'noteret på ' + K.esc(m.exchange || info.exchange) + '.">' + info.flag + ' ' + K.esc(m.label)
+            + '</button>';
+        }).join('');
+        bindFilterGroups();
+      }
       // Sector options come from the data, so a new sector needs no code change.
       const sectors = (list.sectors && list.sectors.length)
         ? list.sectors : [...new Set(list.rows.map((r) => r.sector).filter(Boolean))].sort();

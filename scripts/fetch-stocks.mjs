@@ -77,6 +77,11 @@ const DANISH = [
 // ICB names fold into their GICS equivalents.
 const SECTOR_ALIASES = {
   'Technology': 'Information Technology',
+  'Healthcare': 'Health Care',
+  'Financial Services': 'Financials',
+  'Consumer Cyclical': 'Consumer Discretionary',
+  'Consumer Defensive': 'Consumer Staples',
+  'Industrial Goods': 'Industrials',
   'Telecommunications': 'Communication Services',
   'Consumer Cyclicals': 'Consumer Discretionary',
   'Consumer Non-Cyclicals': 'Consumer Staples',
@@ -87,6 +92,28 @@ const normSector = (s) => SECTOR_ALIASES[s] || s || 'Ukendt';
 
 // Index tables quote share classes with a dot; Yahoo uses a dash (BRK.B → BRK-B).
 const normTicker = (t) => String(t).trim().toUpperCase().replace(/\./g, '-');
+
+// Every exchange whose primary listings we take. Yahoo's screener will also
+// serve Frankfurt, Paris, London and Milan, but those are dominated by
+// secondary listings of American companies (NVIDIA trades in Frankfurt as
+// NVD.DE) and, in Paris and Milan, by bonds classified as equity. Taking them
+// would fill the list with duplicates of rows it already has.
+const EXCHANGES = [
+  { code: 'NMS', market: 'US', label: 'USA' },
+  { code: 'NYQ', market: 'US', label: 'USA' },
+  { code: 'ASE', market: 'US', label: 'USA' },
+  { code: 'CPH', market: 'DK', label: 'Danmark' },
+  { code: 'STO', market: 'SE', label: 'Sverige' },
+  { code: 'OSL', market: 'NO', label: 'Norge' },
+  { code: 'HEL', market: 'FI', label: 'Finland' },
+  { code: 'ICE', market: 'IS', label: 'Island' },
+];
+
+// A floor rather than a ceiling on how many companies to take. Below about
+// fifty million dollars the exchanges are mostly shells and fund classes that
+// Yahoo carries no figures for; requiring a market value is what separates a
+// company from an instrument.
+const MIN_MARKET_CAP_USD = 50e6;
 
 const MIN_OK_RATIO = 0.7;
 const SPARK_POINTS = 30;
@@ -132,7 +159,37 @@ async function fetchWiki(page) {
   return parseWikiTable(await res.text());
 }
 
-async function buildUniverse() {
+// Yahoo's screener will page through a whole exchange, sorted by market
+// value. It is the same undocumented crumb flow used elsewhere, so a failure
+// here is not fatal: the universe falls back to the index lists alone.
+const SCREEN_PAGE = 250;
+
+async function screenExchange(exchange, session) {
+  const out = [];
+  for (let offset = 0; offset < 6000; offset += SCREEN_PAGE) {
+    const body = {
+      size: SCREEN_PAGE, offset, sortField: 'intradaymarketcap', sortType: 'DESC',
+      quoteType: 'EQUITY', topOperator: 'AND',
+      query: { operator: 'AND', operands: [
+        { operator: 'or', operands: [{ operator: 'EQ', operands: ['exchange', exchange] }] },
+      ] },
+      userId: '', userIdType: 'guid',
+    };
+    const res = await fetch('https://query1.finance.yahoo.com/v1/finance/screener?crumb='
+      + encodeURIComponent(session.crumb) + '&lang=en-US&region=US&formatted=false',
+      { method: 'POST', headers: { ...session.headers, 'content-type': 'application/json' },
+        body: JSON.stringify(body) });
+    if (!res.ok) throw new Error('screener HTTP ' + res.status);
+    const r = (await res.json()).finance?.result?.[0];
+    const quotes = r?.quotes || [];
+    out.push(...quotes);
+    if (quotes.length < SCREEN_PAGE || out.length >= (r.total || 0)) break;
+    await sleep(220);
+  }
+  return out;
+}
+
+async function buildUniverse(session, rates) {
   const byTicker = new Map();
 
   const add = (ticker, name, sector, index) => {
@@ -143,30 +200,81 @@ async function buildUniverse() {
     byTicker.set(t, { symbol: t, name, sector: normSector(sector), market: 'US', indices: [index] });
   };
 
-  const [sp, ndx] = await Promise.all([
-    fetchWiki('List_of_S%26P_500_companies').catch((e) => { console.warn('  S&P 500 fejlede:', e.message); return null; }),
-    fetchWiki('List_of_NASDAQ-100_companies').catch((e) => { console.warn('  Nasdaq-100 fejlede:', e.message); return null; }),
-  ]);
-
-  if (sp)  for (const r of sp)  add(r[0], r[1], r[2], 'SP500');
-  if (ndx) for (const r of ndx) add(r[0], r[1], r[2], 'NDX');
+  // All four index tables share the layout the parser expects: ticker, name,
+  // GICS sector. Together they are the S&P Composite 1500 plus the Nasdaq-100.
+  const WIKI = [
+    ['List_of_S%26P_500_companies',   'SP500',  'S&P 500'],
+    ['List_of_NASDAQ-100_companies',  'NDX',    'Nasdaq-100'],
+    ['List_of_S%26P_400_companies',   'SP400',  'S&P 400'],
+    ['List_of_S%26P_600_companies',   'SP600',  'S&P 600'],
+  ];
+  const lists = await Promise.all(WIKI.map(([page, , label]) =>
+    fetchWiki(page).catch((e) => { console.warn('  ' + label + ' fejlede:', e.message); return null; })));
+  lists.forEach((rows, i) => {
+    if (rows) for (const r of rows) add(r[0], r[1], r[2], WIKI[i][1]);
+  });
 
   // A partial scrape would silently shrink the site, so treat it as a failure
   // and let the caller fall back to the committed universe.
   if (byTicker.size < 400) throw new Error('for få amerikanske selskaber (' + byTicker.size + ')');
+  const fromIndices = byTicker.size;
 
-  for (const [symbol, name, sector] of DANISH) {
-    byTicker.set(symbol, { symbol, name, sector: normSector(sector), market: 'DK', indices: ['DK-LARGE'] });
+  // Then every other company the exchanges list. The index tables carry GICS
+  // sectors and are trusted for the companies they cover; the screener fills in
+  // the rest, and its sector comes later from the company profile.
+  let screened = 0;
+  if (session) {
+    for (const ex of EXCHANGES) {
+      try {
+        const quotes = await screenExchange(ex.code, session);
+        for (const q of quotes) {
+          const cap = q.marketCap;
+          if (!(cap > 0)) continue;                     // no value: a shell or a fund class
+          const rate = rates[q.currency] || null;
+          if (!rate) continue;                          // a currency we cannot convert
+          if ((cap * rate) / rates.USD < MIN_MARKET_CAP_USD) continue;
+
+          const t = String(q.symbol || '').trim().toUpperCase();
+          if (!t) continue;
+          const existing = byTicker.get(t);
+          if (existing) { existing.exchange = ex.code; continue; }
+          byTicker.set(t, {
+            symbol: t,
+            name: q.longName || q.shortName || t,
+            sector: null,                               // filled from the profile
+            market: ex.market,
+            exchange: ex.code,
+            indices: [],
+          });
+          screened++;
+        }
+      } catch (err) {
+        console.warn('  børs ' + ex.code + ' fejlede (' + err.message + ')');
+      }
+    }
   }
 
+  // The hand-kept Danish names stay as the floor: if Copenhagen were ever
+  // unreachable, the site should still know Novo Nordisk.
+  for (const [symbol, name, sector] of DANISH) {
+    const existing = byTicker.get(symbol);
+    if (existing) { existing.sector = existing.sector || normSector(sector); continue; }
+    byTicker.set(symbol, { symbol, name, sector: normSector(sector), market: 'DK', indices: ['DK-LARGE'] });
+  }
+  console.log('  ' + fromIndices + ' fra indekslister, ' + screened + ' flere fra børserne');
+
   const companies = [...byTicker.values()].sort((a, b) => a.symbol.localeCompare(b.symbol));
+  const markets = {};
+  for (const c of companies) markets[c.market] = (markets[c.market] || 0) + 1;
+
   return {
-    source: 'Wikipedia (S&P 500 + Nasdaq-100), samt en fast liste for Nasdaq København',
+    source: 'Wikipedia (S&P 500, Nasdaq-100, S&P 400, S&P 600) og Yahoos børsoversigt for de øvrige',
     counts: {
       total: companies.length,
+      markets,
       sp500: companies.filter((c) => c.indices.includes('SP500')).length,
       ndx:   companies.filter((c) => c.indices.includes('NDX')).length,
-      dk:    DANISH.length,
+      dk:    companies.filter((c) => c.market === 'DK').length,
     },
     companies,
   };
@@ -175,13 +283,23 @@ async function buildUniverse() {
 // ── FX ───────────────────────────────────────────────────────────────────
 // ECB reference rates via Frankfurter: keyless, quoted against EUR, so USD→DKK
 // is derived by dividing the two legs.
-async function fetchUsdDkk() {
-  const res = await fetch('https://api.frankfurter.dev/v1/latest?base=EUR&symbols=DKK,USD',
+async function fetchRates() {
+  const res = await fetch('https://api.frankfurter.dev/v1/latest?base=DKK',
     { headers: { accept: 'application/json' } });
   if (!res.ok) throw new Error('FX HTTP ' + res.status);
   const { date, rates } = await res.json();
-  if (!rates?.DKK || !rates?.USD) throw new Error('FX mangler DKK eller USD');
-  return { rate: Number((rates.DKK / rates.USD).toFixed(6)), date, source: 'ECB via Frankfurter' };
+  if (!rates?.USD) throw new Error('FX mangler USD');
+
+  // Stored the way the pages use them: kroner per unit of the listing
+  // currency. GBp is pence, a hundredth of a pound, and is the quote unit on
+  // the London exchange rather than a currency of its own.
+  const perDkk = Object.assign({}, rates, { DKK: 1 });
+  const toDkk = { DKK: 1 };
+  for (const [code, v] of Object.entries(perDkk)) {
+    if (v > 0) toDkk[code] = Number((1 / v).toFixed(6));
+  }
+  if (toDkk.GBP) toDkk.GBp = Number((toDkk.GBP / 100).toFixed(6));
+  return { rates: toDkk, usd: toDkk.USD, date, source: 'ECB via Frankfurter' };
 }
 
 // ── Market cap ───────────────────────────────────────────────────────────
@@ -243,8 +361,8 @@ const raw = (o) => (o && o.raw != null && Number.isFinite(o.raw) ? o.raw : null)
 // this company, who owns it and what the insiders have been doing. One request
 // per symbol — about nine seconds for the whole universe — and every failure is
 // non-fatal, so a company simply carries no key figures.
-const FUND_MODULES = ['defaultKeyStatistics', 'financialData', 'calendarEvents',
-  'earningsHistory', 'majorHoldersBreakdown', 'insiderTransactions', 'summaryDetail'].join(',');
+const FUND_MODULES = ['defaultKeyStatistics', 'financialData', 'calendarEvents', 'earningsHistory',
+  'majorHoldersBreakdown', 'insiderTransactions', 'summaryDetail', 'assetProfile'].join(',');
 
 // Yahoo's transaction text is prose. Only these two forms are someone deciding
 // to trade with their own money; grants, gifts and option exercises are pay, and
@@ -256,15 +374,30 @@ function insiderKind(text) {
   return 'other';
 }
 
+// Yahoo throttles a long burst of these: at 542 companies every one answered,
+// at 4.500 more than a third came back empty and the same symbols were fine
+// when asked again a moment later. So back off and retry rather than treat a
+// throttled request as a company without figures.
 async function fetchFundamentals(symbol, session) {
   const url = 'https://query1.finance.yahoo.com/v10/finance/quoteSummary/' + encodeURIComponent(symbol)
     + '?modules=' + FUND_MODULES + '&crumb=' + encodeURIComponent(session.crumb);
-  const res = await fetch(url, { headers: session.headers });
-  if (!res.ok) throw new Error('HTTP ' + res.status);
-  const r = (await res.json()).quoteSummary?.result?.[0];
-  if (!r) throw new Error('tomt svar');
+
+  let r = null, lastErr = null;
+  for (let attempt = 0; attempt < 4; attempt++) {
+    if (attempt) await sleep(400 * Math.pow(2, attempt) + Math.random() * 300);
+    try {
+      const res = await fetch(url, { headers: session.headers });
+      if (res.status === 429 || res.status >= 500) { lastErr = new Error('HTTP ' + res.status); continue; }
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      r = (await res.json()).quoteSummary?.result?.[0];
+      if (r) break;
+      lastErr = new Error('tomt svar');
+    } catch (err) { lastErr = err; }
+  }
+  if (!r) throw lastErr || new Error('tomt svar');
 
   const ks = r.defaultKeyStatistics || {}, fd = r.financialData || {};
+  const profile = r.assetProfile || {};
   const sd = r.summaryDetail || {}, mh = r.majorHoldersBreakdown || {};
   const ev = r.calendarEvents?.earnings || {};
   const revenue = raw(fd.totalRevenue), fcf = raw(fd.freeCashflow);
@@ -284,6 +417,8 @@ async function fetchFundamentals(symbol, session) {
       ins_pct: raw(mh.insidersPercentHeld),
       peg: raw(ks.pegRatio),
     },
+    sector: profile.sector || null,
+    country: profile.country || null,
     // Only the company page reads this.
     detail: {
       next_earnings: ev.earningsDate?.[0]?.fmt || null,
@@ -325,6 +460,9 @@ const BENCHMARKS = [
   { code: 'SP500',  symbol: '^GSPC',    label: 'S&P 500' },
   { code: 'SOX',    symbol: '^SOX',     label: 'Semiconductors' },
   { code: 'OMXC25', symbol: '^OMXC25',  label: 'OMX København 25' },
+  { code: 'OMXS30', symbol: '^OMXS30',  label: 'OMX Stockholm 30' },
+  { code: 'OMXH25', symbol: '^OMXH25',  label: 'OMX Helsinki 25' },
+  { code: 'OSEAX',  symbol: '^OSEAX',   label: 'Oslo Børs All-Share' },
 ];
 
 async function fetchBenchmarks() {
@@ -371,7 +509,13 @@ function assignRanks(rows) {
   rankWithin(rows, 'rank_all', 'market_cap_dkk');
   rankWithin(rows.filter((r) => (r.indices || []).includes('SP500')), 'rank_sp500', 'market_cap');
   rankWithin(rows.filter((r) => (r.indices || []).includes('NDX')), 'rank_ndx', 'market_cap');
-  rankWithin(rows.filter((r) => r.market === 'DK'), 'rank_dk', 'market_cap');
+  // One ranking per market. Members of a market share a currency, so these
+  // need no conversion.
+  for (const m of [...new Set(rows.map((r) => r.market))]) {
+    rankWithin(rows.filter((r) => r.market === m), 'rank_market', 'market_cap');
+  }
+  // Kept under its old name so the Danish pages do not have to change.
+  for (const r of rows) if (r.market === 'DK') r.rank_dk = r.rank_market;
 }
 
 // ── Quotes ───────────────────────────────────────────────────────────────
@@ -533,7 +677,7 @@ function computeStats(dates, closes, volumes) {
   return stats;
 }
 
-function normalise(result, company, usdDkk) {
+function normalise(result, company, rates) {
   const meta = result.meta || {};
   const quote = result.indicators?.quote?.[0] || {};
 
@@ -576,7 +720,10 @@ function normalise(result, company, usdDkk) {
   const currency = meta.currency || (company.market === 'DK' ? 'DKK' : 'USD');
   // One derived field, kept beside the untouched native price, so the pages can
   // offer a DKK view without any table figure being a silent conversion.
-  const toDkk = (n) => (n == null ? null : currency === 'DKK' ? n : round(n * usdDkk));
+  // Each listing converts at its own currency's rate; a Swedish krona and a
+  // dollar are not interchangeable just because neither is a Danish krone.
+  const fx = rates[currency] || null;
+  const toDkk = (n) => (n == null || fx == null ? null : currency === 'DKK' ? n : round(n * fx));
 
   return {
     row: {
@@ -618,7 +765,7 @@ function normalise(result, company, usdDkk) {
 // Leave a file alone when nothing but the timestamp would change. updated_at is
 // a clock reading, so rewriting unconditionally would dirty every file on every
 // run — including holidays, when the exchanges are shut and nothing moved.
-async function writeIfChanged(path, body, label) {
+async function writeIfChanged(path, body, label, compact) {
   try {
     const { updated_at, ...previous } = JSON.parse(await readFile(path, 'utf8'));
     if (JSON.stringify(previous) === JSON.stringify(body)) {
@@ -628,22 +775,35 @@ async function writeIfChanged(path, body, label) {
   } catch { /* ingen brugbar tidligere fil; skriv en ny */ }
 
   await mkdir(dirname(path), { recursive: true });
-  await writeFile(path, JSON.stringify({ updated_at: new Date().toISOString(), ...body }, null, 2) + '\n', 'utf8');
+  const full = { updated_at: new Date().toISOString(), ...body };
+  await writeFile(path, compact ? JSON.stringify(full) + '\n'
+    : JSON.stringify(full, null, 2) + '\n', 'utf8');
   if (label) console.log('  ' + label + ': skrevet');
   return true;
 }
 
 async function main() {
-  // 1. Universe
+  // 0. One Yahoo session for the screener, the quotes and the profiles
+  let session0 = null;
+  try { session0 = await yahooSession(); }
+  catch (err) { console.warn('Yahoo-session fejlede (' + err.message + ') — kun indekslisterne.'); }
+
+  // 1. FX first: the market-value floor the universe applies is in dollars, so
+  // the rates have to exist before a Swedish company can be measured against it.
+  const fx = await fetchRates();
+  console.log(`USD→DKK ${fx.usd} (ECB ${fx.date}), ${Object.keys(fx.rates).length} valutaer`);
+
+  // 2. Universe
   let universe;
   if (QUOTES_ONLY) {
     universe = JSON.parse(await readFile(OUT_UNIVERSE, 'utf8'));
     console.log(`Univers genbrugt: ${universe.companies.length} selskaber`);
   } else {
     try {
-      universe = await buildUniverse();
-      console.log(`Univers: ${universe.counts.total} selskaber `
-        + `(S&P 500: ${universe.counts.sp500}, Nasdaq-100: ${universe.counts.ndx}, DK: ${universe.counts.dk})`);
+      universe = await buildUniverse(session0, fx.rates);
+      const perMarket = universe.counts.markets || {};
+      console.log(`Univers: ${universe.counts.total} selskaber (`
+        + Object.entries(perMarket).map(([m, n]) => m + ': ' + n).join(', ') + ')');
       await writeIfChanged(OUT_UNIVERSE, universe, 'univers.json');
     } catch (err) {
       console.warn('Kunne ikke opdatere universet (' + err.message + ') — bruger den committede liste.');
@@ -651,17 +811,13 @@ async function main() {
     }
   }
 
-  // 2. FX
-  const fx = await fetchUsdDkk();
-  console.log(`USD→DKK ${fx.rate} (ECB ${fx.date})`);
-
   // 3. Quotes
   const companies = LIMIT ? universe.companies.slice(0, LIMIT) : universe.companies;
   const t0 = Date.now();
   let done = 0;
   const results = await pool(companies, CONCURRENCY, async (c) => {
     try {
-      const out = normalise(await fetchTicker(c.symbol), c, fx.rate);
+      const out = normalise(await fetchTicker(c.symbol), c, fx.rates);
       if (++done % 100 === 0) console.log(`  ${done}/${companies.length}…`);
       return out;
     } catch (err) { done++; return { failed: c.symbol, reason: err.message }; }
@@ -720,7 +876,7 @@ async function main() {
   let capsOk = 0, session = null;
   const quoteFields = new Map();
   try {
-    session = await yahooSession();
+    session = session0 || await yahooSession();
     const got = await fetchQuoteFields(rows.map((r) => r.symbol), session);
     for (const r of rows) {
       const q = got.get(r.symbol);
@@ -728,7 +884,7 @@ async function main() {
       quoteFields.set(r.symbol, q);
       if (q.market_cap != null) {
         r.market_cap = q.market_cap;
-        r.market_cap_dkk = Math.round(r.currency === 'DKK' ? q.market_cap : q.market_cap * fx.rate);
+        r.market_cap_dkk = Math.round(q.market_cap * (fx.rates[r.currency] || 0)) || null;
         capsOk++;
       }
     }
@@ -760,9 +916,14 @@ async function main() {
           next_earnings: f.detail.next_earnings || q.next_earnings || null,
         };
         detail[r.symbol] = f.detail;
+        // The index tables give GICS sectors and are trusted where they reach.
+        // Everyone else takes the sector off their own profile, folded into the
+        // same vocabulary so one filter still covers the whole list.
+        if (!r.sector && f.sector) r.sector = normSector(f.sector);
         fundOk++;
       } catch { /* uden nøgletal viser siden ingen */ }
     });
+    for (const r of rows) if (!r.sector) r.sector = 'Ukendt';
     console.log(`  nøgletal: ${fundOk}/${rows.length} selskaber`);
 
     // A company's P/E means little alone. The comparison is the median of the
@@ -813,17 +974,23 @@ async function main() {
   await writeIfChanged(OUT_LIST, {
     source: 'Yahoo Finance',
     markets: [
-      { code: 'DK', label: 'Danmark', exchange: 'Nasdaq København', currency: 'DKK' },
-      { code: 'US', label: 'USA',     exchange: 'NasdaqGS / NYSE',  currency: 'USD' },
-    ],
+      { code: 'DK', label: 'Danmark', exchange: 'Nasdaq København',  currency: 'DKK', flag: '🇩🇰' },
+      { code: 'SE', label: 'Sverige', exchange: 'Nasdaq Stockholm',  currency: 'SEK', flag: '🇸🇪' },
+      { code: 'NO', label: 'Norge',   exchange: 'Oslo Børs',         currency: 'NOK', flag: '🇳🇴' },
+      { code: 'FI', label: 'Finland', exchange: 'Nasdaq Helsinki',   currency: 'EUR', flag: '🇫🇮' },
+      { code: 'IS', label: 'Island',  exchange: 'Nasdaq Iceland',    currency: 'ISK', flag: '🇮🇸' },
+      { code: 'US', label: 'USA',     exchange: 'Nasdaq / NYSE / NYSE American', currency: 'USD', flag: '🇺🇸' },
+    ].filter((m) => rows.some((r) => r.market === m.code)),
     indices: [
       { code: 'SP500',    label: 'S&P 500' },
       { code: 'NDX',      label: 'Nasdaq-100' },
+      { code: 'SP400',    label: 'S&P 400' },
+      { code: 'SP600',    label: 'S&P 600' },
       { code: 'DK-LARGE', label: 'København' },
     ],
     sectors: [...new Set(rows.map((r) => r.sector))].sort(),
     ranked: capsOk,
-    fx: { pair: 'USD/DKK', ...fx },
+    fx: { pair: 'USD/DKK', rate: fx.usd, date: fx.date, source: fx.source, rates: fx.rates },
     failed,
     stocks: rows,
   }, 'aktier.json');
@@ -837,7 +1004,7 @@ async function main() {
   for (const [symbol, h] of Object.entries(history)) {
     if (await writeIfChanged(resolve(OUT_HIST_DIR, symbol + '.json'),
       { source: 'Yahoo Finance', range: '2y', symbol, ...h,
-        monthly: lifetime[symbol] || null }, null)) written++;
+        monthly: lifetime[symbol] || null }, null, true)) written++;
   }
 
   // Drop files for companies that have left the universe, so the directory does

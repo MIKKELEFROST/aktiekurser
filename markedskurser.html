@@ -53,11 +53,12 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
   <div class="flex items-start justify-between gap-4 mb-6 flex-wrap">
     <div>
       <h1 class="text-2xl md:text-3xl font-extrabold tracking-tight">
-        Aktiekurser – se danske og amerikanske aktier
+        Aktiekurser – nordiske og amerikanske aktier
       </h1>
       <p class="text-sm mt-1 muted" style="max-width:70ch">
-        Hele S&amp;P 500 og Nasdaq-100 plus de største på Nasdaq København. Filtrér på marked,
-        indeks og sektor, vælg selv hvilke kolonner du vil se, og klik på et selskab for detaljer.
+        Alle børsnoterede selskaber af en vis størrelse i Danmark, Sverige, Norge, Finland og Island
+        samt på Nasdaq, NYSE og NYSE American. Filtrér på marked, indeks og sektor, vælg selv hvilke
+        kolonner du vil se, og klik på et selskab for detaljer.
       </p>
     </div>
     <a href="inspiration.html"
@@ -117,15 +118,16 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     <!-- ─── Chips ──────────────────────────────────────────────────────── -->
     <div class="flex flex-wrap items-center gap-2 mb-4">
       <span class="text-xs font-bold mr-1 muted">Filtre</span>
-      <button class="chip rounded-full px-3 py-1 text-xs font-semibold" data-market="DK" aria-pressed="false"
-              data-hint-title="Danmark" data-hint="Viser kun selskaber noteret på Nasdaq København.">🇩🇰 Danmark</button>
-      <button class="chip rounded-full px-3 py-1 text-xs font-semibold" data-market="US" aria-pressed="false"
-              data-hint-title="USA" data-hint="Viser kun selskaber noteret på NasdaqGS eller NYSE.">🇺🇸 USA</button>
+      <span id="marketChips" class="contents"></span>
       <span class="mx-1 faint" aria-hidden="true">|</span>
       <button class="chip rounded-full px-3 py-1 text-xs font-semibold" data-index="SP500" aria-pressed="false"
               data-hint-title="S&amp;P 500" data-hint="De 500 største amerikanske børsnoterede selskaber målt på markedsværdi.">S&amp;P 500</button>
       <button class="chip rounded-full px-3 py-1 text-xs font-semibold" data-index="NDX" aria-pressed="false"
               data-hint-title="Nasdaq-100" data-hint="De 100 største ikke-finansielle selskaber på Nasdaq. Overlapper i høj grad med S&amp;P 500.">Nasdaq-100</button>
+      <button class="chip rounded-full px-3 py-1 text-xs font-semibold" data-index="SP400" aria-pressed="false"
+              data-hint-title="S&amp;P 400" data-hint="Mellemstore amerikanske selskaber — de 400 lige under S&amp;P 500.">S&amp;P 400</button>
+      <button class="chip rounded-full px-3 py-1 text-xs font-semibold" data-index="SP600" aria-pressed="false"
+              data-hint-title="S&amp;P 600" data-hint="Små amerikanske selskaber. S&amp;P 500, 400 og 600 udgør tilsammen S&amp;P Composite 1500.">S&amp;P 600</button>
       <span class="mx-1 faint" aria-hidden="true">|</span>
       <button class="chip rounded-full px-3 py-1 text-xs font-semibold" data-chip="gainers" aria-pressed="false"
               data-hint-title="Vindere i dag" data-hint="Viser kun aktier der er steget siden forrige lukkekurs.">Vindere i dag</button>
@@ -232,14 +234,14 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
   function rankOf(r) {
     if (state.index === 'SP500') return r.rank_sp500;
     if (state.index === 'NDX')   return r.rank_ndx;
-    if (state.market === 'DK')   return r.rank_dk;
+    if (state.market)            return r.rank_market;
     return r.rank_all;
   }
 
   // ── Column registry ────────────────────────────────────────────────────
   // One definition per column drives the header, the cell, the sort key and
   // the picker, so a new column is added in exactly one place.
-  const INDEX_LABEL = { SP500: 'S&P 500', NDX: 'Nasdaq-100', 'DK-LARGE': 'København' };
+  const INDEX_LABEL = K.indexLabel;
   const pct = (v) => '<span class="num font-semibold ' + K.dirClass(v) + '">' + K.fmtPct(v) + '</span>';
 
   // Key figures arrive in their own file; a row with none simply shows dashes.
@@ -260,7 +262,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       hint: 'Selskabets navn og børssymbol. Klik på en række for at se detaljer.',
       cell: (r) => '<a class="row-link block" href="' + K.stockUrl(r.symbol) + '">'
         + '<div class="font-semibold row-name">' + K.esc(r.name) + '</div>'
-        + '<div class="text-xs faint">' + (r.market === 'DK' ? '🇩🇰' : '🇺🇸') + ' ' + K.esc(r.symbol) + '</div></a>' },
+        + '<div class="text-xs faint">' + K.flagOf(r.market) + ' ' + K.esc(r.symbol) + '</div></a>' },
 
     { key: 'sector', label: 'Sektor', group: 'Selskab',
       hint: 'Selskabets branche efter GICS-systemet. Nasdaq-100-selskaber er oversat til samme navne.',
@@ -268,7 +270,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
 
     { key: 'indices', label: 'Indeks', group: 'Selskab',
       hint: 'Hvilke indeks selskabet indgår i.',
-      cell: (r) => '<span class="muted text-xs">' + (r.indices || []).map((i) => K.esc(INDEX_LABEL[i] || i)).join(', ') + '</span>' },
+      cell: (r) => '<span class="muted text-xs">' + (r.indices || []).map((i) => K.esc(INDEX_LABEL(i))).join(', ') + '</span>' },
 
     { key: 'exchange', label: 'Børs', group: 'Selskab',
       hint: 'Den børs aktien er noteret på.',
@@ -657,6 +659,21 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       state.markets = list.markets;
       state.fx = list.fx;
 
+      // One chip per market present in the data, so a new exchange in the
+      // pipeline shows up here without an edit.
+      const chips = $('#marketChips');
+      if (chips && !chips.dataset.built) {
+        chips.innerHTML = (list.markets || []).map((m) => {
+          const info = K.marketOf(m.code);
+          return '<button class="chip rounded-full px-3 py-1 text-xs font-semibold" data-market="' + m.code
+            + '" aria-pressed="false" data-hint-title="' + K.esc(m.label) + '" data-hint="Viser kun selskaber '
+            + 'noteret på ' + K.esc(m.exchange || info.exchange) + '.">' + info.flag + ' ' + K.esc(m.label)
+            + '</button>';
+        }).join('');
+        chips.dataset.built = '1';
+        bindFilterGroups();
+      }
+
       const sectors = (list.sectors && list.sectors.length)
         ? list.sectors : [...new Set(list.rows.map((r) => r.sector).filter(Boolean))].sort();
       $('#sector').innerHTML = '<option value="">Alle sektorer</option>'
@@ -750,14 +767,22 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
   $('#curNative').addEventListener('click', () => setCurrency('native'));
   $('#curDkk').addEventListener('click', () => setCurrency('dkk'));
 
-  [['data-market', 'market'], ['data-index', 'index'], ['data-chip', 'chip']].forEach(([attr, key]) => {
-    $$('[' + attr + ']').forEach((btn) => btn.addEventListener('click', () => {
-      const v = btn.getAttribute(attr);
-      state[key] = state[key] === v ? null : v;
-      $$('[' + attr + ']').forEach((b) => b.setAttribute('aria-pressed', String(b.getAttribute(attr) === state[key])));
-      reset();
-    }));
-  });
+  // Called again once the market chips are rendered from the data.
+  function bindFilterGroups() {
+    [['data-market', 'market'], ['data-index', 'index'], ['data-chip', 'chip']].forEach(([attr, key]) => {
+      $$('[' + attr + ']').forEach((btn) => {
+        if (btn.dataset.bound) return;
+        btn.dataset.bound = '1';
+        btn.addEventListener('click', () => {
+          const v = btn.getAttribute(attr);
+          state[key] = state[key] === v ? null : v;
+          $$('[' + attr + ']').forEach((b) => b.setAttribute('aria-pressed', String(b.getAttribute(attr) === state[key])));
+          reset();
+        });
+      });
+    });
+  }
+  bindFilterGroups();
   $('#clearFilters').addEventListener('click', () => {
     state.market = state.index = state.chip = null; state.sector = ''; state.q = '';
     $('#q').value = ''; $('#sector').value = '';
