@@ -15,11 +15,33 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
 </script>
 <style>
   .pager-btn {
-    border: 1px solid var(--hairline); color: var(--text-secondary);
-    border-radius: 8px; padding: 5px 11px; font-size: 12px; font-weight: 700;
+    border: 1px solid var(--hairline); color: var(--text-secondary); background: transparent;
+    border-radius: 8px; padding: 5px 11px; font-size: 12px; font-weight: 700; cursor: pointer;
   }
   .pager-btn[disabled] { opacity: .35; cursor: default; }
   .pager-btn:not([disabled]):hover { color: var(--text-primary); }
+
+  /* Column picker */
+  .picker-wrap { position: relative; }
+  #picker {
+    position: absolute; z-index: 30; top: calc(100% + 6px); left: 0;
+    width: min(680px, calc(100vw - 32px)); max-height: 70vh; overflow-y: auto;
+    background: var(--surface-1); border: 1px solid var(--hairline);
+    border-radius: 12px; box-shadow: 0 12px 32px rgba(0,0,0,.16); padding: 14px;
+  }
+  #picker[hidden] { display: none; }
+  .pick-group { break-inside: avoid; margin-bottom: 14px; }
+  .pick-group h3 {
+    font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: .05em;
+    color: var(--text-muted); margin-bottom: 6px;
+  }
+  .pick-item {
+    display: flex; align-items: flex-start; gap: 7px; padding: 3px 0;
+    font-size: 13px; cursor: pointer; line-height: 1.35;
+  }
+  .pick-item input { margin-top: 2px; accent-color: var(--accent); flex: 0 0 auto; }
+  .pick-item span { color: var(--text-secondary); }
+  .pick-item input:checked + span { color: var(--text-primary); font-weight: 600; }
 </style>
 </head>
 
@@ -33,9 +55,9 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       <h1 class="text-2xl md:text-3xl font-extrabold tracking-tight">
         Aktiekurser – se danske og amerikanske aktier
       </h1>
-      <p class="text-sm mt-1 muted" id="lede">
-        Kurser fra Nasdaq København, S&amp;P 500 og Nasdaq-100. Filtrér på marked, indeks og
-        sektor, skift valuta, og klik på et selskab for at se detaljer.
+      <p class="text-sm mt-1 muted" style="max-width:70ch">
+        Hele S&amp;P 500 og Nasdaq-100 plus de største på Nasdaq København. Filtrér på marked,
+        indeks og sektor, vælg selv hvilke kolonner du vil se, og klik på et selskab for detaljer.
       </p>
     </div>
     <a href="inspiration.html"
@@ -46,37 +68,32 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
 
   <div class="card rounded-2xl p-4 md:p-6">
 
-    <!-- ─── Filter row ─────────────────────────────────────────────────── -->
+    <!-- ─── Controls ───────────────────────────────────────────────────── -->
     <div class="flex flex-wrap items-center gap-3 mb-4">
-      <div class="relative">
-        <label for="q" class="sr-only">Søg efter navn eller symbol</label>
-        <input id="q" type="search" placeholder="Navn / symbol" autocomplete="off"
-               class="w-56 rounded-lg pl-9 pr-3 py-2 text-sm bg-transparent focus:outline-none focus:ring-2"
-               style="border: 1px solid var(--hairline); color: var(--text-primary); --tw-ring-color: var(--accent)">
-        <span class="absolute left-3 top-1/2 -translate-y-1/2 text-sm faint" aria-hidden="true">⌕</span>
-      </div>
+      <input id="q" type="search" class="rounded-lg px-3 py-2 text-sm bg-transparent" style="width:14rem;border:1px solid var(--hairline);color:var(--text-primary)"
+             placeholder="Navn / symbol" aria-label="Søg efter navn eller symbol">
 
       <select id="sector" class="rounded-lg px-3 py-2 text-sm bg-transparent" aria-label="Sektor"
-              style="border: 1px solid var(--hairline); color: var(--text-primary)">
+              style="border:1px solid var(--hairline);color:var(--text-primary)">
         <option value="">Alle sektorer</option>
       </select>
 
       <select id="sortField" class="rounded-lg px-3 py-2 text-sm bg-transparent" aria-label="Sortér efter"
-              style="border: 1px solid var(--hairline); color: var(--text-primary)">
-        <option value="rank">Placering (markedsværdi)</option>
-        <option value="percent_change">Ændring i dag</option>
-        <option value="change30d">Ændring 30 dage</option>
-        <option value="change_6m">Ændring 6 måneder</option>
-        <option value="change_1y">Ændring 1 år</option>
-        <option value="sortPrice">Seneste kurs</option>
-        <option value="volume">Volumen</option>
-        <option value="week52pos">Placering i 52-ugers interval</option>
-        <option value="name">Navn</option>
-      </select>
+              style="border:1px solid var(--hairline);color:var(--text-primary)"></select>
+
+      <div class="picker-wrap">
+        <button id="pickerBtn" class="rounded-lg px-3 py-2 text-sm font-semibold muted" aria-expanded="false"
+                style="border:1px solid var(--hairline)"
+                data-hint-title="Kolonner"
+                data-hint="Vælg selv hvad tabellen viser. Alt fra de enkelte aktiesider kan slås til. Dit valg huskes i denne browser.">
+          ⊞ Kolonner <span id="pickerCount" class="num faint"></span>
+        </button>
+        <div id="picker" hidden role="dialog" aria-label="Vælg kolonner"></div>
+      </div>
 
       <!-- Currency view. "Noteret" keeps every figure a raw source value;
            "Alt i DKK" converts the USD rows so prices sort across markets. -->
-      <div class="inline-flex rounded-lg overflow-hidden" style="border: 1px solid var(--hairline)"
+      <div class="inline-flex rounded-lg overflow-hidden" style="border:1px solid var(--hairline)"
            role="group" aria-label="Valuta">
         <button id="curNative" class="px-3 py-2 text-xs font-bold" aria-pressed="true"
                 data-hint-title="Noteret valuta"
@@ -89,11 +106,10 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       <span id="freshness" class="inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-xs font-bold" tabindex="0"
             data-hint-title="Dataalder"
             data-hint="Hvornår kurserne sidst ændrede sig. De hentes tre gange på hverdage, så de er forsinkede — ikke live."
-            style="border: 1px solid var(--hairline); color: var(--text-secondary)"></span>
+            style="border:1px solid var(--hairline);color:var(--text-secondary)"></span>
 
-      <button id="refresh" type="button"
-              class="ml-auto inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold muted"
-              style="border: 1px solid var(--hairline)">
+      <button id="refresh" type="button" class="ml-auto inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold muted"
+              style="border:1px solid var(--hairline)">
         <span id="refreshIcon" aria-hidden="true">⟳</span> Genindlæs
       </button>
     </div>
@@ -101,8 +117,6 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     <!-- ─── Chips ──────────────────────────────────────────────────────── -->
     <div class="flex flex-wrap items-center gap-2 mb-4">
       <span class="text-xs font-bold mr-1 muted">Filtre</span>
-      <!-- Market, index and category are three independent toggle groups, so
-           "Danmark", "S&P 500" and "Vindere i dag" never cancel each other. -->
       <button class="chip rounded-full px-3 py-1 text-xs font-semibold" data-market="DK" aria-pressed="false"
               data-hint-title="Danmark" data-hint="Viser kun selskaber noteret på Nasdaq København.">🇩🇰 Danmark</button>
       <button class="chip rounded-full px-3 py-1 text-xs font-semibold" data-market="US" aria-pressed="false"
@@ -111,7 +125,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       <button class="chip rounded-full px-3 py-1 text-xs font-semibold" data-index="SP500" aria-pressed="false"
               data-hint-title="S&amp;P 500" data-hint="De 500 største amerikanske børsnoterede selskaber målt på markedsværdi.">S&amp;P 500</button>
       <button class="chip rounded-full px-3 py-1 text-xs font-semibold" data-index="NDX" aria-pressed="false"
-              data-hint-title="Nasdaq-100" data-hint="De 100 største ikke-finansielle selskaber på Nasdaq-børsen. Overlapper i høj grad med S&amp;P 500.">Nasdaq-100</button>
+              data-hint-title="Nasdaq-100" data-hint="De 100 største ikke-finansielle selskaber på Nasdaq. Overlapper i høj grad med S&amp;P 500.">Nasdaq-100</button>
       <span class="mx-1 faint" aria-hidden="true">|</span>
       <button class="chip rounded-full px-3 py-1 text-xs font-semibold" data-chip="gainers" aria-pressed="false"
               data-hint-title="Vindere i dag" data-hint="Viser kun aktier der er steget siden forrige lukkekurs.">Vindere i dag</button>
@@ -124,7 +138,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     </div>
 
     <!-- ─── Risk notice ────────────────────────────────────────────────── -->
-    <div id="risk" class="rounded-xl p-4 mb-4 flex gap-3" style="background: var(--page-plane); border: 1px solid var(--hairline)">
+    <div id="risk" class="rounded-xl p-4 mb-4 flex gap-3" style="background:var(--page-plane);border:1px solid var(--hairline)">
       <span aria-hidden="true" class="faint">ⓘ</span>
       <div class="flex-1">
         <p class="text-sm font-bold">Risikooplysning vedrørende aktiehandel</p>
@@ -134,60 +148,27 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
           garanti for fremtidige afkast. Der er risiko for, at du ikke får de investerede penge tilbage.
         </p>
       </div>
-      <button type="button" id="riskClose" aria-label="Luk risikooplysning"
-              class="shrink-0 self-start text-lg leading-none faint">×</button>
-    </div>
-
-    <!-- ─── Tabs ───────────────────────────────────────────────────────── -->
-    <div class="flex gap-6 mb-2 border-b divider overflow-x-auto" role="tablist">
-      <button class="tab pb-2 text-sm whitespace-nowrap" role="tab" data-tab="oversigt" aria-selected="true">Oversigt</button>
-      <button class="tab pb-2 text-sm whitespace-nowrap" role="tab" data-tab="kurser"   aria-selected="false">Kurser</button>
-      <button class="tab pb-2 text-sm whitespace-nowrap" role="tab" data-tab="nogletal" aria-selected="false">Nøgletal</button>
+      <button type="button" id="riskClose" aria-label="Luk risikooplysning" class="shrink-0 self-start text-lg leading-none faint">×</button>
     </div>
 
     <!-- ─── Table ──────────────────────────────────────────────────────── -->
-    <div class="overflow-x-auto">
-      <table class="w-full text-sm border-collapse min-w-[980px]">
-        <thead>
-          <tr class="text-xs faint">
-            <th class="text-right font-semibold py-3 pr-3 whitespace-nowrap" data-sort="rank" aria-sort="none"><span class="hint" tabindex="0" data-hint-title="Placering" data-hint="Selskabets plads målt på markedsværdi. Uden filter er det pladsen i hele universet; vælger du S&amp;P 500, Nasdaq-100 eller Danmark, er det pladsen i netop det indeks.">#</span> <span class="caret"></span></th>
-            <th class="text-left  font-semibold py-3 pr-3 whitespace-nowrap" data-sort="name" aria-sort="none"><span class="hint" tabindex="0" data-hint-title="Navn" data-hint="Selskabets navn og børssymbol. Klik på en række for at se detaljer.">Navn</span> <span class="caret"></span></th>
-            <th class="text-left  font-semibold py-3 px-3 whitespace-nowrap" data-sort="change30d" aria-sort="none" data-col="oversigt kurser"><span class="hint" tabindex="0" data-hint-title="Udv. 30 dage" data-hint="Kurslinje for de seneste 30 handelsdage. Grøn betyder op over perioden, rød ned.">Udv. 30 dage</span> <span class="caret"></span></th>
-            <th class="text-right font-semibold py-3 px-3 whitespace-nowrap" data-sort="percent_change" aria-sort="descending"><span class="hint" tabindex="0" data-hint-title="I dag %" data-hint="Kursændring siden forrige handelsdags lukkekurs, i procent. Kan sammenlignes på tværs af valutaer.">I dag %</span> <span class="caret"></span></th>
-            <th class="text-right font-semibold py-3 px-3 whitespace-nowrap" data-sort="sortPrice" aria-sort="none"><span class="hint" tabindex="0" data-hint-title="Seneste" data-hint="Den senest registrerede kurs. Forsinket data, opdateret tre gange på hverdage.">Seneste</span> <span class="caret"></span></th>
-            <th class="text-right font-semibold py-3 px-3 whitespace-nowrap" data-col="oversigt kurser"><span class="hint" tabindex="0" data-hint-title="I dag +/-" data-hint="Kursændringen i kroner eller dollar — samme bevægelse som “I dag %”, bare i beløb.">I dag +/-</span></th>
-            <th class="text-right font-semibold py-3 px-3 whitespace-nowrap" data-col="kurser"><span class="hint" tabindex="0" data-hint-title="Høj" data-hint="Den højeste kurs aktien er handlet til i dag.">Høj</span></th>
-            <th class="text-right font-semibold py-3 px-3 whitespace-nowrap" data-col="kurser"><span class="hint" tabindex="0" data-hint-title="Lav" data-hint="Den laveste kurs aktien er handlet til i dag.">Lav</span></th>
-            <th class="text-right font-semibold py-3 px-3 whitespace-nowrap" data-col="kurser"><span class="hint" tabindex="0" data-hint-title="Forrige luk" data-hint="Kursen da børsen lukkede forrige handelsdag. Grundlaget for dagens ændring.">Forrige luk</span></th>
-            <th class="text-left  font-semibold py-3 px-3 whitespace-nowrap" data-sort="week52pos" aria-sort="none" data-col="nogletal"><span class="hint" tabindex="0" data-hint-title="52 ugers interval" data-hint="Prikken viser hvor kursen ligger mellem årets laveste og højeste niveau.">52 ugers interval</span> <span class="caret"></span></th>
-            <th class="text-right font-semibold py-3 px-3 whitespace-nowrap" data-sort="change_6m" aria-sort="none" data-col="nogletal"><span class="hint" tabindex="0" data-hint-title="6 mdr. %" data-hint="Kursændring over de seneste 126 handelsdage, cirka et halvt år.">6 mdr. %</span> <span class="caret"></span></th>
-            <th class="text-right font-semibold py-3 px-3 whitespace-nowrap" data-sort="change_1y" aria-sort="none" data-col="nogletal"><span class="hint" tabindex="0" data-hint-title="1 år %" data-hint="Kursændring over de seneste 252 handelsdage, cirka et børsår.">1 år %</span> <span class="caret"></span></th>
-            <th class="text-left  font-semibold py-3 px-3 whitespace-nowrap" data-col="oversigt nogletal"><span class="hint" tabindex="0" data-hint-title="Sektor" data-hint="Selskabets branche efter GICS-systemet, som S&amp;P bruger. Nasdaq-100-selskaber er oversat til samme navne.">Sektor</span></th>
-            <th class="text-left  font-semibold py-3 px-3 whitespace-nowrap" data-col="oversigt"><span class="hint" tabindex="0" data-hint-title="Valuta" data-hint="Den valuta børsen handler aktien i. DKK for danske, USD for amerikanske.">Valuta</span></th>
-            <th class="text-right font-semibold py-3 px-3 whitespace-nowrap" data-sort="market_cap_dkk" aria-sort="none" data-col="nogletal"><span class="hint" tabindex="0" data-hint-title="Markedsværdi" data-hint="Kursen gange antallet af aktier. Det er dette tal indeksene vægtes efter, og derfor grundlaget for placeringen.">Markedsværdi</span> <span class="caret"></span></th>
-            <th class="text-right font-semibold py-3 px-3 whitespace-nowrap" data-sort="volume" aria-sort="none" data-col="oversigt nogletal"><span class="hint" tabindex="0" data-hint-title="Volumen" data-hint="Antal aktier handlet i dag — stykker, ikke beløb i kroner.">Volumen</span> <span class="caret"></span></th>
-            <th class="text-left  font-semibold py-3 pl-3 whitespace-nowrap" data-col="oversigt"><span class="hint" tabindex="0" data-hint-title="Børs" data-hint="Den børs aktien er noteret på.">Børs</span></th>
-          </tr>
-        </thead>
+    <div class="overflow-x-auto" style="overflow-x:auto">
+      <table class="w-full text-sm border-collapse">
+        <thead><tr id="head" class="text-xs faint"></tr></thead>
         <tbody id="rows"></tbody>
       </table>
     </div>
 
-    <!-- ─── Pager ──────────────────────────────────────────────────────── -->
     <div class="flex items-center justify-between gap-3 mt-4 flex-wrap">
       <div class="flex items-center gap-2">
         <button id="prev" class="pager-btn">← Forrige</button>
         <span id="pageInfo" class="text-xs num muted"></span>
         <button id="next" class="pager-btn">Næste →</button>
       </div>
-      <label class="text-xs muted flex items-center gap-2">
-        Rækker pr. side
-        <select id="pageSize" class="rounded-lg px-2 py-1 text-xs bg-transparent"
-                style="border: 1px solid var(--hairline); color: var(--text-primary)">
-          <option value="25">25</option>
-          <option value="50" selected>50</option>
-          <option value="100">100</option>
-          <option value="0">Alle</option>
+      <label class="text-xs muted flex items-center gap-2">Rækker pr. side
+        <select id="pageSize" class="rounded-lg px-2 py-1 text-xs bg-transparent" style="border:1px solid var(--hairline);color:var(--text-primary)">
+          <option value="25">25</option><option value="50" selected>50</option>
+          <option value="100">100</option><option value="0">Alle</option>
         </select>
       </label>
     </div>
@@ -195,32 +176,26 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     <p id="status" class="text-xs mt-4 muted" role="status" aria-live="polite"></p>
   </div>
 
-  <!-- ─── Source ─────────────────────────────────────────────────────── -->
-  <div id="kilde" class="card rounded-2xl p-5 mt-6 text-xs leading-relaxed muted">
-    <p class="font-bold mb-1" style="color: var(--text-primary)">Om datakilden</p>
+  <div id="kilde" class="card rounded-2xl p-5 mt-6 text-xs leading-relaxed muted" style="max-width:85ch">
+    <p class="font-bold mb-1" style="color:var(--text-primary)">Om datakilden</p>
     <p>
       Kurserne hentes fra Yahoo Finance af en GitHub Action, som committer dem til
-      <code>data/aktier.json</code> i dette repo. Siden læser den fil. Hentningen sker altså
-      på en server og ikke i din browser, hvilket er grunden til at der hverken er brug for
-      en API-nøgle eller for at datakilden tillader CORS.
+      <code>data/aktier.json</code> i dette repo. Siden læser den fil. Hentningen sker altså på en
+      server og ikke i din browser, hvilket er grunden til at der hverken er brug for en API-nøgle
+      eller for at datakilden tillader CORS.
     </p>
     <p class="mt-2" id="universeNote"></p>
+    <p class="mt-2"><strong>Kurserne er forsinkede, ikke live.</strong> De opdateres tre gange på hverdage.</p>
     <p class="mt-2">
-      <strong>Kurserne er forsinkede, ikke live.</strong> De opdateres tre gange på hverdage —
-      kort efter åbning, midt på dagen og efter lukketid.
-    </p>
-    <p class="mt-2">
-      <strong>Placeringen</strong> er selskabets plads målt på markedsværdi — kursen gange antallet
-      af aktier. Det er samme størrelse indeksene vægtes efter, men ikke helt samme tal: S&amp;P bruger
-      kun de frit omsættelige aktier, og Nasdaq lægger en justering oven på. Rækkefølgen er derfor
-      tæt på den officielle uden at være identisk. Markedsværdier opgives i selskabets egen valuta,
-      så den samlede rangliste regner dem om til kroner først.
+      <strong>Placeringen</strong> er selskabets plads målt på markedsværdi. Det er samme størrelse
+      indeksene vægtes efter, men ikke helt samme tal: S&amp;P bruger kun de frit omsættelige aktier,
+      og Nasdaq lægger en justering oven på.
     </p>
     <p class="mt-2" id="fxNote"></p>
     <p class="mt-2">
-      Alle øvrige kolonner er rigtige felter fra kilden. Børsværdi vises ikke, fordi den ikke
-      indgår i svaret, og et beregnet gæt ville være misvisende. Sparklinjen viser de seneste 30
-      handelsdages lukkekurser. Volumen er antallet af handlede aktier, ikke omsætning i kroner.
+      Udviklingstal måles i handelsdage: 7 dage er fem sessioner, 30 dage er tredive, et halvt år
+      126 og et år 252. Volumen er antal handlede aktier, ikke omsætning i kroner, og
+      gennemsnitsvolumen er beregnet af os over 60 handelsdage, fordi kilden ikke opgiver et gennemsnit.
     </p>
   </div>
 </div>
@@ -234,11 +209,13 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
   const $$ = (s) => Array.from(document.querySelectorAll(s));
   K.renderNav('kurser');
 
+  const STORE = 'kursliste.kolonner.v1';
+
   const state = {
-    all: [], updatedAt: null, markets: [], fx: null, universe: null,
+    all: [], updatedAt: null, markets: [], fx: null,
     market: null, index: null, sector: '', currency: 'native',
-    sort: 'percent_change', dir: -1, q: '', chip: null, tab: 'oversigt',
-    page: 1, pageSize: 50,
+    sort: 'rank', dir: 1, q: '', chip: null,
+    page: 1, pageSize: 50, cols: null,
   };
 
   // ── Currency view ──────────────────────────────────────────────────────
@@ -249,19 +226,9 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     const rate = state.fx ? state.fx.rate : 1;
     const conv = state.currency === 'dkk' && r.currency !== 'DKK';
     const c = (n) => (n == null ? null : conv ? n * rate : n);
-    return {
-      converted: conv, currency: conv ? 'DKK' : r.currency,
-      price: c(r.price), change: c(r.change), high: c(r.high), low: c(r.low),
-      previous_close: c(r.previous_close),
-    };
+    return { conv, currency: conv ? 'DKK' : r.currency, c, a: conv ? '≈ ' : '' };
   }
 
-  const sortPrice = (r) =>
-    state.currency === 'dkk' ? (r.price_dkk != null ? r.price_dkk : r.price) : r.price;
-
-  // Which ranking the "#" column shows follows the active filter: pick an
-  // index and the number is that index's own ordering, otherwise it is the
-  // whole universe ranked on a common currency.
   function rankOf(r) {
     if (state.index === 'SP500') return r.rank_sp500;
     if (state.index === 'NDX')   return r.rank_ndx;
@@ -269,52 +236,270 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     return r.rank_all;
   }
 
+  // ── Column registry ────────────────────────────────────────────────────
+  // One definition per column drives the header, the cell, the sort key and
+  // the picker, so a new column is added in exactly one place.
+  const INDEX_LABEL = { SP500: 'S&P 500', NDX: 'Nasdaq-100', 'DK-LARGE': 'København' };
+  const pct = (v) => '<span class="num font-semibold ' + K.dirClass(v) + '">' + K.fmtPct(v) + '</span>';
+
+  const COLUMNS = [
+    // ── Selskab ──────────────────────────────────────────────────────────
+    { key: 'rank', label: '#', group: 'Selskab', right: true, sortKey: rankOf, asc: true,
+      hint: 'Selskabets plads målt på markedsværdi. Uden filter er det pladsen i hele universet; vælger du S&P 500, Nasdaq-100 eller Danmark, er det pladsen i netop det indeks.',
+      cell: (r) => { const v = rankOf(r); return '<span class="num faint text-xs">' + (v == null ? '–' : v) + '</span>'; } },
+
+    { key: 'name', label: 'Navn', group: 'Selskab', sortKey: 'name', asc: true,
+      hint: 'Selskabets navn og børssymbol. Klik på en række for at se detaljer.',
+      cell: (r) => '<a class="row-link block" href="' + K.stockUrl(r.symbol) + '">'
+        + '<div class="font-semibold row-name">' + K.esc(r.name) + '</div>'
+        + '<div class="text-xs faint">' + (r.market === 'DK' ? '🇩🇰' : '🇺🇸') + ' ' + K.esc(r.symbol) + '</div></a>' },
+
+    { key: 'sector', label: 'Sektor', group: 'Selskab',
+      hint: 'Selskabets branche efter GICS-systemet. Nasdaq-100-selskaber er oversat til samme navne.',
+      cell: (r) => '<span class="muted text-xs">' + K.esc(r.sector || '–') + '</span>' },
+
+    { key: 'indices', label: 'Indeks', group: 'Selskab',
+      hint: 'Hvilke indeks selskabet indgår i.',
+      cell: (r) => '<span class="muted text-xs">' + (r.indices || []).map((i) => K.esc(INDEX_LABEL[i] || i)).join(', ') + '</span>' },
+
+    { key: 'exchange', label: 'Børs', group: 'Selskab',
+      hint: 'Den børs aktien er noteret på.',
+      cell: (r) => '<span class="muted text-xs">' + K.esc(r.exchange || '–') + '</span>' },
+
+    { key: 'currency', label: 'Valuta', group: 'Selskab',
+      hint: 'Den valuta børsen handler aktien i. DKK for danske, USD for amerikanske.',
+      cell: (r) => '<span class="muted">' + K.esc(view(r).currency) + '</span>' },
+
+    { key: 'listed', label: 'År på børsen', group: 'Selskab', right: true, sortKey: (r) => r.first_trade_date || '',
+      hint: 'Hvor længe selskabet har været børsnoteret, regnet fra første registrerede kurs.',
+      cell: (r) => r.first_trade_date
+        ? '<span class="num">' + Math.floor((Date.now() - new Date(r.first_trade_date)) / 31557600000) + '</span>' : '–' },
+
+    // ── Dagens kurs ──────────────────────────────────────────────────────
+    { key: 'price', label: 'Seneste', group: 'Dagens kurs', right: true,
+      sortKey: (r) => (state.currency === 'dkk' ? (r.price_dkk != null ? r.price_dkk : r.price) : r.price),
+      hint: 'Den senest registrerede kurs. Forsinket data, opdateret tre gange på hverdage.',
+      cell: (r) => { const v = view(r); return '<span class="num font-semibold">' + v.a + K.fmtPrice(v.c(r.price)) + '</span>'; } },
+
+    { key: 'pct_today', label: 'I dag %', group: 'Dagens kurs', right: true, sortKey: 'percent_change',
+      hint: 'Kursændring siden forrige handelsdags lukkekurs, i procent. Kan sammenlignes på tværs af valutaer.',
+      cell: (r) => pct(r.percent_change) },
+
+    { key: 'change', label: 'I dag +/-', group: 'Dagens kurs', right: true, sortKey: 'change',
+      hint: 'Kursændringen i kroner eller dollar — samme bevægelse som “I dag %”, bare i beløb.',
+      cell: (r) => { const v = view(r); return '<span class="num ' + K.dirClass(r.change) + '">' + v.a + K.fmtDelta(v.c(r.change)) + '</span>'; } },
+
+    { key: 'high', label: 'Dagens højeste', group: 'Dagens kurs', right: true, sortKey: 'high',
+      hint: 'Den højeste kurs aktien er handlet til i dag.',
+      cell: (r) => { const v = view(r); return '<span class="num">' + v.a + K.fmtPrice(v.c(r.high)) + '</span>'; } },
+
+    { key: 'low', label: 'Dagens laveste', group: 'Dagens kurs', right: true, sortKey: 'low',
+      hint: 'Den laveste kurs aktien er handlet til i dag.',
+      cell: (r) => { const v = view(r); return '<span class="num">' + v.a + K.fmtPrice(v.c(r.low)) + '</span>'; } },
+
+    { key: 'prev_close', label: 'Forrige luk', group: 'Dagens kurs', right: true, sortKey: 'previous_close',
+      hint: 'Kursen da børsen lukkede forrige handelsdag. Grundlaget for dagens ændring.',
+      cell: (r) => { const v = view(r); return '<span class="num">' + v.a + K.fmtPrice(v.c(r.previous_close)) + '</span>'; } },
+
+    // ── Udvikling ────────────────────────────────────────────────────────
+    { key: 'spark30', label: 'Udv. 30 dage', group: 'Udvikling', sortKey: 'change30d',
+      hint: 'Kurslinje for de seneste 30 handelsdage. Grøn betyder op over perioden, rød ned.',
+      cell: (r) => K.sparkline(r.spark, r.change30d) },
+
+    { key: 'pct_7d', label: '7 dage %', group: 'Udvikling', right: true, sortKey: 'change_7d',
+      hint: 'Kursændring over de seneste fem handelsdage — en børsuge, som svarer til syv kalenderdage.',
+      cell: (r) => pct(r.change_7d) },
+
+    { key: 'pct_30d', label: '30 dage %', group: 'Udvikling', right: true, sortKey: 'change30d',
+      hint: 'Kursændring over de seneste 30 handelsdage. Samme periode som sparklinjen.',
+      cell: (r) => pct(r.change30d) },
+
+    { key: 'pct_6m', label: '6 mdr. %', group: 'Udvikling', right: true, sortKey: 'change_6m',
+      hint: 'Kursændring over de seneste 126 handelsdage, cirka et halvt år.',
+      cell: (r) => pct(r.change_6m) },
+
+    { key: 'pct_1y', label: '1 år %', group: 'Udvikling', right: true, sortKey: 'change_1y',
+      hint: 'Kursændring over de seneste 252 handelsdage, cirka et børsår.',
+      cell: (r) => pct(r.change_1y) },
+
+    { key: 'best_day', label: 'Bedste dag', group: 'Udvikling', right: true, sortKey: (r) => r.stats?.best_day?.pct,
+      hint: 'Den største stigning på én handelsdag inden for det seneste år.',
+      cell: (r) => pct(r.stats?.best_day?.pct) },
+
+    { key: 'worst_day', label: 'Værste dag', group: 'Udvikling', right: true, sortKey: (r) => r.stats?.worst_day?.pct,
+      hint: 'Det største fald på én handelsdag inden for det seneste år.',
+      cell: (r) => pct(r.stats?.worst_day?.pct) },
+
+    { key: 'up_days', label: 'Dage i plus', group: 'Udvikling', right: true,
+      sortKey: (r) => (r.stats?.trading_days ? r.stats.up_days / r.stats.trading_days : null),
+      hint: 'Hvor stor en andel af det seneste års handelsdage der sluttede højere end dagen før.',
+      cell: (r) => { const s = r.stats;
+        return s?.trading_days ? '<span class="num">' + Math.round((s.up_days / s.trading_days) * 100) + '%</span>' : '–'; } },
+
+    { key: 'streak', label: 'Stime', group: 'Udvikling', right: true,
+      sortKey: (r) => (r.stats?.streak ? r.stats.streak.days * (r.stats.streak.dir || 0) : null),
+      hint: 'Hvor mange handelsdage i træk kursen er gået samme vej.',
+      cell: (r) => { const s = r.stats?.streak;
+        if (!s || !s.days) return '–';
+        return '<span class="num ' + (s.dir > 0 ? 'up' : 'down') + '">' + (s.dir > 0 ? '+' : '−') + s.days + '</span>'; } },
+
+    // ── 52 uger ──────────────────────────────────────────────────────────
+    { key: 'w52bar', label: '52 ugers interval', group: '52 uger', sortKey: 'week52pos',
+      hint: 'Prikken viser hvor kursen ligger mellem årets laveste og højeste niveau.',
+      cell: (r) => K.rangeBar(r) },
+
+    { key: 'w52pos', label: 'Placering i interval', group: '52 uger', right: true, sortKey: 'week52pos',
+      hint: 'Hvor kursen ligger mellem årets laveste (0%) og højeste (100%).',
+      cell: (r) => r.week52pos == null ? '–' : '<span class="num">' + Math.round(r.week52pos * 100) + '%</span>' },
+
+    { key: 'w52low', label: '52 ugers lav', group: '52 uger', right: true, sortKey: 'week52_low',
+      hint: 'Den laveste kurs det seneste år.',
+      cell: (r) => { const v = view(r); return '<span class="num">' + v.a + K.fmtPrice(v.c(r.week52_low)) + '</span>'; } },
+
+    { key: 'w52high', label: '52 ugers høj', group: '52 uger', right: true, sortKey: 'week52_high',
+      hint: 'Den højeste kurs det seneste år.',
+      cell: (r) => { const v = view(r); return '<span class="num">' + v.a + K.fmtPrice(v.c(r.week52_high)) + '</span>'; } },
+
+    // ── All-time ─────────────────────────────────────────────────────────
+    { key: 'drawdown', label: 'Fra toppen', group: 'All-time', right: true, sortKey: 'drawdown_pct',
+      hint: 'Hvor langt kursen ligger under sin højeste nogensinde. Gælder hele selskabets historie, ikke kun det seneste år.',
+      cell: (r) => pct(r.drawdown_pct) },
+
+    { key: 'ath', label: 'All-time high', group: 'All-time', right: true, sortKey: 'ath',
+      hint: 'Den højeste lukkekurs selskabet har haft.',
+      cell: (r) => { const v = view(r); return '<span class="num">' + v.a + K.fmtPrice(v.c(r.ath)) + '</span>'; } },
+
+    { key: 'ath_date', label: 'Dato for top', group: 'All-time', sortKey: (r) => r.ath_date || '',
+      hint: 'Hvornår den højeste kurs blev nået.',
+      cell: (r) => '<span class="muted text-xs num">' + (r.ath_date ? K.fmtDate(r.ath_date) : '–') + '</span>' },
+
+    // ── Nøgletal ─────────────────────────────────────────────────────────
+    { key: 'mcap', label: 'Markedsværdi', group: 'Nøgletal', right: true, sortKey: 'market_cap_dkk',
+      hint: 'Kursen gange antallet af aktier. Det er dette tal indeksene vægtes efter, og derfor grundlaget for placeringen.',
+      cell: (r) => { const v = view(r);
+        return r.market_cap == null ? '–'
+          : '<span class="num">' + v.a + K.fmtBig(v.conv ? r.market_cap_dkk : r.market_cap)
+            + ' <span class="text-xs faint">' + K.esc(v.currency) + '</span></span>'; } },
+
+    { key: 'volume', label: 'Volumen', group: 'Nøgletal', right: true, sortKey: 'volume',
+      hint: 'Antal aktier handlet i dag — stykker, ikke beløb i kroner.',
+      cell: (r) => '<span class="num">' + K.fmtBig(r.volume) + '</span>' },
+
+    { key: 'avg_volume', label: 'Gns. volumen', group: 'Nøgletal', right: true, sortKey: 'average_volume',
+      hint: 'Gennemsnittet af de daglige volumener over 60 handelsdage. Beregnet af os — kilden opgiver ikke selv et gennemsnit.',
+      cell: (r) => '<span class="num">' + K.fmtBig(r.average_volume) + '</span>' },
+
+    { key: 'volatility', label: 'Volatilitet', group: 'Nøgletal', right: true, sortKey: (r) => r.stats?.volatility,
+      hint: 'Hvor meget kursen typisk svinger på et år. Under 20% regnes som roligt, over 40% som uroligt.',
+      cell: (r) => r.stats?.volatility == null ? '–' : '<span class="num">' + r.stats.volatility + '%</span>' },
+
+    { key: 'ma50', label: '50-dages gns.', group: 'Nøgletal', right: true, sortKey: (r) => r.stats?.ma50,
+      hint: 'Gennemsnitskursen over de seneste 50 handelsdage. Mange bruger linjen til at aflæse trenden.',
+      cell: (r) => { const v = view(r); return '<span class="num">' + v.a + K.fmtPrice(v.c(r.stats?.ma50)) + '</span>'; } },
+
+    { key: 'ma200', label: '200-dages gns.', group: 'Nøgletal', right: true, sortKey: (r) => r.stats?.ma200,
+      hint: 'Gennemsnitskursen over de seneste 200 handelsdage.',
+      cell: (r) => { const v = view(r); return '<span class="num">' + v.a + K.fmtPrice(v.c(r.stats?.ma200)) + '</span>'; } },
+
+    { key: 'rank_sp', label: 'Plads i S&P 500', group: 'Nøgletal', right: true, sortKey: 'rank_sp500', asc: true,
+      hint: 'Placering blandt selskaberne i S&P 500, målt på markedsværdi.',
+      cell: (r) => '<span class="num faint">' + (r.rank_sp500 ? '#' + r.rank_sp500 : '–') + '</span>' },
+
+    { key: 'rank_ndx', label: 'Plads i Nasdaq-100', group: 'Nøgletal', right: true, sortKey: 'rank_ndx', asc: true,
+      hint: 'Placering blandt selskaberne i Nasdaq-100, målt på markedsværdi.',
+      cell: (r) => '<span class="num faint">' + (r.rank_ndx ? '#' + r.rank_ndx : '–') + '</span>' },
+  ];
+
+  const BY_KEY = new Map(COLUMNS.map((c) => [c.key, c]));
+  const DEFAULT_COLS = ['rank', 'name', 'spark30', 'pct_today', 'pct_7d', 'pct_30d', 'price', 'sector', 'currency', 'volume'];
+
+  function loadCols() {
+    try {
+      const saved = JSON.parse(localStorage.getItem(STORE));
+      // Drop keys from an older build rather than rendering an empty column.
+      if (Array.isArray(saved) && saved.length) {
+        const kept = saved.filter((k) => BY_KEY.has(k));
+        if (kept.length) return kept;
+      }
+    } catch { /* ingen eller ulæselig indstilling */ }
+    return DEFAULT_COLS.slice();
+  }
+  function saveCols() {
+    try { localStorage.setItem(STORE, JSON.stringify(state.cols)); } catch { /* privat vindue */ }
+  }
+
+  const activeCols = () => state.cols.map((k) => BY_KEY.get(k)).filter(Boolean);
+
+  // ── Filtering and sorting ──────────────────────────────────────────────
+  function sortValue(col, r) {
+    const s = col.sortKey;
+    return typeof s === 'function' ? s(r) : s ? r[s] : null;
+  }
+
   function filtered() {
     let out = state.all;
-
     if (state.market) out = out.filter((r) => r.market === state.market);
     if (state.index)  out = out.filter((r) => (r.indices || []).includes(state.index));
     if (state.sector) out = out.filter((r) => r.sector === state.sector);
-
     if (state.q) {
       const q = state.q.toLowerCase();
       out = out.filter((r) => r.name.toLowerCase().includes(q) || r.symbol.toLowerCase().includes(q));
     }
+    if (state.chip === 'gainers') out = out.filter((r) => (r.percent_change ?? 0) > 0);
+    if (state.chip === 'losers')  out = out.filter((r) => (r.percent_change ?? 0) < 0);
+    if (state.chip === 'near52')  out = out.filter((r) => (r.week52pos ?? 0) >= 0.9);
 
-    switch (state.chip) {
-      case 'gainers': out = out.filter((r) => (r.percent_change ?? 0) > 0); break;
-      case 'losers':  out = out.filter((r) => (r.percent_change ?? 0) < 0); break;
-      case 'near52':  out = out.filter((r) => (r.week52pos ?? 0) >= 0.9); break;
-    }
-
-    // Names sort under 'en', not 'da': Danish collation folds "Aa" into "Å" and
-    // files it after Z, which would send Aave-like names to the bottom.
-    const f = state.sort;
-    const key = (r) => (f === 'sortPrice' ? sortPrice(r) : f === 'rank' ? rankOf(r) : r[f]);
-    return [...out].sort((a, b) => {
-      const x = key(a), y = key(b);
-      if (typeof x === 'string') return state.dir * x.localeCompare(y, 'en', { sensitivity: 'base' });
-      // Missing values sort last in both directions. Treating them as one
-      // extreme instead would put the three companies without a market cap
-      // above the largest company in the world when ranking ascending.
+    const col = BY_KEY.get(state.sort) || BY_KEY.get('rank');
+    return out.slice().sort((a, b) => {
+      const x = sortValue(col, a), y = sortValue(col, b);
+      // Names sort under 'en', not 'da': Danish collation folds "Aa" into "Å".
+      if (typeof x === 'string' || typeof y === 'string') {
+        return state.dir * String(x ?? '').localeCompare(String(y ?? ''), 'en', { sensitivity: 'base' });
+      }
+      // Missing values sort last in both directions.
       const xn = x == null || Number.isNaN(x), yn = y == null || Number.isNaN(y);
       if (xn || yn) return xn && yn ? 0 : xn ? 1 : -1;
       return state.dir * (x - y);
     });
   }
 
+  // ── Rendering ──────────────────────────────────────────────────────────
+  function renderHead() {
+    const cols = activeCols();
+    $('#head').innerHTML = cols.map((c) => {
+      const sortable = !!c.sortKey;
+      const aria = !sortable ? '' : ' data-sort="' + c.key + '" aria-sort="'
+        + (state.sort === c.key ? (state.dir === 1 ? 'ascending' : 'descending') : 'none') + '"';
+      return '<th class="' + (c.right ? 'text-right' : 'text-left') + ' font-semibold py-3 px-3 whitespace-nowrap"' + aria + '>'
+        + '<span class="hint" tabindex="0" data-hint-title="' + K.esc(c.label) + '" data-hint="' + K.esc(c.hint) + '">'
+        + K.esc(c.label) + '</span>' + (sortable ? ' <span class="caret"></span>' : '') + '</th>';
+    }).join('');
+
+    $$('#head th[data-sort]').forEach((th) => th.addEventListener('click', () => {
+      const key = th.dataset.sort, col = BY_KEY.get(key);
+      if (state.sort === key) state.dir = -state.dir;
+      else { state.sort = key; state.dir = col.asc || col.sortKey === 'name' ? 1 : -1; }
+      syncSortSelect(); state.page = 1; render();
+    }));
+
+    // The table only needs a minimum width when many columns are on.
+    const table = $('#head').closest('table');
+    table.style.minWidth = cols.length > 6 ? (cols.length * 118) + 'px' : '0';
+  }
+
   function render() {
     const rows = filtered();
+    const cols = activeCols();
     const size = state.pageSize || rows.length || 1;
     const pages = Math.max(1, Math.ceil(rows.length / size));
     if (state.page > pages) state.page = pages;
     const start = (state.page - 1) * size;
     const slice = state.pageSize ? rows.slice(start, start + size) : rows;
 
-    $('#count').textContent = K.fmtInt(rows.length)
-      + (rows.length === 1 ? ' resultat' : ' resultater')
-      + (rows.length !== state.all.length ? ' af ' + K.fmtInt(state.all.length) : '');
+    renderHead();
 
+    $('#count').textContent = K.fmtInt(rows.length) + (rows.length === 1 ? ' resultat' : ' resultater')
+      + (rows.length !== state.all.length ? ' af ' + K.fmtInt(state.all.length) : '');
     $('#pageInfo').textContent = rows.length
       ? 'Viser ' + K.fmtInt(start + 1) + '–' + K.fmtInt(Math.min(start + slice.length, rows.length))
         + ' · side ' + state.page + ' af ' + pages
@@ -322,53 +507,179 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     $('#prev').disabled = state.page <= 1;
     $('#next').disabled = state.page >= pages;
 
-    $('#rows').innerHTML = slice.map((r) => {
-      const v = view(r);
-      const approx = v.converted ? '≈ ' : '';
-      const rank = rankOf(r);
-      return '<tr class="border-t divider hover:bg-black/[.02]">'
-        + '<td class="py-3 pr-3 text-right num faint text-xs">' + (rank == null ? '–' : rank) + '</td>'
-        + '<td class="py-3 pr-3">'
-          + '<a class="row-link block" href="' + K.stockUrl(r.symbol) + '">'
-            + '<div class="font-semibold row-name">' + K.esc(r.name) + '</div>'
-            + '<div class="text-xs faint">' + (r.market === 'DK' ? '🇩🇰' : '🇺🇸') + ' ' + K.esc(r.symbol) + '</div>'
-          + '</a></td>'
-        + '<td class="px-3" data-col="oversigt kurser">' + K.sparkline(r.spark, r.change30d) + '</td>'
-        + '<td class="px-3 text-right num font-semibold ' + K.dirClass(r.percent_change) + '">' + K.fmtPct(r.percent_change) + '</td>'
-        + '<td class="px-3 text-right num font-semibold">' + approx + K.fmtPrice(v.price) + '</td>'
-        + '<td class="px-3 text-right num ' + K.dirClass(r.change) + '" data-col="oversigt kurser">' + approx + K.fmtDelta(v.change) + '</td>'
-        + '<td class="px-3 text-right num" data-col="kurser">' + approx + K.fmtPrice(v.high) + '</td>'
-        + '<td class="px-3 text-right num" data-col="kurser">' + approx + K.fmtPrice(v.low) + '</td>'
-        + '<td class="px-3 text-right num" data-col="kurser">' + approx + K.fmtPrice(v.previous_close) + '</td>'
-        + '<td class="px-3" data-col="nogletal">' + K.rangeBar(r) + '</td>'
-        + '<td class="px-3 text-right num ' + K.dirClass(r.change_6m) + '" data-col="nogletal">' + K.fmtPct(r.change_6m) + '</td>'
-        + '<td class="px-3 text-right num ' + K.dirClass(r.change_1y) + '" data-col="nogletal">' + K.fmtPct(r.change_1y) + '</td>'
-        + '<td class="px-3 muted text-xs" data-col="oversigt nogletal">' + K.esc(r.sector || '–') + '</td>'
-        + '<td class="px-3 muted" data-col="oversigt">' + K.esc(v.currency) + '</td>'
-        + '<td class="px-3 text-right num" data-col="nogletal">'
-          + (r.market_cap == null ? '–'
-             : (v.converted ? '≈ ' : '') + K.fmtBig(v.converted ? r.market_cap_dkk : r.market_cap)
-               + ' <span class="text-xs faint">' + K.esc(v.currency) + '</span>') + '</td>'
-        + '<td class="px-3 text-right num" data-col="oversigt nogletal">' + K.fmtBig(r.volume) + '</td>'
-        + '<td class="pl-3 muted text-xs" data-col="oversigt">' + K.esc(r.exchange || '–') + '</td>'
-      + '</tr>';
-    }).join('');
-
-    applyTab();
+    $('#rows').innerHTML = slice.map((r) => '<tr class="border-t divider hover:bg-black/[.02]">'
+      + cols.map((c) => '<td class="py-3 px-3 ' + (c.right ? 'text-right' : '') + '">' + c.cell(r) + '</td>').join('')
+      + '</tr>').join('')
+      || '<tr><td colspan="' + Math.max(cols.length, 1) + '" class="py-8 text-center text-sm muted">Ingen aktier matcher filtrene.</td></tr>';
   }
 
-  // Tabs hide columns rather than swapping tables, so sort state survives.
-  function applyTab() {
-    $$('[data-col]').forEach((el) => {
-      el.hidden = !el.dataset.col.split(' ').includes(state.tab);
-    });
+  // ── Column picker ──────────────────────────────────────────────────────
+  function renderPicker() {
+    const groups = [];
+    for (const c of COLUMNS) {
+      let g = groups.find((x) => x.name === c.group);
+      if (!g) groups.push((g = { name: c.group, cols: [] }));
+      g.cols.push(c);
+    }
+
+    $('#picker').innerHTML =
+      '<div class="flex items-center justify-between gap-3 mb-3 flex-wrap">'
+        + '<p class="text-xs muted" style="max-width:46ch">Vælg hvad tabellen viser. Nye kolonner lægges bagest, '
+          + 'og valget huskes i denne browser.</p>'
+        + '<div class="flex gap-1.5">'
+          + '<button class="chip rounded-full px-3 py-1 text-xs font-semibold" data-preset="default">Standard</button>'
+          + '<button class="chip rounded-full px-3 py-1 text-xs font-semibold" data-preset="all">Alle</button>'
+          + '<button class="chip rounded-full px-3 py-1 text-xs font-semibold" data-preset="min">Kun det nødvendige</button>'
+        + '</div>'
+      + '</div>'
+      + '<div style="column-width:200px;column-gap:20px">'
+      + groups.map((g) => '<div class="pick-group"><h3>' + K.esc(g.name) + '</h3>'
+          + g.cols.map((c) => '<label class="pick-item">'
+              + '<input type="checkbox" data-col="' + c.key + '"' + (state.cols.includes(c.key) ? ' checked' : '') + '>'
+              + '<span>' + K.esc(c.label) + '</span></label>').join('')
+        + '</div>').join('')
+      + '</div>';
+
+    $$('#picker input[data-col]').forEach((box) => box.addEventListener('change', () => {
+      const key = box.dataset.col;
+      if (box.checked) {
+        // Added last, so the columns already on screen never move under the
+        // reader's eyes — and the standard set keeps the order it was given.
+        if (!state.cols.includes(key)) state.cols = state.cols.concat(key);
+      } else {
+        state.cols = state.cols.filter((k) => k !== key);
+      }
+      if (!state.cols.length) { state.cols = ['name']; syncPicker(); }
+      afterColChange();
+    }));
+
+    $$('#picker [data-preset]').forEach((btn) => btn.addEventListener('click', () => {
+      state.cols = btn.dataset.preset === 'all' ? COLUMNS.map((c) => c.key)
+        : btn.dataset.preset === 'min' ? ['name', 'pct_today', 'price']
+        : DEFAULT_COLS.slice();
+      syncPicker(); afterColChange();
+    }));
   }
 
-  function skeleton() {
-    $('#rows').innerHTML = Array.from({ length: 12 }, () =>
-      '<tr class="border-t divider"><td colspan="17" class="py-4">'
-      + '<div class="skeleton h-4 rounded"></div></td></tr>').join('');
+  // Only the tick marks change, never the markup: rebuilding the panel from
+  // inside its own click handler detaches the button that was clicked, and the
+  // outside-click listener then reads the detached node as "outside" and shuts
+  // the panel.
+  function syncPicker() {
+    $$('#picker input[data-col]').forEach((box) => { box.checked = state.cols.includes(box.dataset.col); });
   }
+
+  function afterColChange() {
+    saveCols();
+    $('#pickerCount').textContent = '(' + state.cols.length + ')';
+    // A hidden column must not keep sorting the table.
+    if (!state.cols.includes(state.sort)) { state.sort = state.cols[0]; state.dir = 1; }
+    buildSortSelect();
+    render();
+  }
+
+  function buildSortSelect() {
+    const sel = $('#sortField');
+    sel.innerHTML = activeCols().filter((c) => c.sortKey)
+      .map((c) => '<option value="' + c.key + '"' + (c.key === state.sort ? ' selected' : '') + '>'
+        + K.esc(c.label) + '</option>').join('');
+  }
+  function syncSortSelect() { $('#sortField').value = state.sort; }
+
+  // ── Load ───────────────────────────────────────────────────────────────
+  let loading = false;
+
+  async function load() {
+    if (loading) return;
+    loading = true;
+    $('#refreshIcon').style.opacity = '.4';
+
+    try {
+      const list = await K.loadList();
+      state.all = list.rows;
+      state.updatedAt = list.updatedAt;
+      state.markets = list.markets;
+      state.fx = list.fx;
+
+      const sectors = (list.sectors && list.sectors.length)
+        ? list.sectors : [...new Set(list.rows.map((r) => r.sector).filter(Boolean))].sort();
+      $('#sector').innerHTML = '<option value="">Alle sektorer</option>'
+        + sectors.map((s) => '<option value="' + K.esc(s) + '">' + K.esc(s) + '</option>').join('');
+      $('#sector').value = state.sector;
+
+      render();
+
+      const when = list.updatedAt
+        ? new Date(list.updatedAt).toLocaleString('da-DK', { day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit' })
+        : 'ukendt tidspunkt';
+      const where = state.markets.length ? state.markets.map((m) => m.exchange).join(' + ') : 'Nasdaq København';
+      const dk = list.rows.filter((r) => r.market === 'DK').length;
+
+      $('#freshness').textContent = 'Opdateret ' + K.fmtAge(list.updatedAt);
+      $('#status').textContent = 'Forsinkede kurser fra Yahoo Finance · ' + where + ' · hentet ' + when
+        + (list.failed && list.failed.length ? ' · ' + list.failed.length + ' symboler kunne ikke hentes' : '');
+      $('#universeNote').innerHTML = '<strong>Universet</strong> er ' + K.fmtInt(list.rows.length)
+        + ' selskaber: hele S&amp;P 500 og Nasdaq-100 plus ' + dk + ' store danske. Indeksernes sammensætning '
+        + 'hentes fra Wikipedia ved hver kørsel, så listen følger med når et selskab kommer ind eller ud.';
+      $('#fxNote').innerHTML = list.fx
+        ? '<strong>Valuta.</strong> “Alt i DKK” omregner de amerikanske kurser til ' + K.fmtPrice(list.fx.rate)
+          + ' DKK pr. USD (ECB ' + K.esc(list.fx.date) + ') og markerer dem med ≈, fordi de så er beregnede tal '
+          + 'og ikke noterede kurser.' : '';
+    } catch (err) {
+      if (!state.all.length) {
+        $('#rows').innerHTML = '<tr><td colspan="10" class="py-8 text-center" style="color:var(--delta-down)">'
+          + 'Kunne ikke indlæse kurser: ' + K.esc(err.message) + '</td></tr>';
+      } else {
+        $('#status').innerHTML = '<span style="color:var(--delta-down)">Kunne ikke genindlæse ('
+          + K.esc(err.message) + '). Viser sidst hentede kurser.</span>';
+      }
+    } finally {
+      loading = false;
+      $('#refreshIcon').style.opacity = '1';
+    }
+  }
+
+  // ── Events ─────────────────────────────────────────────────────────────
+  const reset = () => { state.page = 1; render(); };
+  let qTimer;
+  $('#q').addEventListener('input', (e) => {
+    clearTimeout(qTimer); qTimer = setTimeout(() => { state.q = e.target.value.trim(); reset(); }, 150);
+  });
+  $('#sector').addEventListener('change', (e) => { state.sector = e.target.value; reset(); });
+  $('#sortField').addEventListener('change', (e) => {
+    const col = BY_KEY.get(e.target.value);
+    state.sort = e.target.value;
+    state.dir = col && (col.asc || col.sortKey === 'name') ? 1 : -1;
+    reset();
+  });
+  $('#pageSize').addEventListener('change', (e) => { state.pageSize = Number(e.target.value); reset(); });
+  $('#prev').addEventListener('click', () => { if (state.page > 1) { state.page--; render(); scrollTo({ top: 0, behavior: 'smooth' }); } });
+  $('#next').addEventListener('click', () => { state.page++; render(); scrollTo({ top: 0, behavior: 'smooth' }); });
+  $('#refresh').addEventListener('click', load);
+  $('#riskClose').addEventListener('click', () => { $('#risk').hidden = true; });
+
+  $('#pickerBtn').addEventListener('click', (e) => {
+    e.stopPropagation();
+    const open = $('#picker').hidden;
+    $('#picker').hidden = !open;
+    $('#pickerBtn').setAttribute('aria-expanded', String(open));
+  });
+  document.addEventListener('click', (e) => {
+    // A node removed by its own handler is neither inside nor outside; leave the
+    // panel alone rather than treating the removal as a click elsewhere.
+    if (!document.contains(e.target)) return;
+    if (!$('#picker').hidden && !e.target.closest('.picker-wrap')) {
+      $('#picker').hidden = true;
+      $('#pickerBtn').setAttribute('aria-expanded', 'false');
+    }
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !$('#picker').hidden) {
+      $('#picker').hidden = true;
+      $('#pickerBtn').setAttribute('aria-expanded', 'false');
+      $('#pickerBtn').focus();
+    }
+  });
 
   function setCurrency(mode) {
     state.currency = mode;
@@ -380,156 +691,35 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     });
     render();
   }
-
-  // Any filter change invalidates the current page number.
-  const reset = () => { state.page = 1; render(); };
-
-  // ── Load ───────────────────────────────────────────────────────────────
-  let loading = false;
-
-  async function load() {
-    if (loading) return;
-    loading = true;
-    $('#refreshIcon').style.opacity = '.4';
-    if (!state.all.length) skeleton();
-
-    try {
-      const list = await K.loadList();
-      state.all = list.rows;
-      state.updatedAt = list.updatedAt;
-      state.markets = list.markets;
-      state.fx = list.fx;
-
-      // Sector options come from the data, so a new sector never needs a code
-      // change here.
-      const sectors = list.sectors && list.sectors.length
-        ? list.sectors
-        : [...new Set(list.rows.map((r) => r.sector).filter(Boolean))].sort();
-      const sel = $('#sector');
-      sel.innerHTML = '<option value="">Alle sektorer</option>'
-        + sectors.map((s) => '<option value="' + K.esc(s) + '">' + K.esc(s) + '</option>').join('');
-      sel.value = state.sector;
-
-      render();
-
-      const when = list.updatedAt
-        ? new Date(list.updatedAt).toLocaleString('da-DK', { day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit' })
-        : 'ukendt tidspunkt';
-      const where = state.markets.length ? state.markets.map((m) => m.exchange).join(' + ') : 'Nasdaq København';
-
-      $('#freshness').textContent = 'Opdateret ' + K.fmtAge(list.updatedAt);
-      $('#status').textContent = 'Forsinkede kurser fra Yahoo Finance · ' + where
-        + ' · hentet ' + when + ' · opdateres tre gange på hverdage'
-        + (list.failed && list.failed.length ? ' · ' + list.failed.length + ' symboler kunne ikke hentes' : '');
-
-      const dk = list.rows.filter((r) => r.market === 'DK').length;
-      $('#universeNote').innerHTML = '<strong>Universet</strong> er ' + K.fmtInt(list.rows.length)
-        + ' selskaber: hele S&amp;P 500 og Nasdaq-100 plus ' + dk + ' store danske. Indeksernes sammensætning '
-        + 'hentes fra Wikipedia ved hver kørsel, så listen følger med når et selskab kommer ind eller ud.';
-
-      $('#fxNote').innerHTML = list.fx
-        ? '<strong>Valuta.</strong> “Noteret” viser kursen i den valuta børsen handler i, og hvert tal er '
-          + 'en rå kildeværdi. “Alt i DKK” omregner de amerikanske til ' + K.fmtPrice(list.fx.rate)
-          + ' DKK pr. USD (ECB-referencekurs ' + K.esc(list.fx.date) + ') og markerer dem med ≈, fordi de så er '
-          + 'beregnede tal og ikke noterede kurser. Sortering på kurs følger den valgte visning.'
-        : '';
-    } catch (err) {
-      if (state.all.length) {
-        // Keep the last good table standing; wiping it because one reload
-        // failed is worse than showing what we had, as long as we say so.
-        $('#status').innerHTML = '<span style="color: var(--delta-down)">Kunne ikke genindlæse ('
-          + K.esc(err.message) + '). Viser sidst hentede kurser.</span>';
-      } else {
-        $('#rows').innerHTML = '<tr><td colspan="17" class="py-8 text-center" style="color: var(--delta-down)">'
-          + 'Kunne ikke indlæse kurser: ' + K.esc(err.message) + '<br>'
-          + '<span class="text-xs muted">data/aktier.json mangler. Kør <code>node scripts/fetch-stocks.mjs</code>, '
-          + 'eller start workflowet “Opdatér aktiekurser” under Actions.</span></td></tr>';
-        $('#status').textContent = '';
-      }
-    } finally {
-      loading = false;
-      $('#refreshIcon').style.opacity = '1';
-    }
-  }
-
-  // ── Events ─────────────────────────────────────────────────────────────
-  let qTimer;
-  $('#q').addEventListener('input', (e) => {
-    clearTimeout(qTimer);
-    qTimer = setTimeout(() => { state.q = e.target.value.trim(); reset(); }, 150);
-  });
-
-  $('#sector').addEventListener('change', (e) => { state.sector = e.target.value; reset(); });
-
-  $('#sortField').addEventListener('change', (e) => {
-    state.sort = e.target.value;
-    state.dir = (e.target.value === 'name' || e.target.value === 'rank') ? 1 : -1;
-    syncCarets(); reset();
-  });
-
-  $('#pageSize').addEventListener('change', (e) => { state.pageSize = Number(e.target.value); reset(); });
-  $('#prev').addEventListener('click', () => { if (state.page > 1) { state.page--; render(); window.scrollTo({ top: 0, behavior: 'smooth' }); } });
-  $('#next').addEventListener('click', () => { state.page++; render(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
-
-  $('#refresh').addEventListener('click', load);
-  $('#riskClose').addEventListener('click', () => { $('#risk').hidden = true; });
   $('#curNative').addEventListener('click', () => setCurrency('native'));
   $('#curDkk').addEventListener('click', () => setCurrency('dkk'));
 
-  // Three independent toggle groups; within a group the buttons are exclusive.
   [['data-market', 'market'], ['data-index', 'index'], ['data-chip', 'chip']].forEach(([attr, key]) => {
-    $$('[' + attr + ']').forEach((btn) => {
-      btn.addEventListener('click', () => {
-        const v = btn.getAttribute(attr);
-        state[key] = state[key] === v ? null : v;
-        $$('[' + attr + ']').forEach((b) => b.setAttribute('aria-pressed', String(b.getAttribute(attr) === state[key])));
-        reset();
-      });
-    });
+    $$('[' + attr + ']').forEach((btn) => btn.addEventListener('click', () => {
+      const v = btn.getAttribute(attr);
+      state[key] = state[key] === v ? null : v;
+      $$('[' + attr + ']').forEach((b) => b.setAttribute('aria-pressed', String(b.getAttribute(attr) === state[key])));
+      reset();
+    }));
   });
-
   $('#clearFilters').addEventListener('click', () => {
-    state.market = state.index = state.chip = null;
-    state.sector = ''; state.q = '';
+    state.market = state.index = state.chip = null; state.sector = ''; state.q = '';
     $('#q').value = ''; $('#sector').value = '';
     $$('[data-market],[data-index],[data-chip]').forEach((b) => b.setAttribute('aria-pressed', 'false'));
     reset();
   });
 
-  $$('[role="tab"]').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      state.tab = btn.dataset.tab;
-      $$('[role="tab"]').forEach((b) => b.setAttribute('aria-selected', String(b === btn)));
-      applyTab();
-    });
-  });
-
-  function syncCarets() {
-    $$('th[data-sort]').forEach((th) => {
-      th.setAttribute('aria-sort', th.dataset.sort !== state.sort ? 'none'
-        : state.dir === 1 ? 'ascending' : 'descending');
-    });
-  }
-
-  $$('th[data-sort]').forEach((th) => {
-    th.addEventListener('click', () => {
-      const f = th.dataset.sort;
-      if (state.sort === f) state.dir = -state.dir;
-      else { state.sort = f; state.dir = (f === 'name' || f === 'rank') ? 1 : -1; }
-      if ($('#sortField').querySelector('option[value="' + state.sort + '"]')) $('#sortField').value = state.sort;
-      syncCarets(); reset();
-    });
-  });
-
-  // The JSON only changes when the Action commits and the site redeploys, so
-  // this is a slow poll to catch that for a tab left open — not live pricing.
   setInterval(() => { if (!document.hidden) load(); }, 900_000);
   setInterval(() => {
     if (state.updatedAt) $('#freshness').textContent = 'Opdateret ' + K.fmtAge(state.updatedAt);
   }, 60_000);
 
+  state.cols = loadCols();
+  if (!state.cols.includes(state.sort)) state.sort = state.cols[0];
+  $('#pickerCount').textContent = '(' + state.cols.length + ')';
+  renderPicker();
+  buildSortSelect();
   setCurrency('native');
-  syncCarets();
   load();
 })();
 </script>

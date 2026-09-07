@@ -399,6 +399,7 @@ function normalise(result, company, usdDkk) {
       previous_close: round(previousClose),
       change: round(change),
       percent_change: round(previousClose ? (change / previousClose) * 100 : null, 4),
+      change_7d: moveOver(5),      // en handelsuge ≈ syv kalenderdage
       change_6m: moveOver(126),
       change_1y: moveOver(252),
       high: round(meta.regularMarketDayHigh),
