@@ -707,7 +707,12 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     state.market = state.index = state.chip = null; state.sector = ''; state.q = '';
     $('#q').value = ''; $('#sector').value = '';
     $$('[data-market],[data-index],[data-chip]').forEach((b) => b.setAttribute('aria-pressed', 'false'));
-    reset();
+    // Columns go back to standard too: "Nulstil" means the whole view, not just
+    // which rows are left.
+    state.cols = inOrder(DEFAULT_COLS);
+    syncPicker();
+    state.page = 1;
+    afterColChange();          // gemmer, genopbygger sortering og tegner
   });
 
   setInterval(() => { if (!document.hidden) load(); }, 900_000);
