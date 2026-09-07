@@ -10,7 +10,14 @@
 //   data/univers.json         – the resolved ticker universe, and the fallback
 //                               when Wikipedia is unreachable
 //   data/aktier.json          – one row per company, plus a 30-point sparkline
-//   data/historik/<SYM>.json  – two years of daily closes, one file per company
+//   data/historik/<SYM>.json  – two years of daily closes plus a long series
+//                               back to the listing, one file per company
+//   data/nogletal.json        – per-share and statement figures for every
+//                               company, small enough for any page to hold,
+//                               plus the median P/E per sector
+//   data/regnskab/<SYM>.json  – earnings calendar, four quarters of estimates
+//                               against actuals, ownership and insider trades
+//   data/indeks.json          – two years of closes for the benchmark indices
 //
 // Run locally with:  node scripts/fetch-stocks.mjs
 //   --quotes-only   reuse data/univers.json instead of refreshing constituents
@@ -25,6 +32,9 @@ const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const OUT_UNIVERSE = resolve(ROOT, 'data/univers.json');
 const OUT_LIST     = resolve(ROOT, 'data/aktier.json');
 const OUT_HIST_DIR = resolve(ROOT, 'data/historik');
+const OUT_KEY      = resolve(ROOT, 'data/nogletal.json');
+const OUT_BENCH    = resolve(ROOT, 'data/indeks.json');
+const OUT_FUND_DIR = resolve(ROOT, 'data/regnskab');
 
 const argv = process.argv.slice(2);
 const QUOTES_ONLY = argv.includes('--quotes-only');
@@ -183,7 +193,8 @@ async function fetchUsdDkk() {
 const YF_UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36';
 const CAP_BATCH = 150;
 
-async function fetchMarketCaps(symbols) {
+// One handshake, reused by everything below that needs it.
+async function yahooSession() {
   const r1 = await fetch('https://fc.yahoo.com', { headers: { 'user-agent': YF_UA } });
   const cookie = (r1.headers.getSetCookie?.() || []).map((c) => c.split(';')[0]).join('; ');
   if (!cookie) throw new Error('ingen cookies fra Yahoo');
@@ -192,21 +203,154 @@ async function fetchMarketCaps(symbols) {
     { headers: { 'user-agent': YF_UA, cookie } });
   const crumb = (await r2.text()).trim();
   if (!crumb || crumb.startsWith('<')) throw new Error('ingen crumb');
+  return { headers: { 'user-agent': YF_UA, cookie }, crumb };
+}
 
-  const caps = new Map();
+// 150 symbols a request, so the whole universe costs four round trips. Earnings
+// per share is stored rather than the P/E Yahoo also reports: the pages divide
+// it into the price they are showing, so the ratio can never disagree with the
+// figure printed beside it.
+async function fetchQuoteFields(symbols, session) {
+  const out = new Map();
   for (let i = 0; i < symbols.length; i += CAP_BATCH) {
     const chunk = symbols.slice(i, i + CAP_BATCH);
     const url = 'https://query1.finance.yahoo.com/v7/finance/quote?symbols='
-      + encodeURIComponent(chunk.join(',')) + '&crumb=' + encodeURIComponent(crumb);
-    const res = await fetch(url, { headers: { 'user-agent': YF_UA, cookie } });
+      + encodeURIComponent(chunk.join(',')) + '&crumb=' + encodeURIComponent(session.crumb);
+    const res = await fetch(url, { headers: session.headers });
     if (!res.ok) throw new Error('quote HTTP ' + res.status);
     const json = await res.json();
     for (const q of json.quoteResponse?.result || []) {
-      if (q.symbol && q.marketCap != null) caps.set(q.symbol, q.marketCap);
+      if (!q.symbol) continue;
+      out.set(q.symbol, {
+        market_cap: q.marketCap ?? null,
+        eps_ttm: q.epsTrailingTwelveMonths ?? null,
+        eps_fwd: q.epsForward ?? null,
+        book_value: q.bookValue ?? null,
+        div_yield: q.dividendYield ?? null,             // allerede i procent
+        shares: q.sharesOutstanding ?? null,
+        rating: q.averageAnalystRating ?? null,
+        next_earnings: q.earningsTimestampStart ? isoDay(q.earningsTimestampStart) : null,
+      });
     }
     await sleep(200);
   }
-  return caps;
+  return out;
+}
+
+const isoDay = (secs) => new Date(secs * 1000).toISOString().slice(0, 10);
+const raw = (o) => (o && o.raw != null && Number.isFinite(o.raw) ? o.raw : null);
+
+// The statement figures, the earnings calendar, the analysts' record against
+// this company, who owns it and what the insiders have been doing. One request
+// per symbol — about nine seconds for the whole universe — and every failure is
+// non-fatal, so a company simply carries no key figures.
+const FUND_MODULES = ['defaultKeyStatistics', 'financialData', 'calendarEvents',
+  'earningsHistory', 'majorHoldersBreakdown', 'insiderTransactions', 'summaryDetail'].join(',');
+
+// Yahoo's transaction text is prose. Only these two forms are someone deciding
+// to trade with their own money; grants, gifts and option exercises are pay, and
+// lumping them together would make routine compensation look like conviction.
+function insiderKind(text) {
+  const t = String(text || '').toLowerCase();
+  if (t.startsWith('purchase at price')) return 'buy';
+  if (t.startsWith('sale at price')) return 'sell';
+  return 'other';
+}
+
+async function fetchFundamentals(symbol, session) {
+  const url = 'https://query1.finance.yahoo.com/v10/finance/quoteSummary/' + encodeURIComponent(symbol)
+    + '?modules=' + FUND_MODULES + '&crumb=' + encodeURIComponent(session.crumb);
+  const res = await fetch(url, { headers: session.headers });
+  if (!res.ok) throw new Error('HTTP ' + res.status);
+  const r = (await res.json()).quoteSummary?.result?.[0];
+  if (!r) throw new Error('tomt svar');
+
+  const ks = r.defaultKeyStatistics || {}, fd = r.financialData || {};
+  const sd = r.summaryDetail || {}, mh = r.majorHoldersBreakdown || {};
+  const ev = r.calendarEvents?.earnings || {};
+  const revenue = raw(fd.totalRevenue), fcf = raw(fd.freeCashflow);
+
+  return {
+    // Small enough for every page to hold for every company.
+    small: {
+      eps_ttm: raw(ks.trailingEps),
+      pb: raw(ks.priceToBook),
+      revenue: revenue,
+      revenue_growth: raw(fd.revenueGrowth),
+      fcf: fcf,
+      fcf_margin: revenue && fcf != null ? round(fcf / revenue, 4) : null,
+      profit_margin: raw(fd.profitMargins),
+      gross_margin: raw(fd.grossMargins),
+      inst_pct: raw(mh.institutionsPercentHeld),
+      ins_pct: raw(mh.insidersPercentHeld),
+      peg: raw(ks.pegRatio),
+    },
+    // Only the company page reads this.
+    detail: {
+      next_earnings: ev.earningsDate?.[0]?.fmt || null,
+      earnings_estimated: ev.isEarningsDateEstimate === true,
+      earnings_call: ev.earningsCallDate?.[0]?.fmt || null,
+      eps_estimate: raw(ev.earningsAverage),
+      ex_dividend: sd.exDividendDate?.fmt || null,
+      dividend_date: sd.dividendDate?.fmt || null,
+      payout_ratio: raw(sd.payoutRatio),
+      inst_count: raw(mh.institutionsCount),
+      eps_history: (r.earningsHistory?.history || [])
+        .filter((h) => raw(h.epsActual) != null && raw(h.epsEstimate) != null)
+        .map((h) => ({
+          quarter: h.quarter?.fmt || null,
+          estimate: raw(h.epsEstimate),
+          actual: raw(h.epsActual),
+          surprise_pct: raw(h.surprisePercent) == null ? null : round(raw(h.surprisePercent) * 100, 2),
+        })),
+      insiders: (r.insiderTransactions?.transactions || [])
+        .filter((t) => t.startDate?.fmt)
+        .slice(0, 10)
+        .map((t) => ({
+          name: t.filerName || null,
+          role: t.filerRelation || null,
+          kind: insiderKind(t.transactionText),
+          text: t.transactionText || null,
+          value: raw(t.value),
+          shares: raw(t.shares),
+          date: t.startDate.fmt,
+        })),
+    },
+  };
+}
+
+// The yardsticks a company's own move is measured against. Four series, four
+// requests, and the pages read closes only.
+const BENCHMARKS = [
+  { code: 'NDX',    symbol: '^NDX',     label: 'Nasdaq-100' },
+  { code: 'SP500',  symbol: '^GSPC',    label: 'S&P 500' },
+  { code: 'SOX',    symbol: '^SOX',     label: 'Semiconductors' },
+  { code: 'OMXC25', symbol: '^OMXC25',  label: 'OMX København 25' },
+];
+
+async function fetchBenchmarks() {
+  const out = {};
+  for (const b of BENCHMARKS) {
+    try {
+      const url = 'https://query1.finance.yahoo.com/v8/finance/chart/' + encodeURIComponent(b.symbol)
+        + '?interval=1d&range=2y';
+      const res = await fetch(url, { headers: { 'user-agent': YF_UA, accept: 'application/json' } });
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      const r = (await res.json()).chart?.result?.[0];
+      const stamps = r?.timestamp || [], closes = r?.indicators?.quote?.[0]?.close || [];
+      const dates = [], vals = [];
+      for (let i = 0; i < closes.length; i++) {
+        if (closes[i] == null || stamps[i] == null) continue;
+        dates.push(isoDay(stamps[i]));
+        vals.push(round(closes[i], 2));
+      }
+      if (dates.length) out[b.code] = { label: b.label, symbol: b.symbol, dates, closes: vals };
+    } catch (err) {
+      console.warn('  benchmark ' + b.code + ' fejlede (' + err.message + ')');
+    }
+    await sleep(150);
+  }
+  return out;
 }
 
 // Index membership is weighted by market value, so ordering the members by
@@ -277,13 +421,63 @@ async function fetchLifetime(symbol) {
 
   const stamps = r.timestamp || [];
   const closes = r.indicators?.quote?.[0]?.close || [];
-  const out = [];
-  for (let i = 0; i < closes.length; i++) {
-    if (closes[i] == null || stamps[i] == null) continue;
-    out.push({ date: new Date(stamps[i] * 1000).toISOString().slice(0, 10), close: closes[i] });
+
+  // A bar is stamped with the period's FIRST day but carries its LAST close —
+  // verified against the daily series, where the bar stamped 2025-09-01 holds
+  // the close of 2025-09-30. Left alone, every long-range date would be adrift
+  // from the price beside it.
+  //
+  // The period is not always a month: Yahoo quietly downsamples long histories,
+  // so range=max returns quarterly bars for a company listed in the 1980s even
+  // when a month was asked for. Rather than trust the granularity it reports,
+  // each bar is dated the day before the next one opens, which is right for any
+  // period length. The final bar keeps its own stamp — Yahoo dates the running
+  // period with its real last trading day.
+  // Period bars are stamped at midnight in the exchange's own timezone, which
+  // in Copenhagen is 22:00 UTC the day before — so read straight out of UTC,
+  // every Danish month started on the 31st of the month before. The daily bars
+  // are stamped during trading hours and are unaffected, which is why this
+  // correction lives here and not in the daily fetch.
+  const tz = r.meta?.gmtoffset || 0;
+  const day = (secs) => new Date((secs + tz) * 1000).toISOString().slice(0, 10);
+  const dayBefore = (iso) => new Date(new Date(iso + 'T00:00:00Z') - 86400000).toISOString().slice(0, 10);
+
+  // Granularity is not fixed either. A company listed last year gets daily bars
+  // back from range=max, and there the stamp already IS the date — applying the
+  // period rule to it would push every Friday onto the Sunday.
+  const granularity = r.meta?.dataGranularity || '1mo';
+  if (!/(wk|mo|y)$/.test(granularity)) {
+    const byDay = new Map();
+    for (let i = 0; i < closes.length; i++) {
+      if (closes[i] != null && stamps[i] != null) byDay.set(day(stamps[i]), closes[i]);
+    }
+    return [...byDay.entries()].sort((a, b) => a[0].localeCompare(b[0]))
+      .map(([date, close]) => ({ date, close }));
   }
-  return out;
+
+  // Yahoo also appends a snapshot bar for right now, stamped with a real
+  // trading day rather than a period boundary, on top of the bar for the period
+  // that day falls in. Both carry the same close, so the period bar is dropped
+  // and the snapshot kept: keeping both would end the series with today's price
+  // twice, the second time under an earlier date.
+  const last = stamps.length - 1;
+  const snapshot = last >= 1 && stamps[last] != null && day(stamps[last]).slice(-2) !== '01';
+  const upTo = snapshot ? last - 2 : last;
+
+  const byDate = new Map();
+  for (let i = 0; i <= upTo; i++) {
+    if (closes[i] == null || stamps[i] == null) continue;
+    // The bar closed the day before the next one opened, whatever the period
+    // length — which is what makes this safe against the quarterly downsampling.
+    const end = stamps[i + 1] != null ? dayBefore(day(stamps[i + 1])) : day(stamps[i]);
+    byDate.set(end, closes[i]);
+  }
+  if (snapshot && closes[last] != null) byDate.set(day(stamps[last]), closes[last]);
+
+  return [...byDate.entries()].sort((a, b) => a[0].localeCompare(b[0]))
+    .map(([date, close]) => ({ date, close }));
 }
+
 
 // Everything here is derived from the daily series we already hold, so it costs
 // no extra request. Each figure is labelled as computed on the page.
@@ -497,7 +691,7 @@ async function main() {
   // how far a stock sits below its peak. The monthly series is combined with
   // the daily one already held, so the last two years stay day-accurate.
   let athOk = 0;
-  const bySymbol = new Map(rows.map((r) => [r.symbol, r]));
+  const lifetime = {};
   await pool(rows, CONCURRENCY, async (r) => {
     try {
       const monthly = await fetchLifetime(r.symbol);
@@ -510,20 +704,32 @@ async function main() {
       r.first_trade_date = monthly[0].date;
       // Drawdown is negative or zero; a stock at its peak reads 0.
       r.drawdown_pct = hi.close ? round(((r.price - hi.close) / hi.close) * 100, 2) : null;
+
+      // Kept rather than discarded now: the same series answers "how far below
+      // its peak has it been", "what would 10.000 kr have become" and the
+      // multi-year returns, none of which two years of daily closes can reach.
+      lifetime[r.symbol] = {
+        dates: monthly.map((m) => m.date),
+        closes: monthly.map((m) => round(m.close, 4)),
+      };
       athOk++;
     } catch { /* uden all-time-data står felterne tomme */ }
   });
   console.log(`  all-time: ${athOk}/${rows.length} selskaber`);
 
-  // 5. Market cap and index ranks
-  let capsOk = 0;
+  // 5. Market cap, per-share figures and index ranks
+  let capsOk = 0, session = null;
+  const quoteFields = new Map();
   try {
-    const caps = await fetchMarketCaps(rows.map((r) => r.symbol));
+    session = await yahooSession();
+    const got = await fetchQuoteFields(rows.map((r) => r.symbol), session);
     for (const r of rows) {
-      const c = caps.get(r.symbol);
-      if (c != null) {
-        r.market_cap = c;
-        r.market_cap_dkk = Math.round(r.currency === 'DKK' ? c : c * fx.rate);
+      const q = got.get(r.symbol);
+      if (!q) continue;
+      quoteFields.set(r.symbol, q);
+      if (q.market_cap != null) {
+        r.market_cap = q.market_cap;
+        r.market_cap_dkk = Math.round(r.currency === 'DKK' ? q.market_cap : q.market_cap * fx.rate);
         capsOk++;
       }
     }
@@ -533,7 +739,78 @@ async function main() {
     console.warn('  markedsværdi kunne ikke hentes (' + err.message + ') — rækkerne får ingen placering.');
   }
 
-  // 6. Files
+  // 6. Fundamentals, benchmarks and sector medians
+  // Skipped on the intraday runs: a company's revenue does not move between
+  // 09:30 and 13:30, and rewriting the files would dirty the repo for nothing.
+  let keyFigures = null, sectorStats = null;
+  if (!QUOTES_ONLY && session) {
+    const small = {}, detail = {};
+    let fundOk = 0;
+    await pool(rows, CONCURRENCY, async (r) => {
+      try {
+        const f = await fetchFundamentals(r.symbol, session);
+        const q = quoteFields.get(r.symbol) || {};
+        // Yahoo's two sources for earnings per share disagree now and then;
+        // the statement module is the more considered of the two.
+        small[r.symbol] = {
+          ...f.small,
+          eps_ttm: f.small.eps_ttm != null ? f.small.eps_ttm : (q.eps_ttm ?? null),
+          eps_fwd: q.eps_fwd ?? null,
+          div_yield: q.div_yield ?? null,
+          shares: q.shares ?? null,
+          rating: q.rating ?? null,
+          next_earnings: f.detail.next_earnings || q.next_earnings || null,
+        };
+        detail[r.symbol] = f.detail;
+        fundOk++;
+      } catch { /* uden nøgletal viser siden ingen */ }
+    });
+    console.log(`  nøgletal: ${fundOk}/${rows.length} selskaber`);
+
+    // A company's P/E means little alone. The comparison is the median of the
+    // other companies on this very list in the same sector — computed here, not
+    // taken from a source we cannot check.
+    const perSector = {};
+    for (const r of rows) {
+      const s = small[r.symbol];
+      if (!s || !s.eps_ttm || s.eps_ttm <= 0 || !r.price) continue;
+      (perSector[r.sector] = perSector[r.sector] || []).push(r.price / s.eps_ttm);
+    }
+    const median = (xs) => {
+      const a = xs.slice().sort((x, y) => x - y);
+      if (!a.length) return null;
+      const m = a.length >> 1;
+      return round(a.length % 2 ? a[m] : (a[m - 1] + a[m]) / 2, 2);
+    };
+    sectorStats = {};
+    for (const [sector, list] of Object.entries(perSector)) {
+      sectorStats[sector] = { pe_median: median(list), companies: list.length };
+    }
+
+    keyFigures = { source: 'Yahoo Finance', sectors: sectorStats, stocks: small };
+    await writeIfChanged(OUT_KEY, keyFigures, 'nogletal.json');
+
+    await mkdir(OUT_FUND_DIR, { recursive: true });
+    let fWritten = 0;
+    for (const [symbol, d] of Object.entries(detail)) {
+      if (await writeIfChanged(resolve(OUT_FUND_DIR, symbol + '.json'),
+        { source: 'Yahoo Finance', symbol, ...d }, null)) fWritten++;
+    }
+    if (!LIMIT) {
+      const keep = new Set(Object.keys(detail).map((s) => s + '.json'));
+      for (const f of await readdir(OUT_FUND_DIR)) {
+        if (f.endsWith('.json') && !keep.has(f)) await unlink(resolve(OUT_FUND_DIR, f));
+      }
+    }
+    console.log(`  regnskabsdetaljer: ${fWritten} skrevet af ${Object.keys(detail).length}`);
+
+    const bench = await fetchBenchmarks();
+    if (Object.keys(bench).length) {
+      await writeIfChanged(OUT_BENCH, { source: 'Yahoo Finance', range: '2y', indices: bench }, 'indeks.json');
+    }
+  }
+
+  // 7. Files
   rows.sort((a, b) => a.name.localeCompare(b.name, 'en', { sensitivity: 'base' }));
   await writeIfChanged(OUT_LIST, {
     source: 'Yahoo Finance',
@@ -561,7 +838,8 @@ async function main() {
   let written = 0;
   for (const [symbol, h] of Object.entries(history)) {
     if (await writeIfChanged(resolve(OUT_HIST_DIR, symbol + '.json'),
-      { source: 'Yahoo Finance', range: '2y', symbol, ...h }, null)) written++;
+      { source: 'Yahoo Finance', range: '2y', symbol, ...h,
+        monthly: lifetime[symbol] || null }, null)) written++;
   }
 
   // Drop files for companies that have left the universe, so the directory does

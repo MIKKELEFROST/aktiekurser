@@ -32,6 +32,37 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     border: 1px solid var(--hairline); border-radius: 8px; padding: 5px 8px;
     font-size: 12px; background: transparent; color: var(--text-primary);
   }
+
+  /* Series colours for the comparison chart. Four hues that hold apart from
+     each other and from the red accent, defined for both themes. */
+  :root { --s1: #1f6feb; --s2: #0f766e; --s3: #7c3aed; --s4: #a16207; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --s1: #6ea8fe; --s2: #2dd4bf; --s3: #c4b5fd; --s4: #fbbf24; }
+  }
+  :root[data-theme="dark"] { --s1: #6ea8fe; --s2: #2dd4bf; --s3: #c4b5fd; --s4: #fbbf24; }
+
+  .swatch { display: inline-block; width: 10px; height: 10px; border-radius: 3px; vertical-align: baseline; }
+  .cmp { display: inline-flex; align-items: center; gap: 5px; cursor: pointer; color: var(--text-secondary); }
+  .cmp input { accent-color: var(--accent); }
+  .cmp input:checked + span { color: var(--text-primary); font-weight: 600; }
+
+  /* Overview strip: the headline figures on one line under the company name. */
+  .overview {
+    display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px;
+    padding: 12px 14px; border-radius: 12px;
+    background: var(--surface-1); border: 1px solid var(--hairline);
+  }
+  .ov { display: inline-flex; align-items: baseline; gap: 5px; font-size: 13px; }
+  .ov-k { color: var(--text-muted); }
+  .ov-v { font-weight: 700; color: var(--text-primary); }
+  .ov-sep { color: var(--text-muted); opacity: .55; }
+  .overview p { flex-basis: 100%; margin: 0; }
+
+  .verdict {
+    display: inline-block; font-size: 13px; font-weight: 800;
+    padding: 3px 10px; border-radius: 999px;
+    border: 1px solid currentColor; opacity: .95;
+  }
 </style>
 </head>
 
@@ -52,6 +83,9 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
   K.renderNav('kurser');
 
   let TOTAL = 0;
+  // Filled once the extra files land; every section that reads them checks
+  // first, so the page renders with whatever arrived.
+  let ALL = [], KEYS = null, FUND = null, BENCH = null;
 
   const params = new URLSearchParams(location.search);
   const wanted = (params.get('symbol') || '').toUpperCase();
@@ -78,7 +112,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     { key: 'all', label: 'Alt',    sessions: Infinity },
   ];
 
-  const state = { range: '3m', from: '', to: '' };
+  const state = { range: '3m', from: '', to: '', compare: [] };
 
   function slice(full) {
     const { dates, closes } = full;
@@ -108,6 +142,100 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
 
     const n = Math.min(dates.length, p.sessions === Infinity ? dates.length : p.sessions);
     return { dates: dates.slice(-n), closes: closes.slice(-n) };
+  }
+
+  // ── Comparison chart ───────────────────────────────────────────────────
+  // A stock and an index cannot share a price axis — one trades at 168, the
+  // other at 29.544. Both are therefore rebased to 0% at the start of the
+  // window, which puts them on one scale that means the same thing for each:
+  // what a krone invested that day would have done since.
+  const SERIES_COLOURS = ['var(--s1)', 'var(--s2)', 'var(--s3)', 'var(--s4)'];
+
+  // The index is quoted on its own trading calendar. For each of the stock's
+  // days, take the index's last close on or before it, so a Danish holiday
+  // cannot shift the two series against each other.
+  function alignTo(dates, series) {
+    const out = [];
+    let j = 0;
+    for (const d of dates) {
+      while (j + 1 < series.dates.length && series.dates[j + 1] <= d) j++;
+      out.push(series.dates[j] <= d ? series.closes[j] : null);
+    }
+    return out;
+  }
+
+  const rebase = (values) => {
+    const base = values.find((v) => v != null);
+    return base ? values.map((v) => (v == null ? null : ((v - base) / base) * 100)) : values.map(() => null);
+  };
+
+  function drawCompareChart(dates, closes, r) {
+    const own = rebase(closes);
+    const lines = [{ label: r.symbol, colour: 'var(--accent)', values: own }];
+    state.compare.forEach((code, i) => {
+      const b = BENCH && BENCH[code];
+      if (!b) return;
+      lines.push({ label: b.label, colour: SERIES_COLOURS[i % SERIES_COLOURS.length],
+        values: rebase(alignTo(dates, b)) });
+    });
+
+    const all = lines.flatMap((l) => l.values).filter((v) => v != null);
+    if (all.length < 2) return '<p class="text-sm muted py-10 text-center">Ikke nok data til sammenligningen.</p>';
+    const min = Math.min.apply(null, all), max = Math.max.apply(null, all);
+    const pad = (max - min) * 0.1 || 1;
+    const lo = min - pad, hi = max + pad;
+    const x = (i) => G.L + (G.iw * i) / Math.max(1, dates.length - 1);
+    const y = (v) => G.T + G.ih * (1 - (v - lo) / (hi - lo));
+
+    const gridVals = Array.from({ length: 4 }, (_, k) => lo + ((hi - lo) * k) / 3);
+    const grid = gridVals.map((v) =>
+      '<line x1="' + G.L + '" y1="' + y(v).toFixed(1) + '" x2="' + (G.W - G.R) + '" y2="' + y(v).toFixed(1) + '" '
+      + 'stroke="var(--gridline)" stroke-width="1"/>'
+      + '<text x="' + (G.L - 8) + '" y="' + (y(v) + 4).toFixed(1) + '" text-anchor="end" '
+      + 'font-size="11" fill="var(--text-muted)">' + K.fmtPct(v) + '</text>').join('');
+
+    // A dashed rule at zero: the level every series starts from.
+    const zero = (lo < 0 && hi > 0)
+      ? '<line x1="' + G.L + '" y1="' + y(0).toFixed(1) + '" x2="' + (G.W - G.R) + '" y2="' + y(0).toFixed(1)
+        + '" stroke="var(--text-muted)" stroke-width="1" stroke-dasharray="4 4" opacity="0.7"/>' : '';
+
+    const idx = [0, Math.floor((dates.length - 1) / 2), dates.length - 1];
+    const xLabels = idx.map((i, n) =>
+      '<text x="' + x(i).toFixed(1) + '" y="' + (G.H - 9) + '" text-anchor="'
+      + (n === 0 ? 'start' : n === 2 ? 'end' : 'middle') + '" font-size="11" fill="var(--text-muted)">'
+      + new Date(dates[i]).toLocaleDateString('da-DK', { day: 'numeric', month: 'short', year: '2-digit' })
+      + '</text>').join('');
+
+    const paths = lines.map((l) => {
+      let d = '', pen = false;
+      l.values.forEach((v, i) => {
+        if (v == null) { pen = false; return; }
+        d += (pen ? ' L' : ' M') + x(i).toFixed(1) + ' ' + y(v).toFixed(1);
+        pen = true;
+      });
+      return '<path d="' + d.trim() + '" fill="none" stroke="' + l.colour + '" stroke-width="2" '
+        + 'stroke-linecap="round" stroke-linejoin="round"/>';
+    }).join('');
+
+    // Each series is named where it ends as well as in the legend, so identity
+    // never rests on colour alone.
+    const ends = lines.map((l) => {
+      const last = l.values.reduce((a, v, i) => (v == null ? a : i), -1);
+      if (last < 0) return '';
+      return '<text x="' + (G.W - G.R) + '" y="' + (y(l.values[last]) - 6).toFixed(1) + '" text-anchor="end" '
+        + 'font-size="11" font-weight="700" fill="' + l.colour + '">' + K.esc(l.label) + ' '
+        + K.fmtPct(l.values[last]) + '</text>';
+    }).join('');
+
+    return '<div class="chart-wrap">'
+      + '<svg viewBox="0 0 ' + G.W + ' ' + G.H + '" width="100%" height="' + G.H + '" role="img" '
+      + 'aria-label="Udvikling i procent for ' + K.esc(lines.map((l) => l.label).join(', ')) + '" style="display:block">'
+      + grid + zero + xLabels + paths + ends
+      + '</svg></div>'
+      + '<div class="flex flex-wrap gap-3 mt-2 text-xs" style="display:flex;flex-wrap:wrap;gap:12px">'
+      + lines.map((l) => '<span><span class="swatch" style="background:' + l.colour + '"></span> '
+          + K.esc(l.label) + '</span>').join('')
+      + '</div>';
   }
 
   function drawChart(dates, closes, currency) {
@@ -390,6 +518,433 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     return out;
   }
 
+  // ── Key figures from the statements ────────────────────────────────────
+  const keyOf = (symbol) => (KEYS && KEYS.stocks ? KEYS.stocks[symbol] || null : null);
+  const pct1 = (v) => (v == null ? null : (v > 0 ? '+' : '') + (v * 100).toFixed(1).replace('.', ',') + '%');
+  const mult = (v) => (v == null ? null : v.toFixed(1).replace('.', ',') + 'x');
+
+  function daysUntil(iso) {
+    if (!iso) return null;
+    const d = Math.round((new Date(iso + 'T12:00:00Z') - Date.now()) / 86400000);
+    return Number.isFinite(d) ? d : null;
+  }
+
+  // One line of the figures a reader would otherwise open four pages to find.
+  // Anything missing is dropped rather than printed as a dash, so the line
+  // stays short for the companies we know least about.
+  function overviewStrip(r) {
+    const k = keyOf(r.symbol);
+    const bits = [];
+    const add = (label, value, hint) => {
+      if (value == null) return;
+      bits.push('<span class="ov"><span class="ov-k hint" tabindex="0" data-hint-title="' + K.esc(label)
+        + '" data-hint="' + K.esc(hint) + '">' + K.esc(label) + '</span> <span class="ov-v num">' + value + '</span></span>');
+    };
+
+    if (r.market_cap != null) {
+      add('Markedsværdi', K.fmtBig(r.market_cap) + ' ' + K.esc(r.currency),
+        'Kursen gange antallet af aktier, i selskabets egen valuta.');
+    }
+    if (k) {
+      add('P/E', mult(K.peOf(r.price, k.eps_ttm)),
+        'Kursen delt med indtjeningen pr. aktie de seneste fire kvartaler. Hvor mange års indtjening du betaler for én aktie. Beregnet af den kurs der står her på siden.');
+      add('Forward P/E', mult(K.peOf(r.price, k.eps_fwd)),
+        'Samme regnestykke, men med analytikernes forventede indtjening for det kommende år i stedet. Lavere end P/E betyder at indtjeningen ventes at vokse.');
+      add('Omsætningsvækst', pct1(k.revenue_growth),
+        'Væksten i omsætning i forhold til samme kvartal året før.');
+      add('FCF-margin', k.fcf_margin == null ? null : (k.fcf_margin * 100).toFixed(1).replace('.', ',') + '%',
+        'Frit cash flow som andel af omsætningen — hvor stor en del af hver krone i salg der bliver til kontanter selskabet frit kan bruge.');
+    }
+    if (!bits.length) return '';
+
+    const days = k ? daysUntil(k.next_earnings) : null;
+    const cal = (days != null && days >= 0)
+      ? '<p class="text-sm mt-2 muted">Næste regnskab: <strong style="color:var(--text-primary)">'
+        + K.fmtDate(k.next_earnings) + '</strong> <span class="faint">· '
+        + (days === 0 ? 'i dag' : days === 1 ? 'om 1 dag' : 'om ' + days + ' dage') + '</span></p>'
+      : '';
+
+    return '<div class="overview mb-5">' + bits.join('<span class="ov-sep" aria-hidden="true">·</span>') + cal + '</div>';
+  }
+
+  // ── Valuation ──────────────────────────────────────────────────────────
+  // Every comparison here is against the other companies on this very list, so
+  // the reader can check it. A verdict is a comparison, never a recommendation.
+  function valuationBlock(r) {
+    const k = keyOf(r.symbol);
+    if (!k) return '';
+    const pe = K.peOf(r.price, k.eps_ttm);
+    const fwd = K.peOf(r.price, k.eps_fwd);
+    const sector = KEYS.sectors ? KEYS.sectors[r.sector] : null;
+    const fcfYield = (k.fcf != null && r.market_cap) ? (k.fcf / r.market_cap) * 100 : null;
+    if (pe == null && fwd == null && fcfYield == null) return '';
+
+    let verdict = null, cls = 'muted', ratio = null;
+    if (pe != null && sector && sector.pe_median) {
+      ratio = pe / sector.pe_median;
+      verdict = ratio > 1.2 ? 'Dyrere end sektoren' : ratio < 0.8 ? 'Billigere end sektoren' : 'På linje med sektoren';
+      cls = ratio > 1.2 ? 'down' : ratio < 0.8 ? 'up' : '';
+    }
+
+    const line = (label, value, hint, extra) => value == null ? ''
+      : '<div class="stat flex items-baseline justify-between gap-3 py-2" style="display:flex;justify-content:space-between">'
+        + '<span class="text-sm"><span class="hint" tabindex="0" data-hint-title="' + K.esc(label)
+        + '" data-hint="' + K.esc(hint) + '">' + K.esc(label) + '</span></span>'
+        + '<span class="text-sm font-semibold num">' + value
+        + (extra ? ' <span class="text-xs faint">' + extra + '</span>' : '') + '</span></div>';
+
+    return '<div class="card rounded-2xl p-5">'
+      + '<h2 class="text-sm font-bold">Er aktien dyr eller billig?</h2>'
+      + (verdict
+          ? '<p class="mt-2 mb-1"><span class="verdict ' + cls + '">' + verdict + '</span>'
+            + ' <span class="text-xs faint num">' + (ratio > 1 ? '+' : '')
+            + Math.round((ratio - 1) * 100) + '% mod sektorens median</span></p>'
+          : '')
+      + '<div class="mt-2">'
+      + line('P/E nu', mult(pe),
+          'Kursen delt med indtjeningen pr. aktie de seneste fire kvartaler.')
+      + (sector && sector.pe_median ? line('Median i ' + r.sector, mult(sector.pe_median),
+          'Midterste P/E blandt de ' + sector.companies + ' selskaber i denne sektor på listen, som har positiv indtjening. Beregnet af os ud fra de kurser siden viser — ikke hentet fra en kilde.',
+          '· ' + sector.companies + ' selskaber') : '')
+      + line('Forward P/E', mult(fwd),
+          'Kursen delt med den indtjening analytikerne venter det kommende år.')
+      + line('FCF yield', fcfYield == null ? null : fcfYield.toFixed(1).replace('.', ',') + '%',
+          'Frit cash flow i forhold til markedsværdien. Hvor stort et kontantafkast selskabets drift giver på den pris aktien koster i dag.')
+      + line('P/B', mult(k.pb),
+          'Kursen i forhold til den bogførte egenkapital pr. aktie.')
+      + line('PEG', mult(k.peg),
+          'P/E delt med den forventede vækst i indtjeningen. Under 1 regnes traditionelt som billigt i forhold til væksten.')
+      + '</div>'
+      + '<p class="text-xs faint mt-3 leading-relaxed">En høj P/E er ikke i sig selv dyrt: den kan afspejle at '
+        + 'indtjeningen ventes at vokse — se omsætningsvæksten ovenfor. Sammenligningen er med sektoren på denne '
+        + 'liste, ikke med selskabets egen historik: vi har kun fire kvartalers indtjening, og en 5-årig median '
+        + 'kræver indtjening år for år, som kilden ikke giver.</p>'
+    + '</div>';
+  }
+
+  // ── Calendar ───────────────────────────────────────────────────────────
+  function calendarBlock(r) {
+    if (!FUND) return '';
+    const items = [];
+    const push = (date, title, note) => { if (date) items.push({ date, title, note }); };
+    push(FUND.next_earnings, 'Regnskab', FUND.earnings_estimated ? 'Forventet dato' : 'Bekræftet dato');
+    push(FUND.earnings_call, 'Seneste conference call', 'Afholdt');
+    push(FUND.ex_dividend, 'Ex-udbytte', 'Køber du efter denne dag, får du ikke udbyttet');
+    push(FUND.dividend_date, 'Udbetaling af udbytte', '');
+    if (!items.length) return '';
+
+    // Past dates last, so what is coming sits at the top.
+    const today = new Date().toISOString().slice(0, 10);
+    items.sort((a, b) => (a.date >= today ? 0 : 1) - (b.date >= today ? 0 : 1) || a.date.localeCompare(b.date));
+
+    return '<div class="card rounded-2xl p-5">'
+      + '<h2 class="text-sm font-bold mb-3">Næste begivenheder</h2>'
+      + items.map((it) => {
+          const d = daysUntil(it.date), future = it.date >= today;
+          return '<div class="stat flex items-start gap-3 py-2" style="display:flex;gap:12px">'
+            + '<div class="num text-xs font-bold" style="min-width:5.5rem;color:' + (future ? 'var(--text-primary)' : 'var(--text-muted)') + '">'
+              + K.fmtDate(it.date) + '</div>'
+            + '<div><div class="text-sm font-semibold">' + K.esc(it.title) + '</div>'
+            + '<div class="text-xs faint">' + K.esc(it.note)
+            + (future && d != null ? (it.note ? ' · ' : '') + (d === 0 ? 'i dag' : 'om ' + d + ' dage') : '')
+            + '</div></div></div>';
+        }).join('')
+      + (FUND.eps_estimate != null
+          ? '<p class="text-xs faint mt-3">Analytikerne venter ' + K.fmtPrice(FUND.eps_estimate) + ' '
+            + K.esc(r.currency) + ' i indtjening pr. aktie i kvartalet.</p>' : '')
+    + '</div>';
+  }
+
+  // ── Earnings surprises ─────────────────────────────────────────────────
+  function surpriseBlock(r) {
+    const h = FUND && FUND.eps_history ? FUND.eps_history.slice().reverse() : [];
+    if (!h.length) return '';
+    const beats = h.filter((q) => q.actual > q.estimate).length;
+
+    return '<div class="card rounded-2xl p-5 mt-5">'
+      + '<h2 class="text-sm font-bold">Ramte selskabet forventningerne?</h2>'
+      + '<p class="text-xs muted mt-1" style="max-width:70ch">Analytikernes gennemsnitlige forventning til '
+        + 'indtjening pr. aktie, holdt op mod hvad selskabet leverede.</p>'
+      + '<div class="overflow-x-auto mt-3" style="overflow-x:auto"><table class="w-full text-sm border-collapse">'
+      + '<thead><tr class="text-xs faint text-left"><th class="py-2 pr-3 font-semibold">Kvartal</th>'
+        + '<th class="py-2 px-3 font-semibold text-right">Forventet</th>'
+        + '<th class="py-2 px-3 font-semibold text-right">Faktisk</th>'
+        + '<th class="py-2 pl-3 font-semibold text-right">Forskel</th></tr></thead><tbody>'
+      + h.map((q) => '<tr class="border-t divider">'
+          + '<td class="py-2 pr-3 num">' + K.fmtDate(q.quarter) + '</td>'
+          + '<td class="py-2 px-3 num text-right muted">' + K.fmtPrice(q.estimate) + '</td>'
+          + '<td class="py-2 px-3 num text-right font-semibold">' + K.fmtPrice(q.actual) + '</td>'
+          + '<td class="py-2 pl-3 num text-right ' + K.dirClass(q.surprise_pct) + '">'
+            + K.fmtPct(q.surprise_pct) + '</td></tr>').join('')
+      + '</tbody></table></div>'
+      + '<p class="text-sm mt-3">Slog forventningen i <strong>' + beats + ' af de seneste ' + h.length
+        + ' kvartaler</strong>. <span class="text-xs faint">Kilden giver fire kvartaler, så længere tilbage kan vi ikke se.</span></p>'
+    + '</div>';
+  }
+
+  // ── Performance against the benchmarks ─────────────────────────────────
+  // A stock's own return says little without the market's. Both sides are
+  // measured over the same calendar window, taken from each series' own dates,
+  // so a holiday in one market cannot shift the comparison.
+  function returnOver(series, fromDate) {
+    if (!series || !series.dates.length) return null;
+    let i = K.nearestIndex(series.dates, fromDate);
+    if (i === -1) return null;                       // window starts after the data ends
+    return K.moveBetween(series.closes, i);
+  }
+
+  function windows() {
+    const now = new Date();
+    const back = (fn) => { const d = new Date(now); fn(d); return d.toISOString().slice(0, 10); };
+    return [
+      { label: '1 uge',     from: back((d) => d.setDate(d.getDate() - 7)) },
+      { label: '1 måned',   from: back((d) => d.setMonth(d.getMonth() - 1)) },
+      { label: '3 måneder', from: back((d) => d.setMonth(d.getMonth() - 3)) },
+      { label: 'År til dato', from: now.getFullYear() + '-01-01' },
+      { label: '1 år',      from: back((d) => d.setFullYear(d.getFullYear() - 1)) },
+      { label: '3 år',      from: back((d) => d.setFullYear(d.getFullYear() - 3)), long: true },
+      { label: '5 år',      from: back((d) => d.setFullYear(d.getFullYear() - 5)), long: true },
+    ];
+  }
+
+  // Which yardstick to hold this company against: its own index where it has
+  // one, otherwise the market it trades in.
+  function benchFor(r) {
+    if (!BENCH) return null;
+    const codes = (r.indices || []);
+    const pick = r.market === 'DK' ? 'OMXC25'
+      : codes.includes('NDX') ? 'NDX'
+      : codes.includes('SP500') ? 'SP500' : 'SP500';
+    return BENCH[pick] ? { code: pick, ...BENCH[pick] } : null;
+  }
+
+  function performanceBlock(r) {
+    if (!full || !full.dates.length) return '';
+    const bench = benchFor(r);
+    // The daily file covers two years; anything longer is read off the monthly
+    // series, which reaches back to the listing.
+    const monthly = full.monthly && full.monthly.dates.length ? full.monthly : null;
+    const rows = windows().map((w) => {
+      const own = w.long
+        ? (monthly ? returnOver(monthly, w.from) : null)
+        : returnOver(full, w.from);
+      const idx = w.long ? null : (bench ? returnOver(bench, w.from) : null);
+      return { label: w.label, own, idx, diff: (own != null && idx != null) ? own - idx : null };
+    }).filter((x) => x.own != null || x.idx != null);
+    if (!rows.length) return '';
+
+    const cell = (v) => '<td class="py-2 px-3 num text-right ' + K.dirClass(v) + '">' + K.fmtPct(v) + '</td>';
+    return '<div class="card rounded-2xl p-5 mb-5">'
+      + '<h2 class="text-sm font-bold">Udvikling mod markedet</h2>'
+      + '<p class="text-xs muted mt-1" style="max-width:74ch">Samme kalenderperiode for begge. '
+        + (bench ? 'Sammenligningen er med ' + K.esc(bench.label) + '. ' : '')
+        + 'De to længste perioder er målt på månedlige lukkekurser, hvor de øvrige bruger daglige — indekset '
+        + 'rækker kun to år tilbage, så der står ingen sammenligning for 3 og 5 år.</p>'
+      + '<div class="overflow-x-auto mt-3" style="overflow-x:auto"><table class="w-full text-sm border-collapse">'
+      + '<thead><tr class="text-xs faint text-left"><th class="py-2 pr-3 font-semibold">Periode</th>'
+        + '<th class="py-2 px-3 font-semibold text-right">' + K.esc(r.symbol) + '</th>'
+        + (bench ? '<th class="py-2 px-3 font-semibold text-right">' + K.esc(bench.label) + '</th>'
+          + '<th class="py-2 px-3 font-semibold text-right">Forskel</th>' : '')
+      + '</tr></thead><tbody>'
+      + rows.map((x) => '<tr class="border-t divider"><td class="py-2 pr-3">' + K.esc(x.label) + '</td>'
+          + cell(x.own)
+          + (bench ? cell(x.idx) + '<td class="py-2 px-3 num text-right font-semibold '
+              + K.dirClass(x.diff) + '">' + K.fmtPct(x.diff) + '</td>' : '')
+        + '</tr>').join('')
+      + '</tbody></table></div></div>';
+  }
+
+  // ── What 10.000 kr would have become ───────────────────────────────────
+  function investedBlock(r) {
+    const monthly = full && full.monthly && full.monthly.dates.length ? full.monthly : null;
+    if (!monthly) return '';
+    const AMOUNT = 10000;
+    const now = new Date();
+    const back = (y) => { const d = new Date(now); d.setFullYear(d.getFullYear() - y); return d.toISOString().slice(0, 10); };
+
+    const at = (fromDate, label) => {
+      // Daily closes where they reach, monthly beyond. Otherwise "1 år" here
+      // would be measured off a month end while the table above measures it off
+      // the day itself, and the same window would print two different returns.
+      const daily = full && full.dates.length && fromDate >= full.dates[0];
+      const src = daily ? full : monthly;
+      const i = K.nearestIndex(src.dates, fromDate);
+      if (i === -1) return null;
+      const base = src.closes[i];
+      if (!base || r.price == null) return null;
+      // Latest price rather than the series' last close: today is not over.
+      return { label, date: src.dates[i], value: AMOUNT * (r.price / base) };
+    };
+
+    const items = [at(back(1), 'For 1 år siden'), at(back(5), 'For 5 år siden'), at(back(10), 'For 10 år siden'),
+      at(monthly.dates[0], 'Ved første kurs')].filter(Boolean);
+    // "Ved første kurs" repeats the ten-year card for a company listed since.
+    const seen = new Set();
+    const uniq = items.filter((x) => (seen.has(x.date) ? false : seen.add(x.date)));
+    if (!uniq.length) return '';
+
+    return '<div class="card rounded-2xl p-5 mt-5">'
+      + '<h2 class="text-sm font-bold">Hvis du havde investeret 10.000 kr.</h2>'
+      + '<p class="text-xs muted mt-1" style="max-width:74ch">Beløbet ved dagens kurs, hvis du havde købt på '
+        + 'månedens lukkekurs og ikke rørt det siden. Uden skat, omkostninger og udbytte — og uden '
+        + 'valutaudsving, som for de amerikanske selskaber ville ændre resultatet i kroner.</p>'
+      + '<div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-4 mt-3">'
+      + uniq.map((x) => {
+          const gain = (x.value - AMOUNT) / AMOUNT * 100;
+          return '<div class="card rounded-xl p-4">'
+            + '<div class="text-[11px] font-bold uppercase faint" style="letter-spacing:.04em">' + K.esc(x.label) + '</div>'
+            + '<div class="text-2xl font-extrabold num mt-1 ' + K.dirClass(gain) + '">'
+              + K.fmtInt(Math.round(x.value)) + ' kr.</div>'
+            + '<div class="text-xs faint num mt-1">' + K.fmtPct(gain) + ' · fra ' + K.fmtDate(x.date) + '</div>'
+          + '</div>';
+        }).join('')
+      + '</div></div>';
+  }
+
+  // ── Similar companies ──────────────────────────────────────────────────
+  // Peers are not handed to us by any source, so they are derived: the same
+  // sector, ranked by how close they sit in market value. That is a stated rule
+  // the reader can check, not an editorial pick.
+  function peersBlock(r) {
+    if (!ALL.length || !r.sector || r.market_cap == null) return '';
+    const peers = ALL
+      .filter((x) => x.symbol !== r.symbol && x.sector === r.sector && x.market_cap != null)
+      .map((x) => ({ x, gap: Math.abs(Math.log(x.market_cap_dkk || 1) - Math.log(r.market_cap_dkk || 1)) }))
+      .sort((a, b) => a.gap - b.gap)
+      .slice(0, 5)
+      .map((p) => p.x);
+    if (!peers.length) return '';
+
+    const line = (x, self) => {
+      const k = keyOf(x.symbol);
+      return '<tr class="border-t divider"' + (self ? ' style="background:var(--page-plane)"' : '') + '>'
+        + '<td class="py-2 pr-3">' + (self
+            ? '<span class="font-bold">' + K.esc(x.name) + '</span> <span class="text-xs faint">(denne)</span>'
+            : '<a class="link-accent font-semibold" href="' + K.stockUrl(x.symbol) + '">' + K.esc(x.name) + '</a>')
+          + '<div class="text-xs faint">' + K.esc(x.symbol) + '</div></td>'
+        + '<td class="py-2 px-3 num text-right">' + (x.market_cap == null ? '–'
+            : K.fmtBig(x.market_cap) + ' <span class="text-xs faint">' + K.esc(x.currency) + '</span>') + '</td>'
+        + '<td class="py-2 px-3 num text-right">' + (k ? (mult(K.peOf(x.price, k.eps_ttm)) || '–') : '–') + '</td>'
+        + '<td class="py-2 px-3 num text-right">' + (k ? (mult(K.peOf(x.price, k.eps_fwd)) || '–') : '–') + '</td>'
+        + '<td class="py-2 px-3 num text-right">' + (k && k.revenue_growth != null ? pct1(k.revenue_growth) : '–') + '</td>'
+        + '<td class="py-2 pl-3 num text-right ' + K.dirClass(x.change_1y) + '">' + K.fmtPct(x.change_1y) + '</td>'
+      + '</tr>';
+    };
+
+    const symbols = [r.symbol].concat(peers.map((p) => p.symbol));
+    return '<div class="card rounded-2xl p-5 mt-5">'
+      + '<div class="flex items-baseline justify-between gap-3 flex-wrap" style="display:flex;justify-content:space-between">'
+        + '<h2 class="text-sm font-bold">Lignende selskaber</h2>'
+        + '<a class="link-accent text-xs font-semibold" href="sammenlign.html?symbols='
+          + encodeURIComponent(symbols.join(',')) + '">Sammenlign selskaber →</a>'
+      + '</div>'
+      + '<p class="text-xs muted mt-1" style="max-width:74ch">De selskaber på listen der ligger i samme sektor og '
+        + 'tættest på i markedsværdi. Det er en regel, ikke en vurdering — de er ikke nødvendigvis konkurrenter.</p>'
+      + '<div class="overflow-x-auto mt-3" style="overflow-x:auto"><table class="w-full text-sm border-collapse">'
+      + '<thead><tr class="text-xs faint text-left"><th class="py-2 pr-3 font-semibold">Selskab</th>'
+        + '<th class="py-2 px-3 font-semibold text-right">Markedsværdi</th>'
+        + '<th class="py-2 px-3 font-semibold text-right">P/E</th>'
+        + '<th class="py-2 px-3 font-semibold text-right">Forward P/E</th>'
+        + '<th class="py-2 px-3 font-semibold text-right">Omsætningsvækst</th>'
+        + '<th class="py-2 pl-3 font-semibold text-right">1 år</th></tr></thead><tbody>'
+      + line(r, true) + peers.map((p) => line(p, false)).join('')
+      + '</tbody></table></div></div>';
+  }
+
+  // ── Ownership ──────────────────────────────────────────────────────────
+  function ownershipBlock(r) {
+    const k = keyOf(r.symbol);
+    const inst = k ? k.inst_pct : null, ins = k ? k.ins_pct : null;
+    const trades = FUND && FUND.insiders ? FUND.insiders : [];
+    // Grants, gifts and option exercises are pay, not a decision to trade.
+    const decided = trades.filter((t) => t.kind === 'buy' || t.kind === 'sell');
+    if (inst == null && ins == null && !decided.length) return '';
+
+    const bar = (label, v, hint) => v == null ? ''
+      : '<div class="mb-3"><div class="flex items-baseline justify-between gap-3 text-sm" style="display:flex;justify-content:space-between">'
+        + '<span class="hint" tabindex="0" data-hint-title="' + K.esc(label) + '" data-hint="' + K.esc(hint) + '">'
+        + K.esc(label) + '</span><span class="num font-semibold">' + (v * 100).toFixed(1).replace('.', ',') + '%</span></div>'
+        + '<div style="height:6px;border-radius:3px;background:var(--gridline);margin-top:5px;overflow:hidden">'
+        + '<div style="height:100%;width:' + Math.min(100, v * 100).toFixed(1) + '%;background:var(--accent)"></div></div></div>';
+
+    return '<div class="card rounded-2xl p-5 mt-5">'
+      + '<h2 class="text-sm font-bold mb-3">Hvem ejer selskabet</h2>'
+      + bar('Institutioner ejer', inst,
+          'Fonde, pensionskasser og andre professionelle investorer tilsammen'
+          + (FUND && FUND.inst_count ? ' — ' + K.fmtInt(FUND.inst_count) + ' forskellige institutioner.' : '.'))
+      + bar('Insidere ejer', ins,
+          'Ledelse og bestyrelse. En høj andel betyder at de selv har penge i selskabet.')
+      + (decided.length
+          ? '<h3 class="text-xs font-bold uppercase faint mt-4 mb-2" style="letter-spacing:.04em">Seneste insiderhandler</h3>'
+            + '<p class="text-xs faint mb-2">Kun handler i markedet. Tildelte aktier, gaver og udnyttede optioner '
+              + 'er løn og siger ikke det samme som et køb for egne penge.</p>'
+            + decided.slice(0, 6).map((t) => '<div class="stat flex items-baseline justify-between gap-3 py-2" '
+              + 'style="display:flex;justify-content:space-between;gap:12px">'
+              + '<span class="text-sm"><span class="font-semibold">' + K.esc(t.role || '–') + '</span>'
+              + '<span class="text-xs faint"> · ' + K.fmtDate(t.date) + '</span></span>'
+              + '<span class="text-sm num ' + (t.kind === 'buy' ? 'up' : 'down') + '">'
+              + (t.kind === 'buy' ? 'Købte' : 'Solgte')
+              + (t.value ? ' ' + K.fmtBig(t.value) + ' ' + K.esc(r.currency) : '') + '</span></div>').join('')
+          : (trades.length
+              ? '<p class="text-xs faint mt-3">Ingen køb eller salg i markedet blandt de seneste registrerede '
+                + 'handler — de er tildelinger, gaver eller optioner.</p>' : ''))
+    + '</div>';
+  }
+
+  // ── Drawdown ───────────────────────────────────────────────────────────
+  // The chart a price chart cannot be. Zero is a record high; everything below
+  // is how far under the previous peak the stock has traded, month by month.
+  function drawdownBlock(r) {
+    const m = full && full.monthly && full.monthly.dates.length > 12 ? full.monthly : null;
+    if (!m) return '';
+    const dd = K.drawdownSeries(m.dates, m.closes);
+    const lo = Math.min.apply(null, dd.values);
+    if (!Number.isFinite(lo) || lo > -1) return '';    // never meaningfully below a peak
+
+    const W = 900, H = 220, L = 46, R = 12, T = 12, B = 24;
+    const iw = W - L - R, ih = H - T - B;
+    const floor = Math.floor(lo / 10) * 10;
+    const x = (i) => L + (dd.values.length < 2 ? iw : (i / (dd.values.length - 1)) * iw);
+    const y = (v) => T + (v / floor) * ih;             // 0 at top, floor at bottom
+
+    const ticks = [];
+    for (let v = 0; v >= floor; v -= Math.max(10, Math.round(-floor / 4 / 10) * 10)) ticks.push(v);
+
+    const area = 'M ' + x(0) + ' ' + y(0).toFixed(1)
+      + dd.values.map((v, i) => ' L ' + x(i).toFixed(1) + ' ' + y(v).toFixed(1)).join('')
+      + ' L ' + x(dd.values.length - 1).toFixed(1) + ' ' + y(0).toFixed(1) + ' Z';
+
+    const worst = dd.values.indexOf(lo);
+    const years = [...new Set(m.dates.map((d) => d.slice(0, 4)))];
+    const step = Math.max(1, Math.ceil(years.length / 8));
+
+    return '<div class="card rounded-2xl p-5 mt-5">'
+      + '<h2 class="text-sm font-bold">Hvor langt under toppen har den ligget?</h2>'
+      + '<p class="text-xs muted mt-1" style="max-width:74ch">Nul betyder ny rekord. Alt derunder er afstanden ned '
+        + 'fra den højeste kurs indtil da — samme historie som kursgrafen, men set fra toppen. '
+        + 'Målt på månedlige lukkekurser.</p>'
+      + '<svg viewBox="0 0 ' + W + ' ' + H + '" width="100%" height="220" role="img" '
+        + 'aria-label="Afstand fra tidligere toppunkt, måned for måned">'
+      + ticks.map((t) => '<line x1="' + L + '" x2="' + (W - R) + '" y1="' + y(t).toFixed(1) + '" y2="' + y(t).toFixed(1)
+          + '" stroke="var(--gridline)" stroke-width="1"/>'
+          + '<text x="' + (L - 7) + '" y="' + (y(t) + 4).toFixed(1) + '" text-anchor="end" font-size="11" '
+          + 'fill="var(--text-muted)">' + t + '%</text>').join('')
+      + '<path d="' + area + '" fill="var(--delta-down)" opacity="0.26"/>'
+      + '<path d="M ' + dd.values.map((v, i) => x(i).toFixed(1) + ' ' + y(v).toFixed(1)).join(' L ')
+        + '" fill="none" stroke="var(--delta-down)" stroke-width="2"/>'
+      + years.filter((_, i) => i % step === 0).map((yr) => {
+          const i = m.dates.findIndex((d) => d.slice(0, 4) === yr);
+          return '<text x="' + x(i).toFixed(1) + '" y="' + (H - 6) + '" text-anchor="middle" font-size="11" '
+            + 'fill="var(--text-muted)">' + yr + '</text>';
+        }).join('')
+      + '</svg>'
+      + '<p class="text-xs muted mt-1">Værst: <strong class="num" style="color:var(--text-primary)">'
+        + K.fmtPct(lo) + '</strong> i ' + K.fmtDate(m.dates[worst])
+        + ' · nu <strong class="num" style="color:var(--text-primary)">'
+        + K.fmtPct(r.drawdown_pct != null ? r.drawdown_pct : dd.values[dd.values.length - 1]) + '</strong></p>'
+    + '</div>';
+  }
+
   function factsBlock(r) {
     const list = facts(r);
     if (!list.length) return '';
@@ -413,9 +968,17 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     // wrong days.
     sel.a = sel.b = null; sel.dragging = false;
     const s = slice(full);
-    $('#chartHost').innerHTML = drawChart(s.dates, s.closes, row.currency);
+    const comparing = state.compare.length > 0;
+
+    $('#chartHost').innerHTML = comparing
+      ? drawCompareChart(s.dates, s.closes, row)
+      : drawChart(s.dates, s.closes, row.currency);
     $('#selSummary').hidden = true;
-    wireChart();
+    // Click-to-select belongs to the price view; in the comparison the y-axis
+    // is a percentage shared by several series and a selection would be
+    // ambiguous about which one it refers to.
+    $('#selHelp').hidden = comparing;
+    if (!comparing) wireChart();
 
     const move = s.closes.length > 1 ? ((s.closes[s.closes.length - 1] - s.closes[0]) / s.closes[0]) * 100 : null;
     $('#chartSummary').innerHTML = s.dates.length
@@ -489,8 +1052,17 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
           + '<button id="clearRange" class="range-btn">Nulstil</button>'
         + '</div>'
       + '</div>'
+      + (BENCH ? '<div class="flex items-center gap-2 flex-wrap mb-3 text-xs" '
+          + 'style="display:flex;flex-wrap:wrap;gap:8px;align-items:center">'
+          + '<span class="faint font-bold">Sammenlign med</span>'
+          + Object.keys(BENCH).map((code) => '<label class="cmp">'
+              + '<input type="checkbox" data-bench="' + code + '"' + (state.compare.includes(code) ? ' checked' : '') + '>'
+              + '<span>' + K.esc(BENCH[code].label) + '</span></label>').join('')
+          + '<span class="faint" id="cmpNote"' + (state.compare.length ? '' : ' hidden')
+          + '>Grafen viser udvikling i procent fra periodens start, så begge kan læses på samme akse.</span>'
+        + '</div>' : '')
       + '<p id="chartSummary" class="text-xs muted mb-1"></p>'
-      + '<p class="text-xs faint mb-3">Klik på grafen for at sætte et startpunkt, og klik igen for at '
+      + '<p id="selHelp" class="text-xs faint mb-3">Klik på grafen for at sætte et startpunkt, og klik igen for at '
         + 'se udviklingen frem til det andet punkt. Du kan også trække.</p>'
       + '<div id="chartHost"></div>'
       + '<p id="selSummary" class="text-xs mt-3 muted" hidden></p></div>';
@@ -570,12 +1142,29 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       + 'Kurserne er vejledende og forsinkede markedsdata fra Yahoo Finance, hentet ' + K.fmtAge(updatedAt)
       + ', og udgør ikke investeringsrådgivning. Historiske afkast er ingen garanti for fremtidige afkast.</p>';
 
-    $('#content').innerHTML = head + chartCard
-      + '<div class="grid md:grid-cols-2 gap-5 items-start">' + left + right + '</div>'
+    $('#content').innerHTML = head + overviewStrip(r) + chartCard
+      + performanceBlock(r)
+      + '<div class="grid md:grid-cols-2 gap-5 items-start mb-5">' + valuationBlock(r) + calendarBlock(r) + '</div>'
+      + surpriseBlock(r)
+      + drawdownBlock(r)
+      + investedBlock(r)
+      + '<div class="grid md:grid-cols-2 gap-5 items-start mt-5">' + left + right + '</div>'
+      + peersBlock(r)
+      + ownershipBlock(r)
       + factsBlock(r) + nav + risk;
 
     document.querySelectorAll('[data-range]').forEach((b) =>
       b.addEventListener('click', () => { $('#from').value = ''; $('#to').value = ''; setRange(b.dataset.range); }));
+
+    document.querySelectorAll('[data-bench]').forEach((b) => b.addEventListener('change', () => {
+      const code = b.dataset.bench;
+      state.compare = b.checked
+        ? state.compare.concat(code)
+        : state.compare.filter((c) => c !== code);
+      const note = $('#cmpNote');
+      if (note) note.hidden = !state.compare.length;
+      renderChartBlock();
+    }));
 
     const onDate = () => {
       state.from = $('#from').value; state.to = $('#to').value;
@@ -627,6 +1216,19 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       if (!hist.dates.length && hist.closes.length) {
         hist.dates = hist.closes.map((_, i) => String(i));   // no dates: index axis
       }
+
+      // Four more files, all optional. Each section checks its own data and
+      // simply does not render if the fetch behind it failed, so one missing
+      // file never takes the page down with it.
+      const [keys, funds, bench] = await Promise.all([
+        K.loadKeyFigures().catch(() => null),
+        K.loadFundamentals(r.symbol).catch(() => null),
+        K.loadBenchmarks().catch(() => null),
+      ]);
+      ALL = list.rows;
+      KEYS = keys;
+      FUND = funds;
+      BENCH = bench && bench.indices ? bench.indices : null;
 
       render(r, hist, list.fx, list.updatedAt, {
         prev: idx > 0 ? list.rows[idx - 1] : null,

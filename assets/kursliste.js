@@ -106,7 +106,55 @@
     if (!res.ok) throw new Error('HTTP ' + res.status);
     const body = await res.json();
     if (!Array.isArray(body.dates) || !Array.isArray(body.closes)) throw new Error('ugyldig historik');
-    return { dates: body.dates, closes: body.closes, range: body.range };
+    return { dates: body.dates, closes: body.closes, range: body.range, monthly: body.monthly || null };
+  }
+
+  async function loadJson(name) {
+    const res = await fetch(dataUrl(name), { cache: 'no-cache', headers: { accept: 'application/json' } });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    return res.json();
+  }
+
+  // Key figures for every company, small enough to hold on any page; the bulky
+  // per-company detail lives in its own file and is only fetched when shown.
+  const loadKeyFigures = () => loadJson('nogletal.json');
+  const loadBenchmarks = () => loadJson('indeks.json');
+  const loadFundamentals = (symbol) => loadJson('regnskab/' + encodeURIComponent(symbol) + '.json');
+
+  // ── Derived figures ───────────────────────────────────────────────────
+  // The price-to-earnings ratio is computed rather than stored, so it can never
+  // disagree with the price printed next to it.
+  const peOf = (price, eps) => (price && eps && eps > 0 ? price / eps : null);
+
+  // Return over a window of a close series, as a percentage.
+  function moveBetween(closes, fromIndex) {
+    const last = closes[closes.length - 1], base = closes[fromIndex];
+    return (base && last != null) ? ((last - base) / base) * 100 : null;
+  }
+
+  // The point nearest a target date, not the first one after it. A monthly
+  // series only has month starts, so "a year ago" would otherwise land up to a
+  // month late and a one-year return would be measured over eleven.
+  function nearestIndex(dates, iso) {
+    if (!dates.length) return -1;
+    const after = dates.findIndex((d) => d >= iso);
+    if (after === 0) return 0;
+    if (after === -1) return -1;                   // target is past the end of the series
+    const days = (a, b) => Math.abs(new Date(a) - new Date(b));
+    return days(dates[after], iso) <= days(dates[after - 1], iso) ? after : after - 1;
+  }
+
+  // How far below its own running peak a series has been, point by point. The
+  // shape a price chart cannot show: two stocks at the same price can be at a
+  // record and 40% down respectively.
+  function drawdownSeries(dates, closes) {
+    let peak = -Infinity;
+    const out = [];
+    for (let i = 0; i < closes.length; i++) {
+      if (closes[i] > peak) peak = closes[i];
+      out.push(peak > 0 ? ((closes[i] - peak) / peak) * 100 : 0);
+    }
+    return { dates: dates, values: out };
   }
 
   // ── Marks ─────────────────────────────────────────────────────────────
@@ -170,6 +218,8 @@
       hint: 'Hele listen med kurser, filtre og sortering for begge markeder.' },
     { key: 'inspiration', href: 'inspiration.html',   label: 'Aktieinspiration',
       hint: 'Temalister beregnet ud fra kursdataene — vindere, mest handlede og 52-ugers yderpunkter.' },
+    { key: 'sammenlign',  href: 'sammenlign.html',    label: 'Sammenlign',
+      hint: 'Stil op til seks selskaber op mod hinanden: nøgletal, udvikling og kurverne på samme akse.' },
     { key: 'beregner',    href: 'beregner.html',      label: 'Beregner',
       hint: 'Fremskriv en opsparing: startindskud, månedligt beløb, antal år og forventet afkast.' },
   ];
@@ -259,7 +309,8 @@
     initHints, renderNav,
     fmtPrice, fmtPct, fmtDelta, fmtInt, fmtBig, fmtDate, fmtAge, dirClass, esc,
     priceIn, currencyLabel, isConverted,
-    decorate, loadList, loadHistory,
+    decorate, loadList, loadHistory, loadKeyFigures, loadBenchmarks, loadFundamentals,
+    peOf, moveBetween, nearestIndex, drawdownSeries,
     sparkline, rangeBar, slug, stockUrl,
   };
 })(window);

@@ -1,0 +1,408 @@
+<!-- Title: Sammenlign selskaber -->
+<!-- filepath: sammenlign.html -->
+<!DOCTYPE html>
+<html lang="da" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sammenlign selskaber</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/kursliste.css">
+<script>
+tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] } } } }
+</script>
+<style>
+  /* Series colours, four hues that hold apart from each other and from the red
+     accent, defined for both themes. */
+  :root { --s1: #b71a21; --s2: #1f6feb; --s3: #0f766e; --s4: #7c3aed; --s5: #a16207; --s6: #be185d; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --s1: #e8646a; --s2: #6ea8fe; --s3: #2dd4bf; --s4: #c4b5fd; --s5: #fbbf24; --s6: #f472b6; }
+  }
+  :root[data-theme="dark"] { --s1: #e8646a; --s2: #6ea8fe; --s3: #2dd4bf; --s4: #c4b5fd; --s5: #fbbf24; --s6: #f472b6; }
+
+  .swatch { display: inline-block; width: 10px; height: 10px; border-radius: 3px; vertical-align: baseline; }
+
+  .pick {
+    display: inline-flex; align-items: center; gap: 7px;
+    border: 1px solid var(--hairline); border-radius: 999px;
+    padding: 5px 12px 5px 10px; font-size: 13px; font-weight: 600;
+    background: var(--surface-1); color: var(--text-primary);
+  }
+  .pick button {
+    border: 0; background: none; cursor: pointer; color: var(--text-muted);
+    font-size: 15px; line-height: 1; padding: 0 0 0 2px;
+  }
+  .pick button:hover { color: var(--delta-down); }
+
+  #results { position: absolute; z-index: 30; top: calc(100% + 4px); left: 0; right: 0;
+    max-height: 320px; overflow-y: auto; background: var(--surface-1);
+    border: 1px solid var(--hairline); border-radius: 12px;
+    box-shadow: 0 12px 32px rgba(0,0,0,.16); padding: 4px; }
+  #results[hidden] { display: none; }
+  .hit { display: block; width: 100%; text-align: left; border: 0; background: none;
+    padding: 7px 10px; border-radius: 8px; cursor: pointer; color: var(--text-primary); font-size: 13px; }
+  .hit:hover, .hit[aria-selected="true"] { background: var(--page-plane); }
+  .hit[disabled] { opacity: .4; cursor: default; }
+
+  .search-wrap { position: relative; max-width: 26rem; }
+  .field {
+    border: 1px solid var(--hairline); border-radius: 10px; padding: 8px 11px;
+    background: transparent; color: var(--text-primary); font-size: 14px; width: 100%;
+  }
+  .field:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+
+  th.sticky-col, td.sticky-col {
+    position: sticky; left: 0; background: var(--surface-1); z-index: 2;
+  }
+  .metric-label { border-bottom: 1px dotted var(--text-muted); cursor: help; }
+</style>
+</head>
+
+<body class="font-sans antialiased">
+<header id="sitenav"></header>
+
+<div class="max-w-[1300px] mx-auto px-4 py-8">
+
+  <div class="mb-5">
+    <h1 class="text-2xl md:text-3xl font-extrabold tracking-tight" style="text-wrap:balance">Sammenlign selskaber</h1>
+    <p class="text-sm mt-1 muted" style="max-width:70ch">
+      Vælg op til seks selskaber og se dem side om side: nøgletal, udvikling og kurven for dem alle
+      på samme akse. Valget står i adressen, så en sammenligning kan gemmes eller sendes videre.
+    </p>
+  </div>
+
+  <div class="card rounded-2xl p-5 mb-5">
+    <div class="search-wrap mb-3">
+      <input id="q" type="search" class="field" placeholder="Søg navn eller symbol og tryk på et selskab"
+             aria-label="Søg efter selskab" autocomplete="off" role="combobox" aria-expanded="false"
+             aria-controls="results">
+      <div id="results" hidden role="listbox" aria-label="Søgeresultater"></div>
+    </div>
+    <div id="picked" class="flex flex-wrap gap-2" style="display:flex;flex-wrap:wrap;gap:8px"></div>
+    <p id="pickNote" class="text-xs faint mt-3"></p>
+  </div>
+
+  <div id="content"></div>
+  <p id="status" class="text-xs mt-6 muted" role="status" aria-live="polite"></p>
+</div>
+
+<script src="assets/kursliste.js"></script>
+<script>
+(() => {
+  'use strict';
+  const K = window.KL;
+  const $ = (s) => document.querySelector(s);
+  const $$ = (s) => Array.from(document.querySelectorAll(s));
+
+  K.renderNav('sammenlign');
+  K.initHints();
+
+  const MAX = 6;
+  const COLOURS = ['var(--s1)', 'var(--s2)', 'var(--s3)', 'var(--s4)', 'var(--s5)', 'var(--s6)'];
+
+  let ALL = [], KEYS = null;
+  const chosen = [];                       // symbols, in the order they were added
+  const histories = new Map();             // symbol → daily series, fetched once
+
+  const keyOf = (s) => (KEYS && KEYS.stocks ? KEYS.stocks[s] || null : null);
+  const rowOf = (s) => ALL.find((r) => r.symbol === s) || null;
+  const mult = (v) => (v == null ? null : v.toFixed(1).replace('.', ',') + 'x');
+  const pct1 = (v) => (v == null ? null : (v > 0 ? '+' : '') + (v * 100).toFixed(1).replace('.', ',') + '%');
+
+  // ── URL ────────────────────────────────────────────────────────────────
+  function writeUrl() {
+    const q = chosen.length ? '?symbols=' + encodeURIComponent(chosen.join(',')) : '';
+    window.history.replaceState(null, '', location.pathname + q);
+  }
+
+  // ── Picker ─────────────────────────────────────────────────────────────
+  function renderPicked() {
+    $('#picked').innerHTML = chosen.map((s, i) => {
+      const r = rowOf(s);
+      return '<span class="pick"><span class="swatch" style="background:' + COLOURS[i] + '"></span>'
+        + K.esc(r ? r.name : s)
+        + '<button type="button" data-drop="' + K.esc(s) + '" aria-label="Fjern ' + K.esc(r ? r.name : s) + '">×</button></span>';
+    }).join('');
+    $$('#picked [data-drop]').forEach((b) => b.addEventListener('click', () => {
+      const i = chosen.indexOf(b.dataset.drop);
+      if (i > -1) chosen.splice(i, 1);
+      refresh();
+    }));
+    $('#pickNote').textContent = chosen.length
+      ? chosen.length + ' af ' + MAX + ' valgt' + (chosen.length >= MAX ? ' — fjern et for at tilføje et andet.' : '.')
+      : 'Ingen valgt endnu. Søg efter et selskab ovenfor.';
+  }
+
+  function search(term) {
+    const t = term.trim().toLowerCase();
+    if (!t) return [];
+    return ALL.filter((r) => r.name.toLowerCase().includes(t) || r.symbol.toLowerCase().includes(t))
+      .slice(0, 25);
+  }
+
+  function renderResults(term) {
+    const hits = search(term);
+    const box = $('#results');
+    if (!hits.length) { box.hidden = true; $('#q').setAttribute('aria-expanded', 'false'); return; }
+    box.innerHTML = hits.map((r) => {
+      const on = chosen.includes(r.symbol);
+      const full = chosen.length >= MAX && !on;
+      return '<button type="button" class="hit" role="option" data-add="' + K.esc(r.symbol) + '"'
+        + (on || full ? ' disabled' : '') + '>'
+        + '<strong>' + K.esc(r.name) + '</strong> <span class="faint">' + K.esc(r.symbol) + '</span>'
+        + (on ? ' <span class="faint">· valgt</span>' : full ? ' <span class="faint">· maks. nået</span>' : '')
+        + '</button>';
+    }).join('');
+    box.hidden = false;
+    $('#q').setAttribute('aria-expanded', 'true');
+    $$('#results [data-add]').forEach((b) => b.addEventListener('click', () => {
+      if (b.disabled) return;
+      if (!chosen.includes(b.dataset.add) && chosen.length < MAX) chosen.push(b.dataset.add);
+      $('#q').value = '';
+      box.hidden = true;
+      refresh();
+    }));
+  }
+
+  // ── Comparison table ───────────────────────────────────────────────────
+  // Every row is one measure across all the chosen companies, so a reader
+  // compares down a column and across a row without converting anything.
+  function metrics() {
+    return [
+      { label: 'Kurs', hint: 'Den senest registrerede kurs, i selskabets egen valuta.',
+        get: (r) => (r.price == null ? null : K.fmtPrice(r.price) + ' <span class="text-xs faint">' + K.esc(r.currency) + '</span>') },
+      { label: 'Markedsværdi', hint: 'Kursen gange antallet af aktier.',
+        get: (r) => (r.market_cap == null ? null : K.fmtBig(r.market_cap) + ' <span class="text-xs faint">' + K.esc(r.currency) + '</span>'),
+        rank: (r) => r.market_cap_dkk, high: true },
+      { label: 'P/E', hint: 'Kursen delt med indtjeningen pr. aktie de seneste fire kvartaler. Lavere er billigere målt på nuværende indtjening.',
+        get: (r) => mult(K.peOf(r.price, (keyOf(r.symbol) || {}).eps_ttm)),
+        rank: (r) => K.peOf(r.price, (keyOf(r.symbol) || {}).eps_ttm), high: false },
+      { label: 'Forward P/E', hint: 'Samme regnestykke med den indtjening analytikerne venter det kommende år.',
+        get: (r) => mult(K.peOf(r.price, (keyOf(r.symbol) || {}).eps_fwd)),
+        rank: (r) => K.peOf(r.price, (keyOf(r.symbol) || {}).eps_fwd), high: false },
+      { label: 'P/B', hint: 'Kursen i forhold til den bogførte egenkapital pr. aktie.',
+        get: (r) => mult((keyOf(r.symbol) || {}).pb), rank: (r) => (keyOf(r.symbol) || {}).pb, high: false },
+      { label: 'Omsætningsvækst', hint: 'Væksten i omsætning mod samme kvartal året før.',
+        get: (r) => pct1((keyOf(r.symbol) || {}).revenue_growth),
+        rank: (r) => (keyOf(r.symbol) || {}).revenue_growth, high: true },
+      { label: 'Overskudsgrad', hint: 'Overskud efter skat som andel af omsætningen.',
+        get: (r) => pct1((keyOf(r.symbol) || {}).profit_margin),
+        rank: (r) => (keyOf(r.symbol) || {}).profit_margin, high: true },
+      { label: 'FCF-margin', hint: 'Frit cash flow som andel af omsætningen.',
+        get: (r) => pct1((keyOf(r.symbol) || {}).fcf_margin),
+        rank: (r) => (keyOf(r.symbol) || {}).fcf_margin, high: true },
+      { label: 'Udbytte', hint: 'Det seneste års udbytte i forhold til kursen.',
+        get: (r) => { const d = (keyOf(r.symbol) || {}).div_yield; return d == null ? null : d.toFixed(2).replace('.', ',') + '%'; },
+        rank: (r) => (keyOf(r.symbol) || {}).div_yield, high: true },
+      { label: 'I dag', hint: 'Kursændring siden forrige lukkekurs.', pct: 'percent_change' },
+      { label: '30 dage', hint: 'Kursændring over de seneste 30 handelsdage.', pct: 'change30d' },
+      { label: '1 år', hint: 'Kursændring over de seneste 252 handelsdage.', pct: 'change_1y' },
+      { label: 'Fra toppen', hint: 'Hvor langt under den højeste kurs nogensinde aktien ligger.', pct: 'drawdown_pct' },
+      { label: 'Volatilitet', hint: 'Hvor meget kursen typisk svinger på et år. Lavere er roligere.',
+        get: (r) => (r.stats && r.stats.volatility != null ? r.stats.volatility + '%' : null),
+        rank: (r) => (r.stats || {}).volatility, high: false },
+      { label: 'Institutionelt ejerskab', hint: 'Andelen ejet af fonde, pensionskasser og andre professionelle.',
+        get: (r) => pct1((keyOf(r.symbol) || {}).inst_pct), rank: (r) => (keyOf(r.symbol) || {}).inst_pct, high: true },
+      { label: 'Næste regnskab', hint: 'Datoen selskabet ventes at aflægge regnskab.',
+        get: (r) => { const d = (keyOf(r.symbol) || {}).next_earnings; return d ? K.fmtDate(d) : null; } },
+    ];
+  }
+
+  function tableBlock(rows) {
+    const ms = metrics();
+    const head = '<tr class="text-xs faint text-left"><th class="sticky-col py-2 pr-3 font-semibold">Nøgletal</th>'
+      + rows.map((r, i) => '<th class="py-2 px-3 font-semibold text-right" style="min-width:8.5rem">'
+          + '<span class="swatch" style="background:' + COLOURS[i] + '"></span> '
+          + '<a class="link-accent" href="' + K.stockUrl(r.symbol) + '">' + K.esc(r.name) + '</a>'
+          + '<div class="faint" style="font-weight:500">' + K.esc(r.symbol) + '</div></th>').join('')
+      + '</tr>';
+
+    const body = ms.map((m) => {
+      // The best value in a row is marked, but only where "best" is defined by
+      // the measure itself. A price or a date has no better and worse.
+      let bestIdx = -1;
+      if (m.rank || m.pct) {
+        const vals = rows.map((r) => (m.pct ? r[m.pct] : m.rank(r)));
+        const valid = vals.map((v, i) => ({ v, i })).filter((x) => x.v != null && Number.isFinite(x.v));
+        if (valid.length > 1) {
+          const high = m.pct ? true : m.high;
+          bestIdx = valid.reduce((a, b) => ((high ? b.v > a.v : b.v < a.v) ? b : a)).i;
+        }
+      }
+      return '<tr class="border-t divider">'
+        + '<td class="sticky-col py-2 pr-3 text-sm"><span class="metric-label hint" tabindex="0" '
+          + 'data-hint-title="' + K.esc(m.label) + '" data-hint="' + K.esc(m.hint) + '">' + K.esc(m.label) + '</span></td>'
+        + rows.map((r, i) => {
+            const raw = m.pct ? r[m.pct] : null;
+            const html = m.pct ? K.fmtPct(raw) : (m.get(r) || '–');
+            const cls = m.pct ? K.dirClass(raw) : '';
+            return '<td class="py-2 px-3 num text-right ' + cls + (i === bestIdx ? ' font-extrabold' : '') + '">'
+              + html + (i === bestIdx ? ' <span class="text-xs faint" title="Bedste i sammenligningen">★</span>' : '')
+            + '</td>';
+          }).join('')
+      + '</tr>';
+    }).join('');
+
+    return '<div class="card rounded-2xl p-5 mb-5">'
+      + '<h2 class="text-sm font-bold mb-1">Nøgletal side om side</h2>'
+      + '<p class="text-xs muted mb-3" style="max-width:74ch">★ markerer den bedste værdi i rækken, hvor bedre '
+        + 'overhovedet giver mening — lav P/E, høj vækst. Markedsværdi og kurs sammenlignes ikke på tværs af '
+        + 'valutaer, og en dato har hverken bedre eller værre.</p>'
+      + '<div class="overflow-x-auto" style="overflow-x:auto"><table class="w-full text-sm border-collapse">'
+      + '<thead>' + head + '</thead><tbody>' + body + '</tbody></table></div></div>';
+  }
+
+  // ── Chart ──────────────────────────────────────────────────────────────
+  // Rebased to 0% at the start of the window: six companies at six price levels
+  // share no price axis, but they do share "what a krone would have done".
+  const G = { W: 900, H: 320, L: 58, R: 92, T: 14, B: 28 };
+  G.iw = G.W - G.L - G.R; G.ih = G.H - G.T - G.B;
+
+  function chartBlock(rows, days) {
+    const series = rows.map((r, i) => {
+      const h = histories.get(r.symbol);
+      if (!h || h.closes.length < 2) return null;
+      const n = Math.min(h.closes.length, days);
+      const closes = h.closes.slice(-n), dates = h.dates.slice(-n);
+      const base = closes[0];
+      if (!base) return null;
+      return { label: r.symbol, name: r.name, colour: COLOURS[i],
+        dates, values: closes.map((c) => ((c - base) / base) * 100) };
+    }).filter(Boolean);
+    if (series.length < 1) return '';
+
+    const len = Math.max.apply(null, series.map((s) => s.values.length));
+    const spine = series.reduce((a, s) => (s.values.length > a.values.length ? s : a));
+    const all = series.flatMap((s) => s.values);
+    const min = Math.min.apply(null, all), max = Math.max.apply(null, all);
+    const pad = (max - min) * 0.1 || 1;
+    const lo = min - pad, hi = max + pad;
+    const x = (i, n) => G.L + (G.iw * i) / Math.max(1, n - 1);
+    const y = (v) => G.T + G.ih * (1 - (v - lo) / (hi - lo));
+
+    const grid = Array.from({ length: 4 }, (_, k) => lo + ((hi - lo) * k) / 3).map((v) =>
+      '<line x1="' + G.L + '" y1="' + y(v).toFixed(1) + '" x2="' + (G.W - G.R) + '" y2="' + y(v).toFixed(1)
+      + '" stroke="var(--gridline)" stroke-width="1"/>'
+      + '<text x="' + (G.L - 8) + '" y="' + (y(v) + 4).toFixed(1) + '" text-anchor="end" font-size="11" '
+      + 'fill="var(--text-muted)">' + K.fmtPct(v) + '</text>').join('');
+
+    const zero = (lo < 0 && hi > 0)
+      ? '<line x1="' + G.L + '" y1="' + y(0).toFixed(1) + '" x2="' + (G.W - G.R) + '" y2="' + y(0).toFixed(1)
+        + '" stroke="var(--text-muted)" stroke-width="1" stroke-dasharray="4 4" opacity="0.7"/>' : '';
+
+    const idx = [0, Math.floor((spine.dates.length - 1) / 2), spine.dates.length - 1];
+    const xLabels = idx.map((i, n) => '<text x="' + x(i, spine.dates.length).toFixed(1) + '" y="' + (G.H - 8)
+      + '" text-anchor="' + (n === 0 ? 'start' : n === 2 ? 'end' : 'middle') + '" font-size="11" '
+      + 'fill="var(--text-muted)">'
+      + new Date(spine.dates[i]).toLocaleDateString('da-DK', { day: 'numeric', month: 'short', year: '2-digit' })
+      + '</text>').join('');
+
+    const paths = series.map((s) => '<path d="'
+      + s.values.map((v, i) => (i ? 'L' : 'M') + x(i, s.values.length).toFixed(1) + ' ' + y(v).toFixed(1)).join(' ')
+      + '" fill="none" stroke="' + s.colour + '" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>').join('');
+
+    // Each line is named where it ends, so identity never rests on colour.
+    // Labels are nudged apart when two lines finish at the same level.
+    const ends = series.map((s) => ({ s, yv: y(s.values[s.values.length - 1]) }))
+      .sort((a, b) => a.yv - b.yv)
+      .map((e, i, arr) => {
+        const min0 = i ? arr[i - 1].yv + 13 : -Infinity;
+        e.yv = Math.max(e.yv, min0);
+        return '<text x="' + (G.W - G.R + 6) + '" y="' + (e.yv + 4).toFixed(1) + '" font-size="11" '
+          + 'font-weight="700" fill="' + e.s.colour + '">' + K.esc(e.s.label) + ' '
+          + K.fmtPct(e.s.values[e.s.values.length - 1]) + '</text>';
+      }).join('');
+
+    const ranges = [[21, '1 md.'], [63, '3 mdr.'], [126, '6 mdr.'], [252, '1 år'], [9999, 'Alt']];
+    return '<div class="card rounded-2xl p-5 mb-5">'
+      + '<div class="flex items-center justify-between gap-3 flex-wrap mb-2" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px">'
+        + '<h2 class="text-sm font-bold">Udvikling side om side</h2>'
+        + '<div style="display:flex;gap:6px;flex-wrap:wrap">'
+          + ranges.map(([n, label]) => '<button type="button" class="chip rounded-full px-3 py-1 text-xs font-semibold" '
+              + 'data-days="' + n + '" aria-pressed="' + (n === days) + '">' + label + '</button>').join('')
+        + '</div>'
+      + '</div>'
+      + '<p class="text-xs muted mb-3" style="max-width:74ch">Alle kurver starter i 0% ved periodens begyndelse. '
+        + 'Så kan selskaber med vidt forskellige kurser læses på samme akse: linjen viser hvad en krone investeret '
+        + 'den dag ville have gjort siden.</p>'
+      + '<svg viewBox="0 0 ' + G.W + ' ' + G.H + '" width="100%" height="' + G.H + '" role="img" '
+        + 'aria-label="Procentvis udvikling for ' + K.esc(series.map((s) => s.name).join(', ')) + '">'
+      + grid + zero + xLabels + paths + ends + '</svg></div>';
+  }
+
+  // ── Render ─────────────────────────────────────────────────────────────
+  let days = 252;
+
+  async function refresh() {
+    renderPicked();
+    writeUrl();
+    if (!chosen.length) {
+      $('#content').innerHTML = '<div class="card rounded-2xl p-6 text-sm muted">'
+        + 'Vælg mindst ét selskab for at se sammenligningen. Du kan også komme hertil fra “Lignende selskaber” '
+        + 'på en selskabsside, som udfylder feltet for dig.</div>';
+      return;
+    }
+
+    // Only the series we do not already hold.
+    await Promise.all(chosen.filter((s) => !histories.has(s)).map(async (s) => {
+      try { histories.set(s, await K.loadHistory(s)); }
+      catch { histories.set(s, { dates: [], closes: [] }); }
+    }));
+
+    const rows = chosen.map(rowOf).filter(Boolean);
+    $('#content').innerHTML = chartBlock(rows, days) + tableBlock(rows);
+
+    $$('[data-days]').forEach((b) => b.addEventListener('click', () => {
+      days = Number(b.dataset.days);
+      refresh();
+    }));
+  }
+
+  // ── Load ───────────────────────────────────────────────────────────────
+  (async () => {
+    $('#status').textContent = 'Indlæser…';
+    try {
+      const [list, keys] = await Promise.all([K.loadList(), K.loadKeyFigures().catch(() => null)]);
+      ALL = list.rows;
+      KEYS = keys;
+
+      const wanted = (new URLSearchParams(location.search).get('symbols') || '')
+        .split(',').map((s) => s.trim().toUpperCase()).filter(Boolean);
+      for (const s of wanted) {
+        if (chosen.length >= MAX) break;
+        const hit = ALL.find((r) => r.symbol.toUpperCase() === s);
+        if (hit && !chosen.includes(hit.symbol)) chosen.push(hit.symbol);
+      }
+
+      let t;
+      $('#q').addEventListener('input', (e) => {
+        clearTimeout(t);
+        const v = e.target.value;
+        t = setTimeout(() => renderResults(v), 120);
+      });
+      document.addEventListener('click', (e) => {
+        if (!document.contains(e.target)) return;
+        if (!e.target.closest('.search-wrap')) {
+          $('#results').hidden = true;
+          $('#q').setAttribute('aria-expanded', 'false');
+        }
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') { $('#results').hidden = true; $('#q').setAttribute('aria-expanded', 'false'); }
+      });
+
+      await refresh();
+      $('#status').textContent = 'Kilde: Yahoo Finance · hentet ' + K.fmtAge(list.updatedAt)
+        + ' · nøgletal opdateres én gang i døgnet';
+    } catch (err) {
+      $('#content').innerHTML = '<div class="card rounded-2xl p-6 text-sm" style="color:var(--delta-down)">'
+        + 'Kunne ikke indlæse data: ' + K.esc(err.message) + '</div>';
+      $('#status').textContent = '';
+    }
+  })();
+})();
+</script>
+</body>
+</html>

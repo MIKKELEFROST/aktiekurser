@@ -242,6 +242,14 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
   const INDEX_LABEL = { SP500: 'S&P 500', NDX: 'Nasdaq-100', 'DK-LARGE': 'København' };
   const pct = (v) => '<span class="num font-semibold ' + K.dirClass(v) + '">' + K.fmtPct(v) + '</span>';
 
+  // Key figures arrive in their own file; a row with none simply shows dashes.
+  let KEY = null;
+  const keyFig = (r) => (KEY && KEY.stocks ? KEY.stocks[r.symbol] || {} : {});
+  const xMult = (v) => (v == null ? '–' : '<span class="num">' + v.toFixed(1).replace('.', ',') + 'x</span>');
+  const share = (v, signed) => (v == null ? '–'
+    : '<span class="num' + (signed ? ' ' + K.dirClass(v) : '') + '">'
+      + (signed && v > 0 ? '+' : '') + (v * 100).toFixed(1).replace('.', ',') + '%</span>');
+
   const COLUMNS = [
     // ── Selskab ──────────────────────────────────────────────────────────
     { key: 'rank', label: '#', group: 'Selskab', right: true, sortKey: rankOf, asc: true,
@@ -408,6 +416,47 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     { key: 'rank_ndx', label: 'Plads i Nasdaq-100', group: 'Nøgletal', right: true, sortKey: 'rank_ndx', asc: true,
       hint: 'Placering blandt selskaberne i Nasdaq-100, målt på markedsværdi.',
       cell: (r) => '<span class="num faint">' + (r.rank_ndx ? '#' + r.rank_ndx : '–') + '</span>' },
+
+    // ── Regnskab ─────────────────────────────────────────────────────────
+    // From nogletal.json. P/E is divided out of the price this table shows, so
+    // the ratio can never disagree with the figure in the column beside it.
+    { key: 'pe', label: 'P/E', group: 'Regnskab', right: true, sortKey: (r) => K.peOf(r.price, keyFig(r).eps_ttm),
+      hint: 'Kursen delt med indtjeningen pr. aktie de seneste fire kvartaler. Hvor mange års indtjening du betaler for én aktie. Selskaber med underskud står tomme.',
+      cell: (r) => xMult(K.peOf(r.price, keyFig(r).eps_ttm)) },
+
+    { key: 'pe_fwd', label: 'Forward P/E', group: 'Regnskab', right: true, sortKey: (r) => K.peOf(r.price, keyFig(r).eps_fwd),
+      hint: 'Samme regnestykke med den indtjening analytikerne venter det kommende år. Lavere end P/E betyder at indtjeningen ventes at vokse.',
+      cell: (r) => xMult(K.peOf(r.price, keyFig(r).eps_fwd)) },
+
+    { key: 'pb', label: 'P/B', group: 'Regnskab', right: true, sortKey: (r) => keyFig(r).pb,
+      hint: 'Kursen i forhold til den bogførte egenkapital pr. aktie.',
+      cell: (r) => xMult(keyFig(r).pb) },
+
+    { key: 'rev_growth', label: 'Omsætningsvækst', group: 'Regnskab', right: true, sortKey: (r) => keyFig(r).revenue_growth,
+      hint: 'Væksten i omsætning i forhold til samme kvartal året før.',
+      cell: (r) => share(keyFig(r).revenue_growth, true) },
+
+    { key: 'profit_margin', label: 'Overskudsgrad', group: 'Regnskab', right: true, sortKey: (r) => keyFig(r).profit_margin,
+      hint: 'Overskud efter skat som andel af omsætningen.',
+      cell: (r) => share(keyFig(r).profit_margin, true) },
+
+    { key: 'fcf_margin', label: 'FCF-margin', group: 'Regnskab', right: true, sortKey: (r) => keyFig(r).fcf_margin,
+      hint: 'Frit cash flow som andel af omsætningen — hvor stor en del af hver krone i salg der bliver til kontanter selskabet frit kan bruge.',
+      cell: (r) => share(keyFig(r).fcf_margin, true) },
+
+    { key: 'div_yield', label: 'Udbytte', group: 'Regnskab', right: true, sortKey: (r) => keyFig(r).div_yield,
+      hint: 'Det seneste års udbytte i forhold til kursen. Selskaber uden udbytte står tomme.',
+      cell: (r) => { const d = keyFig(r).div_yield;
+        return d == null ? '–' : '<span class="num">' + d.toFixed(2).replace('.', ',') + '%</span>'; } },
+
+    { key: 'inst_pct', label: 'Institutionelt ejerskab', group: 'Regnskab', right: true, sortKey: (r) => keyFig(r).inst_pct,
+      hint: 'Andelen ejet af fonde, pensionskasser og andre professionelle investorer.',
+      cell: (r) => share(keyFig(r).inst_pct, false) },
+
+    { key: 'next_earnings', label: 'Næste regnskab', group: 'Regnskab', sortKey: (r) => keyFig(r).next_earnings || '',
+      hint: 'Datoen selskabet ventes at aflægge regnskab.',
+      cell: (r) => { const d = keyFig(r).next_earnings;
+        return d ? '<span class="num muted text-xs">' + K.fmtDate(d) + '</span>' : '–'; } },
   ];
 
   const BY_KEY = new Map(COLUMNS.map((c) => [c.key, c]));
@@ -596,7 +645,13 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     $('#refreshIcon').style.opacity = '.4';
 
     try {
-      const list = await K.loadList();
+      // Key figures ride along in a second file. They change once a day where
+      // prices change all day, so they are fetched once and kept.
+      const [list, keys] = await Promise.all([
+        K.loadList(),
+        KEY ? Promise.resolve(KEY) : K.loadKeyFigures().catch(() => null),
+      ]);
+      KEY = keys;
       state.all = list.rows;
       state.updatedAt = list.updatedAt;
       state.markets = list.markets;
