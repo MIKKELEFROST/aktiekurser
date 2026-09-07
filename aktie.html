@@ -51,6 +51,8 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
   const $ = (s) => document.querySelector(s);
   K.renderNav('kurser');
 
+  let TOTAL = 0;
+
   const params = new URLSearchParams(location.search);
   const wanted = (params.get('symbol') || '').toUpperCase();
 
@@ -128,6 +130,10 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       + grid + xLabels
       + '<path d="' + d + '" fill="none" stroke="' + stroke + '" stroke-width="2" '
       + 'stroke-linecap="round" stroke-linejoin="round"/>'
+      + '<rect id="selband" x="0" y="' + G.T + '" width="0" height="' + G.ih + '" '
+        + 'fill="var(--accent)" opacity="0.10" pointer-events="none"/>'
+      + '<line id="selstart" y1="' + G.T + '" y2="' + (G.T + G.ih) + '" stroke="var(--accent)" '
+        + 'stroke-width="1.5" opacity="0" pointer-events="none"/>'
       + '<g class="crosshair" opacity="0">'
       + '<line id="chx" y1="' + G.T + '" y2="' + (G.T + G.ih) + '" stroke="var(--text-muted)" stroke-width="1" stroke-dasharray="3 3"/>'
       + '<circle id="chd" r="4.5" fill="' + stroke + '" stroke="var(--surface-1)" stroke-width="2"/></g>'
@@ -135,62 +141,131 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       + '</svg><div id="tooltip"></div></div>';
   }
 
+  // Selection: click once to set the start, once more to set the end. A drag
+  // does the same thing in one gesture. Either way the summary underneath
+  // reports the move across exactly the days picked.
+  const sel = { a: null, b: null, dragging: false };
+
   function wireChart() {
     const svg = $('#chart'); if (!svg) return;
     const hit = $('#hit'), tip = $('#tooltip');
     const wrap = svg.parentElement;
     const cross = svg.querySelector('.crosshair'), line = $('#chx'), dot = $('#chd');
+    const band = $('#selband'), startLine = $('#selstart');
 
-    // The viewBox is 900x280 but the element is as wide as its container, and
-    // preserveAspectRatio defaults to "meet" — so the drawing is scaled
-    // uniformly and centred, leaving empty bands at the sides (63px each at a
-    // 1440px viewport). Mapping the element's own width onto viewBox units
-    // ignores those bands and drifts by up to 50px at the edges while being
-    // exact in the middle. getScreenCTM() carries the real scale and offset,
-    // so both directions go through it and the maths cannot drift again.
-    const toViewBox = (clientX, clientY) => {
+    // The viewBox is letterboxed inside the element whenever their aspect
+    // ratios differ, so mapping the element's own width onto viewBox units
+    // drifts at the edges. getScreenCTM carries the real scale and offset.
+    const toViewBox = (cx, cy) => {
       const m = svg.getScreenCTM();
-      return m ? new DOMPoint(clientX, clientY).matrixTransform(m.inverse()) : null;
+      return m ? new DOMPoint(cx, cy).matrixTransform(m.inverse()) : null;
     };
     const toClient = (x, y) => {
       const m = svg.getScreenCTM();
       return m ? new DOMPoint(x, y).matrixTransform(m) : null;
     };
-
-    function move(evt) {
-      if (!chart.closes.length) return;
-      const vb = toViewBox(evt.clientX, evt.clientY);
-      if (!vb) return;
-
+    const xOf = (i) => G.L + (G.iw * i) / (chart.closes.length - 1);
+    const indexAt = (clientX) => {
+      const vb = toViewBox(clientX, 0);
+      if (!vb) return null;
       const t = Math.min(1, Math.max(0, (vb.x - G.L) / G.iw));
-      const i = Math.round(t * (chart.closes.length - 1));
+      return Math.round(t * (chart.closes.length - 1));
+    };
 
-      const cx = G.L + (G.iw * i) / (chart.closes.length - 1);
+    function paintSelection() {
+      if (sel.a == null) { band.setAttribute('width', 0); startLine.setAttribute('opacity', 0); return; }
+      const xa = xOf(sel.a);
+      startLine.setAttribute('x1', xa); startLine.setAttribute('x2', xa);
+      startLine.setAttribute('opacity', 1);
+      if (sel.b == null) { band.setAttribute('width', 0); return; }
+      const xb = xOf(sel.b);
+      band.setAttribute('x', Math.min(xa, xb));
+      band.setAttribute('width', Math.abs(xb - xa));
+    }
+
+    function summarise() {
+      if (sel.a == null || sel.b == null) return;
+      const lo = Math.min(sel.a, sel.b), hi = Math.max(sel.a, sel.b);
+      if (hi === lo) return;
+      const from = chart.closes[lo], to = chart.closes[hi];
+      const pct = from ? ((to - from) / from) * 100 : null;
+      $('#selSummary').innerHTML = '<span class="font-bold" style="color:var(--text-primary)">Valgt periode:</span> '
+        + K.fmtDate(chart.dates[lo]) + ' → ' + K.fmtDate(chart.dates[hi])
+        + ' · ' + (hi - lo + 1) + ' handelsdage · '
+        + K.fmtPrice(from) + ' → ' + K.fmtPrice(to) + ' ' + K.esc(chart.currency)
+        + ' · <span class="num font-bold ' + K.dirClass(pct) + '">' + K.fmtPct(pct) + '</span>'
+        + ' <button id="selClear" class="range-btn" style="padding:2px 9px;margin-left:6px">Ryd</button>';
+      $('#selSummary').hidden = false;
+      $('#selClear').addEventListener('click', () => {
+        sel.a = sel.b = null; paintSelection(); $('#selSummary').hidden = true;
+      });
+    }
+
+    hit.addEventListener('mousemove', (evt) => {
+      if (!chart.closes.length) return;
+      const i = indexAt(evt.clientX);
+      if (i == null) return;
+
+      const cx = xOf(i);
       const cy = G.T + G.ih * (1 - (chart.closes[i] - chart.lo) / (chart.hi - chart.lo));
-
       cross.setAttribute('opacity', '1');
       line.setAttribute('x1', cx); line.setAttribute('x2', cx);
       dot.setAttribute('cx', cx); dot.setAttribute('cy', cy);
 
       tip.style.opacity = '1';
-      tip.innerHTML = '<strong class="num">' + K.fmtPrice(chart.closes[i]) + ' ' + K.esc(chart.currency) + '</strong>'
+      let body = '<strong class="num">' + K.fmtPrice(chart.closes[i]) + ' ' + K.esc(chart.currency) + '</strong>'
         + '<br><span class="faint">' + K.fmtDate(chart.dates[i]) + '</span>';
+      // While a start is set, the tooltip previews the move to the cursor.
+      if (sel.a != null && sel.b == null && i !== sel.a) {
+        const from = chart.closes[sel.a];
+        const pct = from ? ((chart.closes[i] - from) / from) * 100 : null;
+        body += '<br><span class="num font-bold ' + K.dirClass(pct) + '">' + K.fmtPct(pct) + '</span>'
+          + '<span class="faint"> fra ' + K.fmtDate(chart.dates[sel.a]) + '</span>';
+      }
+      tip.innerHTML = body;
 
-      // The tooltip is absolutely positioned inside .chart-wrap, so the mark's
-      // screen position is converted back and made relative to that box.
+      if (sel.dragging) { sel.b = i; paintSelection(); }
+
       const pt = toClient(cx, cy);
-      const wrapBox = wrap.getBoundingClientRect();
       if (!pt) return;
-      const localX = pt.x - wrapBox.left;
-      const localY = pt.y - wrapBox.top;
+      const box = wrap.getBoundingClientRect();
+      const lx = pt.x - box.left, ly = pt.y - box.top;
+      const flip = lx + tip.offsetWidth + 16 > box.width;
+      tip.style.left = Math.max(0, flip ? lx - tip.offsetWidth - 12 : lx + 12) + 'px';
+      tip.style.top = Math.max(0, ly - 10) + 'px';
+    });
 
-      const flip = localX + tip.offsetWidth + 16 > wrapBox.width;
-      tip.style.left = Math.max(0, flip ? localX - tip.offsetWidth - 12 : localX + 12) + 'px';
-      tip.style.top = Math.max(0, localY - 10) + 'px';
-    }
+    hit.addEventListener('mousedown', (evt) => {
+      const i = indexAt(evt.clientX);
+      if (i == null) return;
+      evt.preventDefault();
+      // A fresh start whenever both ends are already set.
+      if (sel.a != null && sel.b != null) { sel.a = i; sel.b = null; }
+      else if (sel.a == null) sel.a = i;
+      sel.dragging = true;
+      paintSelection();
+    });
 
-    hit.addEventListener('mousemove', move);
-    hit.addEventListener('mouseleave', () => { cross.setAttribute('opacity', '0'); tip.style.opacity = '0'; });
+    hit.addEventListener('mouseup', (evt) => {
+      const i = indexAt(evt.clientX);
+      sel.dragging = false;
+      if (i == null) return;
+      // A press and release on the same day is a click: keep waiting for the
+      // second one. Anywhere else closes the selection.
+      if (i === sel.a && sel.b == null) { paintSelection(); return; }
+      sel.b = i;
+      paintSelection();
+      summarise();
+    });
+
+    hit.addEventListener('mouseleave', () => {
+      sel.dragging = false;
+      cross.setAttribute('opacity', '0');
+      tip.style.opacity = '0';
+    });
+
+    paintSelection();
+    if (sel.a != null && sel.b != null) summarise();
   }
 
   // ── Stat rows ──────────────────────────────────────────────────────────
@@ -203,12 +278,96 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       + '<span class="text-sm num font-semibold ' + (cls || '') + '">' + value + '</span></div>';
   }
 
+  // ── Did-you-know facts ─────────────────────────────────────────────────
+  // Every figure here is derived from the price history in the data file, not
+  // fetched from anywhere, so each card says what it is measured over.
+  function facts(r) {
+    const st = r.stats || {};
+    const out = [];
+    const card = (label, value, cls, note) => out.push({ label, value, cls: cls || '', note: note || '' });
+
+    if (r.drawdown_pct != null) {
+      const flat = Math.abs(r.drawdown_pct) < 0.05;
+      card('Fra toppen nogensinde',
+        flat ? 'På toppen' : K.fmtPct(r.drawdown_pct),
+        flat ? 'up' : K.dirClass(r.drawdown_pct),
+        flat ? 'Kursen står i sit højeste niveau nogensinde.'
+             : 'Højeste kurs var ' + K.fmtPrice(r.ath) + ' ' + K.esc(r.currency) + ' den ' + K.fmtDate(r.ath_date) + '.');
+    }
+    if (r.above_atl_pct != null) {
+      card('Over bunden nogensinde', K.fmtPct(r.above_atl_pct), 'up',
+        'Laveste kurs var ' + K.fmtPrice(r.atl) + ' ' + K.esc(r.currency) + ' den ' + K.fmtDate(r.atl_date) + '.');
+    }
+    if (r.first_trade_date) {
+      const years = Math.floor((Date.now() - new Date(r.first_trade_date)) / 31557600000);
+      card('År på børsen', years, '', 'Første registrerede kurs ' + K.fmtDate(r.first_trade_date) + '.');
+    }
+    if (st.best_day) {
+      card('Bedste enkeltdag', K.fmtPct(st.best_day.pct), 'up', 'Den ' + K.fmtDate(st.best_day.date) + ', inden for det seneste år.');
+    }
+    if (st.worst_day) {
+      card('Værste enkeltdag', K.fmtPct(st.worst_day.pct), 'down', 'Den ' + K.fmtDate(st.worst_day.date) + ', inden for det seneste år.');
+    }
+    if (st.up_days != null && st.trading_days) {
+      const pct = Math.round((st.up_days / st.trading_days) * 100);
+      card('Dage i plus', pct + '%', '', st.up_days + ' ud af ' + st.trading_days + ' handelsdage sluttede højere end dagen før.');
+    }
+    if (st.volatility != null) {
+      card('Volatilitet', st.volatility + '%', '',
+        'Hvor meget kursen typisk svinger på et år. Under 20% regnes som roligt, over 40% som uroligt.');
+    }
+    if (st.streak && st.streak.days > 1) {
+      card('Aktuel stime', st.streak.days + ' dage', st.streak.dir > 0 ? 'up' : 'down',
+        'Kursen er gået ' + (st.streak.dir > 0 ? 'op' : 'ned') + ' ' + st.streak.days + ' handelsdage i træk.');
+    }
+    if (st.longest_up || st.longest_down) {
+      card('Længste stime', st.longest_up + ' op / ' + st.longest_down + ' ned', '',
+        'De længste ubrudte serier af op- og nedture det seneste år.');
+    }
+    if (st.ma50 != null && st.ma200 != null && r.price != null) {
+      const over50 = r.price >= st.ma50, over200 = r.price >= st.ma200;
+      card('Mod gennemsnittet',
+        (over50 ? 'Over' : 'Under') + ' 50 · ' + (over200 ? 'over' : 'under') + ' 200',
+        over50 && over200 ? 'up' : (!over50 && !over200) ? 'down' : '',
+        '50-dages gennemsnit ' + K.fmtPrice(st.ma50) + ', 200-dages ' + K.fmtPrice(st.ma200)
+          + '. Mange bruger de to linjer til at aflæse trenden.');
+    }
+    if (st.max_volume) {
+      card('Travleste dag', K.fmtBig(st.max_volume.volume), '',
+        K.fmtBig(st.max_volume.volume) + ' aktier skiftede hænder den ' + K.fmtDate(st.max_volume.date) + '.');
+    }
+    if (r.rank_all) {
+      card('Plads på listen', '#' + r.rank_all, '',
+        'Blandt alle ' + K.fmtInt(TOTAL) + ' selskaber, målt på markedsværdi omregnet til kroner.');
+    }
+    return out;
+  }
+
+  function factsBlock(r) {
+    const list = facts(r);
+    if (!list.length) return '';
+    return '<div class="mt-6">'
+      + '<h2 class="text-lg font-extrabold tracking-tight mb-1">Vidste du at…</h2>'
+      + '<p class="text-xs muted mb-3" style="max-width:70ch">Alle tal herunder er beregnet ud fra kurshistorikken. '
+        + 'Det seneste år dækker de seneste 252 handelsdage; “nogensinde” går tilbage til første registrerede kurs.</p>'
+      + '<div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">'
+      + list.map((f) => '<div class="card rounded-xl p-4">'
+          + '<div class="text-[11px] font-bold uppercase faint" style="letter-spacing:.04em">' + K.esc(f.label) + '</div>'
+          + '<div class="text-2xl font-extrabold num mt-1 ' + f.cls + '">' + f.value + '</div>'
+          + '<p class="text-xs muted mt-1 leading-snug">' + f.note + '</p></div>').join('')
+      + '</div></div>';
+  }
+
   // ── Render ─────────────────────────────────────────────────────────────
   let full = null, row = null, fxRate = null;
 
   function renderChartBlock() {
+    // A new window means new indices; an old selection would point at the
+    // wrong days.
+    sel.a = sel.b = null; sel.dragging = false;
     const s = slice(full);
     $('#chartHost').innerHTML = drawChart(s.dates, s.closes, row.currency);
+    $('#selSummary').hidden = true;
     wireChart();
 
     const move = s.closes.length > 1 ? ((s.closes[s.closes.length - 1] - s.closes[0]) / s.closes[0]) * 100 : null;
@@ -252,6 +411,15 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       + '<div class="text-sm num font-semibold ' + K.dirClass(r.percent_change) + '">'
       + K.fmtDelta(r.change) + ' (' + K.fmtPct(r.percent_change) + ')</div>'
       + (conv ? '<div class="text-xs faint num mt-1">≈ ' + K.fmtPrice(r.price_dkk) + ' DKK</div>' : '')
+      + (r.drawdown_pct != null
+          ? '<div class="text-xs num mt-1 hint" tabindex="0" data-hint-title="Fra toppen nogensinde"'
+            + ' data-hint="Hvor langt kursen ligger under den højeste kurs selskabet har haft, ' + K.fmtPrice(r.ath)
+            + ' ' + K.esc(cur) + ' den ' + K.fmtDate(r.ath_date) + '.">'
+            + (Math.abs(r.drawdown_pct) < 0.05 ? '<span class="up">På all-time high</span>'
+               : '<span class="' + K.dirClass(r.drawdown_pct) + '">' + K.fmtPct(r.drawdown_pct) + '</span>'
+                 + '<span class="faint"> fra toppen</span>')
+            + '</div>'
+          : '')
       + '</div></div>';
 
     const buttons = PRESETS.map((p) =>
@@ -271,8 +439,11 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
           + '<button id="clearRange" class="range-btn">Nulstil</button>'
         + '</div>'
       + '</div>'
-      + '<p id="chartSummary" class="text-xs muted mb-3"></p>'
-      + '<div id="chartHost"></div></div>';
+      + '<p id="chartSummary" class="text-xs muted mb-1"></p>'
+      + '<p class="text-xs faint mb-3">Klik på grafen for at sætte et startpunkt, og klik igen for at '
+        + 'se udviklingen frem til det andet punkt. Du kan også trække.</p>'
+      + '<div id="chartHost"></div>'
+      + '<p id="selSummary" class="text-xs mt-3 muted" hidden></p></div>';
 
     const left = '<div class="card rounded-2xl p-5">'
       + '<h2 class="text-sm font-bold mb-2">Dagens handel</h2>'
@@ -313,6 +484,12 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
           'Placering blandt selskaberne i Nasdaq-100, målt på markedsværdi.') : '')
       + (r.rank_dk ? statRow('Plads i København', '#' + r.rank_dk, '',
           'Placering blandt de danske selskaber på listen, målt på markedsværdi.') : '')
+      + (r.drawdown_pct != null ? statRow('Fra toppen nogensinde', K.fmtPct(r.drawdown_pct), K.dirClass(r.drawdown_pct),
+          'Hvor langt kursen ligger under sin højeste nogensinde, ' + K.fmtPrice(r.ath) + ' ' + K.esc(cur)
+          + ' den ' + K.fmtDate(r.ath_date) + '. Baseret på lukkekurser.') : '')
+      + (r.above_atl_pct != null ? statRow('Over bunden nogensinde', K.fmtPct(r.above_atl_pct), 'up',
+          'Hvor langt kursen ligger over sin laveste nogensinde, ' + K.fmtPrice(r.atl) + ' ' + K.esc(cur)
+          + ' den ' + K.fmtDate(r.atl_date) + '.') : '')
       + (conv
           ? statRow('Kurs omregnet', '≈ ' + K.fmtPrice(r.price_dkk) + ' DKK', '',
               'Kursen ganget med ECB’s referencekurs. Et beregnet tal, ikke en noteret kurs — derfor ≈.')
@@ -333,7 +510,8 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       + ', og udgør ikke investeringsrådgivning. Historiske afkast er ingen garanti for fremtidige afkast.</p>';
 
     $('#content').innerHTML = head + chartCard
-      + '<div class="grid md:grid-cols-2 gap-5">' + left + right + '</div>' + nav + risk;
+      + '<div class="grid md:grid-cols-2 gap-5 items-start">' + left + right + '</div>'
+      + factsBlock(r) + nav + risk;
 
     document.querySelectorAll('[data-range]').forEach((b) =>
       b.addEventListener('click', () => { $('#from').value = ''; $('#to').value = ''; setRange(b.dataset.range); }));
@@ -375,6 +553,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     $('#status').textContent = 'Indlæser…';
     try {
       const list = await K.loadList();
+      TOTAL = list.rows.length;
       const idx = list.rows.findIndex((r) => r.symbol.toUpperCase() === wanted);
       if (idx === -1) { renderMissing(list.rows); $('#status').textContent = ''; return; }
 

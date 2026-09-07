@@ -259,6 +259,87 @@ async function fetchTicker(symbol) {
   throw lastErr;
 }
 
+// Yahoo answers range=max with monthly closes whatever interval is asked for,
+// which is ~20 KB per company and reaches back to the listing. That is enough
+// for an all-time high, accurate to the month; combining it with the daily
+// series below makes the recent two years exact, and a stock's peak is usually
+// recent anyway. Failure is non-fatal — the fields stay null.
+async function fetchLifetime(symbol) {
+  const url = 'https://query1.finance.yahoo.com/v8/finance/chart/'
+    + encodeURIComponent(symbol) + '?interval=1mo&range=max';
+  const res = await fetch(url, {
+    headers: { 'user-agent': 'Mozilla/5.0 (compatible; aktiekurser/1.0)', accept: 'application/json' },
+  });
+  if (!res.ok) throw new Error('HTTP ' + res.status);
+  const json = await res.json();
+  const r = json?.chart?.result?.[0];
+  if (!r) throw new Error('tomt svar');
+
+  const stamps = r.timestamp || [];
+  const closes = r.indicators?.quote?.[0]?.close || [];
+  const out = [];
+  for (let i = 0; i < closes.length; i++) {
+    if (closes[i] == null || stamps[i] == null) continue;
+    out.push({ date: new Date(stamps[i] * 1000).toISOString().slice(0, 10), close: closes[i] });
+  }
+  return out;
+}
+
+// Everything here is derived from the daily series we already hold, so it costs
+// no extra request. Each figure is labelled as computed on the page.
+function computeStats(dates, closes, volumes) {
+  const n = closes.length;
+  const win = Math.min(n - 1, 252);              // one trading year, or all we have
+  const stats = {};
+
+  // Daily returns over the window
+  const rets = [];
+  for (let i = n - win; i < n; i++) {
+    const prev = closes[i - 1];
+    if (prev) rets.push({ r: (closes[i] - prev) / prev, date: dates[i] });
+  }
+
+  if (rets.length) {
+    const best = rets.reduce((a, b) => (b.r > a.r ? b : a));
+    const worst = rets.reduce((a, b) => (b.r < a.r ? b : a));
+    stats.best_day = { pct: round(best.r * 100, 2), date: best.date };
+    stats.worst_day = { pct: round(worst.r * 100, 2), date: worst.date };
+    stats.up_days = rets.filter((x) => x.r > 0).length;
+    stats.trading_days = rets.length;
+
+    // Annualised volatility: the spread of daily moves, scaled by root-252.
+    const mean = rets.reduce((a, x) => a + x.r, 0) / rets.length;
+    const varc = rets.reduce((a, x) => a + (x.r - mean) ** 2, 0) / rets.length;
+    stats.volatility = round(Math.sqrt(varc) * Math.sqrt(252) * 100, 1);
+  }
+
+  // Current run of up or down days, and the longest run in the window.
+  let cur = 0, dir = 0, bestUp = 0, bestDown = 0, run = 0, runDir = 0;
+  for (let i = 1; i < n; i++) {
+    const d = closes[i] > closes[i - 1] ? 1 : closes[i] < closes[i - 1] ? -1 : 0;
+    if (d === 0) { run = 0; runDir = 0; continue; }
+    if (d === runDir) run++; else { runDir = d; run = 1; }
+    if (d === 1) bestUp = Math.max(bestUp, run); else bestDown = Math.max(bestDown, run);
+  }
+  cur = run; dir = runDir;
+  stats.streak = { days: cur, dir };
+  stats.longest_up = bestUp;
+  stats.longest_down = bestDown;
+
+  // Moving averages — the levels chart-readers quote most often.
+  const ma = (k) => (n >= k ? round(closes.slice(-k).reduce((a, x) => a + x, 0) / k) : null);
+  stats.ma50 = ma(50);
+  stats.ma200 = ma(200);
+
+  if (volumes.length) {
+    let mi = 0;
+    for (let i = 1; i < volumes.length; i++) if (volumes[i] > volumes[mi]) mi = i;
+    // volumes was filled in step with closes, so the index maps onto dates
+    stats.max_volume = { volume: volumes[mi], date: dates[Math.min(mi, dates.length - 1)] };
+  }
+  return stats;
+}
+
 function normalise(result, company, usdDkk) {
   const meta = result.meta || {};
   const quote = result.indicators?.quote?.[0] || {};
@@ -330,6 +411,9 @@ function normalise(result, company, usdDkk) {
       average_volume_days: recent.length,
       week52_low: round(meta.fiftyTwoWeekLow),
       week52_high: round(meta.fiftyTwoWeekHigh),
+      stats: computeStats(dates, closes, volumes),
+      ath: null, ath_date: null, atl: null, atl_date: null,
+      first_trade_date: null, drawdown_pct: null, above_atl_pct: null,
       spark: closes.slice(-SPARK_POINTS),
       quote_time: meta.regularMarketTime ? new Date(meta.regularMarketTime * 1000).toISOString() : null,
     },
@@ -408,7 +492,33 @@ async function main() {
     process.exit(1);
   }
 
-  // 4. Market cap and index ranks
+  // 4. All-time highs and lows
+  // A second pass, because the 2-year window the pages chart cannot tell you
+  // how far a stock sits below its peak. The monthly series is combined with
+  // the daily one already held, so the last two years stay day-accurate.
+  let athOk = 0;
+  const bySymbol = new Map(rows.map((r) => [r.symbol, r]));
+  await pool(rows, CONCURRENCY, async (r) => {
+    try {
+      const monthly = await fetchLifetime(r.symbol);
+      if (!monthly.length) return;
+      const recent = (history[r.symbol]?.closes || []).map((c, i) => ({ date: history[r.symbol].dates[i], close: c }));
+      const all = monthly.concat(recent);
+
+      const hi = all.reduce((a, x) => (x.close > a.close ? x : a));
+      const lo = all.reduce((a, x) => (x.close < a.close ? x : a));
+      r.ath = round(hi.close); r.ath_date = hi.date;
+      r.atl = round(lo.close); r.atl_date = lo.date;
+      r.first_trade_date = monthly[0].date;
+      // Drawdown is negative or zero; a stock at its peak reads 0.
+      r.drawdown_pct = hi.close ? round(((r.price - hi.close) / hi.close) * 100, 2) : null;
+      r.above_atl_pct = lo.close ? round(((r.price - lo.close) / lo.close) * 100, 2) : null;
+      athOk++;
+    } catch { /* uden all-time-data står felterne tomme */ }
+  });
+  console.log(`  all-time: ${athOk}/${rows.length} selskaber`);
+
+  // 5. Market cap and index ranks
   let capsOk = 0;
   try {
     const caps = await fetchMarketCaps(rows.map((r) => r.symbol));
@@ -426,7 +536,7 @@ async function main() {
     console.warn('  markedsværdi kunne ikke hentes (' + err.message + ') — rækkerne får ingen placering.');
   }
 
-  // 5. Files
+  // 6. Files
   rows.sort((a, b) => a.name.localeCompare(b.name, 'en', { sensitivity: 'base' }));
   await writeIfChanged(OUT_LIST, {
     source: 'Yahoo Finance',
