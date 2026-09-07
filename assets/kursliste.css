@@ -48,6 +48,11 @@
 
 body { background: var(--page-plane); color: var(--text-primary); }
 
+/* The UA rule for [hidden] is a bare element selector, so any class that sets
+   a display — .row, .split, .flex — silently outranks it and the element stays
+   on screen. Pages toggle visibility with el.hidden, so this has to win. */
+[hidden] { display: none !important; }
+
 /* Columns and figures that must align vertically get tabular numerals. */
 .num { font-variant-numeric: tabular-nums; }
 

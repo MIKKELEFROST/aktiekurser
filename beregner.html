@@ -112,7 +112,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
         <input id="rateR" type="range" min="-5" max="20" step="0.5" value="7" aria-label="Forventet årligt afkast">
       </div>
 
-      <div class="row">
+      <div class="row adv" hidden>
         <label for="fee">
           Årlige omkostninger<span class="hint-i" tabindex="0" role="note" aria-label="Om Årlige omkostninger" data-hint-title="Årlige omkostninger" data-hint="Depotgebyr, kurtage og fondsomkostninger, tilsammen ofte kaldet ÅOP. De trækkes af formuen hvert år, så de æder sig ind i renters rente og koster meget mere end tallet lyder.">i</span>
         </label>
@@ -120,7 +120,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
         <input id="feeR" type="range" min="0" max="3" step="0.1" value="0.5" aria-label="Årlige omkostninger">
       </div>
 
-      <div class="row">
+      <div class="row adv" hidden>
         <label for="raise">
           Indskud stiger med<span class="hint-i" tabindex="0" role="note" aria-label="Om Årlig stigning i indskud" data-hint-title="Årlig stigning i indskud" data-hint="Sæt indbetalingen op hvert år, for eksempel i takt med lønnen. 0% betyder at du lægger det samme beløb til side om ti år som i dag.">i</span>
         </label>
@@ -128,19 +128,30 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
         <input id="raiseR" type="range" min="0" max="10" step="0.5" value="0" aria-label="Årlig stigning i indskud">
       </div>
 
-      <div class="mt-5 pt-4" style="border-top:1px solid var(--gridline)">
-        <!-- The badge sits outside the label: inside it, a click on the icon
-             would toggle the checkbox as well as open the explanation. -->
+      <!-- Advanced fields sit behind this switch. Simple mode leaves costs,
+           the yearly rise and inflation out entirely rather than applying
+           them invisibly — the note says so, so nothing is assumed silently. -->
+      <div class="adv-box mt-5 pt-4" style="border-top:1px solid var(--gridline)">
         <div class="flex items-start gap-2 text-sm">
-          <input id="real" type="checkbox" style="margin-top:3px;accent-color:var(--accent)">
+          <input id="adv" type="checkbox" style="margin-top:3px;accent-color:var(--accent)">
           <div>
-            <label for="real" style="cursor:pointer">Vis i nutidskroner</label><span class="hint-i" tabindex="0" role="note" aria-label="Om nutidskroner" data-hint-title="Nutidskroner" data-hint="Omregner slutbeløbet til hvad det ville kunne købe i dag. 1.000.000 kr om 30 år svarer ved 2% inflation til cirka 552.000 kr i nutidens priser — samme tal, mindre indkøbskurv.">i</span>
-            <span class="block text-xs faint mt-0.5">Justér for inflation, så beløbet kan sammenlignes med priser i dag.</span>
+            <label for="adv" style="cursor:pointer;font-weight:600">Aktivér avanceret beregner</label><span class="hint-i" tabindex="0" role="note" aria-label="Om avanceret beregner" data-hint-title="Avanceret beregner" data-hint="Åbner tre ekstra felter: årlige omkostninger, en årlig stigning i det du indbetaler, og omregning til nutidskroner. Uden dem regner beregneren rent på indskud og afkast.">i</span>
+            <span id="advNote" class="block text-xs faint mt-0.5">Tilføj omkostninger, årlig stigning i indskuddet og inflation. Uden dem regnes der kun på indskud og afkast.</span>
           </div>
         </div>
-        <div id="inflWrap" class="row mt-3" hidden>
-          <label for="infl" class="text-xs">Inflation</label>
-          <span><input id="infl" class="amount num" type="number" min="0" max="10" step="0.1" value="2"> <span class="unit">%</span></span>
+
+        <div class="adv mt-4" hidden>
+          <div class="flex items-start gap-2 text-sm">
+            <input id="real" type="checkbox" style="margin-top:3px;accent-color:var(--accent)">
+            <div>
+              <label for="real" style="cursor:pointer">Vis i nutidskroner</label><span class="hint-i" tabindex="0" role="note" aria-label="Om nutidskroner" data-hint-title="Nutidskroner" data-hint="Omregner slutbeløbet til hvad det ville kunne købe i dag. 1.000.000 kr om 30 år svarer ved 2% inflation til cirka 552.000 kr i nutidens priser — samme tal, mindre indkøbskurv.">i</span>
+              <span class="block text-xs faint mt-0.5">Justér for inflation, så beløbet kan sammenlignes med priser i dag.</span>
+            </div>
+          </div>
+          <div id="inflWrap" class="row mt-3" hidden>
+            <label for="infl" class="text-xs">Inflation</label>
+            <span><input id="infl" class="amount num" type="number" min="0" max="10" step="0.1" value="2"> <span class="unit">%</span></span>
+          </div>
         </div>
       </div>
 
@@ -227,8 +238,10 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       <div class="card rounded-2xl p-5 mt-5 text-xs leading-relaxed muted" style="max-width:80ch">
         <p class="font-bold mb-1" style="color:var(--text-primary)">Sådan regner vi</p>
         <p>Indbetalingen sker først på måneden, og afkastet tilskrives månedligt med den rente der
-          svarer til det årlige afkast. Omkostningerne trækkes af hele formuen hvert år, ikke af
-          indbetalingen.</p>
+          svarer til det årlige afkast.</p>
+        <p class="mt-2">Den simple beregner regner kun på indskud og afkast. Slår du den avancerede
+          til, trækkes omkostningerne af hele formuen hvert år — ikke af indbetalingen — og
+          slutbeløbet kan omregnes til nutidskroner.</p>
         <p class="mt-2"><strong>Skat er ikke med.</strong> Hvad du betaler afhænger af, om du investerer
           frit, gennem en aktiesparekonto eller i pension, og satserne ændrer sig. Beløbene her er
           derfor før skat — det faktiske udbetalte beløb bliver lavere.</p>
@@ -256,6 +269,10 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
 
   const FIELDS = ['start', 'monthly', 'years', 'rate', 'fee', 'raise', 'infl'];
   const DEFAULTS = { start: 25000, monthly: 2000, years: 20, rate: 7, fee: 0.5, raise: 0, infl: 2 };
+  // Everything the simple view leaves out. Their inputs keep their values; the
+  // projection just ignores them until the switch is on, so turning it off and
+  // on again does not lose what was typed.
+  const ADVANCED = ['fee', 'raise'];
 
   // ── The projection ────────────────────────────────────────────────────
   // Monthly steps, deposit first: the month's contribution is added before the
@@ -287,11 +304,20 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       const el = $('#' + id), v = parseFloat(el.value);
       return Number.isFinite(v) ? Math.min(Math.max(v, +el.min || -Infinity), +el.max || Infinity) : DEFAULTS[id];
     };
+    const adv = $('#adv').checked;
     return {
-      start: n('start'), monthly: n('monthly'), years: Math.round(n('years')),
-      rate: n('rate'), fee: n('fee'), raise: n('raise'),
-      real: $('#real').checked, infl: n('infl'),
+      adv: adv,
+      start: n('start'), monthly: n('monthly'), years: Math.round(n('years')), rate: n('rate'),
+      fee: adv ? n('fee') : 0,
+      raise: adv ? n('raise') : 0,
+      real: adv && $('#real').checked, infl: n('infl'),
     };
+  }
+
+  function setAdvanced(on) {
+    $('#adv').checked = on;
+    document.querySelectorAll('.adv').forEach((el) => { el.hidden = !on; });
+    if (!on) $('#inflWrap').hidden = true;
   }
 
   // ── Chart ─────────────────────────────────────────────────────────────
@@ -488,6 +514,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
   });
 
   $('#real').addEventListener('change', () => { $('#inflWrap').hidden = !$('#real').checked; render(); });
+  $('#adv').addEventListener('change', (e) => { setAdvanced(e.target.checked); render(); });
 
   $('#reset').addEventListener('click', () => {
     Object.keys(DEFAULTS).forEach((id) => {
@@ -495,6 +522,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       const s = $('#' + id + 'R'); if (s) s.value = DEFAULTS[id];
     });
     $('#real').checked = false; $('#inflWrap').hidden = true;
+    setAdvanced(false);          // tilbage til den simple beregner
     render();
   });
 
@@ -503,7 +531,13 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
   // bookmarked or sent to someone else without a login or a backend.
   function writeUrl(p) {
     const q = new URLSearchParams();
-    Object.keys(DEFAULTS).forEach((k) => { if (p[k] !== DEFAULTS[k]) q.set(k, p[k]); });
+    Object.keys(DEFAULTS).forEach((k) => {
+      // A hidden advanced field is not part of this calculation, so it does not
+      // belong in a link to it.
+      if (!p.adv && (ADVANCED.includes(k) || k === 'infl')) return;
+      if (p[k] !== DEFAULTS[k]) q.set(k, p[k]);
+    });
+    if (p.adv) q.set('adv', '1');
     if (p.real) q.set('real', '1');
     const url = location.pathname + (q.toString() ? '?' + q : '');
     history.replaceState(null, '', url);
@@ -518,9 +552,15 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
         const s = $('#' + k + 'R'); if (s) s.value = v;
       }
     });
-    if (q.get('real') === '1') { $('#real').checked = true; $('#inflWrap').hidden = false; }
+    // An advanced value in the link implies the advanced view, so a shared plan
+    // opens showing the fields it was actually calculated with.
+    const advImplied = q.get('adv') === '1' || q.get('real') === '1'
+      || ADVANCED.some((k) => q.has(k));
+    setAdvanced(advImplied);
+    if (advImplied && q.get('real') === '1') { $('#real').checked = true; $('#inflWrap').hidden = false; }
   }
 
+  setAdvanced(false);
   readUrl();
   render();
 })();
