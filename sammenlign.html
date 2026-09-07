@@ -219,37 +219,24 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
           + '<div class="faint" style="font-weight:500">' + K.esc(r.symbol) + '</div></th>').join('')
       + '</tr>';
 
-    const body = ms.map((m) => {
-      // The best value in a row is marked, but only where "best" is defined by
-      // the measure itself. A price or a date has no better and worse.
-      let bestIdx = -1;
-      if (m.rank || m.pct) {
-        const vals = rows.map((r) => (m.pct ? r[m.pct] : m.rank(r)));
-        const valid = vals.map((v, i) => ({ v, i })).filter((x) => x.v != null && Number.isFinite(x.v));
-        if (valid.length > 1) {
-          const high = m.pct ? true : m.high;
-          bestIdx = valid.reduce((a, b) => ((high ? b.v > a.v : b.v < a.v) ? b : a)).i;
-        }
-      }
-      return '<tr class="border-t divider">'
-        + '<td class="sticky-col py-2 pr-3 text-sm"><span class="metric-label hint" tabindex="0" '
-          + 'data-hint-title="' + K.esc(m.label) + '" data-hint="' + K.esc(m.hint) + '">' + K.esc(m.label) + '</span></td>'
-        + rows.map((r, i) => {
-            const raw = m.pct ? r[m.pct] : null;
-            const html = m.pct ? K.fmtPct(raw) : (m.get(r) || '–');
-            const cls = m.pct ? K.dirClass(raw) : '';
-            return '<td class="py-2 px-3 num text-right ' + cls + (i === bestIdx ? ' font-extrabold' : '') + '">'
-              + html + (i === bestIdx ? ' <span class="text-xs faint" title="Bedste i sammenligningen">★</span>' : '')
-            + '</td>';
-          }).join('')
-      + '</tr>';
-    }).join('');
+    // No "best" is marked. Calling the lowest P/E the best value in the row
+    // would be a judgement about what is worth buying, and that is not ours to
+    // make. The figures stand next to each other and the reader compares them.
+    const body = ms.map((m) => '<tr class="border-t divider">'
+      + '<td class="sticky-col py-2 pr-3 text-sm"><span class="metric-label hint" tabindex="0" '
+        + 'data-hint-title="' + K.esc(m.label) + '" data-hint="' + K.esc(m.hint) + '">' + K.esc(m.label) + '</span></td>'
+      + rows.map((r) => {
+          const raw = m.pct ? r[m.pct] : null;
+          const html = m.pct ? K.fmtPct(raw) : (m.get(r) || '–');
+          return '<td class="py-2 px-3 num text-right ' + (m.pct ? K.dirClass(raw) : '') + '">' + html + '</td>';
+        }).join('')
+    + '</tr>').join('');
 
     return '<div class="card rounded-2xl p-5 mb-5">'
       + '<h2 class="text-sm font-bold mb-1">Nøgletal side om side</h2>'
-      + '<p class="text-xs muted mb-3" style="max-width:74ch">★ markerer den bedste værdi i rækken, hvor bedre '
-        + 'overhovedet giver mening — lav P/E, høj vækst. Markedsværdi og kurs sammenlignes ikke på tværs af '
-        + 'valutaer, og en dato har hverken bedre eller værre.</p>'
+      + '<p class="text-xs muted mb-3" style="max-width:74ch">Tallene står som de er, uden markering af hvad der '
+        + 'er bedst — det afhænger af, hvad du leder efter. Bemærk at kurs og markedsværdi er i selskabernes '
+        + 'egne valutaer og derfor ikke er direkte sammenlignelige på tværs.</p>'
       + '<div class="overflow-x-auto" style="overflow-x:auto"><table class="w-full text-sm border-collapse">'
       + '<thead>' + head + '</thead><tbody>' + body + '</tbody></table></div></div>';
   }

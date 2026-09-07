@@ -58,11 +58,6 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
   .ov-sep { color: var(--text-muted); opacity: .55; }
   .overview p { flex-basis: 100%; margin: 0; }
 
-  .verdict {
-    display: inline-block; font-size: 13px; font-weight: 800;
-    padding: 3px 10px; border-radius: 999px;
-    border: 1px solid currentColor; opacity: .95;
-  }
 </style>
 </head>
 
@@ -103,7 +98,6 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     // The short windows are counted so the move they report matches the
     // list's columns: a trading week is five sessions, not seven days.
     { key: '1d',  label: '1d',    sessions: 2 },
-    { key: '7d',  label: '7d',    sessions: 6 },
     { key: '1m',  label: '1 md.',  sessions: 21 },
     { key: '3m',  label: '3 mdr.', sessions: 63 },
     { key: '6m',  label: '6 mdr.', sessions: 126 },
@@ -567,61 +561,6 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     return '<div class="overview mb-5">' + bits.join('<span class="ov-sep" aria-hidden="true">·</span>') + cal + '</div>';
   }
 
-  // ── Valuation ──────────────────────────────────────────────────────────
-  // Every comparison here is against the other companies on this very list, so
-  // the reader can check it. A verdict is a comparison, never a recommendation.
-  function valuationBlock(r) {
-    const k = keyOf(r.symbol);
-    if (!k) return '';
-    const pe = K.peOf(r.price, k.eps_ttm);
-    const fwd = K.peOf(r.price, k.eps_fwd);
-    const sector = KEYS.sectors ? KEYS.sectors[r.sector] : null;
-    const fcfYield = (k.fcf != null && r.market_cap) ? (k.fcf / r.market_cap) * 100 : null;
-    if (pe == null && fwd == null && fcfYield == null) return '';
-
-    let verdict = null, cls = 'muted', ratio = null;
-    if (pe != null && sector && sector.pe_median) {
-      ratio = pe / sector.pe_median;
-      verdict = ratio > 1.2 ? 'Dyrere end sektoren' : ratio < 0.8 ? 'Billigere end sektoren' : 'På linje med sektoren';
-      cls = ratio > 1.2 ? 'down' : ratio < 0.8 ? 'up' : '';
-    }
-
-    const line = (label, value, hint, extra) => value == null ? ''
-      : '<div class="stat flex items-baseline justify-between gap-3 py-2" style="display:flex;justify-content:space-between">'
-        + '<span class="text-sm"><span class="hint" tabindex="0" data-hint-title="' + K.esc(label)
-        + '" data-hint="' + K.esc(hint) + '">' + K.esc(label) + '</span></span>'
-        + '<span class="text-sm font-semibold num">' + value
-        + (extra ? ' <span class="text-xs faint">' + extra + '</span>' : '') + '</span></div>';
-
-    return '<div class="card rounded-2xl p-5">'
-      + '<h2 class="text-sm font-bold">Er aktien dyr eller billig?</h2>'
-      + (verdict
-          ? '<p class="mt-2 mb-1"><span class="verdict ' + cls + '">' + verdict + '</span>'
-            + ' <span class="text-xs faint num">' + (ratio > 1 ? '+' : '')
-            + Math.round((ratio - 1) * 100) + '% mod sektorens median</span></p>'
-          : '')
-      + '<div class="mt-2">'
-      + line('P/E nu', mult(pe),
-          'Kursen delt med indtjeningen pr. aktie de seneste fire kvartaler.')
-      + (sector && sector.pe_median ? line('Median i ' + r.sector, mult(sector.pe_median),
-          'Midterste P/E blandt de ' + sector.companies + ' selskaber i denne sektor på listen, som har positiv indtjening. Beregnet af os ud fra de kurser siden viser — ikke hentet fra en kilde.',
-          '· ' + sector.companies + ' selskaber') : '')
-      + line('Forward P/E', mult(fwd),
-          'Kursen delt med den indtjening analytikerne venter det kommende år.')
-      + line('FCF yield', fcfYield == null ? null : fcfYield.toFixed(1).replace('.', ',') + '%',
-          'Frit cash flow i forhold til markedsværdien. Hvor stort et kontantafkast selskabets drift giver på den pris aktien koster i dag.')
-      + line('P/B', mult(k.pb),
-          'Kursen i forhold til den bogførte egenkapital pr. aktie.')
-      + line('PEG', mult(k.peg),
-          'P/E delt med den forventede vækst i indtjeningen. Under 1 regnes traditionelt som billigt i forhold til væksten.')
-      + '</div>'
-      + '<p class="text-xs faint mt-3 leading-relaxed">En høj P/E er ikke i sig selv dyrt: den kan afspejle at '
-        + 'indtjeningen ventes at vokse — se omsætningsvæksten ovenfor. Sammenligningen er med sektoren på denne '
-        + 'liste, ikke med selskabets egen historik: vi har kun fire kvartalers indtjening, og en 5-årig median '
-        + 'kræver indtjening år for år, som kilden ikke giver.</p>'
-    + '</div>';
-  }
-
   // ── Calendar ───────────────────────────────────────────────────────────
   function calendarBlock(r) {
     if (!FUND) return '';
@@ -661,7 +600,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     if (!h.length) return '';
     const beats = h.filter((q) => q.actual > q.estimate).length;
 
-    return '<div class="card rounded-2xl p-5 mt-5">'
+    return '<div class="card rounded-2xl p-5">'
       + '<h2 class="text-sm font-bold">Ramte selskabet forventningerne?</h2>'
       + '<p class="text-xs muted mt-1" style="max-width:70ch">Analytikernes gennemsnitlige forventning til '
         + 'indtjening pr. aktie, holdt op mod hvad selskabet leverede.</p>'
@@ -1144,8 +1083,8 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
 
     $('#content').innerHTML = head + overviewStrip(r) + chartCard
       + performanceBlock(r)
-      + '<div class="grid md:grid-cols-2 gap-5 items-start mb-5">' + valuationBlock(r) + calendarBlock(r) + '</div>'
-      + surpriseBlock(r)
+      + '<div class="grid md:grid-cols-2 gap-5 items-start mb-5">'
+        + calendarBlock(r) + surpriseBlock(r) + '</div>'
       + drawdownBlock(r)
       + investedBlock(r)
       + '<div class="grid md:grid-cols-2 gap-5 items-start mt-5">' + left + right + '</div>'

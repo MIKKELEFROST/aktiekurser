@@ -228,7 +228,6 @@ async function fetchQuoteFields(symbols, session) {
         book_value: q.bookValue ?? null,
         div_yield: q.dividendYield ?? null,             // allerede i procent
         shares: q.sharesOutstanding ?? null,
-        rating: q.averageAnalystRating ?? null,
         next_earnings: q.earningsTimestampStart ? isoDay(q.earningsTimestampStart) : null,
       });
     }
@@ -758,7 +757,6 @@ async function main() {
           eps_fwd: q.eps_fwd ?? null,
           div_yield: q.div_yield ?? null,
           shares: q.shares ?? null,
-          rating: q.rating ?? null,
           next_earnings: f.detail.next_earnings || q.next_earnings || null,
         };
         detail[r.symbol] = f.detail;
