@@ -138,12 +138,31 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
   function wireChart() {
     const svg = $('#chart'); if (!svg) return;
     const hit = $('#hit'), tip = $('#tooltip');
+    const wrap = svg.parentElement;
     const cross = svg.querySelector('.crosshair'), line = $('#chx'), dot = $('#chd');
 
+    // The viewBox is 900x280 but the element is as wide as its container, and
+    // preserveAspectRatio defaults to "meet" — so the drawing is scaled
+    // uniformly and centred, leaving empty bands at the sides (63px each at a
+    // 1440px viewport). Mapping the element's own width onto viewBox units
+    // ignores those bands and drifts by up to 50px at the edges while being
+    // exact in the middle. getScreenCTM() carries the real scale and offset,
+    // so both directions go through it and the maths cannot drift again.
+    const toViewBox = (clientX, clientY) => {
+      const m = svg.getScreenCTM();
+      return m ? new DOMPoint(clientX, clientY).matrixTransform(m.inverse()) : null;
+    };
+    const toClient = (x, y) => {
+      const m = svg.getScreenCTM();
+      return m ? new DOMPoint(x, y).matrixTransform(m) : null;
+    };
+
     function move(evt) {
-      const box = svg.getBoundingClientRect();
-      const px = ((evt.clientX - box.left) / box.width) * G.W;   // back to viewBox units
-      const t = Math.min(1, Math.max(0, (px - G.L) / G.iw));
+      if (!chart.closes.length) return;
+      const vb = toViewBox(evt.clientX, evt.clientY);
+      if (!vb) return;
+
+      const t = Math.min(1, Math.max(0, (vb.x - G.L) / G.iw));
       const i = Math.round(t * (chart.closes.length - 1));
 
       const cx = G.L + (G.iw * i) / (chart.closes.length - 1);
@@ -157,10 +176,17 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       tip.innerHTML = '<strong class="num">' + K.fmtPrice(chart.closes[i]) + ' ' + K.esc(chart.currency) + '</strong>'
         + '<br><span class="faint">' + K.fmtDate(chart.dates[i]) + '</span>';
 
-      const leftPx = (cx / G.W) * box.width;
-      const flip = leftPx > box.width - 130;
-      tip.style.left = (flip ? leftPx - tip.offsetWidth - 12 : leftPx + 12) + 'px';
-      tip.style.top = ((cy / G.H) * box.height - 10) + 'px';
+      // The tooltip is absolutely positioned inside .chart-wrap, so the mark's
+      // screen position is converted back and made relative to that box.
+      const pt = toClient(cx, cy);
+      const wrapBox = wrap.getBoundingClientRect();
+      if (!pt) return;
+      const localX = pt.x - wrapBox.left;
+      const localY = pt.y - wrapBox.top;
+
+      const flip = localX + tip.offsetWidth + 16 > wrapBox.width;
+      tip.style.left = Math.max(0, flip ? localX - tip.offsetWidth - 12 : localX + 12) + 'px';
+      tip.style.top = Math.max(0, localY - 10) + 'px';
     }
 
     hit.addEventListener('mousemove', move);
@@ -278,6 +304,15 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
           'Kursændring over de seneste 126 handelsdage, cirka et halvt år.')
       + statRow('Udvikling 1 år', K.fmtPct(r.change_1y), K.dirClass(r.change_1y),
           'Kursændring over de seneste 252 handelsdage, cirka et børsår.')
+      + (r.market_cap != null ? statRow('Markedsværdi',
+          K.fmtBig(r.market_cap) + ' ' + K.esc(cur), '',
+          'Kursen gange antallet af aktier, i selskabets egen valuta. Det er denne størrelse indeksene vægtes efter.') : '')
+      + (r.rank_sp500 ? statRow('Plads i S&P 500', '#' + r.rank_sp500, '',
+          'Placering blandt de 503 selskaber i S&P 500, målt på markedsværdi. Indekset vægter efter frit omsættelige aktier, så rækkefølgen er tæt på den officielle uden at være identisk.') : '')
+      + (r.rank_ndx ? statRow('Plads i Nasdaq-100', '#' + r.rank_ndx, '',
+          'Placering blandt selskaberne i Nasdaq-100, målt på markedsværdi.') : '')
+      + (r.rank_dk ? statRow('Plads i København', '#' + r.rank_dk, '',
+          'Placering blandt de danske selskaber på listen, målt på markedsværdi.') : '')
       + (conv
           ? statRow('Kurs omregnet', '≈ ' + K.fmtPrice(r.price_dkk) + ' DKK', '',
               'Kursen ganget med ECB’s referencekurs. Et beregnet tal, ikke en noteret kurs — derfor ≈.')

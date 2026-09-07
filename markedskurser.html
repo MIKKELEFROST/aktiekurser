@@ -63,6 +63,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
 
       <select id="sortField" class="rounded-lg px-3 py-2 text-sm bg-transparent" aria-label="Sortér efter"
               style="border: 1px solid var(--hairline); color: var(--text-primary)">
+        <option value="rank">Placering (markedsværdi)</option>
         <option value="percent_change">Ændring i dag</option>
         <option value="change30d">Ændring 30 dage</option>
         <option value="change_6m">Ændring 6 måneder</option>
@@ -149,6 +150,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       <table class="w-full text-sm border-collapse min-w-[980px]">
         <thead>
           <tr class="text-xs faint">
+            <th class="text-right font-semibold py-3 pr-3 whitespace-nowrap" data-sort="rank" aria-sort="none"><span class="hint" tabindex="0" data-hint-title="Placering" data-hint="Selskabets plads målt på markedsværdi. Uden filter er det pladsen i hele universet; vælger du S&amp;P 500, Nasdaq-100 eller Danmark, er det pladsen i netop det indeks.">#</span> <span class="caret"></span></th>
             <th class="text-left  font-semibold py-3 pr-3 whitespace-nowrap" data-sort="name" aria-sort="none"><span class="hint" tabindex="0" data-hint-title="Navn" data-hint="Selskabets navn og børssymbol. Klik på en række for at se detaljer.">Navn</span> <span class="caret"></span></th>
             <th class="text-left  font-semibold py-3 px-3 whitespace-nowrap" data-sort="change30d" aria-sort="none" data-col="oversigt kurser"><span class="hint" tabindex="0" data-hint-title="Udv. 30 dage" data-hint="Kurslinje for de seneste 30 handelsdage. Grøn betyder op over perioden, rød ned.">Udv. 30 dage</span> <span class="caret"></span></th>
             <th class="text-right font-semibold py-3 px-3 whitespace-nowrap" data-sort="percent_change" aria-sort="descending"><span class="hint" tabindex="0" data-hint-title="I dag %" data-hint="Kursændring siden forrige handelsdags lukkekurs, i procent. Kan sammenlignes på tværs af valutaer.">I dag %</span> <span class="caret"></span></th>
@@ -162,6 +164,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
             <th class="text-right font-semibold py-3 px-3 whitespace-nowrap" data-sort="change_1y" aria-sort="none" data-col="nogletal"><span class="hint" tabindex="0" data-hint-title="1 år %" data-hint="Kursændring over de seneste 252 handelsdage, cirka et børsår.">1 år %</span> <span class="caret"></span></th>
             <th class="text-left  font-semibold py-3 px-3 whitespace-nowrap" data-col="oversigt nogletal"><span class="hint" tabindex="0" data-hint-title="Sektor" data-hint="Selskabets branche efter GICS-systemet, som S&amp;P bruger. Nasdaq-100-selskaber er oversat til samme navne.">Sektor</span></th>
             <th class="text-left  font-semibold py-3 px-3 whitespace-nowrap" data-col="oversigt"><span class="hint" tabindex="0" data-hint-title="Valuta" data-hint="Den valuta børsen handler aktien i. DKK for danske, USD for amerikanske.">Valuta</span></th>
+            <th class="text-right font-semibold py-3 px-3 whitespace-nowrap" data-sort="market_cap_dkk" aria-sort="none" data-col="nogletal"><span class="hint" tabindex="0" data-hint-title="Markedsværdi" data-hint="Kursen gange antallet af aktier. Det er dette tal indeksene vægtes efter, og derfor grundlaget for placeringen.">Markedsværdi</span> <span class="caret"></span></th>
             <th class="text-right font-semibold py-3 px-3 whitespace-nowrap" data-sort="volume" aria-sort="none" data-col="oversigt nogletal"><span class="hint" tabindex="0" data-hint-title="Volumen" data-hint="Antal aktier handlet i dag — stykker, ikke beløb i kroner.">Volumen</span> <span class="caret"></span></th>
             <th class="text-left  font-semibold py-3 pl-3 whitespace-nowrap" data-col="oversigt"><span class="hint" tabindex="0" data-hint-title="Børs" data-hint="Den børs aktien er noteret på.">Børs</span></th>
           </tr>
@@ -206,6 +209,13 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       <strong>Kurserne er forsinkede, ikke live.</strong> De opdateres tre gange på hverdage —
       kort efter åbning, midt på dagen og efter lukketid.
     </p>
+    <p class="mt-2">
+      <strong>Placeringen</strong> er selskabets plads målt på markedsværdi — kursen gange antallet
+      af aktier. Det er samme størrelse indeksene vægtes efter, men ikke helt samme tal: S&amp;P bruger
+      kun de frit omsættelige aktier, og Nasdaq lægger en justering oven på. Rækkefølgen er derfor
+      tæt på den officielle uden at være identisk. Markedsværdier opgives i selskabets egen valuta,
+      så den samlede rangliste regner dem om til kroner først.
+    </p>
     <p class="mt-2" id="fxNote"></p>
     <p class="mt-2">
       Alle øvrige kolonner er rigtige felter fra kilden. Børsværdi vises ikke, fordi den ikke
@@ -249,6 +259,16 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
   const sortPrice = (r) =>
     state.currency === 'dkk' ? (r.price_dkk != null ? r.price_dkk : r.price) : r.price;
 
+  // Which ranking the "#" column shows follows the active filter: pick an
+  // index and the number is that index's own ordering, otherwise it is the
+  // whole universe ranked on a common currency.
+  function rankOf(r) {
+    if (state.index === 'SP500') return r.rank_sp500;
+    if (state.index === 'NDX')   return r.rank_ndx;
+    if (state.market === 'DK')   return r.rank_dk;
+    return r.rank_all;
+  }
+
   function filtered() {
     let out = state.all;
 
@@ -270,11 +290,16 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     // Names sort under 'en', not 'da': Danish collation folds "Aa" into "Å" and
     // files it after Z, which would send Aave-like names to the bottom.
     const f = state.sort;
-    const key = (r) => (f === 'sortPrice' ? sortPrice(r) : r[f]);
+    const key = (r) => (f === 'sortPrice' ? sortPrice(r) : f === 'rank' ? rankOf(r) : r[f]);
     return [...out].sort((a, b) => {
       const x = key(a), y = key(b);
       if (typeof x === 'string') return state.dir * x.localeCompare(y, 'en', { sensitivity: 'base' });
-      return state.dir * ((x ?? -Infinity) - (y ?? -Infinity));
+      // Missing values sort last in both directions. Treating them as one
+      // extreme instead would put the three companies without a market cap
+      // above the largest company in the world when ranking ascending.
+      const xn = x == null || Number.isNaN(x), yn = y == null || Number.isNaN(y);
+      if (xn || yn) return xn && yn ? 0 : xn ? 1 : -1;
+      return state.dir * (x - y);
     });
   }
 
@@ -300,7 +325,9 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     $('#rows').innerHTML = slice.map((r) => {
       const v = view(r);
       const approx = v.converted ? '≈ ' : '';
+      const rank = rankOf(r);
       return '<tr class="border-t divider hover:bg-black/[.02]">'
+        + '<td class="py-3 pr-3 text-right num faint text-xs">' + (rank == null ? '–' : rank) + '</td>'
         + '<td class="py-3 pr-3">'
           + '<a class="row-link block" href="' + K.stockUrl(r.symbol) + '">'
             + '<div class="font-semibold row-name">' + K.esc(r.name) + '</div>'
@@ -318,6 +345,10 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
         + '<td class="px-3 text-right num ' + K.dirClass(r.change_1y) + '" data-col="nogletal">' + K.fmtPct(r.change_1y) + '</td>'
         + '<td class="px-3 muted text-xs" data-col="oversigt nogletal">' + K.esc(r.sector || '–') + '</td>'
         + '<td class="px-3 muted" data-col="oversigt">' + K.esc(v.currency) + '</td>'
+        + '<td class="px-3 text-right num" data-col="nogletal">'
+          + (r.market_cap == null ? '–'
+             : (v.converted ? '≈ ' : '') + K.fmtBig(v.converted ? r.market_cap_dkk : r.market_cap)
+               + ' <span class="text-xs faint">' + K.esc(v.currency) + '</span>') + '</td>'
         + '<td class="px-3 text-right num" data-col="oversigt nogletal">' + K.fmtBig(r.volume) + '</td>'
         + '<td class="pl-3 muted text-xs" data-col="oversigt">' + K.esc(r.exchange || '–') + '</td>'
       + '</tr>';
@@ -335,7 +366,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
 
   function skeleton() {
     $('#rows').innerHTML = Array.from({ length: 12 }, () =>
-      '<tr class="border-t divider"><td colspan="15" class="py-4">'
+      '<tr class="border-t divider"><td colspan="17" class="py-4">'
       + '<div class="skeleton h-4 rounded"></div></td></tr>').join('');
   }
 
@@ -409,7 +440,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
         $('#status').innerHTML = '<span style="color: var(--delta-down)">Kunne ikke genindlæse ('
           + K.esc(err.message) + '). Viser sidst hentede kurser.</span>';
       } else {
-        $('#rows').innerHTML = '<tr><td colspan="15" class="py-8 text-center" style="color: var(--delta-down)">'
+        $('#rows').innerHTML = '<tr><td colspan="17" class="py-8 text-center" style="color: var(--delta-down)">'
           + 'Kunne ikke indlæse kurser: ' + K.esc(err.message) + '<br>'
           + '<span class="text-xs muted">data/aktier.json mangler. Kør <code>node scripts/fetch-stocks.mjs</code>, '
           + 'eller start workflowet “Opdatér aktiekurser” under Actions.</span></td></tr>';
@@ -432,7 +463,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
 
   $('#sortField').addEventListener('change', (e) => {
     state.sort = e.target.value;
-    state.dir = e.target.value === 'name' ? 1 : -1;
+    state.dir = (e.target.value === 'name' || e.target.value === 'rank') ? 1 : -1;
     syncCarets(); reset();
   });
 
@@ -484,7 +515,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     th.addEventListener('click', () => {
       const f = th.dataset.sort;
       if (state.sort === f) state.dir = -state.dir;
-      else { state.sort = f; state.dir = f === 'name' ? 1 : -1; }
+      else { state.sort = f; state.dir = (f === 'name' || f === 'rank') ? 1 : -1; }
       if ($('#sortField').querySelector('option[value="' + state.sort + '"]')) $('#sortField').value = state.sort;
       syncCarets(); reset();
     });

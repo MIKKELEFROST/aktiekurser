@@ -155,6 +155,12 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       pick: (r) => r.filter((s) => (s.percent_change ?? 0) < 0).sort((a, b) => a.percent_change - b.percent_change),
       metric: (s) => ({ value: K.fmtPct(s.percent_change), cls: K.dirClass(s.percent_change), label: 'i dag' }) },
 
+    { id: 'largest', title: 'Største selskaber', tint: 'linear-gradient(135deg,#1a1a19,#52514e)',
+      blurb: 'Rangeret efter markedsværdi — kursen gange antallet af aktier.',
+      hint: 'Markedsværdi er det indeksene vægtes efter, så det her er i praksis rækkefølgen i indekset. Værdier omregnes til kroner, så danske og amerikanske kan sammenlignes.',
+      pick: (r) => r.filter((s) => s.market_cap_dkk != null).sort((a, b) => b.market_cap_dkk - a.market_cap_dkk),
+      metric: (s) => ({ value: K.fmtBig(s.market_cap_dkk) + ' kr.', cls: '', label: 'markedsværdi' }) },
+
     { id: 'traded', title: 'Mest handlede', tint: 'linear-gradient(135deg,#1c3f6e,#2a78d6)',
       blurb: 'Antal omsatte aktier seneste handelsdag.',
       hint: 'Hvor mange aktier der skiftede hænder. Høj volumen betyder livlig handel — ikke at aktien er populær at eje.',

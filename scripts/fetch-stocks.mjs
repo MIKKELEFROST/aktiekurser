@@ -174,6 +174,63 @@ async function fetchUsdDkk() {
   return { rate: Number((rates.DKK / rates.USD).toFixed(6)), date, source: 'ECB via Frankfurter' };
 }
 
+// ── Market cap ───────────────────────────────────────────────────────────
+// The chart endpoint carries no market cap, and the quote endpoint that does
+// requires a crumb. Yahoo hands one out to anyone who asks: fetch cookies, swap
+// them for a crumb, then send both. Still no account and no API key — but it is
+// an undocumented flow, so every failure here is non-fatal: without it the rows
+// simply carry no rank and the pages hide the column.
+const YF_UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36';
+const CAP_BATCH = 150;
+
+async function fetchMarketCaps(symbols) {
+  const r1 = await fetch('https://fc.yahoo.com', { headers: { 'user-agent': YF_UA } });
+  const cookie = (r1.headers.getSetCookie?.() || []).map((c) => c.split(';')[0]).join('; ');
+  if (!cookie) throw new Error('ingen cookies fra Yahoo');
+
+  const r2 = await fetch('https://query1.finance.yahoo.com/v1/test/getcrumb',
+    { headers: { 'user-agent': YF_UA, cookie } });
+  const crumb = (await r2.text()).trim();
+  if (!crumb || crumb.startsWith('<')) throw new Error('ingen crumb');
+
+  const caps = new Map();
+  for (let i = 0; i < symbols.length; i += CAP_BATCH) {
+    const chunk = symbols.slice(i, i + CAP_BATCH);
+    const url = 'https://query1.finance.yahoo.com/v7/finance/quote?symbols='
+      + encodeURIComponent(chunk.join(',')) + '&crumb=' + encodeURIComponent(crumb);
+    const res = await fetch(url, { headers: { 'user-agent': YF_UA, cookie } });
+    if (!res.ok) throw new Error('quote HTTP ' + res.status);
+    const json = await res.json();
+    for (const q of json.quoteResponse?.result || []) {
+      if (q.symbol && q.marketCap != null) caps.set(q.symbol, q.marketCap);
+    }
+    await sleep(200);
+  }
+  return caps;
+}
+
+// Index membership is weighted by market value, so ordering the members by
+// market cap reproduces the index order closely. It is not identical: S&P
+// weights float-adjusted shares and Nasdaq applies a modified scheme on top, so
+// the pages call this a market-value rank rather than an official index weight.
+function assignRanks(rows) {
+  // Yahoo reports market cap in the listing currency, so a Danish company's
+  // figure is in kroner and a US one in dollars. Ranking the whole universe on
+  // the raw number would compare 1.3e12 DKK against 5.6e12 USD and place the
+  // Danish names roughly six times too high. Cross-market ranking therefore
+  // uses the converted figure; ranking inside one index needs no conversion,
+  // since its members all share a currency.
+  const byCap = (field) => (a, b) => (b[field] ?? -1) - (a[field] ?? -1);
+  const rankWithin = (subset, field, on) => {
+    subset.filter((r) => r[on] != null).sort(byCap(on))
+      .forEach((r, i) => { r[field] = i + 1; });
+  };
+  rankWithin(rows, 'rank_all', 'market_cap_dkk');
+  rankWithin(rows.filter((r) => (r.indices || []).includes('SP500')), 'rank_sp500', 'market_cap');
+  rankWithin(rows.filter((r) => (r.indices || []).includes('NDX')), 'rank_ndx', 'market_cap');
+  rankWithin(rows.filter((r) => r.market === 'DK'), 'rank_dk', 'market_cap');
+}
+
 // ── Quotes ───────────────────────────────────────────────────────────────
 async function fetchTicker(symbol) {
   const url = 'https://query1.finance.yahoo.com/v8/finance/chart/'
@@ -265,6 +322,9 @@ function normalise(result, company, usdDkk) {
       change_1y: moveOver(252),
       high: round(meta.regularMarketDayHigh),
       low: round(meta.regularMarketDayLow),
+      market_cap: null,      // i noteringsvalutaen; udfyldes efter batch-hentningen
+      market_cap_dkk: null,  // samme tal i kroner, så tværmarkeds-rangering er meningsfuld
+      rank_all: null, rank_sp500: null, rank_ndx: null, rank_dk: null,
       volume: meta.regularMarketVolume ?? null,
       average_volume: averageVolume,
       average_volume_days: recent.length,
@@ -348,7 +408,25 @@ async function main() {
     process.exit(1);
   }
 
-  // 4. Files
+  // 4. Market cap and index ranks
+  let capsOk = 0;
+  try {
+    const caps = await fetchMarketCaps(rows.map((r) => r.symbol));
+    for (const r of rows) {
+      const c = caps.get(r.symbol);
+      if (c != null) {
+        r.market_cap = c;
+        r.market_cap_dkk = Math.round(r.currency === 'DKK' ? c : c * fx.rate);
+        capsOk++;
+      }
+    }
+    assignRanks(rows);
+    console.log(`  markedsværdi: ${capsOk}/${rows.length} selskaber, rangeret per indeks`);
+  } catch (err) {
+    console.warn('  markedsværdi kunne ikke hentes (' + err.message + ') — rækkerne får ingen placering.');
+  }
+
+  // 5. Files
   rows.sort((a, b) => a.name.localeCompare(b.name, 'en', { sensitivity: 'base' }));
   await writeIfChanged(OUT_LIST, {
     source: 'Yahoo Finance',
@@ -362,6 +440,7 @@ async function main() {
       { code: 'DK-LARGE', label: 'København' },
     ],
     sectors: [...new Set(rows.map((r) => r.sector))].sort(),
+    ranked: capsOk,
     fx: { pair: 'USD/DKK', ...fx },
     failed,
     stocks: rows,
