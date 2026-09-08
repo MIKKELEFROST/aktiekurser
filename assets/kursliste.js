@@ -75,6 +75,9 @@
     NO: { label: 'Norge',   flag: '🇳🇴', exchange: 'Oslo Børs',        bench: 'OSEAX'  },
     FI: { label: 'Finland', flag: '🇫🇮', exchange: 'Nasdaq Helsinki',  bench: 'OMXH25' },
     IS: { label: 'Island',  flag: '🇮🇸', exchange: 'Nasdaq Iceland',   bench: null     },
+  // Only funds list here — the UCITS venues Danish brokers sell from.
+  DE: { label: 'Tyskland', flag: '🇩🇪', exchange: 'Deutsche Börse Xetra', bench: null },
+  NL: { label: 'Holland',  flag: '🇳🇱', exchange: 'Euronext Amsterdam',   bench: null },
     US: { label: 'USA',     flag: '🇺🇸', exchange: 'Nasdaq / NYSE',    bench: 'SP500'  },
   };
   const marketOf = (code) => MARKETS[code] || { label: code || '–', flag: '', exchange: '', bench: null };
@@ -315,6 +318,8 @@
   const NAV = [
     { key: 'kurser',      href: 'markedskurser.html', label: 'Aktiekurser',
       hint: 'Hele listen med kurser, filtre og sortering for begge markeder.' },
+    { key: 'etf',         href: 'etf.html',           label: 'ETF-kurser',
+      hint: 'Børshandlede fonde: én handel giver dig hele indekset. Kurser, formue og udvikling.' },
     { key: 'inspiration', href: 'inspiration.html',   label: 'Aktieinspiration',
       hint: 'Temalister beregnet ud fra kursdataene — vindere, mest handlede og 52-ugers yderpunkter.' },
     { key: 'sammenlign',  href: 'sammenlign.html',    label: 'Sammenlign',

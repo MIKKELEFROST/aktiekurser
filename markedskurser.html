@@ -884,8 +884,13 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
   });
 
   setInterval(() => { if (!document.hidden) load(); }, 900_000);
+  // The age ticks over on its own, but not while the chip is showing the live
+  // state: both run on a minute, and whichever fired last would win.
   setInterval(() => {
-    if (state.updatedAt) $('#freshness').textContent = 'Opdateret ' + K.fmtAge(state.updatedAt);
+    const chip = $('#freshness');
+    if (state.updatedAt && chip && !chip.querySelector('.live-dot')) {
+      chip.textContent = 'Opdateret ' + K.fmtAge(state.updatedAt);
+    }
   }, 60_000);
 
   state.cols = loadCols();

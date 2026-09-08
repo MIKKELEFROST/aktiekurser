@@ -69,6 +69,17 @@ jobs:
             node scripts/fetch-stocks.mjs --quotes-only --no-history
           fi
 
+      # Fondene hentes for sig. En fejl her må ikke koste dagens aktiekurser,
+      # som allerede står på disken — derfor "continue-on-error".
+      - name: Hent ETF'er
+        continue-on-error: true
+        run: |
+          if [ "${{ steps.mode.outputs.full }}" = "true" ]; then
+            node scripts/fetch-etf.mjs
+          else
+            node scripts/fetch-etf.mjs --quotes-only
+          fi
+
       - name: Commit hvis der er ændringer
         run: |
           if git diff --quiet -- data/; then

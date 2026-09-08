@@ -1,0 +1,674 @@
+<!-- Title: ETF-kurser – børshandlede fonde -->
+<!-- filepath: etf.html -->
+<!DOCTYPE html>
+<html lang="da" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ETF-kurser – børshandlede fonde</title>
+<meta name="description" content="Børshandlede fonde noteret i Frankfurt, Amsterdam, USA og Norden: kurs, udvikling, formue og omkostning.">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/kursliste.css">
+<script>
+tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] } } } }
+</script>
+<style>
+  .pager-btn {
+    border: 1px solid var(--hairline); color: var(--text-secondary); background: transparent;
+    border-radius: 8px; padding: 5px 11px; font-size: 12px; font-weight: 700; cursor: pointer;
+  }
+  .pager-btn[disabled] { opacity: .35; cursor: default; }
+  .pager-btn:not([disabled]):hover { color: var(--text-primary); }
+
+  .picker-wrap { position: relative; }
+  #picker {
+    position: absolute; z-index: 30; top: calc(100% + 6px); left: 0;
+    width: min(680px, calc(100vw - 32px)); max-height: 70vh; overflow-y: auto;
+    background: var(--surface-1); border: 1px solid var(--hairline);
+    border-radius: 12px; box-shadow: 0 12px 32px rgba(0,0,0,.16); padding: 14px;
+  }
+  #picker[hidden] { display: none; }
+  .pick-group { break-inside: avoid; margin-bottom: 14px; }
+  .pick-group h3 {
+    font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: .05em;
+    color: var(--text-muted); margin-bottom: 6px;
+  }
+  .pick-item {
+    display: flex; align-items: flex-start; gap: 7px; padding: 3px 0;
+    font-size: 13px; cursor: pointer; line-height: 1.35;
+  }
+  .pick-item input { margin-top: 2px; accent-color: var(--accent); flex: 0 0 auto; }
+  .pick-item span { color: var(--text-secondary); }
+  .pick-item input:checked + span { color: var(--text-primary); font-weight: 600; }
+
+  @keyframes kl-flash-up   { from { background: color-mix(in srgb, var(--delta-up) 16%, transparent); } to { background: transparent; } }
+  @keyframes kl-flash-down { from { background: color-mix(in srgb, var(--delta-down) 16%, transparent); } to { background: transparent; } }
+  tr.flash-up   td { animation: kl-flash-up   .9s ease-out; }
+  tr.flash-down td { animation: kl-flash-down .9s ease-out; }
+  @media (prefers-reduced-motion: reduce) { tr.flash-up td, tr.flash-down td { animation: none; } }
+  .live-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--delta-up); display: inline-block; }
+
+  /* "2,31 bio." is one figure; letting it break across two lines makes the
+     column read as two. Same for the period headers. */
+  td.text-right, th.text-right { white-space: nowrap; }
+</style>
+</head>
+
+<body class="font-sans antialiased">
+<header id="sitenav"></header>
+
+<div class="max-w-[1400px] mx-auto px-4 py-8">
+
+  <div class="flex items-start justify-between gap-4 mb-6 flex-wrap">
+    <div>
+      <h1 class="text-2xl md:text-3xl font-extrabold tracking-tight">
+        ETF-kurser – børshandlede fonde
+      </h1>
+      <p class="text-sm mt-1 muted" style="max-width:70ch">
+        En ETF er en fond, du handler som en aktie: ét køb giver dig hele indekset i stedet for
+        ét selskab. Listen er de største fonde på de børser en dansk investor kan handle på —
+        Frankfurt og Amsterdam, hvor de europæiske UCITS-fonde er noteret, de tre amerikanske
+        børser, og det håndfuld der er noteret i Norden.
+      </p>
+    </div>
+    <a href="markedskurser.html"
+       class="btn-primary shrink-0 inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-bold transition-transform active:scale-95">
+      Enkeltaktier <span aria-hidden="true">→</span>
+    </a>
+  </div>
+
+  <div class="card rounded-2xl p-4 md:p-6">
+
+    <!-- ─── Controls ───────────────────────────────────────────────────── -->
+    <div class="flex flex-wrap items-center gap-3 mb-4">
+      <input id="q" type="search" class="rounded-lg px-3 py-2 text-sm bg-transparent" style="width:14rem;border:1px solid var(--hairline);color:var(--text-primary)"
+             placeholder="Navn / symbol" aria-label="Søg efter navn eller symbol">
+
+      <select id="family" class="rounded-lg px-3 py-2 text-sm bg-transparent" aria-label="Udbyder"
+              style="border:1px solid var(--hairline);color:var(--text-primary)">
+        <option value="">Alle udbydere</option>
+      </select>
+
+      <select id="sortField" class="rounded-lg px-3 py-2 text-sm bg-transparent" aria-label="Sortér efter"
+              style="border:1px solid var(--hairline);color:var(--text-primary)"></select>
+
+      <div class="picker-wrap">
+        <button id="pickerBtn" class="rounded-lg px-3 py-2 text-sm font-semibold muted" aria-expanded="false"
+                style="border:1px solid var(--hairline)"
+                data-hint-title="Kolonner"
+                data-hint="Vælg selv hvad tabellen viser. Dit valg huskes i denne browser.">
+          ⊞ Kolonner <span id="pickerCount" class="num faint"></span>
+        </button>
+        <div id="picker" hidden role="dialog" aria-label="Vælg kolonner"></div>
+      </div>
+
+      <div class="inline-flex rounded-lg overflow-hidden" style="border:1px solid var(--hairline)"
+           role="group" aria-label="Valuta">
+        <button id="curNative" class="px-3 py-2 text-xs font-bold" aria-pressed="true"
+                data-hint-title="Noteret valuta"
+                data-hint="Viser hver kurs i den valuta børsen handler i. Rå kildeværdier, men kurssortering blander euro, dollar og kroner.">Noteret</button>
+        <button id="curDkk" class="px-3 py-2 text-xs font-bold" aria-pressed="false"
+                data-hint-title="Alt i DKK"
+                data-hint="Omregner kurs og formue til kroner med ECB-kursen, så tallene kan sammenlignes på tværs. Omregnede tal markeres med ≈.">Alt i DKK</button>
+      </div>
+
+      <span id="freshness" class="inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-xs font-bold" tabindex="0"
+            data-hint-title="Dataalder"
+            data-hint="Hvornår kurserne sidst ændrede sig. De hentes tre gange på hverdage, så de er forsinkede — ikke live."
+            style="border:1px solid var(--hairline);color:var(--text-secondary)"></span>
+
+      <button id="refresh" type="button" class="ml-auto inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold muted"
+              style="border:1px solid var(--hairline)">
+        <span aria-hidden="true">⟳</span> Genindlæs
+      </button>
+    </div>
+
+    <!-- ─── Chips ──────────────────────────────────────────────────────── -->
+    <div class="flex flex-wrap items-center gap-2 mb-4">
+      <span class="text-xs font-bold mr-1 muted">Filtre</span>
+      <span id="marketChips" class="contents"></span>
+      <span class="mx-1 faint" aria-hidden="true">|</span>
+      <button class="chip rounded-full px-3 py-1 text-xs font-semibold" data-chip="gainers" aria-pressed="false"
+              data-hint-title="Vindere i dag" data-hint="Viser kun fonde der er steget siden forrige lukkekurs.">Vindere i dag</button>
+      <button class="chip rounded-full px-3 py-1 text-xs font-semibold" data-chip="losers" aria-pressed="false"
+              data-hint-title="Tabere i dag" data-hint="Viser kun fonde der er faldet siden forrige lukkekurs.">Tabere i dag</button>
+      <button class="chip rounded-full px-3 py-1 text-xs font-semibold" data-chip="cheap" aria-pressed="false"
+              data-hint-title="Lav omkostning" data-hint="Fonde med en oplyst årlig omkostning på 0,20 % eller derunder. Fonde uden oplyst omkostning falder ud af filteret — de er ikke nødvendigvis dyre.">Lav omkostning</button>
+      <button id="clearFilters" class="chip rounded-full px-3 py-1 text-xs font-semibold">Nulstil</button>
+      <span id="count" class="ml-auto text-xs faint num"></span>
+    </div>
+
+    <!-- ─── Risk ───────────────────────────────────────────────────────── -->
+    <div id="risk" class="rounded-xl p-3 mb-4 flex items-start gap-3" style="border:1px solid var(--hairline)">
+      <span class="hint-i shrink-0" aria-hidden="true">i</span>
+      <div>
+        <p class="text-sm font-bold">Risikooplysning vedrørende investering i fonde</p>
+        <p class="text-xs mt-1 muted">
+          Kurserne er vejledende markedsdata og udgør ikke investeringsrådgivning. En investeret
+          opsparing kan både stige og falde i værdi, og historiske afkast er ingen garanti for
+          fremtidige afkast. Der er risiko for, at du ikke får de investerede penge tilbage.
+          Fonde noteret i udenlandsk valuta indebærer desuden en valutarisiko.
+        </p>
+      </div>
+      <button type="button" id="riskClose" aria-label="Luk risikooplysning" class="shrink-0 self-start text-lg leading-none faint">×</button>
+    </div>
+
+    <!-- ─── Table ──────────────────────────────────────────────────────── -->
+    <div class="overflow-x-auto" style="overflow-x:auto">
+      <table class="w-full text-sm border-collapse">
+        <thead><tr id="head" class="text-xs faint"></tr></thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+
+    <div class="flex items-center justify-between gap-3 mt-4 flex-wrap">
+      <p id="pageInfo" class="text-xs faint num"></p>
+      <div class="flex items-center gap-2">
+        <button id="prev" class="pager-btn" type="button">← Forrige</button>
+        <button id="next" class="pager-btn" type="button">Næste →</button>
+      </div>
+    </div>
+
+    <p id="status" class="text-xs faint mt-4"></p>
+  </div>
+
+  <p class="text-xs faint mt-4" style="max-width:80ch">
+    Bemærk at samme fond ofte er noteret flere gange — akkumulerende og udbyttebetalende andele
+    har hvert sit symbol og hver sin kurs, men deler formue. Omkostningsprocenten oplyser Yahoo
+    kun for en del af fondene, især de amerikanske; hvor den mangler, står der en streg frem for
+    et gæt.
+  </p>
+
+</div>
+
+<script src="assets/kursliste.js"></script>
+<script>
+(() => {
+  'use strict';
+  const K = window.KL;
+  const $  = (s) => document.querySelector(s);
+  const $$ = (s) => Array.from(document.querySelectorAll(s));
+  K.renderNav('etf');
+
+  const STORE = 'kursliste.etfkolonner.v1';
+
+  const state = {
+    all: [], updatedAt: null, fx: null, visible: [],
+    market: null, family: '', q: '', chip: null,
+    sort: 'rank', dir: 1,
+    page: 1, pageSize: 50, cols: null,
+  };
+
+  // Same two-mode view the stock list uses: "Noteret" leaves every figure as
+  // the source gave it, "Alt i DKK" converts so a euro price and a dollar price
+  // can sit in one sorted column.
+  function view(r) {
+    const conv = state.currency === 'dkk' && r.currency !== 'DKK';
+    return {
+      conv,
+      currency: conv ? 'DKK' : r.currency,
+      price: conv ? r.price_dkk : r.price,
+      change: conv && r.price && r.price_dkk ? r.change * (r.price_dkk / r.price) : r.change,
+      net: conv ? r.net_assets_dkk : r.net_assets,
+      a: conv ? '≈ ' : '',
+    };
+  }
+  state.currency = 'native';
+
+  const pct = (v) => (v == null ? '<span class="faint">–</span>'
+    : '<span class="num ' + K.dirClass(v) + '">' + K.fmtPct(v) + '</span>');
+
+  // ── Columns ────────────────────────────────────────────────────────────
+  const COLUMNS = [
+    { key: 'rank', label: '#', group: 'Fond', right: true, sortKey: 'rank', asc: true,
+      hint: 'Fondens plads målt på formue, blandt de fonde listen dækker.',
+      cell: (r) => '<span class="num faint text-xs">' + (r.rank == null ? '–' : r.rank) + '</span>' },
+
+    { key: 'name', label: 'Navn', group: 'Fond', sortKey: 'name', asc: true,
+      hint: 'Fondens navn og børssymbol. Samme fond kan optræde flere gange — akkumulerende og udbyttebetalende andele har hvert sit symbol.',
+      cell: (r) => '<div class="font-semibold">' + K.esc(r.name) + '</div>'
+        + '<div class="text-xs faint">' + K.flagOf(r.market) + ' ' + K.esc(r.symbol) + '</div>' },
+
+    { key: 'family', label: 'Udbyder', group: 'Fond',
+      hint: 'Fondsselskabet bag. Vanguard, BlackRock (iShares) og Xtrackers står bag hovedparten af de europæiske UCITS-fonde.',
+      cell: (r) => '<span class="muted text-xs">' + K.esc(r.family || '–') + '</span>' },
+
+    { key: 'category', label: 'Kategori', group: 'Fond',
+      hint: 'Morningstars kategori. Yahoo oplyser den for de amerikanske fonde og næsten aldrig for de europæiske.',
+      cell: (r) => '<span class="muted text-xs">' + K.esc(r.category || '–') + '</span>' },
+
+    { key: 'exchange', label: 'Børs', group: 'Fond',
+      hint: 'Den børs fonden er noteret på. Danske banker handler typisk de tyske og amerikanske noteringer.',
+      cell: (r) => '<span class="muted text-xs">' + K.esc(r.exchange || '–') + '</span>' },
+
+    { key: 'currency', label: 'Valuta', group: 'Fond',
+      hint: 'Den valuta børsen handler fonden i. Bemærk at fondens egen valuta kan være en anden end noteringens.',
+      cell: (r) => '<span class="muted">' + K.esc(view(r).currency) + '</span>' },
+
+    { key: 'price', label: 'Seneste', group: 'Dagens kurs', right: true,
+      sortKey: (r) => view(r).price,
+      hint: 'Den senest registrerede kurs.',
+      cell: (r) => { const v = view(r); return '<span class="num font-semibold">' + v.a + K.fmtPrice(v.price) + '</span>'; } },
+
+    { key: 'pct_today', label: 'I dag %', group: 'Dagens kurs', right: true, sortKey: 'percent_change',
+      hint: 'Kursændring siden forrige handelsdags lukkekurs. Kan sammenlignes på tværs af valutaer.',
+      cell: (r) => pct(r.percent_change) },
+
+    { key: 'change', label: 'I dag +/-', group: 'Dagens kurs', right: true, sortKey: 'change',
+      hint: 'Samme bevægelse som “I dag %”, bare i beløb.',
+      cell: (r) => { const v = view(r); return '<span class="num ' + K.dirClass(r.change) + '">' + v.a + K.fmtDelta(v.change) + '</span>'; } },
+
+    { key: 'prev_close', label: 'Forrige luk', group: 'Dagens kurs', right: true, sortKey: 'previous_close',
+      hint: 'Kursen da børsen lukkede forrige handelsdag.',
+      cell: (r) => { const v = view(r); const c = v.conv && r.price ? r.previous_close * (r.price_dkk / r.price) : r.previous_close;
+        return '<span class="num">' + v.a + K.fmtPrice(c) + '</span>'; } },
+
+    { key: 'spark30', label: 'Udv. 30 dage', group: 'Udvikling', sortKey: 'change30d',
+      hint: 'Kurslinje for de seneste 30 handelsdage. Grøn betyder op over perioden, rød ned.',
+      cell: (r) => K.sparkline(r.spark, r.change30d) },
+
+    { key: 'pct_7d', label: '7 dage %', group: 'Udvikling', right: true, sortKey: 'change_7d',
+      hint: 'Kursændring over de seneste fem handelsdage — en børsuge.',
+      cell: (r) => pct(r.change_7d) },
+
+    { key: 'pct_30d', label: '30 dage %', group: 'Udvikling', right: true, sortKey: 'change30d',
+      hint: 'Kursændring over de seneste 30 handelsdage. Samme periode som kurslinjen.',
+      cell: (r) => pct(r.change30d) },
+
+    { key: 'pct_6m', label: '6 mdr. %', group: 'Udvikling', right: true, sortKey: 'change_6m',
+      hint: 'Kursændring over de seneste 126 handelsdage, cirka et halvt år.',
+      cell: (r) => pct(r.change_6m) },
+
+    { key: 'pct_1y', label: '1 år %', group: 'Udvikling', right: true, sortKey: 'change_1y',
+      hint: 'Kursændring over de seneste 252 handelsdage, cirka et børsår. Kursudvikling alene — udbytte fra en udbyttebetalende andel tæller ikke med.',
+      cell: (r) => pct(r.change_1y) },
+
+    { key: 'pct_3y', label: '3 år %', group: 'Udvikling', right: true, sortKey: 'change_3y',
+      hint: 'Kursændring over de seneste 756 handelsdage, cirka tre børsår. Fonde noteret for nylig har ingen.',
+      cell: (r) => pct(r.change_3y) },
+
+    { key: 'from_high', label: '% fra toppen', group: 'Udvikling', right: true,
+      sortKey: (r) => (r.high_52w && r.price ? ((r.price - r.high_52w) / r.high_52w) * 100 : null),
+      hint: 'Hvor langt kursen står under det højeste niveau det seneste år. Nul betyder, at fonden står i årets top.',
+      cell: (r) => pct(r.high_52w && r.price ? ((r.price - r.high_52w) / r.high_52w) * 100 : null) },
+
+    { key: 'net_assets', label: 'Formue', group: 'Nøgletal', right: true, sortKey: 'net_assets_dkk',
+      hint: 'Fondens samlede formue. Et stort tal betyder en likvid fond med en snæver spredning mellem købs- og salgskurs.',
+      cell: (r) => { const v = view(r);
+        return v.net == null ? '<span class="faint">–</span>'
+          : '<span class="num">' + v.a + K.fmtBig(v.net) + '</span>'; } },
+
+    { key: 'expense', label: 'Omkostning', group: 'Nøgletal', right: true, sortKey: 'expense_ratio',
+      hint: 'Den årlige omkostning i procent af det investerede beløb. Yahoo oplyser den for en del af fondene — især de amerikanske. En streg betyder “ikke oplyst”, ikke “gratis”.',
+      cell: (r) => r.expense_ratio == null ? '<span class="faint">–</span>'
+        : '<span class="num">' + r.expense_ratio.toLocaleString('da-DK', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' %</span>' },
+
+    { key: 'high52', label: '52-ugers top', group: 'Nøgletal', right: true, sortKey: 'high_52w',
+      hint: 'Den højeste kurs det seneste år.',
+      cell: (r) => { const v = view(r); const h = v.conv && r.price ? r.high_52w * (r.price_dkk / r.price) : r.high_52w;
+        return '<span class="num">' + v.a + K.fmtPrice(h) + '</span>'; } },
+
+    { key: 'low52', label: '52-ugers bund', group: 'Nøgletal', right: true, sortKey: 'low_52w',
+      hint: 'Den laveste kurs det seneste år.',
+      cell: (r) => { const v = view(r); const l = v.conv && r.price ? r.low_52w * (r.price_dkk / r.price) : r.low_52w;
+        return '<span class="num">' + v.a + K.fmtPrice(l) + '</span>'; } },
+  ];
+
+  const BY_KEY = new Map(COLUMNS.map((c) => [c.key, c]));
+
+  // What the table opens on, and what both "Standard" and "Nulstil" return to.
+  const DEFAULT_COLS = ['rank', 'name', 'family', 'exchange',
+                        'pct_today', 'spark30', 'pct_30d', 'pct_6m', 'pct_1y', 'net_assets', 'expense'];
+
+  // The table always reads in the registry's order — the same order the picker
+  // lists the columns in — so a column sits in the same place no matter when it
+  // was switched on.
+  const inOrder = (keys) => COLUMNS.filter((c) => keys.includes(c.key)).map((c) => c.key);
+
+  function loadCols() {
+    try {
+      const saved = JSON.parse(localStorage.getItem(STORE));
+      if (Array.isArray(saved) && saved.length) {
+        const kept = inOrder(saved.filter((k) => BY_KEY.has(k)));
+        if (kept.length) return kept;
+      }
+    } catch { /* ingen eller ulæselig indstilling */ }
+    return inOrder(DEFAULT_COLS);
+  }
+  function saveCols() {
+    try { localStorage.setItem(STORE, JSON.stringify(state.cols)); } catch { /* privat vindue */ }
+  }
+  const activeCols = () => state.cols.map((k) => BY_KEY.get(k)).filter(Boolean);
+
+  // ── Filtering and sorting ──────────────────────────────────────────────
+  function sortValue(col, r) {
+    const s = col.sortKey;
+    return typeof s === 'function' ? s(r) : s ? r[s] : null;
+  }
+
+  function filtered() {
+    const q = state.q.trim().toLowerCase();
+    let rows = state.all.filter((r) => {
+      if (state.market && r.market !== state.market) return false;
+      if (state.family && r.family !== state.family) return false;
+      if (state.chip === 'gainers' && !(r.percent_change > 0)) return false;
+      if (state.chip === 'losers' && !(r.percent_change < 0)) return false;
+      if (state.chip === 'cheap' && !(r.expense_ratio != null && r.expense_ratio <= 0.2)) return false;
+      if (q && !((r.name || '').toLowerCase().includes(q) || (r.symbol || '').toLowerCase().includes(q)
+                 || (r.family || '').toLowerCase().includes(q))) return false;
+      return true;
+    });
+
+    const col = BY_KEY.get(state.sort) || BY_KEY.get('rank');
+    const dir = state.dir;
+    rows.sort((a, b) => {
+      const x = sortValue(col, a), y = sortValue(col, b);
+      // Missing figures sink, whichever way the column is pointing, so a sort
+      // never opens on a screenful of dashes.
+      if (x == null && y == null) return 0;
+      if (x == null) return 1;
+      if (y == null) return -1;
+      if (typeof x === 'string' || typeof y === 'string') return dir * String(x).localeCompare(String(y), 'da');
+      return dir * (x - y);
+    });
+    return rows;
+  }
+
+  // ── Rendering ──────────────────────────────────────────────────────────
+  function renderHead() {
+    $('#head').innerHTML = activeCols().map((c) => {
+      const on = state.sort === c.key;
+      const arrow = on ? (state.dir === 1 ? ' ▲' : ' ▼') : '';
+      return '<th class="py-2 px-3 font-semibold ' + (c.right ? 'text-right' : 'text-left') + '"'
+        + ' data-sort="' + c.key + '" aria-sort="' + (on ? (state.dir === 1 ? 'ascending' : 'descending') : 'none') + '"'
+        + ' data-hint-title="' + K.esc(c.label) + '" data-hint="' + K.esc(c.hint || '') + '">'
+        + '<span style="border-bottom:1px dotted var(--hairline)">' + K.esc(c.label) + '</span>' + arrow + '</th>';
+    }).join('');
+  }
+
+  function render() {
+    const rows = filtered();
+    const cols = activeCols();
+    const size = state.pageSize || rows.length || 1;
+    const pages = Math.max(1, Math.ceil(rows.length / size));
+    if (state.page > pages) state.page = pages;
+    const start = (state.page - 1) * size;
+    const slice = rows.slice(start, start + size);
+    state.visible = slice.map((r) => r.symbol);
+
+    renderHead();
+
+    $('#count').textContent = K.fmtInt(rows.length) + (rows.length === 1 ? ' fond' : ' fonde')
+      + (rows.length !== state.all.length ? ' af ' + K.fmtInt(state.all.length) : '');
+    $('#pageInfo').textContent = rows.length
+      ? 'Viser ' + K.fmtInt(start + 1) + '–' + K.fmtInt(Math.min(start + slice.length, rows.length))
+        + ' · side ' + state.page + ' af ' + pages
+      : 'Ingen resultater';
+    $('#prev').disabled = state.page <= 1;
+    $('#next').disabled = state.page >= pages;
+
+    $('#rows').innerHTML = slice.map((r) => '<tr class="border-t divider hover:bg-black/[.02]" data-sym="' + K.esc(r.symbol) + '">'
+      + cols.map((c) => '<td class="py-3 px-3 ' + (c.right ? 'text-right' : '') + '">' + c.cell(r) + '</td>').join('')
+      + '</tr>').join('')
+      || '<tr><td colspan="' + Math.max(cols.length, 1) + '" class="py-8 text-center text-sm muted">Ingen fonde matcher filtrene.</td></tr>';
+  }
+
+  // ── Column picker ──────────────────────────────────────────────────────
+  function renderPicker() {
+    const groups = [];
+    for (const c of COLUMNS) {
+      let g = groups.find((x) => x.name === c.group);
+      if (!g) groups.push((g = { name: c.group, cols: [] }));
+      g.cols.push(c);
+    }
+    $('#picker').innerHTML =
+      '<div class="flex items-center gap-2 mb-3 flex-wrap">'
+      + '<button class="chip rounded-full px-3 py-1 text-xs font-semibold" data-preset="default">Standard</button>'
+      + '<button class="chip rounded-full px-3 py-1 text-xs font-semibold" data-preset="min">Minimal</button>'
+      + '<button class="chip rounded-full px-3 py-1 text-xs font-semibold" data-preset="all">Alt</button>'
+      + '</div>'
+      + '<div style="column-count:2;column-gap:22px">'
+      + groups.map((g) => '<div class="pick-group"><h3>' + K.esc(g.name) + '</h3>'
+          + g.cols.map((c) => '<label class="pick-item"><input type="checkbox" data-col="' + c.key + '"'
+              + (state.cols.includes(c.key) ? ' checked' : '') + '><span>' + K.esc(c.label) + '</span></label>').join('')
+          + '</div>').join('')
+      + '</div>';
+    wirePicker();
+  }
+
+  // Only the tick marks change, never the markup: rebuilding the panel from
+  // inside its own click handler detaches the element that was clicked, and the
+  // outside-click listener then reads the detached node as "outside".
+  function syncPicker() {
+    $$('#picker [data-col]').forEach((box) => { box.checked = state.cols.includes(box.dataset.col); });
+    $('#pickerCount').textContent = '(' + state.cols.length + ')';
+  }
+
+  function afterColChange() {
+    if (!state.cols.includes(state.sort)) state.sort = state.cols[0];
+    saveCols();
+    $('#pickerCount').textContent = '(' + state.cols.length + ')';
+    buildSortSelect();
+    render();
+  }
+
+  function wirePicker() {
+    $$('#picker [data-col]').forEach((box) => box.addEventListener('change', () => {
+      const key = box.dataset.col;
+      state.cols = box.checked ? inOrder(state.cols.concat(key)) : state.cols.filter((k) => k !== key);
+      if (!state.cols.length) { state.cols = ['name']; syncPicker(); }
+      afterColChange();
+    }));
+    $$('#picker [data-preset]').forEach((btn) => btn.addEventListener('click', () => {
+      state.cols = btn.dataset.preset === 'all' ? COLUMNS.map((c) => c.key)
+        : btn.dataset.preset === 'min' ? inOrder(['name', 'pct_today', 'price'])
+        : inOrder(DEFAULT_COLS);
+      syncPicker(); afterColChange();
+    }));
+  }
+
+  function buildSortSelect() {
+    const sel = $('#sortField');
+    sel.innerHTML = activeCols().map((c) =>
+      '<option value="' + c.key + '"' + (c.key === state.sort ? ' selected' : '') + '>' + K.esc(c.label) + '</option>').join('');
+  }
+
+  // ── Live kurser ────────────────────────────────────────────────────────
+  // Only what a quote carries is replaced. The period returns and the formue
+  // stay as the build computed them: they are measured to a close, and
+  // rewriting them from one tick would make the row disagree with its own hint.
+  function applyLive(data) {
+    const moved = [];
+    for (const r of state.all) {
+      const q = data.q[r.symbol];
+      if (!q || q.p == null) continue;
+      const before = r.price;
+      if (before === q.p) continue;
+      if (r.price_dkk != null && before) r.price_dkk *= q.p / before;
+      r.price = q.p;
+      if (q.c != null) r.change = q.c;
+      if (q.cp != null) r.percent_change = q.cp;
+      moved.push({ symbol: r.symbol, up: q.p > before });
+    }
+    if (!moved.length) return;
+    render();
+    const esc = (v) => (window.CSS && CSS.escape ? CSS.escape(v) : v.replace(/"/g, '\\"'));
+    for (const m of moved) {
+      const tr = $('#rows tr[data-sym="' + esc(m.symbol) + '"]');
+      if (tr) tr.classList.add(m.up ? 'flash-up' : 'flash-down');
+    }
+  }
+
+  function liveChip(mode, data) {
+    const chip = $('#freshness');
+    if (!chip) return;
+    if (mode === 'live') {
+      const delays = Object.keys(data.q).map((k) => data.q[k].d).filter((d) => d != null);
+      const worst = delays.length ? Math.max.apply(null, delays) : 0;
+      chip.innerHTML = '<span class="live-dot" aria-hidden="true"></span>Kurser hvert minut';
+      chip.setAttribute('data-hint-title', 'Løbende kurser');
+      chip.setAttribute('data-hint', 'Kurserne for de fonde du kan se hentes hvert minut, så længe fanen er åben og børserne handler. '
+        + (worst > 0
+            ? 'Den langsomste børs på skærmen leverer ' + worst + ' minutters forsinkelse; resten leverer uforsinket.'
+            : 'Ingen af børserne på skærmen leverer forsinkede data lige nu.')
+        + ' Formue, omkostning og perioderne bagud stammer fra den seneste hentning.');
+      return;
+    }
+    chip.textContent = mode === 'paused' && !K.tradingNow()
+      ? 'Børserne er lukkede'
+      : 'Opdateret ' + K.fmtAge(state.updatedAt);
+    chip.setAttribute('data-hint-title', 'Dataalder');
+    chip.setAttribute('data-hint', 'Kurserne opdateres løbende, mens børserne handler. Udenfor viser siden den seneste hentning.');
+  }
+
+  let live = null;
+  function beginLive() {
+    if (live) return;
+    live = K.startLive({
+      interval: 60_000,
+      symbols: () => state.visible || [],
+      apply: applyLive,
+      status: liveChip,
+    });
+  }
+
+  // ── Load ───────────────────────────────────────────────────────────────
+  async function load() {
+    try {
+      const res = await fetch('data/etf.json', { cache: 'no-store' });
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      const data = await res.json();
+
+      state.all = data.etfs || [];
+      state.updatedAt = data.updated_at;
+      state.fx = data.fx || null;
+
+      // Market chips are built from what the data actually contains, so a venue
+      // that stopped returning funds disappears rather than filtering to zero.
+      const markets = [...new Set(state.all.map((r) => r.market))]
+        .sort((a, b) => K.marketOf(a).label.localeCompare(K.marketOf(b).label, 'da'));
+      $('#marketChips').innerHTML = markets.map((m) => {
+        const info = K.marketOf(m);
+        return '<button class="chip rounded-full px-3 py-1 text-xs font-semibold" data-market="' + m + '" aria-pressed="false"'
+          + ' data-hint-title="' + K.esc(info.label) + '" data-hint="Viser kun fonde noteret på ' + K.esc(info.exchange) + '.">'
+          + info.flag + ' ' + K.esc(info.label) + '</button>';
+      }).join('');
+      wireMarketChips();
+
+      const families = [...new Set(state.all.map((r) => r.family).filter(Boolean))].sort((a, b) => a.localeCompare(b, 'da'));
+      $('#family').innerHTML = '<option value="">Alle udbydere</option>'
+        + families.map((f) => '<option value="' + K.esc(f) + '">' + K.esc(f) + '</option>').join('');
+
+      render();
+      beginLive();
+
+      const when = state.updatedAt
+        ? new Date(state.updatedAt).toLocaleString('da-DK', { day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit' })
+        : 'ukendt tidspunkt';
+      $('#freshness').textContent = 'Opdateret ' + K.fmtAge(state.updatedAt);
+      $('#status').textContent = 'Kilde: Yahoo Finance · ' + K.fmtInt(state.all.length) + ' fonde · hentet ' + when
+        + (state.fx ? ' · omregning til DKK med ECB-kursen fra ' + state.fx.date : '');
+    } catch (err) {
+      $('#rows').innerHTML = '<tr><td colspan="6" class="py-8 text-center text-sm" style="color:var(--delta-down)">'
+        + 'Kunne ikke indlæse fondene: ' + K.esc(err.message) + '</td></tr>';
+    }
+  }
+
+  // ── Wiring ─────────────────────────────────────────────────────────────
+  function wireMarketChips() {
+    $$('[data-market]').forEach((b) => b.addEventListener('click', () => {
+      const m = b.dataset.market;
+      state.market = state.market === m ? null : m;
+      $$('[data-market]').forEach((x) => x.setAttribute('aria-pressed', String(x.dataset.market === state.market)));
+      state.page = 1; render();
+    }));
+  }
+
+  $('#q').addEventListener('input', (e) => { state.q = e.target.value; state.page = 1; render(); });
+  $('#family').addEventListener('change', (e) => { state.family = e.target.value; state.page = 1; render(); });
+  $('#sortField').addEventListener('change', (e) => {
+    state.sort = e.target.value;
+    const col = BY_KEY.get(state.sort);
+    state.dir = col && col.asc ? 1 : -1;
+    render();
+  });
+
+  $('#head').addEventListener('click', (e) => {
+    const th = e.target.closest('[data-sort]');
+    if (!th) return;
+    const key = th.dataset.sort;
+    if (state.sort === key) state.dir = -state.dir;
+    else { state.sort = key; const col = BY_KEY.get(key); state.dir = col && col.asc ? 1 : -1; }
+    buildSortSelect();
+    render();
+  });
+
+  $$('[data-chip]').forEach((b) => b.addEventListener('click', () => {
+    const c = b.dataset.chip;
+    state.chip = state.chip === c ? null : c;
+    $$('[data-chip]').forEach((x) => x.setAttribute('aria-pressed', String(x.dataset.chip === state.chip)));
+    state.page = 1; render();
+  }));
+
+  $('#clearFilters').addEventListener('click', () => {
+    state.market = null; state.family = ''; state.q = ''; state.chip = null;
+    $('#q').value = ''; $('#family').value = '';
+    $$('[data-market],[data-chip]').forEach((b) => b.setAttribute('aria-pressed', 'false'));
+    // "Nulstil" means the whole view, not just which rows are left.
+    state.cols = inOrder(DEFAULT_COLS);
+    syncPicker();
+    state.page = 1;
+    afterColChange();
+  });
+
+  $('#prev').addEventListener('click', () => { if (state.page > 1) { state.page--; render(); window.scrollTo({ top: 0, behavior: 'smooth' }); } });
+  $('#next').addEventListener('click', () => { state.page++; render(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
+  $('#refresh').addEventListener('click', load);
+  $('#riskClose').addEventListener('click', () => { $('#risk').hidden = true; });
+
+  const setCurrency = (mode) => {
+    state.currency = mode;
+    $('#curNative').setAttribute('aria-pressed', String(mode === 'native'));
+    $('#curDkk').setAttribute('aria-pressed', String(mode === 'dkk'));
+    render();
+  };
+  $('#curNative').addEventListener('click', () => setCurrency('native'));
+  $('#curDkk').addEventListener('click', () => setCurrency('dkk'));
+
+  $('#pickerBtn').addEventListener('click', () => {
+    const panel = $('#picker');
+    const open = panel.hidden;
+    panel.hidden = !open;
+    $('#pickerBtn').setAttribute('aria-expanded', String(open));
+  });
+  document.addEventListener('click', (e) => {
+    // A click that rebuilt part of the panel detaches its own target; a node no
+    // longer in the document cannot tell us whether it was outside.
+    if (!document.contains(e.target)) return;
+    if ($('#picker').hidden) return;
+    if (e.target.closest('.picker-wrap')) return;
+    $('#picker').hidden = true;
+    $('#pickerBtn').setAttribute('aria-expanded', 'false');
+  });
+
+  // The age ticks over on its own, but not while the chip is showing the live
+  // state: both run on a minute, and whichever fired last would win.
+  setInterval(() => {
+    const chip = $('#freshness');
+    if (state.updatedAt && chip && !chip.querySelector('.live-dot')) {
+      chip.textContent = 'Opdateret ' + K.fmtAge(state.updatedAt);
+    }
+  }, 60_000);
+
+  state.cols = loadCols();
+  if (!state.cols.includes(state.sort)) state.sort = state.cols[0];
+  $('#pickerCount').textContent = '(' + state.cols.length + ')';
+  renderPicker();
+  buildSortSelect();
+  load();
+})();
+</script>
+</body>
+</html>
