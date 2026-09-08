@@ -94,11 +94,25 @@ async function yahooSession() {
 
 // Yahoo throttles a long burst, and a throttled request looks exactly like a
 // fund with no data. Back off and ask again rather than record an absence.
-async function retrying(fn, attempts = 4) {
+//
+// A 401 is different: the crumb has gone stale, and asking again with the same
+// one fails just as fast three times over. It is minted afresh instead — which
+// is what emptied the whole fund list once, because nothing here did that.
+async function retrying(fn, attempts = 4, session = null) {
   let last = null;
   for (let a = 0; a < attempts; a++) {
     if (a) await sleep(400 * Math.pow(2, a) + Math.random() * 300);
-    try { return await fn(); } catch (err) { last = err; }
+    try { return await fn(); } catch (err) {
+      last = err;
+      if (session && /HTTP 40[13]/.test(String(err.message))) {
+        try {
+          const fresh = await yahooSession();
+          session.headers = fresh.headers;
+          session.crumb = fresh.crumb;
+          console.warn('  Yahoo afviste kaldet — ny session hentet');
+        } catch { /* så fejler næste forsøg også, og det er svaret */ }
+      }
+    }
   }
   throw last;
 }
@@ -122,7 +136,7 @@ async function screenVenue(venue, session) {
         { method: 'POST', headers: { ...session.headers, 'content-type': 'application/json' }, body: JSON.stringify(body) });
       if (!res.ok) throw new Error('HTTP ' + res.status);
       return (await res.json()).finance?.result?.[0]?.quotes || [];
-    });
+    }, 4, session);
     if (!page.length) break;
     out.push(...page);
     if (page.length < size) break;
@@ -195,7 +209,7 @@ async function fetchQuotes(symbols, session) {
         const res = await fetch(url, { headers: session.headers });
         if (!res.ok) throw new Error('HTTP ' + res.status);
         return (await res.json()).quoteResponse?.result || [];
-      });
+      }, 4, session);
       for (const q of rows) {
         if (!q.symbol) continue;
         out.set(q.symbol, {
@@ -273,7 +287,7 @@ async function fetchProfile(symbol, session) {
       category: fp.categoryName || null,
       expense_ratio: fee ? round(fee * 100, 3) : null,   // 0 betyder "ikke oplyst"
     };
-  }, 3);
+  }, 3, session);
 }
 
 // ── Output ───────────────────────────────────────────────────────────────
@@ -350,6 +364,22 @@ async function main() {
 
   const etfs = rows.filter(Boolean).sort((a, b) => (b.net_assets_dkk ?? -1) - (a.net_assets_dkk ?? -1));
   etfs.forEach((e, i) => { e.rank = i + 1; });
+
+  // Et tomt eller stærkt afkortet resultat er en fejl i hentningen, ikke en
+  // nyhed om markedet — og den fil der allerede ligger, er rigtig. Da Yahoo
+  // afviste screeneren med 401, skrev denne linje 0 fonde hen over 1.728 og
+  // committede det. Nu bliver den stående.
+  let existing = 0;
+  try { existing = (JSON.parse(await readFile(OUT_LIST, 'utf8')).etfs || []).length; } catch { /* ingen fil endnu */ }
+  if (!LIMIT && existing && etfs.length < existing * 0.5) {
+    console.error(`Kun ${etfs.length} ETF'er mod ${existing} i den nuværende fil — skriver ikke.`);
+    console.error('Det er en fejl i hentningen, ikke en ændring i markedet. Den gamle fil beholdes.');
+    process.exit(1);
+  }
+  if (!etfs.length) {
+    console.error('Ingen ETF\'er hentet — skriver ikke.');
+    process.exit(1);
+  }
 
   await writeJson(OUT_LIST, {
     updated_at: new Date().toISOString(),
