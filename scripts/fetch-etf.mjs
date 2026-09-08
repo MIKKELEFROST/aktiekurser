@@ -101,7 +101,14 @@ async function yahooSession() {
 async function retrying(fn, attempts = 4, session = null) {
   let last = null;
   for (let a = 0; a < attempts; a++) {
-    if (a) await sleep(400 * Math.pow(2, a) + Math.random() * 300);
+    if (a) {
+      // 429 er ikke en fejl i kaldet — det er Yahoo der beder os vente. Et
+      // sekund er ikke nok; da den lange serie kom til og fordoblede antallet
+      // af kald, faldt 255 fonde ud på præcis det.
+      const rate = /HTTP 429/.test(String(last && last.message));
+      await sleep(rate ? 4000 * a + Math.random() * 2000
+                       : 400 * Math.pow(2, a) + Math.random() * 300);
+    }
     try { return await fn(); } catch (err) {
       last = err;
       if (session && /HTTP 40[13]/.test(String(err.message))) {
@@ -258,14 +265,75 @@ async function fetchHistory(symbol, session) {
   });
 }
 
-function derive(hist) {
+// Den daglige serie rækker tre år tilbage. Fondssiden skal kunne vise mere end
+// det, og range=max giver alligevel kun omkring 300 bjælker uanset hvilket
+// interval man beder om — så den lange serie hentes månedligt, som aktierne
+// gør det. Bjælken er stemplet med periodens FØRSTE dag, men bærer dens SIDSTE
+// kurs, så hver bjælke dateres dagen før den næste åbner.
+// Månedsserien får ét nyt punkt om måneden. At hente den for 1.728 fonde hver
+// aften er spildte kald — og det var dem der udløste rate-grænsen. Ligger der
+// allerede en med et punkt fra indeværende måned, genbruges den.
+async function cachedLifetime(symbol, session) {
+  const path = resolve(OUT_HIST, symbol + '.json');
+  const thisMonth = new Date().toISOString().slice(0, 7);
+  try {
+    const old = JSON.parse(await readFile(path, 'utf8'));
+    const m = old.monthly;
+    if (m && m.dates && m.dates.length > 1 && m.dates[m.dates.length - 1].slice(0, 7) === thisMonth) {
+      return { monthly: m, reused: true };
+    }
+  } catch { /* ingen fil endnu */ }
+  try { return { monthly: await fetchLifetime(symbol, session), reused: false }; }
+  catch { return { monthly: null, reused: false }; }
+}
+
+async function fetchLifetime(symbol, session) {
+  return retrying(async () => {
+    const url = 'https://query1.finance.yahoo.com/v8/finance/chart/' + encodeURIComponent(symbol)
+      + '?interval=1mo&range=max';
+    const res = await fetch(url, { headers: session.headers });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const r = (await res.json()).chart?.result?.[0];
+    const stamps = r?.timestamp || [], closes = r?.indicators?.quote?.[0]?.close || [];
+    const tz = r?.meta?.gmtoffset || 0;
+    const day = (secs) => new Date((secs + tz) * 1000).toISOString().slice(0, 10);
+    const dayBefore = (iso) => new Date(new Date(iso + 'T00:00:00Z') - 86400000).toISOString().slice(0, 10);
+
+    const dates = [], vals = [];
+    for (let i = 0; i < closes.length; i++) {
+      if (closes[i] == null || stamps[i] == null) continue;
+      const isLast = i === closes.length - 1;
+      dates.push(isLast ? day(stamps[i]) : dayBefore(day(stamps[i + 1] ?? stamps[i])));
+      vals.push(round(closes[i], 4));
+    }
+    if (dates.length < 2) return null;
+    return { dates, closes: vals };
+  }, 3, session);
+}
+
+function derive(hist, monthly) {
   const c = hist.closes;
   const out = { spark: c.slice(-SPARK_POINTS) };
   for (const [key, back] of Object.entries(WINDOWS)) out[key] = moveOver(c, back);
   const year = c.slice(-252);
   out.high_52w = round(Math.max(...year), 4);
   out.low_52w = round(Math.min(...year), 4);
-  out.first_date = hist.dates[0];
+  out.first_date = monthly && monthly.dates.length ? monthly.dates[0] : hist.dates[0];
+
+  // Den daglige serie er tre år lang, og tre år er 756 handelsdage — så
+  // change_3y faldt ud for to tredjedele af fondene, fordi den bad om ét
+  // punkt mere end filen havde. Når den lange serie er der, måles de lange
+  // vinduer på den i stedet.
+  if (monthly && monthly.closes.length > 12) {
+    const m = monthly.closes;
+    const overMonths = (months) => {
+      if (m.length <= months) return null;
+      const a = m[m.length - 1 - months], b = m[m.length - 1];
+      return a ? round(((b - a) / a) * 100, 4) : null;
+    };
+    if (out.change_3y == null) out.change_3y = overMonths(36);
+    if (out.change_1y == null) out.change_1y = overMonths(12);
+  }
   return out;
 }
 
@@ -329,21 +397,46 @@ async function main() {
   console.log('Kurser…');
   const quotes = await fetchQuotes(universe.map((e) => e.symbol), session);
 
+  // Hvad der stod i filen i forvejen. Slår historikken fejl for en enkelt fond
+  // — Yahoo svarer 429, eller kaldet timer ud — er det forrige tal stadig et
+  // rigtigt tal. Uden det her blankede en dårlig aften spark, 52-ugers
+  // interval og alle periodeafkast for de fonde der ikke kom igennem.
+  const previous = new Map();
+  try {
+    for (const e of (JSON.parse(await readFile(OUT_LIST, 'utf8')).etfs || [])) previous.set(e.symbol, e);
+  } catch { /* første kørsel */ }
+  const CARRIED = ['spark', 'high_52w', 'low_52w', 'first_date',
+                   'change_7d', 'change30d', 'change_6m', 'change_1y', 'change_3y'];
+  const carryOver = (symbol) => {
+    const old = previous.get(symbol);
+    if (!old) return {};
+    const out = {};
+    for (const k of CARRIED) if (old[k] != null) out[k] = old[k];
+    return out;
+  };
+
   console.log('Historik og profiler…');
-  let done = 0;
+  let done = 0, reused = 0;
   const failed = [];
   const rows = await pool(universe, CONCURRENCY, async (e) => {
     const q = quotes.get(e.symbol);
     if (!q || q.price == null) { failed.push({ symbol: e.symbol, reason: 'ingen kurs' }); return null; }
 
-    let hist = null, extra = {};
+    let hist = null, monthly = null, extra = {};
     if (!QUOTES_ONLY) {
       try {
         hist = await fetchHistory(e.symbol, session);
+        // Den lange serie bruges to steder: den skrives til fondens fil, og
+        // de lange vinduer i nøgletallene måles på den. Derfor hentes den her
+        // og ikke inde i skriveblokken.
+        const lt = await cachedLifetime(e.symbol, session);
+        monthly = lt.monthly;
+        if (lt.reused) reused++;
         if (KEEP_HISTORY) {
           await writeIfChanged(resolve(OUT_HIST, e.symbol + '.json'),
             { symbol: e.symbol, updated_at: new Date().toISOString().slice(0, 10),
-              dates: hist.dates, closes: hist.closes });
+              dates: hist.dates, closes: hist.closes,
+              ...(monthly ? { monthly } : {}) });
         }
       } catch (err) { failed.push({ symbol: e.symbol, reason: 'historik: ' + err.message }); }
       try { extra = await fetchProfile(e.symbol, session); } catch { extra = {}; }
@@ -370,7 +463,7 @@ async function main() {
       family: extra.family ?? e.family ?? null,
       category: extra.category ?? e.category ?? null,
       expense_ratio: extra.expense_ratio ?? e.expense_ratio ?? null,
-      ...(hist ? derive(hist) : {}),
+      ...(hist ? derive(hist, monthly) : carryOver(e.symbol)),
     };
   });
 
@@ -416,7 +509,11 @@ async function main() {
     if (removed) console.log(`  historik: ${removed} forældede filer fjernet`);
   }
 
-  console.log(`Skrev ${etfs.length} ETF'er` + (failed.length ? `, ${failed.length} fejlede` : ''));
+  const carried = failed.filter((f) => previous.has(f.symbol)).length;
+  console.log(`Skrev ${etfs.length} ETF'er`
+    + (reused ? `, ${reused} lange serier genbrugt` : '')
+    + (failed.length ? `, ${failed.length} fejlede` : '')
+    + (carried ? ` (${carried} beholdt forrige tal)` : ''));
 }
 
 main().catch((err) => { console.error(err); process.exit(1); });

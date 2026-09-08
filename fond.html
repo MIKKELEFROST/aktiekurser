@@ -72,6 +72,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
     { key: 'ytd', label: 'År til dato', days: null },
     { key: '1y',  label: '1 år',  days: 252 },
     { key: '3y',  label: '3 år',  days: 756 },
+    { key: '5y',  label: '5 år',  days: 1260 },
     { key: 'alt', label: 'Hele perioden', days: Infinity },
   ];
 
@@ -100,10 +101,18 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
   }
 
   // ── Udsnit efter periode ───────────────────────────────────────────────
+  // Filen bærer to serier: tre år med daglige kurser og en månedlig tilbage
+  // til fondens start. Den daglige bruges så langt den rækker, den månedlige
+  // derudover — og opsummeringen siger hvilken man ser på.
+  const longSeries = (h) => (h && h.monthly && h.monthly.dates && h.monthly.dates.length > 12)
+    ? h.monthly : null;
+
   function slice() {
     const h = state.hist;
     if (!h) return null;
+    const monthly = longSeries(h);
     const preset = PRESETS.find((p) => p.key === state.range) || PRESETS[1];
+
     if (state.range === 'ytd') {
       const year = String(new Date().getFullYear());
       let i = h.dates.findIndex((d) => d.slice(0, 4) === year);
@@ -111,8 +120,40 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
       i = Math.max(0, i - 1);          // dagen før nytår giver udgangspunktet
       return { dates: h.dates.slice(i), closes: h.closes.slice(i) };
     }
-    const n = Math.min(h.dates.length, preset.days === Infinity ? h.dates.length : preset.days + 1);
-    return { dates: h.dates.slice(-n), closes: h.closes.slice(-n) };
+    if (preset.days === Infinity) {
+      return monthly ? { dates: monthly.dates, closes: monthly.closes, coarse: true }
+                     : { dates: h.dates, closes: h.closes };
+    }
+    // Yahoos range=3y giver 754 dage, ikke 756. To dage fra skal ikke koste
+    // den daglige opløsning, så et vindue der er dækket 98 % læses dagligt.
+    if (h.dates.length >= preset.days * 0.98) {
+      const n = Math.min(h.dates.length, preset.days + 1);
+      return { dates: h.dates.slice(-n), closes: h.closes.slice(-n) };
+    }
+    if (monthly) {
+      const months = Math.round(preset.days / 21) + 1;
+      const n = Math.min(monthly.dates.length, months);
+      return { dates: monthly.dates.slice(-n), closes: monthly.closes.slice(-n), coarse: true };
+    }
+    return { dates: h.dates, closes: h.closes };
+  }
+
+  // Yahoo vælger selv opløsningen på den lange serie efter hvor gammel
+  // noteringen er: en fond fra 2019 får ugebjælker, en fra 1993 månedsbjælker.
+  // Så nævneren regnes ud af den faktiske afstand mellem punkterne i stedet
+  // for at antage måneder — ellers stod der "372 månedskurser" om syv år.
+  function barLabel(dates) {
+    if (!dates || dates.length < 3) return 'kurser';
+    const gaps = [];
+    for (let i = 1; i < dates.length; i++) {
+      gaps.push((new Date(dates[i]) - new Date(dates[i - 1])) / 86400000);
+    }
+    gaps.sort((a, b) => a - b);
+    const med = gaps[Math.floor(gaps.length / 2)];
+    if (med <= 4) return 'handelsdage';
+    if (med <= 12) return 'ugekurser';
+    if (med <= 45) return 'månedskurser';
+    return 'kvartalskurser';
   }
 
   // ── Graf ───────────────────────────────────────────────────────────────
@@ -256,7 +297,8 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
       const hi = Math.max.apply(null, s.closes), lo = Math.min.apply(null, s.closes);
       summary = '<p class="text-xs muted mt-3">'
         + K.fmtDate(s.dates[0]) + ' – ' + K.fmtDate(s.dates[s.dates.length - 1])
-        + ' · ' + s.dates.length + ' handelsdage · ' + pct(move) + ' i perioden<br>'
+        + ' · ' + s.dates.length + ' ' + (s.coarse ? barLabel(s.dates) : 'handelsdage')
+        + ' · ' + pct(move) + ' i perioden<br>'
         + 'Højeste ' + K.fmtPrice(hi) + ' · laveste ' + K.fmtPrice(lo) + ' ' + K.esc(r.currency)
         + '</p>';
     }
