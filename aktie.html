@@ -1278,9 +1278,14 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       // Four more files, all optional. Each section checks its own data and
       // simply does not render if the fetch behind it failed, so one missing
       // file never takes the page down with it.
+      // The row says whether a detail file was written for this company, so a
+      // company without one is never asked for — 368 of them, each otherwise a
+      // 404 in the console and a round trip for nothing. Rows from an older
+      // build carry no flag, and are asked for as before.
+      const wantsDetail = r.has_detail !== false;
       const [keys, funds, bench] = await Promise.all([
         K.loadKeyFigures().catch(() => null),
-        K.loadFundamentals(r.symbol).catch(() => null),
+        wantsDetail ? K.loadFundamentals(r.symbol).catch(() => null) : Promise.resolve(null),
         K.loadBenchmarks().catch(() => null),
       ]);
       ALL = list.rows;

@@ -274,19 +274,23 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
         + '<div class="font-semibold row-name">' + K.esc(r.name) + '</div>'
         + '<div class="text-xs faint">' + K.flagOf(r.market) + ' ' + K.esc(r.symbol) + '</div></a>' },
 
-    { key: 'sector', label: 'Sektor', group: 'Selskab',
+    { key: 'sector', label: 'Sektor', group: 'Selskab', sortKey: 'sector', asc: true,
       hint: 'Selskabets branche efter GICS-systemet. Nasdaq-100-selskaber er oversat til samme navne.',
       cell: (r) => '<span class="muted text-xs">' + K.esc(r.sector || '–') + '</span>' },
 
-    { key: 'indices', label: 'Indeks', group: 'Selskab',
+    { key: 'indices', label: 'Indeks', group: 'Selskab', asc: true,
+      // Null rather than an empty string, so companies in no index sink to the
+      // bottom whichever way the column points.
+      sortKey: (r) => (r.indices || []).map((i) => INDEX_LABEL(i)).sort().join(', ') || null,
       hint: 'Hvilke indeks selskabet indgår i.',
       cell: (r) => '<span class="muted text-xs">' + (r.indices || []).map((i) => K.esc(INDEX_LABEL(i))).join(', ') + '</span>' },
 
-    { key: 'exchange', label: 'Børs', group: 'Selskab',
+    { key: 'exchange', label: 'Børs', group: 'Selskab', sortKey: 'exchange', asc: true,
       hint: 'Den børs aktien er noteret på.',
       cell: (r) => '<span class="muted text-xs">' + K.esc(r.exchange || '–') + '</span>' },
 
-    { key: 'currency', label: 'Valuta', group: 'Selskab',
+    { key: 'currency', label: 'Valuta', group: 'Selskab', asc: true,
+      sortKey: (r) => view(r).currency,
       hint: 'Den valuta børsen handler aktien i. DKK for danske, USD for amerikanske.',
       cell: (r) => '<span class="muted">' + K.esc(view(r).currency) + '</span>' },
 

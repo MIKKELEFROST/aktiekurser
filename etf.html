@@ -231,19 +231,20 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       cell: (r) => '<div class="font-semibold">' + K.esc(r.name) + '</div>'
         + '<div class="text-xs faint">' + K.flagOf(r.market) + ' ' + K.esc(r.symbol) + '</div>' },
 
-    { key: 'family', label: 'Udbyder', group: 'Fond',
+    { key: 'family', label: 'Udbyder', group: 'Fond', sortKey: 'family', asc: true,
       hint: 'Fondsselskabet bag. Vanguard, BlackRock (iShares) og Xtrackers står bag hovedparten af de europæiske UCITS-fonde.',
       cell: (r) => '<span class="muted text-xs">' + K.esc(r.family || '–') + '</span>' },
 
-    { key: 'category', label: 'Kategori', group: 'Fond',
+    { key: 'category', label: 'Kategori', group: 'Fond', sortKey: 'category', asc: true,
       hint: 'Morningstars kategori. Yahoo oplyser den for de amerikanske fonde og næsten aldrig for de europæiske.',
       cell: (r) => '<span class="muted text-xs">' + K.esc(r.category || '–') + '</span>' },
 
-    { key: 'exchange', label: 'Børs', group: 'Fond',
+    { key: 'exchange', label: 'Børs', group: 'Fond', sortKey: 'exchange', asc: true,
       hint: 'Den børs fonden er noteret på. Danske banker handler typisk de tyske og amerikanske noteringer.',
       cell: (r) => '<span class="muted text-xs">' + K.esc(r.exchange || '–') + '</span>' },
 
-    { key: 'currency', label: 'Valuta', group: 'Fond',
+    { key: 'currency', label: 'Valuta', group: 'Fond', asc: true,
+      sortKey: (r) => view(r).currency,
       hint: 'Den valuta børsen handler fonden i. Bemærk at fondens egen valuta kan være en anden end noteringens.',
       cell: (r) => '<span class="muted">' + K.esc(view(r).currency) + '</span>' },
 

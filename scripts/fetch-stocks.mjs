@@ -93,6 +93,15 @@ const normSector = (s) => SECTOR_ALIASES[s] || s || 'Ukendt';
 // Index tables quote share classes with a dot; Yahoo uses a dash (BRK.B → BRK-B).
 const normTicker = (t) => String(t).trim().toUpperCase().replace(/\./g, '-');
 
+// Yahoo's names arrive with stray whitespace, doubled spaces, and — for a few
+// closed-end funds — wrapped in quotation marks. A leading quote sorts ahead of
+// every letter, which put "abrdn Global Dynamic Dividend Fund" at the top of an
+// alphabetical list of four and a half thousand companies.
+const cleanName = (n, fallback) => {
+  const t = String(n == null ? '' : n).replace(/\s+/g, ' ').trim().replace(/^"(.*)"$/, '$1').trim();
+  return t || fallback || null;
+};
+
 // Every exchange whose primary listings we take. Yahoo's screener will also
 // serve Frankfurt, Paris, London and Milan, but those are dominated by
 // secondary listings of American companies (NVIDIA trades in Frankfurt as
@@ -240,7 +249,7 @@ async function buildUniverse(session, rates) {
           if (existing) { existing.exchange = ex.code; continue; }
           byTicker.set(t, {
             symbol: t,
-            name: q.longName || q.shortName || t,
+            name: cleanName(q.longName || q.shortName, t),
             sector: null,                               // filled from the profile
             market: ex.market,
             exchange: ex.code,
@@ -762,7 +771,7 @@ function normalise(result, company, rates) {
   return {
     row: {
       symbol: meta.symbol || company.symbol,
-      name: meta.shortName || company.name,
+      name: cleanName(meta.shortName, company.name),
       market: company.market,
       sector: company.sector,
       indices: company.indices,
@@ -959,7 +968,36 @@ async function main() {
         fundOk++;
       } catch { /* uden nøgletal viser siden ingen */ }
     });
+    // Yahoo throttles a long burst, and the symbols it refuses are not the
+    // ones without figures — they answer fine a moment later. One slower pass
+    // over just the misses recovers most of them.
+    const missed = rows.filter((r) => !small[r.symbol]);
+    if (missed.length) {
+      console.log(`  nøgletal: ${fundOk}/${rows.length} — prøver ${missed.length} igen`);
+      await pool(missed, 2, async (r) => {
+        await sleep(200 + Math.random() * 400);
+        try {
+          const f = await fetchFundamentals(r.symbol, session);
+          const q = quoteFields.get(r.symbol) || {};
+          small[r.symbol] = {
+            ...f.small,
+            eps_ttm: f.small.eps_ttm != null ? f.small.eps_ttm : (q.eps_ttm ?? null),
+            eps_fwd: q.eps_fwd ?? null,
+            div_yield: q.div_yield ?? null,
+            shares: q.shares ?? null,
+            next_earnings: f.detail.next_earnings || q.next_earnings || null,
+          };
+          detail[r.symbol] = f.detail;
+          if (!r.sector && f.sector) r.sector = normSector(f.sector);
+          fundOk++;
+        } catch { /* stadig ingen — så viser siden ingen */ }
+      });
+    }
+
     for (const r of rows) if (!r.sector) r.sector = 'Ukendt';
+    // The company page knows from the row alone whether a detail file exists,
+    // so it never asks for one that is not there.
+    for (const r of rows) r.has_detail = detail[r.symbol] != null;
     console.log(`  nøgletal: ${fundOk}/${rows.length} selskaber`);
 
     // A company's P/E means little alone. The comparison is the median of the

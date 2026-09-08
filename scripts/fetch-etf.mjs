@@ -58,6 +58,12 @@ const MIN_NET_ASSETS_USD = 50e6;
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const round = (n, d = 2) => (n == null || !Number.isFinite(n) ? null : Number(n.toFixed(d)));
 const isoDay = (secs) => new Date(secs * 1000).toISOString().slice(0, 10);
+// Samme oprydning som aktielisten: kilden leverer navne med dobbelte
+// mellemrum og af og til i anførselstegn.
+const cleanName = (n, fallback) => {
+  const t = String(n == null ? '' : n).replace(/\s+/g, ' ').trim().replace(/^"(.*)"$/, '$1').trim();
+  return t || fallback || null;
+};
 
 async function pool(items, limit, fn) {
   const out = new Array(items.length);
@@ -136,7 +142,7 @@ async function buildUniverse(session, usdPer) {
       if (usd != null && usd < MIN_NET_ASSETS_USD) continue;
       seen.set(q.symbol, {
         symbol: q.symbol,
-        name: q.longName || q.shortName || q.symbol,
+        name: cleanName(q.longName || q.shortName, q.symbol),
         exchange: venue.label,
         market: venue.market,
         currency: q.currency || null,
