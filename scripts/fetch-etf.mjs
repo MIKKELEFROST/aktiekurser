@@ -61,7 +61,13 @@ const isoDay = (secs) => new Date(secs * 1000).toISOString().slice(0, 10);
 // Samme oprydning som aktielisten: kilden leverer navne med dobbelte
 // mellemrum og af og til i anførselstegn.
 const cleanName = (n, fallback) => {
-  const t = String(n == null ? '' : n).replace(/\s+/g, ' ').trim().replace(/^"(.*)"$/, '$1').trim();
+  // The source truncates long names, which can cut off the closing quote and
+  // leave a lone leading one — "Sprott Physical Gold and Silve — so each end is
+  // stripped on its own rather than only as a matched pair.
+  const t = String(n == null ? '' : n)
+    .replace(/\s+/g, ' ').trim()
+    .replace(/^["']+/, '').replace(/["']+$/, '')
+    .trim();
   return t || fallback || null;
 };
 

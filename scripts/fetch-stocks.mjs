@@ -98,7 +98,13 @@ const normTicker = (t) => String(t).trim().toUpperCase().replace(/\./g, '-');
 // every letter, which put "abrdn Global Dynamic Dividend Fund" at the top of an
 // alphabetical list of four and a half thousand companies.
 const cleanName = (n, fallback) => {
-  const t = String(n == null ? '' : n).replace(/\s+/g, ' ').trim().replace(/^"(.*)"$/, '$1').trim();
+  // The source truncates long names, which can cut off the closing quote and
+  // leave a lone leading one — "Sprott Physical Gold and Silve — so each end is
+  // stripped on its own rather than only as a matched pair.
+  const t = String(n == null ? '' : n)
+    .replace(/\s+/g, ' ').trim()
+    .replace(/^["']+/, '').replace(/["']+$/, '')
+    .trim();
   return t || fallback || null;
 };
 

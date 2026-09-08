@@ -70,6 +70,54 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
   .adv-toggle input { accent-color: var(--accent); cursor: pointer; }
   .adv-toggle:hover span { color: var(--text-primary); }
 
+  /* ── Nøgletal ─────────────────────────────────────────────────────────
+     Value first, label under it, two to a row: the figure is what the eye
+     is looking for, and the label is what it reads once it has found it. */
+  .kf-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 24px; }
+  @media (min-width: 900px) { .kf-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  .kf-v { font-size: 17px; font-weight: 800; color: var(--text-primary); }
+  .kf-k { font-size: 12px; color: var(--text-muted); margin-top: 2px; display: flex; align-items: center; gap: 5px; }
+  .kf-more { font-size: 13px; font-weight: 700; color: var(--accent); background: none; border: 0;
+             cursor: pointer; padding: 6px 0; display: inline-flex; align-items: center; gap: 6px; }
+
+  /* ── Om ───────────────────────────────────────────────────────────────
+     Four lines, then the rest on request. The source writes a paragraph
+     that runs to a screenful for the larger companies. */
+  .about-text { font-size: 14px; line-height: 1.6; color: var(--text-secondary); }
+  .about-text.clamped {
+    display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden;
+  }
+
+  /* ── Analytikerskøn ───────────────────────────────────────────────────
+     One hue; the bar carries the count and the number is always printed
+     beside it, so the bar never has to be read on colour alone. */
+  .an-row { display: grid; grid-template-columns: 7.5rem 1fr 3rem; align-items: center; gap: 12px; padding: 4px 0; }
+  .an-label { font-size: 13px; color: var(--text-secondary); }
+  /* Both are spans inside a grid cell, so they need to be told to be boxes —
+     an inline element ignores height, and the bar had none. */
+  .an-track { display: block; height: 10px; border-radius: 5px; background: var(--gridline); overflow: hidden; }
+  .an-bar { display: block; height: 100%; border-radius: 5px; background: var(--text-primary); }
+  .an-pct { font-size: 13px; font-weight: 700; text-align: right; color: var(--text-primary); }
+
+  /* ── Forventet kurs ───────────────────────────────────────────────────
+     Two marks on one line, each labelled with its own number, and the
+     analysts' lowest and highest drawn as the ends — a single mean on its
+     own would read as a promise. */
+  /* One caption above the line and one below, so the two never collide when
+     the target sits close to the price. */
+  .tg-wrap { padding: 46px 0 8px; }
+  .tg-line { position: relative; height: 2px; background: var(--gridline); border-radius: 2px; }
+  .tg-mark { position: absolute; top: 50%; width: 12px; height: 12px; border-radius: 50%;
+             transform: translate(-50%, -50%); }
+  .tg-cap { position: absolute; transform: translateX(-50%); white-space: nowrap;
+            font-size: 11px; text-align: center; color: var(--text-muted); }
+  .tg-cap-up   { bottom: 16px; }
+  .tg-cap-down { top: 16px; }
+  .tg-cap strong { display: block; font-size: 13px; color: var(--text-primary); }
+  /* Clears the caption that hangs below the line, which sits in the same
+     space and was landing on top of "Lavest". */
+  .tg-ends { display: flex; justify-content: space-between; font-size: 11px; color: var(--text-muted); margin-top: 62px; }
+
 </style>
 </head>
 
@@ -110,11 +158,13 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     // The short windows are counted so the move they report matches the
     // list's columns: a trading week is five sessions, not seven days.
     { key: '1d',  label: '1d',    sessions: 2 },
+    { key: '1u',  label: '1 uge',  sessions: 6 },
     { key: '1m',  label: '1 md.',  sessions: 21 },
     { key: '3m',  label: '3 mdr.', sessions: 63 },
     { key: '6m',  label: '6 mdr.', sessions: 126 },
     { key: 'ytd', label: 'I år',   ytd: true },
     { key: '1y',  label: '1 år',   sessions: 252 },
+    { key: '3y',  label: '3 år',   sessions: 756 },
     { key: 'all', label: 'Alt',    sessions: Infinity },
   ];
 
@@ -125,7 +175,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
   const advOn = () => { try { return localStorage.getItem(ADV_STORE) === '1'; } catch (e) { return false; } };
   const setAdv = (on) => { try { localStorage.setItem(ADV_STORE, on ? '1' : '0'); } catch (e) { /* privat vindue */ } };
 
-  const state = { range: advOn() ? '3m' : '1y', from: '', to: '', compare: [], adv: advOn() };
+  const state = { range: '3m', from: '', to: '', compare: [], adv: advOn() };
 
   function slice(full) {
     const { dates, closes } = full;
@@ -588,6 +638,204 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       + '</div>' + cal + '</div>';
   }
 
+  // ── Om ─────────────────────────────────────────────────────────────────
+  // The source writes this in English and we print it in English rather than
+  // machine-translating four and a half thousand company descriptions into
+  // something nobody has read.
+  function aboutBlock(r) {
+    const text = FUND && FUND.summary;
+    if (!text) return '';
+    return '<div class="card rounded-2xl p-5 mb-5">'
+      + '<h2 class="text-sm font-bold mb-2">Om ' + K.esc(r.name) + '</h2>'
+      + '<p class="about-text clamped" id="aboutText">' + K.esc(text) + '</p>'
+      + '<button type="button" class="kf-more" id="aboutMore" aria-expanded="false">Vis mere <span aria-hidden="true">⌄</span></button>'
+      + '<p class="text-xs faint mt-2">Beskrivelsen kommer fra kilden på engelsk.</p>'
+    + '</div>';
+  }
+
+  // ── Information ────────────────────────────────────────────────────────
+  function infoBlock(r) {
+    const rows = [];
+    const add = (label, value, hint) => { if (value) rows.push({ label, value, hint }); };
+    add('Ticker', K.esc(r.symbol), 'Selskabets kode på børsen. Den du handler på.');
+    add('Børs', K.esc(r.exchange || ''), 'Den børs aktien er noteret på.');
+    add('Valuta', K.esc(r.currency || ''), 'Den valuta børsen handler aktien i.');
+    if (FUND) {
+      add('Direktør', K.esc(FUND.ceo || ''), 'Selskabets administrerende direktør ifølge kilden.');
+      add('Antal medarbejdere', FUND.employees ? K.fmtInt(FUND.employees) : '', 'Antal fuldtidsansatte ifølge selskabets seneste indberetning.');
+      if (FUND.website) {
+        const host = String(FUND.website).replace(/^https?:\/\//, '').replace(/\/$/, '');
+        add('Hjemmeside', '<a class="link-accent" href="' + K.esc(FUND.website) + '" target="_blank" rel="noopener noreferrer">'
+          + K.esc(host) + '</a>', 'Selskabets eget websted. Åbner i en ny fane.');
+      }
+      add('Industri', K.esc(FUND.industry || ''), 'Den snævre branche selskabet hører til, under sektoren.');
+    }
+    add('Sektor', K.esc(r.sector || ''), 'Selskabets sektor efter GICS-systemet.');
+    if (rows.length < 2) return '';
+
+    return '<div class="card rounded-2xl p-5 mb-5">'
+      + '<h2 class="text-sm font-bold mb-1">Information</h2>'
+      + rows.map((x) => statRow(x.label, x.value, '', x.hint)).join('')
+    + '</div>';
+  }
+
+  // ── Nøgletal ───────────────────────────────────────────────────────────
+  // Four figures about today and the year, then everything else on request.
+  // In the advanced view the whole set is open from the start — that view
+  // exists precisely for the reader who wants it.
+  function keyFiguresBlock(r) {
+    const k = keyOf(r.symbol);
+    const cur = ' ' + K.esc(r.currency);
+    const price = (v) => (v == null ? null : K.fmtPrice(v) + cur);
+
+    const always = [
+      ['Dagens min.', price(r.low), 'Den laveste kurs aktien er handlet til i dag.'],
+      ['Dagens maks.', price(r.high), 'Den højeste kurs aktien er handlet til i dag.'],
+      ['52 uger min.', price(r.week52_low), 'Den laveste kurs det seneste år.'],
+      ['52 uger maks.', price(r.week52_high), 'Den højeste kurs det seneste år.'],
+    ];
+
+    const revPerShare = k && k.revenue && k.shares ? k.revenue / k.shares : null;
+    const ps = k && k.revenue && r.market_cap ? r.market_cap / k.revenue : null;
+    const more = [
+      ['Startkurs', price(r.open), 'Kursen ved dagens åbning.'],
+      ['Slutkurs', price(r.previous_close), 'Kursen da børsen lukkede forrige handelsdag.'],
+      ['Markedsværdi', r.market_cap == null ? null : K.fmtBig(r.market_cap) + cur,
+        'Kursen gange antallet af aktier — hvad hele selskabet koster på børsen.'],
+      ['Price-to-Earnings (P/E)', mult(K.peOf(r.price, k && k.eps_ttm)),
+        'Kursen delt med indtjeningen pr. aktie de seneste fire kvartaler. Hvor mange års indtjening du betaler for én aktie.'],
+      ['Price-to-book (P/B)', mult(k && k.pb),
+        'Kursen delt med selskabets bogførte egenkapital pr. aktie.'],
+      ['Price-to-Sales (P/S)', mult(ps),
+        'Markedsværdien delt med omsætningen. Bruges når et selskab endnu ikke tjener penge.'],
+      ['Overskudsgrad', k && k.profit_margin == null ? null : pct1(k && k.profit_margin),
+        'Hvor stor en del af omsætningen der bliver til overskud efter alt er betalt.'],
+      ['Resultat per aktie (EPS)', k && k.eps_ttm == null ? null : price(k && k.eps_ttm),
+        'Overskuddet delt ud på hver aktie, de seneste fire kvartaler.'],
+      ['Omsætning', k && k.revenue == null ? null : K.fmtBig(k.revenue) + cur,
+        'Selskabets samlede salg de seneste fire kvartaler.'],
+      ['Omsætning per aktie', revPerShare == null ? null : price(revPerShare),
+        'Omsætningen delt ud på hver aktie.'],
+      ['EBITDA', k && k.ebitda == null ? null : K.fmtBig(k.ebitda) + cur,
+        'Indtjening før renter, skat og afskrivninger — driften alene, uden hvordan selskabet er finansieret.'],
+      ['Volumen', r.volume == null ? null : K.fmtBig(r.volume),
+        'Antal aktier handlet i dag — stykker, ikke beløb.'],
+      ['Gns. volumen', r.average_volume == null ? null : K.fmtBig(r.average_volume),
+        'Gennemsnittet af de daglige volumener, beregnet af os ud fra kurshistorikken.'],
+    ];
+
+    const cell = ([label, value, hint]) => value == null ? '' :
+      '<div><div class="kf-v num">' + value + '</div>'
+      + '<div class="kf-k"><span class="hint" tabindex="0" data-hint-title="' + K.esc(label)
+      + '" data-hint="' + K.esc(hint) + '">' + K.esc(label) + '</span>'
+      + '<span class="hint-i" aria-hidden="true">i</span></div></div>';
+
+    // The advanced view opens the whole set: it exists for the reader who
+    // wants every figure, and hiding them behind a second click there would be
+    // one gate too many.
+    const openAll = state.adv;
+    const extra = more.map(cell).filter(Boolean);
+
+    return '<div class="card rounded-2xl p-5 mb-5">'
+      + '<h2 class="text-sm font-bold mb-3">Nøgletal</h2>'
+      + '<div class="kf-grid">' + always.map(cell).join('') + '</div>'
+      + (extra.length
+          ? '<div class="kf-grid mt-4" id="kfMore"' + (openAll ? '' : ' hidden') + '>' + extra.join('') + '</div>'
+            + (openAll ? ''
+              : '<div class="mt-2"><button type="button" class="kf-more" id="kfToggle" aria-expanded="false" aria-controls="kfMore">'
+                + 'Vis mere <span aria-hidden="true">⌄</span></button></div>')
+          : '')
+    + '</div>';
+  }
+
+  // ── Udbytter ───────────────────────────────────────────────────────────
+  // The source gives the next ex-date, the yield and the payout ratio, but no
+  // history of what was paid year by year, so this says what it knows and
+  // stops there rather than drawing a chart out of one number.
+  function dividendBlock(r) {
+    const k = keyOf(r.symbol);
+    const yieldPct = k && k.div_yield != null ? k.div_yield : null;
+    const ex = FUND && FUND.ex_dividend;
+    const paid = FUND && FUND.dividend_date;
+    const payout = FUND && FUND.payout_ratio;
+    if (yieldPct == null && !ex && !paid && payout == null) return '';
+
+    const num = (v, suffix) => v == null ? null
+      : '<span class="num">' + v.toLocaleString('da-DK', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + (suffix || '') + '</span>';
+
+    return '<div class="card rounded-2xl p-5 mb-5">'
+      + '<h2 class="text-sm font-bold mb-1">Udbytter</h2>'
+      + (yieldPct != null ? statRow('Udbytteafkast', num(yieldPct, ' %'), '',
+          'Det seneste års udbytte i forhold til kursen. Et selskab uden udbytte står med en streg.') : '')
+      + (ex ? statRow('Sidste ex-dag', '<span class="num">' + K.fmtDate(ex) + '</span>', '',
+          'Køber du aktien på eller efter denne dag, får du ikke det kommende udbytte.') : '')
+      + (paid ? statRow('Udbetaling', '<span class="num">' + K.fmtDate(paid) + '</span>', '',
+          'Dagen udbyttet forventes udbetalt.') : '')
+      + (payout != null ? statRow('Udbytteandel', num(payout * 100, ' %'), '',
+          'Hvor stor en del af overskuddet der betales ud som udbytte. Resten bliver i selskabet.') : '')
+      + '<p class="text-xs faint mt-2">Kilden opgiver ikke, hvad der er udbetalt de foregående år.</p>'
+    + '</div>';
+  }
+
+  // ── Analytikerskøn ─────────────────────────────────────────────────────
+  // What the analysts covering the company have said, counted. It is their
+  // view, not ours, and the page says so: no verdict of Coop Banks own is
+  // computed anywhere on this site.
+  function analystBlock(r) {
+    const a = FUND && FUND.analysts;
+    if (!a || !a.total) return '';
+    const rows = [
+      ['Stærkt køb', a.strong_buy], ['Køb', a.buy], ['Hold', a.hold],
+      ['Sælg', a.sell], ['Stærkt sælg', a.strong_sell],
+    ];
+    const max = Math.max.apply(null, rows.map((x) => x[1]));
+
+    return '<div class="card rounded-2xl p-5 mb-5">'
+      + '<h2 class="text-sm font-bold">Analytikerskøn</h2>'
+      + '<p class="text-xs muted mt-1">Baseret på ' + a.total + ' analytikere. Det er deres vurderinger, '
+        + 'ikke Coop Banks — og de er ikke en anbefaling.</p>'
+      + '<div class="mt-3">' + rows.map(([label, n]) => {
+          const pct = Math.round((n / a.total) * 100);
+          const w = max ? Math.round((n / max) * 100) : 0;
+          return '<div class="an-row">'
+            + '<span class="an-label">' + label + '</span>'
+            + '<span class="an-track"><span class="an-bar" style="width:' + w + '%"></span></span>'
+            + '<span class="an-pct num">' + pct + '%</span></div>';
+        }).join('') + '</div>'
+    + '</div>';
+  }
+
+  // ── Forventet kurs ─────────────────────────────────────────────────────
+  function targetBlock(r) {
+    const t = FUND && FUND.target_mean;
+    if (!t || r.price == null) return '';
+    const lo = (FUND.target_low != null ? FUND.target_low : Math.min(t, r.price));
+    const hi = (FUND.target_high != null ? FUND.target_high : Math.max(t, r.price));
+    const span = (hi - lo) || 1;
+    const at = (v) => Math.max(2, Math.min(98, ((v - lo) / span) * 100));
+    const diff = ((t - r.price) / r.price) * 100;
+    const cur = ' ' + K.esc(r.currency);
+
+    return '<div class="card rounded-2xl p-5 mb-5">'
+      + '<h2 class="text-sm font-bold">Forventet kurs</h2>'
+      + '<p class="text-xs muted mt-1">Gennemsnittet af ' + (FUND.target_analysts || 'analytikernes')
+        + (FUND.target_analysts ? ' analytikeres' : '') + ' kursmål på 12 måneders sigt. Et gennemsnit er ikke en forudsigelse, '
+        + 'og spredningen under stregen viser hvor uenige de er.</p>'
+      + '<div class="tg-wrap"><div class="tg-line">'
+        + '<span class="tg-cap tg-cap-down" style="left:' + at(r.price) + '%">Nuværende kurs<strong class="num">'
+          + K.fmtPrice(r.price) + cur + '</strong></span>'
+        + '<span class="tg-mark" style="left:' + at(r.price) + '%;background:var(--text-primary)"></span>'
+        + '<span class="tg-cap tg-cap-up" style="left:' + at(t) + '%">Kursmål<strong class="num">'
+          + K.fmtPrice(t) + cur + '</strong></span>'
+        + '<span class="tg-mark" style="left:' + at(t) + '%;background:var(--accent)"></span>'
+      + '</div>'
+      + '<div class="tg-ends"><span class="num">Lavest ' + K.fmtPrice(lo) + '</span>'
+        + '<span class="num">Højest ' + K.fmtPrice(hi) + '</span></div></div>'
+      + statRow('Forskel', '<span class="num ' + K.dirClass(diff) + '">' + K.fmtPct(diff) + '</span>', '',
+          'Hvor langt kursmålet ligger fra kursen i dag. Positivt betyder at analytikerne i gennemsnit venter en stigning.')
+    + '</div>';
+  }
+
   // ── Calendar ───────────────────────────────────────────────────────────
   function calendarBlock(r) {
     if (!FUND) return '';
@@ -628,8 +876,8 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     const beats = h.filter((q) => q.actual > q.estimate).length;
 
     return '<div class="card rounded-2xl p-5">'
-      + '<h2 class="text-sm font-bold">Ramte selskabet forventningerne?</h2>'
-      + '<p class="text-xs muted mt-1" style="max-width:70ch">Analytikernes gennemsnitlige forventning til '
+      + '<h2 class="text-sm font-bold">Indtjening</h2>'
+      + '<p class="text-xs muted mt-1" style="max-width:70ch">Ramte selskabet forventningerne? Analytikernes gennemsnitlige forventning til '
         + 'indtjening pr. aktie, holdt op mod hvad selskabet leverede.</p>'
       + '<div class="overflow-x-auto mt-3" style="overflow-x:auto"><table class="w-full text-sm border-collapse">'
       + '<thead><tr class="text-xs faint text-left"><th class="py-2 pr-3 font-semibold">Kvartal</th>'
@@ -924,9 +1172,10 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
   // rather than letting a reader assume this is all there is.
   function simpleFooter(r) {
     return '<div class="card rounded-2xl p-4 mt-5 text-xs muted" style="max-width:80ch">'
-      + 'Vil du se nøgletal, regnskabskalender, hvordan analytikernes forventninger er blevet ramt, '
-      + 'ejerforhold og lignende selskaber? Sæt flueben i <strong style="color:var(--text-primary)">'
-      + 'Avanceret visning</strong> øverst på siden — valget huskes.</div>';
+      + 'Vil du se selskabet målt mod sit indeks, hvad 10.000 kr. ville være blevet til, '
+      + 'regnskabskalenderen, de største fald, ejerforhold og alt det vi har regnet ud af kurshistorikken? '
+      + 'Sæt flueben i <strong style="color:var(--text-primary)">Avanceret visning</strong> '
+      + 'øverst på siden — valget huskes.</div>';
   }
 
   function factsBlock(r) {
@@ -1065,7 +1314,9 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
 
     // Three windows answer "how is it going"; the finer ones are for someone
     // studying the shape of the move.
-    const SIMPLE_RANGES = ['1m', '1y', 'all'];
+    // Appens egne syv vinduer. "6 mdr." og "Alt" hører til den avancerede
+    // visning, hvor hele perioderækken alligevel er fremme.
+    const SIMPLE_RANGES = ['1d', '1u', '1m', '3m', 'ytd', '1y', '3y'];
     const buttons = PRESETS.filter((p) => state.adv || SIMPLE_RANGES.includes(p.key)).map((p) =>
       '<button class="range-btn" data-range="' + p.key + '" aria-pressed="' + (p.key === state.range) + '">'
       + p.label + '</button>').join('');
@@ -1098,7 +1349,10 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       + '<div id="chartHost"></div>'
       + '<p id="selSummary" class="text-xs mt-3 muted" hidden></p></div>';
 
-    const left = '<div class="card rounded-2xl p-5">'
+    // Dagens handel-kortet er droppet: Nøgletal-blokken viser de samme tal, og
+    // to kort med dagens højeste ville modsige hinanden så snart et af dem
+    // blev ændret.
+    const _unusedLeft = '<div class="card rounded-2xl p-5">'
       + '<h2 class="text-sm font-bold mb-2">Dagens handel</h2>'
       + statRow('Seneste', K.fmtPrice(r.price) + ' ' + K.esc(cur), '',
           'Den senest registrerede kurs. Dataene er forsinkede og opdateres tre gange på hverdage.')
@@ -1176,19 +1430,54 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     // The simple page answers "how is it going": the price, the shape of the
     // move, how it compares to a few windows, and what an investment would have
     // become. Everything that values the company waits behind the switch.
+    // The standard view is the app's own company page, block for block and in
+    // its order: price and chart, what the company is, the figures, how it has
+    // met expectations, what it pays out, what the analysts say, and what else
+    // is like it. Nothing on it values the company on our behalf.
+    const appPage = aboutBlock(r) + infoBlock(r) + keyFiguresBlock(r)
+      + surpriseBlock(r) + dividendBlock(r) + analystBlock(r) + targetBlock(r)
+      + peersBlock(r);
+
+    // Everything this project can do that the app does not: the company
+    // measured against its index, what an investment would have become, the
+    // calendar, the falls, ownership, and the figures computed from the price
+    // history itself.
+    const ours = performanceBlock(r) + investedBlock(r)
+      + '<div class="grid md:grid-cols-2 gap-5 items-start mb-5 mt-5">' + calendarBlock(r) + right + '</div>'
+      + drawdownBlock(r)
+      + ownershipBlock(r)
+      + factsBlock(r);
+
     $('#content').innerHTML = head + overviewStrip(r) + chartCard
-      + performanceBlock(r)
-      + investedBlock(r)
-      + (!state.adv ? '' :
-          '<div class="grid md:grid-cols-2 gap-5 items-start mb-5 mt-5">'
-            + calendarBlock(r) + surpriseBlock(r) + '</div>'
-          + drawdownBlock(r)
-          + '<div class="grid md:grid-cols-2 gap-5 items-start mt-5">' + left + right + '</div>'
-          + peersBlock(r)
-          + ownershipBlock(r)
-          + factsBlock(r))
-      + (state.adv ? '' : simpleFooter(r))
+      + appPage
+      + (state.adv ? ours : simpleFooter(r))
       + nav + risk;
+
+    // The two "Vis mere" buttons open what is already rendered rather than
+    // redrawing the page, so nothing else on screen moves and no scroll
+    // position is lost.
+    const kfBtn = $('#kfToggle'), kfBox = $('#kfMore');
+    if (kfBtn && kfBox) kfBtn.addEventListener('click', () => {
+      const opening = kfBox.hidden;
+      kfBox.hidden = !opening;
+      kfBtn.setAttribute('aria-expanded', String(opening));
+      kfBtn.innerHTML = (opening ? 'Vis mindre' : 'Vis mere')
+        + ' <span aria-hidden="true">' + (opening ? '⌃' : '⌄') + '</span>';
+    });
+
+    // The description is clamped rather than hidden, so it never collapses to
+    // nothing — the button switches between four lines and all of them.
+    const aboutBtn = $('#aboutMore'), aboutText = $('#aboutText');
+    if (aboutBtn && aboutText) {
+      // A description that fits inside four lines has nothing to expand.
+      if (aboutText.scrollHeight <= aboutText.clientHeight + 2) aboutBtn.hidden = true;
+      aboutBtn.addEventListener('click', () => {
+        const open = aboutText.classList.toggle('clamped') === false;
+        aboutBtn.setAttribute('aria-expanded', String(open));
+        aboutBtn.innerHTML = (open ? 'Vis mindre' : 'Vis mere')
+          + ' <span aria-hidden="true">' + (open ? '⌃' : '⌄') + '</span>';
+      });
+    }
 
     const advBox = $('#advToggle');
     if (advBox) advBox.addEventListener('change', (e) => {
@@ -1196,7 +1485,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       setAdv(state.adv);
       // The simple view offers fewer windows, so a range only it could reach
       // has to fall back rather than leave the chart on a hidden setting.
-      const SIMPLE = ['1m', '1y', 'all'];
+      const SIMPLE = ['1d', '1u', '1m', '3m', 'ytd', '1y', '3y'];
       if (!state.adv && !SIMPLE.includes(state.range)) { state.range = '1y'; state.from = state.to = ''; }
       if (!state.adv) state.compare = [];
       render.apply(null, lastArgs);
