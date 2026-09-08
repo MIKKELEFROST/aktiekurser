@@ -9,7 +9,7 @@
 //
 //   node scripts/fetch-etf.mjs [--quotes-only] [--limit=N]
 
-import { writeFile, mkdir, readFile } from 'node:fs/promises';
+import { writeFile, mkdir, readFile, readdir, unlink } from 'node:fs/promises';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -20,10 +20,10 @@ const OUT_HIST = resolve(ROOT, 'data/etf-historik');
 const argv = process.argv.slice(2);
 const QUOTES_ONLY = argv.includes('--quotes-only');
 const LIMIT = Number((argv.find((a) => a.startsWith('--limit=')) || '').split('=')[1]) || 0;
-// The three years of daily closes are fetched either way — the sparkline and
-// every period return are derived from them — but they are only written to disk
-// when something reads them. There is no fund page yet, and 24 MB of files that
-// nothing opens would still be 24 MB rewritten in the repository twice a day.
+// De tre år med daglige lukkekurser hentes under alle omstændigheder — både
+// sparklinjen og hvert periodeafkast udledes af dem. De skrives til disk med
+// --history, som fondssiden læser. Kun den fulde aftenkørsel gør det, og kun
+// filer med nyt indhold røres, så en dag uden handel ikke koster en ny blob.
 const KEEP_HISTORY = argv.includes('--history');
 
 const YF_UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36';
@@ -296,6 +296,17 @@ async function writeJson(path, value, compact) {
   await writeFile(path, compact ? JSON.stringify(value) + '\n' : JSON.stringify(value, null, 2) + '\n');
 }
 
+// Rører kun filen hvis indholdet faktisk er et andet. En fond der ikke blev
+// handlet, giver samme tre år igen, og en identisk fil skrevet forfra ville
+// stadig blive en ny blob i git.
+async function writeIfChanged(path, value) {
+  const next = JSON.stringify(value) + '\n';
+  try { if (await readFile(path, 'utf8') === next) return false; } catch { /* findes ikke endnu */ }
+  await mkdir(dirname(path), { recursive: true });
+  await writeFile(path, next);
+  return true;
+}
+
 async function main() {
   const session = await yahooSession();
   const fx = await fetchRates();
@@ -330,8 +341,9 @@ async function main() {
       try {
         hist = await fetchHistory(e.symbol, session);
         if (KEEP_HISTORY) {
-          await writeJson(resolve(OUT_HIST, e.symbol + '.json'),
-            { symbol: e.symbol, dates: hist.dates, closes: hist.closes }, true);
+          await writeIfChanged(resolve(OUT_HIST, e.symbol + '.json'),
+            { symbol: e.symbol, updated_at: new Date().toISOString().slice(0, 10),
+              dates: hist.dates, closes: hist.closes });
         }
       } catch (err) { failed.push({ symbol: e.symbol, reason: 'historik: ' + err.message }); }
       try { extra = await fetchProfile(e.symbol, session); } catch { extra = {}; }
@@ -389,6 +401,20 @@ async function main() {
     etfs,
     failed,
   }, true);
+
+  // En fond der er faldet ud af universet skal ikke efterlade sin historik —
+  // ellers ville /fond.html?symbol=… blive ved med at svare på noget der ikke
+  // står på listen længere.
+  if (KEEP_HISTORY && !LIMIT) {
+    const keep = new Set(etfs.map((e) => e.symbol + '.json'));
+    let removed = 0;
+    try {
+      for (const f of await readdir(OUT_HIST)) {
+        if (f.endsWith('.json') && !keep.has(f)) { await unlink(resolve(OUT_HIST, f)); removed++; }
+      }
+    } catch { /* mappen findes ikke endnu */ }
+    if (removed) console.log(`  historik: ${removed} forældede filer fjernet`);
+  }
 
   console.log(`Skrev ${etfs.length} ETF'er` + (failed.length ? `, ${failed.length} fejlede` : ''));
 }

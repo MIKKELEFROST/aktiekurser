@@ -47,6 +47,11 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
   .idx-val  { font-size: 15px; font-weight: 800; color: var(--text-primary); }
   .idx-move { font-size: 12px; font-weight: 700; }
   .idx-skel { height: 46px; }
+  /* Kortene fører videre til de selskaber, indekset måler. Kun kanten flytter
+     sig, så rækken stadig læses som tal og ikke som fire knapper. */
+  .idx-link { text-decoration: none; color: inherit; transition: border-color .15s ease; }
+  .idx-link:hover { border-color: var(--accent); }
+  .idx-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
   /* ── Guidens to forbundne kasser ──────────────────────────────────────
      "En version, hvor den nederste kasse spejler den øverste, men i en anden
@@ -259,6 +264,19 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
   // one moves up — four cards or none.
   const PRIORITY = ['OMXC25', 'SP500', 'NDX', 'OMXS30', 'OMXH25', 'OSEAX', 'SOX'];
 
+  // Hvert kort fører hen til de selskaber, det måler: et landeindeks til
+  // børsen, et amerikansk indeks til dets egen liste. SOX har ingen egen
+  // filterknap, så det lander på halvledersektoren i stedet.
+  const GOES_TO = {
+    OMXC25: 'markedskurser.html?marked=DK',
+    OMXS30: 'markedskurser.html?marked=SE',
+    OSEAX:  'markedskurser.html?marked=NO',
+    OMXH25: 'markedskurser.html?marked=FI',
+    SP500:  'markedskurser.html?indeks=SP500',
+    NDX:    'markedskurser.html?indeks=NDX',
+    SOX:    'markedskurser.html?q=semiconductor',
+  };
+
   const fmtLevel = (n) => n.toLocaleString('da-DK', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
   loadBenchmarks().then((data) => {
@@ -273,7 +291,9 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
       const c = b.closes, last = c[c.length - 1], prev = c[c.length - 2];
       const move = prev ? ((last - prev) / prev) * 100 : null;
       const tail = c.slice(-100);
-      return '<div class="card rounded-md idx-item">'
+      const href = GOES_TO[code] || 'markedskurser.html';
+      return '<a href="' + href + '" class="card rounded-md idx-item idx-link" '
+        +      'aria-label="' + esc(b.label) + ' — se selskaberne">'
         +   '<div>'
         +     '<div class="idx-name">' + esc(b.label) + '</div>'
         +     '<div class="idx-val num">' + fmtLevel(last) + '</div>'
@@ -282,7 +302,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
         +     sparkline(tail, move, 76, 24)
         +     '<div class="idx-move num ' + dirClass(move) + '">' + fmtPct(move) + '</div>'
         +   '</div>'
-        + '</div>';
+        + '</a>';
     }).join('');
     document.getElementById('idx').innerHTML = html;
     document.getElementById('idxWhen').textContent =
