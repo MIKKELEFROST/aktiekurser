@@ -462,7 +462,10 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
   ];
 
   const BY_KEY = new Map(COLUMNS.map((c) => [c.key, c]));
-  const DEFAULT_COLS = ['rank', 'name', 'spark30', 'pct_today', 'pct_7d', 'pct_30d', 'price', 'sector', 'currency', 'volume'];
+  // What the table opens on, and what both "Standard" and "Nulstil" return to.
+  // Written in registry order, which is the order they are drawn in.
+  const DEFAULT_COLS = ['rank', 'name', 'sector', 'exchange',
+                        'pct_today', 'spark30', 'pct_7d', 'pct_30d', 'pct_6m', 'mcap'];
 
   // The table always reads in the registry's order — the same order the picker
   // lists the columns in — so a column sits in the same place no matter when it
