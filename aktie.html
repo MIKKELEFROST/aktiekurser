@@ -8,10 +8,11 @@
 <title>Aktie – detaljer</title>
 
 <script src="https://cdn.tailwindcss.com"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preload" href="assets/fonts/Porteron-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/Porteron-Semi.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/kursliste.css">
 <script>
-tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Aptos', 'Inter', 'system-ui', 'sans-serif'] } } } }
+tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial', 'system-ui', 'sans-serif'] } } } }
 </script>
 <style>
   .chart-wrap { position: relative; }
@@ -1466,6 +1467,11 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Aptos',
         + '<span class="num font-bold ' + K.dirClass(move) + '">' + K.fmtPct(move) + '</span> i perioden'
         + (s.closes.length > 1
             ? '<br>' + peakLine(s.dates, s.closes, row.currency, 'Højeste i perioden')
+            : '')
+        // Hvornår kursen sidst flyttede sig. Live-opdateringen skriver den om
+        // hvert minut, så et tal på skærmen aldrig er ældre end linjen under det.
+        + (row.quote_time
+            ? '<br><span class="faint">Kursen er senest registreret ' + K.fmtAge(row.quote_time) + '</span>'
             : '')
       : 'Ingen handelsdage i den valgte periode.';
   }

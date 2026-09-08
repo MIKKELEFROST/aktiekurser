@@ -9,10 +9,11 @@
 <meta name="description" content="Børshandlede fonde noteret i Frankfurt, Amsterdam, USA og Norden: kurs, udvikling, formue og omkostning.">
 
 <script src="https://cdn.tailwindcss.com"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preload" href="assets/fonts/Porteron-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/Porteron-Semi.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/kursliste.css">
 <script>
-tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Aptos', 'Inter', 'system-ui', 'sans-serif'] } } } }
+tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial', 'system-ui', 'sans-serif'] } } } }
 </script>
 <style>
   .pager-btn {
@@ -402,8 +403,9 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Aptos',
 
     renderHead();
 
-    $('#count').textContent = K.fmtInt(rows.length) + (rows.length === 1 ? ' fond' : ' fonde')
-      + (rows.length !== state.all.length ? ' af ' + K.fmtInt(state.all.length) : '');
+    $('#count').innerHTML = K.esc(K.fmtInt(rows.length) + (rows.length === 1 ? ' fond' : ' fonde')
+      + (rows.length !== state.all.length ? ' af ' + K.fmtInt(state.all.length) : ''))
+      + (state.updatedAt ? '<span class="faint"> · data hentet ' + K.esc(K.fmtAge(state.updatedAt)) + '</span>' : '');
     $('#pageInfo').textContent = rows.length
       ? 'Viser ' + K.fmtInt(start + 1) + '–' + K.fmtInt(Math.min(start + slice.length, rows.length))
         + ' · side ' + state.page + ' af ' + pages

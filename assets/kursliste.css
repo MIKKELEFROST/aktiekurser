@@ -1,94 +1,129 @@
 /* Coop Bank — delt styling for kurssiderne.
 
-   Farver, radius og skrift følger Coop Banks designguide (18.08.2025):
-   fire primære farver, tre sekundære, 6 px radius på kasser, og Porteron som
-   primær skrift med Aptos som fallback. Lyse værdier står på :root; mørk
-   tilstand defineres både under OS-forespørgslen og et [data-theme]-stempel,
-   så en temaknap vinder begge veje. */
+   Facit er coopbank.dk. Farveprimitiver, radius-skala, skriftstørrelser og
+   knapformer er hentet direkte ud af sitets eget stylesheet, og Porteron
+   ligger i assets/fonts/ i de fire vægte det bruger. Designguiden og
+   tone-of-voice-oplægget ligger bagved; hvor de to er uenige med det levende
+   site, følger vi sitet. Guiden siger for eksempel 6 px radius, mens sitet
+   kører en skala fra 4 til 32 px — vi kører skalaen. */
+
+@font-face { font-family: Porteron; src: url('fonts/Porteron-Regular.woff2') format('woff2');
+             font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: Porteron; src: url('fonts/Porteron-Medium.woff2') format('woff2');
+             font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: Porteron; src: url('fonts/Porteron-Semi.woff2') format('woff2');
+             font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: Porteron; src: url('fonts/Porteron-Bold.woff2') format('woff2');
+             font-weight: 700; font-style: normal; font-display: swap; }
 
 :root {
   color-scheme: light;
 
-  /* ── Primære farver ────────────────────────────────────────────────── */
-  --coop-red:      #c31414;   /* Coop Red */
-  --coop-bordeaux: #55252f;   /* Coop Bordeaux */
-  --coop-satin:    #edebe3;   /* Coop Satin Linen */
-  --coop-pampas:   #f6f5f1;   /* Coop Pampas */
-
-  /* ── Sekundære farver ──────────────────────────────────────────────── */
-  /* Kun som flader og søjler. Ingen af dem har kontrast nok til at bære
-     tekst på lys bund — 1,6 : 1 for lilla mod Pampas — så de bruges som
-     baggrund med bordeaux tekst ovenpå, præcis som i designguiden. */
-  --coop-lilla:    #c4bef4;
-  --coop-blaa:     #779ffd;
-  --coop-groen:    #63d78c;
+  /* ── Primitiver, som de står i coopbank.dk ─────────────────────────── */
+  --coop-red-700:     #c31414;   --coop-red-800:  #a01414;
+  --coop-red-200:     #ffc7c7;   --coop-red-100:  #ffe1e1;   --coop-red-50:   #fff1f1;
+  --coop-bordeaux:    #55252f;   --coop-bordeaux-light:#5c2833;
+  --coop-satin-50:    #f6f5f1;   --coop-satin-100:#edebe3;  --coop-satin-200:#ddd9cb;
+  --coop-purple-200:  #dddbf9;   --coop-purple-300:#c4bef4; --coop-purple-400:#a699ec;
+  --coop-blue-400:    #779ffd;   --coop-blue-500: #3864f9;  --coop-blue-600: #2243ee;
+  --coop-green-300:   #8ee7ad;   --coop-green-400:#64d78c;
+  --coop-green-500:   #2eb95f;   --coop-green-600:#21984b;
+  --coop-neutral-50:  #f5f5f6;   --coop-neutral-100:#e5e5e8; --coop-neutral-200:#ceced3;
+  --coop-neutral-400: #83858d;   --coop-neutral-700:#4c4d52; --coop-neutral-800:#434347;
+  --coop-neutral-1000:#0c0c0d;
+  --coop-yellow-50:   #fdefda;
 
   /* ── Roller ────────────────────────────────────────────────────────── */
+  --page-plane:     #ffffff;                    /* sitet står på hvidt */
   --surface-1:      #ffffff;
-  --surface-2:      var(--coop-satin);
-  --page-plane:     var(--coop-pampas);
-  --text-primary:   var(--coop-bordeaux);          /* 11,4 : 1 mod Pampas */
-  --text-secondary: #6f4650;                       /*  7,2 : 1 */
-  --text-muted:     #7d5b63;                       /*  5,4 : 1 */
-  --gridline:       #e6e0da;
-  --hairline:       rgba(85, 37, 47, 0.14);
-  --accent:         var(--coop-red);               /*  5,6 : 1 */
+  --surface-2:      var(--coop-satin-50);       /* rolige bånd og værktøjslinjer */
+  --text-primary:   var(--coop-neutral-1000);
+  --text-secondary: var(--coop-neutral-700);
+  --text-muted:     var(--coop-neutral-400);
+  --gridline:       var(--coop-neutral-100);
+  --hairline:       var(--coop-neutral-200);
 
-  /* Stigning og fald. Grøn er Coop-grøn mørknet til den bærer tekst; fald
-     er Coop Red. Rødt bruges aldrig som CTA-flade på lys bund netop derfor —
-     knapper er bordeaux eller hvide på farvet bund, som i designguiden. */
-  --delta-up:       #17663d;                       /*  6,4 : 1 */
-  --delta-down:     var(--coop-red);
+  /* Rødt er mærket — logo og den aktive fane. Blåt er links, som på sitet.
+     Grønt er den primære knap. Tre farver, tre job, aldrig byttet om. */
+  --brand:          var(--coop-red-700);
+  --accent:         var(--coop-blue-600);
+  --cta:            var(--coop-green-400);
+  --cta-edge:       var(--coop-green-600);
 
-  /* Designguiden: "Billedbokse og farvede kasser har afrundede hjørner med
-     en radius på 6 px." Piller beholder deres fulde radius. */
-  --radius: 6px;
+  /* Farvede flader. Guidens sekundærfarver er flader, ikke tekst, så de får
+     deres egne roller med den tekstfarve der hører til. De skifter ikke i
+     mørk tilstand: rødt er mærket, og cremen ovenpå læser lige godt begge
+     steder — mens en lysere rød ville tabe kontrasten mod cremen. */
+  --fill-red:        var(--coop-red-700);   --fill-red-ink:    var(--coop-satin-50);
+  --fill-bordeaux:   var(--coop-bordeaux);
+  --fill-lilla:      var(--coop-purple-300);
+  --fill-blaa:       var(--coop-blue-400);
+  --fill-groen:      var(--coop-green-400);
+  --fill-pastel-ink: var(--coop-bordeaux);
+
+  /* Stigning og fald. Begge er sitets egne: den mørke grøn er kanten på
+     knappen, den mørke rød er sitets tekstrøde. */
+  --delta-up:       var(--coop-green-600);      /* 4,7 : 1 på hvid */
+  --delta-down:     var(--coop-red-800);        /* 7,0 : 1 på hvid */
+
+  /* Radius-skalaen fra sitet: 4 · 8 · 12 · 16 · 20 · 24 · 32. */
+  --radius-xxs: 4px; --radius-xs: 8px;  --radius-sm: 12px; --radius: 16px;
+  --radius-md: 20px; --radius-lg: 24px; --radius-pill: 32px;
+
+  /* Sitets to indholdsbredder: 88 rem indeni den store ramme, 50 rem til løbende
+     tekst. Vi holder os til dem, så siderne står i samme spalte som coopbank.dk. */
+  --wrap: 88rem;     --wrap-pad: 3rem;   --wrap-narrow: 50rem;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     color-scheme: dark;
-    /* Mørk tilstand står ikke i guiden. Den er afledt af den, ikke opfundet
-       ved siden af: bunden er bordeaux kørt næsten til sort, teksten er
-       Pampas, og accenten er Coop Red løftet så den bærer på mørkt. */
-    --surface-1:      #2a1519;
-    --surface-2:      #331a1f;
-    --page-plane:     #1a0d10;
-    --text-primary:   var(--coop-pampas);
-    --text-secondary: #d6c4c7;
-    --text-muted:     #a98d93;
-    --gridline:       #3d2229;
-    --hairline:       rgba(246, 245, 241, 0.13);
-    --accent:         #ef4b4b;
-    --delta-up:       #63d78c;
+    /* Mørk tilstand findes ikke på coopbank.dk. Den er afledt af paletten,
+       ikke opfundet ved siden af: bunden er neutral-1000, fladerne løftes,
+       og de tre jobfarver løftes til de lyse trin i deres egne ramper. */
+    --page-plane:     #0c0c0d;
+    --surface-1:      #17171a;
+    --surface-2:      #1f1f23;
+    --text-primary:   #f5f5f6;
+    --text-secondary: #ceced3;
+    --text-muted:     #83858d;
+    --gridline:       #2a2a2e;
+    --hairline:       #38383d;
+    --brand:          #ef4b4b;
+    --accent:         var(--coop-blue-400);
+    --cta:            var(--coop-green-400);
+    --cta-edge:       var(--coop-green-600);
+    --delta-up:       var(--coop-green-400);
     --delta-down:     #ef7070;
   }
 }
 
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --surface-1:      #2a1519;
-  --surface-2:      #331a1f;
-  --page-plane:     #1a0d10;
-  --text-primary:   var(--coop-pampas);
-  --text-secondary: #d6c4c7;
-  --text-muted:     #a98d93;
-  --gridline:       #3d2229;
-  --hairline:       rgba(246, 245, 241, 0.13);
-  --accent:         #ef4b4b;
-  --delta-up:       #63d78c;
+  --page-plane:     #0c0c0d;
+  --surface-1:      #17171a;
+  --surface-2:      #1f1f23;
+  --text-primary:   #f5f5f6;
+  --text-secondary: #ceced3;
+  --text-muted:     #83858d;
+  --gridline:       #2a2a2e;
+  --hairline:       #38383d;
+  --brand:          #ef4b4b;
+  --accent:         var(--coop-blue-400);
+  --cta:            var(--coop-green-400);
+  --cta-edge:       var(--coop-green-600);
+  --delta-up:       var(--coop-green-400);
   --delta-down:     #ef7070;
 }
 
-/* Porteron er den primære skrift. Den er ikke en webfont vi kan hente fra en
-   åben tjeneste, så stakken er bygget som guiden selv bygger sin: Porteron
-   hvis filen er lagt i assets/fonts/, ellers Aptos, som Microsoft leverer med
-   365 og som guiden udpeger som fallback, ellers Inter, der er den nærmeste
-   grotesk vi kan hente. Sæt-og-glem: dagen Porteron ligger i mappen, skifter
-   hele sitet af sig selv. */
-html, body, .font-sans {
-  font-family: 'Porteron', 'Aptos', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
-}
+/* Porteron i fire vægte, med sitets egen fallback bagved. */
+html, body, .font-sans { font-family: Porteron, Arial, system-ui, sans-serif; }
+
+/* Sitets typografi: overskrifter i Semi med strammet spatiering og tæt
+   linjeafstand, brødtekst i Regular. Tallene her er målt på coopbank.dk. */
+h1, h2, h3, h4, h5 { font-weight: 600; letter-spacing: -0.01em; }
+h1 { letter-spacing: -0.02em; line-height: 1.04; }
+body { font-size: 16px; letter-spacing: -0.005em; }
 
 body { background: var(--page-plane); color: var(--text-primary); }
 
@@ -98,6 +133,12 @@ body { background: var(--page-plane); color: var(--text-primary); }
 [hidden] { display: none !important; }
 
 /* Columns and figures that must align vertically get tabular numerals. */
+/* Et <select> bliver lige så bredt som sin længste mulighed. Med hundredvis
+   af fondsnavne i listen sprænger den en telefonskærm og skubber hele siden
+   sidelæns. Felterne bindes til deres spalte og klipper teksten i stedet. */
+select, input, textarea, button { max-width: 100%; }
+select { text-overflow: ellipsis; }
+
 .num { font-variant-numeric: tabular-nums; }
 
 .up   { color: var(--delta-up); }
@@ -107,11 +148,11 @@ body { background: var(--page-plane); color: var(--text-primary); }
 /* Guidens sekundære farver er flader, ikke tekst. Bordeaux ovenpå giver
    7,1 : 1 på lilla, 6,9 på grøn og 4,8 på blå — alle over grænsen. */
 .card-satin { background: var(--surface-2); border-color: transparent; }
-.card-lilla { background: var(--coop-lilla); border-color: transparent; color: var(--coop-bordeaux); }
-.card-blaa  { background: var(--coop-blaa);  border-color: transparent; color: var(--coop-bordeaux); }
-.card-groen { background: var(--coop-groen); border-color: transparent; color: var(--coop-bordeaux); }
-.card-rod   { background: var(--coop-red);   border-color: transparent; color: var(--coop-pampas); }
-.card-bordeaux { background: var(--coop-bordeaux); border-color: transparent; color: var(--coop-pampas); }
+.card-lilla { background: var(--fill-lilla); border-color: transparent; color: var(--fill-pastel-ink); }
+.card-blaa  { background: var(--fill-blaa);  border-color: transparent; color: var(--fill-pastel-ink); }
+.card-groen { background: var(--fill-groen); border-color: transparent; color: var(--fill-pastel-ink); }
+.card-rod   { background: var(--fill-red);   border-color: transparent; color: var(--fill-red-ink); }
+.card-bordeaux { background: var(--fill-bordeaux); border-color: transparent; color: var(--fill-red-ink); }
 .card-lilla .muted, .card-blaa .muted, .card-groen .muted,
 .card-lilla .faint, .card-blaa .faint, .card-groen .faint { color: rgba(85, 37, 47, .72); }
 .card-rod .muted, .card-bordeaux .muted,
@@ -138,21 +179,21 @@ th[aria-sort="none"]       .caret::after { content: "⌄"; opacity: .45; }
    bordeaux på lys bund, hvid på farvet. Rød flade er reserveret til hele
    sektioner, ikke til enkeltknapper, så rødt ét sted altid betyder det samme. */
 .btn-primary {
-  background: var(--coop-bordeaux); color: var(--coop-pampas);
+  background: var(--fill-bordeaux); color: var(--fill-red-ink);
   text-transform: uppercase; letter-spacing: .06em; font-size: 12px; font-weight: 700;
 }
-.btn-primary:hover { background: var(--coop-red); }
+.btn-primary:hover { background: var(--fill-red); }
 .card-rod .btn-primary, .card-bordeaux .btn-primary {
-  background: var(--coop-pampas); color: var(--coop-bordeaux);
+  background: var(--fill-red-ink); color: var(--fill-bordeaux);
 }
 .card-rod .btn-primary:hover, .card-bordeaux .btn-primary:hover { background: #fff; }
 
 /* Den tomme pille fra guidens navigation: rød kant, rød tekst, ingen flade. */
 .btn-outline {
-  border: 1.5px solid var(--coop-red); color: var(--coop-red); background: transparent;
+  border: 1.5px solid var(--brand); color: var(--brand); background: transparent;
   text-transform: uppercase; letter-spacing: .06em; font-size: 12px; font-weight: 700;
 }
-.btn-outline:hover { background: var(--coop-red); color: var(--coop-pampas); }
+.btn-outline:hover { background: var(--fill-red); color: var(--fill-red-ink); }
 
 .link-accent { color: var(--accent); }
 .link-accent:hover { text-decoration: underline; }
@@ -219,19 +260,14 @@ th .hint { cursor: pointer; }           /* header is still a sort control */
 @media (prefers-reduced-motion: reduce) { #kl-hint { transition: none; } }
 
 /* ── Site header ────────────────────────────────────────────────────────
-   Two tiers: brand row, then section tabs. Sticky so the sections stay
-   reachable while a long table scrolls. */
+   Ét bånd, som på coopbank.dk: logo, sub-brand og sektioner på samme linje.
+   Klæbende, så sektionerne bliver ved med at være inden for rækkevidde mens
+   en lang tabel ruller. */
 #sitenav { position: sticky; top: 0; z-index: 40; }
 
-/* Guidens forside har en lys navigation med det røde ordmærke til venstre —
-   ikke en mørk bjælke. */
 .nav-top {
   background: var(--page-plane);
   color: var(--text-primary);
-  border-bottom: 1px solid var(--gridline);
-}
-.nav-bottom {
-  background: var(--page-plane);
   border-bottom: 1px solid var(--gridline);
 }
 .nav-inner {
@@ -240,54 +276,56 @@ th .hint { cursor: pointer; }           /* header is still a sort control */
   padding: 0 16px;
   display: flex;
   align-items: center;
-  gap: 22px;
-  min-height: 52px;
+  gap: 10px 28px;
+  min-height: 64px;
+  flex-wrap: wrap;
 }
-.nav-bottom .nav-inner { min-height: 44px; gap: 24px; overflow-x: auto; }
 
-/* Ordmærket: Coop i rødt, BANK i versaler efter — som logoet. Sub-brandet
-   står under samme regel som guidens sub-brand-arkitektur: samme vægt, samme
-   familie, adskilt af en tynd streg. */
+/* Logoet er Coop Banks egen vektor. currentColor gør at det tager farven fra
+   .nav-brand, så det er rødt her og ville følge med i en mørk header. */
 .nav-brand {
-  font-weight: 800;
-  letter-spacing: -0.01em;
-  font-size: 18px;
-  color: var(--coop-red);
+  color: var(--brand);
   text-decoration: none;
-  white-space: nowrap;
-  display: inline-flex; align-items: baseline; gap: 8px;
+  display: inline-flex; align-items: center; gap: 10px;
+  flex: 0 0 auto;
 }
-/* "Med udgangspunkt i Coops logo er ordet BANK tilføjet i versaler." */
-.nav-brand-bank { letter-spacing: .01em; }
+.nav-logo { display: block; width: 122px; height: auto; }
 .nav-brand-sub {
-  font-weight: 600; font-size: 14px; letter-spacing: .01em;
+  font-weight: 500; font-size: 15px; letter-spacing: -0.01em;
   color: var(--text-secondary);
-  padding-left: 8px; border-left: 1px solid var(--hairline);
+  padding-left: 10px; border-left: 1px solid var(--hairline);
+  white-space: nowrap;
 }
+
+.nav-sections {
+  display: flex; align-items: center; gap: 24px;
+  overflow-x: auto; flex: 1 1 auto; min-width: 0;
+  scrollbar-width: none;
+}
+.nav-sections::-webkit-scrollbar { display: none; }
 
 .nav-back {
   margin-left: auto;
-  font-size: 13px;
-  font-weight: 600;
-  color: inherit;
-  opacity: .8;
-  text-decoration: none;
-  white-space: nowrap;
-}
-.nav-back:hover { opacity: 1; text-decoration: underline; }
-
-.nav-tab {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--text-secondary);
   text-decoration: none;
-  padding: 11px 0;
+  white-space: nowrap;
+  flex: 0 0 auto;
+}
+.nav-back:hover { color: var(--text-primary); text-decoration: underline; }
+
+.nav-tab {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-primary);
+  text-decoration: none;
+  padding: 20px 0;
   border-bottom: 3px solid transparent;
   white-space: nowrap;
 }
-.nav-tab:hover { color: var(--text-primary); }
 .nav-tab.is-active {
-  color: var(--text-primary);
-  border-bottom-color: var(--accent);
-  font-weight: 800;
+  color: var(--brand);
+  border-bottom-color: var(--brand);
+  font-weight: 600;
 }
