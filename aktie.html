@@ -381,13 +381,20 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
       + '</div>';
   }
 
-  function drawChart(dates, closes, currency) {
+  function drawChart(dates, closes, currency, opts) {
     if (closes.length < 2) {
       return '<p class="text-sm muted py-10 text-center">Perioden indeholder for få handelsdage til en graf.</p>';
     }
+    const intraday = !!(opts && opts.intraday);
+    const prev = opts && opts.prev != null ? opts.prev : null;
     chart.dates = dates; chart.closes = closes; chart.currency = currency;
+    chart.intraday = intraday;
 
-    const min = Math.min.apply(null, closes), max = Math.max.apply(null, closes);
+    // Dagsgrafen måles fra gårsdagens lukkekurs, ikke fra dagens første handel:
+    // åbner aktien i et spring, er springet en del af dagens bevægelse, og en
+    // akse der starter ved første kurs ville skjule det.
+    let min = Math.min.apply(null, closes), max = Math.max.apply(null, closes);
+    if (intraday && prev != null) { min = Math.min(min, prev); max = Math.max(max, prev); }
     const pad = (max - min) * 0.08 || 1;
     const lo = min - pad, hi = max + pad;
     const x = (i) => G.L + (G.iw * i) / (closes.length - 1);
@@ -400,13 +407,27 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
       + '<text x="' + (G.L - 8) + '" y="' + (y(v) + 4).toFixed(1) + '" text-anchor="end" '
       + 'font-size="11" fill="var(--text-muted)">' + K.fmtPrice(v) + '</text>').join('');
 
-    // Three date ticks; one per session would collide at any width.
-    const idx = [0, Math.floor((dates.length - 1) / 2), dates.length - 1];
+    // Tre datomærker; ét pr. handelsdag ville støde sammen ved enhver bredde.
+    // En dag har til gengæld plads til fem klokkeslæt, og det er dem der gør
+    // en dagsgraf læselig.
+    const ticks = intraday ? 5 : 3;
+    const idx = Array.from({ length: ticks }, (_, k) =>
+      Math.round((dates.length - 1) * k / (ticks - 1)));
     const xLabels = idx.map((i, n) =>
       '<text x="' + x(i).toFixed(1) + '" y="' + (G.H - 9) + '" text-anchor="'
-      + (n === 0 ? 'start' : n === 2 ? 'end' : 'middle') + '" font-size="11" fill="var(--text-muted)">'
-      + new Date(dates[i]).toLocaleDateString('da-DK', { day: 'numeric', month: 'short', year: '2-digit' })
+      + (n === 0 ? 'start' : n === ticks - 1 ? 'end' : 'middle') + '" font-size="11" fill="var(--text-muted)">'
+      + (intraday ? K.esc(dates[i])
+                  : new Date(dates[i]).toLocaleDateString('da-DK', { day: 'numeric', month: 'short', year: '2-digit' }))
       + '</text>').join('');
+
+    // Gårsdagens lukkekurs som stiplet nullinje. Uden den siger en dagsgraf
+    // ikke om dagen har været op eller ned — kun hvordan formen så ud.
+    const prevLine = (intraday && prev != null && prev >= lo && prev <= hi)
+      ? '<line x1="' + G.L + '" y1="' + y(prev).toFixed(1) + '" x2="' + (G.W - G.R) + '" y2="' + y(prev).toFixed(1)
+        + '" stroke="var(--text-muted)" stroke-width="1" stroke-dasharray="4 4" opacity="0.7"/>'
+        + '<text x="' + (G.W - G.R) + '" y="' + (y(prev) - 5).toFixed(1) + '" text-anchor="end" '
+        + 'font-size="10" fill="var(--text-muted)">Luk i går ' + K.fmtPrice(prev) + '</text>'
+      : '';
 
     // Grafen er 900 enheder bred. Fyrre års daglige kurser er tolv punkter pr.
     // enhed, og en path med elleve tusind punkter er et kvart megabyte markup
@@ -430,7 +451,8 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
     }
     const idxs = step > 1 ? thin : closes.map((_, i) => i);
     const d = idxs.map((i, n) => (n ? 'L' : 'M') + x(i).toFixed(1) + ' ' + y(closes[i]).toFixed(1)).join(' ');
-    const stroke = closes[closes.length - 1] >= closes[0] ? 'var(--delta-up)' : 'var(--delta-down)';
+    const base = (intraday && prev != null) ? prev : closes[0];
+    const stroke = closes[closes.length - 1] >= base ? 'var(--delta-up)' : 'var(--delta-down)';
     chart.lo = lo; chart.hi = hi;
 
     return '<div class="chart-wrap">'
@@ -438,7 +460,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
       + 'role="img" aria-label="Kursudvikling ' + K.esc(dates[0]) + ' til ' + K.esc(dates[dates.length - 1])
       + ', fra ' + K.fmtPrice(closes[0]) + ' til ' + K.fmtPrice(closes[closes.length - 1]) + ' ' + K.esc(currency)
       + '" style="display:block">'
-      + grid + xLabels
+      + grid + prevLine + xLabels
       + '<path d="' + d + '" fill="none" stroke="' + stroke + '" stroke-width="2" '
       + 'stroke-linecap="round" stroke-linejoin="round"/>'
       + '<rect id="selband" x="0" y="' + G.T + '" width="0" height="' + G.ih + '" '
@@ -527,7 +549,8 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
 
       tip.style.opacity = '1';
       let body = '<strong class="num">' + K.fmtPrice(chart.closes[i]) + ' ' + K.esc(chart.currency) + '</strong>'
-        + '<br><span class="faint">' + K.fmtDate(chart.dates[i]) + '</span>';
+        + '<br><span class="faint">'
+        + (chart.intraday ? K.esc(chart.dates[i]) : K.fmtDate(chart.dates[i])) + '</span>';
       // While a start is set, the tooltip previews the move to the cursor.
       if (sel.a != null && sel.b == null && i !== sel.a) {
         const from = chart.closes[sel.a];
@@ -1525,6 +1548,35 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
   let archive = null, archiveState = 'idle';   // idle | henter | klar | ingen
   let mergedCache = null;
 
+  // Dagsgrafen kan ikke tegnes af de daglige filer: de bærer én lukkekurs pr.
+  // dag, og to af dem forbundet med en ret linje siger intet om dagen. Yahoo
+  // har minutterne, men sender ingen CORS-header, så de hentes gennem sidens
+  // eget endepunkt — og først når nogen faktisk vælger "1d".
+  let intraday = null, intradayState = 'idle';
+
+  async function ensureIntraday() {
+    if (intradayState !== 'idle' || !row) return;
+    intradayState = 'henter';
+    try {
+      const res = await fetch('api/intradag?symbol=' + encodeURIComponent(row.symbol) + '&range=1d',
+        { headers: { accept: 'application/json' } });
+      const j = res.ok ? await res.json() : null;
+      intraday = (j && j.ok && j.t && j.t.length > 1) ? j : null;
+    } catch { intraday = null; }
+    intradayState = intraday ? 'klar' : 'ingen';
+    if (intraday && state.range === '1d') renderChartBlock();
+  }
+
+  // Børsens egen klokke, ikke browserens: en amerikansk aktie handler 15.30
+  // dansk tid, men grafen skal sige 09.30, som børsen gør.
+  function intradaySeries() {
+    if (!intraday) return null;
+    const off = (intraday.gmtoffset || 0) * 1000;
+    const clock = (secs) => new Date(secs * 1000 + off).toISOString().slice(11, 16).replace(':', '.');
+    return { dates: intraday.t.map(clock), closes: intraday.c,
+             prev: intraday.prev, day: new Date((intraday.t[0]) * 1000 + off).toISOString().slice(0, 10) };
+  }
+
   function dailySeries() {
     if (!archive) return full;
     if (!mergedCache) mergedCache = K.spliceDaily(archive, { dates: full.dates, closes: full.closes });
@@ -1556,12 +1608,20 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
     // wrong days.
     sel.a = sel.b = null; sel.dragging = false;
     if (full && needsArchive()) ensureArchive();
-    const s = slice(full);
     const comparing = state.compare.length > 0;
 
+    // "1d" er dagens forløb minut for minut, ikke to lukkekurser med en ret
+    // linje imellem. Sammenligningsgrafen bliver på dagsdata: to papirer med
+    // hver sin børsdag kan ikke dele en minutakse.
+    const wantsIntraday = state.range === '1d' && !comparing;
+    if (wantsIntraday) ensureIntraday();
+    const day = wantsIntraday ? intradaySeries() : null;
+
+    const s = day || slice(full);
     $('#chartHost').innerHTML = comparing
       ? drawCompareChart(s.dates, s.closes, row)
-      : drawChart(s.dates, s.closes, row.currency);
+      : drawChart(s.dates, s.closes, row.currency,
+                  day ? { intraday: true, prev: day.prev } : null);
     $('#selSummary').hidden = true;
     // Click-to-select belongs to the price view; in the comparison the y-axis
     // is a percentage shared by several series and a selection would be
@@ -1571,7 +1631,25 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
     if (help) help.hidden = comparing;
     if (!comparing) wireChart();
 
-    const move = s.closes.length > 1 ? ((s.closes[s.closes.length - 1] - s.closes[0]) / s.closes[0]) * 100 : null;
+    // På en dagsgraf måles bevægelsen fra gårsdagens lukkekurs — det er det
+    // tal børsen og alle andre kalder "i dag".
+    const base = day && day.prev != null ? day.prev : s.closes[0];
+    const move = s.closes.length > 1 ? ((s.closes[s.closes.length - 1] - base) / base) * 100 : null;
+
+    if (day) {
+      const lo = Math.min.apply(null, s.closes), hi = Math.max.apply(null, s.closes);
+      $('#chartSummary').innerHTML =
+        K.fmtDate(day.day) + ' · ' + K.esc(s.dates[0]) + '–' + K.esc(s.dates[s.dates.length - 1])
+        + ' · ' + s.dates.length + ' minutter · '
+        + '<span class="num font-bold ' + K.dirClass(move) + '">' + K.fmtPct(move) + '</span> i dag'
+        + '<br>Højest ' + K.fmtPrice(hi) + ' · lavest ' + K.fmtPrice(lo) + ' ' + K.esc(row.currency)
+        + (day.prev != null ? ' · luk i går ' + K.fmtPrice(day.prev) : '')
+        + (row.quote_time
+            ? '<br><span class="faint">Kursen er senest registreret ' + K.fmtAge(row.quote_time) + '</span>'
+            : '');
+      return;
+    }
+
     $('#chartSummary').innerHTML = s.dates.length
       ? K.fmtDate(s.dates[0]) + ' – ' + K.fmtDate(s.dates[s.dates.length - 1])
         + ' · ' + s.dates.length + ' ' + (s.coarse ? barLabel(s.dates) : 'handelsdage') + ' · '
@@ -1637,7 +1715,10 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
 
   function render(r, hist, fx, updatedAt, neighbours) {
     lastArgs = [r, hist, fx, updatedAt, neighbours];
-    if (!row || row.symbol !== r.symbol) { archive = null; archiveState = 'idle'; mergedCache = null; }
+    if (!row || row.symbol !== r.symbol) {
+      archive = null; archiveState = 'idle'; mergedCache = null;
+      intraday = null; intradayState = 'idle';
+    }
     row = r; full = hist; fxRate = fx;
     const cur = r.currency;
     const conv = cur !== 'DKK' && r.price_dkk != null;

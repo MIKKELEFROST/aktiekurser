@@ -247,7 +247,13 @@
     });
 
     tick();
-    return { stop() { stopped = true; clearTimeout(timer); } };
+    // now() lader siden hente med det samme i stedet for at vente på næste
+    // tik — et genindlæs skal ikke stå med et minut gamle kurser og en chip
+    // der påstår at de er timer gamle.
+    return {
+      stop() { stopped = true; clearTimeout(timer); },
+      now() { if (!stopped) { clearTimeout(timer); tick(); } },
+    };
   }
 
   // ── Derived figures ───────────────────────────────────────────────────
