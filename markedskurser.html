@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/kursliste.css">
 <script>
-tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] } } } }
+tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Aptos', 'Inter', 'system-ui', 'sans-serif'] } } } }
 </script>
 <style>
   .pager-btn {
@@ -63,12 +63,13 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
   <div class="flex items-start justify-between gap-4 mb-6 flex-wrap">
     <div>
       <h1 class="text-2xl md:text-3xl font-extrabold tracking-tight">
-        Aktiekurser – nordiske og amerikanske aktier
+        Kurser på de aktier, du kommer i tanke om
       </h1>
       <p class="text-sm mt-1 muted" style="max-width:70ch">
-        Alle børsnoterede selskaber af en vis størrelse i Danmark, Sverige, Norge, Finland og Island
-        samt på Nasdaq, NYSE og NYSE American. Filtrér på marked, indeks og sektor, vælg selv hvilke
-        kolonner du vil se, og klik på et selskab for detaljer.
+        Kender du navnet, så søg efter det. Er du bare nysgerrig, så filtrér dig frem på marked,
+        indeks eller branche. Vi har taget alle børsnoterede selskaber af en vis størrelse med
+        fra Danmark, Sverige, Norge, Finland og Island samt Nasdaq, NYSE og NYSE American — og
+        savner du en kolonne, kan du selv sætte den ind.
       </p>
     </div>
     <a href="inspiration.html"
@@ -77,23 +78,23 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     </a>
   </div>
 
-  <div class="card rounded-2xl p-4 md:p-6">
+  <div class="card rounded-md p-4 md:p-6">
 
     <!-- ─── Controls ───────────────────────────────────────────────────── -->
     <div class="flex flex-wrap items-center gap-3 mb-4">
-      <input id="q" type="search" class="rounded-lg px-3 py-2 text-sm bg-transparent" style="width:14rem;border:1px solid var(--hairline);color:var(--text-primary)"
+      <input id="q" type="search" class="rounded-md px-3 py-2 text-sm bg-transparent" style="width:14rem;border:1px solid var(--hairline);color:var(--text-primary)"
              placeholder="Navn / symbol" aria-label="Søg efter navn eller symbol">
 
-      <select id="sector" class="rounded-lg px-3 py-2 text-sm bg-transparent" aria-label="Sektor"
+      <select id="sector" class="rounded-md px-3 py-2 text-sm bg-transparent" aria-label="Sektor"
               style="border:1px solid var(--hairline);color:var(--text-primary)">
         <option value="">Alle sektorer</option>
       </select>
 
-      <select id="sortField" class="rounded-lg px-3 py-2 text-sm bg-transparent" aria-label="Sortér efter"
+      <select id="sortField" class="rounded-md px-3 py-2 text-sm bg-transparent" aria-label="Sortér efter"
               style="border:1px solid var(--hairline);color:var(--text-primary)"></select>
 
       <div class="picker-wrap">
-        <button id="pickerBtn" class="rounded-lg px-3 py-2 text-sm font-semibold muted" aria-expanded="false"
+        <button id="pickerBtn" class="rounded-md px-3 py-2 text-sm font-semibold muted" aria-expanded="false"
                 style="border:1px solid var(--hairline)"
                 data-hint-title="Kolonner"
                 data-hint="Vælg selv hvad tabellen viser. Alt fra de enkelte aktiesider kan slås til. Dit valg huskes i denne browser.">
@@ -104,7 +105,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
 
       <!-- Currency view. "Noteret" keeps every figure a raw source value;
            "Alt i DKK" converts the USD rows so prices sort across markets. -->
-      <div class="inline-flex rounded-lg overflow-hidden" style="border:1px solid var(--hairline)"
+      <div class="inline-flex rounded-md overflow-hidden" style="border:1px solid var(--hairline)"
            role="group" aria-label="Valuta">
         <button id="curNative" class="px-3 py-2 text-xs font-bold" aria-pressed="true"
                 data-hint-title="Noteret valuta"
@@ -119,7 +120,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
             data-hint="Hvornår kurserne sidst ændrede sig. De hentes tre gange på hverdage, så de er forsinkede — ikke live."
             style="border:1px solid var(--hairline);color:var(--text-secondary)"></span>
 
-      <button id="refresh" type="button" class="ml-auto inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold muted"
+      <button id="refresh" type="button" class="ml-auto inline-flex items-center gap-2 rounded-md px-3 py-2 text-sm font-semibold muted"
               style="border:1px solid var(--hairline)">
         <span id="refreshIcon" aria-hidden="true">⟳</span> Genindlæs
       </button>
@@ -150,14 +151,15 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     </div>
 
     <!-- ─── Risk notice ────────────────────────────────────────────────── -->
-    <div id="risk" class="rounded-xl p-4 mb-4 flex gap-3" style="background:var(--page-plane);border:1px solid var(--hairline)">
+    <div id="risk" class="rounded-md p-4 mb-4 flex gap-3" style="background:var(--page-plane);border:1px solid var(--hairline)">
       <span aria-hidden="true" class="faint">ⓘ</span>
       <div class="flex-1">
-        <p class="text-sm font-bold">Risikooplysning vedrørende aktiehandel</p>
+        <p class="text-sm font-bold">Det skal du vide, før du investerer</p>
         <p class="text-xs mt-1 muted">
-          Kurserne er vejledende og forsinkede markedsdata, og udgør ikke investeringsrådgivning.
-          En investeret opsparing kan både stige og falde i værdi, og historiske afkast er ingen
-          garanti for fremtidige afkast. Der er risiko for, at du ikke får de investerede penge tilbage.
+          Kurserne her er vejledende, og vi rådgiver dig ikke på siden. Det du sætter til side kan
+          både vokse og blive mindre, og det der er sket før siger ikke, hvad der sker næste gang.
+          Du kan risikere at få mindre tilbage, end du satte ind. Er du i tvivl om noget, der
+          betyder rigtig meget for dig, så ring til os — så tager vi den sammen.
         </p>
       </div>
       <button type="button" id="riskClose" aria-label="Luk risikooplysning" class="shrink-0 self-start text-lg leading-none faint">×</button>
@@ -178,7 +180,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
         <button id="next" class="pager-btn">Næste →</button>
       </div>
       <label class="text-xs muted flex items-center gap-2">Rækker pr. side
-        <select id="pageSize" class="rounded-lg px-2 py-1 text-xs bg-transparent" style="border:1px solid var(--hairline);color:var(--text-primary)">
+        <select id="pageSize" class="rounded-md px-2 py-1 text-xs bg-transparent" style="border:1px solid var(--hairline);color:var(--text-primary)">
           <option value="25">25</option><option value="50" selected>50</option>
           <option value="100">100</option><option value="0">Alle</option>
         </select>
@@ -188,7 +190,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     <p id="status" class="text-xs mt-4 muted" role="status" aria-live="polite"></p>
   </div>
 
-  <div id="kilde" class="card rounded-2xl p-5 mt-6 text-xs leading-relaxed muted" style="max-width:85ch">
+  <div id="kilde" class="card rounded-md p-5 mt-6 text-xs leading-relaxed muted" style="max-width:85ch">
     <p class="font-bold mb-1" style="color:var(--text-primary)">Om datakilden</p>
     <p>
       Kurserne hentes fra Yahoo Finance af en GitHub Action, som committer dem til

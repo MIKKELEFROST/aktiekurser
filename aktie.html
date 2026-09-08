@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/kursliste.css">
 <script>
-tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] } } } }
+tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Aptos', 'Inter', 'system-ui', 'sans-serif'] } } } }
 </script>
 <style>
   .chart-wrap { position: relative; }
@@ -669,7 +669,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
   function aboutBlock(r) {
     const text = FUND && FUND.summary;
     if (!text) return '';
-    return '<div class="card rounded-2xl p-5 mb-5">'
+    return '<div class="card rounded-md p-5 mb-5">'
       + '<h2 class="text-sm font-bold mb-2">Om ' + K.esc(r.name) + '</h2>'
       + '<p class="about-text clamped" id="aboutText">' + K.esc(text) + '</p>'
       + '<button type="button" class="kf-more" id="aboutMore" aria-expanded="false">Vis mere <span aria-hidden="true">⌄</span></button>'
@@ -697,7 +697,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     add('Sektor', K.esc(r.sector || ''), 'Selskabets sektor efter GICS-systemet.');
     if (rows.length < 2) return '';
 
-    return '<div class="card rounded-2xl p-5 mb-5">'
+    return '<div class="card rounded-md p-5 mb-5">'
       + '<h2 class="text-sm font-bold mb-1">Information</h2>'
       + rows.map((x) => statRow(x.label, x.value, '', x.hint)).join('')
     + '</div>';
@@ -760,7 +760,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     const openAll = state.adv;
     const extra = more.map(cell).filter(Boolean);
 
-    return '<div class="card rounded-2xl p-5 mb-5">'
+    return '<div class="card rounded-md p-5 mb-5">'
       + '<h2 class="text-sm font-bold mb-3">Nøgletal</h2>'
       + '<div class="kf-grid">' + always.map(cell).join('') + '</div>'
       + (extra.length
@@ -787,7 +787,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     const num = (v, suffix) => v == null ? null
       : '<span class="num">' + v.toLocaleString('da-DK', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + (suffix || '') + '</span>';
 
-    return '<div class="card rounded-2xl p-5 mb-5">'
+    return '<div class="card rounded-md p-5 mb-5">'
       + '<h2 class="text-sm font-bold mb-1">Udbytter</h2>'
       + (yieldPct != null ? statRow('Udbytteafkast', num(yieldPct, ' %'), '',
           'Det seneste års udbytte i forhold til kursen. Et selskab uden udbytte står med en streg.') : '')
@@ -847,7 +847,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       const years = Math.round((now - new Date(iso + 'T00:00:00Z')) / 31557600000);
       return years <= 0 ? 'i år' : years === 1 ? 'for 1 år siden' : 'for ' + years + ' år siden';
     };
-    return '<div class="card rounded-2xl p-5 mb-5">'
+    return '<div class="card rounded-md p-5 mb-5">'
       + '<h2 class="text-sm font-bold mb-1">Begivenheder</h2>'
       + '<p class="text-xs muted mb-2">Aktiesplit deler hver aktie i flere. Kursen falder tilsvarende, '
         + 'så værdien af det du ejer er den samme — kurshistorikken her er tilbageregnet, så grafen ikke får et spring.</p>'
@@ -875,7 +875,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     const used = LINES.filter(([, key]) => years.some((y) => y[key] != null));
     if (!used.length) return '';
 
-    return '<div class="card rounded-2xl p-5 mb-5">'
+    return '<div class="card rounded-md p-5 mb-5">'
       + '<h2 class="text-sm font-bold mb-1">Omsætning og resultat, fire år</h2>'
       + '<p class="text-xs muted mb-2">Toplinje og bundlinje for de fire seneste regnskabsår, i '
         + K.esc(r.currency) + '. Det er alt kilden oplyser om regnskaberne — balance, '
@@ -902,7 +902,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     const q = (FUND && FUND.quarterly) || [];
     const withRevenue = q.filter((x) => x.revenue != null);
     if (withRevenue.length < 2) return '';
-    return '<div class="card rounded-2xl p-5 mb-5">'
+    return '<div class="card rounded-md p-5 mb-5">'
       + '<h2 class="text-sm font-bold mb-1">Omsætning pr. kvartal</h2>'
       + '<p class="text-xs muted">De seneste kvartaler, i ' + K.esc(r.currency) + '. '
         + 'Mange selskaber sælger skævt hen over året, så et kvartal siger mest holdt op mod samme kvartal året før.</p>'
@@ -921,7 +921,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       + row('Indeværende år', g.y0, 'Forventet vækst i indtjening pr. aktie for hele regnskabsåret.')
       + row('Næste år', g.y1, 'Forventet vækst i indtjening pr. aktie for det kommende regnskabsår.');
     if (!body) return '';
-    return '<div class="card rounded-2xl p-5 mb-5">'
+    return '<div class="card rounded-md p-5 mb-5">'
       + '<h2 class="text-sm font-bold mb-1">Forventet vækst i indtjening</h2>'
       + '<p class="text-xs muted mb-1">Analytikernes gennemsnitlige forventning. Det er deres skøn, ikke Coop Banks, '
         + 'og forventninger bliver ofte ikke indfriet.</p>' + body
@@ -933,7 +933,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     const list = (FUND && FUND.ratings) || [];
     if (!list.length) return '';
     const ACTION = { up: 'Opjusteret', down: 'Nedjusteret', init: 'Ny dækning', reit: 'Fastholdt', main: 'Fastholdt' };
-    return '<div class="card rounded-2xl p-5 mb-5">'
+    return '<div class="card rounded-md p-5 mb-5">'
       + '<h2 class="text-sm font-bold mb-1">Analytikernes seneste ændringer</h2>'
       + '<p class="text-xs muted mb-2">Hvem der har ændret vurdering, og hvornår. Optegnet fra kilden — '
         + 'ingen af dem er Coop Banks vurdering.</p>'
@@ -954,7 +954,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
   function holdersBlock(r) {
     const list = (FUND && FUND.holders) || [];
     if (!list.length) return '';
-    return '<div class="card rounded-2xl p-5 mb-5">'
+    return '<div class="card rounded-md p-5 mb-5">'
       + '<h2 class="text-sm font-bold mb-1">Største aktionærer</h2>'
       + '<p class="text-xs muted mb-2">Institutioner og fonde med den største andel, som de sidst har indberettet. '
         + 'Indberetningerne er forsinkede, og en position kan være ændret siden.</p>'
@@ -993,7 +993,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       + (!e.last_split ? '' : statRow('Seneste split', K.esc(e.last_split) + (e.last_split_date ? ' <span class="faint">' + K.fmtDate(e.last_split_date) + '</span>' : ''), '',
           'Hvornår aktien sidst blev delt op, og i hvilket forhold.'));
     if (!body) return '';
-    return '<div class="card rounded-2xl p-5 mb-5">'
+    return '<div class="card rounded-md p-5 mb-5">'
       + '<h2 class="text-sm font-bold mb-1">Risiko og struktur</h2>' + body + '</div>';
   }
 
@@ -1001,7 +1001,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
   function insiderNetBlock(r) {
     const n = FUND && FUND.insider_net;
     if (!n || (!n.buys && !n.sells)) return '';
-    return '<div class="card rounded-2xl p-5 mb-5">'
+    return '<div class="card rounded-md p-5 mb-5">'
       + '<h2 class="text-sm font-bold mb-1">Insiderhandel samlet</h2>'
       + '<p class="text-xs muted mb-1">Optalt af kilden over ' + K.esc(n.period === '6m' ? 'seks måneder' : n.period)
         + '. Ledelsen sælger af mange grunde — skat, et hus, en spredning — så salg siger mindre end køb.</p>'
@@ -1025,7 +1025,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     ];
     const max = Math.max.apply(null, rows.map((x) => x[1]));
 
-    return '<div class="card rounded-2xl p-5 mb-5">'
+    return '<div class="card rounded-md p-5 mb-5">'
       + '<h2 class="text-sm font-bold">Analytikerskøn</h2>'
       + '<p class="text-xs muted mt-1">Baseret på ' + a.total + ' analytikere. Det er deres vurderinger, '
         + 'ikke Coop Banks — og de er ikke en anbefaling.</p>'
@@ -1051,7 +1051,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     const diff = ((t - r.price) / r.price) * 100;
     const cur = ' ' + K.esc(r.currency);
 
-    return '<div class="card rounded-2xl p-5 mb-5">'
+    return '<div class="card rounded-md p-5 mb-5">'
       + '<h2 class="text-sm font-bold">Forventet kurs</h2>'
       + '<p class="text-xs muted mt-1">Gennemsnittet af ' + (FUND.target_analysts || 'analytikernes')
         + (FUND.target_analysts ? ' analytikeres' : '') + ' kursmål på 12 måneders sigt. Et gennemsnit er ikke en forudsigelse, '
@@ -1086,7 +1086,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     const today = new Date().toISOString().slice(0, 10);
     items.sort((a, b) => (a.date >= today ? 0 : 1) - (b.date >= today ? 0 : 1) || a.date.localeCompare(b.date));
 
-    return '<div class="card rounded-2xl p-5">'
+    return '<div class="card rounded-md p-5">'
       + '<h2 class="text-sm font-bold mb-3">Næste begivenheder</h2>'
       + items.map((it) => {
           const d = daysUntil(it.date), future = it.date >= today;
@@ -1110,7 +1110,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     if (!h.length) return '';
     const beats = h.filter((q) => q.actual > q.estimate).length;
 
-    return '<div class="card rounded-2xl p-5">'
+    return '<div class="card rounded-md p-5">'
       + '<h2 class="text-sm font-bold">Indtjening</h2>'
       + '<p class="text-xs muted mt-1" style="max-width:70ch">Ramte selskabet forventningerne? Analytikernes gennemsnitlige forventning til '
         + 'indtjening pr. aktie, holdt op mod hvad selskabet leverede.</p>'
@@ -1189,7 +1189,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     if (!rows.length) return '';
 
     const cell = (v) => '<td class="py-2 px-3 num text-right ' + K.dirClass(v) + '">' + K.fmtPct(v) + '</td>';
-    return '<div class="card rounded-2xl p-5 mb-5">'
+    return '<div class="card rounded-md p-5 mb-5">'
       + '<h2 class="text-sm font-bold">' + (bench ? 'Udvikling mod markedet' : 'Sådan er det gået') + '</h2>'
       + '<p class="text-xs muted mt-1" style="max-width:74ch">'
         + (bench
@@ -1249,7 +1249,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     const uniq = items.filter((x) => (seen.has(x.date) ? false : seen.add(x.date)));
     if (!uniq.length) return '';
 
-    return '<div class="card rounded-2xl p-5 mt-5">'
+    return '<div class="card rounded-md p-5 mt-5">'
       + '<h2 class="text-sm font-bold">Hvis du havde investeret 10.000 kr.</h2>'
       + '<p class="text-xs muted mt-1" style="max-width:74ch">Beløbet ved dagens kurs, hvis du havde købt på '
         + 'månedens lukkekurs og ikke rørt det siden. Uden skat, omkostninger og udbytte — og uden '
@@ -1257,7 +1257,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       + '<div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-4 mt-3">'
       + uniq.map((x) => {
           const gain = (x.value - AMOUNT) / AMOUNT * 100;
-          return '<div class="card rounded-xl p-4">'
+          return '<div class="card rounded-md p-4">'
             + '<div class="text-[11px] font-bold uppercase faint" style="letter-spacing:.04em">' + K.esc(x.label) + '</div>'
             + '<div class="text-2xl font-extrabold num mt-1 ' + K.dirClass(gain) + '">'
               + K.fmtInt(Math.round(x.value)) + ' kr.</div>'
@@ -1298,7 +1298,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     };
 
     const symbols = [r.symbol].concat(peers.map((p) => p.symbol));
-    return '<div class="card rounded-2xl p-5 mt-5">'
+    return '<div class="card rounded-md p-5 mt-5">'
       + '<div class="flex items-baseline justify-between gap-3 flex-wrap" style="display:flex;justify-content:space-between">'
         + '<h2 class="text-sm font-bold">Lignende selskaber</h2>'
         + '<a class="link-accent text-xs font-semibold" href="sammenlign.html?symbols='
@@ -1333,7 +1333,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
         + '<div style="height:6px;border-radius:3px;background:var(--gridline);margin-top:5px;overflow:hidden">'
         + '<div style="height:100%;width:' + Math.min(100, v * 100).toFixed(1) + '%;background:var(--accent)"></div></div></div>';
 
-    return '<div class="card rounded-2xl p-5 mt-5">'
+    return '<div class="card rounded-md p-5 mt-5">'
       + '<h2 class="text-sm font-bold mb-3">Hvem ejer selskabet</h2>'
       + bar('Institutioner ejer', inst,
           'Fonde, pensionskasser og andre professionelle investorer tilsammen'
@@ -1384,7 +1384,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     const years = [...new Set(m.dates.map((d) => d.slice(0, 4)))];
     const step = Math.max(1, Math.ceil(years.length / 8));
 
-    return '<div class="card rounded-2xl p-5 mt-5">'
+    return '<div class="card rounded-md p-5 mt-5">'
       + '<h2 class="text-sm font-bold">Hvor langt under toppen har den ligget?</h2>'
       + '<p class="text-xs muted mt-1" style="max-width:74ch">Nul betyder ny rekord. Alt derunder er afstanden ned '
         + 'fra den højeste kurs indtil da — samme historie som kursgrafen, men set fra toppen. '
@@ -1414,7 +1414,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
   // Nothing is removed from the page, so the simple view says what is waiting
   // rather than letting a reader assume this is all there is.
   function simpleFooter(r) {
-    return '<div class="card rounded-2xl p-4 mt-5 text-xs muted" style="max-width:80ch">'
+    return '<div class="card rounded-md p-4 mt-5 text-xs muted" style="max-width:80ch">'
       + 'Vil du se selskabet målt mod sit indeks, hvad 10.000 kr. ville være blevet til, '
       + 'fire års regnskaber, omsætning pr. kvartal, analytikernes seneste ændringer, '
       + 'de største aktionærer, insiderhandel, beta og shortet andel? '
@@ -1430,7 +1430,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       + '<p class="text-xs muted mb-3" style="max-width:70ch">Alle tal herunder er beregnet ud fra kurshistorikken. '
         + 'Det seneste år dækker de seneste 252 handelsdage; “nogensinde” går tilbage til første registrerede kurs.</p>'
       + '<div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">'
-      + list.map((f) => '<div class="card rounded-xl p-4">'
+      + list.map((f) => '<div class="card rounded-md p-4">'
           + '<div class="text-[11px] font-bold uppercase faint" style="letter-spacing:.04em">' + K.esc(f.label) + '</div>'
           + '<div class="text-2xl font-extrabold num mt-1 ' + f.cls + '">' + f.value + '</div>'
           + '<p class="text-xs muted mt-1 leading-snug">' + f.note + '</p></div>').join('')
@@ -1565,7 +1565,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       '<button class="range-btn" data-range="' + p.key + '" aria-pressed="' + (p.key === state.range) + '">'
       + p.label + '</button>').join('');
 
-    const chartCard = '<div class="card rounded-2xl p-4 md:p-5 mb-5">'
+    const chartCard = '<div class="card rounded-md p-4 md:p-5 mb-5">'
       + '<div class="flex items-center justify-between gap-3 flex-wrap mb-3">'
         + '<h2 class="text-sm font-bold">Kursudvikling</h2>'
         + '<div class="flex items-center gap-1.5 flex-wrap" style="display:flex;flex-wrap:wrap;gap:6px;align-items:center">' + buttons
@@ -1596,7 +1596,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     // Dagens handel-kortet er droppet: Nøgletal-blokken viser de samme tal, og
     // to kort med dagens højeste ville modsige hinanden så snart et af dem
     // blev ændret.
-    const _unusedLeft = '<div class="card rounded-2xl p-5">'
+    const _unusedLeft = '<div class="card rounded-md p-5">'
       + '<h2 class="text-sm font-bold mb-2">Dagens handel</h2>'
       + statRow('Seneste', K.fmtPrice(r.price) + ' ' + K.esc(cur), '',
           'Den senest registrerede kurs. Dataene er forsinkede og opdateres tre gange på hverdage.')
@@ -1613,7 +1613,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
           'Gennemsnittet af de daglige volumener. Beregnet af os ud fra kurshistorikken — kilden opgiver ikke selv et gennemsnit.')
       + '</div>';
 
-    const right = '<div class="card rounded-2xl p-5">'
+    const right = '<div class="card rounded-md p-5">'
       + '<h2 class="text-sm font-bold mb-2">Interval og udvikling</h2>'
       // The bar carried no scale: a line with a dot on it says nothing on its
       // own. The two ends and the dot are now named on the page rather than
@@ -1668,8 +1668,9 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       + '</div>';
 
     const risk = '<p class="text-xs faint mt-6 leading-relaxed">'
-      + 'Kurserne er vejledende og forsinkede markedsdata fra Yahoo Finance, hentet ' + K.fmtAge(updatedAt)
-      + ', og udgør ikke investeringsrådgivning. Historiske afkast er ingen garanti for fremtidige afkast.</p>';
+      + 'Tallene på siden er vejledende og hentet fra Yahoo Finance ' + K.fmtAge(updatedAt)
+      + '. Vi rådgiver dig ikke her — det, der er sket før, siger ikke hvad der sker næste gang, '
+      + 'og du kan risikere at få mindre tilbage, end du satte ind. Er du i tvivl, så ring til os.</p>';
 
     // The simple page answers "how is it going": the price, the shape of the
     // move, how it compares to a few windows, and what an investment would have
@@ -1790,7 +1791,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
   function renderMissing(rows) {
     const list = rows.slice(0, 12).map((r) =>
       '<li><a class="link-accent" href="' + K.stockUrl(r.symbol) + '">' + K.esc(r.name) + '</a></li>').join('');
-    $('#content').innerHTML = '<div class="card rounded-2xl p-6">'
+    $('#content').innerHTML = '<div class="card rounded-md p-6">'
       + '<h1 class="text-lg font-bold mb-2">Aktien blev ikke fundet</h1>'
       + '<p class="text-sm muted mb-4">'
       + (wanted ? 'Symbolet <code>' + K.esc(wanted) + '</code> er ikke i listen.' : 'Der er ikke angivet noget symbol.')
@@ -1843,7 +1844,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
 
       beginLive(r);
     } catch (err) {
-      $('#content').innerHTML = '<div class="card rounded-2xl p-6 text-sm" style="color: var(--delta-down)">'
+      $('#content').innerHTML = '<div class="card rounded-md p-6 text-sm" style="color: var(--delta-down)">'
         + 'Kunne ikke indlæse data: ' + K.esc(err.message) + '</div>';
       $('#status').textContent = '';
     }

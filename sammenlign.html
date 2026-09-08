@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/kursliste.css">
 <script>
-tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] } } } }
+tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Aptos', 'Inter', 'system-ui', 'sans-serif'] } } } }
 </script>
 <style>
   /* Series colours, four hues that hold apart from each other and from the red
@@ -66,14 +66,15 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
 <div class="max-w-[1300px] mx-auto px-4 py-8">
 
   <div class="mb-5">
-    <h1 class="text-2xl md:text-3xl font-extrabold tracking-tight" style="text-wrap:balance">Sammenlign selskaber</h1>
+    <h1 class="text-2xl md:text-3xl font-extrabold tracking-tight" style="text-wrap:balance">Kan du ikke vælge? Så stil dem op mod hinanden</h1>
     <p class="text-sm mt-1 muted" style="max-width:70ch">
-      Vælg op til seks selskaber og se dem side om side: nøgletal, udvikling og kurven for dem alle
-      på samme akse. Valget står i adressen, så en sammenligning kan gemmes eller sendes videre.
+      Vælg op til seks selskaber, så lægger vi dem side om side: nøgletal, udvikling og alle
+      kurverne på samme akse. Valget står i adressen, så du kan gemme sammenligningen eller
+      sende den til en, du gerne vil vende den med.
     </p>
   </div>
 
-  <div class="card rounded-2xl p-5 mb-5">
+  <div class="card rounded-md p-5 mb-5">
     <div class="search-wrap mb-3">
       <input id="q" type="search" class="field" placeholder="Søg navn eller symbol og tryk på et selskab"
              aria-label="Søg efter selskab" autocomplete="off" role="combobox" aria-expanded="false"
@@ -232,7 +233,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
         }).join('')
     + '</tr>').join('');
 
-    return '<div class="card rounded-2xl p-5 mb-5">'
+    return '<div class="card rounded-md p-5 mb-5">'
       + '<h2 class="text-sm font-bold mb-1">Nøgletal side om side</h2>'
       + '<p class="text-xs muted mb-3" style="max-width:74ch">Tallene står som de er, uden markering af hvad der '
         + 'er bedst — det afhænger af, hvad du leder efter. Bemærk at kurs og markedsværdi er i selskabernes '
@@ -303,7 +304,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       }).join('');
 
     const ranges = [[21, '1 md.'], [63, '3 mdr.'], [126, '6 mdr.'], [252, '1 år'], [9999, 'Alt']];
-    return '<div class="card rounded-2xl p-5 mb-5">'
+    return '<div class="card rounded-md p-5 mb-5">'
       + '<div class="flex items-center justify-between gap-3 flex-wrap mb-2" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px">'
         + '<h2 class="text-sm font-bold">Udvikling side om side</h2>'
         + '<div style="display:flex;gap:6px;flex-wrap:wrap">'
@@ -326,7 +327,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     renderPicked();
     writeUrl();
     if (!chosen.length) {
-      $('#content').innerHTML = '<div class="card rounded-2xl p-6 text-sm muted">'
+      $('#content').innerHTML = '<div class="card rounded-md p-6 text-sm muted">'
         + 'Vælg mindst ét selskab for at se sammenligningen. Du kan også komme hertil fra “Lignende selskaber” '
         + 'på en selskabsside, som udfylder feltet for dig.</div>';
       return;
@@ -384,7 +385,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       $('#status').textContent = 'Kilde: Yahoo Finance · hentet ' + K.fmtAge(list.updatedAt)
         + ' · nøgletal opdateres én gang i døgnet';
     } catch (err) {
-      $('#content').innerHTML = '<div class="card rounded-2xl p-6 text-sm" style="color:var(--delta-down)">'
+      $('#content').innerHTML = '<div class="card rounded-md p-6 text-sm" style="color:var(--delta-down)">'
         + 'Kunne ikke indlæse data: ' + K.esc(err.message) + '</div>';
       $('#status').textContent = '';
     }

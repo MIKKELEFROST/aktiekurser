@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/kursliste.css">
 <script>
-tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] } } } }
+tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Aptos', 'Inter', 'system-ui', 'sans-serif'] } } } }
 </script>
 <style>
   /* ── Inputs ─────────────────────────────────────────────────────────── */
@@ -68,16 +68,17 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
   <div class="mb-6">
     <h1 class="text-2xl md:text-3xl font-extrabold tracking-tight" style="text-wrap:balance">Afkastberegner</h1>
     <p class="text-sm mt-1 muted" style="max-width:68ch">
-      Se hvad et startindskud og et fast månedligt beløb vokser til over tid. Beregningen er en
-      fremskrivning med et <em>antaget</em> fast afkast — ikke en forudsigelse. Rigtige aktiekurser
-      svinger, og et enkelt år kan ligge langt fra gennemsnittet.
+      Hvad bliver det til, hvis du lægger lidt til side hver måned? Prøv dig frem — det koster
+      ingenting at regne på. Bare husk, at vi regner med et <em>antaget</em> fast afkast, og at
+      virkeligheden aldrig er så jævn: nogle år går det op, andre år går det ned, og et enkelt år
+      kan ligge langt fra gennemsnittet.
     </p>
   </div>
 
   <div class="grid lg:grid-cols-[minmax(300px,380px)_1fr] gap-5 items-start">
 
     <!-- ─── Inputs ──────────────────────────────────────────────────────── -->
-    <form id="form" class="card rounded-2xl p-5" autocomplete="off">
+    <form id="form" class="card rounded-md p-5" autocomplete="off">
       <h2 class="text-sm font-extrabold uppercase tracking-wide faint mb-4">Din plan</h2>
 
       <div class="row">
@@ -179,7 +180,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
 
     <!-- ─── Result ──────────────────────────────────────────────────────── -->
     <div>
-      <div class="card rounded-2xl p-5 md:p-6">
+      <div class="card rounded-md p-5 md:p-6">
         <p class="text-xs uppercase tracking-wide faint font-extrabold">Værdi efter <span id="hYears">20</span> år</p>
         <p class="headline num mt-1"><span id="total">–</span> <span class="text-lg font-bold faint">kr</span></p>
         <p id="realNote" class="text-xs muted mt-1" hidden></p>
@@ -211,7 +212,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       </div>
 
       <!-- Chart -->
-      <div class="card rounded-2xl p-5 md:p-6 mt-5">
+      <div class="card rounded-md p-5 md:p-6 mt-5">
         <div class="flex items-baseline justify-between gap-3 flex-wrap mb-1">
           <h2 class="text-sm font-extrabold">Sådan vokser det</h2>
           <p class="text-xs faint">
@@ -228,7 +229,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       </div>
 
       <!-- Sensitivity -->
-      <div class="card rounded-2xl p-5 md:p-6 mt-5">
+      <div class="card rounded-md p-5 md:p-6 mt-5">
         <h2 class="text-sm font-extrabold">Hvis afkastet bliver et andet</h2>
         <p class="text-xs muted mt-1" style="max-width:70ch">
           Ingen kender det fremtidige afkast. Samme plan med tre forskellige antagelser viser hvor
@@ -238,7 +239,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       </div>
 
       <!-- Year table -->
-      <div class="card rounded-2xl p-5 md:p-6 mt-5">
+      <div class="card rounded-md p-5 md:p-6 mt-5">
         <h2 class="text-sm font-extrabold mb-3">År for år</h2>
         <div class="overflow-x-auto" style="overflow-x:auto;max-height:380px;overflow-y:auto">
           <table class="w-full text-sm border-collapse">
@@ -255,7 +256,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       </div>
 
       <!-- Assumptions -->
-      <div class="card rounded-2xl p-5 mt-5 text-xs leading-relaxed muted" style="max-width:80ch">
+      <div class="card rounded-md p-5 mt-5 text-xs leading-relaxed muted" style="max-width:80ch">
         <p class="font-bold mb-1" style="color:var(--text-primary)">Sådan regner vi</p>
         <p>Indbetalingen sker først på måneden, og afkastet tilskrives månedligt med den rente der
           svarer til det årlige afkast.</p>

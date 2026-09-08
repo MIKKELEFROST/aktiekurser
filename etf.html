@@ -12,7 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/kursliste.css">
 <script>
-tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] } } } }
+tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Aptos', 'Inter', 'system-ui', 'sans-serif'] } } } }
 </script>
 <style>
   .pager-btn {
@@ -64,11 +64,12 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
   <div class="flex items-start justify-between gap-4 mb-6 flex-wrap">
     <div>
       <h1 class="text-2xl md:text-3xl font-extrabold tracking-tight">
-        ETF-kurser – børshandlede fonde
+        Ét køb, hele indekset
       </h1>
       <p class="text-sm mt-1 muted" style="max-width:70ch">
-        En ETF er en fond, du handler som en aktie: ét køb giver dig hele indekset i stedet for
-        ét selskab. Listen er de største fonde på de børser en dansk investor kan handle på —
+        Skal du vælge mellem tusinde selskaber, eller kan du nøjes med ét køb? Det er dét, en
+        ETF er: en fond, du handler som en aktie, og som rummer hele indekset. Listen er de
+        største fonde på de børser, du som dansk investor kan handle på —
         Frankfurt og Amsterdam, hvor de europæiske UCITS-fonde er noteret, de tre amerikanske
         børser, og det håndfuld der er noteret i Norden.
       </p>
@@ -79,23 +80,23 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     </a>
   </div>
 
-  <div class="card rounded-2xl p-4 md:p-6">
+  <div class="card rounded-md p-4 md:p-6">
 
     <!-- ─── Controls ───────────────────────────────────────────────────── -->
     <div class="flex flex-wrap items-center gap-3 mb-4">
-      <input id="q" type="search" class="rounded-lg px-3 py-2 text-sm bg-transparent" style="width:14rem;border:1px solid var(--hairline);color:var(--text-primary)"
+      <input id="q" type="search" class="rounded-md px-3 py-2 text-sm bg-transparent" style="width:14rem;border:1px solid var(--hairline);color:var(--text-primary)"
              placeholder="Navn / symbol" aria-label="Søg efter navn eller symbol">
 
-      <select id="family" class="rounded-lg px-3 py-2 text-sm bg-transparent" aria-label="Udbyder"
+      <select id="family" class="rounded-md px-3 py-2 text-sm bg-transparent" aria-label="Udbyder"
               style="border:1px solid var(--hairline);color:var(--text-primary)">
         <option value="">Alle udbydere</option>
       </select>
 
-      <select id="sortField" class="rounded-lg px-3 py-2 text-sm bg-transparent" aria-label="Sortér efter"
+      <select id="sortField" class="rounded-md px-3 py-2 text-sm bg-transparent" aria-label="Sortér efter"
               style="border:1px solid var(--hairline);color:var(--text-primary)"></select>
 
       <div class="picker-wrap">
-        <button id="pickerBtn" class="rounded-lg px-3 py-2 text-sm font-semibold muted" aria-expanded="false"
+        <button id="pickerBtn" class="rounded-md px-3 py-2 text-sm font-semibold muted" aria-expanded="false"
                 style="border:1px solid var(--hairline)"
                 data-hint-title="Kolonner"
                 data-hint="Vælg selv hvad tabellen viser. Dit valg huskes i denne browser.">
@@ -104,7 +105,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
         <div id="picker" hidden role="dialog" aria-label="Vælg kolonner"></div>
       </div>
 
-      <div class="inline-flex rounded-lg overflow-hidden" style="border:1px solid var(--hairline)"
+      <div class="inline-flex rounded-md overflow-hidden" style="border:1px solid var(--hairline)"
            role="group" aria-label="Valuta">
         <button id="curNative" class="px-3 py-2 text-xs font-bold" aria-pressed="true"
                 data-hint-title="Noteret valuta"
@@ -119,7 +120,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
             data-hint="Hvornår kurserne sidst ændrede sig. De hentes tre gange på hverdage, så de er forsinkede — ikke live."
             style="border:1px solid var(--hairline);color:var(--text-secondary)"></span>
 
-      <button id="refresh" type="button" class="ml-auto inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold muted"
+      <button id="refresh" type="button" class="ml-auto inline-flex items-center gap-2 rounded-md px-3 py-2 text-sm font-semibold muted"
               style="border:1px solid var(--hairline)">
         <span aria-hidden="true">⟳</span> Genindlæs
       </button>
@@ -141,15 +142,15 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     </div>
 
     <!-- ─── Risk ───────────────────────────────────────────────────────── -->
-    <div id="risk" class="rounded-xl p-3 mb-4 flex items-start gap-3" style="border:1px solid var(--hairline)">
+    <div id="risk" class="rounded-md p-3 mb-4 flex items-start gap-3" style="border:1px solid var(--hairline)">
       <span class="hint-i shrink-0" aria-hidden="true">i</span>
       <div>
-        <p class="text-sm font-bold">Risikooplysning vedrørende investering i fonde</p>
+        <p class="text-sm font-bold">Det skal du vide, før du investerer i en fond</p>
         <p class="text-xs mt-1 muted">
-          Kurserne er vejledende markedsdata og udgør ikke investeringsrådgivning. En investeret
-          opsparing kan både stige og falde i værdi, og historiske afkast er ingen garanti for
-          fremtidige afkast. Der er risiko for, at du ikke får de investerede penge tilbage.
-          Fonde noteret i udenlandsk valuta indebærer desuden en valutarisiko.
+          Kurserne her er vejledende, og vi rådgiver dig ikke på siden. Det du sætter til side kan
+          både vokse og blive mindre, og det der er sket før siger ikke, hvad der sker næste gang.
+          Du kan risikere at få mindre tilbage, end du satte ind. Er fonden noteret i en anden
+          valuta end kroner, følger der desuden en valutarisiko med. Er du i tvivl, så ring til os.
         </p>
       </div>
       <button type="button" id="riskClose" aria-label="Luk risikooplysning" class="shrink-0 self-start text-lg leading-none faint">×</button>

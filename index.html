@@ -12,7 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/kursliste.css">
 <script>
-tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] } } } }
+tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Aptos', 'Inter', 'system-ui', 'sans-serif'] } } } }
 </script>
 <style>
   /* One entry per section, so the four tools read as a set rather than four
@@ -24,6 +24,12 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     transition: border-color .15s ease;
   }
   .entry:hover { border-color: var(--accent); }
+  .card-satin.entry:hover, .card-lilla.entry:hover,
+  .card-blaa.entry:hover, .card-groen.entry:hover { filter: brightness(0.97); border-color: transparent; }
+  .card-satin .entry-label, .card-lilla .entry-label,
+  .card-blaa .entry-label, .card-groen .entry-label { color: var(--coop-bordeaux); }
+  .card-lilla .entry-text, .card-blaa .entry-text, .card-groen .entry-text { color: rgba(85, 37, 47, .8); }
+  .card-lilla .entry-arrow, .card-blaa .entry-arrow, .card-groen .entry-arrow { color: var(--coop-bordeaux); }
   .entry-top { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
   .entry-label { font-size: 15px; font-weight: 800; color: var(--text-primary); }
   .entry-arrow { color: var(--accent); font-weight: 800; transition: transform .15s ease; }
@@ -37,6 +43,35 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
   .idx-val  { font-size: 15px; font-weight: 800; color: var(--text-primary); }
   .idx-move { font-size: 12px; font-weight: 700; }
   .idx-skel { height: 46px; }
+
+  /* ── Guidens to forbundne kasser ──────────────────────────────────────
+     "En version, hvor den nederste kasse spejler den øverste, men i en anden
+     farve." Den nederste bærer beviset — tallene — mens den øverste bærer
+     budskabet. Sammenføjningen er flad, så de læses som ét element. */
+  .hero-box { border-radius: var(--radius) var(--radius) 0 0; }
+  .hero-strip {
+    border-radius: 0 0 var(--radius) var(--radius);
+    background: var(--coop-red); color: var(--coop-pampas);
+    padding: 12px 22px; font-size: 12.5px; font-weight: 600;
+    display: flex; flex-wrap: wrap; align-items: center; gap: 6px 20px;
+  }
+  .hero-strip .sep { opacity: .5; }
+  /* Under 720 px står de to udsagn under hinanden, og prikken imellem dem
+     ville hænge alene sidst på den første linje. */
+  @media (max-width: 719px) {
+    .hero-strip { display: block; }
+    .hero-strip .sep { display: none; }
+    .hero-strip span { display: block; }
+  }
+
+  /* Pillerne fra guidens navigation og hero: versaler, luft, fuld radius. */
+  .pill {
+    display: inline-flex; align-items: center; gap: 8px;
+    border-radius: 999px; padding: 11px 22px;
+    text-transform: uppercase; letter-spacing: .06em;
+    font-size: 12px; font-weight: 700; text-decoration: none;
+    transition: background .15s ease, color .15s ease;
+  }
 </style>
 </head>
 
@@ -45,77 +80,85 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
 
 <div class="max-w-[1400px] mx-auto px-4 py-8">
 
-  <!-- ─── Hero ──────────────────────────────────────────────────────────── -->
-  <div class="mb-8" style="max-width:72ch">
-    <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight">
-      Aktiekurser, nøgletal og værktøjer
-    </h1>
-    <p class="mt-3 muted">
-      Alle børsnoterede selskaber af en vis størrelse i Danmark, Sverige, Norge, Finland
-      og Island samt på Nasdaq, NYSE og NYSE American — med kurs, udvikling og regnskabstal
-      i danske kroner. Siderne åbner simpelt; nøgletallene er ét flueben væk.
-    </p>
-    <div class="mt-5 flex flex-wrap items-center gap-3">
-      <a href="markedskurser.html"
-         class="btn-primary inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-bold transition-transform active:scale-95">
-        Se alle aktiekurser <span aria-hidden="true">→</span>
-      </a>
-      <a href="beregner.html" class="link-accent text-sm font-bold">Prøv afkastberegneren</a>
+  <!-- ─── Hero ─────────────────────────────────────────────────────────
+       Budskabet først, beviset i strimlen under. Kommunikationen vendt om,
+       som strategien beskriver den: nærhed frem, tallene som belæg. -->
+  <div class="mb-9" style="max-width:74ch">
+    <div class="card hero-box p-6 md:p-8">
+      <h1 class="text-3xl md:text-[2.6rem] font-extrabold tracking-tight" style="line-height:1.12;text-wrap:balance">
+        At investere behøver ikke<br>føles uoverskueligt
+      </h1>
+      <p class="mt-4 muted" style="max-width:62ch">
+        Vi ved godt, at tusindvis af selskaber og fonde kan være meget at overskue. Derfor
+        har vi lagt tallene frem, som de er, og forklaret dem undervejs — og du bestemmer
+        selv, hvor langt ned i dem du vil. Start med kursen. Resten er der, når du får brug for det.
+      </p>
+      <div class="mt-6 flex flex-wrap items-center gap-3">
+        <a href="markedskurser.html" class="pill btn-primary">Se aktiekurser</a>
+        <a href="beregner.html" class="pill btn-outline">Prøv afkastberegneren</a>
+      </div>
+    </div>
+    <div class="hero-strip">
+      <span id="heroCount">Alle børsnoterede selskaber i Norden og USA</span>
+      <span class="sep" aria-hidden="true">·</span>
+      <span>Kurserne opdateres hvert minut, mens børserne handler</span>
     </div>
   </div>
 
   <!-- ─── Markedet ──────────────────────────────────────────────────────── -->
   <section class="mb-8">
     <div class="flex items-baseline justify-between gap-3 flex-wrap mb-3">
-      <h2 class="text-lg font-extrabold tracking-tight">Markedet</h2>
+      <h2 class="text-lg font-extrabold tracking-tight">Sådan ser markedet ud lige nu</h2>
       <p class="text-xs faint" id="idxWhen">Indlæser …</p>
     </div>
     <div id="idx" class="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-      <div class="card rounded-xl idx-skel skeleton"></div>
-      <div class="card rounded-xl idx-skel skeleton"></div>
-      <div class="card rounded-xl idx-skel skeleton"></div>
-      <div class="card rounded-xl idx-skel skeleton"></div>
+      <div class="card rounded-md idx-skel skeleton"></div>
+      <div class="card rounded-md idx-skel skeleton"></div>
+      <div class="card rounded-md idx-skel skeleton"></div>
+      <div class="card rounded-md idx-skel skeleton"></div>
     </div>
   </section>
 
-  <!-- ─── Sektioner ─────────────────────────────────────────────────────── -->
+  <!-- ─── Sektioner ────────────────────────────────────────────────────
+       Fire kasser i fire farver fra paletten, som kategorisiden i guiden.
+       Teksten siger hvad man kan bruge dem til, ikke hvad de indeholder. -->
   <section class="mb-8">
-    <h2 class="text-lg font-extrabold tracking-tight mb-3">Kom i gang</h2>
+    <h2 class="text-lg font-extrabold tracking-tight mb-3">Hvor vil du starte?</h2>
     <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
 
-      <a href="markedskurser.html" class="card entry">
+      <a href="markedskurser.html" class="card card-satin entry">
         <span class="entry-top"><span class="entry-label">Aktiekurser</span><span class="entry-arrow" aria-hidden="true">→</span></span>
-        <span class="entry-text">Hele listen med kurser, filtre og sortering. Vælg selv hvilke kolonner du vil se.</span>
+        <span class="entry-text">Find et selskab, du kender, og se hvordan det er gået. Du vælger selv, hvilke tal der står i tabellen.</span>
       </a>
 
-      <a href="inspiration.html" class="card entry">
-        <span class="entry-top"><span class="entry-label">Aktieinspiration</span><span class="entry-arrow" aria-hidden="true">→</span></span>
-        <span class="entry-text">Temalister beregnet ud fra kursdataene — vindere, mest handlede og 52-ugers yderpunkter.</span>
+      <a href="etf.html" class="card card-lilla entry">
+        <span class="entry-top"><span class="entry-label">ETF-kurser</span><span class="entry-arrow" aria-hidden="true">→</span></span>
+        <span class="entry-text">Ét køb, hele indekset. Her er de fonde, du kan handle — med formue, omkostning og udvikling.</span>
       </a>
 
-      <a href="sammenlign.html" class="card entry">
+      <a href="sammenlign.html" class="card card-blaa entry">
         <span class="entry-top"><span class="entry-label">Sammenlign</span><span class="entry-arrow" aria-hidden="true">→</span></span>
-        <span class="entry-text">Stil op til seks selskaber op mod hinanden: nøgletal, udvikling og kurverne på samme akse.</span>
+        <span class="entry-text">Står du med to, du ikke kan vælge imellem? Stil op til seks op mod hinanden på samme akse.</span>
       </a>
 
-      <a href="beregner.html" class="card entry">
+      <a href="beregner.html" class="card card-groen entry">
         <span class="entry-top"><span class="entry-label">Afkastberegner</span><span class="entry-arrow" aria-hidden="true">→</span></span>
-        <span class="entry-text">Fremskriv en opsparing: startindskud, månedligt beløb, antal år og forventet afkast.</span>
+        <span class="entry-text">Hvad bliver det til, hvis du lægger lidt til side hver måned? Regn på det, før du beslutter noget.</span>
       </a>
 
     </div>
   </section>
 
   <!-- ─── Risiko ────────────────────────────────────────────────────────── -->
-  <div class="card rounded-2xl p-4 md:p-5 flex items-start gap-3">
+  <div class="card card-satin rounded-md p-4 md:p-5" style="max-width:82ch">
     <div>
-      <p class="text-sm font-bold">Risikooplysning vedrørende aktiehandel</p>
+      <p class="text-sm font-bold">Det skal du vide, før du investerer</p>
       <p class="text-xs mt-1 muted">
-        Kurserne er vejledende og forsinkede markedsdata, og udgør ikke investeringsrådgivning.
-        En investeret opsparing kan både stige og falde i værdi, og historiske afkast er ingen
-        garanti for fremtidige afkast. Der er risiko for, at du ikke får de investerede penge tilbage.
+        Vi viser tallene, som de er, men vi rådgiver dig ikke her på siden, og kurserne er
+        vejledende. Det du sætter til side kan både vokse og blive mindre, og det der er sket før
+        siger ikke, hvad der sker næste gang. Du kan risikere at få mindre tilbage, end du satte
+        ind. Står du med et valg, der betyder noget, så ring til os — så tager vi den sammen.
       </p>
-    </div>
   </div>
 
 </div>
@@ -148,7 +191,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       const c = b.closes, last = c[c.length - 1], prev = c[c.length - 2];
       const move = prev ? ((last - prev) / prev) * 100 : null;
       const tail = c.slice(-100);
-      return '<div class="card rounded-xl idx-item">'
+      return '<div class="card rounded-md idx-item">'
         +   '<div>'
         +     '<div class="idx-name">' + esc(b.label) + '</div>'
         +     '<div class="idx-val num">' + fmtLevel(last) + '</div>'

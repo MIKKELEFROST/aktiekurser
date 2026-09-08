@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/kursliste.css">
 <script>
-tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] } } } }
+tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Aptos', 'Inter', 'system-ui', 'sans-serif'] } } } }
 </script>
 <style>
   .hero { background: var(--text-primary); color: var(--page-plane); }
@@ -45,10 +45,11 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
 <!-- ─── Hero ──────────────────────────────────────────────────────────── -->
 <section class="hero">
   <div class="max-w-[1200px] mx-auto px-4 py-12 md:py-16">
-    <h1 class="text-4xl md:text-5xl font-extrabold">Aktieinspiration.</h1>
+    <h1 class="text-4xl md:text-5xl font-extrabold">Ved du ikke, hvor du skal kigge hen?</h1>
     <p class="mt-3 text-sm md:text-base max-w-2xl" style="opacity:.82">
-      Find en vinkel på markedet. Alle lister herunder er beregnet ud fra de samme kursdata
-      som kurslisten — ingen redaktionel udvælgelse og ingen anbefalinger.
+      Så er her nogle vinkler at gå i gang med. Alle lister herunder er regnet ud af de samme
+      kursdata som kurslisten — vi har ikke udvalgt noget i hånden, og der ligger ingen anbefaling
+      i rækkefølgen.
     </p>
   </div>
 </section>
@@ -83,7 +84,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       <span class="hint" tabindex="0" data-hint-title="Aktivitet, ikke popularitet"
             data-hint="Volumen siger hvor meget der blev handlet — ikke hvor mange der ejer aktien. Ejerantal er data en konkret bank har om sine egne kunder, og det findes ikke i vores kilde.">aktivitet, ikke popularitet</span>.
     </p>
-    <div class="card rounded-2xl overflow-hidden">
+    <div class="card rounded-md overflow-hidden">
       <div class="overflow-x-auto">
         <table class="w-full text-sm border-collapse min-w-[620px]">
           <thead>
@@ -110,7 +111,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
   </section>
 
   <!-- ─── Method ──────────────────────────────────────────────────────── -->
-  <div class="card rounded-2xl p-5 mt-10 text-xs leading-relaxed muted">
+  <div class="card rounded-md p-5 mt-10 text-xs leading-relaxed muted">
     <p class="font-bold mb-1" style="color: var(--text-primary)">Sådan er listerne lavet</p>
     <p>
       Hver liste er en ren sortering af de kursdata siden allerede viser — ingen redaktionel
@@ -193,7 +194,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
   }
 
   function card(s, metric) {
-    return '<a class="card rounded-xl p-4 block row-link transition-transform active:scale-[.99]" '
+    return '<a class="card rounded-md p-4 block row-link transition-transform active:scale-[.99]" '
       + 'href="' + K.stockUrl(s.symbol) + '">'
       + '<div class="flex items-start justify-between gap-2 mb-2">'
         + '<div class="min-w-0">'
@@ -311,7 +312,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
         + ' · opdateres tre gange på hverdage.'
         + (list.fx ? ' Valutakurs USD/DKK ' + K.fmtPrice(list.fx.rate) + ' (ECB ' + list.fx.date + ').' : '');
     } catch (err) {
-      $('#themes').innerHTML = '<div class="card rounded-2xl p-6 text-sm" style="color: var(--delta-down)">'
+      $('#themes').innerHTML = '<div class="card rounded-md p-6 text-sm" style="color: var(--delta-down)">'
         + 'Kunne ikke indlæse kursdata: ' + K.esc(err.message) + '</div>';
     }
   })();

@@ -346,7 +346,8 @@
 
     host.innerHTML =
       '<div class="nav-top"><div class="nav-inner">'
-        + '<a href="index.html" class="nav-brand">Coop&nbsp;Bank <span class="nav-brand-sub">Investering</span></a>'
+        + '<a href="index.html" class="nav-brand"><span>Coop <span class="nav-brand-bank">BANK</span></span>'
+        + '<span class="nav-brand-sub">Investering</span></a>'
         + back
       + '</div></div>'
       + '<div class="nav-bottom"><nav class="nav-inner" aria-label="Sektioner">' + tabs + '</nav></div>';
