@@ -229,9 +229,10 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
       cell: (r) => '<span class="num faint text-xs">' + (r.rank == null ? '–' : r.rank) + '</span>' },
 
     { key: 'name', label: 'Navn', group: 'Fond', sortKey: 'name', asc: true,
-      hint: 'Fondens navn og børssymbol. Samme fond kan optræde flere gange — akkumulerende og udbyttebetalende andele har hvert sit symbol.',
-      cell: (r) => '<div class="font-semibold">' + K.esc(r.name) + '</div>'
-        + '<div class="text-xs faint">' + K.flagOf(r.market) + ' ' + K.esc(r.symbol) + '</div>' },
+      hint: 'Fondens navn og børssymbol. Klik på en række for at se fonden. Samme fond kan optræde flere gange — akkumulerende og udbyttebetalende andele har hvert sit symbol.',
+      cell: (r) => '<a class="row-link block" href="' + K.fundUrl(r.symbol) + '">'
+        + '<div class="font-semibold row-name">' + K.esc(r.name) + '</div>'
+        + '<div class="text-xs faint">' + K.flagOf(r.market) + ' ' + K.esc(r.symbol) + '</div></a>' },
 
     { key: 'family', label: 'Udbyder', group: 'Fond', sortKey: 'family', asc: true,
       hint: 'Fondsselskabet bag. Vanguard, BlackRock (iShares) og Xtrackers står bag hovedparten af de europæiske UCITS-fonde.',

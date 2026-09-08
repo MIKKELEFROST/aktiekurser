@@ -75,7 +75,7 @@ jobs:
         continue-on-error: true
         run: |
           if [ "${{ steps.mode.outputs.full }}" = "true" ]; then
-            node scripts/fetch-etf.mjs
+            node scripts/fetch-etf.mjs --history
           else
             node scripts/fetch-etf.mjs --quotes-only
           fi

@@ -310,6 +310,7 @@
   // by matching against the loaded list rather than by parsing.
   const slug = (symbol) => String(symbol).toLowerCase().replace(/[^a-z0-9]+/g, '-');
   const stockUrl = (symbol) => 'aktie.html?symbol=' + encodeURIComponent(symbol);
+  const fundUrl  = (symbol) => 'fond.html?symbol=' + encodeURIComponent(symbol);
 
   // ── Site header ───────────────────────────────────────────────────────
   // Rendered from one place so the three pages cannot drift apart. Two tiers:
@@ -428,6 +429,6 @@
     liveQuotes, tradingNow, startLive,
     peOf, moveBetween, nearestIndex, drawdownSeries,
     MARKETS, marketOf, flagOf, indexLabel,
-    sparkline, rangeBar, slug, stockUrl,
+    sparkline, rangeBar, slug, stockUrl, fundUrl,
   };
 })(window);

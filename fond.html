@@ -1,0 +1,482 @@
+<!-- Title: Fond – detaljer -->
+<!-- filepath: fond.html -->
+<!DOCTYPE html>
+<html lang="da" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fond – detaljer</title>
+<meta name="description" content="Kurs, udvikling og nøgletal for en enkelt børshandlet fond — hvad den koster om året, hvor stor den er, og hvad den har gjort.">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preload" href="assets/fonts/Porteron-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/Porteron-Semi.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/kursliste.css">
+<script>
+tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial', 'system-ui', 'sans-serif'] } } } }
+</script>
+<style>
+  .chart-wrap { position: relative; }
+  .crosshair { pointer-events: none; }
+  #tooltip {
+    position: absolute; pointer-events: none; opacity: 0; transition: opacity .12s;
+    background: var(--surface-1); border: 1px solid var(--hairline);
+    border-radius: var(--radius-xs); padding: 6px 10px; font-size: 12px; white-space: nowrap;
+    box-shadow: 0 4px 14px rgba(0,0,0,.10); z-index: 5;
+  }
+  .range-btn {
+    border: 1px solid var(--hairline); color: var(--text-secondary);
+    border-radius: 999px; padding: 4px 12px; font-size: 12px; font-weight: 700;
+  }
+  .range-btn[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+  /* Nøgletal står som rækker med tallet i højre kant, så de kan skimmes
+     lodret. Etiketten bærer forklaringen; tallet står alene. */
+  .kv { display: flex; align-items: baseline; justify-content: space-between; gap: 16px;
+        padding: 9px 0; border-top: 1px solid var(--gridline); }
+  .kv:first-child { border-top: 0; }
+  .kv-k { font-size: 13px; color: var(--text-secondary); }
+  .kv-v { font-size: 14px; font-weight: 600; font-variant-numeric: tabular-nums; }
+</style>
+</head>
+
+<body class="font-sans antialiased">
+<header id="sitenav"></header>
+
+<div class="max-w-[1100px] mx-auto px-4 py-8">
+  <div id="page"><p class="text-sm muted">Henter fonden …</p></div>
+</div>
+
+<script src="assets/kursliste.js"></script>
+<script>
+(() => {
+  const K = window.KL;
+  const $ = (s) => document.querySelector(s);
+  K.renderNav('etf');
+
+  const params = new URLSearchParams(location.search);
+  const wanted = (params.get('symbol') || '').toUpperCase();
+
+  // ── Grafens geometri, delt af tegning og markør ────────────────────────
+  const G = { W: 900, H: 280, L: 62, R: 14, T: 16, B: 30 };
+  G.iw = G.W - G.L - G.R;
+  G.ih = G.H - G.T - G.B;
+
+  const chart = { dates: [], closes: [], currency: '', lo: 0, hi: 1 };
+
+  // Perioderne tælles i handelsdage, ikke kalenderdage, så et vindue altid
+  // rummer det antal punkter det lover — også hen over en helligdag.
+  const PRESETS = [
+    { key: '1m',  label: '1 md.', days: 21 },
+    { key: '3m',  label: '3 md.', days: 63 },
+    { key: 'ytd', label: 'År til dato', days: null },
+    { key: '1y',  label: '1 år',  days: 252 },
+    { key: '3y',  label: '3 år',  days: 756 },
+    { key: '5y',  label: '5 år',  days: 1260 },
+    { key: 'alt', label: 'Hele perioden', days: Infinity },
+  ];
+
+  const state = { range: '3m', row: null, hist: null };
+  let live = null, pointerInChart = false;
+
+  // ── Data ───────────────────────────────────────────────────────────────
+  async function loadFund() {
+    const res = await fetch('data/etf.json', { cache: 'no-cache' });
+    if (!res.ok) throw new Error('Kunne ikke hente fondslisten.');
+    const data = await res.json();
+    const etfs = data.etfs || [];
+    const row = etfs.find((e) => String(e.symbol).toUpperCase() === wanted);
+    return { row, updatedAt: data.updated_at, all: etfs };
+  }
+
+  // Historikken ligger som én fil pr. fond. Mangler den, kan siden stadig
+  // stå — den viser bare nøgletallene og siger hvorfor grafen ikke er der.
+  async function loadHist(symbol) {
+    try {
+      const res = await fetch('data/etf-historik/' + encodeURIComponent(symbol) + '.json', { cache: 'no-cache' });
+      if (!res.ok) return null;
+      const h = await res.json();
+      return (h && h.dates && h.dates.length >= 2) ? h : null;
+    } catch { return null; }
+  }
+
+  // ── Udsnit efter periode ───────────────────────────────────────────────
+  // Filen bærer to serier: tre år med daglige kurser og en månedlig tilbage
+  // til fondens start. Den daglige bruges så langt den rækker, den månedlige
+  // derudover — og opsummeringen siger hvilken man ser på.
+  const longSeries = (h) => (h && h.monthly && h.monthly.dates && h.monthly.dates.length > 12)
+    ? h.monthly : null;
+
+  function slice() {
+    const h = state.hist;
+    if (!h) return null;
+    const monthly = longSeries(h);
+    const preset = PRESETS.find((p) => p.key === state.range) || PRESETS[1];
+
+    if (state.range === 'ytd') {
+      const year = String(new Date().getFullYear());
+      let i = h.dates.findIndex((d) => d.slice(0, 4) === year);
+      if (i < 0) i = Math.max(0, h.dates.length - 252);
+      i = Math.max(0, i - 1);          // dagen før nytår giver udgangspunktet
+      return { dates: h.dates.slice(i), closes: h.closes.slice(i) };
+    }
+    if (preset.days === Infinity) {
+      return monthly ? { dates: monthly.dates, closes: monthly.closes, coarse: true }
+                     : { dates: h.dates, closes: h.closes };
+    }
+    // Yahoos range=3y giver 754 dage, ikke 756. To dage fra skal ikke koste
+    // den daglige opløsning, så et vindue der er dækket 98 % læses dagligt.
+    if (h.dates.length >= preset.days * 0.98) {
+      const n = Math.min(h.dates.length, preset.days + 1);
+      return { dates: h.dates.slice(-n), closes: h.closes.slice(-n) };
+    }
+    if (monthly) {
+      const months = Math.round(preset.days / 21) + 1;
+      const n = Math.min(monthly.dates.length, months);
+      return { dates: monthly.dates.slice(-n), closes: monthly.closes.slice(-n), coarse: true };
+    }
+    return { dates: h.dates, closes: h.closes };
+  }
+
+  // Yahoo vælger selv opløsningen på den lange serie efter hvor gammel
+  // noteringen er: en fond fra 2019 får ugebjælker, en fra 1993 månedsbjælker.
+  // Så nævneren regnes ud af den faktiske afstand mellem punkterne i stedet
+  // for at antage måneder — ellers stod der "372 månedskurser" om syv år.
+  function barLabel(dates) {
+    if (!dates || dates.length < 3) return 'kurser';
+    const gaps = [];
+    for (let i = 1; i < dates.length; i++) {
+      gaps.push((new Date(dates[i]) - new Date(dates[i - 1])) / 86400000);
+    }
+    gaps.sort((a, b) => a - b);
+    const med = gaps[Math.floor(gaps.length / 2)];
+    if (med <= 4) return 'handelsdage';
+    if (med <= 12) return 'ugekurser';
+    if (med <= 45) return 'månedskurser';
+    return 'kvartalskurser';
+  }
+
+  // ── Graf ───────────────────────────────────────────────────────────────
+  function drawChart(dates, closes, currency) {
+    if (!dates || closes.length < 2) {
+      return '<p class="text-sm muted py-10 text-center">Perioden rummer for få handelsdage til en graf.</p>';
+    }
+    chart.dates = dates; chart.closes = closes; chart.currency = currency;
+
+    const min = Math.min.apply(null, closes), max = Math.max.apply(null, closes);
+    const pad = (max - min) * 0.08 || 1;
+    const lo = min - pad, hi = max + pad;
+    chart.lo = lo; chart.hi = hi;
+    const x = (i) => G.L + (G.iw * i) / (closes.length - 1);
+    const y = (v) => G.T + G.ih * (1 - (v - lo) / (hi - lo));
+
+    const grid = Array.from({ length: 4 }, (_, k) => lo + ((hi - lo) * k) / 3).map((v) =>
+      '<line x1="' + G.L + '" y1="' + y(v).toFixed(1) + '" x2="' + (G.W - G.R) + '" y2="' + y(v).toFixed(1)
+      + '" stroke="var(--gridline)" stroke-width="1"/>'
+      + '<text x="' + (G.L - 8) + '" y="' + (y(v) + 4).toFixed(1) + '" text-anchor="end" '
+      + 'font-size="11" fill="var(--text-muted)">' + K.fmtPrice(v) + '</text>').join('');
+
+    const idx = [0, Math.floor((dates.length - 1) / 2), dates.length - 1];
+    const xLabels = idx.map((i, n) =>
+      '<text x="' + x(i).toFixed(1) + '" y="' + (G.H - 9) + '" text-anchor="'
+      + (n === 0 ? 'start' : n === 2 ? 'end' : 'middle') + '" font-size="11" fill="var(--text-muted)">'
+      + new Date(dates[i]).toLocaleDateString('da-DK', { day: 'numeric', month: 'short', year: '2-digit' })
+      + '</text>').join('');
+
+    const d = closes.map((v, i) => (i ? 'L' : 'M') + x(i).toFixed(1) + ' ' + y(v).toFixed(1)).join(' ');
+    const stroke = closes[closes.length - 1] >= closes[0] ? 'var(--delta-up)' : 'var(--delta-down)';
+
+    return '<div class="chart-wrap">'
+      + '<svg id="chart" viewBox="0 0 ' + G.W + ' ' + G.H + '" width="100%" height="' + G.H + '" '
+      + 'role="img" aria-label="Kursudvikling ' + K.esc(dates[0]) + ' til ' + K.esc(dates[dates.length - 1])
+      + ', fra ' + K.fmtPrice(closes[0]) + ' til ' + K.fmtPrice(closes[closes.length - 1]) + ' ' + K.esc(currency)
+      + '" style="display:block">'
+      + grid + xLabels
+      + '<path d="' + d + '" fill="none" stroke="' + stroke + '" stroke-width="2" '
+      + 'stroke-linecap="round" stroke-linejoin="round"/>'
+      + '<g class="crosshair" opacity="0">'
+      + '<line id="chx" y1="' + G.T + '" y2="' + (G.T + G.ih) + '" stroke="var(--text-muted)" '
+      + 'stroke-width="1" stroke-dasharray="3 3"/>'
+      + '<circle id="chd" r="4.5" fill="' + stroke + '" stroke="var(--surface-1)" stroke-width="2"/></g>'
+      + '<rect id="hit" x="' + G.L + '" y="' + G.T + '" width="' + G.iw + '" height="' + G.ih + '" fill="transparent"/>'
+      + '</svg><div id="tooltip"></div></div>';
+  }
+
+  function wireChart() {
+    const svg = $('#chart'); if (!svg) return;
+    const hit = $('#hit'), tip = $('#tooltip'), wrap = svg.parentElement;
+    const cross = svg.querySelector('.crosshair'), line = $('#chx'), dot = $('#chd');
+
+    // viewBox'en bliver brevkasset, når elementets forhold ikke passer til
+    // dens eget, så elementets bredde alene rammer skævt i kanterne.
+    // getScreenCTM bærer den rigtige skala og forskydning.
+    const toViewBox = (cx, cy) => {
+      const m = svg.getScreenCTM();
+      return m ? new DOMPoint(cx, cy).matrixTransform(m.inverse()) : null;
+    };
+    const toClient = (x, y) => {
+      const m = svg.getScreenCTM();
+      return m ? new DOMPoint(x, y).matrixTransform(m) : null;
+    };
+
+    const indexAt = (vx) => {
+      const t = (vx - G.L) / G.iw;
+      return Math.max(0, Math.min(chart.closes.length - 1, Math.round(t * (chart.closes.length - 1))));
+    };
+
+    function move(ev) {
+      const p = toViewBox(ev.clientX, ev.clientY); if (!p) return;
+      const i = indexAt(p.x);
+      const vx = G.L + (G.iw * i) / (chart.closes.length - 1);
+      const vy = G.T + G.ih * (1 - (chart.closes[i] - chart.lo) / (chart.hi - chart.lo));
+      cross.setAttribute('opacity', '1');
+      line.setAttribute('x1', vx); line.setAttribute('x2', vx);
+      dot.setAttribute('cx', vx); dot.setAttribute('cy', vy);
+
+      const first = chart.closes[0];
+      const move = first ? ((chart.closes[i] - first) / first) * 100 : null;
+      tip.innerHTML = '<strong>' + K.fmtPrice(chart.closes[i]) + ' ' + K.esc(chart.currency) + '</strong>'
+        + ' <span class="' + K.dirClass(move) + '">' + K.fmtPct(move) + '</span><br>'
+        + '<span class="faint">' + K.fmtDate(chart.dates[i]) + '</span>';
+
+      const c = toClient(vx, vy); if (!c) return;
+      const r = wrap.getBoundingClientRect();
+      let left = c.x - r.left + 12;
+      if (left + tip.offsetWidth > r.width - 4) left = c.x - r.left - tip.offsetWidth - 12;
+      tip.style.left = Math.max(4, left) + 'px';
+      tip.style.top = Math.max(4, c.y - r.top - tip.offsetHeight - 10) + 'px';
+      tip.style.opacity = '1';
+    }
+
+    hit.addEventListener('pointerenter', () => { pointerInChart = true; });
+    hit.addEventListener('pointermove', move);
+    hit.addEventListener('pointerleave', () => {
+      pointerInChart = false;
+      cross.setAttribute('opacity', '0');
+      tip.style.opacity = '0';
+    });
+  }
+
+  // ── Byggeklodser ───────────────────────────────────────────────────────
+  const kv = (k, v, hint) => '<div class="kv"><span class="kv-k'
+    + (hint ? ' hint" data-hint="' + K.esc(hint) + '" data-hint-title="' + K.esc(k) + '"' : '"')
+    + '>' + K.esc(k) + '</span><span class="kv-v">' + v + '</span></div>';
+
+  const pct = (n) => '<span class="' + K.dirClass(n) + '">' + K.fmtPct(n) + '</span>';
+
+  function header(r) {
+    const m = K.marketOf(r.market);
+    const delayed = r.delayed_by ? ' · ' + r.delayed_by + ' min. forsinket' : '';
+    return '<div class="mb-5">'
+      + '<a href="etf.html" class="text-xs link-accent">← Alle fonde</a>'
+      + '<h1 class="text-2xl md:text-3xl font-extrabold tracking-tight mt-2" style="text-wrap:balance">'
+      +   K.esc(r.name) + '</h1>'
+      + '<p class="text-sm muted mt-1">' + K.flagOf(r.market) + ' ' + K.esc(r.symbol)
+      +   ' · ' + K.esc(r.exchange || m.exchange) + delayed
+      +   (r.family ? ' · ' + K.esc(r.family) : '') + '</p>'
+      + '<div class="flex items-baseline gap-3 mt-4 flex-wrap">'
+      +   '<span class="text-3xl font-extrabold num" id="px">' + K.fmtPrice(r.price) + '</span>'
+      +   '<span class="text-sm muted">' + K.esc(r.currency) + '</span>'
+      +   '<span class="text-base font-bold num ' + K.dirClass(r.percent_change) + '" id="pxmove">'
+      +     K.fmtPct(r.percent_change) + '</span>'
+      +   (r.currency !== 'DKK' && r.price_dkk != null
+            ? '<span class="text-sm faint num">≈ ' + K.fmtPrice(r.price_dkk) + ' DKK</span>' : '')
+      + '</div></div>';
+  }
+
+  function chartCard(r) {
+    const s = slice();
+    const buttons = PRESETS.map((p) =>
+      '<button class="range-btn" data-range="' + p.key + '" aria-pressed="'
+      + (p.key === state.range) + '">' + K.esc(p.label) + '</button>').join('');
+
+    let summary = '';
+    if (s && s.closes.length >= 2) {
+      const a = s.closes[0], b = s.closes[s.closes.length - 1];
+      const move = a ? ((b - a) / a) * 100 : null;
+      const hi = Math.max.apply(null, s.closes), lo = Math.min.apply(null, s.closes);
+      summary = '<p class="text-xs muted mt-3">'
+        + K.fmtDate(s.dates[0]) + ' – ' + K.fmtDate(s.dates[s.dates.length - 1])
+        + ' · ' + s.dates.length + ' ' + (s.coarse ? barLabel(s.dates) : 'handelsdage')
+        + ' · ' + pct(move) + ' i perioden<br>'
+        + 'Højeste ' + K.fmtPrice(hi) + ' · laveste ' + K.fmtPrice(lo) + ' ' + K.esc(r.currency)
+        + '</p>';
+    }
+
+    return '<section class="card p-4 md:p-5 mb-4">'
+      + '<div class="flex items-baseline justify-between gap-3 flex-wrap mb-3">'
+      +   '<h2 class="font-extrabold tracking-tight">Kursudvikling</h2>'
+      +   '<div class="flex flex-wrap gap-2" id="ranges">' + buttons + '</div>'
+      + '</div>'
+      + (state.hist ? drawChart(s && s.dates, s ? s.closes : [], r.currency)
+                    : '<p class="text-sm muted py-8 text-center">Kurshistorikken for denne fond er ikke hentet endnu. '
+                      + 'Den kommer med den næste fulde opdatering.</p>')
+      + summary
+      + '</section>';
+  }
+
+  function aboutCard(r) {
+    // Hvad fonden er, sagt i almindeligt sprog. Kategorien og udbyderen er
+    // det eneste Yahoo giver om indholdet, så resten forklarer formen.
+    const what = r.category
+      ? 'Fonden hører i kategorien <strong>' + K.esc(r.category) + '</strong>.'
+      : 'Yahoo oplyser ikke en kategori for denne fond.';
+    return '<section class="card card-satin p-4 md:p-5 mb-4">'
+      + '<h2 class="font-extrabold tracking-tight mb-2">Hvad er det her?</h2>'
+      + '<p class="text-sm muted">'
+      +   'En ETF er én post på din liste, der indeholder mange selskaber på én gang. '
+      +   'Du køber en andel af hele kurven i stedet for at vælge selskaberne selv. ' + what
+      +   (r.expense_ratio != null
+          ? ' Den koster <strong>' + K.fmtPct(r.expense_ratio).replace('+', '') + '</strong> om året i '
+            + 'løbende omkostninger — det trækkes fra kursen løbende, ikke som en regning.'
+          : ' Den løbende omkostning er ikke oplyst her; den står i fondens eget faktaark.')
+      + '</p></section>';
+  }
+
+  function figuresCard(r) {
+    const pos = (r.high_52w != null && r.low_52w != null && r.high_52w > r.low_52w)
+      ? (r.price - r.low_52w) / (r.high_52w - r.low_52w) : null;
+    const bar = pos == null ? '<span class="faint">–</span>'
+      : '<span class="flex items-center gap-2 justify-end">'
+        + '<span class="text-xs faint num">' + K.fmtPrice(r.low_52w) + '</span>'
+        + K.rangeBar({ week52pos: Math.max(0, Math.min(1, pos)), week52_low: r.low_52w,
+                       week52_high: r.high_52w, price: r.price, currency: r.currency }, 96, 18)
+        + '<span class="text-xs faint num">' + K.fmtPrice(r.high_52w) + '</span></span>';
+
+    return '<section class="card p-4 md:p-5 mb-4">'
+      + '<h2 class="font-extrabold tracking-tight mb-3">Nøgletal</h2>'
+      + '<div class="grid gap-x-8 md:grid-cols-2">'
+      + '<div>'
+      +   kv('Løbende omkostning', r.expense_ratio != null
+            ? K.fmtPct(r.expense_ratio).replace('+', '') + ' om året' : '<span class="faint">Ikke oplyst</span>',
+            'Hvad fonden trækker om året for at drive sig selv. Det tages af kursen løbende, så du får ikke en regning.')
+      +   kv('Formue i fonden', r.net_assets != null ? K.fmtBig(r.net_assets) + ' ' + K.esc(r.currency)
+            : '<span class="faint">–</span>',
+            'Hvor mange penge der er investeret i fonden i alt. En større fond lukker sjældnere og handles typisk til en smallere spænd.')
+      +   kv('Udbyder', r.family ? K.esc(r.family) : '<span class="faint">–</span>',
+            'Fondsselskabet bag. Vanguard, BlackRock (iShares) og Xtrackers står bag hovedparten af de europæiske UCITS-fonde.')
+      +   kv('Kategori', r.category ? K.esc(r.category) : '<span class="faint">Ikke oplyst</span>',
+            'Yahoos egen gruppering af, hvad fonden investerer i.')
+      +   kv('Børs', K.esc(r.exchange || K.marketOf(r.market).exchange))
+      +   kv('Første kurs vi har', r.first_date ? K.fmtDate(r.first_date) : '<span class="faint">–</span>',
+            'Starten på den kurshistorik vi har hentet — ikke nødvendigvis den dag fonden blev oprettet.')
+      + '</div>'
+      + '<div>'
+      +   kv('I dag', pct(r.percent_change))
+      +   kv('7 dage', pct(r.change_7d))
+      +   kv('30 dage', pct(r.change30d))
+      +   kv('6 måneder', pct(r.change_6m))
+      +   kv('1 år', pct(r.change_1y))
+      +   kv('3 år', r.change_3y != null ? pct(r.change_3y) : '<span class="faint">–</span>')
+      +   kv('År til dato', r.ytd != null ? pct(r.ytd) : '<span class="faint">–</span>',
+            'Fra årets første handelsdag til i dag.')
+      +   kv('52 ugers interval', bar,
+            'Hvor kursen ligger i dag mellem det laveste og det højeste, den har været det seneste år.')
+      + '</div></div>'
+      + '<p class="text-xs faint mt-3">Afkast er kursudvikling. Udbytter, der er betalt ud undervejs, '
+      +   'tæller ikke med her — i en akkumulerende fond bliver de i kursen, i en udbyttebetalende gør de ikke.</p>'
+      + '</section>';
+  }
+
+  function peersCard(r, all) {
+    // Fonde fra samme udbyder i samme kategori, målt på formue. Det er den
+    // sammenligning der er noget værd: samme slags kurv, andet mærke.
+    const peers = all.filter((e) => e.symbol !== r.symbol
+        && ((r.category && e.category === r.category) || (!r.category && e.family === r.family)))
+      .sort((a, b) => (b.net_assets_dkk ?? -1) - (a.net_assets_dkk ?? -1))
+      .slice(0, 6);
+    if (!peers.length) return '';
+    return '<section class="card p-4 md:p-5 mb-4">'
+      + '<h2 class="font-extrabold tracking-tight mb-1">Andre fonde af samme slags</h2>'
+      + '<p class="text-xs faint mb-3">'
+      +   (r.category ? 'Samme kategori — ' + K.esc(r.category) + '.' : 'Samme udbyder.')
+      +   ' Sorteret efter formue.</p>'
+      + '<div class="overflow-x-auto"><table class="w-full text-sm border-collapse">'
+      + '<thead><tr class="text-xs faint"><th class="text-left py-2 pr-3">Fond</th>'
+      +   '<th class="text-right py-2 px-3">Omkostning</th><th class="text-right py-2 px-3">Formue</th>'
+      +   '<th class="text-right py-2 pl-3">1 år</th></tr></thead><tbody>'
+      + peers.map((e) => '<tr class="border-t divider">'
+          + '<td class="py-2 pr-3"><a class="row-link" href="' + K.fundUrl(e.symbol) + '">'
+          +   '<div class="font-semibold row-name">' + K.esc(e.name) + '</div>'
+          +   '<div class="text-xs faint">' + K.flagOf(e.market) + ' ' + K.esc(e.symbol) + '</div></a></td>'
+          + '<td class="py-2 px-3 text-right num">'
+          +   (e.expense_ratio != null ? K.fmtPct(e.expense_ratio).replace('+', '') : '–') + '</td>'
+          + '<td class="py-2 px-3 text-right num">'
+          +   (e.net_assets != null ? K.fmtBig(e.net_assets) + ' ' + K.esc(e.currency) : '–') + '</td>'
+          + '<td class="py-2 pl-3 text-right num ' + K.dirClass(e.change_1y) + '">'
+          +   K.fmtPct(e.change_1y) + '</td></tr>').join('')
+      + '</tbody></table></div></section>';
+  }
+
+  // ── Tegn siden ─────────────────────────────────────────────────────────
+  let ALL = [], UPDATED = null;
+
+  function render() {
+    const r = state.row;
+    $('#page').innerHTML = header(r) + chartCard(r) + aboutCard(r) + figuresCard(r) + peersCard(r, ALL)
+      + '<p class="text-xs faint">Kurser er vejledende og kan være forsinkede. '
+      + 'Nøgletal hentet ' + K.fmtAge(UPDATED) + '. '
+      + 'Det her er ikke rådgivning — det du sætter til side kan både vokse og blive mindre.</p>';
+    document.title = r.name + ' – ' + r.symbol + ' | Coop Bank Investering';
+    wireChart();
+    K.initHints();
+
+    document.querySelectorAll('#ranges [data-range]').forEach((b) => {
+      b.addEventListener('click', () => { state.range = b.getAttribute('data-range'); render(); });
+    });
+  }
+
+  function notFound(all) {
+    // Et symbol vi ikke kender skal ikke ende i en blank side. Vi viser de
+    // største fonde, så man kan komme videre uden at gå tilbage først.
+    const top = (all || []).slice(0, 12);
+    $('#page').innerHTML = '<h1 class="text-2xl font-extrabold tracking-tight">Fonden blev ikke fundet</h1>'
+      + '<p class="text-sm muted mt-2">'
+      + (wanted ? 'Vi har ingen fond med symbolet <strong>' + K.esc(wanted) + '</strong>.'
+                : 'Der er ikke angivet noget symbol.')
+      + ' Prøv en af de største:</p>'
+      + '<div class="grid gap-2 sm:grid-cols-2 lg:grid-cols-3 mt-4">'
+      + top.map((e) => '<a class="card p-3 row-link" href="' + K.fundUrl(e.symbol) + '">'
+          + '<div class="font-semibold text-sm row-name">' + K.esc(e.name) + '</div>'
+          + '<div class="text-xs faint">' + K.flagOf(e.market) + ' ' + K.esc(e.symbol) + '</div></a>').join('')
+      + '</div>'
+      + '<p class="mt-5"><a href="etf.html" class="pill btn-outline">Se alle fonde</a></p>';
+  }
+
+  (async () => {
+    try {
+      const { row, updatedAt, all } = await loadFund();
+      ALL = all; UPDATED = updatedAt;
+      if (!row) return notFound(all);
+      state.row = row;
+      state.hist = await loadHist(row.symbol);
+      render();
+
+      live = K.startLive({
+        interval: 60_000,
+        symbols: () => [row.symbol],
+        apply: (data) => {
+          const q = data.q[row.symbol];
+          if (!q || q.p == null || q.p === row.price || pointerInChart) return;
+          if (row.price_dkk != null && row.price) row.price_dkk *= q.p / row.price;
+          row.price = q.p;
+          if (q.c != null) row.change = q.c;
+          if (q.cp != null) row.percent_change = q.cp;
+          // Kun de to tal i toppen skiftes ud. At tegne hele siden om ville
+          // rive grafen væk under markøren.
+          const px = $('#px'), mv = $('#pxmove');
+          if (px) px.textContent = K.fmtPrice(row.price);
+          if (mv) { mv.textContent = K.fmtPct(row.percent_change);
+                    mv.className = 'text-base font-bold num ' + K.dirClass(row.percent_change); }
+        },
+      });
+    } catch (err) {
+      $('#page').innerHTML = '<p class="text-sm" style="color:var(--delta-down)">'
+        + K.esc(err.message || 'Noget gik galt.') + '</p>'
+        + '<p class="mt-4"><a href="etf.html" class="pill btn-outline">Se alle fonde</a></p>';
+    }
+  })();
+})();
+</script>
+</body>
+</html>
