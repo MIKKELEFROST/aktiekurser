@@ -57,6 +57,18 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
   .ov-v { font-weight: 700; color: var(--text-primary); }
   .ov-sep { color: var(--text-muted); opacity: .55; }
   .overview p { flex-basis: 100%; margin: 0; }
+  .ov-row {
+    display: flex; flex-wrap: wrap; align-items: baseline;
+    justify-content: space-between; gap: 8px 16px; width: 100%;
+  }
+  .ov-figures { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; }
+  .adv-toggle {
+    display: inline-flex; align-items: center; gap: 6px; flex: 0 0 auto;
+    font-size: 12px; font-weight: 600; color: var(--text-secondary); cursor: pointer;
+    white-space: nowrap;
+  }
+  .adv-toggle input { accent-color: var(--accent); cursor: pointer; }
+  .adv-toggle:hover span { color: var(--text-primary); }
 
 </style>
 </head>
@@ -106,7 +118,14 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     { key: 'all', label: 'Alt',    sessions: Infinity },
   ];
 
-  const state = { range: '3m', from: '', to: '', compare: [] };
+  // Simple by default. Most people arrive asking how a share is doing, not to
+  // value the company; the rest of the page is one tick away and the choice is
+  // remembered, so a reader who wants it never has to ask twice.
+  const ADV_STORE = 'kursliste.avanceret.v1';
+  const advOn = () => { try { return localStorage.getItem(ADV_STORE) === '1'; } catch (e) { return false; } };
+  const setAdv = (on) => { try { localStorage.setItem(ADV_STORE, on ? '1' : '0'); } catch (e) { /* privat vindue */ } };
+
+  const state = { range: advOn() ? '3m' : '1y', from: '', to: '', compare: [], adv: advOn() };
 
   function slice(full) {
     const { dates, closes } = full;
@@ -539,7 +558,9 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       add('Markedsværdi', K.fmtBig(r.market_cap) + ' ' + K.esc(r.currency),
         'Kursen gange antallet af aktier, i selskabets egen valuta.');
     }
-    if (k) {
+    // The four ratios are what separates the two views, so they sit beside the
+    // switch that reveals them.
+    if (k && state.adv) {
       add('P/E', mult(K.peOf(r.price, k.eps_ttm)),
         'Kursen delt med indtjeningen pr. aktie de seneste fire kvartaler. Hvor mange års indtjening du betaler for én aktie. Beregnet af den kurs der står her på siden.');
       add('Forward P/E', mult(K.peOf(r.price, k.eps_fwd)),
@@ -549,8 +570,6 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       add('FCF-margin', k.fcf_margin == null ? null : (k.fcf_margin * 100).toFixed(1).replace('.', ',') + '%',
         'Frit cash flow som andel af omsætningen — hvor stor en del af hver krone i salg der bliver til kontanter selskabet frit kan bruge.');
     }
-    if (!bits.length) return '';
-
     const days = k ? daysUntil(k.next_earnings) : null;
     const cal = (days != null && days >= 0)
       ? '<p class="text-sm mt-2 muted">Næste regnskab: <strong style="color:var(--text-primary)">'
@@ -558,7 +577,15 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
         + (days === 0 ? 'i dag' : days === 1 ? 'om 1 dag' : 'om ' + days + ' dage') + '</span></p>'
       : '';
 
-    return '<div class="overview mb-5">' + bits.join('<span class="ov-sep" aria-hidden="true">·</span>') + cal + '</div>';
+    const toggle = '<label class="adv-toggle">'
+      + '<input type="checkbox" id="advToggle"' + (state.adv ? ' checked' : '') + '>'
+      + '<span>Avanceret visning</span></label>';
+
+    return '<div class="overview mb-5">'
+      + '<div class="ov-row">'
+        + '<div class="ov-figures">' + bits.join('<span class="ov-sep" aria-hidden="true">·</span>') + '</div>'
+        + toggle
+      + '</div>' + cal + '</div>';
   }
 
   // ── Calendar ───────────────────────────────────────────────────────────
@@ -659,13 +686,17 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     return (pick && BENCH[pick]) ? { code: pick, ...BENCH[pick] } : null;
   }
 
+  // The simple view keeps the four windows people actually ask about, and
+  // drops the index columns: comparing to Nasdaq-100 is a second question.
+  const SIMPLE_WINDOWS = ['1 måned', 'År til dato', '1 år', '3 år'];
+
   function performanceBlock(r) {
     if (!full || !full.dates.length) return '';
-    const bench = benchFor(r);
+    const bench = state.adv ? benchFor(r) : null;
     // The daily file covers two years; anything longer is read off the monthly
     // series, which reaches back to the listing.
     const monthly = full.monthly && full.monthly.dates.length ? full.monthly : null;
-    const rows = windows().map((w) => {
+    const rows = windows().filter((w) => state.adv || SIMPLE_WINDOWS.includes(w.label)).map((w) => {
       const own = w.long
         ? (monthly ? returnOver(monthly, w.from) : null)
         : returnOver(full, w.from);
@@ -676,11 +707,14 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
 
     const cell = (v) => '<td class="py-2 px-3 num text-right ' + K.dirClass(v) + '">' + K.fmtPct(v) + '</td>';
     return '<div class="card rounded-2xl p-5 mb-5">'
-      + '<h2 class="text-sm font-bold">Udvikling mod markedet</h2>'
-      + '<p class="text-xs muted mt-1" style="max-width:74ch">Samme kalenderperiode for begge. '
-        + (bench ? 'Sammenligningen er med ' + K.esc(bench.label) + '. ' : '')
-        + 'De to længste perioder er målt på månedlige lukkekurser, hvor de øvrige bruger daglige — indekset '
-        + 'rækker kun to år tilbage, så der står ingen sammenligning for 3 og 5 år.</p>'
+      + '<h2 class="text-sm font-bold">' + (bench ? 'Udvikling mod markedet' : 'Sådan er det gået') + '</h2>'
+      + '<p class="text-xs muted mt-1" style="max-width:74ch">'
+        + (bench
+            ? 'Samme kalenderperiode for begge. Sammenligningen er med ' + K.esc(bench.label) + '. '
+              + 'De to længste perioder er målt på månedlige lukkekurser, hvor de øvrige bruger daglige — '
+              + 'indekset rækker kun to år tilbage, så der står ingen sammenligning for 3 og 5 år.'
+            : 'Kursændring over hver periode. Udbytte er ikke regnet med.')
+      + '</p>'
       + '<div class="overflow-x-auto mt-3" style="overflow-x:auto"><table class="w-full text-sm border-collapse">'
       + '<thead><tr class="text-xs faint text-left"><th class="py-2 pr-3 font-semibold">Periode</th>'
         + '<th class="py-2 px-3 font-semibold text-right">' + K.esc(r.symbol) + '</th>'
@@ -886,6 +920,15 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     + '</div>';
   }
 
+  // Nothing is removed from the page, so the simple view says what is waiting
+  // rather than letting a reader assume this is all there is.
+  function simpleFooter(r) {
+    return '<div class="card rounded-2xl p-4 mt-5 text-xs muted" style="max-width:80ch">'
+      + 'Vil du se nøgletal, regnskabskalender, hvordan analytikernes forventninger er blevet ramt, '
+      + 'ejerforhold og lignende selskaber? Sæt flueben i <strong style="color:var(--text-primary)">'
+      + 'Avanceret visning</strong> øverst på siden — valget huskes.</div>';
+  }
+
   function factsBlock(r) {
     const list = facts(r);
     if (!list.length) return '';
@@ -918,7 +961,9 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     // Click-to-select belongs to the price view; in the comparison the y-axis
     // is a percentage shared by several series and a selection would be
     // ambiguous about which one it refers to.
-    $('#selHelp').hidden = comparing;
+    // The help line only exists in the advanced view.
+    const help = $('#selHelp');
+    if (help) help.hidden = comparing;
     if (!comparing) wireChart();
 
     const move = s.closes.length > 1 ? ((s.closes[s.closes.length - 1] - s.closes[0]) / s.closes[0]) * 100 : null;
@@ -939,7 +984,10 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     renderChartBlock();
   }
 
+  let lastArgs = null;
+
   function render(r, hist, fx, updatedAt, neighbours) {
+    lastArgs = [r, hist, fx, updatedAt, neighbours];
     row = r; full = hist; fxRate = fx;
     const cur = r.currency;
     const conv = cur !== 'DKK' && r.price_dkk != null;
@@ -976,7 +1024,10 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
           : '')
       + '</div></div>';
 
-    const buttons = PRESETS.map((p) =>
+    // Three windows answer "how is it going"; the finer ones are for someone
+    // studying the shape of the move.
+    const SIMPLE_RANGES = ['1m', '1y', 'all'];
+    const buttons = PRESETS.filter((p) => state.adv || SIMPLE_RANGES.includes(p.key)).map((p) =>
       '<button class="range-btn" data-range="' + p.key + '" aria-pressed="' + (p.key === state.range) + '">'
       + p.label + '</button>').join('');
 
@@ -984,16 +1035,16 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       + '<div class="flex items-center justify-between gap-3 flex-wrap mb-3">'
         + '<h2 class="text-sm font-bold">Kursudvikling</h2>'
         + '<div class="flex items-center gap-1.5 flex-wrap" style="display:flex;flex-wrap:wrap;gap:6px;align-items:center">' + buttons
-          + '<span class="mx-1 faint text-xs" aria-hidden="true">|</span>'
-          + '<label class="text-xs faint hint" tabindex="0" data-hint-title="Egen periode"'
+          + (state.adv ? '<span class="mx-1 faint text-xs" aria-hidden="true">|</span>' : '')
+          + (!state.adv ? '' : '<label class="text-xs faint hint" tabindex="0" data-hint-title="Egen periode"'
           + ' data-hint="Vælg selv fra- og til-dato. Grafen viser kun handelsdage, så weekender og helligdage springes over.">Fra</label>'
           + '<input type="date" id="from" class="date-input num">'
           + '<label class="text-xs faint" for="to">Til</label>'
           + '<input type="date" id="to" class="date-input num">'
-          + '<button id="clearRange" class="range-btn">Nulstil</button>'
+          + '<button id="clearRange" class="range-btn">Nulstil</button>')
         + '</div>'
       + '</div>'
-      + (BENCH ? '<div class="flex items-center gap-2 flex-wrap mb-3 text-xs" '
+      + (BENCH && state.adv ? '<div class="flex items-center gap-2 flex-wrap mb-3 text-xs" '
           + 'style="display:flex;flex-wrap:wrap;gap:8px;align-items:center">'
           + '<span class="faint font-bold">Sammenlign med</span>'
           + Object.keys(BENCH).map((code) => '<label class="cmp">'
@@ -1003,8 +1054,8 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
           + '>Grafen viser udvikling i procent fra periodens start, så begge kan læses på samme akse.</span>'
         + '</div>' : '')
       + '<p id="chartSummary" class="text-xs muted mb-1"></p>'
-      + '<p id="selHelp" class="text-xs faint mb-3">Klik på grafen for at sætte et startpunkt, og klik igen for at '
-        + 'se udviklingen frem til det andet punkt. Du kan også trække.</p>'
+      + (state.adv ? '<p id="selHelp" class="text-xs faint mb-3">Klik på grafen for at sætte et startpunkt, og klik igen for at '
+        + 'se udviklingen frem til det andet punkt. Du kan også trække.</p>' : '')
       + '<div id="chartHost"></div>'
       + '<p id="selSummary" class="text-xs mt-3 muted" hidden></p></div>';
 
@@ -1083,19 +1134,44 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       + 'Kurserne er vejledende og forsinkede markedsdata fra Yahoo Finance, hentet ' + K.fmtAge(updatedAt)
       + ', og udgør ikke investeringsrådgivning. Historiske afkast er ingen garanti for fremtidige afkast.</p>';
 
+    // The simple page answers "how is it going": the price, the shape of the
+    // move, how it compares to a few windows, and what an investment would have
+    // become. Everything that values the company waits behind the switch.
     $('#content').innerHTML = head + overviewStrip(r) + chartCard
       + performanceBlock(r)
-      + '<div class="grid md:grid-cols-2 gap-5 items-start mb-5">'
-        + calendarBlock(r) + surpriseBlock(r) + '</div>'
-      + drawdownBlock(r)
       + investedBlock(r)
-      + '<div class="grid md:grid-cols-2 gap-5 items-start mt-5">' + left + right + '</div>'
-      + peersBlock(r)
-      + ownershipBlock(r)
-      + factsBlock(r) + nav + risk;
+      + (!state.adv ? '' :
+          '<div class="grid md:grid-cols-2 gap-5 items-start mb-5 mt-5">'
+            + calendarBlock(r) + surpriseBlock(r) + '</div>'
+          + drawdownBlock(r)
+          + '<div class="grid md:grid-cols-2 gap-5 items-start mt-5">' + left + right + '</div>'
+          + peersBlock(r)
+          + ownershipBlock(r)
+          + factsBlock(r))
+      + (state.adv ? '' : simpleFooter(r))
+      + nav + risk;
+
+    const advBox = $('#advToggle');
+    if (advBox) advBox.addEventListener('change', (e) => {
+      state.adv = e.target.checked;
+      setAdv(state.adv);
+      // The simple view offers fewer windows, so a range only it could reach
+      // has to fall back rather than leave the chart on a hidden setting.
+      const SIMPLE = ['1m', '1y', 'all'];
+      if (!state.adv && !SIMPLE.includes(state.range)) { state.range = '1y'; state.from = state.to = ''; }
+      if (!state.adv) state.compare = [];
+      render.apply(null, lastArgs);
+      const box = $('#advToggle');
+      if (box) box.focus();
+    });
 
     document.querySelectorAll('[data-range]').forEach((b) =>
-      b.addEventListener('click', () => { $('#from').value = ''; $('#to').value = ''; setRange(b.dataset.range); }));
+      b.addEventListener('click', () => {
+        const from = $('#from'), to = $('#to');
+        if (from) from.value = '';
+        if (to) to.value = '';
+        setRange(b.dataset.range);
+      }));
 
     document.querySelectorAll('[data-bench]').forEach((b) => b.addEventListener('change', () => {
       const code = b.dataset.bench;
@@ -1107,6 +1183,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       renderChartBlock();
     }));
 
+    if ($('#from')) {
     const onDate = () => {
       state.from = $('#from').value; state.to = $('#to').value;
       if (state.from || state.to) {
@@ -1118,12 +1195,13 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     $('#from').addEventListener('change', onDate);
     $('#to').addEventListener('change', onDate);
     $('#clearRange').addEventListener('click', () => { $('#from').value = ''; $('#to').value = ''; setRange('3m'); });
+    }
 
     // Bound the pickers to the data we actually have, so an empty chart is
     // not reachable by picking a date outside the series.
-    if (full && full.dates.length) {
+    if (full && full.dates.length && $('#from')) {
       const lo = full.dates[0], hi = full.dates[full.dates.length - 1];
-      ['#from', '#to'].forEach((s) => { $(s).min = lo; $(s).max = hi; });
+      ['#from', '#to'].forEach((sel) => { $(sel).min = lo; $(sel).max = hi; });
     }
 
     renderChartBlock();
