@@ -341,6 +341,7 @@ async function fetchQuoteFields(symbols, session) {
       if (!q.symbol) continue;
       out.set(q.symbol, {
         market_cap: q.marketCap ?? null,
+        open: q.regularMarketOpen ?? null,
         eps_ttm: q.epsTrailingTwelveMonths ?? null,
         eps_fwd: q.epsForward ?? null,
         book_value: q.bookValue ?? null,
@@ -411,6 +412,7 @@ async function fetchFundamentals(symbol, session) {
       revenue_growth: raw(fd.revenueGrowth),
       fcf: fcf,
       fcf_margin: revenue && fcf != null ? round(fcf / revenue, 4) : null,
+      ebitda: raw(fd.ebitda),
       profit_margin: raw(fd.profitMargins),
       gross_margin: raw(fd.grossMargins),
       inst_pct: raw(mh.institutionsPercentHeld),
@@ -898,6 +900,8 @@ async function main() {
       const q = got.get(r.symbol);
       if (!q) continue;
       quoteFields.set(r.symbol, q);
+      // Dagens åbningskurs står ikke i chart-metadataen, kun i quoten.
+      if (q.open != null) r.open = round(q.open);
       if (q.market_cap != null) {
         r.market_cap = q.market_cap;
         r.market_cap_dkk = Math.round(q.market_cap * (fx.rates[r.currency] || 0)) || null;
