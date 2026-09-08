@@ -460,7 +460,10 @@ const BENCHMARKS = [
   { code: 'SP500',  symbol: '^GSPC',    label: 'S&P 500' },
   { code: 'SOX',    symbol: '^SOX',     label: 'Semiconductors' },
   { code: 'OMXC25', symbol: '^OMXC25',  label: 'OMX København 25' },
-  { code: 'OMXS30', symbol: '^OMXS30',  label: 'OMX Stockholm 30' },
+  // Yahoo carries the Stockholm 30 under ^OMX. ^OMXS30 resolves to the same
+  // index but returns a single bar, which silently emptied every Swedish
+  // comparison on the site.
+  { code: 'OMXS30', symbol: '^OMX',     label: 'OMX Stockholm 30' },
   { code: 'OMXH25', symbol: '^OMXH25',  label: 'OMX Helsinki 25' },
   { code: 'OSEAX',  symbol: '^OSEAX',   label: 'Oslo Børs All-Share' },
 ];
@@ -481,7 +484,11 @@ async function fetchBenchmarks() {
         dates.push(isoDay(stamps[i]));
         vals.push(round(closes[i], 2));
       }
-      if (dates.length) out[b.code] = { label: b.label, symbol: b.symbol, dates, closes: vals };
+      // Two years of daily bars is around 500 points. A handful means the
+      // symbol resolved but carries no history, which is worse than a clean
+      // failure: the pages would draw a comparison line from one point.
+      if (dates.length < 100) throw new Error('kun ' + dates.length + ' punkter');
+      out[b.code] = { label: b.label, symbol: b.symbol, dates, closes: vals };
     } catch (err) {
       console.warn('  benchmark ' + b.code + ' fejlede (' + err.message + ')');
     }
