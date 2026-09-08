@@ -9,11 +9,15 @@
 // stedet for objekter, fordi feltnavne gentaget seks tusind gange fylder mere
 // end værdierne.
 //
-//   [symbol, navn, marked, art, rang]
+//   [symbol, navn, marked, art, rang, kurs, ændring, valuta]
 //
-//   art    'a' aktie, 'e' fond
-//   rang   plads efter størrelse i sin egen liste — søger man "novo", skal
-//          Novo Nordisk stå før et lille selskab med novo i navnet
+//   art      'a' aktie, 'e' fond
+//   rang     plads efter størrelse i sin egen liste — søger man "novo", skal
+//            Novo Nordisk stå før et lille selskab med novo i navnet
+//   kurs     seneste kurs fra hentningen. Den er timer gammel, men den står
+//            i listen med det samme, så rækkerne ikke blinker tomme mens de
+//            friske kurser hentes ovenpå
+//   ændring  dagens bevægelse i procent, samme forbehold
 //
 //   node scripts/build-soegeindeks.mjs
 
@@ -36,7 +40,10 @@ async function rows(path, key, kind) {
     // på "novo" liste selskaberne alfabetisk, og Novo Nordisk ville ligge
     // under et lille selskab med novo i navnet.
     .map((r) => [String(r.symbol), String(r.name), String(r.market || ''), kind,
-                 Number(r.rank_all ?? r.rank) || 0]);
+                 Number(r.rank_all ?? r.rank) || 0,
+                 r.price == null ? null : Number(r.price.toFixed(4)),
+                 r.percent_change == null ? null : Number(r.percent_change.toFixed(2)),
+                 String(r.currency || '')]);
 }
 
 async function main() {

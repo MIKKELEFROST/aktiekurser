@@ -355,14 +355,34 @@ th .hint { cursor: pointer; }           /* header is still a sort control */
   box-shadow: 0 10px 30px rgba(0, 0, 0, .12);
   max-height: 60vh; overflow-y: auto;
 }
+/* Gruppeoverskrift: hvad rækkerne under den er, og hvad tallet til højre
+   betyder. Den er ikke klikbar og skal ikke ligne en række. */
+.nav-result-head {
+  display: flex; align-items: baseline; justify-content: space-between;
+  padding: 9px 14px 5px; font-size: 11px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .05em;
+  color: var(--text-muted); background: var(--surface-2);
+  border-top: 1px solid var(--gridline);
+}
+.nav-result-head:first-child { border-top: 0; }
 .nav-result {
-  display: block; padding: 9px 14px; text-decoration: none; color: inherit;
+  display: flex; align-items: baseline; justify-content: space-between; gap: 14px;
+  padding: 9px 14px; text-decoration: none; color: inherit;
   border-top: 1px solid var(--gridline);
 }
 .nav-result:first-child { border-top: 0; }
 .nav-result.is-on, .nav-result:hover { background: var(--surface-2); }
-.nav-result-name { display: block; font-size: 14px; font-weight: 600; line-height: 1.25; }
+.nav-result-text { min-width: 0; }
+/* Et fondsnavn kan være halvfjerds tegn. Det klippes frem for at skubbe
+   kursen ud af kortet. */
+.nav-result-name {
+  display: block; font-size: 14px; font-weight: 600; line-height: 1.25;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
 .nav-result-meta { display: block; font-size: 12px; color: var(--text-muted); margin-top: 1px; }
+.nav-result-num { text-align: right; flex: none; font-variant-numeric: tabular-nums; }
+.nav-result-move { display: block; font-size: 13px; font-weight: 700; }
+.nav-result-price { display: block; font-size: 12px; color: var(--text-muted); margin-top: 1px; }
 .nav-result-empty { padding: 12px 14px; font-size: 13px; color: var(--text-muted); }
 
 /* På telefon får feltet sin egen linje under sektionerne — 150 px ved siden af
