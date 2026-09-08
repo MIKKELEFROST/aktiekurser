@@ -984,6 +984,45 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     renderChartBlock();
   }
 
+  // ── Live kurs ──────────────────────────────────────────────────────────
+  // The whole page is drawn from one row, and half a dozen figures on it are
+  // derived from the price — the header, the stat rows, P/E, what ten thousand
+  // kroner would have become. Redrawing is what keeps them agreeing with each
+  // other; patching the headline number alone would leave the page arguing
+  // with itself. A tick is skipped while the pointer is inside the chart, so a
+  // refresh never pulls the crosshair out from under the reader.
+  let live = null, pointerInChart = false;
+
+  function beginLive(r) {
+    if (live) return;
+    document.addEventListener('pointerover', (e) => {
+      pointerInChart = !!(e.target.closest && e.target.closest('.chart-wrap'));
+    });
+
+    live = K.startLive({
+      interval: 60_000,
+      symbols: () => [r.symbol],
+      apply: (data) => {
+        const q = data.q[r.symbol];
+        if (!q || q.p == null || q.p === r.price || pointerInChart) return;
+        if (r.price_dkk != null && r.price) r.price_dkk *= q.p / r.price;
+        r.price = q.p;
+        if (q.c != null) r.change = q.c;
+        if (q.cp != null) r.percent_change = q.cp;
+        if (lastArgs) render.apply(null, lastArgs);
+      },
+      status: (mode, data) => {
+        const el = $('#status');
+        if (!el) return;
+        if (mode !== 'live') return;
+        const d = data.q[r.symbol] ? data.q[r.symbol].d : null;
+        el.textContent = 'Kilde: Yahoo Finance · kursen opdateres hvert minut, mens børsen handler'
+          + (d ? ' (' + d + ' min. forsinket fra ' + (r.exchange || 'børsen') + ')' : '')
+          + ' · nøgletal og historik hentes tre gange på hverdage';
+      },
+    });
+  }
+
   let lastArgs = null;
 
   function render(r, hist, fx, updatedAt, neighbours) {
@@ -1255,6 +1294,8 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       });
       $('#status').textContent = 'Kilde: Yahoo Finance · hentet ' + K.fmtAge(list.updatedAt)
         + ' · opdateres tre gange på hverdage';
+
+      beginLive(r);
     } catch (err) {
       $('#content').innerHTML = '<div class="card rounded-2xl p-6 text-sm" style="color: var(--delta-down)">'
         + 'Kunne ikke indlæse data: ' + K.esc(err.message) + '</div>';

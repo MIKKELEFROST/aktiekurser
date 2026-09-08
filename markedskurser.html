@@ -42,6 +42,16 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
   .pick-item input { margin-top: 2px; accent-color: var(--accent); flex: 0 0 auto; }
   .pick-item span { color: var(--text-secondary); }
   .pick-item input:checked + span { color: var(--text-primary); font-weight: 600; }
+
+  /* A row that just changed lights up for a moment, so a figure never moves
+     silently under the reader's eye. Colour repeats the sign already printed
+     in the row, so it carries nothing on its own. */
+  @keyframes kl-flash-up   { from { background: color-mix(in srgb, var(--delta-up) 16%, transparent); } to { background: transparent; } }
+  @keyframes kl-flash-down { from { background: color-mix(in srgb, var(--delta-down) 16%, transparent); } to { background: transparent; } }
+  tr.flash-up   td { animation: kl-flash-up   .9s ease-out; }
+  tr.flash-down td { animation: kl-flash-down .9s ease-out; }
+  @media (prefers-reduced-motion: reduce) { tr.flash-up td, tr.flash-down td { animation: none; } }
+  .live-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--delta-up); display: inline-block; }
 </style>
 </head>
 
@@ -554,6 +564,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     if (state.page > pages) state.page = pages;
     const start = (state.page - 1) * size;
     const slice = state.pageSize ? rows.slice(start, start + size) : rows;
+    state.visible = slice.map((r) => r.symbol);   // hvad live-opdateringen skal spørge om
 
     renderHead();
 
@@ -566,10 +577,83 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     $('#prev').disabled = state.page <= 1;
     $('#next').disabled = state.page >= pages;
 
-    $('#rows').innerHTML = slice.map((r) => '<tr class="border-t divider hover:bg-black/[.02]">'
+    $('#rows').innerHTML = slice.map((r) => '<tr class="border-t divider hover:bg-black/[.02]" data-sym="' + K.esc(r.symbol) + '">'
       + cols.map((c) => '<td class="py-3 px-3 ' + (c.right ? 'text-right' : '') + '">' + c.cell(r) + '</td>').join('')
       + '</tr>').join('')
       || '<tr><td colspan="' + Math.max(cols.length, 1) + '" class="py-8 text-center text-sm muted">Ingen aktier matcher filtrene.</td></tr>';
+  }
+
+  // ── Live kurser ────────────────────────────────────────────────────────
+  // Only the three figures a quote actually carries are replaced. The period
+  // returns and the market value stay as the build computed them: they are
+  // measured to a close, and rewriting them from a single tick would make each
+  // row disagree with the hint that explains it.
+  function applyLive(data) {
+    const moved = [];
+    for (const r of state.all) {
+      const q = data.q[r.symbol];
+      if (!q || q.p == null) continue;
+      const before = r.price;
+      if (before === q.p) continue;
+      // Keep whatever rate the build converted at rather than inventing a new one.
+      if (r.price_dkk != null && before) r.price_dkk *= q.p / before;
+      r.price = q.p;
+      if (q.c != null) r.change = q.c;
+      if (q.cp != null) r.percent_change = q.cp;
+      moved.push({ symbol: r.symbol, up: q.p > before });
+    }
+    if (!moved.length) return;
+
+    render();
+    const esc = (v) => (window.CSS && CSS.escape ? CSS.escape(v) : v.replace(/"/g, '\\"'));
+    for (const m of moved) {
+      const tr = $('#rows tr[data-sym="' + esc(m.symbol) + '"]');
+      if (tr) tr.classList.add(m.up ? 'flash-up' : 'flash-down');
+    }
+  }
+
+  // The chip says which of three states the page is in, and its explanation is
+  // built from the answer rather than written in advance: Oslo reports fifteen
+  // minutes where Copenhagen reports none, and only the response knows which
+  // exchanges are on screen.
+  function liveChip(mode, data) {
+    const chip = $('#freshness');
+    if (!chip) return;
+
+    if (mode === 'live') {
+      const delays = Object.keys(data.q).map((k) => data.q[k].d).filter((d) => d != null);
+      const worst = delays.length ? Math.max.apply(null, delays) : 0;
+      chip.innerHTML = '<span class="live-dot" aria-hidden="true"></span>Kurser hvert minut';
+      chip.setAttribute('data-hint-title', 'Løbende kurser');
+      chip.setAttribute('data-hint', 'Kurserne for de selskaber du kan se hentes hvert minut, så længe fanen er åben og børserne handler. '
+        + (worst > 0
+            ? 'Den langsomste børs på skærmen leverer ' + worst + ' minutters forsinkelse; resten leverer uforsinket.'
+            : 'Ingen af børserne på skærmen leverer forsinkede data lige nu.')
+        + ' Nøgletal, markedsværdi og perioderne bagud stammer fra den seneste hentning og opdateres tre gange på hverdage.');
+      return;
+    }
+
+    chip.textContent = mode === 'paused' && !K.tradingNow()
+      ? 'Børserne er lukkede'
+      : 'Opdateret ' + K.fmtAge(state.updatedAt);
+    chip.setAttribute('data-hint-title', 'Dataalder');
+    chip.setAttribute('data-hint', mode === 'paused' && !K.tradingNow()
+      ? 'Kurserne opdateres løbende, mens børserne handler — 09:00 til 22:00 dansk tid på hverdage. Udenfor viser siden den seneste hentning.'
+      : 'Hvornår kurserne sidst ændrede sig. De hentes tre gange på hverdage, så de er forsinkede — ikke live.');
+  }
+
+  // Started once, after the first list is on screen, so the first refresh is a
+  // minute away rather than a minute plus a page load. It asks only for the
+  // rows the reader can actually see — a screenful, not four thousand.
+  let live = null;
+  function beginLive() {
+    if (live) return;
+    live = K.startLive({
+      interval: 60_000,
+      symbols: () => state.visible || [],
+      apply: applyLive,
+      status: liveChip,
+    });
   }
 
   // ── Column picker ──────────────────────────────────────────────────────
@@ -684,6 +768,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       $('#sector').value = state.sector;
 
       render();
+      beginLive();
 
       const when = list.updatedAt
         ? new Date(list.updatedAt).toLocaleString('da-DK', { day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit' })

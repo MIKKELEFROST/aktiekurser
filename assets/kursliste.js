@@ -143,6 +143,83 @@
   const loadBenchmarks = () => loadJson('indeks.json');
   const loadFundamentals = (symbol) => loadJson('regnskab/' + encodeURIComponent(symbol) + '.json');
 
+  // ── Live kurser ───────────────────────────────────────────────────────
+  // The files above are the floor: every page renders from them and needs no
+  // network at all once loaded. Where /api/kurser exists — the deployment that
+  // has a server behind it — the rows on screen are refreshed from it on a
+  // timer. Anywhere else (a static host, the offline copy, a file:// page) the
+  // first call fails and the whole mechanism switches itself off for the rest
+  // of the visit rather than retrying into a wall.
+  let liveDead = false;
+
+  async function liveQuotes(symbols) {
+    if (liveDead || !symbols || !symbols.length) return null;
+    try {
+      const res = await fetch('/api/kurser?symbols=' + encodeURIComponent(symbols.join(',')),
+        { headers: { accept: 'application/json' } });
+      if (!res.ok) { liveDead = true; return null; }
+      const json = await res.json();
+      // A static host answers a missing path with its own 404 page, which can
+      // arrive as a 200 full of HTML; the flag is what proves this is ours.
+      if (!json || json.ok !== true) { liveDead = true; return null; }
+      return json;
+    } catch (err) {
+      liveDead = true;
+      return null;
+    }
+  }
+
+  // Copenhagen, Stockholm, Oslo and Helsinki open at 09:00 Danish time and the
+  // American exchanges close at 22:00. Polling runs across the union of those
+  // hours on weekdays, with five minutes of margin at each end. Danish time is
+  // asked for by name, so summer time needs no arithmetic here.
+  function tradingNow(at) {
+    const parts = new Intl.DateTimeFormat('en-GB', {
+      timeZone: 'Europe/Copenhagen', weekday: 'short',
+      hour: '2-digit', minute: '2-digit', hourCycle: 'h23',
+    }).formatToParts(at || new Date());
+    const get = (t) => (parts.find((p) => p.type === t) || {}).value;
+    const day = get('weekday');
+    if (day === 'Sat' || day === 'Sun') return false;
+    const mins = Number(get('hour')) * 60 + Number(get('minute'));
+    return mins >= 8 * 60 + 55 && mins <= 22 * 60 + 5;
+  }
+
+  // One timer per page. A tick is skipped while the tab is hidden or the
+  // markets are shut, so a page left open overnight costs nothing, and the
+  // timer wakes on the way back rather than waiting out the interval.
+  function startLive(opts) {
+    const every = opts.interval || 60000;
+    let timer = null, stopped = false;
+
+    const later = () => { if (!stopped) timer = setTimeout(tick, every); };
+
+    async function tick() {
+      if (stopped) return;
+      if (document.visibilityState === 'hidden' || !tradingNow()) {
+        if (opts.status) opts.status('paused');
+        return later();
+      }
+      const symbols = opts.symbols() || [];
+      if (!symbols.length) return later();
+
+      const data = await liveQuotes(symbols);
+      if (!data) { stopped = true; if (opts.status) opts.status('off'); return; }
+      opts.apply(data);
+      if (opts.status) opts.status('live', data);
+      later();
+    }
+
+    document.addEventListener('visibilitychange', () => {
+      if (stopped || document.visibilityState !== 'visible') return;
+      clearTimeout(timer);
+      tick();
+    });
+
+    tick();
+    return { stop() { stopped = true; clearTimeout(timer); } };
+  }
+
   // ── Derived figures ───────────────────────────────────────────────────
   // The price-to-earnings ratio is computed rather than stored, so it can never
   // disagree with the price printed next to it.
@@ -242,7 +319,7 @@
       hint: 'Temalister beregnet ud fra kursdataene — vindere, mest handlede og 52-ugers yderpunkter.' },
     { key: 'sammenlign',  href: 'sammenlign.html',    label: 'Sammenlign',
       hint: 'Stil op til seks selskaber op mod hinanden: nøgletal, udvikling og kurverne på samme akse.' },
-    { key: 'beregner',    href: 'beregner.html',      label: 'Beregner',
+    { key: 'beregner',    href: 'beregner.html',      label: 'Afkastberegner',
       hint: 'Fremskriv en opsparing: startindskud, månedligt beløb, antal år og forventet afkast.' },
   ];
 
@@ -336,6 +413,7 @@
     fmtPrice, fmtPct, fmtDelta, fmtInt, fmtBig, fmtDate, fmtAge, dirClass, esc,
     priceIn, currencyLabel, isConverted,
     decorate, loadList, loadHistory, loadKeyFigures, loadBenchmarks, loadFundamentals,
+    liveQuotes, tradingNow, startLive,
     peOf, moveBetween, nearestIndex, drawdownSeries,
     MARKETS, marketOf, flagOf, indexLabel,
     sparkline, rangeBar, slug, stockUrl,
