@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T09:38:25.881Z",
+  "updated_at": "2026-09-08T19:39:42.346Z",
   "source": "Yahoo Finance",
   "symbol": "FHN",
   "summary": "First Horizon Corporation operates as the bank holding company for First Horizon Bank that provides various financial services. It operates through Regional Banking, Specialty Banking, and Corporate segments. The company offers commercial banking, business banking, consumer banking, private client investment, wealth management, financial planning, trust and asset management services, asset-based lending, commercial real estate, equipment finance/leasing, energy finance, international banking, healthcare finance, transportation and logistics finance, treasury management solutions, and loan syndications services. It also provides fixed income securities sales, trading, underwriting, and strategies for institutional clients; loan sales; portfolio advisory services; derivative sales; mortgage warehouse lending; franchise finance; corporate and correspondent banking; and mortgage origination services. Further, it provides transaction processing services, credit card products, and sale of mutual funds. First Horizon Corporation was formerly known as First Horizon National Corporation and changed its name to First Horizon Corporation in April 2004. The company was founded in 1864 and is headquartered in Memphis, Tennessee.",
@@ -23,8 +23,54 @@
   "target_high": 31,
   "target_low": 25,
   "target_analysts": 19,
-  "statements": null,
-  "quarterly": [],
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 3221000000,
+      "net": 868000000,
+      "margin": 26.9
+    },
+    {
+      "year": "2023",
+      "revenue": 3483000000,
+      "net": 865000000,
+      "margin": 24.8
+    },
+    {
+      "year": "2024",
+      "revenue": 3297000000,
+      "net": 738000000,
+      "margin": 22.4
+    },
+    {
+      "year": "2025",
+      "revenue": 3434000000,
+      "net": 956000000,
+      "margin": 27.8
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 865000000,
+      "earnings": 262000000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 863000000,
+      "earnings": 262000000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 837000000,
+      "earnings": 262000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 861000000,
+      "earnings": 270000000
+    }
+  ],
   "growth": {
     "q0": 0.026300002,
     "q1": 0.0382,
@@ -32,6 +78,13 @@
     "y1": 0.0779
   },
   "ratings": [
+    {
+      "date": "2026-09-08",
+      "firm": "Morgan Stanley",
+      "from": null,
+      "to": "Equal-Weight",
+      "action": "init"
+    },
     {
       "date": "2026-08-10",
       "firm": "Wells Fargo",
@@ -93,13 +146,6 @@
       "firm": "DA Davidson",
       "from": "Neutral",
       "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-04-16",
-      "firm": "Keefe, Bruyette & Woods",
-      "from": "Market Perform",
-      "to": "Market Perform",
       "action": "main"
     }
   ],
