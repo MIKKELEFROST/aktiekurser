@@ -767,10 +767,15 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
       // Filterlinjen viser fire børser. Resten af Norden ligger stadig i
       // tabellen og kan findes med søgefeltet — de har bare ikke deres egen
       // knap, fordi linjen ellers bliver længere end den er værd.
-      const CHIP_MARKETS = ['DK', 'SE', 'NO', 'US'];
+      // Rækkefølgen her er linjens, ikke datafilens — den kommer sorteret efter
+      // børs, og USA ligger sidst i den.
+      const CHIP_MARKETS = ['US', 'DK', 'SE', 'NO'];
       const chips = $('#marketChips');
       if (chips && !chips.dataset.built) {
-        chips.innerHTML = (list.markets || []).filter((m) => CHIP_MARKETS.includes(m.code)).map((m) => {
+        chips.innerHTML = (list.markets || [])
+          .filter((m) => CHIP_MARKETS.includes(m.code))
+          .sort((a, b) => CHIP_MARKETS.indexOf(a.code) - CHIP_MARKETS.indexOf(b.code))
+          .map((m) => {
           const info = K.marketOf(m.code);
           return '<button class="chip rounded-full px-3 py-1 text-xs font-semibold" data-market="' + m.code
             + '" aria-pressed="false" data-hint-title="' + K.esc(m.label) + '" data-hint="Viser kun selskaber '
