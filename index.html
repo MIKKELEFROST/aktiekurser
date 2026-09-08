@@ -27,8 +27,11 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
   .entry:hover { border-color: var(--accent); }
   .card-satin.entry:hover, .card-lilla.entry:hover,
   .card-blaa.entry:hover, .card-groen.entry:hover { filter: brightness(0.97); border-color: transparent; }
-  .card-satin .entry-label, .card-lilla .entry-label,
-  .card-blaa .entry-label, .card-groen .entry-label { color: var(--coop-bordeaux); }
+  /* De tre pastelflader ligger fast i begge temaer, så bordeaux ovenpå passer
+     altid. Satin-kortet følger derimod temaet — låst bordeaux på den mørke
+     flade giver 1,3 : 1 — så dens etiket bliver ved den almindelige tekst. */
+  .card-lilla .entry-label,
+  .card-blaa .entry-label, .card-groen .entry-label { color: var(--fill-pastel-ink); }
   .card-lilla .entry-text, .card-blaa .entry-text, .card-groen .entry-text { color: rgba(85, 37, 47, .8); }
   .card-lilla .entry-arrow, .card-blaa .entry-arrow, .card-groen .entry-arrow { color: var(--coop-bordeaux); }
   .entry-top { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
@@ -65,57 +68,52 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
     .hero-strip span { display: block; }
   }
 
-  /* ── App-blokken ──────────────────────────────────────────────────────
-     Samme opbygning som på coopbank.dk: en kort rød streg over en centreret
-     overskrift, og derunder ét roligt felt med koden til venstre, teksten i
-     midten og skærmen der løber ud i højre kant. Koden vises ikke på telefon
-     — man kan ikke scanne med den skærm man holder i hånden — så der står
-     knappen alene og fører samme sted hen. */
-  .app-rule {
-    width: 40px; height: 2px; margin: 0 auto 18px;
-    background: var(--brand); border-radius: 2px;
+  /* ── Hero-rækken ──────────────────────────────────────────────────────
+     Coop Banks egen forside deler heroen i to: budskabet til venstre, og
+     til højre ét kort med én konkret ting man kan gøre nu. Her er det appen.
+     Kolonnerne strækkes lige høje, så strimlen under heroen og kortets
+     underkant flugter. */
+  .hero-row { display: grid; gap: 16px; align-items: stretch; margin-bottom: 36px; }
+  .hero-col { display: flex; flex-direction: column; }
+  .hero-col .hero-box { flex: 1 1 auto; }
+  @media (min-width: 1040px) {
+    .hero-row { grid-template-columns: minmax(0, 1.3fr) minmax(360px, 1fr); }
   }
-  /* Feltet er smallere end resten af siden og står midt i den, som blokken
-     gør på coopbank.dk. I fuld bredde ville koden og teksten klumpe sig i
-     venstre tredjedel med et tomt felt imellem sig og skærmen. */
-  .app-panel {
+
+  /* ── App-kortet ───────────────────────────────────────────────────────
+     Skærmen ligger i nederste højre hjørne og løber ud i kanten, som den
+     gør på coopbank.dk. Overskriften må gerne gå hen over den fulde bredde
+     — telefonen står lavt — men koden og knappen holder sig fri af den. */
+  .app-card {
     position: relative; overflow: hidden;
-    max-width: 1000px; margin-inline: auto;
     background: var(--surface-2); border: 1px solid var(--hairline);
-    border-radius: var(--radius-lg);
-    display: grid; grid-template-columns: auto 1fr; align-items: center;
-    gap: 28px; padding: 28px 32px;
+    border-radius: var(--radius);
+    padding: 24px 26px; display: flex; flex-direction: column;
   }
-  /* Skærmen ligger som et lag i højre kant og skubber teksten fri af sig med
-     padding, så billedet aldrig lægger sig oven i en linje. */
-  /* <picture> er selv et gitterbarn, så den skal ud af flowet — ikke kun
-     billedet indeni, ellers står der en tom række under panelet. */
-  .app-pic {
-    display: none; position: absolute; right: 0; bottom: 0;
-    width: 236px; pointer-events: none;
-  }
-  .app-shot { display: block; width: 100%; height: auto; }
-  /* Skærmen kommer først frem, når der er plads til at den ikke rører teksten.
-     Reglen skal stå efter display:none — samme vægt, og den sidste vinder.
-     Feltet er en anelse højere end billedet, så det kun er telefonens øverste
-     kant der løber ud — ikke en linje midt i skærmbilledet. */
-  @media (min-width: 900px) {
-    .app-panel { padding-right: 268px; min-height: 300px; }
-    .app-pic { display: block; }
+  .app-get {
+    margin-top: auto; padding-top: 22px;
+    display: flex; align-items: flex-end; gap: 18px; flex-wrap: wrap;
   }
   .app-qr {
     background: #fff; border: 1px solid var(--coop-neutral-100);
-    border-radius: var(--radius-sm); padding: 12px;
-    display: flex; flex-direction: column; align-items: center; gap: 8px;
-    width: 168px; flex: none;
+    border-radius: var(--radius-sm); padding: 10px;
+    display: flex; flex-direction: column; align-items: center; gap: 7px;
+    width: 152px; flex: none;
   }
-  .app-qr img { width: 140px; height: 140px; display: block; }
+  .app-qr img { width: 130px; height: 130px; display: block; }
   .app-qr span {
-    font-size: 11px; font-weight: 600; line-height: 1.3; text-align: center;
-    color: var(--coop-neutral-700);   /* felt er altid hvidt, så tekst er altid mørk */
+    font-size: 10.5px; font-weight: 600; line-height: 1.3; text-align: center;
+    color: var(--coop-neutral-700);   /* flisen er altid hvid, så teksten er altid mørk */
   }
-  @media (max-width: 719px) {
-    .app-panel { grid-template-columns: 1fr; padding: 22px; gap: 18px; }
+  .app-pic { display: none; position: absolute; right: 0; bottom: 0; width: 190px; pointer-events: none; }
+  .app-shot { display: block; width: 100%; height: auto; }
+  /* Telefonen og koden kommer først frem, når der er plads til dem ved siden
+     af hinanden. Reglerne står efter display:none — samme vægt, sidste vinder. */
+  @media (min-width: 560px) {
+    .app-pic { display: block; }
+    .app-get { padding-right: 196px; }
+  }
+  @media (max-width: 559px) {
     .app-qr { display: none; }
   }
 
@@ -138,7 +136,8 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
   <!-- ─── Hero ─────────────────────────────────────────────────────────
        Budskabet først, beviset i strimlen under. Kommunikationen vendt om,
        som strategien beskriver den: nærhed frem, tallene som belæg. -->
-  <div class="mb-9" style="max-width:74ch">
+  <div class="hero-row">
+   <div class="hero-col">
     <div class="card hero-box p-6 md:p-8">
       <h1 class="text-3xl md:text-[2.6rem] font-extrabold tracking-tight" style="line-height:1.12;text-wrap:balance">
         At investere behøver ikke<br>føles uoverskueligt
@@ -158,6 +157,35 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
       <span class="sep" aria-hidden="true">·</span>
       <span>Kurserne opdateres hvert minut, mens børserne handler</span>
     </div>
+   </div>
+
+   <!-- Kortet ved siden af: én konkret ting man kan gøre nu, som på
+        coopbank.dk's egen forside. Koden vises kun der, hvor den kan bruges
+        — på en telefon står knappen alene og fører samme sted hen. -->
+   <aside class="app-card">
+     <h2 class="text-lg font-extrabold tracking-tight" style="text-wrap:balance">
+       Download Coop Bank Investering
+     </h2>
+     <p class="muted text-sm mt-2" style="max-width:34ch">
+       En enkel investeringsplatform, der hjælper dig godt i gang. Hold styr på
+       porteføljen — også når du ikke sidder ved skærmen.
+     </p>
+
+     <div class="app-get">
+       <div class="app-qr">
+         <img src="assets/app-qr.svg" width="130" height="130" alt="QR-kode, der fører til Coop Bank Investering i App Store og Google Play">
+         <span>Scan koden og hent appen</span>
+       </div>
+       <a href="https://onelink.to/9fpq97" class="pill btn-primary" rel="noopener">Download nu</a>
+     </div>
+
+     <picture class="app-pic">
+       <source srcset="assets/app-skaerm.avif" type="image/avif">
+       <source srcset="assets/app-skaerm.webp" type="image/webp">
+       <img src="assets/app-skaerm.png" class="app-shot" width="428" height="566"
+            alt="Coop Bank Investering på en telefon, med oversigten over porteføljen" loading="lazy">
+     </picture>
+   </aside>
   </div>
 
   <!-- ─── Markedet ──────────────────────────────────────────────────────── -->
@@ -201,44 +229,6 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
         <span class="entry-text">Hvad bliver det til, hvis du lægger lidt til side hver måned? Regn på det, før du beslutter noget.</span>
       </a>
 
-    </div>
-  </section>
-
-  <!-- ─── Appen ─────────────────────────────────────────────────────────
-       Blokken fra coopbank.dk, med sitets egen kode, skærm og downloadlink.
-       Den står efter værktøjerne: først kan man se sig omkring her, så kan
-       man tage porteføljen med sig. -->
-  <section class="mb-8">
-    <div class="app-rule" aria-hidden="true"></div>
-    <h2 class="text-center text-xl md:text-2xl font-extrabold tracking-tight" style="text-wrap:balance">
-      Download Coop Bank Investering
-    </h2>
-    <p class="text-center muted text-sm mt-2 mx-auto" style="max-width:52ch">
-      En enkel investeringsplatform, der hjælper dig godt i gang.
-    </p>
-
-    <div class="app-panel mt-6">
-      <div class="app-qr">
-        <img src="assets/app-qr.svg" width="140" height="140" alt="QR-kode, der fører til Coop Bank Investering i App Store og Google Play">
-        <span>Scan koden og hent appen</span>
-      </div>
-
-      <div>
-        <h3 class="text-lg font-extrabold tracking-tight">Investér i din fremtid</h3>
-        <p class="muted text-sm mt-2" style="max-width:44ch">
-          Hent Coop Bank Investering og hold styr på din portefølje — også når du ikke sidder
-          ved skærmen.
-        </p>
-        <a href="https://onelink.to/9fpq97" class="pill btn-primary mt-5"
-           rel="noopener">Download nu</a>
-      </div>
-
-      <picture class="app-pic">
-        <source srcset="assets/app-skaerm.avif" type="image/avif">
-        <source srcset="assets/app-skaerm.webp" type="image/webp">
-        <img src="assets/app-skaerm.png" class="app-shot" width="428" height="566"
-             alt="Coop Bank Investering på en telefon, med oversigten over porteføljen" loading="lazy">
-      </picture>
     </div>
   </section>
 

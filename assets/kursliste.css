@@ -301,13 +301,11 @@ th .hint { cursor: pointer; }           /* header is still a sort control */
   display: inline-flex; align-items: center; gap: 10px;
   flex: 0 0 auto;
 }
-.nav-logo { display: block; width: 122px; height: auto; }
-.nav-brand-sub {
-  font-weight: 500; font-size: 15px; letter-spacing: -0.01em;
-  color: var(--text-secondary);
-  padding-left: 10px; border-left: 1px solid var(--hairline);
-  white-space: nowrap;
-}
+/* Logoet er sub-brand-lockuppet: COOP BANK med spiren, og Investering på
+   linjen under. Ordet står i mærket selv, så headeren har ingen løs tekst
+   ved siden af — og højden styrer, fordi mærket er to linjer højt. */
+.nav-logo { display: block; height: 40px; width: auto; }
+@media (max-width: 719px) { .nav-logo { height: 34px; } }
 
 .nav-sections {
   display: flex; align-items: center; gap: 24px;
