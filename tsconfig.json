@@ -1,0 +1,25 @@
+{
+  // Sitet har intet byggetrin: browseren henter JavaScript-filerne som de er.
+  // Det her er derfor ikke en compiler, men en typekontrol. Beregningsmodellen
+  // i assets/lagerskat.js er annoteret med JSDoc, og med checkJs læser tsc dem
+  // som var det TypeScript — samme kontrol, ingen oversættelse.
+  //
+  //   npx -p typescript tsc --noEmit
+  //
+  "compilerOptions": {
+    "target": "ES2020",
+    "lib": ["ES2020", "DOM"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "allowJs": true,
+    "checkJs": true,
+    "noEmit": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "noUncheckedIndexedAccess": false,
+    "skipLibCheck": true
+  },
+  // Kun modellen. Resten af sitet er ældre og uannoteret, og at hive det med
+  // ind ville drukne de fejl der faktisk er værd at rette.
+  "include": ["assets/lagerskat.js"]
+}
