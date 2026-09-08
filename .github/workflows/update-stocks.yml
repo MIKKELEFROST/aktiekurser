@@ -90,4 +90,14 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/
           git commit -m "Opdatér aktiekurser ($(date -u '+%Y-%m-%d %H:%M UTC'))"
+
+          # En kørsel tager minutter, og et push til main imens gør pushet her
+          # til et non-fast-forward. Kørslen har kun rørt data/, så en rebase
+          # oven på det nye main er sikker — og billigere end at smide ti
+          # minutters hentning væk.
+          for attempt in 1 2 3; do
+            if git push; then exit 0; fi
+            echo "Push afvist — henter main og prøver igen ($attempt/3)"
+            git pull --rebase origin main || exit 1
+          done
           git push
