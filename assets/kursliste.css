@@ -181,6 +181,24 @@ th[aria-sort="ascending"]  .caret::after { content: "▲"; }
 th[aria-sort="descending"] .caret::after { content: "▼"; }
 th[aria-sort="none"]       .caret::after { content: "⌄"; opacity: .45; }
 
+/* Sidefaner: Oversigt, Om virksomheden, Information. Understregningen bærer
+   valget, ikke en fyldt flade — de skal læses som sidens indholdsfortegnelse,
+   ikke som knapper der gør noget. */
+.page-tabs {
+  display: flex; gap: 24px; flex-wrap: wrap;
+  border-bottom: 1px solid var(--gridline); margin-bottom: 20px;
+}
+.page-tab {
+  padding: 10px 0; font-size: 15px; font-weight: 500;
+  color: var(--text-secondary); background: none; border: 0;
+  border-bottom: 2px solid transparent; margin-bottom: -1px; cursor: pointer;
+}
+.page-tab:hover { color: var(--text-primary); }
+.page-tab[aria-selected="true"] {
+  color: var(--text-primary); font-weight: 600; border-bottom-color: var(--brand);
+}
+.page-tab:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
 .chip { border: 1px solid var(--hairline); color: var(--text-secondary); }
 .chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
 
@@ -313,6 +331,45 @@ th .hint { cursor: pointer; }           /* header is still a sort control */
   scrollbar-width: none;
 }
 .nav-sections::-webkit-scrollbar { display: none; }
+
+/* ── Søgning i headeren ────────────────────────────────────────────────
+   Feltet ligger til højre for sektionerne og skubber tilbage-linket ud i
+   kanten. Listen hænger under feltet og lægger sig over siden — den skal ikke
+   flytte indholdet, hver gang nogen taster. */
+.nav-search { position: relative; flex: 0 1 260px; min-width: 150px; margin-left: auto; }
+.nav-search input {
+  width: 100%; box-sizing: border-box;
+  border: 1px solid var(--hairline); border-radius: var(--radius-pill);
+  padding: 7px 14px; font-size: 14px; font-family: inherit;
+  background: var(--surface-1); color: var(--text-primary);
+}
+.nav-search input::placeholder { color: var(--text-muted); }
+.nav-search input:focus {
+  outline: none; border-color: var(--accent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 18%, transparent);
+}
+.nav-results {
+  position: absolute; top: calc(100% + 6px); left: 0; right: 0; z-index: 60;
+  background: var(--surface-1); border: 1px solid var(--hairline);
+  border-radius: var(--radius); overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .12);
+  max-height: 60vh; overflow-y: auto;
+}
+.nav-result {
+  display: block; padding: 9px 14px; text-decoration: none; color: inherit;
+  border-top: 1px solid var(--gridline);
+}
+.nav-result:first-child { border-top: 0; }
+.nav-result.is-on, .nav-result:hover { background: var(--surface-2); }
+.nav-result-name { display: block; font-size: 14px; font-weight: 600; line-height: 1.25; }
+.nav-result-meta { display: block; font-size: 12px; color: var(--text-muted); margin-top: 1px; }
+.nav-result-empty { padding: 12px 14px; font-size: 13px; color: var(--text-muted); }
+
+/* På telefon får feltet sin egen linje under sektionerne — 150 px ved siden af
+   fem faner ville hverken være et søgefelt eller en navigation. */
+@media (max-width: 860px) {
+  .nav-search { flex: 1 0 100%; margin-left: 0; order: 3; }
+}
 
 .nav-back {
   margin-left: auto;

@@ -389,8 +389,136 @@
         + '<a href="index.html" class="nav-brand" aria-label="Coop Bank Investering">'
           + LOGO + '</a>'
         + '<nav class="nav-sections" aria-label="Sektioner">' + tabs + '</nav>'
+        + '<div class="nav-search">'
+          + '<input id="navSearch" type="search" autocomplete="off" spellcheck="false"'
+            + ' placeholder="Søg efter aktie eller fond" aria-label="Søg efter aktie eller fond"'
+            + ' role="combobox" aria-expanded="false" aria-controls="navResults" aria-autocomplete="list">'
+          + '<div id="navResults" class="nav-results" role="listbox" hidden></div>'
+        + '</div>'
         + back
       + '</div></div>';
+
+    wireSearch();
+  }
+
+  // ── Søgning i headeren ─────────────────────────────────────────────────
+  // Indekset er 6.226 papirer i én fil på 80 KB pakket. Den hentes først når
+  // nogen rører feltet — headeren ligger på alle sider, og en side skal ikke
+  // betale for en søgning der aldrig bliver brugt.
+  let searchIndex = null, searchLoading = null;
+
+  function loadSearchIndex() {
+    if (searchIndex) return Promise.resolve(searchIndex);
+    if (searchLoading) return searchLoading;
+    searchLoading = fetch(dataUrl('soegning.json'), { headers: { accept: 'application/json' } })
+      .then((r) => (r.ok ? r.json() : null))
+      .then((j) => {
+        searchIndex = (j && Array.isArray(j.items)) ? j.items : [];
+        return searchIndex;
+      })
+      .catch(() => (searchIndex = []));
+    return searchLoading;
+  }
+
+  // Ø og å skal kunne skrives som o og a, og et symbol med punktum skal kunne
+  // findes uden. Begge sider foldes ned til det samme.
+  const fold = (t) => String(t).toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+    .replace(/ø/g, 'o').replace(/æ/g, 'ae').replace(/å/g, 'a');
+
+  // Rækkefølgen er hele forskellen mellem en brugbar og en ubrugelig søgning.
+  // Et symbol der rammer præcist står øverst, derefter navne der begynder med
+  // det man skrev, og til sidst navne hvor det står inde i. Inden for hvert
+  // trin afgør størrelsen: søger man "novo", skal Novo Nordisk stå før et
+  // lille selskab med novo i navnet.
+  function scoreRow(row, q) {
+    const sym = fold(row[0]), name = fold(row[1]);
+    if (sym === q) return 0;
+    if (sym.replace(/[.\-]/g, '') === q.replace(/[.\-]/g, '')) return 1;
+    if (sym.startsWith(q)) return 2;
+    if (name.startsWith(q)) return 3;
+    if (name.includes(' ' + q)) return 4;
+    if (name.includes(q)) return 5;
+    return -1;
+  }
+
+  function searchRows(q, limit) {
+    const needle = fold(q).trim();
+    if (needle.length < 1 || !searchIndex) return [];
+    const hits = [];
+    for (const row of searchIndex) {
+      const s = scoreRow(row, needle);
+      if (s < 0) continue;
+      hits.push({ row, s });
+      // Et enkelt bogstav rammer tusindvis; der er ingen grund til at score
+      // dem alle, når kun ti bliver vist.
+      if (hits.length > 4000) break;
+    }
+    hits.sort((a, b) => (a.s - b.s) || ((a.row[4] || 9e9) - (b.row[4] || 9e9)));
+    return hits.slice(0, limit || 10).map((h) => h.row);
+  }
+
+  function wireSearch() {
+    const input = document.getElementById('navSearch');
+    const box = document.getElementById('navResults');
+    if (!input || !box) return;
+
+    let rows = [], cursor = -1;
+
+    const urlFor = (row) => (row[3] === 'e' ? fundUrl(row[0]) : stockUrl(row[0]));
+
+    function close() {
+      box.hidden = true; box.innerHTML = ''; rows = []; cursor = -1;
+      input.setAttribute('aria-expanded', 'false');
+    }
+
+    function paint() {
+      if (!rows.length) {
+        box.innerHTML = '<p class="nav-result-empty">Ingen aktier eller fonde matcher.</p>';
+      } else {
+        box.innerHTML = rows.map((row, i) =>
+          '<a class="nav-result' + (i === cursor ? ' is-on' : '') + '" role="option"'
+          + ' aria-selected="' + (i === cursor) + '" href="' + urlFor(row) + '">'
+          + '<span class="nav-result-name">' + esc(row[1]) + '</span>'
+          + '<span class="nav-result-meta">' + flagOf(row[2]) + ' ' + esc(row[0])
+          + ' · ' + (row[3] === 'e' ? 'fond' : 'aktie') + '</span></a>').join('');
+      }
+      box.hidden = false;
+      input.setAttribute('aria-expanded', 'true');
+    }
+
+    async function run() {
+      const q = input.value.trim();
+      if (!q) return close();
+      await loadSearchIndex();
+      if (input.value.trim() !== q) return;      // brugeren skrev videre imens
+      rows = searchRows(q, 10);
+      cursor = rows.length ? 0 : -1;
+      paint();
+    }
+
+    input.addEventListener('focus', loadSearchIndex);
+    input.addEventListener('input', run);
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') { close(); input.blur(); return; }
+      if (!rows.length) return;
+      if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+        e.preventDefault();
+        cursor = (cursor + (e.key === 'ArrowDown' ? 1 : rows.length - 1)) % rows.length;
+        paint();
+      } else if (e.key === 'Enter' && cursor >= 0) {
+        e.preventDefault();
+        location.href = urlFor(rows[cursor]);
+      }
+    });
+    // mousedown, ikke click: et blur ville lukke listen, før klikket landede.
+    box.addEventListener('mousedown', (e) => {
+      const a = e.target.closest('a.nav-result');
+      if (a) { e.preventDefault(); location.href = a.getAttribute('href'); }
+    });
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.nav-search')) close();
+    });
   }
 
   // ── Hint tooltips ─────────────────────────────────────────────────────

@@ -642,9 +642,14 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
   }
 
   // Klokkeslæt, ikke "for 7 timer siden". Det er hele pointen med (i)-boksen.
+  // Alle klokkeslæt på siden er dansk tid, uanset hvilken børs papiret handler
+  // på: en amerikansk aktie åbner 15.30 hos læseren, ikke 09.30. Tidszonen
+  // sættes eksplicit i stedet for at læne sig på browserens egen — en dansker
+  // på ferie i Spanien skal stadig se børsdagen som den ligger herhjemme.
+  const DK_TZ = 'Europe/Copenhagen';
   const stamp = (t) => (t == null ? 'ukendt' : new Date(t).toLocaleString('da-DK',
-    { day: 'numeric', month: 'short', year: 'numeric',
-      hour: '2-digit', minute: '2-digit', second: '2-digit' }));
+    { timeZone: DK_TZ, day: 'numeric', month: 'short', year: 'numeric',
+      hour: '2-digit', minute: '2-digit', second: '2-digit' }) + ' dansk tid');
 
   // To ting på skærmen har hver sin alder: kursen og "i dag %" hentes hvert
   // minut mens børserne handler, mens markedsværdi, 30 dage og 6 mdr. stammer

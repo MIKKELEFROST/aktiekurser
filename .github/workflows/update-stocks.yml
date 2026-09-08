@@ -80,6 +80,13 @@ jobs:
             node scripts/fetch-etf.mjs --quotes-only
           fi
 
+      # Headerens søgning læser én lille fil frem for de to store lister.
+      # Den bygges af dem, så den skal laves efter begge — også på de korte
+      # kørsler, hvor kun kurserne er hentet.
+      - name: Byg søgeindeks
+        continue-on-error: true
+        run: node scripts/build-soegeindeks.mjs
+
       # Arkivet er frosset ved sidste årsskifte, så det her er en no-op for alt
       # der allerede er hentet. Det henter kun nye noteringer — og én gang om
       # året, når årstallet skifter, hele bunken igen.

@@ -295,6 +295,40 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
     });
   }
 
+  // Kursen og nøgletallene har hver sin alder. "For 5 timer siden" siger ikke
+  // hvornår — boksen ved kursen sætter klokkeslæt på begge.
+  // Alle klokkeslæt på siden er dansk tid, uanset hvilken børs papiret handler
+  // på: en amerikansk aktie åbner 15.30 hos læseren, ikke 09.30. Tidszonen
+  // sættes eksplicit i stedet for at læne sig på browserens egen — en dansker
+  // på ferie i Spanien skal stadig se børsdagen som den ligger herhjemme.
+  const DK_TZ = 'Europe/Copenhagen';
+  const stamp = (t) => (t == null ? 'ukendt' : new Date(t).toLocaleString('da-DK',
+    { timeZone: DK_TZ, day: 'numeric', month: 'short', year: 'numeric',
+      hour: '2-digit', minute: '2-digit', second: '2-digit' }) + ' dansk tid');
+
+  let liveAt = null;
+
+  function updatePriceInfo() {
+    const el = $('#priceInfo');
+    const r = state.row;
+    if (!el || !r) return;
+    const lines = [];
+    if (liveAt) {
+      lines.push('Kursen blev hentet ' + stamp(liveAt) + ' — den opdateres hvert minut, '
+        + 'så længe fanen er åben og børsen handler.'
+        + (r.delayed_by ? ' ' + K.esc(r.exchange || '') + ' leverer ' + r.delayed_by
+            + ' minutters forsinkelse.' : ''));
+    } else if (!K.tradingNow()) {
+      lines.push('Børsen er lukket. Kursen står som ved seneste handel og opdateres igen, '
+        + 'når der åbnes — 09:00 til 22:00 dansk tid på hverdage.');
+    } else {
+      lines.push('Kurserne hentes hvert minut; første hentning er på vej.');
+    }
+    lines.push('Formue, omkostning og perioderne bagud stammer fra hentningen '
+      + stamp(UPDATED) + ' og er derfor ældre end kursen.');
+    el.setAttribute('data-hint', lines.join(' '));
+  }
+
   // ── Byggeklodser ───────────────────────────────────────────────────────
   const kv = (k, v, hint) => '<div class="kv"><span class="kv-k'
     + (hint ? ' hint" data-hint="' + K.esc(hint) + '" data-hint-title="' + K.esc(k) + '"' : '"')
@@ -317,6 +351,11 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
       +   '<span class="text-sm muted">' + K.esc(r.currency) + '</span>'
       +   '<span class="text-base font-bold num ' + K.dirClass(r.percent_change) + '" id="pxmove">'
       +     K.fmtPct(r.percent_change) + '</span>'
+      +   '<button type="button" id="priceInfo" class="hint" aria-label="Hvornår er kursen opdateret?"'
+      +     ' data-hint-title="Hvornår er kursen opdateret?" data-hint="Indlæser …"'
+      +     ' style="border:1px solid var(--hairline);border-radius:999px;width:20px;height:20px;'
+      +     'display:inline-flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;'
+      +     'color:var(--text-secondary);line-height:1;flex:none">i</button>'
       +   (r.currency !== 'DKK' && r.price_dkk != null
             ? '<span class="text-sm faint num">≈ ' + K.fmtPrice(r.price_dkk) + ' DKK</span>' : '')
       + '</div></div>';
@@ -458,6 +497,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
       + 'Det her er ikke rådgivning — det du sætter til side kan både vokse og blive mindre.</p>';
     document.title = r.name + ' – ' + r.symbol + ' | Coop Bank Investering';
     wireChart();
+    updatePriceInfo();
     K.initHints();
 
     document.querySelectorAll('#ranges [data-range]').forEach((b) => {
@@ -503,6 +543,9 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
           if (q.cp != null) row.percent_change = q.cp;
           // Kun de to tal i toppen skiftes ud. At tegne hele siden om ville
           // rive grafen væk under markøren.
+          liveAt = data.t ? new Date(data.t).getTime() : Date.now();
+          if (q.d != null) row.delayed_by = q.d;
+          updatePriceInfo();
           const px = $('#px'), mv = $('#pxmove');
           if (px) px.textContent = K.fmtPrice(row.price);
           if (mv) { mv.textContent = K.fmtPct(row.percent_change);

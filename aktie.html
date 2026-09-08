@@ -220,7 +220,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
   const advOn = () => { try { return localStorage.getItem(ADV_STORE) === '1'; } catch (e) { return false; } };
   const setAdv = (on) => { try { localStorage.setItem(ADV_STORE, on ? '1' : '0'); } catch (e) { /* privat vindue */ } };
 
-  const state = { range: '3m', from: '', to: '', compare: [], adv: advOn() };
+  const state = { range: '3m', from: '', to: '', compare: [], adv: advOn(), tab: 'oversigt' };
 
   // Der ligger to serier i filen: to år med daglige kurser, og en månedlig
   // helt tilbage til noteringen — for halvdelen af selskaberne før 2006. Den
@@ -1634,8 +1634,52 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
       + '</div></div>';
   }
 
+  // Kursen og nøgletallene har hver sin alder, og "for 4 dage siden" siger
+  // ikke hvornår. Boksen ved kursen sætter klokkeslæt på begge: hvornår
+  // børsen registrerede handlen, hvornår vi hentede den, og hvornår resten af
+  // tallene på siden stammer fra.
+  // Alle klokkeslæt på siden er dansk tid, uanset hvilken børs papiret handler
+  // på: en amerikansk aktie åbner 15.30 hos læseren, ikke 09.30. Tidszonen
+  // sættes eksplicit i stedet for at læne sig på browserens egen — en dansker
+  // på ferie i Spanien skal stadig se børsdagen som den ligger herhjemme.
+  const DK_TZ = 'Europe/Copenhagen';
+  const stamp = (t) => (t == null ? 'ukendt' : new Date(t).toLocaleString('da-DK',
+    { timeZone: DK_TZ, day: 'numeric', month: 'short', year: 'numeric',
+      hour: '2-digit', minute: '2-digit', second: '2-digit' }) + ' dansk tid');
+
+  function updatePriceInfo() {
+    const el = document.getElementById('priceInfo');
+    if (!el || !row) return;
+    const lines = [];
+
+    const qt = row.quote_time
+      ? (typeof row.quote_time === 'number'
+          ? (row.quote_time > 1e12 ? row.quote_time : row.quote_time * 1000)
+          : Date.parse(row.quote_time))
+      : null;
+    if (qt) lines.push('Kursen blev registreret på børsen ' + stamp(qt) + '.');
+
+    if (liveAt) {
+      lines.push('Vi hentede den ' + stamp(liveAt) + ' — den opdateres hvert minut, '
+        + 'så længe fanen er åben og børsen handler.'
+        + (row.delayed_by ? ' ' + K.esc(r0(row).exchange) + ' leverer '
+            + row.delayed_by + ' minutters forsinkelse.' : ''));
+    } else if (!K.tradingNow()) {
+      lines.push('Børsen er lukket. Kursen står som ved seneste handel og opdateres igen, '
+        + 'når der åbnes — 09:00 til 22:00 dansk tid på hverdage.');
+    } else {
+      lines.push('Kurserne hentes hvert minut; første hentning er på vej.');
+    }
+
+    lines.push('Nøgletal, markedsværdi og perioderne bagud stammer fra hentningen '
+      + stamp(updatedAtIso) + ' og er derfor ældre end kursen.');
+
+    el.setAttribute('data-hint', lines.join(' '));
+  }
+  const r0 = (x) => ({ exchange: x.exchange || K.marketOf(x.market).exchange });
+
   // ── Render ─────────────────────────────────────────────────────────────
-  let full = null, row = null, fxRate = null;
+  let full = null, row = null, fxRate = null, liveAt = null, updatedAtIso = null;
 
   // Hele kurshistorikken ligger i data/arkiv, én fil pr. papir, og den hentes
   // først når nogen beder om et vindue der rækker længere end de to år i den
@@ -1664,14 +1708,15 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
     if (intraday && state.range === '1d') renderChartBlock();
   }
 
-  // Børsens egen klokke, ikke browserens: en amerikansk aktie handler 15.30
-  // dansk tid, men grafen skal sige 09.30, som børsen gør.
   function intradaySeries() {
     if (!intraday) return null;
-    const off = (intraday.gmtoffset || 0) * 1000;
-    const clock = (secs) => new Date(secs * 1000 + off).toISOString().slice(11, 16).replace(':', '.');
-    return { dates: intraday.t.map(clock), closes: intraday.c,
-             prev: intraday.prev, day: new Date((intraday.t[0]) * 1000 + off).toISOString().slice(0, 10) };
+    const clock = (secs) => new Date(secs * 1000)
+      .toLocaleTimeString('da-DK', { timeZone: DK_TZ, hour: '2-digit', minute: '2-digit' });
+    // Handelsdagens dato tages også i dansk tid, så en amerikansk session der
+    // slutter 22.00 herhjemme ikke bliver dateret til dagen efter.
+    const day = new Date(intraday.t[0] * 1000)
+      .toLocaleDateString('sv-SE', { timeZone: DK_TZ });      // sv-SE giver ÅÅÅÅ-MM-DD
+    return { dates: intraday.t.map(clock), closes: intraday.c, prev: intraday.prev, day };
   }
 
   function dailySeries() {
@@ -1737,7 +1782,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
       const lo = Math.min.apply(null, s.closes), hi = Math.max.apply(null, s.closes);
       $('#chartSummary').innerHTML =
         K.fmtDate(day.day) + ' · ' + K.esc(s.dates[0]) + '–' + K.esc(s.dates[s.dates.length - 1])
-        + ' · ' + s.dates.length + ' minutter · '
+        + ' dansk tid · ' + s.dates.length + ' minutter · '
         + '<span class="num font-bold ' + K.dirClass(move) + '">' + K.fmtPct(move) + '</span> i dag'
         + '<br>Højest ' + K.fmtPrice(hi) + ' · lavest ' + K.fmtPrice(lo) + ' ' + K.esc(row.currency)
         + (day.prev != null ? ' · luk i går ' + K.fmtPrice(day.prev) : '')
@@ -1812,9 +1857,13 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
         r.price = q.p;
         if (q.c != null) r.change = q.c;
         if (q.cp != null) r.percent_change = q.cp;
+        if (q.t != null) r.quote_time = q.t;
+        if (q.d != null) r.delayed_by = q.d;
         if (lastArgs) render.apply(null, lastArgs);
       },
       status: (mode, data) => {
+        liveAt = mode === 'live' ? (data && data.t ? new Date(data.t).getTime() : Date.now()) : null;
+        updatePriceInfo();
         const el = $('#status');
         if (!el) return;
         if (mode !== 'live') return;
@@ -1830,6 +1879,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
 
   function render(r, hist, fx, updatedAt, neighbours) {
     lastArgs = [r, hist, fx, updatedAt, neighbours];
+    updatedAtIso = updatedAt;
     if (!row || row.symbol !== r.symbol) {
       archive = null; archiveState = 'idle'; mergedCache = null;
       intraday = null; intradayState = 'idle';
@@ -1856,8 +1906,13 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
           }).join('')
       + '</div></div>'
       + '<div class="text-right"><div class="text-3xl font-extrabold num">' + K.fmtPrice(r.price) + '</div>'
-      + '<div class="text-sm num font-semibold ' + K.dirClass(r.percent_change) + '">'
-      + K.fmtDelta(r.change) + ' (' + K.fmtPct(r.percent_change) + ')</div>'
+      + '<div class="text-sm num font-semibold ' + K.dirClass(r.percent_change) + ' flex items-center justify-end gap-2">'
+      + '<span>' + K.fmtDelta(r.change) + ' (' + K.fmtPct(r.percent_change) + ')</span>'
+      + '<button type="button" id="priceInfo" class="hint" aria-label="Hvornår er kursen opdateret?"'
+      + ' data-hint-title="Hvornår er kursen opdateret?" data-hint="Indlæser …"'
+      + ' style="border:1px solid var(--hairline);border-radius:999px;width:20px;height:20px;'
+      + 'display:inline-flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;'
+      + 'color:var(--text-secondary);line-height:1;flex:none">i</button></div>'
       + (conv ? '<div class="text-xs faint num mt-1">≈ ' + K.fmtPrice(r.price_dkk) + ' DKK</div>' : '')
       + (r.drawdown_pct != null
           ? '<div class="text-xs num mt-1 hint" tabindex="0" data-hint-title="Fra toppen nogensinde"'
@@ -1993,7 +2048,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
     // its order: price and chart, what the company is, the figures, how it has
     // met expectations, what it pays out, what the analysts say, and what else
     // is like it. Nothing on it values the company on our behalf.
-    const appPage = aboutBlock(r) + infoBlock(r) + keyFiguresBlock(r)
+    const appPage = keyFiguresBlock(r)
       + surpriseBlock(r) + dividendBlock(r) + eventsBlock(r)
       + analystBlock(r) + targetBlock(r)
       + peersBlock(r);
@@ -2015,10 +2070,46 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
       + ownershipBlock(r)
       + factsBlock(r);
 
-    $('#content').innerHTML = head + overviewStrip(r) + chartCard
-      + appPage
-      + (state.adv ? ours : simpleFooter(r))
+    // Beskrivelsen og stamoplysningerne er noget man slår op, ikke noget man
+    // læser hver gang. De får hver sin fane, så tallene ikke skal scrolles
+    // forbi to tekstblokke — samme opdeling som Nordnet bruger.
+    //
+    // Alle tre faner tegnes; kun den valgte er synlig. Bliver de bygget først
+    // ved klik, skulle grafens og "Vis mere"-knappernes bindinger sættes op
+    // igen hver gang, og grafen kan ikke måle sig selv i et skjult element.
+    const PANES = [
+      { key: 'oversigt', label: 'Oversigt',
+        html: chartCard + appPage + (state.adv ? ours : simpleFooter(r)) },
+      { key: 'om', label: 'Om virksomheden', html: aboutBlock(r) },
+      { key: 'info', label: 'Information', html: infoBlock(r) },
+    ].filter((p) => p.html);
+
+    if (!PANES.some((p) => p.key === state.tab)) state.tab = PANES[0].key;
+
+    const tabBar = PANES.length > 1
+      ? '<div class="page-tabs" role="tablist" aria-label="Sider om selskabet">'
+        + PANES.map((p) => '<button type="button" class="page-tab" role="tab" data-tab="' + p.key + '"'
+            + ' aria-selected="' + (p.key === state.tab) + '">' + K.esc(p.label) + '</button>').join('')
+        + '</div>'
+      : '';
+
+    $('#content').innerHTML = head + overviewStrip(r) + tabBar
+      + PANES.map((p) => '<div class="page-pane" data-pane="' + p.key + '"'
+          + (p.key === state.tab ? '' : ' hidden') + '>' + p.html + '</div>').join('')
       + nav + risk;
+
+    updatePriceInfo();
+
+    document.querySelectorAll('.page-tab').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        state.tab = btn.getAttribute('data-tab');
+        document.querySelectorAll('.page-tab').forEach((b) =>
+          b.setAttribute('aria-selected', String(b.getAttribute('data-tab') === state.tab)));
+        document.querySelectorAll('.page-pane').forEach((pane) => {
+          pane.hidden = pane.getAttribute('data-pane') !== state.tab;
+        });
+      });
+    });
 
     // The two "Vis mere" buttons open what is already rendered rather than
     // redrawing the page, so nothing else on screen moves and no scroll
