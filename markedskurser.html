@@ -121,15 +121,6 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
             data-hint="Hvornår kurserne sidst ændrede sig. De hentes tre gange på hverdage, så de er forsinkede — ikke live."
             style="border:1px solid var(--hairline);color:var(--text-secondary)"></span>
 
-      <!-- Kurserne og nøgletallene er to forskellige aldre, og chippen kan kun
-           nævne den ene. Her står begge med klokkeslæt. -->
-      <button id="dataInfo" type="button" class="hint"
-              aria-label="Hvornår er tallene opdateret?"
-              data-hint-title="Hvornår er tallene opdateret?"
-              data-hint="Indlæser …"
-              style="border:1px solid var(--hairline);border-radius:999px;width:26px;height:26px;
-                     display:inline-flex;align-items:center;justify-content:center;
-                     font-size:13px;font-weight:700;color:var(--text-secondary);line-height:1">i</button>
 
       <button id="refresh" type="button" class="ml-auto inline-flex items-center gap-2 rounded-md px-3 py-2 text-sm font-semibold muted"
               style="border:1px solid var(--hairline)">
@@ -235,7 +226,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
     market: oneOf(params.get('marked'), ['DK', 'SE', 'NO', 'FI', 'IS', 'US']),
     index:  oneOf(params.get('indeks'), ['SP500', 'NDX', 'SP400', 'SP600']),
     sector: '', currency: 'native',
-    liveAt: null, liveDelay: 0, liveQuoteAt: null,
+    liveAt: null,
     sort: 'rank', dir: 1, q: (params.get('q') || '').slice(0, 60),
     chip:   oneOf(params.get('vis'), ['gainers', 'losers', 'near52']),
     page: 1, pageSize: 50, cols: null,
@@ -642,45 +633,6 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
   }
 
   // Klokkeslæt, ikke "for 7 timer siden". Det er hele pointen med (i)-boksen.
-  // Alle klokkeslæt på siden er dansk tid, uanset hvilken børs papiret handler
-  // på: en amerikansk aktie åbner 15.30 hos læseren, ikke 09.30. Tidszonen
-  // sættes eksplicit i stedet for at læne sig på browserens egen — en dansker
-  // på ferie i Spanien skal stadig se børsdagen som den ligger herhjemme.
-  const DK_TZ = 'Europe/Copenhagen';
-  const stamp = (t) => (t == null ? 'ukendt' : new Date(t).toLocaleString('da-DK',
-    { timeZone: DK_TZ, day: 'numeric', month: 'short', year: 'numeric',
-      hour: '2-digit', minute: '2-digit', second: '2-digit' }) + ' dansk tid');
-
-  // To ting på skærmen har hver sin alder: kursen og "i dag %" hentes hvert
-  // minut mens børserne handler, mens markedsværdi, 30 dage og 6 mdr. stammer
-  // fra den seneste fulde hentning. Chippen kan kun nævne den ene — derfor
-  // står begge her, med klokkeslæt.
-  function updateDataInfo() {
-    const el = $('#dataInfo');
-    if (!el) return;
-    const lines = [];
-
-    if (state.liveAt) {
-      lines.push('Kurser og "i dag %": hentet ' + stamp(state.liveAt)
-        + (state.liveDelay > 0
-            ? ' — den langsomste børs på skærmen leverer ' + state.liveDelay + ' minutters forsinkelse.'
-            : ' — ingen af børserne på skærmen leverer forsinkede data lige nu.'));
-      if (state.liveQuoteAt) {
-        lines.push('Seneste kurs registreret på børsen: ' + stamp(state.liveQuoteAt) + '.');
-      }
-    } else if (!K.tradingNow()) {
-      lines.push('Børserne er lukkede. Kurserne står som ved seneste lukning; '
-        + 'de opdateres igen hvert minut, når der åbnes (09:00–22:00 dansk tid på hverdage).');
-    } else {
-      lines.push('Kurserne hentes hvert minut — første hentning er på vej.');
-    }
-
-    lines.push('Nøgletal, markedsværdi og perioderne bagud: hentet ' + stamp(state.updatedAt)
-      + ' — de hentes tre gange på hverdage og er derfor ældre end kursen.');
-
-    el.setAttribute('data-hint', lines.join(' '));
-  }
-
   // The chip says which of three states the page is in, and its explanation is
   // built from the answer rather than written in advance: Oslo reports fifteen
   // minutes where Copenhagen reports none, and only the response knows which
@@ -692,12 +644,9 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
     if (mode === 'live') {
       const delays = Object.keys(data.q).map((k) => data.q[k].d).filter((d) => d != null);
       const worst = delays.length ? Math.max.apply(null, delays) : 0;
+      // Bruges af genindlæsningen og minut-uret: så længe live leverer, må
+      // ingen af dem skrive datafilens alder hen over chippen.
       state.liveAt = data.t ? new Date(data.t).getTime() : Date.now();
-      state.liveDelay = worst;
-      const qt = Object.keys(data.q).map((k) => data.q[k].t).filter(Boolean)
-        .map((t) => (t > 1e12 ? t : t * 1000));
-      state.liveQuoteAt = qt.length ? Math.max.apply(null, qt) : null;
-      updateDataInfo();
       chip.innerHTML = '<span class="live-dot" aria-hidden="true"></span>Kurser hvert minut';
       chip.setAttribute('data-hint-title', 'Løbende kurser');
       chip.setAttribute('data-hint', 'Kurserne for de selskaber du kan se hentes hvert minut, så længe fanen er åben og børserne handler. '
@@ -708,7 +657,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
       return;
     }
 
-    if (mode !== 'live') { state.liveAt = null; updateDataInfo(); }
+    if (mode !== 'live') state.liveAt = null;
     chip.textContent = mode === 'paused' && !K.tradingNow()
       ? 'Børserne er lukkede'
       : 'Opdateret ' + K.fmtAge(state.updatedAt);
@@ -867,7 +816,6 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
       // Er live i gang, er kursen på skærmen minutter gammel — ikke timer.
       // Chippen må ikke skrive filens alder hen over det.
       if (!state.liveAt) $('#freshness').textContent = 'Opdateret ' + K.fmtAge(list.updatedAt);
-      updateDataInfo();
       $('#status').textContent = 'Forsinkede kurser fra Yahoo Finance · ' + where + ' · hentet ' + when
         + (list.failed && list.failed.length ? ' · ' + list.failed.length + ' symboler kunne ikke hentes' : '');
       $('#universeNote').innerHTML = '<strong>Universet</strong> er ' + K.fmtInt(list.rows.length)
