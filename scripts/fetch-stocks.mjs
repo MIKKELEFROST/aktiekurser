@@ -421,6 +421,15 @@ async function fetchFundamentals(symbol, session) {
     country: profile.country || null,
     // Only the company page reads this.
     detail: {
+      // What the app's "Om" and "Information" cards show. assetProfile is
+      // already being requested for the sector, so these cost nothing extra.
+      summary: profile.longBusinessSummary || null,
+      industry: profile.industry || null,
+      website: profile.website || null,
+      employees: raw({ raw: profile.fullTimeEmployees }),
+      ceo: (profile.companyOfficers || [])
+        .filter((o) => /chief executive|ceo\b/i.test(o.title || ''))
+        .map((o) => o.name)[0] || null,
       next_earnings: ev.earningsDate?.[0]?.fmt || null,
       earnings_estimated: ev.isEarningsDateEstimate === true,
       earnings_call: ev.earningsCallDate?.[0]?.fmt || null,
