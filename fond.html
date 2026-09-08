@@ -73,11 +73,45 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
     { key: '1y',  label: '1 år',  days: 252 },
     { key: '3y',  label: '3 år',  days: 756 },
     { key: '5y',  label: '5 år',  days: 1260 },
+    { key: '10y', label: '10 år', days: 2520 },
     { key: 'alt', label: 'Hele perioden', days: Infinity },
   ];
 
   const state = { range: '3m', row: null, hist: null };
   let live = null, pointerInChart = false;
+
+  // Hele kurshistorikken ligger i data/arkiv, én fil pr. fond, og den hentes
+  // først når et vindue rækker længere end de tre år i den nære fil. Indtil
+  // den er der, tegnes den lange serie, så grafen aldrig står tom.
+  let archive = null, archiveState = 'idle', mergedCache = null;
+
+  function dailySeries() {
+    const h = state.hist;
+    if (!h) return null;
+    if (!archive) return { dates: h.dates, closes: h.closes };
+    if (!mergedCache) mergedCache = K.spliceDaily(archive, { dates: h.dates, closes: h.closes });
+    return mergedCache;
+  }
+
+  function needsArchive() {
+    const h = state.hist; if (!h) return false;
+    const p = PRESETS.find((x) => x.key === state.range);
+    if (!p) return false;
+    if (p.days === Infinity) return true;
+    if (p.days == null) return false;                 // år til dato ligger altid i den nære fil
+    return dailySeries().dates.length < p.days * 0.98;
+  }
+
+  async function ensureArchive() {
+    if (archiveState !== 'idle' || !state.row) return;
+    archiveState = 'henter';
+    try {
+      archive = await K.loadArchive(state.row.symbol);
+      archiveState = archive ? 'klar' : 'ingen';
+    } catch { archiveState = 'ingen'; }
+    mergedCache = null;
+    if (archiveState === 'klar') render();
+  }
 
   // ── Data ───────────────────────────────────────────────────────────────
   async function loadFund() {
@@ -112,6 +146,9 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
     if (!h) return null;
     const monthly = longSeries(h);
     const preset = PRESETS.find((p) => p.key === state.range) || PRESETS[1];
+    // Er arkivet hentet, er den daglige serie hele historikken, ikke bare
+    // de tre år der står i den nære fil.
+    const day = dailySeries();
 
     if (state.range === 'ytd') {
       const year = String(new Date().getFullYear());
@@ -121,14 +158,15 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
       return { dates: h.dates.slice(i), closes: h.closes.slice(i) };
     }
     if (preset.days === Infinity) {
+      if (archive) return { dates: day.dates, closes: day.closes };
       return monthly ? { dates: monthly.dates, closes: monthly.closes, coarse: true }
                      : { dates: h.dates, closes: h.closes };
     }
     // Yahoos range=3y giver 754 dage, ikke 756. To dage fra skal ikke koste
     // den daglige opløsning, så et vindue der er dækket 98 % læses dagligt.
-    if (h.dates.length >= preset.days * 0.98) {
-      const n = Math.min(h.dates.length, preset.days + 1);
-      return { dates: h.dates.slice(-n), closes: h.closes.slice(-n) };
+    if (day.dates.length >= preset.days * 0.98) {
+      const n = Math.min(day.dates.length, preset.days + 1);
+      return { dates: day.dates.slice(-n), closes: day.closes.slice(-n) };
     }
     if (monthly) {
       const months = Math.round(preset.days / 21) + 1;
@@ -413,6 +451,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
 
   function render() {
     const r = state.row;
+    if (needsArchive()) ensureArchive();
     $('#page').innerHTML = header(r) + chartCard(r) + aboutCard(r) + figuresCard(r) + peersCard(r, ALL)
       + '<p class="text-xs faint">Kurser er vejledende og kan være forsinkede. '
       + 'Nøgletal hentet ' + K.fmtAge(UPDATED) + '. '
