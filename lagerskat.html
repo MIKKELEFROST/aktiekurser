@@ -1,0 +1,523 @@
+<!-- Title: Lagerskat mod realisationsskat -->
+<!-- filepath: lagerskat.html -->
+<!--
+  Siden står med vilje uden for navigationen: den er ikke med i NAV-listen i
+  assets/kursliste.js, og ingen anden side linker til den. Man skal have
+  adressen for at komme her. noindex holder den ude af søgemaskinerne, så den
+  ikke dukker op ad bagvejen; robots.txt ville have modsat effekt, fordi den
+  ville udstille stien for enhver der læser den.
+-->
+<!DOCTYPE html>
+<html lang="da" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Lagerskat eller realisationsskat</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preload" href="assets/fonts/Porteron-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/Porteron-Semi.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/kursliste.css">
+<script>
+tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial', 'system-ui', 'sans-serif'] } } } }
+</script>
+<style>
+  /* ── De to serier ───────────────────────────────────────────────────────
+     To beskatningsformer, ingen af dem bedre end den anden, så farverne er
+     identitet og ikke status. Begge er sitets egne trin: blå 600 og grøn 600
+     på lys bund, blå 500 og et grønt trin mellem 500 og 600 på mørk — samme
+     fremgangsmåde som resten af stylesheetets mørke tilstand, hvor trinnene
+     hentes ned ad de samme ramper i stedet for at blive fundet på ved siden af.
+
+     Parrene er kontrolleret og ikke skønnet: blå/grøn holder ΔE 32 for normalt
+     syn og 32,0 (deutan) / 11,0 (tritan) for farveblindt syn på lys bund, og
+     29–31 / 9,2 på mørk. Alle over gulvet på 8. Formen bærer det samme igen:
+     ETF'en er en fuldt optrukket linje, aktierne er stiplede, fordi deres
+     beløb i hvert år er et hypotetisk salg. Farven er aldrig det eneste. */
+  :root {
+    --serie-etf:    #2243ee;   /* coop blue-600  */
+    --serie-aktier: #21984b;   /* coop green-600 */
+    --serie-etf-soft:    rgba(34, 67, 238, .06);
+    --serie-aktier-soft: rgba(33, 152, 75, .06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --serie-etf:    #3864f9;
+      --serie-aktier: #28a855;
+      --serie-etf-soft:    rgba(56, 100, 249, .11);
+      --serie-aktier-soft: rgba(40, 168, 85, .11);
+    }
+  }
+  :root[data-theme="dark"] {
+    --serie-etf:    #3864f9;
+    --serie-aktier: #28a855;
+    --serie-etf-soft:    rgba(56, 100, 249, .11);
+    --serie-aktier-soft: rgba(40, 168, 85, .11);
+  }
+
+  /* Headeren er klæbende, så et element der får tastaturfokus kan ende inde
+     under den. Rullemargenen holder det fri. */
+  html { scroll-padding-top: 80px; }
+
+  /* ── Indtastning ────────────────────────────────────────────────────── */
+  .row { display: grid; grid-template-columns: 1fr auto; align-items: baseline; gap: 8px 12px; }
+  .row + .row { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--gridline); }
+  .row label { font-size: 13px; font-weight: 600; }
+  .row .unit { font-size: 12px; color: var(--text-muted); }
+
+  .amount {
+    width: 8.5rem; text-align: right; background: transparent; color: var(--text-primary);
+    border: 1px solid var(--hairline); border-radius: 8px; padding: 6px 9px;
+    font-size: 14px; font-weight: 700; font-variant-numeric: tabular-nums;
+  }
+  .amount:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+  .amount[aria-invalid="true"] { border-color: var(--delta-down); }
+  /* Pilene dublerer skyderen og klemmer cifrene. */
+  .amount::-webkit-outer-spin-button, .amount::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+  .amount { -moz-appearance: textfield; }
+
+  input[type="range"] { grid-column: 1 / -1; width: 100%; accent-color: var(--accent); }
+  input[type="range"]:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+  .pill {
+    border: 1px solid var(--hairline); color: var(--text-secondary); background: transparent;
+    border-radius: 999px; padding: 5px 13px; font-size: 12px; font-weight: 700; cursor: pointer;
+  }
+  .pill[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .pill:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* Beskeden hører til hele rækken, ikke til den første spalte i gitteret. */
+  .field-error { grid-column: 1 / -1; font-size: 12px; color: var(--delta-down); margin-top: 2px; }
+
+  /* ── Resultat ───────────────────────────────────────────────────────── */
+  .verdict { font-size: clamp(1.75rem, 5.2vw, 2.6rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.05; }
+  .figure   { font-size: clamp(1.5rem, 4.4vw, 2rem);  font-weight: 800; letter-spacing: -0.02em; line-height: 1.1; }
+
+  .duo { display: grid; gap: 1px; background: var(--gridline); border-radius: 12px; overflow: hidden; }
+  .duo > div { background: var(--surface-1); padding: 14px 16px; }
+  @media (min-width: 620px) { .duo { grid-template-columns: 1fr 1fr; } }
+
+  .facts { display: grid; gap: 1px; background: var(--gridline); border-radius: 12px; overflow: hidden; }
+  .facts > div { background: var(--surface-1); padding: 12px 14px; }
+  @media (min-width: 560px) { .facts { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 900px) { .facts { grid-template-columns: repeat(3, 1fr); } }
+
+  /* Serieprikken bærer identiteten ved siden af teksten; teksten selv holder
+     sig i sine egne farver, så et tal aldrig skal aflæses på sin kulør. */
+  .dot { display: inline-block; width: 10px; height: 10px; border-radius: 3px; vertical-align: baseline; flex: 0 0 auto; }
+  .dot-etf    { background: var(--serie-etf); }
+  .dot-aktier { background: var(--serie-aktier); }
+  .dash {
+    display: inline-block; width: 16px; height: 3px; border-radius: 2px; vertical-align: middle;
+    background: repeating-linear-gradient(90deg, var(--serie-aktier) 0 5px, transparent 5px 8px);
+  }
+  .solid { display: inline-block; width: 16px; height: 3px; border-radius: 2px; vertical-align: middle; background: var(--serie-etf); }
+
+  /* ── Graf ───────────────────────────────────────────────────────────── */
+  .chart-wrap { position: relative; }
+  /* Højden følger viewBox'ens forhold. Et fast height ville lade tegningen
+     ligge og flyde midt i en for høj kasse med tom plads over og under. */
+  #chart, #diff { display: block; width: 100%; height: auto; }
+  #chart:focus-visible, #diff:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 8px; }
+  #tooltip {
+    position: absolute; pointer-events: none; opacity: 0; transition: opacity .12s;
+    background: var(--surface-1); border: 1px solid var(--hairline);
+    border-radius: 10px; padding: 9px 11px; font-size: 12px; line-height: 1.5; white-space: nowrap;
+    box-shadow: 0 6px 20px rgba(0,0,0,.13); z-index: 5;
+  }
+  #tooltip .tt-row { display: flex; align-items: center; gap: 6px; }
+  #tooltip .tt-val { margin-left: auto; font-variant-numeric: tabular-nums; font-weight: 700; }
+  .crosshair { pointer-events: none; }
+
+  /* ── Sammenfoldelige afsnit ─────────────────────────────────────────── */
+  details > summary {
+    cursor: pointer; list-style: none; display: flex; align-items: center; gap: 8px;
+    font-size: 14px; font-weight: 700;
+  }
+  details > summary::-webkit-details-marker { display: none; }
+  details > summary::after {
+    content: "⌄"; margin-left: auto; color: var(--text-muted); font-size: 15px;
+    transition: transform .15s;
+  }
+  details[open] > summary::after { transform: rotate(180deg); }
+  details > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+
+  .tbl { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .tbl th, .tbl td { padding: 7px 8px; white-space: nowrap; }
+  .tbl thead th {
+    position: sticky; top: 0; background: var(--surface-1); z-index: 1;
+    font-size: 11px; font-weight: 700; color: var(--text-muted); text-align: right;
+    border-bottom: 1px solid var(--hairline);
+  }
+  .tbl thead th:first-child { text-align: left; }
+  .tbl td { text-align: right; border-top: 1px solid var(--gridline); font-variant-numeric: tabular-nums; }
+  .tbl td:first-child { text-align: left; color: var(--text-muted); }
+  .tbl tr.is-shift td { background: var(--surface-2); }
+
+  .timeline { display: flex; flex-wrap: wrap; gap: 6px; }
+  .span-chip {
+    display: inline-flex; align-items: center; gap: 7px; font-size: 12px; font-weight: 600;
+    border: 1px solid var(--hairline); border-radius: 999px; padding: 4px 11px;
+  }
+
+  .source-link { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; word-break: break-word; }
+
+  /* Et gitterelement sætter som udgangspunkt sin mindste bredde til indholdets.
+     Tabellen er bredere end en telefonskærm, og uden det her skubber den hele
+     siden sidelæns i stedet for at rulle inde i sit eget felt. */
+  .layout > * { min-width: 0; }
+
+  /* Tabellen ruller inde i sit eget felt frem for at trække siden sidelæns.
+     Hintet står kun der, hvor den faktisk ikke kan være. */
+  .scroll-hint { display: none; }
+  @media (max-width: 720px) { .scroll-hint { display: block; } }
+
+  @media (prefers-reduced-motion: reduce) {
+    #tooltip, details > summary::after { transition: none; }
+  }
+</style>
+</head>
+
+<body class="font-sans antialiased">
+<header id="sitenav"></header>
+
+<main class="max-w-[1240px] mx-auto px-4 py-8">
+
+  <div class="mb-6" style="max-width:74ch">
+    <h1 class="text-2xl md:text-3xl font-extrabold tracking-tight" style="text-wrap:balance">
+      Lagerskat eller realisationsskat?
+    </h1>
+    <p class="text-sm mt-2 muted">
+      Samme startkapital, samme månedlige indbetaling, samme afkast — kun beskatningen er forskellig.
+      Den ene er en akkumulerende ETF, der lagerbeskattes hvert år. Den anden er aktier uden udbytte i et
+      almindeligt depot, hvor skatten først falder ved salg. Spørgsmålet er, hvad der er tilbage bagefter.
+    </p>
+  </div>
+
+  <div class="layout grid lg:grid-cols-[minmax(300px,370px)_1fr] gap-5 items-start">
+
+    <!-- ═══ Indstillinger ═══════════════════════════════════════════════ -->
+    <form id="form" class="card rounded-md p-5" autocomplete="off" novalidate>
+      <h2 class="text-sm font-extrabold uppercase tracking-wide faint mb-4">Indstillinger</h2>
+
+      <div class="row">
+        <label for="start">Startkapital<span class="hint-i" tabindex="0" role="note"
+          aria-label="Om startkapital" data-hint-title="Startkapital"
+          data-hint="Beløbet der investeres ved begyndelsen af det første år. Det er ens i begge forløb.">i</span></label>
+        <span><input id="start" class="amount num" type="text" inputmode="numeric" value="500.000"
+          aria-describedby="startErr"> <span class="unit">kr.</span></span>
+        <input id="startR" type="range" min="0" max="2000000" step="10000" value="500000" aria-label="Startkapital, skyder">
+        <p class="field-error" id="startErr" role="status" hidden></p>
+      </div>
+
+      <div class="row">
+        <label for="monthly">Månedlig indbetaling<span class="hint-i" tabindex="0" role="note"
+          aria-label="Om månedlig indbetaling" data-hint-title="Månedlig indbetaling"
+          data-hint="Indbetales ved månedens slutning, i begge forløb. Der indbetales ikke ekstra for at betale skatten.">i</span></label>
+        <span><input id="monthly" class="amount num" type="text" inputmode="numeric" value="5.000"
+          aria-describedby="monthlyErr"> <span class="unit">kr.</span></span>
+        <input id="monthlyR" type="range" min="0" max="50000" step="500" value="5000" aria-label="Månedlig indbetaling, skyder">
+        <p class="field-error" id="monthlyErr" role="status" hidden></p>
+      </div>
+
+      <div class="row">
+        <label for="years">Tidshorisont<span class="hint-i" tabindex="0" role="note"
+          aria-label="Om tidshorisont" data-hint-title="Tidshorisont"
+          data-hint="Antal hele år. Hele investeringen sælges ved slutdatoen. Modellen regner kun i hele år og finder ikke et tidspunkt inde i et år.">i</span></label>
+        <span><input id="years" class="amount num" type="number" min="1" max="50" step="1" value="10"
+          aria-describedby="yearsErr"> <span class="unit">år</span></span>
+        <input id="yearsR" type="range" min="1" max="50" step="1" value="10" aria-label="Tidshorisont, skyder">
+        <p class="field-error" id="yearsErr" role="status" hidden></p>
+      </div>
+
+      <div class="row">
+        <label for="rate">Årligt afkast før skat<span class="hint-i" tabindex="0" role="note"
+          aria-label="Om årligt afkast" data-hint-title="Årligt afkast før investors skat"
+          data-hint="Samme konstante afkast i begge forløb, hvert eneste år. Modellen understøtter kun ikke-negative afkast.">i</span></label>
+        <span><input id="rate" class="amount num" type="number" min="0" max="30" step="0.5" value="10"
+          aria-describedby="rateErr"> <span class="unit">%</span></span>
+        <input id="rateR" type="range" min="0" max="30" step="0.5" value="10" aria-label="Årligt afkast, skyder">
+        <p class="field-error" id="rateErr" role="status" hidden></p>
+      </div>
+
+      <fieldset class="mt-5 pt-4" style="border-top:1px solid var(--gridline)">
+        <legend class="text-xs uppercase tracking-wide faint font-extrabold mb-3">Progressionsgrænse</legend>
+        <div class="flex flex-wrap gap-1.5" role="group" aria-label="Forvalg for progressionsgrænsen">
+          <button type="button" class="pill" data-bracket="79400" aria-pressed="true">Én person</button>
+          <button type="button" class="pill" data-bracket="158800" aria-pressed="false">Samlevende ægtefæller</button>
+        </div>
+        <p id="bracketNote" class="text-xs faint mt-2">
+          79.400 kr. om året til 27 %. Beløbet derover beskattes med 42 %.
+        </p>
+      </fieldset>
+
+      <div class="row mt-4">
+        <label for="other">Øvrig aktieindkomst<span class="hint-i" tabindex="0" role="note"
+          aria-label="Om øvrig aktieindkomst" data-hint-title="Øvrig positiv aktieindkomst pr. år"
+          data-hint="Udbytter og gevinster fra andre investeringer. Den lægger beslag på den lave sats nedefra, men indgår hverken selv eller med sin egen skat i resultatet nedenfor.">i</span></label>
+        <span><input id="other" class="amount num" type="text" inputmode="numeric" value="0"
+          aria-describedby="otherErr otherScope"> <span class="unit">kr./år</span></span>
+        <input id="otherR" type="range" min="0" max="200000" step="1000" value="0" aria-label="Øvrig aktieindkomst, skyder">
+        <p class="field-error" id="otherErr" role="status" hidden></p>
+      </div>
+      <p id="otherScope" class="text-xs faint mt-2">Din egen øvrige aktieindkomst pr. år.</p>
+
+      <details class="mt-5 pt-4" style="border-top:1px solid var(--gridline)">
+        <summary>Avancerede skatteindstillinger</summary>
+        <div class="mt-4">
+          <div class="row">
+            <label for="lowRate">Lav sats<span class="hint-i" tabindex="0" role="note"
+              aria-label="Om lav sats" data-hint-title="Lav sats"
+              data-hint="Satsen på aktieindkomst op til progressionsgrænsen. 27 % i 2026.">i</span></label>
+            <span><input id="lowRate" class="amount num" type="number" min="0" max="100" step="0.5" value="27"
+              aria-describedby="lowRateErr"> <span class="unit">%</span></span>
+            <p class="field-error" id="lowRateErr" role="status" hidden></p>
+          </div>
+          <div class="row">
+            <label for="highRate">Høj sats<span class="hint-i" tabindex="0" role="note"
+              aria-label="Om høj sats" data-hint-title="Høj sats"
+              data-hint="Satsen på aktieindkomst over progressionsgrænsen. 42 % i 2026.">i</span></label>
+            <span><input id="highRate" class="amount num" type="number" min="0" max="100" step="0.5" value="42"
+              aria-describedby="highRateErr"> <span class="unit">%</span></span>
+            <p class="field-error" id="highRateErr" role="status" hidden></p>
+          </div>
+          <div class="row">
+            <label for="bracket">Progressionsgrænse<span class="hint-i" tabindex="0" role="note"
+              aria-label="Om progressionsgrænsen" data-hint-title="Skatteprogressionsgrænse"
+              data-hint="Grænsen mellem de to satser. 79.400 kr. for én person i 2026, det dobbelte for samlevende ægtefæller under ét.">i</span></label>
+            <span><input id="bracket" class="amount num" type="text" inputmode="numeric" value="79.400"
+              aria-describedby="bracketErr"> <span class="unit">kr.</span></span>
+            <p class="field-error" id="bracketErr" role="status" hidden></p>
+          </div>
+          <p class="text-xs faint mt-3">
+            Standardværdierne er <strong>2026-satser</strong>, og de holdes konstante gennem hele beregningen.
+            Modellen forudsiger ikke fremtidige skatteregler.
+          </p>
+        </div>
+      </details>
+
+      <button type="button" id="reset" class="mt-5 w-full pill" style="padding:8px">Nulstil til standardværdier</button>
+    </form>
+
+    <!-- ═══ Resultat ════════════════════════════════════════════════════ -->
+    <div>
+
+      <!-- Hovedresultat -->
+      <section class="card rounded-md p-5 md:p-6" aria-labelledby="resultTitle">
+        <h2 id="resultTitle" class="text-xs uppercase tracking-wide faint font-extrabold">
+          Tilbage efter al skat, efter <span id="hYears">10</span> år
+        </h2>
+
+        <div class="duo mt-4">
+          <div>
+            <p class="text-xs faint font-bold flex items-center gap-2">
+              <span class="dot dot-etf"></span> ETF — lagerbeskattet
+            </p>
+            <p class="figure num mt-1"><span id="etfNet">–</span> <span class="text-sm font-bold faint">kr.</span></p>
+            <p class="text-xs faint mt-1">Skatten er allerede betalt år for år.</p>
+          </div>
+          <div>
+            <p class="text-xs faint font-bold flex items-center gap-2">
+              <span class="dot dot-aktier"></span> Aktier — realisationsbeskattet
+            </p>
+            <p class="figure num mt-1"><span id="stockNet">–</span> <span class="text-sm font-bold faint">kr.</span></p>
+            <p class="text-xs faint mt-1">Efter salg af hele beholdningen.</p>
+          </div>
+        </div>
+
+        <p class="verdict mt-5" id="verdict" style="text-wrap:balance">–</p>
+        <p class="text-sm muted mt-2" id="verdictNote" style="max-width:62ch"></p>
+      </section>
+
+      <!-- Nøgletal -->
+      <section class="card rounded-md p-5 md:p-6 mt-5" aria-labelledby="factsTitle">
+        <h2 id="factsTitle" class="text-sm font-extrabold mb-3">Tallene bag</h2>
+        <div class="facts">
+          <div>
+            <p class="text-xs faint font-bold">Samlede egne indbetalinger</p>
+            <p class="text-lg font-extrabold num mt-1"><span id="deposits">–</span> <span class="text-xs faint">kr.</span></p>
+            <p class="text-xs faint mt-1">Startkapital plus alle månedlige indbetalinger.</p>
+          </div>
+          <div>
+            <p class="text-xs faint font-bold flex items-center gap-2"><span class="dot dot-etf"></span> ETF: fortjeneste efter skat</p>
+            <p class="text-lg font-extrabold num mt-1"><span id="etfProfit">–</span> <span class="text-xs faint">kr.</span></p>
+          </div>
+          <div>
+            <p class="text-xs faint font-bold flex items-center gap-2"><span class="dot dot-aktier"></span> Aktier: fortjeneste efter skat</p>
+            <p class="text-lg font-extrabold num mt-1"><span id="stockProfit">–</span> <span class="text-xs faint">kr.</span></p>
+          </div>
+        </div>
+
+        <div class="facts mt-4">
+          <div>
+            <p class="text-xs faint font-bold flex items-center gap-2"><span class="dot dot-etf"></span> ETF: samlet betalt skat</p>
+            <p class="text-base font-bold num mt-1 muted"><span id="etfTax">–</span> <span class="text-xs faint">kr.</span></p>
+          </div>
+          <div>
+            <p class="text-xs faint font-bold flex items-center gap-2"><span class="dot dot-aktier"></span> Aktier: samlet betalt skat</p>
+            <p class="text-base font-bold num mt-1 muted"><span id="stockTax">–</span> <span class="text-xs faint">kr.</span></p>
+          </div>
+          <div>
+            <p class="text-xs faint font-bold">Forskel i betalt skat</p>
+            <p class="text-base font-bold num mt-1 muted"><span id="taxGap">–</span> <span class="text-xs faint">kr.</span></p>
+            <p class="text-xs faint mt-1" id="taxGapWho"></p>
+          </div>
+        </div>
+        <p class="text-xs faint mt-3" style="max-width:70ch">
+          Den samlede skat er et sekundært tal. Lavere betalt skat er ikke nødvendigvis det samme som et
+          bedre slutresultat: det afgørende er, hvornår skatten trækkes ud af depotet, og dermed hvor længe
+          pengene har fået lov at forrente sig.
+        </p>
+      </section>
+
+      <!-- Graf -->
+      <section class="card rounded-md p-5 md:p-6 mt-5" aria-labelledby="chartTitle">
+        <div class="flex items-baseline justify-between gap-3 flex-wrap">
+          <h2 id="chartTitle" class="text-sm font-extrabold">Nettobeløb ved fuldt salg efter hvert år</h2>
+          <p class="text-xs faint flex items-center gap-4 flex-wrap" id="legend">
+            <span class="flex items-center gap-2"><span class="solid"></span> ETF</span>
+            <span class="flex items-center gap-2"><span class="dash"></span> Aktier</span>
+          </p>
+        </div>
+        <p class="text-xs muted mt-1 mb-3" style="max-width:74ch">
+          Begge kurver er beløbet <em>efter</em> al skat, målt på den samme kroneakse. Aktiekurven er stiplet,
+          fordi hvert punkt er et hypotetisk fuldt salg netop det år. Hold musen over — eller giv grafen
+          tastaturfokus og brug piletasterne.
+        </p>
+        <div class="chart-wrap">
+          <svg id="chart" viewBox="0 0 900 300" tabindex="0" role="img"
+               aria-labelledby="chartTitle" aria-describedby="chartDesc"></svg>
+          <div id="tooltip" role="status" aria-live="polite"></div>
+        </div>
+        <p id="chartDesc" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap"></p>
+
+        <h3 class="text-xs uppercase tracking-wide faint font-extrabold mt-6">Forskel: aktier minus ETF</h3>
+        <p class="text-xs muted mt-1 mb-2">
+          Over nullinjen giver aktierne mest, under nullinjen giver ETF'en mest.
+        </p>
+        <svg id="diff" viewBox="0 0 900 130" role="img"
+             aria-label="Forskellen mellem de to nettobeløb, år for år"></svg>
+      </section>
+
+      <!-- Skift i fordelen -->
+      <section class="card rounded-md p-5 md:p-6 mt-5" aria-labelledby="shiftTitle">
+        <h2 id="shiftTitle" class="text-sm font-extrabold">Hvornår skifter fordelen?</h2>
+        <p class="text-xs muted mt-1">
+          Beregnet over 50 år med de aktuelle forudsætninger. Modellen antager ikke, at der kun findes
+          ét skæringspunkt, og den opfinder ikke en dato inde i et år.
+        </p>
+        <div id="shiftBody" class="mt-3" role="status" aria-live="polite"></div>
+      </section>
+
+      <!-- År for år -->
+      <section class="card rounded-md p-5 md:p-6 mt-5">
+        <details id="tableBox">
+          <summary>Udviklingen år for år</summary>
+          <p class="scroll-hint text-xs faint mt-3">Træk tabellen til siden for at se de sidste kolonner.</p>
+          <div class="mt-2" style="overflow-x:auto;max-height:430px;overflow-y:auto">
+            <table class="tbl">
+              <caption class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">
+                Indbetalinger, nettobeløb for begge investeringer, forskellen og årets lagerskat, år for år
+              </caption>
+              <thead><tr>
+                <th scope="col">År</th>
+                <th scope="col">Indbetalinger</th>
+                <th scope="col">ETF efter skat</th>
+                <th scope="col">Aktier efter salg og skat</th>
+                <th scope="col">Forskel</th>
+                <th scope="col">Årets ETF-skat</th>
+              </tr></thead>
+              <tbody id="tbody"></tbody>
+            </table>
+          </div>
+          <p class="text-xs faint mt-3">
+            Aktiekolonnen viser et hypotetisk fuldt salg ved netop dette års afslutning. Den skat trækkes
+            aldrig fra det depot, der føres videre til næste år. Markerede rækker er de år, hvor fordelen skifter.
+          </p>
+        </details>
+      </section>
+
+      <!-- Forudsætninger -->
+      <section class="card rounded-md p-5 md:p-6 mt-5">
+        <details id="assumptions">
+          <summary>Forudsætninger og beregning</summary>
+          <div class="mt-4 text-sm muted leading-relaxed" style="max-width:80ch">
+
+            <h3 class="text-sm font-bold" style="color:var(--text-primary)">De to beskatningsformer</h3>
+            <ul class="list-disc pl-5 mt-2 space-y-1">
+              <li><strong>Lagerbeskatning</strong> betales hvert år af årets værdistigning — også selvom
+                du ikke har solgt noget. Skatten forlader depotet og forrenter sig derfor ikke videre.</li>
+              <li><strong>Realisationsbeskatning</strong> udskyder skatten på kursgevinster til det
+                tidspunkt, hvor du sælger. Indtil da arbejder også den udskudte skat for dig.</li>
+              <li>Beregningen gælder ETF'er, hvis afkast beskattes som <strong>aktieindkomst</strong>.
+                Ikke alle investeringsselskaber gør det — nogle beskattes som kapitalindkomst, og så holder
+                tallene her ikke.</li>
+              <li>Årets lave sats deles med al anden aktieindkomst. Har du udbytter eller gevinster andre
+                steder fra, er der mindre plads tilbage under 27 %.</li>
+            </ul>
+
+            <h3 class="text-sm font-bold mt-5" style="color:var(--text-primary)">Sådan regnes der</h3>
+            <ul class="list-disc pl-5 mt-2 space-y-1">
+              <li>Der investeres ved begyndelsen af et kalenderår, og hele investeringen sælges ved slutdatoen.</li>
+              <li>Månedsrenten er <span class="num">r = (1 + årligt afkast)<sup>1/12</sup> − 1</span>, ikke
+                afkastet delt med tolv. Hver måned: <span class="num">ny værdi = gammel værdi × (1 + r) + månedens indbetaling</span>.</li>
+              <li>Indbetalingerne sker ved månedens slutning og er de samme i begge forløb.</li>
+              <li>ETF'ens skat opgøres ved hvert årsskifte: årets gevinst er værdien før skat minus årets
+                begyndelsesværdi minus årets egne indbetalinger. Skatten trækkes derefter ud af depotet.
+                Der indbetales ikke ekstra udefra for at betale den.</li>
+              <li>Aktierne beholdes uden salg frem til slutdatoen. Anskaffelsessummen er startkapitalen plus
+                alle indbetalinger, og gevinsten opgøres først ved det fulde salg.</li>
+              <li>ETF'ens nettobeløb indeholder allerede al lagerbeskatning. Der beskattes ikke igen ved
+                det afsluttende salg — allerede beskattede gevinster beskattes kun én gang.</li>
+              <li>Skat af en positiv gevinst:
+                <span class="num">min(gevinst, ledig grænse) × lav sats + max(0, gevinst − ledig grænse) × høj sats</span>,
+                hvor <span class="num">ledig grænse = max(0, progressionsgrænse − øvrig aktieindkomst)</span>.</li>
+              <li>Den øvrige aktieindkomst bruges alene til at beregne den resterende plads under den lave
+                sats. Hverken den eller skatten af den lægges til eller trækkes fra investeringsresultatet.</li>
+              <li>Der regnes med fuld præcision hele vejen. Der afrundes først i visningen, og beløb der
+                ligger tættere på hinanden end en halv øre regnes som ens.</li>
+            </ul>
+
+            <h3 class="text-sm font-bold mt-5" style="color:var(--text-primary)">Hvad modellen ikke indeholder</h3>
+            <p class="mt-2">
+              Ingen omkostninger, ingen udbytter fra aktierne, ingen inflation og ingen udenlandsk kildeskat.
+              Ingen tab og ingen fremførte skattemæssige tab. Modellen understøtter kun konstante,
+              ikke-negative afkast — et negativt afkast ville kræve regler om fremførsel og modregning, som
+              en forsimplet skatterefusion ikke kan gengive troværdigt, og derfor er det udeladt frem for gættet.
+            </p>
+            <p class="mt-2">
+              Udbytte, svingende afkast, tab og et salg fordelt over flere år kan alle ændre resultatet —
+              i praksis er det især salg fordelt over flere år, der flytter noget, fordi progressionsgrænsen
+              så kan bruges mere end én gang.
+            </p>
+            <p class="mt-2">
+              Standardsatserne på 27 % og 42 % og grænsen på 79.400 kr. er <strong>2026-satser</strong>. De
+              holdes konstante gennem hele beregningen. Modellen forudsiger ikke fremtidige skatteregler.
+            </p>
+            <p class="mt-2">
+              Beregningen sammenligner <strong>beskatning</strong>. Den siger ikke, at en ETF og en håndfuld
+              enkeltaktier har samme risiko — en bred fond og et enkelt selskab er to forskellige ting, uanset
+              hvordan de beskattes. Vejledende beregning, ikke skatte- eller investeringsrådgivning.
+            </p>
+
+            <h3 class="text-sm font-bold mt-5" style="color:var(--text-primary)">Kilder</h3>
+            <ul class="list-disc pl-5 mt-2 space-y-1">
+              <li><a class="source-link" href="https://skat.dk/borger/aktier-og-andre-vaerdipapirer/skat-af-aktier"
+                     target="_blank" rel="noopener noreferrer">skat.dk — Skat af aktier</a></li>
+              <li><a class="source-link" href="https://skat.dk/borger/aktier-og-andre-vaerdipapirer/skat-af-investeringsbeviser-udstedt-af-investeringsforeninger-og-investeringsselskaber"
+                     target="_blank" rel="noopener noreferrer">skat.dk — Skat af investeringsbeviser udstedt af investeringsforeninger og investeringsselskaber</a></li>
+            </ul>
+          </div>
+        </details>
+      </section>
+
+    </div>
+  </div>
+</main>
+
+<script src="assets/kursliste.js"></script>
+<script src="assets/lagerskat.js"></script>
+<script src="assets/lagerskat-ui.js"></script>
+</body>
+</html>

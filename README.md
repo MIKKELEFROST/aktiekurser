@@ -19,6 +19,33 @@ almindeligt HTTP-kald fra en server, selvom den ikke sender CORS-headers.
 | `scripts/fetch-stocks.mjs` | Henter univers, valutakurs og kurser |
 | `.github/workflows/update-stocks.yml` | Kører scriptet på skema |
 
+## Lagerskat mod realisationsskat
+
+`lagerskat.html` sammenligner, hvad en investor har tilbage efter al skat, når det
+samme beløb investeres i en lagerbeskattet ETF frem for i aktier, der først beskattes
+ved salg. Alt regnes i browseren.
+
+**Siden står bevidst uden for navigationen.** Den er ikke med i `NAV`-listen i
+`assets/kursliste.js`, ingen anden side linker til den, og den bærer `noindex, nofollow`.
+Man skal kende adressen for at komme derind. Der er med vilje ingen `robots.txt`-regel:
+den ville udstille stien for enhver, der læste filen.
+
+| Fil | Rolle |
+|---|---|
+| `lagerskat.html` | Siden: felter, resultater, graf, tabel og forudsætninger |
+| `assets/lagerskat.js` | Modellen. Rene funktioner, ingen DOM. JSDoc-typet, ét globalt navn |
+| `assets/lagerskat-ui.js` | Brugerfladen. Ingen skatteregler |
+| `scripts/lagerskat.test.mjs` | 21 beregningstest, heriblandt modellens kontroltal på kronen |
+| `tsconfig.json` | Typekontrol af modellen via `checkJs` — ikke et byggetrin |
+
+```bash
+node --test scripts/lagerskat.test.mjs    # beregningerne
+npx -p typescript tsc --noEmit            # typerne i modellen
+```
+
+Satserne er 2026-satser og holdes konstante gennem hele beregningen. Modellen
+forudsiger ikke fremtidige skatteregler og er ikke skatterådgivning.
+
 ## Data
 
 | Fil | Indhold |
