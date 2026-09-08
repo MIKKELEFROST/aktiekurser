@@ -3,36 +3,57 @@
   "trailingSlash": false,
   "headers": [
     {
-      "source": "/data/(.*)",
+      "source": "/data/arkiv/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=0, s-maxage=600, stale-while-revalidate=86400" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, s-maxage=604800, stale-while-revalidate=2592000"
+        }
       ]
     },
-
+    {
+      "source": "/data/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, s-maxage=600, stale-while-revalidate=86400"
+        }
+      ]
+    },
     {
       "source": "/assets/fonts/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
     },
-
     {
       "source": "/assets/(.*).js",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate, s-maxage=86400, stale-while-revalidate=604800" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate, s-maxage=86400, stale-while-revalidate=604800"
+        }
       ]
     },
     {
       "source": "/assets/(.*).css",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate, s-maxage=86400, stale-while-revalidate=604800" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate, s-maxage=86400, stale-while-revalidate=604800"
+        }
       ]
     },
-
     {
       "source": "/assets/(.*).(svg|png|webp|avif|jpg|jpeg|ico)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=600, s-maxage=86400, stale-while-revalidate=604800" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=600, s-maxage=86400, stale-while-revalidate=604800"
+        }
       ]
     }
   ]
