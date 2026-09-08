@@ -29,7 +29,12 @@
   function axisKr(v) {
     const a = Math.abs(v);
     if (a < 0.5) return '0';
-    if (a >= 1e6) return axisNum(v / 1e6, 1) + ' mio.';
+    // Samme trin som K.fmtBig bruger, så aksen taler sitets eget sprog. Uden
+    // det øverste trin stod der "5.000.000.000.000 mio." på en akse, hvis
+    // nogen skrev et urimeligt beløb i feltet.
+    if (a >= 1e12) return axisNum(v / 1e12, 1) + ' bio.';
+    if (a >= 1e9) return axisNum(v / 1e9, a >= 1e10 ? 0 : 1) + ' mia.';
+    if (a >= 1e6) return axisNum(v / 1e6, a >= 1e7 ? 0 : 1) + ' mio.';
     if (a >= 1e3) return axisNum(v / 1e3, a >= 1e4 ? 0 : 1) + ' t.';
     return axisNum(v, 0);
   }
