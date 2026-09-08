@@ -61,6 +61,14 @@
   --fill-groen:      var(--coop-green-400);
   --fill-pastel-ink: var(--coop-bordeaux);
 
+  /* Knappen har sine egne roller, fordi den skal vendes om i mørk tilstand.
+     Bordeaux på mørk bund giver 1,3 : 1 mod fladen bagved — teksten kan læses,
+     men knappen kan ikke ses. Sitet har allerede svaret: på røde og bordeaux
+     kort vender knappen om til creme med bordeaux tekst. Mørk tilstand gør
+     det samme, i stedet for at finde på en ny farve. */
+  --btn-face:       var(--fill-bordeaux);   --btn-ink:       var(--fill-red-ink);
+  --btn-face-hover: var(--fill-red);        --btn-ink-hover: var(--fill-red-ink);
+
   /* Stigning og fald. Begge er sitets egne: den mørke grøn er kanten på
      knappen, den mørke rød er sitets tekstrøde. */
   --delta-up:       var(--coop-green-600);      /* 4,7 : 1 på hvid */
@@ -95,6 +103,8 @@
     --cta-edge:       var(--coop-green-600);
     --delta-up:       var(--coop-green-400);
     --delta-down:     #ef7070;
+    --btn-face:       var(--coop-satin-50);  --btn-ink:       var(--coop-bordeaux);
+    --btn-face-hover: #ffffff;               --btn-ink-hover: var(--coop-bordeaux);
   }
 }
 
@@ -114,6 +124,8 @@
   --cta-edge:       var(--coop-green-600);
   --delta-up:       var(--coop-green-400);
   --delta-down:     #ef7070;
+  --btn-face:       var(--coop-satin-50);  --btn-ink:       var(--coop-bordeaux);
+  --btn-face-hover: #ffffff;               --btn-ink-hover: var(--coop-bordeaux);
 }
 
 /* Porteron i fire vægte, med sitets egen fallback bagved. */
@@ -179,10 +191,10 @@ th[aria-sort="none"]       .caret::after { content: "⌄"; opacity: .45; }
    bordeaux på lys bund, hvid på farvet. Rød flade er reserveret til hele
    sektioner, ikke til enkeltknapper, så rødt ét sted altid betyder det samme. */
 .btn-primary {
-  background: var(--fill-bordeaux); color: var(--fill-red-ink);
+  background: var(--btn-face); color: var(--btn-ink);
   text-transform: uppercase; letter-spacing: .06em; font-size: 12px; font-weight: 700;
 }
-.btn-primary:hover { background: var(--fill-red); }
+.btn-primary:hover { background: var(--btn-face-hover); color: var(--btn-ink-hover); }
 .card-rod .btn-primary, .card-bordeaux .btn-primary {
   background: var(--fill-red-ink); color: var(--fill-bordeaux);
 }
