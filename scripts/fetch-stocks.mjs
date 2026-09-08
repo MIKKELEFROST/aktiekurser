@@ -363,7 +363,8 @@ const raw = (o) => (o && o.raw != null && Number.isFinite(o.raw) ? o.raw : null)
 // per symbol — about nine seconds for the whole universe — and every failure is
 // non-fatal, so a company simply carries no key figures.
 const FUND_MODULES = ['defaultKeyStatistics', 'financialData', 'calendarEvents', 'earningsHistory',
-  'majorHoldersBreakdown', 'insiderTransactions', 'summaryDetail', 'assetProfile'].join(',');
+  'majorHoldersBreakdown', 'insiderTransactions', 'summaryDetail', 'assetProfile',
+  'recommendationTrend'].join(',');
 
 // Yahoo's transaction text is prose. Only these two forms are someone deciding
 // to trade with their own money; grants, gifts and option exercises are pay, and
@@ -436,6 +437,21 @@ async function fetchFundamentals(symbol, session) {
       earnings_estimated: ev.isEarningsDateEstimate === true,
       earnings_call: ev.earningsCallDate?.[0]?.fmt || null,
       eps_estimate: raw(ev.earningsAverage),
+      // What the analysts covering the company say, and where they think the
+      // price is going. Counts and a target, never a verdict of our own: the
+      // page reports who said what, and says how many said it.
+      analysts: (() => {
+        const t = (r.recommendationTrend?.trend || []).find((x) => x.period === '0m')
+          || (r.recommendationTrend?.trend || [])[0];
+        if (!t) return null;
+        const total = (t.strongBuy || 0) + (t.buy || 0) + (t.hold || 0) + (t.sell || 0) + (t.strongSell || 0);
+        return total ? { strong_buy: t.strongBuy || 0, buy: t.buy || 0, hold: t.hold || 0,
+                         sell: t.sell || 0, strong_sell: t.strongSell || 0, total } : null;
+      })(),
+      target_mean: raw(fd.targetMeanPrice),
+      target_high: raw(fd.targetHighPrice),
+      target_low: raw(fd.targetLowPrice),
+      target_analysts: raw(fd.numberOfAnalystOpinions),
       ex_dividend: sd.exDividendDate?.fmt || null,
       dividend_date: sd.dividendDate?.fmt || null,
       payout_ratio: raw(sd.payoutRatio),
