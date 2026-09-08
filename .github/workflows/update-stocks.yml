@@ -80,6 +80,14 @@ jobs:
             node scripts/fetch-etf.mjs --quotes-only
           fi
 
+      # Arkivet er frosset ved sidste årsskifte, så det her er en no-op for alt
+      # der allerede er hentet. Det henter kun nye noteringer — og én gang om
+      # året, når årstallet skifter, hele bunken igen.
+      - name: Arkivér ny historik
+        if: steps.mode.outputs.full == 'true'
+        continue-on-error: true
+        run: node scripts/fetch-arkiv.mjs
+
       - name: Commit hvis der er ændringer
         run: |
           if git diff --quiet -- data/; then

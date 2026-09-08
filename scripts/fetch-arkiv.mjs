@@ -69,10 +69,21 @@ async function retrying(fn, attempts = 4) {
   throw last;
 }
 
+// Yahoo afviser period1=0 for helt nye noteringer — "Data doesn't exist for
+// startDate = 0" — selv om den gerne udleverer de tredive dage papiret har.
+// Så på et 400 spørges der igen med range=10y, som for dem dækker hele livet.
 async function fetchArchive(symbol) {
+  try { return await chartCall(symbol, 'period1=0&period2=' + PERIOD2 + '&interval=1d'); }
+  catch (err) {
+    if (!/HTTP 400/.test(String(err.message))) throw err;
+    return chartCall(symbol, 'range=10y&interval=1d');
+  }
+}
+
+async function chartCall(symbol, qs) {
   return retrying(async () => {
     const url = 'https://query1.finance.yahoo.com/v8/finance/chart/' + encodeURIComponent(symbol)
-      + '?period1=0&period2=' + PERIOD2 + '&interval=1d';
+      + '?' + qs;
     const res = await fetch(url, { headers: { 'user-agent': UA, accept: 'application/json' } });
     if (!res.ok) throw new Error('HTTP ' + res.status);
     const r = (await res.json())?.chart?.result?.[0];
@@ -83,12 +94,17 @@ async function fetchArchive(symbol) {
     // rigtige handelsdag. Det er kun periodebjælker der skal korrigeres, og
     // dem henter vi ikke her.
     const dates = [], vals = [];
+    const cutoff = String(THROUGH_YEAR + 1) + '-01-01';
     for (let i = 0; i < closes.length; i++) {
       if (closes[i] == null || stamps[i] == null) continue;
-      dates.push(new Date(stamps[i] * 1000).toISOString().slice(0, 10));
+      const day = new Date(stamps[i] * 1000).toISOString().slice(0, 10);
+      if (day >= cutoff) continue;      // arkivet stopper ved årsskiftet
+      dates.push(day);
       vals.push(round(closes[i]));
     }
-    if (dates.length < 2) throw new Error('kun ' + dates.length + ' punkter');
+    // Et papir noteret i indeværende år har intet før årsskiftet. Det er ikke
+    // en fejl — hele dets liv står i den nære fil — men det skal skrives ned,
+    // ellers ville de blive hentet forgæves hver eneste aften.
     return { dates, closes: vals };
   });
 }
@@ -108,7 +124,7 @@ async function alreadyDone(symbol) {
   if (FORCE) return false;
   try {
     const f = JSON.parse(await readFile(resolve(OUT_DIR, symbol + '.json'), 'utf8'));
-    return f.through === THROUGH_YEAR && Array.isArray(f.d) && f.d.length > 1;
+    return f.through === THROUGH_YEAR && Array.isArray(f.d);
   } catch { return false; }
 }
 
@@ -136,11 +152,17 @@ async function main() {
   const work = LIMIT ? todo.slice(0, LIMIT) : todo;
   console.log(`Henter ${work.length}…`);
 
-  let done = 0, written = 0, points = 0, bytes = 0;
+  let done = 0, written = 0, points = 0, bytes = 0, young = 0;
   const failed = [];
   await pool(work, CONCURRENCY, async (symbol) => {
     try {
       const { dates, closes } = await fetchArchive(symbol);
+      if (dates.length < 2) {
+        await writeFile(resolve(OUT_DIR, symbol + '.json'),
+          JSON.stringify({ symbol, through: THROUGH_YEAR, d: [], c: [] }) + '\n');
+        young++;
+        return;
+      }
       const json = JSON.stringify(pack(symbol, dates, closes)) + '\n';
       await writeFile(resolve(OUT_DIR, symbol + '.json'), json);
       written++; points += dates.length; bytes += json.length;
@@ -151,7 +173,9 @@ async function main() {
   });
 
   console.log(`Skrev ${written} arkiver, ${points.toLocaleString('da-DK')} kursdage, `
-    + `${(bytes / 1e6).toFixed(0)} MB` + (failed.length ? `, ${failed.length} fejlede` : ''));
+    + `${(bytes / 1e6).toFixed(0)} MB`
+    + (young ? `, ${young} noteret i år (intet at arkivere)` : '')
+    + (failed.length ? `, ${failed.length} fejlede` : ''));
   if (failed.length) {
     const why = {};
     for (const f of failed) why[f.reason] = (why[f.reason] || 0) + 1;

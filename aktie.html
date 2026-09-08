@@ -232,9 +232,12 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
     return (m && m.dates && m.dates.length > 12) ? m : null;
   };
 
-  function slice(full) {
-    const { dates, closes } = full;
-    const monthly = longSeries(full);
+  function slice(fullArg) {
+    // Er arkivet hentet, er "de daglige kurser" hele historikken, ikke bare
+    // de to år der står i den nære fil.
+    const src = (fullArg === full && archive) ? dailySeries() : fullArg;
+    const { dates, closes } = src;
+    const monthly = longSeries(fullArg);
 
     if (state.range === 'custom' && (state.from || state.to)) {
       // Rækker ønsket længere tilbage end de daglige kurser, læses den
@@ -263,8 +266,10 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
       return { dates: dates.slice(i), closes: closes.slice(i) };
     }
 
-    // "Alt" betyder hele den historik vi har, og det er den månedlige.
+    // "Alt" betyder hele historikken. Er arkivet hentet, ER det hele
+    // historikken i daglige kurser; ellers må den månedlige serie træde ind.
     if (p.sessions === Infinity) {
+      if (archive && src !== fullArg) return { dates, closes };
       return monthly ? { dates: monthly.dates, closes: monthly.closes, coarse: true }
                      : { dates, closes };
     }
@@ -403,7 +408,28 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
       + new Date(dates[i]).toLocaleDateString('da-DK', { day: 'numeric', month: 'short', year: '2-digit' })
       + '</text>').join('');
 
-    const d = closes.map((v, i) => (i ? 'L' : 'M') + x(i).toFixed(1) + ' ' + y(v).toFixed(1)).join(' ');
+    // Grafen er 900 enheder bred. Fyrre års daglige kurser er tolv punkter pr.
+    // enhed, og en path med elleve tusind punkter er et kvart megabyte markup
+    // der tegner den samme streg. Linjen tyndes derfor til tegning — det
+    // højeste og laveste i hvert spring beholdes, så toppe ikke forsvinder.
+    // Opsummeringen og markøren læser stadig af den fulde serie.
+    const step = Math.ceil(closes.length / 1800);
+    const thin = [];
+    if (step > 1) {
+      for (let i = 0; i < closes.length; i += step) {
+        const chunk = closes.slice(i, i + step);
+        let loI = i, hiI = i;
+        for (let k = 0; k < chunk.length; k++) {
+          if (chunk[k] < closes[loI]) loI = i + k;
+          if (chunk[k] > closes[hiI]) hiI = i + k;
+        }
+        const a = Math.min(loI, hiI), b2 = Math.max(loI, hiI);
+        thin.push(a); if (b2 !== a) thin.push(b2);
+      }
+      if (thin[thin.length - 1] !== closes.length - 1) thin.push(closes.length - 1);
+    }
+    const idxs = step > 1 ? thin : closes.map((_, i) => i);
+    const d = idxs.map((i, n) => (n ? 'L' : 'M') + x(i).toFixed(1) + ' ' + y(closes[i]).toFixed(1)).join(' ');
     const stroke = closes[closes.length - 1] >= closes[0] ? 'var(--delta-up)' : 'var(--delta-down)';
     chart.lo = lo; chart.hi = hi;
 
@@ -1491,10 +1517,45 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
   // ── Render ─────────────────────────────────────────────────────────────
   let full = null, row = null, fxRate = null;
 
+  // Hele kurshistorikken ligger i data/arkiv, én fil pr. papir, og den hentes
+  // først når nogen beder om et vindue der rækker længere end de to år i den
+  // nære fil. Indtil den er hentet, tegnes den lange serie — grafen står
+  // aldrig tom mens der ventes, og når arkivet lander, tegnes den om med
+  // rigtige handelsdage.
+  let archive = null, archiveState = 'idle';   // idle | henter | klar | ingen
+  let mergedCache = null;
+
+  function dailySeries() {
+    if (!archive) return full;
+    if (!mergedCache) mergedCache = K.spliceDaily(archive, { dates: full.dates, closes: full.closes });
+    return mergedCache;
+  }
+
+  // Rækker det valgte vindue længere tilbage end de daglige kurser vi har?
+  function needsArchive() {
+    const p = PRESETS.find((x) => x.key === state.range);
+    if (state.range === 'custom') return !!(state.from && state.from < dailySeries().dates[0]);
+    if (!p) return false;
+    if (p.sessions === Infinity) return true;
+    return dailySeries().dates.length < p.sessions * 0.98;
+  }
+
+  async function ensureArchive() {
+    if (archiveState !== 'idle' || !row) return;
+    archiveState = 'henter';
+    try {
+      archive = await K.loadArchive(row.symbol);
+      archiveState = archive ? 'klar' : 'ingen';
+    } catch { archiveState = 'ingen'; }
+    mergedCache = null;
+    if (archiveState === 'klar' && lastArgs) renderChartBlock();
+  }
+
   function renderChartBlock() {
     // A new window means new indices; an old selection would point at the
     // wrong days.
     sel.a = sel.b = null; sel.dragging = false;
+    if (full && needsArchive()) ensureArchive();
     const s = slice(full);
     const comparing = state.compare.length > 0;
 
@@ -1576,6 +1637,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
 
   function render(r, hist, fx, updatedAt, neighbours) {
     lastArgs = [r, hist, fx, updatedAt, neighbours];
+    if (!row || row.symbol !== r.symbol) { archive = null; archiveState = 'idle'; mergedCache = null; }
     row = r; full = hist; fxRate = fx;
     const cur = r.currency;
     const conv = cur !== 'DKK' && r.price_dkk != null;

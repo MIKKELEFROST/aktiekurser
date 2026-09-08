@@ -134,6 +134,33 @@
     return { dates: body.dates, closes: body.closes, range: body.range, monthly: body.monthly || null };
   }
 
+  // Arkivet: hver handelsdag fra første notering til og med sidste årsskifte.
+  // Datoerne står som dage siden den første kurs, fordi "2024-09-09" fylder
+  // tre gange så meget som tallet — så de foldes ud her.
+  async function loadArchive(symbol) {
+    const res = await fetch(dataUrl('arkiv/' + encodeURIComponent(symbol) + '.json'),
+      { headers: { accept: 'application/json' } });
+    if (!res.ok) return null;
+    const b = await res.json();
+    if (!Array.isArray(b.d) || !Array.isArray(b.c) || b.d.length < 2) return null;
+    const base = Date.parse(b.first + 'T00:00:00Z');
+    const dates = b.d.map((n) => new Date(base + n * 86400000).toISOString().slice(0, 10));
+    return { dates, closes: b.c, first: b.first, last: b.last, through: b.through };
+  }
+
+  // Arkivet slutter ved årsskiftet, den nære fil dækker de sidste par år.
+  // De overlapper, så sammenføjningen skærer arkivet der hvor den nære
+  // begynder — ellers ville et par hundrede dage stå to gange.
+  function spliceDaily(archive, recent) {
+    if (!archive) return recent;
+    if (!recent || !recent.dates.length) return archive;
+    const cut = recent.dates[0];
+    let i = archive.dates.length;
+    while (i > 0 && archive.dates[i - 1] >= cut) i--;
+    return { dates: archive.dates.slice(0, i).concat(recent.dates),
+             closes: archive.closes.slice(0, i).concat(recent.closes) };
+  }
+
   async function loadJson(name) {
     const res = await fetch(dataUrl(name), { cache: 'no-cache', headers: { accept: 'application/json' } });
     if (!res.ok) throw new Error('HTTP ' + res.status);
@@ -425,7 +452,7 @@
     initHints, renderNav,
     fmtPrice, fmtPct, fmtDelta, fmtInt, fmtBig, fmtDate, fmtAge, dirClass, esc,
     priceIn, currencyLabel, isConverted,
-    decorate, loadList, loadHistory, loadKeyFigures, loadBenchmarks, loadFundamentals,
+    decorate, loadList, loadHistory, loadArchive, spliceDaily, loadKeyFigures, loadBenchmarks, loadFundamentals,
     liveQuotes, tradingNow, startLive,
     peOf, moveBetween, nearestIndex, drawdownSeries,
     MARKETS, marketOf, flagOf, indexLabel,
