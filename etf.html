@@ -182,7 +182,8 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
     kun for en del af fondene, især de amerikanske; hvor den mangler, står der en streg frem for
     et gæt. Listen er ETF'er på nær nogle få danske investeringsforeninger, der står mærket som
     det under navnet. De er noteret på Nasdaq København og handles over børsen som resten, men
-    de er ikke ETF'er, og kilden oplyser hverken formue eller omkostning for dem.
+    de er ikke ETF'er, og kilden oplyser hverken formue eller omkostning for dem — de står
+    samlet under <a href="investeringsbeviser.html" class="link-accent">Investeringsbeviser</a>.
   </p>
 
 </div>
@@ -277,28 +278,28 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
       cell: (r) => { const v = view(r); const c = v.conv && r.price ? r.previous_close * (r.price_dkk / r.price) : r.previous_close;
         return '<span class="num">' + v.a + K.fmtPrice(c) + '</span>'; } },
 
-    { key: 'spark30', label: 'Udv. 30 dage', group: 'Udvikling', sortKey: 'change30d',
-      hint: 'Kurslinje for de seneste 30 handelsdage. Grøn betyder op over perioden, rød ned.',
+    { key: 'spark30', label: 'Kurslinje', group: 'Udvikling', sortKey: 'change30d',
+      hint: 'De seneste 30 kurser i fondens serie — ikke de seneste 30 dage: 30 noteringer er omkring seks uger for en fond der handles hver dag, og længere for en der ikke gør. Grøn betyder op over strækningen, rød ned. Kolonnen sorteres på “30 dage %”.',
       cell: (r) => K.sparkline(r.spark, r.change30d) },
 
     { key: 'pct_7d', label: '7 dage %', group: 'Udvikling', right: true, sortKey: 'change_7d',
-      hint: 'Kursændring over de seneste fem handelsdage — en børsuge.',
+      hint: 'Kursændring over de seneste syv dage.',
       cell: (r) => pct(r.change_7d) },
 
     { key: 'pct_30d', label: '30 dage %', group: 'Udvikling', right: true, sortKey: 'change30d',
-      hint: 'Kursændring over de seneste 30 handelsdage. Samme periode som kurslinjen.',
+      hint: 'Kursændring over de seneste 30 dage.',
       cell: (r) => pct(r.change30d) },
 
     { key: 'pct_6m', label: '6 mdr. %', group: 'Udvikling', right: true, sortKey: 'change_6m',
-      hint: 'Kursændring over de seneste 126 handelsdage, cirka et halvt år.',
+      hint: 'Kursændring over de seneste seks måneder.',
       cell: (r) => pct(r.change_6m) },
 
     { key: 'pct_1y', label: '1 år %', group: 'Udvikling', right: true, sortKey: 'change_1y',
-      hint: 'Kursændring over de seneste 252 handelsdage, cirka et børsår. Kursudvikling alene — udbytte fra en udbyttebetalende andel tæller ikke med.',
+      hint: 'Kursændring over de seneste tolv måneder. Kursudvikling alene — udbytte fra en udbyttebetalende andel tæller ikke med.',
       cell: (r) => pct(r.change_1y) },
 
     { key: 'pct_3y', label: '3 år %', group: 'Udvikling', right: true, sortKey: 'change_3y',
-      hint: 'Kursændring over de seneste 756 handelsdage, cirka tre børsår. Fonde noteret for nylig har ingen.',
+      hint: 'Kursændring over de seneste tre år. Fonde noteret for nylig har ingen.',
       cell: (r) => pct(r.change_3y) },
 
     { key: 'from_high', label: '% fra toppen', group: 'Udvikling', right: true,

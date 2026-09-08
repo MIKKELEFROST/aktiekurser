@@ -64,23 +64,25 @@ const MIN_NET_ASSETS_USD = 50e6;
 //
 // Til gengæld findes der ingen fundProfile: kaldet svarer 404, og det navn
 // kilden opgiver, er foreningens frem for afdelingens — alle tre Coop
-// Bank-afdelinger hedder det samme dér. Derfor står navn og udbyder her, som
-// de står i fondens eget faktaark, og resten hentes som for alle andre fonde.
+// Bank-afdelinger hedder det samme dér, og for den ene af dem opgiver den slet
+// intet kort navn. Derfor står navn og udbyder her, som de står i fondenes egne
+// faktaark, og resten hentes som for alle andre fonde.
 //
 // Formuen oplyser kilden heller ikke. Den bliver stående som null, og fonden
 // lander derfor sidst på rangeringen efter formue. Det er en oplysning der
 // mangler, ikke en påstand om, at fonden er lille.
 const EXTRA = [
-  {
-    symbol: 'WEICBV.CO',
-    name: 'Wealth Invest Coop Bank Vækst',
-    family: 'Wealth Invest',
-    exchange: 'Nasdaq København',
-    market: 'DK',
-    currency: 'DKK',
-    kind: 'investeringsforening',
-  },
-];
+  { symbol: 'WEICBS.CO', name: 'Wealth Invest Coop Bank Stabil'  },
+  { symbol: 'WEICBB.CO', name: 'Wealth Invest Coop Bank Balance' },
+  { symbol: 'WEICBV.CO', name: 'Wealth Invest Coop Bank Vækst'   },
+].map((e) => ({
+  family: 'Wealth Invest',
+  exchange: 'Nasdaq København',
+  market: 'DK',
+  currency: 'DKK',
+  kind: 'investeringsforening',
+  ...e,
+}));
 
 // Lægges oven på universet i begge kørselstyper, så en ny linje i EXTRA er med
 // allerede ved næste kurskørsel — der henter universet fra filen og altså ikke
@@ -273,12 +275,36 @@ async function fetchQuotes(symbols, session) {
 }
 
 // ── History ──────────────────────────────────────────────────────────────
-// Trading days, not calendar days: a week is five sessions, a year is 252.
-const WINDOWS = { change_7d: 5, change30d: 30, change_6m: 126, change_1y: 252, change_3y: 756 };
+// Vinduerne måles på datoer, ikke på antal kurser i serien. For en ETF der
+// handles hver dag er det samme sag — 252 kurser er et børsår. Men en dansk
+// investeringsforening printer kun en kurs, når nogen handler den: Coop Bank
+// Stabil har 269 kurser på to et halvt år, og "de seneste 252" rakte derfor
+// helt tilbage til februar 2024 og stod på siden som "1 år".
+const WINDOWS = {
+  change_7d: (iso) => shiftDays(iso, 7),
+  change30d: (iso) => shiftDays(iso, 30),
+  change_6m: (iso) => shiftMonths(iso, 6),
+  change_1y: (iso) => shiftMonths(iso, 12),
+  change_3y: (iso) => shiftMonths(iso, 36),
+};
 
-function moveOver(closes, back) {
-  const last = closes[closes.length - 1];
-  const base = closes[closes.length - 1 - back];
+const shiftDays = (iso, days) =>
+  new Date(new Date(iso + 'T00:00:00Z').getTime() - days * 86400000).toISOString().slice(0, 10);
+
+const shiftMonths = (iso, months) => {
+  const d = new Date(iso + 'T00:00:00Z');
+  d.setUTCMonth(d.getUTCMonth() - months);
+  return d.toISOString().slice(0, 10);
+};
+
+// Kursen som den stod på skæringsdagen: den sidste kurs på eller før den. Null
+// hvis serien ikke rækker så langt tilbage — så er der ikke noget at måle over,
+// og en streg er svaret.
+function moveSince(dates, closes, cut) {
+  if (!dates.length || dates[0] > cut) return null;
+  let i = dates.length - 1;
+  while (i > 0 && dates[i] > cut) i--;
+  const base = closes[i], last = closes[closes.length - 1];
   return base && last != null ? round(((last - base) / base) * 100, 2) : null;
 }
 
@@ -348,12 +374,18 @@ async function fetchLifetime(symbol, session) {
 }
 
 function derive(hist, monthly) {
-  const c = hist.closes;
+  const c = hist.closes, d = hist.dates;
+  const last = d[d.length - 1];
   const out = { spark: c.slice(-SPARK_POINTS) };
-  for (const [key, back] of Object.entries(WINDOWS)) out[key] = moveOver(c, back);
-  const year = c.slice(-252);
-  out.high_52w = round(Math.max(...year), 4);
-  out.low_52w = round(Math.min(...year), 4);
+  for (const [key, cutOf] of Object.entries(WINDOWS)) out[key] = moveSince(d, c, cutOf(last));
+
+  // Højeste og laveste lukkekurs inden for det seneste år, afgrænset på
+  // datoerne. Kilden har sit eget 52-ugers interval, men det er dagens
+  // yderpunkter og bærer derfor fejlprints med sig — én af de nye fonde stod
+  // med en top på 3.000 mod en kurs på 16.
+  const year = c.filter((_, i) => d[i] >= shiftMonths(last, 12));
+  out.high_52w = year.length ? round(Math.max(...year), 4) : null;
+  out.low_52w = year.length ? round(Math.min(...year), 4) : null;
   out.first_date = monthly && monthly.dates.length ? monthly.dates[0] : hist.dates[0];
 
   // Den daglige serie er tre år lang, og tre år er 756 handelsdage — så
@@ -361,24 +393,14 @@ function derive(hist, monthly) {
   // punkt mere end filen havde. Når den lange serie er der, måles de lange
   // vinduer på den i stedet.
   //
-  // Bjælkerne tælles ikke — de dateres. Yahoo vælger selv opløsningen på
-  // range=max, og en fond noteret for halvandet år siden får ugebjælker uanset
-  // at kaldet beder om måneder. Talt i bjælker blev 36 af dem så til “3 år” for
-  // en fond der ikke har levet halvdelen af det.
+  // Den lange serie dateres på samme måde, og af samme grund: Yahoo vælger selv
+  // opløsningen på range=max og giver en fond noteret for halvandet år siden
+  // ugebjælker. Talt i bjælker blev 36 af dem til “3 år” for en fond, der ikke
+  // har levet halvdelen af det.
   if (monthly && monthly.closes.length > 12) {
-    const d = monthly.dates, m = monthly.closes;
-    const overMonths = (months) => {
-      const target = new Date(d[d.length - 1] + 'T00:00:00Z');
-      target.setUTCMonth(target.getUTCMonth() - months);
-      const cut = target.toISOString().slice(0, 10);
-      if (d[0] > cut) return null;              // serien når ikke længere tilbage
-      let i = d.length - 1;
-      while (i > 0 && d[i] > cut) i--;
-      const a = m[i], b = m[m.length - 1];
-      return a ? round(((b - a) / a) * 100, 4) : null;
-    };
-    if (out.change_3y == null) out.change_3y = overMonths(36);
-    if (out.change_1y == null) out.change_1y = overMonths(12);
+    const md = monthly.dates, mc = monthly.closes, mlast = md[md.length - 1];
+    if (out.change_3y == null) out.change_3y = moveSince(md, mc, shiftMonths(mlast, 36));
+    if (out.change_1y == null) out.change_1y = moveSince(md, mc, shiftMonths(mlast, 12));
   }
   return out;
 }

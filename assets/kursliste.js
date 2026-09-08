@@ -354,6 +354,8 @@
       hint: 'Hele listen med kurser, filtre og sortering for begge markeder.' },
     { key: 'etf',         href: 'etf.html',           label: 'ETF-kurser',
       hint: 'Børshandlede fonde: én handel giver dig hele indekset. Kurser, formue og udvikling.' },
+    { key: 'investeringsbeviser', href: 'investeringsbeviser.html', label: 'Investeringsbeviser',
+      hint: 'Coop Banks tre investeringsbeviser fra Wealth Invest — Stabil, Balance og Vækst — side om side.' },
     { key: 'inspiration', href: 'inspiration.html',   label: 'Aktieinspiration',
       hint: 'Temalister beregnet ud fra kursdataene — vindere, mest handlede og 52-ugers yderpunkter.' },
     { key: 'sammenlign',  href: 'sammenlign.html',    label: 'Sammenlign',
