@@ -84,7 +84,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
         <label for="start">
           Startindskud<span class="hint-i" tabindex="0" role="note" aria-label="Om Startindskud" data-hint-title="Startindskud" data-hint="Det beløb du starter med. Det får hele perioden til at forrente sig og vejer derfor tungere end en enkelt månedlig indbetaling.">i</span>
         </label>
-        <span><input id="start" class="amount num" type="number" min="0" step="1000" value="25000"> <span class="unit">kr</span></span>
+        <span><input id="start" class="amount num" type="text" inputmode="numeric" autocomplete="off" min="0" step="1000" value="25.000"> <span class="unit">kr</span></span>
         <input id="startR" type="range" min="0" max="500000" step="1000" value="25000" aria-label="Startindskud">
       </div>
 
@@ -92,7 +92,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
         <label for="monthly">
           Månedligt indskud<span class="hint-i" tabindex="0" role="note" aria-label="Om Månedligt indskud" data-hint-title="Månedligt indskud" data-hint="Det beløb du lægger til hver måned. Indbetalingen sker først på måneden, så den forrentes i den måned der følger.">i</span>
         </label>
-        <span><input id="monthly" class="amount num" type="number" min="0" step="100" value="2000"> <span class="unit">kr</span></span>
+        <span><input id="monthly" class="amount num" type="text" inputmode="numeric" autocomplete="off" min="0" step="100" value="2.000"> <span class="unit">kr</span></span>
         <input id="monthlyR" type="range" min="0" max="25000" step="100" value="2000" aria-label="Månedligt indskud">
       </div>
 
@@ -294,6 +294,41 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
 
   const kr = new Intl.NumberFormat('da-DK', { maximumFractionDigits: 0 });
 
+  // The two kroner fields carry a thousands separator, which a number input
+  // will not accept — it empties itself the moment a punctuation mark appears —
+  // so they are text fields, and everything that reads or writes them goes
+  // through these two.
+  const SEPARATED = new Set(['start', 'monthly']);
+  const digitsOf = (v) => String(v).replace(/[^\d]/g, '');
+
+  function boxValue(id) {
+    const el = $('#' + id);
+    return SEPARATED.has(id) ? digitsOf(el.value) : el.value;
+  }
+
+  function setBox(id, value) {
+    const el = $('#' + id);
+    el.value = SEPARATED.has(id) && value !== '' && Number.isFinite(Number(value))
+      ? kr.format(Number(value)) : value;
+  }
+
+  // Reformatting moves every digit right of the caret, so the caret is put back
+  // after the same number of digits it stood behind rather than at the same
+  // character offset — otherwise typing in the middle of a figure walks the
+  // cursor backwards.
+  function reformat(el) {
+    const before = (el.value.slice(0, el.selectionStart || 0).match(/\d/g) || []).length;
+    const digits = digitsOf(el.value);
+    el.value = digits ? kr.format(Number(digits)) : '';
+    if (document.activeElement !== el) return;
+    let pos = 0, seen = 0;
+    while (pos < el.value.length && seen < before) {
+      if (/\d/.test(el.value[pos])) seen++;
+      pos++;
+    }
+    el.setSelectionRange(pos, pos);
+  }
+
   const FIELDS = ['start', 'monthly', 'years', 'rate', 'fee', 'raise', 'infl'];
   const DEFAULTS = { start: 25000, monthly: 2000, years: 20, rate: 7, fee: 0.5, raise: 0, infl: 2 };
   // Everything the simple view leaves out. Their inputs keep their values; the
@@ -374,7 +409,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
 
   function read() {
     const n = (id) => {
-      const el = $('#' + id), v = parseFloat(el.value);
+      const el = $('#' + id), v = parseFloat(boxValue(id));
       return Number.isFinite(v) ? Math.min(Math.max(v, +el.min || -Infinity), +el.max || Infinity) : DEFAULTS[id];
     };
     const adv = $('#adv').checked;
@@ -614,10 +649,12 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
   FIELDS.forEach((id) => {
     const box = $('#' + id), slider = $('#' + id + 'R');
     box.addEventListener('input', () => {
-      if (slider && box.value !== '') slider.value = box.value;
+      if (SEPARATED.has(id)) reformat(box);
+      const raw = boxValue(id);
+      if (slider && raw !== '') slider.value = raw;
       render();
     });
-    if (slider) slider.addEventListener('input', () => { box.value = slider.value; render(); });
+    if (slider) slider.addEventListener('input', () => { setBox(id, slider.value); render(); });
   });
 
   $('#real').addEventListener('change', () => { $('#inflWrap').hidden = !$('#real').checked; render(); });
@@ -630,7 +667,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
 
   $('#reset').addEventListener('click', () => {
     Object.keys(DEFAULTS).forEach((id) => {
-      $('#' + id).value = DEFAULTS[id];
+      setBox(id, DEFAULTS[id]);
       const s = $('#' + id + 'R'); if (s) s.value = DEFAULTS[id];
     });
     $('#real').checked = false; $('#inflWrap').hidden = true;
@@ -662,7 +699,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     Object.keys(DEFAULTS).forEach((k) => {
       const v = parseFloat(q.get(k));
       if (Number.isFinite(v)) {
-        $('#' + k).value = v;
+        setBox(k, v);
         const s = $('#' + k + 'R'); if (s) s.value = v;
       }
     });
