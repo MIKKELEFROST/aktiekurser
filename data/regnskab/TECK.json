@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:50:49.698Z",
+  "updated_at": "2026-09-08T09:38:26.980Z",
   "source": "Yahoo Finance",
   "symbol": "TECK",
   "summary": "Teck Resources Limited engages in research, exploration, development, processing, smelting, refining, and reclamation of mineral properties in Asia, the Americas, and Europe. It operates through Copper and Zinc segments. The company offers copper, zinc, and lead concentrates, as well as refined zinc, lead, and silver. It also produces lead, precious metals, molybdenum, fertilizers, and other metals; and sells refined metals or concentrates. In addition, it explores for gold. The company was formerly known as Teck Cominco Limited and changed its name to Teck Resources Limited in April 2009. Teck Resources Limited was founded in 1913 and is based in Vancouver, Canada.",
@@ -19,14 +19,232 @@
     "strong_sell": 1,
     "total": 17
   },
-  "target_mean": 54.309654,
-  "target_high": 69.43555,
-  "target_low": 36.163322,
+  "target_mean": 54.295883,
+  "target_high": 69.417946,
+  "target_low": 36.154152,
   "target_analysts": 4,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 18628000000,
+      "net": 4089000000,
+      "margin": 22
+    },
+    {
+      "year": "2023",
+      "revenue": 15011000000,
+      "net": 2435000000,
+      "margin": 16.2
+    },
+    {
+      "year": "2024",
+      "revenue": 13505000000,
+      "net": 406000000,
+      "margin": 3
+    },
+    {
+      "year": "2025",
+      "revenue": 10756000000,
+      "net": 1401000000,
+      "margin": 13
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 3385000000,
+      "earnings": 281000000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 3058000000,
+      "earnings": 544000000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 3943000000,
+      "earnings": 819000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 3605000000,
+      "earnings": 854000000
+    }
+  ],
+  "growth": {
+    "q0": 0.7641,
+    "q1": -0.2323,
+    "y0": 0.9135,
+    "y1": -0.156
+  },
+  "ratings": [
+    {
+      "date": "2026-07-28",
+      "firm": "JP Morgan",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-09",
+      "firm": "JP Morgan",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-02",
+      "firm": "Deutsche Bank",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-05-01",
+      "firm": "JP Morgan",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-02-23",
+      "firm": "Benchmark",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2025-12-05",
+      "firm": "JP Morgan",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2025-10-09",
+      "firm": "JP Morgan",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2025-09-08",
+      "firm": "Deutsche Bank",
+      "from": "Hold",
+      "to": "Buy",
+      "action": "up"
+    },
+    {
+      "date": "2025-07-28",
+      "firm": "Benchmark",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2025-07-25",
+      "firm": "RBC Capital",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    }
+  ],
+  "holders": [
+    {
+      "name": "Principal Financial Group, Inc.",
+      "kind": "institution",
+      "pct": 4.76,
+      "shares": 23000233,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Royal Bank of Canada",
+      "kind": "institution",
+      "pct": 3.46,
+      "shares": 16734153,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "UBS Group AG",
+      "kind": "institution",
+      "pct": 3.02,
+      "shares": 14602362,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Capital Management LLC",
+      "kind": "institution",
+      "pct": 2.71,
+      "shares": 13078420,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Hancock Prospecting Pty Ltd",
+      "kind": "institution",
+      "pct": 2.13,
+      "shares": 10298293,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Goldman Sachs Group Inc",
+      "kind": "institution",
+      "pct": 1.8,
+      "shares": 8713129,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Davis Selected Advisers",
+      "kind": "institution",
+      "pct": 1.73,
+      "shares": 8363497,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "NORGES BANK",
+      "kind": "institution",
+      "pct": 1.72,
+      "shares": 8316517,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Bank of Montreal /CAN/",
+      "kind": "institution",
+      "pct": 1.7,
+      "shares": 8206284,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Mirae Asset Global ETFs Holdings Ltd.",
+      "kind": "institution",
+      "pct": 1.59,
+      "shares": 7689806,
+      "date": "2026-06-30"
+    }
+  ],
+  "insider_net": {
+    "period": "6m",
+    "buys": 0,
+    "sells": 0,
+    "bought": 0,
+    "sold": null,
+    "net_pct": null
+  },
+  "extras": {
+    "beta": 1.603,
+    "enterprise_value": 38636457984,
+    "ev_ebitda": 5.893,
+    "ev_revenue": 2.762,
+    "float_shares": 469283430,
+    "short_shares": 14104917,
+    "short_pct_float": null,
+    "short_ratio": 3.95,
+    "last_split": "2:1",
+    "last_split_date": "2007-05-11"
+  },
   "ex_dividend": "2026-09-15",
   "dividend_date": null,
   "payout_ratio": 0.09819999,
-  "inst_count": 821,
+  "inst_count": 822,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -143,6 +361,175 @@
       "value": 737324,
       "shares": 22354,
       "date": "2026-06-01"
+    }
+  ],
+  "dividends": [
+    {
+      "date": "2014-12-11",
+      "amount": 0.392
+    },
+    {
+      "date": "2015-06-11",
+      "amount": 0.122
+    },
+    {
+      "date": "2015-12-10",
+      "amount": 0.037
+    },
+    {
+      "date": "2016-06-13",
+      "amount": 0.039
+    },
+    {
+      "date": "2016-12-13",
+      "amount": 0.038
+    },
+    {
+      "date": "2017-06-13",
+      "amount": 0.075
+    },
+    {
+      "date": "2017-09-14",
+      "amount": 0.041
+    },
+    {
+      "date": "2017-12-14",
+      "amount": 0.351
+    },
+    {
+      "date": "2018-03-14",
+      "amount": 0.039
+    },
+    {
+      "date": "2018-06-14",
+      "amount": 0.039
+    },
+    {
+      "date": "2018-09-13",
+      "amount": 0.038
+    },
+    {
+      "date": "2019-03-14",
+      "amount": 0.038
+    },
+    {
+      "date": "2019-06-13",
+      "amount": 0.037
+    },
+    {
+      "date": "2019-09-12",
+      "amount": 0.038
+    },
+    {
+      "date": "2019-12-12",
+      "amount": 0.038
+    },
+    {
+      "date": "2020-03-12",
+      "amount": 0.036
+    },
+    {
+      "date": "2020-06-12",
+      "amount": 0.037
+    },
+    {
+      "date": "2020-09-14",
+      "amount": 0.038
+    },
+    {
+      "date": "2020-12-14",
+      "amount": 0.039
+    },
+    {
+      "date": "2021-03-12",
+      "amount": 0.04
+    },
+    {
+      "date": "2021-06-14",
+      "amount": 0.041
+    },
+    {
+      "date": "2021-09-14",
+      "amount": 0.04
+    },
+    {
+      "date": "2021-12-14",
+      "amount": 0.039
+    },
+    {
+      "date": "2022-03-14",
+      "amount": 0.49
+    },
+    {
+      "date": "2022-06-14",
+      "amount": 0.097
+    },
+    {
+      "date": "2022-09-14",
+      "amount": 0.095
+    },
+    {
+      "date": "2022-12-14",
+      "amount": 0.092
+    },
+    {
+      "date": "2023-03-14",
+      "amount": 0.455
+    },
+    {
+      "date": "2023-06-14",
+      "amount": 0.094
+    },
+    {
+      "date": "2023-09-14",
+      "amount": 0.092
+    },
+    {
+      "date": "2023-12-14",
+      "amount": 0.093
+    },
+    {
+      "date": "2024-03-14",
+      "amount": 0.093
+    },
+    {
+      "date": "2024-06-17",
+      "amount": 0.091
+    },
+    {
+      "date": "2024-09-13",
+      "amount": 0.46
+    },
+    {
+      "date": "2024-12-13",
+      "amount": 0.088
+    },
+    {
+      "date": "2025-03-14",
+      "amount": 0.087
+    },
+    {
+      "date": "2025-06-16",
+      "amount": 0.092
+    },
+    {
+      "date": "2025-09-15",
+      "amount": 0.09
+    },
+    {
+      "date": "2026-03-13",
+      "amount": 0.092
+    },
+    {
+      "date": "2026-06-15",
+      "amount": 0.089
+    }
+  ],
+  "splits": [
+    {
+      "date": "2007-05-11",
+      "ratio": "2:1",
+      "factor": 2
     }
   ]
 }

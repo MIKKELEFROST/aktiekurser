@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:25:24.620Z",
+  "updated_at": "2026-09-08T09:38:26.291Z",
   "source": "Yahoo Finance",
   "symbol": "LEN",
   "summary": "Lennar Corporation, together with its subsidiaries, operates as a homebuilder primarily under the Lennar brand in the United States. It operates through Homebuilding East, Homebuilding Central, Homebuilding South Central, Homebuilding West, Financial Services, Multifamily, and Lennar Other segments. The company's homebuilding operations include the construction and sale of single-family attached and detached homes, as well as the purchase, development, and sale of residential land; and development, construction, and management of multifamily rental properties. It also offers residential mortgage financing, title insurance, and closing services for home buyers and others, as well as originating and selling securitization commercial mortgage loans. In addition, the company is involved in fund investment activities. It primarily serves first-time, move-up, active adult, and luxury homebuyers. The company was founded in 1954 and is based in Miami, Florida.",
@@ -23,6 +23,224 @@
   "target_high": 120,
   "target_low": 67,
   "target_analysts": 13,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 33671010000,
+      "net": 4614125000,
+      "margin": 13.7
+    },
+    {
+      "year": "2023",
+      "revenue": 34233366000,
+      "net": 3938511000,
+      "margin": 11.5
+    },
+    {
+      "year": "2024",
+      "revenue": 35441452000,
+      "net": 3932533000,
+      "margin": 11.1
+    },
+    {
+      "year": "2025",
+      "revenue": 34186934000,
+      "net": 2078179000,
+      "margin": 6.1
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 8810278000,
+      "earnings": 590967000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 9367609000,
+      "earnings": 490237000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 6619476000,
+      "earnings": 229383000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 7939872000,
+      "earnings": 304772000
+    }
+  ],
+  "growth": {
+    "q0": -0.3469,
+    "q1": -0.0017,
+    "y0": -0.3121,
+    "y1": 0.1663
+  },
+  "ratings": [
+    {
+      "date": "2026-09-04",
+      "firm": "StoneX",
+      "from": null,
+      "to": "Hold",
+      "action": "init"
+    },
+    {
+      "date": "2026-08-06",
+      "firm": "Truist Securities",
+      "from": "Hold",
+      "to": "Hold",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-15",
+      "firm": "Citigroup",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-06-16",
+      "firm": "UBS",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-06-16",
+      "firm": "JP Morgan",
+      "from": "Underweight",
+      "to": "Underweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-06-15",
+      "firm": "B of A Securities",
+      "from": "Underperform",
+      "to": "Underperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-06-15",
+      "firm": "RBC Capital",
+      "from": "Underperform",
+      "to": "Underperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-06-15",
+      "firm": "Barclays",
+      "from": "Underweight",
+      "to": "Underweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-06-15",
+      "firm": "Wells Fargo",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
+    {
+      "date": "2026-06-15",
+      "firm": "Evercore ISI Group",
+      "from": "Underperform",
+      "to": "Underperform",
+      "action": "main"
+    }
+  ],
+  "holders": [
+    {
+      "name": "Blackrock Inc.",
+      "kind": "institution",
+      "pct": 8.72,
+      "shares": 18345964,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Berkshire Hathaway, Inc",
+      "kind": "institution",
+      "pct": 6.23,
+      "shares": 13111741,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Capital Management LLC",
+      "kind": "institution",
+      "pct": 6.19,
+      "shares": 13021553,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Greenhaven Associates, Inc.",
+      "kind": "institution",
+      "pct": 5.38,
+      "shares": 11316279,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Eagle Capital Management LLC",
+      "kind": "institution",
+      "pct": 5.08,
+      "shares": 10686983,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "State Street Corporation",
+      "kind": "institution",
+      "pct": 4.95,
+      "shares": 10427376,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Portfolio Management LLC",
+      "kind": "institution",
+      "pct": 4.54,
+      "shares": 9547076,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Aristotle Capital Management, LLC",
+      "kind": "institution",
+      "pct": 3.72,
+      "shares": 7836325,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Manufacturers Life Insurance Co.",
+      "kind": "institution",
+      "pct": 3.17,
+      "shares": 6683066,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Geode Capital Management, LLC",
+      "kind": "institution",
+      "pct": 2.77,
+      "shares": 5832989,
+      "date": "2026-06-30"
+    }
+  ],
+  "insider_net": {
+    "period": "6m",
+    "buys": 0,
+    "sells": 0,
+    "bought": 0,
+    "sold": null,
+    "net_pct": null
+  },
+  "extras": {
+    "beta": 1.398,
+    "enterprise_value": 24670609408,
+    "ev_ebitda": 10.794,
+    "ev_revenue": 0.754,
+    "float_shares": 201120945,
+    "short_shares": 513503,
+    "short_pct_float": 0.29,
+    "short_ratio": 0.22,
+    "last_split": "1033:1000",
+    "last_split_date": "2025-01-21"
+  },
   "ex_dividend": "2026-07-10",
   "dividend_date": null,
   "payout_ratio": 0.31350002,
@@ -143,6 +361,200 @@
       "value": 1433,
       "shares": 17,
       "date": "2026-07-10"
+    }
+  ],
+  "dividends": [
+    {
+      "date": "2016-10-03",
+      "amount": 0.0381
+    },
+    {
+      "date": "2017-01-25",
+      "amount": 0.0381
+    },
+    {
+      "date": "2017-04-28",
+      "amount": 0.0381
+    },
+    {
+      "date": "2017-07-11",
+      "amount": 0.0381
+    },
+    {
+      "date": "2017-10-18",
+      "amount": 0.0381
+    },
+    {
+      "date": "2018-01-25",
+      "amount": 0.0387
+    },
+    {
+      "date": "2018-04-24",
+      "amount": 0.0387
+    },
+    {
+      "date": "2018-07-11",
+      "amount": 0.0387
+    },
+    {
+      "date": "2018-10-18",
+      "amount": 0.0387
+    },
+    {
+      "date": "2019-01-24",
+      "amount": 0.0387
+    },
+    {
+      "date": "2019-04-23",
+      "amount": 0.0387
+    },
+    {
+      "date": "2019-07-10",
+      "amount": 0.0387
+    },
+    {
+      "date": "2019-10-17",
+      "amount": 0.0387
+    },
+    {
+      "date": "2020-01-23",
+      "amount": 0.121
+    },
+    {
+      "date": "2020-04-20",
+      "amount": 0.121
+    },
+    {
+      "date": "2020-07-09",
+      "amount": 0.121
+    },
+    {
+      "date": "2020-10-15",
+      "amount": 0.242
+    },
+    {
+      "date": "2021-01-28",
+      "amount": 0.242
+    },
+    {
+      "date": "2021-04-20",
+      "amount": 0.242
+    },
+    {
+      "date": "2021-07-01",
+      "amount": 0.242
+    },
+    {
+      "date": "2021-10-13",
+      "amount": 0.242
+    },
+    {
+      "date": "2022-01-26",
+      "amount": 0.363
+    },
+    {
+      "date": "2022-04-25",
+      "amount": 0.363
+    },
+    {
+      "date": "2022-07-06",
+      "amount": 0.363
+    },
+    {
+      "date": "2022-10-12",
+      "amount": 0.363
+    },
+    {
+      "date": "2023-01-26",
+      "amount": 0.363
+    },
+    {
+      "date": "2023-04-25",
+      "amount": 0.363
+    },
+    {
+      "date": "2023-07-06",
+      "amount": 0.363
+    },
+    {
+      "date": "2023-10-11",
+      "amount": 0.363
+    },
+    {
+      "date": "2024-01-23",
+      "amount": 0.484
+    },
+    {
+      "date": "2024-04-23",
+      "amount": 0.484
+    },
+    {
+      "date": "2024-07-05",
+      "amount": 0.484
+    },
+    {
+      "date": "2024-10-09",
+      "amount": 0.484
+    },
+    {
+      "date": "2025-01-29",
+      "amount": 0.5
+    },
+    {
+      "date": "2025-04-23",
+      "amount": 0.5
+    },
+    {
+      "date": "2025-07-03",
+      "amount": 0.5
+    },
+    {
+      "date": "2025-10-10",
+      "amount": 0.5
+    },
+    {
+      "date": "2026-02-04",
+      "amount": 0.5
+    },
+    {
+      "date": "2026-04-22",
+      "amount": 0.5
+    },
+    {
+      "date": "2026-07-10",
+      "amount": 0.5
+    }
+  ],
+  "splits": [
+    {
+      "date": "1980-10-31",
+      "ratio": "2:1",
+      "factor": 2
+    },
+    {
+      "date": "1992-02-26",
+      "ratio": "2:1",
+      "factor": 2
+    },
+    {
+      "date": "1994-04-21",
+      "ratio": "3:2",
+      "factor": 1.5
+    },
+    {
+      "date": "2004-01-21",
+      "ratio": "2:1",
+      "factor": 2
+    },
+    {
+      "date": "2017-11-09",
+      "ratio": "1017:1000",
+      "factor": 1.017
+    },
+    {
+      "date": "2025-01-21",
+      "ratio": "1033:1000",
+      "factor": 1.033
     }
   ]
 }

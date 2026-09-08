@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:25:25.289Z",
+  "updated_at": "2026-09-08T09:38:26.865Z",
   "source": "Yahoo Finance",
   "symbol": "SMCI",
   "summary": "Super Micro Computer, Inc., together with its subsidiaries, develops and sells server and storage solutions based on modular and open-standard architecture in the United States, Asia, Europe, and internationally. The company provides liquid and air-cooled AI servers for training and inferencing with integrated graphics processing units (GPUs) or PCIe based architectures; SuperBlade, MicroBlade, FlexTwin, GrandTwin, and BigTwin blade and multi-node systems; SuperStorage systems; Hyper, CloudDC, and WIO and rackmount systems; embedded (5G/IoT/Edge) systems; and MicroCloud server systems. It also offers workstations and networking devices; and modular server subsystems and accessories, including server boards, chassis, power supplies, and other accessories. In addition, the company provides remote system management solutions, such as Server Management suite comprising Supermicro Server Manager, Supermicro Power Management software, Supermicro Update Manager, SuperCloud Composer, and SuperDoctor 5. Further, the company identifies service requirements; creates and executes project plans; conducts verification testing; offers training; and provides technical documentation. Additionally, it offers rack level services from design to deployment for full rack and cluster level deployments of AI and HPC datacenters; help desk services and on-site product support; and warranties, maintenance, and technical support services. The company serves enterprise data centers, cloud computing, artificial intelligence, 5G, and edge computing markets through direct and indirect sales force, distributors, value-added resellers, system integrators, and original equipment manufacturers. Super Micro Computer, Inc. was incorporated in 1993 and is headquartered in San Jose, California.",
@@ -23,10 +23,228 @@
   "target_high": 60,
   "target_low": 15,
   "target_analysts": 16,
+  "statements": [
+    {
+      "year": "2023",
+      "revenue": 7123482000,
+      "net": 639998000,
+      "margin": 9
+    },
+    {
+      "year": "2024",
+      "revenue": 14942854000,
+      "net": 1208149000,
+      "margin": 8.1
+    },
+    {
+      "year": "2025",
+      "revenue": 21972042000,
+      "net": 1048854000,
+      "margin": 4.8
+    },
+    {
+      "year": "2026",
+      "revenue": 39063072000,
+      "net": 2230453000,
+      "margin": 5.7
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 5017790000,
+      "earnings": 168285000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 12682491000,
+      "earnings": 400564000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 10243014000,
+      "earnings": 483387000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 11119777000,
+      "earnings": 1178217000
+    }
+  ],
+  "growth": {
+    "q0": 1.963,
+    "q1": 0.5111,
+    "y0": 0.19510001,
+    "y1": 0.22770001
+  },
+  "ratings": [
+    {
+      "date": "2024-10-02",
+      "firm": "Barclays",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
+    {
+      "date": "2024-09-23",
+      "firm": "Loop Capital",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2024-09-18",
+      "firm": "Needham",
+      "from": null,
+      "to": "Buy",
+      "action": "init"
+    },
+    {
+      "date": "2024-09-17",
+      "firm": "Mizuho",
+      "from": null,
+      "to": "Neutral",
+      "action": "init"
+    },
+    {
+      "date": "2024-09-06",
+      "firm": "JP Morgan",
+      "from": "Overweight",
+      "to": "Neutral",
+      "action": "down"
+    },
+    {
+      "date": "2024-09-04",
+      "firm": "Barclays",
+      "from": "Overweight",
+      "to": "Equal-Weight",
+      "action": "down"
+    },
+    {
+      "date": "2024-08-28",
+      "firm": "CFRA",
+      "from": "Buy",
+      "to": "Hold",
+      "action": "down"
+    },
+    {
+      "date": "2024-08-28",
+      "firm": "Barclays",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "reit"
+    },
+    {
+      "date": "2024-08-28",
+      "firm": "Wells Fargo",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
+    {
+      "date": "2024-08-08",
+      "firm": "Goldman Sachs",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    }
+  ],
+  "holders": [
+    {
+      "name": "Blackrock Inc.",
+      "kind": "institution",
+      "pct": 7.26,
+      "shares": 47686321,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Capital Management LLC",
+      "kind": "institution",
+      "pct": 5.53,
+      "shares": 36356823,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Portfolio Management LLC",
+      "kind": "institution",
+      "pct": 5,
+      "shares": 32864645,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Jane Street Group, LLC",
+      "kind": "institution",
+      "pct": 4.38,
+      "shares": 28787183,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "State Street Corporation",
+      "kind": "institution",
+      "pct": 3.75,
+      "shares": 24635554,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "UBS Group AG",
+      "kind": "institution",
+      "pct": 3,
+      "shares": 19689932,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
+      "kind": "fond",
+      "pct": 2.66,
+      "shares": 17460407,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Geode Capital Management, LLC",
+      "kind": "institution",
+      "pct": 2.36,
+      "shares": 15510079,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "VANGUARD INDEX FUNDS-Vanguard 500 Index Fund",
+      "kind": "fond",
+      "pct": 2.22,
+      "shares": 14599419,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "VANGUARD INDEX FUNDS-Vanguard Mid-Cap Index Fund",
+      "kind": "fond",
+      "pct": 1.81,
+      "shares": 11913681,
+      "date": "2026-06-30"
+    }
+  ],
+  "insider_net": {
+    "period": "6m",
+    "buys": 0,
+    "sells": 0,
+    "bought": 0,
+    "sold": null,
+    "net_pct": null
+  },
+  "extras": {
+    "beta": 1.996,
+    "enterprise_value": 31950985216,
+    "ev_ebitda": 11.313,
+    "ev_revenue": 0.818,
+    "float_shares": 557428559,
+    "short_shares": 91222919,
+    "short_pct_float": 18.04,
+    "short_ratio": 1.61,
+    "last_split": "10:1",
+    "last_split_date": "2024-10-01"
+  },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 1108,
+  "inst_count": 1110,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -143,6 +361,14 @@
       "value": null,
       "shares": 3248,
       "date": "2026-08-10"
+    }
+  ],
+  "dividends": [],
+  "splits": [
+    {
+      "date": "2024-10-01",
+      "ratio": "10:1",
+      "factor": 10
     }
   ]
 }

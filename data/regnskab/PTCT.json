@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:25:25.036Z",
+  "updated_at": "2026-09-08T09:38:27.291Z",
   "source": "Yahoo Finance",
   "symbol": "PTCT",
   "summary": "PTC Therapeutics, Inc., a biopharmaceutical company, focuses on the discovery, development, and commercialization of medicines to children and adults living with rare disorders in the United States and internationally. The company provides Translarna and Emflaza for the treatment of Duchenne muscular dystrophy; Upstaza to treat aromatic l-amino acid decarboxylas (AADC) deficiency, a central nervous system disorder; Tegsedi and Waylivra for the treatment of rare diseases; and Evrysdi to treat spinal muscular atrophy (SMA) in adults and children. Its development pipeline products include Sepiapterin for the treatment of phenylketonuria; PTC518 splicing platform, which is being developed for the treatment of Huntington's disease; and inflammation and ferroptosis platforms, including vatiquinone to treat Friedreich's ataxia. The company distributes its products through third-party distributors. It has collaborations with F. Hoffman-La Roche Ltd., Hoffman-La Roche Inc., the SMA Foundation, National Taiwan University, Akcea Therapeutics, Inc., and Shiratori Pharmaceutical Co., Ltd. The company has license and collaboration agreement with Novartis Pharmaceuticals Corporation to develop PTC518 Huntington's disease program. It markets Upstaza, a gene therapy with the brand name Kebilidi in the United States. PTC Therapeutics, Inc. was incorporated in 1998 and is headquartered in Warren, New Jersey.",
@@ -23,10 +23,228 @@
   "target_high": 130,
   "target_low": 70,
   "target_analysts": 14,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 698801000,
+      "net": -559017000,
+      "margin": -80
+    },
+    {
+      "year": "2023",
+      "revenue": 937822000,
+      "net": -626604000,
+      "margin": -66.8
+    },
+    {
+      "year": "2024",
+      "revenue": 806780000,
+      "net": -363295000,
+      "margin": -45
+    },
+    {
+      "year": "2025",
+      "revenue": 1730655000,
+      "net": 682644000,
+      "margin": 39.4
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 211007000,
+      "earnings": 15896000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 164677000,
+      "earnings": -134965000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 272551000,
+      "earnings": -2809000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 360519000,
+      "earnings": 83496000
+    }
+  ],
+  "growth": {
+    "q0": 0.64980006,
+    "q1": 1.1373,
+    "y0": -0.79050004,
+    "y1": 0.5658
+  },
+  "ratings": [
+    {
+      "date": "2026-08-14",
+      "firm": "Barclays",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-08-13",
+      "firm": "Wells Fargo",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-31",
+      "firm": "Morgan Stanley",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-31",
+      "firm": "Wells Fargo",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-20",
+      "firm": "Wells Fargo",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-16",
+      "firm": "Cantor Fitzgerald",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-07",
+      "firm": "RBC Capital",
+      "from": "Sector Perform",
+      "to": "Sector Perform",
+      "action": "main"
+    },
+    {
+      "date": "2026-05-27",
+      "firm": "Jefferies",
+      "from": "Hold",
+      "to": "Buy",
+      "action": "up"
+    },
+    {
+      "date": "2026-05-08",
+      "firm": "TD Cowen",
+      "from": "Hold",
+      "to": "Buy",
+      "action": "up"
+    },
+    {
+      "date": "2026-05-08",
+      "firm": "RBC Capital",
+      "from": "Sector Perform",
+      "to": "Sector Perform",
+      "action": "main"
+    }
+  ],
+  "holders": [
+    {
+      "name": "Blackrock Inc.",
+      "kind": "institution",
+      "pct": 16.73,
+      "shares": 13964554,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "RTW Investments LP",
+      "kind": "institution",
+      "pct": 9.28,
+      "shares": 7746415,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Jupiter Topco LLC",
+      "kind": "institution",
+      "pct": 8.67,
+      "shares": 7236402,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "iShares Trust-iShares Core S&P Small-Cap ETF",
+      "kind": "fond",
+      "pct": 6.05,
+      "shares": 5050915,
+      "date": "2026-07-31"
+    },
+    {
+      "name": "Vanguard Portfolio Management LLC",
+      "kind": "institution",
+      "pct": 5.9,
+      "shares": 4928111,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "State Street Corporation",
+      "kind": "institution",
+      "pct": 5.51,
+      "shares": 4598952,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Wellington Management Group, LLP",
+      "kind": "institution",
+      "pct": 4.95,
+      "shares": 4128273,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Capital Management LLC",
+      "kind": "institution",
+      "pct": 4.48,
+      "shares": 3739127,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
+      "kind": "fond",
+      "pct": 3.16,
+      "shares": 2635817,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Geode Capital Management, LLC",
+      "kind": "institution",
+      "pct": 2.64,
+      "shares": 2207376,
+      "date": "2026-06-30"
+    }
+  ],
+  "insider_net": {
+    "period": "6m",
+    "buys": 19,
+    "sells": 27,
+    "bought": 241017,
+    "sold": 361359,
+    "net_pct": -1.9
+  },
+  "extras": {
+    "beta": 0.545,
+    "enterprise_value": 6572653568,
+    "ev_ebitda": 38.386,
+    "ev_revenue": 6.516,
+    "float_shares": 73648316,
+    "short_shares": 10221046,
+    "short_pct_float": 16.6,
+    "short_ratio": 8.26,
+    "last_split": null,
+    "last_split_date": null
+  },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 528,
+  "inst_count": 527,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -144,5 +362,7 @@
       "shares": 15834,
       "date": "2026-07-09"
     }
-  ]
+  ],
+  "dividends": [],
+  "splits": []
 }

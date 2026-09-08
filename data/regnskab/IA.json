@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:25:24.414Z",
+  "updated_at": "2026-09-08T09:38:26.123Z",
   "source": "Yahoo Finance",
   "symbol": "IA",
   "summary": "Innovative Aerosystems, Inc., engages in the engineering, manufacturing, and supply of advanced avionic solutions. The company provides autothrottles; LPV Navigators; standby displays; COM/NAV/surveillance radio management systems; air data solutions; inertial reference systems; utilities management systems; and air data, attitude and heading reference systems. It also offers flat panel display systems, inertial reference systems, integrated global navigation systems, global positioning systems, c-130 engine instrument display systems, liberty flight deck, and communications/navigation products. The company serves business aircrafts, commercial airlines, military, virtual cp-pilots, and turbo prop. The company was formerly known as Innovative Solutions and Support, Inc. and changed its name to Innovative Aerosystems, Inc. in October 2025. Innovative Aerosystems, Inc. was incorporated in 1988 and is based in Exton, Pennsylvania.",
@@ -23,6 +23,153 @@
   "target_high": 37,
   "target_low": 30,
   "target_analysts": 4,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": null,
+      "net": 5523780,
+      "margin": null
+    },
+    {
+      "year": "2023",
+      "revenue": null,
+      "net": 6027760,
+      "margin": null
+    },
+    {
+      "year": "2024",
+      "revenue": 47198020,
+      "net": null,
+      "margin": null
+    },
+    {
+      "year": "2025",
+      "revenue": 84296890,
+      "net": 15627660,
+      "margin": 18.5
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 22247110,
+      "earnings": 7111310
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 21807080,
+      "earnings": 4059060
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 22365030,
+      "earnings": 3434090
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 26731980,
+      "earnings": 4489320
+    }
+  ],
+  "growth": {
+    "q0": -0.38990003,
+    "q1": -0.08,
+    "y0": 0.2309,
+    "y1": -0.021
+  },
+  "ratings": [],
+  "holders": [
+    {
+      "name": "Blackrock Inc.",
+      "kind": "institution",
+      "pct": 5.96,
+      "shares": 1066911,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Marshall Wace LLP",
+      "kind": "institution",
+      "pct": 3.86,
+      "shares": 691799,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Capital Management LLC",
+      "kind": "institution",
+      "pct": 3.52,
+      "shares": 629425,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Punch & Associates Investment Management, Inc.",
+      "kind": "institution",
+      "pct": 3.18,
+      "shares": 569963,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Morgan Stanley",
+      "kind": "institution",
+      "pct": 2.81,
+      "shares": 503365,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Renaissance Technologies, LLC",
+      "kind": "institution",
+      "pct": 2.74,
+      "shares": 490155,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
+      "kind": "fond",
+      "pct": 2.63,
+      "shares": 470996,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Dimensional Fund Advisors LP",
+      "kind": "institution",
+      "pct": 2.3,
+      "shares": 411427,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "iShares Trust-iShares Russell 2000 ETF",
+      "kind": "fond",
+      "pct": 2.07,
+      "shares": 370902,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Geode Capital Management, LLC",
+      "kind": "institution",
+      "pct": 1.98,
+      "shares": 354083,
+      "date": "2026-06-30"
+    }
+  ],
+  "insider_net": {
+    "period": "6m",
+    "buys": 0,
+    "sells": 0,
+    "bought": 0,
+    "sold": null,
+    "net_pct": null
+  },
+  "extras": {
+    "beta": 0.598,
+    "enterprise_value": 375109664,
+    "ev_ebitda": 12.242,
+    "ev_revenue": 4.027,
+    "float_shares": 17037507,
+    "short_shares": 701777,
+    "short_pct_float": 4.17,
+    "short_ratio": 2.38,
+    "last_split": "3:2",
+    "last_split_date": "2005-07-08"
+  },
   "ex_dividend": "2020-12-18",
   "dividend_date": null,
   "payout_ratio": 0,
@@ -143,6 +290,35 @@
       "value": 391424,
       "shares": 31953,
       "date": "2025-06-20"
+    }
+  ],
+  "dividends": [
+    {
+      "date": "2008-09-16",
+      "amount": 1
+    },
+    {
+      "date": "2012-12-28",
+      "amount": 1.5
+    },
+    {
+      "date": "2020-09-14",
+      "amount": 0.65
+    },
+    {
+      "date": "2020-12-18",
+      "amount": 0.5
+    },
+    {
+      "date": "2022-09-26",
+      "amount": 0.001
+    }
+  ],
+  "splits": [
+    {
+      "date": "2005-07-08",
+      "ratio": "3:2",
+      "factor": 1.5
     }
   ]
 }

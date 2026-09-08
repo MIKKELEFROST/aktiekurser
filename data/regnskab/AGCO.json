@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:25:23.207Z",
+  "updated_at": "2026-09-08T09:38:25.146Z",
   "source": "Yahoo Finance",
   "symbol": "AGCO",
   "summary": "AGCO Corporation manufactures and distributes agricultural equipment and replacement parts worldwide. It offers horsepower tractors for row crop production, soil cultivation, planting, land leveling, seeding, and commercial hay operations; utility tractors for small- and medium-sized farms, as well as for dairy, livestock, orchards, and vineyards; and compact tractors for small farms, specialty agricultural industries, landscaping, equestrian, and residential uses. The company also provides grain storage bins and related drying and handling equipment systems; seed-processing systems; swine and poultry feed storage and delivery systems; ventilation and watering systems; and egg production systems and broiler production equipment. In addition, it offers round and rectangular balers, loader wagons, self-propelled windrowers, forage harvesters, disc mowers, spreaders, rakes, tedders, and mower conditioners for harvesting and packaging vegetative feeds used in cattle, dairy, horse, and renewable fuel industries. Further, the company provides implements, including disc harrows leveling seed beds and mixing chemicals with the soils; heavy tillage to break up soil and mix crop residue into topsoil; field cultivators that prepare smooth seed bed and destroy weeds; drills for small grain seeding; planters and other planting equipment; and loaders. Additionally, it offers combines for harvesting grain crops, such as corn, wheat, soybeans, and rice; and application equipment, including self-propelled, three- and four-wheeled vehicles, and related equipment for liquid and dry fertilizers and crop protection chemicals, and for after crops emerge from the ground, as well as produces diesel engines, gears, and generating sets. The company markets its products under the Fendt, Massey Ferguson, PTx, and Valtra brands through a network of independent dealers and distributors. AGCO Corporation was founded in 1990 and is headquartered in Duluth, Georgia.",
@@ -23,10 +23,228 @@
   "target_high": 151,
   "target_low": 98,
   "target_analysts": 15,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 12651400000,
+      "net": 889600000,
+      "margin": 7
+    },
+    {
+      "year": "2023",
+      "revenue": 14412400000,
+      "net": 1171400000,
+      "margin": 8.1
+    },
+    {
+      "year": "2024",
+      "revenue": 11661900000,
+      "net": -424800000,
+      "margin": -3.6
+    },
+    {
+      "year": "2025",
+      "revenue": 10082000000,
+      "net": 726500000,
+      "margin": 7.2
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 2476300000,
+      "earnings": 305700000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 2920200000,
+      "earnings": 95500000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 2342900000,
+      "earnings": 55000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 2609700000,
+      "earnings": 77200000
+    }
+  ],
+  "growth": {
+    "q0": -0.354,
+    "q1": 0.108100004,
+    "y0": 0.0652,
+    "y1": 0.32459998
+  },
+  "ratings": [
+    {
+      "date": "2026-08-31",
+      "firm": "Baird",
+      "from": "Neutral",
+      "to": "Outperform",
+      "action": "up"
+    },
+    {
+      "date": "2026-08-04",
+      "firm": "UBS",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-08-04",
+      "firm": "Morgan Stanley",
+      "from": "Underweight",
+      "to": "Underweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-08-03",
+      "firm": "Citigroup",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-31",
+      "firm": "Oppenheimer",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-31",
+      "firm": "Wells Fargo",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-31",
+      "firm": "Truist Securities",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "reit"
+    },
+    {
+      "date": "2026-07-17",
+      "firm": "Morgan Stanley",
+      "from": "Underweight",
+      "to": "Underweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-13",
+      "firm": "JP Morgan",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-10",
+      "firm": "DA Davidson",
+      "from": null,
+      "to": "Buy",
+      "action": "init"
+    }
+  ],
+  "holders": [
+    {
+      "name": "Blackrock Inc.",
+      "kind": "institution",
+      "pct": 8.37,
+      "shares": 5863890,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Price (T.Rowe) Associates Inc",
+      "kind": "institution",
+      "pct": 7.89,
+      "shares": 5522670,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Dimensional Fund Advisors LP",
+      "kind": "institution",
+      "pct": 5.15,
+      "shares": 3604608,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Massachusetts Financial Services Co.",
+      "kind": "institution",
+      "pct": 4.28,
+      "shares": 2999252,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Portfolio Management LLC",
+      "kind": "institution",
+      "pct": 4.14,
+      "shares": 2901494,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Capital Management LLC",
+      "kind": "institution",
+      "pct": 3.95,
+      "shares": 2767352,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Invesco Ltd.",
+      "kind": "institution",
+      "pct": 3.93,
+      "shares": 2750455,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Capital World Investors",
+      "kind": "institution",
+      "pct": 3.7,
+      "shares": 2589921,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "iShares Trust-iShares Core S&P Mid-Cap ETF",
+      "kind": "fond",
+      "pct": 2.95,
+      "shares": 2064198,
+      "date": "2026-07-31"
+    },
+    {
+      "name": "Davis Selected Advisers",
+      "kind": "institution",
+      "pct": 2.94,
+      "shares": 2058488,
+      "date": "2026-06-30"
+    }
+  ],
+  "insider_net": {
+    "period": "6m",
+    "buys": 18,
+    "sells": 3,
+    "bought": 14767,
+    "sold": 917008,
+    "net_pct": -6.7
+  },
+  "extras": {
+    "beta": 1.095,
+    "enterprise_value": 11949732864,
+    "ev_ebitda": 11.813,
+    "ev_revenue": 1.155,
+    "float_shares": 58186562,
+    "short_shares": 3599949,
+    "short_pct_float": 6.27,
+    "short_ratio": 4.23,
+    "last_split": "2:1",
+    "last_split_date": "1996-02-01"
+  },
   "ex_dividend": "2026-08-14",
   "dividend_date": null,
   "payout_ratio": 0.1618,
-  "inst_count": 713,
+  "inst_count": 712,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -143,6 +361,180 @@
       "value": 3870,
       "shares": 33,
       "date": "2026-06-15"
+    }
+  ],
+  "dividends": [
+    {
+      "date": "2017-11-14",
+      "amount": 0.14
+    },
+    {
+      "date": "2018-02-14",
+      "amount": 0.15
+    },
+    {
+      "date": "2018-05-14",
+      "amount": 0.15
+    },
+    {
+      "date": "2018-08-14",
+      "amount": 0.15
+    },
+    {
+      "date": "2018-11-14",
+      "amount": 0.15
+    },
+    {
+      "date": "2019-02-14",
+      "amount": 0.15
+    },
+    {
+      "date": "2019-05-14",
+      "amount": 0.16
+    },
+    {
+      "date": "2019-08-14",
+      "amount": 0.16
+    },
+    {
+      "date": "2019-11-14",
+      "amount": 0.16
+    },
+    {
+      "date": "2020-02-13",
+      "amount": 0.16
+    },
+    {
+      "date": "2020-05-14",
+      "amount": 0.16
+    },
+    {
+      "date": "2020-08-13",
+      "amount": 0.16
+    },
+    {
+      "date": "2020-11-13",
+      "amount": 0.16
+    },
+    {
+      "date": "2021-02-12",
+      "amount": 0.16
+    },
+    {
+      "date": "2021-05-07",
+      "amount": 4
+    },
+    {
+      "date": "2021-05-13",
+      "amount": 0.2
+    },
+    {
+      "date": "2021-08-13",
+      "amount": 0.2
+    },
+    {
+      "date": "2021-11-12",
+      "amount": 0.2
+    },
+    {
+      "date": "2022-02-14",
+      "amount": 0.2
+    },
+    {
+      "date": "2022-05-13",
+      "amount": 0.24
+    },
+    {
+      "date": "2022-05-19",
+      "amount": 4.5
+    },
+    {
+      "date": "2022-08-12",
+      "amount": 0.24
+    },
+    {
+      "date": "2022-11-14",
+      "amount": 0.24
+    },
+    {
+      "date": "2023-02-14",
+      "amount": 0.24
+    },
+    {
+      "date": "2023-05-12",
+      "amount": 0.29
+    },
+    {
+      "date": "2023-05-18",
+      "amount": 5
+    },
+    {
+      "date": "2023-08-14",
+      "amount": 0.29
+    },
+    {
+      "date": "2023-11-14",
+      "amount": 0.29
+    },
+    {
+      "date": "2024-02-14",
+      "amount": 0.29
+    },
+    {
+      "date": "2024-05-14",
+      "amount": 0.29
+    },
+    {
+      "date": "2024-05-17",
+      "amount": 2.5
+    },
+    {
+      "date": "2024-08-15",
+      "amount": 0.29
+    },
+    {
+      "date": "2024-11-15",
+      "amount": 0.29
+    },
+    {
+      "date": "2025-02-14",
+      "amount": 0.29
+    },
+    {
+      "date": "2025-05-15",
+      "amount": 0.29
+    },
+    {
+      "date": "2025-08-15",
+      "amount": 0.29
+    },
+    {
+      "date": "2025-11-14",
+      "amount": 0.29
+    },
+    {
+      "date": "2026-02-13",
+      "amount": 0.29
+    },
+    {
+      "date": "2026-05-15",
+      "amount": 0.3
+    },
+    {
+      "date": "2026-08-14",
+      "amount": 0.3
+    }
+  ],
+  "splits": [
+    {
+      "date": "1994-12-16",
+      "ratio": "3:2",
+      "factor": 1.5
+    },
+    {
+      "date": "1996-02-01",
+      "ratio": "2:1",
+      "factor": 2
     }
   ]
 }

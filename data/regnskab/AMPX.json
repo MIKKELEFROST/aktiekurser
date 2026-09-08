@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:25:23.294Z",
+  "updated_at": "2026-09-08T09:38:25.209Z",
   "source": "Yahoo Finance",
   "symbol": "AMPX",
   "summary": "Amprius Technologies, Inc. develops, manufactures, and markets lithium-ion batteries for mobility applications. The company provides silicon anode lithium-ion batteries under the SiCore and SiMaxx product platforms. Its batteries are primarily used for existing and emerging aviation applications, including unmanned aerial systems, such as drones and high-altitude pseudo satellites. The company was founded in 2008 and is headquartered in Fremont, California.",
@@ -23,10 +23,228 @@
   "target_high": 30,
   "target_low": 18,
   "target_analysts": 9,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 4409000,
+      "net": -17332000,
+      "margin": -393.1
+    },
+    {
+      "year": "2023",
+      "revenue": 9053000,
+      "net": -36776000,
+      "margin": -406.2
+    },
+    {
+      "year": "2024",
+      "revenue": 24167000,
+      "net": -44671000,
+      "margin": -184.8
+    },
+    {
+      "year": "2025",
+      "revenue": 73011000,
+      "net": -44024000,
+      "margin": -60.3
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 21426000,
+      "earnings": -3892000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 24134000,
+      "earnings": -24391000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 28536000,
+      "earnings": -5046000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 34032000,
+      "earnings": -3154000
+    }
+  ],
+  "growth": {
+    "q0": 0.7143,
+    "q1": 2,
+    "y0": 0.6078,
+    "y1": 2.4999
+  },
+  "ratings": [
+    {
+      "date": "2026-07-10",
+      "firm": "Jones Trading",
+      "from": null,
+      "to": "Buy",
+      "action": "init"
+    },
+    {
+      "date": "2026-06-03",
+      "firm": "Clear Street",
+      "from": null,
+      "to": "Buy",
+      "action": "init"
+    },
+    {
+      "date": "2026-03-10",
+      "firm": "Needham",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "reit"
+    },
+    {
+      "date": "2026-03-09",
+      "firm": "B. Riley Securities",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-03-06",
+      "firm": "Craig-Hallum",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-03-06",
+      "firm": "Cantor Fitzgerald",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-03-06",
+      "firm": "Roth Capital",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "reit"
+    },
+    {
+      "date": "2026-02-23",
+      "firm": "Craig-Hallum",
+      "from": null,
+      "to": "Buy",
+      "action": "init"
+    },
+    {
+      "date": "2026-01-29",
+      "firm": "Needham",
+      "from": null,
+      "to": "Buy",
+      "action": "init"
+    },
+    {
+      "date": "2025-11-07",
+      "firm": "Cantor Fitzgerald",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    }
+  ],
+  "holders": [
+    {
+      "name": "Blackrock Inc.",
+      "kind": "institution",
+      "pct": 8,
+      "shares": 11335092,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Capital Management LLC",
+      "kind": "institution",
+      "pct": 3.93,
+      "shares": 5562985,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Morgan Stanley",
+      "kind": "institution",
+      "pct": 3.6,
+      "shares": 5105505,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Two Sigma Investments, LP",
+      "kind": "institution",
+      "pct": 3.05,
+      "shares": 4318630,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "UBS Group AG",
+      "kind": "institution",
+      "pct": 2.88,
+      "shares": 4072269,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
+      "kind": "fond",
+      "pct": 2.7,
+      "shares": 3824005,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "iShares Trust-iShares Russell 2000 ETF",
+      "kind": "fond",
+      "pct": 2.53,
+      "shares": 3581914,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Geode Capital Management, LLC",
+      "kind": "institution",
+      "pct": 2.49,
+      "shares": 3520655,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Jane Street Group, LLC",
+      "kind": "institution",
+      "pct": 2.4,
+      "shares": 3401071,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "State Street Corporation",
+      "kind": "institution",
+      "pct": 2.29,
+      "shares": 3240285,
+      "date": "2026-06-30"
+    }
+  ],
+  "insider_net": {
+    "period": "6m",
+    "buys": 13,
+    "sells": 17,
+    "bought": 2510880,
+    "sold": 2886667,
+    "net_pct": -5.6
+  },
+  "extras": {
+    "beta": 2.342,
+    "enterprise_value": 1376597376,
+    "ev_ebitda": -93.608,
+    "ev_revenue": 12.603,
+    "float_shares": 142358484,
+    "short_shares": 22146891,
+    "short_pct_float": 15.38,
+    "short_ratio": 3.53,
+    "last_split": null,
+    "last_split_date": null
+  },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 350,
+  "inst_count": 349,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -144,5 +362,7 @@
       "shares": 10423,
       "date": "2026-06-12"
     }
-  ]
+  ],
+  "dividends": [],
+  "splits": []
 }

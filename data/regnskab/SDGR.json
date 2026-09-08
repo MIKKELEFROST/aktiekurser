@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:25:25.211Z",
+  "updated_at": "2026-09-08T09:38:26.801Z",
   "source": "Yahoo Finance",
   "symbol": "SDGR",
   "summary": "Schrödinger, Inc., together with its subsidiaries, develops physics-based computational platform that enables discovery of novel molecules for drug development and materials applications in the United States, the Asia-Pacific, Europe, Middle East, Africa, and internationally. The company operates in two segments, Software and Drug Discovery. The Software segment sells its software to transform molecular discovery for life sciences and materials science industries. The Drug Discovery segment focuses on building a portfolio of preclinical and clinical programs, internally and through collaborations. It has a research collaboration and license agreement with Novartis Pharma AG to advance multiple development candidates. Schrödinger, Inc. was incorporated in 1990 and is based in New York, New York.",
@@ -23,6 +23,224 @@
   "target_high": 30,
   "target_low": 17,
   "target_analysts": 7,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 181000000,
+      "net": -149200000,
+      "margin": -82.4
+    },
+    {
+      "year": "2023",
+      "revenue": 216700000,
+      "net": 40720000,
+      "margin": 18.8
+    },
+    {
+      "year": "2024",
+      "revenue": 207539000,
+      "net": -187123000,
+      "margin": -90.2
+    },
+    {
+      "year": "2025",
+      "revenue": 255869000,
+      "net": -103265000,
+      "margin": -40.4
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 54324000,
+      "earnings": -32795000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 87235000,
+      "earnings": 32511000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 58587000,
+      "earnings": -60026000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 58889000,
+      "earnings": 5975000
+    }
+  ],
+  "growth": {
+    "q0": 0.0877,
+    "q1": 0.1121,
+    "y0": 0.0947,
+    "y1": 0.26229998
+  },
+  "ratings": [
+    {
+      "date": "2026-05-14",
+      "firm": "Morgan Stanley",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
+    {
+      "date": "2026-04-08",
+      "firm": "Keybanc",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-03-17",
+      "firm": "UBS",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-01-08",
+      "firm": "TD Cowen",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-01-08",
+      "firm": "Keybanc",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-01-07",
+      "firm": "UBS",
+      "from": null,
+      "to": "Neutral",
+      "action": "init"
+    },
+    {
+      "date": "2025-12-15",
+      "firm": "B of A Securities",
+      "from": "Neutral",
+      "to": "Buy",
+      "action": "up"
+    },
+    {
+      "date": "2025-10-08",
+      "firm": "Keybanc",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2025-09-30",
+      "firm": "Goldman Sachs",
+      "from": null,
+      "to": "Neutral",
+      "action": "init"
+    },
+    {
+      "date": "2025-08-18",
+      "firm": "Morgan Stanley",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    }
+  ],
+  "holders": [
+    {
+      "name": "Blackrock Inc.",
+      "kind": "institution",
+      "pct": 16.05,
+      "shares": 10521724,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Gates Foundation Trust",
+      "kind": "institution",
+      "pct": 10.65,
+      "shares": 6981664,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Rubric Capital Management LP",
+      "kind": "institution",
+      "pct": 9.76,
+      "shares": 6400000,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Portfolio Management LLC",
+      "kind": "institution",
+      "pct": 5.78,
+      "shares": 3787391,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "iShares Trust-iShares Core S&P Small-Cap ETF",
+      "kind": "fond",
+      "pct": 5.3,
+      "shares": 3473926,
+      "date": "2026-07-31"
+    },
+    {
+      "name": "Sumitomo Mitsui Trust Group, Inc.",
+      "kind": "institution",
+      "pct": 4.13,
+      "shares": 2706143,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Amova Asset Management Americas Inc",
+      "kind": "institution",
+      "pct": 4.13,
+      "shares": 2706143,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Capital Management LLC",
+      "kind": "institution",
+      "pct": 4.11,
+      "shares": 2691149,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "State Street Corporation",
+      "kind": "institution",
+      "pct": 3.51,
+      "shares": 2298338,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "UBS AM, a distinct business unit of UBS ASSET MANAGEMENT AMERICAS LLC",
+      "kind": "institution",
+      "pct": 3.39,
+      "shares": 2221485,
+      "date": "2026-06-30"
+    }
+  ],
+  "insider_net": {
+    "period": "6m",
+    "buys": 11,
+    "sells": 3,
+    "bought": 913169,
+    "sold": 87719,
+    "net_pct": 58.1
+  },
+  "extras": {
+    "beta": 1.693,
+    "enterprise_value": 1197109120,
+    "ev_ebitda": -8.112,
+    "ev_revenue": 4.621,
+    "float_shares": 57334026,
+    "short_shares": 11426561,
+    "short_pct_float": 27.23,
+    "short_ratio": 10.6,
+    "last_split": null,
+    "last_split_date": null
+  },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
@@ -144,5 +362,7 @@
       "shares": 8141,
       "date": "2026-06-22"
     }
-  ]
+  ],
+  "dividends": [],
+  "splits": []
 }

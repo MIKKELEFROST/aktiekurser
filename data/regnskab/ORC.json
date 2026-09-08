@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:25:24.948Z",
+  "updated_at": "2026-09-08T09:38:26.579Z",
   "source": "Yahoo Finance",
   "symbol": "ORC",
   "summary": "Orchid Island Capital, Inc., a specialty finance company, invests in residential mortgage-backed securities (RMBS) in the United States. The company's RMBS is backed by single-family residential mortgage loans, referred to as Agency RMBS. Its portfolio comprises traditional pass-through Agency RMBS, such as mortgage pass through certificates and collateralized mortgage obligations; and structured Agency RMBS, including interest only securities, inverse interest only securities, and principal only securities. The company has elected to be taxed as a real estate investment trust (REIT) for the United States federal income tax purposes. As a result, it would not be subject to corporate income tax on that portion of its net income that is distributed to stockholders, if it annually distributes dividends equal to at least 90% of its REIT taxable income to its shareholders. Orchid Island Capital, Inc. was incorporated in 2010 and is headquartered in Vero Beach, Florida.",
@@ -23,10 +23,214 @@
   "target_high": 7.5,
   "target_low": 7.5,
   "target_analysts": 1,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 82925000,
+      "net": -258453000,
+      "margin": -311.7
+    },
+    {
+      "year": "2023",
+      "revenue": -24349000,
+      "net": -39226000,
+      "margin": 161.1
+    },
+    {
+      "year": "2024",
+      "revenue": 5296000,
+      "net": 37662000,
+      "margin": 711.1
+    },
+    {
+      "year": "2025",
+      "revenue": 108269000,
+      "net": 159030000,
+      "margin": 146.9
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 77519000,
+      "earnings": 72078000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 109225000,
+      "earnings": 103408000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": -12558000,
+      "earnings": -19955000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 95955000,
+      "earnings": 89192000
+    }
+  ],
+  "growth": {
+    "q0": 1,
+    "q1": 0.65230006,
+    "y0": 0.6369,
+    "y1": -0.0759
+  },
+  "ratings": [
+    {
+      "date": "2026-07-09",
+      "firm": "BTIG",
+      "from": null,
+      "to": "Neutral",
+      "action": "init"
+    },
+    {
+      "date": "2025-12-15",
+      "firm": "Compass Point",
+      "from": null,
+      "to": "Neutral",
+      "action": "init"
+    },
+    {
+      "date": "2025-04-30",
+      "firm": "Jones Trading",
+      "from": "Hold",
+      "to": "Hold",
+      "action": "reit"
+    },
+    {
+      "date": "2025-01-23",
+      "firm": "JMP Securities",
+      "from": "Market Perform",
+      "to": "Market Perform",
+      "action": "reit"
+    },
+    {
+      "date": "2024-06-06",
+      "firm": "Janney Montgomery Scott",
+      "from": null,
+      "to": "Buy",
+      "action": "init"
+    },
+    {
+      "date": "2024-04-19",
+      "firm": "JMP Securities",
+      "from": null,
+      "to": "Market Perform",
+      "action": "reit"
+    },
+    {
+      "date": "2024-04-18",
+      "firm": "JMP Securities",
+      "from": null,
+      "to": "Market Perform",
+      "action": "reit"
+    },
+    {
+      "date": "2023-01-17",
+      "firm": "JonesTrading",
+      "from": null,
+      "to": "Hold",
+      "action": "reit"
+    }
+  ],
+  "holders": [
+    {
+      "name": "Blackrock Inc.",
+      "kind": "institution",
+      "pct": 10.29,
+      "shares": 20540427,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Capital Management LLC",
+      "kind": "institution",
+      "pct": 4.48,
+      "shares": 8933346,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
+      "kind": "fond",
+      "pct": 3.22,
+      "shares": 6418101,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "iShares Trust-iShares Russell 2000 ETF",
+      "kind": "fond",
+      "pct": 2.65,
+      "shares": 5284251,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Geode Capital Management, LLC",
+      "kind": "institution",
+      "pct": 2.62,
+      "shares": 5236176,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "State Street Corporation",
+      "kind": "institution",
+      "pct": 2.27,
+      "shares": 4529701,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Mirae Asset Global ETFs Holdings Ltd.",
+      "kind": "institution",
+      "pct": 1.93,
+      "shares": 3847111,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Goldman Sachs Group Inc",
+      "kind": "institution",
+      "pct": 1.76,
+      "shares": 3504383,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Invesco Ltd.",
+      "kind": "institution",
+      "pct": 1.46,
+      "shares": 2915932,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Invesco Exch-Trd Fd. TRT II-Invesco KBW High Dividend Yield Financial ",
+      "kind": "fond",
+      "pct": 1.26,
+      "shares": 2521503,
+      "date": "2026-07-31"
+    }
+  ],
+  "insider_net": {
+    "period": "6m",
+    "buys": 0,
+    "sells": 0,
+    "bought": 0,
+    "sold": null,
+    "net_pct": null
+  },
+  "extras": {
+    "beta": 1.549,
+    "enterprise_value": 11205552128,
+    "ev_ebitda": null,
+    "ev_revenue": 41.48,
+    "float_shares": 199226188,
+    "short_shares": 16623496,
+    "short_pct_float": 8.38,
+    "short_ratio": 3.26,
+    "last_split": "1:5",
+    "last_split_date": "2022-08-31"
+  },
   "ex_dividend": "2026-08-31",
   "dividend_date": null,
   "payout_ratio": 0.7886,
-  "inst_count": 268,
+  "inst_count": 267,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -143,6 +347,175 @@
       "value": null,
       "shares": 3031,
       "date": "2025-09-26"
+    }
+  ],
+  "dividends": [
+    {
+      "date": "2023-05-30",
+      "amount": 0.16
+    },
+    {
+      "date": "2023-06-29",
+      "amount": 0.16
+    },
+    {
+      "date": "2023-07-28",
+      "amount": 0.16
+    },
+    {
+      "date": "2023-08-30",
+      "amount": 0.16
+    },
+    {
+      "date": "2023-09-28",
+      "amount": 0.16
+    },
+    {
+      "date": "2023-10-30",
+      "amount": 0.12
+    },
+    {
+      "date": "2023-11-29",
+      "amount": 0.12
+    },
+    {
+      "date": "2023-12-28",
+      "amount": 0.12
+    },
+    {
+      "date": "2024-01-30",
+      "amount": 0.12
+    },
+    {
+      "date": "2024-02-28",
+      "amount": 0.12
+    },
+    {
+      "date": "2024-03-27",
+      "amount": 0.12
+    },
+    {
+      "date": "2024-04-29",
+      "amount": 0.12
+    },
+    {
+      "date": "2024-05-31",
+      "amount": 0.12
+    },
+    {
+      "date": "2024-06-28",
+      "amount": 0.12
+    },
+    {
+      "date": "2024-07-31",
+      "amount": 0.12
+    },
+    {
+      "date": "2024-08-30",
+      "amount": 0.12
+    },
+    {
+      "date": "2024-09-30",
+      "amount": 0.12
+    },
+    {
+      "date": "2024-10-31",
+      "amount": 0.12
+    },
+    {
+      "date": "2024-11-29",
+      "amount": 0.12
+    },
+    {
+      "date": "2024-12-31",
+      "amount": 0.12
+    },
+    {
+      "date": "2025-01-31",
+      "amount": 0.12
+    },
+    {
+      "date": "2025-02-28",
+      "amount": 0.12
+    },
+    {
+      "date": "2025-03-31",
+      "amount": 0.12
+    },
+    {
+      "date": "2025-04-30",
+      "amount": 0.12
+    },
+    {
+      "date": "2025-05-30",
+      "amount": 0.12
+    },
+    {
+      "date": "2025-06-30",
+      "amount": 0.12
+    },
+    {
+      "date": "2025-07-31",
+      "amount": 0.12
+    },
+    {
+      "date": "2025-08-29",
+      "amount": 0.12
+    },
+    {
+      "date": "2025-09-30",
+      "amount": 0.12
+    },
+    {
+      "date": "2025-10-31",
+      "amount": 0.12
+    },
+    {
+      "date": "2025-11-28",
+      "amount": 0.12
+    },
+    {
+      "date": "2025-12-31",
+      "amount": 0.12
+    },
+    {
+      "date": "2026-01-30",
+      "amount": 0.12
+    },
+    {
+      "date": "2026-02-27",
+      "amount": 0.12
+    },
+    {
+      "date": "2026-03-31",
+      "amount": 0.12
+    },
+    {
+      "date": "2026-04-30",
+      "amount": 0.1
+    },
+    {
+      "date": "2026-05-29",
+      "amount": 0.1
+    },
+    {
+      "date": "2026-06-30",
+      "amount": 0.1
+    },
+    {
+      "date": "2026-07-31",
+      "amount": 0.1
+    },
+    {
+      "date": "2026-08-31",
+      "amount": 0.1
+    }
+  ],
+  "splits": [
+    {
+      "date": "2022-08-31",
+      "ratio": "1:5",
+      "factor": 0.2
     }
   ]
 }

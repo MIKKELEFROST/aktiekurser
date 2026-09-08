@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:25:23.950Z",
+  "updated_at": "2026-09-08T09:38:25.747Z",
   "source": "Yahoo Finance",
   "symbol": "DTE",
   "summary": "DTE Energy Company engages in energy-related businesses and services. The company operates through four segments: Electric, Gas, DTE Vantage, and Energy Trading.The company's Electric segment generates, purchases, distributes, and sells electricity to approximately 2.3 million residential, commercial, and industrial customers in southeastern Michigan. It generates electricity through coal-fired plants, natural gas plant, hydroelectric pumped storage, and nuclear plants, as well as wind and solar assets. This segment owns and operates 702 distribution substations with a capacity of approximately 37,870,000 kilovolt-amperes (kVA) and approximately 4,56,900 line transformers with a capacity of approximately 33,770,000 kVA. The company's Gas segment purchases, stores, transports, distributes, and sells natural gas to approximately 1.4 million residential, commercial, and industrial customers throughout Michigan; and sells storage and transportation capacity. This segment has approximately 21,000 miles of distribution mains; 1,242,000 service pipelines; and 1,361,000 active meters, as well as owns approximately 2,000 miles of transmission pipelines. Its DTE Vantage segment offers metallurgical and petroleum coke to steel and other industries; and power generation, steam production, chilled water production, and wastewater treatment services, as well as compressed air supply to industrial customers. This segment also owns and operates 2 renewable generating plants with a capacity of 70 MWs; and 22 gas recovery sites. Its Energy Trading segment engages in power, natural gas, and environmental marketing and trading; structured transactions; and the optimization of contracted natural gas pipeline transportation and storage positions. The company was founded in 1849 and is based in Detroit, Michigan.",
@@ -23,10 +23,223 @@
   "target_high": 168,
   "target_low": 143,
   "target_analysts": 14,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 19228000000,
+      "net": 1083000000,
+      "margin": 5.6
+    },
+    {
+      "year": "2023",
+      "revenue": 12745000000,
+      "net": 1397000000,
+      "margin": 11
+    },
+    {
+      "year": "2024",
+      "revenue": 12457000000,
+      "net": 1404000000,
+      "margin": 11.3
+    },
+    {
+      "year": "2025",
+      "revenue": 15814000000,
+      "net": 1462000000,
+      "margin": 9.2
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 3527000000,
+      "earnings": 419000000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 4428000000,
+      "earnings": 369000000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 5141000000,
+      "earnings": 247000000
+    }
+  ],
+  "growth": {
+    "q0": 0.0684,
+    "q1": 0.2354,
+    "y0": 0.047399998,
+    "y1": 0.0851
+  },
+  "ratings": [
+    {
+      "date": "2026-08-28",
+      "firm": "BMO Capital",
+      "from": "Market Perform",
+      "to": "Market Perform",
+      "action": "main"
+    },
+    {
+      "date": "2026-08-27",
+      "firm": "Mizuho",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-08-21",
+      "firm": "Morgan Stanley",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-08-04",
+      "firm": "Truist Securities",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-29",
+      "firm": "Mizuho",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-29",
+      "firm": "BMO Capital",
+      "from": "Market Perform",
+      "to": "Market Perform",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-22",
+      "firm": "BMO Capital",
+      "from": "Market Perform",
+      "to": "Market Perform",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-16",
+      "firm": "JP Morgan",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-13",
+      "firm": "BMO Capital",
+      "from": "Market Perform",
+      "to": "Market Perform",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-08",
+      "firm": "TD Cowen",
+      "from": null,
+      "to": "Hold",
+      "action": "init"
+    }
+  ],
+  "holders": [
+    {
+      "name": "Blackrock Inc.",
+      "kind": "institution",
+      "pct": 12.35,
+      "shares": 25695899,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Capital Management LLC",
+      "kind": "institution",
+      "pct": 6.04,
+      "shares": 12568029,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Capital Research Global Investors",
+      "kind": "institution",
+      "pct": 6.01,
+      "shares": 12496338,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "State Street Corporation",
+      "kind": "institution",
+      "pct": 5.4,
+      "shares": 11231634,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Portfolio Management LLC",
+      "kind": "institution",
+      "pct": 5.37,
+      "shares": 11182982,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Capital World Investors",
+      "kind": "institution",
+      "pct": 4.8,
+      "shares": 9990302,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Geode Capital Management, LLC",
+      "kind": "institution",
+      "pct": 2.82,
+      "shares": 5870599,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
+      "kind": "fond",
+      "pct": 2.7,
+      "shares": 5611243,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Ameriprise Financial, Inc.",
+      "kind": "institution",
+      "pct": 2.69,
+      "shares": 5606302,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "AMERICAN MUTUAL FUND",
+      "kind": "fond",
+      "pct": 2.68,
+      "shares": 5585437,
+      "date": "2026-06-30"
+    }
+  ],
+  "insider_net": {
+    "period": "6m",
+    "buys": 5,
+    "sells": 2,
+    "bought": 6918,
+    "sold": 6000,
+    "net_pct": 0.1
+  },
+  "extras": {
+    "beta": 0.388,
+    "enterprise_value": 56119623680,
+    "ev_ebitda": 15.516,
+    "ev_revenue": 3.408,
+    "float_shares": 206947746,
+    "short_shares": 4315324,
+    "short_pct_float": 2.37,
+    "short_ratio": 3.2,
+    "last_split": "1175:1000",
+    "last_split_date": "2021-07-01"
+  },
   "ex_dividend": "2026-09-21",
   "dividend_date": null,
   "payout_ratio": 0.72550005,
-  "inst_count": 1343,
+  "inst_count": 1342,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -143,6 +356,180 @@
       "value": 0,
       "shares": 987,
       "date": "2026-02-04"
+    }
+  ],
+  "dividends": [
+    {
+      "date": "1994-03-15",
+      "amount": 0.4383
+    },
+    {
+      "date": "1994-06-15",
+      "amount": 0.4383
+    },
+    {
+      "date": "1994-09-15",
+      "amount": 0.4383
+    },
+    {
+      "date": "1994-12-13",
+      "amount": 0.4383
+    },
+    {
+      "date": "1995-03-16",
+      "amount": 0.4383
+    },
+    {
+      "date": "1995-06-19",
+      "amount": 0.4383
+    },
+    {
+      "date": "1995-09-19",
+      "amount": 0.4383
+    },
+    {
+      "date": "1995-12-13",
+      "amount": 0.4383
+    },
+    {
+      "date": "1996-03-19",
+      "amount": 0.4383
+    },
+    {
+      "date": "1996-06-18",
+      "amount": 0.4383
+    },
+    {
+      "date": "1996-09-18",
+      "amount": 0.4383
+    },
+    {
+      "date": "1996-12-12",
+      "amount": 0.4383
+    },
+    {
+      "date": "1997-03-18",
+      "amount": 0.4383
+    },
+    {
+      "date": "1997-06-18",
+      "amount": 0.4383
+    },
+    {
+      "date": "1997-09-18",
+      "amount": 0.4383
+    },
+    {
+      "date": "1997-12-17",
+      "amount": 0.4383
+    },
+    {
+      "date": "1998-03-18",
+      "amount": 0.4383
+    },
+    {
+      "date": "1998-06-18",
+      "amount": 0.4383
+    },
+    {
+      "date": "1998-09-17",
+      "amount": 0.4383
+    },
+    {
+      "date": "1998-12-17",
+      "amount": 0.4383
+    },
+    {
+      "date": "1999-03-25",
+      "amount": 0.4383
+    },
+    {
+      "date": "1999-06-17",
+      "amount": 0.4391
+    },
+    {
+      "date": "1999-09-16",
+      "amount": 0.4383
+    },
+    {
+      "date": "1999-12-16",
+      "amount": 0.4383
+    },
+    {
+      "date": "2000-03-16",
+      "amount": 0.4383
+    },
+    {
+      "date": "2000-06-16",
+      "amount": 0.4383
+    },
+    {
+      "date": "2000-09-21",
+      "amount": 0.4383
+    },
+    {
+      "date": "2000-12-20",
+      "amount": 0.4383
+    },
+    {
+      "date": "2001-03-20",
+      "amount": 0.4383
+    },
+    {
+      "date": "2001-06-21",
+      "amount": 0.4383
+    },
+    {
+      "date": "2001-09-20",
+      "amount": 0.4383
+    },
+    {
+      "date": "2001-12-21",
+      "amount": 0.4383
+    },
+    {
+      "date": "2002-03-21",
+      "amount": 0.4383
+    },
+    {
+      "date": "2002-06-26",
+      "amount": 0.4383
+    },
+    {
+      "date": "2002-09-24",
+      "amount": 0.4383
+    },
+    {
+      "date": "2002-12-19",
+      "amount": 0.4383
+    },
+    {
+      "date": "2003-03-20",
+      "amount": 0.4383
+    },
+    {
+      "date": "2003-06-19",
+      "amount": 0.4383
+    },
+    {
+      "date": "2003-09-18",
+      "amount": 0.4383
+    },
+    {
+      "date": "2026-06-22",
+      "amount": 1.165
+    }
+  ],
+  "splits": [
+    {
+      "date": "1963-01-15",
+      "ratio": "2:1",
+      "factor": 2
+    },
+    {
+      "date": "2021-07-01",
+      "ratio": "1175:1000",
+      "factor": 1.175
     }
   ]
 }

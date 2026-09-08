@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:50:49.298Z",
+  "updated_at": "2026-09-08T09:38:26.470Z",
   "source": "Yahoo Finance",
   "symbol": "NKT.CO",
   "summary": "NKT A/S designs, manufactures, and installs low, medium, and high voltage power cable solutions in Denmark. It operates through Solutions, Applications and Service & Accessories segments. The company offers high voltage cable solutions, including high voltage onshore and offshore cables; medium voltage, dynamic, and universal cables; and low voltage building wires, flexible cables and conduits, control cables, 1 kV cables, and telecom energy and fire performance cables. The company also provides medium voltage cable accessories, such as joints, terminations, separable connector, paper-insulated lead sheath and pre-assembled connection cables, cable branch cabinets, and pre-assembled connection cables; and high voltage cable accessories comprising GIS/transformer terminations, low pressure oil-filled cable systems, outdoor terminations, wind power applications, and transition joints. In addition, it offers lifecycle cable services; and installation, operation and maintenance, repair, decommissioning, and cable monitoring solutions. Further, the company provides oil and gas cable competence center services, and technology consulting services; and offshore and onshore wind, and solar solutions. It operates in Germany, Sweden, the United Kingdom, Poland, the United States, Norway, the Czech Republic, France, the Netherlands, Portugal, and internationally. The company was formerly known as NKT Holding A/S and changed its name to NKT A/S in May 2017. NKT A/S was founded in 1891 and is based in Copenhagen, Denmark.",
@@ -19,14 +19,161 @@
     "strong_sell": 0,
     "total": 11
   },
-  "target_mean": 941.15924,
-  "target_high": 1292.1738,
-  "target_low": 495.19888,
+  "target_mean": 941.1718,
+  "target_high": 1292.1912,
+  "target_low": 495.2055,
   "target_analysts": 11,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 2079000000,
+      "net": 53800000,
+      "margin": 2.6
+    },
+    {
+      "year": "2023",
+      "revenue": 2567200000,
+      "net": 113400000,
+      "margin": 4.4
+    },
+    {
+      "year": "2024",
+      "revenue": 3252000000,
+      "net": 337000000,
+      "margin": 10.4
+    },
+    {
+      "year": "2025",
+      "revenue": 3565000000,
+      "net": 264000000,
+      "margin": 7.4
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "2Q2025",
+      "revenue": 945000000,
+      "earnings": 54000000
+    },
+    {
+      "q": "3Q2025",
+      "revenue": 936000000,
+      "earnings": 67000000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 847000000,
+      "earnings": 97000000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 864000000,
+      "earnings": 61000000
+    }
+  ],
+  "growth": {
+    "q0": -0.3,
+    "q1": -0.6111,
+    "y0": -0.1915,
+    "y1": 0.3575
+  },
+  "ratings": [],
+  "holders": [
+    {
+      "name": "SmallCap World Fund Inc",
+      "kind": "institution",
+      "pct": 3.68,
+      "shares": 1581228,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "VANGUARD STAR FUNDS-Vanguard Total International Stock Index Fund",
+      "kind": "institution",
+      "pct": 1.84,
+      "shares": 790621,
+      "date": "2026-04-30"
+    },
+    {
+      "name": "First TRT Exch-Trd Fd. II-First TRT NASDAQ Clean Edge Smart Grid Infra",
+      "kind": "institution",
+      "pct": 1.63,
+      "shares": 700803,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "American Century ETF Trust-Avantis International Small Cap Value ETF",
+      "kind": "institution",
+      "pct": 1.22,
+      "shares": 523148,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "VANGUARD TAX-MANAGED FUNDS-Vanguard Developed Markets Index Fund",
+      "kind": "institution",
+      "pct": 1.21,
+      "shares": 521463,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Artisan Partners Funds Inc.-Artisan International Fund",
+      "kind": "institution",
+      "pct": 1.07,
+      "shares": 461260,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "iShares Trust-iShares Core MSCI EAFE ETF",
+      "kind": "institution",
+      "pct": 0.91,
+      "shares": 390943,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "DFA INVESTMENT DIMENSIONS GROUP INC-Intl Core Eqy. 2 PORT.",
+      "kind": "institution",
+      "pct": 0.69,
+      "shares": 296795,
+      "date": "2026-04-30"
+    },
+    {
+      "name": "DFA INVESTMENT TRUST CO-The Continental Small Company Series",
+      "kind": "institution",
+      "pct": 0.63,
+      "shares": 272775,
+      "date": "2026-04-30"
+    },
+    {
+      "name": "iShares Trust-iShares MSCI EAFE Small-Cap ETF",
+      "kind": "institution",
+      "pct": 0.51,
+      "shares": 217698,
+      "date": "2026-06-30"
+    }
+  ],
+  "insider_net": {
+    "period": "6m",
+    "buys": 0,
+    "sells": 0,
+    "bought": 0,
+    "sold": null,
+    "net_pct": null
+  },
+  "extras": {
+    "beta": 0.643,
+    "enterprise_value": 50657878016,
+    "ev_ebitda": 72.889,
+    "ev_revenue": 14.095,
+    "float_shares": 50872840,
+    "short_shares": null,
+    "short_pct_float": null,
+    "short_ratio": null,
+    "last_split": null,
+    "last_split_date": null
+  },
   "ex_dividend": "2016-04-01",
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 223,
+  "inst_count": 224,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -53,5 +200,64 @@
       "surprise_pct": 3.91
     }
   ],
-  "insiders": []
+  "insiders": [],
+  "dividends": [
+    {
+      "date": "2002-04-04",
+      "amount": 3.2424
+    },
+    {
+      "date": "2003-04-04",
+      "amount": 3.2424
+    },
+    {
+      "date": "2004-04-02",
+      "amount": 6.4847
+    },
+    {
+      "date": "2005-04-07",
+      "amount": 6.4847
+    },
+    {
+      "date": "2006-04-07",
+      "amount": 9.7271
+    },
+    {
+      "date": "2007-04-12",
+      "amount": 8.1059
+    },
+    {
+      "date": "2008-04-11",
+      "amount": 8.9165
+    },
+    {
+      "date": "2010-03-26",
+      "amount": 2.8371
+    },
+    {
+      "date": "2011-03-24",
+      "amount": 1.6212
+    },
+    {
+      "date": "2012-03-30",
+      "amount": 1.6212
+    },
+    {
+      "date": "2013-03-22",
+      "amount": 6.4847
+    },
+    {
+      "date": "2014-03-26",
+      "amount": 2.8371
+    },
+    {
+      "date": "2015-03-26",
+      "amount": 3.2424
+    },
+    {
+      "date": "2016-04-01",
+      "amount": 3.2424
+    }
+  ],
+  "splits": []
 }

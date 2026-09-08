@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:50:48.893Z",
+  "updated_at": "2026-09-08T09:38:25.605Z",
   "source": "Yahoo Finance",
   "symbol": "CNQ",
   "summary": "Canadian Natural Resources Limited engages in the acquisition, exploration, development, production, marketing, and sale of crude oil, natural gas, and natural gas liquids (NGLs) in Western Canada, the United Kingdom sector of the North Sea, and Offshore Africa. The company offers synthetic crude oil (SCO), mining bitumen, light and medium crude oil and NGLs, thermal bitumen, primary heavy crude oil and Pelican Lake heavy crude oil. Its midstream assets include two crude oil pipeline systems; and a 50% working interest in an 84-megawatt cogeneration plant at Primrose. The company was formerly known as AEX Minerals Corporation and changed its name to Canadian Natural Resources Limited in December 1975. Canadian Natural Resources Limited was incorporated in 1973 and is headquartered in Calgary, Canada.",
@@ -19,10 +19,228 @@
     "strong_sell": 1,
     "total": 23
   },
-  "target_mean": 49.4002,
-  "target_high": 57.90653,
-  "target_low": 44.754353,
+  "target_mean": 49.375504,
+  "target_high": 57.877575,
+  "target_low": 44.73198,
   "target_analysts": 4,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 42298000000,
+      "net": 10937000000,
+      "margin": 25.9
+    },
+    {
+      "year": "2023",
+      "revenue": 35968000000,
+      "net": 8233000000,
+      "margin": 22.9
+    },
+    {
+      "year": "2024",
+      "revenue": 35656000000,
+      "net": 6106000000,
+      "margin": 17.1
+    },
+    {
+      "year": "2025",
+      "revenue": 38762000000,
+      "net": 10820000000,
+      "margin": 27.9
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 11070000000,
+      "earnings": 600000000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 10710000000,
+      "earnings": 5303000000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 12404000000,
+      "earnings": 1348000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 17214000000,
+      "earnings": 4503000000
+    }
+  ],
+  "growth": {
+    "q0": 0.543,
+    "q1": 0.77970004,
+    "y0": 0.677,
+    "y1": -0.1015
+  },
+  "ratings": [
+    {
+      "date": "2026-03-12",
+      "firm": "Goldman Sachs",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-03-06",
+      "firm": "RBC Capital",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-01-02",
+      "firm": "Goldman Sachs",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2025-09-24",
+      "firm": "RBC Capital",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "reit"
+    },
+    {
+      "date": "2025-08-08",
+      "firm": "RBC Capital",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2025-03-27",
+      "firm": "RBC Capital",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "reit"
+    },
+    {
+      "date": "2025-03-07",
+      "firm": "RBC Capital",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2025-02-18",
+      "firm": "RBC Capital",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "reit"
+    },
+    {
+      "date": "2024-06-11",
+      "firm": "Scotiabank",
+      "from": "Sector Perform",
+      "to": "Sector Perform",
+      "action": "main"
+    },
+    {
+      "date": "2024-01-11",
+      "firm": "JP Morgan",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    }
+  ],
+  "holders": [
+    {
+      "name": "Capital World Investors",
+      "kind": "institution",
+      "pct": 10.57,
+      "shares": 217960835,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Royal Bank of Canada",
+      "kind": "institution",
+      "pct": 6.67,
+      "shares": 137606544,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Capital Research Global Investors",
+      "kind": "institution",
+      "pct": 5.63,
+      "shares": 116067730,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "AMERICAN BALANCED FUND",
+      "kind": "fond",
+      "pct": 3.38,
+      "shares": 69668408,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Bank of Montreal /CAN/",
+      "kind": "institution",
+      "pct": 3.14,
+      "shares": 64790046,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "FMR, LLC",
+      "kind": "institution",
+      "pct": 3.11,
+      "shares": 64243259,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Capital Management LLC",
+      "kind": "institution",
+      "pct": 2.85,
+      "shares": 58776966,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Goldman Sachs Group Inc",
+      "kind": "institution",
+      "pct": 2.46,
+      "shares": 50811234,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Canada Pension Plan Investment Board",
+      "kind": "institution",
+      "pct": 1.87,
+      "shares": 38636215,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Income Fund of America",
+      "kind": "fond",
+      "pct": 1.86,
+      "shares": 38270006,
+      "date": "2026-06-30"
+    }
+  ],
+  "insider_net": {
+    "period": "6m",
+    "buys": 0,
+    "sells": 0,
+    "bought": 0,
+    "sold": null,
+    "net_pct": null
+  },
+  "extras": {
+    "beta": 0.878,
+    "enterprise_value": 121588293632,
+    "ev_ebitda": 6.355,
+    "ev_revenue": 2.722,
+    "float_shares": 2014951330,
+    "short_shares": 48494402,
+    "short_pct_float": null,
+    "short_ratio": 8.29,
+    "last_split": "2:1",
+    "last_split_date": "2024-06-11"
+  },
   "ex_dividend": "2026-09-11",
   "dividend_date": null,
   "payout_ratio": 0.43150002,
@@ -143,6 +361,195 @@
       "value": 35197,
       "shares": 887,
       "date": "2026-07-06"
+    }
+  ],
+  "dividends": [
+    {
+      "date": "2016-03-16",
+      "amount": 0.0832
+    },
+    {
+      "date": "2016-06-15",
+      "amount": 0.0877
+    },
+    {
+      "date": "2016-09-14",
+      "amount": 0.0857
+    },
+    {
+      "date": "2016-12-07",
+      "amount": 0.0921
+    },
+    {
+      "date": "2017-03-15",
+      "amount": 0.0999
+    },
+    {
+      "date": "2017-06-14",
+      "amount": 0.1019
+    },
+    {
+      "date": "2017-09-14",
+      "amount": 0.1107
+    },
+    {
+      "date": "2017-12-11",
+      "amount": 0.1048
+    },
+    {
+      "date": "2018-03-15",
+      "amount": 0.1268
+    },
+    {
+      "date": "2018-06-14",
+      "amount": 0.1263
+    },
+    {
+      "date": "2018-09-13",
+      "amount": 0.1263
+    },
+    {
+      "date": "2019-03-21",
+      "amount": 0.1381
+    },
+    {
+      "date": "2019-06-13",
+      "amount": 0.1376
+    },
+    {
+      "date": "2019-09-12",
+      "amount": 0.1391
+    },
+    {
+      "date": "2019-12-10",
+      "amount": 0.1386
+    },
+    {
+      "date": "2020-03-19",
+      "amount": 0.1435
+    },
+    {
+      "date": "2020-06-11",
+      "amount": 0.1552
+    },
+    {
+      "date": "2020-09-17",
+      "amount": 0.1582
+    },
+    {
+      "date": "2020-12-08",
+      "amount": 0.1626
+    },
+    {
+      "date": "2021-03-18",
+      "amount": 0.1856
+    },
+    {
+      "date": "2021-06-17",
+      "amount": 0.1876
+    },
+    {
+      "date": "2021-09-16",
+      "amount": 0.1822
+    },
+    {
+      "date": "2021-12-09",
+      "amount": 0.2272
+    },
+    {
+      "date": "2022-03-17",
+      "amount": 0.2899
+    },
+    {
+      "date": "2022-06-16",
+      "amount": 0.285
+    },
+    {
+      "date": "2022-08-22",
+      "amount": 0.5775
+    },
+    {
+      "date": "2022-09-15",
+      "amount": 0.285
+    },
+    {
+      "date": "2022-12-15",
+      "amount": 0.314
+    },
+    {
+      "date": "2023-03-16",
+      "amount": 0.327
+    },
+    {
+      "date": "2023-06-15",
+      "amount": 0.338
+    },
+    {
+      "date": "2023-09-14",
+      "amount": 0.332
+    },
+    {
+      "date": "2023-12-07",
+      "amount": 0.368
+    },
+    {
+      "date": "2024-03-14",
+      "amount": 0.39
+    },
+    {
+      "date": "2024-06-17",
+      "amount": 0.382
+    },
+    {
+      "date": "2024-09-13",
+      "amount": 0.387
+    },
+    {
+      "date": "2024-12-13",
+      "amount": 0.39
+    },
+    {
+      "date": "2025-03-21",
+      "amount": 0.41
+    },
+    {
+      "date": "2025-06-13",
+      "amount": 0.432
+    },
+    {
+      "date": "2026-03-20",
+      "amount": 0.455
+    },
+    {
+      "date": "2026-06-23",
+      "amount": 0.442
+    }
+  ],
+  "splits": [
+    {
+      "date": "2004-06-01",
+      "ratio": "2:1",
+      "factor": 2
+    },
+    {
+      "date": "2005-05-31",
+      "ratio": "2:1",
+      "factor": 2
+    },
+    {
+      "date": "2010-06-01",
+      "ratio": "2:1",
+      "factor": 2
+    },
+    {
+      "date": "2022-08-22",
+      "ratio": "1021:1000",
+      "factor": 1.021
+    },
+    {
+      "date": "2024-06-11",
+      "ratio": "2:1",
+      "factor": 2
     }
   ]
 }

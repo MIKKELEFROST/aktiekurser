@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:25:24.384Z",
+  "updated_at": "2026-09-08T09:38:26.094Z",
   "source": "Yahoo Finance",
   "symbol": "HRB",
   "summary": "H&R Block, Inc., through its subsidiaries, provides assisted and do-it-yourself (DIY) tax preparation solutions in the United States, Canada, and Australia. The company offers tax preparation services, such as assisted income tax return preparation and related services through a system of retail offices operated directly or through its franchisees in person or virtually; refund transfers for clients to receive tax refunds; Peace of Mind, an extended service plan; and H&R Block Emerald Prepaid Mastercard and Spruce debit cards. It also provides H&R Block Emerald Advance, a term loan; Tax Identity Shield, a program for protection of tax identity and access to services to help restore tax identity; refund advance loans; H&R Block's Instant Refund, an advance refund; and small business financial solutions, such as payment processing, payroll and bookkeeping services. H&R Block, Inc. was incorporated in 1955 and is headquartered in Kansas City, Missouri.",
@@ -23,10 +23,228 @@
   "target_high": 60,
   "target_low": 33,
   "target_analysts": 3,
+  "statements": [
+    {
+      "year": "2023",
+      "revenue": 3472185000,
+      "net": 553700000,
+      "margin": 15.9
+    },
+    {
+      "year": "2024",
+      "revenue": 3610347000,
+      "net": 595317000,
+      "margin": 16.5
+    },
+    {
+      "year": "2025",
+      "revenue": 3760995000,
+      "net": 605773000,
+      "margin": 16.1
+    },
+    {
+      "year": "2026",
+      "revenue": 3945392000,
+      "net": 733596000,
+      "margin": 18.6
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 203551000,
+      "earnings": -165819000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 198865000,
+      "earnings": -242166000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 2398107000,
+      "earnings": 847901000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 1144869000,
+      "earnings": 293680000
+    }
+  ],
+  "growth": {
+    "q0": -0.15630001,
+    "q1": -0.0842,
+    "y0": 0.1574,
+    "y1": 0.1237
+  },
+  "ratings": [
+    {
+      "date": "2026-08-12",
+      "firm": "Goldman Sachs",
+      "from": "Sell",
+      "to": "Sell",
+      "action": "main"
+    },
+    {
+      "date": "2026-08-12",
+      "firm": "Barrington Research",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-28",
+      "firm": "Stephens & Co.",
+      "from": null,
+      "to": "Equal-Weight",
+      "action": "init"
+    },
+    {
+      "date": "2026-04-27",
+      "firm": "Barrington Research",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-02-09",
+      "firm": "Goldman Sachs",
+      "from": "Sell",
+      "to": "Sell",
+      "action": "main"
+    },
+    {
+      "date": "2026-02-04",
+      "firm": "Barrington Research",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-01-22",
+      "firm": "Barrington Research",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2025-10-27",
+      "firm": "Barrington Research",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2025-09-23",
+      "firm": "Barrington Research",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2025-08-13",
+      "firm": "Barrington Research",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    }
+  ],
+  "holders": [
+    {
+      "name": "Blackrock Inc.",
+      "kind": "institution",
+      "pct": 12.88,
+      "shares": 16326241,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "FMR, LLC",
+      "kind": "institution",
+      "pct": 12.42,
+      "shares": 15744303,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "AQR Capital Management, LLC",
+      "kind": "institution",
+      "pct": 7.59,
+      "shares": 9616406,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Portfolio Management LLC",
+      "kind": "institution",
+      "pct": 4.9,
+      "shares": 6210650,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Capital Management LLC",
+      "kind": "institution",
+      "pct": 4.51,
+      "shares": 5713146,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "iShares Trust-iShares Core S&P Mid-Cap ETF",
+      "kind": "fond",
+      "pct": 3.43,
+      "shares": 4351188,
+      "date": "2026-07-31"
+    },
+    {
+      "name": "State Street Corporation",
+      "kind": "institution",
+      "pct": 3.28,
+      "shares": 4157916,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
+      "kind": "fond",
+      "pct": 3.18,
+      "shares": 4027673,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Fuller & Thaler Asset Management Inc.",
+      "kind": "institution",
+      "pct": 3.14,
+      "shares": 3975923,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Capitol Series Trust-FullerThaler Behavioral Small-Cap Equity Fund",
+      "kind": "fond",
+      "pct": 2.99,
+      "shares": 3784777,
+      "date": "2026-06-30"
+    }
+  ],
+  "insider_net": {
+    "period": "6m",
+    "buys": 0,
+    "sells": 0,
+    "bought": 0,
+    "sold": null,
+    "net_pct": null
+  },
+  "extras": {
+    "beta": 0.376,
+    "enterprise_value": 7191073280,
+    "ev_ebitda": 6.981,
+    "ev_revenue": 1.823,
+    "float_shares": 112636702,
+    "short_shares": 17836338,
+    "short_pct_float": 23.67,
+    "short_ratio": 7.19,
+    "last_split": "2:1",
+    "last_split_date": "2005-08-23"
+  },
   "ex_dividend": "2026-09-03",
   "dividend_date": null,
   "payout_ratio": 0.2953,
-  "inst_count": 710,
+  "inst_count": 712,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -143,6 +361,195 @@
       "value": 0,
       "shares": 3727,
       "date": "2026-01-22"
+    }
+  ],
+  "dividends": [
+    {
+      "date": "2016-12-01",
+      "amount": 0.22
+    },
+    {
+      "date": "2017-03-10",
+      "amount": 0.22
+    },
+    {
+      "date": "2017-06-21",
+      "amount": 0.24
+    },
+    {
+      "date": "2017-09-12",
+      "amount": 0.24
+    },
+    {
+      "date": "2017-12-01",
+      "amount": 0.24
+    },
+    {
+      "date": "2018-03-12",
+      "amount": 0.24
+    },
+    {
+      "date": "2018-06-21",
+      "amount": 0.25
+    },
+    {
+      "date": "2018-09-11",
+      "amount": 0.25
+    },
+    {
+      "date": "2018-11-30",
+      "amount": 0.25
+    },
+    {
+      "date": "2019-03-15",
+      "amount": 0.25
+    },
+    {
+      "date": "2019-06-20",
+      "amount": 0.26
+    },
+    {
+      "date": "2019-09-12",
+      "amount": 0.26
+    },
+    {
+      "date": "2019-12-06",
+      "amount": 0.26
+    },
+    {
+      "date": "2020-03-16",
+      "amount": 0.26
+    },
+    {
+      "date": "2020-06-25",
+      "amount": 0.26
+    },
+    {
+      "date": "2020-09-10",
+      "amount": 0.26
+    },
+    {
+      "date": "2020-12-04",
+      "amount": 0.26
+    },
+    {
+      "date": "2021-03-15",
+      "amount": 0.26
+    },
+    {
+      "date": "2021-06-24",
+      "amount": 0.27
+    },
+    {
+      "date": "2021-09-09",
+      "amount": 0.27
+    },
+    {
+      "date": "2021-12-03",
+      "amount": 0.27
+    },
+    {
+      "date": "2022-03-07",
+      "amount": 0.27
+    },
+    {
+      "date": "2022-06-07",
+      "amount": 0.27
+    },
+    {
+      "date": "2022-09-07",
+      "amount": 0.29
+    },
+    {
+      "date": "2022-12-05",
+      "amount": 0.29
+    },
+    {
+      "date": "2023-03-06",
+      "amount": 0.29
+    },
+    {
+      "date": "2023-06-06",
+      "amount": 0.29
+    },
+    {
+      "date": "2023-09-06",
+      "amount": 0.32
+    },
+    {
+      "date": "2023-12-04",
+      "amount": 0.32
+    },
+    {
+      "date": "2024-03-04",
+      "amount": 0.32
+    },
+    {
+      "date": "2024-06-05",
+      "amount": 0.32
+    },
+    {
+      "date": "2024-09-05",
+      "amount": 0.375
+    },
+    {
+      "date": "2024-12-05",
+      "amount": 0.375
+    },
+    {
+      "date": "2025-03-04",
+      "amount": 0.375
+    },
+    {
+      "date": "2025-06-04",
+      "amount": 0.375
+    },
+    {
+      "date": "2025-09-04",
+      "amount": 0.42
+    },
+    {
+      "date": "2025-12-04",
+      "amount": 0.42
+    },
+    {
+      "date": "2026-03-04",
+      "amount": 0.42
+    },
+    {
+      "date": "2026-06-03",
+      "amount": 0.42
+    },
+    {
+      "date": "2026-09-03",
+      "amount": 0.46
+    }
+  ],
+  "splits": [
+    {
+      "date": "1985-10-02",
+      "ratio": "2:1",
+      "factor": 2
+    },
+    {
+      "date": "1987-10-02",
+      "ratio": "2:1",
+      "factor": 2
+    },
+    {
+      "date": "1991-10-02",
+      "ratio": "2:1",
+      "factor": 2
+    },
+    {
+      "date": "2001-08-02",
+      "ratio": "2:1",
+      "factor": 2
+    },
+    {
+      "date": "2005-08-23",
+      "ratio": "2:1",
+      "factor": 2
     }
   ]
 }

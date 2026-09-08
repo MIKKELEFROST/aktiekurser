@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:50:48.775Z",
+  "updated_at": "2026-09-08T09:38:25.356Z",
   "source": "Yahoo Finance",
   "symbol": "BCML",
   "summary": "BayCom Corp operates as the bank holding company for United Business Bank that provides various financial services to small and mid-sized businesses, service professionals, and individuals. The company provides demand, savings, money market, and time deposit accounts. It also offers commercial and multifamily real estate loans, including owner-occupied and investor real estate loans; commercial and industrial loans, such as equipment loans and working capital lines of credit; small business administration loans; construction and land loans; agriculture-related loans; and consumer loans comprising installment loans, unsecured and secured personal lines of credit, and overdraft protection. In addition, the company provides online and mobile banking, automated teller machine, remote deposit capture, night depository, courier, and direct deposit services; treasury management services that includes balance reporting, transfers between accounts, wire transfer initiation, automated clearing house (ACH) origination, and stop payments; debit cards; cashier's and travelers checks; letters of credit; and lockbox, positive pay, reverse positive pay, and account reconciliation services, as well as zero balance accounts and sweep accounts, including loan sweep. It operates through a network of full-service banking branches in Northern and Southern California; Las Vegas, Nevada; Denver, Colorado; Custer, Delta, and Grand counties, Colorado; and Seattle, Washington and Central New Mexico. The company was formerly known as Bay Commercial Bank and changed its name to BayCom Corp in January 2017. BayCom Corp was incorporated in 2004 and is headquartered in Walnut Creek, California.",
@@ -23,6 +23,224 @@
   "target_high": 32,
   "target_low": 32,
   "target_analysts": 3,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 96714000,
+      "net": 26987000,
+      "margin": 27.9
+    },
+    {
+      "year": "2023",
+      "revenue": 97874000,
+      "net": 27425000,
+      "margin": 28
+    },
+    {
+      "year": "2024",
+      "revenue": 91141000,
+      "net": 23614000,
+      "margin": 25.9
+    },
+    {
+      "year": "2025",
+      "revenue": 94454000,
+      "net": 23931000,
+      "margin": 25.3
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 26002000,
+      "earnings": 5007000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 26218000,
+      "earnings": 6858000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 27087000,
+      "earnings": 8180000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 25574000,
+      "earnings": -6962000
+    }
+  ],
+  "growth": {
+    "q0": 0.1739,
+    "q1": -0.111099996,
+    "y0": -0.1682,
+    "y1": 0.318
+  },
+  "ratings": [
+    {
+      "date": "2026-05-26",
+      "firm": "DA Davidson",
+      "from": "Buy",
+      "to": "Neutral",
+      "action": "down"
+    },
+    {
+      "date": "2026-04-28",
+      "firm": "DA Davidson",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-04-10",
+      "firm": "DA Davidson",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-01-27",
+      "firm": "DA Davidson",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2025-10-28",
+      "firm": "DA Davidson",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2025-07-21",
+      "firm": "DA Davidson",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2020-04-28",
+      "firm": "Janney Montgomery Scott",
+      "from": null,
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2020-04-27",
+      "firm": "B. Riley Securities",
+      "from": null,
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2020-04-13",
+      "firm": "B. Riley Securities",
+      "from": null,
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2019-03-15",
+      "firm": "B. Riley Securities",
+      "from": null,
+      "to": "Buy",
+      "action": "init"
+    }
+  ],
+  "holders": [
+    {
+      "name": "Wellington Management Group, LLP",
+      "kind": "institution",
+      "pct": 9.33,
+      "shares": 1015978,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Blackrock Inc.",
+      "kind": "institution",
+      "pct": 8.51,
+      "shares": 926776,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Royce & Associates LP",
+      "kind": "institution",
+      "pct": 7.39,
+      "shares": 805051,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Dimensional Fund Advisors LP",
+      "kind": "institution",
+      "pct": 5.85,
+      "shares": 637001,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Capital Management LLC",
+      "kind": "institution",
+      "pct": 4.25,
+      "shares": 462691,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
+      "kind": "fond",
+      "pct": 3.02,
+      "shares": 328986,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "iShares Trust-iShares Russell 2000 ETF",
+      "kind": "fond",
+      "pct": 2.75,
+      "shares": 299718,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Geode Capital Management, LLC",
+      "kind": "institution",
+      "pct": 2.46,
+      "shares": 267980,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Manufacturers Life Insurance Co.",
+      "kind": "institution",
+      "pct": 2.44,
+      "shares": 265773,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "ROYCE FUND-Royce Small-Cap Opportunity Fund",
+      "kind": "fond",
+      "pct": 2.39,
+      "shares": 260459,
+      "date": "2026-06-30"
+    }
+  ],
+  "insider_net": {
+    "period": "6m",
+    "buys": 0,
+    "sells": 0,
+    "bought": 0,
+    "sold": null,
+    "net_pct": null
+  },
+  "extras": {
+    "beta": 0.292,
+    "enterprise_value": 203267680,
+    "ev_ebitda": null,
+    "ev_revenue": 2.124,
+    "float_shares": 10071984,
+    "short_shares": 211863,
+    "short_pct_float": 2,
+    "short_ratio": 4.1,
+    "last_split": null,
+    "last_split_date": null
+  },
   "ex_dividend": "2026-09-10",
   "dividend_date": null,
   "payout_ratio": 0.9583,
@@ -144,5 +362,80 @@
       "shares": 1182,
       "date": "2026-07-01"
     }
-  ]
+  ],
+  "dividends": [
+    {
+      "date": "2022-03-10",
+      "amount": 0.05
+    },
+    {
+      "date": "2022-06-16",
+      "amount": 0.05
+    },
+    {
+      "date": "2022-09-15",
+      "amount": 0.05
+    },
+    {
+      "date": "2022-12-15",
+      "amount": 0.05
+    },
+    {
+      "date": "2023-03-09",
+      "amount": 0.1
+    },
+    {
+      "date": "2023-06-15",
+      "amount": 0.1
+    },
+    {
+      "date": "2023-09-14",
+      "amount": 0.1
+    },
+    {
+      "date": "2023-12-13",
+      "amount": 0.1
+    },
+    {
+      "date": "2024-03-14",
+      "amount": 0.1
+    },
+    {
+      "date": "2024-06-13",
+      "amount": 0.1
+    },
+    {
+      "date": "2024-09-19",
+      "amount": 0.1
+    },
+    {
+      "date": "2024-12-12",
+      "amount": 0.15
+    },
+    {
+      "date": "2025-03-13",
+      "amount": 0.15
+    },
+    {
+      "date": "2025-06-12",
+      "amount": 0.2
+    },
+    {
+      "date": "2025-09-11",
+      "amount": 0.25
+    },
+    {
+      "date": "2025-12-11",
+      "amount": 0.3
+    },
+    {
+      "date": "2026-03-12",
+      "amount": 0.3
+    },
+    {
+      "date": "2026-06-11",
+      "amount": 0.3
+    }
+  ],
+  "splits": []
 }

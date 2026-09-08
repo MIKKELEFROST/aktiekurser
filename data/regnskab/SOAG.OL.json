@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:25:25.310Z",
+  "updated_at": "2026-09-08T09:38:26.881Z",
   "source": "Yahoo Finance",
   "symbol": "SOAG.OL",
   "summary": "SpareBank 1 Østfold Akershus operates as a savings bank that provides various banking products and services in Norway. It offers savings in funds; savings accounts; savings for children and retirement; and stocks and investment products. The company also provides mortgage, car, moving, consumer, vehicle, green, and transferring loans, as well as refinancing of mortgage and consumer debt; financing services, including overdrafts, leasing, business loans, bank guarantees, construction loans, growth guarantee schemes, operating credit for agriculture, factoring, and invoice sales. In addition, it offers pension products; car, home, personal, pet, vehicle, travel, machinery, building, employee and personal, and farm and agricultural insurances; and property services. Further, the company provides mobile and online banking; bank card and credit card; and pay and transfer services. SpareBank 1 Østfold Akershus was founded in 1835 and is based in Moss, Norway.",
@@ -23,6 +23,82 @@
   "target_high": 490,
   "target_low": 466,
   "target_analysts": 2,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 923000000,
+      "net": 452000000,
+      "margin": 49
+    },
+    {
+      "year": "2023",
+      "revenue": 1072000000,
+      "net": 493000000,
+      "margin": 46
+    },
+    {
+      "year": "2024",
+      "revenue": 1005000000,
+      "net": 651000000,
+      "margin": 64.8
+    },
+    {
+      "year": "2025",
+      "revenue": 1183000000,
+      "net": 657000000,
+      "margin": 55.5
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 310000000,
+      "earnings": 157000000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 297000000,
+      "earnings": 143000000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 308000000,
+      "earnings": 126000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 350000000,
+      "earnings": 183000000
+    }
+  ],
+  "growth": {
+    "q0": -0.0586,
+    "q1": -0.0794,
+    "y0": -0.1083,
+    "y1": 0.0374
+  },
+  "ratings": [],
+  "holders": [],
+  "insider_net": {
+    "period": "6m",
+    "buys": 0,
+    "sells": 0,
+    "bought": 0,
+    "sold": null,
+    "net_pct": null
+  },
+  "extras": {
+    "beta": 0.078,
+    "enterprise_value": 5433715200,
+    "ev_ebitda": null,
+    "ev_revenue": 4.037,
+    "float_shares": 4113602,
+    "short_shares": null,
+    "short_pct_float": null,
+    "short_ratio": null,
+    "last_split": null,
+    "last_split_date": null
+  },
   "ex_dividend": "2026-03-26",
   "dividend_date": null,
   "payout_ratio": 0.5341,
@@ -53,5 +129,92 @@
       "surprise_pct": 8.31
     }
   ],
-  "insiders": []
+  "insiders": [],
+  "dividends": [
+    {
+      "date": "2008-03-07",
+      "amount": 9.986
+    },
+    {
+      "date": "2009-03-12",
+      "amount": 1.5217
+    },
+    {
+      "date": "2010-03-12",
+      "amount": 2.2445
+    },
+    {
+      "date": "2011-03-11",
+      "amount": 6.9712
+    },
+    {
+      "date": "2012-03-30",
+      "amount": 1.9021
+    },
+    {
+      "date": "2013-03-22",
+      "amount": 3.8993
+    },
+    {
+      "date": "2014-03-21",
+      "amount": 3.1385
+    },
+    {
+      "date": "2015-03-18",
+      "amount": 4.1846
+    },
+    {
+      "date": "2016-03-17",
+      "amount": 3.9
+    },
+    {
+      "date": "2017-03-21",
+      "amount": 7.4
+    },
+    {
+      "date": "2018-04-10",
+      "amount": 9.3
+    },
+    {
+      "date": "2019-04-10",
+      "amount": 14.6
+    },
+    {
+      "date": "2020-04-03",
+      "amount": 12
+    },
+    {
+      "date": "2021-03-31",
+      "amount": 3.5
+    },
+    {
+      "date": "2021-10-29",
+      "amount": 3.5
+    },
+    {
+      "date": "2022-03-30",
+      "amount": 16.2
+    },
+    {
+      "date": "2023-03-31",
+      "amount": 17.8
+    },
+    {
+      "date": "2024-03-22",
+      "amount": 21.5
+    },
+    {
+      "date": "2025-03-27",
+      "amount": 20.1
+    },
+    {
+      "date": "2025-12-03",
+      "amount": 10
+    },
+    {
+      "date": "2026-03-26",
+      "amount": 24.5
+    }
+  ],
+  "splits": []
 }

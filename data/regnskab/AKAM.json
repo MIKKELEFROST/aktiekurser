@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:25:23.233Z",
+  "updated_at": "2026-09-08T09:38:25.167Z",
   "source": "Yahoo Finance",
   "symbol": "AKAM",
   "summary": "Akamai Technologies, Inc. engages in the provision of security, delivery, and cloud computing solutions in the United States and internationally. It offers security solutions that include web application and application programming interfaces (API) protection solutions, which protect web, API, and mobile app traffic from attacks; Bot & Abuse portfolio, which provides solutions to help customers protect against threats; full account lifecycle protections including the ability to defend against account takeover and opening abuse, adversarial bot protection, protection against credential stuffing, inventory scalping, and hoarding; and solutions designed to stop persistent scrapers from stealing content; API security, which discovers, audits, and monitors API; and microservice and application component protection that analyzes and protects application traffic that moves between application components. The company also offers cloud computing services, which include compute, storage, and cloud native and networking services; and Akamai App Platform, provides ready-to-run templates that address challenges in deploying, managing and scaling Kubernetes clusters at scale. In addition, it offers delivery solutions that include web and mobile performance solutions, which enables dynamic websites and applications, as well as global traffic management, site acceleration, application load balancing, large-scale load testing, and real-user monitoring; and media delivery solutions, including video streaming and video player services, game and software delivery, broadcast operations, authoritative domain name system, resolution, and data and analytics. The company has a strategic alliance with Deloitte Canada to help organizations achieve platform-based resilience against AI-accelerated cyberthreats. Akamai Technologies, Inc. was incorporated in 1998 and is headquartered in Cambridge, Massachusetts.",
@@ -23,10 +23,228 @@
   "target_high": 195,
   "target_low": 93,
   "target_analysts": 23,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 3616654000,
+      "net": 523672000,
+      "margin": 14.5
+    },
+    {
+      "year": "2023",
+      "revenue": 3811920000,
+      "net": 547629000,
+      "margin": 14.4
+    },
+    {
+      "year": "2024",
+      "revenue": 3991168000,
+      "net": 504918000,
+      "margin": 12.7
+    },
+    {
+      "year": "2025",
+      "revenue": 4208175000,
+      "net": 452031000,
+      "margin": 10.7
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 1054630000,
+      "earnings": 140170000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 1094912000,
+      "earnings": 85072000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 1073610000,
+      "earnings": 106319000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 1099682000,
+      "earnings": 79404000
+    }
+  ],
+  "growth": {
+    "q0": -0.096599996,
+    "q1": -0.0155,
+    "y0": -0.0592,
+    "y1": 0.073
+  },
+  "ratings": [
+    {
+      "date": "2026-09-04",
+      "firm": "Citigroup",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-09-01",
+      "firm": "Piper Sandler",
+      "from": "Neutral",
+      "to": "Overweight",
+      "action": "up"
+    },
+    {
+      "date": "2026-08-13",
+      "firm": "JP Morgan",
+      "from": "Underweight",
+      "to": "Neutral",
+      "action": "up"
+    },
+    {
+      "date": "2026-08-10",
+      "firm": "HSBC",
+      "from": "Buy",
+      "to": "Hold",
+      "action": "down"
+    },
+    {
+      "date": "2026-08-10",
+      "firm": "Susquehanna",
+      "from": "Positive",
+      "to": "Positive",
+      "action": "main"
+    },
+    {
+      "date": "2026-08-07",
+      "firm": "UBS",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-08-07",
+      "firm": "TD Cowen",
+      "from": "Hold",
+      "to": "Hold",
+      "action": "main"
+    },
+    {
+      "date": "2026-08-07",
+      "firm": "Baird",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-08-07",
+      "firm": "RBC Capital",
+      "from": "Sector Perform",
+      "to": "Sector Perform",
+      "action": "main"
+    },
+    {
+      "date": "2026-08-07",
+      "firm": "Piper Sandler",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    }
+  ],
+  "holders": [
+    {
+      "name": "Capital World Investors",
+      "kind": "institution",
+      "pct": 7.8,
+      "shares": 11203309,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Blackrock Inc.",
+      "kind": "institution",
+      "pct": 7.28,
+      "shares": 10461720,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Capital Management LLC",
+      "kind": "institution",
+      "pct": 6.61,
+      "shares": 9496453,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Portfolio Management LLC",
+      "kind": "institution",
+      "pct": 5.05,
+      "shares": 7257551,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Growth Fund of America",
+      "kind": "fond",
+      "pct": 4.1,
+      "shares": 5891626,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "State Street Corporation",
+      "kind": "institution",
+      "pct": 4.02,
+      "shares": 5774426,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "First Trust Advisors LP",
+      "kind": "institution",
+      "pct": 3.31,
+      "shares": 4752119,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
+      "kind": "fond",
+      "pct": 3.21,
+      "shares": 4614269,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Geode Capital Management, LLC",
+      "kind": "institution",
+      "pct": 2.94,
+      "shares": 4226353,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Invesco Ltd.",
+      "kind": "institution",
+      "pct": 2.72,
+      "shares": 3913562,
+      "date": "2026-06-30"
+    }
+  ],
+  "insider_net": {
+    "period": "6m",
+    "buys": 6,
+    "sells": 9,
+    "bought": 12583,
+    "sold": 62610,
+    "net_pct": -1.6
+  },
+  "extras": {
+    "beta": 0.635,
+    "enterprise_value": 21105461248,
+    "ev_ebitda": 19.544,
+    "ev_revenue": 4.882,
+    "float_shares": 140438433,
+    "short_shares": 19706937,
+    "short_pct_float": 16.12,
+    "short_ratio": 5.46,
+    "last_split": null,
+    "last_split_date": null
+  },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 1139,
+  "inst_count": 1140,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -144,5 +362,7 @@
       "shares": 4500,
       "date": "2026-03-16"
     }
-  ]
+  ],
+  "dividends": [],
+  "splits": []
 }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:50:49.690Z",
+  "updated_at": "2026-09-08T09:38:26.962Z",
   "source": "Yahoo Finance",
   "symbol": "TAC",
   "summary": "TransAlta Corporation engages in the development, production, and sale of electric energy. It operates through Hydro, Wind and Solar, Gas, Energy Transition, and Energy Marketing segments. The Hydro segment holds interest of approximately 922 megawatts (MW) located in Alberta and Canada. The Wind and Solar segment has a net ownership interest of approximately 2,587 MW located in Alberta, Canada, the Unites States, and Western Australia, as well as battery storage facilities. The Gas segment has a net ownership interest of approximately 4834 MW located in Alberta, Canada, the Unites States, and Western Australia. The Energy Transition segment has a net ownership interest of approximately 671 MW located in the United States, as well as operates the Skookumchuck hydro facility in Centralia. The Energy Marketing segment is involved in the trading of electricity, natural gas, and environmental products. TransAlta Corporation was founded in 1909 and is headquartered in Calgary, Canada.",
@@ -19,14 +19,232 @@
     "strong_sell": 1,
     "total": 11
   },
-  "target_mean": 13.406494,
-  "target_high": 16.666183,
-  "target_low": 10.146807,
+  "target_mean": 13.4025135,
+  "target_high": 16.661234,
+  "target_low": 10.143794,
   "target_analysts": 2,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 2976000000,
+      "net": 4000000,
+      "margin": 0.1
+    },
+    {
+      "year": "2023",
+      "revenue": 3355000000,
+      "net": 644000000,
+      "margin": 19.2
+    },
+    {
+      "year": "2024",
+      "revenue": 2845000000,
+      "net": 177000000,
+      "margin": 6.2
+    },
+    {
+      "year": "2025",
+      "revenue": 2405000000,
+      "net": -190000000,
+      "margin": -7.9
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 615000000,
+      "earnings": -49000000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 599000000,
+      "earnings": -36000000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 565000000,
+      "earnings": 13000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 487000000,
+      "earnings": 49000000
+    }
+  ],
+  "growth": {
+    "q0": 5.5,
+    "q1": 2.1667,
+    "y0": 0.6316,
+    "y1": 0.7972
+  },
+  "ratings": [
+    {
+      "date": "2026-03-24",
+      "firm": "RBC Capital",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "reit"
+    },
+    {
+      "date": "2025-10-14",
+      "firm": "Jefferies",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2025-08-05",
+      "firm": "TD Securities",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2025-07-18",
+      "firm": "Scotiabank",
+      "from": "Sector Perform",
+      "to": "Sector Outperform",
+      "action": "up"
+    },
+    {
+      "date": "2025-05-08",
+      "firm": "RBC Capital",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2025-02-18",
+      "firm": "CIBC",
+      "from": "Neutral",
+      "to": "Outperformer",
+      "action": "up"
+    },
+    {
+      "date": "2022-12-16",
+      "firm": "RBC Capital",
+      "from": null,
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2020-02-10",
+      "firm": "RBC Capital",
+      "from": "Sector Perform",
+      "to": "Outperform",
+      "action": "up"
+    },
+    {
+      "date": "2020-01-16",
+      "firm": "Credit Suisse",
+      "from": "Neutral",
+      "to": "Outperform",
+      "action": "up"
+    },
+    {
+      "date": "2019-01-23",
+      "firm": "National Bank Financial Inc",
+      "from": "Sector Perform",
+      "to": "Outperform",
+      "action": "up"
+    }
+  ],
+  "holders": [
+    {
+      "name": "Royal Bank of Canada",
+      "kind": "institution",
+      "pct": 8.92,
+      "shares": 28204092,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Brookfield Corp /ON/",
+      "kind": "institution",
+      "pct": 8.53,
+      "shares": 26960857,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Bank of Montreal /CAN/",
+      "kind": "institution",
+      "pct": 6.92,
+      "shares": 21875088,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Rubric Capital Management LP",
+      "kind": "institution",
+      "pct": 6.4,
+      "shares": 20232011,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Toronto Dominion Bank",
+      "kind": "institution",
+      "pct": 3.71,
+      "shares": 11710560,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Morgan Stanley",
+      "kind": "institution",
+      "pct": 3.6,
+      "shares": 11392068,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Goldman Sachs Group Inc",
+      "kind": "institution",
+      "pct": 3.36,
+      "shares": 10620447,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Millennium Management Llc",
+      "kind": "institution",
+      "pct": 3.3,
+      "shares": 10427393,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Bank of America Corporation",
+      "kind": "institution",
+      "pct": 2.82,
+      "shares": 8925097,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Capital Management LLC",
+      "kind": "institution",
+      "pct": 2.47,
+      "shares": 7798076,
+      "date": "2026-06-30"
+    }
+  ],
+  "insider_net": {
+    "period": "6m",
+    "buys": 0,
+    "sells": 0,
+    "bought": 0,
+    "sold": null,
+    "net_pct": null
+  },
+  "extras": {
+    "beta": 0.46,
+    "enterprise_value": 8729948160,
+    "ev_ebitda": 10.283,
+    "ev_revenue": 3.853,
+    "float_shares": 265774238,
+    "short_shares": 8790348,
+    "short_pct_float": 2.79,
+    "short_ratio": 5.19,
+    "last_split": null,
+    "last_split_date": null
+  },
   "ex_dividend": "2026-09-01",
   "dividend_date": null,
   "payout_ratio": 12,
-  "inst_count": 262,
+  "inst_count": 264,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -144,5 +362,168 @@
       "shares": 200,
       "date": "2026-06-08"
     }
-  ]
+  ],
+  "dividends": [
+    {
+      "date": "2016-05-31",
+      "amount": 0.031
+    },
+    {
+      "date": "2016-08-30",
+      "amount": 0.031
+    },
+    {
+      "date": "2016-11-29",
+      "amount": 0.03
+    },
+    {
+      "date": "2017-02-27",
+      "amount": 0.031
+    },
+    {
+      "date": "2017-05-30",
+      "amount": 0.03
+    },
+    {
+      "date": "2017-08-30",
+      "amount": 0.032
+    },
+    {
+      "date": "2017-11-30",
+      "amount": 0.031
+    },
+    {
+      "date": "2018-02-28",
+      "amount": 0.031
+    },
+    {
+      "date": "2018-05-31",
+      "amount": 0.031
+    },
+    {
+      "date": "2018-11-30",
+      "amount": 0.03
+    },
+    {
+      "date": "2019-02-28",
+      "amount": 0.03
+    },
+    {
+      "date": "2019-05-31",
+      "amount": 0.03
+    },
+    {
+      "date": "2019-08-30",
+      "amount": 0.03
+    },
+    {
+      "date": "2019-11-29",
+      "amount": 0.03
+    },
+    {
+      "date": "2020-02-28",
+      "amount": 0.032
+    },
+    {
+      "date": "2020-05-29",
+      "amount": 0.031
+    },
+    {
+      "date": "2020-08-31",
+      "amount": 0.032
+    },
+    {
+      "date": "2020-11-30",
+      "amount": 0.033
+    },
+    {
+      "date": "2021-02-26",
+      "amount": 0.036
+    },
+    {
+      "date": "2021-06-01",
+      "amount": 0.037
+    },
+    {
+      "date": "2021-08-31",
+      "amount": 0.036
+    },
+    {
+      "date": "2021-11-30",
+      "amount": 0.039
+    },
+    {
+      "date": "2022-02-28",
+      "amount": 0.039
+    },
+    {
+      "date": "2022-05-31",
+      "amount": 0.04
+    },
+    {
+      "date": "2022-08-31",
+      "amount": 0.038
+    },
+    {
+      "date": "2022-11-30",
+      "amount": 0.041
+    },
+    {
+      "date": "2023-02-28",
+      "amount": 0.041
+    },
+    {
+      "date": "2023-05-31",
+      "amount": 0.04
+    },
+    {
+      "date": "2023-08-31",
+      "amount": 0.041
+    },
+    {
+      "date": "2023-11-30",
+      "amount": 0.04
+    },
+    {
+      "date": "2024-02-29",
+      "amount": 0.044
+    },
+    {
+      "date": "2024-05-31",
+      "amount": 0.044
+    },
+    {
+      "date": "2024-08-30",
+      "amount": 0.044
+    },
+    {
+      "date": "2024-11-29",
+      "amount": 0.043
+    },
+    {
+      "date": "2025-02-28",
+      "amount": 0.042
+    },
+    {
+      "date": "2025-05-30",
+      "amount": 0.047
+    },
+    {
+      "date": "2025-08-29",
+      "amount": 0.047
+    },
+    {
+      "date": "2026-02-27",
+      "amount": 0.048
+    },
+    {
+      "date": "2026-06-01",
+      "amount": 0.051
+    },
+    {
+      "date": "2026-09-01",
+      "amount": 0.051
+    }
+  ],
+  "splits": []
 }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:50:48.990Z",
+  "updated_at": "2026-09-08T09:38:25.804Z",
   "source": "Yahoo Finance",
   "symbol": "ENVIP.OL",
   "summary": "Envipco Holding N.V., together with its subsidiaries, develops, manufactures, assembles, leases, sells, markets, and services a line of reverse vending machines (RVMs) in North America and Europe. It offers RVMs for convenience stores, petrol stations, and schools; Compact RVM for convenience stores with limited space and low-moderate throughput; Flex, a solution to recycle empty drinks packages; Flex Tri to collect PET bottles, cans, and glass bottles; Optima, a solution for retailers or redemption centers; Envipco Ultra model for the standard-size retail location; Envipco Magna, a high-capacity RVM designed for both indoor and outdoor use; Ultra for larger return centers, such as sizable supermarkets, hypermarkets, and redemption centers; Envipco Modula for supermarkets and hypermarkets; and Envipco Quantum for supermarkets, hypermarkets, and municipal recycling centers. Envipco Holding N.V. was incorporated in 1998 and is headquartered in Amersfoort, the Netherlands.",
@@ -19,10 +19,94 @@
     "strong_sell": 0,
     "total": 5
   },
-  "target_mean": 72.12152,
-  "target_high": 105.55994,
-  "target_low": 56.991188,
+  "target_mean": 72.185165,
+  "target_high": 105.65309,
+  "target_low": 57.04148,
   "target_analysts": 5,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 55965000,
+      "net": -4311000,
+      "margin": -7.7
+    },
+    {
+      "year": "2023",
+      "revenue": 87581000,
+      "net": 1418000,
+      "margin": 1.6
+    },
+    {
+      "year": "2024",
+      "revenue": 117847000,
+      "net": -643000,
+      "margin": -0.5
+    },
+    {
+      "year": "2025",
+      "revenue": 90351000,
+      "net": -10760000,
+      "margin": -11.9
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 22521000,
+      "earnings": -4034000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 23775000,
+      "earnings": -2100000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 19730000,
+      "earnings": -4501000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 26118000,
+      "earnings": -3873000
+    }
+  ],
+  "growth": {
+    "q0": 0.619,
+    "q1": 0.889,
+    "y0": 0.14819999,
+    "y1": 4.4077
+  },
+  "ratings": [],
+  "holders": [
+    {
+      "name": "American Century ETF Trust-Avantis International Small Cap Equity ETF",
+      "kind": "institution",
+      "pct": 0,
+      "shares": 2504,
+      "date": "2026-06-30"
+    }
+  ],
+  "insider_net": {
+    "period": "6m",
+    "buys": 0,
+    "sells": 0,
+    "bought": 0,
+    "sold": null,
+    "net_pct": null
+  },
+  "extras": {
+    "beta": 0.883,
+    "enterprise_value": 2368546048,
+    "ev_ebitda": -258.321,
+    "ev_revenue": 25.705,
+    "float_shares": 50865137,
+    "short_shares": null,
+    "short_pct_float": null,
+    "short_ratio": null,
+    "last_split": "10:1",
+    "last_split_date": "2021-06-30"
+  },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
@@ -53,5 +137,13 @@
       "surprise_pct": -60
     }
   ],
-  "insiders": []
+  "insiders": [],
+  "dividends": [],
+  "splits": [
+    {
+      "date": "2021-06-30",
+      "ratio": "10:1",
+      "factor": 10
+    }
+  ]
 }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:25:23.358Z",
+  "updated_at": "2026-09-08T09:38:25.263Z",
   "source": "Yahoo Finance",
   "symbol": "AROW",
   "summary": "Arrow Financial Corporation, a bank holding company, provides various commercial and consumer banking, and financial products and services in the United States. The company's deposit products include demand deposits, interest-bearing checking accounts, savings deposits, time deposits, and other time deposits. Its lending activities comprise commercial loans, such as term loans, time notes, and lines of credit; and commercial real estate loans to finance real estate purchases, refinancing, expansions, and enhancement to commercial properties, as well as commercial construction and land development loans to finance projects. The company's lending activities also include consumer installment loans to finance personal expenditures, personal lines of credit, overdraft protection, and automobile loans; and residential real estate loans, fixed home equity loans, and home equity lines of credit for consumers to finance home improvements, debt consolidation, education, and other uses, as well as maintains an indirect lending program. In addition, it provides retirement planning, trust, and estate administration services for individuals, as well as pension, profit-sharing, and employee benefit plan administration services for corporations. Further, the company offers insurance agency services comprising group health care policies and life insurance, and property and casualty insurance products. The company was founded in 1851 and is headquartered in Glens Falls, New York.",
@@ -23,6 +23,203 @@
   "target_high": 46,
   "target_low": 42,
   "target_analysts": 4,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 148814000,
+      "net": 48799000,
+      "margin": 32.8
+    },
+    {
+      "year": "2023",
+      "revenue": 133949000,
+      "net": 30075000,
+      "margin": 22.5
+    },
+    {
+      "year": "2024",
+      "revenue": 143413000,
+      "net": 29709000,
+      "margin": 20.7
+    },
+    {
+      "year": "2025",
+      "revenue": 165596000,
+      "net": 43953000,
+      "margin": 26.5
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 42847000,
+      "earnings": 12825000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 43411000,
+      "earnings": 14013000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 44758000,
+      "earnings": 13485000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 44187000,
+      "earnings": 10962000
+    }
+  ],
+  "growth": {
+    "q0": 0.1543,
+    "q1": 0.1824,
+    "y0": 0.2804,
+    "y1": 0.22629999
+  },
+  "ratings": [
+    {
+      "date": "2026-09-02",
+      "firm": "Raymond James",
+      "from": null,
+      "to": "Outperform",
+      "action": "init"
+    },
+    {
+      "date": "2026-07-28",
+      "firm": "Piper Sandler",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "reit"
+    },
+    {
+      "date": "2026-06-25",
+      "firm": "Keefe, Bruyette & Woods",
+      "from": null,
+      "to": "Market Perform",
+      "action": "init"
+    },
+    {
+      "date": "2025-05-05",
+      "firm": "Piper Sandler",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2025-02-04",
+      "firm": "Piper Sandler",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2024-01-09",
+      "firm": "Hovde Group",
+      "from": null,
+      "to": "Market Perform",
+      "action": "init"
+    },
+    {
+      "date": "2020-09-28",
+      "firm": "Piper Sandler",
+      "from": null,
+      "to": "Neutral",
+      "action": "main"
+    }
+  ],
+  "holders": [
+    {
+      "name": "Arrow Financial Corp",
+      "kind": "institution",
+      "pct": 10.04,
+      "shares": 1859963,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Blackrock Inc.",
+      "kind": "institution",
+      "pct": 7.56,
+      "shares": 1399785,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Rhino Investment Partners, Inc.",
+      "kind": "institution",
+      "pct": 4.58,
+      "shares": 847563,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Dimensional Fund Advisors LP",
+      "kind": "institution",
+      "pct": 3.92,
+      "shares": 725492,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Capital Management LLC",
+      "kind": "institution",
+      "pct": 3.37,
+      "shares": 623719,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "State Street Corporation",
+      "kind": "institution",
+      "pct": 2.65,
+      "shares": 490098,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "iShares Trust-iShares Russell 2000 ETF",
+      "kind": "fond",
+      "pct": 2.52,
+      "shares": 466373,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
+      "kind": "fond",
+      "pct": 2.4,
+      "shares": 444987,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "American Century Companies Inc",
+      "kind": "institution",
+      "pct": 2.34,
+      "shares": 432990,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Geode Capital Management, LLC",
+      "kind": "institution",
+      "pct": 2.21,
+      "shares": 409589,
+      "date": "2026-06-30"
+    }
+  ],
+  "insider_net": {
+    "period": "6m",
+    "buys": 13,
+    "sells": 1,
+    "bought": 20572,
+    "sold": 4110,
+    "net_pct": 3.1
+  },
+  "extras": {
+    "beta": 0.734,
+    "enterprise_value": 874740736,
+    "ev_ebitda": null,
+    "ev_revenue": 5.14,
+    "float_shares": 16184732,
+    "short_shares": 432914,
+    "short_pct_float": 2.38,
+    "short_ratio": 4.75,
+    "last_split": "103:100",
+    "last_split_date": "2022-09-16"
+  },
   "ex_dividend": "2026-08-11",
   "dividend_date": null,
   "payout_ratio": 0.3806,
@@ -143,6 +340,295 @@
       "value": 158605,
       "shares": 4110,
       "date": "2026-06-17"
+    }
+  ],
+  "dividends": [
+    {
+      "date": "2016-08-31",
+      "amount": 0.2221
+    },
+    {
+      "date": "2016-11-30",
+      "amount": 0.2221
+    },
+    {
+      "date": "2017-02-27",
+      "amount": 0.2221
+    },
+    {
+      "date": "2017-05-31",
+      "amount": 0.2221
+    },
+    {
+      "date": "2017-08-30",
+      "amount": 0.2221
+    },
+    {
+      "date": "2017-11-30",
+      "amount": 0.2288
+    },
+    {
+      "date": "2018-02-28",
+      "amount": 0.2288
+    },
+    {
+      "date": "2018-05-31",
+      "amount": 0.2288
+    },
+    {
+      "date": "2018-08-30",
+      "amount": 0.2379
+    },
+    {
+      "date": "2018-11-29",
+      "amount": 0.2451
+    },
+    {
+      "date": "2019-02-28",
+      "amount": 0.2451
+    },
+    {
+      "date": "2019-06-03",
+      "amount": 0.2451
+    },
+    {
+      "date": "2019-09-03",
+      "amount": 0.2451
+    },
+    {
+      "date": "2019-12-02",
+      "amount": 0.2524
+    },
+    {
+      "date": "2020-03-02",
+      "amount": 0.2524
+    },
+    {
+      "date": "2020-06-02",
+      "amount": 0.2524
+    },
+    {
+      "date": "2020-09-01",
+      "amount": 0.2524
+    },
+    {
+      "date": "2020-12-01",
+      "amount": 0.2524
+    },
+    {
+      "date": "2021-03-01",
+      "amount": 0.2524
+    },
+    {
+      "date": "2021-06-01",
+      "amount": 0.2524
+    },
+    {
+      "date": "2021-09-02",
+      "amount": 0.2524
+    },
+    {
+      "date": "2021-12-01",
+      "amount": 0.2524
+    },
+    {
+      "date": "2022-02-28",
+      "amount": 0.2621
+    },
+    {
+      "date": "2022-05-31",
+      "amount": 0.2621
+    },
+    {
+      "date": "2022-08-31",
+      "amount": 0.2621
+    },
+    {
+      "date": "2022-11-30",
+      "amount": 0.27
+    },
+    {
+      "date": "2023-03-02",
+      "amount": 0.27
+    },
+    {
+      "date": "2023-06-01",
+      "amount": 0.27
+    },
+    {
+      "date": "2023-08-31",
+      "amount": 0.27
+    },
+    {
+      "date": "2023-11-30",
+      "amount": 0.27
+    },
+    {
+      "date": "2024-02-09",
+      "amount": 0.27
+    },
+    {
+      "date": "2024-05-10",
+      "amount": 0.27
+    },
+    {
+      "date": "2024-08-12",
+      "amount": 0.27
+    },
+    {
+      "date": "2024-10-15",
+      "amount": 0.28
+    },
+    {
+      "date": "2025-02-10",
+      "amount": 0.28
+    },
+    {
+      "date": "2025-05-13",
+      "amount": 0.28
+    },
+    {
+      "date": "2025-08-11",
+      "amount": 0.29
+    },
+    {
+      "date": "2025-11-12",
+      "amount": 0.29
+    },
+    {
+      "date": "2026-02-11",
+      "amount": 0.3
+    },
+    {
+      "date": "2026-08-11",
+      "amount": 0.3
+    }
+  ],
+  "splits": [
+    {
+      "date": "1985-10-02",
+      "ratio": "5:4",
+      "factor": 1.25
+    },
+    {
+      "date": "1986-06-02",
+      "ratio": "2:1",
+      "factor": 2
+    },
+    {
+      "date": "1987-09-02",
+      "ratio": "2:1",
+      "factor": 2
+    },
+    {
+      "date": "1996-10-09",
+      "ratio": "11:10",
+      "factor": 1.1
+    },
+    {
+      "date": "1997-11-12",
+      "ratio": "105:100",
+      "factor": 1.05
+    },
+    {
+      "date": "1998-07-30",
+      "ratio": "11:10",
+      "factor": 1.1
+    },
+    {
+      "date": "1999-11-01",
+      "ratio": "5:4",
+      "factor": 1.25
+    },
+    {
+      "date": "2001-10-31",
+      "ratio": "105:100",
+      "factor": 1.05
+    },
+    {
+      "date": "2002-10-31",
+      "ratio": "105:100",
+      "factor": 1.05
+    },
+    {
+      "date": "2003-09-30",
+      "ratio": "5:4",
+      "factor": 1.25
+    },
+    {
+      "date": "2004-09-20",
+      "ratio": "103:100",
+      "factor": 1.03
+    },
+    {
+      "date": "2005-09-20",
+      "ratio": "103:100",
+      "factor": 1.03
+    },
+    {
+      "date": "2006-09-20",
+      "ratio": "103:100",
+      "factor": 1.03
+    },
+    {
+      "date": "2007-09-19",
+      "ratio": "103:100",
+      "factor": 1.03
+    },
+    {
+      "date": "2009-09-16",
+      "ratio": "103:100",
+      "factor": 1.03
+    },
+    {
+      "date": "2010-09-17",
+      "ratio": "103:100",
+      "factor": 1.03
+    },
+    {
+      "date": "2011-09-19",
+      "ratio": "103:100",
+      "factor": 1.03
+    },
+    {
+      "date": "2012-09-17",
+      "ratio": "102:100",
+      "factor": 1.02
+    },
+    {
+      "date": "2013-09-17",
+      "ratio": "102:100",
+      "factor": 1.02
+    },
+    {
+      "date": "2014-09-17",
+      "ratio": "102:100",
+      "factor": 1.02
+    },
+    {
+      "date": "2015-09-17",
+      "ratio": "102:100",
+      "factor": 1.02
+    },
+    {
+      "date": "2017-09-19",
+      "ratio": "103:100",
+      "factor": 1.03
+    },
+    {
+      "date": "2018-09-18",
+      "ratio": "103:100",
+      "factor": 1.03
+    },
+    {
+      "date": "2019-09-16",
+      "ratio": "103:100",
+      "factor": 1.03
+    },
+    {
+      "date": "2022-09-16",
+      "ratio": "103:100",
+      "factor": 1.03
     }
   ]
 }

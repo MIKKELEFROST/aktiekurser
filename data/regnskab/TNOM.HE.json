@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:25:25.406Z",
+  "updated_at": "2026-09-08T09:38:27.358Z",
   "source": "Yahoo Finance",
   "symbol": "TNOM.HE",
   "summary": "Talenom Oyj provides accounting and other services for small and medium-sized enterprises in Finland, Sweden, Spain, and internationally. The company provides financial management software that automates reporting, integrates with banking systems, and provides real-time visibility into financial performance; bookkeeping, financial reporting, tax advisory, labor, and payroll services; and specialized tax advisory service. The company also provides accounting, sales invoicing, invoice payments, payroll, performance monitoring, care, financial management software, and enterprise report planning and reporting solutions. The company was founded in 1972 and is based in Oulu, Finland.",
@@ -23,6 +23,77 @@
   "target_high": 4,
   "target_low": 1.7,
   "target_analysts": 2,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 102107000,
+      "net": 11801000,
+      "margin": 11.6
+    },
+    {
+      "year": "2023",
+      "revenue": 121728000,
+      "net": 3361000,
+      "margin": 2.8
+    },
+    {
+      "year": "2024",
+      "revenue": 126231000,
+      "net": 6090000,
+      "margin": 4.8
+    },
+    {
+      "year": "2025",
+      "revenue": 129979000,
+      "net": 464000,
+      "margin": 0.4
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "2Q2025",
+      "revenue": 34937000,
+      "earnings": 2299000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 8696000,
+      "earnings": -5608000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 30276000,
+      "earnings": 29698000
+    }
+  ],
+  "growth": {
+    "q0": -0.6667,
+    "q1": 0.5,
+    "y0": 0.6667,
+    "y1": 0.4
+  },
+  "ratings": [],
+  "holders": [],
+  "insider_net": {
+    "period": "6m",
+    "buys": 0,
+    "sells": 0,
+    "bought": 0,
+    "sold": null,
+    "net_pct": null
+  },
+  "extras": {
+    "beta": 1.271,
+    "enterprise_value": 133247328,
+    "ev_ebitda": 10.624,
+    "ev_revenue": 1.214,
+    "float_shares": 31361067,
+    "short_shares": null,
+    "short_pct_float": null,
+    "short_ratio": null,
+    "last_split": "6:1",
+    "last_split_date": "2020-02-26"
+  },
   "ex_dividend": "2026-04-24",
   "dividend_date": null,
   "payout_ratio": 3.25,
@@ -53,5 +124,62 @@
       "surprise_pct": 11
     }
   ],
-  "insiders": []
+  "insiders": [],
+  "dividends": [
+    {
+      "date": "2016-03-18",
+      "amount": 0.0117
+    },
+    {
+      "date": "2017-03-20",
+      "amount": 0.0333
+    },
+    {
+      "date": "2018-03-15",
+      "amount": 0.0533
+    },
+    {
+      "date": "2019-02-27",
+      "amount": 0.0917
+    },
+    {
+      "date": "2020-02-26",
+      "amount": 0.125
+    },
+    {
+      "date": "2021-03-04",
+      "amount": 0.15
+    },
+    {
+      "date": "2022-03-04",
+      "amount": 0.17
+    },
+    {
+      "date": "2023-03-16",
+      "amount": 0.18
+    },
+    {
+      "date": "2024-03-18",
+      "amount": 0.19
+    },
+    {
+      "date": "2025-03-20",
+      "amount": 0.1
+    },
+    {
+      "date": "2025-11-13",
+      "amount": 0.1
+    },
+    {
+      "date": "2026-04-24",
+      "amount": 0.03
+    }
+  ],
+  "splits": [
+    {
+      "date": "2020-02-26",
+      "ratio": "6:1",
+      "factor": 6
+    }
+  ]
 }

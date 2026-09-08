@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:25:25.027Z",
+  "updated_at": "2026-09-08T09:38:27.282Z",
   "source": "Yahoo Finance",
   "symbol": "PRU",
   "summary": "Prudential Financial, Inc., together with its subsidiaries, provides financial products and services in the United States, Japan and internationally. It operates through PGIM, Retirement Strategies, Group Insurance, Individual Life, and International Businesses segments. The PGIM segment offers investment management services and solutions related to public fixed income, public equity, real estate debt and equity, private credit and other alternatives, and multi-asset class strategies to institutional and retail clients, as well as its insurance and retirement businesses. The Retirement Strategies segment provides a range of retirement investment, and income products and services to retirement plan sponsors in the public, private, and not-for-profit sectors; group annuities and other products; international reinsurance; investment only products; and FlexGuard suite, Fixed annuities, and variable annuities, as well as develops and distributes individual variable and fixed annuity products. The Group Insurance segment offers various group life, and long-term and short-term group disability, as well as group corporate-, bank-, and trust-owned life insurance; and supplemental health solutions including accident, critical illness, and hospital indemnity. The Individual Life segment develops and distributes variable life, universal life, and term life insurance products. The International Businesses segment develops and distributes life insurance, retirement products, investment products, and certain accident and health products. The company provides its products and services to individual and institutional customers through its proprietary and third-party distribution networks, financial professionals, and trusted partnerships. Prudential Financial, Inc. was founded in 1875 and is headquartered in Newark, New Jersey.",
@@ -23,10 +23,228 @@
   "target_high": 131,
   "target_low": 92,
   "target_analysts": 15,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 60050000000,
+      "net": -1438000000,
+      "margin": -2.4
+    },
+    {
+      "year": "2023",
+      "revenue": 50894000000,
+      "net": 2488000000,
+      "margin": 4.9
+    },
+    {
+      "year": "2024",
+      "revenue": 68053000000,
+      "net": 2727000000,
+      "margin": 4
+    },
+    {
+      "year": "2025",
+      "revenue": 57677000000,
+      "net": 3576000000,
+      "margin": 6.2
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 16239000000,
+      "earnings": 1431000000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 14520000000,
+      "earnings": 905000000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 15234000000,
+      "earnings": 597000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 14155000000,
+      "earnings": 985000000
+    }
+  ],
+  "growth": {
+    "q0": -0.1882,
+    "q1": 0.0074,
+    "y0": 0.0063,
+    "y1": 0.023
+  },
+  "ratings": [
+    {
+      "date": "2026-08-24",
+      "firm": "Morgan Stanley",
+      "from": "Underweight",
+      "to": "Underweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-08-19",
+      "firm": "Wells Fargo",
+      "from": "Underweight",
+      "to": "Underweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-08-17",
+      "firm": "JP Morgan",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-08-11",
+      "firm": "Piper Sandler",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-08-11",
+      "firm": "Keefe, Bruyette & Woods",
+      "from": "Market Perform",
+      "to": "Market Perform",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-22",
+      "firm": "TD Cowen",
+      "from": "Hold",
+      "to": "Hold",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-21",
+      "firm": "JP Morgan",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-13",
+      "firm": "Evercore ISI Group",
+      "from": "In-Line",
+      "to": "In-Line",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-13",
+      "firm": "Keefe, Bruyette & Woods",
+      "from": "Market Perform",
+      "to": "Market Perform",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-10",
+      "firm": "Jefferies",
+      "from": "Hold",
+      "to": "Hold",
+      "action": "main"
+    }
+  ],
+  "holders": [
+    {
+      "name": "Blackrock Inc.",
+      "kind": "institution",
+      "pct": 9.42,
+      "shares": 32497736,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Capital Management LLC",
+      "kind": "institution",
+      "pct": 6.56,
+      "shares": 22636013,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "State Street Corporation",
+      "kind": "institution",
+      "pct": 4.98,
+      "shares": 17164760,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Portfolio Management LLC",
+      "kind": "institution",
+      "pct": 4.73,
+      "shares": 16320636,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Geode Capital Management, LLC",
+      "kind": "institution",
+      "pct": 3.26,
+      "shares": 11259368,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
+      "kind": "fond",
+      "pct": 3.19,
+      "shares": 11016751,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "VANGUARD INDEX FUNDS-Vanguard 500 Index Fund",
+      "kind": "fond",
+      "pct": 2.61,
+      "shares": 8991172,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "VANGUARD INDEX FUNDS-Vanguard Mid-Cap Index Fund",
+      "kind": "fond",
+      "pct": 2.18,
+      "shares": 7519007,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Morgan Stanley",
+      "kind": "institution",
+      "pct": 1.7,
+      "shares": 5881885,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Invesco Ltd.",
+      "kind": "institution",
+      "pct": 1.48,
+      "shares": 5121051,
+      "date": "2026-06-30"
+    }
+  ],
+  "insider_net": {
+    "period": "6m",
+    "buys": 4,
+    "sells": 2,
+    "bought": 14216,
+    "sold": 21232,
+    "net_pct": -1.1
+  },
+  "extras": {
+    "beta": 0.819,
+    "enterprise_value": 62655901696,
+    "ev_ebitda": 12.035,
+    "ev_revenue": 0.961,
+    "float_shares": 343899450,
+    "short_shares": 12692650,
+    "short_pct_float": 4.2,
+    "short_ratio": 6.65,
+    "last_split": null,
+    "last_split_date": null
+  },
   "ex_dividend": "2026-08-25",
   "dividend_date": null,
   "payout_ratio": 0.4986,
-  "inst_count": 1834,
+  "inst_count": 1836,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -144,5 +362,168 @@
       "shares": 4007,
       "date": "2026-02-27"
     }
-  ]
+  ],
+  "dividends": [
+    {
+      "date": "2016-11-18",
+      "amount": 0.7
+    },
+    {
+      "date": "2017-02-17",
+      "amount": 0.75
+    },
+    {
+      "date": "2017-05-19",
+      "amount": 0.75
+    },
+    {
+      "date": "2017-08-18",
+      "amount": 0.75
+    },
+    {
+      "date": "2017-11-24",
+      "amount": 0.75
+    },
+    {
+      "date": "2018-02-20",
+      "amount": 0.9
+    },
+    {
+      "date": "2018-05-21",
+      "amount": 0.9
+    },
+    {
+      "date": "2018-08-20",
+      "amount": 0.9
+    },
+    {
+      "date": "2018-11-23",
+      "amount": 0.9
+    },
+    {
+      "date": "2019-02-19",
+      "amount": 1
+    },
+    {
+      "date": "2019-05-24",
+      "amount": 1
+    },
+    {
+      "date": "2019-08-19",
+      "amount": 1
+    },
+    {
+      "date": "2019-11-25",
+      "amount": 1
+    },
+    {
+      "date": "2020-02-14",
+      "amount": 1.1
+    },
+    {
+      "date": "2020-05-22",
+      "amount": 1.1
+    },
+    {
+      "date": "2020-08-24",
+      "amount": 1.1
+    },
+    {
+      "date": "2020-11-23",
+      "amount": 1.1
+    },
+    {
+      "date": "2021-02-12",
+      "amount": 1.15
+    },
+    {
+      "date": "2021-05-24",
+      "amount": 1.15
+    },
+    {
+      "date": "2021-08-23",
+      "amount": 1.15
+    },
+    {
+      "date": "2021-11-22",
+      "amount": 1.15
+    },
+    {
+      "date": "2022-02-14",
+      "amount": 1.2
+    },
+    {
+      "date": "2022-05-23",
+      "amount": 1.2
+    },
+    {
+      "date": "2022-08-22",
+      "amount": 1.2
+    },
+    {
+      "date": "2022-11-21",
+      "amount": 1.2
+    },
+    {
+      "date": "2023-02-17",
+      "amount": 1.25
+    },
+    {
+      "date": "2023-05-22",
+      "amount": 1.25
+    },
+    {
+      "date": "2023-08-21",
+      "amount": 1.25
+    },
+    {
+      "date": "2023-11-20",
+      "amount": 1.25
+    },
+    {
+      "date": "2024-02-16",
+      "amount": 1.3
+    },
+    {
+      "date": "2024-05-20",
+      "amount": 1.3
+    },
+    {
+      "date": "2024-08-20",
+      "amount": 1.3
+    },
+    {
+      "date": "2024-11-19",
+      "amount": 1.3
+    },
+    {
+      "date": "2025-02-18",
+      "amount": 1.35
+    },
+    {
+      "date": "2025-05-20",
+      "amount": 1.35
+    },
+    {
+      "date": "2025-08-19",
+      "amount": 1.35
+    },
+    {
+      "date": "2025-11-18",
+      "amount": 1.35
+    },
+    {
+      "date": "2026-02-17",
+      "amount": 1.4
+    },
+    {
+      "date": "2026-05-26",
+      "amount": 1.4
+    },
+    {
+      "date": "2026-08-25",
+      "amount": 1.4
+    }
+  ],
+  "splits": []
 }

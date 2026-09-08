@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:50:49.383Z",
+  "updated_at": "2026-09-08T09:38:26.647Z",
   "source": "Yahoo Finance",
   "symbol": "PFS",
   "summary": "Provident Financial Services, Inc. operates as the bank holding company for Provident Bank that provides various banking products and services to individuals, families, and businesses in the United States. Its deposit products include savings, checking, interest-bearing checking, money market deposit, and certificate of deposit accounts, as well as IRA products. The company's loan portfolio comprises commercial real estate loans that are secured by properties, such as multi-family apartment buildings, retail and industrial properties, and office buildings; commercial business loans; fixed-rate and adjustable-rate mortgage loans collateralized by one- to four-family residential real estate properties; residential mortgage loans; commercial construction loans; and consumer loans consisting of home equity loans, home equity lines of credit, personal loans and unsecured lines of credit, and auto and recreational vehicle loans. It also offers cash management, remote deposit capture, payroll origination, escrow account management, and online and mobile banking services; and business credit cards. In addition, the company provides wealth management services comprising investment management, trust and estate administration, financial planning, and tax compliance and planning; and insurance agency operations. Further, it sells insurance and investment products, including annuities; and manages and sells real estate properties acquired through foreclosure. The company was founded in 1839 and is headquartered in Jersey City, New Jersey.",
@@ -23,6 +23,224 @@
   "target_high": 30,
   "target_low": 26,
   "target_analysts": 6,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 505341000,
+      "net": 175648000,
+      "margin": 34.8
+    },
+    {
+      "year": "2023",
+      "revenue": 479283000,
+      "net": 128398000,
+      "margin": 26.8
+    },
+    {
+      "year": "2024",
+      "revenue": 694727000,
+      "net": 115525000,
+      "margin": 16.6
+    },
+    {
+      "year": "2025",
+      "revenue": 869558000,
+      "net": 291160000,
+      "margin": 33.5
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 221751000,
+      "earnings": 71720000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 225723000,
+      "earnings": 83431000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 225196000,
+      "earnings": 79417000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 234653000,
+      "earnings": 78147000
+    }
+  ],
+  "growth": {
+    "q0": 0.1182,
+    "q1": -0.0208,
+    "y0": 0.09689999,
+    "y1": 0.0555
+  },
+  "ratings": [
+    {
+      "date": "2026-08-03",
+      "firm": "Keefe, Bruyette & Woods",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "reit"
+    },
+    {
+      "date": "2026-07-31",
+      "firm": "Piper Sandler",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "reit"
+    },
+    {
+      "date": "2026-07-01",
+      "firm": "Raymond James",
+      "from": "Strong Buy",
+      "to": "Strong Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-06-08",
+      "firm": "Stephens & Co.",
+      "from": null,
+      "to": "Equal-Weight",
+      "action": "init"
+    },
+    {
+      "date": "2026-05-01",
+      "firm": "DA Davidson",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-05-01",
+      "firm": "Keefe, Bruyette & Woods",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-02-25",
+      "firm": "DA Davidson",
+      "from": null,
+      "to": "Neutral",
+      "action": "init"
+    },
+    {
+      "date": "2026-01-29",
+      "firm": "Keefe, Bruyette & Woods",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2025-07-28",
+      "firm": "DA Davidson",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2025-06-26",
+      "firm": "Raymond James",
+      "from": null,
+      "to": "Strong Buy",
+      "action": "init"
+    }
+  ],
+  "holders": [
+    {
+      "name": "Blackrock Inc.",
+      "kind": "institution",
+      "pct": 14.76,
+      "shares": 19244342,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Portfolio Management LLC",
+      "kind": "institution",
+      "pct": 6.31,
+      "shares": 8233317,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Dimensional Fund Advisors LP",
+      "kind": "institution",
+      "pct": 6.27,
+      "shares": 8173769,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "State Street Corporation",
+      "kind": "institution",
+      "pct": 6.17,
+      "shares": 8044048,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "iShares Trust-iShares Core S&P Small-Cap ETF",
+      "kind": "fond",
+      "pct": 6.08,
+      "shares": 7927719,
+      "date": "2026-07-31"
+    },
+    {
+      "name": "Vanguard Capital Management LLC",
+      "kind": "institution",
+      "pct": 4.33,
+      "shares": 5644266,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "American Century Companies Inc",
+      "kind": "institution",
+      "pct": 3.29,
+      "shares": 4291092,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
+      "kind": "fond",
+      "pct": 3.02,
+      "shares": 3936864,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Geode Capital Management, LLC",
+      "kind": "institution",
+      "pct": 2.68,
+      "shares": 3492733,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "American Century ETF Trust-Avantis U.S. Small Cap Value ETF",
+      "kind": "fond",
+      "pct": 2.6,
+      "shares": 3388038,
+      "date": "2026-06-30"
+    }
+  ],
+  "insider_net": {
+    "period": "6m",
+    "buys": 19,
+    "sells": 4,
+    "bought": 122001,
+    "sold": 82250,
+    "net_pct": 1.1
+  },
+  "extras": {
+    "beta": 0.769,
+    "enterprise_value": 5740837376,
+    "ev_ebitda": null,
+    "ev_revenue": 6.42,
+    "float_shares": 126324739,
+    "short_shares": 5885861,
+    "short_pct_float": 6.37,
+    "short_ratio": 5.84,
+    "last_split": null,
+    "last_split_date": null
+  },
   "ex_dividend": "2026-08-14",
   "dividend_date": null,
   "payout_ratio": 0.4,
@@ -144,5 +362,168 @@
       "shares": 4012,
       "date": "2026-05-26"
     }
-  ]
+  ],
+  "dividends": [
+    {
+      "date": "2017-02-13",
+      "amount": 0.19
+    },
+    {
+      "date": "2017-05-11",
+      "amount": 0.19
+    },
+    {
+      "date": "2017-08-11",
+      "amount": 0.2
+    },
+    {
+      "date": "2017-11-14",
+      "amount": 0.2
+    },
+    {
+      "date": "2017-12-07",
+      "amount": 0.15
+    },
+    {
+      "date": "2018-02-14",
+      "amount": 0.2
+    },
+    {
+      "date": "2018-05-14",
+      "amount": 0.2
+    },
+    {
+      "date": "2018-08-14",
+      "amount": 0.21
+    },
+    {
+      "date": "2018-11-14",
+      "amount": 0.21
+    },
+    {
+      "date": "2019-02-14",
+      "amount": 0.43
+    },
+    {
+      "date": "2019-05-14",
+      "amount": 0.23
+    },
+    {
+      "date": "2019-08-14",
+      "amount": 0.23
+    },
+    {
+      "date": "2019-11-14",
+      "amount": 0.23
+    },
+    {
+      "date": "2020-02-13",
+      "amount": 0.23
+    },
+    {
+      "date": "2020-05-14",
+      "amount": 0.23
+    },
+    {
+      "date": "2020-08-13",
+      "amount": 0.23
+    },
+    {
+      "date": "2020-11-12",
+      "amount": 0.23
+    },
+    {
+      "date": "2021-02-11",
+      "amount": 0.23
+    },
+    {
+      "date": "2021-05-13",
+      "amount": 0.23
+    },
+    {
+      "date": "2021-08-12",
+      "amount": 0.23
+    },
+    {
+      "date": "2021-11-10",
+      "amount": 0.24
+    },
+    {
+      "date": "2022-02-10",
+      "amount": 0.24
+    },
+    {
+      "date": "2022-05-12",
+      "amount": 0.24
+    },
+    {
+      "date": "2022-08-11",
+      "amount": 0.24
+    },
+    {
+      "date": "2022-11-09",
+      "amount": 0.24
+    },
+    {
+      "date": "2023-02-09",
+      "amount": 0.24
+    },
+    {
+      "date": "2023-05-11",
+      "amount": 0.24
+    },
+    {
+      "date": "2023-08-10",
+      "amount": 0.24
+    },
+    {
+      "date": "2023-11-09",
+      "amount": 0.24
+    },
+    {
+      "date": "2024-02-08",
+      "amount": 0.24
+    },
+    {
+      "date": "2024-04-26",
+      "amount": 0.24
+    },
+    {
+      "date": "2024-08-16",
+      "amount": 0.24
+    },
+    {
+      "date": "2024-11-15",
+      "amount": 0.24
+    },
+    {
+      "date": "2025-02-14",
+      "amount": 0.24
+    },
+    {
+      "date": "2025-05-16",
+      "amount": 0.24
+    },
+    {
+      "date": "2025-08-15",
+      "amount": 0.24
+    },
+    {
+      "date": "2025-11-14",
+      "amount": 0.24
+    },
+    {
+      "date": "2026-02-13",
+      "amount": 0.24
+    },
+    {
+      "date": "2026-05-15",
+      "amount": 0.24
+    },
+    {
+      "date": "2026-08-14",
+      "amount": 0.24
+    }
+  ],
+  "splits": []
 }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:25:24.749Z",
+  "updated_at": "2026-09-08T09:38:26.412Z",
   "source": "Yahoo Finance",
   "symbol": "MUR",
   "summary": "Murphy Oil Corporation, together with its subsidiaries, operates as an oil and gas exploration and production company in the United States, Canada, and internationally. It explores for and produces crude oil, natural gas, and natural gas liquids. Murphy Oil Corporation was formerly known as Murphy Corporation and changed its name to Murphy Oil Corporation in 1964. The company was incorporated in 1950 and is headquartered in Houston, Texas.",
@@ -23,6 +23,224 @@
   "target_high": 52,
   "target_low": 32,
   "target_analysts": 14,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 3932662000,
+      "net": 965047000,
+      "margin": 24.5
+    },
+    {
+      "year": "2023",
+      "revenue": 3460147000,
+      "net": 661559000,
+      "margin": 19.1
+    },
+    {
+      "year": "2024",
+      "revenue": 3028474000,
+      "net": 407171000,
+      "margin": 13.4
+    },
+    {
+      "year": "2025",
+      "revenue": 2718823000,
+      "net": 104234000,
+      "margin": 3.8
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 720966000,
+      "earnings": -2973000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 613084000,
+      "earnings": 11891000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 732354000,
+      "earnings": 52986000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 926332000,
+      "earnings": 232175000
+    }
+  ],
+  "growth": {
+    "q0": -0.0343,
+    "q1": 6.1332,
+    "y0": 1.2793,
+    "y1": 0.0435
+  },
+  "ratings": [
+    {
+      "date": "2026-09-03",
+      "firm": "Seaport Global",
+      "from": null,
+      "to": "Neutral",
+      "action": "init"
+    },
+    {
+      "date": "2026-09-02",
+      "firm": "Wells Fargo",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
+    {
+      "date": "2026-08-14",
+      "firm": "Barclays",
+      "from": "Equal-Weight",
+      "to": "Underweight",
+      "action": "down"
+    },
+    {
+      "date": "2026-08-13",
+      "firm": "Wells Fargo",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
+    {
+      "date": "2026-08-13",
+      "firm": "Keybanc",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-08-10",
+      "firm": "Barclays",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
+    {
+      "date": "2026-08-07",
+      "firm": "UBS",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-21",
+      "firm": "UBS",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-06-29",
+      "firm": "Morgan Stanley",
+      "from": "Underweight",
+      "to": "Underweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-06-04",
+      "firm": "Keybanc",
+      "from": "Sector Weight",
+      "to": "Overweight",
+      "action": "up"
+    }
+  ],
+  "holders": [
+    {
+      "name": "Blackrock Inc.",
+      "kind": "institution",
+      "pct": 13.42,
+      "shares": 19241833,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Dimensional Fund Advisors LP",
+      "kind": "institution",
+      "pct": 5.85,
+      "shares": 8386298,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Portfolio Management LLC",
+      "kind": "institution",
+      "pct": 5.42,
+      "shares": 7768499,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "State Street Corporation",
+      "kind": "institution",
+      "pct": 5.1,
+      "shares": 7305789,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "American Century Companies Inc",
+      "kind": "institution",
+      "pct": 5.1,
+      "shares": 7316708,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Capital Management LLC",
+      "kind": "institution",
+      "pct": 4.26,
+      "shares": 6114588,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Charles Schwab Investment Management, Inc.",
+      "kind": "institution",
+      "pct": 3.57,
+      "shares": 5112517,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "iShares Trust-iShares Core S&P Mid-Cap ETF",
+      "kind": "fond",
+      "pct": 3.23,
+      "shares": 4625355,
+      "date": "2026-07-31"
+    },
+    {
+      "name": "American Century ETF Trust-Avantis U.S. Small Cap Value ETF",
+      "kind": "fond",
+      "pct": 3.12,
+      "shares": 4469946,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Geode Capital Management, LLC",
+      "kind": "institution",
+      "pct": 3.05,
+      "shares": 4366590,
+      "date": "2026-06-30"
+    }
+  ],
+  "insider_net": {
+    "period": "6m",
+    "buys": 2,
+    "sells": 1,
+    "bought": 43878,
+    "sold": 47320,
+    "net_pct": 0
+  },
+  "extras": {
+    "beta": 0.488,
+    "enterprise_value": 7148840960,
+    "ev_ebitda": 4.03,
+    "ev_revenue": 2.389,
+    "float_shares": 135576890,
+    "short_shares": 10862198,
+    "short_pct_float": 10.71,
+    "short_ratio": 6.44,
+    "last_split": "1158:1000",
+    "last_split_date": "2013-09-03"
+  },
   "ex_dividend": "2026-08-17",
   "dividend_date": null,
   "payout_ratio": 0.66830003,
@@ -143,6 +361,190 @@
       "value": null,
       "shares": 7886,
       "date": "2026-02-05"
+    }
+  ],
+  "dividends": [
+    {
+      "date": "2015-08-13",
+      "amount": 0.35
+    },
+    {
+      "date": "2015-11-12",
+      "amount": 0.35
+    },
+    {
+      "date": "2016-02-11",
+      "amount": 0.35
+    },
+    {
+      "date": "2016-05-12",
+      "amount": 0.35
+    },
+    {
+      "date": "2016-08-11",
+      "amount": 0.25
+    },
+    {
+      "date": "2016-11-09",
+      "amount": 0.25
+    },
+    {
+      "date": "2017-02-09",
+      "amount": 0.25
+    },
+    {
+      "date": "2017-05-11",
+      "amount": 0.25
+    },
+    {
+      "date": "2017-08-10",
+      "amount": 0.25
+    },
+    {
+      "date": "2017-11-10",
+      "amount": 0.25
+    },
+    {
+      "date": "2018-02-16",
+      "amount": 0.25
+    },
+    {
+      "date": "2018-05-11",
+      "amount": 0.25
+    },
+    {
+      "date": "2018-08-10",
+      "amount": 0.25
+    },
+    {
+      "date": "2018-11-08",
+      "amount": 0.25
+    },
+    {
+      "date": "2019-02-15",
+      "amount": 0.25
+    },
+    {
+      "date": "2019-05-17",
+      "amount": 0.25
+    },
+    {
+      "date": "2019-08-16",
+      "amount": 0.25
+    },
+    {
+      "date": "2019-11-15",
+      "amount": 0.25
+    },
+    {
+      "date": "2020-02-14",
+      "amount": 0.25
+    },
+    {
+      "date": "2020-05-15",
+      "amount": 0.125
+    },
+    {
+      "date": "2020-08-14",
+      "amount": 0.125
+    },
+    {
+      "date": "2020-11-13",
+      "amount": 0.125
+    },
+    {
+      "date": "2021-02-12",
+      "amount": 0.125
+    },
+    {
+      "date": "2021-05-14",
+      "amount": 0.125
+    },
+    {
+      "date": "2021-08-13",
+      "amount": 0.125
+    },
+    {
+      "date": "2021-11-12",
+      "amount": 0.125
+    },
+    {
+      "date": "2022-02-11",
+      "amount": 0.15
+    },
+    {
+      "date": "2022-05-13",
+      "amount": 0.175
+    },
+    {
+      "date": "2022-08-12",
+      "amount": 0.25
+    },
+    {
+      "date": "2022-11-10",
+      "amount": 0.25
+    },
+    {
+      "date": "2023-02-10",
+      "amount": 0.275
+    },
+    {
+      "date": "2023-05-12",
+      "amount": 0.275
+    },
+    {
+      "date": "2023-08-11",
+      "amount": 0.275
+    },
+    {
+      "date": "2023-11-10",
+      "amount": 0.275
+    },
+    {
+      "date": "2024-02-16",
+      "amount": 0.3
+    },
+    {
+      "date": "2024-05-17",
+      "amount": 0.3
+    },
+    {
+      "date": "2024-08-19",
+      "amount": 0.3
+    },
+    {
+      "date": "2024-11-18",
+      "amount": 0.3
+    },
+    {
+      "date": "2025-02-18",
+      "amount": 0.325
+    },
+    {
+      "date": "2026-08-17",
+      "amount": 0.35
+    }
+  ],
+  "splits": [
+    {
+      "date": "1980-06-10",
+      "ratio": "3:1",
+      "factor": 3
+    },
+    {
+      "date": "2002-12-31",
+      "ratio": "2:1",
+      "factor": 2
+    },
+    {
+      "date": "2005-06-06",
+      "ratio": "2:1",
+      "factor": 2
+    },
+    {
+      "date": "2013-09-03",
+      "ratio": "1158:1000",
+      "factor": 1.158
     }
   ]
 }

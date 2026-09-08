@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:25:23.948Z",
+  "updated_at": "2026-09-08T09:38:25.745Z",
   "source": "Yahoo Finance",
   "symbol": "DSV.CO",
   "summary": "DSV A/S offers freight forwarding and logistics services in Europe, the Middle East, Africa, North America, South America, Asia, Australia, and the Pacific. It operates through three segments: Air & Sea, Road, and Solutions. The company provides air freight, charter, and sea-air freight services, as well as unit load devices; sea freight services, including less-than-container load services, sea freight services, break bulk, sea containers, and DSV LCL sailing schedule services; and warehousing, e-commerce fulfilment, supply chain, contract logistics, and logistics solutions. It also offers road freight services, such as full load, part load, and groupage; conventional freight forwarding services and tailored project cargo solutions; and freight management, customs clearance, decarbonising logistics, order management, insurance, and e-commerce solutions. The company serves the automotive, technology, healthcare, energy, industrial, consumer, defense, aerospace, and chemical industries. The company was formerly known as DSV Panalpina A/S and changed its name to DSV A/S in September 2021. DSV A/S was incorporated in 1976 and is based in Hedehusene, Denmark.",
@@ -23,10 +23,81 @@
   "target_high": 2300,
   "target_low": 1580,
   "target_analysts": 20,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 235665000000,
+      "net": 17568000000,
+      "margin": 7.5
+    },
+    {
+      "year": "2023",
+      "revenue": 150785000000,
+      "net": 12315000000,
+      "margin": 8.2
+    },
+    {
+      "year": "2024",
+      "revenue": 167106000000,
+      "net": 10109000000,
+      "margin": 6
+    },
+    {
+      "year": "2025",
+      "revenue": 247331000000,
+      "net": 8386000000,
+      "margin": 3.4
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "4Q2025",
+      "revenue": 71685000000,
+      "earnings": 917000000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 70416000000,
+      "earnings": 1624000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 76688000000,
+      "earnings": 2277000000
+    }
+  ],
+  "growth": {
+    "q0": 0.055,
+    "q1": 1.0583,
+    "y0": 0.2463,
+    "y1": 0.33029997
+  },
+  "ratings": [],
+  "holders": [],
+  "insider_net": {
+    "period": "6m",
+    "buys": 0,
+    "sells": 0,
+    "bought": 0,
+    "sold": null,
+    "net_pct": null
+  },
+  "extras": {
+    "beta": 0.957,
+    "enterprise_value": 402213109760,
+    "ev_ebitda": 15.699,
+    "ev_revenue": 1.383,
+    "float_shares": 196144793,
+    "short_shares": null,
+    "short_pct_float": null,
+    "short_ratio": null,
+    "last_split": "2:1",
+    "last_split_date": "2007-05-08"
+  },
   "ex_dividend": "2026-03-20",
   "dividend_date": null,
   "payout_ratio": 0.2325,
-  "inst_count": 495,
+  "inst_count": 493,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -53,5 +124,118 @@
       "surprise_pct": -7.4
     }
   ],
-  "insiders": []
+  "insiders": [],
+  "dividends": [
+    {
+      "date": "2000-12-11",
+      "amount": 0.06
+    },
+    {
+      "date": "2002-05-27",
+      "amount": 0.06
+    },
+    {
+      "date": "2003-05-19",
+      "amount": 0.12
+    },
+    {
+      "date": "2004-04-23",
+      "amount": 0.21
+    },
+    {
+      "date": "2005-05-02",
+      "amount": 0.75
+    },
+    {
+      "date": "2006-05-01",
+      "amount": 0.25
+    },
+    {
+      "date": "2007-05-01",
+      "amount": 0.25
+    },
+    {
+      "date": "2008-05-02",
+      "amount": 0.25
+    },
+    {
+      "date": "2009-05-01",
+      "amount": 0.25
+    },
+    {
+      "date": "2010-03-29",
+      "amount": 0.25
+    },
+    {
+      "date": "2011-03-25",
+      "amount": 0.5
+    },
+    {
+      "date": "2012-03-22",
+      "amount": 1
+    },
+    {
+      "date": "2013-03-22",
+      "amount": 1.25
+    },
+    {
+      "date": "2014-03-17",
+      "amount": 1.5
+    },
+    {
+      "date": "2015-03-13",
+      "amount": 1.6
+    },
+    {
+      "date": "2016-03-11",
+      "amount": 1.7
+    },
+    {
+      "date": "2017-03-10",
+      "amount": 1.8
+    },
+    {
+      "date": "2018-03-09",
+      "amount": 2
+    },
+    {
+      "date": "2019-03-18",
+      "amount": 2.25
+    },
+    {
+      "date": "2020-03-17",
+      "amount": 2.5
+    },
+    {
+      "date": "2021-03-16",
+      "amount": 4
+    },
+    {
+      "date": "2022-03-18",
+      "amount": 5.5
+    },
+    {
+      "date": "2023-03-17",
+      "amount": 6.5
+    },
+    {
+      "date": "2024-03-15",
+      "amount": 7
+    },
+    {
+      "date": "2025-03-21",
+      "amount": 7
+    },
+    {
+      "date": "2026-03-20",
+      "amount": 7
+    }
+  ],
+  "splits": [
+    {
+      "date": "2007-05-08",
+      "ratio": "2:1",
+      "factor": 2
+    }
+  ]
 }

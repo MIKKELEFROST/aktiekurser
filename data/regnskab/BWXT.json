@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:25:23.624Z",
+  "updated_at": "2026-09-08T09:38:25.480Z",
   "source": "Yahoo Finance",
   "symbol": "BWXT",
   "summary": "BWX Technologies, Inc. manufactures and sells nuclear components in the United States, Canada, and internationally. The company operates through two segments, Government Operations and Commercial Operations. It manufactures precision naval nuclear components, reactors, and nuclear fuel; close-tolerance and high-quality equipment for nuclear applications; critical nuclear components, fuels and assemblies for government and limited other uses; down blend government stockpiles of uranium; and fabricate fuel-bearing precision components. The company also supplies proprietary and sole-source valves, manifolds, and fittings to naval and commercial shipping customers; research reactor fuel elements for colleges, universities, and national laboratories; and components for defense applications. In addition, it manufactures commercial nuclear steam generators, nuclear fuel, fuel handling systems, pressure vessels, reactor components, heat exchangers, tooling delivery systems; and containers for the storage of nuclear fuel and other high-level nuclear waste. Further, the company supplies nuclear fuel, fuel handling systems, tooling delivery systems, nuclear-grade materials and precisely machined components; and manufactures medical radioisotopes, radiopharmaceuticals, and medical devices. Additionally, it provides specialized engineering services that include structural component design, 3-D thermal-hydraulic engineering analysis, weld and robotic process development, electrical and controls engineering and metallurgy and materials engineering; in-plant inspection, maintenance and modification services; and non-destructive examination and tooling/repair solutions. It also offers nuclear power plant lifecycle support and management services. The company was formerly known as The Babcock & Wilcox Company and changed its name to BWX Technologies, Inc. in June 2015. BWX Technologies, Inc. was founded in 1867 and is headquartered in Lynchburg, Virginia.",
@@ -23,6 +23,224 @@
   "target_high": 290,
   "target_low": 170,
   "target_analysts": 15,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 2232834000,
+      "net": 238191000,
+      "margin": 10.7
+    },
+    {
+      "year": "2023",
+      "revenue": 2496309000,
+      "net": 245849000,
+      "margin": 9.8
+    },
+    {
+      "year": "2024",
+      "revenue": 2703654000,
+      "net": 281941000,
+      "margin": 10.4
+    },
+    {
+      "year": "2025",
+      "revenue": 3198425000,
+      "net": 328945000,
+      "margin": 10.3
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 866286000,
+      "earnings": 82106000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 885842000,
+      "earnings": 92989000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 860217000,
+      "earnings": 91068000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 901625000,
+      "earnings": 89014000
+    }
+  ],
+  "growth": {
+    "q0": 0.20969999,
+    "q1": 0.2446,
+    "y0": 0.18190001,
+    "y1": 0.1112
+  },
+  "ratings": [
+    {
+      "date": "2026-09-03",
+      "firm": "Jefferies",
+      "from": null,
+      "to": "Buy",
+      "action": "init"
+    },
+    {
+      "date": "2026-08-27",
+      "firm": "Wells Fargo",
+      "from": "Underweight",
+      "to": "Equal-Weight",
+      "action": "up"
+    },
+    {
+      "date": "2026-08-14",
+      "firm": "Truist Securities",
+      "from": "Hold",
+      "to": "Hold",
+      "action": "main"
+    },
+    {
+      "date": "2026-08-04",
+      "firm": "BTIG",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "reit"
+    },
+    {
+      "date": "2026-07-27",
+      "firm": "JP Morgan",
+      "from": null,
+      "to": "Overweight",
+      "action": "init"
+    },
+    {
+      "date": "2026-06-18",
+      "firm": "Seaport Global",
+      "from": "Neutral",
+      "to": "Buy",
+      "action": "up"
+    },
+    {
+      "date": "2026-05-15",
+      "firm": "Deutsche Bank",
+      "from": "Hold",
+      "to": "Buy",
+      "action": "up"
+    },
+    {
+      "date": "2026-05-11",
+      "firm": "Truist Securities",
+      "from": "Hold",
+      "to": "Hold",
+      "action": "main"
+    },
+    {
+      "date": "2026-04-01",
+      "firm": "Wells Fargo",
+      "from": null,
+      "to": "Underweight",
+      "action": "init"
+    },
+    {
+      "date": "2026-03-25",
+      "firm": "B of A Securities",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    }
+  ],
+  "holders": [
+    {
+      "name": "Blackrock Inc.",
+      "kind": "institution",
+      "pct": 13.23,
+      "shares": 12123786,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Portfolio Management LLC",
+      "kind": "institution",
+      "pct": 5.19,
+      "shares": 4755063,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Capital Management LLC",
+      "kind": "institution",
+      "pct": 4.52,
+      "shares": 4140330,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "State Street Corporation",
+      "kind": "institution",
+      "pct": 4.15,
+      "shares": 3799375,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "iShares Trust-iShares Core S&P Mid-Cap ETF",
+      "kind": "fond",
+      "pct": 3.43,
+      "shares": 3146772,
+      "date": "2026-07-31"
+    },
+    {
+      "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
+      "kind": "fond",
+      "pct": 3.17,
+      "shares": 2908967,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "JPMORGAN CHASE & CO",
+      "kind": "institution",
+      "pct": 2.9,
+      "shares": 2654239,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "VANGUARD INDEX FUNDS-Vanguard Small-Cap Index Fund",
+      "kind": "fond",
+      "pct": 2.29,
+      "shares": 2099626,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "First Trust Advisors LP",
+      "kind": "institution",
+      "pct": 2.27,
+      "shares": 2075550,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Alkeon Capital Management LLC",
+      "kind": "institution",
+      "pct": 2.21,
+      "shares": 2022748,
+      "date": "2026-06-30"
+    }
+  ],
+  "insider_net": {
+    "period": "6m",
+    "buys": 7,
+    "sells": 3,
+    "bought": 10715,
+    "sold": 22417,
+    "net_pct": -3.5
+  },
+  "extras": {
+    "beta": 0.743,
+    "enterprise_value": 15850100736,
+    "ev_ebitda": 33.264,
+    "ev_revenue": 4.511,
+    "float_shares": 91234419,
+    "short_shares": 2760157,
+    "short_pct_float": 3.8,
+    "short_ratio": 3.07,
+    "last_split": "1398:1000",
+    "last_split_date": "2015-07-01"
+  },
   "ex_dividend": "2026-08-18",
   "dividend_date": null,
   "payout_ratio": 0.2694,
@@ -143,6 +361,175 @@
       "value": null,
       "shares": 762,
       "date": "2026-04-30"
+    }
+  ],
+  "dividends": [
+    {
+      "date": "2016-11-15",
+      "amount": 0.09
+    },
+    {
+      "date": "2017-03-08",
+      "amount": 0.09
+    },
+    {
+      "date": "2017-05-12",
+      "amount": 0.11
+    },
+    {
+      "date": "2017-08-17",
+      "amount": 0.11
+    },
+    {
+      "date": "2017-11-17",
+      "amount": 0.11
+    },
+    {
+      "date": "2018-03-09",
+      "amount": 0.16
+    },
+    {
+      "date": "2018-05-17",
+      "amount": 0.16
+    },
+    {
+      "date": "2018-08-17",
+      "amount": 0.16
+    },
+    {
+      "date": "2018-11-19",
+      "amount": 0.16
+    },
+    {
+      "date": "2019-03-08",
+      "amount": 0.17
+    },
+    {
+      "date": "2019-05-16",
+      "amount": 0.17
+    },
+    {
+      "date": "2019-08-15",
+      "amount": 0.17
+    },
+    {
+      "date": "2019-11-19",
+      "amount": 0.17
+    },
+    {
+      "date": "2020-03-06",
+      "amount": 0.19
+    },
+    {
+      "date": "2020-05-15",
+      "amount": 0.19
+    },
+    {
+      "date": "2020-08-18",
+      "amount": 0.19
+    },
+    {
+      "date": "2020-11-19",
+      "amount": 0.19
+    },
+    {
+      "date": "2021-03-09",
+      "amount": 0.21
+    },
+    {
+      "date": "2021-05-18",
+      "amount": 0.21
+    },
+    {
+      "date": "2021-08-18",
+      "amount": 0.21
+    },
+    {
+      "date": "2021-11-18",
+      "amount": 0.21
+    },
+    {
+      "date": "2022-03-09",
+      "amount": 0.22
+    },
+    {
+      "date": "2022-05-19",
+      "amount": 0.22
+    },
+    {
+      "date": "2022-08-18",
+      "amount": 0.22
+    },
+    {
+      "date": "2022-11-18",
+      "amount": 0.22
+    },
+    {
+      "date": "2023-03-09",
+      "amount": 0.23
+    },
+    {
+      "date": "2023-05-18",
+      "amount": 0.23
+    },
+    {
+      "date": "2023-08-16",
+      "amount": 0.23
+    },
+    {
+      "date": "2023-11-20",
+      "amount": 0.23
+    },
+    {
+      "date": "2024-03-08",
+      "amount": 0.24
+    },
+    {
+      "date": "2024-05-16",
+      "amount": 0.24
+    },
+    {
+      "date": "2024-08-16",
+      "amount": 0.24
+    },
+    {
+      "date": "2024-11-19",
+      "amount": 0.24
+    },
+    {
+      "date": "2025-03-11",
+      "amount": 0.25
+    },
+    {
+      "date": "2025-05-19",
+      "amount": 0.25
+    },
+    {
+      "date": "2025-08-18",
+      "amount": 0.25
+    },
+    {
+      "date": "2025-11-19",
+      "amount": 0.25
+    },
+    {
+      "date": "2026-03-11",
+      "amount": 0.27
+    },
+    {
+      "date": "2026-05-19",
+      "amount": 0.27
+    },
+    {
+      "date": "2026-08-18",
+      "amount": 0.27
+    }
+  ],
+  "splits": [
+    {
+      "date": "2015-07-01",
+      "ratio": "1398:1000",
+      "factor": 1.398
     }
   ]
 }

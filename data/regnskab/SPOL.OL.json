@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:50:49.492Z",
+  "updated_at": "2026-09-08T09:38:26.894Z",
   "source": "Yahoo Finance",
   "symbol": "SPOL.OL",
   "summary": "SpareBank 1 Østlandet provides various financial products and services to individuals, businesses, public entities, teams, associations, and organisations. It operates through the Retail Division, Corporate Division, SpareBank 1 Finans Østlandet, EiendomsMegler 1 Østlandet, and SpareBank 1 ForretningsPartner Østlandet segments. The Retail segment offers financial services comprising savings, financing, payment processing, insurance, loss prevention, capital management, and investments. The Corporate segment provides hedging for interest and foreign exchange transactions, placement of surplus liquidity, insurance for individuals, pension solutions, as well as buildings and movable property for businesses; and delivers advisory solutions to private customers and businesses, and it also engages in foreign currency services. The SpareBank 1 Finans Østlandet's segment provides activities consisting of leasing and lending for private purchases of vehicles, including car loans for electric vehicles, as well as leasing and lending to corporate customers for vehicles and operating assets. The EiendomsMegler 1 Østlandet's segment offers activities consisting of advisory services and real estate brokerage in connection with the purchase and sale of residential property and real estate. The SpareBank 1 ForretningsPartner Østlandet's segment provides activities consisting of accounting services, advisory and consultancy services, including advisory services related to sustainability. SpareBank 1 Østlandet was founded in 1845 and is headquartered in Hamar, Norway.",
@@ -23,6 +23,77 @@
   "target_high": 205,
   "target_low": 200,
   "target_analysts": 3,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 4443000000,
+      "net": 1880000000,
+      "margin": 42.3
+    },
+    {
+      "year": "2023",
+      "revenue": 5343000000,
+      "net": 2149000000,
+      "margin": 40.2
+    },
+    {
+      "year": "2024",
+      "revenue": 6946000000,
+      "net": 3206000000,
+      "margin": 46.2
+    },
+    {
+      "year": "2025",
+      "revenue": 7654000000,
+      "net": 3377000000,
+      "margin": 44.1
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "4Q2025",
+      "revenue": 1753000000,
+      "earnings": 882000000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 1598000000,
+      "earnings": 790000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 1738000000,
+      "earnings": 847000000
+    }
+  ],
+  "growth": {
+    "q0": -0.0871,
+    "q1": -0.128,
+    "y0": -0.0907,
+    "y1": 0.0304
+  },
+  "ratings": [],
+  "holders": [],
+  "insider_net": {
+    "period": "6m",
+    "buys": 0,
+    "sells": 0,
+    "bought": 0,
+    "sold": null,
+    "net_pct": null
+  },
+  "extras": {
+    "beta": 0.348,
+    "enterprise_value": 30515863552,
+    "ev_ebitda": null,
+    "ev_revenue": 4.213,
+    "float_shares": 72750700,
+    "short_shares": null,
+    "short_pct_float": null,
+    "short_ratio": null,
+    "last_split": null,
+    "last_split_date": null
+  },
   "ex_dividend": "2026-03-27",
   "dividend_date": null,
   "payout_ratio": 0.7253,
@@ -53,5 +124,48 @@
       "surprise_pct": 12.6
     }
   ],
-  "insiders": []
+  "insiders": [],
+  "dividends": [
+    {
+      "date": "2018-03-23",
+      "amount": 3.9475
+    },
+    {
+      "date": "2019-03-29",
+      "amount": 4.12
+    },
+    {
+      "date": "2020-03-27",
+      "amount": 4.58
+    },
+    {
+      "date": "2021-03-26",
+      "amount": 1.75
+    },
+    {
+      "date": "2021-11-02",
+      "amount": 3.04
+    },
+    {
+      "date": "2022-03-30",
+      "amount": 6
+    },
+    {
+      "date": "2023-03-31",
+      "amount": 6.8
+    },
+    {
+      "date": "2024-03-22",
+      "amount": 7.8
+    },
+    {
+      "date": "2025-03-28",
+      "amount": 10.3
+    },
+    {
+      "date": "2026-03-27",
+      "amount": 12.7
+    }
+  ],
+  "splits": []
 }

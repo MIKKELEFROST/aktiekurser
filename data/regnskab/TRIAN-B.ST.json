@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:25:25.424Z",
+  "updated_at": "2026-09-08T09:38:26.990Z",
   "source": "Yahoo Finance",
   "symbol": "TRIAN-B.ST",
   "summary": "Fastighets AB Trianon (publ), a real estate company, owns, builds, develops, and manages residential and commercial properties in Sweden. The company operates through two segments: Residential and Community/Commercial. It offers housing, retail, office, and public sector/community properties, as well as garage and parking spaces. The company was incorporated in 1973 and is based in Malmö, Sweden.",
@@ -23,10 +23,111 @@
   "target_high": 24,
   "target_low": 22,
   "target_analysts": 3,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 688300000,
+      "net": 171400000,
+      "margin": 24.9
+    },
+    {
+      "year": "2023",
+      "revenue": null,
+      "net": -206100000,
+      "margin": null
+    },
+    {
+      "year": "2024",
+      "revenue": null,
+      "net": 224800000,
+      "margin": null
+    },
+    {
+      "year": "2025",
+      "revenue": 787300000,
+      "net": 308600000,
+      "margin": 39.2
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "2Q2025",
+      "revenue": 190400000,
+      "earnings": 35100000
+    },
+    {
+      "q": "3Q2025",
+      "revenue": 193000000,
+      "earnings": 80800000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 195300000,
+      "earnings": 112200000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 208400000,
+      "earnings": 31900000
+    }
+  ],
+  "growth": {
+    "q0": null,
+    "q1": null,
+    "y0": 0.3525,
+    "y1": 0.081
+  },
+  "ratings": [],
+  "holders": [],
+  "insider_net": {
+    "period": "6m",
+    "buys": 0,
+    "sells": 0,
+    "bought": 0,
+    "sold": null,
+    "net_pct": null
+  },
+  "extras": {
+    "beta": 1.406,
+    "enterprise_value": 10857587712,
+    "ev_ebitda": null,
+    "ev_revenue": 13.36,
+    "float_shares": 47284726,
+    "short_shares": null,
+    "short_pct_float": null,
+    "short_ratio": null,
+    "last_split": "4:1",
+    "last_split_date": "2022-05-25"
+  },
   "ex_dividend": "2026-05-22",
   "dividend_date": null,
   "payout_ratio": 0.15630001,
   "inst_count": 19,
   "eps_history": [],
-  "insiders": []
+  "insiders": [],
+  "dividends": [
+    {
+      "date": "2019-05-08",
+      "amount": 0.2875
+    },
+    {
+      "date": "2021-05-05",
+      "amount": 0.45
+    },
+    {
+      "date": "2022-05-13",
+      "amount": 0.5
+    },
+    {
+      "date": "2026-05-22",
+      "amount": 0.25
+    }
+  ],
+  "splits": [
+    {
+      "date": "2022-05-25",
+      "ratio": "4:1",
+      "factor": 4
+    }
+  ]
 }

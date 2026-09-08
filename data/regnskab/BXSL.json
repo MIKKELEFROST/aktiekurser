@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:25:23.628Z",
+  "updated_at": "2026-09-08T09:38:25.483Z",
   "source": "Yahoo Finance",
   "symbol": "BXSL",
   "summary": "Blackstone Secured Lending Fund is business development company and a Delaware statutory trust formed on March 26, 2018, and structured as an externally managed, non-diversified closed-end investment Fund. On October 26, 2018, the fund elected to be regulated as a business development company (BDC) under the Investment Company Act of 1940, as amended (the 1940 Act). In addition, the Fund elected to be treated for U.S. federal income tax purposes, as a regulated investment company (RIC), as defined under Subchapter M of the Internal Revenue Code of 1986, as amended (the Code). The fund also intends to continue to comply with the requirements prescribed by the Code in order to maintain tax treatment as a RIC. The fund's investment objectives are to generate current income and, to a lesser extent, long-term capital appreciation. The Fund seeks to achieve its investment objective primarily through originated loans, equity and other securities, including syndicated loans, of private U.S. companies, specifically small and middle market companies, typically in the form of first lien senior secured and unitranche loans (including first out/last out loans), and to a lesser extent, second lien, third lien, unsecured and subordinated loans and other debt and equity securities.",
@@ -23,6 +23,224 @@
   "target_high": 26,
   "target_low": 22,
   "target_analysts": 11,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 850292000,
+      "net": 404556000,
+      "margin": 47.6
+    },
+    {
+      "year": "2023",
+      "revenue": 1143517000,
+      "net": 611951000,
+      "margin": 53.5
+    },
+    {
+      "year": "2024",
+      "revenue": 1326901000,
+      "net": 694097000,
+      "margin": 52.3
+    },
+    {
+      "year": "2025",
+      "revenue": 1419000000,
+      "net": 563000000,
+      "margin": 39.7
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 148049000,
+      "earnings": 132437000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 126133000,
+      "earnings": 126167000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 40519000,
+      "earnings": 25246000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 26707000,
+      "earnings": 9486000
+    }
+  ],
+  "growth": {
+    "q0": -0.1873,
+    "q1": -0.1751,
+    "y0": -0.1204,
+    "y1": -0.0922
+  },
+  "ratings": [
+    {
+      "date": "2026-09-01",
+      "firm": "UBS",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-23",
+      "firm": "Oppenheimer",
+      "from": null,
+      "to": "Perform",
+      "action": "init"
+    },
+    {
+      "date": "2026-07-02",
+      "firm": "JP Morgan",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-06-08",
+      "firm": "Keefe, Bruyette & Woods",
+      "from": "Outperform",
+      "to": "Market Perform",
+      "action": "down"
+    },
+    {
+      "date": "2026-05-19",
+      "firm": "Truist Securities",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-05-18",
+      "firm": "UBS",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-05-18",
+      "firm": "RBC Capital",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-05-12",
+      "firm": "B. Riley Securities",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-05-08",
+      "firm": "Wells Fargo",
+      "from": "Underweight",
+      "to": "Underweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-04-16",
+      "firm": "Keefe, Bruyette & Woods",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    }
+  ],
+  "holders": [
+    {
+      "name": "Morgan Stanley",
+      "kind": "institution",
+      "pct": 2.73,
+      "shares": 6358639,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Bank of America Corporation",
+      "kind": "institution",
+      "pct": 2.42,
+      "shares": 5633953,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "UBS Group AG",
+      "kind": "institution",
+      "pct": 2.2,
+      "shares": 5126083,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Van Eck Associates Corporation",
+      "kind": "institution",
+      "pct": 1.79,
+      "shares": 4161539,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "STRS Ohio",
+      "kind": "institution",
+      "pct": 1.72,
+      "shares": 4000000,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "VanEck ETF Trust-VanEck BDC Income ETF",
+      "kind": "fond",
+      "pct": 1.52,
+      "shares": 3536269,
+      "date": "2026-07-31"
+    },
+    {
+      "name": "Ensign Peak Advisors, Inc",
+      "kind": "institution",
+      "pct": 1.41,
+      "shares": 3295115,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Blackstone Inc",
+      "kind": "institution",
+      "pct": 1.38,
+      "shares": 3206530,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Nomura Asset Management Company Limited",
+      "kind": "institution",
+      "pct": 1.35,
+      "shares": 3154452,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Generali Asset Management Spa Sgr",
+      "kind": "institution",
+      "pct": 1.12,
+      "shares": 2602594,
+      "date": "2026-06-30"
+    }
+  ],
+  "insider_net": {
+    "period": "6m",
+    "buys": 0,
+    "sells": 0,
+    "bought": 0,
+    "sold": null,
+    "net_pct": null
+  },
+  "extras": {
+    "beta": 0.433,
+    "enterprise_value": 13111668736,
+    "ev_ebitda": null,
+    "ev_revenue": 9.624,
+    "float_shares": null,
+    "short_shares": 11839383,
+    "short_pct_float": 5.09,
+    "short_ratio": 7.16,
+    "last_split": null,
+    "last_split_date": null
+  },
   "ex_dividend": "2026-09-30",
   "dividend_date": null,
   "payout_ratio": 2.4252,
@@ -117,5 +335,100 @@
       "shares": 1626,
       "date": "2025-05-13"
     }
-  ]
+  ],
+  "dividends": [
+    {
+      "date": "2021-12-30",
+      "amount": 0.53
+    },
+    {
+      "date": "2022-01-14",
+      "amount": 0.1
+    },
+    {
+      "date": "2022-03-15",
+      "amount": 0.15
+    },
+    {
+      "date": "2022-03-30",
+      "amount": 0.53
+    },
+    {
+      "date": "2022-05-13",
+      "amount": 0.2
+    },
+    {
+      "date": "2022-06-29",
+      "amount": 0.53
+    },
+    {
+      "date": "2022-07-15",
+      "amount": 0.2
+    },
+    {
+      "date": "2022-09-29",
+      "amount": 0.6
+    },
+    {
+      "date": "2022-12-29",
+      "amount": 0.6
+    },
+    {
+      "date": "2023-03-30",
+      "amount": 0.7
+    },
+    {
+      "date": "2023-06-29",
+      "amount": 0.7
+    },
+    {
+      "date": "2023-09-28",
+      "amount": 0.77
+    },
+    {
+      "date": "2023-12-28",
+      "amount": 0.77
+    },
+    {
+      "date": "2024-03-27",
+      "amount": 0.77
+    },
+    {
+      "date": "2024-06-28",
+      "amount": 0.77
+    },
+    {
+      "date": "2024-09-30",
+      "amount": 0.77
+    },
+    {
+      "date": "2024-12-31",
+      "amount": 0.77
+    },
+    {
+      "date": "2025-03-31",
+      "amount": 0.77
+    },
+    {
+      "date": "2025-06-30",
+      "amount": 0.77
+    },
+    {
+      "date": "2025-09-30",
+      "amount": 0.77
+    },
+    {
+      "date": "2025-12-31",
+      "amount": 0.77
+    },
+    {
+      "date": "2026-03-31",
+      "amount": 0.77
+    },
+    {
+      "date": "2026-06-30",
+      "amount": 0.77
+    }
+  ],
+  "splits": []
 }

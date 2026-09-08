@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:25:24.198Z",
+  "updated_at": "2026-09-08T09:38:25.932Z",
   "source": "Yahoo Finance",
   "symbol": "FTK",
   "summary": "Flotek Industries, Inc. operates as a chemical and data analytics company in the United States, the United Arab Emirates, and internationally. It operates in two segments, Chemistry Technologies (CT) and Data Analytics (DA). The CT segment offers chemistry solutions, such as proprietary chemistries, specialty chemistries, logistics, and technology services for desired chemical applications program to integrated oil and gas companies, oilfield services companies, independent oil and gas companies, national and state-owned oil companies, geothermal energy companies, solar energy companies, and advanced alternative energy companies. This segment also designs, develops, manufactures, packages, distributes, and markets chemistry solutions designed for existing sustainability practices to reduce the environmental impact of energy on the air, water, land, and people. The DA segment is also involved in the provision of analytical measurement and digital solutions, including measure-and-control services for near real-time insights for process control in the oil and gas value chain, and emerging applications in power and digital valuation; and solutions to optimize performance, improve decision-making, and reduce emissions and carbon intensity; and short and long-term equipment rental. It sells its products directly through in-house sales professionals and contractual agency agreements. Flotek Industries, Inc. was incorporated in 1985 and is headquartered in Houston, Texas.",
@@ -23,10 +23,200 @@
   "target_high": 43,
   "target_low": 32,
   "target_analysts": 6,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 136092000,
+      "net": null,
+      "margin": null
+    },
+    {
+      "year": "2023",
+      "revenue": 188058000,
+      "net": 24713000,
+      "margin": 13.1
+    },
+    {
+      "year": "2024",
+      "revenue": 187025000,
+      "net": 10498000,
+      "margin": 5.6
+    },
+    {
+      "year": "2025",
+      "revenue": 237262000,
+      "net": 30528000,
+      "margin": 12.9
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 56031000,
+      "earnings": 20355000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 67519000,
+      "earnings": 3025000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 70051000,
+      "earnings": 4664000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 99367000,
+      "earnings": 9953000
+    }
+  ],
+  "growth": {
+    "q0": -0.6856,
+    "q1": 0.73910004,
+    "y0": -0.2727,
+    "y1": 0.1329
+  },
+  "ratings": [
+    {
+      "date": "2026-07-09",
+      "firm": "Jones Trading",
+      "from": null,
+      "to": "Buy",
+      "action": "init"
+    },
+    {
+      "date": "2025-12-31",
+      "firm": "Northland Capital Markets",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "reit"
+    },
+    {
+      "date": "2025-06-17",
+      "firm": "Northland Capital Markets",
+      "from": null,
+      "to": "Market Perform",
+      "action": "init"
+    },
+    {
+      "date": "2024-11-07",
+      "firm": "Roth MKM",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2024-07-25",
+      "firm": "Roth MKM",
+      "from": null,
+      "to": "Buy",
+      "action": "init"
+    },
+    {
+      "date": "2024-04-29",
+      "firm": "Alliance Global Partners",
+      "from": null,
+      "to": "Buy",
+      "action": "init"
+    }
+  ],
+  "holders": [
+    {
+      "name": "Driehaus Capital Management, LLC",
+      "kind": "institution",
+      "pct": 3.14,
+      "shares": 1136326,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Royce & Associates LP",
+      "kind": "institution",
+      "pct": 3.05,
+      "shares": 1105132,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Masters Capital Management, LLC",
+      "kind": "institution",
+      "pct": 2.76,
+      "shares": 1000000,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Blackrock Inc.",
+      "kind": "institution",
+      "pct": 2.37,
+      "shares": 856775,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Dimensional Fund Advisors LP",
+      "kind": "institution",
+      "pct": 1.94,
+      "shares": 704371,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Capital Management LLC",
+      "kind": "institution",
+      "pct": 1.77,
+      "shares": 639794,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Nuveen, LLC",
+      "kind": "institution",
+      "pct": 1.69,
+      "shares": 612926,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
+      "kind": "fond",
+      "pct": 1.28,
+      "shares": 461960,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "iShares Trust-iShares Russell 2000 ETF",
+      "kind": "fond",
+      "pct": 1.04,
+      "shares": 375465,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Geode Capital Management, LLC",
+      "kind": "institution",
+      "pct": 0.99,
+      "shares": 359725,
+      "date": "2026-06-30"
+    }
+  ],
+  "insider_net": {
+    "period": "6m",
+    "buys": 9,
+    "sells": 1,
+    "bought": 6057258,
+    "sold": 12554,
+    "net_pct": 37.9
+  },
+  "extras": {
+    "beta": 1.469,
+    "enterprise_value": 904326656,
+    "ev_ebitda": 22.183,
+    "ev_revenue": 3.087,
+    "float_shares": 14218614,
+    "short_shares": 2846171,
+    "short_pct_float": 19.97,
+    "short_ratio": 5.73,
+    "last_split": "1:6",
+    "last_split_date": "2023-09-26"
+  },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 164,
+  "inst_count": 165,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -143,6 +333,19 @@
       "value": 0,
       "shares": 11520,
       "date": "2026-03-10"
+    }
+  ],
+  "dividends": [],
+  "splits": [
+    {
+      "date": "2007-07-12",
+      "ratio": "2:1",
+      "factor": 2
+    },
+    {
+      "date": "2023-09-26",
+      "ratio": "1:6",
+      "factor": 0.1667
     }
   ]
 }

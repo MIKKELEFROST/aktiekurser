@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:25:24.101Z",
+  "updated_at": "2026-09-08T09:38:25.855Z",
   "source": "Yahoo Finance",
   "symbol": "EXR",
   "summary": "Extra Space Storage Inc., headquartered in Salt Lake City, Utah, is a self-administered and self-managed REIT and a member of the S&P 500. As of June 30, 2026, the Company owned and/or operated 4,410 self-storage stores in 42 states and Washington, D.C. The Company's stores comprise approximately 3.0 million units and approximately 341.0 million square feet of rentable space operating under the Extra Space brand. The Company offers customers a wide selection of conveniently located and secure storage units across the country, including boat storage, RV storage, and business storage. It is the largest operator of self-storage properties in the United States. Extra Space Storage Inc. was incorporated in 1977 in Maryland, USA.",
@@ -23,10 +23,223 @@
   "target_high": 178,
   "target_low": 140,
   "target_analysts": 20,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 1654735000,
+      "net": 860688000,
+      "margin": 52
+    },
+    {
+      "year": "2023",
+      "revenue": 2222578000,
+      "net": 803198000,
+      "margin": 36.1
+    },
+    {
+      "year": "2024",
+      "revenue": 2803252000,
+      "net": 854681000,
+      "margin": 30.5
+    },
+    {
+      "year": "2025",
+      "revenue": 2895190000,
+      "net": 973999000,
+      "margin": 33.6
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 858460000,
+      "earnings": 165998000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 857467000,
+      "earnings": 287395000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 856027000,
+      "earnings": 240977000
+    }
+  ],
+  "growth": {
+    "q0": 0.5137,
+    "q1": -0.1437,
+    "y0": 0.0021,
+    "y1": 0.045100003
+  },
+  "ratings": [
+    {
+      "date": "2026-09-02",
+      "firm": "Mizuho",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-09-01",
+      "firm": "Wells Fargo",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-08-27",
+      "firm": "BMO Capital",
+      "from": "Market Perform",
+      "to": "Outperform",
+      "action": "up"
+    },
+    {
+      "date": "2026-08-18",
+      "firm": "Scotiabank",
+      "from": "Sector Perform",
+      "to": "Sector Perform",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-30",
+      "firm": "RBC Capital",
+      "from": "Sector Perform",
+      "to": "Sector Perform",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-24",
+      "firm": "Wells Fargo",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-10",
+      "firm": "UBS",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-10",
+      "firm": "Barclays",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-06",
+      "firm": "Evercore ISI Group",
+      "from": "In-Line",
+      "to": "In-Line",
+      "action": "main"
+    },
+    {
+      "date": "2026-06-18",
+      "firm": "Truist Securities",
+      "from": "Hold",
+      "to": "Hold",
+      "action": "main"
+    }
+  ],
+  "holders": [
+    {
+      "name": "Blackrock Inc.",
+      "kind": "institution",
+      "pct": 10.86,
+      "shares": 22947440,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Portfolio Management LLC",
+      "kind": "institution",
+      "pct": 8.81,
+      "shares": 18616459,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Capital Management LLC",
+      "kind": "institution",
+      "pct": 6.54,
+      "shares": 13807439,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "State Street Corporation",
+      "kind": "institution",
+      "pct": 6.42,
+      "shares": 13558465,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Cohen & Steers Inc.",
+      "kind": "institution",
+      "pct": 6.1,
+      "shares": 12896053,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "NORGES BANK",
+      "kind": "institution",
+      "pct": 4.4,
+      "shares": 9300678,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "VANGUARD SPECIALIZED FUNDS-Vanguard Real Estate Index Fund",
+      "kind": "fond",
+      "pct": 3.73,
+      "shares": 7879992,
+      "date": "2026-04-30"
+    },
+    {
+      "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
+      "kind": "fond",
+      "pct": 3.17,
+      "shares": 6705350,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Capital Research Global Investors",
+      "kind": "institution",
+      "pct": 2.98,
+      "shares": 6300111,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Geode Capital Management, LLC",
+      "kind": "institution",
+      "pct": 2.91,
+      "shares": 6139183,
+      "date": "2026-06-30"
+    }
+  ],
+  "insider_net": {
+    "period": "6m",
+    "buys": 11,
+    "sells": 2,
+    "bought": 40618,
+    "sold": 10800,
+    "net_pct": 1.5
+  },
+  "extras": {
+    "beta": 1.176,
+    "enterprise_value": 44056809472,
+    "ev_ebitda": 19.067,
+    "ev_revenue": 12.548,
+    "float_shares": 208858972,
+    "short_shares": 4875830,
+    "short_pct_float": 3.16,
+    "short_ratio": 3.91,
+    "last_split": null,
+    "last_split_date": null
+  },
   "ex_dividend": "2026-09-15",
   "dividend_date": null,
   "payout_ratio": 1.4305,
-  "inst_count": 1154,
+  "inst_count": 1152,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -144,5 +357,168 @@
       "shares": 1407,
       "date": "2026-05-14"
     }
-  ]
+  ],
+  "dividends": [
+    {
+      "date": "2016-12-15",
+      "amount": 0.78
+    },
+    {
+      "date": "2017-03-13",
+      "amount": 0.78
+    },
+    {
+      "date": "2017-06-13",
+      "amount": 0.78
+    },
+    {
+      "date": "2017-09-14",
+      "amount": 0.78
+    },
+    {
+      "date": "2017-12-14",
+      "amount": 0.78
+    },
+    {
+      "date": "2018-03-14",
+      "amount": 0.78
+    },
+    {
+      "date": "2018-06-14",
+      "amount": 0.86
+    },
+    {
+      "date": "2018-09-13",
+      "amount": 0.86
+    },
+    {
+      "date": "2018-12-13",
+      "amount": 0.86
+    },
+    {
+      "date": "2019-03-14",
+      "amount": 0.86
+    },
+    {
+      "date": "2019-06-13",
+      "amount": 0.9
+    },
+    {
+      "date": "2019-09-13",
+      "amount": 0.9
+    },
+    {
+      "date": "2019-12-13",
+      "amount": 0.9
+    },
+    {
+      "date": "2020-03-13",
+      "amount": 0.9
+    },
+    {
+      "date": "2020-06-12",
+      "amount": 0.9
+    },
+    {
+      "date": "2020-09-14",
+      "amount": 0.9
+    },
+    {
+      "date": "2020-12-14",
+      "amount": 0.9
+    },
+    {
+      "date": "2021-03-12",
+      "amount": 1
+    },
+    {
+      "date": "2021-06-14",
+      "amount": 1
+    },
+    {
+      "date": "2021-09-14",
+      "amount": 1.25
+    },
+    {
+      "date": "2021-12-14",
+      "amount": 1.25
+    },
+    {
+      "date": "2022-03-14",
+      "amount": 1.5
+    },
+    {
+      "date": "2022-06-14",
+      "amount": 1.5
+    },
+    {
+      "date": "2022-09-14",
+      "amount": 1.5
+    },
+    {
+      "date": "2022-12-13",
+      "amount": 1.5
+    },
+    {
+      "date": "2023-03-14",
+      "amount": 1.62
+    },
+    {
+      "date": "2023-06-14",
+      "amount": 1.62
+    },
+    {
+      "date": "2023-07-12",
+      "amount": 1.01
+    },
+    {
+      "date": "2023-09-14",
+      "amount": 0.61
+    },
+    {
+      "date": "2023-12-14",
+      "amount": 1.62
+    },
+    {
+      "date": "2024-03-14",
+      "amount": 1.62
+    },
+    {
+      "date": "2024-06-14",
+      "amount": 1.62
+    },
+    {
+      "date": "2024-09-16",
+      "amount": 1.62
+    },
+    {
+      "date": "2024-12-16",
+      "amount": 1.62
+    },
+    {
+      "date": "2025-03-14",
+      "amount": 1.62
+    },
+    {
+      "date": "2025-06-16",
+      "amount": 1.62
+    },
+    {
+      "date": "2025-09-15",
+      "amount": 1.62
+    },
+    {
+      "date": "2025-12-15",
+      "amount": 1.62
+    },
+    {
+      "date": "2026-03-16",
+      "amount": 1.62
+    },
+    {
+      "date": "2026-06-15",
+      "amount": 1.62
+    }
+  ],
+  "splits": []
 }

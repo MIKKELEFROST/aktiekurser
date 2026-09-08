@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:50:49.544Z",
+  "updated_at": "2026-09-08T09:38:26.987Z",
   "source": "Yahoo Finance",
   "symbol": "TROAX.ST",
   "summary": "Troax Group AB (publ), through its subsidiaries, produces and sells mesh panels in the Nordic region, the United Kingdom, North America, Europe, and internationally. The company offers machine guarding systems, including fixings, posts, panels, accessories, barrier protection, locks and switches, doors, quickguard aluminum, blueguard stainless steel, and belt conveyor guarding products, as well as smart fix, rapid fix, and strong fix systems; warehouse partitioning products, such as partition walls, anti-collapse systems, data centers, shelves, mezzanine, cage storages, single and double locker systems, and art storages; and warehouse partitioning system accessories that include raising and end raising foot UR/UX, corner bracket, cut profiles UR/UX, smart splice, tubes, extension bracket, power door, door closer partitioning, espagnolette, bracket double post, horizontal top panels, and secure fasteners. It also provides lock options comprising padlocks, cylinder locks electric strike, electromagnetic locks, panic bars, knobs and handles, Abloy EL460, and safe escape locks; Troax Classic mesh partitions; Troax Medium mesh partition systems; Troax Safe storage systems; vehicle and bicycle storage systems; and property protection accessories, including chipboard shelf, store room numbering, door system holder numberplate, door system kit silence, spare parts securing plates, door reinforcement, and door closers. In addition, the company offers active safety solutions that include pedestrian alert, visual alert, and narrow aisle systems; forklift safety systems comprising collision avoidance, low-speed area, blind spot, and crossing guard systems; traffic control and pedestrian crossing systems; and docking safety solutions, such as truck docking and visual alert systems. Troax Group AB (publ) was founded in 1955 and is headquartered in Hillerstorp, Sweden.",
@@ -19,10 +19,81 @@
     "strong_sell": 0,
     "total": 4
   },
-  "target_mean": 159.6308,
-  "target_high": 172.35715,
-  "target_low": 146.79836,
+  "target_mean": 159.52185,
+  "target_high": 172.23952,
+  "target_low": 146.69818,
   "target_analysts": 4,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 284100000,
+      "net": 36800000,
+      "margin": 13
+    },
+    {
+      "year": "2023",
+      "revenue": 264300000,
+      "net": 35800000,
+      "margin": 13.5
+    },
+    {
+      "year": "2024",
+      "revenue": 278500000,
+      "net": 31300000,
+      "margin": 11.2
+    },
+    {
+      "year": "2025",
+      "revenue": 262400000,
+      "net": 13500000,
+      "margin": 5.1
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "4Q2025",
+      "revenue": 61200000,
+      "earnings": 0
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 71800000,
+      "earnings": 1800000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 84200000,
+      "earnings": -6100000
+    }
+  ],
+  "growth": {
+    "q0": null,
+    "q1": null,
+    "y0": 0.1,
+    "y1": 0.6875
+  },
+  "ratings": [],
+  "holders": [],
+  "insider_net": {
+    "period": "6m",
+    "buys": 0,
+    "sells": 0,
+    "bought": 0,
+    "sold": null,
+    "net_pct": null
+  },
+  "extras": {
+    "beta": 1.215,
+    "enterprise_value": 9341536256,
+    "ev_ebitda": 208.307,
+    "ev_revenue": 33.192,
+    "float_shares": 38177731,
+    "short_shares": null,
+    "short_pct_float": null,
+    "short_ratio": null,
+    "last_split": "3:1",
+    "last_split_date": "2019-06-18"
+  },
   "ex_dividend": "2026-04-23",
   "dividend_date": null,
   "payout_ratio": 6,
@@ -53,5 +124,58 @@
       "surprise_pct": -220
     }
   ],
-  "insiders": []
+  "insiders": [],
+  "dividends": [
+    {
+      "date": "2016-05-11",
+      "amount": 1
+    },
+    {
+      "date": "2017-05-11",
+      "amount": 1.25
+    },
+    {
+      "date": "2018-05-03",
+      "amount": 1.4167
+    },
+    {
+      "date": "2019-05-15",
+      "amount": 1.6667
+    },
+    {
+      "date": "2020-06-26",
+      "amount": 1.1159
+    },
+    {
+      "date": "2021-04-27",
+      "amount": 2.2318
+    },
+    {
+      "date": "2022-04-28",
+      "amount": 3.3477
+    },
+    {
+      "date": "2023-04-27",
+      "amount": 3.5709
+    },
+    {
+      "date": "2024-04-23",
+      "amount": 3.7941
+    },
+    {
+      "date": "2025-04-30",
+      "amount": 3.7941
+    },
+    {
+      "date": "2026-04-23",
+      "amount": 2.6782
+    }
+  ],
+  "splits": [
+    {
+      "date": "2019-06-18",
+      "ratio": "3:1",
+      "factor": 3
+    }
+  ]
 }

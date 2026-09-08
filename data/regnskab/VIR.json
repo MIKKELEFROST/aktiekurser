@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:25:25.557Z",
+  "updated_at": "2026-09-08T09:38:27.083Z",
   "source": "Yahoo Finance",
   "symbol": "VIR",
   "summary": "Vir Biotechnology, Inc., a clinical-stage biopharmaceutical company, discovers and develops therapeutic products to treat and prevent serious infectious diseases in the United States and internationally. Its clinical development pipeline consists of product investigational therapies targeting hepatitis delta virus (HDV) and other solid tumors. The company's preclinical candidates include those targeting influenza A and B antibodies and antibody drug conjugates, and coronavirus monoclonal antibodies; and PRO-XTEN, a dual-masked TCEs targeting variety of solid tumors. It has grant collaboration and license agreement with Astellas; license agreement with Norgine for the treatment of CHD; amended and restated letter agreement with the Gates Foundation; an option and license agreement with Brii Biosciences Limited; a collaboration and license agreement with Alnylam Pharmaceuticals, Inc.; license agreement with the Institute for Research in Biomedicine; a license agreement with The Rockefeller University; license agreements with Xencor; and a collaborative research agreement with GlaxoSmithKline Biologicals S.A. Vir Biotechnology, Inc. was incorporated in 2016 and is headquartered in San Francisco, California.",
@@ -23,10 +23,228 @@
   "target_high": 30,
   "target_low": 15,
   "target_analysts": 9,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 1615797000,
+      "net": 515837000,
+      "margin": 31.9
+    },
+    {
+      "year": "2023",
+      "revenue": 86180000,
+      "net": -615061000,
+      "margin": -713.7
+    },
+    {
+      "year": "2024",
+      "revenue": 74205000,
+      "net": -521960000,
+      "margin": -703.4
+    },
+    {
+      "year": "2025",
+      "revenue": 68556000,
+      "net": -437987000,
+      "margin": -638.9
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": -65000,
+      "earnings": -163141000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 63760000,
+      "earnings": -42923000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": -41000,
+      "earnings": -125695000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 238935000,
+      "earnings": 80080000
+    }
+  ],
+  "growth": {
+    "q0": 0.3747,
+    "q1": -1.0309,
+    "y0": 0.4446,
+    "y1": -0.41709998
+  },
+  "ratings": [
+    {
+      "date": "2026-06-11",
+      "firm": "Morgan Stanley",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-06-03",
+      "firm": "Leerink Partners",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-03-04",
+      "firm": "HC Wainwright & Co.",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-02-25",
+      "firm": "Barclays",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-02-24",
+      "firm": "Morgan Stanley",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-02-24",
+      "firm": "Evercore ISI Group",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-02-24",
+      "firm": "Needham",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-02-09",
+      "firm": "Needham",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "reit"
+    },
+    {
+      "date": "2025-12-30",
+      "firm": "HC Wainwright & Co.",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "reit"
+    },
+    {
+      "date": "2025-09-15",
+      "firm": "HC Wainwright & Co.",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "reit"
+    }
+  ],
+  "holders": [
+    {
+      "name": "Blackrock Inc.",
+      "kind": "institution",
+      "pct": 12.22,
+      "shares": 20678283,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Arch Venture Management, Llc",
+      "kind": "institution",
+      "pct": 7.5,
+      "shares": 12694163,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Portfolio Management LLC",
+      "kind": "institution",
+      "pct": 6.79,
+      "shares": 11495215,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "SB Investment Advisers (UK) LTD",
+      "kind": "institution",
+      "pct": 6.47,
+      "shares": 10948093,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "State Street Corporation",
+      "kind": "institution",
+      "pct": 5.89,
+      "shares": 9964151,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "GSK plc",
+      "kind": "institution",
+      "pct": 5.05,
+      "shares": 8550954,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "iShares Trust-iShares Core S&P Small-Cap ETF",
+      "kind": "fond",
+      "pct": 4.37,
+      "shares": 7396025,
+      "date": "2026-07-31"
+    },
+    {
+      "name": "Vanguard Capital Management LLC",
+      "kind": "institution",
+      "pct": 3.78,
+      "shares": 6388775,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Point72 Asset Management, L.P.",
+      "kind": "institution",
+      "pct": 3.35,
+      "shares": 5666821,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "SPDR SERIES TRUST-State Street SPDR S&P Biotech ETF",
+      "kind": "fond",
+      "pct": 2.92,
+      "shares": 4945485,
+      "date": "2026-06-30"
+    }
+  ],
+  "insider_net": {
+    "period": "6m",
+    "buys": 7,
+    "sells": 6,
+    "bought": 64000,
+    "sold": 127849,
+    "net_pct": -0.6
+  },
+  "extras": {
+    "beta": 1.625,
+    "enterprise_value": 1487071744,
+    "ev_ebitda": -5.55,
+    "ev_revenue": 4.904,
+    "float_shares": 129793716,
+    "short_shares": 19595909,
+    "short_pct_float": 11.73,
+    "short_ratio": 12.94,
+    "last_split": null,
+    "last_split_date": null
+  },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 334,
+  "inst_count": 335,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -144,5 +362,7 @@
       "shares": 22000,
       "date": "2026-05-01"
     }
-  ]
+  ],
+  "dividends": [],
+  "splits": []
 }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:50:49.365Z",
+  "updated_at": "2026-09-08T09:38:26.614Z",
   "source": "Yahoo Finance",
   "symbol": "PBA",
   "summary": "Pembina Pipeline Corporation provides energy transportation and midstream services. It operates through three segments: Pipelines, Facilities, and Marketing & New Ventures. The Pipelines segment operates conventional, oil sands and heavy oil, and transmission assets with a transportation capacity of 3.0 million of barrels of oil equivalent per day, and the ground storage capacity of 10 million of barrels serving markets and basins across North America. The Facilities segment offers infrastructure that provides customers with crude oil, natural gas, condensate, and natural gas liquids (NGLs), including ethane, propane, butane, and condensate; and includes 430 thousands of barrels of NGL fractionation capacity, 21 million of barrels of cavern storage capacity, and various oil batteries, associated pipeline, and rail terminalling facilities and a liquefied propane export facility. The Marketing & New Ventures segment buys and sells hydrocarbon liquids and natural gas originating in the Western Canadian sedimentary basin and other basins. Pembina Pipeline Corporation was incorporated in 1954 and is headquartered in Calgary, Canada.",
@@ -19,10 +19,228 @@
     "strong_sell": 0,
     "total": 18
   },
-  "target_mean": 47.785217,
-  "target_high": 47.785217,
-  "target_low": 47.785217,
+  "target_mean": 47.759254,
+  "target_high": 47.759254,
+  "target_low": 47.759254,
   "target_analysts": 1,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 11611000000,
+      "net": 2842000000,
+      "margin": 24.5
+    },
+    {
+      "year": "2023",
+      "revenue": 9125000000,
+      "net": 1648000000,
+      "margin": 18.1
+    },
+    {
+      "year": "2024",
+      "revenue": 7384000000,
+      "net": 1721000000,
+      "margin": 23.3
+    },
+    {
+      "year": "2025",
+      "revenue": 7778000000,
+      "net": 1550000000,
+      "margin": 19.9
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 1791000000,
+      "earnings": 286000000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 1913000000,
+      "earnings": 489000000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 2106000000,
+      "earnings": 498000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 2152000000,
+      "earnings": 512000000
+    }
+  ],
+  "growth": {
+    "q0": 0.3516,
+    "q1": 0.1749,
+    "y0": 0.20889999,
+    "y1": 0.0136
+  },
+  "ratings": [
+    {
+      "date": "2026-05-11",
+      "firm": "RBC Capital",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-03-19",
+      "firm": "JP Morgan",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2025-12-16",
+      "firm": "TD Securities",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2024-08-28",
+      "firm": "Citigroup",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2024-07-03",
+      "firm": "CIBC",
+      "from": "Outperformer",
+      "to": "Outperformer",
+      "action": "main"
+    },
+    {
+      "date": "2024-04-19",
+      "firm": "CIBC",
+      "from": "Outperformer",
+      "to": "Outperformer",
+      "action": "main"
+    },
+    {
+      "date": "2023-08-16",
+      "firm": "Credit Suisse",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2023-06-22",
+      "firm": "Stifel",
+      "from": null,
+      "to": "Buy",
+      "action": "init"
+    },
+    {
+      "date": "2022-02-14",
+      "firm": "Scotiabank",
+      "from": "Sector Perform",
+      "to": "Sector Outperform",
+      "action": "up"
+    },
+    {
+      "date": "2021-11-23",
+      "firm": "CIBC",
+      "from": "Outperformer",
+      "to": "Neutral",
+      "action": "down"
+    }
+  ],
+  "holders": [
+    {
+      "name": "Royal Bank of Canada",
+      "kind": "institution",
+      "pct": 7.81,
+      "shares": 45437977,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Bank of Montreal /CAN/",
+      "kind": "institution",
+      "pct": 3.72,
+      "shares": 21611518,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Capital Management LLC",
+      "kind": "institution",
+      "pct": 2.88,
+      "shares": 16738025,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "ClearBridge Investments, LLC",
+      "kind": "institution",
+      "pct": 2.29,
+      "shares": 13315671,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "CIBC World Market, Inc.",
+      "kind": "institution",
+      "pct": 2.23,
+      "shares": 12961055,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "1832 Asset Management L.P.",
+      "kind": "institution",
+      "pct": 1.71,
+      "shares": 9953497,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "VANGUARD STAR FUNDS-Vanguard Total International Stock Index Fund",
+      "kind": "fond",
+      "pct": 1.46,
+      "shares": 8490908,
+      "date": "2026-04-30"
+    },
+    {
+      "name": "Goldman Sachs Group Inc",
+      "kind": "institution",
+      "pct": 1.25,
+      "shares": 7264144,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Mackenzie Financial Corporation",
+      "kind": "institution",
+      "pct": 1.23,
+      "shares": 7134199,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "FIL LTD",
+      "kind": "institution",
+      "pct": 1.21,
+      "shares": 7051474,
+      "date": "2026-06-30"
+    }
+  ],
+  "insider_net": {
+    "period": "6m",
+    "buys": 0,
+    "sells": 0,
+    "bought": 0,
+    "sold": null,
+    "net_pct": null
+  },
+  "extras": {
+    "beta": 0.7,
+    "enterprise_value": 43532079104,
+    "ev_ebitda": 12.434,
+    "ev_revenue": 5.467,
+    "float_shares": 580845503,
+    "short_shares": 12235779,
+    "short_pct_float": null,
+    "short_ratio": 15.33,
+    "last_split": null,
+    "last_split_date": null
+  },
   "ex_dividend": "2026-09-15",
   "dividend_date": null,
   "payout_ratio": 1.0088,
@@ -144,5 +362,168 @@
       "shares": 4128,
       "date": "2026-07-09"
     }
-  ]
+  ],
+  "dividends": [
+    {
+      "date": "2020-09-24",
+      "amount": 0.157
+    },
+    {
+      "date": "2020-10-22",
+      "amount": 0.16
+    },
+    {
+      "date": "2020-11-24",
+      "amount": 0.161
+    },
+    {
+      "date": "2020-12-30",
+      "amount": 0.164
+    },
+    {
+      "date": "2021-01-22",
+      "amount": 0.166
+    },
+    {
+      "date": "2021-02-24",
+      "amount": 0.167
+    },
+    {
+      "date": "2021-03-24",
+      "amount": 0.167
+    },
+    {
+      "date": "2021-04-22",
+      "amount": 0.168
+    },
+    {
+      "date": "2021-05-21",
+      "amount": 0.174
+    },
+    {
+      "date": "2021-06-24",
+      "amount": 0.171
+    },
+    {
+      "date": "2021-07-22",
+      "amount": 0.167
+    },
+    {
+      "date": "2021-08-24",
+      "amount": 0.166
+    },
+    {
+      "date": "2021-09-23",
+      "amount": 0.164
+    },
+    {
+      "date": "2021-10-22",
+      "amount": 0.17
+    },
+    {
+      "date": "2021-11-23",
+      "amount": 0.165
+    },
+    {
+      "date": "2021-12-30",
+      "amount": 0.164
+    },
+    {
+      "date": "2022-01-24",
+      "amount": 0.167
+    },
+    {
+      "date": "2022-02-24",
+      "amount": 0.165
+    },
+    {
+      "date": "2022-03-24",
+      "amount": 0.167
+    },
+    {
+      "date": "2022-04-22",
+      "amount": 0.167
+    },
+    {
+      "date": "2022-05-24",
+      "amount": 0.165
+    },
+    {
+      "date": "2022-06-23",
+      "amount": 0.162
+    },
+    {
+      "date": "2022-07-22",
+      "amount": 0.163
+    },
+    {
+      "date": "2022-08-24",
+      "amount": 0.162
+    },
+    {
+      "date": "2022-09-22",
+      "amount": 0.162
+    },
+    {
+      "date": "2022-10-24",
+      "amount": 0.159
+    },
+    {
+      "date": "2022-11-25",
+      "amount": 0.163
+    },
+    {
+      "date": "2022-12-14",
+      "amount": 0.161
+    },
+    {
+      "date": "2023-03-14",
+      "amount": 0.475
+    },
+    {
+      "date": "2023-06-14",
+      "amount": 0.501
+    },
+    {
+      "date": "2023-09-14",
+      "amount": 0.493
+    },
+    {
+      "date": "2023-12-14",
+      "amount": 0.494
+    },
+    {
+      "date": "2024-03-14",
+      "amount": 0.496
+    },
+    {
+      "date": "2024-06-17",
+      "amount": 0.503
+    },
+    {
+      "date": "2024-09-16",
+      "amount": 0.508
+    },
+    {
+      "date": "2024-12-16",
+      "amount": 0.485
+    },
+    {
+      "date": "2025-03-17",
+      "amount": 0.48
+    },
+    {
+      "date": "2025-06-16",
+      "amount": 0.523
+    },
+    {
+      "date": "2026-03-16",
+      "amount": 0.518
+    },
+    {
+      "date": "2026-06-15",
+      "amount": 0.525
+    }
+  ],
+  "splits": []
 }

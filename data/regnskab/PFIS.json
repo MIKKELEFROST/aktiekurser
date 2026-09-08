@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:50:49.381Z",
+  "updated_at": "2026-09-08T09:38:26.645Z",
   "source": "Yahoo Finance",
   "symbol": "PFIS",
   "summary": "Peoples Financial Services Corp. operates as the bank holding company for Peoples Security Bank and Trust Company that provides commercial and retail banking services in Pennsylvania, New Jersey and New York. The company accepts deposits through money market, negotiable order of withdrawal, savings, individual retirement, demand deposit, and certificates of deposit accounts. It also provides residential real estate, automobile, manufactured housing, personal, and home equity loans; and commercial real estate and working capital, as well as loans for equipment and other commercial needs. In addition, the company offers fiduciary and investment services, including investment management, IRA trustee, estate administration, living and life insurance trust, trustee under will, guardianship, custodial/IRA custodial, and corporate trust services, as well as pension and profit-sharing plans. Further, it provides wealth management products and services comprising investment portfolio management, estate and business succession planning, annuities, insurance, retirement plan, and tax planning, as well as education funding strategies; and securities, brokerage, and investor services. Additionally, the company offers remote deposit capture, automatic clearing house transaction, cash management, automated teller machine, point of sale transaction, safe deposit box, night depository, direct deposit, and official check services. It serves business, non-profit, governmental, municipal agency, and professional customers, as well as retail customers. The company was founded in 1905 and is headquartered in Moosic, Pennsylvania.",
@@ -23,6 +23,182 @@
   "target_high": 75,
   "target_low": 72,
   "target_analysts": 2,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 107594000,
+      "net": 38090000,
+      "margin": 35.4
+    },
+    {
+      "year": "2023",
+      "revenue": 100887000,
+      "net": 27380000,
+      "margin": 27.1
+    },
+    {
+      "year": "2024",
+      "revenue": 134325000,
+      "net": 8498000,
+      "margin": 6.3
+    },
+    {
+      "year": "2025",
+      "revenue": 187689000,
+      "net": 59187000,
+      "margin": 31.5
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 47299000,
+      "earnings": 15246000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 46891000,
+      "earnings": 11976000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 49765000,
+      "earnings": 14747000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 51867000,
+      "earnings": 14805000
+    }
+  ],
+  "growth": {
+    "q0": 0.14899999,
+    "q1": 0.2868,
+    "y0": 0.0494,
+    "y1": 0.1593
+  },
+  "ratings": [
+    {
+      "date": "2026-02-11",
+      "firm": "Stephens & Co.",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
+    {
+      "date": "2024-05-13",
+      "firm": "Stephens & Co.",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
+    {
+      "date": "2022-07-27",
+      "firm": "Stephens & Co.",
+      "from": "Overweight",
+      "to": "Equal-Weight",
+      "action": "down"
+    },
+    {
+      "date": "2022-03-29",
+      "firm": "Stephens & Co.",
+      "from": null,
+      "to": "Overweight",
+      "action": "init"
+    }
+  ],
+  "holders": [
+    {
+      "name": "Blackrock Inc.",
+      "kind": "institution",
+      "pct": 7.44,
+      "shares": 744487,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Capital Management LLC",
+      "kind": "institution",
+      "pct": 4.03,
+      "shares": 403159,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Dimensional Fund Advisors LP",
+      "kind": "institution",
+      "pct": 3.39,
+      "shares": 339265,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
+      "kind": "fond",
+      "pct": 2.86,
+      "shares": 286536,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "iShares Trust-iShares Russell 2000 ETF",
+      "kind": "fond",
+      "pct": 2.64,
+      "shares": 263928,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Geode Capital Management, LLC",
+      "kind": "institution",
+      "pct": 2.49,
+      "shares": 249636,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "State Street Corporation",
+      "kind": "institution",
+      "pct": 2.12,
+      "shares": 212476,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "American Century Companies Inc",
+      "kind": "institution",
+      "pct": 2.03,
+      "shares": 202754,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "American Century ETF Trust-Avantis U.S. Small Cap Value ETF",
+      "kind": "fond",
+      "pct": 1.58,
+      "shares": 158043,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "VANGUARD INDEX FUNDS-Vanguard Extended Market Index Fund",
+      "kind": "fond",
+      "pct": 1.07,
+      "shares": 107138,
+      "date": "2026-06-30"
+    }
+  ],
+  "insider_net": {
+    "period": "6m",
+    "buys": 0,
+    "sells": 0,
+    "bought": 0,
+    "sold": null,
+    "net_pct": null
+  },
+  "extras": {
+    "beta": 0.722,
+    "enterprise_value": 793924672,
+    "ev_ebitda": null,
+    "ev_revenue": 4.163,
+    "float_shares": 9165792,
+    "short_shares": 221448,
+    "short_pct_float": 2.41,
+    "short_ratio": 3.83,
+    "last_split": "3:2",
+    "last_split_date": "2003-05-16"
+  },
   "ex_dividend": "2026-08-31",
   "dividend_date": null,
   "payout_ratio": 0.4398,
@@ -143,6 +319,175 @@
       "value": null,
       "shares": 323,
       "date": "2026-03-11"
+    }
+  ],
+  "dividends": [
+    {
+      "date": "2016-11-28",
+      "amount": 0.31
+    },
+    {
+      "date": "2017-02-24",
+      "amount": 0.31
+    },
+    {
+      "date": "2017-05-26",
+      "amount": 0.31
+    },
+    {
+      "date": "2017-08-29",
+      "amount": 0.32
+    },
+    {
+      "date": "2017-11-29",
+      "amount": 0.32
+    },
+    {
+      "date": "2018-02-27",
+      "amount": 0.32
+    },
+    {
+      "date": "2018-05-30",
+      "amount": 0.33
+    },
+    {
+      "date": "2018-08-30",
+      "amount": 0.33
+    },
+    {
+      "date": "2018-11-29",
+      "amount": 0.33
+    },
+    {
+      "date": "2019-02-27",
+      "amount": 0.34
+    },
+    {
+      "date": "2019-05-30",
+      "amount": 0.34
+    },
+    {
+      "date": "2019-08-29",
+      "amount": 0.34
+    },
+    {
+      "date": "2019-11-27",
+      "amount": 0.35
+    },
+    {
+      "date": "2020-02-27",
+      "amount": 0.36
+    },
+    {
+      "date": "2020-05-28",
+      "amount": 0.36
+    },
+    {
+      "date": "2020-08-28",
+      "amount": 0.36
+    },
+    {
+      "date": "2020-11-27",
+      "amount": 0.36
+    },
+    {
+      "date": "2021-02-25",
+      "amount": 0.37
+    },
+    {
+      "date": "2021-05-27",
+      "amount": 0.37
+    },
+    {
+      "date": "2021-08-30",
+      "amount": 0.38
+    },
+    {
+      "date": "2021-11-29",
+      "amount": 0.38
+    },
+    {
+      "date": "2022-02-25",
+      "amount": 0.39
+    },
+    {
+      "date": "2022-05-27",
+      "amount": 0.39
+    },
+    {
+      "date": "2022-08-30",
+      "amount": 0.4
+    },
+    {
+      "date": "2022-11-29",
+      "amount": 0.4
+    },
+    {
+      "date": "2023-02-27",
+      "amount": 0.41
+    },
+    {
+      "date": "2023-05-30",
+      "amount": 0.41
+    },
+    {
+      "date": "2023-08-30",
+      "amount": 0.41
+    },
+    {
+      "date": "2023-11-29",
+      "amount": 0.41
+    },
+    {
+      "date": "2024-02-28",
+      "amount": 0.41
+    },
+    {
+      "date": "2024-05-31",
+      "amount": 0.41
+    },
+    {
+      "date": "2024-08-30",
+      "amount": 0.618
+    },
+    {
+      "date": "2024-11-29",
+      "amount": 0.618
+    },
+    {
+      "date": "2025-02-28",
+      "amount": 0.618
+    },
+    {
+      "date": "2025-05-30",
+      "amount": 0.618
+    },
+    {
+      "date": "2025-08-29",
+      "amount": 0.618
+    },
+    {
+      "date": "2025-11-28",
+      "amount": 0.618
+    },
+    {
+      "date": "2026-02-27",
+      "amount": 0.625
+    },
+    {
+      "date": "2026-05-29",
+      "amount": 0.625
+    },
+    {
+      "date": "2026-08-31",
+      "amount": 0.625
+    }
+  ],
+  "splits": [
+    {
+      "date": "2003-05-16",
+      "ratio": "3:2",
+      "factor": 1.5
     }
   ]
 }

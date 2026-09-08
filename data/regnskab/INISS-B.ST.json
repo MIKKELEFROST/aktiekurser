@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:25:24.462Z",
+  "updated_at": "2026-09-08T09:38:26.162Z",
   "source": "Yahoo Finance",
   "symbol": "INISS-B.ST",
   "summary": "Inission AB (publ), together with its subsidiaries, develops, manufactures, and markets power electronics and system solutions under the Endo brand. It operates through Inission EMS and Enedo OEM segments. The company also operates as a manufacturing partner providing services and products across the entire product lifecycle, including development and design, industrialization, volume production, and aftermarket under the Enission brand. It serves medtech, marine technology, communication and IoT, electrification, and defense industries. The company operates in Sweden, Norway, Finland, Denmark, other European Countries, Estonia, Germany, other non-European Countries, the United Kingdom, the United States, Norway, and Italy. Inission AB (publ) was incorporated in 2007 and is headquartered in Karlstad, Sweden.",
@@ -16,6 +16,82 @@
   "target_high": 80,
   "target_low": 80,
   "target_analysts": 2,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 1921173000,
+      "net": 56154000,
+      "margin": 2.9
+    },
+    {
+      "year": "2023",
+      "revenue": 2195216000,
+      "net": 95110000,
+      "margin": 4.3
+    },
+    {
+      "year": "2024",
+      "revenue": 2149700000,
+      "net": 72400000,
+      "margin": 3.4
+    },
+    {
+      "year": "2025",
+      "revenue": 2206200000,
+      "net": 29800000,
+      "margin": 1.4
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 531100000,
+      "earnings": 16900000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 657000000,
+      "earnings": -1600000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 664300000,
+      "earnings": 34800000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 634600000,
+      "earnings": 30000000
+    }
+  ],
+  "growth": {
+    "q0": 0.8571,
+    "q1": 5.1715,
+    "y0": 1.8895,
+    "y1": 0.121400006
+  },
+  "ratings": [],
+  "holders": [],
+  "insider_net": {
+    "period": "6m",
+    "buys": 0,
+    "sells": 0,
+    "bought": 0,
+    "sold": null,
+    "net_pct": null
+  },
+  "extras": {
+    "beta": 0.748,
+    "enterprise_value": 2113826560,
+    "ev_ebitda": 10.332,
+    "ev_revenue": 0.85,
+    "float_shares": 8377046,
+    "short_shares": null,
+    "short_pct_float": null,
+    "short_ratio": null,
+    "last_split": "3:1",
+    "last_split_date": "2021-06-30"
+  },
   "ex_dividend": "2026-05-08",
   "dividend_date": null,
   "payout_ratio": 0.1765,
@@ -46,5 +122,39 @@
       "surprise_pct": 18.18
     }
   ],
-  "insiders": []
+  "insiders": [],
+  "dividends": [
+    {
+      "date": "2016-04-28",
+      "amount": 0.25
+    },
+    {
+      "date": "2019-05-09",
+      "amount": 0.5
+    },
+    {
+      "date": "2022-05-06",
+      "amount": 0.3
+    },
+    {
+      "date": "2024-05-17",
+      "amount": 0.7
+    },
+    {
+      "date": "2026-05-08",
+      "amount": 0.6
+    }
+  ],
+  "splits": [
+    {
+      "date": "2017-05-11",
+      "ratio": "4:1",
+      "factor": 4
+    },
+    {
+      "date": "2021-06-30",
+      "ratio": "3:1",
+      "factor": 3
+    }
+  ]
 }

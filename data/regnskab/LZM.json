@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:50:49.252Z",
+  "updated_at": "2026-09-08T09:38:26.349Z",
   "source": "Yahoo Finance",
   "symbol": "LZM",
   "summary": "Lifezone Metals Limited, together with its subsidiaries, engages in the metals production and recycling business in Australia. It operates through three segments: Metals Extraction Business, Intellectual Property Business, and Corporate. It primarily explores nickel, copper, and cobalt deposits. The company's flagship project is the Kabanga Nickel Project located in north-west Tanzania. It is also involved in the intellectual property licensing business. Lifezone Metals Limited is based in Douglas, Isle of Man.",
@@ -23,10 +23,204 @@
   "target_high": 10.88,
   "target_low": 7,
   "target_analysts": 3,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": null,
+      "net": -23583340,
+      "margin": null
+    },
+    {
+      "year": "2023",
+      "revenue": 1477830,
+      "net": -363874560,
+      "margin": -24622.2
+    },
+    {
+      "year": "2024",
+      "revenue": 140520,
+      "net": -46305240,
+      "margin": -32952.8
+    },
+    {
+      "year": "2025",
+      "revenue": 1057040,
+      "net": -13627880,
+      "margin": -1289.2
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "4Q2023",
+      "revenue": 414807,
+      "earnings": -4721405
+    },
+    {
+      "q": "1Q2024",
+      "revenue": 41389,
+      "earnings": -3844998
+    },
+    {
+      "q": "2Q2024",
+      "revenue": 8261,
+      "earnings": -6750125
+    }
+  ],
+  "growth": {
+    "q0": null,
+    "q1": null,
+    "y0": 0.2681,
+    "y1": -0.56
+  },
+  "ratings": [
+    {
+      "date": "2026-03-20",
+      "firm": "BTIG",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "reit"
+    },
+    {
+      "date": "2025-11-12",
+      "firm": "BTIG",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2024-12-18",
+      "firm": "Roth MKM",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2024-05-15",
+      "firm": "Roth MKM",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2024-04-03",
+      "firm": "BTIG",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2023-11-27",
+      "firm": "Roth MKM",
+      "from": null,
+      "to": "Buy",
+      "action": "init"
+    },
+    {
+      "date": "2023-08-02",
+      "firm": "BTIG",
+      "from": null,
+      "to": "Buy",
+      "action": "init"
+    }
+  ],
+  "holders": [
+    {
+      "name": "Cinctive Capital Management LP",
+      "kind": "institution",
+      "pct": 9.31,
+      "shares": 8375231,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Grantham, Mayo, Van Otterloo & Co. LLC",
+      "kind": "institution",
+      "pct": 2.84,
+      "shares": 2550100,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Blackrock Inc.",
+      "kind": "institution",
+      "pct": 2.74,
+      "shares": 2466205,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Invesco Exchange-Traded Fund Trust-Invesco WilderHill Clean Energy ETF",
+      "kind": "fond",
+      "pct": 1.97,
+      "shares": 1773169,
+      "date": "2026-07-31"
+    },
+    {
+      "name": "Invesco Ltd.",
+      "kind": "institution",
+      "pct": 1.92,
+      "shares": 1724599,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Adage Capital Partners GP L.L.C.",
+      "kind": "institution",
+      "pct": 1.83,
+      "shares": 1642238,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "GMO TRUST-GMO Resources Fund",
+      "kind": "fond",
+      "pct": 1.36,
+      "shares": 1221000,
+      "date": "2026-05-31"
+    },
+    {
+      "name": "iShares Trust-iShares Russell 2000 ETF",
+      "kind": "fond",
+      "pct": 1.11,
+      "shares": 999310,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Marshall Wace LLP",
+      "kind": "institution",
+      "pct": 0.87,
+      "shares": 784870,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "State Street Corporation",
+      "kind": "institution",
+      "pct": 0.63,
+      "shares": 566267,
+      "date": "2026-06-30"
+    }
+  ],
+  "insider_net": {
+    "period": "6m",
+    "buys": 0,
+    "sells": 0,
+    "bought": 0,
+    "sold": null,
+    "net_pct": null
+  },
+  "extras": {
+    "beta": 1.327,
+    "enterprise_value": 414686240,
+    "ev_ebitda": -22.048,
+    "ev_revenue": 172.834,
+    "float_shares": 29138610,
+    "short_shares": 9533,
+    "short_pct_float": 0.06,
+    "short_ratio": 0.02,
+    "last_split": null,
+    "last_split_date": null
+  },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
   "inst_count": 123,
   "eps_history": [],
-  "insiders": []
+  "insiders": [],
+  "dividends": [],
+  "splits": []
 }

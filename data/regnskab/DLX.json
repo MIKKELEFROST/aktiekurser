@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:25:23.921Z",
+  "updated_at": "2026-09-08T09:38:25.725Z",
   "source": "Yahoo Finance",
   "symbol": "DLX",
   "summary": "Deluxe Corporation provides technology-enabled solutions to small and medium-sized businesses, and financial institutions in the United States and Canada. The company operates through four segments: Merchant Services, B2B Payments, Data Solutions, and Print. It offers credit and debit card authorization and payment systems; processing services to small and medium-sized retail and service businesses, as well as nonprofit and government organizations; treasury management solutions, including remittance and lockbox processing, remote deposit capture, cash application, and payment acceptance solutions, as well as integrated accounts payable disbursements, such as eChecks, Medical Payment Exchange, and Deluxe Payment Exchange; and fraud and security services. The company also provides data, analytics, and marketing services for both business-to-business and business-to-consumer marketing; financial institution profitability reporting and business incorporation services; printed personal and business checks, and business essentials comprising printed business forms and business accessories; and branded promotional, print, apparel, and digital storefront solutions. It sells through financial institutions, small and medium-sized enterprises from a variety of industries, large multinational corporations, and scalable partnerships. The company was formerly known as Deluxe Check Printers, Incorporated and changed its name to Deluxe Corporation in 1988. Deluxe Corporation was founded in 1915 and is headquartered in Minneapolis, Minnesota.",
@@ -23,10 +23,228 @@
   "target_high": 35,
   "target_low": 31,
   "target_analysts": 3,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 2238000000,
+      "net": 65400000,
+      "margin": 2.9
+    },
+    {
+      "year": "2023",
+      "revenue": 2192300000,
+      "net": 26100000,
+      "margin": 1.2
+    },
+    {
+      "year": "2024",
+      "revenue": 2121800000,
+      "net": 52800000,
+      "margin": 2.5
+    },
+    {
+      "year": "2025",
+      "revenue": 2133200000,
+      "net": 85200000,
+      "margin": 4
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 540247000,
+      "earnings": 33729000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 535220000,
+      "earnings": 11974000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 538100000,
+      "earnings": 35800000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 499300000,
+      "earnings": 19100000
+    }
+  ],
+  "growth": {
+    "q0": -0.1284,
+    "q1": -0.0556,
+    "y0": 0.03,
+    "y1": 0.0802
+  },
+  "ratings": [
+    {
+      "date": "2025-05-01",
+      "firm": "TD Securities",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2024-05-14",
+      "firm": "TD Cowen",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2024-04-19",
+      "firm": "Northcoast Research",
+      "from": null,
+      "to": "Buy",
+      "action": "init"
+    },
+    {
+      "date": "2023-08-04",
+      "firm": "TD Cowen",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2021-09-01",
+      "firm": "Cowen & Co.",
+      "from": null,
+      "to": "Outperform",
+      "action": "init"
+    },
+    {
+      "date": "2020-02-12",
+      "firm": "Buckingham Research",
+      "from": null,
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2020-02-07",
+      "firm": "Sidoti & Co.",
+      "from": null,
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2018-10-26",
+      "firm": "Buckingham Research",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2018-10-12",
+      "firm": "Buckingham Research",
+      "from": null,
+      "to": "Neutral",
+      "action": "init"
+    },
+    {
+      "date": "2014-02-10",
+      "firm": "Northland Capital Markets",
+      "from": null,
+      "to": "Market Perform",
+      "action": "init"
+    }
+  ],
+  "holders": [
+    {
+      "name": "Blackrock Inc.",
+      "kind": "institution",
+      "pct": 15.2,
+      "shares": 6972211,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "State Street Corporation",
+      "kind": "institution",
+      "pct": 6.24,
+      "shares": 2860360,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Dimensional Fund Advisors LP",
+      "kind": "institution",
+      "pct": 6.21,
+      "shares": 2846940,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "iShares Trust-iShares Core S&P Small-Cap ETF",
+      "kind": "fond",
+      "pct": 6.08,
+      "shares": 2788389,
+      "date": "2026-07-31"
+    },
+    {
+      "name": "Vanguard Portfolio Management LLC",
+      "kind": "institution",
+      "pct": 5.76,
+      "shares": 2641870,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "LSV Asset Management",
+      "kind": "institution",
+      "pct": 4.48,
+      "shares": 2053217,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Capital Management LLC",
+      "kind": "institution",
+      "pct": 4.26,
+      "shares": 1955719,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Deprince, Race & Zollo, Inc.",
+      "kind": "institution",
+      "pct": 3.78,
+      "shares": 1734582,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
+      "kind": "fond",
+      "pct": 3.02,
+      "shares": 1385257,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Geode Capital Management, LLC",
+      "kind": "institution",
+      "pct": 2.98,
+      "shares": 1368783,
+      "date": "2026-06-30"
+    }
+  ],
+  "insider_net": {
+    "period": "6m",
+    "buys": 0,
+    "sells": 0,
+    "bought": 0,
+    "sold": null,
+    "net_pct": null
+  },
+  "extras": {
+    "beta": 1.228,
+    "enterprise_value": 2565549312,
+    "ev_ebitda": 6.12,
+    "ev_revenue": 1.214,
+    "float_shares": 44391640,
+    "short_shares": 3599716,
+    "short_pct_float": 10.9,
+    "short_ratio": 9.2,
+    "last_split": "10000:7995",
+    "last_split_date": "2001-01-02"
+  },
   "ex_dividend": "2026-08-24",
   "dividend_date": null,
   "payout_ratio": 0.5505,
-  "inst_count": 357,
+  "inst_count": 358,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -143,6 +361,190 @@
       "value": null,
       "shares": 10349,
       "date": "2026-04-23"
+    }
+  ],
+  "dividends": [
+    {
+      "date": "2016-11-17",
+      "amount": 0.3
+    },
+    {
+      "date": "2017-02-16",
+      "amount": 0.3
+    },
+    {
+      "date": "2017-05-18",
+      "amount": 0.3
+    },
+    {
+      "date": "2017-08-17",
+      "amount": 0.3
+    },
+    {
+      "date": "2017-11-17",
+      "amount": 0.3
+    },
+    {
+      "date": "2018-02-16",
+      "amount": 0.3
+    },
+    {
+      "date": "2018-05-18",
+      "amount": 0.3
+    },
+    {
+      "date": "2018-08-17",
+      "amount": 0.3
+    },
+    {
+      "date": "2018-11-16",
+      "amount": 0.3
+    },
+    {
+      "date": "2019-02-15",
+      "amount": 0.3
+    },
+    {
+      "date": "2019-05-17",
+      "amount": 0.3
+    },
+    {
+      "date": "2019-08-16",
+      "amount": 0.3
+    },
+    {
+      "date": "2019-11-15",
+      "amount": 0.3
+    },
+    {
+      "date": "2020-02-14",
+      "amount": 0.3
+    },
+    {
+      "date": "2020-05-15",
+      "amount": 0.3
+    },
+    {
+      "date": "2020-08-21",
+      "amount": 0.3
+    },
+    {
+      "date": "2020-11-20",
+      "amount": 0.3
+    },
+    {
+      "date": "2021-02-12",
+      "amount": 0.3
+    },
+    {
+      "date": "2021-05-21",
+      "amount": 0.3
+    },
+    {
+      "date": "2021-08-20",
+      "amount": 0.3
+    },
+    {
+      "date": "2021-11-19",
+      "amount": 0.3
+    },
+    {
+      "date": "2022-02-18",
+      "amount": 0.3
+    },
+    {
+      "date": "2022-05-20",
+      "amount": 0.3
+    },
+    {
+      "date": "2022-08-19",
+      "amount": 0.3
+    },
+    {
+      "date": "2022-11-18",
+      "amount": 0.3
+    },
+    {
+      "date": "2023-02-17",
+      "amount": 0.3
+    },
+    {
+      "date": "2023-05-19",
+      "amount": 0.3
+    },
+    {
+      "date": "2023-08-18",
+      "amount": 0.3
+    },
+    {
+      "date": "2023-11-17",
+      "amount": 0.3
+    },
+    {
+      "date": "2024-02-16",
+      "amount": 0.3
+    },
+    {
+      "date": "2024-05-17",
+      "amount": 0.3
+    },
+    {
+      "date": "2024-08-19",
+      "amount": 0.3
+    },
+    {
+      "date": "2024-11-19",
+      "amount": 0.3
+    },
+    {
+      "date": "2025-02-18",
+      "amount": 0.3
+    },
+    {
+      "date": "2025-05-19",
+      "amount": 0.3
+    },
+    {
+      "date": "2025-08-18",
+      "amount": 0.3
+    },
+    {
+      "date": "2025-11-17",
+      "amount": 0.3
+    },
+    {
+      "date": "2026-02-09",
+      "amount": 0.3
+    },
+    {
+      "date": "2026-05-19",
+      "amount": 0.3
+    },
+    {
+      "date": "2026-08-18",
+      "amount": 0.3
+    }
+  ],
+  "splits": [
+    {
+      "date": "1981-09-21",
+      "ratio": "2:1",
+      "factor": 2
+    },
+    {
+      "date": "1985-03-15",
+      "ratio": "2:1",
+      "factor": 2
+    },
+    {
+      "date": "1986-09-15",
+      "ratio": "2:1",
+      "factor": 2
+    },
+    {
+      "date": "2001-01-02",
+      "ratio": "10000:7995",
+      "factor": 1.2508
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:50:49.377Z",
+  "updated_at": "2026-09-08T09:38:26.638Z",
   "source": "Yahoo Finance",
   "symbol": "PENG",
   "summary": "Penguin Solutions, Inc. designs, builds, deploys and manages enterprise solutions worldwide. The company operates through three segments: Advanced Computing, Integrated Memory, and Optimized LED. It offers hardware, software, and services focusing on technical computing for core and cloud environments through computing and AI solutions. The company also provides Penguin Solutions OriginAI, an AI infrastructure solution for customers deploying GPUs at scale; continuous availability of customers critical data and applications in data centers and edge locations under the Stratus brand products; and dynamic random-access memory, modules, solid-state/flash storage, and integrated memory solutions to networking and telecom, data analytics, AI, and ML under the SMART Modular Technologies brand. In addition, it provides Zefr, a memory module; Altus and AMD EPYC based servers for expansive memory for AI workloads; flash memory products comprising solid-state drives, Serial Advanced Technology Attachment, and PCIe NVMe products in 2.5 enclosures, M.2, EDSFF, and other form factors; and multimediacard and embedded and removable USB products, SD and microSD Card configurations, and firmware development. Further, the company offers procurement, logistics, inventory management, temporary warehousing, programming, kitting, and packaging supply chain services; and LEDs under the Cree LED brand; Cree LED XLamp and J Series packaged LED components. It serves OEMs, enterprises, government, and other customers through direct and third-party channels. The company has a strategic collaboration with Deepgram, Dell Technologies, and ZulaFly to offer healthcare, location-based workflow, and safety solutions. The company was formerly known as SMART Global Holdings, Inc. and changed its name to Penguin Solutions, Inc. in October 2024. Penguin Solutions, Inc. was founded in 1988 and is headquartered in Fremont, California.",
@@ -23,10 +23,228 @@
   "target_high": 85,
   "target_low": 40,
   "target_analysts": 7,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 1819352000,
+      "net": 66557000,
+      "margin": 3.7
+    },
+    {
+      "year": "2023",
+      "revenue": 1441250000,
+      "net": -187526000,
+      "margin": -13
+    },
+    {
+      "year": "2024",
+      "revenue": 1170796000,
+      "net": -52472000,
+      "margin": -4.5
+    },
+    {
+      "year": "2025",
+      "revenue": 1368794000,
+      "net": 15461000,
+      "margin": 1.1
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 337922000,
+      "earnings": 9431000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 343071000,
+      "earnings": 5270000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 342999000,
+      "earnings": 37452000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 478713000,
+      "earnings": 44689000
+    }
+  ],
+  "growth": {
+    "q0": 0.78209996,
+    "q1": 0.4784,
+    "y0": 0.3762,
+    "y1": 0.27899998
+  },
+  "ratings": [
+    {
+      "date": "2026-07-20",
+      "firm": "Barclays",
+      "from": "Equal-Weight",
+      "to": "Underweight",
+      "action": "down"
+    },
+    {
+      "date": "2026-07-09",
+      "firm": "Barclays",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-08",
+      "firm": "Stifel",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-08",
+      "firm": "Rosenblatt",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-08",
+      "firm": "Citizens",
+      "from": "Market Outperform",
+      "to": "Market Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-08",
+      "firm": "Needham",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-06",
+      "firm": "Rosenblatt",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-06-02",
+      "firm": "Rosenblatt",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-06-02",
+      "firm": "Stifel",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-05-12",
+      "firm": "Rosenblatt",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    }
+  ],
+  "holders": [
+    {
+      "name": "Blackrock Inc.",
+      "kind": "institution",
+      "pct": 14.93,
+      "shares": 7652384,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "FMR, LLC",
+      "kind": "institution",
+      "pct": 12.03,
+      "shares": 6166682,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Invesco Ltd.",
+      "kind": "institution",
+      "pct": 8.89,
+      "shares": 4553215,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "AIM Sector Funds (Invesco Sector Funds)-Invesco Small Cap Value Fund",
+      "kind": "fond",
+      "pct": 7.77,
+      "shares": 3983761,
+      "date": "2026-04-30"
+    },
+    {
+      "name": "State Street Corporation",
+      "kind": "institution",
+      "pct": 6.11,
+      "shares": 3128616,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Portfolio Management LLC",
+      "kind": "institution",
+      "pct": 5.83,
+      "shares": 2984926,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "iShares Trust-iShares Core S&P Small-Cap ETF",
+      "kind": "fond",
+      "pct": 5.48,
+      "shares": 2809642,
+      "date": "2026-07-31"
+    },
+    {
+      "name": "Dimensional Fund Advisors LP",
+      "kind": "institution",
+      "pct": 4.67,
+      "shares": 2393508,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Capital Management LLC",
+      "kind": "institution",
+      "pct": 4.12,
+      "shares": 2111433,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Barrow, Hanley Mewhinney & Strauss, LLC",
+      "kind": "institution",
+      "pct": 3.86,
+      "shares": 1975948,
+      "date": "2026-06-30"
+    }
+  ],
+  "insider_net": {
+    "period": "6m",
+    "buys": 1,
+    "sells": 16,
+    "bought": 4485,
+    "sold": 98186,
+    "net_pct": -5.3
+  },
+  "extras": {
+    "beta": 2.854,
+    "enterprise_value": 2938061056,
+    "ev_ebitda": 16.893,
+    "ev_revenue": 1.955,
+    "float_shares": 49573212,
+    "short_shares": 6340818,
+    "short_pct_float": 17.62,
+    "short_ratio": 2.12,
+    "last_split": "2:1",
+    "last_split_date": "2022-02-02"
+  },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 468,
+  "inst_count": 470,
   "eps_history": [
     {
       "quarter": "2025-08-31",
@@ -143,6 +361,14 @@
       "value": 537359,
       "shares": 12000,
       "date": "2026-05-12"
+    }
+  ],
+  "dividends": [],
+  "splits": [
+    {
+      "date": "2022-02-02",
+      "ratio": "2:1",
+      "factor": 2
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:50:48.726Z",
+  "updated_at": "2026-09-08T09:38:25.250Z",
   "source": "Yahoo Finance",
   "symbol": "AQUA.OL",
   "summary": "Aqualis ASA, an investment holding company, provides marine, offshore, and renewables consultancy services to the energy, shipping, and insurance industries worldwide. Its renewable energy consultancy services include research and development, market studies, bid advisory, environmental and electrical engineering, wind and site analysis, metocean advisory, turbine and foundations engineering, geoscience, owner's engineering, cable engineering, transportation and installation, operations and maintenance, marine operations, ports and harbors consulting, surveys, inspections and audits, dynamic positioning (DP) consulting, asset integrity management, and decommissioning services. The company also provides maritime consultancy services, such as technical due diligence, casualty management, salvage and wreck removal, ports and harbors consulting, expert witness services, emissions consulting, electrification, vessel design, marine operations engineering, marine warranty surveys, and asset integrity management, as well as survey, inspection, and audit services. In addition, it offers oil and gas technical and engineering consultancy services comprising rig operations and inspections, well and reservoir engineering, geology, electrification, marine advisory, software solutions, and expert services, as well as marine design, upgrade, and conversion. Further, the company provides Effio, a master data optimization software; emiTr digital emissions tracker; iQx drilling software; hiQbe velocity models; and ePAV and AquaSafe solutions. Additionally, it offers renewables consulting, electrification, hydrogen, emissions reduction, energy storage, carbon capture, utilization and storage, clean shipping, and climate adaptation services. Aqualis ASA was formerly known as ABL Group ASA and changed its name to Aqualis ASA in July 2026. Aqualis ASA was incorporated in 2014 and is headquartered in London, the United Kingdom.",
@@ -19,10 +19,86 @@
     "strong_sell": 0,
     "total": 1
   },
-  "target_mean": 11.590789,
-  "target_high": 11.590789,
-  "target_low": 11.590789,
+  "target_mean": 11.60194,
+  "target_high": 11.60194,
+  "target_low": 11.60194,
   "target_analysts": 1,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 167897000,
+      "net": 6253000,
+      "margin": 3.7
+    },
+    {
+      "year": "2023",
+      "revenue": 251233000,
+      "net": 8677000,
+      "margin": 3.5
+    },
+    {
+      "year": "2024",
+      "revenue": 309624000,
+      "net": 4610000,
+      "margin": 1.5
+    },
+    {
+      "year": "2025",
+      "revenue": 354358000,
+      "net": -5875000,
+      "margin": -1.7
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 87758000,
+      "earnings": 6774000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 88706000,
+      "earnings": -9006000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 82361000,
+      "earnings": 1747000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 90834000,
+      "earnings": 1050000
+    }
+  ],
+  "growth": {
+    "q0": -0.5398,
+    "q1": 3.83,
+    "y0": 1.475,
+    "y1": 0.8225
+  },
+  "ratings": [],
+  "holders": [],
+  "insider_net": {
+    "period": "6m",
+    "buys": 0,
+    "sells": 0,
+    "bought": 0,
+    "sold": null,
+    "net_pct": null
+  },
+  "extras": {
+    "beta": 0.084,
+    "enterprise_value": 1201750656,
+    "ev_ebitda": 92.792,
+    "ev_revenue": 3.437,
+    "float_shares": 57327548,
+    "short_shares": null,
+    "short_pct_float": null,
+    "short_ratio": null,
+    "last_split": null,
+    "last_split_date": null
+  },
   "ex_dividend": "2026-05-28",
   "dividend_date": null,
   "payout_ratio": 9.336599,
@@ -47,5 +123,64 @@
       "surprise_pct": -44.23
     }
   ],
-  "insiders": []
+  "insiders": [],
+  "dividends": [
+    {
+      "date": "2018-06-28",
+      "amount": 0.9
+    },
+    {
+      "date": "2020-06-11",
+      "amount": 0.2
+    },
+    {
+      "date": "2020-11-02",
+      "amount": 0.2
+    },
+    {
+      "date": "2021-06-03",
+      "amount": 0.25
+    },
+    {
+      "date": "2021-11-01",
+      "amount": 0.25
+    },
+    {
+      "date": "2022-06-02",
+      "amount": 0.3
+    },
+    {
+      "date": "2022-11-07",
+      "amount": 0.3
+    },
+    {
+      "date": "2023-06-01",
+      "amount": 0.35
+    },
+    {
+      "date": "2023-10-30",
+      "amount": 0.35
+    },
+    {
+      "date": "2024-05-30",
+      "amount": 0.4
+    },
+    {
+      "date": "2024-11-04",
+      "amount": 0.4
+    },
+    {
+      "date": "2025-05-30",
+      "amount": 0.45
+    },
+    {
+      "date": "2025-11-03",
+      "amount": 0.45
+    },
+    {
+      "date": "2026-05-28",
+      "amount": 0.45
+    }
+  ],
+  "splits": []
 }

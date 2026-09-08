@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:25:23.995Z",
+  "updated_at": "2026-09-08T09:38:25.781Z",
   "source": "Yahoo Finance",
   "symbol": "EIX",
   "summary": "Edison International, through its subsidiaries, engages in the generation and distribution of electric power. The company supplies and delivers through its electrical infrastructure to an approximately 50,000 square-mile area of southern, central, and coastal California. It serves residential, commercial, industrial, public authorities, agricultural, street lighting, and other sectors. The company's distribution network consists of approximately 13,000 circuit-miles of lines ranging from 55 kV to 500 kV and approximately 80 transmission substations; and approximately 38,000 circuit-miles of overhead lines, approximately 32,000 circuit-miles of underground lines, and approximately 730 distribution substations. Edison International was founded in 1886 and is based in Rosemead, California.",
@@ -23,10 +23,228 @@
   "target_high": 86,
   "target_low": 50,
   "target_analysts": 14,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 17220000000,
+      "net": 612000000,
+      "margin": 3.6
+    },
+    {
+      "year": "2023",
+      "revenue": 16338000000,
+      "net": 1197000000,
+      "margin": 7.3
+    },
+    {
+      "year": "2024",
+      "revenue": 17599000000,
+      "net": 1284000000,
+      "margin": 7.3
+    },
+    {
+      "year": "2025",
+      "revenue": 19317000000,
+      "net": 4459000000,
+      "margin": 23.1
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 5750000000,
+      "earnings": 888000000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 5213000000,
+      "earnings": 1923000000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 4103000000,
+      "earnings": 570000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 4357000000,
+      "earnings": 561000000
+    }
+  ],
+  "growth": {
+    "q0": -0.2199,
+    "q1": -0.4774,
+    "y0": -0.065,
+    "y1": 0.0623
+  },
+  "ratings": [
+    {
+      "date": "2026-09-03",
+      "firm": "Truist Securities",
+      "from": "Hold",
+      "to": "Hold",
+      "action": "main"
+    },
+    {
+      "date": "2026-09-02",
+      "firm": "JP Morgan",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-09-01",
+      "firm": "B of A Securities",
+      "from": "Buy",
+      "to": "Neutral",
+      "action": "down"
+    },
+    {
+      "date": "2026-09-01",
+      "firm": "UBS",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-08-31",
+      "firm": "Mizuho",
+      "from": "Outperform",
+      "to": "Neutral",
+      "action": "down"
+    },
+    {
+      "date": "2026-08-26",
+      "firm": "Argus Research",
+      "from": "Buy",
+      "to": "Hold",
+      "action": "down"
+    },
+    {
+      "date": "2026-08-21",
+      "firm": "Morgan Stanley",
+      "from": "Underweight",
+      "to": "Underweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-08-04",
+      "firm": "Truist Securities",
+      "from": "Hold",
+      "to": "Hold",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-31",
+      "firm": "Mizuho",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-31",
+      "firm": "Barclays",
+      "from": "Overweight",
+      "to": "Equal-Weight",
+      "action": "down"
+    }
+  ],
+  "holders": [
+    {
+      "name": "Blackrock Inc.",
+      "kind": "institution",
+      "pct": 11.66,
+      "shares": 44867854,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "State Street Corporation",
+      "kind": "institution",
+      "pct": 9.39,
+      "shares": 36146533,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Capital Management LLC",
+      "kind": "institution",
+      "pct": 6.53,
+      "shares": 25114526,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Portfolio Management LLC",
+      "kind": "institution",
+      "pct": 6.03,
+      "shares": 23216874,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "AQR Capital Management, LLC",
+      "kind": "institution",
+      "pct": 4.86,
+      "shares": 18694105,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Geode Capital Management, LLC",
+      "kind": "institution",
+      "pct": 3.64,
+      "shares": 14002409,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
+      "kind": "fond",
+      "pct": 3.17,
+      "shares": 12213453,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "VANGUARD INDEX FUNDS-Vanguard 500 Index Fund",
+      "kind": "fond",
+      "pct": 2.59,
+      "shares": 9971126,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "VANGUARD INDEX FUNDS-Vanguard Mid-Cap Index Fund",
+      "kind": "fond",
+      "pct": 2.17,
+      "shares": 8337470,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Goldman Sachs Group Inc",
+      "kind": "institution",
+      "pct": 1.76,
+      "shares": 6762077,
+      "date": "2026-06-30"
+    }
+  ],
+  "insider_net": {
+    "period": "6m",
+    "buys": 2,
+    "sells": 2,
+    "bought": 5474,
+    "sold": 1000,
+    "net_pct": 0.4
+  },
+  "extras": {
+    "beta": 0.614,
+    "enterprise_value": 66790891520,
+    "ev_ebitda": 7.479,
+    "ev_revenue": 3.439,
+    "float_shares": 383686474,
+    "short_shares": 13229412,
+    "short_pct_float": 4.5,
+    "short_ratio": 4.33,
+    "last_split": "2:1",
+    "last_split_date": "1993-06-22"
+  },
   "ex_dividend": "2026-07-07",
   "dividend_date": null,
   "payout_ratio": 0.35709998,
-  "inst_count": 1502,
+  "inst_count": 1501,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -143,6 +361,180 @@
       "value": 0,
       "shares": 908,
       "date": "2026-02-25"
+    }
+  ],
+  "dividends": [
+    {
+      "date": "2009-09-28",
+      "amount": 0.31
+    },
+    {
+      "date": "2009-12-29",
+      "amount": 0.315
+    },
+    {
+      "date": "2010-03-29",
+      "amount": 0.315
+    },
+    {
+      "date": "2010-06-28",
+      "amount": 0.315
+    },
+    {
+      "date": "2010-09-28",
+      "amount": 0.315
+    },
+    {
+      "date": "2010-12-29",
+      "amount": 0.32
+    },
+    {
+      "date": "2011-03-29",
+      "amount": 0.32
+    },
+    {
+      "date": "2011-06-28",
+      "amount": 0.32
+    },
+    {
+      "date": "2011-09-28",
+      "amount": 0.32
+    },
+    {
+      "date": "2011-12-28",
+      "amount": 0.325
+    },
+    {
+      "date": "2012-03-28",
+      "amount": 0.325
+    },
+    {
+      "date": "2012-06-27",
+      "amount": 0.325
+    },
+    {
+      "date": "2012-09-26",
+      "amount": 0.325
+    },
+    {
+      "date": "2012-12-27",
+      "amount": 0.338
+    },
+    {
+      "date": "2013-03-26",
+      "amount": 0.338
+    },
+    {
+      "date": "2013-06-26",
+      "amount": 0.338
+    },
+    {
+      "date": "2013-09-26",
+      "amount": 0.338
+    },
+    {
+      "date": "2013-12-27",
+      "amount": 0.355
+    },
+    {
+      "date": "2014-03-27",
+      "amount": 0.355
+    },
+    {
+      "date": "2014-06-26",
+      "amount": 0.355
+    },
+    {
+      "date": "2014-09-26",
+      "amount": 0.355
+    },
+    {
+      "date": "2014-12-29",
+      "amount": 0.417
+    },
+    {
+      "date": "2015-03-27",
+      "amount": 0.417
+    },
+    {
+      "date": "2015-06-26",
+      "amount": 0.418
+    },
+    {
+      "date": "2015-09-28",
+      "amount": 0.418
+    },
+    {
+      "date": "2015-12-29",
+      "amount": 0.48
+    },
+    {
+      "date": "2016-03-29",
+      "amount": 0.48
+    },
+    {
+      "date": "2016-06-28",
+      "amount": 0.48
+    },
+    {
+      "date": "2016-09-28",
+      "amount": 0.48
+    },
+    {
+      "date": "2016-12-28",
+      "amount": 0.543
+    },
+    {
+      "date": "2017-03-29",
+      "amount": 0.543
+    },
+    {
+      "date": "2017-06-28",
+      "amount": 0.543
+    },
+    {
+      "date": "2017-09-28",
+      "amount": 0.543
+    },
+    {
+      "date": "2017-12-28",
+      "amount": 0.605
+    },
+    {
+      "date": "2018-03-28",
+      "amount": 0.605
+    },
+    {
+      "date": "2018-06-29",
+      "amount": 0.605
+    },
+    {
+      "date": "2018-09-27",
+      "amount": 0.605
+    },
+    {
+      "date": "2018-12-28",
+      "amount": 0.613
+    },
+    {
+      "date": "2019-03-28",
+      "amount": 0.613
+    },
+    {
+      "date": "2026-07-07",
+      "amount": 0.878
+    }
+  ],
+  "splits": [
+    {
+      "date": "1984-08-13",
+      "ratio": "2:1",
+      "factor": 2
+    },
+    {
+      "date": "1993-06-22",
+      "ratio": "2:1",
+      "factor": 2
     }
   ]
 }

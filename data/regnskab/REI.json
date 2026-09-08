@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:25:25.089Z",
+  "updated_at": "2026-09-08T09:38:26.701Z",
   "source": "Yahoo Finance",
   "symbol": "REI",
   "summary": "Ring Energy, Inc., an independent oil and natural gas company, engages in the acquisition, exploration, development, and production of oil and natural gas properties. The company has interests in 74,717 net developed acres and 4,366 net undeveloped acres in Andrews, Gaines, Crane, Ector, Winkler, and Ward counties, Texas; and 8,833 net developed acres and 8,318 net undeveloped acres in Yoakum County, Texas and Lea County, New Mexico. It primarily sells its oil and natural gas production to end users, marketers, and other purchasers. The company was formerly known as Transglobal Mining Corp. and changed its name to Ring Energy, Inc. in March 2008. Ring Energy, Inc. was founded in 2004 and is headquartered in The Woodlands, Texas.",
@@ -23,10 +23,228 @@
   "target_high": 2.25,
   "target_low": 2,
   "target_analysts": 3,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 347249540,
+      "net": 138635030,
+      "margin": 39.9
+    },
+    {
+      "year": "2023",
+      "revenue": 361056000,
+      "net": 104864640,
+      "margin": 29
+    },
+    {
+      "year": "2024",
+      "revenue": 366327410,
+      "net": 67470310,
+      "margin": 18.4
+    },
+    {
+      "year": "2025",
+      "revenue": 307178070,
+      "net": -34731200,
+      "margin": -11.3
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 78601336,
+      "earnings": -51631530
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 66882770,
+      "earnings": -12845294
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 73671664,
+      "earnings": -220591482
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 104681489,
+      "earnings": 64793310
+    }
+  ],
+  "growth": {
+    "q0": 0.41669998,
+    "q1": 2.5,
+    "y0": 0.5263,
+    "y1": -0.1839
+  },
+  "ratings": [
+    {
+      "date": "2026-09-02",
+      "firm": "Mizuho",
+      "from": null,
+      "to": "Neutral",
+      "action": "init"
+    },
+    {
+      "date": "2026-07-15",
+      "firm": "B of A Securities",
+      "from": null,
+      "to": "Buy",
+      "action": "init"
+    },
+    {
+      "date": "2022-08-01",
+      "firm": "Roth Capital",
+      "from": "Buy",
+      "to": "Neutral",
+      "action": "down"
+    },
+    {
+      "date": "2021-10-14",
+      "firm": "Roth Capital",
+      "from": "Neutral",
+      "to": "Buy",
+      "action": "up"
+    },
+    {
+      "date": "2020-03-09",
+      "firm": "SunTrust Robinson Humphrey",
+      "from": "Buy",
+      "to": "Hold",
+      "action": "down"
+    },
+    {
+      "date": "2018-10-02",
+      "firm": "Seaport Global",
+      "from": "Buy",
+      "to": "Neutral",
+      "action": "down"
+    },
+    {
+      "date": "2018-02-06",
+      "firm": "B. Riley Securities",
+      "from": null,
+      "to": "Buy",
+      "action": "init"
+    },
+    {
+      "date": "2017-12-21",
+      "firm": "KLR Group",
+      "from": null,
+      "to": "Buy",
+      "action": "init"
+    },
+    {
+      "date": "2017-08-15",
+      "firm": "Imperial Capital",
+      "from": null,
+      "to": "Outperform",
+      "action": "init"
+    },
+    {
+      "date": "2016-09-27",
+      "firm": "Imperial Capital",
+      "from": null,
+      "to": "Outperform",
+      "action": "init"
+    }
+  ],
+  "holders": [
+    {
+      "name": "Peak6 LLC",
+      "kind": "institution",
+      "pct": 6.56,
+      "shares": 17079382,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Blackrock Inc.",
+      "kind": "institution",
+      "pct": 4.64,
+      "shares": 12086312,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Adage Capital Partners GP L.L.C.",
+      "kind": "institution",
+      "pct": 4.09,
+      "shares": 10650000,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Capital Management LLC",
+      "kind": "institution",
+      "pct": 3.41,
+      "shares": 8884550,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Two Sigma Investments, LP",
+      "kind": "institution",
+      "pct": 3.09,
+      "shares": 8047045,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Barclays Plc",
+      "kind": "institution",
+      "pct": 2.84,
+      "shares": 7399092,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
+      "kind": "fond",
+      "pct": 2.64,
+      "shares": 6872171,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Columbia Funds Series Trust I-Columbia Small Cap Value Discovery Fund",
+      "kind": "fond",
+      "pct": 2.02,
+      "shares": 5265636,
+      "date": "2026-04-30"
+    },
+    {
+      "name": "iShares Trust-iShares Russell 2000 ETF",
+      "kind": "fond",
+      "pct": 1.79,
+      "shares": 4668204,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Portfolio Management LLC",
+      "kind": "institution",
+      "pct": 1.77,
+      "shares": 4616412,
+      "date": "2026-06-30"
+    }
+  ],
+  "insider_net": {
+    "period": "6m",
+    "buys": 0,
+    "sells": 0,
+    "bought": 0,
+    "sold": null,
+    "net_pct": null
+  },
+  "extras": {
+    "beta": 0.843,
+    "enterprise_value": 753456064,
+    "ev_ebitda": 5.025,
+    "ev_revenue": 2.444,
+    "float_shares": 220270605,
+    "short_shares": 10152475,
+    "short_pct_float": 4.01,
+    "short_ratio": 2.8,
+    "last_split": "1:18",
+    "last_split_date": "2008-06-02"
+  },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 183,
+  "inst_count": 184,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -143,6 +361,14 @@
       "value": 0,
       "shares": 132063,
       "date": "2026-02-17"
+    }
+  ],
+  "dividends": [],
+  "splits": [
+    {
+      "date": "2008-06-02",
+      "ratio": "1:18",
+      "factor": 0.0556
     }
   ]
 }

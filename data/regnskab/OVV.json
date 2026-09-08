@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:25:24.969Z",
+  "updated_at": "2026-09-08T09:38:26.595Z",
   "source": "Yahoo Finance",
   "symbol": "OVV",
   "summary": "Ovintiv Inc., together with its subsidiaries, operates as an oil and natural gas exploration and production company in North America. The company operates through USA Operations and Canadian Operations segments. It is involved in the exploration, development, production, and marketing of oil, NGLs, natural gas and other related activities in the Permian in West Texas and Anadarko in West-central Oklahoma in the United States, as well as in the Montney in northwest Alberta and northeast British Columbia. The company was formerly known as Encana Corporation and changed its name to Ovintiv Inc. in January 2020. Ovintiv Inc. was incorporated in 2020 and is based in Denver, Colorado.",
@@ -23,10 +23,228 @@
   "target_high": 85,
   "target_low": 55,
   "target_analysts": 23,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 12464000000,
+      "net": 3637000000,
+      "margin": 29.2
+    },
+    {
+      "year": "2023",
+      "revenue": 10883000000,
+      "net": 2085000000,
+      "margin": 19.2
+    },
+    {
+      "year": "2024",
+      "revenue": 9152000000,
+      "net": 1125000000,
+      "margin": 12.3
+    },
+    {
+      "year": "2025",
+      "revenue": 8908000000,
+      "net": 1242000000,
+      "margin": 13.9
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 2066000000,
+      "earnings": 148000000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 2147000000,
+      "earnings": 946000000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 2532000000,
+      "earnings": -630000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 3013000000,
+      "earnings": 456000000
+    }
+  ],
+  "growth": {
+    "q0": 0.71830004,
+    "q1": 0.39990002,
+    "y0": 0.5146,
+    "y1": -0.0038
+  },
+  "ratings": [
+    {
+      "date": "2026-09-03",
+      "firm": "Seaport Global",
+      "from": null,
+      "to": "Neutral",
+      "action": "init"
+    },
+    {
+      "date": "2026-09-02",
+      "firm": "Wells Fargo",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-08-13",
+      "firm": "Wells Fargo",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-28",
+      "firm": "UBS",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-27",
+      "firm": "RBC Capital",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-27",
+      "firm": "Truist Securities",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "reit"
+    },
+    {
+      "date": "2026-07-17",
+      "firm": "Citigroup",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-17",
+      "firm": "Stephens & Co.",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-13",
+      "firm": "Truist Securities",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-06-29",
+      "firm": "Morgan Stanley",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    }
+  ],
+  "holders": [
+    {
+      "name": "Blackrock Inc.",
+      "kind": "institution",
+      "pct": 9.81,
+      "shares": 27026767,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "FMR, LLC",
+      "kind": "institution",
+      "pct": 9.35,
+      "shares": 25750709,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Capital Research Global Investors",
+      "kind": "institution",
+      "pct": 7.06,
+      "shares": 19445689,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Portfolio Management LLC",
+      "kind": "institution",
+      "pct": 5.25,
+      "shares": 14459194,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Capital Management LLC",
+      "kind": "institution",
+      "pct": 4.58,
+      "shares": 12630606,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Investment Co of America",
+      "kind": "fond",
+      "pct": 3.88,
+      "shares": 10697326,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Dimensional Fund Advisors LP",
+      "kind": "institution",
+      "pct": 3.78,
+      "shares": 10406046,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "State Street Corporation",
+      "kind": "institution",
+      "pct": 3.64,
+      "shares": 10034609,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "iShares Trust-iShares Core S&P Mid-Cap ETF",
+      "kind": "fond",
+      "pct": 3.43,
+      "shares": 9459243,
+      "date": "2026-07-31"
+    },
+    {
+      "name": "Price (T.Rowe) Associates Inc",
+      "kind": "institution",
+      "pct": 3.3,
+      "shares": 9104690,
+      "date": "2026-06-30"
+    }
+  ],
+  "insider_net": {
+    "period": "6m",
+    "buys": 19,
+    "sells": 2,
+    "bought": 440312,
+    "sold": 19335,
+    "net_pct": 48.6
+  },
+  "extras": {
+    "beta": 0.541,
+    "enterprise_value": 22170611712,
+    "ev_ebitda": 4.541,
+    "ev_revenue": 2.328,
+    "float_shares": 274068206,
+    "short_shares": 11971837,
+    "short_pct_float": 4.84,
+    "short_ratio": 3.42,
+    "last_split": "1:5",
+    "last_split_date": "2020-01-27"
+  },
   "ex_dividend": "2026-09-15",
   "dividend_date": null,
   "payout_ratio": 0.3352,
-  "inst_count": 800,
+  "inst_count": 801,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -143,6 +361,180 @@
       "value": null,
       "shares": 3218,
       "date": "2026-05-21"
+    }
+  ],
+  "dividends": [
+    {
+      "date": "2016-09-13",
+      "amount": 0.075
+    },
+    {
+      "date": "2016-12-13",
+      "amount": 0.075
+    },
+    {
+      "date": "2017-03-13",
+      "amount": 0.075
+    },
+    {
+      "date": "2017-06-13",
+      "amount": 0.075
+    },
+    {
+      "date": "2017-09-14",
+      "amount": 0.075
+    },
+    {
+      "date": "2017-12-14",
+      "amount": 0.075
+    },
+    {
+      "date": "2018-03-14",
+      "amount": 0.075
+    },
+    {
+      "date": "2018-06-14",
+      "amount": 0.075
+    },
+    {
+      "date": "2018-09-13",
+      "amount": 0.075
+    },
+    {
+      "date": "2018-12-13",
+      "amount": 0.075
+    },
+    {
+      "date": "2019-03-14",
+      "amount": 0.095
+    },
+    {
+      "date": "2019-06-13",
+      "amount": 0.095
+    },
+    {
+      "date": "2019-09-12",
+      "amount": 0.095
+    },
+    {
+      "date": "2019-12-12",
+      "amount": 0.095
+    },
+    {
+      "date": "2020-03-12",
+      "amount": 0.094
+    },
+    {
+      "date": "2020-06-12",
+      "amount": 0.094
+    },
+    {
+      "date": "2020-09-14",
+      "amount": 0.094
+    },
+    {
+      "date": "2020-12-14",
+      "amount": 0.094
+    },
+    {
+      "date": "2021-03-12",
+      "amount": 0.094
+    },
+    {
+      "date": "2021-06-14",
+      "amount": 0.094
+    },
+    {
+      "date": "2021-09-14",
+      "amount": 0.14
+    },
+    {
+      "date": "2021-12-14",
+      "amount": 0.14
+    },
+    {
+      "date": "2022-03-14",
+      "amount": 0.2
+    },
+    {
+      "date": "2022-06-14",
+      "amount": 0.25
+    },
+    {
+      "date": "2022-09-14",
+      "amount": 0.25
+    },
+    {
+      "date": "2022-12-14",
+      "amount": 0.25
+    },
+    {
+      "date": "2023-03-14",
+      "amount": 0.25
+    },
+    {
+      "date": "2023-06-14",
+      "amount": 0.3
+    },
+    {
+      "date": "2023-09-14",
+      "amount": 0.3
+    },
+    {
+      "date": "2023-12-14",
+      "amount": 0.3
+    },
+    {
+      "date": "2024-03-14",
+      "amount": 0.3
+    },
+    {
+      "date": "2024-06-14",
+      "amount": 0.3
+    },
+    {
+      "date": "2024-09-13",
+      "amount": 0.3
+    },
+    {
+      "date": "2024-12-13",
+      "amount": 0.3
+    },
+    {
+      "date": "2025-03-14",
+      "amount": 0.3
+    },
+    {
+      "date": "2025-06-13",
+      "amount": 0.3
+    },
+    {
+      "date": "2025-09-15",
+      "amount": 0.3
+    },
+    {
+      "date": "2025-12-15",
+      "amount": 0.3
+    },
+    {
+      "date": "2026-03-13",
+      "amount": 0.3
+    },
+    {
+      "date": "2026-06-15",
+      "amount": 0.3
+    }
+  ],
+  "splits": [
+    {
+      "date": "2005-05-23",
+      "ratio": "2:1",
+      "factor": 2
+    },
+    {
+      "date": "2020-01-27",
+      "ratio": "1:5",
+      "factor": 0.2
     }
   ]
 }

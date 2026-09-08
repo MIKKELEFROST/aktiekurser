@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:25:24.345Z",
+  "updated_at": "2026-09-08T09:38:26.061Z",
   "source": "Yahoo Finance",
   "symbol": "HESM",
   "summary": "Hess Midstream LP acquires, owns, operates, and develops midstream assets and provide fee-based services to sponsor, its subsidiaries, and third-party customers in the United States. It operates through three segments: Gathering; Processing and Storage; and Terminaling and Export. The Gathering segment owns natural gas gathering and compression systems; crude oil gathering systems; and produced water gathering and disposal facilities. Its gathering system consists of approximately 1,430 miles of high- and low-pressure natural gas and natural gas liquids gathering pipelines with capacity of approximately 685 million cubic feet per day; crude oil gathering system comprises approximately 615 miles of crude oil gathering pipelines; and produces water gathering system that includes approximately 360 miles of pipelines in gathering systems. The Processing and Storage segment comprises Tioga Gas Plant, a natural gas processing and fractionation plant located in Tioga, North Dakota; Mentor Storage Terminal, a propane storage cavern and rail, and truck loading and unloading facility located in Mentor, Minnesota; and Terminaling and Export segment that owns Ramberg terminal facility, the Tioga rail terminal, crude oil rail cars, and other Dakota access pipeline connections, as well as Johnson's Corner Header System, a crude oil pipeline header system; and other DAPL connections. Hess Midstream LP was formerly known as Hess Midstream Partners LP and changed its name to Hess Midstream LP in December 2019. Hess Midstream LP was founded in 2014 and is based in Houston, Texas.",
@@ -23,10 +23,228 @@
   "target_high": 40,
   "target_low": 33,
   "target_analysts": 6,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 1275200000,
+      "net": 83900000,
+      "margin": 6.6
+    },
+    {
+      "year": "2023",
+      "revenue": 1348600000,
+      "net": 118600000,
+      "margin": 8.8
+    },
+    {
+      "year": "2024",
+      "revenue": 1495500000,
+      "net": 223100000,
+      "margin": 14.9
+    },
+    {
+      "year": "2025",
+      "revenue": 1621300000,
+      "net": 352900000,
+      "margin": 21.8
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 419600000,
+      "earnings": 97700000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 403100000,
+      "earnings": 93300000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 388700000,
+      "earnings": 87600000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 397700000,
+      "earnings": 96400000
+    }
+  ],
+  "growth": {
+    "q0": -0.0047,
+    "q1": 0.0714,
+    "y0": 0.0307,
+    "y1": 0.049200002
+  },
+  "ratings": [
+    {
+      "date": "2026-06-10",
+      "firm": "Morgan Stanley",
+      "from": "Equal-Weight",
+      "to": "Underweight",
+      "action": "down"
+    },
+    {
+      "date": "2026-05-12",
+      "firm": "Morgan Stanley",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
+    {
+      "date": "2026-04-20",
+      "firm": "Goldman Sachs",
+      "from": "Neutral",
+      "to": "Sell",
+      "action": "down"
+    },
+    {
+      "date": "2026-03-13",
+      "firm": "Wells Fargo",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
+    {
+      "date": "2026-01-05",
+      "firm": "Raymond James",
+      "from": "Outperform",
+      "to": "Market Perform",
+      "action": "down"
+    },
+    {
+      "date": "2025-10-24",
+      "firm": "Raymond James",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "reit"
+    },
+    {
+      "date": "2025-09-23",
+      "firm": "Citigroup",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2025-09-19",
+      "firm": "Wells Fargo",
+      "from": "Overweight",
+      "to": "Equal-Weight",
+      "action": "down"
+    },
+    {
+      "date": "2025-09-11",
+      "firm": "Citigroup",
+      "from": "Buy",
+      "to": "Neutral",
+      "action": "down"
+    },
+    {
+      "date": "2025-09-10",
+      "firm": "UBS",
+      "from": "Buy",
+      "to": "Neutral",
+      "action": "down"
+    }
+  ],
+  "holders": [
+    {
+      "name": "ALPS ETF TRUST-ALERIAN MLP ETF",
+      "kind": "fond",
+      "pct": 24.05,
+      "shares": 30864175,
+      "date": "2026-05-31"
+    },
+    {
+      "name": "Alps Advisors Inc.",
+      "kind": "institution",
+      "pct": 22.79,
+      "shares": 29254074,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Goldman Sachs Group Inc",
+      "kind": "institution",
+      "pct": 6.54,
+      "shares": 8389537,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Invesco Ltd.",
+      "kind": "institution",
+      "pct": 5.87,
+      "shares": 7535978,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Mirae Asset Global ETFs Holdings Ltd.",
+      "kind": "institution",
+      "pct": 5.5,
+      "shares": 7055800,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Blackstone Inc",
+      "kind": "institution",
+      "pct": 4.51,
+      "shares": 5786130,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "GLOBAL X FUNDS-Global X MLP ETF",
+      "kind": "fond",
+      "pct": 4.16,
+      "shares": 5344799,
+      "date": "2026-07-31"
+    },
+    {
+      "name": "Bank Of New York Mellon Corporation",
+      "kind": "institution",
+      "pct": 3.68,
+      "shares": 4720992,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Tortoise Capital Advisors, LLC",
+      "kind": "institution",
+      "pct": 3.3,
+      "shares": 4236214,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "GOLDMAN SACHS TRUST-Goldman Sachs MLP Energy Infrastructure Fund",
+      "kind": "fond",
+      "pct": 2.67,
+      "shares": 3427640,
+      "date": "2026-05-31"
+    }
+  ],
+  "insider_net": {
+    "period": "6m",
+    "buys": 0,
+    "sells": 0,
+    "bought": 0,
+    "sold": null,
+    "net_pct": null
+  },
+  "extras": {
+    "beta": 0.496,
+    "enterprise_value": 8670883840,
+    "ev_ebitda": 7.075,
+    "ev_revenue": 5.372,
+    "float_shares": 127587193,
+    "short_shares": 6635867,
+    "short_pct_float": 6.81,
+    "short_ratio": 6.25,
+    "last_split": null,
+    "last_split_date": null
+  },
   "ex_dividend": "2026-08-06",
   "dividend_date": null,
   "payout_ratio": 1.0466,
-  "inst_count": 372,
+  "inst_count": 373,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -144,5 +362,156 @@
       "shares": 14573517,
       "date": "2025-05-30"
     }
-  ]
+  ],
+  "dividends": [
+    {
+      "date": "2017-08-02",
+      "amount": 0.27
+    },
+    {
+      "date": "2017-11-02",
+      "amount": 0.311
+    },
+    {
+      "date": "2018-02-01",
+      "amount": 0.322
+    },
+    {
+      "date": "2018-05-03",
+      "amount": 0.333
+    },
+    {
+      "date": "2018-08-01",
+      "amount": 0.345
+    },
+    {
+      "date": "2018-11-02",
+      "amount": 0.358
+    },
+    {
+      "date": "2019-02-01",
+      "amount": 0.37
+    },
+    {
+      "date": "2019-05-02",
+      "amount": 0.383
+    },
+    {
+      "date": "2019-08-02",
+      "amount": 0.397
+    },
+    {
+      "date": "2019-11-01",
+      "amount": 0.411
+    },
+    {
+      "date": "2020-02-05",
+      "amount": 0.426
+    },
+    {
+      "date": "2020-05-01",
+      "amount": 0.431
+    },
+    {
+      "date": "2020-08-05",
+      "amount": 0.436
+    },
+    {
+      "date": "2020-11-04",
+      "amount": 0.442
+    },
+    {
+      "date": "2021-02-03",
+      "amount": 0.447
+    },
+    {
+      "date": "2021-04-30",
+      "amount": 0.453
+    },
+    {
+      "date": "2021-08-06",
+      "amount": 0.504
+    },
+    {
+      "date": "2021-11-03",
+      "amount": 0.51
+    },
+    {
+      "date": "2022-02-02",
+      "amount": 0.517
+    },
+    {
+      "date": "2022-05-04",
+      "amount": 0.549
+    },
+    {
+      "date": "2022-08-03",
+      "amount": 0.556
+    },
+    {
+      "date": "2022-11-02",
+      "amount": 0.563
+    },
+    {
+      "date": "2023-02-01",
+      "amount": 0.57
+    },
+    {
+      "date": "2023-05-03",
+      "amount": 0.585
+    },
+    {
+      "date": "2023-08-02",
+      "amount": 0.601
+    },
+    {
+      "date": "2023-11-01",
+      "amount": 0.618
+    },
+    {
+      "date": "2024-02-07",
+      "amount": 0.634
+    },
+    {
+      "date": "2024-05-01",
+      "amount": 0.652
+    },
+    {
+      "date": "2024-08-08",
+      "amount": 0.668
+    },
+    {
+      "date": "2024-11-07",
+      "amount": 0.685
+    },
+    {
+      "date": "2025-02-06",
+      "amount": 0.701
+    },
+    {
+      "date": "2025-05-08",
+      "amount": 0.71
+    },
+    {
+      "date": "2025-08-07",
+      "amount": 0.737
+    },
+    {
+      "date": "2025-11-06",
+      "amount": 0.755
+    },
+    {
+      "date": "2026-02-05",
+      "amount": 0.764
+    },
+    {
+      "date": "2026-05-07",
+      "amount": 0.779
+    },
+    {
+      "date": "2026-08-06",
+      "amount": 0.789
+    }
+  ],
+  "splits": []
 }

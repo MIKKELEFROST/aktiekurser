@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:50:48.806Z",
+  "updated_at": "2026-09-08T09:38:25.425Z",
   "source": "Yahoo Finance",
   "symbol": "BMO",
   "summary": "Bank of Montreal provides diversified financial services primarily in North America. It operates through Canadian Personal and Commercial Banking; U.S. Banking; Wealth Management; and Capital Markets segments. The company offers checking accounts, savings, money markets and certificates of deposits, debit cards, overdrafts, digital banking, credit cards, loans, mortgages, investment and retirement options, and other banking services; and commercial banking products and services comprise various of financing options and treasury and payment solutions, as well as risk management products. It also offers investing, banking, and wealth management advisory; digital investing services; financial solutions for individuals, families, and businesses; offers investment management services to institutional, retail, and high net worth investors; and diversified insurance, and wealth and pension de-risking solutions. In addition, the company provides individual life, critical illness and annuity products, as well as segregated funds, and group creditor and travel insurance to customers; debt and equity capital-raising, loan origination and syndication, balance sheet management, treasury management, mergers and acquisitions advice, restructurings and recapitalizations, trade finance, and risk mitigation services, as well as a range of banking and other operating services. Further, the company offers research and access to financial markets for institutional, corporate and retail clients through an integrated suite of sales and trading solutions related to debt, foreign exchange, interest rates, credit, equities, securitization, and commodities; provides new product development and origination services, as well as risk management and advisory services for hedging strategies, including in interest rates, foreign exchange rates and commodities prices; and funding and liquidity management services. Bank of Montreal was founded in 1817 and is headquartered in Montreal, Canada.",
@@ -19,14 +19,232 @@
     "strong_sell": 3,
     "total": 15
   },
-  "target_mean": 172.07843,
-  "target_high": 190.62009,
-  "target_low": 148.71017,
+  "target_mean": 171.99614,
+  "target_high": 190.52895,
+  "target_low": 148.63907,
   "target_analysts": 3,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 33710000000,
+      "net": 13537000000,
+      "margin": 40.2
+    },
+    {
+      "year": "2023",
+      "revenue": 31199000000,
+      "net": 4377000000,
+      "margin": 14
+    },
+    {
+      "year": "2024",
+      "revenue": 32412000000,
+      "net": 6932000000,
+      "margin": 21.4
+    },
+    {
+      "year": "2025",
+      "revenue": 36274000000,
+      "net": 8273000000,
+      "margin": 22.8
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 9258000000,
+      "earnings": 2288000000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 9799000000,
+      "earnings": 2490000000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 9537000000,
+      "earnings": 2626000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 9908000000,
+      "earnings": 1748000000
+    }
+  ],
+  "growth": {
+    "q0": 0.1363,
+    "q1": 0.1495,
+    "y0": 0.21219999,
+    "y1": 0.1169
+  },
+  "ratings": [
+    {
+      "date": "2026-05-28",
+      "firm": "RBC Capital",
+      "from": "Sector Perform",
+      "to": "Sector Perform",
+      "action": "main"
+    },
+    {
+      "date": "2025-10-03",
+      "firm": "RBC Capital",
+      "from": "Outperform",
+      "to": "Sector Perform",
+      "action": "down"
+    },
+    {
+      "date": "2025-08-27",
+      "firm": "RBC Capital",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2025-02-26",
+      "firm": "RBC Capital",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2025-01-09",
+      "firm": "RBC Capital",
+      "from": "Sector Perform",
+      "to": "Outperform",
+      "action": "up"
+    },
+    {
+      "date": "2024-12-06",
+      "firm": "RBC Capital",
+      "from": "Sector Perform",
+      "to": "Sector Perform",
+      "action": "reit"
+    },
+    {
+      "date": "2024-08-28",
+      "firm": "Barclays",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2024-08-28",
+      "firm": "Scotiabank",
+      "from": "Sector Outperform",
+      "to": "Sector Perform",
+      "action": "down"
+    },
+    {
+      "date": "2024-08-28",
+      "firm": "B of A Securities",
+      "from": "Buy",
+      "to": "Neutral",
+      "action": "down"
+    },
+    {
+      "date": "2024-06-03",
+      "firm": "Keefe, Bruyette & Woods",
+      "from": "Outperform",
+      "to": "Market Perform",
+      "action": "down"
+    }
+  ],
+  "holders": [
+    {
+      "name": "Royal Bank of Canada",
+      "kind": "institution",
+      "pct": 7.51,
+      "shares": 52167653,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Bank of Montreal /CAN/",
+      "kind": "institution",
+      "pct": 4.05,
+      "shares": 28128121,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Capital Management LLC",
+      "kind": "institution",
+      "pct": 2.95,
+      "shares": 20475602,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "TD Asset Management, Inc",
+      "kind": "institution",
+      "pct": 2.19,
+      "shares": 15233725,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "CIBC World Market, Inc.",
+      "kind": "institution",
+      "pct": 1.79,
+      "shares": 12410915,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "FIL LTD",
+      "kind": "institution",
+      "pct": 1.77,
+      "shares": 12329093,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "National Bank of Canada/FI/",
+      "kind": "institution",
+      "pct": 1.5,
+      "shares": 10405423,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "VANGUARD STAR FUNDS-Vanguard Total International Stock Index Fund",
+      "kind": "fond",
+      "pct": 1.49,
+      "shares": 10363438,
+      "date": "2026-04-30"
+    },
+    {
+      "name": "FMR, LLC",
+      "kind": "institution",
+      "pct": 1.37,
+      "shares": 9527449,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "1832 Asset Management L.P.",
+      "kind": "institution",
+      "pct": 1.34,
+      "shares": 9303809,
+      "date": "2026-06-30"
+    }
+  ],
+  "insider_net": {
+    "period": "6m",
+    "buys": 0,
+    "sells": 0,
+    "bought": 0,
+    "sold": null,
+    "net_pct": null
+  },
+  "extras": {
+    "beta": 1.128,
+    "enterprise_value": 3645478144,
+    "ev_ebitda": null,
+    "ev_revenue": 0.102,
+    "float_shares": 696323765,
+    "short_shares": 7306182,
+    "short_pct_float": null,
+    "short_ratio": 7.39,
+    "last_split": "2:1",
+    "last_split_date": "2001-03-15"
+  },
   "ex_dividend": "2026-10-30",
   "dividend_date": null,
   "payout_ratio": 0.5444,
-  "inst_count": 1016,
+  "inst_count": 1017,
   "eps_history": [
     {
       "quarter": "2025-10-31",
@@ -143,6 +361,175 @@
       "value": 1938487,
       "shares": 20300,
       "date": "2026-08-28"
+    }
+  ],
+  "dividends": [
+    {
+      "date": "2016-01-28",
+      "amount": 0.596
+    },
+    {
+      "date": "2016-04-28",
+      "amount": 0.667
+    },
+    {
+      "date": "2016-07-27",
+      "amount": 0.652
+    },
+    {
+      "date": "2016-10-28",
+      "amount": 0.642
+    },
+    {
+      "date": "2017-01-30",
+      "amount": 0.669
+    },
+    {
+      "date": "2017-04-27",
+      "amount": 0.646
+    },
+    {
+      "date": "2017-07-28",
+      "amount": 0.717
+    },
+    {
+      "date": "2017-10-31",
+      "amount": 0.701
+    },
+    {
+      "date": "2018-01-31",
+      "amount": 0.754
+    },
+    {
+      "date": "2018-04-30",
+      "amount": 0.725
+    },
+    {
+      "date": "2018-10-31",
+      "amount": 0.732
+    },
+    {
+      "date": "2019-01-31",
+      "amount": 0.761
+    },
+    {
+      "date": "2019-04-30",
+      "amount": 0.743
+    },
+    {
+      "date": "2019-07-31",
+      "amount": 0.783
+    },
+    {
+      "date": "2019-10-31",
+      "amount": 0.783
+    },
+    {
+      "date": "2020-01-31",
+      "amount": 0.802
+    },
+    {
+      "date": "2020-04-30",
+      "amount": 0.764
+    },
+    {
+      "date": "2020-07-31",
+      "amount": 0.79
+    },
+    {
+      "date": "2020-10-30",
+      "amount": 0.796
+    },
+    {
+      "date": "2021-01-29",
+      "amount": 0.827
+    },
+    {
+      "date": "2021-04-30",
+      "amount": 0.863
+    },
+    {
+      "date": "2021-07-30",
+      "amount": 0.852
+    },
+    {
+      "date": "2021-10-29",
+      "amount": 0.859
+    },
+    {
+      "date": "2022-01-31",
+      "amount": 1.042
+    },
+    {
+      "date": "2022-04-29",
+      "amount": 1.039
+    },
+    {
+      "date": "2022-07-29",
+      "amount": 1.085
+    },
+    {
+      "date": "2022-10-31",
+      "amount": 1.022
+    },
+    {
+      "date": "2023-01-27",
+      "amount": 1.073
+    },
+    {
+      "date": "2023-04-27",
+      "amount": 1.049
+    },
+    {
+      "date": "2023-07-27",
+      "amount": 1.113
+    },
+    {
+      "date": "2023-10-27",
+      "amount": 1.063
+    },
+    {
+      "date": "2024-01-29",
+      "amount": 1.123
+    },
+    {
+      "date": "2024-04-26",
+      "amount": 1.106
+    },
+    {
+      "date": "2024-07-30",
+      "amount": 1.119
+    },
+    {
+      "date": "2024-10-30",
+      "amount": 1.114
+    },
+    {
+      "date": "2025-01-30",
+      "amount": 1.103
+    },
+    {
+      "date": "2025-04-29",
+      "amount": 1.15
+    },
+    {
+      "date": "2025-07-30",
+      "amount": 1.183
+    },
+    {
+      "date": "2026-04-29",
+      "amount": 1.221
+    },
+    {
+      "date": "2026-07-30",
+      "amount": 1.218
+    }
+  ],
+  "splits": [
+    {
+      "date": "2001-03-15",
+      "ratio": "2:1",
+      "factor": 2
     }
   ]
 }

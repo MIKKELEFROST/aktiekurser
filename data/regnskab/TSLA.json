@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:25:25.445Z",
+  "updated_at": "2026-09-08T09:38:26.999Z",
   "source": "Yahoo Finance",
   "symbol": "TSLA",
   "summary": "Tesla, Inc. designs, develops, manufactures, leases, and sells electric vehicles, and energy generation and storage systems in the United States, China, and internationally. The company operates in two segments, Automotive; and Energy Generation and Storage. The company offers electric vehicles, as well as sells automotive regulatory credits; and non-warranty maintenance services and collision, automotive insurance services, as well as part sales and retail merchandise sale. It also provides sedans and sport utility vehicles through direct and used vehicle sales, a network of Tesla Superchargers, and in-app upgrades; purchase financing and leasing services; services for electric vehicles through its company-owned service locations and Tesla mobile service technicians; and vehicle limited warranties and extended service plans. In addition, the company engages in the design, manufacture, installation, sale, and leasing of solar energy generation and energy storage products, and related services to residential, commercial, and industrial customers and utilities through its website, stores, and galleries, as well as through a network of channel partners. Further, it provides services and repairs to its energy product customers, including under warranty and extended service plans; and various financing options to its residential customers; lithium-ion battery energy storage products, such as Powerwall and Megapack; energy generation products, including solar panels and solar roof; self-driving development and artificial intelligence software, vehicle control and infotainment software, and battery and powertrain. The company was formerly known as Tesla Motors, Inc. and changed its name to Tesla, Inc. in February 2017. Tesla, Inc. was incorporated in 2003 and is headquartered in Austin, Texas.",
@@ -23,10 +23,228 @@
   "target_high": 600,
   "target_low": 125,
   "target_analysts": 39,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 81462000000,
+      "net": 12556000000,
+      "margin": 15.4
+    },
+    {
+      "year": "2023",
+      "revenue": 96773000000,
+      "net": 14997000000,
+      "margin": 15.5
+    },
+    {
+      "year": "2024",
+      "revenue": 97690000000,
+      "net": 7091000000,
+      "margin": 7.3
+    },
+    {
+      "year": "2025",
+      "revenue": 94827000000,
+      "net": 3794000000,
+      "margin": 4
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 28095000000,
+      "earnings": 1373000000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 24901000000,
+      "earnings": 840000000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 22387000000,
+      "earnings": 477000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 28236000000,
+      "earnings": 1114000000
+    }
+  ],
+  "growth": {
+    "q0": -0.09689999,
+    "q1": -0.0235,
+    "y0": 0.0656,
+    "y1": 0.2203
+  },
+  "ratings": [
+    {
+      "date": "2026-09-04",
+      "firm": "GLJ Research",
+      "from": "Sell",
+      "to": "Sell",
+      "action": "reit"
+    },
+    {
+      "date": "2026-09-03",
+      "firm": "StoneX",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "reit"
+    },
+    {
+      "date": "2026-08-18",
+      "firm": "GLJ Research",
+      "from": "Sell",
+      "to": "Sell",
+      "action": "reit"
+    },
+    {
+      "date": "2026-08-03",
+      "firm": "Stifel",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-24",
+      "firm": "Piper Sandler",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-23",
+      "firm": "UBS",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-23",
+      "firm": "JP Morgan",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-23",
+      "firm": "Morgan Stanley",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-23",
+      "firm": "Truist Securities",
+      "from": "Hold",
+      "to": "Hold",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-23",
+      "firm": "Mizuho",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    }
+  ],
+  "holders": [
+    {
+      "name": "Blackrock Inc.",
+      "kind": "institution",
+      "pct": 5.42,
+      "shares": 214123129,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Capital Management LLC",
+      "kind": "institution",
+      "pct": 4.66,
+      "shares": 184023551,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "State Street Corporation",
+      "kind": "institution",
+      "pct": 2.97,
+      "shares": 117456756,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
+      "kind": "fond",
+      "pct": 2.26,
+      "shares": 89423063,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "VANGUARD INDEX FUNDS-Vanguard 500 Index Fund",
+      "kind": "fond",
+      "pct": 1.85,
+      "shares": 72956783,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Geode Capital Management, LLC",
+      "kind": "institution",
+      "pct": 1.74,
+      "shares": 68914720,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Invesco Ltd.",
+      "kind": "institution",
+      "pct": 1.4,
+      "shares": 55464442,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Portfolio Management LLC",
+      "kind": "institution",
+      "pct": 1.25,
+      "shares": 49550535,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Capital World Investors",
+      "kind": "institution",
+      "pct": 1.16,
+      "shares": 45735669,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "JPMORGAN CHASE & CO",
+      "kind": "institution",
+      "pct": 1.06,
+      "shares": 41972287,
+      "date": "2026-06-30"
+    }
+  ],
+  "insider_net": {
+    "period": "6m",
+    "buys": 10,
+    "sells": 9,
+    "bought": 304085454,
+    "sold": 69738,
+    "net_pct": 76.1
+  },
+  "extras": {
+    "beta": 1.845,
+    "enterprise_value": 1371672805376,
+    "ev_ebitda": 127.538,
+    "ev_revenue": 13.238,
+    "float_shares": 2819186930,
+    "short_shares": 69196896,
+    "short_pct_float": 1.96,
+    "short_ratio": 1.82,
+    "last_split": "3:1",
+    "last_split_date": "2022-08-25"
+  },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 5354,
+  "inst_count": 5356,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -143,6 +361,19 @@
       "value": 599600,
       "shares": 40000,
       "date": "2026-03-30"
+    }
+  ],
+  "dividends": [],
+  "splits": [
+    {
+      "date": "2020-08-31",
+      "ratio": "5:1",
+      "factor": 5
+    },
+    {
+      "date": "2022-08-25",
+      "ratio": "3:1",
+      "factor": 3
     }
   ]
 }

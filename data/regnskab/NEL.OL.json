@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:25:24.787Z",
+  "updated_at": "2026-09-08T09:38:26.447Z",
   "source": "Yahoo Finance",
   "symbol": "NEL.OL",
   "summary": "Nel ASA, a hydrogen company, provides solutions to produce, store, and distribute hydrogen from renewable energy in Norway and internationally. It operates through Nel Alkaline Electrolyser and Nel PEM Electrolyser segments. The Nel Alkaline Electrolyser segment supplies hydrogen production equipment based on alkaline water electrolysis technology. The Nel PEM Electrolyser segment supplies hydrogen production equipment based on proton exchange membrane (PEM) water electrolysis technology. The company was formerly known as DiaGenic ASA and changed its name to Nel ASA in October 2014. Nel ASA was founded in 1927 and is headquartered in Oslo, Norway.",
@@ -23,6 +23,85 @@
   "target_high": 4.2,
   "target_low": 1.2,
   "target_analysts": 11,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 993581000,
+      "net": -1171169000,
+      "margin": -117.9
+    },
+    {
+      "year": "2023",
+      "revenue": 1773076000,
+      "net": -855196000,
+      "margin": -48.2
+    },
+    {
+      "year": "2024",
+      "revenue": 1494933000,
+      "net": -244342000,
+      "margin": -16.3
+    },
+    {
+      "year": "2025",
+      "revenue": 1100188000,
+      "net": -1265117000,
+      "margin": -115
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "4Q2025",
+      "revenue": 330483000,
+      "earnings": -870351000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 148099000,
+      "earnings": -143719000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 153407000,
+      "earnings": -188571000
+    }
+  ],
+  "growth": {
+    "q0": -0.6,
+    "q1": 0.8511,
+    "y0": 0.5403,
+    "y1": 0.4036
+  },
+  "ratings": [
+    {
+      "date": "2021-02-24",
+      "firm": "JP Morgan",
+      "from": null,
+      "to": "Neutral",
+      "action": "init"
+    }
+  ],
+  "holders": [],
+  "insider_net": {
+    "period": "6m",
+    "buys": 0,
+    "sells": 0,
+    "bought": 0,
+    "sold": null,
+    "net_pct": null
+  },
+  "extras": {
+    "beta": 1.458,
+    "enterprise_value": 2704254976,
+    "ev_ebitda": -6.824,
+    "ev_revenue": 2.891,
+    "float_shares": 1670594960,
+    "short_shares": null,
+    "short_pct_float": null,
+    "short_ratio": null,
+    "last_split": "1:10",
+    "last_split_date": "2013-08-16"
+  },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
@@ -53,5 +132,18 @@
       "surprise_pct": 41.36
     }
   ],
-  "insiders": []
+  "insiders": [],
+  "dividends": [],
+  "splits": [
+    {
+      "date": "2011-05-30",
+      "ratio": "1:10",
+      "factor": 0.1
+    },
+    {
+      "date": "2013-08-16",
+      "ratio": "1:10",
+      "factor": 0.1
+    }
+  ]
 }

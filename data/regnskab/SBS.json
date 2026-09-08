@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:25:25.196Z",
+  "updated_at": "2026-09-08T09:38:26.789Z",
   "source": "Yahoo Finance",
   "symbol": "SBS",
   "summary": "Companhia de Saneamento Básico do Estado de São Paulo - SABESP provides basic and environmental sanitation services in the São Paulo State, Brazil. It supplies treated water and sewage services on a wholesale basis. Companhia de Saneamento Básico do Estado de São Paulo - SABESP was founded in 1954 and is headquartered in São Paulo, Brazil.",
@@ -23,10 +23,221 @@
   "target_high": 7.6,
   "target_low": 6.28,
   "target_analysts": 5,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 22055720000,
+      "net": 3121267000,
+      "margin": 14.2
+    },
+    {
+      "year": "2023",
+      "revenue": 25572056000,
+      "net": 3523531000,
+      "margin": 13.8
+    },
+    {
+      "year": "2024",
+      "revenue": 36145477000,
+      "net": 9579563000,
+      "margin": 26.5
+    },
+    {
+      "year": "2025",
+      "revenue": 22213000000,
+      "net": 8462000000,
+      "margin": 38.1
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "2Q2025",
+      "revenue": 8965000000,
+      "earnings": 2136000000
+    },
+    {
+      "q": "3Q2025",
+      "revenue": 9424891000,
+      "earnings": 2158565000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 11276429000,
+      "earnings": 2685440000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 9964842000,
+      "earnings": 1749031000
+    }
+  ],
+  "growth": {
+    "q0": -0.0511,
+    "q1": -0.2693,
+    "y0": -0.1692,
+    "y1": 0.65980005
+  },
+  "ratings": [
+    {
+      "date": "2026-03-19",
+      "firm": "Jefferies",
+      "from": null,
+      "to": "Buy",
+      "action": "init"
+    },
+    {
+      "date": "2019-11-14",
+      "firm": "Goldman Sachs",
+      "from": null,
+      "to": "Neutral",
+      "action": "init"
+    },
+    {
+      "date": "2018-05-18",
+      "firm": "Goldman Sachs",
+      "from": "Buy",
+      "to": "Neutral",
+      "action": "down"
+    },
+    {
+      "date": "2018-03-12",
+      "firm": "Janney Montgomery Scott",
+      "from": "Buy",
+      "to": "Neutral",
+      "action": "down"
+    },
+    {
+      "date": "2017-11-27",
+      "firm": "JP Morgan",
+      "from": "Neutral",
+      "to": "Overweight",
+      "action": "up"
+    },
+    {
+      "date": "2017-11-22",
+      "firm": "HSBC",
+      "from": "Hold",
+      "to": "Buy",
+      "action": "up"
+    },
+    {
+      "date": "2017-08-14",
+      "firm": "Citigroup",
+      "from": "Neutral",
+      "to": "Sell",
+      "action": "down"
+    },
+    {
+      "date": "2017-03-06",
+      "firm": "Standpoint Research",
+      "from": "Buy",
+      "to": "Hold",
+      "action": "down"
+    },
+    {
+      "date": "2016-08-03",
+      "firm": "Janney Montgomery Scott",
+      "from": "Buy",
+      "to": "Neutral",
+      "action": "down"
+    }
+  ],
+  "holders": [
+    {
+      "name": "Impax Asset Management Group plc",
+      "kind": "institution",
+      "pct": 1.48,
+      "shares": 52324409,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Blackrock Inc.",
+      "kind": "institution",
+      "pct": 0.85,
+      "shares": 29944581,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Amundi",
+      "kind": "institution",
+      "pct": 0.74,
+      "shares": 26095862,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Royal London Asset Management Ltd",
+      "kind": "institution",
+      "pct": 0.58,
+      "shares": 20552459,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Deutsche Bank AG",
+      "kind": "institution",
+      "pct": 0.54,
+      "shares": 19192518,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "WCM Investment Management, LLC",
+      "kind": "institution",
+      "pct": 0.45,
+      "shares": 15916320,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Wellington Management Group, LLP",
+      "kind": "institution",
+      "pct": 0.35,
+      "shares": 12283156,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Letko, Brosseau & Associates Inc.",
+      "kind": "institution",
+      "pct": 0.34,
+      "shares": 12114373,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "UBS Group AG",
+      "kind": "institution",
+      "pct": 0.34,
+      "shares": 12048286,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Mackenzie Financial Corporation",
+      "kind": "institution",
+      "pct": 0.31,
+      "shares": 11033555,
+      "date": "2026-06-30"
+    }
+  ],
+  "insider_net": {
+    "period": "6m",
+    "buys": 0,
+    "sells": 0,
+    "bought": 0,
+    "sold": null,
+    "net_pct": null
+  },
+  "extras": {
+    "beta": 0.069,
+    "enterprise_value": 52498808832,
+    "ev_ebitda": 3.451,
+    "ev_revenue": 1.284,
+    "float_shares": 2354643345,
+    "short_shares": 18194005,
+    "short_pct_float": 0.77,
+    "short_ratio": 2.48,
+    "last_split": "5:1",
+    "last_split_date": "2026-05-07"
+  },
   "ex_dividend": "2026-03-27",
   "dividend_date": null,
   "payout_ratio": 0.3181,
-  "inst_count": 422,
+  "inst_count": 420,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -62,6 +273,169 @@
       "value": 245381,
       "shares": 7371,
       "date": "2026-05-01"
+    }
+  ],
+  "dividends": [
+    {
+      "date": "2002-06-25",
+      "amount": 0.0114
+    },
+    {
+      "date": "2003-05-06",
+      "amount": 0.0039
+    },
+    {
+      "date": "2003-06-12",
+      "amount": 0.0116
+    },
+    {
+      "date": "2003-12-11",
+      "amount": 0.0154
+    },
+    {
+      "date": "2004-01-14",
+      "amount": 0.0196
+    },
+    {
+      "date": "2004-03-16",
+      "amount": 0.004
+    },
+    {
+      "date": "2004-12-30",
+      "amount": 0.0093
+    },
+    {
+      "date": "2005-02-11",
+      "amount": 0.003
+    },
+    {
+      "date": "2005-05-10",
+      "amount": 0.0044
+    },
+    {
+      "date": "2005-07-07",
+      "amount": 0.0083
+    },
+    {
+      "date": "2005-12-29",
+      "amount": 0.0199
+    },
+    {
+      "date": "2006-05-04",
+      "amount": 0.0179
+    },
+    {
+      "date": "2006-12-28",
+      "amount": 0.0193
+    },
+    {
+      "date": "2007-10-30",
+      "amount": 0.0429
+    },
+    {
+      "date": "2008-02-28",
+      "amount": 0.0055
+    },
+    {
+      "date": "2008-08-13",
+      "amount": 0.0372
+    },
+    {
+      "date": "2009-01-27",
+      "amount": 0.0119
+    },
+    {
+      "date": "2009-05-29",
+      "amount": 0.0192
+    },
+    {
+      "date": "2009-11-23",
+      "amount": 0.0378
+    },
+    {
+      "date": "2010-03-01",
+      "amount": 0.0054
+    },
+    {
+      "date": "2010-12-28",
+      "amount": 0.1591
+    },
+    {
+      "date": "2012-02-17",
+      "amount": 0.0986
+    },
+    {
+      "date": "2013-04-01",
+      "amount": 0.0775
+    },
+    {
+      "date": "2014-04-08",
+      "amount": 0.0612
+    },
+    {
+      "date": "2015-04-07",
+      "amount": 0.0228
+    },
+    {
+      "date": "2016-04-06",
+      "amount": 0.012
+    },
+    {
+      "date": "2017-04-11",
+      "amount": 0.0768
+    },
+    {
+      "date": "2018-04-30",
+      "amount": 0.0622
+    },
+    {
+      "date": "2019-04-30",
+      "amount": 0.06
+    },
+    {
+      "date": "2020-05-01",
+      "amount": 0.0504
+    },
+    {
+      "date": "2021-04-30",
+      "amount": 0.0142
+    },
+    {
+      "date": "2022-04-29",
+      "amount": 0.04
+    },
+    {
+      "date": "2023-05-02",
+      "amount": 0.0506
+    },
+    {
+      "date": "2024-04-26",
+      "amount": 0.0562
+    },
+    {
+      "date": "2025-05-02",
+      "amount": 0.1314
+    },
+    {
+      "date": "2026-03-27",
+      "amount": 0.0318
+    }
+  ],
+  "splits": [
+    {
+      "date": "2013-01-24",
+      "ratio": "2:1",
+      "factor": 2
+    },
+    {
+      "date": "2013-04-30",
+      "ratio": "3:1",
+      "factor": 3
+    },
+    {
+      "date": "2026-05-07",
+      "ratio": "5:1",
+      "factor": 5
     }
   ]
 }

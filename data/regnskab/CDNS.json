@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:25:23.696Z",
+  "updated_at": "2026-09-08T09:38:25.537Z",
   "source": "Yahoo Finance",
   "symbol": "CDNS",
   "summary": "Cadence Design Systems, Inc. develops computational, AI-driven software, hardware, and silicon intellectual property products and solutions. The company offers functional verification services, such as Jasper, a formal verification platform; Xcelium, a parallel logic simulation platform; Verisium, a generative AI solution; Palladium, an enterprise emulation platform; and Protium, a prototyping platform for chip verification, as well as digital IC design and sign off products, including In novus platform; and custom IC design and simulation product include Virtuoso, a platform to design and verify analog. It also provides Xcelium logic simulator and other front-end verification and virtual prototyping technologies; controllers and physical interfaces; PCI Express, universal accelerator and compute express links, and multiple memory interfaces; and Ten Silica, a digital signal processor. In addition, the company's design IP portfolio includes serializer/deserializer, peripheral component interconnect, USB, and other standard protocols; and Secure-IC, a solution for embedded security IP. Additionally, it provides System Design and Analysis (SD&A) platform, a solution that enables end-to-end system-level design and verification across chips, packages, PCBs, and electronic systems; Allegro X and Orca X platforms for PCB and advanced packaging; Sigrity X for signal and power integrity; AIR for RF design; Fidelity for computational fluid dynamics; Celsius for thermal and airflow analysis; Clarity 3D solver for electromagnetic and power electronics analysis and simulation; Integrity 3D-IC solution for 3D-IC and multi-chiplet designs; the Optimality Intelligent System Explorer, Reality digital twin, and Millennium enterprise multiphasic platforms; Allegro system design platform; and molecular modeling and simulation solutions and services. The company has a strategic collaboration with NVIDIA. The company was incorporated in 1987 and is headquartered in San Jose, California.",
@@ -23,6 +23,224 @@
   "target_high": 470,
   "target_low": 300,
   "target_analysts": 27,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 3561718000,
+      "net": 848952000,
+      "margin": 23.8
+    },
+    {
+      "year": "2023",
+      "revenue": 4089986000,
+      "net": 1041144000,
+      "margin": 25.5
+    },
+    {
+      "year": "2024",
+      "revenue": 4641264000,
+      "net": 1055484000,
+      "margin": 22.7
+    },
+    {
+      "year": "2025",
+      "revenue": 5296759000,
+      "net": 1108888000,
+      "margin": 20.9
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 1338838000,
+      "earnings": 287122000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 1440114000,
+      "earnings": 388136000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 1474220000,
+      "earnings": 335660000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 1584451000,
+      "earnings": 367076000
+    }
+  ],
+  "growth": {
+    "q0": 0.059699997,
+    "q1": 0.014400001,
+    "y0": 0.14039999,
+    "y1": 0.1721
+  },
+  "ratings": [
+    {
+      "date": "2026-07-28",
+      "firm": "B of A Securities",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-28",
+      "firm": "Rosenblatt",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-28",
+      "firm": "Citigroup",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-28",
+      "firm": "Baird",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-28",
+      "firm": "Needham",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "reit"
+    },
+    {
+      "date": "2026-07-28",
+      "firm": "Piper Sandler",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-16",
+      "firm": "Benchmark",
+      "from": null,
+      "to": "Buy",
+      "action": "init"
+    },
+    {
+      "date": "2026-07-14",
+      "firm": "Rosenblatt",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-06-09",
+      "firm": "Stifel",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-05-26",
+      "firm": "Wells Fargo",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    }
+  ],
+  "holders": [
+    {
+      "name": "Blackrock Inc.",
+      "kind": "institution",
+      "pct": 9.68,
+      "shares": 26660845,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Capital Management LLC",
+      "kind": "institution",
+      "pct": 6.54,
+      "shares": 18016381,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "State Street Corporation",
+      "kind": "institution",
+      "pct": 4.73,
+      "shares": 13031391,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "FMR, LLC",
+      "kind": "institution",
+      "pct": 3.47,
+      "shares": 9554947,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Invesco Ltd.",
+      "kind": "institution",
+      "pct": 3.26,
+      "shares": 8980518,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
+      "kind": "fond",
+      "pct": 3.18,
+      "shares": 8756387,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "JPMORGAN CHASE & CO",
+      "kind": "institution",
+      "pct": 2.86,
+      "shares": 7865907,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Geode Capital Management, LLC",
+      "kind": "institution",
+      "pct": 2.61,
+      "shares": 7184139,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "VANGUARD INDEX FUNDS-Vanguard 500 Index Fund",
+      "kind": "fond",
+      "pct": 2.6,
+      "shares": 7147806,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Portfolio Management LLC",
+      "kind": "institution",
+      "pct": 2.53,
+      "shares": 6961873,
+      "date": "2026-06-30"
+    }
+  ],
+  "insider_net": {
+    "period": "6m",
+    "buys": 37,
+    "sells": 22,
+    "bought": 538313,
+    "sold": 204570,
+    "net_pct": 58.9
+  },
+  "extras": {
+    "beta": 1.137,
+    "enterprise_value": 81727053824,
+    "ev_ebitda": 37.908,
+    "ev_revenue": 14,
+    "float_shares": 274159239,
+    "short_shares": 4498632,
+    "short_pct_float": 1.64,
+    "short_ratio": 1.85,
+    "last_split": "2:1",
+    "last_split_date": "1997-11-17"
+  },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
@@ -143,6 +361,24 @@
       "value": 202940,
       "shares": 1000,
       "date": "2026-07-22"
+    }
+  ],
+  "dividends": [],
+  "splits": [
+    {
+      "date": "1995-10-31",
+      "ratio": "3:2",
+      "factor": 1.5
+    },
+    {
+      "date": "1996-06-03",
+      "ratio": "3:2",
+      "factor": 1.5
+    },
+    {
+      "date": "1997-11-17",
+      "ratio": "2:1",
+      "factor": 2
     }
   ]
 }

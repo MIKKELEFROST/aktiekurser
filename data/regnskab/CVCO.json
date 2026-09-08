@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:25:23.858Z",
+  "updated_at": "2026-09-08T09:38:25.673Z",
   "source": "Yahoo Finance",
   "symbol": "CVCO",
   "summary": "Cavco Industries, Inc. designs, produces, and retails factory-built homes primarily in the United States. It operates in two segments: Factory-Built Housing and Financial Services. The company produces park model RVs; vacation cabins; and factory-built commercial structures, including apartment buildings, condominiums, hotels, workforce housing, schools, and housing for the United States military troops. It also produces various modular homes, which include single and multi-section ranch, split-level, and Cape Cod style homes, as well as two- and three-story homes, and multi-family units. In addition, the company provides conforming and non-conforming mortgages and home-only loans to purchasers of various brands of factory-built homes sold by company-owned retail stores, as well as various independent distributors, builders, communities, and developers. Further, it offers property and casualty insurance to owners of manufactured housing industry. The company distributes its products through a network of independent and company-owned retailers, planned community operators, and residential developers. The company was founded in 1965 and is headquartered in Phoenix, Arizona.",
@@ -23,10 +23,223 @@
   "target_high": 700,
   "target_low": 600,
   "target_analysts": 3,
+  "statements": [
+    {
+      "year": "2023",
+      "revenue": 2142713000,
+      "net": 240554000,
+      "margin": 11.2
+    },
+    {
+      "year": "2024",
+      "revenue": 1794792000,
+      "net": 157817000,
+      "margin": 8.8
+    },
+    {
+      "year": "2025",
+      "revenue": 2015458000,
+      "net": 171036000,
+      "margin": 8.5
+    },
+    {
+      "year": "2026",
+      "revenue": 2244505000,
+      "net": 190551000,
+      "margin": 8.5
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 556527000,
+      "earnings": 52381000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 580994000,
+      "earnings": 44067000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 550127000,
+      "earnings": 42461000
+    }
+  ],
+  "growth": {
+    "q0": -0.17469999,
+    "q1": 0.0552,
+    "y0": -0.057600003,
+    "y1": 0.2755
+  },
+  "ratings": [
+    {
+      "date": "2026-06-05",
+      "firm": "UBS",
+      "from": null,
+      "to": "Buy",
+      "action": "init"
+    },
+    {
+      "date": "2025-05-27",
+      "firm": "Wedbush",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "reit"
+    },
+    {
+      "date": "2025-02-03",
+      "firm": "Wedbush",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2025-01-15",
+      "firm": "Zelman & Assoc",
+      "from": null,
+      "to": "Outperform",
+      "action": "init"
+    },
+    {
+      "date": "2024-12-03",
+      "firm": "Wedbush",
+      "from": "Outperform",
+      "to": "Neutral",
+      "action": "down"
+    },
+    {
+      "date": "2024-11-04",
+      "firm": "Craig-Hallum",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2024-10-11",
+      "firm": "Wedbush",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2024-08-05",
+      "firm": "Craig-Hallum",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2024-08-02",
+      "firm": "Wedbush",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "reit"
+    },
+    {
+      "date": "2024-05-24",
+      "firm": "Wedbush",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "reit"
+    }
+  ],
+  "holders": [
+    {
+      "name": "Blackrock Inc.",
+      "kind": "institution",
+      "pct": 16.24,
+      "shares": 1248595,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "SmallCap World Fund Inc",
+      "kind": "fond",
+      "pct": 7.24,
+      "shares": 557074,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Capital World Investors",
+      "kind": "institution",
+      "pct": 6.87,
+      "shares": 528190,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "iShares Trust-iShares Core S&P Small-Cap ETF",
+      "kind": "fond",
+      "pct": 6.15,
+      "shares": 472583,
+      "date": "2026-07-31"
+    },
+    {
+      "name": "State Street Corporation",
+      "kind": "institution",
+      "pct": 5.45,
+      "shares": 419204,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Capital Management LLC",
+      "kind": "institution",
+      "pct": 4.52,
+      "shares": 347619,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Portfolio Management LLC",
+      "kind": "institution",
+      "pct": 4.31,
+      "shares": 331162,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Boston Partners",
+      "kind": "institution",
+      "pct": 4.23,
+      "shares": 325596,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Geode Capital Management, LLC",
+      "kind": "institution",
+      "pct": 3.37,
+      "shares": 259180,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Fiduciary Management, Inc.",
+      "kind": "institution",
+      "pct": 3.25,
+      "shares": 250135,
+      "date": "2026-06-30"
+    }
+  ],
+  "insider_net": {
+    "period": "6m",
+    "buys": 18,
+    "sells": 8,
+    "bought": 51046,
+    "sold": 3913,
+    "net_pct": 60.3
+  },
+  "extras": {
+    "beta": 1.28,
+    "enterprise_value": 4133300480,
+    "ev_ebitda": 16.348,
+    "ev_revenue": 1.799,
+    "float_shares": 7566064,
+    "short_shares": 366761,
+    "short_pct_float": 5.84,
+    "short_ratio": 2.95,
+    "last_split": "2:1",
+    "last_split_date": "2005-02-01"
+  },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 484,
+  "inst_count": 483,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -143,6 +356,14 @@
       "value": 0,
       "shares": 225,
       "date": "2026-07-27"
+    }
+  ],
+  "dividends": [],
+  "splits": [
+    {
+      "date": "2005-02-01",
+      "ratio": "2:1",
+      "factor": 2
     }
   ]
 }

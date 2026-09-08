@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:50:49.191Z",
+  "updated_at": "2026-09-08T09:38:26.241Z",
   "source": "Yahoo Finance",
   "symbol": "KIT.OL",
   "summary": "Kitron ASA operates as an electronics manufacturing services provider in Norway, Sweden, Denmark, Lithuania, Germany, Poland, the Czech Republic, India, China, Malaysia, and the United States. The company manufactures and sells electronics that are embedded in the customer's own products; and box-built electronic products. It also provides electronics manufacturing services, including automated assembly of printed circuit boards and higher-level system integration; development services, such as product development, product management, and re-engineering services; and industrialization services, including prototype manufacturing, evaluation of new products, component engineering and database, test development, design and build of high-level assembly lines, and environmental durability testing. In addition, the company offers sourcing and procurement services; logistics and distribution; redesign, repair, and maintenance; product deployment services; cable harness manufacturing and components analysis; and resilience testing services. It markets its services to the connectivity, electrification, industry, medical devices, and defense/aerospace sectors. The company was founded in 1962 and is headquartered in Billingstad, Norway.",
@@ -19,10 +19,81 @@
     "strong_sell": 0,
     "total": 1
   },
-  "target_mean": 106.25287,
-  "target_high": 125.12785,
-  "target_low": 94.34268,
+  "target_mean": 106.3589,
+  "target_high": 125.25272,
+  "target_low": 94.43684,
   "target_analysts": 5,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 593788940,
+      "net": 26279760,
+      "margin": 4.4
+    },
+    {
+      "year": "2023",
+      "revenue": 775200000,
+      "net": 51100000,
+      "margin": 6.6
+    },
+    {
+      "year": "2024",
+      "revenue": 647200000,
+      "net": 28000000,
+      "margin": 4.3
+    },
+    {
+      "year": "2025",
+      "revenue": 738300000,
+      "net": 43800000,
+      "margin": 5.9
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "4Q2025",
+      "revenue": 233800000,
+      "earnings": 17200000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 272700000,
+      "earnings": 20000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 295700000,
+      "earnings": 21400000
+    }
+  ],
+  "growth": {
+    "q0": 0.6,
+    "q1": 0.125,
+    "y0": 0.7093,
+    "y1": 0.2188
+  },
+  "ratings": [],
+  "holders": [],
+  "insider_net": {
+    "period": "6m",
+    "buys": 0,
+    "sells": 0,
+    "bought": 0,
+    "sold": null,
+    "net_pct": null
+  },
+  "extras": {
+    "beta": 0.964,
+    "enterprise_value": 21471342592,
+    "ev_ebitda": 205.271,
+    "ev_revenue": 22.138,
+    "float_shares": 171768600,
+    "short_shares": null,
+    "short_pct_float": null,
+    "short_ratio": null,
+    "last_split": null,
+    "last_split_date": null
+  },
   "ex_dividend": "2026-04-27",
   "dividend_date": null,
   "payout_ratio": 0.2007,
@@ -53,5 +124,76 @@
       "surprise_pct": 11.11
     }
   ],
-  "insiders": []
+  "insiders": [],
+  "dividends": [
+    {
+      "date": "2000-05-02",
+      "amount": 0.75
+    },
+    {
+      "date": "2009-05-08",
+      "amount": 0.0578
+    },
+    {
+      "date": "2012-04-27",
+      "amount": 0.05
+    },
+    {
+      "date": "2013-04-23",
+      "amount": 0.1
+    },
+    {
+      "date": "2015-04-22",
+      "amount": 0.05
+    },
+    {
+      "date": "2016-04-22",
+      "amount": 0.21
+    },
+    {
+      "date": "2017-04-26",
+      "amount": 0.25
+    },
+    {
+      "date": "2018-04-23",
+      "amount": 0.55
+    },
+    {
+      "date": "2019-05-02",
+      "amount": 0.4
+    },
+    {
+      "date": "2020-10-29",
+      "amount": 0.5
+    },
+    {
+      "date": "2021-04-22",
+      "amount": 0.35
+    },
+    {
+      "date": "2021-10-05",
+      "amount": 0.35
+    },
+    {
+      "date": "2022-04-28",
+      "amount": 0.25
+    },
+    {
+      "date": "2023-05-02",
+      "amount": 0.5
+    },
+    {
+      "date": "2024-04-26",
+      "amount": 0.75
+    },
+    {
+      "date": "2025-04-25",
+      "amount": 0.35
+    },
+    {
+      "date": "2026-04-27",
+      "amount": 0.7
+    }
+  ],
+  "splits": []
 }

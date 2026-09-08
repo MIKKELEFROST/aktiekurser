@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:50:48.741Z",
+  "updated_at": "2026-09-08T09:38:25.278Z",
   "source": "Yahoo Finance",
   "symbol": "ASML",
   "summary": "ASML Holding N.V. provides lithography solutions for the development, production, marketing, sales, upgrading, and servicing of advanced semiconductor equipment systems. The company offers lithography, metrology, and inspection systems. It also provides extreme ultraviolet lithography systems; and deep ultraviolet lithography systems comprising immersion and dry lithography systems solutions to manufacture various range of semiconductor nodes and technologies. In addition, the company offers metrology and inspection systems, including YieldStar optical metrology systems, a diffraction-based wafer metrology platform to assess the quality of patterns on the wafers; and HMI electron beam solutions to locate and analyze individual chip defects. Further, it provides computational lithography solutions, and lithography systems and control software solutions; and refurbishes and upgrades lithography systems, as well as offers customer support and related services. Additionally, the company offers hardware, software, and services to chipmakers to produce the patterns of integrated circuits. It operates in Japan, South Korea, Singapore, Taiwan, China, rest of Asia, the Netherlands, rest of Europe, the Middle East, Africa, and the United States. The company was formerly known as ASM Lithography Holding N.V. and changed its name to ASML Holding N.V. in 2001. ASML Holding N.V. was founded in 1984 and is headquartered in Veldhoven, the Netherlands.",
@@ -19,14 +19,232 @@
     "strong_sell": 0,
     "total": 43
   },
-  "target_mean": 2165.947,
-  "target_high": 2864.978,
-  "target_low": 898.74536,
+  "target_mean": 2165.4438,
+  "target_high": 2864.3125,
+  "target_low": 898.53656,
   "target_analysts": 16,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 21173400000,
+      "net": 5624200000,
+      "margin": 26.6
+    },
+    {
+      "year": "2023",
+      "revenue": 27558500000,
+      "net": 7839000000,
+      "margin": 28.4
+    },
+    {
+      "year": "2024",
+      "revenue": 28262900000,
+      "net": 7571600000,
+      "margin": 26.8
+    },
+    {
+      "year": "2025",
+      "revenue": 32667300000,
+      "net": 9392700000,
+      "margin": 28.8
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 7516000000,
+      "earnings": 2124500000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 9718100000,
+      "earnings": 2839600000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 8766900000,
+      "earnings": 2756700000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 9326500000,
+      "earnings": 2917600000
+    }
+  ],
+  "growth": {
+    "q0": 0.9276,
+    "q1": 0.79050004,
+    "y0": 0.5455,
+    "y1": 0.354
+  },
+  "ratings": [
+    {
+      "date": "2026-07-16",
+      "firm": "JP Morgan",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-16",
+      "firm": "Wells Fargo",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-16",
+      "firm": "RBC Capital",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-14",
+      "firm": "RBC Capital",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-07-06",
+      "firm": "Bernstein",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-06-22",
+      "firm": "B of A Securities",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-06-22",
+      "firm": "Wells Fargo",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-06-03",
+      "firm": "JP Morgan",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-04-16",
+      "firm": "Wells Fargo",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-04-16",
+      "firm": "RBC Capital",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    }
+  ],
+  "holders": [
+    {
+      "name": "FMR, LLC",
+      "kind": "institution",
+      "pct": 1.41,
+      "shares": 5478341,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Fisher Asset Management, LLC",
+      "kind": "institution",
+      "pct": 1.22,
+      "shares": 4737614,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Capital World Investors",
+      "kind": "institution",
+      "pct": 0.96,
+      "shares": 3726679,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Invesco Ltd.",
+      "kind": "institution",
+      "pct": 0.81,
+      "shares": 3140208,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "iShares Trust-iShares Core MSCI EAFE ETF",
+      "kind": "fond",
+      "pct": 0.74,
+      "shares": 2866270,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "State Farm Mutual Automobile Insurance Co",
+      "kind": "institution",
+      "pct": 0.71,
+      "shares": 2758173,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Capital International Investors",
+      "kind": "institution",
+      "pct": 0.63,
+      "shares": 2439219,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Van Eck Associates Corporation",
+      "kind": "institution",
+      "pct": 0.63,
+      "shares": 2459420,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "JPMORGAN CHASE & CO",
+      "kind": "institution",
+      "pct": 0.62,
+      "shares": 2395859,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "VanEck ETF Trust-VanEck Semiconductor ETF",
+      "kind": "fond",
+      "pct": 0.53,
+      "shares": 2061048,
+      "date": "2026-07-31"
+    }
+  ],
+  "insider_net": {
+    "period": "6m",
+    "buys": 0,
+    "sells": 0,
+    "bought": 0,
+    "sold": null,
+    "net_pct": null
+  },
+  "extras": {
+    "beta": 1.363,
+    "enterprise_value": 36588037865472,
+    "ev_ebitda": 2712.556,
+    "ev_revenue": 1035.681,
+    "float_shares": 21331633667,
+    "short_shares": 1352364,
+    "short_pct_float": 0.35,
+    "short_ratio": 0.75,
+    "last_split": "8:9",
+    "last_split_date": "2007-10-01"
+  },
   "ex_dividend": "2026-07-28",
   "dividend_date": null,
   "payout_ratio": 0.2972,
-  "inst_count": 2961,
+  "inst_count": 2964,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -53,5 +271,177 @@
       "surprise_pct": 9.09
     }
   ],
-  "insiders": []
+  "insiders": [],
+  "dividends": [
+    {
+      "date": "2007-10-01",
+      "amount": 3.6883
+    },
+    {
+      "date": "2008-04-07",
+      "amount": 0.4818
+    },
+    {
+      "date": "2009-03-30",
+      "amount": 0.3506
+    },
+    {
+      "date": "2010-03-26",
+      "amount": 0.3675
+    },
+    {
+      "date": "2011-04-26",
+      "amount": 0.7
+    },
+    {
+      "date": "2012-04-30",
+      "amount": 0.7701
+    },
+    {
+      "date": "2012-11-29",
+      "amount": 11.87
+    },
+    {
+      "date": "2013-04-26",
+      "amount": 0.706
+    },
+    {
+      "date": "2014-04-25",
+      "amount": 0.835
+    },
+    {
+      "date": "2015-04-24",
+      "amount": 0.811
+    },
+    {
+      "date": "2016-05-03",
+      "amount": 1.145
+    },
+    {
+      "date": "2017-04-28",
+      "amount": 1.307
+    },
+    {
+      "date": "2018-04-27",
+      "amount": 1.718
+    },
+    {
+      "date": "2019-04-26",
+      "amount": 2.386
+    },
+    {
+      "date": "2019-11-04",
+      "amount": 1.17
+    },
+    {
+      "date": "2020-04-24",
+      "amount": 1.458
+    },
+    {
+      "date": "2020-11-02",
+      "amount": 1.396
+    },
+    {
+      "date": "2021-05-03",
+      "amount": 1.87
+    },
+    {
+      "date": "2021-11-02",
+      "amount": 2.084
+    },
+    {
+      "date": "2022-05-03",
+      "amount": 3.898
+    },
+    {
+      "date": "2022-08-04",
+      "amount": 1.396
+    },
+    {
+      "date": "2022-11-03",
+      "amount": 1.34
+    },
+    {
+      "date": "2023-02-06",
+      "amount": 1.472
+    },
+    {
+      "date": "2023-05-01",
+      "amount": 1.858
+    },
+    {
+      "date": "2023-08-01",
+      "amount": 1.593
+    },
+    {
+      "date": "2023-11-01",
+      "amount": 1.53
+    },
+    {
+      "date": "2024-02-05",
+      "amount": 1.556
+    },
+    {
+      "date": "2024-04-26",
+      "amount": 1.873
+    },
+    {
+      "date": "2024-07-29",
+      "amount": 1.643
+    },
+    {
+      "date": "2024-10-29",
+      "amount": 1.641
+    },
+    {
+      "date": "2025-02-11",
+      "amount": 1.57
+    },
+    {
+      "date": "2025-04-28",
+      "amount": 2.091
+    },
+    {
+      "date": "2025-07-29",
+      "amount": 1.847
+    },
+    {
+      "date": "2025-10-29",
+      "amount": 1.864
+    },
+    {
+      "date": "2026-02-10",
+      "amount": 1.883
+    },
+    {
+      "date": "2026-04-27",
+      "amount": 3.177
+    },
+    {
+      "date": "2026-07-28",
+      "amount": 2.138
+    }
+  ],
+  "splits": [
+    {
+      "date": "1997-05-12",
+      "ratio": "2:1",
+      "factor": 2
+    },
+    {
+      "date": "1998-05-08",
+      "ratio": "2:1",
+      "factor": 2
+    },
+    {
+      "date": "2000-04-17",
+      "ratio": "3:1",
+      "factor": 3
+    },
+    {
+      "date": "2007-10-01",
+      "ratio": "8:9",
+      "factor": 0.8889
+    }
+  ]
 }
