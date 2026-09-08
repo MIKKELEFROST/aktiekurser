@@ -381,6 +381,41 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
       + '</div>';
   }
 
+  // Hvad der er sket med selskabet undervejs. Kun de tre slags vi rent faktisk
+  // har datoer for: udbytter og aktiesplit ligger med hele deres historik i
+  // regnskabsfilen, mens regnskaber kun kendes for det seneste og det næste.
+  // At gætte de øvrige regnskabsdatoer ud fra kvartalerne ville sætte mærker
+  // på dage, hvor der ikke skete noget.
+  const EVENT_KINDS = {
+    udbytte:  { tag: 'U', color: 'var(--accent)' },
+    split:    { tag: 'S', color: 'var(--coop-purple-400)' },
+    regnskab: { tag: 'R', color: 'var(--brand)' },
+  };
+
+  function companyEvents() {
+    if (!state.adv || !FUND) return [];
+    const out = [];
+    for (const d of (FUND.dividends || [])) {
+      if (!d || !d.date) continue;
+      out.push({ date: d.date, kind: 'udbytte',
+                 text: 'Udbytte ' + K.fmtPrice(d.amount) + ' ' + (row ? row.currency : '')
+                       + ' pr. aktie. Datoen er dagen aktien handles uden udbytte, '
+                       + 'og kursen falder typisk med beløbet den morgen.' });
+    }
+    for (const sp of (FUND.splits || [])) {
+      if (!sp || !sp.date) continue;
+      out.push({ date: sp.date, kind: 'split',
+                 text: 'Aktiesplit ' + K.esc(sp.ratio || '') + '. Kursen før denne dag er '
+                       + 'omregnet til den nye styk­størrelse, så kurven ikke laver et spring '
+                       + 'der ikke er en værdiændring.' });
+    }
+    for (const [d, label] of [[FUND.earnings_call, 'Seneste regnskab'], [FUND.next_earnings, 'Næste regnskab']]) {
+      if (d) out.push({ date: d, kind: 'regnskab', text: label + '. Tallene for kvartalet blev '
+                        + 'offentliggjort denne dag, og kursen reagerer ofte på dem.' });
+    }
+    return out.sort((a, b) => (a.date < b.date ? -1 : 1));
+  }
+
   function drawChart(dates, closes, currency, opts) {
     if (closes.length < 2) {
       return '<p class="text-sm muted py-10 text-center">Perioden indeholder for få handelsdage til en graf.</p>';
@@ -455,12 +490,74 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
     const stroke = closes[closes.length - 1] >= base ? 'var(--delta-up)' : 'var(--delta-down)';
     chart.lo = lo; chart.hi = hi;
 
+    // Hændelser sættes på den nærmeste handelsdag, ikke på en x der er regnet
+    // ud af kalenderen: falder et udbytte på en lørdag, hører mærket til
+    // mandagen, hvor kursen faktisk bevægede sig.
+    let marks = '';
+    chart.eventsHidden = 0;
+    if (!intraday && opts && opts.events && opts.events.length) {
+      const first = dates[0], last = dates[dates.length - 1];
+      const seen = new Set();
+      const at = [];
+      for (const ev of opts.events) {
+        if (ev.date < first || ev.date > last) continue;
+        let i = 0;
+        while (i < dates.length - 1 && dates[i] < ev.date) i++;
+        const key = i + ':' + ev.kind;
+        if (seen.has(key)) continue;
+        seen.add(key);
+        at.push({ i, ev });
+      }
+      // Syvogtyve år rummer fyrre udbytter, og fyrre badges på 824 enheder er
+      // en mur, ikke en oplysning. Mærker der ville ligge oven i hinanden
+      // samles til ét: det vigtigste i klyngen bærer badget, og resten står i
+      // dens forklaring. Split slår regnskab, regnskab slår udbytte — et split
+      // ændrer kursen på grafen, et udbytte er en udbetaling ved siden af.
+      const RANK = { split: 0, regnskab: 1, udbytte: 2 };
+      const MIN_GAP = 18;
+      at.sort((a, b) => a.i - b.i);
+      const groups = [];
+      for (const m of at) {
+        const g = groups[groups.length - 1];
+        if (g && x(m.i) - x(g[0].i) < MIN_GAP) g.push(m);
+        else groups.push([m]);
+      }
+      const yBase = G.T + G.ih + 6;
+      let hidden = 0;
+      marks = groups.map((g) => {
+        const pick = g.slice().sort((a, b) => RANK[a.ev.kind] - RANK[b.ev.kind])[0];
+        const { i, ev } = pick;
+        hidden += g.length - 1;
+        const k = EVENT_KINDS[ev.kind];
+        const cx = x(i);
+        const extra = g.length > 1
+          ? ' I samme periode ligger desuden ' + (g.length - 1) + ' anden hændelse'
+            + (g.length > 2 ? 'r' : '') + ': '
+            + g.filter((o) => o !== pick).map((o) => o.ev.kind).join(', ') + '.'
+          : '';
+        return '<g class="chart-event" tabindex="0" data-hint-title="' + K.esc(K.fmtDate(ev.date)) + '" '
+          + 'data-hint="' + K.esc(ev.text + extra) + '" style="cursor:help">'
+          + '<line x1="' + cx.toFixed(1) + '" y1="' + G.T + '" x2="' + cx.toFixed(1) + '" y2="' + (G.T + G.ih)
+          + '" stroke="' + k.color + '" stroke-width="1" stroke-dasharray="2 3" opacity="0.35"/>'
+          + '<circle cx="' + cx.toFixed(1) + '" cy="' + yBase + '" r="7" fill="var(--surface-1)" '
+          + 'stroke="' + k.color + '" stroke-width="1.5"/>'
+          + '<text x="' + cx.toFixed(1) + '" y="' + (yBase + 3.5) + '" text-anchor="middle" '
+          + 'font-size="9" font-weight="700" fill="' + k.color + '">' + k.tag + '</text>'
+          + (g.length > 1
+              ? '<text x="' + (cx + 8).toFixed(1) + '" y="' + (yBase - 6) + '" font-size="8" '
+                + 'fill="var(--text-muted)">+' + (g.length - 1) + '</text>'
+              : '')
+          + '</g>';
+      }).join('');
+      chart.eventsHidden = hidden;
+    }
+
     return '<div class="chart-wrap">'
       + '<svg id="chart" viewBox="0 0 ' + G.W + ' ' + G.H + '" width="100%" height="' + G.H + '" '
       + 'role="img" aria-label="Kursudvikling ' + K.esc(dates[0]) + ' til ' + K.esc(dates[dates.length - 1])
       + ', fra ' + K.fmtPrice(closes[0]) + ' til ' + K.fmtPrice(closes[closes.length - 1]) + ' ' + K.esc(currency)
       + '" style="display:block">'
-      + grid + prevLine + xLabels
+      + grid + prevLine + xLabels + marks
       + '<path d="' + d + '" fill="none" stroke="' + stroke + '" stroke-width="2" '
       + 'stroke-linecap="round" stroke-linejoin="round"/>'
       + '<rect id="selband" x="0" y="' + G.T + '" width="0" height="' + G.ih + '" '
@@ -1621,7 +1718,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
     $('#chartHost').innerHTML = comparing
       ? drawCompareChart(s.dates, s.closes, row)
       : drawChart(s.dates, s.closes, row.currency,
-                  day ? { intraday: true, prev: day.prev } : null);
+                  day ? { intraday: true, prev: day.prev } : { events: companyEvents() });
     $('#selSummary').hidden = true;
     // Click-to-select belongs to the price view; in the comparison the y-axis
     // is a percentage shared by several series and a selection would be
@@ -1662,7 +1759,25 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
         + (row.quote_time
             ? '<br><span class="faint">Kursen er senest registreret ' + K.fmtAge(row.quote_time) + '</span>'
             : '')
+        + eventLegend(s)
       : 'Ingen handelsdage i den valgte periode.';
+  }
+
+  // U, S og R er bare bogstaver, indtil der står hvad de betyder. Linjen
+  // nævner kun de slags der faktisk er mærker for i det viste vindue.
+  function eventLegend(s) {
+    if (!state.adv || !s.dates.length) return '';
+    const first = s.dates[0], last = s.dates[s.dates.length - 1];
+    const kinds = new Set(companyEvents()
+      .filter((e) => e.date >= first && e.date <= last).map((e) => e.kind));
+    if (!kinds.size) return '';
+    const names = { udbytte: 'U udbytte', split: 'S aktiesplit', regnskab: 'R regnskab' };
+    return '<br><span class="faint">Mærker under kurven: '
+      + [...kinds].map((k) => names[k]).join(' · ')
+      + '. Hold musen over et mærke for detaljen.'
+      + (chart.eventsHidden ? ' Mærker der lå oven i hinanden er slået sammen — tallet ved siden af '
+                              + 'siger hvor mange flere der gemmer sig.' : '')
+      + '</span>';
   }
 
   function setRange(key) {
