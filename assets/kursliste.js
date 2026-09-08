@@ -472,17 +472,67 @@
       input.setAttribute('aria-expanded', 'false');
     }
 
+    // Kurserne i indekset er timer gamle. De males med det samme, så listen
+    // ikke står tom, og skiftes ud så snart de friske er hentet — ét kald for
+    // hele listen, gennem sidens eget endepunkt.
+    const fresh = new Map();
+    let quoteTimer = null;
+
+    // Hvert tastetryk giver nye rækker, og et kald pr. tastetryk ville koste
+    // fire hentninger for at skrive "meta". Listen males straks med tallene
+    // fra indekset; de friske hentes når fingrene falder til ro.
+    function scheduleQuotes(list) {
+      clearTimeout(quoteTimer);
+      quoteTimer = setTimeout(() => refreshQuotes(list), 250);
+    }
+
+    async function refreshQuotes(list) {
+      const want = list.map((r) => r[0]).filter((sym) => !fresh.has(sym));
+      if (!want.length) return;
+      const data = await liveQuotes(want);
+      if (!data) return;
+      for (const sym of Object.keys(data.q)) fresh.set(sym, data.q[sym]);
+      if (!box.hidden) paint();
+    }
+
+    function priceCell(row) {
+      const q = fresh.get(row[0]);
+      const price = q && q.p != null ? q.p : row[5];
+      const move = q && q.cp != null ? q.cp : row[6];
+      if (price == null) return '';
+      return '<span class="nav-result-num">'
+        + '<span class="nav-result-move ' + dirClass(move) + '">' + fmtPct(move) + '</span>'
+        + '<span class="nav-result-price">' + fmtPrice(price) + ' ' + esc(row[7] || '') + '</span></span>';
+    }
+
     function paint() {
       if (!rows.length) {
         box.innerHTML = '<p class="nav-result-empty">Ingen aktier eller fonde matcher.</p>';
-      } else {
-        box.innerHTML = rows.map((row, i) =>
-          '<a class="nav-result' + (i === cursor ? ' is-on' : '') + '" role="option"'
-          + ' aria-selected="' + (i === cursor) + '" href="' + urlFor(row) + '">'
-          + '<span class="nav-result-name">' + esc(row[1]) + '</span>'
-          + '<span class="nav-result-meta">' + flagOf(row[2]) + ' ' + esc(row[0])
-          + ' · ' + (row[3] === 'e' ? 'fond' : 'aktie') + '</span></a>').join('');
+        box.hidden = false;
+        input.setAttribute('aria-expanded', 'true');
+        return;
       }
+
+      // Aktier og fonde er to forskellige ting at købe, og en blandet liste
+      // gør det til læserens opgave at sortere dem. Rækkefølgen inden for hver
+      // gruppe er den samme som før — grupperingen flytter kun overskrifter
+      // ind, ikke rangeringen.
+      let html = '';
+      for (const [kind, title] of [['a', 'Aktier'], ['e', 'ETF\u2019er og fonde']]) {
+        const part = rows.filter((r) => r[3] === kind);
+        if (!part.length) continue;
+        html += '<div class="nav-result-head"><span>' + title + '</span><span>I dag</span></div>'
+          + part.map((row) => {
+              const i = rows.indexOf(row);
+              return '<a class="nav-result' + (i === cursor ? ' is-on' : '') + '" role="option"'
+                + ' aria-selected="' + (i === cursor) + '" href="' + urlFor(row) + '">'
+                + '<span class="nav-result-text">'
+                + '<span class="nav-result-name">' + esc(row[1]) + '</span>'
+                + '<span class="nav-result-meta">' + flagOf(row[2]) + ' ' + esc(row[0]) + '</span></span>'
+                + priceCell(row) + '</a>';
+            }).join('');
+      }
+      box.innerHTML = html;
       box.hidden = false;
       input.setAttribute('aria-expanded', 'true');
     }
@@ -495,6 +545,7 @@
       rows = searchRows(q, 10);
       cursor = rows.length ? 0 : -1;
       paint();
+      if (rows.length) scheduleQuotes(rows);
     }
 
     input.addEventListener('focus', loadSearchIndex);
