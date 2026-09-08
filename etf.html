@@ -180,7 +180,9 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
     Bemærk at samme fond ofte er noteret flere gange — akkumulerende og udbyttebetalende andele
     har hvert sit symbol og hver sin kurs, men deler formue. Omkostningsprocenten oplyser Yahoo
     kun for en del af fondene, især de amerikanske; hvor den mangler, står der en streg frem for
-    et gæt.
+    et gæt. Listen er ETF'er på nær nogle få danske investeringsforeninger, der står mærket som
+    det under navnet. De er noteret på Nasdaq København og handles over børsen som resten, men
+    de er ikke ETF'er, og kilden oplyser hverken formue eller omkostning for dem.
   </p>
 
 </div>
@@ -222,6 +224,11 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
   const pct = (v) => (v == null ? '<span class="faint">–</span>'
     : '<span class="num ' + K.dirClass(v) + '">' + K.fmtPct(v) + '</span>');
 
+  // Listen er ETF'er på nær nogle få. En dansk investeringsforening er ikke en
+  // ETF, så den skal kunne kendes fra rækkerne omkring den. Kun de rækker
+  // bærer feltet; står der intet, er det en ETF.
+  const KIND = { investeringsforening: 'Investeringsforening' };
+
   // ── Columns ────────────────────────────────────────────────────────────
   const COLUMNS = [
     { key: 'rank', label: '#', group: 'Fond', right: true, sortKey: 'rank', asc: true,
@@ -232,7 +239,8 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
       hint: 'Fondens navn og børssymbol. Klik på en række for at se fonden. Samme fond kan optræde flere gange — akkumulerende og udbyttebetalende andele har hvert sit symbol.',
       cell: (r) => '<a class="row-link block" href="' + K.fundUrl(r.symbol) + '">'
         + '<div class="font-semibold row-name">' + K.esc(r.name) + '</div>'
-        + '<div class="text-xs faint">' + K.flagOf(r.market) + ' ' + K.esc(r.symbol) + '</div></a>' },
+        + '<div class="text-xs faint">' + K.flagOf(r.market) + ' ' + K.esc(r.symbol)
+        + (KIND[r.kind] ? ' · ' + K.esc(KIND[r.kind]) : '') + '</div></a>' },
 
     { key: 'family', label: 'Udbyder', group: 'Fond', sortKey: 'family', asc: true,
       hint: 'Fondsselskabet bag. Vanguard, BlackRock (iShares) og Xtrackers står bag hovedparten af de europæiske UCITS-fonde.',

@@ -336,6 +336,9 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
 
   const pct = (n) => '<span class="' + K.dirClass(n) + '">' + K.fmtPct(n) + '</span>';
 
+  // Fondslisten er ETF'er på nær nogle få. Kun de andre bærer feltet.
+  const KIND = { investeringsforening: 'Investeringsforening' };
+
   function header(r) {
     const m = K.marketOf(r.market);
     const delayed = r.delayed_by ? ' · ' + r.delayed_by + ' min. forsinket' : '';
@@ -344,6 +347,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
       + '<h1 class="text-2xl md:text-3xl font-extrabold tracking-tight mt-2" style="text-wrap:balance">'
       +   K.esc(r.name) + '</h1>'
       + '<p class="text-sm muted mt-1">' + K.flagOf(r.market) + ' ' + K.esc(r.symbol)
+      +   (KIND[r.kind] ? ' · ' + K.esc(KIND[r.kind]) : '')
       +   ' · ' + K.esc(r.exchange || m.exchange) + delayed
       +   (r.family ? ' · ' + K.esc(r.family) : '') + '</p>'
       + '<div class="flex items-baseline gap-3 mt-4 flex-wrap">'
@@ -398,16 +402,28 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
     const what = r.category
       ? 'Fonden hører i kategorien <strong>' + K.esc(r.category) + '</strong>.'
       : 'Yahoo oplyser ikke en kategori for denne fond.';
+    const fee = r.expense_ratio != null
+      ? ' Den koster <strong>' + K.fmtPct(r.expense_ratio).replace('+', '') + '</strong> om året i '
+        + 'løbende omkostninger — det trækkes fra kursen løbende, ikke som en regning.'
+      : ' Den løbende omkostning er ikke oplyst her; den står i fondens eget faktaark.';
+
+    // En investeringsforening løser samme opgave som en ETF, men er ikke en, og
+    // så skal der ikke stå ETF her. Kilden har kurs og historik for den og
+    // ellers ingenting — derfor står tre af nøgletallene tomme, og det er den
+    // sætning der forklarer hvorfor.
+    const body = r.kind === 'investeringsforening'
+      ? 'En investeringsforening er en dansk forening, hvor mange lægger deres penge sammen og '
+        + 'køber en portefølje i fællesskab. Du køber én andel og ejer en bid af det hele. Den '
+        + 'gør det samme som en ETF, men er ikke en: foreningen er dansk, afdelingen er noteret '
+        + 'på Nasdaq København, og det er foreningen selv der udsteder nye andele, når nogen '
+        + 'køber. Yahoo har kurs og kurshistorik for den, men hverken kategori, formue eller '
+        + 'løbende omkostning — de tal står i fondens eget faktaark.'
+      : 'En ETF er én post på din liste, der indeholder mange selskaber på én gang. '
+        + 'Du køber en andel af hele kurven i stedet for at vælge selskaberne selv. ' + what + fee;
+
     return '<section class="card card-satin p-4 md:p-5 mb-4">'
       + '<h2 class="font-extrabold tracking-tight mb-2">Hvad er det her?</h2>'
-      + '<p class="text-sm muted">'
-      +   'En ETF er én post på din liste, der indeholder mange selskaber på én gang. '
-      +   'Du køber en andel af hele kurven i stedet for at vælge selskaberne selv. ' + what
-      +   (r.expense_ratio != null
-          ? ' Den koster <strong>' + K.fmtPct(r.expense_ratio).replace('+', '') + '</strong> om året i '
-            + 'løbende omkostninger — det trækkes fra kursen løbende, ikke som en regning.'
-          : ' Den løbende omkostning er ikke oplyst her; den står i fondens eget faktaark.')
-      + '</p></section>';
+      + '<p class="text-sm muted">' + body + '</p></section>';
   }
 
   function figuresCard(r) {
