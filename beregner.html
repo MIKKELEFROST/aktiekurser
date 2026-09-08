@@ -84,32 +84,32 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
         <label for="start">
           Startindskud<span class="hint-i" tabindex="0" role="note" aria-label="Om Startindskud" data-hint-title="Startindskud" data-hint="Det beløb du starter med. Det får hele perioden til at forrente sig og vejer derfor tungere end en enkelt månedlig indbetaling.">i</span>
         </label>
-        <span><input id="start" class="amount num" type="text" inputmode="numeric" autocomplete="off" min="0" step="1000" value="25.000"> <span class="unit">kr</span></span>
-        <input id="startR" type="range" min="0" max="500000" step="1000" value="25000" aria-label="Startindskud">
+        <span><input id="start" class="amount num" type="text" inputmode="numeric" autocomplete="off" min="0" step="1000" value="50.000"> <span class="unit">kr</span></span>
+        <input id="startR" type="range" min="0" max="500000" step="1000" value="50000" aria-label="Startindskud">
       </div>
 
       <div class="row">
         <label for="monthly">
           Månedligt indskud<span class="hint-i" tabindex="0" role="note" aria-label="Om Månedligt indskud" data-hint-title="Månedligt indskud" data-hint="Det beløb du lægger til hver måned. Indbetalingen sker først på måneden, så den forrentes i den måned der følger.">i</span>
         </label>
-        <span><input id="monthly" class="amount num" type="text" inputmode="numeric" autocomplete="off" min="0" step="100" value="2.000"> <span class="unit">kr</span></span>
-        <input id="monthlyR" type="range" min="0" max="25000" step="100" value="2000" aria-label="Månedligt indskud">
+        <span><input id="monthly" class="amount num" type="text" inputmode="numeric" autocomplete="off" min="0" step="100" value="3.500"> <span class="unit">kr</span></span>
+        <input id="monthlyR" type="range" min="0" max="25000" step="100" value="3500" aria-label="Månedligt indskud">
       </div>
 
       <div class="row">
         <label for="years">
           Antal år<span class="hint-i" tabindex="0" role="note" aria-label="Om Antal år" data-hint-title="Antal år" data-hint="Hvor længe pengene får lov at stå. Tid er den enkeltfaktor der betyder mest: renters rente vokser eksponentielt, så de sidste år bidrager langt mere end de første.">i</span>
         </label>
-        <span><input id="years" class="amount num" type="number" min="1" max="50" step="1" value="20"> <span class="unit">år</span></span>
-        <input id="yearsR" type="range" min="1" max="50" step="1" value="20" aria-label="Antal år">
+        <span><input id="years" class="amount num" type="number" min="1" max="50" step="1" value="10"> <span class="unit">år</span></span>
+        <input id="yearsR" type="range" min="1" max="50" step="1" value="10" aria-label="Antal år">
       </div>
 
       <div class="row">
         <label for="rate">
           Forventet årligt afkast<span class="hint-i" tabindex="0" role="note" aria-label="Om Forventet årligt afkast" data-hint-title="Forventet årligt afkast" data-hint="Det gennemsnitlige årlige afkast du regner med, før omkostninger og skat. Et globalt aktieindeks har historisk givet omkring 7% om året efter inflation — men med enkeltår fra -40% til +30%.">i</span>
         </label>
-        <span><input id="rate" class="amount num" type="number" min="-10" max="30" step="0.5" value="7"> <span class="unit">%</span></span>
-        <input id="rateR" type="range" min="-5" max="20" step="0.5" value="7" aria-label="Forventet årligt afkast">
+        <span><input id="rate" class="amount num" type="number" min="-10" max="30" step="0.5" value="10"> <span class="unit">%</span></span>
+        <input id="rateR" type="range" min="-5" max="20" step="0.5" value="10" aria-label="Forventet årligt afkast">
       </div>
 
       <div class="row adv" hidden>
@@ -330,7 +330,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
   }
 
   const FIELDS = ['start', 'monthly', 'years', 'rate', 'fee', 'raise', 'infl'];
-  const DEFAULTS = { start: 25000, monthly: 2000, years: 20, rate: 7, fee: 0.5, raise: 0, infl: 2 };
+  const DEFAULTS = { start: 50000, monthly: 3500, years: 10, rate: 10, fee: 0.5, raise: 0, infl: 2 };
   // Everything the simple view leaves out. Their inputs keep their values; the
   // projection just ignores them until the switch is on, so turning it off and
   // on again does not lose what was typed.

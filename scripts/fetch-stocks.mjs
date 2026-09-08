@@ -379,7 +379,9 @@ const raw = (o) => (o && o.raw != null && Number.isFinite(o.raw) ? o.raw : null)
 // non-fatal, so a company simply carries no key figures.
 const FUND_MODULES = ['defaultKeyStatistics', 'financialData', 'calendarEvents', 'earningsHistory',
   'majorHoldersBreakdown', 'insiderTransactions', 'summaryDetail', 'assetProfile',
-  'recommendationTrend'].join(',');
+  'recommendationTrend', 'earningsTrend', 'earnings', 'upgradeDowngradeHistory',
+  'institutionOwnership', 'fundOwnership', 'netSharePurchaseActivity',
+  'incomeStatementHistory', 'balanceSheetHistory', 'cashflowStatementHistory'].join(',');
 
 // Yahoo's transaction text is prose. Only these two forms are someone deciding
 // to trade with their own money; grants, gifts and option exercises are pay, and
@@ -467,6 +469,105 @@ async function fetchFundamentals(symbol, session) {
       target_high: raw(fd.targetHighPrice),
       target_low: raw(fd.targetLowPrice),
       target_analysts: raw(fd.numberOfAnalystOpinions),
+
+      // Fire årsregnskaber, skåret ned til de linjer en side faktisk viser.
+      // Hele opgørelsen er tre gange så stor og ville fordoble mappen uden at
+      // blive læst.
+      // Omsætning og bundlinje, fire år tilbage. Yahoo har tømt regnskabs-
+      // modulerne: balancen rummer i dag intet ud over datoen, pengestrømmene
+      // kun årets resultat, og resultatopgørelsen bærer stadig alle 24 felt-
+      // navne men kun to tal — målt på elleve selskaber i USA og Norden er
+      // omsætning og årets resultat de eneste der er udfyldt. Resten hentes
+      // ikke, frem for at blive gemt som en søjle af nuller.
+      statements: (() => {
+        const inc = (r.incomeStatementHistory?.incomeStatementHistory || []);
+        if (!inc.length) return null;
+        const at = (list, i) => list[i] || {};
+        // Yahoo skriver 0 hvor en linje ikke er indberettet. Et selskab med
+        // nul i omsætning eller nul i egenkapital findes stort set ikke, så et
+        // rent nul læses som "ikke oplyst" og bliver til en streg på siden i
+        // stedet for et tal der ser målt ud.
+        const line = (o) => { const v = raw(o); return v ? v : null; };
+        return inc.map((_, i) => {
+          const I = at(inc, i);
+          const revenue = line(I.totalRevenue), net = line(I.netIncome);
+          return {
+            year: (I.endDate?.fmt || '').slice(0, 4) || null,
+            revenue, net,
+            // Overskudsgraden regnes her frem for på siden, så den ikke kan
+            // afvige fra de to tal den står under.
+            margin: revenue && net != null ? round((net / revenue) * 100, 1) : null,
+          };
+        }).filter((y) => y.year).reverse();                          // ældste først
+      })(),
+
+      // Omsætning og indtjening kvartal for kvartal — appens søjler.
+      quarterly: (r.earnings?.financialsChart?.quarterly || [])
+        .filter((q) => q && q.date)
+        .map((q) => ({ q: String(q.date), revenue: raw(q.revenue), earnings: raw(q.earnings) })),
+
+      // Hvad analytikerne venter af vækst, ikke af kurs.
+      growth: (() => {
+        const t = r.earningsTrend?.trend || [];
+        const pick = (period) => {
+          const x = t.find((v) => v.period === period);
+          return x ? raw(x.growth) : null;
+        };
+        const g = { q0: pick('0q'), q1: pick('+1q'), y0: pick('0y'), y1: pick('+1y') };
+        return Object.values(g).some((v) => v != null) ? g : null;
+      })(),
+
+      // Hvem der har op- eller nedjusteret, og hvornår. Navne og datoer, ingen
+      // sammenvejning til en samlet dom.
+      ratings: (r.upgradeDowngradeHistory?.history || [])
+        .filter((h) => h.epochGradeDate && h.firm)
+        .sort((a, b) => b.epochGradeDate - a.epochGradeDate)
+        .slice(0, 10)
+        .map((h) => ({
+          date: isoDay(h.epochGradeDate), firm: h.firm,
+          from: h.fromGrade || null, to: h.toGrade || null, action: h.action || null,
+        })),
+
+      // Navngivne storaktionærer — institutioner og fonde i én liste.
+      holders: [
+        ...(r.institutionOwnership?.ownershipList || []).map((o) => ({ ...o, kind: 'institution' })),
+        ...(r.fundOwnership?.ownershipList || []).map((o) => ({ ...o, kind: 'fond' })),
+      ].filter((o) => o.organization && raw(o.pctHeld) != null)
+       .sort((a, b) => raw(b.pctHeld) - raw(a.pctHeld))
+       .slice(0, 10)
+       .map((o) => ({
+         name: o.organization, kind: o.kind,
+         pct: round(raw(o.pctHeld) * 100, 2),
+         shares: raw(o.position), date: o.reportDate?.fmt || null,
+       })),
+
+      // Insiderhandel talt op af kilden selv, i stedet for af os ud af
+      // enkelttransaktioner.
+      insider_net: (() => {
+        const n = r.netSharePurchaseActivity;
+        if (!n || !n.period) return null;
+        return {
+          period: n.period,
+          buys: raw(n.buyInfoCount), sells: raw(n.sellInfoCount),
+          bought: raw(n.buyInfoShares), sold: raw(n.sellInfoShares),
+          net_pct: round(raw(n.netPercentInsiderShares) == null ? null : raw(n.netPercentInsiderShares) * 100, 2),
+        };
+      })(),
+
+      // Risiko- og struktur-tal fra de to moduler vi allerede henter.
+      extras: {
+        beta: raw(ks.beta),
+        enterprise_value: raw(ks.enterpriseValue),
+        ev_ebitda: raw(ks.enterpriseToEbitda),
+        ev_revenue: raw(ks.enterpriseToRevenue),
+        float_shares: raw(ks.floatShares),
+        short_shares: raw(ks.sharesShort),
+        short_pct_float: raw(ks.shortPercentOfFloat) == null ? null : round(raw(ks.shortPercentOfFloat) * 100, 2),
+        short_ratio: raw(ks.shortRatio),
+        last_split: ks.lastSplitFactor || null,
+        last_split_date: ks.lastSplitDate?.fmt || null,
+      },
+
       ex_dividend: sd.exDividendDate?.fmt || null,
       dividend_date: sd.dividendDate?.fmt || null,
       payout_ratio: raw(sd.payoutRatio),
@@ -601,8 +702,10 @@ async function fetchTicker(symbol) {
 // series below makes the recent two years exact, and a stock's peak is usually
 // recent anyway. Failure is non-fatal — the fields stay null.
 async function fetchLifetime(symbol) {
+  // Udbytter og splits koster ingenting her: det er samme kald, og range=max
+  // dækker hele noteringens levetid.
   const url = 'https://query1.finance.yahoo.com/v8/finance/chart/'
-    + encodeURIComponent(symbol) + '?interval=1mo&range=max';
+    + encodeURIComponent(symbol) + '?interval=1mo&range=max&events=div%2Csplit';
   const res = await fetch(url, {
     headers: { 'user-agent': 'Mozilla/5.0 (compatible; aktiekurser/1.0)', accept: 'application/json' },
   });
@@ -666,8 +769,25 @@ async function fetchLifetime(symbol) {
   }
   if (snapshot && closes[last] != null) byDate.set(day(stamps[last]), closes[last]);
 
-  return [...byDate.entries()].sort((a, b) => a[0].localeCompare(b[0]))
+  const series = [...byDate.entries()].sort((a, b) => a[0].localeCompare(b[0]))
     .map(([date, close]) => ({ date, close }));
+
+  // Yahoo dates these in the exchange's own timezone like the bars, so they go
+  // through the same conversion. The dividends are capped at the most recent
+  // forty — a page shows years, not four decades of quarterly payments.
+  const ev = r.events || {};
+  const dividends = Object.values(ev.dividends || {})
+    .filter((d) => d && d.date != null && d.amount != null)
+    .map((d) => ({ date: day(d.date), amount: round(d.amount, 4) }))
+    .sort((a, b) => a.date.localeCompare(b.date))
+    .slice(-40);
+  const splits = Object.values(ev.splits || {})
+    .filter((x) => x && x.date != null && x.numerator && x.denominator)
+    .map((x) => ({ date: day(x.date), ratio: x.numerator + ':' + x.denominator,
+                   factor: round(x.numerator / x.denominator, 4) }))
+    .sort((a, b) => a.date.localeCompare(b.date));
+
+  return { series, dividends, splits };
 }
 
 
@@ -896,9 +1016,16 @@ async function main() {
   // the daily one already held, so the last two years stay day-accurate.
   let athOk = 0;
   const lifetime = {};
+  // Betalte udbytter og aktiesplits, som selskabssiden viser under Udbytter og
+  // Begivenheder. De hører til historikken, ikke til nøgletallene.
+  const events = {};
   await pool(rows, CONCURRENCY, async (r) => {
     try {
-      const monthly = await fetchLifetime(r.symbol);
+      const lt = await fetchLifetime(r.symbol);
+      const monthly = lt.series;
+      if (lt.dividends.length || lt.splits.length) {
+        events[r.symbol] = { dividends: lt.dividends, splits: lt.splits };
+      }
       if (!monthly.length) return;
       const recent = (history[r.symbol]?.closes || []).map((c, i) => ({ date: history[r.symbol].dates[i], close: c }));
       const all = monthly.concat(recent);
@@ -1032,8 +1159,12 @@ async function main() {
     await mkdir(OUT_FUND_DIR, { recursive: true });
     let fWritten = 0;
     for (const [symbol, d] of Object.entries(detail)) {
+      // Udbytter og splits kommer fra kurshistorikken, ikke fra nøgletals-
+      // kaldet, men de hører hjemme i samme fil som resten af selskabet.
+      const ev = events[symbol] || {};
       if (await writeIfChanged(resolve(OUT_FUND_DIR, symbol + '.json'),
-        { source: 'Yahoo Finance', symbol, ...d }, null)) fWritten++;
+        { source: 'Yahoo Finance', symbol, ...d,
+          dividends: ev.dividends || [], splits: ev.splits || [] }, null)) fWritten++;
     }
     if (!LIMIT) {
       const keep = new Set(Object.keys(detail).map((s) => s + '.json'));

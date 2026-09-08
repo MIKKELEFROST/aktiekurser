@@ -118,6 +118,30 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
      space and was landing on top of "Lavest". */
   .tg-ends { display: flex; justify-content: space-between; font-size: 11px; color: var(--text-muted); margin-top: 62px; }
 
+  /* ── Søjler ───────────────────────────────────────────────────────────
+     Udbytte pr. år og omsætning pr. kvartal. Højden bærer tallet, og tallet
+     står over søjlen, så den aldrig skal aflæses mod en akse der ikke er der. */
+  .bars { display: flex; align-items: flex-end; gap: 10px; height: 150px; margin-top: 12px; }
+  .bar-col { flex: 1 1 0; display: flex; flex-direction: column; justify-content: flex-end;
+             align-items: center; height: 100%; min-width: 0; }
+  .bar-val { font-size: 11px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px;
+             white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .bar-fill { width: 100%; max-width: 46px; background: var(--accent); border-radius: 4px 4px 0 0; min-height: 2px; }
+  .bar-key { font-size: 11px; color: var(--text-muted); margin-top: 6px; white-space: nowrap; }
+
+  /* ── Årsregnskab ──────────────────────────────────────────────────────
+     Årene som kolonner, linjerne som rækker — den vej et regnskab læses. */
+  .fin { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .fin th, .fin td { padding: 7px 10px; text-align: right; white-space: nowrap; }
+  .fin th:first-child, .fin td:first-child { text-align: left; }
+  .fin thead th { font-size: 11px; font-weight: 700; color: var(--text-muted); }
+  .fin tbody tr { border-top: 1px solid var(--gridline); }
+  .fin tbody td:first-child { color: var(--text-secondary); }
+
+  /* ── Begivenheder ─────────────────────────────────────────────────────*/
+  .ev-row { display: flex; align-items: center; gap: 12px; padding: 9px 0; border-top: 1px solid var(--gridline); }
+  .ev-date { flex: 0 0 auto; width: 5.5rem; font-size: 12px; color: var(--text-muted); font-variant-numeric: tabular-nums; }
+
 </style>
 </head>
 
@@ -773,7 +797,218 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
           'Dagen udbyttet forventes udbetalt.') : '')
       + (payout != null ? statRow('Udbytteandel', num(payout * 100, ' %'), '',
           'Hvor stor en del af overskuddet der betales ud som udbytte. Resten bliver i selskabet.') : '')
-      + '<p class="text-xs faint mt-2">Kilden opgiver ikke, hvad der er udbetalt de foregående år.</p>'
+      + (dividendBars(r)
+          || '<p class="text-xs faint mt-2">Kilden opgiver ikke, hvad der er udbetalt de foregående år.</p>')
+    + '</div>';
+  }
+
+  // ── Søjler ─────────────────────────────────────────────────────────────
+  // One helper for both bar charts. The value is printed above each bar, so
+  // the height is a comparison rather than something to be read off an axis
+  // that is not drawn.
+  function bars(items, fmt) {
+    const max = Math.max.apply(null, items.map((x) => Math.abs(x.value) || 0)) || 1;
+    return '<div class="bars">' + items.map((x) => {
+      const h = Math.max(2, Math.round((Math.abs(x.value) / max) * 108));
+      return '<div class="bar-col">'
+        + '<span class="bar-val">' + fmt(x.value) + '</span>'
+        + '<span class="bar-fill" style="height:' + h + 'px"></span>'
+        + '<span class="bar-key">' + K.esc(x.key) + '</span></div>';
+    }).join('') + '</div>';
+  }
+
+  // ── Udbyttehistorik ────────────────────────────────────────────────────
+  // Summed per calendar year: a quarterly payer would otherwise show four
+  // small bars where a yearly payer shows one large, and the two would not be
+  // comparable side by side.
+  function dividendBars(r) {
+    const list = (FUND && FUND.dividends) || [];
+    if (list.length < 2) return '';
+    const byYear = new Map();
+    for (const d of list) {
+      const y = d.date.slice(0, 4);
+      byYear.set(y, (byYear.get(y) || 0) + d.amount);
+    }
+    const years = [...byYear.entries()].sort((a, b) => a[0].localeCompare(b[0])).slice(-6);
+    if (years.length < 2) return '';
+    const partial = years[years.length - 1][0] === String(new Date().getFullYear());
+    return bars(years.map(([y, v]) => ({ key: '’' + y.slice(2), value: v })),
+        (v) => v.toLocaleString('da-DK', { maximumFractionDigits: 2 }))
+      + '<p class="text-xs faint mt-2">Udbetalt pr. aktie i ' + K.esc(r.currency)
+      + ', lagt sammen pr. kalenderår.' + (partial ? ' Indeværende år er ikke slut.' : '') + '</p>';
+  }
+
+  // ── Begivenheder ───────────────────────────────────────────────────────
+  function eventsBlock(r) {
+    const splits = (FUND && FUND.splits) || [];
+    if (!splits.length) return '';
+    const now = Date.now();
+    const ago = (iso) => {
+      const years = Math.round((now - new Date(iso + 'T00:00:00Z')) / 31557600000);
+      return years <= 0 ? 'i år' : years === 1 ? 'for 1 år siden' : 'for ' + years + ' år siden';
+    };
+    return '<div class="card rounded-2xl p-5 mb-5">'
+      + '<h2 class="text-sm font-bold mb-1">Begivenheder</h2>'
+      + '<p class="text-xs muted mb-2">Aktiesplit deler hver aktie i flere. Kursen falder tilsvarende, '
+        + 'så værdien af det du ejer er den samme — kurshistorikken her er tilbageregnet, så grafen ikke får et spring.</p>'
+      + splits.slice().reverse().map((sp) => '<div class="ev-row">'
+          + '<span class="ev-date">' + K.fmtDate(sp.date) + '</span>'
+          + '<span class="text-sm font-semibold">' + K.esc(sp.ratio.replace(':', '-for-')) + ' split</span>'
+          + '<span class="text-xs faint ml-auto">' + ago(sp.date) + '</span></div>').join('')
+    + '</div>';
+  }
+
+  // ── Årsregnskab ────────────────────────────────────────────────────────
+  // Four years, the lines a reader actually looks for, years as columns. A
+  // line the source did not report shows a dash — Yahoo writes zero where a
+  // line is missing, and the pipeline turns that into nothing rather than into
+  // a figure that looks measured.
+  function statementsBlock(r) {
+    const years = (FUND && FUND.statements) || [];
+    if (years.length < 2) return '';
+    const cur = ' ' + K.esc(r.currency);
+    const big = (v) => (v == null ? '<span class="faint">–</span>' : '<span class="num">' + K.fmtBig(v) + '</span>');
+    const LINES = [
+      ['Omsætning', 'revenue', 'Selskabets samlede salg i året.'],
+      ['Årets resultat', 'net', 'Bundlinjen — hvad der er tilbage når alt er betalt.'],
+    ];
+    const used = LINES.filter(([, key]) => years.some((y) => y[key] != null));
+    if (!used.length) return '';
+
+    return '<div class="card rounded-2xl p-5 mb-5">'
+      + '<h2 class="text-sm font-bold mb-1">Omsætning og resultat, fire år</h2>'
+      + '<p class="text-xs muted mb-2">Toplinje og bundlinje for de fire seneste regnskabsår, i '
+        + K.esc(r.currency) + '. Det er alt kilden oplyser om regnskaberne — balance, '
+        + 'pengestrømme og posterne derimellem leveres ikke længere.</p>'
+      + '<div class="overflow-x-auto" style="overflow-x:auto"><table class="fin">'
+      + '<thead><tr><th></th>' + years.map((y) => '<th>' + K.esc(y.year) + '</th>').join('') + '</tr></thead>'
+      + '<tbody>' + used.map(([label, key, hint]) => '<tr>'
+          + '<td><span class="hint" tabindex="0" data-hint-title="' + K.esc(label)
+            + '" data-hint="' + K.esc(hint) + '">' + K.esc(label) + '</span></td>'
+          + years.map((y) => '<td>' + big(y[key]) + '</td>').join('') + '</tr>').join('')
+      + (years.some((y) => y.margin != null) ? '<tr>'
+          + '<td><span class="hint" tabindex="0" data-hint-title="Overskudsgrad"'
+            + ' data-hint="Årets resultat som andel af omsætningen. Regnet ud af de to linjer ovenfor.">'
+            + 'Overskudsgrad</span></td>'
+          + years.map((y) => '<td>' + (y.margin == null ? '<span class="faint">–</span>'
+              : '<span class="num ' + K.dirClass(y.margin) + '">'
+                + y.margin.toLocaleString('da-DK', { maximumFractionDigits: 1 }) + ' %</span>') + '</td>').join('')
+          + '</tr>' : '')
+      + '</tbody></table></div></div>';
+  }
+
+  // ── Kvartalstal ────────────────────────────────────────────────────────
+  function quarterlyBlock(r) {
+    const q = (FUND && FUND.quarterly) || [];
+    const withRevenue = q.filter((x) => x.revenue != null);
+    if (withRevenue.length < 2) return '';
+    return '<div class="card rounded-2xl p-5 mb-5">'
+      + '<h2 class="text-sm font-bold mb-1">Omsætning pr. kvartal</h2>'
+      + '<p class="text-xs muted">De seneste kvartaler, i ' + K.esc(r.currency) + '. '
+        + 'Mange selskaber sælger skævt hen over året, så et kvartal siger mest holdt op mod samme kvartal året før.</p>'
+      + bars(withRevenue.map((x) => ({ key: x.q, value: x.revenue })), (v) => K.fmtBig(v))
+    + '</div>';
+  }
+
+  // ── Vækstforventninger ─────────────────────────────────────────────────
+  function growthBlock(r) {
+    const g = FUND && FUND.growth;
+    if (!g) return '';
+    const row = (label, v, hint) => v == null ? '' :
+      statRow(label, '<span class="num ' + K.dirClass(v) + '">' + K.fmtPct(v * 100) + '</span>', '', hint);
+    const body = row('Indeværende kvartal', g.q0, 'Analytikernes forventede vækst i indtjening pr. aktie mod samme kvartal sidste år.')
+      + row('Næste kvartal', g.q1, 'Forventet vækst i indtjening pr. aktie i det kommende kvartal.')
+      + row('Indeværende år', g.y0, 'Forventet vækst i indtjening pr. aktie for hele regnskabsåret.')
+      + row('Næste år', g.y1, 'Forventet vækst i indtjening pr. aktie for det kommende regnskabsår.');
+    if (!body) return '';
+    return '<div class="card rounded-2xl p-5 mb-5">'
+      + '<h2 class="text-sm font-bold mb-1">Forventet vækst i indtjening</h2>'
+      + '<p class="text-xs muted mb-1">Analytikernes gennemsnitlige forventning. Det er deres skøn, ikke Coop Banks, '
+        + 'og forventninger bliver ofte ikke indfriet.</p>' + body
+    + '</div>';
+  }
+
+  // ── Analytikernes ændringer ────────────────────────────────────────────
+  function ratingsBlock(r) {
+    const list = (FUND && FUND.ratings) || [];
+    if (!list.length) return '';
+    const ACTION = { up: 'Opjusteret', down: 'Nedjusteret', init: 'Ny dækning', reit: 'Fastholdt', main: 'Fastholdt' };
+    return '<div class="card rounded-2xl p-5 mb-5">'
+      + '<h2 class="text-sm font-bold mb-1">Analytikernes seneste ændringer</h2>'
+      + '<p class="text-xs muted mb-2">Hvem der har ændret vurdering, og hvornår. Optegnet fra kilden — '
+        + 'ingen af dem er Coop Banks vurdering.</p>'
+      + '<div class="overflow-x-auto" style="overflow-x:auto"><table class="w-full text-sm border-collapse">'
+      + '<thead><tr class="text-xs faint text-left"><th class="py-2 pr-3 font-semibold">Dato</th>'
+        + '<th class="py-2 px-3 font-semibold">Analysehus</th>'
+        + '<th class="py-2 px-3 font-semibold">Ændring</th>'
+        + '<th class="py-2 pl-3 font-semibold">Til</th></tr></thead><tbody>'
+      + list.map((h) => '<tr class="border-t divider">'
+          + '<td class="py-2 pr-3 num muted">' + K.fmtDate(h.date) + '</td>'
+          + '<td class="py-2 px-3">' + K.esc(h.firm) + '</td>'
+          + '<td class="py-2 px-3 muted">' + K.esc(ACTION[h.action] || h.action || '–') + '</td>'
+          + '<td class="py-2 pl-3 font-semibold">' + K.esc(h.to || '–') + '</td></tr>').join('')
+      + '</tbody></table></div></div>';
+  }
+
+  // ── Storaktionærer ─────────────────────────────────────────────────────
+  function holdersBlock(r) {
+    const list = (FUND && FUND.holders) || [];
+    if (!list.length) return '';
+    return '<div class="card rounded-2xl p-5 mb-5">'
+      + '<h2 class="text-sm font-bold mb-1">Største aktionærer</h2>'
+      + '<p class="text-xs muted mb-2">Institutioner og fonde med den største andel, som de sidst har indberettet. '
+        + 'Indberetningerne er forsinkede, og en position kan være ændret siden.</p>'
+      + '<div class="overflow-x-auto" style="overflow-x:auto"><table class="w-full text-sm border-collapse">'
+      + '<thead><tr class="text-xs faint text-left"><th class="py-2 pr-3 font-semibold">Ejer</th>'
+        + '<th class="py-2 px-3 font-semibold text-right">Andel</th>'
+        + '<th class="py-2 px-3 font-semibold text-right">Aktier</th>'
+        + '<th class="py-2 pl-3 font-semibold text-right">Indberettet</th></tr></thead><tbody>'
+      + list.map((h) => '<tr class="border-t divider">'
+          + '<td class="py-2 pr-3">' + K.esc(h.name) + '<div class="text-xs faint">' + K.esc(h.kind) + '</div></td>'
+          + '<td class="py-2 px-3 num text-right font-semibold">' + (h.pct == null ? '–' : K.fmtPct(h.pct).replace('+', '')) + '</td>'
+          + '<td class="py-2 px-3 num text-right muted">' + (h.shares == null ? '–' : K.fmtBig(h.shares)) + '</td>'
+          + '<td class="py-2 pl-3 num text-right muted">' + (h.date ? K.fmtDate(h.date) : '–') + '</td></tr>').join('')
+      + '</tbody></table></div></div>';
+  }
+
+  // ── Risiko og struktur ─────────────────────────────────────────────────
+  function riskBlock(r) {
+    const e = FUND && FUND.extras;
+    if (!e) return '';
+    const num = (v, d) => v == null ? null
+      : '<span class="num">' + v.toLocaleString('da-DK', { maximumFractionDigits: d == null ? 2 : d }) + '</span>';
+    const body =
+        (e.beta == null ? '' : statRow('Beta', num(e.beta), '',
+          'Hvor meget aktien svinger i forhold til markedet. 1 betyder den følger markedet; over 1 svinger den mere, under 1 mindre.'))
+      + (e.enterprise_value == null ? '' : statRow('Virksomhedsværdi', '<span class="num">' + K.fmtBig(e.enterprise_value) + ' ' + K.esc(r.currency) + '</span>', '',
+          'Markedsværdi plus gæld minus kontanter — hvad hele selskabet ville koste at overtage.'))
+      + (e.ev_ebitda == null ? '' : statRow('EV/EBITDA', num(e.ev_ebitda) + 'x', '',
+          'Virksomhedsværdien delt med driftsindtjeningen. Måler prisen uafhængigt af hvordan selskabet er finansieret.'))
+      + (e.float_shares == null ? '' : statRow('Frit omsættelige aktier', '<span class="num">' + K.fmtBig(e.float_shares) + '</span>', '',
+          'De aktier der reelt handles frit, altså uden dem der ligger fast hos stiftere, stat eller ledelse.'))
+      + (e.short_pct_float == null ? '' : statRow('Shortet andel', num(e.short_pct_float) + ' %', '',
+          'Hvor stor en del af de frit omsættelige aktier der er lånt og solgt af nogen, som venter et kursfald.'))
+      + (e.short_ratio == null ? '' : statRow('Dage at dække short', num(e.short_ratio, 1), '',
+          'Hvor mange normale handelsdage det ville tage at købe alle de shortede aktier tilbage.'))
+      + (!e.last_split ? '' : statRow('Seneste split', K.esc(e.last_split) + (e.last_split_date ? ' <span class="faint">' + K.fmtDate(e.last_split_date) + '</span>' : ''), '',
+          'Hvornår aktien sidst blev delt op, og i hvilket forhold.'));
+    if (!body) return '';
+    return '<div class="card rounded-2xl p-5 mb-5">'
+      + '<h2 class="text-sm font-bold mb-1">Risiko og struktur</h2>' + body + '</div>';
+  }
+
+  // ── Insiderhandel samlet ───────────────────────────────────────────────
+  function insiderNetBlock(r) {
+    const n = FUND && FUND.insider_net;
+    if (!n || (!n.buys && !n.sells)) return '';
+    return '<div class="card rounded-2xl p-5 mb-5">'
+      + '<h2 class="text-sm font-bold mb-1">Insiderhandel samlet</h2>'
+      + '<p class="text-xs muted mb-1">Optalt af kilden over ' + K.esc(n.period === '6m' ? 'seks måneder' : n.period)
+        + '. Ledelsen sælger af mange grunde — skat, et hus, en spredning — så salg siger mindre end køb.</p>'
+      + statRow('Antal køb', '<span class="num">' + (n.buys ?? 0) + '</span>', '', 'Antal indberettede købstransaktioner i perioden.')
+      + statRow('Antal salg', '<span class="num">' + (n.sells ?? 0) + '</span>', '', 'Antal indberettede salgstransaktioner i perioden.')
+      + (n.bought == null ? '' : statRow('Aktier købt', '<span class="num">' + K.fmtBig(n.bought) + '</span>', '', 'Samlet antal aktier købt af insidere.'))
+      + (n.sold == null ? '' : statRow('Aktier solgt', '<span class="num">' + K.fmtBig(n.sold) + '</span>', '', 'Samlet antal aktier solgt af insidere.'))
     + '</div>';
   }
 
@@ -985,6 +1220,13 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     const now = new Date();
     const back = (y) => { const d = new Date(now); d.setFullYear(d.getFullYear() - y); return d.toISOString().slice(0, 10); };
 
+    // A window the series cannot reach is dropped rather than quietly clamped:
+    // nearestIndex lands on the first close there is, so a company listed in
+    // 2019 was showing its 2019 price under the heading "For 10 år siden".
+    // "Ved første kurs" already carries that case, and says the date itself.
+    const reaches = (fromDate, firstDate) =>
+      new Date(firstDate) - new Date(fromDate) <= 45 * 86400000;
+
     const at = (fromDate, label) => {
       // Daily closes where they reach, monthly beyond. Otherwise "1 år" here
       // would be measured off a month end while the table above measures it off
@@ -993,6 +1235,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
       const src = daily ? full : monthly;
       const i = K.nearestIndex(src.dates, fromDate);
       if (i === -1) return null;
+      if (label !== 'Ved første kurs' && !reaches(fromDate, src.dates[i])) return null;
       const base = src.closes[i];
       if (!base || r.price == null) return null;
       // Latest price rather than the series' last close: today is not over.
@@ -1173,7 +1416,8 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
   function simpleFooter(r) {
     return '<div class="card rounded-2xl p-4 mt-5 text-xs muted" style="max-width:80ch">'
       + 'Vil du se selskabet målt mod sit indeks, hvad 10.000 kr. ville være blevet til, '
-      + 'regnskabskalenderen, de største fald, ejerforhold og alt det vi har regnet ud af kurshistorikken? '
+      + 'fire års regnskaber, omsætning pr. kvartal, analytikernes seneste ændringer, '
+      + 'de største aktionærer, insiderhandel, beta og shortet andel? '
       + 'Sæt flueben i <strong style="color:var(--text-primary)">Avanceret visning</strong> '
       + 'øverst på siden — valget huskes.</div>';
   }
@@ -1435,7 +1679,8 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     // met expectations, what it pays out, what the analysts say, and what else
     // is like it. Nothing on it values the company on our behalf.
     const appPage = aboutBlock(r) + infoBlock(r) + keyFiguresBlock(r)
-      + surpriseBlock(r) + dividendBlock(r) + analystBlock(r) + targetBlock(r)
+      + surpriseBlock(r) + dividendBlock(r) + eventsBlock(r)
+      + analystBlock(r) + targetBlock(r)
       + peersBlock(r);
 
     // Everything this project can do that the app does not: the company
@@ -1445,6 +1690,13 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui'
     const ours = performanceBlock(r) + investedBlock(r)
       + '<div class="grid md:grid-cols-2 gap-5 items-start mb-5 mt-5">' + calendarBlock(r) + right + '</div>'
       + drawdownBlock(r)
+      + statementsBlock(r)
+      + quarterlyBlock(r)
+      + growthBlock(r)
+      + ratingsBlock(r)
+      + riskBlock(r)
+      + holdersBlock(r)
+      + insiderNetBlock(r)
       + ownershipBlock(r)
       + factsBlock(r);
 
