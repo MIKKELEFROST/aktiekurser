@@ -172,6 +172,10 @@
   const loadKeyFigures = () => loadJson('nogletal.json');
   const loadBenchmarks = () => loadJson('indeks.json');
   const loadFundamentals = (symbol) => loadJson('regnskab/' + encodeURIComponent(symbol) + '.json');
+  // Hvad en fond ejer: de ti største poster, sektorfordelingen og
+  // kalenderårsafkastet. Egen fil, fordi fondslisten allerede fylder 1,3 MB og
+  // det her kun bruges på én side.
+  const loadFundDetail = (symbol) => loadJson('etf-detaljer/' + encodeURIComponent(symbol) + '.json');
 
   // ── Live kurser ───────────────────────────────────────────────────────
   // The files above are the floor: every page renders from them and needs no
@@ -639,10 +643,14 @@
     initHints, renderNav,
     fmtPrice, fmtPct, fmtDelta, fmtInt, fmtBig, fmtDate, fmtAge, dirClass, esc,
     priceIn, currencyLabel, isConverted,
-    decorate, loadList, loadHistory, loadArchive, spliceDaily, loadKeyFigures, loadBenchmarks, loadFundamentals,
+    decorate, loadList, loadHistory, loadArchive, spliceDaily, loadKeyFigures, loadBenchmarks, loadFundamentals, loadFundDetail,
     liveQuotes, tradingNow, startLive,
     peOf, moveBetween, nearestIndex, drawdownSeries,
     MARKETS, marketOf, flagOf, indexLabel,
     sparkline, rangeBar, slug, stockUrl, fundUrl,
+    // Fondssiden bruger det samme indeks til at afgøre, hvilke af en fonds
+    // beholdninger vi selv har en side om. Det er hentet i forvejen, hvis
+    // nogen har søgt, og ellers henter den det én gang.
+    loadSearchIndex,
   };
 })(window);
