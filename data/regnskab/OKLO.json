@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T19:39:42.963Z",
+  "updated_at": "2026-09-09T19:29:17.686Z",
   "source": "Yahoo Finance",
   "symbol": "OKLO",
   "summary": "Oklo Inc. develops fission power plants to provide energy at scale to customers in the United States. The company offers Aurora Powerhouse, which is designed to produce between 15 and up to 75 megawatts of electricity. It is also commercializing nuclear fuel recycling and fuel fabrication technology that can convert used nuclear fuel into usable fuel for its reactors. The company was formerly known as AltC Acquisition Corp. and changed its name to Oklo Inc. in May 2024. Oklo Inc. was founded in 2013 and is headquartered in Santa Clara, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-10",
   "earnings_estimated": false,
   "earnings_call": "2026-08-07",
-  "eps_estimate": -0.23805,
+  "eps_estimate": -0.24125,
   "analysts": {
     "strong_buy": 5,
     "buy": 10,
@@ -66,12 +66,19 @@
     }
   ],
   "growth": {
-    "q0": -0.1903,
-    "q1": 0.067,
+    "q0": -0.2062,
+    "q1": 0.0542,
     "y0": -0.3559,
     "y1": -0.0287
   },
   "ratings": [
+    {
+      "date": "2026-09-09",
+      "firm": "Piper Sandler",
+      "from": null,
+      "to": "Overweight",
+      "action": "init"
+    },
     {
       "date": "2026-08-10",
       "firm": "Truist Securities",
@@ -134,13 +141,6 @@
       "from": "Outperform",
       "to": "Outperform",
       "action": "reit"
-    },
-    {
-      "date": "2026-05-19",
-      "firm": "Wolfe Research",
-      "from": null,
-      "to": "Peer Perform",
-      "action": "init"
     }
   ],
   "holders": [
@@ -217,17 +217,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 24,
-    "sells": 33,
-    "bought": 968575,
-    "sold": 2604681,
+    "buys": 25,
+    "sells": 34,
+    "bought": 970276,
+    "sold": 2605219,
     "net_pct": -5.4
   },
   "extras": {
     "beta": 1.195,
-    "enterprise_value": 5215936512,
-    "ev_ebitda": -24.059,
-    "ev_revenue": 4310.691,
+    "enterprise_value": 5595412480,
+    "ev_ebitda": -25.809,
+    "ev_revenue": 4624.308,
     "float_shares": 149498665,
     "short_shares": 25996552,
     "short_pct_float": 15.86,
@@ -260,6 +260,24 @@
     }
   ],
   "insiders": [
+    {
+      "name": "NARAYANADAS VIVEK",
+      "role": "General Counsel",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 1701,
+      "date": "2026-09-08"
+    },
+    {
+      "name": "NARAYANADAS VIVEK",
+      "role": "General Counsel",
+      "kind": "sell",
+      "text": "Sale at price 39.88 per share.",
+      "value": 21455,
+      "shares": 538,
+      "date": "2026-09-04"
+    },
     {
       "name": "BEALMEAR RICHARD CRAIG",
       "role": "Chief Financial Officer",
@@ -330,24 +348,6 @@
       "text": "Sale at price 39.77 per share.",
       "value": 461014,
       "shares": 11592,
-      "date": "2026-08-24"
-    },
-    {
-      "name": "NARAYANADAS VIVEK",
-      "role": "General Counsel",
-      "kind": "sell",
-      "text": "Sale at price 39.77 per share.",
-      "value": 129809,
-      "shares": 3264,
-      "date": "2026-08-24"
-    },
-    {
-      "name": "HANSON JOHN",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 39.77 per share.",
-      "value": 21436,
-      "shares": 539,
       "date": "2026-08-24"
     }
   ],

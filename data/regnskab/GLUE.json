@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T19:39:42.441Z",
+  "updated_at": "2026-09-09T19:29:16.940Z",
   "source": "Yahoo Finance",
   "symbol": "GLUE",
   "summary": "Monte Rosa Therapeutics, Inc., a clinical-stage biotechnology company, engages in the development of novel small molecule precision medicines that employ the body's natural mechanisms to selectively degrade therapeutically relevant proteins. The company develops orally bioavailable molecular glue degraders (MGDs), such as MRT-2359 for the treatment of MYC-driven tumors; MRT-6160 for the treatment of neurologic and systemic autoimmune and inflammatory diseases; and MRT-8102 for the treatment of inflammatory diseases driven by IL-1a, IL-1ß and IL-18, as well as damage-associated molecular patterns. In addition, it develops CDK2 to treat multiple cancers, including ovarian, endometrial, gastric and breast. Further, its pipeline includes programs in immunology and inflammation indications, oncology, cardiovascular, metabolic, and genetic diseases. The company also develops QuEEN, a discovery engine, to enable its target-centric MGD discovery and development approach and its rational design of MGD product candidates. It has a strategic collaboration and licensing agreement with F. Hoffmann-La Roche Ltd.; and Novartis. The company was incorporated in 2019 and is headquartered in Boston, Massachusetts.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": true,
   "earnings_call": null,
-  "eps_estimate": -0.34694,
+  "eps_estimate": -0.22694,
   "analysts": {
     "strong_buy": 2,
     "buy": 6,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": -0.0513,
-    "q1": 0.333,
-    "y0": -2.4052,
-    "y1": -0.1975
+    "q0": 0.3123,
+    "q1": 0.33560002,
+    "y0": -2.1412,
+    "y1": -0.29709998
   },
   "ratings": [
+    {
+      "date": "2026-09-09",
+      "firm": "Wedbush",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "reit"
+    },
     {
       "date": "2026-08-25",
       "firm": "Guggenheim",
@@ -140,13 +147,6 @@
       "from": "Overweight",
       "to": "Overweight",
       "action": "main"
-    },
-    {
-      "date": "2026-01-14",
-      "firm": "Piper Sandler",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "reit"
     }
   ],
   "holders": [
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.5,
-    "enterprise_value": 597620480,
-    "ev_ebitda": -3.44,
-    "ev_revenue": 20.803,
+    "enterprise_value": 634305216,
+    "ev_ebitda": -3.651,
+    "ev_revenue": 22.08,
     "float_shares": 54476019,
     "short_shares": 17457317,
     "short_pct_float": 20.78,
@@ -284,15 +284,6 @@
     {
       "name": "CHAMPOUX JENNIFER",
       "role": "Chief Operating Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 3.98 per share.",
-      "value": 17317,
-      "shares": 4351,
-      "date": "2026-07-15"
-    },
-    {
-      "name": "CHAMPOUX JENNIFER",
-      "role": "Chief Operating Officer",
       "kind": "sell",
       "text": "Sale at price 23.38 per share.",
       "value": 101730,
@@ -300,13 +291,13 @@
       "date": "2026-07-15"
     },
     {
-      "name": "TOWNSON SHARON",
-      "role": "Officer",
+      "name": "CHAMPOUX JENNIFER",
+      "role": "Chief Operating Officer",
       "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 6.14 per share.",
-      "value": 36840,
-      "shares": 6000,
-      "date": "2026-07-06"
+      "text": "Conversion of Exercise of derivative security at price 3.98 per share.",
+      "value": 17317,
+      "shares": 4351,
+      "date": "2026-07-15"
     },
     {
       "name": "TOWNSON SHARON",
@@ -318,13 +309,13 @@
       "date": "2026-07-06"
     },
     {
-      "name": "JANKU FILIP",
+      "name": "TOWNSON SHARON",
       "role": "Officer",
       "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 13.41 per share.",
-      "value": 72508,
-      "shares": 5407,
-      "date": "2026-06-30"
+      "text": "Conversion of Exercise of derivative security at price 6.14 per share.",
+      "value": 36840,
+      "shares": 6000,
+      "date": "2026-07-06"
     },
     {
       "name": "JANKU FILIP",
@@ -336,22 +327,13 @@
       "date": "2026-06-30"
     },
     {
-      "name": "MANNING ANTHONY M",
-      "role": "Director",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 4.16 per share.",
-      "value": 41600,
-      "shares": 10000,
-      "date": "2026-06-29"
-    },
-    {
       "name": "JANKU FILIP",
       "role": "Officer",
       "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 7.56 per share.",
-      "value": 45360,
-      "shares": 6000,
-      "date": "2026-06-29"
+      "text": "Conversion of Exercise of derivative security at price 13.41 per share.",
+      "value": 72508,
+      "shares": 5407,
+      "date": "2026-06-30"
     },
     {
       "name": "MANNING ANTHONY M",
@@ -359,6 +341,24 @@
       "kind": "sell",
       "text": "Sale at price 23.11 per share.",
       "value": 231100,
+      "shares": 10000,
+      "date": "2026-06-29"
+    },
+    {
+      "name": "JANKU FILIP",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 22.95 per share.",
+      "value": 137700,
+      "shares": 6000,
+      "date": "2026-06-29"
+    },
+    {
+      "name": "MANNING ANTHONY M",
+      "role": "Director",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 4.16 per share.",
+      "value": 41600,
       "shares": 10000,
       "date": "2026-06-29"
     }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T19:39:42.195Z",
+  "updated_at": "2026-09-09T19:29:16.638Z",
   "source": "Yahoo Finance",
   "symbol": "DKS",
   "summary": "DICK'S Sporting Goods, Inc., together with its subsidiaries, operates as an omni-channel sporting goods retailer primarily in the United States. It provides hardlines, including sporting goods equipment, fitness equipment, golf equipment, and fishing gear products; and apparel. The company also offers footwear and accessories, such as athletic shoes for running, walking, tennis, fitness and cross training, basketball, and hiking; and specialty footwear comprising casual footwear and a complete line of cleats for team sports. In addition, it owns and operates Sporting Goods, Golf Galaxy, Public Lands, Moosejaw, and Going Going Gone! specialty concept stores; and DICK'S House of Sport and Golf Galaxy Performance Center, as well as GameChanger, a youth sports mobile app for live streaming, scheduling, communications, and scorekeeping. Further, the company owns and operates Foot Locker, which includes Foot Locker, Kids Foot Locker, Champs Sports, WSS and atmos banners. It offers its products online, as well as through its mobile apps. The company was formerly known as Dick'S Clothing and Sporting Goods, Inc. and changed its name to DICK'S Sporting Goods, Inc. in April 1999. DICK'S Sporting Goods, Inc. was incorporated in 1948 and is headquartered in Coraopolis, Pennsylvania.",
@@ -10,19 +10,19 @@
   "next_earnings": "2026-11-24",
   "earnings_estimated": true,
   "earnings_call": null,
-  "eps_estimate": 1.45162,
+  "eps_estimate": 1.43677,
   "analysts": {
     "strong_buy": 4,
     "buy": 10,
     "hold": 11,
-    "sell": 0,
+    "sell": 1,
     "strong_sell": 1,
-    "total": 26
+    "total": 27
   },
-  "target_mean": 166.00455,
+  "target_mean": 163.56956,
   "target_high": 241,
   "target_low": 99,
-  "target_analysts": 22,
+  "target_analysts": 23,
   "statements": [
     {
       "year": "2023",
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 3646616000,
-      "earnings": 381402000
-    },
-    {
       "q": "3Q2025",
       "revenue": 4167773000,
       "earnings": 75212000
@@ -69,15 +64,27 @@
       "q": "1Q2026",
       "revenue": 5164504000,
       "earnings": 319822000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 5586815000,
+      "earnings": 315461000
     }
   ],
   "growth": {
-    "q0": -0.47779998,
-    "q1": 0.060399998,
-    "y0": -0.1342,
-    "y1": 0.19549999
+    "q0": -0.48319998,
+    "q1": 0.055,
+    "y0": -0.136,
+    "y1": 0.1775
   },
   "ratings": [
+    {
+      "date": "2026-09-09",
+      "firm": "BMO Capital",
+      "from": null,
+      "to": "Underperform",
+      "action": "init"
+    },
     {
       "date": "2026-08-27",
       "firm": "Citigroup",
@@ -139,13 +146,6 @@
       "firm": "KGI Securities",
       "from": "Outperform",
       "to": "Neutral",
-      "action": "down"
-    },
-    {
-      "date": "2026-08-26",
-      "firm": "Truist Securities",
-      "from": "Buy",
-      "to": "Hold",
       "action": "down"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.141,
-    "enterprise_value": 19423545344,
-    "ev_ebitda": 9.323,
-    "ev_revenue": 0.919,
+    "enterprise_value": 18820622336,
+    "ev_ebitda": 9.033,
+    "ev_revenue": 0.89,
     "float_shares": 60411367,
     "short_shares": 6220144,
     "short_pct_float": 12.54,
@@ -272,15 +272,6 @@
     }
   ],
   "insiders": [
-    {
-      "name": "COLOMBO WILLIAM J",
-      "role": "Director",
-      "kind": "buy",
-      "text": "Purchase at price 133.19 per share.",
-      "value": 121602,
-      "shares": 913,
-      "date": "2026-09-01"
-    },
     {
       "name": "BARRENECHEA MARK J",
       "role": "Director",
@@ -355,6 +346,15 @@
     },
     {
       "name": "RALLS-MORRISON DESIREE ANN",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 838,
+      "date": "2026-06-10"
+    },
+    {
+      "name": "FINK ANNE",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

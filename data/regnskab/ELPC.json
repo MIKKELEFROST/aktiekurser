@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T19:39:42.256Z",
+  "updated_at": "2026-09-09T19:29:16.711Z",
   "source": "Yahoo Finance",
   "symbol": "ELPC",
   "summary": "Companhia Paranaense de Energia - COPEL, together with its subsidiaries, engages in the research, study, planning, construction, production, transformation, transportation, distribution, and commercialization of electricity in Brazil. The company operates through three segments: Generation and Transmission of Electrical Energy; Electrical Energy Distribution; and Commercialization. It produces electricity from hydroelectric and wind power; and constructs, operates, and maintains substations, as well as lines for energy transmission. The company was formerly known as Companhia Paranaense de Energia Elétrica and changed its name to Companhia Paranaense de Energia - COPEL in October 1979. Companhia Paranaense de Energia - COPEL was founded in 1954 and is headquartered in Curitiba, Brazil.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-12",
   "earnings_estimated": false,
   "earnings_call": "2026-08-06",
-  "eps_estimate": null,
+  "eps_estimate": 0.148,
   "analysts": {
     "strong_buy": 0,
     "buy": 3,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 3
   },
-  "target_mean": 17.26667,
+  "target_mean": 17,
   "target_high": 22,
-  "target_low": 14.8,
+  "target_low": 14,
   "target_analysts": 3,
   "statements": [
     {
@@ -71,7 +71,12 @@
       "earnings": 1047459000
     }
   ],
-  "growth": null,
+  "growth": {
+    "q0": null,
+    "q1": 0.0114,
+    "y0": 0.1524,
+    "y1": 0.2895
+  },
   "ratings": [],
   "holders": [
     {
@@ -155,9 +160,9 @@
   },
   "extras": {
     "beta": 0.264,
-    "enterprise_value": 59231830016,
-    "ev_ebitda": 8.67,
-    "ev_revenue": 2.117,
+    "enterprise_value": 60057100288,
+    "ev_ebitda": 8.791,
+    "ev_revenue": 2.146,
     "float_shares": 2031054742,
     "short_shares": 345838,
     "short_pct_float": 0.07,

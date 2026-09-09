@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T09:38:26.162Z",
+  "updated_at": "2026-09-09T19:29:17.132Z",
   "source": "Yahoo Finance",
   "symbol": "INNV",
   "summary": "InnovAge Holding Corp. manages and provides a range of medical and ancillary services for seniors in need of care and support to live independently in its homes and communities. It manages its business through Program of All-Inclusive Care for the Elderly (PACE) approach. The company also offers in-home care services consisting of skilled, unskilled, and personal care; in-center services, such as primary care, physical therapy, occupational therapy, speech therapy, dental services, mental health and psychiatric services, meals, and activities; transportation to and from the PACE center and third-party medical appointments; and care management. It serves participants in the United States; and operates PACE centers in Colorado, California, New Mexico, Pennsylvania, Florida, and Virginia. The company was formerly known as TCO Group Holdings, Inc. and changed its name to InnovAge Holding Corp. in January 2021. InnovAge Holding Corp. was founded in 1989 and is headquartered in Denver, Colorado.",
@@ -7,10 +7,10 @@
   "website": "https://www.innovage.com",
   "employees": 2440,
   "ceo": "Mr. Patrick  Blair",
-  "next_earnings": "2026-09-08",
-  "earnings_estimated": false,
+  "next_earnings": "2026-11-03",
+  "earnings_estimated": true,
   "earnings_call": "2026-09-08",
-  "eps_estimate": 0.08,
+  "eps_estimate": 0.09,
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
@@ -19,17 +19,11 @@
     "strong_sell": 1,
     "total": 3
   },
-  "target_mean": 10,
-  "target_high": 13,
+  "target_mean": 10.5,
+  "target_high": 14,
   "target_low": 7,
   "target_analysts": 2,
   "statements": [
-    {
-      "year": "2022",
-      "revenue": 698640000,
-      "net": -6521000,
-      "margin": -0.9
-    },
     {
       "year": "2023",
       "revenue": 688087000,
@@ -47,14 +41,15 @@
       "revenue": 853699000,
       "net": -30313000,
       "margin": -3.6
+    },
+    {
+      "year": "2026",
+      "revenue": 989707000,
+      "net": -2537000,
+      "margin": -0.3
     }
   ],
   "quarterly": [
-    {
-      "q": "2Q2025",
-      "revenue": 221417000,
-      "earnings": -785000
-    },
     {
       "q": "3Q2025",
       "revenue": 236105000,
@@ -72,12 +67,19 @@
     }
   ],
   "growth": {
-    "q0": 0.1494,
-    "q1": 0.4327,
-    "y0": 4.6162,
-    "y1": 0.1389
+    "q0": 0.2894,
+    "q1": -0.0779,
+    "y0": 0.0054,
+    "y1": 0.111099996
   },
   "ratings": [
+    {
+      "date": "2026-09-09",
+      "firm": "Keybanc",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-08-21",
       "firm": "Keybanc",
@@ -139,13 +141,6 @@
       "firm": "Citigroup",
       "from": null,
       "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2022-09-15",
-      "firm": "Barclays",
-      "from": null,
-      "to": "Equal-Weight",
       "action": "main"
     }
   ],
@@ -231,9 +226,9 @@
   },
   "extras": {
     "beta": 0.394,
-    "enterprise_value": 1444288256,
-    "ev_ebitda": 60.618,
-    "ev_revenue": 1.522,
+    "enterprise_value": 1406743808,
+    "ev_ebitda": 59.042,
+    "ev_revenue": 1.482,
     "float_shares": 21235959,
     "short_shares": 868858,
     "short_pct_float": 4.04,
@@ -246,12 +241,6 @@
   "payout_ratio": 0,
   "inst_count": 160,
   "eps_history": [
-    {
-      "quarter": "2025-06-30",
-      "estimate": 0.01,
-      "actual": 0.0696,
-      "surprise_pct": 596
-    },
     {
       "quarter": "2025-09-30",
       "estimate": 0.04,
@@ -269,6 +258,12 @@
       "estimate": 0.05,
       "actual": 0.1732,
       "surprise_pct": 246.4
+    },
+    {
+      "quarter": "2026-06-30",
+      "estimate": 0.08,
+      "actual": 0.1034,
+      "surprise_pct": 29.25
     }
   ],
   "insiders": [

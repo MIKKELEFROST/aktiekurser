@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T19:39:42.208Z",
+  "updated_at": "2026-09-09T19:29:16.653Z",
   "source": "Yahoo Finance",
   "symbol": "DOCU",
   "summary": "DocuSign, Inc. provides electronic signature solution in the United States and internationally. The company offers AI-powered intelligent agreement management (IAM) platform to optimize the gain intelligence and automation across the entire agreement lifecycle; and provides e-signature solution that enables sending and signing of agreements on various devices; Contract Lifecycle Management (CLM), which automates workflows across the entire agreement process; and Document Generation streamlines the process of generating new, custom agreements. It also provides Identify, a signer-identification option for checking government-issued IDs; Standards-Based Signatures, which support signatures that involve digital certificates; Monitor that uses advanced analytics; Notary which enables notaries public to conduct remote online notarization transactions; and Web Forms. In addition, the company offers Real Estate for eSignature that provides a way for brokers and agents to manage the entire real estate transaction digitally. eSignature and CLM are Federal Risk and Authorization Management Program (FedRAMP), an authorized version of DocuSign eSignature for U.S. federal government agencies; and life sciences modules that support compliance with the electronic signature practices. The company sells its products through direct and partner-assisted sales, and digital self-service purchasing. DocuSign, Inc. was incorporated in 2003 and is headquartered in San Francisco, California.",
@@ -19,7 +19,7 @@
     "strong_sell": 1,
     "total": 20
   },
-  "target_mean": 65.87588,
+  "target_mean": 66.46412,
   "target_high": 86,
   "target_low": 46.89,
   "target_analysts": 17,
@@ -64,13 +64,18 @@
       "q": "1Q2026",
       "revenue": 830235000,
       "earnings": 78197000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 875746000,
+      "earnings": 77715000
     }
   ],
   "growth": {
     "q0": 0.1684,
     "q1": 0.1751,
-    "y0": 0.2017,
-    "y1": 0.1243
+    "y0": 0.2033,
+    "y1": 0.1248
   },
   "ratings": [
     {
@@ -219,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 36,
-    "sells": 15,
+    "sells": 16,
     "bought": 455447,
-    "sold": 141091,
-    "net_pct": 45
+    "sold": 186091,
+    "net_pct": 36.2
   },
   "extras": {
     "beta": 0.9,
-    "enterprise_value": 12191417344,
-    "ev_ebitda": 27.604,
-    "ev_revenue": 3.627,
+    "enterprise_value": 11569032192,
+    "ev_ebitda": 26.195,
+    "ev_revenue": 3.442,
     "float_shares": 185717490,
     "short_shares": 15418832,
     "short_pct_float": 10.67,
@@ -239,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 942,
+  "inst_count": 943,
   "eps_history": [
     {
       "quarter": "2025-10-31",
@@ -268,6 +273,15 @@
   ],
   "insiders": [
     {
+      "name": "GRAYSON BLAKE JEFFREY",
+      "role": "Chief Financial Officer",
+      "kind": "sell",
+      "text": "Sale at price 65.25 - 70.00 per share.",
+      "value": 3083546,
+      "shares": 45000,
+      "date": "2026-09-08"
+    },
+    {
       "name": "ROSENBAUM MICHAEL GEORGE",
       "role": "Director",
       "kind": "other",
@@ -277,7 +291,7 @@
       "date": "2026-09-03"
     },
     {
-      "name": "BRIGGS TERESA",
+      "name": "HAYES CAIN A.",
       "role": "Director",
       "kind": "other",
       "text": null,
@@ -286,7 +300,7 @@
       "date": "2026-09-01"
     },
     {
-      "name": "HAYES CAIN A.",
+      "name": "BRIGGS TERESA",
       "role": "Director",
       "kind": "other",
       "text": null,
@@ -304,7 +318,7 @@
       "date": "2026-09-01"
     },
     {
-      "name": "MARRS ANNA",
+      "name": "BEER JAMES ALEXANDER",
       "role": "Director",
       "kind": "other",
       "text": null,
@@ -313,7 +327,16 @@
       "date": "2026-09-01"
     },
     {
-      "name": "BEER JAMES ALEXANDER",
+      "name": "SOLVIK PETER",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 1096,
+      "date": "2026-09-01"
+    },
+    {
+      "name": "MARRS ANNA",
       "role": "Director",
       "kind": "other",
       "text": null,
@@ -338,24 +361,6 @@
       "value": null,
       "shares": 1096,
       "date": "2026-09-01"
-    },
-    {
-      "name": "SOLVIK PETER",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 1096,
-      "date": "2026-09-01"
-    },
-    {
-      "name": "BEER JAMES ALEXANDER",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 64.02 per share.",
-      "value": 28809,
-      "shares": 450,
-      "date": "2026-08-28"
     }
   ],
   "dividends": [],

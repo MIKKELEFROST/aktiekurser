@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T19:39:42.228Z",
+  "updated_at": "2026-09-09T19:29:16.677Z",
   "source": "Yahoo Finance",
   "symbol": "DYN",
   "summary": "Dyne Therapeutics, Inc., a clinical-stage neuromuscular disease company, focuses on discovering and developing therapeutics for neuromuscular diseases in the United States. The company is developing a portfolio of muscle disease therapeutics, including programs in myotonic dystrophy type 1; duchenne muscular dystrophy; facioscapulohumeral dystrophy; and Pompe disease, as well as rare skeletal muscle, and cardiac and metabolic muscle diseases using its FORCE platform that delivers disease-modifying therapeutics. Dyne Therapeutics, Inc. was incorporated in 2017 and is headquartered in Waltham, Massachusetts.",
@@ -10,19 +10,19 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": true,
   "earnings_call": null,
-  "eps_estimate": -0.87846,
+  "eps_estimate": -0.88857,
   "analysts": {
     "strong_buy": 3,
     "buy": 13,
-    "hold": 1,
+    "hold": 0,
     "sell": 0,
-    "strong_sell": 0,
+    "strong_sell": 1,
     "total": 17
   },
-  "target_mean": 39.4,
+  "target_mean": 39.85714,
   "target_high": 50,
-  "target_low": 17,
-  "target_analysts": 15,
+  "target_low": 30,
+  "target_analysts": 14,
   "statements": [
     {
       "year": "2022",
@@ -72,12 +72,40 @@
     }
   ],
   "growth": {
-    "q0": -0.1559,
-    "q1": -0.2076,
-    "y0": -0.0286,
-    "y1": 0.064
+    "q0": -0.1692,
+    "q1": -0.22209999,
+    "y0": -0.0231,
+    "y1": 0.054
   },
   "ratings": [
+    {
+      "date": "2026-09-09",
+      "firm": "Morgan Stanley",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-09-09",
+      "firm": "JP Morgan",
+      "from": "Neutral",
+      "to": "Underweight",
+      "action": "down"
+    },
+    {
+      "date": "2026-09-09",
+      "firm": "RBC Capital",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-09-09",
+      "firm": "Baird",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
     {
       "date": "2026-07-31",
       "firm": "Morgan Stanley",
@@ -118,34 +146,6 @@
       "firm": "Bernstein",
       "from": "Market Perform",
       "to": "Market Perform",
-      "action": "main"
-    },
-    {
-      "date": "2026-03-09",
-      "firm": "Chardan Capital",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-03-03",
-      "firm": "Morgan Stanley",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-03-03",
-      "firm": "Chardan Capital",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-03-03",
-      "firm": "HC Wainwright & Co.",
-      "from": "Buy",
-      "to": "Buy",
       "action": "main"
     }
   ],
@@ -224,15 +224,15 @@
   "insider_net": {
     "period": "6m",
     "buys": 8,
-    "sells": 29,
+    "sells": 30,
     "bought": 69625,
-    "sold": 7592715,
+    "sold": 7593800,
     "net_pct": -94.4
   },
   "extras": {
     "beta": 1.078,
-    "enterprise_value": 3869078272,
-    "ev_ebitda": -7.235,
+    "enterprise_value": 3127695104,
+    "ev_ebitda": -5.848,
     "ev_revenue": null,
     "float_shares": 186266493,
     "short_shares": 21459799,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 333,
+  "inst_count": 334,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "FRIEDL-NADERER JOHANNA",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 24.28 - 24.35 per share.",
+      "value": 26407,
+      "shares": 1085,
+      "date": "2026-09-08"
+    },
     {
       "name": "RHODES JASON P",
       "role": "Director",
@@ -343,15 +352,6 @@
       "value": 10712550,
       "shares": 504695,
       "date": "2026-06-29"
-    },
-    {
-      "name": "LUCERA ERICK J.",
-      "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 20.37 per share.",
-      "value": 48114,
-      "shares": 2362,
-      "date": "2026-06-25"
     },
     {
       "name": "RHODES JASON P",

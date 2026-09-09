@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T19:39:42.454Z",
+  "updated_at": "2026-09-09T19:29:16.953Z",
   "source": "Yahoo Finance",
   "symbol": "GOLD",
   "summary": "Gold.com, Inc., together with its subsidiaries, operates as a precious metals company. It operates through three segments: Wholesale Sales & Ancillary Services, Direct-to-Consumer, and Secured Lending. The Wholesale Sales & Ancillary Services segment sells gold, silver, platinum, and palladium in the form of bars, plates, powders, wafers, grains, ingots, and coins. This segment also offers complementary services, such as receiving, handling, inventorying, processing, packing, and shipping of precious metals and custom coins on a secure basis; and designs and produces minted silver products. The Direct-to-Consumer segment provides access to gold, silver, copper, platinum, and palladium products primarily through its websites; rarities and numismatic collections; and numismatic and bullion products. It operates various websites targeting specific niches within the precious metals retail market. This segment also operates as a direct retailer of precious metals to the investor community and markets its precious metal products on television, radio, and the internet, as well as through customer service outreach. The Secured Lending segment originates and acquires commercial loans secured by bullion, numismatic coins, and graded sports cards. The company serves customers, including financial institutions, bullion retailers, industrial manufacturers and fabricators, sovereign mints, refiners, coin and metal dealers, investors, collectors, and e-commerce and other retail customers. It operates in the United States, Europe, Canada, Asia Pacific, Africa, Australia, and South America. The company was formerly known as A-Mark Precious Metals, Inc. and changed its name to Gold.com, Inc. in December 2025. The company was founded in 1965 and is headquartered in Costa Mesa, California.",
@@ -25,6 +25,12 @@
   "target_analysts": 5,
   "statements": [
     {
+      "year": "2022",
+      "revenue": 8159254000,
+      "net": 132536000,
+      "margin": 1.6
+    },
+    {
       "year": "2023",
       "revenue": 9322407000,
       "net": 156360000,
@@ -41,15 +47,14 @@
       "revenue": 10978614000,
       "net": 17320000,
       "margin": 0.2
-    },
-    {
-      "year": "2026",
-      "revenue": 25513409000,
-      "net": 82341000,
-      "margin": 0.3
     }
   ],
   "quarterly": [
+    {
+      "q": "2Q2025",
+      "revenue": 2512048000,
+      "earnings": 10324000
+    },
     {
       "q": "3Q2025",
       "revenue": 3680766000,
@@ -181,17 +186,17 @@
       "date": "2026-06-30"
     },
     {
+      "name": "American Century ETF Trust-Avantis U.S. Small Cap Value ETF",
+      "kind": "fond",
+      "pct": 2.69,
+      "shares": 779159,
+      "date": "2026-07-31"
+    },
+    {
       "name": "Charles Schwab Investment Management, Inc.",
       "kind": "institution",
       "pct": 2.53,
       "shares": 735208,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "American Century ETF Trust-Avantis U.S. Small Cap Value ETF",
-      "kind": "fond",
-      "pct": 2.51,
-      "shares": 728818,
       "date": "2026-06-30"
     },
     {
@@ -218,17 +223,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 6,
+    "buys": 7,
     "sells": 5,
-    "bought": 836338,
+    "bought": 936338,
     "sold": 162398,
-    "net_pct": 7.7
+    "net_pct": 8.9
   },
   "extras": {
     "beta": 0.623,
-    "enterprise_value": 1697558272,
-    "ev_ebitda": 9.56,
-    "ev_revenue": 0.067,
+    "enterprise_value": 1736580736,
+    "ev_ebitda": 9.78,
+    "ev_revenue": 0.068,
     "float_shares": 19904113,
     "short_shares": 3129732,
     "short_pct_float": 14.86,
@@ -261,6 +266,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "TETHER GLOBAL INVESTMENTS FUND, S.I.C.A.F., S.A.",
+      "role": "Beneficial Owner of more than 10% of a Class of Security",
+      "kind": "buy",
+      "text": "Purchase at price 39.30 per share.",
+      "value": 3930350,
+      "shares": 100000,
+      "date": "2026-09-03"
+    },
     {
       "name": "TETHER GLOBAL INVESTMENTS FUND, S.I.C.A.F., S.A.",
       "role": "Beneficial Owner of more than 10% of a Class of Security",
@@ -341,15 +355,6 @@
       "value": 800000,
       "shares": 20000,
       "date": "2026-03-31"
-    },
-    {
-      "name": "RICHARDSON WILLIAM A",
-      "role": "Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "sell",
-      "text": "Sale at price 45.00 per share.",
-      "value": 665100,
-      "shares": 14780,
-      "date": "2026-03-25"
     }
   ],
   "dividends": [

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T19:39:41.766Z",
+  "updated_at": "2026-09-09T19:29:16.124Z",
   "source": "Yahoo Finance",
   "symbol": "APTV",
   "summary": "Aptiv PLC, an industrial technology company, provides hardware and software solutions to support automotive and other industries in North America, Europe, the Middle East, Africa, the Asia Pacific, and South America. It operates through three segments: Advanced Safety and User Experience, Engineered Components, and Electrical Distribution Systems. The company offers active safety, user experience and smart vehicle compute, and software products for vehicle safety and security, including intelligent sensors, compute platforms, and software tools and services. It also provides connection systems, interconnects, and cable management and protection solutions for the distribution of power, signal, and data. Aptiv PLC was incorporated in 2011 and is based in Schaffhausen, Switzerland.",
@@ -13,11 +13,11 @@
   "eps_estimate": 1.33226,
   "analysts": {
     "strong_buy": 6,
-    "buy": 11,
+    "buy": 12,
     "hold": 3,
     "sell": 0,
     "strong_sell": 0,
-    "total": 20
+    "total": 21
   },
   "target_mean": 66.61111,
   "target_high": 78,
@@ -51,6 +51,11 @@
   ],
   "quarterly": [
     {
+      "q": "2Q2025",
+      "revenue": 3199000000,
+      "earnings": 393000000
+    },
+    {
       "q": "3Q2025",
       "revenue": 5212000000,
       "earnings": -355000000
@@ -64,11 +69,6 @@
       "q": "1Q2026",
       "revenue": 5086000000,
       "earnings": 189000000
-    },
-    {
-      "q": "2Q2026",
-      "revenue": 3274000000,
-      "earnings": 248000000
     }
   ],
   "growth": {
@@ -78,6 +78,13 @@
     "y1": 0.1376
   },
   "ratings": [
+    {
+      "date": "2026-09-09",
+      "firm": "StoneX",
+      "from": null,
+      "to": "Buy",
+      "action": "init"
+    },
     {
       "date": "2026-08-10",
       "firm": "Evercore ISI Group",
@@ -139,13 +146,6 @@
       "firm": "RBC Capital",
       "from": "Outperform",
       "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-10",
-      "firm": "JP Morgan",
-      "from": "Overweight",
-      "to": "Overweight",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.33,
-    "enterprise_value": 14879017984,
-    "ev_ebitda": 4.602,
-    "ev_revenue": 0.725,
+    "enterprise_value": 14418072576,
+    "ev_ebitda": 4.46,
+    "ev_revenue": 0.703,
     "float_shares": 205044143,
     "short_shares": 9328977,
     "short_pct_float": 6.16,

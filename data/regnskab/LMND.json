@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T19:39:42.746Z",
+  "updated_at": "2026-09-09T19:29:17.316Z",
   "source": "Yahoo Finance",
   "symbol": "LMND",
   "summary": "Lemonade, Inc. provides various insurance products in the United States, Europe, and the United Kingdom. The company provides renters and homeowners, building, car, pet, and life insurance products, as well as landlord insurance products. It also offers insurance for stolen or damaged property, and personal liability that protects its customers if they are responsible for an accident or damage to another person or their property. In addition, it operates as an agent for other insurance companies. The company was formerly known as Lemonade Group, Inc. Lemonade, Inc. was incorporated in 2015 and is headquartered in New York, New York.",
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 164100000,
-      "earnings": -43900000
-    },
-    {
       "q": "3Q2025",
       "revenue": 194500000,
       "earnings": -37500000
@@ -69,6 +64,11 @@
       "q": "1Q2026",
       "revenue": 258000000,
       "earnings": -35800000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 294400000,
+      "earnings": -43400000
     }
   ],
   "growth": {
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 14,
-    "sells": 6,
+    "sells": 9,
     "bought": 2375097,
-    "sold": 96234,
-    "net_pct": 51.5
+    "sold": 102275,
+    "net_pct": 51.3
   },
   "extras": {
     "beta": 1.868,
-    "enterprise_value": 3983353088,
-    "ev_ebitda": -43.25,
-    "ev_revenue": 4.085,
+    "enterprise_value": 3761998848,
+    "ev_ebitda": -40.847,
+    "ev_revenue": 3.858,
     "float_shares": 71768333,
     "short_shares": 9984175,
     "short_pct_float": 14.11,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 447,
+  "inst_count": 446,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -272,6 +272,33 @@
     }
   ],
   "insiders": [
+    {
+      "name": "PETERS JOHN SHELDON",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 54.45 - 54.63 per share.",
+      "value": 169385,
+      "shares": 3108,
+      "date": "2026-09-04"
+    },
+    {
+      "name": "PROSOR MAYA",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 54.63 per share.",
+      "value": 56815,
+      "shares": 1040,
+      "date": "2026-09-03"
+    },
+    {
+      "name": "BIXBY TIMOTHY E",
+      "role": "Chief Financial Officer",
+      "kind": "sell",
+      "text": "Sale at price 54.63 per share.",
+      "value": 103415,
+      "shares": 1893,
+      "date": "2026-09-03"
+    },
     {
       "name": "WININGER SHAI",
       "role": "President",
@@ -334,33 +361,6 @@
       "value": 283257,
       "shares": 5343,
       "date": "2026-06-04"
-    },
-    {
-      "name": "BIXBY TIMOTHY E",
-      "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 53.17 per share.",
-      "value": 118410,
-      "shares": 2227,
-      "date": "2026-06-03"
-    },
-    {
-      "name": "PROSOR MAYA",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 53.17 per share.",
-      "value": 64867,
-      "shares": 1220,
-      "date": "2026-06-03"
-    },
-    {
-      "name": "SCHWARTZ DEBRA",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 2848,
-      "date": "2026-06-03"
     }
   ],
   "dividends": [],

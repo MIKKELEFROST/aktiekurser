@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T19:39:43.441Z",
+  "updated_at": "2026-09-09T19:29:18.416Z",
   "source": "Yahoo Finance",
   "symbol": "VSXY",
   "summary": "Victoria's Secret & Co. operates as a specialty retailer of women's intimate, and other apparel and beauty products worldwide. The company offers bras, panties, lingerie, casual sleepwear, apparel, lounge, sport, and swim products, as well as prestige fragrances and body care products; and accessories and beauty products under the Victoria's Secret, PINK, and Adore Me brands. It provides its products through its retail stores; websites, such as VictoriasSecret.com, PINK.com, AdoreMe.com, and DailyLook.com; and other digital channels. The company also operates stores under the franchise, license, and wholesale arrangements. Victoria's Secret & Co. was incorporated in 2021 and is based in Reynoldsburg, Ohio.",
@@ -10,19 +10,19 @@
   "next_earnings": "2026-12-03",
   "earnings_estimated": true,
   "earnings_call": null,
-  "eps_estimate": 0.00146,
+  "eps_estimate": 0.00467,
   "analysts": {
     "strong_buy": 3,
     "buy": 3,
-    "hold": 5,
+    "hold": 6,
     "sell": 0,
     "strong_sell": 0,
-    "total": 11
+    "total": 12
   },
-  "target_mean": 92.7,
+  "target_mean": 91.54545,
   "target_high": 110,
   "target_low": 73,
-  "target_analysts": 10,
+  "target_analysts": 11,
   "statements": [
     {
       "year": "2023",
@@ -64,15 +64,27 @@
       "q": "1Q2026",
       "revenue": 1560000000,
       "earnings": 48000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 1611000000,
+      "earnings": 183000000
     }
   ],
   "growth": {
-    "q0": 1.0054001,
-    "q1": 0.1487,
-    "y0": 0.5696,
-    "y1": 0.1835
+    "q0": 1.0173,
+    "q1": 0.1498,
+    "y0": 0.5727,
+    "y1": 0.1899
   },
   "ratings": [
+    {
+      "date": "2026-09-09",
+      "firm": "BMO Capital",
+      "from": null,
+      "to": "Market Perform",
+      "action": "init"
+    },
     {
       "date": "2026-09-04",
       "firm": "Morgan Stanley",
@@ -134,13 +146,6 @@
       "firm": "TD Cowen",
       "from": "Hold",
       "to": "Hold",
-      "action": "main"
-    },
-    {
-      "date": "2026-06-03",
-      "firm": "Telsey Advisory Group",
-      "from": "Outperform",
-      "to": "Outperform",
       "action": "main"
     }
   ],
@@ -226,9 +231,9 @@
   },
   "extras": {
     "beta": 2.054,
-    "enterprise_value": 8464970752,
-    "ev_ebitda": 11.517,
-    "ev_revenue": 1.225,
+    "enterprise_value": 8697083904,
+    "ev_ebitda": 11.833,
+    "ev_revenue": 1.258,
     "float_shares": 70911826,
     "short_shares": 10170180,
     "short_pct_float": 17.58,
@@ -295,24 +300,6 @@
       "date": "2026-06-26"
     },
     {
-      "name": "BRITT IRENE CHANG",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 1738,
-      "date": "2026-06-11"
-    },
-    {
-      "name": "LITTLE ROD R.",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 1579,
-      "date": "2026-06-11"
-    },
-    {
       "name": "SHEEHAN ANNE",
       "role": "Director",
       "kind": "other",
@@ -355,6 +342,24 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 1706,
+      "date": "2026-06-11"
+    },
+    {
+      "name": "MCCREIGHT DAVID W",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 1706,
+      "date": "2026-06-11"
+    },
+    {
+      "name": "BRITT IRENE CHANG",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 1738,
       "date": "2026-06-11"
     }
   ],

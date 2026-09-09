@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T19:39:43.059Z",
+  "updated_at": "2026-09-09T19:29:17.879Z",
   "source": "Yahoo Finance",
   "symbol": "PYPL",
   "summary": "PayPal Holdings, Inc. operates a technology platform that enables digital payments for merchants and consumers worldwide. The company operates a two-sided network at scale that connects merchants and consumers that enables its customers to connect, transact, and send and receive payments through online and in person, as well as transfer and withdraw funds using various funding sources, such as bank accounts, PayPal or Venmo account balance, consumer credit and debit products, credit and debit cards, and cryptocurrencies, as well as other stored value products, including gift cards and eligible rewards. It provides payment solutions under the PayPal, PayPal Credit, Braintree, Venmo, Xoom, Hyperwallet, Honey, and Paidy names. The company was founded in 1998 and is headquartered in San Jose, California.",
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 8288000000,
-      "earnings": 1261000000
-    },
-    {
       "q": "3Q2025",
       "revenue": 8417000000,
       "earnings": 1248000000
@@ -69,6 +64,11 @@
       "q": "1Q2026",
       "revenue": 8353000000,
       "earnings": 1113000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 8682000000,
+      "earnings": 1104000000
     }
   ],
   "growth": {
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 34,
-    "sells": 9,
+    "sells": 12,
     "bought": 226078,
-    "sold": 31005,
-    "net_pct": 3.3
+    "sold": 39548,
+    "net_pct": 3.2
   },
   "extras": {
     "beta": 1.286,
-    "enterprise_value": 49981128704,
-    "ev_ebitda": 7.742,
-    "ev_revenue": 1.465,
+    "enterprise_value": 48458407936,
+    "ev_ebitda": 7.506,
+    "ev_revenue": 1.42,
     "float_shares": 853510423,
     "short_shares": 33728439,
     "short_pct_float": 4.41,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-09-04",
   "dividend_date": null,
   "payout_ratio": 0.0794,
-  "inst_count": 2046,
+  "inst_count": 2045,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -272,6 +272,33 @@
     }
   ],
   "insiders": [
+    {
+      "name": "KELLER FRANK",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 54.68 - 56.71 per share.",
+      "value": 255656,
+      "shares": 4612,
+      "date": "2026-09-03"
+    },
+    {
+      "name": "KEREERE SUZAN",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 54.53 - 56.69 per share.",
+      "value": 188283,
+      "shares": 3379,
+      "date": "2026-09-03"
+    },
+    {
+      "name": "NATALI CHRIS",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 54.80 per share.",
+      "value": 30250,
+      "shares": 552,
+      "date": "2026-09-03"
+    },
     {
       "name": "KELLER FRANK",
       "role": "Officer",
@@ -334,33 +361,6 @@
       "value": null,
       "shares": 8503,
       "date": "2026-08-14"
-    },
-    {
-      "name": "KELLER FRANK",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 58.10 per share.",
-      "value": 42529,
-      "shares": 732,
-      "date": "2026-07-29"
-    },
-    {
-      "name": "NATALI CHRIS",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 58.10 per share.",
-      "value": 77680,
-      "shares": 1337,
-      "date": "2026-07-29"
-    },
-    {
-      "name": "KELLER FRANK",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 1639,
-      "date": "2026-07-15"
     }
   ],
   "dividends": [

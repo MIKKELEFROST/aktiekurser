@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T09:38:25.512Z",
+  "updated_at": "2026-09-09T19:29:16.405Z",
   "source": "Yahoo Finance",
   "symbol": "CASY",
   "summary": "Casey's General Stores, Inc., together with its subsidiaries, operates convenience stores under the Casey's and Casey's General Store names in the United States. Its stores offer pizza, donuts, hot breakfast items, and sandwiches; and beverages, tobacco and nicotine products. The company's stores also provide soft drinks, energy, water, sports drinks, juices, coffee, and tea and dairy products; beer, wine, and spirits; snacks, candy, packaged bakery, and other food items; ice, ice cream, meals, and appetizers; health and beauty aids, automotive products, electronic accessories, and housewares. In addition, its stores offer motor fuel for sale on a self-service basis; gasoline and diesel fuel; and ATM, lotto/lottery, and prepaid cards, as well as car wash services. The company also operates distribution centers. Casey's General Stores, Inc. was founded in 1959 and is headquartered in Ankeny, Iowa.",
@@ -7,10 +7,10 @@
   "website": "https://www.caseys.com",
   "employees": 23490,
   "ceo": "Mr. Darren M. Rebelez",
-  "next_earnings": "2026-09-08",
-  "earnings_estimated": false,
+  "next_earnings": "2026-12-08",
+  "earnings_estimated": true,
   "earnings_call": "2026-09-09",
-  "eps_estimate": 6.74174,
+  "eps_estimate": 5.845,
   "analysts": {
     "strong_buy": 1,
     "buy": 13,
@@ -19,10 +19,10 @@
     "strong_sell": 0,
     "total": 20
   },
-  "target_mean": 939.05554,
+  "target_mean": 936.7647,
   "target_high": 1069,
   "target_low": 795,
-  "target_analysts": 18,
+  "target_analysts": 17,
   "statements": [
     {
       "year": "2023",
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 4567106000,
-      "earnings": 215355000
-    },
-    {
       "q": "3Q2025",
       "revenue": 4506084000,
       "earnings": 206336000
@@ -69,15 +64,34 @@
       "q": "1Q2026",
       "revenue": 4571779000,
       "earnings": 162684000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 5678336000,
+      "earnings": 273720000
     }
   ],
   "growth": {
-    "q0": 0.1684,
-    "q1": 0.14770001,
-    "y0": 0.115,
-    "y1": 0.1058
+    "q0": 0.056999996,
+    "q1": 0.0387,
+    "y0": 0.0934,
+    "y1": 0.1205
   },
   "ratings": [
+    {
+      "date": "2026-09-09",
+      "firm": "RBC Capital",
+      "from": "Sector Perform",
+      "to": "Sector Perform",
+      "action": "main"
+    },
+    {
+      "date": "2026-09-09",
+      "firm": "Stephens & Co.",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "reit"
+    },
     {
       "date": "2026-09-03",
       "firm": "JP Morgan",
@@ -132,20 +146,6 @@
       "firm": "Evercore ISI Group",
       "from": "Outperform",
       "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-06-12",
-      "firm": "JP Morgan",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-06-12",
-      "firm": "Stephens & Co.",
-      "from": "Overweight",
-      "to": "Overweight",
       "action": "main"
     }
   ],
@@ -227,14 +227,14 @@
     "sells": 8,
     "bought": 132820,
     "sold": 36243,
-    "net_pct": 82.4
+    "net_pct": 82.6
   },
   "extras": {
-    "beta": 0.592,
-    "enterprise_value": 30361128960,
-    "ev_ebitda": 20.33,
-    "ev_revenue": 1.729,
-    "float_shares": 36742919,
+    "beta": null,
+    "enterprise_value": 29474000896,
+    "ev_ebitda": 18.842,
+    "ev_revenue": 1.578,
+    "float_shares": 36698489,
     "short_shares": 1143057,
     "short_pct_float": 3.46,
     "short_ratio": 3.89,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.118999995,
   "inst_count": 1384,
   "eps_history": [
-    {
-      "quarter": "2025-07-31",
-      "estimate": 5.05,
-      "actual": 5.77,
-      "surprise_pct": 14.26
-    },
     {
       "quarter": "2025-10-31",
       "estimate": 5.20401,
@@ -269,6 +263,12 @@
       "estimate": 3.30796,
       "actual": 4.37,
       "surprise_pct": 32.11
+    },
+    {
+      "quarter": "2026-07-31",
+      "estimate": 6.8181,
+      "actual": 7.37,
+      "surprise_pct": 8.09
     }
   ],
   "insiders": [

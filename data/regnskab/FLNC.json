@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T19:39:42.359Z",
+  "updated_at": "2026-09-09T19:29:16.839Z",
   "source": "Yahoo Finance",
   "symbol": "FLNC",
   "summary": "Fluence Energy, Inc., through its subsidiaries, provides energy storage and optimization software for renewables and storage applications in the Americas, the Asia Pacific, Europe, the Middle East, and Africa. It sells energy storage products with integrated hardware, software, and digital intelligence. The company's energy storage products include Gridstack Pro, a large-scale front-of-the-meter application; Gridstack, a front-of-the-meter application; Ultrastack for critical system requirements of distribution and transmission networks; Smartstack, a split architecture design, incorporating embedded intelligence and higher energy density compared to traditional AC systems. The company also provides operational and maintenance services; and digital applications. It serves independent power producers, developers, conglomerates, utilities/load-serving entities, and commercial and industrial customers. Fluence Energy, Inc. was founded in 2018 and is headquartered in Arlington, Virginia.",
@@ -10,19 +10,19 @@
   "next_earnings": "2026-11-23",
   "earnings_estimated": true,
   "earnings_call": "2026-08-06",
-  "eps_estimate": 0.27257,
+  "eps_estimate": 0.25857,
   "analysts": {
     "strong_buy": 0,
     "buy": 6,
     "hold": 12,
     "sell": 1,
-    "strong_sell": 2,
-    "total": 21
+    "strong_sell": 3,
+    "total": 22
   },
-  "target_mean": 16,
+  "target_mean": 15.47368,
   "target_high": 24,
-  "target_low": 8,
-  "target_analysts": 18,
+  "target_low": 6,
+  "target_analysts": 19,
   "statements": [
     {
       "year": "2022",
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 1.0681,
+    "q0": 0.9618,
     "q1": 0.38759997,
-    "y0": -1.5365,
-    "y1": 1.4101
+    "y0": -1.7464999,
+    "y1": 1.3521
   },
   "ratings": [
+    {
+      "date": "2026-09-09",
+      "firm": "Piper Sandler",
+      "from": null,
+      "to": "Underweight",
+      "action": "init"
+    },
     {
       "date": "2026-09-03",
       "firm": "Barclays",
@@ -139,13 +146,6 @@
       "firm": "Citigroup",
       "from": "Neutral",
       "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-05-11",
-      "firm": "RBC Capital",
-      "from": "Sector Perform",
-      "to": "Sector Perform",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 2.736,
-    "enterprise_value": 1613594112,
-    "ev_ebitda": -20.695,
-    "ev_revenue": 0.613,
+    "enterprise_value": 1712376960,
+    "ev_ebitda": -21.961,
+    "ev_revenue": 0.651,
     "float_shares": 88970443,
     "short_shares": 25445491,
     "short_pct_float": 33.35,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 429,
+  "inst_count": 430,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -318,6 +318,15 @@
       "date": "2026-06-02"
     },
     {
+      "name": "AES CORP.",
+      "role": "Beneficial Owner of more than 10% of a Class of Security",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 10066414,
+      "date": "2026-05-15"
+    },
+    {
       "name": "QATAR INVESTMENT AUTHORITY",
       "role": "Beneficial Owner of more than 10% of a Class of Security",
       "kind": "sell",
@@ -341,15 +350,6 @@
       "kind": "sell",
       "text": "Sale at price 20.53 per share.",
       "value": 206638313,
-      "shares": 10066414,
-      "date": "2026-05-15"
-    },
-    {
-      "name": "AES CORP.",
-      "role": "Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "other",
-      "text": null,
-      "value": null,
       "shares": 10066414,
       "date": "2026-05-15"
     },

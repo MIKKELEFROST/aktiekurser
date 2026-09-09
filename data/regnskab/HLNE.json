@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T19:39:42.523Z",
+  "updated_at": "2026-09-09T19:29:17.035Z",
   "source": "Yahoo Finance",
   "symbol": "HLNE",
   "summary": "Hamilton Lane Incorporated is a private equity and venture capital firm specializing in early venture, emerging growth, turnaround, middle market, mature, mid-venture, bridge, buyout, distressed/vulture, loan, mezzanine in growth capital companies. The firm manages alternative investment strategies like direct credit, direct, fund of fund, evergreen and real assets. For primary and secondary fund of fund investments, the firm focuses to invest in private equity, buyout, special situations, credit, growth equity, middle market, mature, turnarounds, mezzanine and venture capital funds. The firm prefers to invest in disruptive technologies and innovative companies. It prefers to invest in space, engine, alternative energy resources, environmental & facilities services, households durables, leisure products, textiles, manufacturing services, water purification, online training service, healthcare services & technology, energy, industrials, commercial services, internet software & services, consumer discretionary, health care, real estate, information technology, tech-enabled businesses, financials, utilities, and consumer services. The firm prefers to invest in Africa/Middle East, Asia/Pacific, Europe, Southeast Asia, Korea, China, India, Latin America and Caribbean, United States of America, New York, Florida, Arizona, Nevada, New Mexico, Oregon, Washington, California and surrounding states, Australia, Japan, Brazil, United Kingdom, and Canada. The firm prefers to invest between $0.25 million and $100 million in companies with small- to mid-sized enterprise values. It prefers to take majority stake. Hamilton Lane Incorporated was founded in 1991 and is based in Philadelphia, Pennsylvania with additional offices across Europe, North America, Asia Pacific and the Middle East.",
@@ -51,6 +51,11 @@
   ],
   "quarterly": [
     {
+      "q": "2Q2025",
+      "revenue": 175958000,
+      "earnings": 53745000
+    },
+    {
       "q": "3Q2025",
       "revenue": 190880000,
       "earnings": 70889000
@@ -64,18 +69,13 @@
       "q": "1Q2026",
       "revenue": 193566000,
       "earnings": 66173000
-    },
-    {
-      "q": "2Q2026",
-      "revenue": 275331000,
-      "earnings": 80461000
     }
   ],
   "growth": {
     "q0": 0.1455,
-    "q1": 0.0888,
-    "y0": 0.2945,
-    "y1": -0.0399
+    "q1": 0.085200004,
+    "y0": 0.27290002,
+    "y1": -0.023599999
   },
   "ratings": [
     {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.199,
-    "enterprise_value": 5194872832,
-    "ev_ebitda": 13.517,
-    "ev_revenue": 6.052,
+    "enterprise_value": 5113920512,
+    "ev_ebitda": 13.307,
+    "ev_revenue": 5.958,
     "float_shares": 39862449,
     "short_shares": 3584452,
     "short_pct_float": 10.19,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-09-21",
   "dividend_date": null,
   "payout_ratio": 0.3379,
-  "inst_count": 528,
+  "inst_count": 527,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -273,15 +273,6 @@
   ],
   "insiders": [
     {
-      "name": "KRAMER ANDREA ANIGATI",
-      "role": "Chief Operating Officer",
-      "kind": "buy",
-      "text": "Purchase at price 77.46 per share.",
-      "value": 99381,
-      "shares": 1283,
-      "date": "2026-06-11"
-    },
-    {
       "name": "BERKMAN DAVID J",
       "role": "Director",
       "kind": "buy",
@@ -300,31 +291,13 @@
       "date": "2026-06-11"
     },
     {
-      "name": "GAVALIS LYDIA A.",
-      "role": "General Counsel",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 1139,
-      "date": "2026-05-29"
-    },
-    {
-      "name": "CARL DREW THOMAS",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 675,
-      "date": "2026-05-29"
-    },
-    {
-      "name": "ARMBRISTER JEFFREY BRIAN",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 2109,
-      "date": "2026-05-29"
+      "name": "KRAMER ANDREA ANIGATI",
+      "role": "Chief Operating Officer",
+      "kind": "buy",
+      "text": "Purchase at price 77.46 per share.",
+      "value": 99381,
+      "shares": 1283,
+      "date": "2026-06-11"
     },
     {
       "name": "DELGADO-MOREIRA JUAN",
@@ -351,6 +324,33 @@
       "text": "Stock Award(Grant) at price 0.00 - 84.89 per share.",
       "value": 5263,
       "shares": 3605,
+      "date": "2026-05-29"
+    },
+    {
+      "name": "GAVALIS LYDIA A.",
+      "role": "General Counsel",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 1139,
+      "date": "2026-05-29"
+    },
+    {
+      "name": "CARL DREW THOMAS",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 675,
+      "date": "2026-05-29"
+    },
+    {
+      "name": "ARMBRISTER JEFFREY BRIAN",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 2109,
       "date": "2026-05-29"
     },
     {

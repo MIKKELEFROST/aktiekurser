@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T19:39:43.022Z",
+  "updated_at": "2026-09-09T19:29:17.767Z",
   "source": "Yahoo Finance",
   "symbol": "PDCC",
   "summary": "Pearl Diver Credit Company Inc. was founded in 2023 and is headquartered in London, Greater London, United Kingdom.",
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 2
   },
-  "target_mean": 11.5,
-  "target_high": 12,
-  "target_low": 11,
+  "target_mean": 10.75,
+  "target_high": 11,
+  "target_low": 10.5,
   "target_analysts": 2,
   "statements": [
     {
@@ -31,12 +31,33 @@
       "margin": null
     }
   ],
-  "quarterly": [],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 5413700,
+      "earnings": -4300000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 5700000,
+      "earnings": -12400000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 4782790,
+      "earnings": -22515150
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 4200000,
+      "earnings": 8500000
+    }
+  ],
   "growth": {
     "q0": -0.3409,
-    "q1": -0.3673,
+    "q1": -0.38779998,
     "y0": null,
-    "y1": 0.1693
+    "y1": 0.004
   },
   "ratings": [],
   "holders": [
@@ -153,6 +174,12 @@
       "estimate": 0.465,
       "actual": 0.39,
       "surprise_pct": -16.13
+    },
+    {
+      "quarter": "2026-06-30",
+      "estimate": 0.39,
+      "actual": 0.28,
+      "surprise_pct": -28.21
     }
   ],
   "insiders": [

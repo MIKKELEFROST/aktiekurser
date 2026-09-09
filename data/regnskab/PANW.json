@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T19:39:43.006Z",
+  "updated_at": "2026-09-09T19:29:17.745Z",
   "source": "Yahoo Finance",
   "symbol": "PANW",
   "summary": "Palo Alto Networks, Inc. provides cybersecurity solutions in the Americas, Europe, the Middle East, Africa, the Asia Pacific, and Japan. It offers Prisma Access, a secure access service edge solution; Strata Cloud Manager, a network security management solution; and Prisma AIRS to protect customers' entire AI ecosystem. It provides a comprehensive cloud native application protection platform; and Code to Cloud platform, as well as offers VM-Series and CN-Series virtual firewalls for inline network security on multi- and hybrid-cloud environments. It provides security operation solutions through the Cortex platform that includes Cortex XSIAM, an AI-driven security operations platform; Cortex XDR to prevent, detect, and respond to cybersecurity attacks; and Cortex XSOAR for security orchestration, automation, and response; and Cortex Xpanse for attack surface management, as well as offers threat intelligence and advisory services under the Unit 42 name. It provides subscription services covering the areas of threat prevention, malware and persistent threat, URL filtering, laptop and mobile device protection, DNS security, Internet of Things security, SaaS security API, and SaaS security inline; and threat intelligence, data loss prevention, services to resolve network disruptions, and sensitive data protection. It offers professional services, including architecture design and planning, implementation, configuration, and firewall migration; education services, such as certifications, as well as online and in-classroom training; and support services. It sells its products and services through its channel partners, as well as directly to enterprises, service providers, and government entities operating in various industries, including education, energy, financial services, government entities, healthcare, Internet and media, manufacturing, public sector, and telecommunications. The company was incorporated in 2005 and is headquartered in Santa Clara, California.",
@@ -12,18 +12,24 @@
   "earnings_call": "2026-09-01",
   "eps_estimate": 0.97745,
   "analysts": {
-    "strong_buy": 11,
+    "strong_buy": 10,
     "buy": 33,
-    "hold": 10,
+    "hold": 11,
     "sell": 1,
     "strong_sell": 0,
     "total": 55
   },
-  "target_mean": 390.5,
+  "target_mean": 391.02,
   "target_high": 475,
   "target_low": 190,
   "target_analysts": 50,
   "statements": [
+    {
+      "year": "2022",
+      "revenue": 5501500000,
+      "net": -267000000,
+      "margin": -4.9
+    },
     {
       "year": "2023",
       "revenue": 6892700000,
@@ -41,15 +47,14 @@
       "revenue": 9221500000,
       "net": 1133900000,
       "margin": 12.3
-    },
-    {
-      "year": "2026",
-      "revenue": 11480000000,
-      "net": 307000000,
-      "margin": 2.7
     }
   ],
   "quarterly": [
+    {
+      "q": "2Q2025",
+      "revenue": 2536300000,
+      "earnings": 253800000
+    },
     {
       "q": "3Q2025",
       "revenue": 2474000000,
@@ -69,8 +74,8 @@
   "growth": {
     "q0": 0.028900001,
     "q1": -0.0218,
-    "y0": 0.1084,
-    "y1": 0.16770001
+    "y0": 0.1082,
+    "y1": 0.16510001
   },
   "ratings": [
     {
@@ -226,9 +231,9 @@
   },
   "extras": {
     "beta": 0.908,
-    "enterprise_value": 271702425600,
-    "ev_ebitda": 145.998,
-    "ev_revenue": 23.667,
+    "enterprise_value": 274741657600,
+    "ev_ebitda": 147.631,
+    "ev_revenue": 23.932,
     "float_shares": 810218900,
     "short_shares": 22414335,
     "short_pct_float": 2.77,
@@ -346,21 +351,21 @@
       "date": "2026-06-12"
     },
     {
-      "name": "BAWA APARNA",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 265.00 - 280.00 per share.",
-      "value": 399835,
-      "shares": 1468,
-      "date": "2026-06-12"
-    },
-    {
       "name": "KEY JOHN PHILLIP",
       "role": "Director",
       "kind": "sell",
       "text": "Sale at price 279.24 per share.",
       "value": 2094300,
       "shares": 7500,
+      "date": "2026-06-12"
+    },
+    {
+      "name": "BAWA APARNA",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 265.00 - 280.00 per share.",
+      "value": 399835,
+      "shares": 1468,
       "date": "2026-06-12"
     }
   ],
