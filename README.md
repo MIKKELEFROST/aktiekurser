@@ -53,8 +53,15 @@ forudsiger ikke fremtidige skatteregler og er ikke skatterådgivning.
 | `data/univers.json` | De 542 selskaber med sektor og indeksmedlemskab |
 | `data/aktier.json` | Én række per selskab plus en 30-punkts sparkline (~600 KB) |
 | `data/historik/<SYM>.json` | To års daglige lukkekurser, én fil per selskab (~16 KB) |
+| `data/etf.json` | Én række per fond — kurs, formue, omkostning, periodeafkast (~1,3 MB) |
+| `data/etf-historik/<SYM>.json` | Tre års daglige kurser, en månedsserie tilbage til start, og fondens udbytter og split |
+| `data/etf-detaljer/<SYM>.json` | Hvad fonden ejer: de ti største poster, sektorer, aktivfordeling, kalenderårsafkast (~4 KB) |
 
 Historikken er delt op per selskab, så en detaljeside henter 16 KB frem for alle 542.
+Det samme gælder fondene: beholdningerne ligger for sig, fordi fondslisten hentes ved
+hvert besøg, og de ti største poster kun skal bruges på én fane på én side. Rækken i
+`etf.json` bærer `has_detail`, så en fond uden beholdninger ikke koster en 404 —
+tredive nordiske noteringer, kilden ikke fører stamdata på.
 
 **Kilder:** Yahoo Finance (kurser), Wikipedia (indeksernes sammensætning),
 ECB via Frankfurter (USD/DKK).

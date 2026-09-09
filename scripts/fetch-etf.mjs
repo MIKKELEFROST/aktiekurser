@@ -644,32 +644,34 @@ async function main() {
       // 404, og tre forsøg på det er tre kald ud i ingenting; dens udbyder og
       // navn står i EXTRA i forvejen. Det gælder også de tre andre moduler:
       // beholdninger, kalenderårsafkast og risikotal ligger i samme svar.
-      if (!e.kind) try {
-        const d = await fetchDetail(e.symbol, session);
-        extra = d.list;
-        if (KEEP_HISTORY) {
-          if (d.detail) {
-            await writeIfChanged(resolve(OUT_DETAIL, e.symbol + '.json'),
-              { symbol: e.symbol, updated_at: new Date().toISOString().slice(0, 10), ...d.detail });
-            hasDetail = true;
+      if (!e.kind) {
+        try {
+          const d = await fetchDetail(e.symbol, session);
+          extra = d.list;
+          if (KEEP_HISTORY) {
+            if (d.detail) {
+              await writeIfChanged(resolve(OUT_DETAIL, e.symbol + '.json'),
+                { symbol: e.symbol, updated_at: new Date().toISOString().slice(0, 10), ...d.detail });
+              hasDetail = true;
+            }
+          } else {
+            // Uden --history skrives ingen filer. Flaget må så blive stående som
+            // det var, ellers ville en kørsel uden filskrivning fortælle siden at
+            // detaljerne er væk, mens de ligger på disken.
+            hasDetail = previous.get(e.symbol)?.has_detail ?? false;
           }
-        } else {
-          // Uden --history skrives ingen filer. Flaget må så blive stående som
-          // det var, ellers ville en kørsel uden filskrivning fortælle siden at
-          // detaljerne er væk, mens de ligger på disken.
-          hasDetail = previous.get(e.symbol)?.has_detail ?? false;
+        } catch {
+          // Et afvist kald er ikke det samme som en fond uden beholdninger.
+          // Første gang de to blev behandlet ens, stod 68 fonde uden indhold,
+          // og 16 af de 20 første viste sig at have det hele — Yahoo havde bare
+          // sagt 429 midt i bunken. Fondens gamle tal og gamle fil gælder
+          // stadig, og symbolet stilles i kø til et forsøg mere bagefter.
+          const old = previous.get(e.symbol);
+          extra = old ? { family: old.family ?? null, category: old.category ?? null,
+                          expense_ratio: old.expense_ratio ?? null } : {};
+          hasDetail = old?.has_detail ?? false;
+          detailFailed.push(e.symbol);
         }
-      } catch (err) {
-        // Et afvist kald er ikke det samme som en fond uden beholdninger.
-        // Første gang de to blev behandlet ens, stod 68 fonde uden indhold,
-        // og 16 af de 20 første viste sig at have det hele — Yahoo havde bare
-        // sagt 429 midt i bunken. Fondens gamle tal og gamle fil gælder
-        // stadig, og symbolet stilles i kø til et forsøg mere bagefter.
-        const old = previous.get(e.symbol);
-        extra = old ? { family: old.family ?? null, category: old.category ?? null,
-                        expense_ratio: old.expense_ratio ?? null } : {};
-        hasDetail = old?.has_detail ?? false;
-        detailFailed.push(e.symbol);
       }
     }
     if (++done % 100 === 0) console.log(`  ${done}/${universe.length}…`);

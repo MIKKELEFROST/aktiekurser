@@ -89,6 +89,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
   const reaches = (series, cut) => !!(series && series.dates.length
     && series.dates[0] <= new Date(new Date(cut + 'T00:00:00Z').getTime() + 7 * 86400000)
         .toISOString().slice(0, 10));
+
   const SIMPLE_RANGES = ['1d', '1u', '1m', '3m', 'ytd', '1y', '3y', 'all'];
 
   // Enkel som udgangspunkt. De fleste kommer for at se hvordan det går, ikke
@@ -197,6 +198,11 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
     }
 
     const p = PRESETS.find((x) => x.key === state.range) || PRESETS.find((x) => x.key === '3m');
+
+    // "1d" tegnes normalt af minutdataene. Falder de ud, er de to seneste
+    // lukkekurser svaret — ikke en skæring på gårsdagens dato, som i en weekend
+    // ville lande efter sidste handelsdag og give ét enkelt punkt.
+    if (p.key === '1d') return { dates: day.dates.slice(-2), closes: day.closes.slice(-2) };
 
     // År til dato måles fra sidste års sidste lukkekurs, som et YTD-afkast
     // normalt opgøres. Vinduet åbner derfor på en decemberdato.
@@ -1100,8 +1106,13 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
             r.ytd != null ? 'Fra årets første handelsdag til i dag, som kilden opgør det.'
               : 'Fra sidste års sidste lukkekurs til i dag, regnet af kurshistorikken på denne side.');
         })()
-      + statRow('Plads på listen', r.rank ? '#' + r.rank : '–', '',
-          'Fondens placering blandt de ' + K.fmtInt(ALL.length) + ' fonde på listen, målt på formue i kroner.')
+      // Rangeringen er efter formue, og en fond uden oplyst formue lander
+      // sidst. At skrive "#1731" ville læses som "den mindste på listen",
+      // hvor det rigtige svar er, at vi ikke ved hvor stor den er.
+      + (r.rank && r.net_assets_dkk != null
+          ? statRow('Plads på listen', '#' + r.rank, '',
+              'Fondens placering blandt de ' + K.fmtInt(ALL.length) + ' fonde på listen, målt på formue i kroner.')
+          : '')
       + (conv
           ? statRow('Kurs omregnet', '≈ ' + K.fmtPrice(r.price_dkk) + ' DKK', '',
               'Kursen ganget med ECB’s referencekurs. Et beregnet tal, ikke en noteret kurs — derfor ≈.')
@@ -1458,7 +1469,10 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
     // Et vindue serien ikke kan nå, droppes i stedet for stiltiende at blive
     // klippet: nearestIndex lander på den første kurs der er, så en fond fra
     // 2019 stod med sin 2019-kurs under overskriften "For 10 år siden".
-    const reaches = (fromDate, firstDate) =>
+    // Eget navn, fordi reaches() ovenfor spørger om noget andet: den handler om
+    // en hel serie mod en skæringsdag, denne om ét punkt mod den dato det
+    // skulle have været.
+    const closeEnough = (fromDate, firstDate) =>
       new Date(firstDate) - new Date(fromDate) <= 45 * 86400000;
 
     const at = (fromDate, label) => {
@@ -1469,7 +1483,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
       const src = daily ? day : monthly;
       const i = K.nearestIndex(src.dates, fromDate);
       if (i === -1) return null;
-      if (label !== 'Ved første kurs' && !reaches(fromDate, src.dates[i])) return null;
+      if (label !== 'Ved første kurs' && !closeEnough(fromDate, src.dates[i])) return null;
       const base = src.closes[i];
       if (!base || r.price == null) return null;
       return { label, date: src.dates[i], value: AMOUNT * (r.price / base) };
@@ -2016,7 +2030,12 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
       // hver af dem ville ellers koste en 404 og en rundtur for ingenting.
       const [hist, detail, bench] = await Promise.all([
         loadHist(row.symbol),
-        row.has_detail === false ? Promise.resolve(null) : K.loadFundDetail(row.symbol).catch(() => null),
+        // Ingen detaljefil for en investeringsforening: kilden fører ikke
+        // stamdata på dem, og hentningen springer dem over af samme grund.
+        // Reglen står her og ikke kun i flaget, så den også gælder rækker
+        // skrevet af en ældre kørsel.
+        (row.has_detail === false || row.kind)
+          ? Promise.resolve(null) : K.loadFundDetail(row.symbol).catch(() => null),
         K.loadBenchmarks().catch(() => null),
       ]);
       state.hist = hist;
@@ -2052,6 +2071,12 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
         status: (mode, data) => {
           liveAt = mode === 'live' ? (data && data.t ? new Date(data.t).getTime() : Date.now()) : null;
           updatePriceInfo();
+          const el = $('#status');
+          if (!el || mode !== 'live') return;
+          const d = data.q[row.symbol] ? data.q[row.symbol].d : null;
+          el.textContent = 'Kilde: Yahoo Finance · kursen opdateres hvert minut, mens børsen handler'
+            + (d ? ' (' + d + ' min. forsinket fra ' + (row.exchange || 'børsen') + ')' : '')
+            + ' · nøgletal, beholdninger og historik hentes tre gange på hverdage';
         },
       });
     } catch (err) {
