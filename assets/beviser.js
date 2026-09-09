@@ -62,6 +62,20 @@
     } catch { return null; }
   }
 
+  // Udstederens egen formueudvikling: hvad 100 kr. lagt ind ved afdelingens
+  // start ville stå i. Den rækker tilbage til 2018, hvor børskurserne fra
+  // Yahoo først begynder i 2024.
+  async function serie(symbol) {
+    try {
+      const res = await fetch('data/beviser-historik/' + encodeURIComponent(symbol) + '.json',
+        { cache: 'no-cache' });
+      if (!res.ok) return null;
+      const body = await res.json();
+      if (!Array.isArray(body.dates) || !Array.isArray(body.index)) return null;
+      return { dates: body.dates, closes: body.index, basis: body.basis || 100, start: body.start };
+    } catch { return null; }
+  }
+
   // ── Perioder ───────────────────────────────────────────────────────────
   // Skåret på datoer, ikke på antal kurser. Beviserne handles ikke hver dag —
   // det roligste af dem har omkring hundrede kurser om året — så et vindue
@@ -110,10 +124,10 @@
   // Aktier, lang rente, kort rente og øvrigt som én stablet søjle. Det er den
   // ene figur, der forklarer forskellen mellem de tre afdelinger på ét blik.
   const DELE = [
-    { key: 'aktier',     label: 'Aktier',      farve: 'var(--fill-blaa)' },
-    { key: 'lang_rente', label: 'Lang rente',  farve: 'var(--fill-lilla)' },
-    { key: 'kort_rente', label: 'Kort rente',  farve: 'var(--coop-satin-200)' },
-    { key: 'oevrigt',    label: 'Øvrigt',      farve: 'var(--coop-neutral-100)' },
+    { key: 'aktier',       label: 'Aktier',       farve: 'var(--fill-blaa)' },
+    { key: 'obligationer', label: 'Obligationer', farve: 'var(--fill-lilla)' },
+    { key: 'andet',        label: 'Andet',        farve: 'var(--coop-satin-200)' },
+    { key: 'kontanter',    label: 'Kontanter',    farve: 'var(--coop-neutral-100)' },
   ];
 
   // Fast antal decimaler, dansk komma. Fordelingen står med én decimal, mens
@@ -157,7 +171,8 @@
       + (opts && opts.udenTekst ? '' : '<div class="mt-2 flex flex-wrap gap-y-1">' + tekst + '</div>');
   }
 
-  // ── Regioner ───────────────────────────────────────────────────────────
+  // ── Andelsliste ────────────────────────────────────────────────────────
+  // Bruges til regioner, brancher og lande: navn, søjle, procent.
   function regionsListe(regioner) {
     if (!regioner || !regioner.length) return '<p class="text-sm faint">Regionerne er ikke oplyst.</p>';
     const maks = Math.max.apply(null, regioner.map((r) => r[1]));
@@ -188,6 +203,6 @@
       + vaerdi + ' ud af ' + n + '">' + trin + '</div>';
   }
 
-  global.BEV = { COLOURS, url, load, history, afkast, siden, shiftDays, shiftMonths,
+  global.BEV = { COLOURS, url, load, history, serie, afkast, siden, shiftDays, shiftMonths,
                  fordelingBar, regionsListe, risikoSkala, tal, enDecimal, omkostning, DELE };
 })(window);

@@ -152,9 +152,12 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
         }).join('')
       + '</div>'
       + '<div class="mt-3 flex flex-wrap gap-y-1">' + B.fordelingBar(null, { kunNavne: true }) + '</div>'
-      + (state.faelles.fordeling_opgjort
-          ? '<p class="text-xs faint mt-3">Fordelingen er opgjort ' + K.fmtDate(state.faelles.fordeling_opgjort)
-            + ' og hentet hos Nordnet. Coop Bank opgør den mindst en gang om måneden.</p>' : '')
+      + (() => {
+          const datoer = [...new Set(state.rows.map((r) => (r.fakta || {}).portefoelje_dato).filter(Boolean))];
+          return datoer.length
+            ? '<p class="text-xs faint mt-3">Porteføljen er opgjort ' + K.fmtDate(datoer[0])
+              + ' og hentet hos Coop Bank, som opgør den mindst en gang om måneden.</p>' : '';
+        })()
       + '</section>';
   }
 
@@ -272,11 +275,13 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
         ['1 år', (r) => pct(a.get(r.symbol)['1y'])],
         ['52-ugers interval', (r) => (r.low_52w == null ? streg
           : '<span class="num">' + K.fmtPrice(r.low_52w) + ' – ' + K.fmtPrice(r.high_52w) + '</span>')],
+        ['Siden start i 2018', (r) => pct(((r.fakta || {}).afkast_udsteder || {}).siden_start)],
       ]],
       ['Sådan er den skruet sammen', [
         ['Aktier', (r) => num(aktieandel(r), ' %')],
-        ['Obligationer', (r) => { const f = (r.fakta || {}).fordeling;
-          return f ? num((f.lang_rente || 0) + (f.kort_rente || 0), ' %') : streg; }],
+        ['Obligationer', (r) => num(((r.fakta || {}).fordeling || {}).obligationer, ' %')],
+        ['Kontanter og andet', (r) => { const f = (r.fakta || {}).fordeling;
+          return f ? num((f.andet || 0) + (f.kontanter || 0), ' %') : streg; }],
         ['Loft på aktier', (r) => ((r.fakta || {}).aktieloft != null
           ? '<span class="num">' + r.fakta.aktieloft + ' %</span>' : streg)],
         ['Risikoindikator', (r) => ((r.fakta || {}).risiko != null
@@ -287,8 +292,12 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
       ['Papir, pris og skat', [
         ['Årlig omkostning', (r) => ((r.fakta || {}).aarlig_omkostning != null
           ? '<span class="num">' + B.omkostning(r.fakta.aarlig_omkostning) + ' %</span>' : streg)],
-        ['Af 10.000 kr. om året', (r) => ((r.fakta || {}).aarlig_omkostning != null
-          ? '<span class="num">' + Math.round(10000 * r.fakta.aarlig_omkostning / 100) + ' kr.</span>' : streg)],
+        ['Indirekte handelsomkostninger', (r) => ((r.fakta || {}).indirekte_handelsomkostninger != null
+          ? '<span class="num">' + B.omkostning(r.fakta.indirekte_handelsomkostninger) + ' %</span>' : streg)],
+        ['Af 10.000 kr. om året', (r) => { const f = r.fakta || {};
+          if (f.aarlig_omkostning == null) return streg;
+          const alt = f.aarlig_omkostning + (f.indirekte_handelsomkostninger || 0);
+          return '<span class="num">' + Math.round(10000 * alt / 100) + ' kr.</span>'; }],
         ['ISIN', (r) => ((r.fakta || {}).isin ? '<span class="num text-xs">' + K.esc(r.fakta.isin) + '</span>' : streg)],
         ['Udbyttepolitik', (r) => ((r.fakta || {}).udbyttepolitik
           ? '<span class="text-xs">' + K.esc(r.fakta.udbyttepolitik) + '</span>' : streg)],
@@ -327,9 +336,14 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
 
   // ── Omkostning, skat og handel ─────────────────────────────────────────
   function forklaringer() {
+    // Billigst på den løbende omkostning er ikke nødvendigvis billigst i alt:
+    // de indirekte handelsomkostninger er ikke med i det første tal, og de er
+    // forskellige nok til at vende rækkefølgen. Siden siger hvad den ser.
     const medPris = state.rows.filter((r) => (r.fakta || {}).aarlig_omkostning != null);
-    const billigst = medPris.length
-      ? medPris.reduce((a, b) => (a.fakta.aarlig_omkostning <= b.fakta.aarlig_omkostning ? a : b)) : null;
+    const ialt = (r) => r.fakta.aarlig_omkostning + (r.fakta.indirekte_handelsomkostninger || 0);
+    const mindst = (f) => medPris.reduce((a, b) => (f(a) <= f(b) ? a : b));
+    const billigstLoebende = medPris.length ? mindst((r) => r.fakta.aarlig_omkostning) : null;
+    const billigstIAlt = medPris.length ? mindst(ialt) : null;
 
     return '<div class="grid gap-4 md:grid-cols-2 mb-4">'
 
@@ -337,15 +351,26 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
       +   '<h2 class="font-extrabold tracking-tight mb-2">Hvad koster de?</h2>'
       +   '<p class="text-sm muted" style="max-width:74ch">Løbende omkostninger trækkes fra kursen hen '
       +     'over året, så du får ingen regning — men de er der. Afkastene på siden her er efter '
-      +     'omkostninger. Beløbet dækker både driften af afdelingen og de fonde, den selv investerer i.</p>'
+      +     'omkostninger. Beløbet dækker både driften af afdelingen og de fonde, den selv investerer i. '
+      +     'Det andet tal er de indirekte handelsomkostninger: hvad afdelingen betaler for at handle '
+      +     'papirerne indeni, som ikke tælles med i det første.</p>'
       +   '<div class="mt-3">' + state.rows.map((r) => kv(kort(r),
             (r.fakta || {}).aarlig_omkostning != null
-              ? '<span class="num">' + B.omkostning(r.fakta.aarlig_omkostning) + ' % · '
-                + Math.round(10000 * r.fakta.aarlig_omkostning / 100) + ' kr. af 10.000</span>'
+              ? '<span class="num">' + B.omkostning(r.fakta.aarlig_omkostning)
+                + ' % + ' + B.omkostning(r.fakta.indirekte_handelsomkostninger || 0) + ' % · '
+                + Math.round(10000 * (r.fakta.aarlig_omkostning
+                    + (r.fakta.indirekte_handelsomkostninger || 0)) / 100) + ' kr. af 10.000</span>'
               : '<span class="faint">–</span>')).join('') + '</div>'
-      +   (billigst ? '<p class="text-xs faint mt-3">Billigst er ' + K.esc(kort(billigst))
-            + '. Forskellen mellem afdelingerne er små ni hundrededele af et procentpoint — den betyder '
-            + 'mindre for resultatet end aktieandelen gør.</p>' : '')
+      +   (billigstIAlt
+            ? '<p class="text-xs faint mt-3">'
+              + (billigstLoebende.symbol === billigstIAlt.symbol
+                ? K.esc(kort(billigstIAlt)) + ' er billigst, både på den løbende omkostning og i alt.'
+                : K.esc(kort(billigstLoebende)) + ' har den laveste løbende omkostning, men '
+                  + K.esc(kort(billigstIAlt)) + ' er billigst, når de indirekte handelsomkostninger '
+                  + 'regnes med — de er ikke med i det første tal.')
+              + ' Forskellen mellem afdelingerne er hundrededele af et procentpoint og betyder mindre '
+              + 'for resultatet, end aktieandelen gør.</p>'
+            : '')
       + '</section>'
 
       + '<section class="card card-satin p-4 md:p-5">'
@@ -369,16 +394,14 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
       + '<ul class="text-sm muted" style="max-width:78ch;list-style:disc;padding-left:1.1rem">'
       +   '<li><strong>Kurser og kurshistorik:</strong> Yahoo Finance, samme kilde som resten af sitet. '
       +     'Hentet ' + K.esc(K.fmtAge(state.updatedAt)) + '. Afkastene regner vi selv, på datoerne.</li>'
-      +   '<li><strong>Beskrivelser, ISIN, omkostninger og beskatning:</strong> Coop Bank'
-      +     (k.coopbank && k.coopbank.aflaest ? ', aflæst ' + K.fmtDate(k.coopbank.aflaest) : '') + '.</li>'
-      +   '<li><strong>Fordeling, regioner og risikoindikator:</strong> Nordnet'
-      +     (k.nordnet && k.nordnet.aflaest ? ', aflæst ' + K.fmtDate(k.nordnet.aflaest) : '')
-      +     (state.faelles.fordeling_opgjort
-            ? ', med tal opgjort ' + K.fmtDate(state.faelles.fordeling_opgjort) : '') + '.</li>'
+      +   '<li><strong>Fordeling, regioner, brancher, lande, omkostninger, beskatning, indre værdi '
+      +     'og dokumenter:</strong> Coop Banks eget dataendpoint, hentet automatisk med '
+      +     '<span class="num">scripts/fetch-beviser.mjs</span>'
+      +     (state.faktaOpdateret ? ' den ' + K.fmtDate(state.faktaOpdateret) : '') + '.</li>'
+      +   '<li><strong>Morningstar-kategori:</strong> Nordnet.</li>'
       + '</ul>'
       + '<p class="text-xs faint mt-3" style="max-width:78ch">Kurserne er vejledende og kan være '
-      +   'forsinkede. De håndholdte oplysninger står i <span class="num">data/investeringsbeviser.json</span> '
-      +   'og opdateres, når udstederen ændrer dem — mangler et tal, står der en streg frem for et gæt. '
+      +   'forsinkede. Mangler et tal, står der en streg frem for et gæt. '
       +   'Prospekt og central investorinformation ligger hos Coop Bank, og det er dem, der gælder. '
       +   'Siden er ikke investeringsrådgivning: det du sætter til side kan både vokse og blive mindre, '
       +   'og du kan få mindre tilbage, end du satte ind.</p>'
