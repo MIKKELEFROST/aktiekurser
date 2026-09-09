@@ -7,13 +7,13 @@
       "navn": "Coop Bank",
       "url": "https://www.coopbank.dk/investeringsbeviser",
       "aflaest": "2026-09-09",
-      "daekker": "beskrivelse, aktieloft, ISIN, kategori, beskatning, omkostning, indre værdi"
+      "daekker": "beskrivelse, aktieloft, ISIN, kategori, beskatning, omkostning, indre værdi og risikoindikator (SRI)"
     },
     "nordnet": {
       "navn": "Nordnet",
       "url": "https://www.nordnet.dk",
       "aflaest": "2026-09-09",
-      "daekker": "fordeling og regioner, begge opgjort 31.7.2026, samt risikoindikator og Morningstar-kategori"
+      "daekker": "fordeling og regioner, begge opgjort 31.7.2026, samt Morningstar-kategori"
     }
   },
   "faelles": {
@@ -26,7 +26,7 @@
     "historik_starter": "2018-07",
     "historik_note": "Coop Bank viser formueudvikling for alle tre afdelinger tilbage til juli 2018. Vores egen kurshistorik begynder i januar 2024, hvor beviserne kom med i kilden vi henter fra.",
     "regioner_note": "Regionerne er Nordnets eksponeringstal. Coop Bank opgør dem anderledes på sin egen side, hvor obligationerne tæller med — dér fylder Europa mere. De tre afdelinger ligner hinanden på regioner, fordi de bruger de samme byggeklodser; det er vægten af aktier, der skiller dem ad.",
-    "risiko_note": "Alle tre står i kategori 3 af 7 hos Nordnet. Risikotallet skiller dem altså ikke ad — det gør aktieandelen og udsvingene."
+    "risiko_note": "Alle tre står i kategori 3 af 7 på udstederens egen risikoindikator. Risikotallet skiller dem altså ikke ad — det gør aktieandelen og udsvingene."
   },
   "beviser": {
     "WEICBS.CO": {
@@ -55,10 +55,10 @@
       "beskrivelse": "Afdelingen Balanceret investerer i en blanding af aktier og obligationer og går efter global spredning og en mellem risikoprofil. Det vil sige en fordeling, hvor aktier og alternative investeringer ikke overstiger 60 % af formuen. Afdelingen investerer fortrinsvis i andele i andre investeringsforeninger og deres underafdelinger – f.eks. ETF'er.",
       "aktieloft": 60,
       "isin": "DK0060991578",
-      "kategori": null,
+      "kategori": "Blandede Balanceret",
       "morningstar_kategori": "Balanceret - EUR Moderat",
       "udbyttepolitik": "Akkumulerende",
-      "beskatning": null,
+      "beskatning": "Lagerbeskattet",
       "aarlig_omkostning": 0.58,
       "risiko": 3,
       "risiko_skala": 7,
