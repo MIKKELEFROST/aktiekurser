@@ -169,9 +169,12 @@
       + ['År', 'Alder', 'Primo', 'Indbetalt', 'Afkast', 'Bruttosalg', 'Skat', 'Forbrug', 'Ultimo']
         .map((h) => '<th>' + h + '</th>').join('')
       + '</tr></thead>';
-    const body = '<tbody>' + rows.map((r) => {
+    // Det første pensionsår markeres, så skiftet kan findes uden at læse
+    // hele kolonnen igennem.
+    const førstePension = rows.findIndex((r) => r.retired);
+    const body = '<tbody>' + rows.map((r, i) => {
       const age = Math.floor(r.ageMonths / 12) + ' år';
-      return '<tr' + (r.retired ? ' class="pen"' : '') + '>'
+      return '<tr class="' + (r.retired ? 'pen' : '') + (i === førstePension ? ' start' : '') + '">'
         + '<td>' + r.year + '</td><td>' + age + '</td>'
         + '<td>' + v(r.open, r.deflator) + '</td>'
         + '<td>' + (r.contribution ? v(r.contribution, r.deflator) : '–') + '</td>'
@@ -266,9 +269,16 @@
           ? card('Første måneds salg', kr(firstMonth.gross) + ' kr.',
               'heraf ' + kr(firstMonth.tax) + ' kr. i skat, så ' + kr(firstMonth.net) + ' kr. er dine')
           : '')
-      + card('Tilbage som ' + it.endAge + '-årig', kr(sim.finalNet) + ' kr.',
-          (sim.finalTax > 0.5 ? 'efter ' + kr(sim.finalTax) + ' kr. i salgsskat' : 'efter skat')
-          + (infl ? ' · ' + kr(sim.finalNet / deflFinal) + ' kr. i dagens penge' : ''))
+      // Fire kroner tilbage ser ud som en fejl. Det er det ikke — det er selve
+      // meningen med at finde det mindste beløb der rækker — men et tal som
+      // "4 kr." får enhver til at tro, noget er gået galt. Under tusind
+      // kroner skrives det derfor som det, det er: ingenting tilbage.
+      + card('Tilbage som ' + it.endAge + '-årig',
+          sim.finalNet < 1000 ? '≈ 0 kr.' : kr(sim.finalNet) + ' kr.',
+          sim.finalNet < 1000
+            ? 'depotet er brugt op — det er meningen'
+            : (sim.finalTax > 0.5 ? 'efter ' + kr(sim.finalTax) + ' kr. i salgsskat' : 'efter skat')
+              + (infl ? ' · ' + kr(sim.finalNet / deflFinal) + ' kr. i dagens penge' : ''))
       + '</div>'
       + (pensionMonths < 120
           ? '<p class="text-xs mt-3" style="max-width:78ch;color:var(--delta-down)">'
@@ -362,6 +372,22 @@
     if (!state.sim) return;
     $('#chartHost').innerHTML = drawChart(state.sim, state.real);
     $('#yearTable').innerHTML = drawTable(state.sim, state.real);
+
+    // Tabellen åbnede på de mest ensformige år — tolv ens opsparingsrækker —
+    // og så ud til at stoppe elleve år før pensionen. Den ruller nu ned til
+    // det år, man stopper, som er det året handler om.
+    const wrap = $('#yearWrap');
+    const start = wrap && wrap.querySelector('tr.start');
+    const rows = P.byYear(state.sim.months);
+    if (wrap && start) {
+      const head = wrap.querySelector('thead');
+      wrap.scrollTop = Math.max(0, start.offsetTop - (head ? head.offsetHeight : 0) - 8);
+    }
+    const note = $('#yearNote');
+    if (note && rows.length) {
+      note.textContent = rows.length + ' år, fra ' + rows[0].year + ' til '
+        + rows[rows.length - 1].year + '. Tabellen ruller, og den åbner ved det år, du stopper.';
+    }
     $('#chartNote').textContent = state.real
       ? 'Beløbene er omregnet til dagens købekraft. Kurven falder derfor hurtigere end den gør i kroner.'
       : (state.inputs && state.inputs.inflationOn

@@ -120,7 +120,26 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
   .tbl thead th { font-size: 11px; font-weight: 700; color: var(--text-muted); position: sticky; top: 0; background: var(--surface-1); }
   .tbl tbody tr { border-top: 1px solid var(--gridline); }
   .tbl tbody tr.pen td:first-child { color: var(--fase-pen); font-weight: 700; }
-  .tbl-wrap { max-height: 460px; overflow: auto; border: 1px solid var(--gridline); border-radius: var(--radius-xs); }
+  /* Rullekassen så ud til at være hele tabellen: den stoppede i 2038, elleve
+     år før pensionen, uden en synlig rullebjælke eller nogen anden antydning
+     af, at der var mere. Nu er bjælken altid der, og der ligger en skygge i
+     bunden, så det kan ses at listen fortsætter. */
+  .tbl-wrap {
+    max-height: 540px; overflow: auto; scrollbar-gutter: stable;
+    border: 1px solid var(--gridline); border-radius: var(--radius-xs);
+    position: relative;
+  }
+  .tbl-wrap::-webkit-scrollbar { width: 12px; }
+  .tbl-wrap::-webkit-scrollbar-track { background: var(--surface-2); }
+  .tbl-wrap::-webkit-scrollbar-thumb {
+    background: var(--text-muted); border-radius: 6px;
+    border: 3px solid var(--surface-2);
+  }
+  /* Ingen udtoning i bunden: den lå hen over den sidste række og fik det
+     sidste år til at se deaktiveret ud. Rullebjælken står der altid, og
+     linjen under tabellen siger hvor mange år den rummer. Det er nok. */
+  /* Året man stopper er det, tabellen handler om. Det får en streg. */
+  .tbl tbody tr.start td { border-top: 2px solid var(--fase-pen); }
 
   .seg { display: inline-flex; border: 1px solid var(--hairline); border-radius: 999px; overflow: hidden; }
   .seg button {
@@ -356,7 +375,9 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
         <p class="text-xs muted mb-3" style="max-width:76ch">Alle beløb er for hele kalenderåret.
           Det første og det sidste år er ofte kortere end tolv måneder, fordi beregningen
           begynder og slutter midt i et år.</p>
-        <div class="tbl-wrap"><table class="tbl" id="yearTable"></table></div>
+        <div class="tbl-scroll"><div class="tbl-wrap" id="yearWrap">
+          <table class="tbl" id="yearTable"></table></div></div>
+        <p id="yearNote" class="text-xs faint mt-2"></p>
       </section>
 
       <section class="card rounded-md p-5 mb-4" id="sensCard" hidden>
