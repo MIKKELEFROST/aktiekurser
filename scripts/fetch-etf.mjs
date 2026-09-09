@@ -16,6 +16,7 @@ import { fileURLToPath } from 'node:url';
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const OUT_LIST = resolve(ROOT, 'data/etf.json');
 const OUT_HIST = resolve(ROOT, 'data/etf-historik');
+const OUT_DETAIL = resolve(ROOT, 'data/etf-detaljer');
 
 const argv = process.argv.slice(2);
 const QUOTES_ONLY = argv.includes('--quotes-only');
@@ -341,18 +342,29 @@ async function cachedLifetime(symbol, session) {
   try {
     const old = JSON.parse(await readFile(path, 'utf8'));
     const m = old.monthly;
-    if (m && m.dates && m.dates.length > 1 && m.dates[m.dates.length - 1].slice(0, 7) === thisMonth) {
-      return { monthly: m, reused: true };
+    // Genbrug kræver to ting: at månedsserien allerede rækker ind i denne
+    // måned, og at filen er skrevet af en kørsel der kendte til hændelser.
+    // Uden det andet krav ville filerne fra før udbytterne kom til blive
+    // genbrugt i det uendelige og aldrig få dem — hvad de gjorde i én kørsel,
+    // hvor VUSA.DE stod med nul udbytter og har femogtredive.
+    if (m && m.dates && m.dates.length > 1 && m.dates[m.dates.length - 1].slice(0, 7) === thisMonth
+        && old.events) {
+      return { monthly: m, events: old.events, reused: true };
     }
   } catch { /* ingen fil endnu */ }
-  try { return { monthly: await fetchLifetime(symbol, session), reused: false }; }
-  catch { return { monthly: null, reused: false }; }
+  try {
+    const lt = await fetchLifetime(symbol, session);
+    return { monthly: lt ? lt.monthly : null, events: lt ? lt.events : null, reused: false };
+  } catch { return { monthly: null, events: null, reused: false }; }
 }
 
 async function fetchLifetime(symbol, session) {
   return retrying(async () => {
+    // events=div,split koster ingen ekstra forespørgsel — de ligger i det
+    // samme svar. Og for en fond er de mere end pynt: en fond uden en eneste
+    // udbetaling gennem ti år er akkumulerende, og det afgør beskatningen.
     const url = 'https://query1.finance.yahoo.com/v8/finance/chart/' + encodeURIComponent(symbol)
-      + '?interval=1mo&range=max';
+      + '?interval=1mo&range=max&events=div%2Csplit';
     const res = await fetch(url, { headers: session.headers });
     if (!res.ok) throw new Error('HTTP ' + res.status);
     const r = (await res.json()).chart?.result?.[0];
@@ -369,7 +381,23 @@ async function fetchLifetime(symbol, session) {
       vals.push(round(closes[i], 4));
     }
     if (dates.length < 2) return null;
-    return { dates, closes: vals };
+
+    // Udbyttedatoen er den dag fonden handles uden udbytte. Den stemples i
+    // børsens åbningstid, så UTC-datoen er den rigtige dag.
+    const ev = r?.events || {};
+    const dividends = Object.values(ev.dividends || {})
+      .filter((d) => d && d.date != null && d.amount != null)
+      .map((d) => ({ date: isoDay(d.date), amount: round(d.amount, 6) }))
+      .sort((a, b) => (a.date < b.date ? -1 : 1));
+    const splits = Object.values(ev.splits || {})
+      .filter((x) => x && x.date != null)
+      .map((x) => ({ date: isoDay(x.date),
+                     ratio: x.splitRatio || ((x.numerator ?? '?') + ':' + (x.denominator ?? '?')) }))
+      .sort((a, b) => (a.date < b.date ? -1 : 1));
+
+    // Altid med, også tom: en fond uden udbetalinger er ikke en fond vi
+    // mangler at spørge om, og det er nøjagtig den forskel genbruget læser.
+    return { monthly: { dates, closes: vals }, events: { dividends, splits } };
   }, 3, session);
 }
 
@@ -405,24 +433,120 @@ function derive(hist, monthly) {
   return out;
 }
 
-// ── Profile ──────────────────────────────────────────────────────────────
+// ── Profil og indhold ────────────────────────────────────────────────────
 // The provider is always there. The category and the ongoing charge are filled
 // in for the American funds and almost never for the European ones, so they are
 // carried as null rather than as a zero the page would print as "0,00 %".
-async function fetchProfile(symbol, session) {
+//
+// De fire moduler hentes i ét kald. Det er samme forespørgsel som før — kun
+// modullisten er længere — så beholdningerne koster ikke en eneste ekstra
+// rundtur. Det er hele grunden til at de ligger her og ikke i en egen funktion:
+// en fond mere at slå op var det, der udløste Yahoos rate-grænse sidst.
+const DETAIL_MODULES = 'fundProfile,topHoldings,fundPerformance,defaultKeyStatistics';
+
+// Yahoo udleverer de fire prisforhold som deres omvendte: 0,04035 for et P/E
+// på 24,8. Deres eget "fmt" skriver 0,04, som er indtjeningsafkastet og ikke
+// det tallet hedder. Kontrolleret på tværs af fondstyper — QQQ 29,2, S&P 500
+// 24,8, value 20,7, small cap 17,3 — så det er ikke tilfældigt for én fond.
+const invert = (v) => (v && Number.isFinite(v) && v > 0 ? round(1 / v, 2) : null);
+const asPct = (v, d = 2) => (v == null || !Number.isFinite(v) ? null : round(v * 100, d));
+
+// Sektorvægtene kommer som en liste af objekter med én nøgle hver:
+// [{ realestate: 0.018 }, { technology: 0.3869 }, …].
+function flattenSectors(list) {
+  const out = [];
+  for (const entry of (list || [])) {
+    for (const [k, v] of Object.entries(entry || {})) {
+      const w = asPct(v);
+      if (w != null && w > 0) out.push({ k, w });
+    }
+  }
+  return out.sort((a, b) => b.w - a.w);
+}
+
+async function fetchDetail(symbol, session) {
   return retrying(async () => {
     const url = 'https://query1.finance.yahoo.com/v10/finance/quoteSummary/' + encodeURIComponent(symbol)
-      + '?modules=fundProfile&formatted=false&crumb=' + encodeURIComponent(session.crumb);
+      + '?modules=' + DETAIL_MODULES + '&formatted=false&crumb=' + encodeURIComponent(session.crumb);
     const res = await fetch(url, { headers: session.headers });
     if (!res.ok) throw new Error('HTTP ' + res.status);
-    const fp = (await res.json()).quoteSummary?.result?.[0]?.fundProfile;
-    if (!fp) throw new Error('ingen fundProfile');
-    const fee = fp.feesExpensesInvestment?.annualReportExpenseRatio;
-    return {
-      family: fp.family || null,
-      category: fp.categoryName || null,
+    const q = (await res.json()).quoteSummary?.result?.[0];
+    if (!q) throw new Error('tomt quoteSummary');
+
+    const fp = q.fundProfile, th = q.topHoldings, perf = q.fundPerformance, ks = q.defaultKeyStatistics;
+    const fee = fp?.feesExpensesInvestment?.annualReportExpenseRatio;
+
+    // Det der hører til i listen: tre felter, som før.
+    const list = {
+      family: fp?.family || null,
+      category: fp?.categoryName || null,
       expense_ratio: fee ? round(fee * 100, 3) : null,   // 0 betyder "ikke oplyst"
     };
+
+    const holdings = (th?.holdings || [])
+      .filter((h) => h && h.holdingName)
+      .map((h) => ({ s: h.symbol || null, n: cleanName(h.holdingName), w: asPct(h.holdingPercent) }))
+      .filter((h) => h.w != null && h.w > 0);
+
+    const sectors = flattenSectors(th?.sectorWeightings);
+
+    const alloc = {};
+    for (const [key, raw] of [['aktier', th?.stockPosition], ['obligationer', th?.bondPosition],
+                              ['kontant', th?.cashPosition], ['andet', th?.otherPosition],
+                              ['praeference', th?.preferredPosition], ['konvertible', th?.convertiblePosition]]) {
+      const w = asPct(raw);
+      if (w != null && w > 0.005) alloc[key] = w;
+    }
+
+    const eq = th?.equityHoldings || {};
+    const equity = {
+      pe: invert(eq.priceToEarnings), pb: invert(eq.priceToBook),
+      ps: invert(eq.priceToSales), pcf: invert(eq.priceToCashflow),
+    };
+
+    const bh = th?.bondHoldings || {};
+    const bond = {
+      duration: bh.duration ?? null,
+      maturity: bh.maturity ?? null,
+      credit_quality: bh.creditQuality ?? null,
+    };
+    const bond_ratings = flattenSectors(th?.bondRatings);
+
+    // Kalenderårsafkast. Det er totalafkast — udbytterne er med — og derfor
+    // det eneste sted på siden hvor en udbyttebetalende fond måles retfærdigt.
+    const annual = (perf?.annualTotalReturns?.returns || [])
+      .filter((x) => x && x.year && x.annualValue != null)
+      .map((x) => ({ y: String(x.year), v: asPct(x.annualValue) }))
+      .filter((x) => x.v != null)
+      .sort((a, b) => (a.y < b.y ? -1 : 1));
+
+    const risk = (perf?.riskOverviewStatistics?.riskStatistics || [])
+      .filter((x) => x && x.year && x.stdDev != null)
+      .map((x) => ({ y: String(x.year), alpha: x.alpha ?? null, beta: x.beta ?? null,
+                     stddev: x.stdDev ?? null, sharpe: x.sharpeRatio ?? null }));
+
+    const detail = {
+      holdings, sectors,
+      allocation: Object.keys(alloc).length ? alloc : null,
+      equity: Object.values(equity).some((v) => v != null) ? equity : null,
+      bond: Object.values(bond).some((v) => v != null) ? bond : null,
+      bond_ratings,
+      annual, risk,
+      yield: asPct(ks?.yield),
+      // Nul betyder "ikke oplyst", præcis som ved gebyret. En indeksfond
+      // udskifter ikke bogstaveligt talt intet på et år.
+      turnover: fp?.feesExpensesInvestment?.annualHoldingsTurnover
+        ? asPct(fp.feesExpensesInvestment.annualHoldingsTurnover) : null,
+      inception: ks?.fundInceptionDate ? isoDay(ks.fundInceptionDate) : null,
+      legal_type: fp?.legalType || ks?.legalType || null,
+    };
+
+    // En fond hvor intet af det her findes, skal ikke have en fil. 404'eren er
+    // billigere end en tom fil, og rækken siger selv at der ikke er nogen.
+    const has = holdings.length || sectors.length || annual.length
+      || detail.allocation || detail.equity || bond_ratings.length;
+
+    return { list, detail: has ? detail : null };
   }, 3, session);
 }
 
@@ -453,7 +577,8 @@ async function main() {
     universe = (JSON.parse(await readFile(OUT_LIST, 'utf8')).etfs || [])
       .map((e) => ({ symbol: e.symbol, name: e.name, exchange: e.exchange, market: e.market,
                      currency: e.currency, net_assets: e.net_assets, family: e.family,
-                     category: e.category, expense_ratio: e.expense_ratio, kind: e.kind }));
+                     category: e.category, expense_ratio: e.expense_ratio,
+                     kind: e.kind, has_detail: e.has_detail }));
     console.log(`Univers genbrugt: ${universe.length} ETF'er`);
   } else {
     console.log('Screener:');
@@ -492,11 +617,12 @@ async function main() {
   console.log('Historik og profiler…');
   let done = 0, reused = 0;
   const failed = [];
+  const detailFailed = [];
   const rows = await pool(universe, CONCURRENCY, async (e) => {
     const q = quotes.get(e.symbol);
     if (!q || q.price == null) { failed.push({ symbol: e.symbol, reason: 'ingen kurs' }); return null; }
 
-    let hist = null, monthly = null, extra = {};
+    let hist = null, monthly = null, extra = {}, hasDetail = false;
     if (!QUOTES_ONLY) {
       try {
         hist = await fetchHistory(e.symbol, session);
@@ -510,13 +636,43 @@ async function main() {
           await writeIfChanged(resolve(OUT_HIST, e.symbol + '.json'),
             { symbol: e.symbol, updated_at: new Date().toISOString().slice(0, 10),
               dates: hist.dates, closes: hist.closes,
-              ...(monthly ? { monthly } : {}) });
+              ...(monthly ? { monthly } : {}),
+              ...(lt.events ? { events: lt.events } : {}) });
         }
       } catch (err) { failed.push({ symbol: e.symbol, reason: 'historik: ' + err.message }); }
       // En investeringsforening har ingen fundProfile hos Yahoo. Kaldet svarer
       // 404, og tre forsøg på det er tre kald ud i ingenting; dens udbyder og
-      // navn står i EXTRA i forvejen.
-      if (!e.kind) { try { extra = await fetchProfile(e.symbol, session); } catch { extra = {}; } }
+      // navn står i EXTRA i forvejen. Det gælder også de tre andre moduler:
+      // beholdninger, kalenderårsafkast og risikotal ligger i samme svar.
+      if (!e.kind) {
+        try {
+          const d = await fetchDetail(e.symbol, session);
+          extra = d.list;
+          if (KEEP_HISTORY) {
+            if (d.detail) {
+              await writeIfChanged(resolve(OUT_DETAIL, e.symbol + '.json'),
+                { symbol: e.symbol, updated_at: new Date().toISOString().slice(0, 10), ...d.detail });
+              hasDetail = true;
+            }
+          } else {
+            // Uden --history skrives ingen filer. Flaget må så blive stående som
+            // det var, ellers ville en kørsel uden filskrivning fortælle siden at
+            // detaljerne er væk, mens de ligger på disken.
+            hasDetail = previous.get(e.symbol)?.has_detail ?? false;
+          }
+        } catch {
+          // Et afvist kald er ikke det samme som en fond uden beholdninger.
+          // Første gang de to blev behandlet ens, stod 68 fonde uden indhold,
+          // og 16 af de 20 første viste sig at have det hele — Yahoo havde bare
+          // sagt 429 midt i bunken. Fondens gamle tal og gamle fil gælder
+          // stadig, og symbolet stilles i kø til et forsøg mere bagefter.
+          const old = previous.get(e.symbol);
+          extra = old ? { family: old.family ?? null, category: old.category ?? null,
+                          expense_ratio: old.expense_ratio ?? null } : {};
+          hasDetail = old?.has_detail ?? false;
+          detailFailed.push(e.symbol);
+        }
+      }
     }
     if (++done % 100 === 0) console.log(`  ${done}/${universe.length}…`);
 
@@ -543,9 +699,41 @@ async function main() {
       // Kun de fonde der ikke er ETF'er bærer feltet. Skrevet på alle 1.728
       // ville "kind":"etf" koste 20 KB på en fil siden henter ved hvert besøg.
       ...(e.kind ? { kind: e.kind } : {}),
+      // Fondssiden henter kun detaljefilen når der er en. Tredive fonde uden
+      // beholdninger — nordiske noteringer kilden ikke fører profil på — ville
+      // ellers koste en 404 og en rundtur for ingenting hver gang nogen
+      // åbnede dem.
+      has_detail: QUOTES_ONLY ? (e.has_detail ?? undefined) : hasDetail,
       ...(hist ? derive(hist, monthly) : carryOver(e.symbol)),
     };
   });
+
+  // Andet forsøg for dem Yahoo afviste. Seks samtidige kald over sytten
+  // hundrede fonde rammer grænsen; to ad gangen over et halvt hundrede gør
+  // ikke. Det er billigere end at vente et døgn på næste kørsel.
+  if (detailFailed.length && !QUOTES_ONLY && KEEP_HISTORY) {
+    const bySymbol = new Map(rows.filter(Boolean).map((r) => [r.symbol, r]));
+    const queue = detailFailed.filter((sym) => bySymbol.has(sym));
+    console.log(`Andet forsøg på ${queue.length} detaljer…`);
+    let saved = 0;
+    await pool(queue, 2, async (symbol) => {
+      const row = bySymbol.get(symbol);
+      try {
+        const d = await fetchDetail(symbol, session);
+        if (d.list.family != null) row.family = d.list.family;
+        if (d.list.category != null) row.category = d.list.category;
+        if (d.list.expense_ratio != null) row.expense_ratio = d.list.expense_ratio;
+        if (d.detail) {
+          await writeIfChanged(resolve(OUT_DETAIL, symbol + '.json'),
+            { symbol, updated_at: new Date().toISOString().slice(0, 10), ...d.detail });
+          row.has_detail = true;
+          saved++;
+        }
+      } catch { /* så står fonden uden, og i morgen prøves igen */ }
+      await sleep(150);
+    });
+    console.log(`  ${saved} hentet i andet forsøg`);
+  }
 
   const etfs = rows.filter(Boolean).sort((a, b) => (b.net_assets_dkk ?? -1) - (a.net_assets_dkk ?? -1));
   etfs.forEach((e, i) => { e.rank = i + 1; });
@@ -564,6 +752,15 @@ async function main() {
   if (!etfs.length) {
     console.error('Ingen ETF\'er hentet — skriver ikke.');
     process.exit(1);
+  }
+
+  // --limit er en prøvekørsel. Skrev den listen, ville fem fonde lægge sig
+  // hen over de sytten hundrede — og guarden ovenfor springer netop over ved
+  // --limit, fordi et lille tal dér er meningen. Historik- og detaljefilerne
+  // skrives stadig; de hører til hver sin fond og kan ikke ramme de andre.
+  if (LIMIT) {
+    console.log(`Prøvekørsel (--limit=${LIMIT}) — ${etfs.length} fonde hentet, listen skrives ikke.`);
+    return;
   }
 
   await writeJson(OUT_LIST, {
@@ -587,10 +784,24 @@ async function main() {
       }
     } catch { /* mappen findes ikke endnu */ }
     if (removed) console.log(`  historik: ${removed} forældede filer fjernet`);
+
+    // Samme oprydning for detaljerne, og en til: en fond der har mistet sine
+    // beholdninger hos kilden, skal heller ikke beholde de gamle. Rækken siger
+    // nu at der ingen er, og en fil der modsagde den ville blive hentet alligevel.
+    const keepDetail = new Set(etfs.filter((e) => e.has_detail).map((e) => e.symbol + '.json'));
+    let goneDetail = 0;
+    try {
+      for (const f of await readdir(OUT_DETAIL)) {
+        if (f.endsWith('.json') && !keepDetail.has(f)) { await unlink(resolve(OUT_DETAIL, f)); goneDetail++; }
+      }
+    } catch { /* mappen findes ikke endnu */ }
+    if (goneDetail) console.log(`  detaljer: ${goneDetail} forældede filer fjernet`);
   }
 
   const carried = failed.filter((f) => previous.has(f.symbol)).length;
+  const withDetail = etfs.filter((e) => e.has_detail).length;
   console.log(`Skrev ${etfs.length} ETF'er`
+    + (withDetail ? `, ${withDetail} med beholdninger` : '')
     + (reused ? `, ${reused} lange serier genbrugt` : '')
     + (failed.length ? `, ${failed.length} fejlede` : '')
     + (carried ? ` (${carried} beholdt forrige tal)` : ''));

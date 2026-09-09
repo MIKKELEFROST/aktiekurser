@@ -15,79 +15,10 @@
 tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial', 'system-ui', 'sans-serif'] } } } }
 </script>
 <style>
-  .chart-wrap { position: relative; }
-  .crosshair { pointer-events: none; }
-  #tooltip {
-    position: absolute; pointer-events: none; opacity: 0; transition: opacity .12s;
-    background: var(--surface-1); border: 1px solid var(--hairline);
-    border-radius: 8px; padding: 6px 10px; font-size: 12px; white-space: nowrap;
-    box-shadow: 0 4px 14px rgba(0,0,0,.10); z-index: 5;
-  }
-  .stat { border-top: 1px solid var(--gridline); }
-  .range-btn {
-    border: 1px solid var(--hairline); color: var(--text-secondary);
-    border-radius: 999px; padding: 4px 12px; font-size: 12px; font-weight: 700;
-  }
-  .range-btn[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
-  .date-input {
-    border: 1px solid var(--hairline); border-radius: 8px; padding: 5px 8px;
-    font-size: 12px; background: transparent; color: var(--text-primary);
-  }
-
-  /* Series colours for the comparison chart. Four hues that hold apart from
-     each other and from the red accent, defined for both themes. */
-  :root { --s1: #1f6feb; --s2: #0f766e; --s3: #7c3aed; --s4: #a16207; }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) { --s1: #6ea8fe; --s2: #2dd4bf; --s3: #c4b5fd; --s4: #fbbf24; }
-  }
-  :root[data-theme="dark"] { --s1: #6ea8fe; --s2: #2dd4bf; --s3: #c4b5fd; --s4: #fbbf24; }
-
-  .swatch { display: inline-block; width: 10px; height: 10px; border-radius: 3px; vertical-align: baseline; }
-  .cmp { display: inline-flex; align-items: center; gap: 5px; cursor: pointer; color: var(--text-secondary); }
-  .cmp input { accent-color: var(--accent); }
-  .cmp input:checked + span { color: var(--text-primary); font-weight: 600; }
-
-  /* Overview strip: the headline figures on one line under the company name. */
-  .overview {
-    display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px;
-    padding: 12px 14px; border-radius: 12px;
-    background: var(--surface-1); border: 1px solid var(--hairline);
-  }
-  .ov { display: inline-flex; align-items: baseline; gap: 5px; font-size: 13px; }
-  .ov-k { color: var(--text-muted); }
-  .ov-v { font-weight: 700; color: var(--text-primary); }
-  .ov-sep { color: var(--text-muted); opacity: .55; }
-  .overview p { flex-basis: 100%; margin: 0; }
-  .ov-row {
-    display: flex; flex-wrap: wrap; align-items: baseline;
-    justify-content: space-between; gap: 8px 16px; width: 100%;
-  }
-  .ov-figures { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; }
-  .adv-toggle {
-    display: inline-flex; align-items: center; gap: 6px; flex: 0 0 auto;
-    font-size: 12px; font-weight: 600; color: var(--text-secondary); cursor: pointer;
-    white-space: nowrap;
-  }
-  .adv-toggle input { accent-color: var(--accent); cursor: pointer; }
-  .adv-toggle:hover span { color: var(--text-primary); }
-
-  /* ── Nøgletal ─────────────────────────────────────────────────────────
-     Value first, label under it, two to a row: the figure is what the eye
-     is looking for, and the label is what it reads once it has found it. */
-  .kf-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 24px; }
-  @media (min-width: 900px) { .kf-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
-  .kf-v { font-size: 17px; font-weight: 800; color: var(--text-primary); }
-  .kf-k { font-size: 12px; color: var(--text-muted); margin-top: 2px; display: flex; align-items: center; gap: 5px; }
-  .kf-more { font-size: 13px; font-weight: 700; color: var(--accent); background: none; border: 0;
-             cursor: pointer; padding: 6px 0; display: inline-flex; align-items: center; gap: 6px; }
-
-  /* ── Om ───────────────────────────────────────────────────────────────
-     Four lines, then the rest on request. The source writes a paragraph
-     that runs to a screenful for the larger companies. */
-  .about-text { font-size: 14px; line-height: 1.6; color: var(--text-secondary); }
-  .about-text.clamped {
-    display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden;
-  }
+  /* Det meste af siden tegnes af klasser i assets/kursliste.css — grafen,
+     fanerne, den avancerede kontakt, nøgletalsgitteret og søjlerne, som
+     fondssiden bruger de samme af. Her står kun det der hører til et selskab
+     og ikke til en fond. */
 
   /* ── Analytikerskøn ───────────────────────────────────────────────────
      One hue; the bar carries the count and the number is always printed
@@ -119,17 +50,6 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
      space and was landing on top of "Lavest". */
   .tg-ends { display: flex; justify-content: space-between; font-size: 11px; color: var(--text-muted); margin-top: 62px; }
 
-  /* ── Søjler ───────────────────────────────────────────────────────────
-     Udbytte pr. år og omsætning pr. kvartal. Højden bærer tallet, og tallet
-     står over søjlen, så den aldrig skal aflæses mod en akse der ikke er der. */
-  .bars { display: flex; align-items: flex-end; gap: 10px; height: 150px; margin-top: 12px; }
-  .bar-col { flex: 1 1 0; display: flex; flex-direction: column; justify-content: flex-end;
-             align-items: center; height: 100%; min-width: 0; }
-  .bar-val { font-size: 11px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px;
-             white-space: nowrap; font-variant-numeric: tabular-nums; }
-  .bar-fill { width: 100%; max-width: 46px; background: var(--accent); border-radius: 4px 4px 0 0; min-height: 2px; }
-  .bar-key { font-size: 11px; color: var(--text-muted); margin-top: 6px; white-space: nowrap; }
-
   /* ── Årsregnskab ──────────────────────────────────────────────────────
      Årene som kolonner, linjerne som rækker — den vej et regnskab læses. */
   .fin { width: 100%; border-collapse: collapse; font-size: 13px; }
@@ -142,7 +62,6 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
   /* ── Begivenheder ─────────────────────────────────────────────────────*/
   .ev-row { display: flex; align-items: center; gap: 12px; padding: 9px 0; border-top: 1px solid var(--gridline); }
   .ev-date { flex: 0 0 auto; width: 5.5rem; font-size: 12px; color: var(--text-muted); font-variant-numeric: tabular-nums; }
-
 </style>
 </head>
 
