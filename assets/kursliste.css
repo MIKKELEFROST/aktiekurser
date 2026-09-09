@@ -416,3 +416,126 @@ th .hint { cursor: pointer; }           /* header is still a sort control */
   border-bottom-color: var(--brand);
   font-weight: 600;
 }
+
+/* ── Papirsiderne ────────────────────────────────────────────────────────
+   Aktiesiden og fondssiden er den samme side om to slags papirer: samme graf,
+   samme faner, samme avancerede visning. Da fondssiden fik det hele, stod de
+   samme firs linjer to steder — og en rettelse ét sted ville lydløst lade det
+   andet stå tilbage. De ligger her, så begge sider læser den samme fil. */
+
+.chart-wrap { position: relative; }
+.crosshair { pointer-events: none; }
+#tooltip {
+  position: absolute; pointer-events: none; opacity: 0; transition: opacity .12s;
+  background: var(--surface-1); border: 1px solid var(--hairline);
+  border-radius: var(--radius-xs); padding: 6px 10px; font-size: 12px; white-space: nowrap;
+  box-shadow: 0 4px 14px rgba(0,0,0,.10); z-index: 5;
+}
+.stat { border-top: 1px solid var(--gridline); }
+.range-btn {
+  border: 1px solid var(--hairline); color: var(--text-secondary);
+  border-radius: 999px; padding: 4px 12px; font-size: 12px; font-weight: 700;
+}
+.range-btn[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+.date-input {
+  border: 1px solid var(--hairline); border-radius: var(--radius-xs); padding: 5px 8px;
+  font-size: 12px; background: transparent; color: var(--text-primary);
+}
+
+/* Sammenligningsgrafens serier. Fire kulører der holder fra hinanden og fra
+   det røde accentfarve, sat for begge temaer. */
+:root { --s1: #1f6feb; --s2: #0f766e; --s3: #7c3aed; --s4: #a16207; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --s1: #6ea8fe; --s2: #2dd4bf; --s3: #c4b5fd; --s4: #fbbf24; }
+}
+:root[data-theme="dark"] { --s1: #6ea8fe; --s2: #2dd4bf; --s3: #c4b5fd; --s4: #fbbf24; }
+
+.swatch { display: inline-block; width: 10px; height: 10px; border-radius: 3px; vertical-align: baseline; }
+.cmp { display: inline-flex; align-items: center; gap: 5px; cursor: pointer; color: var(--text-secondary); }
+.cmp input { accent-color: var(--accent); }
+.cmp input:checked + span { color: var(--text-primary); font-weight: 600; }
+
+/* Overskriftslinjen: hovedtallene på én linje under navnet, med kontakten til
+   den avancerede visning i højre kant. */
+.overview {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px;
+  padding: 12px 14px; border-radius: var(--radius-sm);
+  background: var(--surface-1); border: 1px solid var(--hairline);
+}
+.ov { display: inline-flex; align-items: baseline; gap: 5px; font-size: 13px; }
+.ov-k { color: var(--text-muted); }
+.ov-v { font-weight: 700; color: var(--text-primary); }
+.ov-sep { color: var(--text-muted); opacity: .55; }
+.overview p { flex-basis: 100%; margin: 0; }
+.ov-row {
+  display: flex; flex-wrap: wrap; align-items: baseline;
+  justify-content: space-between; gap: 8px 16px; width: 100%;
+}
+.ov-figures { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; }
+.adv-toggle {
+  display: inline-flex; align-items: center; gap: 6px; flex: 0 0 auto;
+  font-size: 12px; font-weight: 600; color: var(--text-secondary); cursor: pointer;
+  white-space: nowrap;
+}
+.adv-toggle input { accent-color: var(--accent); cursor: pointer; }
+.adv-toggle:hover span { color: var(--text-primary); }
+
+/* Nøgletal: tallet først, etiketten under, to pr. række — tallet er det øjet
+   leder efter, og etiketten er det man læser, når man har fundet det. */
+.kf-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 24px; }
+@media (min-width: 900px) { .kf-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.kf-v { font-size: 17px; font-weight: 800; color: var(--text-primary); }
+.kf-k { font-size: 12px; color: var(--text-muted); margin-top: 2px; display: flex; align-items: center; gap: 5px; }
+.kf-more { font-size: 13px; font-weight: 700; color: var(--accent); background: none; border: 0;
+           cursor: pointer; padding: 6px 0; display: inline-flex; align-items: center; gap: 6px; }
+
+/* Beskrivelsen: fire linjer, resten på opfordring. */
+.about-text { font-size: 14px; line-height: 1.6; color: var(--text-secondary); }
+.about-text.clamped {
+  display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden;
+}
+
+/* Søjler: højden bærer tallet, og tallet står over søjlen, så den aldrig skal
+   aflæses mod en akse der ikke er der. */
+.bars { display: flex; align-items: flex-end; gap: 10px; height: 150px; margin-top: 12px; }
+.bar-col { flex: 1 1 0; display: flex; flex-direction: column; justify-content: flex-end;
+           align-items: center; height: 100%; min-width: 0; }
+.bar-val { font-size: 11px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px;
+           white-space: nowrap; font-variant-numeric: tabular-nums; }
+.bar-fill { width: 100%; max-width: 46px; background: var(--accent); border-radius: 4px 4px 0 0; min-height: 2px; }
+.bar-key { font-size: 11px; color: var(--text-muted); margin-top: 6px; white-space: nowrap; }
+
+/* Nøgletal som rækker med tallet i højre kant, så de kan skimmes lodret. */
+.kv { display: flex; align-items: baseline; justify-content: space-between; gap: 16px;
+      padding: 9px 0; border-top: 1px solid var(--gridline); }
+.kv:first-child { border-top: 0; }
+.kv-k { font-size: 13px; color: var(--text-secondary); }
+.kv-v { font-size: 14px; font-weight: 600; font-variant-numeric: tabular-nums; }
+
+/* ── Hvad fonden ejer ────────────────────────────────────────────────────
+   Vægten er både tal og længde. Tallet står altid ved siden af søjlen, så
+   rækken kan læses uden at måle den — og så den holder i sort-hvid. */
+.hold { display: grid; grid-template-columns: 1.6rem minmax(0, 22rem) 1fr 3.6rem; align-items: center;
+        gap: 10px; padding: 8px 0; border-top: 1px solid var(--gridline); }
+.hold:first-of-type { border-top: 0; }
+.hold-no { font-size: 12px; color: var(--text-muted); font-variant-numeric: tabular-nums; }
+.hold-name { font-size: 14px; font-weight: 600; color: var(--text-primary);
+             overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.hold-sym { font-size: 11px; color: var(--text-muted); }
+.hold-track { height: 8px; border-radius: 4px; background: var(--gridline); overflow: hidden; }
+/* Blå og ikke brandrød: rødt betyder fald andre steder på siden, og en rød
+   søjle ud for "NVIDIA 4,48 %" ville læses som et minus. Blå er i forvejen
+   sidens søjlefarve i udbytte- og omsætningsgraferne. */
+.hold-bar { display: block; height: 100%; border-radius: 4px; background: var(--accent); }
+.hold-pct { font-size: 13px; font-weight: 700; text-align: right;
+            color: var(--text-primary); font-variant-numeric: tabular-nums; }
+@media (max-width: 640px) {
+  .hold { grid-template-columns: 1.4rem 1fr 3.4rem; }
+  .hold-track { display: none; }
+}
+
+/* Sektor- og aktivfordeling: samme række, smallere navn. */
+.wt { display: grid; grid-template-columns: 10rem 1fr 3.4rem; align-items: center;
+      gap: 10px; padding: 6px 0; }
+.wt-k { font-size: 13px; color: var(--text-secondary); }
+@media (max-width: 640px) { .wt { grid-template-columns: 7.5rem 1fr 3.2rem; } }
