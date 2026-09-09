@@ -1,4 +1,4 @@
-<!-- Title: Hvornår kan jeg stoppe med at arbejde? -->
+<!-- Title: Hvad skal jeg lægge til side hver måned? -->
 <!-- filepath: pension.html -->
 <!--
   Siden står med vilje uden for navigationen: den er ikke med i NAV-listen i
@@ -16,7 +16,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
-<title>Hvornår kan jeg stoppe med at arbejde?</title>
+<title>Hvad skal jeg lægge til side hver måned?</title>
 
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preload" href="assets/fonts/Porteron-Regular.woff2" as="font" type="font/woff2" crossorigin>
@@ -152,11 +152,15 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
 
   <div class="mb-6" style="max-width:76ch">
     <h1 class="text-2xl md:text-3xl font-extrabold tracking-tight" style="text-wrap:balance">
-      Hvornår kan jeg stoppe med at arbejde?</h1>
+      Hvad skal jeg lægge til side hver måned?</h1>
     <p class="text-sm mt-2 muted">
-      Beregneren simulerer et almindeligt privat aktiedepot måned for måned — først mens du
-      sparer op, og derefter mens du lever af det. Den finder den tidligste måned, hvorfra
-      depotet kan betale det forbrug du ønsker efter skat, hele vejen til den slutalder du vælger.
+      Fortæl fire ting: hvad du har i aktier i dag, hvor gammel du er, hvornår du vil stoppe,
+      og hvor meget du vil have til rådighed hver måned bagefter. Så regner beregneren resten —
+      først og fremmest, hvad du skal lægge til side hver måned for at nå det.
+    </p>
+    <p class="text-sm mt-2 muted">
+      Depotet simuleres måned for måned gennem begge faser. Under pensionen sælges der aktier
+      nok til både forbruget og skatten af salget, og resten bliver stående og forrentes videre.
     </p>
   </div>
 
@@ -185,6 +189,13 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
         </div>
 
         <div class="row">
+          <label for="retireAge">Jeg vil stoppe som<span class="hint-i" tabindex="0" role="note"
+            data-hint-title="Pensionsalder" data-hint="Den alder du vil holde op med at arbejde. Beregneren finder ud af, hvad der skal til for at nå det — ikke hvornår det passer bedst.">i</span></label>
+          <span><input id="retireAge" class="amount narrow num" type="number" min="18" max="120" step="1" value="50">
+            <span class="unit">år</span></span>
+        </div>
+
+        <div class="row">
           <label for="endAge">Pengene skal holde til<span class="hint-i" tabindex="0" role="note"
             data-hint-title="Slutalder" data-hint="Den alder depotet skal kunne betale forbrug frem til. Lever du længere, holder beregningen ikke — derfor er et højt tal her det forsigtige valg.">i</span></label>
           <span><input id="endAge" class="amount narrow num" type="number" min="1" max="120" step="1" value="80">
@@ -206,10 +217,11 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
         </div>
 
         <div class="row">
-          <label for="monthly">Indbetaling pr. måned<span class="hint-i" tabindex="0" role="note"
-            data-hint-title="Månedlig indbetaling" data-hint="Beskattede penge, altså det du har tilbage efter lønskat. Beskæftigelsesfradrag og lønskat indgår ikke i beregningen, fordi de allerede er trukket fra.">i</span></label>
+          <label for="monthly">Det jeg lægger til side i dag<span class="hint-i" tabindex="0" role="note"
+            data-hint-title="Din nuværende indbetaling" data-hint="Beskattede penge, altså det du har tilbage efter lønskat. Tallet bruges ikke til hovedsvaret — det er kun til sammenligningen og til at svare på, hvornår du kunne stoppe, hvis du bliver ved med præcis det beløb.">i</span></label>
           <span><input id="monthly" class="amount num" type="text" inputmode="numeric" value="10.000">
             <span class="unit">kr.</span></span>
+          <p class="note">Bruges kun til sammenligning. Hovedsvaret er, hvad der <em>skal</em> til.</p>
         </div>
 
         <div class="row">
@@ -347,20 +359,20 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
         <div class="tbl-wrap"><table class="tbl" id="yearTable"></table></div>
       </section>
 
-      <section class="card rounded-md p-5 mb-4" id="reverseCard" hidden>
-        <h2 class="text-sm font-bold mb-1">Hvad skal jeg investere for at stoppe som …?</h2>
-        <p class="text-xs muted mb-3" style="max-width:76ch">Samme motor, modsat vej: alle andre
-          forudsætninger holdes, og der løses for den månedlige indbetaling du skal starte med.
-          Har du sat en årlig stigning, gælder den stadig.</p>
-        <div class="flex items-end gap-3 flex-wrap">
-          <span class="row" style="display:inline-flex;align-items:baseline;gap:8px">
-            <label for="targetAge" style="font-size:13px;font-weight:600">Stop som</label>
-            <input id="targetAge" class="amount narrow num" type="number" min="18" max="120" step="1" value="50">
-            <span class="unit">år</span>
-          </span>
-          <button type="button" id="solveBtn" class="pill btn-primary" style="font-size:12px">Beregn</button>
-        </div>
-        <div id="reverseOut" class="mt-3"></div>
+      <section class="card rounded-md p-5 mb-4" id="sensCard" hidden>
+        <h2 class="text-sm font-bold mb-1">Hvis afkastet bliver et andet</h2>
+        <p class="text-xs muted mb-3" style="max-width:76ch">Afkastet er det, ingen kender på
+          forhånd, og det er også det, svaret er mest følsomt over for. Her er den nødvendige
+          indbetaling ved andre afkast — alt andet holdt fast.</p>
+        <div class="tbl-wrap" style="max-height:none"><table class="tbl" id="sensTable"></table></div>
+      </section>
+
+      <section class="card rounded-md p-5 mb-4" id="earliestCard" hidden>
+        <h2 class="text-sm font-bold mb-1">Og hvis du bliver ved med det, du gør nu?</h2>
+        <p class="text-xs muted mb-3" style="max-width:76ch">Samme motor, modsat vej: med den
+          indbetaling du lægger til side i dag, hvornår kan du så tidligst stoppe med det samme
+          månedlige forbrug?</p>
+        <div id="earliestOut"></div>
       </section>
 
       <section class="card card-satin rounded-md p-5 text-xs muted" style="max-width:80ch">

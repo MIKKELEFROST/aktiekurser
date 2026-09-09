@@ -46,12 +46,17 @@ npx -p typescript tsc --noEmit            # typerne i modellen
 Satserne er 2026-satser og holdes konstante gennem hele beregningen. Modellen
 forudsiger ikke fremtidige skatteregler og er ikke skatterådgivning.
 
-## Hvornår kan jeg stoppe med at arbejde?
+## Hvad skal jeg lægge til side hver måned?
 
-`pension.html` finder den tidligste måned, hvorfra et privat aktiedepot kan betale et
-ønsket forbrug efter skat frem til en valgt slutalder. Depotet simuleres måned for måned
-gennem både opsparing og pension: der forrentes, indbetales, og under pensionen sælges
-der aktier nok til både forbruget og skatten af salget.
+`pension.html` svarer på ét spørgsmål: hvad skal der lægges til side hver måned, hvis man
+har det her i aktier i dag, er så gammel, vil stoppe der, og vil have så meget til
+rådighed hver måned bagefter? Depotet simuleres måned for måned gennem både opsparing og
+pension: der forrentes, indbetales, og under pensionen sælges der aktier nok til både
+forbruget og skatten af salget.
+
+Siden svarer også på de tilstødende spørgsmål: hvad den nødvendige indbetaling bliver ved
+andre afkast, og hvornår man tidligst kunne stoppe, hvis man blev ved med den indbetaling
+man har i dag.
 
 Der er ingen 4 %-regel. Den er en tommelfingerregel om historiske porteføljer, ikke en
 skattemodel, og den kan ikke svare på hvor meget der skal sælges brutto, når salget selv
