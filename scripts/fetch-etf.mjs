@@ -55,6 +55,44 @@ const VENUES = [
 // Below this a fund is a share class nobody holds, or a launch with no assets.
 const MIN_NET_ASSETS_USD = 50e6;
 
+// Investeringsforeninger — de danske foreninger, der ikke er ETF'er.
+//
+// Screeneren kan ikke nå dem. Yahoo typer en dansk investeringsforening som
+// EQUITY og ikke som ETF, så den står uden for hver eneste søgning ovenfor,
+// uanset hvor mange papirer København får lov at levere. Kurs, dagens handel
+// og hele historikken svarer Yahoo derimod gerne på, og det er dem siden viser.
+//
+// Til gengæld findes der ingen fundProfile: kaldet svarer 404, og det navn
+// kilden opgiver, er foreningens frem for afdelingens — alle tre Coop
+// Bank-afdelinger hedder det samme dér, og for den ene af dem opgiver den slet
+// intet kort navn. Derfor står navn og udbyder her, som de står i fondenes egne
+// faktaark, og resten hentes som for alle andre fonde.
+//
+// Formuen oplyser kilden heller ikke. Den bliver stående som null, og fonden
+// lander derfor sidst på rangeringen efter formue. Det er en oplysning der
+// mangler, ikke en påstand om, at fonden er lille.
+const EXTRA = [
+  { symbol: 'WEICBS.CO', name: 'Wealth Invest Coop Bank Stabil'  },
+  { symbol: 'WEICBB.CO', name: 'Wealth Invest Coop Bank Balance' },
+  { symbol: 'WEICBV.CO', name: 'Wealth Invest Coop Bank Vækst'   },
+].map((e) => ({
+  family: 'Wealth Invest',
+  exchange: 'Nasdaq København',
+  market: 'DK',
+  currency: 'DKK',
+  kind: 'investeringsforening',
+  ...e,
+}));
+
+// Lægges oven på universet i begge kørselstyper, så en ny linje i EXTRA er med
+// allerede ved næste kurskørsel — der henter universet fra filen og altså ikke
+// selv ville kende den. Listen her er kilden til navn og udbyder, så den vinder
+// over det der måtte stå i filen i forvejen.
+function withExtras(universe) {
+  const extra = new Map(EXTRA.map((e) => [e.symbol, e]));
+  return universe.filter((e) => !extra.has(e.symbol)).concat([...extra.values()]);
+}
+
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const round = (n, d = 2) => (n == null || !Number.isFinite(n) ? null : Number(n.toFixed(d)));
 const isoDay = (secs) => new Date(secs * 1000).toISOString().slice(0, 10);
@@ -237,12 +275,36 @@ async function fetchQuotes(symbols, session) {
 }
 
 // ── History ──────────────────────────────────────────────────────────────
-// Trading days, not calendar days: a week is five sessions, a year is 252.
-const WINDOWS = { change_7d: 5, change30d: 30, change_6m: 126, change_1y: 252, change_3y: 756 };
+// Vinduerne måles på datoer, ikke på antal kurser i serien. For en ETF der
+// handles hver dag er det samme sag — 252 kurser er et børsår. Men en dansk
+// investeringsforening printer kun en kurs, når nogen handler den: Coop Bank
+// Stabil har 269 kurser på to et halvt år, og "de seneste 252" rakte derfor
+// helt tilbage til februar 2024 og stod på siden som "1 år".
+const WINDOWS = {
+  change_7d: (iso) => shiftDays(iso, 7),
+  change30d: (iso) => shiftDays(iso, 30),
+  change_6m: (iso) => shiftMonths(iso, 6),
+  change_1y: (iso) => shiftMonths(iso, 12),
+  change_3y: (iso) => shiftMonths(iso, 36),
+};
 
-function moveOver(closes, back) {
-  const last = closes[closes.length - 1];
-  const base = closes[closes.length - 1 - back];
+const shiftDays = (iso, days) =>
+  new Date(new Date(iso + 'T00:00:00Z').getTime() - days * 86400000).toISOString().slice(0, 10);
+
+const shiftMonths = (iso, months) => {
+  const d = new Date(iso + 'T00:00:00Z');
+  d.setUTCMonth(d.getUTCMonth() - months);
+  return d.toISOString().slice(0, 10);
+};
+
+// Kursen som den stod på skæringsdagen: den sidste kurs på eller før den. Null
+// hvis serien ikke rækker så langt tilbage — så er der ikke noget at måle over,
+// og en streg er svaret.
+function moveSince(dates, closes, cut) {
+  if (!dates.length || dates[0] > cut) return null;
+  let i = dates.length - 1;
+  while (i > 0 && dates[i] > cut) i--;
+  const base = closes[i], last = closes[closes.length - 1];
   return base && last != null ? round(((last - base) / base) * 100, 2) : null;
 }
 
@@ -312,27 +374,33 @@ async function fetchLifetime(symbol, session) {
 }
 
 function derive(hist, monthly) {
-  const c = hist.closes;
+  const c = hist.closes, d = hist.dates;
+  const last = d[d.length - 1];
   const out = { spark: c.slice(-SPARK_POINTS) };
-  for (const [key, back] of Object.entries(WINDOWS)) out[key] = moveOver(c, back);
-  const year = c.slice(-252);
-  out.high_52w = round(Math.max(...year), 4);
-  out.low_52w = round(Math.min(...year), 4);
+  for (const [key, cutOf] of Object.entries(WINDOWS)) out[key] = moveSince(d, c, cutOf(last));
+
+  // Højeste og laveste lukkekurs inden for det seneste år, afgrænset på
+  // datoerne. Kilden har sit eget 52-ugers interval, men det er dagens
+  // yderpunkter og bærer derfor fejlprints med sig — én af de nye fonde stod
+  // med en top på 3.000 mod en kurs på 16.
+  const year = c.filter((_, i) => d[i] >= shiftMonths(last, 12));
+  out.high_52w = year.length ? round(Math.max(...year), 4) : null;
+  out.low_52w = year.length ? round(Math.min(...year), 4) : null;
   out.first_date = monthly && monthly.dates.length ? monthly.dates[0] : hist.dates[0];
 
   // Den daglige serie er tre år lang, og tre år er 756 handelsdage — så
   // change_3y faldt ud for to tredjedele af fondene, fordi den bad om ét
   // punkt mere end filen havde. Når den lange serie er der, måles de lange
   // vinduer på den i stedet.
+  //
+  // Den lange serie dateres på samme måde, og af samme grund: Yahoo vælger selv
+  // opløsningen på range=max og giver en fond noteret for halvandet år siden
+  // ugebjælker. Talt i bjælker blev 36 af dem til “3 år” for en fond, der ikke
+  // har levet halvdelen af det.
   if (monthly && monthly.closes.length > 12) {
-    const m = monthly.closes;
-    const overMonths = (months) => {
-      if (m.length <= months) return null;
-      const a = m[m.length - 1 - months], b = m[m.length - 1];
-      return a ? round(((b - a) / a) * 100, 4) : null;
-    };
-    if (out.change_3y == null) out.change_3y = overMonths(36);
-    if (out.change_1y == null) out.change_1y = overMonths(12);
+    const md = monthly.dates, mc = monthly.closes, mlast = md[md.length - 1];
+    if (out.change_3y == null) out.change_3y = moveSince(md, mc, shiftMonths(mlast, 36));
+    if (out.change_1y == null) out.change_1y = moveSince(md, mc, shiftMonths(mlast, 12));
   }
   return out;
 }
@@ -385,7 +453,7 @@ async function main() {
     universe = (JSON.parse(await readFile(OUT_LIST, 'utf8')).etfs || [])
       .map((e) => ({ symbol: e.symbol, name: e.name, exchange: e.exchange, market: e.market,
                      currency: e.currency, net_assets: e.net_assets, family: e.family,
-                     category: e.category, expense_ratio: e.expense_ratio }));
+                     category: e.category, expense_ratio: e.expense_ratio, kind: e.kind }));
     console.log(`Univers genbrugt: ${universe.length} ETF'er`);
   } else {
     console.log('Screener:');
@@ -393,6 +461,12 @@ async function main() {
     console.log(`Univers: ${universe.length} ETF'er`);
   }
   if (LIMIT) universe = universe.slice(0, LIMIT);
+  // Efter --limit, ikke før: en prøvekørsel på tyve fonde skal kunne se dem.
+  const before = universe.length;
+  universe = withExtras(universe);
+  if (universe.length > before) {
+    console.log(`Investeringsforeninger: ${universe.length - before} lagt til`);
+  }
 
   console.log('Kurser…');
   const quotes = await fetchQuotes(universe.map((e) => e.symbol), session);
@@ -439,7 +513,10 @@ async function main() {
               ...(monthly ? { monthly } : {}) });
         }
       } catch (err) { failed.push({ symbol: e.symbol, reason: 'historik: ' + err.message }); }
-      try { extra = await fetchProfile(e.symbol, session); } catch { extra = {}; }
+      // En investeringsforening har ingen fundProfile hos Yahoo. Kaldet svarer
+      // 404, og tre forsøg på det er tre kald ud i ingenting; dens udbyder og
+      // navn står i EXTRA i forvejen.
+      if (!e.kind) { try { extra = await fetchProfile(e.symbol, session); } catch { extra = {}; } }
     }
     if (++done % 100 === 0) console.log(`  ${done}/${universe.length}…`);
 
@@ -463,6 +540,9 @@ async function main() {
       family: extra.family ?? e.family ?? null,
       category: extra.category ?? e.category ?? null,
       expense_ratio: extra.expense_ratio ?? e.expense_ratio ?? null,
+      // Kun de fonde der ikke er ETF'er bærer feltet. Skrevet på alle 1.728
+      // ville "kind":"etf" koste 20 KB på en fil siden henter ved hvert besøg.
+      ...(e.kind ? { kind: e.kind } : {}),
       ...(hist ? derive(hist, monthly) : carryOver(e.symbol)),
     };
   });

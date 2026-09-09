@@ -64,18 +64,43 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
 
   const chart = { dates: [], closes: [], currency: '', lo: 0, hi: 1 };
 
-  // Perioderne tælles i handelsdage, ikke kalenderdage, så et vindue altid
-  // rummer det antal punkter det lover — også hen over en helligdag.
+  // Perioderne måles på datoer. Før talte de punkter — 21 for en måned, 252 for
+  // et år — og for en fond der handles hver dag er det samme vindue. Men et
+  // investeringsbevis printer kun en kurs, når nogen handler det, og for det
+  // roligste af dem rakte “1 år” to et halvt år tilbage.
   const PRESETS = [
-    { key: '1m',  label: '1 md.', days: 21 },
-    { key: '3m',  label: '3 md.', days: 63 },
-    { key: 'ytd', label: 'År til dato', days: null },
-    { key: '1y',  label: '1 år',  days: 252 },
-    { key: '3y',  label: '3 år',  days: 756 },
-    { key: '5y',  label: '5 år',  days: 1260 },
-    { key: '10y', label: '10 år', days: 2520 },
-    { key: 'alt', label: 'Hele perioden', days: Infinity },
+    { key: '1m',  label: '1 md.', months: 1 },
+    { key: '3m',  label: '3 md.', months: 3 },
+    { key: 'ytd', label: 'År til dato', months: null },
+    { key: '1y',  label: '1 år',  months: 12 },
+    { key: '3y',  label: '3 år',  months: 36 },
+    { key: '5y',  label: '5 år',  months: 60 },
+    { key: '10y', label: '10 år', months: 120 },
+    { key: 'alt', label: 'Hele perioden', months: Infinity },
   ];
+
+  // Skæringsdagen for et vindue, og hvor mange punkter der ligger fra den og
+  // frem. Ét punkt før skæringen tages med, så kurven starter på kanten af
+  // perioden frem for inde i den.
+  const cutFor = (months) => {
+    const d = new Date();
+    d.setUTCMonth(d.getUTCMonth() - months);
+    return d.toISOString().slice(0, 10);
+  };
+
+  function fromCut(series, cut) {
+    const d = series.dates;
+    let i = d.findIndex((x) => x >= cut);
+    if (i < 0) return { dates: d.slice(-1), closes: series.closes.slice(-1) };
+    i = Math.max(0, i - 1);
+    return { dates: d.slice(i), closes: series.closes.slice(i) };
+  }
+
+  // Rækker serien tilbage til skæringsdagen? En enkelt uges slør, fordi en
+  // notering fra 3. januar dækker “1 år” godt nok til at tegnes dagligt.
+  const reaches = (series, cut) => !!(series && series.dates.length
+    && series.dates[0] <= new Date(new Date(cut + 'T00:00:00Z').getTime() + 7 * 86400000)
+        .toISOString().slice(0, 10));
 
   const state = { range: '3m', row: null, hist: null };
   let live = null, pointerInChart = false;
@@ -97,9 +122,9 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
     const h = state.hist; if (!h) return false;
     const p = PRESETS.find((x) => x.key === state.range);
     if (!p) return false;
-    if (p.days === Infinity) return true;
-    if (p.days == null) return false;                 // år til dato ligger altid i den nære fil
-    return dailySeries().dates.length < p.days * 0.98;
+    if (p.months === Infinity) return true;
+    if (p.months == null) return false;               // år til dato ligger altid i den nære fil
+    return !reaches(dailySeries(), cutFor(p.months));
   }
 
   async function ensureArchive() {
@@ -157,22 +182,17 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
       i = Math.max(0, i - 1);          // dagen før nytår giver udgangspunktet
       return { dates: h.dates.slice(i), closes: h.closes.slice(i) };
     }
-    if (preset.days === Infinity) {
+    if (preset.months === Infinity) {
       if (archive) return { dates: day.dates, closes: day.closes };
       return monthly ? { dates: monthly.dates, closes: monthly.closes, coarse: true }
                      : { dates: h.dates, closes: h.closes };
     }
-    // Yahoos range=3y giver 754 dage, ikke 756. To dage fra skal ikke koste
-    // den daglige opløsning, så et vindue der er dækket 98 % læses dagligt.
-    if (day.dates.length >= preset.days * 0.98) {
-      const n = Math.min(day.dates.length, preset.days + 1);
-      return { dates: day.dates.slice(-n), closes: day.closes.slice(-n) };
-    }
-    if (monthly) {
-      const months = Math.round(preset.days / 21) + 1;
-      const n = Math.min(monthly.dates.length, months);
-      return { dates: monthly.dates.slice(-n), closes: monthly.closes.slice(-n), coarse: true };
-    }
+
+    // Den daglige opløsning, hvis den daglige serie rækker tilbage til
+    // skæringsdagen. Ellers den lange serie, som gør.
+    const cut = cutFor(preset.months);
+    if (reaches(day, cut)) return fromCut(day, cut);
+    if (monthly) return { ...fromCut(monthly, cut), coarse: true };
     return { dates: h.dates, closes: h.closes };
   }
 
@@ -188,7 +208,11 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
     }
     gaps.sort((a, b) => a - b);
     const med = gaps[Math.floor(gaps.length / 2)];
-    if (med <= 4) return 'handelsdage';
+    // En fond der handles hver dag har en typisk afstand på én dag mellem to
+    // kurser — hen over weekenden tre. Er medianen større, står der ikke en
+    // kurs for hver handelsdag, og så er "handelsdage" det forkerte ord.
+    if (med <= 1.5) return 'handelsdage';
+    if (med <= 4) return 'kurser';
     if (med <= 12) return 'ugekurser';
     if (med <= 45) return 'månedskurser';
     return 'kvartalskurser';
@@ -336,14 +360,20 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
 
   const pct = (n) => '<span class="' + K.dirClass(n) + '">' + K.fmtPct(n) + '</span>';
 
+  // Fondslisten er ETF'er på nær nogle få. Kun de andre bærer feltet.
+  const KIND = { investeringsforening: 'Investeringsforening' };
+
   function header(r) {
     const m = K.marketOf(r.market);
     const delayed = r.delayed_by ? ' · ' + r.delayed_by + ' min. forsinket' : '';
     return '<div class="mb-5">'
-      + '<a href="etf.html" class="text-xs link-accent">← Alle fonde</a>'
+      + (r.kind === 'investeringsforening'
+          ? '<a href="investeringsbeviser.html" class="text-xs link-accent">← Alle investeringsbeviser</a>'
+          : '<a href="etf.html" class="text-xs link-accent">← Alle fonde</a>')
       + '<h1 class="text-2xl md:text-3xl font-extrabold tracking-tight mt-2" style="text-wrap:balance">'
       +   K.esc(r.name) + '</h1>'
       + '<p class="text-sm muted mt-1">' + K.flagOf(r.market) + ' ' + K.esc(r.symbol)
+      +   (KIND[r.kind] ? ' · ' + K.esc(KIND[r.kind]) : '')
       +   ' · ' + K.esc(r.exchange || m.exchange) + delayed
       +   (r.family ? ' · ' + K.esc(r.family) : '') + '</p>'
       + '<div class="flex items-baseline gap-3 mt-4 flex-wrap">'
@@ -374,7 +404,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
       const hi = Math.max.apply(null, s.closes), lo = Math.min.apply(null, s.closes);
       summary = '<p class="text-xs muted mt-3">'
         + K.fmtDate(s.dates[0]) + ' – ' + K.fmtDate(s.dates[s.dates.length - 1])
-        + ' · ' + s.dates.length + ' ' + (s.coarse ? barLabel(s.dates) : 'handelsdage')
+        + ' · ' + s.dates.length + ' ' + barLabel(s.dates)
         + ' · ' + pct(move) + ' i perioden<br>'
         + 'Højeste ' + K.fmtPrice(hi) + ' · laveste ' + K.fmtPrice(lo) + ' ' + K.esc(r.currency)
         + '</p>';
@@ -398,16 +428,28 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
     const what = r.category
       ? 'Fonden hører i kategorien <strong>' + K.esc(r.category) + '</strong>.'
       : 'Yahoo oplyser ikke en kategori for denne fond.';
+    const fee = r.expense_ratio != null
+      ? ' Den koster <strong>' + K.fmtPct(r.expense_ratio).replace('+', '') + '</strong> om året i '
+        + 'løbende omkostninger — det trækkes fra kursen løbende, ikke som en regning.'
+      : ' Den løbende omkostning er ikke oplyst her; den står i fondens eget faktaark.';
+
+    // En investeringsforening løser samme opgave som en ETF, men er ikke en, og
+    // så skal der ikke stå ETF her. Kilden har kurs og historik for den og
+    // ellers ingenting — derfor står tre af nøgletallene tomme, og det er den
+    // sætning der forklarer hvorfor.
+    const body = r.kind === 'investeringsforening'
+      ? 'En investeringsforening er en dansk forening, hvor mange lægger deres penge sammen og '
+        + 'køber en portefølje i fællesskab. Du køber én andel og ejer en bid af det hele. Den '
+        + 'gør det samme som en ETF, men er ikke en: foreningen er dansk, afdelingen er noteret '
+        + 'på Nasdaq København, og det er foreningen selv der udsteder nye andele, når nogen '
+        + 'køber. Yahoo har kurs og kurshistorik for den, men hverken kategori, formue eller '
+        + 'løbende omkostning — de tal står i fondens eget faktaark.'
+      : 'En ETF er én post på din liste, der indeholder mange selskaber på én gang. '
+        + 'Du køber en andel af hele kurven i stedet for at vælge selskaberne selv. ' + what + fee;
+
     return '<section class="card card-satin p-4 md:p-5 mb-4">'
       + '<h2 class="font-extrabold tracking-tight mb-2">Hvad er det her?</h2>'
-      + '<p class="text-sm muted">'
-      +   'En ETF er én post på din liste, der indeholder mange selskaber på én gang. '
-      +   'Du køber en andel af hele kurven i stedet for at vælge selskaberne selv. ' + what
-      +   (r.expense_ratio != null
-          ? ' Den koster <strong>' + K.fmtPct(r.expense_ratio).replace('+', '') + '</strong> om året i '
-            + 'løbende omkostninger — det trækkes fra kursen løbende, ikke som en regning.'
-          : ' Den løbende omkostning er ikke oplyst her; den står i fondens eget faktaark.')
-      + '</p></section>';
+      + '<p class="text-sm muted">' + body + '</p></section>';
   }
 
   function figuresCard(r) {
@@ -528,6 +570,10 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
       ALL = all; UPDATED = updatedAt;
       if (!row) return notFound(all);
       state.row = row;
+      // Fanen rettes, når vi ved hvad papiret er. Et investeringsbevis hører
+      // ikke under ETF-kurser, og siden kan først vide det her — symbolet i
+      // adressen siger ikke arten.
+      if (row.kind === 'investeringsforening') K.renderNav('investeringsbeviser');
       state.hist = await loadHist(row.symbol);
       render();
 
