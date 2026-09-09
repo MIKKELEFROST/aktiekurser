@@ -46,6 +46,38 @@ npx -p typescript tsc --noEmit            # typerne i modellen
 Satserne er 2026-satser og holdes konstante gennem hele beregningen. Modellen
 forudsiger ikke fremtidige skatteregler og er ikke skatterådgivning.
 
+## Hvornår kan jeg stoppe med at arbejde?
+
+`pension.html` finder den tidligste måned, hvorfra et privat aktiedepot kan betale et
+ønsket forbrug efter skat frem til en valgt slutalder. Depotet simuleres måned for måned
+gennem både opsparing og pension: der forrentes, indbetales, og under pensionen sælges
+der aktier nok til både forbruget og skatten af salget.
+
+Der er ingen 4 %-regel. Den er en tommelfingerregel om historiske porteføljer, ikke en
+skattemodel, og den kan ikke svare på hvor meget der skal sælges brutto, når salget selv
+udløser den skat der skal betales af salget. Bruttobeløbet findes i stedet numerisk for
+hver enkelt måned.
+
+**Siden står bevidst uden for navigationen**, på samme vilkår som lagerskatberegneren:
+ikke i `NAV`-listen, ingen andre sider linker til den, `noindex, nofollow`, ingen
+`robots.txt`. Det er skjulthed, ikke adgangskontrol — kender man adressen, er man inde.
+
+| Fil | Rolle |
+|---|---|
+| `pension.html` | Siden: felter, resultater, graf, årstabel og forudsætninger |
+| `assets/pension.js` | Modellen. Rene funktioner, ingen DOM. JSDoc-typet, ét globalt navn |
+| `assets/pension-ui.js` | Brugerfladen. Ingen skatteregler |
+| `scripts/pension.test.mjs` | 21 beregningstest, heriblandt to kontroltal regnet i hånden |
+
+```bash
+node --test scripts/pension.test.mjs      # beregningerne
+```
+
+Modellen antager realisationsbeskattede aktier uden udbytte, og at der ikke sælges under
+opsparingen. Lagerbeskattede ETF'er, aktiesparekonto og pensionsdepoter følger andre
+regler og kan ikke regnes her. Depotet behandles som én samlet beholdning med
+forholdsmæssige salg; i virkeligheden opgøres gevinsten pr. aktie.
+
 ## Data
 
 | Fil | Indhold |
