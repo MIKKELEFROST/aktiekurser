@@ -1,0 +1,636 @@
+{
+  "_om": "Hentet fra udstederens eget dataendpoint, funds.coopbank.dk, af scripts/fetch-beviser.mjs. Kurser og kurshistorik står ikke her — de kommer fra Yahoo som for alle andre fonde. Navn, profil, aktieloft, beskrivelse og Morningstar-kategori står i scriptet; resten kommer fra kaldet.",
+  "opdateret": "2026-09-09",
+  "kilder": {
+    "coopbank": {
+      "navn": "Coop Bank",
+      "url": "https://www.coopbank.dk/investeringsbeviser",
+      "endpoint": "https://funds.coopbank.dk/FundDetailsJSON",
+      "daekker": "indre værdi, fordeling, regioner, brancher, lande, omkostninger, beskatning, kategori, risikoindikator og dokumenter"
+    },
+    "nordnet": {
+      "navn": "Nordnet",
+      "url": "https://www.nordnet.dk",
+      "daekker": "Morningstar-kategori"
+    }
+  },
+  "faelles": {
+    "forening": "Investeringsforeningen Coop Opsparing",
+    "forvalter": "Wealth Invest",
+    "boers": "Nasdaq København",
+    "valuta": "DKK",
+    "regioner_note": "Regioner, brancher og lande er opgjort på hele porteføljen, altså både aktier og obligationer. Derfor fylder Danmark meget på landelisten: det er de danske obligationer, ikke danske aktier.",
+    "risiko_note": "Alle tre står i kategori 3 af 7 på udstederens egen risikoindikator. Risikotallet skiller dem altså ikke ad — det gør aktieandelen og udsvingene.",
+    "nav_note": "Indre værdi er afdelingens egen opgørelse af, hvad en andel er værd. Børskursen, som resten af sitet viser, er hvad den sidst blev handlet til, og de to kan ligge lidt ved siden af hinanden.",
+    "serie_note": "Den lange kurve er udstederens formueudvikling: hvad 100 kr. lagt ind ved afdelingens start ville stå i i dag.",
+    "historik_note": "Udstederens egen serie går tilbage til afdelingens start i 2018. Vores børskurser fra Yahoo begynder i januar 2024."
+  },
+  "beviser": {
+    "WEICBS.CO": {
+      "hentet": "2026-09-09",
+      "kort": "Stabil",
+      "profil": "Lav risikoprofil",
+      "navn": "Coop Bank Stabil",
+      "isin": "DK0060991495",
+      "coopbank_url": "https://www.coopbank.dk/investeringsbeviser/coop-bank-stabil",
+      "beskrivelse": "Afdelingen Stabil investerer i en blanding af aktier og obligationer og går efter en global spredning og en lav risikoprofil. Det vil sige en fordeling, hvor aktier og alternative investeringer ikke overstiger 35 % af formuen. Afdelingen investerer fortrinsvis i andele i andre investeringsforeninger og deres underafdelinger – f.eks. ETF'er.",
+      "beskrivelse_prospekt": "Afdelingen har til formål at opnå global eksponering til såvel aktie- som obligationsmarkedet samt til alternative investeringer gennem direkte og indirekte investeringer samtidig med at afdelingen opretholder en lav risikoprofil.  Endvidere har afdelingen et ønske om at fremme miljømæssige og/ eller sociale forhold i overensstemmelse med artikel 8 i EU's SFDR (Sustainable Finance Disclosure Regulation) forordning.",
+      "aktieloft": 35,
+      "kategori": "Blandede Lav aktieandel",
+      "morningstar_kategori": "Balanceret - EUR Lav Risiko",
+      "udbyttepolitik": "Akkumulerende",
+      "beskatning": "Lagerbeskattet",
+      "valuta": "DKK",
+      "risiko": 3,
+      "risiko_skala": 7,
+      "aarlig_omkostning": 0.669,
+      "indirekte_handelsomkostninger": 0.15,
+      "indre_vaerdi": 129.3676,
+      "indre_vaerdi_dato": "2026-09-09",
+      "portefoelje_dato": "2026-08-31",
+      "fordeling": {
+        "aktier": 25.21,
+        "obligationer": 68.16,
+        "andet": 6.53,
+        "kontanter": 0.09
+      },
+      "regioner": [
+        [
+          "Europa",
+          69.27
+        ],
+        [
+          "Nordamerika",
+          16.08
+        ],
+        [
+          "Asien (ex.Japan)",
+          3.17
+        ],
+        [
+          "Japan",
+          2.76
+        ],
+        [
+          "Latinamerika",
+          1.31
+        ],
+        [
+          "Afrika",
+          0.49
+        ],
+        [
+          "Australien",
+          0.22
+        ],
+        [
+          "EU",
+          0.04
+        ],
+        [
+          "Ikke opdelt",
+          6.66
+        ]
+      ],
+      "brancher": [
+        [
+          "Finans",
+          11.87
+        ],
+        [
+          "Teknologi",
+          6.78
+        ],
+        [
+          "Industri",
+          3.15
+        ],
+        [
+          "Medicin & Sundhed",
+          2.58
+        ],
+        [
+          "Forbrugsgoder",
+          1.91
+        ],
+        [
+          "Forbrugerservice",
+          1.69
+        ],
+        [
+          "Telekommunikation",
+          1.32
+        ],
+        [
+          "Energiforsyning",
+          0.68
+        ],
+        [
+          "Materialer",
+          0.67
+        ],
+        [
+          "Energi",
+          0.52
+        ],
+        [
+          "Ejendom",
+          0
+        ],
+        [
+          "Ikke opdelt",
+          68.84
+        ]
+      ],
+      "lande": [
+        [
+          "Danmark",
+          49.34
+        ],
+        [
+          "USA",
+          15.9
+        ],
+        [
+          "Frankrig",
+          4.28
+        ],
+        [
+          "Tyskland",
+          2.81
+        ],
+        [
+          "Japan",
+          2.76
+        ],
+        [
+          "England",
+          2.18
+        ],
+        [
+          "Holland",
+          2.02
+        ],
+        [
+          "Italien",
+          1.51
+        ],
+        [
+          "Spanien",
+          1.25
+        ],
+        [
+          "Schweiz",
+          1.03
+        ],
+        [
+          "Sverige",
+          0.85
+        ],
+        [
+          "Luxembourg",
+          0.83
+        ],
+        [
+          "Irland",
+          0.82
+        ],
+        [
+          "Taiwan",
+          0.71
+        ],
+        [
+          "Øvrige lande",
+          13.72
+        ]
+      ],
+      "afkast_udsteder": {
+        "1m": -1.0274,
+        "3m": 0.6344,
+        "6m": 3.7605,
+        "ytd": 3.6032,
+        "1y": 5.9914,
+        "3y": 20.3867,
+        "siden_start": 29.2933
+      },
+      "dokumenter": {
+        "prospekt": "https://doclinks.fundconnect.com/GetDocument.aspx?clientid=783ad279-b301-442c-ad50-afd7d0fc3c0c&Isin=DK0060991495&lang=da-DK&type=Prospectus&save=True",
+        "central_information": "https://doclinks.fundconnect.com/GetDocument.aspx?clientid=783ad279-b301-442c-ad50-afd7d0fc3c0c&Isin=DK0060991495&lang=da-DK&type=PRIIPS%20KID&save=True",
+        "aarsrapport": "https://doclinks.fundconnect.com/GetDocument.aspx?clientid=783ad279-b301-442c-ad50-afd7d0fc3c0c&Isin=DK0060991495&lang=da-DK&type=Annual%20Report&save=True",
+        "vedtaegter": "https://doclinks.fundconnect.com/GetDocument.aspx?clientid=783ad279-b301-442c-ad50-afd7d0fc3c0c&Isin=DK0060991495&lang=da-DK&type=Fund%20Rules&save=True"
+      }
+    },
+    "WEICBB.CO": {
+      "hentet": "2026-09-09",
+      "kort": "Balanceret",
+      "profil": "Mellem risikoprofil",
+      "navn": "Coop Bank Balanceret",
+      "isin": "DK0060991578",
+      "coopbank_url": "https://www.coopbank.dk/investeringsbeviser/coop-bank-balanceret",
+      "beskrivelse": "Afdelingen Balanceret investerer i en blanding af aktier og obligationer og går efter global spredning og en mellem risikoprofil. Det vil sige en fordeling, hvor aktier og alternative investeringer ikke overstiger 60 % af formuen. Afdelingen investerer fortrinsvis i andele i andre investeringsforeninger og deres underafdelinger – f.eks. ETF'er.",
+      "beskrivelse_prospekt": "Afdelingen har til formål at opnå global eksponering til såvel aktie- som obligationsmarkedet samt til alternative investeringer gennem direkte og indirekte investeringer samtidig med at afdelingen opretholder en moderat risikoprofil. Endvidere har afdelingen et ønske om at fremme miljømæssige og/eller sociale forhold i overensstemmelse med artikel 8 i EU's SFDR (Sustainable Finance Disclosure Regulation) forordning.",
+      "aktieloft": 60,
+      "kategori": "Blandede Balanceret",
+      "morningstar_kategori": "Balanceret - EUR Moderat",
+      "udbyttepolitik": "Akkumulerende",
+      "beskatning": "Lagerbeskattet",
+      "valuta": "DKK",
+      "risiko": 3,
+      "risiko_skala": 7,
+      "aarlig_omkostning": 0.5814,
+      "indirekte_handelsomkostninger": 0.35,
+      "indre_vaerdi": 163.188,
+      "indre_vaerdi_dato": "2026-09-08",
+      "portefoelje_dato": "2026-08-31",
+      "fordeling": {
+        "aktier": 51.98,
+        "obligationer": 42.42,
+        "andet": 5.32,
+        "kontanter": 0.25
+      },
+      "regioner": [
+        [
+          "Europa",
+          52.13
+        ],
+        [
+          "Nordamerika",
+          29.73
+        ],
+        [
+          "Asien (ex.Japan)",
+          5.35
+        ],
+        [
+          "Japan",
+          4.78
+        ],
+        [
+          "Latinamerika",
+          1.53
+        ],
+        [
+          "Afrika",
+          0.61
+        ],
+        [
+          "Australien",
+          0.19
+        ],
+        [
+          "EU",
+          0.04
+        ],
+        [
+          "Ikke opdelt",
+          5.64
+        ]
+      ],
+      "brancher": [
+        [
+          "Finans",
+          14.77
+        ],
+        [
+          "Teknologi",
+          14.41
+        ],
+        [
+          "Industri",
+          6.4
+        ],
+        [
+          "Medicin & Sundhed",
+          4.97
+        ],
+        [
+          "Forbrugsgoder",
+          3.94
+        ],
+        [
+          "Forbrugerservice",
+          3.52
+        ],
+        [
+          "Telekommunikation",
+          2.67
+        ],
+        [
+          "Energiforsyning",
+          1.51
+        ],
+        [
+          "Materialer",
+          1.44
+        ],
+        [
+          "Energi",
+          1
+        ],
+        [
+          "Ejendom",
+          0
+        ],
+        [
+          "Ikke opdelt",
+          45.37
+        ]
+      ],
+      "lande": [
+        [
+          "Danmark",
+          31.7
+        ],
+        [
+          "USA",
+          29.43
+        ],
+        [
+          "Japan",
+          4.78
+        ],
+        [
+          "Frankrig",
+          4.37
+        ],
+        [
+          "Tyskland",
+          3.01
+        ],
+        [
+          "Holland",
+          2.41
+        ],
+        [
+          "England",
+          2.18
+        ],
+        [
+          "Taiwan",
+          1.48
+        ],
+        [
+          "Schweiz",
+          1.33
+        ],
+        [
+          "Italien",
+          1.3
+        ],
+        [
+          "Spanien",
+          1.24
+        ],
+        [
+          "Sydkorea",
+          0.95
+        ],
+        [
+          "Sverige",
+          0.81
+        ],
+        [
+          "Kina",
+          0.79
+        ],
+        [
+          "Irland",
+          0.78
+        ],
+        [
+          "Luxembourg",
+          0.68
+        ],
+        [
+          "Indien",
+          0.66
+        ],
+        [
+          "Øvrige lande",
+          12.08
+        ]
+      ],
+      "afkast_udsteder": {
+        "1m": -0.781,
+        "3m": 1.8968,
+        "6m": 7.2558,
+        "ytd": 7.432,
+        "1y": 11.6305,
+        "3y": 31.1063,
+        "siden_start": 63.0536
+      },
+      "dokumenter": {
+        "prospekt": "https://doclinks.fundconnect.com/GetDocument.aspx?clientid=783ad279-b301-442c-ad50-afd7d0fc3c0c&Isin=DK0060991578&lang=da-DK&type=Prospectus&save=True",
+        "central_information": "https://doclinks.fundconnect.com/GetDocument.aspx?clientid=783ad279-b301-442c-ad50-afd7d0fc3c0c&Isin=DK0060991578&lang=da-DK&type=PRIIPS%20KID&save=True",
+        "aarsrapport": "https://doclinks.fundconnect.com/GetDocument.aspx?clientid=783ad279-b301-442c-ad50-afd7d0fc3c0c&Isin=DK0060991578&lang=da-DK&type=Annual%20Report&save=True",
+        "vedtaegter": "https://doclinks.fundconnect.com/GetDocument.aspx?clientid=783ad279-b301-442c-ad50-afd7d0fc3c0c&Isin=DK0060991578&lang=da-DK&type=Fund%20Rules&save=True"
+      }
+    },
+    "WEICBV.CO": {
+      "hentet": "2026-09-09",
+      "kort": "Vækst",
+      "profil": "Høj risikoprofil",
+      "navn": "Coop Bank Vækst",
+      "isin": "DK0060991651",
+      "coopbank_url": "https://www.coopbank.dk/investeringsbeviser/coop-bank-vaekst",
+      "beskrivelse": "Afdelingen Vækst investerer i en blanding af aktier og obligationer og går efter global spredning og en høj risikoprofil. Det vil sige en fordeling, hvor aktier og alternative investeringer ikke overstiger 85 % af formuen. Afdelingen investerer fortrinsvis i andele i andre investeringsforeninger og deres underafdelinger – f.eks. ETF'er.",
+      "beskrivelse_prospekt": "Afdelingen har til formål at opnå global eksponering til såvel aktie- som obligationsmarkedet samt til alternativer investeringer gennem direkte og indirekte investeringer samtidig med at afdelingen opretholder en høj risikoprofil. Endvidere har afdelingen et ønske om at fremme miljømæssige og/eller sociale forhold i overensstemmelse med artikel 8 i EU's SFDR (Sustainable Finance Disclosure Regulation) forordning.",
+      "aktieloft": 85,
+      "kategori": "Blandede Høj aktieandel",
+      "morningstar_kategori": "Balanceret - EUR Høj Risiko",
+      "udbyttepolitik": "Akkumulerende",
+      "beskatning": "Lagerbeskattet",
+      "valuta": "DKK",
+      "risiko": 3,
+      "risiko_skala": 7,
+      "aarlig_omkostning": 0.6247,
+      "indirekte_handelsomkostninger": 0.21,
+      "indre_vaerdi": 202.228,
+      "indre_vaerdi_dato": "2026-09-08",
+      "portefoelje_dato": "2026-08-31",
+      "fordeling": {
+        "aktier": 76.36,
+        "obligationer": 19.49,
+        "andet": 3.84,
+        "kontanter": 0.31
+      },
+      "regioner": [
+        [
+          "Nordamerika",
+          40.01
+        ],
+        [
+          "Europa",
+          39.44
+        ],
+        [
+          "Asien (ex.Japan)",
+          7.43
+        ],
+        [
+          "Japan",
+          6.74
+        ],
+        [
+          "Latinamerika",
+          1.5
+        ],
+        [
+          "Afrika",
+          0.58
+        ],
+        [
+          "Australien",
+          0.1
+        ],
+        [
+          "EU",
+          0.02
+        ],
+        [
+          "Ikke opdelt",
+          4.16
+        ]
+      ],
+      "brancher": [
+        [
+          "Teknologi",
+          21.62
+        ],
+        [
+          "Finans",
+          17.12
+        ],
+        [
+          "Industri",
+          9.72
+        ],
+        [
+          "Medicin & Sundhed",
+          7.58
+        ],
+        [
+          "Forbrugsgoder",
+          5.2
+        ],
+        [
+          "Forbrugerservice",
+          4.87
+        ],
+        [
+          "Telekommunikation",
+          3.86
+        ],
+        [
+          "Energiforsyning",
+          2.33
+        ],
+        [
+          "Materialer",
+          2
+        ],
+        [
+          "Energi",
+          1.39
+        ],
+        [
+          "Ejendom",
+          0
+        ],
+        [
+          "Ikke opdelt",
+          24.32
+        ]
+      ],
+      "lande": [
+        [
+          "USA",
+          39.75
+        ],
+        [
+          "Danmark",
+          19.01
+        ],
+        [
+          "Japan",
+          6.74
+        ],
+        [
+          "Frankrig",
+          3.93
+        ],
+        [
+          "Tyskland",
+          3.02
+        ],
+        [
+          "England",
+          2.44
+        ],
+        [
+          "Holland",
+          2.4
+        ],
+        [
+          "Taiwan",
+          2.24
+        ],
+        [
+          "Schweiz",
+          2.1
+        ],
+        [
+          "Sydkorea",
+          1.5
+        ],
+        [
+          "Spanien",
+          1.21
+        ],
+        [
+          "Italien",
+          1.18
+        ],
+        [
+          "Kina",
+          1.12
+        ],
+        [
+          "Indien",
+          0.97
+        ],
+        [
+          "Sverige",
+          0.8
+        ],
+        [
+          "Irland",
+          0.72
+        ],
+        [
+          "Finland",
+          0.53
+        ],
+        [
+          "Øvrige lande",
+          10.36
+        ]
+      ],
+      "afkast_udsteder": {
+        "1m": -0.5887,
+        "3m": 3.094,
+        "6m": 10.8689,
+        "ytd": 10.9223,
+        "1y": 16.8378,
+        "3y": 38.7214,
+        "siden_start": 102.0314
+      },
+      "dokumenter": {
+        "prospekt": "https://doclinks.fundconnect.com/GetDocument.aspx?clientid=783ad279-b301-442c-ad50-afd7d0fc3c0c&Isin=DK0060991651&lang=da-DK&type=Prospectus&save=True",
+        "central_information": "https://doclinks.fundconnect.com/GetDocument.aspx?clientid=783ad279-b301-442c-ad50-afd7d0fc3c0c&Isin=DK0060991651&lang=da-DK&type=PRIIPS%20KID&save=True",
+        "aarsrapport": "https://doclinks.fundconnect.com/GetDocument.aspx?clientid=783ad279-b301-442c-ad50-afd7d0fc3c0c&Isin=DK0060991651&lang=da-DK&type=Annual%20Report&save=True",
+        "vedtaegter": "https://doclinks.fundconnect.com/GetDocument.aspx?clientid=783ad279-b301-442c-ad50-afd7d0fc3c0c&Isin=DK0060991651&lang=da-DK&type=Fund%20Rules&save=True"
+      }
+    }
+  }
+}

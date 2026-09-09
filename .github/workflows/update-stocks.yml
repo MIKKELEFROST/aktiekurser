@@ -80,6 +80,15 @@ jobs:
             node scripts/fetch-etf.mjs --quotes-only
           fi
 
+      # De danske investeringsbeviser har deres eget kald hos udstederen: alt
+      # det Yahoo ikke har for en investeringsforening — fordeling, brancher,
+      # lande, omkostninger og indre værdi. Kun aftenkørslen, fordi tallene
+      # opgøres månedligt, ikke i løbet af dagen.
+      - name: Hent investeringsbeviser
+        if: steps.mode.outputs.full == 'true'
+        continue-on-error: true
+        run: node scripts/fetch-beviser.mjs
+
       # Headerens søgning læser én lille fil frem for de to store lister.
       # Den bygges af dem, så den skal laves efter begge — også på de korte
       # kørsler, hvor kun kurserne er hentet.

@@ -1747,9 +1747,17 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
         + 'Du køber en andel af hele kurven i stedet for at vælge selskaberne selv. '
         + what + fee + topline;
 
+    // Investeringsbeviserne har deres egen side med det, kilden til kurserne
+    // ikke har: omkostning, ISIN, fordeling, brancher, lande og beskatning.
+    // Herfra er der en vej derover frem for to halve beskrivelser af samme papir.
+    const mere = isForening(r)
+      ? '<p class="about-text mt-3"><a class="link-accent" href="investeringsbevis.html?symbol='
+        + encodeURIComponent(r.symbol) + '">Se hele profilen: fordeling, omkostning og skat &rarr;</a></p>'
+      : '';
+
     return '<div class="card card-satin rounded-md p-5 mb-5">'
       + '<h2 class="text-sm font-bold mb-2">Hvad er det her?</h2>'
-      + '<p class="about-text">' + body + '</p>'
+      + '<p class="about-text">' + body + '</p>' + mere
       + (r.family
           ? '<p class="about-text mt-3">Bag fonden står <strong style="color:var(--text-primary)">'
             + K.esc(r.family) + '</strong>. Den handles på ' + K.esc(r.exchange || K.marketOf(r.market).exchange)

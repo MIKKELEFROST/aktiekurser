@@ -1,12 +1,12 @@
-<!-- Title: Investeringsbeviser – Coop Banks tre profiler -->
+<!-- Title: Investeringsbeviser – Coop Banks tre afdelinger -->
 <!-- filepath: investeringsbeviser.html -->
 <!DOCTYPE html>
 <html lang="da" class="scroll-smooth">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Investeringsbeviser – Stabil, Balance og Vækst</title>
-<meta name="description" content="Kurs og udvikling for Coop Banks tre investeringsbeviser fra Wealth Invest: Stabil, Balance og Vækst — side om side på samme akse.">
+<title>Investeringsbeviser – Stabil, Balanceret og Vækst</title>
+<meta name="description" content="Coop Banks tre investeringsbeviser fra Wealth Invest: kurs, afkast, aktieandel, omkostninger og skat — side om side og hver for sig.">
 
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preload" href="assets/fonts/Porteron-Regular.woff2" as="font" type="font/woff2" crossorigin>
@@ -16,8 +16,8 @@
 tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial', 'system-ui', 'sans-serif'] } } } }
 </script>
 <style>
-  /* Kurvefarver. Tre nuancer der holder fra hinanden og fra den røde accent —
-     og ingen af dem er rød eller grøn, som på siden her betyder op og ned. */
+  /* Kurvefarver, stigende med aktieandelen. Ingen af dem er rød eller grøn —
+     de to betyder op og ned på sitet. */
   :root { --s1: #0f766e; --s2: #1f6feb; --s3: #7c3aed; }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) { --s1: #2dd4bf; --s2: #6ea8fe; --s3: #c4b5fd; }
@@ -32,16 +32,20 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
   }
   .range-btn[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
 
-  /* Nøgletal i kortene: etiket til venstre, tal i højre kant, så tre kort
-     ved siden af hinanden kan læses vandret på tværs. */
   .kv { display: flex; align-items: baseline; justify-content: space-between; gap: 12px;
         padding: 7px 0; border-top: 1px solid var(--gridline); }
   .kv-k { font-size: 12px; color: var(--text-secondary); }
   .kv-v { font-size: 13px; font-weight: 600; font-variant-numeric: tabular-nums; }
 
+  .badge {
+    display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px; border-radius: 999px;
+    border: 1px solid var(--hairline); font-size: 12px; font-weight: 700; color: var(--text-secondary);
+  }
   .live-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--delta-up); display: inline-block; }
 
   td.text-right, th.text-right { white-space: nowrap; }
+  .cmp-tabel td, .cmp-tabel th { padding: 8px 12px; }
+  .cmp-tabel tbody tr { border-top: 1px solid var(--gridline); }
 </style>
 </head>
 
@@ -54,143 +58,157 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
 
   <p class="text-sm muted mt-3" style="max-width:74ch">
     Et investeringsbevis er din andel af en investeringsforening. Du lægger dine penge sammen med
-    andres, foreningen køber en portefølje for dem, og beviset er din del af den. Det er noteret på
-    Nasdaq København og handles over børsen ligesom en aktie — bare med hele kurven indeni. Til
-    gengæld handles det ikke nær så tit som en aktie, og der kommer kun en ny kurs, når nogen
-    handler det.
+    andres, foreningen køber en portefølje af aktier og obligationer for dem, og beviset er din del
+    af den. Det er noteret på Nasdaq København og kan handles over børsen ligesom en aktie — bare
+    med hele kurven indeni. Til gengæld handles det ikke nær så tit som en aktie, og der kommer kun
+    en ny kurs, når nogen handler det.
   </p>
   <p id="lead" class="text-sm muted mt-3" style="max-width:74ch"></p>
 
   <div id="page" class="mt-6"><p class="text-sm muted">Henter beviserne …</p></div>
 
-  <p class="text-xs faint mt-6" style="max-width:80ch">
-    Kurserne er vejledende og kan være forsinkede. Afkast er kursudvikling: udbytte, der er betalt ud
-    undervejs, tæller ikke med. Vi henter ikke omkostningerne for beviserne — Yahoo oplyser dem ikke
-    for danske investeringsforeninger — så de står i foreningens eget faktaark sammen med, hvad
-    porteføljen består af. Siden er ikke rådgivning; det du sætter til side kan både vokse og blive
-    mindre, og du kan få mindre tilbage, end du satte ind.
-  </p>
-
 </div>
 
 <script src="assets/kursliste.js"></script>
+<script src="assets/beviser.js"></script>
 <script>
 (() => {
   'use strict';
-  const K = window.KL;
+  const K = window.KL, B = window.BEV;
   const $  = (s) => document.querySelector(s);
   const $$ = (s) => Array.from(document.querySelectorAll(s));
   K.renderNav('investeringsbeviser');
 
-  const COLOURS = ['var(--s1)', 'var(--s2)', 'var(--s3)'];
-  // Perioderne måles i måneder og skæres på datoer. Beviserne handles ikke lige
-  // ofte — Stabil printer en kurs cirka hver tredje dag, Vækst næsten dagligt —
-  // så et vindue talt i punkter ville dække tre forskellige perioder på én graf.
-  const RANGES = [[1, '1 md.'], [3, '3 mdr.'], [6, '6 mdr.'], [12, '1 år'], [Infinity, 'Hele perioden']];
+  const RANGES = [[1, '1 md.'], [3, '3 mdr.'], [6, '6 mdr.'], ['ytd', 'År til dato'],
+                  [12, '1 år'], [Infinity, 'Hele perioden']];
   const TAL = ['ingen', 'Ét', 'To', 'Tre', 'Fire', 'Fem', 'Seks'];
 
-  const state = { rows: [], hist: new Map(), months: 12, updatedAt: null, live: null };
-
-  // Skæringsdagen for et vindue. Punktet før skæringen tages med, så kurven
-  // starter på kanten af perioden i stedet for inde i den.
-  const cutFor = (months) => {
-    if (!Number.isFinite(months)) return '0000-01-01';
-    const d = new Date();
-    d.setUTCMonth(d.getUTCMonth() - months);
-    return d.toISOString().slice(0, 10);
-  };
-
-  // Hvor bredt beviset har svinget det seneste år, målt på kursen i dag. Det er
-  // den ene forskel mellem profilerne der kan læses ud af kurserne selv, og
-  // derfor den rækkefølge siden stiller dem op i: roligst først.
-  const spanOf = (r) => (r.high_52w != null && r.low_52w != null && r.price
-    ? ((r.high_52w - r.low_52w) / r.price) * 100 : null);
+  const state = { rows: [], hist: new Map(), periode: 12, faelles: {}, kilder: {},
+                  updatedAt: null, live: null };
 
   const pct = (v) => (v == null ? '<span class="faint">–</span>'
     : '<span class="num ' + K.dirClass(v) + '">' + K.fmtPct(v) + '</span>');
 
-  // Én decimal, også når den er nul: 16,0 % og 7,1 % skal stå med samme
-  // bredde i den samme kolonne.
-  const ENDECIMAL = { minimumFractionDigits: 1, maximumFractionDigits: 1 };
+  const kv = (k, v) => '<div class="kv"><span class="kv-k">' + K.esc(k)
+    + '</span><span class="kv-v">' + v + '</span></div>';
+
+  const kort = (r) => (r.fakta && r.fakta.kort) || r.name;
+  const aktieandel = (r) => (r.fakta && r.fakta.fordeling ? r.fakta.fordeling.aktier : null);
+  const komma = (n) => B.enDecimal(n).replace('.', ',');
 
   // ── Kort ───────────────────────────────────────────────────────────────
-  function card(r, i) {
-    const span = spanOf(r);
+  function card(r) {
+    const f = r.fakta || {};
+    const a = B.afkast(state.hist.get(r.symbol));
     return '<section class="card p-4 md:p-5 flex flex-col">'
       + '<div class="flex items-center gap-2">'
-      +   '<span class="swatch" style="background:' + COLOURS[i % COLOURS.length] + '" aria-hidden="true"></span>'
-      +   '<span class="text-xs faint">' + K.flagOf(r.market) + ' ' + K.esc(r.symbol) + '</span>'
+      +   '<span class="swatch" style="background:' + r.colour + '" aria-hidden="true"></span>'
+      +   '<span class="font-extrabold tracking-tight text-lg">' + K.esc(kort(r)) + '</span>'
       + '</div>'
-      + '<h2 class="font-extrabold tracking-tight mt-1 text-lg" style="text-wrap:balance;min-height:2.6em">'
-      +   '<a class="row-link" href="' + K.fundUrl(r.symbol) + '">' + K.esc(r.name) + '</a></h2>'
+      + '<p class="text-xs faint mt-1">' + K.flagOf(r.market) + ' ' + K.esc(r.symbol)
+      +   (f.profil ? ' · ' + K.esc(f.profil) : '') + '</p>'
       + '<div class="flex items-baseline gap-2 mt-3 flex-wrap">'
       +   '<span class="text-2xl font-extrabold num">' + K.fmtPrice(r.price) + '</span>'
       +   '<span class="text-xs muted">' + K.esc(r.currency) + '</span>'
       +   '<span class="text-sm font-bold num ' + K.dirClass(r.percent_change) + '">'
       +     K.fmtPct(r.percent_change) + '</span>'
       + '</div>'
-      + '<div class="mt-3">' + K.sparkline(r.spark, r.change30d, 220, 40) + '</div>'
-      + '<div class="mt-2">'
-      +   kv('1 år', pct(r.change_1y))
-      +   kv('30 dage', pct(r.change30d))
-      +   kv('Udsving på et år', span == null ? '<span class="faint">–</span>'
-            : '<span class="num">' + span.toLocaleString('da-DK', ENDECIMAL) + ' %</span>')
+      + '<div class="mt-4">' + B.fordelingBar(f.fordeling, { hoejde: 14, udenTekst: true }) + '</div>'
+      + '<p class="text-xs muted mt-2">'
+      +   (aktieandel(r) != null ? '<strong>' + komma(aktieandel(r)) + ' %</strong> aktier' : 'Fordeling ikke oplyst')
+      +   (f.aktieloft != null ? ' · loft på ' + f.aktieloft + ' %' : '') + '</p>'
+      + '<div class="mt-3">'
+      +   kv('1 år', pct(a['1y'] != null ? a['1y'] : r.change_1y))
+      +   kv('År til dato', pct(a['ytd']))
+      +   kv('Årlig omkostning', f.aarlig_omkostning != null
+            ? '<span class="num">' + B.omkostning(f.aarlig_omkostning) + ' %</span>' : '<span class="faint">–</span>')
       + '</div>'
-      + '<p class="mt-3 pt-1" style="margin-top:auto"><a class="text-xs link-accent" href="'
-      +   K.fundUrl(r.symbol) + '">Se beviset →</a></p>'
+      + '<p class="mt-4" style="margin-top:auto"><a class="pill btn-outline" style="padding:6px 14px;display:inline-block"'
+      +   ' href="' + B.url(r.symbol) + '">Se afdelingen</a></p>'
       + '</section>';
   }
 
-  const kv = (k, v, hint) => '<div class="kv"><span class="kv-k'
-    + (hint ? ' hint" data-hint="' + K.esc(hint) + '" data-hint-title="' + K.esc(k) + '"' : '"')
-    + '>' + K.esc(k) + '</span><span class="kv-v">' + v + '</span></div>';
+  // ── Forskellen ─────────────────────────────────────────────────────────
+  function forskelCard() {
+    return '<section class="card p-4 md:p-5 mb-4">'
+      + '<h2 class="font-extrabold tracking-tight mb-1">Forskellen er aktieandelen</h2>'
+      + '<p class="text-sm muted mb-4" style="max-width:78ch">De tre afdelinger køber de samme slags '
+      +   'byggeklodser — brede, globale fonde — og investerer fortrinsvis gennem andre foreninger og '
+      +   'ETF\'er. Det, der skiller dem ad, er hvor stor en del der står i aktier. Aktier svinger mere '
+      +   'og har et højere forventet afkast; obligationer svinger mindre og giver typisk mindre.</p>'
+      + '<div class="grid gap-4">'
+      + state.rows.map((r) => {
+          const f = r.fakta || {};
+          return '<div>'
+            + '<div class="flex items-baseline justify-between gap-3 mb-1 flex-wrap">'
+            +   '<span class="text-sm font-bold"><span class="swatch mr-2" style="background:' + r.colour
+            +     '"></span>' + K.esc(kort(r)) + '</span>'
+            +   '<span class="text-xs muted">' + (aktieandel(r) != null
+                  ? '<strong class="num">' + komma(aktieandel(r)) + ' %</strong> aktier' : '')
+            +     (f.aktieloft != null ? ' · loft ' + f.aktieloft + ' %' : '') + '</span>'
+            + '</div>'
+            + B.fordelingBar(f.fordeling, { hoejde: 22, udenTekst: true })
+            + '</div>';
+        }).join('')
+      + '</div>'
+      + '<div class="mt-3 flex flex-wrap gap-y-1">' + B.fordelingBar(null, { kunNavne: true }) + '</div>'
+      + (() => {
+          const datoer = [...new Set(state.rows.map((r) => (r.fakta || {}).portefoelje_dato).filter(Boolean))];
+          return datoer.length
+            ? '<p class="text-xs faint mt-3">Porteføljen er opgjort ' + K.fmtDate(datoer[0])
+              + ' og hentet hos Coop Bank, som opgør den mindst en gang om måneden.</p>' : '';
+        })()
+      + '</section>';
+  }
 
   // ── Graf ───────────────────────────────────────────────────────────────
-  // Rebaseret til 0 % ved periodens start. Tre beviser i tre kursniveauer deler
-  // ingen kursakse, men de deler "hvad en krone ville have gjort".
-  const G = { W: 900, H: 320, L: 52, R: 96, T: 14, B: 28 };
+  const G = { W: 900, H: 320, L: 52, R: 104, T: 14, B: 28 };
   G.iw = G.W - G.L - G.R; G.ih = G.H - G.T - G.B;
 
+  const cutFor = (p) => {
+    if (p === 'ytd') return new Date().toISOString().slice(0, 4) + '-01-01';
+    if (!Number.isFinite(p)) return '0000-01-01';
+    return B.shiftMonths(new Date().toISOString().slice(0, 10), p);
+  };
+
   function chartCard() {
-    const cut = cutFor(state.months);
-    const series = state.rows.map((r, i) => {
+    const cut = cutFor(state.periode);
+    const serier = state.rows.map((r) => {
       const h = state.hist.get(r.symbol);
       if (!h || h.closes.length < 2) return null;
-      let from = h.dates.findIndex((d) => d >= cut);
-      if (from < 0) return null;
-      from = Math.max(0, from - 1);
-      const dates = h.dates.slice(from), closes = h.closes.slice(from);
+      let fra = h.dates.findIndex((d) => d >= cut);
+      if (fra < 0) return null;
+      fra = Math.max(0, fra - 1);
+      const dates = h.dates.slice(fra), closes = h.closes.slice(fra);
       const base = closes[0];
       if (!base || closes.length < 2) return null;
-      return { label: kortNavn(r.name), name: r.name, colour: COLOURS[i % COLOURS.length],
-               dates, values: closes.map((c) => ((c - base) / base) * 100) };
+      return { label: kort(r), navn: r.name, colour: r.colour, dates,
+               values: closes.map((c) => ((c - base) / base) * 100) };
     }).filter(Boolean);
 
-    const buttons = RANGES.map(([n, label]) =>
-      '<button type="button" class="range-btn" data-months="' + n + '" aria-pressed="'
-      + (n === state.months) + '">' + K.esc(label) + '</button>').join('');
+    const buttons = RANGES.map(([p, label]) =>
+      '<button type="button" class="range-btn" data-periode="' + p + '" aria-pressed="'
+      + (p === state.periode) + '">' + K.esc(label) + '</button>').join('');
 
     const head = '<div class="flex items-baseline justify-between gap-3 flex-wrap mb-2">'
       + '<h2 class="font-extrabold tracking-tight">Side om side</h2>'
       + '<div class="flex flex-wrap gap-2" id="ranges">' + buttons + '</div></div>';
 
-    if (!series.length) {
+    if (!serier.length) {
       return '<section class="card p-4 md:p-5 mb-4">' + head
-        + '<p class="text-sm muted py-8 text-center">Kurshistorikken er ikke hentet endnu. '
-        + 'Den kommer med den næste fulde opdatering.</p></section>';
+        + '<p class="text-sm muted py-8 text-center">Kurshistorikken er ikke hentet endnu.</p></section>';
     }
 
-    const all = series.flatMap((s) => s.values);
-    const min = Math.min.apply(null, all), max = Math.max.apply(null, all);
+    const alle = serier.flatMap((s) => s.values);
+    const min = Math.min.apply(null, alle), max = Math.max.apply(null, alle);
     const pad = (max - min) * 0.1 || 1;
     const lo = min - pad, hi = max + pad;
 
-    // x følger datoen, ikke punktets nummer. Det ene bevis har tre gange så
-    // mange kurser som det andet i samme periode; strakte man dem hver især ud
-    // over hele bredden, ville samme sted på aksen være to forskellige dage.
+    // x følger datoen, ikke punktets nummer: det ene bevis har tre gange så
+    // mange kurser som det andet i samme periode.
     const ms = (iso) => new Date(iso + 'T00:00:00Z').getTime();
-    const t0 = Math.min.apply(null, series.map((s) => ms(s.dates[0])));
-    const t1 = Math.max.apply(null, series.map((s) => ms(s.dates[s.dates.length - 1])));
+    const t0 = Math.min.apply(null, serier.map((s) => ms(s.dates[0])));
+    const t1 = Math.max.apply(null, serier.map((s) => ms(s.dates[s.dates.length - 1])));
     const x = (iso) => G.L + G.iw * ((ms(iso) - t0) / Math.max(1, t1 - t0));
     const y = (v) => G.T + G.ih * (1 - (v - lo) / (hi - lo));
 
@@ -200,29 +218,26 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
       + '<text x="' + (G.L - 8) + '" y="' + (y(v) + 4).toFixed(1) + '" text-anchor="end" font-size="11" '
       + 'fill="var(--text-muted)">' + K.fmtPct(v) + '</text>').join('');
 
-    const zero = (lo < 0 && hi > 0)
+    const nul = (lo < 0 && hi > 0)
       ? '<line x1="' + G.L + '" y1="' + y(0).toFixed(1) + '" x2="' + (G.W - G.R) + '" y2="' + y(0).toFixed(1)
-        + '" stroke="var(--text-muted)" stroke-width="1" stroke-dasharray="4 4" opacity="0.7"/>' : '';
+        + '" stroke="var(--text-muted)" stroke-width="1" stroke-dasharray="4 4" opacity=".7"/>' : '';
 
-    const stamps = [t0, (t0 + t1) / 2, t1];
-    const xLabels = stamps.map((t, n) => '<text x="'
+    const xLabels = [t0, (t0 + t1) / 2, t1].map((t, n) => '<text x="'
       + (G.L + G.iw * ((t - t0) / Math.max(1, t1 - t0))).toFixed(1) + '" y="' + (G.H - 8)
       + '" text-anchor="' + (n === 0 ? 'start' : n === 2 ? 'end' : 'middle') + '" font-size="11" '
       + 'fill="var(--text-muted)">'
       + new Date(t).toLocaleDateString('da-DK', { day: 'numeric', month: 'short', year: '2-digit' })
       + '</text>').join('');
 
-    const paths = series.map((s) => '<path d="'
+    const linjer = serier.map((s) => '<path d="'
       + s.values.map((v, i) => (i ? 'L' : 'M') + x(s.dates[i]).toFixed(1) + ' ' + y(v).toFixed(1)).join(' ')
       + '" fill="none" stroke="' + s.colour + '" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>').join('');
 
-    // Hver kurve står med sit navn, dér hvor den ender, så den ikke kun kan
-    // kendes på farven. Ender to i samme højde, skubbes etiketterne fra hinanden.
-    const ends = series.map((s) => ({ s, yv: y(s.values[s.values.length - 1]) }))
+    const ender = serier.map((s) => ({ s, yv: y(s.values[s.values.length - 1]) }))
       .sort((a, b) => a.yv - b.yv)
       .map((e, i, arr) => {
-        const floor = i ? arr[i - 1].yv + 13 : -Infinity;
-        e.yv = Math.max(e.yv, floor);
+        const gulv = i ? arr[i - 1].yv + 13 : -Infinity;
+        e.yv = Math.max(e.yv, gulv);
         return '<text x="' + (G.W - G.R + 6) + '" y="' + (e.yv + 4).toFixed(1) + '" font-size="11" '
           + 'font-weight="700" fill="' + e.s.colour + '">' + K.esc(e.s.label) + ' '
           + K.fmtPct(e.s.values[e.s.values.length - 1]) + '</text>';
@@ -235,70 +250,179 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
       +   'ville have gjort siden.</p>'
       + '<div class="overflow-x-auto">'
       + '<svg viewBox="0 0 ' + G.W + ' ' + G.H + '" width="100%" height="' + G.H + '" role="img" '
-      +   'aria-label="Procentvis udvikling for ' + K.esc(series.map((s) => s.name).join(', ')) + '">'
-      + grid + zero + xLabels + paths + ends + '</svg></div>'
-      + '<p class="text-xs faint mt-3">' + K.fmtDate(iso(t0)) + ' – ' + K.fmtDate(iso(t1))
+      +   'aria-label="Procentvis udvikling for ' + K.esc(serier.map((s) => s.navn).join(', ')) + '">'
+      + grid + nul + xLabels + linjer + ender + '</svg></div>'
+      + '<p class="text-xs faint mt-2">' + K.fmtDate(iso(t0)) + ' – ' + K.fmtDate(iso(t1))
       +   ' · beviserne handles ikke lige ofte, så hver kurve har sit eget antal punkter</p>'
       + '</section>';
   }
 
-  // Kurverne får kun profilnavnet med i grafen — "Wealth Invest Coop Bank
-  // Vækst" fylder mere end grafens højre margen, og det er sidste ord der
-  // skiller de tre ad.
-  const kortNavn = (name) => String(name).split(' ').pop();
-
-  // ── Tabel ──────────────────────────────────────────────────────────────
-  function tableCard() {
+  // ── Tabellen ───────────────────────────────────────────────────────────
+  function tabelCard() {
     const rows = state.rows;
-    const cols = [
-      ['Kurs', (r) => '<span class="num">' + K.fmtPrice(r.price) + ' ' + K.esc(r.currency) + '</span>'],
-      ['I dag', (r) => pct(r.percent_change)],
-      ['7 dage', (r) => pct(r.change_7d)],
-      ['30 dage', (r) => pct(r.change30d)],
-      ['6 måneder', (r) => pct(r.change_6m)],
-      ['1 år', (r) => pct(r.change_1y)],
-      ['Udsving på et år', (r) => { const s = spanOf(r);
-        return s == null ? '<span class="faint">–</span>'
-          : '<span class="num">' + s.toLocaleString('da-DK', ENDECIMAL) + ' %</span>'; }],
-      ['52-ugers interval', (r) => (r.low_52w == null || r.high_52w == null
-        ? '<span class="faint">–</span>'
-        : '<span class="num">' + K.fmtPrice(r.low_52w) + ' – ' + K.fmtPrice(r.high_52w) + '</span>')],
-      ['Første kurs vi har', (r) => (r.first_date
-        ? '<span class="num">' + K.fmtDate(r.first_date) + '</span>' : '<span class="faint">–</span>')],
+    const a = new Map(rows.map((r) => [r.symbol, B.afkast(state.hist.get(r.symbol))]));
+    const streg = '<span class="faint">–</span>';
+    const num = (v, suffix) => (v == null ? streg : '<span class="num">' + komma(v) + (suffix || '') + '</span>');
+
+    const grupper = [
+      ['Kurs og afkast', [
+        ['Kurs', (r) => '<span class="num">' + K.fmtPrice(r.price) + ' ' + K.esc(r.currency) + '</span>'],
+        ['I dag', (r) => pct(r.percent_change)],
+        ['30 dage', (r) => pct(a.get(r.symbol)['30d'])],
+        ['3 måneder', (r) => pct(a.get(r.symbol)['3m'])],
+        ['6 måneder', (r) => pct(a.get(r.symbol)['6m'])],
+        ['År til dato', (r) => pct(a.get(r.symbol)['ytd'])],
+        ['1 år', (r) => pct(a.get(r.symbol)['1y'])],
+        ['52-ugers interval', (r) => (r.low_52w == null ? streg
+          : '<span class="num">' + K.fmtPrice(r.low_52w) + ' – ' + K.fmtPrice(r.high_52w) + '</span>')],
+        ['Siden start i 2018', (r) => pct(((r.fakta || {}).afkast_udsteder || {}).siden_start)],
+      ]],
+      ['Sådan er den skruet sammen', [
+        ['Aktier', (r) => num(aktieandel(r), ' %')],
+        ['Obligationer', (r) => num(((r.fakta || {}).fordeling || {}).obligationer, ' %')],
+        ['Kontanter og andet', (r) => { const f = (r.fakta || {}).fordeling;
+          return f ? num((f.andet || 0) + (f.kontanter || 0), ' %') : streg; }],
+        ['Loft på aktier', (r) => ((r.fakta || {}).aktieloft != null
+          ? '<span class="num">' + r.fakta.aktieloft + ' %</span>' : streg)],
+        ['Risikoindikator', (r) => ((r.fakta || {}).risiko != null
+          ? '<span class="num">' + r.fakta.risiko + ' af ' + (r.fakta.risiko_skala || 7) + '</span>' : streg)],
+        ['Morningstar-kategori', (r) => ((r.fakta || {}).morningstar_kategori
+          ? '<span class="text-xs">' + K.esc(r.fakta.morningstar_kategori) + '</span>' : streg)],
+      ]],
+      ['Papir, pris og skat', [
+        ['Årlig omkostning', (r) => ((r.fakta || {}).aarlig_omkostning != null
+          ? '<span class="num">' + B.omkostning(r.fakta.aarlig_omkostning) + ' %</span>' : streg)],
+        ['Indirekte handelsomkostninger', (r) => ((r.fakta || {}).indirekte_handelsomkostninger != null
+          ? '<span class="num">' + B.omkostning(r.fakta.indirekte_handelsomkostninger) + ' %</span>' : streg)],
+        ['Af 10.000 kr. om året', (r) => { const f = r.fakta || {};
+          if (f.aarlig_omkostning == null) return streg;
+          const alt = f.aarlig_omkostning + (f.indirekte_handelsomkostninger || 0);
+          return '<span class="num">' + Math.round(10000 * alt / 100) + ' kr.</span>'; }],
+        ['ISIN', (r) => ((r.fakta || {}).isin ? '<span class="num text-xs">' + K.esc(r.fakta.isin) + '</span>' : streg)],
+        ['Udbyttepolitik', (r) => ((r.fakta || {}).udbyttepolitik
+          ? '<span class="text-xs">' + K.esc(r.fakta.udbyttepolitik) + '</span>' : streg)],
+        ['Beskatning', (r) => ((r.fakta || {}).beskatning
+          ? '<span class="text-xs">' + K.esc(r.fakta.beskatning) + '</span>' : streg)],
+      ]],
     ];
 
-    const head = '<tr class="text-xs faint"><th class="text-left py-2 pr-3">Nøgletal</th>'
-      + rows.map((r, i) => '<th class="text-right py-2 px-3">'
+    const head = '<tr class="text-xs faint"><th class="text-left">Nøgletal</th>'
+      + rows.map((r) => '<th class="text-right">'
+        + '<a class="row-link" href="' + B.url(r.symbol) + '">'
         + '<span class="inline-flex items-center gap-2 justify-end">'
-        + '<span class="swatch" style="background:' + COLOURS[i % COLOURS.length] + '" aria-hidden="true"></span>'
-        + K.esc(kortNavn(r.name)) + '</span></th>').join('') + '</tr>';
+        + '<span class="swatch" style="background:' + r.colour + '"></span>'
+        + '<span class="row-name">' + K.esc(kort(r)) + '</span></span></a></th>').join('') + '</tr>';
 
-    const body = cols.map(([label, get]) => '<tr class="border-t divider">'
-      + '<td class="py-2 pr-3 text-sm">' + K.esc(label) + '</td>'
-      + rows.map((r) => '<td class="py-2 px-3 text-right text-sm">' + get(r) + '</td>').join('')
-      + '</tr>').join('');
+    const krop = grupper.map(([titel, linjer]) =>
+      '<tr><td colspan="' + (rows.length + 1) + '" class="pt-4 pb-1 text-xs font-extrabold"'
+      + ' style="color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em;border:0">'
+      + K.esc(titel) + '</td></tr>'
+      + linjer.map(([label, get]) => '<tr>'
+        + '<td class="text-sm">' + K.esc(label) + '</td>'
+        + rows.map((r) => '<td class="text-right text-sm">' + get(r) + '</td>').join('')
+        + '</tr>').join('')).join('');
 
     return '<section class="card p-4 md:p-5 mb-4">'
       + '<h2 class="font-extrabold tracking-tight mb-1">Tallene ved siden af hinanden</h2>'
-      + '<p class="text-xs muted mb-3" style="max-width:74ch">Tallene står som de er, uden markering af '
-      +   'hvad der er bedst — det afhænger af, hvor længe pengene skal ligge, og hvor meget de må '
-      +   'svinge undervejs. “Udsving på et år” er afstanden mellem årets højeste og laveste kurs, '
-      +   'målt på kursen i dag.</p>'
-      + '<div class="overflow-x-auto"><table class="w-full border-collapse">'
-      + '<thead>' + head + '</thead><tbody>' + body + '</tbody></table></div></section>';
+      + '<p class="text-xs muted mb-2" style="max-width:78ch">Tallene står som de er, uden markering af '
+      +   'hvad der er bedst — det afhænger af, hvor længe pengene skal ligge, og hvor meget de må svinge '
+      +   'undervejs. Afkastene er regnet på kursen fra dato til dato.</p>'
+      + '<div class="overflow-x-auto"><table class="w-full border-collapse cmp-tabel">'
+      + '<thead>' + head + '</thead><tbody>' + krop + '</tbody></table></div>'
+      + (state.faelles.risiko_note
+          ? '<p class="text-xs faint mt-3" style="max-width:78ch">' + K.esc(state.faelles.risiko_note) + '</p>' : '')
+      + '</section>';
   }
 
-  // ── Tegn siden ─────────────────────────────────────────────────────────
+  // ── Omkostning, skat og handel ─────────────────────────────────────────
+  function forklaringer() {
+    // Billigst på den løbende omkostning er ikke nødvendigvis billigst i alt:
+    // de indirekte handelsomkostninger er ikke med i det første tal, og de er
+    // forskellige nok til at vende rækkefølgen. Siden siger hvad den ser.
+    const medPris = state.rows.filter((r) => (r.fakta || {}).aarlig_omkostning != null);
+    const ialt = (r) => r.fakta.aarlig_omkostning + (r.fakta.indirekte_handelsomkostninger || 0);
+    const mindst = (f) => medPris.reduce((a, b) => (f(a) <= f(b) ? a : b));
+    const billigstLoebende = medPris.length ? mindst((r) => r.fakta.aarlig_omkostning) : null;
+    const billigstIAlt = medPris.length ? mindst(ialt) : null;
+
+    return '<div class="grid gap-4 md:grid-cols-2 mb-4">'
+
+      + '<section class="card card-satin p-4 md:p-5">'
+      +   '<h2 class="font-extrabold tracking-tight mb-2">Hvad koster de?</h2>'
+      +   '<p class="text-sm muted" style="max-width:74ch">Løbende omkostninger trækkes fra kursen hen '
+      +     'over året, så du får ingen regning — men de er der. Afkastene på siden her er efter '
+      +     'omkostninger. Beløbet dækker både driften af afdelingen og de fonde, den selv investerer i. '
+      +     'Det andet tal er de indirekte handelsomkostninger: hvad afdelingen betaler for at handle '
+      +     'papirerne indeni, som ikke tælles med i det første.</p>'
+      +   '<div class="mt-3">' + state.rows.map((r) => kv(kort(r),
+            (r.fakta || {}).aarlig_omkostning != null
+              ? '<span class="num">' + B.omkostning(r.fakta.aarlig_omkostning)
+                + ' % + ' + B.omkostning(r.fakta.indirekte_handelsomkostninger || 0) + ' % · '
+                + Math.round(10000 * (r.fakta.aarlig_omkostning
+                    + (r.fakta.indirekte_handelsomkostninger || 0)) / 100) + ' kr. af 10.000</span>'
+              : '<span class="faint">–</span>')).join('') + '</div>'
+      +   (billigstIAlt
+            ? '<p class="text-xs faint mt-3">'
+              + (billigstLoebende.symbol === billigstIAlt.symbol
+                ? K.esc(kort(billigstIAlt)) + ' er billigst, både på den løbende omkostning og i alt.'
+                : K.esc(kort(billigstLoebende)) + ' har den laveste løbende omkostning, men '
+                  + K.esc(kort(billigstIAlt)) + ' er billigst, når de indirekte handelsomkostninger '
+                  + 'regnes med — de er ikke med i det første tal.')
+              + ' Forskellen mellem afdelingerne er hundrededele af et procentpoint og betyder mindre '
+              + 'for resultatet, end aktieandelen gør.</p>'
+            : '')
+      + '</section>'
+
+      + '<section class="card card-satin p-4 md:p-5">'
+      +   '<h2 class="font-extrabold tracking-tight mb-2">Skat og udbytte</h2>'
+      +   '<p class="text-sm muted" style="max-width:74ch">Alle tre afdelinger er '
+      +     '<strong>akkumulerende</strong>: afkastet bliver i kursen i stedet for at blive betalt ud som '
+      +     'udbytte. Derfor er kursudviklingen også afkastet — der er ikke et udbytte, der skal lægges til.</p>'
+      +   '<p class="text-sm muted mt-3" style="max-width:74ch">Coop Bank oplyser afdelingerne som '
+      +     '<strong>lagerbeskattede</strong>. Det betyder, at årets værdistigning beskattes ved årets '
+      +     'udgang, også hvis du ikke har solgt. Hvordan det rammer dig afhænger af, om beviset ligger i '
+      +     'fri opsparing, på en aktiesparekonto eller i pension — det er ikke noget, vi kan svare på her.</p>'
+      + '</section>'
+
+      + '</div>';
+  }
+
+  function kilderCard() {
+    const k = state.kilder || {};
+    return '<section class="card p-4 md:p-5 mb-4">'
+      + '<h2 class="font-extrabold tracking-tight mb-2">Hvor tallene kommer fra</h2>'
+      + '<ul class="text-sm muted" style="max-width:78ch;list-style:disc;padding-left:1.1rem">'
+      +   '<li><strong>Kurser og kurshistorik:</strong> Yahoo Finance, samme kilde som resten af sitet. '
+      +     'Hentet ' + K.esc(K.fmtAge(state.updatedAt)) + '. Afkastene regner vi selv, på datoerne.</li>'
+      +   '<li><strong>Fordeling, regioner, brancher, lande, omkostninger, beskatning, indre værdi '
+      +     'og dokumenter:</strong> Coop Banks eget dataendpoint, hentet automatisk med '
+      +     '<span class="num">scripts/fetch-beviser.mjs</span>'
+      +     (state.faktaOpdateret ? ' den ' + K.fmtDate(state.faktaOpdateret) : '') + '.</li>'
+      +   '<li><strong>Morningstar-kategori:</strong> Nordnet.</li>'
+      + '</ul>'
+      + '<p class="text-xs faint mt-3" style="max-width:78ch">Kurserne er vejledende og kan være '
+      +   'forsinkede. Mangler et tal, står der en streg frem for et gæt. '
+      +   'Prospekt og central investorinformation ligger hos Coop Bank, og det er dem, der gælder. '
+      +   'Siden er ikke investeringsrådgivning: det du sætter til side kan både vokse og blive mindre, '
+      +   'og du kan få mindre tilbage, end du satte ind.</p>'
+      + '</section>';
+  }
+
+  // ── Tegn ───────────────────────────────────────────────────────────────
   function render() {
     $('#page').innerHTML =
       '<div class="grid gap-4 md:grid-cols-3 mb-4">' + state.rows.map(card).join('') + '</div>'
+      + forskelCard()
       + chartCard()
-      + tableCard()
-      + '<p class="text-xs faint">Kilde: Yahoo Finance · '
-      +   '<span id="freshness">Nøgletal hentet ' + K.esc(K.fmtAge(state.updatedAt)) + '</span></p>';
+      + tabelCard()
+      + forklaringer()
+      + kilderCard()
+      + '<p class="text-xs faint">Kilde: Yahoo Finance og udstedernes egne sider · '
+      +   '<span id="freshness">kurser hentet ' + K.esc(K.fmtAge(state.updatedAt)) + '</span></p>';
 
-    $$('#ranges [data-months]').forEach((b) => b.addEventListener('click', () => {
-      state.months = Number(b.dataset.months);
+    $$('#ranges [data-periode]').forEach((b) => b.addEventListener('click', () => {
+      const v = b.dataset.periode;
+      state.periode = v === 'ytd' ? 'ytd' : (v === 'Infinity' ? Infinity : Number(v));
       render();
     }));
     K.initHints();
@@ -306,91 +430,67 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
 
   function lead() {
     const n = state.rows.length;
-    const families = [...new Set(state.rows.map((r) => r.family).filter(Boolean))];
-    const fra = families.length === 1 ? ' fra ' + families[0] : '';
-    $('#lead').textContent = (TAL[n] || n) + ' bevis' + (n === 1 ? '' : 'er') + fra
-      + ', som Coop Bank tilbyder. De er stillet op efter, hvor meget kursen har svinget det seneste '
-      + 'år — den roligste først. Hvad hver af dem investerer i, står i foreningens faktaark.';
+    const familier = [...new Set(state.rows.map((r) => r.family).filter(Boolean))];
+    $('#lead').textContent = (TAL[n] || n) + ' afdeling' + (n === 1 ? '' : 'er')
+      + (familier.length === 1 ? ' fra ' + familier[0] : '')
+      + ', som Coop Bank tilbyder. De køber de samme slags byggeklodser — det er vægten af aktier, der '
+      + 'skiller dem ad, og den står nedenfor. Rækkefølgen på siden følger aktieandelen, laveste først.';
   }
 
-  // ── Løbende kurser ─────────────────────────────────────────────────────
+  function liveChip(mode) {
+    const chip = $('#freshness');
+    if (!chip) return;
+    chip.innerHTML = mode === 'live'
+      ? '<span class="live-dot" aria-hidden="true"></span> kurser hvert minut'
+      : (mode === 'paused' && !K.tradingNow() ? 'børsen er lukket · kurser hentet ' : 'kurser hentet ')
+        + K.esc(K.fmtAge(state.updatedAt));
+  }
+
   function applyLive(data) {
-    let moved = false;
+    let flyttet = false;
     for (const r of state.rows) {
       const q = data.q[r.symbol];
       if (!q || q.p == null || q.p === r.price) continue;
       r.price = q.p;
       if (q.c != null) r.change = q.c;
       if (q.cp != null) r.percent_change = q.cp;
-      moved = true;
+      flyttet = true;
     }
-    if (moved) render();
+    if (flyttet) render();
   }
 
-  function liveChip(mode) {
-    const chip = $('#freshness');
-    if (!chip) return;
-    if (mode === 'live') {
-      chip.innerHTML = '<span class="live-dot" aria-hidden="true"></span> kurser hvert minut';
-      return;
-    }
-    chip.textContent = mode === 'paused' && !K.tradingNow()
-      ? 'Børsen er lukket · nøgletal hentet ' + K.fmtAge(state.updatedAt)
-      : 'Nøgletal hentet ' + K.fmtAge(state.updatedAt);
-  }
-
-  // ── Hent ───────────────────────────────────────────────────────────────
-  async function history(symbol) {
+  (async () => {
     try {
-      const res = await fetch('data/etf-historik/' + encodeURIComponent(symbol) + '.json', { cache: 'no-cache' });
-      if (!res.ok) return null;
-      const body = await res.json();
-      if (!Array.isArray(body.dates) || !Array.isArray(body.closes)) return null;
-      return { dates: body.dates, closes: body.closes };
-    } catch { return null; }
-  }
+      const data = await B.load();
+      state.rows = data.rows;
+      state.faelles = data.faelles;
+      state.kilder = data.kilder;
+      state.updatedAt = data.updatedAt;
 
-  async function load() {
-    let data;
-    try {
-      const res = await fetch('data/etf.json', { cache: 'no-store' });
-      if (!res.ok) throw new Error('HTTP ' + res.status);
-      data = await res.json();
+      if (!state.rows.length) {
+        $('#page').innerHTML = '<div class="card p-5 text-sm muted">Der er ingen investeringsbeviser i '
+          + 'hentningen lige nu. <a class="link-accent" href="etf.html">Se de børshandlede fonde</a> i stedet.</div>';
+        return;
+      }
+
+      lead();
+      render();
+
+      const serier = await Promise.all(state.rows.map((r) => B.history(r.symbol)));
+      state.rows.forEach((r, i) => { if (serier[i]) state.hist.set(r.symbol, serier[i]); });
+      render();
+
+      state.live = K.startLive({
+        interval: 60_000,
+        symbols: () => state.rows.map((r) => r.symbol),
+        apply: applyLive,
+        status: liveChip,
+      });
     } catch (err) {
       $('#page').innerHTML = '<div class="card p-5 text-sm muted">Kunne ikke hente kurserne. '
         + 'Prøv at genindlæse siden.</div>';
-      return;
     }
-
-    state.updatedAt = data.updated_at;
-    // Siden er bygget på arten, ikke på tre symboler: kommer der en
-    // investeringsforening mere med i hentningen, står den her af sig selv.
-    state.rows = (data.etfs || [])
-      .filter((e) => e.kind === 'investeringsforening')
-      .sort((a, b) => (spanOf(a) ?? Infinity) - (spanOf(b) ?? Infinity));
-
-    if (!state.rows.length) {
-      $('#page').innerHTML = '<div class="card p-5 text-sm muted">Der er ingen investeringsbeviser i '
-        + 'hentningen lige nu. <a class="link-accent" href="etf.html">Se de børshandlede fonde</a> i stedet.</div>';
-      return;
-    }
-
-    lead();
-    render();
-
-    const series = await Promise.all(state.rows.map((r) => history(r.symbol)));
-    state.rows.forEach((r, i) => { if (series[i]) state.hist.set(r.symbol, series[i]); });
-    render();
-
-    state.live = K.startLive({
-      interval: 60_000,
-      symbols: () => state.rows.map((r) => r.symbol),
-      apply: applyLive,
-      status: liveChip,
-    });
-  }
-
-  load();
+  })();
 })();
 </script>
 </body>
