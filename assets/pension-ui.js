@@ -37,6 +37,10 @@
     carriedLoss:   { kind: 'money' },
   };
 
+  // Standarden matcher feltet i pension.html. Den står her, så nulstilningen
+  // og markuppet ikke kan glide fra hinanden i tavshed.
+  const DEFAULT_RETIRE_AGE = 50;
+
   const da0 = new Intl.NumberFormat('da-DK', { maximumFractionDigits: 0 });
   const kr = (n) => (Number.isFinite(n) ? da0.format(Math.round(n)) : '–');
 
@@ -179,75 +183,100 @@
     }).join('') + '</tbody>';
     return head + body;
   }
-
   // ── Resultatet ──────────────────────────────────────────────────────────
+  // Spørgsmålet siden svarer på er: hvad skal jeg lægge til side hver måned,
+  // hvis jeg vil stoppe som X-årig og har det her i dag? Den indbetaling
+  // brugeren allerede laver, indgår kun til sammenligning og til det ene
+  // sekundære svar nederst.
   const ageText = (m) => Math.floor(m / 12) + ' år' + (m % 12 ? ' og ' + (m % 12) + ' md.' : '');
-  const spanText = (m) => {
-    if (m === 0) return 'med det samme';
-    const y = Math.floor(m / 12), r = m % 12;
-    return 'om ' + (y ? y + (y === 1 ? ' år' : ' år') : '') + (y && r ? ' og ' : '')
-      + (r ? r + ' md.' : '');
-  };
+  // "som 50-årig" på hele år, "som 50 år og 3 md." når der er måneder med.
+  const asAged = (m) => (m % 12 ? Math.floor(m / 12) + ' år og ' + (m % 12) + ' md.'
+                                : Math.floor(m / 12) + '-årig');
 
   const state = { real: false, sim: null, inputs: null };
 
-  function renderResult(it, found) {
+  const card = (k, v, n) => '<div class="cardlet"><div class="cardlet-k">' + K.esc(k) + '</div>'
+    + '<div class="cardlet-v">' + v + '</div>'
+    + (n ? '<div class="cardlet-n">' + n + '</div>' : '') + '</div>';
+
+  const fejl = (h, p) => '<div class="fail">'
+    + '<h2 class="text-lg font-extrabold tracking-tight" style="color:var(--delta-down)">'
+    + K.esc(h) + '</h2><p class="text-sm muted mt-2" style="max-width:74ch">' + p + '</p></div>';
+
+  function skjulAlt() {
+    $('#chartCard').hidden = true;
+    $('#tableCard').hidden = true;
+    $('#sensCard').hidden = true;
+    $('#earliestCard').hidden = true;
+  }
+
+  /**
+   * Hovedsvaret: den nødvendige månedlige indbetaling.
+   * @param {any} it
+   * @param {number} retireMonth
+   */
+  function renderMain(it, retireMonth) {
     const box = $('#result');
-    if (!found.found || !found.sim) {
-      box.innerHTML = '<div class="fail">'
-        + '<h2 class="text-lg font-extrabold tracking-tight" style="color:var(--delta-down)">'
-        + 'Med de valgte forudsætninger kan målet ikke nås inden slutalderen.</h2>'
-        + '<p class="text-sm muted mt-2" style="max-width:74ch">Der er ingen måned mellem i dag og '
-        + it.endAge + ' år, hvorfra depotet kan betale ' + kr(it.spend)
-        + ' kr. om måneden efter skat resten af vejen. Prøv et højere afkast, en større '
-        + 'indbetaling, et lavere forbrug eller en senere slutalder.</p></div>';
-      $('#chartCard').hidden = true;
-      $('#tableCard').hidden = true;
-      return;
+    const svar = P.solveContribution(it, retireMonth);
+
+    if (!svar.found || !svar.sim) {
+      box.innerHTML = fejl('Det kan ikke lade sig gøre — uanset hvor meget du lægger til side.',
+        'Selv med en meget stor månedlig indbetaling kan depotet ikke bære ' + kr(it.spend)
+        + ' kr. om måneden efter skat fra du er ' + Math.round((it.ageYears * 12 + it.ageMonths
+          + retireMonth) / 12) + ' til du er ' + it.endAge + ' år. '
+        + 'Prøv et højere afkast, et lavere forbrug, en senere stopalder eller en lavere slutalder.');
+      skjulAlt();
+      return null;
     }
 
-    const sim = found.sim;
-    const m = sim.retireMonth;
-    const retireAgeMonths = it.ageYears * 12 + it.ageMonths + m;
-    const firstMonth = sim.months[m];
-    const pensionMonths = sim.months.length - m;
+    const sim = svar.sim;
+    state.sim = sim;
+    const retireAgeMonths = it.ageYears * 12 + it.ageMonths + retireMonth;
+    const firstMonth = sim.months[retireMonth];
+    const pensionMonths = sim.months.length - retireMonth;
     const infl = it.inflationOn;
     const deflFinal = Math.pow(1 + it.inflation, P.horizonMonths(it) / 12);
-
-    const card = (k, v, n) => '<div class="cardlet"><div class="cardlet-k">' + K.esc(k) + '</div>'
-      + '<div class="cardlet-v">' + v + '</div>'
-      + (n ? '<div class="cardlet-n">' + n + '</div>' : '') + '</div>';
+    const diff = svar.monthly - it.monthly;
+    const stiger = it.monthlyGrowth !== 0;
 
     box.innerHTML =
-      '<p class="text-xs font-bold uppercase faint" style="letter-spacing:.05em">Tidligste beregnede pensionsalder</p>'
-      + '<div class="headline mt-1"><span class="headline-age">' + ageText(retireAgeMonths) + '</span>'
-      + '<span class="text-sm muted">' + spanText(m) + '</span></div>'
+      '<p class="text-xs font-bold uppercase faint" style="letter-spacing:.05em">'
+      + 'Det skal du lægge til side hver måned</p>'
+      + '<div class="headline mt-1"><span class="headline-age">' + kr(svar.monthly) + ' kr.</span>'
+      + '<span class="text-sm muted">for at stoppe som ' + asAged(retireAgeMonths)
+      + ' med ' + kr(it.spend) + ' kr. om måneden' + (infl ? ' i dagens penge' : '') + '</span></div>'
+      + (stiger
+          ? '<p class="text-xs muted mt-2">Det er startbeløbet. Du har valgt, at indbetalingen '
+            + 'stiger ' + (it.monthlyGrowth * 100).toLocaleString('da-DK', { maximumFractionDigits: 2 })
+            + ' % på hver årsdag, og det er regnet med.</p>'
+          : '')
+      + (it.minResidual > 0 ? ''
+          : '<p class="text-xs muted mt-2" style="max-width:78ch">Beløbet er det mindste, der '
+            + 'lige akkurat rækker: derfor er depotet stort set brugt op som ' + it.endAge
+            + '-årig. Vil du have noget tilbage, så sæt et beløb i '
+            + '<strong style="color:var(--text-primary)">«Skal være tilbage til sidst»</strong>.</p>')
       + '<div class="cards mt-4">'
-      + card('Depot ved pensionsstart', kr(sim.atRetirement) + ' kr.',
-          infl ? kr(sim.atRetirement / firstMonth.deflator) + ' kr. i dagens penge' : '')
+      + card(diff > 0.5 ? 'Så meget mangler du' : diff < -0.5 ? 'Så meget har du til overs' : 'Du er lige på',
+          kr(Math.abs(diff)) + ' kr.',
+          'du lægger ' + kr(it.monthly) + ' kr. til side i dag')
+      + card('Depot når du stopper', kr(sim.atRetirement) + ' kr.',
+          infl && firstMonth ? kr(sim.atRetirement / firstMonth.deflator) + ' kr. i dagens penge' : '')
       + card('Egne penge i alt', kr(sim.contributed) + ' kr.', 'startkapital og indbetalinger')
-      + card('Første måneds forbrug', kr(firstMonth.net) + ' kr.',
-          infl ? kr(it.spend) + ' kr. i dagens penge' : 'efter skat')
-      + card('Første bruttosalg', kr(firstMonth.gross) + ' kr.',
-          'heraf ' + kr(firstMonth.tax) + ' kr. i skat')
-      + card('Restformue ved ' + it.endAge + ' år', kr(sim.finalNet) + ' kr.',
+      + (firstMonth
+          ? card('Første måneds salg', kr(firstMonth.gross) + ' kr.',
+              'heraf ' + kr(firstMonth.tax) + ' kr. i skat, så ' + kr(firstMonth.net) + ' kr. er dine')
+          : '')
+      + card('Tilbage som ' + it.endAge + '-årig', kr(sim.finalNet) + ' kr.',
           (sim.finalTax > 0.5 ? 'efter ' + kr(sim.finalTax) + ' kr. i salgsskat' : 'efter skat')
           + (infl ? ' · ' + kr(sim.finalNet / deflFinal) + ' kr. i dagens penge' : ''))
       + '</div>'
-      + '<p class="text-xs muted mt-4" style="max-width:78ch">Fra den måned og frem sælges der hver '
-      + 'måned aktier nok til både forbruget og skatten af salget. Resten bliver stående og '
-      + 'forrentes videre. Det er den tidligste måned, hvorfra <em>alle</em> resterende måneder '
-      + 'kan betales.</p>'
-      // Er der kun få måneder tilbage til slutalderen, skal der også kun betales få.
-      // Så er tallet rigtigt og alligevel misvisende, hvis man ikke får det at vide.
       + (pensionMonths < 120
-          ? '<p class="text-xs mt-2" style="max-width:78ch;color:var(--delta-down)">'
+          ? '<p class="text-xs mt-3" style="max-width:78ch;color:var(--delta-down)">'
             + 'Bemærk: der er kun ' + (pensionMonths / 12).toLocaleString('da-DK',
-                { maximumFractionDigits: 1 }) + ' år fra den alder til de ' + it.endAge
+                { maximumFractionDigits: 1 }) + ' år fra du stopper til de ' + it.endAge
             + ' år, pengene skal holde til. Depotet skal altså kun bære forbruget i den korte '
-            + 'periode, og tallet siger derfor mere om, hvor lidt der er tilbage at betale, end '
-            + 'om at kunne leve af sin formue. Sæt slutalderen højere, eller forbruget lavere, '
-            + 'for et svar der er værd at bruge.</p>'
+            + 'periode, og beløbet er derfor lavere, end det ville være med en realistisk levetid. '
+            + 'Sæt slutalderen højere.</p>'
           : '');
 
     $('#chartCard').hidden = false;
@@ -255,6 +284,78 @@
     $('#unitToggle').hidden = !infl;
     if (!infl) state.real = false;
     paintViews();
+    return svar;
+  }
+
+  /**
+   * Hvad afkastet gør ved svaret. Det er den forudsætning ingen kender, og
+   * den svaret er mest følsomt over for, så den får sin egen tabel.
+   * @param {any} it
+   * @param {number} retireMonth
+   * @param {number} valgt Den nødvendige indbetaling ved brugerens eget afkast.
+   */
+  function renderSensitivity(it, retireMonth, valgt) {
+    const egen = Math.round(it.returnSaving * 1000) / 10;      // fx 7 for 7 %
+    const kandidater = [3, 4, 5, 6, 7, 8, 9, 10];
+    if (kandidater.indexOf(egen) === -1) kandidater.push(egen);
+    kandidater.sort((a, b) => a - b);
+
+    const rækker = kandidater.map((pct) => {
+      const r = pct / 100;
+      // Kun opsparingsafkastet varieres, medmindre brugeren har bedt om samme
+      // afkast i begge perioder — så følger pensionsafkastet med, ligesom
+      // afkrydsningsfeltet siger.
+      const v = P.normalize(Object.assign({}, it, {
+        returnSaving: r,
+        returnRetired: it.sameReturn ? r : it.returnRetired,
+      }));
+      const s = P.solveContribution(v, retireMonth);
+      return { pct: pct, monthly: s.found ? s.monthly : null, egen: pct === egen };
+    });
+
+    const head = '<thead><tr><th>Årligt afkast</th><th>Nødvendig indbetaling</th>'
+      + '<th>Mod dit afkast</th></tr></thead>';
+    const body = '<tbody>' + rækker.map((r) => {
+      const d = (r.monthly != null && valgt != null) ? r.monthly - valgt : null;
+      return '<tr' + (r.egen ? ' style="font-weight:800;background:var(--surface-2)"' : '') + '>'
+        + '<td>' + r.pct.toLocaleString('da-DK', { maximumFractionDigits: 1 }) + ' %'
+        + (r.egen ? ' <span class="faint" style="font-weight:400">← dit valg</span>' : '') + '</td>'
+        + '<td>' + (r.monthly == null ? 'kan ikke nås' : kr(r.monthly) + ' kr./md.') + '</td>'
+        + '<td>' + (d == null || r.egen ? '–' : (d > 0 ? '+' : '') + kr(d) + ' kr.') + '</td></tr>';
+    }).join('') + '</tbody>';
+
+    $('#sensTable').innerHTML = head + body;
+    $('#sensCard').hidden = false;
+  }
+
+  /**
+   * Det sekundære svar: bliver du ved med præcis det, du lægger til side i
+   * dag, hvornår kan du så tidligst stoppe?
+   * @param {any} it
+   * @param {number} retireMonth
+   */
+  function renderEarliest(it, retireMonth) {
+    const out = $('#earliestOut');
+    const found = P.findEarliest(it);
+    if (!found.found || !found.sim) {
+      out.innerHTML = '<p class="text-sm muted">Med ' + kr(it.monthly) + ' kr. om måneden rækker '
+        + 'depotet ikke til ' + kr(it.spend) + ' kr. i forbrug fra nogen alder inden de '
+        + it.endAge + ' år.</p>';
+      $('#earliestCard').hidden = false;
+      return;
+    }
+    const m = found.sim.retireMonth;
+    const alder = it.ageYears * 12 + it.ageMonths + m;
+    const forskel = alder - (it.ageYears * 12 + it.ageMonths + retireMonth);
+    out.innerHTML = '<div class="cards">'
+      + card('Tidligste beregnede stopalder', ageText(alder),
+          'med ' + kr(it.monthly) + ' kr. om måneden')
+      + card('I forhold til dit mål',
+          forskel === 0 ? 'præcis på' : (forskel > 0 ? forskel + ' md. senere' : (-forskel) + ' md. tidligere'),
+          'du sigter mod ' + Math.floor((it.ageYears * 12 + it.ageMonths + retireMonth) / 12) + ' år')
+      + card('Depot når du stopper', kr(found.sim.atRetirement) + ' kr.', 'ved den alder')
+      + '</div>';
+    $('#earliestCard').hidden = false;
   }
 
   function paintViews() {
@@ -272,7 +373,7 @@
 
   // ── Kør ─────────────────────────────────────────────────────────────────
   let timer = null;
-  function schedule() { clearTimeout(timer); timer = setTimeout(run, 120); }
+  function schedule() { clearTimeout(timer); timer = setTimeout(run, 160); }
 
   function run() {
     const it = readFields();
@@ -280,8 +381,8 @@
     $('#retiredRow').hidden = it.sameReturn;
     $('#inflationBox').hidden = !it.inflationOn;
 
-    // Anskaffelsessummen kan ikke være større end depotet: så ville der være
-    // et tab, man ikke har haft.
+    // Anskaffelsessummen sammenholdt med depotet siger, hvor stor en
+    // urealiseret gevinst der ligger og venter på at blive beskattet.
     const note = $('#basisNote');
     if (it.basis > it.depot) {
       note.textContent = 'Anskaffelsessummen er større end depotet. Så har du et urealiseret tab, '
@@ -292,56 +393,31 @@
       note.hidden = false;
     } else { note.hidden = true; }
 
-    const found = P.findEarliest(it);
-    state.sim = found.sim;
-    renderResult(it, found);
-    $('#reverseCard').hidden = false;
-    K.initHints();
-  }
-
-  // ── Den omvendte vej ────────────────────────────────────────────────────
-  function solveReverse() {
-    const it = readFields();
-    const target = Math.round(parseNumber(/** @type {HTMLInputElement} */ ($('#targetAge')).value));
-    const out = $('#reverseOut');
     const nowMonths = it.ageYears * 12 + it.ageMonths;
-    const retireMonth = target * 12 - nowMonths;
+    const retireEl = /** @type {HTMLInputElement} */ ($('#retireAge'));
+    const retireAge = Math.round(parseNumber(retireEl.value));
+    const retireMonth = retireAge * 12 - nowMonths;
 
     if (retireMonth < 0) {
-      out.innerHTML = '<p class="text-sm" style="color:var(--delta-down)">Du er allerede ældre end '
-        + target + ' år.</p>';
+      $('#result').innerHTML = fejl('Du er allerede ældre end ' + retireAge + ' år.',
+        'Sæt stopalderen til noget, der ligger efter din alder i dag.');
+      skjulAlt();
       return;
     }
-    if (target >= it.endAge) {
-      out.innerHTML = '<p class="text-sm" style="color:var(--delta-down)">Stopalderen skal ligge før '
-        + 'slutalderen på ' + it.endAge + ' år.</p>';
+    if (retireAge >= it.endAge) {
+      $('#result').innerHTML = fejl('Stopalderen skal ligge før slutalderen.',
+        'Du vil stoppe som ' + retireAge + '-årig, men pengene skal kun holde til ' + it.endAge
+        + ' år. Sæt slutalderen højere — den er den alder, du regner med at leve til.');
+      skjulAlt();
       return;
     }
 
-    const svar = P.solveContribution(it, retireMonth);
-    if (!svar.found) {
-      out.innerHTML = '<p class="text-sm" style="color:var(--delta-down)">Det kan ikke lade sig gøre '
-        + 'med de øvrige forudsætninger, uanset hvor meget der indbetales.</p>';
-      return;
+    const svar = renderMain(it, retireMonth);
+    if (svar) {
+      renderSensitivity(it, retireMonth, svar.monthly);
+      renderEarliest(it, retireMonth);
     }
-    const stiger = it.monthlyGrowth !== 0;
-    const sim = /** @type {any} */ (svar.sim);
-    const last = sim.months[Math.max(0, retireMonth - 1)];
-    out.innerHTML = '<div class="cards">'
-      + '<div class="cardlet"><div class="cardlet-k">Nødvendig indbetaling</div>'
-      + '<div class="cardlet-v">' + kr(svar.monthly) + ' kr./md.</div>'
-      + '<div class="cardlet-n">' + (stiger
-          ? 'til at begynde med, og derefter ' + (it.monthlyGrowth * 100).toLocaleString('da-DK',
-              { maximumFractionDigits: 2 }) + ' % mere om året'
-          : 'det samme beløb hver måned') + '</div></div>'
-      + '<div class="cardlet"><div class="cardlet-k">Mod det du sparer op nu</div>'
-      + '<div class="cardlet-v">' + (svar.monthly > it.monthly ? '+' : '')
-      + kr(svar.monthly - it.monthly) + ' kr./md.</div>'
-      + '<div class="cardlet-n">i forhold til ' + kr(it.monthly) + ' kr.</div></div>'
-      + '<div class="cardlet"><div class="cardlet-k">Depot som ' + target + '-årig</div>'
-      + '<div class="cardlet-v">' + kr(last ? last.close : it.depot) + ' kr.</div>'
-      + '<div class="cardlet-n">ved pensionsstart</div></div>'
-      + '</div>';
+    K.initHints();
   }
 
   // ── Bindinger ───────────────────────────────────────────────────────────
@@ -357,11 +433,17 @@
       state.real = b.getAttribute('data-unit') === 'real';
       paintViews();
     }));
-    $('#solveBtn').addEventListener('click', solveReverse);
-    $('#targetAge').addEventListener('keydown', (e) => {
-      if (/** @type {KeyboardEvent} */ (e).key === 'Enter') { e.preventDefault(); solveReverse(); }
+    // Stopalderen står ikke i FIELDS: den er ikke en forudsætning modellen
+    // regner med, men det spørgsmål den bliver stillet. Den bindes for sig.
+    const retire = $('#retireAge');
+    retire.addEventListener('input', schedule);
+    retire.addEventListener('change', schedule);
+
+    $('#reset').addEventListener('click', () => {
+      fill(P.DEFAULTS);
+      /** @type {HTMLInputElement} */ ($('#retireAge')).value = String(DEFAULT_RETIRE_AGE);
+      run();
     });
-    $('#reset').addEventListener('click', () => { fill(P.DEFAULTS); run(); $('#reverseOut').innerHTML = ''; });
   }
 
   /** Skriv et sæt værdier ud i felterne. @param {any} v */
