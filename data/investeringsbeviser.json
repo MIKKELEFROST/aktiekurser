@@ -1,0 +1,90 @@
+{
+  "_om": "Håndholdte oplysninger om de danske investeringsbeviser. Kurser, historik og afkast kommer fra hentningen som for alle andre fonde og står IKKE her — det her er de tal, kilden til kurserne ikke har: omkostning, ISIN, beskatning, fordeling og hvad afdelingen investerer i. Hvert felt har en kilde og en dato, og intet er gættet: mangler en oplysning, står den som null, og siden skriver en streg.",
+  "_ret_mig": "Filen opdateres i hånden, når udstederen ændrer tallene. Fordelingen opgøres mindst en gang om måneden hos Coop Bank.",
+  "opdateret": "2026-09-09",
+  "kilder": {
+    "coopbank": {
+      "navn": "Coop Bank",
+      "url": "https://www.coopbank.dk/investeringsbeviser",
+      "aflaest": "2026-09-09",
+      "daekker": "beskrivelse, aktieloft, ISIN, kategori, beskatning, omkostning, indre værdi"
+    },
+    "nordnet": {
+      "navn": "Nordnet",
+      "url": "https://www.nordnet.dk",
+      "aflaest": "2026-09-09",
+      "daekker": "fordeling og regioner, begge opgjort 31.7.2026, samt risikoindikator og Morningstar-kategori"
+    }
+  },
+  "faelles": {
+    "forening": "Investeringsforeningen Coop Opsparing",
+    "forvalter": "Wealth Invest",
+    "boers": "Nasdaq København",
+    "valuta": "DKK",
+    "fordeling_opgjort": "2026-07-31",
+    "regioner_opgjort": "2026-07-31",
+    "historik_starter": "2018-07",
+    "historik_note": "Coop Bank viser formueudvikling for alle tre afdelinger tilbage til juli 2018. Vores egen kurshistorik begynder i januar 2024, hvor beviserne kom med i kilden vi henter fra.",
+    "regioner_note": "Regionerne er Nordnets eksponeringstal. Coop Bank opgør dem anderledes på sin egen side, hvor obligationerne tæller med — dér fylder Europa mere. De tre afdelinger ligner hinanden på regioner, fordi de bruger de samme byggeklodser; det er vægten af aktier, der skiller dem ad.",
+    "risiko_note": "Alle tre står i kategori 3 af 7 hos Nordnet. Risikotallet skiller dem altså ikke ad — det gør aktieandelen og udsvingene."
+  },
+  "beviser": {
+    "WEICBS.CO": {
+      "kort": "Stabil",
+      "profil": "Lav risikoprofil",
+      "coopbank_url": "https://www.coopbank.dk/investeringsbeviser/coop-bank-stabil",
+      "beskrivelse": "Afdelingen Stabil investerer i en blanding af aktier og obligationer og går efter en global spredning og en lav risikoprofil. Det vil sige en fordeling, hvor aktier og alternative investeringer ikke overstiger 35 % af formuen. Afdelingen investerer fortrinsvis i andele i andre investeringsforeninger og deres underafdelinger – f.eks. ETF'er.",
+      "aktieloft": 35,
+      "isin": "DK0060991495",
+      "kategori": "Blandede Lav aktieandel",
+      "morningstar_kategori": "Balanceret - EUR Lav Risiko",
+      "udbyttepolitik": "Akkumulerende",
+      "beskatning": "Lagerbeskattet",
+      "aarlig_omkostning": 0.67,
+      "risiko": 3,
+      "risiko_skala": 7,
+      "indre_vaerdi": 129.5,
+      "indre_vaerdi_dato": "2026-09-08",
+      "fordeling": { "aktier": 25.3, "lang_rente": 68.8, "kort_rente": 3.2, "oevrigt": 2.7 },
+      "regioner": [["USA", 50.53], ["Europa ekskl. eurozonen", 15.4], ["Eurozonen", 11.73], ["Japan", 9.22], ["Asien", 4.57]]
+    },
+    "WEICBB.CO": {
+      "kort": "Balanceret",
+      "profil": "Mellem risikoprofil",
+      "coopbank_url": "https://www.coopbank.dk/investeringsbeviser/coop-bank-balanceret",
+      "beskrivelse": "Afdelingen Balanceret investerer i en blanding af aktier og obligationer og går efter global spredning og en mellem risikoprofil. Det vil sige en fordeling, hvor aktier og alternative investeringer ikke overstiger 60 % af formuen. Afdelingen investerer fortrinsvis i andele i andre investeringsforeninger og deres underafdelinger – f.eks. ETF'er.",
+      "aktieloft": 60,
+      "isin": "DK0060991578",
+      "kategori": null,
+      "morningstar_kategori": "Balanceret - EUR Moderat",
+      "udbyttepolitik": "Akkumulerende",
+      "beskatning": null,
+      "aarlig_omkostning": 0.58,
+      "risiko": 3,
+      "risiko_skala": 7,
+      "indre_vaerdi": null,
+      "indre_vaerdi_dato": null,
+      "fordeling": { "aktier": 51.4, "lang_rente": 44.3, "kort_rente": 2.8, "oevrigt": 1.5 },
+      "regioner": [["USA", 51.82], ["Eurozonen", 14.07], ["Europa ekskl. eurozonen", 13.01], ["Japan", 8.58], ["Asien", 4.73]]
+    },
+    "WEICBV.CO": {
+      "kort": "Vækst",
+      "profil": "Høj risikoprofil",
+      "coopbank_url": "https://www.coopbank.dk/investeringsbeviser/coop-bank-vaekst",
+      "beskrivelse": "Afdelingen Vækst investerer i en blanding af aktier og obligationer og går efter global spredning og en høj risikoprofil. Det vil sige en fordeling, hvor aktier og alternative investeringer ikke overstiger 85 % af formuen. Afdelingen investerer fortrinsvis i andele i andre investeringsforeninger og deres underafdelinger – f.eks. ETF'er.",
+      "aktieloft": 85,
+      "isin": "DK0060991651",
+      "kategori": "Blandede Høj aktieandel",
+      "morningstar_kategori": "Balanceret - EUR Høj Risiko",
+      "udbyttepolitik": "Akkumulerende",
+      "beskatning": "Lagerbeskattet",
+      "aarlig_omkostning": 0.62,
+      "risiko": 3,
+      "risiko_skala": 7,
+      "indre_vaerdi": 202.23,
+      "indre_vaerdi_dato": "2026-09-08",
+      "fordeling": { "aktier": 76.2, "lang_rente": 20.2, "kort_rente": 2.1, "oevrigt": 1.5 },
+      "regioner": [["USA", 51.03], ["Europa ekskl. eurozonen", 14.0], ["Eurozonen", 12.93], ["Japan", 8.55], ["Asien", 5.0]]
+    }
+  }
+}

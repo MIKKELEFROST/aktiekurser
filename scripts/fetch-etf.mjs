@@ -73,7 +73,7 @@ const MIN_NET_ASSETS_USD = 50e6;
 // mangler, ikke en påstand om, at fonden er lille.
 const EXTRA = [
   { symbol: 'WEICBS.CO', name: 'Wealth Invest Coop Bank Stabil'  },
-  { symbol: 'WEICBB.CO', name: 'Wealth Invest Coop Bank Balance' },
+  { symbol: 'WEICBB.CO', name: 'Wealth Invest Coop Bank Balanceret' },
   { symbol: 'WEICBV.CO', name: 'Wealth Invest Coop Bank Vækst'   },
 ].map((e) => ({
   family: 'Wealth Invest',

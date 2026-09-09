@@ -447,9 +447,17 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
       : 'En ETF er én post på din liste, der indeholder mange selskaber på én gang. '
         + 'Du køber en andel af hele kurven i stedet for at vælge selskaberne selv. ' + what + fee;
 
+    // Investeringsbeviserne har deres egen side med det, kilden til kurserne
+    // ikke har: omkostning, ISIN, fordeling, beskatning. Herfra er der én vej
+    // derover frem for to halve beskrivelser af samme papir.
+    const mere = r.kind === 'investeringsforening'
+      ? '<p class="mt-3"><a class="text-sm link-accent" href="investeringsbevis.html?symbol='
+        + encodeURIComponent(r.symbol) + '">Se hele profilen: fordeling, omkostning og skat →</a></p>'
+      : '';
+
     return '<section class="card card-satin p-4 md:p-5 mb-4">'
       + '<h2 class="font-extrabold tracking-tight mb-2">Hvad er det her?</h2>'
-      + '<p class="text-sm muted">' + body + '</p></section>';
+      + '<p class="text-sm muted">' + body + '</p>' + mere + '</section>';
   }
 
   function figuresCard(r) {
