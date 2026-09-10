@@ -87,6 +87,13 @@
   // first, so the page renders with whatever arrived.
   let ALL = [], KEYS = null, FUND = null, BENCH = null;
 
+  // Kun de to brede indeks kan vælges til grafen. Alle syv gav en række
+  // afkrydsningsfelter der fyldte mere end den graf de handlede om, og de fem
+  // snævre — en halvlederbranche og fire nordiske børser — svarede på et
+  // spørgsmål man hellere stiller på selskabets eget marked. De hentes stadig:
+  // forsidens indekskort og "Udvikling mod markedet" bruger dem.
+  const CMP_BENCH = ['NDX', 'SP500'];
+
   const params = new URLSearchParams(location.search);
   const wanted = (params.get('symbol') || '').toUpperCase();
 
@@ -136,11 +143,16 @@
   // Simple by default. Most people arrive asking how a share is doing, not to
   // value the company; the rest of the page is one tick away and the choice is
   // remembered, so a reader who wants it never has to ask twice.
-  const ADV_STORE = 'kursliste.avanceret.v1';
-  const advOn = () => { try { return localStorage.getItem(ADV_STORE) === '1'; } catch (e) { return false; } };
-  const setAdv = (on) => { try { localStorage.setItem(ADV_STORE, on ? '1' : '0'); } catch (e) { /* privat vindue */ } };
+  // Avanceret visning og de enkelte afsnit styres nu fra tandhjulet i headeren
+  // og deles med fondssiden. K.opt() svarer på ét afsnit; K.advanced() på
+  // hovedafbryderen alene.
+  const opt = (key) => K.opt(key);
+  const advOn = () => K.advanced();
 
-  const state = { range: '3m', from: '', to: '', compare: [], adv: advOn(), tab: 'oversigt' };
+  const state = { range: '3m', from: '', to: '', compare: [], tab: 'oversigt' };
+  // state.adv findes ikke længere som felt: tandhjulet er den ene kilde, og
+  // et felt ved siden af ville kunne stå og pege et andet sted hen.
+  Object.defineProperty(state, 'adv', { get: advOn });
 
   // Der ligger to serier i filen: to år med daglige kurser, og en månedlig
   // helt tilbage til noteringen — for halvdelen af selskaberne før 2006. Den
@@ -313,7 +325,7 @@
   };
 
   function companyEvents() {
-    if (!state.adv || !FUND) return [];
+    if (!opt('haendelser') || !FUND) return [];
     const out = [];
     for (const d of (FUND.dividends || [])) {
       if (!d || !d.date) continue;
@@ -733,52 +745,6 @@
     return Number.isFinite(d) ? d : null;
   }
 
-  // One line of the figures a reader would otherwise open four pages to find.
-  // Anything missing is dropped rather than printed as a dash, so the line
-  // stays short for the companies we know least about.
-  function overviewStrip(r) {
-    const k = keyOf(r.symbol);
-    const bits = [];
-    const add = (label, value, hint) => {
-      if (value == null) return;
-      bits.push('<span class="ov"><span class="ov-k hint" tabindex="0" data-hint-title="' + K.esc(label)
-        + '" data-hint="' + K.esc(hint) + '">' + K.esc(label) + '</span> <span class="ov-v num">' + value + '</span></span>');
-    };
-
-    if (r.market_cap != null) {
-      add('Markedsværdi', K.fmtBig(r.market_cap) + ' ' + K.esc(r.currency),
-        'Kursen gange antallet af aktier, i selskabets egen valuta.');
-    }
-    // The four ratios are what separates the two views, so they sit beside the
-    // switch that reveals them.
-    if (k && state.adv) {
-      add('P/E', mult(K.peOf(r.price, k.eps_ttm)),
-        'Kursen delt med indtjeningen pr. aktie de seneste fire kvartaler. Hvor mange års indtjening du betaler for én aktie. Beregnet af den kurs der står her på siden.');
-      add('Forward P/E', mult(K.peOf(r.price, k.eps_fwd)),
-        'Samme regnestykke, men med analytikernes forventede indtjening for det kommende år i stedet. Lavere end P/E betyder at indtjeningen ventes at vokse.');
-      add('Omsætningsvækst', pct1(k.revenue_growth),
-        'Væksten i omsætning i forhold til samme kvartal året før.');
-      add('FCF-margin', k.fcf_margin == null ? null : (k.fcf_margin * 100).toFixed(1).replace('.', ',') + '%',
-        'Frit cash flow som andel af omsætningen — hvor stor en del af hver krone i salg der bliver til kontanter selskabet frit kan bruge.');
-    }
-    const days = k ? daysUntil(k.next_earnings) : null;
-    const cal = (days != null && days >= 0)
-      ? '<p class="text-sm mt-2 muted">Næste regnskab: <strong style="color:var(--text-primary)">'
-        + K.fmtDate(k.next_earnings) + '</strong> <span class="faint">· '
-        + (days === 0 ? 'i dag' : days === 1 ? 'om 1 dag' : 'om ' + days + ' dage') + '</span></p>'
-      : '';
-
-    const toggle = '<label class="adv-toggle">'
-      + '<input type="checkbox" id="advToggle"' + (state.adv ? ' checked' : '') + '>'
-      + '<span>Avanceret visning</span></label>';
-
-    return '<div class="overview mb-5">'
-      + '<div class="ov-row">'
-        + '<div class="ov-figures">' + bits.join('<span class="ov-sep" aria-hidden="true">·</span>') + '</div>'
-        + toggle
-      + '</div>' + cal + '</div>';
-  }
-
   // ── Om ─────────────────────────────────────────────────────────────────
   // The source writes this in English and we print it in English rather than
   // machine-translating four and a half thousand company descriptions into
@@ -845,6 +811,14 @@
         'Kursen gange antallet af aktier — hvad hele selskabet koster på børsen.'],
       ['Price-to-Earnings (P/E)', mult(K.peOf(r.price, k && k.eps_ttm)),
         'Kursen delt med indtjeningen pr. aktie de seneste fire kvartaler. Hvor mange års indtjening du betaler for én aktie.'],
+      // De tre stod i bjælken øverst på siden, indtil den blev taget væk. De
+      // hører til her, hvor resten af nøgletallene er.
+      ['Forward P/E', mult(K.peOf(r.price, k && k.eps_fwd)),
+        'Samme regnestykke som P/E, men med analytikernes forventede indtjening for det kommende år. Lavere end P/E betyder at indtjeningen ventes at vokse.'],
+      ['Omsætningsvækst', k && k.revenue_growth == null ? null : pct1(k && k.revenue_growth),
+        'Væksten i omsætning i forhold til samme kvartal året før.'],
+      ['FCF-margin', k && k.fcf_margin == null ? null : (k.fcf_margin * 100).toFixed(1).replace('.', ',') + '%',
+        'Frit cash flow som andel af omsætningen — hvor stor en del af hver krone i salg der bliver til kontanter selskabet frit kan bruge.'],
       ['Price-to-book (P/B)', mult(k && k.pb),
         'Kursen delt med selskabets bogførte egenkapital pr. aktie.'],
       ['Price-to-Sales (P/S)', mult(ps),
@@ -874,7 +848,7 @@
     // The advanced view opens the whole set: it exists for the reader who
     // wants every figure, and hiding them behind a second click there would be
     // one gate too many.
-    const openAll = state.adv;
+    const openAll = opt('nogletal');
     const extra = more.map(cell).filter(Boolean);
 
     return '<div class="card rounded-md p-5 mb-5">'
@@ -1292,7 +1266,7 @@
 
   function performanceBlock(r) {
     if (!full || !full.dates.length) return '';
-    const bench = state.adv ? benchFor(r) : null;
+    const bench = opt('marked') ? benchFor(r) : null;
     // The daily file covers two years; anything longer is read off the monthly
     // series, which reaches back to the listing.
     const monthly = full.monthly && full.monthly.dates.length ? full.monthly : null;
@@ -1535,8 +1509,9 @@
       + 'Vil du se selskabet målt mod sit indeks, hvad 10.000 kr. ville være blevet til, '
       + 'fire års regnskaber, omsætning pr. kvartal, analytikernes seneste ændringer, '
       + 'de største aktionærer, insiderhandel, beta og shortet andel? '
-      + 'Sæt flueben i <strong style="color:var(--text-primary)">Avanceret visning</strong> '
-      + 'øverst på siden — valget huskes.</div>';
+      + 'Slå <strong style="color:var(--text-primary)">Avanceret visning</strong> til under '
+      + 'tandhjulet oppe i højre hjørne. Der kan du også vælge præcis hvilke af afsnittene '
+      + 'du vil have med. Valget huskes og gælder også fondssiderne.</div>';
   }
 
   function factsBlock(r) {
@@ -1731,7 +1706,7 @@
   // U, S og R er bare bogstaver, indtil der står hvad de betyder. Linjen
   // nævner kun de slags der faktisk er mærker for i det viste vindue.
   function eventLegend(s) {
-    if (!state.adv || !s.dates.length) return '';
+    if (!opt('haendelser') || !s.dates.length) return '';
     const first = s.dates[0], last = s.dates[s.dates.length - 1];
     const kinds = new Set(companyEvents()
       .filter((e) => e.date >= first && e.date <= last).map((e) => e.kind));
@@ -1852,7 +1827,7 @@
     // Appens egne syv vinduer. "6 mdr." og "Alt" hører til den avancerede
     // visning, hvor hele perioderækken alligevel er fremme.
     const SIMPLE_RANGES = ['1d', '1u', '1m', '3m', 'ytd', '1y', '3y', 'all'];
-    const buttons = PRESETS.filter((p) => state.adv || SIMPLE_RANGES.includes(p.key)).map((p) =>
+    const buttons = PRESETS.filter((p) => opt('graf') || SIMPLE_RANGES.includes(p.key)).map((p) =>
       '<button class="range-btn" data-range="' + p.key + '" aria-pressed="' + (p.key === state.range) + '">'
       + p.label + '</button>').join('');
 
@@ -1860,8 +1835,8 @@
       + '<div class="flex items-center justify-between gap-3 flex-wrap mb-3">'
         + '<h2 class="text-sm font-bold">Kursudvikling</h2>'
         + '<div class="flex items-center gap-1.5 flex-wrap" style="display:flex;flex-wrap:wrap;gap:6px;align-items:center">' + buttons
-          + (state.adv ? '<span class="mx-1 faint text-xs" aria-hidden="true">|</span>' : '')
-          + (!state.adv ? '' : '<label class="text-xs faint hint" tabindex="0" data-hint-title="Egen periode"'
+          + (opt('graf') ? '<span class="mx-1 faint text-xs" aria-hidden="true">|</span>' : '')
+          + (!opt('graf') ? '' : '<label class="text-xs faint hint" tabindex="0" data-hint-title="Egen periode"'
           + ' data-hint="Vælg selv fra- og til-dato. Grafen viser kun handelsdage, så weekender og helligdage springes over.">Fra</label>'
           + '<input type="date" id="from" class="date-input num">'
           + '<label class="text-xs faint" for="to">Til</label>'
@@ -1869,10 +1844,10 @@
           + '<button id="clearRange" class="range-btn">Nulstil</button>')
         + '</div>'
       + '</div>'
-      + (BENCH && state.adv ? '<div class="flex items-center gap-2 flex-wrap mb-3 text-xs" '
+      + (BENCH && opt('marked') ? '<div class="flex items-center gap-2 flex-wrap mb-3 text-xs" '
           + 'style="display:flex;flex-wrap:wrap;gap:8px;align-items:center">'
           + '<span class="faint font-bold">Sammenlign med</span>'
-          + Object.keys(BENCH).map((code) => '<label class="cmp">'
+          + CMP_BENCH.filter((code) => BENCH[code]).map((code) => '<label class="cmp">'
               + '<input type="checkbox" data-bench="' + code + '"' + (state.compare.includes(code) ? ' checked' : '') + '>'
               + '<span>' + K.esc(BENCH[code].label) + '</span></label>').join('')
           + '<span class="faint" id="cmpNote"' + (state.compare.length ? '' : ' hidden')
@@ -1963,34 +1938,58 @@
       + '. Vi rådgiver dig ikke her — det, der er sket før, siger ikke hvad der sker næste gang, '
       + 'og du kan risikere at få mindre tilbage, end du satte ind. Er du i tvivl, så ring til os.</p>';
 
-    // The simple page answers "how is it going": the price, the shape of the
-    // move, how it compares to a few windows, and what an investment would have
-    // become. Everything that values the company waits behind the switch.
-    // The standard view is the app's own company page, block for block and in
-    // its order: price and chart, what the company is, the figures, how it has
-    // met expectations, what it pays out, what the analysts say, and what else
-    // is like it. Nothing on it values the company on our behalf.
-    const appPage = keyFiguresBlock(r)
-      + surpriseBlock(r) + dividendBlock(r) + eventsBlock(r)
-      + analystBlock(r) + targetBlock(r)
-      + peersBlock(r);
+    // Rækkefølgen står som én liste, fordi den er en redaktionel beslutning og
+    // ikke en teknisk. Den følger de spørgsmål en læser stiller i den orden de
+    // melder sig: hvad koster den, hvad er tallene, hvordan er det gået, hvad
+    // får jeg udbetalt, tjener de penge, hvad siger andre, hvem ejer den — og
+    // til sidst vejen videre til noget der ligner.
+    //
+    // vis: undlades, når afsnittet altid skal med. Ellers navnet på det valg i
+    // tandhjulet der styrer det, eller true for "hele det avancerede lag".
+    const SECTIONS = [
+      { html: () => keyFiguresBlock(r) },
 
-    // Everything this project can do that the app does not: the company
-    // measured against its index, what an investment would have become, the
-    // calendar, the falls, ownership, and the figures computed from the price
-    // history itself.
-    const ours = performanceBlock(r) + investedBlock(r)
-      + '<div class="grid md:grid-cols-2 gap-5 items-start mb-5 mt-5">' + calendarBlock(r) + right + '</div>'
-      + drawdownBlock(r)
-      + statementsBlock(r)
-      + quarterlyBlock(r)
-      + growthBlock(r)
-      + ratingsBlock(r)
-      + riskBlock(r)
-      + holdersBlock(r)
-      + insiderNetBlock(r)
-      + ownershipBlock(r)
-      + factsBlock(r);
+      // Hvordan er det gået — og hvad det ville have betydet i kroner. De tre
+      // hører sammen: afkastet, beløbet og bagsiden af det.
+      { vis: true,          html: () => performanceBlock(r) },
+      { vis: 'investeret',  html: () => investedBlock(r) },
+      { vis: true,          html: () => drawdownBlock(r) },
+
+      // Hvad selskabet betaler ud, og om det tjener det ind.
+      { html: () => dividendBlock(r) },
+      { html: () => surpriseBlock(r) },
+
+      // Regnskabet bag tallene.
+      { vis: 'regnskab',    html: () => statementsBlock(r) },
+      { vis: 'regnskab',    html: () => quarterlyBlock(r) },
+      { vis: 'regnskab',    html: () => growthBlock(r) },
+
+      // Alt hvad analytikerne siger, samlet ét sted. De tre stod før spredt
+      // over to forskellige dele af siden med ti afsnit imellem.
+      { html: () => analystBlock(r) },
+      { html: () => targetBlock(r) },
+      { vis: 'analytikere', html: () => ratingsBlock(r) },
+
+      // Hvad der sker i kalenderen, og hvad der er sket.
+      { vis: true,          html: () => '<div class="grid md:grid-cols-2 gap-5 items-start mb-5 mt-5">'
+                                        + calendarBlock(r) + right + '</div>' },
+      { html: () => eventsBlock(r) },
+
+      // Hvem ejer den, og hvordan er den skruet sammen.
+      { vis: 'ejerskab',    html: () => holdersBlock(r) },
+      { vis: 'ejerskab',    html: () => insiderNetBlock(r) },
+      { vis: 'ejerskab',    html: () => ownershipBlock(r) },
+      { vis: true,          html: () => riskBlock(r) },
+
+      // Vejen videre. Står sidst, fordi den fører væk fra siden.
+      { html: () => peersBlock(r) },
+    ];
+
+    const oversigt = chartCard
+      + SECTIONS.filter((sec) => sec.vis == null
+            || (sec.vis === true ? state.adv : opt(sec.vis)))
+          .map((sec) => sec.html()).join('')
+      + (state.adv ? '' : simpleFooter(r));
 
     // Beskrivelsen og stamoplysningerne er noget man slår op, ikke noget man
     // læser hver gang. De får hver sin fane, så tallene ikke skal scrolles
@@ -2000,10 +1999,12 @@
     // ved klik, skulle grafens og "Vis mere"-knappernes bindinger sættes op
     // igen hver gang, og grafen kan ikke måle sig selv i et skjult element.
     const PANES = [
-      { key: 'oversigt', label: 'Oversigt',
-        html: chartCard + appPage + (state.adv ? ours : simpleFooter(r)) },
+      { key: 'oversigt', label: 'Oversigt', html: oversigt },
       { key: 'om', label: 'Om virksomheden', html: aboutBlock(r) },
       { key: 'info', label: 'Information', html: infoBlock(r) },
+      // "Vidste du at" er tal man kigger på én gang, ikke noget man scroller
+      // forbi hver gang. Den står yderst til højre, efter opslagsfanerne.
+      { key: 'fakta', label: 'Vidste du at…', html: opt('fakta') ? factsBlock(r) : '' },
     ].filter((p) => p.html);
 
     if (!PANES.some((p) => p.key === state.tab)) state.tab = PANES[0].key;
@@ -2015,7 +2016,7 @@
         + '</div>'
       : '';
 
-    $('#content').innerHTML = head + overviewStrip(r) + tabBar
+    $('#content').innerHTML = head + tabBar
       + PANES.map((p) => '<div class="page-pane" data-pane="' + p.key + '"'
           + (p.key === state.tab ? '' : ' hidden') + '>' + p.html + '</div>').join('')
       + nav + risk;
@@ -2059,20 +2060,6 @@
       });
     }
 
-    const advBox = $('#advToggle');
-    if (advBox) advBox.addEventListener('change', (e) => {
-      state.adv = e.target.checked;
-      setAdv(state.adv);
-      ensureStats();
-      // The simple view offers fewer windows, so a range only it could reach
-      // has to fall back rather than leave the chart on a hidden setting.
-      const SIMPLE = ['1d', '1u', '1m', '3m', 'ytd', '1y', '3y'];
-      if (!state.adv && !SIMPLE.includes(state.range)) { state.range = '1y'; state.from = state.to = ''; }
-      if (!state.adv) state.compare = [];
-      render.apply(null, lastArgs);
-      const box = $('#advToggle');
-      if (box) box.focus();
-    });
 
     document.querySelectorAll('[data-range]').forEach((b) =>
       b.addEventListener('click', () => {
@@ -2175,11 +2162,24 @@
       // visning. Filen hentes derfor først når nogen faktisk ser dem — enten
       // fordi visningen allerede er slået til, eller når den bliver det.
       ensureStats = () => {
-        if (statsAsked || !state.adv) return;
+        if (statsAsked || !opt('fakta')) return;
         statsAsked = true;
         K.attachStats([r]).then((n) => { if (n && lastArgs) render.apply(null, lastArgs); });
       };
       ensureStats();
+
+      // Tandhjulet ligger i headeren og ved intet om siden. Den tegner sig selv
+      // om, når et valg ændrer sig, og henter statistikken hvis fanen netop er
+      // blevet slået til. Et tidsrum kun det avancerede lag kan nå, må falde
+      // tilbage — ellers står grafen på en indstilling der ikke kan ses.
+      K.onSettings(() => {
+        const SIMPLE = ['1d', '1u', '1m', '3m', 'ytd', '1y', '3y'];
+        if (!opt('graf') && !SIMPLE.includes(state.range)) { state.range = '1y'; state.from = state.to = ''; }
+        if (!opt('marked')) state.compare = [];
+        ensureStats();
+        if (lastArgs) render.apply(null, lastArgs);
+      });
+
       $('#status').textContent = 'Kilde: Yahoo Finance · hentet ' + K.fmtAge(list.updatedAt)
         + ' · opdateres tre gange på hverdage';
 

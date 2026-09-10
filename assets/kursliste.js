@@ -411,8 +411,6 @@
 
     // Én række. Logo, sub-brand, sektioner og tilbage-link står på samme linje,
     // som på coopbank.dk, hvor navigationen også kun er ét bånd.
-    const back = activeKey === 'forside' ? ''
-      : '<a href="index.html" class="nav-back">← Til forsiden</a>';
 
     host.innerHTML =
       '<div class="nav-top"><div class="nav-inner">'
@@ -425,10 +423,142 @@
             + ' role="combobox" aria-expanded="false" aria-controls="navResults" aria-autocomplete="list">'
           + '<div id="navResults" class="nav-results" role="listbox" hidden></div>'
         + '</div>'
-        + back
+        + '<div class="nav-gear-wrap">' + settingsMarkup() + '</div>'
       + '</div></div>';
 
     wireSearch();
+    wireSettings();
+  }
+
+
+  // ── Indstillinger ──────────────────────────────────────────────────────
+  // Avanceret visning var en kontakt på hver enkelt side. Den er nu ét globalt
+  // valg i tandhjulet, så det samme gælder på tværs af aktier og fonde — og
+  // den er skilt ad, så man kan tage de dele man vil have og lade resten være.
+  //
+  // Kontakten "Avanceret visning" er stadig hovedafbryderen: er den slukket,
+  // ser siden ud som før. Er den tændt, bestemmer de enkelte flueben hvilke af
+  // de ekstra afsnit der faktisk tegnes.
+  const SET_STORE = 'kursliste.indstillinger.v1';
+  const LEGACY_ADV = 'kursliste.avanceret.v1';
+
+  const SETTINGS = [
+    { key: 'graf',        label: 'Flere perioder og egen dato',
+      hint: 'Åbner alle tidsrum i grafen og felterne til selv at vælge fra- og til-dato.' },
+    { key: 'marked',      label: 'Sammenlign med indeks',
+      hint: 'Lægger et indeks ind i grafen og en indekskolonne i "Udvikling mod markedet".' },
+    { key: 'haendelser',  label: 'Udbytter, split og regnskaber i grafen',
+      hint: 'Sætter mærker på kurslinjen der hvor selskabet gjorde noget.' },
+    { key: 'nogletal',    label: 'Alle nøgletal foldet ud',
+      hint: 'Viser hele nøgletalstabellen med det samme i stedet for bag "Vis mere".' },
+    { key: 'investeret',  label: 'Hvad en investering var blevet til',
+      hint: 'Regner 10.000 kr. om til hvad de ville være værd i dag over flere tidsrum.' },
+    { key: 'regnskab',    label: 'Regnskab, vækst og kvartaler',
+      hint: 'Omsætning og overskud år for år, kvartalsvis omsætning og forventet vækst.' },
+    { key: 'analytikere', label: 'Analytikere og anbefalinger',
+      hint: 'Kursmål, opjusteringer og nedjusteringer med navn og dato.' },
+    { key: 'ejerskab',    label: 'Ejerskab og insiderhandler',
+      hint: 'De største institutionelle ejere og selskabets egne handler.' },
+    { key: 'fakta',       label: 'Vidste du at…',
+      hint: 'Fanen med tal beregnet ud fra kurshistorikken — bedste dag, stimer, volatilitet.' },
+  ];
+
+  const DEFAULTS = () => {
+    const o = {};
+    for (const s of SETTINGS) o[s.key] = true;
+    return o;
+  };
+
+  let settings = null;
+  const listeners = [];
+
+  function loadSettings() {
+    if (settings) return settings;
+    let stored = null;
+    try { stored = JSON.parse(localStorage.getItem(SET_STORE) || 'null'); } catch (e) { /* privat vindue */ }
+    if (stored && typeof stored === 'object') {
+      settings = { adv: !!stored.adv, ...DEFAULTS() };
+      for (const s of SETTINGS) if (typeof stored[s.key] === 'boolean') settings[s.key] = stored[s.key];
+      return settings;
+    }
+    // Første besøg efter skiftet: den gamle nøgle bar kun til/fra, og den
+    // holdning skal ikke gå tabt, blot fordi lageret har skiftet navn.
+    let advWas = false;
+    try { advWas = localStorage.getItem(LEGACY_ADV) === '1'; } catch (e) { /* privat vindue */ }
+    settings = { adv: advWas, ...DEFAULTS() };
+    return settings;
+  }
+
+  function saveSettings() {
+    try { localStorage.setItem(SET_STORE, JSON.stringify(settings)); } catch (e) { /* privat vindue */ }
+  }
+
+  // Siderne spørger om ét afsnit ad gangen. Et afsnit er tændt, når
+  // hovedafbryderen er slået til OG afsnittets eget flueben står.
+  function opt(key) {
+    const s = loadSettings();
+    return !!s.adv && s[key] !== false;
+  }
+  function advanced() { return !!loadSettings().adv; }
+
+  function setSetting(key, on) {
+    loadSettings()[key] = !!on;
+    saveSettings();
+    for (const fn of listeners) { try { fn(settings); } catch (e) { /* en lytter må ikke vælte de andre */ } }
+  }
+  function onSettings(fn) { listeners.push(fn); }
+
+  // ── Tandhjulet ─────────────────────────────────────────────────────────
+  function settingsMarkup() {
+    const s = loadSettings();
+    const row = (key, label, hint, cls) =>
+      '<label class="set-row' + (cls ? ' ' + cls : '') + '">'
+      + '<input type="checkbox" data-set="' + key + '"' + (s[key] ? ' checked' : '') + '>'
+      + '<span class="set-text"><span class="set-label">' + esc(label) + '</span>'
+      + '<span class="set-hint">' + esc(hint) + '</span></span></label>';
+
+    return '<button type="button" class="nav-gear" id="navGear" aria-expanded="false"'
+      + ' aria-controls="navSettings" aria-label="Indstillinger" title="Indstillinger">'
+      + '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"'
+      + ' stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'
+      + '<circle cx="12" cy="12" r="3"/>'
+      + '<path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>'
+      + '</svg></button>'
+      + '<div class="nav-settings" id="navSettings" hidden>'
+        + '<h2 class="set-title">Hvad vil du se?</h2>'
+        + row('adv', 'Avanceret visning',
+            'Hovedafbryderen. Er den slukket, viser siderne kun kursen og det nærmeste. Tænd den, og vælg herunder hvad du vil have med.', 'set-master')
+        + '<div class="set-list" id="setList"' + (s.adv ? '' : ' data-off="1"') + '>'
+          + SETTINGS.map((o) => row(o.key, o.label, o.hint)).join('')
+        + '</div>'
+      + '</div>';
+  }
+
+  function wireSettings() {
+    const gear = document.getElementById('navGear');
+    const panel = document.getElementById('navSettings');
+    if (!gear || !panel) return;
+
+    const close = () => { panel.hidden = true; gear.setAttribute('aria-expanded', 'false'); };
+    gear.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const opening = panel.hidden;
+      panel.hidden = !opening;
+      gear.setAttribute('aria-expanded', String(opening));
+    });
+    // Klik ved siden af lukker, men et klik inde i panelet må ikke — man skal
+    // kunne sætte flere flueben uden at åbne tandhjulet forfra hver gang.
+    panel.addEventListener('click', (e) => e.stopPropagation());
+    document.addEventListener('click', close);
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
+
+    panel.querySelectorAll('[data-set]').forEach((box) => {
+      box.addEventListener('change', () => {
+        setSetting(box.dataset.set, box.checked);
+        const list = document.getElementById('setList');
+        if (list) { if (loadSettings().adv) list.removeAttribute('data-off'); else list.setAttribute('data-off', '1'); }
+      });
+    });
   }
 
   // ── Søgning i headeren ─────────────────────────────────────────────────
@@ -677,5 +807,8 @@
     // beholdninger vi selv har en side om. Det er hentet i forvejen, hvis
     // nogen har søgt, og ellers henter den det én gang.
     loadSearchIndex,
+    // Indstillingerne. opt() svarer på ét afsnit ad gangen; advanced() er
+    // hovedafbryderen alene, til de steder hvor hele det ekstra lag tælles.
+    opt, advanced, onSettings, SETTINGS,
   };
 })(window);

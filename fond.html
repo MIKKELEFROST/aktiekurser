@@ -97,12 +97,16 @@
   // for at måle fonden mod et indeks. Nøglen er den samme som aktiesidens:
   // slår man den avancerede visning til ét sted, gælder den begge steder —
   // det er én holdning til, hvor meget man vil se, ikke to.
-  const ADV_STORE = 'kursliste.avanceret.v1';
-  const advOn = () => { try { return localStorage.getItem(ADV_STORE) === '1'; } catch (e) { return false; } };
-  const setAdv = (on) => { try { localStorage.setItem(ADV_STORE, on ? '1' : '0'); } catch (e) { /* privat vindue */ } };
+  // Samme tandhjul som aktiesiden. Valget er ét og deles på tværs.
+  // Kun de to brede indeks kan vælges til grafen — samme snit som aktiesiden.
+  const CMP_BENCH = ['NDX', 'SP500'];
+  const opt = (key) => K.opt(key);
+  const advOn = () => K.advanced();
 
-  const state = { range: '3m', from: '', to: '', compare: [], adv: advOn(), tab: 'oversigt',
+  const state = { range: '3m', from: '', to: '', compare: [], tab: 'oversigt',
                   row: null, hist: null, detail: null };
+  // Ét sted at spørge. Et felt ved siden af kunne stå og pege et andet sted hen.
+  Object.defineProperty(state, 'adv', { get: advOn });
 
   let ALL = [], UPDATED = null, BENCH = null;
   let live = null, pointerInChart = false;
@@ -355,7 +359,7 @@
   const splits = () => (state.hist && state.hist.events && state.hist.events.splits) || [];
 
   function fundEvents() {
-    if (!state.adv || !state.row) return [];
+    if (!opt('haendelser') || !state.row) return [];
     const cur = state.row.currency;
     const out = dividends().map((d) => ({
       date: d.date, kind: 'udbytte',
@@ -824,48 +828,9 @@
       + '</div></div>';
   }
 
-  // En linje med de tal en læser ellers skulle åbne fire sider for at finde.
-  // Det der mangler, udelades i stedet for at stå som en tankestreg, så linjen
-  // bliver kort for de fonde vi ved mindst om.
-  function overviewStrip(r) {
-    const d = state.detail;
-    const bits = [];
-    const add = (label, value, hint) => {
-      if (value == null) return;
-      bits.push('<span class="ov"><span class="ov-k hint" tabindex="0" data-hint-title="' + K.esc(label)
-        + '" data-hint="' + K.esc(hint) + '">' + K.esc(label) + '</span> <span class="ov-v num">'
-        + value + '</span></span>');
-    };
-
-    add('Omkostning', feePct(r.expense_ratio) == null ? null : feePct(r.expense_ratio) + ' om året',
-      'Hvad fonden trækker om året for at drive sig selv. Det tages af kursen løbende, så du får ikke en regning.');
-    add('Formue', r.net_assets == null ? null : K.fmtBig(r.net_assets) + ' ' + K.esc(r.currency),
-      'Hvor mange penge der er investeret i fonden i alt.');
-    if (d && state.adv) {
-      add('P/E i kurven', mult(d.equity && d.equity.pe),
-        'Vægtet gennemsnit af selskabernes kurs delt med deres indtjening. Et højt tal betyder, at kurven '
-        + 'består af selskaber, markedet forventer meget vækst af.');
-      add('P/B i kurven', mult(d.equity && d.equity.pb),
-        'Vægtet gennemsnit af kurs delt med bogført egenkapital på tværs af fondens selskaber.');
-      add('Omsætningshastighed', d.turnover == null ? null : feePct(d.turnover) + ' om året',
-        'Hvor stor en del af beholdningen fonden udskifter på et år. En indeksfond ligger lavt; '
-        + 'en aktivt forvaltet fond højt.');
-    }
-
-    const toggle = '<label class="adv-toggle">'
-      + '<input type="checkbox" id="advToggle"' + (state.adv ? ' checked' : '') + '>'
-      + '<span>Avanceret visning</span></label>';
-
-    return '<div class="overview mb-5">'
-      + '<div class="ov-row">'
-        + '<div class="ov-figures">' + bits.join('<span class="ov-sep" aria-hidden="true">·</span>') + '</div>'
-        + toggle
-      + '</div></div>';
-  }
-
   // ── Kurskortet ─────────────────────────────────────────────────────────
   function chartCard(r) {
-    const buttons = PRESETS.filter((p) => state.adv || SIMPLE_RANGES.includes(p.key)).map((p) =>
+    const buttons = PRESETS.filter((p) => opt('graf') || SIMPLE_RANGES.includes(p.key)).map((p) =>
       '<button class="range-btn" data-range="' + p.key + '" aria-pressed="' + (p.key === state.range) + '">'
       + K.esc(p.label) + '</button>').join('');
 
@@ -881,7 +846,7 @@
         + '<h2 class="text-sm font-bold">Kursudvikling</h2>'
         + '<div class="flex items-center gap-1.5 flex-wrap" style="display:flex;flex-wrap:wrap;gap:6px;align-items:center">'
           + buttons
-          + (state.adv
+          + (opt('graf')
               ? '<span class="mx-1 faint text-xs" aria-hidden="true">|</span>'
                 + '<label class="text-xs faint hint" tabindex="0" data-hint-title="Egen periode"'
                 + ' data-hint="Vælg selv fra- og til-dato. Grafen viser kun handelsdage, så weekender og helligdage springes over.">Fra</label>'
@@ -892,11 +857,11 @@
               : '')
         + '</div>'
       + '</div>'
-      + (BENCH && state.adv
+      + (BENCH && opt('marked')
           ? '<div class="flex items-center gap-2 flex-wrap mb-3 text-xs" '
             + 'style="display:flex;flex-wrap:wrap;gap:8px;align-items:center">'
             + '<span class="faint font-bold">Sammenlign med</span>'
-            + Object.keys(BENCH).map((code) => '<label class="cmp">'
+            + CMP_BENCH.filter((code) => BENCH[code]).map((code) => '<label class="cmp">'
                 + '<input type="checkbox" data-bench="' + code + '"'
                 + (state.compare.includes(code) ? ' checked' : '') + '>'
                 + '<span>' + K.esc(BENCH[code].label) + '</span></label>').join('')
@@ -977,7 +942,7 @@
   // kun de slags der faktisk er mærker for i det viste vindue — og siger det
   // ligeud, når en slags er for tæt til at få badges og står som streger.
   function eventLegend(s) {
-    if (!state.adv || !s.dates.length) return '';
+    if (!opt('haendelser') || !s.dates.length) return '';
     const first = s.dates[0], last = s.dates[s.dates.length - 1];
     const inWindow = fundEvents().filter((e) => e.date >= first && e.date <= last);
     if (!inWindow.length) return '';
@@ -1056,7 +1021,7 @@
       + '" data-hint="' + K.esc(hint) + '">' + K.esc(label) + '</span>'
       + '<span class="hint-i" aria-hidden="true">i</span></div></div>';
 
-    const openAll = state.adv;
+    const openAll = opt('nogletal');
     const extra = more.map(cell).filter(Boolean);
 
     return '<div class="card rounded-md p-5 mb-5">'
@@ -1421,7 +1386,7 @@
 
   function performanceBlock(r) {
     if (!state.hist || !state.hist.dates.length) return '';
-    const bench = state.adv ? benchFor(r) : null;
+    const bench = opt('marked') ? benchFor(r) : null;
     const monthly = longSeries();
     const day = dailySeries();
     const rows = windows().filter((w) => state.adv || SIMPLE_WINDOWS.includes(w.label)).map((w) => {
@@ -1836,20 +1801,33 @@
     const r = state.row;
     if (!r) return;
 
+    // Samme orden som aktiesiden, så de to sider læses ens: hvad koster den,
+    // hvad er tallene, hvor har den ligget, hvordan er det gået, hvad ville det
+    // have givet, hvor slemt har det været, år for år, hvordan er den skruet
+    // sammen — og til sidst vejen videre.
+    const SECTIONS = [
+      { html: () => keyFiguresBlock(r) },
+      { html: () => rangeBlock(r) },
+      { html: () => performanceBlock(r) },
+      { vis: 'investeret',  html: () => investedBlock(r) },
+      { vis: true,          html: () => drawdownBlock(r) },
+      { html: () => annualBlock(r) },
+      { vis: true,          html: () => riskBlock(r) },
+      { html: () => peersCard(r) },
+    ];
+
     const oversigt = chartCard(r)
-      + keyFiguresBlock(r)
-      + rangeBlock(r)
-      + annualBlock(r)
-      + (state.adv
-          ? performanceBlock(r) + investedBlock(r) + drawdownBlock(r) + riskBlock(r) + factsBlock(r)
-          : performanceBlock(r) + simpleFooter())
-      + peersCard(r);
+      + SECTIONS.filter((sec) => sec.vis == null
+            || (sec.vis === true ? state.adv : opt(sec.vis)))
+          .map((sec) => sec.html()).join('')
+      + (state.adv ? '' : simpleFooter());
 
     const PANES = [
       { key: 'oversigt', label: 'Oversigt', html: oversigt },
       { key: 'beholdninger', label: 'Beholdninger', html: holdingsBlock(r) },
       { key: 'om', label: 'Om fonden', html: aboutCard(r) },
       { key: 'info', label: 'Information', html: infoCard(r) },
+      { key: 'fakta', label: 'Vidste du at…', html: opt('fakta') ? factsBlock(r) : '' },
     ].filter((p) => p.html);
 
     if (!PANES.some((p) => p.key === state.tab)) state.tab = PANES[0].key;
@@ -1866,7 +1844,7 @@
       + '. Vi rådgiver dig ikke her — det, der er sket før, siger ikke hvad der sker næste gang, '
       + 'og du kan risikere at få mindre tilbage, end du satte ind. Er du i tvivl, så ring til os.</p>';
 
-    $('#page').innerHTML = header(r) + overviewStrip(r) + tabBar
+    $('#page').innerHTML = header(r) + tabBar
       + PANES.map((p) => '<div class="page-pane" data-pane="' + p.key + '"'
           + (p.key === state.tab ? '' : ' hidden') + '>' + p.html + '</div>').join('')
       + neighbourNav(r) + risk;
@@ -1916,19 +1894,6 @@
         + ' <span aria-hidden="true">' + (opening ? '⌃' : '⌄') + '</span>';
     });
 
-    const advBox = $('#advToggle');
-    if (advBox) advBox.addEventListener('change', (e) => {
-      state.adv = e.target.checked;
-      setAdv(state.adv);
-      // Den enkle visning har færre vinduer, så en periode kun den avancerede
-      // kunne nå, må falde tilbage frem for at lade grafen stå på en
-      // indstilling der ikke er en knap for.
-      if (!state.adv && !SIMPLE_RANGES.includes(state.range)) { state.range = '1y'; state.from = state.to = ''; }
-      if (!state.adv) state.compare = [];
-      render();
-      const box = $('#advToggle');
-      if (box) box.focus();
-    });
 
     document.querySelectorAll('[data-range]').forEach((b) =>
       b.addEventListener('click', () => {
@@ -2043,6 +2008,16 @@
       BENCH = bench && bench.indices ? bench.indices : null;
 
       render();
+
+      // Tandhjulet ligger i headeren og ved intet om siden. Et tidsrum kun det
+      // avancerede lag kan nå, må falde tilbage — ellers står grafen på en
+      // indstilling der ikke er en knap for.
+      K.onSettings(() => {
+        if (!opt('graf') && !SIMPLE_RANGES.includes(state.range)) { state.range = '1y'; state.from = state.to = ''; }
+        if (!opt('marked')) state.compare = [];
+        render();
+      });
+
       $('#status').textContent = 'Kilde: Yahoo Finance · hentet ' + K.fmtAge(updatedAt)
         + ' · kursen opdateres hvert minut, mens børsen handler';
 
