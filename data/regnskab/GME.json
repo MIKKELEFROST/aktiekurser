@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-09T19:29:16.945Z",
+  "updated_at": "2026-09-10T19:21:45.303Z",
   "source": "Yahoo Finance",
   "symbol": "GME",
   "summary": "GameStop Corp., a specialty retailer, provides games, collectibles, and entertainment products through its stores and e-commerce platforms in United States, Australia and Europe. The company sells new and pre-owned gaming platforms; accessories, such as controllers, gaming headsets, and other peripheral devices; new and pre-owned gaming software; and in-game digital currency, digital downloadable content, and full-game downloads. It also sells collectibles comprising apparel, toys, trading cards, gadgets, and other retail products for pop culture and technology enthusiasts. The company operates stores and e-commerce sites under the GameStop, EB Games, and Micromania brands; and pop culture themed stores that sell collectibles, apparel, gadgets, electronics, toys, and other retail products under the Zing Pop Culture brand. The company was formerly known as GSC Holdings Corp. GameStop Corp. was founded in 1996 and is based in Grapevine, Texas.",
@@ -56,7 +56,12 @@
     {
       "q": "3Q2025",
       "revenue": 821000000,
-      "earnings": 77100000
+      "earnings": 0
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 790200000,
+      "earnings": 0
     }
   ],
   "growth": {
@@ -211,18 +216,18 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 3,
+    "buys": 4,
     "sells": 5,
-    "bought": 97392,
+    "bought": 107647,
     "sold": 36456,
     "net_pct": 0.2
   },
   "extras": {
     "beta": 1.714,
-    "enterprise_value": 4446777856,
-    "ev_ebitda": 10.785,
-    "ev_revenue": 1.191,
-    "float_shares": 408811578,
+    "enterprise_value": 8199532032,
+    "ev_ebitda": 16.23,
+    "ev_revenue": 2.309,
+    "float_shares": 408910656,
     "short_shares": 54036583,
     "short_pct_float": 13.2,
     "short_ratio": 8.95,
@@ -232,7 +237,7 @@
   "ex_dividend": "2019-03-14",
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 487,
+  "inst_count": 486,
   "eps_history": [
     {
       "quarter": "2025-10-31",
@@ -254,6 +259,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "GRUBE JAMES",
+      "role": "Director",
+      "kind": "buy",
+      "text": "Purchase at price 19.12 per share.",
+      "value": 196076,
+      "shares": 10255,
+      "date": "2026-09-09"
+    },
     {
       "name": "CHENG LAWRENCE",
       "role": "Director",
@@ -291,21 +305,21 @@
       "date": "2026-04-13"
     },
     {
-      "name": "MOORE DANIEL WILLIAM",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 22.94 per share.",
-      "value": 165430,
-      "shares": 7210,
-      "date": "2026-04-01"
-    },
-    {
       "name": "ROBINSON MARK HAYMOND",
       "role": "General Counsel",
       "kind": "sell",
       "text": "Sale at price 22.94 per share.",
       "value": 165407,
       "shares": 7209,
+      "date": "2026-04-01"
+    },
+    {
+      "name": "MOORE DANIEL WILLIAM",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 22.94 per share.",
+      "value": 165430,
+      "shares": 7210,
       "date": "2026-04-01"
     },
     {
@@ -334,15 +348,6 @@
       "value": 114368,
       "shares": 5000,
       "date": "2026-01-23"
-    },
-    {
-      "name": "COHEN RYAN",
-      "role": "Chief Executive Officer",
-      "kind": "buy",
-      "text": "Purchase at price 21.12 - 21.60 per share.",
-      "value": 21359200,
-      "shares": 1000000,
-      "date": "2026-01-21"
     }
   ],
   "dividends": [

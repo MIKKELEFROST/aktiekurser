@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-09T19:29:16.461Z",
+  "updated_at": "2026-09-10T19:21:44.819Z",
   "source": "Yahoo Finance",
   "symbol": "CHYM",
   "summary": "Chime Financial, Inc., a financial technology company, provides digital consumer banking and payment solutions in the United States and internationally. The company offers various products, such as spending, including checking accounts, debit cards, ATM and cash deposit networks, paycheck, outbound instant transfer; Chime Plus, a fee-free mobile banking experience; liquidity products, such as SpotMe, MyPay, and Instant Loans; building credit solutions comprising chime card and credit builder credit card, and FICO score tracking; savings and perks products; community focused products, including Pay Anyone and SpotMe Boosts; Enterprise offers Chime Workplace, a suite of financial services and employee benefits tools to their employees; and other support and operations. The company was formerly known as 1Debit Inc. and changed its name to Chime Financial, Inc. in June 2019. Chime Financial, Inc. was incorporated in 2012 and is headquartered in San Francisco, California.",
@@ -63,6 +63,20 @@
   "ratings": [
     {
       "date": "2026-09-09",
+      "firm": "Loop Capital",
+      "from": null,
+      "to": "Buy",
+      "action": "init"
+    },
+    {
+      "date": "2026-09-09",
+      "firm": "Scotiabank",
+      "from": "Sector Outperform",
+      "to": "Sector Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-09-09",
       "firm": "UBS",
       "from": "Neutral",
       "to": "Neutral",
@@ -116,20 +130,6 @@
       "from": null,
       "to": "Sector Outperform",
       "action": "init"
-    },
-    {
-      "date": "2026-08-25",
-      "firm": "Wolfe Research",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-25",
-      "firm": "Wells Fargo",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
     }
   ],
   "holders": [
@@ -207,16 +207,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 22,
-    "sells": 16,
+    "sells": 17,
     "bought": 3833691,
-    "sold": 14082790,
-    "net_pct": -26.2
+    "sold": 14102295,
+    "net_pct": -26.3
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 11252143104,
-    "ev_ebitda": 29.311,
-    "ev_revenue": 4.58,
+    "enterprise_value": 12100173824,
+    "ev_ebitda": 31.52,
+    "ev_revenue": 4.925,
     "float_shares": 232076459,
     "short_shares": 18952244,
     "short_pct_float": 6.54,
@@ -227,7 +227,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 348,
+  "inst_count": 347,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -255,6 +255,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "ASMEROM AMINE",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 32.54 - 33.36 per share.",
+      "value": 642529,
+      "shares": 19505,
+      "date": "2026-09-08"
+    },
     {
       "name": "BRITT CHRISTOPHER R",
       "role": "Chief Executive Officer",
@@ -335,15 +344,6 @@
       "value": 28140429,
       "shares": 856725,
       "date": "2026-08-21"
-    },
-    {
-      "name": "DST GLOBAL ADVISORS, LTD.",
-      "role": "Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "sell",
-      "text": "Sale at price 32.21 - 33.11 per share.",
-      "value": 156926902,
-      "shares": 4809969,
-      "date": "2026-08-19"
     }
   ],
   "dividends": [],

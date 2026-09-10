@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-09T19:29:16.601Z",
+  "updated_at": "2026-09-10T19:21:44.958Z",
   "source": "Yahoo Finance",
   "symbol": "DASH",
   "summary": "DoorDash, Inc., together with its subsidiaries, operates a commerce platform that connects merchants, consumers, and dashers in the United States and internationally. The company operates DoorDash Marketplace, Wolt Marketplace, and Deliveroo Marketplace, which provide various services, such as customer acquisition, demand generation, order fulfillment, merchandising, payment processing, and customer support. It also offers consumer membership programs, DashPass, Wolt+, and Deliveroo Plus; advertising as a value-added service through its marketplaces; and white-label delivery fulfillment services, as well as services that help merchants establish online ordering, build branded mobile apps, manage reservations and in-store dining, manage consumer relationships, enable tableside order and pay, and improve customer support. The company was formerly known as Palo Alto Delivery Inc. and changed its name to DoorDash, Inc. in 2015. DoorDash, Inc. was founded in 2013 and is headquartered in San Francisco, California.",
@@ -79,6 +79,13 @@
   },
   "ratings": [
     {
+      "date": "2026-09-09",
+      "firm": "Scotiabank",
+      "from": null,
+      "to": "Sector Outperform",
+      "action": "init"
+    },
+    {
       "date": "2026-09-08",
       "firm": "StoneX",
       "from": "Buy",
@@ -140,13 +147,6 @@
       "from": "Neutral",
       "to": "Neutral",
       "action": "main"
-    },
-    {
-      "date": "2026-08-06",
-      "firm": "Piper Sandler",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "reit"
     }
   ],
   "holders": [
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 28,
-    "sells": 44,
+    "sells": 45,
     "bought": 595192,
-    "sold": 657847,
+    "sold": 658260,
     "net_pct": -2.4
   },
   "extras": {
     "beta": 1.788,
-    "enterprise_value": 84818780160,
-    "ev_ebitda": 59.066,
-    "ev_revenue": 5.338,
+    "enterprise_value": 83434397696,
+    "ev_ebitda": 58.102,
+    "ev_revenue": 5.25,
     "float_shares": 382197098,
     "short_shares": 16166524,
     "short_pct_float": 3.97,
@@ -273,6 +273,15 @@
   ],
   "insiders": [
     {
+      "name": "LEE GORDON S",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 221.50 per share.",
+      "value": 91480,
+      "shares": 413,
+      "date": "2026-09-04"
+    },
+    {
       "name": "TANG WEIRUI STANLEY",
       "role": "Director",
       "kind": "sell",
@@ -280,24 +289,6 @@
       "value": 6968111,
       "shares": 30835,
       "date": "2026-09-02"
-    },
-    {
-      "name": "XU TONY",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 7.16 per share.",
-      "value": 119336,
-      "shares": 16667,
-      "date": "2026-09-01"
-    },
-    {
-      "name": "INUKONDA RAVI KIRAN REDDY",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 7.66 per share.",
-      "value": 7790,
-      "shares": 1017,
-      "date": "2026-09-01"
     },
     {
       "name": "INUKONDA RAVI KIRAN REDDY",
@@ -331,18 +322,18 @@
       "role": "Chief Executive Officer",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 7.16 per share.",
-      "value": 238671,
-      "shares": 33334,
-      "date": "2026-08-25"
+      "value": 119336,
+      "shares": 16667,
+      "date": "2026-09-01"
     },
     {
-      "name": "ADARKAR PRABIR RAJENDRA",
-      "role": "President",
+      "name": "INUKONDA RAVI KIRAN REDDY",
+      "role": "Chief Financial Officer",
       "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 7.16 per share.",
-      "value": 311818,
-      "shares": 43550,
-      "date": "2026-08-25"
+      "text": "Conversion of Exercise of derivative security at price 7.66 per share.",
+      "value": 7790,
+      "shares": 1017,
+      "date": "2026-09-01"
     },
     {
       "name": "XU TONY",
@@ -360,6 +351,15 @@
       "text": "Sale at price 227.75 - 234.24 per share.",
       "value": 12813899,
       "shares": 55289,
+      "date": "2026-08-25"
+    },
+    {
+      "name": "XU TONY",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 7.16 per share.",
+      "value": 238671,
+      "shares": 33334,
       "date": "2026-08-25"
     }
   ],

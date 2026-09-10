@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-09T19:29:17.204Z",
+  "updated_at": "2026-09-10T19:21:45.526Z",
   "source": "Yahoo Finance",
   "symbol": "JILL",
   "summary": "J.Jill, Inc. operates as an omnichannel retailer for women's apparel in the United States. It offers apparel, footwear, and accessories, such as jewelry, bags, belts, shoes, and scarves. The company sells its products under the J.Jill and three sub-brands, including Pure Jill, Wearever, and Fit brands through ecommerce platform and catalog, as well as its retail stores. The company was founded in 1959 and is headquartered in Quincy, Massachusetts.",
@@ -7,8 +7,8 @@
   "website": "https://www.jjill.com",
   "employees": 1039,
   "ceo": "Ms. Mary Ellen Coyne",
-  "next_earnings": "2026-09-09",
-  "earnings_estimated": false,
+  "next_earnings": "2026-12-09",
+  "earnings_estimated": true,
   "earnings_call": null,
   "eps_estimate": 0.572,
   "analysts": {
@@ -64,6 +64,11 @@
       "q": "1Q2026",
       "revenue": 144427000,
       "earnings": 4688000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 154829000,
+      "earnings": 16774000
     }
   ],
   "growth": {
@@ -73,6 +78,27 @@
     "y1": 0.20709999
   },
   "ratings": [
+    {
+      "date": "2026-09-10",
+      "firm": "Telsey Advisory Group",
+      "from": "Market Perform",
+      "to": "Market Perform",
+      "action": "main"
+    },
+    {
+      "date": "2026-09-10",
+      "firm": "TD Cowen",
+      "from": "Hold",
+      "to": "Hold",
+      "action": "main"
+    },
+    {
+      "date": "2026-09-09",
+      "firm": "Jefferies",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-09-09",
       "firm": "BTIG",
@@ -117,27 +143,6 @@
     },
     {
       "date": "2026-04-01",
-      "firm": "Telsey Advisory Group",
-      "from": "Market Perform",
-      "to": "Market Perform",
-      "action": "main"
-    },
-    {
-      "date": "2026-03-31",
-      "firm": "Telsey Advisory Group",
-      "from": "Market Perform",
-      "to": "Market Perform",
-      "action": "main"
-    },
-    {
-      "date": "2026-03-31",
-      "firm": "BTIG",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-03-24",
       "firm": "Telsey Advisory Group",
       "from": "Market Perform",
       "to": "Market Perform",
@@ -219,17 +224,17 @@
   "insider_net": {
     "period": "6m",
     "buys": 12,
-    "sells": 3,
+    "sells": 4,
     "bought": 154133,
-    "sold": 15680,
-    "net_pct": 22.8
+    "sold": 20766,
+    "net_pct": 21.9
   },
   "extras": {
-    "beta": 0.861,
-    "enterprise_value": 478810080,
-    "ev_ebitda": 7.661,
-    "ev_revenue": 0.815,
-    "float_shares": 5569851,
+    "beta": null,
+    "enterprise_value": 465538240,
+    "ev_ebitda": 6.651,
+    "ev_revenue": 0.791,
+    "float_shares": 5535450,
     "short_shares": 757682,
     "short_pct_float": 10.9,
     "short_ratio": 10.62,
@@ -238,8 +243,8 @@
   },
   "ex_dividend": "2026-09-23",
   "dividend_date": null,
-  "payout_ratio": 0.2409,
-  "inst_count": 127,
+  "payout_ratio": 0.1889,
+  "inst_count": 126,
   "eps_history": [
     {
       "quarter": "2025-07-31",
@@ -269,6 +274,15 @@
   "insiders": [
     {
       "name": "WEBB MARK W.",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 20.15 per share.",
+      "value": 102483,
+      "shares": 5086,
+      "date": "2026-09-04"
+    },
+    {
+      "name": "WEBB MARK W.",
       "role": "Chief Operating Officer",
       "kind": "sell",
       "text": "Sale at price 20.12 - 20.33 per share.",
@@ -293,6 +307,15 @@
       "value": 134566,
       "shares": 6636,
       "date": "2026-08-20"
+    },
+    {
+      "name": "O'CONNOR COURTNEY",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 10543,
+      "date": "2026-04-06"
     },
     {
       "name": "CHUN COURTNEE A",
@@ -337,24 +360,6 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 8285,
-      "date": "2026-04-06"
-    },
-    {
-      "name": "RAHAMIM MICHAEL M.",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 8285,
-      "date": "2026-04-06"
-    },
-    {
-      "name": "WEBB MARK W.",
-      "role": "Chief Operating Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 24327,
       "date": "2026-04-06"
     }
   ],

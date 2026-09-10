@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-09T19:29:16.012Z",
+  "updated_at": "2026-09-10T19:21:44.361Z",
   "source": "Yahoo Finance",
   "symbol": "AFRM",
   "summary": "Affirm Holdings, Inc. operates payment network in the United States, Canada, and internationally. Its platform offers pay-over-time solutions at checkout for both consumers and merchants. The company's commerce platform, agreements with originating banks, and capital markets partners enables consumers to pay for a purchase over time. It has active merchants covering small businesses, large enterprises, direct-to-consumer brands, brick-and-mortar stores, and companies with an omni-channel presence. The company's merchants represent a range of industries, including electronics; equipment and auto; fashion and beauty; general merchandise; home and lifestyle services; sporting goods and outdoors; and travel and ticketing. Affirm Holdings, Inc. was founded in 2012 and is headquartered in San Francisco, California.",
@@ -57,7 +57,7 @@
     },
     {
       "q": "4Q2025",
-      "revenue": 1123020000,
+      "revenue": 1123019000,
       "earnings": 129586000
     },
     {
@@ -67,7 +67,7 @@
     },
     {
       "q": "2Q2026",
-      "revenue": 1165961000,
+      "revenue": 1165960000,
       "earnings": 1616613000
     }
   ],
@@ -78,6 +78,13 @@
     "y1": 0.24
   },
   "ratings": [
+    {
+      "date": "2026-09-09",
+      "firm": "Loop Capital",
+      "from": null,
+      "to": "Buy",
+      "action": "init"
+    },
     {
       "date": "2026-09-03",
       "firm": "Truist Securities",
@@ -139,13 +146,6 @@
       "firm": "Piper Sandler",
       "from": "Overweight",
       "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-28",
-      "firm": "Oppenheimer",
-      "from": "Outperform",
-      "to": "Outperform",
       "action": "main"
     }
   ],
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 30,
-    "sells": 7,
+    "sells": 8,
     "bought": 469991,
-    "sold": 290178,
-    "net_pct": 1.3
+    "sold": 315178,
+    "net_pct": 1.1
   },
   "extras": {
     "beta": 3.61,
-    "enterprise_value": 32642230272,
-    "ev_ebitda": 44.159,
-    "ev_revenue": 7.661,
+    "enterprise_value": 31316164608,
+    "ev_ebitda": 42.365,
+    "ev_revenue": 7.349,
     "float_shares": 283764528,
     "short_shares": 14461742,
     "short_pct_float": 4.92,
@@ -273,6 +273,15 @@
   ],
   "insiders": [
     {
+      "name": "JIYANE SIPHELELE N",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 72.41 per share.",
+      "value": 1810250,
+      "shares": 25000,
+      "date": "2026-09-04"
+    },
+    {
       "name": "ADKINS KATHERINE ELIZABETH",
       "role": "Officer",
       "kind": "other",
@@ -300,21 +309,21 @@
       "date": "2026-09-02"
     },
     {
-      "name": "O'HARE ROBERT WARREN",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 11987,
-      "date": "2026-09-01"
-    },
-    {
       "name": "LINFORD MICHAEL ALAN",
       "role": "President",
       "kind": "other",
       "text": null,
       "value": null,
       "shares": 11719,
+      "date": "2026-09-01"
+    },
+    {
+      "name": "MICHALEK LIBOR",
+      "role": "President",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 11364,
       "date": "2026-09-01"
     },
     {
@@ -327,12 +336,12 @@
       "date": "2026-09-01"
     },
     {
-      "name": "MICHALEK LIBOR",
-      "role": "President",
+      "name": "O'HARE ROBERT WARREN",
+      "role": "Chief Financial Officer",
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 11364,
+      "shares": 11987,
       "date": "2026-09-01"
     },
     {
@@ -352,15 +361,6 @@
       "value": 7130502,
       "shares": 79219,
       "date": "2026-08-28"
-    },
-    {
-      "name": "WATSON NOEL BERTRAM JR",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 77.86 per share.",
-      "value": 155720,
-      "shares": 2000,
-      "date": "2026-08-12"
     }
   ],
   "dividends": [],

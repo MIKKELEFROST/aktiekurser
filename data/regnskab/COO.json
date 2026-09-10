@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-09T19:29:16.518Z",
+  "updated_at": "2026-09-10T19:21:44.878Z",
   "source": "Yahoo Finance",
   "symbol": "COO",
   "summary": "The Cooper Companies, Inc., together with its subsidiaries, develops, manufactures, and markets contact lens wearers. The company operates in two segments, CooperVision and CooperSurgical. The CooperVision segment offers spherical, toric, and multifocal contact lenses that address vision challenges, such as astigmatism, presbyopia, and myopia. Its CooperSurgical segment focuses on family and women's health care, which provides fertility products and services, medical devices, and contraception, as well as cryostorage, such as cord blood and cord tissue storage. This segment offers Paragard, a hormone-free intrauterine device; and fertility consumables and equipment, donor gamete services, and genomic services, including genetic testing. The company sells its products to distributors, group purchasing organizations, eye care and health care professionals, including independent practices, corporate retailers, hospitals and clinics, and authorized resellers. The Cooper Companies, Inc. was founded in 1958 and is headquartered in San Ramon, California.",
@@ -23,8 +23,54 @@
   "target_high": 92,
   "target_low": 66,
   "target_analysts": 14,
-  "statements": null,
-  "quarterly": [],
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 3308400000,
+      "net": 385800000,
+      "margin": 11.7
+    },
+    {
+      "year": "2023",
+      "revenue": 3593200000,
+      "net": 294200000,
+      "margin": 8.2
+    },
+    {
+      "year": "2024",
+      "revenue": 3895400000,
+      "net": 392300000,
+      "margin": 10.1
+    },
+    {
+      "year": "2025",
+      "revenue": 4092400000,
+      "net": 374900000,
+      "margin": 9.2
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 1065200000,
+      "earnings": 84600000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 1024100000,
+      "earnings": 130800000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 1081500000,
+      "earnings": -77900000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 1066200000,
+      "earnings": 432800000
+    }
+  ],
   "growth": {
     "q0": 0.0182,
     "q1": 0.0388,
@@ -33,73 +79,73 @@
   },
   "ratings": [
     {
-      "date": "2026-08-13",
-      "firm": "Citigroup",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-28",
-      "firm": "UBS",
-      "from": null,
-      "to": "Neutral",
-      "action": "init"
-    },
-    {
-      "date": "2026-07-08",
-      "firm": "Citigroup",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-06-08",
-      "firm": "BNP Paribas",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-06-05",
-      "firm": "JP Morgan",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-06-05",
-      "firm": "Stifel",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-06-05",
+      "date": "2026-09-10",
       "firm": "Wells Fargo",
       "from": "Equal-Weight",
       "to": "Equal-Weight",
       "action": "main"
     },
     {
-      "date": "2026-06-05",
+      "date": "2026-09-10",
+      "firm": "Stifel",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-09-10",
+      "firm": "Citigroup",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-09-10",
+      "firm": "Piper Sandler",
+      "from": "Overweight",
+      "to": "Neutral",
+      "action": "down"
+    },
+    {
+      "date": "2026-09-10",
+      "firm": "JP Morgan",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-09-10",
+      "firm": "UBS",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-09-10",
+      "firm": "B of A Securities",
+      "from": "Buy",
+      "to": "Neutral",
+      "action": "down"
+    },
+    {
+      "date": "2026-09-10",
+      "firm": "Baird",
+      "from": "Outperform",
+      "to": "Neutral",
+      "action": "down"
+    },
+    {
+      "date": "2026-09-10",
       "firm": "Needham",
       "from": "Buy",
       "to": "Buy",
       "action": "main"
     },
     {
-      "date": "2026-06-05",
-      "firm": "Baird",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-06-04",
-      "firm": "Mizuho",
-      "from": "Outperform",
-      "to": "Outperform",
+      "date": "2026-08-13",
+      "firm": "Citigroup",
+      "from": "Neutral",
+      "to": "Neutral",
       "action": "main"
     }
   ],
@@ -185,9 +231,9 @@
   },
   "extras": {
     "beta": 0.818,
-    "enterprise_value": 15789623296,
-    "ev_ebitda": 17.813,
-    "ev_revenue": 3.732,
+    "enterprise_value": 14968544256,
+    "ev_ebitda": 16.887,
+    "ev_revenue": 3.538,
     "float_shares": 193675167,
     "short_shares": 7636457,
     "short_pct_float": 4.47,

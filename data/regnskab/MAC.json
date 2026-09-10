@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-09T19:29:17.354Z",
+  "updated_at": "2026-09-10T19:21:45.686Z",
   "source": "Yahoo Finance",
   "symbol": "MAC",
   "summary": "The Macerich Company is a fully integrated, self-managed, self-administered real estate investment trust (REIT). As a leading owner, operator, and developer of high-quality retail real estate in densely populated and attractive U.S. markets, Macerich's portfolio is concentrated in California, the Pacific Northwest, Phoenix/Scottsdale, and the Metro New York to Washington, D.C. corridor. Developing and managing properties that serve as community cornerstones, Macerich currently owns approximately 40 million square feet of real estate, consisting primarily of interests in 38 retail centers. The Macerich Company was incorporated in 1964 in Maryland and is based in Santa Monica, California.",
@@ -52,7 +52,7 @@
   "quarterly": [
     {
       "q": "3Q2025",
-      "revenue": 253262000,
+      "revenue": 237232000,
       "earnings": -87360000
     },
     {
@@ -62,12 +62,12 @@
     },
     {
       "q": "1Q2026",
-      "revenue": 241538000,
+      "revenue": 225976000,
       "earnings": -36350000
     },
     {
       "q": "2Q2026",
-      "revenue": 249707000,
+      "revenue": 233442000,
       "earnings": -27071000
     }
   ],
@@ -223,17 +223,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 0,
-    "sells": 0,
-    "bought": 0,
-    "sold": null,
-    "net_pct": null
+    "buys": 7,
+    "sells": 1,
+    "bought": 49840,
+    "sold": 2740,
+    "net_pct": 5
   },
   "extras": {
     "beta": 2.055,
-    "enterprise_value": 11463277568,
-    "ev_ebitda": 21.36,
-    "ev_revenue": 11.157,
+    "enterprise_value": 11307035648,
+    "ev_ebitda": 21.069,
+    "ev_revenue": 11.005,
     "float_shares": 283343343,
     "short_shares": 27707954,
     "short_pct_float": 13.66,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-09-14",
   "dividend_date": null,
   "payout_ratio": 1.8889,
-  "inst_count": 512,
+  "inst_count": 511,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "ZECCHINI CHRISTOPHER J.",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 23.28 per share.",
+      "value": 63787,
+      "shares": 2740,
+      "date": "2026-09-09"
+    },
     {
       "name": "HERNANDEZ ENRIQUEJR",
       "role": "Director",
@@ -352,15 +361,6 @@
       "value": 163068,
       "shares": 9500,
       "date": "2025-08-15"
-    },
-    {
-      "name": "HERNANDEZ ENRIQUEJR",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 8348,
-      "date": "2025-06-02"
     }
   ],
   "dividends": [

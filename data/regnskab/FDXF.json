@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-09T19:29:16.814Z",
+  "updated_at": "2026-09-10T19:21:45.169Z",
   "source": "Yahoo Finance",
   "symbol": "FDXF",
   "summary": "FedEx Freight Holding Company, Inc. provides less-than-truckload freight transportation services in the United States and internationally. The company offers FedEx Freight Priority services, including next-business-day service for shipments traveling up to 600 miles and second-business-day service for shipments traveling up to 1,600 miles and backed by a money-back service guarantee if published delivery commitments are not met; and FedEx Freight Economy. It also provides surface expedite and white glove services; and LTL Select, a cloud-based transportation management system. In addition, the company offers volume and custom critical services, FedEx Freight Direct, and Retail Flex. It provides its services under the FedEx and FedEx Freight names. The company was incorporated in 2025 and is headquartered in Memphis, Tennessee.",
@@ -31,7 +31,18 @@
       "margin": 7.4
     }
   ],
-  "quarterly": [],
+  "quarterly": [
+    {
+      "q": "1Q2026",
+      "revenue": 0,
+      "earnings": 51000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 2400000000,
+      "earnings": 158000000
+    }
+  ],
   "growth": {
     "q0": null,
     "q1": null,
@@ -39,6 +50,13 @@
     "y1": 0.168
   },
   "ratings": [
+    {
+      "date": "2026-09-10",
+      "firm": "Bernstein",
+      "from": null,
+      "to": "Market Perform",
+      "action": "init"
+    },
     {
       "date": "2026-09-08",
       "firm": "JP Morgan",
@@ -100,13 +118,6 @@
       "firm": "Raymond James",
       "from": null,
       "to": "Outperform",
-      "action": "init"
-    },
-    {
-      "date": "2026-06-02",
-      "firm": "Truist Securities",
-      "from": null,
-      "to": "Hold",
       "action": "init"
     }
   ],
@@ -192,9 +203,9 @@
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 25412304896,
-    "ev_ebitda": 25.695,
-    "ev_revenue": 2.889,
+    "enterprise_value": 24772368384,
+    "ev_ebitda": 25.048,
+    "ev_revenue": 2.817,
     "float_shares": 119418638,
     "short_shares": 4192076,
     "short_pct_float": null,
@@ -205,7 +216,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 1392,
+  "inst_count": 1393,
   "eps_history": [],
   "insiders": [
     {
@@ -216,33 +227,6 @@
       "value": 0,
       "shares": 20723,
       "date": "2026-08-07"
-    },
-    {
-      "name": "SMITH SAMANTHA M",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 1536,
-      "date": "2026-06-29"
-    },
-    {
-      "name": "KLANK CLEMENT E III",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 3507,
-      "date": "2026-06-29"
-    },
-    {
-      "name": "SALCIDO AMY J",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 1536,
-      "date": "2026-06-29"
     },
     {
       "name": "MARTIN ROBERT BRAD",
@@ -291,6 +275,33 @@
     },
     {
       "name": "DAVIS JEFFREY A.",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 1169,
+      "date": "2026-06-29"
+    },
+    {
+      "name": "FRIESON DONALD E.",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 1169,
+      "date": "2026-06-29"
+    },
+    {
+      "name": "SMITH JOHN ALAN",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 14195,
+      "date": "2026-06-29"
+    },
+    {
+      "name": "MILLER CINDY J.",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

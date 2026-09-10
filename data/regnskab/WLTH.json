@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-09T19:29:18.454Z",
+  "updated_at": "2026-09-10T19:21:46.578Z",
   "source": "Yahoo Finance",
   "symbol": "WLTH",
   "summary": "Wealthfront Corporation is a privately owned investment manager. It primarily provides its services to individuals. It also caters to high net worth individuals, charitable organizations, and corporations. The firm invests in the public equity and fixed income funds. It also invests in mutual funds and exchange traded funds. It conducts in-house research to make its investments. Wealthfront Corporation was formerly known as Wealthfront Inc. and is based in Redwood City, California with an additional office in Palo Alto, California.",
@@ -10,14 +10,14 @@
   "next_earnings": "2026-09-09",
   "earnings_estimated": false,
   "earnings_call": "2026-09-09",
-  "eps_estimate": 0.1575,
+  "eps_estimate": 0.1675,
   "analysts": {
-    "strong_buy": 3,
+    "strong_buy": 2,
     "buy": 1,
     "hold": 3,
     "sell": 0,
     "strong_sell": 0,
-    "total": 7
+    "total": 6
   },
   "target_mean": 12.25,
   "target_high": 17,
@@ -51,16 +51,28 @@
     {
       "q": "1Q2026",
       "revenue": 90484000,
-      "earnings": 12834000
+      "earnings": 12823000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 91874000,
+      "earnings": 17562000
     }
   ],
   "growth": {
-    "q0": null,
-    "q1": -0.357,
+    "q0": -0.357,
+    "q1": -0.3345,
     "y0": -0.4473,
     "y1": 0.16790001
   },
   "ratings": [
+    {
+      "date": "2026-09-10",
+      "firm": "RBC Capital",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
     {
       "date": "2026-08-04",
       "firm": "Wells Fargo",
@@ -122,13 +134,6 @@
       "firm": "Citizens",
       "from": "Market Outperform",
       "to": "Market Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-03-12",
-      "firm": "JP Morgan",
-      "from": "Overweight",
-      "to": "Overweight",
       "action": "main"
     }
   ],
@@ -214,9 +219,9 @@
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 1019526528,
-    "ev_ebitda": -7.942,
-    "ev_revenue": 2.748,
+    "enterprise_value": 994135104,
+    "ev_ebitda": -7.744,
+    "ev_revenue": 2.68,
     "float_shares": 88469635,
     "short_shares": 6271444,
     "short_pct_float": 6.28,
@@ -246,6 +251,12 @@
       "estimate": 0.15667,
       "actual": 0.1502,
       "surprise_pct": -4.13
+    },
+    {
+      "quarter": "2026-07-31",
+      "estimate": 0.1575,
+      "actual": 0.1818,
+      "surprise_pct": 15.43
     }
   ],
   "insiders": [

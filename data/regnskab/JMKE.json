@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-09T19:29:17.205Z",
+  "updated_at": "2026-09-10T19:21:45.530Z",
   "source": "Yahoo Finance",
   "symbol": "JMKE",
   "summary": "Jersey Mike's Subs Inc. engages in franchising and operating fast casual, submarine-style sandwich restaurants specializing in authentic, hand-crafted, and craveable subs. The company also offers catering services, as well as provides mobile app, online ordering, and third-party delivery. It operates stores in the United States and Canada, as well as franchise agreements in the United Kingdom and Ireland. The company was founded in 1956 and is based in Tinton Falls, New Jersey.",
@@ -7,8 +7,8 @@
   "website": "https://www.jerseymikes.com",
   "employees": null,
   "ceo": "Mr. Charles R. Morrison",
-  "next_earnings": "2026-09-09",
-  "earnings_estimated": false,
+  "next_earnings": "2026-11-11",
+  "earnings_estimated": true,
   "earnings_call": "2026-09-09",
   "eps_estimate": 0.18249,
   "analysts": {
@@ -31,7 +31,13 @@
       "margin": 7.9
     }
   ],
-  "quarterly": [],
+  "quarterly": [
+    {
+      "q": "2Q2026",
+      "revenue": 208000000,
+      "earnings": 37000000
+    }
+  ],
   "growth": {
     "q0": null,
     "q1": null,
@@ -39,6 +45,41 @@
     "y1": 0.3815
   },
   "ratings": [
+    {
+      "date": "2026-09-10",
+      "firm": "Mizuho",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-09-10",
+      "firm": "RBC Capital",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-09-10",
+      "firm": "Bernstein",
+      "from": "Market Perform",
+      "to": "Market Perform",
+      "action": "main"
+    },
+    {
+      "date": "2026-09-10",
+      "firm": "B of A Securities",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-09-10",
+      "firm": "BTIG",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "reit"
+    },
     {
       "date": "2026-09-09",
       "firm": "TD Cowen",
@@ -73,96 +114,61 @@
       "from": null,
       "to": "Buy",
       "action": "init"
-    },
-    {
-      "date": "2026-08-24",
-      "firm": "Jefferies",
-      "from": null,
-      "to": "Buy",
-      "action": "init"
-    },
-    {
-      "date": "2026-08-24",
-      "firm": "Raymond James",
-      "from": null,
-      "to": "Outperform",
-      "action": "init"
-    },
-    {
-      "date": "2026-08-24",
-      "firm": "Truist Securities",
-      "from": null,
-      "to": "Buy",
-      "action": "init"
-    },
-    {
-      "date": "2026-08-24",
-      "firm": "Evercore ISI Group",
-      "from": null,
-      "to": "Outperform",
-      "action": "init"
-    },
-    {
-      "date": "2026-08-24",
-      "firm": "JP Morgan",
-      "from": null,
-      "to": "Overweight",
-      "action": "init"
     }
   ],
   "holders": [
     {
       "name": "Fidelity Covington Trust-Fidelity Sustainable High Yield ETF",
-      "kind": "institution",
+      "kind": "fond",
       "pct": 0,
       "shares": 600,
       "date": "2026-07-31"
     },
     {
       "name": "NEUBERGER BERMAN ALTERNATIVE FUNDS-Neuberger Berman Long Short Fund",
-      "kind": "institution",
+      "kind": "fond",
       "pct": 0,
       "shares": 969906,
       "date": "2026-07-31"
     },
     {
       "name": "NEUBERGER BERMAN EQUITY FUNDS-Neuberger Large Cap Growth Fund",
-      "kind": "institution",
+      "kind": "fond",
       "pct": 0,
       "shares": 236436,
       "date": "2026-07-31"
     },
     {
       "name": "NEUBERGER BERMAN EQUITY FUNDS-Neuberger Focus Fund",
-      "kind": "institution",
+      "kind": "fond",
       "pct": 0,
       "shares": 27400,
       "date": "2026-07-31"
     },
     {
       "name": "RBB Fund Trust-Penn Capital Special Situations Small Cap Equity Fund",
-      "kind": "institution",
+      "kind": "fond",
       "pct": 0,
       "shares": 8031,
       "date": "2026-07-31"
     },
     {
       "name": "Fidelity Securities Fund-Fidelity Series Blue Chip Growth Fund",
-      "kind": "institution",
+      "kind": "fond",
       "pct": 0,
       "shares": 35100,
       "date": "2026-07-31"
     },
     {
       "name": "Fidelity Securities Fund-Fidelity Blue Chip Growth Fund",
-      "kind": "institution",
+      "kind": "fond",
       "pct": 0,
       "shares": 211100,
       "date": "2026-07-31"
     },
     {
       "name": "Fidelity Securities Fund-Fidelity Blue Chip Growth K6 Fund",
-      "kind": "institution",
+      "kind": "fond",
       "pct": 0,
       "shares": 44000,
       "date": "2026-07-31"

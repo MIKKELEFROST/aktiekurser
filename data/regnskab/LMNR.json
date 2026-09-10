@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-09T19:29:17.309Z",
+  "updated_at": "2026-09-10T19:21:45.645Z",
   "source": "Yahoo Finance",
   "symbol": "LMNR",
   "summary": "Limoneira Company operates as an agribusiness company in the United States and internationally. The company operates through four segments: Fresh Lemons, Lemon Packing, Avocados, and Other Agribusiness. It produces, processes, harvests, and packs oranges, specialty citrus, and wine grapes. The company also rents residential housing units and commercial office buildings, as well as leases land to third-party agricultural tenants. In addition, it is involved in the organic recycling operations; provision of farm management services; and development of land parcels, multi-family housing, and single-family homes. The company markets and sells its lemons directly to food service, wholesale, and retail customers; avocados, oranges, specialty citrus, and other crops to third-party packing houses; and wine grapes to wine producers. Limoneira Company was founded in 1893 and is headquartered in Santa Paula, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-09-09",
   "earnings_estimated": false,
   "earnings_call": "2026-09-09",
-  "eps_estimate": 0.19,
+  "eps_estimate": 0.23333,
   "analysts": {
     "strong_buy": 0,
     "buy": 2,
@@ -51,33 +51,40 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 47478000,
-      "earnings": -855000
-    },
-    {
       "q": "3Q2025",
       "revenue": 42821000,
-      "earnings": -8691000
+      "earnings": -8816000
     },
     {
       "q": "4Q2025",
       "revenue": 18205000,
-      "earnings": -9427000
+      "earnings": -9552000
     },
     {
       "q": "1Q2026",
       "revenue": 23926000,
       "earnings": -21420000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 43809000,
+      "earnings": -2993000
     }
   ],
   "growth": {
-    "q0": 10.5,
-    "q1": 1.5185001,
+    "q0": 1.5185001,
+    "q1": 0.6458,
     "y0": 0.56119996,
     "y1": 2.5769
   },
   "ratings": [
+    {
+      "date": "2026-09-10",
+      "firm": "Lake Street",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-06-10",
       "firm": "Lake Street",
@@ -140,13 +147,6 @@
       "from": null,
       "to": "Buy",
       "action": "init"
-    },
-    {
-      "date": "2022-12-29",
-      "firm": "Roth Capital",
-      "from": null,
-      "to": "Buy",
-      "action": "main"
     }
   ],
   "holders": [
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.314,
-    "enterprise_value": 400633056,
-    "ev_ebitda": -16.259,
-    "ev_revenue": 3.025,
+    "enterprise_value": 399001184,
+    "ev_ebitda": -16.193,
+    "ev_revenue": 3.013,
     "float_shares": 16375559,
     "short_shares": 660897,
     "short_pct_float": 4.98,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.69769996,
   "inst_count": 160,
   "eps_history": [
-    {
-      "quarter": "2025-07-31",
-      "estimate": 0.055,
-      "actual": -0.02,
-      "surprise_pct": -136.36
-    },
     {
       "quarter": "2025-10-31",
       "estimate": -0.11,
@@ -269,6 +263,12 @@
       "estimate": -0.21,
       "actual": -0.29,
       "surprise_pct": -38.1
+    },
+    {
+      "quarter": "2026-07-31",
+      "estimate": 0.19,
+      "actual": 0.02,
+      "surprise_pct": -89.47
     }
   ],
   "insiders": [

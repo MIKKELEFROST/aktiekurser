@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-09T19:29:15.957Z",
+  "updated_at": "2026-09-10T19:21:44.310Z",
   "source": "Yahoo Finance",
   "symbol": "ABG.OL",
   "summary": "ABG Sundal Collier Holding ASA, together with its subsidiaries, provides investment banking, stock broking, and corporate advisory services in Norway, Sweden, Denmark, and internationally. It operates through Corporate Financing, M&A and Advisory, and Brokerage and Research segments. The company offers corporate financing services for corporate clients for raising capital through equity or debt financing. It also provides advisory services in mergers, acquisitions, and sales, as well as various real asset transactions and other advisory services. In addition, the company offers research and brokerage, corporate brokerage, and project finance services. ABG Sundal Collier Holding ASA was founded in 1984 and is headquartered in Oslo, Norway.",
@@ -42,76 +42,97 @@
       "margin": null
     }
   ],
-  "quarterly": [],
+  "quarterly": [
+    {
+      "q": "4Q2015",
+      "revenue": 391100000,
+      "earnings": 63900000
+    },
+    {
+      "q": "1Q2016",
+      "revenue": 231000000,
+      "earnings": 26000000
+    },
+    {
+      "q": "2Q2016",
+      "revenue": 350400000,
+      "earnings": 61600000
+    },
+    {
+      "q": "3Q2016",
+      "revenue": 241500000,
+      "earnings": 27900000
+    }
+  ],
   "growth": null,
   "ratings": [],
   "holders": [
     {
       "name": "TRANSAMERICA FUNDS-Transamerica International Small Cap Value",
-      "kind": "institution",
+      "kind": "fond",
       "pct": 1.41,
       "shares": 7420267,
       "date": "2026-04-30"
     },
     {
       "name": "Fidelity Puritan Trust-Fidelity Low-Priced Stock Fund",
-      "kind": "institution",
+      "kind": "fond",
       "pct": 1.02,
       "shares": 5383126,
       "date": "2026-06-30"
     },
     {
       "name": "DFA INVESTMENT TRUST CO-The Continental Small Company Series",
-      "kind": "institution",
+      "kind": "fond",
       "pct": 0.35,
       "shares": 1828593,
       "date": "2026-04-30"
     },
     {
       "name": "DFA INVESTMENT DIMENSIONS GROUP INC-Intl Core Eqy. 2 PORT.",
-      "kind": "institution",
+      "kind": "fond",
       "pct": 0.27,
       "shares": 1407891,
       "date": "2026-04-30"
     },
     {
       "name": "Fidelity Puritan Trust-Fidelity Low-Priced Stock K6 Fund",
-      "kind": "institution",
+      "kind": "fond",
       "pct": 0.17,
       "shares": 910243,
       "date": "2026-06-30"
     },
     {
       "name": "Dimensional ETF Trust-Dimensional International Small Cap ETF",
-      "kind": "institution",
+      "kind": "fond",
       "pct": 0.09,
       "shares": 458084,
       "date": "2026-04-30"
     },
     {
       "name": "Dimensional ETF Trust-Dimensional International Core Equity 2 ETF",
-      "kind": "institution",
+      "kind": "fond",
       "pct": 0.06,
       "shares": 341330,
       "date": "2026-04-30"
     },
     {
       "name": "Old Westbury Funds Inc-Old Westbury Small & Mid Cap Strategies Fund",
-      "kind": "institution",
+      "kind": "fond",
       "pct": 0.05,
       "shares": 240847,
       "date": "2026-04-30"
     },
     {
       "name": "Dimensional ETF Trust-Dimensional World ex U.S. Core Equity 2 ETF",
-      "kind": "institution",
+      "kind": "fond",
       "pct": 0.03,
       "shares": 138189,
       "date": "2026-04-30"
     },
     {
       "name": "DFA INVESTMENT DIMENSIONS GROUP INC-Intl Sustainability Core 1 PORT.",
-      "kind": "institution",
+      "kind": "fond",
       "pct": 0.02,
       "shares": 123021,
       "date": "2026-04-30"
@@ -127,9 +148,9 @@
   },
   "extras": {
     "beta": 0.585,
-    "enterprise_value": 3794732032,
+    "enterprise_value": 3758236928,
     "ev_ebitda": null,
-    "ev_revenue": 1.763,
+    "ev_revenue": 1.746,
     "float_shares": 345248481,
     "short_shares": null,
     "short_pct_float": null,

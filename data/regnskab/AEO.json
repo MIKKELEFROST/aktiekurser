@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-09T19:29:16.003Z",
+  "updated_at": "2026-09-10T19:21:44.352Z",
   "source": "Yahoo Finance",
   "symbol": "AEO",
   "summary": "American Eagle Outfitters, Inc. operates as a multi-brand specialty retailer in the United States and internationally. It provides jeans, apparel and accessories, and personal care products for women and men under the American Eagle brand; and intimates, apparel, activewear, and swim collections under the Aerie and OFFLINE by Aerie brands. The company also offers menswear products under the Todd Snyder New York brand; and fashion clothing and accessories under the Unsubscribed brand. It sells its products through its own and licensed retail stores, concession-based shops-within-shops, wholesale markets, and online marketplaces; and digital channels, such as www.ae.com, www.aerie.com, www.toddsnyder.com, and www.unsubscribed.com. American Eagle Outfitters, Inc. was founded in 1977 and is headquartered in Pittsburgh, Pennsylvania.",
@@ -7,8 +7,8 @@
   "website": "https://www.aeo-inc.com",
   "employees": 10000,
   "ceo": "Mr. Jay L. Schottenstein",
-  "next_earnings": "2026-09-09",
-  "earnings_estimated": false,
+  "next_earnings": "2026-12-01",
+  "earnings_estimated": true,
   "earnings_call": null,
   "eps_estimate": 0.22034,
   "analysts": {
@@ -23,8 +23,54 @@
   "target_high": 31,
   "target_low": 16,
   "target_analysts": 11,
-  "statements": null,
-  "quarterly": [],
+  "statements": [
+    {
+      "year": "2023",
+      "revenue": 4989833000,
+      "net": 125136000,
+      "margin": 2.5
+    },
+    {
+      "year": "2024",
+      "revenue": 5261770000,
+      "net": 170038000,
+      "margin": 3.2
+    },
+    {
+      "year": "2025",
+      "revenue": 5328652000,
+      "net": 329380000,
+      "margin": 6.2
+    },
+    {
+      "year": "2026",
+      "revenue": 5496810000,
+      "net": 191983000,
+      "margin": 3.5
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 1362701000,
+      "earnings": 91344000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 1760834000,
+      "earnings": 87905000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 1195285000,
+      "earnings": 23525000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 1380375000,
+      "earnings": 134084000
+    }
+  ],
   "growth": {
     "q0": -0.5104,
     "q1": 0.0291,
@@ -32,6 +78,27 @@
     "y1": 0.1046
   },
   "ratings": [
+    {
+      "date": "2026-09-10",
+      "firm": "Telsey Advisory Group",
+      "from": "Market Perform",
+      "to": "Market Perform",
+      "action": "main"
+    },
+    {
+      "date": "2026-09-10",
+      "firm": "Morgan Stanley",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
+    {
+      "date": "2026-09-10",
+      "firm": "UBS",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-09-09",
       "firm": "BMO Capital",
@@ -80,27 +147,6 @@
       "from": "Equal-Weight",
       "to": "Equal-Weight",
       "action": "main"
-    },
-    {
-      "date": "2026-05-18",
-      "firm": "TD Cowen",
-      "from": "Hold",
-      "to": "Hold",
-      "action": "main"
-    },
-    {
-      "date": "2026-05-06",
-      "firm": "Barclays",
-      "from": "Underweight",
-      "to": "Equal-Weight",
-      "action": "up"
-    },
-    {
-      "date": "2026-03-26",
-      "firm": "Needham",
-      "from": null,
-      "to": "Hold",
-      "action": "init"
     }
   ],
   "holders": [
@@ -185,9 +231,9 @@
   },
   "extras": {
     "beta": 1.309,
-    "enterprise_value": 4655892992,
-    "ev_ebitda": 7.227,
-    "ev_revenue": 0.824,
+    "enterprise_value": 4600593408,
+    "ev_ebitda": 7.141,
+    "ev_revenue": 0.814,
     "float_shares": 155809685,
     "short_shares": 17017435,
     "short_pct_float": 12.83,
