@@ -1542,6 +1542,26 @@
     { timeZone: DK_TZ, day: 'numeric', month: 'short', year: 'numeric',
       hour: '2-digit', minute: '2-digit', second: '2-digit' }) + ' dansk tid');
 
+  // Handlen uden for børstiden. Den kommer fra det levende kald, ikke fra
+  // datafilerne, så linjen er der først når første tik er hentet — og slet
+  // ikke for nordiske papirer, hvor der ikke handles uden for åbningstiden.
+  function afterMarketLine(r, cur) {
+    if (r.x_price == null) return '';
+    const naar = r.x_session === 'pre' ? 'Før åbning' : 'Efter lukning';
+    const tid = r.x_time
+      ? new Date(r.x_time * 1000).toLocaleTimeString('da-DK', { hour: '2-digit', minute: '2-digit' })
+      : null;
+    return '<div class="text-xs num mt-1 hint" tabindex="0" data-hint-title="' + K.esc(naar) + '"'
+      + ' data-hint="Amerikanske aktier handles også før børsen åbner og efter den lukker. '
+      + 'Omsætningen er lav, og udsvingene er derfor større end i åbningstiden. '
+      + 'Tallet er ændringen i forhold til dagens lukkekurs.">'
+      + '<span class="faint">' + K.esc(naar) + ' </span>'
+      + '<strong style="color:var(--text-primary)">' + K.fmtPrice(r.x_price) + ' ' + K.esc(cur) + '</strong> '
+      + '<span class="' + K.dirClass(r.x_pct) + '">' + K.fmtPct(r.x_pct) + '</span>'
+      + (tid ? '<span class="faint"> · ' + K.esc(tid) + '</span>' : '')
+      + '</div>';
+  }
+
   function updatePriceInfo() {
     const el = document.getElementById('priceInfo');
     if (!el || !row) return;
@@ -1746,10 +1766,24 @@
 
     live = K.startLive({
       interval: 60_000,
+      // Amerikansk eftermarked kører til efter midnat dansk tid. Er papiret
+      // amerikansk, skal timeren følge New York frem for København.
+      while: r.market === 'US' ? K.extendedNow : K.tradingNow,
       symbols: () => [r.symbol],
       apply: (data) => {
         const q = data.q[r.symbol];
-        if (!q || q.p == null || q.p === r.price || pointerInChart) return;
+        if (!q || q.p == null || pointerInChart) return;
+
+        // Uden for børstiden står regularMarketPrice stille, mens
+        // aftermarket-kursen bevæger sig. Den gamle vagt sprang derfor netop
+        // det tik over, hvor der var noget nyt at vise.
+        const nyAfter = q.xp !== r.x_price || q.xcp !== r.x_pct;
+        r.x_session = q.xs ?? null;
+        r.x_price = q.xp ?? null;
+        r.x_pct = q.xcp ?? null;
+        r.x_time = q.xt ?? null;
+        if (q.p === r.price && !nyAfter) return;
+
         if (r.price_dkk != null && r.price) r.price_dkk *= q.p / r.price;
         r.price = q.p;
         if (q.c != null) r.change = q.c;
@@ -1811,6 +1845,7 @@
       + 'display:inline-flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;'
       + 'color:var(--text-secondary);line-height:1;flex:none">i</button></div>'
       + (conv ? '<div class="text-xs faint num mt-1">≈ ' + K.fmtPrice(r.price_dkk) + ' DKK</div>' : '')
+      + afterMarketLine(r, cur)
       + (r.drawdown_pct != null
           ? '<div class="text-xs num mt-1 hint" tabindex="0" data-hint-title="Fra toppen nogensinde"'
             + ' data-hint="Hvor langt kursen ligger under den højeste kurs selskabet har haft, ' + K.fmtPrice(r.ath)

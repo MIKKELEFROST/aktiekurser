@@ -1,0 +1,243 @@
+<!-- Title: Aftermarket – kurser uden for børstiden -->
+<!-- filepath: aftermarket.html -->
+<!DOCTYPE html>
+<html lang="da" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aftermarket – kurser uden for børstiden</title>
+
+<link rel="preload" href="assets/fonts/Porteron-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/Porteron-Semi.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/kursliste.css">
+<style>
+  .pager-btn {
+    border: 1px solid var(--hairline); color: var(--text-secondary); background: transparent;
+    border-radius: 8px; padding: 5px 11px; font-size: 12px; font-weight: 700; cursor: pointer;
+  }
+  .pager-btn[disabled] { opacity: .35; cursor: default; }
+  .pager-btn:not([disabled]):hover { color: var(--text-primary); }
+
+  /* Samme blink som kurslisten: en række der lige har ændret sig, lyser et
+     øjeblik, så et tal aldrig flytter sig lydløst under læserens øje. */
+  @keyframes kl-flash-up   { from { background: color-mix(in srgb, var(--delta-up) 16%, transparent); } to { background: transparent; } }
+  @keyframes kl-flash-down { from { background: color-mix(in srgb, var(--delta-down) 16%, transparent); } to { background: transparent; } }
+  tr.flash-up   td { animation: kl-flash-up   .9s ease-out; }
+  tr.flash-down td { animation: kl-flash-down .9s ease-out; }
+  @media (prefers-reduced-motion: reduce) { tr.flash-up td, tr.flash-down td { animation: none; } }
+  .live-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--delta-up); display: inline-block; }
+
+  .seg { display: inline-flex; border: 1px solid var(--hairline); border-radius: 999px; overflow: hidden; }
+  .seg button {
+    border: 0; background: transparent; cursor: pointer;
+    padding: 5px 13px; font-size: 12px; font-weight: 700; color: var(--text-secondary);
+  }
+  .seg button[aria-pressed="true"] { background: var(--surface-2); color: var(--text-primary); }
+</style>
+<!-- Tailwind er bygget på forhånd til assets/tailwind.css. Linket står sidst i
+     head, fordi play-CDN'en indsprøjtede sin CSS netop dér — efter sidens egen
+     style-blok — og rækkefølgen i kaskaden skal være den samme som før.
+     Byg den igen med: node scripts/byg-css.mjs -->
+<link rel="stylesheet" href="assets/tailwind.css">
+</head>
+
+<body class="font-sans antialiased">
+<header id="sitenav"></header>
+
+<div class="max-w-[1400px] mx-auto px-4 py-8">
+
+  <div class="mb-6">
+    <h1 class="text-2xl md:text-3xl font-extrabold tracking-tight">
+      Hvad sker der, mens børsen er lukket?
+    </h1>
+    <p class="text-sm mt-1 muted" style="max-width:74ch">
+      Amerikanske aktier og fonde handles også før børsen åbner og efter den lukker.
+      Kurserne herunder hentes direkte, mens du ser på dem — de står ikke i vores datafiler,
+      fordi de kun findes i de timer, hvor de bliver handlet.
+    </p>
+  </div>
+
+  <div class="flex items-center gap-3 flex-wrap mb-4">
+    <div class="seg" role="group" aria-label="Hvad skal vises">
+      <button type="button" data-slags="alle" aria-pressed="true">Alt</button>
+      <button type="button" data-slags="aktier" aria-pressed="false">Aktier</button>
+      <button type="button" data-slags="fonde" aria-pressed="false">Fonde</button>
+    </div>
+    <span class="text-xs faint" id="omfang"></span>
+    <span class="ml-auto text-xs" id="live"></span>
+  </div>
+
+  <div id="besked" class="card rounded-md p-5 mb-5 text-sm muted" hidden></div>
+
+  <div class="overflow-x-auto">
+    <table class="w-full text-sm" id="tabel" hidden>
+      <thead>
+        <tr class="text-left" style="border-bottom:1px solid var(--hairline)">
+          <th class="py-2 px-3 font-semibold">Selskab</th>
+          <th class="py-2 px-3 font-semibold text-right">Lukkekurs</th>
+          <th class="py-2 px-3 font-semibold text-right">Uden for børstiden</th>
+          <th class="py-2 px-3 font-semibold text-right">Ændring</th>
+          <th class="py-2 px-3 font-semibold text-right">Tidspunkt</th>
+        </tr>
+      </thead>
+      <tbody id="rows"></tbody>
+    </table>
+  </div>
+
+  <p id="status" class="text-xs mt-6 muted" role="status" aria-live="polite"></p>
+</div>
+
+<script src="assets/kursliste.js"></script>
+<script>
+(function () {
+  const K = window.KL;
+  const $ = (s) => document.querySelector(s);
+
+  // Kun ét kald ad gangen, og api/kurser.js tager 150 symboler pr. kald. Det
+  // sætter loftet: siden følger de 150 største amerikanske noteringer frem for
+  // at spørge om alle 3.578 og hverken kunne nå det eller have plads til det.
+  const MAX = 150;
+
+  const state = { alle: [], slags: 'alle', kurser: {}, hentet: null };
+
+  // ── Tabellen ───────────────────────────────────────────────────────────
+  function udvalg() {
+    const rows = state.alle.filter((r) =>
+      state.slags === 'alle' ? true : state.slags === 'fonde' ? r.erFond : !r.erFond);
+    return rows.slice(0, MAX);
+  }
+
+  function render() {
+    const rows = udvalg();
+
+    // Sorteret efter hvor meget der er sket uden for børstiden — det er hele
+    // grunden til at kigge. Papirer uden en aftermarket-kurs falder nedenunder
+    // frem for at blive sorteret som nul.
+    const med = [], uden = [];
+    for (const r of rows) {
+      const q = state.kurser[r.symbol];
+      (q && q.xp != null ? med : uden).push({ r, q });
+    }
+    med.sort((a, b) => Math.abs(b.q.xcp ?? 0) - Math.abs(a.q.xcp ?? 0));
+
+    const celle = (v, cls) => '<td class="py-2 px-3 num text-right ' + (cls || '') + '">' + v + '</td>';
+    const tegn = ({ r, q }) => {
+      const xp = q && q.xp != null ? q.xp : null;
+      const tid = q && q.xt
+        ? new Date(q.xt * 1000).toLocaleTimeString('da-DK', { hour: '2-digit', minute: '2-digit' })
+        : null;
+      const url = r.erFond ? K.fundUrl(r.symbol) : K.stockUrl(r.symbol);
+      return '<tr data-sym="' + K.esc(r.symbol) + '" style="border-bottom:1px solid var(--gridline)">'
+        + '<td class="py-2 px-3"><a class="link-accent font-semibold" href="' + url + '">'
+          + K.esc(r.name) + '</a>'
+          + '<span class="faint text-xs"> · ' + K.esc(r.symbol) + '</span></td>'
+        + celle(K.fmtPrice(r.price))
+        + celle(xp == null ? '<span class="faint">–</span>' : K.fmtPrice(xp))
+        + celle(xp == null ? '<span class="faint">–</span>' : K.fmtPct(q.xcp),
+                xp == null ? '' : K.dirClass(q.xcp))
+        + celle(tid ? '<span class="faint">' + K.esc(tid) + '</span>' : '<span class="faint">–</span>')
+        + '</tr>';
+    };
+
+    $('#rows').innerHTML = med.map(tegn).join('') + uden.map(tegn).join('');
+    $('#tabel').hidden = false;
+    $('#omfang').textContent = med.length + ' af ' + rows.length + ' handles lige nu';
+  }
+
+  // ── Beskeder ───────────────────────────────────────────────────────────
+  function besked(tekst) {
+    const el = $('#besked');
+    if (!tekst) { el.hidden = true; return; }
+    el.hidden = false;
+    el.innerHTML = tekst;
+  }
+
+  // Uden for det amerikanske vindue er der intet at hente, og siden skal sige
+  // det frem for at stå med en tabel fuld af tankestreger.
+  function vindueBesked() {
+    if (K.extendedNow()) return '';
+    return '<strong style="color:var(--text-primary)">Der handles ikke lige nu.</strong> '
+      + 'Amerikansk førmarked åbner kl. 04:00 New York-tid og eftermarkedet lukker kl. 20:00 — '
+      + 'det er cirka 10:00 til 02:00 dansk tid på hverdage. '
+      + 'Tabellen viser de seneste lukkekurser indtil da.';
+  }
+
+  // ── Live ───────────────────────────────────────────────────────────────
+  function anvend(data) {
+    const flyttet = [];
+    for (const [sym, q] of Object.entries(data.q || {})) {
+      const foer = state.kurser[sym];
+      if (foer && foer.xp != null && q.xp != null && foer.xp !== q.xp) {
+        flyttet.push({ sym, op: q.xp > foer.xp });
+      }
+      state.kurser[sym] = q;
+    }
+    state.hentet = data.t ? new Date(data.t) : new Date();
+    render();
+
+    const esc = (v) => (window.CSS && CSS.escape ? CSS.escape(v) : v.replace(/"/g, '\\"'));
+    for (const m of flyttet) {
+      const tr = $('#rows tr[data-sym="' + esc(m.sym) + '"]');
+      if (tr) tr.classList.add(m.op ? 'flash-up' : 'flash-down');
+    }
+  }
+
+  // ── Start ──────────────────────────────────────────────────────────────
+  K.renderNav('aftermarket');
+
+  (async function () {
+    const [liste, etf] = await Promise.all([
+      K.loadList(),
+      fetch('data/etf.json', { cache: 'no-cache' }).then((r) => r.json()).catch(() => null),
+    ]);
+
+    // Kun amerikanske noteringer. Nordiske børser handler ikke uden for
+    // åbningstiden, og Yahoo sender derfor slet ingen felter for dem — de ville
+    // stå som en tavs tankestreg i hver eneste række.
+    const aktier = (liste.rows || [])
+      .filter((r) => r.market === 'US' && r.market_cap != null)
+      .map((r) => ({ ...r, erFond: false }));
+    const fonde = ((etf && etf.etfs) || [])
+      .filter((r) => r.market === 'US' && r.net_assets != null)
+      .map((r) => ({ ...r, erFond: true, market_cap: r.net_assets }));
+
+    state.alle = aktier.concat(fonde).sort((a, b) => (b.market_cap || 0) - (a.market_cap || 0));
+
+    besked(vindueBesked());
+    render();
+
+    $('#status').textContent = 'Kilde: Yahoo Finance · lukkekurserne er hentet '
+      + K.fmtAge(liste.updatedAt) + ' · kurserne uden for børstiden hentes direkte, mens du ser på dem';
+
+    K.startLive({
+      interval: 30_000,
+      // Vinduet følger New York, ikke København: eftermarkedet kører til efter
+      // midnat dansk tid, hvor den almindelige børstimer for længst har stoppet.
+      while: K.extendedNow,
+      symbols: () => udvalg().map((r) => r.symbol),
+      apply: anvend,
+      status: (mode) => {
+        const el = $('#live');
+        if (mode === 'live') {
+          el.innerHTML = '<span class="live-dot"></span> <span class="faint">opdateret '
+            + K.esc(state.hentet ? state.hentet.toLocaleTimeString('da-DK', { hour: '2-digit', minute: '2-digit' }) : '–')
+            + '</span>';
+          besked('');
+        } else {
+          el.innerHTML = '';
+          besked(vindueBesked());
+        }
+      },
+    });
+  })();
+
+  document.querySelectorAll('[data-slags]').forEach((b) => b.addEventListener('click', () => {
+    state.slags = b.dataset.slags;
+    document.querySelectorAll('[data-slags]').forEach((o) =>
+      o.setAttribute('aria-pressed', String(o.dataset.slags === state.slags)));
+    render();
+  }));
+})();
+</script>
+</body>
+</html>

@@ -243,6 +243,23 @@
     return mins >= 8 * 60 + 55 && mins <= 22 * 60 + 5;
   }
 
+  // Handlen uden for børstiden ligger næsten helt uden for tradingNow():
+  // amerikansk eftermarked kører til 20:00 New York-tid, hvilket er efter
+  // midnat herhjemme. Vinduet regnes derfor i New York, ikke i København, så
+  // det ikke skal rettes to gange om året når sommertiden skifter i utakt.
+  function extendedNow(at) {
+    const parts = new Intl.DateTimeFormat('en-GB', {
+      timeZone: 'America/New_York', weekday: 'short',
+      hour: '2-digit', minute: '2-digit', hourCycle: 'h23',
+    }).formatToParts(at || new Date());
+    const get = (t) => (parts.find((p) => p.type === t) || {}).value;
+    const day = get('weekday');
+    if (day === 'Sat' || day === 'Sun') return false;
+    const mins = Number(get('hour')) * 60 + Number(get('minute'));
+    // 04:00–20:00 New York: før-marked, almindelig handel og eftermarked.
+    return mins >= 4 * 60 && mins <= 20 * 60;
+  }
+
   // One timer per page. A tick is skipped while the tab is hidden or the
   // markets are shut, so a page left open overnight costs nothing, and the
   // timer wakes on the way back rather than waiting out the interval.
@@ -254,7 +271,8 @@
 
     async function tick() {
       if (stopped) return;
-      if (document.visibilityState === 'hidden' || !tradingNow()) {
+      const aabent = opts.while || tradingNow;
+      if (document.visibilityState === 'hidden' || !aabent()) {
         if (opts.status) opts.status('paused');
         return later();
       }
@@ -382,6 +400,8 @@
       hint: 'Hele listen med kurser, filtre og sortering for begge markeder.' },
     { key: 'etf',         href: 'etf.html',           label: 'ETF-kurser',
       hint: 'Børshandlede fonde: én handel giver dig hele indekset. Kurser, formue og udvikling.' },
+    { key: 'aftermarket', href: 'aftermarket.html',   label: 'Aftermarket',
+      hint: 'Hvad amerikanske aktier og fonde handles til før børsen åbner og efter den lukker. Hentes direkte.' },
     { key: 'investeringsbeviser', href: 'investeringsbeviser.html', label: 'Investeringsbeviser',
       hint: 'Coop Banks tre investeringsbeviser fra Wealth Invest — Stabil, Balance og Vækst — side om side.' },
     { key: 'inspiration', href: 'inspiration.html',   label: 'Aktieinspiration',
@@ -799,7 +819,7 @@
     priceIn, currencyLabel, isConverted,
     decorate, loadList, loadHistory, loadArchive, spliceDaily, loadKeyFigures, loadBenchmarks, loadFundamentals, loadFundDetail,
     loadSpark, loadStats, attachSpark, attachStats,
-    liveQuotes, tradingNow, startLive,
+    liveQuotes, tradingNow, extendedNow, startLive,
     peOf, moveBetween, nearestIndex, drawdownSeries,
     MARKETS, marketOf, flagOf, indexLabel,
     sparkline, rangeBar, slug, stockUrl, fundUrl,

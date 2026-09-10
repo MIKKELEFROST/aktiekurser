@@ -825,7 +825,28 @@
       +     'display:inline-flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;'
       +     'color:var(--text-secondary);line-height:1;flex:none">i</button>'
       +   (conv ? '<span class="text-sm faint num" id="pxdkk">≈ ' + K.fmtPrice(r.price_dkk) + ' DKK</span>' : '')
-      + '</div></div>';
+      + '</div>'
+      + '<div id="pxafter">' + afterMarketLine(r) + '</div></div>';
+  }
+
+  // Handlen uden for børstiden. Amerikanske ETF'er handles både før åbning og
+  // efter lukning; europæiske og nordiske noteringer gør ikke, og for dem er
+  // linjen der aldrig. Tallet kommer fra det levende kald, ikke fra datafilen.
+  function afterMarketLine(r) {
+    if (!r || r.x_price == null) return '';
+    const naar = r.x_session === 'pre' ? 'Før åbning' : 'Efter lukning';
+    const tid = r.x_time
+      ? new Date(r.x_time * 1000).toLocaleTimeString('da-DK', { hour: '2-digit', minute: '2-digit' })
+      : null;
+    return '<div class="text-xs num mt-2 hint" tabindex="0" data-hint-title="' + K.esc(naar) + '"'
+      + ' data-hint="Amerikanske fonde handles også før børsen åbner og efter den lukker. '
+      + 'Omsætningen er lav, og udsvingene er derfor større end i åbningstiden. '
+      + 'Tallet er ændringen i forhold til dagens lukkekurs.">'
+      + '<span class="faint">' + K.esc(naar) + ' </span>'
+      + '<strong style="color:var(--text-primary)">' + K.fmtPrice(r.x_price) + ' ' + K.esc(r.currency) + '</strong> '
+      + '<span class="' + K.dirClass(r.x_pct) + '">' + K.fmtPct(r.x_pct) + '</span>'
+      + (tid ? '<span class="faint"> · ' + K.esc(tid) + '</span>' : '')
+      + '</div>';
   }
 
   // ── Kurskortet ─────────────────────────────────────────────────────────
@@ -2023,10 +2044,24 @@
 
       live = K.startLive({
         interval: 60_000,
+        // Amerikansk eftermarked kører til efter midnat dansk tid.
+        while: row.market === 'US' ? K.extendedNow : K.tradingNow,
         symbols: () => [row.symbol],
         apply: (data) => {
           const q = data.q[row.symbol];
-          if (!q || q.p == null || q.p === row.price || pointerInChart) return;
+          if (!q || q.p == null || pointerInChart) return;
+
+          // Uden for børstiden står den almindelige kurs stille, mens
+          // aftermarket-kursen bevæger sig. Aftermarket-linjen skiftes derfor
+          // ud for sig, før vagten mod uændrede tik.
+          row.x_session = q.xs ?? null;
+          row.x_price = q.xp ?? null;
+          row.x_pct = q.xcp ?? null;
+          row.x_time = q.xt ?? null;
+          const efter = $('#pxafter');
+          if (efter) efter.innerHTML = afterMarketLine(row);
+          if (q.p === row.price) return;
+
           if (row.price_dkk != null && row.price) row.price_dkk *= q.p / row.price;
           row.price = q.p;
           if (q.c != null) row.change = q.c;
