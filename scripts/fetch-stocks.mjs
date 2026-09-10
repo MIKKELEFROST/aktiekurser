@@ -9,7 +9,9 @@
 // Writes:
 //   data/univers.json         – the resolved ticker universe, and the fallback
 //                               when Wikipedia is unreachable
-//   data/aktier.json          – one row per company, plus a 30-point sparkline
+//   data/aktier.json          – one row per company
+//   data/spark.json           – the 30-point sparkline per company, on its own
+//   data/stats.json           – best/worst day, volatility, moving averages
 //   data/historik/<SYM>.json  – two years of daily closes plus a long series
 //                               back to the listing, one file per company
 //   data/nogletal.json        – per-share and statement figures for every
@@ -31,6 +33,12 @@ import { fileURLToPath } from 'node:url';
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const OUT_UNIVERSE = resolve(ROOT, 'data/univers.json');
 const OUT_LIST     = resolve(ROOT, 'data/aktier.json');
+// Sparklinjer og statistik ligger for sig. De er tilsammen halvdelen af
+// listens vægt, og ingen af dem skal bruges for at tegne tabellen: kurven i
+// sparklinje-kolonnen kan komme et øjeblik efter rækkerne, og statistikken
+// hører til kolonner, der er slået fra som standard.
+const OUT_SPARK    = resolve(ROOT, 'data/spark.json');
+const OUT_STATS    = resolve(ROOT, 'data/stats.json');
 const OUT_HIST_DIR = resolve(ROOT, 'data/historik');
 const OUT_KEY      = resolve(ROOT, 'data/nogletal.json');
 const OUT_BENCH    = resolve(ROOT, 'data/indeks.json');
@@ -1182,29 +1190,58 @@ async function main() {
 
   // 7. Files
   rows.sort((a, b) => a.name.localeCompare(b.name, 'en', { sensitivity: 'base' }));
-  await writeIfChanged(OUT_LIST, {
-    source: 'Yahoo Finance',
-    markets: [
-      { code: 'DK', label: 'Danmark', exchange: 'Nasdaq København',  currency: 'DKK', flag: '🇩🇰' },
-      { code: 'SE', label: 'Sverige', exchange: 'Nasdaq Stockholm',  currency: 'SEK', flag: '🇸🇪' },
-      { code: 'NO', label: 'Norge',   exchange: 'Oslo Børs',         currency: 'NOK', flag: '🇳🇴' },
-      { code: 'FI', label: 'Finland', exchange: 'Nasdaq Helsinki',   currency: 'EUR', flag: '🇫🇮' },
-      { code: 'IS', label: 'Island',  exchange: 'Nasdaq Iceland',    currency: 'ISK', flag: '🇮🇸' },
-      { code: 'US', label: 'USA',     exchange: 'Nasdaq / NYSE / NYSE American', currency: 'USD', flag: '🇺🇸' },
-    ].filter((m) => rows.some((r) => r.market === m.code)),
-    indices: [
-      { code: 'SP500',    label: 'S&P 500' },
-      { code: 'NDX',      label: 'Nasdaq-100' },
-      { code: 'SP400',    label: 'S&P 400' },
-      { code: 'SP600',    label: 'S&P 600' },
-      { code: 'DK-LARGE', label: 'København' },
-    ],
-    sectors: [...new Set(rows.map((r) => r.sector))].sort(),
-    ranked: capsOk,
-    fx: { pair: 'USD/DKK', rate: fx.usd, date: fx.date, source: fx.source, rates: fx.rates },
-    failed,
-    stocks: rows,
-  }, 'aktier.json');
+
+  // Listen deles i tre. Ikke pr. selskab — den fil ændrer sig ved hver kørsel,
+  // og 4.500 filer der alle ændrer sig tre gange dagligt ville koste git mere
+  // end de sparede kilobytes er værd. Delt på felter i stedet: tre blobs pr.
+  // kørsel som før, men hver side henter kun det, den viser.
+  const spark = {}, stats = {};
+  for (const r of rows) {
+    if (r.spark) spark[r.symbol] = r.spark;
+    if (r.stats) stats[r.symbol] = r.stats;
+  }
+  const light = rows.map(({ spark: _spark, stats: _stats, ...rest }) => rest);
+
+  // De tre lister samles først og skrives under ét, fordi de skal skrives
+  // enten alle eller ingen: de er én liste delt på felter, og en kørsel der
+  // opdaterede kurserne men ikke sparklines ville sætte dem ud af trit.
+  const lister = [
+    [OUT_SPARK, { count: Object.keys(spark).length, spark }, 'spark.json', true],
+    [OUT_STATS, { count: Object.keys(stats).length, stats }, 'stats.json', true],
+    [OUT_LIST, {
+      source: 'Yahoo Finance',
+      markets: [
+        { code: 'DK', label: 'Danmark', exchange: 'Nasdaq København',  currency: 'DKK', flag: '🇩🇰' },
+        { code: 'SE', label: 'Sverige', exchange: 'Nasdaq Stockholm',  currency: 'SEK', flag: '🇸🇪' },
+        { code: 'NO', label: 'Norge',   exchange: 'Oslo Børs',         currency: 'NOK', flag: '🇳🇴' },
+        { code: 'FI', label: 'Finland', exchange: 'Nasdaq Helsinki',   currency: 'EUR', flag: '🇫🇮' },
+        { code: 'IS', label: 'Island',  exchange: 'Nasdaq Iceland',    currency: 'ISK', flag: '🇮🇸' },
+        { code: 'US', label: 'USA',     exchange: 'Nasdaq / NYSE / NYSE American', currency: 'USD', flag: '🇺🇸' },
+      ].filter((m) => rows.some((r) => r.market === m.code)),
+      indices: [
+        { code: 'SP500',    label: 'S&P 500' },
+        { code: 'NDX',      label: 'Nasdaq-100' },
+        { code: 'SP400',    label: 'S&P 400' },
+        { code: 'SP600',    label: 'S&P 600' },
+        { code: 'DK-LARGE', label: 'København' },
+      ],
+      sectors: [...new Set(rows.map((r) => r.sector))].sort(),
+      ranked: capsOk,
+      fx: { pair: 'USD/DKK', rate: fx.usd, date: fx.date, source: fx.source, rates: fx.rates },
+      failed,
+      stocks: light,
+    }, 'aktier.json', false],
+  ];
+
+  // --limit er en prøvekørsel. Skrev den listerne, ville tyve selskaber lægge
+  // sig hen over de fire et halvt tusind — i tre filer nu, hvor det før var én.
+  // Historik- og regnskabsfilerne skrives stadig nedenfor; de hører til hvert
+  // sit selskab og kan ikke ramme de andre.
+  if (LIMIT) {
+    console.log(`  lister: sprunget over (--limit=${LIMIT}, ${rows.length} selskaber hentet)`);
+  } else {
+    for (const [path, body, label, compact] of lister) await writeIfChanged(path, body, label, compact);
+  }
 
   if (NO_HISTORY) { console.log('  historik: sprunget over (--no-history)'); return; }
 

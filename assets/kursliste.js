@@ -177,6 +177,30 @@
   // det her kun bruges på én side.
   const loadFundDetail = (symbol) => loadJson('etf-detaljer/' + encodeURIComponent(symbol) + '.json');
 
+  // ── Sparklinjer og statistik ───────────────────────────────────────────
+  // De to felter var halvdelen af aktielistens vægt, og ingen af dem skal
+  // bruges for at tegne en tabel: sparklinjen kan komme et øjeblik efter
+  // rækkerne, og statistikken hører til kolonner der er slået fra som
+  // standard. De ligger derfor i hver sin fil og hentes kun af den side der
+  // viser dem.
+  //
+  // attachSpark/attachStats hænger dem tilbage på rækkerne under de navne de
+  // altid har haft, så resten af koden ikke kan mærke, at de kom senere.
+  let sparkPromise = null, statsPromise = null;
+
+  const loadSpark = () => (sparkPromise
+    || (sparkPromise = loadJson('spark.json').then((j) => (j && j.spark) || {}).catch(() => ({}))));
+  const loadStats = () => (statsPromise
+    || (statsPromise = loadJson('stats.json').then((j) => (j && j.stats) || {}).catch(() => ({}))));
+
+  const attach = (load, key) => (rows) => load().then((m) => {
+    let n = 0;
+    for (const r of rows || []) if (m[r.symbol] != null) { r[key] = m[r.symbol]; n++; }
+    return n;
+  });
+  const attachSpark = attach(loadSpark, 'spark');
+  const attachStats = attach(loadStats, 'stats');
+
   // ── Live kurser ───────────────────────────────────────────────────────
   // The files above are the floor: every page renders from them and needs no
   // network at all once loaded. Where /api/kurser exists — the deployment that
@@ -644,6 +668,7 @@
     fmtPrice, fmtPct, fmtDelta, fmtInt, fmtBig, fmtDate, fmtAge, dirClass, esc,
     priceIn, currencyLabel, isConverted,
     decorate, loadList, loadHistory, loadArchive, spliceDaily, loadKeyFigures, loadBenchmarks, loadFundamentals, loadFundDetail,
+    loadSpark, loadStats, attachSpark, attachStats,
     liveQuotes, tradingNow, startLive,
     peOf, moveBetween, nearestIndex, drawdownSeries,
     MARKETS, marketOf, flagOf, indexLabel,

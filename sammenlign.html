@@ -7,13 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sammenlign selskaber</title>
 
-<script src="https://cdn.tailwindcss.com"></script>
 <link rel="preload" href="assets/fonts/Porteron-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/Porteron-Semi.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/kursliste.css">
-<script>
-tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial', 'system-ui', 'sans-serif'] } } } }
-</script>
 <style>
   /* Series colours, four hues that hold apart from each other and from the red
      accent, defined for both themes. */
@@ -59,6 +55,11 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
   }
   .metric-label { border-bottom: 1px dotted var(--text-muted); cursor: help; }
 </style>
+<!-- Tailwind er bygget på forhånd til assets/tailwind.css. Linket står sidst i
+     head, fordi play-CDN'en indsprøjtede sin CSS netop dér — efter sidens egen
+     style-blok — og rækkefølgen i kaskaden skal være den samme som før.
+     Byg den igen med: node scripts/byg-css.mjs -->
+<link rel="stylesheet" href="assets/tailwind.css">
 </head>
 
 <body class="font-sans antialiased">
@@ -353,7 +354,10 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
   (async () => {
     $('#status').textContent = 'Indlæser…';
     try {
+      // Volatiliteten står i sammenligningstabellen, så statistikken hentes
+      // ved siden af listen frem for dovent — den skal alligevel bruges.
       const [list, keys] = await Promise.all([K.loadList(), K.loadKeyFigures().catch(() => null)]);
+      await K.attachStats(list.rows);
       ALL = list.rows;
       KEYS = keys;
 

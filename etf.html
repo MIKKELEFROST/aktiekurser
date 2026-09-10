@@ -8,13 +8,9 @@
 <title>ETF-kurser – børshandlede fonde</title>
 <meta name="description" content="Børshandlede fonde noteret i Frankfurt, Amsterdam, USA og Norden: kurs, udvikling, formue og omkostning.">
 
-<script src="https://cdn.tailwindcss.com"></script>
 <link rel="preload" href="assets/fonts/Porteron-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/Porteron-Semi.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/kursliste.css">
-<script>
-tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial', 'system-ui', 'sans-serif'] } } } }
-</script>
 <style>
   .pager-btn {
     border: 1px solid var(--hairline); color: var(--text-secondary); background: transparent;
@@ -55,6 +51,11 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
      column read as two. Same for the period headers. */
   td.text-right, th.text-right { white-space: nowrap; }
 </style>
+<!-- Tailwind er bygget på forhånd til assets/tailwind.css. Linket står sidst i
+     head, fordi play-CDN'en indsprøjtede sin CSS netop dér — efter sidens egen
+     style-blok — og rækkefølgen i kaskaden skal være den samme som før.
+     Byg den igen med: node scripts/byg-css.mjs -->
+<link rel="stylesheet" href="assets/tailwind.css">
 </head>
 
 <body class="font-sans antialiased">

@@ -7,13 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Aktieinspiration</title>
 
-<script src="https://cdn.tailwindcss.com"></script>
 <link rel="preload" href="assets/fonts/Porteron-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/Porteron-Semi.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/kursliste.css">
-<script>
-tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial', 'system-ui', 'sans-serif'] } } } }
-</script>
 <style>
   .hero { background: var(--text-primary); color: var(--page-plane); }
   .hero h1 { letter-spacing: -0.02em; }
@@ -38,6 +34,11 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
   }
   @media (prefers-reduced-motion: reduce) { .list-card:hover { transform: none; } }
 </style>
+<!-- Tailwind er bygget på forhånd til assets/tailwind.css. Linket står sidst i
+     head, fordi play-CDN'en indsprøjtede sin CSS netop dér — efter sidens egen
+     style-blok — og rækkefølgen i kaskaden skal være den samme som før.
+     Byg den igen med: node scripts/byg-css.mjs -->
+<link rel="stylesheet" href="assets/tailwind.css">
 </head>
 
 <body class="font-sans antialiased">
@@ -289,6 +290,9 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
   (async () => {
     try {
       const list = await K.loadList();
+      // Sparklinjerne ligger i deres egen fil nu. Siden venter ikke på dem:
+      // kortene tegnes med det samme, og kurverne kommer, når filen lander.
+      K.attachSpark(list.rows).then((n) => { if (n) render(); });
       state.rows = list.rows; state.fx = list.fx; state.updatedAt = list.updatedAt;
 
       // One chip per market present in the data.

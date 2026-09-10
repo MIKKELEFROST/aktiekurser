@@ -7,13 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Aktie – detaljer</title>
 
-<script src="https://cdn.tailwindcss.com"></script>
 <link rel="preload" href="assets/fonts/Porteron-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/Porteron-Semi.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/kursliste.css">
-<script>
-tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial', 'system-ui', 'sans-serif'] } } } }
-</script>
 <style>
   /* Det meste af siden tegnes af klasser i assets/kursliste.css — grafen,
      fanerne, den avancerede kontakt, nøgletalsgitteret og søjlerne, som
@@ -63,6 +59,11 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
   .ev-row { display: flex; align-items: center; gap: 12px; padding: 9px 0; border-top: 1px solid var(--gridline); }
   .ev-date { flex: 0 0 auto; width: 5.5rem; font-size: 12px; color: var(--text-muted); font-variant-numeric: tabular-nums; }
 </style>
+<!-- Tailwind er bygget på forhånd til assets/tailwind.css. Linket står sidst i
+     head, fordi play-CDN'en indsprøjtede sin CSS netop dér — efter sidens egen
+     style-blok — og rækkefølgen i kaskaden skal være den samme som før.
+     Byg den igen med: node scripts/byg-css.mjs -->
+<link rel="stylesheet" href="assets/tailwind.css">
 </head>
 
 <body class="font-sans antialiased">
@@ -1759,6 +1760,8 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
   // with itself. A tick is skipped while the pointer is inside the chart, so a
   // refresh never pulls the crosshair out from under the reader.
   let live = null, pointerInChart = false;
+  // Sættes når siden er hentet; kaldes igen når den avancerede visning tændes.
+  let statsAsked = false, ensureStats = () => {};
 
   function beginLive(r) {
     if (live) return;
@@ -2060,6 +2063,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
     if (advBox) advBox.addEventListener('change', (e) => {
       state.adv = e.target.checked;
       setAdv(state.adv);
+      ensureStats();
       // The simple view offers fewer windows, so a range only it could reach
       // has to fall back rather than leave the chart on a hidden setting.
       const SIMPLE = ['1d', '1u', '1m', '3m', 'ytd', '1y', '3y'];
@@ -2136,7 +2140,10 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
       // so a failure there falls back to the 30-point sparkline series.
       let hist = null;
       try { hist = await K.loadHistory(r.symbol); }
-      catch { hist = { dates: [], closes: r.spark || [] }; }
+      // Sparklinjen lå før på rækken og kunne træde ind som nødgraf. Den ligger
+      // i sin egen fil nu, og at hente den for 4.500 selskaber for at redde ét
+      // fejlet kald er ikke en handel værd. Grafen udebliver i stedet.
+      catch { hist = { dates: [], closes: [] }; }
       if (!hist.dates.length && hist.closes.length) {
         hist.dates = hist.closes.map((_, i) => String(i));   // no dates: index axis
       }
@@ -2163,6 +2170,16 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
         prev: idx > 0 ? list.rows[idx - 1] : null,
         next: idx < list.rows.length - 1 ? list.rows[idx + 1] : null,
       });
+
+      // "Vidste du at"-kortene læser r.stats, og de tegnes kun i avanceret
+      // visning. Filen hentes derfor først når nogen faktisk ser dem — enten
+      // fordi visningen allerede er slået til, eller når den bliver det.
+      ensureStats = () => {
+        if (statsAsked || !state.adv) return;
+        statsAsked = true;
+        K.attachStats([r]).then((n) => { if (n && lastArgs) render.apply(null, lastArgs); });
+      };
+      ensureStats();
       $('#status').textContent = 'Kilde: Yahoo Finance · hentet ' + K.fmtAge(list.updatedAt)
         + ' · opdateres tre gange på hverdage';
 

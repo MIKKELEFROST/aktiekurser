@@ -8,18 +8,19 @@
 <title>Fond – detaljer</title>
 <meta name="description" content="Kurs, udvikling, nøgletal og indhold for en enkelt børshandlet fond — hvad den ejer, hvad den koster om året, hvor stor den er, og hvad den har gjort.">
 
-<script src="https://cdn.tailwindcss.com"></script>
 <link rel="preload" href="assets/fonts/Porteron-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/Porteron-Semi.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/kursliste.css">
-<script>
-tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial', 'system-ui', 'sans-serif'] } } } }
-</script>
 <style>
   /* Grafen, fanerne, den avancerede kontakt, nøgletalsgitteret, søjlerne og
      beholdningsrækkerne står i assets/kursliste.css — aktiesiden bruger de
      samme. Her er der ikke noget tilbage der kun hører til en fond. */
 </style>
+<!-- Tailwind er bygget på forhånd til assets/tailwind.css. Linket står sidst i
+     head, fordi play-CDN'en indsprøjtede sin CSS netop dér — efter sidens egen
+     style-blok — og rækkefølgen i kaskaden skal være den samme som før.
+     Byg den igen med: node scripts/byg-css.mjs -->
+<link rel="stylesheet" href="assets/tailwind.css">
 </head>
 
 <body class="font-sans antialiased">

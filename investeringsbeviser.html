@@ -8,13 +8,9 @@
 <title>Investeringsbeviser – Stabil, Balance og Vækst</title>
 <meta name="description" content="Kurs og udvikling for Coop Banks tre investeringsbeviser fra Wealth Invest: Stabil, Balance og Vækst — side om side på samme akse.">
 
-<script src="https://cdn.tailwindcss.com"></script>
 <link rel="preload" href="assets/fonts/Porteron-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/Porteron-Semi.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/kursliste.css">
-<script>
-tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial', 'system-ui', 'sans-serif'] } } } }
-</script>
 <style>
   /* Kurvefarver. Tre nuancer der holder fra hinanden og fra den røde accent —
      og ingen af dem er rød eller grøn, som på siden her betyder op og ned. */
@@ -43,6 +39,11 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
 
   td.text-right, th.text-right { white-space: nowrap; }
 </style>
+<!-- Tailwind er bygget på forhånd til assets/tailwind.css. Linket står sidst i
+     head, fordi play-CDN'en indsprøjtede sin CSS netop dér — efter sidens egen
+     style-blok — og rækkefølgen i kaskaden skal være den samme som før.
+     Byg den igen med: node scripts/byg-css.mjs -->
+<link rel="stylesheet" href="assets/tailwind.css">
 </head>
 
 <body class="font-sans antialiased">
