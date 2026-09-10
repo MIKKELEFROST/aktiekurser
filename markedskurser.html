@@ -7,13 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Aktiekurser – danske og amerikanske</title>
 
-<script src="https://cdn.tailwindcss.com"></script>
 <link rel="preload" href="assets/fonts/Porteron-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/Porteron-Semi.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/kursliste.css">
-<script>
-tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial', 'system-ui', 'sans-serif'] } } } }
-</script>
 <style>
   .pager-btn {
     border: 1px solid var(--hairline); color: var(--text-secondary); background: transparent;
@@ -54,6 +50,11 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
   @media (prefers-reduced-motion: reduce) { tr.flash-up td, tr.flash-down td { animation: none; } }
   .live-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--delta-up); display: inline-block; }
 </style>
+<!-- Tailwind er bygget på forhånd til assets/tailwind.css. Linket står sidst i
+     head, fordi play-CDN'en indsprøjtede sin CSS netop dér — efter sidens egen
+     style-blok — og rækkefølgen i kaskaden skal være den samme som før.
+     Byg den igen med: node scripts/byg-css.mjs -->
+<link rel="stylesheet" href="assets/tailwind.css">
 </head>
 
 <body class="font-sans antialiased">
@@ -515,6 +516,27 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
 
   const activeCols = () => state.cols.map((k) => BY_KEY.get(k)).filter(Boolean);
 
+  // Sparklinjerne og statistikken ligger i hver sin fil. Tilsammen var de
+  // halvdelen af aktielistens vægt, og ingen af dem skal bruges for at tegne
+  // tabellen: rækkerne kommer med det samme, og kurven et øjeblik efter.
+  // Statistikken hentes først, når en af de kolonner den bærer, bliver tændt —
+  // de er alle slået fra som standard.
+  const SPARK_COLS = ['spark30'];
+  const STATS_COLS = ['best_day', 'worst_day', 'up_days', 'streak', 'volatility', 'ma50', 'ma200'];
+  let sparkAsked = false, statsAsked = false;
+
+  function ensureExtras() {
+    if (!state.all.length) return;
+    if (!sparkAsked && state.cols.some((k) => SPARK_COLS.includes(k))) {
+      sparkAsked = true;
+      K.attachSpark(state.all).then((n) => { if (n) render(); });
+    }
+    if (!statsAsked && state.cols.some((k) => STATS_COLS.includes(k))) {
+      statsAsked = true;
+      K.attachStats(state.all).then((n) => { if (n) render(); });
+    }
+  }
+
   // ── Filtering and sorting ──────────────────────────────────────────────
   function sortValue(col, r) {
     const s = col.sortKey;
@@ -737,6 +759,8 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
   }
 
   function afterColChange() {
+    // En nytændt kolonne kan bære data, vi endnu ikke har hentet.
+    ensureExtras();
     saveCols();
     $('#pickerCount').textContent = '(' + state.cols.length + ')';
     // A hidden column must not keep sorting the table.
@@ -770,6 +794,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
       ]);
       KEY = keys;
       state.all = list.rows;
+      ensureExtras();
       state.updatedAt = list.updatedAt;
       state.markets = list.markets;
       state.fx = list.fx;

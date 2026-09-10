@@ -15,13 +15,9 @@
 <meta name="robots" content="noindex, nofollow">
 <title>Lagerskat eller realisationsskat</title>
 
-<script src="https://cdn.tailwindcss.com"></script>
 <link rel="preload" href="assets/fonts/Porteron-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/Porteron-Semi.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/kursliste.css">
-<script>
-tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial', 'system-ui', 'sans-serif'] } } } }
-</script>
 <style>
   /* ── De to serier ───────────────────────────────────────────────────────
      To beskatningsformer, ingen af dem bedre end den anden, så farverne er
@@ -177,6 +173,11 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
     #tooltip, details > summary::after { transition: none; }
   }
 </style>
+<!-- Tailwind er bygget på forhånd til assets/tailwind.css. Linket står sidst i
+     head, fordi play-CDN'en indsprøjtede sin CSS netop dér — efter sidens egen
+     style-blok — og rækkefølgen i kaskaden skal være den samme som før.
+     Byg den igen med: node scripts/byg-css.mjs -->
+<link rel="stylesheet" href="assets/tailwind.css">
 </head>
 
 <body class="font-sans antialiased">

@@ -8,13 +8,9 @@
 <title>Coop Bank Investering – aktiekurser og værktøjer</title>
 <meta name="description" content="Kurser og nøgletal for børsnoterede selskaber i Danmark, Sverige, Norge, Finland, Island og USA — plus værktøjer til at sammenligne selskaber og fremskrive en opsparing.">
 
-<script src="https://cdn.tailwindcss.com"></script>
 <link rel="preload" href="assets/fonts/Porteron-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/Porteron-Semi.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/kursliste.css">
-<script>
-tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial', 'system-ui', 'sans-serif'] } } } }
-</script>
 <style>
   /* One entry per section, so the four tools read as a set rather than four
      unrelated boxes. The arrow is the only thing that moves on hover. */
@@ -131,6 +127,11 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Porteron', 'Arial',
     transition: background .15s ease, color .15s ease;
   }
 </style>
+<!-- Tailwind er bygget på forhånd til assets/tailwind.css. Linket står sidst i
+     head, fordi play-CDN'en indsprøjtede sin CSS netop dér — efter sidens egen
+     style-blok — og rækkefølgen i kaskaden skal være den samme som før.
+     Byg den igen med: node scripts/byg-css.mjs -->
+<link rel="stylesheet" href="assets/tailwind.css">
 </head>
 
 <body class="font-sans antialiased">
