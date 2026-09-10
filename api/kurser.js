@@ -82,6 +82,15 @@ module.exports = async (req, res) => {
     const q = {};
     for (const r of rows) {
       if (!r || !r.symbol || r.regularMarketPrice == null) continue;
+      // Uden for børstiden handles amerikanske papirer videre, og Yahoo lægger
+      // den handel i sit eget sæt felter — preMarket… før åbning, postMarket…
+      // efter lukning. Nordiske børser har ingen af delene og sender dem ikke.
+      // De to sæt udelukker hinanden, så de samles til ét: hvad der handles
+      // uden for åbningstiden lige nu, og hvilken af de to sessioner det er.
+      const pre = r.preMarketPrice != null;
+      const post = r.postMarketPrice != null;
+      const x = pre ? 'preMarket' : post ? 'postMarket' : null;
+
       q[r.symbol] = {
         p: r.regularMarketPrice,
         c: r.regularMarketChange ?? null,
@@ -90,6 +99,12 @@ module.exports = async (req, res) => {
         d: r.exchangeDataDelayedBy ?? null,
         s: r.marketState || null,
         cur: r.currency || null,
+        // x* er handlen uden for børstiden. xs siger hvilken session.
+        xs: x ? (pre ? 'pre' : 'post') : null,
+        xp: x ? r[x + 'Price'] ?? null : null,
+        xc: x ? r[x + 'Change'] ?? null : null,
+        xcp: x ? r[x + 'ChangePercent'] ?? null : null,
+        xt: x ? r[x + 'Time'] ?? null : null,
       };
     }
 

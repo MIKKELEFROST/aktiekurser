@@ -327,7 +327,11 @@ th .hint { cursor: pointer; }           /* header is still a sort control */
 
 .nav-sections {
   display: flex; align-items: center; gap: 24px;
-  overflow-x: auto; flex: 1 1 auto; min-width: 0;
+  /* Basis 0, ikke auto. Med auto meldte linjen sig ind med hele sin
+     indholdsbredde, og så var der ikke plads til tandhjulet på rækken — det
+     ombrød til sin egen linje i venstre side, hvor panelet åbnede ud over
+     skærmkanten. Med basis 0 tager den kun den plads der er tilovers. */
+  overflow-x: auto; flex: 1 1 0; min-width: 0;
   scrollbar-width: none;
 }
 .nav-sections::-webkit-scrollbar { display: none; }
@@ -391,17 +395,6 @@ th .hint { cursor: pointer; }           /* header is still a sort control */
   .nav-search { flex: 1 0 100%; margin-left: 0; order: 3; }
 }
 
-.nav-back {
-  margin-left: auto;
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--text-secondary);
-  text-decoration: none;
-  white-space: nowrap;
-  flex: 0 0 auto;
-}
-.nav-back:hover { color: var(--text-primary); text-decoration: underline; }
-
 .nav-tab {
   font-size: 16px;
   font-weight: 400;
@@ -457,28 +450,6 @@ th .hint { cursor: pointer; }           /* header is still a sort control */
 
 /* Overskriftslinjen: hovedtallene på én linje under navnet, med kontakten til
    den avancerede visning i højre kant. */
-.overview {
-  display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px;
-  padding: 12px 14px; border-radius: var(--radius-sm);
-  background: var(--surface-1); border: 1px solid var(--hairline);
-}
-.ov { display: inline-flex; align-items: baseline; gap: 5px; font-size: 13px; }
-.ov-k { color: var(--text-muted); }
-.ov-v { font-weight: 700; color: var(--text-primary); }
-.ov-sep { color: var(--text-muted); opacity: .55; }
-.overview p { flex-basis: 100%; margin: 0; }
-.ov-row {
-  display: flex; flex-wrap: wrap; align-items: baseline;
-  justify-content: space-between; gap: 8px 16px; width: 100%;
-}
-.ov-figures { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; }
-.adv-toggle {
-  display: inline-flex; align-items: center; gap: 6px; flex: 0 0 auto;
-  font-size: 12px; font-weight: 600; color: var(--text-secondary); cursor: pointer;
-  white-space: nowrap;
-}
-.adv-toggle input { accent-color: var(--accent); cursor: pointer; }
-.adv-toggle:hover span { color: var(--text-primary); }
 
 /* Nøgletal: tallet først, etiketten under, to pr. række — tallet er det øjet
    leder efter, og etiketten er det man læser, når man har fundet det. */
@@ -539,3 +510,44 @@ th .hint { cursor: pointer; }           /* header is still a sort control */
       gap: 10px; padding: 6px 0; }
 .wt-k { font-size: 13px; color: var(--text-secondary); }
 @media (max-width: 640px) { .wt { grid-template-columns: 7.5rem 1fr 3.2rem; } }
+
+/* ── Tandhjul og indstillingspanel ─────────────────────────────────────
+   Panelet hænger under tandhjulet i headeren. Det er den eneste vej til
+   avanceret visning, så det skal kunne findes: ikonet står yderst til
+   højre, hvor indstillinger plejer at bo. */
+.nav-gear-wrap { position: relative; flex: 0 0 auto; margin-left: 8px; }
+
+.nav-gear {
+  display: flex; align-items: center; justify-content: center;
+  width: 34px; height: 34px; padding: 0;
+  border: 1px solid var(--hairline); border-radius: 8px;
+  background: transparent; color: var(--text-secondary); cursor: pointer;
+}
+.nav-gear:hover { color: var(--text-primary); border-color: var(--text-muted); }
+.nav-gear[aria-expanded="true"] { color: var(--text-primary); border-color: var(--text-muted); }
+
+.nav-settings {
+  position: absolute; right: 0; top: calc(100% + 8px); z-index: 60;
+  width: min(340px, calc(100vw - 32px));
+  padding: 14px;
+  background: var(--surface-1); border: 1px solid var(--hairline); border-radius: 10px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, .16);
+  max-height: min(70vh, 560px); overflow-y: auto;
+}
+
+.set-title { font-size: 13px; font-weight: 700; margin: 0 0 10px; }
+
+.set-row {
+  display: flex; gap: 10px; align-items: flex-start;
+  padding: 7px 0; cursor: pointer;
+}
+.set-row input { margin-top: 2px; flex: 0 0 auto; }
+.set-text { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
+.set-label { font-size: 13px; font-weight: 600; color: var(--text-primary); }
+.set-hint { font-size: 11px; line-height: 1.4; color: var(--text-muted); }
+
+.set-master { border-bottom: 1px solid var(--hairline); padding-bottom: 10px; margin-bottom: 4px; }
+
+/* Er hovedafbryderen slukket, siger de enkelte flueben ikke noget. De bliver
+   stående, så man kan se hvad der venter, men de tones ned og kan ikke røres. */
+.set-list[data-off] { opacity: .45; pointer-events: none; }
