@@ -38,15 +38,15 @@ almindeligt HTTP-kald fra en server, selvom den ikke sender CORS-headers.
 samme beløb investeres i en lagerbeskattet ETF frem for i aktier, der først beskattes
 ved salg. Alt regnes i browseren.
 
-**Siden står uden for navigationen.** Den er ikke med i `NAV`-listen i
-`assets/kursliste.js`, og den bærer `noindex, nofollow`. Der er med vilje ingen
-`robots.txt`-regel: den ville udstille stien for enhver, der læste filen.
+**Siden står bevidst uden for navigationen.** Den er ikke med i `NAV`-listen i
+`assets/kursliste.js`, ingen anden side linker til den, og den bærer `noindex, nofollow`.
+Man skal kende adressen for at komme derind. Der er med vilje ingen `robots.txt`-regel:
+den ville udstille stien for enhver, der læste filen.
 
-Den er til gengæld ikke længere skjult. `fond.html` linker til den to steder, fordi en
-lagerbeskattet fond er netop det sted, spørgsmålet melder sig. En crawler, der læser
-fondssiderne, finder den derfor — `noindex` holder den ude af søgeresultaterne, men
-adressen er ikke længere hemmelig. Skal den være det igen, skal de to links i
-`fond.html` ud.
+`fond.html` linkede til den to steder, mens den var åben. De links er væk igen, så en
+crawler der læser fondssiderne ikke finder vej. Fondssiden siger stadig at forskellen
+mellem udbyttebetalende og akkumulerende betyder noget for skatten — den peger bare
+ikke længere på hvor man kan regne på det.
 
 | Fil | Rolle |
 |---|---|
@@ -81,10 +81,9 @@ skattemodel, og den kan ikke svare på hvor meget der skal sælges brutto, når 
 udløser den skat der skal betales af salget. Bruttobeløbet findes i stedet numerisk for
 hver enkelt måned.
 
-**Siden står bevidst uden for navigationen:** ikke i `NAV`-listen, ingen anden side
-linker til den, `noindex, nofollow`, ingen `robots.txt`. Til forskel fra
-lagerskatberegneren er den stadig uden indgående links og dermed reelt skjult. Det er
-skjulthed, ikke adgangskontrol — kender man adressen, er man inde.
+**Siden står bevidst uden for navigationen**, på samme vilkår som lagerskatberegneren:
+ikke i `NAV`-listen, ingen anden side linker til den, `noindex, nofollow`, ingen
+`robots.txt`. Det er skjulthed, ikke adgangskontrol — kender man adressen, er man inde.
 
 | Fil | Rolle |
 |---|---|
