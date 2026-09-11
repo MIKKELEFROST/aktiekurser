@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-10T19:21:45.637Z",
+  "updated_at": "2026-09-11T19:23:10.502Z",
   "source": "Yahoo Finance",
   "symbol": "LIN",
   "summary": "Linde plc operates as an industrial gas company worldwide. The company offers atmospheric gases, including oxygen, nitrogen, argon, and rare gases; and process gases, such as hydrogen, helium, carbon dioxide, carbon monoxide, electronic gases, specialty gases, and acetylene. It also engages in the design and construction of turnkey process plants for third-party customers, as well as for its gas businesses, including air separation, hydrogen, synthesis, olefin, and natural gas plants. The company serves the healthcare, chemicals and energy, manufacturing, metals and mining, food and beverage, and electronics industries. It operates in the United States, Brazil, Mexico, Canada, Germany, the United Kingdom, Eastern Europe, China, Australia, South Korea, and India. Linde plc was founded in 1879 and is based in Woking, the United Kingdom.",
@@ -10,19 +10,19 @@
   "next_earnings": "2026-10-30",
   "earnings_estimated": false,
   "earnings_call": "2026-07-31",
-  "eps_estimate": 4.51741,
+  "eps_estimate": 4.517,
   "analysts": {
     "strong_buy": 5,
-    "buy": 16,
+    "buy": 17,
     "hold": 5,
     "sell": 1,
     "strong_sell": 0,
-    "total": 27
+    "total": 28
   },
-  "target_mean": 544.5417,
+  "target_mean": 544.4,
   "target_high": 580,
   "target_low": 400,
-  "target_analysts": 24,
+  "target_analysts": 25,
   "statements": [
     {
       "year": "2022",
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.073,
-    "q1": 0.078,
-    "y0": 0.086,
-    "y1": 0.094
+    "q0": 0.0729,
+    "q1": 0.0784,
+    "y0": 0.0859,
+    "y1": 0.0941
   },
   "ratings": [
+    {
+      "date": "2026-09-11",
+      "firm": "Keybanc",
+      "from": null,
+      "to": "Overweight",
+      "action": "init"
+    },
     {
       "date": "2026-08-10",
       "firm": "BMO Capital",
@@ -139,13 +146,6 @@
       "firm": "JP Morgan",
       "from": "Overweight",
       "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-05-04",
-      "firm": "Citigroup",
-      "from": "Buy",
-      "to": "Buy",
       "action": "main"
     }
   ],
@@ -223,28 +223,28 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 18,
+    "buys": 13,
     "sells": 3,
-    "bought": 87570,
+    "bought": 85220,
     "sold": 16092,
-    "net_pct": 6.6
+    "net_pct": 6.4
   },
   "extras": {
     "beta": 0.727,
-    "enterprise_value": 239780397056,
-    "ev_ebitda": 17.348,
-    "ev_revenue": 6.764,
+    "enterprise_value": 237461667840,
+    "ev_ebitda": 17.18,
+    "ev_revenue": 6.699,
     "float_shares": 459412830,
-    "short_shares": 4915056,
-    "short_pct_float": 1.07,
-    "short_ratio": 2.31,
+    "short_shares": 5392480,
+    "short_pct_float": 1.17,
+    "short_ratio": 2.47,
     "last_split": "2:1",
     "last_split_date": "2003-12-16"
   },
   "ex_dividend": "2026-09-03",
   "dividend_date": null,
   "payout_ratio": 0.4,
-  "inst_count": 3371,
+  "inst_count": 3370,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -300,12 +300,12 @@
       "date": "2026-05-15"
     },
     {
-      "name": "BICHARA GUILLERMO",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 480.79 per share.",
-      "value": 2094802,
-      "shares": 4357,
+      "name": "DURBIN SEAN",
+      "role": "Chief Operating Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 173.13 per share.",
+      "value": 1219701,
+      "shares": 7045,
       "date": "2026-03-10"
     },
     {
@@ -318,40 +318,13 @@
       "date": "2026-03-10"
     },
     {
-      "name": "DURBIN SEAN",
-      "role": "Chief Operating Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 173.13 per share.",
-      "value": 1219701,
-      "shares": 7045,
+      "name": "BICHARA GUILLERMO",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 480.79 per share.",
+      "value": 2094802,
+      "shares": 4357,
       "date": "2026-03-10"
-    },
-    {
-      "name": "PATWARI BINOD",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 938,
-      "date": "2026-03-09"
-    },
-    {
-      "name": "PATWARI BINOD",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 938,
-      "date": "2026-03-09"
-    },
-    {
-      "name": "BACHER DESIREE",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 1247,
-      "date": "2026-03-09"
     },
     {
       "name": "GLAZER BENJAMIN",
@@ -360,6 +333,33 @@
       "text": null,
       "value": null,
       "shares": 4632,
+      "date": "2026-03-09"
+    },
+    {
+      "name": "WEISSER ALBERTO",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 470,
+      "date": "2026-03-09"
+    },
+    {
+      "name": "LAMBA SANJIV",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 33922,
+      "date": "2026-03-09"
+    },
+    {
+      "name": "KAESER JOSEF",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 470,
       "date": "2026-03-09"
     }
   ],

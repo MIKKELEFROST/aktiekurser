@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-10T19:21:44.955Z",
+  "updated_at": "2026-09-11T19:23:09.938Z",
   "source": "Yahoo Finance",
   "symbol": "DAL",
   "summary": "Delta Air Lines, Inc. provides scheduled air transportation for passengers and cargo in the United States and internationally. The company operates through two segments, Airline and Refinery. Its domestic network centered on core hubs in Atlanta, Detroit, Minneapolis-St. Paul, and Salt Lake City, as well as coastal hub positions in Boston, Los Angeles, New York-LaGuardia, New York-JFK, and Seattle; and international network centered on hubs and market presence in Amsterdam, Bogota, Lima, Mexico City, London-Heathrow, Paris-Charles de Gaulle, Santiago (Chile), Sao Paulo, Seoul-Incheon, and Tokyo. It also provides aircraft maintenance and engineering support, repair, and overhaul services; and vacation packages. The company operates through a fleet of approximately 1,314 aircraft. Delta Air Lines, Inc. was founded in 1924 and is headquartered in Atlanta, Georgia.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-08",
   "earnings_estimated": true,
   "earnings_call": "2026-07-10",
-  "eps_estimate": 2.11192,
+  "eps_estimate": 2.06028,
   "analysts": {
     "strong_buy": 5,
     "buy": 19,
@@ -19,19 +19,72 @@
     "strong_sell": 1,
     "total": 25
   },
-  "target_mean": 105.1875,
+  "target_mean": 104.22917,
   "target_high": 125,
   "target_low": 50,
   "target_analysts": 24,
-  "statements": null,
-  "quarterly": [],
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 50582000000,
+      "net": 1318000000,
+      "margin": 2.6
+    },
+    {
+      "year": "2023",
+      "revenue": 58048000000,
+      "net": 4609000000,
+      "margin": 7.9
+    },
+    {
+      "year": "2024",
+      "revenue": 61643000000,
+      "net": 3457000000,
+      "margin": 5.6
+    },
+    {
+      "year": "2025",
+      "revenue": 63364000000,
+      "net": 5005000000,
+      "margin": 7.9
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 16673000000,
+      "earnings": 1417000000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 16003000000,
+      "earnings": 1219000000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 15854000000,
+      "earnings": -289000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 19757000000,
+      "earnings": 1604000000
+    }
+  ],
   "growth": {
-    "q0": 0.235,
-    "q1": 0.38729998,
-    "y0": 0.113000005,
-    "y1": 0.3422
+    "q0": 0.2048,
+    "q1": 0.35830003,
+    "y0": 0.098400004,
+    "y1": 0.3459
   },
   "ratings": [
+    {
+      "date": "2026-09-11",
+      "firm": "Barclays",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-09-10",
       "firm": "UBS",
@@ -93,13 +146,6 @@
       "firm": "Jefferies",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-07",
-      "firm": "Susquehanna",
-      "from": "Positive",
-      "to": "Positive",
       "action": "main"
     }
   ],
@@ -185,20 +231,20 @@
   },
   "extras": {
     "beta": 1.291,
-    "enterprise_value": 67926994944,
-    "ev_ebitda": 9.048,
-    "ev_revenue": 0.995,
+    "enterprise_value": 67593416704,
+    "ev_ebitda": 9.004,
+    "ev_revenue": 0.99,
     "float_shares": 649739825,
-    "short_shares": 22552888,
-    "short_pct_float": 3.45,
-    "short_ratio": 4.23,
+    "short_shares": 25258577,
+    "short_pct_float": 3.86,
+    "short_ratio": 5.43,
     "last_split": null,
     "last_split_date": null
   },
   "ex_dividend": "2026-07-09",
   "dividend_date": null,
   "payout_ratio": 0.1244,
-  "inst_count": 1937,
+  "inst_count": 1936,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -254,21 +300,12 @@
       "date": "2026-08-05"
     },
     {
-      "name": "BELLEMARE ALAIN",
-      "role": "Officer",
+      "name": "BASTIAN EDWARD H",
+      "role": "Chief Executive Officer",
       "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 39.78 per share.",
-      "value": 1392300,
-      "shares": 35000,
-      "date": "2026-08-04"
-    },
-    {
-      "name": "BELLEMARE ALAIN",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 39.78 per share.",
-      "value": 1392300,
-      "shares": 35000,
+      "text": "Conversion of Exercise of derivative security at price 49.33 per share.",
+      "value": 10187138,
+      "shares": 206510,
       "date": "2026-08-04"
     },
     {
@@ -281,11 +318,29 @@
       "date": "2026-08-04"
     },
     {
+      "name": "BELLEMARE ALAIN",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 39.78 per share.",
+      "value": 1392300,
+      "shares": 35000,
+      "date": "2026-08-04"
+    },
+    {
+      "name": "BELLEMARE ALAIN",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 39.78 per share.",
+      "value": 1392300,
+      "shares": 35000,
+      "date": "2026-08-04"
+    },
+    {
       "name": "BASTIAN EDWARD H",
       "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 49.33 per share.",
-      "value": 10187138,
+      "kind": "sell",
+      "text": "Sale at price 92.80 per share.",
+      "value": 19163302,
       "shares": 206510,
       "date": "2026-08-04"
     },
@@ -305,15 +360,6 @@
       "text": "Sale at price 92.72 per share.",
       "value": 3245165,
       "shares": 35000,
-      "date": "2026-08-04"
-    },
-    {
-      "name": "CARTER PETER W",
-      "role": "President",
-      "kind": "sell",
-      "text": "Sale at price 92.98 per share.",
-      "value": 3709942,
-      "shares": 39900,
       "date": "2026-08-04"
     }
   ],

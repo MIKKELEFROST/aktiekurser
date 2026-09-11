@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-10T19:21:45.544Z",
+  "updated_at": "2026-09-11T19:23:10.431Z",
   "source": "Yahoo Finance",
   "symbol": "KBH",
   "summary": "KB Home operates as a homebuilding company in the United States. It builds and sells homes, including attached and detached single-family residential homes, townhomes, and condominiums primarily for first-time, first move-up, second move-up, and active adult homebuyers. The company also provides financial services, such as mortgage banking services, such as residential consumer mortgage loan originations to homebuyers; property and casualty insurance services, as well as earthquake, flood, and personal property insurance products to homebuyers; and title services. It conducts operations in Arizona, California, Colorado, Florida, Idaho, Nevada, North Carolina, Texas, and Washington. The company was formerly known as Kaufman and Broad Home Corporation and changed its name to KB Home in January 2001. KB Home was founded in 1957 and is based in Los Angeles, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-09-22",
   "earnings_estimated": false,
   "earnings_call": "2026-09-22",
-  "eps_estimate": 0.88053,
+  "eps_estimate": 0.8778,
   "analysts": {
     "strong_buy": 2,
     "buy": 1,
@@ -23,15 +23,68 @@
   "target_high": 77,
   "target_low": 43,
   "target_analysts": 12,
-  "statements": null,
-  "quarterly": [],
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 6903776000,
+      "net": 816666000,
+      "margin": 11.8
+    },
+    {
+      "year": "2023",
+      "revenue": 6410629000,
+      "net": 590177000,
+      "margin": 9.2
+    },
+    {
+      "year": "2024",
+      "revenue": 6930086000,
+      "net": 655018000,
+      "margin": 9.5
+    },
+    {
+      "year": "2025",
+      "revenue": 6236214000,
+      "net": 428789000,
+      "margin": 6.9
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 1620474000,
+      "earnings": 109828000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 1694378000,
+      "earnings": 101521000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 1077011000,
+      "earnings": 33424000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 1112435000,
+      "earnings": 27349000
+    }
+  ],
   "growth": {
-    "q0": -0.45310003,
-    "q1": -0.22379999,
-    "y0": -0.5102,
-    "y1": 0.3437
+    "q0": -0.4548,
+    "q1": -0.2313,
+    "y0": -0.5129,
+    "y1": 0.3275
   },
   "ratings": [
+    {
+      "date": "2026-09-11",
+      "firm": "Wells Fargo",
+      "from": "Underweight",
+      "to": "Underweight",
+      "action": "main"
+    },
     {
       "date": "2026-09-10",
       "firm": "Citizens",
@@ -94,13 +147,6 @@
       "from": "In-Line",
       "to": "In-Line",
       "action": "main"
-    },
-    {
-      "date": "2026-04-07",
-      "firm": "Seaport Global",
-      "from": "Buy",
-      "to": "Sell",
-      "action": "down"
     }
   ],
   "holders": [
@@ -185,20 +231,20 @@
   },
   "extras": {
     "beta": 1.336,
-    "enterprise_value": 4847787008,
-    "ev_ebitda": 11.725,
-    "ev_revenue": 0.881,
+    "enterprise_value": 4726393344,
+    "ev_ebitda": 11.432,
+    "ev_revenue": 0.859,
     "float_shares": 58453921,
-    "short_shares": 7455994,
-    "short_pct_float": 20.32,
-    "short_ratio": 7.67,
+    "short_shares": 7544647,
+    "short_pct_float": 20.56,
+    "short_ratio": 8.89,
     "last_split": "2:1",
     "last_split_date": "2005-04-29"
   },
   "ex_dividend": "2026-08-06",
   "dividend_date": null,
   "payout_ratio": 0.2433,
-  "inst_count": 510,
+  "inst_count": 509,
   "eps_history": [
     {
       "quarter": "2025-08-31",

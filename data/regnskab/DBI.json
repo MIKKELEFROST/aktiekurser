@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-10T19:21:44.959Z",
+  "updated_at": "2026-09-11T19:23:09.942Z",
   "source": "Yahoo Finance",
   "symbol": "DBI",
   "summary": "Designer Brands Inc., together with its subsidiaries, engages in the design, production, and retailing of footwear and accessories in the United States, Canada, and internationally. It operates through two segments: Retail and Brand Portfolio. The company offers dress, casual, and athletic footwear and accessories, as well as handbags for women, men, and kids. It sells its products under the Vince Camuto, Keds, Topo, as well as Jessica Simpson, Lucky Brand, Le Tigre, and Hush Puppies brands. The company offers its products through its direct-to-consumer stores and e-commerce sites; and a portfolio of banners, including DSW Designer Shoe Warehouse, The Shoe Co, and Rubino; and mobiles applications. The company was founded in 1991 and is based in Columbus, Ohio.",
@@ -7,10 +7,10 @@
   "website": "https://www.designerbrands.com",
   "employees": 13000,
   "ceo": "Mr. Douglas M. Howe",
-  "next_earnings": "2026-09-10",
-  "earnings_estimated": false,
+  "next_earnings": "2026-12-08",
+  "earnings_estimated": true,
   "earnings_call": null,
-  "eps_estimate": 0.2578,
+  "eps_estimate": 0.27759,
   "analysts": {
     "strong_buy": 0,
     "buy": 0,
@@ -51,6 +51,11 @@
   ],
   "quarterly": [
     {
+      "q": "2Q2025",
+      "revenue": 739762000,
+      "earnings": 0
+    },
+    {
       "q": "3Q2025",
       "revenue": 752411000,
       "earnings": 0
@@ -64,16 +69,11 @@
       "q": "1Q2026",
       "revenue": 696350000,
       "earnings": 0
-    },
-    {
-      "q": "2Q2026",
-      "revenue": 730631000,
-      "earnings": 17557000
     }
   ],
   "growth": {
-    "q0": -0.24180001,
-    "q1": -0.26950002,
+    "q0": -0.26950002,
+    "q1": 0.2383,
     "y0": 1.4429,
     "y1": 0.4996
   },
@@ -227,31 +227,25 @@
     "sells": 1,
     "bought": 895792,
     "sold": 34708,
-    "net_pct": 10.7
+    "net_pct": 9.7
   },
   "extras": {
-    "beta": 1.249,
-    "enterprise_value": 1444984320,
-    "ev_ebitda": 10.856,
-    "ev_revenue": 0.498,
-    "float_shares": 28690065,
-    "short_shares": 5323673,
-    "short_pct_float": 36.76,
-    "short_ratio": 13.03,
+    "beta": null,
+    "enterprise_value": 1498941312,
+    "ev_ebitda": 9.396,
+    "ev_revenue": 0.518,
+    "float_shares": 31626429,
+    "short_shares": 5156157,
+    "short_pct_float": 35.6,
+    "short_ratio": 12.12,
     "last_split": "2:1",
     "last_split_date": "2013-11-04"
   },
   "ex_dividend": "2026-06-25",
   "dividend_date": null,
-  "payout_ratio": 0.6818,
+  "payout_ratio": 0.625,
   "inst_count": 195,
   "eps_history": [
-    {
-      "quarter": "2025-07-31",
-      "estimate": 0.22344,
-      "actual": 0.34,
-      "surprise_pct": 52.17
-    },
     {
       "quarter": "2025-10-31",
       "estimate": 0.17823,
@@ -269,6 +263,12 @@
       "estimate": 0.03488,
       "actual": 0.07,
       "surprise_pct": 100.69
+    },
+    {
+      "quarter": "2026-07-31",
+      "estimate": 0.2578,
+      "actual": 0.34,
+      "surprise_pct": 31.89
     }
   ],
   "insiders": [

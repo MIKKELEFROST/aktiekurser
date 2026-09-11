@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-10T19:21:45.584Z",
+  "updated_at": "2026-09-11T19:23:10.462Z",
   "source": "Yahoo Finance",
   "symbol": "KR",
   "summary": "The Kroger Co. operates as a food and drug retailer in the United States. The company operates combination food and drug stores, multi-department stores, marketplace stores, and price impact warehouses. Its combination food and drug stores offer natural food and organic sections, pharmacies, general merchandise, pet centers, fresh seafood, and organic produce; and its multi-department stores provide apparel, home fashion and furnishings, outdoor living, electronics, automotive products, and toys. The company's marketplace stores offer full-service grocery, pharmacy, health and beauty care, and perishable goods, as well as general merchandise, including apparel, home goods, and toys; and its price impact warehouse stores provide grocery, and health and beauty care items, as well as meat, dairy, baked goods, and fresh produce items. It also manufactures and processes food products for sale in its supermarkets and online; and sells fuel through its fuel centers. The company sells its products through its stores, fuel centers, and online platforms. The Kroger Co. was founded in 1883 and is based in Cincinnati, Ohio.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-09-11",
   "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": 1.05482,
+  "eps_estimate": 1.17029,
   "analysts": {
     "strong_buy": 0,
     "buy": 11,
@@ -19,17 +19,63 @@
     "strong_sell": 0,
     "total": 24
   },
-  "target_mean": 70.27273,
+  "target_mean": 69.77273,
   "target_high": 86,
   "target_low": 57,
   "target_analysts": 22,
-  "statements": null,
-  "quarterly": [],
+  "statements": [
+    {
+      "year": "2023",
+      "revenue": 148258000000,
+      "net": 2244000000,
+      "margin": 1.5
+    },
+    {
+      "year": "2024",
+      "revenue": 150039000000,
+      "net": 2164000000,
+      "margin": 1.4
+    },
+    {
+      "year": "2025",
+      "revenue": 147123000000,
+      "net": 2665000000,
+      "margin": 1.8
+    },
+    {
+      "year": "2026",
+      "revenue": 147642000000,
+      "net": 1016000000,
+      "margin": 0.7
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 33859000000,
+      "earnings": -1320000000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 34725000000,
+      "earnings": 861000000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 46121000000,
+      "earnings": 903000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 34621000000,
+      "earnings": 641000000
+    }
+  ],
   "growth": {
-    "q0": 0.0143,
-    "q1": 0.1169,
-    "y0": 0.0744,
-    "y1": 0.0621
+    "q0": 0.1146,
+    "q1": 0.082399994,
+    "y0": 0.072,
+    "y1": 0.06
   },
   "ratings": [
     {
@@ -185,13 +231,13 @@
   },
   "extras": {
     "beta": 0.406,
-    "enterprise_value": 66331312128,
-    "ev_ebitda": 8.209,
-    "ev_revenue": 0.446,
+    "enterprise_value": 66737995776,
+    "ev_ebitda": 8.26,
+    "ev_revenue": 0.449,
     "float_shares": 793591118,
-    "short_shares": 27697814,
-    "short_pct_float": 4.54,
-    "short_ratio": 4.32,
+    "short_shares": 28596616,
+    "short_pct_float": 4.69,
+    "short_ratio": 4.8,
     "last_split": "2:1",
     "last_split_date": "2015-07-14"
   },
@@ -200,12 +246,6 @@
   "payout_ratio": 0.80120003,
   "inst_count": 1775,
   "eps_history": [
-    {
-      "quarter": "2025-07-31",
-      "estimate": 0.99762,
-      "actual": 1.04,
-      "surprise_pct": 4.25
-    },
     {
       "quarter": "2025-10-31",
       "estimate": 1.0326,
@@ -223,6 +263,12 @@
       "estimate": 1.59316,
       "actual": 1.58,
       "surprise_pct": -0.83
+    },
+    {
+      "quarter": "2026-07-31",
+      "estimate": 1.05256,
+      "actual": 1.09,
+      "surprise_pct": 3.56
     }
   ],
   "insiders": [

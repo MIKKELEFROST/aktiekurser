@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-10T19:21:44.377Z",
+  "updated_at": "2026-09-11T19:23:09.494Z",
   "source": "Yahoo Finance",
   "symbol": "AI",
   "summary": "C3.ai, Inc. operates as an enterprise artificial intelligence application software company in North America, Europe, the Middle East, Africa, the Asia Pacific, and internationally. It offers C3 agentic AI platform, an application development and runtime environment that enables customers to design, develop, and deploy enterprise AI applications; C3 AI Studio, an integrated development environment in the C3 Agentic AI Platform that enables engineers, data scientists, and business analysts to design, build, test, and deploy AI applications; C3 AI Applications, a portfolio of industry-specific enterprise AI applications that enables the digital transformation of organizations globally; and C3 Generative AI, a library of agentic AI applications to retrieve data, analyze information, surface insights, and orchestrate workflows. The company also provides C3 Code, a solution that enables users to build, configure, and deploy a complete and production-grade Enterprise AI applications automatically, including data pipelines, AI models, business logic, security controls, and user interfaces. It has strategic partnerships with Microsoft, AWS, Google Cloud, McKinsey & Company, and Baker Hughes. The company was formerly known as C3 IoT, Inc. and changed its name to C3.ai, Inc. in June 2019. C3.ai, Inc. was incorporated in 2009 and is headquartered in Redwood City, California.",
@@ -19,7 +19,7 @@
     "strong_sell": 3,
     "total": 14
   },
-  "target_mean": 8.81818,
+  "target_mean": 8.90909,
   "target_high": 15,
   "target_low": 6,
   "target_analysts": 11,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 70261000,
-      "earnings": -116769000
-    },
-    {
       "q": "3Q2025",
       "revenue": 75147000,
       "earnings": -104668000
@@ -69,13 +64,18 @@
       "q": "1Q2026",
       "revenue": 51600000,
       "earnings": -115570000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 52375000,
+      "earnings": -92812000
     }
   ],
   "growth": {
     "q0": 0.1498,
     "q1": 0.5373,
-    "y0": 0.4356,
-    "y1": 0.3676
+    "y0": 0.4361,
+    "y1": 0.3725
   },
   "ratings": [
     {
@@ -153,70 +153,70 @@
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 9.1,
+      "pct": 9.06,
       "shares": 14255067,
       "date": "2026-06-30"
     },
     {
       "name": "Vanguard Portfolio Management LLC",
       "kind": "institution",
-      "pct": 5.73,
+      "pct": 5.7,
       "shares": 8967629,
       "date": "2026-06-30"
     },
     {
       "name": "Vanguard Capital Management LLC",
       "kind": "institution",
-      "pct": 3.83,
+      "pct": 3.81,
       "shares": 5991015,
       "date": "2026-06-30"
     },
     {
       "name": "Morgan Stanley",
       "kind": "institution",
-      "pct": 3.21,
+      "pct": 3.2,
       "shares": 5025836,
       "date": "2026-06-30"
     },
     {
       "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
       "kind": "fond",
-      "pct": 2.72,
+      "pct": 2.71,
       "shares": 4254833,
       "date": "2026-06-30"
     },
     {
       "name": "BNP Paribas Financial Markets",
       "kind": "institution",
-      "pct": 2.26,
+      "pct": 2.25,
       "shares": 3543864,
       "date": "2026-06-30"
     },
     {
       "name": "iShares Trust-iShares Russell 2000 ETF",
       "kind": "fond",
-      "pct": 2.25,
+      "pct": 2.24,
       "shares": 3529753,
       "date": "2026-06-30"
     },
     {
       "name": "State Street Corporation",
       "kind": "institution",
-      "pct": 2.23,
+      "pct": 2.22,
       "shares": 3488324,
       "date": "2026-06-30"
     },
     {
       "name": "GLOBAL X FUNDS-Global X Artificial Intelligence & Technology ETF",
       "kind": "fond",
-      "pct": 2.2,
+      "pct": 2.19,
       "shares": 3441008,
       "date": "2026-07-31"
     },
     {
       "name": "Geode Capital Management, LLC",
       "kind": "institution",
-      "pct": 2.19,
+      "pct": 2.18,
       "shares": 3431376,
       "date": "2026-06-30"
     }
@@ -227,17 +227,17 @@
     "sells": 17,
     "bought": 15901195,
     "sold": 2849787,
-    "net_pct": 15151.1
+    "net_pct": 46146.1
   },
   "extras": {
     "beta": 2.093,
-    "enterprise_value": 1077290880,
-    "ev_ebitda": -2.41,
-    "ev_revenue": 4.636,
+    "enterprise_value": 1091761152,
+    "ev_ebitda": -2.442,
+    "ev_revenue": 4.698,
     "float_shares": 143733976,
-    "short_shares": 48144524,
-    "short_pct_float": 32.61,
-    "short_ratio": 9.65,
+    "short_shares": 46699653,
+    "short_pct_float": 31.49,
+    "short_ratio": 10.08,
     "last_split": null,
     "last_split_date": null
   },
@@ -302,6 +302,15 @@
     {
       "name": "SIEBEL THOMAS M",
       "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 3.90 per share.",
+      "value": 1767925,
+      "shares": 453314,
+      "date": "2026-08-11"
+    },
+    {
+      "name": "SIEBEL THOMAS M",
+      "role": "Chief Executive Officer",
       "kind": "sell",
       "text": "Sale at price 10.51 per share.",
       "value": 4764330,
@@ -312,10 +321,10 @@
       "name": "SIEBEL THOMAS M",
       "role": "Chief Executive Officer",
       "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 3.90 per share.",
-      "value": 1767925,
-      "shares": 453314,
-      "date": "2026-08-11"
+      "text": "Stock Gift at price 0.00 per share.",
+      "value": 0,
+      "shares": 143834,
+      "date": "2026-08-04"
     },
     {
       "name": "LATH HITESH",
@@ -324,15 +333,6 @@
       "text": "Sale at price 10.00 per share.",
       "value": 200000,
       "shares": 20000,
-      "date": "2026-08-04"
-    },
-    {
-      "name": "SIEBEL THOMAS M",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Stock Gift at price 0.00 per share.",
-      "value": 0,
-      "shares": 143834,
       "date": "2026-08-04"
     },
     {
@@ -356,9 +356,9 @@
     {
       "name": "SIEBEL THOMAS M",
       "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 9.07 - 9.32 per share.",
-      "value": 4244431,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 2.04 - 3.90 per share.",
+      "value": 1191924,
       "shares": 462565,
       "date": "2026-07-15"
     }

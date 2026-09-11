@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-10T19:21:45.204Z",
+  "updated_at": "2026-09-11T19:23:10.141Z",
   "source": "Yahoo Finance",
   "symbol": "FMC",
   "summary": "FMC Corporation, an agricultural sciences company, develops, markets, and sells crop protection chemicals in Latin America, North America, Europe, the Middle East, Africa, and Asia. The company offers crop protection chemicals, including insecticides, herbicides, and fungicides. It also provides biologicals, crop nutrition, and seed treatment products. It markets its products through its sales organization and alliance partners, independent distributors, and sales representatives. The company was founded in 1883 and is headquartered in Philadelphia, Pennsylvania.",
@@ -10,19 +10,19 @@
   "next_earnings": "2026-10-28",
   "earnings_estimated": true,
   "earnings_call": "2026-07-30",
-  "eps_estimate": 0.11039,
+  "eps_estimate": 0.10969,
   "analysts": {
     "strong_buy": 0,
-    "buy": 5,
+    "buy": 6,
     "hold": 9,
     "sell": 1,
     "strong_sell": 1,
-    "total": 16
+    "total": 17
   },
-  "target_mean": 13.41333,
+  "target_mean": 13.575,
   "target_high": 21,
   "target_low": 11,
-  "target_analysts": 15,
+  "target_analysts": 16,
   "statements": [
     {
       "year": "2022",
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": -0.876,
-    "q1": -0.0942,
-    "y0": -0.5636,
-    "y1": 0.2714
+    "q0": -0.8768,
+    "q1": -0.090100005,
+    "y0": -0.56340003,
+    "y1": 0.25530002
   },
   "ratings": [
+    {
+      "date": "2026-09-11",
+      "firm": "Keybanc",
+      "from": null,
+      "to": "Overweight",
+      "action": "init"
+    },
     {
       "date": "2026-08-03",
       "firm": "RBC Capital",
@@ -139,13 +146,6 @@
       "firm": "RBC Capital",
       "from": "Sector Perform",
       "to": "Sector Perform",
-      "action": "main"
-    },
-    {
-      "date": "2026-05-01",
-      "firm": "JP Morgan",
-      "from": "Neutral",
-      "to": "Neutral",
       "action": "main"
     }
   ],
@@ -223,28 +223,28 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 0,
-    "sells": 0,
-    "bought": 0,
-    "sold": null,
-    "net_pct": null
+    "buys": 29,
+    "sells": 1,
+    "bought": 75107,
+    "sold": 1251,
+    "net_pct": 6.8
   },
   "extras": {
     "beta": 0.418,
-    "enterprise_value": 5489437696,
-    "ev_ebitda": 20.384,
-    "ev_revenue": 1.688,
+    "enterprise_value": 5463140352,
+    "ev_ebitda": 20.286,
+    "ev_revenue": 1.68,
     "float_shares": 115961305,
-    "short_shares": 29686123,
-    "short_pct_float": 31.36,
-    "short_ratio": 7.96,
+    "short_shares": 29561922,
+    "short_pct_float": 31.23,
+    "short_ratio": 9.83,
     "last_split": "1153:1000",
     "last_split_date": "2019-03-04"
   },
   "ex_dividend": "2026-09-30",
   "dividend_date": null,
   "payout_ratio": 2.2308,
-  "inst_count": 561,
+  "inst_count": 559,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "PFEIFFER NICHOLAS",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 12.78 per share.",
+      "value": 15982,
+      "shares": 1251,
+      "date": "2026-09-09"
+    },
     {
       "name": "BRONDEAU PIERRE R",
       "role": "Chief Executive Officer",
@@ -352,15 +361,6 @@
       "value": 0,
       "shares": 50,
       "date": "2026-07-16"
-    },
-    {
-      "name": "BARRY MICHAEL F",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 9175,
-      "date": "2026-04-28"
     }
   ],
   "dividends": [

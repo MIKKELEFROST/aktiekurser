@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-10T19:21:46.308Z",
+  "updated_at": "2026-09-11T19:23:11.433Z",
   "source": "Yahoo Finance",
   "symbol": "STNE",
   "summary": "StoneCo Ltd. provides financial technology and software solutions to merchants and integrated partners to conduct electronic commerce across in-store, online, and mobile channels in Brazil. The company provides financial services, including payment, prepayment, digital banking, and credit solutions. It offers payment solutions of electronic payments and alternative payment methods, such as payment slips and Pix transactions; digital product to help merchants improve their consumers' experience, which include split-payment processing, multi-payment processing, and recurring payments for subscriptions; and tap on phone solution. In addition, the company provides prepayment; digital banking; and credit solution. The company serves online, offline, and omni-channel sales clients under Stone, tonstone, and paggar.me. StoneCo Ltd. was founded in 2012 and is based in George Town, the Cayman Islands.",
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 17
   },
-  "target_mean": 15.246055,
-  "target_high": 23.715668,
-  "target_low": 9.145086,
+  "target_mean": 14.768842,
+  "target_high": 23.611061,
+  "target_low": 9.104748,
   "target_analysts": 17,
   "statements": [
     {
@@ -51,6 +51,11 @@
   ],
   "quarterly": [
     {
+      "q": "2Q2025",
+      "revenue": 3500900000,
+      "earnings": 587200000
+    },
+    {
       "q": "3Q2025",
       "revenue": 3566790000,
       "earnings": 715250000
@@ -64,11 +69,6 @@
       "q": "1Q2026",
       "revenue": 3578000000,
       "earnings": 1780300000
-    },
-    {
-      "q": "2Q2026",
-      "revenue": 3587383000,
-      "earnings": 444593000
     }
   ],
   "growth": {
@@ -224,20 +224,20 @@
   "insider_net": {
     "period": "6m",
     "buys": 18,
-    "sells": 2,
+    "sells": 3,
     "bought": 581793,
-    "sold": 15800,
-    "net_pct": 8.1
+    "sold": 36800,
+    "net_pct": 7.8
   },
   "extras": {
     "beta": 1.616,
-    "enterprise_value": 11072153600,
-    "ev_ebitda": 1.623,
-    "ev_revenue": 0.815,
+    "enterprise_value": 11182839808,
+    "ev_ebitda": 1.64,
+    "ev_revenue": 0.823,
     "float_shares": 203300027,
-    "short_shares": 15750998,
-    "short_pct_float": 10.03,
-    "short_ratio": 3.99,
+    "short_shares": 20009096,
+    "short_pct_float": 12.74,
+    "short_ratio": 3.29,
     "last_split": null,
     "last_split_date": null
   },
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "MORAIS SILVIO JOSE",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 9.91 per share.",
+      "value": 208110,
+      "shares": 21000,
+      "date": "2026-09-02"
+    },
     {
       "name": "MORAIS SILVIO JOSE",
       "role": "Director",
@@ -351,15 +360,6 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 3869,
-      "date": "2026-05-07"
-    },
-    {
-      "name": "CALS DE BEAUCLAIR GUIMARAES LUIS HENRIQUE",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 2159,
       "date": "2026-05-07"
     }
   ],

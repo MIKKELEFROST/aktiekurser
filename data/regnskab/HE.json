@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-10T19:21:45.365Z",
+  "updated_at": "2026-09-11T19:23:10.271Z",
   "source": "Yahoo Finance",
   "symbol": "HE",
   "summary": "Hawaiian Electric Industries, Inc. together with its subsidiaries, engages in the electric utility business. The company engages in the production, purchase, transmission, distribution, and sale of electricity in the islands of Oahu; Hawaii; and Maui, Lanai, and Molokai; and renewable energy sources and potential sources include wind, solar, photovoltaic, geothermal, wave, hydroelectric, municipal waste, and other biofuels. It also invests in non-regulated renewable energy and sustainable infrastructure in the State of Hawaii. In addition, the company serves suburban communities, resorts, the United States Armed Forces installations, and agricultural operations. Hawaiian Electric Industries, Inc. was founded in 1891 and is headquartered in Honolulu, Hawaii.",
@@ -23,8 +23,54 @@
   "target_high": 12,
   "target_low": 7,
   "target_analysts": 4,
-  "statements": null,
-  "quarterly": [],
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 3741985000,
+      "net": 241138000,
+      "margin": 6.4
+    },
+    {
+      "year": "2023",
+      "revenue": 3682166000,
+      "net": 199238000,
+      "margin": 5.4
+    },
+    {
+      "year": "2024",
+      "revenue": 3219850000,
+      "net": -1426009000,
+      "margin": -44.3
+    },
+    {
+      "year": "2025",
+      "revenue": 3086896000,
+      "net": 123120000,
+      "margin": 4
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "1Q2023",
+      "revenue": 928237000,
+      "earnings": 54721000
+    },
+    {
+      "q": "2Q2023",
+      "revenue": 895685000,
+      "earnings": 54610000
+    },
+    {
+      "q": "3Q2023",
+      "revenue": 901873000,
+      "earnings": 0
+    },
+    {
+      "q": "4Q2023",
+      "revenue": 961351000,
+      "earnings": 0
+    }
+  ],
   "growth": {
     "q0": -0.1263,
     "q1": -0.2333,
@@ -185,20 +231,20 @@
   },
   "extras": {
     "beta": 0.494,
-    "enterprise_value": 4346203136,
-    "ev_ebitda": 8.442,
-    "ev_revenue": 1.324,
+    "enterprise_value": 4370385408,
+    "ev_ebitda": 8.489,
+    "ev_revenue": 1.331,
     "float_shares": 172068183,
-    "short_shares": 17130493,
-    "short_pct_float": 13.68,
-    "short_ratio": 9.49,
+    "short_shares": 17651938,
+    "short_pct_float": 14.1,
+    "short_ratio": 8.16,
     "last_split": "2:1",
     "last_split_date": "2004-06-14"
   },
   "ex_dividend": "2023-08-17",
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 435,
+  "inst_count": 434,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -226,24 +272,6 @@
     }
   ],
   "insiders": [
-    {
-      "name": "FOWLER PEGGY Y",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 9238,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "SCILACCI WILLIAM JAMES",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 9238,
-      "date": "2026-06-30"
-    },
     {
       "name": "AJELLO JAMES A",
       "role": "Director",
@@ -309,6 +337,24 @@
     },
     {
       "name": "AQUILINO JOHN C.",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 9238,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "FOWLER PEGGY Y",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 9238,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "SCILACCI WILLIAM JAMES",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

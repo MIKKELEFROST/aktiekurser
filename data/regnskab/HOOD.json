@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-10T19:21:45.401Z",
+  "updated_at": "2026-09-11T19:23:10.302Z",
   "source": "Yahoo Finance",
   "symbol": "HOOD",
   "summary": "Robinhood Markets, Inc. operates financial services platform in the United States. The company's platform allows users to invest in stocks, exchange-traded funds (ETFs), and American depository receipts. It offers fractional trading, recurring investments, access to investing on margin, fully-paid securities lending, cash sweep, instant withdrawals, retirement program, around-the-clock trading, joint investing accounts, event contracts, future contract services, and short selling. The company also provides various learning and education solutions comprise Snacks, an accessible digest of business news stories for a new generation of investors; Learn, which is an online collection of guides, feature tutorials, and financial dictionary; Newsfeeds that offer access to free, premium news from sites from various sites, such as Barron's, Reuters, and Dow Jones. In addition, the company offers In-App Education, a resource that covers investing fundamentals, including why people invest, a stock market overview, and tips on how to define investing goals, as well as allows customers to understand the basics of investing before their first trade; and Crypto Learn and Earn, an educational module available to various crypto customers through Robinhood Learn to teach customers the basics related to cryptocurrency. Further, it provides Robinhood credit cards, cash card and spending accounts, and wallets. Robinhood Markets, Inc. was incorporated in 2013 and is headquartered in Menlo Park, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": true,
   "earnings_call": "2026-07-29",
-  "eps_estimate": 0.65557,
+  "eps_estimate": 0.66223,
   "analysts": {
     "strong_buy": 6,
     "buy": 18,
@@ -19,7 +19,7 @@
     "strong_sell": 1,
     "total": 29
   },
-  "target_mean": 128.44963,
+  "target_mean": 128.89407,
   "target_high": 170,
   "target_low": 57,
   "target_analysts": 27,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": -0.036199998,
-    "q1": 0.0367,
-    "y0": 0.0837,
-    "y1": 0.3341
+    "q0": -0.026400002,
+    "q1": 0.045900002,
+    "y0": 0.0866,
+    "y1": 0.3352
   },
   "ratings": [
+    {
+      "date": "2026-09-11",
+      "firm": "Citizens",
+      "from": "Market Outperform",
+      "to": "Market Outperform",
+      "action": "main"
+    },
     {
       "date": "2026-09-09",
       "firm": "Mizuho",
@@ -140,13 +147,6 @@
       "from": "Equal-Weight",
       "to": "Overweight",
       "action": "up"
-    },
-    {
-      "date": "2026-08-03",
-      "firm": "Cantor Fitzgerald",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
     }
   ],
   "holders": [
@@ -224,27 +224,27 @@
   "insider_net": {
     "period": "6m",
     "buys": 42,
-    "sells": 31,
+    "sells": 32,
     "bought": 2233730,
-    "sold": 2579370,
-    "net_pct": -3.8
+    "sold": 2581245,
+    "net_pct": -3.9
   },
   "extras": {
     "beta": 2.34,
-    "enterprise_value": 102727204864,
+    "enterprise_value": 100973993984,
     "ev_ebitda": null,
-    "ev_revenue": 20.829,
+    "ev_revenue": 20.473,
     "float_shares": 783703045,
-    "short_shares": 33137696,
-    "short_pct_float": 4.24,
-    "short_ratio": 1.76,
+    "short_shares": 35537085,
+    "short_pct_float": 4.54,
+    "short_ratio": 1.91,
     "last_split": null,
     "last_split_date": null
   },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 1859,
+  "inst_count": 1858,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "TRESEDER OLUWADARA JOHNSON",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 125.00 per share.",
+      "value": 234375,
+      "shares": 1875,
+      "date": "2026-09-08"
+    },
     {
       "name": "GALLAGHER DANIEL MARTIN JR",
       "role": "Officer",
@@ -352,15 +361,6 @@
       "value": 4870628,
       "shares": 50317,
       "date": "2026-08-14"
-    },
-    {
-      "name": "GALLAGHER DANIEL MARTIN JR",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 86.28 - 91.80 per share.",
-      "value": 904192,
-      "shares": 10000,
-      "date": "2026-08-03"
     }
   ],
   "dividends": [],

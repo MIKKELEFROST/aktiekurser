@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-10T19:21:45.911Z",
+  "updated_at": "2026-09-11T19:23:10.743Z",
   "source": "Yahoo Finance",
   "symbol": "OMDA",
   "summary": "Omada Health, Inc., together with its subsidiary, Physera, Inc., provides a range of virtual care programs in the United States. The company offers cardiometabolic programs for prediabetes, diabetes, and hypertension; a physical therapy program to address musculoskeletal conditions; other support programs for members taking glucagon-like peptide-1 agonists in its cardiometabolic program; and weight management programs, as well as various behavioral health support programs. It also delivers virtual care. The company offers its programs for employers, health plans and systems, and pharmacy benefits managers through its direct sales force and channel partners. The company was incorporated in 2011 and is headquartered in South San Francisco, California.",
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 12
   },
-  "target_mean": 28.25,
+  "target_mean": 28.41667,
   "target_high": 35,
   "target_low": 22,
   "target_analysts": 12,
@@ -67,6 +67,27 @@
   },
   "ratings": [
     {
+      "date": "2026-09-11",
+      "firm": "Barclays",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-09-11",
+      "firm": "Needham",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "reit"
+    },
+    {
+      "date": "2026-09-11",
+      "firm": "BTIG",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "reit"
+    },
+    {
       "date": "2026-08-14",
       "firm": "JP Morgan",
       "from": "Overweight",
@@ -113,27 +134,6 @@
       "firm": "Citizens",
       "from": "Market Outperform",
       "to": "Market Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-17",
-      "firm": "BTIG",
-      "from": null,
-      "to": "Buy",
-      "action": "init"
-    },
-    {
-      "date": "2026-06-22",
-      "firm": "Morgan Stanley",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "reit"
-    },
-    {
-      "date": "2026-05-08",
-      "firm": "Barclays",
-      "from": "Overweight",
-      "to": "Overweight",
       "action": "main"
     }
   ],
@@ -212,10 +212,10 @@
   "insider_net": {
     "period": "6m",
     "buys": 42,
-    "sells": 38,
+    "sells": 37,
     "bought": 1107094,
-    "sold": 422913,
-    "net_pct": 106
+    "sold": 418850,
+    "net_pct": 108.1
   },
   "extras": {
     "beta": null,
@@ -223,16 +223,16 @@
     "ev_ebitda": 201.519,
     "ev_revenue": 3.533,
     "float_shares": 50835575,
-    "short_shares": 5887161,
-    "short_pct_float": 9.8,
-    "short_ratio": 3.72,
+    "short_shares": 5742536,
+    "short_pct_float": 9.56,
+    "short_ratio": 4.05,
     "last_split": null,
     "last_split_date": null
   },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 206,
+  "inst_count": 207,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -333,21 +333,21 @@
       "date": "2026-08-11"
     },
     {
-      "name": "DUFFY SEAN P",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 20.90 - 24.81 per share.",
-      "value": 509580,
-      "shares": 21570,
-      "date": "2026-08-10"
-    },
-    {
       "name": "GRACEY CRAIG",
       "role": "Officer",
       "kind": "sell",
       "text": "Sale at price 25.00 per share.",
       "value": 26050,
       "shares": 1042,
+      "date": "2026-08-10"
+    },
+    {
+      "name": "DUFFY SEAN P",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 20.90 - 24.81 per share.",
+      "value": 509580,
+      "shares": 21570,
       "date": "2026-08-10"
     }
   ],

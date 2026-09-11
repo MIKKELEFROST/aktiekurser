@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-10T19:21:46.241Z",
+  "updated_at": "2026-09-11T19:23:11.008Z",
   "source": "Yahoo Finance",
   "symbol": "SMP",
   "summary": "Standard Motor Products, Inc. manufactures and distributes replacement automotive parts in the United States, Europe, Canada, Mexico, Poland, and internationally. The company operates through four segments: Vehicle Control, Temperature Control, Nissens Automotive, and Engineered Solutions. It provides ignition, emissions, and fuel delivery systems, such as air injection and induction components, air management valves, regulators and solenoids, exhaust gas recirculation components, fuel injectors and components, fuel valves, ignition coils, connectors and sockets, modules, pumps, relays and fuses, starting and charging system parts, and vapor and purge components. The company also offers electrical switches and actuators; anti-lock brake and vehicle speed sensors, fluid level sensors, and pressure sensors comprising tire pressure monitoring, temperature sensors, advanced driver assistance systems sensors, battery cables, pigtails, and sockets; electrical wire, terminals, connectors, and tools for servicing a vehicle's electrical system; and spark plug, coil on plug boots, and ignition system accessories. In addition, it offers AC system components; other thermal components; and engine cooling, air conditioning, and engine efficiency products. Further, it provides thermal management products, sensors, switches, power distribution, electrification and electronics, injections and fuel delivery, ignition and emissions, and clamping devices for commercial and light vehicles, construction, agriculture, power sports, marine, hydraulics, and lawn and garden sectors. It serves retailers, warehouse distributors, original equipment manufacturers and their suppliers, system integrators, and original equipment service part manufacturers. The company was founded in 1919 and is headquartered in Long Island City, New York.",
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 493853000,
-      "earnings": 25242000
-    },
-    {
       "q": "3Q2025",
       "revenue": 498836000,
       "earnings": -4335000
@@ -69,6 +64,11 @@
       "q": "1Q2026",
       "revenue": 451166000,
       "earnings": 17136000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 501599000,
+      "earnings": 30368000
     }
   ],
   "growth": {
@@ -224,27 +224,27 @@
   "insider_net": {
     "period": "6m",
     "buys": 8,
-    "sells": 4,
+    "sells": 5,
     "bought": 42317,
-    "sold": 26121,
-    "net_pct": 1.4
+    "sold": 31371,
+    "net_pct": 1
   },
   "extras": {
     "beta": 0.807,
-    "enterprise_value": 1509698944,
-    "ev_ebitda": 6.108,
-    "ev_revenue": 0.822,
+    "enterprise_value": 1492943616,
+    "ev_ebitda": 6.04,
+    "ev_revenue": 0.813,
     "float_shares": 21146875,
-    "short_shares": 949120,
-    "short_pct_float": 5.28,
-    "short_ratio": 6.96,
+    "short_shares": 917880,
+    "short_pct_float": 5.11,
+    "short_ratio": 5.87,
     "last_split": "5:2",
     "last_split_date": "1983-12-02"
   },
   "ex_dividend": "2026-08-14",
   "dividend_date": null,
   "payout_ratio": 0.32569999,
-  "inst_count": 286,
+  "inst_count": 285,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "BROCCOLE CARMINE JOSEPH",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 39.24 per share.",
+      "value": 206010,
+      "shares": 5250,
+      "date": "2026-09-09"
+    },
     {
       "name": "BURKS DALE L",
       "role": "Officer",
@@ -346,15 +355,6 @@
     },
     {
       "name": "PURYEAR PAMELA",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 3321,
-      "date": "2026-05-21"
-    },
-    {
-      "name": "CAPPARELLI ALEJANDRO CESAR",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-10T19:21:44.564Z",
+  "updated_at": "2026-09-11T19:23:09.638Z",
   "source": "Yahoo Finance",
   "symbol": "BAC",
   "summary": "Bank of America Corporation, through its subsidiaries, provides various financial products and services for individual consumers, small and middle-market businesses, institutional investors, large corporations, and governments worldwide. It operates through four segments: Consumer Banking, Global Wealth & Investment Management (GWIM), Global Banking, and Global Markets. The Consumer Banking segment offers traditional and money market savings accounts, certificates of deposit and IRAs, checking accounts, and investment accounts and products; credit and debit cards; residential mortgages and home equity loans; and direct and indirect loans. The GWIM segment provides investment management, brokerage, banking, and trust and retirement products and services; wealth management solutions; and customized solutions, including specialty asset management services. The Global Banking segment offers lending products and services, including commercial loans, leases, commitment facilities, trade finance, and commercial real estate and asset-based lending; treasury solutions, and underwriting and advisory services. The Global Markets segment provides market-making, financing, securities clearing, settlement, and custody services; securities and derivative products; and risk management products using interest rate, equity, credit, currency and commodity derivatives, foreign exchange, fixed-income, and mortgage-related products. Bank of America Corporation was founded in 1784 and is based in Charlotte, North Carolina.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-14",
   "earnings_estimated": false,
   "earnings_call": "2026-10-14",
-  "eps_estimate": 1.19205,
+  "eps_estimate": 1.18879,
   "analysts": {
     "strong_buy": 5,
     "buy": 15,
@@ -22,14 +22,60 @@
   "target_mean": 69,
   "target_high": 79,
   "target_low": 62,
-  "target_analysts": 22,
-  "statements": null,
-  "quarterly": [],
+  "target_analysts": 21,
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 94950000000,
+      "net": 26015000000,
+      "margin": 27.4
+    },
+    {
+      "year": "2023",
+      "revenue": 98581000000,
+      "net": 24866000000,
+      "margin": 25.2
+    },
+    {
+      "year": "2024",
+      "revenue": 101887000000,
+      "net": 25503000000,
+      "margin": 25
+    },
+    {
+      "year": "2025",
+      "revenue": 113097000000,
+      "net": 29055000000,
+      "margin": 25.7
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 28088000000,
+      "earnings": 8040000000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 28367000000,
+      "earnings": 7319000000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 30272000000,
+      "earnings": 8155000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 31558000000,
+      "earnings": 8748000000
+    }
+  ],
   "growth": {
-    "q0": 0.1246,
-    "q1": 0.1859,
-    "y0": 0.22610001,
-    "y1": 0.1338
+    "q0": 0.12149999,
+    "q1": 0.18450001,
+    "y0": 0.225,
+    "y1": 0.13430001
   },
   "ratings": [
     {
@@ -185,11 +231,11 @@
   },
   "extras": {
     "beta": 1.164,
-    "enterprise_value": 384074547200,
+    "enterprise_value": 383305351168,
     "ev_ebitda": null,
-    "ev_revenue": 3.371,
+    "ev_revenue": 3.364,
     "float_shares": 6965266864,
-    "short_shares": 2606,
+    "short_shares": 1987,
     "short_pct_float": 0,
     "short_ratio": 0,
     "last_split": "2:1",

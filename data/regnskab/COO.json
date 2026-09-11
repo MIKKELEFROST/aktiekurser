@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-10T19:21:44.878Z",
+  "updated_at": "2026-09-11T19:23:09.878Z",
   "source": "Yahoo Finance",
   "symbol": "COO",
   "summary": "The Cooper Companies, Inc., together with its subsidiaries, develops, manufactures, and markets contact lens wearers. The company operates in two segments, CooperVision and CooperSurgical. The CooperVision segment offers spherical, toric, and multifocal contact lenses that address vision challenges, such as astigmatism, presbyopia, and myopia. Its CooperSurgical segment focuses on family and women's health care, which provides fertility products and services, medical devices, and contraception, as well as cryostorage, such as cord blood and cord tissue storage. This segment offers Paragard, a hormone-free intrauterine device; and fertility consumables and equipment, donor gamete services, and genomic services, including genetic testing. The company sells its products to distributors, group purchasing organizations, eye care and health care professionals, including independent practices, corporate retailers, hospitals and clinics, and authorized resellers. The Cooper Companies, Inc. was founded in 1958 and is headquartered in San Ramon, California.",
@@ -10,18 +10,18 @@
   "next_earnings": "2026-09-09",
   "earnings_estimated": false,
   "earnings_call": "2026-09-09",
-  "eps_estimate": 1.12007,
+  "eps_estimate": 1.06734,
   "analysts": {
-    "strong_buy": 4,
-    "buy": 6,
-    "hold": 6,
+    "strong_buy": 2,
+    "buy": 3,
+    "hold": 11,
     "sell": 0,
     "strong_sell": 0,
     "total": 16
   },
-  "target_mean": 81.5,
-  "target_high": 92,
-  "target_low": 66,
+  "target_mean": 66.21429,
+  "target_high": 75,
+  "target_low": 58,
   "target_analysts": 14,
   "statements": [
     {
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.0182,
-    "q1": 0.0388,
-    "y0": 0.1229,
-    "y1": 0.0798
+    "q0": -0.0719,
+    "q1": -0.0042,
+    "y0": 0.0994,
+    "y1": 0.036199998
   },
   "ratings": [
+    {
+      "date": "2026-09-10",
+      "firm": "William Blair",
+      "from": "Outperform",
+      "to": "Market Perform",
+      "action": "down"
+    },
     {
       "date": "2026-09-10",
       "firm": "Wells Fargo",
@@ -140,83 +147,76 @@
       "from": "Buy",
       "to": "Buy",
       "action": "main"
-    },
-    {
-      "date": "2026-08-13",
-      "firm": "Citigroup",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
     }
   ],
   "holders": [
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 7.71,
+      "pct": 7.9,
       "shares": 15029453,
       "date": "2026-06-30"
     },
     {
       "name": "Vanguard Capital Management LLC",
       "kind": "institution",
-      "pct": 6.54,
+      "pct": 6.71,
       "shares": 12758769,
       "date": "2026-06-30"
     },
     {
       "name": "State Street Corporation",
       "kind": "institution",
-      "pct": 4.56,
+      "pct": 4.68,
       "shares": 8892643,
       "date": "2026-06-30"
     },
     {
       "name": "Vanguard Portfolio Management LLC",
       "kind": "institution",
-      "pct": 4.45,
+      "pct": 4.56,
       "shares": 8669690,
       "date": "2026-06-30"
     },
     {
       "name": "T. Rowe Price Investment Management, Inc.",
       "kind": "institution",
-      "pct": 3.81,
+      "pct": 3.91,
       "shares": 7429535,
       "date": "2026-06-30"
     },
     {
       "name": "Browning West Lp",
       "kind": "institution",
-      "pct": 3.69,
+      "pct": 3.78,
       "shares": 7195428,
       "date": "2026-06-30"
     },
     {
       "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
       "kind": "fond",
-      "pct": 3.17,
+      "pct": 3.26,
       "shares": 6190598,
       "date": "2026-06-30"
     },
     {
       "name": "Price (T.Rowe) Associates Inc",
       "kind": "institution",
-      "pct": 2.86,
+      "pct": 2.93,
       "shares": 5579650,
       "date": "2026-06-30"
     },
     {
       "name": "Kayne Anderson Rudnick Investment Management LLC",
       "kind": "institution",
-      "pct": 2.78,
+      "pct": 2.86,
       "shares": 5430282,
       "date": "2026-06-30"
     },
     {
       "name": "Geode Capital Management, LLC",
       "kind": "institution",
-      "pct": 2.75,
+      "pct": 2.82,
       "shares": 5359812,
       "date": "2026-06-30"
     }
@@ -247,12 +247,6 @@
   "inst_count": 990,
   "eps_history": [
     {
-      "quarter": "2025-07-31",
-      "estimate": 1.06756,
-      "actual": 1.1,
-      "surprise_pct": 3.04
-    },
-    {
       "quarter": "2025-10-31",
       "estimate": 1.11337,
       "actual": 1.15,
@@ -269,6 +263,12 @@
       "estimate": 1.0948,
       "actual": 1.21,
       "surprise_pct": 10.52
+    },
+    {
+      "quarter": "2026-07-31",
+      "estimate": 1.12007,
+      "actual": 1.15,
+      "surprise_pct": 2.67
     }
   ],
   "insiders": [

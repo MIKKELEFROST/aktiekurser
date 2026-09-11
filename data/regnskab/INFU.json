@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-10T19:21:45.470Z",
+  "updated_at": "2026-09-11T19:23:10.364Z",
   "source": "Yahoo Finance",
   "symbol": "INFU",
   "summary": "InfuSystem Holdings, Inc., through its subsidiaries, provides infusion pumps and related products and services in the United States and Canada. It operates through two segments: Patient Services and Device Solutions. The company supplies electronic ambulatory infusion pumps and associated disposable supply kits to oncology, infusion, and hospital outpatient chemotherapy clinics for the treatment of various cancers, including colorectal cancer, pain management, and other disease states. It also sells and rents new and pre-owned pole-mounted and ambulatory infusion pumps, and other durable medical equipment; sells treatment-related consumables; and provides biomedical recertification, maintenance, and repair services for oncology practices, as well as other healthcare site settings comprising hospitals, home care and home infusion providers, skilled nursing and acute care facilities, pain centers, and others. In addition, the company offers local and field-based customer support, as well as operates pump service and repair centers. The company was incorporated in 2005 and is headquartered in Rochester Hills, Michigan.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-08-04",
-  "eps_estimate": null,
+  "eps_estimate": 0.12,
   "analysts": {
     "strong_buy": 0,
     "buy": 3,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 36002000,
-      "earnings": 2599000
-    },
-    {
       "q": "3Q2025",
       "revenue": 36488000,
       "earnings": 2259000
@@ -69,9 +64,19 @@
       "q": "1Q2026",
       "revenue": 33684000,
       "earnings": 1017000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 36933000,
+      "earnings": 3231000
     }
   ],
-  "growth": null,
+  "growth": {
+    "q0": -0.1886,
+    "q1": null,
+    "y0": null,
+    "y1": 0.1304
+  },
   "ratings": [
     {
       "date": "2026-08-05",
@@ -205,13 +210,13 @@
   },
   "extras": {
     "beta": 1.501,
-    "enterprise_value": 266556608,
-    "ev_ebitda": 11.002,
-    "ev_revenue": 1.86,
+    "enterprise_value": 264963232,
+    "ev_ebitda": 10.936,
+    "ev_revenue": 1.849,
     "float_shares": 18740673,
-    "short_shares": 733834,
-    "short_pct_float": 3.85,
-    "short_ratio": 4.26,
+    "short_shares": 754879,
+    "short_pct_float": 3.96,
+    "short_ratio": 4.81,
     "last_split": null,
     "last_split_date": null
   },

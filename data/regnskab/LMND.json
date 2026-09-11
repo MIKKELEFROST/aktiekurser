@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-10T19:21:45.646Z",
+  "updated_at": "2026-09-11T19:23:10.510Z",
   "source": "Yahoo Finance",
   "symbol": "LMND",
   "summary": "Lemonade, Inc. provides various insurance products in the United States, Europe, and the United Kingdom. The company provides renters and homeowners, building, car, pet, and life insurance products, as well as landlord insurance products. It also offers insurance for stolen or damaged property, and personal liability that protects its customers if they are responsible for an accident or damage to another person or their property. In addition, it operates as an agent for other insurance companies. The company was formerly known as Lemonade Group, Inc. Lemonade, Inc. was incorporated in 2015 and is headquartered in New York, New York.",
@@ -51,6 +51,11 @@
   ],
   "quarterly": [
     {
+      "q": "2Q2025",
+      "revenue": 164100000,
+      "earnings": -43900000
+    },
+    {
       "q": "3Q2025",
       "revenue": 194500000,
       "earnings": -37500000
@@ -64,11 +69,6 @@
       "q": "1Q2026",
       "revenue": 258000000,
       "earnings": -35800000
-    },
-    {
-      "q": "2Q2026",
-      "revenue": 294400000,
-      "earnings": -43400000
     }
   ],
   "growth": {
@@ -223,28 +223,28 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 13,
+    "buys": 12,
     "sells": 9,
-    "bought": 2193708,
+    "bought": 2048596,
     "sold": 102275,
-    "net_pct": 46.2
+    "net_pct": 41.6
   },
   "extras": {
     "beta": 1.868,
-    "enterprise_value": 3659061504,
-    "ev_ebitda": -39.729,
-    "ev_revenue": 3.753,
+    "enterprise_value": 3689245952,
+    "ev_ebitda": -40.057,
+    "ev_revenue": 3.784,
     "float_shares": 71768333,
-    "short_shares": 9984175,
-    "short_pct_float": 14.11,
-    "short_ratio": 6.59,
+    "short_shares": 10177727,
+    "short_pct_float": 14.38,
+    "short_ratio": 9.29,
     "last_split": null,
     "last_split_date": null
   },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 445,
+  "inst_count": 444,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -282,21 +282,21 @@
       "date": "2026-09-04"
     },
     {
-      "name": "PROSOR MAYA",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 54.63 per share.",
-      "value": 56815,
-      "shares": 1040,
-      "date": "2026-09-03"
-    },
-    {
       "name": "BIXBY TIMOTHY E",
       "role": "Chief Financial Officer",
       "kind": "sell",
       "text": "Sale at price 54.63 per share.",
       "value": 103415,
       "shares": 1893,
+      "date": "2026-09-03"
+    },
+    {
+      "name": "PROSOR MAYA",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 54.63 per share.",
+      "value": 56815,
+      "shares": 1040,
       "date": "2026-09-03"
     },
     {

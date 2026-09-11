@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-10T19:21:45.399Z",
+  "updated_at": "2026-09-11T19:23:10.301Z",
   "source": "Yahoo Finance",
   "symbol": "HOS",
   "summary": "Hornbeck Offshore Services, Inc. provides marine transportation services to exploration and production, oilfield service, offshore construction, and military customers. It operates offshore supply vessels, multi-purpose support vessels, and a shore-based facility to provide logistics support and specialty services to the offshore oil and gas exploration and production industry. Its fleet of OSVs and MPSVs support deep-well, deep-water, and ultra-deep-water activities of the offshore oil and gas industry, such as oil and gas exploration, field development, production, construction, installation, well-stimulation, and other oil recovery activities, as well as inspection, repair, and maintenance services. The company also provides vessel management services, including crewing, daily operational management, and maintenance activities for other vessel owners. It serves oilfield end-markets, including oilfield specialty and drilling; non-oilfield end-markets, including military support services, and renewable energy, as well as other non-oilfield services, such as HADR and aerospace support services. The company was formerly known as Hornbeck-Leevac Marine Services, Inc. and changed its name to Hornbeck Offshore Services, Inc. in May 2002. Hornbeck Offshore Services, Inc. was incorporated in 1997 and is based in Covington, Louisiana.",
@@ -11,11 +11,18 @@
   "earnings_estimated": false,
   "earnings_call": null,
   "eps_estimate": null,
-  "analysts": null,
-  "target_mean": null,
-  "target_high": null,
-  "target_low": null,
-  "target_analysts": null,
+  "analysts": {
+    "strong_buy": 1,
+    "buy": 0,
+    "hold": 0,
+    "sell": 0,
+    "strong_sell": 0,
+    "total": 1
+  },
+  "target_mean": 14,
+  "target_high": 14,
+  "target_low": 14,
+  "target_analysts": 1,
   "statements": [
     {
       "year": "2015",
@@ -44,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "4Q2018",
-      "revenue": 53917000,
-      "earnings": -24195000
-    },
-    {
       "q": "1Q2019",
       "revenue": 54036000,
       "earnings": -36620000
@@ -62,6 +64,11 @@
       "q": "3Q2019",
       "revenue": 52830000,
       "earnings": 0
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 0,
+      "earnings": 19103000
     }
   ],
   "growth": null,
@@ -156,9 +163,9 @@
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 538718592,
-    "ev_ebitda": 2.039,
-    "ev_revenue": 0.739,
+    "enterprise_value": 536696000,
+    "ev_ebitda": 2.032,
+    "ev_revenue": 0.736,
     "float_shares": null,
     "short_shares": null,
     "short_pct_float": null,
@@ -169,7 +176,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 377,
+  "inst_count": 376,
   "eps_history": [],
   "insiders": [
     {

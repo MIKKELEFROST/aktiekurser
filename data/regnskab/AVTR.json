@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-10T19:21:44.544Z",
+  "updated_at": "2026-09-11T19:23:09.622Z",
   "source": "Yahoo Finance",
   "symbol": "AVTR",
   "summary": "Avantor, Inc. engages in the provision of mission-critical products and services to customers in the biopharma, healthcare, education and government, advanced technologies, and applied materials industries in the Americas, Europe, Asia, the Middle East, and Africa. The company offers materials and consumables, such as purity chemicals and reagents, lab products and supplies, formulated silicone materials, customized excipients, customized single-use assemblies, process chromatography resins and columns, analytical sample prep kits, education and microbiology products, clinical trial kits, and fluid handling tips. It also provides equipment and instrumentation products, including filtration systems, virus inactivation systems, incubators, analytical instruments, evaporators, ultra-low-temperature freezers, biological safety cabinets, peristaltic pumps, and critical environment supplies. In addition, the company offers services and specialty procurements comprising onsite lab and production, equipment, procurement and sourcing, and biopharmaceutical material scale-up and development services. Further, it provides scientific research support services, such as DNA extraction, bioreactor servicing, clinical and biorepository, compound management, cleanroom control, monitoring, maintenance, and sanitization services. The company was founded in 1904 and is headquartered in Radnor, Pennsylvania.",
@@ -10,19 +10,19 @@
   "next_earnings": "2026-10-28",
   "earnings_estimated": false,
   "earnings_call": "2026-07-29",
-  "eps_estimate": 0.20823,
+  "eps_estimate": 0.20853,
   "analysts": {
     "strong_buy": 0,
     "buy": 3,
-    "hold": 12,
+    "hold": 13,
     "sell": 0,
     "strong_sell": 1,
-    "total": 16
+    "total": 17
   },
-  "target_mean": 14.56429,
+  "target_mean": 14.66,
   "target_high": 19,
   "target_low": 12,
-  "target_analysts": 14,
+  "target_analysts": 15,
   "statements": [
     {
       "year": "2022",
@@ -51,6 +51,11 @@
   ],
   "quarterly": [
     {
+      "q": "2Q2025",
+      "revenue": 1683400000,
+      "earnings": 64700000
+    },
+    {
       "q": "3Q2025",
       "revenue": 1623800000,
       "earnings": -711800000
@@ -64,18 +69,13 @@
       "q": "1Q2026",
       "revenue": 1581400000,
       "earnings": 43300000
-    },
-    {
-      "q": "2Q2026",
-      "revenue": 1692300000,
-      "earnings": 38100000
     }
   ],
   "growth": {
-    "q0": -0.0535,
-    "q1": 0.0178,
-    "y0": -0.097200006,
-    "y1": 0.0853
+    "q0": -0.0521,
+    "q1": 0.0195,
+    "y0": -0.096499994,
+    "y1": 0.084
   },
   "ratings": [
     {
@@ -223,11 +223,11 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 18,
+    "buys": 17,
     "sells": 4,
-    "bought": 73960534,
+    "bought": 73835534,
     "sold": 46063208,
-    "net_pct": -157.1
+    "net_pct": -157.5
   },
   "extras": {
     "beta": 0.895,
@@ -235,16 +235,16 @@
     "ev_ebitda": 14.258,
     "ev_revenue": 2.051,
     "float_shares": 657806317,
-    "short_shares": 52194128,
-    "short_pct_float": 9.37,
-    "short_ratio": 4.35,
+    "short_shares": 50213671,
+    "short_pct_float": 9.01,
+    "short_ratio": 7.28,
     "last_split": null,
     "last_split_date": null
   },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 602,
+  "inst_count": 601,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -280,24 +280,6 @@
       "value": 83200,
       "shares": 10000,
       "date": "2026-05-08"
-    },
-    {
-      "name": "MAKIN LOUISE",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 25270,
-      "date": "2026-05-07"
-    },
-    {
-      "name": "DINGEMANS SIMON",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 25270,
-      "date": "2026-05-07"
     },
     {
       "name": "MEHRA SANJEEV K",
@@ -346,6 +328,24 @@
     },
     {
       "name": "MURTHY MALA",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 25270,
+      "date": "2026-05-07"
+    },
+    {
+      "name": "MAKIN LOUISE",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 25270,
+      "date": "2026-05-07"
+    },
+    {
+      "name": "DINGEMANS SIMON",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-10T19:21:45.525Z",
+  "updated_at": "2026-09-11T19:23:10.411Z",
   "source": "Yahoo Finance",
   "symbol": "JEF",
   "summary": "Jefferies Financial Group Inc. operates as an investment banking and capital markets firm in the Americas, Europe, the Middle East, and the Asia-Pacific. It operates in two segments, Investment Banking and Capital Markets, and Asset Management. The company provides investment banking and advisory services for mergers or acquisitions, debt financing, restructurings, and private capital advisory transactions; underwriting and placement services related to corporate debt, municipal debt, mortgage-backed and asset-backed securities, equity and equity-linked securities, and loan syndication services; and corporate lending services. It also offers financing, securities lending, and other prime brokerage services; equities research, sales, and trading services; wealth management services; and online foreign exchange trading services. In addition, the company provides investment-grade distressed debt securities, U.S. and European government and agency securities, municipal bonds, leveraged loans, emerging markets debt, interest rates, and credit index derivative products; and manages and offers services to a diverse group of alternative asset management platforms across a spectrum of investment strategies and asset classes. It serves public companies, private companies, sponsors and owners, institutional investors, and government entities. The company was formerly known as Leucadia National Corporation and changed its name to Jefferies Financial Group Inc. in May 2018. Jefferies Financial Group Inc. was founded in 1962 and is headquartered in New York, New York.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-09-28",
   "earnings_estimated": true,
   "earnings_call": null,
-  "eps_estimate": 0.87345,
+  "eps_estimate": 0.89006,
   "analysts": {
     "strong_buy": 0,
     "buy": 2,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 6
   },
-  "target_mean": 61.5,
+  "target_mean": 60.66667,
   "target_high": 83,
   "target_low": 46,
   "target_analysts": 6,
@@ -72,12 +72,26 @@
     }
   ],
   "growth": {
-    "q0": -0.13520001,
-    "q1": -0.023599999,
+    "q0": -0.1188,
+    "q1": -0.1238,
     "y0": null,
-    "y1": 0.2767
+    "y1": 0.2622
   },
   "ratings": [
+    {
+      "date": "2026-09-11",
+      "firm": "UBS",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-09-11",
+      "firm": "BMO Capital",
+      "from": "Market Perform",
+      "to": "Market Perform",
+      "action": "main"
+    },
     {
       "date": "2026-06-25",
       "firm": "UBS",
@@ -132,20 +146,6 @@
       "firm": "Goldman Sachs",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-03-23",
-      "firm": "BMO Capital",
-      "from": "Market Perform",
-      "to": "Market Perform",
-      "action": "main"
-    },
-    {
-      "date": "2026-03-13",
-      "firm": "Oppenheimer",
-      "from": "Outperform",
-      "to": "Outperform",
       "action": "main"
     }
   ],
@@ -231,20 +231,20 @@
   },
   "extras": {
     "beta": null,
-    "enterprise_value": -11153736704,
+    "enterprise_value": -11458066432,
     "ev_ebitda": null,
-    "ev_revenue": -2.065,
+    "ev_revenue": -2.121,
     "float_shares": 193099055,
-    "short_shares": 5322679,
-    "short_pct_float": 3.24,
-    "short_ratio": 2.78,
+    "short_shares": 6979204,
+    "short_pct_float": 4.25,
+    "short_ratio": 3.77,
     "last_split": "1046:1000",
     "last_split_date": "2023-01-17"
   },
   "ex_dividend": "2026-08-18",
   "dividend_date": null,
   "payout_ratio": 0.44689998,
-  "inst_count": 752,
+  "inst_count": 750,
   "eps_history": [
     {
       "quarter": "2025-08-31",
@@ -273,15 +273,6 @@
   ],
   "insiders": [
     {
-      "name": "ELLIS-KIRK MATRICE",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 53.09 per share.",
-      "value": 8760,
-      "shares": 165,
-      "date": "2026-08-28"
-    },
-    {
       "name": "FRIEDMAN BRIAN P",
       "role": "President",
       "kind": "other",
@@ -291,21 +282,12 @@
       "date": "2026-08-28"
     },
     {
-      "name": "O KANE MICHAEL T",
+      "name": "ELLIS-KIRK MATRICE",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 53.09 per share.",
-      "value": 28562,
-      "shares": 538,
-      "date": "2026-08-28"
-    },
-    {
-      "name": "HANDLER RICHARD B",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 53.09 per share.",
-      "value": 4009941,
-      "shares": 75531,
+      "value": 8760,
+      "shares": 165,
       "date": "2026-08-28"
     },
     {
@@ -318,6 +300,15 @@
       "date": "2026-08-28"
     },
     {
+      "name": "WEILER MELISSA",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 53.09 per share.",
+      "value": 8760,
+      "shares": 165,
+      "date": "2026-08-28"
+    },
+    {
       "name": "LARSON MATTHEW SCOTT",
       "role": "Chief Financial Officer",
       "kind": "other",
@@ -327,21 +318,30 @@
       "date": "2026-08-28"
     },
     {
+      "name": "HANDLER RICHARD B",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 53.09 per share.",
+      "value": 4009941,
+      "shares": 75531,
+      "date": "2026-08-28"
+    },
+    {
+      "name": "O KANE MICHAEL T",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 53.09 per share.",
+      "value": 28562,
+      "shares": 538,
+      "date": "2026-08-28"
+    },
+    {
       "name": "SHARP MICHAEL J",
       "role": "General Counsel",
       "kind": "other",
       "text": "Stock Award(Grant) at price 53.09 per share.",
       "value": 39605,
       "shares": 746,
-      "date": "2026-08-28"
-    },
-    {
-      "name": "WEILER MELISSA",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 53.09 per share.",
-      "value": 8760,
-      "shares": 165,
       "date": "2026-08-28"
     },
     {

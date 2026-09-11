@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-10T19:21:46.508Z",
+  "updated_at": "2026-09-11T19:23:11.209Z",
   "source": "Yahoo Finance",
   "symbol": "VMC",
   "summary": "Vulcan Materials Company produces and supplies construction aggregates in the United States. It operates through three segments: Aggregates, Asphalt, and Concrete. The company provides crushed stone, sand and gravel, sand, and other aggregates for use in construction and maintenance of highways, streets, and other public works, as well as in the construction of housing and commercial, industrial, and other nonresidential facilities; aggregates that are used as ballast for construction and maintenance of railroad tracks; riprap and jetty stones for use in erosion control along roads and waterways; asphalt mix; asphalt construction paving services; and ready-mixed concrete products. The company was formerly known as Virginia Holdco, Inc. and changed its name to Vulcan Materials Company. Vulcan Materials Company was founded in 1909 and is headquartered in Birmingham, Alabama.",
@@ -10,16 +10,16 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-07-29",
-  "eps_estimate": 3.02374,
+  "eps_estimate": 3.00585,
   "analysts": {
     "strong_buy": 2,
     "buy": 14,
-    "hold": 7,
-    "sell": 0,
+    "hold": 6,
+    "sell": 1,
     "strong_sell": 1,
     "total": 24
   },
-  "target_mean": 325.73914,
+  "target_mean": 323.52173,
   "target_high": 365,
   "target_low": 198,
   "target_analysts": 23,
@@ -51,6 +51,11 @@
   ],
   "quarterly": [
     {
+      "q": "2Q2025",
+      "revenue": 2102400000,
+      "earnings": 320900000
+    },
+    {
       "q": "3Q2025",
       "revenue": 2291500000,
       "earnings": 374900000
@@ -64,18 +69,13 @@
       "q": "1Q2026",
       "revenue": 1755900000,
       "earnings": 165500000
-    },
-    {
-      "q": "2Q2026",
-      "revenue": 2155800000,
-      "earnings": 323400000
     }
   ],
   "growth": {
-    "q0": 0.0647,
-    "q1": 0.32599998,
-    "y0": 0.14479999,
-    "y1": 0.1768
+    "q0": 0.0584,
+    "q1": 0.33240002,
+    "y0": 0.1434,
+    "y1": 0.1675
   },
   "ratings": [
     {
@@ -231,20 +231,20 @@
   },
   "extras": {
     "beta": 1.054,
-    "enterprise_value": 37152231424,
-    "ev_ebitda": 15.875,
-    "ev_revenue": 4.578,
+    "enterprise_value": 37244231680,
+    "ev_ebitda": 15.914,
+    "ev_revenue": 4.589,
     "float_shares": 129156312,
-    "short_shares": 6367990,
-    "short_pct_float": 5.68,
-    "short_ratio": 6.3,
+    "short_shares": 5615575,
+    "short_pct_float": 5,
+    "short_ratio": 6.15,
     "last_split": "3:1",
     "last_split_date": "1999-03-11"
   },
   "ex_dividend": "2026-08-13",
   "dividend_date": null,
   "payout_ratio": 0.2382,
-  "inst_count": 1457,
+  "inst_count": 1456,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -336,6 +336,15 @@
       "date": "2026-02-20"
     },
     {
+      "name": "CLEMENT DAVID P",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 9341,
+      "date": "2026-02-20"
+    },
+    {
       "name": "PERKINS JERRY F. JR.",
       "role": "Officer",
       "kind": "other",
@@ -351,15 +360,6 @@
       "text": null,
       "value": null,
       "shares": 420,
-      "date": "2026-02-20"
-    },
-    {
-      "name": "BASS STANLEY G.",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 1980,
       "date": "2026-02-20"
     }
   ],

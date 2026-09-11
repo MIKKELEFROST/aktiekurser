@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-10T19:21:44.973Z",
+  "updated_at": "2026-09-11T19:23:09.953Z",
   "source": "Yahoo Finance",
   "symbol": "DELL",
   "summary": "Dell Technologies Inc. designs, develops, manufactures, markets, sells, and supports various comprehensive and integrated solutions, products, and services in the Americas, Europe, the Middle East, Asia, and internationally. The company operates through Infrastructure Solutions Group (ISG) and Client Solutions Group (CSG) segments. The ISG segment provides modern and traditional storage solutions, including all-flash, purpose-built, hyper-converged infrastructure, software-defined storage, and general-purpose and AI-optimized servers. This segment also offers networking products and services comprising wide area network infrastructure, data center and edge networking switches, and cables and optics that help its business customers to transform and modernize their infrastructure and complementing its server and storage solutions; and software, peripherals, and services, including consulting and support, and deployment. The CSG segment provides notebooks, desktops, and workstations and branded peripherals that include displays, docking stations, keyboards, mice, webcam and audio devices, and third-party software and peripherals; and configuration, and extended warranties services. The company is involved in originating, collecting, and servicing customer financing arrangements and offers payment and consumption solutions and services, such utility, subscription, as-a-service, leases, and loans, as well as fixed-term leases and loans. It serves enterprises, governmental agencies and other public institutions, educational institutions, healthcare organizations, small and medium-sized businesses, and consumers. The company has a strategic alliance with Rafay Systems for the development of AI infrastructure solutions. The company was formerly known as Denali Holding Inc. and changed its name to Dell Technologies Inc. in March 2013. Dell Technologies Inc. was founded in 1984 and is headquartered in Round Rock, Texas.",
@@ -10,19 +10,19 @@
   "next_earnings": "2026-11-27",
   "earnings_estimated": true,
   "earnings_call": "2026-09-01",
-  "eps_estimate": 6.55726,
+  "eps_estimate": 6.55694,
   "analysts": {
-    "strong_buy": 5,
+    "strong_buy": 6,
     "buy": 14,
     "hold": 9,
     "sell": 0,
     "strong_sell": 0,
-    "total": 28
+    "total": 29
   },
-  "target_mean": 564.4583,
+  "target_mean": 570.48,
   "target_high": 735,
   "target_low": 465,
-  "target_analysts": 24,
+  "target_analysts": 25,
   "statements": [
     {
       "year": "2023",
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 29776000000,
-      "earnings": 1164000000
-    },
-    {
       "q": "3Q2025",
       "revenue": 27005000000,
       "earnings": 1548000000
@@ -69,15 +64,27 @@
       "q": "1Q2026",
       "revenue": 43842000000,
       "earnings": 3438000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 46971000000,
+      "earnings": 4133000000
     }
   ],
   "growth": {
-    "q0": 1.5317999,
-    "q1": 0.91019994,
-    "y0": 1.5128999,
-    "y1": 0.10520001
+    "q0": 1.5316,
+    "q1": 0.9103,
+    "y0": 1.513,
+    "y1": 0.107700005
   },
   "ratings": [
+    {
+      "date": "2026-09-10",
+      "firm": "RBC Capital",
+      "from": null,
+      "to": "Outperform",
+      "action": "init"
+    },
     {
       "date": "2026-09-09",
       "firm": "Evercore ISI Group",
@@ -139,13 +146,6 @@
       "firm": "Raymond James",
       "from": "Outperform",
       "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-09-02",
-      "firm": "UBS",
-      "from": "Neutral",
-      "to": "Neutral",
       "action": "main"
     }
   ],
@@ -223,28 +223,28 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 95,
-    "sells": 119,
-    "bought": 8789330,
-    "sold": 6472115,
+    "buys": 100,
+    "sells": 123,
+    "bought": 8982235,
+    "sold": 6634415,
     "net_pct": 5
   },
   "extras": {
     "beta": 1.409,
-    "enterprise_value": 364032786432,
-    "ev_ebitda": 20.537,
-    "ev_revenue": 2.408,
+    "enterprise_value": 345829441536,
+    "ev_ebitda": 19.51,
+    "ev_revenue": 2.287,
     "float_shares": 296956345,
-    "short_shares": 14013370,
-    "short_pct_float": 4.64,
-    "short_ratio": 2.22,
+    "short_shares": 14444059,
+    "short_pct_float": 4.88,
+    "short_ratio": 2.7,
     "last_split": "1973:1000",
     "last_split_date": "2021-11-02"
   },
   "ex_dividend": "2026-10-20",
   "dividend_date": null,
   "payout_ratio": 0.1344,
-  "inst_count": 2732,
+  "inst_count": 2731,
   "eps_history": [
     {
       "quarter": "2025-07-31",
@@ -282,6 +282,42 @@
       "date": "2026-09-04"
     },
     {
+      "name": "SL SPV-2, L.P.",
+      "role": "Beneficial Owner of more than 10% of a Class of Security",
+      "kind": "sell",
+      "text": "Sale at price 515.53 - 529.16 per share.",
+      "value": 26038782,
+      "shares": 49946,
+      "date": "2026-09-04"
+    },
+    {
+      "name": "SILVER LAKE TECHNOLOGY INVESTORS V, L.P.",
+      "role": "Beneficial Owner of more than 10% of a Class of Security",
+      "kind": "sell",
+      "text": "Sale at price 515.53 - 529.16 per share.",
+      "value": 262758,
+      "shares": 504,
+      "date": "2026-09-04"
+    },
+    {
+      "name": "SILVER LAKE TECHNOLOGY INVESTORS IV, L.P.",
+      "role": "Beneficial Owner of more than 10% of a Class of Security",
+      "kind": "sell",
+      "text": "Sale at price 515.53 - 529.16 per share.",
+      "value": 583908,
+      "shares": 1120,
+      "date": "2026-09-04"
+    },
+    {
+      "name": "SILVER LAKE PARTNERS IV, LP.",
+      "role": "Beneficial Owner of more than 10% of a Class of Security",
+      "kind": "sell",
+      "text": "Sale at price 515.53 - 529.16 per share.",
+      "value": 48061648,
+      "shares": 92234,
+      "date": "2026-09-04"
+    },
+    {
       "name": "SAAVEDRA JENNIFER D.",
       "role": "Officer",
       "kind": "sell",
@@ -291,13 +327,13 @@
       "date": "2026-09-04"
     },
     {
-      "name": "SILVER LAKE PARTNERS IV, LP.",
+      "name": "SILVER LAKE PARTNERS V DE AIV, L.P.",
       "role": "Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 230683,
-      "date": "2026-09-03"
+      "kind": "sell",
+      "text": "Sale at price 515.53 - 529.16 per share.",
+      "value": 14960339,
+      "shares": 28696,
+      "date": "2026-09-04"
     },
     {
       "name": "SILVER LAKE PARTNERS V DE AIV, L.P.",
@@ -305,26 +341,8 @@
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 124869,
-      "date": "2026-09-03"
-    },
-    {
-      "name": "SL SPV-2, L.P.",
-      "role": "Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 224716,
-      "date": "2026-09-03"
-    },
-    {
-      "name": "SILVER LAKE TECHNOLOGY INVESTORS V, L.P.",
-      "role": "Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 1531,
-      "date": "2026-09-03"
+      "shares": 41162,
+      "date": "2026-09-04"
     },
     {
       "name": "SILVER LAKE TECHNOLOGY INVESTORS IV, L.P.",
@@ -332,35 +350,17 @@
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 3394,
-      "date": "2026-09-03"
+      "shares": 1119,
+      "date": "2026-09-04"
     },
     {
-      "name": "SILVER LAKE TECHNOLOGY INVESTORS IV, L.P.",
+      "name": "SILVER LAKE PARTNERS IV, LP.",
       "role": "Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "sell",
-      "text": "Sale at price 496.59 - 513.12 per share.",
-      "value": 778673,
-      "shares": 1534,
-      "date": "2026-09-03"
-    },
-    {
-      "name": "SILVER LAKE TECHNOLOGY INVESTORS IV, L.P.",
-      "role": "Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "sell",
-      "text": "Sale at price 514.07 - 527.70 per share.",
-      "value": 961723,
-      "shares": 1859,
-      "date": "2026-09-03"
-    },
-    {
-      "name": "SL SPV-2, L.P.",
-      "role": "Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "sell",
-      "text": "Sale at price 496.59 - 513.12 per share.",
-      "value": 34783975,
-      "shares": 68525,
-      "date": "2026-09-03"
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 76043,
+      "date": "2026-09-04"
     }
   ],
   "dividends": [

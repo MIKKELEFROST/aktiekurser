@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-10T19:21:45.685Z",
+  "updated_at": "2026-09-11T19:23:11.333Z",
   "source": "Yahoo Finance",
   "symbol": "M",
   "summary": "Macy's, Inc., an omni-channel retail organization, operates stores, websites, and mobile applications in the United States. The company sells various merchandise, such as apparel and accessories for men, women, and kids; cosmetics; home furnishings; and other consumer goods under the Macy's, Bloomingdale's, and Bluemercury brands. It also operates in Dubai, the United Arab Emirates, and Al Zahra, Kuwait under the license agreements. The company was formerly known as Federated Department Stores, Inc. and changed its name to Macy's, Inc. in June 2007. Macy's, Inc. was founded in 1830 and is based in New York, New York.",
@@ -7,22 +7,22 @@
   "website": "https://www.macysinc.com",
   "employees": 90134,
   "ceo": "Mr. Antony  Spring",
-  "next_earnings": "2026-09-10",
-  "earnings_estimated": false,
+  "next_earnings": "2026-12-02",
+  "earnings_estimated": true,
   "earnings_call": null,
-  "eps_estimate": 0.36793,
+  "eps_estimate": -0.18225,
   "analysts": {
     "strong_buy": 1,
     "buy": 1,
-    "hold": 9,
+    "hold": 10,
     "sell": 1,
     "strong_sell": 0,
-    "total": 12
+    "total": 13
   },
-  "target_mean": 23.40909,
+  "target_mean": 23.16667,
   "target_high": 30,
   "target_low": 10,
-  "target_analysts": 11,
+  "target_analysts": 9,
   "statements": [
     {
       "year": "2023",
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.1869,
-    "q1": -1.6336,
-    "y0": -0.029000001,
-    "y1": 0.051999997
+    "q0": -3.025,
+    "q1": 0.041199997,
+    "y0": -0.007900001,
+    "y1": 0.0319
   },
   "ratings": [
+    {
+      "date": "2026-09-11",
+      "firm": "BTIG",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "reit"
+    },
     {
       "date": "2026-08-26",
       "firm": "UBS",
@@ -139,13 +146,6 @@
       "firm": "Citigroup",
       "from": "Neutral",
       "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-03-19",
-      "firm": "TD Cowen",
-      "from": "Hold",
-      "to": "Hold",
       "action": "main"
     }
   ],
@@ -231,27 +231,21 @@
   },
   "extras": {
     "beta": 1.431,
-    "enterprise_value": 9472946176,
-    "ev_ebitda": 6.728,
-    "ev_revenue": 0.417,
-    "float_shares": 254473438,
-    "short_shares": 30347720,
-    "short_pct_float": 12.86,
-    "short_ratio": 6.43,
+    "enterprise_value": 9161900032,
+    "ev_ebitda": 6.128,
+    "ev_revenue": 0.402,
+    "float_shares": 253275792,
+    "short_shares": 32358766,
+    "short_pct_float": 13.79,
+    "short_ratio": 6.53,
     "last_split": "2:1",
     "last_split_date": "2006-06-12"
   },
   "ex_dividend": "2026-09-15",
   "dividend_date": null,
   "payout_ratio": 0.3052,
-  "inst_count": 645,
+  "inst_count": 644,
   "eps_history": [
-    {
-      "quarter": "2025-07-31",
-      "estimate": 0.18656,
-      "actual": 0.31,
-      "surprise_pct": 66.17
-    },
     {
       "quarter": "2025-10-31",
       "estimate": -0.13201,
@@ -269,6 +263,12 @@
       "estimate": 0.02826,
       "actual": 0.13,
       "surprise_pct": 360.01
+    },
+    {
+      "quarter": "2026-07-31",
+      "estimate": 0.36793,
+      "actual": 0.4,
+      "surprise_pct": 8.72
     }
   ],
   "insiders": [

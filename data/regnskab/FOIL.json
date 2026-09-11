@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-10T19:21:45.213Z",
+  "updated_at": "2026-09-11T19:23:10.148Z",
   "source": "Yahoo Finance",
   "symbol": "FOIL",
   "summary": "Londian Wason New Energy Tech Inc., through its subsidiaries, engages in the research, development, and manufacture of electrolytic copper foil in China, Europe, the United States, and internationally. The company offers products and services, such as Lithium Battery Copper Foil, such as Standard-Strength Lithium Battery Copper Foil(SS-BCF), Medium-Strength Lithium Battery Copper Foil(MS-BCF), High-Strength Lithium Battery Copper Foil (HS-BCF), Super-High-Strength Lithium Battery Copper Foil(SHS-BCF); PCB copper foils, such as High Temperature Elongation Electrodeposited Copper Foil, Reverse Treated Copper Foil of low roughness for CCL, Reverse Treated Copper Foil of low roughness for FCCL, Hyper Very Low Profile Copper Foil; Flexible copper clad laminate, such as High frequency electrolytic substrate products, Rolled substrate products, and Electrolytic substrate products. It also offers research and development, manufacturing, quality assurance services along with logistics solutions to customers that include product packaging, storage, transportation, and on-site tech support services. Its products are used in various sectors, including new energy vehicles (NEVs), energy storage systems (ESSs), consumer electronics, printed circuit boards (PCBs). The company was incorporated in 2022 and is based in Shenzhen, China.",
@@ -11,11 +11,18 @@
   "earnings_estimated": false,
   "earnings_call": null,
   "eps_estimate": null,
-  "analysts": null,
-  "target_mean": null,
-  "target_high": null,
-  "target_low": null,
-  "target_analysts": null,
+  "analysts": {
+    "strong_buy": 0,
+    "buy": 1,
+    "hold": 0,
+    "sell": 0,
+    "strong_sell": 0,
+    "total": 1
+  },
+  "target_mean": 31,
+  "target_high": 31,
+  "target_low": 31,
+  "target_analysts": 1,
   "statements": [
     {
       "year": "2025",
@@ -25,7 +32,12 @@
     }
   ],
   "quarterly": [],
-  "growth": null,
+  "growth": {
+    "q0": null,
+    "q1": null,
+    "y0": null,
+    "y1": 0.7625
+  },
   "ratings": [
     {
       "date": "2026-09-08",
@@ -46,9 +58,9 @@
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 11511574528,
-    "ev_ebitda": 13.636,
-    "ev_revenue": 1.052,
+    "enterprise_value": 11430315008,
+    "ev_ebitda": 13.54,
+    "ev_revenue": 1.045,
     "float_shares": 22206141,
     "short_shares": 19199,
     "short_pct_float": null,

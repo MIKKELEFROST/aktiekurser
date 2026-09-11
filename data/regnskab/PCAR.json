@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-10T19:21:45.975Z",
+  "updated_at": "2026-09-11T19:23:10.799Z",
   "source": "Yahoo Finance",
   "symbol": "PCAR",
   "summary": "PACCAR Inc designs, manufactures, and distributes light, medium, and heavy-duty commercial trucks in the United States, Canada, Australia, Mexico, Europe, Central and South America, and internationally. It operates through three segments: Truck, Parts, and Financial Services. The Truck segment designs, manufactures, and distributes trucks for the over-the-road and off-highway hauling of commercial and consumer goods; and diesel engine products. It sells its trucks through a network of independent dealers under the Kenworth, Peterbilt, and DAF nameplates. The Parts segment distributes aftermarket parts for trucks and related commercial vehicles. The Financial Services segment conducts full-service leasing operations under the PacLease trade name, as well as provides finance and leasing products and services to customers and dealers. This segment offers equipment financing and administrative support services for its franchisees; retail loan and leasing services for small, medium, and large commercial trucking companies, as well as independent owners/operators and other businesses; and truck inventory financing services to independent dealers. In addition, this segment offers loans and leases directly to customers for the acquisition of trucks and related equipment; and operates its own full-service lease outlets. The company manufactures and markets industrial winches under the Braden, Carco, and Gearmatic nameplates. PACCAR Inc was founded in 1905 and is headquartered in Bellevue, Washington.",
@@ -10,16 +10,16 @@
   "next_earnings": "2026-10-27",
   "earnings_estimated": false,
   "earnings_call": "2026-07-28",
-  "eps_estimate": 1.60233,
+  "eps_estimate": 1.60162,
   "analysts": {
-    "strong_buy": 1,
+    "strong_buy": 2,
     "buy": 5,
-    "hold": 12,
+    "hold": 11,
     "sell": 0,
     "strong_sell": 0,
     "total": 18
   },
-  "target_mean": 143.46667,
+  "target_mean": 144.8,
   "target_high": 164,
   "target_low": 125,
   "target_analysts": 15,
@@ -51,6 +51,11 @@
   ],
   "quarterly": [
     {
+      "q": "2Q2025",
+      "revenue": 6962800000,
+      "earnings": 723800000
+    },
+    {
       "q": "3Q2025",
       "revenue": 6106500000,
       "earnings": 590000000
@@ -64,18 +69,13 @@
       "q": "1Q2026",
       "revenue": 6234300000,
       "earnings": 605300000
-    },
-    {
-      "q": "2Q2026",
-      "revenue": 6997000000,
-      "earnings": 752000000
     }
   ],
   "growth": {
-    "q0": 0.4307,
-    "q1": 0.62549996,
-    "y0": 0.1863,
-    "y1": 0.20950001
+    "q0": 0.43,
+    "q1": 0.63490003,
+    "y0": 0.18879999,
+    "y1": 0.213
   },
   "ratings": [
     {
@@ -231,20 +231,20 @@
   },
   "extras": {
     "beta": 0.972,
-    "enterprise_value": 70302261248,
-    "ev_ebitda": 21.489,
-    "ev_revenue": 2.527,
+    "enterprise_value": 70665453568,
+    "ev_ebitda": 21.6,
+    "ev_revenue": 2.54,
     "float_shares": 515985036,
-    "short_shares": 10386020,
-    "short_pct_float": 2.28,
-    "short_ratio": 2.81,
+    "short_shares": 12566753,
+    "short_pct_float": 2.76,
+    "short_ratio": 4.26,
     "last_split": "3:2",
     "last_split_date": "2023-02-08"
   },
   "ex_dividend": "2026-08-12",
   "dividend_date": null,
   "payout_ratio": 0.2821,
-  "inst_count": 1523,
+  "inst_count": 1522,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -282,6 +282,15 @@
       "date": "2026-07-31"
     },
     {
+      "name": "WALTERS WILLIAM LANCE",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 43.71 per share.",
+      "value": 43707,
+      "shares": 1000,
+      "date": "2026-07-31"
+    },
+    {
       "name": "FEIGHT ROBERT PRESTON",
       "role": "Chief Executive Officer",
       "kind": "other",
@@ -291,11 +300,20 @@
       "date": "2026-07-31"
     },
     {
+      "name": "FEIGHT ROBERT PRESTON",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 133.07 per share.",
+      "value": 6783151,
+      "shares": 50975,
+      "date": "2026-07-31"
+    },
+    {
       "name": "WALTERS WILLIAM LANCE",
       "role": "Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 43.71 per share.",
-      "value": 43707,
+      "kind": "sell",
+      "text": "Sale at price 133.50 per share.",
+      "value": 133500,
       "shares": 1000,
       "date": "2026-07-31"
     },
@@ -318,24 +336,6 @@
       "date": "2026-07-31"
     },
     {
-      "name": "WALTERS WILLIAM LANCE",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 133.50 per share.",
-      "value": 133500,
-      "shares": 1000,
-      "date": "2026-07-31"
-    },
-    {
-      "name": "FEIGHT ROBERT PRESTON",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 133.07 per share.",
-      "value": 6783151,
-      "shares": 50975,
-      "date": "2026-07-31"
-    },
-    {
       "name": "NIEKAMP CYNTHIA A",
       "role": "Director",
       "kind": "other",
@@ -345,21 +345,21 @@
       "date": "2026-05-08"
     },
     {
-      "name": "BANEY KEVIN D",
-      "role": "Officer",
+      "name": "POPLAWSKI BRICE J",
+      "role": "Chief Financial Officer",
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 1736,
+      "shares": 646,
       "date": "2026-02-27"
     },
     {
-      "name": "DOZIER CHRISTOPHER MICHAEL",
+      "name": "BLOCH LAURA J.",
       "role": "Officer",
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 1794,
+      "shares": 1061,
       "date": "2026-02-27"
     }
   ],
