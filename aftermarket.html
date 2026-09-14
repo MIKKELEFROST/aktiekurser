@@ -57,17 +57,64 @@
     </p>
   </div>
 
-  <div class="flex items-center gap-3 flex-wrap mb-4">
+  <div class="flex items-center gap-3 flex-wrap mb-3">
+    <input id="q" type="search" class="rounded-md px-3 py-2 text-sm bg-transparent"
+           style="width:13rem;border:1px solid var(--hairline);color:var(--text-primary)"
+           placeholder="Navn / symbol" aria-label="Søg efter navn eller symbol">
+
     <div class="seg" role="group" aria-label="Hvad skal vises">
       <button type="button" data-slags="alle" aria-pressed="true">Alt</button>
       <button type="button" data-slags="aktier" aria-pressed="false">Aktier</button>
       <button type="button" data-slags="fonde" aria-pressed="false">Fonde</button>
     </div>
-    <span class="text-xs faint" id="omfang"></span>
+
+    <select id="sektor" class="rounded-md px-3 py-2 text-sm bg-transparent" aria-label="Sektor"
+            style="border:1px solid var(--hairline);color:var(--text-primary)">
+      <option value="">Alle sektorer</option>
+    </select>
+
+    <select id="antal" class="rounded-md px-3 py-2 text-sm bg-transparent" aria-label="Hvor mange følges"
+            style="border:1px solid var(--hairline);color:var(--text-primary)">
+      <option value="50">Følg 50 største</option>
+      <option value="100">Følg 100 største</option>
+      <option value="150" selected>Følg 150 største</option>
+    </select>
+
     <span class="ml-auto text-xs" id="live"></span>
   </div>
 
+  <div class="flex items-center gap-3 flex-wrap mb-4">
+    <div class="seg" role="group" aria-label="Retning">
+      <button type="button" data-retning="alle" aria-pressed="true">Begge veje</button>
+      <button type="button" data-retning="op" aria-pressed="false">Kun op</button>
+      <button type="button" data-retning="ned" aria-pressed="false">Kun ned</button>
+    </div>
+
+    <select id="minMove" class="rounded-md px-3 py-2 text-sm bg-transparent" aria-label="Mindste udsving"
+            style="border:1px solid var(--hairline);color:var(--text-primary)">
+      <option value="0">Alle udsving</option>
+      <option value="0.5">Mindst 0,5 %</option>
+      <option value="1">Mindst 1 %</option>
+      <option value="2">Mindst 2 %</option>
+      <option value="5">Mindst 5 %</option>
+    </select>
+
+    <label class="text-sm flex items-center gap-2" style="display:flex;align-items:center;gap:8px">
+      <input type="checkbox" id="kunHandlede"> <span class="muted">Skjul dem der ikke handles</span>
+    </label>
+
+    <button type="button" id="nulstil" class="rounded-md px-3 py-2 text-sm font-semibold muted"
+            style="border:1px solid var(--hairline)">Nulstil</button>
+
+    <span class="text-xs faint" id="omfang"></span>
+  </div>
+
   <div id="besked" class="card rounded-md p-5 mb-5 text-sm muted" hidden></div>
+
+  <div id="tomt" class="card rounded-md p-5 mb-5 text-sm muted" hidden>
+    Ingen af de papirer, du følger, passer på filtrene lige nu.
+    Prøv at slække på mindste udsving eller vælge begge veje.
+  </div>
 
   <div class="overflow-x-auto">
     <table class="w-full text-sm" id="tabel" hidden>
@@ -98,27 +145,50 @@
   // at spørge om alle 3.578 og hverken kunne nå det eller have plads til det.
   const MAX = 150;
 
-  const state = { alle: [], slags: 'alle', kurser: {}, hentet: null };
+  const TOM = { q: '', slags: 'alle', sektor: '', antal: 150, retning: 'alle', minMove: 0, kunHandlede: false };
+  const state = { alle: [], kurser: {}, hentet: null, ...TOM };
 
-  // ── Tabellen ───────────────────────────────────────────────────────────
+  // ── To slags filtre ────────────────────────────────────────────────────
+  // Udvælgelsen bestemmer hvilke symboler vi overhovedet spørger om. Den må
+  // kun bruge noget vi ved på forhånd — navn, slags, sektor, størrelse.
+  //
+  // Visningen bestemmer hvad der står i tabellen, og den må gerne bruge
+  // kurserne. Det er netop derfor de to ikke må blandes: filtrerede vi
+  // udvælgelsen på "mindst 2 %", ville vi holde op med at spørge om alle dem
+  // der lå under — og så ville de aldrig kunne komme over igen.
   function udvalg() {
-    const rows = state.alle.filter((r) =>
-      state.slags === 'alle' ? true : state.slags === 'fonde' ? r.erFond : !r.erFond);
-    return rows.slice(0, MAX);
+    const q = state.q.trim().toLowerCase();
+    return state.alle.filter((r) => {
+      if (state.slags === 'fonde' && !r.erFond) return false;
+      if (state.slags === 'aktier' && r.erFond) return false;
+      if (state.sektor && r.sector !== state.sektor) return false;
+      if (q && !(r.name.toLowerCase().includes(q) || r.symbol.toLowerCase().includes(q))) return false;
+      return true;
+    }).slice(0, Math.min(state.antal, MAX));
   }
 
-  function render() {
-    const rows = udvalg();
-
+  function viste() {
+    const med = [], uden = [];
+    for (const r of udvalg()) {
+      const q = state.kurser[r.symbol];
+      const handles = q && q.xp != null;
+      if (!handles) { if (!state.kunHandlede && state.minMove === 0 && state.retning === 'alle') uden.push({ r, q }); continue; }
+      const pct = q.xcp ?? 0;
+      if (state.retning === 'op' && !(pct > 0)) continue;
+      if (state.retning === 'ned' && !(pct < 0)) continue;
+      if (Math.abs(pct) < state.minMove) continue;
+      med.push({ r, q });
+    }
     // Sorteret efter hvor meget der er sket uden for børstiden — det er hele
     // grunden til at kigge. Papirer uden en aftermarket-kurs falder nedenunder
     // frem for at blive sorteret som nul.
-    const med = [], uden = [];
-    for (const r of rows) {
-      const q = state.kurser[r.symbol];
-      (q && q.xp != null ? med : uden).push({ r, q });
-    }
     med.sort((a, b) => Math.abs(b.q.xcp ?? 0) - Math.abs(a.q.xcp ?? 0));
+    return { med, uden };
+  }
+
+  // ── Tabellen ───────────────────────────────────────────────────────────
+  function render() {
+    const { med, uden } = viste();
 
     const celle = (v, cls) => '<td class="py-2 px-3 num text-right ' + (cls || '') + '">' + v + '</td>';
     const tegn = ({ r, q }) => {
@@ -139,9 +209,13 @@
         + '</tr>';
     };
 
+    const antal = med.length + uden.length;
     $('#rows').innerHTML = med.map(tegn).join('') + uden.map(tegn).join('');
-    $('#tabel').hidden = false;
-    $('#omfang').textContent = med.length + ' af ' + rows.length + ' handles lige nu';
+    $('#tabel').hidden = antal === 0;
+    $('#tomt').hidden = antal !== 0;
+    $('#omfang').textContent = antal
+      ? med.length + ' handles lige nu, ' + udvalg().length + ' følges'
+      : '';
   }
 
   // ── Beskeder ───────────────────────────────────────────────────────────
@@ -203,6 +277,12 @@
 
     state.alle = aktier.concat(fonde).sort((a, b) => (b.market_cap || 0) - (a.market_cap || 0));
 
+    // Kun de sektorer der faktisk optræder. En liste med elleve valgmuligheder,
+    // hvoraf de seks ikke findes i udvalget, er værre end ingen liste.
+    const sektorer = [...new Set(state.alle.map((r) => r.sector).filter(Boolean))].sort();
+    $('#sektor').insertAdjacentHTML('beforeend',
+      sektorer.map((x) => '<option value="' + K.esc(x) + '">' + K.esc(x) + '</option>').join(''));
+
     besked(vindueBesked());
     render();
 
@@ -231,12 +311,46 @@
     });
   })();
 
-  document.querySelectorAll('[data-slags]').forEach((b) => b.addEventListener('click', () => {
-    state.slags = b.dataset.slags;
+  // ── Kontrollerne ───────────────────────────────────────────────────────
+  // En segmenteret knaprække opfører sig ens uanset hvad den styrer, så den
+  // bindes ét sted frem for tre gange med hver sin kopi.
+  const segment = (attr, felt) => document.querySelectorAll('[' + attr + ']').forEach((b) =>
+    b.addEventListener('click', () => {
+      state[felt] = b.getAttribute(attr);
+      document.querySelectorAll('[' + attr + ']').forEach((o) =>
+        o.setAttribute('aria-pressed', String(o.getAttribute(attr) === state[felt])));
+      render();
+    }));
+
+  segment('data-slags', 'slags');
+  segment('data-retning', 'retning');
+
+  // Søgefeltet må ikke tegne tabellen om ved hvert tastetryk på en liste der
+  // kan være hundrede og halvtreds rækker lang.
+  let søgeUr = null;
+  $('#q').addEventListener('input', (e) => {
+    clearTimeout(søgeUr);
+    søgeUr = setTimeout(() => { state.q = e.target.value; render(); }, 180);
+  });
+
+  $('#sektor').addEventListener('change', (e) => { state.sektor = e.target.value; render(); });
+  $('#antal').addEventListener('change', (e) => { state.antal = Number(e.target.value) || 150; render(); });
+  $('#minMove').addEventListener('change', (e) => { state.minMove = Number(e.target.value) || 0; render(); });
+  $('#kunHandlede').addEventListener('change', (e) => { state.kunHandlede = e.target.checked; render(); });
+
+  $('#nulstil').addEventListener('click', () => {
+    Object.assign(state, TOM);
+    $('#q').value = '';
+    $('#sektor').value = '';
+    $('#antal').value = String(TOM.antal);
+    $('#minMove').value = '0';
+    $('#kunHandlede').checked = false;
     document.querySelectorAll('[data-slags]').forEach((o) =>
-      o.setAttribute('aria-pressed', String(o.dataset.slags === state.slags)));
+      o.setAttribute('aria-pressed', String(o.dataset.slags === 'alle')));
+    document.querySelectorAll('[data-retning]').forEach((o) =>
+      o.setAttribute('aria-pressed', String(o.dataset.retning === 'alle')));
     render();
-  }));
+  });
 })();
 </script>
 </body>
