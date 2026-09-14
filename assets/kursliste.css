@@ -306,7 +306,7 @@ th .hint { cursor: pointer; }           /* header is still a sort control */
   padding: 0 16px;
   display: flex;
   align-items: center;
-  gap: 10px 28px;
+  gap: 10px 24px;
   min-height: 64px;
   flex-wrap: wrap;
 }
@@ -326,7 +326,7 @@ th .hint { cursor: pointer; }           /* header is still a sort control */
 @media (max-width: 719px) { .nav-logo { height: 34px; } }
 
 .nav-sections {
-  display: flex; align-items: center; gap: 24px;
+  display: flex; align-items: center; gap: 20px;
   /* Basis 0, ikke auto. Med auto meldte linjen sig ind med hele sin
      indholdsbredde, og så var der ikke plads til tandhjulet på rækken — det
      ombrød til sin egen linje i venstre side, hvor panelet åbnede ud over
@@ -340,7 +340,7 @@ th .hint { cursor: pointer; }           /* header is still a sort control */
    Feltet ligger til højre for sektionerne og skubber tilbage-linket ud i
    kanten. Listen hænger under feltet og lægger sig over siden — den skal ikke
    flytte indholdet, hver gang nogen taster. */
-.nav-search { position: relative; flex: 0 1 260px; min-width: 150px; margin-left: auto; }
+.nav-search { position: relative; flex: 0 1 228px; min-width: 150px; margin-left: auto; }
 .nav-search input {
   width: 100%; box-sizing: border-box;
   border: 1px solid var(--hairline); border-radius: var(--radius-pill);
