@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-11T19:23:11.117Z",
+  "updated_at": "2026-09-14T20:33:07.933Z",
   "source": "Yahoo Finance",
   "symbol": "TRMED.OL",
   "summary": "Thor Medical ASA produces and supplies alpha-particle emitters for cancer therapy in Norway. It offers thorium-228, as well as radium-224 and lead-212 to radiopharmaceutical customers. The company was incorporated in 2009 and is headquartered in Oslo, Norway.",
@@ -11,10 +11,17 @@
   "earnings_estimated": false,
   "earnings_call": "2026-08-28",
   "eps_estimate": null,
-  "analysts": null,
-  "target_mean": 3.5,
-  "target_high": 3.5,
-  "target_low": 3.5,
+  "analysts": {
+    "strong_buy": 0,
+    "buy": 0,
+    "hold": 0,
+    "sell": 1,
+    "strong_sell": 0,
+    "total": 1
+  },
+  "target_mean": 4.2,
+  "target_high": 4.2,
+  "target_low": 4.2,
   "target_analysts": 1,
   "statements": [
     {
@@ -34,8 +41,8 @@
   "growth": {
     "q0": null,
     "q1": null,
-    "y0": 0.1765,
-    "y1": 0.2143
+    "y0": -0.1765,
+    "y1": 0.4
   },
   "ratings": [],
   "holders": [],
@@ -49,9 +56,9 @@
   },
   "extras": {
     "beta": -0.236,
-    "enterprise_value": 1892308608,
-    "ev_ebitda": -31.47,
-    "ev_revenue": 1154.551,
+    "enterprise_value": 1874308608,
+    "ev_ebitda": -31.17,
+    "ev_revenue": 1143.568,
     "float_shares": 208599455,
     "short_shares": null,
     "short_pct_float": null,

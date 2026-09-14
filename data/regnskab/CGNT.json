@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-11T19:23:09.821Z",
+  "updated_at": "2026-09-14T20:33:06.018Z",
   "source": "Yahoo Finance",
   "symbol": "CGNT",
   "summary": "Cognyte Software Ltd., a software-driven technology company, focuses on investigative analytics solutions worldwide. The company offers network intelligence analytics, threat intelligence analytics, decision intelligence analytics, and operational intelligence analytics solutions. It also offers software products, including subscription or perpetual licenses and appliances that include software that is essential to the product's functionality; software services, such as support and cloud-based SaaS subscriptions; and professional services and others comprising installation and integration services, customer specific development work, resale of third-party hardware, and consulting and training services. In addition, the company provides customer support, professional, and integration services. It serves governments agencies, including national, regional, and local government agencies. Cognyte Software Ltd. was incorporated in 2020 and is headquartered in Herzliya, Israel.",
@@ -72,7 +72,7 @@
     }
   ],
   "growth": {
-    "q0": 2.8332999,
+    "q0": 0.4375,
     "q1": 0.7,
     "y0": 0.6875,
     "y1": 0.6296
@@ -231,21 +231,27 @@
   },
   "extras": {
     "beta": 1.663,
-    "enterprise_value": 557026624,
-    "ev_ebitda": 22.486,
-    "ev_revenue": 1.359,
-    "float_shares": 55078950,
-    "short_shares": 671290,
-    "short_pct_float": 0.97,
-    "short_ratio": 1.42,
+    "enterprise_value": 549416832,
+    "ev_ebitda": 20.757,
+    "ev_revenue": 1.303,
+    "float_shares": 55183069,
+    "short_shares": 551869,
+    "short_pct_float": 0.8,
+    "short_ratio": 0.99,
     "last_split": null,
     "last_split_date": null
   },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 177,
+  "inst_count": 176,
   "eps_history": [
+    {
+      "quarter": "2025-07-31",
+      "estimate": 0.03,
+      "actual": 0.08,
+      "surprise_pct": 166.67
+    },
     {
       "quarter": "2025-10-31",
       "estimate": 0.00667,
@@ -259,38 +265,13 @@
       "surprise_pct": 185.71
     },
     {
-      "quarter": "2026-04-30",
-      "estimate": 0.085,
-      "actual": 0.03,
-      "surprise_pct": -64.71
-    },
-    {
       "quarter": "2026-07-31",
       "estimate": 0.0875,
       "actual": 0.15,
       "surprise_pct": 71.43
     }
   ],
-  "insiders": [
-    {
-      "name": "TOPLINE CAPITAL PARTNERS, LP",
-      "role": "Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "buy",
-      "text": "Purchase at price 6.30 - 6.31 per share.",
-      "value": 6114211,
-      "shares": 969631,
-      "date": "2024-09-12"
-    },
-    {
-      "name": "TOPLINE CAPITAL MANAGEMENT, LLC",
-      "role": "Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "buy",
-      "text": "Purchase at price 6.30 - 6.31 per share.",
-      "value": 6114211,
-      "shares": 969631,
-      "date": "2024-09-12"
-    }
-  ],
+  "insiders": [],
   "dividends": [],
   "splits": []
 }

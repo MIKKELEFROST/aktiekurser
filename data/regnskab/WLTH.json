@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-11T19:23:11.259Z",
+  "updated_at": "2026-09-14T20:33:08.140Z",
   "source": "Yahoo Finance",
   "symbol": "WLTH",
   "summary": "Wealthfront Corporation is a privately owned investment manager. It primarily provides its services to individuals. It also caters to high net worth individuals, charitable organizations, and corporations. The firm invests in the public equity and fixed income funds. It also invests in mutual funds and exchange traded funds. It conducts in-house research to make its investments. Wealthfront Corporation was formerly known as Wealthfront Inc. and is based in Redwood City, California with an additional office in Palo Alto, California.",
@@ -60,7 +60,7 @@
     }
   ],
   "growth": {
-    "q0": -0.39540002,
+    "q0": null,
     "q1": -0.3634,
     "y0": -0.4557,
     "y1": 0.1434
@@ -212,17 +212,17 @@
   "insider_net": {
     "period": "6m",
     "buys": 22,
-    "sells": 9,
+    "sells": 10,
     "bought": 5217521,
-    "sold": 1027662,
-    "net_pct": 24.2
+    "sold": 1037662,
+    "net_pct": 24.1
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 1200443008,
-    "ev_ebitda": -7.904,
-    "ev_revenue": 3.229,
-    "float_shares": 89291590,
+    "enterprise_value": 1125068544,
+    "ev_ebitda": -7.407,
+    "ev_revenue": 3.027,
+    "float_shares": 89867450,
     "short_shares": 6777517,
     "short_pct_float": 6.69,
     "short_ratio": 6.58,
@@ -241,16 +241,16 @@
       "surprise_pct": 30.25
     },
     {
-      "quarter": "2026-01-31",
-      "estimate": 0.22667,
-      "actual": 0.2592,
-      "surprise_pct": 14.35
-    },
-    {
       "quarter": "2026-04-30",
       "estimate": 0.15667,
       "actual": 0.1502,
       "surprise_pct": -4.13
+    },
+    {
+      "quarter": "2026-01-31",
+      "estimate": -1.17059,
+      "actual": -1.3,
+      "surprise_pct": -11.06
     },
     {
       "quarter": "2026-07-31",
@@ -260,6 +260,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "GOLDMAN KENNETH ALLEN",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 10.00 per share.",
+      "value": 100000,
+      "shares": 10000,
+      "date": "2026-09-10"
+    },
     {
       "name": "WETTERWALD JULIEN",
       "role": "Chief Technology Officer",
@@ -339,15 +348,6 @@
       "text": null,
       "value": null,
       "shares": 77448,
-      "date": "2026-06-15"
-    },
-    {
-      "name": "LIN LAUREN",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 39409,
       "date": "2026-06-15"
     }
   ],
