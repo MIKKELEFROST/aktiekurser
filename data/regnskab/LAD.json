@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-14T20:33:07.017Z",
+  "updated_at": "2026-09-15T19:56:05.887Z",
   "source": "Yahoo Finance",
   "symbol": "LAD",
   "summary": "Lithia Motors, Inc. operates as an automotive retailer in the United States, the United Kingdom, and Canada. The company operates in two segments, Vehicle Operations and Financing Operations. It offers a range of products and services fulfilling the entire vehicle ownership lifecycle, including new and used vehicles, financing and insurance products, and aftersales automotive repair and maintenance services. The company provides its products and services through a network of physical locations, e-commerce platforms, captive finance solutions, fleet management offerings, and other synergistic adjacencies. Lithia Motors, Inc. was founded in 1946 and is headquartered in Medford, Oregon.",
@@ -51,6 +51,11 @@
   ],
   "quarterly": [
     {
+      "q": "2Q2025",
+      "revenue": 9583000000,
+      "earnings": 256100000
+    },
+    {
       "q": "3Q2025",
       "revenue": 9675800000,
       "earnings": 217100000
@@ -64,11 +69,6 @@
       "q": "1Q2026",
       "revenue": 9271400000,
       "earnings": 100400000
-    },
-    {
-      "q": "2Q2026",
-      "revenue": 9791300000,
-      "earnings": 260000000
     }
   ],
   "growth": {
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 9,
-    "sells": 5,
+    "sells": 6,
     "bought": 6802,
-    "sold": 1102,
+    "sold": 1177,
     "net_pct": 2.2
   },
   "extras": {
     "beta": 1.23,
-    "enterprise_value": 24339894272,
-    "ev_ebitda": 12.66,
-    "ev_revenue": 0.642,
+    "enterprise_value": 24389357568,
+    "ev_ebitda": 12.686,
+    "ev_revenue": 0.643,
     "float_shares": 19172355,
     "short_shares": 1977078,
     "short_pct_float": 14.05,
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "LORETZ-CONGDON STACY",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 370.73 per share.",
+      "value": 27805,
+      "shares": 75,
+      "date": "2026-09-11"
+    },
     {
       "name": "STORK DAVID",
       "role": "Officer",
@@ -346,15 +355,6 @@
     },
     {
       "name": "MCINTYRE SHAUNA",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 715,
-      "date": "2026-04-30"
-    },
-    {
-      "name": "MCKINNEY CASSANDRA M.",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

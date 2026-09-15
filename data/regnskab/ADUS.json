@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-14T20:33:05.481Z",
+  "updated_at": "2026-09-15T19:56:04.635Z",
   "source": "Yahoo Finance",
   "symbol": "ADUS",
   "summary": "Addus HomeCare Corporation, together with its subsidiaries, provides personal care services to elderly, chronically ill, disabled persons, and individuals who are at risk of hospitalization or institutionalization in the United States. The company operates through three segments: Personal Care, Hospice, and Home Health. Its Personal Care segment provides non-medical assistance with activities of daily living. This segment offers services that include assistance with bathing, grooming, oral care, feeding and dressing, medication reminders, meal planning and preparation, housekeeping, and transportation services. The Hospice segment provides palliative nursing care, social work, spiritual counseling, homemaker, and bereavement counseling services for people who are terminally ill, as well as related services for their families. Its Home Health segment offers skilled nursing and physical, occupational, and speech therapy for the individuals who requires assistance during an illness or after hospitalization. The company serves federal, state, and local governmental agencies; managed care organizations; commercial insurers; and private individuals. Addus HomeCare Corporation was founded in 1979 and is based in Frisco, Texas.",
@@ -10,16 +10,16 @@
   "next_earnings": "2026-11-02",
   "earnings_estimated": true,
   "earnings_call": "2026-08-04",
-  "eps_estimate": 1.79074,
+  "eps_estimate": 1.79151,
   "analysts": {
     "strong_buy": 3,
-    "buy": 9,
-    "hold": 1,
+    "buy": 8,
+    "hold": 2,
     "sell": 0,
     "strong_sell": 1,
     "total": 14
   },
-  "target_mean": 134.6923,
+  "target_mean": 133.53847,
   "target_high": 155,
   "target_low": 96,
   "target_analysts": 13,
@@ -51,6 +51,11 @@
   ],
   "quarterly": [
     {
+      "q": "2Q2025",
+      "revenue": 349443000,
+      "earnings": 22052000
+    },
+    {
       "q": "3Q2025",
       "revenue": 362301000,
       "earnings": 22848000
@@ -64,20 +69,22 @@
       "q": "1Q2026",
       "revenue": 363611000,
       "earnings": 25069000
-    },
-    {
-      "q": "2Q2026",
-      "revenue": 377414000,
-      "earnings": 27607000
     }
   ],
   "growth": {
-    "q0": 0.1479,
-    "q1": 0.0696,
-    "y0": 0.1308,
-    "y1": 0.0674
+    "q0": 0.14840001,
+    "q1": 0.07,
+    "y0": 0.1311,
+    "y1": 0.0656
   },
   "ratings": [
+    {
+      "date": "2026-09-14",
+      "firm": "B of A Securities",
+      "from": "Buy",
+      "to": "Neutral",
+      "action": "down"
+    },
     {
       "date": "2026-08-05",
       "firm": "RBC Capital",
@@ -140,13 +147,6 @@
       "from": null,
       "to": "Market Perform",
       "action": "init"
-    },
-    {
-      "date": "2025-11-07",
-      "firm": "RBC Capital",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
     }
   ],
   "holders": [
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.861,
-    "enterprise_value": 2151216384,
-    "ev_ebitda": 13.4,
-    "ev_revenue": 1.457,
+    "enterprise_value": 2155606784,
+    "ev_ebitda": 13.427,
+    "ev_revenue": 1.46,
     "float_shares": 17752001,
     "short_shares": 895318,
     "short_pct_float": 5.78,

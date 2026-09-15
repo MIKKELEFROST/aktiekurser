@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-14T20:33:08.217Z",
+  "updated_at": "2026-09-15T19:56:06.938Z",
   "source": "Yahoo Finance",
   "symbol": "ZIM",
   "summary": "ZIM Integrated Shipping Services Ltd., together with its subsidiaries, provides container shipping and related services in Israel and internationally. The company offers door-to-door and port-to-port transportation services for various types of customers, including end-users, consolidators, and freight forwarders. It also provides ZIMonitor, a reefer cargo tracking service, a device attached to the engine of the reefer, and allows customers to track and monitor, cargo, such as pharmaceuticals, food and delicate electronics. As of December 31, 2025, it operated a fleet of 128 vessels, such as 115 container vessels and 13 vehicle transport vessels, as well as a network of 56 weekly lines. ZIM Integrated Shipping Services Ltd. was incorporated in 1945 and is headquartered in Haifa, Israel.",
@@ -14,12 +14,12 @@
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
-    "hold": 1,
+    "hold": 2,
     "sell": 0,
-    "strong_sell": 2,
+    "strong_sell": 1,
     "total": 4
   },
-  "target_mean": 25.8,
+  "target_mean": 28.3,
   "target_high": 38,
   "target_low": 16.5,
   "target_analysts": 4,
@@ -79,6 +79,13 @@
   },
   "ratings": [
     {
+      "date": "2026-09-14",
+      "firm": "Barclays",
+      "from": "Underweight",
+      "to": "Equal-Weight",
+      "action": "up"
+    },
+    {
       "date": "2026-08-27",
       "firm": "Barclays",
       "from": "Underweight",
@@ -136,13 +143,6 @@
     },
     {
       "date": "2025-12-01",
-      "firm": "JP Morgan",
-      "from": "Underweight",
-      "to": "Underweight",
-      "action": "main"
-    },
-    {
-      "date": "2025-11-24",
       "firm": "JP Morgan",
       "from": "Underweight",
       "to": "Underweight",
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.115,
-    "enterprise_value": 7241784320,
-    "ev_ebitda": 15.514,
-    "ev_revenue": 1.125,
+    "enterprise_value": 7259862016,
+    "ev_ebitda": 15.552,
+    "ev_revenue": 1.127,
     "float_shares": 115073952,
     "short_shares": 2911518,
     "short_pct_float": 2.45,
@@ -269,33 +269,6 @@
     {
       "name": "DOTAN SAAR",
       "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 30.30 - 30.40 per share.",
-      "value": 111887,
-      "shares": 3690,
-      "date": "2026-09-08"
-    },
-    {
-      "name": "TIRAN ASSAF",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 30.21 per share.",
-      "value": 69837,
-      "shares": 2312,
-      "date": "2026-09-08"
-    },
-    {
-      "name": "ELIMELECH ARIK",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 29.99 per share.",
-      "value": 13734,
-      "shares": 458,
-      "date": "2026-09-08"
-    },
-    {
-      "name": "DOTAN SAAR",
-      "role": "Officer",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 30.08 per share.",
       "value": 601600,
@@ -321,13 +294,31 @@
       "date": "2026-09-08"
     },
     {
-      "name": "MEYER-GLOECKNER BIRGER JOHANNES",
-      "role": "Director",
+      "name": "DOTAN SAAR",
+      "role": "Officer",
       "kind": "sell",
-      "text": "Sale at price 28.50 per share.",
-      "value": 43634,
-      "shares": 1531,
-      "date": "2026-09-04"
+      "text": "Sale at price 30.30 - 30.40 per share.",
+      "value": 111887,
+      "shares": 3690,
+      "date": "2026-09-08"
+    },
+    {
+      "name": "TIRAN ASSAF",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 30.21 per share.",
+      "value": 69837,
+      "shares": 2312,
+      "date": "2026-09-08"
+    },
+    {
+      "name": "ELIMELECH ARIK",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 29.99 per share.",
+      "value": 13734,
+      "shares": 458,
+      "date": "2026-09-08"
     },
     {
       "name": "MEYER-GLOECKNER BIRGER JOHANNES",
@@ -339,12 +330,21 @@
       "date": "2026-09-04"
     },
     {
+      "name": "MEYER-GLOECKNER BIRGER JOHANNES",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 28.50 per share.",
+      "value": 43634,
+      "shares": 1531,
+      "date": "2026-09-04"
+    },
+    {
       "name": "XAVIER DESTRIAU",
       "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 28.80 per share.",
-      "value": 348019,
-      "shares": 12084,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 28.38 per share.",
+      "value": 2549602,
+      "shares": 89838,
       "date": "2026-08-24"
     },
     {

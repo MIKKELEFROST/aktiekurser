@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-14T20:33:06.033Z",
+  "updated_at": "2026-09-15T19:56:05.086Z",
   "source": "Yahoo Finance",
   "symbol": "CHYM",
   "summary": "Chime Financial, Inc., a financial technology company, provides digital consumer banking and payment solutions in the United States and internationally. The company offers various products, such as spending, including checking accounts, debit cards, ATM and cash deposit networks, paycheck, outbound instant transfer; Chime Plus, a fee-free mobile banking experience; liquidity products, such as SpotMe, MyPay, and Instant Loans; building credit solutions comprising chime card and credit builder credit card, and FICO score tracking; savings and perks products; community focused products, including Pay Anyone and SpotMe Boosts; Enterprise offers Chime Workplace, a suite of financial services and employee benefits tools to their employees; and other support and operations. The company was formerly known as 1Debit Inc. and changed its name to Chime Financial, Inc. in June 2019. Chime Financial, Inc. was incorporated in 2012 and is headquartered in San Francisco, California.",
@@ -13,15 +13,15 @@
   "eps_estimate": null,
   "analysts": {
     "strong_buy": 6,
-    "buy": 14,
-    "hold": 3,
+    "buy": 15,
+    "hold": 2,
     "sell": 0,
     "strong_sell": 0,
     "total": 23
   },
-  "target_mean": 37.81818,
+  "target_mean": 39.40909,
   "target_high": 50,
-  "target_low": 22,
+  "target_low": 30,
   "target_analysts": 22,
   "statements": [
     {
@@ -61,6 +61,27 @@
   ],
   "growth": null,
   "ratings": [
+    {
+      "date": "2026-09-15",
+      "firm": "Goldman Sachs",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-09-14",
+      "firm": "B. Riley Securities",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-09-14",
+      "firm": "Rothschild & Co",
+      "from": "Neutral",
+      "to": "Buy",
+      "action": "up"
+    },
     {
       "date": "2026-09-09",
       "firm": "Loop Capital",
@@ -109,27 +130,6 @@
       "from": "Overweight",
       "to": "Overweight",
       "action": "main"
-    },
-    {
-      "date": "2026-09-09",
-      "firm": "Keybanc",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-09-09",
-      "firm": "Canaccord Genuity",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-09-02",
-      "firm": "Scotiabank",
-      "from": null,
-      "to": "Sector Outperform",
-      "action": "init"
     }
   ],
   "holders": [
@@ -207,16 +207,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 23,
-    "sells": 19,
+    "sells": 22,
     "bought": 3868632,
-    "sold": 14204346,
-    "net_pct": -26.4
+    "sold": 15155549,
+    "net_pct": -28.1
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 11513366528,
-    "ev_ebitda": 29.992,
-    "ev_revenue": 4.686,
+    "enterprise_value": 11880594432,
+    "ev_ebitda": 30.948,
+    "ev_revenue": 4.835,
     "float_shares": 232163533,
     "short_shares": 21348953,
     "short_pct_float": 7.36,
@@ -255,6 +255,33 @@
     }
   ],
   "insiders": [
+    {
+      "name": "FEUILLE JAMES",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 32.89 - 33.15 per share.",
+      "value": 11611184,
+      "shares": 351890,
+      "date": "2026-09-11"
+    },
+    {
+      "name": "CAROLAN SHAWN T",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 33.05 - 33.21 per share.",
+      "value": 19194540,
+      "shares": 579313,
+      "date": "2026-09-11"
+    },
+    {
+      "name": "MARSHALL CYNTHIA",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 33.09 per share.",
+      "value": 661866,
+      "shares": 20000,
+      "date": "2026-09-11"
+    },
     {
       "name": "DST GLOBAL ADVISORS, LTD.",
       "role": "Beneficial Owner of more than 10% of a Class of Security",
@@ -316,33 +343,6 @@
       "text": "Sale at price 34.00 - 34.03 per share.",
       "value": 3402614,
       "shares": 100000,
-      "date": "2026-08-28"
-    },
-    {
-      "name": "BRITT CHRISTOPHER R",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 88618,
-      "date": "2026-08-28"
-    },
-    {
-      "name": "FRANKEL ADAM B",
-      "role": "General Counsel",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 115474,
-      "date": "2026-08-28"
-    },
-    {
-      "name": "ASMEROM AMINE",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 92379,
       "date": "2026-08-28"
     }
   ],

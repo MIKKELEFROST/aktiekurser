@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-14T20:33:08.357Z",
+  "updated_at": "2026-09-15T19:56:06.322Z",
   "source": "Yahoo Finance",
   "symbol": "PLAY",
   "summary": "Dave & Buster's Entertainment, Inc. owns and operates entertainment and dining venues for adults and families in North America. Its venues offer a menu of entrées and appetizers, as well as a selection of alcoholic and non-alcoholic beverages; and an assortment of entertainment attractions centered on playing games and watching live sports, and other televised events. The company also provides food, drinks, and entertainment, including bowling, laser tag, arcade games, and virtual reality. The company operates its venues under the Dave & Buster's and Main Event brands. Dave & Buster's Entertainment, Inc. was founded in 1982 and is headquartered in Coppell, Texas.",
@@ -7,10 +7,10 @@
   "website": "https://daveandbusters.com",
   "employees": 23610,
   "ceo": "Mr. Darin E. Harper",
-  "next_earnings": "2026-09-14",
-  "earnings_estimated": false,
+  "next_earnings": "2026-12-08",
+  "earnings_estimated": true,
   "earnings_call": null,
-  "eps_estimate": 0.18717,
+  "eps_estimate": -1.44571,
   "analysts": {
     "strong_buy": 0,
     "buy": 3,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 11
   },
-  "target_mean": 17,
+  "target_mean": 14,
   "target_high": 25,
-  "target_low": 12,
+  "target_low": 9,
   "target_analysts": 7,
   "statements": [
     {
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 557400000,
-      "earnings": 11400000
-    },
-    {
       "q": "3Q2025",
       "revenue": 448200000,
       "earnings": -42100000
@@ -69,15 +64,41 @@
       "q": "1Q2026",
       "revenue": 559200000,
       "earnings": 5700000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 544100000,
+      "earnings": -12500000
     }
   ],
   "growth": {
-    "q0": -0.53209996,
-    "q1": -0.0862,
-    "y0": -1.9545,
-    "y1": 0.3808
+    "q0": -0.2682,
+    "q1": 0.32650003,
+    "y0": -4.7167,
+    "y1": 0.22760001
   },
   "ratings": [
+    {
+      "date": "2026-09-15",
+      "firm": "UBS",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-09-15",
+      "firm": "BMO Capital",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-09-15",
+      "firm": "Freedom Capital Markets",
+      "from": "Hold",
+      "to": "Hold",
+      "action": "main"
+    },
     {
       "date": "2026-06-29",
       "firm": "Citizens",
@@ -126,27 +147,6 @@
       "from": "Neutral",
       "to": "Neutral",
       "action": "main"
-    },
-    {
-      "date": "2025-12-11",
-      "firm": "Truist Securities",
-      "from": "Hold",
-      "to": "Hold",
-      "action": "main"
-    },
-    {
-      "date": "2025-12-10",
-      "firm": "BMO Capital",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2025-11-06",
-      "firm": "Freedom Capital Markets",
-      "from": null,
-      "to": "Hold",
-      "action": "init"
     }
   ],
   "holders": [
@@ -227,14 +227,14 @@
     "sells": 1,
     "bought": 1205325,
     "sold": 6989,
-    "net_pct": 273.6
+    "net_pct": 272.4
   },
   "extras": {
-    "beta": 1.82,
-    "enterprise_value": 3828480000,
-    "ev_ebitda": 9.744,
-    "ev_revenue": 1.828,
-    "float_shares": 26520465,
+    "beta": null,
+    "enterprise_value": 3325915648,
+    "ev_ebitda": 9.004,
+    "ev_revenue": 1.598,
+    "float_shares": 26552445,
     "short_shares": 8684770,
     "short_pct_float": 32.03,
     "short_ratio": 5.93,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 228,
   "eps_history": [
-    {
-      "quarter": "2025-07-31",
-      "estimate": 0.92092,
-      "actual": 0.4,
-      "surprise_pct": -56.57
-    },
     {
       "quarter": "2025-10-31",
       "estimate": -1.04265,
@@ -269,6 +263,12 @@
       "estimate": 0.66,
       "actual": 0.22,
       "surprise_pct": -66.67
+    },
+    {
+      "quarter": "2026-07-31",
+      "estimate": 0.18717,
+      "actual": -0.27,
+      "surprise_pct": -244.25
     }
   ],
   "insiders": [

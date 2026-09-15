@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-14T20:33:07.813Z",
+  "updated_at": "2026-09-15T19:56:06.576Z",
   "source": "Yahoo Finance",
   "symbol": "SOPH",
   "summary": "SOPHiA GENETICS SA operates as a cloud-native software technology company in the healthcare space. It offers SOPHiA DDM platform, a cloud-native software platform for analyzing data and generating insights from multimodal data sets and diagnostic modalities. Its SOPHiA DDM platform and related solutions, applications, products, and services are used by hospitals, laboratories, and biopharmaceutical companies through its own sales force as well as distributors and industry collaborators in Switzerland, France, Italy, rest of Europe, North America, the United States, Latin America, and the Asia-pacific. The company has a partnership with Synnovis to bring blood-based cancer testing to patients in the United Kingdom and a collaboration with AstraZeneca to develop, validate, and deploy two companion diagnostics (CDx) supporting precision oncology therapies. The company was incorporated in 2011 and is based in Rolle, Switzerland.",
@@ -51,6 +51,11 @@
   ],
   "quarterly": [
     {
+      "q": "2Q2025",
+      "revenue": 18323000,
+      "earnings": -22414000
+    },
+    {
       "q": "3Q2025",
       "revenue": 19462000,
       "earnings": -20021000
@@ -64,11 +69,6 @@
       "q": "1Q2026",
       "revenue": 21688000,
       "earnings": -19322000
-    },
-    {
-      "q": "2Q2026",
-      "revenue": 23310000,
-      "earnings": -22356000
     }
   ],
   "growth": {
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 29,
-    "sells": 92,
+    "sells": 94,
     "bought": 3257098,
-    "sold": 710201,
-    "net_pct": 79
+    "sold": 724869,
+    "net_pct": 78.2
   },
   "extras": {
     "beta": 0.982,
-    "enterprise_value": 624117952,
-    "ev_ebitda": -8.699,
-    "ev_revenue": 7.243,
+    "enterprise_value": 623266688,
+    "ev_ebitda": -8.687,
+    "ev_revenue": 7.233,
     "float_shares": 65351780,
     "short_shares": 1103130,
     "short_pct_float": 1.37,
@@ -273,6 +273,24 @@
   ],
   "insiders": [
     {
+      "name": "VAN WELL DAAN GUIDO MARIA",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 7.63 per share.",
+      "value": 47089,
+      "shares": 6168,
+      "date": "2026-09-11"
+    },
+    {
+      "name": "CAMBLONG JURGI",
+      "role": "Officer and Director",
+      "kind": "sell",
+      "text": "Sale at price 7.66 per share.",
+      "value": 65120,
+      "shares": 8500,
+      "date": "2026-09-10"
+    },
+    {
       "name": "HIBBS KATHY L",
       "role": "Director",
       "kind": "sell",
@@ -291,21 +309,21 @@
       "date": "2026-08-27"
     },
     {
-      "name": "MENU PHILIPPE",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 8.68 per share.",
-      "value": 43396,
-      "shares": 5000,
-      "date": "2026-08-25"
-    },
-    {
       "name": "HIBBS KATHY L",
       "role": "Director",
       "kind": "sell",
       "text": "Sale at price 8.68 per share.",
       "value": 54233,
       "shares": 6250,
+      "date": "2026-08-25"
+    },
+    {
+      "name": "MENU PHILIPPE",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 8.68 per share.",
+      "value": 43396,
+      "shares": 5000,
       "date": "2026-08-25"
     },
     {
@@ -343,24 +361,6 @@
       "value": 32000,
       "shares": 10000,
       "date": "2026-08-19"
-    },
-    {
-      "name": "XU ZHENYU",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 7.52 per share.",
-      "value": 30076,
-      "shares": 4000,
-      "date": "2026-08-13"
-    },
-    {
-      "name": "MENU PHILIPPE",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 7.52 per share.",
-      "value": 37580,
-      "shares": 5000,
-      "date": "2026-08-12"
     }
   ],
   "dividends": [],

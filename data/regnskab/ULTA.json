@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-14T20:33:08.004Z",
+  "updated_at": "2026-09-15T19:56:06.745Z",
   "source": "Yahoo Finance",
   "symbol": "ULTA",
   "summary": "Ulta Beauty, Inc. operates as a specialty beauty retailer in the United States, Mexico, and Kuwait. The company offers branded and private label beauty products, including cosmetics, fragrance, haircare, skincare, bath and body products, professional hair products, and salon styling tools through its Ulta Beauty stores, shop-in-shops, Ulta.com website, and its mobile applications. It also provides wellness products. The company was formerly known as ULTA Salon, Cosmetics & Fragrance, Inc. and changed its name to Ulta Beauty, Inc. in January 2017. Ulta Beauty, Inc. was incorporated in 1990 and is based in Bolingbrook, Illinois.",
@@ -10,18 +10,18 @@
   "next_earnings": "2026-12-03",
   "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": 5.60591,
+  "eps_estimate": 5.61026,
   "analysts": {
     "strong_buy": 4,
     "buy": 15,
-    "hold": 8,
-    "sell": 1,
+    "hold": 9,
+    "sell": 0,
     "strong_sell": 0,
     "total": 28
   },
-  "target_mean": 627.64,
+  "target_mean": 630.64,
   "target_high": 731,
-  "target_low": 450,
+  "target_low": 500,
   "target_analysts": 25,
   "statements": [
     {
@@ -72,12 +72,26 @@
     }
   ],
   "growth": {
-    "q0": 0.09060001,
-    "q1": 0.1375,
-    "y0": 0.1306,
-    "y1": 0.10569999
+    "q0": 0.0915,
+    "q1": 0.1374,
+    "y0": 0.13069999,
+    "y1": 0.1066
   },
   "ratings": [
+    {
+      "date": "2026-09-15",
+      "firm": "Wells Fargo",
+      "from": "Underweight",
+      "to": "Equal-Weight",
+      "action": "up"
+    },
+    {
+      "date": "2026-09-14",
+      "firm": "DA Davidson",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-09-09",
       "firm": "BMO Capital",
@@ -132,20 +146,6 @@
       "firm": "Deutsche Bank",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-06-09",
-      "firm": "TD Cowen",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-06-04",
-      "firm": "Citigroup",
-      "from": "Neutral",
-      "to": "Neutral",
       "action": "main"
     }
   ],
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 14,
-    "sells": 2,
+    "sells": 3,
     "bought": 24365,
-    "sold": 835,
-    "net_pct": 28.2
+    "sold": 1435,
+    "net_pct": 27.3
   },
   "extras": {
     "beta": 0.854,
-    "enterprise_value": 25689509888,
-    "ev_ebitda": 13.281,
-    "ev_revenue": 1.983,
+    "enterprise_value": 25769465856,
+    "ev_ebitda": 13.322,
+    "ev_revenue": 1.989,
     "float_shares": 42615944,
     "short_shares": 2240450,
     "short_pct_float": 5.25,
@@ -273,13 +273,13 @@
   ],
   "insiders": [
     {
-      "name": "OLSON BRIEANE LEE",
+      "name": "NAGLER LORNA E",
       "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 271,
-      "date": "2026-09-01"
+      "kind": "sell",
+      "text": "Sale at price 537.31 per share.",
+      "value": 322388,
+      "shares": 600,
+      "date": "2026-09-11"
     },
     {
       "name": "GARCIA KELLY E",
@@ -288,6 +288,15 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 2933,
+      "date": "2026-09-01"
+    },
+    {
+      "name": "OLSON BRIEANE LEE",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 271,
       "date": "2026-09-01"
     },
     {
@@ -300,15 +309,6 @@
       "date": "2026-06-15"
     },
     {
-      "name": "LANDRY STEPHENIE LEE",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 404,
-      "date": "2026-06-10"
-    },
-    {
       "name": "GARCIA KELLY E",
       "role": "Director",
       "kind": "other",
@@ -318,25 +318,16 @@
       "date": "2026-06-10"
     },
     {
+      "name": "LANDRY STEPHENIE LEE",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 404,
+      "date": "2026-06-10"
+    },
+    {
       "name": "SMITH MICHAEL C",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 404,
-      "date": "2026-06-10"
-    },
-    {
-      "name": "NAGLER LORNA E",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 404,
-      "date": "2026-06-10"
-    },
-    {
-      "name": "BROK MARTIN",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -355,6 +346,15 @@
     },
     {
       "name": "HALLIGAN CATHERINE ANN",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 404,
+      "date": "2026-06-10"
+    },
+    {
+      "name": "NAGLER LORNA E",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

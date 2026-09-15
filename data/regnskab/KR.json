@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-14T20:33:06.997Z",
+  "updated_at": "2026-09-15T19:56:05.870Z",
   "source": "Yahoo Finance",
   "symbol": "KR",
   "summary": "The Kroger Co. operates as a food and drug retailer in the United States. The company operates combination food and drug stores, multi-department stores, marketplace stores, and price impact warehouses. Its combination food and drug stores offer natural food and organic sections, pharmacies, general merchandise, pet centers, fresh seafood, and organic produce; and its multi-department stores provide apparel, home fashion and furnishings, outdoor living, electronics, automotive products, and toys. The company's marketplace stores offer full-service grocery, pharmacy, health and beauty care, and perishable goods, as well as general merchandise, including apparel, home goods, and toys; and its price impact warehouse stores provide grocery, and health and beauty care items, as well as meat, dairy, baked goods, and fresh produce items. It also manufactures and processes food products for sale in its supermarkets and online; and sells fuel through its fuel centers. The company sells its products through its stores, fuel centers, and online platforms. The Kroger Co. was founded in 1883 and is based in Cincinnati, Ohio.",
@@ -19,10 +19,10 @@
     "strong_sell": 0,
     "total": 24
   },
-  "target_mean": 68.47619,
+  "target_mean": 68,
   "target_high": 85,
   "target_low": 57,
-  "target_analysts": 21,
+  "target_analysts": 22,
   "statements": [
     {
       "year": "2023",
@@ -51,6 +51,11 @@
   ],
   "quarterly": [
     {
+      "q": "2Q2025",
+      "revenue": 33940000000,
+      "earnings": 609000000
+    },
+    {
       "q": "3Q2025",
       "revenue": 33859000000,
       "earnings": -1320000000
@@ -64,20 +69,36 @@
       "q": "1Q2026",
       "revenue": 46121000000,
       "earnings": 903000000
-    },
-    {
-      "q": "2Q2026",
-      "revenue": 34621000000,
-      "earnings": 641000000
     }
   ],
   "growth": {
     "q0": 0.0121,
-    "q1": 0.078,
-    "y0": 0.0723,
-    "y1": 0.0584
+    "q1": 0.0665,
+    "y0": 0.0716,
+    "y1": 0.0621
   },
   "ratings": [
+    {
+      "date": "2026-09-15",
+      "firm": "Guggenheim",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-09-14",
+      "firm": "Telsey Advisory Group",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-09-14",
+      "firm": "Evercore ISI Group",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
     {
       "date": "2026-09-01",
       "firm": "Citigroup",
@@ -125,27 +146,6 @@
       "firm": "Telsey Advisory Group",
       "from": "Outperform",
       "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-06-22",
-      "firm": "Guggenheim",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-06-22",
-      "firm": "Barclays",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
-      "action": "main"
-    },
-    {
-      "date": "2026-06-22",
-      "firm": "Morgan Stanley",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.406,
-    "enterprise_value": 69123022848,
-    "ev_ebitda": 8.594,
-    "ev_revenue": 0.463,
+    "enterprise_value": 71052771328,
+    "ev_ebitda": 8.834,
+    "ev_revenue": 0.476,
     "float_shares": 793774524,
     "short_shares": 28596616,
     "short_pct_float": 4.69,
