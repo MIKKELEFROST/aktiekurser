@@ -87,8 +87,8 @@
             data-hint="Volumen siger hvor meget der blev handlet — ikke hvor mange der ejer aktien. Ejerantal er data en konkret bank har om sine egne kunder, og det findes ikke i vores kilde.">aktivitet, ikke popularitet</span>.
     </p>
     <div class="card rounded-md overflow-hidden">
-      <div class="overflow-x-auto">
-        <table class="w-full text-sm border-collapse min-w-[620px]">
+      <div class="overflow-x-auto kort-liste-wrap">
+        <table class="kort-liste w-full text-sm border-collapse sm:min-w-[620px]">
           <thead>
             <tr class="text-xs faint">
               <th class="text-left  font-semibold py-3 px-4">Navn</th>
@@ -254,13 +254,13 @@
 
     $('#tradedRows').innerHTML = rows.map((s) =>
       '<tr class="border-t divider hover:bg-black/[.02]">'
-      + '<td class="py-3 px-4"><a class="row-link block" href="' + K.stockUrl(s.symbol) + '">'
+      + '<td class="py-3 px-4 kort-navn" data-k="Navn"><a class="row-link block" href="' + K.stockUrl(s.symbol) + '">'
         + '<div class="font-semibold row-name">' + K.esc(s.name) + '</div>'
         + '<div class="text-xs faint">' + K.flagOf(s.market) + ' ' + K.esc(s.symbol) + '</div></a></td>'
-      + '<td class="px-4 text-right num font-semibold ' + K.dirClass(s.percent_change) + '">' + K.fmtPct(s.percent_change) + '</td>'
-      + '<td class="px-4 text-right num ' + K.dirClass(s.change_1y) + '">' + K.fmtPct(s.change_1y) + '</td>'
-      + '<td class="px-4 text-right num">' + K.fmtBig(s.volume) + '</td>'
-      + '<td class="px-4 text-right num font-semibold">' + K.fmtPrice(s.price)
+      + '<td class="px-4 text-right num font-semibold kort-tal ' + K.dirClass(s.percent_change) + '" data-k="I dag %">' + K.fmtPct(s.percent_change) + '</td>'
+      + '<td class="px-4 text-right num ' + K.dirClass(s.change_1y) + '" data-k="1 år %">' + K.fmtPct(s.change_1y) + '</td>'
+      + '<td class="px-4 text-right num" data-k="Volumen">' + K.fmtBig(s.volume) + '</td>'
+      + '<td class="px-4 text-right num font-semibold" data-k="Seneste">' + K.fmtPrice(s.price)
         + ' <span class="text-xs faint">' + K.esc(s.currency) + '</span></td>'
       + '</tr>').join('')
       || '<tr><td colspan="5" class="py-6 text-center text-sm muted">Ingen aktier matcher.</td></tr>';
