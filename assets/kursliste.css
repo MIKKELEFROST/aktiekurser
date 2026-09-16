@@ -551,3 +551,80 @@ th .hint { cursor: pointer; }           /* header is still a sort control */
 /* Er hovedafbryderen slukket, siger de enkelte flueben ikke noget. De bliver
    stående, så man kan se hvad der venter, men de tones ned og kan ikke røres. */
 .set-list[data-off] { opacity: .45; pointer-events: none; }
+
+/* ── Lister som kort på små skærme ───────────────────────────────────────
+   En tabel med fem til elleve kolonner kan ikke være i en telefonskærm. Den
+   rullede vandret, og det er en dårlig måde at læse en liste på: man ser
+   aldrig en hel række ad gangen.
+
+   Under 600 px bliver hver række derfor et kort. Navnet og dagens ændring
+   deler den øverste linje, hvor øjet falder; resten løber under med deres
+   kolonnenavn foran. Cellerne bærer navnet i data-k, så samme markup tegner
+   både tabel og kort — der er ikke to sæt at holde i sync, og en kolonne
+   læseren selv har slået til, følger med af sig selv.
+
+   Sæt klassen kort-liste på <table>, data-k på hver celle, og kort-navn /
+   kort-tal på de to der skal stå øverst. */
+@media (max-width: 599px) {
+  table.kort-liste,
+  table.kort-liste tbody,
+  table.kort-liste tr,
+  table.kort-liste td { display: block; }
+
+  table.kort-liste thead { display: none; }
+
+  /* Kurslisten sætter selv en min-width på tabellen ud fra antallet af
+     kolonner — ti kolonner blev til 1180 px. Som kort er der ingen kolonner
+     at give plads til, og en inline-stil sat af scriptet slår en media query,
+     så den skal skrives over her. */
+  table.kort-liste { min-width: 0 !important; }
+
+  table.kort-liste tr {
+    border: 1px solid var(--hairline) !important;
+    border-radius: var(--radius-md);
+    padding: 10px 12px;
+    margin-bottom: 8px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 2px 10px;
+    /* start, ikke baseline: et langt navn ombryder til to linjer, og med
+       baseline bliver tallet hængende ved den nederste af dem. */
+    align-items: start;
+  }
+
+  /* Rækken der siger "ingen match" er én celle over hele bredden. */
+  table.kort-liste tr:has(td[colspan]) { display: block; border: 0 !important; padding: 0; }
+
+  table.kort-liste td.kort-navn {
+    grid-column: 1; grid-row: 1; padding: 0; text-align: left;
+  }
+  table.kort-liste td.kort-tal {
+    grid-column: 2; grid-row: 1; padding: 0; text-align: right;
+    font-size: 15px; font-weight: 800;
+  }
+
+  /* Alt andet: én linje med kolonnenavnet i venstre side og tallet i højre. */
+  table.kort-liste td[data-k]:not(.kort-navn):not(.kort-tal) {
+    grid-column: 1 / -1; padding: 0; text-align: left;
+    font-size: 12px; color: var(--text-secondary);
+    /* Ikke space-between: en celle kan have flere børn — "9,86" og "USD" —
+       og så ville de blive fordelt hver for sig ud over linjen. Etiketten
+       skubber i stedet resten samlet mod højre. */
+    display: flex; align-items: center; gap: 6px;
+  }
+  table.kort-liste td[data-k]:not(.kort-navn):not(.kort-tal)::before {
+    content: attr(data-k);
+    color: var(--text-muted); font-weight: 600;
+    margin-right: auto;
+    /* Cellen kan være .num, og tabular-nums gør også mellemrummet
+       tabularbredt. På et tal er det meningen; på "Uden for børstiden" ser
+       det ud som om ordene er skubbet fra hinanden. */
+    font-variant-numeric: normal;
+    white-space: nowrap;
+  }
+  /* Første linje under overskriften får lidt luft. */
+  table.kort-liste td[data-k]:not(.kort-navn):not(.kort-tal):nth-of-type(2) { margin-top: 6px; }
+
+  /* Kortene har deres egen ramme, så tabellens rulleboks skal ikke klippe. */
+  .kort-liste-wrap { overflow-x: visible !important; }
+}

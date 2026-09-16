@@ -158,8 +158,8 @@
     </div>
 
     <!-- ─── Table ──────────────────────────────────────────────────────── -->
-    <div class="overflow-x-auto" style="overflow-x:auto">
-      <table class="w-full text-sm border-collapse">
+    <div class="overflow-x-auto kort-liste-wrap" style="overflow-x:auto">
+      <table class="kort-liste w-full text-sm border-collapse">
         <thead><tr id="head" class="text-xs faint"></tr></thead>
         <tbody id="rows"></tbody>
       </table>
@@ -620,7 +620,13 @@
     $('#next').disabled = state.page >= pages;
 
     $('#rows').innerHTML = slice.map((r) => '<tr class="border-t divider hover:bg-black/[.02]" data-sym="' + K.esc(r.symbol) + '">'
-      + cols.map((c) => '<td class="py-3 px-3 ' + (c.right ? 'text-right' : '') + '">' + c.cell(r) + '</td>').join('')
+      // data-k bærer kolonnens navn med ned i rækken. På brede skærme siger
+      // overskriften det; under 600 px er der ingen overskrift, og så skriver
+      // CSS'en navnet foran værdien i stedet. Navnet og dagens ændring
+      // markeres, så de kan stå øverst på kortet.
+      + cols.map((c) => '<td class="py-3 px-3 ' + (c.right ? 'text-right ' : '')
+          + (c.key === 'name' ? 'kort-navn' : c.key === 'pct_today' ? 'kort-tal' : '')
+          + '" data-k="' + K.esc(c.label) + '">' + c.cell(r) + '</td>').join('')
       + '</tr>').join('')
       || '<tr><td colspan="' + Math.max(cols.length, 1) + '" class="py-8 text-center text-sm muted">Ingen aktier matcher filtrene.</td></tr>';
   }

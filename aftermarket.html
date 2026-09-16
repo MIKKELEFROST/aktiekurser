@@ -61,58 +61,6 @@
     #filtre2 #omfang { text-align: center; }
   }
 
-  /* ── Under 600 px: tabellen bliver til kort ──────────────────────────────
-     Fem kolonner fylder 492 px og kan ikke være i en telefonskærm; tabellen
-     rullede vandret, og det er en dårlig måde at læse en liste på. Hver
-     række bliver i stedet et kort: navnet og ændringen øverst, hvor øjet
-     falder, og de øvrige tal under med deres etiket foran. */
-  @media (max-width: 599px) {
-    #tabel, #tabel tbody, #tabel tr, #tabel td { display: block; }
-    #tabel thead { display: none; }
-
-    #tabel tr {
-      border: 1px solid var(--hairline) !important;
-      border-radius: var(--radius-md);
-      padding: 10px 12px;
-      margin-bottom: 8px;
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 2px 10px;
-      /* start, ikke baseline: et langt navn ombryder til to linjer, og med
-         baseline blev ændringen hængende ved den nederste af dem. */
-      align-items: start;
-    }
-
-    /* Navnet og ændringen deler den øverste linje. */
-    #tabel td.navn { grid-column: 1; grid-row: 1; padding: 0; text-align: left; }
-    #tabel td[data-k="Ændring"] {
-      grid-column: 2; grid-row: 1; padding: 0;
-      font-size: 15px; font-weight: 800;
-    }
-
-    /* Resten løber under som én linje med etiket foran hvert tal. */
-    #tabel td[data-k="Lukkekurs"],
-    #tabel td[data-k="Uden for børstiden"],
-    #tabel td[data-k="Tidspunkt"] {
-      grid-column: 1 / -1; padding: 0; text-align: left;
-      font-size: 12px; color: var(--text-secondary);
-      display: flex; justify-content: space-between; gap: 12px;
-    }
-    #tabel td[data-k="Lukkekurs"] { margin-top: 6px; }
-    #tabel td[data-k]::before {
-      content: attr(data-k);
-      color: var(--text-muted); font-weight: 600;
-      /* Cellen er .num, og tabular-nums gør også mellemrummet tabularbredt.
-         På et tal er det meningen; på "Uden for børstiden" ser det ud som om
-         ordene er skubbet fra hinanden. */
-      font-variant-numeric: normal;
-    }
-    /* Ændringen står allerede øverst og skal ikke have sin etiket med. */
-    #tabel td[data-k="Ændring"]::before { content: none; }
-
-    /* Kortene har deres egen ramme, så tabellens skillelinjer skal væk. */
-    .overflow-x-auto { overflow-x: visible; }
-  }
 </style>
 <!-- Tailwind er bygget på forhånd til assets/tailwind.css. Linket står sidst i
      head, fordi play-CDN'en indsprøjtede sin CSS netop dér — efter sidens egen
@@ -201,8 +149,8 @@
     Prøv at slække på mindste udsving eller vælge begge veje.
   </div>
 
-  <div class="overflow-x-auto">
-    <table class="w-full text-sm" id="tabel" hidden>
+  <div class="overflow-x-auto kort-liste-wrap">
+    <table class="kort-liste w-full text-sm" id="tabel" hidden>
       <thead>
         <tr class="text-left" style="border-bottom:1px solid var(--hairline)">
           <th class="py-2 px-3 font-semibold">Selskab</th>
@@ -287,13 +235,13 @@
         : null;
       const url = r.erFond ? K.fundUrl(r.symbol) : K.stockUrl(r.symbol);
       return '<tr data-sym="' + K.esc(r.symbol) + '" style="border-bottom:1px solid var(--gridline)">'
-        + '<td class="py-2 px-3 navn"><a class="link-accent font-semibold" href="' + url + '">'
+        + '<td class="py-2 px-3 kort-navn"><a class="link-accent font-semibold" href="' + url + '">'
           + K.esc(r.name) + '</a>'
           + '<span class="faint text-xs"> · ' + K.esc(r.symbol) + '</span></td>'
         + celle(K.fmtPrice(r.price), 'Lukkekurs')
         + celle(xp == null ? '<span class="faint">–</span>' : K.fmtPrice(xp), 'Uden for børstiden')
         + celle(xp == null ? '<span class="faint">–</span>' : K.fmtPct(q.xcp), 'Ændring',
-                xp == null ? '' : K.dirClass(q.xcp))
+                'kort-tal ' + (xp == null ? '' : K.dirClass(q.xcp)))
         + celle(tid ? '<span class="faint">' + K.esc(tid) + '</span>' : '<span class="faint">–</span>', 'Tidspunkt')
         + '</tr>';
     };
