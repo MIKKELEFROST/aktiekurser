@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-15T19:56:05.966Z",
+  "updated_at": "2026-09-16T19:48:00.500Z",
   "source": "Yahoo Finance",
   "symbol": "LUXE",
   "summary": "LuxExperience B.V., through its subsidiary, operates digital platform for the luxury fashion in Germany, the United States, Europe, Middle East, Japan, mainland China, Hong Kong SAR, China, and internationally. The company offers womenswear, menswear, kidswear, fine jewelry, watches, fine jewelry and lifestyle products under the Mytheresa, NET-A-PORTER, MR PORTER, YOOX, and the OUTNET brand name. The company was formerly known as MYT Netherlands Parent B.V. and changed its name to LuxExperience B.V. in May 2025. LuxExperience B.V. was founded in 1987 and is based in Munich, Germany.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-09-16",
   "earnings_estimated": false,
   "earnings_call": "2026-09-16",
-  "eps_estimate": -0.09147,
+  "eps_estimate": -0.17,
   "analysts": {
     "strong_buy": 0,
     "buy": 2,
@@ -19,17 +19,11 @@
     "strong_sell": 0,
     "total": 5
   },
-  "target_mean": 9.287842,
-  "target_high": 11.873919,
-  "target_low": 7.6942616,
+  "target_mean": 9.232411,
+  "target_high": 11.803054,
+  "target_low": 7.6483417,
   "target_analysts": 5,
   "statements": [
-    {
-      "year": "2022",
-      "revenue": 689750000,
-      "net": -7898000,
-      "margin": -1.1
-    },
     {
       "year": "2023",
       "revenue": 768621000,
@@ -47,14 +41,15 @@
       "revenue": 1255000000,
       "net": 552300000,
       "margin": 44
+    },
+    {
+      "year": "2026",
+      "revenue": 2502695000,
+      "net": -167681000,
+      "margin": -6.7
     }
   ],
   "quarterly": [
-    {
-      "q": "2Q2025",
-      "revenue": 587800000,
-      "earnings": 586000000
-    },
     {
       "q": "3Q2025",
       "revenue": 573501000,
@@ -69,13 +64,18 @@
       "q": "1Q2026",
       "revenue": 618469000,
       "earnings": -35410000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 663805000,
+      "earnings": -26336000
     }
   ],
   "growth": {
-    "q0": null,
-    "q1": 0.4037,
-    "y0": -3.3713,
-    "y1": 0.8538
+    "q0": 0.4037,
+    "q1": 0.5513,
+    "y0": 0.78419995,
+    "y1": 4.3338
   },
   "ratings": [
     {
@@ -210,9 +210,9 @@
   },
   "extras": {
     "beta": 1.064,
-    "enterprise_value": 924611008,
-    "ev_ebitda": 1.529,
-    "ev_revenue": 0.38,
+    "enterprise_value": 883923968,
+    "ev_ebitda": 1.462,
+    "ev_revenue": 0.363,
     "float_shares": 17573978,
     "short_shares": 3947000,
     "short_pct_float": null,
@@ -242,6 +242,12 @@
       "estimate": -0.1321,
       "actual": -0.109,
       "surprise_pct": 17.49
+    },
+    {
+      "quarter": "2026-06-30",
+      "estimate": -0.09147,
+      "actual": 0.0039,
+      "surprise_pct": 104.26
     }
   ],
   "insiders": [],

@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-09-15T19:56:05.380Z",
+  "updated_at": "2026-09-16T19:47:59.851Z",
   "source": "Yahoo Finance",
   "symbol": "EPM",
   "summary": "Evolution Petroleum Corporation, an energy company, engages in the development, production, ownership, exploitation, and investment of onshore oil and gas properties in the United States. The company was founded in 2003 and is based in Houston, Texas.",
   "industry": "Oil & Gas E&P",
   "website": "https://www.evolutionpetroleum.com",
-  "employees": 11,
+  "employees": null,
   "ceo": "Mr. Kelly W. Loyd",
   "next_earnings": "2026-09-15",
   "earnings_estimated": false,
   "earnings_call": "2026-09-16",
-  "eps_estimate": 0.008,
+  "eps_estimate": -0.004,
   "analysts": {
     "strong_buy": 0,
     "buy": 3,
@@ -23,13 +23,59 @@
   "target_high": 6,
   "target_low": 4,
   "target_analysts": 4,
-  "statements": null,
-  "quarterly": [],
+  "statements": [
+    {
+      "year": "2023",
+      "revenue": 128514000,
+      "net": 35217000,
+      "margin": 27.4
+    },
+    {
+      "year": "2024",
+      "revenue": 85877000,
+      "net": 4080000,
+      "margin": 4.8
+    },
+    {
+      "year": "2025",
+      "revenue": 85840000,
+      "net": 1473000,
+      "margin": 1.7
+    },
+    {
+      "year": "2026",
+      "revenue": 86343000,
+      "net": -2429000,
+      "margin": -2.8
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "2Q2025",
+      "revenue": 21108000,
+      "earnings": 3412000
+    },
+    {
+      "q": "3Q2025",
+      "revenue": 21288000,
+      "earnings": 824000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 20679000,
+      "earnings": 1065000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 24208000,
+      "earnings": 4614000
+    }
+  ],
   "growth": {
-    "q0": -0.73330003,
+    "q0": 0,
     "q1": 0,
-    "y0": -2.65,
-    "y1": 1.7576
+    "y0": 1.5,
+    "y1": -0.2
   },
   "ratings": [
     {
@@ -184,11 +230,11 @@
     "net_pct": null
   },
   "extras": {
-    "beta": 0.293,
-    "enterprise_value": 184226336,
-    "ev_ebitda": 8.154,
-    "ev_revenue": 2.213,
-    "float_shares": 31826318,
+    "beta": null,
+    "enterprise_value": 183368928,
+    "ev_ebitda": 8.813,
+    "ev_revenue": 2.124,
+    "float_shares": 32676610,
     "short_shares": 2944348,
     "short_pct_float": 8.91,
     "short_ratio": 4.75,
@@ -201,12 +247,6 @@
   "inst_count": 156,
   "eps_history": [
     {
-      "quarter": "2025-06-30",
-      "estimate": 0.01333,
-      "actual": 0.03,
-      "surprise_pct": 125.06
-    },
-    {
       "quarter": "2025-09-30",
       "estimate": 0.01,
       "actual": 0,
@@ -217,6 +257,12 @@
       "estimate": 0.0075,
       "actual": 0,
       "surprise_pct": -100
+    },
+    {
+      "quarter": "2026-06-30",
+      "estimate": 0.008,
+      "actual": -0.02,
+      "surprise_pct": -350
     }
   ],
   "insiders": [

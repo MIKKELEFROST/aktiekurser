@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-15T19:56:05.156Z",
+  "updated_at": "2026-09-16T19:47:59.581Z",
   "source": "Yahoo Finance",
   "symbol": "COST",
   "summary": "Costco Wholesale Corporation, together with its subsidiaries, engages in the operation of membership warehouses in the United States, Puerto Rico, Canada, Mexico, Japan, the United Kingdom, Korea, Australia, Taiwan, China, Spain, France, Iceland, New Zealand, and Sweden. It offers merchandise, including sundries, dry groceries, candies, coolers, freezers, deli, liquor, and tobacco; non-food merchandise comprising appliances, small electronics, health and beauty aids, hardware, lawn and garden, sporting goods, tires, toys and seasonal, automotive, stamps, tickets, apparel, furniture, domestics, housewares, special order kiosks, and jewelry; and fresh food, such as meat, produce, service deli, and bakery products. The company is also involved in warehouse ancillary operations, which include gasoline, pharmacies, optical, food courts, hearing-aid centers, and tire installation centers. In addition, it engages in e-commerce, business centers, travel, and other businesses. The company was formerly known as Costco Companies, Inc. and changed its name to Costco Wholesale Corporation in August 1999. Costco Wholesale Corporation was founded in 1976 and is based in Issaquah, Washington.",
@@ -79,6 +79,20 @@
   },
   "ratings": [
     {
+      "date": "2026-09-16",
+      "firm": "Oppenheimer",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "reit"
+    },
+    {
+      "date": "2026-09-16",
+      "firm": "B of A Securities",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
       "date": "2026-09-08",
       "firm": "Freedom Broker",
       "from": "Hold",
@@ -132,20 +146,6 @@
       "firm": "DA Davidson",
       "from": "Neutral",
       "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-05-29",
-      "firm": "B of A Securities",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-05-29",
-      "firm": "Truist Securities",
-      "from": "Hold",
-      "to": "Hold",
       "action": "main"
     }
   ],
@@ -223,18 +223,18 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 1,
+    "buys": 8,
     "sells": 2,
-    "bought": 5249,
+    "bought": 34998,
     "sold": 1585,
-    "net_pct": 0.5
+    "net_pct": 4.9
   },
   "extras": {
     "beta": 0.855,
-    "enterprise_value": 405881782272,
-    "ev_ebitda": 29.433,
-    "ev_revenue": 1.382,
-    "float_shares": 440929534,
+    "enterprise_value": 387965616128,
+    "ev_ebitda": 28.134,
+    "ev_revenue": 1.321,
+    "float_shares": 442263672,
     "short_shares": 7577940,
     "short_pct_float": 1.71,
     "short_ratio": 4.27,
@@ -273,6 +273,69 @@
   ],
   "insiders": [
     {
+      "name": "WILCOX WILLIAM RICHARD",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 4129,
+      "date": "2026-09-10"
+    },
+    {
+      "name": "ADAMO CLAUDINE",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 4129,
+      "date": "2026-09-10"
+    },
+    {
+      "name": "RIEL PIERRE",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 4552,
+      "date": "2026-09-10"
+    },
+    {
+      "name": "FRATES CATON",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 4552,
+      "date": "2026-09-10"
+    },
+    {
+      "name": "JONES TERESA A",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 4129,
+      "date": "2026-09-10"
+    },
+    {
+      "name": "KLAUER JAMES C",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 4129,
+      "date": "2026-09-10"
+    },
+    {
+      "name": "RUBANENKO YORAM B.",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 4129,
+      "date": "2026-09-10"
+    },
+    {
       "name": "RAIKES JEFFREY S",
       "role": "Director",
       "kind": "other",
@@ -298,69 +361,6 @@
       "value": 695100,
       "shares": 700,
       "date": "2026-04-01"
-    },
-    {
-      "name": "ADAMO CLAUDINE",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 1003.02 per share.",
-      "value": 732205,
-      "shares": 730,
-      "date": "2026-03-09"
-    },
-    {
-      "name": "JONES TERESA A",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Stock Gift at price 0.00 per share.",
-      "value": 0,
-      "shares": 300,
-      "date": "2026-01-27"
-    },
-    {
-      "name": "RAIKES JEFFREY S",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Gift at price 0.00 per share.",
-      "value": 0,
-      "shares": 5115,
-      "date": "2026-01-27"
-    },
-    {
-      "name": "JONES TERESA A",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 986.26 per share.",
-      "value": 838318,
-      "shares": 850,
-      "date": "2026-01-21"
-    },
-    {
-      "name": "DECKER SUSAN LYNNE",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 955.00 per share.",
-      "value": 437390,
-      "shares": 458,
-      "date": "2026-01-16"
-    },
-    {
-      "name": "RAIMONDO GINA MARIE",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 215,
-      "date": "2026-01-16"
-    },
-    {
-      "name": "KLAUER JAMES C",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 939.00 per share.",
-      "value": 1408500,
-      "shares": 1500,
-      "date": "2026-01-14"
     }
   ],
   "dividends": [
