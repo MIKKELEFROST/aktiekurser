@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-15T19:56:06.811Z",
+  "updated_at": "2026-09-17T19:57:43.056Z",
   "source": "Yahoo Finance",
   "symbol": "VMRK",
   "summary": "Vivmark Residential focused on building, buying, and managing high-quality apartment communities across major U.S. metro areas. The company owns or held investments in more than 184,000 rental apartments across premier U.S. markets and over 11,100 apartments under construction. Vivmark Residential based in Chicago, Illinois.",
@@ -10,19 +10,19 @@
   "next_earnings": "2026-10-21",
   "earnings_estimated": true,
   "earnings_call": null,
-  "eps_estimate": 0.19319,
+  "eps_estimate": -0.00593,
   "analysts": {
     "strong_buy": 1,
-    "buy": 9,
+    "buy": 8,
     "hold": 11,
     "sell": 0,
     "strong_sell": 0,
-    "total": 21
+    "total": 20
   },
-  "target_mean": 73.65263,
+  "target_mean": 73.68889,
   "target_high": 80,
   "target_low": 69,
-  "target_analysts": 19,
+  "target_analysts": 18,
   "statements": [
     {
       "year": "2025",
@@ -36,9 +36,23 @@
     "q0": null,
     "q1": null,
     "y0": null,
-    "y1": -0.0074
+    "y1": 0.1741
   },
   "ratings": [
+    {
+      "date": "2026-09-17",
+      "firm": "Scotiabank",
+      "from": "Sector Perform",
+      "to": "Sector Perform",
+      "action": "main"
+    },
+    {
+      "date": "2026-09-17",
+      "firm": "BTIG",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "reit"
+    },
     {
       "date": "2026-09-15",
       "firm": "UBS",
@@ -93,20 +107,6 @@
       "firm": "Wells Fargo",
       "from": null,
       "to": "Overweight",
-      "action": "init"
-    },
-    {
-      "date": "2026-08-19",
-      "firm": "Stifel",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-18",
-      "firm": "Evercore ISI Group",
-      "from": null,
-      "to": "In-Line",
       "action": "init"
     }
   ],
@@ -263,6 +263,15 @@
       "date": "2026-08-19"
     },
     {
+      "name": "SWANEZY SUSAN",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 63.80 per share.",
+      "value": 1001660,
+      "shares": 15700,
+      "date": "2026-08-18"
+    },
+    {
       "name": "HOWARD CHRISTOPHER",
       "role": "Director",
       "kind": "sell",
@@ -287,15 +296,6 @@
       "text": "Sale at price 63.90 per share.",
       "value": 511200,
       "shares": 8000,
-      "date": "2026-08-18"
-    },
-    {
-      "name": "SWANEZY SUSAN",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 63.80 per share.",
-      "value": 1001660,
-      "shares": 15700,
       "date": "2026-08-18"
     }
   ],

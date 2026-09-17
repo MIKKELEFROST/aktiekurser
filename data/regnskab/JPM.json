@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-16T19:48:00.358Z",
+  "updated_at": "2026-09-17T19:57:42.259Z",
   "source": "Yahoo Finance",
   "symbol": "JPM",
   "summary": "JPMorgan Chase & Co. operates as a bank and financial holding company in the United States, rest of North America, Europe, the Middle East, Africa, the Asia Pacific, Latin America, and the Caribbean. It operates in three segments: Consumer & Community Banking, Commercial & Investment Bank, and Asset & Wealth Management. The company offers deposit, investment and lending products, and cash management; mortgage origination and servicing activities; residential mortgages and home equity loans; and credit cards, payment solutions, travel services, merchant offers, lifestyle benefits, auto loans, and leases to consumers and small businesses through bank branches, ATMs, and digital and telephone banking. It also provides investment banking, market-making, financing, custody, and securities products and services; corporate strategy and structure advisory, equity and debt market capital-raising, and loan origination and syndication services; cash and derivative instruments, risk management solutions, prime brokerage, clearing, and research; and fund services, liquidity and trading services, and data solutions products for large corporations, financial institutions, merchants, start-ups, small and midsized companies, local governments, municipalities, nonprofits, and commercial real estate clients. In addition, the company offers multi-asset investment management solutions in equities, fixed income, alternatives, and money market funds to institutional clients and retail investors; retirement products and services, estate planning, lending, deposits, and investment management products to high-net-worth clients; and financial transaction processing. JPMorgan Chase & Co. was founded in 1799 and is headquartered in New York, New York.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-13",
   "earnings_estimated": false,
   "earnings_call": "2026-10-13",
-  "eps_estimate": 5.89013,
+  "eps_estimate": 5.88435,
   "analysts": {
     "strong_buy": 4,
     "buy": 9,
@@ -19,15 +19,61 @@
     "strong_sell": 1,
     "total": 24
   },
-  "target_mean": 376.14285,
-  "target_high": 452,
+  "target_mean": 375.38095,
+  "target_high": 436,
   "target_low": 305,
   "target_analysts": 21,
-  "statements": null,
-  "quarterly": [],
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 128695000000,
+      "net": 35892000000,
+      "margin": 27.9
+    },
+    {
+      "year": "2023",
+      "revenue": 158104000000,
+      "net": 47760000000,
+      "margin": 30.2
+    },
+    {
+      "year": "2024",
+      "revenue": 177556000000,
+      "net": 56868000000,
+      "margin": 32
+    },
+    {
+      "year": "2025",
+      "revenue": 182447000000,
+      "net": 55681000000,
+      "margin": 30.5
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 46427000000,
+      "earnings": 14043000000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 45798000000,
+      "earnings": 12689000000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 49836000000,
+      "earnings": 16148000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 57347000000,
+      "earnings": 20752000000
+    }
+  ],
   "growth": {
-    "q0": 0.1618,
-    "q1": 0.28370002,
+    "q0": 0.16059999,
+    "q1": 0.2849,
     "y0": 0.22459999,
     "y1": 0.0342
   },
@@ -168,10 +214,10 @@
       "date": "2026-06-30"
     },
     {
-      "name": "iShares Trust-iShares Core S&P 500 ETF",
-      "kind": "fond",
-      "pct": 1.39,
-      "shares": 36858212,
+      "name": "NORGES BANK",
+      "kind": "institution",
+      "pct": 1.36,
+      "shares": 36122327,
       "date": "2026-06-30"
     }
   ],
@@ -185,9 +231,9 @@
   },
   "extras": {
     "beta": 0.975,
-    "enterprise_value": 774912081920,
+    "enterprise_value": 765422338048,
     "ev_ebitda": null,
-    "ev_revenue": 4.159,
+    "ev_revenue": 4.108,
     "float_shares": 2643991481,
     "short_shares": 26537949,
     "short_pct_float": 1,

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-16T19:47:58.972Z",
+  "updated_at": "2026-09-17T19:57:41.269Z",
   "source": "Yahoo Finance",
   "symbol": "ADP",
   "summary": "Automatic Data Processing, Inc. provides cloud-based human capital management (HCM) solutions worldwide. It operates in two segments, Employer Services and Professional Employer Organization (PEO). The Employer Services segment offers strategic, cloud-based platforms, and human resources (HR) outsourcing solutions. This segment's offerings include RUN Powered by ADP, a software platform for small business payroll, HR, and compliance; ADP Workforce Now, a HCM solution used across mid-sized and large businesses to manage employees; and ADP Lyric HCM, a solution for HR management, payroll, workforce management, talent, and data analytics. Its PEO Services segment provides HR outsourcing solutions under ADP TotalSource name to businesses through a co-employment model. This segment also provides guidance, user-friendly technology, comprehensive employee benefits, and a risk management, safety, and workers' compensation program. The company was founded in 1949 and is headquartered in Roseland, New Jersey.",
@@ -25,6 +25,12 @@
   "target_analysts": 15,
   "statements": [
     {
+      "year": "2022",
+      "revenue": 16498300000,
+      "net": 2948900000,
+      "margin": 17.9
+    },
+    {
       "year": "2023",
       "revenue": 18012200000,
       "net": 3412000000,
@@ -41,15 +47,14 @@
       "revenue": 20560900000,
       "net": 4079700000,
       "margin": 19.8
-    },
-    {
-      "year": "2026",
-      "revenue": 21947400000,
-      "net": 4413500000,
-      "margin": 20.1
     }
   ],
   "quarterly": [
+    {
+      "q": "2Q2025",
+      "revenue": 5126800000,
+      "earnings": 910600000
+    },
     {
       "q": "3Q2025",
       "revenue": 5175200000,
@@ -64,11 +69,6 @@
       "q": "1Q2026",
       "revenue": 5939200000,
       "earnings": 1359800000
-    },
-    {
-      "q": "2Q2026",
-      "revenue": 5473800000,
-      "earnings": 978600000
     }
   ],
   "growth": {
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 31,
-    "sells": 11,
+    "sells": 10,
     "bought": 200474,
-    "sold": 45620,
-    "net_pct": 30.5
+    "sold": 45077,
+    "net_pct": 30.6
   },
   "extras": {
     "beta": 0.83,
-    "enterprise_value": 111139667968,
-    "ev_ebitda": 17.335,
-    "ev_revenue": 5.064,
+    "enterprise_value": 109812809728,
+    "ev_ebitda": 17.128,
+    "ev_revenue": 5.003,
     "float_shares": 396313279,
     "short_shares": 10777426,
     "short_pct_float": 3.03,
@@ -282,12 +282,12 @@
       "date": "2026-09-03"
     },
     {
-      "name": "BLACK MARIA",
-      "role": "Chief Executive Officer",
+      "name": "FOSKETT DAVID",
+      "role": "Officer",
       "kind": "sell",
-      "text": "Sale at price 278.59 - 281.86 per share.",
-      "value": 8373873,
-      "shares": 29810,
+      "text": "Sale at price 283.00 per share.",
+      "value": 432707,
+      "shares": 1529,
       "date": "2026-09-02"
     },
     {
@@ -300,21 +300,21 @@
       "date": "2026-09-02"
     },
     {
-      "name": "FOSKETT DAVID",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 283.00 per share.",
-      "value": 432707,
-      "shares": 1529,
-      "date": "2026-09-02"
-    },
-    {
       "name": "DESILVA JOSEPH",
       "role": "Officer",
       "kind": "sell",
       "text": "Sale at price 283.00 per share.",
       "value": 1842896,
       "shares": 6512,
+      "date": "2026-09-02"
+    },
+    {
+      "name": "BLACK MARIA",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 278.59 - 281.86 per share.",
+      "value": 8373873,
+      "shares": 29810,
       "date": "2026-09-02"
     },
     {
@@ -336,6 +336,15 @@
       "date": "2026-09-01"
     },
     {
+      "name": "BOLAND PAUL",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 3634,
+      "date": "2026-09-01"
+    },
+    {
       "name": "LEHBERGER JONATHAN S",
       "role": "Officer",
       "kind": "other",
@@ -351,15 +360,6 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 4006,
-      "date": "2026-09-01"
-    },
-    {
-      "name": "HADLEY PETER J",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 6464,
       "date": "2026-09-01"
     }
   ],

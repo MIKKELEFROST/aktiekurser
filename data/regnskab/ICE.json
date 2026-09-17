@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-16T19:48:00.237Z",
+  "updated_at": "2026-09-17T19:57:42.184Z",
   "source": "Yahoo Finance",
   "symbol": "ICE",
   "summary": "Intercontinental Exchange, Inc., together with its subsidiaries, provides technology and data to financial institutions, corporations, and government entities in the United States, the United Kingdom, the European Union, Canada, Asia Pacific, and the Middle East. It operates through three segments: Exchanges, Fixed Income and Data Services, and Mortgage Technology. The Exchanges segment operates regulated marketplace technology for the listing, trading, and clearing of an array of derivatives contracts and financial securities, such as commodities, interest rates, foreign exchange and equities, and corporate and exchange-traded funds, as well as data and connectivity services related to its exchanges and clearing houses. The Fixed Income and Data Services segment provides fixed income pricing, reference data, indices, analytics, and execution services, as well as global CDS clearing and multi-asset class data delivery technology. The Mortgage Technology segment offers a technology platform that provides customers comprehensive and digital workflow tools to address inefficiencies and mitigate risks that exist in the U.S. residential mortgage market life cycle from application through closing, servicing, and the secondary market. The company was founded in 2000 and is headquartered in Atlanta, Georgia.",
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 16,
-    "sells": 15,
+    "sells": 16,
     "bought": 63239,
-    "sold": 64312,
-    "net_pct": 0
+    "sold": 65912,
+    "net_pct": -0.1
   },
   "extras": {
     "beta": 0.934,
-    "enterprise_value": 107643797504,
-    "ev_ebitda": 16.033,
-    "ev_revenue": 10.195,
+    "enterprise_value": 106071891968,
+    "ev_ebitda": 15.799,
+    "ev_revenue": 10.047,
     "float_shares": 557532093,
     "short_shares": 5351924,
     "short_pct_float": 1.07,
@@ -241,7 +241,7 @@
     "last_split": "5:1",
     "last_split_date": "2016-11-04"
   },
-  "ex_dividend": "2026-09-16",
+  "ex_dividend": "2026-12-16",
   "dividend_date": null,
   "payout_ratio": 0.2821,
   "inst_count": 2274,
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "FOLEY DOUGLAS",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 160.00 per share.",
+      "value": 256000,
+      "shares": 1600,
+      "date": "2026-09-14"
+    },
     {
       "name": "JACKSON BENJAMIN",
       "role": "President",
@@ -352,22 +361,9 @@
       "value": 459692,
       "shares": 7299,
       "date": "2026-08-12"
-    },
-    {
-      "name": "KAPANI MAYUR",
-      "role": "Chief Technology Officer",
-      "kind": "sell",
-      "text": "Sale at price 149.83 - 151.78 per share.",
-      "value": 645763,
-      "shares": 4271,
-      "date": "2026-08-12"
     }
   ],
   "dividends": [
-    {
-      "date": "2016-09-14",
-      "amount": 0.17
-    },
     {
       "date": "2016-12-13",
       "amount": 0.17
@@ -522,6 +518,10 @@
     },
     {
       "date": "2026-06-15",
+      "amount": 0.52
+    },
+    {
+      "date": "2026-09-16",
       "amount": 0.52
     }
   ],

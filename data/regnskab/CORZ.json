@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-16T19:47:59.578Z",
+  "updated_at": "2026-09-17T19:57:41.713Z",
   "source": "Yahoo Finance",
   "symbol": "CORZ",
   "summary": "Core Scientific, Inc. provides infrastructure for high-density colocation services and digital asset mining in the United States. It operates through three segments: Colocation, Digital Asset Self-Mining, and Digital Asset Hosted Mining. The company offers space, power, cooling, facilities operations, security, and other services to third-party customers to support workloads for machine learning and artificial intelligence; deployment, monitoring, troubleshooting, optimization, and maintenance of its customers' digital asset mining equipment; and electrical power, repair, and other infrastructure services for its customers to operate, maintain, and mine digital assets. It is also involved in the deployment and operation of its fleet of miners within its digital infrastructure as part of a pool of users that process transactions conducted on one or more blockchain networks to receive digital assets in the form of bitcoin. It also deploys and operates its fleet of miners within its digital infrastructure as part of a pool of users that process transactions conducted on one or more blockchain networks; and provides hosting services for digital asset mining customers, which include deployment, monitoring, trouble shooting, optimization, and maintenance of its customers' digital asset mining equipment. Core Scientific, Inc. was founded in 2017 and is headquartered in Dover, Delaware.",
@@ -13,16 +13,16 @@
   "eps_estimate": -0.04,
   "analysts": {
     "strong_buy": 3,
-    "buy": 13,
+    "buy": 14,
     "hold": 1,
     "sell": 0,
     "strong_sell": 0,
-    "total": 17
+    "total": 18
   },
-  "target_mean": 37.125,
+  "target_mean": 36.41176,
   "target_high": 55,
-  "target_low": 28,
-  "target_analysts": 16,
+  "target_low": 25,
+  "target_analysts": 17,
   "statements": [
     {
       "year": "2022",
@@ -68,7 +68,7 @@
     {
       "q": "2Q2026",
       "revenue": 164201000,
-      "earnings": 0
+      "earnings": -1155310000
     }
   ],
   "growth": {
@@ -78,6 +78,13 @@
     "y1": 1.0361
   },
   "ratings": [
+    {
+      "date": "2026-09-17",
+      "firm": "Wells Fargo",
+      "from": null,
+      "to": "Overweight",
+      "action": "init"
+    },
     {
       "date": "2026-08-03",
       "firm": "B. Riley Securities",
@@ -140,13 +147,6 @@
       "from": null,
       "to": "Hold",
       "action": "init"
-    },
-    {
-      "date": "2026-05-27",
-      "firm": "B. Riley Securities",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
     }
   ],
   "holders": [
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 8,
-    "sells": 24,
+    "sells": 25,
     "bought": 1276455,
-    "sold": 240000,
-    "net_pct": 11.7
+    "sold": 250000,
+    "net_pct": 11.5
   },
   "extras": {
     "beta": 5.485,
-    "enterprise_value": 7791907840,
-    "ev_ebitda": -99.583,
-    "ev_revenue": 17.696,
+    "enterprise_value": 8061833728,
+    "ev_ebitda": -103.033,
+    "ev_revenue": 18.309,
     "float_shares": 287471159,
     "short_shares": 64789716,
     "short_pct_float": 22.79,
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "DUCHENE TODD M",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 17.14 per share.",
+      "value": 171362,
+      "shares": 10000,
+      "date": "2026-09-14"
+    },
     {
       "name": "DUCHENE TODD M",
       "role": "Officer",
@@ -352,15 +361,6 @@
       "value": 0,
       "shares": 27594,
       "date": "2026-07-30"
-    },
-    {
-      "name": "DUCHENE TODD M",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 20.75 - 22.49 per share.",
-      "value": 209476,
-      "shares": 10000,
-      "date": "2026-07-27"
     }
   ],
   "dividends": [],

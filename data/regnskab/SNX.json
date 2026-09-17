@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-16T19:48:01.138Z",
+  "updated_at": "2026-09-17T19:57:42.857Z",
   "source": "Yahoo Finance",
   "symbol": "SNX",
   "summary": "TD SYNNEX Corporation operates as a distributor and solutions aggregator for the information technology (IT) ecosystem in the United States, Europe, and internationally. It offers endpoint solutions, including personal computing devices and peripherals, mobile phones and accessories, printers, and supplies; and advanced solutions comprising data center technologies, such as hybrid cloud, security, storage, networking, servers, software, converged and hyper-converged infrastructure, and hyperscale infrastructure. The company also provides design, integration, test and other production value-added solutions, such as thermal testing, power-draw efficiency testing, burn-in, quality, and logistics support; logistics and field services; depot repair and customer management services; and cloud services, including public cloud solutions in productivity and collaboration, infrastructure as a service, platform as a service, software as a service, security, mobility, AI, and other hybrid solutions. In addition, it offers online services; financing options, including net terms, third party leasing, floor plan financing and letters-of-credit backed financing and arrangements, as well lease products to reseller customers and their end-users and provides device-as-a-service to end-users; and marketing services comprising direct mail, external media advertising, reseller product training, targeted telemarketing campaigns, national and regional trade shows, trade groups, database analysis, print on demand services, and web-based marketing. It serves value-added resellers, corporate resellers, government resellers, system integrators, direct marketers, retailers, and managed service providers. The company has strategic alliance with EigenQ, Inc. to help public-sector, defense, critical infrastructure and enterprise customers assess and prepare AMD EPYC processor-based server environments for the post-quantum security transition. The company was formerly known as SYNNEX Corporation and changed its name to TD SYNNEX Corporation in September 2021. TD SYNNEX Corporation was founded in 1980 and is headquartered in Fremont, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-09-24",
   "earnings_estimated": false,
   "earnings_call": "2026-09-24",
-  "eps_estimate": 4.64186,
+  "eps_estimate": 4.68186,
   "analysts": {
     "strong_buy": 4,
     "buy": 6,
@@ -19,17 +19,63 @@
     "strong_sell": 0,
     "total": 11
   },
-  "target_mean": 334.36365,
-  "target_high": 374,
+  "target_mean": 330.72726,
+  "target_high": 355,
   "target_low": 287,
   "target_analysts": 11,
-  "statements": null,
-  "quarterly": [],
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 62343810000,
+      "net": 651307000,
+      "margin": 1
+    },
+    {
+      "year": "2023",
+      "revenue": 57555416000,
+      "net": 626911000,
+      "margin": 1.1
+    },
+    {
+      "year": "2024",
+      "revenue": 58452436000,
+      "net": 689091000,
+      "margin": 1.2
+    },
+    {
+      "year": "2025",
+      "revenue": 62508086000,
+      "net": 827660000,
+      "margin": 1.3
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 15650924000,
+      "earnings": 226795000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 17379140000,
+      "earnings": 248407000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 17161198000,
+      "earnings": 326915000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 19574813000,
+      "earnings": 334088000
+    }
+  ],
   "growth": {
-    "q0": 0.29659998,
-    "q1": 0.2485,
-    "y0": 0.4408,
-    "y1": 0.1265
+    "q0": 0.3078,
+    "q1": 0.2571,
+    "y0": 0.4463,
+    "y1": 0.1331
   },
   "ratings": [
     {
@@ -178,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 13,
-    "sells": 17,
+    "sells": 18,
     "bought": 34049,
-    "sold": 76587,
+    "sold": 79087,
     "net_pct": -1.1
   },
   "extras": {
     "beta": 1.429,
-    "enterprise_value": 24613361664,
-    "ev_ebitda": 11.087,
-    "ev_revenue": 0.353,
+    "enterprise_value": 24455043072,
+    "ev_ebitda": 11.015,
+    "ev_revenue": 0.351,
     "float_shares": 73644409,
     "short_shares": 1652704,
     "short_pct_float": 2.32,
@@ -198,7 +244,7 @@
   "ex_dividend": "2026-07-17",
   "dividend_date": null,
   "payout_ratio": 0.1319,
-  "inst_count": 970,
+  "inst_count": 971,
   "eps_history": [
     {
       "quarter": "2025-08-31",
@@ -226,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "POLK DENNIS",
+      "role": "Officer and Director",
+      "kind": "sell",
+      "text": "Sale at price 262.76 - 267.45 per share.",
+      "value": 660477,
+      "shares": 2500,
+      "date": "2026-09-15"
+    },
     {
       "name": "POLK DENNIS",
       "role": "Officer and Director",
@@ -305,15 +360,6 @@
       "text": "Stock Award(Grant) at price 267.34 per share.",
       "value": 21922,
       "shares": 82,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "POLK DENNIS",
-      "role": "Officer and Director",
-      "kind": "sell",
-      "text": "Sale at price 268.34 - 269.03 per share.",
-      "value": 2684780,
-      "shares": 10000,
       "date": "2026-06-30"
     }
   ],

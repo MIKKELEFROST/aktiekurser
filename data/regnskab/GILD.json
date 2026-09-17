@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-16T19:48:00.047Z",
+  "updated_at": "2026-09-17T19:57:42.058Z",
   "source": "Yahoo Finance",
   "symbol": "GILD",
   "summary": "Gilead Sciences, Inc., a biopharmaceutical company, discovers, develops, and commercializes medicines in the areas of unmet medical need in the United States, Europe, and internationally. The company provides Biktarvy, Descovy, Genvoya, Odefsey, Sunlenca, Symtuza, and YeztugoFor the treatment of HIV-1 infection in patients. It also provides Epclusa, Livdelzi, and Vemlidy to treat chronic hepatitis C virus, primary biliary cholangitis, and chronic hepatitis B virus; Tecartus, a T-cell therapy for the treatment of adult patients; Trodelvy, an injection for intravenous use; and Yescarta, a suspension for intravenous infusion, is a CAR T-cell therapy for the treatment of adult patients. Further, it provides AmBisome, for the treatment of serious invasive fungal infections; and Veklury for the treatment of COVID-19. Additionally, the company engages in the development of various immunotherapies for patients with cancer and other incurable diseases. The company has collaboration agreements with Shenzhen Pregene Biopharma Co., Ltd.; Abingworth; Arcus Biosciences, Inc.; Merck Sharp & Dohme Corp.; Janssen Sciences Ireland Unlimited Company; Japan Tobacco, Inc.; Everest Medicines; Merck & Co, Inc.; Tentarix Biotherapeutics Inc.; and Assembly Biosciences, Inc. It also has research collaboration, option, and license agreement with Merus N.V. for the discovery of novel dual tumor-associated antigens (TAA) targeting trispecific antibodies. The company has a collaboration with Terray Therapeutics, Inc. to discover and develop small molecule therapies; and LEO Pharma to develop, manufacture, and commercialize the small molecule oral STAT6 program. The company has a partnership with Pan American Health Organization (PAHO) to accelerate access to lenacapavir for HIV prevention as pre-exposure prophylaxis (PrEP) across all PAHO member states in Latin America and the Caribbean. The company was incorporated in 1987 and is headquartered in Foster City, California.",
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 7082000000,
-      "earnings": 1960000000
-    },
-    {
       "q": "3Q2025",
       "revenue": 7769000000,
       "earnings": 3052000000
@@ -69,6 +64,11 @@
       "q": "1Q2026",
       "revenue": 6960000000,
       "earnings": 2021000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 7803000000,
+      "earnings": -10496000000
     }
   ],
   "growth": {
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 22,
-    "sells": 20,
+    "sells": 22,
     "bought": 118014,
-    "sold": 189000,
-    "net_pct": -4.8
+    "sold": 195000,
+    "net_pct": -5.2
   },
   "extras": {
     "beta": 0.35,
-    "enterprise_value": 202685431808,
-    "ev_ebitda": 13.882,
-    "ev_revenue": 6.655,
+    "enterprise_value": 204396576768,
+    "ev_ebitda": 13.999,
+    "ev_revenue": 6.711,
     "float_shares": 1237276852,
     "short_shares": 23007029,
     "short_pct_float": 1.86,
@@ -272,6 +272,24 @@
     }
   ],
   "insiders": [
+    {
+      "name": "DICKINSON ANDREW D",
+      "role": "Chief Financial Officer",
+      "kind": "sell",
+      "text": "Sale at price 145.29 per share.",
+      "value": 435870,
+      "shares": 3000,
+      "date": "2026-09-15"
+    },
+    {
+      "name": "MERCIER JOHANNA",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 143.69 - 145.29 per share.",
+      "value": 432646,
+      "shares": 3000,
+      "date": "2026-09-15"
+    },
     {
       "name": "CAIN WETTAN KEELEY M",
       "role": "General Counsel",
@@ -343,24 +361,6 @@
       "value": 1099052,
       "shares": 18000,
       "date": "2026-08-26"
-    },
-    {
-      "name": "BLUESTONE JEFFREY",
-      "role": "Director",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 61.35 - 67.45 per share.",
-      "value": 335206,
-      "shares": 5000,
-      "date": "2026-08-20"
-    },
-    {
-      "name": "BLUESTONE JEFFREY",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 143.75 - 146.36 per share.",
-      "value": 725078,
-      "shares": 5000,
-      "date": "2026-08-20"
     }
   ],
   "dividends": [

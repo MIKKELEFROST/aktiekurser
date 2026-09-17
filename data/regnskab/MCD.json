@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-16T19:48:00.535Z",
+  "updated_at": "2026-09-17T19:57:43.196Z",
   "source": "Yahoo Finance",
   "symbol": "MCD",
   "summary": "McDonald's Corporation owns, operates, and franchises restaurants under the McDonald's brand in the United States and internationally. It offers food and beverages, including hamburgers and cheeseburgers, various chicken sandwiches, fries, shakes, frozen desserts, sundaes, soft serve cones, cookies, pies, soft drinks, coffee, and other beverages; and full or limited breakfast, as well as sells various other products during limited-time promotions. The company owns and operates franchised restaurants under various structures, including conventional franchise, developmental license, or affiliate. McDonald's Corporation was founded in 1940 and is based in Chicago, Illinois.",
@@ -10,14 +10,14 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": true,
   "earnings_call": "2026-08-04",
-  "eps_estimate": 3.40096,
+  "eps_estimate": 3.40056,
   "analysts": {
     "strong_buy": 4,
     "buy": 15,
-    "hold": 14,
+    "hold": 15,
     "sell": 1,
     "strong_sell": 0,
-    "total": 34
+    "total": 35
   },
   "target_mean": 312.8387,
   "target_high": 407,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 6843000000,
-      "earnings": 2253000000
-    },
-    {
       "q": "3Q2025",
       "revenue": 7078000000,
       "earnings": 2278000000
@@ -69,15 +64,27 @@
       "q": "1Q2026",
       "revenue": 6517000000,
       "earnings": 1983000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 7099000000,
+      "earnings": 2362000000
     }
   ],
   "growth": {
-    "q0": 0.056199998,
-    "q1": 0.0586,
-    "y0": 0.059499998,
-    "y1": 0.0813
+    "q0": 0.0561,
+    "q1": 0.0589,
+    "y0": 0.0596,
+    "y1": 0.08140001
   },
   "ratings": [
+    {
+      "date": "2026-09-17",
+      "firm": "Citigroup",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-09-16",
       "firm": "BTIG",
@@ -139,13 +146,6 @@
       "firm": "Citigroup",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-05",
-      "firm": "RBC Capital",
-      "from": "Sector Perform",
-      "to": "Sector Perform",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.414,
-    "enterprise_value": 232659632128,
-    "ev_ebitda": 15.583,
-    "ev_revenue": 8.399,
+    "enterprise_value": 229673385984,
+    "ev_ebitda": 15.383,
+    "ev_revenue": 8.291,
     "float_shares": 706580069,
     "short_shares": 12284728,
     "short_pct_float": 1.94,

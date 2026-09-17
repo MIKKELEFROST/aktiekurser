@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-16T19:48:00.779Z",
+  "updated_at": "2026-09-17T19:57:42.598Z",
   "source": "Yahoo Finance",
   "symbol": "OSCR",
   "summary": "Oscar Health, Inc. operates as a healthcare technology company in the United States. The company offers health plans to individuals, families, employees, and small group markets. It also provides +Oscar platform that power others throughout the healthcare system; Campaign Builder platform, an engagement and recommendation platform for providers and payors; and reinsurance products. In addition, the company offers brokerage services and enrollment platform for brokers and consumers to shop, buy, and enroll in medical and supplemental health products. The company was formerly known as Mulberry Health Inc. and changed its name to Oscar Health, Inc. in January 2021. Oscar Health, Inc. was incorporated in 2012 and is headquartered in New York, New York.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-09",
   "earnings_estimated": false,
   "earnings_call": "2026-08-06",
-  "eps_estimate": -0.24602,
+  "eps_estimate": -0.18488,
   "analysts": {
     "strong_buy": 3,
     "buy": 0,
@@ -19,8 +19,8 @@
     "strong_sell": 1,
     "total": 11
   },
-  "target_mean": 30.7,
-  "target_high": 39,
+  "target_mean": 34.6,
+  "target_high": 49,
   "target_low": 26,
   "target_analysts": 10,
   "statements": [
@@ -72,12 +72,40 @@
     }
   ],
   "growth": {
-    "q0": 0.53580004,
-    "q1": -0.0126,
-    "y0": 2.0358,
-    "y1": 0.075
+    "q0": 0.65120006,
+    "q1": 0.0746,
+    "y0": 2.1119,
+    "y1": 0.147
   },
   "ratings": [
+    {
+      "date": "2026-09-17",
+      "firm": "B of A Securities",
+      "from": "Underperform",
+      "to": "Underperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-09-17",
+      "firm": "Stephens & Co.",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "reit"
+    },
+    {
+      "date": "2026-09-17",
+      "firm": "Barclays",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-09-17",
+      "firm": "Baird",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-08-13",
       "firm": "Wells Fargo",
@@ -119,34 +147,6 @@
       "from": "Neutral",
       "to": "Neutral",
       "action": "main"
-    },
-    {
-      "date": "2026-05-07",
-      "firm": "Barclays",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
-      "action": "main"
-    },
-    {
-      "date": "2026-05-07",
-      "firm": "Baird",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-05-06",
-      "firm": "Wolfe Research",
-      "from": null,
-      "to": "Peer Perform",
-      "action": "init"
-    },
-    {
-      "date": "2026-04-20",
-      "firm": "Jefferies",
-      "from": "Underperform",
-      "to": "Hold",
-      "action": "up"
     }
   ],
   "holders": [
@@ -223,17 +223,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 11,
+    "buys": 10,
     "sells": 18,
-    "bought": 8750709,
+    "bought": 8600709,
     "sold": 4669417,
-    "net_pct": 34.1
+    "net_pct": 32.4
   },
   "extras": {
     "beta": 2.369,
-    "enterprise_value": 1931936256,
-    "ev_ebitda": 2.936,
-    "ev_revenue": 0.126,
+    "enterprise_value": 1901103232,
+    "ev_ebitda": 2.889,
+    "ev_revenue": 0.124,
     "float_shares": 263193571,
     "short_shares": 16364378,
     "short_pct_float": 6.47,
@@ -273,24 +273,6 @@
   ],
   "insiders": [
     {
-      "name": "BALTRUS VICTORIA",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 31.45 per share.",
-      "value": 30129,
-      "shares": 958,
-      "date": "2026-09-03"
-    },
-    {
-      "name": "MCANANEY ADAM",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 31.45 per share.",
-      "value": 285943,
-      "shares": 9092,
-      "date": "2026-09-03"
-    },
-    {
       "name": "SCHLOSSER MARIO T",
       "role": "Director",
       "kind": "sell",
@@ -309,6 +291,15 @@
       "date": "2026-09-03"
     },
     {
+      "name": "BALTRUS VICTORIA",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 31.45 per share.",
+      "value": 30129,
+      "shares": 958,
+      "date": "2026-09-03"
+    },
+    {
       "name": "BLACKLEY RICHARD SCOTT",
       "role": "Chief Financial Officer",
       "kind": "sell",
@@ -318,13 +309,13 @@
       "date": "2026-09-03"
     },
     {
-      "name": "SCHLOSSER MARIO T",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 750000,
-      "date": "2026-08-28"
+      "name": "MCANANEY ADAM",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 31.45 per share.",
+      "value": 285943,
+      "shares": 9092,
+      "date": "2026-09-03"
     },
     {
       "name": "SCHLOSSER MARIO T",
@@ -332,6 +323,15 @@
       "kind": "sell",
       "text": "Sale at price 30.34 - 30.79 per share.",
       "value": 22822500,
+      "shares": 750000,
+      "date": "2026-08-28"
+    },
+    {
+      "name": "SCHLOSSER MARIO T",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
       "shares": 750000,
       "date": "2026-08-28"
     },
@@ -347,18 +347,18 @@
     {
       "name": "SCHLOSSER MARIO T",
       "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
+      "kind": "sell",
+      "text": "Sale at price 29.50 - 31.65 per share.",
+      "value": 1484014,
       "shares": 47500,
       "date": "2026-07-01"
     },
     {
       "name": "SCHLOSSER MARIO T",
       "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 29.50 - 31.65 per share.",
-      "value": 1484014,
+      "kind": "other",
+      "text": null,
+      "value": null,
       "shares": 47500,
       "date": "2026-07-01"
     }

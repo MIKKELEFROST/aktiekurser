@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-16T19:48:00.108Z",
+  "updated_at": "2026-09-17T19:57:42.102Z",
   "source": "Yahoo Finance",
   "symbol": "GUT",
   "summary": "The Gabelli Utility Trust is a closed-ended equity mutual fund launched by GAMCO Investors, Inc. It is managed by Gabelli Funds, LLC. The fund invests in the public equity markets across the globe. It makes its investments in stocks of companies providing products, services, or equipment for the generation or distribution of electricity, gas, water, telecommunications services, and infrastructure operations. The fund invests in stocks of companies across market capitalization. It benchmarks the performance of its portfolio against S&P 500 Utilities Index, Lipper Utility Fund Average, and S&P 500 Index. The Gabelli Utility Trust was formed on July 9, 1999 and is domiciled in United States.",
@@ -102,9 +102,9 @@
   },
   "extras": {
     "beta": 0.524,
-    "enterprise_value": 596515456,
+    "enterprise_value": 583011264,
     "ev_ebitda": null,
-    "ev_revenue": 50.685,
+    "ev_revenue": 49.538,
     "float_shares": null,
     "short_shares": 2170804,
     "short_pct_float": 2.45,
@@ -112,17 +112,32 @@
     "last_split": null,
     "last_split_date": null
   },
-  "ex_dividend": "2026-09-16",
+  "ex_dividend": "2026-10-16",
   "dividend_date": null,
   "payout_ratio": 0.96769994,
   "inst_count": 110,
   "eps_history": [],
-  "insiders": [],
-  "dividends": [
+  "insiders": [
     {
-      "date": "2023-05-15",
-      "amount": 0.0487
+      "name": "BANK OF AMERICA CORP",
+      "role": "Beneficial Owner of more than 10% of a Class of Security",
+      "kind": "sell",
+      "text": "Sale at price 5.04 - 6.00 per share.",
+      "value": 325,
+      "shares": 55,
+      "date": "2024-11-06"
     },
+    {
+      "name": "BANK OF AMERICA CORP",
+      "role": "Beneficial Owner of more than 10% of a Class of Security",
+      "kind": "buy",
+      "text": "Purchase at price 5.04 - 5.95 per share.",
+      "value": 323,
+      "shares": 55,
+      "date": "2024-11-05"
+    }
+  ],
+  "dividends": [
     {
       "date": "2023-06-14",
       "amount": 0.0487
@@ -277,6 +292,10 @@
     },
     {
       "date": "2026-08-17",
+      "amount": 0.05
+    },
+    {
+      "date": "2026-09-16",
       "amount": 0.05
     }
   ],

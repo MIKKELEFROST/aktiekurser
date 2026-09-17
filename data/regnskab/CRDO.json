@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-16T19:47:59.601Z",
+  "updated_at": "2026-09-17T19:57:41.727Z",
   "source": "Yahoo Finance",
   "symbol": "CRDO",
   "summary": "Credo Technology Group Holding Ltd provides various high-speed connectivity solutions for optical and electrical Ethernet and PCIe applications in the United States, Taiwan, Mainland China, Hong Kong, and other international markets. The company offers ZeroFlap (ZF) active electrical cables and ZF optical transceivers, OmniConnect memory solutions, and a suite of retimers and DSPs for optical and copper Ethernet and PCIe, as well as integrated circuits, active electrical cables, and SerDes chiplets. It also provides intellectual property (IP) solutions, including SerDes IP licensing. The company offers was founded in 2008 and is headquartered in Grand Cayman, the Cayman Islands.",
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 19
   },
-  "target_mean": 282.4663,
+  "target_mean": 282.46643,
   "target_high": 350,
   "target_low": 185,
   "target_analysts": 19,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 223074000,
-      "earnings": 63399000
-    },
-    {
       "q": "3Q2025",
       "revenue": 268027000,
       "earnings": 82636000
@@ -69,13 +64,18 @@
       "q": "1Q2026",
       "revenue": 437003000,
       "earnings": 169102000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 479003000,
+      "earnings": 129425000
     }
   ],
   "growth": {
     "q0": 0.9142,
     "q1": 0.4885,
     "y0": 0.8223,
-    "y1": 0.5391
+    "y1": 0.5392
   },
   "ratings": [
     {
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 12,
-    "sells": 38,
+    "sells": 39,
     "bought": 672890,
-    "sold": 911566,
-    "net_pct": -1.3
+    "sold": 928238,
+    "net_pct": -1.4
   },
   "extras": {
     "beta": 3.228,
-    "enterprise_value": 27528036352,
-    "ev_ebitda": 50.673,
-    "ev_revenue": 17.302,
+    "enterprise_value": 29614303232,
+    "ev_ebitda": 54.514,
+    "ev_revenue": 18.613,
     "float_shares": 170865209,
     "short_shares": 6674244,
     "short_pct_float": 3.98,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 1308,
+  "inst_count": 1307,
   "eps_history": [
     {
       "quarter": "2025-10-31",
@@ -273,6 +273,15 @@
   ],
   "insiders": [
     {
+      "name": "BRENNAN WILLIAM JOSEPH III",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 150.39 - 153.39 per share.",
+      "value": 2532209,
+      "shares": 16672,
+      "date": "2026-09-14"
+    },
+    {
       "name": "CHENG CHI FUNG",
       "role": "Chief Technology Officer",
       "kind": "sell",
@@ -291,21 +300,21 @@
       "date": "2026-09-04"
     },
     {
-      "name": "LAM YAT TUNG",
-      "role": "Chief Operating Officer",
-      "kind": "sell",
-      "text": "Sale at price 209.83 - 216.49 per share.",
-      "value": 22476646,
-      "shares": 105441,
-      "date": "2026-07-31"
-    },
-    {
       "name": "CHENG CHI FUNG",
       "role": "Chief Technology Officer",
       "kind": "sell",
       "text": "Sale at price 201.22 - 215.35 per share.",
       "value": 5756395,
       "shares": 27473,
+      "date": "2026-07-31"
+    },
+    {
+      "name": "LAM YAT TUNG",
+      "role": "Chief Operating Officer",
+      "kind": "sell",
+      "text": "Sale at price 209.83 - 216.49 per share.",
+      "value": 22476646,
+      "shares": 105441,
       "date": "2026-07-31"
     },
     {
@@ -352,15 +361,6 @@
       "value": 6605779,
       "shares": 27500,
       "date": "2026-07-14"
-    },
-    {
-      "name": "BRENNAN WILLIAM JOSEPH III",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Stock Gift at price 0.00 per share.",
-      "value": 0,
-      "shares": 150000,
-      "date": "2026-07-13"
     }
   ],
   "dividends": [],

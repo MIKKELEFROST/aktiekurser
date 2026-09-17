@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-16T19:47:59.955Z",
+  "updated_at": "2026-09-17T19:57:41.984Z",
   "source": "Yahoo Finance",
   "symbol": "FLWS",
   "summary": "1-800-FLOWERS.COM, Inc. provides gifts for various occasions in the United States. It operates through three segments: Consumer Floral & Gifts, Gourmet Foods & Gift Baskets, and BloomNet. The company offers a range of products, including fresh-cut flowers, floral and fruit arrangements, plants, gifts, greeting cards personalized products, dipped berries, popcorn, gourmet foods and gift baskets, cookies, chocolates, candies, wines, and gift-quality fruits. It provides its products and services through online platform under the 1-800-Flowers.com, 1-800-Baskets.com, Cheryl's Cookies, FruitBouquets.com, Harry & David, PersonalizationMall.com, Shari's Berries, Mrs. Beasley, Things Remembered, Moose Munch, The Popcorn Factory, Wolferman's Bakery, Simply Chocolate, Vital Choice, Scharffen Berger, DesignPac, BloomNet, Napco, Card Isle, and Flowerama brand names. 1-800-FLOWERS.COM, Inc. was founded in 1976 and is headquartered in Jericho, New York.",
@@ -25,6 +25,12 @@
   "target_analysts": 2,
   "statements": [
     {
+      "year": "2022",
+      "revenue": 2207885000,
+      "net": 29610000,
+      "margin": 1.3
+    },
+    {
       "year": "2023",
       "revenue": 2017853000,
       "net": -44702000,
@@ -41,15 +47,14 @@
       "revenue": 1685658000,
       "net": -199993000,
       "margin": -11.9
-    },
-    {
-      "year": "2026",
-      "revenue": 1503511000,
-      "net": -134765000,
-      "margin": -9
     }
   ],
   "quarterly": [
+    {
+      "q": "2Q2025",
+      "revenue": 336622000,
+      "earnings": -51907000
+    },
     {
       "q": "3Q2025",
       "revenue": 215200000,
@@ -64,11 +69,6 @@
       "q": "1Q2026",
       "revenue": 293014000,
       "earnings": -100064000
-    },
-    {
-      "q": "2Q2026",
-      "revenue": 293118000,
-      "earnings": -52297000
     }
   ],
   "growth": {
@@ -223,17 +223,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 0,
-    "sells": 0,
-    "bought": 0,
-    "sold": null,
-    "net_pct": null
+    "buys": 8,
+    "sells": 1,
+    "bought": 455647,
+    "sold": 1752433,
+    "net_pct": -4.4
   },
   "extras": {
     "beta": 1.338,
-    "enterprise_value": 434617248,
-    "ev_ebitda": -52.2,
-    "ev_revenue": 0.289,
+    "enterprise_value": 411831520,
+    "ev_ebitda": -49.463,
+    "ev_revenue": 0.274,
     "float_shares": 10362042,
     "short_shares": 7743760,
     "short_pct_float": 36.96,
@@ -279,6 +279,78 @@
   ],
   "insiders": [
     {
+      "name": "MCCANN JAMES FRANCIS",
+      "role": "Officer, Director and Beneficial Owner",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 16233,
+      "date": "2026-09-11"
+    },
+    {
+      "name": "LANGROCK JAMES M",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 81157,
+      "date": "2026-09-11"
+    },
+    {
+      "name": "MANLEY MICHAEL R.",
+      "role": "General Counsel",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 46811,
+      "date": "2026-09-11"
+    },
+    {
+      "name": "KASENCHAK PRISCILLA",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 35240,
+      "date": "2026-09-11"
+    },
+    {
+      "name": "FELDMAN JONATHAN J",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 71355,
+      "date": "2026-09-11"
+    },
+    {
+      "name": "VILLAGOMEZ ADOLFO",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 134423,
+      "date": "2026-09-11"
+    },
+    {
+      "name": "ZELIKOVSKY ALEXANDER",
+      "role": "Chief Technology Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 31852,
+      "date": "2026-09-11"
+    },
+    {
+      "name": "TEJADA NELSON NIVIADES JR",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 38576,
+      "date": "2026-09-11"
+    },
+    {
       "name": "FUND 1 INVESTMENTS, LLC",
       "role": "Beneficial Owner of more than 10% of a Class of Security",
       "kind": "sell",
@@ -294,78 +366,6 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 96054,
-      "date": "2025-12-10"
-    },
-    {
-      "name": "BROWN CELIA R",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 20964,
-      "date": "2025-12-10"
-    },
-    {
-      "name": "MCCANN CHRISTOPHER G",
-      "role": "Director and Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 20964,
-      "date": "2025-12-10"
-    },
-    {
-      "name": "LANGROCK JAMES M",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 325104,
-      "date": "2025-12-10"
-    },
-    {
-      "name": "ZARIN LARRY",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 20964,
-      "date": "2025-12-10"
-    },
-    {
-      "name": "HANFT ADAM",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 20964,
-      "date": "2025-12-10"
-    },
-    {
-      "name": "DEMARK EUGENE F",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 20964,
-      "date": "2025-12-10"
-    },
-    {
-      "name": "MANLEY MICHAEL R.",
-      "role": "General Counsel",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 132998,
-      "date": "2025-12-10"
-    },
-    {
-      "name": "KASENCHAK PRISCILLA",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 88665,
       "date": "2025-12-10"
     }
   ],

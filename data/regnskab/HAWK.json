@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-16T19:48:00.127Z",
+  "updated_at": "2026-09-17T19:57:42.113Z",
   "source": "Yahoo Finance",
   "symbol": "HAWK",
   "summary": "HawkEye 360, Inc. operates as a space-enabled defense technology company in the United States and Europe. The company offers a shareable, battlefield-proven RF intelligence platform and database for warfighters during varied cycles of geopolitical volatility. The company's solutions include customized SIGINT solutions including hardware, algorithms, and software capabilities; monitoring maritime activity in a customer's regional domain; tracking military radar and air defense systems; tracking extremist group communications, movement, and activity; maintaining border security and providing tactical ISR on battlefield environments; ensuring navigational integrity of GNSS; and core signal processing algorithms used in national government SIGINT systems. The company designs, manufactures, owns, and operates a global constellation of satellites that collect data in proprietary formations. It also uses end-to-end signal processing algorithms to detect and characterize a wide set of emitter types, including radars, jammers, beacons, and mobile radio devices. Additionally, it provides proprietary analytics and insights to identify, track, analyze, and predict specific emitters, converting data into insights for our intelligence partners. The company caters to the United States Government defense, intelligence, and national security agencies, as well as allied international governments. The company has a strategic collaboration with ERA a.s. HawkEye 360, Inc. was incorporated in 2015 and is based in Herndon, Virginia.",
@@ -13,15 +13,15 @@
   "eps_estimate": 0.015,
   "analysts": {
     "strong_buy": 2,
-    "buy": 7,
-    "hold": 1,
+    "buy": 8,
+    "hold": 0,
     "sell": 0,
     "strong_sell": 0,
     "total": 10
   },
-  "target_mean": 33.77778,
+  "target_mean": 32.55556,
   "target_high": 41,
-  "target_low": 24,
+  "target_low": 23,
   "target_analysts": 9,
   "statements": [
     {
@@ -42,9 +42,16 @@
     "q0": null,
     "q1": null,
     "y0": null,
-    "y1": 6.7004
+    "y1": 6.1362
   },
   "ratings": [
+    {
+      "date": "2026-09-17",
+      "firm": "B of A Securities",
+      "from": "Neutral",
+      "to": "Buy",
+      "action": "up"
+    },
     {
       "date": "2026-08-17",
       "firm": "Jefferies",
@@ -106,13 +113,6 @@
       "firm": "Morgan Stanley",
       "from": null,
       "to": "Overweight",
-      "action": "init"
-    },
-    {
-      "date": "2026-06-01",
-      "firm": "Goldman Sachs",
-      "from": null,
-      "to": "Buy",
       "action": "init"
     }
   ],
@@ -190,17 +190,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 0,
-    "sells": 0,
-    "bought": 0,
-    "sold": null,
-    "net_pct": null
+    "buys": 17,
+    "sells": 1,
+    "bought": 35440994,
+    "sold": 50000,
+    "net_pct": -229
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 1128771968,
-    "ev_ebitda": 211.817,
-    "ev_revenue": 6.733,
+    "enterprise_value": 1097422976,
+    "ev_ebitda": 205.934,
+    "ev_revenue": 6.546,
     "float_shares": 67617783,
     "short_shares": 3560916,
     "short_pct_float": 3.68,
@@ -227,6 +227,24 @@
     }
   ],
   "insiders": [
+    {
+      "name": "MONEY ARTHUR L",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 16.41 per share.",
+      "value": 820500,
+      "shares": 50000,
+      "date": "2026-09-11"
+    },
+    {
+      "name": "MONEY ARTHUR L",
+      "role": "Director",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 0.23 per share.",
+      "value": 11500,
+      "shares": 50000,
+      "date": "2026-09-11"
+    },
     {
       "name": "MONEY ARTHUR L",
       "role": "Director",
@@ -297,24 +315,6 @@
       "text": null,
       "value": null,
       "shares": 4468796,
-      "date": "2026-05-08"
-    },
-    {
-      "name": "DEWALT DAVID G",
-      "role": "Director and Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 0.01 - 11.17 per share.",
-      "value": 152409,
-      "shares": 8553522,
-      "date": "2026-05-08"
-    },
-    {
-      "name": "FINELLI FRANCIS ALPHONSE",
-      "role": "Director",
-      "kind": "buy",
-      "text": "Purchase at price 33.20 per share.",
-      "value": 498000,
-      "shares": 15000,
       "date": "2026-05-08"
     }
   ],

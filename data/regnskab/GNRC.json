@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-16T19:48:00.063Z",
+  "updated_at": "2026-09-17T19:57:42.075Z",
   "source": "Yahoo Finance",
   "symbol": "GNRC",
   "summary": "Generac Holdings Inc. designs, manufactures, and distributes energy technology products and solutions worldwide. The company offers residential automatic standby generators, automatic transfer switch, air-cooled engine home standby generators, and liquid-cooled engine generators; Mobile Link, a remote monitoring system for home standby generators; propane tank monitoring solution; and smart home solutions, such as smart thermostats and a suite of home monitoring products. It also provides smart home energy management devices and sensors for heating and cooling system; smart doorbell cameras; and portable and inverter generators; multiple portable battery solutions; manual transfer switches; outdoor power equipment, including trimmers, field and brush mowers, log splitters, stump grinders, chipper shredders, lawn and leaf vacuums, and pressure washers and water pumps; and home energy storage systems. In addition, the company offers commercial and industrial products comprising cleaner-burning natural gas fueled generators; mega-watt diesel generators; light-commercial standby generators and related transfer switches; stationary generators; single-engine industrial generators; industrial standby generators; industrial transfer switches; light towers, mobile generators, commercial mobile pumps, heaters, and dust-suppression equipment; mobile energy storage systems; battery energy storage system and related inverter products; and aftermarket service parts and product accessories. Further, it provides microgrid; and software-as-a-service contracts. The company distributes its products through independent residential dealers and contractors, industrial distributors and dealers, national and regional retailers, e-commerce partners, electrical/HVAC/solar wholesalers, solar installers, catalogs, equipment rental companies, and other equipment distributors; and directly to end users. Generac Holdings Inc. was founded in 1959 and is based in Waukesha, Wisconsin.",
@@ -19,8 +19,8 @@
     "strong_sell": 0,
     "total": 21
   },
-  "target_mean": 283.875,
-  "target_high": 340,
+  "target_mean": 290.125,
+  "target_high": 375,
   "target_low": 214,
   "target_analysts": 16,
   "statements": [
@@ -51,6 +51,11 @@
   ],
   "quarterly": [
     {
+      "q": "2Q2025",
+      "revenue": 1061169000,
+      "earnings": 74016000
+    },
+    {
       "q": "3Q2025",
       "revenue": 1114353000,
       "earnings": 66161000
@@ -64,20 +69,50 @@
       "q": "1Q2026",
       "revenue": 1059365000,
       "earnings": 73253000
-    },
-    {
-      "q": "2Q2026",
-      "revenue": 1173510000,
-      "earnings": 143244000
     }
   ],
   "growth": {
     "q0": 0.3394,
     "q1": 0.6012,
     "y0": 0.5375,
-    "y1": 0.21260001
+    "y1": 0.2236
   },
   "ratings": [
+    {
+      "date": "2026-09-17",
+      "firm": "Roth Capital",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-09-17",
+      "firm": "Stephens & Co.",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "reit"
+    },
+    {
+      "date": "2026-09-17",
+      "firm": "Canaccord Genuity",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-09-17",
+      "firm": "Cantor Fitzgerald",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "reit"
+    },
+    {
+      "date": "2026-09-17",
+      "firm": "Needham",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "reit"
+    },
     {
       "date": "2026-08-04",
       "firm": "UBS",
@@ -109,41 +144,6 @@
     {
       "date": "2026-07-30",
       "firm": "Needham",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-30",
-      "firm": "Barclays",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-22",
-      "firm": "Cantor Fitzgerald",
-      "from": null,
-      "to": "Overweight",
-      "action": "init"
-    },
-    {
-      "date": "2026-07-02",
-      "firm": "Citigroup",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-06-30",
-      "firm": "Barclays",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
-      "action": "main"
-    },
-    {
-      "date": "2026-06-11",
-      "firm": "UBS",
       "from": "Buy",
       "to": "Buy",
       "action": "main"
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.913,
-    "enterprise_value": 11467309056,
-    "ev_ebitda": 18.023,
-    "ev_revenue": 2.583,
+    "enterprise_value": 11472029696,
+    "ev_ebitda": 18.031,
+    "ev_revenue": 2.585,
     "float_shares": 57944247,
     "short_shares": 2659771,
     "short_pct_float": 4.57,
@@ -275,19 +275,19 @@
     {
       "name": "TAFFE NORMAN P",
       "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 188.27 - 190.00 per share.",
-      "value": 75481,
-      "shares": 400,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 119.54 per share.",
+      "value": 11954,
+      "shares": 100,
       "date": "2026-09-08"
     },
     {
       "name": "TAFFE NORMAN P",
       "role": "Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 119.54 per share.",
-      "value": 11954,
-      "shares": 100,
+      "kind": "sell",
+      "text": "Sale at price 188.27 - 190.00 per share.",
+      "value": 75481,
+      "shares": 400,
       "date": "2026-09-08"
     },
     {
@@ -302,15 +302,6 @@
     {
       "name": "RAABE KYLE ANDREW",
       "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 213.35 per share.",
-      "value": 125023,
-      "shares": 586,
-      "date": "2026-08-07"
-    },
-    {
-      "name": "RAABE KYLE ANDREW",
-      "role": "Officer",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 102.42 per share.",
       "value": 21814,
@@ -318,13 +309,13 @@
       "date": "2026-08-07"
     },
     {
-      "name": "TAFFE NORMAN P",
+      "name": "RAABE KYLE ANDREW",
       "role": "Officer",
       "kind": "sell",
-      "text": "Sale at price 218.39 - 220.00 per share.",
-      "value": 120356,
-      "shares": 550,
-      "date": "2026-08-05"
+      "text": "Sale at price 213.35 per share.",
+      "value": 125023,
+      "shares": 586,
+      "date": "2026-08-07"
     },
     {
       "name": "TAFFE NORMAN P",
@@ -333,6 +324,15 @@
       "text": "Conversion of Exercise of derivative security at price 119.54 per share.",
       "value": 29885,
       "shares": 250,
+      "date": "2026-08-05"
+    },
+    {
+      "name": "TAFFE NORMAN P",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 218.39 - 220.00 per share.",
+      "value": 120356,
+      "shares": 550,
       "date": "2026-08-05"
     },
     {
