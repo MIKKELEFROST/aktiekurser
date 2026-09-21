@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-18T19:08:51.343Z",
+  "updated_at": "2026-09-21T20:34:16.994Z",
   "source": "Yahoo Finance",
   "symbol": "CRDO",
   "summary": "Credo Technology Group Holding Ltd provides various high-speed connectivity solutions for optical and electrical Ethernet and PCIe applications in the United States, Taiwan, Mainland China, Hong Kong, and other international markets. The company offers ZeroFlap (ZF) active electrical cables and ZF optical transceivers, OmniConnect memory solutions, and a suite of retimers and DSPs for optical and copper Ethernet and PCIe, as well as integrated circuits, active electrical cables, and SerDes chiplets. It also provides intellectual property (IP) solutions, including SerDes IP licensing. The company offers was founded in 2008 and is headquartered in Grand Cayman, the Cayman Islands.",
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 19
   },
-  "target_mean": 282.46643,
+  "target_mean": 280.098,
   "target_high": 350,
   "target_low": 185,
   "target_analysts": 19,
@@ -51,6 +51,11 @@
   ],
   "quarterly": [
     {
+      "q": "2Q2025",
+      "revenue": 223074000,
+      "earnings": 63399000
+    },
+    {
       "q": "3Q2025",
       "revenue": 268027000,
       "earnings": 82636000
@@ -64,20 +69,22 @@
       "q": "1Q2026",
       "revenue": 437003000,
       "earnings": 169102000
-    },
-    {
-      "q": "2Q2026",
-      "revenue": 479003000,
-      "earnings": 129425000
     }
   ],
   "growth": {
     "q0": 0.9142,
     "q1": 0.4885,
-    "y0": 0.8223,
-    "y1": 0.5392
+    "y0": -0.19590001,
+    "y1": 2.4883
   },
   "ratings": [
+    {
+      "date": "2026-09-21",
+      "firm": "Mizuho",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
     {
       "date": "2026-09-02",
       "firm": "JP Morgan",
@@ -137,13 +144,6 @@
     {
       "date": "2026-06-23",
       "firm": "B of A Securities",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-06-22",
-      "firm": "Stifel",
       "from": "Buy",
       "to": "Buy",
       "action": "main"
@@ -224,17 +224,17 @@
   "insider_net": {
     "period": "6m",
     "buys": 12,
-    "sells": 39,
+    "sells": 38,
     "bought": 672890,
-    "sold": 928238,
-    "net_pct": -1.4
+    "sold": 900738,
+    "net_pct": -1.3
   },
   "extras": {
     "beta": 3.228,
-    "enterprise_value": 30884857856,
-    "ev_ebitda": 56.852,
-    "ev_revenue": 19.412,
-    "float_shares": 170865209,
+    "enterprise_value": 32320808960,
+    "ev_ebitda": 59.496,
+    "ev_revenue": 20.314,
+    "float_shares": 170885884,
     "short_shares": 6674244,
     "short_pct_float": 3.98,
     "short_ratio": 1.54,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 1308,
+  "inst_count": 1309,
   "eps_history": [
     {
       "quarter": "2025-10-31",

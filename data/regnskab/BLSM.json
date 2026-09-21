@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-18T19:08:51.150Z",
+  "updated_at": "2026-09-21T20:34:16.752Z",
   "source": "Yahoo Finance",
   "symbol": "BLSM",
   "summary": "BlossomHill Therapeutics, Inc., a clinical-stage biopharmaceutical company, develops small molecule medicines that address medical needs in cancer treatment. Its pipeline includes BH-30643, an OMNI-EGFR inhibitor in clinical development for advanced EGFR-mutant non-small cell lung cancer (NSCLC), BH-501284, and BH-30236, a macrocyclic CLK (Cdc2-like kinase) inhibitor being evaluated in patients with relapsed or refractory acute myeloid leukemia (R/R AML) and higher-risk myelodysplastic syndrome (HR-MDS). BlossomHill Therapeutics, Inc. was incorporated in 2020 and is based in San Diego, California.",
@@ -7,10 +7,10 @@
   "website": "https://bhtherapeutics.com",
   "employees": 63,
   "ceo": "Dr. Jingrong  Jean Cui Ph.D.",
-  "next_earnings": "2026-09-18",
-  "earnings_estimated": false,
+  "next_earnings": "2026-11-16",
+  "earnings_estimated": true,
   "earnings_call": null,
-  "eps_estimate": -0.77,
+  "eps_estimate": -0.88,
   "analysts": {
     "strong_buy": 1,
     "buy": 4,
@@ -19,8 +19,8 @@
     "strong_sell": 0,
     "total": 5
   },
-  "target_mean": 32.2,
-  "target_high": 36,
+  "target_mean": 34.2,
+  "target_high": 40,
   "target_low": 28,
   "target_analysts": 5,
   "statements": [
@@ -31,14 +31,34 @@
       "margin": null
     }
   ],
-  "quarterly": [],
+  "quarterly": [
+    {
+      "q": "2Q2026",
+      "revenue": 0,
+      "earnings": -23758000
+    }
+  ],
   "growth": {
     "q0": null,
     "q1": null,
     "y0": null,
-    "y1": 0.0715
+    "y1": -0.0174
   },
   "ratings": [
+    {
+      "date": "2026-09-21",
+      "firm": "Leerink Partners",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-09-21",
+      "firm": "Guggenheim",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-09-01",
       "firm": "LifeSci Capital",
@@ -86,8 +106,8 @@
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 234762816,
-    "ev_ebitda": -3.164,
+    "enterprise_value": 231906944,
+    "ev_ebitda": -3.126,
     "ev_revenue": null,
     "float_shares": 1432775,
     "short_shares": 111892,
@@ -100,7 +120,14 @@
   "dividend_date": null,
   "payout_ratio": 0,
   "inst_count": 5,
-  "eps_history": [],
+  "eps_history": [
+    {
+      "quarter": "2026-06-30",
+      "estimate": -0.77,
+      "actual": -8.75,
+      "surprise_pct": -1036.36
+    }
+  ],
   "insiders": [],
   "dividends": [],
   "splits": []

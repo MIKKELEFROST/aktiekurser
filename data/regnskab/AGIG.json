@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-18T19:08:50.996Z",
+  "updated_at": "2026-09-21T20:34:16.484Z",
   "source": "Yahoo Finance",
   "symbol": "AGIG",
   "summary": "Abundia Global Impact Group Inc., technology solutions company, focuses on converting waste into renewable fuels and chemicals in the United States. The company offers renewable diesel, including ultra low sulfur diesel and low carbon marine fuels; sustainable aviation fuel; and renewable naphtha and other chemical feedstocks. It operates in the recycling and renewable energy, environmental change, fuels, and chemicals sectors; and operates as a contract research and development company that provides design, fabrication, and operation of pilot-scale processes. The company is based in Houston, Texas. Abundia Global Impact Group Inc. operates as a subsidiary of Abundia Financial, Llc.",
@@ -11,11 +11,18 @@
   "earnings_estimated": false,
   "earnings_call": null,
   "eps_estimate": null,
-  "analysts": null,
-  "target_mean": null,
-  "target_high": null,
-  "target_low": null,
-  "target_analysts": null,
+  "analysts": {
+    "strong_buy": 0,
+    "buy": 1,
+    "hold": 0,
+    "sell": 0,
+    "strong_sell": 0,
+    "total": 1
+  },
+  "target_mean": 6,
+  "target_high": 6,
+  "target_low": 6,
+  "target_analysts": 1,
   "statements": [
     {
       "year": "2024",
@@ -31,7 +38,12 @@
     }
   ],
   "quarterly": [],
-  "growth": null,
+  "growth": {
+    "q0": null,
+    "q1": null,
+    "y0": 0.122600004,
+    "y1": 0.3824
+  },
   "ratings": [
     {
       "date": "2026-02-17",
@@ -123,10 +135,10 @@
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 51589356,
-    "ev_ebitda": -1.633,
-    "ev_revenue": 15.984,
-    "float_shares": 11909108,
+    "enterprise_value": 54679876,
+    "ev_ebitda": -1.731,
+    "ev_revenue": 16.942,
+    "float_shares": 11746634,
     "short_shares": 431563,
     "short_pct_float": 2.68,
     "short_ratio": 2.43,

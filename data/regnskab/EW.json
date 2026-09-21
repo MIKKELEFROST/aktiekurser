@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-18T19:08:51.497Z",
+  "updated_at": "2026-09-21T20:34:17.227Z",
   "source": "Yahoo Finance",
   "symbol": "EW",
   "summary": "Edwards Lifesciences Corporation provides products and technologies to treat advanced cardiovascular diseases in the United States, Europe, Japan, and internationally. It offers transcatheter heart valve replacement products for minimally invasive replacement of aortic heart valves under the Edwards SAPIEN family of valves system; and transcatheter heart valve repair and replacement products to treat mitral and tricuspid valve diseases under the PASCAL and EVOQUE brands. The company also provides surgical structural heart solutions, such as aortic surgical valve under the INSPIRIS brand name; INSPIRIS RESILIA aortic valve, which offers RESILIA tissue and VFit technology; KONECT RESILIA, a pre-assembled tissue valve conduit for complex combined procedures; and MITRIS RESILIA valve. It distributes its products through a direct sales force and independent distributors. Edwards Lifesciences Corporation was founded in 1958 and is headquartered in Irvine, California.",
@@ -51,6 +51,11 @@
   ],
   "quarterly": [
     {
+      "q": "2Q2025",
+      "revenue": 1532200000,
+      "earnings": 333200000
+    },
+    {
       "q": "3Q2025",
       "revenue": 1553100000,
       "earnings": 291100000
@@ -64,11 +69,6 @@
       "q": "1Q2026",
       "revenue": 1648600000,
       "earnings": 380700000
-    },
-    {
-      "q": "2Q2026",
-      "revenue": 1741000000,
-      "earnings": 241900000
     }
   ],
   "growth": {
@@ -231,8 +231,8 @@
   },
   "extras": {
     "beta": 0.852,
-    "enterprise_value": 47425900544,
-    "ev_ebitda": 23.751,
+    "enterprise_value": 47431663616,
+    "ev_ebitda": 23.754,
     "ev_revenue": 7.283,
     "float_shares": 574492116,
     "short_shares": 9022064,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 1922,
+  "inst_count": 1924,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -275,18 +275,18 @@
     {
       "name": "LIPPIS DANIEL J",
       "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 87.51 per share.",
-      "value": 54169,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 72.68 per share.",
+      "value": 44989,
       "shares": 619,
       "date": "2026-09-11"
     },
     {
       "name": "LIPPIS DANIEL J",
       "role": "Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 72.68 per share.",
-      "value": 44989,
+      "kind": "sell",
+      "text": "Sale at price 87.51 per share.",
+      "value": 54169,
       "shares": 619,
       "date": "2026-09-11"
     },
@@ -311,6 +311,15 @@
     {
       "name": "CHOPRA DAVEEN",
       "role": "Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 72.68 per share.",
+      "value": 2311224,
+      "shares": 31800,
+      "date": "2026-08-26"
+    },
+    {
+      "name": "CHOPRA DAVEEN",
+      "role": "Officer",
       "kind": "sell",
       "text": "Sale at price 90.99 - 91.76 per share.",
       "value": 2894440,
@@ -327,13 +336,13 @@
       "date": "2026-08-26"
     },
     {
-      "name": "CHOPRA DAVEEN",
+      "name": "LIPPIS DANIEL J",
       "role": "Officer",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 72.68 per share.",
-      "value": 2311224,
-      "shares": 31800,
-      "date": "2026-08-26"
+      "value": 44989,
+      "shares": 619,
+      "date": "2026-08-11"
     },
     {
       "name": "LIPPIS DANIEL J",
@@ -341,15 +350,6 @@
       "kind": "sell",
       "text": "Sale at price 92.03 per share.",
       "value": 56967,
-      "shares": 619,
-      "date": "2026-08-11"
-    },
-    {
-      "name": "LIPPIS DANIEL J",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 72.68 per share.",
-      "value": 44989,
       "shares": 619,
       "date": "2026-08-11"
     },
