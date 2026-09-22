@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-21T20:34:16.664Z",
+  "updated_at": "2026-09-22T20:00:59.034Z",
   "source": "Yahoo Finance",
   "symbol": "AZO",
   "summary": "AutoZone, Inc. operates as a retailer and distributor of automotive replacement parts and accessories in the United States, Mexico, and Brazil. The company offers a product line for cars, sport utility vehicles, vans, and light duty trucks, including new and remanufactured automotive hard parts, maintenance items, accessories, and non-automotive products. It also provides A/C compressors, batteries and accessories, bearings, belts and hoses, calipers, chassis, clutches, CV axles, engines, fuel pumps, fuses, ignition and lighting products, mufflers, radiators, starters and alternators, thermostats, and water pumps, as well as tire repairs. In addition, the company provides maintenance products, such as antifreeze and windshield washer fluids; brake drums, rotors, shoes, and pads; brake and power steering fluids, and oil and fuel additives; oil and transmission fluids; oil, cabin, air, fuel, and transmission filters; oxygen sensors; paints and accessories; refrigerants and accessories; shock absorbers and struts; spark plugs and wires; and windshield wipers. Further, it offers air fresheners, cell phone accessories, drinks and snacks, floor mats and seat covers, interior and exterior accessories, mirrors, performance products, protectants and cleaners, sealants and adhesives, steering wheel covers, tools, vehicle entertainment systems, and wash and wax products, as well as towing services. Additionally, the company provides a sales program that offers commercial credit and delivery of parts and other products; sells automotive diagnostic, repair, collision, and shop management information software under the ALLDATA brand through alldata.com; Duralast branded products through duralastparts.com; and automotive hard parts, maintenance items, accessories, and non-automotive products through autozone.com. AutoZone, Inc. was founded in 1979 and is headquartered in Memphis, Tennessee.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-09-22",
   "earnings_estimated": false,
   "earnings_call": "2026-09-22",
-  "eps_estimate": 53.84382,
+  "eps_estimate": 37.664,
   "analysts": {
     "strong_buy": 5,
     "buy": 18,
@@ -19,17 +19,63 @@
     "strong_sell": 0,
     "total": 27
   },
-  "target_mean": 3867.913,
+  "target_mean": 3859.2173,
   "target_high": 4800,
   "target_low": 3200,
   "target_analysts": 23,
-  "statements": null,
-  "quarterly": [],
+  "statements": [
+    {
+      "year": "2023",
+      "revenue": 17457209000,
+      "net": 2528426000,
+      "margin": 14.5
+    },
+    {
+      "year": "2024",
+      "revenue": 18490268000,
+      "net": 2662427000,
+      "margin": 14.4
+    },
+    {
+      "year": "2025",
+      "revenue": 18938717000,
+      "net": 2498247000,
+      "margin": 13.2
+    },
+    {
+      "year": "2026",
+      "revenue": 20338555000,
+      "net": 2572777000,
+      "margin": 12.6
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "4Q2025",
+      "revenue": 4628630000,
+      "earnings": 530823000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 4274098000,
+      "earnings": 468860000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 4840950000,
+      "earnings": 641491000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 6594879000,
+      "earnings": 931587000
+    }
+  ],
   "growth": {
-    "q0": 0.105399996,
-    "q1": 0.2164,
-    "y0": 0.0417,
-    "y1": 0.1576
+    "q0": 0.2134,
+    "q1": 0.1671,
+    "y0": 0.1418,
+    "y1": 0.121300004
   },
   "ratings": [
     {
@@ -185,9 +231,9 @@
   },
   "extras": {
     "beta": 0.34,
-    "enterprise_value": 59429961728,
-    "ev_ebitda": 13.938,
-    "ev_revenue": 2.974,
+    "enterprise_value": 58580066304,
+    "ev_ebitda": 13.738,
+    "ev_revenue": 2.931,
     "float_shares": 16271318,
     "short_shares": 434741,
     "short_pct_float": 2.99,
@@ -200,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 1780,
   "eps_history": [
-    {
-      "quarter": "2025-08-31",
-      "estimate": 50.67595,
-      "actual": 48.71,
-      "surprise_pct": -3.88
-    },
     {
       "quarter": "2025-11-30",
       "estimate": 32.34598,
@@ -223,6 +263,12 @@
       "estimate": 36.16866,
       "actual": 38.07,
       "surprise_pct": 5.26
+    },
+    {
+      "quarter": "2026-08-31",
+      "estimate": 53.88695,
+      "actual": 56.05,
+      "surprise_pct": 4.01
     }
   ],
   "insiders": [

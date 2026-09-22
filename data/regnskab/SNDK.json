@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-21T20:34:18.484Z",
+  "updated_at": "2026-09-22T20:01:00.723Z",
   "source": "Yahoo Finance",
   "symbol": "SNDK",
   "summary": "Sandisk Corporation develops, manufactures, and sells data storage devices and solutions using NAND flash technology in the Americas, Europe, the Middle East, Africa, Asia, and internationally. The company provides solid state drives for desktop and notebook PCs, gaming consoles, and set top boxes; and flash-based embedded storage products for mobile phones, tablets, notebook PCs and other portable and wearable devices, automotive applications, Internet of Things, industrial, and connected home applications, as well as removable cards, universal serial bus drives, and wafers and components. It sells its products to computer manufacturers and original equipment manufacturers, datacenters, private cloud customers, cloud service providers, resellers, distributors, and retailers through its sales personnel, dealers, distributors, retailers, and subsidiaries. Sandisk Corporation was incorporated in 2024 and is based in Milpitas, California.",
@@ -10,19 +10,19 @@
   "next_earnings": "2026-11-06",
   "earnings_estimated": true,
   "earnings_call": "2026-08-05",
-  "eps_estimate": 46.20664,
+  "eps_estimate": 46.18405,
   "analysts": {
     "strong_buy": 4,
-    "buy": 16,
+    "buy": 17,
     "hold": 3,
     "sell": 0,
     "strong_sell": 1,
-    "total": 24
+    "total": 25
   },
-  "target_mean": 2125.087,
+  "target_mean": 2136.5417,
   "target_high": 3600,
   "target_low": 1000,
-  "target_analysts": 23,
+  "target_analysts": 24,
   "statements": [
     {
       "year": "2024",
@@ -66,12 +66,19 @@
     }
   ],
   "growth": {
-    "q0": 36.8743,
-    "q1": 7.5125,
-    "y0": 2.0206,
-    "y1": 0.2364
+    "q0": 36.8558,
+    "q1": 7.5143,
+    "y0": 2.0178,
+    "y1": 0.2318
   },
   "ratings": [
+    {
+      "date": "2026-09-22",
+      "firm": "Rosenblatt",
+      "from": null,
+      "to": "Buy",
+      "action": "init"
+    },
     {
       "date": "2026-08-25",
       "firm": "Mizuho",
@@ -133,13 +140,6 @@
       "firm": "Citigroup",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-06",
-      "firm": "Evercore ISI Group",
-      "from": "Outperform",
-      "to": "Outperform",
       "action": "main"
     }
   ],
@@ -217,17 +217,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 3,
-    "sells": 12,
-    "bought": 12636,
-    "sold": 49683,
-    "net_pct": -2.5
+    "buys": 7,
+    "sells": 13,
+    "bought": 19010,
+    "sold": 83524,
+    "net_pct": -4.3
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 257795489792,
-    "ev_ebitda": 20.432,
-    "ev_revenue": 12.732,
+    "enterprise_value": 254108663808,
+    "ev_ebitda": 20.14,
+    "ev_revenue": 12.55,
     "float_shares": 144483342,
     "short_shares": 5996105,
     "short_pct_float": 6.43,
@@ -238,7 +238,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 2283,
+  "inst_count": 2284,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -266,6 +266,51 @@
     }
   ],
   "insiders": [
+    {
+      "name": "POKORNY MICHAEL",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 458,
+      "date": "2026-09-17"
+    },
+    {
+      "name": "GOECKELER DAVID V",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 3296,
+      "date": "2026-09-17"
+    },
+    {
+      "name": "ILKBAHAR ALPER",
+      "role": "Chief Technology Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 1619,
+      "date": "2026-09-17"
+    },
+    {
+      "name": "SHEK BERNARD",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 1001,
+      "date": "2026-09-17"
+    },
+    {
+      "name": "GOECKELER DAVID V",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 1567.26 - 1587.00 per share.",
+      "value": 53272704,
+      "shares": 33841,
+      "date": "2026-09-17"
+    },
     {
       "name": "VISOSO LOMELIN LUIS FELIPE",
       "role": "Chief Financial Officer",
@@ -310,51 +355,6 @@
       "value": 625557,
       "shares": 400,
       "date": "2026-09-03"
-    },
-    {
-      "name": "SHEK BERNARD",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 1525.60 per share.",
-      "value": 915360,
-      "shares": 600,
-      "date": "2026-09-01"
-    },
-    {
-      "name": "ILKBAHAR ALPER",
-      "role": "Chief Technology Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 276,
-      "date": "2026-08-20"
-    },
-    {
-      "name": "SHEK BERNARD",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 1162.16 per share.",
-      "value": 697296,
-      "shares": 600,
-      "date": "2026-08-03"
-    },
-    {
-      "name": "SHEK BERNARD",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 2088.00 per share.",
-      "value": 1252800,
-      "shares": 600,
-      "date": "2026-07-01"
-    },
-    {
-      "name": "SHEK BERNARD",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 1736.00 per share.",
-      "value": 1041600,
-      "shares": 600,
-      "date": "2026-06-03"
     }
   ],
   "dividends": [],

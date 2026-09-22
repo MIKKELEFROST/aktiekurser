@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-21T20:34:18.611Z",
+  "updated_at": "2026-09-22T20:01:00.877Z",
   "source": "Yahoo Finance",
   "symbol": "THO",
   "summary": "THOR Industries, Inc. designs, manufactures, and sells recreational vehicles (RVs), and related parts and accessories in the United States, Germany, rest of Europe, Canada, and internationally. The company offers travel trailers; gasoline and diesel Class A, Class B, and Class C motorhomes; conventional travel trailers and fifth wheels; conventional motorhomes; luxury fifth wheels; and motorcaravans, campervans, urban vehicles, and caravans, as well as other RV-related products and services. It also provides aluminum extrusion and specialized component products to RV and other manufacturers. The company sells its products to independent and non-franchise dealers. THOR Industries, Inc. was founded in 1980 and is based in Elkhart, Indiana.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-09-22",
   "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": 0.92868,
+  "eps_estimate": 0.52286,
   "analysts": {
     "strong_buy": 1,
     "buy": 4,
@@ -19,17 +19,11 @@
     "strong_sell": 1,
     "total": 18
   },
-  "target_mean": 88.5,
+  "target_mean": 87.45455,
   "target_high": 138,
   "target_low": 59,
-  "target_analysts": 12,
+  "target_analysts": 11,
   "statements": [
-    {
-      "year": "2022",
-      "revenue": 16312525000,
-      "net": 1137804000,
-      "margin": 7
-    },
     {
       "year": "2023",
       "revenue": 11121605000,
@@ -47,14 +41,15 @@
       "revenue": 9579490000,
       "net": 258559000,
       "margin": 2.7
+    },
+    {
+      "year": "2026",
+      "revenue": 9608145000,
+      "net": 177539000,
+      "margin": 1.8
     }
   ],
   "quarterly": [
-    {
-      "q": "2Q2025",
-      "revenue": 2523783000,
-      "earnings": 125757000
-    },
     {
       "q": "3Q2025",
       "revenue": 2389123000,
@@ -69,13 +64,18 @@
       "q": "1Q2026",
       "revenue": 2781538000,
       "earnings": 97229000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 2311628000,
+      "earnings": 40838000
     }
   ],
   "growth": {
-    "q0": -0.6065,
-    "q1": 0.38979998,
-    "y0": -0.2774,
-    "y1": 0.2685
+    "q0": 0.2753,
+    "q1": 0.1513,
+    "y0": 0.3136,
+    "y1": 0.1698
   },
   "ratings": [
     {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.331,
-    "enterprise_value": 4073359104,
-    "ev_ebitda": 7.773,
-    "ev_revenue": 0.415,
+    "enterprise_value": 4186323712,
+    "ev_ebitda": 7.988,
+    "ev_revenue": 0.426,
     "float_shares": 49578921,
     "short_shares": 4986425,
     "short_pct_float": 13.1,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.417,
   "inst_count": 537,
   "eps_history": [
-    {
-      "quarter": "2025-07-31",
-      "estimate": 1.23485,
-      "actual": 2.36,
-      "surprise_pct": 91.12
-    },
     {
       "quarter": "2025-10-31",
       "estimate": -0.0675,
@@ -269,6 +263,12 @@
       "estimate": 1.93208,
       "actual": 1.86,
       "surprise_pct": -3.73
+    },
+    {
+      "quarter": "2026-07-31",
+      "estimate": 0.92002,
+      "actual": 0.78,
+      "surprise_pct": -15.22
     }
   ],
   "insiders": [
