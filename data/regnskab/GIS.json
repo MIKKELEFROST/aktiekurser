@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-22T20:00:59.757Z",
+  "updated_at": "2026-09-23T19:54:48.101Z",
   "source": "Yahoo Finance",
   "symbol": "GIS",
   "summary": "General Mills, Inc. manufactures and markets branded consumer food in the United States and internationally. The company operates through four segments: North America Retail; International; North America Pet; and North America Foodservice. It offers snacks, including grain, fruit and savory snacks, nutrition bars, and frozen hot snacks; ready-to-eat cereal; convenient meals comprising meal kits, ethnic meals, pizza, soup, side dish mixes, frozen breakfast, and frozen entrees; wholesome natural pet food; refrigerated and frozen dough; baking mixes and ingredients; and ice cream products. The company also offers dog and cat food, such as dry food, wet food, fresh food, and treats. In addition, it operates 232 and franchises 376 ice cream parlors. The company markets its products under the Annie's, Betty Crocker, Bisquick, Blue Buffalo, Bugles, Cascadian Farm, Cheerios, Chex, Cinnamon Toast Crunch, Cocoa Puffs, Cookie Crisp, Dunkaroos, Edgard & Cooper, Fiber One, Fruit by the Foot, Fruit Gushers, Fruit Roll-Ups, Gardetto's, Gold Medal, Golden Grahams, Häagen-Dazs, Kitano, Kix, Lärabar, Latina, Lucky Charms, Nature Valley, Nudges, Oatmeal Crisp, Old El Paso, Pillsbury, Progresso, Tastefuls, Tiki Pets, Total, Totino's, Trix, True Solutions, Wanchai Ferry, Wheaties, Wilderness, and Yoki brands. It sells its products to grocery stores, mass merchandisers, membership stores, natural food chains, drug, dollar and discount chains, e-commerce retailers, commercial and noncommercial foodservice distributors and operators, restaurants, convenience stores, and pet specialty stores. The company was founded in 1866 and is headquartered in Minneapolis, Minnesota.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-09-23",
   "earnings_estimated": false,
   "earnings_call": "2026-09-23",
-  "eps_estimate": 0.71775,
+  "eps_estimate": 0.98478,
   "analysts": {
     "strong_buy": 3,
     "buy": 1,
@@ -23,11 +23,57 @@
   "target_high": 47,
   "target_low": 31,
   "target_analysts": 18,
-  "statements": null,
-  "quarterly": [],
+  "statements": [
+    {
+      "year": "2023",
+      "revenue": 20094200000,
+      "net": 2593900000,
+      "margin": 12.9
+    },
+    {
+      "year": "2024",
+      "revenue": 19857200000,
+      "net": 2496600000,
+      "margin": 12.6
+    },
+    {
+      "year": "2025",
+      "revenue": 19486600000,
+      "net": 2295200000,
+      "margin": 11.8
+    },
+    {
+      "year": "2026",
+      "revenue": 18424600000,
+      "net": -87600000,
+      "margin": -0.5
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "4Q2025",
+      "revenue": 4860800000,
+      "earnings": 413000000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 4436700000,
+      "earnings": 303100000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 4609600000,
+      "earnings": -2007900000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 4389500000,
+      "earnings": 397000000
+    }
+  ],
   "growth": {
-    "q0": -0.16540001,
-    "q1": -0.1047,
+    "q0": -0.1047,
+    "q1": 0.019199999,
     "y0": -0.1349,
     "y1": 0.038
   },
@@ -185,9 +231,9 @@
   },
   "extras": {
     "beta": -0.025,
-    "enterprise_value": 32397414400,
-    "ev_ebitda": 9.392,
-    "ev_revenue": 1.758,
+    "enterprise_value": 32418762752,
+    "ev_ebitda": 9.398,
+    "ev_revenue": 1.76,
     "float_shares": 531723001,
     "short_shares": 45998941,
     "short_pct_float": 11.2,
@@ -200,12 +246,6 @@
   "payout_ratio": 0.5941,
   "inst_count": 1805,
   "eps_history": [
-    {
-      "quarter": "2025-08-31",
-      "estimate": 0.81559,
-      "actual": 0.86,
-      "surprise_pct": 5.45
-    },
     {
       "quarter": "2025-11-30",
       "estimate": 1.02714,
@@ -223,6 +263,12 @@
       "estimate": 0.79691,
       "actual": 0.95,
       "surprise_pct": 19.21
+    },
+    {
+      "quarter": "2026-08-31",
+      "estimate": 0.71775,
+      "actual": 0.75,
+      "surprise_pct": 4.49
     }
   ],
   "insiders": [

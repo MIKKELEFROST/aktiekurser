@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-22T20:01:00.013Z",
+  "updated_at": "2026-09-23T19:54:48.368Z",
   "source": "Yahoo Finance",
   "symbol": "KBH",
   "summary": "KB Home operates as a homebuilding company in the United States. It builds and sells homes, including attached and detached single-family residential homes, townhomes, and condominiums primarily for first-time, first move-up, second move-up, and active adult homebuyers. The company also provides financial services, such as mortgage banking services, such as residential consumer mortgage loan originations to homebuyers; property and casualty insurance services, as well as earthquake, flood, and personal property insurance products to homebuyers; and title services. It conducts operations in Arizona, California, Colorado, Florida, Idaho, Nevada, North Carolina, Texas, and Washington. The company was formerly known as Kaufman and Broad Home Corporation and changed its name to KB Home in January 2001. KB Home was founded in 1957 and is based in Los Angeles, California.",
@@ -7,10 +7,10 @@
   "website": "https://www.kbhome.com",
   "employees": 2118,
   "ceo": "Mr. Robert V. McGibney",
-  "next_earnings": "2026-09-22",
-  "earnings_estimated": false,
+  "next_earnings": "2026-12-17",
+  "earnings_estimated": true,
   "earnings_call": "2026-09-22",
-  "eps_estimate": 0.8778,
+  "eps_estimate": 1.20234,
   "analysts": {
     "strong_buy": 2,
     "buy": 1,
@@ -19,19 +19,107 @@
     "strong_sell": 0,
     "total": 15
   },
-  "target_mean": 58.41667,
-  "target_high": 77,
+  "target_mean": 55.58333,
+  "target_high": 70,
   "target_low": 43,
   "target_analysts": 12,
-  "statements": null,
-  "quarterly": [],
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 6903776000,
+      "net": 816666000,
+      "margin": 11.8
+    },
+    {
+      "year": "2023",
+      "revenue": 6410629000,
+      "net": 590177000,
+      "margin": 9.2
+    },
+    {
+      "year": "2024",
+      "revenue": 6930086000,
+      "net": 655018000,
+      "margin": 9.5
+    },
+    {
+      "year": "2025",
+      "revenue": 6236214000,
+      "net": 428789000,
+      "margin": 6.9
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "4Q2025",
+      "revenue": 1694378000,
+      "earnings": 101521000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 1077011000,
+      "earnings": 33424000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 1112435000,
+      "earnings": 27349000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1297101000,
+      "earnings": 65280000
+    }
+  ],
   "growth": {
-    "q0": -0.4548,
-    "q1": -0.2313,
-    "y0": -0.5129,
-    "y1": 0.3214
+    "q0": -0.3738,
+    "q1": -0.0064,
+    "y0": -0.5266,
+    "y1": 0.20899999
   },
   "ratings": [
+    {
+      "date": "2026-09-23",
+      "firm": "Truist Securities",
+      "from": "Hold",
+      "to": "Hold",
+      "action": "main"
+    },
+    {
+      "date": "2026-09-23",
+      "firm": "Evercore ISI Group",
+      "from": "In-Line",
+      "to": "In-Line",
+      "action": "main"
+    },
+    {
+      "date": "2026-09-23",
+      "firm": "RBC Capital",
+      "from": "Sector Perform",
+      "to": "Sector Perform",
+      "action": "main"
+    },
+    {
+      "date": "2026-09-23",
+      "firm": "Barclays",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-09-23",
+      "firm": "Citizens",
+      "from": "Market Outperform",
+      "to": "Market Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-09-23",
+      "firm": "B of A Securities",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-09-16",
       "firm": "Truist Securities",
@@ -58,48 +146,6 @@
       "firm": "Barclays",
       "from": "Overweight",
       "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-06-24",
-      "firm": "Truist Securities",
-      "from": "Hold",
-      "to": "Hold",
-      "action": "main"
-    },
-    {
-      "date": "2026-06-24",
-      "firm": "RBC Capital",
-      "from": "Sector Perform",
-      "to": "Sector Perform",
-      "action": "reit"
-    },
-    {
-      "date": "2026-06-24",
-      "firm": "Wells Fargo",
-      "from": "Underweight",
-      "to": "Underweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-06-24",
-      "firm": "UBS",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-06-24",
-      "firm": "Citizens",
-      "from": "Market Outperform",
-      "to": "Market Outperform",
-      "action": "reit"
-    },
-    {
-      "date": "2026-05-04",
-      "firm": "Truist Securities",
-      "from": "Hold",
-      "to": "Hold",
       "action": "main"
     }
   ],
@@ -185,9 +231,9 @@
   },
   "extras": {
     "beta": 1.336,
-    "enterprise_value": 4733137408,
-    "ev_ebitda": 11.448,
-    "ev_revenue": 0.86,
+    "enterprise_value": 4777893888,
+    "ev_ebitda": 11.556,
+    "ev_revenue": 0.868,
     "float_shares": 58453921,
     "short_shares": 7544647,
     "short_pct_float": 20.56,
@@ -200,12 +246,6 @@
   "payout_ratio": 0.2433,
   "inst_count": 507,
   "eps_history": [
-    {
-      "quarter": "2025-08-31",
-      "estimate": 1.50589,
-      "actual": 1.61,
-      "surprise_pct": 6.91
-    },
     {
       "quarter": "2025-11-30",
       "estimate": 1.79287,
@@ -223,6 +263,12 @@
       "estimate": 0.45735,
       "actual": 0.43,
       "surprise_pct": -5.98
+    },
+    {
+      "quarter": "2026-08-31",
+      "estimate": 0.89966,
+      "actual": 1.05,
+      "surprise_pct": 16.71
     }
   ],
   "insiders": [

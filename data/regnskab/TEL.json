@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-22T20:01:00.855Z",
+  "updated_at": "2026-09-23T19:54:49.205Z",
   "source": "Yahoo Finance",
   "symbol": "TEL",
   "summary": "TE Connectivity plc, together with its subsidiaries, manufactures and sells connectivity and sensor solutions in Europe, the Middle East, Africa, the AsiaPacific, and the Americas. The company operates through two reportable segments, Transportation Solutions and Industrial Solutions. It provides antennas, application tooling, cable assemblies, connectors, electromagnetic compatibility/electromagnetic interference solutions, energy and power, fiber optics, heat shrink tubing, identification and labeling, medical components, passive components, relays and contactors, sensors, switches, terminals and splices, wires and cables, and wire protection and management solutions. The company also offers training and other services, including 3D printing for production, back shells prototyping, electrical installation training, HarnWare software, machine tooling service and repair, medical device design services, microfluidic devices, and sensor manufacturing services as well as conducts automotive webinars. It serves 5G and wireless equipment, aerospace, appliances, automation and control, automotive, autosport, commercial and industrial vehicles, connected home, data centers and artificial intelligence, defense and military, energy solutions, e-mobility, industrial machinery, intelligent buildings, IoT connectivity, medical technologies, oil and gas/marine, personal electronics and wearable technology, rail, sensor applications, space, and other industries. The company was formerly known as Tyco Electronics Ltd. and changed its name to TE Connectivity plc in March 2011. TE Connectivity plc was founded in 1941 and is based in Ballybrit, Ireland.",
@@ -13,16 +13,16 @@
   "eps_estimate": 3.06737,
   "analysts": {
     "strong_buy": 1,
-    "buy": 11,
+    "buy": 12,
     "hold": 6,
     "sell": 0,
     "strong_sell": 0,
-    "total": 18
+    "total": 19
   },
-  "target_mean": 248.88889,
+  "target_mean": 248.57895,
   "target_high": 306,
   "target_low": 215,
-  "target_analysts": 18,
+  "target_analysts": 19,
   "statements": [
     {
       "year": "2022",
@@ -75,9 +75,16 @@
     "q0": 0.2571,
     "q1": 0.1033,
     "y0": 0.3076,
-    "y1": 0.1273
+    "y1": 0.1276
   },
   "ratings": [
+    {
+      "date": "2026-09-23",
+      "firm": "Bernstein",
+      "from": null,
+      "to": "Outperform",
+      "action": "init"
+    },
     {
       "date": "2026-09-11",
       "firm": "Wells Fargo",
@@ -139,13 +146,6 @@
       "firm": "Truist Securities",
       "from": "Hold",
       "to": "Hold",
-      "action": "main"
-    },
-    {
-      "date": "2026-04-23",
-      "firm": "Barclays",
-      "from": "Overweight",
-      "to": "Overweight",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.158,
-    "enterprise_value": 65526673408,
-    "ev_ebitda": 13.235,
-    "ev_revenue": 3.391,
+    "enterprise_value": 66531282944,
+    "ev_ebitda": 13.438,
+    "ev_revenue": 3.443,
     "float_shares": 288997894,
     "short_shares": 9423291,
     "short_pct_float": 3.75,
@@ -275,18 +275,18 @@
     {
       "name": "KROEGER SHADRAK W",
       "role": "Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 93.63 per share.",
-      "value": 880122,
+      "kind": "sell",
+      "text": "Sale at price 215.00 per share.",
+      "value": 2021000,
       "shares": 9400,
       "date": "2026-06-01"
     },
     {
       "name": "KROEGER SHADRAK W",
       "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 215.00 per share.",
-      "value": 2021000,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 93.63 per share.",
+      "value": 880122,
       "shares": 9400,
       "date": "2026-06-01"
     },
@@ -302,15 +302,6 @@
     {
       "name": "KROEGER SHADRAK W",
       "role": "Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 93.63 per share.",
-      "value": 880122,
-      "shares": 9400,
-      "date": "2026-05-06"
-    },
-    {
-      "name": "KROEGER SHADRAK W",
-      "role": "Officer",
       "kind": "sell",
       "text": "Sale at price 215.00 per share.",
       "value": 2021000,
@@ -324,7 +315,7 @@
       "text": "Conversion of Exercise of derivative security at price 93.63 per share.",
       "value": 880122,
       "shares": 9400,
-      "date": "2026-04-08"
+      "date": "2026-05-06"
     },
     {
       "name": "KROEGER SHADRAK W",
@@ -342,7 +333,7 @@
       "text": "Conversion of Exercise of derivative security at price 93.63 per share.",
       "value": 880122,
       "shares": 9400,
-      "date": "2026-03-02"
+      "date": "2026-04-08"
     },
     {
       "name": "KROEGER SHADRAK W",
@@ -360,6 +351,15 @@
       "text": "Conversion of Exercise of derivative security at price 93.63 per share.",
       "value": 880122,
       "shares": 9400,
+      "date": "2026-03-02"
+    },
+    {
+      "name": "KROEGER SHADRAK W",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 233.64 per share.",
+      "value": 1533879,
+      "shares": 6565,
       "date": "2026-02-13"
     }
   ],
