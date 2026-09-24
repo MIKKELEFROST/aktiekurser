@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T19:54:47.274Z",
+  "updated_at": "2026-09-24T20:07:20.347Z",
   "source": "Yahoo Finance",
   "symbol": "AOMR",
   "summary": "Angel Oak Mortgage REIT, Inc., a real estate finance company, focuses on acquiring and investing in first lien nonqualified mortgage loans and other mortgage-related assets in the United States mortgage market. It offers investment securities; residential mortgage loans; and commercial mortgage loans. The company also offers futures contracts; non-agency residential mortgage backed securities; non-recourse securitization obligations; collateralized by residential mortgage loans; commercial bridge loans; mezzanine loans; construction loans; B-Notes; home equity lines of credit (HELOCs); and other related instruments. The company qualifies as a real estate investment trust for federal income tax purposes. It generally would not be subject to federal corporate income taxes if it distributes at least 90% of its taxable income to its stockholders. The company was formerly known as Angel Oak Mortgage, Inc. and changed its name to Angel Oak Mortgage REIT, Inc. in March 2023. Angel Oak Mortgage REIT, Inc. was incorporated in 2018 and is headquartered in Atlanta, Georgia.",
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 5865000,
-      "earnings": 767000
-    },
-    {
       "q": "3Q2025",
       "revenue": 10180000,
       "earnings": 11410000
@@ -69,6 +64,11 @@
       "q": "1Q2026",
       "revenue": 12110000,
       "earnings": -7379000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 10742000,
+      "earnings": 3353000
     }
   ],
   "growth": {
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 9,
-    "sells": 1,
+    "sells": 2,
     "bought": 177812,
-    "sold": 481537,
-    "net_pct": -25
+    "sold": 546537,
+    "net_pct": -28.8
   },
   "extras": {
     "beta": 1.185,
-    "enterprise_value": 2627357952,
+    "enterprise_value": 2619232768,
     "ev_ebitda": null,
-    "ev_revenue": 72.18,
+    "ev_revenue": 71.957,
     "float_shares": 22618023,
     "short_shares": 601375,
     "short_pct_float": 4.09,
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "FILSON BRANDON",
+      "role": "Chief Financial Officer",
+      "kind": "sell",
+      "text": "Sale at price 7.93 per share.",
+      "value": 515398,
+      "shares": 65000,
+      "date": "2026-09-22"
+    },
     {
       "name": "MINAMI WESLEY D",
       "role": "Director",
@@ -352,15 +361,6 @@
       "value": 99999,
       "shares": 11737,
       "date": "2026-05-13"
-    },
-    {
-      "name": "DAVIDSON KEMPNER CAPITAL MANAGEMENT, L.P.",
-      "role": "Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "sell",
-      "text": "Sale at price 7.87 per share.",
-      "value": 3789696,
-      "shares": 481537,
-      "date": "2026-03-20"
     }
   ],
   "dividends": [

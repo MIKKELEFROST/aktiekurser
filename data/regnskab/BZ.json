@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T19:54:47.548Z",
+  "updated_at": "2026-09-24T20:07:20.686Z",
   "source": "Yahoo Finance",
   "symbol": "BZ",
   "summary": "Kanzhun Limited, together with its subsidiaries, operates an online recruitment platform in the People's Republic of China. It offers job seeking services that allow job seekers to receive job recommendations, initiate direct chats, and deliver resumes upon mutual consent, as well as value-added tools. The company also provides direct recruitment services to enterprise users to post jobs, receive personalized candidate recommendations, engage in direct communication, and receive resumes upon mutual consent. In addition, it offers online recruitment services through BOSS Zhipin, a mobile app; and management consultancy and technical services. Kanzhun Limited was founded in 2013 and is headquartered in Beijing, the People's Republic of China.",
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 23
   },
-  "target_mean": 21.728498,
-  "target_high": 27.087095,
-  "target_low": 17.049196,
+  "target_mean": 21.694832,
+  "target_high": 27.045126,
+  "target_low": 17.02278,
   "target_analysts": 22,
   "statements": [
     {
@@ -51,6 +51,11 @@
   ],
   "quarterly": [
     {
+      "q": "2Q2025",
+      "revenue": 2102433000,
+      "earnings": 716398000
+    },
+    {
       "q": "3Q2025",
       "revenue": 2163281000,
       "earnings": 775420000
@@ -64,11 +69,6 @@
       "q": "1Q2026",
       "revenue": 2068792000,
       "earnings": 1156693000
-    },
-    {
-      "q": "2Q2026",
-      "revenue": 2398603000,
-      "earnings": 1945108000
     }
   ],
   "growth": {
@@ -231,10 +231,10 @@
   },
   "extras": {
     "beta": 0.474,
-    "enterprise_value": -13999630336,
-    "ev_ebitda": -3.897,
-    "ev_revenue": -1.607,
-    "float_shares": 379160647,
+    "enterprise_value": -14185787392,
+    "ev_ebitda": -3.948,
+    "ev_revenue": -1.629,
+    "float_shares": 380595417,
     "short_shares": 24181862,
     "short_pct_float": 6.33,
     "short_ratio": 3.89,
@@ -275,6 +275,15 @@
     {
       "name": "CHEN XU",
       "role": "Officer and Director",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 0.50 per share.",
+      "value": 100000,
+      "shares": 200000,
+      "date": "2026-09-10"
+    },
+    {
+      "name": "CHEN XU",
+      "role": "Officer and Director",
       "kind": "sell",
       "text": "Sale at price 16.41 per share.",
       "value": 3282000,
@@ -286,9 +295,9 @@
       "role": "Officer and Director",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 0.50 per share.",
-      "value": 100000,
-      "shares": 200000,
-      "date": "2026-09-10"
+      "value": 200000,
+      "shares": 400000,
+      "date": "2026-09-04"
     },
     {
       "name": "CHEN XU",
@@ -298,42 +307,6 @@
       "value": 6768000,
       "shares": 400000,
       "date": "2026-09-04"
-    },
-    {
-      "name": "CHEN XU",
-      "role": "Officer and Director",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 0.50 per share.",
-      "value": 200000,
-      "shares": 400000,
-      "date": "2026-09-04"
-    },
-    {
-      "name": "WANG XIEHUA",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 13.20 per share.",
-      "value": 941002,
-      "shares": 71288,
-      "date": "2026-06-16"
-    },
-    {
-      "name": "CHEN XU",
-      "role": "President",
-      "kind": "sell",
-      "text": "Sale at price 13.20 per share.",
-      "value": 1109,
-      "shares": 84,
-      "date": "2026-06-16"
-    },
-    {
-      "name": "SUN YONGGANG",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 13.20 per share.",
-      "value": 7234,
-      "shares": 548,
-      "date": "2026-06-16"
     },
     {
       "name": "WANG XIEHUA",
@@ -360,6 +333,33 @@
       "text": null,
       "value": null,
       "shares": 4212,
+      "date": "2026-06-16"
+    },
+    {
+      "name": "SUN YONGGANG",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 4212,
+      "date": "2026-06-16"
+    },
+    {
+      "name": "WANG XIEHUA",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 13.20 per share.",
+      "value": 941002,
+      "shares": 71288,
+      "date": "2026-06-16"
+    },
+    {
+      "name": "CHEN XU",
+      "role": "President",
+      "kind": "sell",
+      "text": "Sale at price 13.20 per share.",
+      "value": 1109,
+      "shares": 84,
       "date": "2026-06-16"
     }
   ],

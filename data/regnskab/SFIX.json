@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-09-23T19:54:49.021Z",
+  "updated_at": "2026-09-24T20:07:22.797Z",
   "source": "Yahoo Finance",
   "symbol": "SFIX",
   "summary": "Stitch Fix, Inc. engages in the provision of clothing and accessories in the United States. The company offers women's, men's, kids, petite, maternity, and plus apparel, and shoes, as well as personal styling services through its website and mobile application. Its products include denim, dresses, blouses, skirts, shoes, jewelry, and handbags under the Stitch Fix brand. The company was formerly known as rack habit inc. and changed its name to Stitch Fix, Inc. in October 2011. Stitch Fix, Inc. was incorporated in 2011 and is headquartered in San Francisco, California.",
   "industry": "Apparel Retail",
   "website": "https://www.stitchfix.com",
-  "employees": 4165,
+  "employees": null,
   "ceo": "Mr. Matthew H. Baer",
-  "next_earnings": "2026-09-23",
-  "earnings_estimated": false,
+  "next_earnings": "2026-12-03",
+  "earnings_estimated": true,
   "earnings_call": "2026-09-23",
-  "eps_estimate": -0.05525,
+  "eps_estimate": -0.03,
   "analysts": {
     "strong_buy": 0,
     "buy": 2,
@@ -24,12 +24,6 @@
   "target_low": 3,
   "target_analysts": 5,
   "statements": [
-    {
-      "year": "2022",
-      "revenue": 2072812000,
-      "net": -207121000,
-      "margin": -10
-    },
     {
       "year": "2023",
       "revenue": 1638423000,
@@ -47,14 +41,15 @@
       "revenue": 1267171000,
       "net": -28739000,
       "margin": -2.3
+    },
+    {
+      "year": "2026",
+      "revenue": 1348119000,
+      "net": -12606000,
+      "margin": -0.9
     }
   ],
   "quarterly": [
-    {
-      "q": "2Q2025",
-      "revenue": 311227000,
-      "earnings": -8576000
-    },
     {
       "q": "3Q2025",
       "revenue": 342127000,
@@ -69,15 +64,41 @@
       "q": "1Q2026",
       "revenue": 340277000,
       "earnings": -1525000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 324418000,
+      "earnings": -2065000
     }
   ],
   "growth": {
-    "q0": 0.1174,
-    "q1": -0.875,
-    "y0": 0.33400002,
-    "y1": 0.40060002
+    "q0": -0.875,
+    "q1": 0.5,
+    "y0": -0.4225,
+    "y1": 0.9415
   },
   "ratings": [
+    {
+      "date": "2026-09-24",
+      "firm": "UBS",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-09-24",
+      "firm": "Telsey Advisory Group",
+      "from": "Market Perform",
+      "to": "Market Perform",
+      "action": "main"
+    },
+    {
+      "date": "2026-09-24",
+      "firm": "William Blair",
+      "from": "Outperform",
+      "to": "Market Perform",
+      "action": "down"
+    },
     {
       "date": "2026-09-02",
       "firm": "UBS",
@@ -122,27 +143,6 @@
     },
     {
       "date": "2025-12-05",
-      "firm": "Telsey Advisory Group",
-      "from": "Market Perform",
-      "to": "Market Perform",
-      "action": "main"
-    },
-    {
-      "date": "2025-12-01",
-      "firm": "Telsey Advisory Group",
-      "from": "Market Perform",
-      "to": "Market Perform",
-      "action": "main"
-    },
-    {
-      "date": "2025-10-29",
-      "firm": "Telsey Advisory Group",
-      "from": "Market Perform",
-      "to": "Market Perform",
-      "action": "main"
-    },
-    {
-      "date": "2025-09-25",
       "firm": "Telsey Advisory Group",
       "from": "Market Perform",
       "to": "Market Perform",
@@ -227,14 +227,14 @@
     "sells": 13,
     "bought": 674538,
     "sold": 903680,
-    "net_pct": -3.4
+    "net_pct": -3.5
   },
   "extras": {
-    "beta": 2.278,
-    "enterprise_value": 286660320,
-    "ev_ebitda": -2107.796,
-    "ev_revenue": 0.215,
-    "float_shares": 103276950,
+    "beta": null,
+    "enterprise_value": 270732320,
+    "ev_ebitda": 290.485,
+    "ev_revenue": 0.201,
+    "float_shares": 102911724,
     "short_shares": 13364356,
     "short_pct_float": 14.08,
     "short_ratio": 8.9,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 250,
+  "inst_count": 251,
   "eps_history": [
-    {
-      "quarter": "2025-07-31",
-      "estimate": -0.10212,
-      "actual": -0.0626,
-      "surprise_pct": 38.7
-    },
     {
       "quarter": "2025-10-31",
       "estimate": -0.03984,
@@ -269,9 +263,24 @@
       "estimate": -0.05252,
       "actual": -0.01,
       "surprise_pct": 80.96
+    },
+    {
+      "quarter": "2026-07-31",
+      "estimate": -0.05525,
+      "actual": -0.00833,
+      "surprise_pct": 84.92
     }
   ],
   "insiders": [
+    {
+      "name": "BACOS ANTHONY",
+      "role": "Chief Technology Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 2.48 per share.",
+      "value": 124000,
+      "shares": 50000,
+      "date": "2026-08-03"
+    },
     {
       "name": "BACOS ANTHONY",
       "role": "Chief Technology Officer",
@@ -288,7 +297,7 @@
       "text": "Conversion of Exercise of derivative security at price 2.48 per share.",
       "value": 124000,
       "shares": 50000,
-      "date": "2026-08-03"
+      "date": "2026-07-27"
     },
     {
       "name": "BACOS ANTHONY",
@@ -306,7 +315,7 @@
       "text": "Conversion of Exercise of derivative security at price 2.48 per share.",
       "value": 124000,
       "shares": 50000,
-      "date": "2026-07-27"
+      "date": "2026-07-20"
     },
     {
       "name": "BACOS ANTHONY",
@@ -315,15 +324,6 @@
       "text": "Sale at price 3.79 per share.",
       "value": 265080,
       "shares": 70000,
-      "date": "2026-07-20"
-    },
-    {
-      "name": "BACOS ANTHONY",
-      "role": "Chief Technology Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 2.48 per share.",
-      "value": 124000,
-      "shares": 50000,
       "date": "2026-07-20"
     },
     {
@@ -338,6 +338,15 @@
     {
       "name": "BACOS ANTHONY",
       "role": "Chief Technology Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 2.48 per share.",
+      "value": 124000,
+      "shares": 50000,
+      "date": "2026-07-13"
+    },
+    {
+      "name": "BACOS ANTHONY",
+      "role": "Chief Technology Officer",
       "kind": "sell",
       "text": "Sale at price 3.62 per share.",
       "value": 253144,
@@ -346,20 +355,11 @@
     },
     {
       "name": "BACOS ANTHONY",
-      "role": "Chief Technology Officer",
+      "role": "Officer",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 2.48 per share.",
       "value": 124000,
       "shares": 50000,
-      "date": "2026-07-13"
-    },
-    {
-      "name": "AUFDERHAAR DAVID",
-      "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 3.79 per share.",
-      "value": 257432,
-      "shares": 67960,
       "date": "2026-07-06"
     }
   ],

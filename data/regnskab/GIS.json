@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T19:54:48.101Z",
+  "updated_at": "2026-09-24T20:07:21.489Z",
   "source": "Yahoo Finance",
   "symbol": "GIS",
   "summary": "General Mills, Inc. manufactures and markets branded consumer food in the United States and internationally. The company operates through four segments: North America Retail; International; North America Pet; and North America Foodservice. It offers snacks, including grain, fruit and savory snacks, nutrition bars, and frozen hot snacks; ready-to-eat cereal; convenient meals comprising meal kits, ethnic meals, pizza, soup, side dish mixes, frozen breakfast, and frozen entrees; wholesome natural pet food; refrigerated and frozen dough; baking mixes and ingredients; and ice cream products. The company also offers dog and cat food, such as dry food, wet food, fresh food, and treats. In addition, it operates 232 and franchises 376 ice cream parlors. The company markets its products under the Annie's, Betty Crocker, Bisquick, Blue Buffalo, Bugles, Cascadian Farm, Cheerios, Chex, Cinnamon Toast Crunch, Cocoa Puffs, Cookie Crisp, Dunkaroos, Edgard & Cooper, Fiber One, Fruit by the Foot, Fruit Gushers, Fruit Roll-Ups, Gardetto's, Gold Medal, Golden Grahams, Häagen-Dazs, Kitano, Kix, Lärabar, Latina, Lucky Charms, Nature Valley, Nudges, Oatmeal Crisp, Old El Paso, Pillsbury, Progresso, Tastefuls, Tiki Pets, Total, Totino's, Trix, True Solutions, Wanchai Ferry, Wheaties, Wilderness, and Yoki brands. It sells its products to grocery stores, mass merchandisers, membership stores, natural food chains, drug, dollar and discount chains, e-commerce retailers, commercial and noncommercial foodservice distributors and operators, restaurants, convenience stores, and pet specialty stores. The company was founded in 1866 and is headquartered in Minneapolis, Minnesota.",
@@ -7,10 +7,10 @@
   "website": "https://www.generalmills.com",
   "employees": 30000,
   "ceo": "Mr. Jeffrey L. Harmening",
-  "next_earnings": "2026-09-23",
-  "earnings_estimated": false,
+  "next_earnings": "2026-12-23",
+  "earnings_estimated": true,
   "earnings_call": "2026-09-23",
-  "eps_estimate": 0.98478,
+  "eps_estimate": 0.96343,
   "analysts": {
     "strong_buy": 3,
     "buy": 1,
@@ -19,7 +19,7 @@
     "strong_sell": 2,
     "total": 20
   },
-  "target_mean": 37.66667,
+  "target_mean": 37.44444,
   "target_high": 47,
   "target_low": 31,
   "target_analysts": 18,
@@ -72,12 +72,26 @@
     }
   ],
   "growth": {
-    "q0": -0.1047,
-    "q1": 0.019199999,
-    "y0": -0.1349,
-    "y1": 0.038
+    "q0": -0.1242,
+    "q1": 0.0651,
+    "y0": -0.1322,
+    "y1": 0.0295
   },
   "ratings": [
+    {
+      "date": "2026-09-24",
+      "firm": "RBC Capital",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "reit"
+    },
+    {
+      "date": "2026-09-24",
+      "firm": "TD Cowen",
+      "from": "Hold",
+      "to": "Hold",
+      "action": "main"
+    },
     {
       "date": "2026-09-21",
       "firm": "RBC Capital",
@@ -132,20 +146,6 @@
       "firm": "TD Cowen",
       "from": "Hold",
       "to": "Hold",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-02",
-      "firm": "B of A Securities",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-02",
-      "firm": "Wells Fargo",
-      "from": "Underweight",
-      "to": "Underweight",
       "action": "main"
     }
   ],
@@ -227,14 +227,14 @@
     "sells": 2,
     "bought": 546779,
     "sold": 27995,
-    "net_pct": 52.9
+    "net_pct": 52.4
   },
   "extras": {
     "beta": -0.025,
-    "enterprise_value": 32418762752,
-    "ev_ebitda": 9.398,
-    "ev_revenue": 1.76,
-    "float_shares": 531723001,
+    "enterprise_value": 32445566976,
+    "ev_ebitda": 9.501,
+    "ev_revenue": 1.773,
+    "float_shares": 535400872,
     "short_shares": 45998941,
     "short_pct_float": 11.2,
     "short_ratio": 5.6,

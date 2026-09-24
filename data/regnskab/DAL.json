@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T19:54:47.771Z",
+  "updated_at": "2026-09-24T20:07:20.991Z",
   "source": "Yahoo Finance",
   "symbol": "DAL",
   "summary": "Delta Air Lines, Inc. provides scheduled air transportation for passengers and cargo in the United States and internationally. The company operates through two segments, Airline and Refinery. Its domestic network centered on core hubs in Atlanta, Detroit, Minneapolis-St. Paul, and Salt Lake City, as well as coastal hub positions in Boston, Los Angeles, New York-LaGuardia, New York-JFK, and Seattle; and international network centered on hubs and market presence in Amsterdam, Bogota, Lima, Mexico City, London-Heathrow, Paris-Charles de Gaulle, Santiago (Chile), Sao Paulo, Seoul-Incheon, and Tokyo. It also provides aircraft maintenance and engineering support, repair, and overhaul services; and vacation packages. The company operates through a fleet of approximately 1,314 aircraft. Delta Air Lines, Inc. was founded in 1924 and is headquartered in Atlanta, Georgia.",
@@ -23,8 +23,54 @@
   "target_high": 125,
   "target_low": 50,
   "target_analysts": 24,
-  "statements": null,
-  "quarterly": [],
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 50582000000,
+      "net": 1318000000,
+      "margin": 2.6
+    },
+    {
+      "year": "2023",
+      "revenue": 58048000000,
+      "net": 4609000000,
+      "margin": 7.9
+    },
+    {
+      "year": "2024",
+      "revenue": 61643000000,
+      "net": 3457000000,
+      "margin": 5.6
+    },
+    {
+      "year": "2025",
+      "revenue": 63364000000,
+      "net": 5005000000,
+      "margin": 7.9
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 16673000000,
+      "earnings": 1417000000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 16003000000,
+      "earnings": 1219000000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 15854000000,
+      "earnings": -289000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 19757000000,
+      "earnings": 1604000000
+    }
+  ],
   "growth": {
     "q0": 0.1821,
     "q1": 0.2865,
@@ -32,6 +78,13 @@
     "y1": 0.36259997
   },
   "ratings": [
+    {
+      "date": "2026-09-24",
+      "firm": "UBS",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-09-18",
       "firm": "Rothschild & Co",
@@ -93,13 +146,6 @@
       "firm": "JP Morgan",
       "from": "Overweight",
       "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-13",
-      "firm": "Citigroup",
-      "from": "Buy",
-      "to": "Buy",
       "action": "main"
     }
   ],
@@ -185,9 +231,9 @@
   },
   "extras": {
     "beta": 1.291,
-    "enterprise_value": 71308533760,
-    "ev_ebitda": 9.499,
-    "ev_revenue": 1.044,
+    "enterprise_value": 69889204224,
+    "ev_ebitda": 9.31,
+    "ev_revenue": 1.023,
     "float_shares": 649739825,
     "short_shares": 25258577,
     "short_pct_float": 3.86,

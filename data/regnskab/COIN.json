@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T19:54:47.690Z",
+  "updated_at": "2026-09-24T20:07:20.877Z",
   "source": "Yahoo Finance",
   "symbol": "COIN",
   "summary": "Coinbase Global, Inc. operates platform for crypto assets in the United States and internationally. It provides the primary financial account in the crypto economy for consumers; a brokerage platform with a pool of liquidity across the crypto marketplace for institutions; and a suite of products granting access to build onchain for developers. The company was founded in 2012 and is based in New York, New York.",
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 18,
-    "sells": 11,
+    "sells": 13,
     "bought": 145922,
-    "sold": 111203,
-    "net_pct": 1
+    "sold": 157071,
+    "net_pct": -0.3
   },
   "extras": {
     "beta": 3.388,
-    "enterprise_value": 50929135616,
-    "ev_ebitda": 72.803,
-    "ev_revenue": 8.427,
+    "enterprise_value": 50153455616,
+    "ev_ebitda": 71.694,
+    "ev_revenue": 8.298,
     "float_shares": 219744496,
     "short_shares": 27378540,
     "short_pct_float": 12.45,
@@ -272,6 +272,24 @@
     }
   ],
   "insiders": [
+    {
+      "name": "ANDREESSEN MARC L",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 205.05 per share.",
+      "value": 1402132,
+      "shares": 6838,
+      "date": "2026-09-21"
+    },
+    {
+      "name": "HAAS ALESIA J",
+      "role": "Chief Financial Officer",
+      "kind": "sell",
+      "text": "Sale at price 203.67 - 207.10 per share.",
+      "value": 8010634,
+      "shares": 39030,
+      "date": "2026-09-21"
+    },
     {
       "name": "ANDREESSEN MARC L",
       "role": "Director",
@@ -318,6 +336,15 @@
       "date": "2026-08-20"
     },
     {
+      "name": "JONES JENNIFER N",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 4564,
+      "date": "2026-08-20"
+    },
+    {
       "name": "LEHANE CHRIS",
       "role": "Director",
       "kind": "other",
@@ -334,33 +361,6 @@
       "value": null,
       "shares": 36376,
       "date": "2026-08-20"
-    },
-    {
-      "name": "JONES JENNIFER N",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 4564,
-      "date": "2026-08-20"
-    },
-    {
-      "name": "WILSON FREDERICK R",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 142.01 - 151.91 per share.",
-      "value": 5060841,
-      "shares": 35068,
-      "date": "2026-08-03"
-    },
-    {
-      "name": "WILSON FREDERICK R",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 146.53 - 163.44 per share.",
-      "value": 1590926,
-      "shares": 10000,
-      "date": "2026-07-01"
     }
   ],
   "dividends": [],

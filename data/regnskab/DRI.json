@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T19:54:47.830Z",
+  "updated_at": "2026-09-24T20:07:21.106Z",
   "source": "Yahoo Finance",
   "symbol": "DRI",
   "summary": "Darden Restaurants, Inc., together with its subsidiaries, owns and operates full-service restaurants in the United States and Canada. The company operates under Olive Garden, LongHorn Steakhouse, Cheddar's Scratch Kitchen, Chuy's, Yard House, Ruth's Chris Steak House, The Capital Grille, Seasons 52, Eddie V's Prime Seafood, Bahama Breeze, The Capital Burger, Darden and Darden Restaurants brand names. Darden Restaurants, Inc. was founded in 1938 and is based in Orlando, Florida.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-09-24",
   "earnings_estimated": false,
   "earnings_call": "2026-09-24",
-  "eps_estimate": 2.05345,
+  "eps_estimate": 2.32,
   "analysts": {
     "strong_buy": 2,
     "buy": 16,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 3044700000,
-      "earnings": 257800000
-    },
-    {
       "q": "4Q2025",
       "revenue": 3102100000,
       "earnings": 237200000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 3718800000,
       "earnings": 404900000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 3200300000,
+      "earnings": 233400000
     }
   ],
   "growth": {
-    "q0": 0.0424,
-    "q1": 0.1019,
-    "y0": 0.060300004,
-    "y1": 0.098900005
+    "q0": 0.1154,
+    "q1": 0.105100006,
+    "y0": 0.062,
+    "y1": 0.097200006
   },
   "ratings": [
+    {
+      "date": "2026-09-24",
+      "firm": "TD Cowen",
+      "from": "Hold",
+      "to": "Hold",
+      "action": "reit"
+    },
     {
       "date": "2026-09-21",
       "firm": "Freedom Capital Markets",
@@ -137,13 +144,6 @@
     {
       "date": "2026-06-30",
       "firm": "Argus Research",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-06-26",
-      "firm": "UBS",
       "from": "Buy",
       "to": "Buy",
       "action": "main"
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 17,
-    "sells": 12,
+    "sells": 11,
     "bought": 146635,
-    "sold": 88235,
-    "net_pct": 20.4
+    "sold": 85902,
+    "net_pct": 21.4
   },
   "extras": {
     "beta": 0.59,
-    "enterprise_value": 32187209728,
-    "ev_ebitda": 15.219,
-    "ev_revenue": 2.436,
+    "enterprise_value": 32204320768,
+    "ev_ebitda": 15.227,
+    "ev_revenue": 2.438,
     "float_shares": 113550929,
     "short_shares": 6652438,
     "short_pct_float": 7.87,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.5747,
   "inst_count": 1453,
   "eps_history": [
-    {
-      "quarter": "2025-08-31",
-      "estimate": 2.01115,
-      "actual": 1.97,
-      "surprise_pct": -2.05
-    },
     {
       "quarter": "2025-11-30",
       "estimate": 2.09721,
@@ -269,6 +263,12 @@
       "estimate": 3.63689,
       "actual": 3.66,
       "surprise_pct": 0.64
+    },
+    {
+      "quarter": "2026-08-31",
+      "estimate": 2.05345,
+      "actual": 2.05,
+      "surprise_pct": -0.17
     }
   ],
   "insiders": [

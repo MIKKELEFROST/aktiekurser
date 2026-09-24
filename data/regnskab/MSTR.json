@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T19:54:48.567Z",
+  "updated_at": "2026-09-24T20:07:22.138Z",
   "source": "Yahoo Finance",
   "symbol": "MSTR",
   "summary": "Strategy Inc, together with its subsidiaries, operates as a bitcoin treasury company in the United States, Europe, the Middle East, Africa, and internationally. It offers investors varying degrees of economic exposure to Bitcoin by offering a range of securities, including equity and fixed income instruments. The company also provides AI-powered enterprise analytics software, including Strategy One, which provides non-technical users with the ability to directly access novel and actionable insights for decision-making. In addition, the company provides Strategy Mosaic, a universal intelligence layer that offers enterprises with consistent definitions and governance across data sources, regardless of where that data resides or which tools access it. The company was formerly known as MicroStrategy Incorporated and changed its name to Strategy Inc in August 2025. The company was incorporated in 1989 and is headquartered in Tysons Corner, Virginia.",
@@ -128,6 +128,13 @@
       "action": "main"
     },
     {
+      "date": "2026-08-10",
+      "firm": "Cantor Fitzgerald",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "reit"
+    },
+    {
       "date": "2026-08-03",
       "firm": "B. Riley Securities",
       "from": "Buy",
@@ -137,13 +144,6 @@
     {
       "date": "2026-08-03",
       "firm": "Cantor Fitzgerald",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-03",
-      "firm": "Barclays",
       "from": "Overweight",
       "to": "Overweight",
       "action": "main"
@@ -223,17 +223,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 39,
-    "sells": 35,
-    "bought": 380001,
-    "sold": 226686,
+    "buys": 40,
+    "sells": 36,
+    "bought": 380476,
+    "sold": 227161,
     "net_pct": 21.7
   },
   "extras": {
     "beta": 3.597,
-    "enterprise_value": 83056181248,
-    "ev_ebitda": -2.285,
-    "ev_revenue": 166.663,
+    "enterprise_value": 81085104128,
+    "ev_ebitda": -2.23,
+    "ev_revenue": 162.708,
     "float_shares": 363658147,
     "short_shares": 32622124,
     "short_pct_float": 8.65,
@@ -272,6 +272,24 @@
     }
   ],
   "insiders": [
+    {
+      "name": "PATTEN JARROD MICHAEL",
+      "role": "Director",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 18.24 per share.",
+      "value": 8662,
+      "shares": 475,
+      "date": "2026-09-22"
+    },
+    {
+      "name": "PATTEN JARROD MICHAEL",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 171.00 per share.",
+      "value": 81225,
+      "shares": 475,
+      "date": "2026-09-22"
+    },
     {
       "name": "PATTEN JARROD MICHAEL",
       "role": "Director",
@@ -343,24 +361,6 @@
       "value": 389146,
       "shares": 3800,
       "date": "2026-08-07"
-    },
-    {
-      "name": "PATTEN JARROD MICHAEL",
-      "role": "Director",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 18.24 per share.",
-      "value": 71120,
-      "shares": 3900,
-      "date": "2026-07-27"
-    },
-    {
-      "name": "PATTEN JARROD MICHAEL",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 92.46 - 98.48 per share.",
-      "value": 372323,
-      "shares": 3900,
-      "date": "2026-07-27"
     }
   ],
   "dividends": [],

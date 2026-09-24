@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T19:54:48.036Z",
+  "updated_at": "2026-09-24T20:07:21.415Z",
   "source": "Yahoo Finance",
   "symbol": "FRVO",
   "summary": "Fervo Energy Company builds, owns, and operates geothermal power facilities in the United States. Fervo Energy Company was incorporated in 2017 and is headquartered in Houston, Texas.",
@@ -13,16 +13,16 @@
   "eps_estimate": -0.05,
   "analysts": {
     "strong_buy": 4,
-    "buy": 8,
+    "buy": 9,
     "hold": 1,
     "sell": 0,
     "strong_sell": 0,
-    "total": 13
+    "total": 14
   },
-  "target_mean": 40.75,
+  "target_mean": 40.30769,
   "target_high": 51,
   "target_low": 25,
-  "target_analysts": 12,
+  "target_analysts": 13,
   "statements": [
     {
       "year": "2025",
@@ -36,6 +36,11 @@
       "q": "1Q2026",
       "revenue": 61000,
       "earnings": 0
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 113000,
+      "earnings": -59527000
     }
   ],
   "growth": {
@@ -45,6 +50,20 @@
     "y1": 0.3125
   },
   "ratings": [
+    {
+      "date": "2026-09-24",
+      "firm": "Johnson Rice",
+      "from": null,
+      "to": "Buy",
+      "action": "init"
+    },
+    {
+      "date": "2026-09-24",
+      "firm": "Bernstein",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "reit"
+    },
     {
       "date": "2026-09-10",
       "firm": "Northland Capital Markets",
@@ -99,20 +118,6 @@
       "firm": "Bernstein",
       "from": null,
       "to": "Outperform",
-      "action": "init"
-    },
-    {
-      "date": "2026-06-12",
-      "firm": "Roth Capital",
-      "from": null,
-      "to": "Buy",
-      "action": "init"
-    },
-    {
-      "date": "2026-06-08",
-      "firm": "Piper Sandler",
-      "from": null,
-      "to": "Overweight",
       "action": "init"
     }
   ],
@@ -198,9 +203,9 @@
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 3264796928,
-    "ev_ebitda": -42.54,
-    "ev_revenue": 10464.093,
+    "enterprise_value": 3238268416,
+    "ev_ebitda": -42.194,
+    "ev_revenue": 10379.065,
     "float_shares": 183834964,
     "short_shares": 9570437,
     "short_pct_float": null,
