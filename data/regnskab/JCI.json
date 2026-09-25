@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T20:07:21.797Z",
+  "updated_at": "2026-09-25T20:15:44.093Z",
   "source": "Yahoo Finance",
   "symbol": "JCI",
   "summary": "Johnson Controls International plc, together with its subsidiaries, engages in engineering, manufacturing, commissioning, and retrofitting building products and systems in the Americas, Europe, the Middle East, Africa, and the Asia-Pacific. The company designs, manufactures, sells, installs, and services heating, ventilating, air conditioning, controls, building management, refrigeration, integrated electronic security, integrated fire detection and suppression systems, and digital solutions. It also provides energy solutions and technical services, including inspection, scheduled maintenance, and repair and replacement of mechanical and control systems, as well as data-driven building solutions. It sells its products and services to commercial, residential security, institutional, industrial, data center, marine, and governmental customers. Johnson Controls International plc was incorporated in 1885 and is based in Cork, Ireland.",
@@ -10,19 +10,19 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": true,
   "earnings_call": "2026-07-29",
-  "eps_estimate": 1.57525,
+  "eps_estimate": 1.57496,
   "analysts": {
     "strong_buy": 1,
-    "buy": 10,
+    "buy": 11,
     "hold": 8,
     "sell": 0,
     "strong_sell": 2,
-    "total": 21
+    "total": 22
   },
-  "target_mean": 164.05263,
+  "target_mean": 165.15,
   "target_high": 194,
   "target_low": 129,
-  "target_analysts": 19,
+  "target_analysts": 20,
   "statements": [
     {
       "year": "2022",
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.2502,
-    "q1": 0.2518,
-    "y0": 0.3469,
-    "y1": 0.1991
+    "q0": 0.25,
+    "q1": 0.25129998,
+    "y0": 0.3471,
+    "y1": 0.1996
   },
   "ratings": [
+    {
+      "date": "2026-09-25",
+      "firm": "Wells Fargo",
+      "from": null,
+      "to": "Overweight",
+      "action": "init"
+    },
     {
       "date": "2026-09-02",
       "firm": "Morgan Stanley",
@@ -139,13 +146,6 @@
       "firm": "UBS",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-05-07",
-      "firm": "Citigroup",
-      "from": "Neutral",
-      "to": "Neutral",
       "action": "main"
     }
   ],
@@ -231,20 +231,20 @@
   },
   "extras": {
     "beta": 1.304,
-    "enterprise_value": 97244684288,
-    "ev_ebitda": 22.484,
-    "ev_revenue": 3.891,
+    "enterprise_value": 96917577728,
+    "ev_ebitda": 22.409,
+    "ev_revenue": 3.877,
     "float_shares": 603803097,
-    "short_shares": 10219142,
-    "short_pct_float": 2.15,
-    "short_ratio": 3.32,
+    "short_shares": 10009489,
+    "short_pct_float": 2.11,
+    "short_ratio": 3.14,
     "last_split": "955:1000",
     "last_split_date": "2016-09-06"
   },
   "ex_dividend": "2026-09-21",
   "dividend_date": null,
   "payout_ratio": 0.45069999,
-  "inst_count": 2204,
+  "inst_count": 2203,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -271,7 +271,98 @@
       "surprise_pct": 9.01
     }
   ],
-  "insiders": [],
+  "insiders": [
+    {
+      "name": "COHADE PIERRE E",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 147.79 per share.",
+      "value": 487707,
+      "shares": 3300,
+      "date": "2026-08-19"
+    },
+    {
+      "name": "SCHLITZ LEI ZHANG",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 152.98 - 153.79 per share.",
+      "value": 3584358,
+      "shares": 23417,
+      "date": "2026-08-04"
+    },
+    {
+      "name": "GRABOWSKI TODD M",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 146.20 per share.",
+      "value": 263160,
+      "shares": 1800,
+      "date": "2026-06-09"
+    },
+    {
+      "name": "ESTEVES IRENE M",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 937,
+      "date": "2026-06-08"
+    },
+    {
+      "name": "GRABOWSKI TODD M",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 145.50 per share.",
+      "value": 621867,
+      "shares": 4274,
+      "date": "2026-05-14"
+    },
+    {
+      "name": "SCHLITZ LEI ZHANG",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 53.52 - 66.77 per share.",
+      "value": 3859731,
+      "shares": 62771,
+      "date": "2026-05-08"
+    },
+    {
+      "name": "SCHLITZ LEI ZHANG",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 140.51 - 141.55 per share.",
+      "value": 12521445,
+      "shares": 88809,
+      "date": "2026-05-08"
+    },
+    {
+      "name": "DUNBAR WEBSTER ROY",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 1285,
+      "date": "2026-03-04"
+    },
+    {
+      "name": "HAGGERTY GRETCHEN R",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 1285,
+      "date": "2026-03-04"
+    },
+    {
+      "name": "KHANNA AYESHA",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 1285,
+      "date": "2026-03-04"
+    }
+  ],
   "dividends": [
     {
       "date": "2016-08-03",

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T20:07:20.497Z",
+  "updated_at": "2026-09-25T20:15:43.106Z",
   "source": "Yahoo Finance",
   "symbol": "BB",
   "summary": "BlackBerry Limited provides intelligent software and services to enterprises and governments worldwide. The company operates through three segments: Secure Communications, QNX, and Licensing. The company offers BlackBerry Dynamics, a development platform and secure container for mobile applications; BlackBerry Workspaces a secure Enterprise File Sync and Share (EFSS) solution; BlackBerry Messenger (BBM) Enterprise, an enterprise-grade secure instant messaging solution for messaging, voice, and video; BlackBerry SecuSUITE, a multi-OS voice and text messaging solution; BlackBerry AtHoc, a secure networked critical event management solution; and BlackBerry unified endpoint management (UEM) solutions. It also provides BlackBerry Certicom, a patented elliptic curve cryptography, which provides device security, anti-counterfeiting, and product authentication solutions; BlackBerry Radar offers asset monitoring and telematics solutions for transportation and logistics; and BlackBerry Development Platform, an enterprise-grade toolset. In addition, the company offers enterprise consulting and engineering consulting services. Further, it is involved in patent licensing. The company was formerly known as Research In Motion Limited and changed its name to BlackBerry Limited in July 2013. BlackBerry Limited was incorporated in 1984 and is headquartered in Waterloo, Canada.",
@@ -7,10 +7,10 @@
   "website": "https://www.blackberry.com",
   "employees": 1749,
   "ceo": "Mr. John Joseph Giamatteo",
-  "next_earnings": "2026-09-24",
+  "next_earnings": "2026-12-17",
   "earnings_estimated": false,
   "earnings_call": "2026-09-24",
-  "eps_estimate": 0.048,
+  "eps_estimate": 0.04667,
   "analysts": {
     "strong_buy": 1,
     "buy": 1,
@@ -19,9 +19,9 @@
     "strong_sell": 1,
     "total": 8
   },
-  "target_mean": 9.71429,
+  "target_mean": 9.8,
   "target_high": 13,
-  "target_low": 5.2,
+  "target_low": 6.6,
   "target_analysts": 7,
   "statements": [
     {
@@ -72,12 +72,26 @@
     }
   ],
   "growth": {
-    "q0": -0.04,
-    "q1": 0,
-    "y0": 0.17860001,
-    "y1": 0.21209998
+    "q0": -0.066599995,
+    "q1": -0.1333,
+    "y0": 0.3021,
+    "y1": 0.1109
   },
   "ratings": [
+    {
+      "date": "2026-09-25",
+      "firm": "Canaccord Genuity",
+      "from": "Hold",
+      "to": "Hold",
+      "action": "main"
+    },
+    {
+      "date": "2026-09-25",
+      "firm": "RBC Capital",
+      "from": "Sector Perform",
+      "to": "Sector Perform",
+      "action": "reit"
+    },
     {
       "date": "2026-09-21",
       "firm": "RBC Capital",
@@ -129,20 +143,6 @@
     },
     {
       "date": "2026-04-10",
-      "firm": "Canaccord Genuity",
-      "from": "Hold",
-      "to": "Hold",
-      "action": "main"
-    },
-    {
-      "date": "2026-04-10",
-      "firm": "RBC Capital",
-      "from": "Sector Perform",
-      "to": "Sector Perform",
-      "action": "reit"
-    },
-    {
-      "date": "2025-12-19",
       "firm": "Canaccord Genuity",
       "from": "Hold",
       "to": "Hold",
@@ -230,14 +230,14 @@
     "net_pct": null
   },
   "extras": {
-    "beta": 1.437,
-    "enterprise_value": 4781721600,
-    "ev_ebitda": 51.416,
-    "ev_revenue": 8.24,
-    "float_shares": 584641041,
-    "short_shares": 36175931,
-    "short_pct_float": 6.19,
-    "short_ratio": 3.61,
+    "beta": null,
+    "enterprise_value": 4968291840,
+    "ev_ebitda": 42.319,
+    "ev_revenue": 8.092,
+    "float_shares": 585570569,
+    "short_shares": 37626695,
+    "short_pct_float": 6.42,
+    "short_ratio": 4.22,
     "last_split": "3:1",
     "last_split_date": "2007-08-21"
   },
@@ -273,35 +273,17 @@
   ],
   "insiders": [
     {
-      "name": "Kurtz (Philip Simon)",
-      "role": "Senior Officer of Issuer",
-      "kind": "other",
-      "text": "Disposition in the public market at price 11.33 per share.",
-      "value": 339810,
+      "name": "KURTZ PHILIP SIMON",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 11.32 per share.",
+      "value": 339600,
       "shares": 30000,
       "date": "2026-07-14"
     },
     {
-      "name": "Armstrong-Owen (Jennifer)",
-      "role": "Senior Officer of Issuer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 7636,
-      "date": "2026-07-09"
-    },
-    {
-      "name": "Armstrong-Owen (Jennifer)",
-      "role": "Senior Officer of Issuer",
-      "kind": "other",
-      "text": "Disposition in the public market at price 10.92 per share.",
-      "value": 36005,
-      "shares": 3296,
-      "date": "2026-07-09"
-    },
-    {
-      "name": "Foote (Tim)",
-      "role": "Senior Officer of Issuer",
+      "name": "FOOTE TIM",
+      "role": "Chief Financial Officer",
       "kind": "other",
       "text": null,
       "value": null,
@@ -309,58 +291,76 @@
       "date": "2026-07-09"
     },
     {
-      "name": "Foote (Tim)",
-      "role": "Senior Officer of Issuer",
-      "kind": "other",
-      "text": "Disposition in the public market at price 10.92 per share.",
-      "value": 89959,
+      "name": "FOOTE TIM",
+      "role": "Chief Financial Officer",
+      "kind": "sell",
+      "text": "Sale at price 10.92 per share.",
+      "value": 89926,
       "shares": 8235,
       "date": "2026-07-09"
     },
     {
-      "name": "Giamatteo (John Joseph)",
-      "role": "Senior Officer of Issuer",
-      "kind": "other",
-      "text": "Disposition in the public market at price 11.20 per share.",
-      "value": 1120,
-      "shares": 100,
+      "name": "KURTZ PHILIP SIMON",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 11.07 per share.",
+      "value": 71003,
+      "shares": 6414,
       "date": "2026-07-09"
     },
     {
-      "name": "Giamatteo (John Joseph)",
-      "role": "Senior Officer of Issuer",
-      "kind": "other",
-      "text": "Disposition in the public market at price 11.22 per share.",
-      "value": 2244,
-      "shares": 200,
+      "name": "ARMSTRONG-OWEN JENNIFER",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 10.92 per share.",
+      "value": 35992,
+      "shares": 3296,
       "date": "2026-07-09"
     },
     {
-      "name": "Giamatteo (John Joseph)",
-      "role": "Senior Officer of Issuer",
-      "kind": "other",
-      "text": "Disposition in the public market at price 11.23 per share.",
-      "value": 8984,
-      "shares": 800,
+      "name": "GIAMATTEO JOHN JOSEPH",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 10.92 - 11.45 per share.",
+      "value": 3100357,
+      "shares": 277012,
       "date": "2026-07-09"
     },
     {
-      "name": "Giamatteo (John Joseph)",
-      "role": "Senior Officer of Issuer",
+      "name": "GIAMATTEO JOHN JOSEPH",
+      "role": "Chief Executive Officer",
       "kind": "other",
-      "text": "Disposition in the public market at price 11.24 per share.",
-      "value": 7868,
-      "shares": 700,
+      "text": null,
+      "value": null,
+      "shares": 61082,
       "date": "2026-07-09"
     },
     {
-      "name": "Giamatteo (John Joseph)",
-      "role": "Senior Officer of Issuer",
+      "name": "KURTZ PHILIP SIMON",
+      "role": "Officer",
       "kind": "other",
-      "text": "Disposition in the public market at price 11.27 per share.",
-      "value": 4508,
-      "shares": 400,
+      "text": null,
+      "value": null,
+      "shares": 10908,
       "date": "2026-07-09"
+    },
+    {
+      "name": "ARMSTRONG-OWEN JENNIFER",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 7636,
+      "date": "2026-07-09"
+    },
+    {
+      "name": "FOOTE TIM",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 7375,
+      "date": "2026-07-02"
     }
   ],
   "dividends": [],

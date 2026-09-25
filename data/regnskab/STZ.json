@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T20:07:22.971Z",
+  "updated_at": "2026-09-25T20:15:44.913Z",
   "source": "Yahoo Finance",
   "symbol": "STZ",
   "summary": "Constellation Brands, Inc., together with its subsidiaries, produces, imports, markets, and sells beer, wine, and spirits in the United States, Canada, Mexico, New Zealand, and Italy. It offers beer under the Corona Extra, Corona Familiar, Corona Sunbrew, Corona Light, Corona Non-Alcoholic, Corona Premier, Modelo Especial, Modelo Chelada, Modelo Negra, Modelo Spiked Aguas Frescas, Modelo Oro, Modelo Noche Especial, Victoria, Vicky Chamoy, and Pacifico brand names. The company also offers wine under the Sea Smoke, Schrader Cellars, Kim Crawford, Mount Veeder, Ruffino, My Favorite Neighbor, Robert Mondavi Winery, and The Prisoner Wine Company brand names; and spirits under the Casa Noble, High West, Mi CAMPO, and Nelson's Green Brier brand names. It provides its products to wholesale distributors, retailers, and state alcohol beverage control agencies. Constellation Brands, Inc. was founded in 1945 and is headquartered in Rochester, New York.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-06",
   "earnings_estimated": false,
   "earnings_call": "2026-10-07",
-  "eps_estimate": 3.55356,
+  "eps_estimate": 3.55014,
   "analysts": {
     "strong_buy": 3,
     "buy": 11,
@@ -19,7 +19,7 @@
     "strong_sell": 2,
     "total": 24
   },
-  "target_mean": 165.47826,
+  "target_mean": 164.08696,
   "target_high": 209,
   "target_low": 110,
   "target_analysts": 23,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": -0.0211,
-    "q1": -0.0758,
-    "y0": -0.0068,
-    "y1": 0.0467
+    "q0": -0.022,
+    "q1": -0.077199996,
+    "y0": -0.0076,
+    "y1": 0.045700002
   },
   "ratings": [
+    {
+      "date": "2026-09-25",
+      "firm": "JP Morgan",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-09-23",
       "firm": "UBS",
@@ -140,13 +147,6 @@
       "from": "Hold",
       "to": "Hold",
       "action": "main"
-    },
-    {
-      "date": "2026-07-02",
-      "firm": "BMO Capital",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "reit"
     }
   ],
   "holders": [
@@ -231,13 +231,13 @@
   },
   "extras": {
     "beta": 0.4,
-    "enterprise_value": 30636019712,
-    "ev_ebitda": 8.865,
-    "ev_revenue": 3.383,
+    "enterprise_value": 30233044992,
+    "ev_ebitda": 8.748,
+    "ev_revenue": 3.338,
     "float_shares": 157811178,
-    "short_shares": 8176016,
-    "short_pct_float": 5.46,
-    "short_ratio": 4.85,
+    "short_shares": 8516727,
+    "short_pct_float": 5.69,
+    "short_ratio": 4.03,
     "last_split": "2:1",
     "last_split_date": "2005-05-16"
   },
@@ -273,6 +273,42 @@
   ],
   "insiders": [
     {
+      "name": "FLATLEY EDITH MORGAN",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 187,
+      "date": "2026-07-10"
+    },
+    {
+      "name": "HERNANDEZ ERNESTO M.",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 1114,
+      "date": "2026-07-10"
+    },
+    {
+      "name": "ZARAMELLA LUCA",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 1114,
+      "date": "2026-07-10"
+    },
+    {
+      "name": "FINK NICHOLAS I.",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 1114,
+      "date": "2026-07-10"
+    },
+    {
       "name": "CLARK CHRISTY",
       "role": "Director",
       "kind": "other",
@@ -291,7 +327,7 @@
       "date": "2026-07-10"
     },
     {
-      "name": "ZARAMELLA LUCA",
+      "name": "GILES WILLIAM T",
       "role": "Director",
       "kind": "other",
       "text": null,
@@ -309,25 +345,7 @@
       "date": "2026-07-10"
     },
     {
-      "name": "DANIELS JENNIFER M.",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 1114,
-      "date": "2026-07-10"
-    },
-    {
-      "name": "FINK NICHOLAS I.",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 1114,
-      "date": "2026-07-10"
-    },
-    {
-      "name": "HERNANDEZ ERNESTO M.",
+      "name": "MCCARTHY DANIEL J",
       "role": "Director",
       "kind": "other",
       "text": null,
@@ -338,24 +356,6 @@
     {
       "name": "SANDS ROBERT S",
       "role": "Director and Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 1114,
-      "date": "2026-07-10"
-    },
-    {
-      "name": "MCCARTHY DANIEL J",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 1114,
-      "date": "2026-07-10"
-    },
-    {
-      "name": "GILES WILLIAM T",
-      "role": "Director",
       "kind": "other",
       "text": null,
       "value": null,

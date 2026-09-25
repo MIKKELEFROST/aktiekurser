@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T20:07:23.095Z",
+  "updated_at": "2026-09-25T20:15:45.376Z",
   "source": "Yahoo Finance",
   "symbol": "TOL",
   "summary": "Toll Brothers, Inc., together with its subsidiaries, designs, builds, markets, sells, and arranges finance for a range of detached and attached homes in luxury residential communities in the United States. It designs, builds, markets, and sells condominiums through Toll Brothers City Living. The company also develops a range of single-story living and first-floor primary bedroom suite home designs, as well as communities with recreational amenities, such as golf courses, marinas, pool complexes, country clubs, and fitness and recreation centers; and develops, operates, rents apartments and student housing communities. In addition, it provides various interior fit-out options, such as flooring, wall tile, plumbing, cabinets, fixtures, appliances, lighting, and home-automation and security technologies. Further, the company owns and operates architectural, engineering, mortgage, title, land development, insurance, smart home technology, landscaping, lumber distribution, house component assembly, and component manufacturing operations. It serves luxury first-time, move-up, empty-nester, active-adult, and second-home buyers. The company was founded in 1967 and is headquartered in Fort Washington, Pennsylvania.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-08-18",
   "earnings_estimated": false,
   "earnings_call": "2026-08-19",
-  "eps_estimate": 4.88725,
+  "eps_estimate": 4.87369,
   "analysts": {
     "strong_buy": 3,
     "buy": 9,
@@ -19,7 +19,7 @@
     "strong_sell": 1,
     "total": 17
   },
-  "target_mean": 171.86667,
+  "target_mean": 171.4,
   "target_high": 195,
   "target_low": 122,
   "target_analysts": 15,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.0671,
-    "q1": -0.1873,
-    "y0": -0.046,
-    "y1": 0.078099996
+    "q0": 0.0641,
+    "q1": -0.1866,
+    "y0": -0.047,
+    "y1": 0.0753
   },
   "ratings": [
+    {
+      "date": "2026-09-25",
+      "firm": "Evercore ISI Group",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
     {
       "date": "2026-08-28",
       "firm": "Keefe, Bruyette & Woods",
@@ -140,13 +147,6 @@
       "from": "Market Perform",
       "to": "Outperform",
       "action": "up"
-    },
-    {
-      "date": "2026-05-21",
-      "firm": "UBS",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
     }
   ],
   "holders": [
@@ -231,13 +231,13 @@
   },
   "extras": {
     "beta": 1.332,
-    "enterprise_value": 14330379264,
-    "ev_ebitda": 8.519,
-    "ev_revenue": 1.332,
+    "enterprise_value": 14390275072,
+    "ev_ebitda": 8.554,
+    "ev_revenue": 1.338,
     "float_shares": 91383101,
-    "short_shares": 3802929,
-    "short_pct_float": 5.25,
-    "short_ratio": 4.36,
+    "short_shares": 3761319,
+    "short_pct_float": 5.19,
+    "short_ratio": 4.03,
     "last_split": "2:1",
     "last_split_date": "2005-07-11"
   },
@@ -273,15 +273,6 @@
   ],
   "insiders": [
     {
-      "name": "YEARLEY DOUGLAS C JR",
-      "role": "Officer and Director",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 31.61 per share.",
-      "value": 2464221,
-      "shares": 77957,
-      "date": "2026-06-18"
-    },
-    {
       "name": "PARAHUS ROBERT",
       "role": "President",
       "kind": "sell",
@@ -300,6 +291,15 @@
       "date": "2026-06-18"
     },
     {
+      "name": "YEARLEY DOUGLAS C JR",
+      "role": "Officer and Director",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 31.61 per share.",
+      "value": 2464221,
+      "shares": 77957,
+      "date": "2026-06-18"
+    },
+    {
       "name": "EAST STEPHEN F",
       "role": "Director",
       "kind": "sell",
@@ -311,15 +311,6 @@
     {
       "name": "MCLEAN JOHN A.",
       "role": "Director",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 31.61 per share.",
-      "value": 73114,
-      "shares": 2313,
-      "date": "2026-03-04"
-    },
-    {
-      "name": "MCLEAN JOHN A.",
-      "role": "Director",
       "kind": "sell",
       "text": "Sale at price 153.43 per share.",
       "value": 354889,
@@ -327,13 +318,13 @@
       "date": "2026-03-04"
     },
     {
-      "name": "YEARLEY DOUGLAS C JR",
-      "role": "Chief Executive Officer",
+      "name": "MCLEAN JOHN A.",
+      "role": "Director",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 31.61 per share.",
-      "value": 853913,
-      "shares": 27014,
-      "date": "2026-02-27"
+      "value": 73114,
+      "shares": 2313,
+      "date": "2026-03-04"
     },
     {
       "name": "YEARLEY DOUGLAS C JR",
@@ -349,9 +340,9 @@
       "role": "Chief Executive Officer",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 31.61 per share.",
-      "value": 1426117,
-      "shares": 45116,
-      "date": "2026-02-24"
+      "value": 853913,
+      "shares": 27014,
+      "date": "2026-02-27"
     },
     {
       "name": "YEARLEY DOUGLAS C JR",
@@ -359,6 +350,15 @@
       "kind": "sell",
       "text": "Sale at price 160.39 - 161.04 per share.",
       "value": 7237609,
+      "shares": 45116,
+      "date": "2026-02-24"
+    },
+    {
+      "name": "YEARLEY DOUGLAS C JR",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 31.61 per share.",
+      "value": 1426117,
       "shares": 45116,
       "date": "2026-02-24"
     }

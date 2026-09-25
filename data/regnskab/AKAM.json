@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T20:07:20.257Z",
+  "updated_at": "2026-09-25T20:15:42.921Z",
   "source": "Yahoo Finance",
   "symbol": "AKAM",
   "summary": "Akamai Technologies, Inc. engages in the provision of security, delivery, and cloud computing solutions in the United States and internationally. It offers security solutions that include web application and application programming interfaces (API) protection solutions, which protect web, API, and mobile app traffic from attacks; Bot & Abuse portfolio, which provides solutions to help customers protect against threats; full account lifecycle protections including the ability to defend against account takeover and opening abuse, adversarial bot protection, protection against credential stuffing, inventory scalping, and hoarding; and solutions designed to stop persistent scrapers from stealing content; API security, which discovers, audits, and monitors API; and microservice and application component protection that analyzes and protects application traffic that moves between application components. The company also offers cloud computing services, which include compute, storage, and cloud native and networking services; and Akamai App Platform, provides ready-to-run templates that address challenges in deploying, managing and scaling Kubernetes clusters at scale. In addition, it offers delivery solutions that include web and mobile performance solutions, which enables dynamic websites and applications, as well as global traffic management, site acceleration, application load balancing, large-scale load testing, and real-user monitoring; and media delivery solutions, including video streaming and video player services, game and software delivery, broadcast operations, authoritative domain name system, resolution, and data and analytics. The company has a strategic alliance with Deloitte Canada to help organizations achieve platform-based resilience against AI-accelerated cyberthreats. Akamai Technologies, Inc. was incorporated in 1998 and is headquartered in Cambridge, Massachusetts.",
@@ -10,17 +10,17 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": true,
   "earnings_call": "2026-08-06",
-  "eps_estimate": 1.68032,
+  "eps_estimate": 1.66766,
   "analysts": {
-    "strong_buy": 5,
-    "buy": 0,
-    "hold": 1,
-    "sell": 0,
-    "strong_sell": 4,
-    "total": 10
+    "strong_buy": 4,
+    "buy": 10,
+    "hold": 10,
+    "sell": 1,
+    "strong_sell": 0,
+    "total": 25
   },
-  "target_mean": 153.31348,
-  "target_high": 195,
+  "target_mean": 158.13957,
+  "target_high": 225,
   "target_low": 93,
   "target_analysts": 23,
   "statements": [
@@ -72,12 +72,68 @@
     }
   ],
   "growth": {
-    "q0": -0.096599996,
-    "q1": -0.0155,
-    "y0": -0.0598,
-    "y1": 0.0774
+    "q0": -0.1034,
+    "q1": -0.0339,
+    "y0": -0.0664,
+    "y1": 0.0332
   },
   "ratings": [
+    {
+      "date": "2026-09-25",
+      "firm": "UBS",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-09-25",
+      "firm": "Piper Sandler",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "reit"
+    },
+    {
+      "date": "2026-09-25",
+      "firm": "DA Davidson",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-09-25",
+      "firm": "TD Cowen",
+      "from": "Hold",
+      "to": "Hold",
+      "action": "main"
+    },
+    {
+      "date": "2026-09-25",
+      "firm": "JP Morgan",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-09-25",
+      "firm": "RBC Capital",
+      "from": "Sector Perform",
+      "to": "Sector Perform",
+      "action": "reit"
+    },
+    {
+      "date": "2026-09-25",
+      "firm": "Guggenheim",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-09-25",
+      "firm": "B of A Securities",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-09-04",
       "firm": "Citigroup",
@@ -91,62 +147,6 @@
       "from": "Neutral",
       "to": "Overweight",
       "action": "up"
-    },
-    {
-      "date": "2026-08-13",
-      "firm": "JP Morgan",
-      "from": "Underweight",
-      "to": "Neutral",
-      "action": "up"
-    },
-    {
-      "date": "2026-08-10",
-      "firm": "HSBC",
-      "from": "Buy",
-      "to": "Hold",
-      "action": "down"
-    },
-    {
-      "date": "2026-08-10",
-      "firm": "Susquehanna",
-      "from": "Positive",
-      "to": "Positive",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-07",
-      "firm": "UBS",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-07",
-      "firm": "TD Cowen",
-      "from": "Hold",
-      "to": "Hold",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-07",
-      "firm": "Baird",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-07",
-      "firm": "RBC Capital",
-      "from": "Sector Perform",
-      "to": "Sector Perform",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-07",
-      "firm": "Piper Sandler",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
     }
   ],
   "holders": [
@@ -231,20 +231,20 @@
   },
   "extras": {
     "beta": 0.635,
-    "enterprise_value": 23005394944,
-    "ev_ebitda": 21.303,
-    "ev_revenue": 5.322,
+    "enterprise_value": 21851348992,
+    "ev_ebitda": 20.235,
+    "ev_revenue": 5.055,
     "float_shares": 140441307,
-    "short_shares": 19015838,
-    "short_pct_float": 15.56,
-    "short_ratio": 5.46,
+    "short_shares": 18794670,
+    "short_pct_float": 15.37,
+    "short_ratio": 6.13,
     "last_split": null,
     "last_split_date": null
   },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 1143,
+  "inst_count": 1142,
   "eps_history": [
     {
       "quarter": "2025-09-30",

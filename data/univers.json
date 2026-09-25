@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-09-24T20:03:57.687Z",
+  "updated_at": "2026-09-25T20:05:19.892Z",
   "source": "Wikipedia (S&P 500, Nasdaq-100, S&P 400, S&P 600) og Yahoos børsoversigt for de øvrige",
   "counts": {
-    "total": 4626,
+    "total": 4628,
     "markets": {
-      "SE": 451,
-      "US": 3699,
+      "SE": 452,
+      "US": 3700,
       "NO": 219,
       "FI": 139,
       "DK": 94,
@@ -1087,11 +1087,13 @@
     },
     {
       "symbol": "AGNC",
-      "name": "AGNC Investment Corp.",
-      "sector": null,
+      "name": "AGNC Investment",
+      "sector": "Financials",
       "market": "US",
-      "exchange": "NMS",
-      "indices": []
+      "indices": [
+        "SP400"
+      ],
+      "exchange": "NMS"
     },
     {
       "symbol": "AGNT",
@@ -1546,7 +1548,8 @@
       "market": "US",
       "indices": [
         "SP600"
-      ]
+      ],
+      "exchange": "NMS"
     },
     {
       "symbol": "ALIF-B.ST",
@@ -3733,6 +3736,14 @@
         "SP500"
       ],
       "exchange": "NYQ"
+    },
+    {
+      "symbol": "AXR",
+      "name": "AMREP Corporation",
+      "sector": null,
+      "market": "US",
+      "exchange": "NYQ",
+      "indices": []
     },
     {
       "symbol": "AXS",
@@ -7007,6 +7018,14 @@
       "exchange": "NYQ"
     },
     {
+      "symbol": "CCIF",
+      "name": "Carlyle Credit Income Fund",
+      "sector": null,
+      "market": "US",
+      "exchange": "NYQ",
+      "indices": []
+    },
+    {
       "symbol": "CCJ",
       "name": "Cameco Corporation",
       "sector": null,
@@ -7206,7 +7225,7 @@
       "name": "Sprott Physical Gold and Silver Trust",
       "sector": null,
       "market": "US",
-      "exchange": "NYQ",
+      "exchange": "ASE",
       "indices": []
     },
     {
@@ -7282,7 +7301,15 @@
       "name": "Central Securities Corporation",
       "sector": null,
       "market": "US",
-      "exchange": "NYQ",
+      "exchange": "ASE",
+      "indices": []
+    },
+    {
+      "symbol": "CEV",
+      "name": "Eaton Vance California Municipal Income Trust",
+      "sector": null,
+      "market": "US",
+      "exchange": "ASE",
       "indices": []
     },
     {
@@ -8589,10 +8616,11 @@
     },
     {
       "symbol": "CORT",
-      "name": "Corcept Therapeutics Incorporated",
+      "name": "Corcept Therapeutics",
       "sector": "Health Care",
       "market": "US",
       "indices": [
+        "SP400",
         "SP600"
       ]
     },
@@ -8739,13 +8767,11 @@
     },
     {
       "symbol": "CPRI",
-      "name": "Capri Holdings",
-      "sector": "Consumer Discretionary",
+      "name": "Capri Holdings Limited",
+      "sector": null,
       "market": "US",
-      "indices": [
-        "SP400"
-      ],
-      "exchange": "NYQ"
+      "exchange": "NYQ",
+      "indices": []
     },
     {
       "symbol": "CPRT",
@@ -8899,7 +8925,7 @@
       "name": "Cornerstone Total Return Fund, Inc.",
       "sector": null,
       "market": "US",
-      "exchange": "ASE",
+      "exchange": "NYQ",
       "indices": []
     },
     {
@@ -9646,6 +9672,14 @@
       "indices": []
     },
     {
+      "symbol": "CX.ST",
+      "name": "CombinedX AB (publ)",
+      "sector": null,
+      "market": "SE",
+      "exchange": "STO",
+      "indices": []
+    },
+    {
       "symbol": "CXM",
       "name": "Sprinklr, Inc.",
       "sector": "Information Technology",
@@ -10263,7 +10297,7 @@
       "name": "UBS Asset Management High Yield Credit Fund",
       "sector": null,
       "market": "US",
-      "exchange": "NYQ",
+      "exchange": "ASE",
       "indices": []
     },
     {
@@ -11125,10 +11159,11 @@
     },
     {
       "symbol": "EAT",
-      "name": "Brinker International, Inc.",
+      "name": "Brinker International",
       "sector": "Consumer Discretionary",
       "market": "US",
       "indices": [
+        "SP400",
         "SP600"
       ],
       "exchange": "NYQ"
@@ -11198,7 +11233,7 @@
       "name": "Ellsworth Growth and Income Fund Ltd.",
       "sector": null,
       "market": "US",
-      "exchange": "NYQ",
+      "exchange": "ASE",
       "indices": []
     },
     {
@@ -11428,6 +11463,14 @@
       "sector": null,
       "market": "US",
       "exchange": "NMS",
+      "indices": []
+    },
+    {
+      "symbol": "EGNETY.CO",
+      "name": "EgnsINVEST Ejendomme Tyskland A/S",
+      "sector": null,
+      "market": "DK",
+      "exchange": "CPH",
       "indices": []
     },
     {
@@ -11666,6 +11709,14 @@
       "sector": null,
       "market": "NO",
       "exchange": "OSL",
+      "indices": []
+    },
+    {
+      "symbol": "ELON.ST",
+      "name": "Elon AB (publ)",
+      "sector": null,
+      "market": "SE",
+      "exchange": "STO",
       "indices": []
     },
     {
@@ -12330,7 +12381,7 @@
       "name": "Allspring Multi-Sector Income Fund",
       "sector": null,
       "market": "US",
-      "exchange": "NYQ",
+      "exchange": "ASE",
       "indices": []
     },
     {
@@ -12338,7 +12389,7 @@
       "name": "Allspring Utilities and High Income Fund",
       "sector": null,
       "market": "US",
-      "exchange": "ASE",
+      "exchange": "NYQ",
       "indices": []
     },
     {
@@ -12836,7 +12887,7 @@
       "name": "Eaton Vance Limited Duration Income Fund",
       "sector": null,
       "market": "US",
-      "exchange": "ASE",
+      "exchange": "NYQ",
       "indices": []
     },
     {
@@ -13125,7 +13176,7 @@
       "name": "Abrdn Asia-Pacific Income Fund Inc",
       "sector": null,
       "market": "US",
-      "exchange": "NYQ",
+      "exchange": "ASE",
       "indices": []
     },
     {
@@ -14644,14 +14695,6 @@
       "indices": []
     },
     {
-      "symbol": "G5EN.ST",
-      "name": "G5 Entertainment AB (publ)",
-      "sector": null,
-      "market": "SE",
-      "exchange": "STO",
-      "indices": []
-    },
-    {
       "symbol": "GAB",
       "name": "The Gabelli Equity Trust Inc.",
       "sector": null,
@@ -15003,14 +15046,6 @@
       "indices": []
     },
     {
-      "symbol": "GEOS.OL",
-      "name": "Golden Energy Offshore Services ASA",
-      "sector": null,
-      "market": "NO",
-      "exchange": "OSL",
-      "indices": []
-    },
-    {
       "symbol": "GERN",
       "name": "Geron Corporation",
       "sector": null,
@@ -15117,7 +15152,7 @@
       "name": "GAMCO Global Gold, Natural Resources & Income Trust",
       "sector": null,
       "market": "US",
-      "exchange": "NYQ",
+      "exchange": "ASE",
       "indices": []
     },
     {
@@ -15404,7 +15439,7 @@
       "name": "Clough Global Equity Fund",
       "sector": null,
       "market": "US",
-      "exchange": "NYQ",
+      "exchange": "ASE",
       "indices": []
     },
     {
@@ -15420,7 +15455,7 @@
       "name": "The Gabelli Global Utility & Income Trust",
       "sector": null,
       "market": "US",
-      "exchange": "ASE",
+      "exchange": "NYQ",
       "indices": []
     },
     {
@@ -16209,14 +16244,6 @@
       "sector": null,
       "market": "NO",
       "exchange": "OSL",
-      "indices": []
-    },
-    {
-      "symbol": "GYLD-A.CO",
-      "name": "Gyldendal A/S",
-      "sector": null,
-      "market": "DK",
-      "exchange": "CPH",
       "indices": []
     },
     {
@@ -17541,11 +17568,13 @@
     },
     {
       "symbol": "HUBS",
-      "name": "HubSpot, Inc.",
-      "sector": null,
+      "name": "HubSpot",
+      "sector": "Information Technology",
       "market": "US",
-      "exchange": "NYQ",
-      "indices": []
+      "indices": [
+        "SP400"
+      ],
+      "exchange": "NYQ"
     },
     {
       "symbol": "HUFV-A.ST",
@@ -17796,7 +17825,7 @@
       "name": "Abrdn Australia Equity Fund Inc",
       "sector": null,
       "market": "US",
-      "exchange": "NYQ",
+      "exchange": "ASE",
       "indices": []
     },
     {
@@ -18251,8 +18280,7 @@
       "sector": "Health Care",
       "market": "US",
       "indices": [
-        "SP500",
-        "SP400"
+        "SP500"
       ],
       "exchange": "NMS"
     },
@@ -20365,14 +20393,6 @@
       "sector": null,
       "market": "FI",
       "exchange": "HEL",
-      "indices": []
-    },
-    {
-      "symbol": "KPET",
-      "name": "KPET Ultra Paceline Corporation",
-      "sector": null,
-      "market": "US",
-      "exchange": "NYQ",
       "indices": []
     },
     {
@@ -22860,6 +22880,14 @@
       "indices": []
     },
     {
+      "symbol": "MGLD",
+      "name": "The Marygold Companies, Inc.",
+      "sector": null,
+      "market": "US",
+      "exchange": "ASE",
+      "indices": []
+    },
+    {
       "symbol": "MGM",
       "name": "MGM Resorts",
       "sector": "Consumer Discretionary",
@@ -23274,14 +23302,6 @@
         "SP600"
       ],
       "exchange": "NMS"
-    },
-    {
-      "symbol": "MMT",
-      "name": "Aberdeen Multi-Market Income Fund",
-      "sector": null,
-      "market": "US",
-      "exchange": "NYQ",
-      "indices": []
     },
     {
       "symbol": "MMU",
@@ -24985,7 +25005,7 @@
       "name": "Neuberger Berman Income Funds - Neuberger High Yield Strategies Fund Inc.",
       "sector": null,
       "market": "US",
-      "exchange": "NYQ",
+      "exchange": "ASE",
       "indices": []
     },
     {
@@ -25758,7 +25778,7 @@
       "name": "Neuberger Berman Income Funds - Neuberger Real Estate Securities Income Fund Inc.",
       "sector": null,
       "market": "US",
-      "exchange": "ASE",
+      "exchange": "NYQ",
       "indices": []
     },
     {
@@ -26151,14 +26171,6 @@
         "SP600"
       ],
       "exchange": "NMS"
-    },
-    {
-      "symbol": "NWCL",
-      "name": "newcleo plc",
-      "sector": null,
-      "market": "US",
-      "exchange": "NMS",
-      "indices": []
     },
     {
       "symbol": "NWE",
@@ -26878,6 +26890,14 @@
       "indices": []
     },
     {
+      "symbol": "ONEF.ST",
+      "name": "Oneflow AB (publ)",
+      "sector": null,
+      "market": "SE",
+      "exchange": "STO",
+      "indices": []
+    },
+    {
       "symbol": "ONIT",
       "name": "Onity Group Inc.",
       "sector": null,
@@ -27320,6 +27340,14 @@
       "indices": []
     },
     {
+      "symbol": "OUTLT.OL",
+      "name": "OUTLT.OL",
+      "sector": null,
+      "market": "NO",
+      "exchange": "OSL",
+      "indices": []
+    },
+    {
       "symbol": "OVV",
       "name": "Ovintiv",
       "sector": "Energy",
@@ -27403,8 +27431,7 @@
       "sector": "Information Technology",
       "market": "US",
       "indices": [
-        "SP500",
-        "SP400"
+        "SP500"
       ],
       "exchange": "NYQ"
     },
@@ -28411,7 +28438,7 @@
       "name": "Sprott Physical Gold Trust",
       "sector": null,
       "market": "US",
-      "exchange": "NYQ",
+      "exchange": "ASE",
       "indices": []
     },
     {
@@ -28797,6 +28824,14 @@
       "sector": null,
       "market": "US",
       "exchange": "NMS",
+      "indices": []
+    },
+    {
+      "symbol": "PNAQ",
+      "name": "Pinnacle Acquisition Corporation",
+      "sector": null,
+      "market": "US",
+      "exchange": "NYQ",
       "indices": []
     },
     {
@@ -31450,13 +31485,11 @@
     },
     {
       "symbol": "SAM",
-      "name": "Boston Beer Company",
-      "sector": "Consumer Staples",
+      "name": "The Boston Beer Company, Inc.",
+      "sector": null,
       "market": "US",
-      "indices": [
-        "SP400"
-      ],
-      "exchange": "NYQ"
+      "exchange": "NYQ",
+      "indices": []
     },
     {
       "symbol": "SAMO",
@@ -33586,7 +33619,7 @@
     },
     {
       "symbol": "SPPP",
-      "name": "Sprott Physical Platinum & Palladium Tr",
+      "name": "Sprott Physical Platinum and Palladium Trust",
       "sector": null,
       "market": "US",
       "exchange": "ASE",
@@ -34367,14 +34400,6 @@
     },
     {
       "symbol": "SVEAF-B.ST",
-      "name": "Sveafastigheter AB (publ)",
-      "sector": null,
-      "market": "SE",
-      "exchange": "STO",
-      "indices": []
-    },
-    {
-      "symbol": "SVEAF.ST",
       "name": "Sveafastigheter AB (publ)",
       "sector": null,
       "market": "SE",
@@ -37170,7 +37195,7 @@
       "name": "Reaves Utility Income Fund",
       "sector": null,
       "market": "US",
-      "exchange": "ASE",
+      "exchange": "NYQ",
       "indices": []
     },
     {
@@ -37432,14 +37457,6 @@
       "indices": [
         "SP600"
       ]
-    },
-    {
-      "symbol": "VECA",
-      "name": "Vernal Capital Acquisition Corp.",
-      "sector": null,
-      "market": "US",
-      "exchange": "NYQ",
-      "indices": []
     },
     {
       "symbol": "VECO",
@@ -37800,7 +37817,7 @@
       "name": "Invesco Advantage Municipal Income Trust II",
       "sector": null,
       "market": "US",
-      "exchange": "NYQ",
+      "exchange": "ASE",
       "indices": []
     },
     {
