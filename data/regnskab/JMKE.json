@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-28T22:18:00.345Z",
+  "updated_at": "2026-09-29T21:06:47.989Z",
   "source": "Yahoo Finance",
   "symbol": "JMKE",
   "summary": "Jersey Mike's Subs Inc. engages in franchising and operating fast casual, submarine-style sandwich restaurants specializing in authentic, hand-crafted, and craveable subs. The company also offers catering services, as well as provides mobile app, online ordering, and third-party delivery. It operates stores in the United States and Canada, as well as franchise agreements in the United Kingdom and Ireland. The company was founded in 1956 and is based in Tinton Falls, New Jersey.",
@@ -19,7 +19,7 @@
     "strong_sell": 1,
     "total": 25
   },
-  "target_mean": 27.95217,
+  "target_mean": 27.86522,
   "target_high": 40,
   "target_low": 14.9,
   "target_analysts": 23,
@@ -45,6 +45,13 @@
     "y1": 0.14479999
   },
   "ratings": [
+    {
+      "date": "2026-09-29",
+      "firm": "JP Morgan",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-09-11",
       "firm": "Tigress Financial",
@@ -107,13 +114,6 @@
       "from": null,
       "to": "Buy",
       "action": "init"
-    },
-    {
-      "date": "2026-08-25",
-      "firm": "Goldman Sachs",
-      "from": null,
-      "to": "Neutral",
-      "action": "init"
     }
   ],
   "holders": [
@@ -125,7 +125,7 @@
       "date": "2026-07-31"
     },
     {
-      "name": "NEUBERGER BERMAN ALTERNATIVE FUNDS-Neuberger Berman Long Short Fund",
+      "name": "NEUBERGER BERMAN ALTERNATIVE FUNDS-Neuberger Long Short Fund",
       "kind": "fond",
       "pct": 0.32,
       "shares": 738705,
@@ -146,6 +146,20 @@
       "date": "2026-07-31"
     },
     {
+      "name": "Franklin Strategic Series-FRANKLIN SMALL-MID CAP GROWTH FUND",
+      "kind": "fond",
+      "pct": 0.13,
+      "shares": 313093,
+      "date": "2026-07-31"
+    },
+    {
+      "name": "Columbia Funds Series Trust I-Columbia Cornerstone Growth Fund",
+      "kind": "fond",
+      "pct": 0.1,
+      "shares": 232535,
+      "date": "2026-07-31"
+    },
+    {
       "name": "Fidelity Securities Fund-Fidelity Blue Chip Growth Fund",
       "kind": "fond",
       "pct": 0.09,
@@ -160,31 +174,17 @@
       "date": "2026-08-31"
     },
     {
+      "name": "Franklin Strategic Series-FRANKLIN SMALL CAP GROWTH FUND",
+      "kind": "fond",
+      "pct": 0.09,
+      "shares": 221058,
+      "date": "2026-07-31"
+    },
+    {
       "name": "ALLSPRING FUNDS TRUST-Allspring SMID Cap Growth Fund",
       "kind": "fond",
       "pct": 0.06,
       "shares": 148333,
-      "date": "2026-07-31"
-    },
-    {
-      "name": "ALLSPRING FUNDS TRUST-Allspring Mid Cap Growth Fund",
-      "kind": "fond",
-      "pct": 0.04,
-      "shares": 93916,
-      "date": "2026-07-31"
-    },
-    {
-      "name": "ALLSPRING FUNDS TRUST-Allspring Emerging Growth Fund",
-      "kind": "fond",
-      "pct": 0.02,
-      "shares": 47234,
-      "date": "2026-07-31"
-    },
-    {
-      "name": "Allspring VARIABLE TRUST-Allspring VT Small Cap Growth Fund",
-      "kind": "fond",
-      "pct": 0.02,
-      "shares": 45149,
       "date": "2026-07-31"
     }
   ],
@@ -198,9 +198,9 @@
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 5830558208,
-    "ev_ebitda": 17.776,
-    "ev_revenue": 7.662,
+    "enterprise_value": 5755868160,
+    "ev_ebitda": 17.548,
+    "ev_revenue": 7.564,
     "float_shares": 189191426,
     "short_shares": 7473350,
     "short_pct_float": null,

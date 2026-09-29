@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-28T22:17:59.213Z",
+  "updated_at": "2026-09-29T21:06:46.777Z",
   "source": "Yahoo Finance",
   "symbol": "AKAM",
   "summary": "Akamai Technologies, Inc. engages in the provision of security, delivery, and cloud computing solutions in the United States and internationally. It offers security solutions that include web application and application programming interfaces (API) protection solutions, which protect web, API, and mobile app traffic from attacks; Bot & Abuse portfolio, which provides solutions to help customers protect against threats; full account lifecycle protections including the ability to defend against account takeover and opening abuse, adversarial bot protection, protection against credential stuffing, inventory scalping, and hoarding; and solutions designed to stop persistent scrapers from stealing content; API security, which discovers, audits, and monitors API; and microservice and application component protection that analyzes and protects application traffic that moves between application components. The company also offers cloud computing services, which include compute, storage, and cloud native and networking services; and Akamai App Platform, provides ready-to-run templates that address challenges in deploying, managing and scaling Kubernetes clusters at scale. In addition, it offers delivery solutions that include web and mobile performance solutions, which enables dynamic websites and applications, as well as global traffic management, site acceleration, application load balancing, large-scale load testing, and real-user monitoring; and media delivery solutions, including video streaming and video player services, game and software delivery, broadcast operations, authoritative domain name system, resolution, and data and analytics. The company has a strategic alliance with Deloitte Canada to help organizations achieve platform-based resilience against AI-accelerated cyberthreats. Akamai Technologies, Inc. was incorporated in 1998 and is headquartered in Cambridge, Massachusetts.",
@@ -10,19 +10,19 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": true,
   "earnings_call": "2026-08-06",
-  "eps_estimate": 1.66766,
+  "eps_estimate": 1.67134,
   "analysts": {
     "strong_buy": 5,
     "buy": 10,
-    "hold": 9,
+    "hold": 8,
     "sell": 1,
     "strong_sell": 0,
-    "total": 25
+    "total": 24
   },
-  "target_mean": 158.79173,
+  "target_mean": 158.87318,
   "target_high": 225,
   "target_low": 93,
-  "target_analysts": 23,
+  "target_analysts": 22,
   "statements": [
     {
       "year": "2022",
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": -0.1034,
-    "q1": -0.0339,
-    "y0": -0.0671,
-    "y1": 0.0319
+    "q0": -0.1014,
+    "q1": -0.0376,
+    "y0": -0.0675,
+    "y1": 0.031600002
   },
   "ratings": [
+    {
+      "date": "2026-09-29",
+      "firm": "DA Davidson",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-09-28",
       "firm": "DA Davidson",
@@ -139,13 +146,6 @@
       "firm": "B of A Securities",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-09-04",
-      "firm": "Citigroup",
-      "from": "Neutral",
-      "to": "Neutral",
       "action": "main"
     }
   ],
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 6,
-    "sells": 4,
+    "sells": 6,
     "bought": 12584,
-    "sold": 8743,
-    "net_pct": 0.1
+    "sold": 17778,
+    "net_pct": -0.2
   },
   "extras": {
     "beta": 0.635,
-    "enterprise_value": 22358669312,
-    "ev_ebitda": 20.704,
-    "ev_revenue": 5.172,
+    "enterprise_value": 21647271936,
+    "ev_ebitda": 20.046,
+    "ev_revenue": 5.008,
     "float_shares": 140441307,
     "short_shares": 18794670,
     "short_pct_float": 15.37,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 1142,
+  "inst_count": 1141,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -272,6 +272,24 @@
     }
   ],
   "insiders": [
+    {
+      "name": "SALEM-JACKSON KIM",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 128.00 per share.",
+      "value": 257664,
+      "shares": 2013,
+      "date": "2026-09-25"
+    },
+    {
+      "name": "SUNDARAM MANI",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 125.62 per share.",
+      "value": 882104,
+      "shares": 7022,
+      "date": "2026-09-25"
+    },
     {
       "name": "JOSEPH PAUL C",
       "role": "Officer",
@@ -342,24 +360,6 @@
       "text": null,
       "value": null,
       "shares": 3547,
-      "date": "2026-05-14"
-    },
-    {
-      "name": "AKELLA JANAKI",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 3028,
-      "date": "2026-05-14"
-    },
-    {
-      "name": "BURGER BAS",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 3028,
       "date": "2026-05-14"
     }
   ],

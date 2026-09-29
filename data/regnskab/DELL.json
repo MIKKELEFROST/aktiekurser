@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-28T22:17:59.787Z",
+  "updated_at": "2026-09-29T21:06:47.415Z",
   "source": "Yahoo Finance",
   "symbol": "DELL",
   "summary": "Dell Technologies Inc. designs, develops, manufactures, markets, sells, and supports various comprehensive and integrated solutions, products, and services in the Americas, Europe, the Middle East, Asia, and internationally. The company operates through Infrastructure Solutions Group (ISG) and Client Solutions Group (CSG) segments. The ISG segment provides modern and traditional storage solutions, including all-flash, purpose-built, hyper-converged infrastructure, software-defined storage, and general-purpose and AI-optimized servers. This segment also offers networking products and services comprising wide area network infrastructure, data center and edge networking switches, and cables and optics that help its business customers to transform and modernize their infrastructure and complementing its server and storage solutions; and software, peripherals, and services, including consulting and support, and deployment. The CSG segment provides notebooks, desktops, and workstations and branded peripherals that include displays, docking stations, keyboards, mice, webcam and audio devices, and third-party software and peripherals; and configuration, and extended warranties services. The company is involved in originating, collecting, and servicing customer financing arrangements and offers payment and consumption solutions and services, such utility, subscription, as-a-service, leases, and loans, as well as fixed-term leases and loans. It serves enterprises, governmental agencies and other public institutions, educational institutions, healthcare organizations, small and medium-sized businesses, and consumers. The company has a strategic alliance with Rafay Systems for the development of AI infrastructure solutions. The company was formerly known as Denali Holding Inc. and changed its name to Dell Technologies Inc. in March 2013. Dell Technologies Inc. was founded in 1984 and is headquartered in Round Rock, Texas.",
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 29
   },
-  "target_mean": 577.36,
+  "target_mean": 579.36,
   "target_high": 735,
   "target_low": 480,
   "target_analysts": 25,
@@ -51,6 +51,11 @@
   ],
   "quarterly": [
     {
+      "q": "2Q2025",
+      "revenue": 29776000000,
+      "earnings": 1164000000
+    },
+    {
       "q": "3Q2025",
       "revenue": 27005000000,
       "earnings": 1548000000
@@ -64,11 +69,6 @@
       "q": "1Q2026",
       "revenue": 43842000000,
       "earnings": 3438000000
-    },
-    {
-      "q": "2Q2026",
-      "revenue": 46971000000,
-      "earnings": 4133000000
     }
   ],
   "growth": {
@@ -78,6 +78,13 @@
     "y1": 0.1243
   },
   "ratings": [
+    {
+      "date": "2026-09-29",
+      "firm": "TD Cowen",
+      "from": "Hold",
+      "to": "Hold",
+      "action": "main"
+    },
     {
       "date": "2026-09-21",
       "firm": "Morgan Stanley",
@@ -139,13 +146,6 @@
       "firm": "Truist Securities",
       "from": "Hold",
       "to": "Hold",
-      "action": "main"
-    },
-    {
-      "date": "2026-09-02",
-      "firm": "Evercore ISI Group",
-      "from": "Outperform",
-      "to": "Outperform",
       "action": "main"
     }
   ],
@@ -223,17 +223,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 115,
+    "buys": 119,
     "sells": 146,
-    "bought": 6958286,
+    "bought": 6960651,
     "sold": 5612399,
     "net_pct": 2.8
   },
   "extras": {
     "beta": 1.409,
-    "enterprise_value": 381606625280,
-    "ev_ebitda": 21.528,
-    "ev_revenue": 2.524,
+    "enterprise_value": 369233723392,
+    "ev_ebitda": 20.83,
+    "ev_revenue": 2.442,
     "float_shares": 292168675,
     "short_shares": 13693224,
     "short_pct_float": 4.68,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-10-20",
   "dividend_date": null,
   "payout_ratio": 0.1344,
-  "inst_count": 2744,
+  "inst_count": 2746,
   "eps_history": [
     {
       "quarter": "2025-10-31",
@@ -273,6 +273,42 @@
   ],
   "insiders": [
     {
+      "name": "GRAIN DAVID J",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 633,
+      "date": "2026-09-24"
+    },
+    {
+      "name": "GREEN WILLIAM D.",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 680,
+      "date": "2026-09-24"
+    },
+    {
+      "name": "RADAKOVICH LYNN VOJVODICH",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 419,
+      "date": "2026-09-24"
+    },
+    {
+      "name": "DORMAN DAVID WYATT",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 633,
+      "date": "2026-09-24"
+    },
+    {
       "name": "RADAKOVICH LYNN VOJVODICH",
       "role": "Director",
       "kind": "other",
@@ -300,15 +336,6 @@
       "date": "2026-09-21"
     },
     {
-      "name": "SILVER LAKE TECHNOLOGY INVESTORS V, L.P.",
-      "role": "Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 468,
-      "date": "2026-09-17"
-    },
-    {
       "name": "SILVER LAKE TECHNOLOGY INVESTORS IV, L.P.",
       "role": "Beneficial Owner of more than 10% of a Class of Security",
       "kind": "other",
@@ -318,12 +345,12 @@
       "date": "2026-09-17"
     },
     {
-      "name": "SILVER LAKE PARTNERS V DE AIV, L.P.",
+      "name": "SILVER LAKE TECHNOLOGY INVESTORS V, L.P.",
       "role": "Beneficial Owner of more than 10% of a Class of Security",
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 38139,
+      "shares": 468,
       "date": "2026-09-17"
     },
     {
@@ -334,42 +361,88 @@
       "value": null,
       "shares": 70460,
       "date": "2026-09-17"
-    },
-    {
-      "name": "KENNEDY DAVID ALAN",
-      "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 584.98 - 586.03 per share.",
-      "value": 13979586,
-      "shares": 23896,
-      "date": "2026-09-17"
-    },
-    {
-      "name": "SILVER LAKE TECHNOLOGY INVESTORS V, L.P.",
-      "role": "Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "sell",
-      "text": "Sale at price 577.60 - 591.24 per share.",
-      "value": 274200,
-      "shares": 468,
-      "date": "2026-09-17"
-    },
-    {
-      "name": "SILVER LAKE TECHNOLOGY INVESTORS IV, L.P.",
-      "role": "Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "sell",
-      "text": "Sale at price 577.60 - 591.24 per share.",
-      "value": 607010,
-      "shares": 1036,
-      "date": "2026-09-17"
     }
   ],
   "dividends": [
+    {
+      "date": "2022-04-19",
+      "amount": 0.33
+    },
+    {
+      "date": "2022-07-19",
+      "amount": 0.33
+    },
+    {
+      "date": "2022-10-18",
+      "amount": 0.33
+    },
+    {
+      "date": "2023-01-24",
+      "amount": 0.33
+    },
+    {
+      "date": "2023-04-24",
+      "amount": 0.37
+    },
+    {
+      "date": "2023-07-24",
+      "amount": 0.37
+    },
+    {
+      "date": "2023-10-23",
+      "amount": 0.37
+    },
+    {
+      "date": "2024-01-22",
+      "amount": 0.37
+    },
+    {
+      "date": "2024-04-22",
+      "amount": 0.445
+    },
+    {
+      "date": "2024-07-23",
+      "amount": 0.445
+    },
+    {
+      "date": "2024-10-22",
+      "amount": 0.445
+    },
+    {
+      "date": "2025-01-22",
+      "amount": 0.445
+    },
+    {
+      "date": "2025-04-22",
+      "amount": 0.525
+    },
+    {
+      "date": "2025-07-22",
+      "amount": 0.525
+    },
+    {
+      "date": "2025-10-21",
+      "amount": 0.525
+    },
+    {
+      "date": "2026-01-20",
+      "amount": 0.525
+    },
+    {
+      "date": "2026-04-21",
+      "amount": 0.63
+    },
     {
       "date": "2026-07-21",
       "amount": 0.63
     }
   ],
   "splits": [
+    {
+      "date": "2018-12-28",
+      "ratio": "1806:1000",
+      "factor": 1.806
+    },
     {
       "date": "2021-11-02",
       "ratio": "1973:1000",

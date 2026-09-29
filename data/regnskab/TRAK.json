@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-28T22:18:01.339Z",
+  "updated_at": "2026-09-29T21:06:49.217Z",
   "source": "Yahoo Finance",
   "symbol": "TRAK",
   "summary": "ReposiTrak, Inc., a software-as-a-service provider, operates a business-to-business, e-commerce, compliance and traceability, and supply chain management platform in North America. It offers ReposiTrak Compliance Management, which reduces potential regulatory, legal, and criminal risks from its supply chain partners; ReposiTrak Traceability Network, which captures key data elements for designated products; and ReposiTrak Supply Chain Solutions, which enable customers to manage interactions with suppliers. The company also provides business consulting services to suppliers and retailers in the grocery, convenience, and specialty retail sectors. In addition, it provides professional consulting services. The company primarily serves multi-store retail chains, wholesalers, distributors, and their suppliers. ReposiTrak, Inc. has a strategic partnership with Upshop to enable grocery retail traceability. The company was formerly known as Park City Group, Inc. and changed its name to ReposiTrak, Inc. in December 2023. ReposiTrak, Inc. is based in Murray, Utah.",
@@ -7,22 +7,23 @@
   "website": "https://repositrak.com",
   "employees": 69,
   "ceo": "Mr. Randall K. Fields",
-  "next_earnings": "2026-09-28",
-  "earnings_estimated": false,
+  "next_earnings": "2026-11-12",
+  "earnings_estimated": true,
   "earnings_call": "2026-09-28",
   "eps_estimate": null,
-  "analysts": null,
+  "analysts": {
+    "strong_buy": 1,
+    "buy": 0,
+    "hold": 0,
+    "sell": 0,
+    "strong_sell": 0,
+    "total": 1
+  },
   "target_mean": 16,
   "target_high": 16,
   "target_low": 16,
   "target_analysts": 1,
   "statements": [
-    {
-      "year": "2022",
-      "revenue": 18046940,
-      "net": 3416650,
-      "margin": 18.9
-    },
     {
       "year": "2023",
       "revenue": 19098910,
@@ -40,19 +41,15 @@
       "revenue": 22606070,
       "net": 6617820,
       "margin": 29.3
+    },
+    {
+      "year": "2026",
+      "revenue": 23287320,
+      "net": 7401680,
+      "margin": 31.8
     }
   ],
   "quarterly": [
-    {
-      "q": "1Q2025",
-      "revenue": 5913730,
-      "earnings": 1965790
-    },
-    {
-      "q": "2Q2025",
-      "revenue": 5760280,
-      "earnings": 1725020
-    },
     {
       "q": "3Q2025",
       "revenue": 5971470,
@@ -62,6 +59,16 @@
       "q": "4Q2025",
       "revenue": 5856810,
       "earnings": 1639490
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 5883200,
+      "earnings": 1951350
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 5575840,
+      "earnings": 2050130
     }
   ],
   "growth": null,
@@ -219,9 +226,9 @@
   },
   "extras": {
     "beta": 0.828,
-    "enterprise_value": 123509952,
-    "ev_ebitda": 15.076,
-    "ev_revenue": 5.262,
+    "enterprise_value": 122964744,
+    "ev_ebitda": 15.009,
+    "ev_revenue": 5.239,
     "float_shares": 12717679,
     "short_shares": 1368361,
     "short_pct_float": 11.57,
@@ -234,12 +241,6 @@
   "payout_ratio": 0.21120001,
   "inst_count": 154,
   "eps_history": [
-    {
-      "quarter": "2025-06-30",
-      "estimate": 0.09,
-      "actual": 0.09,
-      "surprise_pct": 0
-    },
     {
       "quarter": "2025-09-30",
       "estimate": 0.09,
@@ -257,6 +258,12 @@
       "estimate": 0.09,
       "actual": 0.1,
       "surprise_pct": 11.11
+    },
+    {
+      "quarter": "2026-06-30",
+      "estimate": 0.09,
+      "actual": 0.11,
+      "surprise_pct": 22.22
     }
   ],
   "insiders": [

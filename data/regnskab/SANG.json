@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-25T20:15:44.737Z",
+  "updated_at": "2026-09-29T21:06:48.569Z",
   "source": "Yahoo Finance",
   "symbol": "SANG",
   "summary": "Sangoma Technologies Corporation, together with its subsidiaries, develops, manufactures, distributes, and supports voice and data connectivity components for software-based communication applications in the United States of America and internationally. The company offers communications platforms comprising pure cloud and hybrid unified communications as a service, and on-premises systems; retail and wholesale SIP trunking, as well as fax as a service; Sangoma TeamHub, a unified communications and collaboration platform for business productivity; Sangoma Meet, a multi-party video conferencing platform; and Sangoma CX, a cloud-native contact center suite that enables businesses to manage inbound interactions across multiple channels. It also provides productivity apps comprising appointment suite, call flow, curbside, phone monitor, send, and urgent notify; managed security services, such as antispam, web filtering, antivirus, botnet and domain reputation, app control and intrusion prevention system services, and managed firewall device; and network management solutions, including managed internet, VPN, and SD-WAN, as well as secure Wi-Fi access points. In addition, the company offers open-source software products, such as Asterisk, an open-source framework for building real-time and multi-protocol communications applications; FreePBX, a web-based open-source GUI for controlling and managing Asterisk; and PBXact, a commercial UC system. Further, it provides desktop and wireless phones, network connectivity hardware, wireless and wired headsets, accessories, analog and digital telephony cards, session border controllers, VoIP gateways, and interface boards. Sangoma Technologies Corporation is headquartered in Markham, Canada.",
@@ -7,29 +7,23 @@
   "website": "https://sangoma.com",
   "employees": 645,
   "ceo": "Mr. Charles J. Salameh",
-  "next_earnings": "2026-09-28",
-  "earnings_estimated": false,
+  "next_earnings": "2026-11-11",
+  "earnings_estimated": true,
   "earnings_call": "2026-09-28",
   "eps_estimate": null,
   "analysts": {
     "strong_buy": 1,
-    "buy": 3,
+    "buy": 1,
     "hold": 1,
-    "sell": 0,
+    "sell": 1,
     "strong_sell": 0,
-    "total": 5
+    "total": 4
   },
-  "target_mean": 4,
-  "target_high": 4,
-  "target_low": 4,
+  "target_mean": 5.2,
+  "target_high": 5.2,
+  "target_low": 5.2,
   "target_analysts": 1,
   "statements": [
-    {
-      "year": "2022",
-      "revenue": 224350000,
-      "net": -110790000,
-      "margin": -49.4
-    },
     {
       "year": "2023",
       "revenue": 252530000,
@@ -47,14 +41,15 @@
       "revenue": 236692000,
       "net": -5010000,
       "margin": -2.1
+    },
+    {
+      "year": "2026",
+      "revenue": 200065000,
+      "net": -81094000,
+      "margin": -40.5
     }
   ],
   "quarterly": [
-    {
-      "q": "2Q2025",
-      "revenue": 59362000,
-      "earnings": 209000
-    },
     {
       "q": "3Q2025",
       "revenue": 50818000,
@@ -69,10 +64,22 @@
       "q": "1Q2026",
       "revenue": 50995000,
       "earnings": -2335000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 49816000,
+      "earnings": -72516000
     }
   ],
   "growth": null,
   "ratings": [
+    {
+      "date": "2026-09-29",
+      "firm": "TD Securities",
+      "from": "Buy",
+      "to": "Sell",
+      "action": "down"
+    },
     {
       "date": "2026-05-14",
       "firm": "Canaccord Genuity",
@@ -170,9 +177,9 @@
   },
   "extras": {
     "beta": 1.116,
-    "enterprise_value": 142559712,
-    "ev_ebitda": 111.288,
-    "ev_revenue": 0.67,
+    "enterprise_value": 143890864,
+    "ev_ebitda": 112.327,
+    "ev_revenue": 0.677,
     "float_shares": 25512852,
     "short_shares": 190374,
     "short_pct_float": null,
@@ -185,12 +192,6 @@
   "payout_ratio": 0,
   "inst_count": 31,
   "eps_history": [
-    {
-      "quarter": "2025-06-30",
-      "estimate": -0.002,
-      "actual": 0.01,
-      "surprise_pct": 600
-    },
     {
       "quarter": "2025-09-30",
       "estimate": -0.056,
@@ -208,6 +209,12 @@
       "estimate": -0.04,
       "actual": -0.07,
       "surprise_pct": -75
+    },
+    {
+      "quarter": "2026-06-30",
+      "estimate": -0.07,
+      "actual": -2.19,
+      "surprise_pct": -3028.57
     }
   ],
   "insiders": [

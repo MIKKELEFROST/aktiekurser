@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-28T22:17:59.897Z",
+  "updated_at": "2026-09-29T21:06:47.524Z",
   "source": "Yahoo Finance",
   "symbol": "EMPD",
   "summary": "Empery Digital Inc. engages in digital asset treasury business in the United States. The company was formerly known as Volcon, Inc. and changed its name to Empery Digital Inc. in July 2025. Empery Digital Inc. was incorporated in 2020 and is based in Round Rock, Texas.",
@@ -10,12 +10,19 @@
   "next_earnings": "2026-11-06",
   "earnings_estimated": true,
   "earnings_call": null,
-  "eps_estimate": null,
-  "analysts": null,
+  "eps_estimate": -0.06,
+  "analysts": {
+    "strong_buy": 0,
+    "buy": 2,
+    "hold": 0,
+    "sell": 0,
+    "strong_sell": 0,
+    "total": 2
+  },
   "target_mean": 6,
   "target_high": 6,
   "target_low": 6,
-  "target_analysts": 1,
+  "target_analysts": 2,
   "statements": [
     {
       "year": "2020",
@@ -64,8 +71,21 @@
       "earnings": -43034430
     }
   ],
-  "growth": null,
-  "ratings": [],
+  "growth": {
+    "q0": null,
+    "q1": null,
+    "y0": null,
+    "y1": 1.3721001
+  },
+  "ratings": [
+    {
+      "date": "2026-09-29",
+      "firm": "Lake Street",
+      "from": null,
+      "to": "Buy",
+      "action": "init"
+    }
+  ],
   "holders": [
     {
       "name": "Empery Asset Management, LP",
@@ -148,9 +168,9 @@
   },
   "extras": {
     "beta": -0.333,
-    "enterprise_value": 133207728,
-    "ev_ebitda": -3.665,
-    "ev_revenue": 212.049,
+    "enterprise_value": 135737648,
+    "ev_ebitda": -3.734,
+    "ev_revenue": 216.076,
     "float_shares": 13423984,
     "short_shares": 2489727,
     "short_pct_float": 20.48,
@@ -205,7 +225,7 @@
       "date": "2026-05-15"
     },
     {
-      "name": "ATG CAPITAL MANAGEMENT L.P.",
+      "name": "ATG CAPITAL OPPORTUNITIES FUND LP",
       "role": "Beneficial Owner of more than 10% of a Class of Security",
       "kind": "buy",
       "text": "Purchase at price 4.67 - 4.68 per share.",
@@ -214,7 +234,7 @@
       "date": "2026-02-03"
     },
     {
-      "name": "ATG CAPITAL OPPORTUNITIES FUND LP",
+      "name": "ATG CAPITAL MANAGEMENT L.P.",
       "role": "Beneficial Owner of more than 10% of a Class of Security",
       "kind": "buy",
       "text": "Purchase at price 4.67 - 4.68 per share.",
