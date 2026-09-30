@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-29T21:06:46.840Z",
+  "updated_at": "2026-09-30T21:05:26.107Z",
   "source": "Yahoo Finance",
   "symbol": "ANET",
   "summary": "Arista Networks, Inc. engages in the development, marketing, and sale of data-driven, client to cloud networking solutions for AI, data center, campus, and routing environments in the Americas, Europe, the Middle East, Africa, and the Asia-Pacific. Its cloud networking solutions consist of Extensible Operating System (EOS), a publish-subscribe state-sharing networking operating system offered in combination with a set of network applications. The company offers data center, cloud and AI networking, cognitive adjacencies, and cognitive network software and services. It also provides post contract customer support services, such as technical support, hardware repair and replacement parts beyond standard warranty, bug fixes, patches, and upgrade services. The company serves a range of industries comprising internet companies, cloud service providers, financial services organizations, government agencies, media and entertainment, healthcare, oil and gas, education, manufacturing, industrial, and others. It markets and sells its products through distributors, system integrators, value-added resellers, and original equipment manufacturer partners, as well as through its direct sales force. Arista Networks, Inc. was formerly known as Arastra, Inc. and changed its name to Arista Networks, Inc. in October 2008. The company was incorporated in 2004 and is headquartered in Santa Clara, California.",
@@ -10,19 +10,19 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": true,
   "earnings_call": "2026-08-04",
-  "eps_estimate": 1.07656,
+  "eps_estimate": 1.07669,
   "analysts": {
     "strong_buy": 7,
-    "buy": 23,
+    "buy": 24,
     "hold": 1,
     "sell": 0,
     "strong_sell": 0,
-    "total": 31
+    "total": 32
   },
-  "target_mean": 241.92892,
+  "target_mean": 242.20724,
   "target_high": 289,
   "target_low": 190,
-  "target_analysts": 28,
+  "target_analysts": 29,
   "statements": [
     {
       "year": "2022",
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.4354,
-    "q1": 0.4,
+    "q0": 0.4356,
+    "q1": 0.3996,
     "y0": 0.3799,
-    "y1": 0.2615
+    "y1": 0.265
   },
   "ratings": [
+    {
+      "date": "2026-09-30",
+      "firm": "Bernstein",
+      "from": null,
+      "to": "Outperform",
+      "action": "init"
+    },
     {
       "date": "2026-09-01",
       "firm": "Deutsche Bank",
@@ -139,13 +146,6 @@
       "firm": "Keybanc",
       "from": "Overweight",
       "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-05",
-      "firm": "Evercore ISI Group",
-      "from": "Outperform",
-      "to": "Outperform",
       "action": "main"
     }
   ],
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 25,
-    "sells": 40,
+    "sells": 41,
     "bought": 537559,
-    "sold": 6745441,
+    "sold": 6808063,
     "net_pct": -2.8
   },
   "extras": {
     "beta": 1.617,
-    "enterprise_value": 245106851840,
-    "ev_ebitda": 52.829,
-    "ev_revenue": 23.253,
+    "enterprise_value": 242508726272,
+    "ev_ebitda": 52.269,
+    "ev_revenue": 23.007,
     "float_shares": 1049792948,
     "short_shares": 13245323,
     "short_pct_float": 1.27,
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "ULLAL JAYSHREE",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 211.40 per share.",
+      "value": 13238022,
+      "shares": 62622,
+      "date": "2026-09-25"
+    },
     {
       "name": "DUDA KENNETH",
       "role": "President",
@@ -351,15 +360,6 @@
       "text": "Sale at price 184.33 - 186.97 per share.",
       "value": 8034699,
       "shares": 43333,
-      "date": "2026-08-20"
-    },
-    {
-      "name": "TEMPLETON MARK B",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 538,
       "date": "2026-08-20"
     }
   ],

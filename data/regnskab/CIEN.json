@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-29T21:06:47.268Z",
+  "updated_at": "2026-09-30T21:05:26.554Z",
   "source": "Yahoo Finance",
   "symbol": "CIEN",
   "summary": "Ciena Corporation, a network technology company, provides hardware, software, and services for various network operators in the Americas, Europe, the Middle East, Africa, the Asia Pacific, Japan, and India. It operates through Networking Platforms, Platform Software and Services, Blue Planet Automation Software and Services, and Global Services segments. The Networking Platforms segment consists optical networking, routing, and switching products and services. This segment products include the 6500 Packet-Optical Platform, Waveserver modular interconnect system, the 6500 Reconfigurable Line System, and coherent pluggable transceivers; and the 3000 family of service delivery platforms and the 5000 family of service aggregation, as well as the 8100 Coherent Routing platforms and virtualization software. The Platform Software and Services segment offers navigator network control suite; and software subscription services, consulting, network migration and integration, installation and upgrade support services, and technical support solutions. The Blue Planet Automation Software and Services segment inventory management, orchestration, route optimization and analysis, and unified assurance and analytics software; and sells subscription, installation, support, consulting, and design services related to the Blue Planet automation platform. The Global Services segment provides services for advisory and enablement, implementation, and maintenance, support, and learning activities. Ciena Corporation was incorporated in 1992 and is headquartered in Fulton, Maryland.",
@@ -10,19 +10,19 @@
   "next_earnings": "2026-09-03",
   "earnings_estimated": false,
   "earnings_call": "2026-09-03",
-  "eps_estimate": 2.07831,
+  "eps_estimate": 2.07665,
   "analysts": {
     "strong_buy": 5,
-    "buy": 10,
+    "buy": 11,
     "hold": 5,
     "sell": 0,
     "strong_sell": 0,
-    "total": 20
+    "total": 21
   },
-  "target_mean": 516.83234,
+  "target_mean": 512.9907,
   "target_high": 660,
   "target_low": 347,
-  "target_analysts": 19,
+  "target_analysts": 20,
   "statements": [
     {
       "year": "2022",
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 1.2839,
-    "q1": 0.7517,
-    "y0": 1.7146001,
-    "y1": 0.64589995
+    "q0": 1.282,
+    "q1": 0.747,
+    "y0": 1.7142999,
+    "y1": 0.6507
   },
   "ratings": [
+    {
+      "date": "2026-09-30",
+      "firm": "Bernstein",
+      "from": null,
+      "to": "Outperform",
+      "action": "init"
+    },
     {
       "date": "2026-09-21",
       "firm": "Evercore ISI Group",
@@ -139,13 +146,6 @@
       "firm": "UBS",
       "from": "Neutral",
       "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-09-04",
-      "firm": "TD Cowen",
-      "from": "Buy",
-      "to": "Buy",
       "action": "main"
     }
   ],
@@ -223,17 +223,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 9,
-    "sells": 37,
-    "bought": 11614,
-    "sold": 101864,
-    "net_pct": -10
+    "buys": 1,
+    "sells": 38,
+    "bought": 6517,
+    "sold": 103450,
+    "net_pct": -10.6
   },
   "extras": {
     "beta": 1.309,
-    "enterprise_value": 49464950784,
-    "ev_ebitda": 48.233,
-    "ev_revenue": 8.216,
+    "enterprise_value": 50986557440,
+    "ev_ebitda": 49.717,
+    "ev_revenue": 8.468,
     "float_shares": 141151952,
     "short_shares": 3590902,
     "short_pct_float": 3.99,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 1655,
+  "inst_count": 1658,
   "eps_history": [
     {
       "quarter": "2025-10-31",
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "CUMELLO JOSEPH RONALD",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 358.52 per share.",
+      "value": 568605,
+      "shares": 1586,
+      "date": "2026-09-25"
+    },
     {
       "name": "CLAFLIN BRUCE L",
       "role": "Director",
@@ -351,15 +360,6 @@
       "text": "Sale at price 438.10 per share.",
       "value": 1095250,
       "shares": 2500,
-      "date": "2026-08-14"
-    },
-    {
-      "name": "GRAFF MARC D.",
-      "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 430.72 per share.",
-      "value": 2151435,
-      "shares": 4995,
       "date": "2026-08-14"
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-29T21:06:47.187Z",
+  "updated_at": "2026-09-30T21:05:26.458Z",
   "source": "Yahoo Finance",
   "symbol": "CALM",
   "summary": "Cal-Maine Foods, Inc., together with its subsidiaries, engages in the production, grading, packaging, marketing, and distribution of shell eggs, egg products, and prepared foods in the United Sates. It operates through Conventional Shell Eggs, Specialty Shell Eggs, and Prepared Foods segments. The company offers specialty shell eggs, including cage-free, organic, brown, free-range, and pasture-raised and nutritionally enhanced eggs, as well as conventional and co-pack shell eggs. It also provides prepared food products, such as pre-cooked egg patties, omelets, folded and scrambled egg formats, hard-cooked eggs, pancakes, waffles, and specialty wraps. The company offers its products under the Egg-Land's Best, Land O' Lakes, Farmhouse Eggs, Sunups, 4Grain, Van's, MeadowCreek Foods, and Crepini brand names. It sells its products to various customers, including national and regional grocery store chains, club stores, independent supermarkets, foodservice distributors, and egg product consumers. Cal-Maine Foods, Inc. was founded in 1957 and is headquartered in Ridgeland, Mississippi.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-09-30",
   "earnings_estimated": false,
   "earnings_call": "2026-09-30",
-  "eps_estimate": -0.76,
+  "eps_estimate": -0.385,
   "analysts": {
     "strong_buy": 0,
     "buy": 0,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 922602000,
-      "earnings": 199340000
-    },
-    {
       "q": "4Q2025",
       "revenue": 769498000,
       "earnings": 102759000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 552581000,
       "earnings": -35876000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 539607000,
+      "earnings": -58615000
     }
   ],
   "growth": {
-    "q0": -1.1898999,
-    "q1": -1.1796,
+    "q0": -1.1796,
+    "q1": -0.939,
     "y0": -1.1498001,
     "y1": 3.2718
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.209,
-    "enterprise_value": 2243842816,
-    "ev_ebitda": 4.798,
-    "ev_revenue": 0.771,
+    "enterprise_value": 2299908864,
+    "ev_ebitda": 4.918,
+    "ev_revenue": 0.79,
     "float_shares": 42034889,
     "short_shares": 4962860,
     "short_pct_float": 12.86,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.72400004,
   "inst_count": 598,
   "eps_history": [
-    {
-      "quarter": "2025-08-31",
-      "estimate": 5.35,
-      "actual": 4.00123,
-      "surprise_pct": -25.21
-    },
     {
       "quarter": "2025-11-30",
       "estimate": 2.005,
@@ -269,6 +263,12 @@
       "estimate": 0.11,
       "actual": -0.77468,
       "surprise_pct": -804.25
+    },
+    {
+      "quarter": "2026-08-31",
+      "estimate": -0.76,
+      "actual": -1.2402,
+      "surprise_pct": -63.18
     }
   ],
   "insiders": [
