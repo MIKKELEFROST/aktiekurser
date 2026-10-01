@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-30T21:05:27.850Z",
+  "updated_at": "2026-10-01T21:21:05.513Z",
   "source": "Yahoo Finance",
   "symbol": "NVR",
   "summary": "NVR, Inc. operates as a homebuilder in the United States. The company operates through Homebuilding and Mortgage Banking segments. It engages in the construction and sale of single-family detached homes, townhomes, and condominium buildings under the Ryan Homes, NVHomes, and Heartland Homes names. The company markets its Ryan Homes products to first-time and first-time move-up buyers; and NVHomes and Heartland Homes products to move-up and luxury buyers. It also provides various mortgage related services to its homebuilding customers, as well as brokers title insurance; performs title searches; and sells mortgage loans to investors in the secondary markets on a servicing released basis. The company primarily serves Maryland, Virginia, West Virginia, Delaware, Washington, D.C., New Jersey, Eastern Pennsylvania, New York, Ohio, Western Pennsylvania, Indiana, Illinois, North Carolina, South Carolina, Tennessee, Florida, Georgia, and Kentucky. NVR, Inc. was founded in 1948 and is headquartered in Reston, Virginia.",
@@ -79,6 +79,13 @@
   },
   "ratings": [
     {
+      "date": "2026-10-01",
+      "firm": "Morgan Stanley",
+      "from": null,
+      "to": "Underweight",
+      "action": "init"
+    },
+    {
       "date": "2026-07-25",
       "firm": "UBS",
       "from": "Neutral",
@@ -140,13 +147,6 @@
       "from": "Neutral",
       "to": "Sell",
       "action": "down"
-    },
-    {
-      "date": "2026-03-04",
-      "firm": "Truist Securities",
-      "from": null,
-      "to": "Hold",
-      "action": "init"
     }
   ],
   "holders": [
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.913,
-    "enterprise_value": 16610934784,
-    "ev_ebitda": 10.81,
-    "ev_revenue": 1.725,
+    "enterprise_value": 16397107200,
+    "ev_ebitda": 10.671,
+    "ev_revenue": 1.702,
     "float_shares": 2620996,
     "short_shares": 130731,
     "short_pct_float": 7.47,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 1003,
+  "inst_count": 1001,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -320,15 +320,6 @@
     {
       "name": "ROSS SUSAN WILLIAMSON",
       "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 7922.06 per share.",
-      "value": 1584412,
-      "shares": 200,
-      "date": "2026-02-13"
-    },
-    {
-      "name": "ROSS SUSAN WILLIAMSON",
-      "role": "Director",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 1700.00 per share.",
       "value": 340000,
@@ -336,13 +327,13 @@
       "date": "2026-02-13"
     },
     {
-      "name": "KELPY MATTHEW B.",
-      "role": "Officer",
+      "name": "ROSS SUSAN WILLIAMSON",
+      "role": "Director",
       "kind": "sell",
-      "text": "Sale at price 8100.00 per share.",
-      "value": 4050000,
-      "shares": 500,
-      "date": "2026-02-10"
+      "text": "Sale at price 7922.06 per share.",
+      "value": 1584412,
+      "shares": 200,
+      "date": "2026-02-13"
     },
     {
       "name": "KELPY MATTHEW B.",
@@ -354,11 +345,20 @@
       "date": "2026-02-10"
     },
     {
+      "name": "KELPY MATTHEW B.",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 8100.00 per share.",
+      "value": 4050000,
+      "shares": 500,
+      "date": "2026-02-10"
+    },
+    {
       "name": "ROSS SUSAN WILLIAMSON",
       "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 8091.62 per share.",
-      "value": 1618324,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 1700.00 per share.",
+      "value": 340000,
       "shares": 200,
       "date": "2026-02-05"
     }

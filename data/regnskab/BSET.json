@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-30T21:05:26.404Z",
+  "updated_at": "2026-10-01T21:21:04.003Z",
   "source": "Yahoo Finance",
   "symbol": "BSET",
   "summary": "Bassett Furniture Industries, Incorporated, together with its subsidiaries, designs, manufactures, sources, distributes, and retails home furnishings and furniture products in the United States. It operates through two segments, Wholesale and RetailCompany-Owned Stores. The company offers sofas, chairs, reclining furniture, ottomans and benches, and leather furniture; tables and cabinets; dining and outdoor furniture; beds, dressers and chests, nightstands and bedside tables, mattresses and bases, duvet covers and inserts, quilts and coverlets, sheets and pillowcases, shams and pillow inserts, accent pillows, and throws; office chairs, desks, and storages; home decor products, lighting, wall decor, mirrors, cabinet hardware, and cutting boards; and rugs. It is also involved in wood and upholstery operations. The company sells its products through a network of company-owned and licensee-owned stores under the Bassett Home Furnishings name; and independent retailers; multi-line furniture stores, including Bassett galleries or design centers; and online. Bassett Furniture Industries, Incorporated was founded in 1902 and is based in Bassett, Virginia.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-09-30",
   "earnings_estimated": false,
   "earnings_call": "2026-10-01",
-  "eps_estimate": 0.12,
+  "eps_estimate": 0.4,
   "analysts": {
     "strong_buy": 0,
     "buy": 0,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 80103000,
-      "earnings": 801000
-    },
-    {
       "q": "4Q2025",
       "revenue": 88667000,
       "earnings": 1529000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 83753000,
       "earnings": 2039000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 82838000,
+      "earnings": 2101000
     }
   ],
   "growth": {
-    "q0": 0.33330002,
-    "q1": 0.8553,
+    "q0": 0.8553,
+    "q1": 0.76919997,
     "y0": 0.1895,
     "y1": 0.5568
   },
@@ -210,9 +210,9 @@
   },
   "extras": {
     "beta": 0.734,
-    "enterprise_value": 190212752,
-    "ev_ebitda": 12.38,
-    "ev_revenue": 0.571,
+    "enterprise_value": 185190960,
+    "ev_ebitda": 12.054,
+    "ev_revenue": 0.556,
     "float_shares": 7645338,
     "short_shares": 60524,
     "short_pct_float": 0.85,
@@ -225,12 +225,6 @@
   "payout_ratio": 1.25,
   "inst_count": 92,
   "eps_history": [
-    {
-      "quarter": "2025-08-31",
-      "estimate": 0.085,
-      "actual": 0.09,
-      "surprise_pct": 5.88
-    },
     {
       "quarter": "2025-11-30",
       "estimate": 0.295,
@@ -248,36 +242,15 @@
       "estimate": 0.23,
       "actual": 0.24,
       "surprise_pct": 4.35
+    },
+    {
+      "quarter": "2026-08-31",
+      "estimate": 0.12,
+      "actual": 0.24,
+      "surprise_pct": 100
     }
   ],
   "insiders": [
-    {
-      "name": "CASHMAN KRISTINA K",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 14.00 per share.",
-      "value": 39998,
-      "shares": 2857,
-      "date": "2026-03-11"
-    },
-    {
-      "name": "BELK JOHN R",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 14.00 per share.",
-      "value": 39998,
-      "shares": 2857,
-      "date": "2026-03-11"
-    },
-    {
-      "name": "WARDEN WILLIAM C JR",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 14.00 per share.",
-      "value": 39998,
-      "shares": 2857,
-      "date": "2026-03-11"
-    },
     {
       "name": "WAMPLER WILLIAM C JR",
       "role": "Director",
@@ -316,6 +289,33 @@
     },
     {
       "name": "GOERGEN JAMES EDWARD",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 14.00 per share.",
+      "value": 39998,
+      "shares": 2857,
+      "date": "2026-03-11"
+    },
+    {
+      "name": "CASHMAN KRISTINA K",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 14.00 per share.",
+      "value": 39998,
+      "shares": 2857,
+      "date": "2026-03-11"
+    },
+    {
+      "name": "BELK JOHN R",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 14.00 per share.",
+      "value": 39998,
+      "shares": 2857,
+      "date": "2026-03-11"
+    },
+    {
+      "name": "WARDEN WILLIAM C JR",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 14.00 per share.",

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-30T21:05:28.548Z",
+  "updated_at": "2026-10-01T21:21:06.254Z",
   "source": "Yahoo Finance",
   "symbol": "UTHR",
   "summary": "United Therapeutics Corporation engages in the development and commercialization of products to address the unmet medical needs of patients with chronic and life-threatening diseases in the United States and internationally. It offers Tyvaso DPI, an inhaled dry powder via pre-filled and single-use cartridges; Nebulized Tyvaso, an inhaled solution via ultrasonic nebulizer; Remodulin (treprostinil) injection to treat patients with pulmonary arterial hypertension to diminish symptoms associated with exercise; Orenitram, a tablet dosage form of treprostinil, to delay disease progression and improve exercise capacity in PAH patients; and Adcirca, an oral PDE-5 inhibitor to enhance the exercise ability in PAH patients. It also markets and sells Unituxin (dinutuximab) injection, a monoclonal antibody for high-risk neuroblastoma; and Remunity Pump, which contains a pump and separate controller for Remodulin. In addition, it is involved in developing RemunityPRO Pump and Ralinepag for the treatment of PAH;and Nebulized Tyvaso, for the treatment of idiopathic pulmonary fibrosis, as well as xenografts, which are development-stage organ products. Further, it provides preclinical products, including EVLP/CLES, for lung transplant; UKidney, UHeart, UThymoKidney, a development-stage gene-edited porcine kidneys and hearts for xenotransplantation; ULobe, for allogeneic regenerative medicine; ULung, for autologous regenerative medicine; IVIVA Kidney, for autologous regenerative medicine; miroliver, for allogeneic regenerative medicine; and mirokidney, for allogeneic regenerative medicine. It has licensing and collaboration agreements with DEKA Research & Development Corp. to develop a semi-disposable system for the subcutaneous delivery of treprostinil; MannKind Corporation to develop and license treprostinil inhalation powder and the Dreamboat device; and Arena Pharmaceuticals, Inc. to develop Ralinepag. The company was founded in 1996 and is headquartered in Silver Spring, Maryland.",
@@ -10,14 +10,14 @@
   "next_earnings": "2026-10-28",
   "earnings_estimated": true,
   "earnings_call": "2026-08-05",
-  "eps_estimate": 6.96494,
+  "eps_estimate": 6.93392,
   "analysts": {
     "strong_buy": 3,
     "buy": 8,
-    "hold": 3,
+    "hold": 2,
     "sell": 1,
     "strong_sell": 0,
-    "total": 15
+    "total": 14
   },
   "target_mean": 637.9231,
   "target_high": 725,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": -0.0272,
-    "q1": -0.0829,
-    "y0": -0.010299999,
-    "y1": 0.0892
+    "q0": -0.031600002,
+    "q1": -0.0862,
+    "y0": -0.0235,
+    "y1": 0.09810001
   },
   "ratings": [
+    {
+      "date": "2026-10-01",
+      "firm": "BTIG",
+      "from": "Neutral",
+      "to": "Buy",
+      "action": "up"
+    },
     {
       "date": "2026-09-24",
       "firm": "Goldman Sachs",
@@ -139,13 +146,6 @@
       "firm": "HC Wainwright & Co.",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-03-31",
-      "firm": "Wells Fargo",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
       "action": "main"
     }
   ],
@@ -223,17 +223,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 170,
-    "sells": 164,
-    "bought": 1530829,
-    "sold": 1514646,
+    "buys": 167,
+    "sells": 161,
+    "bought": 1510029,
+    "sold": 1493846,
     "net_pct": 1.9
   },
   "extras": {
     "beta": 0.558,
-    "enterprise_value": 17988282368,
-    "ev_ebitda": 12.023,
-    "ev_revenue": 5.702,
+    "enterprise_value": 20579737600,
+    "ev_ebitda": 13.755,
+    "ev_revenue": 6.524,
     "float_shares": 39212815,
     "short_shares": 2800470,
     "short_pct_float": 7.62,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 1219,
+  "inst_count": 1210,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -272,6 +272,24 @@
     }
   ],
   "insiders": [
+    {
+      "name": "ROTHBLATT MARTINE A",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 117.76 per share.",
+      "value": 1118720,
+      "shares": 9500,
+      "date": "2026-09-29"
+    },
+    {
+      "name": "ROTHBLATT MARTINE A",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 472.05 - 486.77 per share.",
+      "value": 4535480,
+      "shares": 9500,
+      "date": "2026-09-29"
+    },
     {
       "name": "ROTHBLATT MARTINE A",
       "role": "Chief Executive Officer",
@@ -343,24 +361,6 @@
       "value": 4700851,
       "shares": 9500,
       "date": "2026-09-22"
-    },
-    {
-      "name": "ROTHBLATT MARTINE A",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 117.76 per share.",
-      "value": 1118720,
-      "shares": 9500,
-      "date": "2026-09-21"
-    },
-    {
-      "name": "ROTHBLATT MARTINE A",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 492.97 - 496.62 per share.",
-      "value": 4698271,
-      "shares": 9500,
-      "date": "2026-09-21"
     }
   ],
   "dividends": [],

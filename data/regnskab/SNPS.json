@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-09-30T21:05:28.290Z",
+  "updated_at": "2026-10-01T21:21:05.995Z",
   "source": "Yahoo Finance",
   "symbol": "SNPS",
-  "summary": "Synopsys, Inc. provides design IP solutions in the semiconductor and electronics industries. It operates in two segments, Design Automation and Design IP. The company offers Digital and Custom IC Design solution that provides digital design implementation solutions; Verification solution that offers virtual prototyping, static and formal verification, simulation, emulation, field programmable gate array (FPGA)-based prototyping, and debug solutions; FPGA design products that are programmed to perform specific functions; synopsys technology computer-aided design (TCAD), mask synthesis, and manufacturing analytic solutions; and AI-driven EDA solutions. It also provides pre-verified and silicon-proven IP solutions, logic libraries and embedded memories, processor and security solutions, IP Offerings for the automotive market, SOC infrastructure IP, data path and building block IP, and mathematical and floating-point components. Synopsys, Inc. has a strategic collaboration with Arm Holdings plc for development of AGI CPU that provides solutions across its full-stack design portfolio including EDA, interface IP, and hardware-assisted verification (HAV). The company was incorporated in 1986 and is headquartered in Sunnyvale, California.",
+  "summary": "Synopsys, Inc. provides design IP solutions in the semiconductor and electronics industries. It operates in two segments, Design Automation and Design IP. The company offers Digital and Custom IC Design solution that provides digital design implementation solutions; Verification solution that offers virtual prototyping, static and formal verification, simulation, emulation, field programmable gate array (FPGA)-based prototyping, and debug solutions; FPGA design products that are programmed to perform specific functions; synopsys technology computer-aided design (TCAD), mask synthesis, and manufacturing analytic solutions; and AI-driven EDA solutions. It also provides pre-verified and silicon-proven IP solutions, logic libraries and embedded memories, processor and security solutions, IP Offerings for the automotive market, SOC infrastructure IP, data path and building block IP, and mathematical and floating-point components. Synopsys, Inc. has a strategic collaboration with Arm Holdings plc for development of AGI CPU that provides solutions across its full-stack design portfolio including EDA, interface IP, and hardware-assisted verification (HAV). It has a strategic partnership with OpenAI to revolutionize the design of semiconductors. Synopsys, Inc. has a strategic agreement with Amazon to accelerate Amazon's custom silicon innovation and advance the development of complex AI-powered products and cloud infrastructure. The company was incorporated in 1986 and is headquartered in Sunnyvale, California.",
   "industry": "Software - Infrastructure",
   "website": "https://www.synopsys.com",
   "employees": 28000,
@@ -13,16 +13,16 @@
   "eps_estimate": 4.12594,
   "analysts": {
     "strong_buy": 4,
-    "buy": 18,
+    "buy": 19,
     "hold": 2,
     "sell": 0,
     "strong_sell": 0,
-    "total": 24
+    "total": 25
   },
-  "target_mean": 553.7712,
+  "target_mean": 563.43384,
   "target_high": 700,
   "target_low": 414.77,
-  "target_analysts": 25,
+  "target_analysts": 26,
   "statements": [
     {
       "year": "2022",
@@ -73,11 +73,32 @@
   ],
   "growth": {
     "q0": 0.42270002,
-    "q1": 0.14850001,
+    "q1": 0.1864,
     "y0": 0.1726,
-    "y1": 0.16870001
+    "y1": 0.24780001
   },
   "ratings": [
+    {
+      "date": "2026-10-01",
+      "firm": "Wells Fargo",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-01",
+      "firm": "Keybanc",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-01",
+      "firm": "Rosenblatt",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-09-25",
       "firm": "HSBC",
@@ -122,27 +143,6 @@
     },
     {
       "date": "2026-08-27",
-      "firm": "Rosenblatt",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-27",
-      "firm": "Benchmark",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "reit"
-    },
-    {
-      "date": "2026-08-27",
-      "firm": "Needham",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "reit"
-    },
-    {
-      "date": "2026-08-25",
       "firm": "Rosenblatt",
       "from": "Buy",
       "to": "Buy",
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.227,
-    "enterprise_value": 86779412480,
-    "ev_ebitda": 41.812,
-    "ev_revenue": 9.216,
+    "enterprise_value": 90583400448,
+    "ev_ebitda": 43.644,
+    "ev_revenue": 9.62,
     "float_shares": 190523237,
     "short_shares": 5712575,
     "short_pct_float": 2.99,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 2110,
+  "inst_count": 2090,
   "eps_history": [
     {
       "quarter": "2025-10-31",
@@ -275,18 +275,18 @@
     {
       "name": "GHAZI SASSINE E",
       "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 374.88 per share.",
-      "value": 5474683,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 135.88 per share.",
+      "value": 1984392,
       "shares": 14604,
       "date": "2026-09-15"
     },
     {
       "name": "GHAZI SASSINE E",
       "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 135.88 per share.",
-      "value": 1984392,
+      "kind": "sell",
+      "text": "Sale at price 374.88 per share.",
+      "value": 5474683,
       "shares": 14604,
       "date": "2026-09-15"
     },
@@ -298,15 +298,6 @@
       "value": null,
       "shares": 2283,
       "date": "2026-09-11"
-    },
-    {
-      "name": "DE GEUS AART J",
-      "role": "Officer and Director",
-      "kind": "sell",
-      "text": "Sale at price 419.44 - 441.76 per share.",
-      "value": 21379539,
-      "shares": 49641,
-      "date": "2026-09-01"
     },
     {
       "name": "DE GEUS AART J",
@@ -330,10 +321,10 @@
       "name": "DE GEUS AART J",
       "role": "Officer and Director",
       "kind": "sell",
-      "text": "Sale at price 445.55 per share.",
-      "value": 11138755,
-      "shares": 25000,
-      "date": "2026-08-28"
+      "text": "Sale at price 419.44 - 441.76 per share.",
+      "value": 21379539,
+      "shares": 49641,
+      "date": "2026-09-01"
     },
     {
       "name": "DE GEUS AART J",
@@ -341,6 +332,15 @@
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 135.88 per share.",
       "value": 3397000,
+      "shares": 25000,
+      "date": "2026-08-28"
+    },
+    {
+      "name": "DE GEUS AART J",
+      "role": "Officer and Director",
+      "kind": "sell",
+      "text": "Sale at price 445.55 per share.",
+      "value": 11138755,
       "shares": 25000,
       "date": "2026-08-28"
     },
@@ -356,10 +356,10 @@
     {
       "name": "GHAZI SASSINE E",
       "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 458.96 per share.",
-      "value": 6702222,
-      "shares": 14603,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 135.88 per share.",
+      "value": 1984256,
+      "shares": 17913,
       "date": "2026-06-15"
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-30T21:05:28.858Z",
+  "updated_at": "2026-10-01T21:21:06.613Z",
   "source": "Yahoo Finance",
   "symbol": "PRGS",
   "summary": "Progress Software Corporation provides software products that develops, deploys, and manages artificial intelligence (AI) powered applications and digital experiences in the United States and internationally. The company offers Agentic RAG, a next-generation Agentic Rag-as-a-Service platform; Automate MFT, a cloud-native Software-as-a-Service (SaaS) platform for automated and secure file transfers; Chef, a DevOps/DevSecOps automation software; Corticon, a decision automation platform; DataDirect, a secure data connectivity tools for Relational, NoSQL, Big Data, and SaaS data sources; Developer Tools, such as software development tooling collection, including NET and JavaScript UI components for web, desktop and mobile applications, AI-prompt components, reporting and report management tools, and automated testing and mocking tools; Flowmon, a AI-powered network security and visibility product with automated response across hybrid cloud ecosystems; and Kemp LoadMaster, an application delivery and security product for cloud-native, and virtual and hardware load balancers. It also provides MarkLogic, a data agility platform to connect data and metadata; MOVEit, a managed file transfer software; OpenEdge, an application development platform; Semaphore, a Semantic AI platform; ShareFile, an SaaS-native AI-powered document centric collaboration platform; Sitefinity, a digital experience platform foundation; and WhatsUp Gold, a network infrastructure monitoring software to find and fix network problems. The company offers project management, implementation, custom software development, programming, and other services, as well as web-enable applications, and training services. It sells its products to end users, independent software vendors, original equipment manufacturers, system integrators, value added resellers, and distributors. The company was founded in 1981 and is headquartered in Burlington, Massachusetts.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-09-30",
   "earnings_estimated": false,
   "earnings_call": "2026-09-30",
-  "eps_estimate": 1.51508,
+  "eps_estimate": 1.34236,
   "analysts": {
     "strong_buy": 0,
     "buy": 4,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 249795000,
-      "earnings": 19413000
-    },
-    {
       "q": "4Q2025",
       "revenue": 252666000,
       "earnings": 25745000
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 253465000,
       "earnings": 21073000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 246005000,
+      "earnings": 22776000
     }
   ],
   "growth": {
-    "q0": 0.0101,
-    "q1": -0.0419,
-    "y0": 0.0801,
-    "y1": 0.059
+    "q0": -0.111,
+    "q1": -0.0066000004,
+    "y0": 0.08180001,
+    "y1": 0.12640001
   },
   "ratings": [
     {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.821,
-    "enterprise_value": 2841330432,
-    "ev_ebitda": 8.513,
-    "ev_revenue": 2.831,
+    "enterprise_value": 2863067392,
+    "ev_ebitda": 8.579,
+    "ev_revenue": 2.852,
     "float_shares": 40338279,
     "short_shares": 4679885,
     "short_pct_float": 16.69,
@@ -244,14 +244,8 @@
   "ex_dividend": "2024-08-30",
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 416,
+  "inst_count": 415,
   "eps_history": [
-    {
-      "quarter": "2025-08-31",
-      "estimate": 1.29666,
-      "actual": 1.5,
-      "surprise_pct": 15.68
-    },
     {
       "quarter": "2025-11-30",
       "estimate": 1.31257,
@@ -269,6 +263,12 @@
       "estimate": 1.48947,
       "actual": 1.62,
       "surprise_pct": 8.76
+    },
+    {
+      "quarter": "2026-08-31",
+      "estimate": 1.51508,
+      "actual": 1.69,
+      "surprise_pct": 11.55
     }
   ],
   "insiders": [
@@ -291,6 +291,15 @@
       "date": "2026-07-29"
     },
     {
+      "name": "EGAN JOHN R",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 38.42 per share.",
+      "value": 225026,
+      "shares": 5857,
+      "date": "2026-07-02"
+    },
+    {
       "name": "KANE CHARLES FRANCIS",
       "role": "Director",
       "kind": "other",
@@ -309,7 +318,7 @@
       "date": "2026-07-02"
     },
     {
-      "name": "EGAN JOHN R",
+      "name": "KRALL DAVID A",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 38.42 per share.",
@@ -346,15 +355,6 @@
     },
     {
       "name": "KING SAMSKRITI",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 38.42 per share.",
-      "value": 225026,
-      "shares": 5857,
-      "date": "2026-07-02"
-    },
-    {
-      "name": "KRALL DAVID A",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 38.42 per share.",

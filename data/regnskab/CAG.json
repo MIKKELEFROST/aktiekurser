@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-30T21:05:26.456Z",
+  "updated_at": "2026-10-01T21:21:04.043Z",
   "source": "Yahoo Finance",
   "symbol": "CAG",
   "summary": "Conagra Brands, Inc., together with its subsidiaries, operates as a branded consumer packaged goods food company primarily in the United States. The company operates in four segments: Grocery & Snacks, Refrigerated & Frozen, International, and Foodservice. The Grocery & Snacks segment primarily offers shelf stable food products through various retail channels. The Refrigerated & Frozen segment provides temperature-controlled food products through various retail channels. The International segment offers food products in various temperature states through retail and foodservice channels outside of the United States. The Foodservice segment offers branded and customized food products, including meals, entrees, sauces, and various custom-manufactured culinary products packaged for restaurants and other foodservice establishments. The company sells its products under the Birds Eye, Duncan Hines, Healthy Choice, Marie Callender's, Reddi-wip, Slim Jim, and Angie's BOOMCHICKAPOP brands. Conagra Brands, Inc. was incorporated in 1919 and is headquartered in Chicago, Illinois.",
@@ -7,10 +7,10 @@
   "website": "https://www.conagrabrands.com",
   "employees": 17400,
   "ceo": "Mr. John P. Brase",
-  "next_earnings": "2026-09-30",
-  "earnings_estimated": false,
+  "next_earnings": "2026-12-18",
+  "earnings_estimated": true,
   "earnings_call": "2026-09-30",
-  "eps_estimate": 0.28291,
+  "eps_estimate": 0.36361,
   "analysts": {
     "strong_buy": 1,
     "buy": 1,
@@ -19,9 +19,9 @@
     "strong_sell": 2,
     "total": 17
   },
-  "target_mean": 14.44375,
+  "target_mean": 14.38125,
   "target_high": 23,
-  "target_low": 12,
+  "target_low": 11,
   "target_analysts": 16,
   "statements": [
     {
@@ -72,12 +72,26 @@
     }
   ],
   "growth": {
-    "q0": -0.2746,
-    "q1": -0.1018,
-    "y0": -0.1612,
-    "y1": 0.0591
+    "q0": -0.192,
+    "q1": -0.105900005,
+    "y0": -0.15529999,
+    "y1": 0.0523
   },
   "ratings": [
+    {
+      "date": "2026-10-01",
+      "firm": "Evercore ISI Group",
+      "from": "In-Line",
+      "to": "In-Line",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-01",
+      "firm": "RBC Capital",
+      "from": "Sector Perform",
+      "to": "Sector Perform",
+      "action": "reit"
+    },
     {
       "date": "2026-09-29",
       "firm": "Evercore ISI Group",
@@ -132,20 +146,6 @@
       "firm": "Barclays",
       "from": "Overweight",
       "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-06-25",
-      "firm": "RBC Capital",
-      "from": "Sector Perform",
-      "to": "Sector Perform",
-      "action": "main"
-    },
-    {
-      "date": "2026-06-18",
-      "firm": "Deutsche Bank",
-      "from": "Hold",
-      "to": "Hold",
       "action": "main"
     }
   ],
@@ -230,11 +230,11 @@
     "net_pct": null
   },
   "extras": {
-    "beta": -0.033,
-    "enterprise_value": 14019232768,
-    "ev_ebitda": 8.05,
-    "ev_revenue": 1.243,
-    "float_shares": 475067327,
+    "beta": null,
+    "enterprise_value": 13830292480,
+    "ev_ebitda": 8.1,
+    "ev_revenue": 1.23,
+    "float_shares": 475796317,
     "short_shares": 40286287,
     "short_pct_float": 10.84,
     "short_ratio": 3.89,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-11-05",
   "dividend_date": null,
   "payout_ratio": 0.791,
-  "inst_count": 1021,
+  "inst_count": 1013,
   "eps_history": [
-    {
-      "quarter": "2025-08-31",
-      "estimate": 0.33218,
-      "actual": 0.39,
-      "surprise_pct": 17.41
-    },
     {
       "quarter": "2025-11-30",
       "estimate": 0.43614,
@@ -269,6 +263,12 @@
       "estimate": 0.45729,
       "actual": 0.47,
       "surprise_pct": 2.78
+    },
+    {
+      "quarter": "2026-08-31",
+      "estimate": 0.28291,
+      "actual": 0.41,
+      "surprise_pct": 44.92
     }
   ],
   "insiders": [
@@ -280,33 +280,6 @@
       "value": 26250,
       "shares": 1629,
       "date": "2026-09-01"
-    },
-    {
-      "name": "BARTELL CAREY",
-      "role": "General Counsel",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 5481,
-      "date": "2026-07-24"
-    },
-    {
-      "name": "NAPIER MELISSA C",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 2698,
-      "date": "2026-07-24"
-    },
-    {
-      "name": "MCGOUGH THOMAS M",
-      "role": "Chief Operating Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 11419,
-      "date": "2026-07-24"
     },
     {
       "name": "BROCK CHARISSE",
@@ -336,8 +309,35 @@
       "date": "2026-07-24"
     },
     {
+      "name": "BARTELL CAREY",
+      "role": "General Counsel",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 5481,
+      "date": "2026-07-24"
+    },
+    {
+      "name": "NAPIER MELISSA C",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 2698,
+      "date": "2026-07-24"
+    },
+    {
       "name": "MARBERGER DAVID S",
       "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 11419,
+      "date": "2026-07-24"
+    },
+    {
+      "name": "MCGOUGH THOMAS M",
+      "role": "Chief Operating Officer",
       "kind": "other",
       "text": null,
       "value": null,

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-30T21:05:27.664Z",
+  "updated_at": "2026-10-01T21:21:05.305Z",
   "source": "Yahoo Finance",
   "symbol": "MC",
   "summary": "Moelis & Company operates as an investment banking advisory company in North and South America, Europe, the Middle East, Asia, and Australia. It offers advisory services in the areas of mergers and acquisitions, recapitalizations and restructurings, capital markets transactions, and other corporate finance matters, as well as strategic advisory, capital markets, capital structure advisory, and private capital advisory. The company serves public multinational corporations, middle market private companies, financial sponsors, entrepreneurs, governments, and sovereign wealth funds clients. Moelis & Company was founded in 2007 and is headquartered in New York, New York.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-28",
   "earnings_estimated": false,
   "earnings_call": "2026-07-29",
-  "eps_estimate": 0.75677,
+  "eps_estimate": 0.77205,
   "analysts": {
     "strong_buy": 1,
     "buy": 2,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 11
   },
-  "target_mean": 72,
+  "target_mean": 72.2,
   "target_high": 86,
   "target_low": 60,
   "target_analysts": 10,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.1129,
-    "q1": 0.059299998,
-    "y0": 0.028399998,
-    "y1": 0.2753
+    "q0": 0.1354,
+    "q1": 0.0788,
+    "y0": 0.0433,
+    "y1": 0.2627
   },
   "ratings": [
+    {
+      "date": "2026-10-01",
+      "firm": "Goldman Sachs",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-07-30",
       "firm": "Morgan Stanley",
@@ -137,13 +144,6 @@
     {
       "date": "2026-03-12",
       "firm": "Goldman Sachs",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-02-05",
-      "firm": "JP Morgan",
       "from": "Neutral",
       "to": "Neutral",
       "action": "main"
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.838,
-    "enterprise_value": 4487461888,
+    "enterprise_value": 4451902976,
     "ev_ebitda": null,
-    "ev_revenue": 2.851,
+    "ev_revenue": 2.828,
     "float_shares": 73304526,
     "short_shares": 5358237,
     "short_pct_float": 8.2,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-08-10",
   "dividend_date": null,
   "payout_ratio": 0.90589994,
-  "inst_count": 516,
+  "inst_count": 513,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -327,15 +327,6 @@
       "date": "2026-07-01"
     },
     {
-      "name": "WATANABE OSAMU R",
-      "role": "General Counsel",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 9218,
-      "date": "2026-02-19"
-    },
-    {
       "name": "CANTOR ERIC",
       "role": "Officer and Director",
       "kind": "other",
@@ -360,6 +351,15 @@
       "text": null,
       "value": null,
       "shares": 4885,
+      "date": "2026-02-19"
+    },
+    {
+      "name": "RIEHL NICK",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 61,
       "date": "2026-02-19"
     }
   ],
