@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-01T21:21:05.574Z",
+  "updated_at": "2026-10-02T21:02:04.772Z",
   "source": "Yahoo Finance",
   "symbol": "ONTO",
   "summary": "Onto Innovation Inc. engages in the design, development, manufacture, and support of process control tools that perform macro-defect inspection and metrology in the United States, Taiwan, South Korea, Japan, China, Southeast Asia, Asia, and Europe. The company offers lithography systems and process control analytical software; and automated and integrated metrology systems, silicon wafer all-surface inspection, macro defect inspection, automated defect classification and pattern analysis, yield analysis, opaque film metrology, 4D business, advanced packaging lithography, process control software, and yield management software products. It also provides process and yield management solutions, and device packaging and test facilities through standalone systems for optical metrology, macro-defect inspection, packaging lithography, and transparent and opaque thin film measurements. In addition, the company offers process control software portfolio that includes solutions for standalone tools, groups of tools, and factory-wide suites. Further, it engages in systems and software, spare parts, and other services, as well as offers software licensing services; and provides advanced product lines, such as FAaST, CnCV, and MBIR. The company's products are used in semiconductor and advanced packaging device manufacturers; silicon wafers; semiconductor integrated circuit fabricators; light emitting diodes; vertical-cavity surface-emitting lasers; micro-electromechanical systems; CMOS image sensors; silicon and compound semiconductor power devices; analog devices; RF filters; data storage; and various industrial and scientific applications. Onto Innovation Inc. was founded in 1940 and is headquartered in Wilmington, Massachusetts.",
@@ -10,19 +10,19 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-08-06",
-  "eps_estimate": 2.30422,
+  "eps_estimate": 2.30202,
   "analysts": {
-    "strong_buy": 2,
+    "strong_buy": 3,
     "buy": 9,
     "hold": 0,
     "sell": 0,
     "strong_sell": 0,
-    "total": 11
+    "total": 12
   },
-  "target_mean": 386.36365,
+  "target_mean": 387.5,
   "target_high": 450,
   "target_low": 330,
-  "target_analysts": 11,
+  "target_analysts": 12,
   "statements": [
     {
       "year": "2022",
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 1.5046,
-    "q1": 0.96900004,
+    "q0": 1.5022,
+    "q1": 0.96819997,
     "y0": 0.64089996,
-    "y1": 0.44189999
+    "y1": 0.443
   },
   "ratings": [
+    {
+      "date": "2026-10-02",
+      "firm": "RBC Capital",
+      "from": null,
+      "to": "Outperform",
+      "action": "init"
+    },
     {
       "date": "2026-09-08",
       "firm": "Morgan Stanley",
@@ -140,13 +147,6 @@
       "from": null,
       "to": "Buy",
       "action": "init"
-    },
-    {
-      "date": "2026-05-06",
-      "firm": "Needham",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
     }
   ],
   "holders": [
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 6,
-    "sells": 1,
+    "sells": 2,
     "bought": 4566,
-    "sold": 1000,
-    "net_pct": 1.1
+    "sold": 3000,
+    "net_pct": 0.5
   },
   "extras": {
     "beta": 1.583,
-    "enterprise_value": 14695615488,
-    "ev_ebitda": 47.557,
-    "ev_revenue": 13.119,
+    "enterprise_value": 15042079744,
+    "ev_ebitda": 48.678,
+    "ev_revenue": 13.429,
     "float_shares": 48705209,
     "short_shares": 2740793,
     "short_pct_float": 7.1,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 885,
+  "inst_count": 886,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -273,6 +273,15 @@
   ],
   "insiders": [
     {
+      "name": "MILLER DAVID B",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 300.00 per share.",
+      "value": 600000,
+      "shares": 2000,
+      "date": "2026-09-29"
+    },
+    {
       "name": "LYNCH SUSAN D.",
       "role": "Director",
       "kind": "sell",
@@ -280,33 +289,6 @@
       "value": 302300,
       "shares": 1000,
       "date": "2026-08-21"
-    },
-    {
-      "name": "SCHWARTZ STEPHEN S",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 761,
-      "date": "2026-05-20"
-    },
-    {
-      "name": "MILLER DAVID B",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 761,
-      "date": "2026-05-20"
-    },
-    {
-      "name": "SEAMS CHRISTOPHER A",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 761,
-      "date": "2026-05-20"
     },
     {
       "name": "SU MAY",
@@ -336,22 +318,31 @@
       "date": "2026-05-20"
     },
     {
-      "name": "ROBERTS BRIAN K",
-      "role": "Chief Financial Officer",
+      "name": "SCHWARTZ STEPHEN S",
+      "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 3096,
-      "date": "2026-03-02"
+      "shares": 761,
+      "date": "2026-05-20"
     },
     {
-      "name": "PLISINSKI MICHAEL P",
-      "role": "Chief Executive Officer",
+      "name": "MILLER DAVID B",
+      "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 14479,
-      "date": "2026-03-02"
+      "shares": 761,
+      "date": "2026-05-20"
+    },
+    {
+      "name": "SEAMS CHRISTOPHER A",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 761,
+      "date": "2026-05-20"
     },
     {
       "name": "OH YOON AH",
@@ -360,6 +351,15 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 2408,
+      "date": "2026-03-02"
+    },
+    {
+      "name": "YALDAEI RAMIL",
+      "role": "Chief Operating Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 7683,
       "date": "2026-03-02"
     }
   ],

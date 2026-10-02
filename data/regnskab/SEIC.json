@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-01T21:21:05.909Z",
+  "updated_at": "2026-10-02T21:02:05.105Z",
   "source": "Yahoo Finance",
   "symbol": "SEIC",
   "summary": "SEI Investments Company is a publicly owned asset management holding company. Through its subsidiaries, the firm provides wealth management, retirement and investment solutions, asset management, asset administration, investment processing outsourcing solutions, financial services, and investment advisory services to its clients. It provides its services to private banks, independent financial advisers, institutional investors, investment managers, investment advisors, wealth management organizations, corporations, retirement scheme sponsors, not-for-profit organizations, hedge fund managers, registered investment advisers, independent broker-dealers, financial planners, life insurance agents, defined-benefit schemes, defined-contribution schemes, endowments, foundations, and board-designated fund, through its subsidiaries. Through its subsidiaries, the firm manages separate client-focused portfolios. It also launches and manages equity, fixed income, and balanced mutual funds, through its subsidiaries. Through its subsidiaries, the firm invests in public equity and fixed income markets. It employs fundamental and quantitative analysis with a focus on top-down and bottom-up analysis to make its investments, through its subsidiaries. SEI Investments Company was founded in 1968 and is based in Oaks, Pennsylvania with additional offices in North America, Europe, Asia and Africa.",
@@ -10,19 +10,19 @@
   "next_earnings": "2026-10-21",
   "earnings_estimated": false,
   "earnings_call": "2026-07-22",
-  "eps_estimate": 1.5785,
+  "eps_estimate": 1.57872,
   "analysts": {
     "strong_buy": 4,
-    "buy": 3,
+    "buy": 4,
     "hold": 1,
     "sell": 0,
     "strong_sell": 0,
-    "total": 8
+    "total": 9
   },
-  "target_mean": 115.85714,
-  "target_high": 125,
+  "target_mean": 117.125,
+  "target_high": 129,
   "target_low": 98,
-  "target_analysts": 7,
+  "target_analysts": 8,
   "statements": [
     {
       "year": "2022",
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.2142,
-    "q1": 0.21700001,
-    "y0": 0.1095,
-    "y1": 0.1112
+    "q0": 0.21440001,
+    "q1": 0.2191,
+    "y0": 0.1122,
+    "y1": 0.113000005
   },
   "ratings": [
+    {
+      "date": "2026-10-02",
+      "firm": "Wells Fargo",
+      "from": null,
+      "to": "Overweight",
+      "action": "init"
+    },
     {
       "date": "2026-09-15",
       "firm": "William Blair",
@@ -140,13 +147,6 @@
       "from": "Overweight",
       "to": "Overweight",
       "action": "reit"
-    },
-    {
-      "date": "2026-04-23",
-      "firm": "Keefe, Bruyette & Woods",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
     }
   ],
   "holders": [
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 13,
-    "sells": 16,
+    "sells": 17,
     "bought": 239000,
-    "sold": 313732,
-    "net_pct": -0.4
+    "sold": 347609,
+    "net_pct": -0.6
   },
   "extras": {
     "beta": 0.969,
-    "enterprise_value": 12315026432,
-    "ev_ebitda": 16.211,
-    "ev_revenue": 5.026,
+    "enterprise_value": 12460249088,
+    "ev_ebitda": 16.402,
+    "ev_revenue": 5.085,
     "float_shares": 99405887,
     "short_shares": 2332194,
     "short_pct_float": 2.02,
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "WEST ALFRED PAUL JR",
+      "role": "Retired",
+      "kind": "sell",
+      "text": "Sale at price 103.16 - 103.40 per share.",
+      "value": 3501662,
+      "shares": 33877,
+      "date": "2026-09-30"
+    },
     {
       "name": "LANE MICHAEL",
       "role": "Officer",
@@ -352,15 +361,6 @@
       "value": 1488900,
       "shares": 30000,
       "date": "2026-08-05"
-    },
-    {
-      "name": "MCCARTHY KATHRYN M",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 103.54 per share.",
-      "value": 1035350,
-      "shares": 10000,
-      "date": "2026-08-03"
     }
   ],
   "dividends": [

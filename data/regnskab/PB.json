@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-01T21:21:05.639Z",
+  "updated_at": "2026-10-02T21:02:04.840Z",
   "source": "Yahoo Finance",
   "symbol": "PB",
   "summary": "Prosperity Bancshares, Inc. operates as bank holding company for the Prosperity Bank that provides financial products and services to businesses and consumers. It accepts various deposit products, such as demand, savings, money market, and time accounts; and certificates of deposit. The company also offers 1-4 family residential mortgage, commercial real estate and multifamily residential, commercial and industrial, and agricultural and non-real estate agricultural loans; construction, land development, and other land loans; consumer loans, including automobile, recreational vehicle, boat, home improvement, personal, and deposit account collateralized loans; term loans and lines of credit; and consumer durables and home equity loans, as well as loans for working capital, business expansion, and purchase of equipment and machinery. In addition, it provides digital banking, internet banking, mobile banking, trust and wealth management, retail brokerage, mortgage services, and treasury management, and debit and credit cards services. The company was incorporated in 1983 and is headquartered in Houston, Texas.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-28",
   "earnings_estimated": false,
   "earnings_call": "2026-10-28",
-  "eps_estimate": 1.60771,
+  "eps_estimate": 1.60985,
   "analysts": {
     "strong_buy": 1,
     "buy": 4,
@@ -19,7 +19,7 @@
     "strong_sell": 1,
     "total": 15
   },
-  "target_mean": 81.07692,
+  "target_mean": 80.92308,
   "target_high": 85,
   "target_low": 68,
   "target_analysts": 13,
@@ -51,6 +51,11 @@
   ],
   "quarterly": [
     {
+      "q": "2Q2025",
+      "revenue": 311278000,
+      "earnings": 135155000
+    },
+    {
       "q": "3Q2025",
       "revenue": 315480000,
       "earnings": 137556000
@@ -64,18 +69,13 @@
       "q": "1Q2026",
       "revenue": 367881000,
       "earnings": 116267000
-    },
-    {
-      "q": "2Q2026",
-      "revenue": 383642000,
-      "earnings": 168583000
     }
   ],
   "growth": {
-    "q0": 0.1088,
-    "q1": 0.16280001,
-    "y0": 0.12550001,
-    "y1": 0.1471
+    "q0": 0.1102,
+    "q1": 0.1633,
+    "y0": 0.126,
+    "y1": 0.14739999
   },
   "ratings": [
     {
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 15,
-    "sells": 26,
+    "sells": 27,
     "bought": 307438,
-    "sold": 29000,
+    "sold": 30100,
     "net_pct": 7
   },
   "extras": {
     "beta": 0.644,
-    "enterprise_value": 8983035904,
+    "enterprise_value": 9053940736,
     "ev_ebitda": null,
-    "ev_revenue": 6.457,
+    "ev_revenue": 6.508,
     "float_shares": 109487047,
     "short_shares": 4490574,
     "short_pct_float": 4.24,
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "HOLMES NED S",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 66.02 - 66.67 per share.",
+      "value": 73241,
+      "shares": 1100,
+      "date": "2026-09-30"
+    },
     {
       "name": "HOLMES NED S",
       "role": "Director",
@@ -352,15 +361,6 @@
       "value": 80275,
       "shares": 1100,
       "date": "2026-07-22"
-    },
-    {
-      "name": "HOLMES NED S",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 72.14 - 73.11 per share.",
-      "value": 80361,
-      "shares": 1100,
-      "date": "2026-07-15"
     }
   ],
   "dividends": [

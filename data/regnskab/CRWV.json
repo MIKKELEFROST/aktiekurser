@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-01T21:21:04.266Z",
+  "updated_at": "2026-10-02T21:02:03.466Z",
   "source": "Yahoo Finance",
   "symbol": "CRWV",
   "summary": "CoreWeave, Inc. operates as a cloud infrastructure technology company in the United States. The company offers CoreWeave Cloud platform that comprises proprietary software and cloud services that deliver the automation and efficiency needed to manage complex artificial intelligence (AI) infrastructure at scale. It also offers data and storage solutions, such as Local Object Transport Accelerator; infrastructure control solutions, including CoreWeave Kubernetes service; mission control services, including node, rack, and fleet lifecycle management; model and agent development tools comprising Weights & Biases, an AI developer platform; and runtime acceleration. In addition, the company offers graphics processing unit compute, CPU compute, networking services, managed services, and virtual and bare metal servers. Its services also include visual effects rendering, machine learning, pixel streaming, and batch processing. The company was formerly known as Atlantic Crypto Corporation and changed its name to CoreWeave, Inc. in December 2019. CoreWeave, Inc. was incorporated in 2017 and is based in Livingston, New Jersey.",
@@ -61,6 +61,13 @@
   },
   "ratings": [
     {
+      "date": "2026-10-02",
+      "firm": "Cantor Fitzgerald",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "reit"
+    },
+    {
       "date": "2026-10-01",
       "firm": "Rosenblatt",
       "from": "Buy",
@@ -121,13 +128,6 @@
       "firm": "Goldman Sachs",
       "from": "Neutral",
       "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-14",
-      "firm": "Citigroup",
-      "from": "Buy",
-      "to": "Buy",
       "action": "main"
     }
   ],
@@ -205,17 +205,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 129,
-    "sells": 179,
-    "bought": 15415949,
-    "sold": 42871480,
-    "net_pct": -21
+    "buys": 123,
+    "sells": 173,
+    "bought": 15135332,
+    "sold": 42980140,
+    "net_pct": -21.2
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 94123868160,
-    "ev_ebitda": 24.841,
-    "ev_revenue": 12.401,
+    "enterprise_value": 94923595776,
+    "ev_ebitda": 25.052,
+    "ev_revenue": 12.506,
     "float_shares": 328296647,
     "short_shares": 54939326,
     "short_pct_float": 17.64,
@@ -226,7 +226,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 1299,
+  "inst_count": 1301,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -254,6 +254,24 @@
     }
   ],
   "insiders": [
+    {
+      "name": "INTRATOR MICHAEL N",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 107692,
+      "date": "2026-09-29"
+    },
+    {
+      "name": "INTRATOR MICHAEL N",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 85.86 - 90.26 per share.",
+      "value": 26661770,
+      "shares": 307692,
+      "date": "2026-09-29"
+    },
     {
       "name": "INTRATOR MICHAEL N",
       "role": "Chief Executive Officer",
@@ -325,24 +343,6 @@
       "value": null,
       "shares": 1200,
       "date": "2026-09-14"
-    },
-    {
-      "name": "AGRAWAL NITIN",
-      "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 83.64 - 84.88 per share.",
-      "value": 5572345,
-      "shares": 66576,
-      "date": "2026-09-14"
-    },
-    {
-      "name": "AGRAWAL NITIN",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 122340,
-      "date": "2026-09-11"
     }
   ],
   "dividends": [],

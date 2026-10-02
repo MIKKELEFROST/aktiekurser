@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-01T21:21:04.927Z",
+  "updated_at": "2026-10-02T21:02:04.098Z",
   "source": "Yahoo Finance",
   "symbol": "HPE",
   "summary": "Hewlett Packard Enterprise Company, together with its subsidiaries, develops intelligent solutions in the United States, the Americas, Europe, the Middle East, Africa, the Asia Pacific, Japan, and internationally. It operates in five segments: Server, Hybrid Cloud, Networking, Financial Services, and Corporate Investments and Other. The company offers general-purpose servers, workload-optimized servers, and integrated systems, including HPE ProLiant Rack and Tower servers; HPE Synergy; HPE Scale Up servers; HPE Edgeline servers; HPE Cray EX; HPE Cray XD; and HPE NonStop. It also provides cloud-native and hybrid solutions, such as HPE Alletra Storage; HPE InfoSight; HPE CloudPhysics; and HPE GreenLake. In addition, the company develops and sells networking and security products and services comprising hardware products, which include Wi-Fi and private cellular access points, MX and PTX routers, and gateways, as well as QFX, EX, and CX switches; software products, such as Mist and Aruba Central; and services comprising professional, maintenance, support services, management software, and education and training programs. Further, it offers investment solutions, including leasing, financing, IT consumption, utility programs, and asset management services, as well as supports financial solutions for on-premise flexible consumption models. The company serves commercial and large enterprise groups, as well as business and public sector enterprises. It sells its products through resellers, distribution partners, master area partners, original equipment manufacturers, independent software vendors, systems integrators, and advisory firms. The company was founded in 1939 and is headquartered in Spring, Texas.",
@@ -12,17 +12,17 @@
   "earnings_call": "2026-09-02",
   "eps_estimate": 1.27286,
   "analysts": {
-    "strong_buy": 4,
-    "buy": 9,
-    "hold": 10,
+    "strong_buy": 5,
+    "buy": 10,
+    "hold": 9,
     "sell": 0,
     "strong_sell": 0,
-    "total": 23
+    "total": 24
   },
-  "target_mean": 71.1295,
+  "target_mean": 71.79,
   "target_high": 92,
   "target_low": 52.59,
-  "target_analysts": 20,
+  "target_analysts": 21,
   "statements": [
     {
       "year": "2022",
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 9136000000,
-      "earnings": 276000000
-    },
-    {
       "q": "3Q2025",
       "revenue": 9679000000,
       "earnings": 146000000
@@ -69,15 +64,27 @@
       "q": "1Q2026",
       "revenue": 10678000000,
       "earnings": 595000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 12213000000,
+      "earnings": 1511000000
     }
   ],
   "growth": {
     "q0": 1.053,
     "q1": 0.6016,
     "y0": 0.97220004,
-    "y1": 0.22629999
+    "y1": 0.2282
   },
   "ratings": [
+    {
+      "date": "2026-10-02",
+      "firm": "Daiwa Capital",
+      "from": "Neutral",
+      "to": "Outperform",
+      "action": "up"
+    },
     {
       "date": "2026-10-01",
       "firm": "Citigroup",
@@ -140,13 +147,6 @@
       "from": "Buy",
       "to": "Buy",
       "action": "reit"
-    },
-    {
-      "date": "2026-09-03",
-      "firm": "Raymond James",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
     }
   ],
   "holders": [
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 24,
-    "sells": 10,
+    "sells": 11,
     "bought": 3707956,
-    "sold": 620777,
-    "net_pct": 169.6
+    "sold": 655233,
+    "net_pct": 164.6
   },
   "extras": {
     "beta": 1.442,
-    "enterprise_value": 98978725888,
-    "ev_ebitda": 14.366,
-    "ev_revenue": 2.364,
+    "enterprise_value": 99894673408,
+    "ev_ebitda": 14.499,
+    "ev_revenue": 2.386,
     "float_shares": 1321411540,
     "short_shares": 55958000,
     "short_pct_float": 4.8,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-09-17",
   "dividend_date": null,
   "payout_ratio": 0.2874,
-  "inst_count": 1936,
+  "inst_count": 1939,
   "eps_history": [
     {
       "quarter": "2025-10-31",
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "RAHIM RAMI",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 61.42 per share.",
+      "value": 2116288,
+      "shares": 34456,
+      "date": "2026-09-29"
+    },
     {
       "name": "REINER GARY M",
       "role": "Director",
@@ -352,15 +361,6 @@
       "value": 10826,
       "shares": 240,
       "date": "2026-06-30"
-    },
-    {
-      "name": "KARROS KIRT P",
-      "role": "Officer and Treasurer",
-      "kind": "sell",
-      "text": "Sale at price 48.50 per share.",
-      "value": 911072,
-      "shares": 18785,
-      "date": "2026-06-22"
     }
   ],
   "dividends": [

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-01T21:21:04.043Z",
+  "updated_at": "2026-10-02T21:02:03.234Z",
   "source": "Yahoo Finance",
   "symbol": "CAG",
   "summary": "Conagra Brands, Inc., together with its subsidiaries, operates as a branded consumer packaged goods food company primarily in the United States. The company operates in four segments: Grocery & Snacks, Refrigerated & Frozen, International, and Foodservice. The Grocery & Snacks segment primarily offers shelf stable food products through various retail channels. The Refrigerated & Frozen segment provides temperature-controlled food products through various retail channels. The International segment offers food products in various temperature states through retail and foodservice channels outside of the United States. The Foodservice segment offers branded and customized food products, including meals, entrees, sauces, and various custom-manufactured culinary products packaged for restaurants and other foodservice establishments. The company sells its products under the Birds Eye, Duncan Hines, Healthy Choice, Marie Callender's, Reddi-wip, Slim Jim, and Angie's BOOMCHICKAPOP brands. Conagra Brands, Inc. was incorporated in 1919 and is headquartered in Chicago, Illinois.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-12-18",
   "earnings_estimated": true,
   "earnings_call": "2026-09-30",
-  "eps_estimate": 0.36361,
+  "eps_estimate": 0.34382,
   "analysts": {
     "strong_buy": 1,
     "buy": 1,
@@ -19,7 +19,7 @@
     "strong_sell": 2,
     "total": 17
   },
-  "target_mean": 14.38125,
+  "target_mean": 14.31875,
   "target_high": 23,
   "target_low": 11,
   "target_analysts": 16,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": -0.192,
-    "q1": -0.105900005,
-    "y0": -0.15529999,
-    "y1": 0.0523
+    "q0": -0.236,
+    "q1": -0.1267,
+    "y0": -0.1519,
+    "y1": 0.045100003
   },
   "ratings": [
+    {
+      "date": "2026-10-02",
+      "firm": "Barclays",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-10-01",
       "firm": "Evercore ISI Group",
@@ -140,13 +147,6 @@
       "from": "Sector Perform",
       "to": "Sector Perform",
       "action": "main"
-    },
-    {
-      "date": "2026-07-08",
-      "firm": "Barclays",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
     }
   ],
   "holders": [
@@ -158,18 +158,18 @@
       "date": "2026-06-30"
     },
     {
+      "name": "iShares Trust-iShares Core S&P Small-Cap ETF",
+      "kind": "fond",
+      "pct": 6.11,
+      "shares": 29162860,
+      "date": "2026-08-31"
+    },
+    {
       "name": "Vanguard Portfolio Management LLC",
       "kind": "institution",
       "pct": 6.1,
       "shares": 29206791,
       "date": "2026-06-30"
-    },
-    {
-      "name": "iShares Trust-iShares Core S&P Small-Cap ETF",
-      "kind": "fond",
-      "pct": 6.09,
-      "shares": 29162860,
-      "date": "2026-08-31"
     },
     {
       "name": "Vanguard Capital Management LLC",
@@ -202,7 +202,7 @@
     {
       "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
       "kind": "fond",
-      "pct": 3.18,
+      "pct": 3.19,
       "shares": 15212972,
       "date": "2026-06-30"
     },
@@ -230,10 +230,10 @@
     "net_pct": null
   },
   "extras": {
-    "beta": null,
-    "enterprise_value": 13830292480,
-    "ev_ebitda": 8.1,
-    "ev_revenue": 1.23,
+    "beta": -0.033,
+    "enterprise_value": 13715260416,
+    "ev_ebitda": 7.95,
+    "ev_revenue": 1.22,
     "float_shares": 475796317,
     "short_shares": 40286287,
     "short_pct_float": 10.84,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-11-05",
   "dividend_date": null,
   "payout_ratio": 0.791,
-  "inst_count": 1013,
+  "inst_count": 1014,
   "eps_history": [
     {
       "quarter": "2025-11-30",
@@ -282,6 +282,33 @@
       "date": "2026-09-01"
     },
     {
+      "name": "BARTELL CAREY",
+      "role": "General Counsel",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 5481,
+      "date": "2026-07-24"
+    },
+    {
+      "name": "NAPIER MELISSA C",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 2698,
+      "date": "2026-07-24"
+    },
+    {
+      "name": "MCGOUGH THOMAS M",
+      "role": "Chief Operating Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 11419,
+      "date": "2026-07-24"
+    },
+    {
       "name": "BROCK CHARISSE",
       "role": "Officer",
       "kind": "other",
@@ -309,35 +336,8 @@
       "date": "2026-07-24"
     },
     {
-      "name": "BARTELL CAREY",
-      "role": "General Counsel",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 5481,
-      "date": "2026-07-24"
-    },
-    {
-      "name": "NAPIER MELISSA C",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 2698,
-      "date": "2026-07-24"
-    },
-    {
       "name": "MARBERGER DAVID S",
       "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 11419,
-      "date": "2026-07-24"
-    },
-    {
-      "name": "MCGOUGH THOMAS M",
-      "role": "Chief Operating Officer",
       "kind": "other",
       "text": null,
       "value": null,

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-01T21:21:06.711Z",
+  "updated_at": "2026-10-02T21:02:05.314Z",
   "source": "Yahoo Finance",
   "symbol": "TMQ",
   "summary": "Trilogy Metals Inc. engages in the exploration and development of mineral properties in the United States. It primarily explores copper, cobalt, lead, zinc, gold, and silver properties. The company principally holds interests in the Upper Kobuk mineral projects that include the Arctic, which contains polymetallic volcanogenic massive sulfide deposits; and Bornite that contains carbonate-hosted copper-cobalt deposits covering an area of approximately 448,217 acres located in the Ambler mining district in Northwest Alaska. The company was formerly known as NovaCopper Inc. and changed its name to Trilogy Metals Inc. in September 2016. Trilogy Metals Inc. was founded in 2004 and is headquartered in Vancouver, Canada.",
@@ -8,9 +8,9 @@
   "employees": 5,
   "ceo": null,
   "next_earnings": "2026-10-02",
-  "earnings_estimated": true,
+  "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": -0.042,
+  "eps_estimate": -0.028,
   "analysts": {
     "strong_buy": 1,
     "buy": 2,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 6
   },
-  "target_mean": 6.5243564,
-  "target_high": 9.853003,
-  "target_low": 4.239696,
+  "target_mean": 6.511076,
+  "target_high": 9.832947,
+  "target_low": 4.231066,
   "target_analysts": 3,
   "statements": [
     {
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "4Q2021",
-      "revenue": 0,
-      "earnings": -6067000
-    },
-    {
       "q": "2Q2023",
       "revenue": 0,
       "earnings": -2803000
@@ -69,11 +64,16 @@
       "q": "4Q2023",
       "revenue": 0,
       "earnings": -3024000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 0,
+      "earnings": 0
     }
   ],
   "growth": {
-    "q0": -2.0151,
-    "q1": -0.0253,
+    "q0": -0.0253,
+    "q1": null,
     "y0": -0.33380002,
     "y1": 0.33330002
   },
@@ -175,7 +175,7 @@
   },
   "extras": {
     "beta": 1.674,
-    "enterprise_value": 496696480,
+    "enterprise_value": 489786656,
     "ev_ebitda": null,
     "ev_revenue": null,
     "float_shares": 114716924,
@@ -190,12 +190,6 @@
   "payout_ratio": 0,
   "inst_count": 184,
   "eps_history": [
-    {
-      "quarter": "2025-08-31",
-      "estimate": -0.014,
-      "actual": -0.01393,
-      "surprise_pct": 0.5
-    },
     {
       "quarter": "2025-11-30",
       "estimate": -0.014,
@@ -213,6 +207,12 @@
       "estimate": -0.028,
       "actual": -0.03633,
       "surprise_pct": -29.75
+    },
+    {
+      "quarter": "2026-08-31",
+      "estimate": -0.042,
+      "actual": -0.09334,
+      "surprise_pct": -122.24
     }
   ],
   "insiders": [
@@ -228,18 +228,18 @@
     {
       "name": "HENSLEY WILLIAM L. IGGIAGRUK",
       "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 4.44 per share.",
-      "value": 222000,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 0.57 per share.",
+      "value": 28500,
       "shares": 50000,
       "date": "2026-05-08"
     },
     {
       "name": "HENSLEY WILLIAM L. IGGIAGRUK",
       "role": "Director",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 0.57 per share.",
-      "value": 28500,
+      "kind": "sell",
+      "text": "Sale at price 4.44 per share.",
+      "value": 222000,
       "shares": 50000,
       "date": "2026-05-08"
     },
@@ -292,18 +292,18 @@
       "name": "LANG GREGORY A",
       "role": "Director",
       "kind": "other",
-      "text": "Stock Gift at price 0.00 per share.",
-      "value": 0,
-      "shares": 45000,
+      "text": "Conversion of Exercise of derivative security at price 1.82 per share.",
+      "value": 91000,
+      "shares": 50000,
       "date": "2025-12-05"
     },
     {
-      "name": "LANG GREGORY A",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 4.73 - 4.77 per share.",
-      "value": 333100,
-      "shares": 70000,
+      "name": "SANDERS ELAINE",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 183334,
       "date": "2025-12-05"
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-01T21:21:05.491Z",
+  "updated_at": "2026-10-02T21:02:04.687Z",
   "source": "Yahoo Finance",
   "symbol": "NTAP",
   "summary": "NetApp, Inc. develops enterprise software, systems, and services to transform data infrastructures in the United States, Canada, Latin America, Europe, the Middle East, Africa, and the Asia Pacific. It operates through two segments, Hybrid Cloud and Public Cloud. The company offers data management software, such as NetApp ONTAP, ONTAP One, NetApp Snapshot, NetApp SnapCenter Backup Management, NetApp SnapMirror Data Replication, and NetApp SnapLock Data Compliance; and storage infrastructure solutions, including NetApp AFF and ASA A-Series and C-Series, NetApp AFX, NetApp Fabric Attached Storage (FAS), NetApp E/EF series, and NetApp StorageGRID. It also provides cloud storage services comprising Azure NetApp Files, Amazon FSx for NetApp ONTAP, and Google Cloud NetApp Volumes, as well as NetApp Cloud Volumes ONTAP. In addition, the company offers operational services, such as NetApp Data Infrastructure Insights and Instaclustr; and professional and support services include storage-as-a-service (STaaS), strategic consulting, professional, managed, and support services, as well as assessment, design, implementation, migration, and proactive support services to optimize the performance and efficiency of their on-premises and hybrid multicloud storage environments. Further, it offers ransomware protection, data backup and recovery, and disaster recovery. It serves various industries comprising energy, financial services, government, technology, internet, life sciences, healthcare services, manufacturing, media, entertainment, animation, video postproduction, and telecommunications through a direct sales force and an ecosystem of partners, including the cloud providers. The company has a strategic alliance with Commvault Systems, Inc. to develop an integrated solution for enterprise data protection and cyber resilience; and Super Micro Computer, Inc. to build integrated AI infrastructure solutions. NetApp, Inc. was incorporated in 1992 and is based in San Jose, California.",
@@ -19,8 +19,8 @@
     "strong_sell": 0,
     "total": 20
   },
-  "target_mean": 198.25,
-  "target_high": 220,
+  "target_mean": 201.0625,
+  "target_high": 260,
   "target_low": 170,
   "target_analysts": 16,
   "statements": [
@@ -78,6 +78,13 @@
     "y1": 0.111499995
   },
   "ratings": [
+    {
+      "date": "2026-10-02",
+      "firm": "Loop Capital",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-09-30",
       "firm": "B of A Securities",
@@ -137,13 +144,6 @@
     {
       "date": "2026-09-03",
       "firm": "Wedbush",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-09-03",
-      "firm": "Susquehanna",
       "from": "Neutral",
       "to": "Neutral",
       "action": "main"
@@ -224,17 +224,17 @@
   "insider_net": {
     "period": "6m",
     "buys": 24,
-    "sells": 17,
+    "sells": 18,
     "bought": 415128,
-    "sold": 168620,
-    "net_pct": 47.4
+    "sold": 218620,
+    "net_pct": 34.5
   },
   "extras": {
     "beta": 1.432,
-    "enterprise_value": 40221704192,
-    "ev_ebitda": 19.199,
-    "ev_revenue": 5.442,
-    "float_shares": 195348521,
+    "enterprise_value": 41197907968,
+    "ev_ebitda": 19.665,
+    "ev_revenue": 5.574,
+    "float_shares": 195385841,
     "short_shares": 10146420,
     "short_pct_float": 5.18,
     "short_ratio": 4.12,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-10-09",
   "dividend_date": null,
   "payout_ratio": 0.2938,
-  "inst_count": 1427,
+  "inst_count": 1428,
   "eps_history": [
     {
       "quarter": "2025-10-31",
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "KURIAN GEORGE",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 209.95 per share.",
+      "value": 10497500,
+      "shares": 50000,
+      "date": "2026-09-29"
+    },
     {
       "name": "KURIAN GEORGE",
       "role": "Chief Executive Officer",
@@ -336,15 +345,6 @@
       "date": "2026-09-10"
     },
     {
-      "name": "PELZER FRANCIS J V",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 2307,
-      "date": "2026-09-08"
-    },
-    {
       "name": "GUSTAFSSON PER ANDERS",
       "role": "Director",
       "kind": "other",
@@ -354,12 +354,12 @@
       "date": "2026-09-08"
     },
     {
-      "name": "KERR DEBORAH LINDA",
+      "name": "NEVENS THOMAS MICHAEL",
       "role": "Director",
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 2307,
+      "shares": 2914,
       "date": "2026-09-08"
     }
   ],

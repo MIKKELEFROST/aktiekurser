@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-01T21:21:04.481Z",
+  "updated_at": "2026-10-02T21:02:03.696Z",
   "source": "Yahoo Finance",
   "symbol": "ELVN",
   "summary": "Enliven Therapeutics, Inc., a clinical-stage biopharmaceutical company, focuses on the discovery and development of small molecule inhibitors to help patients with cancer. Its clinical programs comprise ELVN-001, a small molecule kinase inhibitor which is in Phase 1 clinical trial to treat adults with chronic myeloid leukemia; and ELVN-002, a central nervous system (CNS) penetrant and irreversible human epidermal growth factor receptor 2 inhibitor that is in Phase 1 clinical trial for the treatment of non-small cell lung cancer (NSCLC) and other HER2 mutant tumors. The company was founded in 2019 and is headquartered in Boulder, Colorado.",
@@ -10,19 +10,19 @@
   "next_earnings": "2026-11-11",
   "earnings_estimated": true,
   "earnings_call": null,
-  "eps_estimate": -0.448,
+  "eps_estimate": -0.45794,
   "analysts": {
-    "strong_buy": 1,
+    "strong_buy": 2,
     "buy": 11,
     "hold": 0,
     "sell": 0,
     "strong_sell": 0,
-    "total": 12
+    "total": 13
   },
-  "target_mean": 73.9,
+  "target_mean": 74,
   "target_high": 82,
   "target_low": 64,
-  "target_analysts": 10,
+  "target_analysts": 11,
   "statements": [
     {
       "year": "2022",
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": -0.4,
-    "q1": -0.2208,
-    "y0": -0.0087,
-    "y1": -0.2667
+    "q0": -0.4311,
+    "q1": -0.2158,
+    "y0": -0.0731,
+    "y1": -0.1988
   },
   "ratings": [
+    {
+      "date": "2026-10-02",
+      "firm": "Morgan Stanley",
+      "from": null,
+      "to": "Overweight",
+      "action": "init"
+    },
     {
       "date": "2026-10-01",
       "firm": "JP Morgan",
@@ -137,13 +144,6 @@
     {
       "date": "2026-07-09",
       "firm": "HC Wainwright & Co.",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-01",
-      "firm": "Stifel",
       "from": "Buy",
       "to": "Buy",
       "action": "main"
@@ -231,8 +231,8 @@
   },
   "extras": {
     "beta": 0.245,
-    "enterprise_value": 2465086720,
-    "ev_ebitda": -19.834,
+    "enterprise_value": 2492196864,
+    "ev_ebitda": -20.052,
     "ev_revenue": null,
     "float_shares": 60524579,
     "short_shares": 8620503,
@@ -275,6 +275,24 @@
     {
       "name": "COLLINS HELEN LOUISE",
       "role": "Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 2.48 per share.",
+      "value": 12400,
+      "shares": 5000,
+      "date": "2026-09-17"
+    },
+    {
+      "name": "HOHL BENJAMIN",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 14.85 per share.",
+      "value": 59133,
+      "shares": 3982,
+      "date": "2026-09-17"
+    },
+    {
+      "name": "COLLINS HELEN LOUISE",
+      "role": "Officer",
       "kind": "sell",
       "text": "Sale at price 50.03 - 51.48 per share.",
       "value": 251754,
@@ -297,16 +315,7 @@
       "text": "Conversion of Exercise of derivative security at price 2.48 per share.",
       "value": 12400,
       "shares": 5000,
-      "date": "2026-09-17"
-    },
-    {
-      "name": "HOHL BENJAMIN",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 14.85 per share.",
-      "value": 59133,
-      "shares": 3982,
-      "date": "2026-09-17"
+      "date": "2026-08-17"
     },
     {
       "name": "COLLINS HELEN LOUISE",
@@ -327,13 +336,13 @@
       "date": "2026-08-17"
     },
     {
-      "name": "COLLINS HELEN LOUISE",
-      "role": "Officer",
+      "name": "DERYNCK MIKA K",
+      "role": "Director",
       "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 2.48 per share.",
-      "value": 12400,
-      "shares": 5000,
-      "date": "2026-08-17"
+      "text": "Conversion of Exercise of derivative security at price 2.48 - 25.28 per share.",
+      "value": 1720967,
+      "shares": 158795,
+      "date": "2026-08-04"
     },
     {
       "name": "DERYNCK MIKA K",
@@ -345,20 +354,11 @@
       "date": "2026-08-04"
     },
     {
-      "name": "DERYNCK MIKA K",
-      "role": "Director",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 2.48 - 25.28 per share.",
-      "value": 1720967,
-      "shares": 158795,
-      "date": "2026-08-04"
-    },
-    {
       "name": "COLLINS HELEN LOUISE",
       "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 50.05 - 53.92 per share.",
-      "value": 263373,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 2.48 per share.",
+      "value": 12400,
       "shares": 5000,
       "date": "2026-07-17"
     }

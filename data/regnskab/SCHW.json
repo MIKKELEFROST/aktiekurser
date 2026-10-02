@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-01T21:21:05.890Z",
+  "updated_at": "2026-10-02T21:02:05.089Z",
   "source": "Yahoo Finance",
   "symbol": "SCHW",
   "summary": "The Charles Schwab Corporation, together with its subsidiaries, operates as a savings and loan holding company that provides wealth management, securities brokerage, banking, asset management, custody, and financial advisory services in the United States and internationally. The company operates in two segments, Investor Services and Advisor Services. It offers brokerage accounts with equity and fixed income trading, margin lending, options trading, futures and forex trading, and cash management capabilities, including money market funds, and certificates of deposit; third-party mutual funds through the Mutual Fund Marketplace and Mutual Fund OneSource service, as well as mutual fund trading and clearing services to broker-dealers; exchange-traded funds; advisory solutions for managed portfolios, separately managed accounts, customized personal advice for tailored portfolios, specialized planning, and full-time portfolio management; banking products comprising checking and savings accounts, first lien residential real estate mortgage loans, home equity lines of credit, and pledged asset lines; and trust custody services, personal trust reporting services, and administrative trustee services. It provides digital and software based trading platforms; research tools, and multichannel support, real-time market data, options trading; equity compensation plan sponsors full-service recordkeeping for stock plans, stock options, restricted stock, performance shares, and stock appreciation rights; retirement plan services; mutual fund clearing services; and advisor services, including interactive tools and educational content. The Company operates through branch offices. The Charles Schwab Corporation was founded in 1971 and is headquartered in Westlake, Texas.",
@@ -10,19 +10,19 @@
   "next_earnings": "2026-10-15",
   "earnings_estimated": false,
   "earnings_call": "2026-10-15",
-  "eps_estimate": 1.67011,
+  "eps_estimate": 1.66799,
   "analysts": {
     "strong_buy": 7,
     "buy": 11,
-    "hold": 3,
+    "hold": 4,
     "sell": 0,
     "strong_sell": 1,
-    "total": 22
+    "total": 23
   },
-  "target_mean": 125.45,
+  "target_mean": 124.19048,
   "target_high": 145,
   "target_low": 91,
-  "target_analysts": 20,
+  "target_analysts": 21,
   "statements": [
     {
       "year": "2022",
@@ -72,12 +72,26 @@
     }
   ],
   "growth": {
-    "q0": 0.2749,
-    "q1": 0.28280002,
-    "y0": 0.3321,
-    "y1": 0.207
+    "q0": 0.2733,
+    "q1": 0.28079998,
+    "y0": 0.3312,
+    "y1": 0.2074
   },
   "ratings": [
+    {
+      "date": "2026-10-02",
+      "firm": "Piper Sandler",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-02",
+      "firm": "Wells Fargo",
+      "from": null,
+      "to": "Equal-Weight",
+      "action": "init"
+    },
     {
       "date": "2026-08-03",
       "firm": "Compass Point",
@@ -132,20 +146,6 @@
       "firm": "Morgan Stanley",
       "from": "Overweight",
       "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-09",
-      "firm": "Barclays",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-08",
-      "firm": "UBS",
-      "from": "Buy",
-      "to": "Buy",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.753,
-    "enterprise_value": 154657275904,
+    "enterprise_value": 155746746368,
     "ev_ebitda": null,
-    "ev_revenue": 5.943,
+    "ev_revenue": 5.985,
     "float_shares": 1625800385,
     "short_shares": 39835,
     "short_pct_float": 0,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-08-14",
   "dividend_date": null,
   "payout_ratio": 0.2149,
-  "inst_count": 2967,
+  "inst_count": 2970,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -345,21 +345,21 @@
       "date": "2026-08-24"
     },
     {
-      "name": "SCHWAB CHARLES R JR.",
-      "role": "Chairman of the Board",
-      "kind": "sell",
-      "text": "Sale at price 113.20 per share.",
-      "value": 13244412,
-      "shares": 117000,
-      "date": "2026-08-24"
-    },
-    {
       "name": "BETTINGER WALTER W II",
       "role": "Chairman of the Board",
       "kind": "sell",
       "text": "Sale at price 113.49 per share.",
       "value": 19997368,
       "shares": 176210,
+      "date": "2026-08-24"
+    },
+    {
+      "name": "SCHWAB CHARLES R JR.",
+      "role": "Chairman of the Board",
+      "kind": "sell",
+      "text": "Sale at price 113.20 per share.",
+      "value": 13244412,
+      "shares": 117000,
       "date": "2026-08-24"
     }
   ],

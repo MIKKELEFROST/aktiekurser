@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-01T21:21:03.542Z",
+  "updated_at": "2026-10-02T21:02:02.729Z",
   "source": "Yahoo Finance",
   "symbol": "ABT",
   "summary": "Abbott Laboratories, together with its subsidiaries, discovers, develops, manufactures, and sells health care products worldwide. It operates in four segments: Established Pharmaceutical Products, Diagnostic Products, Nutritional Products, and Medical Devices. The company offers generic pharmaceuticals for the treatment of pancreatic exocrine insufficiency, irritable bowel syndrome or biliary spasm, intrahepatic cholestasis or depressive symptoms, gynecological disorder, hormone replacement therapy, dyslipidemia, hypertension, hypothyroidism, hypertriglyceridemia, Ménière's disease and vestibular vertigo, pain, fever, inflammation, and migraine, as well as provides anti-infective clarithromycin, influenza vaccine, and products to regulate physiological rhythm of the colon. It also provides laboratory and transfusion medicine systems in the areas of immunoassay, clinical chemistry, hematology, and transfusion serology testing; molecular diagnostics polymerase chain reaction instrument systems that automate the extraction, purification, and preparation of DNA and RNA from patient samples, and detect and measure infectious agents; point of care systems; cartridges for testing blood gas, chemistry, electrolytes, coagulation, and immunoassay; rapid diagnostics lateral flow testing products; molecular point-of-care testing for HIV, SARS-CoV-2, influenza A and B, RSV, and strep A; cardiometabolic test systems; and drug and alcohol test. In addition, the company offers pediatric and adult nutritional products and infant formula; rhythm management, electrophysiology, heart failure, vascular, and structural heart devices for the treatment of cardiovascular diseases; diabetes care products, such as glucose and blood glucose monitoring systems; and neuromodulation devices. The company was formerly known as Abbott Alkaloidal Company and changed its name to Abbott Laboratories in 1915. Abbott Laboratories was founded in 1888 and is based in Abbott Park, Illinois.",
@@ -13,25 +13,78 @@
   "eps_estimate": 1.41998,
   "analysts": {
     "strong_buy": 4,
-    "buy": 18,
-    "hold": 5,
+    "buy": 19,
+    "hold": 4,
     "sell": 0,
     "strong_sell": 0,
     "total": 27
   },
-  "target_mean": 120.2636,
+  "target_mean": 120.5836,
   "target_high": 135,
   "target_low": 103,
   "target_analysts": 25,
-  "statements": null,
-  "quarterly": [],
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 43653000000,
+      "net": 6933000000,
+      "margin": 15.9
+    },
+    {
+      "year": "2023",
+      "revenue": 40109000000,
+      "net": 5723000000,
+      "margin": 14.3
+    },
+    {
+      "year": "2024",
+      "revenue": 41950000000,
+      "net": 13402000000,
+      "margin": 31.9
+    },
+    {
+      "year": "2025",
+      "revenue": 44328000000,
+      "net": 6524000000,
+      "margin": 14.7
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 11369000000,
+      "earnings": 1644000000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 11459000000,
+      "earnings": 1776000000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 11164000000,
+      "earnings": 1077000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 12593000000,
+      "earnings": 928000000
+    }
+  ],
   "growth": {
     "q0": 0.0923,
     "q1": 0.0919,
-    "y0": 0.0718,
-    "y1": 0.098900005
+    "y0": 0.0717,
+    "y1": 0.099
   },
   "ratings": [
+    {
+      "date": "2026-10-02",
+      "firm": "Rothschild & Co",
+      "from": "Neutral",
+      "to": "Buy",
+      "action": "up"
+    },
     {
       "date": "2026-09-08",
       "firm": "TD Cowen",
@@ -91,13 +144,6 @@
     {
       "date": "2026-07-17",
       "firm": "JP Morgan",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-17",
-      "firm": "Wells Fargo",
       "from": "Overweight",
       "to": "Overweight",
       "action": "main"
@@ -185,9 +231,9 @@
   },
   "extras": {
     "beta": 0.586,
-    "enterprise_value": 198782779392,
-    "ev_ebitda": 17.018,
-    "ev_revenue": 4.267,
+    "enterprise_value": 195079766016,
+    "ev_ebitda": 16.701,
+    "ev_revenue": 4.188,
     "float_shares": 1719845262,
     "short_shares": 19911199,
     "short_pct_float": 1.29,
@@ -198,7 +244,7 @@
   "ex_dividend": "2026-10-15",
   "dividend_date": null,
   "payout_ratio": 0.7896,
-  "inst_count": 3774,
+  "inst_count": 3776,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -290,7 +336,7 @@
       "date": "2026-04-24"
     },
     {
-      "name": "BABINEAUX CLAIRE FONTENOT",
+      "name": "O GRADY MICHAEL G",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -299,7 +345,7 @@
       "date": "2026-04-24"
     },
     {
-      "name": "MCKINSTRY NANCY",
+      "name": "BLOUNT SALLY E",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -308,7 +354,7 @@
       "date": "2026-04-24"
     },
     {
-      "name": "CONROY KEVIN T",
+      "name": "ROMAN MICHAEL F",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

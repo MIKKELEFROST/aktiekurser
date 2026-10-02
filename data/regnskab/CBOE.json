@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-01T21:21:04.080Z",
+  "updated_at": "2026-10-02T21:02:03.269Z",
   "source": "Yahoo Finance",
   "symbol": "CBOE",
   "summary": "Cboe Global Markets, Inc., through its subsidiaries, operates as a derivatives and securities exchange network that delivers trading, clearing, and investment solutions in the United States and internationally. It operates through five segments: Options, North American Equities, Europe and Asia Pacific, Futures, and Global FX. The Options segment includes options on market indices, stocks of individual corporations, and exchange-traded products (ETPs), such as exchange-traded funds (ETFs) and exchange-traded notes (ETNs). This segment also offers trading in listed options through a single system. The North American Equities segment comprises U.S. equities and ETP transaction services. This segment also includes listing services on Cboe Canada, ETP listings on BZX, the Cboe Global Markets, Inc. common stock listing, and applicable market data. The Europe and Asia Pacific segment provides pan-European derivatives transaction services; ETPs, including exchange-traded funds, exchange-traded notes, and exchange-traded commodities; international depository receipts; and an ETP listings business on regulated markets and clearing activities, as well as equities services. The Futures segment offers transaction services, including trading in VIX futures and other futures products, the licensing of proprietary market data, and access and capacity services. The Global FX segment provides institutional foreign exchange (FX) trading and non-deliverable forward FX transaction services. The company also provides trading solutions and products in multiple asset classes, including equities, derivatives, and FX across North America, Europe, and Asia Pacific. It has strategic relationships with S&P Dow Jones Indices, LLC; Frank Russell Company; and FTSE International Limited. The company was formerly known as CBOE Holdings, Inc. and changed its name to Cboe Global Markets, Inc. in October 2017. Cboe Global Markets, Inc. was founded in 1973 and is headquartered in Chicago, Illinois.",
@@ -10,17 +10,17 @@
   "next_earnings": "2026-10-30",
   "earnings_estimated": false,
   "earnings_call": "2026-10-30",
-  "eps_estimate": 3.43876,
+  "eps_estimate": 3.41603,
   "analysts": {
     "strong_buy": 3,
     "buy": 1,
-    "hold": 10,
-    "sell": 2,
+    "hold": 11,
+    "sell": 1,
     "strong_sell": 1,
     "total": 17
   },
-  "target_mean": 315.64285,
-  "target_high": 356,
+  "target_mean": 313.64285,
+  "target_high": 354,
   "target_low": 258,
   "target_analysts": 14,
   "statements": [
@@ -72,12 +72,26 @@
     }
   ],
   "growth": {
-    "q0": 0.2879,
-    "q1": 0.1371,
-    "y0": 0.3225,
-    "y1": 0.0788
+    "q0": 0.2794,
+    "q1": 0.13,
+    "y0": 0.3189,
+    "y1": 0.0765
   },
   "ratings": [
+    {
+      "date": "2026-10-02",
+      "firm": "Wells Fargo",
+      "from": null,
+      "to": "Equal-Weight",
+      "action": "init"
+    },
+    {
+      "date": "2026-10-02",
+      "firm": "Goldman Sachs",
+      "from": "Sell",
+      "to": "Neutral",
+      "action": "up"
+    },
     {
       "date": "2026-08-03",
       "firm": "TD Cowen",
@@ -132,20 +146,6 @@
       "firm": "TD Cowen",
       "from": "Hold",
       "to": "Hold",
-      "action": "main"
-    },
-    {
-      "date": "2026-05-04",
-      "firm": "Barclays",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-05-04",
-      "firm": "Keefe, Bruyette & Woods",
-      "from": "Market Perform",
-      "to": "Market Perform",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.408,
-    "enterprise_value": 27974615040,
-    "ev_ebitda": 14.489,
-    "ev_revenue": 5.527,
+    "enterprise_value": 28173033472,
+    "ev_ebitda": 14.592,
+    "ev_revenue": 5.566,
     "float_shares": 104036270,
     "short_shares": 2549419,
     "short_pct_float": 2.98,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-08-31",
   "dividend_date": null,
   "payout_ratio": 0.2245,
-  "inst_count": 1424,
+  "inst_count": 1428,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -309,6 +309,15 @@
       "date": "2026-05-14"
     },
     {
+      "name": "GOODMAN JILL R",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 530,
+      "date": "2026-05-14"
+    },
+    {
       "name": "MCPEEK JENNIFER J",
       "role": "Director",
       "kind": "other",
@@ -319,15 +328,6 @@
     },
     {
       "name": "MANSFIELD ERIN",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 530,
-      "date": "2026-05-14"
-    },
-    {
-      "name": "MAO CECILIA H.",
       "role": "Director",
       "kind": "other",
       "text": null,
@@ -354,7 +354,7 @@
       "date": "2026-05-14"
     },
     {
-      "name": "FARROW WILLIAM M III",
+      "name": "MAO CECILIA H.",
       "role": "Director",
       "kind": "other",
       "text": null,

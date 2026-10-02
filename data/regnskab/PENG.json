@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-01T21:21:05.667Z",
+  "updated_at": "2026-10-02T21:02:05.750Z",
   "source": "Yahoo Finance",
   "symbol": "PENG",
   "summary": "Penguin Solutions, Inc. designs, builds, deploys and manages enterprise solutions worldwide. The company operates through three segments: Advanced Computing, Integrated Memory, and Optimized LED. It offers hardware, software, and services focusing on technical computing for core and cloud environments through computing and AI solutions. The company also provides Penguin Solutions OriginAI, an AI infrastructure solution for customers deploying GPUs at scale; continuous availability of customers critical data and applications in data centers and edge locations under the Stratus brand products; and dynamic random-access memory, modules, solid-state/flash storage, and integrated memory solutions to networking and telecom, data analytics, AI, and ML under the SMART Modular Technologies brand. In addition, it provides Zefr, a memory module; Altus and AMD EPYC based servers for expansive memory for AI workloads; flash memory products comprising solid-state drives, Serial Advanced Technology Attachment, and PCIe NVMe products in 2.5 enclosures, M.2, EDSFF, and other form factors; and multimediacard and embedded and removable USB products, SD and microSD Card configurations, and firmware development. Further, the company offers procurement, logistics, inventory management, temporary warehousing, programming, kitting, and packaging supply chain services; and LEDs under the Cree LED brand; Cree LED XLamp and J Series packaged LED components. It serves OEMs, enterprises, government, and other customers through direct and third-party channels. The company has a strategic collaboration with Deepgram, Dell Technologies, and ZulaFly to offer healthcare, location-based workflow, and safety solutions. The company was formerly known as SMART Global Holdings, Inc. and changed its name to Penguin Solutions, Inc. in October 2024. Penguin Solutions, Inc. was founded in 1988 and is headquartered in Fremont, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-06",
   "earnings_estimated": false,
   "earnings_call": "2026-10-06",
-  "eps_estimate": 0.76629,
+  "eps_estimate": 0.772,
   "analysts": {
     "strong_buy": 2,
     "buy": 4,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.78209996,
-    "q1": 0.4784,
-    "y0": 0.3762,
-    "y1": 0.27899998
+    "q0": 0.7953,
+    "q1": 0.493,
+    "y0": 0.37919998,
+    "y1": 0.2882
   },
   "ratings": [
+    {
+      "date": "2026-10-02",
+      "firm": "Rosenblatt",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-07-20",
       "firm": "Barclays",
@@ -137,13 +144,6 @@
     {
       "date": "2026-06-02",
       "firm": "Stifel",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-05-12",
-      "firm": "Rosenblatt",
       "from": "Buy",
       "to": "Buy",
       "action": "main"
@@ -223,17 +223,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 1,
+    "buys": 2,
     "sells": 15,
-    "bought": 4485,
+    "bought": 16040,
     "sold": 94186,
-    "net_pct": -5.1
+    "net_pct": -4.5
   },
   "extras": {
     "beta": 2.854,
-    "enterprise_value": 3088202240,
-    "ev_ebitda": 17.756,
-    "ev_revenue": 2.055,
+    "enterprise_value": 3103062528,
+    "ev_ebitda": 17.841,
+    "ev_revenue": 2.065,
     "float_shares": 49624455,
     "short_shares": 7079925,
     "short_pct_float": 19.68,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 476,
+  "inst_count": 477,
   "eps_history": [
     {
       "quarter": "2025-08-31",
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "FREY ANTHONY GEORGE",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 11555,
+      "date": "2026-09-29"
+    },
     {
       "name": "KUYKENDALL ANNE",
       "role": "Officer",
@@ -351,15 +360,6 @@
       "text": "Sale at price 44.34 - 45.00 per share.",
       "value": 537359,
       "shares": 12000,
-      "date": "2026-05-12"
-    },
-    {
-      "name": "NAYYAR SANDEEP",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 43.48 - 45.09 per share.",
-      "value": 890346,
-      "shares": 20000,
       "date": "2026-05-12"
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-01T21:21:05.484Z",
+  "updated_at": "2026-10-02T21:02:04.682Z",
   "source": "Yahoo Finance",
   "symbol": "NSC",
   "summary": "Norfolk Southern Corporation, together with its subsidiaries, engages in the rail transportation of raw materials, intermediate products, and finished goods in the United States. The company transports agriculture, forest, and consumer products comprising soybeans, wheat, corn, fertilizers, livestock and poultry feed, food products, food oils, flour, sweeteners, ethanol, lumber and wood products, pulp board and paper products, wood fibers, wood pulp, beverages, and canned goods; chemicals, including sulfur and related chemicals, petroleum products comprising crude oil, chlorine and bleaching compounds, plastics, rubber, industrial chemicals, chemical wastes, sand, and natural gas liquids; metals and construction materials, such as steel, aluminum products, machinery, scrap metals, cement, aggregates, minerals, clay, transportation equipment, and military-related products; and automotive, including finished motor vehicles and automotive parts, as well as coal. It also transports overseas freight through various Atlantic and Gulf Coast ports; and operates an intermodal network. Norfolk Southern Corporation was incorporated in 1980 and is headquartered in Atlanta, Georgia.",
@@ -8,9 +8,9 @@
   "employees": 19300,
   "ceo": "Mr. Mark R. George",
   "next_earnings": "2026-10-22",
-  "earnings_estimated": true,
-  "earnings_call": "2026-07-23",
-  "eps_estimate": 3.56592,
+  "earnings_estimated": false,
+  "earnings_call": "2026-10-22",
+  "eps_estimate": 3.56481,
   "analysts": {
     "strong_buy": 1,
     "buy": 4,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 21
   },
-  "target_mean": 363.5,
+  "target_mean": 361.5,
   "target_high": 414,
   "target_low": 297,
   "target_analysts": 18,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.0806,
-    "q1": -0.0022,
-    "y0": 0.0358,
-    "y1": 0.1069
+    "q0": 0.0802,
+    "q1": -0.0037,
+    "y0": 0.0354,
+    "y1": 0.10479999
   },
   "ratings": [
+    {
+      "date": "2026-10-02",
+      "firm": "Susquehanna",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-07-27",
       "firm": "BMO Capital",
@@ -137,13 +144,6 @@
     {
       "date": "2026-07-14",
       "firm": "Susquehanna",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-10",
-      "firm": "JP Morgan",
       "from": "Neutral",
       "to": "Neutral",
       "action": "main"
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.268,
-    "enterprise_value": 85484986368,
-    "ev_ebitda": 15.095,
-    "ev_revenue": 6.817,
+    "enterprise_value": 85767995392,
+    "ev_ebitda": 15.145,
+    "ev_revenue": 6.84,
     "float_shares": 224246754,
     "short_shares": 7619508,
     "short_pct_float": 3.4,
@@ -291,39 +291,12 @@
       "date": "2026-04-24"
     },
     {
-      "name": "LAMPHERE GILBERT H",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 700,
-      "date": "2026-01-30"
-    },
-    {
       "name": "GEORGE MARK R.",
       "role": "Chief Executive Officer",
       "kind": "other",
       "text": null,
       "value": null,
       "shares": 3691,
-      "date": "2026-01-30"
-    },
-    {
-      "name": "ORR JOHN FREDERICK",
-      "role": "Chief Operating Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 1505,
-      "date": "2026-01-30"
-    },
-    {
-      "name": "ZAMPI JASON ANDREW",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 1075,
       "date": "2026-01-30"
     },
     {
@@ -351,6 +324,33 @@
       "text": null,
       "value": null,
       "shares": 861,
+      "date": "2026-01-30"
+    },
+    {
+      "name": "ORR JOHN FREDERICK",
+      "role": "Chief Operating Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 1505,
+      "date": "2026-01-30"
+    },
+    {
+      "name": "ZAMPI JASON ANDREW",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 1075,
+      "date": "2026-01-30"
+    },
+    {
+      "name": "LAMPHERE GILBERT H",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 700,
       "date": "2026-01-30"
     },
     {
