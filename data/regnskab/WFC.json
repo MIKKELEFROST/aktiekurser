@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-02T21:02:05.556Z",
+  "updated_at": "2026-10-05T22:59:54.514Z",
   "source": "Yahoo Finance",
   "symbol": "WFC",
   "summary": "Wells Fargo & Company, a financial services company, provides diversified banking, investment, mortgage, and consumer and commercial finance products and services in the United States and internationally. It operates through four segments: Consumer Banking and Lending; Commercial Banking; Corporate and Investment Banking; and Wealth and Investment Management. The company's financial products and services includes checking and savings accounts, and credit and debit cards, as well as home, auto, personal, and small business lending services. It also provides personalized wealth management, brokerage, financial planning, lending, private banking, trust and fiduciary products and services; and financial solutions to private, family owned and public companies through products and services including banking and credit products across multiple industry sectors and municipalities, secured lending and lease products, and treasury management. In addition, it offers a suite of capital markets, banking, and financial products and services, such as corporate banking, investment banking, treasury management, commercial real estate lending and servicing, equity, and fixed income solutions, as well as sales, trading, and research capabilities services to corporate, commercial real estate, government, and institutional clients. Wells Fargo & Company was founded in 1852 and is headquartered in San Francisco, California.",
@@ -10,16 +10,16 @@
   "next_earnings": "2026-10-13",
   "earnings_estimated": false,
   "earnings_call": "2026-10-13",
-  "eps_estimate": 1.81754,
+  "eps_estimate": 1.81654,
   "analysts": {
-    "strong_buy": 4,
+    "strong_buy": 5,
     "buy": 13,
-    "hold": 9,
+    "hold": 8,
     "sell": 0,
     "strong_sell": 0,
     "total": 26
   },
-  "target_mean": 100.19565,
+  "target_mean": 99.36957,
   "target_high": 115,
   "target_low": 90,
   "target_analysts": 23,
@@ -72,12 +72,33 @@
     }
   ],
   "growth": {
-    "q0": 0.0506,
-    "q1": 0.04,
-    "y0": 0.1443,
-    "y1": 0.1038
+    "q0": 0.05,
+    "q1": 0.0388,
+    "y0": 0.1438,
+    "y1": 0.1043
   },
   "ratings": [
+    {
+      "date": "2026-10-05",
+      "firm": "UBS",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-05",
+      "firm": "Goldman Sachs",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-05",
+      "firm": "Morgan Stanley",
+      "from": "Equal-Weight",
+      "to": "Overweight",
+      "action": "up"
+    },
     {
       "date": "2026-10-02",
       "firm": "JP Morgan",
@@ -125,27 +146,6 @@
       "firm": "B of A Securities",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-07",
-      "firm": "UBS",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-06",
-      "firm": "JP Morgan",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-06-29",
-      "firm": "Morgan Stanley",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
       "action": "main"
     }
   ],
@@ -230,21 +230,21 @@
     "net_pct": null
   },
   "extras": {
-    "beta": 0.916,
-    "enterprise_value": 242214944768,
+    "beta": 0.952,
+    "enterprise_value": 242819743744,
     "ev_ebitda": null,
-    "ev_revenue": 2.917,
+    "ev_revenue": 2.925,
     "float_shares": 3015622858,
-    "short_shares": 9352,
-    "short_pct_float": 0,
-    "short_ratio": 0,
+    "short_shares": 31549023,
+    "short_pct_float": 1.17,
+    "short_ratio": 2.43,
     "last_split": "2:1",
     "last_split_date": "2006-08-14"
   },
   "ex_dividend": "2026-08-07",
   "dividend_date": null,
   "payout_ratio": 0.2616,
-  "inst_count": 3530,
+  "inst_count": 3529,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -300,12 +300,12 @@
       "date": "2026-05-14"
     },
     {
-      "name": "SCHARF CHARLES W",
-      "role": "Chief Executive Officer",
+      "name": "SANTOS KLEBER",
+      "role": "Officer",
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 379767,
+      "shares": 60914,
       "date": "2026-03-05"
     },
     {
@@ -327,12 +327,12 @@
       "date": "2026-03-05"
     },
     {
-      "name": "SANTOS KLEBER",
+      "name": "SOMMERS BARRY",
       "role": "Officer",
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 60914,
+      "shares": 101035,
       "date": "2026-03-05"
     },
     {
@@ -345,21 +345,21 @@
       "date": "2026-03-05"
     },
     {
-      "name": "HRANICKY KYLE G",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 58141,
-      "date": "2026-03-05"
-    },
-    {
       "name": "VAN BEURDEN SAUL",
       "role": "Officer",
       "kind": "other",
       "text": null,
       "value": null,
       "shares": 88175,
+      "date": "2026-03-05"
+    },
+    {
+      "name": "HRANICKY KYLE G",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 58141,
       "date": "2026-03-05"
     }
   ],

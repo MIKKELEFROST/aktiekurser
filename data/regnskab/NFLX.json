@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-02T21:02:04.613Z",
+  "updated_at": "2026-10-05T22:59:53.483Z",
   "source": "Yahoo Finance",
   "symbol": "NFLX",
   "summary": "Netflix, Inc. provides entertainment services worldwide. The company offers television (TV) series, documentaries, feature films, games, and live programming across various genres and languages. It also provides members the ability to receive streaming content through a host of internet-connected devices, including TVs, digital video players, TV set-top boxes, and mobile devices. Netflix, Inc. was incorporated in 1997 and is headquartered in Los Gatos, California.",
@@ -75,9 +75,16 @@
     "q0": 0.4025,
     "q1": 0.3037,
     "y0": 0.4188,
-    "y1": 0.0627
+    "y1": 0.0612
   },
   "ratings": [
+    {
+      "date": "2026-10-05",
+      "firm": "TD Cowen",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "reit"
+    },
     {
       "date": "2026-10-01",
       "firm": "Guggenheim",
@@ -137,13 +144,6 @@
     {
       "date": "2026-07-17",
       "firm": "Piper Sandler",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-17",
-      "firm": "JP Morgan",
       "from": "Overweight",
       "to": "Overweight",
       "action": "main"
@@ -223,17 +223,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 18,
-    "sells": 15,
-    "bought": 1153921,
-    "sold": 1108234,
+    "buys": 17,
+    "sells": 14,
+    "bought": 1125291,
+    "sold": 1079604,
     "net_pct": 0.2
   },
   "extras": {
-    "beta": 1.526,
-    "enterprise_value": 290050048000,
-    "ev_ebitda": 19.695,
-    "ev_revenue": 5.996,
+    "beta": 1.613,
+    "enterprise_value": 286760534016,
+    "ev_ebitda": 19.472,
+    "ev_revenue": 5.928,
     "float_shares": 4134708819,
     "short_shares": 94187131,
     "short_pct_float": 2.28,
@@ -345,21 +345,21 @@
       "date": "2026-08-05"
     },
     {
-      "name": "HYMAN DAVID A",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 72.85 per share.",
-      "value": 416899,
-      "shares": 5723,
-      "date": "2026-08-04"
-    },
-    {
       "name": "SARANDOS THEODORE ANTHONY JR.",
       "role": "Chief Executive Officer",
       "kind": "sell",
       "text": "Sale at price 72.90 - 73.48 per share.",
       "value": 9733584,
       "shares": 133162,
+      "date": "2026-08-04"
+    },
+    {
+      "name": "HYMAN DAVID A",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 72.85 per share.",
+      "value": 416899,
+      "shares": 5723,
       "date": "2026-08-04"
     }
   ],

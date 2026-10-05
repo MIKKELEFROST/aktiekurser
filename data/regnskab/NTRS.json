@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-02T21:02:04.695Z",
+  "updated_at": "2026-10-05T22:59:53.572Z",
   "source": "Yahoo Finance",
   "symbol": "NTRS",
   "summary": "Northern Trust Corporation, a financial holding company, provides wealth management, asset servicing, asset management, and banking solutions for corporations, institutions, families, and individuals. It operates in two segments, Asset Servicing and Wealth Management. The Asset Servicing segment offers asset servicing and related services, including custody, fund administration, investment operations outsourcing, investment management, investment risk and analytics services, employee benefit services, securities lending, foreign exchange, treasury management, brokerage, transition management, banking, and cash management services. It serves corporate and public retirement funds, foundations, endowments, fund managers, insurance companies, sovereign wealth funds, and other institutional investors. The Wealth Management segment offers trust, investment management, custody, and philanthropic services; financial consulting; guardianship and estate administration; family business consulting; family financial education; brokerage; and private and business banking services. This segment also provides global custody, fiduciary services, family office consulting, and technology solutions to high-net-worth individuals and families, business owners, executives, professionals, retirees, and established privately held businesses. In addition, it offers asset management and related services comprising active and passive equity; active and passive fixed income; cash management; multi-asset and alternative asset classes that include private equity and hedge funds of funds; and multi-manager advisory services and products through separately managed accounts, bank common and collective funds, registered investment companies, exchange-traded funds, non-U.S. collective investment funds, and unregistered private investment funds. Further, the company provides overlay and other risk management services. The company was founded in 1889 and is headquartered in Chicago, Illinois.",
@@ -19,7 +19,7 @@
     "strong_sell": 2,
     "total": 15
   },
-  "target_mean": 184.53847,
+  "target_mean": 185,
   "target_high": 208,
   "target_low": 158,
   "target_analysts": 13,
@@ -73,11 +73,18 @@
   ],
   "growth": {
     "q0": 0.24229999,
-    "q1": 0.2188,
-    "y0": 0.3154,
-    "y1": 0.113299996
+    "q1": 0.2209,
+    "y0": 0.3147,
+    "y1": 0.1153
   },
   "ratings": [
+    {
+      "date": "2026-10-05",
+      "firm": "Citigroup",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-10-02",
       "firm": "JP Morgan",
@@ -139,13 +146,6 @@
       "firm": "B of A Securities",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-06",
-      "firm": "Evercore ISI Group",
-      "from": "In-Line",
-      "to": "In-Line",
       "action": "main"
     }
   ],
@@ -223,17 +223,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 27,
+    "buys": 23,
     "sells": 4,
-    "bought": 15376,
+    "bought": 14385,
     "sold": 28268,
-    "net_pct": -0.8
+    "net_pct": -0.9
   },
   "extras": {
-    "beta": 1.257,
-    "enterprise_value": 38181298176,
+    "beta": 1.253,
+    "enterprise_value": 38583799808,
     "ev_ebitda": null,
-    "ev_revenue": 4.202,
+    "ev_revenue": 4.247,
     "float_shares": 179788691,
     "short_shares": 3931230,
     "short_pct_float": 2.48,
@@ -291,30 +291,12 @@
       "date": "2026-07-29"
     },
     {
-      "name": "DHANDAPANI CHANDRA",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 173.84 - 175.60 per share.",
-      "value": 39554,
-      "shares": 227,
-      "date": "2026-07-01"
-    },
-    {
       "name": "KLEVORN MARCY S",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 175.60 per share.",
       "value": 10011,
       "shares": 57,
-      "date": "2026-07-01"
-    },
-    {
-      "name": "HARRISON DEAN M",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 173.84 - 175.60 per share.",
-      "value": 67997,
-      "shares": 389,
       "date": "2026-07-01"
     },
     {
@@ -327,12 +309,12 @@
       "date": "2026-07-01"
     },
     {
-      "name": "SLARK MARTIN P",
+      "name": "DHANDAPANI CHANDRA",
       "role": "Director",
       "kind": "other",
-      "text": "Stock Award(Grant) at price 175.60 per share.",
-      "value": 10817,
-      "shares": 61,
+      "text": "Stock Award(Grant) at price 173.84 - 175.60 per share.",
+      "value": 39554,
+      "shares": 227,
       "date": "2026-07-01"
     },
     {
@@ -345,21 +327,39 @@
       "date": "2026-07-01"
     },
     {
-      "name": "MEHTA SIDDHARTH N",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 175.60 per share.",
-      "value": 4720,
-      "shares": 26,
-      "date": "2026-07-01"
-    },
-    {
       "name": "TRIBBETT CHARLES A III",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 175.60 per share.",
       "value": 12274,
       "shares": 69,
+      "date": "2026-07-01"
+    },
+    {
+      "name": "HARRISON DEAN M",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 173.84 - 175.60 per share.",
+      "value": 67997,
+      "shares": 389,
+      "date": "2026-07-01"
+    },
+    {
+      "name": "SLARK MARTIN P",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 175.60 per share.",
+      "value": 10817,
+      "shares": 61,
+      "date": "2026-07-01"
+    },
+    {
+      "name": "MEHTA SIDDHARTH N",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 175.60 per share.",
+      "value": 4720,
+      "shares": 26,
       "date": "2026-07-01"
     }
   ],
