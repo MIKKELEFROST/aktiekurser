@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-05T22:59:52.637Z",
+  "updated_at": "2026-10-06T21:18:20.850Z",
   "source": "Yahoo Finance",
   "symbol": "FCX",
   "summary": "Freeport-McMoRan Inc. engages in the mining of mineral properties in North America, South America, and Indonesia. The company primarily explores for copper, gold, molybdenum, silver, and other metals. Its assets include the Grasberg minerals district in Indonesia; Morenci, Bagdad, Safford, Sierrita, and Miami in Arizona; Chino and Tyrone in New Mexico; and Henderson and Climax in Colorado, North America, as well as Cerro Verde in Peru and El Abra in Chile. The company was formerly known as Freeport-McMoRan Copper & Gold Inc. and changed its name to Freeport-McMoRan Inc. in July 2014. The company was incorporated in 1987 and is headquartered in Phoenix, Arizona.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-27",
   "earnings_estimated": false,
   "earnings_call": "2026-10-27",
-  "eps_estimate": 0.763,
+  "eps_estimate": 0.78636,
   "analysts": {
     "strong_buy": 6,
     "buy": 12,
@@ -19,8 +19,8 @@
     "strong_sell": 0,
     "total": 23
   },
-  "target_mean": 73.95455,
-  "target_high": 85,
+  "target_mean": 75.27273,
+  "target_high": 87,
   "target_low": 30,
   "target_analysts": 22,
   "statements": [
@@ -72,12 +72,26 @@
     }
   ],
   "growth": {
-    "q0": 0.52599996,
-    "q1": 1.1872001,
-    "y0": 0.7264,
-    "y1": 0.3668
+    "q0": 0.5727,
+    "q1": 1.2872,
+    "y0": 0.7427,
+    "y1": 0.3737
   },
   "ratings": [
+    {
+      "date": "2026-10-06",
+      "firm": "Barclays",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-06",
+      "firm": "Wells Fargo",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-10-05",
       "firm": "Citigroup",
@@ -130,20 +144,6 @@
     {
       "date": "2026-07-09",
       "firm": "Goldman Sachs",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-09",
-      "firm": "JP Morgan",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-09",
-      "firm": "B of A Securities",
       "from": "Buy",
       "to": "Buy",
       "action": "main"
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.389,
-    "enterprise_value": 121842704384,
-    "ev_ebitda": 12.753,
-    "ev_revenue": 4.71,
+    "enterprise_value": 122646872064,
+    "ev_ebitda": 12.837,
+    "ev_revenue": 4.741,
     "float_shares": 1426338765,
     "short_shares": 34304914,
     "short_pct_float": 2.4,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-10-15",
   "dividend_date": null,
   "payout_ratio": 0.2956,
-  "inst_count": 2502,
+  "inst_count": 2503,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -273,21 +273,21 @@
   ],
   "insiders": [
     {
-      "name": "GRANT HUGH N",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 70.00 per share.",
-      "value": 33740,
-      "shares": 482,
-      "date": "2026-10-01"
-    },
-    {
       "name": "STEPHENS JOHN JOSEPH",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 70.00 per share.",
       "value": 20580,
       "shares": 294,
+      "date": "2026-10-01"
+    },
+    {
+      "name": "GRANT HUGH N",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 70.00 per share.",
+      "value": 33740,
+      "shares": 482,
       "date": "2026-10-01"
     },
     {
@@ -318,15 +318,6 @@
       "date": "2026-08-25"
     },
     {
-      "name": "HIGGINS STEPHEN T",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 69.50 per share.",
-      "value": 992252,
-      "shares": 14277,
-      "date": "2026-08-05"
-    },
-    {
       "name": "MIKES ELLIE L.",
       "role": "Officer",
       "kind": "sell",
@@ -339,19 +330,19 @@
       "name": "HIGGINS STEPHEN T",
       "role": "Officer",
       "kind": "sell",
+      "text": "Sale at price 69.50 per share.",
+      "value": 992252,
+      "shares": 14277,
+      "date": "2026-08-05"
+    },
+    {
+      "name": "HIGGINS STEPHEN T",
+      "role": "Officer",
+      "kind": "sell",
       "text": "Sale at price 63.00 per share.",
       "value": 475650,
       "shares": 7550,
       "date": "2026-07-30"
-    },
-    {
-      "name": "GRANT HUGH N",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 62.89 per share.",
-      "value": 33709,
-      "shares": 536,
-      "date": "2026-07-01"
     },
     {
       "name": "STEPHENS JOHN JOSEPH",
@@ -360,6 +351,15 @@
       "text": "Stock Award(Grant) at price 62.89 per share.",
       "value": 20565,
       "shares": 327,
+      "date": "2026-07-01"
+    },
+    {
+      "name": "GRANT HUGH N",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 62.89 per share.",
+      "value": 33709,
+      "shares": 536,
       "date": "2026-07-01"
     }
   ],

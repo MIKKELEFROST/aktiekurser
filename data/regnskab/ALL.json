@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-05T22:59:51.665Z",
+  "updated_at": "2026-10-06T21:18:20.027Z",
   "source": "Yahoo Finance",
   "symbol": "ALL",
   "summary": "The Allstate Corporation, together with its subsidiaries, provides property and casualty, and other insurance products in the United States and Canada. It operates in four segments: Allstate Protection; Run-off Property-Liability; Protection Services; and Corporate and Other. The company offers private passenger auto, homeowners, other personal lines and commercial insurance through exclusive agents, independent agents, contact centers and online under the Allstate, National General, Direct Auto and Answer Financial brands. It also provides consumer product protection plans, device and mobile data collection services, and analytic solutions using automotive telematics information, roadside assistance, and protection plans; and insurance products, such as identity protection and restoration. In addition, the company offers property and casualty insurance, as well as engages in company activities and certain non-insurance operations, including expenses associated with strategic initiatives. Further, it offers automotive protection; vehicle service contracts, guaranteed asset protection, road hazard tires and wheels, and paintless dent repair protection; and roadside assistance, mobility data collection services, and analytic solutions using automotive telematics information, identity theft protection, and remediation services. The Allstate Corporation was founded in 1931 and is headquartered in Northbrook, Illinois.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 6.44581,
+  "eps_estimate": 6.46871,
   "analysts": {
     "strong_buy": 2,
     "buy": 8,
@@ -19,7 +19,7 @@
     "strong_sell": 2,
     "total": 25
   },
-  "target_mean": 273.68182,
+  "target_mean": 271.5,
   "target_high": 336,
   "target_low": 191,
   "target_analysts": 22,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": -0.42290002,
-    "q1": -0.35779998,
-    "y0": 0.0113,
-    "y1": -0.21129999
+    "q0": -0.4209,
+    "q1": -0.3447,
+    "y0": 0.0161,
+    "y1": -0.2094
   },
   "ratings": [
+    {
+      "date": "2026-10-06",
+      "firm": "Morgan Stanley",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
     {
       "date": "2026-10-02",
       "firm": "Citigroup",
@@ -140,13 +147,6 @@
       "from": "Neutral",
       "to": "Sell",
       "action": "down"
-    },
-    {
-      "date": "2026-08-11",
-      "firm": "JP Morgan",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
     }
   ],
   "holders": [
@@ -223,17 +223,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 17,
+    "buys": 18,
     "sells": 5,
-    "bought": 93699,
+    "bought": 93888,
     "sold": 111574,
     "net_pct": -1.4
   },
   "extras": {
     "beta": 0.138,
-    "enterprise_value": 60337438720,
-    "ev_ebitda": 3.525,
-    "ev_revenue": 0.86,
+    "enterprise_value": 60582711296,
+    "ev_ebitda": 3.54,
+    "ev_revenue": 0.864,
     "float_shares": 251323102,
     "short_shares": 6029626,
     "short_pct_float": 2.4,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-08-31",
   "dividend_date": null,
   "payout_ratio": 0.0832,
-  "inst_count": 2229,
+  "inst_count": 2234,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "PEROLD JACQUES P",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 224.41 per share.",
+      "value": 42413,
+      "shares": 189,
+      "date": "2026-10-01"
+    },
     {
       "name": "JEEVANJEE ZULFIKAR",
       "role": "Officer of Subsidiary Company",
@@ -352,15 +361,6 @@
       "value": null,
       "shares": 1966,
       "date": "2026-06-30"
-    },
-    {
-      "name": "FERREN ERIC K",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 245,
-      "date": "2026-06-05"
     }
   ],
   "dividends": [

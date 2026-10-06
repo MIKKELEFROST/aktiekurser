@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-05T22:59:51.715Z",
+  "updated_at": "2026-10-06T21:18:20.066Z",
   "source": "Yahoo Finance",
   "symbol": "AMZN",
   "summary": "Amazon.com, Inc. engages in the retail sale of consumer products, advertising, and subscriptions service through online and physical stores in North America and internationally. The company operates through three segments: North America, International, and Amazon Web Services (AWS). It also manufactures and sells electronic devices, including Kindle, fire tablets, fire TVs, echo, ring, blink, and eero; and develops and produces media content. In addition, the company offers programs that enable sellers to sell their products in its stores; and programs that allow authors, independent publishers, musicians, filmmakers, Twitch streamers, skill and app developers, and others to publish and sell content. Further, it provides compute, storage, Artificial intelligence, database, analytics, machine learning, and other services, as well as advertising services through programs, such as sponsored ads, display, and video advertising. Additionally, the company offers Amazon Prime, a membership program. The company's products offered through its stores include merchandise and content purchased for resale and products offered by third-party sellers. It serves consumers, sellers, developers, enterprises, content creators, advertisers, and employees. The company was incorporated in 1994 and is headquartered in Seattle, Washington.",
@@ -75,9 +75,16 @@
     "q0": 0.0137,
     "q1": 0.2352,
     "y0": 0.1586,
-    "y1": 0.261
+    "y1": 0.2599
   },
   "ratings": [
+    {
+      "date": "2026-10-06",
+      "firm": "Tigress Financial",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-05",
       "firm": "TD Cowen",
@@ -139,13 +146,6 @@
       "firm": "Mizuho",
       "from": "Outperform",
       "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-31",
-      "firm": "TD Cowen",
-      "from": "Buy",
-      "to": "Buy",
       "action": "main"
     }
   ],
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 58,
-    "sells": 67,
+    "sells": 68,
     "bought": 2850945,
-    "sold": 1961576,
+    "sold": 1962576,
     "net_pct": 0.1
   },
   "extras": {
     "beta": 1.456,
-    "enterprise_value": 2841620512768,
-    "ev_ebitda": 16.823,
-    "ev_revenue": 3.663,
+    "enterprise_value": 2840326307840,
+    "ev_ebitda": 16.815,
+    "ev_revenue": 3.662,
     "float_shares": 9810799373,
     "short_shares": 81440414,
     "short_pct_float": 0.83,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 7870,
+  "inst_count": 7867,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -276,6 +276,15 @@
       "name": "HERRINGTON DOUGLAS J",
       "role": "Officer",
       "kind": "sell",
+      "text": "Sale at price 251.50 per share.",
+      "value": 251500,
+      "shares": 1000,
+      "date": "2026-10-01"
+    },
+    {
+      "name": "HERRINGTON DOUGLAS J",
+      "role": "Officer",
+      "kind": "sell",
       "text": "Sale at price 254.77 per share.",
       "value": 254770,
       "shares": 1000,
@@ -300,6 +309,15 @@
       "date": "2026-08-24"
     },
     {
+      "name": "OLSAVSKY BRIAN T.",
+      "role": "Chief Financial Officer",
+      "kind": "sell",
+      "text": "Sale at price 260.31 per share.",
+      "value": 1606633,
+      "shares": 6172,
+      "date": "2026-08-21"
+    },
+    {
       "name": "GARMAN MATTHEW S",
       "role": "Officer",
       "kind": "sell",
@@ -318,15 +336,6 @@
       "date": "2026-08-21"
     },
     {
-      "name": "OLSAVSKY BRIAN T.",
-      "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 260.31 per share.",
-      "value": 1606633,
-      "shares": 6172,
-      "date": "2026-08-21"
-    },
-    {
       "name": "JASSY ANDREW R.",
       "role": "Chief Executive Officer",
       "kind": "sell",
@@ -342,15 +351,6 @@
       "text": "Sale at price 257.77 - 260.33 per share.",
       "value": 606854,
       "shares": 2343,
-      "date": "2026-08-21"
-    },
-    {
-      "name": "GARMAN MATTHEW S",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 18176,
       "date": "2026-08-21"
     },
     {

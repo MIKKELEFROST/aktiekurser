@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-05T22:59:54.628Z",
+  "updated_at": "2026-10-06T21:18:21.409Z",
   "source": "Yahoo Finance",
   "symbol": "LW",
   "summary": "Lamb Weston Holdings, Inc. engages in the production, distribution, and marketing of frozen potato products in the United States, Canada, Mexico, and internationally. The company offers frozen potatoes, commercial ingredients, and appetizers under the Lamb Weston brand, as well as under various customer labels. It also provides its products under its owned or licensed brands, such as Grown in Idaho and Alexia, and other licensed brands, as well as under retailers' own brands. It sells its products through a network of internal sales personnel and independent brokers, agents, and distributors to quick service and full-service restaurants and chains, wholesale, grocery, mass merchants, club retailers, non-commercial channels, and specialty retailers, as well as foodservice distributors and institutions, including businesses, educational institutions, independent restaurants, regional chain restaurants, and convenience stores. Lamb Weston Holdings, Inc. was incorporated in 1950 and is headquartered in Eagle, Idaho.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-06",
   "earnings_estimated": false,
   "earnings_call": "2026-10-06",
-  "eps_estimate": 0.58851,
+  "eps_estimate": 0.76571,
   "analysts": {
     "strong_buy": 2,
     "buy": 2,
@@ -19,17 +19,11 @@
     "strong_sell": 0,
     "total": 12
   },
-  "target_mean": 54.33333,
+  "target_mean": 54.08333,
   "target_high": 65,
   "target_low": 46,
   "target_analysts": 12,
   "statements": [
-    {
-      "year": "2022",
-      "revenue": 4098900000,
-      "net": 200900000,
-      "margin": 4.9
-    },
     {
       "year": "2023",
       "revenue": 5350600000,
@@ -47,19 +41,15 @@
       "revenue": 6451300000,
       "net": 357200000,
       "margin": 5.5
+    },
+    {
+      "year": "2026",
+      "revenue": 6612300000,
+      "net": 290000000,
+      "margin": 4.4
     }
   ],
   "quarterly": [
-    {
-      "q": "2Q2025",
-      "revenue": 1675800000,
-      "earnings": 119900000
-    },
-    {
-      "q": "3Q2025",
-      "revenue": 1659300000,
-      "earnings": 64300000
-    },
     {
       "q": "4Q2025",
       "revenue": 1618100000,
@@ -69,11 +59,21 @@
       "q": "1Q2026",
       "revenue": 1564800000,
       "earnings": 54000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 1770100000,
+      "earnings": 109600000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1670300000,
+      "earnings": 29100000
     }
   ],
   "growth": {
-    "q0": -0.2047,
-    "q1": 0.1097,
+    "q0": 0.1097,
+    "q1": 0.22940001,
     "y0": 0.0011999999,
     "y1": 0.1177
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.474,
-    "enterprise_value": 9963072512,
-    "ev_ebitda": 9.022,
-    "ev_revenue": 1.507,
+    "enterprise_value": 10096429056,
+    "ev_ebitda": 9.143,
+    "ev_revenue": 1.527,
     "float_shares": 136108951,
     "short_shares": 6659809,
     "short_pct_float": 5.53,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.72120005,
   "inst_count": 725,
   "eps_history": [
-    {
-      "quarter": "2025-08-31",
-      "estimate": 0.5335,
-      "actual": 0.74,
-      "surprise_pct": 38.71
-    },
     {
       "quarter": "2025-11-30",
       "estimate": 0.64871,
@@ -269,18 +263,15 @@
       "estimate": 0.62556,
       "actual": 0.87,
       "surprise_pct": 39.08
+    },
+    {
+      "quarter": "2026-08-31",
+      "estimate": 0.58851,
+      "actual": 0.75,
+      "surprise_pct": 27.44
     }
   ],
   "insiders": [
-    {
-      "name": "SMITH MICHAEL JARED",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 45770,
-      "date": "2026-07-28"
-    },
     {
       "name": "PHILIP AMIT",
       "role": "Chief Technology Officer",
@@ -345,21 +336,30 @@
       "date": "2026-07-28"
     },
     {
-      "name": "GRAY JAMES D.",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 16111,
-      "date": "2026-07-28"
-    },
-    {
       "name": "SPYTEK ERYK J",
       "role": "General Counsel",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 8788,
+      "date": "2026-07-28"
+    },
+    {
+      "name": "SMITH MICHAEL JARED",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 45770,
+      "date": "2026-07-28"
+    },
+    {
+      "name": "GRAY JAMES D.",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 16111,
       "date": "2026-07-28"
     }
   ],

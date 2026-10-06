@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-05T22:59:52.285Z",
+  "updated_at": "2026-10-06T21:18:20.555Z",
   "source": "Yahoo Finance",
   "symbol": "CRWD",
   "summary": "CrowdStrike Holdings, Inc. provides cybersecurity solutions in the United States and internationally. Its unified platform provides cloud-delivered protection of endpoints, cloud workloads, identity, and data through a software as a service (SaaS) subscription-based model. The company offers corporate endpoint and cloud workload security, managed security, security and vulnerability management, IT operations management, identity protection, threat intelligence, data protection, SaaS security posture management, and AI powered workflow automation, and securing generative AI workload services, as well as security orchestration, automation, and response; and security information and event management, and log management services. It primarily sells subscriptions to its Falcon platform and cloud modules. The company has a strategic alliance with Cognizant Technology Solutions Corporation to help enterprises secure artificial intelligence across its lifecycle, from the AI agents and models to the foundational infrastructure that supports the entire AI ecosystem and with Snowflake to bring AI-native security and enterprise data at scale. Additionally, it has a partnership with Fortanix Inc. to combine its Falcon platform with Fortanix Confidential AI to provide an integrated solution for end-to-end AI security. The company was incorporated in 2011 and is headquartered in Austin, Texas.",
@@ -15,12 +15,12 @@
     "strong_buy": 10,
     "buy": 30,
     "hold": 12,
-    "sell": 0,
-    "strong_sell": 1,
+    "sell": 1,
+    "strong_sell": 0,
     "total": 53
   },
-  "target_mean": 236.27,
-  "target_high": 300,
+  "target_mean": 237.77,
+  "target_high": 325,
   "target_low": 132,
   "target_analysts": 50,
   "statements": [
@@ -78,6 +78,13 @@
     "y1": 0.2785
   },
   "ratings": [
+    {
+      "date": "2026-10-06",
+      "firm": "StoneX",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-02",
       "firm": "TD Cowen",
@@ -139,13 +146,6 @@
       "firm": "Rosenblatt",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-09-03",
-      "firm": "Raymond James",
-      "from": "Outperform",
-      "to": "Outperform",
       "action": "main"
     }
   ],
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 20,
-    "sells": 112,
+    "sells": 113,
     "bought": 245836,
-    "sold": 1376458,
-    "net_pct": -7.2
+    "sold": 1401234,
+    "net_pct": -7.6
   },
   "extras": {
     "beta": 1.197,
-    "enterprise_value": 272347496448,
-    "ev_ebitda": 2548.615,
-    "ev_revenue": 50.471,
+    "enterprise_value": 275040436224,
+    "ev_ebitda": 2573.815,
+    "ev_revenue": 50.97,
     "float_shares": 1007469970,
     "short_shares": 27929552,
     "short_pct_float": 2.77,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 3150,
+  "inst_count": 3157,
   "eps_history": [
     {
       "quarter": "2025-10-31",
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "SAHA ANURAG",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 259.95 - 264.60 per share.",
+      "value": 6509118,
+      "shares": 24776,
+      "date": "2026-10-01"
+    },
     {
       "name": "KURTZ GEORGE ROBERT",
       "role": "Chief Executive Officer",
@@ -351,15 +360,6 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 83,
-      "date": "2026-09-18"
-    },
-    {
-      "name": "SCHUMACHER LAURA J",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 68,
       "date": "2026-09-18"
     }
   ],

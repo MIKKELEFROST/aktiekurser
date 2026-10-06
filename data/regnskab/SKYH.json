@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-05T22:59:54.084Z",
+  "updated_at": "2026-10-06T21:18:22.056Z",
   "source": "Yahoo Finance",
   "symbol": "SKYH",
   "summary": "Sky Harbour Group Corporation operates as an aviation infrastructure development company in the United States. It develops, leases, and manages general aviation hangars for business aircraft. The company's home basing hangar campuses includes private and semi-private hangars, as well as a suite of services for home based and transient aircraft. The company is based in White Plains, New York.",
@@ -51,6 +51,11 @@
   ],
   "quarterly": [
     {
+      "q": "2Q2025",
+      "revenue": 6588000,
+      "earnings": 17453000
+    },
+    {
       "q": "3Q2025",
       "revenue": 7302000,
       "earnings": -1878000
@@ -64,11 +69,6 @@
       "q": "1Q2026",
       "revenue": 8725000,
       "earnings": -5578000
-    },
-    {
-      "q": "2Q2026",
-      "revenue": 9855000,
-      "earnings": -1237000
     }
   ],
   "growth": null,
@@ -218,17 +218,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 9,
+    "buys": 10,
     "sells": 2,
-    "bought": 41366,
+    "bought": 45216,
     "sold": 691500,
-    "net_pct": -5.8
+    "net_pct": -5.7
   },
   "extras": {
     "beta": 1.344,
-    "enterprise_value": 947939776,
-    "ev_ebitda": -48.471,
-    "ev_revenue": 27.93,
+    "enterprise_value": 949668288,
+    "ev_ebitda": -48.559,
+    "ev_revenue": 27.981,
     "float_shares": 24026065,
     "short_shares": 3312807,
     "short_pct_float": 12.22,
@@ -267,6 +267,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "GONZALEZ FRANCISCO",
+      "role": "Chief Financial Officer",
+      "kind": "buy",
+      "text": "Purchase at price 9.25 per share.",
+      "value": 35612,
+      "shares": 3850,
+      "date": "2026-10-02"
+    },
     {
       "name": "GONZALEZ FRANCISCO",
       "role": "Chief Financial Officer",
@@ -347,15 +356,6 @@
       "value": 3000075,
       "shares": 331500,
       "date": "2026-04-06"
-    },
-    {
-      "name": "ROZEK ALEXANDER BUFFETT",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 7910,
-      "date": "2026-02-18"
     }
   ],
   "dividends": [],

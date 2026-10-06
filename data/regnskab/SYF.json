@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-05T22:59:54.805Z",
+  "updated_at": "2026-10-06T21:18:22.167Z",
   "source": "Yahoo Finance",
   "symbol": "SYF",
   "summary": "Synchrony Financial, together with its subsidiaries, operates as a consumer financial services company in the United States. The company provides credit products, such as credit cards, commercial credit products, and consumer installment loans. It also offers private label credit cards, dual and general purpose co-branded cards, short- and long-term installment loans, and consumer banking products; and deposit products, including certificates of deposit, individual retirement accounts, money market accounts, savings accounts, and sweep and affinity deposits, as well as accepts deposits through third-party firms. In addition, the company provides debt cancellation products to its credit card customers through online and mobile channels; and healthcare payments and financing solutions under the CareCredit and Walgreens brands; payments and financing solutions in the apparel, specialty retail, outdoor, music, and luxury industries, such as American Eagle, Dick's Sporting Goods, Guitar Center, Pandora, Polaris, Suzuki, and Sweetwater. It offers its credit products through programs established with a group of national and regional retailers, local merchants, manufacturers, buying groups, industry associations, and healthcare service providers; and deposit products through various channels, such as digital and print. It serves digital, health and wellness, retail, home, auto, telecommunications, pet, outdoor, and other industries. The company was founded in 1932 and is headquartered in Stamford, Connecticut.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-20",
   "earnings_estimated": false,
   "earnings_call": "2026-10-20",
-  "eps_estimate": 2.37449,
+  "eps_estimate": 2.4008,
   "analysts": {
     "strong_buy": 4,
     "buy": 12,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 23
   },
-  "target_mean": 89.17391,
+  "target_mean": 88.52174,
   "target_high": 104,
   "target_low": 78,
   "target_analysts": 23,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": -0.1698,
-    "q1": 0.0068,
-    "y0": -0.001,
-    "y1": 0.1096
+    "q0": -0.16059999,
+    "q1": -0.0001,
+    "y0": -0.0004,
+    "y1": 0.1103
   },
   "ratings": [
+    {
+      "date": "2026-10-06",
+      "firm": "TD Cowen",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-05",
       "firm": "UBS",
@@ -139,13 +146,6 @@
       "firm": "HSBC",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-13",
-      "firm": "JP Morgan",
-      "from": "Neutral",
-      "to": "Neutral",
       "action": "main"
     }
   ],
@@ -223,17 +223,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 27,
+    "buys": 19,
     "sells": 8,
-    "bought": 39249,
+    "bought": 31725,
     "sold": 80275,
-    "net_pct": -3.5
+    "net_pct": -4.1
   },
   "extras": {
     "beta": 1.339,
-    "enterprise_value": 25306865664,
+    "enterprise_value": 25342656512,
     "ev_ebitda": null,
-    "ev_revenue": 2.554,
+    "ev_revenue": 2.558,
     "float_shares": 323112766,
     "short_shares": 18821471,
     "short_pct_float": 7.69,
@@ -284,15 +284,6 @@
     {
       "name": "CASELLAS ALBERTO B",
       "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 80.00 per share.",
-      "value": 436480,
-      "shares": 5456,
-      "date": "2026-08-13"
-    },
-    {
-      "name": "CASELLAS ALBERTO B",
-      "role": "Officer",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 33.53 per share.",
       "value": 182940,
@@ -300,13 +291,13 @@
       "date": "2026-08-13"
     },
     {
-      "name": "COVIELLO ARTHUR W JR",
-      "role": "Director",
+      "name": "CASELLAS ALBERTO B",
+      "role": "Officer",
       "kind": "sell",
-      "text": "Sale at price 77.17 per share.",
-      "value": 308680,
-      "shares": 4000,
-      "date": "2026-08-03"
+      "text": "Sale at price 80.00 per share.",
+      "value": 436480,
+      "shares": 5456,
+      "date": "2026-08-13"
     },
     {
       "name": "OWENS DARRELL",
@@ -329,14 +320,14 @@
     {
       "name": "COVIELLO ARTHUR W JR",
       "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 76.05 per share.",
-      "value": 60003,
-      "shares": 789,
-      "date": "2026-06-30"
+      "kind": "sell",
+      "text": "Sale at price 77.17 per share.",
+      "value": 308680,
+      "shares": 4000,
+      "date": "2026-08-03"
     },
     {
-      "name": "GUTHRIE ROY A",
+      "name": "RICHIE LAUREL J",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 76.05 per share.",
@@ -345,7 +336,7 @@
       "date": "2026-06-30"
     },
     {
-      "name": "ELLINGER DEBORAH G.",
+      "name": "CHYTIL KAMILA K",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 76.05 per share.",
@@ -354,7 +345,16 @@
       "date": "2026-06-30"
     },
     {
-      "name": "ZANE ELLEN M",
+      "name": "COLAO DANIEL O",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 76.05 per share.",
+      "value": 60003,
+      "shares": 789,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "AGUIRRE FERNANDO",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 76.05 per share.",
