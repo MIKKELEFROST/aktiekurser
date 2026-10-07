@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T21:18:22.270Z",
+  "updated_at": "2026-10-07T21:39:04.965Z",
   "source": "Yahoo Finance",
   "symbol": "TRV",
   "summary": "The Travelers Companies, Inc., through its subsidiaries, provides a range of commercial and personal property, and casualty insurance products and services to businesses, government units, associations, and individuals in the United States, Canada, and internationally. It operates through three segments: Business Insurance, Bond & Specialty Insurance, and Personal Insurance. The Business Insurance segment offers workers' compensation, commercial automobile and property, general liability, commercial multi-peril, employers' liability, public and product liability, professional indemnity, marine, aviation, commercial property and automobile, onshore and offshore energy, construction, terrorism, personal accident, and kidnap and ransom insurance products. This segment operates through select accounts, which serve small businesses; middle accounts that serve mid-sized businesses; national accounts, which serve large companies; and national property and others that serve large and mid-sized customers, commercial trucking industry, and agricultural businesses, as well as markets and distributes its products through brokers, wholesale agents, and program managers. The Bond & Specialty Insurance segment provides surety, fidelity, management and professional liability, and other property and casualty coverages and related risk management services through independent agencies and brokers. The Personal Insurance segment offers property and casualty insurance covering personal risks, primarily automobile and homeowners' insurance to individuals. The Travelers Companies, Inc. was founded in 1853 and is based in New York, New York.",
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 10921000000,
-      "earnings": 1509000000
-    },
-    {
       "q": "3Q2025",
       "revenue": 11135000000,
       "earnings": 1888000000
@@ -69,6 +64,11 @@
       "q": "1Q2026",
       "revenue": 10605000000,
       "earnings": 1711000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 10753000000,
+      "earnings": 2208000000
     }
   ],
   "growth": {
@@ -78,6 +78,20 @@
     "y1": -0.1141
   },
   "ratings": [
+    {
+      "date": "2026-10-07",
+      "firm": "Mizuho",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-07",
+      "firm": "Cantor Fitzgerald",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-09-21",
       "firm": "Evercore ISI Group",
@@ -132,20 +146,6 @@
       "firm": "Citigroup",
       "from": "Neutral",
       "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-20",
-      "firm": "Truist Securities",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-20",
-      "firm": "Evercore ISI Group",
-      "from": "In-Line",
-      "to": "In-Line",
       "action": "main"
     }
   ],
@@ -231,8 +231,8 @@
   },
   "extras": {
     "beta": 0.437,
-    "enterprise_value": 79240011776,
-    "ev_ebitda": 6.902,
+    "enterprise_value": 79227494400,
+    "ev_ebitda": 6.901,
     "ev_revenue": 1.618,
     "float_shares": 207344429,
     "short_shares": 6177337,
@@ -291,30 +291,12 @@
       "date": "2026-08-14"
     },
     {
-      "name": "YIN DANIEL TEI-HWA",
-      "role": "Chief Investment Officer",
-      "kind": "sell",
-      "text": "Sale at price 387.00 per share.",
-      "value": 2768211,
-      "shares": 7153,
-      "date": "2026-07-24"
-    },
-    {
       "name": "KURTZMAN DIANE",
       "role": "Officer",
       "kind": "sell",
       "text": "Sale at price 386.71 per share.",
       "value": 1610260,
       "shares": 4164,
-      "date": "2026-07-24"
-    },
-    {
-      "name": "YIN DANIEL TEI-HWA",
-      "role": "Chief Investment Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 140.85 per share.",
-      "value": 1007500,
-      "shares": 7153,
       "date": "2026-07-24"
     },
     {
@@ -327,21 +309,30 @@
       "date": "2026-07-24"
     },
     {
+      "name": "YIN DANIEL TEI-HWA",
+      "role": "Chief Investment Officer",
+      "kind": "sell",
+      "text": "Sale at price 387.00 per share.",
+      "value": 2768211,
+      "shares": 7153,
+      "date": "2026-07-24"
+    },
+    {
+      "name": "YIN DANIEL TEI-HWA",
+      "role": "Chief Investment Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 140.85 per share.",
+      "value": 1007500,
+      "shares": 7153,
+      "date": "2026-07-24"
+    },
+    {
       "name": "BESSETTE ANDY F",
       "role": "Officer",
       "kind": "sell",
       "text": "Sale at price 368.09 - 368.86 per share.",
       "value": 1104337,
       "shares": 3000,
-      "date": "2026-07-22"
-    },
-    {
-      "name": "ROWLAND DAVID DONNAY",
-      "role": "Chief Investment Officer",
-      "kind": "sell",
-      "text": "Sale at price 371.69 per share.",
-      "value": 1858440,
-      "shares": 5000,
       "date": "2026-07-22"
     },
     {
@@ -360,6 +351,15 @@
       "text": "Conversion of Exercise of derivative security at price 126.18 per share.",
       "value": 192424,
       "shares": 1525,
+      "date": "2026-07-22"
+    },
+    {
+      "name": "ROWLAND DAVID DONNAY",
+      "role": "Chief Investment Officer",
+      "kind": "sell",
+      "text": "Sale at price 371.69 per share.",
+      "value": 1858440,
+      "shares": 5000,
       "date": "2026-07-22"
     }
   ],

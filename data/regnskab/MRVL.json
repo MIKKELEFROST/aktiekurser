@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T21:18:21.530Z",
+  "updated_at": "2026-10-07T21:39:04.087Z",
   "source": "Yahoo Finance",
   "symbol": "MRVL",
   "summary": "Marvell Technology, Inc., together with its subsidiaries, provides data infrastructure semiconductor solutions and spanning the data center core to network edge in the United States, Argentina, China, India, Israel, Japan, Singapore, South Korea, Taiwan, Vietnam, and internationally. The company develops and scales system-on-a-chip architectures, integrating analog, mixed-signal, and digital signal processing functionality. It offers a portfolio of ethernet solutions, including spanning controllers, network adapters, physical transceivers, and switches; single or multiple core processors; and custom application specific integrated circuits, interconnects, fibre channel adapters, and processors. The company also provides interconnect products, including pulse amplitude modulation, coherent and coherent-lite digital signal processors (DSPs), laser drivers, trans-impedance amplifiers, silicon photonics, co-packaged optics, linear pluggable optics chipsets, data center interconnect, active electrical cable DSPs and peripheral component interconnect express retimer solutions; fibre channel products comprising host bus adapters and controllers for server and storage system connectivity; storage controllers for hard disk drives and solid-state-drives; host system interfaces, including serial advanced technology attachment and serial attached SCSI, peripheral component interconnect express, compute express link switches, non-volatile memory express (NVMe), and NVMe over fabrics; and develops ultra accelerator linkTM switches and ethernet for scale-up networking switches. The company serves data centers, communications, and other markets. It offers its products through direct customers and distributors. Marvell Technology, Inc. was incorporated in 1995 and is headquartered in Wilmington, Delaware.",
@@ -79,74 +79,74 @@
   },
   "ratings": [
     {
-      "date": "2026-09-23",
-      "firm": "Seaport Global",
-      "from": null,
+      "date": "2026-10-07",
+      "firm": "UBS",
+      "from": "Buy",
       "to": "Buy",
-      "action": "init"
-    },
-    {
-      "date": "2026-09-21",
-      "firm": "Morgan Stanley",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
       "action": "main"
     },
     {
-      "date": "2026-09-10",
-      "firm": "Piper Sandler",
-      "from": null,
+      "date": "2026-10-07",
+      "firm": "Jefferies",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-07",
+      "firm": "JP Morgan",
+      "from": "Overweight",
       "to": "Overweight",
-      "action": "init"
-    },
-    {
-      "date": "2026-08-28",
-      "firm": "Craig-Hallum",
-      "from": "Buy",
-      "to": "Buy",
       "action": "main"
     },
     {
-      "date": "2026-08-28",
-      "firm": "B. Riley Securities",
-      "from": "Buy",
-      "to": "Buy",
+      "date": "2026-10-07",
+      "firm": "Wells Fargo",
+      "from": "Overweight",
+      "to": "Overweight",
       "action": "main"
     },
     {
-      "date": "2026-08-28",
-      "firm": "TD Cowen",
-      "from": "Hold",
-      "to": "Hold",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-28",
-      "firm": "Oppenheimer",
+      "date": "2026-10-07",
+      "firm": "Wolfe Research",
       "from": "Outperform",
       "to": "Outperform",
       "action": "main"
     },
     {
-      "date": "2026-08-28",
+      "date": "2026-10-07",
       "firm": "Morgan Stanley",
       "from": "Equal-Weight",
       "to": "Equal-Weight",
       "action": "main"
     },
     {
-      "date": "2026-08-28",
-      "firm": "Rosenblatt",
-      "from": "Buy",
-      "to": "Buy",
+      "date": "2026-10-07",
+      "firm": "RBC Capital",
+      "from": "Outperform",
+      "to": "Outperform",
       "action": "main"
     },
     {
-      "date": "2026-08-28",
-      "firm": "Cantor Fitzgerald",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "reit"
+      "date": "2026-10-07",
+      "firm": "Piper Sandler",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-07",
+      "firm": "TD Cowen",
+      "from": "Hold",
+      "to": "Buy",
+      "action": "up"
+    },
+    {
+      "date": "2026-10-07",
+      "firm": "StoneX",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
     }
   ],
   "holders": [
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 24,
-    "sells": 18,
+    "sells": 17,
     "bought": 1765289,
-    "sold": 216286,
-    "net_pct": 55.6
+    "sold": 209386,
+    "net_pct": 56
   },
   "extras": {
     "beta": 2.26,
-    "enterprise_value": 239212429312,
-    "ev_ebitda": 83.925,
-    "ev_revenue": 25.313,
+    "enterprise_value": 253032366080,
+    "ev_ebitda": 88.774,
+    "ev_revenue": 26.775,
     "float_shares": 873874695,
     "short_shares": 31342713,
     "short_pct_float": 4.18,
@@ -273,21 +273,21 @@
   ],
   "insiders": [
     {
-      "name": "DURN DANIEL JAMES",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 6469,
-      "date": "2026-09-15"
-    },
-    {
       "name": "MURPHY MATTHEW JOSEPH",
       "role": "Chief Executive Officer",
       "kind": "sell",
       "text": "Sale at price 223.39 per share.",
       "value": 1675425,
       "shares": 7500,
+      "date": "2026-09-15"
+    },
+    {
+      "name": "DURN DANIEL JAMES",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 6469,
       "date": "2026-09-15"
     },
     {
@@ -336,15 +336,6 @@
       "date": "2026-07-16"
     },
     {
-      "name": "BHARATHI SANDEEP",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 22441,
-      "date": "2026-07-15"
-    },
-    {
       "name": "CASPER MARK JOHN",
       "role": "Officer",
       "kind": "other",
@@ -354,12 +345,21 @@
       "date": "2026-07-15"
     },
     {
-      "name": "SCARPULLA JUSTIN",
-      "role": "Officer",
+      "name": "MURPHY MATTHEW JOSEPH",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 209.52 per share.",
+      "value": 1571400,
+      "shares": 7500,
+      "date": "2026-07-15"
+    },
+    {
+      "name": "MURPHY MATTHEW JOSEPH",
+      "role": "Chief Executive Officer",
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 510,
+      "shares": 21497,
       "date": "2026-07-15"
     }
   ],

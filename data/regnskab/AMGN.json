@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T21:18:20.049Z",
+  "updated_at": "2026-10-07T21:39:03.039Z",
   "source": "Yahoo Finance",
   "symbol": "AMGN",
   "summary": "Amgen Inc. discovers, develops, manufactures, and delivers human therapeutics worldwide. The company's principal products include Enbrel for the treatment of rheumatoid arthritis, plaque psoriasis, and psoriatic arthritis; Otezla for the treatment of adult patients with plaque psoriasis, psoriatic arthritis, and oral ulcers associated with Behçet's disease; Prolia to treat postmenopausal women with osteoporosis; XGEVA for skeletal-related events prevention; Repatha, which reduces the risks of myocardial infarction, stroke, and coronary revascularization; Nplate for the treatment of patients with immune thrombocytopenia; KYPROLIS to treat patients with relapsed or refractory multiple myeloma; Aranesp to treat a lower-than-normal number of red blood cells and anemia; EVENITY for the treatment of osteoporosis in postmenopausal for women; Vectibix to treat patients with wild-type RAS metastatic colorectal cancer; BLINCYTO for the treatment of patients with acute lymphoblastic leukemia; TEPEZZA to treat thyroid eye disease; and KRYSTEXXA for the treatment of chronic refractory gout. It also markets other products, including PROLIA, REPATHA, OTEZLA, ENBREL, EVENITY, XGEVA, TEPEZZA, BLINCYTO, NPLATE, TEZSPIRE, KYPROLIS, ARANESP, KRYSTEXXA AND VECTIBIX, MVASI, PAVBLU, UPLIZNA, IMDELLTRA/IMDYLLTRA, AMJEVITA/AMGEVITA, TAVNEOS, NEULASTA, LUMAKRAS/LUMYKRAS, RAVICTI, PARSABIV, AIMOVIG, WEZLANA/WEZENLA, AND PROCYSBI. The company serves healthcare providers, including physicians or their clinics, dialysis centers, hospitals, and pharmacies. It distributes its products through pharmaceutical wholesale distributors. The company has collaboration agreements with AstraZeneca plc for the development and commercialization of TEZSPIRE; BEONE MEDICINES LTD. to develop and commercialize Aimovig; UCB for the development and commercialization of EVENITY; Kyowa Kirin Co., Ltd. for rocatinlimab development and commercialization; and BeiGene, Ltd. for oncology products expansion and development. The company was incorporated in 1980 and is headquartered in Thousand Oaks, California.",
@@ -8,8 +8,8 @@
   "employees": 31500,
   "ceo": "Mr. Robert A. Bradway",
   "next_earnings": "2026-11-03",
-  "earnings_estimated": true,
-  "earnings_call": "2026-08-04",
+  "earnings_estimated": false,
+  "earnings_call": "2026-11-03",
   "eps_estimate": 5.78099,
   "analysts": {
     "strong_buy": 4,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 9179000000,
-      "earnings": 1432000000
-    },
-    {
       "q": "3Q2025",
       "revenue": 9557000000,
       "earnings": 3216000000
@@ -69,6 +64,11 @@
       "q": "1Q2026",
       "revenue": 8618000000,
       "earnings": 1819000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 10054000000,
+      "earnings": 2375000000
     }
   ],
   "growth": {
@@ -78,6 +78,20 @@
     "y1": 0.060399998
   },
   "ratings": [
+    {
+      "date": "2026-10-07",
+      "firm": "Truist Securities",
+      "from": "Hold",
+      "to": "Hold",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-07",
+      "firm": "Morgan Stanley",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
     {
       "date": "2026-09-29",
       "firm": "Scotiabank",
@@ -132,20 +146,6 @@
       "firm": "Argus Research",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-18",
-      "firm": "Mizuho",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-18",
-      "firm": "Cantor Fitzgerald",
-      "from": "Neutral",
-      "to": "Neutral",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.407,
-    "enterprise_value": 261178884096,
-    "ev_ebitda": 15.125,
-    "ev_revenue": 6.856,
+    "enterprise_value": 260973445120,
+    "ev_ebitda": 15.113,
+    "ev_revenue": 6.851,
     "float_shares": 539161486,
     "short_shares": 14063517,
     "short_pct_float": 2.6,
