@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T21:39:04.631Z",
+  "updated_at": "2026-10-08T21:30:11.734Z",
   "source": "Yahoo Finance",
   "symbol": "SYY",
   "summary": "Sysco Corporation, through its subsidiaries, engages in the sale, marketing, and distribution of food and related products to restaurants, healthcare and educational facilities, lodging establishments, and other foodservice customers. It operates through U.S. Foodservice Operations, International Foodservice Operations, SYGMA, and Other segments. The company distributes frozen food, such as meats, seafood, fully prepared entrées, fruits, vegetables, and desserts; canned and dry food; fresh meats and seafood; dairy and beverage products; imported specialties; and fresh produce. It also supplies paper products, including disposable napkins, plates, and cups; tableware comprising glassware and silverware; cookware consisting of pots, pans, and utensils; restaurant and kitchen equipment and supplies; and cleaning supplies. The company operates in the United States, Canada, the United Kingdom, France, Sweden, and internationally. Sysco Corporation was incorporated in 1969 and is headquartered in Houston, Texas.",
@@ -25,6 +25,12 @@
   "target_analysts": 12,
   "statements": [
     {
+      "year": "2022",
+      "revenue": 68636146000,
+      "net": 1358768000,
+      "margin": 2
+    },
+    {
       "year": "2023",
       "revenue": 76324675000,
       "net": 1770124000,
@@ -41,15 +47,14 @@
       "revenue": 81370000000,
       "net": 1828000000,
       "margin": 2.2
-    },
-    {
-      "year": "2026",
-      "revenue": 84553000000,
-      "net": 1757000000,
-      "margin": 2.1
     }
   ],
   "quarterly": [
+    {
+      "q": "2Q2025",
+      "revenue": 21138000000,
+      "earnings": 531000000
+    },
     {
       "q": "3Q2025",
       "revenue": 21148000000,
@@ -64,11 +69,6 @@
       "q": "1Q2026",
       "revenue": 20519000000,
       "earnings": 340000000
-    },
-    {
-      "q": "2Q2026",
-      "revenue": 22124000000,
-      "earnings": 551000000
     }
   ],
   "growth": {
@@ -231,10 +231,10 @@
   },
   "extras": {
     "beta": 0.64,
-    "enterprise_value": 50370985984,
-    "ev_ebitda": 11.211,
-    "ev_revenue": 0.596,
-    "float_shares": 477687474,
+    "enterprise_value": 50054782976,
+    "ev_ebitda": 11.141,
+    "ev_revenue": 0.592,
+    "float_shares": 477658728,
     "short_shares": 12251896,
     "short_pct_float": 2.93,
     "short_ratio": 3.97,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-10-02",
   "dividend_date": null,
   "payout_ratio": 0.59290004,
-  "inst_count": 2087,
+  "inst_count": 2085,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -289,24 +289,6 @@
       "value": 67152,
       "shares": 960,
       "date": "2026-09-11"
-    },
-    {
-      "name": "HOURICAN KEVIN P",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 84581,
-      "date": "2026-09-01"
-    },
-    {
-      "name": "KELLER GREGORY SCOTT",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 17278,
-      "date": "2026-09-01"
     },
     {
       "name": "PHILLIPS RONALD L",
@@ -360,6 +342,24 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 15103,
+      "date": "2026-09-01"
+    },
+    {
+      "name": "HOURICAN KEVIN P",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 84581,
+      "date": "2026-09-01"
+    },
+    {
+      "name": "KELLER GREGORY SCOTT",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 17278,
       "date": "2026-09-01"
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T21:39:04.410Z",
+  "updated_at": "2026-10-08T21:30:11.465Z",
   "source": "Yahoo Finance",
   "symbol": "S",
   "summary": "SentinelOne, Inc. operates as a cybersecurity provider in the United States and internationally. The company's Singularity Platform delivers an artificial intelligence-powered autonomous threat prevention, detection, and response capabilities across an organization's endpoints, cloud workloads, and identify credentials, which enables seamless and autonomous protection against a spectrum of cyber threats. It also offers generative AI-security agent (Purple AI), security information and event management, endpoint security, cloud security, identity security, exposure and vulnerability management, and threat services. The company has a collaboration with Amazon Web Services (AWS) to deliver unified AI governance for customers building on Amazon Bedrock. The company was formerly known as Sentinel Labs, Inc. and changed its name to SentinelOne, Inc. in March 2021. SentinelOne, Inc. was incorporated in 2013 and is headquartered in Mountain View, California.",
@@ -14,9 +14,9 @@
   "analysts": {
     "strong_buy": 3,
     "buy": 15,
-    "hold": 16,
+    "hold": 15,
     "sell": 0,
-    "strong_sell": 0,
+    "strong_sell": 1,
     "total": 34
   },
   "target_mean": 24.48333,
@@ -223,17 +223,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 17,
-    "sells": 26,
-    "bought": 3555951,
-    "sold": 949624,
-    "net_pct": -684.2
+    "buys": 18,
+    "sells": 30,
+    "bought": 4055951,
+    "sold": 1560197,
+    "net_pct": -825.4
   },
   "extras": {
     "beta": 0.707,
-    "enterprise_value": 8324419072,
-    "ev_ebitda": -35.007,
-    "ev_revenue": 7.577,
+    "enterprise_value": 8153874944,
+    "ev_ebitda": -34.29,
+    "ev_revenue": 7.421,
     "float_shares": 311709309,
     "short_shares": 20154152,
     "short_pct_float": 5.98,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": null,
-  "inst_count": 645,
+  "inst_count": 644,
   "eps_history": [
     {
       "quarter": "2025-10-31",
@@ -273,6 +273,51 @@
   ],
   "insiders": [
     {
+      "name": "PINCZUK ANA G.",
+      "role": "Officer and Director",
+      "kind": "sell",
+      "text": "Sale at price 25.33 per share.",
+      "value": 406344,
+      "shares": 16042,
+      "date": "2026-10-06"
+    },
+    {
+      "name": "PAREKH SONALEE ELIZABETH",
+      "role": "Chief Financial Officer",
+      "kind": "sell",
+      "text": "Sale at price 25.33 per share.",
+      "value": 1309637,
+      "shares": 51703,
+      "date": "2026-10-06"
+    },
+    {
+      "name": "PADGETT BARRY L",
+      "role": "President",
+      "kind": "sell",
+      "text": "Sale at price 25.33 per share.",
+      "value": 391602,
+      "shares": 15460,
+      "date": "2026-10-06"
+    },
+    {
+      "name": "WEINGARTEN TOMER",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 25.26 per share.",
+      "value": 13323531,
+      "shares": 527368,
+      "date": "2026-10-05"
+    },
+    {
+      "name": "WEINGARTEN TOMER",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 9.74 per share.",
+      "value": 4870000,
+      "shares": 500000,
+      "date": "2026-10-05"
+    },
+    {
       "name": "WEINGARTEN TOMER",
       "role": "Chief Executive Officer",
       "kind": "sell",
@@ -300,15 +345,6 @@
       "date": "2026-09-10"
     },
     {
-      "name": "CONDER KEENAN MICHAEL",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 19.79 per share.",
-      "value": 164494,
-      "shares": 8312,
-      "date": "2026-09-08"
-    },
-    {
       "name": "TOMASELLO ROBIN",
       "role": "Officer",
       "kind": "sell",
@@ -325,42 +361,6 @@
       "value": 421189,
       "shares": 21664,
       "date": "2026-09-08"
-    },
-    {
-      "name": "WEINGARTEN TOMER",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 19.79 per share.",
-      "value": 767041,
-      "shares": 38759,
-      "date": "2026-09-08"
-    },
-    {
-      "name": "CONDER KEENAN MICHAEL",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 20.08 per share.",
-      "value": 529590,
-      "shares": 26374,
-      "date": "2026-08-06"
-    },
-    {
-      "name": "PADGETT BARRY L",
-      "role": "President",
-      "kind": "sell",
-      "text": "Sale at price 20.09 per share.",
-      "value": 196460,
-      "shares": 9778,
-      "date": "2026-08-06"
-    },
-    {
-      "name": "TOMASELLO ROBIN",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 20.08 per share.",
-      "value": 109799,
-      "shares": 5467,
-      "date": "2026-08-06"
     }
   ],
   "dividends": [],

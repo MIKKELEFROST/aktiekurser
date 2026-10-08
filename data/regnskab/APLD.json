@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T21:39:03.073Z",
+  "updated_at": "2026-10-08T21:30:09.126Z",
   "source": "Yahoo Finance",
   "symbol": "APLD",
   "summary": "Applied Digital Corporation designs, develops, and operates digital infrastructure solutions to high-performance computing (HPC) and artificial intelligence industries in North America. It operates through: Data Center Hosting, and HPC Hosting Business. The company provides energized infrastructure services to crypto mining customers; and cloud services to customers, such as AI and machine learning developers. It also engages in the designing, constructing, and operating of data centers to provide computing power and support HPC applications. The company was formerly known as Applied Blockchain, Inc. and changed its name to Applied Digital Corporation in November 2022. Applied Digital Corporation is based in Dallas, Texas.",
@@ -7,10 +7,10 @@
   "website": "https://applieddigital.com",
   "employees": 256,
   "ceo": "Mr. Wesley  Cummins",
-  "next_earnings": "2026-10-07",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-06",
+  "earnings_estimated": true,
   "earnings_call": "2026-10-07",
-  "eps_estimate": -0.30229,
+  "eps_estimate": -0.16956,
   "analysts": {
     "strong_buy": 2,
     "buy": 11,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 15
   },
-  "target_mean": 65.36667,
+  "target_mean": 64.03333,
   "target_high": 93,
   "target_low": 22,
   "target_analysts": 15,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 64216000,
-      "earnings": -18502000
-    },
-    {
       "q": "4Q2025",
       "revenue": 126589000,
       "earnings": -19082000
@@ -69,15 +64,41 @@
       "q": "2Q2026",
       "revenue": 258748000,
       "earnings": -111580000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 341875000,
+      "earnings": -237082000
     }
   ],
   "growth": {
-    "q0": -9.0763,
-    "q1": 0,
-    "y0": -10.891,
-    "y1": 0.5556
+    "q0": 0,
+    "q1": -4.2307997,
+    "y0": -10.6669,
+    "y1": 0.4259
   },
   "ratings": [
+    {
+      "date": "2026-10-08",
+      "firm": "Wells Fargo",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-08",
+      "firm": "Freedom Capital Markets",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-08",
+      "firm": "Needham",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-09-23",
       "firm": "UBS",
@@ -126,27 +147,6 @@
       "from": null,
       "to": "Equal-Weight",
       "action": "init"
-    },
-    {
-      "date": "2026-06-17",
-      "firm": "Northland Capital Markets",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-06-09",
-      "firm": "Craig-Hallum",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-06-09",
-      "firm": "Lake Street",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
     }
   ],
   "holders": [
@@ -223,18 +223,18 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 10,
+    "buys": 9,
     "sells": 3,
-    "bought": 5304167,
+    "bought": 5191666,
     "sold": 110000,
-    "net_pct": 30.3
+    "net_pct": 28.7
   },
   "extras": {
-    "beta": 5.997,
-    "enterprise_value": 12919856128,
-    "ev_ebitda": -120.716,
-    "ev_revenue": 21.135,
-    "float_shares": 250678010,
+    "beta": null,
+    "enterprise_value": 12804523008,
+    "ev_ebitda": -103.157,
+    "ev_revenue": 14.68,
+    "float_shares": 255441968,
     "short_shares": 57863931,
     "short_pct_float": 20.92,
     "short_ratio": 3.9,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": null,
-  "inst_count": 695,
+  "inst_count": 696,
   "eps_history": [
-    {
-      "quarter": "2025-08-31",
-      "estimate": -0.155,
-      "actual": -0.03,
-      "surprise_pct": 80.65
-    },
     {
       "quarter": "2025-11-30",
       "estimate": -0.20667,
@@ -269,9 +263,24 @@
       "estimate": -0.19,
       "actual": 0.04,
       "surprise_pct": 121.05
+    },
+    {
+      "quarter": "2026-08-31",
+      "estimate": -0.30229,
+      "actual": -0.01,
+      "surprise_pct": 96.69
     }
   ],
   "insiders": [
+    {
+      "name": "MOHMAND MOHAMMAD SAIDAL LAVANWAY",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 81666,
+      "date": "2026-10-02"
+    },
     {
       "name": "NOTTENBURG RICHARD N",
       "role": "Director",
@@ -280,15 +289,6 @@
       "value": 2336250,
       "shares": 75000,
       "date": "2026-08-04"
-    },
-    {
-      "name": "CUMMINS WESLEY",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 1600000,
-      "date": "2026-07-31"
     },
     {
       "name": "ZHANG JASON GECHEN",
@@ -318,6 +318,15 @@
       "date": "2026-07-31"
     },
     {
+      "name": "CUMMINS WESLEY",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 1600000,
+      "date": "2026-07-31"
+    },
+    {
       "name": "ZHANG JASON GECHEN",
       "role": "President",
       "kind": "other",
@@ -325,15 +334,6 @@
       "value": 0,
       "shares": 675000,
       "date": "2026-07-01"
-    },
-    {
-      "name": "CUMMINS WESLEY",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 800000,
-      "date": "2026-06-22"
     },
     {
       "name": "MOHMAND MOHAMMAD SAIDAL LAVANWAY",
@@ -345,6 +345,15 @@
       "date": "2026-06-22"
     },
     {
+      "name": "CUMMINS WESLEY",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 800000,
+      "date": "2026-06-22"
+    },
+    {
       "name": "NOTTENBURG RICHARD N",
       "role": "Director",
       "kind": "sell",
@@ -352,15 +361,6 @@
       "value": 832375,
       "shares": 25000,
       "date": "2026-04-30"
-    },
-    {
-      "name": "MILLER DOUGLAS S",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 34.98 per share.",
-      "value": 349800,
-      "shares": 10000,
-      "date": "2026-04-27"
     }
   ],
   "dividends": [],

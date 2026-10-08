@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T21:39:03.947Z",
+  "updated_at": "2026-10-08T21:30:10.555Z",
   "source": "Yahoo Finance",
   "symbol": "KGS",
   "summary": "Kodiak Gas Services, Inc. operates and provides contract compression infrastructure for customers in the oil and gas industry in the United States. It operates in two segments, Contract Services and Other Services. The Contract Services segment operates company-owned and customer-owned compression, and gas treating and cooling infrastructure to enable the production, gathering, processing, and transportation of natural gas and oil. The Other Services segment provides a range of services to support the needs of customers, including station construction, maintenance and overhaul, freight and crane charges, parts sales, and other ancillary time and material-based offerings. The company was formerly known as Frontier TopCo, Inc. Kodiak Gas Services, Inc. was founded in 2010 and is headquartered in The Woodlands, Texas.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-08-07",
-  "eps_estimate": 0.65029,
+  "eps_estimate": 0.65408,
   "analysts": {
     "strong_buy": 5,
     "buy": 10,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 15
   },
-  "target_mean": 82.73333,
+  "target_mean": 82.66667,
   "target_high": 93,
   "target_low": 67,
   "target_analysts": 15,
@@ -72,12 +72,26 @@
     }
   ],
   "growth": {
-    "q0": 3.1873002,
-    "q1": 0.8668,
-    "y0": 1.0234,
-    "y1": 0.2353
+    "q0": 3.2117002,
+    "q1": 0.8896,
+    "y0": 0.96449995,
+    "y1": 0.2523
   },
   "ratings": [
+    {
+      "date": "2026-10-08",
+      "firm": "JP Morgan",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-08",
+      "firm": "Jefferies",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-05",
       "firm": "Barclays",
@@ -133,20 +147,6 @@
       "from": null,
       "to": "Buy",
       "action": "init"
-    },
-    {
-      "date": "2026-05-27",
-      "firm": "Wells Fargo",
-      "from": null,
-      "to": "Overweight",
-      "action": "init"
-    },
-    {
-      "date": "2026-05-21",
-      "firm": "Barclays",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
     }
   ],
   "holders": [
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 8,
-    "sells": 11,
+    "sells": 12,
     "bought": 17080,
-    "sold": 33922,
-    "net_pct": -2.6
+    "sold": 36588,
+    "net_pct": -3.1
   },
   "extras": {
     "beta": 0.94,
-    "enterprise_value": 8335628288,
-    "ev_ebitda": 11.128,
-    "ev_revenue": 5.986,
+    "enterprise_value": 8209248256,
+    "ev_ebitda": 10.959,
+    "ev_revenue": 5.895,
     "float_shares": 100468087,
     "short_shares": 7796361,
     "short_pct_float": 9.75,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-08-17",
   "dividend_date": null,
   "payout_ratio": 2.2326,
-  "inst_count": 532,
+  "inst_count": 533,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "MCKEE ROBERT MICHAEL",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 53.95 per share.",
+      "value": 143843,
+      "shares": 2666,
+      "date": "2026-10-05"
+    },
     {
       "name": "BUHIGAS PEDRO R",
       "role": "Chief Technology Officer",
@@ -352,15 +361,6 @@
       "value": 313482,
       "shares": 4625,
       "date": "2026-06-17"
-    },
-    {
-      "name": "HAMILTON EWAN WILLIAM",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 68.62 per share.",
-      "value": 187264,
-      "shares": 2729,
-      "date": "2026-06-16"
     }
   ],
   "dividends": [

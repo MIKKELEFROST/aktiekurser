@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T21:39:03.693Z",
+  "updated_at": "2026-10-08T21:30:10.152Z",
   "source": "Yahoo Finance",
   "symbol": "GAP",
   "summary": "The Gap, Inc. operates as an apparel retail company in the United States, Canada, Japan, Taiwan, and internationally. The company offers apparel, accessories, and personal care products for men, women, and children under the Old Navy, Gap, Banana Republic, and Athleta brands. The company offers its products through company-operated stores, franchise stores, websites, and third-party arrangements, as well as licensing partnerships. It has franchise agreements to operate Old Navy, Gap, Banana Republic, and Athleta in Asia, Europe, Latin America, the Middle East, and Africa. The Gap, Inc. was incorporated in 1969 and is headquartered in San Francisco, California.",
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 13,
-    "sells": 4,
+    "sells": 6,
     "bought": 710669,
-    "sold": 385022,
-    "net_pct": 0.3
+    "sold": 1346216,
+    "net_pct": -0.5
   },
   "extras": {
     "beta": 2.033,
-    "enterprise_value": 11591716864,
-    "ev_ebitda": 7.896,
-    "ev_revenue": 0.756,
+    "enterprise_value": 11528487936,
+    "ev_ebitda": 7.853,
+    "ev_revenue": 0.752,
     "float_shares": 199539001,
     "short_shares": 26223096,
     "short_pct_float": 13.92,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-10-07",
   "dividend_date": null,
   "payout_ratio": 0.2048,
-  "inst_count": 664,
+  "inst_count": 665,
   "eps_history": [
     {
       "quarter": "2025-10-31",
@@ -273,6 +273,24 @@
   ],
   "insiders": [
     {
+      "name": "GRUBER JULIE GROLLMUS",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 23.56 per share.",
+      "value": 648680,
+      "shares": 27538,
+      "date": "2026-10-06"
+    },
+    {
+      "name": "FISHER WILLIAM SYDNEY",
+      "role": "Director and Beneficial Owner of more than 10% of a Class of Security",
+      "kind": "sell",
+      "text": "Sale at price 23.35 - 23.89 per share.",
+      "value": 22070868,
+      "shares": 933656,
+      "date": "2026-10-06"
+    },
+    {
       "name": "FISHER WILLIAM SYDNEY",
       "role": "Director and Beneficial Owner of more than 10% of a Class of Security",
       "kind": "sell",
@@ -300,30 +318,12 @@
       "date": "2026-08-21"
     },
     {
-      "name": "O'NEILL CHRIS",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 20779,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "HALL KATHRYN A",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 20779,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "FISHER WILLIAM SYDNEY",
+      "name": "FISHER ROBERT J.",
       "role": "Director and Beneficial Owner of more than 10% of a Class of Security",
       "kind": "other",
-      "text": "Stock Gift at price 0.00 per share.",
-      "value": 0,
-      "shares": 23000,
+      "text": null,
+      "value": null,
+      "shares": 20779,
       "date": "2026-06-30"
     },
     {
@@ -336,7 +336,7 @@
       "date": "2026-06-30"
     },
     {
-      "name": "SHAUKAT TARIQ M.",
+      "name": "SHATTUCK MAYO ADAMS III",
       "role": "Director",
       "kind": "other",
       "text": null,
@@ -354,20 +354,16 @@
       "date": "2026-06-30"
     },
     {
-      "name": "FISHER ROBERT J.",
-      "role": "Director and Beneficial Owner of more than 10% of a Class of Security",
+      "name": "HALL KATHRYN A",
+      "role": "Director",
       "kind": "other",
-      "text": "Stock Gift at price 0.00 per share.",
-      "value": 0,
-      "shares": 23000,
+      "text": null,
+      "value": null,
+      "shares": 20779,
       "date": "2026-06-30"
     }
   ],
   "dividends": [
-    {
-      "date": "2015-10-05",
-      "amount": 0.23
-    },
     {
       "date": "2016-01-04",
       "amount": 0.23
@@ -522,6 +518,10 @@
     },
     {
       "date": "2026-07-08",
+      "amount": 0.175
+    },
+    {
+      "date": "2026-10-07",
       "amount": 0.175
     }
   ],

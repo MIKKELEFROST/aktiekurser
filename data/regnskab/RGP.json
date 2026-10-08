@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T21:39:04.366Z",
+  "updated_at": "2026-10-08T21:30:11.402Z",
   "source": "Yahoo Finance",
   "symbol": "RGP",
   "summary": "Resources Connection, Inc. provides various professional services to business customers under the Resources Global Professionals name in North America, the Asia Pacific, and Europe. The company's On-Demand Talent segment provides businesses with a go-to source for bringing in experts. Its Consulting segments drives transformation across people, process, technology domains, such as finance, technology and digital, risk and compliance, and operational performance services. The company's Outsourced Services segments provides finance, accounting, and human resources services provided to startups, spinouts, and scale-up enterprises through RGP brand. Its Sitrick segment offers a crisis communications and public relations firm that provides corporate, financial, transactional, and crisis communication and management services. It also provides administrative, marketing, information technology, payroll, and legal and real estate support services. In addition, the company offers finance and accounting, such as finance transformation, operational and technical accounting, tax and treasury, and financial planning and analysis; governance, risk, and compliance, including accounting regulations, internal audit and SOX compliance, data privacy and security, IT and operational risk, and regulatory compliance; and enterprise strategy and operational performance comprising change & transformation management, process optimization & automation, supply chain management, merger integration, and cost reduction and optimization services. Further, it provides digital, technology and data services, such as digital transformation, technology strategy and transformation, data and analytics, and artificial intelligence. The company was formerly known as RC Transaction Corp. and changed its name to Resources Connection, Inc. in August 2000. Resources Connection, Inc. was founded in 1996 and is headquartered in Dallas, Texas.",
@@ -7,10 +7,10 @@
   "website": "https://rgp.com",
   "employees": 591,
   "ceo": "Mr. Roger D. Carlile",
-  "next_earnings": "2026-10-07",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-06",
+  "earnings_estimated": true,
   "earnings_call": "2026-10-07",
-  "eps_estimate": -0.16667,
+  "eps_estimate": -0.16333,
   "analysts": {
     "strong_buy": 0,
     "buy": 2,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 120229000,
-      "earnings": -2405000
-    },
-    {
       "q": "4Q2025",
       "revenue": 117732000,
       "earnings": -12661000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 106115000,
       "earnings": -16068000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 98086000,
+      "earnings": -7970000
     }
   ],
   "growth": {
-    "q0": -6.5557003,
-    "q1": -3.7222,
+    "q0": -3.7222,
+    "q1": -0.5556,
     "y0": -7.1667,
     "y1": 0.83669996
   },
@@ -230,11 +230,11 @@
     "net_pct": null
   },
   "extras": {
-    "beta": 0.545,
-    "enterprise_value": 67246976,
-    "ev_ebitda": -13.017,
-    "ev_revenue": 0.149,
-    "float_shares": 31304089,
+    "beta": null,
+    "enterprise_value": null,
+    "ev_ebitda": null,
+    "ev_revenue": null,
+    "float_shares": 30828767,
     "short_shares": 802076,
     "short_pct_float": 2.49,
     "short_ratio": 2.94,
@@ -246,12 +246,6 @@
   "payout_ratio": 1.5555999,
   "inst_count": 176,
   "eps_history": [
-    {
-      "quarter": "2025-08-31",
-      "estimate": -0.10333,
-      "actual": 0.03,
-      "surprise_pct": 129.03
-    },
     {
       "quarter": "2025-11-30",
       "estimate": 0.035,
@@ -269,6 +263,12 @@
       "estimate": -0.11,
       "actual": -0.07,
       "surprise_pct": 36.36
+    },
+    {
+      "quarter": "2026-08-31",
+      "estimate": -0.16667,
+      "actual": -0.16,
+      "surprise_pct": 4
     }
   ],
   "insiders": [
@@ -291,13 +291,22 @@
       "date": "2026-10-01"
     },
     {
+      "name": "IYER VENKATARAMAN RAMASWAMY",
+      "role": "President",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 1479,
+      "date": "2026-10-01"
+    },
+    {
       "name": "CARLILE ROGER D",
       "role": "Chief Executive Officer",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 11727,
-      "date": "2026-06-18"
+      "shares": 13167,
+      "date": "2026-10-01"
     },
     {
       "name": "RYU JENNIFER Y",
@@ -305,8 +314,8 @@
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 2230,
-      "date": "2026-06-18"
+      "shares": 2504,
+      "date": "2026-10-01"
     },
     {
       "name": "ROTTMANN SCOTT GLENN",
@@ -336,22 +345,13 @@
       "date": "2026-06-18"
     },
     {
-      "name": "PISANO A ROBERT",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Gift at price 0.00 per share.",
-      "value": 0,
-      "shares": 112371,
-      "date": "2026-06-01"
-    },
-    {
       "name": "CARLILE ROGER D",
       "role": "Chief Executive Officer",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 13089,
-      "date": "2026-03-20"
+      "shares": 11727,
+      "date": "2026-06-18"
     },
     {
       "name": "RYU JENNIFER Y",
@@ -359,8 +359,8 @@
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 2489,
-      "date": "2026-03-20"
+      "shares": 2230,
+      "date": "2026-06-18"
     }
   ],
   "dividends": [

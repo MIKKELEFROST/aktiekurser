@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T21:39:03.413Z",
+  "updated_at": "2026-10-08T21:30:09.683Z",
   "source": "Yahoo Finance",
   "symbol": "CRDO",
   "summary": "Credo Technology Group Holding Ltd provides various high-speed connectivity solutions for optical and electrical Ethernet and PCIe applications in the United States, Taiwan, Mainland China, Hong Kong, and other international markets. The company offers ZeroFlap (ZF) active electrical cables and ZF optical transceivers, OmniConnect memory solutions, and a suite of retimers and DSPs for optical and copper Ethernet and PCIe, as well as integrated circuits, active electrical cables, and SerDes chiplets. It also provides intellectual property (IP) solutions, including SerDes IP licensing. The company offers was founded in 2008 and is headquartered in Grand Cayman, the Cayman Islands.",
@@ -51,6 +51,11 @@
   ],
   "quarterly": [
     {
+      "q": "2Q2025",
+      "revenue": 223074000,
+      "earnings": 63399000
+    },
+    {
       "q": "3Q2025",
       "revenue": 268027000,
       "earnings": 82636000
@@ -64,11 +69,6 @@
       "q": "1Q2026",
       "revenue": 437003000,
       "earnings": 169102000
-    },
-    {
-      "q": "2Q2026",
-      "revenue": 479003000,
-      "earnings": 129425000
     }
   ],
   "growth": {
@@ -224,17 +224,17 @@
   "insider_net": {
     "period": "6m",
     "buys": 13,
-    "sells": 36,
+    "sells": 37,
     "bought": 847890,
-    "sold": 979726,
+    "sold": 984726,
     "net_pct": -0.8
   },
   "extras": {
     "beta": 3.249,
-    "enterprise_value": 40767369216,
-    "ev_ebitda": 75.044,
-    "ev_revenue": 25.623,
-    "float_shares": 170885884,
+    "enterprise_value": 40613249024,
+    "ev_ebitda": 74.76,
+    "ev_revenue": 25.526,
+    "float_shares": 170878366,
     "short_shares": 8607757,
     "short_pct_float": 5.14,
     "short_ratio": 1.15,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 1319,
+  "inst_count": 1320,
   "eps_history": [
     {
       "quarter": "2025-10-31",
@@ -276,6 +276,24 @@
       "name": "CHENG CHI FUNG",
       "role": "Chief Technology Officer",
       "kind": "sell",
+      "text": "Sale at price 211.06 - 226.18 per share.",
+      "value": 6090654,
+      "shares": 27500,
+      "date": "2026-10-06"
+    },
+    {
+      "name": "LAUFMAN JAMES L",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 205.00 per share.",
+      "value": 1025000,
+      "shares": 5000,
+      "date": "2026-10-01"
+    },
+    {
+      "name": "CHENG CHI FUNG",
+      "role": "Chief Technology Officer",
+      "kind": "sell",
       "text": "Sale at price 189.65 - 198.61 per share.",
       "value": 5333158,
       "shares": 27500,
@@ -284,19 +302,19 @@
     {
       "name": "LAM YAT TUNG",
       "role": "Chief Operating Officer",
-      "kind": "other",
-      "text": "Stock Gift at price 0.00 per share.",
-      "value": 0,
-      "shares": 175000,
+      "kind": "sell",
+      "text": "Sale at price 205.38 - 207.70 per share.",
+      "value": 20629420,
+      "shares": 100000,
       "date": "2026-09-25"
     },
     {
       "name": "LAM YAT TUNG",
       "role": "Chief Operating Officer",
-      "kind": "sell",
-      "text": "Sale at price 205.38 - 207.70 per share.",
-      "value": 20629420,
-      "shares": 100000,
+      "kind": "other",
+      "text": "Stock Gift at price 0.00 per share.",
+      "value": 0,
+      "shares": 175000,
       "date": "2026-09-25"
     },
     {
@@ -343,24 +361,6 @@
       "value": 644300,
       "shares": 3790,
       "date": "2026-09-04"
-    },
-    {
-      "name": "CHENG CHI FUNG",
-      "role": "Chief Technology Officer",
-      "kind": "sell",
-      "text": "Sale at price 201.22 - 215.35 per share.",
-      "value": 5756395,
-      "shares": 27473,
-      "date": "2026-07-31"
-    },
-    {
-      "name": "LAM YAT TUNG",
-      "role": "Chief Operating Officer",
-      "kind": "sell",
-      "text": "Sale at price 209.83 - 216.49 per share.",
-      "value": 22476646,
-      "shares": 105441,
-      "date": "2026-07-31"
     }
   ],
   "dividends": [],

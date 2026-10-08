@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T21:39:04.399Z",
+  "updated_at": "2026-10-08T21:30:11.451Z",
   "source": "Yahoo Finance",
   "symbol": "RUN",
   "summary": "Sunrun Inc. designs, develops, installs, sells, owns, and maintains residential solar energy systems in the United States. The company sells solar energy systems and products, such as panels and racking; and solar leads generated to customers. It offers battery storage along with solar energy systems; and sells services to commercial developers through multi-family and new homes. Its primary customers are residential homeowners. The company markets and sells its products through direct-to-consumer approach across online, retail, mass media, digital media, canvassing, field marketing, and referral channels, as well as its partner network. It also operates distributed electricity power plants. Sunrun Inc. was founded in 2007 and is headquartered in San Francisco, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 0.37572,
+  "eps_estimate": 0.3492,
   "analysts": {
     "strong_buy": 3,
     "buy": 8,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 20
   },
-  "target_mean": 16.13889,
+  "target_mean": 15.86111,
   "target_high": 30,
-  "target_low": 10,
+  "target_low": 9,
   "target_analysts": 18,
   "statements": [
     {
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 5.262,
-    "q1": -0.38619998,
-    "y0": -0.18530001,
-    "y1": -0.2878
+    "q0": 4.82,
+    "q1": -0.4694,
+    "y0": -0.2042,
+    "y1": -0.2631
   },
   "ratings": [
+    {
+      "date": "2026-10-08",
+      "firm": "Goldman Sachs",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-09-21",
       "firm": "Goldman Sachs",
@@ -140,13 +147,6 @@
       "from": "Sell",
       "to": "Sell",
       "action": "reit"
-    },
-    {
-      "date": "2026-07-10",
-      "firm": "Susquehanna",
-      "from": "Positive",
-      "to": "Positive",
-      "action": "main"
     }
   ],
   "holders": [
@@ -225,15 +225,15 @@
     "period": "6m",
     "buys": 10,
     "sells": 18,
-    "bought": 746183,
-    "sold": 823331,
-    "net_pct": -1.1
+    "bought": 639533,
+    "sold": 357303,
+    "net_pct": 4.3
   },
   "extras": {
     "beta": 2.435,
-    "enterprise_value": 18095542272,
-    "ev_ebitda": 21.527,
-    "ev_revenue": 5.206,
+    "enterprise_value": 18057007104,
+    "ev_ebitda": 21.481,
+    "ev_revenue": 5.195,
     "float_shares": 221001191,
     "short_shares": 71121215,
     "short_pct_float": 35.38,
@@ -273,6 +273,60 @@
   ],
   "insiders": [
     {
+      "name": "POWELL MARY G",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 7.76 per share.",
+      "value": 188939,
+      "shares": 24335,
+      "date": "2026-10-06"
+    },
+    {
+      "name": "DICKSON PAUL S",
+      "role": "President",
+      "kind": "sell",
+      "text": "Sale at price 7.76 per share.",
+      "value": 122971,
+      "shares": 15837,
+      "date": "2026-10-06"
+    },
+    {
+      "name": "STEELE JEANNA C",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 7.76 per share.",
+      "value": 77967,
+      "shares": 10042,
+      "date": "2026-10-06"
+    },
+    {
+      "name": "ABAJIAN DANNY",
+      "role": "Chief Financial Officer",
+      "kind": "sell",
+      "text": "Sale at price 7.76 per share.",
+      "value": 129931,
+      "shares": 16734,
+      "date": "2026-10-06"
+    },
+    {
+      "name": "BARAK MARIA",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 7.77 per share.",
+      "value": 13753,
+      "shares": 1771,
+      "date": "2026-10-06"
+    },
+    {
+      "name": "ABAJIAN DANNY",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": "Stock Gift at price 0.00 per share.",
+      "value": 0,
+      "shares": 16813,
+      "date": "2026-10-06"
+    },
+    {
       "name": "JURICH LYNN MICHELLE",
       "role": "Director",
       "kind": "sell",
@@ -291,42 +345,6 @@
       "date": "2026-07-09"
     },
     {
-      "name": "ABAJIAN DANNY",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": "Stock Gift at price 0.00 per share.",
-      "value": 0,
-      "shares": 17052,
-      "date": "2026-07-06"
-    },
-    {
-      "name": "ABAJIAN DANNY",
-      "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 13.19 per share.",
-      "value": 217511,
-      "shares": 16495,
-      "date": "2026-07-06"
-    },
-    {
-      "name": "BARAK MARIA",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 13.17 per share.",
-      "value": 23013,
-      "shares": 1747,
-      "date": "2026-07-06"
-    },
-    {
-      "name": "STEELE JEANNA C",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 13.19 per share.",
-      "value": 130517,
-      "shares": 9897,
-      "date": "2026-07-06"
-    },
-    {
       "name": "POWELL MARY G",
       "role": "Chief Executive Officer",
       "kind": "sell",
@@ -343,24 +361,6 @@
       "value": 205851,
       "shares": 15613,
       "date": "2026-07-06"
-    },
-    {
-      "name": "JURICH LYNN MICHELLE",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 13.61 per share.",
-      "value": 680320,
-      "shares": 50000,
-      "date": "2026-07-01"
-    },
-    {
-      "name": "JURICH LYNN MICHELLE",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 8314,
-      "date": "2026-07-01"
     }
   ],
   "dividends": [],

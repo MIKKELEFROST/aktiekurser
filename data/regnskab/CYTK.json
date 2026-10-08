@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T21:39:03.449Z",
+  "updated_at": "2026-10-08T21:30:09.750Z",
   "source": "Yahoo Finance",
   "symbol": "CYTK",
   "summary": "Cytokinetics, Incorporated, a biopharmaceutical company, focuses on discovering, developing, and commercializing novel muscle activators and muscle inhibitors as potential treatments for debilitating diseases in the United States. The company markets MYQORZO, a novel, oral, and small molecule cardiac myosin inhibitor for the treatment of symptomatic oHCM. It also develops Aficamten, a novel, oral, and small molecule cardiac myosin inhibitor for the treatment of HCM; and omecamtiv mecarbil, a potential treatment across the continuum of care in heart failure with severely reduced ejection fraction. In addition, the company is involved in developing and Ulacamten, a novel, selective, oral, and small molecule cardiac myosin inhibitor designed to reduce the hypercontractility associated with heart failure with preserved ejection fraction in Phase 1 clinical trials; and CK-089, a fast skeletal muscle troponin activator in Phase 1 clinical trials. Cytokinetics, Incorporated was incorporated in 1997 and is headquartered in South San Francisco, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-08-06",
-  "eps_estimate": -1.43069,
+  "eps_estimate": -1.42819,
   "analysts": {
     "strong_buy": 7,
     "buy": 13,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 22
   },
-  "target_mean": 109.9,
+  "target_mean": 109.95,
   "target_high": 146,
   "target_low": 85,
   "target_analysts": 20,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.0718,
-    "q1": 0.0622,
-    "y0": 0.091000006,
-    "y1": 0.2511
+    "q0": 0.0734,
+    "q1": 0.0651,
+    "y0": 0.0922,
+    "y1": 0.2514
   },
   "ratings": [
+    {
+      "date": "2026-10-08",
+      "firm": "RBC Capital",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
     {
       "date": "2026-08-31",
       "firm": "HC Wainwright & Co.",
@@ -140,13 +147,6 @@
       "from": "Neutral",
       "to": "Buy",
       "action": "up"
-    },
-    {
-      "date": "2026-06-24",
-      "firm": "Mizuho",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
     }
   ],
   "holders": [
@@ -225,16 +225,16 @@
     "period": "6m",
     "buys": 51,
     "sells": 42,
-    "bought": 374586,
-    "sold": 436912,
+    "bought": 373586,
+    "sold": 435912,
     "net_pct": -6.5
   },
   "extras": {
     "beta": 0.408,
-    "enterprise_value": 8787855360,
-    "ev_ebitda": -12.638,
-    "ev_revenue": 129.863,
-    "float_shares": 138492349,
+    "enterprise_value": 8755879936,
+    "ev_ebitda": -12.592,
+    "ev_revenue": 129.391,
+    "float_shares": 138431178,
     "short_shares": 17481383,
     "short_pct_float": 19.2,
     "short_ratio": 9.94,
@@ -273,13 +273,22 @@
   ],
   "insiders": [
     {
-      "name": "BLUM ROBERT I",
-      "role": "Chief Executive Officer",
+      "name": "MALIK FADY IBRAHAM",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 7.80 per share.",
+      "value": 27300,
+      "shares": 3500,
+      "date": "2026-10-06"
+    },
+    {
+      "name": "MALIK FADY IBRAHAM",
+      "role": "Officer",
       "kind": "sell",
-      "text": "Sale at price 65.46 per share.",
-      "value": 490950,
-      "shares": 7500,
-      "date": "2026-09-28"
+      "text": "Sale at price 61.38 per share.",
+      "value": 214830,
+      "shares": 3500,
+      "date": "2026-10-06"
     },
     {
       "name": "BLUM ROBERT I",
@@ -291,13 +300,13 @@
       "date": "2026-09-28"
     },
     {
-      "name": "MALIK FADY IBRAHAM",
-      "role": "Officer",
+      "name": "BLUM ROBERT I",
+      "role": "Chief Executive Officer",
       "kind": "sell",
-      "text": "Sale at price 68.29 per share.",
-      "value": 239015,
-      "shares": 3500,
-      "date": "2026-09-22"
+      "text": "Sale at price 65.46 per share.",
+      "value": 490950,
+      "shares": 7500,
+      "date": "2026-09-28"
     },
     {
       "name": "MALIK FADY IBRAHAM",
@@ -309,13 +318,13 @@
       "date": "2026-09-22"
     },
     {
-      "name": "BLUM ROBERT I",
-      "role": "Chief Executive Officer",
+      "name": "MALIK FADY IBRAHAM",
+      "role": "Officer",
       "kind": "sell",
-      "text": "Sale at price 69.33 - 73.44 per share.",
-      "value": 7340010,
-      "shares": 105426,
-      "date": "2026-09-15"
+      "text": "Sale at price 68.29 per share.",
+      "value": 239015,
+      "shares": 3500,
+      "date": "2026-09-22"
     },
     {
       "name": "LANDRY ROBERT E",
@@ -329,11 +338,11 @@
     {
       "name": "BLUM ROBERT I",
       "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Stock Gift at price 0.00 per share.",
-      "value": 0,
-      "shares": 99276,
-      "date": "2026-09-14"
+      "kind": "sell",
+      "text": "Sale at price 69.33 - 73.44 per share.",
+      "value": 7340010,
+      "shares": 105426,
+      "date": "2026-09-15"
     },
     {
       "name": "BLUM ROBERT I",
@@ -345,22 +354,13 @@
       "date": "2026-09-14"
     },
     {
-      "name": "LANDRY ROBERT E",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 74.66 per share.",
-      "value": 74660,
-      "shares": 1000,
-      "date": "2026-09-11"
-    },
-    {
-      "name": "MALIK FADY IBRAHAM",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 75.46 per share.",
-      "value": 264110,
-      "shares": 3500,
-      "date": "2026-09-08"
+      "name": "BLUM ROBERT I",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Stock Gift at price 0.00 per share.",
+      "value": 0,
+      "shares": 99276,
+      "date": "2026-09-14"
     }
   ],
   "dividends": [],

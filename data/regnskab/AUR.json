@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T21:39:03.117Z",
+  "updated_at": "2026-10-08T21:30:09.199Z",
   "source": "Yahoo Finance",
   "symbol": "AUR",
   "summary": "Aurora Innovation, Inc. engages in the self-driving technology business in the United States. It focuses on developing Aurora Driver, a platform that brings a suite of self-driving hardware, software, and data services together to adapt and interoperate various vehicle types and applications. The company was founded in 2017 and is headquartered in Pittsburgh, Pennsylvania.",
@@ -79,6 +79,13 @@
   },
   "ratings": [
     {
+      "date": "2026-10-08",
+      "firm": "Oppenheimer",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
       "date": "2026-09-25",
       "firm": "Cantor Fitzgerald",
       "from": "Overweight",
@@ -139,13 +146,6 @@
       "firm": "Northland Capital Markets",
       "from": null,
       "to": "Outperform",
-      "action": "init"
-    },
-    {
-      "date": "2026-05-11",
-      "firm": "Amerx",
-      "from": null,
-      "to": "Hold",
       "action": "init"
     }
   ],
@@ -223,17 +223,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 13,
+    "buys": 15,
     "sells": 9,
-    "bought": 14189594,
+    "bought": 14195427,
     "sold": 182308848,
     "net_pct": -43.5
   },
   "extras": {
     "beta": 2.7,
-    "enterprise_value": 10388892672,
-    "ev_ebitda": -11.064,
-    "ev_revenue": 2077.779,
+    "enterprise_value": 10328768512,
+    "ev_ebitda": -11,
+    "ev_revenue": 2065.754,
     "float_shares": 1522416466,
     "short_shares": 198257624,
     "short_pct_float": 17.98,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": null,
-  "inst_count": 569,
+  "inst_count": 571,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -273,6 +273,24 @@
   ],
   "insiders": [
     {
+      "name": "WEHNER DAVID M",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 2414,
+      "date": "2026-10-01"
+    },
+    {
+      "name": "BAGLEY BRITTANY",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 3419,
+      "date": "2026-10-01"
+    },
+    {
       "name": "UBER TECHNOLOGIES, INC",
       "role": "Beneficial Owner of more than 10% of a Class of Security",
       "kind": "sell",
@@ -282,21 +300,21 @@
       "date": "2026-09-15"
     },
     {
-      "name": "UBER TECHNOLOGIES, INC",
-      "role": "Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "sell",
-      "text": "Sale at price 6.55 per share.",
-      "value": 471600000,
-      "shares": 72000000,
-      "date": "2026-08-17"
-    },
-    {
       "name": "VOLPI MICHELANGELO A",
       "role": "Director",
       "kind": "sell",
       "text": "Sale at price 7.00 per share.",
       "value": 19909576,
       "shares": 2842682,
+      "date": "2026-08-17"
+    },
+    {
+      "name": "UBER TECHNOLOGIES, INC",
+      "role": "Beneficial Owner of more than 10% of a Class of Security",
+      "kind": "sell",
+      "text": "Sale at price 6.55 per share.",
+      "value": 471600000,
+      "shares": 72000000,
       "date": "2026-08-17"
     },
     {
@@ -343,24 +361,6 @@
       "value": 13320156,
       "shares": 1889023,
       "date": "2026-08-10"
-    },
-    {
-      "name": "VOLPI MICHELANGELO A",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 1568805,
-      "date": "2026-08-10"
-    },
-    {
-      "name": "VOLPI MICHELANGELO A",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 7.07 per share.",
-      "value": 1271886,
-      "shares": 179782,
-      "date": "2026-08-05"
     }
   ],
   "dividends": [],

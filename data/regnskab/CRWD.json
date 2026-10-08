@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T21:39:03.421Z",
+  "updated_at": "2026-10-08T21:30:09.697Z",
   "source": "Yahoo Finance",
   "symbol": "CRWD",
   "summary": "CrowdStrike Holdings, Inc. provides cybersecurity solutions in the United States and internationally. Its unified platform provides cloud-delivered protection of endpoints, cloud workloads, identity, and data through a software as a service (SaaS) subscription-based model. The company offers corporate endpoint and cloud workload security, managed security, security and vulnerability management, IT operations management, identity protection, threat intelligence, data protection, SaaS security posture management, and AI powered workflow automation, and securing generative AI workload services, as well as security orchestration, automation, and response; and security information and event management, and log management services. It primarily sells subscriptions to its Falcon platform and cloud modules. The company has a strategic alliance with Cognizant Technology Solutions Corporation to help enterprises secure artificial intelligence across its lifecycle, from the AI agents and models to the foundational infrastructure that supports the entire AI ecosystem and with Snowflake to bring AI-native security and enterprise data at scale. Additionally, it has a partnership with Fortanix Inc. to combine its Falcon platform with Fortanix Confidential AI to provide an integrated solution for end-to-end AI security. The company was incorporated in 2011 and is headquartered in Austin, Texas.",
@@ -79,6 +79,20 @@
   },
   "ratings": [
     {
+      "date": "2026-10-08",
+      "firm": "BMO Capital",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-08",
+      "firm": "Amerx",
+      "from": null,
+      "to": "Underweight",
+      "action": "init"
+    },
+    {
       "date": "2026-10-06",
       "firm": "StoneX",
       "from": "Buy",
@@ -130,20 +144,6 @@
     {
       "date": "2026-09-04",
       "firm": "Roth Capital",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-09-04",
-      "firm": "Scotiabank",
-      "from": "Sector Outperform",
-      "to": "Sector Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-09-04",
-      "firm": "Rosenblatt",
       "from": "Buy",
       "to": "Buy",
       "action": "main"
@@ -224,17 +224,17 @@
   "insider_net": {
     "period": "6m",
     "buys": 20,
-    "sells": 113,
+    "sells": 115,
     "bought": 245836,
-    "sold": 1401234,
-    "net_pct": -7.6
+    "sold": 1475234,
+    "net_pct": -8.1
   },
   "extras": {
     "beta": 1.197,
-    "enterprise_value": 281378619392,
-    "ev_ebitda": 2633.127,
-    "ev_revenue": 52.144,
-    "float_shares": 1007469970,
+    "enterprise_value": 267637391360,
+    "ev_ebitda": 2504.538,
+    "ev_revenue": 49.598,
+    "float_shares": 1007531406,
     "short_shares": 27929552,
     "short_pct_float": 2.77,
     "short_ratio": 2.41,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 3157,
+  "inst_count": 3162,
   "eps_history": [
     {
       "quarter": "2025-10-31",
@@ -273,12 +273,30 @@
   ],
   "insiders": [
     {
+      "name": "KURTZ GEORGE ROBERT",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 268.47 - 274.08 per share.",
+      "value": 5415567,
+      "shares": 20000,
+      "date": "2026-10-05"
+    },
+    {
       "name": "SAHA ANURAG",
       "role": "Officer",
       "kind": "sell",
       "text": "Sale at price 259.95 - 264.60 per share.",
       "value": 6509118,
       "shares": 24776,
+      "date": "2026-10-01"
+    },
+    {
+      "name": "GANDHI SAMEER K.",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 260.34 - 269.07 per share.",
+      "value": 14321994,
+      "shares": 54000,
       "date": "2026-10-01"
     },
     {
@@ -309,12 +327,21 @@
       "date": "2026-09-23"
     },
     {
-      "name": "PODBERE BURT W.",
-      "role": "Chief Financial Officer",
+      "name": "SENTONAS MICHAEL",
+      "role": "President",
       "kind": "sell",
-      "text": "Sale at price 238.09 - 244.47 per share.",
-      "value": 8069978,
-      "shares": 33882,
+      "text": "Sale at price 231.61 - 242.64 per share.",
+      "value": 11555358,
+      "shares": 49863,
+      "date": "2026-09-21"
+    },
+    {
+      "name": "SAHA ANURAG",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 231.61 - 238.23 per share.",
+      "value": 1625903,
+      "shares": 7016,
       "date": "2026-09-21"
     },
     {
@@ -334,33 +361,6 @@
       "value": 753078,
       "shares": 3014,
       "date": "2026-09-21"
-    },
-    {
-      "name": "SAHA ANURAG",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 231.61 - 238.23 per share.",
-      "value": 1625903,
-      "shares": 7016,
-      "date": "2026-09-21"
-    },
-    {
-      "name": "SENTONAS MICHAEL",
-      "role": "President",
-      "kind": "sell",
-      "text": "Sale at price 231.61 - 242.64 per share.",
-      "value": 11555358,
-      "shares": 49863,
-      "date": "2026-09-21"
-    },
-    {
-      "name": "GANDHI SAMEER K.",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 63,
-      "date": "2026-09-18"
     }
   ],
   "dividends": [],

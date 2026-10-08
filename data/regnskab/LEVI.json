@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T21:39:03.996Z",
+  "updated_at": "2026-10-08T21:30:10.646Z",
   "source": "Yahoo Finance",
   "symbol": "LEVI",
   "summary": "Levi Strauss & Co. designs, markets, and sells apparels and related accessories for men, women, and children in the United States and internationally. The company offers jeans, casual and dress pants, activewears, tops, shorts, skirts, dresses, jumpsuits, shirts, sweaters, jackets, footwear, and related accessories under the Levi's, Levi Strauss Signature, Denizen, and Beyond Yoga brands. It sells its products through third-party retailers, such as department stores, specialty retailers, third-party e-commerce sites, and franchisees; and directly to consumers through company-operated mainline and outlet stores, company-operated e-commerce sites, and select shop-in-shops located in department stores and other third-party retail locations. The company also operates brand-dedicated stores and shop-in-shops. Levi Strauss & Co. was founded in 1853 and is headquartered in San Francisco, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-07",
   "earnings_estimated": false,
   "earnings_call": "2026-10-07",
-  "eps_estimate": 0.35833,
+  "eps_estimate": 0.3795,
   "analysts": {
     "strong_buy": 5,
     "buy": 7,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 15
   },
-  "target_mean": 27.53333,
+  "target_mean": 26.6,
   "target_high": 34,
-  "target_low": 22,
+  "target_low": 20,
   "target_analysts": 15,
   "statements": [
     {
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 1543400000,
-      "earnings": 218100000
-    },
-    {
       "q": "4Q2025",
       "revenue": 1765800000,
       "earnings": 158000000
@@ -69,15 +64,69 @@
       "q": "2Q2026",
       "revenue": 1562000000,
       "earnings": 87300000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1609700000,
+      "earnings": 168600000
     }
   ],
   "growth": {
-    "q0": 0.0539,
-    "q1": 0.16790001,
-    "y0": 0.14840001,
-    "y1": 0.108
+    "q0": -0.0744,
+    "q1": 0.0962,
+    "y0": 0.1619,
+    "y1": 0.0731
   },
   "ratings": [
+    {
+      "date": "2026-10-08",
+      "firm": "JP Morgan",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-08",
+      "firm": "Raymond James",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-08",
+      "firm": "Barclays",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-08",
+      "firm": "Wells Fargo",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-08",
+      "firm": "B of A Securities",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-08",
+      "firm": "Needham",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "reit"
+    },
+    {
+      "date": "2026-10-08",
+      "firm": "BTIG",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "reit"
+    },
     {
       "date": "2026-10-01",
       "firm": "Jefferies",
@@ -98,55 +147,6 @@
       "from": "Buy",
       "to": "Buy",
       "action": "reit"
-    },
-    {
-      "date": "2026-08-04",
-      "firm": "JP Morgan",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-28",
-      "firm": "Wells Fargo",
-      "from": "Overweight",
-      "to": "Equal-Weight",
-      "action": "down"
-    },
-    {
-      "date": "2026-07-10",
-      "firm": "Barclays",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-09",
-      "firm": "Needham",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "reit"
-    },
-    {
-      "date": "2026-07-09",
-      "firm": "BTIG",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "reit"
-    },
-    {
-      "date": "2026-07-02",
-      "firm": "Telsey Advisory Group",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-02",
-      "firm": "Raymond James",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
     }
   ],
   "holders": [
@@ -230,11 +230,11 @@
     "net_pct": 1.2
   },
   "extras": {
-    "beta": 1.317,
-    "enterprise_value": 9218782208,
-    "ev_ebitda": 9.47,
-    "ev_revenue": 1.394,
-    "float_shares": 93006835,
+    "beta": null,
+    "enterprise_value": 9032694784,
+    "ev_ebitda": 8.945,
+    "ev_revenue": 1.352,
+    "float_shares": 92627115,
     "short_shares": 8045787,
     "short_pct_float": 8.09,
     "short_ratio": 3.85,
@@ -243,15 +243,9 @@
   },
   "ex_dividend": "2026-07-22",
   "dividend_date": null,
-  "payout_ratio": 0.4,
+  "payout_ratio": 0.3816,
   "inst_count": 440,
   "eps_history": [
-    {
-      "quarter": "2025-08-31",
-      "estimate": 0.30622,
-      "actual": 0.34,
-      "surprise_pct": 11.03
-    },
     {
       "quarter": "2025-11-30",
       "estimate": 0.39167,
@@ -269,9 +263,33 @@
       "estimate": 0.24397,
       "actual": 0.28,
       "surprise_pct": 14.77
+    },
+    {
+      "quarter": "2026-08-31",
+      "estimate": 0.35833,
+      "actual": 0.48,
+      "surprise_pct": 33.95
     }
   ],
   "insiders": [
+    {
+      "name": "PATRICK ARTEMIS",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 68,
+      "date": "2026-08-05"
+    },
+    {
+      "name": "GEBALLE DANIEL W",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 130,
+      "date": "2026-08-05"
+    },
     {
       "name": "ALSTEAD TROY M",
       "role": "Director",
@@ -279,6 +297,15 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 85,
+      "date": "2026-08-05"
+    },
+    {
+      "name": "GARTEN YAEL",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 156,
       "date": "2026-08-05"
     },
     {
@@ -300,12 +327,12 @@
       "date": "2026-08-05"
     },
     {
-      "name": "MING JENNY J",
+      "name": "PRIME JOSHUA E,",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 54,
+      "shares": 106,
       "date": "2026-08-05"
     },
     {
@@ -327,39 +354,12 @@
       "date": "2026-08-05"
     },
     {
-      "name": "PRIME JOSHUA E,",
+      "name": "MING JENNY J",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 106,
-      "date": "2026-08-05"
-    },
-    {
-      "name": "PATRICK ARTEMIS",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 68,
-      "date": "2026-08-05"
-    },
-    {
-      "name": "GEBALLE DANIEL W",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 130,
-      "date": "2026-08-05"
-    },
-    {
-      "name": "GARTEN YAEL",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 156,
+      "shares": 54,
       "date": "2026-08-05"
     }
   ],

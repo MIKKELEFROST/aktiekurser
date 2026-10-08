@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T21:39:03.154Z",
+  "updated_at": "2026-10-08T21:30:09.264Z",
   "source": "Yahoo Finance",
   "symbol": "BBD",
   "summary": "Banco Bradesco S.A., together with its subsidiaries, provides various banking products and services in Brazil and internationally. The company operates in two segments, Banking and Insurance. It engages in banking operations, including investment, national, international, and private banking, as well as investment fund management, consortium administration, middle market and corporate activities, and leasing. The company also provides retail banking products, such as demand, savings, and time deposits, as well as mutual funds, foreign exchange services, and various loans and advances comprising overdrafts, credit cards, and loans with repayments in installments; and fund management and treasury services, corporate finance, and hedge and finance operations, which include working capital financing. In addition, it provides insurance products, such as life, pension, health, and non-life, as well as related insurance operations, supplemental pension plans, and capitalization bonds. Further, the company offers cards, consortia, service packages and fees, auctions, debt renegotiation, and accounts; and various services comprising related transactions and inquiries, profile and help, purchases and benefits, and permissions. It serves individuals, corporates, and businesses. The company was incorporated in 1943 and is headquartered in Osasco, Brazil.",
@@ -7,9 +7,9 @@
   "website": "https://banco.bradesco",
   "employees": 68814,
   "ceo": "Mr. Marcelo  de Araujo Noronha",
-  "next_earnings": "2026-11-04",
-  "earnings_estimated": true,
-  "earnings_call": "2026-08-06",
+  "next_earnings": "2026-10-22",
+  "earnings_estimated": false,
+  "earnings_call": "2026-10-23",
   "eps_estimate": 0.13061,
   "analysts": {
     "strong_buy": 2,
@@ -79,6 +79,13 @@
   },
   "ratings": [
     {
+      "date": "2026-10-08",
+      "firm": "HSBC",
+      "from": "Buy",
+      "to": "Hold",
+      "action": "down"
+    },
+    {
       "date": "2026-10-06",
       "firm": "JP Morgan",
       "from": "Neutral",
@@ -140,13 +147,6 @@
       "from": "Sell",
       "to": "Sell",
       "action": "main"
-    },
-    {
-      "date": "2024-01-09",
-      "firm": "Goldman Sachs",
-      "from": "Neutral",
-      "to": "Sell",
-      "action": "down"
     }
   ],
   "holders": [
@@ -223,17 +223,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 1,
+    "buys": 2,
     "sells": 2,
-    "bought": 57,
+    "bought": 345057,
     "sold": 19652,
-    "net_pct": -2.6
+    "net_pct": 80.8
   },
   "extras": {
     "beta": 0.188,
-    "enterprise_value": 607491915776,
+    "enterprise_value": 605694853120,
     "ev_ebitda": null,
-    "ev_revenue": 6.513,
+    "ev_revenue": 6.493,
     "float_shares": 7475818960,
     "short_shares": 15792807,
     "short_pct_float": 0.3,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-10-15",
   "dividend_date": null,
   "payout_ratio": 0.9564,
-  "inst_count": 402,
+  "inst_count": 401,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "ALVAREZ DENISE AGUIAR",
+      "role": "Director",
+      "kind": "buy",
+      "text": "Purchase at price 3.25 per share.",
+      "value": 1121250,
+      "shares": 345000,
+      "date": "2026-08-25"
+    },
     {
       "name": "NETO JOSE RAMOS ROCHA",
       "role": "Officer",

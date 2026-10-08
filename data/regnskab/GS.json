@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T21:39:03.760Z",
+  "updated_at": "2026-10-08T21:30:10.252Z",
   "source": "Yahoo Finance",
   "symbol": "GS",
   "summary": "The Goldman Sachs Group, Inc., a financial institution, provides a range of financial services for corporations, financial institutions, governments, and individuals in the Americas, Europe, the Middle East, Africa, and Asia. It operates through three segments: Global Banking & Markets, Asset & Wealth Management, and Platform Solutions. The Global Banking & Markets segment provides financial advisory services, including strategic advisory assignments related to mergers and acquisitions, divestitures, corporate defense activities, restructurings, and spin-offs; equity and debt underwriting of public offerings and private placements; relationship lending and acquisition financing; secured lending through structured credit and asset-backed lending, such as warehouse, residential and commercial mortgage, corporate, consumer, auto, and student loans; financing through securities purchased under agreements to resell; and commodity financing through structured transactions. This segment also offers client execution activities for cash and derivative instruments; credit and interest rate products; and provision of mortgages, currencies, commodities, and equities related products. Its Asset & Wealth Management segment manages assets across various classes, including equity, fixed income, hedge funds, credit funds, private equity, real estate, currencies, commodities, and asset allocation strategies; and provides customized investment advisory solutions, wealth advisory services, personalized financial planning, and private banking services, as well as invests in corporate equity, credit, real estate, and infrastructure assets. The Platform Solutions segment offers credit cards; and transaction banking and other services, such as deposit-taking, payment solutions, and other cash management services for corporate and institutional clients. The Goldman Sachs Group, Inc. was founded in 1869 and is headquartered in New York, New York.",
@@ -10,74 +10,35 @@
   "next_earnings": "2026-10-13",
   "earnings_estimated": false,
   "earnings_call": "2026-10-13",
-  "eps_estimate": 13.93331,
+  "eps_estimate": 13.80257,
   "analysts": {
     "strong_buy": 1,
-    "buy": 6,
+    "buy": 7,
     "hold": 16,
     "sell": 1,
     "strong_sell": 1,
-    "total": 25
+    "total": 26
   },
-  "target_mean": 1079.5,
+  "target_mean": 1078.0952,
   "target_high": 1250,
   "target_low": 730,
-  "target_analysts": 20,
-  "statements": [
-    {
-      "year": "2022",
-      "revenue": 47365000000,
-      "net": 10764000000,
-      "margin": 22.7
-    },
-    {
-      "year": "2023",
-      "revenue": 46524000000,
-      "net": 7907000000,
-      "margin": 17
-    },
-    {
-      "year": "2024",
-      "revenue": 53512000000,
-      "net": 13525000000,
-      "margin": 25.3
-    },
-    {
-      "year": "2025",
-      "revenue": 58283000000,
-      "net": 16300000000,
-      "margin": 28
-    }
-  ],
-  "quarterly": [
-    {
-      "q": "3Q2025",
-      "revenue": 15184000000,
-      "earnings": 3860000000
-    },
-    {
-      "q": "4Q2025",
-      "revenue": 13454000000,
-      "earnings": 4384000000
-    },
-    {
-      "q": "1Q2026",
-      "revenue": 17227000000,
-      "earnings": 5403000000
-    },
-    {
-      "q": "2Q2026",
-      "revenue": 20338000000,
-      "earnings": 6399000000
-    }
-  ],
+  "target_analysts": 21,
+  "statements": null,
+  "quarterly": [],
   "growth": {
-    "q0": 0.1374,
-    "q1": 0.090299994,
-    "y0": 0.3208,
-    "y1": 0.0704
+    "q0": 0.1267,
+    "q1": 0.09020001,
+    "y0": 0.32189998,
+    "y1": 0.071100004
   },
   "ratings": [
+    {
+      "date": "2026-10-08",
+      "firm": "TD Cowen",
+      "from": null,
+      "to": "Buy",
+      "action": "init"
+    },
     {
       "date": "2026-10-06",
       "firm": "BMO Capital",
@@ -139,13 +100,6 @@
       "firm": "BMO Capital",
       "from": "Market Perform",
       "to": "Market Perform",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-17",
-      "firm": "Evercore ISI Group",
-      "from": "Outperform",
-      "to": "Outperform",
       "action": "main"
     }
   ],
@@ -231,9 +185,9 @@
   },
   "extras": {
     "beta": 1.284,
-    "enterprise_value": 26277982208,
+    "enterprise_value": 23259412480,
     "ev_ebitda": null,
-    "ev_revenue": 0.389,
+    "ev_revenue": 0.344,
     "float_shares": 301060743,
     "short_shares": 6921097,
     "short_pct_float": 2.39,
@@ -327,6 +281,15 @@
       "date": "2026-05-06"
     },
     {
+      "name": "SOLOMON DAVID M",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 930.43 - 931.25 per share.",
+      "value": 3229543,
+      "shares": 3470,
+      "date": "2026-05-01"
+    },
+    {
       "name": "FREDMAN SHEARA J.",
       "role": "Officer",
       "kind": "sell",
@@ -342,15 +305,6 @@
       "text": "Sale at price 928.85 - 930.35 per share.",
       "value": 634927,
       "shares": 683,
-      "date": "2026-05-01"
-    },
-    {
-      "name": "SOLOMON DAVID M",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 930.43 - 931.25 per share.",
-      "value": 3229543,
-      "shares": 3470,
       "date": "2026-05-01"
     },
     {

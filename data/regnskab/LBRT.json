@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T21:39:03.984Z",
+  "updated_at": "2026-10-08T21:30:10.627Z",
   "source": "Yahoo Finance",
   "symbol": "LBRT",
   "summary": "Liberty Energy Inc.,an integrated energy services and technology company, provides hydraulic fracturing services and related technologies onshore oil, natural gas, and enhanced geothermal exploration and production companies in North America. It offers wireline services, proppant delivery solutions, field gas processing and treating, compressed natural gas (CNG) delivery, data analytics, related goods comprising sand mine operations, and technologies; and proppant handling equipment and logistics software. As of as of December 31, 2025, the company owned and operated a fleet of approximately 40 active hydraulic fracturing; and two sand mines in the Permian Basin. It also provides services primarily in the Permian Basin, the Williston Basin, the Haynesville Shale, the Eagle Ford Shale, the Denver-Julesburg Basin, the Western Canadian Sedimentary Basin, the Powder River Basin, and the Appalachian Basin, as well as in the Anadarko Basin, the Uinta Basin, the San Juan Basin, and the Beetaloo Basin. The company was formerly known as Liberty Oilfield Services Inc. and changed its name to Liberty Energy Inc. in April 2022. Liberty Energy Inc. was founded in 2011 and is headquartered in Denver, Colorado.",
@@ -7,9 +7,9 @@
   "website": "https://www.libertyenergy.com",
   "employees": 5800,
   "ceo": "Mr. Ron  Gusek",
-  "next_earnings": "2026-10-14",
-  "earnings_estimated": true,
-  "earnings_call": "2026-07-23",
+  "next_earnings": "2026-10-21",
+  "earnings_estimated": false,
+  "earnings_call": "2026-10-22",
   "eps_estimate": 0.0952,
   "analysts": {
     "strong_buy": 4,
@@ -224,17 +224,17 @@
   "insider_net": {
     "period": "6m",
     "buys": 5,
-    "sells": 7,
+    "sells": 8,
     "bought": 273361,
-    "sold": 70677,
-    "net_pct": 6.6
+    "sold": 74010,
+    "net_pct": 6.5
   },
   "extras": {
     "beta": 0.724,
-    "enterprise_value": 4341153280,
-    "ev_ebitda": 8.179,
-    "ev_revenue": 1.035,
-    "float_shares": 160177271,
+    "enterprise_value": 4225287424,
+    "ev_ebitda": 7.961,
+    "ev_revenue": 1.007,
+    "float_shares": 160180534,
     "short_shares": 17198174,
     "short_pct_float": 14.73,
     "short_ratio": 5.1,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-09-04",
   "dividend_date": null,
   "payout_ratio": 0.473,
-  "inst_count": 522,
+  "inst_count": 521,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -266,12 +266,21 @@
     },
     {
       "quarter": "2026-06-30",
-      "estimate": 0.07996,
+      "estimate": 0.08247,
       "actual": 0.09,
-      "surprise_pct": 12.56
+      "surprise_pct": 9.13
     }
   ],
   "insiders": [
+    {
+      "name": "STOCK MICHAEL DAVID",
+      "role": "Chief Financial Officer",
+      "kind": "sell",
+      "text": "Sale at price 20.00 per share.",
+      "value": 66660,
+      "shares": 3333,
+      "date": "2026-10-06"
+    },
     {
       "name": "STOCK MICHAEL DAVID",
       "role": "Chief Financial Officer",
@@ -345,21 +354,12 @@
       "date": "2026-05-05"
     },
     {
-      "name": "STOCK MICHAEL DAVID",
-      "role": "Chief Financial Officer",
+      "name": "GOSNEY RYAN TATE",
+      "role": "Officer",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 102914,
-      "date": "2026-04-01"
-    },
-    {
-      "name": "STOCK MICHAEL DAVID",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 102914,
+      "shares": 26124,
       "date": "2026-04-01"
     }
   ],

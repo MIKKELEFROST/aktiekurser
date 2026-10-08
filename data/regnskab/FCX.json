@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T21:39:03.620Z",
+  "updated_at": "2026-10-08T21:30:10.039Z",
   "source": "Yahoo Finance",
   "symbol": "FCX",
   "summary": "Freeport-McMoRan Inc. engages in the mining of mineral properties in North America, South America, and Indonesia. The company primarily explores for copper, gold, molybdenum, silver, and other metals. Its assets include the Grasberg minerals district in Indonesia; Morenci, Bagdad, Safford, Sierrita, and Miami in Arizona; Chino and Tyrone in New Mexico; and Henderson and Climax in Colorado, North America, as well as Cerro Verde in Peru and El Abra in Chile. The company was formerly known as Freeport-McMoRan Copper & Gold Inc. and changed its name to Freeport-McMoRan Inc. in July 2014. The company was incorporated in 1987 and is headquartered in Phoenix, Arizona.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-27",
   "earnings_estimated": false,
   "earnings_call": "2026-10-27",
-  "eps_estimate": 0.78636,
+  "eps_estimate": 0.80892,
   "analysts": {
     "strong_buy": 6,
     "buy": 12,
@@ -19,8 +19,8 @@
     "strong_sell": 0,
     "total": 23
   },
-  "target_mean": 75.27273,
-  "target_high": 87,
+  "target_mean": 77.13636,
+  "target_high": 92,
   "target_low": 30,
   "target_analysts": 22,
   "statements": [
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.5727,
-    "q1": 1.2872,
-    "y0": 0.7427,
-    "y1": 0.3737
+    "q0": 0.6178,
+    "q1": 1.4355999,
+    "y0": 0.78190005,
+    "y1": 0.36080003
   },
   "ratings": [
+    {
+      "date": "2026-10-08",
+      "firm": "UBS",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-07",
       "firm": "JP Morgan",
@@ -139,13 +146,6 @@
       "firm": "Wells Fargo",
       "from": "Overweight",
       "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-24",
-      "firm": "RBC Capital",
-      "from": "Sector Perform",
-      "to": "Sector Perform",
       "action": "main"
     }
   ],
@@ -231,10 +231,10 @@
   },
   "extras": {
     "beta": 1.389,
-    "enterprise_value": 122589429760,
-    "ev_ebitda": 12.831,
-    "ev_revenue": 4.739,
-    "float_shares": 1426338765,
+    "enterprise_value": 121584222208,
+    "ev_ebitda": 12.726,
+    "ev_revenue": 4.7,
+    "float_shares": 1426324405,
     "short_shares": 34304914,
     "short_pct_float": 2.4,
     "short_ratio": 2.34,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-10-15",
   "dividend_date": null,
   "payout_ratio": 0.2956,
-  "inst_count": 2503,
+  "inst_count": 2505,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -273,21 +273,21 @@
   ],
   "insiders": [
     {
-      "name": "GRANT HUGH N",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 70.00 per share.",
-      "value": 33740,
-      "shares": 482,
-      "date": "2026-10-01"
-    },
-    {
       "name": "STEPHENS JOHN JOSEPH",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 70.00 per share.",
       "value": 20580,
       "shares": 294,
+      "date": "2026-10-01"
+    },
+    {
+      "name": "GRANT HUGH N",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 70.00 per share.",
+      "value": 33740,
+      "shares": 482,
       "date": "2026-10-01"
     },
     {
@@ -302,18 +302,18 @@
     {
       "name": "CURRAULT DOUGLAS NICHOLAS II",
       "role": "General Counsel",
-      "kind": "sell",
-      "text": "Sale at price 78.56 per share.",
-      "value": 6284464,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 12.04 - 28.14 per share.",
+      "value": 1204700,
       "shares": 80000,
       "date": "2026-08-25"
     },
     {
       "name": "CURRAULT DOUGLAS NICHOLAS II",
       "role": "General Counsel",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 12.04 - 28.14 per share.",
-      "value": 1204700,
+      "kind": "sell",
+      "text": "Sale at price 78.56 per share.",
+      "value": 6284464,
       "shares": 80000,
       "date": "2026-08-25"
     },
@@ -345,21 +345,21 @@
       "date": "2026-07-30"
     },
     {
-      "name": "GRANT HUGH N",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 62.89 per share.",
-      "value": 33709,
-      "shares": 536,
-      "date": "2026-07-01"
-    },
-    {
       "name": "STEPHENS JOHN JOSEPH",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 62.89 per share.",
       "value": 20565,
       "shares": 327,
+      "date": "2026-07-01"
+    },
+    {
+      "name": "GRANT HUGH N",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 62.89 per share.",
+      "value": 33709,
+      "shares": 536,
       "date": "2026-07-01"
     }
   ],

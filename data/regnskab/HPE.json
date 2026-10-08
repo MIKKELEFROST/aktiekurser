@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T21:39:03.817Z",
+  "updated_at": "2026-10-08T21:30:10.341Z",
   "source": "Yahoo Finance",
   "symbol": "HPE",
   "summary": "Hewlett Packard Enterprise Company, together with its subsidiaries, develops intelligent solutions in the United States, the Americas, Europe, the Middle East, Africa, the Asia Pacific, Japan, and internationally. It operates in five segments: Server, Hybrid Cloud, Networking, Financial Services, and Corporate Investments and Other. The company offers general-purpose servers, workload-optimized servers, and integrated systems, including HPE ProLiant Rack and Tower servers; HPE Synergy; HPE Scale Up servers; HPE Edgeline servers; HPE Cray EX; HPE Cray XD; and HPE NonStop. It also provides cloud-native and hybrid solutions, such as HPE Alletra Storage; HPE InfoSight; HPE CloudPhysics; and HPE GreenLake. In addition, the company develops and sells networking and security products and services comprising hardware products, which include Wi-Fi and private cellular access points, MX and PTX routers, and gateways, as well as QFX, EX, and CX switches; software products, such as Mist and Aruba Central; and services comprising professional, maintenance, support services, management software, and education and training programs. Further, it offers investment solutions, including leasing, financing, IT consumption, utility programs, and asset management services, as well as supports financial solutions for on-premise flexible consumption models. The company serves commercial and large enterprise groups, as well as business and public sector enterprises. It sells its products through resellers, distribution partners, master area partners, original equipment manufacturers, independent software vendors, systems integrators, and advisory firms. The company was founded in 1939 and is headquartered in Spring, Texas.",
@@ -51,6 +51,11 @@
   ],
   "quarterly": [
     {
+      "q": "2Q2025",
+      "revenue": 9136000000,
+      "earnings": 276000000
+    },
+    {
       "q": "3Q2025",
       "revenue": 9679000000,
       "earnings": 146000000
@@ -64,11 +69,6 @@
       "q": "1Q2026",
       "revenue": 10678000000,
       "earnings": 595000000
-    },
-    {
-      "q": "2Q2026",
-      "revenue": 12213000000,
-      "earnings": 1511000000
     }
   ],
   "growth": {
@@ -223,17 +223,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 9,
-    "sells": 11,
-    "bought": 3535250,
-    "sold": 655233,
-    "net_pct": 142.1
+    "buys": 12,
+    "sells": 12,
+    "bought": 3536962,
+    "sold": 905233,
+    "net_pct": 115.6
   },
   "extras": {
     "beta": 1.404,
-    "enterprise_value": 107726716928,
-    "ev_ebitda": 15.635,
-    "ev_revenue": 2.573,
+    "enterprise_value": 109863936000,
+    "ev_ebitda": 15.945,
+    "ev_revenue": 2.624,
     "float_shares": 1321438089,
     "short_shares": 55958000,
     "short_pct_float": 4.8,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-09-17",
   "dividend_date": null,
   "payout_ratio": 0.2874,
-  "inst_count": 1946,
+  "inst_count": 1949,
   "eps_history": [
     {
       "quarter": "2025-10-31",
@@ -272,6 +272,42 @@
     }
   ],
   "insiders": [
+    {
+      "name": "NERI ANTONIO F",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 68.31 per share.",
+      "value": 17077550,
+      "shares": 250000,
+      "date": "2026-10-05"
+    },
+    {
+      "name": "LANE RAYMOND J",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 63.89 per share.",
+      "value": 32520,
+      "shares": 509,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "REINER GARY M",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 63.89 per share.",
+      "value": 37503,
+      "shares": 587,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "RUSSO PATRICIA F",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 63.89 per share.",
+      "value": 39356,
+      "shares": 616,
+      "date": "2026-09-30"
+    },
     {
       "name": "RAHIM RAMI",
       "role": "Officer",
@@ -325,42 +361,6 @@
       "value": 0,
       "shares": 655427,
       "date": "2026-07-07"
-    },
-    {
-      "name": "RAHIM RAMI",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 41.23 per share.",
-      "value": 46275109,
-      "shares": 1122365,
-      "date": "2026-07-02"
-    },
-    {
-      "name": "HSU CHRISTOPHER P",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 45.11 per share.",
-      "value": 10826,
-      "shares": 240,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "REINER GARY M",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 45.11 per share.",
-      "value": 37486,
-      "shares": 831,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "LANE RAYMOND J",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 45.11 per share.",
-      "value": 32479,
-      "shares": 720,
-      "date": "2026-06-30"
     }
   ],
   "dividends": [

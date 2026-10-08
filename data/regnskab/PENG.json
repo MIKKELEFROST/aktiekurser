@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-10-07T21:39:04.295Z",
+  "updated_at": "2026-10-08T21:30:11.220Z",
   "source": "Yahoo Finance",
   "symbol": "PENG",
   "summary": "Penguin Solutions, Inc. designs, builds, deploys and manages enterprise solutions worldwide. The company operates through three segments: Advanced Computing, Integrated Memory, and Optimized LED. It offers hardware, software, and services focusing on technical computing for core and cloud environments through computing and AI solutions. The company also provides Penguin Solutions OriginAI, an AI infrastructure solution for customers deploying GPUs at scale; continuous availability of customers critical data and applications in data centers and edge locations under the Stratus brand products; and dynamic random-access memory, modules, solid-state/flash storage, and integrated memory solutions to networking and telecom, data analytics, AI, and ML under the SMART Modular Technologies brand. In addition, it provides Zefr, a memory module; Altus and AMD EPYC based servers for expansive memory for AI workloads; flash memory products comprising solid-state drives, Serial Advanced Technology Attachment, and PCIe NVMe products in 2.5 enclosures, M.2, EDSFF, and other form factors; and multimediacard and embedded and removable USB products, SD and microSD Card configurations, and firmware development. Further, the company offers procurement, logistics, inventory management, temporary warehousing, programming, kitting, and packaging supply chain services; and LEDs under the Cree LED brand; Cree LED XLamp and J Series packaged LED components. It serves OEMs, enterprises, government, and other customers through direct and third-party channels. The company has a strategic collaboration with Deepgram, Dell Technologies, and ZulaFly to offer healthcare, location-based workflow, and safety solutions. The company was formerly known as SMART Global Holdings, Inc. and changed its name to Penguin Solutions, Inc. in October 2024. Penguin Solutions, Inc. was founded in 1988 and is headquartered in Fremont, California.",
   "industry": "Information Technology Services",
   "website": "https://www.penguinsolutions.com",
-  "employees": 2900,
+  "employees": null,
   "ceo": "Mr. Kash  Shaikh",
   "next_earnings": "2027-01-05",
   "earnings_estimated": true,
   "earnings_call": "2026-10-06",
-  "eps_estimate": 0.772,
+  "eps_estimate": 1.035,
   "analysts": {
     "strong_buy": 2,
     "buy": 4,
@@ -19,9 +19,9 @@
     "strong_sell": 1,
     "total": 7
   },
-  "target_mean": 74.28571,
-  "target_high": 85,
-  "target_low": 40,
+  "target_mean": 83.57143,
+  "target_high": 100,
+  "target_low": 60,
   "target_analysts": 7,
   "statements": [
     {
@@ -72,10 +72,10 @@
     }
   ],
   "growth": {
-    "q0": 0.7953,
-    "q1": 0.493,
-    "y0": 0.37919998,
-    "y1": 0.2882
+    "q0": 1.1122,
+    "q1": 1.0874,
+    "y0": 0.5758,
+    "y1": 0.1526
   },
   "ratings": [
     {
@@ -223,18 +223,18 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 2,
+    "buys": 4,
     "sells": 15,
-    "bought": 16040,
+    "bought": 88214,
     "sold": 94186,
-    "net_pct": -4.3
+    "net_pct": -0.3
   },
   "extras": {
     "beta": 2.862,
-    "enterprise_value": 3576032768,
-    "ev_ebitda": 20.561,
-    "ev_revenue": 2.38,
-    "float_shares": 49652126,
+    "enterprise_value": 4459175424,
+    "ev_ebitda": 19.685,
+    "ev_revenue": 2.575,
+    "float_shares": 53917779,
     "short_shares": 7079925,
     "short_pct_float": 19.68,
     "short_ratio": 4.89,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 477,
+  "inst_count": 480,
   "eps_history": [
-    {
-      "quarter": "2025-08-31",
-      "estimate": 0.36276,
-      "actual": 0.43,
-      "surprise_pct": 18.54
-    },
     {
       "quarter": "2025-11-30",
       "estimate": 0.43642,
@@ -269,9 +263,33 @@
       "estimate": 0.5625,
       "actual": 0.84,
       "surprise_pct": 49.33
+    },
+    {
+      "quarter": "2026-08-31",
+      "estimate": 0.772,
+      "actual": 1,
+      "surprise_pct": 29.53
     }
   ],
   "insiders": [
+    {
+      "name": "KUYKENDALL ANNE",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 41242,
+      "date": "2026-10-02"
+    },
+    {
+      "name": "CLARK JOSEPH GATES",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 30932,
+      "date": "2026-10-02"
+    },
     {
       "name": "FREY ANTHONY GEORGE",
       "role": "Officer",
@@ -343,24 +361,6 @@
       "value": 0,
       "shares": 4485,
       "date": "2026-05-18"
-    },
-    {
-      "name": "STRAUB MAXIMILIANE C",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 49.00 per share.",
-      "value": 147000,
-      "shares": 3000,
-      "date": "2026-05-14"
-    },
-    {
-      "name": "NAYYAR SANDEEP",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 43.48 - 45.09 per share.",
-      "value": 890346,
-      "shares": 20000,
-      "date": "2026-05-12"
     }
   ],
   "dividends": [],

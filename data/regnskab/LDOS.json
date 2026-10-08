@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T21:39:03.988Z",
+  "updated_at": "2026-10-08T21:30:10.640Z",
   "source": "Yahoo Finance",
   "symbol": "LDOS",
   "summary": "Leidos Holdings, Inc., together with its subsidiaries, provides services and solutions for government and commercial customers in the United States and internationally. The National Security & Digital segment provides national security software; services by using artificial intelligence and machine learning to coordinate sea, ground, air, and space to help warfighters; offensive, defensive, and physical cyber operation solutions; intelligence analysis, operational support, logistics operations, security, linguistics, force production, biometrics, chemical, biological, radiological, nuclear, and explosives, energetics, training, and other services; and Digital Modernization and transformation services. The Health & Civil segment offers air traffic control systems; health mission software; managed health services; infrastructure management and operation; logistical operations and information technology support; and life science research and development support services. The Commercial & International segment provides power grid engineering and design, grid modernization, utility planning and consulting, energy management and efficiency, technology-driven innovation, and software and application development; people scanners, computed tomography carry-on baggage scanners, checked baggage scanners, and explosive trace detectors; mobile, non-intrusive ports and borders inspection systems; and open-architecture platform that transforms airport security by integrating disparate devices and technologies into a unified management system. The Defense Systems segment offers air and missile defense, maritime, aerospace, and cyber and threat systems; offers airborne training, intelligence, surveillance, and reconnaissance missions; and provides space-based electro-optic infrared systems, multi/hyperspectral, electronic warfare and signals intelligence, and communications payloads. Leidos Holdings, Inc. was founded in 1969 and is headquartered in Reston, Virginia.",
@@ -10,16 +10,16 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": 3.05043,
+  "eps_estimate": 3.04053,
   "analysts": {
-    "strong_buy": 3,
+    "strong_buy": 2,
     "buy": 4,
-    "hold": 10,
+    "hold": 11,
     "sell": 0,
     "strong_sell": 0,
     "total": 17
   },
-  "target_mean": 156.26666,
+  "target_mean": 152.06667,
   "target_high": 225,
   "target_low": 130,
   "target_analysts": 15,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.0001,
-    "q1": 0.0795,
-    "y0": 0.0336,
-    "y1": 0.0293
+    "q0": -0.0031,
+    "q1": 0.074200004,
+    "y0": 0.035099998,
+    "y1": 0.0172
   },
   "ratings": [
+    {
+      "date": "2026-10-08",
+      "firm": "JP Morgan",
+      "from": "Overweight",
+      "to": "Neutral",
+      "action": "down"
+    },
     {
       "date": "2026-10-07",
       "firm": "Citigroup",
@@ -137,13 +144,6 @@
     {
       "date": "2026-08-05",
       "firm": "BNP Paribas",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-05",
-      "firm": "RBC Capital",
       "from": "Outperform",
       "to": "Outperform",
       "action": "main"
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 21,
-    "sells": 4,
+    "sells": 3,
     "bought": 14665,
-    "sold": 14484,
-    "net_pct": 0
+    "sold": 12484,
+    "net_pct": 0.3
   },
   "extras": {
     "beta": 0.59,
-    "enterprise_value": 20525686784,
-    "ev_ebitda": 8.617,
-    "ev_revenue": 1.164,
+    "enterprise_value": 20131641344,
+    "ev_ebitda": 8.452,
+    "ev_revenue": 1.142,
     "float_shares": 124554782,
     "short_shares": 5236432,
     "short_pct_float": 4.78,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-09-15",
   "dividend_date": null,
   "payout_ratio": 0.1578,
-  "inst_count": 1102,
+  "inst_count": 1103,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -273,21 +273,21 @@
   ],
   "insiders": [
     {
-      "name": "SHAPARD ROBERT S",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 5,
-      "date": "2026-09-30"
-    },
-    {
       "name": "KRAEMER HARRY M. JANSEN JR.",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 463,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "SHAPARD ROBERT S",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 5,
       "date": "2026-09-30"
     },
     {
@@ -345,21 +345,21 @@
       "date": "2026-06-30"
     },
     {
-      "name": "SHAPARD ROBERT S",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 6,
-      "date": "2026-06-30"
-    },
-    {
       "name": "KRAEMER HARRY M. JANSEN JR.",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 565,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "SHAPARD ROBERT S",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 6,
       "date": "2026-06-30"
     }
   ],

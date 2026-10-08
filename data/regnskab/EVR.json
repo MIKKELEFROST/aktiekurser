@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T21:39:03.590Z",
+  "updated_at": "2026-10-08T21:30:10.002Z",
   "source": "Yahoo Finance",
   "symbol": "EVR",
   "summary": "Evercore Inc., together with its subsidiaries, operates as an independent investment banking firm in the Americas, Europe, Middle East, Africa, and Asia-Pacific. The company operates through two segments, Investment Banking & Equities, and Investment Management. The Investment Banking & Equities segment offers strategic advisory services, such as mergers, and acquisitions, strategic, defense, and shareholder advisory, special committee assignments, and real estate strategic advisory; private capital advisory and fundraising, market risk management and hedging, private capital markets and debt advisory, liability management and restructuring, and equity capital markets execution and advisory services; and research, sales, and trading professionals services on a content-led platform to its institutional investor clients. The Investment Management segment provides wealth management services to high-net-worth individuals, foundations, and endowments. The company was formerly known as Evercore Partners Inc. and changed its name to Evercore Inc. in August 2017. Evercore Inc. was founded in 1995 and is headquartered in New York, New York.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-28",
   "earnings_estimated": true,
   "earnings_call": "2026-07-29",
-  "eps_estimate": 3.26804,
+  "eps_estimate": 3.00804,
   "analysts": {
     "strong_buy": 1,
     "buy": 5,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 11
   },
-  "target_mean": 349.4,
+  "target_mean": 340.8,
   "target_high": 391,
   "target_low": 285,
   "target_analysts": 10,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 838855000,
-      "earnings": 97201000
-    },
-    {
       "q": "3Q2025",
       "revenue": 1047076000,
       "earnings": 144583000
@@ -69,15 +64,27 @@
       "q": "1Q2026",
       "revenue": 1401520000,
       "earnings": 301235000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 999515000,
+      "earnings": 95277000
     }
   ],
   "growth": {
-    "q0": -0.060900003,
-    "q1": 0.0808,
-    "y0": 0.32639998,
-    "y1": 0.1596
+    "q0": -0.1356,
+    "q1": 0.019199999,
+    "y0": 0.296,
+    "y1": 0.16139999
   },
   "ratings": [
+    {
+      "date": "2026-10-08",
+      "firm": "Morgan Stanley",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
     {
       "date": "2026-10-07",
       "firm": "UBS",
@@ -139,13 +146,6 @@
       "firm": "UBS",
       "from": "Neutral",
       "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-04-14",
-      "firm": "Goldman Sachs",
-      "from": "Buy",
-      "to": "Buy",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.509,
-    "enterprise_value": 10466051072,
+    "enterprise_value": 10434515968,
     "ev_ebitda": null,
-    "ev_revenue": 2.222,
+    "ev_revenue": 2.215,
     "float_shares": 36417593,
     "short_shares": 1138626,
     "short_pct_float": 3.02,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-08-28",
   "dividend_date": null,
   "payout_ratio": 0.192,
-  "inst_count": 890,
+  "inst_count": 889,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -291,6 +291,15 @@
       "date": "2026-06-10"
     },
     {
+      "name": "HARRIS GAIL BLOCK",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 364,
+      "date": "2026-06-10"
+    },
+    {
       "name": "MILLARD ROBERT B",
       "role": "Director",
       "kind": "other",
@@ -300,12 +309,12 @@
       "date": "2026-06-10"
     },
     {
-      "name": "VARNEY CHRISTINE A",
+      "name": "WHEELER WILLIAM J",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 727,
+      "shares": 364,
       "date": "2026-06-10"
     },
     {
@@ -327,25 +336,16 @@
       "date": "2026-06-10"
     },
     {
-      "name": "WHEELER WILLIAM J",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 364,
-      "date": "2026-06-10"
-    },
-    {
-      "name": "HARRIS GAIL BLOCK",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 364,
-      "date": "2026-06-10"
-    },
-    {
       "name": "OVERLOCK WILLARD J JR",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 727,
+      "date": "2026-06-10"
+    },
+    {
+      "name": "VARNEY CHRISTINE A",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

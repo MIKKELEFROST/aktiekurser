@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T21:39:03.753Z",
+  "updated_at": "2026-10-08T21:30:10.238Z",
   "source": "Yahoo Finance",
   "symbol": "GRAL",
   "summary": "GRAIL, Inc., a commercial-stage healthcare company, provides multi-cancer early detection testing and services in the United States and internationally. It offers Galleri, a cancer screening test for asymptomatic individuals over 50 years of age; and a diagnostic aid for cancer tests to accelerate diagnostic resolution for patients with clinical suspicion of cancer. The company also provides development services, including support for ongoing clinical studies, pilot testing, research, and therapy development. In addition, its precision oncology portfolio consists of n RUO-targeted methylation-based platform that enables applications for disease prognostication, risk stratification, minimal residual disease detection, and recurrence and relapse monitoring. The company was incorporated in 2015 and is headquartered in Menlo Park, California.",
@@ -68,8 +68,8 @@
   "growth": {
     "q0": 0.22799999,
     "q1": 0.1439,
-    "y0": 0.3577,
-    "y1": -0.096999995
+    "y0": 0.35720003,
+    "y1": -0.097799994
   },
   "ratings": [
     {
@@ -218,16 +218,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 12,
-    "sells": 7,
+    "sells": 9,
     "bought": 81877,
-    "sold": 249251,
-    "net_pct": -7
+    "sold": 280743,
+    "net_pct": -8.2
   },
   "extras": {
     "beta": 2.838,
-    "enterprise_value": 5361480704,
-    "ev_ebitda": -14.165,
-    "ev_revenue": 32.442,
+    "enterprise_value": 5165842432,
+    "ev_ebitda": -13.649,
+    "ev_revenue": 31.258,
     "float_shares": 34341634,
     "short_shares": 8565314,
     "short_pct_float": 19.48,
@@ -238,7 +238,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": null,
-  "inst_count": 501,
+  "inst_count": 499,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -267,13 +267,22 @@
   ],
   "insiders": [
     {
+      "name": "PARTRIDGE ANDREW JOHN",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 146.39 per share.",
+      "value": 1152528,
+      "shares": 7873,
+      "date": "2026-10-05"
+    },
+    {
       "name": "FREIDIN AARON",
       "role": "Chief Financial Officer",
       "kind": "sell",
-      "text": "Sale at price 92.26 - 95.00 per share.",
-      "value": 382679,
-      "shares": 4100,
-      "date": "2026-09-21"
+      "text": "Sale at price 146.39 per share.",
+      "value": 3457585,
+      "shares": 23619,
+      "date": "2026-10-05"
     },
     {
       "name": "OFMAN JOSHUA J.",
@@ -282,6 +291,15 @@
       "text": "Sale at price 92.32 - 110.00 per share.",
       "value": 6006378,
       "shares": 61452,
+      "date": "2026-09-21"
+    },
+    {
+      "name": "FREIDIN AARON",
+      "role": "Chief Financial Officer",
+      "kind": "sell",
+      "text": "Sale at price 92.26 - 95.00 per share.",
+      "value": 382679,
+      "shares": 4100,
       "date": "2026-09-21"
     },
     {
@@ -294,6 +312,15 @@
       "date": "2026-09-21"
     },
     {
+      "name": "OFMAN JOSHUA J.",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 85.02 per share.",
+      "value": 425098,
+      "shares": 5000,
+      "date": "2026-08-27"
+    },
+    {
       "name": "FREIDIN AARON",
       "role": "Chief Financial Officer",
       "kind": "sell",
@@ -303,13 +330,13 @@
       "date": "2026-08-27"
     },
     {
-      "name": "OFMAN JOSHUA J.",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 85.02 per share.",
-      "value": 425098,
-      "shares": 5000,
-      "date": "2026-08-27"
+      "name": "SUMME GREGORY L",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 74.36 per share.",
+      "value": 31752,
+      "shares": 427,
+      "date": "2026-07-15"
     },
     {
       "name": "MIZELL STEVEN",
@@ -328,33 +355,6 @@
       "value": 20523,
       "shares": 276,
       "date": "2026-07-15"
-    },
-    {
-      "name": "SUMME GREGORY L",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 74.36 per share.",
-      "value": 31752,
-      "shares": 427,
-      "date": "2026-07-15"
-    },
-    {
-      "name": "KREVANS SARAH",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 63.74 per share.",
-      "value": 349996,
-      "shares": 5491,
-      "date": "2026-06-22"
-    },
-    {
-      "name": "MIZELL STEVEN",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 63.74 per share.",
-      "value": 349996,
-      "shares": 5491,
-      "date": "2026-06-18"
     }
   ],
   "dividends": [],

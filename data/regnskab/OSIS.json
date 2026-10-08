@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T21:39:04.251Z",
+  "updated_at": "2026-10-08T21:30:11.142Z",
   "source": "Yahoo Finance",
   "symbol": "OSIS",
   "summary": "OSI Systems, Inc. designs and manufactures specialized electronic systems and components for critical applications in the United States, Mexico, the rest of Americas, the United Kingdom, Europe, the Middle East, Africa, and the Asia-Pacific. The company offers security products, such as baggage and parcel inspection, cargo and vehicle inspection, hold baggage screening, people screening, radiation monitoring, explosive and narcotics trace detection, and optical inspection systems; turnkey security screening services for enterprise inspection process integration, operator training, and the staffing and operation of security screening checkpoints under the S2 brand. It also provides trace detection systems for trace amounts of explosives and narcotics and people screening products, including walk-through metal detectors for use at security checkpoints at airports, government buildings, sports arenas, and other venues; digital and analog high-power RF systems; and active components for detection of lights of different wavelengths and converts light into electrical signals. In addition, the company offers devices for emitting light in the form of lasers; passive components for amplifying, separating, and reflecting light under the OSI Optoelectronics brand; and printed circuit board assemblies, cable and harness assemblies, and complete systems. Further, it provides bedside monitors, such as the Xprezzon and Qube, as well as telemetry solutions; Spacelabs SafeNSound for assisting hospitals; predictive analytics clinical decision support solutions; Pathfinder SL and Lifescreen Pro analysis tools; and Eclipse Pro Holter recorders. Additionally, the company offers Eclipse Mini Ambulatory ECG recorders; ambulatory blood pressure monitors; Spacelabs OnTrak ambulatory blood pressure systems; Sentinel, a cardiology information management system; and multivendor compatible accessories. OSI Systems, Inc. was incorporated in 1987 and is headquartered in Hawthorne, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": true,
   "earnings_call": "2026-08-20",
-  "eps_estimate": 1.63948,
+  "eps_estimate": 1.64678,
   "analysts": {
     "strong_buy": 1,
     "buy": 5,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.1546,
+    "q0": 0.1597,
     "q1": 0.0358,
-    "y0": 0.0987,
-    "y1": 0.12640001
+    "y0": 0.0986,
+    "y1": 0.1272
   },
   "ratings": [
+    {
+      "date": "2026-10-08",
+      "firm": "Oppenheimer",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
     {
       "date": "2026-08-21",
       "firm": "B. Riley Securities",
@@ -137,13 +144,6 @@
     {
       "date": "2025-12-01",
       "firm": "Roth Capital",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2025-11-05",
-      "firm": "B of A Securities",
       "from": "Buy",
       "to": "Buy",
       "action": "main"
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.213,
-    "enterprise_value": 3855447040,
-    "ev_ebitda": 14.381,
-    "ev_revenue": 2.159,
+    "enterprise_value": 3783548928,
+    "ev_ebitda": 14.113,
+    "ev_revenue": 2.118,
     "float_shares": 14991508,
     "short_shares": 2121571,
     "short_pct_float": 16.53,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 501,
+  "inst_count": 502,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -273,12 +273,12 @@
   ],
   "insiders": [
     {
-      "name": "SZE VICTOR SO-MIEN",
-      "role": "General Counsel",
+      "name": "CHOPRA DEEPAK",
+      "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 206.73 per share.",
-      "value": 3482367,
-      "shares": 16845,
+      "value": 4217912,
+      "shares": 20403,
       "date": "2026-08-24"
     },
     {
@@ -288,24 +288,6 @@
       "text": "Stock Award(Grant) at price 206.73 per share.",
       "value": 4521392,
       "shares": 21871,
-      "date": "2026-08-24"
-    },
-    {
-      "name": "MEHRA AJAY",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 206.73 per share.",
-      "value": 4149691,
-      "shares": 20073,
-      "date": "2026-08-24"
-    },
-    {
-      "name": "CHOPRA DEEPAK",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 206.73 per share.",
-      "value": 4217912,
-      "shares": 20403,
       "date": "2026-08-24"
     },
     {
@@ -327,6 +309,24 @@
       "date": "2026-08-24"
     },
     {
+      "name": "MEHRA AJAY",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 206.73 per share.",
+      "value": 4149691,
+      "shares": 20073,
+      "date": "2026-08-24"
+    },
+    {
+      "name": "SZE VICTOR SO-MIEN",
+      "role": "General Counsel",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 206.73 per share.",
+      "value": 3482367,
+      "shares": 16845,
+      "date": "2026-08-24"
+    },
+    {
       "name": "MORBEN PAUL KEITH",
       "role": "Divisional Officer",
       "kind": "other",
@@ -345,21 +345,21 @@
       "date": "2026-08-24"
     },
     {
-      "name": "SZE VICTOR SO-MIEN",
-      "role": "General Counsel",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 221.39 per share.",
-      "value": 1425087,
-      "shares": 6437,
-      "date": "2026-07-31"
-    },
-    {
       "name": "EDRICK ALAN IAN",
       "role": "Chief Financial Officer",
       "kind": "other",
       "text": "Stock Award(Grant) at price 221.39 per share.",
       "value": 1884914,
       "shares": 8514,
+      "date": "2026-07-31"
+    },
+    {
+      "name": "CONSTANTINE W PAUL",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 221.39 per share.",
+      "value": 135048,
+      "shares": 610,
       "date": "2026-07-31"
     }
   ],

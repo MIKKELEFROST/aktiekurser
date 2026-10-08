@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T21:39:04.779Z",
+  "updated_at": "2026-10-08T21:30:12.031Z",
   "source": "Yahoo Finance",
   "symbol": "WDAY",
   "summary": "Workday, Inc. provides enterprise cloud applications in the United States and internationally. The company offers a suite of financial management applications to maintain accounting information; manage financial processes, such as payables and receivables; identify real-time financial, operational, and management insights; perform financial consolidation; reduce time-to-close; promote internal control and auditability; and achieve consistency across finance operations. It also provides spend management solutions that help organizations to streamline supplier selection and contract management, build and execute sourcing events, such as requests for proposals, and manage indirect spend; expense management solutions to submit and approve expenses; and a suite of human capital management applications that enables HR teams to hire, onboard, pay, develop, reskill, and provide employee experiences. In addition, the company offers planning applications. Further, it provides supply chain and inventory solutions to healthcare organizations; solutions to manage the end-to-end student and faculty lifecycle; Workday Extend for customers and their developers to build custom applications. The company serves the professional and business services, financial services, healthcare, manufacturing, media, education, government, technology, media, retail, and hospitality industries. It sells its solutions through its direct sales organization. The company was formerly known as North Tahoe Power Tools, Inc. and changed its name to Workday, Inc. in July 2005. Workday, Inc. was incorporated in 2005 and is headquartered in Pleasanton, California.",
@@ -19,7 +19,7 @@
     "strong_sell": 2,
     "total": 42
   },
-  "target_mean": 208.25974,
+  "target_mean": 207.99658,
   "target_high": 275,
   "target_low": 92,
   "target_analysts": 38,
@@ -78,6 +78,13 @@
     "y1": 0.19469999
   },
   "ratings": [
+    {
+      "date": "2026-10-08",
+      "firm": "Jefferies",
+      "from": "Hold",
+      "to": "Hold",
+      "action": "main"
+    },
     {
       "date": "2026-10-05",
       "firm": "Needham",
@@ -139,13 +146,6 @@
       "firm": "RBC Capital",
       "from": "Outperform",
       "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-28",
-      "firm": "DA Davidson",
-      "from": "Neutral",
-      "to": "Neutral",
       "action": "main"
     }
   ],
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 39,
-    "sells": 34,
+    "sells": 37,
     "bought": 2911293,
-    "sold": 2722179,
-    "net_pct": 3.7
+    "sold": 2736282,
+    "net_pct": 3.4
   },
   "extras": {
     "beta": 1.074,
-    "enterprise_value": 45327548416,
-    "ev_ebitda": 28.58,
-    "ev_revenue": 4.464,
+    "enterprise_value": 44775661568,
+    "ev_ebitda": 28.232,
+    "ev_revenue": 4.409,
     "float_shares": 194315890,
     "short_shares": 14145081,
     "short_pct_float": 8.31,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 1384,
+  "inst_count": 1383,
   "eps_history": [
     {
       "quarter": "2025-10-31",
@@ -272,6 +272,33 @@
     }
   ],
   "insiders": [
+    {
+      "name": "ROWE ZANE C",
+      "role": "Chief Financial Officer",
+      "kind": "sell",
+      "text": "Sale at price 184.99 - 189.25 per share.",
+      "value": 1123385,
+      "shares": 6000,
+      "date": "2026-10-06"
+    },
+    {
+      "name": "KAZMAIER GERRIT S",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 184.85 - 189.49 per share.",
+      "value": 511080,
+      "shares": 2729,
+      "date": "2026-10-06"
+    },
+    {
+      "name": "ENSLIN ROBERT",
+      "role": "President",
+      "kind": "sell",
+      "text": "Sale at price 185.58 - 188.81 per share.",
+      "value": 1004921,
+      "shares": 5374,
+      "date": "2026-10-05"
+    },
     {
       "name": "DUFFIELD DAVID A.",
       "role": "Beneficial Owner of more than 10% of a Class of Security",
@@ -334,33 +361,6 @@
       "value": 18318305,
       "shares": 94089,
       "date": "2026-09-18"
-    },
-    {
-      "name": "DUFFIELD DAVID A.",
-      "role": "Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 94089,
-      "date": "2026-09-18"
-    },
-    {
-      "name": "DUFFIELD DAVID A.",
-      "role": "Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "sell",
-      "text": "Sale at price 190.71 - 194.39 per share.",
-      "value": 18563623,
-      "shares": 96545,
-      "date": "2026-09-15"
-    },
-    {
-      "name": "DUFFIELD DAVID A.",
-      "role": "Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 96545,
-      "date": "2026-09-15"
     }
   ],
   "dividends": [],

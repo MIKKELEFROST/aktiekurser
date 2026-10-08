@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T21:39:04.983Z",
+  "updated_at": "2026-10-08T21:30:11.874Z",
   "source": "Yahoo Finance",
   "symbol": "TWST",
   "summary": "Twist Bioscience Corporation manufactures and sells synthetic DNA-based products. It offers synthetic genes and gene fragments used in product development for therapeutics, diagnostics, chemicals/materials, food/agriculture, data storage, and various applications within academic research by biotech, pharma, industrial chemical, and agricultural companies, as well as academic labs; Oligo pools used in targeted NGS, CRISPR gene editing, mutagenesis experiments, DNA origami, DNA computing, data storage in DNA, and other applications; and immunoglobulin G proteins for customers focused on the pursuit of drug discovery and development. It provides NGS tools comprising library preparation kits, human exome kits, and fixed and custom panels, as well as alliance panels used within diagnostic tests for various indications, population genetics research and biomarker discovery, translational research, microbiology, and applied markets research; and methylation detection kits for cancer, and rare and inherited disease study, as well as fast hybridization and full RNA sequencing workflow solution. In addition, it offers synthetic SARS-CoV-2 RNA reference sequences as positive controls to develop both NGS and reverse transcription-polymerase chain reaction assays; synthetic monkeypox controls; and various respiratory viral controls, including for influenzas, respiratory syncytial virus, rhinoviruses, SARS, MERS, and coronaviruses. Further, it offers SARS-CoV-2 Research Panels, such as the Twist Respiratory Virus Panel and the Pan-Viral Research Panel, for the detection of disease in a research setting; precision DNA libraries for antibody engineering, affinity maturation, and humanization; and antibody optimization solution to enable simultaneous optimization of multiple characteristics of a given antibody. The company has a strategic collaboration with bitBiome Inc and Lilly TuneLab. The company was incorporated in 2013 and is headquartered in South San Francisco, California.",
@@ -14,15 +14,15 @@
   "analysts": {
     "strong_buy": 2,
     "buy": 7,
-    "hold": 3,
+    "hold": 2,
     "sell": 1,
     "strong_sell": 0,
-    "total": 13
+    "total": 12
   },
-  "target_mean": 133.75,
+  "target_mean": 146.81818,
   "target_high": 215,
-  "target_low": 36,
-  "target_analysts": 12,
+  "target_low": 45,
+  "target_analysts": 11,
   "statements": [
     {
       "year": "2022",
@@ -75,9 +75,16 @@
     "q0": 0.67260003,
     "q1": 0.72400004,
     "y0": 0.5463,
-    "y1": 0.2394
+    "y1": 0.5832
   },
   "ratings": [
+    {
+      "date": "2026-10-08",
+      "firm": "Jefferies",
+      "from": null,
+      "to": "Hold",
+      "action": "init"
+    },
     {
       "date": "2026-10-07",
       "firm": "Barclays",
@@ -139,13 +146,6 @@
       "firm": "Baird",
       "from": "Outperform",
       "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-14",
-      "firm": "Canaccord Genuity",
-      "from": "Buy",
-      "to": "Buy",
       "action": "main"
     }
   ],
@@ -224,17 +224,17 @@
   "insider_net": {
     "period": "6m",
     "buys": 11,
-    "sells": 71,
+    "sells": 72,
     "bought": 497827,
-    "sold": 1019659,
-    "net_pct": -52.3
+    "sold": 1024207,
+    "net_pct": -47.9
   },
   "extras": {
     "beta": 2.192,
-    "enterprise_value": 10412009472,
-    "ev_ebitda": -90.318,
-    "ev_revenue": 24.113,
-    "float_shares": 61969358,
+    "enterprise_value": 9702161408,
+    "ev_ebitda": -84.16,
+    "ev_revenue": 22.469,
+    "float_shares": 61865263,
     "short_shares": 12505220,
     "short_pct_float": 23.79,
     "short_ratio": 7.74,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": null,
-  "inst_count": 464,
+  "inst_count": 463,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -273,12 +273,39 @@
   ],
   "insiders": [
     {
+      "name": "LEPROUST EMILY M",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 200.44 - 207.46 per share.",
+      "value": 919374,
+      "shares": 4548,
+      "date": "2026-10-05"
+    },
+    {
       "name": "FINN PATRICK JOHN",
       "role": "President",
       "kind": "sell",
       "text": "Sale at price 188.88 per share.",
       "value": 4856963,
       "shares": 25714,
+      "date": "2026-10-02"
+    },
+    {
+      "name": "LEPROUST EMILY M",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 188.88 - 200.00 per share.",
+      "value": 8769799,
+      "shares": 46391,
+      "date": "2026-10-02"
+    },
+    {
+      "name": "CHO DENNIS",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 188.88 per share.",
+      "value": 1797042,
+      "shares": 9514,
       "date": "2026-10-02"
     },
     {
@@ -312,33 +339,6 @@
       "name": "LEPROUST EMILY M",
       "role": "Chief Executive Officer",
       "kind": "sell",
-      "text": "Sale at price 188.88 - 200.00 per share.",
-      "value": 8769799,
-      "shares": 46391,
-      "date": "2026-10-02"
-    },
-    {
-      "name": "CHO DENNIS",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 188.88 per share.",
-      "value": 1797042,
-      "shares": 9514,
-      "date": "2026-10-02"
-    },
-    {
-      "name": "GREEN PAULA",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 165.49 per share.",
-      "value": 48654,
-      "shares": 294,
-      "date": "2026-09-21"
-    },
-    {
-      "name": "LEPROUST EMILY M",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
       "text": "Sale at price 165.49 per share.",
       "value": 279183,
       "shares": 1687,
@@ -354,13 +354,13 @@
       "date": "2026-09-21"
     },
     {
-      "name": "LEPROUST EMILY M",
-      "role": "Chief Executive Officer",
+      "name": "GREEN PAULA",
+      "role": "Officer",
       "kind": "sell",
-      "text": "Sale at price 151.46 - 163.39 per share.",
-      "value": 56330724,
-      "shares": 356546,
-      "date": "2026-09-17"
+      "text": "Sale at price 165.49 per share.",
+      "value": 48654,
+      "shares": 294,
+      "date": "2026-09-21"
     }
   ],
   "dividends": [],

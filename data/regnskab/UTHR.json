@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T21:39:04.721Z",
+  "updated_at": "2026-10-08T21:30:11.927Z",
   "source": "Yahoo Finance",
   "symbol": "UTHR",
   "summary": "United Therapeutics Corporation engages in the development and commercialization of products to address the unmet medical needs of patients with chronic and life-threatening diseases in the United States and internationally. It offers Tyvaso DPI, an inhaled dry powder via pre-filled and single-use cartridges; Nebulized Tyvaso, an inhaled solution via ultrasonic nebulizer; Remodulin (treprostinil) injection to treat patients with pulmonary arterial hypertension to diminish symptoms associated with exercise; Orenitram, a tablet dosage form of treprostinil, to delay disease progression and improve exercise capacity in PAH patients; and Adcirca, an oral PDE-5 inhibitor to enhance the exercise ability in PAH patients. It also markets and sells Unituxin (dinutuximab) injection, a monoclonal antibody for high-risk neuroblastoma; and Remunity Pump, which contains a pump and separate controller for Remodulin. In addition, it is involved in developing RemunityPRO Pump and Ralinepag for the treatment of PAH;and Nebulized Tyvaso, for the treatment of idiopathic pulmonary fibrosis, as well as xenografts, which are development-stage organ products. Further, it provides preclinical products, including EVLP/CLES, for lung transplant; UKidney, UHeart, UThymoKidney, a development-stage gene-edited porcine kidneys and hearts for xenotransplantation; ULobe, for allogeneic regenerative medicine; ULung, for autologous regenerative medicine; IVIVA Kidney, for autologous regenerative medicine; miroliver, for allogeneic regenerative medicine; and mirokidney, for allogeneic regenerative medicine. It has licensing and collaboration agreements with DEKA Research & Development Corp. to develop a semi-disposable system for the subcutaneous delivery of treprostinil; MannKind Corporation to develop and license treprostinil inhalation powder and the Dreamboat device; and Arena Pharmaceuticals, Inc. to develop Ralinepag. The company was founded in 1996 and is headquartered in Silver Spring, Maryland.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-28",
   "earnings_estimated": true,
   "earnings_call": "2026-08-05",
-  "eps_estimate": 6.80167,
+  "eps_estimate": 6.80154,
   "analysts": {
     "strong_buy": 3,
     "buy": 8,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 15
   },
-  "target_mean": 646,
+  "target_mean": 649.6429,
   "target_high": 728,
   "target_low": 321,
   "target_analysts": 14,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": -0.05,
+    "q0": -0.050100002,
     "q1": -0.055,
     "y0": -0.0135,
     "y1": 0.1378
   },
   "ratings": [
+    {
+      "date": "2026-10-08",
+      "firm": "RBC Capital",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
     {
       "date": "2026-10-07",
       "firm": "Morgan Stanley",
@@ -140,13 +147,6 @@
       "from": "Equal-Weight",
       "to": "Overweight",
       "action": "up"
-    },
-    {
-      "date": "2026-04-10",
-      "firm": "Morgan Stanley",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
-      "action": "main"
     }
   ],
   "holders": [
@@ -223,18 +223,18 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 163,
-    "sells": 158,
-    "bought": 1471029,
-    "sold": 1454846,
+    "buys": 164,
+    "sells": 159,
+    "bought": 1480529,
+    "sold": 1464346,
     "net_pct": 1.9
   },
   "extras": {
     "beta": 0.49,
-    "enterprise_value": 20568156160,
-    "ev_ebitda": 13.747,
-    "ev_revenue": 6.52,
-    "float_shares": 39212815,
+    "enterprise_value": 20713127936,
+    "ev_ebitda": 13.844,
+    "ev_revenue": 6.566,
+    "float_shares": 39203808,
     "short_shares": 2800470,
     "short_pct_float": 7.62,
     "short_ratio": 4.89,
@@ -275,11 +275,38 @@
     {
       "name": "ROTHBLATT MARTINE A",
       "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 542.06 - 574.22 per share.",
-      "value": 5219015,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 117.76 per share.",
+      "value": 1118720,
       "shares": 9500,
-      "date": "2026-10-02"
+      "date": "2026-10-06"
+    },
+    {
+      "name": "ROTHBLATT MARTINE A",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 527.90 - 545.50 per share.",
+      "value": 5117412,
+      "shares": 9500,
+      "date": "2026-10-06"
+    },
+    {
+      "name": "ROTHBLATT MARTINE A",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 117.76 per share.",
+      "value": 1118720,
+      "shares": 9500,
+      "date": "2026-10-05"
+    },
+    {
+      "name": "ROTHBLATT MARTINE A",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 536.26 - 546.63 per share.",
+      "value": 5145537,
+      "shares": 9500,
+      "date": "2026-10-05"
     },
     {
       "name": "ROTHBLATT MARTINE A",
@@ -291,13 +318,13 @@
       "date": "2026-10-02"
     },
     {
-      "name": "MAHON PAUL A",
-      "role": "General Counsel",
+      "name": "ROTHBLATT MARTINE A",
+      "role": "Chief Executive Officer",
       "kind": "sell",
-      "text": "Sale at price 558.30 - 573.15 per share.",
-      "value": 4689051,
-      "shares": 8300,
-      "date": "2026-10-01"
+      "text": "Sale at price 542.06 - 574.22 per share.",
+      "value": 5219015,
+      "shares": 9500,
+      "date": "2026-10-02"
     },
     {
       "name": "MAHON PAUL A",
@@ -309,13 +336,13 @@
       "date": "2026-10-01"
     },
     {
-      "name": "ROTHBLATT MARTINE A",
-      "role": "Chief Executive Officer",
+      "name": "MAHON PAUL A",
+      "role": "General Counsel",
       "kind": "sell",
-      "text": "Sale at price 476.14 - 546.23 per share.",
-      "value": 3926177,
-      "shares": 7580,
-      "date": "2026-09-30"
+      "text": "Sale at price 558.30 - 573.15 per share.",
+      "value": 4689051,
+      "shares": 8300,
+      "date": "2026-10-01"
     },
     {
       "name": "ROTHBLATT MARTINE A",
@@ -334,33 +361,6 @@
       "value": 1056425,
       "shares": 1920,
       "date": "2026-09-30"
-    },
-    {
-      "name": "ROTHBLATT MARTINE A",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 472.05 - 486.77 per share.",
-      "value": 4535480,
-      "shares": 9500,
-      "date": "2026-09-29"
-    },
-    {
-      "name": "ROTHBLATT MARTINE A",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 117.76 per share.",
-      "value": 1118720,
-      "shares": 9500,
-      "date": "2026-09-29"
-    },
-    {
-      "name": "ROTHBLATT MARTINE A",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 472.43 - 486.00 per share.",
-      "value": 4568106,
-      "shares": 9500,
-      "date": "2026-09-28"
     }
   ],
   "dividends": [],

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T21:39:03.224Z",
+  "updated_at": "2026-10-08T21:30:09.383Z",
   "source": "Yahoo Finance",
   "symbol": "BNTX",
   "summary": "BioNTech SE, together with its subsidiaries, engages in the development and commercialization of immunotherapies in Germany. The company offers BNT162, an mRNA vaccine for the treatment of SARS-CoV-2 virus. It also develops oncology drugs under Phase III clinical trial, including Gotistobart for metastatic non-small cell lung cancer, Pumitamig for small cell lung cancer and advanced/metastatic triple-negative breast cancer, and Trastuzumab pamirtecan for metastatic breast cancer and epirubicin and cyclophosphamide; and drugs under Phase 2/3 clinical trial, such as BNT113 for human papillomavirus and head and neck squamous cell carcinoma, as well as Pumitamig for metastatic colorectal and non-small cell lung cancer. In addition, the company engages in the development of oncology drugs under Phase II clinical trial comprising BNT116 for advance non-small cell lung cancer, BNT326/YL202 for multiple solid tumors and advanced/metastatic breast cancer, Autogene cevumeran for advance colorectal cancer, and Gotistobart for platinum-resistant ovarian cancer, as well as Pumitamig for glioblastoma, hepatocellular carcinoma, malignant pleural mesothelioma, neuroendocrine neoplasms, and metastatic pancreatic ductal adenocarcinoma. Further, it develops BNT166 which is Phase II clinical trial for mpox virus; and infectious diseases drugs under Phase 1/2 clinical trial, which include BNT162 + BNT161 for SARS-CoV-2 and influenza, BNT164 for tuberculosis, BNT165 for malaria, and BNT166 for mpox. The company was incorporated in 2008 and is headquartered in Mainz, Germany.",
@@ -19,9 +19,9 @@
     "strong_sell": 1,
     "total": 20
   },
-  "target_mean": 115.65799,
-  "target_high": 139.25989,
-  "target_low": 72.99631,
+  "target_mean": 115.91488,
+  "target_high": 139.47853,
+  "target_low": 73.110916,
   "target_analysts": 20,
   "statements": [
     {
@@ -51,6 +51,11 @@
   ],
   "quarterly": [
     {
+      "q": "2Q2025",
+      "revenue": 260800000,
+      "earnings": -386600000
+    },
+    {
       "q": "3Q2025",
       "revenue": 1518900000,
       "earnings": -28700000
@@ -64,11 +69,6 @@
       "q": "1Q2026",
       "revenue": 118100000,
       "earnings": -531900000
-    },
-    {
-      "q": "2Q2026",
-      "revenue": 105600000,
-      "earnings": -820800000
     }
   ],
   "growth": {
@@ -158,6 +158,13 @@
       "date": "2026-06-30"
     },
     {
+      "name": "Fidelity Contrafund",
+      "kind": "fond",
+      "pct": 1.52,
+      "shares": 3847315,
+      "date": "2026-08-31"
+    },
+    {
       "name": "Primecap Management Company",
       "kind": "institution",
       "pct": 1.49,
@@ -170,13 +177,6 @@
       "pct": 1.45,
       "shares": 3677591,
       "date": "2026-06-30"
-    },
-    {
-      "name": "Fidelity Contrafund",
-      "kind": "fond",
-      "pct": 1.26,
-      "shares": 3181079,
-      "date": "2026-07-31"
     },
     {
       "name": "Dodge & Cox Funds-Dodge & Cox International Stock Fund",
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.252,
-    "enterprise_value": 10899993600,
-    "ev_ebitda": -7.894,
-    "ev_revenue": 4.113,
+    "enterprise_value": 10779415552,
+    "ev_ebitda": -7.807,
+    "ev_revenue": 4.068,
     "float_shares": 109095544,
     "short_shares": 2322764,
     "short_pct_float": 3.48,
@@ -272,6 +272,24 @@
     }
   ],
   "insiders": [
+    {
+      "name": "SAHIN UGUR MD",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 95.86 per share.",
+      "value": 2300633,
+      "shares": 24000,
+      "date": "2026-10-07"
+    },
+    {
+      "name": "SAHIN UGUR MD",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 96.81 - 97.23 per share.",
+      "value": 9033642,
+      "shares": 93000,
+      "date": "2026-10-06"
+    },
     {
       "name": "SAHIN UGUR MD",
       "role": "Chief Executive Officer",
@@ -343,24 +361,6 @@
       "value": 7190663,
       "shares": 73000,
       "date": "2026-09-09"
-    },
-    {
-      "name": "SAHIN UGUR MD",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 102.85 - 103.52 per share.",
-      "value": 7889055,
-      "shares": 76500,
-      "date": "2026-09-04"
-    },
-    {
-      "name": "POETTING SIERK",
-      "role": "Chief Operating Officer",
-      "kind": "sell",
-      "text": "Sale at price 110.56 per share.",
-      "value": 5527960,
-      "shares": 50000,
-      "date": "2026-04-22"
     }
   ],
   "dividends": [

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T21:39:04.823Z",
+  "updated_at": "2026-10-08T21:30:12.120Z",
   "source": "Yahoo Finance",
   "symbol": "XPO",
   "summary": "XPO, Inc., together with its subsidiaries, provides freight transportation services in the United States, North America, France, the United Kingdom, and rest of Europe. The company operates in two segments, North American Less-Than-Truckload (LTL) and European Transportation. The North American LTL segment provides shippers with geographic density and day-definite domestic and cross-border services to the U.S., Mexico, Canada, and the Caribbean. The European Transportation segment offers dedicated truckload, LTL, truck brokerage, managed transportation, last mile, freight forwarding, and warehousing and multimodal solutions to an extensive base of customers within the consumer, trade, and industrial markets. The company was formerly known as XPO Logistics, Inc. and changed its name to XPO, Inc. in December 2022. The company was founded in 1989 and is based in Greenwich, Connecticut.",
@@ -10,16 +10,16 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 1.56463,
+  "eps_estimate": 1.56514,
   "analysts": {
     "strong_buy": 3,
-    "buy": 16,
-    "hold": 4,
+    "buy": 17,
+    "hold": 3,
     "sell": 1,
     "strong_sell": 1,
     "total": 25
   },
-  "target_mean": 228.86957,
+  "target_mean": 227.95651,
   "target_high": 275,
   "target_low": 115,
   "target_analysts": 23,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.4623,
-    "q1": 0.38849998,
-    "y0": 0.4682,
-    "y1": 0.187
+    "q0": 0.4627,
+    "q1": 0.4026,
+    "y0": 0.4662,
+    "y1": 0.19319999
   },
   "ratings": [
+    {
+      "date": "2026-10-08",
+      "firm": "Stifel",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-07",
       "firm": "Truist Securities",
@@ -139,13 +146,6 @@
       "firm": "Citigroup",
       "from": "Neutral",
       "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-31",
-      "firm": "TD Cowen",
-      "from": "Buy",
-      "to": "Buy",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.71,
-    "enterprise_value": 25231196160,
-    "ev_ebitda": 18.27,
-    "ev_revenue": 2.943,
+    "enterprise_value": 24864714752,
+    "ev_ebitda": 18.005,
+    "ev_revenue": 2.9,
     "float_shares": 104568751,
     "short_shares": 6358139,
     "short_pct_float": 5.48,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 987,
+  "inst_count": 988,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -273,21 +273,21 @@
   ],
   "insiders": [
     {
-      "name": "BATES DAVID J",
-      "role": "Chief Operating Officer",
-      "kind": "sell",
-      "text": "Sale at price 177.26 - 180.58 per share.",
-      "value": 469160,
-      "shares": 2615,
-      "date": "2026-09-14"
-    },
-    {
       "name": "WISMANS KYLE",
       "role": "Chief Financial Officer",
       "kind": "sell",
       "text": "Sale at price 178.52 per share.",
       "value": 133890,
       "shares": 750,
+      "date": "2026-09-14"
+    },
+    {
+      "name": "BATES DAVID J",
+      "role": "Chief Operating Officer",
+      "kind": "sell",
+      "text": "Sale at price 177.26 - 180.58 per share.",
+      "value": 469160,
+      "shares": 2615,
       "date": "2026-09-14"
     },
     {
@@ -318,6 +318,24 @@
       "date": "2026-05-28"
     },
     {
+      "name": "BROWN CHRISTOPHER MICHAEL",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 2571,
+      "date": "2026-03-13"
+    },
+    {
+      "name": "WISMANS KYLE",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 9783,
+      "date": "2026-03-13"
+    },
+    {
       "name": "BATES DAVID J",
       "role": "Chief Operating Officer",
       "kind": "other",
@@ -342,24 +360,6 @@
       "text": null,
       "value": null,
       "shares": 24781,
-      "date": "2026-03-13"
-    },
-    {
-      "name": "BROWN CHRISTOPHER MICHAEL",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 2571,
-      "date": "2026-03-13"
-    },
-    {
-      "name": "WISMANS KYLE",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 9783,
       "date": "2026-03-13"
     }
   ],
