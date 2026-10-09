@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-08T21:30:09.101Z",
+  "updated_at": "2026-10-09T21:10:29.538Z",
   "source": "Yahoo Finance",
   "symbol": "ANET",
   "summary": "Arista Networks, Inc. engages in the development, marketing, and sale of data-driven, client to cloud networking solutions for AI, data center, campus, and routing environments in the Americas, Europe, the Middle East, Africa, and the Asia-Pacific. Its cloud networking solutions consist of Extensible Operating System (EOS), a publish-subscribe state-sharing networking operating system offered in combination with a set of network applications. The company offers data center, cloud and AI networking, cognitive adjacencies, and cognitive network software and services. It also provides post contract customer support services, such as technical support, hardware repair and replacement parts beyond standard warranty, bug fixes, patches, and upgrade services. The company serves a range of industries comprising internet companies, cloud service providers, financial services organizations, government agencies, media and entertainment, healthcare, oil and gas, education, manufacturing, industrial, and others. It markets and sells its products through distributors, system integrators, value-added resellers, and original equipment manufacturer partners, as well as through its direct sales force. Arista Networks, Inc. was formerly known as Arastra, Inc. and changed its name to Arista Networks, Inc. in October 2008. The company was incorporated in 2004 and is headquartered in Santa Clara, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": 1.07669,
+  "eps_estimate": 1.07842,
   "analysts": {
     "strong_buy": 7,
     "buy": 24,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 32
   },
-  "target_mean": 242.55206,
+  "target_mean": 243.69,
   "target_high": 289,
   "target_low": 190,
   "target_analysts": 29,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.4356,
-    "q1": 0.3996,
-    "y0": 0.3799,
-    "y1": 0.265
+    "q0": 0.4379,
+    "q1": 0.403,
+    "y0": 0.3812,
+    "y1": 0.2674
   },
   "ratings": [
+    {
+      "date": "2026-10-08",
+      "firm": "Citigroup",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-09-30",
       "firm": "Bernstein",
@@ -137,13 +144,6 @@
     {
       "date": "2026-08-05",
       "firm": "Wells Fargo",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-05",
-      "firm": "Keybanc",
       "from": "Overweight",
       "to": "Overweight",
       "action": "main"
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 25,
-    "sells": 41,
+    "sells": 43,
     "bought": 537559,
-    "sold": 6805063,
-    "net_pct": -2.8
+    "sold": 7266661,
+    "net_pct": -3
   },
   "extras": {
     "beta": 1.605,
-    "enterprise_value": 258866823168,
-    "ev_ebitda": 55.795,
-    "ev_revenue": 24.559,
+    "enterprise_value": 252737257472,
+    "ev_ebitda": 54.474,
+    "ev_revenue": 23.977,
     "float_shares": 1049767724,
     "short_shares": 13245323,
     "short_pct_float": 1.27,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 3117,
+  "inst_count": 3124,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -272,6 +272,24 @@
     }
   ],
   "insiders": [
+    {
+      "name": "ULLAL JAYSHREE",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 211.36 - 213.06 per share.",
+      "value": 97642614,
+      "shares": 460374,
+      "date": "2026-10-06"
+    },
+    {
+      "name": "BREITHAUPT CHANTELLE YVETTE",
+      "role": "Chief Financial Officer",
+      "kind": "sell",
+      "text": "Sale at price 215.00 per share.",
+      "value": 263160,
+      "shares": 1224,
+      "date": "2026-10-06"
+    },
     {
       "name": "TEMPLETON MARK B",
       "role": "Director",
@@ -343,24 +361,6 @@
       "value": 60780047,
       "shares": 300000,
       "date": "2026-08-27"
-    },
-    {
-      "name": "ULLAL JAYSHREE",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 191.10 - 192.64 per share.",
-      "value": 2648491,
-      "shares": 13809,
-      "date": "2026-08-25"
-    },
-    {
-      "name": "BATTLES KELLY BODNAR",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 184.77 - 188.69 per share.",
-      "value": 79057,
-      "shares": 422,
-      "date": "2026-08-21"
     }
   ],
   "dividends": [],

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-08T21:30:10.336Z",
+  "updated_at": "2026-10-09T21:10:30.294Z",
   "source": "Yahoo Finance",
   "symbol": "HOOD",
   "summary": "Robinhood Markets, Inc. operates financial services platform in the United States. The company's platform allows users to invest in stocks, exchange-traded funds (ETFs), and American depository receipts. It offers fractional trading, recurring investments, access to investing on margin, fully-paid securities lending, cash sweep, instant withdrawals, retirement program, around-the-clock trading, joint investing accounts, event contracts, future contract services, and short selling. The company also provides various learning and education solutions comprise Snacks, an accessible digest of business news stories for a new generation of investors; Learn, which is an online collection of guides, feature tutorials, and financial dictionary; Newsfeeds that offer access to free, premium news from sites from various sites, such as Barron's, Reuters, and Dow Jones. In addition, the company offers In-App Education, a resource that covers investing fundamentals, including why people invest, a stock market overview, and tips on how to define investing goals, as well as allows customers to understand the basics of investing before their first trade; and Crypto Learn and Earn, an educational module available to various crypto customers through Robinhood Learn to teach customers the basics related to cryptocurrency. Further, it provides Robinhood credit cards, cash card and spending accounts, and wallets. Robinhood Markets, Inc. was incorporated in 2013 and is headquartered in Menlo Park, California.",
@@ -19,7 +19,7 @@
     "strong_sell": 1,
     "total": 30
   },
-  "target_mean": 134.32643,
+  "target_mean": 134.68356,
   "target_high": 170,
   "target_low": 57,
   "target_analysts": 28,
@@ -78,6 +78,13 @@
     "y1": 0.3488
   },
   "ratings": [
+    {
+      "date": "2026-10-09",
+      "firm": "Morgan Stanley",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-10-07",
       "firm": "Barclays",
@@ -139,13 +146,6 @@
       "firm": "Deutsche Bank",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-09-11",
-      "firm": "Citizens",
-      "from": "Market Outperform",
-      "to": "Market Outperform",
       "action": "main"
     }
   ],
@@ -224,17 +224,17 @@
   "insider_net": {
     "period": "6m",
     "buys": 34,
-    "sells": 33,
+    "sells": 32,
     "bought": 2703713,
-    "sold": 3061560,
-    "net_pct": -4
+    "sold": 3051560,
+    "net_pct": -3.9
   },
   "extras": {
     "beta": 2.354,
-    "enterprise_value": 97539497984,
+    "enterprise_value": 95291793408,
     "ev_ebitda": null,
-    "ev_revenue": 19.777,
-    "float_shares": 784260476,
+    "ev_revenue": 19.321,
+    "float_shares": 784359375,
     "short_shares": 36165147,
     "short_pct_float": 4.62,
     "short_ratio": 1.6,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 1860,
+  "inst_count": 1859,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -273,15 +273,6 @@
   ],
   "insiders": [
     {
-      "name": "TENEV VLADIMIR",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 375000,
-      "date": "2026-10-05"
-    },
-    {
       "name": "GALLAGHER DANIEL MARTIN JR",
       "role": "Officer",
       "kind": "sell",
@@ -300,13 +291,13 @@
       "date": "2026-10-05"
     },
     {
-      "name": "PAYNE CHRISTOPHER D",
-      "role": "Director",
+      "name": "TENEV VLADIMIR",
+      "role": "Chief Executive Officer",
       "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 211,
-      "date": "2026-09-30"
+      "text": null,
+      "value": null,
+      "shares": 375000,
+      "date": "2026-10-05"
     },
     {
       "name": "SEGAL SUSAN L",
@@ -318,13 +309,13 @@
       "date": "2026-09-30"
     },
     {
-      "name": "TENEV VLADIMIR",
-      "role": "Chief Executive Officer",
+      "name": "PAYNE CHRISTOPHER D",
+      "role": "Director",
       "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 240834,
-      "date": "2026-09-22"
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 211,
+      "date": "2026-09-30"
     },
     {
       "name": "TENEV VLADIMIR",
@@ -341,8 +332,8 @@
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 259166,
-      "date": "2026-09-21"
+      "shares": 240834,
+      "date": "2026-09-22"
     },
     {
       "name": "TENEV VLADIMIR",
@@ -350,6 +341,15 @@
       "kind": "sell",
       "text": "Sale at price 125.55 - 126.15 per share.",
       "value": 32545592,
+      "shares": 259166,
+      "date": "2026-09-21"
+    },
+    {
+      "name": "TENEV VLADIMIR",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
       "shares": 259166,
       "date": "2026-09-21"
     },

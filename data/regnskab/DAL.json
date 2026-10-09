@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-08T21:30:09.755Z",
+  "updated_at": "2026-10-09T21:10:29.944Z",
   "source": "Yahoo Finance",
   "symbol": "DAL",
   "summary": "Delta Air Lines, Inc. provides scheduled air transportation for passengers and cargo in the United States and internationally. The company operates through two segments, Airline and Refinery. Its domestic network centered on core hubs in Atlanta, Detroit, Minneapolis-St. Paul, and Salt Lake City, as well as coastal hub positions in Boston, Los Angeles, New York-LaGuardia, New York-JFK, and Seattle; and international network centered on hubs and market presence in Amsterdam, Bogota, Lima, Mexico City, London-Heathrow, Paris-Charles de Gaulle, Santiago (Chile), Sao Paulo, Seoul-Incheon, and Tokyo. It also provides aircraft maintenance and engineering support, repair, and overhaul services; and vacation packages. The company operates through a fleet of approximately 1,314 aircraft. Delta Air Lines, Inc. was founded in 1924 and is headquartered in Atlanta, Georgia.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-09",
   "earnings_estimated": false,
   "earnings_call": "2026-10-09",
-  "eps_estimate": 1.76486,
+  "eps_estimate": 1.41368,
   "analysts": {
     "strong_buy": 5,
     "buy": 19,
@@ -19,17 +19,63 @@
     "strong_sell": 1,
     "total": 25
   },
-  "target_mean": 101.27083,
+  "target_mean": 101.47917,
   "target_high": 125,
   "target_low": 50,
   "target_analysts": 24,
-  "statements": null,
-  "quarterly": [],
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 50582000000,
+      "net": 1318000000,
+      "margin": 2.6
+    },
+    {
+      "year": "2023",
+      "revenue": 58048000000,
+      "net": 4609000000,
+      "margin": 7.9
+    },
+    {
+      "year": "2024",
+      "revenue": 61643000000,
+      "net": 3457000000,
+      "margin": 5.6
+    },
+    {
+      "year": "2025",
+      "revenue": 63364000000,
+      "net": 5005000000,
+      "margin": 7.9
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "4Q2025",
+      "revenue": 16003000000,
+      "earnings": 1219000000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 15854000000,
+      "earnings": -289000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 19757000000,
+      "earnings": 1604000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 20186000000,
+      "earnings": 756000000
+    }
+  ],
   "growth": {
-    "q0": 0.0321,
-    "q1": -0.10609999,
-    "y0": -0.066300005,
-    "y1": 0.405
+    "q0": -0.0879,
+    "q1": -0.1031,
+    "y0": -0.0636,
+    "y1": 0.3962
   },
   "ratings": [
     {
@@ -185,9 +231,9 @@
   },
   "extras": {
     "beta": 1.336,
-    "enterprise_value": 70687170560,
-    "ev_ebitda": 9.416,
-    "ev_revenue": 1.035,
+    "enterprise_value": 70144286720,
+    "ev_ebitda": 9.344,
+    "ev_revenue": 1.027,
     "float_shares": 649739825,
     "short_shares": 26222815,
     "short_pct_float": 4.01,
@@ -198,14 +244,8 @@
   "ex_dividend": "2026-10-15",
   "dividend_date": null,
   "payout_ratio": 0.1244,
-  "inst_count": 1925,
+  "inst_count": 1928,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.52854,
-      "actual": 1.71,
-      "surprise_pct": 11.87
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.54588,
@@ -223,6 +263,12 @@
       "estimate": 1.49314,
       "actual": 1.56,
       "surprise_pct": 4.48
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.75302,
+      "actual": 1.72,
+      "surprise_pct": -1.88
     }
   ],
   "insiders": [

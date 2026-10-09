@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-08T21:30:09.082Z",
+  "updated_at": "2026-10-09T21:10:29.525Z",
   "source": "Yahoo Finance",
   "symbol": "AMGN",
   "summary": "Amgen Inc. discovers, develops, manufactures, and delivers human therapeutics worldwide. The company's principal products include Enbrel for the treatment of rheumatoid arthritis, plaque psoriasis, and psoriatic arthritis; Otezla for the treatment of adult patients with plaque psoriasis, psoriatic arthritis, and oral ulcers associated with Behçet's disease; Prolia to treat postmenopausal women with osteoporosis; XGEVA for skeletal-related events prevention; Repatha, which reduces the risks of myocardial infarction, stroke, and coronary revascularization; Nplate for the treatment of patients with immune thrombocytopenia; KYPROLIS to treat patients with relapsed or refractory multiple myeloma; Aranesp to treat a lower-than-normal number of red blood cells and anemia; EVENITY for the treatment of osteoporosis in postmenopausal for women; Vectibix to treat patients with wild-type RAS metastatic colorectal cancer; BLINCYTO for the treatment of patients with acute lymphoblastic leukemia; TEPEZZA to treat thyroid eye disease; and KRYSTEXXA for the treatment of chronic refractory gout. It also markets other products, including PROLIA, REPATHA, OTEZLA, ENBREL, EVENITY, XGEVA, TEPEZZA, BLINCYTO, NPLATE, TEZSPIRE, KYPROLIS, ARANESP, KRYSTEXXA AND VECTIBIX, MVASI, PAVBLU, UPLIZNA, IMDELLTRA/IMDYLLTRA, AMJEVITA/AMGEVITA, TAVNEOS, NEULASTA, LUMAKRAS/LUMYKRAS, RAVICTI, PARSABIV, AIMOVIG, WEZLANA/WEZENLA, AND PROCYSBI. The company serves healthcare providers, including physicians or their clinics, dialysis centers, hospitals, and pharmacies. It distributes its products through pharmaceutical wholesale distributors. The company has collaboration agreements with AstraZeneca plc for the development and commercialization of TEZSPIRE; BEONE MEDICINES LTD. to develop and commercialize Aimovig; UCB for the development and commercialization of EVENITY; Kyowa Kirin Co., Ltd. for rocatinlimab development and commercialization; and BeiGene, Ltd. for oncology products expansion and development. The company was incorporated in 1980 and is headquartered in Thousand Oaks, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": 5.78877,
+  "eps_estimate": 5.76441,
   "analysts": {
     "strong_buy": 4,
     "buy": 8,
@@ -19,7 +19,7 @@
     "strong_sell": 2,
     "total": 34
   },
-  "target_mean": 391.46103,
+  "target_mean": 395.25415,
   "target_high": 500,
   "target_low": 225,
   "target_analysts": 29,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.026400002,
-    "q1": 0.09810001,
-    "y0": 0.0556,
-    "y1": 0.0615
+    "q0": 0.0221,
+    "q1": 0.097399995,
+    "y0": 0.0547,
+    "y1": 0.0629
   },
   "ratings": [
+    {
+      "date": "2026-10-09",
+      "firm": "UBS",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-08",
       "firm": "RBC Capital",
@@ -139,13 +146,6 @@
       "firm": "Wells Fargo",
       "from": "Equal-Weight",
       "to": "Equal-Weight",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-20",
-      "firm": "Piper Sandler",
-      "from": "Overweight",
-      "to": "Overweight",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.407,
-    "enterprise_value": 266639261696,
-    "ev_ebitda": 15.441,
-    "ev_revenue": 6.999,
+    "enterprise_value": 263590100992,
+    "ev_ebitda": 15.265,
+    "ev_revenue": 6.919,
     "float_shares": 539156080,
     "short_shares": 14063517,
     "short_pct_float": 2.6,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-08-21",
   "dividend_date": null,
   "payout_ratio": 0.6087,
-  "inst_count": 3992,
+  "inst_count": 3994,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -345,21 +345,21 @@
       "date": "2026-08-06"
     },
     {
-      "name": "GRYGIEL NANCY A",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 177.31 - 177.46 per share.",
-      "value": 526906,
-      "shares": 2970,
-      "date": "2026-08-06"
-    },
-    {
       "name": "MILLER DEREK",
       "role": "Officer",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 162.60 - 177.46 per share.",
       "value": 659574,
       "shares": 3890,
+      "date": "2026-08-06"
+    },
+    {
+      "name": "GRYGIEL NANCY A",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 177.31 - 177.46 per share.",
+      "value": 526906,
+      "shares": 2970,
       "date": "2026-08-06"
     }
   ],

@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-10-08T21:26:01.072Z",
+  "updated_at": "2026-10-09T21:06:25.939Z",
   "source": "Wikipedia (S&P 500, Nasdaq-100, S&P 400, S&P 600) og Yahoos børsoversigt for de øvrige",
   "counts": {
-    "total": 4500,
+    "total": 4504,
     "markets": {
       "NO": 214,
-      "SE": 436,
-      "US": 3596,
-      "FI": 137,
-      "DK": 93,
+      "SE": 438,
+      "US": 3594,
+      "FI": 140,
+      "DK": 94,
       "IS": 24
     },
     "sp500": 503,
     "ndx": 100,
-    "dk": 93
+    "dk": 94
   },
   "companies": [
     {
@@ -386,6 +386,14 @@
       "sector": null,
       "market": "US",
       "exchange": "NYQ",
+      "indices": []
+    },
+    {
+      "symbol": "ACG1V.HE",
+      "name": "Aspocomp Group Oyj",
+      "sector": null,
+      "market": "FI",
+      "exchange": "HEL",
       "indices": []
     },
     {
@@ -1306,14 +1314,6 @@
     {
       "symbol": "AKAST.OL",
       "name": "Akastor ASA",
-      "sector": null,
-      "market": "NO",
-      "exchange": "OSL",
-      "indices": []
-    },
-    {
-      "symbol": "AKBM.OL",
-      "name": "Aker BioMarine ASA",
       "sector": null,
       "market": "NO",
       "exchange": "OSL",
@@ -2312,6 +2312,14 @@
       "sector": null,
       "market": "US",
       "exchange": "NMS",
+      "indices": []
+    },
+    {
+      "symbol": "ANVS",
+      "name": "Annovis Bio, Inc.",
+      "sector": null,
+      "market": "US",
+      "exchange": "NYQ",
       "indices": []
     },
     {
@@ -3471,14 +3479,6 @@
       "sector": null,
       "market": "US",
       "exchange": "NMS",
-      "indices": []
-    },
-    {
-      "symbol": "AVD",
-      "name": "American Vanguard Corporation",
-      "sector": null,
-      "market": "US",
-      "exchange": "NYQ",
       "indices": []
     },
     {
@@ -5337,14 +5337,6 @@
       "indices": []
     },
     {
-      "symbol": "BOAT.ST",
-      "name": "Nimbus Group AB (Publ)",
-      "sector": null,
-      "market": "SE",
-      "exchange": "STO",
-      "indices": []
-    },
-    {
       "symbol": "BOBS",
       "name": "Bob's Discount Furniture, Inc.",
       "sector": null,
@@ -6865,6 +6857,14 @@
         "SP500"
       ],
       "exchange": "NYQ"
+    },
+    {
+      "symbol": "CCIF",
+      "name": "Carlyle Credit Income Fund",
+      "sector": null,
+      "market": "US",
+      "exchange": "NYQ",
+      "indices": []
     },
     {
       "symbol": "CCJ",
@@ -8639,14 +8639,6 @@
       "exchange": "NYQ"
     },
     {
-      "symbol": "CRBU",
-      "name": "Caribou Biosciences, Inc.",
-      "sector": null,
-      "market": "US",
-      "exchange": "NMS",
-      "indices": []
-    },
-    {
       "symbol": "CRC",
       "name": "California Resources Corporation",
       "sector": "Energy",
@@ -9172,11 +9164,13 @@
     },
     {
       "symbol": "CTVA",
-      "name": "Corteva, Inc.",
-      "sector": null,
+      "name": "Corteva",
+      "sector": "Materials",
       "market": "US",
-      "exchange": "NYQ",
-      "indices": []
+      "indices": [
+        "SP400"
+      ],
+      "exchange": "NYQ"
     },
     {
       "symbol": "CTY1S.HE",
@@ -11176,6 +11170,14 @@
       "indices": []
     },
     {
+      "symbol": "EGNETY.CO",
+      "name": "EgnsINVEST Ejendomme Tyskland A/S",
+      "sector": null,
+      "market": "DK",
+      "exchange": "CPH",
+      "indices": []
+    },
+    {
       "symbol": "EGO",
       "name": "Eldorado Gold Corporation",
       "sector": null,
@@ -11691,6 +11693,14 @@
         "SP600"
       ],
       "exchange": "NYQ"
+    },
+    {
+      "symbol": "ENRO.ST",
+      "name": "Eniro Group AB (publ)",
+      "sector": null,
+      "market": "SE",
+      "exchange": "STO",
+      "indices": []
     },
     {
       "symbol": "ENS",
@@ -12257,7 +12267,7 @@
       "name": "Energy Transfer LP",
       "sector": null,
       "market": "US",
-      "exchange": "NYQ",
+      "exchange": "ASE",
       "indices": []
     },
     {
@@ -13708,6 +13718,7 @@
       "sector": "Information Technology",
       "market": "US",
       "indices": [
+        "SP400",
         "SP600"
       ],
       "exchange": "NMS"
@@ -17979,6 +17990,14 @@
       "indices": []
     },
     {
+      "symbol": "ININ.OL",
+      "name": "Inin Group AS",
+      "sector": null,
+      "market": "NO",
+      "exchange": "OSL",
+      "indices": []
+    },
+    {
       "symbol": "INIO",
       "name": "Innio N.V.",
       "sector": null,
@@ -19782,14 +19801,6 @@
       "sector": null,
       "market": "FI",
       "exchange": "HEL",
-      "indices": []
-    },
-    {
-      "symbol": "KPET",
-      "name": "KPET Ultra Paceline Corporation",
-      "sector": null,
-      "market": "US",
-      "exchange": "NYQ",
       "indices": []
     },
     {
@@ -24437,6 +24448,14 @@
       "indices": []
     },
     {
+      "symbol": "NLG1V.HE",
+      "name": "Nurminen Logistics Oyj",
+      "sector": null,
+      "market": "FI",
+      "exchange": "HEL",
+      "indices": []
+    },
+    {
       "symbol": "NLOP",
       "name": "Net Lease Office Properties",
       "sector": null,
@@ -25990,12 +26009,10 @@
     {
       "symbol": "OLN",
       "name": "Olin Corporation",
-      "sector": "Materials",
+      "sector": null,
       "market": "US",
-      "indices": [
-        "SP400"
-      ],
-      "exchange": "NYQ"
+      "exchange": "NYQ",
+      "indices": []
     },
     {
       "symbol": "OLP",
@@ -26112,6 +26129,14 @@
     {
       "symbol": "ONCO.ST",
       "name": "Oncopeptides AB (publ)",
+      "sector": null,
+      "market": "SE",
+      "exchange": "STO",
+      "indices": []
+    },
+    {
+      "symbol": "ONEF.ST",
+      "name": "Oneflow AB (publ)",
       "sector": null,
       "market": "SE",
       "exchange": "STO",
@@ -32733,6 +32758,14 @@
       "indices": []
     },
     {
+      "symbol": "SPRING.HE",
+      "name": "Springvest Oyj",
+      "sector": null,
+      "market": "FI",
+      "exchange": "HEL",
+      "indices": []
+    },
+    {
       "symbol": "SPRO",
       "name": "Spero Therapeutics, Inc.",
       "sector": null,
@@ -33421,7 +33454,7 @@
       "name": "Sunoco LP",
       "sector": null,
       "market": "US",
-      "exchange": "ASE",
+      "exchange": "NYQ",
       "indices": []
     },
     {
@@ -33915,7 +33948,7 @@
       "indices": [
         "SP400"
       ],
-      "exchange": "ASE"
+      "exchange": "NMS"
     },
     {
       "symbol": "TCBK",
@@ -34042,8 +34075,7 @@
       "market": "US",
       "indices": [
         "SP600"
-      ],
-      "exchange": "NYQ"
+      ]
     },
     {
       "symbol": "TDY",
@@ -35563,8 +35595,7 @@
       "sector": "Information Technology",
       "market": "US",
       "indices": [
-        "SP500",
-        "SP400"
+        "SP500"
       ],
       "exchange": "NYQ"
     },
@@ -35718,14 +35749,6 @@
         "SP600"
       ],
       "exchange": "NYQ"
-    },
-    {
-      "symbol": "UAC",
-      "name": "United Acquisition Corp. I",
-      "sector": null,
-      "market": "US",
-      "exchange": "ASE",
-      "indices": []
     },
     {
       "symbol": "UAL",
@@ -36391,14 +36414,6 @@
       "exchange": "NYQ"
     },
     {
-      "symbol": "VACI",
-      "name": "Viking Acquisition Corp I",
-      "sector": null,
-      "market": "US",
-      "exchange": "NYQ",
-      "indices": []
-    },
-    {
       "symbol": "VAIAS.HE",
       "name": "Vaisala Oyj",
       "sector": null,
@@ -36783,6 +36798,14 @@
     {
       "symbol": "VIOT",
       "name": "Viomi Technology Co., Ltd",
+      "sector": null,
+      "market": "US",
+      "exchange": "NMS",
+      "indices": []
+    },
+    {
+      "symbol": "VIP",
+      "name": "Vulcan Infrastructure and Power Inc.",
       "sector": null,
       "market": "US",
       "exchange": "NMS",
@@ -38622,6 +38645,14 @@
       "sector": null,
       "market": "US",
       "exchange": "NMS",
+      "indices": []
+    },
+    {
+      "symbol": "XSPRAY.ST",
+      "name": "Xspray Pharma AB (publ)",
+      "sector": null,
+      "market": "SE",
+      "exchange": "STO",
       "indices": []
     },
     {

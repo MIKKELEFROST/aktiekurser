@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-08T21:30:11.259Z",
+  "updated_at": "2026-10-09T21:10:30.814Z",
   "source": "Yahoo Finance",
   "symbol": "PLMR",
   "summary": "Palomar Holdings, Inc., a specialty insurance company, provides property and casualty insurance to individuals and businesses in the United States. The company offers personal and commercial specialty insurance products, including residential and commercial earthquake; fronting; and inland marine and other property products, such as inland marine, Hawaii hurricane, excess national property, residential flood, and other property products, as well as assumed reinsurance and crop insurance products. It markets and distributes its products through retail agents, program administrators, wholesale brokers, and strategic partnerships. The company was formerly known as GC Palomar Holdings and changed its name to Palomar Holdings, Inc. The company was incorporated in 2013 and is headquartered in La Jolla, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-08-05",
-  "eps_estimate": 2.57944,
+  "eps_estimate": 2.5708,
   "analysts": {
     "strong_buy": 3,
     "buy": 4,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 8
   },
-  "target_mean": 162,
+  "target_mean": 160.16667,
   "target_high": 168,
   "target_low": 152,
   "target_analysts": 6,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.2833,
-    "q1": 0.2644,
-    "y0": 0.2825,
-    "y1": 0.1267
+    "q0": 0.27899998,
+    "q1": 0.26450002,
+    "y0": 0.2814,
+    "y1": 0.1271
   },
   "ratings": [
+    {
+      "date": "2026-10-09",
+      "firm": "JP Morgan",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-08-11",
       "firm": "Keefe, Bruyette & Woods",
@@ -136,13 +143,6 @@
     },
     {
       "date": "2026-02-23",
-      "firm": "JP Morgan",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-01-07",
       "firm": "JP Morgan",
       "from": "Overweight",
       "to": "Overweight",
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.346,
-    "enterprise_value": 3570692608,
-    "ev_ebitda": 12.334,
-    "ev_revenue": 3.272,
+    "enterprise_value": 3692280320,
+    "ev_ebitda": 12.754,
+    "ev_revenue": 3.383,
     "float_shares": 25608421,
     "short_shares": 932649,
     "short_pct_float": 4.22,
@@ -302,33 +302,6 @@
     {
       "name": "UCHIDA T CHRISTOPHER",
       "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 127.74 per share.",
-      "value": 101043,
-      "shares": 791,
-      "date": "2026-08-18"
-    },
-    {
-      "name": "CHRISTIANSON JON MARCUS",
-      "role": "President",
-      "kind": "sell",
-      "text": "Sale at price 127.75 per share.",
-      "value": 67450,
-      "shares": 528,
-      "date": "2026-08-18"
-    },
-    {
-      "name": "KNUTZEN JONATHAN",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 127.75 per share.",
-      "value": 37813,
-      "shares": 296,
-      "date": "2026-08-18"
-    },
-    {
-      "name": "UCHIDA T CHRISTOPHER",
-      "role": "Chief Financial Officer",
       "kind": "other",
       "text": null,
       "value": null,
@@ -354,12 +327,39 @@
       "date": "2026-08-18"
     },
     {
+      "name": "KNUTZEN JONATHAN",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 127.75 per share.",
+      "value": 37813,
+      "shares": 296,
+      "date": "2026-08-18"
+    },
+    {
+      "name": "UCHIDA T CHRISTOPHER",
+      "role": "Chief Financial Officer",
+      "kind": "sell",
+      "text": "Sale at price 127.74 per share.",
+      "value": 101043,
+      "shares": 791,
+      "date": "2026-08-18"
+    },
+    {
+      "name": "CHRISTIANSON JON MARCUS",
+      "role": "President",
+      "kind": "sell",
+      "text": "Sale at price 127.75 per share.",
+      "value": 67450,
+      "shares": 528,
+      "date": "2026-08-18"
+    },
+    {
       "name": "HERVE RODOLPHE",
       "role": "Chief Operating Officer",
-      "kind": "sell",
-      "text": "Sale at price 135.35 per share.",
-      "value": 163367,
-      "shares": 1207,
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 3068,
       "date": "2026-07-31"
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-08T21:30:11.222Z",
+  "updated_at": "2026-10-09T21:10:30.793Z",
   "source": "Yahoo Finance",
   "symbol": "PEP",
   "summary": "PepsiCo, Inc. engages in the manufacture, marketing, distribution, and sale of various beverages and convenient foods worldwide. The company operates through six segments: PepsiCo Foods North America; PepsiCo Beverages North America; International Beverages Franchise; Europe, Middle East and Africa; Latin America Foods; and Asia Pacific Foods. It offers cereals, chips, dips, granola bars, oatmeal, pasta, rice, and syrups and mixes; refrigerated dips and spreads; beverage concentrates, fountain syrups, and finished goods; and ready-to-drink tea and coffee products. The company also provides SodaStream sparkling water makers and related products, as well as various dairy products under the Agusha, Chudo, and Domik v Derevne brands. It serves wholesale and other distributors, foodservice customers, grocery stores, drug stores, convenience stores, discount/dollar stores, mass merchandisers, membership stores, hard discounters, e-commerce retailers and authorized independent bottlers, and others through a network of direct-store-delivery, customer warehouse, and distributor networks, as well as directly to consumers through e-commerce platforms and retailers. PepsiCo, Inc. was founded in 1898 and is based in Purchase, New York.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-08",
   "earnings_estimated": false,
   "earnings_call": "2026-10-08",
-  "eps_estimate": 2.29525,
+  "eps_estimate": 2.23901,
   "analysts": {
     "strong_buy": 2,
     "buy": 3,
@@ -19,8 +19,8 @@
     "strong_sell": 0,
     "total": 24
   },
-  "target_mean": 148.63635,
-  "target_high": 180,
+  "target_mean": 143.86365,
+  "target_high": 169,
   "target_low": 124,
   "target_analysts": 22,
   "statements": [
@@ -72,12 +72,47 @@
     }
   ],
   "growth": {
-    "q0": 0.0023,
-    "q1": 0.0746,
-    "y0": 0.0504,
-    "y1": 0.0421
+    "q0": -0.0093,
+    "q1": 0.0016,
+    "y0": 0.0332,
+    "y1": 0.0369
   },
   "ratings": [
+    {
+      "date": "2026-10-09",
+      "firm": "Citigroup",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-09",
+      "firm": "JP Morgan",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-09",
+      "firm": "BNP Paribas",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-09",
+      "firm": "Piper Sandler",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-09",
+      "firm": "RBC Capital",
+      "from": "Sector Perform",
+      "to": "Sector Perform",
+      "action": "reit"
+    },
     {
       "date": "2026-10-06",
       "firm": "RBC Capital",
@@ -111,41 +146,6 @@
       "firm": "Evercore ISI Group",
       "from": "In-Line",
       "to": "In-Line",
-      "action": "main"
-    },
-    {
-      "date": "2026-09-29",
-      "firm": "JP Morgan",
-      "from": "Overweight",
-      "to": "Neutral",
-      "action": "down"
-    },
-    {
-      "date": "2026-09-28",
-      "firm": "TD Cowen",
-      "from": "Hold",
-      "to": "Hold",
-      "action": "main"
-    },
-    {
-      "date": "2026-09-28",
-      "firm": "Deutsche Bank",
-      "from": "Buy",
-      "to": "Hold",
-      "action": "down"
-    },
-    {
-      "date": "2026-09-23",
-      "firm": "BNP Paribas",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-21",
-      "firm": "Barclays",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
       "action": "main"
     }
   ],
@@ -230,11 +230,11 @@
     "net_pct": 1.3
   },
   "extras": {
-    "beta": 0.364,
-    "enterprise_value": 211548028928,
-    "ev_ebitda": 11.204,
-    "ev_revenue": 2.183,
-    "float_shares": 1361806903,
+    "beta": null,
+    "enterprise_value": 215807197184,
+    "ev_ebitda": 10.864,
+    "ev_revenue": 2.197,
+    "float_shares": 1359661297,
     "short_shares": 25853939,
     "short_pct_float": 2.11,
     "short_ratio": 3.46,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.7533,
   "inst_count": 4301,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 2.25996,
-      "actual": 2.29,
-      "surprise_pct": 1.33
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 2.23709,
@@ -269,6 +263,12 @@
       "estimate": 2.2082,
       "actual": 2.2,
       "surprise_pct": -0.37
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 2.29525,
+      "actual": 2.34,
+      "surprise_pct": 1.95
     }
   ],
   "insiders": [

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-08T21:30:11.264Z",
+  "updated_at": "2026-10-09T21:10:30.817Z",
   "source": "Yahoo Finance",
   "symbol": "PLTR",
   "summary": "Palantir Technologies Inc. builds and deploys software platforms for the intelligence community to assist in counterterrorism investigations and operations in the United States, the United Kingdom, and internationally. It provides Palantir Gotham integrates with other platforms for defense offerings which enables users to see, understand, and act in the modern battlespace; operations centers to the tactical edge; integrating data from domains and sensors in near real-time; and situational awareness and accelerating operational decision-making, as well as facilitates the hand-off between analysts and operational users, helping operators plan and execute real-world responses to threats that have been identified within the platform. It also offers Palantir Foundry, a platform that helps organizations operate by creating a central operating system for their data; and allows individual users to integrate and analyze the data they need in one place. In addition, it provides Palantir Apollo, a software that delivers software and updates across the business, as well as enables customers to deploy their software virtually in any environment; and Palantir Artificial Intelligence Platform that provides unified access to open-source, self-hosted, and commercial large language models (LLMs) that can transform structured and unstructured data into LLM-understandable objects and can turn organizations' actions and processes into tools for humans and LLM-driven agents. The company also has a strategic partnership with Ondas Inc. to develop and deploy AI-enabled operational capabilities to scale stratospheric, aerial, and land-based ISR missions. The company has a strategic collaboration with NVIDIA to deliver an intelligent engine for running NVIDIA AI and Nemotron open models in sovereign environments and with PwC to transform critical business operations and deliver measurable enterprise value. The company was incorporated in 2003 and is headquartered in Aventura, Florida.",
@@ -10,19 +10,19 @@
   "next_earnings": "2026-11-02",
   "earnings_estimated": true,
   "earnings_call": "2026-08-03",
-  "eps_estimate": 0.41367,
+  "eps_estimate": 0.41306,
   "analysts": {
-    "strong_buy": 1,
-    "buy": 19,
-    "hold": 9,
+    "strong_buy": 2,
+    "buy": 20,
+    "hold": 7,
     "sell": 1,
-    "strong_sell": 1,
-    "total": 31
+    "strong_sell": 2,
+    "total": 32
   },
-  "target_mean": 199.844,
-  "target_high": 255,
+  "target_mean": 203.35,
+  "target_high": 265,
   "target_low": 80,
-  "target_analysts": 25,
+  "target_analysts": 26,
   "statements": [
     {
       "year": "2022",
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.96989995,
-    "q1": 0.8552,
-    "y0": 1.1602,
-    "y1": 0.44689998
+    "q0": 0.96699995,
+    "q1": 0.8553,
+    "y0": 1.1597,
+    "y1": 0.4518
   },
   "ratings": [
+    {
+      "date": "2026-10-09",
+      "firm": "Barclays",
+      "from": null,
+      "to": "Overweight",
+      "action": "init"
+    },
     {
       "date": "2026-10-08",
       "firm": "Goldman Sachs",
@@ -139,13 +146,6 @@
       "firm": "DA Davidson",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-04",
-      "firm": "Cantor Fitzgerald",
-      "from": "Neutral",
-      "to": "Neutral",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.602,
-    "enterprise_value": 457394716672,
-    "ev_ebitda": 171.783,
-    "ev_revenue": 74.301,
+    "enterprise_value": 468592951296,
+    "ev_ebitda": 175.989,
+    "ev_revenue": 76.12,
     "float_shares": 2109765193,
     "short_shares": 60184903,
     "short_pct_float": 2.8,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 3627,
+  "inst_count": 3630,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -329,18 +329,18 @@
     {
       "name": "KARP ALEXANDER C.",
       "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
+      "kind": "sell",
+      "text": "Sale at price 172.65 - 176.31 per share.",
+      "value": 86057473,
       "shares": 492348,
       "date": "2026-08-20"
     },
     {
       "name": "KARP ALEXANDER C.",
       "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 172.65 - 176.31 per share.",
-      "value": 86057473,
+      "kind": "other",
+      "text": null,
+      "value": null,
       "shares": 492348,
       "date": "2026-08-20"
     },
