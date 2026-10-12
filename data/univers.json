@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-10-09T21:06:25.939Z",
+  "updated_at": "2026-10-12T23:07:58.256Z",
   "source": "Wikipedia (S&P 500, Nasdaq-100, S&P 400, S&P 600) og Yahoos børsoversigt for de øvrige",
   "counts": {
-    "total": 4504,
+    "total": 4496,
     "markets": {
-      "NO": 214,
-      "SE": 438,
-      "US": 3594,
-      "FI": 140,
-      "DK": 94,
+      "NO": 213,
+      "SE": 437,
+      "US": 3591,
+      "FI": 138,
+      "DK": 93,
       "IS": 24
     },
     "sp500": 503,
-    "ndx": 100,
-    "dk": 94
+    "ndx": 101,
+    "dk": 93
   },
   "companies": [
     {
@@ -386,14 +386,6 @@
       "sector": null,
       "market": "US",
       "exchange": "NYQ",
-      "indices": []
-    },
-    {
-      "symbol": "ACG1V.HE",
-      "name": "Aspocomp Group Oyj",
-      "sector": null,
-      "market": "FI",
-      "exchange": "HEL",
       "indices": []
     },
     {
@@ -2312,14 +2304,6 @@
       "sector": null,
       "market": "US",
       "exchange": "NMS",
-      "indices": []
-    },
-    {
-      "symbol": "ANVS",
-      "name": "Annovis Bio, Inc.",
-      "sector": null,
-      "market": "US",
-      "exchange": "NYQ",
       "indices": []
     },
     {
@@ -4606,14 +4590,6 @@
       "indices": []
     },
     {
-      "symbol": "BGSF",
-      "name": "BGSF, Inc.",
-      "sector": null,
-      "market": "US",
-      "exchange": "NYQ",
-      "indices": []
-    },
-    {
       "symbol": "BGSI",
       "name": "Boyd Group Services Inc.",
       "sector": null,
@@ -6859,14 +6835,6 @@
       "exchange": "NYQ"
     },
     {
-      "symbol": "CCIF",
-      "name": "Carlyle Credit Income Fund",
-      "sector": null,
-      "market": "US",
-      "exchange": "NYQ",
-      "indices": []
-    },
-    {
       "symbol": "CCJ",
       "name": "Cameco Corporation",
       "sector": null,
@@ -8637,6 +8605,14 @@
         "SP400"
       ],
       "exchange": "NYQ"
+    },
+    {
+      "symbol": "CRBU",
+      "name": "Caribou Biosciences, Inc.",
+      "sector": null,
+      "market": "US",
+      "exchange": "NMS",
+      "indices": []
     },
     {
       "symbol": "CRC",
@@ -11167,14 +11143,6 @@
       "sector": null,
       "market": "US",
       "exchange": "NMS",
-      "indices": []
-    },
-    {
-      "symbol": "EGNETY.CO",
-      "name": "EgnsINVEST Ejendomme Tyskland A/S",
-      "sector": null,
-      "market": "DK",
-      "exchange": "CPH",
       "indices": []
     },
     {
@@ -17990,14 +17958,6 @@
       "indices": []
     },
     {
-      "symbol": "ININ.OL",
-      "name": "Inin Group AS",
-      "sector": null,
-      "market": "NO",
-      "exchange": "OSL",
-      "indices": []
-    },
-    {
       "symbol": "INIO",
       "name": "Innio N.V.",
       "sector": null,
@@ -19801,6 +19761,14 @@
       "sector": null,
       "market": "FI",
       "exchange": "HEL",
+      "indices": []
+    },
+    {
+      "symbol": "KPET",
+      "name": "KPET Ultra Paceline Corporation",
+      "sector": null,
+      "market": "US",
+      "exchange": "NYQ",
       "indices": []
     },
     {
@@ -23046,7 +23014,8 @@
       "sector": "Health Care",
       "market": "US",
       "indices": [
-        "SP500"
+        "SP500",
+        "NDX"
       ],
       "exchange": "NMS"
     },
@@ -24448,14 +24417,6 @@
       "indices": []
     },
     {
-      "symbol": "NLG1V.HE",
-      "name": "Nurminen Logistics Oyj",
-      "sector": null,
-      "market": "FI",
-      "exchange": "HEL",
-      "indices": []
-    },
-    {
       "symbol": "NLOP",
       "name": "Net Lease Office Properties",
       "sector": null,
@@ -25520,14 +25481,6 @@
       "exchange": "NYQ"
     },
     {
-      "symbol": "NXB",
-      "name": "NextBoat Inc.",
-      "sector": null,
-      "market": "US",
-      "exchange": "ASE",
-      "indices": []
-    },
-    {
       "symbol": "NXDR",
       "name": "Nextdoor Holdings, Inc.",
       "sector": null,
@@ -25740,6 +25693,14 @@
       "sector": null,
       "market": "US",
       "exchange": "NMS",
+      "indices": []
+    },
+    {
+      "symbol": "ODC",
+      "name": "Oil-Dri Corporation of America",
+      "sector": null,
+      "market": "US",
+      "exchange": "NYQ",
       "indices": []
     },
     {
@@ -28445,6 +28406,14 @@
       "indices": []
     },
     {
+      "symbol": "PRS.OL",
+      "name": "Prosafe SE",
+      "sector": null,
+      "market": "NO",
+      "exchange": "OSL",
+      "indices": []
+    },
+    {
       "symbol": "PRSU",
       "name": "Pursuit Attractions & Hospitality, Inc.",
       "sector": "Consumer Discretionary",
@@ -28534,7 +28503,7 @@
     },
     {
       "symbol": "PSKY",
-      "name": "Skydance Corporation",
+      "name": "Paramount Skydance Corp",
       "sector": null,
       "market": "US",
       "exchange": "NMS",
@@ -28934,8 +28903,7 @@
       "market": "US",
       "indices": [
         "SP600"
-      ],
-      "exchange": "NMS"
+      ]
     },
     {
       "symbol": "QS",
@@ -30046,6 +30014,14 @@
         "SP500"
       ],
       "exchange": "NYQ"
+    },
+    {
+      "symbol": "ROLR",
+      "name": "High Roller Technologies, Inc.",
+      "sector": null,
+      "market": "US",
+      "exchange": "ASE",
+      "indices": []
     },
     {
       "symbol": "ROMER.OL",
@@ -31329,14 +31305,6 @@
       "indices": []
     },
     {
-      "symbol": "SER",
-      "name": "Serina Therapeutics, Inc.",
-      "sector": null,
-      "market": "US",
-      "exchange": "ASE",
-      "indices": []
-    },
-    {
       "symbol": "SES",
       "name": "SES AI Corporation",
       "sector": null,
@@ -31463,14 +31431,6 @@
       "sector": null,
       "market": "US",
       "exchange": "NYQ",
-      "indices": []
-    },
-    {
-      "symbol": "SGG.ST",
-      "name": "Sensys Gatso Group AB (publ)",
-      "sector": null,
-      "market": "SE",
-      "exchange": "STO",
       "indices": []
     },
     {
@@ -32091,6 +32051,14 @@
         "SP400"
       ],
       "exchange": "NMS"
+    },
+    {
+      "symbol": "SLND",
+      "name": "Southland Holdings, Inc.",
+      "sector": null,
+      "market": "US",
+      "exchange": "ASE",
+      "indices": []
     },
     {
       "symbol": "SLP",
@@ -33454,7 +33422,7 @@
       "name": "Sunoco LP",
       "sector": null,
       "market": "US",
-      "exchange": "NYQ",
+      "exchange": "ASE",
       "indices": []
     },
     {
@@ -33948,7 +33916,7 @@
       "indices": [
         "SP400"
       ],
-      "exchange": "NMS"
+      "exchange": "ASE"
     },
     {
       "symbol": "TCBK",
@@ -34075,7 +34043,8 @@
       "market": "US",
       "indices": [
         "SP600"
-      ]
+      ],
+      "exchange": "NYQ"
     },
     {
       "symbol": "TDY",
@@ -34093,14 +34062,6 @@
       "sector": null,
       "market": "US",
       "exchange": "NYQ",
-      "indices": []
-    },
-    {
-      "symbol": "TEAD",
-      "name": "Teads Holding Co.",
-      "sector": null,
-      "market": "US",
-      "exchange": "NMS",
       "indices": []
     },
     {
@@ -34372,14 +34333,6 @@
       "sector": null,
       "market": "US",
       "exchange": "ASE",
-      "indices": []
-    },
-    {
-      "symbol": "TGE",
-      "name": "The Generation Essentials Group",
-      "sector": null,
-      "market": "US",
-      "exchange": "NYQ",
       "indices": []
     },
     {
@@ -35237,14 +35190,6 @@
       "indices": []
     },
     {
-      "symbol": "TRSB.OL",
-      "name": "Trøndelag Sparebank",
-      "sector": null,
-      "market": "NO",
-      "exchange": "OSL",
-      "indices": []
-    },
-    {
       "symbol": "TRST",
       "name": "TrustCo Bank Corp NY",
       "sector": "Financials",
@@ -35313,6 +35258,14 @@
       "sector": null,
       "market": "US",
       "exchange": "ASE",
+      "indices": []
+    },
+    {
+      "symbol": "TRXB",
+      "name": "TRex Bio, Inc.",
+      "sector": null,
+      "market": "US",
+      "exchange": "NMS",
       "indices": []
     },
     {
@@ -35766,14 +35719,6 @@
       "sector": null,
       "market": "US",
       "exchange": "NYQ",
-      "indices": []
-    },
-    {
-      "symbol": "UAVS",
-      "name": "AgEagle Aerial Systems, Inc.",
-      "sector": null,
-      "market": "US",
-      "exchange": "ASE",
       "indices": []
     },
     {
@@ -36798,14 +36743,6 @@
     {
       "symbol": "VIOT",
       "name": "Viomi Technology Co., Ltd",
-      "sector": null,
-      "market": "US",
-      "exchange": "NMS",
-      "indices": []
-    },
-    {
-      "symbol": "VIP",
-      "name": "Vulcan Infrastructure and Power Inc.",
       "sector": null,
       "market": "US",
       "exchange": "NMS",
@@ -38261,6 +38198,14 @@
       "exchange": "NYQ"
     },
     {
+      "symbol": "WSO-B",
+      "name": "Watsco, Inc.",
+      "sector": null,
+      "market": "US",
+      "exchange": "NYQ",
+      "indices": []
+    },
+    {
       "symbol": "WST",
       "name": "West Pharmaceutical Services",
       "sector": "Health Care",
@@ -38562,14 +38507,6 @@
       "indices": [
         "SP600"
       ]
-    },
-    {
-      "symbol": "XPER",
-      "name": "Xperi Inc.",
-      "sector": null,
-      "market": "US",
-      "exchange": "NYQ",
-      "indices": []
     },
     {
       "symbol": "XPEV",
