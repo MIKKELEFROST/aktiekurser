@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-12T23:16:25.961Z",
+  "updated_at": "2026-10-13T21:34:52.632Z",
   "source": "Yahoo Finance",
   "symbol": "ETRA",
   "summary": "Electra Therapeutics, Inc. is a clinical-stage biopharmaceutical company. The company develops therapies that targets signal regulatory proteins for the treatment of novel targets for treatment of immune-mediated diseases and cancer. Its lead product candidate is ipsoprubart, that targets signal regulatory protein on the cell surface of myeloid and T cells and depletes pathological immune cells, treatment for secondary hemophagocytic lymphohistiocytosis and T/NK Cell Malignancies; ELA822, a novel SIRP-specific monoclonal antibody for deplete activated T cells, treatment for T cell mediated immune disorders. Electra Therapeutics, Inc. was incorporated in 2018 and is based in South San Francisco, California.",
@@ -11,15 +11,51 @@
   "earnings_estimated": false,
   "earnings_call": null,
   "eps_estimate": null,
-  "analysts": null,
-  "target_mean": null,
-  "target_high": null,
-  "target_low": null,
-  "target_analysts": null,
+  "analysts": {
+    "strong_buy": 0,
+    "buy": 4,
+    "hold": 0,
+    "sell": 0,
+    "strong_sell": 0,
+    "total": 4
+  },
+  "target_mean": 33.33333,
+  "target_high": 36,
+  "target_low": 32,
+  "target_analysts": 3,
   "statements": null,
   "quarterly": [],
   "growth": null,
-  "ratings": [],
+  "ratings": [
+    {
+      "date": "2026-10-13",
+      "firm": "Jefferies",
+      "from": null,
+      "to": "Buy",
+      "action": "init"
+    },
+    {
+      "date": "2026-10-13",
+      "firm": "Evercore ISI Group",
+      "from": null,
+      "to": "Outperform",
+      "action": "init"
+    },
+    {
+      "date": "2026-10-13",
+      "firm": "TD Cowen",
+      "from": null,
+      "to": "Buy",
+      "action": "init"
+    },
+    {
+      "date": "2026-10-13",
+      "firm": "Cantor Fitzgerald",
+      "from": null,
+      "to": "Overweight",
+      "action": "init"
+    }
+  ],
   "holders": [],
   "insider_net": {
     "period": "6m",
@@ -31,7 +67,7 @@
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 767775616,
+    "enterprise_value": 784883712,
     "ev_ebitda": null,
     "ev_revenue": null,
     "float_shares": 29116120,

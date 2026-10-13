@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-12T23:16:26.113Z",
+  "updated_at": "2026-10-13T21:34:52.840Z",
   "source": "Yahoo Finance",
   "symbol": "GS",
   "summary": "The Goldman Sachs Group, Inc., a financial institution, provides a range of financial services for corporations, financial institutions, governments, and individuals in the Americas, Europe, the Middle East, Africa, and Asia. It operates through three segments: Global Banking & Markets, Asset & Wealth Management, and Platform Solutions. The Global Banking & Markets segment provides financial advisory services, including strategic advisory assignments related to mergers and acquisitions, divestitures, corporate defense activities, restructurings, and spin-offs; equity and debt underwriting of public offerings and private placements; relationship lending and acquisition financing; secured lending through structured credit and asset-backed lending, such as warehouse, residential and commercial mortgage, corporate, consumer, auto, and student loans; financing through securities purchased under agreements to resell; and commodity financing through structured transactions. This segment also offers client execution activities for cash and derivative instruments; credit and interest rate products; and provision of mortgages, currencies, commodities, and equities related products. Its Asset & Wealth Management segment manages assets across various classes, including equity, fixed income, hedge funds, credit funds, private equity, real estate, currencies, commodities, and asset allocation strategies; and provides customized investment advisory solutions, wealth advisory services, personalized financial planning, and private banking services, as well as invests in corporate equity, credit, real estate, and infrastructure assets. The Platform Solutions segment offers credit cards; and transaction banking and other services, such as deposit-taking, payment solutions, and other cash management services for corporate and institutional clients. The Goldman Sachs Group, Inc. was founded in 1869 and is headquartered in New York, New York.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-13",
   "earnings_estimated": false,
   "earnings_call": "2026-10-13",
-  "eps_estimate": 13.17534,
+  "eps_estimate": 14.93951,
   "analysts": {
     "strong_buy": 1,
     "buy": 7,
@@ -19,17 +19,63 @@
     "strong_sell": 1,
     "total": 26
   },
-  "target_mean": 1069.0952,
+  "target_mean": 1065.8096,
   "target_high": 1250,
   "target_low": 730,
   "target_analysts": 21,
-  "statements": null,
-  "quarterly": [],
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 47365000000,
+      "net": 10764000000,
+      "margin": 22.7
+    },
+    {
+      "year": "2023",
+      "revenue": 46524000000,
+      "net": 7907000000,
+      "margin": 17
+    },
+    {
+      "year": "2024",
+      "revenue": 53512000000,
+      "net": 13525000000,
+      "margin": 25.3
+    },
+    {
+      "year": "2025",
+      "revenue": 58283000000,
+      "net": 16300000000,
+      "margin": 28
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "4Q2025",
+      "revenue": 13454000000,
+      "earnings": 4384000000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 17227000000,
+      "earnings": 5403000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 20338000000,
+      "earnings": 6399000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 18679000000,
+      "earnings": 5122000000
+    }
+  ],
   "growth": {
-    "q0": 0.075500004,
-    "q1": 0.0788,
-    "y0": 0.309,
-    "y1": 0.074200004
+    "q0": 0.066300005,
+    "q1": 0.0276,
+    "y0": 0.354,
+    "y1": 0.0368
   },
   "ratings": [
     {
@@ -185,9 +231,9 @@
   },
   "extras": {
     "beta": 1.284,
-    "enterprise_value": 25714839552,
+    "enterprise_value": 25300049920,
     "ev_ebitda": null,
-    "ev_revenue": 0.381,
+    "ev_revenue": 0.374,
     "float_shares": 301060743,
     "short_shares": 6647698,
     "short_pct_float": 2.3,
@@ -200,12 +246,6 @@
   "payout_ratio": 0.2625,
   "inst_count": 3983,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 11.08738,
-      "actual": 12.25,
-      "surprise_pct": 10.49
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 11.65403,
@@ -223,6 +263,12 @@
       "estimate": 14.54249,
       "actual": 20.98,
       "surprise_pct": 44.27
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 13.08695,
+      "actual": 17.01,
+      "surprise_pct": 29.98
     }
   ],
   "insiders": [

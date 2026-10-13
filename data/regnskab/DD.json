@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-12T23:16:25.821Z",
+  "updated_at": "2026-10-13T21:34:52.445Z",
   "source": "Yahoo Finance",
   "symbol": "DD",
   "summary": "DuPont de Nemours, Inc. provides technology-based materials and solutions in the United States, Canada, the Asia Pacific, Latin America, Europe, the Middle East, and Africa. It operates through two segments, Healthcare & Water Technologies and Diversified Industrials. The company offers specialty components for medical devices, packaging and garments, and protective suits under the brand TYVEK; provides water filtration and separation solutions, including elements, modules, and systems serving primarily industrial wastewater and energy markets, municipal and desalination applications, and life sciences and specialty sectors. It also offers AMBERLITE ion exchange resins, FILMTEC reverse osmosis and nanofiltration elements, and INGE and ITEGRATEC ultrafiltration modules. In addition, the company offers engineered products and integrated solutions for the non-residential, residential, and repair-and-remodel construction markets, includes TYVEK house wrap, STYROFOAM insulation, and CORIAN solid surface. Further, it engages in the design and production of engineered components, systems, and process solutions used in OEM and operational applications, such as automotive, aerospace, printing, and packaging. Additionally, the company offers Vespel shapes and parts, MOLYKOTE specialty lubricants, BETAFORCE and BETASEAL structural adhesives, and Cyrel flexographic printing plates. The company was formerly known as DowDuPont Inc. and changed its name to DuPont de Nemours, Inc. in June 2019. DuPont de Nemours, Inc. was incorporated in 2015 and is headquartered in Wilmington, Delaware.",
@@ -10,19 +10,19 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": 1.89651,
+  "eps_estimate": 1.89612,
   "analysts": {
-    "strong_buy": 2,
+    "strong_buy": 3,
     "buy": 11,
     "hold": 4,
     "sell": 0,
     "strong_sell": 0,
-    "total": 17
+    "total": 18
   },
-  "target_mean": 167.0625,
+  "target_mean": 166.41176,
   "target_high": 186,
   "target_low": 145,
-  "target_analysts": 16,
+  "target_analysts": 17,
   "statements": [
     {
       "year": "2022",
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": -0.42,
-    "q1": 0.35,
-    "y0": 0.4399,
-    "y1": 0.0987
+    "q0": -0.4202,
+    "q1": 0.3534,
+    "y0": 0.4408,
+    "y1": 0.1013
   },
   "ratings": [
+    {
+      "date": "2026-10-13",
+      "firm": "Barclays",
+      "from": null,
+      "to": "Overweight",
+      "action": "init"
+    },
     {
       "date": "2026-10-09",
       "firm": "JP Morgan",
@@ -139,13 +146,6 @@
       "firm": "RBC Capital",
       "from": "Outperform",
       "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-05-06",
-      "firm": "UBS",
-      "from": "Buy",
-      "to": "Buy",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.079,
-    "enterprise_value": 19106586624,
-    "ev_ebitda": 12.07,
-    "ev_revenue": 2.734,
+    "enterprise_value": 19021510656,
+    "ev_ebitda": 12.016,
+    "ev_revenue": 2.722,
     "float_shares": 134463641,
     "short_shares": 5137878,
     "short_pct_float": 4.32,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-08-31",
   "dividend_date": null,
   "payout_ratio": 0.8145,
-  "inst_count": 1498,
+  "inst_count": 1499,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -273,15 +273,6 @@
   ],
   "insiders": [
     {
-      "name": "CUTLER ALEXANDER M",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 136.98 per share.",
-      "value": 50000,
-      "shares": 365,
-      "date": "2026-08-28"
-    },
-    {
       "name": "MACPHERSON DONALD G",
       "role": "Director",
       "kind": "other",
@@ -297,6 +288,15 @@
       "text": "Stock Award(Grant) at price 136.98 per share.",
       "value": 38750,
       "shares": 282,
+      "date": "2026-08-28"
+    },
+    {
+      "name": "CUTLER ALEXANDER M",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 136.98 per share.",
+      "value": 50000,
+      "shares": 365,
       "date": "2026-08-28"
     },
     {
@@ -318,15 +318,6 @@
       "date": "2026-06-02"
     },
     {
-      "name": "CUTLER ALEXANDER M",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 48.42 per share.",
-      "value": 50000,
-      "shares": 1032,
-      "date": "2026-05-29"
-    },
-    {
       "name": "MACPHERSON DONALD G",
       "role": "Director",
       "kind": "other",
@@ -346,6 +337,15 @@
     },
     {
       "name": "CUTLER ALEXANDER M",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 48.42 per share.",
+      "value": 50000,
+      "shares": 1032,
+      "date": "2026-05-29"
+    },
+    {
+      "name": "CHANDY RUBY R",
       "role": "Director",
       "kind": "other",
       "text": null,

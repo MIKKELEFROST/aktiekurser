@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-12T23:16:25.515Z",
+  "updated_at": "2026-10-13T21:34:52.026Z",
   "source": "Yahoo Finance",
   "symbol": "BAM",
   "summary": "Brookfield Asset Management Ltd. is a private equity firm specializing in acquisitions and growth capital investments. The firm primarily provides its services to institutional clients, high net worth individuals, financial institutions, public and private pension plans, sovereign wealth funds, endowments, and foundations. The firm manages separate client-focused public and private fund portfolios, listed partnerships, separate accounts, and co-investments. The firm invests in real assets, including real estate, infrastructure, renewable power, private equity, and credit. The firm employs fundamental and operational analysis to make its investments. The firm uses both in-house and external research to complement its investment process. Brookfield Asset Management Ltd. was founded in 2022 and is based in New York. Brookfield Asset Management Ltd. operates as a subsidiary of Brookfield Corporation.",
@@ -8,9 +8,9 @@
   "employees": 5800,
   "ceo": "Mr. James Bruce Flatt",
   "next_earnings": "2026-11-06",
-  "earnings_estimated": true,
-  "earnings_call": "2026-08-05",
-  "eps_estimate": 0.4659,
+  "earnings_estimated": false,
+  "earnings_call": "2026-11-06",
+  "eps_estimate": 0.4664,
   "analysts": {
     "strong_buy": 3,
     "buy": 7,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 19
   },
-  "target_mean": 56.49684,
+  "target_mean": 55.97053,
   "target_high": 70,
   "target_low": 44,
   "target_analysts": 19,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.1363,
-    "q1": 0.0458,
-    "y0": 0.109799996,
-    "y1": 0.18190001
+    "q0": 0.1376,
+    "q1": 0.0476,
+    "y0": 0.1096,
+    "y1": 0.18059999
   },
   "ratings": [
+    {
+      "date": "2026-10-13",
+      "firm": "UBS",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-10-02",
       "firm": "Wells Fargo",
@@ -139,13 +146,6 @@
       "firm": "Morgan Stanley",
       "from": "Equal-Weight",
       "to": "Equal-Weight",
-      "action": "main"
-    },
-    {
-      "date": "2026-04-07",
-      "firm": "Goldman Sachs",
-      "from": "Buy",
-      "to": "Buy",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.325,
-    "enterprise_value": 80222904320,
-    "ev_ebitda": 20.946,
-    "ev_revenue": 13.983,
+    "enterprise_value": 80143040512,
+    "ev_ebitda": 20.925,
+    "ev_revenue": 13.97,
     "float_shares": 319530189,
     "short_shares": 19912050,
     "short_pct_float": 5.29,
