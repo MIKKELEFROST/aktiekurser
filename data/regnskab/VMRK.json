@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-13T21:34:54.035Z",
+  "updated_at": "2026-10-14T20:27:37.003Z",
   "source": "Yahoo Finance",
   "symbol": "VMRK",
   "summary": "Vivmark Residential focused on building, buying, and managing high-quality apartment communities across major U.S. metro areas. The company owns or held investments in more than 184,000 rental apartments across premier U.S. markets and over 11,100 apartments under construction. Vivmark Residential based in Chicago, Illinois.",
@@ -10,19 +10,19 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.19319,
+  "eps_estimate": 0.19368,
   "analysts": {
     "strong_buy": 1,
     "buy": 9,
-    "hold": 11,
+    "hold": 12,
     "sell": 0,
     "strong_sell": 0,
-    "total": 21
+    "total": 22
   },
-  "target_mean": 72.65263,
+  "target_mean": 72.12,
   "target_high": 80,
   "target_low": 63,
-  "target_analysts": 19,
+  "target_analysts": 20,
   "statements": [
     {
       "year": "2025",
@@ -36,9 +36,23 @@
     "q0": null,
     "q1": null,
     "y0": null,
-    "y1": -0.0093
+    "y1": -0.0107
   },
   "ratings": [
+    {
+      "date": "2026-10-14",
+      "firm": "UBS",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-14",
+      "firm": "Barclays",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
     {
       "date": "2026-10-13",
       "firm": "RBC Capital",
@@ -94,20 +108,6 @@
       "from": "Equal-Weight",
       "to": "Equal-Weight",
       "action": "main"
-    },
-    {
-      "date": "2026-08-26",
-      "firm": "Piper Sandler",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-26",
-      "firm": "Keybanc",
-      "from": null,
-      "to": "Sector Weight",
-      "action": "init"
     }
   ],
   "holders": [
@@ -205,7 +205,7 @@
   "ex_dividend": "2026-10-05",
   "dividend_date": null,
   "payout_ratio": 0.96980006,
-  "inst_count": 1117,
+  "inst_count": 1122,
   "eps_history": [],
   "insiders": [
     {
@@ -218,21 +218,21 @@
       "date": "2026-09-09"
     },
     {
-      "name": "MANELIS MICHAEL L",
-      "role": "Chief Operating Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 34557,
-      "date": "2026-08-31"
-    },
-    {
       "name": "FENSTER SCOTT J.",
       "role": "General Counsel",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 4584,
+      "date": "2026-08-31"
+    },
+    {
+      "name": "MANELIS MICHAEL L",
+      "role": "Chief Operating Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 34557,
       "date": "2026-08-31"
     },
     {
@@ -263,15 +263,6 @@
       "date": "2026-08-19"
     },
     {
-      "name": "SWANEZY SUSAN",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 63.80 per share.",
-      "value": 1001660,
-      "shares": 15700,
-      "date": "2026-08-18"
-    },
-    {
       "name": "HOWARD CHRISTOPHER",
       "role": "Director",
       "kind": "sell",
@@ -281,21 +272,30 @@
       "date": "2026-08-18"
     },
     {
-      "name": "MUELLER CHARLES E. JR.",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 63.90 per share.",
-      "value": 511200,
-      "shares": 8000,
-      "date": "2026-08-18"
-    },
-    {
       "name": "SCHULMAN EDWARD M",
       "role": "Officer",
       "kind": "sell",
       "text": "Sale at price 64.29 per share.",
       "value": 1066893,
       "shares": 16595,
+      "date": "2026-08-18"
+    },
+    {
+      "name": "SWANEZY SUSAN",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 63.80 per share.",
+      "value": 1001660,
+      "shares": 15700,
+      "date": "2026-08-18"
+    },
+    {
+      "name": "MUELLER CHARLES E. JR.",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 63.90 per share.",
+      "value": 511200,
+      "shares": 8000,
       "date": "2026-08-18"
     }
   ],

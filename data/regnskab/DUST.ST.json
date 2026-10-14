@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-13T21:34:52.519Z",
+  "updated_at": "2026-10-14T20:27:35.224Z",
   "source": "Yahoo Finance",
   "symbol": "DUST.ST",
   "summary": "Dustin Group AB (publ) engages in online information technology business in Sweden, Finland, Denmark, the Netherlands, Norway, and Belgium. The company offers various hardware, software, financing solutions, subscription services, and other related services and solutions. It serves large companies and the public sector. The company was founded in 1984 and is headquartered in Nacka, Sweden. Dustin Group AB (publ) operates as a subsidiary of AxMedia AB.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-14",
   "earnings_estimated": false,
   "earnings_call": "2026-10-14",
-  "eps_estimate": null,
+  "eps_estimate": 0.03,
   "analysts": {
     "strong_buy": 0,
     "buy": 0,
@@ -19,17 +19,11 @@
     "strong_sell": 0,
     "total": 3
   },
-  "target_mean": 1.95,
+  "target_mean": 1.96667,
   "target_high": 2.2,
   "target_low": 1.8,
   "target_analysts": 3,
   "statements": [
-    {
-      "year": "2022",
-      "revenue": 23600900000,
-      "net": 477700000,
-      "margin": 2
-    },
     {
       "year": "2023",
       "revenue": 23577000000,
@@ -47,14 +41,15 @@
       "revenue": 20407000000,
       "net": -2631000000,
       "margin": -12.9
+    },
+    {
+      "year": "2026",
+      "revenue": 21006000000,
+      "net": -799000000,
+      "margin": -3.8
     }
   ],
   "quarterly": [
-    {
-      "q": "3Q2025",
-      "revenue": 5056000000,
-      "earnings": 3000000
-    },
     {
       "q": "4Q2025",
       "revenue": 5487000000,
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 5225000000,
       "earnings": -819000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 4813000000,
+      "earnings": 32000000
     }
   ],
   "growth": {
-    "q0": null,
-    "q1": 61,
-    "y0": 2.7073998,
-    "y1": 0.2032
+    "q0": 61,
+    "q1": -0.21100001,
+    "y0": 2.0697,
+    "y1": 0.21149999
   },
   "ratings": [],
   "holders": [
@@ -175,12 +175,6 @@
   "payout_ratio": 0,
   "inst_count": 18,
   "eps_history": [
-    {
-      "quarter": "2025-08-31",
-      "estimate": 0,
-      "actual": 0.01105,
-      "surprise_pct": 0
-    },
     {
       "quarter": "2025-11-30",
       "estimate": 0,

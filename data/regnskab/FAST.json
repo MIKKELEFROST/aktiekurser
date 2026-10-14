@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-13T21:34:52.666Z",
+  "updated_at": "2026-10-14T20:27:35.376Z",
   "source": "Yahoo Finance",
   "symbol": "FAST",
   "summary": "Fastenal Company, together with its subsidiaries, engages in the wholesale distribution of industrial and construction supplies in the United States, Canada, Mexico, and internationally. It offers fasteners, and related industrial and construction supplies under the Fastenal name. The company's fastener products include threaded fasteners, bolts, nuts, screws, studs, and related washers that are used in manufactured products and construction projects, as well as in the maintenance and repair of machines. It offers miscellaneous supplies and hardware, including pins, machinery keys, concrete anchors, metal framing systems, wire ropes, strut products, rivets, and related accessories. The company serves the manufacturing market comprising original equipment manufacturers; maintenance, repair, and operations customers; non-residential construction market; farmers, truckers, railroads, mining companies, schools, and retail trades; and oil exploration, production, and refinement companies, as well as federal, state, and local governmental entities. Fastenal Company was founded in 1967 and is headquartered in Winona, Minnesota.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-14",
   "earnings_estimated": false,
   "earnings_call": "2026-10-14",
-  "eps_estimate": 0.33875,
+  "eps_estimate": 0.30544,
   "analysts": {
     "strong_buy": 0,
     "buy": 6,
@@ -19,7 +19,7 @@
     "strong_sell": 3,
     "total": 18
   },
-  "target_mean": 49.45385,
+  "target_mean": 49.83846,
   "target_high": 60,
   "target_low": 39.9,
   "target_analysts": 13,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 2133300000,
-      "earnings": 335500000
-    },
-    {
       "q": "4Q2025",
       "revenue": 2027400000,
       "earnings": 294100000
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 2386900000,
       "earnings": 382800000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 2463300000,
+      "earnings": 401600000
     }
   ],
   "growth": {
-    "q0": 0.1681,
-    "q1": 0.168,
-    "y0": 0.16049999,
-    "y1": 0.106800005
+    "q0": 0.1748,
+    "q1": 0.1193,
+    "y0": 0.1722,
+    "y1": 0.0953
   },
   "ratings": [
     {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.69,
-    "enterprise_value": 59321450496,
-    "ev_ebitda": 30.348,
-    "ev_revenue": 6.78,
+    "enterprise_value": 59252600832,
+    "ev_ebitda": 30.313,
+    "ev_revenue": 6.772,
     "float_shares": 1144800954,
     "short_shares": 34618329,
     "short_pct_float": 3.44,
@@ -241,17 +241,11 @@
     "last_split": "2:1",
     "last_split_date": "2025-05-22"
   },
-  "ex_dividend": "2026-07-28",
+  "ex_dividend": "2026-10-28",
   "dividend_date": null,
   "payout_ratio": 0.78629994,
   "inst_count": 1932,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.29651,
-      "actual": 0.29,
-      "surprise_pct": -2.2
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.2586,
@@ -269,6 +263,12 @@
       "estimate": 0.32593,
       "actual": 0.33,
       "surprise_pct": 1.25
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.33696,
+      "actual": 0.35,
+      "surprise_pct": 3.87
     }
   ],
   "insiders": [
@@ -282,21 +282,21 @@
       "date": "2026-08-13"
     },
     {
-      "name": "ANCIUS MICHAEL J",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Gift at price 0.00 per share.",
-      "value": 0,
-      "shares": 400,
-      "date": "2026-08-13"
-    },
-    {
       "name": "PAPENFUSS DONNALEE KATHLEEN",
       "role": "Officer",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 13.75 - 19.00 per share.",
       "value": 168741,
       "shares": 9258,
+      "date": "2026-08-13"
+    },
+    {
+      "name": "ANCIUS MICHAEL J",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Gift at price 0.00 per share.",
+      "value": 0,
+      "shares": 400,
       "date": "2026-08-13"
     },
     {

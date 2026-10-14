@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-13T21:34:53.240Z",
+  "updated_at": "2026-10-14T20:27:36.049Z",
   "source": "Yahoo Finance",
   "symbol": "MCO",
   "summary": "Moody's Corporation, together with its subsidiaries, operates as an integrated risk assessment firm in the United States, the rest of the Americas, Europe, the Middle East, Africa, and the Asia Pacific. It operates through two segments, Moody's Analytics (MA) and Moody's Investors Service (MIS). The MA segment develops a range of products and services that support the risk management activities of institutional participants in financial markets. This segment also offers credit research, credit models and analytics, economic data and models, and structured finance solutions; data sets on companies and securities; and cloud-based SaaS subscription solutions supporting banking, insurance, and know-your-customer workflows. The MIS segment publishes credit ratings and provides assessment services on various debt obligations, programs and facilities, and entities that issue such obligations, including corporate, financial institution, and governmental obligations, as well as structured finance securities. It also provides ratings, investment research, compliance and third-party risk, supplier risk, trade credit, business intelligence sales and marketing, financial and regulatory reporting, balance sheet management, capital management, credit portfolio management, and model risk and governance solutions; Maxsight, a unified risk platform; lending suite, origination, and monitoring solutions; and property, casualty, and sustainable insurance underwriting solutions. The company serves the financial, banking, insurance, corporate, public, and asset management sectors. The company was formerly known as Dun and Bradstreet Company and changed its name to Moody's Corporation in September 2000. Moody's Corporation was founded in 1900 and is headquartered in New York, New York.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-21",
   "earnings_estimated": false,
   "earnings_call": "2026-10-21",
-  "eps_estimate": 4.23564,
+  "eps_estimate": 4.23577,
   "analysts": {
     "strong_buy": 5,
     "buy": 13,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 24
   },
-  "target_mean": 556.1429,
+  "target_mean": 555.4286,
   "target_high": 610,
   "target_low": 470,
   "target_analysts": 21,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.0805,
-    "q1": 0.0018000001,
-    "y0": 0.13430001,
-    "y1": 0.114700004
+    "q0": 0.0806,
+    "q1": 0.0014,
+    "y0": 0.1342,
+    "y1": 0.1146
   },
   "ratings": [
+    {
+      "date": "2026-10-14",
+      "firm": "JP Morgan",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-10-13",
       "firm": "BMO Capital",
@@ -139,13 +146,6 @@
       "firm": "Morgan Stanley",
       "from": "Equal-Weight",
       "to": "Equal-Weight",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-07",
-      "firm": "BMO Capital",
-      "from": "Market Perform",
-      "to": "Market Perform",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.346,
-    "enterprise_value": 87746650112,
-    "ev_ebitda": 21.65,
-    "ev_revenue": 10.753,
+    "enterprise_value": 86643490816,
+    "ev_ebitda": 21.378,
+    "ev_revenue": 10.618,
     "float_shares": 158522946,
     "short_shares": 2802723,
     "short_pct_float": 1.89,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-08-14",
   "dividend_date": null,
   "payout_ratio": 0.25,
-  "inst_count": 1984,
+  "inst_count": 1985,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -300,15 +300,6 @@
       "date": "2026-09-04"
     },
     {
-      "name": "SAWICKI LISA P.",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 1,
-      "date": "2026-09-04"
-    },
-    {
       "name": "MINAYA JOSE",
       "role": "Director",
       "kind": "other",
@@ -318,12 +309,12 @@
       "date": "2026-09-04"
     },
     {
-      "name": "ESPERDY THERESE",
+      "name": "SAWICKI LISA P.",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 10,
+      "shares": 1,
       "date": "2026-09-04"
     },
     {
@@ -336,13 +327,13 @@
       "date": "2026-09-04"
     },
     {
-      "name": "FAUBER ROBERT",
-      "role": "Chief Executive Officer",
+      "name": "ESPERDY THERESE",
+      "role": "Director",
       "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 113.34 - 167.50 per share.",
-      "value": 163410,
-      "shares": 1167,
-      "date": "2026-09-01"
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 10,
+      "date": "2026-09-04"
     },
     {
       "name": "FAUBER ROBERT",
@@ -360,6 +351,15 @@
       "text": "Conversion of Exercise of derivative security at price 113.34 - 167.50 per share.",
       "value": 163410,
       "shares": 1167,
+      "date": "2026-09-01"
+    },
+    {
+      "name": "FAUBER ROBERT",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 484.30 per share.",
+      "value": 710468,
+      "shares": 1467,
       "date": "2026-08-03"
     }
   ],

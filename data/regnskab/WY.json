@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-13T21:34:54.128Z",
+  "updated_at": "2026-10-14T20:27:37.116Z",
   "source": "Yahoo Finance",
   "symbol": "WY",
   "summary": "Weyerhaeuser Company, one of the world's largest private owners of timberlands, began operations in 1900 and today owns or controls more than 10 million acres of timberlands in the U.S., as well as additional public timberlands managed under long-term licenses in Canada. Weyerhaeuser has been a global leader in sustainability for more than a century and manages 100 percent of its timberlands on a fully sustainable basis in compliance with internationally recognized sustainable forestry standards. Weyerhaeuser is also one of the largest manufacturers of wood products in North America and operates additional business lines around product distribution, climate solutions, real estate, energy and natural resources, among others. In 2025, the company generated 6.9 billion dollar in net sales and employed approximately 9,500 people who serve customers worldwide. Weyerhaeuser Company was founded in 1900 and was incorporated in Washington.",
@@ -13,13 +13,13 @@
   "eps_estimate": 0.05057,
   "analysts": {
     "strong_buy": 2,
-    "buy": 7,
-    "hold": 3,
+    "buy": 8,
+    "hold": 2,
     "sell": 0,
     "strong_sell": 0,
     "total": 12
   },
-  "target_mean": 28.09091,
+  "target_mean": 27.81818,
   "target_high": 34,
   "target_low": 21,
   "target_analysts": 11,
@@ -75,9 +75,16 @@
     "q0": -0.15720001,
     "q1": 0.7906,
     "y0": 0.4325,
-    "y1": 1.1721
+    "y1": 1.1563
   },
   "ratings": [
+    {
+      "date": "2026-10-14",
+      "firm": "B of A Securities",
+      "from": "Neutral",
+      "to": "Buy",
+      "action": "up"
+    },
     {
       "date": "2026-10-12",
       "firm": "Truist Securities",
@@ -139,13 +146,6 @@
       "firm": "DA Davidson",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-06-29",
-      "firm": "JP Morgan",
-      "from": "Overweight",
-      "to": "Overweight",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.933,
-    "enterprise_value": 18572740608,
-    "ev_ebitda": 26.995,
-    "ev_revenue": 2.711,
+    "enterprise_value": 18594361344,
+    "ev_ebitda": 27.027,
+    "ev_revenue": 2.714,
     "float_shares": 717290882,
     "short_shares": 28370056,
     "short_pct_float": 4.7,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-09-04",
   "dividend_date": null,
   "payout_ratio": 1.2923,
-  "inst_count": 1239,
+  "inst_count": 1237,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -273,7 +273,7 @@
   ],
   "insiders": [
     {
-      "name": "WILLIAMS KIM",
+      "name": "BECKWITT RICHARD",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -282,21 +282,12 @@
       "date": "2026-05-15"
     },
     {
-      "name": "SELZER LAWRENCE A",
+      "name": "EMMERT MARK A",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 7832,
-      "date": "2026-05-15"
-    },
-    {
-      "name": "O'ROURKE JAMES CALVIN",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 - 22.98 per share.",
-      "value": 113199,
-      "shares": 12758,
       "date": "2026-05-15"
     },
     {
@@ -318,7 +309,7 @@
       "date": "2026-05-15"
     },
     {
-      "name": "BECKWITT RICHARD",
+      "name": "WILLIAMS KIM",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -327,7 +318,16 @@
       "date": "2026-05-15"
     },
     {
-      "name": "EMMERT MARK A",
+      "name": "O'ROURKE JAMES CALVIN",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 - 22.98 per share.",
+      "value": 113199,
+      "shares": 12758,
+      "date": "2026-05-15"
+    },
+    {
+      "name": "SELZER LAWRENCE A",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

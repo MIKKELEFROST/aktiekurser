@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-13T21:34:52.020Z",
+  "updated_at": "2026-10-14T20:27:34.652Z",
   "source": "Yahoo Finance",
   "symbol": "AZZ",
   "summary": "AZZ Inc. provides hot-dip galvanizing and coil coating solutions in North America. It operates through the AZZ Metal Coatings; and the AZZ Precoat Metals segments. The company offers metal coating solutions for corrosion protection, including hot-dip galvanizing, spin galvanizing, powder coating, anodizing, and plating to the steel fabrication and other industries. It also provides aesthetic and corrosion protective coatings and related value-added services for steel and aluminum coil primarily serving the construction; appliance; heating, ventilation, and air conditioning; container; transportation; and other end markets. AZZ Inc. was incorporated in 1956 and is headquartered in Fort Worth, Texas.",
@@ -7,22 +7,22 @@
   "website": "https://www.azz.com",
   "employees": 3767,
   "ceo": "Mr. Thomas E. Ferguson",
-  "next_earnings": "2026-10-13",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-06",
+  "earnings_estimated": true,
   "earnings_call": "2026-10-14",
-  "eps_estimate": 1.84444,
+  "eps_estimate": 1.83478,
   "analysts": {
     "strong_buy": 0,
     "buy": 6,
-    "hold": 4,
+    "hold": 5,
     "sell": 0,
     "strong_sell": 0,
-    "total": 10
+    "total": 11
   },
-  "target_mean": 164,
+  "target_mean": 161.6,
   "target_high": 200,
-  "target_low": 144,
-  "target_analysts": 9,
+  "target_low": 140,
+  "target_analysts": 10,
   "statements": [
     {
       "year": "2023",
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.19,
-    "q1": 0.2149,
-    "y0": 0.14220001,
-    "y1": 0.1024
+    "q0": 0.20709999,
+    "q1": 0.14840001,
+    "y0": 0.1457,
+    "y1": 0.1007
   },
   "ratings": [
+    {
+      "date": "2026-10-14",
+      "firm": "Barclays",
+      "from": null,
+      "to": "Equal-Weight",
+      "action": "init"
+    },
     {
       "date": "2026-07-13",
       "firm": "B. Riley Securities",
@@ -139,13 +146,6 @@
       "firm": "B. Riley Securities",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2025-08-15",
-      "firm": "Baird",
-      "from": "Neutral",
-      "to": "Neutral",
       "action": "main"
     }
   ],
@@ -227,14 +227,14 @@
     "sells": 2,
     "bought": 139516,
     "sold": 6897,
-    "net_pct": 34.1
+    "net_pct": 34.3
   },
   "extras": {
-    "beta": 1.127,
-    "enterprise_value": 4681652736,
-    "ev_ebitda": 12.79,
-    "ev_revenue": 2.792,
-    "float_shares": 29480823,
+    "beta": null,
+    "enterprise_value": 4649175040,
+    "ev_ebitda": 12.134,
+    "ev_revenue": 2.662,
+    "float_shares": 29354545,
     "short_shares": 816019,
     "short_pct_float": 3.23,
     "short_ratio": 3.32,
@@ -243,15 +243,9 @@
   },
   "ex_dividend": "2026-10-19",
   "dividend_date": null,
-  "payout_ratio": 0.122,
-  "inst_count": 496,
+  "payout_ratio": 0.1514,
+  "inst_count": 494,
   "eps_history": [
-    {
-      "quarter": "2025-08-31",
-      "estimate": 1.574,
-      "actual": 1.55,
-      "surprise_pct": -1.52
-    },
     {
       "quarter": "2025-11-30",
       "estimate": 1.483,
@@ -269,6 +263,12 @@
       "estimate": 1.68778,
       "actual": 1.85,
       "surprise_pct": 9.61
+    },
+    {
+      "quarter": "2026-08-31",
+      "estimate": 1.84444,
+      "actual": 2,
+      "surprise_pct": 8.43
     }
   ],
   "insiders": [
@@ -289,24 +289,6 @@
       "value": 647981,
       "shares": 4220,
       "date": "2026-08-11"
-    },
-    {
-      "name": "BERCE DANIEL E",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 937,
-      "date": "2026-07-07"
-    },
-    {
-      "name": "TREADWAY CHARLES L",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 937,
-      "date": "2026-07-07"
     },
     {
       "name": "MCGOUGH EDWARD",
@@ -346,6 +328,24 @@
     },
     {
       "name": "SCHAPPER AARON M",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 937,
+      "date": "2026-07-07"
+    },
+    {
+      "name": "BERCE DANIEL E",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 937,
+      "date": "2026-07-07"
+    },
+    {
+      "name": "TREADWAY CHARLES L",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

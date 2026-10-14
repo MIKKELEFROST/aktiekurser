@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-13T21:34:53.317Z",
+  "updated_at": "2026-10-14T20:27:36.145Z",
   "source": "Yahoo Finance",
   "symbol": "NEE",
   "summary": "NextEra Energy, Inc., through its subsidiaries, generates, stores, transmits, distributes, and sells electric power to retail and wholesale customers in North America. It operates through Florida Power & Light Company (FPL) and NEER segments. The company generates electricity from wind, solar, nuclear, natural gas, and other clean energy assets. It also invests in generation, storage, transmission, and distribution facilities; owns, develops, constructs, manages, and operates generation facilities, including renewables, nuclear and natural gas, and battery storage facilities in the wholesale energy market in the United States and Canada, as well as electric and gas transmission assets, and natural gas pipelines; provides full energy and capacity requirement services; markets and trades in energy-related commodities; and participates in the production of natural gas, natural gas liquids, and oil. As of December 31, 2025, the company had approximately 35,963 megawatts of net generating capacity; approximately 93,000 circuit miles of transmission and distribution lines; and 932 substations. It serves approximately 12 million people through approximately 6 million customer accounts on the east and lower west coasts of Florida. The company was formerly known as FPL Group, Inc. and changed its name to NextEra Energy, Inc. in 2010. NextEra Energy, Inc. was founded in 1925 and is headquartered in Juno Beach, Florida.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-21",
   "earnings_estimated": false,
   "earnings_call": "2026-10-21",
-  "eps_estimate": 1.16878,
+  "eps_estimate": 1.17263,
   "analysts": {
     "strong_buy": 3,
     "buy": 12,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 22
   },
-  "target_mean": 97.05263,
+  "target_mean": 97,
   "target_high": 114,
   "target_low": 56,
   "target_analysts": 19,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.0343,
-    "q1": 0.16309999,
+    "q0": 0.0377,
+    "q1": 0.1539,
     "y0": 0.0834,
-    "y1": 0.0884
+    "y1": 0.088
   },
   "ratings": [
+    {
+      "date": "2026-10-14",
+      "firm": "Morgan Stanley",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-10-06",
       "firm": "Mizuho",
@@ -140,13 +147,6 @@
       "from": null,
       "to": "Outperform",
       "action": "init"
-    },
-    {
-      "date": "2026-05-26",
-      "firm": "Barclays",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
-      "action": "main"
     }
   ],
   "holders": [
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.639,
-    "enterprise_value": 282120421376,
-    "ev_ebitda": 19.333,
-    "ev_revenue": 9.83,
+    "enterprise_value": 281515524096,
+    "ev_ebitda": 19.291,
+    "ev_revenue": 9.809,
     "float_shares": 2081130990,
     "short_shares": 59319916,
     "short_pct_float": 2.85,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-08-28",
   "dividend_date": null,
   "payout_ratio": 0.53470004,
-  "inst_count": 3845,
+  "inst_count": 3838,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -291,6 +291,15 @@
       "date": "2026-03-09"
     },
     {
+      "name": "CREWS TERRELL KIRK II",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 31.72 - 45.65 per share.",
+      "value": 786599,
+      "shares": 19672,
+      "date": "2026-03-09"
+    },
+    {
       "name": "MAY JAMES MICHAEL",
       "role": "Officer and Treasurer",
       "kind": "sell",
@@ -309,15 +318,6 @@
       "date": "2026-03-09"
     },
     {
-      "name": "CREWS TERRELL KIRK II",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 31.72 - 45.65 per share.",
-      "value": 786599,
-      "shares": 19672,
-      "date": "2026-03-09"
-    },
-    {
       "name": "REAGAN RONALD R",
       "role": "Officer",
       "kind": "sell",
@@ -325,24 +325,6 @@
       "value": 482505,
       "shares": 5079,
       "date": "2026-02-17"
-    },
-    {
-      "name": "LANE AMY BETH",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 2130,
-      "date": "2026-02-12"
-    },
-    {
-      "name": "SIEVING CHARLES E",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 38958,
-      "date": "2026-02-12"
     },
     {
       "name": "KETCHUM JOHN W.",
@@ -354,12 +336,30 @@
       "date": "2026-02-12"
     },
     {
-      "name": "GURSAHANEY NAREN K",
+      "name": "CREWS TERRELL KIRK II",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 29755,
+      "date": "2026-02-12"
+    },
+    {
+      "name": "WILSON DARRYL L",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 2130,
+      "date": "2026-02-12"
+    },
+    {
+      "name": "MAY JAMES MICHAEL",
+      "role": "Officer and Treasurer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 8063,
       "date": "2026-02-12"
     }
   ],

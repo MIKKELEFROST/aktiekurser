@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-13T21:34:52.022Z",
+  "updated_at": "2026-10-14T20:27:34.656Z",
   "source": "Yahoo Finance",
   "symbol": "BAC",
   "summary": "Bank of America Corporation, through its subsidiaries, provides various financial products and services for individual consumers, small and middle-market businesses, institutional investors, large corporations, and governments worldwide. It operates through four segments: Consumer Banking, Global Wealth & Investment Management (GWIM), Global Banking, and Global Markets. The Consumer Banking segment offers traditional and money market savings accounts, certificates of deposit and IRAs, checking accounts, and investment accounts and products; credit and debit cards; residential mortgages and home equity loans; and direct and indirect loans. The GWIM segment provides investment management, brokerage, banking, and trust and retirement products and services; wealth management solutions; and customized solutions, including specialty asset management services. The Global Banking segment offers lending products and services, including commercial loans, leases, commitment facilities, trade finance, and commercial real estate and asset-based lending; treasury solutions, and underwriting and advisory services. The Global Markets segment provides market-making, financing, securities clearing, settlement, and custody services; securities and derivative products; and risk management products using interest rate, equity, credit, currency and commodity derivatives, foreign exchange, fixed-income, and mortgage-related products. Bank of America Corporation was founded in 1784 and is based in Charlotte, North Carolina.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-14",
   "earnings_estimated": false,
   "earnings_call": "2026-10-14",
-  "eps_estimate": 1.10222,
+  "eps_estimate": 1.17,
   "analysts": {
     "strong_buy": 6,
     "buy": 15,
@@ -19,16 +19,62 @@
     "strong_sell": 0,
     "total": 25
   },
-  "target_mean": 66.59091,
+  "target_mean": 66.36364,
   "target_high": 75,
   "target_low": 60,
   "target_analysts": 22,
-  "statements": null,
-  "quarterly": [],
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 94950000000,
+      "net": 26015000000,
+      "margin": 27.4
+    },
+    {
+      "year": "2023",
+      "revenue": 98581000000,
+      "net": 24866000000,
+      "margin": 25.2
+    },
+    {
+      "year": "2024",
+      "revenue": 101887000000,
+      "net": 25503000000,
+      "margin": 25
+    },
+    {
+      "year": "2025",
+      "revenue": 113097000000,
+      "net": 29055000000,
+      "margin": 25.7
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "4Q2025",
+      "revenue": 28367000000,
+      "earnings": 7319000000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 30272000000,
+      "earnings": 8155000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 31558000000,
+      "earnings": 8748000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 29958000000,
+      "earnings": 6541000000
+    }
+  ],
   "growth": {
-    "q0": 0.0398,
-    "q1": 0.1664,
-    "y0": 0.19940001,
+    "q0": 0.19389999,
+    "q1": 0.1416,
+    "y0": 0.2021,
     "y1": 0.146
   },
   "ratings": [
@@ -185,9 +231,9 @@
   },
   "extras": {
     "beta": 1.214,
-    "enterprise_value": 327503216640,
+    "enterprise_value": 323167715328,
     "ev_ebitda": null,
-    "ev_revenue": 2.875,
+    "ev_revenue": 2.837,
     "float_shares": 6965057081,
     "short_shares": 85650135,
     "short_pct_float": 1.23,
@@ -198,14 +244,8 @@
   "ex_dividend": "2026-09-04",
   "dividend_date": null,
   "payout_ratio": 0.2587,
-  "inst_count": 4515,
+  "inst_count": 4510,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.9461,
-      "actual": 1.06,
-      "surprise_pct": 12.04
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.95866,
@@ -223,6 +263,12 @@
       "estimate": 1.12309,
       "actual": 1.21,
       "surprise_pct": 7.74
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.10665,
+      "actual": 0.91,
+      "surprise_pct": -17.77
     }
   ],
   "insiders": [
@@ -281,6 +327,15 @@
       "date": "2026-05-05"
     },
     {
+      "name": "DONALD ARNOLD WAYNE",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 5365,
+      "date": "2026-05-04"
+    },
+    {
       "name": "WOODS THOMAS D",
       "role": "Director",
       "kind": "other",
@@ -300,15 +355,6 @@
     },
     {
       "name": "ALMEIDA JOSE E.",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 5365,
-      "date": "2026-05-04"
-    },
-    {
-      "name": "MARTINEZ MARIA N.",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
