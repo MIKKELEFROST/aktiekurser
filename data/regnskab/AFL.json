@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T20:27:34.424Z",
+  "updated_at": "2026-10-15T20:08:17.206Z",
   "source": "Yahoo Finance",
   "symbol": "AFL",
   "summary": "Aflac Incorporated, through its subsidiaries, provides supplemental health and life insurance products. It operates in two segments, Aflac Japan and Aflac U.S. The Aflac Japan segment offers cancer, medical, nursing care, whole life, and GIFT insurance products, as well as WAYS and child endowment, and Tsumitasu insurance products in Japan. Its Aflac U.S. segment provides accident, disability, cancer, critical illness, hospital indemnity, dental, vision, and life insurance products in the United States. The company also provides hearing, final expense, pet, Medicare supplement, supplemental dental and vision, short-term disability, and absence management insurance products, as well as cafeteria plans. It sells its products to individuals, families, and business owners through individual, independent corporate, and affiliated corporate agencies; banks; independent associates/career agents; and brokers. Aflac Incorporated was founded in 1955 and is headquartered in Columbus, Georgia.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 1.79948,
+  "eps_estimate": 1.79681,
   "analysts": {
     "strong_buy": 2,
     "buy": 1,
@@ -19,7 +19,7 @@
     "strong_sell": 1,
     "total": 15
   },
-  "target_mean": 117.13333,
+  "target_mean": 117.33333,
   "target_high": 138,
   "target_low": 101,
   "target_analysts": 15,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": -0.2773,
-    "q1": 0.1009,
-    "y0": -0.0621,
-    "y1": 0.0825
+    "q0": -0.2784,
+    "q1": 0.102299996,
+    "y0": -0.0622,
+    "y1": 0.0841
   },
   "ratings": [
+    {
+      "date": "2026-10-15",
+      "firm": "JP Morgan",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-10-12",
       "firm": "Wells Fargo",
@@ -139,13 +146,6 @@
       "firm": "Keefe, Bruyette & Woods",
       "from": "Market Perform",
       "to": "Market Perform",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-10",
-      "firm": "Piper Sandler",
-      "from": "Overweight",
-      "to": "Overweight",
       "action": "main"
     }
   ],
@@ -224,17 +224,17 @@
   "insider_net": {
     "period": "6m",
     "buys": 13,
-    "sells": 74,
+    "sells": 76,
     "bought": 45645,
-    "sold": 1331421,
+    "sold": 1355621,
     "net_pct": -2.3
   },
   "extras": {
     "beta": 0.556,
-    "enterprise_value": 65617412096,
-    "ev_ebitda": 10.819,
-    "ev_revenue": 3.631,
-    "float_shares": 497011692,
+    "enterprise_value": 66504790016,
+    "ev_ebitda": 10.965,
+    "ev_revenue": 3.681,
+    "float_shares": 497016705,
     "short_shares": 11649434,
     "short_pct_float": 3.01,
     "short_ratio": 5.19,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-08-19",
   "dividend_date": null,
   "payout_ratio": 0.2559,
-  "inst_count": 2130,
+  "inst_count": 2129,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -272,6 +272,24 @@
     }
   ],
   "insiders": [
+    {
+      "name": "JAPAN POST HOLDINGS CO., LTD.",
+      "role": "Beneficial Owner of more than 10% of a Class of Security",
+      "kind": "sell",
+      "text": "Sale at price 115.83 - 116.24 per share.",
+      "value": 1413426,
+      "shares": 12200,
+      "date": "2026-10-12"
+    },
+    {
+      "name": "JAPAN POST HOLDINGS CO., LTD.",
+      "role": "Beneficial Owner of more than 10% of a Class of Security",
+      "kind": "sell",
+      "text": "Sale at price 114.72 - 115.52 per share.",
+      "value": 1376672,
+      "shares": 12000,
+      "date": "2026-10-09"
+    },
     {
       "name": "JAPAN POST HOLDINGS CO., LTD.",
       "role": "Beneficial Owner of more than 10% of a Class of Security",
@@ -343,24 +361,6 @@
       "value": 1374068,
       "shares": 12100,
       "date": "2026-09-25"
-    },
-    {
-      "name": "JAPAN POST HOLDINGS CO., LTD.",
-      "role": "Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "sell",
-      "text": "Sale at price 114.21 - 115.28 per share.",
-      "value": 1387177,
-      "shares": 12100,
-      "date": "2026-09-24"
-    },
-    {
-      "name": "JAPAN POST HOLDINGS CO., LTD.",
-      "role": "Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "sell",
-      "text": "Sale at price 114.55 per share.",
-      "value": 1397510,
-      "shares": 12200,
-      "date": "2026-09-22"
     }
   ],
   "dividends": [

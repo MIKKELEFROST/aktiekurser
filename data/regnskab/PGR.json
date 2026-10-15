@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T20:27:36.432Z",
+  "updated_at": "2026-10-15T20:08:20.194Z",
   "source": "Yahoo Finance",
   "symbol": "PGR",
   "summary": "The Progressive Corporation operates as an insurance company in the United States. It writes insurance for personal autos and special lines products, including motorcycles, RVs, and watercraft; and personal residential property insurance for homeowners and renters. The company also writes auto-related liability and physical damage insurance for comprising dump trucks, log trucks, garbage trucks, tractors, trailers, straight trucks, tow trucks and wreckers, vans, pick-up trucks, and autos; business-related general liability and commercial property insurance for small businesses; and workers' compensation insurance for the transportation industry. In addition, it offers other specialty property-casualty insurance and provides related services; personal property reinsurance products; and involved in investment activities. It sells its products through independent insurance agencies, as well as online and over the phone. The Progressive Corporation was founded in 1937 and is headquartered in Mayfield, Ohio.",
@@ -9,8 +9,8 @@
   "ceo": "Ms. Susan Patricia Griffith",
   "next_earnings": "2026-10-14",
   "earnings_estimated": false,
-  "earnings_call": "2026-08-04",
-  "eps_estimate": 4.16827,
+  "earnings_call": "2026-11-03",
+  "eps_estimate": 4.16578,
   "analysts": {
     "strong_buy": 4,
     "buy": 4,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 24
   },
-  "target_mean": 232.7619,
-  "target_high": 314,
-  "target_low": 198,
+  "target_mean": 229.42857,
+  "target_high": 266,
+  "target_low": 196,
   "target_analysts": 21,
   "statements": [
     {
@@ -72,12 +72,26 @@
     }
   ],
   "growth": {
-    "q0": -0.1071,
-    "q1": -0.1075,
-    "y0": 0.0058,
-    "y1": -0.1093
+    "q0": -0.107700005,
+    "q1": -0.111099996,
+    "y0": 0.007900001,
+    "y1": -0.1161
   },
   "ratings": [
+    {
+      "date": "2026-10-15",
+      "firm": "Wells Fargo",
+      "from": "Underweight",
+      "to": "Underweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-15",
+      "firm": "Keefe, Bruyette & Woods",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
     {
       "date": "2026-10-07",
       "firm": "Barclays",
@@ -133,20 +147,6 @@
       "from": "Neutral",
       "to": "Neutral",
       "action": "main"
-    },
-    {
-      "date": "2026-08-04",
-      "firm": "JP Morgan",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-24",
-      "firm": "Morgan Stanley",
-      "from": "Underweight",
-      "to": "Equal-Weight",
-      "action": "up"
     }
   ],
   "holders": [
@@ -227,14 +227,14 @@
     "sells": 15,
     "bought": 274750,
     "sold": 124148,
-    "net_pct": 11.9
+    "net_pct": 12
   },
   "extras": {
-    "beta": 0.235,
-    "enterprise_value": 135807139840,
-    "ev_ebitda": 8.82,
-    "ev_revenue": 1.492,
-    "float_shares": 579110234,
+    "beta": null,
+    "enterprise_value": 129964072960,
+    "ev_ebitda": 8.474,
+    "ev_revenue": 1.417,
+    "float_shares": 577245745,
     "short_shares": 6810980,
     "short_pct_float": 1.18,
     "short_ratio": 2.48,
@@ -327,21 +327,12 @@
       "date": "2026-07-28"
     },
     {
-      "name": "BAILO KAREN",
+      "name": "MURPHY JOHN JOSEPH",
       "role": "Officer",
       "kind": "sell",
-      "text": "Sale at price 212.71 per share.",
-      "value": 1797825,
-      "shares": 8452,
-      "date": "2026-07-27"
-    },
-    {
-      "name": "BAUER JONATHAN S",
-      "role": "Chief Investment Officer",
-      "kind": "sell",
-      "text": "Sale at price 212.71 per share.",
-      "value": 476896,
-      "shares": 2242,
+      "text": "Sale at price 212.70 per share.",
+      "value": 1727975,
+      "shares": 8124,
       "date": "2026-07-27"
     },
     {
@@ -354,12 +345,21 @@
       "date": "2026-07-27"
     },
     {
-      "name": "MURPHY JOHN JOSEPH",
+      "name": "BAUER JONATHAN S",
+      "role": "Chief Investment Officer",
+      "kind": "sell",
+      "text": "Sale at price 212.71 per share.",
+      "value": 476896,
+      "shares": 2242,
+      "date": "2026-07-27"
+    },
+    {
+      "name": "BAILO KAREN",
       "role": "Officer",
       "kind": "sell",
-      "text": "Sale at price 212.70 per share.",
-      "value": 1727975,
-      "shares": 8124,
+      "text": "Sale at price 212.71 per share.",
+      "value": 1797825,
+      "shares": 8452,
       "date": "2026-07-27"
     }
   ],

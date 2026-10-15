@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T20:27:35.224Z",
+  "updated_at": "2026-10-15T20:08:18.053Z",
   "source": "Yahoo Finance",
   "symbol": "DUK",
   "summary": "Duke Energy Corporation, through its subsidiaries, operates as an energy company in the United States. The company operates through two segments: Electric Utilities and Infrastructure (EU&I); and Gas Utilities and Infrastructure (GU&I). The EU&I segment generates, transmits, distributes, and sells electricity to customers in the Southeast and Midwest regions. It generates electricity through coal, hydroelectric, natural gas, oil, renewables, and nuclear fuel. This segment also engages in the wholesale of electricity to municipalities, electric cooperative utilities, and other load-serving entities. The GU&I segment distributes natural gas to customers in the residential, commercial, industrial, and power generation natural gas sectors; and invests in pipeline transmission projects, renewable natural gas projects, and natural gas storage facilities. The company was formerly known as Duke Energy Holding Corp. and changed its name to Duke Energy Corporation in April 2006. Duke Energy Corporation was founded in 1904 and is headquartered in Charlotte, North Carolina.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 1.83144,
+  "eps_estimate": 1.83298,
   "analysts": {
     "strong_buy": 3,
     "buy": 9,
@@ -19,8 +19,8 @@
     "strong_sell": 0,
     "total": 22
   },
-  "target_mean": 133.94444,
-  "target_high": 147,
+  "target_mean": 133.72221,
+  "target_high": 143,
   "target_low": 121,
   "target_analysts": 18,
   "statements": [
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 7508000000,
-      "earnings": 971000000
-    },
-    {
       "q": "3Q2025",
       "revenue": 8542000000,
       "earnings": 1407000000
@@ -69,13 +64,18 @@
       "q": "1Q2026",
       "revenue": 9178000000,
       "earnings": 1536000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 7592000000,
+      "earnings": 1077000000
     }
   ],
   "growth": {
-    "q0": 0.0117999995,
-    "q1": 0.025799999,
-    "y0": 0.0637,
-    "y1": 0.0679
+    "q0": 0.0127,
+    "q1": 0.0275,
+    "y0": 0.0641,
+    "y1": 0.067600004
   },
   "ratings": [
     {
@@ -200,18 +200,18 @@
       "date": "2026-06-30"
     },
     {
+      "name": "SELECT SECTOR SPDR TRUST-State Street Utilities Select Sector SPDR ETF",
+      "kind": "fond",
+      "pct": 1.77,
+      "shares": 13797843,
+      "date": "2026-09-30"
+    },
+    {
       "name": "Morgan Stanley",
       "kind": "institution",
       "pct": 1.68,
       "shares": 13107459,
       "date": "2026-06-30"
-    },
-    {
-      "name": "SELECT SECTOR SPDR TRUST-State Street Utilities Select Sector SPDR ETF",
-      "kind": "fond",
-      "pct": 1.66,
-      "shares": 12954296,
-      "date": "2026-08-31"
     },
     {
       "name": "Massachusetts Financial Services Co.",
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.345,
-    "enterprise_value": 186770997248,
-    "ev_ebitda": 11.24,
-    "ev_revenue": 5.694,
+    "enterprise_value": 187901575168,
+    "ev_ebitda": 11.308,
+    "ev_revenue": 5.728,
     "float_shares": 777480042,
     "short_shares": 17780284,
     "short_pct_float": 2.54,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-11-13",
   "dividend_date": null,
   "payout_ratio": 0.6416,
-  "inst_count": 2979,
+  "inst_count": 2980,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -300,24 +300,6 @@
       "date": "2026-05-08"
     },
     {
-      "name": "CRAVER THEODORE F JR",
-      "role": "Chairman of the Board",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 124.87 per share.",
-      "value": 299938,
-      "shares": 2402,
-      "date": "2026-05-07"
-    },
-    {
-      "name": "DORSA CAROLINE D",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 124.87 per share.",
-      "value": 200042,
-      "shares": 1602,
-      "date": "2026-05-07"
-    },
-    {
       "name": "DAVIS ROBERT M",
       "role": "Director",
       "kind": "other",
@@ -345,13 +327,22 @@
       "date": "2026-05-07"
     },
     {
-      "name": "REPKO REGIS T",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 131.00 per share.",
-      "value": 86853,
-      "shares": 663,
-      "date": "2026-03-02"
+      "name": "CRAVER THEODORE F JR",
+      "role": "Chairman of the Board",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 124.87 per share.",
+      "value": 299938,
+      "shares": 2402,
+      "date": "2026-05-07"
+    },
+    {
+      "name": "DORSA CAROLINE D",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 124.87 per share.",
+      "value": 200042,
+      "shares": 1602,
+      "date": "2026-05-07"
     },
     {
       "name": "GHARTEY-TAGOE KODWO",
@@ -360,6 +351,15 @@
       "text": "Sale at price 131.54 - 132.06 per share.",
       "value": 2400653,
       "shares": 18246,
+      "date": "2026-03-02"
+    },
+    {
+      "name": "REPKO REGIS T",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 131.00 per share.",
+      "value": 86853,
+      "shares": 663,
       "date": "2026-03-02"
     }
   ],

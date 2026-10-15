@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T20:27:37.018Z",
+  "updated_at": "2026-10-15T20:08:19.954Z",
   "source": "Yahoo Finance",
   "symbol": "VRT",
   "summary": "Vertiv Holdings Co designs, manufactures, and services critical digital infrastructure technologies and life cycle services for data centers, communication networks, and commercial and industrial environments in the Americas, the Asia Pacific, Europe, the Middle East, and Africa. The company offers AC and DC power management products, low/medium voltage switchgear, busbar, thermal management products, air cooled and liquid cooled thermal management products, integrated modular solutions, racks, single phase UPS, rack power distribution, rack thermal systems, configurable integrated solutions, energy storage solutions, hardware, and software infrastructure that are integral to the technologies used for various services, including artificial intelligence, e-commerce, online banking, file sharing, video on-demand, energy storage, wireless communications, Internet of Things, and online gaming. It also provides lifecycle management services, predictive analytics, and professional services for deploying, maintaining, and optimizing its products and their related systems; and preventative maintenance, acceptance testing, engineering and consulting, fluid management, performance assessments, remote monitoring, training, spare parts, and critical digital infrastructure software services. The company offers its products primarily under the Vertiv, Liebert, NetSure, Geist, Energy Labs, ERS, Albér, and Avocent brands. It serves through a network of direct sales professionals, independent sales representatives, channel partners, and original equipment manufacturers. The company is headquartered in Westerville, Ohio.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-28",
   "earnings_estimated": false,
   "earnings_call": "2026-10-28",
-  "eps_estimate": 1.82923,
+  "eps_estimate": 1.8284,
   "analysts": {
     "strong_buy": 3,
     "buy": 23,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 30
   },
-  "target_mean": 335.64285,
+  "target_mean": 335.14285,
   "target_high": 427,
   "target_low": 236,
   "target_analysts": 28,
@@ -51,6 +51,11 @@
   ],
   "quarterly": [
     {
+      "q": "2Q2025",
+      "revenue": 2638100000,
+      "earnings": 324200000
+    },
+    {
       "q": "3Q2025",
       "revenue": 2675800000,
       "earnings": 398500000
@@ -64,20 +69,22 @@
       "q": "1Q2026",
       "revenue": 2649500000,
       "earnings": 390100000
-    },
-    {
-      "q": "2Q2026",
-      "revenue": 3274300000,
-      "earnings": 497800000
     }
   ],
   "growth": {
-    "q0": 0.4752,
-    "q1": 0.6286,
+    "q0": 0.4745,
+    "q1": 0.6292,
     "y0": 0.6046,
-    "y1": 0.3646
+    "y1": 0.3641
   },
   "ratings": [
+    {
+      "date": "2026-10-15",
+      "firm": "Mizuho",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
     {
       "date": "2026-10-14",
       "firm": "RBC Capital",
@@ -139,13 +146,6 @@
       "firm": "Citigroup",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-30",
-      "firm": "Keybanc",
-      "from": "Overweight",
-      "to": "Overweight",
       "action": "main"
     }
   ],
@@ -231,10 +231,10 @@
   },
   "extras": {
     "beta": 2.048,
-    "enterprise_value": 91581440000,
-    "ev_ebitda": 34.187,
-    "ev_revenue": 7.978,
-    "float_shares": 383844758,
+    "enterprise_value": 86014517248,
+    "ev_ebitda": 32.109,
+    "ev_revenue": 7.493,
+    "float_shares": 383848608,
     "short_shares": 14384504,
     "short_pct_float": 3.74,
     "short_ratio": 2.75,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-09-14",
   "dividend_date": null,
   "payout_ratio": 0.0509,
-  "inst_count": 2714,
+  "inst_count": 2709,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -293,15 +293,6 @@
     {
       "name": "MONSER EDWARD L",
       "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 249.43 - 256.36 per share.",
-      "value": 3880209,
-      "shares": 15287,
-      "date": "2026-09-01"
-    },
-    {
-      "name": "MONSER EDWARD L",
-      "role": "Director",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 11.50 per share.",
       "value": 175800,
@@ -309,31 +300,13 @@
       "date": "2026-09-01"
     },
     {
-      "name": "ALBERTAZZI GIORDANO",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 9,
-      "date": "2026-06-25"
-    },
-    {
-      "name": "GILL STEPHANIE L",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 4,
-      "date": "2026-06-25"
-    },
-    {
-      "name": "SANGHI ANAND",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 3,
-      "date": "2026-06-25"
+      "name": "MONSER EDWARD L",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 249.43 - 256.36 per share.",
+      "value": 3880209,
+      "shares": 15287,
+      "date": "2026-09-01"
     },
     {
       "name": "RYAN PAUL",
@@ -342,6 +315,33 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 2,
+      "date": "2026-06-25"
+    },
+    {
+      "name": "ARMUL SCOTT",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 4,
+      "date": "2026-06-25"
+    },
+    {
+      "name": "SHEN WEI",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 0,
+      "date": "2026-06-25"
+    },
+    {
+      "name": "CHAMBERLIN CRAIG",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 1,
       "date": "2026-06-25"
     },
     {

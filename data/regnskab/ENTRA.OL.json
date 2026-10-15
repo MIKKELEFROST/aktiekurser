@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-13T21:34:52.589Z",
+  "updated_at": "2026-10-15T20:08:18.145Z",
   "source": "Yahoo Finance",
   "symbol": "ENTRA.OL",
   "summary": "Entra ASA develops real estate properties in Oslo, Bergen, Drammen, Sandvika, and Stavanger. It owns and operates office and commercial property, as well as residential property. The company was founded in 2000 and is headquartered in Oslo, Norway.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-15",
   "earnings_estimated": false,
   "earnings_call": "2026-10-15",
-  "eps_estimate": 1.59,
+  "eps_estimate": 1.49,
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 767000000,
-      "earnings": 224000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 787000000,
       "earnings": 344000000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 781000000,
       "earnings": -838000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 782000000,
+      "earnings": -450000000
     }
   ],
   "growth": {
-    "q0": 0.252,
-    "q1": -0.1183,
+    "q0": -0.1183,
+    "q1": 0.1429,
     "y0": 0.13939999,
     "y1": -0.034
   },
@@ -160,9 +160,9 @@
   },
   "extras": {
     "beta": 1.208,
-    "enterprise_value": 49164759040,
-    "ev_ebitda": 18.78,
-    "ev_revenue": 16.677,
+    "enterprise_value": 49418506240,
+    "ev_ebitda": 18.876,
+    "ev_revenue": 16.763,
     "float_shares": 108235507,
     "short_shares": null,
     "short_pct_float": null,
@@ -175,12 +175,6 @@
   "payout_ratio": 0.1765,
   "inst_count": 82,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.765,
-      "actual": 1.27,
-      "surprise_pct": -28.05
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.76,
@@ -198,6 +192,12 @@
       "estimate": 1.63,
       "actual": 1.61,
       "surprise_pct": -1.23
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.59,
+      "actual": 1.19,
+      "surprise_pct": -25.16
     }
   ],
   "insiders": [],

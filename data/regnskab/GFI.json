@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T20:27:35.511Z",
+  "updated_at": "2026-10-15T20:08:18.376Z",
   "source": "Yahoo Finance",
   "symbol": "GFI",
   "summary": "Gold Fields Limited operates as a gold producer with reserves and resources in South Africa, Ghana, Australia, Peru, Canada, and Chile. It also explores for gold, copper and silver deposits. Gold Fields Limited was founded in 1887 and is based in Sandton, South Africa.",
@@ -23,15 +23,68 @@
   "target_high": 57,
   "target_low": 40.5,
   "target_analysts": 7,
-  "statements": null,
-  "quarterly": [],
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 78265282590,
+      "net": 12936147300,
+      "margin": 16.5
+    },
+    {
+      "year": "2023",
+      "revenue": 86260416200,
+      "net": 13292159010,
+      "margin": 15.4
+    },
+    {
+      "year": "2024",
+      "revenue": 96613998240,
+      "net": 23124505500,
+      "margin": 23.9
+    },
+    {
+      "year": "2025",
+      "revenue": 140290340040,
+      "net": 57188275920,
+      "margin": 40.8
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "4Q2015",
+      "revenue": 9815741470,
+      "earnings": 0
+    },
+    {
+      "q": "3Q2017",
+      "revenue": 17540661600,
+      "earnings": 0
+    },
+    {
+      "q": "1Q2018",
+      "revenue": 16404334800,
+      "earnings": 0
+    },
+    {
+      "q": "1Q2021",
+      "revenue": 0,
+      "earnings": 186852900
+    }
+  ],
   "growth": {
     "q0": null,
     "q1": null,
-    "y0": 0.48540002,
-    "y1": 0.1713
+    "y0": 0.48209998,
+    "y1": 0.1749
   },
   "ratings": [
+    {
+      "date": "2026-10-15",
+      "firm": "Goldman Sachs",
+      "from": null,
+      "to": "Neutral",
+      "action": "init"
+    },
     {
       "date": "2026-09-16",
       "firm": "RBC Capital",
@@ -94,13 +147,6 @@
       "from": "Overweight",
       "to": "Overweight",
       "action": "main"
-    },
-    {
-      "date": "2025-11-26",
-      "firm": "Citigroup",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
     }
   ],
   "holders": [
@@ -114,9 +160,9 @@
     {
       "name": "VanEck ETF Trust-VanEck Gold Miners ETF",
       "kind": "fond",
-      "pct": 3.15,
-      "shares": 27965960,
-      "date": "2026-08-31"
+      "pct": 3.11,
+      "shares": 27571728,
+      "date": "2026-09-30"
     },
     {
       "name": "Blackrock Inc.",
@@ -185,9 +231,9 @@
   },
   "extras": {
     "beta": 0.637,
-    "enterprise_value": 65436860416,
-    "ev_ebitda": 9.178,
-    "ev_revenue": 5.755,
+    "enterprise_value": 64029245440,
+    "ev_ebitda": 8.981,
+    "ev_revenue": 5.631,
     "float_shares": 1781187258,
     "short_shares": 4866445,
     "short_pct_float": 0.68,

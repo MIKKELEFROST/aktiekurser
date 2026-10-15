@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T20:27:35.276Z",
+  "updated_at": "2026-10-15T20:08:18.110Z",
   "source": "Yahoo Finance",
   "symbol": "ELF",
   "summary": "e.l.f. Beauty, Inc., a beauty company, provides cosmetics and skin care products worldwide. The company offers eye, lip, face, and skin care products. It offers products under the e.l.f. Cosmetics, e.l.f. Skin, Well People, Naturium, and Rhode brand names. The company sells its products through national and international retailers and direct-to-consumer through its e-commerce channel. The company was formerly known as J.A. Cosmetics Holdings, Inc. and changed its name to e.l.f. Beauty, Inc. in April 2016. e.l.f. Beauty, Inc. was founded in 2004 and is headquartered in Oakland, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": true,
   "earnings_call": "2026-08-05",
-  "eps_estimate": 0.57906,
+  "eps_estimate": 0.57948,
   "analysts": {
     "strong_buy": 1,
     "buy": 11,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 18
   },
-  "target_mean": 105.75,
+  "target_mean": 108.875,
   "target_high": 130,
   "target_low": 65,
   "target_analysts": 16,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": -0.14840001,
-    "q1": -0.3129,
-    "y0": 0.1593,
-    "y1": 0.0656
+    "q0": -0.1478,
+    "q1": -0.2958,
+    "y0": 0.1626,
+    "y1": 0.072
   },
   "ratings": [
+    {
+      "date": "2026-10-15",
+      "firm": "Morgan Stanley",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
     {
       "date": "2026-10-14",
       "firm": "Citigroup",
@@ -139,13 +146,6 @@
       "firm": "JP Morgan",
       "from": "Overweight",
       "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-19",
-      "firm": "Canaccord Genuity",
-      "from": "Buy",
-      "to": "Buy",
       "action": "main"
     }
   ],
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 25,
-    "sells": 26,
+    "sells": 27,
     "bought": 680068,
-    "sold": 348940,
-    "net_pct": 24.1
+    "sold": 357306,
+    "net_pct": 23.3
   },
   "extras": {
     "beta": 1.603,
-    "enterprise_value": 6967364096,
-    "ev_ebitda": 33.263,
-    "ev_revenue": 3.954,
+    "enterprise_value": 6965593600,
+    "ev_ebitda": 33.255,
+    "ev_revenue": 3.953,
     "float_shares": 57387636,
     "short_shares": 4108333,
     "short_pct_float": 8.21,
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "FRANKS JOSHUA ALLEN",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 110.01 per share.",
+      "value": 920310,
+      "shares": 8366,
+      "date": "2026-10-12"
+    },
     {
       "name": "AMIN TARANG P",
       "role": "Chief Executive Officer",
@@ -336,30 +345,21 @@
       "date": "2026-09-01"
     },
     {
-      "name": "KEITH LORI A.",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 1985,
-      "date": "2026-08-20"
-    },
-    {
-      "name": "MITCHELL KENNETH JR.",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 1980,
-      "date": "2026-08-20"
-    },
-    {
-      "name": "DANIELE TIFFANY F",
+      "name": "FARRELL MATTHEW T",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 1421,
+      "date": "2026-08-20"
+    },
+    {
+      "name": "BERGH CHARLES V",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 1878,
       "date": "2026-08-20"
     }
   ],

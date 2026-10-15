@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T20:27:37.340Z",
+  "updated_at": "2026-10-15T20:08:19.803Z",
   "source": "Yahoo Finance",
   "symbol": "TSM",
   "summary": "Taiwan Semiconductor Manufacturing Company Limited, together with its subsidiaries, manufactures, packages, tests, and sells integrated circuits and other semiconductor devices in Taiwan, China, Europe, the Middle East, Africa, Japan, the United States, and internationally. It provides various wafer fabrication processes, such as processes to manufacture complementary metal- oxide-semiconductor (CMOS) logic, mixed-signal, radio frequency, embedded memory, bipolar CMOS mixed-signal, and others. The company also involved in providing customer and engineering support services; manufacturing of masks; investment in technology start-up companies; research, designing, developing, manufacturing, packaging, testing, and sale of color filters; and investment activities. Its products are used in high performance computing, smartphones, Internet of things, automotive, and digital consumer electronics. Taiwan Semiconductor Manufacturing Company Limited was incorporated in 1987 and is headquartered in Hsinchu City, Taiwan.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-15",
   "earnings_estimated": false,
   "earnings_call": "2026-10-15",
-  "eps_estimate": 4.52449,
+  "eps_estimate": 5.07666,
   "analysts": {
     "strong_buy": 6,
     "buy": 14,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 21
   },
-  "target_mean": 578.222,
+  "target_mean": 579.672,
   "target_high": 1000,
   "target_low": 440,
   "target_analysts": 20,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 989918000000,
-      "earnings": 452302000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 1046090000000,
       "earnings": 505744000000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 1270380000000,
       "earnings": 706560000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1494243000000,
+      "earnings": 763064000000
     }
   ],
   "growth": {
-    "q0": 0.5495,
-    "q1": 0.6084,
-    "y0": 0.6011,
-    "y1": 0.30879998
+    "q0": 0.6168,
+    "q1": 0.455,
+    "y0": 0.64059997,
+    "y1": 0.2794
   },
   "ratings": [
+    {
+      "date": "2026-10-15",
+      "firm": "Needham",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-06",
       "firm": "Barclays",
@@ -139,13 +146,6 @@
       "firm": "B of A Securities",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-06-22",
-      "firm": "Susquehanna",
-      "from": "Positive",
-      "to": "Positive",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.239,
-    "enterprise_value": 16061326950400,
-    "ev_ebitda": 5.071,
-    "ev_revenue": 3.617,
+    "enterprise_value": 15433971269632,
+    "ev_ebitda": 4.873,
+    "ev_revenue": 3.476,
     "float_shares": 37843003812,
     "short_shares": 30492512,
     "short_pct_float": 0.63,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-12-10",
   "dividend_date": null,
   "payout_ratio": 0.2544,
-  "inst_count": 4661,
+  "inst_count": 4667,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 2.62516,
-      "actual": 2.92,
-      "surprise_pct": 11.23
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 2.97556,
@@ -269,6 +263,12 @@
       "estimate": 3.88658,
       "actual": 4.31,
       "surprise_pct": 10.89
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 4.52449,
+      "actual": 4.6,
+      "surprise_pct": 1.67
     }
   ],
   "insiders": [

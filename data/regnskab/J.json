@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T20:27:35.800Z",
+  "updated_at": "2026-10-15T20:08:18.686Z",
   "source": "Yahoo Finance",
   "symbol": "J",
   "summary": "Jacobs Solutions Inc. engages in the infrastructure and advanced facilities, and consulting businesses in the United States, Europe, Canada, India, Asia, Australia, New Zealand, the Middle East, and Africa. The company provides consulting, planning, architecture, design, engineering, and infrastructure delivery services including project, program, and construction management and long-term operation of facilities. It also offers consulting services for consumer and manufacturing, defense and security, energy and utilities, financial services, government, health and life sciences, and transport sectors. The company was founded in 1947 and is headquartered in Dallas, Texas.",
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 16
   },
-  "target_mean": 162.46667,
+  "target_mean": 162.33333,
   "target_high": 181,
   "target_low": 144,
   "target_analysts": 15,
@@ -51,6 +51,11 @@
   ],
   "quarterly": [
     {
+      "q": "2Q2025",
+      "revenue": 3031768000,
+      "earnings": 179605000
+    },
+    {
       "q": "3Q2025",
       "revenue": 3154644000,
       "earnings": 122250000
@@ -64,20 +69,22 @@
       "q": "1Q2026",
       "revenue": 3694881000,
       "earnings": -45883000
-    },
-    {
-      "q": "2Q2026",
-      "revenue": 4076410000,
-      "earnings": 136553000
     }
   ],
   "growth": {
     "q0": 0.2138,
     "q1": 0.173,
     "y0": 0.1873,
-    "y1": 0.1361
+    "y1": 0.1356
   },
   "ratings": [
+    {
+      "date": "2026-10-15",
+      "firm": "Keybanc",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-10-05",
       "firm": "Truist Securities",
@@ -139,13 +146,6 @@
       "firm": "Citigroup",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-05-06",
-      "firm": "Truist Securities",
-      "from": "Hold",
-      "to": "Hold",
       "action": "main"
     }
   ],
@@ -231,10 +231,10 @@
   },
   "extras": {
     "beta": 0.698,
-    "enterprise_value": 19504601088,
-    "ev_ebitda": 18.462,
-    "ev_revenue": 1.372,
-    "float_shares": 116205296,
+    "enterprise_value": 19481192448,
+    "ev_ebitda": 18.44,
+    "ev_revenue": 1.37,
+    "float_shares": 116280201,
     "short_shares": 4023092,
     "short_pct_float": 3.93,
     "short_ratio": 4.88,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-08-21",
   "dividend_date": null,
   "payout_ratio": 0.4518,
-  "inst_count": 1215,
+  "inst_count": 1216,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -336,16 +336,7 @@
       "date": "2026-03-06"
     },
     {
-      "name": "BRYANT DIANE M",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 136.29 per share.",
-      "value": 222970,
-      "shares": 1636,
-      "date": "2026-01-29"
-    },
-    {
-      "name": "KISER GEORGETTE D.",
+      "name": "MCNAMARA ROBERT A",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 136.29 per share.",
@@ -354,7 +345,16 @@
       "date": "2026-01-29"
     },
     {
-      "name": "FERNANDEZ MANUEL J",
+      "name": "PINKHAM LOUIS V",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 136.29 per share.",
+      "value": 200074,
+      "shares": 1468,
+      "date": "2026-01-29"
+    },
+    {
+      "name": "COLLINS MICHAEL",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 136.29 per share.",

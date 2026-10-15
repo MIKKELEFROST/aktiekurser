@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T20:27:35.361Z",
+  "updated_at": "2026-10-15T20:08:18.214Z",
   "source": "Yahoo Finance",
   "symbol": "EXE",
   "summary": "Expand Energy Corporation operates as an independent natural gas production company in the United States. The company engages in acquisition, exploration, and development of properties to produce oil, natural gas, and natural gas liquids. It holds interests in the Marcellus Shale in the northern Appalachian Basin in Pennsylvania; the Marcellus and Utica Shales in Ohio and West Virginia; and the Haynesville and Bossier Shales in Louisiana and Texas. Expand Energy Corporation was formerly known as Chesapeake Energy Corporation and changed its name to Expand Energy Corporation in October 2024. The company was founded in 1989 and is based in Spring, Texas.",
@@ -8,21 +8,21 @@
   "employees": 1600,
   "ceo": "Mr. Michael A. Wichterich",
   "next_earnings": "2026-10-27",
-  "earnings_estimated": true,
-  "earnings_call": "2026-07-29",
-  "eps_estimate": 1.5,
+  "earnings_estimated": false,
+  "earnings_call": "2026-10-28",
+  "eps_estimate": 1.36952,
   "analysts": {
-    "strong_buy": 5,
+    "strong_buy": 6,
     "buy": 18,
     "hold": 5,
     "sell": 0,
     "strong_sell": 0,
-    "total": 28
+    "total": 29
   },
-  "target_mean": 123.22222,
+  "target_mean": 122.53571,
   "target_high": 156,
   "target_low": 93,
-  "target_analysts": 27,
+  "target_analysts": 28,
   "statements": [
     {
       "year": "2022",
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.5464,
-    "q1": 0.17,
-    "y0": 0.5025,
-    "y1": 0.102
+    "q0": 0.41189998,
+    "q1": 0.1495,
+    "y0": 0.4632,
+    "y1": 0.048600003
   },
   "ratings": [
+    {
+      "date": "2026-10-15",
+      "firm": "Morgan Stanley",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-10-06",
       "firm": "Mizuho",
@@ -139,13 +146,6 @@
       "firm": "Goldman Sachs",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-19",
-      "firm": "Morgan Stanley",
-      "from": "Overweight",
-      "to": "Overweight",
       "action": "main"
     }
   ],
@@ -231,10 +231,10 @@
   },
   "extras": {
     "beta": 0.395,
-    "enterprise_value": 24449005568,
-    "ev_ebitda": 3.638,
-    "ev_revenue": 1.932,
-    "float_shares": 230330065,
+    "enterprise_value": 24157310976,
+    "ev_ebitda": 3.594,
+    "ev_revenue": 1.908,
+    "float_shares": 230332380,
     "short_shares": 9765481,
     "short_pct_float": 4.23,
     "short_ratio": 2.97,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-08-13",
   "dividend_date": null,
   "payout_ratio": 0.275,
-  "inst_count": 1182,
+  "inst_count": 1184,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -327,15 +327,6 @@
       "date": "2026-06-04"
     },
     {
-      "name": "TEUNISSEN MARCEL",
-      "role": "Chief Financial Officer",
-      "kind": "buy",
-      "text": "Purchase at price 92.88 per share.",
-      "value": 185760,
-      "shares": 2000,
-      "date": "2026-06-04"
-    },
-    {
       "name": "DUNCAN TIMOTHY S.",
       "role": "Director",
       "kind": "other",
@@ -345,21 +336,30 @@
       "date": "2026-06-04"
     },
     {
-      "name": "WICHTERICH MICHAEL A.",
-      "role": "Chief Executive Officer",
-      "kind": "buy",
-      "text": "Purchase at price 93.36 per share.",
-      "value": 93360,
-      "shares": 1000,
-      "date": "2026-06-04"
-    },
-    {
       "name": "EMERSON SARAH A.",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 96.53 per share.",
       "value": 225011,
       "shares": 2331,
+      "date": "2026-06-04"
+    },
+    {
+      "name": "KEHR CATHERINE A",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 96.53 per share.",
+      "value": 225011,
+      "shares": 2331,
+      "date": "2026-06-04"
+    },
+    {
+      "name": "TEUNISSEN MARCEL",
+      "role": "Chief Financial Officer",
+      "kind": "buy",
+      "text": "Purchase at price 92.88 per share.",
+      "value": 185760,
+      "shares": 2000,
       "date": "2026-06-04"
     }
   ],

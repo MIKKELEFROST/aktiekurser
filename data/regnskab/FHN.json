@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T20:27:35.404Z",
+  "updated_at": "2026-10-15T20:08:18.262Z",
   "source": "Yahoo Finance",
   "symbol": "FHN",
   "summary": "First Horizon Corporation operates as the bank holding company for First Horizon Bank that provides various financial services. It operates through Regional Banking, Specialty Banking, and Corporate segments. The company offers commercial banking, business banking, consumer banking, private client investment, wealth management, financial planning, trust and asset management services, asset-based lending, commercial real estate, equipment finance/leasing, energy finance, international banking, healthcare finance, transportation and logistics finance, treasury management solutions, and loan syndications services. It also provides fixed income securities sales, trading, underwriting, and strategies for institutional clients; loan sales; portfolio advisory services; derivative sales; mortgage warehouse lending; franchise finance; corporate and correspondent banking; and mortgage origination services. Further, it provides transaction processing services, credit card products, and sale of mutual funds. First Horizon Corporation was formerly known as First Horizon National Corporation and changed its name to First Horizon Corporation in April 2004. The company was founded in 1864 and is headquartered in Memphis, Tennessee.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-15",
   "earnings_estimated": false,
   "earnings_call": "2026-10-15",
-  "eps_estimate": 0.52425,
+  "eps_estimate": 0.53,
   "analysts": {
     "strong_buy": 3,
     "buy": 5,
@@ -23,13 +23,59 @@
   "target_high": 30,
   "target_low": 25,
   "target_analysts": 21,
-  "statements": null,
-  "quarterly": [],
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 3221000000,
+      "net": 868000000,
+      "margin": 26.9
+    },
+    {
+      "year": "2023",
+      "revenue": 3483000000,
+      "net": 865000000,
+      "margin": 24.8
+    },
+    {
+      "year": "2024",
+      "revenue": 3297000000,
+      "net": 738000000,
+      "margin": 22.4
+    },
+    {
+      "year": "2025",
+      "revenue": 3434000000,
+      "net": 956000000,
+      "margin": 27.8
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "4Q2025",
+      "revenue": 892000000,
+      "earnings": 257000000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 865000000,
+      "earnings": 257000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 890000000,
+      "earnings": 260000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 883000000,
+      "earnings": -94000000
+    }
+  ],
   "growth": {
-    "q0": 0.0279,
-    "q1": 0.047199998,
-    "y0": 0.1347,
-    "y1": 0.08180001
+    "q0": 0.019199999,
+    "q1": 0.037100002,
+    "y0": 0.111099996,
+    "y1": 0.10479999
   },
   "ratings": [
     {
@@ -185,9 +231,9 @@
   },
   "extras": {
     "beta": 0.627,
-    "enterprise_value": 11989905408,
+    "enterprise_value": 11942528000,
     "ev_ebitda": null,
-    "ev_revenue": 3.425,
+    "ev_revenue": 3.411,
     "float_shares": 441986711,
     "short_shares": 13540171,
     "short_pct_float": 3.86,
@@ -198,14 +244,8 @@
   "ex_dividend": "2026-09-11",
   "dividend_date": null,
   "payout_ratio": 0.3077,
-  "inst_count": 840,
+  "inst_count": 839,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.44516,
-      "actual": 0.51,
-      "surprise_pct": 14.57
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.46383,
@@ -223,6 +263,12 @@
       "estimate": 0.52001,
       "actual": 0.54,
       "surprise_pct": 3.84
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.52425,
+      "actual": 0.53,
+      "surprise_pct": 1.1
     }
   ],
   "insiders": [
@@ -243,15 +289,6 @@
       "value": 390661,
       "shares": 22571,
       "date": "2026-08-20"
-    },
-    {
-      "name": "PALMER VICKI R",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 5913,
-      "date": "2026-05-05"
     },
     {
       "name": "STEWART CECELIA D.",
@@ -309,6 +346,15 @@
     },
     {
       "name": "MOEHN MICHAEL L",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 5913,
+      "date": "2026-05-05"
+    },
+    {
+      "name": "DIETRICH JOHN W",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

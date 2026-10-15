@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T20:27:35.444Z",
+  "updated_at": "2026-10-15T20:08:18.299Z",
   "source": "Yahoo Finance",
   "symbol": "FORM",
   "summary": "FormFactor, Inc. designs, manufactures, and sells probe cards, analytical probes, probe stations, thermal systems, cryogenic systems, and related services in the United States, South Korea, Taiwan, China, Japan, Singapore, Europe, Malaysia, and internationally. It operates in two segments: Probe Cards and Systems segments. The company provides probe cards to test various semiconductor device types, including systems- on-chip products, such as graphics, central, digital processing units, and other custom application-specific processing units; mobile application processors, microprocessors, and microcontrollers; network devices, which include switches and network processing units; dynamic random-access memory; radio-frequency amplifiers and filters; antenna-in-package devices; analog and mixed-signal integrated circuits; image sensors; co-packaged optical integrated circuits; NAND flash memory; NOR flash memory; and quantum computer processor devices. It also offers analytical probes, which are used for device characterization, electrical simulation model development, failure analysis, and prototype design debugging; probe stations, a critical tool for the development of new generations of semiconductor and electro-optical processes and designs; and thermal subsystems, which include thermal chucks and other test systems used in probe stations and other applications for precise temperature management. In addition, the company provides cryogenic systems, which includes the manufacture of precision cryogenic instruments and semiconductor test and measurement systems; and services and support, including installation services. Further, it offers on-site probe card maintenance and service training, seminars, and telephone support services. It sells its products through direct sales force, manufacturers' representatives, and distributors. It has a strategic collaboration with Teradyne. The company was incorporated in 1993 and is headquartered in Livermore, California.",
@@ -10,14 +10,14 @@
   "next_earnings": "2026-10-28",
   "earnings_estimated": false,
   "earnings_call": "2026-10-28",
-  "eps_estimate": 0.86375,
+  "eps_estimate": 0.86286,
   "analysts": {
     "strong_buy": 0,
     "buy": 6,
-    "hold": 5,
+    "hold": 4,
     "sell": 0,
     "strong_sell": 0,
-    "total": 11
+    "total": 10
   },
   "target_mean": 153.88889,
   "target_high": 200,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 195798000,
-      "earnings": 9086000
-    },
-    {
       "q": "3Q2025",
       "revenue": 202676000,
       "earnings": 15656000
@@ -69,13 +64,18 @@
       "q": "1Q2026",
       "revenue": 226144000,
       "earnings": 20384000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 258242000,
+      "earnings": 56207000
     }
   ],
   "growth": {
-    "q0": 1.6174,
-    "q1": 0.769,
-    "y0": 1.3512,
-    "y1": 0.23889999
+    "q0": 1.6147,
+    "q1": 0.77019995,
+    "y0": 1.3519,
+    "y1": 0.2667
   },
   "ratings": [
     {
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 14,
-    "sells": 14,
+    "sells": 15,
     "bought": 185793,
-    "sold": 99584,
-    "net_pct": 17
+    "sold": 110682,
+    "net_pct": 14.5
   },
   "extras": {
     "beta": 1.182,
-    "enterprise_value": 9690756096,
-    "ev_ebitda": 51.887,
-    "ev_revenue": 10.741,
+    "enterprise_value": 9036103680,
+    "ev_ebitda": 48.382,
+    "ev_revenue": 10.015,
     "float_shares": 77457480,
     "short_shares": 3269962,
     "short_pct_float": 5.94,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 682,
+  "inst_count": 685,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "SLESSOR MICHAEL D",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 124.23 - 125.92 per share.",
+      "value": 1389437,
+      "shares": 11098,
+      "date": "2026-10-14"
+    },
     {
       "name": "SLESSOR MICHAEL D",
       "role": "Chief Executive Officer",
@@ -352,15 +361,6 @@
       "value": 424172,
       "shares": 2800,
       "date": "2026-06-15"
-    },
-    {
-      "name": "SLESSOR MICHAEL D",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 117.70 - 123.37 per share.",
-      "value": 1442897,
-      "shares": 11890,
-      "date": "2026-06-10"
     }
   ],
   "dividends": [],

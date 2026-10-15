@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T20:27:34.384Z",
+  "updated_at": "2026-10-15T20:08:17.155Z",
   "source": "Yahoo Finance",
   "symbol": "ACI",
   "summary": "Albertsons Companies, Inc., through its subsidiaries, operates in the food and drug retail industry in the United States. The company's food and drug retail stores offer grocery products, general merchandise, health and beauty care products, pharmacy, vaccines, fuel, and other items and services. It also operates stores under various banners, including Albertsons, Safeway, Vons, Pavilions, Randalls, Tom Thumb, Carrs, Jewel-Osco, ACME, Shaw's, Star Market, United Supermarkets, Market Street, Haggen, Kings Food Markets, and Balducci's Food Lovers Market; and in-store pharmacies and branded coffee shops, fuel centers, distribution centers, and manufacturing facilities, as well as various digital platforms. Albertsons Companies, Inc. was founded in 1860 and is headquartered in Boise, Idaho.",
@@ -10,16 +10,16 @@
   "next_earnings": "2027-01-06",
   "earnings_estimated": true,
   "earnings_call": null,
-  "eps_estimate": 0.626,
+  "eps_estimate": 0.62806,
   "analysts": {
-    "strong_buy": 2,
-    "buy": 4,
-    "hold": 11,
+    "strong_buy": 1,
+    "buy": 3,
+    "hold": 12,
     "sell": 1,
-    "strong_sell": 1,
+    "strong_sell": 2,
     "total": 19
   },
-  "target_mean": 14.1875,
+  "target_mean": 14.0625,
   "target_high": 24,
   "target_low": 10,
   "target_analysts": 16,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": -0.1306,
-    "q1": -0.2958,
-    "y0": -0.2028,
-    "y1": 0.0452
+    "q0": -0.1277,
+    "q1": -0.2525,
+    "y0": -0.19309999,
+    "y1": -0.0277
   },
   "ratings": [
+    {
+      "date": "2026-10-15",
+      "firm": "JP Morgan",
+      "from": "Overweight",
+      "to": "Neutral",
+      "action": "down"
+    },
     {
       "date": "2026-10-14",
       "firm": "Wells Fargo",
@@ -139,13 +146,6 @@
       "firm": "RBC Capital",
       "from": "Outperform",
       "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-24",
-      "firm": "Barclays",
-      "from": "Underweight",
-      "to": "Underweight",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.227,
-    "enterprise_value": 21796567040,
-    "ev_ebitda": 6.339,
-    "ev_revenue": 0.262,
+    "enterprise_value": 21970952192,
+    "ev_ebitda": 6.39,
+    "ev_revenue": 0.264,
     "float_shares": 324363928,
     "short_shares": 59495647,
     "short_pct_float": 18.15,
@@ -318,48 +318,48 @@
       "date": "2026-04-29"
     },
     {
-      "name": "MCCOLLAM SHARON L",
-      "role": "President",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 17.90 per share.",
-      "value": 2048208,
-      "shares": 114425,
-      "date": "2026-04-21"
-    },
-    {
-      "name": "LARSON ROBERT BRUCE",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 16668,
-      "date": "2026-04-21"
-    },
-    {
-      "name": "MORRIS SUSAN",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 17.90 per share.",
-      "value": 2043124,
-      "shares": 114141,
-      "date": "2026-04-21"
-    },
-    {
-      "name": "DHANDA ANUJ",
-      "role": "Chief Technology Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 71253,
-      "date": "2026-04-21"
-    },
-    {
       "name": "RAINWATER EVAN",
       "role": "Officer",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 17.90 per share.",
       "value": 708142,
       "shares": 39561,
+      "date": "2026-04-21"
+    },
+    {
+      "name": "MORIARTY THOMAS M",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 79536,
+      "date": "2026-04-21"
+    },
+    {
+      "name": "BACKUS ROBERT B.",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 17.90 per share.",
+      "value": 286436,
+      "shares": 16002,
+      "date": "2026-04-21"
+    },
+    {
+      "name": "WITHERS MICHAEL",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 17.90 per share.",
+      "value": 348459,
+      "shares": 19467,
+      "date": "2026-04-21"
+    },
+    {
+      "name": "LARSON MICHELLE",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 17.90 per share.",
+      "value": 716054,
+      "shares": 40003,
       "date": "2026-04-21"
     }
   ],

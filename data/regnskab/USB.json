@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T20:27:36.950Z",
+  "updated_at": "2026-10-15T20:08:19.872Z",
   "source": "Yahoo Finance",
   "symbol": "USB",
   "summary": "U.S. Bancorp, a financial services holding company, provides various financial services to individuals, businesses, institutional organizations, governmental entities, and other financial institutions in the United States. The company operates through Wealth, Corporate, Commercial and Institutional Banking; Consumer and Business Banking; Payment Services; and Treasury and Corporate Support segments. It offers depository services, including checking accounts, savings accounts, and time certificate contracts; and lending services, such as traditional credit products and credit card services, lease financing and import/export trade, agricultural finance, asset-backed lending, and other products. The company also provides cash management, capital markets, and trust and investment management services; and ancillary services comprising capital markets, treasury management, and receivable lock-box collection services to corporate and governmental entity customers. In addition, it offers asset management and fiduciary services for individuals, estates, foundations, business corporations, and charitable organizations; and investment and insurance products to its customers principally within its domestic markets, as well as fund administration services to mutual and other funds. Further, the company provides corporate and purchasing card, and corporate trust services; and credit card services, merchant and ATM processing, mortgage banking, insurance, brokerage and leasing services. U.S. Bancorp was founded in 1863 and is headquartered in Minneapolis, Minnesota.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-15",
   "earnings_estimated": false,
   "earnings_call": "2026-10-15",
-  "eps_estimate": 1.32793,
+  "eps_estimate": 1.43,
   "analysts": {
     "strong_buy": 3,
     "buy": 13,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 24
   },
-  "target_mean": 69,
+  "target_mean": 68.95455,
   "target_high": 76,
   "target_low": 64,
   "target_analysts": 22,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 7329000000,
-      "earnings": 1893000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 7365000000,
       "earnings": 1965000000
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 7712000000,
       "earnings": 2098000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 7970000000,
+      "earnings": 2095000000
     }
   ],
   "growth": {
-    "q0": 0.0885,
-    "q1": 0.0991,
-    "y0": 0.1458,
-    "y1": 0.096599996
+    "q0": 0.1349,
+    "q1": 0.0958,
+    "y0": 0.1515,
+    "y1": 0.0912
   },
   "ratings": [
     {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.019,
-    "enterprise_value": 125225549824,
+    "enterprise_value": 124243976192,
     "ev_ebitda": null,
-    "ev_revenue": 4.583,
+    "ev_revenue": 4.548,
     "float_shares": 1553330550,
     "short_shares": 25960020,
     "short_pct_float": 1.67,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-09-30",
   "dividend_date": null,
   "payout_ratio": 0.4152,
-  "inst_count": 2613,
+  "inst_count": 2617,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.12479,
-      "actual": 1.22,
-      "surprise_pct": 8.46
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.18858,
@@ -269,18 +263,15 @@
       "estimate": 1.28021,
       "actual": 1.35,
       "surprise_pct": 5.45
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.31714,
+      "actual": 1.34,
+      "surprise_pct": 1.74
     }
   ],
   "insiders": [
-    {
-      "name": "KEDIA GUNJAN",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 62.37 per share.",
-      "value": 1700670,
-      "shares": 27267,
-      "date": "2026-08-28"
-    },
     {
       "name": "KEDIA GUNJAN",
       "role": "Chief Executive Officer",
@@ -291,13 +282,13 @@
       "date": "2026-08-28"
     },
     {
-      "name": "CHOSY JAMES L",
-      "role": "General Counsel",
+      "name": "KEDIA GUNJAN",
+      "role": "Chief Executive Officer",
       "kind": "sell",
-      "text": "Sale at price 63.28 per share.",
-      "value": 1453415,
-      "shares": 22968,
-      "date": "2026-07-23"
+      "text": "Sale at price 62.37 per share.",
+      "value": 1700670,
+      "shares": 27267,
+      "date": "2026-08-28"
     },
     {
       "name": "CHOSY JAMES L",
@@ -306,6 +297,15 @@
       "text": "Conversion of Exercise of derivative security at price 55.01 per share.",
       "value": 1359352,
       "shares": 24711,
+      "date": "2026-07-23"
+    },
+    {
+      "name": "CHOSY JAMES L",
+      "role": "General Counsel",
+      "kind": "sell",
+      "text": "Sale at price 63.28 per share.",
+      "value": 1453415,
+      "shares": 22968,
       "date": "2026-07-23"
     },
     {
@@ -354,12 +354,12 @@
       "date": "2026-03-05"
     },
     {
-      "name": "KEDIA GUNJAN",
-      "role": "Chief Executive Officer",
+      "name": "CHOSY JAMES L",
+      "role": "General Counsel",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 100167,
+      "shares": 22259,
       "date": "2026-03-05"
     }
   ],

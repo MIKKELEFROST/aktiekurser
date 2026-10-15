@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T20:27:34.726Z",
+  "updated_at": "2026-10-15T20:08:17.535Z",
   "source": "Yahoo Finance",
   "symbol": "BHF",
   "summary": "Brighthouse Financial, Inc. provides annuity and life insurance products in the United States. The company operates through Annuities, Life, and Run-off segments. The Annuities segment offers variable, fixed, index-linked, and income annuities for contract holders' needs for protected wealth accumulation on a tax-deferred basis, wealth transfer, and income security. The Life segment provides term, universal, whole, and variable life products for policyholders' needs for financial security and protected wealth transfer. The Run-off segment manages universal life with secondary guarantees, structured settlements, pension risk transfer contracts, various company-owned life insurance policies, and funding agreements. Brighthouse Financial, Inc. was founded in 1863 and is headquartered in Charlotte, North Carolina.",
@@ -14,12 +14,12 @@
   "analysts": {
     "strong_buy": 0,
     "buy": 0,
-    "hold": 6,
+    "hold": 7,
     "sell": 0,
-    "strong_sell": 1,
+    "strong_sell": 0,
     "total": 7
   },
-  "target_mean": 63.33333,
+  "target_mean": 62,
   "target_high": 70,
   "target_low": 55,
   "target_analysts": 6,
@@ -79,6 +79,20 @@
   },
   "ratings": [
     {
+      "date": "2026-10-15",
+      "firm": "JP Morgan",
+      "from": "Underweight",
+      "to": "Neutral",
+      "action": "up"
+    },
+    {
+      "date": "2026-10-15",
+      "firm": "Keefe, Bruyette & Woods",
+      "from": "Market Perform",
+      "to": "Market Perform",
+      "action": "main"
+    },
+    {
       "date": "2026-10-09",
       "firm": "Keefe, Bruyette & Woods",
       "from": "Market Perform",
@@ -132,20 +146,6 @@
       "firm": "Keefe, Bruyette & Woods",
       "from": "Market Perform",
       "to": "Market Perform",
-      "action": "main"
-    },
-    {
-      "date": "2025-08-08",
-      "firm": "Barclays",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2025-07-14",
-      "firm": "Morgan Stanley",
-      "from": "Underweight",
-      "to": "Underweight",
       "action": "main"
     }
   ],
@@ -202,9 +202,9 @@
     {
       "name": "American Century ETF Trust-Avantis U.S. Small Cap Value ETF",
       "kind": "fond",
-      "pct": 3.88,
-      "shares": 2231819,
-      "date": "2026-08-31"
+      "pct": 3.99,
+      "shares": 2294208,
+      "date": "2026-09-30"
     },
     {
       "name": "State Street Corporation",
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.83,
-    "enterprise_value": 5749666304,
+    "enterprise_value": 5743052800,
     "ev_ebitda": null,
-    "ev_revenue": 0.841,
+    "ev_revenue": 0.84,
     "float_shares": 56656366,
     "short_shares": 7224396,
     "short_pct_float": 14.31,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 592,
+  "inst_count": 590,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -272,42 +272,6 @@
     }
   ],
   "insiders": [
-    {
-      "name": "HOOLEY STEPHEN C",
-      "role": "Director",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 62.24 per share.",
-      "value": 176575,
-      "shares": 2837,
-      "date": "2026-06-02"
-    },
-    {
-      "name": "WETZEL PAUL M",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 2837,
-      "date": "2026-06-02"
-    },
-    {
-      "name": "JUEL CAROL D",
-      "role": "Director",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 62.24 per share.",
-      "value": 176575,
-      "shares": 2837,
-      "date": "2026-06-02"
-    },
-    {
-      "name": "INSERRA MICHAEL J.",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 1418,
-      "date": "2026-06-02"
-    },
     {
       "name": "ZLATKUS LIZABETH H",
       "role": "Director",
@@ -345,13 +309,40 @@
       "date": "2026-06-02"
     },
     {
+      "name": "JUEL CAROL D",
+      "role": "Director",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 62.24 per share.",
+      "value": 176575,
+      "shares": 2837,
+      "date": "2026-06-02"
+    },
+    {
+      "name": "INSERRA MICHAEL J.",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 1418,
+      "date": "2026-06-02"
+    },
+    {
       "name": "WETZEL PAUL M",
       "role": "Director",
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 4823,
-      "date": "2026-05-01"
+      "shares": 2837,
+      "date": "2026-06-02"
+    },
+    {
+      "name": "HOOLEY STEPHEN C",
+      "role": "Director",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 62.24 per share.",
+      "value": 176575,
+      "shares": 2837,
+      "date": "2026-06-02"
     },
     {
       "name": "JUEL CAROL D",
@@ -360,6 +351,15 @@
       "text": null,
       "value": null,
       "shares": 3361,
+      "date": "2026-05-01"
+    },
+    {
+      "name": "WETZEL PAUL M",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 4823,
       "date": "2026-05-01"
     }
   ],

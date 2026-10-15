@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T20:27:35.664Z",
+  "updated_at": "2026-10-15T20:08:18.528Z",
   "source": "Yahoo Finance",
   "symbol": "HOMB",
   "summary": "Home BancShares, Inc. operates as the bank holding company for Centennial Bank that provides commercial and retail banking, and related financial services to businesses, real estate developers and investors, individuals, and municipalities in the United States. The company offers deposit services, including checking, savings, and money market accounts, as well as certificates of deposit. It also provides loans comprising non-farm/non-residential real estate, construction/land development, residential mortgage, consumer, agricultural, and commercial and industrial loans. In addition, the company offers other banking services, such as internet and mobile banking, voice response information, cash management, overdraft protection, direct deposit, and automatic account transfer services, as well as safe deposit boxes and the United States savings bonds. Further, it provides trust, wealth management, and custodial services, as well as trustee services, escrow, and paying agent services. Additionally, the company writes policies for commercial and personal lines of business, including insurance for property, casualty, life, health, and employee benefits. It operates its branches in Arkansas, Florida, Texas, South Alabama, and New York City. Home BancShares, Inc. was founded in 1903 and is headquartered in Conway, Arkansas.",
@@ -7,10 +7,10 @@
   "website": "https://www.homebancshares.com",
   "employees": 2543,
   "ceo": "Mr. John W. Allison",
-  "next_earnings": "2026-10-14",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-13",
+  "earnings_estimated": true,
   "earnings_call": "2026-10-15",
-  "eps_estimate": 0.63757,
+  "eps_estimate": 0.64,
   "analysts": {
     "strong_buy": 1,
     "buy": 3,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 280587000,
-      "earnings": 123604000
-    },
-    {
       "q": "4Q2025",
       "revenue": 284338000,
       "earnings": 118225000
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 297750000,
       "earnings": 119327000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 290955000,
+      "earnings": 129451000
     }
   ],
   "growth": {
-    "q0": 0.0452,
-    "q1": 0.0752,
-    "y0": 0.0729,
-    "y1": 0.031600002
+    "q0": 0.066700004,
+    "q1": 0.0442,
+    "y0": 0.0723,
+    "y1": 0.0322
   },
   "ratings": [
     {
@@ -230,11 +230,11 @@
     "net_pct": 0.2
   },
   "extras": {
-    "beta": 0.717,
-    "enterprise_value": 5545311744,
+    "beta": null,
+    "enterprise_value": 5390908928,
     "ev_ebitda": null,
-    "ev_revenue": 5.044,
-    "float_shares": 187536526,
+    "ev_revenue": 4.845,
+    "float_shares": 184334710,
     "short_shares": 9907152,
     "short_pct_float": 6.91,
     "short_ratio": 6.44,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.343,
   "inst_count": 495,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.59697,
-      "actual": 0.61,
-      "surprise_pct": 2.18
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.59855,
@@ -269,6 +263,12 @@
       "estimate": 0.60873,
       "actual": 0.64,
       "surprise_pct": 5.14
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.63757,
+      "actual": 0.65,
+      "surprise_pct": 1.95
     }
   ],
   "insiders": [

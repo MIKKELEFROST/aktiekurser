@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T20:27:36.470Z",
+  "updated_at": "2026-10-15T20:08:20.230Z",
   "source": "Yahoo Finance",
   "symbol": "PNC",
   "summary": "The PNC Financial Services Group, Inc. operates as a diversified financial services company in the United States. It operates through three segments: Retail Banking, Corporate & Institutional Banking, and Asset Management Group segments. The Retail Banking segment offers checking, savings, and money market accounts, and time deposit; residential mortgages, home equity loans and lines of credit, auto loans, credit cards, education loans, and personal and small business loans and lines of credit; and brokerage, insurance, and investment and cash management services. This segment serves consumer and small business customers through a network of branches, digital channels, ATMs, and through phone-based customer contact centers. The Corporate & Institutional Banking segment provides secured and unsecured loans, letters of credit, and equipment leases; cash and investment management, receivables and disbursement management, funds transfer, international payment, and access to online/mobile information management and reporting services; asset-backed financing, securities underwriting, loan syndications, mergers and acquisitions and equity capital markets advisory, and customer related services; and commercial loan servicing and technology solutions. It serves mid-sized and large corporations, and government and not-for-profit entities. The Asset Management Group segment offers investment and retirement planning, customized investment management, credit and cash management solutions, and trust management and administration services for high net worth and ultra high net worth individuals, and their families; and multi-generational family planning services. It also offers outsourced chief investment officer, custody, cash and fixed income client solutions, and retirement plan fiduciary investment services for institutional clients. The company was founded in 1865 and is headquartered in Pittsburgh, Pennsylvania.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-15",
   "earnings_estimated": false,
   "earnings_call": "2026-10-15",
-  "eps_estimate": 4.98093,
+  "eps_estimate": 5.145,
   "analysts": {
     "strong_buy": 5,
     "buy": 11,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 23
   },
-  "target_mean": 270.2857,
+  "target_mean": 269.8095,
   "target_high": 290,
   "target_low": 245,
   "target_analysts": 21,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 5915000000,
-      "earnings": 1723000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 6071000000,
       "earnings": 1922000000
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 6875000000,
       "earnings": 1941000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 6562000000,
+      "earnings": 1994000000
     }
   ],
   "growth": {
-    "q0": 0.145,
-    "q1": 0.059899997,
-    "y0": 0.1657,
-    "y1": 0.108500004
+    "q0": 0.0543,
+    "q1": 0.1599,
+    "y0": 0.1435,
+    "y1": 0.1301
   },
   "ratings": [
     {
@@ -231,10 +231,10 @@
   },
   "extras": {
     "beta": 0.931,
-    "enterprise_value": 167997161472,
+    "enterprise_value": 166529040384,
     "ev_ebitda": null,
-    "ev_revenue": 6.908,
-    "float_shares": 396055315,
+    "ev_revenue": 6.848,
+    "float_shares": 396071273,
     "short_shares": 7221106,
     "short_pct_float": 1.82,
     "short_ratio": 4.19,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-10-14",
   "dividend_date": null,
   "payout_ratio": 0.3744,
-  "inst_count": 2540,
+  "inst_count": 2542,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 4.04349,
-      "actual": 4.35,
-      "surprise_pct": 7.58
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 4.21149,
@@ -269,6 +263,12 @@
       "estimate": 4.45296,
       "actual": 4.81,
       "surprise_pct": 8.02
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 4.89238,
+      "actual": 4.97,
+      "surprise_pct": 1.59
     }
   ],
   "insiders": [
@@ -364,10 +364,6 @@
     }
   ],
   "dividends": [
-    {
-      "date": "2016-10-13",
-      "amount": 0.55
-    },
     {
       "date": "2017-01-12",
       "amount": 0.55
@@ -522,6 +518,10 @@
     },
     {
       "date": "2026-07-20",
+      "amount": 2
+    },
+    {
+      "date": "2026-10-14",
       "amount": 2
     }
   ],

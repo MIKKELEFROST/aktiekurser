@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T20:27:36.113Z",
+  "updated_at": "2026-10-15T20:08:19.029Z",
   "source": "Yahoo Finance",
   "symbol": "MWH",
   "summary": "SOLV Energy, Inc. provides infrastructure services to the power industry in the United States. It offers engineering, procurement, construction, testing, commissioning, operations, maintenance, and repowering services. The company engages in designing, building, and maintaining utility-scale solar and battery storage projects, and related transmission and distribution infrastructure. It also provides operations and maintenance services. The company serves project developers, independent power producers, and utilities. SOLV Energy, Inc. was founded in 2008 and is headquartered in San Diego, California.",
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 11
   },
-  "target_mean": 43.72727,
+  "target_mean": 43,
   "target_high": 55,
   "target_low": 34,
   "target_analysts": 11,
@@ -51,6 +51,13 @@
     "y1": 0.3382
   },
   "ratings": [
+    {
+      "date": "2026-10-15",
+      "firm": "Keybanc",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-08-25",
       "firm": "TD Cowen",
@@ -113,13 +120,6 @@
       "from": "Overweight",
       "to": "Overweight",
       "action": "main"
-    },
-    {
-      "date": "2026-03-09",
-      "firm": "TD Cowen",
-      "from": null,
-      "to": "Buy",
-      "action": "init"
     }
   ],
   "holders": [
@@ -204,9 +204,9 @@
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 3258015232,
-    "ev_ebitda": 10.425,
-    "ev_revenue": 1.026,
+    "enterprise_value": 3081059328,
+    "ev_ebitda": 9.859,
+    "ev_revenue": 0.97,
     "float_shares": 45665765,
     "short_shares": 7326683,
     "short_pct_float": 22.92,
@@ -217,7 +217,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 249,
+  "inst_count": 250,
   "eps_history": [
     {
       "quarter": "2026-06-30",
@@ -291,21 +291,21 @@
       "date": "2026-08-19"
     },
     {
-      "name": "AMERICAN SECURITIES L.L.C.",
-      "role": "Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 3069193,
-      "date": "2026-08-19"
-    },
-    {
       "name": "SOLV ENERGY MANAGEMENT HOLDINGS L.P.",
       "role": "Beneficial Owner of more than 10% of a Class of Security",
       "kind": "sell",
       "text": "Sale at price 29.97 per share.",
       "value": 39854196,
       "shares": 1329803,
+      "date": "2026-08-19"
+    },
+    {
+      "name": "AMERICAN SECURITIES L.L.C.",
+      "role": "Beneficial Owner of more than 10% of a Class of Security",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 3069193,
       "date": "2026-08-19"
     },
     {

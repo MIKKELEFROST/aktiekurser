@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T20:27:35.077Z",
+  "updated_at": "2026-10-15T20:08:17.906Z",
   "source": "Yahoo Finance",
   "symbol": "CRUS",
   "summary": "Cirrus Logic, Inc., a fabless semiconductor company, develops mixed-signal processing solutions and audio products in China, the United States, and internationally. The company offers audio products, including amplifiers; codecs components that integrate analog-to-digital converters (ADCs) and digital-to-analog converters (DACs) into a single integrated circuit (IC); smart codecs, a codec with integrated digital signal processing; standalone digital signal processors; and SoundClear technology for use in smartphones, PCs, tablets, AR/VR headsets, wearables, home theatre systems, automotive entertainment systems, and professional audio systems. It also provides camera controllers, haptic and sensing solutions, and battery and power ICs for smartphones, as well as products for automotive, industrial, and imaging applications. The company markets and sells its products through direct sales force, external sales representatives, and distributors. Cirrus Logic, Inc. was incorporated in 1984 and is headquartered in Austin, Texas.",
@@ -10,11 +10,11 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 2.4288,
+  "eps_estimate": 2.4185,
   "analysts": {
     "strong_buy": 0,
-    "buy": 3,
-    "hold": 2,
+    "buy": 2,
+    "hold": 3,
     "sell": 0,
     "strong_sell": 0,
     "total": 5
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": -0.1418,
-    "q1": -0.1599,
-    "y0": -0.089499995,
-    "y1": 0.0556
+    "q0": -0.1454,
+    "q1": -0.16950001,
+    "y0": -0.0953,
+    "y1": 0.0657
   },
   "ratings": [
+    {
+      "date": "2026-10-15",
+      "firm": "Keybanc",
+      "from": "Overweight",
+      "to": "Equal-Weight",
+      "action": "down"
+    },
     {
       "date": "2026-08-06",
       "firm": "Keybanc",
@@ -136,13 +143,6 @@
     },
     {
       "date": "2026-03-03",
-      "firm": "Barclays",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
-      "action": "main"
-    },
-    {
-      "date": "2026-02-04",
       "firm": "Barclays",
       "from": "Equal-Weight",
       "to": "Equal-Weight",
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.166,
-    "enterprise_value": 4651397632,
-    "ev_ebitda": 8.865,
-    "ev_revenue": 2.269,
+    "enterprise_value": 4668938752,
+    "ev_ebitda": 8.898,
+    "ev_revenue": 2.278,
     "float_shares": 49635931,
     "short_shares": 3466357,
     "short_pct_float": 7.99,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 760,
+  "inst_count": 761,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -291,34 +291,7 @@
       "date": "2026-08-20"
     },
     {
-      "name": "DAVERN ALEXANDER M",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 1998,
-      "date": "2026-07-29"
-    },
-    {
-      "name": "DAVERN ALEXANDER M",
-      "role": "Director",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 134.07 per share.",
-      "value": 267872,
-      "shares": 1998,
-      "date": "2026-07-29"
-    },
-    {
-      "name": "LEGO CATHERINE P",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 1998,
-      "date": "2026-07-29"
-    },
-    {
-      "name": "LEGO CATHERINE P",
+      "name": "TUPMAN DAVID J",
       "role": "Director",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 134.07 per share.",
@@ -330,13 +303,31 @@
       "name": "HUSSAIN MUHAMMAD RAGHIB",
       "role": "Director",
       "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
+      "text": "Conversion of Exercise of derivative security at price 134.07 per share.",
+      "value": 267872,
       "shares": 1998,
       "date": "2026-07-29"
     },
     {
-      "name": "HUSSAIN MUHAMMAD RAGHIB",
+      "name": "DAVERN ALEXANDER M",
+      "role": "Director",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 134.07 per share.",
+      "value": 267872,
+      "shares": 1998,
+      "date": "2026-07-29"
+    },
+    {
+      "name": "LE DUY-LOAN T",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 1998,
+      "date": "2026-07-29"
+    },
+    {
+      "name": "LEGO CATHERINE P",
       "role": "Director",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 134.07 per share.",
@@ -348,17 +339,26 @@
       "name": "MOSLEY WILLIAM D",
       "role": "Director",
       "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 134.07 per share.",
+      "value": 267872,
+      "shares": 1998,
+      "date": "2026-07-29"
+    },
+    {
+      "name": "DAVERN ALEXANDER M",
+      "role": "Director",
+      "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 1998,
       "date": "2026-07-29"
     },
     {
-      "name": "MOSLEY WILLIAM D",
+      "name": "TUPMAN DAVID J",
       "role": "Director",
       "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 134.07 per share.",
-      "value": 267872,
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
       "shares": 1998,
       "date": "2026-07-29"
     }

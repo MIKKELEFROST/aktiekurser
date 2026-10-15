@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T20:27:34.354Z",
+  "updated_at": "2026-10-15T20:08:17.131Z",
   "source": "Yahoo Finance",
   "symbol": "AAPL",
   "summary": "Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide. The company offers iPhone, a line of smartphones; Mac, a line of personal computers; iPad, a line of multi-purpose tablets; and wearables, home, and accessories comprising AirPods, Apple Vision Pro, Apple TV, Apple Watch, Beats products, and HomePod, as well as Apple branded and third-party accessories. It also provides AppleCare support and cloud services; and operates various platforms, including the App Store that allows customers to discover and download applications and digital content, such as books, music, video, games, and podcasts, as well as advertising services include third-party licensing arrangements and its own advertising platforms. In addition, the company offers various subscription-based services, such as Apple Arcade, a game subscription service; Apple Fitness+, a personalized fitness service; Apple Music, which offers users a curated listening experience with on-demand radio stations; Apple News+, a subscription news and magazine service; Apple TV, which offers original content and live sports; Apple Card, a co-branded credit card; and Apple Pay, a cashless payment service, as well as licenses its intellectual property. The company serves consumers, and small and mid-sized businesses; and the education, enterprise, and government markets. It distributes third-party applications for its products through the App Store. The company also sells its products through its retail and online stores, and direct sales force; and third-party cellular network carriers and resellers. The company was formerly known as Apple Computer, Inc. and changed its name to Apple Inc. in January 2007. Apple Inc. was founded in 1976 and is headquartered in Cupertino, California.",
@@ -51,6 +51,11 @@
   ],
   "quarterly": [
     {
+      "q": "2Q2025",
+      "revenue": 94036000000,
+      "earnings": 23434000000
+    },
+    {
       "q": "3Q2025",
       "revenue": 102466000000,
       "earnings": 27466000000
@@ -64,18 +69,13 @@
       "q": "1Q2026",
       "revenue": 111184000000,
       "earnings": 29578000000
-    },
-    {
-      "q": "2Q2026",
-      "revenue": 109417000000,
-      "earnings": 29789000000
     }
   ],
   "growth": {
     "q0": 0.0714,
-    "q1": 0.0146,
+    "q1": 0.013099999,
     "y0": 0.1838,
-    "y1": 0.086
+    "y1": 0.0845
   },
   "ratings": [
     {
@@ -231,10 +231,10 @@
   },
   "extras": {
     "beta": 1.069,
-    "enterprise_value": 5002500767744,
-    "ev_ebitda": 29.784,
-    "ev_revenue": 10.716,
-    "float_shares": 14568786127,
+    "enterprise_value": 5027164848128,
+    "ev_ebitda": 29.931,
+    "ev_revenue": 10.769,
+    "float_shares": 14569078010,
     "short_shares": 120763539,
     "short_pct_float": 0.83,
     "short_ratio": 2.82,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-08-10",
   "dividend_date": null,
   "payout_ratio": 0.1204,
-  "inst_count": 7693,
+  "inst_count": 7697,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -291,12 +291,12 @@
       "date": "2026-10-02"
     },
     {
-      "name": "COOK TIMOTHY D",
-      "role": "Officer and Director",
+      "name": "O'BRIEN DEIRDRE",
+      "role": "Officer",
       "kind": "sell",
-      "text": "Sale at price 331.44 - 333.94 per share.",
-      "value": 63845841,
-      "shares": 191753,
+      "text": "Sale at price 333.35 - 333.91 per share.",
+      "value": 15466923,
+      "shares": 46389,
       "date": "2026-10-02"
     },
     {
@@ -309,31 +309,13 @@
       "date": "2026-10-02"
     },
     {
-      "name": "O'BRIEN DEIRDRE",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 333.35 - 333.91 per share.",
-      "value": 15466923,
-      "shares": 46389,
-      "date": "2026-10-02"
-    },
-    {
       "name": "COOK TIMOTHY D",
       "role": "Officer and Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 374541,
-      "date": "2026-10-01"
-    },
-    {
-      "name": "TERNUS JOHN",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 99878,
-      "date": "2026-10-01"
+      "kind": "sell",
+      "text": "Sale at price 331.44 - 333.94 per share.",
+      "value": 63845841,
+      "shares": 191753,
+      "date": "2026-10-02"
     },
     {
       "name": "O'BRIEN DEIRDRE",
@@ -351,6 +333,24 @@
       "text": null,
       "value": null,
       "shares": 99878,
+      "date": "2026-10-01"
+    },
+    {
+      "name": "TERNUS JOHN",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 99878,
+      "date": "2026-10-01"
+    },
+    {
+      "name": "COOK TIMOTHY D",
+      "role": "Officer and Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 374541,
       "date": "2026-10-01"
     },
     {

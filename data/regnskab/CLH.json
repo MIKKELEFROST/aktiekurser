@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T20:27:34.977Z",
+  "updated_at": "2026-10-15T20:08:17.812Z",
   "source": "Yahoo Finance",
   "symbol": "CLH",
   "summary": "Clean Harbors, Inc. provides environmental and industrial services in the United States and Canada. The company operates through two segments: Environmental Services and Safety-Kleen Sustainability Solutions. The Environmental Services segment collects, transports, treats, recycles, and disposes hazardous and non-hazardous waste, such as resource recovery, physical treatment, incineration, landfill disposal, wastewater treatment, lab chemicals disposal, and explosives management services; and offers CleanPack services, including collection, identification, categorization, specialized packaging, transportation, and disposal of laboratory chemicals and household hazardous waste. This segment also provides industrial maintenance and specialty industrial services; and utilizes specialty equipment and resources that perform field services. The Safety-Kleen Sustainability Solutions segment provides containerized waste, parts-washer, and vacuum services for automobile repair shops, car and truck dealers, metal fabricators, machine manufacturers, fleet maintenance shops, and other automotive, industrial, and retail customers; collects and transports for hazardous and non-hazardous containerized waste for recycling or disposal; machine cleaning and maintenance, and disposal and replenishment of clean solvent or aqueous fluids; and vacuum services to remove solids, residual oily water, and sludge and other fluids from customers' oil/water separators, sumps, and collection tanks, as well as removes and collects waste fluids found at large and small industrial locations, including metal fabricators, auto maintenance providers, and general manufacturers. This segment also manufactures, formulates, and packages lubricants and other products. Clean Harbors, Inc. was incorporated in 1980 and is headquartered in Norwell, Massachusetts.",
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 17
   },
-  "target_mean": 360.86667,
+  "target_mean": 361,
   "target_high": 390,
   "target_low": 325,
   "target_analysts": 15,
@@ -51,6 +51,11 @@
   ],
   "quarterly": [
     {
+      "q": "2Q2025",
+      "revenue": 1549854000,
+      "earnings": 126905000
+    },
+    {
       "q": "3Q2025",
       "revenue": 1549337000,
       "earnings": 118799000
@@ -64,20 +69,22 @@
       "q": "1Q2026",
       "revenue": 1459537000,
       "earnings": 63201000
-    },
-    {
-      "q": "2Q2026",
-      "revenue": 1735005000,
-      "earnings": 170464000
     }
   ],
   "growth": {
     "q0": 0.4418,
-    "q1": 0.3376,
-    "y0": 0.3474,
-    "y1": 0.018
+    "q1": 0.3429,
+    "y0": 0.3486,
+    "y1": 0.0172
   },
   "ratings": [
+    {
+      "date": "2026-10-15",
+      "firm": "Citigroup",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-14",
       "firm": "TD Cowen",
@@ -139,13 +146,6 @@
       "firm": "Barclays",
       "from": "Equal-Weight",
       "to": "Equal-Weight",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-30",
-      "firm": "Needham",
-      "from": "Buy",
-      "to": "Buy",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.875,
-    "enterprise_value": 19486003200,
-    "ev_ebitda": 16.283,
-    "ev_revenue": 3.121,
+    "enterprise_value": 19584186368,
+    "ev_ebitda": 16.365,
+    "ev_revenue": 3.137,
     "float_shares": 50031754,
     "short_shares": 1078261,
     "short_pct_float": 2.15,
@@ -309,25 +309,25 @@
       "date": "2026-05-20"
     },
     {
-      "name": "WILLETT ROBERT",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 652,
-      "date": "2026-05-20"
-    },
-    {
-      "name": "STEWART SHELLEY JR",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 652,
-      "date": "2026-05-20"
-    },
-    {
       "name": "PRESTON JOHN T",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 652,
+      "date": "2026-05-20"
+    },
+    {
+      "name": "WELCH JOHN R. PH.D.",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 652,
+      "date": "2026-05-20"
+    },
+    {
+      "name": "STATES LAUREN C",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -345,7 +345,7 @@
       "date": "2026-05-20"
     },
     {
-      "name": "QUIRK ALISON A.",
+      "name": "WILLETT ROBERT",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -354,7 +354,7 @@
       "date": "2026-05-20"
     },
     {
-      "name": "WELCH JOHN R. PH.D.",
+      "name": "STEWART SHELLEY JR",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

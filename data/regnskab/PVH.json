@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T20:27:36.523Z",
+  "updated_at": "2026-10-15T20:08:19.366Z",
   "source": "Yahoo Finance",
   "symbol": "PVH",
   "summary": "PVH Corp., together with its subsidiaries, operates as an apparel company in the United States and internationally. The company operates through Tommy Hilfiger North America, Tommy Hilfiger International, Calvin Klein North America, Calvin Klein International, and Heritage Brands Wholesale segments. It designs and markets men's, women's, and children's branded apparel, footwear and accessories, underwear, home furnishings, luggage, dresses, suits and swimwear, activewear, sportswear, socks and accessories, outerwear, golf products, watches and jewelry, eyeglasses and non-ophthalmic sunglasses, jeans wear, performance apparel, intimate apparel, dress shirts, handbags, fragrance, small leather goods, and other related products. The company offers its products under its own brands, such as TOMMY HILFIGER, TOMMY JEANS, Calvin Klein, Calvin Klein Jeans, Calvin Klein Underwear, Calvin Klein collection, and Calvin Klein sport, as well as various other owned, licensed, and private label brands. It distributes its products at wholesale in department, chain, and specialty stores; through warehouse clubs, mass market, and off-price and independent retailers; and through company-operated full-price, outlet stores, and concession locations; and through digital commerce sites. PVH Corp. was formerly known as Phillips-Van Heusen Corporation and changed its name to PVH Corp. in June 2011. The company was founded in 1881 and is based in New York, New York.",
@@ -19,7 +19,7 @@
     "strong_sell": 2,
     "total": 13
   },
-  "target_mean": 90.83333,
+  "target_mean": 91.16667,
   "target_high": 128,
   "target_low": 70,
   "target_analysts": 12,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 2167200000,
-      "earnings": 224200000
-    },
-    {
       "q": "3Q2025",
       "revenue": 2294300000,
       "earnings": 4200000
@@ -69,15 +64,27 @@
       "q": "1Q2026",
       "revenue": 2025100000,
       "earnings": 88000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 2097000000,
+      "earnings": -102900000
     }
   ],
   "growth": {
     "q0": -0.0708,
     "q1": -0.0106,
     "y0": 0.060700003,
-    "y1": 0.0308
+    "y1": 0.030299999
   },
   "ratings": [
+    {
+      "date": "2026-10-14",
+      "firm": "Jefferies",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-09-03",
       "firm": "JP Morgan",
@@ -137,13 +144,6 @@
     {
       "date": "2026-06-05",
       "firm": "B of A Securities",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-06-04",
-      "firm": "JP Morgan",
       "from": "Neutral",
       "to": "Neutral",
       "action": "main"
@@ -207,18 +207,18 @@
       "date": "2026-06-30"
     },
     {
+      "name": "American Century ETF Trust-Avantis U.S. Small Cap Value ETF",
+      "kind": "fond",
+      "pct": 4.03,
+      "shares": 1859488,
+      "date": "2026-09-30"
+    },
+    {
       "name": "American Century Companies Inc",
       "kind": "institution",
       "pct": 3.92,
       "shares": 1809391,
       "date": "2026-06-30"
-    },
-    {
-      "name": "American Century ETF Trust-Avantis U.S. Small Cap Value ETF",
-      "kind": "fond",
-      "pct": 3.77,
-      "shares": 1741092,
-      "date": "2026-08-31"
     }
   ],
   "insider_net": {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.756,
-    "enterprise_value": 7016705536,
-    "ev_ebitda": 7.629,
-    "ev_revenue": 0.786,
+    "enterprise_value": 6961801728,
+    "ev_ebitda": 7.569,
+    "ev_revenue": 0.78,
     "float_shares": 45617398,
     "short_shares": 4892098,
     "short_pct_float": 15.01,
@@ -282,7 +282,43 @@
       "date": "2026-09-11"
     },
     {
+      "name": "CALLINICOS BRENT CPA",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 2336,
+      "date": "2026-06-18"
+    },
+    {
       "name": "SOURRY KNOX JUDITH AMANDA",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 2336,
+      "date": "2026-06-18"
+    },
+    {
+      "name": "MCPHERSON AMY C.",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 2336,
+      "date": "2026-06-18"
+    },
+    {
+      "name": "CALBERT MICHAEL M",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 4932,
+      "date": "2026-06-18"
+    },
+    {
+      "name": "MCINTYRE GERALDINE PENNY",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -319,42 +355,6 @@
     },
     {
       "name": "ANDERSEN JESPER",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 2336,
-      "date": "2026-06-18"
-    },
-    {
-      "name": "MCINTYRE GERALDINE PENNY",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 2336,
-      "date": "2026-06-18"
-    },
-    {
-      "name": "MCPHERSON AMY C.",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 2336,
-      "date": "2026-06-18"
-    },
-    {
-      "name": "CALBERT MICHAEL M",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 4932,
-      "date": "2026-06-18"
-    },
-    {
-      "name": "CALLINICOS BRENT CPA",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

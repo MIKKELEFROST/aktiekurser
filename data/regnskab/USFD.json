@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T20:27:36.953Z",
+  "updated_at": "2026-10-15T20:08:19.872Z",
   "source": "Yahoo Finance",
   "symbol": "USFD",
   "summary": "US Foods Holding Corp., together with its subsidiaries, markets, sells, and distributes fresh, frozen, and dry food and non-food products to foodservice customers in the United States. The company also provides MOXe, an all-in-one foodservice business application. Its customers include independently owned single and multi-unit restaurants, regional concepts, national restaurant chains, hospitals, nursing homes, hotels and motels, country clubs, government and military organizations, colleges and universities, and retail locations. The company was formerly known as USF Holding Corp. and changed its name to US Foods Holding Corp. in February 2016. US Foods Holding Corp. was incorporated in 2007 and is headquartered in Rosemont, Illinois.",
@@ -8,9 +8,9 @@
   "employees": 30000,
   "ceo": "Mr. David E. Flitman",
   "next_earnings": "2026-11-05",
-  "earnings_estimated": true,
-  "earnings_call": "2026-08-06",
-  "eps_estimate": 1.25387,
+  "earnings_estimated": false,
+  "earnings_call": "2026-11-05",
+  "eps_estimate": 1.25617,
   "analysts": {
     "strong_buy": 0,
     "buy": 12,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 15
   },
-  "target_mean": 116,
+  "target_mean": 116.26667,
   "target_high": 130,
   "target_low": 65,
   "target_analysts": 15,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.1718,
-    "q1": 0.26569998,
-    "y0": 0.201,
-    "y1": 0.16049999
+    "q0": 0.174,
+    "q1": 0.2627,
+    "y0": 0.2006,
+    "y1": 0.16059999
   },
   "ratings": [
+    {
+      "date": "2026-10-15",
+      "firm": "Morgan Stanley",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
     {
       "date": "2026-09-29",
       "firm": "JP Morgan",
@@ -140,13 +147,6 @@
       "from": "Equal-Weight",
       "to": "Equal-Weight",
       "action": "main"
-    },
-    {
-      "date": "2026-07-07",
-      "firm": "TD Cowen",
-      "from": null,
-      "to": "Buy",
-      "action": "init"
     }
   ],
   "holders": [
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.857,
-    "enterprise_value": 26529941504,
-    "ev_ebitda": 14.879,
-    "ev_revenue": 0.661,
+    "enterprise_value": 26646759424,
+    "ev_ebitda": 14.945,
+    "ev_revenue": 0.664,
     "float_shares": 214779632,
     "short_shares": 13751472,
     "short_pct_float": 7.2,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 905,
+  "inst_count": 906,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -318,7 +318,16 @@
       "date": "2026-05-19"
     },
     {
-      "name": "ZIEGLER ANN ELIZABETH",
+      "name": "PFORZHEIMER CARL ANDREW",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 2204,
+      "date": "2026-05-14"
+    },
+    {
+      "name": "ROACH QUENTIN",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -346,15 +355,6 @@
     },
     {
       "name": "GOTTSCHALK MARLA C",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 2204,
-      "date": "2026-05-14"
-    },
-    {
-      "name": "BULLOCK DAVID W",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

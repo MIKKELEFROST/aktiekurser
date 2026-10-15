@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T20:27:35.081Z",
+  "updated_at": "2026-10-15T20:08:17.910Z",
   "source": "Yahoo Finance",
   "symbol": "CRWV",
   "summary": "CoreWeave, Inc. operates as a cloud infrastructure technology company in the United States. The company offers CoreWeave Cloud platform that comprises proprietary software and cloud services that deliver the automation and efficiency needed to manage complex artificial intelligence (AI) infrastructure at scale. It also offers data and storage solutions, such as Local Object Transport Accelerator; infrastructure control solutions, including CoreWeave Kubernetes service; mission control services, including node, rack, and fleet lifecycle management; model and agent development tools comprising Weights & Biases, an AI developer platform; and runtime acceleration. In addition, the company offers graphics processing unit compute, CPU compute, networking services, managed services, and virtual and bare metal servers. Its services also include visual effects rendering, machine learning, pixel streaming, and batch processing. It has a collaboration with AdaniConneX to operate a data center in India. The company was formerly known as Atlantic Crypto Corporation and changed its name to CoreWeave, Inc. in December 2019. CoreWeave, Inc. was incorporated in 2017 and is based in Livingston, New Jersey.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-11",
   "earnings_estimated": false,
   "earnings_call": "2026-08-11",
-  "eps_estimate": -1.19147,
+  "eps_estimate": -1.19388,
   "analysts": {
     "strong_buy": 8,
     "buy": 23,
@@ -19,7 +19,7 @@
     "strong_sell": 1,
     "total": 42
   },
-  "target_mean": 141.47368,
+  "target_mean": 140.76315,
   "target_high": 278,
   "target_low": 39,
   "target_analysts": 38,
@@ -54,12 +54,19 @@
     }
   ],
   "growth": {
-    "q0": -13.4772,
-    "q1": -0.045500003,
-    "y0": -1.8400999,
+    "q0": -13.5064,
+    "q1": -0.0633,
+    "y0": -1.8476,
     "y1": 0.5356
   },
   "ratings": [
+    {
+      "date": "2026-10-15",
+      "firm": "Mizuho",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-10-05",
       "firm": "Freedom Capital Markets",
@@ -119,13 +126,6 @@
     {
       "date": "2026-09-18",
       "firm": "Rosenblatt",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-24",
-      "firm": "Truist Securities",
       "from": "Buy",
       "to": "Buy",
       "action": "main"
@@ -205,17 +205,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 119,
-    "sells": 164,
-    "bought": 12397726,
-    "sold": 39697332,
+    "buys": 120,
+    "sells": 165,
+    "bought": 12440498,
+    "sold": 39734712,
     "net_pct": -21
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 88989065216,
-    "ev_ebitda": 23.486,
-    "ev_revenue": 11.725,
+    "enterprise_value": 82354077696,
+    "ev_ebitda": 21.735,
+    "ev_revenue": 10.85,
     "float_shares": 328307678,
     "short_shares": 59952639,
     "short_pct_float": 19.24,
@@ -226,7 +226,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": null,
-  "inst_count": 1304,
+  "inst_count": 1305,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -255,6 +255,24 @@
   ],
   "insiders": [
     {
+      "name": "JONES JONATHAN",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 77.18 - 80.36 per share.",
+      "value": 2940519,
+      "shares": 37380,
+      "date": "2026-10-13"
+    },
+    {
+      "name": "JONES JONATHAN",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 42772,
+      "date": "2026-10-09"
+    },
+    {
       "name": "BOONE KAREN",
       "role": "Director",
       "kind": "other",
@@ -275,6 +293,15 @@
     {
       "name": "INTRATOR MICHAEL N",
       "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 107692,
+      "date": "2026-09-29"
+    },
+    {
+      "name": "INTRATOR MICHAEL N",
+      "role": "Chief Executive Officer",
       "kind": "sell",
       "text": "Sale at price 85.86 - 90.26 per share.",
       "value": 26661770,
@@ -288,7 +315,7 @@
       "text": null,
       "value": null,
       "shares": 107692,
-      "date": "2026-09-29"
+      "date": "2026-09-22"
     },
     {
       "name": "AGRAWAL NITIN",
@@ -309,24 +336,6 @@
       "date": "2026-09-22"
     },
     {
-      "name": "INTRATOR MICHAEL N",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 107692,
-      "date": "2026-09-22"
-    },
-    {
-      "name": "VENTURO BRIAN M",
-      "role": "Officer and Director",
-      "kind": "other",
-      "text": "Stock Gift at price 0.00 per share.",
-      "value": 0,
-      "shares": 62500,
-      "date": "2026-09-18"
-    },
-    {
       "name": "VENTURO BRIAN M",
       "role": "Officer and Director",
       "kind": "other",
@@ -334,15 +343,6 @@
       "value": null,
       "shares": 62500,
       "date": "2026-09-18"
-    },
-    {
-      "name": "INTRATOR MICHAEL N",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 81.04 - 83.65 per share.",
-      "value": 25204098,
-      "shares": 307692,
-      "date": "2026-09-15"
     }
   ],
   "dividends": [],
