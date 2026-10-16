@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-15T20:08:20.214Z",
+  "updated_at": "2026-10-16T19:48:04.104Z",
   "source": "Yahoo Finance",
   "symbol": "PLD",
   "summary": "Prologis, Inc. don't just lead the industry, they define it. The firm creates the intelligent infrastructure that powers global commerce, seamlessly connecting the digital and physical worlds. From agile supply chains to clean energy solutions, their ecosystems help your business move faster, operate smarter and grow sustainably. With unmatched scale, innovation and expertise, Prologis is a category of onenot just shaping the future of logistics but building what comes next. Prologis, Inc. was established in 1983 and is incorporated in Maryland.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-15",
   "earnings_estimated": false,
   "earnings_call": "2026-10-15",
-  "eps_estimate": 0.79,
+  "eps_estimate": 0.8,
   "analysts": {
     "strong_buy": 4,
     "buy": 7,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 17
   },
-  "target_mean": 156,
+  "target_mean": 155.84615,
   "target_high": 170,
   "target_low": 140,
   "target_analysts": 13,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": -0.0094,
-    "q1": -0.4701,
+    "q0": -0.45189998,
+    "q1": -0.052600004,
     "y0": -0.0582,
     "y1": 0.0229
   },
   "ratings": [
+    {
+      "date": "2026-10-16",
+      "firm": "BTIG",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "reit"
+    },
     {
       "date": "2026-10-13",
       "firm": "Scotiabank",
@@ -140,13 +147,6 @@
       "from": "Outperform",
       "to": "Outperform",
       "action": "main"
-    },
-    {
-      "date": "2026-06-18",
-      "firm": "Scotiabank",
-      "from": "Sector Outperform",
-      "to": "Sector Perform",
-      "action": "down"
     }
   ],
   "holders": [
@@ -227,14 +227,14 @@
     "sells": 2,
     "bought": 108247,
     "sold": 53597,
-    "net_pct": 2.3
+    "net_pct": 2.2
   },
   "extras": {
-    "beta": 1.324,
-    "enterprise_value": 161513881600,
-    "ev_ebitda": 23.974,
-    "ev_revenue": 16.724,
-    "float_shares": 928606566,
+    "beta": null,
+    "enterprise_value": 161934360576,
+    "ev_ebitda": 24.113,
+    "ev_revenue": 16.582,
+    "float_shares": 963871832,
     "short_shares": 18474881,
     "short_pct_float": 2.22,
     "short_ratio": 5.29,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-09-16",
   "dividend_date": null,
   "payout_ratio": 0.92440003,
-  "inst_count": 2368,
+  "inst_count": 2367,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.73276,
-      "actual": 0.7975,
-      "surprise_pct": 8.84
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.68354,
@@ -269,6 +263,12 @@
       "estimate": 0.74667,
       "actual": 1.1075,
       "surprise_pct": 48.33
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.79,
+      "actual": 0.8423,
+      "surprise_pct": 6.62
     }
   ],
   "insiders": [

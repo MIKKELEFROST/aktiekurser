@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-15T20:08:19.004Z",
+  "updated_at": "2026-10-16T19:48:03.754Z",
   "source": "Yahoo Finance",
   "symbol": "MSFT",
   "summary": "Microsoft Corporation, a technology company, develops and supports a portfolio of technology solutions for individuals and businesses worldwide. Its products include operating systems, server applications, business solution applications, software development tools, desktop and server management tools, and video games; and devices, such as PCs, tablets, gaming and entertainment consoles, other intelligent devices, and related accessories. The company's Productivity and Business Processes segment offers Microsoft 365 Commercial, Enterprise Mobility + Security, Power BI, Exchange, SharePoint, Microsoft Teams, Microsoft 365 Security and Compliance, Microsoft 365 Copilot, and Windows Commercial on-premises and Office licensed on-premises. This segment also provides Microsoft 365 Consumer products and cloud services; LinkedIn, including talent solutions, marketing solutions, subscriptions, and sales solutions; Dynamics 365, a set of cloud-based applications; and on-premises ERP and CRM applications. Its Intelligent Cloud segment offers server products and cloud services; cloud and AI consumption-based services, GitHub cloud services, health and life sciences cloud services, as well as virtual desktop offerings, and other cloud services; SQL Server, Windows Server, Visual Studio, System Center, and related client access licenses; and enterprise support services, industry solutions, Microsoft partner network, and learning experience. The company's More Personal Computing segment provides Windows OEM licensing and devices comprising Surface and PC accessories; XBOX hardware, and XBOX first- and third-party content and services; XBOX Game Pass and other subscriptions; XBOX Cloud Gaming, advertising, and other cloud services; and search advertising consisting of Bing, Copilot, Microsoft News, Microsoft Edge, and third-party affiliates. It sells its products through partners and retail networks. The company was founded in 1975 and is headquartered in Redmond, Washington.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-28",
   "earnings_estimated": false,
   "earnings_call": "2026-10-28",
-  "eps_estimate": 4.71876,
+  "eps_estimate": 4.71837,
   "analysts": {
     "strong_buy": 13,
     "buy": 40,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 56
   },
-  "target_mean": 594.52057,
+  "target_mean": 596.2187,
   "target_high": 870,
   "target_low": 440,
   "target_analysts": 53,
@@ -72,12 +72,26 @@
     }
   ],
   "growth": {
-    "q0": 0.1426,
-    "q1": 0.16530001,
-    "y0": 0.14479999,
-    "y1": 0.19860001
+    "q0": 0.1425,
+    "q1": 0.16450001,
+    "y0": 0.1446,
+    "y1": 0.1993
   },
   "ratings": [
+    {
+      "date": "2026-10-16",
+      "firm": "StoneX",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-15",
+      "firm": "UBS",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-15",
       "firm": "Citigroup",
@@ -133,20 +147,6 @@
       "from": "Overweight",
       "to": "Overweight",
       "action": "main"
-    },
-    {
-      "date": "2026-09-30",
-      "firm": "Piper Sandler",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-09-23",
-      "firm": "Stifel",
-      "from": "Hold",
-      "to": "Buy",
-      "action": "up"
     }
   ],
   "holders": [
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 16,
-    "sells": 9,
+    "sells": 10,
     "bought": 513644,
-    "sold": 242344,
-    "net_pct": 4.9
+    "sold": 249649,
+    "net_pct": 4.7
   },
   "extras": {
     "beta": 1.099,
-    "enterprise_value": 4014909423616,
-    "ev_ebitda": 20.67,
-    "ev_revenue": 12.099,
+    "enterprise_value": 4057606389760,
+    "ev_ebitda": 20.89,
+    "ev_revenue": 12.228,
     "float_shares": 7414555684,
     "short_shares": 61133927,
     "short_pct_float": 0.82,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-11-19",
   "dividend_date": null,
   "payout_ratio": 0.1983,
-  "inst_count": 8126,
+  "inst_count": 8128,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "HOOD AMY E",
+      "role": "Chief Financial Officer",
+      "kind": "sell",
+      "text": "Sale at price 544.80 - 546.51 per share.",
+      "value": 3984303,
+      "shares": 7305,
+      "date": "2026-10-13"
+    },
     {
       "name": "HOOD AMY E",
       "role": "Chief Financial Officer",
@@ -351,15 +360,6 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 5575,
-      "date": "2026-08-31"
-    },
-    {
-      "name": "HOOD AMY E",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 31260,
       "date": "2026-08-31"
     }
   ],
