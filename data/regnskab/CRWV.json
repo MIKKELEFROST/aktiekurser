@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-16T19:48:02.670Z",
+  "updated_at": "2026-10-19T21:17:59.692Z",
   "source": "Yahoo Finance",
   "symbol": "CRWV",
   "summary": "CoreWeave, Inc. operates as a cloud infrastructure technology company in the United States. The company offers CoreWeave Cloud platform that comprises proprietary software and cloud services that deliver the automation and efficiency needed to manage complex artificial intelligence (AI) infrastructure at scale. It also offers data and storage solutions, such as Local Object Transport Accelerator; infrastructure control solutions, including CoreWeave Kubernetes service; mission control services, including node, rack, and fleet lifecycle management; model and agent development tools comprising Weights & Biases, an AI developer platform; and runtime acceleration. In addition, the company offers graphics processing unit compute, CPU compute, networking services, managed services, and virtual and bare metal servers. Its services also include visual effects rendering, machine learning, pixel streaming, and batch processing. It has a collaboration with AdaniConneX to operate a data center in India. The company was formerly known as Atlantic Crypto Corporation and changed its name to CoreWeave, Inc. in December 2019. CoreWeave, Inc. was incorporated in 2017 and is based in Livingston, New Jersey.",
@@ -10,16 +10,16 @@
   "next_earnings": "2026-11-11",
   "earnings_estimated": false,
   "earnings_call": "2026-08-11",
-  "eps_estimate": -1.19388,
+  "eps_estimate": -1.19595,
   "analysts": {
     "strong_buy": 8,
-    "buy": 22,
-    "hold": 8,
+    "buy": 23,
+    "hold": 7,
     "sell": 2,
     "strong_sell": 1,
     "total": 41
   },
-  "target_mean": 140.57895,
+  "target_mean": 138.34212,
   "target_high": 278,
   "target_low": 39,
   "target_analysts": 38,
@@ -54,12 +54,19 @@
     }
   ],
   "growth": {
-    "q0": -13.5064,
-    "q1": -0.0633,
-    "y0": -1.8486,
-    "y1": 0.5306
+    "q0": -13.5316,
+    "q1": -0.0695,
+    "y0": -1.8484,
+    "y1": 0.53349996
   },
   "ratings": [
+    {
+      "date": "2026-10-19",
+      "firm": "Goldman Sachs",
+      "from": "Neutral",
+      "to": "Buy",
+      "action": "up"
+    },
     {
       "date": "2026-10-15",
       "firm": "Mizuho",
@@ -122,13 +129,6 @@
       "from": null,
       "to": "Sell",
       "action": "init"
-    },
-    {
-      "date": "2026-09-18",
-      "firm": "Rosenblatt",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
     }
   ],
   "holders": [
@@ -205,18 +205,18 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 115,
-    "sells": 161,
-    "bought": 11057805,
-    "sold": 38164452,
-    "net_pct": -20.9
+    "buys": 114,
+    "sells": 154,
+    "bought": 10980881,
+    "sold": 33220650,
+    "net_pct": -17.8
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 84510588928,
-    "ev_ebitda": 22.304,
-    "ev_revenue": 11.134,
-    "float_shares": 328307678,
+    "enterprise_value": 79932833792,
+    "ev_ebitda": 21.096,
+    "ev_revenue": 10.531,
+    "float_shares": 328324224,
     "short_shares": 59952639,
     "short_pct_float": 19.24,
     "short_ratio": 2.08,
@@ -226,7 +226,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": null,
-  "inst_count": 1301,
+  "inst_count": 1304,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -327,21 +327,21 @@
       "date": "2026-09-22"
     },
     {
-      "name": "AGRAWAL NITIN",
-      "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 85.57 - 89.02 per share.",
-      "value": 4841823,
-      "shares": 55764,
-      "date": "2026-09-22"
-    },
-    {
       "name": "INTRATOR MICHAEL N",
       "role": "Chief Executive Officer",
       "kind": "sell",
       "text": "Sale at price 85.57 - 88.95 per share.",
       "value": 26713370,
       "shares": 307692,
+      "date": "2026-09-22"
+    },
+    {
+      "name": "AGRAWAL NITIN",
+      "role": "Chief Financial Officer",
+      "kind": "sell",
+      "text": "Sale at price 85.57 - 89.02 per share.",
+      "value": 4841823,
+      "shares": 55764,
       "date": "2026-09-22"
     }
   ],

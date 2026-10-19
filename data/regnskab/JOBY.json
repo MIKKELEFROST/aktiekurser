@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-16T19:48:03.494Z",
+  "updated_at": "2026-10-19T21:18:00.505Z",
   "source": "Yahoo Finance",
   "symbol": "JOBY",
   "summary": "Joby Aviation, Inc., an air mobility company, engages in research, develop, test, manufacture, and sale of electric vertical takeoff and landing aircraft in the United States, Japan, Europe, and internationally. The company offers facilitation of passenger transportation via helicopter or fixed wing aircraft. It is also involved in the provision of government flight services, customer demonstration, and engineering services; and exhibition activities. Joby Aviation, Inc. was founded in 2009 and is headquartered in Santa Cruz, California.",
@@ -19,7 +19,7 @@
     "strong_sell": 2,
     "total": 11
   },
-  "target_mean": 10.34222,
+  "target_mean": 10.00889,
   "target_high": 18,
   "target_low": 4,
   "target_analysts": 9,
@@ -78,6 +78,13 @@
     "y1": 0.16229999
   },
   "ratings": [
+    {
+      "date": "2026-10-19",
+      "firm": "Morgan Stanley",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
     {
       "date": "2026-10-09",
       "firm": "Barclays",
@@ -140,13 +147,6 @@
       "from": "Buy",
       "to": "Buy",
       "action": "main"
-    },
-    {
-      "date": "2026-02-26",
-      "firm": "HC Wainwright & Co.",
-      "from": "Neutral",
-      "to": "Buy",
-      "action": "up"
     }
   ],
   "holders": [
@@ -224,17 +224,17 @@
   "insider_net": {
     "period": "6m",
     "buys": 41,
-    "sells": 37,
+    "sells": 36,
     "bought": 1005190,
-    "sold": 3911773,
-    "net_pct": -0.9
+    "sold": 3450792,
+    "net_pct": -0.8
   },
   "extras": {
     "beta": 2.662,
-    "enterprise_value": 3241574656,
-    "ev_ebitda": -3.865,
-    "ev_revenue": 27.874,
-    "float_shares": 669656891,
+    "enterprise_value": 3093206016,
+    "ev_ebitda": -3.688,
+    "ev_revenue": 26.598,
+    "float_shares": 669627217,
     "short_shares": 127280673,
     "short_pct_float": 19.04,
     "short_ratio": 5.04,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": null,
-  "inst_count": 641,
+  "inst_count": 640,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -273,21 +273,21 @@
   ],
   "insiders": [
     {
-      "name": "DEHOFF KATHERINE",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 5.09 per share.",
-      "value": 42140,
-      "shares": 8279,
-      "date": "2026-10-13"
-    },
-    {
       "name": "ALLISON ERIC",
       "role": "Officer",
       "kind": "sell",
       "text": "Sale at price 5.09 per share.",
       "value": 140448,
       "shares": 27593,
+      "date": "2026-10-13"
+    },
+    {
+      "name": "DEHOFF KATHERINE",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 5.09 per share.",
+      "value": 42140,
+      "shares": 8279,
       "date": "2026-10-13"
     },
     {
@@ -307,15 +307,6 @@
       "value": null,
       "shares": 16065,
       "date": "2026-10-12"
-    },
-    {
-      "name": "BOWLES GREGORY",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 5.78 per share.",
-      "value": 30646,
-      "shares": 5302,
-      "date": "2026-10-05"
     },
     {
       "name": "SALUJA DIPENDER",
@@ -354,12 +345,21 @@
       "date": "2026-10-05"
     },
     {
-      "name": "SIMI BONNY W",
+      "name": "BOWLES GREGORY",
       "role": "Officer",
       "kind": "sell",
+      "text": "Sale at price 5.78 per share.",
+      "value": 30646,
+      "shares": 5302,
+      "date": "2026-10-05"
+    },
+    {
+      "name": "BRUMANA RODRIGO MOREIRA",
+      "role": "Chief Financial Officer",
+      "kind": "sell",
       "text": "Sale at price 5.95 per share.",
-      "value": 64796,
-      "shares": 10890,
+      "value": 15476,
+      "shares": 2601,
       "date": "2026-10-02"
     }
   ],

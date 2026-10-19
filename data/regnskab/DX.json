@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-16T19:48:02.825Z",
+  "updated_at": "2026-10-19T21:17:59.811Z",
   "source": "Yahoo Finance",
   "symbol": "DX",
   "summary": "Dynex Capital, Inc., a mortgage real estate investment trust, invests in residential and commercial mortgage-backed securities (MBS) in the United States. Agency MBS have a guaranty of principal payment by an agency of the U.S. government or a U.S. government-sponsored entity, such as Fannie Mae and Freddie Mac. Non-Agency MBS do not have a guaranty of principal or interest payments. The company has qualified as a real estate investment trust for federal income tax purposes. It generally would not be subject to federal income taxes if it distributes at least 90% of its taxable income to its shareholders. The company was incorporated in 1987 and is headquartered in Glen Allen, Virginia.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-19",
   "earnings_estimated": false,
   "earnings_call": "2026-10-19",
-  "eps_estimate": 0.36925,
+  "eps_estimate": 0.33,
   "analysts": {
     "strong_buy": 1,
     "buy": 3,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 30611000,
-      "earnings": 147561000
-    },
-    {
       "q": "4Q2025",
       "revenue": 43484000,
       "earnings": 182598000
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 93783000,
       "earnings": 178143000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 101562000,
+      "earnings": -338305000
     }
   ],
   "growth": {
-    "q0": 0.477,
-    "q1": 0.6192,
-    "y0": 0.79870003,
-    "y1": 0.1019
+    "q0": 0.5,
+    "q1": 0.1701,
+    "y0": 0.7761,
+    "y1": 0.116000004
   },
   "ratings": [
     {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.965,
-    "enterprise_value": 24897116160,
+    "enterprise_value": 24850104320,
     "ev_ebitda": null,
-    "ev_revenue": 49.568,
+    "ev_revenue": 49.474,
     "float_shares": 246224569,
     "short_shares": 17541030,
     "short_pct_float": 7.1,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.70589995,
   "inst_count": 372,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.26388,
-      "actual": 0.25,
-      "surprise_pct": -5.26
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.26692,
@@ -269,6 +263,12 @@
       "estimate": 0.34464,
       "actual": 0.36,
       "surprise_pct": 4.46
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.36925,
+      "actual": 0.38,
+      "surprise_pct": 2.91
     }
   ],
   "insiders": [
