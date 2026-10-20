@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T21:18:00.473Z",
+  "updated_at": "2026-10-20T20:09:21.057Z",
   "source": "Yahoo Finance",
   "symbol": "IT",
   "summary": "Gartner, Inc. provides business and technology insights to support decision-making and performance on an organization's mission-critical priorities in the United States, Canada, Europe, the Middle East, Africa, and internationally. It operates through three segments: Insights, Conferences, and Consulting. The Insights segment delivers insights through subscription services, such as access to published content, data and benchmarks, and direct access to a network of business and technology experts. The Conferences segment enables executives and teams to learn, share, and network through its Symposium/Xpo series and peer-driven sessions, as well as through its conferences focused on specific business roles and topics. The Consulting segment provides technology-driven strategic initiatives, including custom analysis and on-the-ground support to senior executives. This segment also offers actionable solutions for IT-related priorities, including IT cost optimization, digital transformation, and IT sourcing optimization. The company was formerly known as Gartner Group, Inc. and changed its name to Gartner, Inc. in November 2001. Gartner, Inc. was founded in 1979 and is headquartered in Stamford, Connecticut.",
@@ -8,8 +8,8 @@
   "employees": 19285,
   "ceo": "Mr. Eugene A. Hall",
   "next_earnings": "2026-11-03",
-  "earnings_estimated": true,
-  "earnings_call": "2026-08-04",
+  "earnings_estimated": false,
+  "earnings_call": "2026-11-03",
   "eps_estimate": 2.84008,
   "analysts": {
     "strong_buy": 0,
@@ -19,8 +19,8 @@
     "strong_sell": 1,
     "total": 15
   },
-  "target_mean": 189.53847,
-  "target_high": 229,
+  "target_mean": 193.76923,
+  "target_high": 235,
   "target_low": 150,
   "target_analysts": 13,
   "statements": [
@@ -73,11 +73,32 @@
   ],
   "growth": {
     "q0": 0.029000001,
-    "q1": -0.0034999999,
+    "q1": -0.0033000002,
     "y0": 0.097200006,
-    "y1": 0.1339
+    "y1": 0.134
   },
   "ratings": [
+    {
+      "date": "2026-10-20",
+      "firm": "Truist Securities",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-20",
+      "firm": "Wells Fargo",
+      "from": "Underweight",
+      "to": "Underweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-20",
+      "firm": "RBC Capital",
+      "from": "Sector Perform",
+      "to": "Sector Perform",
+      "action": "reit"
+    },
     {
       "date": "2026-10-13",
       "firm": "BMO Capital",
@@ -125,27 +146,6 @@
       "firm": "RBC Capital",
       "from": "Sector Perform",
       "to": "Sector Perform",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-05",
-      "firm": "Wells Fargo",
-      "from": "Underweight",
-      "to": "Underweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-10",
-      "firm": "Morgan Stanley",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
-      "action": "main"
-    },
-    {
-      "date": "2026-06-24",
-      "firm": "Wells Fargo",
-      "from": "Underweight",
-      "to": "Underweight",
       "action": "main"
     }
   ],
@@ -223,17 +223,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 12,
+    "buys": 13,
     "sells": 5,
-    "bought": 7970,
+    "bought": 8135,
     "sold": 7082,
     "net_pct": 0.1
   },
   "extras": {
     "beta": 0.978,
-    "enterprise_value": 14808432640,
-    "ev_ebitda": 10.7,
-    "ev_revenue": 2.291,
+    "enterprise_value": 14958095360,
+    "ev_ebitda": 10.809,
+    "ev_revenue": 2.314,
     "float_shares": 57221182,
     "short_shares": 6935377,
     "short_pct_float": 15.55,
@@ -244,7 +244,7 @@
   "ex_dividend": "1999-07-19",
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 960,
+  "inst_count": 962,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -273,6 +273,15 @@
   ],
   "insiders": [
     {
+      "name": "RUPANI ALTAF",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 165,
+      "date": "2026-10-15"
+    },
+    {
       "name": "KRANICH ROBIN B.",
       "role": "Officer",
       "kind": "sell",
@@ -300,21 +309,21 @@
       "date": "2026-08-10"
     },
     {
-      "name": "HERKES CLAIRE L",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 190.71 per share.",
-      "value": 198148,
-      "shares": 1039,
-      "date": "2026-08-07"
-    },
-    {
       "name": "FUCHS ANNE SUTHERLAND",
       "role": "Director",
       "kind": "sell",
       "text": "Sale at price 184.30 per share.",
       "value": 158500,
       "shares": 860,
+      "date": "2026-08-07"
+    },
+    {
+      "name": "HERKES CLAIRE L",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 190.71 per share.",
+      "value": 198148,
+      "shares": 1039,
       "date": "2026-08-07"
     },
     {
@@ -343,15 +352,6 @@
       "value": null,
       "shares": 705,
       "date": "2026-06-01"
-    },
-    {
-      "name": "CESAN RAUL E.",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 551,
-      "date": "2026-05-29"
     },
     {
       "name": "PAGLIUCA STEPHEN G",

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T21:18:01.709Z",
+  "updated_at": "2026-10-20T20:09:22.657Z",
   "source": "Yahoo Finance",
   "symbol": "WTFC",
   "summary": "Wintrust Financial Corporation, a financial holding company, provides community-oriented, personal, and commercial banking services in the United States. It operates through three segments: Community Banking, Specialty Finance, and Wealth Management. The Community Banking segment offers non-interest-bearing deposits, non-brokered interest-bearing transaction accounts, and savings and domestic time deposits; home equity, consumer, and real estate loans; safe deposit facilities; and automatic teller machine, online and mobile banking, and other services. This segment also engages in the retail origination of residential mortgages; provision of lending, deposits, and treasury management services to condominium, homeowner, and community associations; and asset-based lending for middle-market companies. In addition, it provides loan and deposit services to mortgage brokerage companies; lending to restaurant franchisees; direct leasing; small business administration loans; commercial mortgages and construction loans; and financial solutions. The Specialty Finance segment offers commercial and life insurance premiums financing for businesses and individuals; accounts receivable financing, value-added, and out-sourced administrative services, including data processing of payrolls, billing, and cash management services to temporary staffing industry; other specialty finance services; equipment financing through structured loan and lease products; and property and casualty insurance premium financing. The Wealth Management segment provides wealth management services, such as trust and investment, tax-deferred like-kind exchange, asset management, and securities brokerage services. Wintrust Financial Corporation was founded in 1991 and is headquartered in Rosemont, Illinois.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-19",
   "earnings_estimated": false,
   "earnings_call": "2026-10-20",
-  "eps_estimate": 3.30595,
+  "eps_estimate": 3.335,
   "analysts": {
     "strong_buy": 4,
     "buy": 6,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 697837000,
-      "earnings": 188913000
-    },
-    {
       "q": "4Q2025",
       "revenue": 714264000,
       "earnings": 214657000
@@ -69,12 +64,17 @@
       "q": "2Q2026",
       "revenue": 738635000,
       "earnings": 225326000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 757877000,
+      "earnings": 230687000
     }
   ],
   "growth": {
-    "q0": 0.0804,
-    "q1": 0.0738,
-    "y0": 0.1251,
+    "q0": 0.0587,
+    "q1": 0.0358,
+    "y0": 0.1254,
     "y1": 0.0583
   },
   "ratings": [
@@ -230,11 +230,11 @@
     "net_pct": -1.4
   },
   "extras": {
-    "beta": 0.893,
-    "enterprise_value": 10359903232,
+    "beta": null,
+    "enterprise_value": 10200358912,
     "ev_ebitda": null,
-    "ev_revenue": 3.756,
-    "float_shares": 66519419,
+    "ev_revenue": 3.623,
+    "float_shares": 66520438,
     "short_shares": 2951279,
     "short_pct_float": 4.42,
     "short_ratio": 6.88,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-08-06",
   "dividend_date": null,
   "payout_ratio": 0.16870001,
-  "inst_count": 730,
+  "inst_count": 732,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 2.71146,
-      "actual": 3.06,
-      "surprise_pct": 12.85
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 2.93116,
@@ -269,18 +263,15 @@
       "estimate": 3.15278,
       "actual": 3.2799,
       "surprise_pct": 4.03
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 3.30595,
+      "actual": 3.37,
+      "surprise_pct": 1.94
     }
   ],
   "insiders": [
-    {
-      "name": "KENNEY BRIAN A",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 160.72 per share.",
-      "value": 75538,
-      "shares": 470,
-      "date": "2026-09-30"
-    },
     {
       "name": "GLABE MARLA F",
       "role": "Director",
@@ -327,6 +318,15 @@
       "date": "2026-09-30"
     },
     {
+      "name": "SMITH GREGORY A",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 160.72 per share.",
+      "value": 62359,
+      "shares": 388,
+      "date": "2026-09-30"
+    },
+    {
       "name": "MCKINNEY SUZET M",
       "role": "Director",
       "kind": "other",
@@ -354,12 +354,12 @@
       "date": "2026-09-30"
     },
     {
-      "name": "SMITH GREGORY A",
+      "name": "CRIST PETER D",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 160.72 per share.",
-      "value": 62359,
-      "shares": 388,
+      "value": 99004,
+      "shares": 616,
       "date": "2026-09-30"
     }
   ],

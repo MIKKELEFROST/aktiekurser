@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T21:17:59.977Z",
+  "updated_at": "2026-10-20T20:09:20.607Z",
   "source": "Yahoo Finance",
   "symbol": "FANG",
   "summary": "Diamondback Energy, Inc., an independent oil and natural gas company, acquires, develops, explores, and exploits unconventional, onshore oil and natural gas reserves in the Permian Basin in West Texas, the United States. The company primarily focuses on the development of the Spraberry and Wolfcamp formations of the Midland Basin; and the Wolfcamp and Bone Spring formations of the Delaware Basin, both of which are part of the Permian Basin in West Texas and New Mexico. Diamondback Energy, Inc. was founded in 2007 and is headquartered in Midland, Texas.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-02",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": 5.32317,
+  "eps_estimate": 5.45084,
   "analysts": {
     "strong_buy": 6,
     "buy": 21,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 32
   },
-  "target_mean": 238.26666,
+  "target_mean": 238.46667,
   "target_high": 287,
-  "target_low": 215,
+  "target_low": 213,
   "target_analysts": 30,
   "statements": [
     {
@@ -72,12 +72,33 @@
     }
   ],
   "growth": {
-    "q0": 0.72830003,
-    "q1": 2.3889,
-    "y0": 0.6416,
-    "y1": -0.081599995
+    "q0": 0.7698,
+    "q1": 2.4651,
+    "y0": 0.6657,
+    "y1": -0.0653
   },
   "ratings": [
+    {
+      "date": "2026-10-15",
+      "firm": "Scotiabank",
+      "from": null,
+      "to": "Sector Outperform",
+      "action": "init"
+    },
+    {
+      "date": "2026-10-15",
+      "firm": "Morgan Stanley",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-14",
+      "firm": "RBC Capital",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "reit"
+    },
     {
       "date": "2026-09-17",
       "firm": "Raymond James",
@@ -125,27 +146,6 @@
       "firm": "Truist Securities",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-05",
-      "firm": "Wells Fargo",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-21",
-      "firm": "UBS",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-21",
-      "firm": "Susquehanna",
-      "from": "Positive",
-      "to": "Positive",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.537,
-    "enterprise_value": 75347968000,
-    "ev_ebitda": 6.396,
-    "ev_revenue": 4.637,
+    "enterprise_value": 75115544576,
+    "ev_ebitda": 6.377,
+    "ev_revenue": 4.623,
     "float_shares": 213364556,
     "short_shares": 7295434,
     "short_pct_float": 3.76,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-08-13",
   "dividend_date": null,
   "payout_ratio": 0.79050004,
-  "inst_count": 1594,
+  "inst_count": 1597,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -327,21 +327,21 @@
       "date": "2026-08-21"
     },
     {
-      "name": "WESSON DANIEL N.",
-      "role": "Chief Operating Officer",
-      "kind": "sell",
-      "text": "Sale at price 215.21 per share.",
-      "value": 1614054,
-      "shares": 7500,
-      "date": "2026-08-20"
-    },
-    {
       "name": "VANT HOF MATTHEW KAES",
       "role": "Chief Executive Officer",
       "kind": "sell",
       "text": "Sale at price 214.64 - 215.06 per share.",
       "value": 2146608,
       "shares": 10000,
+      "date": "2026-08-20"
+    },
+    {
+      "name": "WESSON DANIEL N.",
+      "role": "Chief Operating Officer",
+      "kind": "sell",
+      "text": "Sale at price 215.21 per share.",
+      "value": 1614054,
+      "shares": 7500,
       "date": "2026-08-20"
     },
     {

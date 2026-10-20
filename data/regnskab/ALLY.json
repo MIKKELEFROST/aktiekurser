@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T21:17:59.282Z",
+  "updated_at": "2026-10-20T20:09:19.660Z",
   "source": "Yahoo Finance",
   "symbol": "ALLY",
   "summary": "Ally Financial Inc., a digital financial-services company, provides various digital financial products and services in the United States and Canada. The company operates through Automotive Finance operations, Insurance operations, and Corporate Finance operations. It offers automotive financing services, including providing retail installment sales contracts, loans and operating leases, term loans to dealers, financing dealer floorplans and other lines of credit to dealers, warehouse lines to automotive retailers, and fleet financing; and financing services to companies and municipalities for the purchase or lease of vehicles, and vehicle-remarketing services. The company also provides consumer finance protection and insurance products through the automotive dealer channel, and commercial insurance products directly to dealers; VSCs, VMCs, and GAP products; and underwrite select commercial insurance coverages, which primarily insure dealers' vehicle inventory. In addition, it provides senior secured asset-based and leveraged cash flow loans to middle-market companies; leveraged loans; commercial real estate product to serve companies in the nursing facilities, senior housing, and medical office buildings; and treasury activities, such as management of the cash and corporate investment securities and loan portfolios, short- and long-term debt, retail and brokered deposit liabilities, derivative instruments, original issue discount, and equity investments. Further, the company offers deposits and securities brokerage and investment advisory services. The company was formerly known as GMAC Inc. and changed its name to Ally Financial Inc. in May 2010. Ally Financial Inc. was founded in 1919 and is based in Detroit, Michigan.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-20",
   "earnings_estimated": false,
   "earnings_call": "2026-10-20",
-  "eps_estimate": 1.33186,
+  "eps_estimate": 1.4172,
   "analysts": {
     "strong_buy": 4,
     "buy": 10,
@@ -51,16 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 2082000000,
-      "earnings": 324000000
-    },
-    {
-      "q": "3Q2025",
-      "revenue": 2168000000,
-      "earnings": 371000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 2123000000,
       "earnings": 300000000
@@ -69,11 +59,21 @@
       "q": "1Q2026",
       "revenue": 2102000000,
       "earnings": 291000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 2286000000,
+      "earnings": 367000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 2332000000,
+      "earnings": 401000000
     }
   ],
   "growth": {
-    "q0": 0.15810001,
-    "q1": 0.30020002,
+    "q0": 0.30020002,
+    "q1": 0.2931,
     "y0": 0.32580003,
     "y1": 0.2165
   },
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 14,
-    "sells": 3,
+    "sells": 2,
     "bought": 44495,
-    "sold": 49675,
-    "net_pct": 0
+    "sold": 10000,
+    "net_pct": 0.1
   },
   "extras": {
     "beta": 1.098,
-    "enterprise_value": 28568205312,
+    "enterprise_value": 28541095936,
     "ev_ebitda": null,
-    "ev_revenue": 3.617,
+    "ev_revenue": 3.614,
     "float_shares": 271862843,
     "short_shares": 15562959,
     "short_pct_float": 5.13,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-07-31",
   "dividend_date": null,
   "payout_ratio": 0.2824,
-  "inst_count": 805,
+  "inst_count": 806,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.00798,
-      "actual": 1.15,
-      "surprise_pct": 14.09
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.02313,
@@ -269,6 +263,12 @@
       "estimate": 1.22247,
       "actual": 1.21,
       "surprise_pct": -1.02
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.33186,
+      "actual": 1.34,
+      "surprise_pct": 0.61
     }
   ],
   "insiders": [
@@ -318,7 +318,16 @@
       "date": "2026-05-15"
     },
     {
-      "name": "CARY WILLIAM H",
+      "name": "FENNEBRESQUE KIM S",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 41.99 per share.",
+      "value": 152508,
+      "shares": 3632,
+      "date": "2026-05-15"
+    },
+    {
+      "name": "GIBBONS THOMAS P",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 41.99 per share.",
@@ -351,15 +360,6 @@
       "text": "Stock Award(Grant) at price 41.99 per share.",
       "value": 257525,
       "shares": 6133,
-      "date": "2026-05-15"
-    },
-    {
-      "name": "SHARPLES BRIAN H",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 41.99 per share.",
-      "value": 152508,
-      "shares": 3632,
       "date": "2026-05-15"
     }
   ],

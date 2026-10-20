@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T21:17:59.585Z",
+  "updated_at": "2026-10-20T20:09:20.116Z",
   "source": "Yahoo Finance",
   "symbol": "CDNS",
   "summary": "Cadence Design Systems, Inc. develops computational, AI-driven software, hardware, and silicon intellectual property products and solutions. The company offers functional verification services, such as Jasper, a formal verification platform; Xcelium, a parallel logic simulation platform; Verisium, a generative AI solution; Palladium, an enterprise emulation platform; and Protium, a prototyping platform for chip verification, as well as digital IC design and sign off products, including Innovus platform; and custom IC design and simulation product include Virtuoso, a platform to design and verify analog. It also provides Xcelium logic simulator and other front-end verification and virtual prototyping technologies; controllers and physical interfaces; PCI Express, universal accelerator and compute express links, and multiple memory interfaces; and Tensilica, a digital signal processor. In addition, the company's design IP portfolio includes serializer/deserializer, peripheral component interconnect, USB, and other standard protocols; and Secure-IC, a solution for embedded security IP. Additionally, it provides System Design and Analysis (SD&A) platform, a solution that enables end-to-end system-level design and verification across chips, packages, PCBs, and electronic systems; Allegro X and Orca X platforms for PCB and advanced packaging; Sigrity X for signal and power integrity; AIR for RF design; Fidelity for computational fluid dynamics; Celsius for thermal and airflow analysis; Clarity 3D solver for electromagnetic and power electronics analysis and simulation; Integrity 3D-IC solution for 3D-IC and multi-chiplet designs; the Optimality Intelligent System Explorer, Reality digital twin, and Millennium enterprise multiphasic platforms; Allegro system design platform; and molecular modeling and simulation solutions and services. The company has a strategic collaboration with NVIDIA. The company was incorporated in 1987 and is headquartered in San Jose, California.",
@@ -74,8 +74,8 @@
   "growth": {
     "q0": 0.060100004,
     "q1": 0.018099999,
-    "y0": 0.14109999,
-    "y1": 0.1743
+    "y0": 0.14140001,
+    "y1": 0.1741
   },
   "ratings": [
     {
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 26,
-    "sells": 23,
+    "sells": 22,
     "bought": 76681,
-    "sold": 206820,
-    "net_pct": -12.6
+    "sold": 185320,
+    "net_pct": -10.8
   },
   "extras": {
     "beta": 1.128,
-    "enterprise_value": 89110339584,
-    "ev_ebitda": 41.333,
-    "ev_revenue": 15.265,
+    "enterprise_value": 90859085824,
+    "ev_ebitda": 42.144,
+    "ev_revenue": 15.564,
     "float_shares": 274173009,
     "short_shares": 5895880,
     "short_pct_float": 2.15,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 2204,
+  "inst_count": 2203,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -284,19 +284,19 @@
     {
       "name": "CUNNINGHAM PAUL ALEXANDER",
       "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 277.12 per share.",
-      "value": 554240,
-      "shares": 2000,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 138.02 per share.",
+      "value": 138020,
+      "shares": 1000,
       "date": "2026-09-15"
     },
     {
       "name": "CUNNINGHAM PAUL ALEXANDER",
       "role": "Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 138.02 per share.",
-      "value": 138020,
-      "shares": 1000,
+      "kind": "sell",
+      "text": "Sale at price 277.12 per share.",
+      "value": 554240,
+      "shares": 2000,
       "date": "2026-09-15"
     },
     {
@@ -318,15 +318,6 @@
       "date": "2026-08-26"
     },
     {
-      "name": "CUNNINGHAM PAUL ALEXANDER",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Stock Gift at price 0.00 per share.",
-      "value": 0,
-      "shares": 1000,
-      "date": "2026-08-25"
-    },
-    {
       "name": "SANGIOVANNI VINCENTELLI ALBERTO",
       "role": "Director",
       "kind": "sell",
@@ -336,13 +327,13 @@
       "date": "2026-08-25"
     },
     {
-      "name": "TENG CHIN-CHI",
+      "name": "CUNNINGHAM PAUL ALEXANDER",
       "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 314.49 per share.",
-      "value": 1488167,
-      "shares": 4732,
-      "date": "2026-08-21"
+      "kind": "other",
+      "text": "Stock Gift at price 0.00 per share.",
+      "value": 0,
+      "shares": 1000,
+      "date": "2026-08-25"
     },
     {
       "name": "TENG CHIN-CHI",
@@ -354,12 +345,21 @@
       "date": "2026-08-21"
     },
     {
-      "name": "CUNNINGHAM PAUL ALEXANDER",
+      "name": "TENG CHIN-CHI",
       "role": "Officer",
       "kind": "sell",
-      "text": "Sale at price 323.32 per share.",
-      "value": 646640,
-      "shares": 2000,
+      "text": "Sale at price 314.49 per share.",
+      "value": 1488167,
+      "shares": 4732,
+      "date": "2026-08-21"
+    },
+    {
+      "name": "CUNNINGHAM PAUL ALEXANDER",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 138.02 per share.",
+      "value": 138020,
+      "shares": 1000,
       "date": "2026-08-17"
     }
   ],

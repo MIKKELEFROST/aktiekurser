@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T21:17:59.298Z",
+  "updated_at": "2026-10-20T20:09:19.679Z",
   "source": "Yahoo Finance",
   "symbol": "AMD",
   "summary": "Advanced Micro Devices, Inc. operates as a semiconductor company internationally. It operates in three segments: Data Center, Client and Gaming, and Embedded. The company offers artificial intelligence (AI) accelerators, microprocessors, and graphics processing units (GPUs) as standalone devices or as incorporated into accelerated processing units, chipsets, and data center and professional GPUs; and embedded processors and semi-custom system-on-chip (SoC) products, microprocessor and SoC development services and technology, data processing units, field programmable gate arrays (FPGA), system on modules, AI network interface cards, and adaptive SoC products. It provides processors under the AMD Ryzen, AMD Ryzen AI, AMD Ryzen PRO, AMD Ryzen Threadripper, AMD Ryzen Threadripper PRO, AMD Athlon, and AMD PRO A-Series brands; graphics under the AMD Radeon graphics and AMD Embedded Radeon graphics; professional graphics under the AMD Radeon Pro graphics brand; and AI and general-purpose compute infrastructure for hyperscale providers. The company offers data center graphics under the AMD Instinct accelerators and Radeon PRO V-series brands; server microprocessors under the AMD EPYC brand; low power solutions under the AMD Athlon, AMD Geode, AMD Ryzen, AMD EPYC, and AMD R-Series and G-Series brands; FPGA products under the Virtex-6, Virtex-7, Virtex UltraScale+, Kintex-7, Kintex UltraScale, Kintex UltraScale+, Artix-7, Artix UltraScale+, Spartan-6, and Spartan-7 brands; adaptive SOCs under the Zynq-7000, Zynq UltraScale+ MPSoC, Zynq UltraScale+ RFSoCs, Versal HBM, Versal Premium, Versal Prime, Versal AI Core, Versal AI Edge, Vitis, and Vivado brands; and compute and network acceleration board products under the Alveo and Pensando brands. It serves original equipment and design manufacturers, public cloud service providers, system integrators, distributors, and add-in-board manufacturers. The company was incorporated in 1969 and is headquartered in Santa Clara, California.",
@@ -13,16 +13,16 @@
   "eps_estimate": 1.93439,
   "analysts": {
     "strong_buy": 5,
-    "buy": 40,
+    "buy": 39,
     "hold": 11,
     "sell": 0,
     "strong_sell": 0,
-    "total": 56
+    "total": 55
   },
-  "target_mean": 627.6549,
+  "target_mean": 636.208,
   "target_high": 1250,
-  "target_low": 200,
-  "target_analysts": 51,
+  "target_low": 365,
+  "target_analysts": 50,
   "statements": [
     {
       "year": "2022",
@@ -78,6 +78,13 @@
     "y1": 1.0772
   },
   "ratings": [
+    {
+      "date": "2026-10-20",
+      "firm": "Wedbush",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "reit"
+    },
     {
       "date": "2026-10-06",
       "firm": "Citigroup",
@@ -140,13 +147,6 @@
       "from": "Outperform",
       "to": "Outperform",
       "action": "init"
-    },
-    {
-      "date": "2026-08-06",
-      "firm": "Argus Research",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
     }
   ],
   "holders": [
@@ -223,17 +223,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 30,
-    "sells": 18,
-    "bought": 1154272,
-    "sold": 561468,
-    "net_pct": 9.4
+    "buys": 31,
+    "sells": 19,
+    "bought": 1161534,
+    "sold": 578730,
+    "net_pct": 9.2
   },
   "extras": {
     "beta": 2.454,
-    "enterprise_value": 854336208896,
-    "ev_ebitda": 89.347,
-    "ev_revenue": 20.684,
+    "enterprise_value": 869518213120,
+    "ev_ebitda": 90.935,
+    "ev_revenue": 21.051,
     "float_shares": 1623529079,
     "short_shares": 39281942,
     "short_pct_float": 2.42,
@@ -244,7 +244,7 @@
   "ex_dividend": "1995-04-27",
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 5108,
+  "inst_count": 5114,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -272,6 +272,24 @@
     }
   ],
   "insiders": [
+    {
+      "name": "NORROD FORREST EUGENE",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 84.85 per share.",
+      "value": 616181,
+      "shares": 7262,
+      "date": "2026-10-15"
+    },
+    {
+      "name": "NORROD FORREST EUGENE",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 535.15 - 543.03 per share.",
+      "value": 9333585,
+      "shares": 17262,
+      "date": "2026-10-15"
+    },
     {
       "name": "NORROD FORREST EUGENE",
       "role": "Officer",
@@ -343,24 +361,6 @@
       "value": 13595067,
       "shares": 28811,
       "date": "2026-08-20"
-    },
-    {
-      "name": "PAPERMASTER MARK D",
-      "role": "Chief Technology Officer",
-      "kind": "other",
-      "text": "Stock Gift at price 0.00 per share.",
-      "value": 0,
-      "shares": 25052,
-      "date": "2026-08-19"
-    },
-    {
-      "name": "SU LISA T",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 475.90 - 490.36 per share.",
-      "value": 7214067,
-      "shares": 15000,
-      "date": "2026-08-18"
     }
   ],
   "dividends": [],

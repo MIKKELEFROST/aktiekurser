@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T21:18:01.389Z",
+  "updated_at": "2026-10-20T20:09:22.146Z",
   "source": "Yahoo Finance",
   "symbol": "SMBK",
   "summary": "SmartFinancial, Inc. operates as the bank holding company for SmartBank that provides various financial services to individuals and corporate customers in the United States. The company offers various deposits, including noninterest-bearing and interest-bearing checking, savings, money market, and individual retirement accounts, as well as certificates of deposit. It also provides commercial and residential real estate, consumer real estate, construction and land development, commercial and industrial, and consumer and other loans, as well as leases to small and mid-size companies for equipment financing leases. In addition, the company offers wealth management, insurance, mortgage origination, and internet and mobile banking services. It operates in Tennessee, Alabama, and Florida. SmartFinancial, Inc. is based in Knoxville, Tennessee.",
@@ -7,10 +7,10 @@
   "website": "https://www.smartbank.com",
   "employees": 581,
   "ceo": "Mr. William Young Carroll Jr.",
-  "next_earnings": "2026-10-19",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-19",
+  "earnings_estimated": true,
   "earnings_call": "2026-10-20",
-  "eps_estimate": 0.96,
+  "eps_estimate": 1,
   "analysts": {
     "strong_buy": 0,
     "buy": 2,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 51428000,
-      "earnings": 13686000
-    },
-    {
       "q": "4Q2025",
       "revenue": 53689000,
       "earnings": 13703000
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 56294000,
       "earnings": 16322000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 57844000,
+      "earnings": 18627000
     }
   ],
   "growth": {
-    "q0": 0.1163,
-    "q1": 0.24280001,
-    "y0": 0.2332,
-    "y1": 0.12
+    "q0": 0.2346,
+    "q1": 0.2074,
+    "y0": 0.231,
+    "y1": 0.122
   },
   "ratings": [
     {
@@ -230,11 +230,11 @@
     "net_pct": 4.7
   },
   "extras": {
-    "beta": 0.71,
-    "enterprise_value": 600485376,
+    "beta": null,
+    "enterprise_value": 584274880,
     "ev_ebitda": null,
-    "ev_revenue": 2.941,
-    "float_shares": 15200030,
+    "ev_revenue": 2.78,
+    "float_shares": 14956658,
     "short_shares": 636039,
     "short_pct_float": 4,
     "short_ratio": 4.84,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-07-31",
   "dividend_date": null,
   "payout_ratio": 0.09729999,
-  "inst_count": 250,
+  "inst_count": 252,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.72167,
-      "actual": 0.86,
-      "surprise_pct": 19.17
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.78333,
@@ -269,6 +263,12 @@
       "estimate": 0.90167,
       "actual": 0.96,
       "surprise_pct": 6.47
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.96,
+      "actual": 1.1,
+      "surprise_pct": 14.58
     }
   ],
   "insiders": [

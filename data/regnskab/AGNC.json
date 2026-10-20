@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T21:17:59.251Z",
+  "updated_at": "2026-10-20T20:09:19.621Z",
   "source": "Yahoo Finance",
   "symbol": "AGNC",
   "summary": "AGNC Investment Corp. provides private capital to housing market in the United States. It invests in residential mortgage pass-through securities and collateralized mortgage obligations for which the principal and interest payments are guaranteed by the United States government-sponsored enterprise or by the United States government agency. The company qualifies as a real estate investment trust for federal income tax purposes. It generally would not be subject to federal or state corporate income taxes if it distributes at least 90% of its taxable income to its stockholders. The company was formerly known as American Capital Agency Corp. and changed its name to AGNC Investment Corp. in September 2016. AGNC Investment Corp. was incorporated in 2008 and is headquartered in Bethesda, Maryland.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-19",
   "earnings_estimated": false,
   "earnings_call": "2026-10-20",
-  "eps_estimate": 0.37259,
+  "eps_estimate": 0.37,
   "analysts": {
     "strong_buy": 2,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 148000000,
-      "earnings": 764000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 206000000,
       "earnings": 908000000
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 305000000,
       "earnings": 610000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 402000000,
+      "earnings": -1402000000
     }
   ],
   "growth": {
-    "q0": 0.0645,
-    "q1": 0.0551,
-    "y0": 0.0427,
-    "y1": -0.0706
+    "q0": 0.0571,
+    "q1": -0.1373,
+    "y0": 0.04,
+    "y1": -0.0681
   },
   "ratings": [
     {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.342,
-    "enterprise_value": 83100401664,
+    "enterprise_value": 84193460224,
     "ev_ebitda": null,
-    "ev_revenue": 34.611,
+    "ev_revenue": 35.066,
     "float_shares": 1177929930,
     "short_shares": 131185287,
     "short_pct_float": 11.11,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-10-30",
   "dividend_date": null,
   "payout_ratio": 0.7347,
-  "inst_count": 842,
+  "inst_count": 843,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.38649,
-      "actual": 0.35,
-      "surprise_pct": -9.44
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.37064,
@@ -269,6 +263,12 @@
       "estimate": 0.38128,
       "actual": 0.4,
       "surprise_pct": 4.91
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.37259,
+      "actual": 0.37,
+      "surprise_pct": -0.7
     }
   ],
   "insiders": [

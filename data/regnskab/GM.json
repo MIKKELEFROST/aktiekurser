@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T21:18:00.108Z",
+  "updated_at": "2026-10-20T20:09:20.780Z",
   "source": "Yahoo Finance",
   "symbol": "GM",
   "summary": "General Motors Company designs, builds, and sells trucks, crossovers, cars, and automobile parts worldwide. It operates through GM North America, GM International, and GM Financial segments. The company markets its vehicles primarily under the Buick, Cadillac, Chevrolet, GMC, Baojun, and Wuling brand names. In addition, it sells trucks, crossovers, cars, and automobile parts through retail dealers, distributors and dealers, as well as to fleet customers, including daily rental car companies, commercial fleet customers, leasing companies, and governments. Further, the company offers various range of after-sale services through dealer network, such as maintenance, light repairs, collision repairs, vehicle accessories, and extended service warranties. Additionally, it provides automotive financing; and software-enabled services and subscriptions. General Motors Company was founded in 1908 and is based in Detroit, Michigan.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-20",
   "earnings_estimated": false,
   "earnings_call": "2026-10-20",
-  "eps_estimate": 3.63141,
+  "eps_estimate": 2.80893,
   "analysts": {
     "strong_buy": 7,
     "buy": 13,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 48591000000,
-      "earnings": 1297000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 45287000000,
       "earnings": -3330000000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 48026000000,
       "earnings": 1287000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 50015000000,
+      "earnings": 3305000000
     }
   ],
   "growth": {
-    "q0": 0.2969,
-    "q1": 0.1191,
+    "q0": 0.1191,
+    "q1": -0.056199998,
     "y0": 0.26590002,
     "y1": 0.1263
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.4,
-    "enterprise_value": 179364839424,
-    "ev_ebitda": 10.896,
-    "ev_revenue": 0.967,
+    "enterprise_value": 178303107072,
+    "ev_ebitda": 10.831,
+    "ev_revenue": 0.961,
     "float_shares": 874827961,
     "short_shares": 20048559,
     "short_pct_float": 2.29,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-09-04",
   "dividend_date": null,
   "payout_ratio": 0.296,
-  "inst_count": 2090,
+  "inst_count": 2093,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 2.32278,
-      "actual": 2.8,
-      "surprise_pct": 20.55
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 2.26844,
@@ -269,6 +263,12 @@
       "estimate": 3.18751,
       "actual": 3.57,
       "surprise_pct": 12
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 3.63141,
+      "actual": 3.7,
+      "surprise_pct": 1.89
     }
   ],
   "insiders": [
@@ -300,12 +300,30 @@
       "date": "2026-07-29"
     },
     {
+      "name": "REUSS MARK L",
+      "role": "President",
+      "kind": "sell",
+      "text": "Sale at price 89.97 per share.",
+      "value": 6394978,
+      "shares": 71079,
+      "date": "2026-07-28"
+    },
+    {
       "name": "BARRA MARY TERESA",
       "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 41.40 - 52.16 per share.",
-      "value": 12362648,
-      "shares": 259561,
+      "kind": "sell",
+      "text": "Sale at price 85.32 - 90.38 per share.",
+      "value": 37685906,
+      "shares": 422809,
+      "date": "2026-07-28"
+    },
+    {
+      "name": "HATTO CHRISTOPHER",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 90.00 per share.",
+      "value": 620550,
+      "shares": 6895,
       "date": "2026-07-28"
     },
     {
@@ -320,28 +338,10 @@
     {
       "name": "BARRA MARY TERESA",
       "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 85.32 - 90.38 per share.",
-      "value": 37685906,
-      "shares": 422809,
-      "date": "2026-07-28"
-    },
-    {
-      "name": "REUSS MARK L",
-      "role": "President",
-      "kind": "sell",
-      "text": "Sale at price 89.97 per share.",
-      "value": 6394978,
-      "shares": 71079,
-      "date": "2026-07-28"
-    },
-    {
-      "name": "HATTO CHRISTOPHER",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 90.00 per share.",
-      "value": 620550,
-      "shares": 6895,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 41.40 - 52.16 per share.",
+      "value": 12362648,
+      "shares": 259561,
       "date": "2026-07-28"
     },
     {
@@ -356,9 +356,9 @@
     {
       "name": "BARRA MARY TERESA",
       "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 41.40 - 52.16 per share.",
-      "value": 4877032,
+      "kind": "sell",
+      "text": "Sale at price 85.10 per share.",
+      "value": 8445239,
       "shares": 99239,
       "date": "2026-06-16"
     }

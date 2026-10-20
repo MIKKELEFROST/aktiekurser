@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T21:18:01.529Z",
+  "updated_at": "2026-10-20T20:09:22.352Z",
   "source": "Yahoo Finance",
   "symbol": "TPR",
   "summary": "Tapestry, Inc. provides accessories and lifestyle brand products in North America, Greater China, rest of Asia, and internationally. The company operates in two segments, Coach and Kate Spade. It offers handbags, fashion designs, business cases, computer bags, messenger style bags, backpacks, travel bags, and totes; accessories, such as small leather goods which includes mini and micro handbags, money pieces, wristlets, pouches, and cosmetic cases, as well as novelty accessories, including address books, time management and travel accessories, sketchbooks, and portfolios; and belts, key rings, technology accessories, gifting, straps, and charms. The company also provides women's and men's footwear, which casual and dress shoes, boots, sneakers, and sandals; and other products which includes outerwear, ready-to-wear, jewelry, watches, eyewear, fragrance, scarves, hats, gloves, and other products. It offers its products through retail and outlet stores, brand e-commerce sites, and concession shop-in-shops, as well as third-party digital platforms, including marketplaces. The company was formerly known as Coach, Inc. and changed its name to Tapestry, Inc. in October 2017. Tapestry, Inc. was founded in 1941 and is headquartered in New York, New York.",
@@ -10,19 +10,19 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-08-13",
-  "eps_estimate": 1.5571,
+  "eps_estimate": 1.55444,
   "analysts": {
     "strong_buy": 6,
-    "buy": 11,
+    "buy": 10,
     "hold": 4,
     "sell": 0,
     "strong_sell": 1,
-    "total": 22
+    "total": 21
   },
-  "target_mean": 165.25,
-  "target_high": 232,
+  "target_mean": 163.3158,
+  "target_high": 211,
   "target_low": 96,
-  "target_analysts": 20,
+  "target_analysts": 19,
   "statements": [
     {
       "year": "2022",
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.1283,
-    "q1": 0.1275,
-    "y0": 0.1312,
-    "y1": 0.1164
+    "q0": 0.12640001,
+    "q1": 0.1225,
+    "y0": 0.1279,
+    "y1": 0.1162
   },
   "ratings": [
+    {
+      "date": "2026-10-20",
+      "firm": "UBS",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-16",
       "firm": "Raymond James",
@@ -139,13 +146,6 @@
       "firm": "Telsey Advisory Group",
       "from": "Outperform",
       "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-04",
-      "firm": "JP Morgan",
-      "from": "Overweight",
-      "to": "Overweight",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.429,
-    "enterprise_value": 26766991360,
-    "ev_ebitda": 13.228,
-    "ev_revenue": 3.344,
+    "enterprise_value": 26274494464,
+    "ev_ebitda": 12.985,
+    "ev_revenue": 3.283,
     "float_shares": 198306987,
     "short_shares": 15625468,
     "short_pct_float": 7.91,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-09-04",
   "dividend_date": null,
   "payout_ratio": 0.2201,
-  "inst_count": 1534,
+  "inst_count": 1532,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -275,6 +275,15 @@
     {
       "name": "KULIKOWSKY DENISE",
       "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 115.36 - 115.40 per share.",
+      "value": 670329,
+      "shares": 5810,
+      "date": "2026-09-09"
+    },
+    {
+      "name": "KULIKOWSKY DENISE",
+      "role": "Officer",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 40.58 per share.",
       "value": 280408,
@@ -282,13 +291,22 @@
       "date": "2026-09-09"
     },
     {
-      "name": "KULIKOWSKY DENISE",
+      "name": "KAHN TODD LEONARD",
       "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 115.36 - 115.40 per share.",
-      "value": 670329,
-      "shares": 5810,
-      "date": "2026-09-09"
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 130.17 per share.",
+      "value": 8627928,
+      "shares": 66282,
+      "date": "2026-08-21"
+    },
+    {
+      "name": "HOWARD DAVID E",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 130.17 per share.",
+      "value": 3595165,
+      "shares": 27619,
+      "date": "2026-08-21"
     },
     {
       "name": "ROE SCOTT A",
@@ -309,22 +327,13 @@
       "date": "2026-08-21"
     },
     {
-      "name": "HOWARD DAVID E",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 130.17 per share.",
-      "value": 3595165,
-      "shares": 27619,
-      "date": "2026-08-21"
-    },
-    {
-      "name": "KAHN TODD LEONARD",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 130.17 per share.",
-      "value": 8627928,
-      "shares": 66282,
-      "date": "2026-08-21"
+      "name": "CREVOISERAT JOANNE C",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 132.47 per share.",
+      "value": 3677500,
+      "shares": 27761,
+      "date": "2026-08-19"
     },
     {
       "name": "CREVOISERAT JOANNE C",
@@ -336,30 +345,21 @@
       "date": "2026-08-19"
     },
     {
-      "name": "CREVOISERAT JOANNE C",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 132.47 per share.",
-      "value": 3677500,
-      "shares": 27761,
-      "date": "2026-08-19"
-    },
-    {
-      "name": "ROE SCOTT A",
-      "role": "Chief Operating Officer",
+      "name": "KAHN TODD LEONARD",
+      "role": "Officer",
       "kind": "other",
       "text": "Stock Award(Grant) at price 129.02 per share.",
-      "value": 1000034,
-      "shares": 7751,
+      "value": 1499987,
+      "shares": 11626,
       "date": "2026-08-17"
     },
     {
-      "name": "ROE SCOTT A",
-      "role": "Chief Operating Officer",
+      "name": "KAHN TODD LEONARD",
+      "role": "Chief Executive Officer",
       "kind": "other",
       "text": "Stock Award(Grant) at price 129.02 per share.",
-      "value": 1000034,
-      "shares": 7751,
+      "value": 1499987,
+      "shares": 11626,
       "date": "2026-08-17"
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T21:17:59.572Z",
+  "updated_at": "2026-10-20T20:09:20.096Z",
   "source": "Yahoo Finance",
   "symbol": "CBSH",
   "summary": "Commerce Bancshares, Inc. operates as the bank holding company for Commerce Bank that provides retail, mortgage banking, corporate, investment, trust, and asset management products and services to individuals and businesses in the United States. It operates through three segments: Retail Banking, Commercial, and Wealth. The Retail Banking segment offers various banking products and services, including consumer deposits; consumer loans, such as automobile, motorcycle, marine, tractor/trailer, recreational vehicle, fixed rate and revolving home equity, and other consumer loans; patient health care financing; real estate loans; indirect and other consumer financing; retail branch network; personal mortgage banking; consumer installment lending; and consumer debit and credit bank cards. The Commercial segment provides corporate lending, leasing, international, merchant and commercial bank card, and securities safekeeping and bond accounting services; and business products, government deposits, and related commercial cash management services, as well as sells fixed income securities to correspondent banks, corporations, public institutions, municipalities, and individuals. The Wealth segment provides traditional trust and estate planning, advisory and discretionary investment portfolio management, and brokerage services, as well as private banking accounts. The company offers private equity investment, securities brokerage, insurance agency, specialty lending, and leasing services, as well as online and mobile banking services. Commerce Bancshares, Inc. was founded in 1865 and is headquartered in Kansas City, Missouri.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-20",
   "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": 1.075,
+  "eps_estimate": 1.10571,
   "analysts": {
     "strong_buy": 1,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 443281000,
-      "earnings": 141518000
-    },
-    {
       "q": "4Q2025",
       "revenue": 449109000,
       "earnings": 140662000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 501303000,
       "earnings": 159790000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 496721000,
+      "earnings": 154990000
     }
   ],
   "growth": {
-    "q0": 0.064899996,
-    "q1": 0.094799995,
+    "q0": 0.094799995,
+    "q1": 0.0461,
     "y0": 0.0602,
     "y1": 0.0729
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.591,
-    "enterprise_value": 6323200000,
+    "enterprise_value": 6240009216,
     "ev_ebitda": null,
-    "ev_revenue": 3.428,
+    "ev_revenue": 3.383,
     "float_shares": 130465909,
     "short_shares": 6495220,
     "short_pct_float": 4.61,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-09-04",
   "dividend_date": null,
   "payout_ratio": 0.2663,
-  "inst_count": 642,
+  "inst_count": 644,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.05119,
-      "actual": 1.00952,
-      "surprise_pct": -3.96
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.99625,
@@ -269,6 +263,12 @@
       "estimate": 1.045,
       "actual": 1.1,
       "surprise_pct": 5.26
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.075,
+      "actual": 1.08,
+      "surprise_pct": 0.47
     }
   ],
   "insiders": [
@@ -293,15 +293,6 @@
     {
       "name": "NEFF DOUGLAS D",
       "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 58.14 per share.",
-      "value": 38725,
-      "shares": 666,
-      "date": "2026-08-27"
-    },
-    {
-      "name": "NEFF DOUGLAS D",
-      "role": "Officer",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 37.91 - 39.14 per share.",
       "value": 107449,
@@ -309,13 +300,13 @@
       "date": "2026-08-27"
     },
     {
-      "name": "ORF DAVID L",
+      "name": "NEFF DOUGLAS D",
       "role": "Officer",
       "kind": "sell",
-      "text": "Sale at price 60.35 per share.",
-      "value": 38745,
-      "shares": 642,
-      "date": "2026-08-14"
+      "text": "Sale at price 58.14 per share.",
+      "value": 38725,
+      "shares": 666,
+      "date": "2026-08-27"
     },
     {
       "name": "ORF DAVID L",
@@ -327,13 +318,13 @@
       "date": "2026-08-14"
     },
     {
-      "name": "ROLLER DAVID L",
+      "name": "ORF DAVID L",
       "role": "Officer",
       "kind": "sell",
-      "text": "Sale at price 60.28 per share.",
-      "value": 50030,
-      "shares": 830,
-      "date": "2026-08-04"
+      "text": "Sale at price 60.35 per share.",
+      "value": 38745,
+      "shares": 642,
+      "date": "2026-08-14"
     },
     {
       "name": "ROLLER DAVID L",
@@ -342,6 +333,15 @@
       "text": "Conversion of Exercise of derivative security at price 39.90 per share.",
       "value": 139928,
       "shares": 3507,
+      "date": "2026-08-04"
+    },
+    {
+      "name": "ROLLER DAVID L",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 60.28 per share.",
+      "value": 50030,
+      "shares": 830,
       "date": "2026-08-04"
     },
     {
@@ -356,10 +356,10 @@
     {
       "name": "KEMPER JOHN W",
       "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 60.58 per share.",
-      "value": 353190,
-      "shares": 5830,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 36.44 - 39.90 per share.",
+      "value": 1017195,
+      "shares": 26386,
       "date": "2026-07-29"
     }
   ],

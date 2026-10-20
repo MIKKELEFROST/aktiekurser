@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T21:18:01.667Z",
+  "updated_at": "2026-10-20T20:09:22.576Z",
   "source": "Yahoo Finance",
   "symbol": "W",
   "summary": "Wayfair Inc. engages in the e-commerce business in the United States and internationally. It provides online selections of furniture, décor, housewares, and home improvement products through its sites comprising Wayfair, Joss & Main, AllModern, Birch Lane, Perigold, and Wayfair Professional. The company offers its products under the Three Posts and Mercury Row brands. Wayfair Inc. was founded in 2002 and is headquartered in Boston, Massachusetts.",
@@ -79,6 +79,13 @@
   },
   "ratings": [
     {
+      "date": "2026-10-20",
+      "firm": "Piper Sandler",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
       "date": "2026-10-08",
       "firm": "Baird",
       "from": "Neutral",
@@ -140,13 +147,6 @@
       "from": "Sector Perform",
       "to": "Sector Perform",
       "action": "main"
-    },
-    {
-      "date": "2026-08-05",
-      "firm": "Evercore ISI Group",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
     }
   ],
   "holders": [
@@ -176,13 +176,6 @@
       "kind": "institution",
       "pct": 4.3,
       "shares": 4776475,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "Growth Fund of America",
-      "kind": "fond",
-      "pct": 4.12,
-      "shares": 4568978,
       "date": "2026-06-30"
     },
     {
@@ -219,21 +212,28 @@
       "pct": 3.66,
       "shares": 4058496,
       "date": "2026-06-30"
+    },
+    {
+      "name": "Growth Fund of America",
+      "kind": "fond",
+      "pct": 3.38,
+      "shares": 3757466,
+      "date": "2026-09-30"
     }
   ],
   "insider_net": {
     "period": "6m",
     "buys": 11,
-    "sells": 13,
+    "sells": 16,
     "bought": 1174279,
-    "sold": 684739,
-    "net_pct": 19.7
+    "sold": 919285,
+    "net_pct": 9.4
   },
   "extras": {
     "beta": 3.025,
-    "enterprise_value": 17066934272,
-    "ev_ebitda": 48.212,
-    "ev_revenue": 1.323,
+    "enterprise_value": 17710684160,
+    "ev_ebitda": 50.03,
+    "ev_revenue": 1.372,
     "float_shares": 114517634,
     "short_shares": 11952238,
     "short_pct_float": 13.8,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 592,
+  "inst_count": 593,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -272,6 +272,33 @@
     }
   ],
   "insiders": [
+    {
+      "name": "BLOTNER JON",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 110.00 per share.",
+      "value": 60060,
+      "shares": 546,
+      "date": "2026-10-15"
+    },
+    {
+      "name": "CONINE STEVEN K",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 110.36 - 112.47 per share.",
+      "value": 13016728,
+      "shares": 117000,
+      "date": "2026-10-15"
+    },
+    {
+      "name": "SHAH NIRAJ S",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 110.36 - 112.44 per share.",
+      "value": 13016326,
+      "shares": 117000,
+      "date": "2026-10-15"
+    },
     {
       "name": "CONINE STEVEN K",
       "role": "Director",
@@ -334,33 +361,6 @@
       "value": null,
       "shares": 23468,
       "date": "2026-10-01"
-    },
-    {
-      "name": "CONINE STEVEN K",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 98.32 - 106.09 per share.",
-      "value": 7132029,
-      "shares": 69000,
-      "date": "2026-09-14"
-    },
-    {
-      "name": "SHAH NIRAJ S",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 98.27 - 106.09 per share.",
-      "value": 7131390,
-      "shares": 69000,
-      "date": "2026-09-14"
-    },
-    {
-      "name": "BLOTNER JON",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 100.22 per share.",
-      "value": 698333,
-      "shares": 6968,
-      "date": "2026-09-08"
     }
   ],
   "dividends": [],

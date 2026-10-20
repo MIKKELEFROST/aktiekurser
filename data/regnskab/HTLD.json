@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T21:18:00.210Z",
+  "updated_at": "2026-10-20T20:09:20.928Z",
   "source": "Yahoo Finance",
   "symbol": "HTLD",
   "summary": "Heartland Express, Inc., together with its subsidiaries, provides short, medium, and long-haul truckload carrier and transportation services in the United States, Mexico, and Canada. It primarily provides nationwide asset-based dry van truckload services for shippers; cross-border freight and other transportation services; and temperature-controlled truckload services. The company offers its services under the Heartland Express, Millis Transfer, Smith Transport, and CFI brand names. It primarily serves retailers, manufacturers, and parcel carriers in the consumer goods, appliances, food products, and automotive industries. The company was founded in 1978 and is headquartered in North Liberty, Iowa.",
@@ -7,20 +7,20 @@
   "website": "https://www.heartlandexpress.com",
   "employees": 3630,
   "ceo": "Mr. Michael J. Gerdin",
-  "next_earnings": "2026-10-29",
-  "earnings_estimated": true,
+  "next_earnings": "2026-10-20",
+  "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": 0.03072,
+  "eps_estimate": 0.04203,
   "analysts": {
     "strong_buy": 0,
-    "buy": 1,
-    "hold": 3,
+    "buy": 0,
+    "hold": 4,
     "sell": 0,
     "strong_sell": 2,
     "total": 6
   },
-  "target_mean": 13.2,
-  "target_high": 16,
+  "target_mean": 12.4,
+  "target_high": 13,
   "target_low": 12,
   "target_analysts": 5,
   "statements": [
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 196547000,
-      "earnings": -8284000
-    },
-    {
       "q": "4Q2025",
       "revenue": 179355000,
       "earnings": -19441000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 184126000,
       "earnings": 10583000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 179504000,
+      "earnings": 959000
     }
   ],
   "growth": {
-    "q0": 1.2793,
-    "q1": 1.6833999,
+    "q0": 1.6833999,
+    "q1": 1.8333,
     "y0": 1.3217999,
     "y1": 2.099
   },
   "ratings": [
+    {
+      "date": "2026-10-20",
+      "firm": "Baird",
+      "from": "Outperform",
+      "to": "Neutral",
+      "action": "down"
+    },
     {
       "date": "2026-08-13",
       "firm": "Barclays",
@@ -139,13 +146,6 @@
       "firm": "Baird",
       "from": "Outperform",
       "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-03-03",
-      "firm": "Barclays",
-      "from": "Underweight",
-      "to": "Underweight",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.346,
-    "enterprise_value": 930810112,
-    "ev_ebitda": 9.853,
-    "ev_revenue": 1.264,
+    "enterprise_value": 898330368,
+    "ev_ebitda": 9.509,
+    "ev_revenue": 1.22,
     "float_shares": 53998269,
     "short_shares": 3565587,
     "short_pct_float": 7.91,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.42110002,
   "inst_count": 276,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.12142,
-      "actual": -0.11,
-      "surprise_pct": 9.41
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.08233,
@@ -269,6 +263,12 @@
       "estimate": -0.00597,
       "actual": 0.14,
       "surprise_pct": 2445.06
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.03072,
+      "actual": 0.01,
+      "surprise_pct": -67.45
     }
   ],
   "insiders": [

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T21:17:59.193Z",
+  "updated_at": "2026-10-20T20:09:19.548Z",
   "source": "Yahoo Finance",
   "symbol": "AAPL",
   "summary": "Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide. The company offers iPhone, a line of smartphones; Mac, a line of personal computers; iPad, a line of multi-purpose tablets; and wearables, home, and accessories comprising AirPods, Apple Vision Pro, Apple TV, Apple Watch, Beats products, and HomePod, as well as Apple branded and third-party accessories. It also provides AppleCare support and cloud services; and operates various platforms, including the App Store that allows customers to discover and download applications and digital content, such as books, music, video, games, and podcasts, as well as advertising services include third-party licensing arrangements and its own advertising platforms. In addition, the company offers various subscription-based services, such as Apple Arcade, a game subscription service; Apple Fitness+, a personalized fitness service; Apple Music, which offers users a curated listening experience with on-demand radio stations; Apple News+, a subscription news and magazine service; Apple TV, which offers original content and live sports; Apple Card, a co-branded credit card; and Apple Pay, a cashless payment service, as well as licenses its intellectual property. The company serves consumers, and small and mid-sized businesses; and the education, enterprise, and government markets. It distributes third-party applications for its products through the App Store. The company also sells its products through its retail and online stores, and direct sales force; and third-party cellular network carriers and resellers. The company was formerly known as Apple Computer, Inc. and changed its name to Apple Inc. in January 2007. Apple Inc. was founded in 1976 and is headquartered in Cupertino, California.",
@@ -10,16 +10,16 @@
   "next_earnings": "2026-11-02",
   "earnings_estimated": false,
   "earnings_call": "2026-11-02",
-  "eps_estimate": 1.98212,
+  "eps_estimate": 1.98187,
   "analysts": {
     "strong_buy": 6,
-    "buy": 19,
-    "hold": 13,
+    "buy": 18,
+    "hold": 14,
     "sell": 3,
     "strong_sell": 3,
     "total": 44
   },
-  "target_mean": 329.3759,
+  "target_mean": 328.35025,
   "target_high": 405,
   "target_low": 215,
   "target_analysts": 39,
@@ -72,12 +72,26 @@
     }
   ],
   "growth": {
-    "q0": 0.0714,
-    "q1": 0.013099999,
+    "q0": 0.0713,
+    "q1": 0.0111,
     "y0": 0.1838,
-    "y1": 0.0845
+    "y1": 0.0837
   },
   "ratings": [
+    {
+      "date": "2026-10-20",
+      "firm": "MoffettNathanson",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-20",
+      "firm": "Loop Capital",
+      "from": "Buy",
+      "to": "Hold",
+      "action": "down"
+    },
     {
       "date": "2026-10-12",
       "firm": "JP Morgan",
@@ -133,20 +147,6 @@
       "from": "Buy",
       "to": "Buy",
       "action": "reit"
-    },
-    {
-      "date": "2026-09-10",
-      "firm": "Rosenblatt",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-09-10",
-      "firm": "B of A Securities",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
     }
   ],
   "holders": [
@@ -223,17 +223,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 10,
-    "sells": 17,
-    "bought": 830948,
-    "sold": 582307,
+    "buys": 12,
+    "sells": 19,
+    "bought": 843588,
+    "sold": 584979,
     "net_pct": 0.1
   },
   "extras": {
     "beta": 1.069,
-    "enterprise_value": 5034461888512,
-    "ev_ebitda": 29.974,
-    "ev_revenue": 10.785,
+    "enterprise_value": 5026873344000,
+    "ev_ebitda": 29.929,
+    "ev_revenue": 10.768,
     "float_shares": 14569078010,
     "short_shares": 120763539,
     "short_pct_float": 0.83,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-08-10",
   "dividend_date": null,
   "payout_ratio": 0.1204,
-  "inst_count": 7695,
+  "inst_count": 7698,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -273,6 +273,42 @@
   ],
   "insiders": [
     {
+      "name": "PAREKH KEVAN",
+      "role": "Chief Financial Officer",
+      "kind": "sell",
+      "text": "Sale at price 342.66 - 347.46 per share.",
+      "value": 480315,
+      "shares": 1392,
+      "date": "2026-10-16"
+    },
+    {
+      "name": "BORDERS BEN",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 343.08 - 347.43 per share.",
+      "value": 442108,
+      "shares": 1280,
+      "date": "2026-10-16"
+    },
+    {
+      "name": "BORDERS BEN",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 1714,
+      "date": "2026-10-15"
+    },
+    {
+      "name": "PAREKH KEVAN",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 10926,
+      "date": "2026-10-15"
+    },
+    {
       "name": "NEWSTEAD JENNIFER",
       "role": "General Counsel",
       "kind": "sell",
@@ -284,19 +320,10 @@
     {
       "name": "COOK TIMOTHY D",
       "role": "Officer and Director",
-      "kind": "other",
-      "text": "Stock Gift at price 0.00 per share.",
-      "value": 0,
-      "shares": 26325,
-      "date": "2026-10-02"
-    },
-    {
-      "name": "O'BRIEN DEIRDRE",
-      "role": "Officer",
       "kind": "sell",
-      "text": "Sale at price 333.35 - 333.91 per share.",
-      "value": 15466923,
-      "shares": 46389,
+      "text": "Sale at price 331.44 - 333.94 per share.",
+      "value": 63845841,
+      "shares": 191753,
       "date": "2026-10-02"
     },
     {
@@ -309,22 +336,22 @@
       "date": "2026-10-02"
     },
     {
-      "name": "COOK TIMOTHY D",
-      "role": "Officer and Director",
+      "name": "O'BRIEN DEIRDRE",
+      "role": "Officer",
       "kind": "sell",
-      "text": "Sale at price 331.44 - 333.94 per share.",
-      "value": 63845841,
-      "shares": 191753,
+      "text": "Sale at price 333.35 - 333.91 per share.",
+      "value": 15466923,
+      "shares": 46389,
       "date": "2026-10-02"
     },
     {
-      "name": "O'BRIEN DEIRDRE",
-      "role": "Officer",
+      "name": "COOK TIMOTHY D",
+      "role": "Officer and Director",
       "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 99878,
-      "date": "2026-10-01"
+      "text": "Stock Gift at price 0.00 per share.",
+      "value": 0,
+      "shares": 26325,
+      "date": "2026-10-02"
     },
     {
       "name": "KHAN SABIH",
@@ -334,33 +361,6 @@
       "value": null,
       "shares": 99878,
       "date": "2026-10-01"
-    },
-    {
-      "name": "TERNUS JOHN",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 99878,
-      "date": "2026-10-01"
-    },
-    {
-      "name": "COOK TIMOTHY D",
-      "role": "Officer and Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 374541,
-      "date": "2026-10-01"
-    },
-    {
-      "name": "NEWSTEAD JENNIFER",
-      "role": "General Counsel",
-      "kind": "sell",
-      "text": "Sale at price 336.18 per share.",
-      "value": 806496,
-      "shares": 2399,
-      "date": "2026-09-29"
     }
   ],
   "dividends": [

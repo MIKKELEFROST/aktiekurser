@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T21:17:59.579Z",
+  "updated_at": "2026-10-20T20:09:20.106Z",
   "source": "Yahoo Finance",
   "symbol": "CCK",
   "summary": "Crown Holdings, Inc., together with its subsidiaries, engages in the packaging business in the United States and internationally. It operates through Americas Beverage, European Beverage, Asia Pacific, and Transit Packaging segments. The company manufactures and sells recyclable aluminum beverage cans and ends, glass bottles, steel crowns, aluminum caps, non-beverage cans, food and aerosol cans, and ends and closures. It provides manual, semi-automatic, and automatic equipment and tools to apply and remove consumables, such as straps and films; protective solutions, including airbags, edge protectors, and honeycomb products; and steel and plastic consumables include steel strap, plastic strap, industrial film, and other related products. It serves food industries, including pet food, personal care, household, and industrial products. Crown Holdings, Inc. was founded in 1892 and is headquartered in Tampa, Florida.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-19",
   "earnings_estimated": false,
   "earnings_call": "2026-10-20",
-  "eps_estimate": 2.25735,
+  "eps_estimate": 1.78443,
   "analysts": {
     "strong_buy": 3,
     "buy": 8,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 3202000000,
-      "earnings": 214000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 3127000000,
       "earnings": 150000000
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 3668000000,
       "earnings": 245000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 3711000000,
+      "earnings": 225000000
     }
   ],
   "growth": {
-    "q0": 0.0077,
-    "q1": 0.0304,
-    "y0": 0.0783,
-    "y1": 0.0776
+    "q0": 0.0255,
+    "q1": 0.0168,
+    "y0": 0.0788,
+    "y1": 0.0792
   },
   "ratings": [
     {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.56,
-    "enterprise_value": 18387185664,
-    "ev_ebitda": 8.694,
-    "ev_revenue": 1.387,
+    "enterprise_value": 18466742272,
+    "ev_ebitda": 8.731,
+    "ev_revenue": 1.393,
     "float_shares": 106415927,
     "short_shares": 2536168,
     "short_pct_float": 2.65,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-08-06",
   "dividend_date": null,
   "payout_ratio": 0.17549999,
-  "inst_count": 819,
+  "inst_count": 820,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.98748,
-      "actual": 2.24,
-      "surprise_pct": 12.71
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.70194,
@@ -269,11 +263,17 @@
       "estimate": 2.15984,
       "actual": 2.49,
       "surprise_pct": 15.29
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 2.25735,
+      "actual": 2.39,
+      "surprise_pct": 5.88
     }
   ],
   "insiders": [
     {
-      "name": "SNYDER ANGELA M",
+      "name": "SWEITZER CAESAR F",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 117.69 per share.",
@@ -291,7 +291,7 @@
       "date": "2026-07-29"
     },
     {
-      "name": "SWEITZER CAESAR F",
+      "name": "SNYDER ANGELA M",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 117.69 per share.",
@@ -301,6 +301,15 @@
     },
     {
       "name": "OWENS B CRAIG",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 117.69 per share.",
+      "value": 41309,
+      "shares": 351,
+      "date": "2026-07-29"
+    },
+    {
+      "name": "HAGGE STEPHEN J",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 117.69 per share.",
@@ -327,15 +336,6 @@
       "date": "2026-07-29"
     },
     {
-      "name": "HAGGE STEPHEN J",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 117.69 per share.",
-      "value": 41309,
-      "shares": 351,
-      "date": "2026-07-29"
-    },
-    {
       "name": "DONAHUE TIMOTHY JOSEPH",
       "role": "Chief Executive Officer",
       "kind": "sell",
@@ -354,7 +354,7 @@
       "date": "2026-06-23"
     },
     {
-      "name": "FUNK ANDREA J.",
+      "name": "SWEITZER CAESAR F",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 99.04 per share.",
