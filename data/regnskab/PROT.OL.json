@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T21:18:01.796Z",
+  "updated_at": "2026-10-21T20:21:51.478Z",
   "source": "Yahoo Finance",
   "symbol": "PROT.OL",
   "summary": "Protector Forsikring ASA, operates as a non-life insurance company, provides general insurance and reinsurance services in Norway, Sweden, Finland, Denmark, the United Kingdom and France. The company provides personal, motor, property, liability, and change of ownership insurances. It offers services to commercial lines of business, public sector, and affinity schemes through insurance brokers and agents. Protector Forsikring ASA was incorporated in 2003 and is headquartered in Oslo, Norway.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-21",
   "earnings_estimated": false,
   "earnings_call": "2026-10-22",
-  "eps_estimate": 7.875,
+  "eps_estimate": 6.6,
   "analysts": {
     "strong_buy": 1,
     "buy": 3,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 4
   },
-  "target_mean": 562.5,
+  "target_mean": 555,
   "target_high": 600,
   "target_low": 510,
   "target_analysts": 4,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 3529000000,
-      "earnings": 459000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 3560000000,
       "earnings": 697000000
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 3698000000,
       "earnings": 741000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 3864000000,
+      "earnings": 838000000
     }
   ],
   "growth": {
-    "q0": 0.4063,
-    "q1": -0.1765,
-    "y0": -0.2025,
-    "y1": 0.1426
+    "q0": -0.2235,
+    "q1": null,
+    "y0": -0.16399999,
+    "y1": 0.0806
   },
   "ratings": [],
   "holders": [
@@ -160,9 +160,9 @@
   },
   "extras": {
     "beta": 0.367,
-    "enterprise_value": 11960999936,
-    "ev_ebitda": 3.807,
-    "ev_revenue": 0.826,
+    "enterprise_value": 11928000512,
+    "ev_ebitda": 3.797,
+    "ev_revenue": 0.824,
     "float_shares": 75422325,
     "short_shares": null,
     "short_pct_float": null,
@@ -175,12 +175,6 @@
   "payout_ratio": 0.76309997,
   "inst_count": 110,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 6.3,
-      "actual": 5.6,
-      "surprise_pct": -11.11
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 9.35,
@@ -198,6 +192,12 @@
       "estimate": 8.33333,
       "actual": 9,
       "surprise_pct": 8
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 8.125,
+      "actual": 10.2,
+      "surprise_pct": 25.54
     }
   ],
   "insiders": [],

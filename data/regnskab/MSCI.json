@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T20:09:21.411Z",
+  "updated_at": "2026-10-21T20:21:51.084Z",
   "source": "Yahoo Finance",
   "symbol": "MSCI",
   "summary": "MSCI Inc., together with its subsidiaries, provides research-based data, analytics, and indexes, supported by advanced technology worldwide. The Index segment provides indexes for use in various areas of the investment process, including indexed financial products, such as ETFs, mutual funds, annuities, futures, options, structured products, and over-the-counter derivatives; performance benchmarking; portfolio construction and rebalancing; and asset allocation, as well as licenses GICS and GICS Direct. The Analytics segment offers risk management, performance attribution and portfolio management content, application, an integrated view of risk and return service, and an analysis of market, credit, liquidity, counterparty, and climate risk across asset classes; managed services, including consolidation of client portfolio data, review and reconciliation of input data and results, and customized reporting; and HedgePlatform to measure, evaluate, and monitor the risk of hedge fund investments. The Sustainability and Climate segment provides products and services that help institutional investors understand how ESG impacts the long-term risk and return of their portfolio and individual security-level investments; and data, ratings, research, and tools to assist investors navigate increasing regulation. The All Other  Private Assets segment comprises private credit, real estate and infrastructure data, benchmarks, return-analytics, climate assessments and market insights; business intelligence to real estate owners, managers, developers, and brokers; and offers investment decision support tools for private capital. The Private Capital Solutions segment offers tools to help private asset investors across mission-critical workflows, such as sourcing terms and conditions, evaluating operating performance, managing risk and other activities supporting private capital investment. MSCI Inc. was incorporated in 1998 and is based in New York, New York.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-20",
   "earnings_estimated": false,
   "earnings_call": "2026-10-20",
-  "eps_estimate": 5.02641,
+  "eps_estimate": 5.10122,
   "analysts": {
     "strong_buy": 4,
     "buy": 12,
@@ -19,7 +19,7 @@
     "strong_sell": 1,
     "total": 18
   },
-  "target_mean": 671.7647,
+  "target_mean": 675.94116,
   "target_high": 735,
   "target_low": 550,
   "target_analysts": 17,
@@ -72,12 +72,47 @@
     }
   ],
   "growth": {
-    "q0": 0.1245,
-    "q1": 0.1019,
-    "y0": 0.1366,
-    "y1": 0.1378
+    "q0": 0.0947,
+    "q1": 0.1699,
+    "y0": 0.13520001,
+    "y1": 0.1387
   },
   "ratings": [
+    {
+      "date": "2026-10-21",
+      "firm": "JP Morgan",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-21",
+      "firm": "Evercore ISI Group",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-21",
+      "firm": "Wells Fargo",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-21",
+      "firm": "RBC Capital",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "reit"
+    },
+    {
+      "date": "2026-10-21",
+      "firm": "Morgan Stanley",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-10-14",
       "firm": "JP Morgan",
@@ -111,41 +146,6 @@
       "firm": "Evercore ISI Group",
       "from": "Outperform",
       "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-22",
-      "firm": "JP Morgan",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-20",
-      "firm": "JP Morgan",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-17",
-      "firm": "Jefferies",
-      "from": null,
-      "to": "Buy",
-      "action": "init"
-    },
-    {
-      "date": "2026-07-10",
-      "firm": "Barclays",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-10",
-      "firm": "B of A Securities",
-      "from": "Buy",
-      "to": "Buy",
       "action": "main"
     }
   ],
@@ -247,12 +247,6 @@
   "inst_count": 1573,
   "eps_history": [
     {
-      "quarter": "2025-09-30",
-      "estimate": 4.36832,
-      "actual": 4.47,
-      "surprise_pct": 2.33
-    },
-    {
       "quarter": "2025-12-31",
       "estimate": 4.58825,
       "actual": 4.66,
@@ -269,6 +263,12 @@
       "estimate": 4.98175,
       "actual": 4.94,
       "surprise_pct": -0.84
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 5.02641,
+      "actual": 5.11,
+      "surprise_pct": 1.66
     }
   ],
   "insiders": [

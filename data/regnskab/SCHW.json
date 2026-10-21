@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T20:09:22.073Z",
+  "updated_at": "2026-10-21T20:21:51.670Z",
   "source": "Yahoo Finance",
   "symbol": "SCHW",
   "summary": "The Charles Schwab Corporation, together with its subsidiaries, operates as a savings and loan holding company that provides wealth management, securities brokerage, banking, asset management, custody, and financial advisory services in the United States and internationally. The company operates in two segments, Investor Services and Advisor Services. It offers brokerage accounts with equity and fixed income trading, margin lending, options trading, futures and forex trading, and cash management capabilities, including money market funds, and certificates of deposit; third-party mutual funds through the Mutual Fund Marketplace and Mutual Fund OneSource service, as well as mutual fund trading and clearing services to broker-dealers; exchange-traded funds; advisory solutions for managed portfolios, separately managed accounts, customized personal advice for tailored portfolios, specialized planning, and full-time portfolio management; banking products comprising checking and savings accounts, first lien residential real estate mortgage loans, home equity lines of credit, and pledged asset lines; and trust custody services, personal trust reporting services, and administrative trustee services. It provides digital and software based trading platforms; research tools, and multichannel support, real-time market data, options trading; equity compensation plan sponsors full-service recordkeeping for stock plans, stock options, restricted stock, performance shares, and stock appreciation rights; retirement plan services; mutual fund clearing services; and advisor services, including interactive tools and educational content. The Company operates through branch offices. The Charles Schwab Corporation was founded in 1971 and is headquartered in Westlake, Texas.",
@@ -7,10 +7,10 @@
   "website": "https://www.aboutschwab.com",
   "employees": 33900,
   "ceo": "Mr. Richard Andrew Wurster C.F.A., CMT",
-  "next_earnings": "2026-10-15",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-21",
+  "earnings_estimated": true,
   "earnings_call": "2026-10-15",
-  "eps_estimate": 1.72168,
+  "eps_estimate": 1.7191,
   "analysts": {
     "strong_buy": 7,
     "buy": 11,
@@ -19,7 +19,7 @@
     "strong_sell": 1,
     "total": 24
   },
-  "target_mean": 118,
+  "target_mean": 117.59091,
   "target_high": 147,
   "target_low": 82,
   "target_analysts": 22,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.2386,
-    "q1": 0.2498,
-    "y0": 0.3231,
-    "y1": 0.2187
+    "q0": 0.2368,
+    "q1": 0.24370001,
+    "y0": 0.3227,
+    "y1": 0.2146
   },
   "ratings": [
+    {
+      "date": "2026-10-21",
+      "firm": "Morgan Stanley",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-10-19",
       "firm": "BMO Capital",
@@ -136,13 +143,6 @@
     },
     {
       "date": "2026-10-16",
-      "firm": "Truist Securities",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-10-13",
       "firm": "Truist Securities",
       "from": "Buy",
       "to": "Buy",
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.782,
-    "enterprise_value": 126294237184,
+    "enterprise_value": 128557916160,
     "ev_ebitda": null,
-    "ev_revenue": 4.667,
+    "ev_revenue": 4.751,
     "float_shares": 1624544640,
     "short_shares": 19150407,
     "short_pct_float": 1.18,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-08-14",
   "dividend_date": null,
   "payout_ratio": 0.2149,
-  "inst_count": 2982,
+  "inst_count": 2981,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -284,24 +284,6 @@
     {
       "name": "HATHI NEESHA",
       "role": "Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 41.98 per share.",
-      "value": 209900,
-      "shares": 5000,
-      "date": "2026-10-01"
-    },
-    {
-      "name": "HATHI NEESHA",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 97.80 per share.",
-      "value": 489007,
-      "shares": 5000,
-      "date": "2026-10-01"
-    },
-    {
-      "name": "HATHI NEESHA",
-      "role": "Officer",
       "kind": "sell",
       "text": "Sale at price 97.80 per share.",
       "value": 489007,
@@ -314,24 +296,6 @@
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 52.05 per share.",
       "value": 165363,
-      "shares": 3177,
-      "date": "2026-09-01"
-    },
-    {
-      "name": "HATHI NEESHA",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 52.05 per share.",
-      "value": 165363,
-      "shares": 3177,
-      "date": "2026-09-01"
-    },
-    {
-      "name": "HATHI NEESHA",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 109.04 per share.",
-      "value": 346428,
       "shares": 3177,
       "date": "2026-09-01"
     },
@@ -356,11 +320,47 @@
     {
       "name": "BETTINGER WALTER W II",
       "role": "Chairman of the Board",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 46.81 per share.",
-      "value": 3482102,
+      "kind": "sell",
+      "text": "Sale at price 110.91 per share.",
+      "value": 8250648,
       "shares": 74388,
       "date": "2026-08-28"
+    },
+    {
+      "name": "HATHI NEESHA",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 108.12 per share.",
+      "value": 343497,
+      "shares": 3177,
+      "date": "2026-08-28"
+    },
+    {
+      "name": "SCHWAB CHARLES R JR.",
+      "role": "Chairman of the Board",
+      "kind": "other",
+      "text": "Stock Gift at price 0.00 per share.",
+      "value": 0,
+      "shares": 9300,
+      "date": "2026-08-27"
+    },
+    {
+      "name": "SCHWAB-POMERANTZ CAROLYN",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 109.25 per share.",
+      "value": 1002397,
+      "shares": 9175,
+      "date": "2026-08-26"
+    },
+    {
+      "name": "BETTINGER WALTER W II",
+      "role": "Chairman of the Board",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 46.81 per share.",
+      "value": 8248390,
+      "shares": 176210,
+      "date": "2026-08-24"
     }
   ],
   "dividends": [

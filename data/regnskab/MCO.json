@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T20:09:21.316Z",
+  "updated_at": "2026-10-21T20:21:50.978Z",
   "source": "Yahoo Finance",
   "symbol": "MCO",
   "summary": "Moody's Corporation, together with its subsidiaries, operates as an integrated risk assessment firm in the United States, the rest of the Americas, Europe, the Middle East, Africa, and the Asia Pacific. It operates through two segments, Moody's Analytics (MA) and Moody's Investors Service (MIS). The MA segment develops a range of products and services that support the risk management activities of institutional participants in financial markets. This segment also offers credit research, credit models and analytics, economic data and models, and structured finance solutions; data sets on companies and securities; and cloud-based SaaS subscription solutions supporting banking, insurance, and know-your-customer workflows. The MIS segment publishes credit ratings and provides assessment services on various debt obligations, programs and facilities, and entities that issue such obligations, including corporate, financial institution, and governmental obligations, as well as structured finance securities. It also provides ratings, investment research, compliance and third-party risk, supplier risk, trade credit, business intelligence sales and marketing, financial and regulatory reporting, balance sheet management, capital management, credit portfolio management, and model risk and governance solutions; Maxsight, a unified risk platform; lending suite, origination, and monitoring solutions; and property, casualty, and sustainable insurance underwriting solutions. The company serves the financial, banking, insurance, corporate, public, and asset management sectors. The company was formerly known as Dun and Bradstreet Company and changed its name to Moody's Corporation in September 2000. Moody's Corporation was founded in 1900 and is headquartered in New York, New York.",
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 24
   },
-  "target_mean": 551.3809,
+  "target_mean": 551.0952,
   "target_high": 600,
   "target_low": 470,
   "target_analysts": 21,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 2007000000,
-      "earnings": 646000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 1889000000,
       "earnings": 610000000
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 2185000000,
       "earnings": 878000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 2023000000,
+      "earnings": 734000000
     }
   ],
   "growth": {
     "q0": 0.0833,
-    "q1": -0.010199999,
-    "y0": 0.1328,
-    "y1": 0.1117
+    "q1": -0.0182,
+    "y0": 0.1312,
+    "y1": 0.1102
   },
   "ratings": [
     {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.346,
-    "enterprise_value": 89610084352,
-    "ev_ebitda": 22.11,
-    "ev_revenue": 10.982,
+    "enterprise_value": 88586584064,
+    "ev_ebitda": 21.857,
+    "ev_revenue": 10.856,
     "float_shares": 158522946,
     "short_shares": 2802723,
     "short_pct_float": 1.89,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-08-14",
   "dividend_date": null,
   "payout_ratio": 0.25,
-  "inst_count": 1985,
+  "inst_count": 1984,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -273,39 +273,12 @@
   ],
   "insiders": [
     {
-      "name": "BERMUDEZ JORGE A",
+      "name": "ESPERDY THERESE",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 17,
-      "date": "2026-09-04"
-    },
-    {
-      "name": "VAN SAUN BRUCE W",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 20,
-      "date": "2026-09-04"
-    },
-    {
-      "name": "FORLENZA VINCENT A",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 15,
-      "date": "2026-09-04"
-    },
-    {
-      "name": "SAWICKI LISA P.",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 1,
+      "shares": 10,
       "date": "2026-09-04"
     },
     {
@@ -318,12 +291,30 @@
       "date": "2026-09-04"
     },
     {
-      "name": "ESPERDY THERESE",
+      "name": "SAWICKI LISA P.",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 10,
+      "shares": 1,
+      "date": "2026-09-04"
+    },
+    {
+      "name": "FORLENZA VINCENT A",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 15,
+      "date": "2026-09-04"
+    },
+    {
+      "name": "VAN SAUN BRUCE W",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 20,
       "date": "2026-09-04"
     },
     {
@@ -333,6 +324,15 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 16,
+      "date": "2026-09-04"
+    },
+    {
+      "name": "BERMUDEZ JORGE A",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 17,
       "date": "2026-09-04"
     },
     {

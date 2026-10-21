@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T20:09:21.516Z",
+  "updated_at": "2026-10-21T20:21:51.173Z",
   "source": "Yahoo Finance",
   "symbol": "NLY",
   "summary": "Annaly Capital Management, Inc., a diversified capital manager, engages in the residential mortgage finance business. The company invests in agency mortgage-backed securities collateralized by residential mortgages; non-agency residential whole loans and securitized products within the residential and commercial markets; mortgage servicing rights; agency commercial mortgage-backed securities; to-be-announced forward contracts; residential mortgage-backed securities; residential mortgage loans; and agency or private label credit risk transfer securities. It has elected to be taxed as a real estate investment trust (REIT). As a REIT, it is not subject to federal income tax to the extent that it distributes its taxable income to its shareholders. Annaly Capital Management, Inc. was incorporated in 1996 and is based in New York, New York.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-20",
   "earnings_estimated": false,
   "earnings_call": "2026-10-21",
-  "eps_estimate": 0.77258,
+  "eps_estimate": 0.77329,
   "analysts": {
     "strong_buy": 4,
     "buy": 5,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 275750000,
-      "earnings": 791318000
-    },
-    {
       "q": "4Q2025",
       "revenue": 366579000,
       "earnings": 971107000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 488193000,
       "earnings": 781637000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 543612000,
+      "earnings": -1043064000
     }
   ],
   "growth": {
-    "q0": 0.0583,
-    "q1": 0.045,
+    "q0": 0.045,
+    "q1": 0.021300001,
     "y0": 0.056399997,
     "y1": 0.0091
   },
@@ -227,14 +227,14 @@
     "sells": 3,
     "bought": 7628,
     "sold": 116537,
-    "net_pct": -12.2
+    "net_pct": -12
   },
   "extras": {
-    "beta": 1.278,
-    "enterprise_value": 139953799168,
+    "beta": null,
+    "enterprise_value": 139972608000,
     "ev_ebitda": null,
-    "ev_revenue": 43.002,
-    "float_shares": 752342682,
+    "ev_revenue": 97.432,
+    "float_shares": 762968300,
     "short_shares": 24089145,
     "short_pct_float": 3.2,
     "short_ratio": 2.21,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-09-30",
   "dividend_date": null,
   "payout_ratio": 0.6985,
-  "inst_count": 1040,
+  "inst_count": 1039,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.72078,
-      "actual": 0.73,
-      "surprise_pct": 1.28
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.72967,
@@ -269,6 +263,12 @@
       "estimate": 0.75082,
       "actual": 0.79,
       "surprise_pct": 5.22
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.77258,
+      "actual": 0.8,
+      "surprise_pct": 3.55
     }
   ],
   "insiders": [

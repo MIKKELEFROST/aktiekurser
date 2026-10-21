@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T20:09:22.431Z",
+  "updated_at": "2026-10-21T20:21:52.042Z",
   "source": "Yahoo Finance",
   "symbol": "UCB",
   "summary": "United Community Banks, Inc. operates as the bank holding company for United Community Bank that provides financial services in the United States. The company offers deposit products, including checking, savings, money market, and other deposit accounts. It also provides loans comprising owner occupied and income producing CRE, commercial and industrial, equipment financing, residential mortgage, home equity, manufactured housing, and consumer loans, as well as commercial and residential construction and land. In addition, the company offers private banking, investment management, investment advice, financial planning services, estate and retirement planning, and insurance products; non-deposit investment products and insurance products, such as life insurance, long-term care insurance and tax-deferred annuities; and trust services to manage fiduciary assets. Further, it provides reinsurance on property insurance contracts and payment processing services for commercial and small business customers. The company serves the commercial, retail, government, education, energy, health care, and real estate sectors. United Community Banks, Inc. was founded in 1950 and is headquartered in Greenville, South Carolina.",
@@ -7,10 +7,10 @@
   "website": "https://www.ucbi.com",
   "employees": 3141,
   "ceo": "Mr. Herbert Lynn Harton",
-  "next_earnings": "2026-10-20",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-13",
+  "earnings_estimated": true,
   "earnings_call": "2026-10-20",
-  "eps_estimate": 0.77286,
+  "eps_estimate": 0.83,
   "analysts": {
     "strong_buy": 1,
     "buy": 2,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 7
   },
-  "target_mean": 40.16667,
+  "target_mean": 40.20833,
   "target_high": 42,
   "target_low": 38,
   "target_analysts": 6,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.0305,
-    "q1": 0.1187,
-    "y0": 0.104899995,
-    "y1": 0.120699994
+    "q0": 0.169,
+    "q1": 0.1367,
+    "y0": 0.1162,
+    "y1": 0.1249
   },
   "ratings": [
+    {
+      "date": "2026-10-21",
+      "firm": "Stephens & Co.",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-09-16",
       "firm": "Keefe, Bruyette & Woods",
@@ -140,13 +147,6 @@
       "from": "Neutral",
       "to": "Neutral",
       "action": "main"
-    },
-    {
-      "date": "2026-04-09",
-      "firm": "Keefe, Bruyette & Woods",
-      "from": "Market Perform",
-      "to": "Outperform",
-      "action": "up"
     }
   ],
   "holders": [
@@ -247,12 +247,6 @@
   "inst_count": 487,
   "eps_history": [
     {
-      "quarter": "2025-09-30",
-      "estimate": 0.69667,
-      "actual": 0.75,
-      "surprise_pct": 7.65
-    },
-    {
       "quarter": "2025-12-31",
       "estimate": 0.71429,
       "actual": 0.71,
@@ -269,6 +263,12 @@
       "estimate": 0.81,
       "actual": 0.71,
       "surprise_pct": -12.35
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.77286,
+      "actual": 0.77,
+      "surprise_pct": -0.37
     }
   ],
   "insiders": [

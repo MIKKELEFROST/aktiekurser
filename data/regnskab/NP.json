@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T20:09:21.548Z",
+  "updated_at": "2026-10-21T20:21:51.205Z",
   "source": "Yahoo Finance",
   "symbol": "NP",
   "summary": "Neptune Insurance Holdings Inc., through its subsidiary, Neptune Flood Incorporated, operates as an insurance agency that engages in selling residential and commercial flood insurance policies on behalf of insurance carrier partners in the United States. The company offers primary and excess flood, parametric earthquake, and indemnity earthquake insurance through a network of agencies. Neptune Insurance Holdings Inc. was founded in 2016 and is based in Saint Petersburg, Florida.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-20",
   "earnings_estimated": false,
   "earnings_call": "2026-10-20",
-  "eps_estimate": 0.15862,
+  "eps_estimate": 0.14754,
   "analysts": {
     "strong_buy": 3,
     "buy": 5,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 13
   },
-  "target_mean": 34,
+  "target_mean": 34.11538,
   "target_high": 39,
   "target_low": 31,
   "target_analysts": 13,
@@ -39,11 +39,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 44365000,
-      "earnings": 5493000
-    },
-    {
       "q": "4Q2025",
       "revenue": 43767000,
       "earnings": 4295000
@@ -57,15 +52,34 @@
       "q": "2Q2026",
       "revenue": 55872000,
       "earnings": 15796000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 59567000,
+      "earnings": 17256000
     }
   ],
   "growth": {
-    "q0": 0.442,
-    "q1": 0.4457,
-    "y0": 0.3342,
-    "y1": 0.2212
+    "q0": 0.4754,
+    "q1": 0.3179,
+    "y0": 0.3548,
+    "y1": 0.20120001
   },
   "ratings": [
+    {
+      "date": "2026-10-21",
+      "firm": "Keefe, Bruyette & Woods",
+      "from": "Market Perform",
+      "to": "Market Perform",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-21",
+      "firm": "Mizuho",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-10-12",
       "firm": "Wells Fargo",
@@ -120,20 +134,6 @@
       "firm": "Piper Sandler",
       "from": "Overweight",
       "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-13",
-      "firm": "JP Morgan",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-09",
-      "firm": "Mizuho",
-      "from": "Neutral",
-      "to": "Neutral",
       "action": "main"
     }
   ],
@@ -219,9 +219,9 @@
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 4243376640,
-    "ev_ebitda": 50.971,
-    "ev_revenue": 23.341,
+    "enterprise_value": 4269450752,
+    "ev_ebitda": 51.284,
+    "ev_revenue": 23.484,
     "float_shares": 40588059,
     "short_shares": 2461597,
     "short_pct_float": 9.04,
@@ -234,12 +234,6 @@
   "payout_ratio": 0,
   "inst_count": 200,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.10557,
-      "actual": 0.11,
-      "surprise_pct": 4.2
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.09866,
@@ -257,6 +251,12 @@
       "estimate": 0.14365,
       "actual": 0.15,
       "surprise_pct": 4.42
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.15862,
+      "actual": 0.17,
+      "surprise_pct": 7.17
     }
   ],
   "insiders": [

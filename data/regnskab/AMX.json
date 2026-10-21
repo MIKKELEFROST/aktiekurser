@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T20:09:19.699Z",
+  "updated_at": "2026-10-21T20:21:49.436Z",
   "source": "Yahoo Finance",
   "symbol": "AMX",
   "summary": "América Móvil, S.A.B. de C.V. provides telecommunications services in Latin America and internationally. It offers wireless and fixed-line voice services, including airtime, local, domestic, and international long-distance services; and network interconnection services. The company provides data services, such as data centers, data administration, and hosting services to residential and corporate clients; value-added services, including internet access, messaging and other wireless entertainment, and corporate services; data transmission, email services, instant messaging, content streaming, and interactive applications; and wireless security services, mobile payment solutions, machine-to-machine services, mobile banking, virtual private network services, and video calls and personal communications services. In addition, it offers residential broadband services; IT solutions to small businesses and large corporations; and cable and satellite television subscriptions. Further, the company sells equipment, accessories, and computers; and offers software development, call center, entertainment content and news, telephone directories, advertising, cybersecurity services, and corporate IT solutions. Additionally, it provides video, audio, and other media content through the internet directly from the content provider to the end user. It sells its products and services under the Telcel, Telmex Infinitum, and A1 brand names through a network of retailers and service centers to retail customers; and through sales force to corporate customers. The company was incorporated in 2000 and is based in Mexico City, Mexico.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-20",
   "earnings_estimated": false,
   "earnings_call": "2026-10-21",
-  "eps_estimate": 0.48068,
+  "eps_estimate": 0.47806,
   "analysts": {
     "strong_buy": 2,
     "buy": 6,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 232919000000,
-      "earnings": 22700000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 244897000000,
       "earnings": 19134000000
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 241071000000,
       "earnings": 24332000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 250634000000,
+      "earnings": 24282000000
     }
   ],
   "growth": {
-    "q0": 0.17379999,
-    "q1": 0.2876,
-    "y0": 0.17639999,
-    "y1": 0.1091
+    "q0": 0.2876,
+    "q1": 0.0091,
+    "y0": 0.1838,
+    "y1": 0.113299996
   },
   "ratings": [
     {
@@ -188,9 +188,9 @@
     {
       "name": "Robeco Institutional Asset Management B.V.",
       "kind": "institution",
-      "pct": 0.24,
-      "shares": 7223875,
-      "date": "2026-06-30"
+      "pct": 0.25,
+      "shares": 7475816,
+      "date": "2026-09-30"
     },
     {
       "name": "Boston Partners",
@@ -231,7 +231,7 @@
   },
   "extras": {
     "beta": 0.227,
-    "enterprise_value": 746903699456,
+    "enterprise_value": 747113938944,
     "ev_ebitda": 2.361,
     "ev_revenue": 0.782,
     "float_shares": 928682788,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-07-14",
   "dividend_date": null,
   "payout_ratio": 0.36720002,
-  "inst_count": 450,
+  "inst_count": 449,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.40767,
-      "actual": 0.40952,
-      "surprise_pct": 0.45
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.4272,
@@ -269,6 +263,12 @@
       "estimate": 0.51577,
       "actual": 0.47,
       "surprise_pct": -8.87
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.48068,
+      "actual": 0.47,
+      "surprise_pct": -2.22
     }
   ],
   "insiders": [],

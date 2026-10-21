@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T20:09:20.086Z",
+  "updated_at": "2026-10-21T20:21:49.793Z",
   "source": "Yahoo Finance",
   "symbol": "CB",
   "summary": "Chubb Limited provides insurance and reinsurance products worldwide. It operates in six segments: North America Commercial Property and Casualty (P&C) Insurance, North America Personal P&C Insurance, North America Agricultural Insurance, Overseas General Insurance, Global Reinsurance, and Life Insurance. The company offers property and general liability, workers' compensation, and umbrella; professional and management liability; environmental, health, and international coverages; and claims and risk management products and services, loss control, and engineering and complex claims management. It also provides homeowners, automobile and collector cars, valuable articles, and personal and excess liability insurance. In addition, the company offers multiple peril crop insurance and crop-hail insurance for farm, ranch, specialty (P&C), and commercial agriculture products; product and employer liability, business interruption, and specialty risk; property insurance products, including traditional commercial fire coverage, energy industry-related, marine, construction, and other technical coverages; personal accident and supplemental medical coverages, such as accidental death, business/holiday travel, specified disease, disability, medical and hospital indemnity, and income protection; and directors and officers, professional indemnity, cyber, surety, aviation, political risk, and specialty personal lines products. Further, it provides property catastrophe reinsurance; traditional and specialty P&C reinsurance; and protection and savings products, which includes individual and group term life, dental, critical illness, dementia, hospital cash, credit life, group employee benefits, whole life, universal life, unit linked contracts, endowment plans, and annuities. The company was formerly known as ACE Limited and changed its name to Chubb Limited in January 2016. Chubb Limited was incorporated in 1985 and is headquartered in Zurich, Switzerland.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-20",
   "earnings_estimated": false,
   "earnings_call": "2026-10-21",
-  "eps_estimate": 6.79825,
+  "eps_estimate": 6.99099,
   "analysts": {
     "strong_buy": 2,
     "buy": 7,
@@ -19,7 +19,7 @@
     "strong_sell": 3,
     "total": 25
   },
-  "target_mean": 366.78262,
+  "target_mean": 367.43478,
   "target_high": 425,
   "target_low": 314,
   "target_analysts": 23,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 12934000000,
-      "earnings": 2801000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 11309000000,
       "earnings": 3210000000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 12768000000,
       "earnings": 2854000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 13183000000,
+      "earnings": 2844000000
     }
   ],
   "growth": {
-    "q0": -0.0924,
-    "q1": -0.0402,
-    "y0": 0.135,
-    "y1": 0.04
+    "q0": -0.070300005,
+    "q1": 0.0612,
+    "y0": 0.1494,
+    "y1": 0.026500002
   },
   "ratings": [
+    {
+      "date": "2026-10-21",
+      "firm": "Cantor Fitzgerald",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "reit"
+    },
     {
       "date": "2026-10-12",
       "firm": "Wells Fargo",
@@ -140,13 +147,6 @@
       "from": "Equal-Weight",
       "to": "Equal-Weight",
       "action": "main"
-    },
-    {
-      "date": "2026-07-22",
-      "firm": "Citizens",
-      "from": "Market Outperform",
-      "to": "Market Outperform",
-      "action": "reit"
     }
   ],
   "holders": [
@@ -230,11 +230,11 @@
     "net_pct": 0.1
   },
   "extras": {
-    "beta": 0.365,
-    "enterprise_value": 159967920128,
-    "ev_ebitda": 10.748,
-    "ev_revenue": 2.584,
-    "float_shares": 349878034,
+    "beta": null,
+    "enterprise_value": 141582843904,
+    "ev_ebitda": 9.973,
+    "ev_revenue": 2.281,
+    "float_shares": 353142966,
     "short_shares": 3142116,
     "short_pct_float": 0.82,
     "short_ratio": 1.89,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-09-11",
   "dividend_date": null,
   "payout_ratio": 0.1392,
-  "inst_count": 2781,
+  "inst_count": 2779,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 6.15549,
-      "actual": 7.49,
-      "surprise_pct": 21.68
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 6.77594,
@@ -269,6 +263,12 @@
       "estimate": 6.74506,
       "actual": 7.26,
       "surprise_pct": 7.63
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 6.79825,
+      "actual": 7.66,
+      "surprise_pct": 12.68
     }
   ],
   "insiders": [

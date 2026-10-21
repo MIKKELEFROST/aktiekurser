@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T20:09:19.591Z",
+  "updated_at": "2026-10-21T20:21:49.320Z",
   "source": "Yahoo Finance",
   "symbol": "ADRX",
   "summary": "ADARx Pharmaceuticals, Inc. operates as a clinical-stage biotechnology company that focuses on developing siRNA therapeutics to treat a broad spectrum of diseases. The company offers hepatic-targeted programs, including Agazisiran, a complement factor B (CFB) program that represents a pipeline-in-a-product opportunity, where a single therapeutic candidate has the potential to address multiple indications; Onvuzosiran, a clinical program for the prevention of HAE attacks; and ADX-626, a Factor XI (FXI) program for secondary stroke prevention with additional clinical potential for stroke prevention in atrial fibrillation. It also offers extrahepatic-targeted programs, such as ADX-077, an adipose-targeted obesity program designed to reduce body weight and fat while preserving lean mass; and ADX-199, a neuron-targeted program designed to selectively silence and degrade amyloid-ß precursor protein (APP) mRNA in neurons, which is genetically linked to Alzheimer's disease. The company was incorporated in 2019 and is based in San Diego, California.",
@@ -10,15 +10,27 @@
   "next_earnings": null,
   "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": null,
-  "analysts": null,
-  "target_mean": null,
-  "target_high": null,
-  "target_low": null,
-  "target_analysts": null,
+  "eps_estimate": -0.36348,
+  "analysts": {
+    "strong_buy": 2,
+    "buy": 3,
+    "hold": 0,
+    "sell": 0,
+    "strong_sell": 0,
+    "total": 5
+  },
+  "target_mean": 34.25,
+  "target_high": 38,
+  "target_low": 32,
+  "target_analysts": 4,
   "statements": null,
   "quarterly": [],
-  "growth": null,
+  "growth": {
+    "q0": null,
+    "q1": null,
+    "y0": null,
+    "y1": 0.0986
+  },
   "ratings": [
     {
       "date": "2026-10-20",
@@ -49,7 +61,15 @@
       "action": "init"
     }
   ],
-  "holders": [],
+  "holders": [
+    {
+      "name": "American Funds-SmallCap World Fund",
+      "kind": "fond",
+      "pct": 0.08,
+      "shares": 85500,
+      "date": "2026-09-30"
+    }
+  ],
   "insider_net": {
     "period": "6m",
     "buys": 0,
@@ -60,9 +80,9 @@
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 1816201216,
-    "ev_ebitda": -17.277,
-    "ev_revenue": 296.426,
+    "enterprise_value": 1821529984,
+    "ev_ebitda": -17.327,
+    "ev_revenue": 297.296,
     "float_shares": 49423510,
     "short_shares": 1163375,
     "short_pct_float": null,
@@ -73,7 +93,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": null,
-  "inst_count": 8,
+  "inst_count": 9,
   "eps_history": [],
   "insiders": [],
   "dividends": [],

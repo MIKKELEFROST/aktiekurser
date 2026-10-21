@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T20:09:19.583Z",
+  "updated_at": "2026-10-21T20:21:49.311Z",
   "source": "Yahoo Finance",
   "symbol": "ADC",
   "summary": "Agree Realty Corporation is a publicly traded real estate investment trust. The Firm is Rethinking Retail through the acquisition and development of properties net leased to industry-leading, omni-channel retail tenants. As of June 30, 2026, the Company owned and operated a portfolio of 2,825 properties, located in all 50 states and containing approximately 59.6 million square feet of gross leasable area. Agree Realty Corporation was incorporated in 1971 and is based in Royal Oak, United States.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-20",
   "earnings_estimated": false,
   "earnings_call": "2026-10-21",
-  "eps_estimate": 0.4708,
+  "eps_estimate": 0.46894,
   "analysts": {
     "strong_buy": 1,
     "buy": 11,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 20
   },
-  "target_mean": 80.66667,
+  "target_mean": 79.77778,
   "target_high": 93,
   "target_low": 72,
   "target_analysts": 18,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 183222000,
-      "earnings": 50258000
-    },
-    {
       "q": "4Q2025",
       "revenue": 190489000,
       "earnings": 54178000
@@ -69,15 +64,41 @@
       "q": "2Q2026",
       "revenue": 205100000,
       "earnings": 52794000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 213884000,
+      "earnings": 66493000
     }
   ],
   "growth": {
-    "q0": 0.0062,
-    "q1": 0.0034999999,
+    "q0": 0.0034999999,
+    "q1": -0.0328,
     "y0": 0.048800003,
     "y1": -0.0104
   },
   "ratings": [
+    {
+      "date": "2026-10-21",
+      "firm": "BNP Paribas",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-21",
+      "firm": "Stifel",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-21",
+      "firm": "Baird",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
     {
       "date": "2026-10-20",
       "firm": "Barclays",
@@ -125,27 +146,6 @@
       "firm": "Barclays",
       "from": "Equal-Weight",
       "to": "Equal-Weight",
-      "action": "main"
-    },
-    {
-      "date": "2026-05-13",
-      "firm": "Mizuho",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-04-24",
-      "firm": "Citigroup",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-04-23",
-      "firm": "RBC Capital",
-      "from": "Outperform",
-      "to": "Outperform",
       "action": "main"
     }
   ],
@@ -230,11 +230,11 @@
     "net_pct": null
   },
   "extras": {
-    "beta": 0.424,
-    "enterprise_value": 12162958336,
-    "ev_ebitda": 17.99,
-    "ev_revenue": 15.601,
-    "float_shares": 121836382,
+    "beta": null,
+    "enterprise_value": 12536910848,
+    "ev_ebitda": 17.817,
+    "ev_revenue": 15.472,
+    "float_shares": 127633014,
     "short_shares": 7750475,
     "short_pct_float": 7.06,
     "short_ratio": 4.92,
@@ -246,12 +246,6 @@
   "payout_ratio": 1.6887,
   "inst_count": 675,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.45666,
-      "actual": 0.4679,
-      "surprise_pct": 2.46
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.46797,
@@ -269,6 +263,12 @@
       "estimate": 0.47328,
       "actual": 0.466,
       "surprise_pct": -1.54
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.4708,
+      "actual": 0.4833,
+      "surprise_pct": 2.66
     }
   ],
   "insiders": [

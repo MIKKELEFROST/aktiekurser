@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T20:09:21.479Z",
+  "updated_at": "2026-10-21T20:21:51.146Z",
   "source": "Yahoo Finance",
   "symbol": "NEE",
   "summary": "NextEra Energy, Inc., through its subsidiaries, generates, stores, transmits, distributes, and sells electric power to retail and wholesale customers in North America. It operates through Florida Power & Light Company (FPL) and NEER segments. The company generates electricity from wind, solar, nuclear, natural gas, and other clean energy assets. It also invests in generation, storage, transmission, and distribution facilities; owns, develops, constructs, manages, and operates generation facilities, including renewables, nuclear and natural gas, and battery storage facilities in the wholesale energy market in the United States and Canada, as well as electric and gas transmission assets, and natural gas pipelines; provides full energy and capacity requirement services; markets and trades in energy-related commodities; and participates in the production of natural gas, natural gas liquids, and oil. As of December 31, 2025, the company had approximately 35,963 megawatts of net generating capacity; approximately 93,000 circuit miles of transmission and distribution lines; and 932 substations. It serves approximately 12 million people through approximately 6 million customer accounts on the east and lower west coasts of Florida. The company was formerly known as FPL Group, Inc. and changed its name to NextEra Energy, Inc. in 2010. NextEra Energy, Inc. was founded in 1925 and is headquartered in Juno Beach, Florida.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-21",
   "earnings_estimated": false,
   "earnings_call": "2026-10-21",
-  "eps_estimate": 1.18609,
+  "eps_estimate": 0.61167,
   "analysts": {
     "strong_buy": 3,
     "buy": 12,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 22
   },
-  "target_mean": 95.73684,
+  "target_mean": 95.36842,
   "target_high": 114,
   "target_low": 56,
   "target_analysts": 19,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 7966000000,
-      "earnings": 2438000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 6500000000,
       "earnings": 1535000000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 7534000000,
       "earnings": 3144000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 8090000000,
+      "earnings": 4775000000
     }
   ],
   "growth": {
-    "q0": 0.0496,
-    "q1": 0.13430001,
+    "q0": 0.13270001,
+    "q1": -0.0153,
     "y0": 0.0836,
     "y1": 0.0887
   },
   "ratings": [
+    {
+      "date": "2026-10-21",
+      "firm": "Bernstein",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "reit"
+    },
     {
       "date": "2026-10-20",
       "firm": "BMO Capital",
@@ -139,13 +146,6 @@
       "firm": "BMO Capital",
       "from": "Outperform",
       "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-13",
-      "firm": "B of A Securities",
-      "from": "Neutral",
-      "to": "Neutral",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.639,
-    "enterprise_value": 281411223552,
-    "ev_ebitda": 19.284,
-    "ev_revenue": 9.805,
+    "enterprise_value": 282850426880,
+    "ev_ebitda": 19.383,
+    "ev_revenue": 9.855,
     "float_shares": 2081172706,
     "short_shares": 59319916,
     "short_pct_float": 2.85,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-08-28",
   "dividend_date": null,
   "payout_ratio": 0.53470004,
-  "inst_count": 3834,
+  "inst_count": 3825,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.02155,
-      "actual": 1.13,
-      "surprise_pct": 10.62
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.52722,
@@ -269,6 +263,12 @@
       "estimate": 1.10859,
       "actual": 1.15,
       "surprise_pct": 3.74
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.18923,
+      "actual": 1.24,
+      "surprise_pct": 4.27
     }
   ],
   "insiders": [
@@ -284,9 +284,9 @@
     {
       "name": "CREWS TERRELL KIRK II",
       "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 90.27 per share.",
-      "value": 1775791,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 31.72 - 45.65 per share.",
+      "value": 786599,
       "shares": 19672,
       "date": "2026-03-09"
     },
@@ -300,21 +300,21 @@
       "date": "2026-03-09"
     },
     {
+      "name": "CREWS TERRELL KIRK II",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 90.27 per share.",
+      "value": 1775791,
+      "shares": 19672,
+      "date": "2026-03-09"
+    },
+    {
       "name": "MAY JAMES MICHAEL",
       "role": "Officer and Treasurer",
       "kind": "sell",
       "text": "Sale at price 90.27 per share.",
       "value": 646423,
       "shares": 7161,
-      "date": "2026-03-09"
-    },
-    {
-      "name": "CREWS TERRELL KIRK II",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 31.72 - 45.65 per share.",
-      "value": 786599,
-      "shares": 19672,
       "date": "2026-03-09"
     },
     {
@@ -327,25 +327,7 @@
       "date": "2026-02-17"
     },
     {
-      "name": "SIEVING CHARLES E",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 38958,
-      "date": "2026-02-12"
-    },
-    {
-      "name": "KETCHUM JOHN W.",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 157085,
-      "date": "2026-02-12"
-    },
-    {
-      "name": "GURSAHANEY NAREN K",
+      "name": "LANE AMY BETH",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -354,7 +336,25 @@
       "date": "2026-02-12"
     },
     {
-      "name": "MARTHA GEOFFREY S",
+      "name": "CAMAREN JAMES LAWRENCE",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 2130,
+      "date": "2026-02-12"
+    },
+    {
+      "name": "STALL JOHN A",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 2130,
+      "date": "2026-02-12"
+    },
+    {
+      "name": "HENRY MARIA G",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

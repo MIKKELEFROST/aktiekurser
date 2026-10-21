@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T20:09:20.254Z",
+  "updated_at": "2026-10-21T20:21:49.955Z",
   "source": "Yahoo Finance",
   "symbol": "CRBG",
   "summary": "Corebridge Financial, Inc. provides retirement solutions and insurance products in the United States. The company operates through Individual Retirement, Group Retirement, Life Insurance, and Institutional Markets segments. The Individual Retirement segment provides fixed annuities, fixed index and registered index-linked, and variable annuities. The Group Retirement segment offers in-plan products and services comprising an open architecture recordkeeping platform that allows plan participants to allocate money to a variety of mutual fund options or a fixed interest account; flexible group variable and fixed annuity; and in-plan investment advisory services. It also provides out-of-plan products and services, including proprietary and non-proprietary annuities; investment advisory solutions, such as fiduciary, fee-based investments; and brokerage services for non-proprietary variable annuity, securities, life insurance, mutual funds, and 529 plans. The Life Insurance segment offers term, whole, index universal, and guaranteed universal life insurance products. The Institutional Markets segment provides defined contribution and bank-owned life insurance stable value wraps, structured settlement and pension risk transfer annuities, corporate and bank-owned life insurance, private placement variable universal life and annuities products, and guaranteed investment contracts. The company was formerly known as SAFG Retirement Services, Inc. Corebridge Financial, Inc. was incorporated in 1998 and is headquartered in Houston, Texas.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-02",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": 1.23513,
+  "eps_estimate": 1.23779,
   "analysts": {
     "strong_buy": 3,
     "buy": 8,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 14
   },
-  "target_mean": 40.25,
+  "target_mean": 40.41667,
   "target_high": 46,
   "target_low": 36,
   "target_analysts": 12,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.2866,
+    "q0": 0.2894,
     "q1": -0.0608,
     "y0": 0.031600002,
-    "y1": 0.257
+    "y1": 0.2563
   },
   "ratings": [
+    {
+      "date": "2026-10-21",
+      "firm": "TD Cowen",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-12",
       "firm": "Wells Fargo",
@@ -139,13 +146,6 @@
       "firm": "Keefe, Bruyette & Woods",
       "from": "Outperform",
       "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-22",
-      "firm": "TD Cowen",
-      "from": "Buy",
-      "to": "Buy",
       "action": "main"
     }
   ],
@@ -223,17 +223,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 25,
+    "buys": 26,
     "sells": 6,
-    "bought": 4314028,
+    "bought": 4661223,
     "sold": 14545559,
-    "net_pct": -89.7
+    "net_pct": -89.4
   },
   "extras": {
     "beta": 1.004,
-    "enterprise_value": 26087032832,
-    "ev_ebitda": 9.64,
-    "ev_revenue": 1.337,
+    "enterprise_value": 26327750656,
+    "ev_ebitda": 9.729,
+    "ev_revenue": 1.349,
     "float_shares": 268029644,
     "short_shares": 14379164,
     "short_pct_float": 5.49,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-09-16",
   "dividend_date": null,
   "payout_ratio": 0.6164,
-  "inst_count": 644,
+  "inst_count": 643,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "NIPPON LIFE INSURANCE COMPANY",
+      "role": "Beneficial Owner of more than 10% of a Class of Security",
+      "kind": "buy",
+      "text": "Purchase at price 34.71 per share.",
+      "value": 12052562,
+      "shares": 347195,
+      "date": "2026-10-16"
+    },
     {
       "name": "NIPPON LIFE INSURANCE COMPANY",
       "role": "Beneficial Owner of more than 10% of a Class of Security",
@@ -352,15 +361,6 @@
       "value": 6174129,
       "shares": 178840,
       "date": "2026-09-25"
-    },
-    {
-      "name": "NIPPON LIFE INSURANCE COMPANY",
-      "role": "Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "buy",
-      "text": "Purchase at price 33.85 per share.",
-      "value": 8763849,
-      "shares": 258878,
-      "date": "2026-09-24"
     }
   ],
   "dividends": [

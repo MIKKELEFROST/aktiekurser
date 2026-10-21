@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T20:09:20.465Z",
+  "updated_at": "2026-10-21T20:21:50.167Z",
   "source": "Yahoo Finance",
   "symbol": "ELS",
   "summary": "Equity LifeStyle Properties, Inc. is a self-administered, self-managed real estate investment trust. As of June 30, 2026, they own or have an interest in 453 properties in 35 states and British Columbia consisting of 173,419 sites. Equity LifeStyle Properties, Inc. is headquartered in Chicago. Equity LifeStyle Properties, Inc. was incorporated in 1992 in Maryland and based in Chicago, Illinois.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-20",
   "earnings_estimated": false,
   "earnings_call": "2026-10-21",
-  "eps_estimate": 0.50471,
+  "eps_estimate": 0.52526,
   "analysts": {
     "strong_buy": 3,
     "buy": 8,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 19
   },
-  "target_mean": 68.68421,
+  "target_mean": 68.21053,
   "target_high": 78,
   "target_low": 59,
   "target_analysts": 19,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 393314000,
-      "earnings": 97130000
-    },
-    {
       "q": "4Q2025",
       "revenue": 373868000,
       "earnings": 100462000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 397815000,
       "earnings": 96316000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 409903000,
+      "earnings": 86425000
     }
   ],
   "growth": {
-    "q0": 0.001,
-    "q1": 0.0422,
+    "q0": 0.0422,
+    "q1": 0.100200005,
     "y0": 0.0484,
-    "y1": 0.0657
+    "y1": 0.0652
   },
   "ratings": [
+    {
+      "date": "2026-10-21",
+      "firm": "Baird",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
     {
       "date": "2026-10-19",
       "firm": "Wells Fargo",
@@ -139,13 +146,6 @@
       "firm": "Morgan Stanley",
       "from": "Equal-Weight",
       "to": "Equal-Weight",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-23",
-      "firm": "Evercore ISI Group",
-      "from": "In-Line",
-      "to": "In-Line",
       "action": "main"
     }
   ],
@@ -230,11 +230,11 @@
     "net_pct": null
   },
   "extras": {
-    "beta": 0.643,
-    "enterprise_value": 15198570496,
-    "ev_ebitda": 19.971,
-    "ev_revenue": 9.692,
-    "float_shares": 192426714,
+    "beta": null,
+    "enterprise_value": 15366753280,
+    "ev_ebitda": 19.924,
+    "ev_revenue": 9.691,
+    "float_shares": 192430269,
     "short_shares": 10344171,
     "short_pct_float": 7.17,
     "short_ratio": 6.34,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-09-25",
   "dividend_date": null,
   "payout_ratio": 1.0217,
-  "inst_count": 701,
+  "inst_count": 700,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.46355,
-      "actual": 0.5042,
-      "surprise_pct": 8.77
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.50582,
@@ -269,6 +263,12 @@
       "estimate": 0.4374,
       "actual": 0.4809,
       "surprise_pct": 9.95
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.50472,
+      "actual": 0.4304,
+      "surprise_pct": -14.72
     }
   ],
   "insiders": [

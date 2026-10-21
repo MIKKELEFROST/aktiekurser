@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-10-20T20:09:19.656Z",
+  "updated_at": "2026-10-21T20:21:49.391Z",
   "source": "Yahoo Finance",
   "symbol": "ALK",
   "summary": "Alaska Air Group, Inc., through its subsidiaries, operates airlines. It operates through three segments: Alaska Airlines, Hawaiian Airlines, and Regional. The company offers scheduled air transportation services on Boeing jet aircraft for passengers and cargo; and Horizon's and other third-party carriers scheduled air transportation services. It operates in the United States, Canada, Mexico, Costa Rica, Guatemala, Belize, the Bahamas, the South Pacific, Australia, New Zealand, and Asia. Alaska Air Group, Inc. was founded in 1932 and is based in Seattle, Washington.",
   "industry": "Airlines",
   "website": "https://www.alaskaair.com",
-  "employees": 31596,
+  "employees": 31996,
   "ceo": "Mr. Benito  Minicucci",
   "next_earnings": "2026-10-20",
   "earnings_estimated": false,
   "earnings_call": "2026-10-21",
-  "eps_estimate": 0.27927,
+  "eps_estimate": -1.17222,
   "analysts": {
     "strong_buy": 4,
     "buy": 11,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 3766000000,
-      "earnings": 73000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 3632000000,
       "earnings": 21000000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 4065000000,
       "earnings": -76000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 4308000000,
+      "earnings": -147000000
     }
   ],
   "growth": {
-    "q0": -0.734,
-    "q1": -3.7261,
+    "q0": -3.7261,
+    "q1": -0.4078,
     "y0": -2.4232001,
     "y1": 1.9722
   },
@@ -230,11 +230,11 @@
     "net_pct": 12.6
   },
   "extras": {
-    "beta": 1.33,
-    "enterprise_value": 8746273792,
-    "ev_ebitda": 12.441,
-    "ev_revenue": 0.592,
-    "float_shares": 110849799,
+    "beta": null,
+    "enterprise_value": 9123657728,
+    "ev_ebitda": 15.36,
+    "ev_revenue": 0.596,
+    "float_shares": 110877964,
     "short_shares": 12074974,
     "short_pct_float": 12.16,
     "short_ratio": 4.38,
@@ -244,14 +244,8 @@
   "ex_dividend": "2020-02-14",
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 614,
+  "inst_count": 612,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.10137,
-      "actual": 1.05,
-      "surprise_pct": -4.66
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.10825,
@@ -269,6 +263,12 @@
       "estimate": -0.99185,
       "actual": -0.92,
       "surprise_pct": 7.24
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.27927,
+      "actual": -0.31,
+      "surprise_pct": -211
     }
   ],
   "insiders": [
