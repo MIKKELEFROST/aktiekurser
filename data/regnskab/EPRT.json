@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T20:21:50.205Z",
+  "updated_at": "2026-10-22T20:24:48.285Z",
   "source": "Yahoo Finance",
   "symbol": "EPRT",
   "summary": "Essential Properties Realty Trust, Inc. is an internally managed REIT that acquires, owns and manages primarily single-tenant properties that are net leased on a long-term basis to companies operating service-oriented or experience-based businesses. As of September 30, 2025, the Company's portfolio consisted of 2,266 freestanding net lease properties with a weighted average lease term of 14.4 years and a weighted average rent coverage ratio of 3.6x. In addition, as of September 30, 2025, the Company's portfolio was 99.8% leased to tenants operating 645 different concepts across 48 states. The company was founded in 2016 and is headquartered in Princeton, New Jersey.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-21",
   "earnings_estimated": false,
   "earnings_call": "2026-10-22",
-  "eps_estimate": 0.33,
+  "eps_estimate": 0.335,
   "analysts": {
     "strong_buy": 3,
     "buy": 15,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 20
   },
-  "target_mean": 34.9,
+  "target_mean": 34.375,
   "target_high": 40,
   "target_low": 28,
   "target_analysts": 20,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 144934000,
-      "earnings": 65620000
-    },
-    {
       "q": "4Q2025",
       "revenue": 149868000,
       "earnings": 68067000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 161888000,
       "earnings": 74287000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 168671000,
+      "earnings": 60157000
     }
   ],
   "growth": {
-    "q0": -0.0047999998,
-    "q1": -0.0023999999,
+    "q0": -0.0023999999,
+    "q1": -0.018099999,
     "y0": 0.060300004,
     "y1": -0.0037
   },
   "ratings": [
+    {
+      "date": "2026-10-22",
+      "firm": "Stifel",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-20",
       "firm": "Deutsche Bank",
@@ -139,13 +146,6 @@
       "firm": "Stifel",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-22",
-      "firm": "Barclays",
-      "from": "Overweight",
-      "to": "Overweight",
       "action": "main"
     }
   ],
@@ -227,13 +227,13 @@
     "sells": 1,
     "bought": 276127,
     "sold": 22000,
-    "net_pct": 23.2
+    "net_pct": 23.1
   },
   "extras": {
     "beta": 0.844,
-    "enterprise_value": 8411718656,
-    "ev_ebitda": 14.915,
-    "ev_revenue": 13.667,
+    "enterprise_value": 8223561216,
+    "ev_ebitda": 14.581,
+    "ev_revenue": 13.361,
     "float_shares": 215245707,
     "short_shares": 14006069,
     "short_pct_float": 9.02,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.9612,
   "inst_count": 546,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.3133,
-      "actual": 0.3316,
-      "surprise_pct": 5.84
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.32721,
@@ -269,9 +263,24 @@
       "estimate": 0.33739,
       "actual": 0.32593,
       "surprise_pct": -3.4
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.33,
+      "actual": 0.3243,
+      "surprise_pct": -1.73
     }
   ],
   "insiders": [
+    {
+      "name": "MAVOIDES PETER M",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 2577,
+      "date": "2026-10-14"
+    },
     {
       "name": "JENKINS ROBERT M",
       "role": "Chief Operating Officer",
@@ -351,15 +360,6 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 1950,
-      "date": "2026-04-14"
-    },
-    {
-      "name": "EARNSHAW TIMOTHY J",
-      "role": "Officer and Treasurer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 89,
       "date": "2026-04-14"
     }
   ],

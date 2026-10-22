@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T20:21:51.236Z",
+  "updated_at": "2026-10-22T20:24:49.255Z",
   "source": "Yahoo Finance",
   "symbol": "NTST",
   "summary": "NETSTREIT Corp. is an internally managed real estate investment trust based in Dallas, Texas that specializes in acquiring single-tenant net lease retail properties nationwide. The growing portfolio consists of high-quality properties leased to e-commerce resistant tenants with healthy balance sheets. Led by a management team of seasoned commercial real estate executives, NETSTREIT's strategy is to create the highest quality net lease retail portfolio in the country with the goal of generating consistent cash flows and dividends for its investors. NETSTREIT Corp. was incorporated in 2019 in Maryland and is based in Dallas, Texas.",
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 20
   },
-  "target_mean": 22.23684,
+  "target_mean": 22.01316,
   "target_high": 25,
   "target_low": 19,
   "target_analysts": 19,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 48308000,
-      "earnings": 618000
-    },
-    {
       "q": "4Q2025",
       "revenue": 52502000,
       "earnings": 1320000
@@ -69,10 +64,22 @@
       "q": "2Q2026",
       "revenue": 61284000,
       "earnings": 6285000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 66262000,
+      "earnings": 8477000
     }
   ],
   "growth": null,
   "ratings": [
+    {
+      "date": "2026-10-22",
+      "firm": "Stifel",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-19",
       "firm": "Wells Fargo",
@@ -134,13 +141,6 @@
       "firm": "BTIG",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-06-18",
-      "firm": "Scotiabank",
-      "from": "Sector Outperform",
-      "to": "Sector Outperform",
       "action": "main"
     }
   ],
@@ -226,9 +226,9 @@
   },
   "extras": {
     "beta": 0.801,
-    "enterprise_value": 3106854400,
-    "ev_ebitda": 17.592,
-    "ev_revenue": 14.176,
+    "enterprise_value": 3047968000,
+    "ev_ebitda": 17.258,
+    "ev_revenue": 13.908,
     "float_shares": 100868066,
     "short_shares": 10117461,
     "short_pct_float": 11.54,
@@ -238,15 +238,9 @@
   },
   "ex_dividend": "2026-09-01",
   "dividend_date": null,
-  "payout_ratio": 6.2143,
-  "inst_count": 401,
+  "payout_ratio": 4.1905,
+  "inst_count": 402,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.05,
-      "actual": 0.0581,
-      "surprise_pct": 16.2
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.06,
@@ -264,6 +258,12 @@
       "estimate": 0.09,
       "actual": 0.0856,
       "surprise_pct": -4.89
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.09286,
+      "actual": 0.08,
+      "surprise_pct": -13.85
     }
   ],
   "insiders": [
@@ -331,15 +331,6 @@
       "date": "2026-02-27"
     },
     {
-      "name": "WITTMAN LORI B",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 7192,
-      "date": "2026-02-26"
-    },
-    {
       "name": "ZEIGLER ROBIN MCBRIDE",
       "role": "Director",
       "kind": "other",
@@ -355,6 +346,15 @@
       "text": null,
       "value": null,
       "shares": 14053,
+      "date": "2026-02-26"
+    },
+    {
+      "name": "MINNIS TODD",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 7192,
       "date": "2026-02-26"
     }
   ],

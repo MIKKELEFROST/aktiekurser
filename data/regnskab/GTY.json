@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T20:21:50.503Z",
+  "updated_at": "2026-10-22T20:24:48.572Z",
   "source": "Yahoo Finance",
   "symbol": "GTY",
   "summary": "Getty Realty Corp. is a publicly traded, net lease REIT specializing in the acquisition, financing and development of convenience, automotive and other single-tenant retail real estate. As of June 30, 2026, the Company's portfolio included 1,224 freestanding properties located in 46 states across the United States and Washington, D.C. Getty Realty Corp. was incorporated in 1955 and is based in New York, United States.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-21",
   "earnings_estimated": false,
   "earnings_call": "2026-10-22",
-  "eps_estimate": 0.35001,
+  "eps_estimate": 0.33751,
   "analysts": {
     "strong_buy": 1,
     "buy": 2,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 8
   },
-  "target_mean": 35.57143,
+  "target_mean": 34.85714,
   "target_high": 39,
   "target_low": 30,
   "target_analysts": 7,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 55159000,
-      "earnings": 23348000
-    },
-    {
       "q": "4Q2025",
       "revenue": 59996000,
       "earnings": 27044000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 58554000,
       "earnings": 22585000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 62265000,
+      "earnings": 25606000
     }
   ],
   "growth": {
-    "q0": -0.0223,
-    "q1": -0.1539,
+    "q0": -0.1539,
+    "q1": null,
     "y0": 0.1597,
     "y1": -0.028199999
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.747,
-    "enterprise_value": 2811511808,
-    "ev_ebitda": 13.324,
-    "ev_revenue": 12.065,
+    "enterprise_value": 2776210176,
+    "ev_ebitda": 13.157,
+    "ev_revenue": 11.913,
     "float_shares": 59467778,
     "short_shares": 3439466,
     "short_pct_float": 8.59,
@@ -241,17 +241,11 @@
     "last_split": "10000:7561",
     "last_split_date": "1997-04-01"
   },
-  "ex_dividend": "2026-09-24",
+  "ex_dividend": "2026-12-24",
   "dividend_date": null,
   "payout_ratio": 1.1667,
   "inst_count": 451,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.33827,
-      "actual": 0.358,
-      "surprise_pct": 5.83
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.34262,
@@ -269,6 +263,12 @@
       "estimate": 0.46075,
       "actual": 0.2941,
       "surprise_pct": -36.17
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.35001,
+      "actual": 0.3224,
+      "surprise_pct": -7.89
     }
   ],
   "insiders": [

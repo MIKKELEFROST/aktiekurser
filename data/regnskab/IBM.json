@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T20:21:50.633Z",
+  "updated_at": "2026-10-22T20:24:48.694Z",
   "source": "Yahoo Finance",
   "symbol": "IBM",
   "summary": "International Business Machines Corporation, together with its subsidiaries, provides integrated solutions and services in the Americas, Europe, the Middle East, Africa, and the Asia Pacific. It operates through Software, Consulting, Infrastructure, and Financing segments. The Software segment offers hybrid cloud and AI platforms that allow clients to realize their digital and AI transformations across the applications, data, and environments in which they operate. The Consulting segment delivers strategy and technology services and intelligent operations, providing business transformation, technology implementation, managed services, application modernization, and AI-powered solutions. The Infrastructure segment provides on-premises and cloud-based server, and storage solutions, as well as life-cycle services for hybrid cloud infrastructure deployment. The Financing segment offers client and commercial financing, and facilitates IBM clients' acquisition of hardware, software, and services. It operates a data streaming platform. The company has strategic partnerships with various companies, including hyperscalers, service providers, global system integrators, and software and hardware vendors that include Adobe, Amazon Web Services, Microsoft, Oracle, Salesforce, Samsung Electronics and SAP, and others. It also has a strategic collaboration with Arm Holdings plc for the development of new dual-architecture hardware that helps enterprises run future AI and data intensive workloads; strategic partnership with three.ws to advance ai-powered 3d agent technology; and collaboration with Lightwell to help strengthen open source software supply chain. Additionally, it offers operational resilience, logistics, and future-ready technology to the UK Ministry of Defence through Team ORION. The company was formerly known as Computing-Tabulating-Recording Co. and changed its name to International Business Machines Corporation in 1924. International Business Machines Corporation was incorporated in 1911 and is headquartered in Armonk, New York.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-21",
   "earnings_estimated": false,
   "earnings_call": "2026-10-21",
-  "eps_estimate": 2.87224,
+  "eps_estimate": 4.61293,
   "analysts": {
     "strong_buy": 3,
     "buy": 9,
@@ -19,8 +19,8 @@
     "strong_sell": 1,
     "total": 25
   },
-  "target_mean": 243.08609,
-  "target_high": 297,
+  "target_mean": 255.69478,
+  "target_high": 300,
   "target_low": 174,
   "target_analysts": 23,
   "statements": [
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 16331000000,
-      "earnings": 1744000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 19686000000,
       "earnings": 5600000000
@@ -69,83 +64,88 @@
       "q": "2Q2026",
       "revenue": 17162000000,
       "earnings": 2165000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 17103000000,
+      "earnings": 2190000000
     }
   ],
   "growth": {
-    "q0": 0.083900005,
-    "q1": 0.020599999,
-    "y0": 0.0622,
-    "y1": 0.0681
+    "q0": 0.020599999,
+    "q1": 0.114300005,
+    "y0": 0.0709,
+    "y1": 0.066
   },
   "ratings": [
     {
-      "date": "2026-10-15",
-      "firm": "Morgan Stanley",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
-      "action": "main"
-    },
-    {
-      "date": "2026-10-13",
-      "firm": "RBC Capital",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "reit"
-    },
-    {
-      "date": "2026-10-09",
-      "firm": "Truist Securities",
-      "from": null,
-      "to": "Hold",
-      "action": "init"
-    },
-    {
-      "date": "2026-08-31",
-      "firm": "Susquehanna",
+      "date": "2026-10-22",
+      "firm": "UBS",
       "from": "Neutral",
       "to": "Neutral",
       "action": "main"
     },
     {
-      "date": "2026-07-24",
+      "date": "2026-10-22",
       "firm": "Citigroup",
       "from": "Buy",
       "to": "Buy",
       "action": "main"
     },
     {
-      "date": "2026-07-24",
-      "firm": "Susquehanna",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-23",
+      "date": "2026-10-22",
       "firm": "Morgan Stanley",
       "from": "Equal-Weight",
       "to": "Equal-Weight",
       "action": "main"
     },
     {
-      "date": "2026-07-23",
+      "date": "2026-10-22",
       "firm": "BMO Capital",
       "from": "Market Perform",
       "to": "Market Perform",
       "action": "main"
     },
     {
-      "date": "2026-07-23",
+      "date": "2026-10-22",
+      "firm": "Barclays",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-22",
       "firm": "RBC Capital",
       "from": "Outperform",
       "to": "Outperform",
       "action": "reit"
     },
     {
-      "date": "2026-07-23",
-      "firm": "Barclays",
+      "date": "2026-10-22",
+      "firm": "JP Morgan",
       "from": "Overweight",
       "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-22",
+      "firm": "Stifel",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-22",
+      "firm": "Susquehanna",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-22",
+      "firm": "Baird",
+      "from": "Neutral",
+      "to": "Neutral",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.724,
-    "enterprise_value": 285150150656,
-    "ev_ebitda": 17.31,
-    "ev_revenue": 4.127,
+    "enterprise_value": 294138118144,
+    "ev_ebitda": 17.856,
+    "ev_revenue": 4.257,
     "float_shares": 940193593,
     "short_shares": 24164783,
     "short_pct_float": 2.85,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-08-10",
   "dividend_date": null,
   "payout_ratio": 0.5982,
-  "inst_count": 4411,
+  "inst_count": 4402,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 2.44662,
-      "actual": 2.65,
-      "surprise_pct": 8.31
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 4.29238,
@@ -269,6 +263,12 @@
       "estimate": 2.93306,
       "actual": 2.93,
       "surprise_pct": -0.1
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 2.87224,
+      "actual": 2.95,
+      "surprise_pct": 2.71
     }
   ],
   "insiders": [

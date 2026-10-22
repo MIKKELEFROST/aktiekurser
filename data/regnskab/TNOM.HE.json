@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T20:21:51.965Z",
+  "updated_at": "2026-10-22T20:24:50.331Z",
   "source": "Yahoo Finance",
   "symbol": "TNOM.HE",
   "summary": "Talenom Oyj provides accounting and other services for small and medium-sized enterprises in Finland, Sweden, Spain, and internationally. The company provides financial management software that automates reporting, integrates with banking systems, and provides real-time visibility into financial performance; bookkeeping, financial reporting, tax advisory, labor, and payroll services; and specialized tax advisory service. The company also provides accounting, sales invoicing, invoice payments, payroll, performance monitoring, care, financial management software, and enterprise report planning and reporting solutions. The company was founded in 1972 and is based in Oulu, Finland.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-08-13",
   "earnings_estimated": false,
   "earnings_call": "2026-08-13",
-  "eps_estimate": 0.01,
+  "eps_estimate": -0.01,
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 34937000,
-      "earnings": 2299000
-    },
-    {
       "q": "3Q2025",
       "revenue": 29761000,
       "earnings": 1267000
@@ -69,11 +64,16 @@
       "q": "1Q2026",
       "revenue": 33166000,
       "earnings": 29698000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 25430000,
+      "earnings": 1162000
     }
   ],
   "growth": {
-    "q0": -0.6667,
-    "q1": 0.5,
+    "q0": 0.5,
+    "q1": null,
     "y0": -0.1667,
     "y1": 0.8
   },
@@ -105,12 +105,6 @@
   "inst_count": 22,
   "eps_history": [
     {
-      "quarter": "2025-09-30",
-      "estimate": 0.025,
-      "actual": 0.03,
-      "surprise_pct": 20
-    },
-    {
       "quarter": "2025-12-31",
       "estimate": -0.01,
       "actual": -0.02,
@@ -127,6 +121,12 @@
       "estimate": 0.03,
       "actual": 0.0333,
       "surprise_pct": 11
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.01,
+      "actual": 0.0249,
+      "surprise_pct": 149
     }
   ],
   "insiders": [],

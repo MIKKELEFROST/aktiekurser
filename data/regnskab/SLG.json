@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T20:21:51.739Z",
+  "updated_at": "2026-10-22T20:24:49.702Z",
   "source": "Yahoo Finance",
   "symbol": "SLG",
   "summary": "SL Green Realty Corp., Manhattan's largest office landlord, is a fully integrated real estate investment trust, or REIT, that is focused primarily on acquiring, managing and maximizing the value of Manhattan commercial properties. As of June 30, 2026, SL Green held interests in 54 buildings totaling 30.6 million square feet, which included ownership interests in 29.2 million square feet and 1.4 million square feet securing debt and preferred equity investments, excluding fund investments, and managed 4 buildings totaling 0.9 million square feet owned by third parties. SL Green Realty Corp. was incorporated in 1980 in Maryland and is based in New York.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-21",
   "earnings_estimated": false,
   "earnings_call": "2026-10-22",
-  "eps_estimate": -0.31372,
+  "eps_estimate": null,
   "analysts": {
     "strong_buy": 2,
     "buy": 4,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 168536000,
-      "earnings": 24874000
-    },
-    {
       "q": "4Q2025",
       "revenue": 183313000,
       "earnings": -104567000
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 191882000,
       "earnings": -26503000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 185933000,
+      "earnings": 72192000
     }
   ],
   "growth": {
-    "q0": -1.631,
-    "q1": 1.2152,
-    "y0": 0.2719,
-    "y1": 0.45830002
+    "q0": null,
+    "q1": 0.7528,
+    "y0": -1.8513,
+    "y1": 0.8617
   },
   "ratings": [
     {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.658,
-    "enterprise_value": 10658152448,
-    "ev_ebitda": 29.966,
-    "ev_revenue": 10.68,
+    "enterprise_value": 10634063872,
+    "ev_ebitda": 29.899,
+    "ev_revenue": 10.655,
     "float_shares": 66567030,
     "short_shares": 12192729,
     "short_pct_float": 25.61,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-09-30",
   "dividend_date": null,
   "payout_ratio": 153.75,
-  "inst_count": 508,
+  "inst_count": 510,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.00031,
-      "actual": 0.4972,
-      "surprise_pct": 160487.1
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.60516,
@@ -269,6 +263,12 @@
       "estimate": -1.95895,
       "actual": -0.3447,
       "surprise_pct": 82.4
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.31372,
+      "actual": 0.9457,
+      "surprise_pct": 401.45
     }
   ],
   "insiders": [

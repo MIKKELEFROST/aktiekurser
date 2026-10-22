@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T20:21:51.444Z",
+  "updated_at": "2026-10-22T20:24:49.462Z",
   "source": "Yahoo Finance",
   "symbol": "PM",
   "summary": "Philip Morris International Inc. operates as a tobacco company. The company offers cigarettes and smoke-free products, including heat-not-burn, e-vapor, and oral nicotine products under the IQOS, VEEV, and ZYN brands; and consumer accessories, such as lighters and matches. It also offers wellness products. The company was incorporated in 1987 and is headquartered in Stamford, Connecticut.",
@@ -10,19 +10,19 @@
   "next_earnings": "2026-10-21",
   "earnings_estimated": false,
   "earnings_call": "2026-10-21",
-  "eps_estimate": 2.31635,
+  "eps_estimate": 1.89691,
   "analysts": {
     "strong_buy": 3,
-    "buy": 8,
+    "buy": 9,
     "hold": 4,
     "sell": 0,
     "strong_sell": 0,
-    "total": 15
+    "total": 16
   },
-  "target_mean": 208.7143,
+  "target_mean": 210.13333,
   "target_high": 230,
   "target_low": 175,
-  "target_analysts": 14,
+  "target_analysts": 15,
   "statements": [
     {
       "year": "2022",
@@ -72,12 +72,26 @@
     }
   ],
   "growth": {
-    "q0": 0.36259997,
-    "q1": 0.22530001,
-    "y0": 0.1149,
-    "y1": 0.0919
+    "q0": 0.1158,
+    "q1": 0.0525,
+    "y0": 0.11350001,
+    "y1": 0.088199995
   },
   "ratings": [
+    {
+      "date": "2026-10-22",
+      "firm": "UBS",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-22",
+      "firm": "Needham",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-09-23",
       "firm": "UBS",
@@ -132,20 +146,6 @@
       "firm": "Morgan Stanley",
       "from": "Overweight",
       "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-04-23",
-      "firm": "Needham",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "reit"
-    },
-    {
-      "date": "2026-04-17",
-      "firm": "UBS",
-      "from": "Neutral",
-      "to": "Neutral",
       "action": "main"
     }
   ],
@@ -230,11 +230,11 @@
     "net_pct": null
   },
   "extras": {
-    "beta": 0.36,
-    "enterprise_value": 356628824064,
-    "ev_ebitda": 19.796,
-    "ev_revenue": 8.382,
-    "float_shares": 1554701319,
+    "beta": null,
+    "enterprise_value": 351448825856,
+    "ev_ebitda": 17.153,
+    "ev_revenue": 8.147,
+    "float_shares": 1558813382,
     "short_shares": 17747343,
     "short_pct_float": 1.14,
     "short_ratio": 4.04,
@@ -247,16 +247,22 @@
   "inst_count": 3533,
   "eps_history": [
     {
-      "quarter": "2025-09-30",
-      "estimate": 2.09578,
-      "actual": 2.24,
-      "surprise_pct": 6.88
+      "quarter": "2025-12-31",
+      "estimate": 1.69992,
+      "actual": 1.7,
+      "surprise_pct": 0
     },
     {
       "quarter": "2026-03-31",
       "estimate": 1.83058,
       "actual": 1.96,
       "surprise_pct": 7.07
+    },
+    {
+      "quarter": "2026-06-30",
+      "estimate": 2.05008,
+      "actual": 2.2,
+      "surprise_pct": 7.31
     },
     {
       "quarter": "2026-09-30",

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T20:21:50.617Z",
+  "updated_at": "2026-10-22T20:24:48.680Z",
   "source": "Yahoo Finance",
   "symbol": "HVT",
   "summary": "Haverty Furniture Companies, Inc. operates as a specialty retailer of residential furniture and accessories in the United States. The company offers furniture merchandise under the Havertys brand name. It also provides custom upholstery products and eclectic looks, as well as offers mattress product lines under the Tempur-Pedic, Serta, Sealy, Beautyrest, and Stearns and Foster names. The company sells home furnishings through its retail stores, as well as through its website. Haverty Furniture Companies, Inc. was founded in 1885 and is headquartered in Atlanta, Georgia.",
@@ -11,7 +11,14 @@
   "earnings_estimated": true,
   "earnings_call": "2026-08-04",
   "eps_estimate": 0.405,
-  "analysts": null,
+  "analysts": {
+    "strong_buy": 0,
+    "buy": 0,
+    "hold": 1,
+    "sell": 0,
+    "strong_sell": 0,
+    "total": 1
+  },
   "target_mean": 33,
   "target_high": 36,
   "target_low": 30,
@@ -67,8 +74,8 @@
   "growth": {
     "q0": 0.4464,
     "q1": 0.33330002,
-    "y0": 0.3025,
-    "y1": 0.6935
+    "y0": 0.395,
+    "y1": 0.5813
   },
   "ratings": [
     {
@@ -237,7 +244,7 @@
   "ex_dividend": "2026-08-25",
   "dividend_date": null,
   "payout_ratio": 0.9562,
-  "inst_count": 199,
+  "inst_count": 200,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -311,21 +318,12 @@
       "date": "2026-05-11"
     },
     {
-      "name": "GILL JOHN LINWOOD",
-      "role": "Officer",
+      "name": "SMITH CLARENCE H",
+      "role": "Director",
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 3320,
-      "date": "2026-05-08"
-    },
-    {
-      "name": "HARE RICHARD B",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 4319,
+      "shares": 6623,
       "date": "2026-05-08"
     },
     {
@@ -338,12 +336,12 @@
       "date": "2026-05-08"
     },
     {
-      "name": "SMITH CLARENCE H",
-      "role": "Director",
+      "name": "HARE RICHARD B",
+      "role": "Chief Financial Officer",
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 6623,
+      "shares": 4319,
       "date": "2026-05-08"
     },
     {
@@ -352,7 +350,16 @@
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 4816,
+      "shares": 3320,
+      "date": "2026-05-08"
+    },
+    {
+      "name": "SMITH CLARENCE H",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 23469,
       "date": "2026-02-27"
     }
   ],

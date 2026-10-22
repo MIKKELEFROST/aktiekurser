@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T20:21:51.692Z",
+  "updated_at": "2026-10-22T20:24:49.653Z",
   "source": "Yahoo Finance",
   "symbol": "SF",
   "summary": "Stifel Financial Corp. operates as the bank holding company for Stifel, Nicolaus & Company, Incorporated that provides retail and institutional wealth management, and investment banking services to individual, corporations, municipalities, and institutions in the United States, the United Kingdom, Canada, and internationally. It operates in three segments: Global Wealth Management, Institutional Group, and Other. The company provides private client services, including securities transaction and financial planning services; securities brokerage services, such as the sale of equities, mutual funds, fixed income products, and insurance; institutional equity and fixed income sales, trading and research, and municipal finance services; investment banking services, such as mergers and acquisitions, public offerings, and private placements; and retail and commercial banking services comprising personal and commercial lending programs, as well as deposit accounts. It participates in and manages underwritings for corporate and public finance; and offers financial advisory and securities brokerage services. The company was founded in 1890 and is headquartered in Saint Louis, Missouri.",
@@ -10,18 +10,18 @@
   "next_earnings": "2026-10-21",
   "earnings_estimated": false,
   "earnings_call": "2026-10-21",
-  "eps_estimate": 1.44507,
+  "eps_estimate": 1.85888,
   "analysts": {
-    "strong_buy": 2,
+    "strong_buy": 1,
     "buy": 2,
-    "hold": 4,
+    "hold": 5,
     "sell": 0,
     "strong_sell": 0,
     "total": 8
   },
-  "target_mean": 84.5,
+  "target_mean": 82.5,
   "target_high": 103,
-  "target_low": 75,
+  "target_low": 74,
   "target_analysts": 8,
   "statements": [
     {
@@ -72,12 +72,26 @@
     }
   ],
   "growth": {
-    "q0": 0.1116,
-    "q1": 0.1496,
-    "y0": 0.4063,
-    "y1": 0.1374
+    "q0": 0.0602,
+    "q1": 0.1159,
+    "y0": 0.3554,
+    "y1": 0.168
   },
   "ratings": [
+    {
+      "date": "2026-10-22",
+      "firm": "UBS",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-22",
+      "firm": "JP Morgan",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-10-12",
       "firm": "TD Cowen",
@@ -132,20 +146,6 @@
       "firm": "TD Cowen",
       "from": "Hold",
       "to": "Hold",
-      "action": "main"
-    },
-    {
-      "date": "2026-01-14",
-      "firm": "TD Cowen",
-      "from": "Buy",
-      "to": "Hold",
-      "action": "down"
-    },
-    {
-      "date": "2026-01-12",
-      "firm": "Citizens",
-      "from": "Market Outperform",
-      "to": "Market Outperform",
       "action": "main"
     }
   ],
@@ -230,11 +230,11 @@
     "net_pct": 0.4
   },
   "extras": {
-    "beta": 1.014,
-    "enterprise_value": 8678560768,
+    "beta": null,
+    "enterprise_value": null,
     "ev_ebitda": null,
-    "ev_revenue": 1.487,
-    "float_shares": 145524901,
+    "ev_revenue": null,
+    "float_shares": 149173763,
     "short_shares": 4261978,
     "short_pct_float": 2.92,
     "short_ratio": 3.14,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-09-01",
   "dividend_date": null,
   "payout_ratio": 0.23110001,
-  "inst_count": 773,
+  "inst_count": 776,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.23003,
-      "actual": 1.3,
-      "surprise_pct": 5.69
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.67266,
@@ -269,6 +263,12 @@
       "estimate": 1.36185,
       "actual": 1.42,
       "surprise_pct": 4.27
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.44507,
+      "actual": 1.46,
+      "surprise_pct": 1.03
     }
   ],
   "insiders": [

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T20:21:50.878Z",
+  "updated_at": "2026-10-22T20:24:48.969Z",
   "source": "Yahoo Finance",
   "symbol": "LINDEX.HE",
   "summary": "Lindex Group Oyj engages in the retailing business in Finland and internationally. The company operates through Lindex and Stockmann segments. It also offers women's clothing, lingerie and underwear, children's clothing, and cosmetics and accessories. In addition, the company operates department stores; e-commerce, logistics centres, and production offices; and online store. Further, it operates department stores, which offer fashion, cosmetics, and home products. The company was formerly known as Stockmann Oyj Abp and changed its name to Lindex Group Oyj in March 2024. Lindex Group Oyj was founded in 1862 and is based in Helsinki, Finland.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-22",
   "earnings_estimated": false,
   "earnings_call": "2026-10-22",
-  "eps_estimate": 0.04,
+  "eps_estimate": 0.15,
   "analysts": null,
   "target_mean": 2.7,
   "target_high": 2.7,
@@ -44,11 +44,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 0,
-      "earnings": 1900000
-    },
-    {
       "q": "4Q2025",
       "revenue": 284700000,
       "earnings": 29600000
@@ -62,11 +57,16 @@
       "q": "2Q2026",
       "revenue": 259500000,
       "earnings": 15800000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 241500000,
+      "earnings": 12100000
     }
   ],
   "growth": {
     "q0": null,
-    "q1": null,
+    "q1": 0.2018,
     "y0": 0,
     "y1": 0.0556
   },
@@ -82,9 +82,9 @@
   },
   "extras": {
     "beta": 0.667,
-    "enterprise_value": 905690816,
-    "ev_ebitda": 9.395,
-    "ev_revenue": 0.939,
+    "enterprise_value": 911435200,
+    "ev_ebitda": 9.455,
+    "ev_revenue": 0.945,
     "float_shares": 122314655,
     "short_shares": null,
     "short_pct_float": null,
@@ -108,6 +108,12 @@
       "estimate": 0.1,
       "actual": 0.09331,
       "surprise_pct": -6.69
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.04,
+      "actual": 0.06364,
+      "surprise_pct": 59.1
     }
   ],
   "insiders": [],

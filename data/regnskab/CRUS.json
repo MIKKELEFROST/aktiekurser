@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T20:21:49.974Z",
+  "updated_at": "2026-10-22T20:24:48.046Z",
   "source": "Yahoo Finance",
   "symbol": "CRUS",
   "summary": "Cirrus Logic, Inc., a fabless semiconductor company, develops mixed-signal processing solutions and audio products in China, the United States, and internationally. The company offers audio products, including amplifiers; codecs components that integrate analog-to-digital converters (ADCs) and digital-to-analog converters (DACs) into a single integrated circuit (IC); smart codecs, a codec with integrated digital signal processing; standalone digital signal processors; and SoundClear technology for use in smartphones, PCs, tablets, AR/VR headsets, wearables, home theatre systems, automotive entertainment systems, and professional audio systems. It also provides camera controllers, haptic and sensing solutions, and battery and power ICs for smartphones, as well as products for automotive, industrial, and imaging applications. The company markets and sells its products through direct sales force, external sales representatives, and distributors. Cirrus Logic, Inc. was incorporated in 1984 and is headquartered in Austin, Texas.",
@@ -19,8 +19,8 @@
     "strong_sell": 1,
     "total": 5
   },
-  "target_mean": 151.66667,
-  "target_high": 200,
+  "target_mean": 141.66667,
+  "target_high": 170,
   "target_low": 95,
   "target_analysts": 3,
   "statements": [
@@ -73,9 +73,9 @@
   ],
   "growth": {
     "q0": -0.1446,
-    "q1": -0.16379999,
-    "y0": -0.0935,
-    "y1": 0.0298
+    "q1": -0.1591,
+    "y0": -0.091000006,
+    "y1": 0.0347
   },
   "ratings": [
     {
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 23,
-    "sells": 13,
+    "sells": 14,
     "bought": 57448,
-    "sold": 38613,
-    "net_pct": 7.2
+    "sold": 39779,
+    "net_pct": 6.7
   },
   "extras": {
     "beta": 1.166,
-    "enterprise_value": 4792729088,
-    "ev_ebitda": 9.134,
-    "ev_revenue": 2.338,
+    "enterprise_value": 4784208896,
+    "ev_ebitda": 9.118,
+    "ev_revenue": 2.334,
     "float_shares": 49635931,
     "short_shares": 3466357,
     "short_pct_float": 7.99,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 756,
+  "inst_count": 758,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "BAUMGARTNER JEFFREY W",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 107.75 per share.",
+      "value": 125636,
+      "shares": 1166,
+      "date": "2026-10-20"
+    },
     {
       "name": "BAUMGARTNER JEFFREY W",
       "role": "Officer",
@@ -336,29 +345,20 @@
       "date": "2026-07-29"
     },
     {
-      "name": "LE DUY-LOAN T",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 1998,
-      "date": "2026-07-29"
-    },
-    {
-      "name": "LEGO CATHERINE P",
-      "role": "Director",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 134.07 per share.",
-      "value": 267872,
-      "shares": 1998,
-      "date": "2026-07-29"
-    },
-    {
       "name": "DAVERN ALEXANDER M",
       "role": "Director",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 134.07 per share.",
       "value": 267872,
+      "shares": 1998,
+      "date": "2026-07-29"
+    },
+    {
+      "name": "LE DUY-LOAN T",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
       "shares": 1998,
       "date": "2026-07-29"
     }

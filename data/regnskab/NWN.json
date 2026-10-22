@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T20:21:51.258Z",
+  "updated_at": "2026-10-22T20:24:49.272Z",
   "source": "Yahoo Finance",
   "symbol": "NWN",
   "summary": "Northwest Natural Holding Company, through its subsidiary, Northwest Natural Gas Company, provides regulated natural gas distribution services to residential, commercial, and industrial customers in the United States. It operates through three segments: NWN Gas Utility, SiEnergy, and NWN Water. The company operates mist gas storage facility contracted to utilities, third-party marketers, and electric generators; offers natural gas asset management services; interstate storage; and operates an appliance retail center. It also engages in the gas storage, water and wastewater, non-regulated renewable natural gas, and other investment businesses. In addition, the company offers natural gas services in Oregon and southwest Washington; water and wastewater connections; and operation, maintenance, and management services to water and wastewater system owners. Northwest Natural Holding Company was founded in 1859 and is headquartered in Portland, Oregon.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": -0.8825,
+  "eps_estimate": -0.874,
   "analysts": {
     "strong_buy": 0,
     "buy": 3,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 6
   },
-  "target_mean": 56.4,
+  "target_mean": 56.2,
   "target_high": 61,
-  "target_low": 50,
+  "target_low": 49,
   "target_analysts": 5,
   "statements": [
     {
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": -0.20889999,
+    "q0": -0.1973,
     "q1": 0.1619,
     "y0": 0.0505,
     "y1": 0.05
   },
   "ratings": [
+    {
+      "date": "2026-10-22",
+      "firm": "Mizuho",
+      "from": null,
+      "to": "Neutral",
+      "action": "init"
+    },
     {
       "date": "2026-10-20",
       "firm": "Wells Fargo",
@@ -136,13 +143,6 @@
     },
     {
       "date": "2025-03-10",
-      "firm": "Stifel",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2024-11-14",
       "firm": "Stifel",
       "from": "Buy",
       "to": "Buy",
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 2,
-    "sells": 4,
+    "sells": 5,
     "bought": 1625,
-    "sold": 6000,
-    "net_pct": -1.7
+    "sold": 7500,
+    "net_pct": -2.2
   },
   "extras": {
     "beta": 0.392,
-    "enterprise_value": 4732984320,
-    "ev_ebitda": 9.671,
-    "ev_revenue": 3.661,
+    "enterprise_value": 4729195520,
+    "ev_ebitda": 9.663,
+    "ev_revenue": 3.658,
     "float_shares": 41852342,
     "short_shares": 1879308,
     "short_pct_float": 6.07,
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "ANDERSON DAVID HUGO",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 48.71 per share.",
+      "value": 73061,
+      "shares": 1500,
+      "date": "2026-10-19"
+    },
     {
       "name": "ANDERSON DAVID HUGO",
       "role": "Director",
@@ -351,15 +360,6 @@
       "text": "Sale at price 52.53 per share.",
       "value": 7,
       "shares": 0,
-      "date": "2026-03-05"
-    },
-    {
-      "name": "KRAVITZ ZACHARY D",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 52.53 per share.",
-      "value": 55,
-      "shares": 1,
       "date": "2026-03-05"
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T20:21:49.896Z",
+  "updated_at": "2026-10-22T20:24:47.969Z",
   "source": "Yahoo Finance",
   "symbol": "CME",
   "summary": "CME Group Inc., together with its subsidiaries, operates contract markets for the trading of futures and options on futures contracts worldwide. It offers futures and options products based on interest rates, equity indexes, and foreign exchange; and agricultural, energy, and metals commodities, as well as fixed income and foreign currency trading services. The company provides clearing house services, including clearing, settling, and guaranteeing futures and options contracts, and cleared swaps products traded through its exchanges. In addition, the company offers a range of market data services, including real-time and historical data services. It serves professional traders, financial institutions, institutional and individual investors, corporations, manufacturers, producers, governments, and central banks. CME Group Inc. partners with FutureSports to futures on sports indexes. The company was formerly known as Chicago Mercantile Exchange Holdings Inc. and changed its name to CME Group Inc. in July 2007. The company was founded in 1898 and is headquartered in Chicago, Illinois.",
@@ -10,18 +10,18 @@
   "next_earnings": "2026-10-21",
   "earnings_estimated": false,
   "earnings_call": "2026-10-21",
-  "eps_estimate": 2.98947,
+  "eps_estimate": 3.03482,
   "analysts": {
-    "strong_buy": 4,
+    "strong_buy": 5,
     "buy": 4,
     "hold": 6,
     "sell": 1,
-    "strong_sell": 2,
+    "strong_sell": 1,
     "total": 17
   },
-  "target_mean": 292.9375,
-  "target_high": 337,
-  "target_low": 218,
+  "target_mean": 310.0625,
+  "target_high": 367,
+  "target_low": 227,
   "target_analysts": 16,
   "statements": [
     {
@@ -72,12 +72,54 @@
     }
   ],
   "growth": {
-    "q0": 0.1155,
-    "q1": 0.0749,
-    "y0": 0.1012,
-    "y1": 0.056500003
+    "q0": 0.0956,
+    "q1": -0.0107,
+    "y0": 0.1099,
+    "y1": 0.0612
   },
   "ratings": [
+    {
+      "date": "2026-10-22",
+      "firm": "UBS",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-22",
+      "firm": "Morgan Stanley",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-22",
+      "firm": "Barclays",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-22",
+      "firm": "Wells Fargo",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-22",
+      "firm": "Piper Sandler",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "reit"
+    },
+    {
+      "date": "2026-10-22",
+      "firm": "JP Morgan",
+      "from": "Underweight",
+      "to": "Overweight",
+      "action": "up"
+    },
     {
       "date": "2026-10-14",
       "firm": "Wells Fargo",
@@ -104,48 +146,6 @@
       "firm": "UBS",
       "from": "Neutral",
       "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-10-05",
-      "firm": "TD Cowen",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-10-02",
-      "firm": "Wells Fargo",
-      "from": null,
-      "to": "Overweight",
-      "action": "init"
-    },
-    {
-      "date": "2026-09-28",
-      "firm": "TD Cowen",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "reit"
-    },
-    {
-      "date": "2026-09-03",
-      "firm": "TD Cowen",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "reit"
-    },
-    {
-      "date": "2026-08-19",
-      "firm": "Deutsche Bank",
-      "from": "Buy",
-      "to": "Hold",
-      "action": "down"
-    },
-    {
-      "date": "2026-07-23",
-      "firm": "JP Morgan",
-      "from": "Underweight",
-      "to": "Underweight",
       "action": "main"
     }
   ],
@@ -227,14 +227,14 @@
     "sells": 4,
     "bought": 19807,
     "sold": 56253,
-    "net_pct": -2.2
+    "net_pct": -2.3
   },
   "extras": {
-    "beta": 0.27,
-    "enterprise_value": 107780251648,
-    "ev_ebitda": 22.59,
-    "ev_revenue": 15.95,
-    "float_shares": 354645836,
+    "beta": null,
+    "enterprise_value": 106994040832,
+    "ev_ebitda": 21.648,
+    "ev_revenue": 15.376,
+    "float_shares": 353106979,
     "short_shares": 5526063,
     "short_pct_float": 1.71,
     "short_ratio": 3.01,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-09-09",
   "dividend_date": null,
   "payout_ratio": 0.95419997,
-  "inst_count": 2338,
+  "inst_count": 2340,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 2.62798,
-      "actual": 2.68,
-      "surprise_pct": 1.98
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 2.74272,
@@ -269,6 +263,12 @@
       "estimate": 2.90993,
       "actual": 2.99,
       "surprise_pct": 2.75
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 2.98947,
+      "actual": 3.02,
+      "surprise_pct": 1.02
     }
   ],
   "insiders": [

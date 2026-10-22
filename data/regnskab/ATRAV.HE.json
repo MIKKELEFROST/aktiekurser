@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T20:21:49.522Z",
+  "updated_at": "2026-10-22T20:24:47.595Z",
   "source": "Yahoo Finance",
   "symbol": "ATRAV.HE",
   "summary": "Atria Oyj, together with its subsidiaries, manufactures and markets food products in Finland, Sweden, Denmark, and Estonia. The company offers fresh and consumer-packed meat; poultry products; cooking products, such as cooking sausages; sandwich toppings; convenience food; animal feed; cold cuts and spreads; vegetable and delicatessen products; ready meals; and plant-based products. It sells its products under the Atria, Jyvä Broiler, Forssan, Wilhelm, Sibylla, Ridderheims, Lönnenberga, Lithells, Arboga, Gooh!, 3-Stjernet, Maks & Moorits, Wõro, Aalbaek, and VK brands. The company serves consumers, retail trade, the food service sector, and the food industry. It exports its products to 25 countries. The company was formerly known as Atria Group Oyj and changed its name to Atria Oyj in May 2008. Atria Oyj was founded in 1903 and is headquartered in Seinäjoki, Finland.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-22",
   "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": 0.615,
+  "eps_estimate": 0.305,
   "analysts": {
     "strong_buy": 1,
     "buy": 0,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 457000000,
-      "earnings": 17100000
-    },
-    {
       "q": "4Q2025",
       "revenue": 476500000,
       "earnings": 4100000
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 481200000,
       "earnings": 13200000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 475200000,
+      "earnings": 0
     }
   ],
   "growth": {
-    "q0": 0.0082,
-    "q1": -0.0161,
-    "y0": 0.0776,
-    "y1": 0.057600003
+    "q0": -0.0161,
+    "q1": null,
+    "y0": 0.0559,
+    "y1": 0.0794
   },
   "ratings": [],
   "holders": [],
@@ -89,9 +89,9 @@
   },
   "extras": {
     "beta": 0.238,
-    "enterprise_value": 737441216,
-    "ev_ebitda": 5.737,
-    "ev_revenue": 0.395,
+    "enterprise_value": 740829312,
+    "ev_ebitda": 5.763,
+    "ev_revenue": 0.397,
     "float_shares": 10310264,
     "short_shares": null,
     "short_pct_float": null,
@@ -104,12 +104,6 @@
   "payout_ratio": 0.4777,
   "inst_count": 15,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.61,
-      "actual": 0.61,
-      "surprise_pct": 0
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.3,
@@ -127,6 +121,12 @@
       "estimate": 0.41,
       "actual": 0.47,
       "surprise_pct": 14.63
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.615,
+      "actual": 0.67,
+      "surprise_pct": 8.94
     }
   ],
   "insiders": [],

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T20:21:51.897Z",
+  "updated_at": "2026-10-22T20:24:49.855Z",
   "source": "Yahoo Finance",
   "symbol": "TCBK",
   "summary": "TriCo Bancshares operates as a bank holding company for Tri Counties Bank that provides commercial and retail banking services to individual and corporate customers. The company accepts demand, savings, and time deposits; and offers checking, specialized, money market, education, health savings, certificate of deposit, and business and public funds savings accounts, as well as individual retirement accounts. It also offers small business loans; real estate mortgage loans, such as residential and commercial loans; consumer loans; mortgage, auto, and personal loans; commercial loans, including agricultural loans; motorcycle, RV, boat, and other vehicle loans; and real estate construction loans. In addition, the company provides treasury management services; credit and debit cards; other customary banking services comprising safe deposit boxes; and brokerage and wealth management services. Further, it offers equipment financing, digital banking, overdraft, and payment processing services. The company was founded in 1975 and is headquartered in Chico, California.",
@@ -8,9 +8,9 @@
   "employees": 1114,
   "ceo": "Mr. Richard P. Smith",
   "next_earnings": "2026-10-22",
-  "earnings_estimated": true,
+  "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": 1.086,
+  "eps_estimate": 1.096,
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
@@ -19,10 +19,10 @@
     "strong_sell": 0,
     "total": 6
   },
-  "target_mean": 58.67,
+  "target_mean": 59.3375,
   "target_high": 63,
   "target_low": 55,
-  "target_analysts": 5,
+  "target_analysts": 4,
   "statements": [
     {
       "year": "2022",
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 107824000,
-      "earnings": 34019000
-    },
-    {
       "q": "4Q2025",
       "revenue": 109395000,
       "earnings": 33634000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 111876000,
       "earnings": 34169000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 116712000,
+      "earnings": 37967000
     }
   ],
   "growth": {
-    "q0": 0.0442,
-    "q1": 0.0641,
+    "q0": 0.0641,
+    "q1": 0.0269,
     "y0": 0.15890001,
     "y1": 0.0196
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.674,
-    "enterprise_value": 1690069760,
+    "enterprise_value": 1687512448,
     "ev_ebitda": null,
-    "ev_revenue": 3.965,
+    "ev_revenue": 3.959,
     "float_shares": 30320668,
     "short_shares": 1493851,
     "short_pct_float": 4.91,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-09-11",
   "dividend_date": null,
   "payout_ratio": 0.3453,
-  "inst_count": 302,
+  "inst_count": 303,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.90833,
-      "actual": 1.04,
-      "surprise_pct": 14.5
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.994,
@@ -269,16 +263,22 @@
       "estimate": 1.03167,
       "actual": 1.06,
       "surprise_pct": 2.75
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.086,
+      "actual": 1.18,
+      "surprise_pct": 8.66
     }
   ],
   "insiders": [
     {
-      "name": "CARNEY CRAIG BRAIN",
+      "name": "BAILEY DANIEL K",
       "role": "Officer",
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 4561,
+      "shares": 4782,
       "date": "2026-06-25"
     },
     {
@@ -300,24 +300,6 @@
       "date": "2026-06-25"
     },
     {
-      "name": "GEHLMANN GREGORY A",
-      "role": "General Counsel",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 2876,
-      "date": "2026-06-25"
-    },
-    {
-      "name": "BAILEY DANIEL K",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 4782,
-      "date": "2026-06-25"
-    },
-    {
       "name": "SMITH RICHARD PETER",
       "role": "Chief Executive Officer",
       "kind": "other",
@@ -332,7 +314,25 @@
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 1534,
+      "shares": 4561,
+      "date": "2026-06-25"
+    },
+    {
+      "name": "GEHLMANN GREGORY A",
+      "role": "General Counsel",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 2876,
+      "date": "2026-06-25"
+    },
+    {
+      "name": "BAILEY DANIEL K",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 1608,
       "date": "2026-06-12"
     },
     {
@@ -354,12 +354,12 @@
       "date": "2026-06-12"
     },
     {
-      "name": "GEHLMANN GREGORY A",
-      "role": "General Counsel",
+      "name": "SMITH RICHARD PETER",
+      "role": "Chief Executive Officer",
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 967,
+      "shares": 4879,
       "date": "2026-06-12"
     }
   ],

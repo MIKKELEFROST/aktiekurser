@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T20:21:52.010Z",
+  "updated_at": "2026-10-22T20:24:50.369Z",
   "source": "Yahoo Finance",
   "symbol": "TSCO",
   "summary": "Tractor Supply Company operates as a rural lifestyle retailer in the United States. The company provides various merchandise, including livestock and equine feed and equipment, poultry, fencing, and sprayers and chemicals; companion animal products, such as food, treats, and equipment for dogs, cats, and other small animals, as well as dog wellness products; seasonal and recreation products comprising tractors and riders, lawn and garden, bird feeding, power equipment, and other recreational products; truck, tool, and hardware products, such as truck accessories, trailers, generators, lubricants, batteries, and hardware and tools; and clothing, gift, and décor products consist of clothing, footwear, toys, snacks, and decorative merchandise. It offers its products under the 4health, Paws & Claws, American Farmworks, Producer's Pride, Bit & Bridle, Red Shed, Blue Mountain, Redstone, C.E. Schmidt, Retriever, Country Lane, Ridgecut, Countyline, Royal Wing, Country Tuff, Strive, Dumor, Traveller, Farm Table, Treeline, Groundwork, TSC Tractor Supply Co, Huskee, Untamed, JobSmart, and Impeckable brand names. The company operates its retail stores under the Tractor Supply Company, Petsense by Tractor Supply, and Orscheln Farm and Home names; and operates websites under the TractorSupply.com and Petsense.com names. It sells its products to recreational farmers, ranchers, and others. Tractor Supply Company was founded in 1938 and is based in Brentwood, Tennessee.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-22",
   "earnings_estimated": false,
   "earnings_call": "2026-10-22",
-  "eps_estimate": 0.40672,
+  "eps_estimate": 0.40692,
   "analysts": {
     "strong_buy": 3,
     "buy": 12,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 3719044000,
-      "earnings": 259268000
-    },
-    {
       "q": "4Q2025",
       "revenue": 3898320000,
       "earnings": 227407000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 4541314000,
       "earnings": 360715000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 3910455000,
+      "earnings": 224671000
     }
   ],
   "growth": {
-    "q0": -0.17,
-    "q1": -0.0537,
+    "q0": -0.0537,
+    "q1": 0.0515,
     "y0": -0.061100002,
     "y1": 0.0529
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.514,
-    "enterprise_value": 23460820992,
-    "ev_ebitda": 12.147,
-    "ev_revenue": 1.49,
+    "enterprise_value": 23346192384,
+    "ev_ebitda": 12.087,
+    "ev_revenue": 1.482,
     "float_shares": 519414492,
     "short_shares": 43233684,
     "short_pct_float": 9.48,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-08-24",
   "dividend_date": null,
   "payout_ratio": 0.4896,
-  "inst_count": 1463,
+  "inst_count": 1464,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.48185,
-      "actual": 0.49,
-      "surprise_pct": 1.69
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.46342,
@@ -269,6 +263,12 @@
       "estimate": 0.82031,
       "actual": 0.69,
       "surprise_pct": -15.89
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.40538,
+      "actual": 0.43,
+      "surprise_pct": 6.07
     }
   ],
   "insiders": [
@@ -318,15 +318,6 @@
       "date": "2026-08-06"
     },
     {
-      "name": "DAHL AMY E",
-      "role": "General Counsel",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 13626,
-      "date": "2026-08-05"
-    },
-    {
       "name": "LEDBETTER SAMUEL CRAIG",
       "role": "Officer",
       "kind": "other",
@@ -336,13 +327,13 @@
       "date": "2026-08-05"
     },
     {
-      "name": "LAWTON HARRY A III",
-      "role": "Chief Executive Officer",
-      "kind": "buy",
-      "text": "Purchase at price 31.90 - 32.20 per share.",
-      "value": 501524,
-      "shares": 15600,
-      "date": "2026-08-04"
+      "name": "DAHL AMY E",
+      "role": "General Counsel",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 13626,
+      "date": "2026-08-05"
     },
     {
       "name": "MORRIS EDNA K",
@@ -351,6 +342,15 @@
       "text": "Purchase at price 32.44 per share.",
       "value": 50606,
       "shares": 1560,
+      "date": "2026-08-04"
+    },
+    {
+      "name": "LAWTON HARRY A III",
+      "role": "Chief Executive Officer",
+      "kind": "buy",
+      "text": "Purchase at price 31.90 - 32.20 per share.",
+      "value": 501524,
+      "shares": 15600,
       "date": "2026-08-04"
     },
     {

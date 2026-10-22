@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T20:21:49.720Z",
+  "updated_at": "2026-10-22T20:24:47.790Z",
   "source": "Yahoo Finance",
   "symbol": "BROS",
   "summary": "Dutch Bros Inc., together with its subsidiaries, operates and franchises drive-thru shops in the United States. The company sells and distributes coffee, coffee-related products, and accessories. It operates through Company-Operated Shops and Franchising and Other segments. The company sells its products under various brands such as Dutch Bros, Dutch Bros Coffee, Dutch Bros Rebel, Dutch Bros, and Blue Rebel. Dutch Bros Inc. was founded in 1992 and is based in Tempe, Arizona.",
@@ -10,16 +10,16 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 0.2417,
+  "eps_estimate": 0.24347,
   "analysts": {
-    "strong_buy": 4,
+    "strong_buy": 3,
     "buy": 21,
-    "hold": 0,
+    "hold": 1,
     "sell": 0,
     "strong_sell": 1,
     "total": 26
   },
-  "target_mean": 70.72,
+  "target_mean": 68.32,
   "target_high": 95,
   "target_low": 29,
   "target_analysts": 25,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.2721,
-    "q1": 0.45599997,
-    "y0": 0.2894,
-    "y1": 0.35689998
+    "q0": 0.2814,
+    "q1": 0.4518,
+    "y0": 0.2863,
+    "y1": 0.3397
   },
   "ratings": [
+    {
+      "date": "2026-10-22",
+      "firm": "RBC Capital",
+      "from": "Outperform",
+      "to": "Sector Perform",
+      "action": "down"
+    },
     {
       "date": "2026-10-21",
       "firm": "Citigroup",
@@ -137,13 +144,6 @@
     {
       "date": "2026-09-28",
       "firm": "DA Davidson",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-09-18",
-      "firm": "Melius Research",
       "from": "Buy",
       "to": "Buy",
       "action": "main"
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 2.312,
-    "enterprise_value": 7160183808,
-    "ev_ebitda": 22.231,
-    "ev_revenue": 3.804,
+    "enterprise_value": 6944996352,
+    "ev_ebitda": 21.562,
+    "ev_revenue": 3.689,
     "float_shares": 130180249,
     "short_shares": 20850463,
     "short_pct_float": 50.54,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 679,
+  "inst_count": 684,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -272,6 +272,24 @@
     }
   ],
   "insiders": [
+    {
+      "name": "HART GERARD JOHAN",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 775,
+      "date": "2026-08-20"
+    },
+    {
+      "name": "MAW SCOTT HARLAN",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 775,
+      "date": "2026-08-20"
+    },
     {
       "name": "GILLETT STEPHEN",
       "role": "Director",
@@ -318,24 +336,6 @@
       "date": "2026-08-20"
     },
     {
-      "name": "HART GERARD JOHAN",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 775,
-      "date": "2026-08-20"
-    },
-    {
-      "name": "MAW SCOTT HARLAN",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 775,
-      "date": "2026-08-20"
-    },
-    {
       "name": "PENEGOR TODD ALLAN",
       "role": "Director",
       "kind": "buy",
@@ -354,12 +354,12 @@
       "date": "2026-07-01"
     },
     {
-      "name": "DM INDIVIDUAL AGGREGATOR, LLC",
-      "role": "Beneficial Owner of more than 10% of a Class of Security",
+      "name": "BOERSMA TRAVIS",
+      "role": "Officer, Director and Beneficial Owner",
       "kind": "sell",
       "text": "Sale at price 60.34 - 64.10 per share.",
-      "value": 32213881,
-      "shares": 522109,
+      "value": 92558344,
+      "shares": 1499999,
       "date": "2026-06-11"
     }
   ],

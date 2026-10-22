@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T20:21:51.509Z",
+  "updated_at": "2026-10-22T20:24:50.283Z",
   "source": "Yahoo Finance",
   "symbol": "QS",
   "summary": "QuantumScape Corporation, together with its subsidiaries, develops solid-state lithium-metal battery technology for electric vehicles and other applications in the United States. The company was founded in 2010 and is headquartered in San Jose, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-21",
   "earnings_estimated": false,
   "earnings_call": "2026-10-21",
-  "eps_estimate": -0.16915,
+  "eps_estimate": -0.14,
   "analysts": {
     "strong_buy": 0,
     "buy": 0,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 9
   },
-  "target_mean": 5.7875,
+  "target_mean": 5.4125,
   "target_high": 8.3,
   "target_low": 2.5,
   "target_analysts": 8,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 0,
-      "earnings": -105824000
-    },
-    {
       "q": "4Q2025",
       "revenue": 0,
       "earnings": -100105000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 0,
       "earnings": -98240000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 0,
+      "earnings": -84477000
     }
   ],
   "growth": {
-    "q0": 0.0529,
-    "q1": -0.0201,
-    "y0": 0.1196,
-    "y1": -0.0073
+    "q0": 0.1765,
+    "q1": -0.125,
+    "y0": 0.2354,
+    "y1": -0.0732
   },
   "ratings": [
+    {
+      "date": "2026-10-22",
+      "firm": "Baird",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-10-15",
       "firm": "Morgan Stanley",
@@ -140,13 +147,6 @@
       "from": "Hold",
       "to": "Reduce",
       "action": "down"
-    },
-    {
-      "date": "2025-10-30",
-      "firm": "TD Cowen",
-      "from": "Hold",
-      "to": "Hold",
-      "action": "main"
     }
   ],
   "holders": [
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": null,
-  "inst_count": 560,
+  "inst_count": 561,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.19633,
-      "actual": -0.1786,
-      "surprise_pct": 9.03
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.1725,
@@ -269,18 +263,15 @@
       "estimate": -0.17809,
       "actual": -0.16,
       "surprise_pct": 10.16
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.16894,
+      "actual": -0.14,
+      "surprise_pct": 17.13
     }
   ],
   "insiders": [
-    {
-      "name": "HOLME TIMOTHY",
-      "role": "Chief Technology Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 59186,
-      "date": "2026-10-05"
-    },
     {
       "name": "HOLME TIMOTHY",
       "role": "Chief Technology Officer",
@@ -296,8 +287,8 @@
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 45000,
-      "date": "2026-09-15"
+      "shares": 59186,
+      "date": "2026-10-05"
     },
     {
       "name": "HOLME TIMOTHY",
@@ -314,8 +305,8 @@
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 12723,
-      "date": "2026-08-21"
+      "shares": 45000,
+      "date": "2026-09-15"
     },
     {
       "name": "HOLME TIMOTHY",
@@ -332,8 +323,8 @@
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 21531,
-      "date": "2026-08-19"
+      "shares": 12723,
+      "date": "2026-08-21"
     },
     {
       "name": "HOLME TIMOTHY",
@@ -350,8 +341,8 @@
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 137245,
-      "date": "2026-07-02"
+      "shares": 21531,
+      "date": "2026-08-19"
     },
     {
       "name": "HETTRICH KEVIN",
@@ -360,6 +351,15 @@
       "text": "Sale at price 7.28 per share.",
       "value": 71362,
       "shares": 9800,
+      "date": "2026-07-02"
+    },
+    {
+      "name": "HOLME TIMOTHY",
+      "role": "Chief Technology Officer",
+      "kind": "sell",
+      "text": "Sale at price 7.28 per share.",
+      "value": 999566,
+      "shares": 137245,
       "date": "2026-07-02"
     }
   ],

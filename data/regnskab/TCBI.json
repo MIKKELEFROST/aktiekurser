@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T20:21:51.894Z",
+  "updated_at": "2026-10-22T20:24:49.856Z",
   "source": "Yahoo Finance",
   "symbol": "TCBI",
   "summary": "Texas Capital Bancshares, Inc. operates as the bank holding company for Texas Capital Bank, is a full-service financial services firm that delivers customized solutions to businesses, entrepreneurs, and individual customers. The company offers commercial banking; consumer banking; investment banking solutions, including capital markets, mergers and acquisitions, and syndicated finance, as well as financial sponsor coverage, capital solutions, and institutional services; and wealth management services, such as investment management, financial planning, lockbox and insurance, securities-based lending, estate planning, and business succession, as well as philanthropic, trustee and executor, custom credit, and depository services. It also provides deposit accounts, analyzed accounts, commercial card, SBA and business loans, packaged solutions, and merchant services; liquidity and investments, working capital, international trade and payment, and treasury and credit products; and commercial real estate, homebuilder and community, and mortgage finance. In addition, the company offers payables and receivables management; online and mobile banking; term loans and lines of credit, equipment finance and lease, acquisition finance, and asset-based lending; private wealth advisory solutions; and checking and savings accounts, debit and credit cards, and certificates of deposit, as well as ETF and funds management services. Further, it provides financial institution money market accounts and loan syndication products; commercial loans for financing for working capital, organic growth, and acquisitions; real estate term and construction loans; mortgage warehouse lending services; treasury management, trust, and advisory and escrow services; and letters of credit. The company operates in Austin, Dallas, Fort Worth, Houston, and San Antonio metropolitan areas of Texas, as well as in California and New York. The company was incorporated in 1996 and is headquartered in Dallas, Texas.",
@@ -7,10 +7,10 @@
   "website": "https://texascapitalbank.com",
   "employees": 1785,
   "ceo": "Mr. Robert C. Holmes",
-  "next_earnings": "2026-10-21",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-21",
+  "earnings_estimated": true,
   "earnings_call": "2026-10-21",
-  "eps_estimate": 1.94997,
+  "eps_estimate": 2.01341,
   "analysts": {
     "strong_buy": 2,
     "buy": 2,
@@ -19,8 +19,8 @@
     "strong_sell": 1,
     "total": 13
   },
-  "target_mean": 105.07692,
-  "target_high": 113,
+  "target_mean": 104.84615,
+  "target_high": 110,
   "target_low": 100,
   "target_analysts": 13,
   "statements": [
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 340867000,
-      "earnings": 100897000
-    },
-    {
       "q": "4Q2025",
       "revenue": 327483000,
       "earnings": 96347000
@@ -69,15 +64,34 @@
       "q": "2Q2026",
       "revenue": 335495000,
       "earnings": 80636000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 356626000,
+      "earnings": 99392000
     }
   ],
   "growth": {
-    "q0": -0.105500005,
-    "q1": -0.0229,
-    "y0": 0.0949,
-    "y1": 0.1058
+    "q0": -0.032,
+    "q1": 0.0753,
+    "y0": 0.1507,
+    "y1": 0.0619
   },
   "ratings": [
+    {
+      "date": "2026-10-22",
+      "firm": "RBC Capital",
+      "from": "Sector Perform",
+      "to": "Sector Perform",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-22",
+      "firm": "Piper Sandler",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-10-09",
       "firm": "RBC Capital",
@@ -132,20 +146,6 @@
       "firm": "Citigroup",
       "from": "Neutral",
       "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-23",
-      "firm": "Stephens & Co.",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-01",
-      "firm": "JP Morgan",
-      "from": "Underweight",
-      "to": "Underweight",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.629,
-    "enterprise_value": 1552084992,
+    "enterprise_value": 1657725312,
     "ev_ebitda": null,
-    "ev_revenue": 1.222,
+    "ev_revenue": 1.305,
     "float_shares": 40040277,
     "short_shares": 4487506,
     "short_pct_float": 14.14,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-09-01",
   "dividend_date": null,
   "payout_ratio": 0.025999999,
-  "inst_count": 501,
+  "inst_count": 502,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.77339,
-      "actual": 2.18,
-      "surprise_pct": 22.93
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.76532,
@@ -269,6 +263,12 @@
       "estimate": 1.85639,
       "actual": 1.88,
       "surprise_pct": 1.27
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.94997,
+      "actual": 2.35,
+      "surprise_pct": 20.51
     }
   ],
   "insiders": [

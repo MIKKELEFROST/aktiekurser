@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T20:21:49.708Z",
+  "updated_at": "2026-10-22T20:24:47.776Z",
   "source": "Yahoo Finance",
   "symbol": "BPOP",
   "summary": "Popular, Inc., through its subsidiaries, provides various retail, mortgage, and commercial banking services for individuals and businesses in Puerto Rico, the United States, the British Virgin Islands, the Caribbean, and Latin America. The company offers savings, NOW, money market, and other interest-bearing demand accounts; non-interest bearing demand deposits; checking accounts; individual retirement accounts and educational contribution accounts; business accounts; investment accounts; private management accounts; and certificates of deposit. It also provides commercial and industrial, commercial real estate, commercial multi-family, and residential mortgage loans; consumer loans, including unsecured personal loans, home equity lines of credit, and other loans to individual borrowers; construction loans; lease financing comprising automobile loans and leases; renewable energy and marine loans; and startup program and healthcare hub financing. In addition, the company offers auto and equipment leasing and financing; broker-dealer; international and private banking; insurance services, such as travel, property, auto and boat, health, life, and title; debit and credit cards; family of funds and Keogh plans; mobile easy deposit, foreign exchange, and fiduciary services; retirement plans; wire transfers; coordination of auto, aircraft, and helicopter loans; financial planning; investment advice; ATM; and online banking services. Popular, Inc. was founded in 1893 and is headquartered in Hato Rey, Puerto Rico.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-22",
   "earnings_estimated": false,
   "earnings_call": "2026-10-22",
-  "eps_estimate": 3.88,
+  "eps_estimate": 3.75714,
   "analysts": {
     "strong_buy": 4,
     "buy": 6,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 817700000,
-      "earnings": 210964000
-    },
-    {
       "q": "4Q2025",
       "revenue": 823838000,
       "earnings": 233547000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 873964000,
       "earnings": 277861000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 874588000,
+      "earnings": 265981000
     }
   ],
   "growth": {
-    "q0": 0.2357,
-    "q1": 0.1065,
+    "q0": 0.1065,
+    "q1": 0.081999995,
     "y0": 0.2934,
     "y1": 0.092
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.646,
-    "enterprise_value": 6924417024,
+    "enterprise_value": 7013706752,
     "ev_ebitda": null,
-    "ev_revenue": 2.261,
+    "ev_revenue": 2.29,
     "float_shares": 62008010,
     "short_shares": 1969766,
     "short_pct_float": 3.67,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-09-10",
   "dividend_date": null,
   "payout_ratio": 0.2028,
-  "inst_count": 644,
+  "inst_count": 650,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 2.906,
-      "actual": 3.14,
-      "surprise_pct": 8.05
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 3.04333,
@@ -269,6 +263,12 @@
       "estimate": 3.68333,
       "actual": 4.35,
       "surprise_pct": 18.1
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 3.88,
+      "actual": 4.21,
+      "surprise_pct": 8.51
     }
   ],
   "insiders": [
@@ -291,21 +291,21 @@
       "date": "2026-08-19"
     },
     {
-      "name": "FERRER JAVIER D",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 175.43 per share.",
-      "value": 6140155,
-      "shares": 35000,
-      "date": "2026-08-10"
-    },
-    {
       "name": "SORIANO LIDIO V",
       "role": "Officer",
       "kind": "sell",
       "text": "Sale at price 174.50 per share.",
       "value": 523515,
       "shares": 3000,
+      "date": "2026-08-10"
+    },
+    {
+      "name": "FERRER JAVIER D",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 175.43 per share.",
+      "value": 6140155,
+      "shares": 35000,
       "date": "2026-08-10"
     },
     {

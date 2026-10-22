@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T20:21:50.897Z",
+  "updated_at": "2026-10-22T20:24:48.987Z",
   "source": "Yahoo Finance",
   "symbol": "LOB",
   "summary": "Live Oak Bancshares, Inc. operates as the bank holding company for Live Oak Banking Company that provides various banking products and services in the United States. The company accepts various deposit products, including noninterest-bearing demand, as well as interest-bearing checking, money market, savings, and time deposits. It also provides commercial and industrial loans; construction and development loans; owner occupied and non-owner occupied collateral commercial real estate loans; and commercial land loans. In addition, the company offers settlement, accounting, and securitization services for government guaranteed loans; financing for renewable energy application industry; strategic wealth and investment management services to high-net-worth individuals and families; and investment advisory services to a series of funds focused on providing venture capital to new and emerging financial technology companies. Live Oak Bancshares, Inc. was founded in 2008 and is headquartered in Wilmington, North Carolina.",
@@ -7,10 +7,10 @@
   "website": "https://www.liveoak.bank",
   "employees": 1027,
   "ceo": "Mr. James S. Mahan III",
-  "next_earnings": "2026-10-21",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-20",
+  "earnings_estimated": true,
   "earnings_call": "2026-10-22",
-  "eps_estimate": 0.658,
+  "eps_estimate": 0.9175,
   "analysts": {
     "strong_buy": 1,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 146099000,
-      "earnings": 25562000
-    },
-    {
       "q": "4Q2025",
       "revenue": 172907000,
       "earnings": 46122000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 156145000,
       "earnings": 34701000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 175646000,
+      "earnings": 24260000
     }
   ],
   "growth": {
-    "q0": 0.121700004,
-    "q1": 0.9443,
+    "q0": 0.9443,
+    "q1": 0.3513,
     "y0": 0.5955,
     "y1": 0.44689998
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.943,
-    "enterprise_value": 908794816,
+    "enterprise_value": 908331968,
     "ev_ebitda": null,
-    "ev_revenue": 1.727,
+    "ev_revenue": 1.726,
     "float_shares": 36077619,
     "short_shares": 2211100,
     "short_pct_float": 7.49,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-09-01",
   "dividend_date": null,
   "payout_ratio": 0.0421,
-  "inst_count": 334,
+  "inst_count": 336,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.6,
-      "actual": 0.5866,
-      "surprise_pct": -2.23
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.564,
@@ -269,6 +263,12 @@
       "estimate": 0.676,
       "actual": 0.7389,
       "surprise_pct": 9.3
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.658,
+      "actual": 0.5557,
+      "surprise_pct": -15.55
     }
   ],
   "insiders": [
@@ -280,15 +280,6 @@
       "value": 773797,
       "shares": 20000,
       "date": "2026-09-10"
-    },
-    {
-      "name": "MAHAN JAMES S III",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 39.75 per share.",
-      "value": 397466,
-      "shares": 10000,
-      "date": "2026-09-03"
     },
     {
       "name": "WILLIAMS WILLIAM L III",
@@ -306,6 +297,15 @@
       "text": "Sale at price 39.89 per share.",
       "value": 63824,
       "shares": 1600,
+      "date": "2026-09-03"
+    },
+    {
+      "name": "MAHAN JAMES S III",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 39.75 per share.",
+      "value": 397466,
+      "shares": 10000,
       "date": "2026-09-03"
     },
     {

@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-10-21T20:17:07.043Z",
+  "updated_at": "2026-10-22T20:14:50.178Z",
   "source": "Wikipedia (S&P 500, Nasdaq-100, S&P 400, S&P 600) og Yahoos børsoversigt for de øvrige",
   "counts": {
-    "total": 4475,
+    "total": 4472,
     "markets": {
-      "NO": 212,
-      "SE": 435,
-      "US": 3568,
+      "NO": 211,
+      "SE": 437,
+      "US": 3565,
       "FI": 141,
-      "DK": 93,
+      "DK": 92,
       "IS": 26
     },
     "sp500": 503,
     "ndx": 101,
-    "dk": 93
+    "dk": 92
   },
   "companies": [
     {
@@ -2475,7 +2475,8 @@
       "market": "US",
       "indices": [
         "SP600"
-      ]
+      ],
+      "exchange": "NYQ"
     },
     {
       "symbol": "APMD",
@@ -4807,14 +4808,6 @@
       "exchange": "NYQ"
     },
     {
-      "symbol": "BIO-B",
-      "name": "Bio-Rad Laboratories, Inc.",
-      "sector": null,
-      "market": "US",
-      "exchange": "NYQ",
-      "indices": []
-    },
-    {
       "symbol": "BIOA",
       "name": "BioAge Labs, Inc.",
       "sector": null,
@@ -5293,6 +5286,14 @@
       "sector": null,
       "market": "DK",
       "exchange": "CPH",
+      "indices": []
+    },
+    {
+      "symbol": "BOAT.ST",
+      "name": "Nimbus Group AB (Publ)",
+      "sector": null,
+      "market": "SE",
+      "exchange": "STO",
       "indices": []
     },
     {
@@ -6854,14 +6855,6 @@
       "indices": []
     },
     {
-      "symbol": "CCO",
-      "name": "Clear Channel Outdoor Holdings Inc",
-      "sector": null,
-      "market": "US",
-      "exchange": "NYQ",
-      "indices": []
-    },
-    {
       "symbol": "CCOI",
       "name": "Cogent Communications Holdings, Inc.",
       "sector": "Communication Services",
@@ -6927,6 +6920,14 @@
       "exchange": "NMS"
     },
     {
+      "symbol": "CDON.ST",
+      "name": "CDON AB",
+      "sector": null,
+      "market": "SE",
+      "exchange": "STO",
+      "indices": []
+    },
+    {
       "symbol": "CDP",
       "name": "COPT Defense Properties",
       "sector": "Real Estate",
@@ -6973,14 +6974,6 @@
       "exchange": "NYQ"
     },
     {
-      "symbol": "CECO",
-      "name": "CECO Environmental Corp.",
-      "sector": null,
-      "market": "US",
-      "exchange": "NYQ",
-      "indices": []
-    },
-    {
       "symbol": "CEDER.ST",
       "name": "Cedergrenska AB (publ)",
       "sector": null,
@@ -6993,7 +6986,7 @@
       "name": "Sprott Physical Gold and Silver Trust",
       "sector": null,
       "market": "US",
-      "exchange": "ASE",
+      "exchange": "NYQ",
       "indices": []
     },
     {
@@ -7657,7 +7650,7 @@
       "name": "Cornerstone Strategic Investment Fund, Inc.",
       "sector": null,
       "market": "US",
-      "exchange": "ASE",
+      "exchange": "NYQ",
       "indices": []
     },
     {
@@ -8660,7 +8653,7 @@
       "name": "Cornerstone Total Return Fund, Inc.",
       "sector": null,
       "market": "US",
-      "exchange": "ASE",
+      "exchange": "NYQ",
       "indices": []
     },
     {
@@ -9391,6 +9384,14 @@
       "indices": []
     },
     {
+      "symbol": "CX.ST",
+      "name": "CombinedX AB (publ)",
+      "sector": null,
+      "market": "SE",
+      "exchange": "STO",
+      "indices": []
+    },
+    {
       "symbol": "CXM",
       "name": "Sprinklr, Inc.",
       "sector": "Information Technology",
@@ -9968,7 +9969,7 @@
       "name": "UBS Asset Management High Yield Credit Fund",
       "sector": null,
       "market": "US",
-      "exchange": "NYQ",
+      "exchange": "ASE",
       "indices": []
     },
     {
@@ -10344,14 +10345,6 @@
       "indices": []
     },
     {
-      "symbol": "DONKEY.CO",
-      "name": "DonkeyRepublic Holding A/S",
-      "sector": null,
-      "market": "DK",
-      "exchange": "CPH",
-      "indices": []
-    },
-    {
       "symbol": "DOO",
       "name": "BRP Inc.",
       "sector": null,
@@ -10411,6 +10404,14 @@
       "sector": null,
       "market": "US",
       "exchange": "NMS",
+      "indices": []
+    },
+    {
+      "symbol": "DOXA.ST",
+      "name": "Doxa AB (publ)",
+      "sector": null,
+      "market": "SE",
+      "exchange": "STO",
       "indices": []
     },
     {
@@ -10545,6 +10546,14 @@
       "sector": null,
       "market": "US",
       "exchange": "NMS",
+      "indices": []
+    },
+    {
+      "symbol": "DSU",
+      "name": "BlackRock Debt Strategies Fund, Inc.",
+      "sector": null,
+      "market": "US",
+      "exchange": "NYQ",
       "indices": []
     },
     {
@@ -12731,6 +12740,14 @@
       "exchange": "NMS"
     },
     {
+      "symbol": "FAX",
+      "name": "Abrdn Asia-Pacific Income Fund Inc",
+      "sector": null,
+      "market": "US",
+      "exchange": "NYQ",
+      "indices": []
+    },
+    {
       "symbol": "FBIN",
       "name": "Fortune Brands Innovations",
       "sector": "Industrials",
@@ -13268,14 +13285,6 @@
       "exchange": "NMS"
     },
     {
-      "symbol": "FJET",
-      "name": "Starfighters Space, Inc.",
-      "sector": null,
-      "market": "US",
-      "exchange": "ASE",
-      "indices": []
-    },
-    {
       "symbol": "FLAT-B.ST",
       "name": "Flat Capital AB (publ)",
       "sector": null,
@@ -13308,14 +13317,6 @@
         "SP500"
       ],
       "exchange": "NMS"
-    },
-    {
-      "symbol": "FLEXQ.ST",
-      "name": "FlexQube AB (publ)",
-      "sector": null,
-      "market": "SE",
-      "exchange": "STO",
-      "indices": []
     },
     {
       "symbol": "FLG",
@@ -14249,14 +14250,6 @@
       "exchange": "NYQ"
     },
     {
-      "symbol": "GAPW-B.ST",
-      "name": "Gapwaves AB (publ)",
-      "sector": null,
-      "market": "SE",
-      "exchange": "STO",
-      "indices": []
-    },
-    {
       "symbol": "GARO.ST",
       "name": "Garo Aktiebolag (publ)",
       "sector": null,
@@ -14927,7 +14920,7 @@
       "name": "The Gabelli Global Utility & Income Trust",
       "sector": null,
       "market": "US",
-      "exchange": "NYQ",
+      "exchange": "ASE",
       "indices": []
     },
     {
@@ -15701,14 +15694,6 @@
         "SP400"
       ],
       "exchange": "NYQ"
-    },
-    {
-      "symbol": "GYL.OL",
-      "name": "Gyldendal ASA",
-      "sector": null,
-      "market": "NO",
-      "exchange": "OSL",
-      "indices": []
     },
     {
       "symbol": "GYLD-A.CO",
@@ -17237,6 +17222,14 @@
       "indices": []
     },
     {
+      "symbol": "IAF",
+      "name": "Abrdn Australia Equity Fund Inc",
+      "sector": null,
+      "market": "US",
+      "exchange": "NYQ",
+      "indices": []
+    },
+    {
       "symbol": "IAG",
       "name": "IAMGOLD Corporation",
       "sector": null,
@@ -17313,8 +17306,7 @@
       "market": "US",
       "indices": [
         "SP400"
-      ],
-      "exchange": "ASE"
+      ]
     },
     {
       "symbol": "IBP",
@@ -18391,14 +18383,6 @@
       "sector": "Industrials",
       "market": "DK",
       "exchange": "CPH",
-      "indices": []
-    },
-    {
-      "symbol": "ISSC",
-      "name": "Innovative Solutions and Support Inc",
-      "sector": null,
-      "market": "US",
-      "exchange": "NMS",
       "indices": []
     },
     {
@@ -25244,14 +25228,6 @@
       "exchange": "NMS"
     },
     {
-      "symbol": "NVG",
-      "name": "Nuveen AMT-Free Municipal Credit Income Fund",
-      "sector": null,
-      "market": "US",
-      "exchange": "NYQ",
-      "indices": []
-    },
-    {
       "symbol": "NVGS",
       "name": "Navigator Holdings Ltd.",
       "sector": null,
@@ -26025,6 +26001,14 @@
     {
       "symbol": "ONCO.ST",
       "name": "Oncopeptides AB (publ)",
+      "sector": null,
+      "market": "SE",
+      "exchange": "STO",
+      "indices": []
+    },
+    {
+      "symbol": "ONEF.ST",
+      "name": "Oneflow AB (publ)",
       "sector": null,
       "market": "SE",
       "exchange": "STO",
@@ -27523,7 +27507,7 @@
       "name": "Sprott Physical Gold Trust",
       "sector": null,
       "market": "US",
-      "exchange": "ASE",
+      "exchange": "NYQ",
       "indices": []
     },
     {
@@ -28753,14 +28737,6 @@
       "sector": null,
       "market": "US",
       "exchange": "NYQ",
-      "indices": []
-    },
-    {
-      "symbol": "QLIRO.ST",
-      "name": "Qliro AB (publ)",
-      "sector": null,
-      "market": "SE",
-      "exchange": "STO",
       "indices": []
     },
     {
@@ -30950,14 +30926,6 @@
       "indices": []
     },
     {
-      "symbol": "SCOR",
-      "name": "comScore, Inc.",
-      "sector": null,
-      "market": "US",
-      "exchange": "NMS",
-      "indices": []
-    },
-    {
       "symbol": "SCSC",
       "name": "ScanSource, Inc.",
       "sector": "Information Technology",
@@ -31334,6 +31302,14 @@
       "sector": null,
       "market": "US",
       "exchange": "NYQ",
+      "indices": []
+    },
+    {
+      "symbol": "SGG.ST",
+      "name": "Sensys Gatso Group AB (publ)",
+      "sector": null,
+      "market": "SE",
+      "exchange": "STO",
       "indices": []
     },
     {
@@ -35582,6 +35558,14 @@
       "exchange": "NYQ"
     },
     {
+      "symbol": "UAC",
+      "name": "United Acquisition Corp. I",
+      "sector": null,
+      "market": "US",
+      "exchange": "ASE",
+      "indices": []
+    },
+    {
       "symbol": "UAL",
       "name": "United Airlines Holdings",
       "sector": "Industrials",
@@ -36109,7 +36093,7 @@
       "name": "Reaves Utility Income Fund",
       "sector": null,
       "market": "US",
-      "exchange": "NYQ",
+      "exchange": "ASE",
       "indices": []
     },
     {
@@ -36715,7 +36699,7 @@
       "name": "Invesco Advantage Municipal Income Trust II",
       "sector": null,
       "market": "US",
-      "exchange": "ASE",
+      "exchange": "NYQ",
       "indices": []
     },
     {
@@ -38428,14 +38412,6 @@
       "sector": null,
       "market": "US",
       "exchange": "NMS",
-      "indices": []
-    },
-    {
-      "symbol": "XSPRAY.ST",
-      "name": "Xspray Pharma AB (publ)",
-      "sector": null,
-      "market": "SE",
-      "exchange": "STO",
       "indices": []
     },
     {

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T20:21:49.922Z",
+  "updated_at": "2026-10-22T20:24:47.989Z",
   "source": "Yahoo Finance",
   "symbol": "COCO",
   "summary": "The Vita Coco Company, Inc. develops, manufactures, markets, and distributes coconut water products under the Vita Coco brand name in the United States, Canada, Europe, the Middle East, Africa, and the Asia Pacific. It offers coconut water, oil, and juice products; Vita Coco Treats, a plant-based dairy alternative; Vita Coco Pressed, Vita Coco Coconut Juice, and Farmers Organic; Vita Coco Coconut MLK; and PWR LIFT, a protein-infused fitness drink. The company also supplies private label products to retailers. It distributes its products through club, food, drug, mass, convenience, e-commerce, and foodservice channels. The company was formerly known as All Market Inc. and changed its name to The Vita Coco Company, Inc. in September 2021. The Vita Coco Company, Inc. was incorporated in 2004 and is headquartered in New York, New York.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-22",
   "earnings_estimated": false,
   "earnings_call": "2026-10-22",
-  "eps_estimate": 0.53,
+  "eps_estimate": 0.22,
   "analysts": {
     "strong_buy": 1,
     "buy": 8,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 12
   },
-  "target_mean": 78.6,
+  "target_mean": 79.1,
   "target_high": 90,
   "target_low": 65,
   "target_analysts": 10,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 182313000,
-      "earnings": 24003000
-    },
-    {
       "q": "4Q2025",
       "revenue": 127787000,
       "earnings": 5527000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 216153000,
       "earnings": 49451000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 243825000,
+      "earnings": 35017000
     }
   ],
   "growth": {
-    "q0": 0.3099,
-    "q1": 0.5204,
+    "q0": 0.5204,
+    "q1": 0.028399998,
     "y0": 0.53,
     "y1": 0.1527
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.751,
-    "enterprise_value": 3280839680,
-    "ev_ebitda": 24.017,
-    "ev_revenue": 4.647,
+    "enterprise_value": 3380136704,
+    "ev_ebitda": 24.744,
+    "ev_revenue": 4.788,
     "float_shares": 51889832,
     "short_shares": 7370657,
     "short_pct_float": 15.88,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 492,
+  "inst_count": 494,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.33,
-      "actual": 0.4046,
-      "surprise_pct": 22.61
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.12333,
@@ -269,6 +263,12 @@
       "estimate": 0.55333,
       "actual": 0.87714,
       "surprise_pct": 58.52
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.53,
+      "actual": 0.6567,
+      "surprise_pct": 23.91
     }
   ],
   "insiders": [
@@ -291,6 +291,15 @@
       "date": "2026-06-12"
     },
     {
+      "name": "BURTH JONATHAN",
+      "role": "Chief Operating Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 10.18 per share.",
+      "value": 305340,
+      "shares": 30000,
+      "date": "2026-06-11"
+    },
+    {
       "name": "LIRAN IRA",
       "role": "Director",
       "kind": "sell",
@@ -305,15 +314,6 @@
       "kind": "sell",
       "text": "Sale at price 80.00 per share.",
       "value": 2400000,
-      "shares": 30000,
-      "date": "2026-06-11"
-    },
-    {
-      "name": "BURTH JONATHAN",
-      "role": "Chief Operating Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 10.18 per share.",
-      "value": 305340,
       "shares": 30000,
       "date": "2026-06-11"
     },

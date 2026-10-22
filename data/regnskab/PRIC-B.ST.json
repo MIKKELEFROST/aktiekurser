@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T20:21:51.467Z",
+  "updated_at": "2026-10-22T20:24:49.486Z",
   "source": "Yahoo Finance",
   "symbol": "PRIC-B.ST",
   "summary": "Pricer AB (publ) provides in-store digital solutions in Europe, the Middle East and Africa, the Americas, and Asia and Pacific. The company provides electronic shelf labels, such as Pricer SmartTAG Color, Pricer Avenue, and Pricer HangTAG; Pricer Plaza, a cloud-based platform for scalable management, monitoring, and integration of a digital in-store system; and The Pricer platform, an in-store digital platform. It also offers attachment solutions for furniture, rails, adapters, and holders of shelf-edge; Pricer Shelf Vision, an artificial intelligence powered cloud cameras to monitor in-stores; and Pricer StoreLink provides optical access point to supports direct connection to Pricer Plaza. The company markets and sells its products through direct sales and resellers. Pricer AB (publ) was incorporated in 1991 and is headquartered in Stockholm, Sweden.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-22",
   "earnings_estimated": false,
   "earnings_call": "2026-10-22",
-  "eps_estimate": 0.15,
+  "eps_estimate": null,
   "analysts": null,
   "target_mean": 5.625,
   "target_high": 5.7,
@@ -44,11 +44,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 598400000,
-      "earnings": 32200000
-    },
-    {
       "q": "4Q2025",
       "revenue": 572600000,
       "earnings": 0
@@ -62,11 +57,16 @@
       "q": "2Q2026",
       "revenue": 486400000,
       "earnings": 20000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 504200000,
+      "earnings": 43800000
     }
   ],
   "growth": {
-    "q0": -0.25,
-    "q1": -0.0687,
+    "q0": null,
+    "q1": -1.5,
     "y0": 26.083302,
     "y1": -0.089700006
   },
@@ -139,9 +139,9 @@
   },
   "extras": {
     "beta": 0.739,
-    "enterprise_value": 660316032,
-    "ev_ebitda": 4.733,
-    "ev_revenue": 0.308,
+    "enterprise_value": 643975616,
+    "ev_ebitda": 4.616,
+    "ev_revenue": 0.3,
     "float_shares": 123677220,
     "short_shares": null,
     "short_pct_float": null,
@@ -154,12 +154,6 @@
   "payout_ratio": 0,
   "inst_count": 18,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.18,
-      "actual": 0.2,
-      "surprise_pct": 11.11
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.09,
@@ -177,6 +171,12 @@
       "estimate": -0.02,
       "actual": 0.166,
       "surprise_pct": 930
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.15,
+      "actual": 0.30296,
+      "surprise_pct": 101.97
     }
   ],
   "insiders": [],

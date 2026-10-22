@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T20:21:51.796Z",
+  "updated_at": "2026-10-22T20:24:49.754Z",
   "source": "Yahoo Finance",
   "symbol": "SPOT",
   "summary": "Spotify Technology S.A., together with its subsidiaries, provides audio streaming subscription services worldwide. It operates in two segments, Premium and Ad-Supported. The Premium segment offers online and offline streaming access to its catalog of music and podcasts, including video, lossless music, and audiobooks in select markets through subscription offerings primarily sold directly to end users and partners. The Ad-Supported segment provides limited on-demand online access to its catalog of music and online and offline access to its catalog of podcasts on computers, tablets, mobile devices, and other smart devices. The company also offers sales, distribution and marketing, contract research and development, and customer and other support services. Spotify Technology S.A. was incorporated in 2006 and is headquartered in Stockholm, Sweden.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-22",
   "earnings_estimated": false,
   "earnings_call": "2026-10-22",
-  "eps_estimate": 2.84094,
+  "eps_estimate": 3.33041,
   "analysts": {
     "strong_buy": 9,
     "buy": 22,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 40
   },
-  "target_mean": 600.73376,
-  "target_high": 720.0809,
-  "target_low": 409.75955,
+  "target_mean": 599.7231,
+  "target_high": 718.8694,
+  "target_low": 409.07013,
   "target_analysts": 37,
   "statements": [
     {
@@ -51,16 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 4193000000,
-      "earnings": -86000000
-    },
-    {
-      "q": "3Q2025",
-      "revenue": 4272000000,
-      "earnings": 899000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 4531000000,
       "earnings": 1174000000
@@ -69,11 +59,21 @@
       "q": "1Q2026",
       "revenue": 4533000000,
       "earnings": 721000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 4777000000,
+      "earnings": 545000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 4969000000,
+      "earnings": 518000000
     }
   ],
   "growth": {
-    "q0": -0.1339,
-    "q1": -0.2482,
+    "q0": -0.2482,
+    "q1": 0.0174,
     "y0": 0.1626,
     "y1": 0.25370002
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.614,
-    "enterprise_value": 101634736128,
-    "ev_ebitda": 37.881,
-    "ev_revenue": 5.611,
+    "enterprise_value": 101482602496,
+    "ev_ebitda": 37.824,
+    "ev_revenue": 5.603,
     "float_shares": 157105394,
     "short_shares": 4257291,
     "short_pct_float": 2.7,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 1851,
+  "inst_count": 1849,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 2.13499,
-      "actual": 3.28,
-      "surprise_pct": 53.63
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 2.84267,
@@ -269,24 +263,30 @@
       "estimate": 2.79603,
       "actual": 2.61,
       "surprise_pct": -6.65
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 2.84094,
+      "actual": 2.48,
+      "surprise_pct": -12.7
     }
   ],
   "insiders": [
     {
       "name": "SODERSTROM GUSTAV STIG VICTOR",
       "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 151.25 per share.",
-      "value": 3162638,
+      "kind": "sell",
+      "text": "Sale at price 527.05 - 533.97 per share.",
+      "value": 11085113,
       "shares": 20910,
       "date": "2026-10-12"
     },
     {
       "name": "SODERSTROM GUSTAV STIG VICTOR",
       "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 527.05 - 533.97 per share.",
-      "value": 11085113,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 151.25 per share.",
+      "value": 3162638,
       "shares": 20910,
       "date": "2026-10-12"
     },
@@ -302,15 +302,6 @@
     {
       "name": "SODERSTROM GUSTAV STIG VICTOR",
       "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 151.25 per share.",
-      "value": 3163091,
-      "shares": 20913,
-      "date": "2026-09-14"
-    },
-    {
-      "name": "SODERSTROM GUSTAV STIG VICTOR",
-      "role": "Chief Executive Officer",
       "kind": "sell",
       "text": "Sale at price 537.19 - 549.49 per share.",
       "value": 11380738,
@@ -318,13 +309,13 @@
       "date": "2026-09-14"
     },
     {
-      "name": "JENKINS DUSTEE",
-      "role": "Officer",
+      "name": "SODERSTROM GUSTAV STIG VICTOR",
+      "role": "Chief Executive Officer",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 151.25 per share.",
-      "value": 260452,
-      "shares": 1722,
-      "date": "2026-08-14"
+      "value": 3163091,
+      "shares": 20913,
+      "date": "2026-09-14"
     },
     {
       "name": "JENKINS DUSTEE",
@@ -336,20 +327,20 @@
       "date": "2026-08-14"
     },
     {
-      "name": "NORSTROM ALEX",
-      "role": "Chief Executive Officer",
+      "name": "JENKINS DUSTEE",
+      "role": "Officer",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 151.25 per share.",
-      "value": 822195,
-      "shares": 5436,
-      "date": "2026-08-03"
+      "value": 260452,
+      "shares": 1722,
+      "date": "2026-08-14"
     },
     {
       "name": "SODERSTROM GUSTAV STIG VICTOR",
       "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 151.25 per share.",
-      "value": 3150991,
+      "kind": "sell",
+      "text": "Sale at price 500.03 - 511.64 per share.",
+      "value": 10567336,
       "shares": 20833,
       "date": "2026-08-03"
     },
@@ -359,6 +350,15 @@
       "kind": "sell",
       "text": "Sale at price 499.96 - 506.04 per share.",
       "value": 2729435,
+      "shares": 5436,
+      "date": "2026-08-03"
+    },
+    {
+      "name": "NORSTROM ALEX",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 151.25 per share.",
+      "value": 822195,
       "shares": 5436,
       "date": "2026-08-03"
     }

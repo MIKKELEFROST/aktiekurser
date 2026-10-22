@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T21:18:00.755Z",
+  "updated_at": "2026-10-22T20:24:49.194Z",
   "source": "Yahoo Finance",
   "symbol": "NLG1V.HE",
   "summary": "Nurminen Logistics Oyj provides logistics services in Finland, Sweden, and Baltic countries. The company offers rail transport, handling hall for heavy goods, terminal, and forwarding and customs clearance services, as well as multimodal transport services. It also provides warehousing and transport of dangerous substances. Nurminen Logistics Oyj was founded in 1886 and is headquartered in Helsinki, Finland.",
@@ -10,7 +10,7 @@
   "next_earnings": null,
   "earnings_estimated": true,
   "earnings_call": null,
-  "eps_estimate": -0.02,
+  "eps_estimate": 0.01,
   "analysts": {
     "strong_buy": 0,
     "buy": 0,
@@ -51,16 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 27926000,
-      "earnings": 1473000
-    },
-    {
-      "q": "3Q2025",
-      "revenue": 23847000,
-      "earnings": 961000
-    },
-    {
       "q": "4Q2025",
       "revenue": 25200000,
       "earnings": -1032000
@@ -69,11 +59,21 @@
       "q": "1Q2026",
       "revenue": 25500000,
       "earnings": 606000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 28151000,
+      "earnings": -528000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 26327000,
+      "earnings": -3261000
     }
   ],
   "growth": {
-    "q0": -3,
-    "q1": -0.5475,
+    "q0": -0.5475,
+    "q1": null,
     "y0": -0.8613,
     "y1": 5
   },
@@ -89,9 +89,9 @@
   },
   "extras": {
     "beta": -0.024,
-    "enterprise_value": 74224552,
-    "ev_ebitda": 5.072,
-    "ev_revenue": 0.723,
+    "enterprise_value": 73578664,
+    "ev_ebitda": 5.028,
+    "ev_revenue": 0.716,
     "float_shares": 22662793,
     "short_shares": null,
     "short_pct_float": null,
@@ -104,12 +104,6 @@
   "payout_ratio": 1,
   "inst_count": 3,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.03,
-      "actual": 0.01,
-      "surprise_pct": -66.67
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.02,
@@ -127,6 +121,12 @@
       "estimate": 0.02,
       "actual": -0.01,
       "surprise_pct": -150
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.02,
+      "actual": -0.04,
+      "surprise_pct": -100
     }
   ],
   "insiders": [],
