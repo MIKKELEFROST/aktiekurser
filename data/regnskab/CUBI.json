@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T20:24:48.075Z",
+  "updated_at": "2026-10-23T20:11:26.714Z",
   "source": "Yahoo Finance",
   "symbol": "CUBI",
   "summary": "Customers Bancorp, Inc. operates as the bank holding company for Customers Bank that provides banking products and services for commercial and consumer clients. It accepts various deposit banking products, including commercial and consumer checking accounts, non-interest-bearing and interest-bearing demand accounts, MMDA, savings accounts, and time deposit accounts. The company also offers commercial lending services comprising small and middle market business banking, specialized lending, mortgage finance, multifamily and commercial real estate lending, and commercial equipment financing; and consumer lending services, such as local-market mortgage and home equity lending, and the origination and purchase of installment loans. In addition, it provides private and digital banking services; and other financial services consisting of mobile phone banking, internet banking, wire transfers, electronic bill payment, lock box services, remote deposit capture services, courier services, merchant processing services, cash vault, controlled disbursements, positive pay, and cash management services, as well as B2B instant payments platform. The company was founded in 1997 and is headquartered in West Reading, Pennsylvania.",
@@ -7,10 +7,10 @@
   "website": "https://www.customersbank.com",
   "employees": 885,
   "ceo": "Mr. Samvir S. Sidhu",
-  "next_earnings": "2026-10-22",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-21",
+  "earnings_estimated": true,
   "earnings_call": "2026-10-23",
-  "eps_estimate": 2.13115,
+  "eps_estimate": 2.25212,
   "analysts": {
     "strong_buy": 3,
     "buy": 4,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 202272000,
-      "earnings": 73726000
-    },
-    {
       "q": "4Q2025",
       "revenue": 204776000,
       "earnings": 70088000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 194156000,
       "earnings": 71560000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 208750000,
+      "earnings": 78383000
     }
   ],
   "growth": {
-    "q0": -0.0313,
-    "q1": 0.0933,
+    "q0": 0.0933,
+    "q1": 0.1091,
     "y0": 0.1028,
     "y1": 0.13949999
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.532,
-    "enterprise_value": 773432704,
+    "enterprise_value": 855189504,
     "ev_ebitda": null,
-    "ev_revenue": 0.935,
+    "ev_revenue": 1.034,
     "float_shares": 31801366,
     "short_shares": 2573400,
     "short_pct_float": 11.17,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 408,
+  "inst_count": 409,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.93,
-      "actual": 2.2,
-      "surprise_pct": 13.99
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 2.04375,
@@ -269,6 +263,12 @@
       "estimate": 1.99039,
       "actual": 2.05,
       "surprise_pct": 2.99
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 2.13115,
+      "actual": 2.27,
+      "surprise_pct": 6.52
     }
   ],
   "insiders": [
@@ -298,24 +298,6 @@
       "value": 2469134,
       "shares": 31179,
       "date": "2026-07-30"
-    },
-    {
-      "name": "GILL MIKE",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 78.21 per share.",
-      "value": 48881,
-      "shares": 625,
-      "date": "2026-06-15"
-    },
-    {
-      "name": "BANKS BERNARD BENNETT",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 78.21 per share.",
-      "value": 68903,
-      "shares": 881,
-      "date": "2026-06-15"
     },
     {
       "name": "MACKAY ROBERT NEIL",
@@ -360,6 +342,24 @@
       "text": "Stock Award(Grant) at price 78.21 per share.",
       "value": 48881,
       "shares": 625,
+      "date": "2026-06-15"
+    },
+    {
+      "name": "GILL MIKE",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 78.21 per share.",
+      "value": 48881,
+      "shares": 625,
+      "date": "2026-06-15"
+    },
+    {
+      "name": "BANKS BERNARD BENNETT",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 78.21 per share.",
+      "value": 68903,
+      "shares": 881,
       "date": "2026-06-15"
     }
   ],

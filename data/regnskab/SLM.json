@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T20:24:49.706Z",
+  "updated_at": "2026-10-23T20:11:28.445Z",
   "source": "Yahoo Finance",
   "symbol": "SLM",
   "summary": "SLM Corporation, through its subsidiaries, originates and services private education loans to students and their families to finance the cost of their education in the United States. It provides retail deposit accounts, including high-yield savings accounts, money market accounts, and certificates of deposit; and interest-bearing omnibus accounts. The company was formerly known as New BLC Corporation and changed its name to SLM Corporation in December 2013. SLM Corporation was founded in 1972 and is headquartered in Newark, Delaware.",
@@ -7,10 +7,10 @@
   "website": "https://www.salliemae.com",
   "employees": 1788,
   "ceo": "Mr. Jonathan W. Witter",
-  "next_earnings": "2026-10-22",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-21",
+  "earnings_estimated": true,
   "earnings_call": "2026-10-22",
-  "eps_estimate": 0.19645,
+  "eps_estimate": 1.02832,
   "analysts": {
     "strong_buy": 2,
     "buy": 5,
@@ -19,7 +19,7 @@
     "strong_sell": 1,
     "total": 11
   },
-  "target_mean": 28.36364,
+  "target_mean": 27.81818,
   "target_high": 35,
   "target_low": 22,
   "target_analysts": 11,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 372977000,
-      "earnings": 131856000
-    },
-    {
       "q": "4Q2025",
       "revenue": 377000000,
       "earnings": 229382000
@@ -69,15 +64,55 @@
       "q": "2Q2026",
       "revenue": 332821000,
       "earnings": 54944000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 339322000,
+      "earnings": -35904000
     }
   ],
   "growth": {
-    "q0": -0.6882,
-    "q1": -0.051,
-    "y0": -0.1,
-    "y1": 0.081499994
+    "q0": -0.08189999,
+    "q1": -0.28129998,
+    "y0": -0.1712,
+    "y1": 0.14050001
   },
   "ratings": [
+    {
+      "date": "2026-10-23",
+      "firm": "Morgan Stanley",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-23",
+      "firm": "RBC Capital",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-23",
+      "firm": "Wells Fargo",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-23",
+      "firm": "Barclays",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-23",
+      "firm": "TD Cowen",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-12",
       "firm": "Morgan Stanley",
@@ -108,41 +143,6 @@
     },
     {
       "date": "2026-07-13",
-      "firm": "JP Morgan",
-      "from": "Underweight",
-      "to": "Underweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-10",
-      "firm": "RBC Capital",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-07",
-      "firm": "Barclays",
-      "from": "Overweight",
-      "to": "Equal-Weight",
-      "action": "down"
-    },
-    {
-      "date": "2026-04-24",
-      "firm": "Barclays",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-04-16",
-      "firm": "Morgan Stanley",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
-      "action": "main"
-    },
-    {
-      "date": "2026-04-09",
       "firm": "JP Morgan",
       "from": "Underweight",
       "to": "Underweight",
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.976,
-    "enterprise_value": 5741949952,
+    "enterprise_value": 5540846592,
     "ev_ebitda": null,
-    "ev_revenue": 3.406,
+    "ev_revenue": 3.286,
     "float_shares": 185751738,
     "short_shares": 17074682,
     "short_pct_float": 10.45,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.14479999,
   "inst_count": 511,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.79456,
-      "actual": 0.63,
-      "surprise_pct": -20.71
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.93598,
@@ -269,6 +263,12 @@
       "estimate": 0.4406,
       "actual": 0.29,
       "surprise_pct": -34.18
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.19753,
+      "actual": -0.19,
+      "surprise_pct": -196.19
     }
   ],
   "insiders": [

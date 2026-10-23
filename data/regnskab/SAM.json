@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T20:24:49.591Z",
+  "updated_at": "2026-10-23T20:11:28.330Z",
   "source": "Yahoo Finance",
   "symbol": "SAM",
   "summary": "The Boston Beer Company, Inc. produces and sells alcohol beverages primarily in the United States. Its flagship beer is Samuel Adams Boston Lager. The company offers various beers, hard ciders, spirits based ready to drink beverages, distilled spirits, flavored malt beverages, and hard seltzers under the Samuel Adams, Twisted Tea, Truly, Angry Orchard, Dogfish Head, and Sun Cruiser brand names. It markets and sells its products to a network wholesaler in the United States, as well as wholesalers, importers, or other agencies that in turn sell to retailers, such as grocery stores, club stores, convenience stores, liquor stores, bars, restaurants, stadiums, and other traditional and e-commerce retail outlets. It sells its products in Canada, Mexico, and internationally. The Boston Beer Company, Inc. was founded in 1984 and is based in Boston, Massachusetts.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-22",
   "earnings_estimated": false,
   "earnings_call": "2026-10-22",
-  "eps_estimate": 4.21013,
+  "eps_estimate": -0.77035,
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 14
   },
-  "target_mean": 194.3077,
+  "target_mean": 194.92308,
   "target_high": 295,
   "target_low": 153,
   "target_analysts": 13,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 537494000,
-      "earnings": 46155000
-    },
-    {
       "q": "4Q2025",
       "revenue": 385684000,
       "earnings": -22531000
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 568338000,
       "earnings": 51567000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 520101000,
+      "earnings": 43166000
     }
   ],
   "growth": {
-    "q0": -0.0094,
-    "q1": 0.6188,
-    "y0": -0.099,
-    "y1": 0.1325
+    "q0": 0.6366,
+    "q1": 0.1513,
+    "y0": -0.090299994,
+    "y1": 0.1154
   },
   "ratings": [
     {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.819,
-    "enterprise_value": 1598768384,
-    "ev_ebitda": 8.098,
-    "ev_revenue": 0.83,
+    "enterprise_value": 1738990464,
+    "ev_ebitda": 8.808,
+    "ev_revenue": 0.903,
     "float_shares": 6778951,
     "short_shares": 1589429,
     "short_pct_float": 24.53,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 437,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 3.3366,
-      "actual": 4.25,
-      "surprise_pct": 27.38
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -2.5114,
@@ -269,6 +263,12 @@
       "estimate": 4.82577,
       "actual": 3.65,
       "surprise_pct": -24.36
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 4.21013,
+      "actual": 4.37,
+      "surprise_pct": 3.8
     }
   ],
   "insiders": [

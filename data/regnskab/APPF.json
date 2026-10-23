@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T20:24:47.535Z",
+  "updated_at": "2026-10-23T20:11:26.111Z",
   "source": "Yahoo Finance",
   "symbol": "APPF",
   "summary": "AppFolio, Inc., together with its subsidiaries, provides cloud-based platform for the real estate industry in the United States. The company provides a cloud-based platform that assist with accounting, reporting, marketing, leasing, maintenance, workflow automation, and communication services. It offers AppFolio Property Manager Core, a platform that provides the accounting functionalities for small property management companies, as well as serves as a system of record; AppFolio Property Manager Plus, which offers affordable housing and student housing, advanced accounting, advanced data analysis, and read-only API access services; and AppFolio Property Manager Max that provides customer relationship management tools and full database access through a read and write application programming interface services. The company also provides value-added services, such as electronic payment, tenant screening, maintenance, business optimization, resident, and risk mitigation services. It serves property managers, property investors, potential residents, residents, and vendors. AppFolio, Inc. was incorporated in 2006 and is headquartered in Santa Barbara, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-22",
   "earnings_estimated": false,
   "earnings_call": "2026-10-22",
-  "eps_estimate": 1.78893,
+  "eps_estimate": 1.70334,
   "analysts": {
     "strong_buy": 2,
     "buy": 5,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 9
   },
-  "target_mean": 241.28625,
+  "target_mean": 243.41125,
   "target_high": 280,
   "target_low": 217.29,
   "target_analysts": 8,
@@ -51,16 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 235575000,
-      "earnings": 35980000
-    },
-    {
-      "q": "3Q2025",
-      "revenue": 249353000,
-      "earnings": 33646000
-    },
-    {
       "q": "4Q2025",
       "revenue": 248192000,
       "earnings": 39914000
@@ -69,15 +59,39 @@
       "q": "1Q2026",
       "revenue": 262214000,
       "earnings": 42424000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 281124000,
+      "earnings": 41544000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 295691000,
+      "earnings": 45978000
     }
   ],
   "growth": {
-    "q0": 0.36560002,
-    "q1": 0.2974,
-    "y0": 0.3042,
-    "y1": 0.2201
+    "q0": 0.22540002,
+    "q1": 0.1972,
+    "y0": 0.2935,
+    "y1": 0.2157
   },
   "ratings": [
+    {
+      "date": "2026-10-23",
+      "firm": "UBS",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-23",
+      "firm": "Guggenheim",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-21",
       "firm": "Keefe, Bruyette & Woods",
@@ -132,20 +146,6 @@
       "firm": "JP Morgan",
       "from": "Overweight",
       "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-01-30",
-      "firm": "DA Davidson",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-01-30",
-      "firm": "Keefe, Bruyette & Woods",
-      "from": "Outperform",
-      "to": "Outperform",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.892,
-    "enterprise_value": 7506660864,
-    "ev_ebitda": 38.555,
-    "ev_revenue": 7.212,
+    "enterprise_value": 7511264768,
+    "ev_ebitda": 38.579,
+    "ev_revenue": 7.216,
     "float_shares": 23188567,
     "short_shares": 2441935,
     "short_pct_float": 10.16,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 546,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.45225,
-      "actual": 1.31,
-      "surprise_pct": -9.8
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.25437,
@@ -269,6 +263,12 @@
       "estimate": 1.69056,
       "actual": 1.71,
       "surprise_pct": 1.15
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.78893,
+      "actual": 1.82,
+      "surprise_pct": 1.74
     }
   ],
   "insiders": [

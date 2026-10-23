@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T20:24:47.653Z",
+  "updated_at": "2026-10-23T20:11:26.244Z",
   "source": "Yahoo Finance",
   "symbol": "BBD",
   "summary": "Banco Bradesco S.A., together with its subsidiaries, provides various banking products and services in Brazil and internationally. The company operates in two segments, Banking and Insurance. It engages in banking operations, including investment, national, international, and private banking, as well as investment fund management, consortium administration, middle market and corporate activities, and leasing. The company also provides retail banking products, such as demand, savings, and time deposits, as well as mutual funds, foreign exchange services, and various loans and advances comprising overdrafts, credit cards, and loans with repayments in installments; and fund management and treasury services, corporate finance, and hedge and finance operations, which include working capital financing. In addition, it provides insurance products, such as life, pension, health, and non-life, as well as related insurance operations, supplemental pension plans, and capitalization bonds. Further, the company offers cards, consortia, service packages and fees, auctions, debt renegotiation, and accounts; and various services comprising related transactions and inquiries, profile and help, purchases and benefits, and permissions. It serves individuals, corporates, and businesses. The company was incorporated in 1943 and is headquartered in Osasco, Brazil.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-22",
   "earnings_estimated": false,
   "earnings_call": "2026-10-23",
-  "eps_estimate": 0.12791,
+  "eps_estimate": 0.12299,
   "analysts": {
     "strong_buy": 2,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 35008000000,
-      "earnings": 6205000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 35978000000,
       "earnings": 6476000000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 37477000000,
       "earnings": 7050000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 37886000000,
+      "earnings": 7109000000
     }
   ],
   "growth": {
-    "q0": 0.1588,
-    "q1": 0.1741,
+    "q0": 0.1741,
+    "q1": -0.0067000003,
     "y0": 0.10569999,
     "y1": 0.0705
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.188,
-    "enterprise_value": 602629406720,
+    "enterprise_value": 601572311040,
     "ev_ebitda": null,
-    "ev_revenue": 6.461,
+    "ev_revenue": 6.449,
     "float_shares": 7475818960,
     "short_shares": 13410830,
     "short_pct_float": 0.26,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.96099997,
   "inst_count": 399,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.11082,
-      "actual": 0.11038,
-      "surprise_pct": -0.4
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.11166,
@@ -269,6 +263,12 @@
       "estimate": 0.13266,
       "actual": 0.12508,
       "surprise_pct": -5.71
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.12791,
+      "actual": 0.1269,
+      "surprise_pct": -0.79
     }
   ],
   "insiders": [

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T20:24:49.081Z",
+  "updated_at": "2026-10-23T20:11:27.785Z",
   "source": "Yahoo Finance",
   "symbol": "MRTN",
   "summary": "Marten Transport, Ltd. operates as a temperature-sensitive truckload carrier for shippers in the United States, Mexico, and Canada. It operates through Truckload, Dedicated, and Brokerage segments. The Truckload segment transports food and other consumer packaged goods that require a temperature-controlled or insulated environment, as well as dry freight; and regional short-haul and medium-to-long-haul full-load transportation services. The Dedicated segment offers customized transportation solutions for individual customers' requirements using temperature-controlled trailers, dry vans, and other specialized equipment. The Brokerage segment develops contractual relationships with and arranges for third-party carriers to transport freight for customers in temperature-controlled trailers and dry vans. As of December 31, 2025, the company operated a fleet of 2,654 tractors that included 2,577 company-owned tractors and 77 tractors supplied by independent contractors. Marten Transport, Ltd. was founded in 1946 and is headquartered in Mondovi, Wisconsin.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-22",
   "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": 0.06,
+  "eps_estimate": 0.1,
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 220470000,
-      "earnings": 2226000
-    },
-    {
       "q": "4Q2025",
       "revenue": 210108000,
       "earnings": 3697000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 223543000,
       "earnings": 5339000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 223231000,
+      "earnings": 2909000
     }
   ],
   "growth": {
     "q0": 1,
-    "q1": 1,
+    "q1": 4,
     "y0": 0.1667,
     "y1": 1.4489999
   },
   "ratings": [
+    {
+      "date": "2026-10-23",
+      "firm": "Stephens & Co.",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
     {
       "date": "2026-07-24",
       "firm": "Stephens & Co.",
@@ -140,13 +147,6 @@
       "from": "Buy",
       "to": "Hold",
       "action": "down"
-    },
-    {
-      "date": "2022-01-26",
-      "firm": "Stephens & Co.",
-      "from": null,
-      "to": "Overweight",
-      "action": "main"
     }
   ],
   "holders": [
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.011,
-    "enterprise_value": 930214720,
-    "ev_ebitda": 8.161,
-    "ev_revenue": 1.085,
+    "enterprise_value": 900816512,
+    "ev_ebitda": 7.903,
+    "ev_revenue": 1.05,
     "float_shares": 57590259,
     "short_shares": 3153388,
     "short_pct_float": 8.68,
@@ -246,12 +246,6 @@
   "payout_ratio": 1.6,
   "inst_count": 321,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.04122,
-      "actual": 0.03,
-      "surprise_pct": -27.22
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.02509,
@@ -269,6 +263,12 @@
       "estimate": 0.075,
       "actual": 0.07,
       "surprise_pct": -6.67
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.06,
+      "actual": 0.04,
+      "surprise_pct": -33.33
     }
   ],
   "insiders": [

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T20:24:47.678Z",
+  "updated_at": "2026-10-23T20:11:26.272Z",
   "source": "Yahoo Finance",
   "symbol": "BE",
   "summary": "Bloom Energy Corporation designs, manufactures, sells, and installs solid oxide fuel cell systems for on-site power generation in the United States and internationally. It offers Bloom Energy Server, an energy server platform to convert fuel, such as natural gas, biogas, hydrogen, or a blend of these fuels, into electricity through a non-combustion electrochemical process. The company also provides Bloom Electrolyzer for producing hydrogen. It sells its products through direct and indirect sales channels to utilities, data centers, retail, healthcare, education, telecom, manufacturing, and other industries. The company was formerly known as Ion America Corp. and changed its name to Bloom Energy Corporation in 2006. Bloom Energy Corporation was incorporated in 2001 and is headquartered in San Jose, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-22",
   "earnings_estimated": false,
   "earnings_call": "2026-10-22",
-  "eps_estimate": 0.67232,
+  "eps_estimate": 1.09333,
   "analysts": {
     "strong_buy": 5,
     "buy": 10,
@@ -19,7 +19,7 @@
     "strong_sell": 1,
     "total": 29
   },
-  "target_mean": 286.7,
+  "target_mean": 285.08463,
   "target_high": 380,
   "target_low": 97,
   "target_analysts": 26,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 519048000,
-      "earnings": -23093000
-    },
-    {
       "q": "4Q2025",
       "revenue": 777683000,
       "earnings": 1091000
@@ -69,15 +64,62 @@
       "q": "2Q2026",
       "revenue": 1065365000,
       "earnings": 196290000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1235837000,
+      "earnings": 250271000
     }
   ],
   "growth": {
-    "q0": 3.4821,
-    "q1": 0.84300005,
-    "y0": 2.5629,
-    "y1": 0.82379997
+    "q0": 1.4296001,
+    "q1": 1.1130999,
+    "y0": 3.1365,
+    "y1": 0.6104
   },
   "ratings": [
+    {
+      "date": "2026-10-23",
+      "firm": "JP Morgan",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-23",
+      "firm": "RBC Capital",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "reit"
+    },
+    {
+      "date": "2026-10-23",
+      "firm": "Keybanc",
+      "from": "Sector Weight",
+      "to": "Sector Weight",
+      "action": "reit"
+    },
+    {
+      "date": "2026-10-23",
+      "firm": "Morgan Stanley",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-23",
+      "firm": "Bernstein",
+      "from": "Market Perform",
+      "to": "Market Perform",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-23",
+      "firm": "BTIG",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-16",
       "firm": "Truist Securities",
@@ -101,48 +143,6 @@
     },
     {
       "date": "2026-10-07",
-      "firm": "Bernstein",
-      "from": "Market Perform",
-      "to": "Market Perform",
-      "action": "reit"
-    },
-    {
-      "date": "2026-10-02",
-      "firm": "Barclays",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
-      "action": "main"
-    },
-    {
-      "date": "2026-10-01",
-      "firm": "Barclays",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
-      "action": "main"
-    },
-    {
-      "date": "2026-09-29",
-      "firm": "Jefferies",
-      "from": "Hold",
-      "to": "Hold",
-      "action": "main"
-    },
-    {
-      "date": "2026-09-28",
-      "firm": "RBC Capital",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-09-14",
-      "firm": "Mizuho",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-27",
       "firm": "Bernstein",
       "from": "Market Perform",
       "to": "Market Perform",
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 3.776,
-    "enterprise_value": 70380445696,
-    "ev_ebitda": 168.181,
-    "ev_revenue": 22.607,
+    "enterprise_value": 64266055680,
+    "ev_ebitda": 153.57,
+    "ev_revenue": 20.643,
     "float_shares": 289219963,
     "short_shares": 20982242,
     "short_pct_float": 8.11,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 1753,
+  "inst_count": 1761,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.10201,
-      "actual": 0.15,
-      "surprise_pct": 47.04
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.29925,
@@ -269,6 +263,12 @@
       "estimate": 0.40661,
       "actual": 0.78,
       "surprise_pct": 91.83
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.67552,
+      "actual": 0.94,
+      "surprise_pct": 39.15
     }
   ],
   "insiders": [
@@ -327,12 +327,12 @@
       "date": "2026-08-17"
     },
     {
-      "name": "JOSHI AMAN",
+      "name": "SODERBERG SHAWN MARIE",
       "role": "Officer",
       "kind": "sell",
-      "text": "Sale at price 241.75 per share.",
-      "value": 1130665,
-      "shares": 4677,
+      "text": "Sale at price 233.60 per share.",
+      "value": 676272,
+      "shares": 2895,
       "date": "2026-08-14"
     },
     {
@@ -345,12 +345,12 @@
       "date": "2026-08-14"
     },
     {
-      "name": "SODERBERG SHAWN MARIE",
+      "name": "JOSHI AMAN",
       "role": "Officer",
       "kind": "sell",
-      "text": "Sale at price 233.60 per share.",
-      "value": 676272,
-      "shares": 2895,
+      "text": "Sale at price 241.75 per share.",
+      "value": 1130665,
+      "shares": 4677,
       "date": "2026-08-14"
     },
     {

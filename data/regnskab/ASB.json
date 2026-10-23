@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T20:24:47.568Z",
+  "updated_at": "2026-10-23T20:11:26.145Z",
   "source": "Yahoo Finance",
   "symbol": "ASB",
   "summary": "Associated Banc-Corp, a bank holding company, provides various banking and nonbanking products and services to individuals and businesses in Wisconsin, Illinois, Missouri, Texas, and Minnesota. It offers lending solutions, including commercial loans and lines of credit, commercial real estate financing, construction loans, letters of credit, leasing, asset-based lending and equipment finance, loan syndications products, residential mortgages, home equity loans and lines of credit, personal and installment loans, auto finance and business loans, and business lines of credit. The company also provides deposit and cash management solutions, such as commercial checking and interest-bearing deposit products, cash vault and night depository services, liquidity solutions, payables and receivables solutions, and information services; specialized financial services comprising interest rate risk management and foreign exchange solutions; fiduciary services consisting of administration of pension, profit-sharing and other employee benefit plans, fiduciary and corporate agency services, and institutional asset management services; and investable funds solutions, including savings, money market deposit accounts, IRA accounts, CDs, fixed and variable annuities, full-service, discount, and online investment brokerage; investment advisory services; and trust and investment management accounts. In addition, it offers deposit and transactional solutions, including checking, credit and debit cards, online banking and bill pay, and money transfer services. The company operates loan production offices in Indiana, Kansas, Michigan, New York, Ohio, and Texas. Associated Banc-Corp was founded in 1861 and is headquartered in Green Bay, Wisconsin.",
@@ -7,10 +7,10 @@
   "website": "https://www.associatedbank.com",
   "employees": 4129,
   "ceo": "Mr. Andrew John Harmening",
-  "next_earnings": "2026-10-22",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-21",
+  "earnings_estimated": true,
   "earnings_call": "2026-10-22",
-  "eps_estimate": 0.7589,
+  "eps_estimate": 0.81011,
   "analysts": {
     "strong_buy": 2,
     "buy": 2,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 10
   },
-  "target_mean": 34.2,
+  "target_mean": 34.4,
   "target_high": 36,
   "target_low": 33,
   "target_analysts": 10,
@@ -51,16 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 366977000,
-      "earnings": 108355000
-    },
-    {
-      "q": "3Q2025",
-      "revenue": 386487000,
-      "earnings": 121857000
-    },
-    {
       "q": "4Q2025",
       "revenue": 389365000,
       "earnings": 134254000
@@ -69,15 +59,39 @@
       "q": "1Q2026",
       "revenue": 383047000,
       "earnings": 116760000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 450437000,
+      "earnings": 120689000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 464382000,
+      "earnings": 143711000
     }
   ],
   "growth": {
-    "q0": 0.0396,
-    "q1": -0.0034,
-    "y0": 0.0575,
-    "y1": 0.1367
+    "q0": 0.0126,
+    "q1": 0.1443,
+    "y0": 0.0738,
+    "y1": 0.1254
   },
   "ratings": [
+    {
+      "date": "2026-10-23",
+      "firm": "Piper Sandler",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-23",
+      "firm": "RBC Capital",
+      "from": "Sector Perform",
+      "to": "Sector Perform",
+      "action": "main"
+    },
     {
       "date": "2026-10-05",
       "firm": "Barclays",
@@ -132,20 +146,6 @@
       "firm": "Truist Securities",
       "from": "Hold",
       "to": "Hold",
-      "action": "main"
-    },
-    {
-      "date": "2026-04-24",
-      "firm": "Keefe, Bruyette & Woods",
-      "from": "Market Perform",
-      "to": "Market Perform",
-      "action": "main"
-    },
-    {
-      "date": "2026-04-24",
-      "firm": "Piper Sandler",
-      "from": "Neutral",
-      "to": "Neutral",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.81,
-    "enterprise_value": 9523291136,
+    "enterprise_value": 9640771584,
     "ev_ebitda": null,
-    "ev_revenue": 6.121,
+    "ev_revenue": 6.196,
     "float_shares": 160893926,
     "short_shares": 8887235,
     "short_pct_float": 5.26,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.33099997,
   "inst_count": 541,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.67522,
-      "actual": 0.73,
-      "surprise_pct": 8.11
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.70033,
@@ -269,6 +263,12 @@
       "estimate": 0.71925,
       "actual": 0.63,
       "surprise_pct": -12.41
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.7589,
+      "actual": 0.76,
+      "surprise_pct": 0.14
     }
   ],
   "insiders": [

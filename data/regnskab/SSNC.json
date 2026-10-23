@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T20:24:49.778Z",
+  "updated_at": "2026-10-23T20:11:28.517Z",
   "source": "Yahoo Finance",
   "symbol": "SSNC",
   "summary": "SS&C Technologies Holdings, Inc., together with its subsidiaries, provides software products and software-enabled services to financial services and healthcare industries in the Americas, Europe, the Middle East, Africa, and Asia Pacific. The company owns and operates technology stack across securities accounting; front-office functions, such as trading and modeling; middle-office functions comprising portfolio management and reporting; back-office functions, such as accounting, performance measurement, reconciliation, reporting, processing and clearing, and compliance and tax reporting; and healthcare solutions consisting of claims adjudication, benefit management, care management, and business intelligence solutions. It also offers software-enabled services, such as SS&C GlobeOp, Global Investor and Distribution Solutions, SS&C Retirement Solutions, Calastone, Managed Services, Data Solutions, ALPS Advisors, and Virtual Data Rooms, as well as pharmacy, healthcare administration, and health outcomes optimization solutions. In addition, the company provides portfolio management, operations, and accounting software; trading software; intelligent automation solutions; banking and lending solutions, as well as research, analytics, risk, and training solutions. The company also provides professional services that includes consulting and implementation services consisting of initial system installation, conversion of historical data, and ongoing training and support, as well as product support services. SS&C Technologies Holdings, Inc. was founded in 1986 and is headquartered in Windsor, Connecticut.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-22",
   "earnings_estimated": false,
   "earnings_call": "2026-10-22",
-  "eps_estimate": 1.76722,
+  "eps_estimate": 1.91167,
   "analysts": {
     "strong_buy": 2,
     "buy": 5,
@@ -19,8 +19,8 @@
     "strong_sell": 0,
     "total": 10
   },
-  "target_mean": 96.33333,
-  "target_high": 112,
+  "target_mean": 96.11111,
+  "target_high": 110,
   "target_low": 82,
   "target_analysts": 9,
   "statements": [
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 1569000000,
-      "earnings": 210000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 1654600000,
       "earnings": 193100000
@@ -69,18 +64,37 @@
       "q": "2Q2026",
       "revenue": 1696900000,
       "earnings": 234800000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1691100000,
+      "earnings": 198900000
     }
   ],
   "growth": {
-    "q0": 0.12560001,
-    "q1": 0.1221,
-    "y0": 0.1506,
-    "y1": 0.0941
+    "q0": 0.1312,
+    "q1": 0.098900005,
+    "y0": 0.1517,
+    "y1": 0.0881
   },
   "ratings": [
     {
+      "date": "2026-10-23",
+      "firm": "Needham",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
       "date": "2026-10-22",
       "firm": "DA Davidson",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-21",
+      "firm": "Jefferies",
       "from": "Buy",
       "to": "Buy",
       "action": "main"
@@ -130,20 +144,6 @@
     {
       "date": "2026-07-15",
       "firm": "DA Davidson",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-04-27",
-      "firm": "DA Davidson",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-04-24",
-      "firm": "UBS",
       "from": "Buy",
       "to": "Buy",
       "action": "main"
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.089,
-    "enterprise_value": 27848321024,
-    "ev_ebitda": 13.198,
-    "ev_revenue": 4.242,
+    "enterprise_value": 28423225344,
+    "ev_ebitda": 13.47,
+    "ev_revenue": 4.33,
     "float_shares": 200108288,
     "short_shares": 4652542,
     "short_pct_float": 3.32,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.31120002,
   "inst_count": 1019,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.47358,
-      "actual": 1.57,
-      "surprise_pct": 6.54
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.60897,
@@ -269,6 +263,12 @@
       "estimate": 1.67899,
       "actual": 1.76,
       "surprise_pct": 4.82
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.76722,
+      "actual": 1.78,
+      "surprise_pct": 0.72
     }
   ],
   "insiders": [
@@ -309,15 +309,6 @@
       "date": "2026-05-20"
     },
     {
-      "name": "BOULANGER NORMAND A",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 2580,
-      "date": "2026-05-20"
-    },
-    {
       "name": "MICHAEL JONATHAN E",
       "role": "Director",
       "kind": "other",
@@ -328,6 +319,15 @@
     },
     {
       "name": "VARSANO DAVID A",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 2580,
+      "date": "2026-05-20"
+    },
+    {
+      "name": "BOULANGER NORMAND A",
       "role": "Director",
       "kind": "other",
       "text": null,

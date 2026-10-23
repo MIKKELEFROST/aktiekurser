@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T20:24:50.045Z",
+  "updated_at": "2026-10-23T20:11:28.808Z",
   "source": "Yahoo Finance",
   "symbol": "VTMX",
   "summary": "Corporación Inmobiliaria Vesta, S.A.B. de C.V., together with its subsidiaries, acquires, develops, manages, operates industrial buildings and distribution facilities in Mexico. It offers rental income from operating leases, including reimbursable building services and energy income. The company serves corporations in diverse industries, such as food and beverage, automotive, aerospace, medical, logistics, and plastics. Corporación Inmobiliaria Vesta, S.A.B. de C.V. was incorporated in 1996 and is headquartered in Mexico City, Mexico.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-22",
   "earnings_estimated": false,
   "earnings_call": "2026-10-23",
-  "eps_estimate": 0.47056,
+  "eps_estimate": 0.51231,
   "analysts": {
     "strong_buy": 0,
     "buy": 2,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 1333778080,
-      "earnings": 459775550
-    },
-    {
       "q": "4Q2025",
       "revenue": 1319152960,
       "earnings": 3009533520
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 1366125770,
       "earnings": 1772423320
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1488615940,
+      "earnings": 2070039100
     }
   ],
   "growth": {
-    "q0": 0.796,
-    "q1": -0.6257,
+    "q0": -0.6257,
+    "q1": -0.1277,
     "y0": -0.028499998,
     "y1": -0.025999999
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.257,
-    "enterprise_value": 4132368640,
-    "ev_ebitda": 17.976,
-    "ev_revenue": 13.582,
+    "enterprise_value": 4094325248,
+    "ev_ebitda": 17.811,
+    "ev_revenue": 13.457,
     "float_shares": 73302065,
     "short_shares": 232016,
     "short_pct_float": null,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.18110001,
   "inst_count": 94,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.49359,
-      "actual": 0.262,
-      "surprise_pct": -46.92
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.49467,
@@ -269,6 +263,12 @@
       "estimate": 0.48414,
       "actual": 0.5599,
       "surprise_pct": 15.65
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.47056,
+      "actual": 0.5375,
+      "surprise_pct": 14.23
     }
   ],
   "insiders": [],

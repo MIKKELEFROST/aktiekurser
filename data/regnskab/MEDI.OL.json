@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T20:24:49.069Z",
+  "updated_at": "2026-10-23T20:11:27.775Z",
   "source": "Yahoo Finance",
   "symbol": "MEDI.OL",
   "summary": "Medistim ASA develops, produces, services, leases, and distributes medical devices for cardiac and vascular surgery in the United States, Asia, Europe, and internationally. The company offers MiraQ Cardiac, a system that combines ultrasound imaging and transit time flow measurement (TTFM) in a single system for cardiac surgery; MiraQ Vascular, a system that combines ultrasound imaging and TTFM in a single system for vascular surgery; MiraQ Ultimate that combines TTFM and ultrasound imaging in a single system for cardiac, vascular, and transplant surgery; and ultrasound imaging probes for intraoperative use. It also provides QuickFit TTFM probes, which are designed to hold the vessel and ensure precise measurements on various types of vessel grafts; Vascular TTFM probes for locking slide mechanism designed to secure the vessel while minimizing the manipulation; ultrasound imaging probes; and Doppler probes that are used to search for intramural coronary arteries or to locate the position and quantify the degree of a stenosis. In addition, the company distributes and sells third party medical equipment. Medistim ASA was founded in 1984 and is headquartered in Oslo, Norway.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-23",
   "earnings_estimated": false,
   "earnings_call": "2026-10-23",
-  "eps_estimate": 2.09,
+  "eps_estimate": null,
   "analysts": {
     "strong_buy": 0,
     "buy": 2,
@@ -19,8 +19,8 @@
     "strong_sell": 0,
     "total": 2
   },
-  "target_mean": 332.5,
-  "target_high": 340,
+  "target_mean": 342.5,
+  "target_high": 360,
   "target_low": 325,
   "target_analysts": 2,
   "statements": [
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 166849000,
-      "earnings": 34712000
-    },
-    {
       "q": "4Q2025",
       "revenue": 182295000,
       "earnings": 38088000
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 202031000,
       "earnings": 52204000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 209987000,
+      "earnings": 47802000
     }
   ],
   "growth": {
     "q0": null,
-    "q1": 0.12020001,
-    "y0": 0.0913,
-    "y1": 0.0963
+    "q1": null,
+    "y0": 0.1711,
+    "y1": 0.0559
   },
   "ratings": [],
   "holders": [],
@@ -89,9 +89,9 @@
   },
   "extras": {
     "beta": 0.949,
-    "enterprise_value": 5184732160,
-    "ev_ebitda": 23.645,
-    "ev_revenue": 6.887,
+    "enterprise_value": 5074974208,
+    "ev_ebitda": 23.145,
+    "ev_revenue": 6.741,
     "float_shares": 11349526,
     "short_shares": null,
     "short_pct_float": null,
@@ -109,6 +109,12 @@
       "estimate": 2.22,
       "actual": 2.85,
       "surprise_pct": 28.38
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 2.09,
+      "actual": 2.61,
+      "surprise_pct": 24.88
     }
   ],
   "insiders": [],

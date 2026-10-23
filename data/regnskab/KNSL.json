@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T20:24:48.886Z",
+  "updated_at": "2026-10-23T20:11:27.590Z",
   "source": "Yahoo Finance",
   "symbol": "KNSL",
   "summary": "Kinsale Capital Group, Inc. engages in the provision of property and casualty insurance products in the United States. The company's commercial lines offerings include commercial property, excess casualty, general casualty, small business casualty, construction, allied health, small business property, products liability, entertainment, commercial auto, energy, excess professional, life sciences, inland marine, professional liability, environmental, health care, management liability, public entity, agribusiness casualty and property, aviation, ocean marine, and product recall insurance. Its personal lines offerings also include high value homeowners and personal insurance products. The company sells its insurance products in all 50 states, the District of Columbia, the Commonwealth of Puerto Rico, and the U.S. Virgin Islands primarily through a network of independent insurance brokers. Kinsale Capital Group, Inc. was founded in 2009 and is headquartered in Richmond, Virginia.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-22",
   "earnings_estimated": false,
   "earnings_call": "2026-10-23",
-  "eps_estimate": 5.10696,
+  "eps_estimate": 5.69919,
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 497505000,
-      "earnings": 141646000
-    },
-    {
       "q": "4Q2025",
       "revenue": 483271000,
       "earnings": 138620000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 548519000,
       "earnings": 175874000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 454798000,
+      "earnings": 98129000
     }
   ],
   "growth": {
-    "q0": -0.0198,
-    "q1": -0.0191,
+    "q0": -0.0191,
+    "q1": -0.0066000004,
     "y0": 0.097600006,
     "y1": 0.0134000005
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.871,
-    "enterprise_value": 8594656256,
-    "ev_ebitda": 11.737,
-    "ev_revenue": 4.306,
+    "enterprise_value": 8912188416,
+    "ev_ebitda": 12.171,
+    "ev_revenue": 4.465,
     "float_shares": 21516500,
     "short_shares": 2340972,
     "short_pct_float": 10.88,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.0341,
   "inst_count": 761,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 4.82486,
-      "actual": 5.21,
-      "surprise_pct": 7.98
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 5.30507,
@@ -269,6 +263,12 @@
       "estimate": 5.11295,
       "actual": 5.54,
       "surprise_pct": 8.35
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 5.10696,
+      "actual": 5.7,
+      "surprise_pct": 11.61
     }
   ],
   "insiders": [
@@ -284,19 +284,19 @@
     {
       "name": "ALLIBHAI SALMAAN K.",
       "role": "Chief Technology Officer",
-      "kind": "sell",
-      "text": "Sale at price 311.17 per share.",
-      "value": 77792,
-      "shares": 250,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 16.00 per share.",
+      "value": 9600,
+      "shares": 600,
       "date": "2026-05-26"
     },
     {
       "name": "ALLIBHAI SALMAAN K.",
       "role": "Chief Technology Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 16.00 per share.",
-      "value": 9600,
-      "shares": 600,
+      "kind": "sell",
+      "text": "Sale at price 311.17 per share.",
+      "value": 77792,
+      "shares": 250,
       "date": "2026-05-26"
     },
     {
@@ -320,18 +320,18 @@
     {
       "name": "KEHOE MICHAEL P",
       "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 300.76 - 306.06 per share.",
-      "value": 6832838,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 16.00 per share.",
+      "value": 361216,
       "shares": 22576,
       "date": "2026-05-05"
     },
     {
       "name": "KEHOE MICHAEL P",
       "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 16.00 per share.",
-      "value": 361216,
+      "kind": "sell",
+      "text": "Sale at price 300.76 - 306.06 per share.",
+      "value": 6832838,
       "shares": 22576,
       "date": "2026-05-05"
     },

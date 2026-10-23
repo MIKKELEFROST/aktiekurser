@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T20:24:49.255Z",
+  "updated_at": "2026-10-23T20:11:27.957Z",
   "source": "Yahoo Finance",
   "symbol": "NTST",
   "summary": "NETSTREIT Corp. is an internally managed real estate investment trust based in Dallas, Texas that specializes in acquiring single-tenant net lease retail properties nationwide. The growing portfolio consists of high-quality properties leased to e-commerce resistant tenants with healthy balance sheets. Led by a management team of seasoned commercial real estate executives, NETSTREIT's strategy is to create the highest quality net lease retail portfolio in the country with the goal of generating consistent cash flows and dividends for its investors. NETSTREIT Corp. was incorporated in 2019 in Maryland and is based in Dallas, Texas.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-21",
   "earnings_estimated": false,
   "earnings_call": "2026-10-22",
-  "eps_estimate": null,
+  "eps_estimate": 0.12,
   "analysts": {
     "strong_buy": 2,
     "buy": 14,
@@ -19,8 +19,8 @@
     "strong_sell": 0,
     "total": 20
   },
-  "target_mean": 22.01316,
-  "target_high": 25,
+  "target_mean": 21.64474,
+  "target_high": 24,
   "target_low": 19,
   "target_analysts": 19,
   "statements": [
@@ -71,8 +71,20 @@
       "earnings": 8477000
     }
   ],
-  "growth": null,
+  "growth": {
+    "q0": 1.4736999,
+    "q1": null,
+    "y0": null,
+    "y1": null
+  },
   "ratings": [
+    {
+      "date": "2026-10-23",
+      "firm": "Cantor Fitzgerald",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-10-22",
       "firm": "Stifel",
@@ -135,83 +147,76 @@
       "from": "Outperform",
       "to": "Outperform",
       "action": "main"
-    },
-    {
-      "date": "2026-06-26",
-      "firm": "BTIG",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
     }
   ],
   "holders": [
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 18.87,
+      "pct": 15.25,
       "shares": 19156666,
       "date": "2026-06-30"
     },
     {
       "name": "Cohen & Steers Inc.",
       "kind": "institution",
-      "pct": 16.05,
+      "pct": 12.97,
       "shares": 16295578,
       "date": "2026-06-30"
     },
     {
       "name": "Principal Financial Group, Inc.",
       "kind": "institution",
-      "pct": 9.48,
+      "pct": 7.66,
       "shares": 9620485,
       "date": "2026-06-30"
     },
     {
       "name": "COHEN & STEERS REAL ESTATE SECURITIES Fd. INC-Cohen & Steers Real Esta",
       "kind": "fond",
-      "pct": 9.25,
+      "pct": 7.47,
       "shares": 9389654,
       "date": "2026-06-30"
     },
     {
       "name": "Vanguard Portfolio Management LLC",
       "kind": "institution",
-      "pct": 5.85,
+      "pct": 4.72,
       "shares": 5935181,
       "date": "2026-06-30"
     },
     {
       "name": "Nuveen, LLC",
       "kind": "institution",
-      "pct": 5.23,
+      "pct": 4.23,
       "shares": 5313467,
       "date": "2026-06-30"
     },
     {
       "name": "State Street Corporation",
       "kind": "institution",
-      "pct": 5.11,
+      "pct": 4.13,
       "shares": 5191937,
       "date": "2026-06-30"
     },
     {
       "name": "Goldman Sachs Group Inc",
       "kind": "institution",
-      "pct": 4.88,
+      "pct": 3.95,
       "shares": 4958565,
       "date": "2026-06-30"
     },
     {
       "name": "Millennium Management Llc",
       "kind": "institution",
-      "pct": 4.53,
+      "pct": 3.66,
       "shares": 4600699,
       "date": "2026-06-30"
     },
     {
       "name": "Principal Funds, Inc-Real Estate Securities Fund",
       "kind": "fond",
-      "pct": 4.26,
+      "pct": 3.45,
       "shares": 4329750,
       "date": "2026-07-31"
     }
@@ -225,21 +230,21 @@
     "net_pct": -0.2
   },
   "extras": {
-    "beta": 0.801,
-    "enterprise_value": 3047968000,
-    "ev_ebitda": 17.258,
-    "ev_revenue": 13.908,
-    "float_shares": 100868066,
+    "beta": null,
+    "enterprise_value": 3301126144,
+    "ev_ebitda": 17.356,
+    "ev_revenue": 13.922,
+    "float_shares": 124816354,
     "short_shares": 10117461,
     "short_pct_float": 11.54,
     "short_ratio": 6.6,
     "last_split": null,
     "last_split_date": null
   },
-  "ex_dividend": "2026-09-01",
+  "ex_dividend": "2026-12-01",
   "dividend_date": null,
   "payout_ratio": 4.1905,
-  "inst_count": 402,
+  "inst_count": 403,
   "eps_history": [
     {
       "quarter": "2025-12-31",

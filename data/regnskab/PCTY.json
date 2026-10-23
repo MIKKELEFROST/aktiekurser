@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T20:24:49.401Z",
+  "updated_at": "2026-10-23T20:11:28.118Z",
   "source": "Yahoo Finance",
   "symbol": "PCTY",
   "summary": "Paylocity Holding Corporation provides cloud-based human capital management, finance, and IT software solutions in the United States. The company offers payroll solutions comprising payroll and tax services, global payroll, on-demand payment, garnishments, and elevate payroll; human resources (HR) solutions consisting of human resources, employee self-service, workflows and documents, HR compliance dashboard, and elevate HR and HR edge; time and labor solutions, including time and attendance, scheduling, and time collection; and talent solutions, such as recruiting, onboarding, learning, performance, compensation, and market pay. It also provides benefits solutions comprising benefit enrollment and updates, third-party administrative solutions, and retirement; employee experiences consisting of community, video, employee voice, recognition and rewards, data insights, and reporting; and Paylocity for finance solutions, such as headcount planning, expense management, accounts payable automation, corporate cards, and guided procurement. In addition, the company offers Paylocity for IT which includes access management and identity, and asset management; and implementation and training, client services, and tax and regulatory services. It serves for-profit and non-profit organizations across industries, including business services, financial services, healthcare, manufacturing, restaurants, retail, technology, and others. The company markets and sells its products through sales representatives. Paylocity Holding Corporation was founded in 1997 and is headquartered in Schaumburg, Illinois.",
@@ -14,12 +14,12 @@
   "analysts": {
     "strong_buy": 3,
     "buy": 15,
-    "hold": 3,
+    "hold": 2,
     "sell": 0,
-    "strong_sell": 0,
+    "strong_sell": 1,
     "total": 21
   },
-  "target_mean": 174.1,
+  "target_mean": 175.1,
   "target_high": 250,
   "target_low": 128,
   "target_analysts": 20,
@@ -78,6 +78,13 @@
     "y1": 0.1097
   },
   "ratings": [
+    {
+      "date": "2026-10-23",
+      "firm": "Guggenheim",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-20",
       "firm": "Citizens",
@@ -139,13 +146,6 @@
       "firm": "UBS",
       "from": "Neutral",
       "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-06-29",
-      "firm": "Truist Securities",
-      "from": "Buy",
-      "to": "Buy",
       "action": "main"
     }
   ],
@@ -224,19 +224,19 @@
   "insider_net": {
     "period": "6m",
     "buys": 15,
-    "sells": 26,
+    "sells": 27,
     "bought": 382159,
-    "sold": 175746,
-    "net_pct": 2
+    "sold": 186363,
+    "net_pct": 1.9
   },
   "extras": {
     "beta": 0.501,
-    "enterprise_value": 8845190144,
-    "ev_ebitda": 20.667,
-    "ev_revenue": 4.994,
-    "float_shares": 42506586,
+    "enterprise_value": 9287685120,
+    "ev_ebitda": 21.701,
+    "ev_revenue": 5.243,
+    "float_shares": 42511892,
     "short_shares": 2997506,
-    "short_pct_float": 7.05,
+    "short_pct_float": 7.17,
     "short_ratio": 4.46,
     "last_split": null,
     "last_split_date": null
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 630,
+  "inst_count": 633,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "SAROWITZ STEVEN I",
+      "role": "Director and Beneficial Owner of more than 10% of a Class of Security",
+      "kind": "sell",
+      "text": "Sale at price 168.76 - 171.37 per share.",
+      "value": 1802346,
+      "shares": 10617,
+      "date": "2026-10-20"
+    },
     {
       "name": "SAROWITZ STEVEN I",
       "role": "Director and Beneficial Owner of more than 10% of a Class of Security",
@@ -318,21 +327,21 @@
       "date": "2026-08-28"
     },
     {
-      "name": "ROBINSON KENNETH B.",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 158.41 per share.",
-      "value": 126728,
-      "shares": 800,
-      "date": "2026-08-27"
-    },
-    {
       "name": "SAROWITZ STEVEN I",
       "role": "Director and Beneficial Owner of more than 10% of a Class of Security",
       "kind": "sell",
       "text": "Sale at price 155.53 - 158.31 per share.",
       "value": 3070333,
       "shares": 19459,
+      "date": "2026-08-27"
+    },
+    {
+      "name": "ROBINSON KENNETH B.",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 158.41 per share.",
+      "value": 126728,
+      "shares": 800,
       "date": "2026-08-27"
     },
     {
@@ -352,15 +361,6 @@
       "value": 68355,
       "shares": 441,
       "date": "2026-08-24"
-    },
-    {
-      "name": "SAROWITZ STEVEN I",
-      "role": "Director and Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "sell",
-      "text": "Sale at price 150.63 - 154.13 per share.",
-      "value": 1015099,
-      "shares": 6660,
-      "date": "2026-08-20"
     }
   ],
   "dividends": [],

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T20:24:49.617Z",
+  "updated_at": "2026-10-23T20:11:28.361Z",
   "source": "Yahoo Finance",
   "symbol": "SCANFL.HE",
   "summary": "Scanfil Oyj operates as a contract manufacturer and system supplier for the electronics industry worldwide. The company provides manufacturing services, including electronics manufacturing, mechanics assembly, system integration, and production outsourcing; product development, designing, rapid prototyping, and test development; and product maintenance services comprising distribution, repair and refurbishment, cost improvement, and supply chain, as well as material procurement and logistics solutions. It also offers automation system modules, frequency converters, elevator control systems, analyzers, vending machines, and devices related to medical technology and meteorology. The company serves customers in the industrial, energy and cleantech, and medtech and life science sectors. The company was incorporated in 1976 and is headquartered in Sievi, Finland.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-23",
   "earnings_estimated": false,
   "earnings_call": "2026-10-23",
-  "eps_estimate": 0.18333,
+  "eps_estimate": 0.22,
   "analysts": {
     "strong_buy": 1,
     "buy": 0,
@@ -23,13 +23,59 @@
   "target_high": 14,
   "target_low": 12.3,
   "target_analysts": 3,
-  "statements": null,
-  "quarterly": [],
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 843800000,
+      "net": 35000000,
+      "margin": 4.1
+    },
+    {
+      "year": "2023",
+      "revenue": 901600000,
+      "net": 48200000,
+      "margin": 5.3
+    },
+    {
+      "year": "2024",
+      "revenue": 779900000,
+      "net": 38600000,
+      "margin": 4.9
+    },
+    {
+      "year": "2025",
+      "revenue": 797100000,
+      "net": 40900000,
+      "margin": 5.1
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "4Q2025",
+      "revenue": 211000000,
+      "earnings": 12900000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 229100000,
+      "earnings": 9800000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 259000000,
+      "earnings": 11000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 252200000,
+      "earnings": 11600000
+    }
+  ],
   "growth": {
-    "q0": 0.16770001,
-    "q1": 0.22219999,
-    "y0": 0.19049999,
-    "y1": 0.14930001
+    "q0": 0.22219999,
+    "q1": 0.3194,
+    "y0": 0.1716,
+    "y1": 0.16780001
   },
   "ratings": [],
   "holders": [
@@ -114,9 +160,9 @@
   },
   "extras": {
     "beta": 0.641,
-    "enterprise_value": 985774208,
-    "ev_ebitda": 14.139,
-    "ev_revenue": 1.107,
+    "enterprise_value": 983146304,
+    "ev_ebitda": 14.101,
+    "ev_revenue": 1.104,
     "float_shares": 21588611,
     "short_shares": null,
     "short_pct_float": null,
@@ -129,12 +175,6 @@
   "payout_ratio": 0.38459998,
   "inst_count": 34,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.16,
-      "actual": 0.157,
-      "surprise_pct": -1.88
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.175,
@@ -152,6 +192,12 @@
       "estimate": 0.2,
       "actual": 0.1745,
       "surprise_pct": -12.75
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.18333,
+      "actual": 0.1765,
+      "surprise_pct": -3.73
     }
   ],
   "insiders": [],

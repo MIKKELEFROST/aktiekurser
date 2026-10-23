@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T20:24:49.616Z",
+  "updated_at": "2026-10-23T20:11:28.358Z",
   "source": "Yahoo Finance",
   "symbol": "SBUX",
   "summary": "Starbucks Corporation, together with its subsidiaries, operates as a roaster, marketer, and retailer of coffee internationally. The company operates through three segments: North America, International, and Channel Development. Its stores offer coffee, tea, and other beverages, roasted whole beans and ground coffees, complementary food, packaged coffees, single-serve products, and ready-to-drink beverages; and various food products, such as pastries, breakfast sandwiches, and lunch items. The company also licenses its trademarks through licensed stores, and grocery and foodservice accounts. The company offers its products under the Starbucks Coffee, Teavana, Seattle's Best Coffee, Ethos, and Starbucks Reserve brands. Starbucks Corporation was founded in 1971 and is based in Seattle, Washington.",
@@ -10,13 +10,13 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 0.70575,
+  "eps_estimate": 0.70503,
   "analysts": {
     "strong_buy": 2,
     "buy": 12,
-    "hold": 19,
+    "hold": 18,
     "sell": 1,
-    "strong_sell": 1,
+    "strong_sell": 2,
     "total": 35
   },
   "target_mean": 110.51724,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.35720003,
+    "q0": 0.35580003,
     "q1": 0.3447,
-    "y0": 0.2244,
-    "y1": 0.2007
+    "y0": 0.2243,
+    "y1": 0.2001
   },
   "ratings": [
+    {
+      "date": "2026-10-23",
+      "firm": "Mizuho",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-10-21",
       "firm": "Wells Fargo",
@@ -139,13 +146,6 @@
       "firm": "Citigroup",
       "from": "Neutral",
       "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-30",
-      "firm": "BNP Paribas",
-      "from": "Underperform",
-      "to": "Underperform",
       "action": "main"
     }
   ],
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 1,
-    "sells": 9,
+    "sells": 10,
     "bought": 1000,
-    "sold": 16786,
+    "sold": 17374,
     "net_pct": -1.1
   },
   "extras": {
     "beta": 0.975,
-    "enterprise_value": 131801202688,
-    "ev_ebitda": 23.359,
-    "ev_revenue": 3.438,
+    "enterprise_value": 135027400704,
+    "ev_ebitda": 23.931,
+    "ev_revenue": 3.522,
     "float_shares": 1137663000,
     "short_shares": 41974811,
     "short_pct_float": 4.09,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-11-13",
   "dividend_date": null,
   "payout_ratio": 1.4277,
-  "inst_count": 2957,
+  "inst_count": 2954,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "BREWER BRADY",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 100.00 per share.",
+      "value": 58800,
+      "shares": 588,
+      "date": "2026-10-20"
+    },
     {
       "name": "BREWER BRADY",
       "role": "Officer",
@@ -352,15 +361,6 @@
       "value": 58800,
       "shares": 588,
       "date": "2026-04-17"
-    },
-    {
-      "name": "BREWER BRADY",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 90.00 per share.",
-      "value": 147690,
-      "shares": 1641,
-      "date": "2026-04-06"
     }
   ],
   "dividends": [

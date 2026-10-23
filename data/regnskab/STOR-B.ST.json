@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T20:24:49.802Z",
+  "updated_at": "2026-10-23T20:11:28.535Z",
   "source": "Yahoo Finance",
   "symbol": "STOR-B.ST",
   "summary": "Storskogen Group AB (publ) owns and develops small and medium-sized businesses operating in trade, industry, and services business areas. It owns a portfolio of companies operating in installation, engineering services, human resource and competence, logistics, digital services, contracting services, and infrastructure; home and living, health and beauty, and niche businesses, as well as sports, clothing, and accessories; and automation, products, and industrial technology business areas. Storskogen Group AB (publ) was founded in 2012 and is headquartered in Stockholm, Sweden.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-23",
   "earnings_estimated": false,
   "earnings_call": "2026-10-23",
-  "eps_estimate": 0.205,
+  "eps_estimate": 0.5,
   "analysts": {
     "strong_buy": 0,
     "buy": 2,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 7982000000,
-      "earnings": 316000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 8723000000,
       "earnings": 328000000
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 8861000000,
       "earnings": 350000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 8330000000,
+      "earnings": 306000000
     }
   ],
   "growth": {
-    "q0": 0.1389,
+    "q0": null,
     "q1": null,
-    "y0": 0.5048,
-    "y1": 0.1487
+    "y0": 0.1,
+    "y1": 0.5714
   },
   "ratings": [],
   "holders": [],
@@ -89,9 +89,9 @@
   },
   "extras": {
     "beta": 1.1,
-    "enterprise_value": 29035595776,
-    "ev_ebitda": 8.458,
-    "ev_revenue": 0.869,
+    "enterprise_value": 28470544384,
+    "ev_ebitda": 8.293,
+    "ev_revenue": 0.852,
     "float_shares": 1477200212,
     "short_shares": null,
     "short_pct_float": null,
@@ -105,12 +105,6 @@
   "inst_count": 74,
   "eps_history": [
     {
-      "quarter": "2025-09-30",
-      "estimate": 0.175,
-      "actual": 0.18,
-      "surprise_pct": 2.86
-    },
-    {
       "quarter": "2025-12-31",
       "estimate": 0.21,
       "actual": 0.19,
@@ -121,6 +115,12 @@
       "estimate": 0.155,
       "actual": 0.13,
       "surprise_pct": -16.13
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.205,
+      "actual": 0.19,
+      "surprise_pct": -7.32
     }
   ],
   "insiders": [],

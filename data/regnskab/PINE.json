@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T20:24:49.442Z",
+  "updated_at": "2026-10-23T20:11:28.169Z",
   "source": "Yahoo Finance",
   "symbol": "PINE",
   "summary": "Alpine Income Property Trust, Inc. is a publicly traded real estate investment trust. The firm seeks to deliver attractive risk-adjusted returns and dependable cash dividends by investing in, owning and operating a portfolio of single tenant net leased commercial income properties that are predominately leased to high-quality publicly traded and credit-rated tenants. The Company also complements its income property portfolio by strategically investing in a select portfolio of commercial loan investments intended to deliver an attractive risk-adjusted return. Alpine Income Property Trust, Inc. was established and incorporated on August 19, 2019 in Maryland and is based in Winter Park, Florida.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-22",
   "earnings_estimated": false,
   "earnings_call": "2026-10-23",
-  "eps_estimate": 0.16,
+  "eps_estimate": 0.15667,
   "analysts": {
     "strong_buy": 2,
     "buy": 6,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 11
   },
-  "target_mean": 21.475,
+  "target_mean": 21.175,
   "target_high": 23,
-  "target_low": 19,
+  "target_low": 18,
   "target_analysts": 10,
   "statements": [
     {
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 14563000,
-      "earnings": -1310000
-    },
-    {
       "q": "4Q2025",
       "revenue": 16900000,
       "earnings": 921000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 20002000,
       "earnings": 4191000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 20460000,
+      "earnings": 3443000
     }
   ],
   "growth": {
-    "q0": 2.7039,
-    "q1": 3.3053,
+    "q0": 3.3053,
+    "q1": 1.4908999,
     "y0": null,
     "y1": null
   },
   "ratings": [
+    {
+      "date": "2026-10-23",
+      "firm": "Stifel",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-15",
       "firm": "Truist Securities",
@@ -140,13 +147,6 @@
       "from": "Hold",
       "to": "Hold",
       "action": "main"
-    },
-    {
-      "date": "2026-02-06",
-      "firm": "Jones Trading",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
     }
   ],
   "holders": [
@@ -181,9 +181,9 @@
     {
       "name": "Invesco Exch-Trd Fd. TRT II-Invesco KBW Premium Yield Eqy. REIT ETF",
       "kind": "fond",
-      "pct": 3.17,
-      "shares": 568199,
-      "date": "2026-09-30"
+      "pct": 2.78,
+      "shares": 498159,
+      "date": "2026-08-31"
     },
     {
       "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.592,
-    "enterprise_value": 705655616,
-    "ev_ebitda": 13.482,
-    "ev_revenue": 10.099,
+    "enterprise_value": 710941824,
+    "ev_ebitda": 13.583,
+    "ev_revenue": 10.175,
     "float_shares": 16268675,
     "short_shares": 375455,
     "short_pct_float": 2.1,
@@ -246,12 +246,6 @@
   "payout_ratio": 5.5714,
   "inst_count": 206,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0,
-      "actual": -0.0939,
-      "surprise_pct": 0
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.065,
@@ -269,6 +263,12 @@
       "estimate": 0.14318,
       "actual": 0.14641,
       "surprise_pct": 2.26
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.16,
+      "actual": 0.1665,
+      "surprise_pct": 4.06
     }
   ],
   "insiders": [
@@ -289,6 +289,15 @@
       "value": 40567,
       "shares": 2000,
       "date": "2026-07-28"
+    },
+    {
+      "name": "GOOD MORTON CARSON",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 19.86 per share.",
+      "value": 29982,
+      "shares": 1510,
+      "date": "2026-07-01"
     },
     {
       "name": "ELIAS WEIN RACHEL",
@@ -315,15 +324,6 @@
       "text": "Stock Award(Grant) at price 19.86 per share.",
       "value": 17493,
       "shares": 881,
-      "date": "2026-07-01"
-    },
-    {
-      "name": "GOOD MORTON CARSON",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 19.86 per share.",
-      "value": 29982,
-      "shares": 1510,
       "date": "2026-07-01"
     },
     {
@@ -354,12 +354,12 @@
       "date": "2026-05-08"
     },
     {
-      "name": "ELIAS WEIN RACHEL",
+      "name": "GOOD MORTON CARSON",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 18.77 per share.",
-      "value": 17490,
-      "shares": 932,
+      "value": 29988,
+      "shares": 1598,
       "date": "2026-04-01"
     }
   ],

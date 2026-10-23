@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T20:24:47.995Z",
+  "updated_at": "2026-10-23T20:11:26.631Z",
   "source": "Yahoo Finance",
   "symbol": "COLB",
   "summary": "Columbia Banking System, Inc. operates as the bank holding company for Columbia Bank that provides banking, private banking, mortgage, and other financial services in the United States. The company offers deposit products, including business, non-interest-bearing checking, interest-bearing checking and savings, money market, insured cash sweep and other investment sweep solutions, and certificates of deposit. It also provides commercial lending products, such as commercial lines of credit and term loans, accounts receivable and inventory financing, international trade finance, commercial property loans, multifamily loans, equipment loans, commercial equipment leases, real estate construction loans, permanent financing, small business administration program financing, and capital markets services. In addition, the company offers wealth management, comprising financial planning, investment, trust, insurance, and private banking solutions, as well as treasury management, which includes digital and mobile banking solutions, ACH, wires, positive pay, remote deposit capture, integrated payments, integrated receivables, lockbox, cash vault, real-time payments, commercial card, foreign exchange, trade and supply chain finance, international banking related products, and merchant services. Further, it provides residential real estate loans and consumer loans. The company serves corporate, institutional, small business, and individual customers in the United States. Columbia Banking System, Inc. was founded in 1953 and is based in Tacoma, Washington.",
@@ -7,10 +7,10 @@
   "website": "https://www.columbiabankingsystem.com",
   "employees": 6005,
   "ceo": "Mr. Clinton E. Stein CPA",
-  "next_earnings": "2026-10-22",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-21",
+  "earnings_estimated": true,
   "earnings_call": "2026-10-22",
-  "eps_estimate": 0.76797,
+  "eps_estimate": 0.79716,
   "analysts": {
     "strong_buy": 2,
     "buy": 4,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 15
   },
-  "target_mean": 33.33333,
+  "target_mean": 33.46667,
   "target_high": 36,
   "target_low": 31,
   "target_analysts": 15,
@@ -51,16 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 510908000,
-      "earnings": 152423000
-    },
-    {
-      "q": "3Q2025",
-      "revenue": 582000000,
-      "earnings": 96000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 717000000,
       "earnings": 215000000
@@ -69,15 +59,32 @@
       "q": "1Q2026",
       "revenue": 677000000,
       "earnings": 192000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 677000000,
+      "earnings": 208000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 695000000,
+      "earnings": 220000000
     }
   ],
   "growth": {
-    "q0": -0.096499994,
-    "q1": -0.033800002,
-    "y0": -0.028099999,
-    "y1": 0.089099996
+    "q0": -0.0279,
+    "q1": 0.0704,
+    "y0": -0.01,
+    "y1": 0.076
   },
   "ratings": [
+    {
+      "date": "2026-10-23",
+      "firm": "RBC Capital",
+      "from": "Sector Perform",
+      "to": "Sector Perform",
+      "action": "main"
+    },
     {
       "date": "2026-10-13",
       "firm": "Deutsche Bank",
@@ -137,13 +144,6 @@
     {
       "date": "2026-08-10",
       "firm": "Wells Fargo",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-03",
-      "firm": "Barclays",
       "from": "Equal-Weight",
       "to": "Equal-Weight",
       "action": "main"
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.69,
-    "enterprise_value": 11486746624,
+    "enterprise_value": 11681948672,
     "ev_ebitda": null,
-    "ev_revenue": 4.586,
+    "ev_revenue": 4.663,
     "float_shares": 280288251,
     "short_shares": 11055591,
     "short_pct_float": 3.93,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-08-28",
   "dividend_date": null,
   "payout_ratio": 0.5765,
-  "inst_count": 704,
+  "inst_count": 705,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.68976,
-      "actual": 0.85,
-      "surprise_pct": 23.23
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.71583,
@@ -269,6 +263,12 @@
       "estimate": 0.72609,
       "actual": 0.76,
       "surprise_pct": 4.67
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.76797,
+      "actual": 0.82,
+      "surprise_pct": 6.78
     }
   ],
   "insiders": [

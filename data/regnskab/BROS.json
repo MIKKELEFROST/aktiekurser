@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T20:24:47.790Z",
+  "updated_at": "2026-10-23T20:11:26.391Z",
   "source": "Yahoo Finance",
   "symbol": "BROS",
   "summary": "Dutch Bros Inc., together with its subsidiaries, operates and franchises drive-thru shops in the United States. The company sells and distributes coffee, coffee-related products, and accessories. It operates through Company-Operated Shops and Franchising and Other segments. The company sells its products under various brands such as Dutch Bros, Dutch Bros Coffee, Dutch Bros Rebel, Dutch Bros, and Blue Rebel. Dutch Bros Inc. was founded in 1992 and is based in Tempe, Arizona.",
@@ -79,6 +79,13 @@
   },
   "ratings": [
     {
+      "date": "2026-10-23",
+      "firm": "Keybanc",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
       "date": "2026-10-22",
       "firm": "RBC Capital",
       "from": "Outperform",
@@ -139,13 +146,6 @@
       "firm": "JP Morgan",
       "from": "Overweight",
       "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-09-28",
-      "firm": "DA Davidson",
-      "from": "Buy",
-      "to": "Buy",
       "action": "main"
     }
   ],
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 21,
-    "sells": 10,
+    "sells": 13,
     "bought": 19827419,
-    "sold": 6042025,
-    "net_pct": -207.7
+    "sold": 6333399,
+    "net_pct": -212.6
   },
   "extras": {
     "beta": 2.312,
-    "enterprise_value": 6944996352,
-    "ev_ebitda": 21.562,
-    "ev_revenue": 3.689,
+    "enterprise_value": 6874646528,
+    "ev_ebitda": 21.344,
+    "ev_revenue": 3.652,
     "float_shares": 130180249,
     "short_shares": 20850463,
     "short_pct_float": 50.54,
@@ -272,6 +272,33 @@
     }
   ],
   "insiders": [
+    {
+      "name": "DM INDIVIDUAL AGGREGATOR, LLC",
+      "role": "Beneficial Owner of more than 10% of a Class of Security",
+      "kind": "sell",
+      "text": "Sale at price 44.01 per share.",
+      "value": 2231602,
+      "shares": 50709,
+      "date": "2026-10-20"
+    },
+    {
+      "name": "DM TRUST AGGREGATOR, LLC",
+      "role": "Beneficial Owner of more than 10% of a Class of Security",
+      "kind": "sell",
+      "text": "Sale at price 44.01 per share.",
+      "value": 4179792,
+      "shares": 94978,
+      "date": "2026-10-20"
+    },
+    {
+      "name": "BOERSMA TRAVIS",
+      "role": "Officer, Director and Beneficial Owner",
+      "kind": "sell",
+      "text": "Sale at price 44.01 per share.",
+      "value": 6411393,
+      "shares": 145687,
+      "date": "2026-10-20"
+    },
     {
       "name": "HART GERARD JOHAN",
       "role": "Director",
@@ -334,33 +361,6 @@
       "value": null,
       "shares": 775,
       "date": "2026-08-20"
-    },
-    {
-      "name": "PENEGOR TODD ALLAN",
-      "role": "Director",
-      "kind": "buy",
-      "text": "Purchase at price 51.56 per share.",
-      "value": 103120,
-      "shares": 2000,
-      "date": "2026-08-13"
-    },
-    {
-      "name": "DAVILA TANA",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 14442,
-      "date": "2026-07-01"
-    },
-    {
-      "name": "BOERSMA TRAVIS",
-      "role": "Officer, Director and Beneficial Owner",
-      "kind": "sell",
-      "text": "Sale at price 60.34 - 64.10 per share.",
-      "value": 92558344,
-      "shares": 1499999,
-      "date": "2026-06-11"
     }
   ],
   "dividends": [],

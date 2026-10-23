@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T20:24:49.200Z",
+  "updated_at": "2026-10-23T20:11:27.895Z",
   "source": "Yahoo Finance",
   "symbol": "NMCO",
   "summary": null,
@@ -94,17 +94,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 1,
-    "sells": 1,
-    "bought": 1000,
-    "sold": 1000,
-    "net_pct": null
+    "buys": 4,
+    "sells": 2,
+    "bought": 2011,
+    "sold": 1111,
+    "net_pct": -100
   },
   "extras": {
     "beta": 0.886,
-    "enterprise_value": 916333952,
+    "enterprise_value": 920250176,
     "ev_ebitda": null,
-    "ev_revenue": 14.087,
+    "ev_revenue": 14.148,
     "float_shares": null,
     "short_shares": 2672365,
     "short_pct_float": 4.48,
@@ -115,9 +115,45 @@
   "ex_dividend": "2026-10-01",
   "dividend_date": null,
   "payout_ratio": 1.6924001,
-  "inst_count": 65,
+  "inst_count": 64,
   "eps_history": [],
   "insiders": [
+    {
+      "name": "JONES NATHANIEL T",
+      "role": "Officer",
+      "kind": "buy",
+      "text": "Purchase at price 8.25 per share.",
+      "value": 3712,
+      "shares": 450,
+      "date": "2026-10-20"
+    },
+    {
+      "name": "BANK OF AMERICA CORPORATION",
+      "role": "Beneficial Owner of more than 10% of a Class of Security",
+      "kind": "buy",
+      "text": "Purchase at price 8.76 - 8.78 per share.",
+      "value": 974,
+      "shares": 111,
+      "date": "2026-10-20"
+    },
+    {
+      "name": "JONES NATHANIEL T",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 8.25 per share.",
+      "value": 3712,
+      "shares": 450,
+      "date": "2026-10-20"
+    },
+    {
+      "name": "BANK OF AMERICA CORPORATION",
+      "role": "Beneficial Owner of more than 10% of a Class of Security",
+      "kind": "sell",
+      "text": "Sale at price 8.76 - 8.80 per share.",
+      "value": 973,
+      "shares": 111,
+      "date": "2026-10-20"
+    },
     {
       "name": "BANK OF AMERICA CORPORATION",
       "role": "Beneficial Owner of more than 10% of a Class of Security",
@@ -171,33 +207,6 @@
       "value": 15315,
       "shares": 1500,
       "date": "2025-12-29"
-    },
-    {
-      "name": "TOTH TERENCE J",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 10.68 - 10.69 per share.",
-      "value": 84642,
-      "shares": 7925,
-      "date": "2025-12-11"
-    },
-    {
-      "name": "JONES NATHANIEL T",
-      "role": "Officer",
-      "kind": "buy",
-      "text": "Purchase at price 10.82 per share.",
-      "value": 8656,
-      "shares": 800,
-      "date": "2025-09-11"
-    },
-    {
-      "name": "JONES NATHANIEL T",
-      "role": "Officer and Treasurer",
-      "kind": "buy",
-      "text": "Purchase at price 10.20 per share.",
-      "value": 10196,
-      "shares": 1000,
-      "date": "2025-05-05"
     }
   ],
   "dividends": [

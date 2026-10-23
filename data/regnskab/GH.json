@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T20:24:48.499Z",
+  "updated_at": "2026-10-23T20:11:27.182Z",
   "source": "Yahoo Finance",
   "symbol": "GH",
   "summary": "Guardant Health, Inc., a precision oncology company, provides blood and tissue tests, and data sets in the United States and internationally. The company offers Guardant360 CDx test, a liquid biopsy test for tumor mutation profiling; Guardant360 Liquid test, which measures 740+ genes and supports all guideline-recommended biomarkers; Guardant Reveal test, a blood test that utilizes circulating tumor DNA to detect cancer at the molecular level; and Guardant360 Tissue test, a molecular profiling test for tumor tissue that provides genomic, transcriptomic, and epigenomic insights. It also provides Shield blood test for colorectal cancer screening in adults. In addition, the company offers GuardantINFINITY test that provides insights into the complexities of tumor molecular profiles and immune response to advance cancer research and therapy development; GuardantOMNI test covers 500 genes, including genes associated with homologous recombination repair deficiency and biomarkers for immuno-oncology applications; GuardantINFORM, which provides longitudinal biological insight into tumor evolution alongside longitudinal clinical outcomes; and GuardantConnect, an integrated software-based solution designed for clinical and biopharmaceutical customers to connect patients tested with assays with actionable alterations with potentially relevant clinical studies. Further, it provides Smart Platform, which delivers multiomic insights leveraging genomic, epigenomic, and RNA-based data that are scalable from research to the clinic. Additionally, the company offers development services, including companion diagnostic development and regulatory approval, clinical study setup, monitoring and maintenance, testing development and support, technologies licensing, and kit fulfillment and delivery of Shield screening tests. It has a strategic collaboration with Nuvalent, Inc. for oncology drug development. The company was incorporated in 2011 and is headquartered in Palo Alto, California.",
@@ -10,19 +10,19 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": -0.3166,
+  "eps_estimate": -0.31444,
   "analysts": {
     "strong_buy": 4,
-    "buy": 20,
+    "buy": 21,
     "hold": 0,
     "sell": 0,
     "strong_sell": 1,
-    "total": 25
+    "total": 26
   },
-  "target_mean": 201.70833,
+  "target_mean": 201.64,
   "target_high": 240,
   "target_low": 105,
-  "target_analysts": 24,
+  "target_analysts": 25,
   "statements": [
     {
       "year": "2022",
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.1882,
-    "q1": 0.4359,
-    "y0": 0.2031,
-    "y1": 0.7321
+    "q0": 0.19370002,
+    "q1": 0.442,
+    "y0": 0.205,
+    "y1": 0.73800004
   },
   "ratings": [
+    {
+      "date": "2026-10-23",
+      "firm": "Roth Capital",
+      "from": null,
+      "to": "Buy",
+      "action": "init"
+    },
     {
       "date": "2026-10-13",
       "firm": "Morgan Stanley",
@@ -139,13 +146,6 @@
       "firm": "Morgan Stanley",
       "from": "Overweight",
       "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-03",
-      "firm": "Stifel",
-      "from": "Buy",
-      "to": "Buy",
       "action": "main"
     }
   ],
@@ -223,17 +223,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 54,
+    "buys": 55,
     "sells": 33,
-    "bought": 719269,
+    "bought": 719533,
     "sold": 901170,
     "net_pct": -3.3
   },
   "extras": {
     "beta": 1.583,
-    "enterprise_value": 23008677888,
-    "ev_ebitda": -53.438,
-    "ev_revenue": 19.448,
+    "enterprise_value": 22509467648,
+    "ev_ebitda": -52.278,
+    "ev_revenue": 19.026,
     "float_shares": 129479175,
     "short_shares": 11915002,
     "short_pct_float": 9.25,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": null,
-  "inst_count": 826,
+  "inst_count": 828,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -273,13 +273,13 @@
   ],
   "insiders": [
     {
-      "name": "HIDALGO MEDINA MANUEL",
+      "name": "MIGNONE ROBERTO A.",
       "role": "Director",
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 232,
-      "date": "2026-10-16"
+      "shares": 264,
+      "date": "2026-10-21"
     },
     {
       "name": "TARIQ MUSA",
@@ -288,6 +288,15 @@
       "text": "Sale at price 165.88 per share.",
       "value": 19242,
       "shares": 116,
+      "date": "2026-10-16"
+    },
+    {
+      "name": "HIDALGO MEDINA MANUEL",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 232,
       "date": "2026-10-16"
     },
     {
@@ -327,21 +336,21 @@
       "date": "2026-09-17"
     },
     {
-      "name": "TARIQ MUSA",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 175.00 per share.",
-      "value": 20300,
-      "shares": 116,
-      "date": "2026-09-16"
-    },
-    {
       "name": "KROGNES STEVE E",
       "role": "Director",
       "kind": "sell",
       "text": "Sale at price 174.46 - 177.48 per share.",
       "value": 1172886,
       "shares": 6674,
+      "date": "2026-09-16"
+    },
+    {
+      "name": "TARIQ MUSA",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 175.00 per share.",
+      "value": 20300,
+      "shares": 116,
       "date": "2026-09-16"
     },
     {
@@ -352,15 +361,6 @@
       "value": 144550,
       "shares": 826,
       "date": "2026-09-16"
-    },
-    {
-      "name": "TARIQ MUSA",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 249,
-      "date": "2026-09-15"
     }
   ],
   "dividends": [],

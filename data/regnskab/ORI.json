@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T20:24:49.335Z",
+  "updated_at": "2026-10-23T20:11:28.048Z",
   "source": "Yahoo Finance",
   "symbol": "ORI",
   "summary": "Old Republic International Corporation, through its subsidiaries, provides insurance underwriting and related services in the United States and Canada. It operates in two segments, Specialty Insurance and Title Insurance. The Specialty Insurance segment provides lines of coverages, such as accident and health, aviation, commercial auto, commercial multi-peril, commercial property, cyber, environmental, excess and surplus, home and auto warranty, automobile extended warranty, general liability, inland marine, travel accident, and workers' compensation, as well as financial indemnity, including directors and officers, errors and omissions, fidelity, and surety coverages. This segment offers its products to transportation, commercial construction, healthcare, education, retail and wholesale trade, forest products, energy, general manufacturing, and financial services industries. The Title Insurance segment insures against losses arising out of defects, liens and encumbrances affecting the insured title to real estate purchasers and investors. This segment also provides escrow closing and construction disbursement services; and real estate information products; national default management services; and various other services pertaining to real estate transfers and loan transactions. The company was founded in 1923 and is based in Chicago, Illinois.",
@@ -7,10 +7,10 @@
   "website": "https://www.oldrepublic.com",
   "employees": 9500,
   "ceo": "Mr. Craig Richard Smiddy",
-  "next_earnings": "2026-10-22",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-21",
+  "earnings_estimated": true,
   "earnings_call": "2026-10-22",
-  "eps_estimate": 0.78667,
+  "eps_estimate": 0.79,
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 3
   },
-  "target_mean": 43.5,
+  "target_mean": 45,
   "target_high": 48,
-  "target_low": 39,
+  "target_low": 42,
   "target_analysts": 2,
   "statements": [
     {
@@ -72,12 +72,26 @@
     }
   ],
   "growth": {
-    "q0": 0.0086,
-    "q1": 0.067600004,
-    "y0": -0.0762,
-    "y1": 0.1283
+    "q0": 0.067600004,
+    "q1": 0.1029,
+    "y0": -0.1238,
+    "y1": 0.18959999
   },
   "ratings": [
+    {
+      "date": "2026-10-23",
+      "firm": "Piper Sandler",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-23",
+      "firm": "Raymond James",
+      "from": "Strong Buy",
+      "to": "Outperform",
+      "action": "down"
+    },
     {
       "date": "2026-07-24",
       "firm": "Piper Sandler",
@@ -129,20 +143,6 @@
     },
     {
       "date": "2025-09-02",
-      "firm": "Piper Sandler",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2025-07-25",
-      "firm": "Piper Sandler",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2025-04-01",
       "firm": "Piper Sandler",
       "from": "Overweight",
       "to": "Overweight",
@@ -230,11 +230,11 @@
     "net_pct": 1.2
   },
   "extras": {
-    "beta": 0.587,
-    "enterprise_value": 9272701952,
-    "ev_ebitda": 5.974,
-    "ev_revenue": 0.954,
-    "float_shares": 221126103,
+    "beta": null,
+    "enterprise_value": 8909196288,
+    "ev_ebitda": 6.58,
+    "ev_revenue": 0.917,
+    "float_shares": 224026594,
     "short_shares": 11028676,
     "short_pct_float": 6.18,
     "short_ratio": 7.43,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-09-04",
   "dividend_date": null,
   "payout_ratio": 0.26590002,
-  "inst_count": 832,
+  "inst_count": 831,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.76333,
-      "actual": 0.78,
-      "surprise_pct": 2.18
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.88333,
@@ -269,6 +263,12 @@
       "estimate": 0.79333,
       "actual": 0.76,
       "surprise_pct": -4.2
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.78,
+      "actual": 0.73,
+      "surprise_pct": -6.41
     }
   ],
   "insiders": [
@@ -284,19 +284,19 @@
     {
       "name": "MONROE CAROLYN",
       "role": "Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 34.16 per share.",
-      "value": 515133,
-      "shares": 15080,
+      "kind": "sell",
+      "text": "Sale at price 42.26 per share.",
+      "value": 75561,
+      "shares": 1788,
       "date": "2026-08-11"
     },
     {
       "name": "MONROE CAROLYN",
       "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 42.26 per share.",
-      "value": 75561,
-      "shares": 1788,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 34.16 per share.",
+      "value": 515133,
+      "shares": 15080,
       "date": "2026-08-11"
     },
     {
@@ -311,15 +311,6 @@
     {
       "name": "OBERST STEPHEN J",
       "role": "Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 19.98 - 22.72 per share.",
-      "value": 4478410,
-      "shares": 208000,
-      "date": "2026-07-28"
-    },
-    {
-      "name": "OBERST STEPHEN J",
-      "role": "Officer",
       "kind": "sell",
       "text": "Sale at price 43.96 per share.",
       "value": 576975,
@@ -327,13 +318,13 @@
       "date": "2026-07-28"
     },
     {
-      "name": "MONROE CAROLYN",
+      "name": "OBERST STEPHEN J",
       "role": "Officer",
       "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 19.81 - 24.79 per share.",
-      "value": 1074283,
-      "shares": 49374,
-      "date": "2026-05-12"
+      "text": "Conversion of Exercise of derivative security at price 19.98 - 22.72 per share.",
+      "value": 4478410,
+      "shares": 208000,
+      "date": "2026-07-28"
     },
     {
       "name": "MONROE CAROLYN",
@@ -342,6 +333,15 @@
       "text": "Sale at price 38.76 per share.",
       "value": 516671,
       "shares": 13330,
+      "date": "2026-05-12"
+    },
+    {
+      "name": "MONROE CAROLYN",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 19.81 - 24.79 per share.",
+      "value": 1074283,
+      "shares": 49374,
       "date": "2026-05-12"
     },
     {

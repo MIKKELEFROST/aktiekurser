@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T20:24:49.130Z",
+  "updated_at": "2026-10-23T20:11:27.826Z",
   "source": "Yahoo Finance",
   "symbol": "MXL",
   "summary": "MaxLinear, Inc. provides communications systems-on-chip solutions in the United States, Asia, Europe, and internationally. Its products integrate various portions of a high-speed communication system, including radio frequency, high-performance analog, mixed-signal, digital signal processing, security engines, data compression and networking layers, and power management. Its products are used in various electronic devices, such as radio transceivers and modems for 4G/5G base-station and backhaul infrastructure; optical transceivers; wi-fi and wireline routers for home networking; broadband modems compliant with data over cable service interface specifications, passive optical fiber standards, and digital subscriber line, as well as power management and interface products. It serves electronics distributors, module makers, original equipment manufacturers, and original design manufacturers through a direct sales force, third-party sales representatives, and a network of distributors. The company has a strategic collaboration with Edgecore Networks Corporation for the development network infrastructure for enterprise and SMB applications. MaxLinear, Inc. has strategic partnership with GCT Semiconductor Holding, Inc. to develop 5G fixed wireless access (FWA) gateways and converged gateways for consumer and enterprise applications. The company was incorporated in 2003 and is headquartered in Carlsbad, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-22",
   "earnings_estimated": false,
   "earnings_call": "2026-10-22",
-  "eps_estimate": 0.558,
+  "eps_estimate": 0.78,
   "analysts": {
     "strong_buy": 1,
     "buy": 6,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 11
   },
-  "target_mean": 95.27273,
+  "target_mean": 93.90909,
   "target_high": 125,
   "target_low": 40,
   "target_analysts": 11,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 126459000,
-      "earnings": -45485000
-    },
-    {
       "q": "4Q2025",
       "revenue": 136436000,
       "earnings": -14897000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 168847000,
       "earnings": 1760000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 218057000,
+      "earnings": 28902000
     }
   ],
   "growth": {
-    "q0": 2.9857001,
-    "q1": 2.1947,
-    "y0": 4.6452,
-    "y1": 0.5467
+    "q0": 3.1053,
+    "q1": 1.8072,
+    "y0": 5.4515996,
+    "y1": 0.41970003
   },
   "ratings": [
+    {
+      "date": "2026-10-23",
+      "firm": "Wells Fargo",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
     {
       "date": "2026-10-20",
       "firm": "Wells Fargo",
@@ -140,13 +147,6 @@
       "from": "Buy",
       "to": "Buy",
       "action": "reit"
-    },
-    {
-      "date": "2026-04-29",
-      "firm": "Loop Capital",
-      "from": "Hold",
-      "to": "Buy",
-      "action": "up"
     }
   ],
   "holders": [
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 3.94,
-    "enterprise_value": 6957020160,
-    "ev_ebitda": -310.152,
-    "ev_revenue": 12.228,
+    "enterprise_value": 6003834368,
+    "ev_ebitda": -267.658,
+    "ev_revenue": 10.553,
     "float_shares": 85221671,
     "short_shares": 4887878,
     "short_pct_float": 7.54,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 552,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.1191,
-      "actual": 0.14,
-      "surprise_pct": 17.55
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.17875,
@@ -269,6 +263,12 @@
       "estimate": 0.32952,
       "actual": 0.35,
       "surprise_pct": 6.22
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.558,
+      "actual": 0.62,
+      "surprise_pct": 11.11
     }
   ],
   "insiders": [
@@ -309,21 +309,21 @@
       "date": "2026-05-22"
     },
     {
-      "name": "SEENDRIPU KISHORE V",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 33682,
-      "date": "2026-05-20"
-    },
-    {
       "name": "MOYER ALBERT J",
       "role": "Director",
       "kind": "other",
       "text": null,
       "value": null,
       "shares": 40336,
+      "date": "2026-05-20"
+    },
+    {
+      "name": "SEENDRIPU KISHORE V",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 33682,
       "date": "2026-05-20"
     },
     {
