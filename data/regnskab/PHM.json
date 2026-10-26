@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T20:11:28.160Z",
+  "updated_at": "2026-10-26T21:17:43.173Z",
   "source": "Yahoo Finance",
   "symbol": "PHM",
   "summary": "PulteGroup, Inc., through its subsidiaries, engages in the homebuilding business in the United States. The company is involved in the acquisition and development of land primarily for residential purposes, as well as construction of housing; and sale of single-family detached homes; and attached homes, such as townhomes, condominiums, and duplexes under the Centex, Pulte Homes, Del Webb, DiVosta Homes, and John Wieland Homes and Neighborhoods brands. It also engages in the mortgage banking, title, and insurance agency operations. PulteGroup, Inc. was founded in 1950 and is headquartered in Atlanta, Georgia.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-22",
   "earnings_estimated": false,
   "earnings_call": "2026-10-22",
-  "eps_estimate": 2.5316,
+  "eps_estimate": 2.524,
   "analysts": {
     "strong_buy": 2,
     "buy": 8,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 18
   },
-  "target_mean": 134.4706,
+  "target_mean": 132.88235,
   "target_high": 162,
   "target_low": 100,
   "target_analysts": 17,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": -0.12100001,
-    "q1": 0.0318,
-    "y0": -0.1852,
-    "y1": 0.0718
+    "q0": -0.1236,
+    "q1": 0.0147,
+    "y0": -0.1863,
+    "y1": 0.0247
   },
   "ratings": [
+    {
+      "date": "2026-10-26",
+      "firm": "Citigroup",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-10-23",
       "firm": "UBS",
@@ -140,83 +147,76 @@
       "from": "Outperform",
       "to": "Outperform",
       "action": "main"
-    },
-    {
-      "date": "2026-09-16",
-      "firm": "Truist Securities",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
     }
   ],
   "holders": [
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 9.99,
+      "pct": 10.18,
       "shares": 18734222,
       "date": "2026-06-30"
     },
     {
       "name": "Franklin Resources, Inc.",
       "kind": "institution",
-      "pct": 8.3,
+      "pct": 8.45,
       "shares": 15559037,
       "date": "2026-06-30"
     },
     {
       "name": "Vanguard Capital Management LLC",
       "kind": "institution",
-      "pct": 6.65,
+      "pct": 6.77,
       "shares": 12457824,
       "date": "2026-06-30"
     },
     {
       "name": "State Street Corporation",
       "kind": "institution",
-      "pct": 4.89,
+      "pct": 4.98,
       "shares": 9174111,
       "date": "2026-06-30"
     },
     {
       "name": "Vanguard Portfolio Management LLC",
       "kind": "institution",
-      "pct": 4.35,
+      "pct": 4.43,
       "shares": 8158644,
       "date": "2026-06-30"
     },
     {
       "name": "PUTNAM LARGE CAP VALUE FUND",
       "kind": "fond",
-      "pct": 3.84,
+      "pct": 3.91,
       "shares": 7204131,
       "date": "2026-07-31"
     },
     {
-      "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
-      "kind": "fond",
-      "pct": 3.23,
-      "shares": 6047159,
+      "name": "FMR, LLC",
+      "kind": "institution",
+      "pct": 3.28,
+      "shares": 6037176,
       "date": "2026-06-30"
     },
     {
-      "name": "FMR, LLC",
-      "kind": "institution",
-      "pct": 3.22,
-      "shares": 6037176,
+      "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
+      "kind": "fond",
+      "pct": 3.28,
+      "shares": 6047159,
       "date": "2026-06-30"
     },
     {
       "name": "Greenhaven Associates, Inc.",
       "kind": "institution",
-      "pct": 2.91,
+      "pct": 2.96,
       "shares": 5455949,
       "date": "2026-06-30"
     },
     {
       "name": "Geode Capital Management, LLC",
       "kind": "institution",
-      "pct": 2.81,
+      "pct": 2.86,
       "shares": 5272775,
       "date": "2026-06-30"
     }
@@ -230,11 +230,11 @@
     "net_pct": 0.6
   },
   "extras": {
-    "beta": null,
-    "enterprise_value": 23121149952,
-    "ev_ebitda": 8.86,
-    "ev_revenue": 1.447,
-    "float_shares": 185182862,
+    "beta": 1.164,
+    "enterprise_value": 23353106432,
+    "ev_ebitda": 8.954,
+    "ev_revenue": 1.462,
+    "float_shares": 182656400,
     "short_shares": 8213045,
     "short_pct_float": 5.74,
     "short_ratio": 4.99,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-09-15",
   "dividend_date": null,
   "payout_ratio": 0.111099996,
-  "inst_count": 1437,
+  "inst_count": 1436,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -266,9 +266,9 @@
     },
     {
       "quarter": "2026-09-30",
-      "estimate": 2.61969,
+      "estimate": 2.62257,
       "actual": 2.53,
-      "surprise_pct": -3.42
+      "surprise_pct": -3.53
     }
   ],
   "insiders": [

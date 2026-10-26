@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-10-23T20:11:27.045Z",
+  "updated_at": "2026-10-26T21:17:42.290Z",
   "source": "Yahoo Finance",
   "symbol": "FHB",
   "summary": "First Hawaiian, Inc. operates as a bank holding company for First Hawaiian Bank that provides a range of banking products and services to consumer and commercial customers in the United States. It operates in two segments: Retail Banking and Commercial Banking. The company offers various deposit products, including checking, savings, and time deposit accounts, and other deposit accounts. It also provides residential and commercial mortgage loans, home equity lines of credit and loans, automobile loans and leases, secured and unsecured lines of credit, installment loans, small business loans and leases, as well as commercial lease and auto dealer financing services. In addition, the company offers wealth management, personal installment, individual investment and financial planning, insurance protection, trust and estate, private banking, investment management, retirement planning, and credit card and merchant processing services, as well as consumer and commercial credit cards processing services. Further, the company provides commercial and industrial lending, such as auto dealer flooring, commercial real estate lending, and construction lending services. It offers its products through branch, online, and mobile distribution channels. The company was formerly known as BancWest Corporation and changed its name to First Hawaiian, Inc. in April 2016. First Hawaiian, Inc. was founded in 1858 and is headquartered in Honolulu, Hawaii.",
   "industry": "Banks - Regional",
   "website": "https://www.fhb.com",
-  "employees": 1995,
+  "employees": 1974,
   "ceo": "Mr. Robert Scott Harrison",
   "next_earnings": "2026-10-23",
   "earnings_estimated": false,
   "earnings_call": "2026-10-23",
-  "eps_estimate": 0.58704,
+  "eps_estimate": 0.552,
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
@@ -19,7 +19,7 @@
     "strong_sell": 1,
     "total": 11
   },
-  "target_mean": 29.11111,
+  "target_mean": 29,
   "target_high": 33,
   "target_low": 26,
   "target_analysts": 9,
@@ -72,12 +72,26 @@
     }
   ],
   "growth": {
-    "q0": -0.005,
-    "q1": 0.076799996,
-    "y0": 0.072399996,
-    "y1": 0.0729
+    "q0": -0.0143,
+    "q1": 0.083900005,
+    "y0": 0.0467,
+    "y1": 0.096499994
   },
   "ratings": [
+    {
+      "date": "2026-10-26",
+      "firm": "JP Morgan",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-26",
+      "firm": "Piper Sandler",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-10-05",
       "firm": "TD Cowen",
@@ -133,20 +147,6 @@
       "from": "Neutral",
       "to": "Neutral",
       "action": "main"
-    },
-    {
-      "date": "2026-07-09",
-      "firm": "Benchmark",
-      "from": null,
-      "to": "Hold",
-      "action": "init"
-    },
-    {
-      "date": "2026-07-07",
-      "firm": "Barclays",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
-      "action": "main"
     }
   ],
   "holders": [
@@ -174,9 +174,9 @@
     {
       "name": "iShares Trust-iShares Core S&P Small-Cap ETF",
       "kind": "fond",
-      "pct": 6.1,
-      "shares": 7427552,
-      "date": "2026-08-31"
+      "pct": 5.95,
+      "shares": 7245334,
+      "date": "2026-09-30"
     },
     {
       "name": "Dimensional Fund Advisors LP",
@@ -231,10 +231,10 @@
   },
   "extras": {
     "beta": 0.751,
-    "enterprise_value": 2160506880,
+    "enterprise_value": 1753474432,
     "ev_ebitda": null,
-    "ev_revenue": 2.452,
-    "float_shares": 120379868,
+    "ev_revenue": 2.018,
+    "float_shares": 120380578,
     "short_shares": 12743461,
     "short_pct_float": 16.26,
     "short_ratio": 6.18,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-08-17",
   "dividend_date": null,
   "payout_ratio": 0.45220003,
-  "inst_count": 492,
+  "inst_count": 493,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.52223,
-      "actual": 0.59,
-      "surprise_pct": 12.98
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.55004,
@@ -269,6 +263,12 @@
       "estimate": 0.58813,
       "actual": 0.6,
       "surprise_pct": 2.02
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.58704,
+      "actual": 0.52,
+      "surprise_pct": -11.42
     }
   ],
   "insiders": [

@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-10-23T20:11:26.377Z",
+  "updated_at": "2026-10-26T21:17:41.797Z",
   "source": "Yahoo Finance",
   "symbol": "BPOP",
   "summary": "Popular, Inc., through its subsidiaries, provides various retail, mortgage, and commercial banking services for individuals and businesses in Puerto Rico, the United States, the British Virgin Islands, the Caribbean, and Latin America. The company offers savings, NOW, money market, and other interest-bearing demand accounts; non-interest bearing demand deposits; checking accounts; individual retirement accounts and educational contribution accounts; business accounts; investment accounts; private management accounts; and certificates of deposit. It also provides commercial and industrial, commercial real estate, commercial multi-family, and residential mortgage loans; consumer loans, including unsecured personal loans, home equity lines of credit, and other loans to individual borrowers; construction loans; lease financing comprising automobile loans and leases; renewable energy and marine loans; and startup program and healthcare hub financing. In addition, the company offers auto and equipment leasing and financing; broker-dealer; international and private banking; insurance services, such as travel, property, auto and boat, health, life, and title; debit and credit cards; family of funds and Keogh plans; mobile easy deposit, foreign exchange, and fiduciary services; retirement plans; wire transfers; coordination of auto, aircraft, and helicopter loans; financial planning; investment advice; ATM; and online banking services. Popular, Inc. was founded in 1893 and is headquartered in Hato Rey, Puerto Rico.",
   "industry": "Banks - Regional",
   "website": "https://www.popular.com",
-  "employees": 9238,
+  "employees": 9112,
   "ceo": "Mr. Jorge Jose Garcia",
   "next_earnings": "2026-10-22",
   "earnings_estimated": false,
   "earnings_call": "2026-10-22",
-  "eps_estimate": 4.16,
+  "eps_estimate": 4.038,
   "analysts": {
     "strong_buy": 4,
     "buy": 6,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 10
   },
-  "target_mean": 195.2,
+  "target_mean": 194.4,
   "target_high": 216,
   "target_low": 171,
   "target_analysts": 10,
@@ -72,12 +72,26 @@
     }
   ],
   "growth": {
-    "q0": 0.2252,
-    "q1": 0.081999995,
-    "y0": 0.3548,
-    "y1": 0.0543
+    "q0": 0.1893,
+    "q1": 0.0794,
+    "y0": 0.3469,
+    "y1": 0.0657
   },
   "ratings": [
+    {
+      "date": "2026-10-26",
+      "firm": "Citigroup",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-26",
+      "firm": "Piper Sandler",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "reit"
+    },
     {
       "date": "2026-10-05",
       "firm": "Barclays",
@@ -130,20 +144,6 @@
     {
       "date": "2026-07-24",
       "firm": "Keefe, Bruyette & Woods",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-24",
-      "firm": "Piper Sandler",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "reit"
-    },
-    {
-      "date": "2026-07-24",
-      "firm": "RBC Capital",
       "from": "Outperform",
       "to": "Outperform",
       "action": "main"
@@ -227,21 +227,21 @@
     "sells": 7,
     "bought": 21591,
     "sold": 60061,
-    "net_pct": -3.2
+    "net_pct": -3.1
   },
   "extras": {
-    "beta": null,
-    "enterprise_value": 10916014080,
+    "beta": 0.646,
+    "enterprise_value": 10949063680,
     "ev_ebitda": null,
-    "ev_revenue": 3.481,
-    "float_shares": 61506072,
+    "ev_revenue": 3.492,
+    "float_shares": 61063470,
     "short_shares": 1969766,
     "short_pct_float": 3.73,
     "short_ratio": 3.41,
     "last_split": "1:10",
     "last_split_date": "2012-05-30"
   },
-  "ex_dividend": "2026-09-10",
+  "ex_dividend": "2026-11-13",
   "dividend_date": null,
   "payout_ratio": 0.2028,
   "inst_count": 653,
@@ -291,21 +291,21 @@
       "date": "2026-08-19"
     },
     {
-      "name": "FERRER JAVIER D",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 175.43 per share.",
-      "value": 6140155,
-      "shares": 35000,
-      "date": "2026-08-10"
-    },
-    {
       "name": "SORIANO LIDIO V",
       "role": "Officer",
       "kind": "sell",
       "text": "Sale at price 174.50 per share.",
       "value": 523515,
       "shares": 3000,
+      "date": "2026-08-10"
+    },
+    {
+      "name": "FERRER JAVIER D",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 175.43 per share.",
+      "value": 6140155,
+      "shares": 35000,
       "date": "2026-08-10"
     },
     {

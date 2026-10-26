@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T20:11:28.280Z",
+  "updated_at": "2026-10-26T21:17:43.264Z",
   "source": "Yahoo Finance",
   "symbol": "ROL",
   "summary": "Rollins, Inc., through its subsidiaries, provides pest and wildlife control services and protection to residential and commercial customers in the United States and internationally. The company offers pest control services to residential properties protecting from common pests, including rodents, insects, and wildlife. It also provides workplace pest control solutions for customers across various end markets, such as healthcare, food service, and logistics. In addition, the company offers termite protection and ancillary services for both residential and commercial customers. It serves clients directly, as well as through franchisee operations. The company was formerly known as Rollins Broadcasting, Inc and changed its name to Rollins, Inc. in 1965. Rollins, Inc. was founded in 1901 and is headquartered in Atlanta, Georgia.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-21",
   "earnings_estimated": false,
   "earnings_call": "2026-10-22",
-  "eps_estimate": 0.25948,
+  "eps_estimate": 0.25462,
   "analysts": {
     "strong_buy": 3,
     "buy": 4,
@@ -19,9 +19,9 @@
     "strong_sell": 1,
     "total": 19
   },
-  "target_mean": 38.58824,
-  "target_high": 66,
-  "target_low": 27,
+  "target_mean": 37.23529,
+  "target_high": 46,
+  "target_low": 26,
   "target_analysts": 17,
   "statements": [
     {
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.0379,
-    "q1": 0.012200001,
-    "y0": 0.0227,
-    "y1": 0.0945
+    "q0": 0.0185,
+    "q1": -0.0018000001,
+    "y0": 0.0189,
+    "y1": 0.082100004
   },
   "ratings": [
+    {
+      "date": "2026-10-23",
+      "firm": "UBS",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-10-23",
       "firm": "Canaccord Genuity",
@@ -140,83 +147,76 @@
       "from": "Overweight",
       "to": "Overweight",
       "action": "main"
-    },
-    {
-      "date": "2026-09-29",
-      "firm": "Wells Fargo",
-      "from": "Underweight",
-      "to": "Underweight",
-      "action": "main"
     }
   ],
   "holders": [
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 6,
+      "pct": 6.04,
       "shares": 28853231,
       "date": "2026-06-30"
     },
     {
       "name": "Vanguard Capital Management LLC",
       "kind": "institution",
-      "pct": 4.11,
+      "pct": 4.14,
       "shares": 19798125,
       "date": "2026-06-30"
     },
     {
       "name": "Vanguard Portfolio Management LLC",
       "kind": "institution",
-      "pct": 3.53,
+      "pct": 3.55,
       "shares": 16976647,
       "date": "2026-06-30"
     },
     {
       "name": "State Street Corporation",
       "kind": "institution",
-      "pct": 2.82,
+      "pct": 2.84,
       "shares": 13561228,
       "date": "2026-06-30"
     },
     {
       "name": "Geode Capital Management, LLC",
       "kind": "institution",
-      "pct": 2.45,
+      "pct": 2.46,
       "shares": 11779671,
       "date": "2026-06-30"
     },
     {
       "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
       "kind": "fond",
-      "pct": 2.06,
+      "pct": 2.08,
       "shares": 9927634,
       "date": "2026-06-30"
     },
     {
       "name": "Kayne Anderson Rudnick Investment Management LLC",
       "kind": "institution",
-      "pct": 1.71,
+      "pct": 1.72,
       "shares": 8211517,
       "date": "2026-06-30"
     },
     {
       "name": "VANGUARD INDEX FUNDS-Vanguard 500 Index Fund",
       "kind": "fond",
-      "pct": 1.58,
+      "pct": 1.59,
       "shares": 7611412,
       "date": "2026-06-30"
     },
     {
       "name": "VANGUARD INDEX FUNDS-Vanguard Mid-Cap Index Fund",
       "kind": "fond",
-      "pct": 1.41,
+      "pct": 1.42,
       "shares": 6781217,
       "date": "2026-06-30"
     },
     {
       "name": "Morgan Stanley",
       "kind": "institution",
-      "pct": 1.34,
+      "pct": 1.35,
       "shares": 6455516,
       "date": "2026-06-30"
     }
@@ -231,10 +231,10 @@
   },
   "extras": {
     "beta": 0.731,
-    "enterprise_value": 17909088256,
-    "ev_ebitda": 20.73,
-    "ev_revenue": 4.491,
-    "float_shares": 306684491,
+    "enterprise_value": 17642194944,
+    "ev_ebitda": 20.348,
+    "ev_revenue": 4.424,
+    "float_shares": 306092393,
     "short_shares": 27371805,
     "short_pct_float": 9.34,
     "short_ratio": 3.68,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-11-10",
   "dividend_date": null,
   "payout_ratio": 0.671,
-  "inst_count": 1150,
+  "inst_count": 1149,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -309,25 +309,34 @@
       "date": "2026-04-29"
     },
     {
+      "name": "SAMS LOUISE S.",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 2692,
+      "date": "2026-04-28"
+    },
+    {
+      "name": "BELL SUSAN R",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 2692,
+      "date": "2026-04-28"
+    },
+    {
+      "name": "GUNNING PATRICK J.",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 2692,
+      "date": "2026-04-28"
+    },
+    {
       "name": "CARSON DONALD P",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 2692,
-      "date": "2026-04-28"
-    },
-    {
-      "name": "JONES DALE E",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 2692,
-      "date": "2026-04-28"
-    },
-    {
-      "name": "DONAHUE PAUL D",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -346,15 +355,6 @@
     },
     {
       "name": "ROLLINS TIMOTHY CURTIS",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 2692,
-      "date": "2026-04-28"
-    },
-    {
-      "name": "MORRISON GREGORY B.",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

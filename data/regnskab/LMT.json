@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T20:11:27.692Z",
+  "updated_at": "2026-10-26T21:17:42.799Z",
   "source": "Yahoo Finance",
   "symbol": "LMT",
   "summary": "Lockheed Martin Corporation, an aerospace and defense company, engages in the research, design, development, manufacture, integration, and sustainment of technology systems, products, and services in the United States, Europe, Asia, the Middle East, and internationally. The company operates through four segments: Aeronautics; Missiles and Fire Control (MFC); Rotary and Mission Systems (RMS); and Space. The Aeronautics segment offers combat and air mobility aircraft, unmanned air vehicles, and related technologies. The MFC segment provides air and missile defense systems; tactical missiles and precision strike weapon systems; logistics; fire control systems; mission operations support, readiness, engineering support, and integration services; and ground vehicles. The RMS segment offers military and commercial helicopters, surface ships, sea- and land-based missile defense systems, radar and laser systems, sea- and air-based mission and combat systems, command and control mission solutions, cyber solutions, simulation and training solutions, and services and support for surface ships. The Space segment provides satellites; space transportation systems; strategic, advanced strike, and defensive systems; and classified systems and services in support of national security systems. This segment also provides network-enabled situational awareness; and integrates space and ground global systems to help its customers gather, analyze, and securely distribute critical intelligence data. It primarily serves the U.S. government and international customers, as well as foreign military sales contracted through the U.S. government. The company was formerly known as The Lockheed Corporation and changed its name to Lockheed Martin Corporation in March 1995. Lockheed Martin Corporation was founded in 1912 and is based in Bethesda, Maryland.",
@@ -10,17 +10,17 @@
   "next_earnings": "2026-10-22",
   "earnings_estimated": false,
   "earnings_call": "2026-10-22",
-  "eps_estimate": 8.48407,
+  "eps_estimate": 8.2025,
   "analysts": {
-    "strong_buy": 2,
+    "strong_buy": 3,
     "buy": 8,
-    "hold": 12,
+    "hold": 11,
     "sell": 1,
     "strong_sell": 0,
     "total": 23
   },
-  "target_mean": 632.9048,
-  "target_high": 756,
+  "target_mean": 645.4762,
+  "target_high": 835,
   "target_low": 498,
   "target_analysts": 21,
   "statements": [
@@ -72,12 +72,26 @@
     }
   ],
   "growth": {
-    "q0": 0.4628,
-    "q1": 0.1178,
-    "y0": 0.42349997,
-    "y1": 0.0775
+    "q0": 0.41419998,
+    "q1": 0.123500004,
+    "y0": 0.4278,
+    "y1": 0.083100006
   },
   "ratings": [
+    {
+      "date": "2026-10-26",
+      "firm": "JP Morgan",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-26",
+      "firm": "Morgan Stanley",
+      "from": "Equal-Weight",
+      "to": "Overweight",
+      "action": "up"
+    },
     {
       "date": "2026-10-23",
       "firm": "UBS",
@@ -133,34 +147,20 @@
       "from": null,
       "to": "Equal-Weight",
       "action": "init"
-    },
-    {
-      "date": "2026-10-06",
-      "firm": "Rothschild & Co",
-      "from": null,
-      "to": "Buy",
-      "action": "init"
-    },
-    {
-      "date": "2026-09-08",
-      "firm": "UBS",
-      "from": "Neutral",
-      "to": "Buy",
-      "action": "up"
     }
   ],
   "holders": [
     {
       "name": "State Street Corporation",
       "kind": "institution",
-      "pct": 14.29,
+      "pct": 14.27,
       "shares": 32975170,
       "date": "2026-06-30"
     },
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 8.18,
+      "pct": 8.17,
       "shares": 18877978,
       "date": "2026-06-30"
     },
@@ -216,7 +216,7 @@
     {
       "name": "SCHWAB STRATEGIC TRUST-Schwab US Dividend Equity ETF",
       "kind": "fond",
-      "pct": 2.1,
+      "pct": 2.09,
       "shares": 4835703,
       "date": "2026-05-31"
     }
@@ -230,11 +230,11 @@
     "net_pct": -2.1
   },
   "extras": {
-    "beta": null,
-    "enterprise_value": 150512254976,
-    "ev_ebitda": 15.166,
-    "ev_revenue": 1.902,
-    "float_shares": 197146650,
+    "beta": 0.095,
+    "enterprise_value": 154106380288,
+    "ev_ebitda": 15.633,
+    "ev_revenue": 1.948,
+    "float_shares": 197578269,
     "short_shares": 2742605,
     "short_pct_float": 1.42,
     "short_ratio": 2.27,

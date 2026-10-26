@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T20:11:28.330Z",
+  "updated_at": "2026-10-26T21:17:43.303Z",
   "source": "Yahoo Finance",
   "symbol": "SAM",
   "summary": "The Boston Beer Company, Inc. produces and sells alcohol beverages primarily in the United States. Its flagship beer is Samuel Adams Boston Lager. The company offers various beers, hard ciders, spirits based ready to drink beverages, distilled spirits, flavored malt beverages, and hard seltzers under the Samuel Adams, Twisted Tea, Truly, Angry Orchard, Dogfish Head, and Sun Cruiser brand names. It markets and sells its products to a network wholesaler in the United States, as well as wholesalers, importers, or other agencies that in turn sell to retailers, such as grocery stores, club stores, convenience stores, liquor stores, bars, restaurants, stadiums, and other traditional and e-commerce retail outlets. It sells its products in Canada, Mexico, and internationally. The Boston Beer Company, Inc. was founded in 1984 and is based in Boston, Massachusetts.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-22",
   "earnings_estimated": false,
   "earnings_call": "2026-10-22",
-  "eps_estimate": -0.77035,
+  "eps_estimate": -0.50264,
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 14
   },
-  "target_mean": 194.92308,
+  "target_mean": 198.07692,
   "target_high": 295,
   "target_low": 153,
   "target_analysts": 13,
@@ -72,12 +72,26 @@
     }
   ],
   "growth": {
-    "q0": 0.6366,
-    "q1": 0.1513,
-    "y0": -0.090299994,
-    "y1": 0.1154
+    "q0": 0.7629,
+    "q1": 0.13939999,
+    "y0": -0.0579,
+    "y1": 0.108
   },
   "ratings": [
+    {
+      "date": "2026-10-26",
+      "firm": "Citigroup",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-23",
+      "firm": "UBS",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-10-06",
       "firm": "RBC Capital",
@@ -133,91 +147,77 @@
       "from": "Sell",
       "to": "Sell",
       "action": "main"
-    },
-    {
-      "date": "2026-05-06",
-      "firm": "Morgan Stanley",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
-      "action": "main"
-    },
-    {
-      "date": "2026-05-05",
-      "firm": "Bernstein",
-      "from": "Market Perform",
-      "to": "Market Perform",
-      "action": "main"
     }
   ],
   "holders": [
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 12.17,
+      "pct": 12.56,
       "shares": 1015254,
       "date": "2026-06-30"
     },
     {
       "name": "Vanguard Portfolio Management LLC",
       "kind": "institution",
-      "pct": 7.3,
+      "pct": 7.54,
       "shares": 609360,
       "date": "2026-06-30"
     },
     {
       "name": "AQR Capital Management, LLC",
       "kind": "institution",
-      "pct": 6.47,
+      "pct": 6.68,
       "shares": 539988,
       "date": "2026-06-30"
     },
     {
+      "name": "iShares Trust-iShares Core S&P Small-Cap ETF",
+      "kind": "fond",
+      "pct": 5.43,
+      "shares": 438724,
+      "date": "2026-09-30"
+    },
+    {
       "name": "UBS Group AG",
       "kind": "institution",
-      "pct": 5.21,
+      "pct": 5.38,
       "shares": 434656,
       "date": "2026-06-30"
     },
     {
       "name": "American Century ETF Trust-Avantis U.S. Small Cap Value ETF",
       "kind": "fond",
-      "pct": 4.63,
+      "pct": 4.78,
       "shares": 386585,
       "date": "2026-09-30"
     },
     {
       "name": "American Century Companies Inc",
       "kind": "institution",
-      "pct": 4.62,
+      "pct": 4.77,
       "shares": 385326,
       "date": "2026-06-30"
     },
     {
       "name": "Vanguard Capital Management LLC",
       "kind": "institution",
-      "pct": 4.14,
+      "pct": 4.28,
       "shares": 345822,
       "date": "2026-06-30"
     },
     {
       "name": "Dimensional Fund Advisors LP",
       "kind": "institution",
-      "pct": 3.85,
+      "pct": 3.97,
       "shares": 320885,
       "date": "2026-06-30"
     },
     {
       "name": "Arrowstreet Capital, Limited Partnership",
       "kind": "institution",
-      "pct": 3.85,
+      "pct": 3.97,
       "shares": 321080,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "State Street Corporation",
-      "kind": "institution",
-      "pct": 3.77,
-      "shares": 314732,
       "date": "2026-06-30"
     }
   ],
@@ -231,12 +231,12 @@
   },
   "extras": {
     "beta": 0.819,
-    "enterprise_value": 1738990464,
-    "ev_ebitda": 8.808,
-    "ev_revenue": 0.903,
-    "float_shares": 6778951,
+    "enterprise_value": 1736978688,
+    "ev_ebitda": 8.964,
+    "ev_revenue": 0.91,
+    "float_shares": 6700474,
     "short_shares": 1589429,
-    "short_pct_float": 24.53,
+    "short_pct_float": 25.06,
     "short_ratio": 6.01,
     "last_split": null,
     "last_split_date": null
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 437,
+  "inst_count": 438,
   "eps_history": [
     {
       "quarter": "2025-12-31",

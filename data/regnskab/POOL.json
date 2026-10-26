@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T20:11:28.202Z",
+  "updated_at": "2026-10-26T21:17:43.207Z",
   "source": "Yahoo Finance",
   "symbol": "POOL",
   "summary": "Pool Corporation distributes swimming pool supplies, equipment, related leisure, irrigation, and landscape maintenance products in the United States and internationally. It offers maintenance products, including chemicals, supplies, and pool accessories; repair and replacement parts for pool equipment, such as cleaners, filters, heaters, pumps, and lights; and building materials, such as concrete, plumbing and electrical components, functional and decorative pool surfaces, decking materials, tiles, hardscapes, and natural stones for pool installations and remodeling. The company also provides pool equipment and components for new pool construction and the remodeling of existing pools; irrigation and related products, such as irrigation system components, and professional turf care equipment and supplies; commercial products, including heaters, safety equipment, commercial decking equipment, and commercial pumps and filters. In addition, it offers fiberglass pools, and hot tubs and packaged pool kits comprising walls, liners, braces, and coping for in-ground and above-ground pools; and other pool construction and recreational products which consist discretionary recreational and related outdoor living products, such as grills and components for outdoor kitchens. The company serves swimming pool remodelers and builders; specialty retailers that sell swimming pool supplies; swimming pool repair and service businesses; irrigation construction and landscape maintenance contractors; and commercial pool operators and pool contractors. Pool Corporation was incorporated in 1993 and is headquartered in Covington, Louisiana.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-22",
   "earnings_estimated": false,
   "earnings_call": "2026-10-22",
-  "eps_estimate": 0.75914,
+  "eps_estimate": 0.74138,
   "analysts": {
     "strong_buy": 0,
     "buy": 4,
@@ -19,9 +19,9 @@
     "strong_sell": 1,
     "total": 15
   },
-  "target_mean": 206.33333,
+  "target_mean": 209.33333,
   "target_high": 260,
-  "target_low": 165,
+  "target_low": 175,
   "target_analysts": 12,
   "statements": [
     {
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": -0.0963,
-    "q1": 0.050300002,
-    "y0": 0.0238,
-    "y1": 0.058000002
+    "q0": -0.1174,
+    "q1": 0.0342,
+    "y0": 0.0229,
+    "y1": 0.0498
   },
   "ratings": [
+    {
+      "date": "2026-10-23",
+      "firm": "DA Davidson",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-10-23",
       "firm": "Wells Fargo",
@@ -140,13 +147,6 @@
       "from": "Outperform",
       "to": "Outperform",
       "action": "main"
-    },
-    {
-      "date": "2026-07-24",
-      "firm": "Stifel",
-      "from": "Hold",
-      "to": "Hold",
-      "action": "main"
     }
   ],
   "holders": [
@@ -172,6 +172,13 @@
       "date": "2026-06-30"
     },
     {
+      "name": "iShares Trust-iShares Core S&P Small-Cap ETF",
+      "kind": "fond",
+      "pct": 5.96,
+      "shares": 2164662,
+      "date": "2026-09-30"
+    },
+    {
       "name": "Vanguard Portfolio Management LLC",
       "kind": "institution",
       "pct": 5.67,
@@ -184,13 +191,6 @@
       "pct": 5.47,
       "shares": 1988405,
       "date": "2026-06-30"
-    },
-    {
-      "name": "iShares Trust-iShares Core S&P Small-Cap ETF",
-      "kind": "fond",
-      "pct": 5.38,
-      "shares": 1954813,
-      "date": "2026-08-31"
     },
     {
       "name": "Morgan Stanley",
@@ -230,10 +230,10 @@
     "net_pct": null
   },
   "extras": {
-    "beta": null,
-    "enterprise_value": 8489170944,
-    "ev_ebitda": 13.483,
-    "ev_revenue": 1.558,
+    "beta": 1.043,
+    "enterprise_value": 8556268544,
+    "ev_ebitda": 13.417,
+    "ev_revenue": 1.57,
     "float_shares": 34617630,
     "short_shares": 3637916,
     "short_pct_float": 11.88,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-08-13",
   "dividend_date": null,
   "payout_ratio": 0.4637,
-  "inst_count": 812,
+  "inst_count": 806,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -309,21 +309,21 @@
       "date": "2026-05-08"
     },
     {
-      "name": "STOKELY JOHN E",
-      "role": "Director",
-      "kind": "buy",
-      "text": "Purchase at price 193.06 per share.",
-      "value": 193065,
-      "shares": 1000,
-      "date": "2026-05-07"
-    },
-    {
       "name": "PEREZ DE LA MESA MANUEL J",
       "role": "Director",
       "kind": "buy",
       "text": "Purchase at price 190.00 per share.",
       "value": 1900000,
       "shares": 10000,
+      "date": "2026-05-07"
+    },
+    {
+      "name": "STOKELY JOHN E",
+      "role": "Director",
+      "kind": "buy",
+      "text": "Purchase at price 193.06 per share.",
+      "value": 193065,
+      "shares": 1000,
       "date": "2026-05-07"
     },
     {
@@ -345,21 +345,21 @@
       "date": "2026-05-04"
     },
     {
-      "name": "STOKELY JOHN E",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 644,
-      "date": "2026-04-29"
-    },
-    {
       "name": "POMPA MARK A",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 1169,
+      "date": "2026-04-29"
+    },
+    {
+      "name": "STOKELY JOHN E",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 644,
       "date": "2026-04-29"
     }
   ],

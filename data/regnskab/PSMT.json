@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T20:11:29.010Z",
+  "updated_at": "2026-10-26T21:17:43.821Z",
   "source": "Yahoo Finance",
   "symbol": "PSMT",
   "summary": "PriceSmart, Inc. owns and operates U.S.-style membership shopping warehouse clubs in the United States, Central America, the Caribbean, and Colombia. The company provides basic and private label merchandise and consumable and non-consumable products under the Member's Selection brand, including groceries, cleaning supplies, health and beauty aids, meat, produce, deli, seafood, and poultry. It also offers electronics, large and small appliances, automotive, hardware, sporting goods, seasonal products, clothing, domestic, and home furnishing products. In addition, the company offers food and bakery services, as well as health services, such as optical, audiology, and pharmacy. Further, it operates an e-commerce platform, as well as offers curbside pickup and delivery services. PriceSmart, Inc. was incorporated in 1994 and is headquartered in San Diego, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-26",
   "earnings_estimated": false,
   "earnings_call": "2026-10-27",
-  "eps_estimate": 1.15,
+  "eps_estimate": 1.38,
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
@@ -24,12 +24,6 @@
   "target_low": 165,
   "target_analysts": 2,
   "statements": [
-    {
-      "year": "2022",
-      "revenue": 4066093000,
-      "net": 104534000,
-      "margin": 2.6
-    },
     {
       "year": "2023",
       "revenue": 4411842000,
@@ -47,14 +41,15 @@
       "revenue": 5270094000,
       "net": 147887000,
       "margin": 2.8
+    },
+    {
+      "year": "2026",
+      "revenue": 5876324000,
+      "net": 166586000,
+      "margin": 2.8
     }
   ],
   "quarterly": [
-    {
-      "q": "3Q2025",
-      "revenue": 1330975000,
-      "earnings": 31541000
-    },
     {
       "q": "4Q2025",
       "revenue": 1382729000,
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 1481793000,
       "earnings": 39691000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1516274000,
+      "earnings": 37638000
     }
   ],
   "growth": {
-    "q0": 0.1275,
-    "q1": 0.0698,
-    "y0": 0.1535,
-    "y1": 0.1538
+    "q0": 0.0698,
+    "q1": 0.0556,
+    "y0": 0.188,
+    "y1": null
   },
   "ratings": [
     {
@@ -174,9 +174,9 @@
     {
       "name": "iShares Trust-iShares Core S&P Small-Cap ETF",
       "kind": "fond",
-      "pct": 5,
-      "shares": 1543000,
-      "date": "2026-08-31"
+      "pct": 4.94,
+      "shares": 1523753,
+      "date": "2026-09-30"
     },
     {
       "name": "Dimensional Fund Advisors LP",
@@ -224,17 +224,17 @@
   "insider_net": {
     "period": "6m",
     "buys": 14,
-    "sells": 12,
+    "sells": 11,
     "bought": 247462,
-    "sold": 54723,
-    "net_pct": 9.2
+    "sold": 34723,
+    "net_pct": 10.3
   },
   "extras": {
     "beta": 0.741,
-    "enterprise_value": 5176605184,
-    "ev_ebitda": 14.494,
-    "ev_revenue": 0.91,
-    "float_shares": 27728327,
+    "enterprise_value": 5157341696,
+    "ev_ebitda": 14.44,
+    "ev_revenue": 0.906,
+    "float_shares": 27708160,
     "short_shares": 1797575,
     "short_pct_float": 9.66,
     "short_ratio": 8.31,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-08-17",
   "dividend_date": null,
   "payout_ratio": 0.2558,
-  "inst_count": 512,
+  "inst_count": 514,
   "eps_history": [
-    {
-      "quarter": "2025-08-31",
-      "estimate": 1.06,
-      "actual": 1.02,
-      "surprise_pct": -3.77
-    },
     {
       "quarter": "2025-11-30",
       "estimate": 1.325,
@@ -269,6 +263,12 @@
       "estimate": 1.19,
       "actual": 1.28,
       "surprise_pct": 7.56
+    },
+    {
+      "quarter": "2026-08-31",
+      "estimate": 1.215,
+      "actual": 1.21,
+      "surprise_pct": -0.41
     }
   ],
   "insiders": [
