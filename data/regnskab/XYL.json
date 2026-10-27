@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T21:17:43.726Z",
+  "updated_at": "2026-10-27T21:00:12.721Z",
   "source": "Yahoo Finance",
   "symbol": "XYL",
   "summary": "Xylem Inc., together with its subsidiaries, engages in the design, manufacture, and servicing of engineered products and solutions for utility, industrial, and residential and commercial building services settings worldwide. It operates through Water Infrastructure; Applied Water; Measurement and Control Solutions; and Water Solutions and Services segments. The company offers water, wastewater, and storm water pumps and controls and systems; filtration, disinfection, and biological treatment equipment under the Flygt, Ionpure, Leopold, Neptune Benson, Sanitare, Wallace & Tiernan, and Wedeco brands; and pumps, valves, heat exchangers, controls, and dispensing equipment used for water and focuses on the residential, commercial and industrial markets under the Rule, Bell & Gossett, Flojet, Goulds Water Technology, Jabsco, and Lowara brands. It also provides smart meters, network communication devices, data analytics, test instruments, controls, sensor devices, software and managed services, critical infrastructure services, cloud-based analytics, and remote monitoring and data management under the Ebro, Sensus, Sentec, Smith Blair, WTW, YSI, and Xylem Vue brands. In addition, the company offers preventative maintenance services, rapid response mobile services, digitally enabled/outsourced solutions, process and wastewater treatment systems, environmental remediation, odor and corrosion control, filtration, reverse osmosis, continuous deionization, and mobile dewatering equipment and rental services; and municipal services comprising odor and corrosion control services, as well as condition assessment and asset management, and pressure monitoring solutions under the Grindex, Mar Cor, and Godwin brands. Xylem Inc. was formerly known as ITT WCO, Inc. and changed its name to Xylem Inc. in July 2011. The company was incorporated in 2011 and is headquartered in Washington, District Of Columbia.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-27",
   "earnings_estimated": false,
   "earnings_call": "2026-10-27",
-  "eps_estimate": 1.45059,
+  "eps_estimate": 1.63867,
   "analysts": {
     "strong_buy": 4,
     "buy": 10,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 2268000000,
-      "earnings": 227000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 2397000000,
       "earnings": 335000000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 2336000000,
       "earnings": 263000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 2201000000,
+      "earnings": 291000000
     }
   ],
   "growth": {
-    "q0": 0.0588,
-    "q1": 0.154,
+    "q0": 0.154,
+    "q1": 0.073699996,
     "y0": 0.11229999,
     "y1": 0.1001
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.991,
-    "enterprise_value": 27413356544,
-    "ev_ebitda": 13.859,
-    "ev_revenue": 3.004,
+    "enterprise_value": 27296612352,
+    "ev_ebitda": 13.8,
+    "ev_revenue": 2.991,
     "float_shares": 232882081,
     "short_shares": 10370953,
     "short_pct_float": 5.75,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.3952,
   "inst_count": 1613,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.23325,
-      "actual": 1.37,
-      "surprise_pct": 11.09
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.40828,
@@ -269,6 +263,12 @@
       "estimate": 1.33668,
       "actual": 1.46,
       "surprise_pct": 9.23
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.45059,
+      "actual": 1.44,
+      "surprise_pct": -0.73
     }
   ],
   "insiders": [
@@ -300,42 +300,6 @@
       "date": "2026-08-13"
     },
     {
-      "name": "GLATCH LISA",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 116.88 per share.",
-      "value": 199982,
-      "shares": 1711,
-      "date": "2026-05-14"
-    },
-    {
-      "name": "HARKER VICTORIA D",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 116.88 per share.",
-      "value": 199982,
-      "shares": 1711,
-      "date": "2026-05-14"
-    },
-    {
-      "name": "FRIEL ROBERT F",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 116.88 per share.",
-      "value": 289979,
-      "shares": 2481,
-      "date": "2026-05-14"
-    },
-    {
-      "name": "ELLIS EARL RAY",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 116.88 per share.",
-      "value": 199982,
-      "shares": 1711,
-      "date": "2026-05-14"
-    },
-    {
       "name": "TRETIKOV LILA",
       "role": "Director",
       "kind": "other",
@@ -355,6 +319,42 @@
     },
     {
       "name": "MORELLI MARK D",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 116.88 per share.",
+      "value": 199982,
+      "shares": 1711,
+      "date": "2026-05-14"
+    },
+    {
+      "name": "PERIBERE JEROME A",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 116.88 per share.",
+      "value": 199982,
+      "shares": 1711,
+      "date": "2026-05-14"
+    },
+    {
+      "name": "ELLIS EARL RAY",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 116.88 per share.",
+      "value": 199982,
+      "shares": 1711,
+      "date": "2026-05-14"
+    },
+    {
+      "name": "GLATCH LISA",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 116.88 per share.",
+      "value": 199982,
+      "shares": 1711,
+      "date": "2026-05-14"
+    },
+    {
+      "name": "HARKER VICTORIA D",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 116.88 per share.",

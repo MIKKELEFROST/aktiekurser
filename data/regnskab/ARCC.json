@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T21:17:41.597Z",
+  "updated_at": "2026-10-27T21:00:09.979Z",
   "source": "Yahoo Finance",
   "symbol": "ARCC",
   "summary": "Ares Capital Corporation is a business development company specializing in growth capital, acquisition, recapitalization, mezzanine debt, restructurings, rescue financing, and leveraged buyout transactions of middle market companies. It also makes growth capital and general refinancing. It prefers to make investments in companies engaged in sports, media & entertainment, industrials & business services, infrastructure & power, financial institution groups, software & technology, specialty healthcare, consumer, retail & services, energy and the basic and growth manufacturing, consumer products, health care products, and information technology service sectors. The fund will also consider investments in industries such as restaurants, retail, oil and gas, and technology sectors. It invests in the United States based companies. It focuses on investments in Northeast, Mid-Atlantic, Southeast and Southwest regions from its New York office, the Midwest region, from the Chicago office, and the Western region from the Los Angeles office. The fund typically invests between $30 million and $500 million, in companies with an EBITDA between $10 million and $250 million. It makes debt investments between $10 million and $100 million The fund invests through revolvers, first lien loans, warrants, unitranche structures, second lien loans, mezzanine debt, private high yield, junior capital, subordinated debt, and non-control preferred and common equity. The fund also selectively considers third-party-led senior and subordinated debt financings and opportunistically considers the purchase of stressed and discounted debt positions. The fund prefers to be an agent and/or lead the transactions in which it invests. The fund also seeks board representation in its portfolio companies.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-27",
   "earnings_estimated": false,
   "earnings_call": "2026-10-27",
-  "eps_estimate": 0.47568,
+  "eps_estimate": 0.48431,
   "analysts": {
     "strong_buy": 4,
     "buy": 7,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 782000000,
-      "earnings": 404000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 793000000,
       "earnings": 293000000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 768000000,
       "earnings": 171000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 763000000,
+      "earnings": 319000000
     }
   ],
   "growth": {
-    "q0": -0.048600003,
-    "q1": -0.031400003,
+    "q0": -0.031400003,
+    "q1": 0.0232,
     "y0": -0.0506,
     "y1": 0.0153
   },
@@ -193,17 +193,17 @@
       "date": "2026-06-30"
     },
     {
+      "name": "Generali Asset Management Spa Sgr",
+      "kind": "institution",
+      "pct": 1.11,
+      "shares": 7950908,
+      "date": "2026-09-30"
+    },
+    {
       "name": "JPMORGAN CHASE & CO",
       "kind": "institution",
       "pct": 1.09,
       "shares": 7850659,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "Generali Asset Management Spa Sgr",
-      "kind": "institution",
-      "pct": 1.05,
-      "shares": 7547995,
       "date": "2026-06-30"
     },
     {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.66,
-    "enterprise_value": 28837945344,
+    "enterprise_value": 28816404480,
     "ev_ebitda": null,
-    "ev_revenue": 9.285,
+    "ev_revenue": 9.278,
     "float_shares": null,
     "short_shares": 40550451,
     "short_pct_float": 5.68,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-09-15",
   "dividend_date": null,
   "payout_ratio": 1.4327999,
-  "inst_count": 915,
+  "inst_count": 917,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.50337,
-      "actual": 0.5,
-      "surprise_pct": -0.67
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.49806,
@@ -269,6 +263,12 @@
       "estimate": 0.47272,
       "actual": 0.47,
       "surprise_pct": -0.58
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.47568,
+      "actual": 0.46,
+      "surprise_pct": -3.3
     }
   ],
   "insiders": [

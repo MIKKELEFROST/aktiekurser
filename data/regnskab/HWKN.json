@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T21:17:42.569Z",
+  "updated_at": "2026-10-27T21:00:11.236Z",
   "source": "Yahoo Finance",
   "symbol": "HWKN",
   "summary": "Hawkins, Inc. operates as a water treatment and specialty ingredients company in the United States. The company operates through three segments: Water Treatment, Food and Health Sciences, and Industrial Solutions. The Water Treatment segment provides chemicals, filtration media and systems, equipment, services and solutions for potable water, municipal and industrial wastewater, industrial process water, non-residential swimming pool water, and agricultural water. This segment also sells and services equipment, including tanks, valves, and pumps. The Food and Health Sciences segment provide ingredient distribution, processing, and formulation solutions, such as base chemistry, acid-based reactions, minerals, vitamins and amino acids, excipients, botanicals and herbs, sweeteners and enzymes, fertilizers, and food-grade and pharmaceutical salts and ingredients to nutrition, food, pharmaceutical, and agricultural markets. The Industrial Solutions segment offers industrial chemicals, products, and services such as acids and alkalis, liquid caustic soda, sulfuric acid, hydrochloric acid, urea, phosphoric acid, aqua ammonia, and potassium hydroxide to industrial manufacturing, chemical processing, electronics, energy, plating, and surface finishing industries. It also repackages water treatment chemicals and bulk industrial chemicals; and performs custom blending of chemicals. Hawkins, Inc. was founded in 1938 and is headquartered in Roseville, Minnesota.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-26",
   "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": 1.184,
+  "eps_estimate": 0.73,
   "analysts": {
     "strong_buy": 2,
     "buy": 0,
@@ -51,16 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 293272000,
-      "earnings": 29175000
-    },
-    {
-      "q": "3Q2025",
-      "revenue": 280434000,
-      "earnings": 22598000
-    },
-    {
       "q": "4Q2025",
       "revenue": 244080000,
       "earnings": 14312000
@@ -69,15 +59,32 @@
       "q": "1Q2026",
       "revenue": 265910000,
       "earnings": 15463000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 315675000,
+      "earnings": 28254000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 313817000,
+      "earnings": 27781000
     }
   ],
   "growth": {
-    "q0": 0.089700006,
-    "q1": 0.0481,
+    "q0": 0.0481,
+    "q1": 0.134,
     "y0": 0.0402,
     "y1": 0.1384
   },
   "ratings": [
+    {
+      "date": "2026-10-27",
+      "firm": "BWS Financial",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-13",
       "firm": "Barclays",
@@ -140,13 +147,6 @@
       "from": null,
       "to": "Market Perform",
       "action": "init"
-    },
-    {
-      "date": "2025-05-15",
-      "firm": "BWS Financial",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
     }
   ],
   "holders": [
@@ -216,9 +216,9 @@
     {
       "name": "iShares Trust-iShares Russell 2000 ETF",
       "kind": "fond",
-      "pct": 2.41,
-      "shares": 502694,
-      "date": "2026-08-31"
+      "pct": 2.43,
+      "shares": 507024,
+      "date": "2026-09-30"
     }
   ],
   "insider_net": {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.737,
-    "enterprise_value": 3011921408,
-    "ev_ebitda": 18.073,
-    "ev_revenue": 2.723,
+    "enterprise_value": 3077051904,
+    "ev_ebitda": 18.464,
+    "ev_revenue": 2.782,
     "float_shares": 19997318,
     "short_shares": 1304061,
     "short_pct_float": 7.7,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.19690001,
   "inst_count": 424,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.23,
-      "actual": 1.0865,
-      "surprise_pct": -11.67
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.715,
@@ -269,6 +263,12 @@
       "estimate": 1.535,
       "actual": 1.3571,
       "surprise_pct": -11.59
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.184,
+      "actual": 1.3414,
+      "surprise_pct": 13.29
     }
   ],
   "insiders": [

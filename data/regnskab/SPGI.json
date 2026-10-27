@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T21:17:43.420Z",
+  "updated_at": "2026-10-27T21:00:12.316Z",
   "source": "Yahoo Finance",
   "symbol": "SPGI",
   "summary": "S&P Global Inc., together with its subsidiaries, provides benchmarks, data, analytics, and workflow solutions in the global capital, energy and commodity, and automotive markets. It operates through four segments: S&P Global Market Intelligence, S&P Global Ratings, S&P Global Energy, and S&P Dow Jones Indices. The S&P Global Market Intelligence segment provides multi-asset-class data and analytics integrated with purpose-built workflow solutions. This segment offers Data, Analytics & Insights, a desktop product suite that provides data, analytics, and third-party research for global finance and corporate professionals; research, reference data, market data, derived analytics, and valuation services; enterprise solutions, such as software and workflow solutions; and credit and risk solutions for selling Ratings' credit ratings and related data and research, analytics, and financial risk solutions. The S&P Global Ratings segment operates as an independent provider of credit ratings, research, and analytics offering investors information and independent benchmarks for their investment and financial decisions as well as access to the capital markets. The S&P Global Energy segment provides information and benchmark prices for the energy and commodity markets. The S&P Dow Jones Indices segment operates as an index provider that maintains various valuation and index benchmarks for investment advisors, wealth managers, and institutional investors. It has operations in the United States, European region, Asia, and internationally. S&P Global Inc. was founded in 1860 and is headquartered in New York, New York.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-27",
   "earnings_estimated": false,
   "earnings_call": "2026-10-27",
-  "eps_estimate": 4.41835,
+  "eps_estimate": 4.04505,
   "analysts": {
     "strong_buy": 6,
     "buy": 17,
@@ -51,16 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 3755000000,
-      "earnings": 1072000000
-    },
-    {
-      "q": "3Q2025",
-      "revenue": 3888000000,
-      "earnings": 1176000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 3916000000,
       "earnings": 1134000000
@@ -69,11 +59,21 @@
       "q": "1Q2026",
       "revenue": 4171000000,
       "earnings": 1395000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 4146000000,
+      "earnings": 1217000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 3678000000,
+      "earnings": 1240000000
     }
   ],
   "growth": {
-    "q0": -0.0659,
-    "q1": -0.059299998,
+    "q0": -0.059299998,
+    "q1": 0.0279,
     "y0": 0.0015,
     "y1": 0.129
   },
@@ -153,70 +153,70 @@
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 8.13,
+      "pct": 8.27,
       "shares": 23981586,
       "date": "2026-06-30"
     },
     {
       "name": "Vanguard Capital Management LLC",
       "kind": "institution",
-      "pct": 6.55,
+      "pct": 6.66,
       "shares": 19302219,
       "date": "2026-06-30"
     },
     {
       "name": "State Street Corporation",
       "kind": "institution",
-      "pct": 4.91,
+      "pct": 5,
       "shares": 14482789,
       "date": "2026-06-30"
     },
     {
       "name": "TCI Fund Management Ltd",
       "kind": "institution",
-      "pct": 4.78,
+      "pct": 4.86,
       "shares": 14081957,
       "date": "2026-06-30"
     },
     {
       "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
       "kind": "fond",
-      "pct": 3.1,
+      "pct": 3.15,
       "shares": 9144261,
       "date": "2026-06-30"
     },
     {
       "name": "VANGUARD INDEX FUNDS-Vanguard 500 Index Fund",
       "kind": "fond",
-      "pct": 2.66,
+      "pct": 2.71,
       "shares": 7855910,
       "date": "2026-06-30"
     },
     {
       "name": "Morgan Stanley",
       "kind": "institution",
-      "pct": 2.48,
+      "pct": 2.52,
       "shares": 7309278,
       "date": "2026-06-30"
     },
     {
       "name": "Geode Capital Management, LLC",
       "kind": "institution",
-      "pct": 2.34,
+      "pct": 2.38,
       "shares": 6903684,
       "date": "2026-06-30"
     },
     {
       "name": "Vanguard Portfolio Management LLC",
       "kind": "institution",
-      "pct": 2.13,
+      "pct": 2.16,
       "shares": 6266316,
       "date": "2026-06-30"
     },
     {
       "name": "Wellington Management Group, LLP",
       "kind": "institution",
-      "pct": 1.81,
+      "pct": 1.84,
       "shares": 5327461,
       "date": "2026-06-30"
     }
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.095,
-    "enterprise_value": 149504393216,
-    "ev_ebitda": 18.36,
-    "ev_revenue": 9.273,
+    "enterprise_value": 149604614144,
+    "ev_ebitda": 18.372,
+    "ev_revenue": 9.28,
     "float_shares": 294086584,
     "short_shares": 6457167,
     "short_pct_float": 2.19,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-11-25",
   "dividend_date": null,
   "payout_ratio": 0.2349,
-  "inst_count": 2858,
+  "inst_count": 2856,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 4.40892,
-      "actual": 4.73,
-      "surprise_pct": 7.28
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 4.33611,
@@ -269,6 +263,12 @@
       "estimate": 5.01771,
       "actual": 4.87,
       "surprise_pct": -2.94
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 4.41835,
+      "actual": 4.58,
+      "surprise_pct": 3.66
     }
   ],
   "insiders": [

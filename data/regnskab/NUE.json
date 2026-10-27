@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T21:17:43.026Z",
+  "updated_at": "2026-10-27T21:00:11.802Z",
   "source": "Yahoo Finance",
   "symbol": "NUE",
   "summary": "Nucor Corporation engages in the manufacture and sale of steel and steel products. The company operates in three segments: Steel Mills, Steel Products, and Raw Materials. The Steel Mills segment produces hot-rolled, cold-rolled, and galvanized sheet steel products; plate steel products; wide-flange beams, beam blanks, and H-piling and sheet piling structural steel products; and bar steel products, such as blooms, billets, concrete reinforcing and merchant bars, and engineered special bar quality products. This segment sells its products to steel service centers, fabricators, and manufacturers in the United States, Canada, and Mexico, as well as engages in the steel trading and rebar distribution businesses. The Steel Products segment offers steel joists and joist girders, steel decks, and galvanized torque tubes for use in solar arrays, hollow structural section steel tubing, electrical conduit, fabricated concrete reinforcing steel, cold finished steel, steel fasteners, steel grating and expanded metal, wire and wire mesh, metal building systems, insulated metal panels, steel racking, overhead doors, and utility towers and structures for communications and energy transmission. This segment is also involved in the piling distribution business. The Raw Materials segment produces direct reduced iron (DRI); brokers ferrous and nonferrous metals, pig iron, hot briquetted iron, and DRI; supplies ferro-alloys; processes ferrous and nonferrous scrap metal; and engages in the natural gas production and industrial gas business. This segment sells its ferrous scrap to electric arc furnace steel mills and foundries for manufacturing process; and nonferrous scrap metal to aluminum can producers, secondary aluminum smelters, steel mills and other processors, and consumers of various nonferrous metals. Nucor Corporation was founded in 1905 and is based in Charlotte, North Carolina.",
@@ -7,10 +7,10 @@
   "website": "https://nucor.com",
   "employees": 33000,
   "ceo": "Mr. Leon J. Topalian",
-  "next_earnings": "2026-10-26",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-25",
+  "earnings_estimated": true,
   "earnings_call": "2026-10-27",
-  "eps_estimate": 5.82795,
+  "eps_estimate": 5.61537,
   "analysts": {
     "strong_buy": 3,
     "buy": 10,
@@ -51,16 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 8456000000,
-      "earnings": 603000000
-    },
-    {
-      "q": "3Q2025",
-      "revenue": 8521000000,
-      "earnings": 607000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 7687000000,
       "earnings": 378000000
@@ -69,13 +59,23 @@
       "q": "1Q2026",
       "revenue": 9496000000,
       "earnings": 743000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 10397000000,
+      "earnings": 1156000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 11249000000,
+      "earnings": 1319000000
     }
   ],
   "growth": {
-    "q0": 1.216,
-    "q1": 2.2459,
-    "y0": 1.5277001,
-    "y1": 0.0752
+    "q0": 2.2459,
+    "q1": 0.8689,
+    "y0": 1.5167999,
+    "y1": 0.0799
   },
   "ratings": [
     {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.852,
-    "enterprise_value": 64122880000,
-    "ev_ebitda": 11.287,
-    "ev_revenue": 1.776,
+    "enterprise_value": 63950454784,
+    "ev_ebitda": 11.257,
+    "ev_revenue": 1.771,
     "float_shares": 223447585,
     "short_shares": 4364734,
     "short_pct_float": 2.56,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.1778,
   "inst_count": 2004,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 2.16882,
-      "actual": 2.63,
-      "surprise_pct": 21.26
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.80898,
@@ -269,6 +263,12 @@
       "estimate": 4.52584,
       "actual": 4.84,
       "surprise_pct": 6.94
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 5.82795,
+      "actual": 5.8,
+      "surprise_pct": -0.48
     }
   ],
   "insiders": [
@@ -280,24 +280,6 @@
       "value": 0,
       "shares": 1800,
       "date": "2026-08-17"
-    },
-    {
-      "name": "TOPALIAN LEON J",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 42.46 per share.",
-      "value": 1103960,
-      "shares": 26000,
-      "date": "2026-08-14"
-    },
-    {
-      "name": "BEHR ALLEN C.",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 110.74 per share.",
-      "value": 857017,
-      "shares": 7739,
-      "date": "2026-08-14"
     },
     {
       "name": "TOPALIAN LEON J",
@@ -318,6 +300,24 @@
       "date": "2026-08-14"
     },
     {
+      "name": "TOPALIAN LEON J",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 42.46 per share.",
+      "value": 1103960,
+      "shares": 26000,
+      "date": "2026-08-14"
+    },
+    {
+      "name": "BEHR ALLEN C.",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 110.74 per share.",
+      "value": 857017,
+      "shares": 7739,
+      "date": "2026-08-14"
+    },
+    {
       "name": "BATTERBEE THOMAS J.",
       "role": "Officer",
       "kind": "sell",
@@ -329,15 +329,6 @@
     {
       "name": "LAXTON STEPHEN D.",
       "role": "President",
-      "kind": "other",
-      "text": "Stock Gift at price 0.00 per share.",
-      "value": 0,
-      "shares": 2409,
-      "date": "2026-07-30"
-    },
-    {
-      "name": "LAXTON STEPHEN D.",
-      "role": "President",
       "kind": "sell",
       "text": "Sale at price 256.96 per share.",
       "value": 1019617,
@@ -345,13 +336,13 @@
       "date": "2026-07-30"
     },
     {
-      "name": "HOLLATZ JOHN J",
-      "role": "Officer",
+      "name": "LAXTON STEPHEN D.",
+      "role": "President",
       "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 130.71 - 133.03 per share.",
-      "value": 1391986,
-      "shares": 10560,
-      "date": "2026-06-03"
+      "text": "Stock Gift at price 0.00 per share.",
+      "value": 0,
+      "shares": 2409,
+      "date": "2026-07-30"
     },
     {
       "name": "HOLLATZ JOHN J",
@@ -359,6 +350,15 @@
       "kind": "sell",
       "text": "Sale at price 258.33 - 258.57 per share.",
       "value": 2729291,
+      "shares": 10560,
+      "date": "2026-06-03"
+    },
+    {
+      "name": "HOLLATZ JOHN J",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 130.71 - 133.03 per share.",
+      "value": 1391986,
       "shares": 10560,
       "date": "2026-06-03"
     }

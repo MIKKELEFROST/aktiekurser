@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T21:17:41.501Z",
+  "updated_at": "2026-10-27T21:00:09.839Z",
   "source": "Yahoo Finance",
   "symbol": "AGYS",
   "summary": "Agilysys, Inc. operates as a developer and marketer of software-enabled solutions and services to the hospitality industry in North America, Europe, the Asia-Pacific, and India. The company offers software solutions fully integrated with third party hardware and operating systems; cloud applications, support, and maintenance; subscription and maintenance; and professional services. Its hospitality software solutions comprise hospitality experience cloud offers solution ecosystems that combine core operational systems for property management, point-of-sale (POS), and inventory and procurement; and Hospitality Solution Studios. The company also provides food and beverage ecosystem solutions, such as the InfoGenesis POS, IG Kiosk, a self-service, customer-facing kiosk point of sale solution; and IG KDS, a digital kitchen management solution. Its food and beverage experience enhancer solutions include IG OnDemand; IG Fly; IG Quick Pay payment solution; IG Smart Menu; IG Digital Menu Board; IG PanOptic; Pay; eCash; gift card solution; and Analyze. In addition, the company offers hospitality and leisure ecosystem solutions comprising LMS, an on-premises or hosted, web, and mobile-enabled PMS solution; Versa; and Stay, a cloud-native SaaS property management system. Its hospitality and leisure and experience enhancer solutions consist of Book, Express Kiosk and Express Mobile for check-in and check-out; Spa software; Golf; Sales and Catering; Service; Authorize; DataMagine; Reserve solution; Digital Marketing solution; Retail POS solution; Central Reservations; Loyalty and Promotions; Membership; Residence Management; and Guest App. Further, the company provides inventory and procurement ecosystem solutions, including the Eatec solution and Stratton Warren System. The company was formerly known as Pioneer-Standard Electronics, Inc. and changed its name to Agilysys, Inc. in 2003. Agilysys, Inc. was founded in 1932 and is headquartered in Alpharetta, Georgia.",
@@ -7,10 +7,10 @@
   "website": "https://www.agilysys.com",
   "employees": 2413,
   "ceo": "Mr. Ramesh  Srinivasan",
-  "next_earnings": "2026-10-26",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-25",
+  "earnings_estimated": true,
   "earnings_call": "2026-10-26",
-  "eps_estimate": 0.55125,
+  "eps_estimate": 0.5925,
   "analysts": {
     "strong_buy": 2,
     "buy": 5,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 8
   },
-  "target_mean": 134.5,
+  "target_mean": 142.33333,
   "target_high": 159,
-  "target_low": 118,
+  "target_low": 135,
   "target_analysts": 6,
   "statements": [
     {
@@ -72,12 +72,33 @@
     }
   ],
   "growth": {
-    "q0": 0.3781,
-    "q1": 0.48509997,
-    "y0": 0.3722,
-    "y1": 0.3033
+    "q0": 0.4107,
+    "q1": 0.3075,
+    "y0": 0.4406,
+    "y1": 0.2773
   },
   "ratings": [
+    {
+      "date": "2026-10-27",
+      "firm": "Oppenheimer",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "reit"
+    },
+    {
+      "date": "2026-10-27",
+      "firm": "Needham",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-27",
+      "firm": "Piper Sandler",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-08-10",
       "firm": "Needham",
@@ -122,27 +143,6 @@
     },
     {
       "date": "2026-04-28",
-      "firm": "Needham",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "reit"
-    },
-    {
-      "date": "2026-04-09",
-      "firm": "Oppenheimer",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-02-17",
-      "firm": "Needham",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-01-27",
       "firm": "Needham",
       "from": "Buy",
       "to": "Buy",
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.364,
-    "enterprise_value": 3290340096,
-    "ev_ebitda": 67.491,
-    "ev_revenue": 9.961,
+    "enterprise_value": 3367992576,
+    "ev_ebitda": 69.084,
+    "ev_revenue": 10.196,
     "float_shares": 26862117,
     "short_shares": 1659076,
     "short_pct_float": 7.36,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 400,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.38333,
-      "actual": 0.4,
-      "surprise_pct": 4.35
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.45571,
@@ -269,6 +263,12 @@
       "estimate": 0.4025,
       "actual": 0.49,
       "surprise_pct": 21.74
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.55125,
+      "actual": 0.67,
+      "surprise_pct": 21.54
     }
   ],
   "insiders": [
@@ -336,25 +336,25 @@
       "date": "2026-05-26"
     },
     {
+      "name": "JONES JERRY C",
+      "role": "Director",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 79.84 per share.",
+      "value": 77684,
+      "shares": 973,
+      "date": "2026-05-22"
+    },
+    {
+      "name": "KAUFMAN MICHAEL A. J.D.",
+      "role": "Director",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 79.84 per share.",
+      "value": 77684,
+      "shares": 973,
+      "date": "2026-05-22"
+    },
+    {
       "name": "JONES DANA SUE",
-      "role": "Director",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 79.84 per share.",
-      "value": 77684,
-      "shares": 973,
-      "date": "2026-05-22"
-    },
-    {
-      "name": "POPE LISA",
-      "role": "Director",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 79.84 per share.",
-      "value": 77684,
-      "shares": 973,
-      "date": "2026-05-22"
-    },
-    {
-      "name": "KEATING MELVIN L",
       "role": "Director",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 79.84 per share.",

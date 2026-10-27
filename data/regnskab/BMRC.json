@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T21:17:41.773Z",
+  "updated_at": "2026-10-27T21:00:10.222Z",
   "source": "Yahoo Finance",
   "symbol": "BMRC",
   "summary": "Bank of Marin Bancorp operates as the holding company for Bank of Marin that provides a range of financial services to small to medium-sized businesses, not-for-profit organizations, and commercial real estate investors in the United States. The company offers personal and business checking and savings accounts; and individual retirement, health savings, and demand deposit marketplace accounts, as well as time certificates of deposit, certificate of deposit account registry, and insured cash sweep services. It also provides commercial real estate, commercial and industrial, small business, and consumer loans, as well as construction financing and home equity lines of credit. In addition, the company offers merchant and payroll services; commercial equipment leasing program; payment solutions; treasury management services; credit cards; automated teller machines; and mobile deposit, remote deposit capture, automated clearing house, wire transfer, and image lockbox services. Further, it provides wealth management and trust services comprising customized investment portfolio management, trust administration, estate settlement, and custody services; international banking; and telephone and digital banking services. The company was founded in 1989 and is headquartered in Novato, California.",
@@ -7,10 +7,10 @@
   "website": "https://www.bankofmarin.com",
   "employees": 315,
   "ceo": "Mr. Timothy D. Myers",
-  "next_earnings": "2026-10-26",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-25",
+  "earnings_estimated": true,
   "earnings_call": "2026-10-26",
-  "eps_estimate": 0.57333,
+  "eps_estimate": 0.64667,
   "analysts": {
     "strong_buy": 1,
     "buy": 1,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 6
   },
-  "target_mean": 31.6,
+  "target_mean": 31.2,
   "target_high": 34,
   "target_low": 29,
   "target_analysts": 5,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.2199,
-    "q1": 0.14479999,
-    "y0": 0.48830003,
-    "y1": 0.0654
+    "q0": 0.2339,
+    "q1": 0.060399998,
+    "y0": 0.554,
+    "y1": 0.0218
   },
   "ratings": [
+    {
+      "date": "2026-10-27",
+      "firm": "DA Davidson",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-01",
       "firm": "Piper Sandler",
@@ -139,13 +146,6 @@
       "firm": "Keefe, Bruyette & Woods",
       "from": "Outperform",
       "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2025-10-28",
-      "firm": "DA Davidson",
-      "from": "Buy",
-      "to": "Buy",
       "action": "main"
     }
   ],
@@ -216,9 +216,9 @@
     {
       "name": "iShares Trust-iShares Russell 2000 ETF",
       "kind": "fond",
-      "pct": 2.41,
-      "shares": 389543,
-      "date": "2026-08-31"
+      "pct": 2.55,
+      "shares": 413394,
+      "date": "2026-09-30"
     }
   ],
   "insider_net": {
@@ -231,27 +231,21 @@
   },
   "extras": {
     "beta": 0.798,
-    "enterprise_value": 221817552,
+    "enterprise_value": 232853104,
     "ev_ebitda": null,
-    "ev_revenue": 3.671,
+    "ev_revenue": 3.854,
     "float_shares": 15211959,
     "short_shares": 1056460,
-    "short_pct_float": 6.86,
+    "short_pct_float": 6.84,
     "short_ratio": 6.7,
     "last_split": "2:1",
     "last_split_date": "2018-11-28"
   },
-  "ex_dividend": "2026-08-06",
+  "ex_dividend": "2026-11-05",
   "dividend_date": null,
   "payout_ratio": 1.6128999,
-  "inst_count": 201,
+  "inst_count": 202,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.41333,
-      "actual": 0.47,
-      "surprise_pct": 13.71
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.515,
@@ -269,6 +263,12 @@
       "estimate": 0.515,
       "actual": 0.58,
       "surprise_pct": 12.62
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.57333,
+      "actual": 0.62,
+      "surprise_pct": 8.14
     }
   ],
   "insiders": [

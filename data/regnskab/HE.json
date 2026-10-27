@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T21:17:42.489Z",
+  "updated_at": "2026-10-27T21:00:11.135Z",
   "source": "Yahoo Finance",
   "symbol": "HE",
   "summary": "Hawaiian Electric Industries, Inc. together with its subsidiaries, engages in the electric utility business. The company engages in the production, purchase, transmission, distribution, and sale of electricity in the islands of Oahu; Hawaii; and Maui, Lanai, and Molokai; and renewable energy sources and potential sources include wind, solar, photovoltaic, geothermal, wave, hydroelectric, municipal waste, and other biofuels. It also invests in non-regulated renewable energy and sustainable infrastructure in the State of Hawaii. In addition, the company serves suburban communities, resorts, the United States Armed Forces installations, and agricultural operations. Hawaiian Electric Industries, Inc. was founded in 1891 and is headquartered in Honolulu, Hawaii.",
@@ -23,8 +23,54 @@
   "target_high": 12,
   "target_low": 6.5,
   "target_analysts": 4,
-  "statements": null,
-  "quarterly": [],
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 3741985000,
+      "net": 241138000,
+      "margin": 6.4
+    },
+    {
+      "year": "2023",
+      "revenue": 3682166000,
+      "net": 199238000,
+      "margin": 5.4
+    },
+    {
+      "year": "2024",
+      "revenue": 3219850000,
+      "net": -1426009000,
+      "margin": -44.3
+    },
+    {
+      "year": "2025",
+      "revenue": 3086896000,
+      "net": 123120000,
+      "margin": 4
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "1Q2023",
+      "revenue": 928237000,
+      "earnings": 54721000
+    },
+    {
+      "q": "2Q2023",
+      "revenue": 895685000,
+      "earnings": 54610000
+    },
+    {
+      "q": "3Q2023",
+      "revenue": 901873000,
+      "earnings": 0
+    },
+    {
+      "q": "4Q2023",
+      "revenue": 961351000,
+      "earnings": 0
+    }
+  ],
   "growth": {
     "q0": -0.67370003,
     "q1": 0.2,
@@ -161,18 +207,18 @@
       "date": "2026-06-30"
     },
     {
+      "name": "iShares Trust-iShares Russell 2000 ETF",
+      "kind": "fond",
+      "pct": 2.54,
+      "shares": 4383696,
+      "date": "2026-09-30"
+    },
+    {
       "name": "Geode Capital Management, LLC",
       "kind": "institution",
       "pct": 2.51,
       "shares": 4335526,
       "date": "2026-06-30"
-    },
-    {
-      "name": "iShares Trust-iShares Russell 2000 ETF",
-      "kind": "fond",
-      "pct": 2.46,
-      "shares": 4251157,
-      "date": "2026-08-31"
     }
   ],
   "insider_net": {
@@ -185,9 +231,9 @@
   },
   "extras": {
     "beta": 0.504,
-    "enterprise_value": 4014565632,
-    "ev_ebitda": 7.798,
-    "ev_revenue": 1.223,
+    "enterprise_value": 3980019968,
+    "ev_ebitda": 7.731,
+    "ev_revenue": 1.212,
     "float_shares": 172068183,
     "short_shares": 18344860,
     "short_pct_float": 14.62,
@@ -198,7 +244,7 @@
   "ex_dividend": "2023-08-17",
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 437,
+  "inst_count": 436,
   "eps_history": [
     {
       "quarter": "2025-09-30",

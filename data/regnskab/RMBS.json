@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T21:17:43.252Z",
+  "updated_at": "2026-10-27T21:00:12.096Z",
   "source": "Yahoo Finance",
   "symbol": "RMBS",
   "summary": "Rambus Inc. manufactures and sells semiconductor products in the United States, South Korea, Singapore, and internationally. It offers memory interface chips comprising DDR5 memory interface chips which include registering clock driver, multiplexed registering clock driver, multiplexed data buffer, power management integrated circuits, serial presence detect hubs, temperature sensors, and client clock driver products; and DDR4 memory interface chips. The company also provides silicon IP, such as interface and security IP solutions that move and protect data in advanced artificial intelligence, data center, government, and automotive applications; interface IP solutions for high-speed memory and chip-to-chip digital controller IP; security IP solutions, including crypto cores, hardware roots of trust, high-speed protocol engines, and chip provisioning technologies. In addition, it offers portfolio of patents that covers memory architecture, high-speed serial links, and security products. The company sells its products to memory module manufacturers, OEMs and hyperscalers, as well as to chip makers. It markets its products and services through its direct sales force and distributors. Rambus Inc. was incorporated in 1990 and is headquartered in San Jose, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-26",
   "earnings_estimated": false,
   "earnings_call": "2026-10-26",
-  "eps_estimate": 0.78833,
+  "eps_estimate": 0.87429,
   "analysts": {
     "strong_buy": 0,
     "buy": 6,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 8
   },
-  "target_mean": 141.57143,
+  "target_mean": 140.57143,
   "target_high": 165,
-  "target_low": 100,
+  "target_low": 103,
   "target_analysts": 7,
   "statements": [
     {
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 179493000,
-      "earnings": 48377000
-    },
-    {
       "q": "4Q2025",
       "revenue": 190068000,
       "earnings": 63840000
@@ -69,15 +64,34 @@
       "q": "2Q2026",
       "revenue": 207385000,
       "earnings": 67605000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 218289000,
+      "earnings": 74565000
     }
   ],
   "growth": {
-    "q0": 0.34849998,
-    "q1": 0.23040001,
-    "y0": 0.2368,
-    "y1": 0.24200001
+    "q0": 0.2857,
+    "q1": 0.39419997,
+    "y0": 0.2658,
+    "y1": 0.2497
   },
   "ratings": [
+    {
+      "date": "2026-10-27",
+      "firm": "Rosenblatt",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-27",
+      "firm": "Susquehanna",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-07-28",
       "firm": "Evercore ISI Group",
@@ -133,20 +147,6 @@
       "from": "Outperform",
       "to": "Neutral",
       "action": "down"
-    },
-    {
-      "date": "2025-04-29",
-      "firm": "Rosenblatt",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2025-02-04",
-      "firm": "Susquehanna",
-      "from": "Positive",
-      "to": "Positive",
-      "action": "main"
     }
   ],
   "holders": [
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 1,
-    "sells": 12,
+    "sells": 11,
     "bought": 41320,
-    "sold": 93210,
-    "net_pct": -5.9
+    "sold": 90238,
+    "net_pct": -5.6
   },
   "extras": {
     "beta": 1.847,
-    "enterprise_value": 8486591488,
-    "ev_ebitda": 26.813,
-    "ev_revenue": 11.221,
+    "enterprise_value": 8993106944,
+    "ev_ebitda": 28.414,
+    "ev_revenue": 11.89,
     "float_shares": 107615602,
     "short_shares": 4784389,
     "short_pct_float": 5.98,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 827,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.63,
-      "actual": 0.5846,
-      "surprise_pct": -7.21
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.6775,
@@ -269,6 +263,12 @@
       "estimate": 0.715,
       "actual": 0.77,
       "surprise_pct": 7.69
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.78833,
+      "actual": 0.84,
+      "surprise_pct": 6.55
     }
   ],
   "insiders": [

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T21:17:41.965Z",
+  "updated_at": "2026-10-27T21:00:10.475Z",
   "source": "Yahoo Finance",
   "symbol": "CNC",
   "summary": "Centene Corporation operates as a managed care company that provides programs and services to under-insured families, and commercial organizations in the United States. It operates through four segments: Medicaid, Medicare, Commercial, and Other. The Medicaid segment offers the temporary assistance for needy families; medicaid expansion; aged, blind, or disabled; and children's health insurance programs, as well as long-term services and supports; foster care; and medicare-medicaid plans. This segment also provides healthcare products and services. The Medicare segment offers special needs and medicare supplement, and prescription drug plans. The Commercial segment provides health insurance marketplace product for individual and commercial group. The Other segment operates clinical healthcare and pharmacies, as well as offers vision and dental, behavioral health, and centralized services. It provides services through primary and specialty care physicians, hospitals, behavioral health practitioners, and ancillary providers. The company was founded in 1984 and is headquartered in Saint Louis, Missouri.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-27",
   "earnings_estimated": false,
   "earnings_call": "2026-10-27",
-  "eps_estimate": 0.09721,
+  "eps_estimate": -1.09076,
   "analysts": {
     "strong_buy": 1,
     "buy": 7,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 49690000000,
-      "earnings": -6631000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 49725000000,
       "earnings": -1101000000
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 53579000000,
       "earnings": 1091000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 50647000000,
+      "earnings": -71000000
     }
   ],
   "growth": {
-    "q0": -0.8056,
-    "q1": 0.08229999,
-    "y0": 1.3484,
-    "y1": 0.094799995
+    "q0": 0.0834,
+    "q1": -0.001,
+    "y0": 1.3505,
+    "y1": 0.0938
   },
   "ratings": [
     {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.13,
-    "enterprise_value": 23806629888,
-    "ev_ebitda": 5.169,
-    "ev_revenue": 0.132,
+    "enterprise_value": 22749478912,
+    "ev_ebitda": 4.939,
+    "ev_revenue": 0.126,
     "float_shares": 463668647,
     "short_shares": 10512889,
     "short_pct_float": 2.44,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 1444,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.16432,
-      "actual": 0.5,
-      "surprise_pct": 404.28
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -1.22007,
@@ -269,6 +263,12 @@
       "estimate": 1.07891,
       "actual": 2.51,
       "surprise_pct": 132.64
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.09721,
+      "actual": 0.58,
+      "surprise_pct": 496.65
     }
   ],
   "insiders": [

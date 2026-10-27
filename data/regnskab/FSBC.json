@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T21:17:42.341Z",
+  "updated_at": "2026-10-27T21:00:10.951Z",
   "source": "Yahoo Finance",
   "symbol": "FSBC",
   "summary": "Five Star Bancorp operates as the bank holding company for Five Star Bank that provides banking products and services to small and medium-sized businesses, professionals, and individuals primarily in Northern California. The company offers deposit products, including checking, savings, money market, and term certificate accounts, as well as time deposits. It also provides debit cards, remote deposit capture, online banking, mobile banking, and direct deposit services. In addition, the company offers loan products, such as commercial real estate loans; commercial land and construction loans; residential real estate and construction loans; farmland loans; the U.S. small business administration loans; and consumer and other loans, as well as operating lines of credit. Further, its investment portfolio consists of U.S. government agency securities, mortgage-backed securities, and obligations of states and political subdivisions. Five Star Bancorp was founded in 1999 and is headquartered in Rancho Cordova, California.",
@@ -7,10 +7,10 @@
   "website": "https://www.fivestarbank.com",
   "employees": 233,
   "ceo": "Mr. James Eugene Beckwith",
-  "next_earnings": "2026-10-26",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-25",
+  "earnings_estimated": true,
   "earnings_call": "2026-10-27",
-  "eps_estimate": 0.854,
+  "eps_estimate": 0.83,
   "analysts": {
     "strong_buy": 1,
     "buy": 2,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 41314000,
-      "earnings": 16344000
-    },
-    {
       "q": "4Q2025",
       "revenue": 43465000,
       "earnings": 17643000
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 47955000,
       "earnings": 19399000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 52620000,
+      "earnings": 21909000
     }
   ],
   "growth": {
-    "q0": 0.1091,
-    "q1": 0.0361,
-    "y0": 0.2021,
-    "y1": 0.0579
+    "q0": 0,
+    "q1": -0.0201,
+    "y0": 0.18969999,
+    "y1": 0.069
   },
   "ratings": [
     {
@@ -200,6 +200,13 @@
       "date": "2026-09-30"
     },
     {
+      "name": "iShares Trust-iShares Russell 2000 ETF",
+      "kind": "fond",
+      "pct": 2.01,
+      "shares": 494050,
+      "date": "2026-09-30"
+    },
+    {
       "name": "T. Rowe Price Eqy. Fd.s, Inc.-T. Rowe Price Inst. Small-Cap Stock Fd.",
       "kind": "fond",
       "pct": 1.99,
@@ -211,13 +218,6 @@
       "kind": "institution",
       "pct": 1.94,
       "shares": 475523,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "CAPTRUST Financial Advisors",
-      "kind": "institution",
-      "pct": 1.9,
-      "shares": 467107,
       "date": "2026-06-30"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.537,
-    "enterprise_value": 482121312,
+    "enterprise_value": 492181312,
     "ev_ebitda": null,
-    "ev_revenue": 2.876,
+    "ev_revenue": 2.936,
     "float_shares": 17989264,
     "short_shares": 1278886,
     "short_pct_float": 6.43,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.2663,
   "inst_count": 238,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.708,
-      "actual": 0.77,
-      "surprise_pct": 8.76
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.762,
@@ -269,6 +263,12 @@
       "estimate": 0.86,
       "actual": 0.91,
       "surprise_pct": 5.81
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.854,
+      "actual": 0.92,
+      "surprise_pct": 7.73
     }
   ],
   "insiders": [
@@ -280,6 +280,15 @@
       "value": 0,
       "shares": 50000,
       "date": "2026-08-04"
+    },
+    {
+      "name": "DEARY-BELL SHANNON",
+      "role": "Director",
+      "kind": "buy",
+      "text": "Purchase at price 44.00 per share.",
+      "value": 250008,
+      "shares": 5682,
+      "date": "2026-07-22"
     },
     {
       "name": "LUCAS DONNA L",
@@ -318,15 +327,6 @@
       "date": "2026-07-22"
     },
     {
-      "name": "DEARY-BELL SHANNON",
-      "role": "Director",
-      "kind": "buy",
-      "text": "Purchase at price 44.00 per share.",
-      "value": 250008,
-      "shares": 5682,
-      "date": "2026-07-22"
-    },
-    {
       "name": "ALLBAUGH LARRY EUGENE",
       "role": "Director and Beneficial Owner of more than 10% of a Class of Security",
       "kind": "other",
@@ -345,21 +345,21 @@
       "date": "2026-05-26"
     },
     {
-      "name": "LEE MICHAEL EUGENE",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 41.23 per share.",
-      "value": 35746,
-      "shares": 867,
-      "date": "2026-05-21"
-    },
-    {
       "name": "LUCK HEATHER CHRISTINA",
       "role": "Chief Financial Officer",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 2715,
+      "date": "2026-05-21"
+    },
+    {
+      "name": "LEE MICHAEL EUGENE",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 905,
       "date": "2026-05-21"
     }
   ],

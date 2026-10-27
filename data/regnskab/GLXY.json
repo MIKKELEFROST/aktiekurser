@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T21:17:42.413Z",
+  "updated_at": "2026-10-27T21:00:11.041Z",
   "source": "Yahoo Finance",
   "symbol": "GLXY",
   "summary": "Galaxy Digital Inc. engages in the digital asset and data centre infrastructure businesses in North America and internationally. It operates through Digital Assets, Data Centers, and Treasury and Corporate segments. The Digital Assets segment provides over-the-counter spot and derivatives trading, lending, and structured products, as well as mergers and acquisitions advisory, and equity and debt capital markets services. This segment also manages investments in the digital assets' ecosystem; and offers blockchain-centric technology and infrastructure solutions, including staking, tokenization, and custodial technology. The Data Centers segment comprises the Helios infrastructure assets. The Treasury and Corporate segment engages in managing a portfolio of digital assets, ventures, private equity, and fund investments, as well as in bitcoin mining operations. It also offers GalaxyOne, a retail financial technology platform designed for individual investors seeking access to traditional and digital markets. The company has a strategic collaboration with BNY to advance digital asset infrastructure. The company was founded in 2018 and is headquartered in New York, New York.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-27",
   "earnings_estimated": false,
   "earnings_call": "2026-10-27",
-  "eps_estimate": 0.19643,
+  "eps_estimate": -0.15429,
   "analysts": {
     "strong_buy": 5,
     "buy": 10,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 40991421060,
-      "earnings": 708549520
-    },
-    {
       "q": "4Q2025",
       "revenue": 13986361220,
       "earnings": -658914270
@@ -69,15 +64,34 @@
       "q": "2Q2026",
       "revenue": 12251887300,
       "earnings": -120002070
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 12180037940,
+      "earnings": 0
     }
   ],
   "growth": {
-    "q0": -0.80550003,
-    "q1": 0.8571,
+    "q0": 0.8571,
+    "q1": 0.8807,
     "y0": -0.20549999,
     "y1": 0.5136
   },
   "ratings": [
+    {
+      "date": "2026-10-27",
+      "firm": "Chardan Capital",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-27",
+      "firm": "BTIG",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-26",
       "firm": "Rosenblatt",
@@ -130,20 +144,6 @@
     {
       "date": "2026-08-05",
       "firm": "BTIG",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-05",
-      "firm": "Chardan Capital",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-03",
-      "firm": "Rosenblatt",
       "from": "Buy",
       "to": "Buy",
       "action": "main"
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 3.756,
-    "enterprise_value": 7273342464,
-    "ev_ebitda": 0.128,
-    "ev_revenue": 0.125,
+    "enterprise_value": 7467634688,
+    "ev_ebitda": 0.131,
+    "ev_revenue": 0.128,
     "float_shares": 190247224,
     "short_shares": 32630658,
     "short_pct_float": 19.18,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 488,
+  "inst_count": 487,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.312,
-      "actual": 1.01,
-      "surprise_pct": 223.72
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -1.06333,
@@ -269,6 +263,12 @@
       "estimate": -0.2828,
       "actual": -0.09,
       "surprise_pct": 68.18
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.19643,
+      "actual": 0.66,
+      "surprise_pct": 236
     }
   ],
   "insiders": [

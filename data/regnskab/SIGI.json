@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T21:17:43.362Z",
+  "updated_at": "2026-10-27T21:00:12.234Z",
   "source": "Yahoo Finance",
   "symbol": "SIGI",
   "summary": "Selective Insurance Group, Inc., together with its subsidiaries, provides insurance products and services in the United States. The company operates through four segments: Standard Commercial Lines, Standard Personal Lines, E&S Lines, and Investments. It offers casualty insurance products that covers the financial consequences of third-party bodily injury and/or property damage from an insured's negligent acts, omissions, and legal liabilities; property insurance products, which covers the accidental loss of an insured's real property, personal property, and/or earnings due to the property's loss; and flood insurance products. The company also invests in fixed income investments and commercial mortgage loans, as well as equity securities, short-term investments, and alternative investments, and other investments. It offers its insurance products and services to businesses, non-profit organizations, local government agencies, and individuals through independent retail agents and wholesale general agents. Selective Insurance Group, Inc. was founded in 1926 and is headquartered in Branchville, New Jersey.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-22",
   "earnings_estimated": false,
   "earnings_call": "2026-10-23",
-  "eps_estimate": 2.75125,
+  "eps_estimate": 2.7425,
   "analysts": {
     "strong_buy": 1,
     "buy": 1,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 8
   },
-  "target_mean": 102.57143,
+  "target_mean": 103.28571,
   "target_high": 115,
-  "target_low": 80,
+  "target_low": 85,
   "target_analysts": 7,
   "statements": [
     {
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.0705,
-    "q1": 0.2722,
-    "y0": 0.18270001,
-    "y1": 0.023699999
+    "q0": 0.0671,
+    "q1": 0.27879998,
+    "y0": 0.18360001,
+    "y1": 0.028299998
   },
   "ratings": [
+    {
+      "date": "2026-10-27",
+      "firm": "Morgan Stanley",
+      "from": "Underweight",
+      "to": "Underweight",
+      "action": "main"
+    },
     {
       "date": "2026-09-28",
       "firm": "Piper Sandler",
@@ -140,83 +147,76 @@
       "from": "Neutral",
       "to": "Neutral",
       "action": "main"
-    },
-    {
-      "date": "2026-05-21",
-      "firm": "Oppenheimer",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
     }
   ],
   "holders": [
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 13.06,
+      "pct": 13.18,
       "shares": 7778138,
       "date": "2026-06-30"
     },
     {
       "name": "Vanguard Portfolio Management LLC",
       "kind": "institution",
-      "pct": 5.87,
+      "pct": 5.93,
       "shares": 3495978,
       "date": "2026-06-30"
     },
     {
       "name": "AQR Capital Management, LLC",
       "kind": "institution",
-      "pct": 5.62,
+      "pct": 5.67,
       "shares": 3345130,
       "date": "2026-06-30"
     },
     {
       "name": "Vanguard Capital Management LLC",
       "kind": "institution",
-      "pct": 4.53,
+      "pct": 4.57,
       "shares": 2697663,
       "date": "2026-06-30"
     },
     {
       "name": "State Street Corporation",
       "kind": "institution",
-      "pct": 4.12,
+      "pct": 4.16,
       "shares": 2451382,
       "date": "2026-06-30"
     },
     {
       "name": "American Century Companies Inc",
       "kind": "institution",
-      "pct": 3.74,
+      "pct": 3.78,
       "shares": 2228969,
       "date": "2026-06-30"
     },
     {
       "name": "iShares Trust-iShares Core S&P Mid-Cap ETF",
       "kind": "fond",
-      "pct": 3.56,
+      "pct": 3.59,
       "shares": 2119700,
       "date": "2026-09-30"
     },
     {
       "name": "FMR, LLC",
       "kind": "institution",
-      "pct": 3.26,
+      "pct": 3.29,
       "shares": 1941671,
       "date": "2026-06-30"
     },
     {
       "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
       "kind": "fond",
-      "pct": 3.19,
+      "pct": 3.23,
       "shares": 1902929,
       "date": "2026-06-30"
     },
     {
       "name": "Geode Capital Management, LLC",
       "kind": "institution",
-      "pct": 3.06,
+      "pct": 3.09,
       "shares": 1825150,
       "date": "2026-06-30"
     }
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 12,
-    "sells": 1,
+    "sells": 2,
     "bought": 23097,
-    "sold": 17100,
-    "net_pct": 1.4
+    "sold": 20791,
+    "net_pct": 0.5
   },
   "extras": {
     "beta": 0.254,
-    "enterprise_value": 6408506880,
-    "ev_ebitda": 8.749,
-    "ev_revenue": 1.179,
+    "enterprise_value": 6537118208,
+    "ev_ebitda": 8.925,
+    "ev_revenue": 1.202,
     "float_shares": 55153805,
     "short_shares": 1857547,
     "short_pct_float": 4.12,
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "NICHOLSON CYNTHIA S",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 98.71 per share.",
+      "value": 364342,
+      "shares": 3691,
+      "date": "2026-10-26"
+    },
     {
       "name": "LANZA MICHAEL H",
       "role": "General Counsel",
@@ -351,15 +360,6 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 3047,
-      "date": "2026-05-01"
-    },
-    {
-      "name": "NICHOLSON CYNTHIA S",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 1767,
       "date": "2026-05-01"
     }
   ],

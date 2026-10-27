@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T21:17:42.042Z",
+  "updated_at": "2026-10-27T21:00:10.578Z",
   "source": "Yahoo Finance",
   "symbol": "CTSH",
   "summary": "Cognizant Technology Solutions Corporation, a professional services company, provides consulting and technology, and outsourcing services in North America, Europe, and internationally. It operates through four segments: Financial Services; Health Sciences; Products and Resources; and Communications, Media and Technology. The company provides services including artificial intelligence (AI) and other technology services and solutions, consulting, application development, systems integration, quality engineering and assurance, engineering research and development, application maintenance, infrastructure, security, and business process services and automation. It also offers AI-led automation, which includes advisory, and process and IT automation solutions designed to simplify and accelerate automation adoption; business process outsourcing services, which help deliver business outcomes including revenue growth, increased customer and employee satisfaction, and cost savings; and Cognizant Moment, a digital experience service that uses AI to reimagine customer experiences and engineer strategies aimed at driving growth. In addition, the company develops, licenses, implements, and supports proprietary and third-party software products and platforms; and develops industry-specific products and services. It offers solution to healthcare providers and payers, life sciences companies, banking, capital markets, payments and insurance companies, manufacturers, automakers, retailers, consumer goods, travel and hospitality, communications, media and entertainment, education, information services, and technology companies, as well as businesses providing logistics, energy, and utility services. The company has a strategic partnership with Uniphore Technologies Inc. for the development of AI solutions that combine small language models and AI agents. Cognizant Technology Solutions Corporation was incorporated in 1988 and is headquartered in Teaneck, New Jersey.",
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 29
   },
-  "target_mean": 68.104,
+  "target_mean": 68.864,
   "target_high": 93,
   "target_low": 47,
   "target_analysts": 25,
@@ -51,6 +51,11 @@
   ],
   "quarterly": [
     {
+      "q": "2Q2025",
+      "revenue": 5245000000,
+      "earnings": 645000000
+    },
+    {
       "q": "3Q2025",
       "revenue": 5415000000,
       "earnings": 274000000
@@ -64,20 +69,29 @@
       "q": "1Q2026",
       "revenue": 5413000000,
       "earnings": 662000000
-    },
-    {
-      "q": "2Q2026",
-      "revenue": 5481000000,
-      "earnings": 636000000
     }
   ],
   "growth": {
     "q0": 0.052800003,
     "q1": 0.1302,
-    "y0": 0.090100005,
-    "y1": 0.1007
+    "y0": 0.090500005,
+    "y1": 0.0983
   },
   "ratings": [
+    {
+      "date": "2026-10-27",
+      "firm": "Guggenheim",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-27",
+      "firm": "Morgan Stanley",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
     {
       "date": "2026-10-26",
       "firm": "JP Morgan",
@@ -132,20 +146,6 @@
       "firm": "Citigroup",
       "from": "Neutral",
       "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-30",
-      "firm": "Susquehanna",
-      "from": "Positive",
-      "to": "Positive",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-30",
-      "firm": "Morgan Stanley",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.851,
-    "enterprise_value": 32817334272,
-    "ev_ebitda": 8.131,
-    "ev_revenue": 1.516,
+    "enterprise_value": 32276801536,
+    "ev_ebitda": 7.997,
+    "ev_revenue": 1.491,
     "float_shares": 449137921,
     "short_shares": 33055948,
     "short_pct_float": 7.35,

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T21:17:43.435Z",
+  "updated_at": "2026-10-27T21:00:12.340Z",
   "source": "Yahoo Finance",
   "symbol": "SSD",
   "summary": "Simpson Manufacturing Co., Inc., together with its subsidiaries, designs, engineers, manufactures, and sells structural solutions for wood, concrete, and steel connections in the North America, Europe, and the Asia Pacific. The company provides structural products for wood construction, such as connectors, fasteners, and lateral-force resisting systems; anchor, repair, protection and strengthening products including coatings, sealers, mortars, fiberglass and fiber-reinforced polymer systems and asphalt products. In addition, the company offers engineering and design services, as well as software solutions. It markets its products to the residential construction, industrial, commercial and infrastructure construction, remodeling and do-it-yourself markets. It offers engineering and design services. It serves its products to dealers, home centers, wood component manufacturers, OEM-relationships, distributors, and contractors industries. The company was founded in 1956 and is headquartered in Pleasanton, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-26",
   "earnings_estimated": false,
   "earnings_call": "2026-10-26",
-  "eps_estimate": 2.4,
+  "eps_estimate": 1.39333,
   "analysts": {
     "strong_buy": 1,
     "buy": 2,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 5
   },
-  "target_mean": 214.4,
+  "target_mean": 213.6,
   "target_high": 230,
-  "target_low": 205,
+  "target_low": 203,
   "target_analysts": 5,
   "statements": [
     {
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 623513000,
-      "earnings": 107444000
-    },
-    {
       "q": "4Q2025",
       "revenue": 539345000,
       "earnings": 56214000
@@ -69,15 +64,41 @@
       "q": "2Q2026",
       "revenue": 671076000,
       "earnings": 127042000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 638130000,
+      "earnings": 109124000
     }
   ],
   "growth": {
-    "q0": 0.030199999,
-    "q1": 0.1382,
-    "y0": 0.1445,
-    "y1": 0.048800003
+    "q0": 0.050300002,
+    "q1": -0.056199998,
+    "y0": 0.1604,
+    "y1": 0.0496
   },
   "ratings": [
+    {
+      "date": "2026-10-27",
+      "firm": "Stephens & Co.",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-27",
+      "firm": "DA Davidson",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-27",
+      "firm": "Baird",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
     {
       "date": "2026-10-26",
       "firm": "Stifel",
@@ -125,27 +146,6 @@
       "firm": "Baird",
       "from": "Outperform",
       "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-04-21",
-      "firm": "Baird",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-04-21",
-      "firm": "Stifel",
-      "from": null,
-      "to": "Buy",
-      "action": "init"
-    },
-    {
-      "date": "2026-02-11",
-      "firm": "DA Davidson",
-      "from": "Neutral",
-      "to": "Neutral",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.318,
-    "enterprise_value": 7551911936,
-    "ev_ebitda": 13.036,
-    "ev_revenue": 3.118,
+    "enterprise_value": 7454778368,
+    "ev_ebitda": 12.869,
+    "ev_revenue": 3.078,
     "float_shares": 40762135,
     "short_shares": 1510602,
     "short_pct_float": 4.12,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.1279,
   "inst_count": 637,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 2.34,
-      "actual": 2.32967,
-      "surprise_pct": -0.44
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.26,
@@ -269,6 +263,12 @@
       "estimate": 2.69333,
       "actual": 2.9963,
       "surprise_pct": 11.25
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 2.4,
+      "actual": 2.6801,
+      "surprise_pct": 11.67
     }
   ],
   "insiders": [

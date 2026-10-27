@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T21:17:42.039Z",
+  "updated_at": "2026-10-27T21:00:10.575Z",
   "source": "Yahoo Finance",
   "symbol": "CTOS",
   "summary": "Custom Truck One Source, Inc. provides specialty equipment rental and sale services to electric utility transmission and distribution, telecommunications, rail, forestry, waste management, and other infrastructure-related industries in the United States and Canada. It operates through two segments: Specialty Equipment Rentals (SER); and Specialty Truck Equipment and Manufacturing (STEM). The company owns new and used specialty equipment, including truck-mounted aerial lifts, cranes, service trucks, dump trucks, trailers, digger derricks, and other machinery and equipment. It offers new equipment for sale to be used for end-markets, which can be modified to meet customers specific needs. In addition, the company provides truck and equipment maintenance and repair services; and rents and sells specialized tools, including stringing blocks, insulated hot stick, and rigging equipment, as well as sale of specialized aftermarket parts. The company was formerly known as Nesco Holdings, Inc. and changed its name to Custom Truck One Source, Inc. in April 2021. The company was founded in 1988 and is headquartered in Kansas City, Missouri.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-26",
   "earnings_estimated": false,
   "earnings_call": "2026-10-27",
-  "eps_estimate": 0,
+  "eps_estimate": 0.08333,
   "analysts": {
     "strong_buy": 0,
     "buy": 5,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 482058000,
-      "earnings": -5756000
-    },
-    {
       "q": "4Q2025",
       "revenue": 528184000,
       "earnings": 20875000
@@ -69,15 +64,34 @@
       "q": "2Q2026",
       "revenue": 563446000,
       "earnings": 10399000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 495224000,
+      "earnings": 2305000
     }
   ],
   "growth": {
-    "q0": -1,
-    "q1": -0.3339,
+    "q0": -0.3339,
+    "q1": -0.72379994,
     "y0": 11.6214,
     "y1": 1.3846
   },
   "ratings": [
+    {
+      "date": "2026-10-27",
+      "firm": "DA Davidson",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-27",
+      "firm": "Cantor Fitzgerald",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "reit"
+    },
     {
       "date": "2026-09-15",
       "firm": "DA Davidson",
@@ -133,20 +147,6 @@
       "from": "Buy",
       "to": "Buy",
       "action": "main"
-    },
-    {
-      "date": "2026-04-28",
-      "firm": "DA Davidson",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-04-21",
-      "firm": "Cantor Fitzgerald",
-      "from": null,
-      "to": "Overweight",
-      "action": "init"
     }
   ],
   "holders": [
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.43,
-    "enterprise_value": 4599064064,
-    "ev_ebitda": 20.135,
-    "ev_revenue": 2.26,
+    "enterprise_value": 4587688960,
+    "ev_ebitda": 20.085,
+    "ev_revenue": 2.254,
     "float_shares": 60072837,
     "short_shares": 4056271,
     "short_pct_float": 6.75,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 259,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.01667,
-      "actual": 0.0071,
-      "surprise_pct": 142.59
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.06,
@@ -269,6 +263,12 @@
       "estimate": 0.015,
       "actual": 0.09,
       "surprise_pct": 500
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0,
+      "actual": 0.0575,
+      "surprise_pct": 0
     }
   ],
   "insiders": [],

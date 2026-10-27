@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T21:17:43.040Z",
+  "updated_at": "2026-10-27T21:00:11.815Z",
   "source": "Yahoo Finance",
   "symbol": "NWBI",
   "summary": "Northwest Bancshares, Inc. operates as the bank holding company for Northwest Bank, a state-chartered savings bank that provides personal and commercial banking solutions in Pennsylvania, New York, Ohio, and Indiana in the United States. The company accepts various deposits, including checking, savings, money market deposit, term certificate, and individual retirement accounts. It also offers loan products comprising one-to-four-family residential real estate loans, shorter-term consumer loans, and loans collateralized by multi-family residential and commercial real estate, as well as commercial business loans; residential mortgage loans; home equity loans and lines of credit; commercial real estate loans; commercial loans and financing solutions; and other consumer loans, including auto refinance loans, indirect automobile and recreational loans, unsecured personal loans, credit card loans, and loans secured by investment accounts. In addition, the company offers investment and cash management; estate and trust services; digital and online banking; certificates of deposit; credit cards; student and small business loans; private banking, planning, and investments; retirement plans; liquidity management for commercial checking and savings; treasury and wealth management; insurance; employee benefit plans; and financial planning services. It serves individuals, businesses, and charitable institutions. Northwest Bancshares, Inc. was founded in 1896 and is headquartered in Columbus, Ohio.",
@@ -7,10 +7,10 @@
   "website": "https://www.northwest.bank",
   "employees": 2183,
   "ceo": "Mr. Louis J. Torchio",
-  "next_earnings": "2026-10-26",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-25",
+  "earnings_estimated": true,
   "earnings_call": "2026-10-27",
-  "eps_estimate": 0.34375,
+  "eps_estimate": 0.35333,
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 169142000,
-      "earnings": 3167000
-    },
-    {
       "q": "4Q2025",
       "revenue": 179943000,
       "earnings": 45713000
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 181167000,
       "earnings": 53546000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 184877000,
+      "earnings": 50719000
     }
   ],
   "growth": {
-    "q0": 0.18530001,
-    "q1": 0.060599998,
-    "y0": 0.1168,
-    "y1": 0.0349
+    "q0": 0.070700005,
+    "q1": 0,
+    "y0": 0.113800004,
+    "y1": 0.0377
   },
   "ratings": [
     {
@@ -207,18 +207,18 @@
       "date": "2026-06-30"
     },
     {
+      "name": "iShares Trust-iShares Russell 2000 ETF",
+      "kind": "fond",
+      "pct": 2.67,
+      "shares": 3904900,
+      "date": "2026-09-30"
+    },
+    {
       "name": "First Trust Advisors LP",
       "kind": "institution",
       "pct": 2.54,
       "shares": 3715383,
       "date": "2026-06-30"
-    },
-    {
-      "name": "iShares Trust-iShares Russell 2000 ETF",
-      "kind": "fond",
-      "pct": 2.53,
-      "shares": 3698183,
-      "date": "2026-08-31"
     }
   ],
   "insider_net": {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.693,
-    "enterprise_value": 2874554112,
+    "enterprise_value": 2881877248,
     "ev_ebitda": null,
-    "ev_revenue": 4.393,
+    "ev_revenue": 4.404,
     "float_shares": 144637171,
     "short_shares": 9184122,
     "short_pct_float": 8.19,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.76919997,
   "inst_count": 422,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.30833,
-      "actual": 0.29,
-      "surprise_pct": -5.94
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.30625,
@@ -269,6 +263,12 @@
       "estimate": 0.33625,
       "actual": 0.37,
       "surprise_pct": 10.04
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.34375,
+      "actual": 0.35,
+      "surprise_pct": 1.82
     }
   ],
   "insiders": [
@@ -293,15 +293,6 @@
     {
       "name": "COLESTRO JAMES M",
       "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 15.77 per share.",
-      "value": 209331,
-      "shares": 13274,
-      "date": "2026-07-30"
-    },
-    {
-      "name": "COLESTRO JAMES M",
-      "role": "Officer",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 9.71 - 15.57 per share.",
       "value": 167570,
@@ -309,7 +300,16 @@
       "date": "2026-07-30"
     },
     {
-      "name": "WILLIAMS AMBER LEE",
+      "name": "COLESTRO JAMES M",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 15.77 per share.",
+      "value": 209331,
+      "shares": 13274,
+      "date": "2026-07-30"
+    },
+    {
+      "name": "DAVIS WILBUR R",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -318,12 +318,21 @@
       "date": "2026-06-05"
     },
     {
-      "name": "BALLARD STEVEN CHAD",
-      "role": "Chief Technology Officer",
+      "name": "HUNTER TIMOTHY M",
+      "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 47217,
+      "shares": 4053,
+      "date": "2026-06-05"
+    },
+    {
+      "name": "CAMPANA ROBERT M",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 4053,
       "date": "2026-06-05"
     },
     {
@@ -346,15 +355,6 @@
     },
     {
       "name": "TULLIO DAVID M",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 4053,
-      "date": "2026-06-05"
-    },
-    {
-      "name": "MEEGAN JOHN P",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

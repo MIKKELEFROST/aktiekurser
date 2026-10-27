@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T21:17:42.483Z",
+  "updated_at": "2026-10-27T21:00:11.130Z",
   "source": "Yahoo Finance",
   "symbol": "HBT",
   "summary": "HBT Financial, Inc. operates as the bank holding company for Heartland Bank and Trust Company that provides financial products and services to consumers, businesses, and municipal entities in Illinois and Eastern Iowa. The company offers deposit account services, such as noninterest-bearing demand deposits, interest-bearing transaction accounts, money market accounts, savings accounts, certificates of deposit, HSA, and IRA accounts. It also provides lending products, including non-owner occupied regulatory commercial real estate (CRE), construction and land development and multi-family; commercial and industrial and owner-occupied CRE; agricultural and farmland; one-to-four family residential loans; municipal, consumer, and other loans; residential mortgage origination and servicing; and traditional trust and investment services. In addition, the company offers digital banking services comprising online banking, mobile banking, digital payments, and personal financial management tools; small business and commercial checking accounts, and treasury management services; financial planning to consumers, trusts, and estates; and trustee and custodial services. Further, it provides investment management services; corporate retirement plan consulting and administration; retail brokerage services; farm management services, broker farmland sale, and crop insurance. The company was formerly known as Heartland Bancorp, Inc. and changed its name to HBT Financial, Inc. in September 2019. HBT Financial, Inc. was founded in 1920 and is headquartered in Bloomington, Illinois.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-26",
   "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": 0.786,
+  "eps_estimate": 0.824,
   "analysts": {
     "strong_buy": 2,
     "buy": 1,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 5
   },
-  "target_mean": 40.2,
-  "target_high": 44,
-  "target_low": 37,
+  "target_mean": 42,
+  "target_high": 46,
+  "target_low": 39,
   "target_analysts": 5,
   "statements": [
     {
@@ -72,12 +72,26 @@
     }
   ],
   "growth": {
-    "q0": 0.2092,
-    "q1": 0.2375,
-    "y0": 0.2056,
-    "y1": 0.1389
+    "q0": 0.2875,
+    "q1": 0.2029,
+    "y0": 0.2492,
+    "y1": 0.1328
   },
   "ratings": [
+    {
+      "date": "2026-10-27",
+      "firm": "Keefe, Bruyette & Woods",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-27",
+      "firm": "Piper Sandler",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-08-13",
       "firm": "Keefe, Bruyette & Woods",
@@ -133,20 +147,6 @@
       "from": "Market Perform",
       "to": "Outperform",
       "action": "up"
-    },
-    {
-      "date": "2025-10-21",
-      "firm": "Piper Sandler",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2025-07-22",
-      "firm": "Raymond James",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "reit"
     }
   ],
   "holders": [
@@ -202,9 +202,9 @@
     {
       "name": "iShares Trust-iShares Russell 2000 ETF",
       "kind": "fond",
-      "pct": 1.13,
-      "shares": 412175,
-      "date": "2026-08-31"
+      "pct": 1.22,
+      "shares": 444342,
+      "date": "2026-09-30"
     },
     {
       "name": "State Street Corporation",
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.487,
-    "enterprise_value": 1335908736,
+    "enterprise_value": 1376118400,
     "ev_ebitda": null,
-    "ev_revenue": 5.024,
+    "ev_revenue": 4.716,
     "float_shares": 15837588,
     "short_shares": 1159079,
     "short_pct_float": 6.63,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.3745,
   "inst_count": 194,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.62,
-      "actual": 0.65,
-      "surprise_pct": 4.84
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.638,
@@ -269,6 +263,12 @@
       "estimate": 0.734,
       "actual": 0.78,
       "surprise_pct": 6.27
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.786,
+      "actual": 0.86,
+      "surprise_pct": 9.41
     }
   ],
   "insiders": [
@@ -327,6 +327,15 @@
       "date": "2026-03-10"
     },
     {
+      "name": "DRAKE ALLEN C",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 600,
+      "date": "2026-02-27"
+    },
+    {
       "name": "SCHEIRER MARK W",
       "role": "Officer",
       "kind": "other",
@@ -351,15 +360,6 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 11504,
-      "date": "2026-02-27"
-    },
-    {
-      "name": "BURWELL ERIC E",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 600,
       "date": "2026-02-27"
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T21:17:43.410Z",
+  "updated_at": "2026-10-27T21:00:12.295Z",
   "source": "Yahoo Finance",
   "symbol": "SOFI",
   "summary": "SoFi Technologies, Inc. provides various financial services in the United States, Latin America, Canada, and Hong Kong. The company operates through three segments: Lending, Technology Platform, and Financial Services. It offers lending and financial services and products that allows its members to borrow, save, spend, invest, and protect money; and personal loans, student loans, home loans, and related services. The company also operates Galileo, a technology platform that offers services to financial and non-financial institution; and Technisys, a cloud-native digital and core banking platform that provides software licenses and associated services, including implementation and maintenance. In addition, it provides SoFi Money offers checking and savings accounts, and cash management products; SoFi Invest, a mobile-first investment platform that offers access to trading and advisory solutions, such as investing and robo-advisory; and SoFI Crypto, a new digital asset trading platform. Further, the company offers SoFi Credit Card that provides cash back rewards on every purchase; Sofi Relay, a personal finance management product that allows to track all of their financial accounts comprising credit score and spending behaviors; SoFi Protect which offers insurance product; SoFi Travel, an application that manages travel search and booking experience; SoFi At Work provides financial benefits to employees, including student loan payments made on their employees' behalf; Lantern Credit, a financial services marketplace platform for seeking alternative products and provide product comparisons; and other lending as a service that offers pre-qualified borrower referrals and offers loans to third-party partner. The company was founded in 2011 and is based in San Francisco, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-27",
   "earnings_estimated": false,
   "earnings_call": "2026-10-27",
-  "eps_estimate": 0.16752,
+  "eps_estimate": 0.19104,
   "analysts": {
     "strong_buy": 4,
     "buy": 7,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 949626000,
-      "earnings": 139392000
-    },
-    {
       "q": "4Q2025",
       "revenue": 1012835000,
       "earnings": 173549000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 1205550000,
       "earnings": 156592000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1371124000,
+      "earnings": 240989000
     }
   ],
   "growth": {
-    "q0": 0.65209997,
-    "q1": 0.5698,
+    "q0": 0.5698,
+    "q1": 0.56520003,
     "y0": 0.5813,
     "y1": 0.38939998
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 2.332,
-    "enterprise_value": 18925176832,
+    "enterprise_value": 18724982784,
     "ev_ebitda": null,
-    "ev_revenue": 4.434,
+    "ev_revenue": 4.387,
     "float_shares": 1271344333,
     "short_shares": 214897462,
     "short_pct_float": 16.87,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 1180,
+  "inst_count": 1183,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.08243,
-      "actual": 0.1014,
-      "surprise_pct": 23.01
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.112,
@@ -269,6 +263,12 @@
       "estimate": 0.1092,
       "actual": 0.12,
       "surprise_pct": 9.89
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.16752,
+      "actual": 0.18,
+      "surprise_pct": 7.45
     }
   ],
   "insiders": [
@@ -282,6 +282,15 @@
       "date": "2026-10-20"
     },
     {
+      "name": "KEOUGH KELLI ALLEN",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 16.99 per share.",
+      "value": 173310,
+      "shares": 10203,
+      "date": "2026-09-21"
+    },
+    {
       "name": "RISHEL JEREMY DYLAN",
       "role": "Chief Technology Officer",
       "kind": "sell",
@@ -291,13 +300,13 @@
       "date": "2026-09-21"
     },
     {
-      "name": "KEOUGH KELLI ALLEN",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 16.99 per share.",
-      "value": 173310,
-      "shares": 10203,
-      "date": "2026-09-21"
+      "name": "LAVET ROBERT S",
+      "role": "General Counsel",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 36057,
+      "date": "2026-09-14"
     },
     {
       "name": "KEOUGH KELLI ALLEN",
@@ -342,15 +351,6 @@
       "text": null,
       "value": null,
       "shares": 104152,
-      "date": "2026-09-14"
-    },
-    {
-      "name": "LAVET ROBERT S",
-      "role": "General Counsel",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 36057,
       "date": "2026-09-14"
     },
     {

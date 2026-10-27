@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T21:17:41.893Z",
+  "updated_at": "2026-10-27T21:00:10.375Z",
   "source": "Yahoo Finance",
   "symbol": "CDNS",
   "summary": "Cadence Design Systems, Inc. develops computational, AI-driven software, hardware, and silicon intellectual property products and solutions. The company offers functional verification services, such as Jasper, a formal verification platform; Xcelium, a parallel logic simulation platform; Verisium, a generative AI solution; Palladium, an enterprise emulation platform; and Protium, a prototyping platform for chip verification, as well as digital IC design and sign off products, including Innovus platform; and custom IC design and simulation product include Virtuoso, a platform to design and verify analog. It also provides Xcelium logic simulator and other front-end verification and virtual prototyping technologies; controllers and physical interfaces; PCI Express, universal accelerator and compute express links, and multiple memory interfaces; and Tensilica, a digital signal processor. In addition, the company's design IP portfolio includes serializer/deserializer, peripheral component interconnect, USB, and other standard protocols; and Secure-IC, a solution for embedded security IP. Additionally, it provides System Design and Analysis (SD&A) platform, a solution that enables end-to-end system-level design and verification across chips, packages, PCBs, and electronic systems; Allegro X and Orca X platforms for PCB and advanced packaging; Sigrity X for signal and power integrity; AIR for RF design; Fidelity for computational fluid dynamics; Celsius for thermal and airflow analysis; Clarity 3D solver for electromagnetic and power electronics analysis and simulation; Integrity 3D-IC solution for 3D-IC and multi-chiplet designs; the Optimality Intelligent System Explorer, Reality digital twin, and Millennium enterprise multiphasic platforms; Allegro system design platform; and molecular modeling and simulation solutions and services. The company has a strategic collaboration with NVIDIA. The company was incorporated in 1987 and is headquartered in San Jose, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-26",
   "earnings_estimated": false,
   "earnings_call": "2026-10-26",
-  "eps_estimate": 2.05319,
+  "eps_estimate": 2.22595,
   "analysts": {
     "strong_buy": 5,
     "buy": 18,
@@ -19,10 +19,10 @@
     "strong_sell": 0,
     "total": 25
   },
-  "target_mean": 406.2404,
+  "target_mean": 409.89,
   "target_high": 470,
   "target_low": 300,
-  "target_analysts": 26,
+  "target_analysts": 25,
   "statements": [
     {
       "year": "2022",
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 1338838000,
-      "earnings": 287122000
-    },
-    {
       "q": "4Q2025",
       "revenue": 1440114000,
       "earnings": 388136000
@@ -69,15 +64,48 @@
       "q": "2Q2026",
       "revenue": 1584451000,
       "earnings": 367076000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1633311000,
+      "earnings": 289747000
     }
   ],
   "growth": {
-    "q0": 0.0638,
-    "q1": 0.019199999,
-    "y0": 0.1409,
-    "y1": 0.1748
+    "q0": 0.118599996,
+    "q1": 0.1498,
+    "y0": 0.17930001,
+    "y1": 0.16350001
   },
   "ratings": [
+    {
+      "date": "2026-10-27",
+      "firm": "Rosenblatt",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-27",
+      "firm": "JP Morgan",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-27",
+      "firm": "Baird",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-27",
+      "firm": "Needham",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-23",
       "firm": "Rosenblatt",
@@ -119,34 +147,6 @@
       "from": "Buy",
       "to": "Buy",
       "action": "reit"
-    },
-    {
-      "date": "2026-07-28",
-      "firm": "Piper Sandler",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-16",
-      "firm": "Benchmark",
-      "from": null,
-      "to": "Buy",
-      "action": "init"
-    },
-    {
-      "date": "2026-07-14",
-      "firm": "Rosenblatt",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-06-09",
-      "firm": "Stifel",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
     }
   ],
   "holders": [
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.128,
-    "enterprise_value": 88278654976,
-    "ev_ebitda": 40.947,
-    "ev_revenue": 15.122,
+    "enterprise_value": 89842884608,
+    "ev_ebitda": 41.673,
+    "ev_revenue": 15.39,
     "float_shares": 274173009,
     "short_shares": 5895880,
     "short_pct_float": 2.15,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 2198,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.78953,
-      "actual": 1.93,
-      "surprise_pct": 7.85
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.91226,
@@ -269,6 +263,12 @@
       "estimate": 2.05529,
       "actual": 2.11,
       "surprise_pct": 2.66
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 2.05319,
+      "actual": 2.11,
+      "surprise_pct": 2.77
     }
   ],
   "insiders": [

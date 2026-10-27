@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T21:17:42.349Z",
+  "updated_at": "2026-10-27T21:00:10.958Z",
   "source": "Yahoo Finance",
   "symbol": "FSUN",
   "summary": "FirstSun Capital Bancorp operates as the bank holding company for Sunflower Bank, National Association that provides commercial and consumer banking and financial services to small and medium-sized companies in the United States. It operates through Banking and Mortgage Operations segments. The company offers noninterest and interest-bearing deposit accounts, checking and savings accounts, money market and term certificate accounts, and treasury management products and services, as well as certificates of deposit. It also provides commercial and industrial loans, commercial real estate loans, residential mortgage loans, and small business administration loans, as well as consumer loans, including car, boat, and other recreational vehicle loans. In addition, the company offers residential real estate loans comprising 1-4 family loans, home equity loans, and multi-family loans, as well as credit card accounts, overdrafts, and other revolving loans. Further, it provides remote deposit and cash management products; wealth management services include private banking, wealth planning, investment management, and trust and retirement plan services; and wealth management and trust products, including personal trust and agency accounts, employee benefit and retirement related trust and agency accounts, investment management and advisory agency accounts, and foundation and endowment trust and agency accounts. Additionally, the company offers online banking and bill payment services, online cash management, safe deposit box rentals, and debit card and ATM card services; and packaging and securitization of loans to governmental agencies. It operates through branches in Texas, Kansas, Colorado, New Mexico, Arizona, California, and Washington. The company was formerly known as Sunflower Financial, Inc. and changed its name to FirstSun Capital Bancorp in June 2017. FirstSun Capital Bancorp was founded in 1892 and is headquartered in Denver, Colorado.",
@@ -7,10 +7,10 @@
   "website": "https://ir.firstsuncb.com",
   "employees": 1630,
   "ceo": "Mr. Neal E. Arnold",
-  "next_earnings": "2026-10-26",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-25",
+  "earnings_estimated": true,
   "earnings_call": "2026-10-27",
-  "eps_estimate": 0.97,
+  "eps_estimate": 1.0575,
   "analysts": {
     "strong_buy": 2,
     "buy": 2,
@@ -45,11 +45,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 108511000,
-      "earnings": 23174000
-    },
-    {
       "q": "4Q2025",
       "revenue": 111361000,
       "earnings": 24807000
@@ -62,14 +57,19 @@
     {
       "q": "2Q2026",
       "revenue": 186341000,
-      "earnings": 0
+      "earnings": -22850000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 181587000,
+      "earnings": 38382000
     }
   ],
   "growth": {
-    "q0": 0.18290001,
-    "q1": 0.113199994,
-    "y0": -0.0695,
-    "y1": 0.4075
+    "q0": 0.113199994,
+    "q1": 0.2857,
+    "y0": -0.059,
+    "y1": 0.39180002
   },
   "ratings": [
     {
@@ -201,17 +201,17 @@
       "date": "2026-06-30"
     },
     {
+      "name": "iShares Trust-iShares Russell 2000 ETF",
+      "kind": "fond",
+      "pct": 3.11,
+      "shares": 852649,
+      "date": "2026-09-30"
+    },
+    {
       "name": "Dimensional Fund Advisors LP",
       "kind": "institution",
       "pct": 2.7,
       "shares": 739703,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "Geode Capital Management, LLC",
-      "kind": "institution",
-      "pct": 2.47,
-      "shares": 676961,
       "date": "2026-06-30"
     }
   ],
@@ -225,9 +225,9 @@
   },
   "extras": {
     "beta": 0.205,
-    "enterprise_value": 1128651008,
+    "enterprise_value": 1128185088,
     "ev_ebitda": null,
-    "ev_revenue": 2.527,
+    "ev_revenue": 2.526,
     "float_shares": 33861424,
     "short_shares": 2060243,
     "short_pct_float": 5.18,
@@ -240,12 +240,6 @@
   "payout_ratio": 0,
   "inst_count": 227,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.8875,
-      "actual": 0.82,
-      "surprise_pct": -7.61
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.8475,
@@ -263,6 +257,12 @@
       "estimate": 0.3625,
       "actual": 0.45,
       "surprise_pct": 24.14
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.97,
+      "actual": 1.03,
+      "surprise_pct": 6.19
     }
   ],
   "insiders": [

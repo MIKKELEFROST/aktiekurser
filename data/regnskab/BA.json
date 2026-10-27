@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T21:17:41.680Z",
+  "updated_at": "2026-10-27T21:00:10.097Z",
   "source": "Yahoo Finance",
   "symbol": "BA",
   "summary": "The Boeing Company, together with its subsidiaries, designs, develops, manufactures, sells, services, and supports commercial jetliners, military aircraft, satellites, missile defense, human space flight and launch systems, and services worldwide. The company operates through three segments: Commercial Airplanes; Defense, Space & Security; and Global Services. The Commercial Airplanes segment develops, produces, and markets commercial jet aircraft for passenger and cargo requirements. The Defense, Space & Security segment engages in the research, development, production, and modification of manned and unmanned military aircraft and weapons systems; strategic defense and intelligence systems, which include strategic missile and defense systems, command, control, communications, computers, intelligence, surveillance and reconnaissance, cyber and information solutions, and intelligence systems; and satellite systems, such as government and commercial satellites, and space exploration. The Global Services segment offers products and services, including supply chain and logistics management, engineering, maintenance and modifications, upgrades and conversions, spare parts, pilot and maintenance training systems and services, technical and maintenance documents, and data analytics and digital services to commercial and defense customers. The Boeing Company was incorporated in 1916 and is based in Arlington, Virginia.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-27",
   "earnings_estimated": false,
   "earnings_call": "2026-10-27",
-  "eps_estimate": -0.20099,
+  "eps_estimate": 0.01007,
   "analysts": {
     "strong_buy": 7,
     "buy": 18,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 23270000000,
-      "earnings": -5424000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 23948000000,
       "earnings": 8134000000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 24560000000,
       "earnings": -530000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 24188000000,
+      "earnings": -203000000
     }
   ],
   "growth": {
-    "q0": 0.97309995,
-    "q1": -0.999,
+    "q0": -0.999,
+    "q1": 3.0225,
     "y0": -1.9252,
     "y1": 4.4126
   },
@@ -231,8 +231,8 @@
   },
   "extras": {
     "beta": 1.257,
-    "enterprise_value": 177954193408,
-    "ev_ebitda": -61.364,
+    "enterprise_value": 177922572288,
+    "ev_ebitda": -61.353,
     "ev_revenue": 1.893,
     "float_shares": 789160754,
     "short_shares": 14788180,
@@ -244,14 +244,8 @@
   "ex_dividend": "2020-02-13",
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 3123,
+  "inst_count": 3119,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -2.37563,
-      "actual": -7.47,
-      "surprise_pct": -214.44
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.40902,
@@ -269,6 +263,12 @@
       "estimate": -0.31472,
       "actual": -0.76,
       "surprise_pct": -141.48
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.20099,
+      "actual": -0.34,
+      "surprise_pct": -69.16
     }
   ],
   "insiders": [

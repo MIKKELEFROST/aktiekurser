@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T21:17:41.803Z",
+  "updated_at": "2026-10-27T21:00:10.261Z",
   "source": "Yahoo Finance",
   "symbol": "BRO",
   "summary": "Brown & Brown, Inc. markets and sells insurance products and services in the United States, the United Kingdom, and internationally. It operates through Retail and Specialty Distribution segments. The Retail segment provides property and casualty insurance products, employee benefits insurance products, personal insurance products, specialties insurance products, risk management strategies, loss control surveys and analysis, consulting, and claims processing services. This segment also offers non-insurance services and products through automobile and recreational vehicle dealer services businesses. It serves commercial, public and quasi-public entities, professionals, and individual customers. The Specialty Distribution segment comprises wholesale brokerage and specialty businesses. This segment offers professional liability and related package insurance products for dentistry, legal, eyecare, financial services, physicians, and real estate title professionals, as well as supplementary insurance products related to weddings, events, medical facilities, and cyber liabilities. This segment also provides public entity-related and specialty programs through a network of independent agents, as well as program management services for insurance carrier partners. In addition, the company's wholesale brokerage businesses underwrite and place excess and surplus commercial and personal lines insurance through independent agents and brokers. Its program businesses operate under the Arrowhead Programs name. The company was formerly known as Poe & Brown, Inc. and changed its name to Brown & Brown, Inc. in April 1999. Brown & Brown, Inc. was founded in 1939 and is headquartered in Daytona Beach, Florida.",
@@ -7,10 +7,10 @@
   "website": "https://www.bbrown.com",
   "employees": 22888,
   "ceo": "Mr. J. Powell Brown C.P.C.U.",
-  "next_earnings": "2026-10-26",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-25",
+  "earnings_estimated": true,
   "earnings_call": "2026-10-27",
-  "eps_estimate": 1.08487,
+  "eps_estimate": 0.92661,
   "analysts": {
     "strong_buy": 3,
     "buy": 4,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 1606000000,
-      "earnings": 227000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 1607000000,
       "earnings": 264000000
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 1676000000,
       "earnings": 288000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1725000000,
+      "earnings": 240000000
     }
   ],
   "growth": {
-    "q0": 0.0332,
-    "q1": 0.0101,
-    "y0": 0.051599998,
-    "y1": 0.078600004
+    "q0": -0.0036000002,
+    "q1": 0.0571,
+    "y0": 0.0478,
+    "y1": 0.0802
   },
   "ratings": [
     {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.593,
-    "enterprise_value": 31589517312,
-    "ev_ebitda": 10.923,
-    "ev_revenue": 4.741,
+    "enterprise_value": 30957105152,
+    "ev_ebitda": 10.704,
+    "ev_revenue": 4.646,
     "float_shares": 287557449,
     "short_shares": 14145445,
     "short_pct_float": 5.6,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.2035,
   "inst_count": 1152,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.92994,
-      "actual": 1.05,
-      "surprise_pct": 12.91
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.89991,
@@ -269,6 +263,12 @@
       "estimate": 1.07415,
       "actual": 1.07,
       "surprise_pct": -0.39
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.08487,
+      "actual": 1.07,
+      "surprise_pct": -1.37
     }
   ],
   "insiders": [
