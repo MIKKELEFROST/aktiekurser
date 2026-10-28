@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T21:00:12.451Z",
+  "updated_at": "2026-10-28T21:25:18.812Z",
   "source": "Yahoo Finance",
   "symbol": "TRTX",
   "summary": "TPG RE Finance Trust, Inc., a commercial real estate finance company, originates and acquires a portfolio of commercial real estate-related assets in the United States. It engages in directly originating and selectively acquiring first mortgage loans secured by commercial real estate properties; and invests in other commercial real estate-related debt instruments, including subordinate mortgage interests, mezzanine loans, secured real estate securities, note financing, preferred equity, and miscellaneous debt instruments. The company qualifies as a real estate investment trust for federal income tax purposes. It generally would not be subject to federal corporate income taxes if it distributes at least 90% of its taxable income to its stockholders. TPG RE Finance Trust, Inc. was incorporated in 2014 and is based in New York, New York.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-26",
   "earnings_estimated": false,
   "earnings_call": "2026-10-27",
-  "eps_estimate": 0.264,
+  "eps_estimate": 0.25,
   "analysts": {
     "strong_buy": 2,
     "buy": 3,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.1,
-    "q1": 0.06,
-    "y0": 0.0247,
-    "y1": 0.1167
+    "q0": 0.0417,
+    "q1": 0.066700004,
+    "y0": 0.025799999,
+    "y1": 0.115600005
   },
   "ratings": [
+    {
+      "date": "2026-10-28",
+      "firm": "Wells Fargo",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-07-17",
       "firm": "JP Morgan",
@@ -140,83 +147,76 @@
       "from": "Overweight",
       "to": "Overweight",
       "action": "main"
-    },
-    {
-      "date": "2025-05-01",
-      "firm": "JP Morgan",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
     }
   ],
   "holders": [
     {
       "name": "Long Pond Capital, LP",
       "kind": "institution",
-      "pct": 9.16,
+      "pct": 9.27,
       "shares": 7029102,
       "date": "2026-06-30"
     },
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 8.46,
+      "pct": 8.57,
       "shares": 6497688,
       "date": "2026-06-30"
     },
     {
       "name": "Vanguard Capital Management LLC",
       "kind": "institution",
-      "pct": 4.37,
+      "pct": 4.42,
       "shares": 3352835,
       "date": "2026-06-30"
     },
     {
       "name": "Mirae Asset Global ETFs Holdings Ltd.",
       "kind": "institution",
-      "pct": 4.28,
+      "pct": 4.33,
       "shares": 3286960,
       "date": "2026-06-30"
     },
     {
       "name": "State of New Jersey Common Pension Fund A",
       "kind": "institution",
-      "pct": 4.1,
+      "pct": 4.15,
       "shares": 3149148,
       "date": "2026-06-30"
     },
     {
       "name": "TPG GP A, LLC",
       "kind": "institution",
-      "pct": 3.12,
+      "pct": 3.16,
       "shares": 2392863,
       "date": "2026-06-30"
     },
     {
       "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
       "kind": "fond",
-      "pct": 3.1,
+      "pct": 3.14,
       "shares": 2381899,
       "date": "2026-06-30"
     },
     {
       "name": "Gratia Capital, LLC",
       "kind": "institution",
-      "pct": 2.69,
+      "pct": 2.73,
       "shares": 2067333,
       "date": "2026-06-30"
     },
     {
       "name": "Geode Capital Management, LLC",
       "kind": "institution",
-      "pct": 2.55,
+      "pct": 2.58,
       "shares": 1955268,
       "date": "2026-06-30"
     },
     {
       "name": "iShares Trust-iShares Russell 2000 ETF",
       "kind": "fond",
-      "pct": 2.46,
+      "pct": 2.49,
       "shares": 1888262,
       "date": "2026-09-30"
     }
@@ -230,20 +230,20 @@
     "net_pct": null
   },
   "extras": {
-    "beta": 1.526,
-    "enterprise_value": 3919357184,
+    "beta": null,
+    "enterprise_value": 4580400640,
     "ev_ebitda": null,
-    "ev_revenue": 29.635,
-    "float_shares": 66914171,
-    "short_shares": 6495308,
-    "short_pct_float": 8.72,
-    "short_ratio": 6.63,
+    "ev_revenue": 38.44,
+    "float_shares": 66093048,
+    "short_shares": 6906371,
+    "short_pct_float": 9.39,
+    "short_ratio": 5.1,
     "last_split": null,
     "last_split_date": null
   },
   "ex_dividend": "2026-09-28",
   "dividend_date": null,
-  "payout_ratio": 1.7455001,
+  "payout_ratio": 2.4615,
   "inst_count": 226,
   "eps_history": [
     {
@@ -272,6 +272,24 @@
     }
   ],
   "insiders": [
+    {
+      "name": "SMITH MICHAEL BRADLEY",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 6.33 per share.",
+      "value": 9647,
+      "shares": 1524,
+      "date": "2026-10-23"
+    },
+    {
+      "name": "GILLMORE MICHAEL",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 6.33 per share.",
+      "value": 9647,
+      "shares": 1524,
+      "date": "2026-10-23"
+    },
     {
       "name": "SMITH MICHAEL BRADLEY",
       "role": "Director",
@@ -343,24 +361,6 @@
       "value": 1248,
       "shares": 164,
       "date": "2026-04-24"
-    },
-    {
-      "name": "SMITH MICHAEL BRADLEY",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 8.79 per share.",
-      "value": 8852,
-      "shares": 1007,
-      "date": "2026-01-23"
-    },
-    {
-      "name": "GILLMORE MICHAEL",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 8.79 per share.",
-      "value": 8852,
-      "shares": 1007,
-      "date": "2026-01-23"
     }
   ],
   "dividends": [

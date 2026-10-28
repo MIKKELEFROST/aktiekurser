@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T21:00:11.007Z",
+  "updated_at": "2026-10-28T21:25:16.475Z",
   "source": "Yahoo Finance",
   "symbol": "GEV",
   "summary": "GE Vernova Inc., an energy company, engages in the provision of various products and services that generate, transfer, orchestrate, convert, and store electricity in the United States, Europe, Asia, the Middle East, and Africa. The company operates through three segments: Power, Wind, and Electrification. The Power segment designs, manufactures, and services gas, nuclear, hydro, and steam technologies. It serves industrial, government, and other customers. The Wind segment offers wind generation technologies, including onshore and offshore wind turbines and blades. The Electrification segment provides grid solutions; power conversion; electrification software; and solar and storage solutions technologies required for the transmission, distribution, conversion, storage, and orchestration of electricity from point of generation to point of consumption. The company was incorporated in 2023 and is headquartered in Cambridge, Massachusetts.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-28",
   "earnings_estimated": false,
   "earnings_call": "2026-10-28",
-  "eps_estimate": 4.00427,
+  "eps_estimate": 6.53806,
   "analysts": {
     "strong_buy": 6,
     "buy": 25,
@@ -45,11 +45,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 9969000000,
-      "earnings": 452000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 10956000000,
       "earnings": 3664000000
@@ -63,15 +58,27 @@
       "q": "2Q2026",
       "revenue": 11104000000,
       "earnings": 668000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 12642000000,
+      "earnings": 1291000000
     }
   ],
   "growth": {
-    "q0": 1.8231,
-    "q1": -0.4937,
+    "q0": -0.4937,
+    "q1": 1.2528,
     "y0": -0.090299994,
     "y1": 0.66110003
   },
   "ratings": [
+    {
+      "date": "2026-10-28",
+      "firm": "Bernstein",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "reit"
+    },
     {
       "date": "2026-10-14",
       "firm": "Susquehanna",
@@ -133,13 +140,6 @@
       "firm": "Morgan Stanley",
       "from": "Overweight",
       "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-23",
-      "firm": "TD Cowen",
-      "from": "Buy",
-      "to": "Buy",
       "action": "main"
     }
   ],
@@ -225,27 +225,21 @@
   },
   "extras": {
     "beta": 0.967,
-    "enterprise_value": 219905179648,
-    "ev_ebitda": 55.998,
-    "ev_revenue": 5.316,
+    "enterprise_value": 230547865600,
+    "ev_ebitda": 58.708,
+    "ev_revenue": 5.573,
     "float_shares": 265776944,
-    "short_shares": 7376507,
+    "short_shares": 7383835,
     "short_pct_float": 2.77,
-    "short_ratio": 3.38,
+    "short_ratio": 3.25,
     "last_split": null,
     "last_split_date": null
   },
   "ex_dividend": "2026-10-27",
   "dividend_date": null,
   "payout_ratio": 0.0573,
-  "inst_count": 4242,
+  "inst_count": 4245,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.85664,
-      "actual": 1.64,
-      "surprise_pct": -11.67
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 3.21816,
@@ -263,6 +257,12 @@
       "estimate": 3.18468,
       "actual": 2.47,
       "surprise_pct": -22.44
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 4.01248,
+      "actual": 4.81,
+      "surprise_pct": 19.88
     }
   ],
   "insiders": [
@@ -274,6 +274,24 @@
       "value": 4568798,
       "shares": 4819,
       "date": "2026-06-01"
+    },
+    {
+      "name": "MALAVE JESUS JR.",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 495,
+      "date": "2026-05-14"
+    },
+    {
+      "name": "MATTHEW HARRIS C",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 495,
+      "date": "2026-05-14"
     },
     {
       "name": "REYNOLDS PAULA ROSPUT",
@@ -330,24 +348,6 @@
       "date": "2026-05-14"
     },
     {
-      "name": "MALAVE JESUS JR.",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 495,
-      "date": "2026-05-14"
-    },
-    {
-      "name": "MATTHEW HARRIS C",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 495,
-      "date": "2026-05-14"
-    },
-    {
       "name": "POTVIN MATTHEW JOSEPH",
       "role": "Officer",
       "kind": "sell",
@@ -384,6 +384,10 @@
     },
     {
       "date": "2026-06-16",
+      "amount": 0.5
+    },
+    {
+      "date": "2026-10-27",
       "amount": 0.5
     }
   ],

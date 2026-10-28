@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T21:00:11.114Z",
+  "updated_at": "2026-10-28T21:25:16.586Z",
   "source": "Yahoo Finance",
   "symbol": "HAFC",
   "summary": "Hanmi Financial Corporation operates as the holding company for Hanmi Bank that provides business banking products and services in the United States. The company offers deposit products, including noninterest-bearing checking, negotiable order of withdrawal, savings, and money market accounts, as well as certificates of deposit. It also provides real estate loans, such as commercial property, construction, and residential property loans; and commercial and industrial loans comprising commercial term loan, and commercial lines of credit and international; equipment lease financing; and international finance and trade services and products, including letters of credit, and import and export financing. In addition, the company offers small business administration loans for business purposes, such as owner-occupied commercial real estate, business acquisitions, start-ups, franchise financing, working capital, improvements and renovations, inventory and equipment, and debt-refinancing. Hanmi Financial Corporation was founded in 1982 and is based in Los Angeles, California.",
@@ -7,10 +7,10 @@
   "website": "https://www.hanmi.com",
   "employees": 606,
   "ceo": "Ms. Bonita I. Lee",
-  "next_earnings": "2026-10-27",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-26",
+  "earnings_estimated": true,
   "earnings_call": "2026-10-27",
-  "eps_estimate": 0.8075,
+  "eps_estimate": 0.83,
   "analysts": {
     "strong_buy": 1,
     "buy": 0,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 70959000,
-      "earnings": 22061000
-    },
-    {
       "q": "4Q2025",
       "revenue": 71178000,
       "earnings": 21239000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 72205000,
       "earnings": 23505000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 76600000,
+      "earnings": 23683000
     }
   ],
   "growth": {
-    "q0": 0.1062,
-    "q1": 0.1857,
+    "q0": 0.1857,
+    "q1": 0.0933,
     "y0": 0.2696,
     "y1": 0.0552
   },
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 9,
-    "sells": 2,
+    "sells": 1,
     "bought": 20682,
-    "sold": 8633,
-    "net_pct": 1.9
+    "sold": 5333,
+    "net_pct": 2.4
   },
   "extras": {
     "beta": 0.739,
-    "enterprise_value": 782121152,
+    "enterprise_value": 789181888,
     "ev_ebitda": null,
-    "ev_revenue": 2.814,
+    "ev_revenue": 2.84,
     "float_shares": 28751855,
     "short_shares": 1294964,
     "short_pct_float": 5.26,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.3716,
   "inst_count": 340,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.65,
-      "actual": 0.73,
-      "surprise_pct": 12.31
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.7025,
@@ -269,6 +263,12 @@
       "estimate": 0.7675,
       "actual": 0.79,
       "surprise_pct": 2.93
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.8075,
+      "actual": 0.8,
+      "surprise_pct": -0.93
     }
   ],
   "insiders": [

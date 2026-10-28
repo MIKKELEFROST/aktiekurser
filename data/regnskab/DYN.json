@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T21:00:10.714Z",
+  "updated_at": "2026-10-28T21:25:16.143Z",
   "source": "Yahoo Finance",
   "symbol": "DYN",
   "summary": "Dyne Therapeutics, Inc., a clinical-stage neuromuscular disease company, focuses on discovering and developing therapeutics for neuromuscular diseases in the United States. The company is developing a portfolio of muscle disease therapeutics, including programs in myotonic dystrophy type 1; duchenne muscular dystrophy; facioscapulohumeral dystrophy; and Pompe disease, as well as rare skeletal muscle, and cardiac and metabolic muscle diseases using its FORCE platform that delivers disease-modifying therapeutics. Dyne Therapeutics, Inc. was incorporated in 2017 and is headquartered in Waltham, Massachusetts.",
@@ -79,6 +79,13 @@
   },
   "ratings": [
     {
+      "date": "2026-10-28",
+      "firm": "Oppenheimer",
+      "from": "Outperform",
+      "to": "Perform",
+      "action": "down"
+    },
+    {
       "date": "2026-09-30",
       "firm": "Chardan Capital",
       "from": "Buy",
@@ -140,13 +147,6 @@
       "from": "Outperform",
       "to": "Outperform",
       "action": "main"
-    },
-    {
-      "date": "2026-07-23",
-      "firm": "Cantor Fitzgerald",
-      "from": null,
-      "to": "Overweight",
-      "action": "init"
     }
   ],
   "holders": [
@@ -223,28 +223,28 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 6,
+    "buys": 7,
     "sells": 24,
-    "bought": 65125,
+    "bought": 73125,
     "sold": 5113642,
-    "net_pct": -92
+    "net_pct": -91.8
   },
   "extras": {
     "beta": 1.12,
-    "enterprise_value": 2270528768,
-    "ev_ebitda": -4.246,
+    "enterprise_value": 2498359552,
+    "ev_ebitda": -4.672,
     "ev_revenue": null,
     "float_shares": 186234746,
-    "short_shares": 25977390,
-    "short_pct_float": 17.79,
-    "short_ratio": 7.25,
+    "short_shares": 25465761,
+    "short_pct_float": 17.44,
+    "short_ratio": 7.94,
     "last_split": null,
     "last_split_date": null
   },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 337,
+  "inst_count": 338,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "KERR DOUGLAS",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 8000,
+      "date": "2026-10-20"
+    },
     {
       "name": "POSNER BRIAN S.",
       "role": "Director",
@@ -352,15 +361,6 @@
       "value": 5939,
       "shares": 226,
       "date": "2026-08-13"
-    },
-    {
-      "name": "KERSTEN DIRK",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 25.50 - 26.04 per share.",
-      "value": 6670769,
-      "shares": 261460,
-      "date": "2026-07-27"
     }
   ],
   "dividends": [],

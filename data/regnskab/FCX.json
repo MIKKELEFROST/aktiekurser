@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T21:00:10.873Z",
+  "updated_at": "2026-10-28T21:25:16.331Z",
   "source": "Yahoo Finance",
   "symbol": "FCX",
   "summary": "Freeport-McMoRan Inc. engages in the mining of mineral properties in North America, South America, and Indonesia. The company primarily explores for copper, gold, molybdenum, silver, and other metals. Its assets include the Grasberg minerals district in Indonesia; Morenci, Bagdad, Safford, Sierrita, and Miami in Arizona; Chino and Tyrone in New Mexico; and Henderson and Climax in Colorado, North America, as well as Cerro Verde in Peru and El Abra in Chile. The company was formerly known as Freeport-McMoRan Copper & Gold Inc. and changed its name to Freeport-McMoRan Inc. in July 2014. The company was incorporated in 1987 and is headquartered in Phoenix, Arizona.",
@@ -7,10 +7,10 @@
   "website": "https://fcx.com",
   "employees": 29000,
   "ceo": "Ms. Kathleen Lynne Quirk",
-  "next_earnings": "2026-10-27",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-21",
+  "earnings_estimated": true,
   "earnings_call": "2026-10-27",
-  "eps_estimate": 0.83062,
+  "eps_estimate": 1.03,
   "analysts": {
     "strong_buy": 6,
     "buy": 12,
@@ -19,8 +19,8 @@
     "strong_sell": 0,
     "total": 23
   },
-  "target_mean": 79.20455,
-  "target_high": 92,
+  "target_mean": 78.70455,
+  "target_high": 90,
   "target_low": 32,
   "target_analysts": 22,
   "statements": [
@@ -72,12 +72,33 @@
     }
   ],
   "growth": {
-    "q0": 0.66120005,
-    "q1": 1.4186,
-    "y0": 0.8084,
-    "y1": 0.36060002
+    "q0": 1.1915001,
+    "q1": 0.6667,
+    "y0": 0.88339996,
+    "y1": 0.29770002
   },
   "ratings": [
+    {
+      "date": "2026-10-28",
+      "firm": "JP Morgan",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-28",
+      "firm": "Scotiabank",
+      "from": "Sector Outperform",
+      "to": "Sector Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-28",
+      "firm": "Wells Fargo",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-10-19",
       "firm": "Barclays",
@@ -125,27 +146,6 @@
       "firm": "Citigroup",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-09-16",
-      "firm": "RBC Capital",
-      "from": "Sector Perform",
-      "to": "Sector Perform",
-      "action": "main"
-    },
-    {
-      "date": "2026-09-09",
-      "firm": "Bernstein",
-      "from": "Market Perform",
-      "to": "Market Perform",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-27",
-      "firm": "Barclays",
-      "from": "Overweight",
-      "to": "Overweight",
       "action": "main"
     }
   ],
@@ -230,28 +230,22 @@
     "net_pct": 0
   },
   "extras": {
-    "beta": 1.389,
-    "enterprise_value": 111962898432,
-    "ev_ebitda": 11.719,
-    "ev_revenue": 4.328,
-    "float_shares": 1426338765,
-    "short_shares": 25136099,
-    "short_pct_float": 1.76,
-    "short_ratio": 2.18,
+    "beta": null,
+    "enterprise_value": 113752899584,
+    "ev_ebitda": 12.662,
+    "ev_revenue": 4.302,
+    "float_shares": 1432280920,
+    "short_shares": 26153581,
+    "short_pct_float": 1.83,
+    "short_ratio": 2.41,
     "last_split": "2:1",
     "last_split_date": "2011-02-02"
   },
   "ex_dividend": "2026-10-15",
   "dividend_date": null,
   "payout_ratio": 0.2956,
-  "inst_count": 2547,
+  "inst_count": 2558,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.40705,
-      "actual": 0.5,
-      "surprise_pct": 22.84
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.32047,
@@ -269,6 +263,12 @@
       "estimate": 0.62343,
       "actual": 0.74,
       "surprise_pct": 18.7
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.83062,
+      "actual": 0.88,
+      "surprise_pct": 5.94
     }
   ],
   "insiders": [

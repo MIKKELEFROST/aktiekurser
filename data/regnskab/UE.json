@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T21:00:12.505Z",
+  "updated_at": "2026-10-28T21:25:18.340Z",
   "source": "Yahoo Finance",
   "symbol": "UE",
   "summary": "Urban Edge Properties is a NYSE listed real estate investment trust focused on owning, managing, acquiring, developing, and redeveloping retail real estate in urban communities, primarily in the Washington, D.C. to Boston corridor. Urban Edge owns 74 properties totaling 16.0 million square feet of gross leasable area. Urban Edge Properties was established in 2014 and was incorporated in Maryland.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-28",
   "earnings_estimated": false,
   "earnings_call": "2026-10-28",
-  "eps_estimate": 0.12,
+  "eps_estimate": 0.11,
   "analysts": {
     "strong_buy": 0,
     "buy": 2,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 119196000,
-      "earnings": 14935000
-    },
-    {
       "q": "4Q2025",
       "revenue": 119560000,
       "earnings": 12424000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 122645000,
       "earnings": 17922000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 119249000,
+      "earnings": 51440000
     }
   ],
   "growth": {
-    "q0": 0.42009997,
-    "q1": 0.053600002,
+    "q0": 0.053600002,
+    "q1": -0.1071,
     "y0": -0.3456,
     "y1": 0.040799998
   },
@@ -231,13 +231,13 @@
   },
   "extras": {
     "beta": 1.009,
-    "enterprise_value": 4210701312,
-    "ev_ebitda": 15.648,
-    "ev_revenue": 8.646,
+    "enterprise_value": 4209438976,
+    "ev_ebitda": 15.643,
+    "ev_revenue": 8.644,
     "float_shares": 126082873,
-    "short_shares": 3288727,
-    "short_pct_float": 4.53,
-    "short_ratio": 3.72,
+    "short_shares": 3202880,
+    "short_pct_float": 4.41,
+    "short_ratio": 3.34,
     "last_split": null,
     "last_split_date": null
   },
@@ -246,12 +246,6 @@
   "payout_ratio": 1.5094,
   "inst_count": 404,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.1,
-      "actual": 0.0845,
-      "surprise_pct": -15.5
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.08132,
@@ -269,6 +263,12 @@
       "estimate": 0.11,
       "actual": 0.1279,
       "surprise_pct": 16.27
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.12,
+      "actual": 0.4082,
+      "surprise_pct": 240.17
     }
   ],
   "insiders": [

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T21:00:09.799Z",
+  "updated_at": "2026-10-28T21:25:15.226Z",
   "source": "Yahoo Finance",
   "symbol": "ADP",
   "summary": "Automatic Data Processing, Inc. provides cloud-based human capital management (HCM) solutions worldwide. It operates in two segments, Employer Services and Professional Employer Organization (PEO). The Employer Services segment offers strategic, cloud-based platforms, and human resources (HR) outsourcing solutions. This segment's offerings include RUN Powered by ADP, a software platform for small business payroll, HR, and compliance; ADP Workforce Now, a HCM solution used across mid-sized and large businesses to manage employees; and ADP Lyric HCM, a solution for HR management, payroll, workforce management, talent, and data analytics. Its PEO Services segment provides HR outsourcing solutions under ADP TotalSource name to businesses through a co-employment model. This segment also provides guidance, user-friendly technology, comprehensive employee benefits, and a risk management, safety, and workers' compensation program. The company was founded in 1949 and is headquartered in Roseland, New Jersey.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-28",
   "earnings_estimated": false,
   "earnings_call": "2026-10-28",
-  "eps_estimate": 2.76595,
+  "eps_estimate": 2.91499,
   "analysts": {
     "strong_buy": 0,
     "buy": 4,
@@ -24,12 +24,6 @@
   "target_low": 225,
   "target_analysts": 15,
   "statements": [
-    {
-      "year": "2022",
-      "revenue": 16498300000,
-      "net": 2948900000,
-      "margin": 17.9
-    },
     {
       "year": "2023",
       "revenue": 18012200000,
@@ -47,19 +41,15 @@
       "revenue": 20560900000,
       "net": 4079700000,
       "margin": 19.8
+    },
+    {
+      "year": "2026",
+      "revenue": 21947400000,
+      "net": 4413500000,
+      "margin": 20.1
     }
   ],
   "quarterly": [
-    {
-      "q": "2Q2025",
-      "revenue": 5126800000,
-      "earnings": 910600000
-    },
-    {
-      "q": "3Q2025",
-      "revenue": 5175200000,
-      "earnings": 1013000000
-    },
     {
       "q": "4Q2025",
       "revenue": 5359300000,
@@ -69,11 +59,21 @@
       "q": "1Q2026",
       "revenue": 5939200000,
       "earnings": 1359800000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 5473800000,
+      "earnings": 978600000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 5490700000,
+      "earnings": 1125200000
     }
   ],
   "growth": {
-    "q0": 0.1108,
-    "q1": 0.1126,
+    "q0": 0.1126,
+    "q1": 0.1011,
     "y0": 0.1028,
     "y1": 0.093
   },
@@ -200,6 +200,13 @@
       "date": "2026-06-30"
     },
     {
+      "name": "SCHWAB STRATEGIC TRUST-Schwab US Dividend Equity ETF",
+      "kind": "fond",
+      "pct": 2.76,
+      "shares": 10930561,
+      "date": "2026-08-31"
+    },
+    {
       "name": "Vanguard Portfolio Management LLC",
       "kind": "institution",
       "pct": 2.66,
@@ -211,13 +218,6 @@
       "kind": "fond",
       "pct": 2.61,
       "shares": 10356628,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "Wellington Management Group, LLP",
-      "kind": "institution",
-      "pct": 2.53,
-      "shares": 10029229,
       "date": "2026-06-30"
     }
   ],
@@ -231,27 +231,21 @@
   },
   "extras": {
     "beta": 0.841,
-    "enterprise_value": 120908357632,
-    "ev_ebitda": 18.859,
-    "ev_revenue": 5.509,
+    "enterprise_value": 117726281728,
+    "ev_ebitda": 18.363,
+    "ev_revenue": 5.364,
     "float_shares": 396380814,
-    "short_shares": 10950800,
-    "short_pct_float": 2.77,
-    "short_ratio": 4.89,
+    "short_shares": 10187703,
+    "short_pct_float": 2.57,
+    "short_ratio": 4.91,
     "last_split": "1139:1000",
     "last_split_date": "2014-10-01"
   },
   "ex_dividend": "2026-09-11",
   "dividend_date": null,
   "payout_ratio": 0.6069,
-  "inst_count": 2983,
+  "inst_count": 2994,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 2.44263,
-      "actual": 2.49,
-      "surprise_pct": 1.94
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 2.56861,
@@ -269,6 +263,12 @@
       "estimate": 2.59887,
       "actual": 2.64,
       "surprise_pct": 1.58
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 2.76595,
+      "actual": 2.82,
+      "surprise_pct": 1.95
     }
   ],
   "insiders": [

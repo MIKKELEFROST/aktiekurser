@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T21:00:12.192Z",
+  "updated_at": "2026-10-28T21:25:17.936Z",
   "source": "Yahoo Finance",
   "symbol": "SCL",
   "summary": "Stepan Company, together with its subsidiaries, produces and sells specialty and intermediate chemicals to other manufacturers for use in various end products in the United States, France, Poland, the United Kingdom, Brazil, Mexico, and internationally. It operates through three segments: Surfactants, Polymers, and Specialty Products. The Surfactants segment offers surfactants that are used in consumer and industrial cleaning and disinfection products, including detergents for washing clothes, dishes, carpets, and floors and walls, as well as shampoos and body washes; and other applications, such as fabric softeners, germicidal quaternary compounds, disinfectants, lubricating ingredients; emulsifiers for spreading agricultural products; and industrial applications comprising latex systems, plastics, and composites. The Polymers segment provides polyurethane polyols that are used in the manufacture of rigid foam for thermal insulation in the construction industry, as well as a base raw material for coatings, adhesives, sealants, and elastomers (CASE); polyester resins used in coating applications; specialty polyols, such as CASE and powdered polyester resins; and phthalic anhydride that is used in unsaturated polyester resins, alkyd resins, and plasticizers for applications in construction materials, as well as components of automotive, boating, and other consumer products. The Specialty Products segment offers flavors, emulsifiers, and solubilizers for use in food, flavoring, nutritional supplement, and pharmaceutical applications. Stepan Company was founded in 1932 and is headquartered in Northbrook, Illinois.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-28",
   "earnings_estimated": false,
   "earnings_call": "2026-10-28",
-  "eps_estimate": 0.725,
+  "eps_estimate": 0.34,
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 590284000,
-      "earnings": 10839000
-    },
-    {
       "q": "4Q2025",
       "revenue": 553886000,
       "earnings": 5004000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 684109000,
       "earnings": 22911000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 692154000,
+      "earnings": 17813000
     }
   ],
   "growth": {
-    "q0": 0.5104,
-    "q1": 18,
+    "q0": 18,
+    "q1": 1.1667,
     "y0": 0.478,
     "y1": 0.3717
   },
@@ -231,13 +231,13 @@
   },
   "extras": {
     "beta": 0.947,
-    "enterprise_value": 2066030592,
-    "ev_ebitda": 9.855,
-    "ev_revenue": 0.849,
+    "enterprise_value": 2076032896,
+    "ev_ebitda": 9.903,
+    "ev_revenue": 0.853,
     "float_shares": 21439058,
-    "short_shares": 661474,
-    "short_pct_float": 4.21,
-    "short_ratio": 4.29,
+    "short_shares": 690262,
+    "short_pct_float": 4.39,
+    "short_ratio": 4.34,
     "last_split": "2:1",
     "last_split_date": "2012-12-17"
   },
@@ -246,12 +246,6 @@
   "payout_ratio": 0.7561,
   "inst_count": 319,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.615,
-      "actual": 0.48,
-      "surprise_pct": -21.95
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.395,
@@ -269,6 +263,12 @@
       "estimate": 0.61,
       "actual": 1.18,
       "surprise_pct": 93.44
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.725,
+      "actual": 0.94,
+      "surprise_pct": 29.66
     }
   ],
   "insiders": [

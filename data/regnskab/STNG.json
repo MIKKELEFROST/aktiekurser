@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T21:00:12.360Z",
+  "updated_at": "2026-10-28T21:25:18.129Z",
   "source": "Yahoo Finance",
   "symbol": "STNG",
   "summary": "Scorpio Tankers Inc., together with its subsidiaries, engages in the seaborne transportation of crude oil and refined petroleum products worldwide. As of March 19, 2026, its fleet consisted of 90 wholly owned tankers, including 34 LR2, 42MR, and 14 Handymax. Scorpio Tankers Inc. was incorporated in 2009 and is headquartered in Monaco.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-28",
   "earnings_estimated": false,
   "earnings_call": "2026-10-28",
-  "eps_estimate": 2.06408,
+  "eps_estimate": 2.79872,
   "analysts": {
     "strong_buy": 1,
     "buy": 7,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 232921000,
-      "earnings": 84452000
-    },
-    {
       "q": "4Q2025",
       "revenue": 241424000,
       "earnings": 128118000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 391800000,
       "earnings": 387536000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 249094000,
+      "earnings": 224316000
     }
   ],
   "growth": {
-    "q0": 0.38529998,
-    "q1": 0.90949994,
-    "y0": 1.3514999,
-    "y1": -0.3865
+    "q0": 0.72760004,
+    "q1": -0.3709,
+    "y0": 1.3776,
+    "y1": -0.39029998
   },
   "ratings": [
+    {
+      "date": "2026-10-28",
+      "firm": "BTIG",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "reit"
+    },
     {
       "date": "2026-10-13",
       "firm": "Morgan Stanley",
@@ -140,13 +147,6 @@
       "from": "Buy",
       "to": "Buy",
       "action": "main"
-    },
-    {
-      "date": "2026-04-24",
-      "firm": "Jefferies",
-      "from": null,
-      "to": "Buy",
-      "action": "init"
     }
   ],
   "holders": [
@@ -231,27 +231,21 @@
   },
   "extras": {
     "beta": -0.183,
-    "enterprise_value": 2853072896,
-    "ev_ebitda": 4.083,
-    "ev_revenue": 2.347,
+    "enterprise_value": 2771202560,
+    "ev_ebitda": 3.966,
+    "ev_revenue": 2.28,
     "float_shares": 38162044,
-    "short_shares": 1981757,
-    "short_pct_float": 4.21,
-    "short_ratio": 1.93,
+    "short_shares": 2086961,
+    "short_pct_float": 4.43,
+    "short_ratio": 1.7,
     "last_split": "1:10",
     "last_split_date": "2019-01-18"
   },
   "ex_dividend": "2026-08-17",
   "dividend_date": null,
   "payout_ratio": 0.1071,
-  "inst_count": 409,
+  "inst_count": 412,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.44471,
-      "actual": 1.49,
-      "surprise_pct": 3.13
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.52834,
@@ -269,6 +263,12 @@
       "estimate": 4.55207,
       "actual": 4.68,
       "surprise_pct": 2.81
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 2.06787,
+      "actual": 2.49,
+      "surprise_pct": 20.41
     }
   ],
   "insiders": [

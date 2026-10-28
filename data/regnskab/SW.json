@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T21:00:12.901Z",
+  "updated_at": "2026-10-28T21:25:18.167Z",
   "source": "Yahoo Finance",
   "symbol": "SW",
   "summary": "Smurfit Westrock Plc, together with its subsidiaries, manufactures, distributes, and sells containerboard, corrugated containers, and other paper-based packaging products in North America, South America, Europe, Asia, Africa, Australia, and internationally. The company produces containerboard and paperboard; packaging of corrugated containers; consumer packaging; and offers solid board, kraft paper, and graphic board, as well as other packaging products, such as solidboard packaging, paper sacks and bag-in-box. It produces linerboard and corrugated medium and paperboard; and other paper-based packaging, such as folding cartons, inserts, labels and displays. The company primarily serves food and beverage, healthcare, beauty and personal care, garden, consumer goods, industrial, and foodservice markets. It markets its products through its own sales force, independent sales representatives, and independent distributors. Smurfit Westrock Plc was founded in 1934 and is headquartered in Dublin, Ireland.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-28",
   "earnings_estimated": false,
   "earnings_call": "2026-10-28",
-  "eps_estimate": 0.5742,
+  "eps_estimate": 0.70352,
   "analysts": {
     "strong_buy": 5,
     "buy": 11,
@@ -51,16 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 7940000000,
-      "earnings": -28000000
-    },
-    {
-      "q": "3Q2025",
-      "revenue": 8003000000,
-      "earnings": 246000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 7580000000,
       "earnings": 97000000
@@ -69,11 +59,21 @@
       "q": "1Q2026",
       "revenue": 7712000000,
       "earnings": 65000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 8031000000,
+      "earnings": 89000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 8161000000,
+      "earnings": 222000000
     }
   ],
   "growth": {
-    "q0": -0.01,
-    "q1": 1.4932001,
+    "q0": 1.4932001,
+    "q1": 1.3182001,
     "y0": -0.0031,
     "y1": 0.70419997
   },
@@ -231,27 +231,21 @@
   },
   "extras": {
     "beta": 0.914,
-    "enterprise_value": 35637022720,
-    "ev_ebitda": 7.788,
-    "ev_revenue": 1.138,
+    "enterprise_value": 35794165760,
+    "ev_ebitda": 7.822,
+    "ev_revenue": 1.143,
     "float_shares": 520621497,
-    "short_shares": 26395328,
-    "short_pct_float": 5.73,
-    "short_ratio": 5.89,
+    "short_shares": 23247756,
+    "short_pct_float": 5.05,
+    "short_ratio": 5.42,
     "last_split": null,
     "last_split_date": null
   },
   "ex_dividend": "2026-08-14",
   "dividend_date": null,
   "payout_ratio": 1.8592,
-  "inst_count": 1072,
+  "inst_count": 1080,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.72343,
-      "actual": 0.58,
-      "surprise_pct": -19.83
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.495,
@@ -269,54 +263,15 @@
       "estimate": 0.42122,
       "actual": 0.35,
       "surprise_pct": -16.91
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.5742,
+      "actual": 0.45,
+      "surprise_pct": -21.63
     }
   ],
   "insiders": [
-    {
-      "name": "FERGUSON-MCHUGH MARY LYNN",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 48,
-      "date": "2026-09-10"
-    },
-    {
-      "name": "HARRISON SUZAN F",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 48,
-      "date": "2026-09-10"
-    },
-    {
-      "name": "BROWN CAROLE LYNNETTE",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 48,
-      "date": "2026-09-10"
-    },
-    {
-      "name": "HIETALA KAISA",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 48,
-      "date": "2026-09-10"
-    },
-    {
-      "name": "SELLIER LAURENT",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 140,
-      "date": "2026-09-10"
-    },
     {
       "name": "SMURFIT ANTHONY P. J.",
       "role": "Chief Executive Officer",
@@ -354,12 +309,57 @@
       "date": "2026-09-10"
     },
     {
-      "name": "FAIRWEATHER CAROL",
+      "name": "FERGUSON-MCHUGH MARY LYNN",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 48,
+      "date": "2026-09-10"
+    },
+    {
+      "name": "HARRISON SUZAN F",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 48,
+      "date": "2026-09-10"
+    },
+    {
+      "name": "BROWN CAROLE LYNNETTE",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 48,
+      "date": "2026-09-10"
+    },
+    {
+      "name": "HIETALA KAISA",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 48,
+      "date": "2026-09-10"
+    },
+    {
+      "name": "MAYER SAVERIO",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 119,
+      "date": "2026-09-10"
+    },
+    {
+      "name": "PAGE IRENE",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 23,
       "date": "2026-09-10"
     }
   ],

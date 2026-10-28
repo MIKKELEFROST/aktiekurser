@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T21:00:10.276Z",
+  "updated_at": "2026-10-28T21:25:15.701Z",
   "source": "Yahoo Finance",
   "symbol": "BSX",
   "summary": "Boston Scientific Corporation develops, manufactures, and markets medical devices for use in various interventional medical specialties worldwide. The company operates in two segments, MedSurg and Cardiovascular. It offers devices to diagnose and treat a range of gastrointestinal conditions, such as resolution clips, biliary stent systems, stents and electrocautery enhanced delivery systems, SpyGlass, single-use scopes used for diagnostic and therapeutic procedures in the pancreaticobiliary system, in endoscopic retrograde cholangiopancreatography procedures, and single-use duodenoscopes, as well as endoluminal surgery and infection prevention products; devices to treat urological conditions, including ureteral stents, catheters, baskets, guidewires, urinary and bowel dysfunction, sheaths, balloons, single-use digital flexible ureteroscopes, holmium laser systems, penile implants, artificial urinary sphincter, laser system, and hydrogel systems; and devices to treat neurological movement disorders and manage chronic pain, such as spinal cord stimulator systems, radiofrequency ablation, and intraosseous nerve ablation and deep brain stimulation systems. The company also provides technologies for diagnosing and treating a range of diseases and abnormalities of the heart; WATCHMAN FLX, a left atrial appendage closure (LAAC) device; and implantable devices that monitor the heart and deliver electricity to treat cardiac abnormalities, such as cardioverter and cardiac resynchronization therapy defibrillators, MRI S-ICD systems, cardiac resynchronization therapy pacemakers, remote patient management systems, insertable cardiac monitor systems, and remote cardiac monitoring systems. In addition, it offers diagnosis and treatment of rate and rhythm disorders of the heart; peripheral arterial and venous diseases; and products to diagnose and treat forms of cancer. The company was incorporated in 1979 and is headquartered in Marlborough, Massachusetts.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-28",
   "earnings_estimated": false,
   "earnings_call": "2026-10-28",
-  "eps_estimate": 0.72319,
+  "eps_estimate": 0.83333,
   "analysts": {
     "strong_buy": 6,
     "buy": 18,
@@ -51,16 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 5061000000,
-      "earnings": 797000000
-    },
-    {
-      "q": "3Q2025",
-      "revenue": 5065000000,
-      "earnings": 755000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 5286000000,
       "earnings": 672000000
@@ -69,15 +59,32 @@
       "q": "1Q2026",
       "revenue": 5203000000,
       "earnings": 1341000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 5442000000,
+      "earnings": 907000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 5138000000,
+      "earnings": 582000000
     }
   ],
   "growth": {
-    "q0": -0.0357,
-    "q1": 0.0417,
+    "q0": 0.0417,
+    "q1": -0.0023999999,
     "y0": 0.0547,
     "y1": 0.0463
   },
   "ratings": [
+    {
+      "date": "2026-10-28",
+      "firm": "Needham",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-26",
       "firm": "Stifel",
@@ -140,13 +147,6 @@
       "from": "Buy",
       "to": "Buy",
       "action": "reit"
-    },
-    {
-      "date": "2026-07-31",
-      "firm": "Argus Research",
-      "from": "Buy",
-      "to": "Hold",
-      "action": "down"
     }
   ],
   "holders": [
@@ -231,27 +231,21 @@
   },
   "extras": {
     "beta": 0.575,
-    "enterprise_value": 78382882816,
-    "ev_ebitda": 13.725,
-    "ev_revenue": 3.733,
+    "enterprise_value": 77629284352,
+    "ev_ebitda": 13.593,
+    "ev_revenue": 3.697,
     "float_shares": 1444983283,
-    "short_shares": 41410512,
-    "short_pct_float": 2.86,
-    "short_ratio": 1.99,
+    "short_shares": 40708019,
+    "short_pct_float": 2.81,
+    "short_ratio": 2.17,
     "last_split": "2:1",
     "last_split_date": "2003-11-06"
   },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 2203,
+  "inst_count": 2211,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.71366,
-      "actual": 0.75,
-      "surprise_pct": 5.09
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.78105,
@@ -269,6 +263,12 @@
       "estimate": 0.82801,
       "actual": 0.86,
       "surprise_pct": 3.86
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.72319,
+      "actual": 0.73,
+      "surprise_pct": 0.94
     }
   ],
   "insiders": [

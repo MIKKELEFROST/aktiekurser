@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T21:00:12.891Z",
+  "updated_at": "2026-10-28T21:25:17.764Z",
   "source": "Yahoo Finance",
   "symbol": "PPG",
   "summary": "PPG Industries, Inc. manufactures and distributes paints, coatings, and specialty materials in the United States, Canada, the Asia Pacific, Latin America, Europe, the Middle East, and Africa. It operates through three segments: Global Architectural Coatings, Performance Coatings, and Industrial Coatings. The Global Architectural Coatings segment supplies a variety of decorative coatings, adhesives, sealants, and finishes, as well as paint strippers, stains, and related chemicals. Its Performance Coatings segment offers aerospace coatings, automotive refinishing coatings, protective and marine coatings, and traffic solutions comprising paints, thermoplastics, raised pavement markers, and other technologies for pavement marking. The Industrial Coatings segment provides automotive OEM coatings, industrial coatings, and packaging coatings, as well as specialty products, such as optical monomers and coatings, low-friction coatings, and other specialty products. The company delivers its products to company-owned stores, home centers and other consumer retail outlets, paint dealers, concessionaires and independent distributors, company-owned distribution networks, and directly to manufacturing companies and retail customers. PPG Industries, Inc. was incorporated in 1883 and is headquartered in Pittsburgh, Pennsylvania.",
@@ -7,10 +7,10 @@
   "website": "https://www.ppg.com",
   "employees": 43500,
   "ceo": "Mr. Timothy M. Knavish",
-  "next_earnings": "2026-10-27",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-26",
+  "earnings_estimated": true,
   "earnings_call": "2026-10-28",
-  "eps_estimate": 2.12193,
+  "eps_estimate": 1.72793,
   "analysts": {
     "strong_buy": 2,
     "buy": 10,
@@ -19,8 +19,8 @@
     "strong_sell": 0,
     "total": 25
   },
-  "target_mean": 125.5,
-  "target_high": 138,
+  "target_mean": 125.72727,
+  "target_high": 140,
   "target_low": 115,
   "target_analysts": 22,
   "statements": [
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 4082000000,
-      "earnings": 453000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 3914000000,
       "earnings": 300000000
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 4495000000,
       "earnings": 439000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 4353000000,
+      "earnings": 451000000
     }
   ],
   "growth": {
-    "q0": -0.0038,
-    "q1": 0.1254,
-    "y0": 0.0399,
-    "y1": 0.088199995
+    "q0": 0.1443,
+    "q1": 0.0437,
+    "y0": 0.0482,
+    "y1": 0.08
   },
   "ratings": [
     {
@@ -231,27 +231,21 @@
   },
   "extras": {
     "beta": 1.05,
-    "enterprise_value": 30438770688,
-    "ev_ebitda": 11.282,
-    "ev_revenue": 1.854,
+    "enterprise_value": 31225712640,
+    "ev_ebitda": 11.574,
+    "ev_revenue": 1.902,
     "float_shares": 221815386,
-    "short_shares": 6517391,
-    "short_pct_float": 3.37,
-    "short_ratio": 3.74,
+    "short_shares": 6678071,
+    "short_pct_float": 3.45,
+    "short_ratio": 3.84,
     "last_split": "2:1",
     "last_split_date": "2015-06-15"
   },
   "ex_dividend": "2026-11-10",
   "dividend_date": null,
   "payout_ratio": 0.408,
-  "inst_count": 1477,
+  "inst_count": 1485,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 2.08291,
-      "actual": 2.13,
-      "surprise_pct": 2.26
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.57895,
@@ -269,6 +263,12 @@
       "estimate": 2.25334,
       "actual": 2.23,
       "surprise_pct": -1.04
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 2.12193,
+      "actual": 2.25,
+      "surprise_pct": 6.04
     }
   ],
   "insiders": [
@@ -289,6 +289,15 @@
       "value": 1344,
       "shares": 11,
       "date": "2026-06-12"
+    },
+    {
+      "name": "FORTMANN KATHY LYNN",
+      "role": "Director",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 107.72 per share.",
+      "value": 199174,
+      "shares": 1849,
+      "date": "2026-04-15"
     },
     {
       "name": "SMITH CATHY R",
@@ -346,15 +355,6 @@
     },
     {
       "name": "NALLY MICHAEL",
-      "role": "Director",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 107.72 per share.",
-      "value": 199174,
-      "shares": 1849,
-      "date": "2026-04-15"
-    },
-    {
-      "name": "ROBERTS CHRISTOPHER III",
       "role": "Director",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 107.72 per share.",

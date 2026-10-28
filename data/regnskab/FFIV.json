@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T21:00:10.881Z",
+  "updated_at": "2026-10-28T21:25:16.341Z",
   "source": "Yahoo Finance",
   "symbol": "FFIV",
   "summary": "F5, Inc. provides multicloud application security and delivery solutions in the United States, Europe, the Middle East, Africa, and the Asia Pacific region. The company's distributed cloud services enable its customers to deploy, secure, and operate applications in any architecture, from on-premises to the public cloud. It also offers unified, security, networking, and application management solutions, such as web app and API protection; multi-cloud networking; application delivery and deployment; domain name system; content delivery network; and application deployment and orchestration. In addition, the company provides application security and delivery products, including NGINX Plus; NGINX One Console; NGINX Ingress Controller; WAF for NGINX; BIG-IP Packaged Software; and BIG-IP Systems. Further, it provides a range of professional services, including maintenance, consulting, training, and other technical support services. The company sells its products to large enterprise businesses, public sector institutions, governments, and service providers through distributors, value-added resellers, managed service providers, systems integrators, and other indirect channel partners. It has partnerships with public cloud providers, such as Amazon Web Services, Microsoft Azure, and Google Cloud Platform. The company was formerly known as F5 Networks, Inc. and changed its name to F5, Inc. in November 2021. F5, Inc. was incorporated in 1996 and is headquartered in Seattle, Washington.",
@@ -7,10 +7,10 @@
   "website": "https://www.f5.com",
   "employees": 6512,
   "ceo": "Mr. Francois  Locoh-Donou",
-  "next_earnings": "2026-10-27",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-26",
+  "earnings_estimated": true,
   "earnings_call": "2026-10-27",
-  "eps_estimate": 4.25523,
+  "eps_estimate": 4.36183,
   "analysts": {
     "strong_buy": 3,
     "buy": 2,
@@ -24,12 +24,6 @@
   "target_low": 300,
   "target_analysts": 10,
   "statements": [
-    {
-      "year": "2022",
-      "revenue": 2695845000,
-      "net": 322160000,
-      "margin": 12
-    },
     {
       "year": "2023",
       "revenue": 2813169000,
@@ -47,14 +41,15 @@
       "revenue": 3088072000,
       "net": 692380000,
       "margin": 22.4
+    },
+    {
+      "year": "2026",
+      "revenue": 3416669000,
+      "net": 722149000,
+      "margin": 21.1
     }
   ],
   "quarterly": [
-    {
-      "q": "3Q2025",
-      "revenue": 810090000,
-      "earnings": 190493000
-    },
     {
       "q": "4Q2025",
       "revenue": 822465000,
@@ -69,15 +64,55 @@
       "q": "2Q2026",
       "revenue": 865077000,
       "earnings": 208208000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 917427000,
+      "earnings": 186132000
     }
   ],
   "growth": {
-    "q0": -0.0307,
-    "q1": -0.0198,
-    "y0": 0.0962,
-    "y1": 0.043
+    "q0": -0.0198,
+    "q1": 0.074200004,
+    "y0": 0.0335,
+    "y1": 0.128
   },
   "ratings": [
+    {
+      "date": "2026-10-28",
+      "firm": "Morgan Stanley",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-28",
+      "firm": "RBC Capital",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-28",
+      "firm": "Barclays",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-28",
+      "firm": "Evercore ISI Group",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-28",
+      "firm": "Piper Sandler",
+      "from": "Overweight",
+      "to": "Neutral",
+      "action": "down"
+    },
     {
       "date": "2026-10-12",
       "firm": "RBC Capital",
@@ -111,41 +146,6 @@
       "firm": "Barclays",
       "from": "Equal-Weight",
       "to": "Equal-Weight",
-      "action": "main"
-    },
-    {
-      "date": "2026-06-09",
-      "firm": "RBC Capital",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-05-29",
-      "firm": "Barclays",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
-      "action": "main"
-    },
-    {
-      "date": "2026-05-29",
-      "firm": "RBC Capital",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "reit"
-    },
-    {
-      "date": "2026-05-29",
-      "firm": "Piper Sandler",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-05-26",
-      "firm": "B of A Securities",
-      "from": "Underperform",
-      "to": "Underperform",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.028,
-    "enterprise_value": 24785422336,
-    "ev_ebitda": 26.844,
-    "ev_revenue": 7.49,
+    "enterprise_value": 24658860032,
+    "ev_ebitda": 26.707,
+    "ev_revenue": 7.451,
     "float_shares": 56201912,
     "short_shares": 1260728,
     "short_pct_float": 2.95,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 1247,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 3.96866,
-      "actual": 4.39,
-      "surprise_pct": 10.62
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 3.65172,
@@ -269,6 +263,12 @@
       "estimate": 3.99988,
       "actual": 4.73,
       "surprise_pct": 18.25
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 4.25523,
+      "actual": 4.42,
+      "surprise_pct": 3.87
     }
   ],
   "insiders": [
@@ -354,12 +354,12 @@
       "date": "2026-08-03"
     },
     {
-      "name": "OKEKE ANGELIQUE M",
-      "role": "General Counsel",
+      "name": "MADDISON JOHN ANTHONY",
+      "role": "Officer",
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 1060,
+      "shares": 454,
       "date": "2026-07-31"
     }
   ],

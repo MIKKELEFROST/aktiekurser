@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T21:00:10.805Z",
+  "updated_at": "2026-10-28T21:25:16.242Z",
   "source": "Yahoo Finance",
   "symbol": "EQT",
   "summary": "EQT Corporation engages in the exploration, production, gathering, and transmission of hydrocarbons and natural gas. The company sells natural gas, natural gas liquids, and oil to marketers, utilities, and industrial customers located in the Appalachian Basin. It also provides marketing services and contractual pipeline capacity management services, as well as engages in risk management and hedging activities. In addition, it owns and operates propane storage and distribution terminals. The company was formerly known as Equitable Resources Inc. and changed its name to EQT Corporation in February 2009. EQT Corporation was founded in 1888 and is headquartered in Canonsburg, Pennsylvania.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-27",
   "earnings_estimated": false,
   "earnings_call": "2026-10-28",
-  "eps_estimate": 0.3615,
+  "eps_estimate": 0.75522,
   "analysts": {
     "strong_buy": 3,
     "buy": 16,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 24
   },
-  "target_mean": 65.95652,
+  "target_mean": 65.86957,
   "target_high": 81,
   "target_low": 52,
   "target_analysts": 23,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 1958571000,
-      "earnings": 335862000
-    },
-    {
       "q": "4Q2025",
       "revenue": 2388071000,
       "earnings": 677099000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 1809940000,
       "earnings": 211425000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1770394000,
+      "earnings": 278691000
     }
   ],
   "growth": {
-    "q0": -0.3048,
-    "q1": -0.1609,
+    "q0": -0.1609,
+    "q1": -0.4923,
     "y0": 0.2578,
-    "y1": -0.0596
+    "y1": -0.0677
   },
   "ratings": [
+    {
+      "date": "2026-10-27",
+      "firm": "UBS",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-27",
       "firm": "Stephens & Co.",
@@ -140,13 +147,6 @@
       "from": "Overweight",
       "to": "Overweight",
       "action": "reit"
-    },
-    {
-      "date": "2026-09-14",
-      "firm": "UBS",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
     }
   ],
   "holders": [
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.652,
-    "enterprise_value": 43456925696,
-    "ev_ebitda": 6.212,
-    "ev_revenue": 4.676,
+    "enterprise_value": 44345155584,
+    "ev_ebitda": 6.339,
+    "ev_revenue": 4.771,
     "float_shares": 619110716,
     "short_shares": 22541746,
     "short_pct_float": 4.12,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-11-04",
   "dividend_date": null,
   "payout_ratio": 0.1514,
-  "inst_count": 1484,
+  "inst_count": 1486,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.36416,
-      "actual": 0.52,
-      "surprise_pct": 42.79
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.76489,
@@ -269,6 +263,12 @@
       "estimate": 0.40337,
       "actual": 0.39,
       "surprise_pct": -3.31
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.3615,
+      "actual": 0.42,
+      "surprise_pct": 16.18
     }
   ],
   "insiders": [

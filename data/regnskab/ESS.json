@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T21:00:10.821Z",
+  "updated_at": "2026-10-28T21:25:16.258Z",
   "source": "Yahoo Finance",
   "symbol": "ESS",
   "summary": "Essex Property Trust, Inc., an S&P 500 company, is a fully integrated real estate investment trust. The firm acquires, develops, redevelops, and manages multifamily residential properties in selected West Coast markets. Essex currently has ownership interests in 258 apartment communities comprising over 62,000 apartment homes with an additional property in active development. Essex Property Trust, Inc. was incorporated in 1971 in Maryland and is based in San Mateo, United States.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-27",
   "earnings_estimated": false,
   "earnings_call": "2026-10-28",
-  "eps_estimate": 1.47485,
+  "eps_estimate": 1.5101,
   "analysts": {
     "strong_buy": 6,
     "buy": 4,
@@ -19,7 +19,7 @@
     "strong_sell": 1,
     "total": 26
   },
-  "target_mean": 297.11,
+  "target_mean": 296.82,
   "target_high": 330,
   "target_low": 239,
   "target_analysts": 25,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 470942000,
-      "earnings": 164621000
-    },
-    {
       "q": "4Q2025",
       "revenue": 477323000,
       "earnings": 80573000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 486731000,
       "earnings": 62462000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 490346000,
+      "earnings": 98069000
     }
   ],
   "growth": {
-    "q0": -0.0713,
-    "q1": 0.20809999,
+    "q0": 0.20809999,
+    "q1": -0.070700005,
     "y0": -0.044299997,
     "y1": 0.1363
   },
   "ratings": [
+    {
+      "date": "2026-10-28",
+      "firm": "Stifel",
+      "from": "Hold",
+      "to": "Hold",
+      "action": "main"
+    },
     {
       "date": "2026-10-19",
       "firm": "Wells Fargo",
@@ -139,13 +146,6 @@
       "firm": "Barclays",
       "from": "Equal-Weight",
       "to": "Equal-Weight",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-14",
-      "firm": "JP Morgan",
-      "from": "Underweight",
-      "to": "Underweight",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.715,
-    "enterprise_value": 24563642368,
-    "ev_ebitda": 19.962,
-    "ev_revenue": 12.401,
+    "enterprise_value": 24534722560,
+    "ev_ebitda": 19.938,
+    "ev_revenue": 12.386,
     "float_shares": 63553131,
     "short_shares": 2541065,
     "short_pct_float": 6.28,
@@ -246,12 +246,6 @@
   "payout_ratio": 1.605,
   "inst_count": 960,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.66656,
-      "actual": 1.5881,
-      "surprise_pct": -4.71
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.46846,
@@ -269,6 +263,12 @@
       "estimate": 1.46904,
       "actual": 0.9406,
       "surprise_pct": -35.97
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.47485,
+      "actual": 1.586,
+      "surprise_pct": 7.54
     }
   ],
   "insiders": [

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T21:00:12.797Z",
+  "updated_at": "2026-10-28T21:25:17.310Z",
   "source": "Yahoo Finance",
   "symbol": "MCRI",
   "summary": "Monarch Casino & Resort, Inc., through its subsidiaries, owns and operates hotels and casinos. It owns and operates hotels and casinos under the Atlantis Casino Resort Spa in Reno, Nevada and the Monarch Casino Resort Spa Black Hawk in Black Hawk, Colorado. The company also owns separate parcels of land. In addition, it owns and operates The Toucan Charlie's Buffet & Grille, which offers a variety of food selections; The Atlantis Steakhouse, a fine dining destination; The Bistro Napa, which features wine country cuisine; The Oyster Bar on the Sky Terrace, which offers pan roasts made-to-order, fresh seafood, cioppino, house made chowder, and bisques; Sushi Bar, which serves sushi rolls; The Purple Parrot coffee shop, which serves breakfast and American comfort food; The Red Bloom Asian kitchen, which offers Asian dishes; The Manhattan Deli, which offers matzo ball soup, piled high sandwiches, salads, house made soups, bagels and lox, New York style pizza, and New York cheesecake; and The Chicago Dogs Eatery, a snack bar that serves Chicago-style hot dogs, pizza, ice cream, and arcade-style refreshments, as well as two gourmet coffee bars that offer coffee drinks, sandwiches, house made gelato, and freshly baked pastries. Monarch Casino & Resort, Inc. was incorporated in 1993 and is based in Reno, Nevada.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-27",
   "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": 1.795,
+  "eps_estimate": 1.73,
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 6
   },
-  "target_mean": 126.5,
+  "target_mean": 125.66667,
   "target_high": 144,
   "target_low": 114,
   "target_analysts": 6,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 142814000,
-      "earnings": 31576000
-    },
-    {
       "q": "4Q2025",
       "revenue": 140003000,
       "earnings": 22944000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 142597000,
       "earnings": 32523000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 146265000,
+      "earnings": 32005000
     }
   ],
   "growth": {
-    "q0": 0.0504,
-    "q1": 0.09689999,
-    "y0": 0.1412,
-    "y1": 0.038399998
+    "q0": 0.1163,
+    "q1": null,
+    "y0": 0.1722,
+    "y1": 0.0293
   },
   "ratings": [
+    {
+      "date": "2026-10-28",
+      "firm": "Stifel",
+      "from": "Hold",
+      "to": "Hold",
+      "action": "main"
+    },
     {
       "date": "2026-10-07",
       "firm": "Macquarie",
@@ -139,13 +146,6 @@
       "firm": "Wells Fargo",
       "from": "Equal-Weight",
       "to": "Equal-Weight",
-      "action": "main"
-    },
-    {
-      "date": "2026-04-22",
-      "firm": "Stifel",
-      "from": "Hold",
-      "to": "Hold",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.405,
-    "enterprise_value": 1956230784,
-    "ev_ebitda": 9.894,
-    "ev_revenue": 3.481,
+    "enterprise_value": 1940638208,
+    "ev_ebitda": 9.815,
+    "ev_revenue": 3.453,
     "float_shares": 12099673,
     "short_shares": 679874,
     "short_pct_float": 5.77,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.19229999,
   "inst_count": 372,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.55667,
-      "actual": 1.7088,
-      "surprise_pct": 9.77
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.42,
@@ -269,6 +263,12 @@
       "estimate": 1.71,
       "actual": 1.853,
       "surprise_pct": 8.36
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.795,
+      "actual": 1.8181,
+      "surprise_pct": 1.29
     }
   ],
   "insiders": [

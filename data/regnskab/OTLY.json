@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T21:00:11.906Z",
+  "updated_at": "2026-10-28T21:25:17.626Z",
   "source": "Yahoo Finance",
   "symbol": "OTLY",
   "summary": "Oatly Group AB, an oatmilk company, provides a range of plant-based dairy products in the United States, United Kingdom, Germany, China, Sweden, The Netherlands, Finland, and Switzerland. Its oatmilk portfolio includes original, low-fat, full-fat, chocolate flavored, unsweetened, and Super Basic, which are offered in ambient and chilled packaging. The company offers Barista edition oatmilk; matcha; Oatgurts, which are oat-based yogurts; frozen desserts; cooking products, including regular and organic cooking cream, crème fraiche, whipping cream, vanilla custard, and spreads in a variety of flavors; and ready-to-go drinks. It sells its products through including foodservice, food retail, and e-commerce channels. The company was formerly known as Havre Global AB and changed its name to Oatly Group AB in March 2021. Oatly Group AB was founded in 1994 and is headquartered in Malmö, Sweden.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-28",
   "earnings_estimated": false,
   "earnings_call": "2026-10-28",
-  "eps_estimate": -0.655,
+  "eps_estimate": -0.63,
   "analysts": {
     "strong_buy": 2,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 222796000,
-      "earnings": -65287000
-    },
-    {
       "q": "4Q2025",
       "revenue": 233779000,
       "earnings": -19143000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 240095000,
       "earnings": -31283000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 243054000,
+      "earnings": -27458000
     }
   ],
   "growth": {
-    "q0": 0.6729,
-    "q1": -25.4706,
+    "q0": -25.4706,
+    "q1": -0.8128,
     "y0": -10.278001,
     "y1": 0.1463
   },
@@ -231,13 +231,13 @@
   },
   "extras": {
     "beta": 1.812,
-    "enterprise_value": 878438272,
-    "ev_ebitda": -64.392,
-    "ev_revenue": 0.95,
+    "enterprise_value": 880353024,
+    "ev_ebitda": -64.533,
+    "ev_revenue": 0.952,
     "float_shares": 12150911,
-    "short_shares": 394737,
-    "short_pct_float": 2.76,
-    "short_ratio": 7.03,
+    "short_shares": 397081,
+    "short_pct_float": 2.77,
+    "short_ratio": 6.4,
     "last_split": "1:20",
     "last_split_date": "2025-02-18"
   },
@@ -246,12 +246,6 @@
   "payout_ratio": null,
   "inst_count": 82,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.49,
-      "actual": -2.0023,
-      "surprise_pct": -308.63
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.42,
@@ -269,9 +263,24 @@
       "estimate": -0.95,
       "actual": -0.94516,
       "surprise_pct": 0.51
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.655,
+      "actual": -0.76841,
+      "surprise_pct": -17.31
     }
   ],
   "insiders": [
+    {
+      "name": "ORDONEZ DANIEL",
+      "role": "Chief Operating Officer",
+      "kind": "sell",
+      "text": "Sale at price 8.95 per share.",
+      "value": 349641,
+      "shares": 39066,
+      "date": "2026-06-02"
+    },
     {
       "name": "FLATIN JEAN-CHRISTOPHE MARIE",
       "role": "Chief Executive Officer",
@@ -300,13 +309,49 @@
       "date": "2026-06-02"
     },
     {
-      "name": "ORDONEZ DANIEL",
-      "role": "Chief Operating Officer",
-      "kind": "sell",
-      "text": "Sale at price 8.95 per share.",
-      "value": 349641,
-      "shares": 39066,
-      "date": "2026-06-02"
+      "name": "HARD LILLIS ULF ANDREAS",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 298,
+      "date": "2026-05-29"
+    },
+    {
+      "name": "MATTSSON PONTUS",
+      "role": "General Counsel",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 14925,
+      "date": "2026-05-29"
+    },
+    {
+      "name": "JONES HANNAH CERI",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 23656,
+      "date": "2026-05-29"
+    },
+    {
+      "name": "DAVID MARIE-JOSE",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 24875,
+      "date": "2026-05-29"
+    },
+    {
+      "name": "SHIBURI RHOLANE",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 422,
+      "date": "2026-05-29"
     },
     {
       "name": "RATHKE FRANCES G",
@@ -315,51 +360,6 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 23656,
-      "date": "2026-05-29"
-    },
-    {
-      "name": "BROK MARTIN",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 25646,
-      "date": "2026-05-29"
-    },
-    {
-      "name": "CHRISTENSON GREGORY STEPHEN",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 23656,
-      "date": "2026-05-29"
-    },
-    {
-      "name": "MELLOUL ERIC",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 29962,
-      "date": "2026-05-29"
-    },
-    {
-      "name": "ORDONEZ DANIEL",
-      "role": "Chief Operating Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 74626,
-      "date": "2026-05-29"
-    },
-    {
-      "name": "FLATIN JEAN-CHRISTOPHE MARIE",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 74626,
       "date": "2026-05-29"
     }
   ],

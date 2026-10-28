@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T21:00:11.555Z",
+  "updated_at": "2026-10-28T21:25:17.167Z",
   "source": "Yahoo Finance",
   "symbol": "LUNG",
   "summary": "Pulmonx Corporation, a commercial-stage medical technology company that provides a minimally invasive treatment for patients with severe emphysema, a form of chronic obstructive pulmonary disease. It offers Zephyr Endobronchial Valve; and Chartis Pulmonary Assessment System, a balloon catheter and console system with flow and pressure sensors that are used to assess the presence of collateral ventilation. The company also offers LungTraX Platform, a cloud-based quantitative computed tomography analysis service that provides physicians with multiple products, such as LungTraX Connect to improve workup efficiency; LungTraX Detect to enable patient identification; and StratX Lung report that is designed for solution that includes information on emphysema destruction, fissure completeness, and lobar volume to help identify target lobes for treatment with Zephyr Valves. It serves emphysema patients in the United States, Europe, the Middle East, Africa, the Asia Pacific, and internationally. The company was formerly known as Pulmonx and changed its name to Pulmonx Corporation in December 2013. Pulmonx Corporation was incorporated in 1995 and is headquartered in Redwood City, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-27",
   "earnings_estimated": false,
   "earnings_call": "2026-10-27",
-  "eps_estimate": -0.256,
+  "eps_estimate": -0.22667,
   "analysts": {
     "strong_buy": 0,
     "buy": 3,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 5
   },
-  "target_mean": 3.4,
+  "target_mean": 3.7,
   "target_high": 5,
   "target_low": 2.5,
   "target_analysts": 5,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 21502000,
-      "earnings": -13957000
-    },
-    {
       "q": "4Q2025",
       "revenue": 22598000,
       "earnings": -10425000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 22756000,
       "earnings": -10080000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 22835000,
+      "earnings": -8394000
     }
   ],
   "growth": {
-    "q0": 0.2471,
-    "q1": 0.128,
-    "y0": 0.215,
-    "y1": 0.09770001
+    "q0": 0.0933,
+    "q1": 0.24239999,
+    "y0": 0.265,
+    "y1": 0.056799997
   },
   "ratings": [
+    {
+      "date": "2026-10-28",
+      "firm": "Stifel",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-04-30",
       "firm": "D. Boral Capital",
@@ -139,13 +146,6 @@
       "firm": "Wells Fargo",
       "from": "Equal-Weight",
       "to": "Equal-Weight",
-      "action": "main"
-    },
-    {
-      "date": "2025-07-31",
-      "firm": "Lake Street",
-      "from": "Buy",
-      "to": "Buy",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.336,
-    "enterprise_value": 84117128,
-    "ev_ebitda": -1.849,
-    "ev_revenue": 0.962,
+    "enterprise_value": 85405576,
+    "ev_ebitda": -1.877,
+    "ev_revenue": 0.977,
     "float_shares": 37608940,
     "short_shares": 802733,
     "short_pct_float": 2.21,
@@ -246,12 +246,6 @@
   "payout_ratio": null,
   "inst_count": 126,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.41833,
-      "actual": -0.34,
-      "surprise_pct": 18.72
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.385,
@@ -269,9 +263,24 @@
       "estimate": -0.28,
       "actual": -0.24,
       "surprise_pct": 14.29
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.256,
+      "actual": -0.19,
+      "surprise_pct": 25.78
     }
   ],
   "insiders": [
+    {
+      "name": "RADHAKRISHNAN SRIKANTH",
+      "role": "Chief Technology Officer",
+      "kind": "sell",
+      "text": "Sale at price 2.26 per share.",
+      "value": 32194,
+      "shares": 14245,
+      "date": "2026-09-01"
+    },
     {
       "name": "FRENCH GLENDON E III",
       "role": "Chief Executive Officer",
@@ -297,15 +306,6 @@
       "text": "Sale at price 2.26 per share.",
       "value": 17807,
       "shares": 7879,
-      "date": "2026-09-01"
-    },
-    {
-      "name": "RADHAKRISHNAN SRIKANTH",
-      "role": "Chief Technology Officer",
-      "kind": "sell",
-      "text": "Sale at price 2.26 per share.",
-      "value": 32194,
-      "shares": 14245,
       "date": "2026-09-01"
     },
     {

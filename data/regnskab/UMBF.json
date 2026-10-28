@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T21:00:12.521Z",
+  "updated_at": "2026-10-28T21:25:18.357Z",
   "source": "Yahoo Finance",
   "symbol": "UMBF",
   "summary": "UMB Financial Corporation operates as a bank holding company that provides banking services and asset servicing in the United States and internationally. The company operates through three segments: Commercial Banking, Institutional Banking, and Personal Banking. The Commercial Banking segment provides commercial loans and credit cards; commercial real estate financing; letters of credit; loan syndication, and consultative services; various business solutions including asset-based lending, mezzanine debt, and minority equity investment; and treasury management service, such as depository service, account reconciliation, cash management tool, accounts payable and receivable solution, electronic fund transfer and automated payment, controlled disbursement, lockbox service, and remote deposit capture service. The Institutional Banking segment offers banking, fund, asset management, and healthcare services to institutional clients; fund administration and accounting, investor services and transfer agency, alternative investment services, fixed income sales, trading and underwriting, and corporate trust and escrow services, as well as institutional custody services. This segment also provides healthcare payment solutions, including custodial service for health saving accounts and private label, multipurpose debit cards to insurance carriers, third-party administrators, software companies, employers, and financial institutions. The Personal Banking segment offers deposit account, retail credit card, private banking, installment loan, home equity line of credit, residential mortgage, as well as internet banking, ATM network, private banking, brokerage and insurance service, and investment advisory, trust, and custody services. It operates through a network of branches and offices. The company was founded in 1913 and is headquartered in Kansas City, Missouri.",
@@ -7,10 +7,10 @@
   "website": "https://www.umb.com",
   "employees": 5222,
   "ceo": "Mr. J. Mariner Kemper",
-  "next_earnings": "2026-10-27",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-26",
+  "earnings_estimated": true,
   "earnings_call": "2026-10-28",
-  "eps_estimate": 3.22112,
+  "eps_estimate": 3.27752,
   "analysts": {
     "strong_buy": 7,
     "buy": 6,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 686654000,
-      "earnings": 180372000
-    },
-    {
       "q": "4Q2025",
       "revenue": 729631000,
       "earnings": 209543000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 786862000,
       "earnings": 271758000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 781072000,
+      "earnings": 272272000
     }
   ],
   "growth": {
-    "q0": 0.19299999,
-    "q1": 0.0641,
+    "q0": 0.0641,
+    "q1": -0.0301,
     "y0": 0.1689,
     "y1": 0.050300002
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.834,
-    "enterprise_value": 12091569152,
+    "enterprise_value": 12056632320,
     "ev_ebitda": null,
-    "ev_revenue": 4.297,
+    "ev_revenue": 4.285,
     "float_shares": 72897598,
     "short_shares": 3889000,
     "short_pct_float": 6.08,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-09-10",
   "dividend_date": null,
   "payout_ratio": 0.14060001,
-  "inst_count": 650,
+  "inst_count": 653,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 2.49952,
-      "actual": 2.7,
-      "surprise_pct": 8.02
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 2.70437,
@@ -269,6 +263,12 @@
       "estimate": 3.1175,
       "actual": 3.57,
       "surprise_pct": 14.51
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 3.22112,
+      "actual": 3.56,
+      "surprise_pct": 10.52
     }
   ],
   "insiders": [
