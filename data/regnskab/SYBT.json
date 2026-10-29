@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-10-28T21:25:18.175Z",
+  "updated_at": "2026-10-29T21:27:34.395Z",
   "source": "Yahoo Finance",
   "symbol": "SYBT",
   "summary": "Stock Yards Bancorp, Inc. operates as a holding company for Stock Yards Bank & Trust Company that provides various financial services for individuals, corporations, and others in the United States. It operates in two segments, Commercial Banking, and WM&T. The Commercial Banking segment offers a range of loan and deposit products to individual consumers and businesses in all its markets through retail lending, mortgage banking, deposit services, online banking, mobile banking, private banking, commercial lending, commercial real estate lending, leasing, treasury management services, merchant services, international banking, correspondent banking, credit card services, and other banking services. This segment also provides securities brokerage services through an arrangement with a third party broker-dealer. The WM&T segment engages in the provision of investment management, financial and retirement planning, and trust and estate services, as well as retirement plan management for businesses and corporations. The company was founded in 1904 and is headquartered in Louisville, Kentucky.",
   "industry": "Banks - Regional",
   "website": "https://www.syb.com",
-  "employees": 1270,
+  "employees": 1123,
   "ceo": "Mr. James A. Hillebrand",
-  "next_earnings": "2026-10-28",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-26",
+  "earnings_estimated": true,
   "earnings_call": null,
-  "eps_estimate": 1.35,
+  "eps_estimate": 1.41667,
   "analysts": {
     "strong_buy": 0,
     "buy": 0,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 6
   },
-  "target_mean": 90.2,
+  "target_mean": 88.6,
   "target_high": 94,
-  "target_low": 87,
+  "target_low": 85,
   "target_analysts": 5,
   "statements": [
     {
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.097600006,
-    "q1": 0.1223,
-    "y0": 0.1228,
-    "y1": 0.0669
+    "q0": 0.1425,
+    "q1": 0.090299994,
+    "y0": 0.1446,
+    "y1": 0.0533
   },
   "ratings": [
+    {
+      "date": "2026-10-29",
+      "firm": "Piper Sandler",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-07-31",
       "firm": "Keefe, Bruyette & Woods",
@@ -140,13 +147,6 @@
       "from": "Market Perform",
       "to": "Outperform",
       "action": "up"
-    },
-    {
-      "date": "2026-01-30",
-      "firm": "Piper Sandler",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
     }
   ],
   "holders": [
@@ -223,18 +223,18 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 23,
+    "buys": 19,
     "sells": 3,
-    "bought": 10952,
+    "bought": 10704,
     "sold": 8183,
     "net_pct": 0.1
   },
   "extras": {
     "beta": 0.751,
-    "enterprise_value": 2060854528,
+    "enterprise_value": 2080767488,
     "ev_ebitda": null,
-    "ev_revenue": 4.928,
-    "float_shares": 27687214,
+    "ev_revenue": null,
+    "float_shares": 27686641,
     "short_shares": 1265323,
     "short_pct_float": 4.16,
     "short_ratio": 8.18,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.255,
   "inst_count": 353,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.16,
-      "actual": 1.23,
-      "surprise_pct": 6.03
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.20167,
@@ -269,9 +263,24 @@
       "estimate": 1.235,
       "actual": 1.3694,
       "surprise_pct": 10.88
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.35,
+      "actual": 1.4153,
+      "surprise_pct": 4.84
     }
   ],
   "insiders": [
+    {
+      "name": "PRIEBE STEPHEN M",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 79.19 per share.",
+      "value": 6414,
+      "shares": 81,
+      "date": "2026-10-26"
+    },
     {
       "name": "WOODS MICHAEL W.",
       "role": "Officer",
@@ -351,15 +360,6 @@
       "text": "Stock Award(Grant) at price 82.45 per share.",
       "value": 3216,
       "shares": 39,
-      "date": "2026-07-27"
-    },
-    {
-      "name": "PRIEBE STEPHEN M",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 82.45 per share.",
-      "value": 7256,
-      "shares": 88,
       "date": "2026-07-27"
     }
   ],

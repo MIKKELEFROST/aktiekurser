@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:25:15.276Z",
+  "updated_at": "2026-10-29T21:27:32.354Z",
   "source": "Yahoo Finance",
   "symbol": "AIN",
   "summary": "Albany International Corp., together with its subsidiaries, engages in the machine clothing and engineered composites businesses in the United States, Switzerland, France, Brazil, China, Mexico, Germany, and internationally. The company operates through two segments: Machine Clothing (MC) and Albany Engineered Composites (AEC). The MC segment designs, manufactures, and markets paper machine clothing for use in the manufacturing of papers, paperboard, tissues, towels, pulps, building products, tannery, and textiles, as well as nonwovens, fiber cement, and several other industrial applications. This segment offers paper machine clothing forming, pressing, and drying fabrics, as well as processing belts; and engineered fabrics. Its AEC segment 3D-woven and injected composite components for aircraft engines composite airframe and engine components for military and commercial aircraft. The company sells its products to commercial and defense markets, space-launch vehicles and the emerging advanced air mobility market, as well as to customer end-users. Albany International Corp. was incorporated in 1895 and is headquartered in Portsmouth, New Hampshire.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-28",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 1.48072,
+  "eps_estimate": 0.70151,
   "analysts": {
     "strong_buy": 0,
     "buy": 0,
@@ -51,16 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 311399000,
-      "earnings": 9183000
-    },
-    {
-      "q": "3Q2025",
-      "revenue": 261434000,
-      "earnings": -97760000
-    },
-    {
       "q": "4Q2025",
       "revenue": 321206000,
       "earnings": 13880000
@@ -69,11 +59,21 @@
       "q": "1Q2026",
       "revenue": 311333000,
       "earnings": 15281000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 329482000,
+      "earnings": 17414000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 349539000,
+      "earnings": 41697000
     }
   ],
   "growth": {
-    "q0": 1.0855,
-    "q1": 0.0792,
+    "q0": 0.0792,
+    "q1": null,
     "y0": 0.35709998,
     "y1": -0.1162
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.174,
-    "enterprise_value": 2160399872,
-    "ev_ebitda": 35.842,
-    "ev_revenue": 1.766,
+    "enterprise_value": 2153868032,
+    "ev_ebitda": 35.733,
+    "ev_revenue": 1.76,
     "float_shares": 28216252,
     "short_shares": 911532,
     "short_pct_float": 4.37,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.5323,
   "inst_count": 350,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.72914,
-      "actual": 0.71,
-      "surprise_pct": -2.63
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.70184,
@@ -269,6 +263,12 @@
       "estimate": 0.73507,
       "actual": 0.82,
       "surprise_pct": 11.55
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.48072,
+      "actual": 1.68,
+      "surprise_pct": 13.46
     }
   ],
   "insiders": [
@@ -354,12 +354,12 @@
       "date": "2026-05-15"
     },
     {
-      "name": "PURDUM SUZANNE K",
+      "name": "STONE CHRISTOPHER ERIC",
       "role": "Officer",
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 2495,
+      "shares": 2440,
       "date": "2026-02-27"
     }
   ],

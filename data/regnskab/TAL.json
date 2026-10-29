@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:25:18.193Z",
+  "updated_at": "2026-10-29T21:27:34.405Z",
   "source": "Yahoo Finance",
   "symbol": "TAL",
   "summary": "TAL Education Group provides smart learning solutions in the People's Republic of China. It offers learning services through Xueersi Peiyou small classes, personalized premium services, and online course offerings. The company also develops and provides learning content solutions for learners across print, digital and device-based formats, including print books, books integrated with digital learning experiences, learning devices, and mobile applications. In addition, it offers online education services, including live class and pre-recorded course content through www.xueersi.com. Further, the company engages in development and sale of software, network, and learning devices; investment management and consulting services. TAL Education Group was founded in 2003 and is headquartered in Beijing, the People's Republic of China.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 0.2376,
+  "eps_estimate": 0.27016,
   "analysts": {
     "strong_buy": 6,
     "buy": 11,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 861353000,
-      "earnings": 124084000
-    },
-    {
       "q": "4Q2025",
       "revenue": 770167000,
       "earnings": 130595000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 758377000,
       "earnings": 408007000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 994648000,
+      "earnings": -47438000
     }
   ],
   "growth": {
-    "q0": -0.01,
-    "q1": 0.0806,
+    "q0": 0.0806,
+    "q1": -0.5095,
     "y0": 0.3457,
     "y1": -0.119799994
   },
@@ -223,17 +223,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 0,
-    "sells": 0,
-    "bought": 0,
-    "sold": null,
-    "net_pct": null
+    "buys": 1,
+    "sells": 1,
+    "bought": 15300,
+    "sold": 30000,
+    "net_pct": -2.8
   },
   "extras": {
     "beta": 0.084,
-    "enterprise_value": 3178226432,
-    "ev_ebitda": 6.598,
-    "ev_revenue": 0.996,
+    "enterprise_value": 3095247616,
+    "ev_ebitda": 6.425,
+    "ev_revenue": 0.97,
     "float_shares": 361030538,
     "short_shares": 21121424,
     "short_pct_float": 9.85,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 385,
   "eps_history": [
-    {
-      "quarter": "2025-08-31",
-      "estimate": 0.16066,
-      "actual": 0.24,
-      "surprise_pct": 49.38
-    },
     {
       "quarter": "2025-11-30",
       "estimate": 0.07594,
@@ -269,9 +263,24 @@
       "estimate": 0.28672,
       "actual": 0.75,
       "surprise_pct": 161.58
+    },
+    {
+      "quarter": "2026-08-31",
+      "estimate": 0.2376,
+      "actual": -0.06,
+      "surprise_pct": -125.25
     }
   ],
   "insiders": [
+    {
+      "name": "ZHANG KAIFU",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 15300,
+      "date": "2026-10-26"
+    },
     {
       "name": "PENG ALEX ZHUANGZHUANG",
       "role": "President",

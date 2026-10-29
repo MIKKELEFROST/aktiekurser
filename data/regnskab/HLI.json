@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:25:16.706Z",
+  "updated_at": "2026-10-29T21:27:33.385Z",
   "source": "Yahoo Finance",
   "symbol": "HLI",
   "summary": "Houlihan Lokey, Inc., an investment banking company, provides merger and acquisition (M&A), capital market, financial restructurings and liability management, and financial and valuation advisory services worldwide. The company operates in three segments: Corporate Finance (CF), Financial Restructuring (FR), and Financial and Valuation Advisory (FVA). The CF segment offers general financial advisory services; and advises public and private institutions, including financial sponsors on buy-side and sell-side M&A transactions, debt and equity financings in both the private and public markets, and other corporate finance transactions. The FR segment advises debtors, creditors, and other parties-in-interest related to recapitalization/deleveraging transactions. This segment also provides a range of advisory services, such as structuring, negotiation, and confirmation of plans of reorganization; structuring and analysis of exchange offers; liability management transactions; corporate viability assessment; dispute resolution and expert testimony; and procuring debtor-in-possession financing. The FVA segment provides valuation services to companies; debt and equity interests comprising illiquid investments; and other assets and liabilities. This segment also offers fairness opinions in connection with mergers and acquisitions and other transactions; solvency opinions in connection with corporate spin-offs and dividend recapitalizations; other types of financial opinions; and diligence, tax, transaction accounting, and other financial advisory services, as well as dispute resolution services. It serves corporations, financial sponsors, and government agencies. Houlihan Lokey, Inc. was incorporated in 1972 and is headquartered in Los Angeles, California.",
@@ -7,10 +7,10 @@
   "website": "https://hl.com",
   "employees": 2800,
   "ceo": "Mr. Scott Joseph Adelson",
-  "next_earnings": "2026-10-28",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-27",
+  "earnings_estimated": true,
   "earnings_call": "2026-10-28",
-  "eps_estimate": 1.64985,
+  "eps_estimate": 1.99112,
   "analysts": {
     "strong_buy": 3,
     "buy": 3,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 11
   },
-  "target_mean": 155.44444,
+  "target_mean": 160,
   "target_high": 175,
-  "target_low": 147,
+  "target_low": 150,
   "target_analysts": 9,
   "statements": [
     {
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 659452000,
-      "earnings": 111781000
-    },
-    {
       "q": "4Q2025",
       "revenue": 717072000,
       "earnings": 116548000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 511000000,
       "earnings": 78000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 692000000,
+      "earnings": 109000000
     }
   ],
   "growth": {
-    "q0": -0.1033,
-    "q1": -0.0111,
-    "y0": -0.0719,
-    "y1": 0.22459999
+    "q0": 0.026400002,
+    "q1": 0.2843,
+    "y0": -0.0317,
+    "y1": 0.1768
   },
   "ratings": [
+    {
+      "date": "2026-10-29",
+      "firm": "JP Morgan",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-10-09",
       "firm": "Citizens",
@@ -139,13 +146,6 @@
       "firm": "Keefe, Bruyette & Woods",
       "from": "Outperform",
       "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-09",
-      "firm": "Morgan Stanley",
-      "from": "Overweight",
-      "to": "Overweight",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.006,
-    "enterprise_value": 9107478528,
+    "enterprise_value": 9459007488,
     "ev_ebitda": null,
-    "ev_revenue": 3.609,
+    "ev_revenue": 3.748,
     "float_shares": 54025759,
     "short_shares": 2152335,
     "short_pct_float": 3.98,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-09-01",
   "dividend_date": null,
   "payout_ratio": 0.4195,
-  "inst_count": 679,
+  "inst_count": 676,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.68357,
-      "actual": 1.84,
-      "surprise_pct": 9.29
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.87286,
@@ -269,6 +263,12 @@
       "estimate": 1.64024,
       "actual": 1.35,
       "surprise_pct": -17.69
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.64985,
+      "actual": 1.85,
+      "surprise_pct": 12.13
     }
   ],
   "insiders": [

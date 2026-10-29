@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:25:16.396Z",
+  "updated_at": "2026-10-29T21:27:33.197Z",
   "source": "Yahoo Finance",
   "symbol": "FORM",
   "summary": "FormFactor, Inc. designs, manufactures, and sells probe cards, analytical probes, probe stations, thermal systems, cryogenic systems, and related services in the United States, South Korea, Taiwan, China, Japan, Singapore, Europe, Malaysia, and internationally. It operates in two segments: Probe Cards and Systems segments. The company provides probe cards to test various semiconductor device types, including systems- on-chip products, such as graphics, central, digital processing units, and other custom application-specific processing units; mobile application processors, microprocessors, and microcontrollers; network devices, which include switches and network processing units; dynamic random-access memory; radio-frequency amplifiers and filters; antenna-in-package devices; analog and mixed-signal integrated circuits; image sensors; co-packaged optical integrated circuits; NAND flash memory; NOR flash memory; and quantum computer processor devices. It also offers analytical probes, which are used for device characterization, electrical simulation model development, failure analysis, and prototype design debugging; probe stations, a critical tool for the development of new generations of semiconductor and electro-optical processes and designs; and thermal subsystems, which include thermal chucks and other test systems used in probe stations and other applications for precise temperature management. In addition, the company provides cryogenic systems, which includes the manufacture of precision cryogenic instruments and semiconductor test and measurement systems; and services and support, including installation services. Further, it offers on-site probe card maintenance and service training, seminars, and telephone support services. It sells its products through direct sales force, manufacturers' representatives, and distributors. It has a strategic collaboration with Teradyne. The company was incorporated in 1993 and is headquartered in Livermore, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-28",
   "earnings_estimated": false,
   "earnings_call": "2026-10-28",
-  "eps_estimate": 0.86286,
+  "eps_estimate": 0.90857,
   "analysts": {
     "strong_buy": 0,
     "buy": 6,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 10
   },
-  "target_mean": 152.22221,
+  "target_mean": 151.11111,
   "target_high": 200,
   "target_low": 100,
   "target_analysts": 9,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 202676000,
-      "earnings": 15656000
-    },
-    {
       "q": "4Q2025",
       "revenue": 215163000,
       "earnings": 23218000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 258242000,
       "earnings": 56207000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 280547000,
+      "earnings": 73820000
     }
   ],
   "growth": {
-    "q0": 1.6147,
-    "q1": 0.77019995,
-    "y0": 1.3519,
-    "y1": 0.2667
+    "q0": 0.97519994,
+    "q1": 0.6321,
+    "y0": 1.4950999,
+    "y1": 0.266
   },
   "ratings": [
+    {
+      "date": "2026-10-29",
+      "firm": "TD Cowen",
+      "from": "Hold",
+      "to": "Hold",
+      "action": "main"
+    },
     {
       "date": "2026-10-28",
       "firm": "Evercore ISI Group",
@@ -140,13 +147,6 @@
       "from": "Neutral",
       "to": "Neutral",
       "action": "main"
-    },
-    {
-      "date": "2026-05-12",
-      "firm": "Craig-Hallum",
-      "from": "Hold",
-      "to": "Buy",
-      "action": "up"
     }
   ],
   "holders": [
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.182,
-    "enterprise_value": 8031471616,
-    "ev_ebitda": 43.003,
-    "ev_revenue": 8.902,
+    "enterprise_value": 8301769216,
+    "ev_ebitda": 44.45,
+    "ev_revenue": 9.201,
     "float_shares": 77468417,
     "short_shares": 2620423,
     "short_pct_float": 4.76,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 695,
+  "inst_count": 693,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.24857,
-      "actual": 0.33,
-      "surprise_pct": 32.76
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.35222,
@@ -269,6 +263,12 @@
       "estimate": 0.61,
       "actual": 0.82,
       "surprise_pct": 34.43
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.86286,
+      "actual": 1.04,
+      "surprise_pct": 20.53
     }
   ],
   "insiders": [

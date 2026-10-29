@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:25:17.970Z",
+  "updated_at": "2026-10-29T21:27:34.234Z",
   "source": "Yahoo Finance",
   "symbol": "SFM",
   "summary": "Sprouts Farmers Market, Inc., together with its subsidiaries, engages in the retailing of fresh, natural, and organic food products in the United States. The company operates healthy grocery stores; and lifestyle-friendly ingredients, such as organic, plant-based, keto, paleo, non-GMO, and gluten-free. The company also offers perishable product categories, including produce, meat and meat alternatives, seafood, deli, bakery, floral, and dairy alternatives; and non-perishable product categories, such as grocery, vitamins and supplements, bulk items, frozen foods, beer and wine, and natural health and body care. It sells its products under the Sprouts brand. The company was founded in 1943 and is headquartered in Phoenix, Arizona.",
@@ -10,18 +10,18 @@
   "next_earnings": "2026-10-28",
   "earnings_estimated": false,
   "earnings_call": "2026-10-28",
-  "eps_estimate": 1.22475,
+  "eps_estimate": 0.65445,
   "analysts": {
-    "strong_buy": 3,
+    "strong_buy": 2,
     "buy": 6,
-    "hold": 6,
+    "hold": 7,
     "sell": 1,
     "strong_sell": 0,
     "total": 16
   },
-  "target_mean": 90.85714,
+  "target_mean": 74.42857,
   "target_high": 114,
-  "target_low": 70,
+  "target_low": 45,
   "target_analysts": 14,
   "statements": [
     {
@@ -72,12 +72,40 @@
     }
   ],
   "growth": {
-    "q0": 0.0039,
-    "q1": 0.319,
-    "y0": 0.040700004,
-    "y1": 0.0664
+    "q0": -0.2886,
+    "q1": -0.0484,
+    "y0": -0.0655,
+    "y1": 0.0444
   },
   "ratings": [
+    {
+      "date": "2026-10-29",
+      "firm": "JP Morgan",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-29",
+      "firm": "RBC Capital",
+      "from": "Outperform",
+      "to": "Sector Perform",
+      "action": "down"
+    },
+    {
+      "date": "2026-10-29",
+      "firm": "Barclays",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-29",
+      "firm": "Wells Fargo",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-10-20",
       "firm": "RBC Capital",
@@ -118,34 +146,6 @@
       "firm": "Evercore ISI Group",
       "from": "Outperform",
       "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-30",
-      "firm": "JP Morgan",
-      "from": "Neutral",
-      "to": "Overweight",
-      "action": "up"
-    },
-    {
-      "date": "2026-07-27",
-      "firm": "Evercore ISI Group",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-22",
-      "firm": "UBS",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-22",
-      "firm": "JP Morgan",
-      "from": "Neutral",
-      "to": "Neutral",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.665,
-    "enterprise_value": 7888444416,
-    "ev_ebitda": 9.365,
-    "ev_revenue": 0.876,
+    "enterprise_value": 7663717888,
+    "ev_ebitda": 9.098,
+    "ev_revenue": 0.851,
     "float_shares": 92507239,
     "short_shares": 12332481,
     "short_pct_float": 17.15,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 862,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.16666,
-      "actual": 1.22,
-      "surprise_pct": 4.57
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.88594,
@@ -269,6 +263,12 @@
       "estimate": 1.34297,
       "actual": 1.37,
       "surprise_pct": 2.01
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.22683,
+      "actual": 1.21,
+      "surprise_pct": -1.37
     }
   ],
   "insiders": [

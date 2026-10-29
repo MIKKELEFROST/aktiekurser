@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:25:15.905Z",
+  "updated_at": "2026-10-29T21:27:32.808Z",
   "source": "Yahoo Finance",
   "symbol": "CMG",
   "summary": "Chipotle Mexican Grill, Inc., together with its subsidiaries, owns and operates Chipotle Mexican Grill restaurants. The company sells food and beverages, such as burritos, burrito bowls, quesadillas, tacos, and salads, as well as kids' meals, chips, and sides. It also offers Mexican-inspired meals using responsibly sourced meats, such as chicken, beef, and pork under the Responsibly Raised brand. In addition, the company provides digital ordering through its website, mobile app, and third-party delivery platforms. It operates in the United States, Canada, France, Germany, South Korea, and the United Kingdom. Chipotle Mexican Grill, Inc. was founded in 1993 and is headquartered in Newport Beach, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-28",
   "earnings_estimated": false,
   "earnings_call": "2026-10-28",
-  "eps_estimate": 0.29079,
+  "eps_estimate": 0.24414,
   "analysts": {
     "strong_buy": 4,
     "buy": 19,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 35
   },
-  "target_mean": 41.96774,
+  "target_mean": 40.77419,
   "target_high": 53,
   "target_low": 32,
   "target_analysts": 31,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 3003444000,
-      "earnings": 382103000
-    },
-    {
       "q": "4Q2025",
       "revenue": 2983511000,
       "earnings": 330932000
@@ -69,84 +64,89 @@
       "q": "2Q2026",
       "revenue": 3348562000,
       "earnings": 403547000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 3293162000,
+      "earnings": 339874000
     }
   ],
   "growth": {
-    "q0": 0.0027,
-    "q1": 0.1257,
-    "y0": -0.0195,
-    "y1": 0.19049999
+    "q0": -0.0234,
+    "q1": 0.2917,
+    "y0": -0.0592,
+    "y1": 0.2163
   },
   "ratings": [
     {
-      "date": "2026-10-23",
-      "firm": "Evercore ISI Group",
+      "date": "2026-10-29",
+      "firm": "RBC Capital",
       "from": "Outperform",
       "to": "Outperform",
       "action": "main"
     },
     {
-      "date": "2026-10-23",
-      "firm": "Mizuho",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-10-21",
-      "firm": "Wells Fargo",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-10-21",
-      "firm": "TD Cowen",
-      "from": "Buy",
-      "to": "Hold",
-      "action": "down"
-    },
-    {
-      "date": "2026-10-19",
+      "date": "2026-10-29",
       "firm": "Citigroup",
       "from": "Buy",
       "to": "Buy",
       "action": "main"
     },
     {
-      "date": "2026-10-16",
-      "firm": "Raymond James",
+      "date": "2026-10-29",
+      "firm": "BNP Paribas",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-29",
+      "firm": "DA Davidson",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-29",
+      "firm": "Guggenheim",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-29",
+      "firm": "Oppenheimer",
       "from": "Outperform",
       "to": "Outperform",
-      "action": "main"
+      "action": "reit"
     },
     {
-      "date": "2026-10-15",
-      "firm": "Morgan Stanley",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
-      "action": "main"
-    },
-    {
-      "date": "2026-10-15",
-      "firm": "Stephens & Co.",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
-      "action": "main"
-    },
-    {
-      "date": "2026-09-29",
-      "firm": "JP Morgan",
+      "date": "2026-10-29",
+      "firm": "Keybanc",
       "from": "Overweight",
       "to": "Overweight",
       "action": "main"
     },
     {
-      "date": "2026-09-16",
-      "firm": "Seaport Global",
-      "from": null,
-      "to": "Neutral",
-      "action": "init"
+      "date": "2026-10-29",
+      "firm": "Stephens & Co.",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "reit"
+    },
+    {
+      "date": "2026-10-29",
+      "firm": "TD Cowen",
+      "from": "Hold",
+      "to": "Hold",
+      "action": "reit"
+    },
+    {
+      "date": "2026-10-29",
+      "firm": "Freedom Capital Markets",
+      "from": "Hold",
+      "to": "Hold",
+      "action": "main"
     }
   ],
   "holders": [
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.958,
-    "enterprise_value": 40147734528,
-    "ev_ebitda": 17.647,
-    "ev_revenue": 3.232,
+    "enterprise_value": 41096798208,
+    "ev_ebitda": 18.064,
+    "ev_revenue": 3.308,
     "float_shares": 1255307310,
     "short_shares": 38323206,
     "short_pct_float": 3.43,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 1704,
+  "inst_count": 1703,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.28749,
-      "actual": 0.29,
-      "surprise_pct": 0.87
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.23834,
@@ -269,6 +263,12 @@
       "estimate": 0.31744,
       "actual": 0.33,
       "surprise_pct": 3.96
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.29079,
+      "actual": 0.27,
+      "surprise_pct": -7.15
     }
   ],
   "insiders": [
@@ -300,24 +300,6 @@
       "date": "2026-08-07"
     },
     {
-      "name": "FUENTES LAURA",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 31.25 per share.",
-      "value": 215000,
-      "shares": 6880,
-      "date": "2026-06-11"
-    },
-    {
-      "name": "WEINSTEIN JOSHUA IAN",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 31.25 per share.",
-      "value": 215000,
-      "shares": 6880,
-      "date": "2026-06-11"
-    },
-    {
       "name": "FILI-KRUSHEL PATRICIA D",
       "role": "Director",
       "kind": "other",
@@ -327,7 +309,7 @@
       "date": "2026-06-11"
     },
     {
-      "name": "BALDOCCHI ALBERT STEVEN",
+      "name": "WINSTON MARY ANN",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 31.25 per share.",
@@ -336,7 +318,7 @@
       "date": "2026-06-11"
     },
     {
-      "name": "WINSTON MARY ANN",
+      "name": "BALDOCCHI ALBERT STEVEN",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 31.25 per share.",
@@ -355,6 +337,24 @@
     },
     {
       "name": "MAW SCOTT HARLAN",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 31.25 per share.",
+      "value": 215000,
+      "shares": 6880,
+      "date": "2026-06-11"
+    },
+    {
+      "name": "CAREY MATTHEW A",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 31.25 per share.",
+      "value": 215000,
+      "shares": 6880,
+      "date": "2026-06-11"
+    },
+    {
+      "name": "FUENTES LAURA",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 31.25 per share.",

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:25:18.477Z",
+  "updated_at": "2026-10-29T21:27:34.607Z",
   "source": "Yahoo Finance",
   "symbol": "VZ",
   "summary": "Verizon Communications Inc., through its subsidiaries, engages in the provision of communications, technology, information, and streaming products and services to consumers, businesses, and governmental entities worldwide. It operates in two segments, Verizon Consumer Group (Consumer) and Verizon Business Group (Business). The Consumer segment provides wireless services across the wireless networks in the United States under the Verizon and TracFone brands and through wholesale and other arrangements; and fixed wireless access (FWA) broadband through its wireless networks, as well as related equipment and devices, such as smartphones, tablets, smartwatches, and other wireless-enabled connected devices. The segment also offers wireline services in the Mid-Atlantic and Northeastern United States, as well as Washington D.C. through its fiber-optic network, Verizon Fios product portfolio, and a copper-based network. The Business segment provides wireless and wireline communications services and products, including FWA and wireline broadband, advanced communication services, corporate networking, security and managed network, local and long-distance voice, and network access services to deliver various IoT services and products to businesses, government customers, and wireless and wireline carriers in the United States and internationally. The company distributes its products and services through direct channels, company-operated stores, digital and omnichannel platforms, indirect agents, business solution resellers, and national retailers. The company was formerly known as Bell Atlantic Corporation and changed its name to Verizon Communications Inc. in June 2000. Verizon Communications Inc. was incorporated in 1983 and is headquartered in New York, New York.",
@@ -10,16 +10,16 @@
   "next_earnings": "2026-10-26",
   "earnings_estimated": false,
   "earnings_call": "2026-10-26",
-  "eps_estimate": 1.15289,
+  "eps_estimate": 1.15272,
   "analysts": {
     "strong_buy": 3,
-    "buy": 8,
-    "hold": 14,
+    "buy": 9,
+    "hold": 12,
     "sell": 0,
     "strong_sell": 0,
-    "total": 25
+    "total": 24
   },
-  "target_mean": 50.55909,
+  "target_mean": 50.65,
   "target_high": 62,
   "target_low": 44,
   "target_analysts": 22,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.0577,
-    "q1": 0.0323,
-    "y0": 0.0753,
-    "y1": 0.0479
+    "q0": 0.0575,
+    "q1": 0.030299999,
+    "y0": 0.0748,
+    "y1": 0.048299998
   },
   "ratings": [
+    {
+      "date": "2026-10-28",
+      "firm": "Freedom Broker",
+      "from": "Hold",
+      "to": "Buy",
+      "action": "up"
+    },
     {
       "date": "2026-10-28",
       "firm": "Citigroup",
@@ -139,13 +146,6 @@
       "firm": "RBC Capital",
       "from": "Sector Perform",
       "to": "Sector Perform",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-27",
-      "firm": "Scotiabank",
-      "from": "Sector Outperform",
-      "to": "Sector Outperform",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.248,
-    "enterprise_value": 367868837888,
-    "ev_ebitda": 7.216,
-    "ev_revenue": 2.639,
+    "enterprise_value": 364760104960,
+    "ev_ebitda": 7.155,
+    "ev_revenue": 2.617,
     "float_shares": 4139072650,
     "short_shares": 83327477,
     "short_pct_float": 2.01,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-10-09",
   "dividend_date": null,
   "payout_ratio": 0.7279,
-  "inst_count": 3959,
+  "inst_count": 3967,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "MALADY KYLE",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 43.00 per share.",
+      "value": 47300,
+      "shares": 1100,
+      "date": "2026-10-27"
+    },
     {
       "name": "MALADY KYLE",
       "role": "Officer",
@@ -352,15 +361,6 @@
       "value": 55066,
       "shares": 1100,
       "date": "2026-08-25"
-    },
-    {
-      "name": "MALADY KYLE",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 48.68 per share.",
-      "value": 53548,
-      "shares": 1100,
-      "date": "2026-08-18"
     }
   ],
   "dividends": [

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:25:15.555Z",
+  "updated_at": "2026-10-29T21:27:32.562Z",
   "source": "Yahoo Finance",
   "symbol": "BCYC",
   "summary": "Bicycle Therapeutics plc, a clinical-stage pharmaceutical company, develops a class of medicines for diseases that are underserved by existing therapeutics in the United States and the United Kingdom. The company's products pipeline include zelenectide pevedotin, a bicycle toxin conjugate (BTC), which is in phase II clinical trials for the treatment of high nectin-4 expressing tumors; nuzefatide pevedotin (EphA2), a BTC that is in phase I/II clinical trials to treat Ephrin type A receptor 2 expressing tumor; BT7480, a Bicycle tumor-targeted immune cell agonist molecule, which is in phase I/II targeting nectin-4 and agonizing CD137; and BT1702, a theranostic BRC molecule targeting MT1-MMP for which IND-enabling activities are ongoing. In addition, it develops Novel CNS targets, which is in preclinical trial targeting CNS disease; Novel neuromuscular targets, which is in preclinical trial targeting neuromuscular disease; and programs that are in preclinical trial targeting radiopharmaceutical. Further, the company collaborates with biopharmaceutical companies and organizations to develop programs in therapeutic areas. It has collaboration and license agreement with Bayer Consumer Care AG; Novartis Pharma AG; Ionis Pharmaceuticals, Inc.; Genentech, Inc; and AstraZeneca AB. Bicycle Therapeutics plc was incorporated in 2009 and is headquartered in Cambridge, the United Kingdom.",
@@ -8,9 +8,9 @@
   "employees": 288,
   "ceo": "Dr. Kevin  Lee M.B.A., Ph.D.",
   "next_earnings": "2026-10-29",
-  "earnings_estimated": true,
+  "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": -0.45875,
+  "eps_estimate": -0.40625,
   "analysts": {
     "strong_buy": 2,
     "buy": 4,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 11734000,
-      "earnings": -59100000
-    },
-    {
       "q": "4Q2025",
       "revenue": 47955000,
       "earnings": -20154000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 629000,
       "earnings": -50333000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 34057000,
+      "earnings": -10478000
     }
   ],
   "growth": {
-    "q0": 0.4603,
-    "q1": -0.4009,
+    "q0": -0.4009,
+    "q1": 0.32759997,
     "y0": 0.2235,
     "y1": 0.097799994
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.682,
-    "enterprise_value": -230817952,
-    "ev_ebitda": 1.149,
-    "ev_revenue": -3.771,
+    "enterprise_value": -223818656,
+    "ev_ebitda": 1.115,
+    "ev_revenue": -3.657,
     "float_shares": 7759410,
     "short_shares": 3453064,
     "short_pct_float": 8.84,
@@ -246,12 +246,6 @@
   "payout_ratio": null,
   "inst_count": 123,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -1.06789,
-      "actual": -0.85,
-      "surprise_pct": 20.4
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.95455,
@@ -269,6 +263,12 @@
       "estimate": -0.58125,
       "actual": -0.72,
       "surprise_pct": -23.87
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.45875,
+      "actual": -0.15,
+      "surprise_pct": 67.3
     }
   ],
   "insiders": [

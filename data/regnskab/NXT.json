@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:25:17.542Z",
+  "updated_at": "2026-10-29T21:27:33.909Z",
   "source": "Yahoo Finance",
   "symbol": "NXT",
   "summary": "Nextpower Inc. provides solar and energy technology solutions for utility-scale power plants in the United States and internationally. It offers tracking solutions, including NX Horizon, a solar tracking solution; NX Horizon-XTR, a terrain-following tracker to expand the addressable market for trackers on sites with sloped, uneven, and challenging terrain; NX Horizon Hail Pro adds automatic stowing using weather service information; and NX Horizon Low Carbon, a solar tracker solution with a reduced carbon footprint. The company also provides TrueCapture, an energy yield management system that addresses power production shortfalls; NX Anchor and NX Earth Truss, a solar foundation technology to facilitate solar project development in challenging soil conditions; Truss Driver, an advanced installation equipment; and NX Navigator, which assists solar power plant owners and operators in monitoring, controlling, and protecting their solar projects. It serves engineering, procurement, and construction firms, as well as solar project developers and owners. The company was formerly known as Nextracker Inc. and changed its name to Nextpower Inc. in November 2025. The company was founded in 2013 and is headquartered in Fremont, California.",
@@ -7,10 +7,10 @@
   "website": "https://www.nextpower.com",
   "employees": 1993,
   "ceo": "Mr. Daniel S. Shugar",
-  "next_earnings": "2026-10-28",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-27",
+  "earnings_estimated": true,
   "earnings_call": "2026-10-28",
-  "eps_estimate": 1.09934,
+  "eps_estimate": 1.11983,
   "analysts": {
     "strong_buy": 7,
     "buy": 19,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 864253000,
-      "earnings": 157183000
-    },
-    {
       "q": "3Q2025",
       "revenue": 905268000,
       "earnings": 146861000
@@ -69,15 +64,34 @@
       "q": "2Q2026",
       "revenue": 935170000,
       "earnings": 165355000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1109276000,
+      "earnings": 165453000
     }
   ],
   "growth": {
-    "q0": -0.0762,
-    "q1": 0.072399996,
+    "q0": 0.018,
+    "q1": null,
     "y0": null,
-    "y1": 0.2173
+    "y1": 0.2149
   },
   "ratings": [
+    {
+      "date": "2026-10-29",
+      "firm": "Susquehanna",
+      "from": "Positive",
+      "to": "Positive",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-29",
+      "firm": "Needham",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-21",
       "firm": "Citigroup",
@@ -133,20 +147,6 @@
       "from": "Overweight",
       "to": "Overweight",
       "action": "main"
-    },
-    {
-      "date": "2026-09-22",
-      "firm": "Baird",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-09-09",
-      "firm": "Piper Sandler",
-      "from": null,
-      "to": "Overweight",
-      "action": "init"
     }
   ],
   "holders": [
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.94,
-    "enterprise_value": 10877894656,
-    "ev_ebitda": 14.525,
-    "ev_revenue": 2.996,
+    "enterprise_value": 11278460928,
+    "ev_ebitda": 15.06,
+    "ev_revenue": 3.107,
     "float_shares": 149089426,
     "short_shares": 9733296,
     "short_pct_float": 8.83,
@@ -247,12 +247,6 @@
   "inst_count": 1041,
   "eps_history": [
     {
-      "quarter": "2025-09-30",
-      "estimate": 1.01468,
-      "actual": 1.19,
-      "surprise_pct": 17.28
-    },
-    {
       "quarter": "2025-12-31",
       "estimate": 0.93956,
       "actual": 1.1,
@@ -263,6 +257,12 @@
       "estimate": 1.04567,
       "actual": 1.2,
       "surprise_pct": 14.76
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.09934,
+      "actual": 1.31,
+      "surprise_pct": 19.16
     }
   ],
   "insiders": [

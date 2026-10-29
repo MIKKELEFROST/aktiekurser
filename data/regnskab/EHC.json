@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:25:16.178Z",
+  "updated_at": "2026-10-29T21:27:33.034Z",
   "source": "Yahoo Finance",
   "symbol": "EHC",
   "summary": "Encompass Health Corporation operates inpatient rehabilitation hospitals in the United States and Puerto Rico. The company offers specialized rehabilitative treatment, using technology and therapy, on an inpatient basis for patients recovering from a major injury or illness and seeking to regain functional ability, independence, and quality of life; medical, nursing, therapy, and ancillary services; and rehabilitative care to patients who are recovering from conditions, such as stroke and other neurological disorders, cardiac and pulmonary conditions, brain and spinal cord injuries, complex orthopedic conditions, and amputations. It offers services through the Medicare program to the federal government, managed care plans and private insurers, state governments, and other patients. The company was formerly known as HealthSouth Corporation and changed its name to Encompass Health Corporation in January 2018. Encompass Health Corporation was incorporated in 1984 and is based in Birmingham, Alabama.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-28",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 1.35806,
+  "eps_estimate": 1.61595,
   "analysts": {
     "strong_buy": 1,
     "buy": 12,
@@ -19,8 +19,8 @@
     "strong_sell": 0,
     "total": 13
   },
-  "target_mean": 148.16667,
-  "target_high": 155,
+  "target_mean": 149.5,
+  "target_high": 157,
   "target_low": 140,
   "target_analysts": 12,
   "statements": [
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 1477500000,
-      "earnings": 126500000
-    },
-    {
       "q": "4Q2025",
       "revenue": 1544600000,
       "earnings": 146100000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 1597400000,
       "earnings": 153900000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1609500000,
+      "earnings": 149900000
     }
   ],
   "growth": {
-    "q0": 0.1041,
-    "q1": 0.1007,
-    "y0": 0.121400006,
-    "y1": 0.092700005
+    "q0": 0.106800005,
+    "q1": 0.0683,
+    "y0": 0.1339,
+    "y1": 0.0877
   },
   "ratings": [
+    {
+      "date": "2026-10-29",
+      "firm": "Barclays",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-08-10",
       "firm": "TD Cowen",
@@ -139,13 +146,6 @@
       "firm": "UBS",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2025-09-16",
-      "firm": "Keybanc",
-      "from": "Overweight",
-      "to": "Overweight",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.598,
-    "enterprise_value": 15587345408,
-    "ev_ebitda": 10.651,
-    "ev_revenue": 2.512,
+    "enterprise_value": 15642591232,
+    "ev_ebitda": 10.688,
+    "ev_revenue": 2.521,
     "float_shares": 97651066,
     "short_shares": 3312600,
     "short_pct_float": 3.79,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.1271,
   "inst_count": 829,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.19185,
-      "actual": 1.23,
-      "surprise_pct": 3.2
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.30193,
@@ -269,9 +263,24 @@
       "estimate": 1.47974,
       "actual": 1.55,
       "surprise_pct": 4.75
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.35806,
+      "actual": 1.52,
+      "surprise_pct": 11.92
     }
   ],
   "insiders": [
+    {
+      "name": "CHRISTIE EDWARD M III",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 - 126.63 per share.",
+      "value": 27985,
+      "shares": 232,
+      "date": "2026-10-19"
+    },
     {
       "name": "REIDY CHRISTOPHER R",
       "role": "Director",
@@ -282,13 +291,13 @@
       "date": "2026-10-19"
     },
     {
-      "name": "CHRISTIE EDWARD M III",
+      "name": "WILLIAMS TERRANCE",
       "role": "Director",
       "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 - 126.63 per share.",
-      "value": 27985,
-      "shares": 232,
-      "date": "2026-10-19"
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 28,
+      "date": "2026-10-15"
     },
     {
       "name": "O'CONNOR KEVIN J",
@@ -309,21 +318,21 @@
       "date": "2026-10-15"
     },
     {
+      "name": "KATZ LESLYE G",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 81,
+      "date": "2026-10-15"
+    },
+    {
       "name": "SCHLICHTING NANCY M",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 38,
-      "date": "2026-10-15"
-    },
-    {
-      "name": "HERMAN JOAN E",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 81,
       "date": "2026-10-15"
     },
     {
@@ -336,16 +345,7 @@
       "date": "2026-10-15"
     },
     {
-      "name": "WILLIAMS TERRANCE",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 28,
-      "date": "2026-10-15"
-    },
-    {
-      "name": "KATZ LESLYE G",
+      "name": "HERMAN JOAN E",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

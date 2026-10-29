@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:25:16.100Z",
+  "updated_at": "2026-10-29T21:27:32.981Z",
   "source": "Yahoo Finance",
   "symbol": "DNO.OL",
   "summary": "DNO ASA engages in the exploration, development, and production of oil and gas assets in the Middle East, the North Sea, and West Africa. The company holds 75% operating interests in the Tawke and Peshkabir fields located in the Kurdistan; and approximately 9% interest in Côte d'Ivoire's Block CI-27 located in West Africa. It also holds licenses in reservoirs, including in the Cretaceous, Jurassic and Triassic formations; and 129 offshore licenses in Norway, seven offshore licenses in the UK and one offshore license in the decommissioning phase in the Netherlands. DNO ASA was formerly known as DNO International ASA and changed its name to DNO ASA in June 2014. The company was incorporated in 1971 and is headquartered in Oslo, Norway.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": null,
+  "eps_estimate": 0.08,
   "analysts": {
     "strong_buy": 1,
     "buy": 2,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 4
   },
-  "target_mean": 22.50552,
-  "target_high": 25.53831,
-  "target_low": 18.862473,
+  "target_mean": 22.461586,
+  "target_high": 25.488455,
+  "target_low": 18.82565,
   "target_analysts": 4,
   "statements": [
     {
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 546800000,
-      "earnings": 9100000
-    },
-    {
       "q": "4Q2025",
       "revenue": 481600000,
       "earnings": -34100000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 760500000,
       "earnings": 72700000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1023000000,
+      "earnings": 90300000
     }
   ],
   "growth": {
-    "q0": null,
-    "q1": 1.7372999,
+    "q0": 1.7372999,
+    "q1": null,
     "y0": 5.0545,
     "y1": 0.1229
   },
@@ -160,9 +160,9 @@
   },
   "extras": {
     "beta": -0.089,
-    "enterprise_value": 23828500480,
-    "ev_ebitda": 15.341,
-    "ev_revenue": 9.862,
+    "enterprise_value": 24081999872,
+    "ev_ebitda": 15.504,
+    "ev_revenue": 9.967,
     "float_shares": 733941000,
     "short_shares": null,
     "short_pct_float": null,
@@ -175,12 +175,6 @@
   "payout_ratio": 1.8973,
   "inst_count": 81,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.01134,
-      "actual": 0.0094,
-      "surprise_pct": -17.11
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.03876,
@@ -198,6 +192,12 @@
       "estimate": 0.11612,
       "actual": 0.0687,
       "surprise_pct": -40.84
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.12274,
+      "actual": 0.09,
+      "surprise_pct": -26.67
     }
   ],
   "insiders": [
@@ -283,12 +283,12 @@
       "date": "2026-09-02"
     },
     {
-      "name": "Deutsche Asset Management (UK) Limited",
+      "name": "Acadian Asset Management LLC",
       "role": null,
       "kind": "other",
-      "text": "Bought at price 1.96 per share.",
-      "value": 16051511,
-      "shares": 8210492,
+      "text": "Sold at price 1.93 per share.",
+      "value": 335329,
+      "shares": 173566,
       "date": "2026-09-01"
     }
   ],

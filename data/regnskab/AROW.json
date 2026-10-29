@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:25:15.404Z",
+  "updated_at": "2026-10-29T21:27:32.463Z",
   "source": "Yahoo Finance",
   "symbol": "AROW",
   "summary": "Arrow Financial Corporation, a bank holding company, provides various commercial and consumer banking, and financial products and services in the United States. The company's deposit products include demand deposits, interest-bearing checking accounts, savings deposits, time deposits, and other time deposits. Its lending activities comprise commercial loans, such as term loans, time notes, and lines of credit; and commercial real estate loans to finance real estate purchases, refinancing, expansions, and enhancement to commercial properties, as well as commercial construction and land development loans to finance projects. The company's lending activities also include consumer installment loans to finance personal expenditures, personal lines of credit, overdraft protection, and automobile loans; and residential real estate loans, fixed home equity loans, and home equity lines of credit for consumers to finance home improvements, debt consolidation, education, and other uses, as well as maintains an indirect lending program. In addition, it provides retirement planning, trust, and estate administration services for individuals, as well as pension, profit-sharing, and employee benefit plan administration services for corporations. Further, the company offers insurance agency services comprising group health care policies and life insurance, and property and casualty insurance products. The company was founded in 1851 and is headquartered in Glens Falls, New York.",
@@ -8,9 +8,9 @@
   "employees": 575,
   "ceo": "Mr. David S. DeMarco",
   "next_earnings": "2026-10-29",
-  "earnings_estimated": true,
+  "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": 0.935,
+  "eps_estimate": 1.005,
   "analysts": {
     "strong_buy": 2,
     "buy": 0,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 42847000,
-      "earnings": 12825000
-    },
-    {
       "q": "4Q2025",
       "revenue": 43411000,
       "earnings": 14013000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 44187000,
       "earnings": 10962000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 60148000,
+      "earnings": 5700000
     }
   ],
   "growth": {
-    "q0": 0.1543,
-    "q1": 0.1824,
+    "q0": 0.1824,
+    "q1": 0.2713,
     "y0": 0.2804,
     "y1": 0.22629999
   },
@@ -210,10 +210,10 @@
   },
   "extras": {
     "beta": 0.735,
-    "enterprise_value": 853808896,
+    "enterprise_value": 846214208,
     "ev_ebitda": null,
-    "ev_revenue": 5.017,
-    "float_shares": 16180843,
+    "ev_revenue": 4.973,
+    "float_shares": 16207702,
     "short_shares": 633615,
     "short_pct_float": 3.49,
     "short_ratio": 7.85,
@@ -225,12 +225,6 @@
   "payout_ratio": 0.3806,
   "inst_count": 207,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.72,
-      "actual": 0.81,
-      "surprise_pct": 12.5
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.8,
@@ -248,6 +242,12 @@
       "estimate": 0.85,
       "actual": 0.71,
       "surprise_pct": -16.47
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.935,
+      "actual": 0.97,
+      "surprise_pct": 3.74
     }
   ],
   "insiders": [

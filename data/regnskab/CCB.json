@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:25:15.796Z",
+  "updated_at": "2026-10-29T21:27:32.731Z",
   "source": "Yahoo Finance",
   "symbol": "CCB",
   "summary": "Coastal Financial Corporation operates as the bank holding company for Coastal Community Bank that provides various banking products and services to consumers and small and medium-sized businesses in the Puget Sound region in Washington. It accepts a range of deposit products, including demand and savings accounts, time deposits, and money market accounts. The company also offers commercial and industrial loans, such as term loans, commercial lines of credit, capital call lines working capital loans, equipment financing, borrowing base loans, small business administration loans, and other loan products; owner and non-owner-occupied real estate loans, and multi-family residential loans; construction and development loans; residential real estate loans; and consumer and other loans, including automobile, boat and recreational vehicle, and secured term loans, as well as personal lines of credit, including overdraft protection. In addition, it provides remote deposit capture, online and mobile banking, and direct and reciprocal deposit services; and debit cards. Further, the company offers business accounts and cash management services, including business checking and savings accounts, and treasury services, as well as Banking as a Service (BaaS), a platform that allows digital financial service partners to offer their customers banking services. The company was founded in 1997 and is headquartered in Everett, Washington.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 0.93667,
+  "eps_estimate": 1.03,
   "analysts": {
     "strong_buy": 2,
     "buy": 2,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 144678000,
-      "earnings": 13592000
-    },
-    {
       "q": "4Q2025",
       "revenue": 138026000,
       "earnings": 12643000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 178074000,
       "earnings": -42105000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 149326000,
+      "earnings": 13788000
     }
   ],
   "growth": {
-    "q0": 0.0644,
-    "q1": 0.2561,
+    "q0": 0.2561,
+    "q1": 0.5385,
     "y0": -0.17930001,
     "y1": 1.1804
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.857,
-    "enterprise_value": -257840304,
+    "enterprise_value": -235369408,
     "ev_ebitda": null,
-    "ev_revenue": -0.712,
+    "ev_revenue": -0.65,
     "float_shares": 13183387,
     "short_shares": 1255896,
     "short_pct_float": 9.49,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 269,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.872,
-      "actual": 0.88,
-      "surprise_pct": 0.92
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.016,
@@ -269,6 +263,12 @@
       "estimate": 1.0075,
       "actual": -2.76,
       "surprise_pct": -373.95
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.93667,
+      "actual": 0.89,
+      "surprise_pct": -4.98
     }
   ],
   "insiders": [
@@ -309,6 +309,24 @@
       "date": "2026-06-02"
     },
     {
+      "name": "PATTERSON MICHAEL ROBERT",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 1404,
+      "date": "2026-05-26"
+    },
+    {
+      "name": "CHAPMAN JEFFREY M.",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 1532,
+      "date": "2026-05-26"
+    },
+    {
       "name": "DELORIER RILLA S",
       "role": "Director",
       "kind": "other",
@@ -342,24 +360,6 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 1193,
-      "date": "2026-05-26"
-    },
-    {
-      "name": "ADAMS CHRISTOPHER DAVID",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 1754,
-      "date": "2026-05-26"
-    },
-    {
-      "name": "KLEE STEPHAN",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 1369,
       "date": "2026-05-26"
     }
   ],

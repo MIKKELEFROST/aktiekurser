@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:25:16.018Z",
+  "updated_at": "2026-10-29T21:27:32.911Z",
   "source": "Yahoo Finance",
   "symbol": "CVNA",
   "summary": "Carvana Co., together with its subsidiaries, operates an e-commerce platform for buying and selling used cars. It provides vehicle acquisition, inspection and reconditioning, online search and shopping experience, financing, complementary products, logistics network and distinctive fulfillment experience, and post-sale customer support services. The company also operates auction sites. Carvana Co. was founded in 2012 and is based in Tempe, Arizona.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-28",
   "earnings_estimated": false,
   "earnings_call": "2026-10-28",
-  "eps_estimate": 0.47715,
+  "eps_estimate": 0.39791,
   "analysts": {
     "strong_buy": 6,
     "buy": 10,
@@ -19,8 +19,8 @@
     "strong_sell": 0,
     "total": 24
   },
-  "target_mean": 81.33333,
-  "target_high": 120,
+  "target_mean": 80.57143,
+  "target_high": 100,
   "target_low": 60,
   "target_analysts": 21,
   "statements": [
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 5647000000,
-      "earnings": 263000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 5603000000,
       "earnings": 951000000
@@ -69,15 +64,55 @@
       "q": "2Q2026",
       "revenue": 7376000000,
       "earnings": 310000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 8040000000,
+      "earnings": 289000000
     }
   ],
   "growth": {
-    "q0": 1.3163,
-    "q1": -0.533,
-    "y0": -0.0216,
-    "y1": 0.3661
+    "q0": -0.52849996,
+    "q1": 0.605,
+    "y0": -0.0722,
+    "y1": 0.4605
   },
   "ratings": [
+    {
+      "date": "2026-10-29",
+      "firm": "BNP Paribas",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-29",
+      "firm": "UBS",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-29",
+      "firm": "DA Davidson",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-29",
+      "firm": "BTIG",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-29",
+      "firm": "Needham",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-23",
       "firm": "Wells Fargo",
@@ -111,41 +146,6 @@
       "firm": "Barclays",
       "from": "Overweight",
       "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-09-30",
-      "firm": "Oppenheimer",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-04",
-      "firm": "BTIG",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "reit"
-    },
-    {
-      "date": "2026-07-31",
-      "firm": "Citigroup",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-31",
-      "firm": "Barclays",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-30",
-      "firm": "BNP Paribas",
-      "from": "Neutral",
-      "to": "Neutral",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 3.548,
-    "enterprise_value": 46315651072,
-    "ev_ebitda": 18.452,
-    "ev_revenue": 1.848,
+    "enterprise_value": 46186065920,
+    "ev_ebitda": 18.401,
+    "ev_revenue": 1.843,
     "float_shares": 706403584,
     "short_shares": 66937592,
     "short_pct_float": 12.51,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 1167,
+  "inst_count": 1166,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.264,
-      "actual": 0.206,
-      "surprise_pct": -21.97
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.23511,
@@ -269,6 +263,12 @@
       "estimate": 0.38149,
       "actual": 0.42,
       "surprise_pct": 10.09
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.4442,
+      "actual": 0.39,
+      "surprise_pct": -12.2
     }
   ],
   "insiders": [
@@ -354,12 +354,12 @@
       "date": "2026-09-01"
     },
     {
-      "name": "PLATT IRA J",
+      "name": "QUAYLE DAN",
       "role": "Director",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 3.00 per share.",
-      "value": 90000,
-      "shares": 30000,
+      "value": 43575,
+      "shares": 14525,
       "date": "2026-08-14"
     }
   ],

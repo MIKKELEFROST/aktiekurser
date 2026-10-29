@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:25:15.321Z",
+  "updated_at": "2026-10-29T21:27:32.396Z",
   "source": "Yahoo Finance",
   "symbol": "AM",
   "summary": "Antero Midstream Corporation owns, operates, and develops midstream energy assets in the Appalachian Basin. It operates in two segments, Gathering and Processing, and Water Handling. The gathering and processing segment includes a network of gathering pipelines and compressor stations that collect and process natural gas and NGLs from Antero Resources' wells in West Virginia and Ohio. The Water Handling segment delivers water from sources, including the Ohio River, local reservoirs, and various regional waterways; other fluid handling services, which include transfer and disposal; uses water handling systems to transport flowback and produced water; and buried pipelines, surface pipelines, and water storage facilities, as well as pumping stations and blending facilities. Antero Midstream Corporation was founded in 2002 and is headquartered in Denver, Colorado.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-28",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 0.36374,
+  "eps_estimate": 0.36319,
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 294821000,
-      "earnings": 115984000
-    },
-    {
       "q": "4Q2025",
       "revenue": 297004000,
       "earnings": 51929000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 327244000,
       "earnings": 113515000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 327022000,
+      "earnings": 392657000
     }
   ],
   "growth": {
-    "q0": 0.3472,
-    "q1": 0.29709998,
+    "q0": 0.29709998,
+    "q1": null,
     "y0": 0.2368,
     "y1": 0.16360001
   },
@@ -247,12 +247,6 @@
   "inst_count": 691,
   "eps_history": [
     {
-      "quarter": "2025-09-30",
-      "estimate": 0.29209,
-      "actual": 0.27,
-      "surprise_pct": -7.56
-    },
-    {
       "quarter": "2025-12-31",
       "estimate": 0.27399,
       "actual": 0.28,
@@ -269,6 +263,12 @@
       "estimate": 0.32967,
       "actual": 0.27,
       "surprise_pct": -18.1
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.36374,
+      "actual": 0.28,
+      "surprise_pct": -23.02
     }
   ],
   "insiders": [
@@ -510,6 +510,10 @@
     },
     {
       "date": "2026-07-29",
+      "amount": 0.225
+    },
+    {
+      "date": "2026-10-28",
       "amount": 0.225
     }
   ],

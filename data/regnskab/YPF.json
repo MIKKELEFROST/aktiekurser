@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:25:18.592Z",
+  "updated_at": "2026-10-29T21:27:34.705Z",
   "source": "Yahoo Finance",
   "symbol": "YPF",
   "summary": "YPF Sociedad Anónima, an energy company, engages in the oil and gas upstream and downstream activities in South America and Argentina. The company operates through the Upstream, Midstream and Downstream, LNG and Integrated Gas, and New Energies segments. It is involved in the exploration and exploitation of hydrocarbon fields and production of crude oil and natural gas; the refining, transportation and commercialization of refined products; the production, transportation, and commercialization of petrochemical products; the transportation and commercialization of crude oil; and the commercialization of specialties for the agribusiness industry, and of grains and their by-products. The company also offers fertilizers and crop protection products; flours, oils, and grains; asphalts; naphtha; and petroleum coke. In addition, it engages in the natural gas transportation and commercialization to third parties and to the Midstream and Downstream segments; the separation of natural gas liquids and their fractionation, and storage and transportation to produce ethane, propane, butane, and gasoline, as well as its commercialization; the development of liquefied natural gas liquefaction capacity; and power generation activities. The company was incorporated in 1977 and is based in Buenos Aires, Argentina.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-28",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 1.82,
+  "eps_estimate": null,
   "analysts": {
     "strong_buy": 4,
     "buy": 6,
@@ -19,10 +19,10 @@
     "strong_sell": 0,
     "total": 13
   },
-  "target_mean": 61.96667,
-  "target_high": 78,
+  "target_mean": 62.46923,
+  "target_high": 84,
   "target_low": 50,
-  "target_analysts": 12,
+  "target_analysts": 13,
   "statements": [
     {
       "year": "2022",
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 6661776400000,
-      "earnings": -295568800000
-    },
-    {
       "q": "4Q2025",
       "revenue": 6414848000000,
       "earnings": -920832000000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 9849166800000,
       "earnings": 1799338200000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 10080731800000,
+      "earnings": 1815669400000
     }
   ],
   "growth": {
-    "q0": 3.9232001,
+    "q0": null,
     "q1": null,
-    "y0": 4.5466,
-    "y1": -0.2324
+    "y0": 5.257,
+    "y1": -0.2978
   },
   "ratings": [
+    {
+      "date": "2026-10-29",
+      "firm": "JP Morgan",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-09-01",
       "firm": "JP Morgan",
@@ -140,13 +147,6 @@
       "from": "Neutral",
       "to": "Buy",
       "action": "up"
-    },
-    {
-      "date": "2024-12-04",
-      "firm": "UBS",
-      "from": "Buy",
-      "to": "Neutral",
-      "action": "down"
     }
   ],
   "holders": [
@@ -193,13 +193,6 @@
       "date": "2026-06-30"
     },
     {
-      "name": "Fidelity Rutland Square TRT II-Strategic Advisers Emerging Markets Fd.",
-      "kind": "fond",
-      "pct": 0.57,
-      "shares": 2239831,
-      "date": "2026-08-31"
-    },
-    {
       "name": "Fidelity Rutland Square TRT II-Strategic Advisers Fidelity Emerging Ma",
       "kind": "fond",
       "pct": 0.57,
@@ -219,6 +212,13 @@
       "pct": 0.45,
       "shares": 1767158,
       "date": "2026-07-31"
+    },
+    {
+      "name": "Mirae Asset Global ETFs Holdings Ltd.",
+      "kind": "institution",
+      "pct": 0.41,
+      "shares": 1606623,
+      "date": "2026-06-30"
     }
   ],
   "insider_net": {
@@ -231,7 +231,7 @@
   },
   "extras": {
     "beta": -0.108,
-    "enterprise_value": 12780461621248,
+    "enterprise_value": 12780811845632,
     "ev_ebitda": 1.328,
     "ev_revenue": 0.437,
     "float_shares": 160444088,
@@ -244,14 +244,8 @@
   "ex_dividend": "2019-07-09",
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 229,
+  "inst_count": 230,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.59,
-      "actual": -0.6226,
-      "surprise_pct": -205.53
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.78047,
@@ -269,6 +263,12 @@
       "estimate": 2.66026,
       "actual": 3.07,
       "surprise_pct": 15.4
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.82,
+      "actual": 2.35986,
+      "surprise_pct": 29.66
     }
   ],
   "insiders": [

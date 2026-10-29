@@ -1,21 +1,28 @@
 {
-  "updated_at": "2026-10-28T21:25:17.341Z",
+  "updated_at": "2026-10-29T21:27:33.763Z",
   "source": "Yahoo Finance",
   "symbol": "MSGK",
-  "summary": "MSG Knickerbockers Corp. operates as a professional sports company in the United States. It owns and operates a portfolio of assets that consists of the New York Knickerbockers of the National Basketball Association (NBA) and the New York Rangers of the National Hockey League. The company's other professional franchises include development league teams, the Hartford Wolf Pack of the American Hockey League and the Westchester Knicks of the NBA G League. It also operates the Madison Square Garden Training Center, a professional sports team performance center in Greenburgh. The company was formerly known as The Madison Square Garden Company. MSG Knickerbockers Corp. was incorporated in 2015 and is based in New York, New York.",
+  "summary": "MSG Knickerbockers Corp. operates as a professional sports company in the United States. The company's other professional franchises include development league team, the Westchester Knicks of the NBA G League. The company was formerly known as The Madison Square Garden Company. MSG Knickerbockers Corp. was incorporated in 2015 and is based in New York, New York.",
   "industry": "Entertainment",
-  "website": "https://www.msgsports.com",
+  "website": "https://www.msgknicks.com",
   "employees": 522,
   "ceo": "Mr. James Lawrence Dolan",
   "next_earnings": "2026-10-30",
   "earnings_estimated": true,
   "earnings_call": null,
-  "eps_estimate": null,
-  "analysts": null,
-  "target_mean": null,
-  "target_high": null,
-  "target_low": null,
-  "target_analysts": null,
+  "eps_estimate": -1.11314,
+  "analysts": {
+    "strong_buy": 2,
+    "buy": 3,
+    "hold": 3,
+    "sell": 0,
+    "strong_sell": 0,
+    "total": 8
+  },
+  "target_mean": 423.23914,
+  "target_high": 485,
+  "target_low": 312.4348,
+  "target_analysts": 6,
   "statements": [
     {
       "year": "2023",
@@ -42,49 +49,75 @@
       "margin": 0.7
     }
   ],
-  "quarterly": [],
-  "growth": null,
+  "quarterly": [
+    {
+      "q": "3Q2025",
+      "revenue": 39454000,
+      "earnings": -8798000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 403424000,
+      "earnings": 8243000
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 432199000,
+      "earnings": -19983000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 278745000,
+      "earnings": 28297000
+    }
+  ],
+  "growth": {
+    "q0": -2.0085,
+    "q1": -0.0999,
+    "y0": -2.4835,
+    "y1": 0.5583
+  },
   "ratings": [],
   "holders": [
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 10.74,
+      "pct": 10.71,
       "shares": 2098909,
       "date": "2026-06-30"
     },
     {
       "name": "Silver Lake Group, LLC",
       "kind": "institution",
-      "pct": 9.72,
+      "pct": 9.7,
       "shares": 1899962,
       "date": "2026-06-30"
     },
     {
       "name": "Starlite Capital Inc",
       "kind": "institution",
-      "pct": 6.16,
+      "pct": 6.15,
       "shares": 1204918,
       "date": "2026-06-30"
     },
     {
       "name": "T. Rowe Price Investment Management, Inc.",
       "kind": "institution",
-      "pct": 5.61,
+      "pct": 5.6,
       "shares": 1096758,
       "date": "2026-06-30"
     },
     {
       "name": "iShares Trust-iShares Core S&P Small-Cap ETF",
       "kind": "fond",
-      "pct": 5.24,
+      "pct": 5.23,
       "shares": 1024831,
       "date": "2026-09-30"
     },
     {
       "name": "Vanguard Portfolio Management LLC",
       "kind": "institution",
-      "pct": 4.89,
+      "pct": 4.88,
       "shares": 955895,
       "date": "2026-06-30"
     },
@@ -98,14 +131,14 @@
     {
       "name": "Ariel Investments, LLC",
       "kind": "institution",
-      "pct": 3.37,
+      "pct": 3.36,
       "shares": 658551,
       "date": "2026-06-30"
     },
     {
       "name": "Gates Foundation Trust",
       "kind": "institution",
-      "pct": 3.03,
+      "pct": 3.02,
       "shares": 592406,
       "date": "2026-06-30"
     },
@@ -127,9 +160,9 @@
   },
   "extras": {
     "beta": 0.588,
-    "enterprise_value": 8350293504,
-    "ev_ebitda": 246.256,
-    "ev_revenue": 7.237,
+    "enterprise_value": 8227485696,
+    "ev_ebitda": 242.634,
+    "ev_revenue": 7.131,
     "float_shares": 17107594,
     "short_shares": 1680862,
     "short_pct_float": 8.81,
@@ -140,8 +173,33 @@
   "ex_dividend": "2022-10-14",
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 596,
-  "eps_history": [],
+  "inst_count": 594,
+  "eps_history": [
+    {
+      "quarter": "2025-09-30",
+      "estimate": -0.919,
+      "actual": -0.37,
+      "surprise_pct": 59.74
+    },
+    {
+      "quarter": "2025-12-31",
+      "estimate": 0.42849,
+      "actual": 0.34,
+      "surprise_pct": -20.65
+    },
+    {
+      "quarter": "2026-03-31",
+      "estimate": 0.52076,
+      "actual": -0.7754,
+      "surprise_pct": -248.9
+    },
+    {
+      "quarter": "2026-06-30",
+      "estimate": 0.52756,
+      "actual": 1.1921,
+      "surprise_pct": 125.96
+    }
+  ],
   "insiders": [
     {
       "name": "WARNER BRYAN",
@@ -151,6 +209,15 @@
       "value": 247288,
       "shares": 628,
       "date": "2026-09-16"
+    },
+    {
+      "name": "DOLAN QUENTIN F.",
+      "role": "President",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 158,
+      "date": "2026-09-15"
     },
     {
       "name": "LESANE JAMAAL T",
@@ -198,15 +265,6 @@
       "date": "2026-09-15"
     },
     {
-      "name": "DOLAN QUENTIN F.",
-      "role": "President",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 158,
-      "date": "2026-09-15"
-    },
-    {
       "name": "DOLAN CHARLES P",
       "role": "Director",
       "kind": "sell",
@@ -216,21 +274,21 @@
       "date": "2026-02-20"
     },
     {
-      "name": "SHVARTSMAN ALEXANDER",
-      "role": "Officer",
+      "name": "MINK VICTORIA",
+      "role": "Chief Financial Officer",
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 1991,
+      "shares": 7367,
       "date": "2025-09-15"
     },
     {
-      "name": "LESANE JAMAAL T",
-      "role": "Chief Operating Officer",
+      "name": "DOLAN QUENTIN F.",
+      "role": "Director",
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 5575,
+      "shares": 77,
       "date": "2025-09-15"
     }
   ],

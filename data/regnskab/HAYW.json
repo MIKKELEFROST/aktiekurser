@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:25:16.600Z",
+  "updated_at": "2026-10-29T21:27:33.364Z",
   "source": "Yahoo Finance",
   "symbol": "HAYW",
   "summary": "Hayward Holdings, Inc. designs, manufactures, and markets a portfolio of pool equipment and associated automation systems in North America, Europe, and internationally. It offers pool equipment, including pumps, filters, robotics, suction and pressure cleaners, water features and landscape lighting, water sanitizers, salt chlorine generators, gas heaters and heat pumps, safety equipment, and in-floor automated cleaning systems, as well as LED illumination solutions. The company sells its products through specialty distributors, retailers, pool builders, and buying groups. Hayward Holdings, Inc. was founded in 1925 and is headquartered in Charlotte, North Carolina.",
@@ -10,18 +10,18 @@
   "next_earnings": "2026-10-28",
   "earnings_estimated": false,
   "earnings_call": "2026-10-28",
-  "eps_estimate": 0.15149,
+  "eps_estimate": 0.31073,
   "analysts": {
-    "strong_buy": 0,
+    "strong_buy": 1,
     "buy": 3,
-    "hold": 7,
+    "hold": 6,
     "sell": 0,
     "strong_sell": 0,
     "total": 10
   },
-  "target_mean": 16.5,
-  "target_high": 19.5,
-  "target_low": 13,
+  "target_mean": 17.5,
+  "target_high": 20,
+  "target_low": 15,
   "target_analysts": 7,
   "statements": [
     {
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.082100004,
-    "q1": 0.0979,
-    "y0": 0.119899996,
-    "y1": 0.0986
+    "q0": 0.0715,
+    "q1": 0.1578,
+    "y0": 0.1365,
+    "y1": 0.0947
   },
   "ratings": [
+    {
+      "date": "2026-10-29",
+      "firm": "Goldman Sachs",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-10-09",
       "firm": "Goldman Sachs",
@@ -139,13 +146,6 @@
       "firm": "Goldman Sachs",
       "from": "Neutral",
       "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2024-10-30",
-      "firm": "Keybanc",
-      "from": "Overweight",
-      "to": "Overweight",
       "action": "main"
     }
   ],
@@ -231,12 +231,12 @@
   },
   "extras": {
     "beta": 1.178,
-    "enterprise_value": 3290011136,
-    "ev_ebitda": 10.773,
-    "ev_revenue": 2.818,
-    "float_shares": 207122045,
+    "enterprise_value": 3618272000,
+    "ev_ebitda": null,
+    "ev_revenue": null,
+    "float_shares": 203480460,
     "short_shares": 10366219,
-    "short_pct_float": 5.62,
+    "short_pct_float": 5.65,
     "short_ratio": 2.56,
     "last_split": null,
     "last_split_date": null
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 407,
+  "inst_count": 409,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.12085,
-      "actual": 0.14,
-      "surprise_pct": 15.85
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.28134,
@@ -269,6 +263,12 @@
       "estimate": 0.2381,
       "actual": 0.26,
       "surprise_pct": 9.2
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.15149,
+      "actual": 0.18,
+      "surprise_pct": 18.82
     }
   ],
   "insiders": [

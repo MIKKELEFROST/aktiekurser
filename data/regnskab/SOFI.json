@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:25:18.058Z",
+  "updated_at": "2026-10-29T21:27:34.305Z",
   "source": "Yahoo Finance",
   "symbol": "SOFI",
   "summary": "SoFi Technologies, Inc. provides various financial services in the United States, Latin America, Canada, and Hong Kong. The company operates through three segments: Lending, Technology Platform, and Financial Services. It offers lending and financial services and products that allows its members to borrow, save, spend, invest, and protect money; and personal loans, student loans, home loans, and related services. The company also operates Galileo, a technology platform that offers services to financial and non-financial institution; and Technisys, a cloud-native digital and core banking platform that provides software licenses and associated services, including implementation and maintenance. In addition, it provides SoFi Money offers checking and savings accounts, and cash management products; SoFi Invest, a mobile-first investment platform that offers access to trading and advisory solutions, such as investing and robo-advisory; and SoFI Crypto, a new digital asset trading platform. Further, the company offers SoFi Credit Card that provides cash back rewards on every purchase; Sofi Relay, a personal finance management product that allows to track all of their financial accounts comprising credit score and spending behaviors; SoFi Protect which offers insurance product; SoFi Travel, an application that manages travel search and booking experience; SoFi At Work provides financial benefits to employees, including student loan payments made on their employees' behalf; Lantern Credit, a financial services marketplace platform for seeking alternative products and provide product comparisons; and other lending as a service that offers pre-qualified borrower referrals and offers loans to third-party partner. The company was founded in 2011 and is based in San Francisco, California.",
@@ -10,19 +10,19 @@
   "next_earnings": "2026-10-27",
   "earnings_estimated": false,
   "earnings_call": "2026-10-27",
-  "eps_estimate": 0.19437,
+  "eps_estimate": 0.19423,
   "analysts": {
     "strong_buy": 4,
     "buy": 7,
-    "hold": 11,
+    "hold": 10,
     "sell": 2,
     "strong_sell": 2,
-    "total": 26
+    "total": 25
   },
-  "target_mean": 20.45,
+  "target_mean": 20.75217,
   "target_high": 30,
   "target_low": 12,
-  "target_analysts": 24,
+  "target_analysts": 23,
   "statements": [
     {
       "year": "2022",
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.5971,
-    "q1": 0.6957,
-    "y0": 0.6013,
-    "y1": 0.4595
+    "q0": 0.59599996,
+    "q1": 0.7267,
+    "y0": 0.62590003,
+    "y1": 0.4647
   },
   "ratings": [
+    {
+      "date": "2026-10-29",
+      "firm": "UBS",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-10-28",
       "firm": "Scotiabank",
@@ -140,13 +147,6 @@
       "from": "Hold",
       "to": "Hold",
       "action": "main"
-    },
-    {
-      "date": "2026-09-09",
-      "firm": "Loop Capital",
-      "from": null,
-      "to": "Hold",
-      "action": "init"
     }
   ],
   "holders": [
@@ -227,13 +227,13 @@
     "sells": 9,
     "bought": 2467392,
     "sold": 185572,
-    "net_pct": 13.8
+    "net_pct": 13.9
   },
   "extras": {
     "beta": 2.332,
-    "enterprise_value": 22434351104,
+    "enterprise_value": 23393847296,
     "ev_ebitda": null,
-    "ev_revenue": 4.787,
+    "ev_revenue": 4.992,
     "float_shares": 1276312298,
     "short_shares": 219640877,
     "short_pct_float": 17.17,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 1185,
+  "inst_count": 1182,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -282,15 +282,6 @@
       "date": "2026-10-20"
     },
     {
-      "name": "RISHEL JEREMY DYLAN",
-      "role": "Chief Technology Officer",
-      "kind": "sell",
-      "text": "Sale at price 17.50 per share.",
-      "value": 325920,
-      "shares": 18624,
-      "date": "2026-09-21"
-    },
-    {
       "name": "KEOUGH KELLI ALLEN",
       "role": "Officer",
       "kind": "sell",
@@ -300,30 +291,21 @@
       "date": "2026-09-21"
     },
     {
+      "name": "RISHEL JEREMY DYLAN",
+      "role": "Chief Technology Officer",
+      "kind": "sell",
+      "text": "Sale at price 17.50 per share.",
+      "value": 325920,
+      "shares": 18624,
+      "date": "2026-09-21"
+    },
+    {
       "name": "LAVET ROBERT S",
       "role": "General Counsel",
       "kind": "other",
       "text": null,
       "value": null,
       "shares": 36057,
-      "date": "2026-09-14"
-    },
-    {
-      "name": "KEOUGH KELLI ALLEN",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 127867,
-      "date": "2026-09-14"
-    },
-    {
-      "name": "SCHUPPENHAUER ERIC",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 6493,
       "date": "2026-09-14"
     },
     {
@@ -360,6 +342,24 @@
       "text": null,
       "value": null,
       "shares": 345554,
+      "date": "2026-09-14"
+    },
+    {
+      "name": "KEOUGH KELLI ALLEN",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 127867,
+      "date": "2026-09-14"
+    },
+    {
+      "name": "SCHUPPENHAUER ERIC",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 6493,
       "date": "2026-09-14"
     }
   ],

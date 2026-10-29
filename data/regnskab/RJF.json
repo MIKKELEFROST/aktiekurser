@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:25:17.822Z",
+  "updated_at": "2026-10-29T21:27:34.113Z",
   "source": "Yahoo Finance",
   "symbol": "RJF",
   "summary": "Raymond James Financial, Inc., a diversified financial services company, provides private client group, capital markets, asset management, banking, and other services to individuals, corporations, and municipalities in the United States, Canada, and Europe. The Private Client Group segment offers financial planning, investment advisory, securities transaction, investment services, portfolio management services, insurance and annuity products, and mutual funds; support to third-party mutual fund and annuity companies, including sales and marketing support, as well as distribution and accounting, and administrative services; margin loans; securities borrowing and lending services; and custodial, trade execution, research, and other support and services. The Capital Markets segment provides investment banking services, such as equity and debt underwriting, and merger and acquisition advisory; and fixed income and equity brokerage services. This segment also offers institutional sales, securities trading, equity research, and the syndication and management of investments in low-income housing funds and funds of a similar nature. The Asset Management segment provides asset management, portfolio management, and related administrative services to retail and institutional clients; and administrative support services, such as record-keeping. The Bank segment offers various types of loans, including securities-based, corporate, commercial and industrial, commercial real estate and construction, real estate investment trust, residential mortgage, and tax-exempt loans; Federal Deposit Insurance Corporation-insured deposit accounts; retail and corporate deposit; and liquidity management products and services. The Other segment engages in the private equity investments comprising investments in third-party funds. The company offers corporate, retail banking and trust services. Raymond James Financial, Inc. was founded in 1962 and is headquartered in Saint Petersburg, Florida.",
@@ -7,10 +7,10 @@
   "website": "https://www.raymondjames.com",
   "employees": 19500,
   "ceo": "Mr. Paul Marone Shoukry",
-  "next_earnings": "2026-10-28",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-27",
+  "earnings_estimated": true,
   "earnings_call": "2026-10-28",
-  "eps_estimate": 3.27081,
+  "eps_estimate": 3.35707,
   "analysts": {
     "strong_buy": 3,
     "buy": 3,
@@ -19,17 +19,11 @@
     "strong_sell": 0,
     "total": 16
   },
-  "target_mean": 183.85715,
-  "target_high": 209,
+  "target_mean": 182.14285,
+  "target_high": 205,
   "target_low": 160,
   "target_analysts": 14,
   "statements": [
-    {
-      "year": "2022",
-      "revenue": 11003000000,
-      "net": 1505000000,
-      "margin": 13.7
-    },
     {
       "year": "2023",
       "revenue": 11619000000,
@@ -47,14 +41,15 @@
       "revenue": 14065000000,
       "net": 2130000000,
       "margin": 15.1
+    },
+    {
+      "year": "2026",
+      "revenue": 15791000000,
+      "net": 2365000000,
+      "margin": 15
     }
   ],
   "quarterly": [
-    {
-      "q": "3Q2025",
-      "revenue": 3727000000,
-      "earnings": 603000000
-    },
     {
       "q": "4Q2025",
       "revenue": 3735000000,
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 3928000000,
       "earnings": 595000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 4269000000,
+      "earnings": 666000000
     }
   ],
   "growth": {
-    "q0": 0.0517,
-    "q1": 0.172,
-    "y0": 0.1371,
-    "y1": 0.17719999
+    "q0": 0.17379999,
+    "q1": 0.2218,
+    "y0": 0.1526,
+    "y1": 0.1331
   },
   "ratings": [
+    {
+      "date": "2026-10-29",
+      "firm": "Wells Fargo",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
     {
       "date": "2026-10-13",
       "firm": "Truist Securities",
@@ -140,13 +147,6 @@
       "from": null,
       "to": "Hold",
       "action": "init"
-    },
-    {
-      "date": "2026-09-01",
-      "firm": "TD Cowen",
-      "from": "Hold",
-      "to": "Hold",
-      "action": "main"
     }
   ],
   "holders": [
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.946,
-    "enterprise_value": 20564234240,
+    "enterprise_value": 20429580288,
     "ev_ebitda": null,
-    "ev_revenue": 1.349,
+    "ev_revenue": 1.341,
     "float_shares": 171742459,
     "short_shares": 6192283,
     "short_pct_float": 3.66,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-10-01",
   "dividend_date": null,
   "payout_ratio": 0.1848,
-  "inst_count": 1271,
+  "inst_count": 1268,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 2.82799,
-      "actual": 3.11,
-      "surprise_pct": 9.97
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 2.83451,
@@ -269,6 +263,12 @@
       "estimate": 2.9117,
       "actual": 3.14,
       "surprise_pct": 7.84
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 3.27081,
+      "actual": 3.59,
+      "surprise_pct": 9.76
     }
   ],
   "insiders": [

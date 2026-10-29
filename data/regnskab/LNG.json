@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:25:17.116Z",
+  "updated_at": "2026-10-29T21:27:33.667Z",
   "source": "Yahoo Finance",
   "symbol": "LNG",
   "summary": "Cheniere Energy, Inc., an energy infrastructure company, primarily engages in the liquefied natural gas (LNG) related businesses in the United States. The company owns and operates the Sabine Pass LNG terminal in Cameron Parish, Louisiana; and the Corpus Christi LNG terminal near Corpus Christi, Texas. It also owns and operates the Creole Trail pipeline, a 94-mile natural gas supply pipeline that interconnects the Sabine Pass LNG Terminal with several large interstate and intrastate pipelines; and the Corpus Christi pipeline, a 21-mile natural gas supply pipeline that interconnects the Corpus Christi LNG terminal with interstate and intrastate natural gas pipelines. In addition, the company engages in the LNG and natural gas marketing business. Cheniere Energy, Inc. was incorporated in 1983 and is headquartered in Houston, Texas.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 4.72625,
+  "eps_estimate": 5.66004,
   "analysts": {
     "strong_buy": 5,
     "buy": 15,
@@ -19,8 +19,8 @@
     "strong_sell": 0,
     "total": 22
   },
-  "target_mean": 314.38095,
-  "target_high": 344,
+  "target_mean": 314.85715,
+  "target_high": 346,
   "target_low": 262,
   "target_analysts": 21,
   "statements": [
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 4441000000,
-      "earnings": 1049000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 5450000000,
       "earnings": 2302000000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 5732000000,
       "earnings": 3068000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 6173000000,
+      "earnings": 1170000000
     }
   ],
   "growth": {
-    "q0": 0.78029996,
-    "q1": 1.1819,
+    "q0": 1.1819,
+    "q1": -0.4866,
     "y0": 1.1549,
     "y1": -0.1043
   },
   "ratings": [
+    {
+      "date": "2026-10-29",
+      "firm": "Bernstein",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "reit"
+    },
     {
       "date": "2026-10-23",
       "firm": "JP Morgan",
@@ -139,13 +146,6 @@
       "firm": "TD Cowen",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-15",
-      "firm": "Barclays",
-      "from": "Overweight",
-      "to": "Overweight",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.056,
-    "enterprise_value": 94058545152,
-    "ev_ebitda": 12.016,
-    "ev_revenue": 4.496,
+    "enterprise_value": 93651673088,
+    "ev_ebitda": 11.964,
+    "ev_revenue": 4.477,
     "float_shares": 205092550,
     "short_shares": 4661138,
     "short_pct_float": 2.27,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.16389999,
   "inst_count": 1851,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 2.77603,
-      "actual": 2.6547,
-      "surprise_pct": -4.37
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 3.87216,
@@ -269,6 +263,12 @@
       "estimate": 3.15236,
       "actual": 3.0167,
       "surprise_pct": -4.3
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 4.72625,
+      "actual": 3.6249,
+      "surprise_pct": -23.3
     }
   ],
   "insiders": [

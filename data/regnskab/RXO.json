@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:25:17.880Z",
+  "updated_at": "2026-10-29T21:27:34.162Z",
   "source": "Yahoo Finance",
   "symbol": "RXO",
   "summary": "RXO, Inc. engages in truck brokerage business in the United States, Canada, Mexico, Asia, and Europe. It offers truckload freight brokering services. The company also provides asset-light managed transportation and last mile services, as well as freight forwarding services, including facilitation of ocean and air transportation, customs brokerage, and additional domestic services including middle mile. RXO, Inc. was incorporated in 2022 and is headquartered in Charlotte, North Carolina.",
@@ -7,10 +7,10 @@
   "website": "https://www.rxo.com",
   "employees": 6906,
   "ceo": "Mr. Drew M. Wilkerson",
-  "next_earnings": "2026-11-05",
+  "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-08-06",
-  "eps_estimate": 0.075,
+  "eps_estimate": 0.09124,
   "analysts": {
     "strong_buy": 1,
     "buy": 2,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 1421000000,
-      "earnings": -14000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 1469000000,
       "earnings": -46000000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 1774000000,
       "earnings": -9000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1871000000,
+      "earnings": 3000000
     }
   ],
   "growth": {
-    "q0": 6.5,
-    "q1": 2.3034,
+    "q0": 2.3034,
+    "q1": 1.1876999,
     "y0": 4.6254997,
     "y1": 3.5079
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.99,
-    "enterprise_value": 5512350208,
-    "ev_ebitda": 59.917,
-    "ev_revenue": 0.905,
+    "enterprise_value": 5264961024,
+    "ev_ebitda": 57.228,
+    "ev_revenue": 0.865,
     "float_shares": 135343328,
     "short_shares": 10839823,
     "short_pct_float": 18.78,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 404,
+  "inst_count": 405,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.03743,
-      "actual": 0.01,
-      "surprise_pct": -73.28
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.04166,
@@ -269,6 +263,12 @@
       "estimate": 0.03759,
       "actual": 0.06,
       "surprise_pct": 59.62
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.075,
+      "actual": 0.09,
+      "surprise_pct": 20
     }
   ],
   "insiders": [
@@ -309,24 +309,6 @@
       "date": "2026-05-01"
     },
     {
-      "name": "WILKERSON ANDREW M",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 52768,
-      "date": "2026-03-20"
-    },
-    {
-      "name": "FIRESTONE JEFFREY D.",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 11771,
-      "date": "2026-03-20"
-    },
-    {
       "name": "HARRIS JAMES E",
       "role": "Chief Financial Officer",
       "kind": "other",
@@ -350,8 +332,8 @@
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 52923,
-      "date": "2026-02-27"
+      "shares": 52768,
+      "date": "2026-03-20"
     },
     {
       "name": "FIRESTONE JEFFREY D.",
@@ -359,7 +341,25 @@
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 8957,
+      "shares": 11771,
+      "date": "2026-03-20"
+    },
+    {
+      "name": "HARRIS JAMES E",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 13028,
+      "date": "2026-02-27"
+    },
+    {
+      "name": "KERR JASON S.",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 2036,
       "date": "2026-02-27"
     }
   ],

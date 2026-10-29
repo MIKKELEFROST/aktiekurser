@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:25:16.426Z",
+  "updated_at": "2026-10-29T21:27:33.221Z",
   "source": "Yahoo Finance",
   "symbol": "FTAI",
   "summary": "FTAI Aviation Ltd. owns, acquires, and sells aviation equipment for the transportation of goods and people worldwide. It operates in two segments, Aviation Leasing and Aerospace Products. The Aviation Leasing segment owns, leases, manages, and sells aircraft and aircraft engines. As of December 31, 2025, this segment owned and managed 290 aviation assets consisting of 47 commercial aircraft and 243 engines, including eight aircraft and seventeen engines in Russia. The Aerospace Products segment develops, manufactures, repairs/refurbishes, and sells aircraft engines and aftermarket components for the commercial aircraft engines. It also engages in the offshore energy business, which consists of vessels and equipment that support offshore oil and gas activities and production. FTAI Aviation Ltd. has a strategic collaboration with Aeronautical Engineers, Inc. The company was founded in 2011 and is headquartered in New York, New York.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 1.47,
+  "eps_estimate": null,
   "analysts": {
     "strong_buy": 4,
     "buy": 7,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 11
   },
-  "target_mean": 343.18182,
+  "target_mean": 338.63635,
   "target_high": 540,
-  "target_low": 275,
+  "target_low": 250,
   "target_analysts": 11,
   "statements": [
     {
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 667064000,
-      "earnings": 114009000
-    },
-    {
       "q": "4Q2025",
       "revenue": 662028000,
       "earnings": 111852000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 953085000,
       "earnings": 117585000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 977657000,
+      "earnings": 149064000
     }
   ],
   "growth": {
-    "q0": 0.26680002,
-    "q1": null,
+    "q0": null,
+    "q1": 0.5978,
     "y0": 0.2522,
     "y1": 1.3038001
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.57,
-    "enterprise_value": 19455684608,
-    "ev_ebitda": 19.538,
-    "ev_revenue": 6.25,
+    "enterprise_value": 20325613568,
+    "ev_ebitda": 20.412,
+    "ev_revenue": 6.53,
     "float_shares": 101500283,
     "short_shares": 6198794,
     "short_pct_float": 9.63,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.3261,
   "inst_count": 880,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.201,
-      "actual": 1.1604,
-      "surprise_pct": -3.38
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.18025,
@@ -269,6 +263,12 @@
       "estimate": 2.089,
       "actual": 1.2644,
       "surprise_pct": -39.47
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.47,
+      "actual": 1.7232,
+      "surprise_pct": 17.22
     }
   ],
   "insiders": [

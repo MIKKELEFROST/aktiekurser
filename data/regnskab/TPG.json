@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:25:18.790Z",
+  "updated_at": "2026-10-29T21:27:34.862Z",
   "source": "Yahoo Finance",
   "symbol": "TPG",
   "summary": "TPG Inc. operates as an alternative asset manager in the United States and internationally. The company provides investment management services to TPG Funds, limited partners, separately managed accounts and clients, and other vehicles; advisory, debt and equity arrangement, and underwriting and placement services; and capital structuring and other advice services. In addition, it invests in private equity funds, real estate funds, hedge funds, and credit funds. TPG Inc. was founded in 1992 and is based in Fort Worth, Texas.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 0.62922,
+  "eps_estimate": 0.78938,
   "analysts": {
     "strong_buy": 6,
     "buy": 7,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 509396000,
-      "earnings": 67140000
-    },
-    {
       "q": "4Q2025",
       "revenue": 628476000,
       "earnings": 77114000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 628192000,
       "earnings": 93426000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 638072000,
+      "earnings": 99634000
     }
   ],
   "growth": {
-    "q0": 0.1872,
-    "q1": 0.1118,
+    "q0": 0.1118,
+    "q1": 0.1496,
     "y0": 0.16520001,
     "y1": 0.2678
   },
@@ -158,18 +158,18 @@
       "date": "2026-06-30"
     },
     {
-      "name": "Temasek Holdings (Private) Ltd",
-      "kind": "institution",
-      "pct": 6.61,
-      "shares": 10163065,
-      "date": "2026-06-30"
-    },
-    {
       "name": "DARLINGTON PARTNERS CAPITAL MANAGEMENT, LP",
       "kind": "institution",
       "pct": 5.85,
       "shares": 9000000,
       "date": "2026-06-30"
+    },
+    {
+      "name": "Temasek Holdings (Private) Ltd",
+      "kind": "institution",
+      "pct": 5.65,
+      "shares": 8697241,
+      "date": "2026-09-30"
     },
     {
       "name": "Blackrock Inc.",
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.473,
-    "enterprise_value": 12067208192,
+    "enterprise_value": 12068876288,
     "ev_ebitda": null,
-    "ev_revenue": 2.599,
+    "ev_revenue": 2.6,
     "float_shares": 132081643,
     "short_shares": 14753826,
     "short_pct_float": 9.71,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-08-14",
   "dividend_date": null,
   "payout_ratio": 3.3432999,
-  "inst_count": 512,
+  "inst_count": 515,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -263,6 +263,12 @@
       "estimate": 0.57313,
       "actual": 0.39,
       "surprise_pct": -31.95
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.62922,
+      "actual": 0.65,
+      "surprise_pct": 3.3
     }
   ],
   "insiders": [

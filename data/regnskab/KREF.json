@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:25:17.036Z",
+  "updated_at": "2026-10-29T21:27:33.598Z",
   "source": "Yahoo Finance",
   "symbol": "KREF",
   "summary": "KKR Real Estate Finance Trust Inc., a mortgage real estate investment trust, focuses primarily on originating and acquiring transitional senior loans secured by commercial real estate (CRE) assets in the United States. It engages in the origination and purchase of credit investments related to CRE, including leveraged and unleveraged commercial real estate loans. The company has also elected to be taxed as a real estate investment trust and would not be subject to federal corporate income taxes if it distributes at least 90% of its taxable income to its stockholders. KKR Real Estate Finance Trust Inc. was incorporated in 2014 and is headquartered in New York, New York.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-28",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 0.0475,
+  "eps_estimate": -0.095,
   "analysts": {
     "strong_buy": 0,
     "buy": 2,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 25334000,
-      "earnings": 8079000
-    },
-    {
       "q": "4Q2025",
       "revenue": 25792000,
       "earnings": -31989000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 18182000,
       "earnings": -121794000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 14577000,
+      "earnings": -6417000
     }
   ],
   "growth": {
-    "q0": 2.5832999,
-    "q1": -1.4317999,
+    "q0": -1.4317999,
+    "q1": 1.5,
     "y0": -2.8013,
     "y1": 0.2168
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.928,
-    "enterprise_value": 4956220928,
+    "enterprise_value": 4938061824,
     "ev_ebitda": null,
-    "ev_revenue": -68.434,
+    "ev_revenue": -68.184,
     "float_shares": 41357789,
     "short_shares": 5916068,
     "short_pct_float": 15.62,
@@ -246,12 +246,6 @@
   "payout_ratio": 6.25,
   "inst_count": 208,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.018,
-      "actual": -0.03,
-      "surprise_pct": -266.67
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.13333,
@@ -269,6 +263,12 @@
       "estimate": -0.4725,
       "actual": -0.58,
       "surprise_pct": -22.75
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.0475,
+      "actual": -2.64,
+      "surprise_pct": -5657.89
     }
   ],
   "insiders": [

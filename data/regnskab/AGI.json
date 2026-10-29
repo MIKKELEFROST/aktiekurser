@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:25:15.257Z",
+  "updated_at": "2026-10-29T21:27:32.342Z",
   "source": "Yahoo Finance",
   "symbol": "AGI",
   "summary": "Alamos Gold Inc. operates as a gold producer in Canada and Mexico. It primarily explores for gold deposits. The company was founded in 2003 and is based in Toronto, Canada.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-28",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 0.4497,
+  "eps_estimate": 0.59358,
   "analysts": {
     "strong_buy": 4,
     "buy": 7,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 462300000,
-      "earnings": 276300000
-    },
-    {
       "q": "4Q2025",
       "revenue": 575300000,
       "earnings": 434900000
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 594100000,
       "earnings": 270400000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 510400000,
+      "earnings": 165600000
     }
   ],
   "growth": {
-    "q0": 0.21540001,
-    "q1": 0.0992,
-    "y0": 0.5702,
-    "y1": 0.3044
+    "q0": 0.0992,
+    "q1": 0.1576,
+    "y0": 0.5857,
+    "y1": 0.3092
   },
   "ratings": [
     {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.398,
-    "enterprise_value": 12591687680,
-    "ev_ebitda": 8.098,
-    "ev_revenue": 5.651,
+    "enterprise_value": 12796803072,
+    "ev_ebitda": 8.23,
+    "ev_revenue": 5.743,
     "float_shares": 417139349,
     "short_shares": 8487470,
     "short_pct_float": null,
@@ -243,15 +243,9 @@
   },
   "ex_dividend": "2026-09-10",
   "dividend_date": null,
-  "payout_ratio": 0.0468,
-  "inst_count": 758,
+  "payout_ratio": 0.0575,
+  "inst_count": 756,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.35959,
-      "actual": 0.37,
-      "surprise_pct": 2.89
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.50109,
@@ -269,19 +263,15 @@
       "estimate": 0.52746,
       "actual": 0.59,
       "surprise_pct": 11.86
-    }
-  ],
-  "insiders": [
+    },
     {
-      "name": "Engelstad, Nils Frederik Jonas",
-      "role": "Deemed Insider - 6 Months before becoming Insider",
-      "kind": "other",
-      "text": "Acquisition or disposition in the public market at price 8.12 per share.",
-      "value": 33271,
-      "shares": 4100,
-      "date": "2020-05-14"
+      "quarter": "2026-09-30",
+      "estimate": 0.4497,
+      "actual": 0.44,
+      "surprise_pct": -2.16
     }
   ],
+  "insiders": [],
   "dividends": [
     {
       "date": "2013-04-11",

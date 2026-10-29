@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:25:15.341Z",
+  "updated_at": "2026-10-29T21:27:32.411Z",
   "source": "Yahoo Finance",
   "symbol": "AMSF",
   "summary": "AMERISAFE, Inc., an insurance holding company, underwrites workers' compensation insurance in the United States. The company provides benefits to injured employees for temporary or permanent disability, death, and medical and hospital expenses. It sells its products through retail and wholesale brokers and agents; and small and mid-sized employers engaged in hazardous industries, including construction, trucking, logging and lumber, agriculture, manufacturing, telecommunications, and maritime. The company was incorporated in 1985 and is based in Deridder, Louisiana.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-28",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 0.47333,
+  "eps_estimate": 0.51333,
   "analysts": {
     "strong_buy": 1,
     "buy": 0,
@@ -19,8 +19,8 @@
     "strong_sell": 0,
     "total": 3
   },
-  "target_mean": 33.33333,
-  "target_high": 40,
+  "target_mean": 31.66667,
+  "target_high": 35,
   "target_low": 27,
   "target_analysts": 3,
   "statements": [
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 81976000,
-      "earnings": 13818000
-    },
-    {
       "q": "4Q2025",
       "revenue": 81591000,
       "earnings": 10423000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 91971000,
       "earnings": 14595000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 79812000,
+      "earnings": 7196000
     }
   ],
   "growth": {
-    "q0": -0.13939999,
-    "q1": 0.0064999997,
+    "q0": 0.0064999997,
+    "q1": -0.026700001,
     "y0": -0.1187,
     "y1": 0.044899996
   },
   "ratings": [
+    {
+      "date": "2026-10-29",
+      "firm": "Citizens",
+      "from": "Market Outperform",
+      "to": "Market Outperform",
+      "action": "main"
+    },
     {
       "date": "2026-10-13",
       "firm": "Truist Securities",
@@ -140,13 +147,6 @@
       "from": "Hold",
       "to": "Hold",
       "action": "main"
-    },
-    {
-      "date": "2025-04-30",
-      "firm": "JMP Securities",
-      "from": "Market Outperform",
-      "to": "Market Outperform",
-      "action": "reit"
     }
   ],
   "holders": [
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.272,
-    "enterprise_value": 382867072,
-    "ev_ebitda": 6.458,
-    "ev_revenue": 1.141,
+    "enterprise_value": 379903264,
+    "ev_ebitda": 6.408,
+    "ev_revenue": 1.132,
     "float_shares": 17183572,
     "short_shares": 583261,
     "short_pct_float": 3.82,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.64519995,
   "inst_count": 293,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.56,
-      "actual": 0.55,
-      "surprise_pct": -1.79
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.595,
@@ -269,6 +263,12 @@
       "estimate": 0.52333,
       "actual": 0.44,
       "surprise_pct": -15.92
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.47333,
+      "actual": 0.4,
+      "surprise_pct": -15.49
     }
   ],
   "insiders": [

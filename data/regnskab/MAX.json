@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:25:17.295Z",
+  "updated_at": "2026-10-29T21:27:33.720Z",
   "source": "Yahoo Finance",
   "symbol": "MAX",
   "summary": "MediaAlpha, Inc., through its subsidiaries, operates an insurance customer acquisition platform in the United States. Its technology platform offers end customer acquisition for insurance carriers, agents, distributors, and other clients in a range of verticals, including property and casualty insurance, health insurance, and life insurance. The company was founded in 2014 and is headquartered in Los Angeles, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-28",
   "earnings_estimated": false,
   "earnings_call": "2026-10-28",
-  "eps_estimate": 0.38625,
+  "eps_estimate": 0.46933,
   "analysts": {
     "strong_buy": 2,
     "buy": 3,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 8
   },
-  "target_mean": 14.5,
+  "target_mean": 15.28571,
   "target_high": 19,
-  "target_low": 10.5,
+  "target_low": 11,
   "target_analysts": 7,
   "statements": [
     {
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 306514000,
-      "earnings": 14907000
-    },
-    {
       "q": "4Q2025",
       "revenue": 291155000,
       "earnings": 31406000
@@ -69,15 +64,34 @@
       "q": "2Q2026",
       "revenue": 316875000,
       "earnings": 39438000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 375946000,
+      "earnings": 25754000
     }
   ],
   "growth": {
-    "q0": -0.043899998,
-    "q1": -0.8221,
-    "y0": -0.57310003,
-    "y1": 0.11350001
+    "q0": -0.7985,
+    "q1": -0.1031,
+    "y0": -0.37919998,
+    "y1": -0.2612
   },
   "ratings": [
+    {
+      "date": "2026-10-29",
+      "firm": "RBC Capital",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-29",
+      "firm": "Goldman Sachs",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-10-14",
       "firm": "Goldman Sachs",
@@ -132,20 +146,6 @@
       "firm": "Keefe, Bruyette & Woods",
       "from": "Outperform",
       "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-02-24",
-      "firm": "JP Morgan",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-02-24",
-      "firm": "Goldman Sachs",
-      "from": "Neutral",
-      "to": "Neutral",
       "action": "main"
     }
   ],
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 9,
-    "sells": 42,
+    "sells": 40,
     "bought": 143661,
-    "sold": 1467618,
-    "net_pct": -5.6
+    "sold": 1285519,
+    "net_pct": -4.9
   },
   "extras": {
     "beta": 1.145,
-    "enterprise_value": 743129088,
-    "ev_ebitda": 8.531,
-    "ev_revenue": 0.607,
+    "enterprise_value": 740480320,
+    "ev_ebitda": 8.501,
+    "ev_revenue": 0.605,
     "float_shares": 25053803,
     "short_shares": 3219791,
     "short_pct_float": 10.66,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 234,
+  "inst_count": 235,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.37329,
-      "actual": 0.404,
-      "surprise_pct": 8.23
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.40461,
@@ -269,9 +263,24 @@
       "estimate": 0.3,
       "actual": 0.2792,
       "surprise_pct": -6.93
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.365,
+      "actual": 0.3975,
+      "surprise_pct": 8.9
     }
   ],
   "insiders": [
+    {
+      "name": "NONKO EUGENE",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 11.63 - 11.92 per share.",
+      "value": 354715,
+      "shares": 30103,
+      "date": "2026-10-28"
+    },
     {
       "name": "NONKO EUGENE",
       "role": "Director",
@@ -352,15 +361,6 @@
       "value": 36000,
       "shares": 3000,
       "date": "2026-09-04"
-    },
-    {
-      "name": "NONKO EUGENE",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 12.22 - 12.61 per share.",
-      "value": 389059,
-      "shares": 31335,
-      "date": "2026-09-02"
     }
   ],
   "dividends": [],

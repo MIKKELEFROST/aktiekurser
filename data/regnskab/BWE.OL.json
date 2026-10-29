@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:25:15.723Z",
+  "updated_at": "2026-10-29T21:27:32.679Z",
   "source": "Yahoo Finance",
   "symbol": "BWE.OL",
   "summary": "BW Energy Limited, together with its subsidiaries, engages in the exploration and production of oil and gas properties. It holds interests in various shallow- and deep-water assets located in Gabon, Brazil, and Namibia. The company was founded in 2016 and is based in Hamilton, Bermuda. BW Energy Limited is a subsidiary of Bw Group Limited.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 0.07344,
+  "eps_estimate": 0.08687,
   "analysts": {
     "strong_buy": 1,
     "buy": 2,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 4
   },
-  "target_mean": 75.15243,
-  "target_high": 86.13946,
-  "target_low": 53.610626,
+  "target_mean": 76.049164,
+  "target_high": 89.72055,
+  "target_low": 53.826794,
   "target_analysts": 4,
   "statements": [
     {
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 199600000,
-      "earnings": 20100000
-    },
-    {
       "q": "4Q2025",
       "revenue": 123800000,
       "earnings": 3300000
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 296300000,
       "earnings": 43900000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 73200000,
+      "earnings": -700000
     }
   ],
   "growth": {
-    "q0": null,
-    "q1": 7.6870003,
-    "y0": 0.0269,
-    "y1": 1.2671
+    "q0": 7.6870003,
+    "q1": 0.3077,
+    "y0": -0.1176,
+    "y1": 1.6385001
   },
   "ratings": [],
   "holders": [
@@ -122,13 +122,6 @@
       "date": "2026-06-30"
     },
     {
-      "name": "SCHWAB STRATEGIC TRUST-Schwab International Small-Cap Equity ETF",
-      "kind": "fond",
-      "pct": 0.05,
-      "shares": 122787,
-      "date": "2026-05-31"
-    },
-    {
       "name": "VANGUARD Intl Eqy. INDEX Fd.S-Vanguard European Stock Index Fd.",
       "kind": "fond",
       "pct": 0.05,
@@ -141,6 +134,13 @@
       "pct": 0.05,
       "shares": 120639,
       "date": "2026-09-30"
+    },
+    {
+      "name": "SCHWAB STRATEGIC TRUST-Schwab International Small-Cap Equity ETF",
+      "kind": "fond",
+      "pct": 0.05,
+      "shares": 124785,
+      "date": "2026-08-31"
     },
     {
       "name": "Dimensional ETF Trust-Dimensional International Small Cap Value ETF",
@@ -192,6 +192,12 @@
       "estimate": 0.35837,
       "actual": 0.16,
       "surprise_pct": -55.35
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.07344,
+      "actual": -0.01,
+      "surprise_pct": -113.62
     }
   ],
   "insiders": [],

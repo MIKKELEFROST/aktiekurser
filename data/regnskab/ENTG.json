@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:25:16.219Z",
+  "updated_at": "2026-10-29T21:27:33.064Z",
   "source": "Yahoo Finance",
   "symbol": "ENTG",
   "summary": "Entegris, Inc. provides advanced materials and process solutions for the semiconductor and other high-technology industries in North America, Taiwan, South Korea, Japan, China, Europe, and Southeast Asia. It operates in two segments, Materials Solutions (MS) and Advanced Purity Solutions (APS). The MS segment provides materials-based solutions, such as chemical vapor and atomic layer deposition materials, chemical mechanical planarization slurries and pads, ion implantation specialty gases, formulated etch and clean materials, and other specialty materials. The APS segment offers filtration, purification, and contamination-control solutions for the semiconductor manufacturing processes, semiconductor ecosystem, and other high-technology industries. The company's customers include logic and memory semiconductor device manufacturers, semiconductor equipment makers, gas and chemical manufacturing companies, and wafer grower companies; and outsourced semiconductor assembly and test facilities, flat panel display equipment makers, and manufacturers of hard disk drive components and devices. It serves manufacturers and suppliers in the solar and life science industries, electrical discharge machining customers, glass manufacturers, aerospace manufacturers, and manufacturers of biomedical implantation devices. Entegris, Inc. was founded in 1966 and is headquartered in Billerica, Massachusetts.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 1.02424,
+  "eps_estimate": 1.1105,
   "analysts": {
     "strong_buy": 2,
     "buy": 10,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 807100000,
-      "earnings": 70500000
-    },
-    {
       "q": "4Q2025",
       "revenue": 823900000,
       "earnings": 49400000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 883200000,
       "earnings": 93600000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1005700000,
+      "earnings": 157800000
     }
   ],
   "growth": {
-    "q0": 0.42259997,
-    "q1": 0.5864,
+    "q0": 0.5864,
+    "q1": 0.3035,
     "y0": 0.4323,
     "y1": 0.2924
   },
   "ratings": [
+    {
+      "date": "2026-10-29",
+      "firm": "Needham",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-20",
       "firm": "Citigroup",
@@ -139,13 +146,6 @@
       "firm": "Deutsche Bank",
       "from": "Hold",
       "to": "Hold",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-06",
-      "firm": "BMO Capital",
-      "from": "Outperform",
-      "to": "Outperform",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.401,
-    "enterprise_value": 26141679616,
-    "ev_ebitda": 28.58,
-    "ev_revenue": 7.86,
+    "enterprise_value": 27550496768,
+    "ev_ebitda": 30.12,
+    "ev_revenue": 8.283,
     "float_shares": 152115456,
     "short_shares": 8570754,
     "short_pct_float": 7.17,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-10-28",
   "dividend_date": null,
   "payout_ratio": 0.2,
-  "inst_count": 1019,
+  "inst_count": 1018,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.72471,
-      "actual": 0.72,
-      "surprise_pct": -0.65
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.664,
@@ -269,6 +263,12 @@
       "estimate": 0.8215,
       "actual": 0.93,
       "surprise_pct": 13.21
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.02424,
+      "actual": 1.23,
+      "surprise_pct": 20.09
     }
   ],
   "insiders": [
@@ -506,6 +506,10 @@
     },
     {
       "date": "2026-07-29",
+      "amount": 0.1
+    },
+    {
+      "date": "2026-10-28",
       "amount": 0.1
     }
   ],

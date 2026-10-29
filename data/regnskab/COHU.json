@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:25:15.934Z",
+  "updated_at": "2026-10-29T21:27:32.834Z",
   "source": "Yahoo Finance",
   "symbol": "COHU",
   "summary": "Cohu, Inc., through its subsidiaries, provides semiconductor test equipment and services in the United States, Taiwan, China, Malaysia, the Philippines, Singapore, and internationally. It supplies test and inspection metrology automation systems, micro-electromechanical system test modules, test contactors, thermal subsystems, and data analytics software for semiconductor manufacturers and test subcontractors. The company also provides semiconductor automated test equipment for wafer level and device package testing; various test handlers, including pick-and-place, turret, gravity, strip, film frame, laser marker, and thermal sub-systems; interface products comprising test contactors, and probe heads and pins; spares and kits; various parts and labor warranties on test and handling systems, and instruments; and training on the maintenance and operation of its systems, as well as application, data management software, and consulting services on its products. In addition, it offers data analytics product that includes DI-Core, a software suite used to optimize Cohu equipment performance, which provides real-time online performance monitoring and process control. Further, the company provides artificial intelligence process control and analytics-based monitoring software. It markets its products through direct sales force and independent sales representatives. The company was formerly known as Cohu Electronics, Inc. and changed its name to Cohu, Inc. in 1972. Cohu, Inc. was incorporated in 1947 and is headquartered in San Diego, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-28",
   "earnings_estimated": false,
   "earnings_call": "2026-10-28",
-  "eps_estimate": 0.345,
+  "eps_estimate": 0.35875,
   "analysts": {
     "strong_buy": 1,
     "buy": 7,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 126249000,
-      "earnings": -4101000
-    },
-    {
       "q": "4Q2025",
       "revenue": 122230000,
       "earnings": -22488000
@@ -69,15 +64,41 @@
       "q": "2Q2026",
       "revenue": 149002000,
       "earnings": -159000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 172956000,
+      "earnings": 12129000
     }
   ],
   "growth": {
-    "q0": 6.75,
-    "q1": 3.0582998,
-    "y0": 5.2443,
-    "y1": 0.9371
+    "q0": 3.3917,
+    "q1": 37.429,
+    "y0": 5.856,
+    "y1": 0.6931
   },
   "ratings": [
+    {
+      "date": "2026-10-29",
+      "firm": "B. Riley Securities",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-29",
+      "firm": "Stifel",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-29",
+      "firm": "Needham",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "reit"
+    },
     {
       "date": "2026-07-31",
       "firm": "B. Riley Securities",
@@ -126,27 +147,6 @@
       "from": "Buy",
       "to": "Buy",
       "action": "main"
-    },
-    {
-      "date": "2026-05-01",
-      "firm": "Needham",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-04-28",
-      "firm": "Evercore ISI Group",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-04-27",
-      "firm": "Jefferies",
-      "from": null,
-      "to": "Buy",
-      "action": "init"
     }
   ],
   "holders": [
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.512,
-    "enterprise_value": 2246391296,
-    "ev_ebitda": 177.974,
-    "ev_revenue": 4.298,
+    "enterprise_value": 2348642304,
+    "ev_ebitda": 186.075,
+    "ev_revenue": 4.494,
     "float_shares": 46217932,
     "short_shares": 8949519,
     "short_pct_float": 22.81,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 477,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.198,
-      "actual": -0.06,
-      "surprise_pct": 69.7
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.062,
@@ -269,6 +263,12 @@
       "estimate": 0.13875,
       "actual": 0.26,
       "surprise_pct": 87.39
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.345,
+      "actual": 0.43,
+      "surprise_pct": 24.64
     }
   ],
   "insiders": [

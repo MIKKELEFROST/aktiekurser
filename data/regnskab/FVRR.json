@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:25:16.441Z",
+  "updated_at": "2026-10-29T21:27:33.233Z",
   "source": "Yahoo Finance",
   "symbol": "FVRR",
   "summary": "Fiverr International Ltd. operates an online marketplace worldwide. The company's platform enables sellers to sell their services and buyers to buy them. Its platform offers digital services, including logo design and blog post writing, video creation, website development, and social media marketing services. The company also provides value added services comprising Fiverr Ads, an advertising tool that allows sellers to promote services on platform; Seller Plus, a subscription program that equips sellers with tools, such as advanced analytics and marketing capabilities; AutoDS, an end-to-end dropshipping automation tool that allows customers to track orders across channels; and financial tools, including faster withdrawal, local currency payout, and cash advance for sellers, as well as software talent platform. It serves businesses of various sizes, as well as sellers comprising a group of freelancers and agencies. Fiverr International Ltd. was incorporated in 2010 and is headquartered in Tel Aviv-Yafo, Israel.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 0.29917,
+  "eps_estimate": 0.23465,
   "analysts": {
     "strong_buy": 0,
     "buy": 0,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 107903000,
-      "earnings": 5537000
-    },
-    {
       "q": "4Q2025",
       "revenue": 107174000,
       "earnings": 11460000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 97783000,
       "earnings": 4469000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 90899000,
+      "earnings": 1269000
     }
   ],
   "growth": {
-    "q0": -0.6115,
-    "q1": -0.72720003,
+    "q0": -0.72720003,
+    "q1": -0.5565,
     "y0": -0.4416,
     "y1": -0.2224
   },
@@ -223,18 +223,18 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 9,
+    "buys": 6,
     "sells": 20,
-    "bought": 194763,
+    "bought": 129609,
     "sold": 920437,
-    "net_pct": -12.8
+    "net_pct": -13.8
   },
   "extras": {
     "beta": 1.511,
-    "enterprise_value": 49792156,
-    "ev_ebitda": 0.928,
-    "ev_revenue": 0.119,
-    "float_shares": 30755313,
+    "enterprise_value": 45797676,
+    "ev_ebitda": 0.854,
+    "ev_revenue": 0.109,
+    "float_shares": 30762576,
     "short_shares": 2985599,
     "short_pct_float": 9.71,
     "short_ratio": 4.9,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 176,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.68342,
-      "actual": 0.77,
-      "surprise_pct": 12.67
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.73998,
@@ -269,9 +263,24 @@
       "estimate": 0.51882,
       "actual": 0.5,
       "surprise_pct": -3.63
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.29917,
+      "actual": 0.43,
+      "surprise_pct": 43.73
     }
   ],
   "insiders": [
+    {
+      "name": "GARTEN YAEL",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 8.30 per share.",
+      "value": 9445,
+      "shares": 1138,
+      "date": "2026-10-26"
+    },
     {
       "name": "ZOHAR NIR",
       "role": "Director",
@@ -352,15 +361,6 @@
       "value": 933274,
       "shares": 93353,
       "date": "2026-06-15"
-    },
-    {
-      "name": "FISHER ADAM RALPH",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 9.83 - 10.23 per share.",
-      "value": 1225947,
-      "shares": 122837,
-      "date": "2026-06-11"
     }
   ],
   "dividends": [],

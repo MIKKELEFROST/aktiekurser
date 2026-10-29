@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:25:17.424Z",
+  "updated_at": "2026-10-29T21:27:33.818Z",
   "source": "Yahoo Finance",
   "symbol": "NEO",
   "summary": "NeoGenomics, Inc. operates a network of cancer-focused testing laboratories in the United States and the United Kingdom. The company offers testing services to hospitals, academic centers, pathologists, oncologists, clinicians, pharmaceutical companies, and clinical laboratories. It also provides cytogenetics testing services to study normal and abnormal chromosomes and their relationship to diseases; fluorescence in-situ hybridization testing services that focus on detecting and locating the presence or absence of specific DNA sequences and genes on chromosomes; flow cytometry testing services to measure the characteristics of cell populations; and immunohistochemistry and digital imaging testing services to localize cellular proteins in tissue section, as well as to allow clients to visualize scanned slides, and perform quantitative analysis for various stains. In addition, the company offers molecular testing services, which focus on the analysis of DNA and/or RNA, and the structure and function of genes at the molecular level; morphologic analysis, which is the process of analyzing cells under the microscope by a pathologist for the purpose of diagnosis; and testing services in support of its pharmaceutical clients' oncology programs covering discovery and commercialization. The company was founded in 2001 and is headquartered in Fort Myers, Florida.",
@@ -10,18 +10,18 @@
   "next_earnings": "2026-10-28",
   "earnings_estimated": false,
   "earnings_call": "2026-10-28",
-  "eps_estimate": 0.05545,
+  "eps_estimate": 0.06889,
   "analysts": {
     "strong_buy": 2,
-    "buy": 7,
+    "buy": 6,
     "hold": 3,
     "sell": 0,
     "strong_sell": 0,
-    "total": 12
+    "total": 11
   },
-  "target_mean": 21.85,
+  "target_mean": 22.3,
   "target_high": 35,
-  "target_low": 16.5,
+  "target_low": 19,
   "target_analysts": 10,
   "statements": [
     {
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 187797000,
-      "earnings": -27129000
-    },
-    {
       "q": "4Q2025",
       "revenue": 190170000,
       "earnings": -9881000
@@ -69,15 +64,34 @@
       "q": "2Q2026",
       "revenue": 201656000,
       "earnings": 2238000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 209254000,
+      "earnings": -7546000
     }
   ],
   "growth": {
-    "q0": 0.84830004,
-    "q1": 0.1667,
-    "y0": 0.56060004,
-    "y1": 0.8301
+    "q0": 0.14819999,
+    "q1": 4.5,
+    "y0": 0.6667,
+    "y1": 0.6864
   },
   "ratings": [
+    {
+      "date": "2026-10-29",
+      "firm": "TD Cowen",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-29",
+      "firm": "BTIG",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "reit"
+    },
     {
       "date": "2026-10-06",
       "firm": "StoneX",
@@ -133,20 +147,6 @@
       "from": "Market Perform",
       "to": "Outperform",
       "action": "up"
-    },
-    {
-      "date": "2026-02-24",
-      "firm": "Piper Sandler",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-02-17",
-      "firm": "Needham",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
     }
   ],
   "holders": [
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.784,
-    "enterprise_value": 2521599744,
-    "ev_ebitda": 103.663,
-    "ev_revenue": 3.291,
+    "enterprise_value": 2614102272,
+    "ev_ebitda": 107.466,
+    "ev_revenue": 3.411,
     "float_shares": 117009007,
     "short_shares": 14215304,
     "short_pct_float": 13.06,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 382,
+  "inst_count": 383,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.02385,
-      "actual": 0.03,
-      "surprise_pct": 25.79
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.04,
@@ -269,6 +263,12 @@
       "estimate": 0.03364,
       "actual": 0.05,
       "surprise_pct": 48.63
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.05545,
+      "actual": 0.07,
+      "surprise_pct": 26.24
     }
   ],
   "insiders": [
@@ -318,43 +318,43 @@
       "date": "2026-06-09"
     },
     {
-      "name": "PEREZ DAVID BRIAN",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 23077,
-      "date": "2026-06-01"
-    },
-    {
-      "name": "KELLY MICHAEL AARON",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 23077,
-      "date": "2026-06-01"
-    },
-    {
-      "name": "GUNN NEIL",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 23077,
-      "date": "2026-06-01"
-    },
-    {
-      "name": "GREEN MARJORIE C",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 22964,
-      "date": "2026-06-01"
-    },
-    {
       "name": "TETRAULT LYNN A.",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 23077,
+      "date": "2026-06-01"
+    },
+    {
+      "name": "WILLIAMS FELICIA",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 23077,
+      "date": "2026-06-01"
+    },
+    {
+      "name": "KANOVSKY STEPHEN MICHAEL",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 23077,
+      "date": "2026-06-01"
+    },
+    {
+      "name": "KENNY JOHN P",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 5893,
+      "date": "2026-06-01"
+    },
+    {
+      "name": "PEREZ DAVID BRIAN",
       "role": "Director",
       "kind": "other",
       "text": null,

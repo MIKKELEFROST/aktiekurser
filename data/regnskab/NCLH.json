@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:25:17.412Z",
+  "updated_at": "2026-10-29T21:27:33.810Z",
   "source": "Yahoo Finance",
   "symbol": "NCLH",
   "summary": "Norwegian Cruise Line Holdings Ltd., together with its subsidiaries, operates as a cruise company in North America, Europe, the Asia-Pacific, and internationally. It offers itineraries to destinations, such as Europe, Asia, Australia, New Zealand, South America, Africa, Canada, Bermuda, the Caribbean, and Alaska; and inter-island itinerary in Hawaii. The company also provides features, amenities, and activities, including various accommodations, dining venues, bars and lounges, spas, casino and retail shopping areas, and entertainment choices; shore excursions at each port of call, and air transportation and hotel packages for stays before or after a voyage. It offers its products and services under the Norwegian Cruise Line, Oceania Cruises, and Regent Seven Seas Cruises brands. The company was founded in 1966 and is based in Miami, Florida.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 0.94068,
+  "eps_estimate": -0.10294,
   "analysts": {
     "strong_buy": 1,
     "buy": 8,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 2938142000,
-      "earnings": 419295000
-    },
-    {
       "q": "4Q2025",
       "revenue": 2244400000,
       "earnings": 14254000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 2640544000,
       "earnings": 222553000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 2946763000,
+      "earnings": 491465000
     }
   ],
   "growth": {
-    "q0": -0.2161,
-    "q1": -1.3676,
+    "q0": -1.3676,
+    "q1": -1.2391,
     "y0": -0.265,
     "y1": -0.0478
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.956,
-    "enterprise_value": 22992926720,
-    "ev_ebitda": 8.863,
-    "ev_revenue": 2.264,
+    "enterprise_value": 23135275008,
+    "ev_ebitda": 8.918,
+    "ev_revenue": 2.278,
     "float_shares": 455349036,
     "short_shares": 89234696,
     "short_pct_float": 22.01,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 869,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.16159,
-      "actual": 1.2,
-      "surprise_pct": 3.31
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.26538,
@@ -269,6 +263,12 @@
       "estimate": 0.39087,
       "actual": 0.48,
       "surprise_pct": 22.8
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.94068,
+      "actual": 1.12,
+      "surprise_pct": 19.06
     }
   ],
   "insiders": [
@@ -318,21 +318,21 @@
       "date": "2026-05-11"
     },
     {
-      "name": "BYNG-THORNE ZILLAH",
-      "role": "Director",
-      "kind": "buy",
-      "text": "Purchase at price 17.67 - 17.83 per share.",
-      "value": 521394,
-      "shares": 29467,
-      "date": "2026-05-07"
-    },
-    {
       "name": "LANSBERRY KEVIN ALLEN",
       "role": "Director",
       "kind": "buy",
       "text": "Purchase at price 17.28 per share.",
       "value": 196992,
       "shares": 11400,
+      "date": "2026-05-07"
+    },
+    {
+      "name": "BYNG-THORNE ZILLAH",
+      "role": "Director",
+      "kind": "buy",
+      "text": "Purchase at price 17.67 - 17.83 per share.",
+      "value": 521394,
+      "shares": 29467,
       "date": "2026-05-07"
     },
     {

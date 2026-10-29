@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:25:17.085Z",
+  "updated_at": "2026-10-29T21:27:33.638Z",
   "source": "Yahoo Finance",
   "symbol": "LENZ",
   "summary": "LENZ Therapeutics, Inc. operates as a commercial pharmaceutical company that focuses on the development and commercialization of therapies to improve vision in the United States. Its product candidates include VIZZ and LNZ101 for the treatment of presbyopia in adults. LENZ Therapeutics, Inc. was formerly known as Presbyopia Therapies, Inc. and changed its name to LENZ Therapeutics, Inc. in June 2021. The company was founded in 2013 and is headquartered in Solana Beach, California.",
@@ -10,14 +10,14 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": -0.95,
+  "eps_estimate": -0.882,
   "analysts": {
     "strong_buy": 0,
-    "buy": 5,
+    "buy": 4,
     "hold": 2,
     "sell": 0,
     "strong_sell": 0,
-    "total": 7
+    "total": 6
   },
   "target_mean": 20,
   "target_high": 50,
@@ -45,11 +45,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 12500000,
-      "earnings": -16700000
-    },
-    {
       "q": "4Q2025",
       "revenue": 1588000,
       "earnings": -35896000
@@ -63,15 +58,27 @@
       "q": "2Q2026",
       "revenue": 5486000,
       "earnings": -31918000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 3384000,
+      "earnings": -30969000
     }
   ],
   "growth": {
-    "q0": -0.6102,
-    "q1": 0.23969999,
+    "q0": 0.23969999,
+    "q1": 0.53029996,
     "y0": -0.4655,
     "y1": 0.3472
   },
   "ratings": [
+    {
+      "date": "2026-10-29",
+      "firm": "TD Cowen",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-21",
       "firm": "TD Cowen",
@@ -131,13 +138,6 @@
     {
       "date": "2026-03-26",
       "firm": "Citigroup",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-03-25",
-      "firm": "B of A Securities",
       "from": "Buy",
       "to": "Buy",
       "action": "main"
@@ -225,9 +225,9 @@
   },
   "extras": {
     "beta": 1.73,
-    "enterprise_value": -120459920,
-    "ev_ebitda": 0.891,
-    "ev_revenue": -5.609,
+    "enterprise_value": -118574696,
+    "ev_ebitda": 0.877,
+    "ev_revenue": -5.522,
     "float_shares": 18392840,
     "short_shares": 9095817,
     "short_pct_float": 47.62,
@@ -240,12 +240,6 @@
   "payout_ratio": null,
   "inst_count": 192,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.69207,
-      "actual": -0.59,
-      "surprise_pct": 14.75
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.92399,
@@ -263,6 +257,12 @@
       "estimate": -1.07477,
       "actual": -1.02,
       "surprise_pct": 5.1
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.95,
+      "actual": -0.99,
+      "surprise_pct": -4.21
     }
   ],
   "insiders": [

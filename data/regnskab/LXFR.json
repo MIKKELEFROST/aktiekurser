@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:25:17.195Z",
+  "updated_at": "2026-10-29T21:27:33.696Z",
   "source": "Yahoo Finance",
   "symbol": "LXFR",
   "summary": "Luxfer Holdings PLC, together with its subsidiaries, develops and manufactures high-performance materials, components, and high-pressure gas containment devices. The company operates through two segments: Gas Cylinders and Elektron. The Gas Cylinders segment manufactures and markets specialized highly engineered containment solutions using aluminum alloys and carbon composite technologies. It offers carbon composite high-pressure, aerospace and aviation, space-related, aluminum and composite medical gas, and specialty aluminum cylinders used for emergency response, healthcare, alternative fuel transportation, aerospace comprising commercial aviation, defense, and space markets. The Elektron segment focuses on specialty materials based primarily on magnesium and zirconium. This segment offers advanced lightweight magnesium alloys; magnesium powders for use in countermeasure flares, defense applications, infrared decoys, and heater meals; and zirconium-based chemicals and oxides used as catalysts converters, industrial catalysis, advanced ceramics, specialty glass, fuel cell components, pharmaceuticals, and other performance-critical applications. The company operates in the United States, the United Kingdom, Japan, Canada, Germany, rest of Europe, the Asia Pacific, and the rest of the world. Luxfer Holdings PLC was founded in 1898 and is based in Riverside, California.",
@@ -7,10 +7,10 @@
   "website": "https://www.luxfer.com",
   "employees": 1350,
   "ceo": "Mr. Andrew William John Butcher",
-  "next_earnings": "2026-10-30",
-  "earnings_estimated": true,
-  "earnings_call": "2026-07-29",
-  "eps_estimate": 0.275,
+  "next_earnings": "2026-10-28",
+  "earnings_estimated": false,
+  "earnings_call": null,
+  "eps_estimate": 0.32,
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 92900000,
-      "earnings": 2500000
-    },
-    {
       "q": "4Q2025",
       "revenue": 90700000,
       "earnings": -3100000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 95700000,
       "earnings": 4800000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 91700000,
+      "earnings": 900000
     }
   ],
   "growth": {
-    "q0": -0.0833,
-    "q1": 0.1429,
+    "q0": 0.1429,
+    "q1": 0.22219999,
     "y0": -0.081099994,
     "y1": 0.3971
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.106,
-    "enterprise_value": 519764512,
-    "ev_ebitda": 11.398,
-    "ev_revenue": 1.44,
+    "enterprise_value": 519496896,
+    "ev_ebitda": 11.392,
+    "ev_revenue": 1.439,
     "float_shares": 26225662,
     "short_shares": 454833,
     "short_pct_float": 1.72,
@@ -246,12 +246,6 @@
   "payout_ratio": 1.3,
   "inst_count": 204,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.25,
-      "actual": 0.3,
-      "surprise_pct": 20
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.24,
@@ -269,6 +263,12 @@
       "estimate": 0.28,
       "actual": 0.29,
       "surprise_pct": 3.57
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.275,
+      "actual": 0.25,
+      "surprise_pct": -9.09
     }
   ],
   "insiders": [],

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:25:18.718Z",
+  "updated_at": "2026-10-29T21:27:34.820Z",
   "source": "Yahoo Finance",
   "symbol": "QSR",
   "summary": "Restaurant Brands International Inc. operates as a quick service restaurant company in Canada, the United States, and internationally. It operates through six segments: Tim Hortons, Burger King, Popeyes Louisiana Kitchen, Firehouse Subs, International, and Restaurant Holdings. The company owns and franchises Tim Hortons, a coffee and baked good restaurant chain that offers beverages, sandwiches, wraps, flatbread pizzas, and others; Burger King, a quick service hamburger restaurant chain that offers flame-grilled hamburgers, chicken, and other sandwiches; Popeyes, a quick service chicken concept that offers a Louisiana style menu, including fried bone-in chicken, chicken sandwiches, chicken tenders, wings, fried shrimp, and regional items; and Firehouse Subs, which offers subs with meats and cheese, as well as chili, soups, soft drinks, and other sides. Restaurant Brands International Inc. was founded in 1954 and is headquartered in Miami, Florida.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 1.08436,
+  "eps_estimate": 1.0438,
   "analysts": {
     "strong_buy": 2,
     "buy": 15,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 2449000000,
-      "earnings": 436000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 2466000000,
       "earnings": 155000000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 2520000000,
       "earnings": 665000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 2525000000,
+      "earnings": 704000000
     }
   ],
   "growth": {
-    "q0": 0.052800003,
-    "q1": 0.087299995,
+    "q0": 0.087299995,
+    "q1": 0.100600004,
     "y0": 0.1004,
     "y1": 0.0879
   },
   "ratings": [
+    {
+      "date": "2026-10-29",
+      "firm": "TD Cowen",
+      "from": "Hold",
+      "to": "Hold",
+      "action": "reit"
+    },
     {
       "date": "2026-10-20",
       "firm": "Citigroup",
@@ -139,13 +146,6 @@
       "firm": "Citigroup",
       "from": "Neutral",
       "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-08",
-      "firm": "Scotiabank",
-      "from": "Sector Perform",
-      "to": "Sector Perform",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.535,
-    "enterprise_value": 41898610688,
-    "ev_ebitda": 14.329,
-    "ev_revenue": 4.32,
+    "enterprise_value": 42083450880,
+    "ev_ebitda": 14.392,
+    "ev_revenue": 4.339,
     "float_shares": 317593044,
     "short_shares": 17052158,
     "short_pct_float": 5.69,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.6382,
   "inst_count": 868,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.00103,
-      "actual": 1.03,
-      "surprise_pct": 2.89
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.94757,
@@ -269,98 +263,104 @@
       "estimate": 1.03643,
       "actual": 1.07,
       "surprise_pct": 3.24
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.08436,
+      "actual": 1.1,
+      "surprise_pct": 1.44
     }
   ],
   "insiders": [
     {
-      "name": "SCHWAN AXEL MR",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 81.14 per share.",
-      "value": 4671716,
-      "shares": 57574,
-      "date": "2026-09-04"
-    },
-    {
-      "name": "SCHWAN AXEL MR",
-      "role": "Officer",
+      "name": "Restaurant Brands International Inc",
+      "role": "Issuer",
       "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 58.44 - 64.75 per share.",
-      "value": 4280100,
-      "shares": 70000,
-      "date": "2026-09-04"
+      "text": "Redemption, retraction, cancelation, repurchase at price 71.36 per share.",
+      "value": 999967,
+      "shares": 14013,
+      "date": "2026-09-30"
     },
     {
-      "name": "CURTIS THOMAS BENJAMIN IV",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 80.72 per share.",
-      "value": 5166048,
-      "shares": 64000,
-      "date": "2026-08-21"
-    },
-    {
-      "name": "HOUSMAN JEFFREY",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 73.48 per share.",
-      "value": 1469616,
-      "shares": 20000,
-      "date": "2026-03-20"
-    },
-    {
-      "name": "HOUSMAN JEFFREY",
-      "role": "Officer",
+      "name": "Restaurant Brands International Inc",
+      "role": "Issuer",
       "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 55.55 per share.",
-      "value": 1111000,
-      "shares": 20000,
-      "date": "2026-03-20"
+      "text": "Redemption, retraction, cancelation, repurchase at price 71.44 per share.",
+      "value": 999945,
+      "shares": 13997,
+      "date": "2026-09-29"
     },
     {
-      "name": "KOBZA JOSHUA",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 75.05 per share.",
-      "value": 15009900,
-      "shares": 200000,
-      "date": "2026-03-18"
-    },
-    {
-      "name": "GRANAT JILL M",
-      "role": "General Counsel",
-      "kind": "sell",
-      "text": "Sale at price 74.76 - 75.09 per share.",
-      "value": 3746040,
-      "shares": 50000,
-      "date": "2026-03-18"
-    },
-    {
-      "name": "KOBZA JOSHUA",
-      "role": "Chief Executive Officer",
+      "name": "Restaurant Brands International Inc",
+      "role": "Issuer",
       "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 56.92 per share.",
-      "value": 11384000,
-      "shares": 200000,
-      "date": "2026-03-18"
+      "text": null,
+      "value": null,
+      "shares": 28053,
+      "date": "2026-09-29"
     },
     {
-      "name": "GRANAT JILL M",
-      "role": "General Counsel",
+      "name": "Restaurant Brands International Inc",
+      "role": "Issuer",
       "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 56.92 per share.",
-      "value": 2846000,
-      "shares": 50000,
-      "date": "2026-03-18"
+      "text": "Redemption, retraction, cancelation, repurchase at price 71.44 per share.",
+      "value": 1000017,
+      "shares": 13998,
+      "date": "2026-09-28"
     },
     {
-      "name": "SIDDIQUI SAMI A",
-      "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 74.51 - 75.28 per share.",
-      "value": 5991680,
-      "shares": 80000,
-      "date": "2026-03-17"
+      "name": "Restaurant Brands International Inc",
+      "role": "Issuer",
+      "kind": "other",
+      "text": "Redemption, retraction, cancelation, repurchase at price 71.15 per share.",
+      "value": 1000013,
+      "shares": 14055,
+      "date": "2026-09-25"
+    },
+    {
+      "name": "Restaurant Brands International Inc",
+      "role": "Issuer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 69332,
+      "date": "2026-09-25"
+    },
+    {
+      "name": "Restaurant Brands International Inc",
+      "role": "Issuer",
+      "kind": "other",
+      "text": "Redemption, retraction, cancelation, repurchase at price 71.24 per share.",
+      "value": 999995,
+      "shares": 14037,
+      "date": "2026-09-24"
+    },
+    {
+      "name": "Restaurant Brands International Inc",
+      "role": "Issuer",
+      "kind": "other",
+      "text": "Redemption, retraction, cancelation, repurchase at price 71.74 per share.",
+      "value": 999912,
+      "shares": 13938,
+      "date": "2026-09-23"
+    },
+    {
+      "name": "Restaurant Brands International Inc",
+      "role": "Issuer",
+      "kind": "other",
+      "text": "Redemption, retraction, cancelation, repurchase at price 72.57 per share.",
+      "value": 999942,
+      "shares": 13779,
+      "date": "2026-09-22"
+    },
+    {
+      "name": "Restaurant Brands International Inc",
+      "role": "Issuer",
+      "kind": "other",
+      "text": "Redemption, retraction, cancelation, repurchase at price 72.66 per share.",
+      "value": 999946,
+      "shares": 13762,
+      "date": "2026-09-21"
     }
   ],
   "dividends": [

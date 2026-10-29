@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:25:18.435Z",
+  "updated_at": "2026-10-29T21:27:34.571Z",
   "source": "Yahoo Finance",
   "symbol": "VMC",
   "summary": "Vulcan Materials Company produces and supplies construction aggregates in the United States. It operates through three segments: Aggregates, Asphalt, and Concrete. The company provides crushed stone, sand and gravel, sand, and other aggregates for use in construction and maintenance of highways, streets, and other public works, as well as in the construction of housing and commercial, industrial, and other nonresidential facilities; aggregates that are used as ballast for construction and maintenance of railroad tracks; riprap and jetty stones for use in erosion control along roads and waterways; asphalt mix; asphalt construction paving services; and ready-mixed concrete products. The company was formerly known as Virginia Holdco, Inc. and changed its name to Vulcan Materials Company. Vulcan Materials Company was founded in 1909 and is headquartered in Birmingham, Alabama.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 2.82428,
+  "eps_estimate": 2.0684,
   "analysts": {
     "strong_buy": 2,
     "buy": 14,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 24
   },
-  "target_mean": 307.26086,
+  "target_mean": 306.69565,
   "target_high": 365,
   "target_low": 238,
   "target_analysts": 23,
@@ -51,16 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 2102400000,
-      "earnings": 320900000
-    },
-    {
-      "q": "3Q2025",
-      "revenue": 2291500000,
-      "earnings": 374900000
-    },
-    {
       "q": "4Q2025",
       "revenue": 1912600000,
       "earnings": 252000000
@@ -69,13 +59,23 @@
       "q": "1Q2026",
       "revenue": 1755900000,
       "earnings": 165500000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 2155800000,
+      "earnings": 323400000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 2184600000,
+      "earnings": 362300000
     }
   ],
   "growth": {
-    "q0": -0.0055,
-    "q1": 0.22,
-    "y0": 0.1038,
-    "y1": 0.1578
+    "q0": 0.2167,
+    "q1": 0.081499994,
+    "y0": 0.102,
+    "y1": 0.1598
   },
   "ratings": [
     {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.046,
-    "enterprise_value": 38786220032,
-    "ev_ebitda": 16.573,
-    "ev_revenue": 4.779,
+    "enterprise_value": 39110164480,
+    "ev_ebitda": 16.712,
+    "ev_revenue": 4.819,
     "float_shares": 129155017,
     "short_shares": 4247396,
     "short_pct_float": 3.79,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-11-09",
   "dividend_date": null,
   "payout_ratio": 0.2382,
-  "inst_count": 1441,
+  "inst_count": 1439,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 2.71898,
-      "actual": 2.84,
-      "surprise_pct": 4.45
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 2.11143,
@@ -269,6 +263,12 @@
       "estimate": 2.46866,
       "actual": 2.59,
       "surprise_pct": 4.92
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 2.81053,
+      "actual": 2.83,
+      "surprise_pct": 0.69
     }
   ],
   "insiders": [
@@ -318,12 +318,12 @@
       "date": "2026-06-12"
     },
     {
-      "name": "PERKINS JERRY F. JR.",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 9560,
+      "name": "ANDERSON MELISSA HANFT",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 303.72 per share.",
+      "value": 345330,
+      "shares": 1137,
       "date": "2026-02-20"
     },
     {
@@ -354,12 +354,12 @@
       "date": "2026-02-20"
     },
     {
-      "name": "BAKER THOMPSON S II",
-      "role": "President",
+      "name": "PERKINS JERRY F. JR.",
+      "role": "Officer",
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 2570,
+      "shares": 9560,
       "date": "2026-02-20"
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:25:16.403Z",
+  "updated_at": "2026-10-29T21:27:33.205Z",
   "source": "Yahoo Finance",
   "symbol": "FPI",
   "summary": "Farmland Partners Inc. is an internally managed real estate company that owns and seeks to acquire high-quality North American farmland and makes loans to third-party farmers (both tenant and non-tenant) and landowners secured by farm real estate and/or other agricultural related assets. As of September 30, 2026, the Company owned approximately 70,000 acres of farmland in 11 states, including Arkansas, California, Colorado, Illinois, Indiana, Louisiana, Missouri, Nebraska, South Carolina, Texas and West Virginia. In addition, the Company owns land and buildings for four agriculture equipment dealerships in Ohio leased to Ag Pro under the John Deere brand. The Company elected to be taxed as a real estate investment trust, or REIT, for U.S. federal income tax purposes, commencing with the taxable year ended December 31, 2014. Farmland Partners Inc. was established on September 27, 2013, and is based in Denver, United States.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-28",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 0.02,
+  "eps_estimate": 0.16,
   "analysts": {
     "strong_buy": 0,
     "buy": 0,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 11251000,
-      "earnings": -128000
-    },
-    {
       "q": "4Q2025",
       "revenue": 20715000,
       "earnings": 20817000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 9397000,
       "earnings": 3079000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 9777000,
+      "earnings": -15438000
     }
   ],
   "growth": {
-    "q0": -0.38459998,
-    "q1": -0.177,
+    "q0": -0.177,
+    "q1": -0.3438,
     "y0": null,
     "y1": null
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.701,
-    "enterprise_value": 663588864,
-    "ev_ebitda": 24.783,
-    "ev_revenue": 12.995,
+    "enterprise_value": 655348416,
+    "ev_ebitda": 24.475,
+    "ev_revenue": 12.834,
     "float_shares": 39851188,
     "short_shares": 3910834,
     "short_pct_float": 11.03,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.5882,
   "inst_count": 259,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.01,
-      "actual": 0.0325,
-      "surprise_pct": 425
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.18,
@@ -269,6 +263,12 @@
       "estimate": 0.03,
       "actual": 0.0075,
       "surprise_pct": -75
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.02,
+      "actual": -0.0791,
+      "surprise_pct": -495.5
     }
   ],
   "insiders": [

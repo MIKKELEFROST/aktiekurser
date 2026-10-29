@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:25:17.235Z",
+  "updated_at": "2026-10-29T21:27:33.706Z",
   "source": "Yahoo Finance",
   "symbol": "MA",
   "summary": "Mastercard Incorporated, a technology company, provides transaction processing and other payment-related products and services in the United States and internationally. The company offers products and services for account holders, merchants, financial institutions, digital partners, businesses, governments, and other organizations, such as programs that enable issuers to provide consumers with credits to defer payments; payment products and solutions that allow its customers to access funds in deposit and other accounts; prepaid programs services; consumer bill payment services; and commercial credit, debit, and prepaid payment products and solutions. It also provides solutions that enable businesses or governments to make payments to businesses, including Virtual Card Number, which is generated dynamically from an existing account and leverages the credit limit of the funding account; and a platform to optimize supplier payment enablement campaigns for financial institutions. In addition, the company offers Mastercard Move, which partners with digital messaging and payment platforms to enable consumers to send money directly within applications to other consumers; and partners with central banks, fintechs, and financial institutions, as well as enables various cross-border payment flows. Further, it provides security solutions; marketing, personalization, and issuer and merchant loyalty services; business and operational intelligence, advanced analytics and AI, consulting and agentic solutions, and payments and portfolio optimization; digital and authentication; processing and gateway solutions; and other solutions. The company offers payment solutions and services under the MasterCard, Maestro, and Cirrus names. Mastercard Incorporated was founded in 1966 and is headquartered in Purchase, New York.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 5.17079,
+  "eps_estimate": 5.17694,
   "analysts": {
     "strong_buy": 9,
     "buy": 27,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 8602000000,
-      "earnings": 3927000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 8806000000,
       "earnings": 4060000000
@@ -69,12 +64,17 @@
       "q": "2Q2026",
       "revenue": 9277000000,
       "earnings": 4388000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 9807000000,
+      "earnings": 4628000000
     }
   ],
   "growth": {
-    "q0": 0.18049999,
-    "q1": 0.0876,
-    "y0": 0.1731,
+    "q0": 0.0876,
+    "q1": 0.1243,
+    "y0": 0.1732,
     "y1": 0.15609999
   },
   "ratings": [
@@ -160,9 +160,9 @@
     {
       "name": "Mastercard Foundation Asset Management Corp",
       "kind": "institution",
-      "pct": 6.94,
-      "shares": 60347774,
-      "date": "2026-06-30"
+      "pct": 6.61,
+      "shares": 57440974,
+      "date": "2026-09-30"
     },
     {
       "name": "Vanguard Capital Management LLC",
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.76,
-    "enterprise_value": 547263676416,
-    "ev_ebitda": 24.65,
-    "ev_revenue": 15.599,
+    "enterprise_value": 547666624512,
+    "ev_ebitda": 24.669,
+    "ev_revenue": 15.611,
     "float_shares": 868344853,
     "short_shares": 6991998,
     "short_pct_float": 0.8,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-10-09",
   "dividend_date": null,
   "payout_ratio": 0.17930001,
-  "inst_count": 4825,
+  "inst_count": 4833,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 4.31425,
-      "actual": 4.38,
-      "surprise_pct": 1.52
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 4.24031,
@@ -269,24 +263,30 @@
       "estimate": 4.77606,
       "actual": 5.04,
       "surprise_pct": 5.53
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 5.17079,
+      "actual": 5.31,
+      "surprise_pct": 2.69
     }
   ],
   "insiders": [
     {
       "name": "LING HAI",
       "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 620.00 per share.",
-      "value": 2676540,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 112.31 per share.",
+      "value": 484842,
       "shares": 4317,
       "date": "2026-10-16"
     },
     {
       "name": "LING HAI",
       "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 112.31 per share.",
-      "value": 484842,
+      "kind": "sell",
+      "text": "Sale at price 620.00 per share.",
+      "value": 2676540,
       "shares": 4317,
       "date": "2026-10-16"
     },
@@ -345,21 +345,21 @@
       "date": "2026-08-17"
     },
     {
-      "name": "MIEBACH MICHAEL",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 575.00 per share.",
-      "value": 8838900,
-      "shares": 15372,
-      "date": "2026-08-05"
-    },
-    {
       "name": "SACHIN J. MEHRA",
       "role": "Officer",
       "kind": "sell",
       "text": "Sale at price 569.18 - 576.96 per share.",
       "value": 1715602,
       "shares": 3000,
+      "date": "2026-08-05"
+    },
+    {
+      "name": "MIEBACH MICHAEL",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 575.00 per share.",
+      "value": 8838900,
+      "shares": 15372,
       "date": "2026-08-05"
     }
   ],

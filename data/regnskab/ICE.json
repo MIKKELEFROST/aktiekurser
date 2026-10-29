@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:25:16.822Z",
+  "updated_at": "2026-10-29T21:27:33.449Z",
   "source": "Yahoo Finance",
   "symbol": "ICE",
   "summary": "Intercontinental Exchange, Inc., together with its subsidiaries, provides technology and data to financial institutions, corporations, and government entities in the United States, the United Kingdom, the European Union, Canada, Asia Pacific, and the Middle East. It operates through three segments: Exchanges, Fixed Income and Data Services, and Mortgage Technology. The Exchanges segment operates regulated marketplace technology for the listing, trading, and clearing of an array of derivatives contracts and financial securities, such as commodities, interest rates, foreign exchange and equities, and corporate and exchange-traded funds, as well as data and connectivity services related to its exchanges and clearing houses. The Fixed Income and Data Services segment provides fixed income pricing, reference data, indices, analytics, and execution services, as well as global CDS clearing and multi-asset class data delivery technology. The Mortgage Technology segment offers a technology platform that provides customers comprehensive and digital workflow tools to address inefficiencies and mitigate risks that exist in the U.S. residential mortgage market life cycle from application through closing, servicing, and the secondary market. The company was founded in 2000 and is headquartered in Atlanta, Georgia.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 1.97067,
+  "eps_estimate": 1.97181,
   "analysts": {
     "strong_buy": 5,
     "buy": 8,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 2411000000,
-      "earnings": 816000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 2504000000,
       "earnings": 851000000
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 2666000000,
       "earnings": 958000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 2765000000,
+      "earnings": 940000000
     }
   ],
   "growth": {
-    "q0": 0.1524,
-    "q1": 0.1531,
+    "q0": 0.1531,
+    "q1": -0.055999998,
     "y0": 0.1774,
-    "y1": 0.0858
+    "y1": 0.0857
   },
   "ratings": [
     {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.944,
-    "enterprise_value": 106824155136,
-    "ev_ebitda": 15.911,
-    "ev_revenue": 10.118,
+    "enterprise_value": 107116085248,
+    "ev_ebitda": 15.954,
+    "ev_revenue": 10.145,
     "float_shares": 557487181,
     "short_shares": 5885505,
     "short_pct_float": 1.18,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-12-16",
   "dividend_date": null,
   "payout_ratio": 0.2821,
-  "inst_count": 2303,
+  "inst_count": 2304,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.60658,
-      "actual": 1.71,
-      "surprise_pct": 6.44
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.67277,
@@ -269,6 +263,12 @@
       "estimate": 1.83828,
       "actual": 1.9,
       "surprise_pct": 3.36
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.97067,
+      "actual": 2.02,
+      "surprise_pct": 2.5
     }
   ],
   "insiders": [
@@ -284,19 +284,10 @@
     {
       "name": "JACKSON BENJAMIN",
       "role": "President",
-      "kind": "sell",
-      "text": "Sale at price 159.68 - 161.05 per share.",
-      "value": 2059064,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 57.31 per share.",
+      "value": 737121,
       "shares": 12862,
-      "date": "2026-09-01"
-    },
-    {
-      "name": "EDMONDS CHRISTOPHER SCOTT",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 160.59 per share.",
-      "value": 802950,
-      "shares": 5000,
       "date": "2026-09-01"
     },
     {
@@ -309,11 +300,20 @@
       "date": "2026-09-01"
     },
     {
+      "name": "EDMONDS CHRISTOPHER SCOTT",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 160.59 per share.",
+      "value": 802950,
+      "shares": 5000,
+      "date": "2026-09-01"
+    },
+    {
       "name": "JACKSON BENJAMIN",
       "role": "President",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 57.31 per share.",
-      "value": 737121,
+      "kind": "sell",
+      "text": "Sale at price 159.68 - 161.05 per share.",
+      "value": 2059064,
       "shares": 12862,
       "date": "2026-09-01"
     },
@@ -356,10 +356,10 @@
     {
       "name": "KAPANI MAYUR",
       "role": "Chief Technology Officer",
-      "kind": "sell",
-      "text": "Sale at price 149.83 - 151.78 per share.",
-      "value": 645763,
-      "shares": 4271,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 57.31 - 67.00 per share.",
+      "value": 459692,
+      "shares": 7299,
       "date": "2026-08-12"
     }
   ],

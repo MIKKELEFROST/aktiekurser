@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:25:17.887Z",
+  "updated_at": "2026-10-29T21:27:34.168Z",
   "source": "Yahoo Finance",
   "symbol": "RYZ",
   "summary": "Ryerson Holding Corporation, together with its subsidiaries, processes and distributes industrial metals in the United States and internationally. It offers a line of products in carbon steel, stainless steel, alloy steels, and aluminum, as well as nickel and red metals in various shapes and forms, including coils, sheets, rounds, hexagons, square and flat bars, plates, structural, and tubing. The company also provides processing services. It serves commercial transportation, fabrication and welding, machinery and equipment, consumer products, heavy equipment, climate, power, and machine shop industries. Ryerson Holding Corporation was founded in 1842 and is headquartered in Chicago, Illinois.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-28",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 0.46,
+  "eps_estimate": null,
   "analysts": {
     "strong_buy": 0,
     "buy": 0,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 1169300000,
-      "earnings": 0
-    },
-    {
       "q": "4Q2025",
       "revenue": 1104800000,
       "earnings": 0
@@ -69,10 +64,15 @@
       "q": "2Q2026",
       "revenue": 2006200000,
       "earnings": 0
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 2177800000,
+      "earnings": 32000000
     }
   ],
   "growth": {
-    "q0": 2,
+    "q0": null,
     "q1": null,
     "y0": 1.9006,
     "y1": 0.6797
@@ -168,9 +168,9 @@
   },
   "extras": {
     "beta": 1.608,
-    "enterprise_value": 2840206592,
-    "ev_ebitda": 23.11,
-    "ev_revenue": 0.486,
+    "enterprise_value": 2857332992,
+    "ev_ebitda": 23.249,
+    "ev_revenue": 0.489,
     "float_shares": 45607498,
     "short_shares": 1531991,
     "short_pct_float": 3.15,
@@ -183,12 +183,6 @@
   "payout_ratio": 1.1865001,
   "inst_count": 292,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.1,
-      "actual": -0.46,
-      "surprise_pct": -560
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.65,
@@ -206,6 +200,12 @@
       "estimate": 0.43,
       "actual": 0.52,
       "surprise_pct": 20.93
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.46,
+      "actual": 0.61,
+      "surprise_pct": 32.61
     }
   ],
   "insiders": [

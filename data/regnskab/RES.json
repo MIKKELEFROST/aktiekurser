@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:25:17.798Z",
+  "updated_at": "2026-10-29T21:27:34.095Z",
   "source": "Yahoo Finance",
   "symbol": "RES",
   "summary": "RPC, Inc., together with its subsidiaries, engages provision of a range of oilfield services and equipment for the oil and gas companies involved in the exploration, production, and development of oil and gas properties. The company operates through Technical Services and Support Services segments. The Technical Services segment offers pressure pumping, cementing, downhole tools, coiled tubing, snubbing, nitrogen, well control, wireline, and fishing services that are used in the completion, production, and maintenance of wells, as well as well control training. The Support Services segment provides a range of rental tools drill pipe and related tools, as well as pipe handling, pipe inspection and storage services. It rents its tools for use with onshore and offshore oil and gas well drilling, completion, and workover activities. It operates in Africa, Canada, Argentina, Mexico, Latin America, and the Middle East. The company was incorporated in 1984 and is headquartered in Atlanta, Georgia.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 0.098,
+  "eps_estimate": 0.0625,
   "analysts": {
     "strong_buy": 1,
     "buy": 0,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 447103000,
-      "earnings": 12963000
-    },
-    {
       "q": "4Q2025",
       "revenue": 425777000,
       "earnings": -3061000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 460869000,
       "earnings": 12075000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 467735000,
+      "earnings": -41929000
     }
   ],
   "growth": {
-    "q0": 0.0889,
-    "q1": 0.5625,
+    "q0": 0.5625,
+    "q1": 1,
     "y0": 0.13,
     "y1": 0.0354
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.859,
-    "enterprise_value": 1310402688,
-    "ev_ebitda": 5.811,
-    "ev_revenue": 0.733,
+    "enterprise_value": 1338726656,
+    "ev_ebitda": 5.936,
+    "ev_revenue": 0.749,
     "float_shares": 85623687,
     "short_shares": 15544485,
     "short_pct_float": 41.17,
@@ -246,12 +246,6 @@
   "payout_ratio": 1.4545,
   "inst_count": 305,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.062,
-      "actual": 0.09,
-      "surprise_pct": 45.16
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.06283,
@@ -269,6 +263,12 @@
       "estimate": 0.04,
       "actual": 0.08,
       "surprise_pct": 100
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.098,
+      "actual": 0.1,
+      "surprise_pct": 2.04
     }
   ],
   "insiders": [

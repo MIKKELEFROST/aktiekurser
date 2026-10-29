@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:25:18.808Z",
+  "updated_at": "2026-10-29T21:27:34.877Z",
   "source": "Yahoo Finance",
   "symbol": "TROW",
   "summary": "T. Rowe Price Group, Inc. is a publicly owned investment manager. The firm provides its services to individuals, institutional investors, retirement plans, financial intermediaries, and institutions. It launches and manages equity and fixed income mutual funds. The firm invests in the public equity and fixed income markets across the globe. It employs fundamental and quantitative analysis with a bottom-up approach. The firm utilizes in-house and external research to make its investments. It employs socially responsible investing with a focus on environmental, social, and governance issues. It makes investment in late-stage venture capital transactions and usually invests between $3 million and $5 million. The firm was previously known as T. Rowe Group, Inc. and T. Rowe Price Associates, Inc. T. Rowe Price Group, Inc. was founded in 1937 and is based in Baltimore, Maryland, with additional offices in North America, Europe, Asia, Australia.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 2.64946,
+  "eps_estimate": 2.43566,
   "analysts": {
     "strong_buy": 0,
     "buy": 0,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 1908500000,
-      "earnings": 631400000
-    },
-    {
       "q": "4Q2025",
       "revenue": 1941500000,
       "earnings": 434200000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 1912300000,
       "earnings": 616000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 2009300000,
+      "earnings": 595100000
     }
   ],
   "growth": {
-    "q0": -0.0571,
-    "q1": -0.0018000001,
+    "q0": -0.0018000001,
+    "q1": 0.0162,
     "y0": 0.0467,
     "y1": 0.004
   },
@@ -223,17 +223,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 32,
+    "buys": 33,
     "sells": 2,
-    "bought": 122954,
+    "bought": 127371,
     "sold": 13000,
-    "net_pct": 3.1
+    "net_pct": 3.3
   },
   "extras": {
     "beta": 1.471,
-    "enterprise_value": 20492521472,
-    "ev_ebitda": 6.914,
-    "ev_revenue": 2.699,
+    "enterprise_value": 20571449344,
+    "ev_ebitda": 6.941,
+    "ev_revenue": 2.71,
     "float_shares": 209211653,
     "short_shares": 25497774,
     "short_pct_float": 13.88,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-09-15",
   "dividend_date": null,
   "payout_ratio": 0.5161,
-  "inst_count": 1570,
+  "inst_count": 1574,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 2.54298,
-      "actual": 2.81,
-      "surprise_pct": 10.5
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 2.46436,
@@ -269,9 +263,24 @@
       "estimate": 2.51844,
       "actual": 2.57,
       "surprise_pct": 2.05
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 2.64946,
+      "actual": 2.86,
+      "surprise_pct": 7.95
     }
   ],
   "insiders": [
+    {
+      "name": "MACLELLAN ROBERT FRANCIS",
+      "role": "Director",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 62.85 per share.",
+      "value": 277590,
+      "shares": 4417,
+      "date": "2026-10-27"
+    },
     {
       "name": "STEVENS ROBERT J",
       "role": "Director",
@@ -352,15 +361,6 @@
       "value": 6357,
       "shares": 60,
       "date": "2026-09-29"
-    },
-    {
-      "name": "NELSON JOSHUA B.",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 111.82 per share.",
-      "value": 1118203,
-      "shares": 10000,
-      "date": "2026-08-25"
     }
   ],
   "dividends": [

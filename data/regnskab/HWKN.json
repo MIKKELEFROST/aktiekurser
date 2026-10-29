@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:25:16.795Z",
+  "updated_at": "2026-10-29T21:27:33.433Z",
   "source": "Yahoo Finance",
   "symbol": "HWKN",
   "summary": "Hawkins, Inc. operates as a water treatment and specialty ingredients company in the United States. The company operates through three segments: Water Treatment, Food and Health Sciences, and Industrial Solutions. The Water Treatment segment provides chemicals, filtration media and systems, equipment, services and solutions for potable water, municipal and industrial wastewater, industrial process water, non-residential swimming pool water, and agricultural water. This segment also sells and services equipment, including tanks, valves, and pumps. The Food and Health Sciences segment provide ingredient distribution, processing, and formulation solutions, such as base chemistry, acid-based reactions, minerals, vitamins and amino acids, excipients, botanicals and herbs, sweeteners and enzymes, fertilizers, and food-grade and pharmaceutical salts and ingredients to nutrition, food, pharmaceutical, and agricultural markets. The Industrial Solutions segment offers industrial chemicals, products, and services such as acids and alkalis, liquid caustic soda, sulfuric acid, hydrochloric acid, urea, phosphoric acid, aqua ammonia, and potassium hydroxide to industrial manufacturing, chemical processing, electronics, energy, plating, and surface finishing industries. It also repackages water treatment chemicals and bulk industrial chemicals; and performs custom blending of chemicals. Hawkins, Inc. was founded in 1938 and is headquartered in Roseville, Minnesota.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-26",
   "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": 0.73,
+  "eps_estimate": 0.709,
   "analysts": {
     "strong_buy": 2,
     "buy": 0,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 3
   },
-  "target_mean": 174,
+  "target_mean": 176.75,
   "target_high": 200,
-  "target_low": 141,
+  "target_low": 157,
   "target_analysts": 4,
   "statements": [
     {
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.0481,
-    "q1": 0.134,
-    "y0": 0.0402,
-    "y1": 0.1384
+    "q0": 0.0179,
+    "q1": -0.0507,
+    "y0": 0.038399998,
+    "y1": 0.1486
   },
   "ratings": [
+    {
+      "date": "2026-10-29",
+      "firm": "Barclays",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
     {
       "date": "2026-10-27",
       "firm": "BWS Financial",
@@ -140,13 +147,6 @@
       "from": "Buy",
       "to": "Buy",
       "action": "main"
-    },
-    {
-      "date": "2025-07-24",
-      "firm": "Raymond James",
-      "from": null,
-      "to": "Market Perform",
-      "action": "init"
     }
   ],
   "holders": [
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.737,
-    "enterprise_value": 3434510848,
-    "ev_ebitda": 19.553,
-    "ev_revenue": 3.014,
+    "enterprise_value": 3438877184,
+    "ev_ebitda": 19.578,
+    "ev_revenue": 3.018,
     "float_shares": 19917756,
     "short_shares": 1322510,
     "short_pct_float": 7.9,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-11-10",
   "dividend_date": null,
   "payout_ratio": 0.1869,
-  "inst_count": 421,
+  "inst_count": 417,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -300,34 +300,7 @@
       "date": "2026-08-07"
     },
     {
-      "name": "SCHUMACHER MARY J",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 721,
-      "date": "2026-07-29"
-    },
-    {
-      "name": "THOMPSON JAMES THEODORE",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 721,
-      "date": "2026-07-29"
-    },
-    {
       "name": "FAULCONBRIDGE JAMES A",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 721,
-      "date": "2026-07-29"
-    },
-    {
-      "name": "WRIGHT JEFFREY LON",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -355,6 +328,33 @@
     },
     {
       "name": "TANG YI",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 721,
+      "date": "2026-07-29"
+    },
+    {
+      "name": "WRIGHT JEFFREY LON",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 721,
+      "date": "2026-07-29"
+    },
+    {
+      "name": "SCHUMACHER MARY J",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 721,
+      "date": "2026-07-29"
+    },
+    {
+      "name": "THOMPSON JAMES THEODORE",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
