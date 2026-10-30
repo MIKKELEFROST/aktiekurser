@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:34.114Z",
+  "updated_at": "2026-10-30T21:09:25.537Z",
   "source": "Yahoo Finance",
   "symbol": "RIVN",
   "summary": "Rivian Automotive, Inc., together with its subsidiaries, develops, manufactures, and sells category-defining electric vehicles. It operates through two segments, Automotive, and Software and Services. The company offers consumer vehicles, including a two-row, five-passenger pickup truck under the R1T brand; and a three-row, seven-passenger sport utility vehicle under the R1S name. It also provides software and services, such as vehicle electrical architecture and software development, as well as Autonomy+, remarketing, vehicle repair and maintenance services, software subscriptions, vehicle accessories, financing, insurance, and other services. In addition, the company designs, develops, and manufactures the Rivian Adventure Network Direct Current fast chargers; and FleetOS, a proprietary, end-to-end centralized fleet management subscription platform. Further, it offers Rivian Commercial Van platform for Electric Delivery Van with collaboration with Amazon.com, Inc. Rivian Automotive, Inc. was founded in 2009 and is based in Irvine, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": -0.64872,
+  "eps_estimate": -0.53601,
   "analysts": {
     "strong_buy": 4,
     "buy": 8,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 1558000000,
-      "earnings": -1173000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 1286000000,
       "earnings": -811000000
@@ -69,15 +64,41 @@
       "q": "2Q2026",
       "revenue": 1658000000,
       "earnings": -833000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 2155000000,
+      "earnings": -913000000
     }
   ],
   "growth": {
-    "q0": 0.0007,
-    "q1": -0.0113,
+    "q0": -0.0113,
+    "q1": 0.1189,
     "y0": 0.086899996,
     "y1": 0.2049
   },
   "ratings": [
+    {
+      "date": "2026-10-30",
+      "firm": "Jefferies",
+      "from": "Hold",
+      "to": "Buy",
+      "action": "up"
+    },
+    {
+      "date": "2026-10-30",
+      "firm": "Cantor Fitzgerald",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-30",
+      "firm": "Needham",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-09-14",
       "firm": "Citigroup",
@@ -126,27 +147,6 @@
       "from": "Neutral",
       "to": "Neutral",
       "action": "reit"
-    },
-    {
-      "date": "2026-07-27",
-      "firm": "Piper Sandler",
-      "from": "Neutral",
-      "to": "Overweight",
-      "action": "up"
-    },
-    {
-      "date": "2026-07-14",
-      "firm": "Morgan Stanley",
-      "from": "Underweight",
-      "to": "Underweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-09",
-      "firm": "UBS",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
     }
   ],
   "holders": [
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.622,
-    "enterprise_value": 16960533504,
-    "ev_ebitda": -6.249,
-    "ev_revenue": 2.883,
+    "enterprise_value": 16642003968,
+    "ev_ebitda": -6.132,
+    "ev_revenue": 2.829,
     "float_shares": 945409556,
     "short_shares": 164110598,
     "short_pct_float": 14.46,
@@ -246,12 +246,6 @@
   "payout_ratio": null,
   "inst_count": 1115,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.86375,
-      "actual": -0.96,
-      "surprise_pct": -11.14
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.79186,
@@ -269,20 +263,17 @@
       "estimate": -0.77637,
       "actual": -0.63,
       "surprise_pct": 18.85
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.72831,
+      "actual": -0.63,
+      "surprise_pct": 13.5
     }
   ],
   "insiders": [
     {
-      "name": "GOMEZ AIDAN N.",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 807,
-      "date": "2026-10-20"
-    },
-    {
-      "name": "KRAFCIK JOHN",
+      "name": "SCHWARTZ SANFORD HAROLD",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -300,7 +291,16 @@
       "date": "2026-10-20"
     },
     {
-      "name": "SCHWARTZ SANFORD HAROLD",
+      "name": "GOMEZ AIDAN N.",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 807,
+      "date": "2026-10-20"
+    },
+    {
+      "name": "KRAFCIK JOHN",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -336,16 +336,7 @@
       "date": "2026-08-18"
     },
     {
-      "name": "GOMEZ AIDAN N.",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 769,
-      "date": "2026-07-20"
-    },
-    {
-      "name": "KRAFCIK JOHN",
+      "name": "SCHWARTZ SANFORD HAROLD",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -360,6 +351,15 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 884,
+      "date": "2026-07-20"
+    },
+    {
+      "name": "GOMEZ AIDAN N.",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 769,
       "date": "2026-07-20"
     }
   ],

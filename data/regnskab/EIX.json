@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:33.040Z",
+  "updated_at": "2026-10-30T21:09:24.224Z",
   "source": "Yahoo Finance",
   "symbol": "EIX",
   "summary": "Edison International, through its subsidiaries, engages in the generation and distribution of electric power. The company supplies and delivers through its electrical infrastructure to an approximately 50,000 square-mile area of southern, central, and coastal California. It serves residential, commercial, industrial, public authorities, agricultural, street lighting, and other sectors. The company's distribution network consists of approximately 13,000 circuit-miles of lines ranging from 55 kV to 500 kV and approximately 80 transmission substations; and approximately 38,000 circuit-miles of overhead lines, approximately 32,000 circuit-miles of underground lines, and approximately 730 distribution substations. Edison International was founded in 1886 and is based in Rosemead, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 1.80919,
+  "eps_estimate": 1.38,
   "analysts": {
     "strong_buy": 0,
     "buy": 3,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 5750000000,
-      "earnings": 832000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 5213000000,
       "earnings": 1848000000
@@ -69,15 +64,34 @@
       "q": "2Q2026",
       "revenue": 4357000000,
       "earnings": 534000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 4886000000,
+      "earnings": 724000000
     }
   ],
   "growth": {
-    "q0": -0.22680001,
-    "q1": -0.262,
+    "q0": -0.262,
+    "q1": -0.0163,
     "y0": -0.065799996,
     "y1": 0.0618
   },
   "ratings": [
+    {
+      "date": "2026-10-30",
+      "firm": "Wells Fargo",
+      "from": "Underweight",
+      "to": "Underweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-30",
+      "firm": "Barclays",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
     {
       "date": "2026-10-22",
       "firm": "HSBC",
@@ -132,20 +146,6 @@
       "firm": "Jefferies",
       "from": "Hold",
       "to": "Hold",
-      "action": "main"
-    },
-    {
-      "date": "2026-09-03",
-      "firm": "Truist Securities",
-      "from": "Hold",
-      "to": "Hold",
-      "action": "main"
-    },
-    {
-      "date": "2026-09-02",
-      "firm": "JP Morgan",
-      "from": "Neutral",
-      "to": "Neutral",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.609,
-    "enterprise_value": 67583606784,
-    "ev_ebitda": 7.568,
-    "ev_revenue": 3.48,
+    "enterprise_value": 67795255296,
+    "ev_ebitda": 7.592,
+    "ev_revenue": 3.49,
     "float_shares": 383686474,
     "short_shares": 18738329,
     "short_pct_float": 6.38,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-10-07",
   "dividend_date": null,
   "payout_ratio": 0.35669997,
-  "inst_count": 1471,
+  "inst_count": 1470,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 2.18122,
-      "actual": 2.34,
-      "surprise_pct": 7.28
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.45384,
@@ -269,6 +263,12 @@
       "estimate": 1.21269,
       "actual": 1.54,
       "surprise_pct": 26.99
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.80919,
+      "actual": 1.92,
+      "surprise_pct": 6.12
     }
   ],
   "insiders": [

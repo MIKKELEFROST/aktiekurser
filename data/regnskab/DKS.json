@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:32.966Z",
+  "updated_at": "2026-10-30T21:09:24.134Z",
   "source": "Yahoo Finance",
   "symbol": "DKS",
   "summary": "DICK'S Sporting Goods, Inc., together with its subsidiaries, operates as an omni-channel sporting goods retailer primarily in the United States. It provides hardlines, including sporting goods equipment, fitness equipment, golf equipment, and fishing gear products; and apparel. The company also offers footwear and accessories, such as athletic shoes for running, walking, tennis, fitness and cross training, basketball, and hiking; and specialty footwear comprising casual footwear and a complete line of cleats for team sports. In addition, it owns and operates Sporting Goods, Golf Galaxy, Public Lands, Moosejaw, and Going Going Gone! specialty concept stores; and DICK'S House of Sport and Golf Galaxy Performance Center, as well as GameChanger, a youth sports mobile app for live streaming, scheduling, communications, and scorekeeping. Further, the company owns and operates Foot Locker, which includes Foot Locker, Kids Foot Locker, Champs Sports, WSS and atmos banners. It offers its products online, as well as through its mobile apps. The company was formerly known as Dick'S Clothing and Sporting Goods, Inc. and changed its name to DICK'S Sporting Goods, Inc. in April 1999. DICK'S Sporting Goods, Inc. was incorporated in 1948 and is headquartered in Coraopolis, Pennsylvania.",
@@ -51,6 +51,11 @@
   ],
   "quarterly": [
     {
+      "q": "2Q2025",
+      "revenue": 3646616000,
+      "earnings": 381402000
+    },
+    {
       "q": "3Q2025",
       "revenue": 4167773000,
       "earnings": 75212000
@@ -64,11 +69,6 @@
       "q": "1Q2026",
       "revenue": 5164504000,
       "earnings": 319822000
-    },
-    {
-      "q": "2Q2026",
-      "revenue": 5586815000,
-      "earnings": 315461000
     }
   ],
   "growth": {
@@ -223,17 +223,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 19,
+    "buys": 20,
     "sells": 1,
-    "bought": 1028886,
+    "bought": 1030886,
     "sold": 20083,
-    "net_pct": 33.8
+    "net_pct": 33.9
   },
   "extras": {
     "beta": 1.097,
-    "enterprise_value": 19158544384,
-    "ev_ebitda": 9.196,
-    "ev_revenue": 0.906,
+    "enterprise_value": 19676985344,
+    "ev_ebitda": 9.444,
+    "ev_revenue": 0.931,
     "float_shares": 60377574,
     "short_shares": 11853636,
     "short_pct_float": 20.22,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-09-11",
   "dividend_date": null,
   "payout_ratio": 0.53470004,
-  "inst_count": 1033,
+  "inst_count": 1025,
   "eps_history": [
     {
       "quarter": "2025-10-31",
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "SCHORR LAWRENCE J",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Gift at price 0.00 per share.",
+      "value": 0,
+      "shares": 2000,
+      "date": "2026-10-27"
+    },
     {
       "name": "BARNES MATTHEW",
       "role": "Officer",
@@ -327,21 +336,21 @@
       "date": "2026-08-27"
     },
     {
-      "name": "EDDY ROBERT W.",
-      "role": "Director",
-      "kind": "buy",
-      "text": "Purchase at price 128.70 per share.",
-      "value": 514780,
-      "shares": 4000,
-      "date": "2026-08-26"
-    },
-    {
       "name": "MATHRANI SANDEEP LAKHMI",
       "role": "Director",
       "kind": "buy",
       "text": "Purchase at price 128.89 per share.",
       "value": 199783,
       "shares": 1550,
+      "date": "2026-08-26"
+    },
+    {
+      "name": "EDDY ROBERT W.",
+      "role": "Director",
+      "kind": "buy",
+      "text": "Purchase at price 128.70 per share.",
+      "value": 514780,
+      "shares": 4000,
       "date": "2026-08-26"
     },
     {
@@ -352,15 +361,6 @@
       "value": 10840250,
       "shares": 958466,
       "date": "2026-06-24"
-    },
-    {
-      "name": "EDDY ROBERT W.",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 838,
-      "date": "2026-06-10"
     }
   ],
   "dividends": [

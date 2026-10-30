@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:32.757Z",
+  "updated_at": "2026-10-30T21:09:23.899Z",
   "source": "Yahoo Finance",
   "symbol": "CGAU",
   "summary": "Centerra Gold Inc. engages in the operation, development, exploration, and acquisition of gold and copper properties in North America, Turkey, and internationally. The company also owns and operates a molybdenum business unit, which includes a metallurgical processing facility and two primary molybdenum properties. The company was incorporated in 2002 and is headquartered in Toronto, Canada.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-30",
-  "eps_estimate": 0.33543,
+  "eps_estimate": 0.32609,
   "analysts": {
     "strong_buy": 1,
     "buy": 4,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 395163000,
-      "earnings": 292188000
-    },
-    {
       "q": "4Q2025",
       "revenue": 401600000,
       "earnings": 192800000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 442700000,
       "earnings": 72100000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 500247000,
+      "earnings": 88700000
     }
   ],
   "growth": {
-    "q0": 0.0165,
-    "q1": -0.2047,
+    "q0": -0.2047,
+    "q1": 0.08,
     "y0": 0.39009997,
     "y1": 0.3247
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.602,
-    "enterprise_value": 3735626752,
-    "ev_ebitda": 4.344,
-    "ev_revenue": 2.167,
+    "enterprise_value": 3588921088,
+    "ev_ebitda": 4.173,
+    "ev_revenue": 2.082,
     "float_shares": 195116566,
     "short_shares": 5204776,
     "short_pct_float": null,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-08-19",
   "dividend_date": null,
   "payout_ratio": 0.0645,
-  "inst_count": 366,
+  "inst_count": 365,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.2477,
-      "actual": 0.33,
-      "surprise_pct": 33.23
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.36596,
@@ -269,18 +263,15 @@
       "estimate": 0.3792,
       "actual": 0.39,
       "surprise_pct": 2.85
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.33543,
+      "actual": 0.37,
+      "surprise_pct": 10.31
     }
   ],
   "insiders": [
-    {
-      "name": "Wilkinson (Lisa)",
-      "role": "Senior Officer of Issuer",
-      "kind": "other",
-      "text": "Acquisition under a purchase/ownership plan at price 22.09 per share.",
-      "value": 1502,
-      "shares": 68,
-      "date": "2026-10-15"
-    },
     {
       "name": "Rehman (Yousef)",
       "role": "Senior Officer of Issuer",
@@ -297,6 +288,15 @@
       "text": "Acquisition under a purchase/ownership plan at price 22.09 per share.",
       "value": 7621,
       "shares": 345,
+      "date": "2026-10-15"
+    },
+    {
+      "name": "Wilkinson (Lisa)",
+      "role": "Senior Officer of Issuer",
+      "kind": "other",
+      "text": "Acquisition under a purchase/ownership plan at price 22.09 per share.",
+      "value": 1502,
+      "shares": 68,
       "date": "2026-10-15"
     },
     {

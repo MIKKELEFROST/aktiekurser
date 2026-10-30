@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:33.442Z",
+  "updated_at": "2026-10-30T21:09:24.711Z",
   "source": "Yahoo Finance",
   "symbol": "IBKR",
   "summary": "Interactive Brokers Group, Inc. operates as an automated electronic broker in the United States and internationally. The company engages in the execution, clearance, and settlement of trades in stocks, options, futures, foreign exchange instruments, bonds, precious metals, and cryptocurrencies; and the company provides custody, prime brokerage, securities, and margin lending services. It also offers custody and service accounts for hedge and mutual funds, ETFs, registered investment advisors, proprietary trading groups, introducing brokers, and individual investors. In addition, the company provides trading platforms, including IBKR Trader Workstation, IBKR Desktop, IBKR Mobile, and IBKR Client Portal platform, as well as IBKR GlobalTrader mobile application, and IBKR APIs, builds custom trading applications and automates any part of the trading process. Further, it offers IBKR Pro, IBKR Lite, IBKR Universal Account, insured bank deposit sweep program, investors' marketplace, mutual fund marketplace, bond marketplace, forecast and event contracts, fractional trading, no transaction fee program for exchange-traded funds, overnight trading hours, and karta visa infinite charge card. It serves institutional and individual customers through electronic exchanges and market centers. Interactive Brokers Group, Inc. was founded in 1977 and is headquartered in Greenwich, Connecticut.",
@@ -223,17 +223,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 0,
-    "sells": 0,
-    "bought": 0,
-    "sold": null,
-    "net_pct": null
+    "buys": 7,
+    "sells": 1,
+    "bought": 803718,
+    "sold": 25000,
+    "net_pct": 6.9
   },
   "extras": {
     "beta": 1.37,
-    "enterprise_value": -39944646656,
+    "enterprise_value": -40745156608,
     "ev_ebitda": null,
-    "ev_revenue": -5.659,
+    "ev_revenue": -5.773,
     "float_shares": 438382045,
     "short_shares": 13050620,
     "short_pct_float": 3.34,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-12-01",
   "dividend_date": null,
   "payout_ratio": 0.13,
-  "inst_count": 1537,
+  "inst_count": 1538,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "HARRIS LAWRENCE E",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 82.61 per share.",
+      "value": 2065250,
+      "shares": 25000,
+      "date": "2026-10-28"
+    },
     {
       "name": "CONKLING LORI A",
       "role": "Director",
@@ -352,15 +361,6 @@
       "value": 1710,
       "shares": 25,
       "date": "2026-04-01"
-    },
-    {
-      "name": "CONKLING LORI A",
-      "role": "Director",
-      "kind": "buy",
-      "text": "Purchase at price 69.21 - 73.21 per share.",
-      "value": 5391,
-      "shares": 75,
-      "date": "2026-03-02"
     }
   ],
   "dividends": [

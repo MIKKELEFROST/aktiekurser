@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:34.365Z",
+  "updated_at": "2026-10-30T21:09:25.794Z",
   "source": "Yahoo Finance",
   "symbol": "STOK",
   "summary": "Stoke Therapeutics, Inc. engages in the development of treatments for severe genetic diseases by upregulating protein expression. The company utilizes its proprietary Targeted Augmentation of Nuclear Gene Output (TANGO) approach in developing antisense oligonucleotides (ASOs) to selectively restore protein levels. Its lead product candidates include STK-002, which is in Phase 1 clinical trials for the treatment of autosomal dominant optic atrophy; and Zorevunersen (STK-001), an investigational new medicine for the treatment of Dravet syndrome is being evaluated in phase 3 clinical trials. The company also develops programs focused on various targets, including haploinsufficiency diseases of the central nervous system and eye. It has a license and collaboration with Biogen Inc. for the development and commercialization of zorevunersen medicine for the treatment of Dravet syndrome; and Acadia Pharmaceuticals Inc. for the discovery, development, and commercialization of novel RNA-based medicines for the treatment of genetic neurodevelopmental diseases. The company was formerly known as ASOthera Pharmaceuticals, Inc. and changed its name to Stoke Therapeutics, Inc. in May 2016. Stoke Therapeutics, Inc. was incorporated in 2014 and is headquartered in Bedford, Massachusetts.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": -0.91436,
+  "eps_estimate": -0.97033,
   "analysts": {
     "strong_buy": 2,
     "buy": 12,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 10632000,
-      "earnings": -38347000
-    },
-    {
       "q": "4Q2025",
       "revenue": 1402000,
       "earnings": -57934000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 9325000,
       "earnings": -61618000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 11255000,
+      "earnings": -73644000
     }
   ],
   "growth": {
-    "q0": -0.4067,
-    "q1": -0.00029999999,
+    "q0": -0.00029999999,
+    "q1": -0.2342,
     "y0": -29.1723,
     "y1": 0.0257
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.262,
-    "enterprise_value": 1414002048,
-    "ev_ebitda": -6.38,
-    "ev_revenue": 51.254,
+    "enterprise_value": 1410130432,
+    "ev_ebitda": -6.362,
+    "ev_revenue": 51.114,
     "float_shares": 45614246,
     "short_shares": 10256830,
     "short_pct_float": 16.51,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 276,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.5742,
-      "actual": -0.65,
-      "surprise_pct": -13.2
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.736,
@@ -269,6 +263,12 @@
       "estimate": -0.78091,
       "actual": -0.93,
       "surprise_pct": -19.09
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.91436,
+      "actual": -1.08,
+      "surprise_pct": -18.12
     }
   ],
   "insiders": [
@@ -280,15 +280,6 @@
       "value": 170061,
       "shares": 5545,
       "date": "2026-09-01"
-    },
-    {
-      "name": "KAYE EDWARD M",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 32.01 - 32.47 per share.",
-      "value": 402528,
-      "shares": 12567,
-      "date": "2026-08-18"
     },
     {
       "name": "TICHO BARUCH S",
@@ -311,11 +302,11 @@
     {
       "name": "KAYE EDWARD M",
       "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 26250,
-      "date": "2026-08-14"
+      "kind": "sell",
+      "text": "Sale at price 32.01 - 32.47 per share.",
+      "value": 402528,
+      "shares": 12567,
+      "date": "2026-08-18"
     },
     {
       "name": "TICHO BARUCH S",
@@ -333,6 +324,15 @@
       "text": null,
       "value": null,
       "shares": 6000,
+      "date": "2026-08-14"
+    },
+    {
+      "name": "KAYE EDWARD M",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 26250,
       "date": "2026-08-14"
     },
     {

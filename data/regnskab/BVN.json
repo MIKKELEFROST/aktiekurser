@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:32.677Z",
+  "updated_at": "2026-10-30T21:09:23.789Z",
   "source": "Yahoo Finance",
   "symbol": "BVN",
   "summary": "Compañía de Minas Buenaventura S.A.A., together with its subsidiaries, engages in the exploration, development, construction, and operation of mines in Peru, the Americas, Europe, and Asia. It explores for gold, silver, copper, zinc, lead, and antimony deposits. The company also engages in the exploration, extraction, concentration, smelting, and marketing of polymetallic minerals and metals. In addition, it is involved in electricity transmission and generation; hydroelectric plant operation; and production of manganese sulfate monohydrate, as well as tailings dam management. The company was incorporated in 1953 and is based in Lima, Peru.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-30",
-  "eps_estimate": 0.885,
+  "eps_estimate": 1.04,
   "analysts": {
     "strong_buy": 2,
     "buy": 0,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 431038000,
-      "earnings": 167149000
-    },
-    {
       "q": "4Q2025",
       "revenue": 623395000,
       "earnings": 383605000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 528992000,
       "earnings": 237357000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 545325000,
+      "earnings": 245090000
     }
   ],
   "growth": {
-    "q0": 0.3361,
-    "q1": -0.3205,
+    "q0": -0.3205,
+    "q1": -0.1625,
     "y0": 0.3407,
     "y1": -0.1112
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.416,
-    "enterprise_value": 7425862144,
-    "ev_ebitda": 6.52,
-    "ev_revenue": 3.363,
+    "enterprise_value": 7166795776,
+    "ev_ebitda": 6.293,
+    "ev_revenue": 3.246,
     "float_shares": 172365647,
     "short_shares": 4406322,
     "short_pct_float": 2.52,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.2609,
   "inst_count": 461,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.41,
-      "actual": 0.6624,
-      "surprise_pct": 61.56
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.59,
@@ -269,6 +263,12 @@
       "estimate": 1.03,
       "actual": 0.9381,
       "surprise_pct": -8.92
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.885,
+      "actual": 0.9828,
+      "surprise_pct": 11.05
     }
   ],
   "insiders": [],

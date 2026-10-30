@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:33.166Z",
+  "updated_at": "2026-10-30T21:09:24.382Z",
   "source": "Yahoo Finance",
   "symbol": "FISI",
   "summary": "Financial Institutions, Inc., through its subsidiaries, provides banking and financial services to consumer, commercial, and municipal customers in New York. The company provides checking and savings account programs, including money market accounts, certificates of deposit, sweep investments, and individual retirement and other qualified plan accounts, as well as NOW accounts. It also offers commercial loan products including term loans and lines of credit; short and medium-term commercial loans for working capital, business expansion, and purchase of equipment; commercial business loans; commercial mortgage loans; one-to-four family residential mortgage loans; home improvement loans, closed-end home equity loans, and home equity lines of credit; and consumer loans, such as automobile, secured installment, and other secured and unsecured personal loans, as well as recreational vehicle, boat, personal loans, and deposit account collateralized loans. In addition, it offers investment advisory, wealth management, investment consulting, and retirement plan services, as well as operates a real estate investment trust that holds residential mortgages and commercial real estate loans. Financial Institutions, Inc. was founded in 1817 and is headquartered in Warsaw, New York.",
@@ -7,10 +7,10 @@
   "website": "https://www.five-starbank.com",
   "employees": 631,
   "ceo": "Mr. Martin K. Birmingham",
-  "next_earnings": "2026-10-29",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-28",
+  "earnings_estimated": true,
   "earnings_call": "2026-10-30",
-  "eps_estimate": 1.05,
+  "eps_estimate": 1.065,
   "analysts": {
     "strong_buy": 1,
     "buy": 0,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 63845000,
-      "earnings": 20112000
-    },
-    {
       "q": "4Q2025",
       "revenue": 64120000,
       "earnings": 19616000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 64315000,
       "earnings": 20819000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 64748000,
+      "earnings": 19626000
     }
   ],
   "growth": {
-    "q0": 0.060599998,
-    "q1": 0.1094,
+    "q0": 0.1094,
+    "q1": -0.0095999995,
     "y0": 0.1598,
     "y1": 0.026300002
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.64,
-    "enterprise_value": 1012353280,
+    "enterprise_value": 1014521024,
     "ev_ebitda": null,
-    "ev_revenue": 4.158,
+    "ev_revenue": 4.167,
     "float_shares": 17328591,
     "short_shares": 742878,
     "short_pct_float": 3.86,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-09-15",
   "dividend_date": null,
   "payout_ratio": 0.3127,
-  "inst_count": 234,
+  "inst_count": 233,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.88,
-      "actual": 0.99,
-      "surprise_pct": 12.5
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.945,
@@ -269,6 +263,12 @@
       "estimate": 0.93,
       "actual": 1.04,
       "surprise_pct": 11.83
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.05,
+      "actual": 0.99,
+      "surprise_pct": -5.71
     }
   ],
   "insiders": [
@@ -291,39 +291,21 @@
       "date": "2026-09-02"
     },
     {
-      "name": "PANZARELLA ANGELA J.",
+      "name": "HARTING BRUCE W.",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 1282,
+      "date": "2026-05-20"
+    },
+    {
+      "name": "BOVENZI DAVID",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 - 35.10 per share.",
-      "value": 32468,
-      "shares": 2207,
-      "date": "2026-05-20"
-    },
-    {
-      "name": "DORN ANDREW W JR",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 1282,
-      "date": "2026-05-20"
-    },
-    {
-      "name": "ZUPAN MARK A",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 1282,
-      "date": "2026-05-20"
-    },
-    {
-      "name": "LATELLA ROBERT N",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 1282,
+      "value": 13724,
+      "shares": 1673,
       "date": "2026-05-20"
     },
     {
@@ -360,6 +342,24 @@
       "text": "Stock Award(Grant) at price 0.00 - 35.10 per share.",
       "value": 13724,
       "shares": 1673,
+      "date": "2026-05-20"
+    },
+    {
+      "name": "SCHRADER ROBERT L.",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 1282,
+      "date": "2026-05-20"
+    },
+    {
+      "name": "PANZARELLA ANGELA J.",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 - 35.10 per share.",
+      "value": 32468,
+      "shares": 2207,
       "date": "2026-05-20"
     }
   ],

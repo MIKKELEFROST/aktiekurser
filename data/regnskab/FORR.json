@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:33.197Z",
+  "updated_at": "2026-10-30T21:09:24.416Z",
   "source": "Yahoo Finance",
   "symbol": "FORR",
   "summary": "Forrester Research, Inc. operates as an independent research and advisory company in the United States, Europe, the United Kingdom, Canada, Asia Pacific, and internationally. It operates in three segments: Research, Consulting, and Events. The Research segment primary subscription research services include Forrester Decisions which are designed to provide business and technology leaders with a proven path to growth through customer obsession. This segment delivers content, such as future trends, predictions, and market forecasts; deep consumer and business buyer data and insights; curated best practice models and tools to run business functions; operational and performance benchmarking data; and technology and service market landscapes and vendor evaluations. Its Consulting segment provides consulting projects, content marketing, and advisory services. The Events segment hosts events related to business-to-business marketing, sales and product leadership, customer experience, security and risk, and new technology and innovation. It sells its products and services through direct sales force. Forrester Research, Inc. was incorporated in 1983 and is headquartered in Cambridge, Massachusetts.",
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 94295000,
-      "earnings": -2126000
-    },
-    {
       "q": "4Q2025",
       "revenue": 101058000,
       "earnings": -33875000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 100233000,
       "earnings": 15253000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 86107000,
+      "earnings": -4421000
     }
   ],
   "growth": {
-    "q0": -0.4459,
-    "q1": 0.2059,
+    "q0": 0.2059,
+    "q1": 5,
     "y0": -0.3319,
     "y1": 0.16770001
   },
@@ -210,9 +210,9 @@
   },
   "extras": {
     "beta": 0.999,
-    "enterprise_value": 161788560,
-    "ev_ebitda": 11.103,
-    "ev_revenue": 0.425,
+    "enterprise_value": 164454016,
+    "ev_ebitda": 11.286,
+    "ev_revenue": 0.432,
     "float_shares": 9679047,
     "short_shares": 562091,
     "short_pct_float": 13.99,
@@ -225,12 +225,6 @@
   "payout_ratio": 0,
   "inst_count": 135,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.30667,
-      "actual": 0.37,
-      "surprise_pct": 20.65
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.21333,
@@ -248,6 +242,12 @@
       "estimate": 0.265,
       "actual": 0.4,
       "surprise_pct": 50.94
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.205,
+      "actual": 0.24,
+      "surprise_pct": 17.07
     }
   ],
   "insiders": [
@@ -288,15 +288,6 @@
       "date": "2026-08-13"
     },
     {
-      "name": "CHOUINARD SCOTT",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 925,
-      "date": "2026-07-31"
-    },
-    {
       "name": "FACEMIRE MICHAEL",
       "role": "Chief Technology Officer",
       "kind": "other",
@@ -321,6 +312,15 @@
       "text": null,
       "value": null,
       "shares": 634,
+      "date": "2026-07-31"
+    },
+    {
+      "name": "CHOUINARD SCOTT",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 925,
       "date": "2026-07-31"
     },
     {

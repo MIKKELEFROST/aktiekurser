@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:32.836Z",
+  "updated_at": "2026-10-30T21:09:23.984Z",
   "source": "Yahoo Finance",
   "symbol": "COHR",
   "summary": "Coherent Corp. develops, manufactures, and markets lasers, transceivers, other optical and optoelectronic devices, modules, and systems worldwide. Its products include critical components consisting of detectors, passive optics, thermal solutions, and PICS; silicon photonics and other advanced optical technologies; and coherent transmission components, transport products, optical amplifiers, passive optical components, optical line systems, and multi-rail platform. The company's Datacenter and Communications segment offers transceivers, co-packaged optics, and optical circuit switches, as well as other systems, such as subsystems, modules, and semiconductor devices for datacenter and communications applications; and VCSELS, EELS, pump lasers, and other components, optics, and ICs for datacenter and communication applications. Its Industrial segment offers excimer lasers, solid-state lasers, and CO2 lasers; laser systems for various industrial applications, including semiconductor capital equipment, display manufacturing, precision manufacturing, and scientific research; and laser systems and subsystems comprising high-power lasers for materials processing. This segment also provides engineered materials, laser optics, thermoelectric components, and advanced ceramic and metal-matrix composite materials and products. It markets its products and services through a direct sales force, representatives, and distributors. The company was formerly known as II-VI Incorporated and changed its name to Coherent Corp. in September 2022. Coherent Corp. was incorporated in 1971 and is headquartered in Saxonburg, Pennsylvania.",
@@ -25,12 +25,6 @@
   "target_analysts": 25,
   "statements": [
     {
-      "year": "2022",
-      "revenue": 3316616000,
-      "net": 166534000,
-      "margin": 5
-    },
-    {
       "year": "2023",
       "revenue": 5160100000,
       "net": -403670000,
@@ -47,14 +41,15 @@
       "revenue": 5810100000,
       "net": -80600000,
       "margin": -1.4
+    },
+    {
+      "year": "2026",
+      "revenue": 7118200000,
+      "net": 769900000,
+      "margin": 10.8
     }
   ],
   "quarterly": [
-    {
-      "q": "2Q2025",
-      "revenue": 1529400000,
-      "earnings": -128800000
-    },
     {
       "q": "3Q2025",
       "revenue": 1581400000,
@@ -69,6 +64,11 @@
       "q": "1Q2026",
       "revenue": 1805600000,
       "earnings": 191400000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 2045500000,
+      "earnings": 240500000
     }
   ],
   "growth": {
@@ -78,6 +78,20 @@
     "y1": 0.4797
   },
   "ratings": [
+    {
+      "date": "2026-10-30",
+      "firm": "Morgan Stanley",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-30",
+      "firm": "B. Riley Securities",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-10-27",
       "firm": "Needham",
@@ -130,20 +144,6 @@
     {
       "date": "2026-09-24",
       "firm": "Rosenblatt",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-09-01",
-      "firm": "Deutsche Bank",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "init"
-    },
-    {
-      "date": "2026-08-13",
-      "firm": "Jefferies",
       "from": "Buy",
       "to": "Buy",
       "action": "main"
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 2.113,
-    "enterprise_value": 48816803840,
-    "ev_ebitda": 34.296,
-    "ev_revenue": 6.858,
+    "enterprise_value": 48352677888,
+    "ev_ebitda": 33.969,
+    "ev_revenue": 6.793,
     "float_shares": 195037167,
     "short_shares": 9048189,
     "short_pct_float": 4.61,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 1771,
+  "inst_count": 1769,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -318,20 +318,20 @@
       "date": "2026-09-01"
     },
     {
-      "name": "DIGIROLOMO ENRICO",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 276.85 per share.",
-      "value": 628998,
-      "shares": 2272,
-      "date": "2026-08-31"
-    },
-    {
       "name": "SKAGGS STEPHEN ANDREW",
       "role": "Director",
       "kind": "sell",
       "text": "Sale at price 276.88 per share.",
       "value": 629062,
+      "shares": 2272,
+      "date": "2026-08-31"
+    },
+    {
+      "name": "DIGIROLOMO ENRICO",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 276.85 per share.",
+      "value": 628998,
       "shares": 2272,
       "date": "2026-08-31"
     },
@@ -354,12 +354,12 @@
       "date": "2026-08-28"
     },
     {
-      "name": "ENG JULIE SHERIDAN",
-      "role": "Chief Technology Officer",
+      "name": "ANDERSON JAMES ROBERT",
+      "role": "Chief Executive Officer",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 17333,
+      "shares": 30564,
       "date": "2026-08-28"
     }
   ],

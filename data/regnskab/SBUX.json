@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:34.202Z",
+  "updated_at": "2026-10-30T21:09:25.624Z",
   "source": "Yahoo Finance",
   "symbol": "SBUX",
   "summary": "Starbucks Corporation, together with its subsidiaries, operates as a roaster, marketer, and retailer of coffee internationally. The company operates through three segments: North America, International, and Channel Development. Its stores offer coffee, tea, and other beverages, roasted whole beans and ground coffees, complementary food, packaged coffees, single-serve products, and ready-to-drink beverages; and various food products, such as pastries, breakfast sandwiches, and lunch items. The company also licenses its trademarks through licensed stores, and grocery and foodservice accounts. The company offers its products under the Starbucks Coffee, Teavana, Seattle's Best Coffee, Ethos, and Starbucks Reserve brands. Starbucks Corporation was founded in 1971 and is based in Seattle, Washington.",
@@ -7,10 +7,10 @@
   "website": "https://www.starbucks.com",
   "employees": 381000,
   "ceo": "Mr. Brian R. Niccol",
-  "next_earnings": "2026-10-29",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-27",
+  "earnings_estimated": true,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 0.70575,
+  "eps_estimate": 0.75602,
   "analysts": {
     "strong_buy": 2,
     "buy": 12,
@@ -24,12 +24,6 @@
   "target_low": 82,
   "target_analysts": 29,
   "statements": [
-    {
-      "year": "2022",
-      "revenue": 32250300000,
-      "net": 3281600000,
-      "margin": 10.2
-    },
     {
       "year": "2023",
       "revenue": 35975600000,
@@ -47,14 +41,15 @@
       "revenue": 37184400000,
       "net": 1856400000,
       "margin": 5
+    },
+    {
+      "year": "2026",
+      "revenue": 37910600000,
+      "net": 2526700000,
+      "margin": 6.7
     }
   ],
   "quarterly": [
-    {
-      "q": "3Q2025",
-      "revenue": 9569000000,
-      "earnings": 133100000
-    },
     {
       "q": "4Q2025",
       "revenue": 9915100000,
@@ -69,15 +64,41 @@
       "q": "2Q2026",
       "revenue": 9322700000,
       "earnings": 1045300000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 9141200000,
+      "earnings": 677200000
     }
   ],
   "growth": {
-    "q0": 0.35720003,
-    "q1": 0.35,
-    "y0": 0.2236,
-    "y1": 0.1997
+    "q0": 0.35,
+    "q1": 0.2486,
+    "y0": 0.1495,
+    "y1": 0.1887
   },
   "ratings": [
+    {
+      "date": "2026-10-30",
+      "firm": "DA Davidson",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-30",
+      "firm": "BTIG",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "reit"
+    },
+    {
+      "date": "2026-10-30",
+      "firm": "TD Cowen",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "reit"
+    },
     {
       "date": "2026-10-23",
       "firm": "Mizuho",
@@ -126,27 +147,6 @@
       "from": null,
       "to": "Neutral",
       "action": "init"
-    },
-    {
-      "date": "2026-07-31",
-      "firm": "BTIG",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "reit"
-    },
-    {
-      "date": "2026-07-30",
-      "firm": "UBS",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-30",
-      "firm": "Citigroup",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
     }
   ],
   "holders": [
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 1,
-    "sells": 10,
+    "sells": 9,
     "bought": 1000,
-    "sold": 17374,
-    "net_pct": -1.1
+    "sold": 15374,
+    "net_pct": -1
   },
   "extras": {
     "beta": 0.975,
-    "enterprise_value": 136498003968,
-    "ev_ebitda": 24.192,
-    "ev_revenue": 3.56,
+    "enterprise_value": 139131404288,
+    "ev_ebitda": 24.659,
+    "ev_revenue": 3.629,
     "float_shares": 1137663000,
     "short_shares": 43675215,
     "short_pct_float": 4.26,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-11-13",
   "dividend_date": null,
   "payout_ratio": 1.4277,
-  "inst_count": 2957,
+  "inst_count": 2954,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.55621,
-      "actual": 0.52,
-      "surprise_pct": -6.51
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.58692,
@@ -269,6 +263,12 @@
       "estimate": 0.64988,
       "actual": 0.85,
       "surprise_pct": 30.79
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.70575,
+      "actual": 0.8,
+      "surprise_pct": 13.35
     }
   ],
   "insiders": [

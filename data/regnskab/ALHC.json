@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:32.377Z",
+  "updated_at": "2026-10-30T21:09:23.366Z",
   "source": "Yahoo Finance",
   "symbol": "ALHC",
   "summary": "Alignment Healthcare, Inc. operates a consumer-centric healthcare platform for seniors in the United States. It delivers customized healthcare experience to meet the needs of seniors through its Medicare Advantage plans. Alignment Healthcare, Inc. was founded in 2013 and is based in Orange, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 0.0425,
+  "eps_estimate": 0.035,
   "analysts": {
     "strong_buy": 3,
     "buy": 7,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 993695000,
-      "earnings": 3729000
-    },
-    {
       "q": "4Q2025",
       "revenue": 1012804000,
       "earnings": -11006000
@@ -69,15 +64,34 @@
       "q": "2Q2026",
       "revenue": 1335633000,
       "earnings": 36560000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1358290000,
+      "earnings": -8052000
     }
   ],
   "growth": {
-    "q0": -0.5668,
-    "q1": 25.6479,
+    "q0": 25.6479,
+    "q1": 0.5239,
     "y0": 0.4078,
     "y1": 0.4365
   },
   "ratings": [
+    {
+      "date": "2026-10-30",
+      "firm": "Barclays",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-30",
+      "firm": "Keybanc",
+      "from": "Overweight",
+      "to": "Sector Weight",
+      "action": "down"
+    },
     {
       "date": "2026-10-28",
       "firm": "Needham",
@@ -132,20 +146,6 @@
       "firm": "JP Morgan",
       "from": "Overweight",
       "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-03",
-      "firm": "Raymond James",
-      "from": "Strong Buy",
-      "to": "Outperform",
-      "action": "down"
-    },
-    {
-      "date": "2026-05-26",
-      "firm": "Barclays",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.139,
-    "enterprise_value": 1325608576,
-    "ev_ebitda": 15.164,
-    "ev_revenue": 0.29,
+    "enterprise_value": 1300716288,
+    "ev_ebitda": 14.879,
+    "ev_revenue": 0.284,
     "float_shares": 188207985,
     "short_shares": 25522328,
     "short_pct_float": 12.64,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 438,
+  "inst_count": 437,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.01,
-      "actual": 0.0981,
-      "surprise_pct": 1081
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.08,
@@ -269,6 +263,12 @@
       "estimate": 0.2025,
       "actual": 0.2518,
       "surprise_pct": 24.35
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.0425,
+      "actual": 0.04501,
+      "surprise_pct": 5.91
     }
   ],
   "insiders": [
@@ -291,21 +291,21 @@
       "date": "2026-09-14"
     },
     {
-      "name": "KAO JOHN",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 12.68 - 12.96 per share.",
-      "value": 7121671,
-      "shares": 557870,
-      "date": "2026-09-11"
-    },
-    {
       "name": "MARONEY DAWN CHRISTINE",
       "role": "President",
       "kind": "sell",
       "text": "Sale at price 12.68 per share.",
       "value": 1555925,
       "shares": 122707,
+      "date": "2026-09-11"
+    },
+    {
+      "name": "KAO JOHN",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 12.68 - 12.96 per share.",
+      "value": 7121671,
+      "shares": 557870,
       "date": "2026-09-11"
     },
     {
@@ -354,12 +354,12 @@
       "date": "2026-07-10"
     },
     {
-      "name": "KONOWIECKI JOSEPH S",
-      "role": "Officer and Director",
-      "kind": "sell",
-      "text": "Sale at price 24.00 per share.",
-      "value": 600000,
-      "shares": 25000,
+      "name": "HOCHRADEL SHANE J",
+      "role": "Chief Operating Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 87719,
       "date": "2026-07-01"
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:34.580Z",
+  "updated_at": "2026-10-30T21:09:26.033Z",
   "source": "Yahoo Finance",
   "symbol": "VOR",
   "summary": "Vor Biopharma Inc., a clinical-stage biopharmaceutical company, focuses on the development of a novel therapy in the treatment of autoimmune diseases. The company offers telitacicept, a novel fusion protein for the treatment of generalized myasthenia gravis, systemic lupus erythematosus, and rheumatoid arthritis, as well as Sjögren's disease and IgA nephrapathy. It has a license agreement with RemeGen Co., Ltd. for the exploitation, development, and commercialization of telitacicpet and related products. The company was incorporated in 2015 and is headquartered in Boston, Massachusetts.",
@@ -7,10 +7,10 @@
   "website": "https://www.vorbio.com",
   "employees": 76,
   "ceo": "Dr. Jean-Paul  Kress M.D.",
-  "next_earnings": "2026-11-12",
-  "earnings_estimated": true,
+  "next_earnings": "2026-10-30",
+  "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": -0.72,
+  "eps_estimate": -0.77,
   "analysts": {
     "strong_buy": 1,
     "buy": 8,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 0,
-      "earnings": -812684000
-    },
-    {
       "q": "4Q2025",
       "revenue": 0,
       "earnings": 1722858000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 0,
       "earnings": -62810000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 0,
+      "earnings": -86727000
     }
   ],
   "growth": {
-    "q0": 0.99410003,
-    "q1": -1.0025,
+    "q0": -1.0025,
+    "q1": null,
     "y0": 0.90230006,
     "y1": 0.4671
   },
@@ -231,8 +231,8 @@
   },
   "extras": {
     "beta": 1.783,
-    "enterprise_value": 758449344,
-    "ev_ebitda": -6.467,
+    "enterprise_value": 773831552,
+    "ev_ebitda": -6.598,
     "ev_revenue": null,
     "float_shares": 37229057,
     "short_shares": 7445537,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 165,
+  "inst_count": 166,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -4.1,
-      "actual": -121.63,
-      "surprise_pct": -2866.59
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -1.19104,
@@ -269,6 +263,12 @@
       "estimate": -0.70298,
       "actual": -0.8012,
       "surprise_pct": -13.97
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.72,
+      "actual": -0.9022,
+      "surprise_pct": -25.31
     }
   ],
   "insiders": [
@@ -293,19 +293,19 @@
     {
       "name": "RA CAPITAL HEALTHCARE FUND,L.P.",
       "role": "Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 0.00 per share.",
-      "value": 4200,
-      "shares": 2100000,
+      "kind": "sell",
+      "text": "Sale at price 19.75 per share.",
+      "value": 4207,
+      "shares": 213,
       "date": "2026-07-16"
     },
     {
       "name": "RA CAPITAL HEALTHCARE FUND,L.P.",
       "role": "Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "sell",
-      "text": "Sale at price 19.75 per share.",
-      "value": 4207,
-      "shares": 213,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 0.00 per share.",
+      "value": 4200,
+      "shares": 2100000,
       "date": "2026-07-16"
     },
     {

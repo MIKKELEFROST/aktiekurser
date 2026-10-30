@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:32.724Z",
+  "updated_at": "2026-10-30T21:09:23.852Z",
   "source": "Yahoo Finance",
   "symbol": "CBOE",
   "summary": "Cboe Global Markets, Inc., through its subsidiaries, operates as a derivatives and securities exchange network that delivers trading, clearing, and investment solutions in the United States and internationally. It operates through five segments: Options, North American Equities, Europe and Asia Pacific, Futures, and Global FX. The Options segment includes options on market indices, stocks of individual corporations, and exchange-traded products (ETPs), such as exchange-traded funds (ETFs) and exchange-traded notes (ETNs). This segment also offers trading in listed options through a single system. The North American Equities segment comprises U.S. equities and ETP transaction services. This segment also includes listing services on Cboe Canada, ETP listings on BZX, the Cboe Global Markets, Inc. common stock listing, and applicable market data. The Europe and Asia Pacific segment provides pan-European derivatives transaction services; ETPs, including exchange-traded funds, exchange-traded notes, and exchange-traded commodities; international depository receipts; and an ETP listings business on regulated markets and clearing activities, as well as equities services. The Futures segment offers transaction services, including trading in VIX futures and other futures products, the licensing of proprietary market data, and access and capacity services. The Global FX segment provides institutional foreign exchange (FX) trading and non-deliverable forward FX transaction services. The company also provides trading solutions and products in multiple asset classes, including equities, derivatives, and FX across North America, Europe, and Asia Pacific. It has strategic relationships with S&P Dow Jones Indices, LLC; Frank Russell Company; and FTSE International Limited. The company was formerly known as CBOE Holdings, Inc. and changed its name to Cboe Global Markets, Inc. in October 2017. Cboe Global Markets, Inc. was founded in 1973 and is headquartered in Chicago, Illinois.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-30",
   "earnings_estimated": false,
   "earnings_call": "2026-10-30",
-  "eps_estimate": 3.43369,
+  "eps_estimate": 3.44617,
   "analysts": {
     "strong_buy": 3,
     "buy": 2,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 605500000,
-      "earnings": 299300000
-    },
-    {
       "q": "4Q2025",
       "revenue": 671100000,
       "earnings": 312200000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 731600000,
       "earnings": 351800000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 712200000,
+      "earnings": 426700000
     }
   ],
   "growth": {
-    "q0": 0.286,
-    "q1": 0.1262,
+    "q0": 0.1262,
+    "q1": 0.004,
     "y0": 0.3211,
     "y1": 0.075100005
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.414,
-    "enterprise_value": 32687587328,
-    "ev_ebitda": 16.93,
-    "ev_revenue": 6.458,
+    "enterprise_value": 32043247616,
+    "ev_ebitda": 16.597,
+    "ev_revenue": 6.331,
     "float_shares": 104035225,
     "short_shares": 2549419,
     "short_pct_float": 2.98,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-11-30",
   "dividend_date": null,
   "payout_ratio": 0.2245,
-  "inst_count": 1440,
+  "inst_count": 1441,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 2.52892,
-      "actual": 2.67,
-      "surprise_pct": 5.58
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 2.94904,
@@ -269,6 +263,12 @@
       "estimate": 3.48982,
       "actual": 3.56,
       "surprise_pct": 2.01
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 3.43369,
+      "actual": 3.63,
+      "surprise_pct": 5.72
     }
   ],
   "insiders": [
@@ -300,42 +300,6 @@
       "date": "2026-05-18"
     },
     {
-      "name": "PARISI JAMES E.",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 530,
-      "date": "2026-05-14"
-    },
-    {
-      "name": "FARROW WILLIAM M III",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 530,
-      "date": "2026-05-14"
-    },
-    {
-      "name": "FONG IVAN K",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 530,
-      "date": "2026-05-14"
-    },
-    {
-      "name": "TOMCZYK FREDRIC J.",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 530,
-      "date": "2026-05-14"
-    },
-    {
       "name": "GOODMAN JILL R",
       "role": "Director",
       "kind": "other",
@@ -354,7 +318,43 @@
       "date": "2026-05-14"
     },
     {
-      "name": "FITZPATRICK EDWARD J",
+      "name": "MANSFIELD ERIN",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 530,
+      "date": "2026-05-14"
+    },
+    {
+      "name": "MAO CECILIA H.",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 530,
+      "date": "2026-05-14"
+    },
+    {
+      "name": "PALMORE RODERICK A",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 530,
+      "date": "2026-05-14"
+    },
+    {
+      "name": "PARISI JAMES E.",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 530,
+      "date": "2026-05-14"
+    },
+    {
+      "name": "FARROW WILLIAM M III",
       "role": "Director",
       "kind": "other",
       "text": null,

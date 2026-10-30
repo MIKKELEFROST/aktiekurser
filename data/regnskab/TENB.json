@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:34.438Z",
+  "updated_at": "2026-10-30T21:09:25.870Z",
   "source": "Yahoo Finance",
   "symbol": "TENB",
   "summary": "Tenable Holdings, Inc. provides cyber exposure management solutions in the Americas, Europe, the Middle East, Africa, the Asia Pacific, and Japan. Its platforms include Tenable AI Exposure, a solution that helps organizations identify, assess, and reduce security risks associated with the use of artificial intelligence technologies; Tenable Vulnerability Management, a cloud-delivered software as a service that provides organizations with a risk-based view of traditional and modern attack surfaces; Tenable Cloud Security, a cloud security solution for use in exposing and closing priority security gaps caused by misconfigurations, risky entitlements, and vulnerabilities; Tenable Identity Exposure, a solution for end-to-end protection from identity-based threats; and Tenable Web App Scanning, which provides configuration and management of web app scans. The company also provides Tenable Attack Surface Management, an external attack surface management solution; Tenable Security Center, an on-premises vulnerability management solution; and Tenable OT Security, a unified security solution for converged OT/IoT environments that provide threat detection, asset tracking, vulnerability management, and configuration control capabilities to protect OT environments, including industrial networks. In addition, it offers Nessus, a vulnerability assessment solution for cybersecurity industry and enterprise platform; and Nessus Expert, which enables users to programmatically detect cloud infrastructure misconfigurations and vulnerabilities in the design and build phase of the software development lifecycle. Tenable Holdings, Inc. was founded in 2002 and is headquartered in Columbia, Maryland.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-28",
   "earnings_estimated": false,
   "earnings_call": "2026-10-28",
-  "eps_estimate": 0.57518,
+  "eps_estimate": 0.57461,
   "analysts": {
     "strong_buy": 3,
     "buy": 5,
@@ -19,8 +19,8 @@
     "strong_sell": 1,
     "total": 22
   },
-  "target_mean": 42.89474,
-  "target_high": 55,
+  "target_mean": 46.36842,
+  "target_high": 60,
   "target_low": 29,
   "target_analysts": 19,
   "statements": [
@@ -72,12 +72,33 @@
     }
   ],
   "growth": {
-    "q0": 0.1983,
-    "q1": 0.17709999,
-    "y0": 0.3701,
-    "y1": 0.1103
+    "q0": 0.19709998,
+    "q1": 0.18280001,
+    "y0": 0.3693,
+    "y1": 0.12560001
   },
   "ratings": [
+    {
+      "date": "2026-10-30",
+      "firm": "Wells Fargo",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-29",
+      "firm": "Canaccord Genuity",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-29",
+      "firm": "JP Morgan",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-10-29",
       "firm": "TD Cowen",
@@ -125,27 +146,6 @@
       "firm": "Susquehanna",
       "from": "Positive",
       "to": "Positive",
-      "action": "main"
-    },
-    {
-      "date": "2026-10-29",
-      "firm": "Stifel",
-      "from": "Hold",
-      "to": "Hold",
-      "action": "main"
-    },
-    {
-      "date": "2026-10-29",
-      "firm": "Cantor Fitzgerald",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-10-29",
-      "firm": "Needham",
-      "from": "Buy",
-      "to": "Buy",
       "action": "main"
     }
   ],
@@ -231,12 +231,12 @@
   },
   "extras": {
     "beta": 1.007,
-    "enterprise_value": 5489373184,
-    "ev_ebitda": 102.208,
-    "ev_revenue": 5.26,
-    "float_shares": 108492289,
+    "enterprise_value": 5775481856,
+    "ev_ebitda": 82.867,
+    "ev_revenue": 5.41,
+    "float_shares": 103291294,
     "short_shares": 15146381,
-    "short_pct_float": 16.13,
+    "short_pct_float": 17.09,
     "short_ratio": 4.2,
     "last_split": null,
     "last_split_date": null
@@ -273,6 +273,15 @@
   ],
   "insiders": [
     {
+      "name": "THURMOND MARK CROSBY",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 25369,
+      "date": "2026-08-24"
+    },
+    {
       "name": "ANSCHUTZ BARRON",
       "role": "Officer",
       "kind": "other",
@@ -288,15 +297,6 @@
       "text": null,
       "value": null,
       "shares": 27413,
-      "date": "2026-08-24"
-    },
-    {
-      "name": "THURMOND MARK CROSBY",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 25369,
       "date": "2026-08-24"
     },
     {
@@ -318,21 +318,21 @@
       "date": "2026-08-19"
     },
     {
-      "name": "VICKS RAYMOND JR.",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 35.94 per share.",
-      "value": 65375,
-      "shares": 1819,
-      "date": "2026-08-07"
-    },
-    {
       "name": "ZECHER LINDA KAY",
       "role": "Director",
       "kind": "sell",
       "text": "Sale at price 34.00 - 36.50 per share.",
       "value": 91655,
       "shares": 2620,
+      "date": "2026-08-07"
+    },
+    {
+      "name": "VICKS RAYMOND JR.",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 35.94 per share.",
+      "value": 65375,
+      "shares": 1819,
       "date": "2026-08-07"
     },
     {
@@ -354,12 +354,12 @@
       "date": "2026-06-15"
     },
     {
-      "name": "ANSCHUTZ BARRON",
-      "role": "Officer",
+      "name": "THURMOND MARK CROSBY",
+      "role": "Chief Executive Officer",
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 4223,
+      "shares": 25369,
       "date": "2026-05-22"
     }
   ],

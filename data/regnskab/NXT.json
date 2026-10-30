@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:33.909Z",
+  "updated_at": "2026-10-30T21:09:25.291Z",
   "source": "Yahoo Finance",
   "symbol": "NXT",
   "summary": "Nextpower Inc. provides solar and energy technology solutions for utility-scale power plants in the United States and internationally. It offers tracking solutions, including NX Horizon, a solar tracking solution; NX Horizon-XTR, a terrain-following tracker to expand the addressable market for trackers on sites with sloped, uneven, and challenging terrain; NX Horizon Hail Pro adds automatic stowing using weather service information; and NX Horizon Low Carbon, a solar tracker solution with a reduced carbon footprint. The company also provides TrueCapture, an energy yield management system that addresses power production shortfalls; NX Anchor and NX Earth Truss, a solar foundation technology to facilitate solar project development in challenging soil conditions; Truss Driver, an advanced installation equipment; and NX Navigator, which assists solar power plant owners and operators in monitoring, controlling, and protecting their solar projects. It serves engineering, procurement, and construction firms, as well as solar project developers and owners. The company was formerly known as Nextracker Inc. and changed its name to Nextpower Inc. in November 2025. The company was founded in 2013 and is headquartered in Fremont, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2027-01-27",
   "earnings_estimated": true,
   "earnings_call": "2026-10-28",
-  "eps_estimate": 1.11983,
+  "eps_estimate": 1.0269,
   "analysts": {
     "strong_buy": 7,
     "buy": 19,
@@ -19,8 +19,8 @@
     "strong_sell": 0,
     "total": 29
   },
-  "target_mean": 132.10715,
-  "target_high": 175,
+  "target_mean": 130,
+  "target_high": 170,
   "target_low": 70,
   "target_analysts": 28,
   "statements": [
@@ -72,12 +72,26 @@
     }
   ],
   "growth": {
-    "q0": 0.018,
+    "q0": -0.0665,
     "q1": null,
     "y0": null,
-    "y1": 0.2149
+    "y1": 0.2056
   },
   "ratings": [
+    {
+      "date": "2026-10-30",
+      "firm": "Wells Fargo",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-29",
+      "firm": "JP Morgan",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-10-29",
       "firm": "Susquehanna",
@@ -130,20 +144,6 @@
     {
       "date": "2026-10-13",
       "firm": "Barclays",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-10-07",
-      "firm": "Citigroup",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-09-30",
-      "firm": "Piper Sandler",
       "from": "Overweight",
       "to": "Overweight",
       "action": "main"
@@ -227,14 +227,14 @@
     "sells": 13,
     "bought": 1388721,
     "sold": 264505,
-    "net_pct": -743.7
+    "net_pct": -736.4
   },
   "extras": {
     "beta": 1.94,
-    "enterprise_value": 11278460928,
-    "ev_ebitda": 15.06,
-    "ev_revenue": 3.107,
-    "float_shares": 149089426,
+    "enterprise_value": 11064039424,
+    "ev_ebitda": 14.192,
+    "ev_revenue": 2.886,
+    "float_shares": 148859970,
     "short_shares": 9733296,
     "short_pct_float": 8.83,
     "short_ratio": 4.45,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 1041,
+  "inst_count": 1032,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -339,21 +339,21 @@
       "date": "2026-08-19"
     },
     {
-      "name": "MENEZES MARK",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 2742,
-      "date": "2026-08-19"
-    },
-    {
       "name": "THOMAS BRANDI ELIZABETH",
       "role": "Director",
       "kind": "sell",
       "text": "Sale at price 91.25 per share.",
       "value": 676619,
       "shares": 7415,
+      "date": "2026-08-19"
+    },
+    {
+      "name": "MENEZES MARK",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 2742,
       "date": "2026-08-19"
     }
   ],

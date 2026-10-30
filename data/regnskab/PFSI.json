@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:34.029Z",
+  "updated_at": "2026-10-30T21:09:25.433Z",
   "source": "Yahoo Finance",
   "symbol": "PFSI",
   "summary": "PennyMac Financial Services, Inc., through its subsidiaries, engages in the mortgage banking and investment management activities in the United States. The company operates through two segments, Production and Servicing. The Production segment is involved in the origination, acquisition, and sale of loans. This segment also sources residential conventional and government-insured or guaranteed mortgage loans through correspondent production, consumer direct lending, and broker direct lending. The Servicing segment performs loan administration, collection, and default management activities, including the collection and remittance of loan payments; responds to customer inquiries; provides accounting for principal and interest; holds custodial funds for the payment of property taxes and insurance premiums; offers counseling for delinquent borrowers; and supervising foreclosures and property dispositions, as well as administers loss mitigation activities comprising modification and forbearance programs, and supervising foreclosures and property dispositions. The company was founded in 2008 and is headquartered in Westlake Village, California.",
@@ -7,10 +7,10 @@
   "website": "https://pfsi.pennymac.com",
   "employees": 5543,
   "ceo": "Mr. David A. Spector",
-  "next_earnings": "2026-10-29",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-28",
+  "earnings_estimated": true,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 1.234,
+  "eps_estimate": 1.652,
   "analysts": {
     "strong_buy": 1,
     "buy": 2,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 632898000,
-      "earnings": 181503000
-    },
-    {
       "q": "4Q2025",
       "revenue": 538005000,
       "earnings": 106831000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 497000000,
       "earnings": 22000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 469000000,
+      "earnings": 29000000
     }
   ],
   "growth": {
-    "q0": -0.6401,
-    "q1": -0.15630001,
-    "y0": -0.4807,
-    "y1": 0.5904
+    "q0": -0.15630001,
+    "q1": -0.0537,
+    "y0": -0.52,
+    "y1": 0.72059995
   },
   "ratings": [
+    {
+      "date": "2026-10-30",
+      "firm": "Wells Fargo",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-10-12",
       "firm": "BTIG",
@@ -140,13 +147,6 @@
       "from": "Buy",
       "to": "Buy",
       "action": "main"
-    },
-    {
-      "date": "2026-07-07",
-      "firm": "Barclays",
-      "from": "Overweight",
-      "to": "Equal-Weight",
-      "action": "down"
     }
   ],
   "holders": [
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.449,
-    "enterprise_value": 26705811456,
+    "enterprise_value": 26757242880,
     "ev_ebitda": null,
-    "ev_revenue": 8.015,
+    "ev_revenue": 8.031,
     "float_shares": 27396142,
     "short_shares": 3694691,
     "short_pct_float": 12.57,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.16510001,
   "inst_count": 315,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 2.97796,
-      "actual": 3.4284,
-      "surprise_pct": 15.13
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 3.22551,
@@ -269,6 +263,12 @@
       "estimate": 2.14604,
       "actual": 1.39,
       "surprise_pct": -35.23
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.234,
+      "actual": 1.05,
+      "surprise_pct": -14.91
     }
   ],
   "insiders": [
@@ -345,21 +345,21 @@
       "date": "2026-05-12"
     },
     {
-      "name": "NANJI FARHAD",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 93.03 per share.",
-      "value": 31444,
-      "shares": 338,
-      "date": "2026-05-07"
-    },
-    {
       "name": "MAZZELLA JOSEPH F",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 93.03 per share.",
       "value": 33398,
       "shares": 359,
+      "date": "2026-05-07"
+    },
+    {
+      "name": "NANJI FARHAD",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 93.03 per share.",
+      "value": 31444,
+      "shares": 338,
       "date": "2026-05-07"
     }
   ],

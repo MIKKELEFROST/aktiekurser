@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:34.770Z",
+  "updated_at": "2026-10-30T21:09:26.242Z",
   "source": "Yahoo Finance",
   "symbol": "MO",
   "summary": "Altria Group, Inc., through its subsidiaries, manufactures and sells smokeable and oral tobacco products in the United States. It offers cigarettes primarily under the Marlboro brand; large cigars and pipe tobacco under the Black & Mild brand; moist smokeless tobacco and oral tobacco products under the Copenhagen, Skoal, Red Seal, and Husky brands; oral nicotine pouches under the on! brand; and e-vapor products under the NJOY ACE brand. The company sells its products to distributors, as well as large retail organizations, such as chain stores. Altria Group, Inc. was founded in 1822 and is headquartered in Richmond, Virginia.",
@@ -7,8 +7,8 @@
   "website": "https://www.altria.com",
   "employees": 5900,
   "ceo": "Mr. Salvatore  Mancuso",
-  "next_earnings": "2026-10-29",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-28",
+  "earnings_estimated": true,
   "earnings_call": "2026-10-29",
   "eps_estimate": 1.37212,
   "analysts": {
@@ -19,8 +19,8 @@
     "strong_sell": 1,
     "total": 14
   },
-  "target_mean": 70,
-  "target_high": 82,
+  "target_mean": 72.54545,
+  "target_high": 85,
   "target_low": 58,
   "target_analysts": 11,
   "statements": [
@@ -74,10 +74,17 @@
   "growth": {
     "q0": 0.0555,
     "q1": 0.026600001,
-    "y0": 0.0481,
-    "y1": 0.0349
+    "y0": 0.0512,
+    "y1": 0.0374
   },
   "ratings": [
+    {
+      "date": "2026-10-30",
+      "firm": "Morgan Stanley",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
     {
       "date": "2026-08-11",
       "firm": "Barclays",
@@ -139,13 +146,6 @@
       "firm": "Citigroup",
       "from": "Neutral",
       "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-01-30",
-      "firm": "Stifel",
-      "from": "Buy",
-      "to": "Buy",
       "action": "main"
     }
   ],
@@ -230,13 +230,13 @@
     "net_pct": 3.1
   },
   "extras": {
-    "beta": 0.461,
-    "enterprise_value": 144134602752,
-    "ev_ebitda": 11.287,
-    "ev_revenue": 7.05,
-    "float_shares": 1666454530,
+    "beta": null,
+    "enterprise_value": 149084782592,
+    "ev_ebitda": 11.797,
+    "ev_revenue": 6.553,
+    "float_shares": 1660159944,
     "short_shares": 39819256,
-    "short_pct_float": 2.39,
+    "short_pct_float": 2.4,
     "short_ratio": 4.95,
     "last_split": "3:1",
     "last_split_date": "1997-04-11"
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-09-15",
   "dividend_date": null,
   "payout_ratio": 0.8926,
-  "inst_count": 3040,
+  "inst_count": 3041,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -273,15 +273,6 @@
   ],
   "insiders": [
     {
-      "name": "KELLY-ENNIS DEBRA J",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 72.25 per share.",
-      "value": 418318,
-      "shares": 5790,
-      "date": "2026-05-26"
-    },
-    {
       "name": "STRAHLMAN ELLEN",
       "role": "Director",
       "kind": "sell",
@@ -291,7 +282,16 @@
       "date": "2026-05-26"
     },
     {
-      "name": "YZAGUIRRE MARIO MAX",
+      "name": "KELLY-ENNIS DEBRA J",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 72.25 per share.",
+      "value": 418318,
+      "shares": 5790,
+      "date": "2026-05-26"
+    },
+    {
+      "name": "DAVIS ROBERT MATTHEWS",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -300,16 +300,16 @@
       "date": "2026-05-14"
     },
     {
-      "name": "MCQUADE KATHRYN ANN BOVA",
+      "name": "CLARKE IAN L.T.",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 4656,
+      "shares": 2571,
       "date": "2026-05-14"
     },
     {
-      "name": "SHANKS VIRGINIA E",
+      "name": "KELLY-ENNIS DEBRA J",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -345,7 +345,7 @@
       "date": "2026-05-14"
     },
     {
-      "name": "DAVIS ROBERT MATTHEWS",
+      "name": "YZAGUIRRE MARIO MAX",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -354,7 +354,7 @@
       "date": "2026-05-14"
     },
     {
-      "name": "CLARKE IAN L.T.",
+      "name": "SHANKS VIRGINIA E",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

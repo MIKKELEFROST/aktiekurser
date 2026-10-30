@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:33.147Z",
+  "updated_at": "2026-10-30T21:09:24.360Z",
   "source": "Yahoo Finance",
   "symbol": "FDXF",
   "summary": "FedEx Freight Holding Company, Inc. provides less-than-truckload freight transportation services in the United States and internationally. The company offers FedEx Freight Priority services, including next-business-day service for shipments traveling up to 600 miles and second-business-day service for shipments traveling up to 1,600 miles and backed by a money-back service guarantee if published delivery commitments are not met; and FedEx Freight Economy. It also provides surface expedite and white glove services; and LTL Select, a cloud-based transportation management system. In addition, the company offers volume and custom critical services, FedEx Freight Direct, and Retail Flex. It provides its services under the FedEx and FedEx Freight names. The company was incorporated in 2025 and is headquartered in Memphis, Tennessee.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 1.6,
+  "eps_estimate": 1.56333,
   "analysts": {
     "strong_buy": 3,
     "buy": 6,
@@ -41,6 +41,11 @@
       "q": "2Q2026",
       "revenue": 2400000000,
       "earnings": 158000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 2442000000,
+      "earnings": 147000000
     }
   ],
   "growth": {
@@ -50,6 +55,13 @@
     "y1": 0.1541
   },
   "ratings": [
+    {
+      "date": "2026-10-30",
+      "firm": "Evercore ISI Group",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
     {
       "date": "2026-10-08",
       "firm": "Stifel",
@@ -112,13 +124,6 @@
       "from": null,
       "to": "Buy",
       "action": "init"
-    },
-    {
-      "date": "2026-06-26",
-      "firm": "BMO Capital",
-      "from": "Market Perform",
-      "to": "Market Perform",
-      "action": "main"
     }
   ],
   "holders": [
@@ -203,9 +208,9 @@
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 22311299072,
-    "ev_ebitda": 22.559,
-    "ev_revenue": 2.537,
+    "enterprise_value": 22514644992,
+    "ev_ebitda": 22.765,
+    "ev_revenue": 2.56,
     "float_shares": 119415647,
     "short_shares": 6301557,
     "short_pct_float": 5.27,
@@ -216,8 +221,15 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 1448,
-  "eps_history": [],
+  "inst_count": 1442,
+  "eps_history": [
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.39,
+      "actual": 1.49,
+      "surprise_pct": 7.19
+    }
+  ],
   "insiders": [
     {
       "name": "WITT MARSHALL W",
@@ -227,69 +239,6 @@
       "value": 0,
       "shares": 20723,
       "date": "2026-08-07"
-    },
-    {
-      "name": "MARTIN ROBERT BRAD",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 3340,
-      "date": "2026-06-29"
-    },
-    {
-      "name": "GORMAN STEPHEN E",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 1169,
-      "date": "2026-06-29"
-    },
-    {
-      "name": "SAUERLAND JOHN PETER",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 1903,
-      "date": "2026-06-29"
-    },
-    {
-      "name": "RODGERS MICHAEL",
-      "role": "Chief Technology Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 5177,
-      "date": "2026-06-29"
-    },
-    {
-      "name": "WITT MARSHALL W",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 3624,
-      "date": "2026-06-29"
-    },
-    {
-      "name": "DAVIS JEFFREY A.",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 1169,
-      "date": "2026-06-29"
-    },
-    {
-      "name": "FRIESON DONALD E.",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 1169,
-      "date": "2026-06-29"
     },
     {
       "name": "SMITH JOHN ALAN",
@@ -307,6 +256,69 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 1169,
+      "date": "2026-06-29"
+    },
+    {
+      "name": "ERWIN GUY M II",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 7615,
+      "date": "2026-06-29"
+    },
+    {
+      "name": "MCCOY CLINTON D",
+      "role": "Chief Operating Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 3507,
+      "date": "2026-06-29"
+    },
+    {
+      "name": "KING ROBERT A",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 1169,
+      "date": "2026-06-29"
+    },
+    {
+      "name": "LYONS MICHAEL B",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 3340,
+      "date": "2026-06-29"
+    },
+    {
+      "name": "SMITH SAMANTHA M",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 1536,
+      "date": "2026-06-29"
+    },
+    {
+      "name": "KLANK CLEMENT E III",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 3507,
+      "date": "2026-06-29"
+    },
+    {
+      "name": "SALCIDO AMY J",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 1536,
       "date": "2026-06-29"
     }
   ],

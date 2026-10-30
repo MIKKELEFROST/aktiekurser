@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:34.471Z",
+  "updated_at": "2026-10-30T21:09:26.390Z",
   "source": "Yahoo Finance",
   "symbol": "TWLO",
   "summary": "Twilio Inc., together with its subsidiaries, provides customer engagement platform solutions in the United States and internationally. The company provides various application programming interfaces and software solutions for communications between customers and end users, including messaging, voice, email, video interactions, digital engagement centers, marketing campaigns, and user authentication and identity solutions. It also offers software products to build direct and personalized relationships with their end users, such as Segment, a platform that provides tools to harness the power of contextual data by unifying real-time information collected throughout each customer's journey into a unique profile. Twilio Inc. was incorporated in 2008 and is headquartered in San Francisco, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 1.4683,
+  "eps_estimate": 1.48374,
   "analysts": {
     "strong_buy": 6,
     "buy": 19,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 1300402000,
-      "earnings": 37248000
-    },
-    {
       "q": "4Q2025",
       "revenue": 1365930000,
       "earnings": -45854000
@@ -69,15 +64,34 @@
       "q": "2Q2026",
       "revenue": 1499089000,
       "earnings": 1067209000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1559536000,
+      "earnings": 161157000
     }
   ],
   "growth": {
-    "q0": 0.17459999,
-    "q1": 0.115600005,
+    "q0": 0.115600005,
+    "q1": 0.0521,
     "y0": 0.2132,
     "y1": 0.1464
   },
   "ratings": [
+    {
+      "date": "2026-10-30",
+      "firm": "Wells Fargo",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-30",
+      "firm": "Needham",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-28",
       "firm": "Wells Fargo",
@@ -133,20 +147,6 @@
       "from": "Buy",
       "to": "Buy",
       "action": "main"
-    },
-    {
-      "date": "2026-09-11",
-      "firm": "BTIG",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "reit"
-    },
-    {
-      "date": "2026-08-27",
-      "firm": "Citizens",
-      "from": "Market Outperform",
-      "to": "Market Outperform",
-      "action": "reit"
     }
   ],
   "holders": [
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.357,
-    "enterprise_value": 37381971968,
-    "ev_ebitda": 74.793,
-    "ev_revenue": 6.709,
+    "enterprise_value": 35559034880,
+    "ev_ebitda": 71.145,
+    "ev_revenue": 6.381,
     "float_shares": 152933276,
     "short_shares": 6051947,
     "short_pct_float": 5.09,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 1416,
+  "inst_count": 1418,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.06844,
-      "actual": 1.25,
-      "surprise_pct": 16.99
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.22977,
@@ -269,6 +263,12 @@
       "estimate": 1.32361,
       "actual": 1.47,
       "surprise_pct": 11.06
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.4683,
+      "actual": 1.65,
+      "surprise_pct": 12.37
     }
   ],
   "insiders": [
@@ -282,15 +282,6 @@
       "date": "2026-10-05"
     },
     {
-      "name": "ROBINSON DOUGLAS A",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 341,
-      "date": "2026-09-15"
-    },
-    {
       "name": "STAFMAN ANDREW J.",
       "role": "Director",
       "kind": "other",
@@ -301,6 +292,15 @@
     },
     {
       "name": "SUZUKI MIYUKI",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 341,
+      "date": "2026-09-15"
+    },
+    {
+      "name": "ROBINSON DOUGLAS A",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -354,12 +354,12 @@
       "date": "2026-07-02"
     },
     {
-      "name": "VIGGIANO AIDAN",
-      "role": "Chief Financial Officer",
+      "name": "SHIPCHANDLER KHOZEMA",
+      "role": "Chief Executive Officer",
       "kind": "sell",
-      "text": "Sale at price 199.27 - 203.68 per share.",
-      "value": 1829978,
-      "shares": 9093,
+      "text": "Sale at price 199.24 - 203.88 per share.",
+      "value": 2793699,
+      "shares": 13881,
       "date": "2026-06-30"
     }
   ],

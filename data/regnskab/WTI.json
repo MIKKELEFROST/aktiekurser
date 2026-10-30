@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:34.671Z",
+  "updated_at": "2026-10-30T21:09:26.135Z",
   "source": "Yahoo Finance",
   "symbol": "WTI",
   "summary": "W&T Offshore, Inc., an independent oil and natural gas producer, engages in the acquisition, exploration, and development of oil and natural gas properties in the Gulf of America. The company sells crude oil, condensate, natural gas, liquids, and natural gas liquids. The company also provides construction, drilling, and production activities necessary to retrieve oil and gas from its natural reservoirs, including the acquisition, construction, installation, and maintenance of field gathering and storage systems, such as lifting oil and gas, and gathering, treating, and field processing; and extraction of hydrocarbons, solid, liquid, or gaseous state, oil sands, shale, coalbeds, or other nonrenewable natural resources. W&T Offshore, Inc. was founded in 1983 and is headquartered in Houston, Texas.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-30",
-  "eps_estimate": -0.04743,
+  "eps_estimate": -0.03316,
   "analysts": {
     "strong_buy": 1,
     "buy": 2,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 127515000,
-      "earnings": -71474000
-    },
-    {
       "q": "4Q2025",
       "revenue": 121713000,
       "earnings": -27127000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 162619000,
       "earnings": 12561000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 167080000,
+      "earnings": -13649000
     }
   ],
   "growth": {
-    "q0": 0.0514,
-    "q1": 0.76309997,
+    "q0": 0.76309997,
+    "q1": 0,
     "y0": 0.89589995,
     "y1": -0.8237
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.356,
-    "enterprise_value": 839690240,
-    "ev_ebitda": 5.633,
-    "ev_revenue": 1.494,
+    "enterprise_value": 811011072,
+    "ev_ebitda": 5.44,
+    "ev_revenue": 1.443,
     "float_shares": 99290274,
     "short_shares": 13393045,
     "short_pct_float": 13.73,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.090900004,
   "inst_count": 229,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.07132,
-      "actual": -0.05,
-      "surprise_pct": 29.89
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.11602,
@@ -269,6 +263,12 @@
       "estimate": 0.03499,
       "actual": 0.02,
       "surprise_pct": -42.84
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.04743,
+      "actual": 0.01,
+      "surprise_pct": 121.08
     }
   ],
   "insiders": [

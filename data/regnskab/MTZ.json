@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:33.779Z",
+  "updated_at": "2026-10-30T21:09:25.129Z",
   "source": "Yahoo Finance",
   "symbol": "MTZ",
   "summary": "MasTec, Inc., an infrastructure engineering and construction company, provides engineering, building, installation, maintenance, and upgrade services for communications, energy, utility, and other infrastructure primarily in the United States and Canada. It operates through five segments: Communications, Clean Energy and Infrastructure, Power Delivery, Pipeline Infrastructure, and Other. The company builds infrastructure for wireless and wireline/fiber communications; clean energy infrastructure comprising renewable energy power generation; pipeline infrastructure, including natural gas, water, carbon capture sequestration, and other product transport; power delivery services, such as electrical and gas transmission, and distribution systems; industrial and heavy civil infrastructure, including roads, bridges, and rail; and water infrastructure. It also installs electrical and other gas distribution and transmission systems, power generation, civil and industrial facilities, pipelines, and fiber optic and other cables, as well as install-to-the-home services. In addition, the company offers maintenance and upgrade support services comprising maintenance of customers' distribution facilities, networks, and infrastructure, including communications, power generation, pipeline, electrical distribution and transmission, and civil and industrial infrastructure; emergency restoration services for natural disasters and accidents; and routine replacements and upgrades to overhauls. Its customers include wireless and wireline/fiber service providers, broadband operators, install-to-the-home service providers, public and private energy providers, including renewable and other energy providers, pipeline operators, civil, transportation, and water and wastewater pipeline installation services, industrial infrastructure providers, as well as government entities. MasTec, Inc. was founded in 1929 and is headquartered in Coral Gables, Florida.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-30",
-  "eps_estimate": 2.95682,
+  "eps_estimate": 2.68643,
   "analysts": {
     "strong_buy": 4,
     "buy": 17,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 3966948000,
-      "earnings": 160660000
-    },
-    {
       "q": "4Q2025",
       "revenue": 3939800000,
       "earnings": 142713000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 4373554000,
       "earnings": 130117000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 5152336000,
+      "earnings": 150566000
     }
   ],
   "growth": {
-    "q0": 0.19229999,
-    "q1": 0.2978,
+    "q0": 0.2978,
+    "q1": 0.4081,
     "y0": 0.4158,
     "y1": 0.3327
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.843,
-    "enterprise_value": 17392349184,
-    "ev_ebitda": 13.292,
-    "ev_revenue": 1.08,
+    "enterprise_value": 17140241408,
+    "ev_ebitda": 13.1,
+    "ev_revenue": 1.064,
     "float_shares": 62364934,
     "short_shares": 4473139,
     "short_pct_float": 7.05,
@@ -244,14 +244,8 @@
   "ex_dividend": "1982-08-04",
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 1159,
+  "inst_count": 1156,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 2.30178,
-      "actual": 2.48,
-      "surprise_pct": 7.74
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.9452,
@@ -269,54 +263,15 @@
       "estimate": 2.23372,
       "actual": 2.22,
       "surprise_pct": -0.61
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 2.95682,
+      "actual": 2.96,
+      "surprise_pct": 0.11
     }
   ],
   "insiders": [
-    {
-      "name": "DWYER ROBERT J",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 139,
-      "date": "2026-08-14"
-    },
-    {
-      "name": "CSISZAR ERNST N",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 152,
-      "date": "2026-08-14"
-    },
-    {
-      "name": "CAMPBELL CHARLES ROBERT",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 139,
-      "date": "2026-08-14"
-    },
-    {
-      "name": "JOHNSON JULIA LOUISE",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 139,
-      "date": "2026-08-14"
-    },
-    {
-      "name": "PARKER AVA L",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 177,
-      "date": "2026-08-14"
-    },
     {
       "name": "PALOMAREZ JAVIER ALBERTO",
       "role": "Director",
@@ -347,6 +302,51 @@
     {
       "name": "CSISZAR ERNST N",
       "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 152,
+      "date": "2026-08-14"
+    },
+    {
+      "name": "CAMPBELL CHARLES ROBERT",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 139,
+      "date": "2026-08-14"
+    },
+    {
+      "name": "DWYER ROBERT J",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 139,
+      "date": "2026-08-14"
+    },
+    {
+      "name": "JOHNSON JULIA LOUISE",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 139,
+      "date": "2026-08-14"
+    },
+    {
+      "name": "PARKER AVA L",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 177,
+      "date": "2026-08-14"
+    },
+    {
+      "name": "CSISZAR ERNST N",
+      "role": "Director",
       "kind": "sell",
       "text": "Sale at price 371.17 per share.",
       "value": 2412605,
@@ -354,7 +354,7 @@
       "date": "2026-06-03"
     },
     {
-      "name": "DWYER ROBERT J",
+      "name": "PALOMAREZ JAVIER ALBERTO",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

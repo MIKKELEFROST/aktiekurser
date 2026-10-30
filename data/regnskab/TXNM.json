@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:34.474Z",
+  "updated_at": "2026-10-30T21:09:25.932Z",
   "source": "Yahoo Finance",
   "symbol": "TXNM",
   "summary": "TXNM Energy, Inc., through its subsidiaries, provides electricity and electric services in the United States. The company engages in the generation, transmission, and distribution of electricity for retail electric customers; and owns and leases communications, office and other equipment, office space, vehicles, energy storage facilities, and real estate. It also provides regulated transmission and distribution services in Texas, as well as owns and leases vehicles, service facilities, and office locations throughout its service territory. It serves residential, commercial, and industrial customers and end-users of electricity in New Mexico and Texas. The company was formerly known as PNM Resources, Inc and changed its name to TXNM Energy, Inc. in August 2024. TXNM Energy, Inc. was founded in 1882 and is based in Albuquerque, New Mexico.",
@@ -8,9 +8,9 @@
   "employees": 1755,
   "ceo": "Mr. Joseph D. Tarry CPA",
   "next_earnings": "2026-10-30",
-  "earnings_estimated": true,
+  "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": 1.52461,
+  "eps_estimate": 0.46998,
   "analysts": {
     "strong_buy": 1,
     "buy": 0,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 647162000,
-      "earnings": 130710000
-    },
-    {
       "q": "4Q2025",
       "revenue": 533232000,
       "earnings": -9847000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 548554000,
       "earnings": 0
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 733290000,
+      "earnings": 0
     }
   ],
   "growth": {
-    "q0": 0.1463,
-    "q1": -0.0209,
+    "q0": -0.0209,
+    "q1": 0.9007,
     "y0": 0.22700001,
     "y1": 0.1349
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.17,
-    "enterprise_value": 12064878592,
-    "ev_ebitda": 12.85,
-    "ev_revenue": 5.401,
+    "enterprise_value": 12070030336,
+    "ev_ebitda": 12.856,
+    "ev_revenue": 5.403,
     "float_shares": 81856739,
     "short_shares": 5986730,
     "short_pct_float": 6.14,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.954,
   "inst_count": 516,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.44379,
-      "actual": 1.33,
-      "surprise_pct": -7.88
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.63516,
@@ -269,38 +263,17 @@
       "estimate": 0.5655,
       "actual": 0.58,
       "surprise_pct": 2.56
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.52461,
+      "actual": 1.62,
+      "surprise_pct": 6.26
     }
   ],
   "insiders": [
     {
       "name": "BECKER NORMAN P",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 2698,
-      "date": "2026-06-10"
-    },
-    {
-      "name": "MONTOYA LILLIAN J",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 2698,
-      "date": "2026-06-10"
-    },
-    {
-      "name": "MAESTAS STEVEN",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 2698,
-      "date": "2026-06-10"
-    },
-    {
-      "name": "GUTIERREZ SIDNEY M",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -345,21 +318,48 @@
       "date": "2026-06-10"
     },
     {
-      "name": "MONROY HENRY E.",
-      "role": "Chief Financial Officer",
+      "name": "GUTIERREZ SIDNEY M",
+      "role": "Director",
       "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 992,
-      "date": "2026-03-06"
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 2698,
+      "date": "2026-06-10"
     },
     {
-      "name": "BISCHOFF GERALD ROBERT",
+      "name": "MONTOYA LILLIAN J",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 2698,
+      "date": "2026-06-10"
+    },
+    {
+      "name": "MAESTAS STEVEN",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 2698,
+      "date": "2026-06-10"
+    },
+    {
+      "name": "IVERSON BRIAN G",
       "role": "Officer",
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 788,
+      "shares": 1163,
+      "date": "2026-03-06"
+    },
+    {
+      "name": "TARRY JOSEPH DON",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 7248,
       "date": "2026-03-06"
     }
   ],

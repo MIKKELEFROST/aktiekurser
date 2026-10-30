@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:32.589Z",
+  "updated_at": "2026-10-30T21:09:23.681Z",
   "source": "Yahoo Finance",
   "symbol": "BHVN",
   "summary": "Biohaven Ltd., a biopharmaceutical company, focuses on the discovery, development, and commercialization of treatments for immunology, neuroscience, and oncology therapeutic areas worldwide. It develops BHV-1300, which is in Phase 2 clinical trial to treat Graves' disease and rheumatoid arthritis; BHV-1400 that is in Phase 2 clinical trial for treating IgA nephropathy; BHV-1600, which is in Phase 1 clinical trial for the treatment of peripartum cardiomyopathy; BHV-8000 that is in Phase 3 clinical trial for treating Parkinson's disease; Opakalim, which is in Phase 3 clinical trial for the treatment of focal epilepsy; BHV-2100 that is in Phase 2 clinical trial for the treatment of pain disorders; and BHV-2000, which is in Phase 2 clinical trial for treating obesity. The company is also developing BHV-1510 that is in Phase 2 clinical trial for the treatment of advanced or metastatic epithelial tumors; and BHV-1530, which is in Phase 2 clinical trial for treating urothelial cancer and other tumors. In addition, its preclinical product pipeline includes BHV-1310 for treating myasthenia gravis; BHV-1320 for treating immune mediated-diseases; BHV-1450 for treating Pemphigus, MuSK MG, and LGI-1 Encephalitis; BHV-1420 for treating membranous nephropathy; BHV-1440 for treating Graves' disease and TED; BHV-6500 for treating type 1 diabetes; BHV-1490 for treating IgM neuropathy and Waldenstrom's; BHV-8100 for treating neurodegenerative diseases; and BHV-1955 for treating tinnitus. The company was formerly known as Biohaven Research Ltd. and changed its name to Biohaven Ltd. in September 2022. Biohaven Ltd. was incorporated in 2022 and is headquartered in New Haven, Connecticut.",
@@ -7,10 +7,10 @@
   "website": "https://www.biohaven.com",
   "employees": 274,
   "ceo": "Dr. Vladimir  Coric M.D.",
-  "next_earnings": "2026-11-09",
-  "earnings_estimated": true,
+  "next_earnings": "2026-10-29",
+  "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": 0.15791,
+  "eps_estimate": -0.13392,
   "analysts": {
     "strong_buy": 3,
     "buy": 9,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 0,
-      "earnings": -173443000
-    },
-    {
       "q": "4Q2025",
       "revenue": 0,
       "earnings": -145555000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 0,
       "earnings": -137311000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 0,
+      "earnings": -129279000
     }
   ],
   "growth": {
-    "q0": 1.1074,
-    "q1": 0.85120004,
+    "q0": 0.85120004,
+    "q1": 0.33330002,
     "y0": 0.7665,
     "y1": -0.3427
   },
@@ -231,8 +231,8 @@
   },
   "extras": {
     "beta": 3.203,
-    "enterprise_value": 2373368576,
-    "ev_ebitda": -4.563,
+    "enterprise_value": 2519880960,
+    "ev_ebitda": -4.845,
     "ev_revenue": null,
     "float_shares": 116572569,
     "short_shares": 17899310,
@@ -246,12 +246,6 @@
   "payout_ratio": null,
   "inst_count": 377,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -1.54433,
-      "actual": -1.47,
-      "surprise_pct": 4.81
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.95508,
@@ -269,6 +263,12 @@
       "estimate": -0.61125,
       "actual": -0.78,
       "surprise_pct": -27.61
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.15791,
+      "actual": -0.73,
+      "surprise_pct": -562.29
     }
   ],
   "insiders": [
@@ -336,6 +336,15 @@
       "date": "2025-11-17"
     },
     {
+      "name": "CHILDS JOHN W",
+      "role": "Director",
+      "kind": "buy",
+      "text": "Purchase at price 7.50 per share.",
+      "value": 24999998,
+      "shares": 3333333,
+      "date": "2025-11-13"
+    },
+    {
       "name": "BAILEY GREGORY HUGH",
       "role": "Director",
       "kind": "buy",
@@ -351,15 +360,6 @@
       "text": "Purchase at price 7.50 per share.",
       "value": 4999995,
       "shares": 666666,
-      "date": "2025-11-13"
-    },
-    {
-      "name": "CHILDS JOHN W",
-      "role": "Director",
-      "kind": "buy",
-      "text": "Purchase at price 7.50 per share.",
-      "value": 24999998,
-      "shares": 3333333,
       "date": "2025-11-13"
     }
   ],

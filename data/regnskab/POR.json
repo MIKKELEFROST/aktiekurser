@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:34.072Z",
+  "updated_at": "2026-10-30T21:09:25.481Z",
   "source": "Yahoo Finance",
   "symbol": "POR",
   "summary": "Portland General Electric Company, an integrated electric utility company, engages in the generation, wholesale purchase, transmission, distribution, and retail sale of electricity in the state of Oregon. It operates six thermal plants, four wind farms, and seven hydroelectric facilities. As of December 31, 2025, the company owned an electric transmission system consisting of 1,744 circuit miles, including 287 circuit miles of 500 kilovolt line, 414 circuit miles of 230 kilovolt line, and 577 miles of 115 kilovolt line; 466 miles of 57 kilovolt line; and served 960 thousand retail customers in 51 cities. It also has 29,251 circuit miles of distribution lines. Portland General Electric Company was founded in 1889 and is headquartered in Portland, Oregon.",
@@ -79,6 +79,13 @@
   },
   "ratings": [
     {
+      "date": "2026-10-30",
+      "firm": "Wells Fargo",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
       "date": "2026-09-30",
       "firm": "BMO Capital",
       "from": "Market Perform",
@@ -137,13 +144,6 @@
     {
       "date": "2026-02-17",
       "firm": "Barclays",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
-      "action": "main"
-    },
-    {
-      "date": "2026-01-20",
-      "firm": "Wells Fargo",
       "from": "Equal-Weight",
       "to": "Equal-Weight",
       "action": "main"
@@ -230,21 +230,21 @@
     "net_pct": 1.6
   },
   "extras": {
-    "beta": 0.51,
-    "enterprise_value": 10785495040,
-    "ev_ebitda": 9.868,
-    "ev_revenue": 3.052,
-    "float_shares": 116999708,
+    "beta": null,
+    "enterprise_value": 10484121600,
+    "ev_ebitda": 9.496,
+    "ev_revenue": 2.951,
+    "float_shares": 118486338,
     "short_shares": 7599567,
-    "short_pct_float": 8.64,
+    "short_pct_float": 8.52,
     "short_ratio": 4.08,
     "last_split": null,
     "last_split_date": null
   },
   "ex_dividend": "2026-12-22",
   "dividend_date": null,
-  "payout_ratio": 0.9408,
-  "inst_count": 665,
+  "payout_ratio": 0.9199,
+  "inst_count": 661,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -280,24 +280,6 @@
       "value": 79663,
       "shares": 1537,
       "date": "2026-07-27"
-    },
-    {
-      "name": "O'LEARY JOHN",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 52.05 per share.",
-      "value": 159950,
-      "shares": 3073,
-      "date": "2026-07-24"
-    },
-    {
-      "name": "HOGLUND ROBERT N",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 52.05 per share.",
-      "value": 159950,
-      "shares": 3073,
-      "date": "2026-07-24"
     },
     {
       "name": "JAMES RENEE JO",
@@ -336,6 +318,15 @@
       "date": "2026-07-24"
     },
     {
+      "name": "HOGLUND ROBERT N",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 52.05 per share.",
+      "value": 159950,
+      "shares": 3073,
+      "date": "2026-07-24"
+    },
+    {
       "name": "PINEDA PATRICIA SALAS",
       "role": "Director",
       "kind": "other",
@@ -354,12 +345,21 @@
       "date": "2026-07-24"
     },
     {
-      "name": "MCFARLAND JOHN CARTER",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 48.51 - 48.52 per share.",
-      "value": 115962,
-      "shares": 2390,
+      "name": "O'LEARY JOHN",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 52.05 per share.",
+      "value": 159950,
+      "shares": 3073,
+      "date": "2026-07-24"
+    },
+    {
+      "name": "HOGLUND ROBERT N",
+      "role": "Director",
+      "kind": "buy",
+      "text": "Purchase at price 48.80 per share.",
+      "value": 97600,
+      "shares": 2000,
       "date": "2026-05-11"
     }
   ],

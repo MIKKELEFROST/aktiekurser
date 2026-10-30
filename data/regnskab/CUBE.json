@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:32.901Z",
+  "updated_at": "2026-10-30T21:09:24.066Z",
   "source": "Yahoo Finance",
   "symbol": "CUBE",
   "summary": "CubeSmart is a self-administered and self-managed real estate investment trust. The Company's self-storage properties are designed to offer affordable, easily accessible and, in most locations, climate-controlled storage space for residential and commercial customers. According to the 2026 Self-Storage Almanac, CubeSmart is one of the top three owners and operators of self-storage properties in the United States. CubeSmart was incorporated in 2004 in Maryland and is based in Malvern, Pennsylvania.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-30",
-  "eps_estimate": 0.42104,
+  "eps_estimate": 0.40277,
   "analysts": {
     "strong_buy": 4,
     "buy": 4,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 285080000,
-      "earnings": 82930000
-    },
-    {
       "q": "4Q2025",
       "revenue": 282691000,
       "earnings": 78695000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 286486000,
       "earnings": 89585000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 293968000,
+      "earnings": 94355000
     }
   ],
   "growth": {
-    "q0": 0.1696,
-    "q1": 0.1846,
+    "q0": 0.1846,
+    "q1": 0.0929,
     "y0": 0.040700004,
     "y1": 0.0464
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.043,
-    "enterprise_value": 12665752576,
-    "ev_ebitda": 17.96,
-    "ev_revenue": 11.121,
+    "enterprise_value": 12834624512,
+    "ev_ebitda": 18.199,
+    "ev_revenue": 11.269,
     "float_shares": 210790146,
     "short_shares": 8402491,
     "short_pct_float": 5.3,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-10-01",
   "dividend_date": null,
   "payout_ratio": 1.4452001,
-  "inst_count": 725,
+  "inst_count": 726,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.379,
-      "actual": 0.36,
-      "surprise_pct": -5.01
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.3715,
@@ -269,24 +263,30 @@
       "estimate": 0.36386,
       "actual": 0.39,
       "surprise_pct": 7.18
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.42104,
+      "actual": 0.42,
+      "surprise_pct": -0.25
     }
   ],
   "insiders": [
     {
       "name": "MARR CHRISTOPHER PAUL",
       "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 26.30 per share.",
-      "value": 2864912,
+      "kind": "sell",
+      "text": "Sale at price 42.24 per share.",
+      "value": 4601625,
       "shares": 108932,
       "date": "2026-06-10"
     },
     {
       "name": "MARR CHRISTOPHER PAUL",
       "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 42.24 per share.",
-      "value": 4601625,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 26.30 per share.",
+      "value": 2864912,
       "shares": 108932,
       "date": "2026-06-10"
     },

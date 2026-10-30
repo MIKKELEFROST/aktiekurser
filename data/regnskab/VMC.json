@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:34.571Z",
+  "updated_at": "2026-10-30T21:09:26.025Z",
   "source": "Yahoo Finance",
   "symbol": "VMC",
   "summary": "Vulcan Materials Company produces and supplies construction aggregates in the United States. It operates through three segments: Aggregates, Asphalt, and Concrete. The company provides crushed stone, sand and gravel, sand, and other aggregates for use in construction and maintenance of highways, streets, and other public works, as well as in the construction of housing and commercial, industrial, and other nonresidential facilities; aggregates that are used as ballast for construction and maintenance of railroad tracks; riprap and jetty stones for use in erosion control along roads and waterways; asphalt mix; asphalt construction paving services; and ready-mixed concrete products. The company was formerly known as Virginia Holdco, Inc. and changed its name to Vulcan Materials Company. Vulcan Materials Company was founded in 1909 and is headquartered in Birmingham, Alabama.",
@@ -10,18 +10,18 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 2.0684,
+  "eps_estimate": 2.11312,
   "analysts": {
     "strong_buy": 2,
     "buy": 14,
-    "hold": 7,
+    "hold": 6,
     "sell": 1,
-    "strong_sell": 0,
+    "strong_sell": 1,
     "total": 24
   },
-  "target_mean": 306.69565,
+  "target_mean": 306.73914,
   "target_high": 365,
-  "target_low": 238,
+  "target_low": 240,
   "target_analysts": 23,
   "statements": [
     {
@@ -72,12 +72,33 @@
     }
   ],
   "growth": {
-    "q0": 0.2167,
-    "q1": 0.081499994,
-    "y0": 0.102,
-    "y1": 0.1598
+    "q0": 0.24299999,
+    "q1": 0.056599997,
+    "y0": 0.1035,
+    "y1": 0.15
   },
   "ratings": [
+    {
+      "date": "2026-10-30",
+      "firm": "DA Davidson",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-30",
+      "firm": "Wells Fargo",
+      "from": "Underweight",
+      "to": "Underweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-30",
+      "firm": "RBC Capital",
+      "from": "Sector Perform",
+      "to": "Sector Perform",
+      "action": "main"
+    },
     {
       "date": "2026-10-28",
       "firm": "Stifel",
@@ -126,27 +147,6 @@
       "from": "Buy",
       "to": "Buy",
       "action": "main"
-    },
-    {
-      "date": "2026-10-02",
-      "firm": "Citigroup",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-09-21",
-      "firm": "DA Davidson",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-09-09",
-      "firm": "Wells Fargo",
-      "from": "Equal-Weight",
-      "to": "Underweight",
-      "action": "down"
     }
   ],
   "holders": [
@@ -227,16 +227,16 @@
     "sells": 2,
     "bought": 123280,
     "sold": 16000,
-    "net_pct": 55.7
+    "net_pct": 56
   },
   "extras": {
-    "beta": 1.046,
-    "enterprise_value": 39110164480,
-    "ev_ebitda": 16.712,
-    "ev_revenue": 4.819,
-    "float_shares": 129155017,
+    "beta": null,
+    "enterprise_value": 41368719360,
+    "ev_ebitda": 17.967,
+    "ev_revenue": 5.165,
+    "float_shares": 128677843,
     "short_shares": 4247396,
-    "short_pct_float": 3.79,
+    "short_pct_float": 3.83,
     "short_ratio": 3.34,
     "last_split": "3:1",
     "last_split_date": "1999-03-11"
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-11-09",
   "dividend_date": null,
   "payout_ratio": 0.2382,
-  "inst_count": 1439,
+  "inst_count": 1440,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -266,9 +266,9 @@
     },
     {
       "quarter": "2026-09-30",
-      "estimate": 2.81053,
+      "estimate": 2.81803,
       "actual": 2.83,
-      "surprise_pct": 0.69
+      "surprise_pct": 0.42
     }
   ],
   "insiders": [
@@ -318,12 +318,12 @@
       "date": "2026-06-12"
     },
     {
-      "name": "ANDERSON MELISSA HANFT",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 303.72 per share.",
-      "value": 345330,
-      "shares": 1137,
+      "name": "PERKINS JERRY F. JR.",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 9560,
       "date": "2026-02-20"
     },
     {
@@ -354,12 +354,12 @@
       "date": "2026-02-20"
     },
     {
-      "name": "PERKINS JERRY F. JR.",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 9560,
+      "name": "ANDERSON MELISSA HANFT",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 303.72 per share.",
+      "value": 345330,
+      "shares": 1137,
       "date": "2026-02-20"
     }
   ],

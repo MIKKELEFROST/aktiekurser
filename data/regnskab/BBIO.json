@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:32.543Z",
+  "updated_at": "2026-10-30T21:09:23.630Z",
   "source": "Yahoo Finance",
   "symbol": "BBIO",
   "summary": "BridgeBio Pharma, Inc., a biopharmaceutical company, discovers, develops, and delivers medicines for patients with genetic diseases. The company offers Attruby, a next-generation oral small molecule near-complete TTR stabilizer for the treatment of cardiomyopathy of wild-type or transthyretin-mediated amyloidosis (ATTR-CM); Fosdenopterin, an intravenous formulation of synthetic cyclic pyranopterin monophosphate for the treatment of molybdenum cofactor deficiency under the NULIBRY brand name; and low-dose infigratinib, an oral FGFR1-3 selective tyrosine kinase inhibitor, which is in Phase 3 clinical stage or the treatment of children with achondroplasia and hypochondroplasia. It also develops Encaleret, an oral small molecule, negative allosteric modulator of the calcium sensing receptor, which is in phase 3 clinical study for the treatment of Autosomal Dominant Hypocalcemia Type 1(ADH1) and Chronic Hypoparathyroidism (CHP); BBP-418, an investigational, orally administered, and small molecule therapy that is in phase 3 clinical study for the treatment of LGMD2I; and BBP-812, an investigational adeno-associated virus (AAV) gene therapy for Canavan disease. In addition, the company engages in developing products for mendelian, oncology, and gene therapy diseases. It has license and collaboration agreements with the Bayer Consumer Care AG, Alexion Pharma International Operations Limited Company, Leland Stanford Junior University, and Novartis International Pharmaceutical Ltd. BridgeBio Pharma, Inc. was founded in 2015 and is headquartered in Palo Alto, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": -0.55696,
+  "eps_estimate": -0.403,
   "analysts": {
     "strong_buy": 5,
     "buy": 15,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 120700000,
-      "earnings": -182743000
-    },
-    {
       "q": "4Q2025",
       "revenue": 154178000,
       "earnings": -192863000
@@ -69,15 +64,34 @@
       "q": "2Q2026",
       "revenue": 243676000,
       "earnings": -152216000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 353171000,
+      "earnings": -83003000
     }
   ],
   "growth": {
-    "q0": 0.2228,
-    "q1": 0.5708,
+    "q0": 0.5708,
+    "q1": 0.5992,
     "y0": 0.3081,
     "y1": 0.9142
   },
   "ratings": [
+    {
+      "date": "2026-10-30",
+      "firm": "TD Cowen",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-30",
+      "firm": "Morgan Stanley",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-10-21",
       "firm": "Morgan Stanley",
@@ -132,20 +146,6 @@
       "firm": "Truist Securities",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-12",
-      "firm": "Canaccord Genuity",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-12",
-      "firm": "JP Morgan",
-      "from": "Overweight",
-      "to": "Overweight",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.972,
-    "enterprise_value": 16506734592,
-    "ev_ebitda": -34.916,
-    "ev_revenue": 23.149,
+    "enterprise_value": 16489141248,
+    "ev_ebitda": -34.879,
+    "ev_revenue": 23.124,
     "float_shares": 167192617,
     "short_shares": 19997556,
     "short_pct_float": 11.42,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": null,
-  "inst_count": 652,
+  "inst_count": 655,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.77667,
-      "actual": -0.7166,
-      "surprise_pct": 7.73
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.62333,
@@ -269,6 +263,12 @@
       "estimate": -0.58266,
       "actual": -0.78,
       "surprise_pct": -33.87
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.55696,
+      "actual": -0.42,
+      "surprise_pct": 24.59
     }
   ],
   "insiders": [
@@ -311,19 +311,19 @@
     {
       "name": "COOK JENNIFER E",
       "role": "Director",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 8.45 - 29.00 per share.",
-      "value": 3708335,
+      "kind": "sell",
+      "text": "Sale at price 84.00 - 90.00 per share.",
+      "value": 13156008,
       "shares": 148589,
       "date": "2026-07-09"
     },
     {
-      "name": "ELLIS ANDREA",
+      "name": "COOK JENNIFER E",
       "role": "Director",
       "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 16.75 per share.",
-      "value": 287547,
-      "shares": 17167,
+      "text": "Conversion of Exercise of derivative security at price 8.45 - 29.00 per share.",
+      "value": 3708335,
+      "shares": 148589,
       "date": "2026-07-09"
     },
     {
@@ -336,22 +336,13 @@
       "date": "2026-07-09"
     },
     {
-      "name": "COOK JENNIFER E",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 84.00 - 90.00 per share.",
-      "value": 13156008,
-      "shares": 148589,
-      "date": "2026-07-09"
-    },
-    {
-      "name": "COOK JENNIFER E",
+      "name": "ELLIS ANDREA",
       "role": "Director",
       "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 8.45 - 16.75 per share.",
-      "value": 456547,
-      "shares": 37167,
-      "date": "2026-06-24"
+      "text": "Conversion of Exercise of derivative security at price 16.75 per share.",
+      "value": 287547,
+      "shares": 17167,
+      "date": "2026-07-09"
     },
     {
       "name": "COOK JENNIFER E",
@@ -360,6 +351,15 @@
       "text": "Sale at price 68.57 - 70.00 per share.",
       "value": 2752270,
       "shares": 39363,
+      "date": "2026-06-24"
+    },
+    {
+      "name": "COOK JENNIFER E",
+      "role": "Director",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 8.45 - 16.75 per share.",
+      "value": 456547,
+      "shares": 37167,
       "date": "2026-06-24"
     }
   ],

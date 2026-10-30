@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:34.075Z",
+  "updated_at": "2026-10-30T21:09:25.485Z",
   "source": "Yahoo Finance",
   "symbol": "PPG",
   "summary": "PPG Industries, Inc. manufactures and distributes paints, coatings, and specialty materials in the United States, Canada, the Asia Pacific, Latin America, Europe, the Middle East, and Africa. It operates through three segments: Global Architectural Coatings, Performance Coatings, and Industrial Coatings. The Global Architectural Coatings segment supplies a variety of decorative coatings, adhesives, sealants, and finishes, as well as paint strippers, stains, and related chemicals. Its Performance Coatings segment offers aerospace coatings, automotive refinishing coatings, protective and marine coatings, and traffic solutions comprising paints, thermoplastics, raised pavement markers, and other technologies for pavement marking. The Industrial Coatings segment provides automotive OEM coatings, industrial coatings, and packaging coatings, as well as specialty products, such as optical monomers and coatings, low-friction coatings, and other specialty products. The company delivers its products to company-owned stores, home centers and other consumer retail outlets, paint dealers, concessionaires and independent distributors, company-owned distribution networks, and directly to manufacturing companies and retail customers. PPG Industries, Inc. was incorporated in 1883 and is headquartered in Pittsburgh, Pennsylvania.",
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 25
   },
-  "target_mean": 129.31818,
+  "target_mean": 129.90909,
   "target_high": 140,
   "target_low": 115,
   "target_analysts": 22,
@@ -74,10 +74,17 @@
   "growth": {
     "q0": 0.1154,
     "q1": 0.058000002,
-    "y0": 0.0554,
-    "y1": 0.078600004
+    "y0": 0.0561,
+    "y1": 0.0783
   },
   "ratings": [
+    {
+      "date": "2026-10-29",
+      "firm": "JP Morgan",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-10-29",
       "firm": "RBC Capital",
@@ -140,83 +147,76 @@
       "from": "Neutral",
       "to": "Neutral",
       "action": "main"
-    },
-    {
-      "date": "2026-09-11",
-      "firm": "Keybanc",
-      "from": null,
-      "to": "Overweight",
-      "action": "init"
     }
   ],
   "holders": [
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 10.59,
+      "pct": 10.66,
       "shares": 23550100,
       "date": "2026-06-30"
     },
     {
       "name": "Vanguard Capital Management LLC",
       "kind": "institution",
-      "pct": 6.54,
+      "pct": 6.59,
       "shares": 14548240,
       "date": "2026-06-30"
     },
     {
       "name": "State Street Corporation",
       "kind": "institution",
-      "pct": 6.24,
+      "pct": 6.28,
       "shares": 13871116,
       "date": "2026-06-30"
     },
     {
       "name": "Vanguard Portfolio Management LLC",
       "kind": "institution",
-      "pct": 5.77,
+      "pct": 5.81,
       "shares": 12826587,
       "date": "2026-06-30"
     },
     {
       "name": "Wellington Management Group, LLP",
       "kind": "institution",
-      "pct": 3.87,
+      "pct": 3.9,
       "shares": 8612746,
       "date": "2026-06-30"
     },
     {
       "name": "Franklin Resources, Inc.",
       "kind": "institution",
-      "pct": 3.55,
+      "pct": 3.57,
       "shares": 7881941,
       "date": "2026-06-30"
     },
     {
       "name": "Pzena Investment Management LLC",
       "kind": "institution",
-      "pct": 3.51,
+      "pct": 3.53,
       "shares": 7807438,
       "date": "2026-06-30"
     },
     {
       "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
       "kind": "fond",
-      "pct": 3.18,
+      "pct": 3.2,
       "shares": 7077798,
       "date": "2026-06-30"
     },
     {
       "name": "First Eagle Investment Management, LLC",
       "kind": "institution",
-      "pct": 2.93,
+      "pct": 2.95,
       "shares": 6509824,
       "date": "2026-06-30"
     },
     {
       "name": "Hotchkis & Wiley Capital Management, LLC",
       "kind": "institution",
-      "pct": 2.85,
+      "pct": 2.87,
       "shares": 6331643,
       "date": "2026-06-30"
     }
@@ -231,10 +231,10 @@
   },
   "extras": {
     "beta": 1.05,
-    "enterprise_value": 32337211392,
-    "ev_ebitda": null,
-    "ev_revenue": null,
-    "float_shares": 221815386,
+    "enterprise_value": 32483000320,
+    "ev_ebitda": 11.778,
+    "ev_revenue": 1.946,
+    "float_shares": 220418438,
     "short_shares": 6678071,
     "short_pct_float": 3.48,
     "short_ratio": 3.84,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-11-10",
   "dividend_date": null,
   "payout_ratio": 0.4031,
-  "inst_count": 1483,
+  "inst_count": 1484,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -291,42 +291,6 @@
       "date": "2026-06-12"
     },
     {
-      "name": "FORTMANN KATHY LYNN",
-      "role": "Director",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 107.72 per share.",
-      "value": 199174,
-      "shares": 1849,
-      "date": "2026-04-15"
-    },
-    {
-      "name": "SMITH CATHY R",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 1849,
-      "date": "2026-04-15"
-    },
-    {
-      "name": "HEMINGER GARY R",
-      "role": "Director",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 107.72 per share.",
-      "value": 199174,
-      "shares": 1849,
-      "date": "2026-04-15"
-    },
-    {
-      "name": "NOVO GUILLERMO",
-      "role": "Director",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 107.72 per share.",
-      "value": 199174,
-      "shares": 1849,
-      "date": "2026-04-15"
-    },
-    {
       "name": "HEALEY MELANIE L",
       "role": "Director",
       "kind": "other",
@@ -355,6 +319,42 @@
     },
     {
       "name": "NALLY MICHAEL",
+      "role": "Director",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 107.72 per share.",
+      "value": 199174,
+      "shares": 1849,
+      "date": "2026-04-15"
+    },
+    {
+      "name": "ROBERTS CHRISTOPHER III",
+      "role": "Director",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 107.72 per share.",
+      "value": 199174,
+      "shares": 1849,
+      "date": "2026-04-15"
+    },
+    {
+      "name": "FORTMANN KATHY LYNN",
+      "role": "Director",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 107.72 per share.",
+      "value": 199174,
+      "shares": 1849,
+      "date": "2026-04-15"
+    },
+    {
+      "name": "LIGOCKI KATHLEEN A",
+      "role": "Director",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 107.72 per share.",
+      "value": 199174,
+      "shares": 1849,
+      "date": "2026-04-15"
+    },
+    {
+      "name": "LAMACH MICHAEL W",
       "role": "Director",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 107.72 per share.",

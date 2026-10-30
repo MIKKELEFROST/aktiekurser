@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:34.678Z",
+  "updated_at": "2026-10-30T21:09:26.144Z",
   "source": "Yahoo Finance",
   "symbol": "WY",
   "summary": "Weyerhaeuser Company, one of the world's largest private owners of timberlands, began operations in 1900 and today owns or controls more than 10 million acres of timberlands in the U.S., as well as additional public timberlands managed under long-term licenses in Canada. Weyerhaeuser has been a global leader in sustainability for more than a century and manages 100 percent of its timberlands on a fully sustainable basis in compliance with internationally recognized sustainable forestry standards. Weyerhaeuser is also one of the largest manufacturers of wood products in North America and operates additional business lines around product distribution, climate solutions, real estate, energy and natural resources, among others. In 2025, the company generated 6.9 billion dollar in net sales and employed approximately 9,500 people who serve customers worldwide. Weyerhaeuser Company was founded in 1900 and was incorporated in Washington.",
@@ -7,10 +7,10 @@
   "website": "https://www.weyerhaeuser.com",
   "employees": 9500,
   "ceo": "Mr. Devin W. Stockfish Esq., J.D.",
-  "next_earnings": "2026-10-29",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-28",
+  "earnings_estimated": true,
   "earnings_call": "2026-10-30",
-  "eps_estimate": 0.03504,
+  "eps_estimate": -0.02654,
   "analysts": {
     "strong_buy": 2,
     "buy": 8,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 1717000000,
-      "earnings": 80000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 1541000000,
       "earnings": 74000000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 1867000000,
       "earnings": 162000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1862000000,
+      "earnings": 61000000
     }
   ],
   "growth": {
-    "q0": -0.41599998,
-    "q1": 0.7051,
+    "q0": 0.7051,
+    "q1": -0.087299995,
     "y0": 0.2603,
     "y1": 1.1841999
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.933,
-    "enterprise_value": 18752923648,
-    "ev_ebitda": 27.257,
-    "ev_revenue": 2.737,
+    "enterprise_value": 19156535296,
+    "ev_ebitda": 27.844,
+    "ev_revenue": 2.796,
     "float_shares": 717290882,
     "short_shares": 34388450,
     "short_pct_float": 5.7,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-09-04",
   "dividend_date": null,
   "payout_ratio": 1.2923,
-  "inst_count": 1236,
+  "inst_count": 1235,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.07756,
-      "actual": 0.06,
-      "surprise_pct": 177.36
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.13003,
@@ -269,11 +263,17 @@
       "estimate": 0.07804,
       "actual": 0.13,
       "surprise_pct": 66.58
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.03504,
+      "actual": 0.08,
+      "surprise_pct": 128.31
     }
   ],
   "insiders": [
     {
-      "name": "SELZER LAWRENCE A",
+      "name": "WILLIAMS KIM",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -291,7 +291,7 @@
       "date": "2026-05-15"
     },
     {
-      "name": "WILLIAMS KIM",
+      "name": "EMMERT MARK A",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -318,7 +318,7 @@
       "date": "2026-05-15"
     },
     {
-      "name": "BECKWITT RICHARD",
+      "name": "SELZER LAWRENCE A",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -327,7 +327,7 @@
       "date": "2026-05-15"
     },
     {
-      "name": "EMMERT MARK A",
+      "name": "BECKWITT RICHARD",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -354,12 +354,12 @@
       "date": "2026-02-19"
     },
     {
-      "name": "STOCKFISH DEVIN W",
-      "role": "Chief Executive Officer",
+      "name": "CHANEY BRIAN K",
+      "role": "Officer",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 270148,
+      "shares": 34101,
       "date": "2026-02-13"
     }
   ],

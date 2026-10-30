@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:34.645Z",
+  "updated_at": "2026-10-30T21:09:26.100Z",
   "source": "Yahoo Finance",
   "symbol": "WKC",
   "summary": "World Kinect Corporation, together with its subsidiaries, operates as an energy management company in the United States, rest of the Americas, Europe, the Middle East, Africa, and the Asia Pacific. It operates in three segments: Aviation, Land, and Marine. The Aviation segment supplies jet fuel, sustainable aviation fuel, aviation gasoline, and aviation fuel to commercial and international airlines, regional airlines, cargo carriers, airports, fixed-based operators, corporate fleets, charter and fractional operators, the U.S. and foreign governments, and military customers. This segment also provides fuel management; ground handling; dispatch services; and trip support services, such as flight planning and scheduling. The Land segment engages in the sale of liquid fuels, natural gas, and related products and services to commercial, industrial, residential, and government customers; and the transportation, manufacturing, mining, and construction industries, as well as retail fuel outlets under long-term contracts. The Marine segment markets fuel, lubricants, and related products and services to international container, dry bulk and tanker fleets, commercial cruise lines, yachts and time charter operators, the U.S. and foreign governments, and other fuel suppliers. This segment also provides marine fuel-related services, such as management services for the procurement of fuel, cost control, quality control, and claims management, as well as engages in the fueling of vessels in ports and at sea, and transportation and delivery of fuel and fuel-related products. The company was formerly known as World Fuel Services Corporation and changed its name to World Kinect Corporation in June 2023. World Kinect Corporation was incorporated in 1984 and is headquartered in Miami, Florida.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 0.95667,
+  "eps_estimate": 0.6,
   "analysts": {
     "strong_buy": 1,
     "buy": 0,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 9391800000,
-      "earnings": 25700000
-    },
-    {
       "q": "4Q2025",
       "revenue": 9029000000,
       "earnings": -279700000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 13591200000,
       "earnings": 48400000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 13270700000,
+      "earnings": 38000000
     }
   ],
   "growth": {
-    "q0": 0.7716,
-    "q1": 1,
+    "q0": 1,
+    "q1": -0.2978,
     "y0": 0.8848,
     "y1": -0.2889
   },
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 9,
-    "sells": 15,
+    "sells": 14,
     "bought": 57530,
-    "sold": 188720,
+    "sold": 187873,
     "net_pct": -6
   },
   "extras": {
     "beta": 1.227,
-    "enterprise_value": 2492160768,
-    "ev_ebitda": 7.141,
-    "ev_revenue": 0.06,
+    "enterprise_value": 2522851840,
+    "ev_ebitda": 7.229,
+    "ev_revenue": 0.061,
     "float_shares": 49294816,
     "short_shares": 11453756,
     "short_pct_float": 33.43,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-09-28",
   "dividend_date": null,
   "payout_ratio": 2.1935,
-  "inst_count": 431,
+  "inst_count": 432,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.60667,
-      "actual": 0.54,
-      "surprise_pct": -10.99
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.47,
@@ -269,6 +263,12 @@
       "estimate": 0.75,
       "actual": 1.29,
       "surprise_pct": 72
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.95667,
+      "actual": 0.99,
+      "surprise_pct": 3.48
     }
   ],
   "insiders": [
@@ -345,21 +345,21 @@
       "date": "2026-07-02"
     },
     {
+      "name": "MANLEY JOHN L",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 7231,
+      "date": "2026-06-18"
+    },
+    {
       "name": "STEBBINS PAUL H",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 6106,
-      "date": "2026-06-18"
-    },
-    {
-      "name": "BAKSHI KEN",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 7070,
       "date": "2026-06-18"
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:33.610Z",
+  "updated_at": "2026-10-30T21:09:24.919Z",
   "source": "Yahoo Finance",
   "symbol": "KWR",
   "summary": "Quaker Chemical Corporation, doing business as Quaker Houghton, provides industrial process fluids worldwide. The company develops, produces, and markets various formulated specialty chemical products; and offers chemical management services for various heavy industrial and manufacturing applications. It offers metal removal fluids, cleaning fluids, corrosion inhibitors, metal drawing and forming fluids, die cast mold releases, heat treatment and quenchants, metal forging and hydraulic fluids, specialty greases, offshore sub-sea energy control fluids, rolling lubricants, and rod and wire drawing fluids. The company serves steel, aluminum, automotive, aerospace, offshore, container, mining, and metalworking companies. Quaker Chemical Corporation was founded in 1918 and is headquartered in Conshohocken, Pennsylvania.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-30",
-  "eps_estimate": 2.1006,
+  "eps_estimate": 1.80484,
   "analysts": {
     "strong_buy": 2,
     "buy": 5,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 493842000,
-      "earnings": 30469000
-    },
-    {
       "q": "4Q2025",
       "revenue": 468478000,
       "earnings": 20701000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 532550000,
       "earnings": 26835000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 544548000,
+      "earnings": 29977000
     }
   ],
   "growth": {
-    "q0": 0.0099,
-    "q1": 0.0938,
+    "q0": 0.0938,
+    "q1": 0.23110001,
     "y0": 0.12060001,
     "y1": 0.2156
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.396,
-    "enterprise_value": 3472271616,
-    "ev_ebitda": 12.1,
-    "ev_revenue": 1.758,
+    "enterprise_value": 3488619008,
+    "ev_ebitda": 12.157,
+    "ev_revenue": 1.766,
     "float_shares": 13373654,
     "short_shares": 1724422,
     "short_pct_float": 15.15,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.35810003,
   "inst_count": 425,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.98467,
-      "actual": 2.08,
-      "surprise_pct": 4.8
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.75263,
@@ -269,6 +263,12 @@
       "estimate": 1.66068,
       "actual": 2.19,
       "surprise_pct": 31.87
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 2.1006,
+      "actual": 2.39,
+      "surprise_pct": 13.78
     }
   ],
   "insiders": [
@@ -309,15 +309,6 @@
       "date": "2026-06-01"
     },
     {
-      "name": "DOUGLAS MARK A",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 766,
-      "date": "2026-06-01"
-    },
-    {
       "name": "SHALLER RUSSELL R",
       "role": "Director",
       "kind": "other",
@@ -327,25 +318,16 @@
       "date": "2026-06-01"
     },
     {
-      "name": "WEST FAY",
+      "name": "DOUGLAS MARK A",
       "role": "Director",
       "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 1216,
-      "date": "2026-05-29"
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 766,
+      "date": "2026-06-01"
     },
     {
-      "name": "SHALLER RUSSELL R",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 1216,
-      "date": "2026-05-29"
-    },
-    {
-      "name": "HINDUJA SANJAY G.",
+      "name": "FRISBY JEFFRY D",
       "role": "Director",
       "kind": "other",
       "text": null,
@@ -355,6 +337,24 @@
     },
     {
       "name": "HENRY CHARLOTTE C",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 1216,
+      "date": "2026-05-29"
+    },
+    {
+      "name": "FOUFOPOULOS - DE RIDDER LUCRECE",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 1216,
+      "date": "2026-05-29"
+    },
+    {
+      "name": "BAKHSHI NANDITA",
       "role": "Director",
       "kind": "other",
       "text": null,

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:34.326Z",
+  "updated_at": "2026-10-30T21:09:25.757Z",
   "source": "Yahoo Finance",
   "symbol": "SPSC",
   "summary": "SPS Commerce, Inc. provides cloud-based supply chain management solutions in the United States. It offers solutions through SPS Commerce, a cloud-based platform that connects retailers, brands, distributors, manufacturers, and logistics providers, handling the complexity of modern commerce operations. The company also provides Fulfillment, a comprehensive solution designed to streamline supply chain operation that sends and receives order data, ensuring accurate execution of required processes from order to invoicing and revenue recovery through fully automated operations; and Analytics product that simplifies managing sell-through data from customers business partners that handle data acquisition, cleansing, normalization, and delivery. In addition, it offers various complimentary products, such as assortment product, which simplifies the communication of robust, accurate item data by automatically translating item attributes, and hierarchies through single connection across all sales channels; and relationship management product that allows organizations to accelerate digitization of their supply chain and improve collaboration with suppliers through change management, onboarding programs, and supplier score carding. The company was formerly known as St. Paul Software, Inc. and changed its name to SPS Commerce, Inc. in May 2001. SPS Commerce, Inc. was incorporated in 1987 and is headquartered in Minneapolis, Minnesota.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 1.23041,
+  "eps_estimate": 1.31414,
   "analysts": {
     "strong_buy": 1,
     "buy": 2,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 189904000,
-      "earnings": 25569000
-    },
-    {
       "q": "4Q2025",
       "revenue": 192652000,
       "earnings": 25841000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 197815000,
       "earnings": 6864000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 197647000,
+      "earnings": 30683000
     }
   ],
   "growth": {
-    "q0": 0.0889,
-    "q1": 0.1528,
+    "q0": 0.1528,
+    "q1": 0.1232,
     "y0": 0.14829999,
     "y1": 0.0862
   },
   "ratings": [
+    {
+      "date": "2026-10-30",
+      "firm": "DA Davidson",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-10-20",
       "firm": "Citigroup",
@@ -139,13 +146,6 @@
       "firm": "DA Davidson",
       "from": "Neutral",
       "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-05-04",
-      "firm": "Citigroup",
-      "from": "Buy",
-      "to": "Buy",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.619,
-    "enterprise_value": 2914393856,
-    "ev_ebitda": 15.908,
-    "ev_revenue": 3.773,
+    "enterprise_value": 2921233920,
+    "ev_ebitda": 15.946,
+    "ev_revenue": 3.782,
     "float_shares": 35557012,
     "short_shares": 2860268,
     "short_pct_float": 9.45,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 458,
+  "inst_count": 460,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.99752,
-      "actual": 1.13,
-      "surprise_pct": 13.28
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.00833,
@@ -269,9 +263,24 @@
       "estimate": 1.09441,
       "actual": 1.27,
       "surprise_pct": 16.04
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.23041,
+      "actual": 1.39,
+      "surprise_pct": 12.97
     }
   ],
   "insiders": [
+    {
+      "name": "RELLER TAMI L",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 3736,
+      "date": "2026-05-28"
+    },
     {
       "name": "PARTIN MARK W.",
       "role": "Director",
@@ -292,15 +301,6 @@
     },
     {
       "name": "MCCONNELL MICHAEL J",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 3736,
-      "date": "2026-05-28"
-    },
-    {
-      "name": "RELLER TAMI L",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -354,12 +354,12 @@
       "date": "2026-05-08"
     },
     {
-      "name": "REAUME MARTY M",
-      "role": "Director",
+      "name": "DEL PRETO JOSEPH M II",
+      "role": "Chief Financial Officer",
       "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 51.80 per share.",
-      "value": 51800,
-      "shares": 1000,
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 141707,
       "date": "2026-05-07"
     }
   ],

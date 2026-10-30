@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:32.971Z",
+  "updated_at": "2026-10-30T21:09:24.135Z",
   "source": "Yahoo Finance",
   "symbol": "DLR",
   "summary": "Digital Realty Trust, Inc. brings companies and data together by delivering the full spectrum of data center, colocation, and interconnection solutions. Platform DIGITAL, the company's global data center platform, provides customers with a secure data meeting place and a proven Pervasive Datacenter Architecture (PDx) solution methodology for powering innovation, from cloud and digital transformation to emerging technologies like artificial intelligence (AI), and efficiently managing Data Gravity challenges. Digital Realty gives its customers access to the connected data communities that matter to them with a global data center footprint of 300+ facilities in 55+ metros across 30+ countries on six continents. Digital Realty Trust, Inc. was founded in 2004 and is based in Austin, Texas.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 0.575,
+  "eps_estimate": 0.53,
   "analysts": {
     "strong_buy": 5,
     "buy": 24,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 1577234000,
-      "earnings": 57631000
-    },
-    {
       "q": "4Q2025",
       "revenue": 1634671000,
       "earnings": 88466000
@@ -69,15 +64,34 @@
       "q": "2Q2026",
       "revenue": 1924040000,
       "earnings": 443108000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1902418000,
+      "earnings": 185165000
     }
   ],
   "growth": {
-    "q0": 0.7061,
-    "q1": 0.32970002,
+    "q0": 0.32970002,
+    "q1": null,
     "y0": 1.0241001,
     "y1": -0.1333
   },
   "ratings": [
+    {
+      "date": "2026-10-30",
+      "firm": "Wells Fargo",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-30",
+      "firm": "Cantor Fitzgerald",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-10-21",
       "firm": "CIBC",
@@ -130,20 +144,6 @@
     {
       "date": "2026-07-29",
       "firm": "Cantor Fitzgerald",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-27",
-      "firm": "RBC Capital",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-24",
-      "firm": "JP Morgan",
       "from": "Overweight",
       "to": "Overweight",
       "action": "main"
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.011,
-    "enterprise_value": 87532322816,
-    "ev_ebitda": 27.266,
-    "ev_revenue": 12.954,
+    "enterprise_value": 88694235136,
+    "ev_ebitda": 27.628,
+    "ev_revenue": 13.126,
     "float_shares": 350383555,
     "short_shares": 26107,
     "short_pct_float": 0.01,
@@ -246,12 +246,6 @@
   "payout_ratio": 2.3689,
   "inst_count": 1840,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.23,
-      "actual": 0.33703,
-      "surprise_pct": 46.53
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.39,
@@ -269,6 +263,12 @@
       "estimate": 0.73,
       "actual": 0.6205,
       "surprise_pct": -15
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.575,
+      "actual": 0.6076,
+      "surprise_pct": 5.67
     }
   ],
   "insiders": [

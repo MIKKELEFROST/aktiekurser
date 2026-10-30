@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:33.086Z",
+  "updated_at": "2026-10-30T21:09:24.290Z",
   "source": "Yahoo Finance",
   "symbol": "ERIE",
   "summary": "Erie Indemnity Company operates as a managing attorney-in-fact for the subscribers at the Erie Insurance Exchange in the United States. It provides issuance and renewal services; sales related services, including agent compensation and sales and advertising support services; underwriting services that include underwriting and policy processing; and other services consist of customer services and administrative support services, as well as information technology services. The company was incorporated in 1925 and is based in Erie, Pennsylvania.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-30",
-  "eps_estimate": 3.41,
+  "eps_estimate": 2.95,
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 1060097000,
-      "earnings": 174685000
-    },
-    {
       "q": "3Q2025",
       "revenue": 1066739000,
       "earnings": 182853000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 1089796000,
       "earnings": 180294000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1069917000,
+      "earnings": 181989000
     }
   ],
   "growth": {
-    "q0": -0.0224,
-    "q1": 0.0683,
+    "q0": 0.0683,
+    "q1": null,
     "y0": 0.0369,
     "y1": null
   },
@@ -160,9 +160,9 @@
   },
   "extras": {
     "beta": 0.331,
-    "enterprise_value": 12641848320,
-    "ev_ebitda": 15.14,
-    "ev_revenue": 3.069,
+    "enterprise_value": 12871923712,
+    "ev_ebitda": 15.416,
+    "ev_revenue": 3.125,
     "float_shares": 25137831,
     "short_shares": 2488722,
     "short_pct_float": 9.94,
@@ -173,14 +173,8 @@
   "ex_dividend": "2026-10-05",
   "dividend_date": null,
   "payout_ratio": 0.5215,
-  "inst_count": 627,
+  "inst_count": 625,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 3.37,
-      "actual": 3.488,
-      "surprise_pct": 3.5
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.59,
@@ -198,6 +192,12 @@
       "estimate": 3.35,
       "actual": 3.4479,
       "surprise_pct": 2.92
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 3.41,
+      "actual": 3.5622,
+      "surprise_pct": 4.46
     }
   ],
   "insiders": [

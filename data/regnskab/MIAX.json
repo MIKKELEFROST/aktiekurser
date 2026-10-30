@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:34.747Z",
+  "updated_at": "2026-10-30T21:09:26.212Z",
   "source": "Yahoo Finance",
   "symbol": "MIAX",
   "summary": "Miami International Holdings, Inc., through its subsidiaries, builds and operates various financial marketplaces in the United States. It operates through Options, Equities, and International segments. The company's markets include options through MIAX Options, MIAX Pearl, MIAX Emerald, and MIAX Sapphire; U.S. equities through MIAX Pearl Equities; U.S. futures and options on futures through MIAX Futures; and international listings through BSX and TISE. It also trades Hard Red Spring Wheat futures and options on MIAX Futures; provides clearing services for U.S. futures and options on futures through MIAX Futures Clearing; and owns Dorman Trading, a full-service futures commission merchant provides execution and clearing services for introducing brokers, retail customers, institutional clients, and professional traders. In addition, the company offers financial markets and securities services to public and private companies. Miami International Holdings, Inc. was incorporated in 2007 and is headquartered in Princeton, New Jersey.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 0.36851,
+  "eps_estimate": 0.39546,
   "analysts": {
     "strong_buy": 1,
     "buy": 2,
@@ -39,11 +39,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 109483000,
-      "earnings": -102080000
-    },
-    {
       "q": "4Q2025",
       "revenue": 124501000,
       "earnings": 29944000
@@ -57,11 +52,16 @@
       "q": "2Q2026",
       "revenue": 141113000,
       "earnings": 44208000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 131009000,
+      "earnings": 52472000
     }
   ],
   "growth": {
-    "q0": -0.122600004,
-    "q1": -0.2395,
+    "q0": -0.2395,
+    "q1": 0.0476,
     "y0": -0.0868,
     "y1": 0.121700004
   },
@@ -219,9 +219,9 @@
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 2494882048,
-    "ev_ebitda": 10.959,
-    "ev_revenue": 1.701,
+    "enterprise_value": 2441297408,
+    "ev_ebitda": 10.724,
+    "ev_revenue": 1.665,
     "float_shares": 93260175,
     "short_shares": 7967675,
     "short_pct_float": 10.1,
@@ -232,14 +232,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 290,
+  "inst_count": 289,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.30106,
-      "actual": 0.42,
-      "surprise_pct": 39.51
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.40765,
@@ -257,9 +251,24 @@
       "estimate": 0.40844,
       "actual": 0.48,
       "surprise_pct": 17.52
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.36851,
+      "actual": 0.45,
+      "surprise_pct": 22.11
     }
   ],
   "insiders": [
+    {
+      "name": "SCHAFER DOUGLAS M. JR.",
+      "role": "Chief Technology Officer",
+      "kind": "sell",
+      "text": "Sale at price 35.06 per share.",
+      "value": 280480,
+      "shares": 8000,
+      "date": "2026-10-22"
+    },
     {
       "name": "SCHAFER DOUGLAS M. JR.",
       "role": "Chief Technology Officer",
@@ -267,6 +276,15 @@
       "text": "Conversion of Exercise of derivative security at price 12.00 per share.",
       "value": 96000,
       "shares": 8000,
+      "date": "2026-10-22"
+    },
+    {
+      "name": "COMLY BARBARA J.",
+      "role": "General Counsel",
+      "kind": "sell",
+      "text": "Sale at price 35.04 per share.",
+      "value": 431202,
+      "shares": 12306,
       "date": "2026-10-22"
     },
     {
@@ -282,19 +300,10 @@
       "name": "SCHAFER DOUGLAS M. JR.",
       "role": "Chief Technology Officer",
       "kind": "sell",
-      "text": "Sale at price 35.06 per share.",
-      "value": 280480,
-      "shares": 8000,
-      "date": "2026-10-22"
-    },
-    {
-      "name": "COMLY BARBARA J.",
-      "role": "General Counsel",
-      "kind": "sell",
-      "text": "Sale at price 35.04 per share.",
-      "value": 431202,
-      "shares": 12306,
-      "date": "2026-10-22"
+      "text": "Sale at price 33.34 per share.",
+      "value": 1333600,
+      "shares": 40000,
+      "date": "2026-10-02"
     },
     {
       "name": "SCHAFER DOUGLAS M. JR.",
@@ -302,15 +311,6 @@
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 12.00 per share.",
       "value": 480000,
-      "shares": 40000,
-      "date": "2026-10-02"
-    },
-    {
-      "name": "SCHAFER DOUGLAS M. JR.",
-      "role": "Chief Technology Officer",
-      "kind": "sell",
-      "text": "Sale at price 33.34 per share.",
-      "value": 1333600,
       "shares": 40000,
       "date": "2026-10-02"
     },
@@ -335,19 +335,19 @@
     {
       "name": "DEITZEL EDWARD",
       "role": "Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 12.00 per share.",
-      "value": 132000,
+      "kind": "sell",
+      "text": "Sale at price 42.21 per share.",
+      "value": 464310,
       "shares": 11000,
       "date": "2026-09-03"
     },
     {
-      "name": "GALLAGHER THOMAS P.",
-      "role": "Chief Executive Officer",
+      "name": "DEITZEL EDWARD",
+      "role": "Officer",
       "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 12.00 - 22.40 per share.",
-      "value": 1163972,
-      "shares": 89603,
+      "text": "Conversion of Exercise of derivative security at price 12.00 per share.",
+      "value": 132000,
+      "shares": 11000,
       "date": "2026-09-03"
     }
   ],

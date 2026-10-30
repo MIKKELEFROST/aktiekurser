@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:34.834Z",
+  "updated_at": "2026-10-30T21:09:26.319Z",
   "source": "Yahoo Finance",
   "symbol": "RBLX",
   "summary": "Roblox Corporation operates an immersive platform for connection and communication in the United States and internationally. It offers Roblox Client, an application that allows users to explore immersive experience; Roblox Studio, a free toolset that allows developers and creators to build, publish, and operate immersive experiences and other content; and Roblox Cloud, which provides services and infrastructure that power the platform. Roblox Corporation was incorporated in 2004 and is headquartered in San Mateo, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": -0.385,
+  "eps_estimate": -0.43667,
   "analysts": {
     "strong_buy": 4,
     "buy": 13,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 1921817000,
-      "earnings": -255626000
-    },
-    {
       "q": "4Q2025",
       "revenue": 2222275000,
       "earnings": -316000000
@@ -69,15 +64,48 @@
       "q": "2Q2026",
       "revenue": 1557000000,
       "earnings": -183000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1697000000,
+      "earnings": -227000000
     }
   ],
   "growth": {
-    "q0": -0.0405,
-    "q1": 0.0296,
+    "q0": 0.0296,
+    "q1": -0.3366,
     "y0": 0.0231,
     "y1": 0.169
   },
   "ratings": [
+    {
+      "date": "2026-10-30",
+      "firm": "Wedbush",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-30",
+      "firm": "StoneX",
+      "from": "Sell",
+      "to": "Sell",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-30",
+      "firm": "Needham",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "reit"
+    },
+    {
+      "date": "2026-10-30",
+      "firm": "BTIG",
+      "from": "Sell",
+      "to": "Sell",
+      "action": "main"
+    },
     {
       "date": "2026-10-28",
       "firm": "BTIG",
@@ -118,34 +146,6 @@
       "firm": "DA Davidson",
       "from": "Neutral",
       "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-09-28",
-      "firm": "Jefferies",
-      "from": "Hold",
-      "to": "Underperform",
-      "action": "down"
-    },
-    {
-      "date": "2026-09-23",
-      "firm": "Needham",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-09-15",
-      "firm": "Macquarie",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-09-15",
-      "firm": "Roth Capital",
-      "from": "Buy",
-      "to": "Buy",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.468,
-    "enterprise_value": 36860948480,
-    "ev_ebitda": -43.699,
-    "ev_revenue": 6.483,
+    "enterprise_value": 36275163136,
+    "ev_ebitda": -43.004,
+    "ev_revenue": 6.38,
     "float_shares": 643166947,
     "short_shares": 25758781,
     "short_pct_float": 3.98,
@@ -246,12 +246,6 @@
   "payout_ratio": null,
   "inst_count": 1095,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.50204,
-      "actual": -0.37,
-      "surprise_pct": 26.3
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.46458,
@@ -269,6 +263,12 @@
       "estimate": -0.33442,
       "actual": -0.26,
       "surprise_pct": 22.25
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.42174,
+      "actual": -0.32,
+      "surprise_pct": 24.12
     }
   ],
   "insiders": [
@@ -336,21 +336,21 @@
       "date": "2026-08-24"
     },
     {
-      "name": "BASZUCKI DAVID BRENT",
-      "role": "Chief Executive Officer",
+      "name": "KAUFMAN MATTHEW D",
+      "role": "Officer",
       "kind": "sell",
-      "text": "Sale at price 37.78 - 38.44 per share.",
-      "value": 1995399,
-      "shares": 52568,
+      "text": "Sale at price 37.78 - 38.47 per share.",
+      "value": 565761,
+      "shares": 14904,
       "date": "2026-08-20"
     },
     {
-      "name": "CHOPRA NAVEEN KUMAR",
-      "role": "Chief Financial Officer",
+      "name": "BUCKLEY SEAN JACK",
+      "role": "Officer",
       "kind": "sell",
-      "text": "Sale at price 37.78 - 38.45 per share.",
-      "value": 664663,
-      "shares": 17509,
+      "text": "Sale at price 37.81 - 38.47 per share.",
+      "value": 212900,
+      "shares": 5607,
       "date": "2026-08-20"
     },
     {

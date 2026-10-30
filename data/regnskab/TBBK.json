@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:34.409Z",
+  "updated_at": "2026-10-30T21:09:25.841Z",
   "source": "Yahoo Finance",
   "symbol": "TBBK",
   "summary": "The Bancorp, Inc. operates as the financial holding company for The Bancorp Bank, National Association that provides banking products and services in the United States. It offers a range of deposit products and services, including checking, savings, money market, and commercial accounts. The company also provides securities-backed lines of credit and insurance policy cash value-backed lines of credit; investor advisor financing; financing to investment advisors; Small Business Administration loan; lease financing for commercial and government vehicle fleets; commercial real estate bridge loans, as well as consumer fintech loans comprising short-term extensions of credit, including secured credit card loans, payroll advances, and others. In addition, it offers automated clearing house (ACH) bill, and other payment services; debit and prepaid card issuing services; card and bill payment; account services; data processing services, check imaging, loan processing, electronic bill payment and statement rendering; call center customer support; access to automated teller machine networks; bank accounting and general ledger system; data warehousing services; and software development services. The company was incorporated in 1999 and is headquartered in Wilmington, Delaware.",
@@ -7,10 +7,10 @@
   "website": "https://www.thebancorp.com",
   "employees": 733,
   "ceo": "Mr. Damian M. Kozlowski",
-  "next_earnings": "2026-10-29",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-28",
+  "earnings_estimated": true,
   "earnings_call": "2026-10-30",
-  "eps_estimate": 1.47,
+  "eps_estimate": 1.7,
   "analysts": {
     "strong_buy": 2,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 94197000,
-      "earnings": 54927000
-    },
-    {
       "q": "4Q2025",
       "revenue": 92079000,
       "earnings": 56292000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 90466000,
       "earnings": 60656000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 90067000,
+      "earnings": 62780000
     }
   ],
   "growth": {
-    "q0": 0.2458,
-    "q1": 0.32810003,
+    "q0": 0.32810003,
+    "q1": 0.305,
     "y0": 0.21540001,
     "y1": 0.3378
   },
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 10,
-    "sells": 3,
+    "sells": 1,
     "bought": 29500,
-    "sold": 15927,
-    "net_pct": 0.5
+    "sold": 3057,
+    "net_pct": 1.1
   },
   "extras": {
     "beta": 1.254,
-    "enterprise_value": 2934643968,
+    "enterprise_value": 2938722560,
     "ev_ebitda": null,
-    "ev_revenue": 5.517,
+    "ev_revenue": 5.525,
     "float_shares": 38274749,
     "short_shares": 3671327,
     "short_pct_float": 14.26,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 397,
+  "inst_count": 396,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.33,
-      "actual": 1.18,
-      "surprise_pct": -11.28
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.46,
@@ -269,6 +263,12 @@
       "estimate": 1.36333,
       "actual": 1.45,
       "surprise_pct": 6.36
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.47,
+      "actual": 1.47,
+      "surprise_pct": 0
     }
   ],
   "insiders": [
@@ -282,16 +282,25 @@
       "date": "2026-08-06"
     },
     {
-      "name": "KOZLOV HERSH",
+      "name": "ALLEN DWAYNE",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 3600,
+      "shares": 2250,
       "date": "2026-05-27"
     },
     {
-      "name": "MCENTEE JAMES J III",
+      "name": "CREUZOT CHERYL",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 2250,
+      "date": "2026-05-27"
+    },
+    {
+      "name": "BROCKMAN TODD J.",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -327,7 +336,7 @@
       "date": "2026-05-27"
     },
     {
-      "name": "ALLEN DWAYNE",
+      "name": "COHN MATTHEW",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -336,16 +345,7 @@
       "date": "2026-05-27"
     },
     {
-      "name": "CREUZOT CHERYL",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 2250,
-      "date": "2026-05-27"
-    },
-    {
-      "name": "BROCKMAN TODD J.",
+      "name": "KOZLOV HERSH",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -354,12 +354,12 @@
       "date": "2026-05-27"
     },
     {
-      "name": "COHN MATTHEW",
+      "name": "MCENTEE JAMES J III",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 2250,
+      "shares": 3600,
       "date": "2026-05-27"
     }
   ],

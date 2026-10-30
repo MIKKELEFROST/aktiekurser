@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:34.164Z",
+  "updated_at": "2026-10-30T21:09:25.586Z",
   "source": "Yahoo Finance",
   "symbol": "RYAN",
   "summary": "Ryan Specialty Holdings, Inc. operates as a service provider of specialty products and solutions for insurance brokers, agents, and carriers in the United States, Canada, the United Kingdom, rest of Europe, India, Singapore, and internationally. The company offers distribution, underwriting, product development, administration, and risk management services by acting as a wholesale broker and a managing underwriter or a program administrator with delegated authority from insurance carriers. It serves commercial, industrial, institutional, individual, and government sectors. The company was founded in 2010 and is headquartered in Chicago, Illinois.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 0.48586,
+  "eps_estimate": 0.47522,
   "analysts": {
     "strong_buy": 4,
     "buy": 5,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 754577000,
-      "earnings": 62603000
-    },
-    {
       "q": "4Q2025",
       "revenue": 751213000,
       "earnings": 31238000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 916647000,
       "earnings": 108381000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 789963000,
+      "earnings": 88048000
     }
   ],
   "growth": {
-    "q0": 0.0337,
-    "q1": 0.055999998,
+    "q0": 0.055999998,
+    "q1": 0.1521,
     "y0": 0.1046,
     "y1": 0.12560001
   },
   "ratings": [
+    {
+      "date": "2026-10-30",
+      "firm": "RBC Capital",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
     {
       "date": "2026-10-12",
       "firm": "Wells Fargo",
@@ -139,13 +146,6 @@
       "firm": "Wells Fargo",
       "from": "Equal-Weight",
       "to": "Equal-Weight",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-03",
-      "firm": "Cantor Fitzgerald",
-      "from": "Neutral",
-      "to": "Neutral",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.605,
-    "enterprise_value": 9377129472,
-    "ev_ebitda": 10.312,
-    "ev_revenue": 2.964,
+    "enterprise_value": 9457700864,
+    "ev_ebitda": 10.4,
+    "ev_revenue": 2.99,
     "float_shares": 106178302,
     "short_shares": 13963526,
     "short_pct_float": 13.28,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-08-11",
   "dividend_date": null,
   "payout_ratio": 0.70419997,
-  "inst_count": 491,
+  "inst_count": 493,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.46677,
-      "actual": 0.47,
-      "surprise_pct": 0.69
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.49052,
@@ -269,6 +263,12 @@
       "estimate": 0.60204,
       "actual": 0.74,
       "surprise_pct": 22.92
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.48586,
+      "actual": 0.51,
+      "surprise_pct": 4.97
     }
   ],
   "insiders": [

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:33.376Z",
+  "updated_at": "2026-10-30T21:09:24.622Z",
   "source": "Yahoo Finance",
   "symbol": "HG",
   "summary": "Hamilton Insurance Group, Ltd., through its subsidiaries, operates as specialty insurance and reinsurance company in Bermuda and internationally. It operates Hamilton Global Specialty, Hamilton Select, and Hamilton Re underwriting platforms. The company offers casualty reinsurance products, such as commercial auto, general liability, healthcare, multiline, personal motor, professional liability, umbrella and excess casualty, and worker's compensation and employer's liability reinsurance; property reinsurance and insurance; and specialty reinsurance solutions, including accident and health, aviation and space, crisis management, mortgage, financial risks, marine and energy, and multiline specialty. It also provides accident and health, cyber, energy, environmental, financial lines, fine art and specie, kidnap and ransom, mergers and acquisitions, marine and energy liability, political risk and violence, professional liability, property binders, property direct and facultative, professional lines, space, upstream energy, excess casualty, war and terrorism, allied medical, products liability and contractors, management liability, medical professionals, general liability, and small business casualty insurance plans, as well as surety and treaty reinsurance products. The company was incorporated in 2013 and is headquartered in Pembroke, Bermuda.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-30",
-  "eps_estimate": 0.90588,
+  "eps_estimate": 1.00508,
   "analysts": {
     "strong_buy": 3,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 0,
-      "earnings": 136200000
-    },
-    {
       "q": "4Q2025",
       "revenue": 0,
       "earnings": 172185000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 0,
       "earnings": 143782000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 0,
+      "earnings": 81456000
     }
   ],
   "growth": {
-    "q0": -0.2451,
-    "q1": -0.39090002,
+    "q0": -0.39090002,
+    "q1": -0.19709998,
     "y0": 0.0523,
     "y1": -0.0612
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.466,
-    "enterprise_value": 2569566976,
-    "ev_ebitda": 2.924,
-    "ev_revenue": 0.859,
+    "enterprise_value": 2544913408,
+    "ev_ebitda": 2.896,
+    "ev_revenue": 0.851,
     "float_shares": 47451270,
     "short_shares": 1541760,
     "short_pct_float": 2.45,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-03-06",
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 354,
+  "inst_count": 353,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.67185,
-      "actual": 1.2,
-      "surprise_pct": 78.61
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.05498,
@@ -269,6 +263,12 @@
       "estimate": 1.20894,
       "actual": 1.56,
       "surprise_pct": 29.04
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.90588,
+      "actual": 1.78,
+      "surprise_pct": 96.49
     }
   ],
   "insiders": [
@@ -336,15 +336,6 @@
       "date": "2026-05-08"
     },
     {
-      "name": "DEEGAN BRIAN JOHN",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 30.69 per share.",
-      "value": 337644,
-      "shares": 11000,
-      "date": "2026-05-05"
-    },
-    {
       "name": "VAUGHAN THERESE MICHELE",
       "role": "Director",
       "kind": "other",
@@ -355,6 +346,15 @@
     },
     {
       "name": "PRIEBE DAVID",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 4929,
+      "date": "2026-05-05"
+    },
+    {
+      "name": "WILSON PETER W",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

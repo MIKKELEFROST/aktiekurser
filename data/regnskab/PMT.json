@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:34.061Z",
+  "updated_at": "2026-10-30T21:09:25.469Z",
   "source": "Yahoo Finance",
   "symbol": "PMT",
   "summary": "PennyMac Mortgage Investment Trust, through its subsidiary, primarily invests in residential mortgage-related assets in the United States. The company operates through: Credit Sensitive Strategies, Interest Rate Sensitive Strategies, and Correspondent Production segments. The Credit Sensitive Strategies segment invests in credit risk transfer (CRT) agreements and subordinate and credit-linked mortgage-backed securities (MBS). The Interest Rate Sensitive Strategies segment engages in investing in mortgage servicing rights, agency and senior non-agency MBS, and collateralized mortgage obligations (CMOs), as well as interest rate hedging activities. The Correspondent Production segment is involved in purchasing, pooling, and reselling newly originated prime credit quality loans directly or in the form of MBS. The company primarily sells its loans to government-sponsored enterprises. It has elected to be taxed as a real estate investment trust (REIT). It is not subject to U.S. federal income tax on the REIT taxable income it distributes to its shareholders. PennyMac Mortgage Investment Trust was incorporated in 2009 and is headquartered in Westlake Village, California.",
@@ -7,10 +7,10 @@
   "website": "https://pmt.pennymac.com",
   "employees": null,
   "ceo": "Mr. David A. Spector",
-  "next_earnings": "2026-10-29",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-28",
+  "earnings_estimated": true,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 0.3,
+  "eps_estimate": 0.314,
   "analysts": {
     "strong_buy": 1,
     "buy": 0,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 99232000,
-      "earnings": 47841000
-    },
-    {
       "q": "4Q2025",
       "revenue": 93563000,
       "earnings": 41907000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 73000000,
       "earnings": 20000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 36000000,
+      "earnings": -36000000
     }
   ],
   "growth": {
-    "q0": -0.45450002,
-    "q1": -0.3458,
+    "q0": -0.3458,
+    "q1": 1,
     "y0": 0.0657,
     "y1": 0.3067
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.172,
-    "enterprise_value": 23865597952,
+    "enterprise_value": 23875188736,
     "ev_ebitda": null,
-    "ev_revenue": 34.87,
+    "ev_revenue": 34.884,
     "float_shares": 71663773,
     "short_shares": 11933119,
     "short_pct_float": 16.57,
@@ -246,12 +246,6 @@
   "payout_ratio": 1.1111,
   "inst_count": 290,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.37648,
-      "actual": 0.55,
-      "surprise_pct": 46.09
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.39147,
@@ -269,6 +263,12 @@
       "estimate": 0.3,
       "actual": 0.23,
       "surprise_pct": -23.33
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.3,
+      "actual": 0.35,
+      "surprise_pct": 16.67
     }
   ],
   "insiders": [
@@ -291,7 +291,25 @@
       "date": "2026-08-03"
     },
     {
-      "name": "CORLEY DONNA M",
+      "name": "JONES DOUGLAS",
+      "role": "President",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 37037,
+      "date": "2026-02-23"
+    },
+    {
+      "name": "JONES DOUGLAS",
+      "role": "President",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 19860,
+      "date": "2026-02-23"
+    },
+    {
+      "name": "MCALLISTER NANCY",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -300,8 +318,17 @@
       "date": "2026-02-23"
     },
     {
-      "name": "ELBAUM MARK",
-      "role": "Officer",
+      "name": "DUFAUCHARD PRESTON PAUL JR",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 10699,
+      "date": "2026-02-23"
+    },
+    {
+      "name": "PEROTTI DANIEL STANLEY",
+      "role": "Chief Financial Officer",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
@@ -309,16 +336,16 @@
       "date": "2026-02-23"
     },
     {
-      "name": "STARK DEREK",
-      "role": "Officer",
+      "name": "PEROTTI DANIEL STANLEY",
+      "role": "Chief Financial Officer",
       "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 11111,
+      "text": null,
+      "value": null,
+      "shares": 15764,
       "date": "2026-02-23"
     },
     {
-      "name": "SCHULTZ RENEE",
+      "name": "LYNCH CATHERINE A",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -327,34 +354,7 @@
       "date": "2026-02-23"
     },
     {
-      "name": "FOLLETTE JAMES",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 3703,
-      "date": "2026-02-23"
-    },
-    {
-      "name": "TIDMORE ABBIE",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 11111,
-      "date": "2026-02-23"
-    },
-    {
-      "name": "CARNAHAN SCOTT W",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 10699,
-      "date": "2026-02-23"
-    },
-    {
-      "name": "STEWART STACEY D",
+      "name": "POURAGHABAGHER SETAREH",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

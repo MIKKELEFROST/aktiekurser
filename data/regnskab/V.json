@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:34.534Z",
+  "updated_at": "2026-10-30T21:09:25.977Z",
   "source": "Yahoo Finance",
   "symbol": "V",
   "summary": "Visa Inc. operates as a payment technology company in the United States and internationally. The company operates VisaNet, a transaction processing network that enables authorization, clearing, and settlement of payment transactions. It also offers credit, debit, and prepaid card products; tap to pay, tokenization, and click to pay services; Visa Direct, a platform which facilitates money movement, enabling clients to collect, hold, convert, and send funds across its network; and issuing solutions, such as airport lounge access, dining reservations, shopping experiences, event tickets, and seller offers. In addition, the company provides acceptance solutions, an omnichannel payment integration with e-commerce platforms; risk detection and prevention solutions; and advisory and other services comprising consulting practice, proprietary analytics models, data scientists and economists, marketing services, and managed services. It provides its services under the Visa, Visa Electron, V PAY, Interlink, and PLUS brands. The company serves consumers, sellers, financial institutions, and government entities. Visa Inc. was founded in 1958 and is headquartered in San Francisco, California.",
@@ -19,7 +19,7 @@
     "strong_sell": 1,
     "total": 40
   },
-  "target_mean": 440.46973,
+  "target_mean": 441.09134,
   "target_high": 485,
   "target_low": 330,
   "target_analysts": 37,
@@ -74,10 +74,17 @@
   "growth": {
     "q0": 0.14479999,
     "q1": 0.0967,
-    "y0": 0.13229999,
-    "y1": 0.14060001
+    "y0": 0.13239999,
+    "y1": 0.1401
   },
   "ratings": [
+    {
+      "date": "2026-10-29",
+      "firm": "Macquarie",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
     {
       "date": "2026-10-29",
       "firm": "Wells Fargo",
@@ -139,13 +146,6 @@
       "firm": "TD Cowen",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-10-28",
-      "firm": "Morgan Stanley",
-      "from": "Overweight",
-      "to": "Overweight",
       "action": "main"
     }
   ],
@@ -223,18 +223,18 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 11,
-    "sells": 11,
-    "bought": 137327,
-    "sold": 166425,
+    "buys": 10,
+    "sells": 10,
+    "bought": 105872,
+    "sold": 134970,
     "net_pct": -1.9
   },
   "extras": {
     "beta": 0.771,
-    "enterprise_value": 729677824000,
-    "ev_ebitda": null,
-    "ev_revenue": null,
-    "float_shares": 1668531906,
+    "enterprise_value": 747572363264,
+    "ev_ebitda": 23.479,
+    "ev_revenue": 16.286,
+    "float_shares": 1670224147,
     "short_shares": 20507586,
     "short_pct_float": 1.19,
     "short_ratio": 3.17,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-08-11",
   "dividend_date": null,
   "payout_ratio": 0.22129999,
-  "inst_count": 5993,
+  "inst_count": 5997,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -275,15 +275,6 @@
     {
       "name": "ROTTENBERG JULIE B",
       "role": "General Counsel",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 134.76 per share.",
-      "value": 251597,
-      "shares": 1867,
-      "date": "2026-09-09"
-    },
-    {
-      "name": "ROTTENBERG JULIE B",
-      "role": "General Counsel",
       "kind": "sell",
       "text": "Sale at price 368.34 per share.",
       "value": 687691,
@@ -291,13 +282,13 @@
       "date": "2026-09-09"
     },
     {
-      "name": "MCINERNEY RYAN",
-      "role": "Chief Executive Officer",
+      "name": "ROTTENBERG JULIE B",
+      "role": "General Counsel",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 134.76 per share.",
-      "value": 791715,
-      "shares": 5875,
-      "date": "2026-09-01"
+      "value": 251597,
+      "shares": 1867,
+      "date": "2026-09-09"
     },
     {
       "name": "MCINERNEY RYAN",
@@ -309,13 +300,13 @@
       "date": "2026-09-01"
     },
     {
-      "name": "ROTTENBERG JULIE B",
-      "role": "General Counsel",
+      "name": "MCINERNEY RYAN",
+      "role": "Chief Executive Officer",
       "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 109.82 per share.",
-      "value": 222715,
-      "shares": 2028,
-      "date": "2026-08-31"
+      "text": "Conversion of Exercise of derivative security at price 134.76 per share.",
+      "value": 791715,
+      "shares": 5875,
+      "date": "2026-09-01"
     },
     {
       "name": "ROTTENBERG JULIE B",
@@ -327,13 +318,13 @@
       "date": "2026-08-31"
     },
     {
-      "name": "MCINERNEY RYAN",
-      "role": "Chief Executive Officer",
+      "name": "ROTTENBERG JULIE B",
+      "role": "General Counsel",
       "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 134.76 per share.",
-      "value": 791715,
-      "shares": 5875,
-      "date": "2026-08-21"
+      "text": "Conversion of Exercise of derivative security at price 109.82 per share.",
+      "value": 222715,
+      "shares": 2028,
+      "date": "2026-08-31"
     },
     {
       "name": "MCINERNEY RYAN",
@@ -341,6 +332,15 @@
       "kind": "sell",
       "text": "Sale at price 367.87 per share.",
       "value": 2161236,
+      "shares": 5875,
+      "date": "2026-08-21"
+    },
+    {
+      "name": "MCINERNEY RYAN",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 134.76 per share.",
+      "value": 791715,
       "shares": 5875,
       "date": "2026-08-21"
     },
@@ -354,12 +354,12 @@
       "date": "2026-08-21"
     },
     {
-      "name": "ANDRESKI PETER M",
-      "role": "Officer",
+      "name": "SUH CHRIS",
+      "role": "Chief Financial Officer",
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 4170,
+      "shares": 15289,
       "date": "2026-08-14"
     }
   ],

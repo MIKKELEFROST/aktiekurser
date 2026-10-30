@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:34.013Z",
+  "updated_at": "2026-10-30T21:09:25.416Z",
   "source": "Yahoo Finance",
   "symbol": "PEB",
   "summary": "Pebblebrook Hotel Trust is a publicly traded real estate investment trust and the largest owner of urban and resort lifestyle hotels in the United States. The Company owns 43 hotels, totaling approximately 10,900 guest rooms across 14 urban and resort markets. Pebblebrook Hotel Trust is based in Bethesda, United States. Pebblebrook Hotel Trust was established in October, 02 2009 and incorporated in Maryland.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-30",
-  "eps_estimate": -0.02,
+  "eps_estimate": -0.245,
   "analysts": {
     "strong_buy": 1,
     "buy": 3,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 398723000,
-      "earnings": -43366000
-    },
-    {
       "q": "4Q2025",
       "revenue": 349018000,
       "earnings": -26203000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 407142000,
       "earnings": 20659000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 402745000,
+      "earnings": -63081000
     }
   ],
   "growth": {
     "q0": null,
-    "q1": null,
+    "q1": -0.0785,
     "y0": 0.36990002,
     "y1": 0.0357
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.44,
-    "enterprise_value": 4712295936,
-    "ev_ebitda": 14.354,
-    "ev_revenue": 3.14,
+    "enterprise_value": 4740506624,
+    "ev_ebitda": 14.44,
+    "ev_revenue": 3.159,
     "float_shares": 109912191,
     "short_shares": 19974416,
     "short_pct_float": 25.99,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-09-30",
   "dividend_date": null,
   "payout_ratio": 1.2637,
-  "inst_count": 435,
+  "inst_count": 436,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.015,
-      "actual": -0.37,
-      "surprise_pct": -2366.67
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.30667,
@@ -269,6 +263,12 @@
       "estimate": 0.105,
       "actual": 0.1729,
       "surprise_pct": 64.67
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.02,
+      "actual": 0.1423,
+      "surprise_pct": 811.5
     }
   ],
   "insiders": [
@@ -327,6 +327,24 @@
       "date": "2026-02-05"
     },
     {
+      "name": "DONNELL CYDNEY C",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 11.46 per share.",
+      "value": 170002,
+      "shares": 14837,
+      "date": "2025-12-31"
+    },
+    {
+      "name": "MILLER PHILLIP M",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 11.46 per share.",
+      "value": 84995,
+      "shares": 7418,
+      "date": "2025-12-31"
+    },
+    {
       "name": "SIMI BONNY W",
       "role": "Director",
       "kind": "other",
@@ -342,24 +360,6 @@
       "text": "Stock Award(Grant) at price 11.46 per share.",
       "value": 189997,
       "shares": 16582,
-      "date": "2025-12-31"
-    },
-    {
-      "name": "SCHALL MICHAEL J",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 11.46 per share.",
-      "value": 170002,
-      "shares": 14837,
-      "date": "2025-12-31"
-    },
-    {
-      "name": "WEBB EARL E",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 11.46 per share.",
-      "value": 116998,
-      "shares": 10211,
       "date": "2025-12-31"
     }
   ],

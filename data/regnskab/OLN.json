@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:33.934Z",
+  "updated_at": "2026-10-30T21:09:25.325Z",
   "source": "Yahoo Finance",
   "symbol": "OLN",
   "summary": "Olin Corporation manufactures and distributes chemical products in the United States, Europe, Asia Pacific, the Middle East, Africa, and India Middle East, Africa, India, Latin America, and Canada. It operates through three segments: Chlor Alkali Products and Vinyls; Epoxy; and Winchester. The Chlor Alkali Products and Vinyls segment offers chlorine and caustic soda, ethylene dichloride and vinyl chloride monomers, methyl chloride, methylene chloride, chloroform, carbon tetrachloride, perchloroethylene, hydrochloric acid, hydrogen, bleach products, potassium hydroxide, and chlorinated organics intermediates and solvents. The Epoxy segment provides Allylics, such as allyl chloride, epichlorohydrin, and glycerin; aromatics, including acetone, and phenol; bisphenol, caustic soda, cumene, liquid and solid epoxy resins; and converted epoxy resins and additives. The Winchester segment offers sporting ammunition products, including shotshells, small caliber centerfire, and rimfire ammunition products for hunters, competitive, and recreational shooters, and law enforcement agencies; small caliber military ammunition products for use in infantry and mounted weapons; and industrial products comprising 8-gauge loads and powder-actuated tool loads for maintenance applications in power and concrete industries, and powder-actuated tools in construction industry. The company markets its products through its sales force, as well as directly to various industrial customers, mass merchants, retailers, wholesalers, gun clubs, other distributors, and the U.S. Government and its prime contractors. Olin Corporation was incorporated in 1892 and is based in Clayton, Missouri.",
@@ -7,10 +7,10 @@
   "website": "https://www.olin.com",
   "employees": 7849,
   "ceo": "Mr. Kenneth Todd Lane",
-  "next_earnings": "2026-10-29",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-28",
+  "earnings_estimated": true,
   "earnings_call": "2026-10-30",
-  "eps_estimate": 0.16278,
+  "eps_estimate": -0.06592,
   "analysts": {
     "strong_buy": 1,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 1713200000,
-      "earnings": 42800000
-    },
-    {
       "q": "4Q2025",
       "revenue": 1665100000,
       "earnings": -85700000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 1741900000,
       "earnings": -13300000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1747700000,
+      "earnings": 14400000
     }
   ],
   "growth": {
-    "q0": -0.5809,
-    "q1": 0.89629996,
+    "q0": 0.89629996,
+    "q1": 0.1872,
     "y0": -1.5766001,
     "y1": 1.7677001
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.226,
-    "enterprise_value": 5107791360,
-    "ev_ebitda": 8.126,
-    "ev_revenue": 0.762,
+    "enterprise_value": 5059918848,
+    "ev_ebitda": 8.05,
+    "ev_revenue": 0.755,
     "float_shares": 107559577,
     "short_shares": 14984494,
     "short_pct_float": 15.25,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-08-27",
   "dividend_date": null,
   "payout_ratio": 1.7391,
-  "inst_count": 518,
+  "inst_count": 520,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.08736,
-      "actual": 0.3884,
-      "surprise_pct": 344.6
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.62399,
@@ -269,6 +263,12 @@
       "estimate": 0.0966,
       "actual": 0.0685,
       "surprise_pct": -29.09
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.16278,
+      "actual": 0.238,
+      "surprise_pct": 46.21
     }
   ],
   "insiders": [
@@ -345,21 +345,21 @@
       "date": "2026-02-24"
     },
     {
-      "name": "SLATER TODD A.",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 8690,
-      "date": "2026-02-20"
-    },
-    {
       "name": "SUMNER R NICHOLE",
       "role": "Officer",
       "kind": "other",
       "text": null,
       "value": null,
       "shares": 1835,
+      "date": "2026-02-20"
+    },
+    {
+      "name": "FLAUGHER BRETT A",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 6276,
       "date": "2026-02-20"
     }
   ],

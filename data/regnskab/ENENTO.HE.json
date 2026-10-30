@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:25:16.208Z",
+  "updated_at": "2026-10-30T21:09:24.250Z",
   "source": "Yahoo Finance",
   "symbol": "ENENTO.HE",
   "summary": "Enento Group Oyj, through its subsidiaries, provides digital business and consumer information services in the Nordic countries. The company offers credit information, business information, asset information, marketing information; and direct-to-consumer services. It serves finance and banking, wholesale, retail, utilities, and e-commerce sectors, utilities, telecom, as well as small and medium-sized companies and consumers. Enento Group Oyj was formerly known as Asiakastieto Group Oyj and changed its name to Enento Group Oyj in June 2020. The company was founded in 1905 and is headquartered in Helsinki, Finland.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 0.1075,
+  "eps_estimate": 0.4525,
   "analysts": {
     "strong_buy": 1,
     "buy": 3,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 37308000,
-      "earnings": 5134000
-    },
-    {
       "q": "4Q2025",
       "revenue": 39055000,
       "earnings": 3338000
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 39894000,
       "earnings": -528000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 38792000,
+      "earnings": 6974000
     }
   ],
   "growth": {
-    "q0": -0.5114,
-    "q1": 0.5083,
+    "q0": 0.5083,
+    "q1": null,
     "y0": -0.0636,
-    "y1": 0.13350001
+    "y1": 0.1311
   },
   "ratings": [],
   "holders": [],
@@ -89,9 +89,9 @@
   },
   "extras": {
     "beta": 1.041,
-    "enterprise_value": 490165600,
-    "ev_ebitda": 13.966,
-    "ev_revenue": 3.146,
+    "enterprise_value": 513367456,
+    "ev_ebitda": 14.627,
+    "ev_revenue": 3.295,
     "float_shares": 17392143,
     "short_shares": null,
     "short_pct_float": null,
@@ -99,17 +99,11 @@
     "last_split": null,
     "last_split_date": null
   },
-  "ex_dividend": "2026-03-27",
+  "ex_dividend": "2026-10-30",
   "dividend_date": null,
-  "payout_ratio": 1.8182001,
+  "payout_ratio": 1.6128999,
   "inst_count": 34,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.25,
-      "actual": 0.22,
-      "surprise_pct": -12
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.205,
@@ -127,6 +121,12 @@
       "estimate": 0.235,
       "actual": 0.35,
       "surprise_pct": 48.94
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.1075,
+      "actual": 0.36,
+      "surprise_pct": 234.88
     }
   ],
   "insiders": [],
@@ -185,6 +185,10 @@
     },
     {
       "date": "2026-03-27",
+      "amount": 0.5
+    },
+    {
+      "date": "2026-10-30",
       "amount": 0.5
     }
   ],

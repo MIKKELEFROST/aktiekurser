@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:34.443Z",
+  "updated_at": "2026-10-30T21:09:25.878Z",
   "source": "Yahoo Finance",
   "symbol": "TFSL",
   "summary": "TFS Financial Corporation, through its subsidiaries, provides retail consumer banking services in the United States. The company offers deposit products, including savings, money market, checking, individual retirement, and other qualified plan accounts, as well as certificates of deposit. It also provides residential real estate mortgage loans, residential construction loans, purchase mortgages, and home equity loans and lines of credit, as well as purchase mortgages and first mortgage refinance loans. In addition, the company offers escrow and settlement services. TFS Financial Corporation was founded in 1938 and is headquartered in Cleveland, Ohio. TFS Financial Corporation operates as a subsidiary of Third Federal Savings and Loan Association of Cleveland, MHC.",
@@ -7,10 +7,10 @@
   "website": "https://www.thirdfederal.com",
   "employees": 958,
   "ceo": "Mr. Marc A. Stefanski",
-  "next_earnings": "2026-10-29",
+  "next_earnings": "2027-01-28",
   "earnings_estimated": true,
   "earnings_call": null,
-  "eps_estimate": 0.09,
+  "eps_estimate": 0.095,
   "analysts": {
     "strong_buy": 0,
     "buy": 0,
@@ -24,12 +24,6 @@
   "target_low": 18,
   "target_analysts": 2,
   "statements": [
-    {
-      "year": "2021",
-      "revenue": 286929000,
-      "net": 81007000,
-      "margin": 28.2
-    },
     {
       "year": "2022",
       "revenue": 267396000,
@@ -47,14 +41,15 @@
       "revenue": 321474000,
       "net": 90959000,
       "margin": 28.3
+    },
+    {
+      "year": "2026",
+      "revenue": 351780000,
+      "net": 100716000,
+      "margin": 28.6
     }
   ],
   "quarterly": [
-    {
-      "q": "3Q2025",
-      "revenue": 85484000,
-      "earnings": 25999000
-    },
     {
       "q": "4Q2025",
       "revenue": 83728000,
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 89274000,
       "earnings": 30540000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 93535000,
+      "earnings": 24655000
     }
   ],
   "growth": {
-    "q0": 0,
+    "q0": 0.1875,
     "q1": 0.1875,
-    "y0": 0.125,
-    "y1": 0.0833
+    "y0": 0.114300005,
+    "y1": 0.0385
   },
   "ratings": [
     {
@@ -224,9 +224,9 @@
   },
   "extras": {
     "beta": 0.731,
-    "enterprise_value": 9927912448,
+    "enterprise_value": 9953015808,
     "ev_ebitda": null,
-    "ev_revenue": 28.592,
+    "ev_revenue": 28.664,
     "float_shares": 50413098,
     "short_shares": 9981067,
     "short_pct_float": 19.26,
@@ -237,14 +237,8 @@
   "ex_dividend": "2026-09-09",
   "dividend_date": null,
   "payout_ratio": 3.1389,
-  "inst_count": 319,
+  "inst_count": 320,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.08,
-      "actual": 0.09,
-      "surprise_pct": 12.5
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.09,
@@ -262,6 +256,12 @@
       "estimate": 0.08,
       "actual": 0.11,
       "surprise_pct": 37.5
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.09,
+      "actual": 0.09,
+      "surprise_pct": 0
     }
   ],
   "insiders": [
@@ -275,15 +275,6 @@
       "date": "2026-09-11"
     },
     {
-      "name": "STEFANSKI MARC A",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 17.28 per share.",
-      "value": 172800,
-      "shares": 10000,
-      "date": "2026-09-08"
-    },
-    {
       "name": "WILLIAMS ASHLEY H",
       "role": "Director",
       "kind": "sell",
@@ -293,13 +284,13 @@
       "date": "2026-09-08"
     },
     {
-      "name": "WEIL MEREDITH S",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 14.74 per share.",
-      "value": 778169,
-      "shares": 52793,
-      "date": "2026-09-03"
+      "name": "STEFANSKI MARC A",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 17.28 per share.",
+      "value": 172800,
+      "shares": 10000,
+      "date": "2026-09-08"
     },
     {
       "name": "WEIL MEREDITH S",
@@ -308,6 +299,15 @@
       "text": "Sale at price 17.53 per share.",
       "value": 102743,
       "shares": 5861,
+      "date": "2026-09-03"
+    },
+    {
+      "name": "WEIL MEREDITH S",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 14.74 per share.",
+      "value": 778169,
+      "shares": 52793,
       "date": "2026-09-03"
     },
     {
@@ -322,19 +322,19 @@
     {
       "name": "WEIL MEREDITH S",
       "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 14.74 per share.",
-      "value": 69381,
-      "shares": 4707,
+      "kind": "sell",
+      "text": "Sale at price 18.00 per share.",
+      "value": 10800,
+      "shares": 600,
       "date": "2026-08-28"
     },
     {
       "name": "WEIL MEREDITH S",
       "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 18.00 per share.",
-      "value": 10800,
-      "shares": 600,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 14.74 per share.",
+      "value": 69381,
+      "shares": 4707,
       "date": "2026-08-28"
     },
     {

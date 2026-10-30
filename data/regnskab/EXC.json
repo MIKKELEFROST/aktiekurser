@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:33.118Z",
+  "updated_at": "2026-10-30T21:09:24.330Z",
   "source": "Yahoo Finance",
   "symbol": "EXC",
   "summary": "Exelon Corporation, a utility services holding company, engages in the energy distribution and transmission businesses in the United States. The company is involved in the purchase and regulated retail sale of electricity and natural gas; transmission and distribution of electricity; and distribution of natural gas to retail customers. It serves residential, commercial, industrial, and public authorities and electric railroads customers. Exelon Corporation was incorporated in 1999 and is headquartered in Chicago, Illinois.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-30",
   "earnings_estimated": false,
   "earnings_call": "2026-10-30",
-  "eps_estimate": 0.79223,
+  "eps_estimate": 0.73701,
   "analysts": {
     "strong_buy": 0,
     "buy": 4,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 6705000000,
-      "earnings": 875000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 5412000000,
       "earnings": 593000000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 5967000000,
       "earnings": 396000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 7319000000,
+      "earnings": 729000000
     }
   ],
   "growth": {
-    "q0": -0.0788,
-    "q1": 0.2492,
+    "q0": 0.2492,
+    "q1": 0.0358,
     "y0": 0.0317,
     "y1": 0.061
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.402,
-    "enterprise_value": 97074012160,
-    "ev_ebitda": 11.619,
-    "ev_revenue": 3.833,
+    "enterprise_value": 98250776576,
+    "ev_ebitda": 11.76,
+    "ev_revenue": 3.879,
     "float_shares": 1030406232,
     "short_shares": 32359342,
     "short_pct_float": 3.57,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-09-04",
   "dividend_date": null,
   "payout_ratio": 0.6029,
-  "inst_count": 1773,
+  "inst_count": 1772,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.77799,
-      "actual": 0.86,
-      "surprise_pct": 10.54
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.54641,
@@ -269,38 +263,17 @@
       "estimate": 0.44758,
       "actual": 0.43,
       "surprise_pct": -3.93
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.7889,
+      "actual": 0.87,
+      "surprise_pct": 10.28
     }
   ],
   "insiders": [
     {
-      "name": "BOWERS WILLIAM PAUL",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 49.82 per share.",
-      "value": 43742,
-      "shares": 878,
-      "date": "2026-03-31"
-    },
-    {
-      "name": "DEWALT DAVID G",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 49.82 per share.",
-      "value": 43742,
-      "shares": 878,
-      "date": "2026-03-31"
-    },
-    {
-      "name": "RICHO ANNA S.",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 49.82 per share.",
-      "value": 43742,
-      "shares": 878,
-      "date": "2026-03-31"
-    },
-    {
-      "name": "JOJO LINDA P",
+      "name": "CHESHIRE MARJORIE RODGERS",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 49.82 per share.",
@@ -327,7 +300,7 @@
       "date": "2026-03-31"
     },
     {
-      "name": "CHESHIRE MARJORIE RODGERS",
+      "name": "JOJO LINDA P",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 49.82 per share.",
@@ -336,12 +309,48 @@
       "date": "2026-03-31"
     },
     {
-      "name": "KLECZYNSKI ROBERT A.",
-      "role": "Officer",
+      "name": "RICHO ANNA S.",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 49.82 per share.",
+      "value": 43742,
+      "shares": 878,
+      "date": "2026-03-31"
+    },
+    {
+      "name": "DEWALT DAVID G",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 49.82 per share.",
+      "value": 43742,
+      "shares": 878,
+      "date": "2026-03-31"
+    },
+    {
+      "name": "BOWERS WILLIAM PAUL",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 49.82 per share.",
+      "value": 43742,
+      "shares": 878,
+      "date": "2026-03-31"
+    },
+    {
+      "name": "BUTLER CALVIN G JR.",
+      "role": "Chief Executive Officer",
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 12287,
+      "shares": 198151,
+      "date": "2026-02-02"
+    },
+    {
+      "name": "INNOCENZO MICHAEL A.",
+      "role": "Chief Operating Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 27469,
       "date": "2026-02-02"
     },
     {
@@ -351,15 +360,6 @@
       "text": null,
       "value": null,
       "shares": 8653,
-      "date": "2026-02-02"
-    },
-    {
-      "name": "JONES JEANNE M",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 43414,
       "date": "2026-02-02"
     }
   ],

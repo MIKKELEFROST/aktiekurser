@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:32.756Z",
+  "updated_at": "2026-10-30T21:09:23.898Z",
   "source": "Yahoo Finance",
   "symbol": "CFR",
   "summary": "Cullen/Frost Bankers, Inc. operates as the bank holding company for Frost Bank that provides commercial and consumer banking services in Texas. The company offers commercial banking services to corporations, including financing for industrial and commercial properties, interim construction related to industrial and commercial properties, equipment, inventories and accounts receivables, and acquisitions; and treasury management services. It also provides consumer banking services, such as checking accounts, automated-teller machines (ATMs), overdraft facilities, installment and real estate loans, first mortgage loans, home equity loans and lines of credit, drive-in and night deposit services, safe deposit facilities, and brokerage services. In addition, the company offers international banking services comprising deposits, loans, letters of credit, foreign collections, funds transmitting, and foreign exchange services; correspondent banking activities, including check clearing, transfer of funds, fixed income security services, and securities custody and clearance services. Further, it offers trust, investment, agency, and custodial services for individual and corporate clients; capital market services that include sales and trading, new issue underwriting, money market trading, advisory, and securities safekeeping and clearance; and support for international business activities, including foreign exchange, letters of credit, export-import financing, and other related activities. Additionally, the company offers insurance and securities brokerage services; holding of securities for investment purposes; and investment management services for mutual funds, institutions, and individuals. It serves energy, manufacturing, services, construction, retail, telecommunications, healthcare, military, and transportation industries. Cullen/Frost Bankers, Inc. was founded in 1868 and is headquartered in San Antonio, Texas.",
@@ -7,22 +7,22 @@
   "website": "https://www.frostbank.com",
   "employees": 6008,
   "ceo": "Mr. Phillip D. Green J.D.",
-  "next_earnings": "2026-10-29",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-28",
+  "earnings_estimated": true,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 2.84357,
+  "eps_estimate": 2.90203,
   "analysts": {
     "strong_buy": 3,
     "buy": 3,
-    "hold": 9,
+    "hold": 8,
     "sell": 1,
     "strong_sell": 0,
-    "total": 16
+    "total": 15
   },
-  "target_mean": 172.26666,
+  "target_mean": 173,
   "target_high": 201,
   "target_low": 145,
-  "target_analysts": 15,
+  "target_analysts": 14,
   "statements": [
     {
       "year": "2022",
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.015,
-    "q1": 0.081499994,
-    "y0": 0.0759,
-    "y1": 0.0838
+    "q0": 0.0359,
+    "q1": 0.095699996,
+    "y0": 0.0804,
+    "y1": 0.0955
   },
   "ratings": [
+    {
+      "date": "2026-10-30",
+      "firm": "DA Davidson",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-10-14",
       "firm": "Cantor Fitzgerald",
@@ -139,13 +146,6 @@
       "firm": "Evercore ISI Group",
       "from": "In-Line",
       "to": "In-Line",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-03",
-      "firm": "TD Cowen",
-      "from": "Buy",
-      "to": "Buy",
       "action": "main"
     }
   ],
@@ -230,21 +230,21 @@
     "net_pct": 1.3
   },
   "extras": {
-    "beta": 0.548,
-    "enterprise_value": 8819700736,
+    "beta": null,
+    "enterprise_value": null,
     "ev_ebitda": null,
-    "ev_revenue": 3.895,
-    "float_shares": 61304804,
+    "ev_revenue": null,
+    "float_shares": 62343512,
     "short_shares": 11727,
     "short_pct_float": 0.02,
     "short_ratio": 0.02,
     "last_split": "2:1",
     "last_split_date": "1999-06-23"
   },
-  "ex_dividend": "2026-08-31",
+  "ex_dividend": "2026-11-30",
   "dividend_date": null,
   "payout_ratio": 0.3809,
-  "inst_count": 732,
+  "inst_count": 731,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -266,30 +266,12 @@
     },
     {
       "quarter": "2026-09-30",
-      "estimate": 2.80255,
+      "estimate": 2.8061,
       "actual": 2.84,
-      "surprise_pct": 1.34
+      "surprise_pct": 1.21
     }
   ],
   "insiders": [
-    {
-      "name": "BERMAN ROBERT A",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 2741,
-      "date": "2026-10-23"
-    },
-    {
-      "name": "BRACHER PAUL H",
-      "role": "President",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 4876,
-      "date": "2026-10-23"
-    },
     {
       "name": "ALONZO ANNETTE M",
       "role": "Officer",
@@ -324,6 +306,24 @@
       "text": null,
       "value": null,
       "shares": 3685,
+      "date": "2026-10-23"
+    },
+    {
+      "name": "BERMAN ROBERT A",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 2741,
+      "date": "2026-10-23"
+    },
+    {
+      "name": "BRACHER PAUL H",
+      "role": "President",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 4876,
       "date": "2026-10-23"
     },
     {

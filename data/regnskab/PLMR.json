@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:34.052Z",
+  "updated_at": "2026-10-30T21:09:25.460Z",
   "source": "Yahoo Finance",
   "symbol": "PLMR",
   "summary": "Palomar Holdings, Inc., a specialty insurance company, provides property and casualty insurance to individuals and businesses in the United States. The company offers personal and commercial specialty insurance products, including residential and commercial earthquake; fronting; and inland marine and other property products, such as inland marine, Hawaii hurricane, excess national property, residential flood, and other property products, as well as assumed reinsurance and crop insurance products. It markets and distributes its products through retail agents, program administrators, wholesale brokers, and strategic partnerships. The company was formerly known as GC Palomar Holdings and changed its name to Palomar Holdings, Inc. The company was incorporated in 2013 and is headquartered in La Jolla, California.",
@@ -51,6 +51,11 @@
   ],
   "quarterly": [
     {
+      "q": "2Q2025",
+      "revenue": 181635000,
+      "earnings": 46528000
+    },
+    {
       "q": "3Q2025",
       "revenue": 226595000,
       "earnings": 51455000
@@ -64,11 +69,6 @@
       "q": "1Q2026",
       "revenue": 262848000,
       "earnings": 42947000
-    },
-    {
-      "q": "2Q2026",
-      "revenue": 287720000,
-      "earnings": 52592000
     }
   ],
   "growth": {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.346,
-    "enterprise_value": 3823868672,
-    "ev_ebitda": 13.209,
-    "ev_revenue": 3.504,
+    "enterprise_value": 3843080704,
+    "ev_ebitda": 13.275,
+    "ev_revenue": 3.521,
     "float_shares": 25617106,
     "short_shares": 714495,
     "short_pct_float": 3.23,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-08-19",
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 486,
+  "inst_count": 485,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -311,10 +311,28 @@
     {
       "name": "UCHIDA T CHRISTOPHER",
       "role": "Chief Financial Officer",
+      "kind": "sell",
+      "text": "Sale at price 127.74 per share.",
+      "value": 101043,
+      "shares": 791,
+      "date": "2026-08-18"
+    },
+    {
+      "name": "UCHIDA T CHRISTOPHER",
+      "role": "Chief Financial Officer",
       "kind": "other",
       "text": null,
       "value": null,
       "shares": 1530,
+      "date": "2026-08-18"
+    },
+    {
+      "name": "CHRISTIANSON JON MARCUS",
+      "role": "President",
+      "kind": "sell",
+      "text": "Sale at price 127.75 per share.",
+      "value": 67450,
+      "shares": 528,
       "date": "2026-08-18"
     },
     {
@@ -329,24 +347,6 @@
     {
       "name": "KNUTZEN JONATHAN",
       "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 612,
-      "date": "2026-08-18"
-    },
-    {
-      "name": "CHRISTIANSON JON MARCUS",
-      "role": "President",
-      "kind": "sell",
-      "text": "Sale at price 127.75 per share.",
-      "value": 67450,
-      "shares": 528,
-      "date": "2026-08-18"
-    },
-    {
-      "name": "KNUTZEN JONATHAN",
-      "role": "Officer",
       "kind": "sell",
       "text": "Sale at price 127.75 per share.",
       "value": 37813,
@@ -354,12 +354,12 @@
       "date": "2026-08-18"
     },
     {
-      "name": "UCHIDA T CHRISTOPHER",
-      "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 127.74 per share.",
-      "value": 101043,
-      "shares": 791,
+      "name": "KNUTZEN JONATHAN",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 612,
       "date": "2026-08-18"
     }
   ],

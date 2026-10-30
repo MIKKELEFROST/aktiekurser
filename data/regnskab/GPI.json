@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:33.314Z",
+  "updated_at": "2026-10-30T21:09:24.546Z",
   "source": "Yahoo Finance",
   "symbol": "GPI",
   "summary": "Group 1 Automotive, Inc., through its subsidiaries, operates in the automotive retail industry in the United States and the United Kingdom. The company sells new and used cars and light trucks through its dealerships and digital platform; and service and insurance contracts. It also engages in the wholesale of used vehicles at third-party auctions; wholesale and retail of vehicle and replacement parts; and arrangement of related vehicle financing. In addition, the company offers automotive maintenance and collision repair services. Group 1 Automotive, Inc. was incorporated in 1995 and is headquartered in Houston, Texas.",
@@ -10,7 +10,7 @@
   "next_earnings": "2027-01-28",
   "earnings_estimated": true,
   "earnings_call": "2026-10-28",
-  "eps_estimate": 8.69151,
+  "eps_estimate": 8.67114,
   "analysts": {
     "strong_buy": 2,
     "buy": 6,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.023699999,
-    "q1": 0.0709,
-    "y0": -0.1083,
-    "y1": 0.0838
+    "q0": 0.021300001,
+    "q1": 0.009,
+    "y0": -0.1095,
+    "y1": 0.0864
   },
   "ratings": [
+    {
+      "date": "2026-10-30",
+      "firm": "Barclays",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-10-29",
       "firm": "StoneX",
@@ -140,13 +147,6 @@
       "from": "Overweight",
       "to": "Overweight",
       "action": "main"
-    },
-    {
-      "date": "2026-08-07",
-      "firm": "Morgan Stanley",
-      "from": "Overweight",
-      "to": "Equal-Weight",
-      "action": "down"
     }
   ],
   "holders": [
@@ -223,18 +223,18 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 0,
-    "sells": 0,
-    "bought": 0,
-    "sold": null,
-    "net_pct": null
+    "buys": 9,
+    "sells": 1,
+    "bought": 821693,
+    "sold": 2000,
+    "net_pct": -152.3
   },
   "extras": {
-    "beta": null,
-    "enterprise_value": null,
-    "ev_ebitda": null,
-    "ev_revenue": null,
-    "float_shares": 9485049,
+    "beta": 0.919,
+    "enterprise_value": 8679698432,
+    "ev_ebitda": 8.63,
+    "ev_revenue": 0.399,
+    "float_shares": 9502797,
     "short_shares": 1430264,
     "short_pct_float": 17.45,
     "short_ratio": 5.07,
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "HOBSON GILLIAN A",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 258.24 per share.",
+      "value": 516480,
+      "shares": 2000,
+      "date": "2026-10-29"
+    },
     {
       "name": "CONIFER MANAGEMENT LLC",
       "role": "Beneficial Owner of more than 10% of a Class of Security",
@@ -352,15 +361,6 @@
       "value": 0,
       "shares": 809,
       "date": "2026-05-19"
-    },
-    {
-      "name": "KENNINGHAM DARYL A",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Stock Gift at price 0.00 per share.",
-      "value": 0,
-      "shares": 12312,
-      "date": "2026-02-26"
     }
   ],
   "dividends": [

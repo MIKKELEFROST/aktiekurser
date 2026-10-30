@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:32.827Z",
+  "updated_at": "2026-10-30T21:09:23.982Z",
   "source": "Yahoo Finance",
   "symbol": "CNX",
   "summary": "CNX Resources Corporation, an independent natural gas and midstream company, engages in the acquisition, exploration, development, and production of natural gas properties in the Appalachian Basin. The company operates in two segments, Shale and Coalbed Methane (CBM). It produces and sells pipeline quality natural gas primarily for gas wholesalers. The company owns rights to extract natural gas from shale formations in Pennsylvania, West Virginia, and Ohio, as well as rights to extract natural gas from other Shale and shallow oil and gas formations primarily in Illinois, Indiana, New York, Ohio, Pennsylvania, Virginia, and West Virginia. In addition, the company designs, builds, and operates natural gas gathering systems to move natural gas from the wellhead to interstate pipelines or other local sales points; owns or operates approximately 2,600 miles of natural gas gathering pipelines as well as various natural gas processing facilities. Further, it offers turn-key solutions for water sourcing, delivery and disposal for its natural gas operations and supplies solutions for water sourcing as well as delivery and disposal for third parties. The company was formerly known as CONSOL Energy Inc. and changed its name to CNX Resources Corporation in November 2017. CNX Resources Corporation was founded in 1860 and is based in Canonsburg, Pennsylvania.",
@@ -7,22 +7,22 @@
   "website": "https://www.cnx.com",
   "employees": 390,
   "ceo": "Mr. Alan K. Shepard",
-  "next_earnings": "2026-10-29",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-28",
+  "earnings_estimated": true,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 0.67186,
+  "eps_estimate": 0.61883,
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
-    "hold": 10,
+    "hold": 9,
     "sell": 1,
     "strong_sell": 1,
-    "total": 13
+    "total": 12
   },
-  "target_mean": 37.25,
+  "target_mean": 37.45455,
   "target_high": 48,
   "target_low": 34,
-  "target_analysts": 12,
+  "target_analysts": 11,
   "statements": [
     {
       "year": "2022",
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.008,
-    "q1": -0.19860001,
-    "y0": 0.2689,
-    "y1": 0.314
+    "q0": -0.0715,
+    "q1": -0.1882,
+    "y0": 0.3064,
+    "y1": 0.2855
   },
   "ratings": [
+    {
+      "date": "2026-10-30",
+      "firm": "Truist Securities",
+      "from": "Hold",
+      "to": "Hold",
+      "action": "main"
+    },
     {
       "date": "2026-10-16",
       "firm": "Truist Securities",
@@ -140,13 +147,6 @@
       "from": "Hold",
       "to": "Sell",
       "action": "init"
-    },
-    {
-      "date": "2026-03-16",
-      "firm": "Barclays",
-      "from": "Underweight",
-      "to": "Underweight",
-      "action": "main"
     }
   ],
   "holders": [
@@ -227,16 +227,16 @@
     "sells": 1,
     "bought": 956713,
     "sold": 28800,
-    "net_pct": 17
+    "net_pct": 17.3
   },
   "extras": {
-    "beta": 0.687,
-    "enterprise_value": 8003201536,
-    "ev_ebitda": 4.374,
-    "ev_revenue": 3.74,
-    "float_shares": 143773106,
+    "beta": null,
+    "enterprise_value": 7799909376,
+    "ev_ebitda": 4.257,
+    "ev_revenue": 3.437,
+    "float_shares": 141927478,
     "short_shares": 16849001,
-    "short_pct_float": 15.87,
+    "short_pct_float": 16.66,
     "short_ratio": 7.86,
     "last_split": "6:5",
     "last_split_date": "2017-11-29"
@@ -244,7 +244,7 @@
   "ex_dividend": "2016-02-11",
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 515,
+  "inst_count": 516,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -266,9 +266,9 @@
     },
     {
       "quarter": "2026-09-30",
-      "estimate": 0.56388,
+      "estimate": 0.56512,
       "actual": 0.6097,
-      "surprise_pct": 8.13
+      "surprise_pct": 7.89
     }
   ],
   "insiders": [
@@ -336,15 +336,6 @@
       "date": "2026-05-08"
     },
     {
-      "name": "CLARKSON J PALMER",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Gift at price 0.00 per share.",
-      "value": 0,
-      "shares": 1000,
-      "date": "2026-05-07"
-    },
-    {
       "name": "LANIGAN BERNARD JR",
       "role": "Director",
       "kind": "other",
@@ -360,6 +351,15 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 9466,
+      "date": "2026-05-07"
+    },
+    {
+      "name": "AGBEDE ROBERT O.",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 5568,
       "date": "2026-05-07"
     }
   ],

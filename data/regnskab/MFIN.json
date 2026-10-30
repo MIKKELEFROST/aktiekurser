@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:34.735Z",
+  "updated_at": "2026-10-30T21:09:25.093Z",
   "source": "Yahoo Finance",
   "symbol": "MFIN",
   "summary": "Medallion Financial Corp., together with its subsidiaries, operates as a specialty finance company in the United States. It operates through four segments: Recreation Lending, Home Improvement Lending, Commercial Loans, and Taxi Medallion Lending. The company offers loans that finance consumer purchases of recreational vehicles, boats, collector cars, and other consumer recreational equipment; consumer financing for window, siding, and roof replacement, swimming pool installations, and other home improvement projects; senior and subordinated loans for the purchase of equipment and related assets necessary to open a new business, or purchase or improvement of an existing business; and taxi medallion loans to individuals and small to mid-size businesses. It also provides debt, mezzanine, and equity investment capital to companies in various commercial industries; and raises deposits and conducts other banking activities. The company was incorporated in 1995 and is based in New York, New York.",
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 55686000,
-      "earnings": 7763000
-    },
-    {
       "q": "4Q2025",
       "revenue": 56425000,
       "earnings": 12199000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 57247000,
       "earnings": 7445000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 58379000,
+      "earnings": 2397000
     }
   ],
   "growth": {
-    "q0": 0,
-    "q1": -0.36,
+    "q0": -0.36,
+    "q1": 0.6166,
     "y0": -0.35580003,
     "y1": 0.22379999
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.77,
-    "enterprise_value": 2791424256,
-    "ev_ebitda": 15.761,
-    "ev_revenue": 7.976,
+    "enterprise_value": 2795002880,
+    "ev_ebitda": 15.782,
+    "ev_revenue": 7.986,
     "float_shares": 16941268,
     "short_shares": 900841,
     "short_pct_float": 5.16,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.3759,
   "inst_count": 150,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.29,
-      "actual": 0.32,
-      "surprise_pct": 10.34
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.41,
@@ -269,18 +263,15 @@
       "estimate": 0.27333,
       "actual": 0.31,
       "surprise_pct": 13.42
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.32,
+      "actual": 0.1,
+      "surprise_pct": -68.75
     }
   ],
   "insiders": [
-    {
-      "name": "HALEY DAVID JUSTIN",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 39152,
-      "date": "2026-03-10"
-    },
     {
       "name": "MURSTEIN ALVIN",
       "role": "Officer and Director",
@@ -323,26 +314,8 @@
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 25941,
-      "date": "2026-02-10"
-    },
-    {
-      "name": "RUDNICK JEFFREY D.",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 5212,
-      "date": "2026-02-10"
-    },
-    {
-      "name": "ROZOVSKY SAMANTHA K",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 8687,
-      "date": "2026-02-10"
+      "shares": 39152,
+      "date": "2026-03-10"
     },
     {
       "name": "MURSTEIN ALVIN",
@@ -360,6 +333,33 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 77220,
+      "date": "2026-02-10"
+    },
+    {
+      "name": "SILVERMAN MARISA T",
+      "role": "General Counsel",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 19305,
+      "date": "2026-02-10"
+    },
+    {
+      "name": "POULTON DONALD S.",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 58760,
+      "date": "2026-02-10"
+    },
+    {
+      "name": "MUNSON THOMAS JOHN",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 9653,
       "date": "2026-02-10"
     }
   ],

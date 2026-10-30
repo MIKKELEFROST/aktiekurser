@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:32.300Z",
+  "updated_at": "2026-10-30T21:09:23.219Z",
   "source": "Yahoo Finance",
   "symbol": "ACCO",
   "summary": "ACCO Brands Corporation designs, manufactures, and markets consumer, school, technology, and office products in the United States, Canada, Brazil, Mexico, Chile, Europe, the Middle East, Australia, New Zealand, and Asia. It operates in two segments, ACCO Brands Americas and ACCO Brands International. The company offers note taking products, gaming and computer accessories, planners, workspace machines, tools and essentials, and dry erase boards and accessories, as well as filing and organization products, and writing and art products; and shredding, laminating and binding machines, stapling, punching, planners, dry erase boards, and do-it-yourself tools. It sells its products under the Five Star, PowerA, Tilibra, AT-A-GLANCE, Kensington, Quartet, GBC, Mead, Swingline, Barrilito, Foroni, Hilroy, Leitz, Rapid, Esselte, Rexel, PowerA, NOBO, Franken, Derwent, Marbig, Artline, and Spirax brands. The company distributes its products through various channels, including mass retailers, e-tailers, discount, drug/grocery, and variety chains, warehouse clubs, hardware and specialty stores, independent office product dealers, office superstores, wholesalers, contract stationers, and technology specialty businesses, as well as sells products directly through its e-commerce platform and direct sales organization. The company was formerly known as ACCO World Corporation and changed its name to ACCO Brands Corporation in August 2005. ACCO Brands Corporation was founded in 1893 and is headquartered in Lake Zurich, Illinois.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-30",
-  "eps_estimate": 0.18667,
+  "eps_estimate": 0.38333,
   "analysts": {
     "strong_buy": 1,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 383700000,
-      "earnings": 4000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 428800000,
       "earnings": 21300000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 415100000,
       "earnings": 14100000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 380300000,
+      "earnings": 11500000
     }
   ],
   "growth": {
-    "q0": -0.111099996,
-    "q1": 0.0088,
+    "q0": 0.0088,
+    "q1": -2,
     "y0": 0.0476,
     "y1": 0.0947
   },
@@ -158,18 +158,18 @@
       "date": "2026-06-30"
     },
     {
-      "name": "Capital Management Corporation",
-      "kind": "institution",
-      "pct": 7.68,
-      "shares": 7086229,
-      "date": "2026-06-30"
-    },
-    {
       "name": "Allspring Global Investments Holdings, LLC",
       "kind": "institution",
       "pct": 7.6,
       "shares": 7015927,
       "date": "2026-06-30"
+    },
+    {
+      "name": "Capital Management Corporation",
+      "kind": "institution",
+      "pct": 7.52,
+      "shares": 6939179,
+      "date": "2026-09-30"
     },
     {
       "name": "ALLSPRING FUNDS TRUST-Allspring Special Small Cap Value Fund",
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.177,
-    "enterprise_value": 1304407168,
-    "ev_ebitda": 8.092,
-    "ev_revenue": 0.83,
+    "enterprise_value": 1302561024,
+    "ev_ebitda": 8.08,
+    "ev_revenue": 0.829,
     "float_shares": 88042035,
     "short_shares": 6543025,
     "short_pct_float": 7.25,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.48389998,
   "inst_count": 274,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.22,
-      "actual": 0.21,
-      "surprise_pct": -4.55
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.37667,
@@ -269,6 +263,12 @@
       "estimate": 0.26667,
       "actual": 0.29,
       "surprise_pct": 8.75
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.18667,
+      "actual": 0.28,
+      "surprise_pct": 50
     }
   ],
   "insiders": [
@@ -289,6 +289,15 @@
       "value": 229886,
       "shares": 57217,
       "date": "2026-05-28"
+    },
+    {
+      "name": "O CONNOR DEBORAH A",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 94019,
+      "date": "2026-03-13"
     },
     {
       "name": "DUDEK JAMES M JR.",
@@ -351,15 +360,6 @@
       "text": null,
       "value": null,
       "shares": 16790,
-      "date": "2026-03-13"
-    },
-    {
-      "name": "O CONNOR DEBORAH A",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 94019,
       "date": "2026-03-13"
     }
   ],

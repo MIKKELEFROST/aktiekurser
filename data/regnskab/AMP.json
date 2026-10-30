@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:32.407Z",
+  "updated_at": "2026-10-30T21:09:23.458Z",
   "source": "Yahoo Finance",
   "symbol": "AMP",
   "summary": "Ameriprise Financial, Inc., together with its subsidiaries, operates as a diversified financial services company in the United States and internationally. The company offers financial planning and advice services to individual and institutional clients. It operates through Advice & Wealth Management, Asset Management, Retirement & Protection Solutions, Corporate & Other segments. The Advice & Wealth Management segment provides financial planning and advice; brokerage products and services for retail and institutional clients; discretionary and non-discretionary investment advisory accounts; mutual funds; insurance and annuities products; cash management and banking products; and face-amount certificates. The Asset Management segment offers investment management, advice, and products to retail, high net worth, and institutional clients through third-party financial institutions, advisor network, direct retail, and its institutional sales force under the Columbia Threadneedle Investments brand name. Its products include U.S. mutual funds and their non-U.S. equivalents, exchange-traded funds, variable product funds underlying insurance, and annuity separate accounts; and institutional asset management products, such as traditional asset classes, separately managed accounts, individually managed accounts, collateralized loan obligations, hedge funds, collective funds, and property and infrastructure funds. The Retirement & Protection Solutions segment provides variable annuity products, as well as life and disability income insurance products to retail clients. Ameriprise Financial, Inc. was formerly known as American Express Financial Corporation and changed its name to Ameriprise Financial, Inc. in September 2005. The company was founded in 1894 and is based in Minneapolis, Minnesota.",
@@ -7,22 +7,22 @@
   "website": "https://www.ameriprise.com",
   "employees": 13600,
   "ceo": "Mr. James M. Cracchiolo C.P.A.",
-  "next_earnings": "2026-10-29",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-28",
+  "earnings_estimated": true,
   "earnings_call": "2026-10-29",
   "eps_estimate": 12.34909,
   "analysts": {
-    "strong_buy": 1,
+    "strong_buy": 0,
     "buy": 3,
     "hold": 8,
     "sell": 1,
     "strong_sell": 1,
-    "total": 14
+    "total": 13
   },
-  "target_mean": 554.63635,
+  "target_mean": 550.6,
   "target_high": 638,
   "target_low": 445,
-  "target_analysts": 11,
+  "target_analysts": 10,
   "statements": [
     {
       "year": "2022",
@@ -78,6 +78,13 @@
     "y1": 0.1089
   },
   "ratings": [
+    {
+      "date": "2026-10-30",
+      "firm": "Evercore ISI Group",
+      "from": "In-Line",
+      "to": "In-Line",
+      "action": "main"
+    },
     {
       "date": "2026-10-19",
       "firm": "B of A Securities",
@@ -139,13 +146,6 @@
       "firm": "Piper Sandler",
       "from": "Neutral",
       "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-10",
-      "firm": "Morgan Stanley",
-      "from": "Underweight",
-      "to": "Underweight",
       "action": "main"
     }
   ],
@@ -227,24 +227,24 @@
     "sells": 7,
     "bought": 108246,
     "sold": 55463,
-    "net_pct": 49.3
+    "net_pct": 47.7
   },
   "extras": {
-    "beta": 1.156,
-    "enterprise_value": 37268611072,
+    "beta": null,
+    "enterprise_value": 39312371712,
     "ev_ebitda": null,
-    "ev_revenue": 1.879,
-    "float_shares": 87956919,
+    "ev_revenue": 1.952,
+    "float_shares": 89915322,
     "short_shares": 2625061,
-    "short_pct_float": 3.97,
+    "short_pct_float": 4.06,
     "short_ratio": 4.09,
     "last_split": null,
     "last_split_date": null
   },
-  "ex_dividend": "2026-08-03",
+  "ex_dividend": "2026-11-09",
   "dividend_date": null,
   "payout_ratio": 0.15689999,
-  "inst_count": 1881,
+  "inst_count": 1885,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -293,6 +293,15 @@
     {
       "name": "MCGRAW DEIRDRE DAVEY",
       "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 558.28 per share.",
+      "value": 1339867,
+      "shares": 2400,
+      "date": "2026-08-06"
+    },
+    {
+      "name": "MCGRAW DEIRDRE DAVEY",
+      "role": "Officer",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 165.41 - 298.09 per share.",
       "value": 661370,
@@ -300,13 +309,13 @@
       "date": "2026-08-06"
     },
     {
-      "name": "MCGRAW DEIRDRE DAVEY",
-      "role": "Officer",
+      "name": "CRACCHIOLO JAMES M",
+      "role": "Chief Executive Officer",
       "kind": "sell",
-      "text": "Sale at price 558.28 per share.",
-      "value": 1339867,
-      "shares": 2400,
-      "date": "2026-08-06"
+      "text": "Sale at price 545.28 - 546.67 per share.",
+      "value": 9828561,
+      "shares": 18020,
+      "date": "2026-07-28"
     },
     {
       "name": "CRACCHIOLO JAMES M",
@@ -315,24 +324,6 @@
       "text": "Conversion of Exercise of derivative security at price 165.41 per share.",
       "value": 8755482,
       "shares": 52932,
-      "date": "2026-07-28"
-    },
-    {
-      "name": "WILLIAMS WILLIAM JERRYL",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 126.89 - 165.41 per share.",
-      "value": 2272027,
-      "shares": 14582,
-      "date": "2026-07-28"
-    },
-    {
-      "name": "BERMAN WALTER STANLEY",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 165.41 - 197.87 per share.",
-      "value": 6395567,
-      "shares": 34111,
       "date": "2026-07-28"
     },
     {
@@ -345,12 +336,12 @@
       "date": "2026-07-28"
     },
     {
-      "name": "CRACCHIOLO JAMES M",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 545.28 - 546.67 per share.",
-      "value": 9828561,
-      "shares": 18020,
+      "name": "BERMAN WALTER STANLEY",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 165.41 - 197.87 per share.",
+      "value": 6395567,
+      "shares": 34111,
       "date": "2026-07-28"
     },
     {
@@ -360,6 +351,15 @@
       "text": "Sale at price 537.08 - 541.90 per share.",
       "value": 8667768,
       "shares": 16104,
+      "date": "2026-07-28"
+    },
+    {
+      "name": "WILLIAMS WILLIAM JERRYL",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 126.89 - 165.41 per share.",
+      "value": 2272027,
+      "shares": 14582,
       "date": "2026-07-28"
     }
   ],

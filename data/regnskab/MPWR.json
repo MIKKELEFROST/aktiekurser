@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:33.781Z",
+  "updated_at": "2026-10-30T21:09:26.258Z",
   "source": "Yahoo Finance",
   "symbol": "MPWR",
   "summary": "Monolithic Power Systems, Inc. provides semiconductor-based power electronics solutions in China, Taiwan, South Korea, Southeast Asia, Europe, the United States, Japan, and internationally. The company offers direct current (DC) to DC solutions to convert and control voltages within a range of electronic systems, such as cloud-based and on-premises CPU servers and workstations, AI systems, memory, storage solutions, notebooks, infotainment, power sources, home appliances, network infrastructure, and satellite communications. It also provides alternating current (AC) to DC; driver metal-oxide-semiconductor field-effect transistors; power management integrated circuits (ICs); and current limit switch and lighting control products. The company serves storage and computing, enterprise data, automotive, communications, consumer, and industrial end markets through third-party distributors and value-added resellers. Monolithic Power Systems, Inc. was incorporated in 1997 and is based in West Palm Beach, Florida.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 7.74983,
+  "eps_estimate": 8.15747,
   "analysts": {
     "strong_buy": 3,
     "buy": 13,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 737176000,
-      "earnings": 178274000
-    },
-    {
       "q": "4Q2025",
       "revenue": 751155000,
       "earnings": 170136000
@@ -69,15 +64,34 @@
       "q": "2Q2026",
       "revenue": 980642000,
       "earnings": 257298000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1202409000,
+      "earnings": 271067000
     }
   ],
   "growth": {
-    "q0": 0.6384,
-    "q1": 0.703,
+    "q0": 0.703,
+    "q1": 0.5567,
     "y0": 0.5504,
     "y1": 0.2802
   },
   "ratings": [
+    {
+      "date": "2026-10-30",
+      "firm": "Truist Securities",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-30",
+      "firm": "Rosenblatt",
+      "from": "Neutral",
+      "to": "Buy",
+      "action": "up"
+    },
     {
       "date": "2026-10-23",
       "firm": "Oppenheimer",
@@ -132,20 +146,6 @@
       "firm": "Rosenblatt",
       "from": "Neutral",
       "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-31",
-      "firm": "Needham",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-20",
-      "firm": "Wells Fargo",
-      "from": "Overweight",
-      "to": "Overweight",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.681,
-    "enterprise_value": 58128158720,
-    "ev_ebitda": 58.112,
-    "ev_revenue": 17.759,
+    "enterprise_value": 57518292992,
+    "ev_ebitda": 57.502,
+    "ev_revenue": 17.573,
     "float_shares": 47387612,
     "short_shares": 1602872,
     "short_pct_float": 4.39,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.43310001,
   "inst_count": 1784,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 4.63526,
-      "actual": 4.73,
-      "surprise_pct": 2.04
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 4.73649,
@@ -269,6 +263,12 @@
       "estimate": 5.88072,
       "actual": 6.5,
       "surprise_pct": 10.53
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 7.74983,
+      "actual": 8.19,
+      "surprise_pct": 5.68
     }
   ],
   "insiders": [
@@ -291,21 +291,21 @@
       "date": "2026-08-31"
     },
     {
-      "name": "DEAN ROBERT W II",
-      "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 1297.72 per share.",
-      "value": 41527,
-      "shares": 32,
-      "date": "2026-08-24"
-    },
-    {
       "name": "CHANG KUO WEI HERBERT",
       "role": "Director",
       "kind": "sell",
       "text": "Sale at price 1281.57 per share.",
       "value": 64078,
       "shares": 50,
+      "date": "2026-08-24"
+    },
+    {
+      "name": "DEAN ROBERT W II",
+      "role": "Chief Financial Officer",
+      "kind": "sell",
+      "text": "Sale at price 1297.72 per share.",
+      "value": 41527,
+      "shares": 32,
       "date": "2026-08-24"
     },
     {

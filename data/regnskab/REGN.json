@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:34.089Z",
+  "updated_at": "2026-10-30T21:09:25.505Z",
   "source": "Yahoo Finance",
   "symbol": "REGN",
   "summary": "Regeneron Pharmaceuticals, Inc. discovers, invents, develops, manufactures, and commercializes medicines to treat various diseases worldwide. The company develops product candidates to treat eye, allergic and inflammatory, cardiovascular, metabolic, neurological, infectious, and rare diseases; and cancer, hematologic conditions. It also offers EYLEA injections for wet age-related macular degeneration and diabetic macular edema; myopic choroidal neovascularization; diabetic retinopathy; neovascular glaucoma; retinopathy of prematurity; Dupixent injection to treat atopic dermatitis and asthma; Libtayo injection for metastatic or locally advanced cutaneous squamous cell carcinoma; Praluent injection to treat heterozygous familial hypercholesterolemia (HoFH); and Kevzara solution for rheumatoid arthritis. It has license and collaboration agreement with Bayer for the development and commercialization of EYLEA 8 mg and EYLEA; Alnylam Pharmaceuticals, Inc. to discover, develop, and commercialize RNAi therapeutics for diseases by addressing therapeutic disease targets expressed in eye and central nervous system; Intellia Therapeutics, Inc. to advance CRISPR/Cas9 gene-editing technology for in vivo therapeutic development for therapies focused on neurological and muscular diseases; Hansoh Pharmaceuticals Group Company Limited to acquire development and commercial rights for HS-20094, a dual GLP-1/GIP receptor; and Tessera Therapeutics, Inc. develops and commercializes TSRA-196, an investigational gene editing therapy for Alpha-1 antitrypsin deficiency. The company has a strategic collaboration with Telix Pharmaceuticals Limited to develop and commercialize radiopharmaceutical therapies. It also has a strategic collaboration with CytomX Therapeutics, Inc. to create conditionally-activated bispecific cancer therapies. It has a strategic alliance with Sanofi to develop long-acting immunology antibodies. The company was incorporated in 1988 and is based in Tarrytown, New York.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-30",
   "earnings_estimated": false,
   "earnings_call": "2026-10-30",
-  "eps_estimate": 16.24624,
+  "eps_estimate": 20.50326,
   "analysts": {
     "strong_buy": 4,
     "buy": 15,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 3754300000,
-      "earnings": 1460000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 3884300000,
       "earnings": 844600000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 4290700000,
       "earnings": 1296900000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 5115800000,
+      "earnings": 1948700000
     }
   ],
   "growth": {
-    "q0": 0.37330002,
-    "q1": 0.7922,
+    "q0": 0.7922,
+    "q1": 0.3746,
     "y0": 0.3337,
     "y1": 0.063
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.153,
-    "enterprise_value": 75921063936,
-    "ev_ebitda": 16.145,
-    "ev_revenue": 4.887,
+    "enterprise_value": 76470272000,
+    "ev_ebitda": 16.262,
+    "ev_revenue": 4.923,
     "float_shares": 95849804,
     "short_shares": 2134934,
     "short_pct_float": 2.19,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.09,
   "inst_count": 1974,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 9.64458,
-      "actual": 11.83,
-      "surprise_pct": 22.66
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 10.75392,
@@ -269,6 +263,12 @@
       "estimate": 10.20812,
       "actual": 14.29,
       "surprise_pct": 39.99
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 16.24624,
+      "actual": 20.07,
+      "surprise_pct": 23.54
     }
   ],
   "insiders": [
@@ -320,9 +320,9 @@
     {
       "name": "ZOGHBI HUDA Y",
       "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 800.00 per share.",
-      "value": 640000,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 376.69 per share.",
+      "value": 301352,
       "shares": 800,
       "date": "2026-08-10"
     },
@@ -347,9 +347,9 @@
     {
       "name": "ZOGHBI HUDA Y",
       "role": "Director",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 376.69 per share.",
-      "value": 301352,
+      "kind": "sell",
+      "text": "Sale at price 800.00 per share.",
+      "value": 640000,
       "shares": 800,
       "date": "2026-08-10"
     },

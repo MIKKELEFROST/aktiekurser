@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:32.578Z",
+  "updated_at": "2026-10-30T21:09:23.667Z",
   "source": "Yahoo Finance",
   "symbol": "BFAM",
   "summary": "Bright Horizons Family Solutions Inc. provides early education and childcare, comprehensive back-up care, educational advisory, and other workplace solutions services for employers and families in the United States, Puerto Rico, the United Kingdom, the Netherlands, Australia, and India. It operates in three segments: Full-Service Center-Based Child Care, Back-Up Care, and Educational Advisory services. The Full-Service Center-Based Child Care segment offers traditional center-based early education and childcare, preschool, and elementary education services. The Back-Up Care segment provides center-based back-up childcare, in-home child and senior care, school-age programs, camps, tutoring, pet care, and self-sourced reimbursed care services, as well as sittercity, an online marketplace for families and caregivers through early education and childcare centers, school-age programs and in-home care providers, the back-up care network, and other providers. The Educational Advisory services segment offers tuition assistance and student loan repayment program management, workforce education, and related educational consulting services, as well as college admissions and college financial advisory services. The company was formerly known as Bright Horizons Solutions Corp. and changed its name to Bright Horizons Family Solutions Inc. in July 2012. Bright Horizons Family Solutions Inc. was founded in 1986 and is headquartered in Newton, Massachusetts.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 1.75779,
+  "eps_estimate": 1.28574,
   "analysts": {
     "strong_buy": 2,
     "buy": 3,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 802812000,
-      "earnings": 78552000
-    },
-    {
       "q": "4Q2025",
       "revenue": 733698000,
       "earnings": 21740000
@@ -69,15 +64,41 @@
       "q": "2Q2026",
       "revenue": 779178000,
       "earnings": 40635000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 841471000,
+      "earnings": -230690000
     }
   ],
   "growth": {
-    "q0": 0.1196,
-    "q1": 0.118,
+    "q0": 0.118,
+    "q1": 0.115600005,
     "y0": 0.1237,
     "y1": 0.1541
   },
   "ratings": [
+    {
+      "date": "2026-10-30",
+      "firm": "Morgan Stanley",
+      "from": "Underweight",
+      "to": "Underweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-30",
+      "firm": "Goldman Sachs",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-30",
+      "firm": "Baird",
+      "from": "Outperform",
+      "to": "Neutral",
+      "action": "down"
+    },
     {
       "date": "2026-10-14",
       "firm": "UBS",
@@ -125,27 +146,6 @@
       "firm": "UBS",
       "from": "Neutral",
       "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-05-06",
-      "firm": "UBS",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-05-06",
-      "firm": "JP Morgan",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-02-17",
-      "firm": "Barclays",
-      "from": "Overweight",
-      "to": "Overweight",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.177,
-    "enterprise_value": 5259951104,
-    "ev_ebitda": 11.059,
-    "ev_revenue": 1.737,
+    "enterprise_value": 5147603968,
+    "ev_ebitda": 10.823,
+    "ev_revenue": 1.7,
     "float_shares": 42329252,
     "short_shares": 2445646,
     "short_pct_float": 5.08,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 526,
+  "inst_count": 525,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.32055,
-      "actual": 1.57,
-      "surprise_pct": 18.89
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.12213,
@@ -269,6 +263,12 @@
       "estimate": 1.2011,
       "actual": 1.28,
       "surprise_pct": 6.57
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.75779,
+      "actual": 1.8,
+      "surprise_pct": 2.4
     }
   ],
   "insiders": [
@@ -309,16 +309,7 @@
       "date": "2026-07-28"
     },
     {
-      "name": "SCHULZ JENNIFER",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 2096,
-      "date": "2026-06-03"
-    },
-    {
-      "name": "ATKINSON JULIE",
+      "name": "TOCIO MARY ANN",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -345,7 +336,7 @@
       "date": "2026-06-03"
     },
     {
-      "name": "TOCIO MARY ANN",
+      "name": "HITCH JORDAN",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -354,7 +345,16 @@
       "date": "2026-06-03"
     },
     {
-      "name": "HITCH JORDAN",
+      "name": "ALLEVA LAWRENCE M",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 2096,
+      "date": "2026-06-03"
+    },
+    {
+      "name": "RICHIE LAUREL J",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

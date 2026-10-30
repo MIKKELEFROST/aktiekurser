@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:27:33.188Z",
+  "updated_at": "2026-10-30T21:09:24.403Z",
   "source": "Yahoo Finance",
   "symbol": "FND",
   "summary": "Floor & Decor Holdings, Inc., together with its subsidiaries, operates as a multi-channel specialty retailer of hard surface flooring and related accessories, and commercial surfaces seller in the United States. The company offers wood-based laminate flooring, vinyl, and engineered/composite rigid core vinyl; porcelain and ceramic tile, porcelain mosaics and tile slabs; grout, mortar, backer board, tools, adhesives, underlayments, moldings, and stair treads; and decorative tiles and mosaics, such as natural stone, porcelain, ceramic, glass, wall tile, and decorative trims. The company also provides solid prefinished and unfinished hardwood, engineered hardwood, bamboo, and wood countertops; marble, limestone, travertine, slate, ledger; and vanities, shower doors, bath accessories, faucets, sinks, custom countertops, bathroom mirrors, bathroom lighting, and kitchen cabinets. It sells products through its warehouse-format stores and five small-format design studios, as well as through Website, FloorandDecor.com. The company serves professional installers, commercial businesses, and homeowners. The company was formerly known as FDO Holdings, Inc. and changed its name to Floor & Decor Holdings, Inc. in April 2017. Floor & Decor Holdings, Inc. was founded in 2000 and is headquartered in Atlanta, Georgia.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 0.56731,
+  "eps_estimate": 0.44996,
   "analysts": {
     "strong_buy": 1,
     "buy": 5,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 1179527000,
-      "earnings": 57260000
-    },
-    {
       "q": "4Q2025",
       "revenue": 1129671000,
       "earnings": 39331000
@@ -69,15 +64,48 @@
       "q": "2Q2026",
       "revenue": 1250270000,
       "earnings": 95870000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1214561000,
+      "earnings": 64823000
     }
   ],
   "growth": {
-    "q0": 0.0704,
-    "q1": 0.2499,
+    "q0": 0.2499,
+    "q1": 0.1236,
     "y0": 0.020399999,
     "y1": 0.0913
   },
   "ratings": [
+    {
+      "date": "2026-10-30",
+      "firm": "TD Cowen",
+      "from": "Hold",
+      "to": "Hold",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-30",
+      "firm": "Truist Securities",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-10-30",
+      "firm": "Telsey Advisory Group",
+      "from": "Outperform",
+      "to": "Market Perform",
+      "action": "down"
+    },
+    {
+      "date": "2026-10-30",
+      "firm": "Evercore ISI Group",
+      "from": "In-Line",
+      "to": "In-Line",
+      "action": "main"
+    },
     {
       "date": "2026-10-26",
       "firm": "Stifel",
@@ -118,34 +146,6 @@
       "firm": "Evercore ISI Group",
       "from": "In-Line",
       "to": "In-Line",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-31",
-      "firm": "UBS",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-31",
-      "firm": "Telsey Advisory Group",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-31",
-      "firm": "Morgan Stanley",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-31",
-      "firm": "Wells Fargo",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.598,
-    "enterprise_value": 6755778048,
-    "ev_ebitda": 13.784,
-    "ev_revenue": 1.434,
+    "enterprise_value": 7052884992,
+    "ev_ebitda": 14.391,
+    "ev_revenue": 1.497,
     "float_shares": 104824462,
     "short_shares": 13797528,
     "short_pct_float": 13.13,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 595,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.4541,
-      "actual": 0.53,
-      "surprise_pct": 16.71
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.34451,
@@ -269,24 +263,30 @@
       "estimate": 0.56373,
       "actual": 0.58,
       "surprise_pct": 2.89
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.56731,
+      "actual": 0.61,
+      "surprise_pct": 7.52
     }
   ],
   "insiders": [
     {
       "name": "TAYLOR THOMAS V JR.",
       "role": "Officer and Director",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 21.00 per share.",
-      "value": 4581969,
+      "kind": "sell",
+      "text": "Sale at price 62.30 per share.",
+      "value": 13593175,
       "shares": 218189,
       "date": "2026-08-07"
     },
     {
       "name": "TAYLOR THOMAS V JR.",
       "role": "Officer and Director",
-      "kind": "sell",
-      "text": "Sale at price 62.30 per share.",
-      "value": 13593175,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 21.00 per share.",
+      "value": 4581969,
       "shares": 218189,
       "date": "2026-08-07"
     },
@@ -309,12 +309,12 @@
       "date": "2026-05-18"
     },
     {
-      "name": "SAYMAN ERSAN",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 9.99 per share.",
-      "value": 282917,
-      "shares": 28320,
+      "name": "PAULSEN BRADLEY",
+      "role": "Chief Executive Officer",
+      "kind": "buy",
+      "text": "Purchase at price 50.25 per share.",
+      "value": 251250,
+      "shares": 5000,
       "date": "2026-05-04"
     },
     {
@@ -327,12 +327,12 @@
       "date": "2026-05-04"
     },
     {
-      "name": "PAULSEN BRADLEY",
-      "role": "Chief Executive Officer",
-      "kind": "buy",
-      "text": "Purchase at price 50.25 per share.",
-      "value": 251250,
-      "shares": 5000,
+      "name": "SAYMAN ERSAN",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 9.99 per share.",
+      "value": 282917,
+      "shares": 28320,
       "date": "2026-05-04"
     },
     {
