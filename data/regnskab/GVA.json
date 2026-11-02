@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T21:09:24.580Z",
+  "updated_at": "2026-11-02T23:43:28.283Z",
   "source": "Yahoo Finance",
   "symbol": "GVA",
   "summary": "Granite Construction Incorporated provides infrastructure solutions for public and private clients in the United States. It operates through Construction and Materials segments. The Construction segment engages in the construction and rehabilitation of roads, pavement preservation, bridges, rail lines, airports, marine ports, dams, reservoirs, aqueducts, infrastructure, and site development for use by the public and water-related construction for municipal agencies, commercial water suppliers, industrial facilities, and energy companies; and construction of various complex projects, including infrastructure and site development, mining, public safety, tunnel, solar, battery storage, and power related projects. The Materials segment produces and delivers aggregates, asphalt concrete, liquid asphalt, and recycled materials for internal use in construction projects and sale to third parties. It also provides site preparation, mining, and infrastructure services for railways, residential development, energy development, and commercial and industrial sites; produces construction materials; and provides construction management professional services, as well as owns and leases aggregate reserves and processing plants. The company serves federal agencies, state departments of transportation, local transit authorities, county and city public works departments, school districts and developers, utilities, contractors, landscapers, manufacturers of products requiring aggregate materials, retailers, homeowners, farmers, brokers, and private owners of industrial, commercial, and residential sites. Granite Construction Incorporated was incorporated in 1922 and is headquartered in Watsonville, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 1.51,
+  "eps_estimate": 1.57333,
   "analysts": {
     "strong_buy": 0,
     "buy": 4,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 5
   },
-  "target_mean": 170.16667,
+  "target_mean": 171.66667,
   "target_high": 200,
-  "target_low": 110,
+  "target_low": 124,
   "target_analysts": 6,
   "statements": [
     {
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.078600004,
-    "q1": -1.8654,
-    "y0": 0.1585,
-    "y1": 0.1311
+    "q0": 0.1238,
+    "q1": -1.0385,
+    "y0": 0.2801,
+    "y1": 0.056999996
   },
   "ratings": [
+    {
+      "date": "2026-11-02",
+      "firm": "Goldman Sachs",
+      "from": "Sell",
+      "to": "Sell",
+      "action": "main"
+    },
     {
       "date": "2026-07-31",
       "firm": "Goldman Sachs",
@@ -140,83 +147,76 @@
       "from": "Buy",
       "to": "Buy",
       "action": "main"
-    },
-    {
-      "date": "2025-05-05",
-      "firm": "Goldman Sachs",
-      "from": "Sell",
-      "to": "Sell",
-      "action": "main"
     }
   ],
   "holders": [
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 15.69,
+      "pct": 15.56,
       "shares": 6866256,
       "date": "2026-06-30"
     },
     {
       "name": "FMR, LLC",
       "kind": "institution",
-      "pct": 13.04,
+      "pct": 12.93,
       "shares": 5707187,
       "date": "2026-06-30"
     },
     {
       "name": "iShares Trust-iShares Core S&P Small-Cap ETF",
       "kind": "fond",
-      "pct": 5.96,
+      "pct": 5.91,
       "shares": 2606686,
       "date": "2026-09-30"
     },
     {
       "name": "Vanguard Portfolio Management LLC",
       "kind": "institution",
-      "pct": 5.58,
+      "pct": 5.53,
       "shares": 2439945,
       "date": "2026-06-30"
     },
     {
       "name": "State Street Corporation",
       "kind": "institution",
-      "pct": 5.32,
+      "pct": 5.27,
       "shares": 2326402,
       "date": "2026-06-30"
     },
     {
       "name": "Vanguard Capital Management LLC",
       "kind": "institution",
-      "pct": 4.5,
+      "pct": 4.46,
       "shares": 1970342,
       "date": "2026-06-30"
     },
     {
       "name": "First TRT Exch-Trd Fd. VI-First TRT RBA American Industrial Renaissanc",
       "kind": "fond",
-      "pct": 4.23,
+      "pct": 4.19,
       "shares": 1850949,
       "date": "2026-09-30"
     },
     {
       "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
       "kind": "fond",
-      "pct": 3.17,
+      "pct": 3.15,
       "shares": 1389009,
       "date": "2026-06-30"
     },
     {
       "name": "First Trust Advisors LP",
       "kind": "institution",
-      "pct": 3.02,
+      "pct": 2.99,
       "shares": 1320136,
       "date": "2026-06-30"
     },
     {
       "name": "Geode Capital Management, LLC",
       "kind": "institution",
-      "pct": 2.91,
+      "pct": 2.88,
       "shares": 1272334,
       "date": "2026-06-30"
     }
@@ -230,11 +230,11 @@
     "net_pct": -0.8
   },
   "extras": {
-    "beta": null,
-    "enterprise_value": 6492285952,
-    "ev_ebitda": 11.14,
-    "ev_revenue": 1.225,
-    "float_shares": 43782734,
+    "beta": 1.427,
+    "enterprise_value": 6606750720,
+    "ev_ebitda": 11.807,
+    "ev_revenue": 1.247,
+    "float_shares": 43785635,
     "short_shares": 4179418,
     "short_pct_float": 15.1,
     "short_ratio": 6.16,
@@ -336,12 +336,21 @@
       "date": "2026-06-08"
     },
     {
-      "name": "TATUSKO MICHAEL G",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 141.00 per share.",
-      "value": 1057500,
-      "shares": 7500,
+      "name": "HERNANDEZ CARLOS M.",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 1036,
+      "date": "2026-06-08"
+    },
+    {
+      "name": "MASTIN CELESTE BEEKS",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 1036,
       "date": "2026-06-08"
     },
     {
@@ -351,15 +360,6 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 1036,
-      "date": "2026-06-08"
-    },
-    {
-      "name": "WILLIAMS BRADLEY JAY",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 141.00 per share.",
-      "value": 949494,
-      "shares": 6734,
       "date": "2026-06-08"
     }
   ],

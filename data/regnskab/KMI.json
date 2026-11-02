@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T21:09:24.884Z",
+  "updated_at": "2026-11-02T23:43:28.667Z",
   "source": "Yahoo Finance",
   "symbol": "KMI",
   "summary": "Kinder Morgan, Inc. operates as an energy infrastructure company primarily in North America. It operates through Natural Gas Pipelines, Products Pipelines, Terminals, and CO2 segments. The Natural Gas Pipelines segment owns and operates interstate and intrastate natural gas pipeline, and storage systems; natural gas gathering systems and natural gas processing and treating facilities; natural gas liquids fractionation facilities and transportation systems; and liquefied natural gas gasification, liquefaction, and storage facilities. The Products Pipelines segment owns and operates refined petroleum products, and crude oil and condensate pipelines; and associated product terminals and petroleum pipeline transmix facilities. The Terminals segment owns and/or operates liquids and bulk terminals that stores and handles various commodities, including gasoline, diesel fuel, renewable fuel and feedstocks, chemicals, ethanol, metals, and petroleum coke; and owns tankers. The CO2 segment produces, transports, and markets CO2 to recovery and production crude oil from mature oil fields; owns interests in/or operates oil fields and gasoline processing plants; and operates a crude oil pipeline system in West Texas, as well as owns and operates RNG and LNG facilities. The company was formerly known as Kinder Morgan Holdco LLC and changed its name to Kinder Morgan, Inc. in February 2011. Kinder Morgan, Inc. was founded in 1997 and is headquartered in Houston, Texas.",
@@ -7,10 +7,10 @@
   "website": "https://www.kindermorgan.com",
   "employees": 11028,
   "ceo": "Ms. Kimberly Allen Dang",
-  "next_earnings": "2026-10-21",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-27",
+  "earnings_estimated": true,
   "earnings_call": "2026-10-21",
-  "eps_estimate": 0.383,
+  "eps_estimate": 0.38343,
   "analysts": {
     "strong_buy": 2,
     "buy": 11,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 24
   },
-  "target_mean": 37.5,
+  "target_mean": 37.54545,
   "target_high": 43,
   "target_low": 32,
   "target_analysts": 22,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": -0.0179,
+    "q0": -0.0168,
     "q1": -0.107,
-    "y0": 0.2039,
-    "y1": -0.013200001
+    "y0": 0.2085,
+    "y1": -0.0149
   },
   "ratings": [
+    {
+      "date": "2026-11-02",
+      "firm": "JP Morgan",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-10-28",
       "firm": "RBC Capital",
@@ -139,13 +146,6 @@
       "firm": "TD Cowen",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-10-22",
-      "firm": "Mizuho",
-      "from": "Outperform",
-      "to": "Outperform",
       "action": "main"
     }
   ],
@@ -230,10 +230,10 @@
     "net_pct": 0.5
   },
   "extras": {
-    "beta": 0.583,
-    "enterprise_value": 109384482816,
-    "ev_ebitda": 14.243,
-    "ev_revenue": 5.963,
+    "beta": 0.573,
+    "enterprise_value": 109161717760,
+    "ev_ebitda": 14.214,
+    "ev_revenue": 5.951,
     "float_shares": 1936619680,
     "short_shares": 44000754,
     "short_pct_float": 2.26,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-11-02",
   "dividend_date": null,
   "payout_ratio": 0.7284,
-  "inst_count": 2283,
+  "inst_count": 2287,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -266,9 +266,9 @@
     },
     {
       "quarter": "2026-09-30",
-      "estimate": 0.3294,
+      "estimate": 0.32726,
       "actual": 0.35,
-      "surprise_pct": 6.25
+      "surprise_pct": 6.95
     }
   ],
   "insiders": [
@@ -289,42 +289,6 @@
       "value": 50612,
       "shares": 1550,
       "date": "2026-08-17"
-    },
-    {
-      "name": "DANG KIMBERLY A",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 636575,
-      "date": "2026-07-31"
-    },
-    {
-      "name": "JAMES CATHERINE C",
-      "role": "General Counsel",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 69445,
-      "date": "2026-07-31"
-    },
-    {
-      "name": "SANDERS DAX A",
-      "role": "President",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 130209,
-      "date": "2026-07-31"
-    },
-    {
-      "name": "MICHELS DAVID PATRICK",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 121528,
-      "date": "2026-07-31"
     },
     {
       "name": "HOLLAND JAMES E",
@@ -360,6 +324,42 @@
       "text": null,
       "value": null,
       "shares": 115741,
+      "date": "2026-07-31"
+    },
+    {
+      "name": "JAMES CATHERINE C",
+      "role": "General Counsel",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 69445,
+      "date": "2026-07-31"
+    },
+    {
+      "name": "SANDERS DAX A",
+      "role": "President",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 130209,
+      "date": "2026-07-31"
+    },
+    {
+      "name": "MICHELS DAVID PATRICK",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 121528,
+      "date": "2026-07-31"
+    },
+    {
+      "name": "DANG KIMBERLY A",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 636575,
       "date": "2026-07-31"
     }
   ],

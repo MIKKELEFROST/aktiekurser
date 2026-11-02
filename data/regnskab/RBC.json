@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T21:09:26.318Z",
+  "updated_at": "2026-11-02T23:43:29.412Z",
   "source": "Yahoo Finance",
   "symbol": "RBC",
   "summary": "RBC Bearings Incorporated manufactures and markets engineered precision bearings, components, and systems in the United States and internationally. It operates through two segments: Aerospace/Defense and Industrial. The company produces plain bearings with self-lubricating or metal-to-metal designs, including rod end bearings, spherical plain bearings, and journal bearings; roller bearings, such as tapered roller bearings, needle roller bearings, and needle bearing track rollers and cam followers, which are anti-friction products that are used in industrial applications and military aircraft platforms; and ball bearings that include high precision aerospace, airframe control, thin section, and industrial ball bearings that utilize high precision ball elements to reduce friction in high-speed applications. In addition, it offers mounted bearing products include mounted ball bearings, mounted roller bearings, and mounted plain bearings; and enclosed gearing product lines, including quantis gearmotor, torque arm, tigear, magnagear and maxum, and controlled start transmission. Further, the company's power transmission components include mechanical drive components, couplings, and conveyor components; engineered hydraulics and valves for aircraft and submarine applications, and aerospace and defense aftermarket services; fasteners; precision mechanical components, for use in various general industrial applications; and machine tool collets that are used for holding circulars or rod-like pieces. It serves commercial and defense aerospace, construction, mining, forestry, energy, agricultural, food and beverage, metals and mining material handling, chemicals, oil and gas production, warehousing and logistics, semiconductor equipment, waste and water management, and rail and transportation applications through its direct sales force, and a network of industrial and aerospace distributors. The company was founded in 1919 and is based in Oxford, Connecticut.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-30",
   "earnings_estimated": false,
   "earnings_call": "2026-10-30",
-  "eps_estimate": 3.53172,
+  "eps_estimate": 3.7017,
   "analysts": {
     "strong_buy": 2,
     "buy": 6,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.22629999,
-    "q1": 0.1859,
-    "y0": 0.19139999,
-    "y1": 0.1274
+    "q0": 0.2177,
+    "q1": 0.1093,
+    "y0": 0.2,
+    "y1": 0.137
   },
   "ratings": [
+    {
+      "date": "2026-11-02",
+      "firm": "Morgan Stanley",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-09-15",
       "firm": "Guggenheim",
@@ -136,13 +143,6 @@
     },
     {
       "date": "2026-01-07",
-      "firm": "Keybanc",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-01-06",
       "firm": "Keybanc",
       "from": "Overweight",
       "to": "Overweight",
@@ -230,11 +230,11 @@
     "net_pct": 7.4
   },
   "extras": {
-    "beta": 1.383,
-    "enterprise_value": 16403129344,
-    "ev_ebitda": 26.728,
-    "ev_revenue": 8.393,
-    "float_shares": 29318482,
+    "beta": 1.369,
+    "enterprise_value": 15284376576,
+    "ev_ebitda": 24.154,
+    "ev_revenue": 7.553,
+    "float_shares": 29320938,
     "short_shares": 530090,
     "short_pct_float": 1.7,
     "short_ratio": 1.67,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 830,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 2.73467,
-      "actual": 2.88,
-      "surprise_pct": 5.31
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 2.86257,
@@ -269,6 +263,12 @@
       "estimate": 3.42624,
       "actual": 3.88,
       "surprise_pct": 13.24
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 3.53172,
+      "actual": 3.74,
+      "surprise_pct": 5.9
     }
   ],
   "insiders": [
@@ -284,18 +284,18 @@
     {
       "name": "ENNICO DOLORES J",
       "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 636.11 per share.",
-      "value": 381669,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 127.33 - 199.16 per share.",
+      "value": 105130,
       "shares": 600,
       "date": "2026-06-24"
     },
     {
       "name": "ENNICO DOLORES J",
       "role": "Director",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 127.33 - 199.16 per share.",
-      "value": 105130,
+      "kind": "sell",
+      "text": "Sale at price 636.11 per share.",
+      "value": 381669,
       "shares": 600,
       "date": "2026-06-24"
     },
@@ -311,18 +311,18 @@
     {
       "name": "STEWART EDWARD D",
       "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 592.83 per share.",
-      "value": 355695,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 199.16 per share.",
+      "value": 119496,
       "shares": 600,
       "date": "2026-06-03"
     },
     {
       "name": "STEWART EDWARD D",
       "role": "Director",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 199.16 per share.",
-      "value": 119496,
+      "kind": "sell",
+      "text": "Sale at price 592.83 per share.",
+      "value": 355695,
       "shares": 600,
       "date": "2026-06-03"
     },

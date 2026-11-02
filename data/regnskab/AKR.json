@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T21:09:23.325Z",
+  "updated_at": "2026-11-02T23:43:27.093Z",
   "source": "Yahoo Finance",
   "symbol": "AKR",
   "summary": "Acadia Realty Trust is an equity real estate investment trust focused on delivering long-term, profitable growth. Acadia owns and operates a high-quality real estate portfolio of street and open-air retail properties in the nation's most dynamic retail corridors, along with an investment management platform that targets opportunistic and value-add investments through its institutional co-investment vehicles. Acadia Realty Trust was established in 1993 and was incorporated in Maryland.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-02",
   "earnings_estimated": false,
   "earnings_call": "2026-11-02",
-  "eps_estimate": 0.06,
+  "eps_estimate": 0.085,
   "analysts": {
     "strong_buy": 0,
     "buy": 6,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 101006000,
-      "earnings": 5618000
-    },
-    {
       "q": "4Q2025",
       "revenue": 104765000,
       "earnings": 7707000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 95423000,
       "earnings": 11038000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 94983000,
+      "earnings": -3594000
     }
   ],
   "growth": {
-    "q0": -0.36099997,
-    "q1": -0.1601,
+    "q0": -0.1601,
+    "q1": null,
     "y0": null,
     "y1": null
   },
@@ -230,10 +230,10 @@
     "net_pct": 3.4
   },
   "extras": {
-    "beta": 1.13,
-    "enterprise_value": 4605454848,
-    "ev_ebitda": 18.988,
-    "ev_revenue": 11.092,
+    "beta": 1.128,
+    "enterprise_value": 4599961600,
+    "ev_ebitda": 18.965,
+    "ev_revenue": 11.079,
     "float_shares": 136584259,
     "short_shares": 13361699,
     "short_pct_float": 22.31,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-09-30",
   "dividend_date": null,
   "payout_ratio": 2.3529,
-  "inst_count": 389,
+  "inst_count": 390,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.07333,
-      "actual": 0.0939,
-      "surprise_pct": 28.05
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.07,
@@ -269,9 +263,24 @@
       "estimate": 0.04,
       "actual": 0.0673,
       "surprise_pct": 68.25
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.06,
+      "actual": -0.0238,
+      "surprise_pct": -139.67
     }
   ],
   "insiders": [
+    {
+      "name": "THURBER LYNN C",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 21.46 per share.",
+      "value": 231124,
+      "shares": 10770,
+      "date": "2026-05-13"
+    },
     {
       "name": "SPITZ WILLIAM T",
       "role": "Director",
@@ -288,15 +297,6 @@
       "text": "Stock Award(Grant) at price 21.46 per share.",
       "value": 120004,
       "shares": 5592,
-      "date": "2026-05-13"
-    },
-    {
-      "name": "THURBER LYNN C",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 21.46 per share.",
-      "value": 231124,
-      "shares": 10770,
       "date": "2026-05-13"
     },
     {
@@ -336,21 +336,21 @@
       "date": "2025-06-11"
     },
     {
-      "name": "SPITZ WILLIAM T",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 19.29 per share.",
-      "value": 120003,
-      "shares": 6221,
-      "date": "2025-05-08"
-    },
-    {
       "name": "THURBER LYNN C",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 19.29 per share.",
       "value": 231113,
       "shares": 11981,
+      "date": "2025-05-08"
+    },
+    {
+      "name": "SPITZ WILLIAM T",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 19.29 per share.",
+      "value": 120003,
+      "shares": 6221,
       "date": "2025-05-08"
     },
     {

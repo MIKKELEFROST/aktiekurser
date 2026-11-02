@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T21:09:26.064Z",
+  "updated_at": "2026-11-02T23:43:30.096Z",
   "source": "Yahoo Finance",
   "symbol": "WAL",
   "summary": "Western Alliance Bancorporation operates as the bank holding company for Western Alliance Bank that provides various banking products and related services primarily in Arizona, California, and Nevada. It operates through Commercial and Consumer Related segments. The company offers deposit products, including demand deposit, checking, savings, and money market accounts, as well as fixed-rate and fixed maturity certificates of deposit accounts; treasury management products and services to small and middle-market businesses, specialized banking services to sophisticated commercial institutions and investors; and residential mortgage products and services. It also provides commercial and industrial loan products, such as working capital lines of credit, loans to technology companies, inventory and accounts receivable lines, mortgage warehouse lines, equipment loans and leases, and other commercial loans; commercial real estate loans, which are secured by multifamily residential properties, professional offices, industrial facilities, retail centers, hotels, and other commercial properties; construction and land development loans for single family and multifamily residential projects, industrial/warehouse properties, office buildings, retail centers, medical office facilities, and residential lot developments; and consumer loans. In addition, the company offers other financial services, such as internet banking, wire transfers, electronic bill payment and presentment, funds transfer and other digital payment offerings, lock box services, courier, and cash management services. Further, the company holds certain investment securities, municipal and non-profit loans, and leases; invests primarily in low-income housing tax credits and small business investment corporations; and certain real estate loans and related securities. Western Alliance Bancorporation was founded in 1994 and is headquartered in Phoenix, Arizona.",
@@ -7,10 +7,10 @@
   "website": "https://www.westernalliancebancorporation.com",
   "employees": 3769,
   "ceo": "Mr. Kenneth A. Vecchione",
-  "next_earnings": "2026-10-19",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-26",
+  "earnings_estimated": true,
   "earnings_call": "2026-10-20",
-  "eps_estimate": 2.5006,
+  "eps_estimate": 2.48983,
   "analysts": {
     "strong_buy": 4,
     "buy": 7,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 15
   },
-  "target_mean": 89.6875,
+  "target_mean": 89.375,
   "target_high": 96,
-  "target_low": 84,
+  "target_low": 82,
   "target_analysts": 16,
   "statements": [
     {
@@ -72,10 +72,10 @@
     }
   ],
   "growth": {
-    "q0": -0.0022,
+    "q0": -0.0064999997,
     "q1": 0.9275,
-    "y0": 0.0402,
-    "y1": 0.22649999
+    "y0": 0.0379,
+    "y1": 0.2235
   },
   "ratings": [
     {
@@ -230,11 +230,11 @@
     "net_pct": -0.8
   },
   "extras": {
-    "beta": 1.417,
-    "enterprise_value": 10360479744,
+    "beta": 1.415,
+    "enterprise_value": 9621189632,
     "ev_ebitda": null,
-    "ev_revenue": 2.908,
-    "float_shares": 100852128,
+    "ev_revenue": 2.7,
+    "float_shares": 100426464,
     "short_shares": 8694,
     "short_pct_float": 0.01,
     "short_ratio": 0.01,
@@ -243,8 +243,8 @@
   },
   "ex_dividend": "2026-08-13",
   "dividend_date": null,
-  "payout_ratio": 0.1851,
-  "inst_count": 651,
+  "payout_ratio": 0.1863,
+  "inst_count": 652,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -272,51 +272,6 @@
     }
   ],
   "insiders": [
-    {
-      "name": "BRUCKNER TIM R",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 415,
-      "date": "2026-10-15"
-    },
-    {
-      "name": "NACHLAS EMILY",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 189,
-      "date": "2026-10-15"
-    },
-    {
-      "name": "JARVI JESSICA H",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 168,
-      "date": "2026-10-15"
-    },
-    {
-      "name": "HERNDON LYNNE",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 84,
-      "date": "2026-10-15"
-    },
-    {
-      "name": "IDNANI VISHAL",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 123,
-      "date": "2026-10-15"
-    },
     {
       "name": "GIBBONS DALE M",
       "role": "Officer",
@@ -354,12 +309,57 @@
       "date": "2026-10-15"
     },
     {
+      "name": "HERNDON LYNNE",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 84,
+      "date": "2026-10-15"
+    },
+    {
+      "name": "IDNANI VISHAL",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 123,
+      "date": "2026-10-15"
+    },
+    {
       "name": "BRUCKNER TIM R",
       "role": "Officer",
       "kind": "other",
       "text": null,
       "value": null,
       "shares": 415,
+      "date": "2026-10-15"
+    },
+    {
+      "name": "NACHLAS EMILY",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 189,
+      "date": "2026-10-15"
+    },
+    {
+      "name": "JARVI JESSICA H",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 168,
+      "date": "2026-10-15"
+    },
+    {
+      "name": "GIBBONS DALE M",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 726,
       "date": "2026-09-15"
     }
   ],

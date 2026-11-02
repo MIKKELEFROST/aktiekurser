@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T21:09:23.291Z",
+  "updated_at": "2026-11-02T23:43:27.066Z",
   "source": "Yahoo Finance",
   "symbol": "AGNC",
   "summary": "AGNC Investment Corp. provides private capital to housing market in the United States. It invests in residential mortgage pass-through securities and collateralized mortgage obligations for which the principal and interest payments are guaranteed by the United States government-sponsored enterprise or by the United States government agency. The company qualifies as a real estate investment trust for federal income tax purposes. It generally would not be subject to federal or state corporate income taxes if it distributes at least 90% of its taxable income to its stockholders. The company was formerly known as American Capital Agency Corp. and changed its name to AGNC Investment Corp. in September 2016. AGNC Investment Corp. was incorporated in 2008 and is headquartered in Bethesda, Maryland.",
@@ -7,8 +7,8 @@
   "website": "https://www.agnc.com",
   "employees": 54,
   "ceo": "Mr. Peter J. Federico",
-  "next_earnings": "2026-10-19",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-25",
+  "earnings_estimated": true,
   "earnings_call": "2026-10-20",
   "eps_estimate": 0.36746,
   "analysts": {
@@ -74,8 +74,8 @@
   "growth": {
     "q0": 0.0499,
     "q1": -0.1359,
-    "y0": 0.0369,
-    "y1": -0.0712
+    "y0": 0.0377,
+    "y1": -0.0728
   },
   "ratings": [
     {
@@ -153,70 +153,70 @@
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 5.45,
+      "pct": 5.07,
       "shares": 64594088,
       "date": "2026-06-30"
     },
     {
       "name": "Vanguard Capital Management LLC",
       "kind": "institution",
-      "pct": 4.35,
+      "pct": 4.05,
       "shares": 51588727,
       "date": "2026-06-30"
     },
     {
       "name": "Vanguard Portfolio Management LLC",
       "kind": "institution",
-      "pct": 3.89,
+      "pct": 3.62,
       "shares": 46120221,
       "date": "2026-06-30"
     },
     {
       "name": "iShares Trust-iShares Core S&P Mid-Cap ETF",
       "kind": "fond",
-      "pct": 3.56,
+      "pct": 3.32,
       "shares": 42227168,
       "date": "2026-09-30"
     },
     {
       "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
       "kind": "fond",
-      "pct": 3.07,
+      "pct": 2.86,
       "shares": 36397121,
       "date": "2026-06-30"
     },
     {
       "name": "UBS Group AG",
       "kind": "institution",
-      "pct": 2.3,
+      "pct": 2.14,
       "shares": 27313853,
       "date": "2026-06-30"
     },
     {
       "name": "VANGUARD INDEX FUNDS-Vanguard Small-Cap Index Fund",
       "kind": "fond",
-      "pct": 2.22,
+      "pct": 2.07,
       "shares": 26331402,
       "date": "2026-06-30"
     },
     {
       "name": "Geode Capital Management, LLC",
       "kind": "institution",
-      "pct": 2.07,
+      "pct": 1.92,
       "shares": 24487679,
       "date": "2026-06-30"
     },
     {
       "name": "State Street Corporation",
       "kind": "institution",
-      "pct": 1.74,
+      "pct": 1.62,
       "shares": 20640491,
       "date": "2026-06-30"
     },
     {
       "name": "VANGUARD INDEX FUNDS-Vanguard Small-Cap Value Index Fund",
       "kind": "fond",
-      "pct": 1.41,
+      "pct": 1.31,
       "shares": 16676822,
       "date": "2026-06-30"
     }
@@ -230,20 +230,20 @@
     "net_pct": null
   },
   "extras": {
-    "beta": 1.342,
-    "enterprise_value": 85481111552,
+    "beta": 1.375,
+    "enterprise_value": 85206417408,
     "ev_ebitda": null,
-    "ev_revenue": 362.208,
-    "float_shares": 1254241818,
+    "ev_revenue": 361.044,
+    "float_shares": 1266392093,
     "short_shares": 129983736,
-    "short_pct_float": 11.01,
+    "short_pct_float": 10.34,
     "short_ratio": 3.02,
     "last_split": null,
     "last_split_date": null
   },
   "ex_dividend": "2026-10-30",
   "dividend_date": null,
-  "payout_ratio": 0.7347,
+  "payout_ratio": 72,
   "inst_count": 851,
   "eps_history": [
     {
@@ -327,15 +327,6 @@
       "date": "2026-04-28"
     },
     {
-      "name": "JOHNSON ANDREW A. JR.",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 17045,
-      "date": "2026-04-16"
-    },
-    {
       "name": "MULLINGS PAUL E",
       "role": "Director",
       "kind": "other",
@@ -361,13 +352,18 @@
       "value": 0,
       "shares": 17045,
       "date": "2026-04-16"
+    },
+    {
+      "name": "DAVIS MORRIS A",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 17045,
+      "date": "2026-04-16"
     }
   ],
   "dividends": [
-    {
-      "date": "2023-06-29",
-      "amount": 0.12
-    },
     {
       "date": "2023-07-28",
       "amount": 0.12
@@ -522,6 +518,10 @@
     },
     {
       "date": "2026-09-30",
+      "amount": 0.12
+    },
+    {
+      "date": "2026-10-30",
       "amount": 0.12
     }
   ],

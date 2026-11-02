@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T21:09:23.953Z",
+  "updated_at": "2026-11-02T23:43:27.648Z",
   "source": "Yahoo Finance",
   "symbol": "CLX",
   "summary": "The Clorox Company manufactures and markets consumer and professional products worldwide. It operates through four segments: Health and Wellness, Household, Lifestyle, and International. The company home care cleaning and disinfecting products and laundry additives, skin sanitization and cleaning products, professional cleaning and disinfecting products, and professional food service products under the Clorox, Clorox2, Pine-Sol, Scentiva, Tilex, Liquid-Plumr, Formula 409, Purell, GOJO, CloroxPro, Clorox Healthcare, Hidden Valley, Poett, Clorinda, and Chux brands. It also provides bags and wraps, cat litter, and grilling products under the Glad, Fresh Step, Scoop Away, Kingsford, and Ever Clean brands; and dressings, dips, seasonings, sauces, water-filtration products, and natural personal care products under the Brita and Burt's Bees brands. The company sells its products through mass retailers; grocery outlets; warehouse clubs; dollar stores; home hardware centers; drug, pet, and military stores; third-party and owned e-commerce channels; distributors; and other retail outlets through direct sales force. The company was founded in 1913 and is headquartered in Oakland, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-02",
   "earnings_estimated": false,
   "earnings_call": "2026-11-02",
-  "eps_estimate": 1.07178,
+  "eps_estimate": 1.33089,
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 1429000000,
-      "earnings": 80000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 1673000000,
       "earnings": 157000000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 1948000000,
       "earnings": 163000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1905000000,
+      "earnings": 170000000
     }
   ],
   "growth": {
-    "q0": 0.2609,
-    "q1": -0.0392,
-    "y0": 0.0308,
-    "y1": 0.0756
+    "q0": -0.0425,
+    "q1": -0.0452,
+    "y0": 0.031,
+    "y1": 0.0754
   },
   "ratings": [
+    {
+      "date": "2026-11-02",
+      "firm": "Evercore ISI Group",
+      "from": "Underperform",
+      "to": "In-Line",
+      "action": "up"
+    },
     {
       "date": "2026-10-19",
       "firm": "JP Morgan",
@@ -139,13 +146,6 @@
       "firm": "UBS",
       "from": "Neutral",
       "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-04",
-      "firm": "JP Morgan",
-      "from": "Underweight",
-      "to": "Underweight",
       "action": "main"
     }
   ],
@@ -230,10 +230,10 @@
     "net_pct": null
   },
   "extras": {
-    "beta": 0.574,
-    "enterprise_value": 16339952640,
-    "ev_ebitda": 14.333,
-    "ev_revenue": 2.432,
+    "beta": 0.581,
+    "enterprise_value": 16258928640,
+    "ev_ebitda": 14.262,
+    "ev_revenue": 2.419,
     "float_shares": 120493235,
     "short_shares": 10268451,
     "short_pct_float": 9.78,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-10-28",
   "dividend_date": null,
   "payout_ratio": 1.0312,
-  "inst_count": 1387,
+  "inst_count": 1380,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.77818,
-      "actual": 0.85,
-      "surprise_pct": 9.23
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.43353,
@@ -269,6 +263,12 @@
       "estimate": 1.64583,
       "actual": 1.66,
       "surprise_pct": 0.86
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.06763,
+      "actual": 1.55,
+      "surprise_pct": 45.18
     }
   ],
   "insiders": [
@@ -364,10 +364,6 @@
     }
   ],
   "dividends": [
-    {
-      "date": "2015-10-26",
-      "amount": 0.77
-    },
     {
       "date": "2016-01-25",
       "amount": 0.77
@@ -519,6 +515,10 @@
     {
       "date": "2025-04-23",
       "amount": 1.22
+    },
+    {
+      "date": "2025-08-13",
+      "amount": 1.24
     },
     {
       "date": "2026-10-28",

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T21:09:23.445Z",
+  "updated_at": "2026-11-02T23:43:27.136Z",
   "source": "Yahoo Finance",
   "symbol": "AM",
   "summary": "Antero Midstream Corporation owns, operates, and develops midstream energy assets in the Appalachian Basin. It operates in two segments, Gathering and Processing, and Water Handling. The gathering and processing segment includes a network of gathering pipelines and compressor stations that collect and process natural gas and NGLs from Antero Resources' wells in West Virginia and Ohio. The Water Handling segment delivers water from sources, including the Ohio River, local reservoirs, and various regional waterways; other fluid handling services, which include transfer and disposal; uses water handling systems to transport flowback and produced water; and buried pipelines, surface pipelines, and water storage facilities, as well as pumping stations and blending facilities. Antero Midstream Corporation was founded in 2002 and is headquartered in Denver, Colorado.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-28",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 0.36319,
+  "eps_estimate": null,
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
@@ -19,7 +19,7 @@
     "strong_sell": 1,
     "total": 8
   },
-  "target_mean": 24,
+  "target_mean": 24.14286,
   "target_high": 26,
   "target_low": 22,
   "target_analysts": 7,
@@ -71,13 +71,15 @@
       "earnings": 392657000
     }
   ],
-  "growth": {
-    "q0": 0.29709998,
-    "q1": null,
-    "y0": 0.2368,
-    "y1": 0.16360001
-  },
+  "growth": null,
   "ratings": [
+    {
+      "date": "2026-11-02",
+      "firm": "Wells Fargo",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
     {
       "date": "2026-09-21",
       "firm": "UBS",
@@ -139,13 +141,6 @@
       "firm": "Goldman Sachs",
       "from": "Neutral",
       "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2025-08-06",
-      "firm": "Morgan Stanley",
-      "from": "Underweight",
-      "to": "Underweight",
       "action": "main"
     }
   ],
@@ -230,11 +225,11 @@
     "net_pct": -0.1
   },
   "extras": {
-    "beta": null,
+    "beta": 0.686,
     "enterprise_value": null,
     "ev_ebitda": null,
     "ev_revenue": null,
-    "float_shares": 328134043,
+    "float_shares": 327420800,
     "short_shares": 13633169,
     "short_pct_float": 4.15,
     "short_ratio": 4.99,
@@ -244,7 +239,7 @@
   "ex_dividend": "2026-10-28",
   "dividend_date": null,
   "payout_ratio": 0.6338,
-  "inst_count": 690,
+  "inst_count": 691,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -309,7 +304,7 @@
       "date": "2026-08-04"
     },
     {
-      "name": "CHISHOLM NANCY E.",
+      "name": "MOLLENKOPF JOHN C",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -318,7 +313,25 @@
       "date": "2026-07-10"
     },
     {
-      "name": "MUNOZ JEFFREY S",
+      "name": "KLIMLEY BROOKS J",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 1907,
+      "date": "2026-07-10"
+    },
+    {
+      "name": "MCARDLE JANINE MARIE J",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 1907,
+      "date": "2026-07-10"
+    },
+    {
+      "name": "KEENAN W HOWARD JR",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -337,24 +350,6 @@
     },
     {
       "name": "DEA PETER A",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 1907,
-      "date": "2026-07-10"
-    },
-    {
-      "name": "MOLLENKOPF JOHN C",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 1907,
-      "date": "2026-07-10"
-    },
-    {
-      "name": "KLIMLEY BROOKS J",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T21:09:24.243Z",
+  "updated_at": "2026-11-02T23:43:27.942Z",
   "source": "Yahoo Finance",
   "symbol": "EME",
   "summary": "EMCOR Group, Inc. provides electrical and mechanical construction and facilities, building, and industrial services in the United States and the United Kingdom. It offers design, integration, installation, startup, operation, and maintenance services related to power transmission, distribution, and generation systems; energy solutions; premises electrical and lighting systems; process instrumentation; low-voltage systems; voice and data communications systems; roadway and transit lighting, signaling, and fiber optic lines; computerized traffic control systems, and signal and communication equipment; heating, ventilation, air conditioning, refrigeration, and geothermal solutions; clean-room process ventilation systems; fire protection and suppression systems; plumbing, process, and piping systems; control and filtration systems; water and wastewater treatment systems; central plant heating and cooling systems; crane and rigging; millwright; and steel fabrication, erection, and welding services. The company also provides site-based operations and maintenance; facility management and maintenance; energy retrofit; military base operations support; indoor air quality; floor care and janitorial; landscaping, lot sweeping, and snow removal; vendor management and call center; installation and support for building systems; program development, management, and maintenance for energy systems; technical consulting and diagnostic; infrastructure and building projects; modification and retrofit projects; and reception, security, and catering services. In addition, it offers refinery turnaround planning and engineering; welding; overhaul and maintenance; technical; instrumentation, controls, and electrical; electrical panel design, fabrication, and installation; on-site repair and maintenance; and renewable energy services, as well as design, manufacturing, repair, and hydro blast cleaning services. The company was incorporated in 1987 and is headquartered in Norwalk, Connecticut.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 9.20417,
+  "eps_estimate": 9.465,
   "analysts": {
     "strong_buy": 0,
     "buy": 7,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 11
   },
-  "target_mean": 979.125,
+  "target_mean": 940.5,
   "target_high": 1200,
   "target_low": 690,
   "target_analysts": 8,
@@ -72,12 +72,26 @@
     }
   ],
   "growth": {
-    "q0": 0.2801,
-    "q1": 0.2152,
-    "y0": 0.32529998,
-    "y1": 0.14050001
+    "q0": 0.3164,
+    "q1": 0.21139999,
+    "y0": 0.3447,
+    "y1": 0.1353
   },
   "ratings": [
+    {
+      "date": "2026-11-02",
+      "firm": "Oppenheimer",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-02",
+      "firm": "Cantor Fitzgerald",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-10-20",
       "firm": "Goldman Sachs",
@@ -133,108 +147,94 @@
       "from": "Buy",
       "to": "Buy",
       "action": "main"
-    },
-    {
-      "date": "2026-03-03",
-      "firm": "Stifel",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-02-27",
-      "firm": "DA Davidson",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
     }
   ],
   "holders": [
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 9.33,
+      "pct": 9.4,
       "shares": 4116754,
       "date": "2026-06-30"
     },
     {
       "name": "Vanguard Capital Management LLC",
       "kind": "institution",
-      "pct": 6.58,
+      "pct": 6.63,
       "shares": 2901344,
       "date": "2026-06-30"
     },
     {
       "name": "Vanguard Portfolio Management LLC",
       "kind": "institution",
-      "pct": 4.51,
+      "pct": 4.54,
       "shares": 1988553,
       "date": "2026-06-30"
     },
     {
       "name": "State Street Corporation",
       "kind": "institution",
-      "pct": 4.49,
+      "pct": 4.52,
       "shares": 1978559,
       "date": "2026-06-30"
     },
     {
       "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
       "kind": "fond",
-      "pct": 3.2,
+      "pct": 3.22,
       "shares": 1410788,
       "date": "2026-06-30"
     },
     {
       "name": "FMR, LLC",
       "kind": "institution",
-      "pct": 3.03,
+      "pct": 3.05,
       "shares": 1334646,
       "date": "2026-06-30"
     },
     {
       "name": "Geode Capital Management, LLC",
       "kind": "institution",
-      "pct": 2.9,
+      "pct": 2.93,
       "shares": 1281283,
       "date": "2026-06-30"
     },
     {
       "name": "VANGUARD INDEX FUNDS-Vanguard 500 Index Fund",
       "kind": "fond",
-      "pct": 2.61,
+      "pct": 2.63,
       "shares": 1151121,
       "date": "2026-06-30"
     },
     {
       "name": "VANGUARD INDEX FUNDS-Vanguard Small-Cap Index Fund",
       "kind": "fond",
-      "pct": 2.31,
+      "pct": 2.33,
       "shares": 1018933,
       "date": "2026-06-30"
     },
     {
       "name": "AQR Capital Management, LLC",
       "kind": "institution",
-      "pct": 2.11,
+      "pct": 2.13,
       "shares": 930817,
       "date": "2026-06-30"
     }
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 17,
+    "buys": 12,
     "sells": 6,
-    "bought": 5096,
+    "bought": 5072,
     "sold": 12527,
     "net_pct": -2.3
   },
   "extras": {
-    "beta": null,
-    "enterprise_value": 29966610432,
-    "ev_ebitda": 13.724,
-    "ev_revenue": 1.511,
-    "float_shares": 43444883,
+    "beta": 1.157,
+    "enterprise_value": 29544859648,
+    "ev_ebitda": 13.59,
+    "ev_revenue": 1.489,
+    "float_shares": 43442256,
     "short_shares": 755353,
     "short_pct_float": 1.73,
     "short_ratio": 2.01,
@@ -243,8 +243,8 @@
   },
   "ex_dividend": "2026-10-15",
   "dividend_date": null,
-  "payout_ratio": 0.0405,
-  "inst_count": 1708,
+  "payout_ratio": 0.0419,
+  "inst_count": 1709,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -266,9 +266,9 @@
     },
     {
       "quarter": "2026-09-30",
-      "estimate": 8.34867,
+      "estimate": 8.3568,
       "actual": 9.6,
-      "surprise_pct": 14.99
+      "surprise_pct": 14.88
     }
   ],
   "insiders": [

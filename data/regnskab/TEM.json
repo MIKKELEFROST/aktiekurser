@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T21:09:25.869Z",
+  "updated_at": "2026-11-02T23:43:29.831Z",
   "source": "Yahoo Finance",
   "symbol": "TEM",
   "summary": "Tempus AI, Inc. operates as a healthcare technology company in the United States. It offers the Tempus platform, a closed-loop, full-stack, bi-directional integrations between a clinician's desktop and its laboratory diagnostic capabilities, analytics platform, and repository of multimodal data; and Hub, a clinical application for physicians and other healthcare providers for use in the diagnostics product line as an end-to-end application for healthcare providers for NGS tests. The company also provides Lens, a software application for life sciences and advanced precision research; diagnostics services, such as NGS diagnostics, PCR profiling, and other anatomic and molecular pathology tests; and large-panel solid tumor and hematologic testing through multiple assays, with its core clinical assay (xT and xR) offering large panel DNA, RNA full transcriptome, and incidental germline findings through normal blood or saliva analyses. In addition, it provides genetic tests focused on inherited conditions; an nP assay for pharmacogenomic testing for patients with psychiatric conditions, including depression, general anxiety disorder, bipolar disorder, and other relevant diagnoses; Insights, which licenses libraries of linked, de-identified clinical, molecular, and imaging data; Organoids, a tumor derived biological modeling. Further, the company offers Trials for clinical trial matching services; Next, an AI platform; Algos, an algorithm-based diagnostics application. It has Strategic Collaborations with AstraZeneca AB, Pathos AI, Inc., GlaxoSmithKline, Merck, and Recursion Pharmaceuticals, Inc. Additionally, it also has a strategic collaboration with Blood Cancer United to develop registry for pediatric acute myeloid leukemia. The company was formerly known as Tempus Labs, Inc. and changed its name to Tempus AI, Inc. in January 2023. Tempus AI, Inc. was incorporated in 2015 and is headquartered in Chicago, Illinois.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-02",
   "earnings_estimated": false,
   "earnings_call": "2026-11-02",
-  "eps_estimate": -0.07648,
+  "eps_estimate": -0.01312,
   "analysts": {
     "strong_buy": 2,
     "buy": 8,
@@ -45,11 +45,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 334206000,
-      "earnings": -79982000
-    },
-    {
       "q": "4Q2025",
       "revenue": 367211000,
       "earnings": -54166000
@@ -63,15 +58,27 @@
       "q": "2Q2026",
       "revenue": 382486000,
       "earnings": 5642000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 411537000,
+      "earnings": -14851000
     }
   ],
   "growth": {
-    "q0": 0.3047,
-    "q1": 0.672,
+    "q0": 0.672,
+    "q1": 0.4445,
     "y0": 0.5799,
     "y1": 0.819
   },
   "ratings": [
+    {
+      "date": "2026-11-02",
+      "firm": "Needham",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-26",
       "firm": "HC Wainwright & Co.",
@@ -131,13 +138,6 @@
     {
       "date": "2026-09-09",
       "firm": "UBS",
-      "from": null,
-      "to": "Neutral",
-      "action": "init"
-    },
-    {
-      "date": "2026-09-08",
-      "firm": "Rothschild & Co",
       "from": null,
       "to": "Neutral",
       "action": "init"
@@ -218,17 +218,17 @@
   "insider_net": {
     "period": "6m",
     "buys": 16,
-    "sells": 36,
+    "sells": 35,
     "bought": 413511,
-    "sold": 2002936,
-    "net_pct": -2.4
+    "sold": 1836686,
+    "net_pct": -2.1
   },
   "extras": {
-    "beta": 3.54,
-    "enterprise_value": 14673218560,
-    "ev_ebitda": -72.484,
-    "ev_revenue": 10.247,
-    "float_shares": 116329896,
+    "beta": 3.613,
+    "enterprise_value": 13659174912,
+    "ev_ebitda": -67.475,
+    "ev_revenue": 9.538,
+    "float_shares": 123350612,
     "short_shares": 25375199,
     "short_pct_float": 24.95,
     "short_ratio": 3.32,
@@ -238,14 +238,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": null,
-  "inst_count": 663,
+  "inst_count": 666,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.17534,
-      "actual": -0.11,
-      "surprise_pct": 37.26
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.05132,
@@ -263,6 +257,12 @@
       "estimate": -0.15167,
       "actual": -0.04,
       "surprise_pct": 73.63
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.07648,
+      "actual": 0.07,
+      "surprise_pct": 191.53
     }
   ],
   "insiders": [
@@ -294,15 +294,6 @@
       "date": "2026-09-22"
     },
     {
-      "name": "EPSTEIN DAVID R",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 65.55 per share.",
-      "value": 16388,
-      "shares": 250,
-      "date": "2026-09-01"
-    },
-    {
       "name": "DOUDNA JENNIFER A. PH.D.",
       "role": "Director",
       "kind": "sell",
@@ -318,6 +309,15 @@
       "text": "Sale at price 62.12 - 64.63 per share.",
       "value": 1934244,
       "shares": 30846,
+      "date": "2026-09-01"
+    },
+    {
+      "name": "EPSTEIN DAVID R",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 65.55 per share.",
+      "value": 16388,
+      "shares": 250,
       "date": "2026-09-01"
     },
     {
@@ -348,12 +348,12 @@
       "date": "2026-08-25"
     },
     {
-      "name": "FUKUSHIMA RYAN",
+      "name": "SCHOENHERR THOMAS EDWARD",
       "role": "Officer",
       "kind": "sell",
       "text": "Sale at price 70.00 per share.",
-      "value": 1000020,
-      "shares": 14286,
+      "value": 188580,
+      "shares": 2694,
       "date": "2026-08-21"
     }
   ],

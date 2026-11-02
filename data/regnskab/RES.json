@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T21:09:25.513Z",
+  "updated_at": "2026-11-02T23:43:29.433Z",
   "source": "Yahoo Finance",
   "symbol": "RES",
   "summary": "RPC, Inc., together with its subsidiaries, engages provision of a range of oilfield services and equipment for the oil and gas companies involved in the exploration, production, and development of oil and gas properties. The company operates through Technical Services and Support Services segments. The Technical Services segment offers pressure pumping, cementing, downhole tools, coiled tubing, snubbing, nitrogen, well control, wireline, and fishing services that are used in the completion, production, and maintenance of wells, as well as well control training. The Support Services segment provides a range of rental tools drill pipe and related tools, as well as pipe handling, pipe inspection and storage services. It rents its tools for use with onshore and offshore oil and gas well drilling, completion, and workover activities. It operates in Africa, Canada, Argentina, Mexico, Latin America, and the Middle East. The company was incorporated in 1984 and is headquartered in Atlanta, Georgia.",
@@ -14,12 +14,12 @@
   "analysts": {
     "strong_buy": 1,
     "buy": 0,
-    "hold": 3,
-    "sell": 0,
+    "hold": 2,
+    "sell": 1,
     "strong_sell": 1,
     "total": 5
   },
-  "target_mean": 6.4,
+  "target_mean": 6.2,
   "target_high": 9,
   "target_low": 5,
   "target_analysts": 5,
@@ -73,11 +73,18 @@
   ],
   "growth": {
     "q0": 0.5625,
-    "q1": 1,
-    "y0": 0.13,
-    "y1": 0.0354
+    "q1": 0.889,
+    "y0": 0.2,
+    "y1": 0.025
   },
   "ratings": [
+    {
+      "date": "2026-10-31",
+      "firm": "Freedom Broker",
+      "from": "Hold",
+      "to": "Sell",
+      "action": "down"
+    },
     {
       "date": "2026-07-08",
       "firm": "Susquehanna",
@@ -140,20 +147,13 @@
       "from": "Hold",
       "to": "Hold",
       "action": "main"
-    },
-    {
-      "date": "2025-07-15",
-      "firm": "Piper Sandler",
-      "from": null,
-      "to": "Underweight",
-      "action": "init"
     }
   ],
   "holders": [
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 7.03,
+      "pct": 7.04,
       "shares": 15590143,
       "date": "2026-06-30"
     },
@@ -230,13 +230,13 @@
     "net_pct": null
   },
   "extras": {
-    "beta": null,
-    "enterprise_value": 1246332032,
-    "ev_ebitda": 5.542,
-    "ev_revenue": 0.689,
-    "float_shares": 84492850,
+    "beta": 0.78,
+    "enterprise_value": 1218421376,
+    "ev_ebitda": 5.418,
+    "ev_revenue": 0.673,
+    "float_shares": 85540796,
     "short_shares": 15544485,
-    "short_pct_float": 41.17,
+    "short_pct_float": 41.26,
     "short_ratio": 6.87,
     "last_split": "3:2",
     "last_split_date": "2012-03-12"
@@ -354,12 +354,12 @@
       "date": "2026-01-27"
     },
     {
-      "name": "SCHMIT MICHAEL",
-      "role": "Chief Financial Officer",
+      "name": "PALMER BENJAMIN M.",
+      "role": "Chief Executive Officer",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 78600,
+      "shares": 192500,
       "date": "2026-01-27"
     }
   ],

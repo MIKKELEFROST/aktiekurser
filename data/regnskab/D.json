@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T21:09:24.078Z",
+  "updated_at": "2026-11-02T23:43:27.777Z",
   "source": "Yahoo Finance",
   "symbol": "D",
   "summary": "Dominion Energy, Inc. provides regulated electricity and natural gas services in the United States. It operates through Dominion Energy Virginia, Dominion Energy South Carolina, and Contracted Energy segments. The Dominion Energy Virginia segment engages in the generation, distribution, and transmission of electricity to approximately 2.8 million residential, commercial, industrial, and governmental customers in Virginia and North Carolina. The Dominion Energy South Carolina segment generates, transmits, and distributes electricity to approximately 0.8 million customers in the central, southern, and southwestern portions of South Carolina; and distributes natural gas to approximately 0.5 million residential, commercial, and industrial customers in South Carolina. The Contracted Energy segment is involved in the nonregulated long-term contracted renewable electric generation fleet and renewable natural gas facilities. As of December 31, 2025, the company's portfolio of assets included approximately 30.7 GW of electric generating capacity, 10,800 miles of electric transmission lines, and 80,400 miles of electric distribution lines. The company was formerly known as Dominion Resources, Inc. Dominion Energy, Inc. was incorporated in 1983 and is headquartered in Richmond, Virginia.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-30",
   "earnings_estimated": false,
   "earnings_call": "2026-10-30",
-  "eps_estimate": 1.20752,
+  "eps_estimate": 0.64317,
   "analysts": {
     "strong_buy": 2,
     "buy": 3,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 16
   },
-  "target_mean": 70,
+  "target_mean": 69.91667,
   "target_high": 87,
   "target_low": 62,
   "target_analysts": 12,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.1392,
-    "q1": -0.059299998,
-    "y0": 0.048800003,
-    "y1": 0.0625
+    "q0": -0.0542,
+    "q1": -0.039300002,
+    "y0": 0.0509,
+    "y1": 0.0618
   },
   "ratings": [
+    {
+      "date": "2026-11-02",
+      "firm": "Evercore ISI Group",
+      "from": "In-Line",
+      "to": "In-Line",
+      "action": "main"
+    },
     {
       "date": "2026-10-20",
       "firm": "Mizuho",
@@ -139,13 +146,6 @@
       "firm": "BMO Capital",
       "from": "Market Perform",
       "to": "Market Perform",
-      "action": "main"
-    },
-    {
-      "date": "2026-06-23",
-      "firm": "Barclays",
-      "from": "Overweight",
-      "to": "Overweight",
       "action": "main"
     }
   ],
@@ -230,11 +230,11 @@
     "net_pct": null
   },
   "extras": {
-    "beta": 0.619,
-    "enterprise_value": 116588732416,
-    "ev_ebitda": 13.978,
-    "ev_revenue": 6.435,
-    "float_shares": 877766897,
+    "beta": 0.59,
+    "enterprise_value": 119613693952,
+    "ev_ebitda": 13.475,
+    "ev_revenue": 6.227,
+    "float_shares": 877806946,
     "short_shares": 23887118,
     "short_pct_float": 2.72,
     "short_ratio": 4.98,
@@ -243,15 +243,9 @@
   },
   "ex_dividend": "2026-12-04",
   "dividend_date": null,
-  "payout_ratio": 0.9239,
-  "inst_count": 1932,
+  "payout_ratio": 0.8812,
+  "inst_count": 1933,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.94782,
-      "actual": 1.06,
-      "surprise_pct": 11.84
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.6706,
@@ -269,6 +263,12 @@
       "estimate": 0.67405,
       "actual": 0.79,
       "surprise_pct": 17.2
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.20752,
+      "actual": 1.28,
+      "surprise_pct": 6
     }
   ],
   "insiders": [

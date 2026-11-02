@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T21:09:24.147Z",
+  "updated_at": "2026-11-02T23:43:27.838Z",
   "source": "Yahoo Finance",
   "symbol": "DOC",
   "summary": "Healthpeak Properties, Inc. is a fully integrated real estate investment trust (REIT) and S&P 500 company. Healthpeak owns, operates, and develops high-quality real estate for healthcare discovery and delivery. Healthpeak Properties, Inc. is based in Denver, Colorado. Healthpeak Properties, Inc. was incorporated in 1985 in Maryland.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-02",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": 0.025,
+  "eps_estimate": 0.03,
   "analysts": {
     "strong_buy": 2,
     "buy": 6,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 690344000,
-      "earnings": -117256000
-    },
-    {
       "q": "4Q2025",
       "revenue": 704778000,
       "earnings": 113848000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 749810000,
       "earnings": 52668000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 813690000,
+      "earnings": 17118000
     }
   ],
   "growth": {
-    "q0": 1.1374,
-    "q1": -0.6862,
+    "q0": -0.6862,
+    "q1": null,
     "y0": 1.3077,
     "y1": 0.5556
   },
@@ -230,10 +230,10 @@
     "net_pct": 3.2
   },
   "extras": {
-    "beta": 0.988,
-    "enterprise_value": 23392804864,
-    "ev_ebitda": 14.893,
-    "ev_revenue": 7.93,
+    "beta": 0.98,
+    "enterprise_value": 23454861312,
+    "ev_ebitda": 14.932,
+    "ev_revenue": 7.951,
     "float_shares": 686693303,
     "short_shares": 21729512,
     "short_pct_float": 4.1,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-11-13",
   "dividend_date": null,
   "payout_ratio": 3.4857998,
-  "inst_count": 1063,
+  "inst_count": 1066,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.06,
-      "actual": -0.1819,
-      "surprise_pct": -403.17
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.06,
@@ -269,9 +263,24 @@
       "estimate": 0.02679,
       "actual": 0.08,
       "surprise_pct": 198.62
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.025,
+      "actual": 0.0386,
+      "surprise_pct": 54.4
     }
   ],
   "insiders": [
+    {
+      "name": "BRINKER SCOTT M",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 15.46 per share.",
+      "value": 20827,
+      "shares": 1347,
+      "date": "2026-05-29"
+    },
     {
       "name": "JOHNSTON SHAWN G",
       "role": "Officer",
@@ -279,6 +288,15 @@
       "text": "Stock Award(Grant) at price 15.46 per share.",
       "value": 20997,
       "shares": 1358,
+      "date": "2026-05-29"
+    },
+    {
+      "name": "THOMAS JOHN T",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 15.46 per share.",
+      "value": 21414,
+      "shares": 1385,
       "date": "2026-05-29"
     },
     {
@@ -306,24 +324,6 @@
       "text": "Stock Award(Grant) at price 15.46 per share.",
       "value": 14487,
       "shares": 937,
-      "date": "2026-05-29"
-    },
-    {
-      "name": "THOMAS JOHN T",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 15.46 per share.",
-      "value": 21414,
-      "shares": 1385,
-      "date": "2026-05-29"
-    },
-    {
-      "name": "BRINKER SCOTT M",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 15.46 per share.",
-      "value": 20827,
-      "shares": 1347,
       "date": "2026-05-29"
     },
     {
@@ -364,10 +364,6 @@
     }
   ],
   "dividends": [
-    {
-      "date": "2016-11-08",
-      "amount": 0.37
-    },
     {
       "date": "2017-02-13",
       "amount": 0.37
@@ -518,6 +514,10 @@
     },
     {
       "date": "2025-08-18",
+      "amount": 0.102
+    },
+    {
+      "date": "2025-09-19",
       "amount": 0.102
     },
     {

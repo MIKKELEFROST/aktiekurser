@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T21:09:24.889Z",
+  "updated_at": "2026-11-02T23:43:28.682Z",
   "source": "Yahoo Finance",
   "symbol": "KNSA",
   "summary": "Kiniksa Pharmaceuticals International, plc, a biopharmaceutical company, develops and commercializes medical therapies in the United States, the United Kingdom, and internationally. The company offers ARCALYST, an interleukin-1alpha and 1beta cytokine trap for the treatment of recurrent pericarditis, a chronic autoinflammatory cardiovascular disease and cardiac sarcoidosis. It also develops KPL-387, an investigational and fully human immunoglobulin G2 monoclonal antibody, which is Phase 2/3 clinical trial for the treatment of recurrent pericarditis; and KPL-116, a Fc-modified immunoglobulin G2 monoclonal antibody, which is in pre-clinical stage. The company was formerly known as Kiniksa Pharmaceuticals, Ltd. and changed its name to Kiniksa Pharmaceuticals International, plc in June 2024. Kiniksa Pharmaceuticals International, plc was incorporated in 2015 and is based in London, the United Kingdom.",
@@ -10,19 +10,19 @@
   "next_earnings": "2026-10-27",
   "earnings_estimated": false,
   "earnings_call": "2026-10-27",
-  "eps_estimate": 0.39,
+  "eps_estimate": 0.275,
   "analysts": {
     "strong_buy": 1,
-    "buy": 7,
+    "buy": 6,
     "hold": 0,
     "sell": 0,
     "strong_sell": 0,
-    "total": 8
+    "total": 7
   },
-  "target_mean": 103.625,
+  "target_mean": 109.42857,
   "target_high": 134,
-  "target_low": 87,
-  "target_analysts": 8,
+  "target_low": 98,
+  "target_analysts": 7,
   "statements": [
     {
       "year": "2022",
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 1.2941,
-    "q1": 0.6852,
-    "y0": 1.5467,
-    "y1": 0.0838
+    "q0": 0.61759996,
+    "q1": 0.6296,
+    "y0": 0.9933,
+    "y1": 0.45990002
   },
   "ratings": [
+    {
+      "date": "2026-10-30",
+      "firm": "JP Morgan",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-10-28",
       "firm": "Goldman Sachs",
@@ -139,13 +146,6 @@
       "firm": "Goldman Sachs",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-13",
-      "firm": "Wells Fargo",
-      "from": "Overweight",
-      "to": "Overweight",
       "action": "main"
     }
   ],
@@ -223,17 +223,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 20,
-    "sells": 5,
-    "bought": 1620591,
-    "sold": 623601,
+    "buys": 18,
+    "sells": 3,
+    "bought": 1063687,
+    "sold": 66697,
     "net_pct": 57.7
   },
   "extras": {
-    "beta": 0.036,
-    "enterprise_value": 7104581632,
-    "ev_ebitda": 53.675,
-    "ev_revenue": 7.51,
+    "beta": 0.083,
+    "enterprise_value": 6686580224,
+    "ev_ebitda": 50.517,
+    "ev_revenue": 7.069,
     "float_shares": 40406285,
     "short_shares": 3763527,
     "short_pct_float": 9.31,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 396,
+  "inst_count": 400,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -282,24 +282,6 @@
       "date": "2026-09-03"
     },
     {
-      "name": "RAGOSA MARK",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 9104,
-      "date": "2026-09-01"
-    },
-    {
-      "name": "MOAT ROSS",
-      "role": "Chief Operating Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 8285,
-      "date": "2026-09-01"
-    },
-    {
       "name": "MEGNA MICHAEL R",
       "role": "Officer",
       "kind": "other",
@@ -327,6 +309,24 @@
       "date": "2026-09-01"
     },
     {
+      "name": "RAGOSA MARK",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 9104,
+      "date": "2026-09-01"
+    },
+    {
+      "name": "MOAT ROSS",
+      "role": "Chief Operating Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 8285,
+      "date": "2026-09-01"
+    },
+    {
       "name": "QUART BARRY D",
       "role": "Director",
       "kind": "other",
@@ -347,19 +347,19 @@
     {
       "name": "COLE GORDON BRADLEY",
       "role": "Director",
-      "kind": "other",
-      "text": "Stock Gift at price 0.00 per share.",
-      "value": 0,
-      "shares": 4500,
+      "kind": "sell",
+      "text": "Sale at price 81.43 per share.",
+      "value": 299092,
+      "shares": 3673,
       "date": "2026-07-29"
     },
     {
       "name": "COLE GORDON BRADLEY",
       "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 81.43 per share.",
-      "value": 299092,
-      "shares": 3673,
+      "kind": "other",
+      "text": "Stock Gift at price 0.00 per share.",
+      "value": 0,
+      "shares": 4500,
       "date": "2026-07-29"
     }
   ],

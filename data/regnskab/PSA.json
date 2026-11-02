@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T21:09:26.271Z",
+  "updated_at": "2026-11-02T23:43:29.360Z",
   "source": "Yahoo Finance",
   "symbol": "PSA",
   "summary": "Public Storage, a member of the S&P 500, is a REIT that primarily acquires, develops, owns, and operates self-storage facilities. At September 30, 2026, the firm: (i) owned and/or operated 4,764 self-storage facilities with approximately 339 million net rentable square feet located in 42 states, Puerto Rico and Canada and (ii) owned a 35% common equity interest in Shurgard Self Storage Limited (Euronext Brussels: SHUR), which owned 338 self-storage facilities located in seven Western European countries with approximately 19 million net rentable square feet operated under the Shurgard brand. Public Storage headquarters are in Frisco, Texas. Public Storage was incorporated in 1972 in Maryland.",
@@ -12,14 +12,14 @@
   "earnings_call": "2026-10-27",
   "eps_estimate": 1.98,
   "analysts": {
-    "strong_buy": 3,
+    "strong_buy": 2,
     "buy": 4,
-    "hold": 15,
+    "hold": 16,
     "sell": 0,
     "strong_sell": 0,
     "total": 22
   },
-  "target_mean": 330.5,
+  "target_mean": 331.83334,
   "target_high": 367,
   "target_low": 285,
   "target_analysts": 18,
@@ -75,9 +75,16 @@
     "q0": -0.2402,
     "q1": -0.0558,
     "y0": -0.0376,
-    "y1": 0.0069
+    "y1": 0.0086
   },
   "ratings": [
+    {
+      "date": "2026-11-02",
+      "firm": "Evercore ISI Group",
+      "from": "In-Line",
+      "to": "In-Line",
+      "action": "main"
+    },
     {
       "date": "2026-10-28",
       "firm": "RBC Capital",
@@ -139,13 +146,6 @@
       "firm": "Mizuho",
       "from": "Neutral",
       "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-19",
-      "firm": "Barclays",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
       "action": "main"
     }
   ],
@@ -230,10 +230,10 @@
     "net_pct": 0.6
   },
   "extras": {
-    "beta": 0.929,
-    "enterprise_value": 76309716992,
-    "ev_ebitda": 21.652,
-    "ev_revenue": 15.13,
+    "beta": 0.871,
+    "enterprise_value": 77750280192,
+    "ev_ebitda": 22.06,
+    "ev_revenue": 15.416,
     "float_shares": 168728977,
     "short_shares": 6846134,
     "short_pct_float": 4.77,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-09-15",
   "dividend_date": null,
   "payout_ratio": 1.2618,
-  "inst_count": 1576,
+  "inst_count": 1579,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -309,15 +309,6 @@
       "date": "2026-07-28"
     },
     {
-      "name": "MITRA SHANKH",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 318.31 per share.",
-      "value": 97085,
-      "shares": 305,
-      "date": "2026-06-30"
-    },
-    {
       "name": "WILLIAMS PAUL STRATTON",
       "role": "Director",
       "kind": "other",
@@ -327,12 +318,12 @@
       "date": "2026-06-30"
     },
     {
-      "name": "HAVNER RONALD L JR",
+      "name": "MITRA SHANKH",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 318.31 per share.",
-      "value": 1257,
-      "shares": 3,
+      "value": 97085,
+      "shares": 305,
       "date": "2026-06-30"
     },
     {
@@ -342,6 +333,15 @@
       "text": "Stock Award(Grant) at price 318.31 per share.",
       "value": 1776,
       "shares": 5,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "HAVNER RONALD L JR",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 318.31 per share.",
+      "value": 1257,
+      "shares": 3,
       "date": "2026-06-30"
     },
     {
@@ -364,10 +364,6 @@
     }
   ],
   "dividends": [
-    {
-      "date": "2016-12-12",
-      "amount": 2
-    },
     {
       "date": "2017-03-13",
       "amount": 2
@@ -518,6 +514,10 @@
     },
     {
       "date": "2026-03-16",
+      "amount": 3
+    },
+    {
+      "date": "2026-06-15",
       "amount": 3
     },
     {

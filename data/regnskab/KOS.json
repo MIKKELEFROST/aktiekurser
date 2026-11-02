@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T21:09:24.896Z",
+  "updated_at": "2026-11-02T23:43:28.681Z",
   "source": "Yahoo Finance",
   "symbol": "KOS",
   "summary": "Kosmos Energy Ltd., a deepwater exploration and production company, engages in the exploration, development, and production of oil and natural gas properties. It has oil and gas production projects in offshore Ghana, Equatorial Guinea, Mauritania, Senegal, and the Gulf of America. The company was founded in 2003 and is headquartered in Dallas, Texas.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-02",
   "earnings_estimated": false,
   "earnings_call": "2026-11-02",
-  "eps_estimate": 0.136,
+  "eps_estimate": 0.15667,
   "analysts": {
     "strong_buy": 1,
     "buy": 4,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 311229000,
-      "earnings": -124299000
-    },
-    {
       "q": "4Q2025",
       "revenue": 294623000,
       "earnings": -377141000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 617035000,
       "earnings": 184775000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 409880000,
+      "earnings": -43010000
     }
   ],
   "growth": {
-    "q0": 1.9067,
-    "q1": 1.9792,
+    "q0": 1.9792,
+    "q1": 2.7143,
     "y0": 1.4486,
     "y1": 0.5573
   },
@@ -230,10 +230,10 @@
     "net_pct": 4.4
   },
   "extras": {
-    "beta": 0.882,
-    "enterprise_value": 4250060032,
-    "ev_ebitda": 6.82,
-    "ev_revenue": 2.682,
+    "beta": 0.787,
+    "enterprise_value": 4351292928,
+    "ev_ebitda": 6.983,
+    "ev_revenue": 2.746,
     "float_shares": 581600879,
     "short_shares": 34201611,
     "short_pct_float": 5.82,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 353,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.134,
-      "actual": -0.15,
-      "surprise_pct": -11.94
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.09167,
@@ -269,9 +263,24 @@
       "estimate": 0.086,
       "actual": 0.11,
       "surprise_pct": 27.91
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.136,
+      "actual": 0.06,
+      "surprise_pct": -55.88
     }
   ],
   "insiders": [
+    {
+      "name": "INGLIS ANDREW G",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 2.05 per share.",
+      "value": 176167,
+      "shares": 85935,
+      "date": "2026-07-02"
+    },
     {
       "name": "GLASS RONALD W",
       "role": "Officer",
@@ -300,13 +309,13 @@
       "date": "2026-07-02"
     },
     {
-      "name": "INGLIS ANDREW G",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 2.05 per share.",
-      "value": 176167,
-      "shares": 85935,
-      "date": "2026-07-02"
+      "name": "MARION JOSH R.",
+      "role": "General Counsel",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 64248,
+      "date": "2026-07-01"
     },
     {
       "name": "GLASS RONALD W",
@@ -327,15 +336,6 @@
       "date": "2026-07-01"
     },
     {
-      "name": "MARION JOSH R.",
-      "role": "General Counsel",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 64248,
-      "date": "2026-07-01"
-    },
-    {
       "name": "INGLIS ANDREW G",
       "role": "Chief Executive Officer",
       "kind": "other",
@@ -345,16 +345,16 @@
       "date": "2026-07-01"
     },
     {
-      "name": "GOODWIN DEANNA L.",
+      "name": "FRANKLIN ROY A",
       "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 2.74 per share.",
-      "value": 170001,
-      "shares": 62044,
+      "kind": "sell",
+      "text": "Sale at price 2.73 per share.",
+      "value": 118662,
+      "shares": 43466,
       "date": "2026-05-28"
     },
     {
-      "name": "STICE J MICHAEL ED.D.",
+      "name": "GRANT JOHN DOUGLAS KELSO",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 2.74 per share.",

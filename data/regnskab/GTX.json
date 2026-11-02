@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T21:09:24.575Z",
+  "updated_at": "2026-11-02T23:43:28.279Z",
   "source": "Yahoo Finance",
   "symbol": "GTX",
   "summary": "Garrett Motion Inc. designs, manufactures, and sells turbocharging, air and fluid compression, and high-speed electric motor technologies to original equipment manufacturers and independent aftermarket distributors in the mobility and industrial fields. Its solutions include mechanical and electrical products for turbocharging and boosting internal combustion engines, as well as for compressing air and refrigerants for industrial and mobility use. The company operates in the United States, Europe, Asia, and internationally. Garrett Motion Inc. was incorporated in 2018 and is based in Plymouth, Michigan.",
@@ -10,18 +10,18 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 0.47048,
+  "eps_estimate": 0.45795,
   "analysts": {
     "strong_buy": 3,
-    "buy": 2,
-    "hold": 1,
+    "buy": 3,
+    "hold": 0,
     "sell": 0,
     "strong_sell": 0,
     "total": 6
   },
-  "target_mean": 34.83333,
+  "target_mean": 34,
   "target_high": 42,
-  "target_low": 32,
+  "target_low": 30,
   "target_analysts": 6,
   "statements": [
     {
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.1627,
-    "q1": null,
-    "y0": 0.3052,
-    "y1": 0.0991
+    "q0": 0.1317,
+    "q1": 0.0367,
+    "y0": 0.3116,
+    "y1": 0.103199996
   },
   "ratings": [
+    {
+      "date": "2026-10-31",
+      "firm": "Freedom Broker",
+      "from": "Hold",
+      "to": "Buy",
+      "action": "up"
+    },
     {
       "date": "2026-10-08",
       "firm": "BWS Financial",
@@ -140,84 +147,77 @@
       "from": "Buy",
       "to": "Buy",
       "action": "main"
-    },
-    {
-      "date": "2026-04-30",
-      "firm": "BWS Financial",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
     }
   ],
   "holders": [
     {
       "name": "FMR, LLC",
       "kind": "institution",
-      "pct": 8.93,
+      "pct": 9.02,
       "shares": 16653468,
       "date": "2026-06-30"
     },
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 6.83,
+      "pct": 6.9,
       "shares": 12746170,
       "date": "2026-06-30"
     },
     {
       "name": "Fuller & Thaler Asset Management Inc.",
       "kind": "institution",
-      "pct": 6.1,
+      "pct": 6.16,
       "shares": 11379209,
       "date": "2026-06-30"
     },
     {
       "name": "Oaktree Capital Management LP",
       "kind": "institution",
-      "pct": 4.07,
+      "pct": 4.11,
       "shares": 7594816,
       "date": "2026-06-30"
     },
     {
       "name": "LSV Asset Management",
       "kind": "institution",
-      "pct": 4.04,
+      "pct": 4.08,
       "shares": 7525017,
       "date": "2026-06-30"
     },
     {
       "name": "Capitol Series Trust-FullerThaler Behavioral Small-Cap Equity Fund",
       "kind": "fond",
-      "pct": 3.75,
+      "pct": 3.79,
       "shares": 6994350,
       "date": "2026-06-30"
     },
     {
       "name": "iShares Trust-iShares Russell 2000 ETF",
       "kind": "fond",
-      "pct": 2.54,
+      "pct": 2.57,
       "shares": 4742810,
       "date": "2026-09-30"
     },
     {
       "name": "Invesco Ltd.",
       "kind": "institution",
-      "pct": 2.53,
+      "pct": 2.55,
       "shares": 4715679,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "Shaw D.E. & Co., Inc.",
-      "kind": "institution",
-      "pct": 2.5,
-      "shares": 4658347,
       "date": "2026-06-30"
     },
     {
       "name": "Geode Capital Management, LLC",
       "kind": "institution",
-      "pct": 2.49,
+      "pct": 2.52,
       "shares": 4648053,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Shaw D.E. & Co., Inc.",
+      "kind": "institution",
+      "pct": 2.52,
+      "shares": 4658347,
       "date": "2026-06-30"
     }
   ],
@@ -230,21 +230,21 @@
     "net_pct": -10.4
   },
   "extras": {
-    "beta": null,
-    "enterprise_value": 5321909248,
-    "ev_ebitda": 7.92,
-    "ev_revenue": 1.407,
-    "float_shares": 183316201,
+    "beta": 0.959,
+    "enterprise_value": 5073104384,
+    "ev_ebitda": 7.527,
+    "ev_revenue": 1.341,
+    "float_shares": 182556531,
     "short_shares": 9243681,
     "short_pct_float": 5.04,
     "short_ratio": 3.37,
     "last_split": null,
     "last_split_date": null
   },
-  "ex_dividend": "2026-12-02",
+  "ex_dividend": "2026-12-01",
   "dividend_date": null,
-  "payout_ratio": 0.16479999,
-  "inst_count": 625,
+  "payout_ratio": 0.16409999,
+  "inst_count": 628,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -273,6 +273,15 @@
   ],
   "insiders": [
     {
+      "name": "DREES JOACHIM",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 1310,
+      "date": "2026-10-01"
+    },
+    {
       "name": "NINIVAGGI DANIEL A",
       "role": "Director",
       "kind": "other",
@@ -288,15 +297,6 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 655,
-      "date": "2026-10-01"
-    },
-    {
-      "name": "DREES JOACHIM",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 1310,
       "date": "2026-10-01"
     },
     {
@@ -327,6 +327,15 @@
       "date": "2026-08-06"
     },
     {
+      "name": "DREES JOACHIM",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 1023,
+      "date": "2026-07-01"
+    },
+    {
       "name": "NINIVAGGI DANIEL A",
       "role": "Director",
       "kind": "other",
@@ -342,15 +351,6 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 512,
-      "date": "2026-07-01"
-    },
-    {
-      "name": "DREES JOACHIM",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 1023,
       "date": "2026-07-01"
     },
     {

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T21:09:25.751Z",
+  "updated_at": "2026-11-02T23:43:29.696Z",
   "source": "Yahoo Finance",
   "symbol": "SPGI",
   "summary": "S&P Global Inc., together with its subsidiaries, provides benchmarks, data, analytics, and workflow solutions in the global capital, energy and commodity, and automotive markets. It operates through four segments: S&P Global Market Intelligence, S&P Global Ratings, S&P Global Energy, and S&P Dow Jones Indices. The S&P Global Market Intelligence segment provides multi-asset-class data and analytics integrated with purpose-built workflow solutions. This segment offers Data, Analytics & Insights, a desktop product suite that provides data, analytics, and third-party research for global finance and corporate professionals; research, reference data, market data, derived analytics, and valuation services; enterprise solutions, such as software and workflow solutions; and credit and risk solutions for selling Ratings' credit ratings and related data and research, analytics, and financial risk solutions. The S&P Global Ratings segment operates as an independent provider of credit ratings, research, and analytics offering investors information and independent benchmarks for their investment and financial decisions as well as access to the capital markets. The S&P Global Energy segment provides information and benchmark prices for the energy and commodity markets. The S&P Dow Jones Indices segment operates as an index provider that maintains various valuation and index benchmarks for investment advisors, wealth managers, and institutional investors. It has operations in the United States, European region, Asia, and internationally. S&P Global Inc. was founded in 1860 and is headquartered in New York, New York.",
@@ -19,8 +19,8 @@
     "strong_sell": 0,
     "total": 23
   },
-  "target_mean": 524.2,
-  "target_high": 553,
+  "target_mean": 525.15,
+  "target_high": 572,
   "target_low": 485,
   "target_analysts": 20,
   "statements": [
@@ -73,11 +73,18 @@
   ],
   "growth": {
     "q0": -0.067600004,
-    "q1": 0.026500002,
-    "y0": 0.0095999995,
-    "y1": 0.1223
+    "q1": 0.0252,
+    "y0": 0.0062,
+    "y1": 0.125
   },
   "ratings": [
+    {
+      "date": "2026-11-02",
+      "firm": "Barclays",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-10-28",
       "firm": "Citigroup",
@@ -140,13 +147,6 @@
       "from": "Outperform",
       "to": "Outperform",
       "action": "main"
-    },
-    {
-      "date": "2026-08-26",
-      "firm": "RBC Capital",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "reit"
     }
   ],
   "holders": [
@@ -230,10 +230,10 @@
     "net_pct": null
   },
   "extras": {
-    "beta": 1.095,
-    "enterprise_value": 150155329536,
-    "ev_ebitda": 17.869,
-    "ev_revenue": 9.216,
+    "beta": 1.033,
+    "enterprise_value": 151862837248,
+    "ev_ebitda": 18.072,
+    "ev_revenue": 9.321,
     "float_shares": 289183947,
     "short_shares": 4494442,
     "short_pct_float": 1.55,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-11-25",
   "dividend_date": null,
   "payout_ratio": 0.2206,
-  "inst_count": 2858,
+  "inst_count": 2857,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -345,29 +345,25 @@
       "date": "2026-02-24"
     },
     {
-      "name": "CHEUNG MARTINA",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 12273,
-      "date": "2026-02-24"
-    },
-    {
-      "name": "CRAIG CHRISTOPHER",
+      "name": "SAHA SAUGATA",
       "role": "Officer",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 1508,
+      "shares": 7551,
+      "date": "2026-02-24"
+    },
+    {
+      "name": "MOORE SALLY ANN",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 3775,
       "date": "2026-02-24"
     }
   ],
   "dividends": [
-    {
-      "date": "2016-05-24",
-      "amount": 0.3406
-    },
     {
       "date": "2016-08-24",
       "amount": 0.3406
@@ -519,6 +515,10 @@
     {
       "date": "2025-11-25",
       "amount": 0.9082
+    },
+    {
+      "date": "2026-02-25",
+      "amount": 0.9177
     },
     {
       "date": "2026-08-26",

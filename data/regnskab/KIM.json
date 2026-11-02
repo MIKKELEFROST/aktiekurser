@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T21:09:24.872Z",
+  "updated_at": "2026-11-02T23:43:28.657Z",
   "source": "Yahoo Finance",
   "symbol": "KIM",
   "summary": "Kimco Realty is a real estate investment trust (REIT) and leading owner and operator of high-quality, open-air, grocery-anchored shopping centers and mixed-use properties in the United States. The company's portfolio is strategically concentrated in the first-ring suburbs of the top major metropolitan markets, including high-barrier-to-entry coastal markets and Sun Belt cities. Its tenant mix is focused on essential, necessity-based goods and services that drive multiple shopping trips per week. Publicly traded on the NYSE since 1991 and included in the S&P 500 Index, the company has specialized in shopping center ownership, management, acquisitions, and value-enhancing redevelopment activities for more than 65 years. With a proven commitment to corporate responsibility, Kimco Realty is a recognized industry leader in this area. As of June 30, 2026, the company owned interests in 564 U.S. shopping centers and mixed-use assets comprising 100 million square feet of gross leasable space. Kimco Realty Corporation was incorporated in 1958 in Maryland and is based in Jericho, New York.",
@@ -10,11 +10,11 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 0.205,
+  "eps_estimate": 0.20667,
   "analysts": {
-    "strong_buy": 2,
+    "strong_buy": 3,
     "buy": 6,
-    "hold": 15,
+    "hold": 14,
     "sell": 0,
     "strong_sell": 0,
     "total": 23
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.1022,
-    "q1": 0.028800001,
-    "y0": 0.1181,
-    "y1": 0.0813
+    "q0": 0.111099996,
+    "q1": 0.012999999,
+    "y0": 0.13159999,
+    "y1": 0.0685
   },
   "ratings": [
+    {
+      "date": "2026-11-02",
+      "firm": "Piper Sandler",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-10-30",
       "firm": "Evercore ISI Group",
@@ -140,83 +147,76 @@
       "from": "Neutral",
       "to": "Neutral",
       "action": "main"
-    },
-    {
-      "date": "2026-07-23",
-      "firm": "Wells Fargo",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
-      "action": "main"
     }
   ],
   "holders": [
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 11.15,
+      "pct": 11.25,
       "shares": 74783636,
       "date": "2026-06-30"
     },
     {
       "name": "Vanguard Portfolio Management LLC",
       "kind": "institution",
-      "pct": 8.66,
+      "pct": 8.74,
       "shares": 58087319,
       "date": "2026-06-30"
     },
     {
       "name": "Cohen & Steers Inc.",
       "kind": "institution",
-      "pct": 8.44,
+      "pct": 8.52,
       "shares": 56641276,
       "date": "2026-06-30"
     },
     {
       "name": "State Street Corporation",
       "kind": "institution",
-      "pct": 7,
+      "pct": 7.07,
       "shares": 46958443,
       "date": "2026-06-30"
     },
     {
       "name": "Vanguard Capital Management LLC",
       "kind": "institution",
-      "pct": 6.57,
+      "pct": 6.63,
       "shares": 44054976,
       "date": "2026-06-30"
     },
     {
       "name": "VANGUARD SPECIALIZED FUNDS-Vanguard Real Estate Index Fund",
       "kind": "fond",
-      "pct": 3.82,
+      "pct": 3.86,
       "shares": 25642056,
       "date": "2026-07-31"
     },
     {
       "name": "FMR, LLC",
       "kind": "institution",
-      "pct": 3.2,
+      "pct": 3.23,
       "shares": 21489248,
       "date": "2026-06-30"
     },
     {
       "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
       "kind": "fond",
-      "pct": 3.19,
+      "pct": 3.22,
       "shares": 21397654,
       "date": "2026-06-30"
     },
     {
       "name": "Geode Capital Management, LLC",
       "kind": "institution",
-      "pct": 2.96,
+      "pct": 2.99,
       "shares": 19883931,
       "date": "2026-06-30"
     },
     {
       "name": "Federated Hermes, Inc.",
       "kind": "institution",
-      "pct": 2.71,
+      "pct": 2.74,
       "shares": 18175590,
       "date": "2026-06-30"
     }
@@ -230,11 +230,11 @@
     "net_pct": null
   },
   "extras": {
-    "beta": null,
-    "enterprise_value": 24433483776,
-    "ev_ebitda": 18.23,
-    "ev_revenue": 11.119,
-    "float_shares": 647971136,
+    "beta": 0.931,
+    "enterprise_value": 24488226816,
+    "ev_ebitda": 18.15,
+    "ev_revenue": 11.144,
+    "float_shares": 647811173,
     "short_shares": 33106904,
     "short_pct_float": 6.07,
     "short_ratio": 6.5,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-09-04",
   "dividend_date": null,
   "payout_ratio": 0.9907,
-  "inst_count": 1025,
+  "inst_count": 1030,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -272,33 +272,6 @@
     }
   ],
   "insiders": [
-    {
-      "name": "COVIELLO PHILIP E JR",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 7720,
-      "date": "2026-02-19"
-    },
-    {
-      "name": "LOURENSO FRANK",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 7720,
-      "date": "2026-02-19"
-    },
-    {
-      "name": "COHEN GLENN GARY",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 31770,
-      "date": "2026-02-19"
-    },
     {
       "name": "COOPER ROSS",
       "role": "President",
@@ -328,6 +301,33 @@
     },
     {
       "name": "LASHINE NANCY",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 7720,
+      "date": "2026-02-19"
+    },
+    {
+      "name": "COHEN GLENN GARY",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 31770,
+      "date": "2026-02-19"
+    },
+    {
+      "name": "LOURENSO FRANK",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 7720,
+      "date": "2026-02-19"
+    },
+    {
+      "name": "COVIELLO PHILIP E JR",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

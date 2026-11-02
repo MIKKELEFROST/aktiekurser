@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T21:09:26.259Z",
+  "updated_at": "2026-11-02T23:43:28.907Z",
   "source": "Yahoo Finance",
   "symbol": "MRBK",
   "summary": "Meridian Corporation operates as the bank holding company for Meridian Bank that provides commercial banking products and services in Pennsylvania, New Jersey, Delaware, Maryland, and Florida. It provides various deposit products, such as demand non-interest and interest bearing, savings, and money market accounts, as well as time deposits. The company also offers commercial and industrial loans, including business lines of credit, term loans, small business lending, lease financing, shared national credits, and other financing; commercial real estate, and land development and construction loans for residential and commercial projects; and consumer and home equity lending, private banking, merchant, and title insurance and land settlement services. In addition, it operates and originates mortgage loans for 1-4 family dwellings; and offers real estate holding, investment advisory, and equipment leasing services, as well as provides financial planning and wealth management services. The company was founded in 2004 and is headquartered in Malvern, Pennsylvania.",
@@ -7,10 +7,10 @@
   "website": "https://www.meridianbanker.com",
   "employees": 327,
   "ceo": "Mr. Christopher J. Annas",
-  "next_earnings": "2026-11-02",
-  "earnings_estimated": true,
+  "next_earnings": "2026-10-30",
+  "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": 0.455,
+  "eps_estimate": 0.48,
   "analysts": {
     "strong_buy": 1,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 0,
-      "earnings": 6659000
-    },
-    {
       "q": "4Q2025",
       "revenue": 34242000,
       "earnings": 7186000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 32674000,
       "earnings": 5807000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 30141000,
+      "earnings": 5207000
     }
   ],
   "growth": {
-    "q0": null,
-    "q1": -0.2131,
+    "q0": -0.2131,
+    "q1": 0.2051,
     "y0": -0.1376,
     "y1": 0.36810002
   },
@@ -230,11 +230,11 @@
     "net_pct": null
   },
   "extras": {
-    "beta": 0.64,
-    "enterprise_value": 348328480,
+    "beta": 0.657,
+    "enterprise_value": 359599904,
     "ev_ebitda": null,
-    "ev_revenue": 3.066,
-    "float_shares": 9761898,
+    "ev_revenue": 3.199,
+    "float_shares": 9768405,
     "short_shares": 225330,
     "short_pct_float": 2.21,
     "short_ratio": 3.38,
@@ -263,6 +263,12 @@
       "estimate": 0.51,
       "actual": 0.48,
       "surprise_pct": -5.88
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.455,
+      "actual": 0.43,
+      "surprise_pct": -5.49
     }
   ],
   "insiders": [

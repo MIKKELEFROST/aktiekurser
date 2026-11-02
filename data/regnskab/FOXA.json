@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T21:09:24.421Z",
+  "updated_at": "2026-11-02T23:43:28.125Z",
   "source": "Yahoo Finance",
   "symbol": "FOXA",
   "summary": "Fox Corporation operates as a news, sports, and entertainment company in the United States. It operates in two segments, Cable Network Programming and Television. The Cable Network Programming segment produces and licenses news and sports content for distribution through traditional cable television systems, direct broadcast satellite operators, telecommunication companies, virtual multi-channel video programming distributors, and other digital platforms. The Television segment produces, acquires, markets, and distributes programming through the FOX broadcast network; advertising-supported video-on-demand service Tubi; and operates full power broadcast television stations, including duopolies and other digital platforms. This segment also produces content for third parties. It also engages in the consumer finance marketplace; and provision of television and film production services along with office space, studio operation services, and all operations of the facility. Fox Corporation was incorporated in 2018 and is headquartered in New York, New York.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-02",
   "earnings_estimated": false,
   "earnings_call": "2026-11-02",
-  "eps_estimate": 2.02273,
+  "eps_estimate": 0.75,
   "analysts": {
     "strong_buy": 2,
     "buy": 10,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 3738000000,
-      "earnings": 599000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 5182000000,
       "earnings": 229000000
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 4212000000,
       "earnings": 691000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 4571000000,
+      "earnings": 943000000
     }
   ],
   "growth": {
-    "q0": 0.3396,
-    "q1": 0.2698,
-    "y0": 0.0994,
-    "y1": -0.0171
+    "q0": -0.0854,
+    "q1": 0.034,
+    "y0": 0.1096,
+    "y1": -0.025999999
   },
   "ratings": [
     {
@@ -230,10 +230,10 @@
     "net_pct": 11.8
   },
   "extras": {
-    "beta": 0.613,
-    "enterprise_value": 30620631040,
-    "ev_ebitda": 7.888,
-    "ev_revenue": 1.788,
+    "beta": 0.623,
+    "enterprise_value": 30087675904,
+    "ev_ebitda": 7.751,
+    "ev_revenue": 1.757,
     "float_shares": 330130379,
     "short_shares": 48844725,
     "short_pct_float": 28.6,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.1458,
   "inst_count": 1119,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.09885,
-      "actual": 1.51,
-      "surprise_pct": 37.42
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.51701,
@@ -269,9 +263,24 @@
       "estimate": 1.38448,
       "actual": 1.79,
       "surprise_pct": 29.29
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 2.02273,
+      "actual": 2.54,
+      "surprise_pct": 25.57
     }
   ],
   "insiders": [
+    {
+      "name": "MURDOCH LACHLAN K",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 68.53 per share.",
+      "value": 10274977,
+      "shares": 149934,
+      "date": "2026-09-15"
+    },
     {
       "name": "MURDOCH LACHLAN K",
       "role": "Chief Executive Officer",
@@ -282,13 +291,31 @@
       "date": "2026-09-15"
     },
     {
+      "name": "MURDOCH KEITH RUPERT",
+      "role": "Divisional Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 35841,
+      "date": "2026-08-14"
+    },
+    {
+      "name": "NALLEN JOHN",
+      "role": "President",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 137711,
+      "date": "2026-08-14"
+    },
+    {
       "name": "MURDOCH LACHLAN K",
       "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 68.53 per share.",
-      "value": 10274977,
-      "shares": 149934,
-      "date": "2026-09-15"
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 292881,
+      "date": "2026-08-14"
     },
     {
       "name": "CIONGOLI ADAM GREY",
@@ -306,33 +333,6 @@
       "text": null,
       "value": null,
       "shares": 79870,
-      "date": "2026-08-14"
-    },
-    {
-      "name": "MURDOCH LACHLAN K",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 292881,
-      "date": "2026-08-14"
-    },
-    {
-      "name": "NALLEN JOHN",
-      "role": "President",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 137711,
-      "date": "2026-08-14"
-    },
-    {
-      "name": "MURDOCH KEITH RUPERT",
-      "role": "Divisional Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 35841,
       "date": "2026-08-14"
     },
     {

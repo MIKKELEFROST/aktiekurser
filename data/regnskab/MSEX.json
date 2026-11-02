@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T21:09:25.103Z",
+  "updated_at": "2026-11-02T23:43:28.921Z",
   "source": "Yahoo Finance",
   "symbol": "MSEX",
   "summary": "Middlesex Water Company owns and operates regulated water utility and wastewater systems in the United States. It operates in two segments, Regulated and Non-Regulated. The company collects, treats, and distributes water on a retail and wholesale basis to residential, commercial, industrial, and fire protection customers; and provides regulated wastewater system. It also provides non-regulated contract services for the operation and maintenance of municipal and private water and wastewater systems. Middlesex Water Company was incorporated in 1896 and is headquartered in Iselin, New Jersey.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": null,
+  "eps_estimate": 0.47,
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": null,
+    "q0": 0.0217,
     "q1": null,
-    "y0": 0.1271,
-    "y1": 0.112799995
+    "y0": 0.17799999,
+    "y1": 0.0468
   },
   "ratings": [
+    {
+      "date": "2026-11-02",
+      "firm": "Freedom Broker",
+      "from": "Hold",
+      "to": "Hold",
+      "action": "main"
+    },
     {
       "date": "2026-02-25",
       "firm": "Freedom Broker",
@@ -140,83 +147,76 @@
       "from": "Outperform",
       "to": "Neutral",
       "action": "down"
-    },
-    {
-      "date": "2024-05-09",
-      "firm": "Baird",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
     }
   ],
   "holders": [
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 16.63,
+      "pct": 16.39,
       "shares": 3134461,
       "date": "2026-06-30"
     },
     {
       "name": "T. Rowe Price Investment Management, Inc.",
       "kind": "institution",
-      "pct": 9.27,
+      "pct": 9.13,
       "shares": 1746560,
       "date": "2026-06-30"
     },
     {
       "name": "Neuberger Berman Group, LLC",
       "kind": "institution",
-      "pct": 8.51,
+      "pct": 8.39,
       "shares": 1604067,
       "date": "2026-06-30"
     },
     {
       "name": "iShares Trust-iShares Core S&P Small-Cap ETF",
       "kind": "fond",
-      "pct": 5.95,
+      "pct": 5.86,
       "shares": 1121355,
       "date": "2026-09-30"
     },
     {
       "name": "Morgan Stanley",
       "kind": "institution",
-      "pct": 5.85,
+      "pct": 5.76,
       "shares": 1101704,
       "date": "2026-06-30"
     },
     {
       "name": "NEUBERGER BERMAN EQUITY FUNDS-Neuberger Genesis Fund",
       "kind": "fond",
-      "pct": 5.29,
+      "pct": 5.21,
       "shares": 996043,
       "date": "2026-09-30"
     },
     {
       "name": "Vanguard Capital Management LLC",
       "kind": "institution",
-      "pct": 4.26,
+      "pct": 4.19,
       "shares": 802323,
       "date": "2026-06-30"
     },
     {
       "name": "State Street Corporation",
       "kind": "institution",
-      "pct": 4.24,
+      "pct": 4.17,
       "shares": 798240,
       "date": "2026-06-30"
     },
     {
       "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
       "kind": "fond",
-      "pct": 3.01,
+      "pct": 2.97,
       "shares": 568099,
       "date": "2026-06-30"
     },
     {
       "name": "T. Rowe Price Small-Cap Value Fund, Inc.",
       "kind": "fond",
-      "pct": 2.76,
+      "pct": 2.72,
       "shares": 520488,
       "date": "2026-06-30"
     }
@@ -230,20 +230,20 @@
     "net_pct": null
   },
   "extras": {
-    "beta": 0.735,
-    "enterprise_value": 1481299456,
-    "ev_ebitda": 15.265,
-    "ev_revenue": 7.186,
-    "float_shares": 18339117,
+    "beta": 0.694,
+    "enterprise_value": 1523831424,
+    "ev_ebitda": 15.12,
+    "ev_revenue": 7.179,
+    "float_shares": 18641872,
     "short_shares": 730973,
-    "short_pct_float": 4.79,
+    "short_pct_float": 4.7,
     "short_ratio": 5,
     "last_split": "4:3",
     "last_split_date": "2003-11-17"
   },
-  "ex_dividend": "2026-08-17",
+  "ex_dividend": "2026-11-16",
   "dividend_date": null,
-  "payout_ratio": 0.5483,
+  "payout_ratio": 0.5199,
   "inst_count": 325,
   "eps_history": [
     {
@@ -280,6 +280,15 @@
       "value": 35430,
       "shares": 615,
       "date": "2026-08-07"
+    },
+    {
+      "name": "COSGROVE JAMES F JR",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 52.05 per share.",
+      "value": 45023,
+      "shares": 865,
+      "date": "2026-04-01"
     },
     {
       "name": "REINHARD WALTER G",
@@ -351,15 +360,6 @@
       "text": "Stock Award(Grant) at price 52.05 per share.",
       "value": 45023,
       "shares": 865,
-      "date": "2026-04-01"
-    },
-    {
-      "name": "FULLAGAR ROBERT K",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 52.05 per share.",
-      "value": 110762,
-      "shares": 2128,
       "date": "2026-04-01"
     }
   ],

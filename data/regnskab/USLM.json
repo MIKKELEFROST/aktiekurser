@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T21:09:25.966Z",
+  "updated_at": "2026-11-02T23:43:29.994Z",
   "source": "Yahoo Finance",
   "symbol": "USLM",
   "summary": "United States Lime & Minerals, Inc. manufactures and supplies lime and limestone products in the United States. It extracts limestone from open-pit quarries and an underground mine, and processes it as pulverized limestone, quicklime, hydrated lime, and lime slurry. The company supplies its products primarily to the construction customers, including highway, road, and building contractors; industrial customers, such as paper and glass manufacturers; environmental customers comprising municipal sanitation and water treatment facilities, and flue gas treatment processes; oil and gas services companies; roof shingle manufacturers; and poultry producers, as well as steel producers. In addition, the company has various royalty interests with respect to oil and gas rights in natural gas wells located in Johnson County, Texas in the Barnett Shale Formation. The company was incorporated in 1950 and is headquartered in Dallas, Texas. United States Lime & Minerals, Inc. is a subsidiary of Inberdon Enterprises Ltd.",
@@ -7,10 +7,10 @@
   "website": "https://www.uslm.com",
   "employees": 346,
   "ceo": "Mr. Timothy W. Byrne CPA",
-  "next_earnings": "2026-11-02",
-  "earnings_estimated": true,
+  "next_earnings": "2026-10-30",
+  "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": 1.48,
+  "eps_estimate": 1.65,
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 102016000,
-      "earnings": 0
-    },
-    {
       "q": "4Q2025",
       "revenue": 87940000,
       "earnings": 0
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 99126000,
       "earnings": 0
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 106188000,
+      "earnings": 0
     }
   ],
   "growth": {
-    "q0": 0.0963,
-    "q1": 0.22639999,
-    "y0": 0.0792,
-    "y1": 0.131
+    "q0": 0.5566,
+    "q1": 0.283,
+    "y0": 0.119899996,
+    "y1": 0.1511
   },
   "ratings": [
+    {
+      "date": "2026-11-02",
+      "firm": "Freedom Broker",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-03-02",
       "firm": "Freedom Broker",
@@ -167,11 +174,11 @@
     "net_pct": 0
   },
   "extras": {
-    "beta": 0.654,
-    "enterprise_value": 2860368640,
-    "ev_ebitda": 15.492,
-    "ev_revenue": 7.589,
-    "float_shares": 10668867,
+    "beta": 0.674,
+    "enterprise_value": 2759562496,
+    "ev_ebitda": 15.054,
+    "ev_revenue": 7.241,
+    "float_shares": 10668854,
     "short_shares": 1137223,
     "short_pct_float": 10.52,
     "short_ratio": 7.96,
@@ -180,15 +187,9 @@
   },
   "ex_dividend": "2026-08-21",
   "dividend_date": null,
-  "payout_ratio": 0.0514,
+  "payout_ratio": 0.0517,
   "inst_count": 332,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.2,
-      "actual": 1.35,
-      "surprise_pct": 12.5
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.13,
@@ -206,9 +207,24 @@
       "estimate": 1.3,
       "actual": 1.2,
       "surprise_pct": -7.69
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.48,
+      "actual": 1.32,
+      "surprise_pct": -10.81
     }
   ],
   "insiders": [
+    {
+      "name": "CANDOU HOLDINGS LTD.",
+      "role": "Beneficial Owner of more than 10% of a Class of Security",
+      "kind": "buy",
+      "text": "Purchase at price 110.00 per share.",
+      "value": 2200000,
+      "shares": 20000,
+      "date": "2026-09-09"
+    },
     {
       "name": "DOUMET ANTOINE M",
       "role": "Director",
@@ -219,13 +235,13 @@
       "date": "2026-09-09"
     },
     {
-      "name": "CANDOU HOLDINGS LTD.",
-      "role": "Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "buy",
-      "text": "Purchase at price 110.00 per share.",
-      "value": 2200000,
-      "shares": 20000,
-      "date": "2026-09-09"
+      "name": "CARDIN RICHARD W",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 110.00 per share.",
+      "value": 140030,
+      "shares": 1273,
+      "date": "2026-05-01"
     },
     {
       "name": "DUHE SANDRA C.",
@@ -256,15 +272,6 @@
     },
     {
       "name": "WEIRICH LILA R",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 110.00 per share.",
-      "value": 140030,
-      "shares": 1273,
-      "date": "2026-05-01"
-    },
-    {
-      "name": "CARDIN RICHARD W",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 110.00 per share.",

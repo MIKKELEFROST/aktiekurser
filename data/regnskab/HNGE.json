@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T21:09:24.650Z",
+  "updated_at": "2026-11-02T23:43:28.346Z",
   "source": "Yahoo Finance",
   "symbol": "HNGE",
   "summary": "Hinge Health, Inc. focuses on building a health system that scales and automates the delivery of care using technology. It designs its platform to address musculoskeletal system care (MSK), including acute injury, chronic pain, and post-surgical rehabilitation. The company also provides personalized and automated MSK care through AI-powered motion tracking technology and a proprietary electrical nerve stimulation wearable device. It primarily serves self-insured employers. The company was founded in 2012 and is headquartered in San Francisco, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-02",
   "earnings_estimated": false,
   "earnings_call": "2026-11-02",
-  "eps_estimate": 0.59646,
+  "eps_estimate": 0.66,
   "analysts": {
     "strong_buy": 7,
     "buy": 9,
@@ -39,11 +39,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 154211000,
-      "earnings": -1844000
-    },
-    {
       "q": "4Q2025",
       "revenue": 170726000,
       "earnings": 32095000
@@ -57,11 +52,16 @@
       "q": "2Q2026",
       "revenue": 212817000,
       "earnings": 43133000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 234970000,
+      "earnings": 57398000
     }
   ],
   "growth": {
-    "q0": 0.3584,
-    "q1": 0.3469,
+    "q0": 0.3469,
+    "q1": 0.3513,
     "y0": -0.084300004,
     "y1": 0.2744
   },
@@ -219,9 +219,9 @@
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 9049671680,
-    "ev_ebitda": 94.569,
-    "ev_revenue": 12.568,
+    "enterprise_value": 8841480192,
+    "ev_ebitda": 92.393,
+    "ev_revenue": 12.279,
     "float_shares": 50620415,
     "short_shares": 6309855,
     "short_pct_float": 10.23,
@@ -232,14 +232,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 409,
+  "inst_count": 415,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.24177,
-      "actual": 0.4391,
-      "surprise_pct": 81.62
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.42554,
@@ -257,18 +251,15 @@
       "estimate": 0.615,
       "actual": 0.59,
       "surprise_pct": -4.07
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.59646,
+      "actual": 0.71,
+      "surprise_pct": 19.04
     }
   ],
   "insiders": [
-    {
-      "name": "BUDGE JAMES W.",
-      "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 101.53 - 104.34 per share.",
-      "value": 4921578,
-      "shares": 47720,
-      "date": "2026-10-12"
-    },
     {
       "name": "MECKLENBURG GABRIEL M.I.",
       "role": "Director",
@@ -276,6 +267,15 @@
       "text": "Sale at price 101.53 - 104.34 per share.",
       "value": 20626371,
       "shares": 200000,
+      "date": "2026-10-12"
+    },
+    {
+      "name": "BUDGE JAMES W.",
+      "role": "Chief Financial Officer",
+      "kind": "sell",
+      "text": "Sale at price 101.53 - 104.34 per share.",
+      "value": 4921578,
+      "shares": 47720,
       "date": "2026-10-12"
     },
     {
@@ -324,21 +324,21 @@
       "date": "2026-09-21"
     },
     {
-      "name": "ROBINSON ELLIOTT",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 93.53 per share.",
-      "value": 13836641,
-      "shares": 147938,
-      "date": "2026-09-14"
-    },
-    {
       "name": "MECKLENBURG GABRIEL M.I.",
       "role": "Director",
       "kind": "sell",
       "text": "Sale at price 88.98 - 94.70 per share.",
       "value": 13982810,
       "shares": 150000,
+      "date": "2026-09-14"
+    },
+    {
+      "name": "ROBINSON ELLIOTT",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 93.53 per share.",
+      "value": 13836641,
+      "shares": 147938,
       "date": "2026-09-14"
     },
     {

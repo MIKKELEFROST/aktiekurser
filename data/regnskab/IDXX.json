@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T21:09:24.730Z",
+  "updated_at": "2026-11-02T23:43:28.433Z",
   "source": "Yahoo Finance",
   "symbol": "IDXX",
   "summary": "IDEXX Laboratories, Inc. develops, manufactures, and distributes products for the companion animal veterinary, livestock and poultry, dairy, and water testing industries in the United States and internationally. It operates through three segments: Companion Animal Group; Water Quality Products; and Livestock, Poultry and Dairy. The company offers point-of-care diagnostic solutions, blood and urine chemistry, hematology, immunoassay, urinalysis, cytology/morphology, and coagulation analyzers; and SNAP rapid assays test kits. It also provides commercial reference laboratory diagnostic and consulting services to veterinarians; veterinary consultation, telemedicine, and advisory services, including radiology, dental radiography, cardiology, internal medicine, and ultrasound consulting; Colilert, Colilert-18, and Colisure tests, which detect the presence of total coliforms and E. coli in water; Enterolert, Pseudalert, Filta-Max and Filta-Max xpress, Legiolert, Quanti-Tray products, and Tecta system instruments; UV Viewer Plus, a UV light cabinet which aids in the visual interpretation of fluorescent-based water tests; and veterinary software and services for independent veterinary clinics and corporate groups. In addition, the company offers diagnostic tests, services, and related instrumentation to manage the health status of livestock and poultry; human medical diagnostic products and services; and VetConnect PLUS, a cloud-based technology that enables veterinarians to access and analyze patients, as well as operates VetLab Station. It markets its products through marketing, customer service, sales, and technical service groups, as well as through independent distributors and other resellers. IDEXX Laboratories, Inc. was incorporated in 1983 and is headquartered in Westbrook, Maine.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-02",
   "earnings_estimated": false,
   "earnings_call": "2026-11-02",
-  "eps_estimate": 3.71356,
+  "eps_estimate": 3.266,
   "analysts": {
     "strong_buy": 4,
     "buy": 5,
@@ -19,8 +19,8 @@
     "strong_sell": 1,
     "total": 14
   },
-  "target_mean": 694.4167,
-  "target_high": 805,
+  "target_mean": 694.8333,
+  "target_high": 810,
   "target_low": 470,
   "target_analysts": 12,
   "statements": [
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 1105239000,
-      "earnings": 274610000
-    },
-    {
       "q": "4Q2025",
       "revenue": 1090579000,
       "earnings": 248188000
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 1216585000,
       "earnings": 338412000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1214237000,
+      "earnings": 317145000
     }
   ],
   "growth": {
-    "q0": 0.0922,
-    "q1": 0.0913,
-    "y0": 0.1373,
-    "y1": 0.1248
+    "q0": 0.060399998,
+    "q1": 0.1446,
+    "y0": 0.14649999,
+    "y1": 0.1193
   },
   "ratings": [
     {
@@ -230,10 +230,10 @@
     "net_pct": 1.4
   },
   "extras": {
-    "beta": 1.548,
-    "enterprise_value": 46275493888,
-    "ev_ebitda": 28.535,
-    "ev_revenue": 10.163,
+    "beta": 1.536,
+    "enterprise_value": 44324085760,
+    "ev_ebitda": 27.332,
+    "ev_revenue": 9.735,
     "float_shares": 78499867,
     "short_shares": 1929268,
     "short_pct_float": 2.8,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 1844,
+  "inst_count": 1846,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 3.1459,
-      "actual": 3.4,
-      "surprise_pct": 8.08
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 2.93879,
@@ -269,6 +263,12 @@
       "estimate": 3.93417,
       "actual": 4.27,
       "surprise_pct": 8.54
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 3.71356,
+      "actual": 4.01,
+      "surprise_pct": 7.98
     }
   ],
   "insiders": [
@@ -318,24 +318,6 @@
       "date": "2026-06-01"
     },
     {
-      "name": "JUNIUS DANIEL M",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 257,
-      "date": "2026-05-07"
-    },
-    {
-      "name": "SZOSTAK MARGARET ANNE",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 257,
-      "date": "2026-05-07"
-    },
-    {
       "name": "PEACOCK KAREN",
       "role": "Director",
       "kind": "other",
@@ -360,6 +342,24 @@
       "text": null,
       "value": null,
       "shares": 339,
+      "date": "2026-05-07"
+    },
+    {
+      "name": "HOOLEY JOSEPH L.",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 158,
+      "date": "2026-05-07"
+    },
+    {
+      "name": "JUNIUS DANIEL M",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 257,
       "date": "2026-05-07"
     }
   ],

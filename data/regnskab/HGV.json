@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T21:09:24.628Z",
+  "updated_at": "2026-11-02T23:43:28.322Z",
   "source": "Yahoo Finance",
   "symbol": "HGV",
   "summary": "Hilton Grand Vacations Inc. develops, markets, sells, manages, and operates the resorts, timeshare plans, and ancillary reservation services under the Hilton Grand Vacations brand in the United States, Japan, and Europe. The company operates through two segments: Real Estate Sales and Financing, and Resort Operations and Club Management segments. The Real Estate Sales and Financing segment market and sells the VOIs, and source VOIs through fee-for-service agreements; and provides consumer financing and services loans. The Resort Operations and Club Management segment manages and operates the clubs which provides exchange, leisure travel, and reservation services, as well as engages in the rental of inventory made available due to ownership exchanges through its club programs, and provides ancillary services including food and beverage, retail and spa at timeshare properties. Hilton Grand Vacations Inc. was founded in 1992 and is headquartered in Orlando, Florida.",
@@ -10,19 +10,19 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 1.74294,
+  "eps_estimate": 1.35954,
   "analysts": {
-    "strong_buy": 1,
+    "strong_buy": 0,
     "buy": 3,
-    "hold": 7,
+    "hold": 8,
     "sell": 0,
     "strong_sell": 0,
     "total": 11
   },
-  "target_mean": 50.63636,
+  "target_mean": 48.5,
   "target_high": 74,
-  "target_low": 38,
-  "target_analysts": 11,
+  "target_low": 35,
+  "target_analysts": 10,
   "statements": [
     {
       "year": "2022",
@@ -72,12 +72,33 @@
     }
   ],
   "growth": {
-    "q0": 0.9806,
-    "q1": -0.054899998,
-    "y0": 1.2906,
-    "y1": 0.0776
+    "q0": 0.5449,
+    "q1": -0.1935,
+    "y0": 1.7081,
+    "y1": -0.123900004
   },
   "ratings": [
+    {
+      "date": "2026-11-02",
+      "firm": "Barclays",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-02",
+      "firm": "Citizens",
+      "from": "Market Outperform",
+      "to": "Market Perform",
+      "action": "down"
+    },
+    {
+      "date": "2026-10-30",
+      "firm": "JP Morgan",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-10-30",
       "firm": "Goldman Sachs",
@@ -126,97 +147,76 @@
       "from": "Equal-Weight",
       "to": "Equal-Weight",
       "action": "main"
-    },
-    {
-      "date": "2026-08-03",
-      "firm": "Goldman Sachs",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-31",
-      "firm": "Mizuho",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-31",
-      "firm": "Barclays",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
-      "action": "main"
     }
   ],
   "holders": [
     {
       "name": "Apollo Management Holdings, L.P.",
       "kind": "institution",
-      "pct": 16.08,
+      "pct": 16.48,
       "shares": 12495825,
       "date": "2026-06-30"
     },
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 10.39,
+      "pct": 10.65,
       "shares": 8074130,
       "date": "2026-06-30"
     },
     {
       "name": "Hill Path Capital, LP",
       "kind": "institution",
-      "pct": 8.38,
+      "pct": 8.59,
       "shares": 6509913,
       "date": "2026-06-30"
     },
     {
       "name": "CAS Investment Partners, LLC",
       "kind": "institution",
-      "pct": 6.7,
+      "pct": 6.87,
       "shares": 5206856,
       "date": "2026-06-30"
     },
     {
       "name": "North Peak Capital Management, Llc",
       "kind": "institution",
-      "pct": 5.73,
+      "pct": 5.87,
       "shares": 4452472,
       "date": "2026-06-30"
     },
     {
       "name": "Dimensional Fund Advisors LP",
       "kind": "institution",
-      "pct": 5.09,
+      "pct": 5.22,
       "shares": 3957641,
       "date": "2026-06-30"
     },
     {
       "name": "Vanguard Portfolio Management LLC",
       "kind": "institution",
-      "pct": 4.01,
+      "pct": 4.11,
       "shares": 3117532,
       "date": "2026-06-30"
     },
     {
       "name": "Vanguard Capital Management LLC",
       "kind": "institution",
-      "pct": 3.62,
+      "pct": 3.71,
       "shares": 2809863,
       "date": "2026-06-30"
     },
     {
       "name": "Mudita Advisors LLP",
       "kind": "institution",
-      "pct": 3.61,
+      "pct": 3.7,
       "shares": 2808706,
       "date": "2026-06-30"
     },
     {
       "name": "FMR, LLC",
       "kind": "institution",
-      "pct": 3.61,
+      "pct": 3.7,
       "shares": 2807205,
       "date": "2026-06-30"
     }
@@ -227,14 +227,14 @@
     "sells": 4,
     "bought": 218687,
     "sold": 250006,
-    "net_pct": -2
+    "net_pct": -1.9
   },
   "extras": {
-    "beta": null,
-    "enterprise_value": 10524485632,
-    "ev_ebitda": 8.184,
-    "ev_revenue": 1.948,
-    "float_shares": 46531446,
+    "beta": 1.603,
+    "enterprise_value": 10712626176,
+    "ev_ebitda": 8.33,
+    "ev_revenue": 2.005,
+    "float_shares": 45820433,
     "short_shares": 7666409,
     "short_pct_float": 16.33,
     "short_ratio": 6.72,
@@ -293,18 +293,18 @@
     {
       "name": "WANG MARK D",
       "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 51.93 per share.",
-      "value": 9908919,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 28.30 per share.",
+      "value": 5400008,
       "shares": 190813,
       "date": "2026-05-28"
     },
     {
       "name": "WANG MARK D",
       "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 28.30 per share.",
-      "value": 5400008,
+      "kind": "sell",
+      "text": "Sale at price 51.93 per share.",
+      "value": 9908919,
       "shares": 190813,
       "date": "2026-05-28"
     },
@@ -327,15 +327,6 @@
       "date": "2026-05-19"
     },
     {
-      "name": "MANDEL GAIL L",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 4114,
-      "date": "2026-05-06"
-    },
-    {
       "name": "PATSLEY PAMELA H",
       "role": "Director",
       "kind": "other",
@@ -355,6 +346,15 @@
     },
     {
       "name": "POTTER LEONARD A",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 4114,
+      "date": "2026-05-06"
+    },
+    {
+      "name": "LAZARUS MARK H",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T21:09:23.619Z",
+  "updated_at": "2026-11-02T23:43:27.319Z",
   "source": "Yahoo Finance",
   "symbol": "BAX",
   "summary": "Baxter International Inc., through its subsidiaries, provides a portfolio of healthcare products in the United States. The company operates through three segments: Medical Products & Therapies, Healthcare Systems & Technologies, and Pharmaceuticals. It offers sterile intravenous (IV) solutions; infusion systems and devices; parenteral nutrition therapies; inhaled anesthetics; generic injectable pharmaceuticals; surgical hemostat and sealant products; advanced surgical equipment; smart bed systems; patient monitoring and diagnostic technologies; and respiratory health devices, as well as advanced equipment for the surgical space comprising operating room integration technologies, precision positioning devices, and other accessories. The company also provides specialty injectable pharmaceuticals, inhaled anesthetics, and drug compounding services. Its products are used in hospitals, nursing homes, rehabilitation centers, ambulatory surgery centers, doctors' offices, kidney dialysis centers, and patients at home under physician supervision. The company sells its products through direct sales force, independent distributors, drug wholesalers, and specialty pharmacy or other alternate site providers. It operates in Eastern Europe, the Middle East, Africa, Latin America, Asia, Western Europe, Canada, Japan, Australia, and New Zealand. Baxter International Inc. was incorporated in 1931 and is headquartered in Deerfield, Illinois.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 0.60589,
+  "eps_estimate": 0.59583,
   "analysts": {
     "strong_buy": 1,
     "buy": 1,
@@ -19,7 +19,7 @@
     "strong_sell": 1,
     "total": 15
   },
-  "target_mean": 27.75,
+  "target_mean": 27.08333,
   "target_high": 40,
   "target_low": 20,
   "target_analysts": 12,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.377,
+    "q0": 0.35419998,
     "q1": 0.2056,
-    "y0": -0.0784,
-    "y1": -0.0251
+    "y0": -0.0758,
+    "y1": -0.026300002
   },
   "ratings": [
+    {
+      "date": "2026-10-30",
+      "firm": "JP Morgan",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-10-30",
       "firm": "Wells Fargo",
@@ -140,29 +147,22 @@
       "from": "Hold",
       "to": "Hold",
       "action": "main"
-    },
-    {
-      "date": "2026-07-27",
-      "firm": "TD Cowen",
-      "from": "Hold",
-      "to": "Hold",
-      "action": "main"
     }
   ],
   "holders": [
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 15.83,
+      "pct": 15.82,
       "shares": 81842105,
       "date": "2026-06-30"
     },
     {
       "name": "Pzena Investment Management LLC",
       "kind": "institution",
-      "pct": 12.63,
-      "shares": 65295393,
-      "date": "2026-06-30"
+      "pct": 12.07,
+      "shares": 62425636,
+      "date": "2026-09-30"
     },
     {
       "name": "Dodge & Cox Inc.",
@@ -174,7 +174,7 @@
     {
       "name": "FMR, LLC",
       "kind": "institution",
-      "pct": 10.43,
+      "pct": 10.42,
       "shares": 53913831,
       "date": "2026-06-30"
     },
@@ -188,7 +188,7 @@
     {
       "name": "Vanguard Capital Management LLC",
       "kind": "institution",
-      "pct": 6.53,
+      "pct": 6.52,
       "shares": 33754280,
       "date": "2026-06-30"
     },
@@ -230,13 +230,13 @@
     "net_pct": null
   },
   "extras": {
-    "beta": null,
-    "enterprise_value": null,
-    "ev_ebitda": null,
-    "ev_revenue": null,
-    "float_shares": 511917595,
+    "beta": 0.67,
+    "enterprise_value": 18704009216,
+    "ev_ebitda": 10.204,
+    "ev_revenue": 1.611,
+    "float_shares": 514761447,
     "short_shares": 23765665,
-    "short_pct_float": 7.25,
+    "short_pct_float": 7.24,
     "short_ratio": 3.45,
     "last_split": "1841:1000",
     "last_split_date": "2015-07-01"
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-08-28",
   "dividend_date": null,
   "payout_ratio": 1.5467,
-  "inst_count": 975,
+  "inst_count": 976,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -300,6 +300,24 @@
       "date": "2026-05-05"
     },
     {
+      "name": "SHAFER DAVID BRENT",
+      "role": "Chairman of the Board",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 12836,
+      "date": "2026-05-05"
+    },
+    {
+      "name": "MCDONNELL MICHAEL R",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 12836,
+      "date": "2026-05-05"
+    },
+    {
       "name": "WILKES DAVID S. M.D.",
       "role": "Director",
       "kind": "other",
@@ -336,30 +354,12 @@
       "date": "2026-05-05"
     },
     {
-      "name": "SHAFER DAVID BRENT",
-      "role": "Chairman of the Board",
+      "name": "ROSENBLOOM DAVID S",
+      "role": "General Counsel",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 12836,
-      "date": "2026-05-05"
-    },
-    {
-      "name": "MCDONNELL MICHAEL R",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 12836,
-      "date": "2026-05-05"
-    },
-    {
-      "name": "GRADE JOEL T.",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 42735,
+      "shares": 26709,
       "date": "2026-02-27"
     }
   ],

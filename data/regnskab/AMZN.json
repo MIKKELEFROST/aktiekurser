@@ -1,25 +1,25 @@
 {
-  "updated_at": "2026-10-30T21:09:23.472Z",
+  "updated_at": "2026-11-02T23:43:27.167Z",
   "source": "Yahoo Finance",
   "symbol": "AMZN",
   "summary": "Amazon.com, Inc. engages in the retail sale of consumer products, advertising, and subscriptions service through online and physical stores in North America and internationally. The company operates through three segments: North America, International, and Amazon Web Services (AWS). It also manufactures and sells electronic devices, including Kindle, fire tablets, fire TVs, echo, ring, blink, and eero; and develops and produces media content. In addition, the company offers programs that enable sellers to sell their products in its stores; and programs that allow authors, independent publishers, musicians, filmmakers, Twitch streamers, skill and app developers, and others to publish and sell content. Further, it provides compute, storage, Artificial intelligence, database, analytics, machine learning, and other services, as well as advertising services through programs, such as sponsored ads, display, and video advertising. Additionally, the company offers Amazon Prime, a membership program. The company's products offered through its stores include merchandise and content purchased for resale and products offered by third-party sellers. It serves consumers, sellers, developers, enterprises, content creators, advertisers, and employees. The company was incorporated in 1994 and is headquartered in Seattle, Washington.",
   "industry": "Internet Retail",
   "website": "https://www.amazon.com",
-  "employees": 1595000,
+  "employees": 1638000,
   "ceo": "Mr. Andrew R. Jassy",
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 2.43417,
+  "eps_estimate": 2.485,
   "analysts": {
-    "strong_buy": 16,
-    "buy": 42,
+    "strong_buy": 15,
+    "buy": 43,
     "hold": 2,
     "sell": 0,
     "strong_sell": 0,
     "total": 60
   },
-  "target_mean": 332.4093,
+  "target_mean": 327.0762,
   "target_high": 405,
   "target_low": 230,
   "target_analysts": 58,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.2483,
-    "q1": 0.3814,
-    "y0": 0.1041,
-    "y1": 0.32
+    "q0": 0.2744,
+    "q1": 0.488,
+    "y0": 0.4677,
+    "y1": 0.0372
   },
   "ratings": [
+    {
+      "date": "2026-10-31",
+      "firm": "UBS",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-30",
       "firm": "Scotiabank",
@@ -140,13 +147,6 @@
       "from": "Outperform",
       "to": "Outperform",
       "action": "reit"
-    },
-    {
-      "date": "2026-10-30",
-      "firm": "StoneX",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
     }
   ],
   "holders": [
@@ -230,11 +230,11 @@
     "net_pct": 0.1
   },
   "extras": {
-    "beta": 1.456,
-    "enterprise_value": 2758242467840,
-    "ev_ebitda": 16.329,
-    "ev_revenue": 3.556,
-    "float_shares": 9810799373,
+    "beta": 1.503,
+    "enterprise_value": 2789552685056,
+    "ev_ebitda": 15.184,
+    "ev_revenue": 3.498,
+    "float_shares": 9837360705,
     "short_shares": 93656399,
     "short_pct_float": 0.95,
     "short_ratio": 2.6,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 7918,
+  "inst_count": 7922,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -266,9 +266,9 @@
     },
     {
       "quarter": "2026-09-30",
-      "estimate": 1.95944,
+      "estimate": 1.95787,
       "actual": 1.89,
-      "surprise_pct": -3.54
+      "surprise_pct": -3.47
     }
   ],
   "insiders": [
@@ -309,24 +309,6 @@
       "date": "2026-08-24"
     },
     {
-      "name": "HERRINGTON DOUGLAS J",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 257.77 - 260.33 per share.",
-      "value": 1647810,
-      "shares": 6362,
-      "date": "2026-08-21"
-    },
-    {
-      "name": "HERRINGTON DOUGLAS J",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 15905,
-      "date": "2026-08-21"
-    },
-    {
       "name": "GARMAN MATTHEW S",
       "role": "Officer",
       "kind": "sell",
@@ -336,12 +318,30 @@
       "date": "2026-08-21"
     },
     {
-      "name": "GARMAN MATTHEW S",
+      "name": "HERRINGTON DOUGLAS J",
       "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 18176,
+      "kind": "sell",
+      "text": "Sale at price 257.77 - 260.33 per share.",
+      "value": 1647810,
+      "shares": 6362,
+      "date": "2026-08-21"
+    },
+    {
+      "name": "OLSAVSKY BRIAN T.",
+      "role": "Chief Financial Officer",
+      "kind": "sell",
+      "text": "Sale at price 260.31 per share.",
+      "value": 1606633,
+      "shares": 6172,
+      "date": "2026-08-21"
+    },
+    {
+      "name": "JASSY ANDREW R.",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 257.63 - 260.39 per share.",
+      "value": 5180213,
+      "shares": 20000,
       "date": "2026-08-21"
     },
     {
@@ -354,12 +354,12 @@
       "date": "2026-08-21"
     },
     {
-      "name": "REYNOLDS SHELLEY L",
+      "name": "GARMAN MATTHEW S",
       "role": "Officer",
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 2343,
+      "shares": 18176,
       "date": "2026-08-21"
     }
   ],
