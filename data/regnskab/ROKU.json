@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T23:43:29.473Z",
+  "updated_at": "2026-11-03T21:59:22.486Z",
   "source": "Yahoo Finance",
   "symbol": "ROKU",
   "summary": "Roku, Inc., together with its subsidiaries, operates a TV streaming platform in the United States and internationally. The company operates in two segments, Platform and Devices. Its streaming platform allows users to find and access TV shows, movies, news, sports, and others, as well as offers digital advertising services. The company also sells streaming players, Roku-branded TVs, smart home products and services, audio products, and related accessories. Roku, Inc. was incorporated in 2002 and is headquartered in San Jose, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-02",
   "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": 0.776,
+  "eps_estimate": 0.79,
   "analysts": {
     "strong_buy": 1,
     "buy": 6,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.4642,
-    "q1": 0.3816,
-    "y0": 3.9487,
-    "y1": 0.32759997
+    "q0": 0.49060002,
+    "q1": 0.48580003,
+    "y0": 3.9909,
+    "y1": 0.3117
   },
   "ratings": [
+    {
+      "date": "2026-11-03",
+      "firm": "Rosenblatt",
+      "from": "Buy",
+      "to": "Neutral",
+      "action": "down"
+    },
     {
       "date": "2026-09-24",
       "firm": "Wedbush",
@@ -139,13 +146,6 @@
       "firm": "Wedbush",
       "from": "Outperform",
       "to": "Neutral",
-      "action": "down"
-    },
-    {
-      "date": "2026-06-16",
-      "firm": "Wolfe Research",
-      "from": "Outperform",
-      "to": "Peer Perform",
       "action": "down"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 2.086,
-    "enterprise_value": 20939667456,
-    "ev_ebitda": 36.165,
-    "ev_revenue": 4.02,
+    "enterprise_value": 20999034880,
+    "ev_ebitda": 36.268,
+    "ev_revenue": 4.031,
     "float_shares": 131000519,
     "short_shares": 9751749,
     "short_pct_float": 7.43,
@@ -247,22 +247,16 @@
   "inst_count": 988,
   "eps_history": [
     {
-      "quarter": "2025-12-31",
-      "estimate": 0.27571,
-      "actual": 0.53,
-      "surprise_pct": 92.23
+      "quarter": "2025-09-30",
+      "estimate": 0.09333,
+      "actual": 0.16,
+      "surprise_pct": 71.43
     },
     {
       "quarter": "2026-03-31",
       "estimate": 0.34667,
       "actual": 0.57,
       "surprise_pct": 64.42
-    },
-    {
-      "quarter": "2026-06-30",
-      "estimate": 0.5625,
-      "actual": 1.2006,
-      "surprise_pct": 113.44
     },
     {
       "quarter": "2026-09-30",
@@ -284,15 +278,6 @@
     {
       "name": "COLLIER CHARLES",
       "role": "Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 49.59 per share.",
-      "value": 1018479,
-      "shares": 20538,
-      "date": "2026-10-05"
-    },
-    {
-      "name": "COLLIER CHARLES",
-      "role": "Officer",
       "kind": "sell",
       "text": "Sale at price 151.60 - 152.07 per share.",
       "value": 3114125,
@@ -300,13 +285,13 @@
       "date": "2026-10-05"
     },
     {
-      "name": "HUNT NEIL D",
-      "role": "Director",
+      "name": "COLLIER CHARLES",
+      "role": "Officer",
       "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 2000,
-      "date": "2026-10-01"
+      "text": "Conversion of Exercise of derivative security at price 49.59 per share.",
+      "value": 1018479,
+      "shares": 20538,
+      "date": "2026-10-05"
     },
     {
       "name": "BANKS MATTHEW C.",
@@ -323,6 +308,15 @@
       "kind": "sell",
       "text": "Sale at price 150.85 - 152.04 per share.",
       "value": 302186,
+      "shares": 2000,
+      "date": "2026-10-01"
+    },
+    {
+      "name": "HUNT NEIL D",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
       "shares": 2000,
       "date": "2026-10-01"
     },
@@ -347,18 +341,18 @@
     {
       "name": "COLLIER CHARLES",
       "role": "Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 49.59 per share.",
-      "value": 1018479,
+      "kind": "sell",
+      "text": "Sale at price 156.87 - 157.73 per share.",
+      "value": 3224249,
       "shares": 20538,
       "date": "2026-09-04"
     },
     {
       "name": "COLLIER CHARLES",
       "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 156.87 - 157.73 per share.",
-      "value": 3224249,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 49.59 per share.",
+      "value": 1018479,
       "shares": 20538,
       "date": "2026-09-04"
     }

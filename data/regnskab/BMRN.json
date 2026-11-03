@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T23:43:27.423Z",
+  "updated_at": "2026-11-03T21:59:20.465Z",
   "source": "Yahoo Finance",
   "symbol": "BMRN",
   "summary": "BioMarin Pharmaceutical Inc., a biotechnology company, engages in the development and commercialization of therapies for life-threatening rare diseases and medical conditions in the United States, Europe, Latin America, the Middle East, the Asia Pacific, and internationally. The company's products include VIMIZIM, an enzyme replacement therapy for the treatment of mucopolysaccharidosis (MPS) IV type A, a lysosomal storage disorder; VOXZOGO, a once daily injection analog of c-type natriuretic peptide (CNP) for the treatment of achondroplasia; NAGLAZYME, a recombinant form of N- acetylgalactosamine 4-sulfatase for patients with MPS VI; and PALYNZIQ, a PEGylated recombinant phenylalanine (Phe) ammonia lyase enzyme delivered through subcutaneous injection to reduce blood Phe concentrations. It also develops BRINEURA, a recombinant human tripeptidyl peptidase 1 for the treatment of patients with ceroid lipofuscinosis type 2, a form of Batten disease; ALDURAZYME, a purified protein designed to be identical to a naturally occurring form of the human enzyme alpha-L-iduronidase; and KUVAN, a proprietary synthetic oral form of 6R-BH4 that is used to treat patients with phenylketonuria, an inherited metabolic disease. The company's products under development include BMN 333, a longer-acting CNP for the treatment of multiple growth disorders, such as achondroplasia and hypochondroplasia; and BMN 351, an oligonucleotide for the treatment of duchenne muscular dystrophy. It serves specialty pharmacies, hospitals, non-U.S. government agencies, distributors, and pharmaceutical wholesalers. The company has license and collaboration agreements with and Ares Trading S.A. The company was incorporated in 1996 and is based in San Rafael, California.",
@@ -19,8 +19,8 @@
     "strong_sell": 0,
     "total": 28
   },
-  "target_mean": 91.55556,
-  "target_high": 122,
+  "target_mean": 91.33333,
+  "target_high": 120,
   "target_low": 60,
   "target_analysts": 27,
   "statements": [
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 776133000,
-      "earnings": -30744000
-    },
-    {
       "q": "4Q2025",
       "revenue": 874565000,
       "earnings": -46573000
@@ -69,15 +64,55 @@
       "q": "2Q2026",
       "revenue": 989708000,
       "earnings": 44762000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1024646000,
+      "earnings": -122831000
     }
   ],
   "growth": {
     "q0": -1.9358001,
-    "q1": 2.6401,
-    "y0": 0.11359999,
-    "y1": 0.83779997
+    "q1": 2.1273,
+    "y0": 0.0032,
+    "y1": 1.0211
   },
   "ratings": [
+    {
+      "date": "2026-11-03",
+      "firm": "Morgan Stanley",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-03",
+      "firm": "Oppenheimer",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-03",
+      "firm": "HC Wainwright & Co.",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "reit"
+    },
+    {
+      "date": "2026-11-03",
+      "firm": "RBC Capital",
+      "from": "Sector Perform",
+      "to": "Sector Perform",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-03",
+      "firm": "Stifel",
+      "from": "Hold",
+      "to": "Hold",
+      "action": "main"
+    },
     {
       "date": "2026-10-21",
       "firm": "Morgan Stanley",
@@ -112,41 +147,6 @@
       "from": "Neutral",
       "to": "Neutral",
       "action": "reit"
-    },
-    {
-      "date": "2026-09-01",
-      "firm": "Piper Sandler",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-31",
-      "firm": "Jefferies",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-31",
-      "firm": "HC Wainwright & Co.",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-19",
-      "firm": "BMO Capital",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "init"
-    },
-    {
-      "date": "2026-08-18",
-      "firm": "HC Wainwright & Co.",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
     }
   ],
   "holders": [
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.226,
-    "enterprise_value": 14654195712,
-    "ev_ebitda": 22.708,
-    "ev_revenue": 4.302,
+    "enterprise_value": 14447071232,
+    "ev_ebitda": 22.387,
+    "ev_revenue": 4.241,
     "float_shares": 192631055,
     "short_shares": 12050657,
     "short_pct_float": 6.24,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 766,
+  "inst_count": 770,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -253,22 +253,28 @@
       "surprise_pct": -64.34
     },
     {
-      "quarter": "2025-12-31",
-      "estimate": 0.56056,
-      "actual": 0.46,
-      "surprise_pct": -17.94
-    },
-    {
       "quarter": "2026-03-31",
       "estimate": 0.91412,
       "actual": 0.76,
       "surprise_pct": -16.86
     },
     {
+      "quarter": "2025-12-31",
+      "estimate": 0.42269,
+      "actual": -0.24,
+      "surprise_pct": -156.78
+    },
+    {
       "quarter": "2026-06-30",
       "estimate": 0.95424,
       "actual": 1.2,
       "surprise_pct": 25.75
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.1123,
+      "actual": 0.23,
+      "surprise_pct": 304.81
     }
   ],
   "insiders": [

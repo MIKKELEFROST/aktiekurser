@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T23:43:29.989Z",
+  "updated_at": "2026-11-03T21:59:22.982Z",
   "source": "Yahoo Finance",
   "symbol": "UPWK",
   "summary": "Upwork Inc., together with its subsidiaries, provides platforms and workforce solutions that connect businesses with freelance, agency, fractional, and payrolled talent in the United States, the Philippines, India, Pakistan, and internationally. The company offers Upwork Marketplace, a human and AI-powered work marketplace that connects businesses with on-demand access to independent talent across a range of categories, including AI-related projects, administrative support, sales and marketing, design and creative, and customer service, as well as web, mobile, and software development. Its marketplace also streamlines workflows, such as talent sourcing, outreach, contracting, and engagement management, as well as provides infrastructure for remote collaboration, including communication and collaboration tools, consolidated invoicing, and payment protection; and Upwork Payroll services. It also offers enterprise solutions that provide access to platform capabilities that support contingent workforce solutions, including sourcing, onboarding, classification, compliance and contract management, payments, and reporting. In addition, the company offers managed services that provide a service-led program management and end-to-end project delivery solution that enables enterprise clients to outsource defined functions or projects; Uma, an AI assistant; and escrow services. The company was formerly known as Elance-oDesk, Inc. and changed its name to Upwork Inc. in May 2015. Upwork Inc. was founded in 1998 and is headquartered in Palo Alto, California.",
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 9
   },
-  "target_mean": 10,
+  "target_mean": 10.35714,
   "target_high": 14,
   "target_low": 8,
   "target_analysts": 7,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 201730000,
-      "earnings": 29335000
-    },
-    {
       "q": "4Q2025",
       "revenue": 198409000,
       "earnings": 15634000
@@ -69,15 +64,55 @@
       "q": "2Q2026",
       "revenue": 191660000,
       "earnings": 25404000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 185599000,
+      "earnings": 31810000
     }
   ],
   "growth": {
     "q0": -0.128,
-    "q1": -0.1091,
-    "y0": -0.0165,
-    "y1": -0.028900001
+    "q1": -0.1481,
+    "y0": 0.0423,
+    "y1": -0.12060001
   },
   "ratings": [
+    {
+      "date": "2026-11-03",
+      "firm": "UBS",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-03",
+      "firm": "Scotiabank",
+      "from": "Sector Perform",
+      "to": "Sector Perform",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-03",
+      "firm": "RBC Capital",
+      "from": "Sector Perform",
+      "to": "Sector Perform",
+      "action": "reit"
+    },
+    {
+      "date": "2026-11-03",
+      "firm": "BTIG",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "reit"
+    },
+    {
+      "date": "2026-11-03",
+      "firm": "Needham",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-08-14",
       "firm": "UBS",
@@ -112,41 +147,6 @@
       "from": "Buy",
       "to": "Buy",
       "action": "main"
-    },
-    {
-      "date": "2026-05-21",
-      "firm": "Citigroup",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-05-11",
-      "firm": "RBC Capital",
-      "from": "Sector Perform",
-      "to": "Sector Perform",
-      "action": "main"
-    },
-    {
-      "date": "2026-05-08",
-      "firm": "Scotiabank",
-      "from": "Sector Perform",
-      "to": "Sector Perform",
-      "action": "main"
-    },
-    {
-      "date": "2026-05-08",
-      "firm": "UBS",
-      "from": "Buy",
-      "to": "Neutral",
-      "action": "down"
-    },
-    {
-      "date": "2026-05-08",
-      "firm": "Canaccord Genuity",
-      "from": "Buy",
-      "to": "Hold",
-      "action": "down"
     }
   ],
   "holders": [
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.002,
-    "enterprise_value": 907060928,
-    "ev_ebitda": 6.083,
-    "ev_revenue": 1.152,
+    "enterprise_value": 978195520,
+    "ev_ebitda": 6.56,
+    "ev_revenue": 1.242,
     "float_shares": 111118523,
     "short_shares": 19051054,
     "short_pct_float": 23.35,
@@ -253,22 +253,16 @@
       "surprise_pct": 25.87
     },
     {
-      "quarter": "2025-12-31",
-      "estimate": 0.31156,
-      "actual": 0.36,
-      "surprise_pct": 15.55
-    },
-    {
       "quarter": "2026-03-31",
       "estimate": 0.27122,
       "actual": 0.35,
       "surprise_pct": 29.05
     },
     {
-      "quarter": "2026-06-30",
-      "estimate": 0.34239,
-      "actual": 0.41,
-      "surprise_pct": 19.75
+      "quarter": "2026-09-30",
+      "estimate": 0.31391,
+      "actual": 0.4,
+      "surprise_pct": 27.43
     }
   ],
   "insiders": [
@@ -327,6 +321,15 @@
       "date": "2026-09-18"
     },
     {
+      "name": "GESSERT ERICA",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 18133,
+      "date": "2026-09-18"
+    },
+    {
       "name": "KAPPUS ANTHONY RAY",
       "role": "Chief Operating Officer",
       "kind": "other",
@@ -351,15 +354,6 @@
       "text": null,
       "value": null,
       "shares": 46410,
-      "date": "2026-09-18"
-    },
-    {
-      "name": "GESSERT ERICA",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 18133,
       "date": "2026-09-18"
     }
   ],

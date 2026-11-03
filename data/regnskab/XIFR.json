@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T23:43:30.166Z",
+  "updated_at": "2026-11-03T21:59:23.162Z",
   "source": "Yahoo Finance",
   "symbol": "XIFR",
   "summary": "XPLR Infrastructure, LP engages in the energy selling business in the United States. It operates a portfolio of contracted clean energy assets, including wind, solar, and battery storage projects. The company was formerly known as NextEra Energy Partners, LP and changed its name to XPLR Infrastructure, LP in January 2025. XPLR Infrastructure, LP was incorporated in 2014 and is based in Juno Beach, Florida.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": 1.1,
+  "eps_estimate": -0.16,
   "analysts": {
     "strong_buy": 1,
     "buy": 2,
@@ -51,16 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 342000000,
-      "earnings": 79000000
-    },
-    {
-      "q": "3Q2025",
-      "revenue": 315000000,
-      "earnings": -37000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 249000000,
       "earnings": 29000000
@@ -69,11 +59,21 @@
       "q": "1Q2026",
       "revenue": 275000000,
       "earnings": 33000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 363000000,
+      "earnings": 38000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 332000000,
+      "earnings": 51000000
     }
   ],
   "growth": {
-    "q0": 11.3383,
-    "q1": -1.5186,
+    "q0": -1.5186,
+    "q1": null,
     "y0": -0.3728,
     "y1": -2.1006
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.853,
-    "enterprise_value": 13796706304,
-    "ev_ebitda": 21.064,
-    "ev_revenue": 11.478,
+    "enterprise_value": 13812732928,
+    "ev_ebitda": 21.088,
+    "ev_revenue": 11.491,
     "float_shares": 84125271,
     "short_shares": 5972029,
     "short_pct_float": 6.39,
@@ -244,7 +244,7 @@
   "ex_dividend": "2024-11-06",
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 277,
+  "inst_count": 278,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -263,6 +263,12 @@
       "estimate": -0.5,
       "actual": 0.4,
       "surprise_pct": 180
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.1,
+      "actual": 0.2619,
+      "surprise_pct": -76.19
     }
   ],
   "insiders": [

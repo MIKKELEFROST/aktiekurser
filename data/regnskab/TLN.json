@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T23:43:29.869Z",
+  "updated_at": "2026-11-03T21:59:22.858Z",
   "source": "Yahoo Finance",
   "symbol": "TLN",
   "summary": "Talen Energy Corporation, an independent power producer and infrastructure company, produces and sells electricity, capacity, and ancillary services into wholesale power markets in the United States. The company's plants generate power using a variety of fuels, such as nuclear, fossil, oil, natural gas, and coal power plants. It owns and operates approximately 13.1 GW of power infrastructure. Talen Energy Corporation was incorporated in 2014 and is headquartered in Houston, Texas.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": 7.455,
+  "eps_estimate": 7.22,
   "analysts": {
     "strong_buy": 6,
     "buy": 12,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 812000000,
-      "earnings": 207000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 749000000,
       "earnings": -363000000
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 747000000,
       "earnings": -92000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1327000000,
+      "earnings": 138000000
     }
   ],
   "growth": {
-    "q0": 1.2634,
-    "q1": 0.6466,
-    "y0": 1.5243,
-    "y1": 0.4049
+    "q0": 0.6466,
+    "q1": 0.45029998,
+    "y0": 1.53,
+    "y1": 0.39380002
   },
   "ratings": [
     {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.579,
-    "enterprise_value": 25805340672,
-    "ev_ebitda": 44.339,
-    "ev_revenue": 6.898,
+    "enterprise_value": 25319968768,
+    "ev_ebitda": 43.505,
+    "ev_revenue": 6.768,
     "float_shares": 38113397,
     "short_shares": 4213646,
     "short_pct_float": 9.99,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 821,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 3.67066,
-      "actual": 3.2937,
-      "surprise_pct": -10.27
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 4.33422,
@@ -269,6 +263,12 @@
       "estimate": 3.39119,
       "actual": 2.3745,
       "surprise_pct": -29.98
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 7.455,
+      "actual": 5.886,
+      "surprise_pct": -21.05
     }
   ],
   "insiders": [

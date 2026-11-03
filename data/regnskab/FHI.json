@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T23:43:28.079Z",
+  "updated_at": "2026-11-03T21:59:21.140Z",
   "source": "Yahoo Finance",
   "symbol": "FHI",
   "summary": "Federated Hermes, Inc. is a publicly owned investment manager. Through its subsidiaries, the firm provides its services to individuals, including high net worth individuals, banking or thrift institutions, investment companies, pension and profit sharing plans, pooled investment vehicles, charitable organizations, state or municipal government entities, and registered investment advisors. Through its subsidiaries, it manages separate client-focused equity, fixed income, balanced and money market mutual funds along with separate client-focused equity, fixed income, money market, and balanced portfolios. Through its subsidiaries, the firm invests in the public equity and fixed income markets across the globe. It invests in growth and value stocks of small-cap, mid-cap, and large-cap companies. The firm makes its fixed income investments in ultra-short, short-term, and intermediate-term mortgage-backed, U.S. Government, U.S. corporate, high yield, and municipal securities. It employs both fundamental and quantitative analysis to make its equity investments. Federated Hermes, Inc. was founded in 1955 and is based in Pittsburgh, Pennsylvania with additional offices in New York City; Chicago, Illinois and London, United Kingdom.",
@@ -19,7 +19,7 @@
     "strong_sell": 1,
     "total": 8
   },
-  "target_mean": 59.14286,
+  "target_mean": 60,
   "target_high": 63,
   "target_low": 56,
   "target_analysts": 7,
@@ -74,10 +74,17 @@
   "growth": {
     "q0": 0.0808,
     "q1": 0.1102,
-    "y0": 0.1229,
-    "y1": 0.0553
+    "y0": 0.122,
+    "y1": 0.0654
   },
   "ratings": [
+    {
+      "date": "2026-11-03",
+      "firm": "RBC Capital",
+      "from": "Sector Perform",
+      "to": "Sector Perform",
+      "action": "main"
+    },
     {
       "date": "2026-11-02",
       "firm": "TD Cowen",
@@ -140,83 +147,76 @@
       "from": "Sector Perform",
       "to": "Sector Perform",
       "action": "main"
-    },
-    {
-      "date": "2026-05-06",
-      "firm": "RBC Capital",
-      "from": "Sector Perform",
-      "to": "Sector Perform",
-      "action": "main"
     }
   ],
   "holders": [
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 8.1,
+      "pct": 8.18,
       "shares": 6043914,
       "date": "2026-06-30"
     },
     {
       "name": "FMR, LLC",
       "kind": "institution",
-      "pct": 6.25,
+      "pct": 6.31,
       "shares": 4663900,
       "date": "2026-06-30"
     },
     {
       "name": "Vanguard Portfolio Management LLC",
       "kind": "institution",
-      "pct": 5.89,
+      "pct": 5.95,
       "shares": 4397255,
       "date": "2026-06-30"
     },
     {
       "name": "Schneider Downs Wealth Management Advisors, LP",
       "kind": "institution",
-      "pct": 4.7,
+      "pct": 4.75,
       "shares": 3507785,
       "date": "2026-09-30"
     },
     {
       "name": "Vanguard Capital Management LLC",
       "kind": "institution",
-      "pct": 4.28,
+      "pct": 4.32,
       "shares": 3194537,
       "date": "2026-06-30"
     },
     {
       "name": "LSV Asset Management",
       "kind": "institution",
-      "pct": 3.84,
+      "pct": 3.88,
       "shares": 2867028,
       "date": "2026-06-30"
     },
     {
       "name": "Fuller & Thaler Asset Management Inc.",
       "kind": "institution",
-      "pct": 3.58,
+      "pct": 3.61,
       "shares": 2670077,
       "date": "2026-06-30"
     },
     {
       "name": "Charles Schwab Investment Management, Inc.",
       "kind": "institution",
-      "pct": 3.55,
+      "pct": 3.58,
       "shares": 2646942,
       "date": "2026-06-30"
     },
     {
       "name": "Capitol Series Trust-FullerThaler Behavioral Small-Cap Equity Fund",
       "kind": "fond",
-      "pct": 3.42,
+      "pct": 3.45,
       "shares": 2550317,
       "date": "2026-06-30"
     },
     {
       "name": "iShares Trust-iShares Core S&P Mid-Cap ETF",
       "kind": "fond",
-      "pct": 3.4,
+      "pct": 3.43,
       "shares": 2536795,
       "date": "2026-09-30"
     }
@@ -227,16 +227,16 @@
     "sells": 9,
     "bought": 112200,
     "sold": 39237,
-    "net_pct": 2.8
+    "net_pct": 2.7
   },
   "extras": {
     "beta": 0.647,
-    "enterprise_value": 4206424320,
-    "ev_ebitda": 7.334,
-    "ev_revenue": 2.133,
+    "enterprise_value": 4493856256,
+    "ev_ebitda": 7.835,
+    "ev_revenue": 2.279,
     "float_shares": 67286605,
     "short_shares": 4286766,
-    "short_pct_float": 6,
+    "short_pct_float": 6.06,
     "short_ratio": 5.32,
     "last_split": "3:2",
     "last_split_date": "2000-07-18"
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-11-06",
   "dividend_date": null,
   "payout_ratio": 0.2604,
-  "inst_count": 551,
+  "inst_count": 553,
   "eps_history": [
     {
       "quarter": "2025-12-31",

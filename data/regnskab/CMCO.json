@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T23:43:27.652Z",
+  "updated_at": "2026-11-03T21:59:20.692Z",
   "source": "Yahoo Finance",
   "symbol": "CMCO",
   "summary": "Columbus McKinnon Corporation designs, manufactures, and markets motion solutions for moving, lifting, positioning, and securing materials. It offers powered chain hoists, electric wire rope hoists, hand-operated hoists, winches, lever tools, and air-powered hoists, as well as explosion-protected and custom engineered hoists, such as wire rope and manual hoists; precision conveyer products which includes low profile, flexible chain, large scale, sanitary, and vertical elevation conveyor systems, as well as pallet system conveyors and accumulation systems; and power control and delivery systems and solutions. The company also provides AC and DC digital motion control systems for underground coal mining equipment; alloy and carbon steel chain; load chain; hooks, shackles, Hammerloks, and master links; and carbon steel forged and stamped products, such as load binders, logging tools, and other securing devices. In addition, it designs and manufactures industrial components comprising mechanical and electromechanical actuators and rotary unions; manufactures and markets aluminum light rail workstations; and crane components and kits. Further, the company designs, builds, sells, and supports elevator application-specific drive products; and engineered and technology-enabled products. It serves EV production and aerospace, energy and utilities, process industries, industrial automation, construction and infrastructure, food and beverage, entertainment, life sciences, consumer packaged goods, e-commerce, supply chain, and warehousing markets. The company offers its products to end users; industrial distributors, including rigging shops and independent crane builders; material handling specialists and integrators, and entertainment equipment distributors; service-after-sale distributors; original equipment manufacturers; government agencies; and engineering procurement and construction firms. The company was founded in 1875 and is headquartered in Charlotte, North Carolina.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": 0.37988,
+  "eps_estimate": 0.47526,
   "analysts": {
     "strong_buy": 2,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 261047000,
-      "earnings": 4595000
-    },
-    {
       "q": "4Q2025",
       "revenue": 258655000,
       "earnings": 5998000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 531461000,
       "earnings": -88729000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 539285000,
+      "earnings": -25192000
     }
   ],
   "growth": {
-    "q0": -0.38729998,
-    "q1": -0.2335,
+    "q0": -0.2335,
+    "q1": 1.3403,
     "y0": 0.0765,
     "y1": 0.31309998
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.48,
-    "enterprise_value": 3602938368,
-    "ev_ebitda": 14.548,
-    "ev_revenue": 2.42,
+    "enterprise_value": 3625485312,
+    "ev_ebitda": 14.639,
+    "ev_revenue": 2.435,
     "float_shares": 27679727,
     "short_shares": 2467437,
     "short_pct_float": 36.19,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-11-06",
   "dividend_date": null,
   "payout_ratio": 1.3333,
-  "inst_count": 248,
+  "inst_count": 246,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.52892,
-      "actual": 0.62,
-      "surprise_pct": 17.22
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.58167,
@@ -269,6 +263,12 @@
       "estimate": 0.27332,
       "actual": 0.61,
       "surprise_pct": 123.18
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.37988,
+      "actual": 0.61,
+      "surprise_pct": 60.58
     }
   ],
   "insiders": [
@@ -280,24 +280,6 @@
       "value": 47135,
       "shares": 2750,
       "date": "2026-08-20"
-    },
-    {
-      "name": "PARADOWSKI MARK R",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 5438,
-      "date": "2026-08-17"
-    },
-    {
-      "name": "WILSON DAVID J",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 54268,
-      "date": "2026-08-17"
     },
     {
       "name": "LAMACH MICHAEL W",
@@ -324,6 +306,24 @@
       "text": "Stock Award(Grant) at price 19.10 per share.",
       "value": 145007,
       "shares": 7590,
+      "date": "2026-08-17"
+    },
+    {
+      "name": "PARADOWSKI MARK R",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 5438,
+      "date": "2026-08-17"
+    },
+    {
+      "name": "WILSON DAVID J",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 54268,
       "date": "2026-08-17"
     },
     {

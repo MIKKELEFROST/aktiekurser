@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T23:43:29.897Z",
+  "updated_at": "2026-11-03T21:59:22.889Z",
   "source": "Yahoo Finance",
   "symbol": "TRI",
   "summary": "Thomson Reuters Corporation operates as a content and technology company in the Americas, Europe, the Middle East, Africa, and the Asia Pacific. It operates through five segments: Legal Professionals, Corporates, Tax, Audit & Accounting Professionals, Reuters News, and Global Print. The Legal Professionals segment offers research and workflow products focusing on legal research and integrated legal workflow solutions that combine content, tools, and analytics to law firms and governments. The Corporates segment provides a suite of content-driven technologies, including generative AI and integrated compliance workflow solutions to small businesses and multinational organizations. Tax, Audit & Accounting Professionals segment offers research and workflow products to tax, audit, and accounting firms. The Reuters News segment provides business, financial, and international news to media organizations, professional, and news consumers through Reuters News Agency, Reuters.com, Reuters Events, Thomson Reuters products, and to financial firms. The Global Print segment offers legal and tax information primarily in print format. The company was formerly known as The Thomson Corporation and changed its name to Thomson Reuters Corporation in April 2008. The company was founded in 1799 and is headquartered in Toronto, Canada. Thomson Reuters Corporation is a subsidiary of The Woodbridge Company Limited.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": 0.85435,
+  "eps_estimate": 1.27868,
   "analysts": {
     "strong_buy": 5,
     "buy": 9,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 1782000000,
-      "earnings": 423000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 2009000000,
       "earnings": 332000000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 1954000000,
       "earnings": 448000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1833000000,
+      "earnings": 339000000
     }
   ],
   "growth": {
-    "q0": -0.0104,
-    "q1": 0.1766,
+    "q0": 0.1766,
+    "q1": 0.1137,
     "y0": 0.045100003,
     "y1": 0.183
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.188,
-    "enterprise_value": 53740806144,
-    "ev_ebitda": 23.437,
-    "ev_revenue": 6.862,
+    "enterprise_value": 55469371392,
+    "ev_ebitda": 24.191,
+    "ev_revenue": 7.082,
     "float_shares": 125531154,
     "short_shares": 12829471,
     "short_pct_float": null,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-08-19",
   "dividend_date": null,
   "payout_ratio": 0.6643,
-  "inst_count": 770,
+  "inst_count": 775,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.83881,
-      "actual": 0.86333,
-      "surprise_pct": 2.92
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.07873,
@@ -269,6 +263,12 @@
       "estimate": 0.95802,
       "actual": 0.99,
       "surprise_pct": 3.34
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.85435,
+      "actual": 0.81,
+      "surprise_pct": -5.19
     }
   ],
   "insiders": [
@@ -282,21 +282,21 @@
       "date": "2026-09-15"
     },
     {
-      "name": "Woodbridge Company Ltd",
-      "role": "10% Security Holder of Issuer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 83065,
-      "date": "2026-09-10"
-    },
-    {
       "name": "Hron (Joel)",
       "role": "Director or Senior Officer of Insider or Subsidiary of Issuer (other than in 4,5,6)",
       "kind": "other",
       "text": null,
       "value": null,
       "shares": 7166,
+      "date": "2026-09-10"
+    },
+    {
+      "name": "Woodbridge Company Ltd",
+      "role": "10% Security Holder of Issuer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 83065,
       "date": "2026-09-10"
     },
     {

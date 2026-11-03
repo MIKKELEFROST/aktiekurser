@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T23:43:28.881Z",
+  "updated_at": "2026-11-03T21:59:21.900Z",
   "source": "Yahoo Finance",
   "symbol": "MNDY",
   "summary": "monday.com Ltd., together with its subsidiaries, develops software applications in the United States, Europe, the Middle East, Africa, the United Kingdom, and internationally. The company provides Work Operating System (Work OS), a cloud-based visual work OS that consists of modular building blocks used and assembled to create software applications and work management tools. Its products include monday work management that manages workflows, projects, and portfolios for team collaboration and productivity; monday CRM, which tracks and manages various sales cycle; monday dev that builds agile product and software development workflows; monday service, which creates seamless connection between service desks and their data; WorkCanvas, a digital whiteboard; and WorkForms, which allows users to create personalized forms or surveys and gain organizational insights. The company serves organizations, educational or government institution, and distinct business unit of an organization. The company was formerly known as DaPulse Labs Ltd. and changed its name to monday.com Ltd. in December 2017. monday.com Ltd. was incorporated in 2012 and is headquartered in Tel Aviv-Yafo, Israel.",
@@ -13,13 +13,13 @@
   "eps_estimate": 1.37489,
   "analysts": {
     "strong_buy": 3,
-    "buy": 11,
-    "hold": 12,
+    "buy": 10,
+    "hold": 13,
     "sell": 0,
     "strong_sell": 0,
     "total": 26
   },
-  "target_mean": 108.97167,
+  "target_mean": 108.76333,
   "target_high": 165,
   "target_low": 87,
   "target_analysts": 24,
@@ -74,10 +74,24 @@
   "growth": {
     "q0": 0.18530001,
     "q1": 0.4684,
-    "y0": 0.2489,
-    "y1": 0.2193
+    "y0": 0.249,
+    "y1": 0.2189
   },
   "ratings": [
+    {
+      "date": "2026-11-03",
+      "firm": "Guggenheim",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "reit"
+    },
+    {
+      "date": "2026-11-03",
+      "firm": "TD Cowen",
+      "from": "Buy",
+      "to": "Hold",
+      "action": "down"
+    },
     {
       "date": "2026-10-29",
       "firm": "BTIG",
@@ -133,20 +147,6 @@
       "from": "Outperform",
       "to": "Peer Perform",
       "action": "down"
-    },
-    {
-      "date": "2026-08-11",
-      "firm": "TD Cowen",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "reit"
-    },
-    {
-      "date": "2026-08-11",
-      "firm": "Wells Fargo",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
     }
   ],
   "holders": [
@@ -223,17 +223,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 4,
+    "buys": 8,
     "sells": 6,
-    "bought": 11288,
+    "bought": 16932,
     "sold": 8087,
-    "net_pct": 0
+    "net_pct": 0.1
   },
   "extras": {
     "beta": 1.055,
-    "enterprise_value": 3206138880,
-    "ev_ebitda": 63.103,
-    "ev_revenue": 2.346,
+    "enterprise_value": 3191765504,
+    "ev_ebitda": 62.82,
+    "ev_revenue": 2.336,
     "float_shares": 33046947,
     "short_shares": 5341521,
     "short_pct_float": 15.07,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 404,
+  "inst_count": 410,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -280,6 +280,15 @@
       "value": 200079,
       "shares": 2000,
       "date": "2026-10-20"
+    },
+    {
+      "name": "JENNER PETRA",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 1109,
+      "date": "2026-10-01"
     },
     {
       "name": "GEORGE JAMES CASE",
@@ -327,40 +336,31 @@
       "date": "2026-08-31"
     },
     {
-      "name": "GEORGE JAMES CASE",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 78.77 per share.",
-      "value": 66009,
-      "shares": 838,
-      "date": "2026-06-15"
-    },
-    {
-      "name": "GEORGE JAMES CASE",
-      "role": "Officer",
+      "name": "FAIER RONEN",
+      "role": "Director",
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 1858,
-      "date": "2026-06-12"
+      "shares": 707,
+      "date": "2026-08-07"
     },
     {
-      "name": "GEORGE JAMES CASE",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 88.73 per share.",
-      "value": 157318,
-      "shares": 1773,
-      "date": "2026-06-02"
-    },
-    {
-      "name": "GEORGE JAMES CASE",
-      "role": "Officer",
+      "name": "FAIER RONEN",
+      "role": "Director",
       "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 5897,
-      "date": "2026-06-01"
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 1914,
+      "date": "2026-08-05"
+    },
+    {
+      "name": "JENNER PETRA",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 1914,
+      "date": "2026-08-05"
     }
   ],
   "dividends": [],

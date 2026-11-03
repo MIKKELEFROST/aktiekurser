@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T23:43:28.108Z",
+  "updated_at": "2026-11-03T21:59:21.171Z",
   "source": "Yahoo Finance",
   "symbol": "FN",
   "summary": "Fabrinet provides optical packaging and precision optical, electro-mechanical, and electronic manufacturing services in North America, the Asia-Pacific, Europe, and internationally. The company offers a range of advanced optical and electro-mechanical capabilities in the manufacturing process, including process design and engineering, supply chain management, manufacturing, printed circuit board assembly, packaging, integration, final assembly, and testing. Its products include switching products, including reconfigurable optical add-drop multiplexers, optical amplifiers, modulators, and other optical components and modules that enable network managers to route voice, video, and data communications traffic through fiber optic cables at various wavelengths, speeds, and over various distances. The company's products also comprise transceivers, tunable lasers, and transponders; and active optical cables, which provide high-speed interconnect capabilities for data centers and computing clusters, as well as Infiniband, Ethernet, fiber channel, and optical backplane connectivity. In addition, it provides solid state, diode-pumped, gas, and fiber lasers used in semiconductor processing, biotechnology and medical device, metrology, and material processing industries; and differential pressure, micro-gyro, fuel, and other sensors used in automobiles, as well as non-contact temperature measurement sensors for the medical industry. Further, the company designs and fabricates application-specific crystals, lenses, prisms, mirrors, laser components, and substrates; and other custom and standard borosilicate, clear fused quartz, and synthetic fused silica glass products. It serves original equipment manufacturers of optical communication components, modules and sub-systems, industrial lasers, automotive components, medical devices, and sensors. The company was incorporated in 1999 and is based in George Town, the Cayman Islands.",
@@ -7,10 +7,10 @@
   "website": "https://www.fabrinet.com",
   "employees": 21521,
   "ceo": "Mr. Seamus  Grady",
-  "next_earnings": "2026-11-02",
-  "earnings_estimated": false,
+  "next_earnings": "2027-02-01",
+  "earnings_estimated": true,
   "earnings_call": "2026-11-02",
-  "eps_estimate": 4.18843,
+  "eps_estimate": 4.19677,
   "analysts": {
     "strong_buy": 3,
     "buy": 4,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 9
   },
-  "target_mean": 666,
+  "target_mean": 597.3333,
   "target_high": 800,
   "target_low": 385,
   "target_analysts": 9,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 978128000,
-      "earnings": 0
-    },
-    {
       "q": "4Q2025",
       "revenue": 1132888000,
       "earnings": 112628000
@@ -69,15 +64,48 @@
       "q": "2Q2026",
       "revenue": 1315788000,
       "earnings": 139260000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1474459000,
+      "earnings": 103497000
     }
   ],
   "growth": {
-    "q0": 0.4344,
-    "q1": 0.3179,
-    "y0": 0.294,
-    "y1": 0.2032
+    "q0": 0.4372,
+    "q1": 0.488,
+    "y0": 0.377,
+    "y1": 0.2134
   },
   "ratings": [
+    {
+      "date": "2026-11-03",
+      "firm": "JP Morgan",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-03",
+      "firm": "B. Riley Securities",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-03",
+      "firm": "Rosenblatt",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-03",
+      "firm": "Needham",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "reit"
+    },
     {
       "date": "2026-10-30",
       "firm": "B. Riley Securities",
@@ -118,34 +146,6 @@
       "firm": "JP Morgan",
       "from": "Neutral",
       "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-18",
-      "firm": "Barclays",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-18",
-      "firm": "Rosenblatt",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-18",
-      "firm": "Needham",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "reit"
-    },
-    {
-      "date": "2026-07-22",
-      "firm": "Needham",
-      "from": "Buy",
-      "to": "Buy",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.368,
-    "enterprise_value": 10857350144,
-    "ev_ebitda": 20.458,
-    "ev_revenue": 2.339,
+    "enterprise_value": 10406190080,
+    "ev_ebitda": 19.607,
+    "ev_revenue": 2.242,
     "float_shares": 35714817,
     "short_shares": 1881515,
     "short_pct_float": 6.95,
@@ -260,15 +260,21 @@
     },
     {
       "quarter": "2026-03-31",
-      "estimate": 3.56263,
-      "actual": 3.72,
-      "surprise_pct": 4.42
+      "estimate": 3.34,
+      "actual": 3.45,
+      "surprise_pct": 3.29
     },
     {
       "quarter": "2026-06-30",
       "estimate": 3.81462,
       "actual": 4.1,
       "surprise_pct": 7.48
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 4.19677,
+      "actual": 4.34,
+      "surprise_pct": 3.41
     }
   ],
   "insiders": [

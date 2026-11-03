@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T23:43:29.315Z",
+  "updated_at": "2026-11-03T21:59:22.316Z",
   "source": "Yahoo Finance",
   "symbol": "PLOW",
   "summary": "Douglas Dynamics, Inc. operates as a manufacturer and upfitter of commercial vehicle attachments and equipment in North America. It operates in two segments, Work Truck Attachments and Work Truck Solutions. The Work Truck Attachments segment manufactures and sells snow and ice control attachments, and other products sold under the FISHER, WESTERN, and SNOWEX brands, as well as truck-mounted service cranes and dump hoists under the VENCO and VENTURO brands. The Work Truck Solutions segment engages in the manufacturing of municipal snow and ice control products under the HENDERSON brand; and upfit of attachments and storage under the HENDERSON and DEJANA brands, and related sub brands. The company also provides customized turnkey solutions to governmental agencies, such as departments of transportation and municipalities. It sells its products through a distributor network primarily to professional snowplowers who are contracted to remove snow and ice from commercial and residential areas. Douglas Dynamics, Inc. was founded in 1946 and is headquartered in Milwaukee, Wisconsin.",
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 162121000,
-      "earnings": 7960000
-    },
-    {
       "q": "4Q2025",
       "revenue": 184538000,
       "earnings": 12835000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 214648000,
       "earnings": 25379000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 218014000,
+      "earnings": 21158000
     }
   ],
   "growth": {
-    "q0": 1.3063,
-    "q1": 0.12100001,
+    "q0": 0.48790002,
+    "q1": -0.7043,
     "y0": 0.4361,
     "y1": 0.025
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.145,
-    "enterprise_value": 1199448576,
-    "ev_ebitda": 12.728,
-    "ev_revenue": 1.716,
+    "enterprise_value": 1208217856,
+    "ev_ebitda": 12.821,
+    "ev_revenue": 1.728,
     "float_shares": 22633274,
     "short_shares": 521318,
     "short_pct_float": 3.32,
@@ -253,22 +253,16 @@
       "surprise_pct": 1.7
     },
     {
-      "quarter": "2025-12-31",
-      "estimate": 0.52,
-      "actual": 0.62,
-      "surprise_pct": 19.23
-    },
-    {
       "quarter": "2026-03-31",
       "estimate": 0.125,
       "actual": 0.36,
       "surprise_pct": 188
     },
     {
-      "quarter": "2026-06-30",
-      "estimate": 1.0625,
-      "actual": 1.22,
-      "surprise_pct": 14.82
+      "quarter": "2026-09-30",
+      "estimate": 0.9225,
+      "actual": 0.98,
+      "surprise_pct": 6.23
     }
   ],
   "insiders": [
@@ -345,21 +339,21 @@
       "date": "2026-04-29"
     },
     {
-      "name": "SISULAK JON J",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 42.61 per share.",
-      "value": 41627,
-      "shares": 977,
-      "date": "2026-03-09"
-    },
-    {
       "name": "BERNAUER CHRISTOPHER E",
       "role": "Officer",
       "kind": "sell",
       "text": "Sale at price 42.61 per share.",
       "value": 37025,
       "shares": 869,
+      "date": "2026-03-09"
+    },
+    {
+      "name": "SISULAK JON J",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 42.61 per share.",
+      "value": 41627,
+      "shares": 977,
       "date": "2026-03-09"
     }
   ],

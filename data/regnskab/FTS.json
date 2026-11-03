@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T23:43:28.156Z",
+  "updated_at": "2026-11-03T21:59:21.209Z",
   "source": "Yahoo Finance",
   "symbol": "FTS",
   "summary": "Fortis Inc. operates as an electric and gas utility company in Canada, the United States, and the Caribbean countries. The company generates, transmits, and distributes electricity to approximately 459,000 retail customers in southeastern Arizona, including the greater Tucson metropolitan area; and 107,000 retail customers in southeastern Arizona with an aggregate capacity of 3, 443 megawatts (MW). It also sells wholesale electricity to other entities in the western United States; owns gas-fired and hydroelectric generating capacity totaling 43 MW; and distributes natural gas to approximately 1,105,000 residential, commercial, and industrial customers in British Columbia, Canada. In addition, it owns and operates the electricity distribution system that serves approximately 615,000 customers in southern and central Alberta; owns four hydroelectric generating facilities with a combined capacity of 225 MW; and provides operation, maintenance, and management services to hydroelectric generating facilities. Further, the company distributes electricity in the island portion of Newfoundland and Labrador with an installed generating capacity of 145 MW; and on Prince Edward Island with a generating capacity of 90 MW. Additionally, it provides integrated electric utility service to approximately 70,000 customers in Ontario; approximately 280,000 customers in Newfoundland; approximately 35,000 customers on Grand Cayman, Cayman Islands; and approximately 92,000 customers on Maritime Electric. It also owns and operates approximately 91,100 circuit Kilometers (km) of distribution lines; and approximately 51,700 km of natural gas pipelines. Fortis Inc. was founded in 1885 and is headquartered in St. John's, Canada.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": 0.6277,
+  "eps_estimate": 0.663,
   "analysts": {
     "strong_buy": 3,
     "buy": 3,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 2938000000,
-      "earnings": 409000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 3079000000,
       "earnings": 422000000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 2931000000,
       "earnings": 396000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 3115000000,
+      "earnings": 0
     }
   ],
   "growth": {
-    "q0": 0.014400001,
-    "q1": 0.0011,
+    "q0": 0.0011,
+    "q1": 0.061,
     "y0": -0.0105,
     "y1": 0.073699996
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.435,
-    "enterprise_value": 69707505664,
-    "ev_ebitda": 12.242,
-    "ev_revenue": 5.644,
+    "enterprise_value": 70024257536,
+    "ev_ebitda": 12.298,
+    "ev_revenue": 5.67,
     "float_shares": 509576769,
     "short_shares": 13217578,
     "short_pct_float": null,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-08-19",
   "dividend_date": null,
   "payout_ratio": 0.7456,
-  "inst_count": 620,
+  "inst_count": 621,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.60837,
-      "actual": 0.61879,
-      "surprise_pct": 1.71
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.61808,
@@ -269,6 +263,12 @@
       "estimate": 0.54423,
       "actual": 0.55666,
       "surprise_pct": 2.28
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.6277,
+      "actual": 0.65843,
+      "surprise_pct": 4.9
     }
   ],
   "insiders": [
@@ -298,6 +298,24 @@
       "value": 8028,
       "shares": 152,
       "date": "2026-10-01"
+    },
+    {
+      "name": "Amaimo (Stephanie Ann)",
+      "role": "Senior Officer of Issuer",
+      "kind": "other",
+      "text": "Acquisition under a purchase/ownership plan at price 54.87 per share.",
+      "value": 2743,
+      "shares": 50,
+      "date": "2026-09-01"
+    },
+    {
+      "name": "Avery (Julie Madge)",
+      "role": "Senior Officer of Issuer",
+      "kind": "other",
+      "text": "Acquisition under a purchase/ownership plan at price 54.87 per share.",
+      "value": 3017,
+      "shares": 55,
+      "date": "2026-09-01"
     },
     {
       "name": "Finlay (Tanya Nicole)",
@@ -342,24 +360,6 @@
       "text": "Acquisition under a purchase/ownership plan at price 55.01 per share.",
       "value": 5776,
       "shares": 105,
-      "date": "2026-09-01"
-    },
-    {
-      "name": "Lochray (Stuart)",
-      "role": "Senior Officer of Issuer",
-      "kind": "other",
-      "text": "Acquisition under a purchase/ownership plan at price 54.87 per share.",
-      "value": 3676,
-      "shares": 67,
-      "date": "2026-09-01"
-    },
-    {
-      "name": "Martin (Kealey Darlene)",
-      "role": "Senior Officer of Issuer",
-      "kind": "other",
-      "text": "Acquisition under a purchase/ownership plan at price 54.87 per share.",
-      "value": 14047,
-      "shares": 256,
       "date": "2026-09-01"
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T23:43:27.136Z",
+  "updated_at": "2026-11-03T21:59:20.157Z",
   "source": "Yahoo Finance",
   "symbol": "AM",
   "summary": "Antero Midstream Corporation owns, operates, and develops midstream energy assets in the Appalachian Basin. It operates in two segments, Gathering and Processing, and Water Handling. The gathering and processing segment includes a network of gathering pipelines and compressor stations that collect and process natural gas and NGLs from Antero Resources' wells in West Virginia and Ohio. The Water Handling segment delivers water from sources, including the Ohio River, local reservoirs, and various regional waterways; other fluid handling services, which include transfer and disposal; uses water handling systems to transport flowback and produced water; and buried pipelines, surface pipelines, and water storage facilities, as well as pumping stations and blending facilities. Antero Midstream Corporation was founded in 2002 and is headquartered in Denver, Colorado.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-28",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": null,
+  "eps_estimate": 0.13336,
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
@@ -19,7 +19,7 @@
     "strong_sell": 1,
     "total": 8
   },
-  "target_mean": 24.14286,
+  "target_mean": 24,
   "target_high": 26,
   "target_low": 22,
   "target_analysts": 7,
@@ -71,7 +71,12 @@
       "earnings": 392657000
     }
   ],
-  "growth": null,
+  "growth": {
+    "q0": -0.5237,
+    "q1": null,
+    "y0": -0.2048,
+    "y1": 0.8143
+  },
   "ratings": [
     {
       "date": "2026-11-02",
@@ -174,13 +179,6 @@
       "date": "2026-06-30"
     },
     {
-      "name": "AIM Investment Fd.s -Invesco SteelPath MLP Income Fd.",
-      "kind": "fond",
-      "pct": 2.52,
-      "shares": 11907509,
-      "date": "2026-05-31"
-    },
-    {
       "name": "iShares Trust-iShares Core S&P Mid-Cap ETF",
       "kind": "fond",
       "pct": 2.51,
@@ -193,6 +191,13 @@
       "pct": 2.45,
       "shares": 11558546,
       "date": "2026-06-30"
+    },
+    {
+      "name": "AIM Investment Fd.s -Invesco SteelPath MLP Income Fd.",
+      "kind": "fond",
+      "pct": 2.45,
+      "shares": 11592509,
+      "date": "2026-08-31"
     },
     {
       "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
@@ -239,7 +244,7 @@
   "ex_dividend": "2026-10-28",
   "dividend_date": null,
   "payout_ratio": 0.6338,
-  "inst_count": 691,
+  "inst_count": 690,
   "eps_history": [
     {
       "quarter": "2025-12-31",

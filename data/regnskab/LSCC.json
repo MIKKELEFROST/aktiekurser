@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T23:43:28.797Z",
+  "updated_at": "2026-11-03T21:59:21.766Z",
   "source": "Yahoo Finance",
   "symbol": "LSCC",
   "summary": "Lattice Semiconductor Corporation, together with its subsidiaries, develops and sells semiconductor, silicon-based and silicon-enabling, evaluation boards, and development hardware products in Asia, Europe, and the Americas. It offers field programmable gate arrays (FPGA), which are regular arrays of logic that can be custom-configured by the user through software. The company's products include small FPGA platforms, including Lattice Nexus and Lattice Nexus 2; Lattice Avant, a mid-range FPGA platform; general purpose FPGA, such as Lattice Avant-G, Certus-NX, CertusPro, and Certus-N2; and specialized FPGAs, which includes Lattice Avant-E, Avant-X, SCP, MachXO, iCE, CrossLink,and CrossLinkPlus. It also provides design software that includes Lattice Radiant to deliver tools that enable predictable design convergence; Lattice Propel for creating embedded processor-based designs; develops Lattice Automate for industrial automation and robotics; Lattice mVision forlow power embedded vision; Lattice ORAN for control data security, fronthaul synchronization, and low power hardware acceleration; Lattice sensAI for Edge AI applications; Lattice Sentry for hardware security implementation; and Lattice Drive for automotive system designs and applications. In addition, the company offers Glance, an edge AI application software that allows users to control the AI and computer vision experiences for various edge applications, including client computing, industrial, and automotive applications; and sells video connectivity application specific standard products. Further, it provides standard IP and IP core licensing, patent monetization, and IP services. The company serves communications and computing, industrial and automotive, and consumer markets. Lattice Semiconductor Corporation was incorporated in 1983 and is headquartered in Hillsboro, Oregon.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-02",
   "earnings_estimated": false,
   "earnings_call": "2026-11-02",
-  "eps_estimate": 0.55379,
+  "eps_estimate": 0.80374,
   "analysts": {
     "strong_buy": 3,
     "buy": 10,
@@ -19,9 +19,9 @@
     "strong_sell": 1,
     "total": 14
   },
-  "target_mean": 158,
-  "target_high": 180,
-  "target_low": 125,
+  "target_mean": 154.26462,
+  "target_high": 195,
+  "target_low": 95.44,
   "target_analysts": 13,
   "statements": [
     {
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 133349000,
-      "earnings": 2794000
-    },
-    {
       "q": "4Q2025",
       "revenue": 145792000,
       "earnings": -7645000
@@ -69,15 +64,34 @@
       "q": "2Q2026",
       "revenue": 201079000,
       "earnings": 19359000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 291035000,
+      "earnings": 11206000
     }
   ],
   "growth": {
-    "q0": 0.9778,
-    "q1": 1.018,
+    "q0": 1.5117,
+    "q1": 1.9002,
     "y0": 1.0382,
-    "y1": 0.5388
+    "y1": 0.96660006
   },
   "ratings": [
+    {
+      "date": "2026-11-03",
+      "firm": "Stifel",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-03",
+      "firm": "Rosenblatt",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-19",
       "firm": "TD Cowen",
@@ -130,20 +144,6 @@
     {
       "date": "2026-07-13",
       "firm": "TD Cowen",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-05-22",
-      "firm": "Deutsche Bank",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-05-05",
-      "firm": "Jefferies",
       "from": "Buy",
       "to": "Buy",
       "action": "main"
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.91,
-    "enterprise_value": 13069331456,
-    "ev_ebitda": 141.847,
-    "ev_revenue": 20.072,
+    "enterprise_value": 13420145664,
+    "ev_ebitda": 145.654,
+    "ev_revenue": 20.611,
     "float_shares": 140942320,
     "short_shares": 7027420,
     "short_pct_float": 9.42,
@@ -254,9 +254,9 @@
     },
     {
       "quarter": "2025-12-31",
-      "estimate": 0.31769,
-      "actual": 0.32,
-      "surprise_pct": 0.73
+      "estimate": 0.068,
+      "actual": -0.06,
+      "surprise_pct": -188.24
     },
     {
       "quarter": "2026-03-31",
@@ -266,9 +266,15 @@
     },
     {
       "quarter": "2026-06-30",
-      "estimate": 0.44516,
-      "actual": 0.53,
-      "surprise_pct": 19.06
+      "estimate": 0.235,
+      "actual": 0.14,
+      "surprise_pct": -40.43
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.55379,
+      "actual": 0.72,
+      "surprise_pct": 30.01
     }
   ],
   "insiders": [

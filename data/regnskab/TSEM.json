@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T23:43:29.921Z",
+  "updated_at": "2026-11-03T21:59:22.909Z",
   "source": "Yahoo Finance",
   "symbol": "TSEM",
   "summary": "Tower Semiconductor Ltd., an independent semiconductor foundry, provides technology, development, and process platforms for integrated circuits in the United States, Japan, rest of Asia, and Europe. It provides customizable process technologies, including SiGe, SiPho, mixed signal CMOS, RF CMOS, CMOS image sensors, non-imaging sensors, wafers, and integrated power management. The company also offers a design enablement platform for a design cycle, as well as transfer optimization and development process services to integrated device manufacturers and fabless companies. It serves consumer applications, personal computers, communications, handsets and smartphones, automotive, industrial, aerospace, and medical device markets. The company was incorporated in 1993 and is headquartered in Migdal Haemek, Israel.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-02",
   "earnings_estimated": false,
   "earnings_call": "2026-11-02",
-  "eps_estimate": 1.304,
+  "eps_estimate": 1.40361,
   "analysts": {
     "strong_buy": 1,
     "buy": 7,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 9
   },
-  "target_mean": 312.925,
-  "target_high": 355,
-  "target_low": 270,
+  "target_mean": 298.4122,
+  "target_high": 335,
+  "target_low": 235,
   "target_analysts": 10,
   "statements": [
     {
@@ -72,12 +72,33 @@
     }
   ],
   "growth": {
-    "q0": 0.6718,
-    "q1": 1.0311,
+    "q0": 0.7995,
+    "q1": 0.8236,
     "y0": 0.6997,
-    "y1": 0.74160004
+    "y1": 0.78480005
   },
   "ratings": [
+    {
+      "date": "2026-11-03",
+      "firm": "Wedbush",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-03",
+      "firm": "Susquehanna",
+      "from": "Positive",
+      "to": "Positive",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-03",
+      "firm": "Stifel",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-09-25",
       "firm": "Mizuho",
@@ -126,27 +147,6 @@
       "from": "Neutral",
       "to": "Neutral",
       "action": "main"
-    },
-    {
-      "date": "2026-03-26",
-      "firm": "Benchmark",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-02-13",
-      "firm": "Barclays",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
-      "action": "main"
-    },
-    {
-      "date": "2026-02-12",
-      "firm": "Wedbush",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
     }
   ],
   "holders": [
@@ -186,6 +186,13 @@
       "date": "2026-06-30"
     },
     {
+      "name": "Harel Insurance Investments & Financial Services Ltd.",
+      "kind": "institution",
+      "pct": 2.79,
+      "shares": 3072857,
+      "date": "2026-09-30"
+    },
+    {
       "name": "Jane Street Group, LLC",
       "kind": "institution",
       "pct": 2.66,
@@ -198,13 +205,6 @@
       "pct": 2.26,
       "shares": 2485243,
       "date": "2026-09-30"
-    },
-    {
-      "name": "Harel Insurance Investments & Financial Services Ltd.",
-      "kind": "institution",
-      "pct": 2.07,
-      "shares": 2279379,
-      "date": "2026-06-30"
     },
     {
       "name": "Senvest Management LLC",
@@ -227,14 +227,14 @@
     "sells": 3,
     "bought": 30652,
     "sold": 248731,
-    "net_pct": -32.7
+    "net_pct": -32.6
   },
   "extras": {
-    "beta": 0.964,
-    "enterprise_value": 17462923264,
-    "ev_ebitda": 29.251,
-    "ev_revenue": 10.215,
-    "float_shares": 112812850,
+    "beta": null,
+    "enterprise_value": 16282338304,
+    "ev_ebitda": 23.681,
+    "ev_revenue": 8.849,
+    "float_shares": 113105285,
     "short_shares": 5355761,
     "short_pct_float": 4.8,
     "short_ratio": 2.4,
@@ -244,25 +244,19 @@
   "ex_dividend": "1997-09-24",
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 677,
+  "inst_count": 675,
   "eps_history": [
     {
-      "quarter": "2025-12-31",
-      "estimate": 0.68333,
-      "actual": 0.78,
-      "surprise_pct": 14.15
+      "quarter": "2025-09-30",
+      "estimate": 0.5425,
+      "actual": 0.55,
+      "surprise_pct": 1.38
     },
     {
       "quarter": "2026-03-31",
       "estimate": 0.562,
       "actual": 0.65,
       "surprise_pct": 15.66
-    },
-    {
-      "quarter": "2026-06-30",
-      "estimate": 0.758,
-      "actual": 0.88,
-      "surprise_pct": 16.09
     },
     {
       "quarter": "2026-09-30",

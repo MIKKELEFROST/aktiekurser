@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T23:43:30.056Z",
+  "updated_at": "2026-11-03T21:59:23.048Z",
   "source": "Yahoo Finance",
   "symbol": "VNO",
   "summary": "Vornado Realty Trust is a fully integrated real estate investment trust with a 26 million square-foot portfolio of premier New York City office, retail and multifamily assets and the developer of the new PENN DISTRICT. While concentrated in New York, Vornado also owns premier assets in both Chicago and San Francisco. Vornado is a real estate industry leader in sustainability, with 100% of our in-service office buildings LEED certified and over 95% certified LEED Gold or Platinum. Vornado Realty Trust was incorporated in 1946 in Maryland, USA.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-02",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": -0.22,
+  "eps_estimate": -0.21,
   "analysts": {
     "strong_buy": 0,
     "buy": 4,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 453700000,
-      "earnings": 11589000
-    },
-    {
       "q": "4Q2025",
       "revenue": 453709000,
       "earnings": 601000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 462242000,
       "earnings": 16434000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 467657000,
+      "earnings": -47138000
     }
   ],
   "growth": {
-    "q0": null,
-    "q1": -7.75,
+    "q0": -7.75,
+    "q1": 1.6158,
     "y0": null,
     "y1": null
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.62,
-    "enterprise_value": 16024177664,
-    "ev_ebitda": 20.767,
-    "ev_revenue": 8.537,
+    "enterprise_value": 16102599680,
+    "ev_ebitda": 20.868,
+    "ev_revenue": 8.578,
     "float_shares": 156615580,
     "short_shares": 13340,
     "short_pct_float": 0.01,
@@ -247,16 +247,16 @@
   "inst_count": 601,
   "eps_history": [
     {
-      "quarter": "2025-09-30",
-      "estimate": -0.015,
-      "actual": 0.06,
-      "surprise_pct": 500
-    },
-    {
       "quarter": "2025-12-31",
       "estimate": 0.05,
       "actual": -0.024,
       "surprise_pct": -148
+    },
+    {
+      "quarter": "2025-09-30",
+      "estimate": -0.015,
+      "actual": 0.06,
+      "surprise_pct": 500
     },
     {
       "quarter": "2026-03-31",
@@ -265,10 +265,10 @@
       "surprise_pct": 26.18
     },
     {
-      "quarter": "2026-06-30",
-      "estimate": -0.09,
-      "actual": 0.08,
-      "surprise_pct": 188.89
+      "quarter": "2026-09-30",
+      "estimate": -0.22,
+      "actual": -0.229,
+      "surprise_pct": -4.09
     }
   ],
   "insiders": [

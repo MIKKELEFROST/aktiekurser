@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T23:43:29.802Z",
+  "updated_at": "2026-11-03T21:59:22.784Z",
   "source": "Yahoo Finance",
   "symbol": "TAC",
   "summary": "TransAlta Corporation engages in the development, production, and sale of electric energy. It operates through Hydro, Wind and Solar, Gas, Energy Transition, and Energy Marketing segments. The Hydro segment holds interest of approximately 922 megawatts (MW) located in Alberta and Canada. The Wind and Solar segment has a net ownership interest of approximately 2,587 MW located in Alberta, Canada, the Unites States, and Western Australia, as well as battery storage facilities. The Gas segment has a net ownership interest of approximately 4834 MW located in Alberta, Canada, the Unites States, and Western Australia. The Energy Transition segment has a net ownership interest of approximately 671 MW located in the United States, as well as operates the Skookumchuck hydro facility in Centralia. The Energy Marketing segment is involved in the trading of electricity, natural gas, and environmental products. TransAlta Corporation was founded in 1909 and is headquartered in Calgary, Canada.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": 0.07,
+  "eps_estimate": -0.03,
   "analysts": {
     "strong_buy": 4,
     "buy": 5,
@@ -19,9 +19,9 @@
     "strong_sell": 1,
     "total": 11
   },
-  "target_mean": 13.229153,
-  "target_high": 16.445723,
-  "target_low": 10.012585,
+  "target_mean": 13.206396,
+  "target_high": 16.41743,
+  "target_low": 9.995361,
   "target_analysts": 2,
   "statements": [
     {
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 0,
-      "earnings": 0
-    },
-    {
       "q": "4Q2025",
       "revenue": 0,
       "earnings": 0
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 0,
       "earnings": 0
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 0,
+      "earnings": 0
     }
   ],
   "growth": {
-    "q0": 4.5,
-    "q1": 0.5,
+    "q0": 0.5,
+    "q1": null,
     "y0": 0.9868,
     "y1": 0.5894
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.457,
-    "enterprise_value": 9052573696,
-    "ev_ebitda": 10.663,
-    "ev_revenue": 3.995,
+    "enterprise_value": 8986150912,
+    "ev_ebitda": 10.584,
+    "ev_revenue": 3.966,
     "float_shares": 265733119,
     "short_shares": 15136628,
     "short_pct_float": 4.8,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-12-01",
   "dividend_date": null,
   "payout_ratio": 0.4068,
-  "inst_count": 258,
+  "inst_count": 257,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.075,
-      "actual": -0.02,
-      "surprise_pct": -126.67
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.07977,
@@ -269,6 +263,12 @@
       "estimate": 0.16,
       "actual": 0.18,
       "surprise_pct": 12.5
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.07,
+      "actual": 0.18,
+      "surprise_pct": 157.14
     }
   ],
   "insiders": [
@@ -327,21 +327,21 @@
       "date": "2026-08-04"
     },
     {
-      "name": "Fralick (Christopher D.)",
-      "role": "Senior Officer of Issuer",
-      "kind": "other",
-      "text": "Acquisition under a purchase/ownership plan at price 13.77 per share.",
-      "value": 2313,
-      "shares": 168,
-      "date": "2026-07-06"
-    },
-    {
       "name": "Cameron (Michelle Dawn)",
       "role": "Senior Officer of Issuer",
       "kind": "other",
       "text": "Acquisition under a purchase/ownership plan at price 13.77 per share.",
       "value": 840,
       "shares": 61,
+      "date": "2026-07-06"
+    },
+    {
+      "name": "Fralick (Christopher D.)",
+      "role": "Senior Officer of Issuer",
+      "kind": "other",
+      "text": "Acquisition under a purchase/ownership plan at price 13.77 per share.",
+      "value": 2313,
+      "shares": 168,
       "date": "2026-07-06"
     },
     {

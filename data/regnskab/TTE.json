@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T23:43:29.929Z",
+  "updated_at": "2026-11-03T21:59:22.920Z",
   "source": "Yahoo Finance",
   "symbol": "TTE",
   "summary": "TotalEnergies SE, an integrated energy company, produces and markets oil and biofuels, natural gas, biogas and low-carbon hydrogen, renewables, and electricity in France, the United States, Europe, Africa, and internationally. It operates through Exploration & Production, Integrated LNG, Integrated Power, Refining & Chemicals, and Marketing & Services segments. The Exploration & Production segment engages in the activities of exploration and production of oil and natural gas, as well as carbon storage. The Integrated LNG segment is involved in the upstream and midstream LNG activities, as well as biogas and synthetic methane activities, as well as gas trading. The Integrated Power segment engages in the generation, storage, electricity trading, and B2B-B2C distribution of gas and electricity. The Refining & Chemicals segment is involved in the industrial hub activities comprising the activities of refining, petrochemicals and specialty chemicals. This segment also includes the activities of oil supply, trading and marine shipping, as well as hydrogen activities. The Marketing & Services segment engages in the marketing activities in the field of petroleum products, as well as corresponding supply and logistics activities. The company was formerly known as TOTAL SE and changed its name to TotalEnergies SE in June 2021. TotalEnergies SE was incorporated in 1924 and is headquartered in Courbevoie, France.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 3.44,
+  "eps_estimate": 3.7925,
   "analysts": {
     "strong_buy": 0,
     "buy": 5,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.9884,
-    "q1": 0.2669,
-    "y0": 0.8161,
-    "y1": -0.0756
+    "q0": 1.1922001,
+    "q1": 0.3167,
+    "y0": 0.8407,
+    "y1": -0.082399994
   },
   "ratings": [
+    {
+      "date": "2026-11-03",
+      "firm": "Freedom Broker",
+      "from": "Sell",
+      "to": "Hold",
+      "action": "up"
+    },
     {
       "date": "2026-10-13",
       "firm": "TD Cowen",
@@ -140,13 +147,6 @@
       "from": "Buy",
       "to": "Sell",
       "action": "down"
-    },
-    {
-      "date": "2026-01-22",
-      "firm": "TD Cowen",
-      "from": "Hold",
-      "to": "Hold",
-      "action": "main"
     }
   ],
   "holders": [
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.044,
-    "enterprise_value": 239998959616,
-    "ev_ebitda": 4.937,
-    "ev_revenue": 1.119,
+    "enterprise_value": 234371923968,
+    "ev_ebitda": 4.821,
+    "ev_revenue": 1.093,
     "float_shares": 2028823140,
     "short_shares": 4930747,
     "short_pct_float": 0.22,
@@ -243,8 +243,8 @@
   },
   "ex_dividend": "2026-12-31",
   "dividend_date": null,
-  "payout_ratio": 0.39990002,
-  "inst_count": 1911,
+  "payout_ratio": 0.3993,
+  "inst_count": 1916,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -263,18 +263,15 @@
       "estimate": 2.64,
       "actual": 2.68,
       "surprise_pct": 1.52
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 3.606,
+      "actual": 4.03,
+      "surprise_pct": 11.76
     }
   ],
   "insiders": [
-    {
-      "name": "Hamelle (Aurelien)",
-      "role": null,
-      "kind": "other",
-      "text": "Bought at price 62.72 per share.",
-      "value": 615963,
-      "shares": 9821,
-      "date": "2025-03-17"
-    },
     {
       "name": "Pinatel (Bernard)",
       "role": null,
@@ -282,6 +279,15 @@
       "text": "Bought at price 62.72 per share.",
       "value": 1713984,
       "shares": 27328,
+      "date": "2025-03-17"
+    },
+    {
+      "name": "Hamelle (Aurelien)",
+      "role": null,
+      "kind": "other",
+      "text": "Bought at price 62.72 per share.",
+      "value": 615963,
+      "shares": 9821,
       "date": "2025-03-17"
     }
   ],

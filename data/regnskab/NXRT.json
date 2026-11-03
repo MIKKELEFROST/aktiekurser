@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T23:43:29.127Z",
+  "updated_at": "2026-11-03T21:59:22.130Z",
   "source": "Yahoo Finance",
   "symbol": "NXRT",
   "summary": "NexPoint Residential Trust, Inc. is a publicly traded real estate investment trust (REIT), primarily focused on acquiring, owning and operating well-located middle-income multifamily properties with value-add potential in large cities and suburban submarkets of large cities, primarily in the Southeastern and Southwestern United States. NXRT is externally advised by NexPoint Real Estate Advisors, L.P., an affiliate of NexPoint Advisors, L.P., an SEC-registered investment advisor, which has extensive real estate experience. NexPoint Residential Trust, Inc. is incorporated in Maryland.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": -0.415,
+  "eps_estimate": -0.54,
   "analysts": {
     "strong_buy": 1,
     "buy": 0,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 62829000,
-      "earnings": -7790000
-    },
-    {
       "q": "4Q2025",
       "revenue": 62100000,
       "earnings": -10300000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 64609000,
       "earnings": -8611000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 64500000,
+      "earnings": -11486000
     }
   ],
   "growth": {
-    "q0": -0.3505,
-    "q1": -0.592,
+    "q0": -0.592,
+    "q1": null,
     "y0": -0.2375,
     "y1": -0.4351
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.183,
-    "enterprise_value": 2034897152,
-    "ev_ebitda": 16.401,
-    "ev_revenue": 8.031,
+    "enterprise_value": 2035152640,
+    "ev_ebitda": 16.403,
+    "ev_revenue": 8.032,
     "float_shares": 21731393,
     "short_shares": 1722091,
     "short_pct_float": 9.84,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-12-15",
   "dividend_date": null,
   "payout_ratio": 47.4315,
-  "inst_count": 307,
+  "inst_count": 303,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.38,
-      "actual": -0.3073,
-      "surprise_pct": 19.13
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.39,
@@ -269,6 +263,12 @@
       "estimate": -0.37,
       "actual": -0.33393,
       "surprise_pct": 9.75
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.415,
+      "actual": -0.4451,
+      "surprise_pct": -7.25
     }
   ],
   "insiders": [
@@ -280,6 +280,24 @@
       "value": 201049,
       "shares": 10780,
       "date": "2026-10-05"
+    },
+    {
+      "name": "LAFFER ARTHUR BETZ",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 3429,
+      "date": "2026-05-22"
+    },
+    {
+      "name": "KAVANAUGH SCOTT F.",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 3429,
+      "date": "2026-05-22"
     },
     {
       "name": "DONDERO JAMES DAVID",
@@ -337,24 +355,6 @@
     },
     {
       "name": "SWAIN CAROL",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 3429,
-      "date": "2026-05-22"
-    },
-    {
-      "name": "RICHARDS PAUL",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 2143,
-      "date": "2026-05-22"
-    },
-    {
-      "name": "LAFFER ARTHUR BETZ",
       "role": "Director",
       "kind": "other",
       "text": null,

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T23:43:27.028Z",
+  "updated_at": "2026-11-03T21:59:20.064Z",
   "source": "Yahoo Finance",
   "symbol": "ADM",
   "summary": "Archer-Daniels-Midland Company provides human and animal nutrition ingredients and solutions in the United States, Switzerland, the Cayman Islands, Brazil, Mexico, Canada, the United Kingdom, and internationally. It operates in three segments: Ag Services and Oilseeds; Carbohydrate Solutions; and Nutrition. The company engages in the origination, merchandising, transportation, and storage of agricultural raw materials, as well as the crushing and processing of oilseeds, including soybeans and soft seeds, such as cottonseed, sunflower seed, canola, rapeseed, and flaxseed; produces and markets vegetable oils and oilseed protein meals used by food, feed, energy, and industrial customers; sale of crude and partially refined vegetable oils; supplies peanuts and peanut-derived ingredients; and manufactures cotton cellulose pulp. It is also involved in the grain sourcing, handling, and multimodal transportation network supporting import, export, and distribution activities; structured trade finance activities; corn and wheat wet and dry milling and related processing activities; production of distillers' grains, corn gluten feed, and corn gluten meal for use as animal feed ingredients; and carbon capture and sequestration and other emissions-reduction initiatives. In addition, the company engages in the creation, manufacturing, sale, and distribution of an array of ingredients and solutions comprising plant-based proteins, flavors and colors derived from nature, flavor systems, emulsifiers, soluble fiber, polyols, hydrocolloids, probiotics, prebiotics, postbiotics, enzymes, botanical extracts, and other specialty food and feed ingredients and systems. Further, it is involved in the derivatives and commodity exchanges and clearing houses; and insurance coverage for certain property, casualty, marine, medical, and other miscellaneous risks. The company was founded in 1902 and is based in Chicago, Illinois.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": 1.60297,
+  "eps_estimate": 1.3815,
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 20372000000,
-      "earnings": 108000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 18556000000,
       "earnings": 456000000
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 22681000000,
       "earnings": 908000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 22335000000,
+      "earnings": 821000000
     }
   ],
   "growth": {
-    "q0": 0.7424,
-    "q1": 0.5879,
-    "y0": 0.6153,
-    "y1": 0.024600001
+    "q0": 0.5879,
+    "q1": 0.9156,
+    "y0": 0.6204,
+    "y1": 0.0214
   },
   "ratings": [
     {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.615,
-    "enterprise_value": 45615509504,
-    "ev_ebitda": 15.231,
-    "ev_revenue": 0.556,
+    "enterprise_value": 45066076160,
+    "ev_ebitda": 15.047,
+    "ev_revenue": 0.549,
     "float_shares": 477838829,
     "short_shares": 12179938,
     "short_pct_float": 3.31,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-08-19",
   "dividend_date": null,
   "payout_ratio": 0.56439996,
-  "inst_count": 1607,
+  "inst_count": 1609,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.85258,
-      "actual": 0.92,
-      "surprise_pct": 7.91
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.79691,
@@ -269,6 +263,12 @@
       "estimate": 1.43722,
       "actual": 1.84,
       "surprise_pct": 28.02
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.60297,
+      "actual": 1.77,
+      "surprise_pct": 10.42
     }
   ],
   "insiders": [
@@ -282,21 +282,21 @@
       "date": "2026-08-17"
     },
     {
-      "name": "PINNER IAN R",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 71.53 per share.",
-      "value": 2439602,
-      "shares": 34106,
-      "date": "2026-03-13"
-    },
-    {
       "name": "CUDDY CHRISTOPHER M",
       "role": "Officer",
       "kind": "sell",
       "text": "Sale at price 73.50 per share.",
       "value": 2572500,
       "shares": 35000,
+      "date": "2026-03-13"
+    },
+    {
+      "name": "PINNER IAN R",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 71.53 per share.",
+      "value": 2439602,
+      "shares": 34106,
       "date": "2026-03-13"
     },
     {

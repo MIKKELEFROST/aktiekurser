@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T23:43:27.310Z",
+  "updated_at": "2026-11-03T21:59:20.345Z",
   "source": "Yahoo Finance",
   "symbol": "BALL",
   "summary": "Ball Corporation supplies aluminum packaging products for the beverage, personal care, and household products industries in the United States, Brazil, and internationally. The company manufactures and sells aluminum beverage containers to fillers of carbonated soft drinks, beer, energy drinks, and other beverages. It manufactures and sells extruded aluminum aerosol containers, recloseable aluminum bottles, aluminum cups, and aluminum slugs. The company was founded in 1880 and is headquartered in Westminster, Colorado.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": 1.069,
+  "eps_estimate": 0.9754,
   "analysts": {
     "strong_buy": 3,
     "buy": 8,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 3379000000,
-      "earnings": 321000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 3347000000,
       "earnings": 200000000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 3997000000,
       "earnings": 221000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 4188000000,
+      "earnings": -94000000
     }
   ],
   "growth": {
-    "q0": 0.048,
-    "q1": 0.0719,
+    "q0": 0.0719,
+    "q1": 0.0619,
     "y0": 0.1254,
     "y1": 0.1245
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.95,
-    "enterprise_value": 24696832000,
-    "ev_ebitda": 11.896,
-    "ev_revenue": 1.724,
+    "enterprise_value": 25120358400,
+    "ev_ebitda": 12.1,
+    "ev_revenue": 1.753,
     "float_shares": 263678955,
     "short_shares": 8918783,
     "short_pct_float": 3.92,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-12-01",
   "dividend_date": null,
   "payout_ratio": 0.22790001,
-  "inst_count": 1148,
+  "inst_count": 1151,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.02169,
-      "actual": 1.02,
-      "surprise_pct": -0.17
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.89649,
@@ -269,6 +263,12 @@
       "estimate": 0.98781,
       "actual": 1.03,
       "surprise_pct": 4.27
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.069,
+      "actual": 1.1,
+      "surprise_pct": 2.9
     }
   ],
   "insiders": [

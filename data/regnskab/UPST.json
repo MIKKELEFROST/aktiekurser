@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T23:43:29.992Z",
+  "updated_at": "2026-11-03T21:59:22.982Z",
   "source": "Yahoo Finance",
   "symbol": "UPST",
   "summary": "Upstart Holdings, Inc., together with its subsidiaries, operates a cloud-based artificial intelligence (AI) lending platform in the United States. The company operates through three segments: Personal Lending, Auto Lending, and Other. Its platform includes unsecured personal loans, small dollar loans, auto refinance, auto retail loans, and auto secured personal loan, and home equity lines of credit. Upstart Holdings, Inc. was founded in 2012 and is headquartered in San Mateo, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": 0.63535,
+  "eps_estimate": 0.73362,
   "analysts": {
     "strong_buy": 2,
     "buy": 6,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 277105000,
-      "earnings": 31805000
-    },
-    {
       "q": "4Q2025",
       "revenue": 296090000,
       "earnings": 18636000
@@ -69,15 +64,34 @@
       "q": "2Q2026",
       "revenue": 364708000,
       "earnings": 16539000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 370522000,
+      "earnings": 36578000
     }
   ],
   "growth": {
-    "q0": 0.2218,
-    "q1": 0.46310002,
-    "y0": 0.19590001,
-    "y1": 0.5572
+    "q0": 0.4791,
+    "q1": 1.1428,
+    "y0": 0.2147,
+    "y1": 0.5596
   },
   "ratings": [
+    {
+      "date": "2026-11-03",
+      "firm": "BTIG",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-03",
+      "firm": "Needham",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-15",
       "firm": "Citizens",
@@ -130,20 +144,6 @@
     {
       "date": "2026-07-22",
       "firm": "Citigroup",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-09",
-      "firm": "Goldman Sachs",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-07",
-      "firm": "Needham",
       "from": "Buy",
       "to": "Buy",
       "action": "main"
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 2.433,
-    "enterprise_value": 3839906304,
-    "ev_ebitda": 33.375,
-    "ev_revenue": 2.986,
+    "enterprise_value": 3673500928,
+    "ev_ebitda": 31.928,
+    "ev_revenue": 2.857,
     "float_shares": 83666838,
     "short_shares": 26885428,
     "short_pct_float": 31.6,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 464,
+  "inst_count": 468,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.42133,
-      "actual": 0.52,
-      "surprise_pct": 23.42
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.46106,
@@ -269,6 +263,12 @@
       "estimate": 0.55375,
       "actual": 0.5689,
       "surprise_pct": 2.74
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.64915,
+      "actual": 0.6517,
+      "surprise_pct": 0.39
     }
   ],
   "insiders": [
@@ -318,21 +318,21 @@
       "date": "2026-08-20"
     },
     {
-      "name": "DATTA SANJAY",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 28.09 - 31.46 per share.",
-      "value": 565931,
-      "shares": 18945,
-      "date": "2026-08-20"
-    },
-    {
       "name": "MIRGORODSKAYA NATALIA",
       "role": "Officer",
       "kind": "sell",
       "text": "Sale at price 28.09 per share.",
       "value": 16461,
       "shares": 586,
+      "date": "2026-08-20"
+    },
+    {
+      "name": "DATTA SANJAY",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 28.09 - 31.46 per share.",
+      "value": 565931,
+      "shares": 18945,
       "date": "2026-08-20"
     },
     {

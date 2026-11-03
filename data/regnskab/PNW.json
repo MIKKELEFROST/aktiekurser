@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T23:43:29.332Z",
+  "updated_at": "2026-11-03T21:59:22.333Z",
   "source": "Yahoo Finance",
   "symbol": "PNW",
   "summary": "Pinnacle West Capital Corporation, through its subsidiary, provides retail and wholesale electric services in the state of Arizona. The company engages in the generation, transmission, and distribution of electricity using nuclear, gas, oil, coal, and solar generating facilities. Its transmission facilities include overhead lines and underground lines; and distribution facilities consist of overhead lines and underground primary cables. The company also owns and maintains substations, including transmission and distribution yards; and owns energy storage facilities. Pinnacle West Capital Corporation was incorporated in 1985 and is headquartered in Phoenix, Arizona.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": 3.33958,
+  "eps_estimate": -0.16328,
   "analysts": {
     "strong_buy": 1,
     "buy": 5,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 1820741000,
-      "earnings": 413208000
-    },
-    {
       "q": "4Q2025",
       "revenue": 1128167000,
       "earnings": 15403000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 1455749000,
       "earnings": 178574000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1972746000,
+      "earnings": 434240000
     }
   ],
   "growth": {
-    "q0": -0.0149,
-    "q1": -2.256,
+    "q0": -2.256,
+    "q1": -0.2801,
     "y0": -0.044099998,
     "y1": 0.1541
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.473,
-    "enterprise_value": 29417345024,
-    "ev_ebitda": 13.688,
-    "ev_revenue": 5.296,
+    "enterprise_value": 29377351680,
+    "ev_ebitda": 13.67,
+    "ev_revenue": 5.289,
     "float_shares": 120530649,
     "short_shares": 12488562,
     "short_pct_float": 13.39,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-11-02",
   "dividend_date": null,
   "payout_ratio": 0.6958,
-  "inst_count": 952,
+  "inst_count": 954,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 3.09096,
-      "actual": 3.39,
-      "surprise_pct": 9.67
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.04959,
@@ -269,6 +263,12 @@
       "estimate": 1.46908,
       "actual": 1.43,
       "surprise_pct": -2.66
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 3.36143,
+      "actual": 3.49,
+      "surprise_pct": 3.82
     }
   ],
   "insiders": [
@@ -364,10 +364,6 @@
     }
   ],
   "dividends": [
-    {
-      "date": "2016-10-28",
-      "amount": 0.655
-    },
     {
       "date": "2017-01-30",
       "amount": 0.655
@@ -523,6 +519,10 @@
     {
       "date": "2026-08-03",
       "amount": 0.91
+    },
+    {
+      "date": "2026-11-02",
+      "amount": 0.925
     }
   ],
   "splits": []

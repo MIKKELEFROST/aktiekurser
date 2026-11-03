@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T23:43:27.893Z",
+  "updated_at": "2026-11-03T21:59:20.953Z",
   "source": "Yahoo Finance",
   "symbol": "ECHO",
   "summary": "EchoStar Corporation provides pay-tv services in the United States, Mexico, Canada, South and Central America, Asia, Africa, Australia, Europe, India, and the Middle East. The Pay-TV segment offers a direct broadcast and fixed satellite, owned and leased satellites, leased fiber optic networks, in-home services, and call center operation services; digital broadcast operations, including satellite uplinking/downlinking, transmission and, other services to third-party pay-TV providers; multichannel, live-linear and on-demand streaming over-the-top Internet-based domestic, international, Latino, and Freestream video programming services; and receiver systems. Its Wireless segment provides wireless communication services and products; and a range of wireless devices. The Broadband and Satellite Services offers broadband satellite technologies, and internet products and services to consumer customers, including home and small to medium-sized businesses; managed services, equipment, hardware, satellite services, and communications solutions to government and enterprise customers, as well as to the unserved and underserved consumer, enterprise, aeronautical, and government markets; and integrated multi-transport solutions that enable airline and airline service providers to deliver in-flight network connectivity. This segment also designs, provides, and installs gateway and terminal equipment to customers for other satellite systems; and designs, develops, constructs, and provides telecommunication networks comprising satellite ground segment systems and terminals to mobile system operators and enterprise customers. Its Other segment consists of 5G network and 5G network deployment operations. The company sells its products and services under the Boost Mobile, DISH, Gen Mobile, Hughes, Hughesnet, and Sling brands. The company was formerly known as EchoStar Holding Corporation. EchoStar Corporation was founded in 1980 and is headquartered in Englewood, Colorado.",
@@ -7,10 +7,10 @@
   "website": "https://www.echostar.com",
   "employees": 12100,
   "ceo": "Mr. Charles William Ergen",
-  "next_earnings": "2026-11-05",
-  "earnings_estimated": true,
-  "earnings_call": "2026-08-03",
-  "eps_estimate": -0.1,
+  "next_earnings": "2026-11-03",
+  "earnings_estimated": false,
+  "earnings_call": null,
+  "eps_estimate": 0.17,
   "analysts": {
     "strong_buy": 3,
     "buy": 6,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 3614258000,
-      "earnings": -12781196000
-    },
-    {
       "q": "4Q2025",
       "revenue": 3796014000,
       "earnings": -1207183000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 3576164000,
       "earnings": 8462372000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1127611000,
+      "earnings": 2782249000
     }
   ],
   "growth": {
-    "q0": 0.9161,
-    "q1": 1.4580001,
+    "q0": 1.4580001,
+    "q1": 1.1975,
     "y0": null,
     "y1": null
   },
@@ -132,13 +132,6 @@
       "firm": "Citigroup",
       "from": "Neutral",
       "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-01-07",
-      "firm": "TD Cowen",
-      "from": "Buy",
-      "to": "Buy",
       "action": "main"
     }
   ],
@@ -224,9 +217,9 @@
   },
   "extras": {
     "beta": 1.093,
-    "enterprise_value": 45285507072,
-    "ev_ebitda": 22.767,
-    "ev_revenue": 3.09,
+    "enterprise_value": 45660241920,
+    "ev_ebitda": 22.956,
+    "ev_revenue": 3.116,
     "float_shares": 137678071,
     "short_shares": 24540543,
     "short_pct_float": 21.61,
@@ -237,14 +230,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 944,
+  "inst_count": 945,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -1.13459,
-      "actual": -44.37,
-      "surprise_pct": -3810.66
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.75191,
@@ -262,6 +249,12 @@
       "estimate": -0.08798,
       "actual": 24.12,
       "surprise_pct": 27515.32
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.24313,
+      "actual": 7.97,
+      "surprise_pct": 3178.08
     }
   ],
   "insiders": [

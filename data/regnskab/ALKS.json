@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T23:43:27.115Z",
+  "updated_at": "2026-11-03T21:59:20.133Z",
   "source": "Yahoo Finance",
   "symbol": "ALKS",
   "summary": "Alkermes plc, a biopharmaceutical company, engages in the research, development, and commercialization of pharmaceutical products to address unmet medical needs of patients in therapeutic areas in the United States, Ireland, and internationally. The company has a portfolio of proprietary commercial products for the treatment of opioid dependence, alcohol dependence, schizophrenia, bipolar I, and a pipeline of clinical and preclinical product candidates in development for neurological disorders. Its marketed products include ARISTADA, an intramuscular injectable suspension for the treatment of schizophrenia; ARISTADA INITIO for the treatment of schizophrenia in adults; VIVITROL for the treatment of alcohol and prevention of opioid dependence; LYBALVI, an oral atypical antipsychotic drug candidate for the treatment of adults with schizophrenia and bipolar I disorder; and LUMRYZ, an extended-release oral suspension product for the treatment of cataplexy or EDS in pediatric patients. The company also offers proprietary technology platforms to third parties to enable them to develop, commercialize, and manufacture products. It has collaboration agreements primarily with Janssen Pharmaceutica N.V., Janssen Pharmaceutica Inc, and Janssen Pharmaceutica International. Alkermes plc was founded in 1987 and is headquartered in Dublin, Ireland.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": 0.24694,
+  "eps_estimate": 0.08897,
   "analysts": {
     "strong_buy": 3,
     "buy": 12,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 394185000,
-      "earnings": 82761000
-    },
-    {
       "q": "4Q2025",
       "revenue": 384547000,
       "earnings": 49341000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 496009000,
       "earnings": 501000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 480132000,
+      "earnings": 16287000
     }
   ],
   "growth": {
-    "q0": -0.6206,
-    "q1": -0.8157,
+    "q0": -0.8157,
+    "q1": null,
     "y0": -0.39240003,
     "y1": 0.4184
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.234,
-    "enterprise_value": 8522373632,
-    "ev_ebitda": 29.91,
-    "ev_revenue": 5.11,
+    "enterprise_value": 8446880256,
+    "ev_ebitda": 29.645,
+    "ev_revenue": 5.065,
     "float_shares": 155191092,
     "short_shares": 19048577,
     "short_pct_float": 15.73,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 570,
+  "inst_count": 571,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.38614,
-      "actual": 0.6508,
-      "surprise_pct": 68.54
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.44812,
@@ -269,6 +263,12 @@
       "estimate": 0.28906,
       "actual": 0.6976,
       "surprise_pct": 141.33
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.24694,
+      "actual": 0.5701,
+      "surprise_pct": 130.87
     }
   ],
   "insiders": [
@@ -309,15 +309,6 @@
       "date": "2026-08-17"
     },
     {
-      "name": "HOPKINSON CRAIG C",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 19.34 - 24.59 per share.",
-      "value": 122404,
-      "shares": 5000,
-      "date": "2026-08-03"
-    },
-    {
       "name": "SNYDERMAN NANCY LYNN",
       "role": "Director",
       "kind": "other",
@@ -327,12 +318,12 @@
       "date": "2026-08-03"
     },
     {
-      "name": "SNYDERMAN NANCY LYNN",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 50.35 per share.",
-      "value": 2239076,
-      "shares": 44472,
+      "name": "HOPKINSON CRAIG C",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 19.34 - 24.59 per share.",
+      "value": 122404,
+      "shares": 5000,
       "date": "2026-08-03"
     },
     {
@@ -351,6 +342,15 @@
       "text": "Sale at price 48.58 per share.",
       "value": 437220,
       "shares": 9000,
+      "date": "2026-08-03"
+    },
+    {
+      "name": "SNYDERMAN NANCY LYNN",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 50.35 per share.",
+      "value": 2239076,
+      "shares": 44472,
       "date": "2026-08-03"
     },
     {

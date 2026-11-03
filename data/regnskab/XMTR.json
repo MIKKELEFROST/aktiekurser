@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T23:43:30.168Z",
+  "updated_at": "2026-11-03T21:59:23.164Z",
   "source": "Yahoo Finance",
   "symbol": "XMTR",
   "summary": "Xometry, Inc. operates an artificial intelligence (AI) powered online manufacturing marketplace in the United States and internationally. The company's marketplace uses AI to assist buyers to source custom-manufactured parts and assemblies and attain instant pricing and lead times. It operates Xometry marketplace, an AI powered online marketplace that connects buyers with suppliers of manufacturing services; Xometry instant quoting engine, which prices transactions based on volume, manufacturing process, material, and location; and Thomasnet, an industrial sourcing platform that features an online directory of industrial suppliers, products, and services, as well as digital marketing services and insights to manufacturers and industrial services providers. The company also provides cloud-based systems, such as Workcenter, a financial service product that facilitates payments and a cloud-based manufacturing execution system; and Teamspace, a cloud-based solution within the Xometry platform that enables customers to collaborate with other users on projects and custom part orders. In addition, it offers computer numerical control (CNC) machining, injection molding, 3D printing, sheet forming and cutting, die casting, urethane casting, tube cutting, and tube bending, as well as finishing, rapid prototyping, and production services. It serves the aerospace, industrial, medical devices, automotive, consumer goods, defense, government, energy, education, and robotics industries. The company was formerly known as NextLine Manufacturing Corp. and changed its name to Xometry, Inc. in June 2015. Xometry, Inc. was incorporated in 2013 and is headquartered in North Bethesda, Maryland.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": 0.18644,
+  "eps_estimate": 0.23865,
   "analysts": {
     "strong_buy": 3,
     "buy": 6,
@@ -51,16 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 162547000,
-      "earnings": -26434000
-    },
-    {
-      "q": "3Q2025",
-      "revenue": 180715000,
-      "earnings": -11597000
-    },
-    {
       "q": "4Q2025",
       "revenue": 192398000,
       "earnings": -8634000
@@ -69,11 +59,21 @@
       "q": "1Q2026",
       "revenue": 205138000,
       "earnings": -5267000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 229280000,
+      "earnings": -5313000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 252439000,
+      "earnings": 1935000
     }
   ],
   "growth": {
-    "q0": 0.6949,
-    "q1": 0.4916,
+    "q0": 0.4916,
+    "q1": 1.0285,
     "y0": 0.8539,
     "y1": 0.8139
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.319,
-    "enterprise_value": 5192605696,
-    "ev_ebitda": -496.567,
-    "ev_revenue": 6.43,
+    "enterprise_value": 5298080768,
+    "ev_ebitda": -506.654,
+    "ev_revenue": 6.561,
     "float_shares": 52124325,
     "short_shares": 3805177,
     "short_pct_float": 8.01,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": null,
-  "inst_count": 422,
+  "inst_count": 424,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.10229,
-      "actual": 0.11,
-      "surprise_pct": 7.54
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.11526,
@@ -269,6 +263,12 @@
       "estimate": 0.16312,
       "actual": 0.16,
       "surprise_pct": -1.91
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.18644,
+      "actual": 0.28,
+      "surprise_pct": 50.18
     }
   ],
   "insiders": [
@@ -302,18 +302,18 @@
     {
       "name": "WEYMOUTH KATHARINE B",
       "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 94.30 - 95.23 per share.",
-      "value": 947668,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 4.46 per share.",
+      "value": 44600,
       "shares": 10000,
       "date": "2026-08-31"
     },
     {
       "name": "WEYMOUTH KATHARINE B",
       "role": "Director",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 4.46 per share.",
-      "value": 44600,
+      "kind": "sell",
+      "text": "Sale at price 94.30 - 95.23 per share.",
+      "value": 947668,
       "shares": 10000,
       "date": "2026-08-31"
     },
@@ -338,18 +338,18 @@
     {
       "name": "ROLLINS EMILY",
       "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 83.61 - 85.47 per share.",
-      "value": 421528,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 12.32 per share.",
+      "value": 61600,
       "shares": 5000,
       "date": "2026-08-19"
     },
     {
       "name": "ROLLINS EMILY",
       "role": "Director",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 12.32 per share.",
-      "value": 61600,
+      "kind": "sell",
+      "text": "Sale at price 83.61 - 85.47 per share.",
+      "value": 421528,
       "shares": 5000,
       "date": "2026-08-19"
     },

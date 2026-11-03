@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T23:43:27.866Z",
+  "updated_at": "2026-11-03T21:59:20.923Z",
   "source": "Yahoo Finance",
   "symbol": "DT",
   "summary": "Dynatrace, Inc. engages in the advancement of observability for digital businesses, which transforms the complexity of modern digital ecosystems in North America, Europe, the Middle East, Africa, the Asia Pacific, and Latin America. The company operates Dynatrace, an AI-powered observability platform, which provides solutions, including infrastructure, application, threat, and AI observability; digital experience; log analytics; application security; software delivery; and business analytics. It also offers implementation, consulting, and training services. The company markets its products through a combination of global direct sales team and a network of partners, including global system integrators (GSIs), cloud providers, resellers and technology alliance partners. It serves customers in various industries, including banking, financial services, government, insurance, retail and wholesale, transportation, and software. Dynatrace, Inc. was founded in 2005 and is headquartered in Boston, Massachusetts.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": 0.49116,
+  "eps_estimate": 0.47763,
   "analysts": {
     "strong_buy": 7,
     "buy": 21,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 493849000,
-      "earnings": 57243000
-    },
-    {
       "q": "4Q2025",
       "revenue": 515473000,
       "earnings": 40055000
@@ -69,15 +64,34 @@
       "q": "2Q2026",
       "revenue": 554548000,
       "earnings": 36651000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 579918000,
+      "earnings": 67764000
     }
   ],
   "growth": {
-    "q0": 0.1163,
-    "q1": 0.0855,
-    "y0": 0.1262,
-    "y1": 0.18090001
+    "q0": 0.0855,
+    "q1": 0.1565,
+    "y0": 0.1286,
+    "y1": 0.1754
   },
   "ratings": [
+    {
+      "date": "2026-11-03",
+      "firm": "Needham",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-03",
+      "firm": "BTIG",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-30",
       "firm": "Cantor Fitzgerald",
@@ -132,20 +146,6 @@
       "firm": "BTIG",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-10-13",
-      "firm": "Barclays",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-10-12",
-      "firm": "RBC Capital",
-      "from": "Outperform",
-      "to": "Outperform",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.738,
-    "enterprise_value": 15722941440,
-    "ev_ebitda": 53.954,
-    "ev_revenue": 7.503,
+    "enterprise_value": 14983096320,
+    "ev_ebitda": 51.415,
+    "ev_revenue": 7.15,
     "float_shares": 287109164,
     "short_shares": 17918398,
     "short_pct_float": 7,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 864,
+  "inst_count": 877,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.4092,
-      "actual": 0.44,
-      "surprise_pct": 7.53
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.41053,
@@ -269,6 +263,12 @@
       "estimate": 0.44378,
       "actual": 0.48,
       "surprise_pct": 8.16
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.49116,
+      "actual": 0.54,
+      "surprise_pct": 9.94
     }
   ],
   "insiders": [
@@ -300,24 +300,6 @@
       "date": "2026-09-15"
     },
     {
-      "name": "BENSON JAMES M",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 17086,
-      "date": "2026-09-04"
-    },
-    {
-      "name": "GREIFENEDER BERND",
-      "role": "Chief Technology Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 13909,
-      "date": "2026-09-04"
-    },
-    {
       "name": "MCCONNELL RICK M",
       "role": "Chief Executive Officer",
       "kind": "other",
@@ -333,6 +315,24 @@
       "text": null,
       "value": null,
       "shares": 506,
+      "date": "2026-09-04"
+    },
+    {
+      "name": "BENSON JAMES M",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 17086,
+      "date": "2026-09-04"
+    },
+    {
+      "name": "GREIFENEDER BERND",
+      "role": "Chief Technology Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 13909,
       "date": "2026-09-04"
     },
     {

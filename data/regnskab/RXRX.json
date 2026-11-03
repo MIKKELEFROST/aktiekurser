@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T23:43:29.501Z",
+  "updated_at": "2026-11-03T21:59:22.519Z",
   "source": "Yahoo Finance",
   "symbol": "RXRX",
   "summary": "Recursion Pharmaceuticals, Inc., a clinical-stage biotechnology company, engages in the decoding biology and chemistry by integrating technological innovations across biology, chemistry, automation, data science, and engineering to industrialize drug discovery in the United States and the United Kingdom. The company develops REC-4881, which is in Phase 1b/2 clinical trial to treat familial adenomatous polyposis; REC-617, which is in Phase 1/2 clinical trial to treat advanced solid tumors; REC-1245, which is in Phase 1/2 clinical trial to treat biomarker-enriched solid tumors and lymphoma; REC-3565 that is in Phase 1/2 for the treatment of relapsed or refractory B-cell malignancies; and REC-4539, a reversible, CNS penetrant, orally bioavailable, and potential best-in-class inhibitor of LSD1 for the treatment of solid tumors and hematology oncology. Its preclinical stage product includes REC-7735 for the treatment of HR+ breast cancer; and REC-102 for the treatment of hypophosphatasia. The company has collaboration and agreement with Roche & Genentech; Sanofi; Bayer AG; Tempus; and Takeda Pharmaceutical Company Limited. Recursion Pharmaceuticals, Inc. was incorporated in 2013 and is headquartered in Salt Lake City, Utah.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-02",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": -0.22884,
+  "eps_estimate": -0.22311,
   "analysts": {
     "strong_buy": 2,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 5175000,
-      "earnings": -162253000
-    },
-    {
       "q": "4Q2025",
       "revenue": 35537000,
       "earnings": -108124000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 7670000,
       "earnings": -131005000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 18552000,
+      "earnings": -119036000
     }
   ],
   "growth": {
-    "q0": 0.3643,
-    "q1": -0.0624,
+    "q0": -0.0624,
+    "q1": -0.0318,
     "y0": 0.35720003,
     "y1": 0.0596
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.15,
-    "enterprise_value": 1678384000,
-    "ev_ebitda": -3.559,
-    "ev_revenue": 30.596,
+    "enterprise_value": 1571315456,
+    "ev_ebitda": -3.332,
+    "ev_revenue": 28.644,
     "float_shares": 520240167,
     "short_shares": 161926247,
     "short_pct_float": 31.67,
@@ -253,34 +253,19 @@
       "surprise_pct": 5.68
     },
     {
-      "quarter": "2025-12-31",
-      "estimate": -0.31505,
-      "actual": -0.21,
-      "surprise_pct": 33.34
-    },
-    {
       "quarter": "2026-03-31",
       "estimate": -0.25714,
       "actual": -0.22,
       "surprise_pct": 14.44
     },
     {
-      "quarter": "2026-06-30",
-      "estimate": -0.234,
-      "actual": -0.25,
-      "surprise_pct": -6.84
+      "quarter": "2026-09-30",
+      "estimate": -0.22884,
+      "actual": -0.22,
+      "surprise_pct": 3.86
     }
   ],
   "insiders": [
-    {
-      "name": "HERSHBERG ROBERT M",
-      "role": "Director",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 2.22 per share.",
-      "value": 55500,
-      "shares": 25000,
-      "date": "2026-10-06"
-    },
     {
       "name": "HERSHBERG ROBERT M",
       "role": "Director",
@@ -297,6 +282,15 @@
       "text": "Sale at price 4.84 per share.",
       "value": 242000,
       "shares": 50000,
+      "date": "2026-10-06"
+    },
+    {
+      "name": "HERSHBERG ROBERT M",
+      "role": "Director",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 2.22 per share.",
+      "value": 55500,
+      "shares": 25000,
       "date": "2026-10-06"
     },
     {

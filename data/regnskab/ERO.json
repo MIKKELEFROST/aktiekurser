@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T23:43:27.994Z",
+  "updated_at": "2026-11-03T21:59:21.047Z",
   "source": "Yahoo Finance",
   "symbol": "ERO",
   "summary": "Ero Copper Corp. engages in the exploration, development, and production of mining projects in Brazil. Its flagship asset includes Caraíba operations that comprise the production and sale of copper concentrates located in Bahia State, Brazil, as well as gold and silver produced and sold as by-products. The company was incorporated in 2016 and is headquartered in Vancouver, Canada.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-02",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": 1.00592,
+  "eps_estimate": 1.24092,
   "analysts": {
     "strong_buy": 3,
     "buy": 4,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 249390450,
-      "earnings": 50694840
-    },
-    {
       "q": "4Q2025",
       "revenue": 439077450,
       "earnings": 0
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 398543110,
       "earnings": 125524960
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 486293990,
+      "earnings": 0
     }
   ],
   "growth": {
-    "q0": 2.7256,
-    "q1": 0.2333,
-    "y0": 0.8875,
-    "y1": 0.2316
+    "q0": 0.19319999,
+    "q1": 0.0922,
+    "y0": 1.0696,
+    "y1": 0.12149999
   },
   "ratings": [
     {
@@ -186,6 +186,13 @@
       "date": "2026-06-30"
     },
     {
+      "name": "AIM Counselor Series TRT -Invesco Discovery Fd.",
+      "kind": "fond",
+      "pct": 2.03,
+      "shares": 2117546,
+      "date": "2026-08-31"
+    },
+    {
       "name": "Cape Ann Asset Management Ltd",
       "kind": "institution",
       "pct": 1.97,
@@ -198,13 +205,6 @@
       "pct": 1.94,
       "shares": 2028703,
       "date": "2026-09-30"
-    },
-    {
-      "name": "AIM Counselor Series TRT -Invesco Discovery Fd.",
-      "kind": "fond",
-      "pct": 1.78,
-      "shares": 1853528,
-      "date": "2026-05-31"
     }
   ],
   "insider_net": {
@@ -217,9 +217,9 @@
   },
   "extras": {
     "beta": 1.624,
-    "enterprise_value": 3506253568,
-    "ev_ebitda": 6.782,
-    "ev_revenue": 3.356,
+    "enterprise_value": 3517726720,
+    "ev_ebitda": 6.804,
+    "ev_revenue": 3.367,
     "float_shares": 101973555,
     "short_shares": 6617142,
     "short_pct_float": null,
@@ -239,22 +239,16 @@
       "surprise_pct": -16.71
     },
     {
-      "quarter": "2025-12-31",
-      "estimate": 1.05432,
-      "actual": 1.04,
-      "surprise_pct": -1.36
-    },
-    {
       "quarter": "2026-03-31",
       "estimate": 0.52283,
       "actual": 0.69,
       "surprise_pct": 31.97
     },
     {
-      "quarter": "2026-06-30",
-      "estimate": 0.71062,
-      "actual": 0.83,
-      "surprise_pct": 16.8
+      "quarter": "2026-09-30",
+      "estimate": 1.00592,
+      "actual": 1.22,
+      "surprise_pct": 21.28
     }
   ],
   "insiders": [
@@ -295,15 +289,6 @@
       "date": "2026-08-28"
     },
     {
-      "name": "Drier (Wayne)",
-      "role": "Senior Officer of Issuer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 10000,
-      "date": "2026-08-27"
-    },
-    {
       "name": "Strang (David Maxwell)",
       "role": "Director of Issuer",
       "kind": "other",
@@ -319,6 +304,15 @@
       "text": null,
       "value": null,
       "shares": 34128,
+      "date": "2026-08-27"
+    },
+    {
+      "name": "Drier (Wayne)",
+      "role": "Senior Officer of Issuer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 10000,
       "date": "2026-08-27"
     },
     {
@@ -340,12 +334,12 @@
       "date": "2026-08-26"
     },
     {
-      "name": "Braaten (Lyle)",
-      "role": "Director of Issuer",
+      "name": "Hundal, Deepk",
+      "role": "Senior Officer of Issuer",
       "kind": "other",
-      "text": "Disposition in the public market at price 38.54 per share.",
-      "value": 385400,
-      "shares": 10000,
+      "text": "Exercise of options at price 13.03 per share.",
+      "value": 32582,
+      "shares": 2500,
       "date": "2026-08-24"
     }
   ],

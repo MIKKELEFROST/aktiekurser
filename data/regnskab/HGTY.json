@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T23:43:28.323Z",
+  "updated_at": "2026-11-03T21:59:21.376Z",
   "source": "Yahoo Finance",
   "symbol": "HGTY",
   "summary": "Hagerty, Inc. provides insurance services for collector cars and enthusiast vehicles in the United States, Canada, and the United Kingdom. It operates through Insurance and Marketplace segments. The company operates as a managing general agent that underwrites, sells, and services collector car and enthusiast vehicle insurance policies. It also provides Hagerty Drivers Club memberships, which are bundled with insurance policies and give subscribers access to an array of products and services, such as emergency roadside assistance, the Hagerty Drivers Club magazine, special access to automotive enthusiast events, a proprietary vehicle valuation tool, and special vehicle-related discounts; and reinsurance services. In addition, the company offers marketplace services comprising live auctions, online sale platforms, and brokered private sales services where automotive collectors and enthusiasts can buy, sell, and finance collector cars. The company was founded in 1984 and is headquartered in Traverse City, Michigan. Hagerty, Inc. is a subsidiary of Hagerty Holding Corp.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": 0.015,
+  "eps_estimate": 0.06667,
   "analysts": {
     "strong_buy": 2,
     "buy": 2,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 379994000,
-      "earnings": 18945000
-    },
-    {
       "q": "4Q2025",
       "revenue": 346391000,
       "earnings": 6924000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 354822000,
       "earnings": -1668000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 354242000,
+      "earnings": 36269000
     }
   ],
   "growth": {
-    "q0": -0.8846,
-    "q1": -0.1666,
+    "q0": -0.1666,
+    "q1": 4.6785,
     "y0": -0.9279,
     "y1": 20.9505
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.835,
-    "enterprise_value": 1313108736,
-    "ev_ebitda": 5.756,
-    "ev_revenue": 0.928,
+    "enterprise_value": 1344750592,
+    "ev_ebitda": 5.895,
+    "ev_revenue": 0.95,
     "float_shares": 47633251,
     "short_shares": 1524048,
     "short_pct_float": 2.6,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 180,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.08014,
-      "actual": 0.13,
-      "surprise_pct": 62.22
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.03339,
@@ -269,6 +263,12 @@
       "estimate": -0.08787,
       "actual": -0.02,
       "surprise_pct": 77.24
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.015,
+      "actual": 0.1,
+      "surprise_pct": 566.67
     }
   ],
   "insiders": [
@@ -293,6 +293,15 @@
     {
       "name": "HAGERTY HOLDING CORP.",
       "role": "Beneficial Owner of more than 10% of a Class of Security",
+      "kind": "sell",
+      "text": "Sale at price 11.47 per share.",
+      "value": 122033400,
+      "shares": 10637500,
+      "date": "2026-09-11"
+    },
+    {
+      "name": "HAGERTY HOLDING CORP.",
+      "role": "Beneficial Owner of more than 10% of a Class of Security",
       "kind": "other",
       "text": null,
       "value": null,
@@ -306,15 +315,6 @@
       "text": null,
       "value": null,
       "shares": 7836411,
-      "date": "2026-09-11"
-    },
-    {
-      "name": "HAGERTY HOLDING CORP.",
-      "role": "Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "sell",
-      "text": "Sale at price 11.47 per share.",
-      "value": 122033400,
-      "shares": 10637500,
       "date": "2026-09-11"
     },
     {

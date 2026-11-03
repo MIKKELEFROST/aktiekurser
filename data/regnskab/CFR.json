@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T23:43:27.594Z",
+  "updated_at": "2026-11-03T21:59:20.624Z",
   "source": "Yahoo Finance",
   "symbol": "CFR",
   "summary": "Cullen/Frost Bankers, Inc. operates as the bank holding company for Frost Bank that provides commercial and consumer banking services in Texas. The company offers commercial banking services to corporations, including financing for industrial and commercial properties, interim construction related to industrial and commercial properties, equipment, inventories and accounts receivables, and acquisitions; and treasury management services. It also provides consumer banking services, such as checking accounts, automated-teller machines (ATMs), overdraft facilities, installment and real estate loans, first mortgage loans, home equity loans and lines of credit, drive-in and night deposit services, safe deposit facilities, and brokerage services. In addition, the company offers international banking services comprising deposits, loans, letters of credit, foreign collections, funds transmitting, and foreign exchange services; correspondent banking activities, including check clearing, transfer of funds, fixed income security services, and securities custody and clearance services. Further, it offers trust, investment, agency, and custodial services for individual and corporate clients; capital market services that include sales and trading, new issue underwriting, money market trading, advisory, and securities safekeeping and clearance; and support for international business activities, including foreign exchange, letters of credit, export-import financing, and other related activities. Additionally, the company offers insurance and securities brokerage services; holding of securities for investment purposes; and investment management services for mutual funds, institutions, and individuals. It serves energy, manufacturing, services, construction, retail, telecommunications, healthcare, military, and transportation industries. Cullen/Frost Bankers, Inc. was founded in 1868 and is headquartered in San Antonio, Texas.",
@@ -10,7 +10,7 @@
   "next_earnings": "2027-01-28",
   "earnings_estimated": true,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 2.9102,
+  "eps_estimate": 2.90686,
   "analysts": {
     "strong_buy": 2,
     "buy": 3,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.0388,
-    "q1": 0.1099,
-    "y0": 0.0838,
-    "y1": 0.0929
+    "q0": 0.0376,
+    "q1": 0.10560001,
+    "y0": 0.087,
+    "y1": 0.093100004
   },
   "ratings": [
+    {
+      "date": "2026-11-03",
+      "firm": "Evercore ISI Group",
+      "from": "In-Line",
+      "to": "In-Line",
+      "action": "main"
+    },
     {
       "date": "2026-11-02",
       "firm": "Keefe, Bruyette & Woods",
@@ -140,13 +147,6 @@
       "from": "Underweight",
       "to": "Overweight",
       "action": "up"
-    },
-    {
-      "date": "2026-08-19",
-      "firm": "Cantor Fitzgerald",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
     }
   ],
   "holders": [
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 12,
-    "sells": 1,
+    "sells": 2,
     "bought": 51715,
-    "sold": 837,
+    "sold": 3243,
     "net_pct": 1.3
   },
   "extras": {
     "beta": 0.511,
-    "enterprise_value": 8528169984,
+    "enterprise_value": 8696056832,
     "ev_ebitda": null,
-    "ev_revenue": 3.715,
+    "ev_revenue": 3.788,
     "float_shares": 61334870,
     "short_shares": 11727,
     "short_pct_float": 0.02,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-11-30",
   "dividend_date": null,
   "payout_ratio": 0.3777,
-  "inst_count": 734,
+  "inst_count": 740,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -273,6 +273,15 @@
   ],
   "insiders": [
     {
+      "name": "BERMAN ROBERT A",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 157.10 per share.",
+      "value": 377983,
+      "shares": 2406,
+      "date": "2026-10-30"
+    },
+    {
       "name": "ALONZO ANNETTE M",
       "role": "Officer",
       "kind": "other",
@@ -291,24 +300,6 @@
       "date": "2026-10-23"
     },
     {
-      "name": "SEVERYN CAROL JEAN",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 3685,
-      "date": "2026-10-23"
-    },
-    {
-      "name": "RHODES COOLIDGE E JR",
-      "role": "General Counsel",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 3685,
-      "date": "2026-10-23"
-    },
-    {
       "name": "BERMAN ROBERT A",
       "role": "Officer",
       "kind": "other",
@@ -324,6 +315,24 @@
       "text": null,
       "value": null,
       "shares": 4876,
+      "date": "2026-10-23"
+    },
+    {
+      "name": "SEVERYN CAROL JEAN",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 3685,
+      "date": "2026-10-23"
+    },
+    {
+      "name": "RHODES COOLIDGE E JR",
+      "role": "General Counsel",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 3685,
       "date": "2026-10-23"
     },
     {
@@ -351,15 +360,6 @@
       "text": null,
       "value": null,
       "shares": 2004,
-      "date": "2026-10-23"
-    },
-    {
-      "name": "HENSON MATTHEW BRADLEY",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 707,
       "date": "2026-10-23"
     }
   ],

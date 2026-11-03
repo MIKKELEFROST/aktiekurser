@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T23:43:28.408Z",
+  "updated_at": "2026-11-03T21:59:21.469Z",
   "source": "Yahoo Finance",
   "symbol": "IBTA",
   "summary": "Ibotta, Inc., a technology company, provides digital promotion services to clients in the United States. The company sources digital promotions from its clients primarily consumer packaged goods brands and distributes these promotions to consumers through its network of publishers enabled by Ibotta Performance Network (IPN), a technology platform. It offers promotional services through the IPN, including direct-to-consumer mobile, web, and browser extension properties, as well as third-party publisher properties. The company also provides display ads, tiles, sponsored offers, newsletters, and feature placements. In addition, it offers LiveLift, a set of capabilities designed for brands to drive sales. The company serves consumer packaged goods brands. The company was formerly known as Zing Enterprises, Inc. and changed its name to Ibotta, Inc. in 2012. Ibotta, Inc. was incorporated in 2011 and is headquartered in Denver, Colorado.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-02",
   "earnings_estimated": false,
   "earnings_call": "2026-11-02",
-  "eps_estimate": 0.44144,
+  "eps_estimate": 0.47,
   "analysts": {
     "strong_buy": 1,
     "buy": 0,
@@ -19,9 +19,9 @@
     "strong_sell": 1,
     "total": 9
   },
-  "target_mean": 36.57143,
-  "target_high": 45,
-  "target_low": 22,
+  "target_mean": 38.42857,
+  "target_high": 49,
+  "target_low": 26,
   "target_analysts": 7,
   "statements": [
     {
@@ -45,11 +45,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 83260000,
-      "earnings": 1533000
-    },
-    {
       "q": "4Q2025",
       "revenue": 88526000,
       "earnings": -1003000
@@ -63,15 +58,41 @@
       "q": "2Q2026",
       "revenue": 88905000,
       "earnings": -1229000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 97825000,
+      "earnings": -3503000
     }
   ],
   "growth": {
-    "q0": -0.2117,
-    "q1": 0.5611,
-    "y0": -0.0675,
-    "y1": 0.18120001
+    "q0": 0.6207,
+    "q1": 0.3125,
+    "y0": 0.0631,
+    "y1": 0.1736
   },
   "ratings": [
+    {
+      "date": "2026-11-03",
+      "firm": "Wells Fargo",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-03",
+      "firm": "Evercore ISI Group",
+      "from": "In-Line",
+      "to": "In-Line",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-03",
+      "firm": "Needham",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-08-05",
       "firm": "UBS",
@@ -119,27 +140,6 @@
       "firm": "Wells Fargo",
       "from": "Equal-Weight",
       "to": "Equal-Weight",
-      "action": "main"
-    },
-    {
-      "date": "2026-05-07",
-      "firm": "Evercore ISI Group",
-      "from": "In-Line",
-      "to": "In-Line",
-      "action": "main"
-    },
-    {
-      "date": "2026-05-07",
-      "firm": "Needham",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2024-08-14",
-      "firm": "JMP Securities",
-      "from": "Market Outperform",
-      "to": "Market Outperform",
       "action": "main"
     }
   ],
@@ -225,9 +225,9 @@
   },
   "extras": {
     "beta": -0.444,
-    "enterprise_value": 1003467648,
-    "ev_ebitda": -138.143,
-    "ev_revenue": 2.924,
+    "enterprise_value": 1037063552,
+    "ev_ebitda": -142.768,
+    "ev_revenue": 3.022,
     "float_shares": 7431190,
     "short_shares": 2765604,
     "short_pct_float": 26.22,
@@ -259,13 +259,22 @@
       "surprise_pct": -6.64
     },
     {
-      "quarter": "2026-06-30",
-      "estimate": 0.37029,
-      "actual": 0.46,
-      "surprise_pct": 24.23
+      "quarter": "2026-09-30",
+      "estimate": 0.44144,
+      "actual": 0.62,
+      "surprise_pct": 40.45
     }
   ],
   "insiders": [
+    {
+      "name": "DASPIT MARISA",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 50.00 - 50.08 per share.",
+      "value": 12309,
+      "shares": 246,
+      "date": "2026-10-30"
+    },
     {
       "name": "LEACH BRYAN",
       "role": "Chief Executive Officer",
@@ -346,15 +355,6 @@
       "value": 0,
       "shares": 9843,
       "date": "2026-09-22"
-    },
-    {
-      "name": "SWANSON LUKE ROY",
-      "role": "Chief Technology Officer",
-      "kind": "sell",
-      "text": "Sale at price 39.90 - 40.07 per share.",
-      "value": 1609724,
-      "shares": 40200,
-      "date": "2026-09-10"
     }
   ],
   "dividends": [],
