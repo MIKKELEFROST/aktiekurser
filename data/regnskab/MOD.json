@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:21.906Z",
+  "updated_at": "2026-11-04T22:07:30.153Z",
   "source": "Yahoo Finance",
   "symbol": "MOD",
   "summary": "Modine Manufacturing Company designs, engineers, tests, manufactures, and sells mission-critical thermal solutions in the United States, Canada, Italy, Hungary, the United Kingdom, China, and internationally. It offers heat transfer products, including round tube plate fin construction; gas-fired, hydronic, electric, and oil fired unit heaters; roof-mounted direct- and indirect-fired makeup air units, duct furnaces, infrared units, and perimeter heating products; single packaged unit ventilators, modular chillers, air handler and condensing units, and ceiling cassettes; evaporator unit coolers, remote condensers, fluid coolers, gas coolers, and dry and brine coolers; and motor and generator cooling coils, transformer oil coolers, radiators, dryers, and industrial heat exchangers. The company also provides data center products that consists of IT cooling solutions, including chillers, dry coolers, precision air handling units, computer room air conditioning, computer room air handler units, fan walls, rear-door heat exchangers, coolant distribution units, and immersion solutions, as well as sells replacement parts, maintenance service and control solutions for existing equipment and new building management controls and systems. In addition, it offers powertrain cooling products, such as radiators, condensers, engine cooling modules, charge air coolers, fan shrouds, and surge tanks; cooling module generator sets; aluminum and stainless steel engine oil coolers, exhaust gas recirculation coolers, liquid charge air coolers, transmission and retarder oil coolers, chillers, and condensers; battery thermal management systems, electronics cooling packages, battery chillers, battery cooling plates, coolers and casings for electronics cooling, and coolers for electric axles; and coatings products and application services. The company was incorporated in 1916 and is headquartered in Racine, Wisconsin.",
@@ -7,10 +7,10 @@
   "website": "https://www.modine.com",
   "employees": 13000,
   "ceo": "Mr. Neil D. Brinker",
-  "next_earnings": "2026-11-03",
-  "earnings_estimated": false,
+  "next_earnings": "2027-02-03",
+  "earnings_estimated": true,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 1.52373,
+  "eps_estimate": 1.42333,
   "analysts": {
     "strong_buy": 1,
     "buy": 9,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 10
   },
-  "target_mean": 290.77777,
+  "target_mean": 284.66666,
   "target_high": 355,
-  "target_low": 245,
+  "target_low": 225,
   "target_analysts": 9,
   "statements": [
     {
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 738900000,
-      "earnings": 44400000
-    },
-    {
       "q": "4Q2025",
       "revenue": 805000000,
       "earnings": -47400000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 874100000,
       "earnings": 73900000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 994400000,
+      "earnings": 30000000
     }
   ],
   "growth": {
-    "q0": 0.4375,
-    "q1": 0.2339,
-    "y0": 0.3161,
-    "y1": 0.46220002
+    "q0": 0.19610001,
+    "q1": 0.1248,
+    "y0": 0.0159,
+    "y1": 0.8843
   },
   "ratings": [
+    {
+      "date": "2026-11-04",
+      "firm": "Keybanc",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-10-29",
       "firm": "B. Riley Securities",
@@ -139,13 +146,6 @@
       "firm": "Keybanc",
       "from": "Overweight",
       "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-06-22",
-      "firm": "DA Davidson",
-      "from": "Buy",
-      "to": "Buy",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.844,
-    "enterprise_value": 7135321600,
-    "ev_ebitda": 15.867,
-    "ev_revenue": 2.116,
+    "enterprise_value": 7247389184,
+    "ev_ebitda": 16.116,
+    "ev_revenue": 2.149,
     "float_shares": 52028678,
     "short_shares": 2501175,
     "short_pct_float": 4.78,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 787,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.01,
-      "actual": 1.06,
-      "surprise_pct": 4.95
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.99413,
@@ -269,6 +263,12 @@
       "estimate": 1.27477,
       "actual": 1.53,
       "surprise_pct": 20.02
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.52373,
+      "actual": 1.35,
+      "surprise_pct": -11.4
     }
   ],
   "insiders": [
@@ -289,6 +289,15 @@
       "value": 56499,
       "shares": 5269,
       "date": "2026-09-10"
+    },
+    {
+      "name": "GARIMELLA SURESHV",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 812,
+      "date": "2026-08-20"
     },
     {
       "name": "LOWE ALAN S",
@@ -337,15 +346,6 @@
     },
     {
       "name": "WILSON DAVID J",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 812,
-      "date": "2026-08-20"
-    },
-    {
-      "name": "GARIMELLA SURESHV",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:22.505Z",
+  "updated_at": "2026-11-04T22:07:30.762Z",
   "source": "Yahoo Finance",
   "symbol": "RTX",
   "summary": "RTX Corporation, an aerospace and defense company, provides systems and services for commercial, military, and government customers worldwide. It operates through three segments: Collins Aerospace (Collins), Pratt & Whitney, and Raytheon. The Collins segment offers aerospace and defense products, and aftermarket services for civil and military aircraft manufacturers and commercial airlines, as well as regional, business, and general aviation, defense, and commercial space operations. This segment designs, manufactures, and supplies electric power generation and management and distribution, environmental control, flight control, air data and aircraft sensing, engine control, and engine nacelle systems, as well as engine components; cabin interiors, including seating, oxygen, food and beverage preparation, storage and galley, lavatory, and wastewater management systems; connected aviation solutions and services; and systems solutions for connected battlespace, test and training range systems, crew escape systems, and simulation and training. It also provides spare parts, overhaul and repair, engineering and technical support, training and fleet management solutions, and asset and information management services. The Pratt & Whitney segment supplies aircraft engines for commercial, military, business jet, and general aviation customers; and produces, sells, and services military and commercial auxiliary power units, as well as offers fleet management and aftermarket maintenance, repair, and overhaul services. The Raytheon segment provides defensive and offensive threat detection, tracking, and mitigation capabilities for government and commercial customers. This segment offers sensors, mission orchestration and satellite control products, and software. The company was formerly known as Raytheon Technologies Corporation and changed its name to RTX Corporation in July 2023. RTX Corporation was incorporated in 1934 and is headquartered in Arlington, Virginia.",
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 24
   },
-  "target_mean": 229.1739,
+  "target_mean": 227.91304,
   "target_high": 250,
   "target_low": 200,
   "target_analysts": 23,
@@ -74,8 +74,8 @@
   "growth": {
     "q0": 0.1842,
     "q1": 0.018,
-    "y0": 0.2189,
-    "y1": 0.0511
+    "y0": 0.22469999,
+    "y1": 0.0461
   },
   "ratings": [
     {
@@ -223,17 +223,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 4,
-    "sells": 4,
-    "bought": 32896,
-    "sold": 31517,
-    "net_pct": 0.1
+    "buys": 5,
+    "sells": 5,
+    "bought": 49896,
+    "sold": 40588,
+    "net_pct": 0.8
   },
   "extras": {
     "beta": 0.282,
-    "enterprise_value": 305096065024,
-    "ev_ebitda": 17.989,
-    "ev_revenue": 3.179,
+    "enterprise_value": 306485985280,
+    "ev_ebitda": 18.071,
+    "ev_revenue": 3.193,
     "float_shares": 1251538636,
     "short_shares": 13781626,
     "short_pct_float": 1.02,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-11-20",
   "dividend_date": null,
   "payout_ratio": 0.4585,
-  "inst_count": 4133,
+  "inst_count": 4132,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -273,13 +273,22 @@
   ],
   "insiders": [
     {
-      "name": "DASILVA KEVIN G",
-      "role": "Officer and Treasurer",
+      "name": "WILLIAMS DANTAYA M",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 201.70 per share.",
+      "value": 1829576,
+      "shares": 9071,
+      "date": "2026-10-30"
+    },
+    {
+      "name": "WILLIAMS DANTAYA M",
+      "role": "Officer",
       "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 143,
-      "date": "2026-10-01"
+      "text": "Conversion of Exercise of derivative security at price 94.04 per share.",
+      "value": 1598680,
+      "shares": 17000,
+      "date": "2026-10-30"
     },
     {
       "name": "JOHNSON AMY L.",
@@ -291,13 +300,13 @@
       "date": "2026-10-01"
     },
     {
-      "name": "MAHARAJH RAMSARAN JR",
-      "role": "General Counsel",
+      "name": "DASILVA KEVIN G",
+      "role": "Officer and Treasurer",
       "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 71.62 per share.",
-      "value": 1437342,
-      "shares": 20069,
-      "date": "2026-08-18"
+      "text": null,
+      "value": null,
+      "shares": 143,
+      "date": "2026-10-01"
     },
     {
       "name": "MAHARAJH RAMSARAN JR",
@@ -306,6 +315,15 @@
       "text": "Sale at price 223.92 per share.",
       "value": 3057563,
       "shares": 13655,
+      "date": "2026-08-18"
+    },
+    {
+      "name": "MAHARAJH RAMSARAN JR",
+      "role": "General Counsel",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 71.62 per share.",
+      "value": 1437342,
+      "shares": 20069,
       "date": "2026-08-18"
     },
     {
@@ -329,15 +347,6 @@
     {
       "name": "BRUNK TROY D",
       "role": "Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 97.65 per share.",
-      "value": 1230390,
-      "shares": 12600,
-      "date": "2026-07-24"
-    },
-    {
-      "name": "BRUNK TROY D",
-      "role": "Officer",
       "kind": "sell",
       "text": "Sale at price 210.20 - 210.64 per share.",
       "value": 1799487,
@@ -345,22 +354,13 @@
       "date": "2026-07-24"
     },
     {
-      "name": "WILLIAMS DANTAYA M",
+      "name": "BRUNK TROY D",
       "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 202.83 per share.",
-      "value": 2578611,
-      "shares": 12713,
-      "date": "2026-02-23"
-    },
-    {
-      "name": "MITCHILL NEIL G JR",
-      "role": "Chief Financial Officer",
       "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 76.00 per share.",
-      "value": 1473944,
-      "shares": 19394,
-      "date": "2026-02-19"
+      "text": "Conversion of Exercise of derivative security at price 97.65 per share.",
+      "value": 1230390,
+      "shares": 12600,
+      "date": "2026-07-24"
     }
   ],
   "dividends": [

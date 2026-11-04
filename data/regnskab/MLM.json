@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:21.894Z",
+  "updated_at": "2026-11-04T22:07:30.132Z",
   "source": "Yahoo Finance",
   "symbol": "MLM",
   "summary": "Martin Marietta Materials, Inc., a natural resource-based building materials company, supplies aggregates and heavy-side building materials to the construction industry in the United States and internationally. It operates through East Group and West Group segments. The company offers crushed stone, sand, and gravel products; ready mixed concrete and asphalt; and paving products and services for use in the infrastructure projects, and nonresidential and residential construction projects, as well as in the railroad, agricultural, utility, and environmental industries. It also produces magnesia-based chemicals products, and dolomitic lime primarily to customers for steel production and soil stabilization. Its chemical products are used in flame retardants, wastewater treatment, pulp and paper production, and other applications. The company was founded in 1939 and is based in Raleigh, North Carolina.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 5.70858,
+  "eps_estimate": 4.40267,
   "analysts": {
     "strong_buy": 4,
     "buy": 13,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 2088000000,
-      "earnings": 414000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 1534000000,
       "earnings": 279000000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 1947000000,
       "earnings": 256000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 2369000000,
+      "earnings": 256000000
     }
   ],
   "growth": {
-    "q0": -0.1666,
-    "q1": -0.047,
+    "q0": -0.047,
+    "q1": 0.2565,
     "y0": -0.089499995,
     "y1": 0.2401
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.029,
-    "enterprise_value": 39404556288,
-    "ev_ebitda": 18.535,
-    "ev_revenue": 5.892,
+    "enterprise_value": 38897000448,
+    "ev_ebitda": 18.296,
+    "ev_revenue": 5.816,
     "float_shares": 50431879,
     "short_shares": 3210245,
     "short_pct_float": 5.05,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-09-01",
   "dividend_date": null,
   "payout_ratio": 0.2159,
-  "inst_count": 1431,
+  "inst_count": 1429,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 6.68083,
-      "actual": 6.85,
-      "surprise_pct": 2.53
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 4.9775,
@@ -269,6 +263,12 @@
       "estimate": 4.645,
       "actual": 5,
       "surprise_pct": 7.64
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 5.70858,
+      "actual": 5.47,
+      "surprise_pct": -4.18
     }
   ],
   "insiders": [
@@ -282,21 +282,21 @@
       "date": "2026-09-01"
     },
     {
-      "name": "WAJSGRAS DAVID C",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 518.70 per share.",
-      "value": 40459,
-      "shares": 78,
-      "date": "2026-08-31"
-    },
-    {
       "name": "PIKE THOMAS",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 518.70 per share.",
       "value": 34234,
       "shares": 66,
+      "date": "2026-08-31"
+    },
+    {
+      "name": "WAJSGRAS DAVID C",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 518.70 per share.",
+      "value": 40459,
+      "shares": 78,
       "date": "2026-08-31"
     },
     {
@@ -318,21 +318,21 @@
       "date": "2026-08-21"
     },
     {
-      "name": "WAJSGRAS DAVID C",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 581.64 per share.",
-      "value": 40133,
-      "shares": 69,
-      "date": "2026-05-29"
-    },
-    {
       "name": "PIKE THOMAS",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 581.64 per share.",
       "value": 34317,
       "shares": 59,
+      "date": "2026-05-29"
+    },
+    {
+      "name": "WAJSGRAS DAVID C",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 581.64 per share.",
+      "value": 40133,
+      "shares": 69,
       "date": "2026-05-29"
     },
     {
@@ -345,7 +345,7 @@
       "date": "2026-05-29"
     },
     {
-      "name": "FOXX ANTHONY R",
+      "name": "PIKE THOMAS",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -354,7 +354,7 @@
       "date": "2026-05-14"
     },
     {
-      "name": "WAJSGRAS DAVID C",
+      "name": "MACK MARY T.",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

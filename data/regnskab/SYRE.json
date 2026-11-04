@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:22.779Z",
+  "updated_at": "2026-11-04T22:07:31.034Z",
   "source": "Yahoo Finance",
   "symbol": "SYRE",
   "summary": "Spyre Therapeutics, Inc., a clinical stage biotechnology company, focuses on developing therapeutics for patients living with inflammatory bowel disease (IBD) and rheumatic diseases. The company develops SPY001, a humanized monoclonal immunoglobulin G1 antibody that is in phase-2 clinical stage designed to bind selectively to the a4ß7 integrin being developed for the treatment of IBD (ulcerative colitis and Crohn's disease); and SPY002 and SPY072  anti-TL1A mAbs designed to bind to tumor necrosis factor-like ligand 1A (TL1A). It is also developing SPY003, a clinical-stage program, which is in phase-2 clinical stage designed to bind to interleukin 23 (IL-23); SPY120, a combination of anti-a4ß7 and anti-TL1A mAbs; SPY130, a combination anti-a4ß7 and anti-IL-23 mAbs; and SPY230, a combination anti-TL1A and anti-IL-23 mAbs. The company was formerly known as Aeglea BioTherapeutics, Inc. and changed its name to Spyre Therapeutics, Inc. in November 2023. The company was incorporated in 2013 and is based in Waltham, Massachusetts.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": -0.84407,
+  "eps_estimate": -0.86883,
   "analysts": {
     "strong_buy": 1,
     "buy": 16,
@@ -19,8 +19,8 @@
     "strong_sell": 0,
     "total": 18
   },
-  "target_mean": 122.33333,
-  "target_high": 130,
+  "target_mean": 122.53333,
+  "target_high": 131,
   "target_low": 110,
   "target_analysts": 15,
   "statements": [
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 0,
-      "earnings": -11183000
-    },
-    {
       "q": "4Q2025",
       "revenue": 0,
       "earnings": -62530000
@@ -69,15 +64,34 @@
       "q": "2Q2026",
       "revenue": 0,
       "earnings": -36200000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 0,
+      "earnings": -96121000
     }
   ],
   "growth": {
-    "q0": -4.6271,
-    "q1": -0.199,
-    "y0": -0.4409,
-    "y1": -0.24340001
+    "q0": -0.1741,
+    "q1": -0.1362,
+    "y0": -0.42610002,
+    "y1": -0.2705
   },
   "ratings": [
+    {
+      "date": "2026-11-04",
+      "firm": "Guggenheim",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-04",
+      "firm": "Wedbush",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
     {
       "date": "2026-10-19",
       "firm": "BTIG",
@@ -132,20 +146,6 @@
       "firm": "Wedbush",
       "from": "Outperform",
       "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-26",
-      "firm": "BTIG",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-11",
-      "firm": "BTIG",
-      "from": "Buy",
-      "to": "Buy",
       "action": "main"
     }
   ],
@@ -231,7 +231,7 @@
   },
   "extras": {
     "beta": 3.227,
-    "enterprise_value": 7422555136,
+    "enterprise_value": 7754088448,
     "ev_ebitda": null,
     "ev_revenue": null,
     "float_shares": 82498899,
@@ -246,12 +246,6 @@
   "payout_ratio": null,
   "inst_count": 396,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.74024,
-      "actual": -0.15,
-      "surprise_pct": 79.74
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.79758,
@@ -269,6 +263,12 @@
       "estimate": -0.74656,
       "actual": -0.36,
       "surprise_pct": 51.78
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.84407,
+      "actual": -0.94,
+      "surprise_pct": -11.37
     }
   ],
   "insiders": [
@@ -282,21 +282,21 @@
       "date": "2026-09-02"
     },
     {
-      "name": "BURROWS SCOTT L.",
-      "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 86.25 - 89.35 per share.",
-      "value": 2283821,
-      "shares": 25732,
-      "date": "2026-09-02"
-    },
-    {
       "name": "KING-JONES HEIDY",
       "role": "Officer",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 14.50 per share.",
       "value": 411786,
       "shares": 28399,
+      "date": "2026-09-02"
+    },
+    {
+      "name": "BURROWS SCOTT L.",
+      "role": "Chief Financial Officer",
+      "kind": "sell",
+      "text": "Sale at price 86.25 - 89.35 per share.",
+      "value": 2283821,
+      "shares": 25732,
       "date": "2026-09-02"
     },
     {
@@ -336,21 +336,21 @@
       "date": "2026-08-07"
     },
     {
-      "name": "BURROWS SCOTT L.",
-      "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 95.21 - 97.10 per share.",
-      "value": 716771,
-      "shares": 7500,
-      "date": "2026-08-03"
-    },
-    {
       "name": "TURTLE CAMERON",
       "role": "Chief Executive Officer",
       "kind": "sell",
       "text": "Sale at price 93.97 - 97.46 per share.",
       "value": 1432705,
       "shares": 15000,
+      "date": "2026-08-03"
+    },
+    {
+      "name": "BURROWS SCOTT L.",
+      "role": "Chief Financial Officer",
+      "kind": "sell",
+      "text": "Sale at price 95.21 - 97.10 per share.",
+      "value": 716771,
+      "shares": 7500,
       "date": "2026-08-03"
     },
     {

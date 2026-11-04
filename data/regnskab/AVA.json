@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:20.305Z",
+  "updated_at": "2026-11-04T22:07:28.636Z",
   "source": "Yahoo Finance",
   "symbol": "AVA",
   "summary": "Avista Corporation, together with its subsidiaries, operates as an electric and natural gas utility company in the United States. It operates through two segments, Avista Utilities and Alaska Electric Light and Power Company (AEL&P). The Avista Utilities segment provides electric distribution and transmission, and natural gas distribution and transmission services in parts of eastern Washington and northern Idaho; and natural gas distribution services in parts of northeastern and southwestern Oregon, as well as generates electricity in Washington, Idaho, Oregon, and Montana. This segment also engages in the supply of electricity to customers in Montana; and wholesale purchase and sale of electricity and natural gas. The Alaska Electric Light and Power Company segment offers electric services in Juneau, Alaska. The company generates electricity through hydroelectric, thermal, wind, and solar generation facilities. As of December 31, 2025, it supplied retail electrical services to approximately 429,000 customers; retail natural gas services to approximately 386,000 customers; and electrical energy to approximately 17,600 customers. The company also operates five hydroelectric generation facilities with a capacity of 102.7 MW; and four diesel generating facilities with a capacity of 107.5 MW. In addition, it engages in venture fund investments, real estate investments, and other investments. The company was formerly known as Washington Water Power and changed its name to Avista Corporation in January 1999. Avista Corporation was incorporated in 1889 and is headquartered in Spokane, Washington.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 0.4208,
+  "eps_estimate": 0.8114,
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 403000000,
-      "earnings": 29000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 533000000,
       "earnings": 71000000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 413000000,
       "earnings": 35000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 421000000,
+      "earnings": 49000000
     }
   ],
   "growth": {
-    "q0": 0.1689,
-    "q1": -0.0674,
+    "q0": -0.0674,
+    "q1": -0.0221,
     "y0": 0.1038,
     "y1": 0.0625
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.192,
-    "enterprise_value": 6565596160,
-    "ev_ebitda": 10.211,
-    "ev_revenue": 3.421,
+    "enterprise_value": 6543820288,
+    "ev_ebitda": 10.177,
+    "ev_revenue": 3.41,
     "float_shares": 82957178,
     "short_shares": 3855033,
     "short_pct_float": 6.41,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-08-18",
   "dividend_date": null,
   "payout_ratio": 0.7094,
-  "inst_count": 548,
+  "inst_count": 546,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.284,
-      "actual": 0.36,
-      "surprise_pct": 26.76
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.024,
@@ -269,6 +263,12 @@
       "estimate": 0.2445,
       "actual": 0.43,
       "surprise_pct": 75.87
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.4208,
+      "actual": 0.57,
+      "surprise_pct": 35.46
     }
   ],
   "insiders": [
@@ -282,8 +282,44 @@
       "date": "2026-09-02"
     },
     {
-      "name": "MAW SCOTT HARLAN",
+      "name": "JACOBSEN KEVIN B",
       "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 37.16 per share.",
+      "value": 1635,
+      "shares": 44,
+      "date": "2026-09-01"
+    },
+    {
+      "name": "PHILIPPS JEFFRY L.",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 37.16 per share.",
+      "value": 1635,
+      "shares": 44,
+      "date": "2026-09-01"
+    },
+    {
+      "name": "KWAWU SENA M",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 37.16 per share.",
+      "value": 1635,
+      "shares": 44,
+      "date": "2026-09-01"
+    },
+    {
+      "name": "BENTZ JULIE A",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 37.16 per share.",
+      "value": 1635,
+      "shares": 44,
+      "date": "2026-09-01"
+    },
+    {
+      "name": "MORRIS SCOTT L",
+      "role": "Chairman of the Board",
       "kind": "other",
       "text": "Stock Award(Grant) at price 37.16 per share.",
       "value": 1635,
@@ -309,8 +345,8 @@
       "date": "2026-09-01"
     },
     {
-      "name": "MORRIS SCOTT L",
-      "role": "Chairman of the Board",
+      "name": "MAW SCOTT HARLAN",
+      "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 37.16 per share.",
       "value": 1635,
@@ -319,42 +355,6 @@
     },
     {
       "name": "KLEIN REBECCA A",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 37.16 per share.",
-      "value": 1635,
-      "shares": 44,
-      "date": "2026-09-01"
-    },
-    {
-      "name": "WIDMANN JANET D",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 37.16 per share.",
-      "value": 1635,
-      "shares": 44,
-      "date": "2026-09-01"
-    },
-    {
-      "name": "JACOBSEN KEVIN B",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 37.16 per share.",
-      "value": 1635,
-      "shares": 44,
-      "date": "2026-09-01"
-    },
-    {
-      "name": "PHILIPPS JEFFRY L.",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 37.16 per share.",
-      "value": 1635,
-      "shares": 44,
-      "date": "2026-09-01"
-    },
-    {
-      "name": "KWAWU SENA M",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 37.16 per share.",

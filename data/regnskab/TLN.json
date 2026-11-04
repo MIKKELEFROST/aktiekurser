@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:22.858Z",
+  "updated_at": "2026-11-04T22:07:31.102Z",
   "source": "Yahoo Finance",
   "symbol": "TLN",
   "summary": "Talen Energy Corporation, an independent power producer and infrastructure company, produces and sells electricity, capacity, and ancillary services into wholesale power markets in the United States. The company's plants generate power using a variety of fuels, such as nuclear, fossil, oil, natural gas, and coal power plants. It owns and operates approximately 13.1 GW of power infrastructure. Talen Energy Corporation was incorporated in 2014 and is headquartered in Houston, Texas.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": 7.22,
+  "eps_estimate": null,
   "analysts": {
     "strong_buy": 6,
     "buy": 12,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.6466,
-    "q1": 0.45029998,
-    "y0": 1.53,
-    "y1": 0.39380002
+    "q0": null,
+    "q1": null,
+    "y0": 0.8751,
+    "y1": 0.6304
   },
   "ratings": [
+    {
+      "date": "2026-11-04",
+      "firm": "Evercore ISI Group",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
     {
       "date": "2026-10-28",
       "firm": "CIBC",
@@ -140,13 +147,6 @@
       "from": null,
       "to": "Outperform",
       "action": "init"
-    },
-    {
-      "date": "2026-08-21",
-      "firm": "Morgan Stanley",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
     }
   ],
   "holders": [
@@ -227,14 +227,14 @@
     "sells": 1,
     "bought": 926771,
     "sold": 2600,
-    "net_pct": -353
+    "net_pct": -342.2
   },
   "extras": {
     "beta": 1.579,
-    "enterprise_value": 25319968768,
-    "ev_ebitda": 43.505,
-    "ev_revenue": 6.768,
-    "float_shares": 38113397,
+    "enterprise_value": 26162335744,
+    "ev_ebitda": 45.899,
+    "ev_revenue": 5.839,
+    "float_shares": 37638126,
     "short_shares": 4213646,
     "short_pct_float": 9.99,
     "short_ratio": 3.72,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 821,
+  "inst_count": 822,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -291,6 +291,33 @@
       "date": "2026-06-15"
     },
     {
+      "name": "MULLER COLE",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 62862,
+      "date": "2026-05-22"
+    },
+    {
+      "name": "PLAGENS ANTHONY J.",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 5668,
+      "date": "2026-05-22"
+    },
+    {
+      "name": "CASULLI EDWARD T.",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 6376,
+      "date": "2026-05-22"
+    },
+    {
       "name": "OLAGUES DARREN J",
       "role": "Officer",
       "kind": "other",
@@ -333,33 +360,6 @@
       "text": null,
       "value": null,
       "shares": 354865,
-      "date": "2026-05-22"
-    },
-    {
-      "name": "NIGRO JOSEPH",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 4133,
-      "date": "2026-05-22"
-    },
-    {
-      "name": "SCHAEFER STEPHEN JAMES",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 22482,
-      "date": "2026-05-22"
-    },
-    {
-      "name": "SCHWARTZSTEIN CHRISTINE BENSON",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 4133,
       "date": "2026-05-22"
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:20.185Z",
+  "updated_at": "2026-11-04T22:07:28.530Z",
   "source": "Yahoo Finance",
   "symbol": "ANDE",
   "summary": "The Andersons, Inc. operates as an agriculture and renewable fuels company in the United States, Canada, Mexico, and internationally. It operates through Agribusiness and Renewables segments. The Agribusiness segment sells commodities, such as corn, wheat, and soybeans. It also manufactures, distributes, and retails agricultural and related plant nutrients; and agricultural fertilizers. This segment also engages in the merchandising business, as well as offers logistics for physical commodities, such as whole grains, grain products, feed ingredients, domestic fuel products, and other agricultural commodities. The Renewables segment produces, purchases, sells, merchandises, and trades in ethanol, and co-products, as well as merchandises and trades in other biofuels, such as renewable feedstocks. The Andersons, Inc. was founded in 1947 and is based in Maumee, Ohio.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 1.10667,
+  "eps_estimate": 2,
   "analysts": {
     "strong_buy": 0,
     "buy": 3,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 2677712000,
-      "earnings": 20138000
-    },
-    {
       "q": "4Q2025",
       "revenue": 2536249000,
       "earnings": 67434000
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 3097660000,
       "earnings": 56563000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 2833715000,
+      "earnings": 46445000
     }
   ],
   "growth": {
-    "q0": 0.3175,
-    "q1": -0.1291,
-    "y0": 0.90300006,
-    "y1": 0.040700004
+    "q0": -0.0196,
+    "q1": 0.09819999,
+    "y0": 0.9938,
+    "y1": -0.0067000003
   },
   "ratings": [
     {
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 23,
-    "sells": 4,
+    "sells": 3,
     "bought": 33317,
-    "sold": 40927,
-    "net_pct": -0.6
+    "sold": 21827,
+    "net_pct": 0.9
   },
   "extras": {
     "beta": 0.632,
-    "enterprise_value": 3026300672,
-    "ev_ebitda": 10.004,
-    "ev_revenue": 0.277,
+    "enterprise_value": 2982543360,
+    "ev_ebitda": 9.859,
+    "ev_revenue": 0.273,
     "float_shares": 32259332,
     "short_shares": 1441578,
     "short_pct_float": 6.19,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-10-01",
   "dividend_date": null,
   "payout_ratio": 0.1535,
-  "inst_count": 434,
+  "inst_count": 436,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.46,
-      "actual": 0.84,
-      "surprise_pct": 82.61
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.55667,
@@ -269,6 +263,12 @@
       "estimate": 1.48333,
       "actual": 2.15,
       "surprise_pct": 44.94
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.10667,
+      "actual": 1.38,
+      "surprise_pct": 24.7
     }
   ],
   "insiders": [
@@ -354,7 +354,7 @@
       "date": "2026-06-04"
     },
     {
-      "name": "KING ROBERT J. JR",
+      "name": "KILBANE CATHERINE M",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -364,6 +364,10 @@
     }
   ],
   "dividends": [
+    {
+      "date": "2016-09-29",
+      "amount": 0.155
+    },
     {
       "date": "2016-12-29",
       "amount": 0.16
@@ -518,10 +522,6 @@
     },
     {
       "date": "2026-07-01",
-      "amount": 0.2
-    },
-    {
-      "date": "2026-10-01",
       "amount": 0.2
     }
   ],

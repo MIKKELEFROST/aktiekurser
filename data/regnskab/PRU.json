@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:22.359Z",
+  "updated_at": "2026-11-04T22:07:30.623Z",
   "source": "Yahoo Finance",
   "symbol": "PRU",
   "summary": "Prudential Financial, Inc., together with its subsidiaries, provides financial products and services in the United States, Japan and internationally. It operates through PGIM, Retirement Strategies, Group Insurance, Individual Life, and International Businesses segments. The PGIM segment offers investment management services and solutions related to public fixed income, public equity, real estate debt and equity, private credit and other alternatives, and multi-asset class strategies to institutional and retail clients, as well as its insurance and retirement businesses. The Retirement Strategies segment provides a range of retirement investment, and income products and services to retirement plan sponsors in the public, private, and not-for-profit sectors; group annuities and other products; international reinsurance; investment only products; and FlexGuard suite, Fixed annuities, and variable annuities, as well as develops and distributes individual variable and fixed annuity products. The Group Insurance segment offers various group life, and long-term and short-term group disability, as well as group corporate-, bank-, and trust-owned life insurance; and supplemental health solutions including accident, critical illness, and hospital indemnity. The Individual Life segment develops and distributes variable life, universal life, and term life insurance products. The International Businesses segment develops and distributes life insurance, retirement products, investment products, and certain accident and health products. The company provides its products and services to individual and institutional customers through its proprietary and third-party distribution networks, financial professionals, and trusted partnerships. Prudential Financial, Inc. was founded in 1875 and is headquartered in Newark, New Jersey.",
@@ -7,10 +7,10 @@
   "website": "https://www.prudential.com",
   "employees": 36607,
   "ceo": "Mr. Andrew Francis Sullivan",
-  "next_earnings": "2026-11-03",
-  "earnings_estimated": false,
+  "next_earnings": "2027-02-02",
+  "earnings_estimated": true,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 3.31736,
+  "eps_estimate": 3.06754,
   "analysts": {
     "strong_buy": 0,
     "buy": 0,
@@ -19,8 +19,8 @@
     "strong_sell": 1,
     "total": 18
   },
-  "target_mean": 109.73333,
-  "target_high": 132,
+  "target_mean": 110,
+  "target_high": 136,
   "target_low": 92,
   "target_analysts": 15,
   "statements": [
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 16239000000,
-      "earnings": 1431000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 14520000000,
       "earnings": 905000000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 14155000000,
       "earnings": 985000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 13493000000,
+      "earnings": 1388000000
     }
   ],
   "growth": {
-    "q0": -0.22129999,
-    "q1": -0.0704,
+    "q0": -0.0704,
+    "q1": -0.111,
     "y0": -0.0506,
     "y1": -0.0011
   },
   "ratings": [
+    {
+      "date": "2026-11-04",
+      "firm": "Barclays",
+      "from": "Underweight",
+      "to": "Underweight",
+      "action": "main"
+    },
     {
       "date": "2026-10-28",
       "firm": "Wells Fargo",
@@ -137,13 +144,6 @@
     {
       "date": "2026-10-12",
       "firm": "Piper Sandler",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-10-07",
-      "firm": "Mizuho",
       "from": "Neutral",
       "to": "Neutral",
       "action": "main"
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.828,
-    "enterprise_value": 61372502016,
-    "ev_ebitda": 11.789,
-    "ev_revenue": 0.941,
+    "enterprise_value": 61548449792,
+    "ev_ebitda": 11.823,
+    "ev_revenue": 0.944,
     "float_shares": 343899450,
     "short_shares": 14247575,
     "short_pct_float": 4.71,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.4982,
   "inst_count": 1868,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 3.71948,
-      "actual": 4.26,
-      "surprise_pct": 14.53
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 3.36452,
@@ -269,6 +263,12 @@
       "estimate": 3.51798,
       "actual": 4.08,
       "surprise_pct": 15.98
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 3.31736,
+      "actual": 3.77,
+      "surprise_pct": 13.64
     }
   ],
   "insiders": [
@@ -300,7 +300,7 @@
       "date": "2026-05-14"
     },
     {
-      "name": "CASELLAS GILBERT F",
+      "name": "POON CHRISTINE A",
       "role": "Director",
       "kind": "other",
       "text": null,
@@ -309,7 +309,7 @@
       "date": "2026-05-12"
     },
     {
-      "name": "POON CHRISTINE A",
+      "name": "CASELLAS GILBERT F",
       "role": "Director",
       "kind": "other",
       "text": null,
@@ -327,15 +327,6 @@
       "date": "2026-04-30"
     },
     {
-      "name": "KAPPLER ANN M",
-      "role": "General Counsel",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 7071,
-      "date": "2026-02-27"
-    },
-    {
       "name": "LOWREY CHARLES F",
       "role": "Chairman of the Board",
       "kind": "other",
@@ -345,21 +336,30 @@
       "date": "2026-02-27"
     },
     {
-      "name": "FRIAS YANELA",
-      "role": "Chief Financial Officer",
+      "name": "KAPPLER ANN M",
+      "role": "General Counsel",
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 4007,
+      "shares": 7071,
       "date": "2026-02-27"
     },
     {
-      "name": "WALIA VICKI",
+      "name": "CASE SCOTT E",
       "role": "Officer",
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 2384,
+      "shares": 2717,
+      "date": "2026-02-27"
+    },
+    {
+      "name": "SCHMIDT TIMOTHY L",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 4779,
       "date": "2026-02-27"
     }
   ],

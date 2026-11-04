@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:20.983Z",
+  "updated_at": "2026-11-04T22:07:29.289Z",
   "source": "Yahoo Finance",
   "symbol": "EL",
   "summary": "The Estée Lauder Companies Inc. manufactures, markets, and sells skin care, makeup, fragrance, and hair care products worldwide. The company provides skin care products, including moisturizers, serums, cleansers, toners, eye care, body care, exfoliators, acne care and oil correctors, facial masks, and sun care products; and makeup products, such as foundations, powders, concealers and setting sprays, lipsticks, lip liners and lip glosses, mascaras, and eyeshadows and eyeliners, as well as compacts, brushes, and other makeup tools. It also offers fragrance products in various forms comprising parfum, eau de parfum, eau de toilette, eau de cologne, and body spray, as well as lotions, creams, powders, candles and soaps; and hair care products, including shampoos, conditioners, styling products, treatment, finishing sprays, and hair color products, as well as sells ancillary products and services. The company provides its products under the La Mer, Jo Malone London, TOM FORD, AERIN Beauty, Le Labo, Editions de Parfums Frédéric Malle, KILIAN PARIS, BALMAIN Beauty, Estée Lauder, Clinique, M·A·C, The Ordinary, Aveda, Bobbi Brown Cosmetics, Too Faced, Dr.Jart+, Bumble and bumble, Smashbox, Darphin Paris, Lab Series, Avestan, Loopha, Origins, NIOD, Aramis, and GLAMGLOW brands. It sells its products through department stores, duty-free retailers, specialty multi retailers, online pure players, upscale perfumeries and pharmacies, and top-tier salons and spas, as well as direct-to-consumer businesses across freestanding stores, and brand websites and third-party online platforms. The Estée Lauder Companies Inc. was founded in 1946 and is based in New York, New York.",
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 30
   },
-  "target_mean": 112.72296,
+  "target_mean": 113.98222,
   "target_high": 129,
   "target_low": 70,
   "target_analysts": 27,
@@ -74,10 +74,17 @@
   "growth": {
     "q0": 0.58529997,
     "q1": 0.3359,
-    "y0": 0.35439998,
-    "y1": 0.1821
+    "y0": 0.36119998,
+    "y1": 0.17889999
   },
   "ratings": [
+    {
+      "date": "2026-11-04",
+      "firm": "Barclays",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-11-03",
       "firm": "Citigroup",
@@ -140,13 +147,6 @@
       "from": "Hold",
       "to": "Hold",
       "action": "main"
-    },
-    {
-      "date": "2026-10-19",
-      "firm": "JP Morgan",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
     }
   ],
   "holders": [
@@ -160,7 +160,7 @@
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 8.41,
+      "pct": 8.4,
       "shares": 20829012,
       "date": "2026-06-30"
     },
@@ -227,24 +227,24 @@
     "sells": 4,
     "bought": 29315,
     "sold": 120105,
-    "net_pct": -7.8
+    "net_pct": -7.9
   },
   "extras": {
-    "beta": null,
-    "enterprise_value": 44064940032,
-    "ev_ebitda": 16.672,
-    "ev_revenue": 2.883,
-    "float_shares": 247327374,
+    "beta": 1.23,
+    "enterprise_value": 44188008448,
+    "ev_ebitda": 16.995,
+    "ev_revenue": 2.891,
+    "float_shares": 246667331,
     "short_shares": 7056099,
     "short_pct_float": 2.86,
     "short_ratio": 2.41,
     "last_split": "2:1",
     "last_split_date": "2012-01-23"
   },
-  "ex_dividend": "2026-08-31",
+  "ex_dividend": "2026-11-30",
   "dividend_date": null,
   "payout_ratio": 1.4,
-  "inst_count": 1324,
+  "inst_count": 1329,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -284,19 +284,19 @@
     {
       "name": "BARSHEFSKY CHARLENE",
       "role": "Director",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 78.36 per share.",
-      "value": 368057,
-      "shares": 4697,
+      "kind": "sell",
+      "text": "Sale at price 98.82 per share.",
+      "value": 373046,
+      "shares": 3775,
       "date": "2026-09-09"
     },
     {
       "name": "BARSHEFSKY CHARLENE",
       "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 98.82 per share.",
-      "value": 373046,
-      "shares": 3775,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 78.36 per share.",
+      "value": 368057,
+      "shares": 4697,
       "date": "2026-09-09"
     },
     {
@@ -329,18 +329,18 @@
     {
       "name": "LA LANDE RASHIDA K",
       "role": "General Counsel",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 92.87 per share.",
-      "value": 516729,
+      "kind": "sell",
+      "text": "Sale at price 99.55 per share.",
+      "value": 553896,
       "shares": 5564,
       "date": "2026-08-21"
     },
     {
       "name": "LA LANDE RASHIDA K",
       "role": "General Counsel",
-      "kind": "sell",
-      "text": "Sale at price 99.55 per share.",
-      "value": 553896,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 92.87 per share.",
+      "value": 516729,
       "shares": 5564,
       "date": "2026-08-21"
     },

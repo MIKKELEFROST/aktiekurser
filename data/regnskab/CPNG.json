@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:20.751Z",
+  "updated_at": "2026-11-04T22:07:29.085Z",
   "source": "Yahoo Finance",
   "symbol": "CPNG",
   "summary": "Coupang, Inc., together with its subsidiaries, owns and operates retail business through its mobile applications and internet websites in South Korea and internationally. It operates through Product Commerce and Developing Offerings segments. The Product Commerce segment includes Korean retail and marketplace offerings; Rocket Fresh, a fresh grocery offering; and advertising products. The Developing Offerings segment offers Eats, a restaurant ordering and delivery service; Play, an online content streaming service; fintech activities; and Farfetch, a luxury fashion marketplace. It also performs operations and support services in the United States, South Korea, Taiwan, Singapore, China, Japan, Europe, the United Kingdom, and India. Coupang, Inc. was incorporated in 2010 and is headquartered in Seattle, Washington.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": -0.0055,
+  "eps_estimate": 0.05,
   "analysts": {
     "strong_buy": 4,
     "buy": 10,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 9267000000,
-      "earnings": 95000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 8835000000,
       "earnings": -26000000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 8856000000,
       "earnings": -570000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 9962000000,
+      "earnings": -501000000
     }
   ],
   "growth": {
-    "q0": -1.11,
-    "q1": 6,
+    "q0": 6,
+    "q1": 1.1333001,
     "y0": -4.7329,
     "y1": 1.6189
   },
   "ratings": [
+    {
+      "date": "2026-11-04",
+      "firm": "Citigroup",
+      "from": "Neutral",
+      "to": "Buy",
+      "action": "up"
+    },
     {
       "date": "2026-08-06",
       "firm": "B of A Securities",
@@ -139,13 +146,6 @@
       "firm": "Barclays",
       "from": "Overweight",
       "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-02-27",
-      "firm": "Mizuho",
-      "from": "Neutral",
-      "to": "Neutral",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.141,
-    "enterprise_value": 25946421248,
-    "ev_ebitda": -564.053,
-    "ev_revenue": 0.732,
+    "enterprise_value": 26899103744,
+    "ev_ebitda": -584.763,
+    "ev_revenue": 0.759,
     "float_shares": 1343478221,
     "short_shares": 82726583,
     "short_pct_float": 6.43,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 794,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.04,
-      "actual": 0.05,
-      "surprise_pct": 25
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.045,
@@ -269,6 +263,12 @@
       "estimate": -0.288,
       "actual": -0.0889,
       "surprise_pct": 69.13
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.0055,
+      "actual": -0.18,
+      "surprise_pct": -3172.73
     }
   ],
   "insiders": [

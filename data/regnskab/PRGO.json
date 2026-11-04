@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:22.348Z",
+  "updated_at": "2026-11-04T22:07:30.609Z",
   "source": "Yahoo Finance",
   "symbol": "PRGO",
   "summary": "Perrigo Company plc provides over-the-counter health and wellness solutions in the United States, Europe, and internationally. The company operates through Consumer Self-Care Americas and Consumer Self-Care International segments. It offers upper respiratory products, including cough suppressants, expectorants, and sinus and allergy relief; nutrition products consisting of infant formulas and oral electrolyte beverages; digestive health products, including antacids, anti-diarrheal, and anti-heartburn; pain and sleep-aids products comprising pain relievers and fever reducers; and oral care products, which include toothbrushes, toothbrush replacement heads, floss, flossers, whitening products, and toothbrush covers. The company also offers healthy lifestyle products, such as smoking cessation and well-being products; skin care products consisting of dermatological care, scar management, lice treatment, and other products for various skin conditions; women's health products comprising feminine hygiene and contraceptives; vitamins, minerals, and supplements; and other miscellaneous self-care products. It sells its products under the Compeed, Dr. Fresh, Firefly, Good Sense, Good Start, Mederma, Nasonex, Plackers, Prevacid24HR, REACH, Rembrandt, Steripod, Opill, Solpadeine, Coldrex, Physiomer, NiQuitin, ACO, ellaOne, and Compeed brands. The company also offers contract manufacturing services. It sells its products through retail drug, supermarket, and mass merchandise chains; e-commerce stores; wholesalers; pharmacies; drug and grocery retailers; and para-pharmacies. The company was formerly known as Perrigo Company and changed its name to Perrigo Company plc in December 2013. Perrigo Company plc was founded in 1887 and is headquartered in Dublin, Ireland.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 0.53379,
+  "eps_estimate": 0.71843,
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 1043300000,
-      "earnings": 7500000
-    },
-    {
       "q": "4Q2025",
       "revenue": 1109600000,
       "earnings": -1418100000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 1022800000,
       "earnings": 74500000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 988600000,
+      "earnings": -27500000
     }
   ],
   "growth": {
-    "q0": -0.3328,
-    "q1": -0.067,
+    "q0": -0.067,
+    "q1": null,
     "y0": -0.21030001,
     "y1": 0.0828
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.688,
-    "enterprise_value": 5262315520,
-    "ev_ebitda": 8.55,
-    "ev_revenue": 1.27,
+    "enterprise_value": 5255376896,
+    "ev_ebitda": 8.538,
+    "ev_revenue": 1.268,
     "float_shares": 138071236,
     "short_shares": 24179053,
     "short_pct_float": 26.72,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-11-27",
   "dividend_date": null,
   "payout_ratio": 13.4875,
-  "inst_count": 451,
+  "inst_count": 453,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.76993,
-      "actual": 0.8,
-      "surprise_pct": 3.91
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.78,
@@ -269,6 +263,12 @@
       "estimate": 0.355,
       "actual": 0.5,
       "surprise_pct": 40.85
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.53379,
+      "actual": 0.6,
+      "surprise_pct": 12.4
     }
   ],
   "insiders": [
@@ -336,30 +336,30 @@
       "date": "2026-06-12"
     },
     {
+      "name": "BEZERRA EDUARDO GUARITA",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 10.83 per share.",
+      "value": 99365,
+      "shares": 9175,
+      "date": "2026-06-05"
+    },
+    {
+      "name": "WILLIS ROBERT",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 3441,
+      "date": "2026-06-05"
+    },
+    {
       "name": "LOCKWOOD-TAYLOR PATRICK",
       "role": "Former",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 10.83 per share.",
       "value": 273241,
       "shares": 25230,
-      "date": "2026-06-05"
-    },
-    {
-      "name": "KHOURY ROBERTO",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 10.83 per share.",
-      "value": 193879,
-      "shares": 17902,
-      "date": "2026-06-05"
-    },
-    {
-      "name": "BALL DAVID",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 2867,
       "date": "2026-06-05"
     }
   ],

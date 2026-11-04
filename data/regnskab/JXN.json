@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:21.683Z",
+  "updated_at": "2026-11-04T22:07:29.896Z",
   "source": "Yahoo Finance",
   "symbol": "JXN",
   "summary": "Jackson Financial Inc., through its subsidiaries, provides suite of annuities to retail investors in the United States. It operates through three segments: Retail Annuities, Institutional Products, and Closed Life and Annuity Blocks. The Retail Annuities segment offers various retirement income and savings products, including variable, fixed index, fixed, and payout annuities, as well as registered index-linked annuities and lifetime income solutions. The Institutional Products segment provides traditional guaranteed investment contracts; funding agreements backed by commercial paper; funding agreements comprising agreements issued in conjunction with its participation in the U.S. federal home loan bank program; and medium-term funding agreement-backed notes. The Closed Life and Annuity Blocks segment offers various protection products, such as whole life, universal life, variable universal life, and term life insurance products, as well as fixed, fixed index, and payout annuities. The company also provides investment management services. It sells its products through a distribution network that includes independent broker-dealers, wirehouses, regional broker-dealers, banks, independent registered investment advisors, third-party platforms, and insurance agents. The company was formerly known as Brooke (Holdco1) Inc. and changed its name to Jackson Financial Inc. in July 2020. Jackson Financial Inc. was incorporated in 2006 and is headquartered in Lansing, Michigan.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 7.243,
+  "eps_estimate": 7.461,
   "analysts": {
     "strong_buy": 1,
     "buy": 1,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 4
   },
-  "target_mean": 147.5,
+  "target_mean": 148.25,
   "target_high": 163,
   "target_low": 136,
   "target_analysts": 4,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 1416000000,
-      "earnings": 65000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 1988000000,
       "earnings": -215000000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 2005000000,
       "earnings": 644000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1542000000,
+      "earnings": 847000000
     }
   ],
   "growth": {
-    "q0": 0.1758,
-    "q1": 0.0798,
-    "y0": 0.19520001,
-    "y1": 0.1674
+    "q0": 0.1287,
+    "q1": null,
+    "y0": 0.20889999,
+    "y1": 0.1587
   },
   "ratings": [
+    {
+      "date": "2026-11-04",
+      "firm": "Barclays",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-10-08",
       "firm": "Barclays",
@@ -139,13 +146,6 @@
       "firm": "Evercore ISI Group",
       "from": "In-Line",
       "to": "In-Line",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-13",
-      "firm": "Keefe, Bruyette & Woods",
-      "from": "Market Perform",
-      "to": "Market Perform",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.378,
-    "enterprise_value": 10101184512,
+    "enterprise_value": 10305047552,
     "ev_ebitda": null,
-    "ev_revenue": 1.542,
+    "ev_revenue": 1.574,
     "float_shares": 62083553,
     "short_shares": 3572549,
     "short_pct_float": 5.33,
@@ -246,12 +246,6 @@
   "payout_ratio": 3.7363,
   "inst_count": 689,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 5.4526,
-      "actual": 6.16,
-      "surprise_pct": 12.97
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 5.86233,
@@ -269,9 +263,69 @@
       "estimate": 5.7565,
       "actual": 7.3,
       "surprise_pct": 26.81
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 7.243,
+      "actual": 7.55,
+      "surprise_pct": 4.24
     }
   ],
   "insiders": [
+    {
+      "name": "KANDARIAN STEVEN A",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 784,
+      "date": "2026-09-24"
+    },
+    {
+      "name": "LIPPERT MARTIN J",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 329,
+      "date": "2026-09-24"
+    },
+    {
+      "name": "STECHER ESTA E",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 354,
+      "date": "2026-09-24"
+    },
+    {
+      "name": "CUMMINGS DON W",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 140,
+      "date": "2026-09-24"
+    },
+    {
+      "name": "LAWTON DREW",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 207,
+      "date": "2026-09-24"
+    },
+    {
+      "name": "KIRKLAND DEREK G",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 102,
+      "date": "2026-09-24"
+    },
     {
       "name": "RAUB CHRISTOPHER",
       "role": "Officer",
@@ -300,66 +354,12 @@
       "date": "2026-09-24"
     },
     {
-      "name": "PRIESKORN LAURA LOUENE",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 495,
-      "date": "2026-09-24"
-    },
-    {
-      "name": "KIRKLAND DEREK G",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 102,
-      "date": "2026-09-24"
-    },
-    {
       "name": "CLAFFEE LILY FU",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 329,
-      "date": "2026-09-24"
-    },
-    {
-      "name": "CHELKO CARRIE",
-      "role": "General Counsel",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 99,
-      "date": "2026-09-24"
-    },
-    {
-      "name": "LIPPERT MARTIN J",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 329,
-      "date": "2026-09-24"
-    },
-    {
-      "name": "STECHER ESTA E",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 354,
-      "date": "2026-09-24"
-    },
-    {
-      "name": "CUMMINGS DON W",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 140,
       "date": "2026-09-24"
     }
   ],

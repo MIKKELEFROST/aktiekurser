@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:22.771Z",
+  "updated_at": "2026-11-04T22:07:31.024Z",
   "source": "Yahoo Finance",
   "symbol": "SWKS",
   "summary": "Skyworks Solutions, Inc., together with its subsidiaries, develops, manufactures, and markets analog and mixed-signal semiconductor products and solutions in the United States, Taiwan, China, South Korea, Europe, the Middle East, Africa, and the Asia Pacific. The company offers amplifiers, antenna tuners, attenuators, automotive tuners and digital radios, wireless ASoC, DC/DC converters, demodulators, detectors, digital power isolators, diodes, directional couplers, diversity receive modules, filters, front-end modules, hybrids, light emitting diode drivers, low noise amplifiers, mixers, modulators, and optocouplers/optoisolators. It also provides phase locked loops, phase shifters, power dividers/combiners, power over ethernet, power isolators, ProSLIC family of subscriber line interface circuits, receivers, system in package, switches, synthesizers, timing devices, voltage-controlled oscillators/synthesizers, and voltage regulators. The company sells its products through direct sales force, electronic component distributors, and independent sales representatives. Its products are used in aerospace, automotive, broadband, cellular infrastructure, connected home, defense, entertainment and gaming, industrial, medical, smartphone, tablet, and wearables applications. The company was founded in 1962 and is headquartered in Irvine, California.",
@@ -7,10 +7,10 @@
   "website": "https://www.skyworksinc.com",
   "employees": 10000,
   "ceo": "Mr. Philip Gordon Brace",
-  "next_earnings": "2026-11-03",
-  "earnings_estimated": false,
+  "next_earnings": "2027-02-02",
+  "earnings_estimated": true,
   "earnings_call": "2026-11-03",
-  "eps_estimate": 1.27346,
+  "eps_estimate": 1.25108,
   "analysts": {
     "strong_buy": 1,
     "buy": 2,
@@ -19,17 +19,11 @@
     "strong_sell": 1,
     "total": 24
   },
-  "target_mean": 80.03529,
+  "target_mean": 80.05882,
   "target_high": 107,
-  "target_low": 61,
+  "target_low": 58,
   "target_analysts": 17,
   "statements": [
-    {
-      "year": "2022",
-      "revenue": 5485500000,
-      "net": 1275200000,
-      "margin": 23.2
-    },
     {
       "year": "2023",
       "revenue": 4772400000,
@@ -47,14 +41,15 @@
       "revenue": 4086900000,
       "net": 477100000,
       "margin": 11.7
+    },
+    {
+      "year": "2026",
+      "revenue": 3959600000,
+      "net": 172100000,
+      "margin": 4.3
     }
   ],
   "quarterly": [
-    {
-      "q": "3Q2025",
-      "revenue": 1100200000,
-      "earnings": 141400000
-    },
     {
       "q": "4Q2025",
       "revenue": 1035400000,
@@ -69,15 +64,48 @@
       "q": "2Q2026",
       "revenue": 934800000,
       "earnings": 33900000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1045700000,
+      "earnings": 23400000
     }
   ],
   "growth": {
-    "q0": -0.2764,
-    "q1": 0.0162,
-    "y0": -0.1498,
-    "y1": 0.1675
+    "q0": -0.1876,
+    "q1": -0.0423,
+    "y0": 0.113900006,
+    "y1": 0.32560003
   },
   "ratings": [
+    {
+      "date": "2026-11-04",
+      "firm": "Citigroup",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-04",
+      "firm": "RBC Capital",
+      "from": "Sector Perform",
+      "to": "Sector Perform",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-04",
+      "firm": "Susquehanna",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-04",
+      "firm": "B of A Securities",
+      "from": "Underperform",
+      "to": "Underperform",
+      "action": "main"
+    },
     {
       "date": "2026-11-02",
       "firm": "Morgan Stanley",
@@ -119,34 +147,6 @@
       "from": "Neutral",
       "to": "Buy",
       "action": "up"
-    },
-    {
-      "date": "2026-10-01",
-      "firm": "RBC Capital",
-      "from": "Sector Perform",
-      "to": "Sector Perform",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-21",
-      "firm": "BMO Capital",
-      "from": "Market Perform",
-      "to": "Market Perform",
-      "action": "init"
-    },
-    {
-      "date": "2026-07-29",
-      "firm": "Morgan Stanley",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-29",
-      "firm": "JP Morgan",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
     }
   ],
   "holders": [
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.493,
-    "enterprise_value": 12697666560,
-    "ev_ebitda": 14.426,
-    "ev_revenue": 3.163,
+    "enterprise_value": 12732275712,
+    "ev_ebitda": 14.465,
+    "ev_revenue": 3.172,
     "float_shares": 149433015,
     "short_shares": 22260153,
     "short_pct_float": 12.39,
@@ -246,12 +246,6 @@
   "payout_ratio": 1.4714999,
   "inst_count": 998,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.53277,
-      "actual": 1.76,
-      "surprise_pct": 14.82
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.39895,
@@ -269,9 +263,24 @@
       "estimate": 1.03063,
       "actual": 1.08,
       "surprise_pct": 4.79
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.27346,
+      "actual": 1.28,
+      "surprise_pct": 0.51
     }
   ],
   "insiders": [
+    {
+      "name": "GIVENS JASON K",
+      "role": "General Counsel",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 42311,
+      "date": "2026-10-05"
+    },
     {
       "name": "CLEMMER RICHARD L",
       "role": "Director",
@@ -300,15 +309,6 @@
       "date": "2026-10-05"
     },
     {
-      "name": "GIVENS JASON K",
-      "role": "General Counsel",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 42311,
-      "date": "2026-10-05"
-    },
-    {
       "name": "CARTER PHILIP MATTHEW",
       "role": "Chief Financial Officer",
       "kind": "other",
@@ -327,15 +327,6 @@
       "date": "2026-05-14"
     },
     {
-      "name": "BATEY ALAN S",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 3664,
-      "date": "2026-05-14"
-    },
-    {
       "name": "MCGLADE DAVID P",
       "role": "Director",
       "kind": "other",
@@ -345,7 +336,7 @@
       "date": "2026-05-14"
     },
     {
-      "name": "MCBRIDE SUZANNE E",
+      "name": "BEEBE KEVIN L",
       "role": "Director",
       "kind": "other",
       "text": null,
@@ -354,7 +345,16 @@
       "date": "2026-05-14"
     },
     {
-      "name": "GUERIN ERIC",
+      "name": "SCHRIESHEIM ROBERT A",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 3664,
+      "date": "2026-05-14"
+    },
+    {
+      "name": "BATEY ALAN S",
       "role": "Director",
       "kind": "other",
       "text": null,

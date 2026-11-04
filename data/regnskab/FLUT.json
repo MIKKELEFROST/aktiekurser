@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:21.164Z",
+  "updated_at": "2026-11-04T22:07:29.454Z",
   "source": "Yahoo Finance",
   "symbol": "FLUT",
   "summary": "Flutter Entertainment plc operates as a sports betting and gaming company in the United States, the United Kingdom, Ireland, Australia, Italy, and internationally. It provides sportsbooks; iGaming products, such as blackjack, roulette, slot machines, poker, and rummy, as well as lottery products; and sports betting products, which include Betfair betting exchanges, daily fantasy sports, and horse racing wagering under the TVG brand. The company offers sports betting and gaming services through fanduel.com, tvg.com, betfair.com, paddypower.com, and paddypower.ie, sportsbet.com.au, pokerstars.com, betfair.com, sisal.it, maxbet.rs, and adjarabet.com websites under the FanDuel, Sky Betting & Gaming, Sportsbet, PokerStars, Paddy Power, Sisal, tombola, Betfair, TVG, Adjarabet, and MaxBet brands, as well as live poker tours and events. It also provides business-to-business pricing and risk management services. The company was formerly known as Paddy Power Betfair plc and changed its name to Flutter Entertainment plc in 2019. Flutter Entertainment plc was incorporated in 1958 and is headquartered in New York, New York.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 0.21472,
+  "eps_estimate": 2.79305,
   "analysts": {
     "strong_buy": 4,
     "buy": 19,
@@ -19,7 +19,7 @@
     "strong_sell": 1,
     "total": 33
   },
-  "target_mean": 126.14545,
+  "target_mean": 125.84242,
   "target_high": 246,
   "target_low": 84,
   "target_analysts": 33,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 3794000000,
-      "earnings": -690000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 4737000000,
       "earnings": -8000000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 4326000000,
       "earnings": -274000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 3874000000,
+      "earnings": -862000000
     }
   ],
   "growth": {
-    "q0": -0.86910003,
-    "q1": 0.6105,
-    "y0": -0.415,
-    "y1": 0.4797
+    "q0": 0.6052,
+    "q1": 0.032,
+    "y0": -0.4155,
+    "y1": 0.47959998
   },
   "ratings": [
+    {
+      "date": "2026-11-04",
+      "firm": "BTIG",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-11-03",
       "firm": "Bernstein",
@@ -139,13 +146,6 @@
       "firm": "Susquehanna",
       "from": "Positive",
       "to": "Positive",
-      "action": "main"
-    },
-    {
-      "date": "2026-10-08",
-      "firm": "Wedbush",
-      "from": "Outperform",
-      "to": "Outperform",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.135,
-    "enterprise_value": 26781437952,
-    "ev_ebitda": 16.876,
-    "ev_revenue": 1.561,
+    "enterprise_value": 26101164032,
+    "ev_ebitda": 16.447,
+    "ev_revenue": 1.521,
     "float_shares": 125463565,
     "short_shares": 15764330,
     "short_pct_float": 11.2,
@@ -244,14 +244,8 @@
   "ex_dividend": "2019-09-05",
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 658,
+  "inst_count": 656,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.50073,
-      "actual": 1.64,
-      "surprise_pct": 227.52
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.57196,
@@ -269,9 +263,24 @@
       "estimate": 0.55464,
       "actual": 0.49,
       "surprise_pct": -11.65
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.21703,
+      "actual": -0.18,
+      "surprise_pct": -182.94
     }
   ],
   "insiders": [
+    {
+      "name": "COLDRAKE ROBERT",
+      "role": "Chief Financial Officer",
+      "kind": "sell",
+      "text": "Sale at price 97.86 per share.",
+      "value": 69480,
+      "shares": 710,
+      "date": "2026-09-01"
+    },
     {
       "name": "LIU DON H",
       "role": "Officer",
@@ -309,15 +318,6 @@
       "date": "2026-09-01"
     },
     {
-      "name": "COLDRAKE ROBERT",
-      "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 97.86 per share.",
-      "value": 69480,
-      "shares": 710,
-      "date": "2026-09-01"
-    },
-    {
       "name": "JACKSON JEREMY PETER",
       "role": "Chief Executive Officer",
       "kind": "sell",
@@ -325,6 +325,24 @@
       "value": 197085,
       "shares": 2112,
       "date": "2026-08-19"
+    },
+    {
+      "name": "CRUICKSHANK NANCY",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 2071,
+      "date": "2026-06-02"
+    },
+    {
+      "name": "BOMHARD STEFAN ANDREAS",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 2071,
+      "date": "2026-06-02"
     },
     {
       "name": "MCCARTHY CHRISTINE M.",
@@ -337,24 +355,6 @@
     },
     {
       "name": "BENNETT ROBERT R",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 2071,
-      "date": "2026-06-02"
-    },
-    {
-      "name": "KENNY DAVID W",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 2071,
-      "date": "2026-06-02"
-    },
-    {
-      "name": "SUSMAN SALLY",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

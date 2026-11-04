@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:22.824Z",
+  "updated_at": "2026-11-04T22:07:31.071Z",
   "source": "Yahoo Finance",
   "symbol": "TEVA",
   "summary": "Teva Pharmaceutical Industries Limited develops, manufactures, markets, and distributes generic and other medicines, and biopharmaceutical products in the United States, Europe, Israel, and internationally. It offers generic medicines in various dosage forms, such as tablets, capsules, injectables, inhalants, liquids, transdermal patches, ointments, and creams; sterile products, hormones, high-potency drugs, and cytotoxic substances in parenteral and solid dosage forms; and generic products with medical devices and combination products. The company also focuses on the central nervous system (CNS), respiratory, oncology, and other areas. It provides active pharmaceutical ingredients, as well as contract manufacturing services; and operates an out-licensing platform that offers a portfolio of products to other pharmaceutical companies. The company also offers BENDEKA and TREANDA injections for the treatment of chronic lymphocytic leukemia and indolent b-cell non-hodgkin's lymphoma; COPAXONE, glatiramer acetate injection to treat patients with relapsing forms of multiple sclerosis; AJOVY for the preventive treatment of migraine in adults; AUSTEDO for the treatment of tardive dyskinesia, chorea associated with Huntington's disease and tardive dyskinesia; UZEDY for the treatment of schizophrenia; QVAR RediHaler to treat asthma; BRALTUS, a long-acting muscarinic antagonist; CINQAIR/CINQAERO injection; DuoResp Spiromax budesonide and formoterol powder inhaler; AirDuo RespiClick fluticasone propionate and salmeterol inhalation powder; and ProAir RespiClick inhalation powder. It offers its OTC products under the SUDOCREM, NasenDuo, DICLOX FORTE, OLFEN Max, and FLEGAMINA brand names. The company has collaboration agreements with MedinCell S.A.; Sanofi; Alvotech; and Biolojic Design Ltd., as well as license agreement with MODAG GmbH. Teva Pharmaceutical Industries Limited was founded in 1901 and is based in Tel Aviv-Yafo, Israel.",
@@ -7,22 +7,22 @@
   "website": "https://www.tevapharm.com",
   "employees": 31173,
   "ceo": "Mr. Richard D. Francis",
-  "next_earnings": "2026-11-03",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-27",
+  "earnings_estimated": true,
   "earnings_call": "2026-11-03",
-  "eps_estimate": 0.75562,
+  "eps_estimate": 0.69587,
   "analysts": {
     "strong_buy": 4,
     "buy": 9,
-    "hold": 1,
+    "hold": 2,
     "sell": 0,
     "strong_sell": 0,
-    "total": 14
+    "total": 15
   },
-  "target_mean": 47.92308,
-  "target_high": 55,
+  "target_mean": 48.93714,
+  "target_high": 57,
   "target_low": 42,
-  "target_analysts": 13,
+  "target_analysts": 14,
   "statements": [
     {
       "year": "2022",
@@ -75,9 +75,23 @@
     "q0": null,
     "q1": null,
     "y0": null,
-    "y1": 0.47599998
+    "y1": 0.509
   },
   "ratings": [
+    {
+      "date": "2026-11-04",
+      "firm": "TD Cowen",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-04",
+      "firm": "HC Wainwright & Co.",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-11-02",
       "firm": "HC Wainwright & Co.",
@@ -129,20 +143,6 @@
     },
     {
       "date": "2026-08-12",
-      "firm": "Barclays",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-28",
-      "firm": "Piper Sandler",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-05-06",
       "firm": "Barclays",
       "from": "Overweight",
       "to": "Overweight",
@@ -230,11 +230,11 @@
     "net_pct": -2.3
   },
   "extras": {
-    "beta": 0.842,
-    "enterprise_value": 60670550016,
-    "ev_ebitda": 14.215,
-    "ev_revenue": 3.504,
-    "float_shares": 1088782743,
+    "beta": null,
+    "enterprise_value": 61771059200,
+    "ev_ebitda": 14.593,
+    "ev_revenue": 3.585,
+    "float_shares": 1089440440,
     "short_shares": 28070513,
     "short_pct_float": 2.42,
     "short_ratio": 4.4,
@@ -244,7 +244,7 @@
   "ex_dividend": "2017-11-28",
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 344,
+  "inst_count": 362,
   "eps_history": [
     {
       "quarter": "2026-09-30",
@@ -257,19 +257,19 @@
     {
       "name": "SAVAGE BRIAN",
       "role": "Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 34.70 per share.",
-      "value": 156254,
-      "shares": 4503,
+      "kind": "sell",
+      "text": "Sale at price 38.69 - 39.14 per share.",
+      "value": 285215,
+      "shares": 7342,
       "date": "2026-09-18"
     },
     {
       "name": "SAVAGE BRIAN",
       "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 38.69 - 39.14 per share.",
-      "value": 285215,
-      "shares": 7342,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 34.70 per share.",
+      "value": 156254,
+      "shares": 4503,
       "date": "2026-09-18"
     },
     {
@@ -284,6 +284,15 @@
     {
       "name": "WEISS AMIR",
       "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 37.61 - 37.63 per share.",
+      "value": 355301,
+      "shares": 9445,
+      "date": "2026-08-21"
+    },
+    {
+      "name": "WEISS AMIR",
+      "role": "Officer",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 19.61 per share.",
       "value": 49025,
@@ -291,13 +300,13 @@
       "date": "2026-08-21"
     },
     {
-      "name": "WEISS AMIR",
+      "name": "HUGHES ERIC A",
       "role": "Officer",
       "kind": "sell",
-      "text": "Sale at price 37.61 - 37.63 per share.",
-      "value": 355301,
-      "shares": 9445,
-      "date": "2026-08-21"
+      "text": "Sale at price 34.88 per share.",
+      "value": 892051,
+      "shares": 25578,
+      "date": "2026-08-03"
     },
     {
       "name": "HUGHES ERIC A",
@@ -311,15 +320,6 @@
     {
       "name": "JOVER PLACID",
       "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 12827,
-      "date": "2026-08-03"
-    },
-    {
-      "name": "JOVER PLACID",
-      "role": "Officer",
       "kind": "sell",
       "text": "Sale at price 34.88 per share.",
       "value": 447351,
@@ -327,12 +327,12 @@
       "date": "2026-08-03"
     },
     {
-      "name": "HUGHES ERIC A",
+      "name": "JOVER PLACID",
       "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 34.88 per share.",
-      "value": 892051,
-      "shares": 25578,
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 12827,
       "date": "2026-08-03"
     },
     {

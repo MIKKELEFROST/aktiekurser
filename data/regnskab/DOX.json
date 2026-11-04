@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:20.907Z",
+  "updated_at": "2026-11-04T22:07:29.226Z",
   "source": "Yahoo Finance",
   "symbol": "DOX",
   "summary": "Amdocs Limited, through its subsidiaries, provides software and services to communications, entertainment, media, and other service providers worldwide. It designs, develops, operates, implements, supports, and markets open and modular cloud offering. The company also provides CES25, a telco-native, GenAI-led customer experience suite, spanning business, and operations and network domains that is embedded with AI and related tools. In addition, it offers GenAI agents, and which include Customer Engagement Platform, a telecom-specific customer relationship management (CRM) solution; Amdocs Monetization Suite which enables customers to monetize their broad set of services and offerings; Amdocs Intelligent Networking Suite, a set of solutions that provide end-to-end service orchestration; Amdocs Charging; Amdocs eSIM Cloud that enables service providers to offer digital SIM (eSIM); Amdocs MarketONE, a based Software-as-a-Service (SaaS)-based platform that includes pre-integrated digital services, ranging from media, gaming, eLearning, sports and retail to security, and business services; and Amdocs connectX, a cloud-native telco-in-a-box software-as-a-service platform for digital telecom brands, as well as Amdocs CatalogONE that spans the entire CES25 suite and combines embedded business intelligence with telecom-specific GenAI agents. Further, the company provides consulting, experience design, data, cloud, network services, delivery, quality engineering, operations, systems integration, and content services to various platforms and technologies; maintenance, enhancement design and development, and operational support services; network deployment and optimization services; and managed services, including AI and related tools, predictive analytics, and robotic process automation, as well as quality engineering, mobile network, cloud, and professional services. Amdocs Limited was founded in 1982 and is headquartered in Saint Louis, Missouri.",
@@ -7,10 +7,10 @@
   "website": "https://www.amdocs.com",
   "employees": 26969,
   "ceo": "Mr. Shimie  Hortig",
-  "next_earnings": "2026-11-03",
-  "earnings_estimated": false,
+  "next_earnings": "2027-02-02",
+  "earnings_estimated": true,
   "earnings_call": "2026-11-03",
-  "eps_estimate": 1.978,
+  "eps_estimate": 1.6175,
   "analysts": {
     "strong_buy": 0,
     "buy": 3,
@@ -19,17 +19,11 @@
     "strong_sell": 0,
     "total": 6
   },
-  "target_mean": 79.25,
+  "target_mean": 73,
   "target_high": 105,
-  "target_low": 63,
+  "target_low": 46,
   "target_analysts": 4,
   "statements": [
-    {
-      "year": "2022",
-      "revenue": 4576697000,
-      "net": 549501000,
-      "margin": 12
-    },
     {
       "year": "2023",
       "revenue": 4887550000,
@@ -47,14 +41,15 @@
       "revenue": 4532913000,
       "net": 564704000,
       "margin": 12.5
+    },
+    {
+      "year": "2026",
+      "revenue": 4696582000,
+      "net": 497421000,
+      "margin": 10.6
     }
   ],
   "quarterly": [
-    {
-      "q": "3Q2025",
-      "revenue": 1150218000,
-      "earnings": 96327000
-    },
     {
       "q": "4Q2025",
       "revenue": 1155939000,
@@ -69,15 +64,34 @@
       "q": "2Q2026",
       "revenue": 1174895000,
       "earnings": 62169000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1193769000,
+      "earnings": 139871000
     }
   ],
   "growth": {
-    "q0": 0.0809,
-    "q1": 0.0677,
-    "y0": 0.0618,
-    "y1": 0.0817
+    "q0": -0.106400006,
+    "q1": -0.0688,
+    "y0": -0.029000001,
+    "y1": 0.2773
   },
   "ratings": [
+    {
+      "date": "2026-11-04",
+      "firm": "Stifel",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-04",
+      "firm": "Oppenheimer",
+      "from": "Outperform",
+      "to": "Perform",
+      "action": "down"
+    },
     {
       "date": "2026-06-29",
       "firm": "Keybanc",
@@ -133,20 +147,6 @@
       "from": null,
       "to": "Outperform",
       "action": "init"
-    },
-    {
-      "date": "2024-11-14",
-      "firm": "Barclays",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2024-11-13",
-      "firm": "Oppenheimer",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
     }
   ],
   "holders": [
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.415,
-    "enterprise_value": 7556073984,
-    "ev_ebitda": 7.296,
-    "ev_revenue": 1.624,
+    "enterprise_value": 7440173568,
+    "ev_ebitda": 7.184,
+    "ev_revenue": 1.599,
     "float_shares": 103099371,
     "short_shares": 8275433,
     "short_pct_float": 9.77,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.5207,
   "inst_count": 654,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.82225,
-      "actual": 1.83,
-      "surprise_pct": 0.43
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.7575,
@@ -269,9 +263,34 @@
       "estimate": 1.842,
       "actual": 1.84,
       "surprise_pct": -0.11
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.978,
+      "actual": 1.98,
+      "surprise_pct": 0.1
     }
   ],
-  "insiders": [],
+  "insiders": [
+    {
+      "name": "SMITH MATTHEW E",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 62.51 per share.",
+      "value": 29005,
+      "shares": 464,
+      "date": "2026-05-29"
+    },
+    {
+      "name": "HORTIG SHIMIE",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 84483,
+      "date": "2026-05-13"
+    }
+  ],
   "dividends": [
     {
       "date": "2016-12-28",

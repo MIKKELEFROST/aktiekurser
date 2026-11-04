@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:22.513Z",
+  "updated_at": "2026-11-04T22:07:30.766Z",
   "source": "Yahoo Finance",
   "symbol": "RVLV",
   "summary": "Revolve Group, Inc. operates as a fashion retailer for millennial and generation z consumers in the United States and internationally. The company operates in two segments, REVOLVE and FWRD. It operates a platform that connects consumers and global fashion influencers, as well as emerging, established, and owned brands. The company offers apparel, footwear, accessories, and beauty products from emerging, established, and owned brands, as well as luxury brands. It serves its customers through its websites, mobile applications, and stores. The company was formerly known as Advance Holdings, LLC and changed its name to Revolve Group, Inc. in October 2018. Revolve Group, Inc. was founded in 2003 and is headquartered in Cerritos, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": 0.235,
+  "eps_estimate": 0.2225,
   "analysts": {
     "strong_buy": 2,
     "buy": 7,
@@ -19,9 +19,9 @@
     "strong_sell": 1,
     "total": 15
   },
-  "target_mean": 30.46154,
+  "target_mean": 30.30769,
   "target_high": 37,
-  "target_low": 24,
+  "target_low": 22,
   "target_analysts": 13,
   "statements": [
     {
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 295631000,
-      "earnings": 21179000
-    },
-    {
       "q": "4Q2025",
       "revenue": 324371000,
       "earnings": 18550000
@@ -69,15 +64,41 @@
       "q": "2Q2026",
       "revenue": 347405000,
       "earnings": 18559000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 355959000,
+      "earnings": 14465000
     }
   ],
   "growth": {
-    "q0": -0.2282,
-    "q1": -0.1442,
+    "q0": -0.1442,
+    "q1": 0.2644,
     "y0": 0.033099998,
     "y1": 0.2498
   },
   "ratings": [
+    {
+      "date": "2026-11-04",
+      "firm": "TD Cowen",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-04",
+      "firm": "Piper Sandler",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-04",
+      "firm": "Evercore ISI Group",
+      "from": "In-Line",
+      "to": "In-Line",
+      "action": "main"
+    },
     {
       "date": "2026-10-28",
       "firm": "BTIG",
@@ -122,27 +143,6 @@
     },
     {
       "date": "2026-08-05",
-      "firm": "Piper Sandler",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-05-07",
-      "firm": "Barclays",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
-      "action": "main"
-    },
-    {
-      "date": "2026-05-06",
-      "firm": "UBS",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-05-06",
       "firm": "Piper Sandler",
       "from": "Overweight",
       "to": "Overweight",
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.634,
-    "enterprise_value": 1284395264,
-    "ev_ebitda": 14.726,
-    "ev_revenue": 0.98,
+    "enterprise_value": 1250985088,
+    "ev_ebitda": 14.343,
+    "ev_revenue": 0.955,
     "float_shares": 40794501,
     "short_shares": 4070693,
     "short_pct_float": 11.67,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 294,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.12833,
-      "actual": 0.3045,
-      "surprise_pct": 137.28
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.17571,
@@ -269,6 +263,12 @@
       "estimate": 0.22,
       "actual": 0.2587,
       "surprise_pct": 17.59
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.235,
+      "actual": 0.2,
+      "surprise_pct": -14.89
     }
   ],
   "insiders": [
@@ -300,8 +300,8 @@
       "date": "2026-06-05"
     },
     {
-      "name": "MENTE MICHAEL",
-      "role": "Chief Executive Officer",
+      "name": "MMMK DEVELOPMENT, INC.",
+      "role": "Beneficial Owner of more than 10% of a Class of Security",
       "kind": "sell",
       "text": "Sale at price 26.00 - 26.43 per share.",
       "value": 3141400,
@@ -311,9 +311,9 @@
     {
       "name": "MMMK DEVELOPMENT, INC.",
       "role": "Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "sell",
-      "text": "Sale at price 26.00 - 26.43 per share.",
-      "value": 3141400,
+      "kind": "other",
+      "text": null,
+      "value": null,
       "shares": 119241,
       "date": "2026-04-29"
     },
@@ -338,6 +338,15 @@
     {
       "name": "MENTE MICHAEL",
       "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 26.00 - 26.43 per share.",
+      "value": 3141400,
+      "shares": 119241,
+      "date": "2026-04-29"
+    },
+    {
+      "name": "MENTE MICHAEL",
+      "role": "Chief Executive Officer",
       "kind": "other",
       "text": null,
       "value": null,
@@ -347,15 +356,6 @@
     {
       "name": "MMMK DEVELOPMENT, INC.",
       "role": "Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 119241,
-      "date": "2026-04-29"
-    },
-    {
-      "name": "MENTE MICHAEL",
-      "role": "Chief Executive Officer",
       "kind": "sell",
       "text": "Sale at price 25.90 per share.",
       "value": 413675,

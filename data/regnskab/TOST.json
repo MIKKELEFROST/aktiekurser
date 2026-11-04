@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:22.877Z",
+  "updated_at": "2026-11-04T22:07:31.121Z",
   "source": "Yahoo Finance",
   "symbol": "TOST",
   "summary": "Toast, Inc. operates a cloud-based digital technology platform for the restaurant industry in the United States, Ireland, India, and internationally. It offers a platform of software-as-a-service for restaurant operations and point of sale, such as Toast POS; Toast IQ, a conversational artificial intelligence; vendor management; multi-location management; kitchen display system; online ordering and delivery. It offers payroll and team management; inventory and supply chain tools; xtraCHEF by toast, a set of back-office tools for restaurants, including accounts payable automation, inventory management, ingredient price tracking, and recipe costing; financial technology solutions, including integrated payment processing, and restaurant-grade hardware. The company was formerly known as Opti Systems, Inc. and changed its name to Toast, Inc. in May 2012. Toast, Inc. was incorporated in 2011 and is headquartered in Boston, Massachusetts.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": 0.37321,
+  "eps_estimate": 0.36215,
   "analysts": {
     "strong_buy": 5,
     "buy": 16,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 1633000000,
-      "earnings": 105000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 1633000000,
       "earnings": 101000000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 1908000000,
       "earnings": 154000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1981000000,
+      "earnings": 169000000
     }
   ],
   "growth": {
-    "q0": 0.33720002,
-    "q1": 0.2847,
+    "q0": 0.3488,
+    "q1": 0.35549998,
     "y0": 0.3829,
-    "y1": 0.25620002
+    "y1": 0.2624
   },
   "ratings": [
+    {
+      "date": "2026-11-04",
+      "firm": "Morgan Stanley",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-10-19",
       "firm": "Truist Securities",
@@ -139,13 +146,6 @@
       "firm": "Oppenheimer",
       "from": "Outperform",
       "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-05",
-      "firm": "RBC Capital",
-      "from": "Sector Perform",
-      "to": "Sector Perform",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.709,
-    "enterprise_value": 17603760128,
-    "ev_ebitda": 36.905,
-    "ev_revenue": 2.587,
+    "enterprise_value": 17667340288,
+    "ev_ebitda": 37.038,
+    "ev_revenue": 2.597,
     "float_shares": 484895760,
     "short_shares": 36641862,
     "short_pct_float": 7.22,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 1086,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.23341,
-      "actual": 0.2791,
-      "surprise_pct": 19.57
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.23777,
@@ -269,9 +263,24 @@
       "estimate": 0.31967,
       "actual": 0.35608,
       "surprise_pct": 11.39
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.37321,
+      "actual": 0.3812,
+      "surprise_pct": 2.14
     }
   ],
   "insiders": [
+    {
+      "name": "NIOLA ROSSANA",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 3302,
+      "date": "2026-10-30"
+    },
     {
       "name": "BHARADWAJ ANUTTHARA",
       "role": "Director",
@@ -280,15 +289,6 @@
       "value": null,
       "shares": 3566,
       "date": "2026-10-23"
-    },
-    {
-      "name": "VASSIL JONATHAN",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 2.21 per share.",
-      "value": 16847,
-      "shares": 7623,
-      "date": "2026-10-05"
     },
     {
       "name": "VASSIL JONATHAN",
@@ -304,9 +304,9 @@
       "role": "Officer",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 2.21 per share.",
-      "value": 14712,
-      "shares": 20923,
-      "date": "2026-10-02"
+      "value": 16847,
+      "shares": 7623,
+      "date": "2026-10-05"
     },
     {
       "name": "GOMEZ ELENA CASTANEDA",
@@ -315,33 +315,6 @@
       "text": "Sale at price 29.35 per share.",
       "value": 348902,
       "shares": 11886,
-      "date": "2026-10-02"
-    },
-    {
-      "name": "ELWORTHY BRIAN ROBERT",
-      "role": "General Counsel",
-      "kind": "sell",
-      "text": "Sale at price 29.35 per share.",
-      "value": 191006,
-      "shares": 6507,
-      "date": "2026-10-02"
-    },
-    {
-      "name": "NARANG AMAN",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 29.35 per share.",
-      "value": 431885,
-      "shares": 14713,
-      "date": "2026-10-02"
-    },
-    {
-      "name": "FREDETTE STEPHEN",
-      "role": "President",
-      "kind": "sell",
-      "text": "Sale at price 29.35 per share.",
-      "value": 274988,
-      "shares": 9368,
       "date": "2026-10-02"
     },
     {
@@ -354,13 +327,40 @@
       "date": "2026-10-02"
     },
     {
-      "name": "GOMEZ ELENA CASTANEDA",
-      "role": "President",
+      "name": "VASSIL JONATHAN",
+      "role": "Officer",
       "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 23693,
-      "date": "2026-10-01"
+      "text": "Conversion of Exercise of derivative security at price 2.21 per share.",
+      "value": 14712,
+      "shares": 20923,
+      "date": "2026-10-02"
+    },
+    {
+      "name": "ELWORTHY BRIAN ROBERT",
+      "role": "General Counsel",
+      "kind": "sell",
+      "text": "Sale at price 29.35 per share.",
+      "value": 191006,
+      "shares": 6507,
+      "date": "2026-10-02"
+    },
+    {
+      "name": "FREDETTE STEPHEN",
+      "role": "President",
+      "kind": "sell",
+      "text": "Sale at price 29.35 per share.",
+      "value": 274988,
+      "shares": 9368,
+      "date": "2026-10-02"
+    },
+    {
+      "name": "NARANG AMAN",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 29.35 per share.",
+      "value": 431885,
+      "shares": 14713,
+      "date": "2026-10-02"
     }
   ],
   "dividends": [],

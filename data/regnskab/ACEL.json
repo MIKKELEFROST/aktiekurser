@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:20.046Z",
+  "updated_at": "2026-11-04T22:07:28.382Z",
   "source": "Yahoo Finance",
   "symbol": "ACEL",
   "summary": "Accel Entertainment, Inc., together with its subsidiaries, operates as a distributed gaming operator in the United States. It engages in the installation, maintenance, and operation of gaming terminals; redemption devices that disburse winnings and contain automated teller machine (ATM) functionality; and other amusement devices in authorized non-casino locations, such as restaurants, bars, taverns, convenience stores, liquor stores, truck stops, and grocery stores. The company also designs and manufactures gaming terminals and related equipment, as well as offers turnkey and full-service gaming solutions to bars, restaurants, convenience stores, truck stops, and fraternal and veteran establishments. In addition, it operates stand-alone ATMs in gaming and non-gaming locations, as well as amusement devices, including jukeboxes, dartboards, pool tables, and other entertainment related equipment; and develops brick-and-mortar casinos that serve local gaming markets and horse racing venues. Accel Entertainment, Inc. is headquartered in Burr Ridge, Illinois.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": 0.265,
+  "eps_estimate": 0.27,
   "analysts": {
     "strong_buy": 1,
     "buy": 4,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 329693000,
-      "earnings": 13364000
-    },
-    {
       "q": "4Q2025",
       "revenue": 341446000,
       "earnings": 16152000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 368125000,
       "earnings": 12493000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 363555000,
+      "earnings": 20574000
     }
   ],
   "growth": {
-    "q0": 0.0421,
-    "q1": -0.0779,
+    "q0": -0.0779,
+    "q1": 0.09770001,
     "y0": -0.13239999,
     "y1": 0.2864
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.1,
-    "enterprise_value": 1288976256,
-    "ev_ebitda": 6.432,
-    "ev_revenue": 0.927,
+    "enterprise_value": 1284916608,
+    "ev_ebitda": 6.412,
+    "ev_revenue": 0.924,
     "float_shares": 43488849,
     "short_shares": 2645555,
     "short_pct_float": 4.96,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 236,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.2139,
-      "actual": 0.2543,
-      "surprise_pct": 18.89
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.19796,
@@ -269,6 +263,12 @@
       "estimate": 0.21,
       "actual": 0.2972,
       "surprise_pct": 41.52
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.265,
+      "actual": 0.22,
+      "surprise_pct": -16.98
     }
   ],
   "insiders": [
@@ -284,19 +284,19 @@
     {
       "name": "KOZLIK CHRISTEN",
       "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 1875,
+      "kind": "sell",
+      "text": "Sale at price 11.55 per share.",
+      "value": 6352,
+      "shares": 550,
       "date": "2026-09-15"
     },
     {
       "name": "KOZLIK CHRISTEN",
       "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 11.55 per share.",
-      "value": 6352,
-      "shares": 550,
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 1875,
       "date": "2026-09-15"
     },
     {

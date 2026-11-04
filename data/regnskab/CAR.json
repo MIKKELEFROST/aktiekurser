@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:20.562Z",
+  "updated_at": "2026-11-04T22:07:28.897Z",
   "source": "Yahoo Finance",
   "symbol": "CAR",
   "summary": "Avis Budget Group, Inc., together with its subsidiaries, provides car and truck rentals, car sharing, and ancillary products and services to businesses and consumers in the Americas, Europe, the Middle East and Africa, Asia, and Australasia. The company operates the Avis brand, which offers vehicle rental and other mobility solutions to the commercial and leisure segments of the travel industry and the Zipcar brand, a car sharing network that offers vehicle rental and other mobility solutions comprising budget car rental and budget truck. It also operates various other car rental brands, such as Payless, Apex, Maggiore, Morini Rent, FranceCars, AmicoBlu, Turiscar, and ACL Hire and McNicoll vehicle Hire. The company was formerly known as Cendant Corporation and changed its name to Avis Budget Group, Inc. in September 2006. Avis Budget Group, Inc. was founded in 1946 and is based in Parsippany, New Jersey.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 7.84486,
+  "eps_estimate": -1.64494,
   "analysts": {
     "strong_buy": 0,
     "buy": 0,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 3519000000,
-      "earnings": 359000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 2664000000,
       "earnings": -747000000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 2998000000,
       "earnings": 35000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 3436000000,
+      "earnings": 183000000
     }
   ],
   "growth": {
-    "q0": -0.0634,
-    "q1": 0.64910007,
+    "q0": 0.64910007,
+    "q1": null,
     "y0": -0.2929,
     "y1": 0.6353
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 2.025,
-    "enterprise_value": 32667527168,
-    "ev_ebitda": 21.226,
-    "ev_revenue": 2.789,
+    "enterprise_value": 32590518272,
+    "ev_ebitda": 21.176,
+    "ev_revenue": 2.783,
     "float_shares": 14852360,
     "short_shares": 4586856,
     "short_pct_float": 47.23,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 404,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 7.90326,
-      "actual": 10.11,
-      "surprise_pct": 27.92
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.19117,
@@ -269,6 +263,12 @@
       "estimate": 1.84599,
       "actual": 0.98,
       "surprise_pct": -46.91
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 8.31,
+      "actual": 5.15,
+      "surprise_pct": -38.03
     }
   ],
   "insiders": [
@@ -300,21 +300,21 @@
       "date": "2026-07-23"
     },
     {
-      "name": "LINNEN EDWARD P",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 182.05 - 183.10 per share.",
-      "value": 1728900,
-      "shares": 9483,
-      "date": "2026-04-30"
-    },
-    {
       "name": "SIMHAMBHATLA RAVI",
       "role": "Officer",
       "kind": "sell",
       "text": "Sale at price 184.09 per share.",
       "value": 638608,
       "shares": 3469,
+      "date": "2026-04-30"
+    },
+    {
+      "name": "LINNEN EDWARD P",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 182.05 - 183.10 per share.",
+      "value": 1728900,
+      "shares": 9483,
       "date": "2026-04-30"
     },
     {

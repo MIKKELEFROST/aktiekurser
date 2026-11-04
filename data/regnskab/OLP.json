@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:22.170Z",
+  "updated_at": "2026-11-04T22:07:30.420Z",
   "source": "Yahoo Finance",
   "symbol": "OLP",
   "summary": "One Liberty Properties, Inc. is a self-administered and self-managed real estate investment trust. OLP acquires, owns and manages a geographically diversified portfolio consisting primarily of industrial properties. As of December 31, 2025, OLP owns 103 properties, including a property owned by a consolidated joint venture. The 103 properties are in 30 states. One Liberty Properties, Inc. was incorporated in 1982 and is based in Great Neck, United States.",
@@ -7,10 +7,10 @@
   "website": "https://1liberty.com",
   "employees": 9,
   "ceo": "Mr. Patrick J. Callan Jr.",
-  "next_earnings": "2026-11-05",
-  "earnings_estimated": true,
+  "next_earnings": "2026-11-03",
+  "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": 0.12,
+  "eps_estimate": 0.1,
   "analysts": {
     "strong_buy": 0,
     "buy": 2,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 23771000,
-      "earnings": 10478000
-    },
-    {
       "q": "4Q2025",
       "revenue": 24741000,
       "earnings": 2410000
@@ -69,14 +64,14 @@
       "q": "2Q2026",
       "revenue": 27000000,
       "earnings": 15658000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 26602000,
+      "earnings": 1096000
     }
   ],
-  "growth": {
-    "q0": -0.78660005,
-    "q1": null,
-    "y0": null,
-    "y1": null
-  },
+  "growth": null,
   "ratings": [
     {
       "date": "2026-06-09",
@@ -231,9 +226,9 @@
   },
   "extras": {
     "beta": 0.928,
-    "enterprise_value": 1002948288,
-    "ev_ebitda": 16.903,
-    "ev_revenue": 9.785,
+    "enterprise_value": 996400768,
+    "ev_ebitda": 16.793,
+    "ev_revenue": 9.722,
     "float_shares": 18344151,
     "short_shares": 354779,
     "short_pct_float": 2.55,
@@ -246,12 +241,6 @@
   "payout_ratio": 1.1392,
   "inst_count": 195,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.26,
-      "actual": 0.5623,
-      "surprise_pct": 116.27
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.18,
@@ -269,6 +258,12 @@
       "estimate": 0.67,
       "actual": 0.71,
       "surprise_pct": 5.97
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.12,
+      "actual": 0.119,
+      "surprise_pct": -0.83
     }
   ],
   "insiders": [
@@ -300,30 +295,48 @@
       "date": "2026-08-17"
     },
     {
-      "name": "CLAIR JUSTIN S",
+      "name": "KALISH DAVID W",
       "role": "Officer",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 5579,
+      "shares": 4910,
       "date": "2026-08-05"
     },
     {
-      "name": "KALISH ISAAC",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 3571,
-      "date": "2026-08-05"
-    },
-    {
-      "name": "MATHEW MILI",
+      "name": "ROSENZWEIG ISRAEL",
       "role": "Officer",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 2678,
+      "shares": 1785,
+      "date": "2026-08-05"
+    },
+    {
+      "name": "GOULD FREDRIC H",
+      "role": "Officer and Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 4910,
+      "date": "2026-08-05"
+    },
+    {
+      "name": "LUNDY MARK H",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 4910,
+      "date": "2026-08-05"
+    },
+    {
+      "name": "GOULD MATTHEW J",
+      "role": "Chairman of the Board",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 5802,
       "date": "2026-08-05"
     },
     {
@@ -342,24 +355,6 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 3571,
-      "date": "2026-08-05"
-    },
-    {
-      "name": "RICKETTS LAWRENCE G JR",
-      "role": "Chief Operating Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 10712,
-      "date": "2026-08-05"
-    },
-    {
-      "name": "LUNDY MARK H",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 4910,
       "date": "2026-08-05"
     }
   ],

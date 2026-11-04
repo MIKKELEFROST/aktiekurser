@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:22.213Z",
+  "updated_at": "2026-11-04T22:07:30.466Z",
   "source": "Yahoo Finance",
   "symbol": "OUST",
   "summary": "Ouster, Inc. engages in the production and sale of lidar sensor kits for the automotive, industrial, robotics, and smart infrastructure industries in the Americas, the Asia-Pacific, Europe, the Middle East, and Africa. The company offers the Outer Sensor (OS) product line, including OSDome that provides a hemispheric field of view; OS0 for wide view; OS1, for mid-range view; and OS2 for long-range view. It also provides the DF series, a suite of short, mid, and long-range solid-state digital lidar sensors for advanced driver assistance systems (ADAS) and autonomous driving systems; Velodyne that offers surround-view lidar sensors comprising VLP-16, VLP-16 Lite, VLP-16 Hi-Res, VLP-32, and VLS-128; Ouster Gemini, a perception platform designed for smart infrastructure deployments; and BlueCity, a Gemini-powered solution for traffic operations, planning, and safety. In addition, the company offers ZED, a high-performance camera that provides 2D and 3D color data, as well as AI Compute. Further, it is developing solid-state digital flash sensors, a suite of short, mid, and long-range solid-state digital lidar sensors that provide uniform precision imaging without motion blur across an entire field of view. Ouster, Inc. was founded in 2015 and is headquartered in San Francisco, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": -0.0975,
+  "eps_estimate": -0.065,
   "analysts": {
     "strong_buy": 0,
     "buy": 5,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 39525000,
-      "earnings": -21733000
-    },
-    {
       "q": "4Q2025",
       "revenue": 62178000,
       "earnings": 3985000
@@ -69,15 +64,41 @@
       "q": "2Q2026",
       "revenue": 54626000,
       "earnings": -18114000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 59325000,
+      "earnings": -14156000
     }
   ],
   "growth": {
-    "q0": 0.4011,
-    "q1": -1.9760001,
+    "q0": -1.9760001,
+    "q1": 0.65050006,
     "y0": 0.601,
     "y1": 0.63240004
   },
   "ratings": [
+    {
+      "date": "2026-11-04",
+      "firm": "Amerx",
+      "from": "Overweight",
+      "to": "Buy",
+      "action": "up"
+    },
+    {
+      "date": "2026-11-04",
+      "firm": "Rosenblatt",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-04",
+      "firm": "Cantor Fitzgerald",
+      "from": "Neutral",
+      "to": "Overweight",
+      "action": "up"
+    },
     {
       "date": "2026-08-27",
       "firm": "Rosenblatt",
@@ -126,27 +147,6 @@
       "from": "Overweight",
       "to": "Neutral",
       "action": "down"
-    },
-    {
-      "date": "2026-03-03",
-      "firm": "Rosenblatt",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2025-11-07",
-      "firm": "Cantor Fitzgerald",
-      "from": "Neutral",
-      "to": "Overweight",
-      "action": "up"
-    },
-    {
-      "date": "2025-11-06",
-      "firm": "Cantor Fitzgerald",
-      "from": "Neutral",
-      "to": "Overweight",
-      "action": "up"
     }
   ],
   "holders": [
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 3.489,
-    "enterprise_value": 1790326016,
-    "ev_ebitda": -30.74,
-    "ev_revenue": 8.737,
+    "enterprise_value": 1845131392,
+    "ev_ebitda": -31.681,
+    "ev_revenue": 9.005,
     "float_shares": 69946800,
     "short_shares": 6338555,
     "short_pct_float": 9.07,
@@ -246,12 +246,6 @@
   "payout_ratio": null,
   "inst_count": 433,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.1825,
-      "actual": -0.1628,
-      "surprise_pct": 10.79
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.135,
@@ -269,18 +263,15 @@
       "estimate": -0.136,
       "actual": -0.2597,
       "surprise_pct": -90.96
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.0975,
+      "actual": -0.1898,
+      "surprise_pct": -94.67
     }
   ],
   "insiders": [
-    {
-      "name": "GIANELLA KENNETH PHILIPPE",
-      "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 33.96 per share.",
-      "value": 532682,
-      "shares": 15686,
-      "date": "2026-09-14"
-    },
     {
       "name": "PACALA CHARLES ANGUS",
       "role": "Chief Executive Officer",
@@ -324,6 +315,15 @@
       "text": "Sale at price 33.96 per share.",
       "value": 302093,
       "shares": 8896,
+      "date": "2026-09-14"
+    },
+    {
+      "name": "GIANELLA KENNETH PHILIPPE",
+      "role": "Chief Financial Officer",
+      "kind": "sell",
+      "text": "Sale at price 33.96 per share.",
+      "value": 532682,
+      "shares": 15686,
       "date": "2026-09-14"
     },
     {

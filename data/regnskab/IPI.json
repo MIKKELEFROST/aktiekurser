@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:21.542Z",
+  "updated_at": "2026-11-04T22:07:29.837Z",
   "source": "Yahoo Finance",
   "symbol": "IPI",
   "summary": "Intrepid Potash, Inc. delivers potassium, magnesium, sulfur, salt, and water products. It operates through three segments: Potash, Trio, and Oilfield Solutions. The company offers muriate of potash for various markets, such as in agricultural market as a fertilizer input, in animal feed market as a nutrient supplement, in industrial market as a component in drilling and fracturing fluids, as well as input to other industrial processes. It also provides Trio, a specialty fertilizer that delivers potassium, sulfate, and magnesium in a single particle; salt for various markets, including animal feed, industrial applications, pool salt, and the treatment of roads and walkways for ice melting or to manage road conditions; magnesium chloride for use as a road treatment agent for deicing and dedusting; brines for use in oil and gas industry to support well workover and completion activities; and metal recovery salts. The company was founded in 2000 and is based in Denver, Colorado.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 0.05978,
+  "eps_estimate": 0.4365,
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 46640000,
-      "earnings": 0
-    },
-    {
       "q": "4Q2025",
       "revenue": 62680000,
       "earnings": 0
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 55635000,
       "earnings": 0
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 43897000,
+      "earnings": 1732000
     }
   ],
   "growth": {
-    "q0": -0.45650002,
-    "q1": -0.1092,
+    "q0": -0.1092,
+    "q1": null,
     "y0": 0.1592,
     "y1": -0.4342
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.041,
-    "enterprise_value": 227945664,
-    "ev_ebitda": 3.578,
-    "ev_revenue": 0.944,
+    "enterprise_value": 224772800,
+    "ev_ebitda": 3.528,
+    "ev_revenue": 0.93,
     "float_shares": 10632812,
     "short_shares": 398137,
     "short_pct_float": 3.03,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 212,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.17808,
-      "actual": 0.11,
-      "surprise_pct": -38.23
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.33084,
@@ -269,18 +263,15 @@
       "estimate": 0.37786,
       "actual": 0.56,
       "surprise_pct": 48.2
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.05978,
+      "actual": 0.14,
+      "surprise_pct": 134.19
     }
   ],
   "insiders": [
-    {
-      "name": "CRUTCHFIELD KEVIN S",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 2039,
-      "date": "2026-07-24"
-    },
     {
       "name": "SHEEHAN CHRISTINA",
       "role": "General Counsel",
@@ -305,8 +296,8 @@
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 2038,
-      "date": "2026-06-04"
+      "shares": 2039,
+      "date": "2026-07-24"
     },
     {
       "name": "SHEEHAN CHRISTINA",
@@ -324,6 +315,15 @@
       "text": null,
       "value": null,
       "shares": 122,
+      "date": "2026-06-04"
+    },
+    {
+      "name": "CRUTCHFIELD KEVIN S",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 2038,
       "date": "2026-06-04"
     },
     {
@@ -354,7 +354,7 @@
       "date": "2026-05-28"
     },
     {
-      "name": "WHITHAM BARTH E",
+      "name": "AVENDANO GONZALO M",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

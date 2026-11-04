@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:22.218Z",
+  "updated_at": "2026-11-04T22:07:30.468Z",
   "source": "Yahoo Finance",
   "symbol": "OVV",
   "summary": "Ovintiv Inc., together with its subsidiaries, operates as an oil and natural gas exploration and production company in North America. The company operates through USA Operations and Canadian Operations segments. It is involved in the exploration, development, production, and marketing of oil, NGLs, natural gas and other related activities in the Permian in West Texas and Anadarko in West-central Oklahoma in the United States, as well as in the Montney in northwest Alberta and northeast British Columbia. The company was formerly known as Encana Corporation and changed its name to Ovintiv Inc. in January 2020. Ovintiv Inc. was incorporated in 2020 and is based in Denver, Colorado.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 1.99793,
+  "eps_estimate": 2.23922,
   "analysts": {
     "strong_buy": 5,
     "buy": 16,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 27
   },
-  "target_mean": 80.61905,
+  "target_mean": 81.52381,
   "target_high": 97,
   "target_low": 65,
   "target_analysts": 21,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 2066000000,
-      "earnings": 148000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 2147000000,
       "earnings": 946000000
@@ -69,15 +64,34 @@
       "q": "2Q2026",
       "revenue": 3013000000,
       "earnings": 456000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 2602000000,
+      "earnings": 549000000
     }
   ],
   "growth": {
-    "q0": 0.9313,
-    "q1": 0.71589994,
-    "y0": 0.71779996,
-    "y1": 0.020299999
+    "q0": 0.6109,
+    "q1": 0.1365,
+    "y0": 0.74230003,
+    "y1": 0.015800001
   },
   "ratings": [
+    {
+      "date": "2026-11-04",
+      "firm": "Barclays",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-04",
+      "firm": "Evercore ISI Group",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
     {
       "date": "2026-10-27",
       "firm": "Stephens & Co.",
@@ -132,20 +146,6 @@
       "firm": "Truist Securities",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-10-09",
-      "firm": "CIBC",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-10-02",
-      "firm": "Scotiabank",
-      "from": "Sector Outperform",
-      "to": "Sector Outperform",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.565,
-    "enterprise_value": 23002632192,
-    "ev_ebitda": 4.712,
-    "ev_revenue": 2.415,
+    "enterprise_value": 22630703104,
+    "ev_ebitda": 4.636,
+    "ev_revenue": 2.376,
     "float_shares": 274068206,
     "short_shares": 12684715,
     "short_pct_float": 5.13,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.3343,
   "inst_count": 831,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.95713,
-      "actual": 1.0345,
-      "surprise_pct": 8.08
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.01442,
@@ -269,6 +263,12 @@
       "estimate": 1.94326,
       "actual": 1.74,
       "surprise_pct": -10.46
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.99793,
+      "actual": 1.95,
+      "surprise_pct": -2.4
     }
   ],
   "insiders": [
@@ -298,33 +298,6 @@
       "value": 126225,
       "shares": 5500,
       "date": "2026-08-07"
-    },
-    {
-      "name": "CHHINA SIPPY",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 3505,
-      "date": "2026-05-21"
-    },
-    {
-      "name": "KING TERRI GAY",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 3510,
-      "date": "2026-05-21"
-    },
-    {
-      "name": "MAYSON HOWARD JOHN",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 3510,
-      "date": "2026-05-21"
     },
     {
       "name": "RICKS THOMAS GREGORY",
@@ -360,6 +333,33 @@
       "text": null,
       "value": null,
       "shares": 3510,
+      "date": "2026-05-21"
+    },
+    {
+      "name": "GENTLE MEG A",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 3510,
+      "date": "2026-05-21"
+    },
+    {
+      "name": "HILL GREGORY P",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 3218,
+      "date": "2026-05-21"
+    },
+    {
+      "name": "CHHINA SIPPY",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 3505,
       "date": "2026-05-21"
     }
   ],

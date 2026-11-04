@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:21.176Z",
+  "updated_at": "2026-11-04T22:07:29.463Z",
   "source": "Yahoo Finance",
   "symbol": "FOA",
   "summary": "Finance of America Companies Inc. a financial service holding company, through its subsidiaries, provides home equity-based financing solutions for a modern retirement in the United States. The company operates through two segments: Retirement Solutions and Portfolio Management. It offers home equity conversion and non-agency reverse mortgage loans; and product development, loan securitization, loan sales, risk management, servicing oversight, and asset management services. The company was founded in 2013 and is headquartered in Plano, Texas.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": 1.26333,
+  "eps_estimate": 1.37,
   "analysts": {
     "strong_buy": 0,
     "buy": 2,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 177376000,
-      "earnings": 0
-    },
-    {
       "q": "3Q2025",
       "revenue": 80848000,
       "earnings": 0
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 62481000,
       "earnings": 927000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": -57948000,
+      "earnings": -48278000
     }
   ],
   "growth": {
-    "q0": -0.050100002,
-    "q1": null,
+    "q0": null,
+    "q1": 0.0727,
     "y0": null,
     "y1": 0.1189
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.758,
-    "enterprise_value": 12148604928,
+    "enterprise_value": 12144733184,
     "ev_ebitda": null,
-    "ev_revenue": 36.05,
+    "ev_revenue": 36.039,
     "float_shares": 3569285,
     "short_shares": 458454,
     "short_pct_float": 11.93,
@@ -247,12 +247,6 @@
   "inst_count": 120,
   "eps_history": [
     {
-      "quarter": "2025-09-30",
-      "estimate": 0.67109,
-      "actual": 1.33,
-      "surprise_pct": 98.19
-    },
-    {
       "quarter": "2026-03-31",
       "estimate": 0.84,
       "actual": 1.1,
@@ -263,6 +257,12 @@
       "estimate": 1.09333,
       "actual": 0.84,
       "surprise_pct": -23.17
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.26333,
+      "actual": 0.28,
+      "surprise_pct": -77.84
     }
   ],
   "insiders": [

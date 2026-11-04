@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:20.707Z",
+  "updated_at": "2026-11-04T22:07:29.039Z",
   "source": "Yahoo Finance",
   "symbol": "CNK",
   "summary": "Cinemark Holdings, Inc., together with its subsidiaries, engages in the theatrical exhibition business. It operates theatres in the United States and Latin America. Cinemark Holdings, Inc. was founded in 1984 and is headquartered in Plano, Texas.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": 0.52354,
+  "eps_estimate": 0.495,
   "analysts": {
     "strong_buy": 1,
     "buy": 5,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 11
   },
-  "target_mean": 41.81818,
+  "target_mean": 42.09091,
   "target_high": 47,
   "target_low": 34,
   "target_analysts": 11,
@@ -72,12 +72,33 @@
     }
   ],
   "growth": {
-    "q0": 1.3165,
+    "q0": 1.1903,
     "q1": 6.9946003,
-    "y0": 0.9735,
-    "y1": 0.0119
+    "y0": 0.9492,
+    "y1": 0.06
   },
   "ratings": [
+    {
+      "date": "2026-11-04",
+      "firm": "Wells Fargo",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-04",
+      "firm": "Wedbush",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-04",
+      "firm": "StoneX",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-11-02",
       "firm": "Morgan Stanley",
@@ -125,27 +146,6 @@
       "firm": "B. Riley Securities",
       "from": "Neutral",
       "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-31",
-      "firm": "Wells Fargo",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-31",
-      "firm": "Benchmark",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-31",
-      "firm": "Wedbush",
-      "from": "Outperform",
-      "to": "Outperform",
       "action": "main"
     }
   ],
@@ -224,17 +224,17 @@
   "insider_net": {
     "period": "6m",
     "buys": 13,
-    "sells": 2,
+    "sells": 1,
     "bought": 69165,
-    "sold": 259455,
-    "net_pct": -1.5
+    "sold": 109455,
+    "net_pct": -0.3
   },
   "extras": {
-    "beta": 1.043,
-    "enterprise_value": 6914484224,
-    "ev_ebitda": 10.505,
-    "ev_revenue": 2.056,
-    "float_shares": 102333299,
+    "beta": null,
+    "enterprise_value": null,
+    "ev_ebitda": null,
+    "ev_revenue": null,
+    "float_shares": 101739508,
     "short_shares": 7592614,
     "short_pct_float": 11.05,
     "short_ratio": 3.78,
@@ -243,8 +243,8 @@
   },
   "ex_dividend": "2026-08-26",
   "dividend_date": null,
-  "payout_ratio": 0.19440001,
-  "inst_count": 428,
+  "payout_ratio": 0.1475,
+  "inst_count": 427,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -282,7 +282,25 @@
       "date": "2026-08-12"
     },
     {
-      "name": "MITCHELL KEVIN LEROY",
+      "name": "CHERESKIN BENJAMIN D",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 5439,
+      "date": "2026-06-15"
+    },
+    {
+      "name": "ROSENBERG STEVEN P",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 5439,
+      "date": "2026-06-15"
+    },
+    {
+      "name": "SYUFY RAYMOND W",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -327,25 +345,7 @@
       "date": "2026-06-15"
     },
     {
-      "name": "CHERESKIN BENJAMIN D",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 5439,
-      "date": "2026-06-15"
-    },
-    {
-      "name": "ROSENBERG STEVEN P",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 5439,
-      "date": "2026-06-15"
-    },
-    {
-      "name": "SYUFY RAYMOND W",
+      "name": "MITCHELL KEVIN LEROY",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:21.769Z",
+  "updated_at": "2026-11-04T22:07:30.068Z",
   "source": "Yahoo Finance",
   "symbol": "LTC",
   "summary": "LTC Properties, Inc. is a real estate investment trust (REIT) focused on seniors housing and health care properties, principally investing through SHOP, as well as triple-net leases, and joint ventures. The Company's portfolio includes over 160 properties throughout the United States. Based on gross real estate investments, nearly 80% of the Company's assets are seniors housing communities with the remainder skilled nursing centers. LTC Properties, Inc. was established in 1992 and was incorporated in Maryland.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 0.46,
+  "eps_estimate": 0.44,
   "analysts": {
     "strong_buy": 2,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 69290000,
-      "earnings": -20149000
-    },
-    {
       "q": "4Q2025",
       "revenue": 84293000,
       "earnings": 101618000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 98859000,
       "earnings": 29479000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 115246000,
+      "earnings": 346374000
     }
   ],
   "growth": {
-    "q0": -0.0375,
-    "q1": -0.060700003,
+    "q0": -0.060700003,
+    "q1": -0.1381,
     "y0": null,
     "y1": null
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.552,
-    "enterprise_value": 3245428992,
-    "ev_ebitda": 24.615,
-    "ev_revenue": 9.549,
+    "enterprise_value": 3281006848,
+    "ev_ebitda": 24.885,
+    "ev_revenue": 9.653,
     "float_shares": 52758992,
     "short_shares": 3227271,
     "short_pct_float": 7.17,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-11-20",
   "dividend_date": null,
   "payout_ratio": 0.8143,
-  "inst_count": 426,
+  "inst_count": 430,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.46667,
-      "actual": 0.4779,
-      "surprise_pct": 2.41
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.51,
@@ -269,6 +263,12 @@
       "estimate": 0.44,
       "actual": 0.4654,
       "surprise_pct": 5.77
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.46,
+      "actual": 0.4302,
+      "surprise_pct": -6.48
     }
   ],
   "insiders": [
@@ -309,6 +309,24 @@
       "date": "2026-05-21"
     },
     {
+      "name": "TRICHE TIMOTHY J",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 39.00 per share.",
+      "value": 120003,
+      "shares": 3077,
+      "date": "2026-05-20"
+    },
+    {
+      "name": "HAWKEN JEFFREY C",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 39.00 per share.",
+      "value": 120003,
+      "shares": 3077,
+      "date": "2026-05-20"
+    },
+    {
       "name": "CHENG CORNELIA",
       "role": "Director",
       "kind": "other",
@@ -328,24 +346,6 @@
     },
     {
       "name": "PREBER BRADLEY J",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 39.00 per share.",
-      "value": 120003,
-      "shares": 3077,
-      "date": "2026-05-20"
-    },
-    {
-      "name": "TRICHE TIMOTHY J",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 39.00 per share.",
-      "value": 120003,
-      "shares": 3077,
-      "date": "2026-05-20"
-    },
-    {
-      "name": "HAWKEN JEFFREY C",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 39.00 per share.",

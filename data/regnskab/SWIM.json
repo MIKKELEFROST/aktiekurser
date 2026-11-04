@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:22.769Z",
+  "updated_at": "2026-11-04T22:07:31.025Z",
   "source": "Yahoo Finance",
   "symbol": "SWIM",
   "summary": "Latham Group, Inc. designs, manufactures, and markets in-ground residential swimming pools in North America, Australia, and New Zealand. The company offers in-ground swimming pools, including fiberglass and packaged pools; and covers, such as automatic safety and all-season pool covers; and liners. It sells its products directly to dealers and distributors who warehouse the products and sell to dealers under the Latham, The Pool Company brand name, as well as sub-brands comprising Narellan, CoverStar, Radiant, and GLI brands. The company was formerly known as Latham Topco, Inc. and changed its name to Latham Group, Inc. in March 2021. Latham Group, Inc. was founded in 1956 and is headquartered in Latham, New York.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": 0.1502,
+  "eps_estimate": -0.05103,
   "analysts": {
     "strong_buy": 0,
     "buy": 3,
@@ -19,7 +19,7 @@
     "strong_sell": 1,
     "total": 7
   },
-  "target_mean": 8.525,
+  "target_mean": 8.71667,
   "target_high": 13,
   "target_low": 5.5,
   "target_analysts": 6,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 161903000,
-      "earnings": 8117000
-    },
-    {
       "q": "4Q2025",
       "revenue": 99950000,
       "earnings": -7011000
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 197474000,
       "earnings": 12754000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 182175000,
+      "earnings": 12056000
     }
   ],
   "growth": {
-    "q0": 0.78379995,
-    "q1": -0.047199998,
-    "y0": 0.3466,
-    "y1": 0.4209
+    "q0": -0.2296,
+    "q1": 0.0247,
+    "y0": 0.4365,
+    "y1": 0.26569998
   },
   "ratings": [
     {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.816,
-    "enterprise_value": 1148141824,
-    "ev_ebitda": 13.06,
-    "ev_revenue": 1.991,
+    "enterprise_value": 1131671296,
+    "ev_ebitda": 12.872,
+    "ev_revenue": 1.963,
     "float_shares": 57447760,
     "short_shares": 4326805,
     "short_pct_float": 6.9,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 191,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.09748,
-      "actual": 0.0842,
-      "surprise_pct": -13.62
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.07931,
@@ -269,6 +263,12 @@
       "estimate": 0.16068,
       "actual": 0.1415,
       "surprise_pct": -11.94
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.1502,
+      "actual": 0.1767,
+      "surprise_pct": 17.64
     }
   ],
   "insiders": [
@@ -309,6 +309,24 @@
       "date": "2026-05-19"
     },
     {
+      "name": "LAVEN MARK PHILLIP",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 17677,
+      "date": "2026-05-01"
+    },
+    {
+      "name": "JACKSON DELU",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 17677,
+      "date": "2026-05-01"
+    },
+    {
       "name": "JACKSON JEFFREY T",
       "role": "Director",
       "kind": "other",
@@ -337,24 +355,6 @@
     },
     {
       "name": "MORNO-WADE SUZAN",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 17677,
-      "date": "2026-05-01"
-    },
-    {
-      "name": "LAVEN MARK PHILLIP",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 17677,
-      "date": "2026-05-01"
-    },
-    {
-      "name": "JACKSON DELU",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

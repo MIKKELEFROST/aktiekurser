@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:22.127Z",
+  "updated_at": "2026-11-04T22:07:30.377Z",
   "source": "Yahoo Finance",
   "symbol": "NX",
   "summary": "Quanex Building Products Corporation, together with its subsidiaries, manufactures and distributes components for original equipment manufacturers (OEM) in the building products industry in the United States, Europe, Canada, Asia, and internationally. It offers energy-efficient flexible insulating glass spacers, extruded vinyl profiles, window and door screens, precision-formed metal and wood products, window and door seals, and window and door hardware. The company also solar panel sealants, trim moldings, vinyl decking, water retention barriers, conservatory roof components, and commercial access solutions. It sells its products through sales representatives, direct sales force, distributors, and independent sales agents. Quanex Building Products Corporation was founded in 1927 and is based in Houston, Texas.",
@@ -223,17 +223,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 0,
-    "sells": 0,
-    "bought": 0,
-    "sold": null,
-    "net_pct": null
+    "buys": 1,
+    "sells": 1,
+    "bought": 5500,
+    "sold": 5500,
+    "net_pct": 0
   },
   "extras": {
     "beta": 0.964,
-    "enterprise_value": 1767594240,
-    "ev_ebitda": 8.434,
-    "ev_revenue": 0.949,
+    "enterprise_value": 1735368064,
+    "ev_ebitda": 8.28,
+    "ev_revenue": 0.931,
     "float_shares": 39696785,
     "short_shares": 2901002,
     "short_pct_float": 8.82,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-09-15",
   "dividend_date": null,
   "payout_ratio": 0.32990003,
-  "inst_count": 280,
+  "inst_count": 281,
   "eps_history": [
     {
       "quarter": "2025-10-31",
@@ -273,6 +273,24 @@
   ],
   "insiders": [
     {
+      "name": "CORNETT PAUL B.",
+      "role": "General Counsel",
+      "kind": "sell",
+      "text": "Sale at price 21.32 per share.",
+      "value": 117286,
+      "shares": 5500,
+      "date": "2026-11-02"
+    },
+    {
+      "name": "CORNETT PAUL B.",
+      "role": "General Counsel",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 19.45 per share.",
+      "value": 106975,
+      "shares": 5500,
+      "date": "2026-11-02"
+    },
+    {
       "name": "TELEIOS CAPITAL PARTNERS GMBH",
       "role": "Beneficial Owner of more than 10% of a Class of Security",
       "kind": "sell",
@@ -280,24 +298,6 @@
       "value": 3233424,
       "shares": 200000,
       "date": "2025-12-17"
-    },
-    {
-      "name": "GARCIA KIMBERLEY",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 9100,
-      "date": "2025-12-04"
-    },
-    {
-      "name": "NAVASCUES JESSICA",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 5200,
-      "date": "2025-12-04"
     },
     {
       "name": "ZUEHLKE SCOTT M.",
@@ -336,6 +336,24 @@
       "date": "2025-12-04"
     },
     {
+      "name": "GARCIA KIMBERLEY",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 9100,
+      "date": "2025-12-04"
+    },
+    {
+      "name": "NAVASCUES JESSICA",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 5200,
+      "date": "2025-12-04"
+    },
+    {
       "name": "DAVIS SUSAN F",
       "role": "Director",
       "kind": "other",
@@ -343,24 +361,6 @@
       "value": null,
       "shares": 3530,
       "date": "2025-10-31"
-    },
-    {
-      "name": "NAVASCUES JESSICA",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 14.42 - 20.78 per share.",
-      "value": 3973,
-      "shares": 221,
-      "date": "2025-10-02"
-    },
-    {
-      "name": "HUGHES BRADLEY E",
-      "role": "Director",
-      "kind": "buy",
-      "text": "Purchase at price 15.21 - 15.36 per share.",
-      "value": 99275,
-      "shares": 6500,
-      "date": "2025-09-11"
     }
   ],
   "dividends": [

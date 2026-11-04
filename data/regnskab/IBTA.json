@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:21.469Z",
+  "updated_at": "2026-11-04T22:07:29.761Z",
   "source": "Yahoo Finance",
   "symbol": "IBTA",
   "summary": "Ibotta, Inc., a technology company, provides digital promotion services to clients in the United States. The company sources digital promotions from its clients primarily consumer packaged goods brands and distributes these promotions to consumers through its network of publishers enabled by Ibotta Performance Network (IPN), a technology platform. It offers promotional services through the IPN, including direct-to-consumer mobile, web, and browser extension properties, as well as third-party publisher properties. The company also provides display ads, tiles, sponsored offers, newsletters, and feature placements. In addition, it offers LiveLift, a set of capabilities designed for brands to drive sales. The company serves consumer packaged goods brands. The company was formerly known as Zing Enterprises, Inc. and changed its name to Ibotta, Inc. in 2012. Ibotta, Inc. was incorporated in 2011 and is headquartered in Denver, Colorado.",
@@ -10,17 +10,17 @@
   "next_earnings": "2026-11-02",
   "earnings_estimated": false,
   "earnings_call": "2026-11-02",
-  "eps_estimate": 0.47,
+  "eps_estimate": 0.50422,
   "analysts": {
     "strong_buy": 1,
     "buy": 0,
-    "hold": 6,
-    "sell": 1,
+    "hold": 7,
+    "sell": 0,
     "strong_sell": 1,
     "total": 9
   },
-  "target_mean": 38.42857,
-  "target_high": 49,
+  "target_mean": 47.71429,
+  "target_high": 60,
   "target_low": 26,
   "target_analysts": 7,
   "statements": [
@@ -66,12 +66,26 @@
     }
   ],
   "growth": {
-    "q0": 0.6207,
-    "q1": 0.3125,
-    "y0": 0.0631,
-    "y1": 0.1736
+    "q0": 0.73870003,
+    "q1": 0.4363,
+    "y0": 0.073,
+    "y1": 0.1688
   },
   "ratings": [
+    {
+      "date": "2026-11-04",
+      "firm": "Citigroup",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-04",
+      "firm": "Goldman Sachs",
+      "from": "Sell",
+      "to": "Neutral",
+      "action": "up"
+    },
     {
       "date": "2026-11-03",
       "firm": "Wells Fargo",
@@ -127,20 +141,6 @@
       "from": "Buy",
       "to": "Buy",
       "action": "reit"
-    },
-    {
-      "date": "2026-07-08",
-      "firm": "Goldman Sachs",
-      "from": "Sell",
-      "to": "Sell",
-      "action": "main"
-    },
-    {
-      "date": "2026-05-07",
-      "firm": "Wells Fargo",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
-      "action": "main"
     }
   ],
   "holders": [
@@ -194,13 +194,6 @@
       "date": "2026-06-30"
     },
     {
-      "name": "Notable Capital Management, L.L.C.",
-      "kind": "institution",
-      "pct": 1.66,
-      "shares": 336042,
-      "date": "2026-06-30"
-    },
-    {
       "name": "BNP Paribas Financial Markets",
       "kind": "institution",
       "pct": 1.65,
@@ -213,22 +206,29 @@
       "pct": 1.37,
       "shares": 277664,
       "date": "2026-06-30"
+    },
+    {
+      "name": "State Street Corporation",
+      "kind": "institution",
+      "pct": 1.35,
+      "shares": 272487,
+      "date": "2026-06-30"
     }
   ],
   "insider_net": {
     "period": "6m",
     "buys": 25,
-    "sells": 25,
+    "sells": 26,
     "bought": 482328,
-    "sold": 1158060,
+    "sold": 1158306,
     "net_pct": -5.6
   },
   "extras": {
     "beta": -0.444,
-    "enterprise_value": 1037063552,
-    "ev_ebitda": -142.768,
-    "ev_revenue": 3.022,
-    "float_shares": 7431190,
+    "enterprise_value": 1284077568,
+    "ev_ebitda": -1190.063,
+    "ev_revenue": 3.589,
+    "float_shares": 7488738,
     "short_shares": 2765604,
     "short_pct_float": 26.22,
     "short_ratio": 11.2,
@@ -238,7 +238,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 211,
+  "inst_count": 210,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -321,24 +321,6 @@
       "date": "2026-10-01"
     },
     {
-      "name": "LEACH BRYAN",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 41.31 - 41.94 per share.",
-      "value": 625982,
-      "shares": 15142,
-      "date": "2026-09-22"
-    },
-    {
-      "name": "LEACH BRYAN",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 3.99 per share.",
-      "value": 60417,
-      "shares": 15142,
-      "date": "2026-09-22"
-    },
-    {
       "name": "WEISMAN TONY G.",
       "role": "Director",
       "kind": "other",
@@ -354,6 +336,24 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 9843,
+      "date": "2026-09-22"
+    },
+    {
+      "name": "LEACH BRYAN",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 41.31 - 41.94 per share.",
+      "value": 625982,
+      "shares": 15142,
+      "date": "2026-09-22"
+    },
+    {
+      "name": "LEACH BRYAN",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 3.99 per share.",
+      "value": 60417,
+      "shares": 15142,
       "date": "2026-09-22"
     }
   ],

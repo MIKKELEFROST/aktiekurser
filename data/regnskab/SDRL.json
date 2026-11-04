@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:22.578Z",
+  "updated_at": "2026-11-04T22:07:30.831Z",
   "source": "Yahoo Finance",
   "symbol": "SDRL",
   "summary": "Seadrill Limited provides offshore drilling services to the oil and gas industry worldwide. The company owns and operates floaters, such as drillships and semi-submersible rigs for operations in shallow and ultra-deep water in benign and harsh environments. It also offers jackup rigs, management services, and provides contracts drilling units to drill wells. It serves oil super-majors, state-owned national oil companies, and independent oil and gas companies. The company was formerly known as Seadrill 2021 Limited. Seadrill Limited was incorporated in 2005 and is based in Houston, Texas.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 0.13546,
+  "eps_estimate": 0.21459,
   "analysts": {
     "strong_buy": 3,
     "buy": 4,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 363000000,
-      "earnings": -11000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 362000000,
       "earnings": -10000000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 449000000,
       "earnings": 29000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 428000000,
+      "earnings": -30000000
     }
   ],
   "growth": {
-    "q0": 1.9738001,
-    "q1": 4.0788,
+    "q0": 4.0788,
+    "q1": 8.296599,
     "y0": 7.1295,
     "y1": 2.8922
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.351,
-    "enterprise_value": 3402103040,
-    "ev_ebitda": 8.238,
-    "ev_revenue": 2.305,
+    "enterprise_value": 3313919744,
+    "ev_ebitda": 8.024,
+    "ev_revenue": 2.245,
     "float_shares": 62260007,
     "short_shares": 4262447,
     "short_pct_float": 6.85,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 336,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.34058,
-      "actual": -0.1391,
-      "surprise_pct": -140.84
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.03797,
@@ -269,6 +263,12 @@
       "estimate": 0.2793,
       "actual": 0.47,
       "surprise_pct": 68.28
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.13546,
+      "actual": -0.49,
+      "surprise_pct": -461.73
     }
   ],
   "insiders": [
@@ -309,6 +309,15 @@
       "date": "2026-06-10"
     },
     {
+      "name": "ZAMBELLI ANA",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 4860,
+      "date": "2026-05-14"
+    },
+    {
       "name": "ROBERTSON JULIE J",
       "role": "Director",
       "kind": "other",
@@ -346,15 +355,6 @@
     },
     {
       "name": "QUARLS HARRY",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 4860,
-      "date": "2026-05-14"
-    },
-    {
-      "name": "SWINNEY JONATHAN",
       "role": "Director",
       "kind": "other",
       "text": null,

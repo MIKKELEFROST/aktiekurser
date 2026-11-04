@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:21.338Z",
+  "updated_at": "2026-11-04T22:07:29.638Z",
   "source": "Yahoo Finance",
   "symbol": "GXO",
   "summary": "GXO Logistics, Inc., together with its subsidiaries, provides logistics services worldwide. It provides warehousing and distribution, order fulfilment, e-commerce, reverse logistics, and other supply chain services. As of December 31, 2025, it operated in 1,043 facilities. The company serves a range of customers in the e-commerce, omnichannel retail, technology and consumer electronics, food and beverage, industrial and manufacturing, consumer packaged goods, and other industries. GXO Logistics, Inc. was incorporated in 2021 and is headquartered in Greenwich, Connecticut.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 0.85145,
+  "eps_estimate": 1.07911,
   "analysts": {
     "strong_buy": 4,
     "buy": 13,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 3395000000,
-      "earnings": 59000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 3507000000,
       "earnings": 43000000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 3441000000,
       "earnings": 25000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 3590000000,
+      "earnings": 64000000
     }
   ],
   "growth": {
-    "q0": 0.077800006,
-    "q1": 0.24040002,
+    "q0": 0.24040002,
+    "q1": 0.1575,
     "y0": 0.2033,
     "y1": 0.1658
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.539,
-    "enterprise_value": 11362360320,
-    "ev_ebitda": 12.075,
-    "ev_revenue": 0.833,
+    "enterprise_value": 11352038400,
+    "ev_ebitda": 12.064,
+    "ev_revenue": 0.832,
     "float_shares": 108139530,
     "short_shares": 7681261,
     "short_pct_float": 7.59,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 641,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.78344,
-      "actual": 0.79,
-      "surprise_pct": 0.84
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.83463,
@@ -269,6 +263,12 @@
       "estimate": 0.584,
       "actual": 0.59,
       "surprise_pct": 1.03
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.85145,
+      "actual": 0.89,
+      "surprise_pct": 4.53
     }
   ],
   "insiders": [
@@ -289,33 +289,6 @@
       "value": null,
       "shares": 3063,
       "date": "2026-07-01"
-    },
-    {
-      "name": "WISMANS KYLE",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 5012,
-      "date": "2026-05-13"
-    },
-    {
-      "name": "FASSLER MATTHEW J",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 5012,
-      "date": "2026-05-13"
-    },
-    {
-      "name": "PILZ TORSTEN",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 5012,
-      "date": "2026-05-13"
     },
     {
       "name": "KNEELAND MICHAEL J",
@@ -355,6 +328,33 @@
     },
     {
       "name": "COLUCCI MARLENE M",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 5012,
+      "date": "2026-05-13"
+    },
+    {
+      "name": "WILKIN LAURA A",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 5012,
+      "date": "2026-05-13"
+    },
+    {
+      "name": "WISMANS KYLE",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 5012,
+      "date": "2026-05-13"
+    },
+    {
+      "name": "FASSLER MATTHEW J",
       "role": "Director",
       "kind": "other",
       "text": null,

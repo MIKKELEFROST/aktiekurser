@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-11-03T21:59:23.169Z",
+  "updated_at": "2026-11-04T22:07:31.402Z",
   "source": "Yahoo Finance",
   "symbol": "XPRO",
   "summary": "Expro Ltd provides energy services in North and Latin America, Europe and Sub-Saharan Africa, the Middle East and North Africa, and the Asia-Pacific. It provides well construction products and services, such as technology solutions in tubular running services, tubular products, cementing, drilling, and wellbore cleanup; and well management services comprising well flow management, subsea well access, and well intervention and integrity solutions. The company serves exploration and production companies in onshore and offshore environments. Expro Ltd was formerly known as Expro Group Holdings N.V. Expro Ltd was founded in 1938 and is based in Houston, Texas.",
   "industry": "Oil & Gas Equipment & Services",
   "website": "https://www.expro.com",
-  "employees": 7000,
+  "employees": 8500,
   "ceo": "Mr. Michael  Jardon",
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": 0.4,
+  "eps_estimate": 0.23,
   "analysts": {
     "strong_buy": 2,
     "buy": 1,
@@ -19,9 +19,9 @@
     "strong_sell": 1,
     "total": 5
   },
-  "target_mean": 17.5,
+  "target_mean": 17.25,
   "target_high": 19,
-  "target_low": 16,
+  "target_low": 15,
   "target_analysts": 4,
   "statements": [
     {
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.90480006,
-    "q1": 1.4611,
-    "y0": -0.024500001,
-    "y1": 0.1924
+    "q0": 0.0952,
+    "q1": 1.3222001,
+    "y0": -0.33,
+    "y1": 0.65849996
   },
   "ratings": [
+    {
+      "date": "2026-11-04",
+      "firm": "Piper Sandler",
+      "from": "Underweight",
+      "to": "Underweight",
+      "action": "main"
+    },
     {
       "date": "2026-07-31",
       "firm": "Barclays",
@@ -140,22 +147,15 @@
       "from": "Overweight",
       "to": "Overweight",
       "action": "main"
-    },
-    {
-      "date": "2025-10-28",
-      "firm": "Piper Sandler",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
     }
   ],
   "holders": [
     {
       "name": "American Century Mutual Funds, Inc.-Small Cap Growth Fund",
       "kind": "fond",
-      "pct": 3.84,
-      "shares": 4309946,
-      "date": "2026-07-31"
+      "pct": 3.79,
+      "shares": 4257356,
+      "date": "2026-09-30"
     },
     {
       "name": "Fidelity Capital Trust-Fidelity Value Fund",
@@ -230,11 +230,11 @@
     "net_pct": -93.9
   },
   "extras": {
-    "beta": 0.971,
-    "enterprise_value": 1754754944,
-    "ev_ebitda": 6.443,
-    "ev_revenue": 1.129,
-    "float_shares": 99710993,
+    "beta": null,
+    "enterprise_value": 1680438144,
+    "ev_ebitda": 6.238,
+    "ev_revenue": 1.062,
+    "float_shares": 99705902,
     "short_shares": 7002430,
     "short_pct_float": 8.02,
     "short_ratio": 8.05,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 281,
+  "inst_count": 283,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -282,15 +282,6 @@
       "date": "2026-06-30"
     },
     {
-      "name": "WHELLEY EILEEN GOSS",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 15.14 per share.",
-      "value": 93399,
-      "shares": 6168,
-      "date": "2026-06-03"
-    },
-    {
       "name": "TROE LISA L",
       "role": "Director",
       "kind": "sell",
@@ -302,11 +293,11 @@
     {
       "name": "WHELLEY EILEEN GOSS",
       "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 8907,
-      "date": "2026-06-01"
+      "kind": "sell",
+      "text": "Sale at price 15.14 per share.",
+      "value": 93399,
+      "shares": 6168,
+      "date": "2026-06-03"
     },
     {
       "name": "TROE LISA L",
@@ -346,6 +337,15 @@
     },
     {
       "name": "ARBETER EITAN Z.",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 8907,
+      "date": "2026-06-01"
+    },
+    {
+      "name": "WHELLEY EILEEN GOSS",
       "role": "Director",
       "kind": "other",
       "text": null,

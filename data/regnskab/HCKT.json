@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:21.364Z",
+  "updated_at": "2026-11-04T22:07:29.662Z",
   "source": "Yahoo Finance",
   "symbol": "HCKT",
   "summary": "The Hackett Group, Inc. operates as an intellectual property platform-based generative artificial intelligence strategic consulting and executive advisory digital transformation in the United States, Europe, and internationally. The company offers Hackett AI XPLR, an enterprise-wide Gen AI assessment, ideation and solution design platform; XT, a Gen AIenabled business transformation acceleration platform; AIXelerator, a platform designed to support enterprise application implementation and modernization engagements; Ask Hackett and Hackett Connect, a Gen AIassisted knowledge and insight capability that enables Hackett associates to support delivery of executive advisory and applied intelligence programs; Quantum Leap, a software-as-a-service platform, and Digital Transformation Platform, a platform that translate benchmark insight into actionable execution steps; and ZBrain, a Gen AI engineering and agentic workflow build capability. It also provides Gen AIenabled delivery platforms including, supply chain and operation, finance, human resources, information technology, procurement, corporate services, as well as selected enterprise application implementation services, including Oracle, SAP, OneStream, and eProcurement applications. In addition, the company offers oracle solutions that help clients to choose and deploy oracle applications that meet needs and objectives; SAP solutions, including planning, architecture, and vendor evaluation and selection through implementation, customization, testing, and integration; post-implementation support, change and exception management, process transparency, system documentation, and end-user training; off-shore application development, and application maintenance and support services; and sells SAP suite of applications. The company was formerly known as Answerthink, Inc. and changed its name to The Hackett Group, Inc. in 2008. The Hackett Group, Inc. was founded in 1991 and is headquartered in Miami, Florida.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": 0.37333,
+  "eps_estimate": 0.39333,
   "analysts": {
     "strong_buy": 1,
     "buy": 2,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 73111000,
-      "earnings": 2547000
-    },
-    {
       "q": "4Q2025",
       "revenue": 75751000,
       "earnings": 5592000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 69328000,
       "earnings": 4409000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 69790000,
+      "earnings": 3557000
     }
   ],
   "growth": {
-    "q0": 0.009,
-    "q1": -0.0167,
+    "q0": -0.0167,
+    "q1": 0.0735,
     "y0": -0.066700004,
     "y1": 0.1014
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.906,
-    "enterprise_value": 397250912,
-    "ev_ebitda": 9.366,
-    "ev_revenue": 1.403,
+    "enterprise_value": 393270464,
+    "ev_ebitda": 9.272,
+    "ev_revenue": 1.389,
     "float_shares": 21884816,
     "short_shares": 1227705,
     "short_pct_float": 5.6,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.7619,
   "inst_count": 216,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.36667,
-      "actual": 0.37,
-      "surprise_pct": 0.91
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.38667,
@@ -269,18 +263,15 @@
       "estimate": 0.33667,
       "actual": 0.34,
       "surprise_pct": 0.99
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.37333,
+      "actual": 0.39,
+      "surprise_pct": 4.47
     }
   ],
   "insiders": [
-    {
-      "name": "FERNANDEZ TED A",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 23275,
-      "date": "2026-02-12"
-    },
     {
       "name": "WIX ALAN THOMAS GARRAD",
       "role": "Director",
@@ -345,21 +336,30 @@
       "date": "2026-02-12"
     },
     {
+      "name": "FERNANDEZ TED A",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 23275,
+      "date": "2026-02-12"
+    },
+    {
+      "name": "DUNGAN DAVID N",
+      "role": "Chief Operating Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 137705,
+      "date": "2025-09-16"
+    },
+    {
       "name": "RAMIREZ ROBERTO A.",
       "role": "Chief Financial Officer",
       "kind": "other",
       "text": null,
       "value": null,
       "shares": 24000,
-      "date": "2025-09-16"
-    },
-    {
-      "name": "FERNANDEZ TED A",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 262295,
       "date": "2025-09-16"
     }
   ],

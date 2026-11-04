@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:22.572Z",
+  "updated_at": "2026-11-04T22:07:30.825Z",
   "source": "Yahoo Finance",
   "symbol": "SCOR",
   "summary": "comScore, Inc. operates as an information and analytics company that measures audiences, consumer behavior, and advertising across media platforms in the United States, Europe, Latin America, Canada, and internationally. It provides Comscore TVNational that helps customers understand the performance of network advertising campaigns; Comscore TVLocal allows customers to understand consumer viewing patterns and characteristics; Media Metrix Multi-Platform and Mobile Metrix, which measure websites and applications on computers, smartphones, and tablets; Video Metrix that delivers measurement of digital video consumption; Plan Metrix, which offers understanding of consumer lifestyle; Total Home Panel Suite, which capture OTT, connected TV, and IOT device usage and content consumption; CCR, which enhances validated campaign essentials verification of mobile and desktop video campaigns; Comscore marketing solutions; Lift Models, which measures the impact of advertising on a brand; and Survey Analytics, which measure various consumer insights including brand health metrics. The company also offers Activation Solutions, including audience activation and content activation; OnDemand Essentials that provides multichannel video programming distributors and content providers with transactional tracking and reporting; Movie Solutions; and Hollywood Software Suite. In addition, it serves digital publishers, television networks, movie studios, content owners, brand advertisers, agencies, and technology providers. comScore, Inc. was incorporated in 1999 and is headquartered in Reston, Virginia.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": -0.43,
+  "eps_estimate": -0.36,
   "analysts": {
     "strong_buy": 0,
     "buy": 0,
@@ -51,16 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 89389000,
-      "earnings": -13986000
-    },
-    {
-      "q": "3Q2025",
-      "revenue": 88906000,
-      "earnings": -4518000
-    },
-    {
       "q": "4Q2025",
       "revenue": 93465000,
       "earnings": 35684000
@@ -69,11 +59,21 @@
       "q": "1Q2026",
       "revenue": 85322000,
       "earnings": -6248000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 79246000,
+      "earnings": 0
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 76158000,
+      "earnings": 0
     }
   ],
   "growth": {
-    "q0": -0.0095999995,
-    "q1": -1.055,
+    "q0": -1.055,
+    "q1": -0.23200001,
     "y0": -1.2342,
     "y1": 0.8529
   },
@@ -217,9 +217,9 @@
   },
   "extras": {
     "beta": 1.167,
-    "enterprise_value": 124585024,
-    "ev_ebitda": 57.123,
-    "ev_revenue": 0.359,
+    "enterprise_value": 124736864,
+    "ev_ebitda": 57.193,
+    "ev_revenue": 0.36,
     "float_shares": 2679730,
     "short_shares": 28933,
     "short_pct_float": 0.59,
@@ -232,12 +232,6 @@
   "payout_ratio": 0,
   "inst_count": 35,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.915,
-      "actual": -0.4259,
-      "surprise_pct": -146.55
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.94,
@@ -255,6 +249,12 @@
       "estimate": 0.13,
       "actual": -0.3962,
       "surprise_pct": -404.77
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.43,
+      "actual": -0.0891,
+      "surprise_pct": 79.28
     }
   ],
   "insiders": [
@@ -340,12 +340,12 @@
       "date": "2026-06-05"
     },
     {
-      "name": "FISHER ITZHAK",
-      "role": "Director",
+      "name": "LIBERTY BROADBAND CORP",
+      "role": "Director and Beneficial Owner of more than 10% of a Class of Security",
       "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 10000,
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 3286825,
       "date": "2025-12-29"
     }
   ],

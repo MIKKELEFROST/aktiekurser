@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:22.054Z",
+  "updated_at": "2026-11-04T22:07:30.289Z",
   "source": "Yahoo Finance",
   "symbol": "NLY",
   "summary": "Annaly Capital Management, Inc., a diversified capital manager, engages in the residential mortgage finance business. The company invests in agency mortgage-backed securities collateralized by residential mortgages; non-agency residential whole loans and securitized products within the residential and commercial markets; mortgage servicing rights; agency commercial mortgage-backed securities; to-be-announced forward contracts; residential mortgage-backed securities; residential mortgage loans; and agency or private label credit risk transfer securities. It has elected to be taxed as a real estate investment trust (REIT). As a REIT, it is not subject to federal income tax to the extent that it distributes its taxable income to its shareholders. Annaly Capital Management, Inc. was incorporated in 1996 and is based in New York, New York.",
@@ -19,8 +19,8 @@
     "strong_sell": 0,
     "total": 13
   },
-  "target_mean": 21.5,
-  "target_high": 25,
+  "target_mean": 21.13636,
+  "target_high": 23,
   "target_low": 19.5,
   "target_analysts": 11,
   "statements": [
@@ -73,9 +73,9 @@
   ],
   "growth": {
     "q0": 0.0584,
-    "q1": 0.0383,
-    "y0": 0.0721,
-    "y1": 0.0021
+    "q1": 0.0346,
+    "y0": 0.0715,
+    "y1": -0.0049
   },
   "ratings": [
     {
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 1,
-    "sells": 2,
+    "sells": 3,
     "bought": 7628,
-    "sold": 66537,
-    "net_pct": -7
+    "sold": 114760,
+    "net_pct": -11.9
   },
   "extras": {
     "beta": 1.31,
-    "enterprise_value": 142367080448,
+    "enterprise_value": 142162247680,
     "ev_ebitda": null,
-    "ev_revenue": 102.303,
+    "ev_revenue": 102.156,
     "float_shares": 786492090,
     "short_shares": 75966,
     "short_pct_float": 0.01,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-09-30",
   "dividend_date": null,
   "payout_ratio": 2.0139,
-  "inst_count": 1055,
+  "inst_count": 1054,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "FINKELSTEIN DAVID L",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 18.43 per share.",
+      "value": 888750,
+      "shares": 48223,
+      "date": "2026-11-02"
+    },
     {
       "name": "FINKELSTEIN DAVID L",
       "role": "Chief Executive Officer",
@@ -309,15 +318,6 @@
       "date": "2026-04-27"
     },
     {
-      "name": "CAMPBELL STEVEN FRANCIS",
-      "role": "President",
-      "kind": "sell",
-      "text": "Sale at price 22.83 per share.",
-      "value": 604790,
-      "shares": 26491,
-      "date": "2026-02-25"
-    },
-    {
       "name": "FINKELSTEIN DAVID L",
       "role": "Chief Executive Officer",
       "kind": "other",
@@ -345,21 +345,21 @@
       "date": "2026-02-25"
     },
     {
+      "name": "CAMPBELL STEVEN FRANCIS",
+      "role": "President",
+      "kind": "sell",
+      "text": "Sale at price 22.83 per share.",
+      "value": 604790,
+      "shares": 26491,
+      "date": "2026-02-25"
+    },
+    {
       "name": "FINKELSTEIN DAVID L",
       "role": "Chief Executive Officer",
       "kind": "sell",
       "text": "Sale at price 23.13 per share.",
       "value": 1156500,
       "shares": 50000,
-      "date": "2026-02-18"
-    },
-    {
-      "name": "WOLFE SERENA",
-      "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 23.14 per share.",
-      "value": 382643,
-      "shares": 16536,
       "date": "2026-02-18"
     }
   ],

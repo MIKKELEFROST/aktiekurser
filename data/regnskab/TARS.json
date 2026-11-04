@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:22.787Z",
+  "updated_at": "2026-11-04T22:07:31.044Z",
   "source": "Yahoo Finance",
   "symbol": "TARS",
   "summary": "Tarsus Pharmaceuticals, Inc., a commercial stage biopharmaceutical company, focuses on the development and commercialization of therapeutic candidates for eye care in the United States. The company offers XDEMVY, a lotilaner ophthalmic solution for the treatment of demodex blepharitis caused by the infestation of Demodex mites. It sells its products to specialty pharmacies and distributors, as well as clinics, hospitals, pharmacies, and federal healthcare programs. The company also develops TP-04, a sterile aqueous gel formulation of lotilaner in Phase 2 trial for the treatment of ocular rosacea; and TP-05, an oral tablet formulation of lotilaner in Phase 2 trial for the prevention of Lyme disease, as well as in pre-clinical studies for community malaria reduction. In addition, it is developing the lotilaner active pharmaceutical ingredient (API) to address diseases in human medicine, including eye care and infectious disease prevention. The company has a development and license agreement with Xi An Grand Chang An Pharmaceutical Co., Ltd. for the development and commercialization of TP-03 in China for the treatment of Demodex blepharitis and meibomian gland disease. Tarsus Pharmaceuticals, Inc. was incorporated in 2016 and is headquartered in Irvine, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": -1.77,
+  "eps_estimate": -4.82,
   "analysts": {
     "strong_buy": 1,
     "buy": 9,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 10
   },
-  "target_mean": 98.88889,
+  "target_mean": 99.33333,
   "target_high": 116,
-  "target_low": 84,
+  "target_low": 88,
   "target_analysts": 9,
   "statements": [
     {
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 118697000,
-      "earnings": -12585000
-    },
-    {
       "q": "4Q2025",
       "revenue": 151668000,
       "earnings": -8373000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 173912000,
       "earnings": -18551000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 194569000,
+      "earnings": -668334000
     }
   ],
   "growth": {
-    "q0": -4.9,
-    "q1": -23.1,
+    "q0": -23.1,
+    "q1": -2.5,
     "y0": -2.6435997,
     "y1": 0.91370004
   },
   "ratings": [
+    {
+      "date": "2026-11-04",
+      "firm": "HC Wainwright & Co.",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-09-08",
       "firm": "Jefferies",
@@ -139,13 +146,6 @@
       "firm": "Barclays",
       "from": null,
       "to": "Overweight",
-      "action": "init"
-    },
-    {
-      "date": "2025-11-20",
-      "firm": "Mizuho",
-      "from": null,
-      "to": "Outperform",
       "action": "init"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.331,
-    "enterprise_value": 2856622336,
-    "ev_ebitda": -61.838,
-    "ev_revenue": 4.711,
+    "enterprise_value": 2826781952,
+    "ev_ebitda": -61.192,
+    "ev_revenue": 4.662,
     "float_shares": 32741542,
     "short_shares": 5731409,
     "short_pct_float": 12.63,
@@ -246,12 +246,6 @@
   "payout_ratio": null,
   "inst_count": 363,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.33,
-      "actual": -0.3,
-      "surprise_pct": 9.09
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.01067,
@@ -269,9 +263,24 @@
       "estimate": -0.196,
       "actual": -0.43,
       "surprise_pct": -119.39
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -1.77,
+      "actual": -0.8742,
+      "surprise_pct": 50.61
     }
   ],
   "insiders": [
+    {
+      "name": "PYOTT DAVID E I",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 201,
+      "date": "2026-09-15"
+    },
     {
       "name": "LINK WILLIAM J",
       "role": "Director",
@@ -291,13 +300,13 @@
       "date": "2026-09-15"
     },
     {
-      "name": "PYOTT DAVID E I",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 201,
-      "date": "2026-09-15"
+      "name": "NEERVANNAN SESHADRI",
+      "role": "Chief Operating Officer",
+      "kind": "sell",
+      "text": "Sale at price 85.00 per share.",
+      "value": 387940,
+      "shares": 4564,
+      "date": "2026-09-04"
     },
     {
       "name": "AZAMIAN BOBAK R",
@@ -315,15 +324,6 @@
       "text": "Sale at price 85.00 - 90.00 per share.",
       "value": 1220885,
       "shares": 13953,
-      "date": "2026-09-04"
-    },
-    {
-      "name": "NEERVANNAN SESHADRI",
-      "role": "Chief Operating Officer",
-      "kind": "sell",
-      "text": "Sale at price 85.00 per share.",
-      "value": 387940,
-      "shares": 4564,
       "date": "2026-09-04"
     },
     {

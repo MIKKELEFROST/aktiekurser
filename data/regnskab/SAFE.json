@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:22.529Z",
+  "updated_at": "2026-11-04T22:07:30.781Z",
   "source": "Yahoo Finance",
   "symbol": "SAFE",
   "summary": "Safehold Inc. is revolutionizing real estate ownership by providing a new and better way for owners to unlock the value of the land beneath their buildings. Having created the modern ground lease industry in 2017, Safehold continues to help owners of high quality multifamily, affordable housing, office, industrial, hospitality, student housing, life science and mixed-use properties generate higher returns with less risk. The Company, which is taxed as a real estate investment trust (REIT), seeks to deliver safe, growing income and long-term capital appreciation to its shareholders. Safehold Inc. was incorporated in 2016 and is based in New York, United States.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": 0.42857,
+  "eps_estimate": 0.36571,
   "analysts": {
     "strong_buy": 1,
     "buy": 2,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 96162000,
-      "earnings": 29282000
-    },
-    {
       "q": "4Q2025",
       "revenue": 97871000,
       "earnings": 27876000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 114646000,
       "earnings": 30155000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 118679000,
+      "earnings": 28807000
     }
   ],
   "growth": {
-    "q0": 0.045300003,
-    "q1": -0.1293,
+    "q0": -0.1293,
+    "q1": -0.0036000002,
     "y0": -0.0182,
     "y1": 0.0309
   },
   "ratings": [
+    {
+      "date": "2026-11-04",
+      "firm": "RBC Capital",
+      "from": "Sector Perform",
+      "to": "Sector Perform",
+      "action": "main"
+    },
     {
       "date": "2026-10-26",
       "firm": "Morgan Stanley",
@@ -139,13 +146,6 @@
       "firm": "Mizuho",
       "from": "Neutral",
       "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-02-20",
-      "firm": "RBC Capital",
-      "from": "Outperform",
-      "to": "Outperform",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.794,
-    "enterprise_value": 5655158272,
-    "ev_ebitda": 16.344,
-    "ev_revenue": 12.958,
+    "enterprise_value": 5632496640,
+    "ev_ebitda": 16.278,
+    "ev_revenue": 12.906,
     "float_shares": 54636176,
     "short_shares": 3218113,
     "short_pct_float": 8.43,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.4398,
   "inst_count": 331,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.39314,
-      "actual": 0.41,
-      "surprise_pct": 4.29
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.40713,
@@ -269,6 +263,12 @@
       "estimate": 0.41571,
       "actual": 0.42,
       "surprise_pct": 1.03
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.42857,
+      "actual": 0.41,
+      "surprise_pct": -4.33
     }
   ],
   "insiders": [
@@ -327,6 +327,15 @@
       "date": "2026-05-29"
     },
     {
+      "name": "SELIG STEFAN M",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 13655,
+      "date": "2026-05-14"
+    },
+    {
       "name": "JOSEPHS ROBIN",
       "role": "Director",
       "kind": "other",
@@ -351,15 +360,6 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 8778,
-      "date": "2026-05-14"
-    },
-    {
-      "name": "SELIG STEFAN M",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 13655,
       "date": "2026-05-14"
     }
   ],

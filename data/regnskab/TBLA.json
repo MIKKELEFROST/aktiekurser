@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:22.791Z",
+  "updated_at": "2026-11-04T22:07:31.044Z",
   "source": "Yahoo Finance",
   "symbol": "TBLA",
   "summary": "Taboola.com Ltd., together with its subsidiaries, operates an artificial intelligence-based algorithmic engine platform in Israel, the United States, the United Kingdom, Germany, and internationally. It offers Taboola, which is a platform that partners with websites, devices, and mobile apps to recommend editorial content and advertisements on the open web. The company was incorporated in 2006 and is headquartered in New York, New York.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 0.14,
+  "eps_estimate": 0.255,
   "analysts": {
     "strong_buy": 1,
     "buy": 3,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 496764000,
-      "earnings": 5244000
-    },
-    {
       "q": "4Q2025",
       "revenue": 522309000,
       "earnings": 50135000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 476826000,
       "earnings": 4317000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 462263000,
+      "earnings": 18365000
     }
   ],
   "growth": {
-    "q0": 0.2489,
-    "q1": -0.0399,
+    "q0": -0.0399,
+    "q1": 1.465,
     "y0": 0.128,
     "y1": 0.2207
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.459,
-    "enterprise_value": 950983040,
-    "ev_ebitda": 7.024,
-    "ev_revenue": 0.485,
+    "enterprise_value": 942878336,
+    "ev_ebitda": 6.964,
+    "ev_revenue": 0.48,
     "float_shares": 145219333,
     "short_shares": 8694552,
     "short_pct_float": 5.25,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 291,
+  "inst_count": 290,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.09,
-      "actual": 0.1121,
-      "surprise_pct": 24.56
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.17667,
@@ -269,6 +263,12 @@
       "estimate": 0.14,
       "actual": 0.1417,
       "surprise_pct": 1.21
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.14,
+      "actual": 0.1396,
+      "surprise_pct": -0.29
     }
   ],
   "insiders": [
@@ -354,12 +354,12 @@
       "date": "2026-05-07"
     },
     {
-      "name": "WALKER STEPHEN C",
-      "role": "Chief Financial Officer",
+      "name": "MANIV ELDAD",
+      "role": "President",
       "kind": "other",
       "text": "Stock Award(Grant) at price 3.44 per share.",
-      "value": 3748909,
-      "shares": 1089799,
+      "value": 5298460,
+      "shares": 1540250,
       "date": "2026-02-27"
     }
   ],

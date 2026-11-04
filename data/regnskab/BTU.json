@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:20.517Z",
+  "updated_at": "2026-11-04T22:07:28.851Z",
   "source": "Yahoo Finance",
   "symbol": "BTU",
   "summary": "Peabody Energy Corporation engages in the production of metallurgical and thermal coal. It operates through Seaborne Thermal, Seaborne Metallurgical, Powder River Basin, and Other U.S. Thermal segments. The company operates mines in New South Wales and Queensland in Australia and in Alabama and Wyoming in the United States; mining, preparation, and sale of thermal coal, sold primarily to electric utilities; surface mining extraction processes, coal with a lower sulfur content, and Btu; and mining sub-bituminous coal deposits. It also supplies coal primarily to electricity generators, industrial facilities, and steel manufacturers. The company was founded in 1883 and is headquartered in Saint Louis, Missouri.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": -0.03,
+  "eps_estimate": 0.63,
   "analysts": {
     "strong_buy": 0,
     "buy": 5,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 1012100000,
-      "earnings": -70100000
-    },
-    {
       "q": "4Q2025",
       "revenue": 1022300000,
       "earnings": 10400000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 1003200000,
       "earnings": -90600000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1096300000,
+      "earnings": -32800000
     }
   ],
   "growth": {
-    "q0": -2.1278,
-    "q1": 12.404301,
+    "q0": 12.404301,
+    "q1": 1.9475999,
     "y0": -2.0558999,
     "y1": 6.6565995
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.426,
-    "enterprise_value": 2513894912,
-    "ev_ebitda": 9.069,
-    "ev_revenue": 0.627,
+    "enterprise_value": 2466353920,
+    "ev_ebitda": 8.897,
+    "ev_revenue": 0.615,
     "float_shares": 112727025,
     "short_shares": 11866724,
     "short_pct_float": 13.57,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-08-12",
   "dividend_date": null,
   "payout_ratio": 0.2857,
-  "inst_count": 431,
+  "inst_count": 434,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.12986,
-      "actual": 0.0266,
-      "surprise_pct": 120.48
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.07,
@@ -269,6 +263,12 @@
       "estimate": -0.32,
       "actual": -0.4091,
       "surprise_pct": -27.84
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.03,
+      "actual": -0.0786,
+      "surprise_pct": -162
     }
   ],
   "insiders": [
@@ -279,6 +279,15 @@
       "text": "Stock Award(Grant) at price 27.64 per share.",
       "value": 1437,
       "shares": 52,
+      "date": "2026-09-03"
+    },
+    {
+      "name": "GORMAN STEPHEN E",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 27.64 per share.",
+      "value": 1410,
+      "shares": 51,
       "date": "2026-09-03"
     },
     {
@@ -309,42 +318,6 @@
       "date": "2026-09-03"
     },
     {
-      "name": "GORMAN STEPHEN E",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 27.64 per share.",
-      "value": 1410,
-      "shares": 51,
-      "date": "2026-09-03"
-    },
-    {
-      "name": "WALKER CLAYTON D",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 27.64 per share.",
-      "value": 636,
-      "shares": 23,
-      "date": "2026-09-03"
-    },
-    {
-      "name": "CHAMPION WILLIAM H.",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 27.64 per share.",
-      "value": 2792,
-      "shares": 101,
-      "date": "2026-09-03"
-    },
-    {
-      "name": "HODGES GEORGANNE MARIE",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 27.64 per share.",
-      "value": 608,
-      "shares": 22,
-      "date": "2026-09-03"
-    },
-    {
       "name": "YEATES DARREN RONALD",
       "role": "Chief Operating Officer",
       "kind": "other",
@@ -360,6 +333,33 @@
       "text": "Stock Award(Grant) at price 27.64 per share.",
       "value": 2184,
       "shares": 79,
+      "date": "2026-09-03"
+    },
+    {
+      "name": "ROBERTS MALCOLM JAMES",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 27.64 per share.",
+      "value": 1299,
+      "shares": 47,
+      "date": "2026-09-03"
+    },
+    {
+      "name": "WALKER CLAYTON D",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 27.64 per share.",
+      "value": 636,
+      "shares": 23,
+      "date": "2026-09-03"
+    },
+    {
+      "name": "GRECH JAMES C",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 27.64 per share.",
+      "value": 7380,
+      "shares": 267,
       "date": "2026-09-03"
     }
   ],

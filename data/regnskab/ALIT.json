@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:20.131Z",
+  "updated_at": "2026-11-04T22:07:28.475Z",
   "source": "Yahoo Finance",
   "symbol": "ALIT",
   "summary": "Alight, Inc. a technology-enabled services company worldwide. The company provides Alight Worklife, an intuitive, cloud-based employee engagement platform. Its platform services include integrated benefits administration, healthcare navigation, financial wellbeing, leave of absence management, and retiree healthcare; and operates AI-led capabilities software. In addition, it offers a full-service customer care center helping them manage the full life cycle of their health, wealth, and wellbeing. Alight, Inc. was founded in 2020 and is headquartered in Chicago, Illinois.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": 0.12321,
+  "eps_estimate": 2.26805,
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
@@ -19,9 +19,9 @@
     "strong_sell": 1,
     "total": 5
   },
-  "target_mean": 17,
+  "target_mean": 16.33333,
   "target_high": 22,
-  "target_low": 13,
+  "target_low": 11,
   "target_analysts": 3,
   "statements": [
     {
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 533000000,
-      "earnings": -1067000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 653000000,
       "earnings": -932000000
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 511000000,
       "earnings": -10000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 500000000,
+      "earnings": -51000000
     }
   ],
   "growth": {
-    "q0": -0.9487,
-    "q1": -0.31,
-    "y0": -0.5233,
-    "y1": 0.0949
+    "q0": -0.37,
+    "q1": -0.1585,
+    "y0": -0.48099998,
+    "y1": -0.037100002
   },
   "ratings": [
     {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.739,
-    "enterprise_value": 2152023808,
-    "ev_ebitda": 4.628,
-    "ev_revenue": 0.965,
+    "enterprise_value": 2158364416,
+    "ev_ebitda": 4.642,
+    "ev_revenue": 0.967,
     "float_shares": 21638818,
     "short_shares": 1216666,
     "short_pct_float": 4.7,
@@ -246,12 +246,6 @@
   "payout_ratio": null,
   "inst_count": 241,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 2.59134,
-      "actual": 2.4,
-      "surprise_pct": -7.38
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 4.67645,
@@ -269,6 +263,12 @@
       "estimate": 0.75821,
       "actual": 0.91,
       "surprise_pct": 20.02
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.12321,
+      "actual": 0.66,
+      "surprise_pct": 435.67
     }
   ],
   "insiders": [
@@ -282,15 +282,6 @@
       "date": "2026-09-30"
     },
     {
-      "name": "WILLIAMS LENORE DENISE",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 8.92 per share.",
-      "value": 27491,
-      "shares": 3082,
-      "date": "2026-09-30"
-    },
-    {
       "name": "FRADIN RUSSELL P.",
       "role": "Director",
       "kind": "other",
@@ -300,34 +291,52 @@
       "date": "2026-09-30"
     },
     {
-      "name": "FOLEY WILLIAM P II",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 14025,
-      "date": "2026-07-02"
-    },
-    {
-      "name": "MANGINI SIOBHAN NOLAN",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 14025,
-      "date": "2026-07-02"
-    },
-    {
       "name": "WILLIAMS LENORE DENISE",
       "role": "Director",
       "kind": "other",
+      "text": "Stock Award(Grant) at price 8.92 per share.",
+      "value": 27491,
+      "shares": 3082,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "RAJGOPAL KAUSIK",
+      "role": "Director",
+      "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 14025,
       "date": "2026-07-02"
     },
     {
-      "name": "RAJGOPAL KAUSIK",
+      "name": "HAYES MICHAEL E",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 14025,
+      "date": "2026-07-02"
+    },
+    {
+      "name": "SCHRIESHEIM ROBERT A",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 14025,
+      "date": "2026-07-02"
+    },
+    {
+      "name": "LOPES ROBERT A. JR.",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 14025,
+      "date": "2026-07-02"
+    },
+    {
+      "name": "FOLEY WILLIAM P II",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -346,15 +355,6 @@
     },
     {
       "name": "MASSEY RICHARD N",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 14025,
-      "date": "2026-07-02"
-    },
-    {
-      "name": "HAYES MICHAEL E",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

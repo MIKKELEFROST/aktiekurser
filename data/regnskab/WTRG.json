@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:23.149Z",
+  "updated_at": "2026-11-04T22:07:31.381Z",
   "source": "Yahoo Finance",
   "symbol": "WTRG",
   "summary": "Essential Utilities, Inc., through its subsidiaries, operates regulated utilities that provide water, wastewater, and natural gas services in the United States. The company operates through Regulated Water; and Regulated Natural Gas segments. It also provides utility service line protection solutions and repair services to households; gas marketing and production activities; and natural gas distribution services. The company serves approximately 5.5 million residential water, commercial water, fire protection, industrial water, wastewater, and other water and utility customers in Pennsylvania, Ohio, Texas, Illinois, North Carolina, New Jersey, Indiana, Virginia, and Kentucky under the Aqua and Peoples brands. The company was formerly known as Aqua America, Inc. and changed its name to Essential Utilities, Inc. in February 2020. Essential Utilities, Inc. was founded in 1886 and is headquartered in Bryn Mawr, Pennsylvania.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 0.34452,
+  "eps_estimate": 0.6,
   "analysts": {
     "strong_buy": 0,
     "buy": 2,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 476971000,
-      "earnings": 92077000
-    },
-    {
       "q": "4Q2025",
       "revenue": 0,
       "earnings": 132676000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 530854000,
       "earnings": 105725000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 0,
+      "earnings": 103835000
     }
   ],
   "growth": {
-    "q0": 0.044,
-    "q1": 0.5437,
+    "q0": 0.2766,
+    "q1": -0.018099999,
     "y0": 0.0185,
     "y1": 0.062800005
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.61,
-    "enterprise_value": 21140639744,
-    "ev_ebitda": 15.66,
-    "ev_revenue": 8.23,
+    "enterprise_value": 21027127296,
+    "ev_ebitda": 15.576,
+    "ev_revenue": 8.186,
     "float_shares": 282836460,
     "short_shares": 7433515,
     "short_pct_float": 3,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.6992,
   "inst_count": 915,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.2848,
-      "actual": 0.33,
-      "surprise_pct": 15.87
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.40115,
@@ -269,6 +263,12 @@
       "estimate": 0.385,
       "actual": 0.37,
       "surprise_pct": -3.9
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.34452,
+      "actual": 0.38,
+      "surprise_pct": 10.3
     }
   ],
   "insiders": [
@@ -292,6 +292,15 @@
     },
     {
       "name": "LINDE TAMARA LOUISE",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 36.82 per share.",
+      "value": 134982,
+      "shares": 3666,
+      "date": "2026-06-23"
+    },
+    {
+      "name": "CIESINSKI DAVID ALAN",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 36.82 per share.",
@@ -327,39 +336,30 @@
       "date": "2026-06-23"
     },
     {
-      "name": "CIESINSKI DAVID ALAN",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 36.82 per share.",
-      "value": 134982,
-      "shares": 3666,
-      "date": "2026-06-23"
-    },
-    {
-      "name": "LUNING CHRISTOPHER PAUL",
-      "role": "General Counsel",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 4804,
-      "date": "2026-02-20"
-    },
-    {
-      "name": "LUNING CHRISTOPHER PAUL",
-      "role": "General Counsel",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 4804,
-      "date": "2026-02-20"
-    },
-    {
-      "name": "SCHULLER DANIEL J",
+      "name": "ARNOLD COLLEEN F",
       "role": "Officer",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 6682,
+      "shares": 2747,
+      "date": "2026-02-20"
+    },
+    {
+      "name": "ARNOLD COLLEEN F",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 2747,
+      "date": "2026-02-20"
+    },
+    {
+      "name": "ARNOLD COLLEEN F",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 2747,
       "date": "2026-02-20"
     }
   ],

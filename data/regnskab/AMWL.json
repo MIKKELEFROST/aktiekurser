@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:20.183Z",
+  "updated_at": "2026-11-04T22:07:28.525Z",
   "source": "Yahoo Finance",
   "symbol": "AMWL",
   "summary": "American Well Corporation, an enterprise platform and software company, delivers digitally enabling hybrid care in the United States and internationally. The company offers Amwell Platform, a cloud-based enablement platform, digitally enables a scalable healthcare experience across all care settings; Amwell Carepoint, a device enable healthcare providers to leverage proprietary carts and transform existing tablets and TVs into digital access points in clinical settings; Amwell Converge, a platform and wraparound services of digital care into the in-person, automated, and virtual care settings; and Behavioral Health, a platform that offer students and faculty the right level of care. It also provides specialty care programs, including dermatology, musculoskeletal care, second opinion, and cardiometabolic care for patients and members; Amwell Medical Group network services consisting of primary and urgent care, behavioral health therapy, lactation counseling, and nutrition services. Further, it provides professional services to facilitate implementation, workflow design, systems integration, and service expansion for its products, as well as patient and provider engagement services. The company sells its products through field sales professionals, channel partners, and value-added resellers. It serves providers, payers, and the government, as well as the higher education sector. American Well Corporation was incorporated in 2006 and is headquartered in Boston, Massachusetts.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": -0.66,
+  "eps_estimate": -0.35,
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
@@ -19,8 +19,8 @@
     "strong_sell": 0,
     "total": 7
   },
-  "target_mean": 12.8,
-  "target_high": 16,
+  "target_mean": 13.2,
+  "target_high": 18,
   "target_low": 11,
   "target_analysts": 5,
   "statements": [
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 56286000,
-      "earnings": -32378000
-    },
-    {
       "q": "4Q2025",
       "revenue": 55308000,
       "earnings": -24922000
@@ -69,15 +64,41 @@
       "q": "2Q2026",
       "revenue": 52048000,
       "earnings": -9927000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 48991000,
+      "earnings": -11361000
     }
   ],
   "growth": {
-    "q0": 0.5746,
-    "q1": 0.6089,
+    "q0": 0.6889,
+    "q1": null,
     "y0": 0.19770001,
-    "y1": 0.38279998
+    "y1": 0.5742
   },
   "ratings": [
+    {
+      "date": "2026-11-04",
+      "firm": "TD Cowen",
+      "from": "Hold",
+      "to": "Hold",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-04",
+      "firm": "Wells Fargo",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-04",
+      "firm": "Stifel",
+      "from": "Hold",
+      "to": "Hold",
+      "action": "main"
+    },
     {
       "date": "2026-08-13",
       "firm": "Truist Securities",
@@ -125,27 +146,6 @@
       "firm": "Morgan Stanley",
       "from": "Equal-Weight",
       "to": "Equal-Weight",
-      "action": "main"
-    },
-    {
-      "date": "2025-11-05",
-      "firm": "Wells Fargo",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2025-11-05",
-      "firm": "Stifel",
-      "from": "Hold",
-      "to": "Hold",
-      "action": "main"
-    },
-    {
-      "date": "2025-08-07",
-      "firm": "Wells Fargo",
-      "from": "Overweight",
-      "to": "Overweight",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.687,
-    "enterprise_value": 33073650,
-    "ev_ebitda": -0.829,
-    "ev_revenue": 0.151,
+    "enterprise_value": 36815576,
+    "ev_ebitda": -0.923,
+    "ev_revenue": 0.168,
     "float_shares": 11938787,
     "short_shares": 206587,
     "short_pct_float": 1.4,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 79,
+  "inst_count": 80,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -1.45681,
-      "actual": -1.5516,
-      "surprise_pct": -6.51
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -1.595,
@@ -269,18 +263,15 @@
       "estimate": -0.6,
       "actual": -0.5141,
       "surprise_pct": 14.32
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.65,
+      "actual": -0.5009,
+      "surprise_pct": 22.94
     }
   ],
   "insiders": [
-    {
-      "name": "HIRSCHHORN MARK J",
-      "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 13.00 per share.",
-      "value": 55666,
-      "shares": 4282,
-      "date": "2026-10-01"
-    },
     {
       "name": "MCNEICE PAUL FRANCIS",
       "role": "Officer",
@@ -288,6 +279,15 @@
       "text": "Sale at price 13.00 per share.",
       "value": 8489,
       "shares": 653,
+      "date": "2026-10-01"
+    },
+    {
+      "name": "HIRSCHHORN MARK J",
+      "role": "Chief Financial Officer",
+      "kind": "sell",
+      "text": "Sale at price 13.00 per share.",
+      "value": 55666,
+      "shares": 4282,
       "date": "2026-10-01"
     },
     {
@@ -309,21 +309,21 @@
       "date": "2026-10-01"
     },
     {
-      "name": "HIRSCHHORN MARK J",
-      "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 11.80 per share.",
-      "value": 126862,
-      "shares": 10751,
-      "date": "2026-09-01"
-    },
-    {
       "name": "MCNEICE PAUL FRANCIS",
       "role": "Officer",
       "kind": "sell",
       "text": "Sale at price 11.80 per share.",
       "value": 1322,
       "shares": 112,
+      "date": "2026-09-01"
+    },
+    {
+      "name": "HIRSCHHORN MARK J",
+      "role": "Chief Financial Officer",
+      "kind": "sell",
+      "text": "Sale at price 11.80 per share.",
+      "value": 126862,
+      "shares": 10751,
       "date": "2026-09-01"
     },
     {
@@ -336,21 +336,21 @@
       "date": "2026-09-01"
     },
     {
-      "name": "HIRSCHHORN MARK J",
-      "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 9.33 per share.",
-      "value": 40110,
-      "shares": 4299,
-      "date": "2026-07-01"
-    },
-    {
       "name": "MCNEICE PAUL FRANCIS",
       "role": "Officer",
       "kind": "sell",
       "text": "Sale at price 9.33 per share.",
       "value": 6092,
       "shares": 653,
+      "date": "2026-07-01"
+    },
+    {
+      "name": "HIRSCHHORN MARK J",
+      "role": "Chief Financial Officer",
+      "kind": "sell",
+      "text": "Sale at price 9.33 per share.",
+      "value": 40110,
+      "shares": 4299,
       "date": "2026-07-01"
     },
     {

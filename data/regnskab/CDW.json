@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:20.611Z",
+  "updated_at": "2026-11-04T22:07:28.949Z",
   "source": "Yahoo Finance",
   "symbol": "CDW",
   "summary": "CDW Corporation provides information technology (IT) solutions in the United States, the United Kingdom, and Canada. It operates through three segments: Commercial, Government, and Education. The company offers discrete hardware and software products and services, as well as integrated IT solutions, including on-premise and cloud capabilities across hybrid infrastructure, digital experience, and security. It also provides hardware products comprising notebooks/mobile devices, tablets, network communications, collaboration hardware, data storage and servers, desktop computers, and other hardware; and software products, such as cloud solutions, software assurance, application suites, security, virtualization, collaboration and productivity applications, operating systems, and network management. In addition, the company offers advisory and design, software development, implementation, and managed services, as well as warranties. It serves business, government, education, and healthcare customers. The company was formerly known as CDW Computer Centers, Inc. and changed its name to CDW Corporation in June 2003. CDW Corporation was founded in 1984 and is based in Vernon Hills, Illinois.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 2.97984,
+  "eps_estimate": 2.82273,
   "analysts": {
     "strong_buy": 2,
     "buy": 5,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 5737400000,
-      "earnings": 291000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 5511000000,
       "earnings": 279500000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 6572200000,
       "earnings": 274400000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 6754500000,
+      "earnings": 309800000
     }
   ],
   "growth": {
-    "q0": 0.0996,
-    "q1": 0.0983,
+    "q0": 0.0983,
+    "q1": 0.1155,
     "y0": 0.0959,
     "y1": 0.0987
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.924,
-    "enterprise_value": 24894074880,
-    "ev_ebitda": 12.38,
-    "ev_revenue": 1.059,
+    "enterprise_value": 24791560192,
+    "ev_ebitda": 12.329,
+    "ev_revenue": 1.055,
     "float_shares": 124547360,
     "short_shares": 8991332,
     "short_pct_float": 8.33,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-08-25",
   "dividend_date": null,
   "payout_ratio": 0.3023,
-  "inst_count": 1113,
+  "inst_count": 1114,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 2.62214,
-      "actual": 2.71,
-      "surprise_pct": 3.35
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 2.44458,
@@ -269,6 +263,12 @@
       "estimate": 2.79895,
       "actual": 2.91,
       "surprise_pct": 3.97
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 2.97984,
+      "actual": 3.26,
+      "surprise_pct": 9.4
     }
   ],
   "insiders": [
@@ -300,6 +300,15 @@
       "date": "2026-10-01"
     },
     {
+      "name": "CONNELLY ELIZABETH H",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 142.60 per share.",
+      "value": 33922,
+      "shares": 237,
+      "date": "2026-09-10"
+    },
+    {
       "name": "FOXX ANTHONY R",
       "role": "Director",
       "kind": "other",
@@ -327,39 +336,30 @@
       "date": "2026-09-10"
     },
     {
-      "name": "JONES MARC ELLIS",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 142.60 per share.",
-      "value": 2842,
-      "shares": 19,
-      "date": "2026-09-10"
-    },
-    {
-      "name": "CONNELLY ELIZABETH H",
+      "name": "SANDERSON KATHERINE ELIZABETH",
       "role": "Officer",
       "kind": "other",
       "text": "Stock Award(Grant) at price 142.60 per share.",
-      "value": 33922,
-      "shares": 237,
+      "value": 34658,
+      "shares": 243,
       "date": "2026-09-10"
     },
     {
-      "name": "ADDICOTT VIRGINIA CLAIRE",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 142.60 per share.",
-      "value": 11712,
-      "shares": 82,
-      "date": "2026-09-10"
-    },
-    {
-      "name": "KULEVICH FREDERICK J.",
+      "name": "KUMAR MUKESH",
       "role": "Officer",
       "kind": "other",
       "text": "Stock Award(Grant) at price 142.60 per share.",
-      "value": 26334,
-      "shares": 184,
+      "value": 27422,
+      "shares": 192,
+      "date": "2026-09-10"
+    },
+    {
+      "name": "TAN HANG",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 142.60 per share.",
+      "value": 30345,
+      "shares": 212,
       "date": "2026-09-10"
     }
   ],

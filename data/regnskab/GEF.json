@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:21.239Z",
+  "updated_at": "2026-11-04T22:07:29.530Z",
   "source": "Yahoo Finance",
   "symbol": "GEF",
   "summary": "Greif, Inc., together with its subsidiaries, produces and sells industrial packaging products and services worldwide. It operates in four segments: Customized Polymer Solutions; Durable Metal Solutions; Sustainable Fiber Solutions; and Integrated Solutions. The Customized Polymer Solutions segment produces and sells polymer-based packaging products, such as plastic drums, rigid intermediate bulk containers, and small plastics for chemicals, food and beverage, agricultural, pharmaceutical, and mineral products industries. The Durable Metal Solutions segment offers metal-based packaging products, including various steel drums for the chemicals, petroleum, agriculture, and paints and coatings industries. The Sustainable Fiber Solutions segment provides fiber-based packaging products comprising fibre drums, uncoated recycled board, coated recycled board, tubes and cores, and specialty partitions made from uncoated recycled board and coated recycled board to packaging, automotive, construction, food and beverage, and building products industries. The Integrated Solutions segment offers complimentary packaging products, such as paints, linings, and closure systems for industrial packaging products and related services. The company manufactures and sells rigid industrial packaging products, such as steel, fibre and plastic drums, rigid intermediate bulk containers, jerrycans and other small plastics, closure systems for industrial packaging products, water bottles, and remanufactured and reconditioned industrial containers, as well as offers container life cycle management, logistics, warehousing, and other packaging services. It also purchases and sells recycled fiber; and produces and sells adhesives. The company was formerly known as Greif Bros. Corporation and changed its name to Greif, Inc. in 2001. Greif, Inc. was founded in 1877 and is headquartered in Delaware, Ohio.",
@@ -7,10 +7,10 @@
   "website": "https://www.greif.com",
   "employees": 12000,
   "ceo": "Mr. Ole G. Rosgaard",
-  "next_earnings": "2026-11-03",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-26",
+  "earnings_estimated": true,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 1.156,
+  "eps_estimate": 0.72,
   "analysts": {
     "strong_buy": 1,
     "buy": 1,
@@ -24,12 +24,6 @@
   "target_low": 75,
   "target_analysts": 5,
   "statements": [
-    {
-      "year": "2022",
-      "revenue": 6349500000,
-      "net": 376700000,
-      "margin": 5.9
-    },
     {
       "year": "2023",
       "revenue": 5218600000,
@@ -47,14 +41,15 @@
       "revenue": 3933100000,
       "net": 840000000,
       "margin": 21.4
+    },
+    {
+      "year": "2026",
+      "revenue": 4376800000,
+      "net": 258500000,
+      "margin": 5.9
     }
   ],
   "quarterly": [
-    {
-      "q": "3Q2025",
-      "revenue": 701300000,
-      "earnings": 720100000
-    },
     {
       "q": "4Q2025",
       "revenue": 994800000,
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 1165600000,
       "earnings": 77800000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1143600000,
+      "earnings": -6500000
     }
   ],
   "growth": {
-    "q0": 114.6,
-    "q1": 0.59169996,
-    "y0": 1.169,
-    "y1": 0.1185
+    "q0": 0.5,
+    "q1": 0.1364,
+    "y0": 0.1634,
+    "y1": 0.09729999
   },
   "ratings": [
     {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.8,
-    "enterprise_value": 5784064512,
-    "ev_ebitda": 9.97,
-    "ev_revenue": 1.344,
+    "enterprise_value": 5694813184,
+    "ev_ebitda": 9.817,
+    "ev_revenue": 1.323,
     "float_shares": 27979527,
     "short_shares": 451277,
     "short_pct_float": 2.04,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-09-17",
   "dividend_date": null,
   "payout_ratio": 1.1613,
-  "inst_count": 404,
+  "inst_count": 405,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.60167,
-      "actual": 0.01,
-      "surprise_pct": -98.34
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.67667,
@@ -269,6 +263,12 @@
       "estimate": 1.10833,
       "actual": 1.61,
       "surprise_pct": 45.26
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.156,
+      "actual": 0.87,
+      "surprise_pct": -24.74
     }
   ],
   "insiders": [
@@ -318,24 +318,6 @@
       "date": "2026-08-07"
     },
     {
-      "name": "BERGWALL TIMOTHY",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 85.26 per share.",
-      "value": 511560,
-      "shares": 6000,
-      "date": "2026-08-03"
-    },
-    {
-      "name": "ROSGAARD OLE G",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 86.68 per share.",
-      "value": 3474733,
-      "shares": 40087,
-      "date": "2026-08-03"
-    },
-    {
       "name": "EMKES MARK A",
       "role": "Director",
       "kind": "sell",
@@ -360,6 +342,24 @@
       "text": "Sale at price 86.61 per share.",
       "value": 229764,
       "shares": 2653,
+      "date": "2026-08-03"
+    },
+    {
+      "name": "BERGWALL TIMOTHY",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 85.26 per share.",
+      "value": 511560,
+      "shares": 6000,
+      "date": "2026-08-03"
+    },
+    {
+      "name": "ROSGAARD OLE G",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 86.68 per share.",
+      "value": 3474733,
+      "shares": 40087,
       "date": "2026-08-03"
     }
   ],

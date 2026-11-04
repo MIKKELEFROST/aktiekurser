@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:22.997Z",
+  "updated_at": "2026-11-04T22:07:31.237Z",
   "source": "Yahoo Finance",
   "symbol": "UWMC",
   "summary": "UWM Holdings Corporation engages in the origination, sale, and servicing residential mortgage lending in the United States. The company offers mortgage loans through wholesale channel. It originates primarily conforming and government loans. The company was founded in 1986 and is headquartered in Pontiac, Michigan.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 0.03133,
+  "eps_estimate": 0.03,
   "analysts": {
     "strong_buy": 2,
     "buy": 0,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 563240000,
-      "earnings": -1262000
-    },
-    {
       "q": "4Q2025",
       "revenue": 759039000,
       "earnings": 19412000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 162129000,
       "earnings": -80594000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 799880000,
+      "earnings": 29397000
     }
   ],
   "growth": {
-    "q0": 2.1330001,
-    "q1": -0.625,
+    "q0": -0.625,
+    "q1": -0.5712,
     "y0": -0.0988,
     "y1": 1.5644001
   },
@@ -169,7 +169,7 @@
       "kind": "fond",
       "pct": 4.2,
       "shares": 14504056,
-      "date": "2026-08-31"
+      "date": "2026-09-30"
     },
     {
       "name": "Vanguard Portfolio Management LLC",
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.873,
-    "enterprise_value": 16745418752,
-    "ev_ebitda": 31.664,
-    "ev_revenue": 5.723,
+    "enterprise_value": 16752266240,
+    "ev_ebitda": 31.677,
+    "ev_revenue": 5.726,
     "float_shares": 269374513,
     "short_shares": 85970120,
     "short_pct_float": 27.98,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-06-18",
   "dividend_date": null,
   "payout_ratio": 1.4814999,
-  "inst_count": 366,
+  "inst_count": 371,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.07199,
-      "actual": 0.01,
-      "surprise_pct": -86.11
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.08831,
@@ -269,6 +263,12 @@
       "estimate": 0.08225,
       "actual": -1.0866,
       "surprise_pct": -1421.09
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.03133,
+      "actual": 0.4605,
+      "surprise_pct": 1369.84
     }
   ],
   "insiders": [],

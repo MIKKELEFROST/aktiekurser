@@ -1,25 +1,25 @@
 {
-  "updated_at": "2026-11-03T21:59:21.557Z",
+  "updated_at": "2026-11-04T22:07:29.850Z",
   "source": "Yahoo Finance",
   "symbol": "IT",
   "summary": "Gartner, Inc. provides business and technology insights to support decision-making and performance on an organization's mission-critical priorities in the United States, Canada, Europe, the Middle East, Africa, and internationally. It operates through three segments: Insights, Conferences, and Consulting. The Insights segment delivers insights through subscription services, such as access to published content, data and benchmarks, and direct access to a network of business and technology experts. The Conferences segment enables executives and teams to learn, share, and network through its Symposium/Xpo series and peer-driven sessions, as well as through its conferences focused on specific business roles and topics. The Consulting segment provides technology-driven strategic initiatives, including custom analysis and on-the-ground support to senior executives. This segment also offers actionable solutions for IT-related priorities, including IT cost optimization, digital transformation, and IT sourcing optimization. The company was formerly known as Gartner Group, Inc. and changed its name to Gartner, Inc. in November 2001. Gartner, Inc. was founded in 1979 and is headquartered in Stamford, Connecticut.",
   "industry": "Information Technology Services",
   "website": "https://www.gartner.com",
-  "employees": 19285,
+  "employees": 20244,
   "ceo": "Mr. Eugene A. Hall",
-  "next_earnings": "2026-11-03",
-  "earnings_estimated": false,
+  "next_earnings": "2027-02-02",
+  "earnings_estimated": true,
   "earnings_call": "2026-11-03",
-  "eps_estimate": 3.92686,
+  "eps_estimate": 3.87925,
   "analysts": {
     "strong_buy": 0,
     "buy": 3,
-    "hold": 9,
+    "hold": 10,
     "sell": 1,
-    "strong_sell": 2,
+    "strong_sell": 1,
     "total": 15
   },
-  "target_mean": 193.76923,
+  "target_mean": 197.76923,
   "target_high": 235,
   "target_low": 150,
   "target_analysts": 13,
@@ -72,12 +72,33 @@
     }
   ],
   "growth": {
-    "q0": -0.0033000002,
-    "q1": 0.1663,
-    "y0": 0.097200006,
-    "y1": 0.134
+    "q0": -0.0154,
+    "q1": 0.141,
+    "y0": 0.1383,
+    "y1": 0.0912
   },
   "ratings": [
+    {
+      "date": "2026-11-04",
+      "firm": "Morgan Stanley",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-04",
+      "firm": "Goldman Sachs",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-04",
+      "firm": "Truist Securities",
+      "from": "Buy",
+      "to": "Hold",
+      "action": "down"
+    },
     {
       "date": "2026-10-20",
       "firm": "Truist Securities",
@@ -125,27 +146,6 @@
       "firm": "BMO Capital",
       "from": "Market Perform",
       "to": "Market Perform",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-05",
-      "firm": "UBS",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-05",
-      "firm": "Goldman Sachs",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-05",
-      "firm": "RBC Capital",
-      "from": "Sector Perform",
-      "to": "Sector Perform",
       "action": "main"
     }
   ],
@@ -230,13 +230,13 @@
     "net_pct": 0.1
   },
   "extras": {
-    "beta": 0.912,
-    "enterprise_value": 16697218048,
-    "ev_ebitda": 12.065,
-    "ev_revenue": 2.583,
-    "float_shares": 57221182,
+    "beta": null,
+    "enterprise_value": null,
+    "ev_ebitda": null,
+    "ev_revenue": null,
+    "float_shares": 57811094,
     "short_shares": 6593677,
-    "short_pct_float": 14.79,
+    "short_pct_float": 14.63,
     "short_ratio": 7.11,
     "last_split": "2:1",
     "last_split_date": "1996-04-01"
@@ -244,7 +244,7 @@
   "ex_dividend": "1999-07-19",
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 982,
+  "inst_count": 986,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -309,21 +309,21 @@
       "date": "2026-08-10"
     },
     {
-      "name": "HERKES CLAIRE L",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 190.71 per share.",
-      "value": 198148,
-      "shares": 1039,
-      "date": "2026-08-07"
-    },
-    {
       "name": "FUCHS ANNE SUTHERLAND",
       "role": "Director",
       "kind": "sell",
       "text": "Sale at price 184.30 per share.",
       "value": 158500,
       "shares": 860,
+      "date": "2026-08-07"
+    },
+    {
+      "name": "HERKES CLAIRE L",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 190.71 per share.",
+      "value": 198148,
+      "shares": 1039,
       "date": "2026-08-07"
     },
     {
@@ -354,7 +354,7 @@
       "date": "2026-06-01"
     },
     {
-      "name": "PAGLIUCA STEPHEN G",
+      "name": "CESAN RAUL E.",
       "role": "Director",
       "kind": "other",
       "text": null,

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:22.646Z",
+  "updated_at": "2026-11-04T22:07:30.901Z",
   "source": "Yahoo Finance",
   "symbol": "SLDP",
   "summary": "Solid Power, Inc., a research and development-stage company, develops solid-state battery technologies for the electric vehicles markets in the United States. It engages in the development of sulfide-based solid electrolytes. The company was founded in 2011 and is headquartered in Louisville, Colorado.",
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 4560000,
-      "earnings": -25867000
-    },
-    {
       "q": "4Q2025",
       "revenue": 3631000,
       "earnings": -27055000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": -268000,
       "earnings": -23821000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1224000,
+      "earnings": -24353000
     }
   ],
   "growth": {
     "q0": 0.17860001,
-    "q1": 0.17860001,
+    "q1": -0.6667,
     "y0": 0.2157,
     "y1": -0.125
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.977,
-    "enterprise_value": 214786992,
-    "ev_ebitda": -2.439,
-    "ev_revenue": 29.057,
+    "enterprise_value": 228477856,
+    "ev_ebitda": -2.595,
+    "ev_revenue": 30.909,
     "float_shares": 207998584,
     "short_shares": 30550859,
     "short_pct_float": 13.55,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 259,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.17,
-      "actual": -0.14,
-      "surprise_pct": 17.65
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.16,
@@ -269,16 +263,31 @@
       "estimate": -0.12,
       "actual": -0.11,
       "surprise_pct": 8.33
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.115,
+      "actual": -0.11,
+      "surprise_pct": 4.35
     }
   ],
   "insiders": [
     {
-      "name": "ROE LESA B",
+      "name": "ANDERSON ERIK J",
       "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 2.66 per share.",
-      "value": 104291,
-      "shares": 39207,
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 44133,
+      "date": "2026-05-20"
+    },
+    {
+      "name": "WRIGHT MARY ANN",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 44133,
       "date": "2026-05-20"
     },
     {
@@ -336,21 +345,12 @@
       "date": "2026-05-20"
     },
     {
-      "name": "ANDERSON ERIK J",
+      "name": "ROE LESA B",
       "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 44133,
-      "date": "2026-05-20"
-    },
-    {
-      "name": "WRIGHT MARY ANN",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 44133,
+      "kind": "sell",
+      "text": "Sale at price 2.66 per share.",
+      "value": 104291,
+      "shares": 39207,
       "date": "2026-05-20"
     },
     {

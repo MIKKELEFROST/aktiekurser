@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:20.854Z",
+  "updated_at": "2026-11-04T22:07:29.173Z",
   "source": "Yahoo Finance",
   "symbol": "DDOG",
   "summary": "Datadog, Inc. operates an observability and security platform for cloud applications in the United States and internationally. The company's products comprise infrastructure and application performance monitoring, log management, observability pipelines, synthetics, real user monitoring, product analytics, continuous profiler, database monitoring, data observability, LLM observability, error tracking, network monitoring, incident response, workflow automation and App builder, event management, bits AI SRE, cloud cost management, cloud security, code security, cloud SIEM, threat management, sensitive data scanner, and CI visibility. Datadog, Inc. was incorporated in 2010 and is headquartered in New York, New York.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 0.64093,
+  "eps_estimate": 0.63869,
   "analysts": {
     "strong_buy": 10,
     "buy": 33,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 885651000,
-      "earnings": 33885000
-    },
-    {
       "q": "4Q2025",
       "revenue": 953194000,
       "earnings": 46567000
@@ -69,15 +64,34 @@
       "q": "2Q2026",
       "revenue": 1121454000,
       "earnings": 44558000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1197090000,
+      "earnings": 118316000
     }
   ],
   "growth": {
-    "q0": 0.16530001,
-    "q1": 0.0825,
+    "q0": 0.0825,
+    "q1": 0.0919,
     "y0": 0.2333,
     "y1": 0.18010001
   },
   "ratings": [
+    {
+      "date": "2026-11-04",
+      "firm": "Needham",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "reit"
+    },
+    {
+      "date": "2026-11-04",
+      "firm": "BTIG",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-11-02",
       "firm": "Evercore ISI Group",
@@ -132,20 +146,6 @@
       "firm": "RBC Capital",
       "from": "Outperform",
       "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-10-09",
-      "firm": "CIBC",
-      "from": "Outperformer",
-      "to": "Outperformer",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-08",
-      "firm": "Scotiabank",
-      "from": "Sector Outperform",
-      "to": "Sector Outperform",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.509,
-    "enterprise_value": 73888473088,
-    "ev_ebitda": 891.329,
-    "ev_revenue": 18.627,
+    "enterprise_value": 75475591168,
+    "ev_ebitda": 910.474,
+    "ev_revenue": 19.027,
     "float_shares": 333016950,
     "short_shares": 9962982,
     "short_pct_float": 3.42,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 1849,
+  "inst_count": 1850,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.45709,
-      "actual": 0.55,
-      "surprise_pct": 20.33
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.55486,
@@ -269,6 +263,12 @@
       "estimate": 0.58324,
       "actual": 0.65,
       "surprise_pct": 11.45
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.64093,
+      "actual": 0.81,
+      "surprise_pct": 26.38
     }
   ],
   "insiders": [
@@ -311,19 +311,19 @@
     {
       "name": "OBSTLER DAVID M",
       "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 221.24 - 233.30 per share.",
-      "value": 9098759,
-      "shares": 40000,
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 24000,
       "date": "2026-09-14"
     },
     {
       "name": "OBSTLER DAVID M",
       "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 24000,
+      "kind": "sell",
+      "text": "Sale at price 221.24 - 233.30 per share.",
+      "value": 9098759,
+      "shares": 40000,
       "date": "2026-09-14"
     },
     {

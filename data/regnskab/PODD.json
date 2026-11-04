@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:22.335Z",
+  "updated_at": "2026-11-04T22:07:30.596Z",
   "source": "Yahoo Finance",
   "symbol": "PODD",
   "summary": "Insulet Corporation develops, manufactures, and sells insulin delivery systems for people with insulin-dependent diabetes in the United States and internationally. The company offers Omnipod platform products comprising Omnipod 5 automated insulin delivery system, which includes a proprietary AID algorithm embedded in the pod that integrates with a third-party continuous glucose monitor to obtain glucose values through wireless Bluetooth communication; Omnipod DASH insulin management system that features a Bluetooth enabled pod that is controlled by a smartphone-like personal diabetes manager with a color touch screen user interface; and the Omnipod Insulin Management System. It also provides pods for Amgen for use in the Neulasta Onpro kit, which is a delivery system to help reduce the risk of infection after intense chemotherapy. The company sells its products to end-users through the pharmacy channel; and independent distributors. Insulet Corporation was incorporated in 2000 and is headquartered in Acton, Massachusetts.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 1.58754,
+  "eps_estimate": 1.84648,
   "analysts": {
     "strong_buy": 4,
     "buy": 11,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 706300000,
-      "earnings": 87600000
-    },
-    {
       "q": "4Q2025",
       "revenue": 783800000,
       "earnings": 101600000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 801700000,
       "earnings": 95000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 842000000,
+      "earnings": 141100000
     }
   ],
   "growth": {
-    "q0": 0.28030002,
-    "q1": 0.19129999,
+    "q0": 0.19129999,
+    "q1": 0.1454,
     "y0": 0.3093,
     "y1": 0.1867
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.05,
-    "enterprise_value": 11134098432,
-    "ev_ebitda": 18.107,
-    "ev_revenue": 3.646,
+    "enterprise_value": 11220791296,
+    "ev_ebitda": 18.248,
+    "ev_revenue": 3.675,
     "float_shares": 69062911,
     "short_shares": 5629649,
     "short_pct_float": 9.16,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 1080,
+  "inst_count": 1082,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.14745,
-      "actual": 1.24,
-      "surprise_pct": 8.07
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.46269,
@@ -269,6 +263,12 @@
       "estimate": 1.45259,
       "actual": 1.66,
       "surprise_pct": 14.28
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.58754,
+      "actual": 1.99,
+      "surprise_pct": 25.35
     }
   ],
   "insiders": [
@@ -300,15 +300,6 @@
       "date": "2026-06-30"
     },
     {
-      "name": "STONESIFER TIMOTHY C",
-      "role": "Director",
-      "kind": "buy",
-      "text": "Purchase at price 143.51 per share.",
-      "value": 400393,
-      "shares": 2790,
-      "date": "2026-06-03"
-    },
-    {
       "name": "WEATHERMAN ELIZABETH H",
       "role": "Director",
       "kind": "buy",
@@ -327,13 +318,13 @@
       "date": "2026-06-03"
     },
     {
-      "name": "SCANNELL TIMOTHY J.",
+      "name": "STONESIFER TIMOTHY C",
       "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 1660,
-      "date": "2026-05-20"
+      "kind": "buy",
+      "text": "Purchase at price 143.51 per share.",
+      "value": 400393,
+      "shares": 2790,
+      "date": "2026-06-03"
     },
     {
       "name": "WEATHERMAN ELIZABETH H",
@@ -345,7 +336,7 @@
       "date": "2026-05-20"
     },
     {
-      "name": "HOPFIELD JESSICA",
+      "name": "HUFFINES ROBERT LUTHER",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -354,7 +345,16 @@
       "date": "2026-05-20"
     },
     {
-      "name": "STONESIFER TIMOTHY C",
+      "name": "FREDERICK WAYNE A.I.",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 1660,
+      "date": "2026-05-20"
+    },
+    {
+      "name": "BORIO LUCIANA",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

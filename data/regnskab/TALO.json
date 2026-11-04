@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:22.786Z",
+  "updated_at": "2026-11-04T22:07:31.039Z",
   "source": "Yahoo Finance",
   "symbol": "TALO",
   "summary": "Talos Energy Inc., through its subsidiaries, engages in the exploration and production of oil and gas in the United States and Mexico. The company operates through two segments: Upstream, and Carbon Capture and Sequestration. It also engages in the exploration and production of natural gas liquid. Talos Energy Inc. was founded in 2011 and is headquartered in Houston, Texas.",
@@ -10,14 +10,14 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 0.3657,
+  "eps_estimate": 0.56635,
   "analysts": {
     "strong_buy": 1,
-    "buy": 5,
+    "buy": 6,
     "hold": 3,
     "sell": 0,
     "strong_sell": 0,
-    "total": 9
+    "total": 10
   },
   "target_mean": 21.44444,
   "target_high": 24,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 450053000,
-      "earnings": -95905000
-    },
-    {
       "q": "4Q2025",
       "revenue": 392237000,
       "earnings": -202580000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 664813000,
       "earnings": 149667000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 595991000,
+      "earnings": -81244000
     }
   ],
   "growth": {
-    "q0": 2.9247,
-    "q1": 2.2872,
+    "q0": 2.2872,
+    "q1": 6.7271004,
     "y0": 2.3483999,
     "y1": 0.2526
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.419,
-    "enterprise_value": 3514986496,
-    "ev_ebitda": 3.104,
-    "ev_revenue": 1.776,
+    "enterprise_value": 3454878976,
+    "ev_ebitda": 3.051,
+    "ev_revenue": 1.746,
     "float_shares": 145557156,
     "short_shares": 8796166,
     "short_pct_float": 8.27,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 419,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.36651,
-      "actual": -0.19,
-      "surprise_pct": 48.16
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.32881,
@@ -269,6 +263,12 @@
       "estimate": 0.29426,
       "actual": 0.57,
       "surprise_pct": 93.71
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.3657,
+      "actual": 0.58,
+      "surprise_pct": 58.6
     }
   ],
   "insiders": [
@@ -354,12 +354,12 @@
       "date": "2026-09-02"
     },
     {
-      "name": "SPATH JOHN B",
+      "name": "BABCOCK GREGORY",
       "role": "Officer",
       "kind": "sell",
-      "text": "Sale at price 16.90 per share.",
-      "value": 1521000,
-      "shares": 90000,
+      "text": "Sale at price 16.74 per share.",
+      "value": 1026279,
+      "shares": 61307,
       "date": "2026-08-27"
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:21.262Z",
+  "updated_at": "2026-11-04T22:07:29.548Z",
   "source": "Yahoo Finance",
   "symbol": "GFS",
   "summary": "GLOBALFOUNDRIES Inc., a semiconductor foundry, provides range of mainstream wafer fabrication services and technologies in the United States, Europe, the Middle East, Africa, and internationally. It offers semiconductor devices, including microprocessors, mobile application processors, baseband processors, network processors, radio frequency modems, microcontrollers, and power management units. The company also provides quantum technology solutions. GLOBALFOUNDRIES Inc. has a strategic partnership with the U.S. Department of Energy's Genesis Mission to accelerate scientific discovery through artificial intelligence and advanced computing; and Xanadu Quantum Technologies Limited to accelerate utility-scale quantum manufacturing. The company was incorporated in 2008 and is headquartered in Malta, New York.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 0.51203,
+  "eps_estimate": 0.56893,
   "analysts": {
     "strong_buy": 3,
     "buy": 10,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 1688000000,
-      "earnings": 248000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 1830000000,
       "earnings": 200000000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 1786000000,
       "earnings": 167000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1899000000,
+      "earnings": -270000000
     }
   ],
   "growth": {
-    "q0": 0.2489,
-    "q1": 0.0344,
+    "q0": 0.0344,
+    "q1": 0.237,
     "y0": 0.1368,
     "y1": 0.34669998
   },
   "ratings": [
+    {
+      "date": "2026-11-04",
+      "firm": "Needham",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-11-02",
       "firm": "Morgan Stanley",
@@ -137,13 +144,6 @@
     {
       "date": "2026-05-06",
       "firm": "UBS",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-05-06",
-      "firm": "JP Morgan",
       "from": "Neutral",
       "to": "Neutral",
       "action": "main"
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 11,
-    "sells": 31,
+    "sells": 30,
     "bought": 12284,
-    "sold": 43899,
-    "net_pct": -4.6
+    "sold": 43399,
+    "net_pct": -4.5
   },
   "extras": {
     "beta": 1.849,
-    "enterprise_value": 22325770240,
-    "ev_ebitda": 11.27,
-    "ev_revenue": 3.218,
+    "enterprise_value": 22912933888,
+    "ev_ebitda": 11.566,
+    "ev_revenue": 3.303,
     "float_shares": 148420705,
     "short_shares": 8243893,
     "short_pct_float": 15.99,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-09-23",
   "dividend_date": null,
   "payout_ratio": 0.0938,
-  "inst_count": 599,
+  "inst_count": 603,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.38888,
-      "actual": 0.41,
-      "surprise_pct": 5.43
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.4733,
@@ -269,6 +263,12 @@
       "estimate": 0.43181,
       "actual": 0.46,
       "surprise_pct": 6.53
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.51203,
+      "actual": 0.53,
+      "surprise_pct": 3.51
     }
   ],
   "insiders": [

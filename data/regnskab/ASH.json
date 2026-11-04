@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:20.270Z",
+  "updated_at": "2026-11-04T22:07:28.599Z",
   "source": "Yahoo Finance",
   "symbol": "ASH",
   "summary": "Ashland Inc. provides additives and specialty ingredients in the North and Latin America, Europe, Asia Pacific, and internationally. It operates through Life Sciences, Personal Care, Specialty Additives, and Intermediates segments. The Life Sciences segment offers pharmaceutical solutions, including controlled release polymers, disintegrants, tablet coatings, thickeners, solubilizers, and tablet binders; and nutrition solutions, such as thickeners, stabilizers, emulsifiers, and additives; agricultural chemicals; diagnostic films; and fine chemicals. Its Personal Care segment provides a range of natural, nature-derived, biodegradable, and performance ingredients; solutions for toothpastes, mouth washes and rinses, denture cleaning, and care for teeth; and household supplies nature-derived rheology ingredients, biodegradable surface wetting agents, performance encapsulates, and specialty polymers. The Specialty Additives segment offers rheology modifiers, foam control agents, surfactants and wetting agents, pH neutralizers, advanced ceramics used in catalytic converters, environmental filters, ingredients for the manufacturing of ceramic capacitors, plasma display panels and solar cells, ingredients for textile printing, thermoplastic metals, and alloys for welding. Its Intermediates segment produces 1,4 butanediol and related derivatives, including n-methylpyrrolidone. It offers its products to customers in a range of consumer and industrial markets, such as architectural coatings, construction, energy, food and beverage, personal care, and pharmaceutical. The company was formerly known as Ashland Global Holdings Inc. and changed its name to Ashland Inc. in August 2022. Ashland Inc. was founded in 1924 and is headquartered in Wilmington, Delaware.",
@@ -7,10 +7,10 @@
   "website": "https://www.ashland.com",
   "employees": 2900,
   "ceo": "Mr. Guillermo  Novo",
-  "next_earnings": "2026-11-03",
-  "earnings_estimated": false,
+  "next_earnings": "2027-02-01",
+  "earnings_estimated": true,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 1.26662,
+  "eps_estimate": 0.23,
   "analysts": {
     "strong_buy": 1,
     "buy": 8,
@@ -24,12 +24,6 @@
   "target_low": 73,
   "target_analysts": 11,
   "statements": [
-    {
-      "year": "2022",
-      "revenue": 2400000000,
-      "net": 927000000,
-      "margin": 38.6
-    },
     {
       "year": "2023",
       "revenue": 2191000000,
@@ -47,14 +41,15 @@
       "revenue": 1824000000,
       "net": -845000000,
       "margin": -46.3
+    },
+    {
+      "year": "2026",
+      "revenue": 1863000000,
+      "net": 4000000,
+      "margin": 0.2
     }
   ],
   "quarterly": [
-    {
-      "q": "3Q2025",
-      "revenue": 478000000,
-      "earnings": 32000000
-    },
     {
       "q": "4Q2025",
       "revenue": 386000000,
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 497000000,
       "earnings": 16000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 498000000,
+      "earnings": -16000000
     }
   ],
   "growth": {
-    "q0": 0.1728,
-    "q1": 0.3077,
-    "y0": 0.0402,
-    "y1": 0.22860001
+    "q0": -0.1154,
+    "q1": 0.35900003,
+    "y0": 0.3353,
+    "y1": 0.0759
   },
   "ratings": [
     {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.363,
-    "enterprise_value": 4433410048,
-    "ev_ebitda": 12.18,
-    "ev_revenue": 2.407,
+    "enterprise_value": 4379831808,
+    "ev_ebitda": 12.033,
+    "ev_revenue": 2.378,
     "float_shares": 37776325,
     "short_shares": 5072512,
     "short_pct_float": 12.48,
@@ -246,12 +246,6 @@
   "payout_ratio": 1.0673001,
   "inst_count": 490,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.26488,
-      "actual": 1.08,
-      "surprise_pct": -14.62
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.24709,
@@ -269,6 +263,12 @@
       "estimate": 0.98436,
       "actual": 1.02,
       "surprise_pct": 3.62
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.26662,
+      "actual": 1.12,
+      "surprise_pct": -11.58
     }
   ],
   "insiders": [
@@ -327,15 +327,6 @@
       "date": "2026-01-21"
     },
     {
-      "name": "NOVO GUILLERMO",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 49.60 per share.",
-      "value": 303651,
-      "shares": 6122,
-      "date": "2025-11-17"
-    },
-    {
       "name": "MUSA OSAMA M",
       "role": "Chief Technology Officer",
       "kind": "other",
@@ -360,6 +351,15 @@
       "text": "Conversion of Exercise of derivative security at price 49.60 per share.",
       "value": 11854,
       "shares": 239,
+      "date": "2025-11-17"
+    },
+    {
+      "name": "WHITAKER WILLIAM",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 49.60 per share.",
+      "value": 5307,
+      "shares": 107,
       "date": "2025-11-17"
     }
   ],

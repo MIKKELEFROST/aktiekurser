@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:20.498Z",
+  "updated_at": "2026-11-04T22:07:28.825Z",
   "source": "Yahoo Finance",
   "symbol": "BRKR",
   "summary": "Bruker Corporation, together with its subsidiaries, develops, manufactures, and distributes scientific instruments, and analytical and diagnostic solutions. It operates through four segments: Bruker Scientific Instruments (BSI) BioSpin, BSI CALID, BSI Nano, and Bruker Energy & Supercon Technologies. The company offers magnetic resonance spectroscop, preclinical imaging, biopharma and applied, services and lifecycle support, integrated data solution, and automation; life science tools; innovative nuclear magnetic resonance (NMR) and electron paramagnetic resonance (EPR) products; solutions for in-vivo processes and drug discovery; aftermarket solutions; solutions for lab automation and digitalization; mass spectrometry solution and test kits, DNA test strips, and fluorescence-based PCR technologies; genotype and fluorotype molecular diagnostics kits; and research, analytical, and process analysis instruments and solutions. It also provides range of portable analytical and bioanalytical detection systems, and related products; X-ray instruments; analytical tools for electron microscopes, as well as handheld, portable, and mobile X-ray fluorescence spectrometry instruments; atomic force microscopy instrumentation; non-contact nanometer resolution solution topography; and automated X-ray metrology, automated AFM defect-detection, and photomask repair and cleaning equipment. In addition, the company offers advanced optical fluorescence microscopy instruments; services for transcriptional profiling and multiomic analysis; superconducting materials, such as metallic low temperature superconductors; multifilament round and rectangular LTS wires in both monolithic and wire-in-channel formats; designs and manufactures Cuponal; metallic low temperature superconductors; and non-superconducting high technology tools, such as synchrotron and beamline instrumentation. Bruker Corporation was founded in 1960 and is headquartered in Billerica, Massachusetts.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 0.41601,
+  "eps_estimate": 0.90212,
   "analysts": {
     "strong_buy": 1,
     "buy": 5,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 860500000,
-      "earnings": -62400000
-    },
-    {
       "q": "4Q2025",
       "revenue": 977200000,
       "earnings": 14900000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 838500000,
       "earnings": -62900000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 874000000,
+      "earnings": -122800000
     }
   ],
   "growth": {
-    "q0": -0.075500004,
-    "q1": 0.52900004,
+    "q0": 0.52900004,
+    "q1": 0.36650002,
     "y0": 0.1585,
     "y1": 0.13350001
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.268,
-    "enterprise_value": 10209590272,
-    "ev_ebitda": 18.868,
-    "ev_revenue": 2.917,
+    "enterprise_value": 10333001728,
+    "ev_ebitda": 19.096,
+    "ev_revenue": 2.953,
     "float_shares": 103686609,
     "short_shares": 12673281,
     "short_pct_float": 16.03,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-09-21",
   "dividend_date": null,
   "payout_ratio": 0.38459998,
-  "inst_count": 564,
+  "inst_count": 563,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.32432,
-      "actual": 0.45,
-      "surprise_pct": 38.75
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.65378,
@@ -269,18 +263,15 @@
       "estimate": 0.38434,
       "actual": 0.49,
       "surprise_pct": 27.49
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.41601,
+      "actual": 0.56,
+      "surprise_pct": 34.61
     }
   ],
   "insiders": [
-    {
-      "name": "MUNCH MARK ROBERT",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 22.19 per share.",
-      "value": 44380,
-      "shares": 2000,
-      "date": "2026-09-15"
-    },
     {
       "name": "MUNCH MARK ROBERT",
       "role": "Officer",
@@ -297,16 +288,7 @@
       "text": "Conversion of Exercise of derivative security at price 22.19 per share.",
       "value": 44380,
       "shares": 2000,
-      "date": "2026-08-14"
-    },
-    {
-      "name": "BURES THOMAS",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 4035,
-      "date": "2026-08-14"
+      "date": "2026-09-15"
     },
     {
       "name": "LAUKIEN FRANK H",
@@ -318,12 +300,39 @@
       "date": "2026-08-14"
     },
     {
+      "name": "HERMAN GERALD N",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 15794,
+      "date": "2026-08-14"
+    },
+    {
       "name": "MUNCH MARK ROBERT",
       "role": "Officer",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 14443,
+      "date": "2026-08-14"
+    },
+    {
+      "name": "MUNCH MARK ROBERT",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 57.60 per share.",
+      "value": 115200,
+      "shares": 2000,
+      "date": "2026-08-14"
+    },
+    {
+      "name": "MUNCH MARK ROBERT",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 22.19 per share.",
+      "value": 44380,
+      "shares": 2000,
       "date": "2026-08-14"
     },
     {
@@ -345,21 +354,12 @@
       "date": "2026-08-14"
     },
     {
-      "name": "HERMAN GERALD N",
-      "role": "Chief Financial Officer",
+      "name": "BURES THOMAS",
+      "role": "Officer",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 15794,
-      "date": "2026-08-14"
-    },
-    {
-      "name": "MUNCH MARK ROBERT",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 57.60 per share.",
-      "value": 115200,
-      "shares": 2000,
+      "shares": 4035,
       "date": "2026-08-14"
     }
   ],

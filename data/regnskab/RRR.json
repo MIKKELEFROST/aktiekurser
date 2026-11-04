@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:22.498Z",
+  "updated_at": "2026-11-04T22:07:30.755Z",
   "source": "Yahoo Finance",
   "symbol": "RRR",
   "summary": "Red Rock Resorts, Inc., through its interest in Station Casinos LLC, develops and manages casino and entertainment properties in the United States. It owns and operates gaming and entertainment facilities, including Durango Casino & Resort and smaller casinos in the Las Vegas regional market. The company was formerly known as Station Casinos Corp. and changed its name to Red Rock Resorts, Inc. in January 2016. Red Rock Resorts, Inc. was founded in 1976 and is based in Las Vegas, Nevada.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": 0.65833,
+  "eps_estimate": 0.837,
   "analysts": {
     "strong_buy": 3,
     "buy": 13,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 18
   },
-  "target_mean": 72.11111,
+  "target_mean": 72,
   "target_high": 78,
   "target_low": 59,
   "target_analysts": 18,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 475572000,
-      "earnings": 42254000
-    },
-    {
       "q": "4Q2025",
       "revenue": 511777000,
       "earnings": 44659000
@@ -69,15 +64,41 @@
       "q": "2Q2026",
       "revenue": 510262000,
       "earnings": 39118000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 488701000,
+      "earnings": -9918000
     }
   ],
   "growth": {
-    "q0": 0.5757,
-    "q1": 0.79190004,
-    "y0": 0.58889997,
-    "y1": 0.23709999
+    "q0": 0.66830003,
+    "q1": 0.2783,
+    "y0": 0.13859999,
+    "y1": 0.6794
   },
   "ratings": [
+    {
+      "date": "2026-11-04",
+      "firm": "JP Morgan",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-04",
+      "firm": "StoneX",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-04",
+      "firm": "Citizens",
+      "from": "Market Outperform",
+      "to": "Market Outperform",
+      "action": "main"
+    },
     {
       "date": "2026-10-20",
       "firm": "JP Morgan",
@@ -126,27 +147,6 @@
       "from": null,
       "to": "Outperform",
       "action": "init"
-    },
-    {
-      "date": "2026-08-17",
-      "firm": "Macquarie",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-05",
-      "firm": "Macquarie",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-05",
-      "firm": "Citizens",
-      "from": "Market Outperform",
-      "to": "Market Outperform",
-      "action": "main"
     }
   ],
   "holders": [
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.4,
-    "enterprise_value": 6605262848,
-    "ev_ebitda": 8.365,
-    "ev_revenue": 3.295,
+    "enterprise_value": 6596574720,
+    "ev_ebitda": 8.354,
+    "ev_revenue": 3.29,
     "float_shares": 46893190,
     "short_shares": 4270375,
     "short_pct_float": 14.37,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.36400002,
   "inst_count": 340,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.38543,
-      "actual": 0.4116,
-      "surprise_pct": 6.79
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.44715,
@@ -269,6 +263,12 @@
       "estimate": 0.47157,
       "actual": 0.67,
       "surprise_pct": 42.08
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.44163,
+      "actual": -0.17,
+      "surprise_pct": -138.49
     }
   ],
   "insiders": [
@@ -318,6 +318,24 @@
       "date": "2026-08-06"
     },
     {
+      "name": "FERTITTA LORENZO J",
+      "role": "Officer, Director and Beneficial Owner",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 148427,
+      "date": "2026-06-11"
+    },
+    {
+      "name": "COOTEY STEPHEN LAWRENCE",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 38511,
+      "date": "2026-06-11"
+    },
+    {
       "name": "FERTITTA FRANK J III",
       "role": "Chief Executive Officer",
       "kind": "other",
@@ -342,24 +360,6 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 32092,
-      "date": "2026-06-11"
-    },
-    {
-      "name": "FERTITTA LORENZO J",
-      "role": "Officer, Director and Beneficial Owner",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 148427,
-      "date": "2026-06-11"
-    },
-    {
-      "name": "COOTEY STEPHEN LAWRENCE",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 38511,
       "date": "2026-06-11"
     }
   ],

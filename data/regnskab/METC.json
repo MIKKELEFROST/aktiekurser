@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:21.852Z",
+  "updated_at": "2026-11-04T22:07:30.092Z",
   "source": "Yahoo Finance",
   "symbol": "METC",
   "summary": "Ramaco Resources, Inc. engages in the development, operation, and sale of metallurgical coal. The company's development portfolio includes the Elk Creek project that covers an area of approximately 20,200 acres located in southern West Virginia; the Berwind property covering an area of approximately 62,500 acres situated on the border of West Virginia and Virginia; the Knox Creek property, which covers an area of approximately 88,850 acres is located in Virginia; the Maben property covering an area of approximately 28,000 acres located in southern West Virginia; and the Brook Mine property that covers an area of approximately 15,800 acres located in northeastern Wyoming. It serves blast furnace steel mills and coke plants in North America, as well as metallurgical coal consumers internationally. Ramaco Resources, Inc. was founded in 2015 and is based in Lexington, Kentucky.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": -0.20667,
+  "eps_estimate": -0.13333,
   "analysts": {
     "strong_buy": 0,
     "buy": 5,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 8
   },
-  "target_mean": 16.7625,
+  "target_mean": 16.6375,
   "target_high": 30,
-  "target_low": 8,
+  "target_low": 7,
   "target_analysts": 8,
   "statements": [
     {
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 120996000,
-      "earnings": -13308000
-    },
-    {
       "q": "4Q2025",
       "revenue": 128007000,
       "earnings": -14705000
@@ -69,15 +64,34 @@
       "q": "2Q2026",
       "revenue": 144799000,
       "earnings": -15415000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 150089000,
+      "earnings": -18235000
     }
   ],
   "growth": {
-    "q0": 0.1733,
-    "q1": 0.48720002,
+    "q0": 0.48720002,
+    "q1": 1.0333,
     "y0": 0.0581,
     "y1": 1.3146001
   },
   "ratings": [
+    {
+      "date": "2026-11-04",
+      "firm": "Goldman Sachs",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-04",
+      "firm": "B. Riley Securities",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-23",
       "firm": "Goldman Sachs",
@@ -133,20 +147,6 @@
       "from": "Buy",
       "to": "Buy",
       "action": "main"
-    },
-    {
-      "date": "2026-05-13",
-      "firm": "Baird",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-04-21",
-      "firm": "Goldman Sachs",
-      "from": "Sell",
-      "to": "Neutral",
-      "action": "up"
     }
   ],
   "holders": [
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.307,
-    "enterprise_value": 605555776,
-    "ev_ebitda": -159.693,
-    "ev_revenue": 1.175,
+    "enterprise_value": 615108224,
+    "ev_ebitda": -162.212,
+    "ev_revenue": 1.193,
     "float_shares": 43742765,
     "short_shares": 16915788,
     "short_pct_float": 81.81,
@@ -246,12 +246,6 @@
   "payout_ratio": 5.2636,
   "inst_count": 266,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.298,
-      "actual": -0.25,
-      "surprise_pct": 16.11
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.21714,
@@ -269,6 +263,12 @@
       "estimate": -0.26143,
       "actual": -0.2526,
       "surprise_pct": 3.38
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.20667,
+      "actual": -0.3077,
+      "surprise_pct": -48.88
     }
   ],
   "insiders": [
@@ -300,15 +300,6 @@
       "date": "2026-05-01"
     },
     {
-      "name": "LEIDEL PETER A",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 15.31 per share.",
-      "value": 2753608,
-      "shares": 179885,
-      "date": "2026-03-27"
-    },
-    {
       "name": "LAWRENCE BRYAN H",
       "role": "Director",
       "kind": "sell",
@@ -321,10 +312,10 @@
       "name": "LEIDEL PETER A",
       "role": "Director",
       "kind": "sell",
-      "text": "Sale at price 13.48 - 15.18 per share.",
-      "value": 25413788,
-      "shares": 1820115,
-      "date": "2026-03-26"
+      "text": "Sale at price 15.31 per share.",
+      "value": 2753608,
+      "shares": 179885,
+      "date": "2026-03-27"
     },
     {
       "name": "LAWRENCE BRYAN H",
@@ -333,6 +324,15 @@
       "text": "Sale at price 13.67 - 14.06 per share.",
       "value": 5546520,
       "shares": 400000,
+      "date": "2026-03-26"
+    },
+    {
+      "name": "LEIDEL PETER A",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 13.48 - 15.18 per share.",
+      "value": 25413788,
+      "shares": 1820115,
       "date": "2026-03-26"
     },
     {

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:20.232Z",
+  "updated_at": "2026-11-04T22:07:28.566Z",
   "source": "Yahoo Finance",
   "symbol": "ARCB",
   "summary": "ArcBest Corporation, an integrated logistics company, provides ground, air, and ocean transportation solutions worldwide. It operates in two segments, Asset-Based and Asset-Light. The Asset-Based segment provides less-than-truckload (LTL) services that transports general commodities, such as food, textiles, apparel, furniture, appliances, chemicals, non-bulk petroleum products, rubber, plastics, metal and metal products, wood, glass, automotive parts, machinery, and miscellaneous manufactured products. This segment also offers motor carrier freight transportation services to customers in Mexico through arrangements with trucking companies. The Asset-Light segment provides ground expedite services; third-party transportation brokerage services by sourcing various capacity solutions, including dry van over-the-road, temperature-controlled and refrigerated, flatbed, intermodal or container shipping, and specialized equipment; less-than-container and full container load ocean transportation services; warehousing and distribution services; managed transportation services; and moving services to do-it-yourself' consumer, as well as final mile, time critical, product launch, retail logistics, supply chain optimization, brokered LTL, and trade show shipping services. This segment also offers premium logistics services, such as deployment of specialized equipment to meet linehaul requirements; and international freight transportation with air, ocean, and ground services. The company was formerly known as Arkansas Best Corporation and changed its name to ArcBest Corporation in May 2014. The company was founded in 1923 and is headquartered in Fort Smith, Arkansas.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 2.50654,
+  "eps_estimate": 1.81868,
   "analysts": {
     "strong_buy": 2,
     "buy": 6,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 1048137000,
-      "earnings": 39274000
-    },
-    {
       "q": "4Q2025",
       "revenue": 972688000,
       "earnings": -8116000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 1184533000,
       "earnings": -13824000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1210503000,
+      "earnings": 51659000
     }
   ],
   "growth": {
-    "q0": 0.7168,
-    "q1": 4.0519,
+    "q0": 4.0519,
+    "q1": 2.9805,
     "y0": 0.90330005,
     "y1": 0.35779998
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.733,
-    "enterprise_value": 3218461440,
-    "ev_ebitda": 11.132,
-    "ev_revenue": 0.766,
+    "enterprise_value": 3297138176,
+    "ev_ebitda": 11.404,
+    "ev_revenue": 0.784,
     "float_shares": 21955512,
     "short_shares": 1515427,
     "short_pct_float": 9.36,
@@ -241,17 +241,11 @@
     "last_split": null,
     "last_split_date": null
   },
-  "ex_dividend": "2026-08-07",
+  "ex_dividend": "2026-11-13",
   "dividend_date": null,
   "payout_ratio": 0.6957,
-  "inst_count": 442,
+  "inst_count": 443,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.36915,
-      "actual": 1.46,
-      "surprise_pct": 6.64
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.41785,
@@ -269,6 +263,12 @@
       "estimate": 2.26314,
       "actual": 2.38,
       "surprise_pct": 5.16
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 2.50654,
+      "actual": 2.62,
+      "surprise_pct": 4.53
     }
   ],
   "insiders": [
@@ -336,6 +336,15 @@
       "date": "2026-08-05"
     },
     {
+      "name": "MCREYNOLDS JUDY RENEE",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 144.78 per share.",
+      "value": 217170,
+      "shares": 1500,
+      "date": "2026-08-04"
+    },
+    {
       "name": "GATTIS ERIN K",
       "role": "Officer",
       "kind": "sell",
@@ -346,15 +355,6 @@
     },
     {
       "name": "MCREYNOLDS JUDY RENEE",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 144.78 per share.",
-      "value": 217170,
-      "shares": 1500,
-      "date": "2026-08-04"
-    },
-    {
-      "name": "CONRADO EDUARDO F.",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

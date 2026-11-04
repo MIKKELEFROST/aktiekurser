@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:21.447Z",
+  "updated_at": "2026-11-04T22:07:29.744Z",
   "source": "Yahoo Finance",
   "symbol": "HURN",
   "summary": "Huron Consulting Group Inc. provides global professional services in the United States and internationally. It operates through three segments: Healthcare, Education, and Commercial. The company offers financial and operational performance improvement consulting services; digital services; spanning technology and analytic-related services, including enterprise health record, enterprise resource planning, enterprise performance management, customer relationship management, data management, artificial intelligence and automation, technology managed services, and a portfolio of software products; organizational transformation; revenue cycle managed services and outsourcing; financial and capital advisory consulting; and strategy and innovation consulting. It also provides research-focused consulting and managed services, as well as Huron Research product suite, a software suite designed to facilitate and improve research administration service delivery and compliance. In addition, the company offers software products, financial capital advisory services, regulatory compliance and risk management consulting, and Commercial consulting. The company serves healthcare, education, financial services, industrials and manufacturing, energy and utilities, public sector, and other commercial industries. The company was incorporated in 2002 and is headquartered in Chicago, Illinois.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": 2.474,
+  "eps_estimate": 2.54667,
   "analysts": {
     "strong_buy": 1,
     "buy": 4,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 432361000,
-      "earnings": 30420000
-    },
-    {
       "q": "4Q2025",
       "revenue": 432280000,
       "earnings": 30654000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 465636000,
       "earnings": 31234000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 482518000,
+      "earnings": 28403000
     }
   ],
   "growth": {
-    "q0": 0.17809999,
-    "q1": 0.1834,
-    "y0": 0.17469999,
-    "y1": 0.1513
+    "q0": 0.1736,
+    "q1": 0.0983,
+    "y0": 0.18180001,
+    "y1": 0.1445
   },
   "ratings": [
+    {
+      "date": "2026-11-04",
+      "firm": "Wedbush",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
     {
       "date": "2026-10-23",
       "firm": "Truist Securities",
@@ -139,13 +146,6 @@
       "firm": "Benchmark",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2025-08-07",
-      "firm": "Barrington Research",
-      "from": "Outperform",
-      "to": "Outperform",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.072,
-    "enterprise_value": 3738068992,
-    "ev_ebitda": 15.365,
-    "ev_revenue": 2.107,
+    "enterprise_value": 3785292800,
+    "ev_ebitda": 15.559,
+    "ev_revenue": 2.134,
     "float_shares": 14569038,
     "short_shares": 873500,
     "short_pct_float": 5.61,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 373,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.87,
-      "actual": 2.1,
-      "surprise_pct": 12.3
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.95,
@@ -269,6 +263,12 @@
       "estimate": 2.174,
       "actual": 2.46,
       "surprise_pct": 13.16
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 2.474,
+      "actual": 2.62,
+      "surprise_pct": 5.9
     }
   ],
   "insiders": [
@@ -300,21 +300,21 @@
       "date": "2026-08-11"
     },
     {
-      "name": "FEATHERSTONE KYLE",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 152.67 per share.",
-      "value": 70076,
-      "shares": 459,
-      "date": "2026-07-31"
-    },
-    {
       "name": "RICHARDS L THOMAS",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 593,
+      "date": "2026-07-31"
+    },
+    {
+      "name": "FEATHERSTONE KYLE",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 152.67 per share.",
+      "value": 70076,
+      "shares": 459,
       "date": "2026-07-31"
     },
     {

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:22.449Z",
+  "updated_at": "2026-11-04T22:07:30.705Z",
   "source": "Yahoo Finance",
   "symbol": "REYN",
   "summary": "Reynolds Consumer Products Inc. produces and sells products in cooking, serving, cleanup, and storage, and tableware product categories in the United States and internationally. The company operates through four segments: Reynolds Cooking & Baking, Hefty Waste & Storage, Hefty Tableware, and Presto Products. The Reynolds Cooking & Baking segment produces aluminum foil, disposable aluminum pans, parchment paper, freezer paper, wax paper, butcher paper, plastic wrap, baking cups, oven bags, and slow cooker liners under the Reynolds Wrap, Reynolds Kitchens, and EZ Foil brands in the United States, as well as under the ALCAN brand in Canada and under the Diamond brand internationally. The Hefty Waste & Storage segment offers trash and food storage bags under the Hefty Ultra Strong and Hefty Strong brands; and food storage bags under the Hefty brands. It also provides a suite of products, including compostable bags, bags made from recycled materials. The Hefty Tableware segment offers disposable and compostable plates, bowls, platters, containers, cups, and cutlery under the Hefty brand, as well as dishes and party cups. The Presto Products segment primarily sells store brand products in food storage bags, trash bags, and plastic wrap categories. It offers both branded and store brand products to grocery stores, mass merchants, warehouse clubs, discount chains, dollar stores, drug stores, home improvement stores, military outlets, and eCommerce retailers. Reynolds Consumer Products Inc. was founded in 1947 and is headquartered in Lake Forest, Illinois. Reynolds Consumer Products Inc. is a subsidiary of Packaging Finance Limited.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 0.38383,
+  "eps_estimate": 0.53051,
   "analysts": {
     "strong_buy": 0,
     "buy": 2,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 931000000,
-      "earnings": 79000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 1034000000,
       "earnings": 118000000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 944000000,
       "earnings": 89000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 944000000,
+      "earnings": 58000000
     }
   ],
   "growth": {
-    "q0": -0.0861,
-    "q1": -0.1008,
+    "q0": -0.1008,
+    "q1": 0.0073,
     "y0": -0.0161,
     "y1": 0.060599998
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.557,
-    "enterprise_value": 6772997632,
-    "ev_ebitda": 9.816,
-    "ev_revenue": 1.789,
+    "enterprise_value": 6654955008,
+    "ev_ebitda": 9.645,
+    "ev_revenue": 1.758,
     "float_shares": 54122693,
     "short_shares": 7725794,
     "short_pct_float": 14.15,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-11-16",
   "dividend_date": null,
   "payout_ratio": 0.561,
-  "inst_count": 394,
+  "inst_count": 393,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.3931,
-      "actual": 0.42,
-      "surprise_pct": 6.84
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.58948,
@@ -269,6 +263,12 @@
       "estimate": 0.4037,
       "actual": 0.42,
       "surprise_pct": 4.04
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.38383,
+      "actual": 0.39,
+      "surprise_pct": 1.61
     }
   ],
   "insiders": [
@@ -300,21 +300,21 @@
       "date": "2026-05-01"
     },
     {
-      "name": "STANGL ROLF",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 9322,
-      "date": "2026-04-23"
-    },
-    {
       "name": "GOTTSCHALK MARLA C",
       "role": "Director",
       "kind": "other",
       "text": null,
       "value": null,
       "shares": 6568,
+      "date": "2026-04-23"
+    },
+    {
+      "name": "STANGL ROLF",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 9322,
       "date": "2026-04-23"
     },
     {
@@ -327,39 +327,39 @@
       "date": "2026-03-18"
     },
     {
-      "name": "ESTES STEPHEN C",
+      "name": "HUCKINS SCOTT E",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 40909,
+      "date": "2026-01-30"
+    },
+    {
+      "name": "BUCKNER JUDITH K",
       "role": "Officer",
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 27276,
+      "shares": 33875,
       "date": "2026-01-30"
     },
     {
-      "name": "FISHER RITA MARTHA",
-      "role": "Chief Technology Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 24324,
-      "date": "2026-01-30"
-    },
-    {
-      "name": "LOWE NATHAN D.",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 21022,
-      "date": "2026-01-30"
-    },
-    {
-      "name": "COREY CHRISTOPHER",
+      "name": "MAYRHOFER CHRIS",
       "role": "Officer",
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 18438,
+      "shares": 10195,
+      "date": "2026-01-30"
+    },
+    {
+      "name": "SMITH LISA M",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 32197,
       "date": "2026-01-30"
     }
   ],

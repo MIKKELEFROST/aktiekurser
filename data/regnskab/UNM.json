@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:22.977Z",
+  "updated_at": "2026-11-04T22:07:31.216Z",
   "source": "Yahoo Finance",
   "symbol": "UNM",
   "summary": "Unum Group, together with its subsidiaries, provides financial protection benefit solutions in the United States, the United Kingdom, and Poland. It operates through Unum US, Unum International, Colonial Life, and Closed Block segments. The company offers group long-term and short-term disability, group life, and accidental death and dismemberment products; supplemental and voluntary products, such as voluntary benefits, individual disability, and dental and vision products; and accident, sickness, disability, life, and cancer and critical illness products. It also provides group pensions, individual life and corporate-owned life insurance, reinsurance pools and management operations, and other miscellaneous products. The company sells its products to employers for the benefit of employees. It sells its products through field sales personnel, independent brokers, consultants, and independent contractor agent sales force and brokers. Unum Group was formerly known as UnumProvident Corporation and changed its name to Unum Group in March 2007. The company was founded in 1848 and is based in Chattanooga, Tennessee.",
@@ -7,10 +7,10 @@
   "website": "https://www.unum.com",
   "employees": 10684,
   "ceo": "Mr. Richard Paul McKenney",
-  "next_earnings": "2026-11-03",
+  "next_earnings": "2027-02-02",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 2.15928,
+  "eps_estimate": 1.952,
   "analysts": {
     "strong_buy": 2,
     "buy": 7,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 13
   },
-  "target_mean": 102.15385,
+  "target_mean": 101.69231,
   "target_high": 122,
   "target_low": 92,
   "target_analysts": 13,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 3250400000,
-      "earnings": 39700000
-    },
-    {
       "q": "4Q2025",
       "revenue": 3254200000,
       "earnings": 174100000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 3391500000,
       "earnings": 256900000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 3400500000,
+      "earnings": -419700000
     }
   ],
   "growth": {
-    "q0": 0.033099998,
-    "q1": 0.1369,
-    "y0": 0.0652,
-    "y1": 0.089499995
+    "q0": 0.0167,
+    "q1": 0.020499999,
+    "y0": 0.0403,
+    "y1": 0.1058
   },
   "ratings": [
+    {
+      "date": "2026-11-04",
+      "firm": "Barclays",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-10-12",
       "firm": "Wells Fargo",
@@ -139,13 +146,6 @@
       "firm": "Wells Fargo",
       "from": "Overweight",
       "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-07",
-      "firm": "Evercore ISI Group",
-      "from": "Outperform",
-      "to": "Outperform",
       "action": "main"
     }
   ],
@@ -231,8 +231,8 @@
   },
   "extras": {
     "beta": 0.231,
-    "enterprise_value": 16320985088,
-    "ev_ebitda": 12.938,
+    "enterprise_value": 16322568192,
+    "ev_ebitda": 12.939,
     "ev_revenue": 1.223,
     "float_shares": 143408545,
     "short_shares": 4932082,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.42990002,
   "inst_count": 954,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 2.14881,
-      "actual": 2.09,
-      "surprise_pct": -2.74
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 2.11232,
@@ -269,6 +263,12 @@
       "estimate": 2.15468,
       "actual": 2.16,
       "surprise_pct": 0.25
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 2.15928,
+      "actual": 2.2,
+      "surprise_pct": 1.89
     }
   ],
   "insiders": [
@@ -309,7 +309,43 @@
       "date": "2026-09-09"
     },
     {
-      "name": "CROSS SUSAN LEE",
+      "name": "DEVORE SUSAN D",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 2191,
+      "date": "2026-05-26"
+    },
+    {
+      "name": "ECHEVARRIA JOSEPH J",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 3731,
+      "date": "2026-05-26"
+    },
+    {
+      "name": "KING GALE V.",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 2191,
+      "date": "2026-05-26"
+    },
+    {
+      "name": "LEFEBVRE MOJGAN M",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 2191,
+      "date": "2026-05-26"
+    },
+    {
+      "name": "KEANEY TIMOTHY F",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -324,42 +360,6 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 2191,
-      "date": "2026-05-26"
-    },
-    {
-      "name": "EGAN CYNTHIA L",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 2191,
-      "date": "2026-05-26"
-    },
-    {
-      "name": "DEVORE SUSAN D",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 2191,
-      "date": "2026-05-26"
-    },
-    {
-      "name": "KABAT KEVIN T",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 3524,
-      "date": "2026-05-26"
-    },
-    {
-      "name": "O'HANLEY RONALD P.",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 3968,
       "date": "2026-05-26"
     }
   ],

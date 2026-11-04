@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:22.913Z",
+  "updated_at": "2026-11-04T22:07:31.156Z",
   "source": "Yahoo Finance",
   "symbol": "TSLX",
   "summary": "Sixth Street Specialty Lending, Inc. (NYSE: TSLX) is a business development company, private equity, loan and mezzanine fund. The fund provides senior secured loans (first-lien, second-lien, and unitranche), unsecured loans, mezzanine debt, and investments in corporate bonds and equity securities and structured products, non-control structured equity, and common equity with a focus on co-investments for organic growth, acquisitions, market or product expansion, restructuring initiatives, recapitalizations, growth capital, buyout, and refinancing. The fund invests in business services, software & technology, healthcare, energy, consumer & retail, manufacturing, internet services, consumer products, hotel, gaming, leisure, transportation, human resource support services, oil, gas, consumable fuels, pharmaceuticals, industrials, royalty related businesses, education, and specialty finance. The fund seeks to finance and lending to middle market companies principally located in the United States. The fund invests in companies with enterprise value between $50 million and $1000 million or more and EBITDA between $10 million and $250 million and equity investment between $15 million and $100 million. The debt transaction size is between $15 million and $350 million. The fund invests across the spectrum of the capital structure and can arrange syndicated transactions of up to $500 million and hold sizeable positions within its credits.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 0.43825,
+  "eps_estimate": 0.45437,
   "analysts": {
     "strong_buy": 4,
     "buy": 6,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 109444000,
-      "earnings": 44600000
-    },
-    {
       "q": "4Q2025",
       "revenue": 108247000,
       "earnings": 29960000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 97844000,
       "earnings": 40508000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 98956000,
+      "earnings": 34445000
     }
   ],
   "growth": {
-    "q0": -0.1731,
-    "q1": -0.2683,
+    "q0": -0.2683,
+    "q1": 0.081,
     "y0": -0.253,
     "y1": 0.0584
   },
@@ -214,10 +214,10 @@
       "date": "2026-06-30"
     },
     {
-      "name": "Allen Investment Management LLC",
+      "name": "Wells Fargo & Company",
       "kind": "institution",
-      "pct": 1.44,
-      "shares": 1368939,
+      "pct": 1.39,
+      "shares": 1316091,
       "date": "2026-06-30"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.641,
-    "enterprise_value": 3503851776,
+    "enterprise_value": 3478109184,
     "ev_ebitda": null,
-    "ev_revenue": 8.568,
+    "ev_revenue": 8.505,
     "float_shares": null,
     "short_shares": 3867534,
     "short_pct_float": 4.22,
@@ -246,12 +246,6 @@
   "payout_ratio": 2.0323,
   "inst_count": 286,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.52051,
-      "actual": 0.53,
-      "surprise_pct": 1.82
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.50375,
@@ -291,15 +285,6 @@
       "date": "2026-03-10"
     },
     {
-      "name": "COVINGTON P. EMERY",
-      "role": "Director",
-      "kind": "buy",
-      "text": "Purchase at price 18.35 per share.",
-      "value": 137625,
-      "shares": 7500,
-      "date": "2026-03-06"
-    },
-    {
       "name": "WAXMAN ALAN",
       "role": "Officer",
       "kind": "buy",
@@ -309,13 +294,13 @@
       "date": "2026-03-06"
     },
     {
-      "name": "PECK JOSHUA",
-      "role": "Officer",
+      "name": "COVINGTON P. EMERY",
+      "role": "Director",
       "kind": "buy",
-      "text": "Purchase at price 17.59 per share.",
-      "value": 49956,
-      "shares": 2840,
-      "date": "2026-03-02"
+      "text": "Purchase at price 18.35 per share.",
+      "value": 137625,
+      "shares": 7500,
+      "date": "2026-03-06"
     },
     {
       "name": "STIEPLEMAN DAVID",
@@ -324,6 +309,15 @@
       "text": "Purchase at price 17.65 per share.",
       "value": 356530,
       "shares": 20200,
+      "date": "2026-03-02"
+    },
+    {
+      "name": "PECK JOSHUA",
+      "role": "Officer",
+      "kind": "buy",
+      "text": "Purchase at price 17.59 per share.",
+      "value": 49956,
+      "shares": 2840,
       "date": "2026-03-02"
     },
     {

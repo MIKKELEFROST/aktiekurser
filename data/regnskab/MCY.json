@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:21.835Z",
+  "updated_at": "2026-11-04T22:07:31.469Z",
   "source": "Yahoo Finance",
   "symbol": "MCY",
   "summary": "Mercury General Corporation, together with its subsidiaries, engages in writing personal automobile insurance in the United States. It also writes homeowners, commercial automobile, commercial property, mechanical protection, and umbrella insurance products. The company's automobile insurance products include collision, property damage, bodily injury, comprehensive, personal injury protection, underinsured and uninsured motorist, and other hazards; and homeowners insurance products comprise dwelling, liability, personal property, and other coverages. It sells its policies through a network of independent agents and insurance agencies, as well as directly through internet sales portals in Arizona, California, Florida, Georgia, Illinois, Nevada, New Jersey, New York, Oklahoma, Texas, and Virginia. Mercury General Corporation was incorporated in 1961 and is headquartered in Los Angeles, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": 3.35,
+  "eps_estimate": 3.13,
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 1498861000,
-      "earnings": 280403000
-    },
-    {
       "q": "4Q2025",
       "revenue": 1427731000,
       "earnings": 202547000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 1559045000,
       "earnings": 263502000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1636133000,
+      "earnings": -13685000
     }
   ],
   "growth": {
-    "q0": -0.1321,
-    "q1": -0.14479999,
+    "q0": -0.14479999,
+    "q1": 0,
     "y0": 0.7089,
     "y1": -0.0926
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.935,
-    "enterprise_value": 4638403072,
-    "ev_ebitda": 3.656,
-    "ev_revenue": 0.732,
+    "enterprise_value": 4581906944,
+    "ev_ebitda": 3.611,
+    "ev_revenue": 0.723,
     "float_shares": 26552200,
     "short_shares": 1588063,
     "short_pct_float": 4.45,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.075100005,
   "inst_count": 487,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 2.15,
-      "actual": 3.86,
-      "surprise_pct": 79.53
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 2.56,
@@ -269,9 +263,24 @@
       "estimate": 1.8,
       "actual": 3.52,
       "surprise_pct": 95.56
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 3.35,
+      "actual": 3.49,
+      "surprise_pct": 4.18
     }
   ],
   "insiders": [
+    {
+      "name": "TIRADOR GABRIEL",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 4348,
+      "date": "2026-02-20"
+    },
     {
       "name": "GRAVES CHRISTOPHER W",
       "role": "Chief Investment Officer",
@@ -351,15 +360,6 @@
       "text": null,
       "value": null,
       "shares": 811,
-      "date": "2026-02-20"
-    },
-    {
-      "name": "PANG WEI",
-      "role": "Chief Technology Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 1136,
       "date": "2026-02-20"
     }
   ],

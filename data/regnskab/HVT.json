@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:21.450Z",
+  "updated_at": "2026-11-04T22:07:29.744Z",
   "source": "Yahoo Finance",
   "symbol": "HVT",
   "summary": "Haverty Furniture Companies, Inc. operates as a specialty retailer of residential furniture and accessories in the United States. The company offers furniture merchandise under the Havertys brand name. It also provides custom upholstery products and eclectic looks, as well as offers mattress product lines under the Tempur-Pedic, Serta, Sealy, Beautyrest, and Stearns and Foster names. The company sells home furnishings through its retail stores, as well as through its website. Haverty Furniture Companies, Inc. was founded in 1885 and is headquartered in Atlanta, Georgia.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 0.42,
+  "eps_estimate": 0.685,
   "analysts": {
     "strong_buy": 0,
     "buy": 0,
@@ -51,16 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 181025000,
-      "earnings": 2689000
-    },
-    {
-      "q": "3Q2025",
-      "revenue": 194484000,
-      "earnings": 4729000
-    },
-    {
       "q": "4Q2025",
       "revenue": 201919000,
       "earnings": 8534000
@@ -69,11 +59,21 @@
       "q": "1Q2026",
       "revenue": 189050000,
       "earnings": 4261000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 194941000,
+      "earnings": 5306000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 203153000,
+      "earnings": 6336000
     }
   ],
   "growth": {
-    "q0": 0.5,
-    "q1": 0.3431,
+    "q0": 0.3431,
+    "q1": 0.73080003,
     "y0": 0.4076,
     "y1": 0.5672
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.298,
-    "enterprise_value": 599996416,
-    "ev_ebitda": 11.804,
-    "ev_revenue": 0.769,
+    "enterprise_value": 585338432,
+    "ev_ebitda": 11.516,
+    "ev_revenue": 0.75,
     "float_shares": 14445779,
     "short_shares": 122,
     "short_pct_float": 0,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.9562,
   "inst_count": 203,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.24,
-      "actual": 0.28,
-      "surprise_pct": 16.67
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.48,
@@ -269,6 +263,12 @@
       "estimate": 0.23,
       "actual": 0.25,
       "surprise_pct": 8.7
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.42,
+      "actual": 0.25,
+      "surprise_pct": -40.48
     }
   ],
   "insiders": [
@@ -318,12 +318,30 @@
       "date": "2026-05-11"
     },
     {
+      "name": "SMITH CLARENCE H",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 6623,
+      "date": "2026-05-08"
+    },
+    {
       "name": "BURDETTE STEVEN G",
       "role": "Chief Executive Officer",
       "kind": "other",
       "text": null,
       "value": null,
       "shares": 6004,
+      "date": "2026-05-08"
+    },
+    {
+      "name": "HARE RICHARD B",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 4319,
       "date": "2026-05-08"
     },
     {
@@ -341,25 +359,7 @@
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 6623,
-      "date": "2026-05-08"
-    },
-    {
-      "name": "HARE RICHARD B",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 4319,
-      "date": "2026-05-08"
-    },
-    {
-      "name": "BURDETTE STEVEN G",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 7585,
+      "shares": 23469,
       "date": "2026-02-27"
     }
   ],

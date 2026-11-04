@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:20.070Z",
+  "updated_at": "2026-11-04T22:07:28.410Z",
   "source": "Yahoo Finance",
   "symbol": "ADTN",
   "summary": "ADTRAN Holdings, Inc. provides networking and communications platforms, software, systems, and services in the United States, Germany, the United Kingdom, and internationally. It operates through two segments, Network Solutions, and Services & Support. It offers residential gateways; ethernet passive optical network ONUs; gigabit passive optical network/XGS-PON ONTs; routers, and switches; edge cloud; carrier ethernet network interface devices; Optical Line Terminals; Packet Aggregation, Copper Access, and Oscilloquartz; optical transport and engine solutions; infrastructure monitoring solution; and training, professional, software, and managed services. The company provides various software, such as Mosaic One SaaS, n-Command, Procloud, MCP, AOE, and ACI-E. It serves large, medium, and small service providers; alternative service providers, such as utilities, municipalities and fiber overbuilders; cable/MSOs; and SMBs and distributed enterprises. ADTRAN Holdings, Inc. was incorporated in 1985 and is headquartered in Huntsville, Alabama.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": true,
   "earnings_call": "2026-11-03",
-  "eps_estimate": 0.07333,
+  "eps_estimate": 0.035,
   "analysts": {
     "strong_buy": 1,
     "buy": 6,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 9
   },
-  "target_mean": 14.66667,
+  "target_mean": 12.375,
   "target_high": 21,
-  "target_low": 11,
+  "target_low": 6.25,
   "target_analysts": 6,
   "statements": [
     {
@@ -72,12 +72,33 @@
     }
   ],
   "growth": {
-    "q0": -0.5417,
-    "q1": -0.26790002,
-    "y0": 0.2547,
-    "y1": 1.0198001
+    "q0": -0.78129995,
+    "q1": -0.4063,
+    "y0": 0.28260002,
+    "y1": 0.8983
   },
   "ratings": [
+    {
+      "date": "2026-11-04",
+      "firm": "B. Riley Securities",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "reit"
+    },
+    {
+      "date": "2026-11-04",
+      "firm": "Evercore ISI Group",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-04",
+      "firm": "Rosenblatt",
+      "from": "Buy",
+      "to": "Neutral",
+      "action": "down"
+    },
     {
       "date": "2026-11-03",
       "firm": "Needham",
@@ -126,27 +147,6 @@
       "from": "Buy",
       "to": "Buy",
       "action": "main"
-    },
-    {
-      "date": "2026-05-06",
-      "firm": "Rosenblatt",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-05-06",
-      "firm": "Needham",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "reit"
-    },
-    {
-      "date": "2026-04-14",
-      "firm": "Evercore ISI Group",
-      "from": null,
-      "to": "Outperform",
-      "action": "init"
     }
   ],
   "holders": [
@@ -223,18 +223,18 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 6,
+    "buys": 7,
     "sells": 2,
-    "bought": 207147,
+    "bought": 215868,
     "sold": 157724,
-    "net_pct": 2.8
+    "net_pct": 3.3
   },
   "extras": {
     "beta": 1.56,
-    "enterprise_value": 1032670976,
-    "ev_ebitda": 10.677,
-    "ev_revenue": 0.907,
-    "float_shares": 79393444,
+    "enterprise_value": 987276288,
+    "ev_ebitda": 9.811,
+    "ev_revenue": 0.866,
+    "float_shares": 79392068,
     "short_shares": 12549794,
     "short_pct_float": 17.52,
     "short_ratio": 7.32,
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "TERLINDE CHRISTIAN",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 8721,
+      "date": "2026-10-27"
+    },
     {
       "name": "GLINGENER CHRISTOPH PH.D.",
       "role": "Chief Technology Officer",
@@ -351,15 +360,6 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 24908,
-      "date": "2026-04-01"
-    },
-    {
-      "name": "STANTON THOMAS R",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 170723,
       "date": "2026-04-01"
     }
   ],

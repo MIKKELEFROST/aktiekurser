@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:22.959Z",
+  "updated_at": "2026-11-04T22:07:31.196Z",
   "source": "Yahoo Finance",
   "symbol": "UFPT",
   "summary": "UFP Technologies, Inc., together with its subsidiaries, designs and manufactures solutions for medical devices, sterile packaging, and other engineered custom products in the United States. The company provides protective drapes for robotic surgery, patient handling and comfort, advanced wound care, infection prevention, disposables for surgical and endoscopic procedures, packaging for medical devices, orthopedic implants, components for cardiac implants, dispenser coils for catheters, and biopharma drug manufacturing. It also offers equipment protection and packaging for firearms, unmanned aerial vehicles/drones, weapon systems, electronic devices communications equipment, and tools and repair kits; cushion and protective packaging; acoustic and thermal insulation components for automotive, aerospace, consumer, and industrial; filtration for small engines, air conditioners, humidifiers, refrigerators, electronic air cleaners, forced air appliances and industrial compressors; fluid management; and seals and gaskets for automotive manufacturing chemical processing, building and construction applications. In addition, the company provides uniform and tactical gear, such as backpack straps and padding, uniform knee and elbow pads, duty belts, holsters, and helmet padding and others; sports and leisure including custom helmet linings, athletic braces, and shoe insoles; and trim and structural components, consist of load floors, sunshades, package trays, back panel, and seat backs. The company serves the medical, aerospace and defence, automotive, consumer, electronics, and industrial markets. It markets and sells its products through a direct sales force. The company was founded in 1963 and is headquartered in Newburyport, Massachusetts.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 2.685,
+  "eps_estimate": 2.5375,
   "analysts": {
     "strong_buy": 1,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 154558000,
-      "earnings": 16383000
-    },
-    {
       "q": "4Q2025",
       "revenue": 148915000,
       "earnings": 17566000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 173964000,
       "earnings": 20851000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 172434000,
+      "earnings": 20617000
     }
   ],
   "growth": {
-    "q0": 0.1234,
-    "q1": 0.04,
+    "q0": 0.04,
+    "q1": 0.0847,
     "y0": 0.0881,
     "y1": 0.1179
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.096,
-    "enterprise_value": 2326863104,
-    "ev_ebitda": 20.075,
-    "ev_revenue": 3.684,
+    "enterprise_value": 2298590976,
+    "ev_ebitda": 19.831,
+    "ev_revenue": 3.639,
     "float_shares": 7478870,
     "short_shares": 980950,
     "short_pct_float": 17.61,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 402,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 2.1725,
-      "actual": 2.39,
-      "surprise_pct": 10.01
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 2.235,
@@ -269,6 +263,12 @@
       "estimate": 2.5575,
       "actual": 2.92,
       "surprise_pct": 14.17
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 2.685,
+      "actual": 2.88,
+      "surprise_pct": 7.26
     }
   ],
   "insiders": [
@@ -300,21 +300,21 @@
       "date": "2026-08-14"
     },
     {
-      "name": "FELDMANN CYNTHIA L",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 324.26 per share.",
-      "value": 324260,
-      "shares": 1000,
-      "date": "2026-08-13"
-    },
-    {
       "name": "HUDSON SYMERIA",
       "role": "Director",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 167.98 - 260.92 per share.",
       "value": 246724,
       "shares": 1196,
+      "date": "2026-08-13"
+    },
+    {
+      "name": "FELDMANN CYNTHIA L",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 324.26 per share.",
+      "value": 324260,
+      "shares": 1000,
       "date": "2026-08-13"
     },
     {

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:20.872Z",
+  "updated_at": "2026-11-04T22:07:29.196Z",
   "source": "Yahoo Finance",
   "symbol": "DIN",
   "summary": "Dine Brands Global, Inc., together with its subsidiaries, owns, franchises, and operates restaurants in the United States and internationally. It operates through three segments: Franchise, Company-owned restaurants, and Rental. The company franchises the restaurants operated by Applebee's franchisees, IHOP franchisees, and Fuzzy's franchisees in the United States. It owns, franchises, and operates restaurant concepts, including Applebee's Neighborhood Grill + Bar within the casual dining category; IHOP in the family dining category of the restaurant industry; and Fuzzy's Taco Shop within the fast-casual dining category. In addition, its Applebee's restaurants offer American fare with drinks and local draft beers; IHOP restaurants provided full table services and food and beverages; Fuzzy's Taco Shop offers mexican food, such as tacos, chips and queso, guacamole, and salsa made-from-scratch daily; and a full bar including margaritas, cocktails, and cold draft beer. The company was formerly known as DineEquity, Inc. and changed its name to Dine Brands Global, Inc. in February 2018. Dine Brands Global, Inc. was founded in 1958 and is based in Pasadena, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 0.99902,
+  "eps_estimate": 1.22022,
   "analysts": {
     "strong_buy": 0,
     "buy": 0,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 216166000,
-      "earnings": 6984000
-    },
-    {
       "q": "4Q2025",
       "revenue": 217600000,
       "earnings": -12300000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 240900000,
       "earnings": 4200000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 248900000,
+      "earnings": 4500000
     }
   ],
   "growth": {
-    "q0": 0.3685,
-    "q1": -0.16420001,
+    "q0": -0.16420001,
+    "q1": -0.0718,
     "y0": -0.032,
     "y1": 0.1176
   },
@@ -227,13 +227,13 @@
     "sells": 1,
     "bought": 3616,
     "sold": 1800,
-    "net_pct": 0.3
+    "net_pct": 0.2
   },
   "extras": {
     "beta": 0.927,
-    "enterprise_value": 2053732352,
-    "ev_ebitda": 11.623,
-    "ev_revenue": 2.282,
+    "enterprise_value": 2038794624,
+    "ev_ebitda": 11.538,
+    "ev_revenue": 2.266,
     "float_shares": 12004672,
     "short_shares": 2729394,
     "short_pct_float": 25.52,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-09-16",
   "dividend_date": null,
   "payout_ratio": 1.7705001,
-  "inst_count": 211,
+  "inst_count": 212,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.98998,
-      "actual": 0.73,
-      "surprise_pct": -26.26
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.05623,
@@ -269,6 +263,12 @@
       "estimate": 1.19927,
       "actual": 1.16,
       "surprise_pct": -3.27
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.99902,
+      "actual": 0.82,
+      "surprise_pct": -17.92
     }
   ],
   "insiders": [
@@ -318,7 +318,7 @@
       "date": "2026-03-09"
     },
     {
-      "name": "DAHL RICHARD J",
+      "name": "HYTER MICHAEL",
       "role": "Director",
       "kind": "other",
       "text": null,
@@ -327,11 +327,11 @@
       "date": "2026-03-06"
     },
     {
-      "name": "PASQUALE DOUGLAS M",
+      "name": "RYAN MATTHEW T.",
       "role": "Director",
       "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 31.58 per share.",
-      "value": 156214,
+      "text": null,
+      "value": null,
       "shares": 4946,
       "date": "2026-03-06"
     },

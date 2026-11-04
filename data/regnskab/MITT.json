@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:59:21.882Z",
+  "updated_at": "2026-11-04T22:07:30.120Z",
   "source": "Yahoo Finance",
   "symbol": "MITT",
   "summary": "TPG Mortgage Investment Trust, Inc. operates as a residential mortgage real estate investment trust in the United States. Its investment portfolio comprises residential investments, such as non-agency loans, agency-eligible loans, home equity loans, re-and non-performing loans, and non-agency residential mortgage-backed securities, as well as commercial loans and commercial mortgage-backed securities. The company qualifies as a real estate investment trust for federal income tax purposes. It generally would not be subject to federal income taxes if it distributes at least 90% of its taxable income to its stockholders. TPG Mortgage Investment Trust, Inc. was formerly known as AG Mortgage Investment Trust, Inc. and changed its name to TPG Mortgage Investment Trust, Inc. in December 2025. The company was incorporated in 2011 and is based in New York, New York. TPG Mortgage Investment Trust, Inc. operates as a subsidiary of TPG Inc.",
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 19482000,
-      "earnings": 14617000
-    },
-    {
       "q": "4Q2025",
       "revenue": 20450000,
       "earnings": 8012000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 20243000,
       "earnings": 9092000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 20681000,
+      "earnings": -15743000
     }
   ],
   "growth": {
-    "q0": 0.1739,
-    "q1": 0.08,
+    "q0": 0.08,
+    "q1": 0.1282,
     "y0": 0.2171,
     "y1": 0.1599
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.819,
-    "enterprise_value": 7685301248,
+    "enterprise_value": 7682120704,
     "ev_ebitda": null,
-    "ev_revenue": 93.841,
+    "ev_revenue": 93.802,
     "float_shares": 30715478,
     "short_shares": 18493,
     "short_pct_float": 0.06,
@@ -246,12 +246,6 @@
   "payout_ratio": 1.2432,
   "inst_count": 156,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.19754,
-      "actual": 0.23,
-      "surprise_pct": 16.43
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.2432,
@@ -269,27 +263,15 @@
       "estimate": 0.26923,
       "actual": 0.24,
       "surprise_pct": -10.86
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.27,
+      "actual": 0.21,
+      "surprise_pct": -22.22
     }
   ],
   "insiders": [
-    {
-      "name": "HURLEY DIANNE",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 12979,
-      "date": "2026-04-29"
-    },
-    {
-      "name": "JOZOFF MATTHEW",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 12979,
-      "date": "2026-04-29"
-    },
     {
       "name": "HESS DEBRA ANN",
       "role": "Director",
@@ -314,8 +296,8 @@
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 2777,
-      "date": "2026-04-01"
+      "shares": 12979,
+      "date": "2026-04-29"
     },
     {
       "name": "JOZOFF MATTHEW",
@@ -323,8 +305,8 @@
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 2777,
-      "date": "2026-04-01"
+      "shares": 12979,
+      "date": "2026-04-29"
     },
     {
       "name": "HESS DEBRA ANN",
@@ -350,11 +332,29 @@
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 2328,
-      "date": "2026-01-02"
+      "shares": 2777,
+      "date": "2026-04-01"
     },
     {
       "name": "JOZOFF MATTHEW",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 2777,
+      "date": "2026-04-01"
+    },
+    {
+      "name": "HESS DEBRA ANN",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 3201,
+      "date": "2026-01-02"
+    },
+    {
+      "name": "MITCHELL M CHRISTIAN",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
