@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:31.236Z",
+  "updated_at": "2026-11-05T22:15:00.392Z",
   "source": "Yahoo Finance",
   "symbol": "UVV",
   "summary": "Universal Corporation, a business-to-business agriproducts company, provides leaf tobacco and plant-based ingredients to food and beverage end markets worldwide. The company operates in two segments, Tobacco Operations and Ingredients Operations. The Tobacco Operations segment is involved in procuring, processing, packing of flue-cured, burley, dark air-cured, and oriental leaf tobacco for consumer product manufacturers, as well as provision of related services. This segment also offers specialty services, such as custom blending, chemical and physical testing of tobacco, service cutting, reconstituted leaf tobacco manufacturing, and just-in-time product delivery services; and liquid nicotine for tobacco products manufacturers, as well as recycled waste materials from tobacco production. The Ingredients Operations segment engages in the production of specialty plant-based ingredients, including fruits, vegetables, herbs, fruit and vegetable juices, concentrates, pomaces, ciders, purees, nutraceuticals, fruit fibers, seeds, seed powders, dehydrated products, botanical extracts, distillates, natural flavors, colors, and other value-added products for consumer-packaged goods manufacturers and retailers, as well as food, and beverage companies. The company was founded in 1918 and is headquartered in Richmond, Virginia.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.58,
+  "eps_estimate": 1.75,
   "analysts": null,
   "target_mean": 67,
   "target_high": 67,
@@ -44,11 +44,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 754177000,
-      "earnings": 34169000
-    },
-    {
       "q": "4Q2025",
       "revenue": 861288000,
       "earnings": 33249000
@@ -62,11 +57,16 @@
       "q": "2Q2026",
       "revenue": 523779000,
       "earnings": -5016000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 621845000,
+      "earnings": 12582000
     }
   ],
   "growth": {
-    "q0": -0.5735,
-    "q1": 0.32580003,
+    "q0": 0.32580003,
+    "q1": 3.2826002,
     "y0": 0.2045,
     "y1": 0.24209999
   },
@@ -104,9 +104,9 @@
     {
       "name": "Dimensional Fund Advisors LP",
       "kind": "institution",
-      "pct": 7.09,
-      "shares": 1764415,
-      "date": "2026-06-30"
+      "pct": 6.97,
+      "shares": 1736012,
+      "date": "2026-09-30"
     },
     {
       "name": "iShares Trust-iShares Core S&P Small-Cap ETF",
@@ -168,9 +168,9 @@
   },
   "extras": {
     "beta": 0.597,
-    "enterprise_value": 2060454656,
-    "ev_ebitda": 8.907,
-    "ev_revenue": 0.722,
+    "enterprise_value": 2067426432,
+    "ev_ebitda": 8.937,
+    "ev_revenue": 0.724,
     "float_shares": 24489913,
     "short_shares": 2228145,
     "short_pct_float": 10.79,
@@ -183,12 +183,6 @@
   "payout_ratio": 4.3157997,
   "inst_count": 321,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.34,
-      "actual": 1.36,
-      "surprise_pct": 1.49
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.92,
@@ -206,6 +200,12 @@
       "estimate": 0.25,
       "actual": -0.2,
       "surprise_pct": -180
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.58,
+      "actual": 0.4285,
+      "surprise_pct": -26.12
     }
   ],
   "insiders": [
@@ -228,7 +228,7 @@
       "date": "2026-08-04"
     },
     {
-      "name": "CANTOR DIANA F",
+      "name": "SLEDD ROBERT C",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -237,7 +237,7 @@
       "date": "2026-08-04"
     },
     {
-      "name": "SLEDD ROBERT C",
+      "name": "CANTOR DIANA F",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

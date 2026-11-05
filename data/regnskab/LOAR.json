@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:30.045Z",
+  "updated_at": "2026-11-05T22:14:59.485Z",
   "source": "Yahoo Finance",
   "symbol": "LOAR",
   "summary": "Loar Holdings Inc., through its subsidiaries, designs, manufactures, and sells aerospace and defense components for aircraft, and aerospace and defense systems in the United States and internationally. It offers airframe components, structural components, avionics, composites, braking system components, de-ice and ice protection, electro-mechanical, engineered materials, flight controls, fluid and motion controls, environmental, metal forming, molded components, and restraints and safety devices. The company also provides auto throttles, lap-belt airbags, two-and three-point seat belts, water purification systems, fire barriers, polyimide washers and bushings, latches, interior securing devices, hold-open and tie rods, temperature and fluid sensors and switches, carbon and metallic brake discs, fluid and pneumatic-based ice protection, RAM air components, sealing solutions, motion and actuation devices, edge-lighted panels and knobs, and annunciators for incandescent and LED illuminated pushbutton switches, high-performance fans and cooling devices, lighting, Human-Machine Interface products, and bespoke lighting systems, and others. It primarily serves commercial, business jet and general aviation, and defense markets. Loar Holdings Inc. was incorporated in 2017 and is headquartered in White Plains, New York.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.32871,
+  "eps_estimate": 0.32911,
   "analysts": {
     "strong_buy": 1,
     "buy": 3,
@@ -45,11 +45,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 126751000,
-      "earnings": 27606000
-    },
-    {
       "q": "4Q2025",
       "revenue": 131750000,
       "earnings": 12511000
@@ -63,11 +58,16 @@
       "q": "2Q2026",
       "revenue": 171579000,
       "earnings": 16742000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 176170000,
+      "earnings": 19584000
     }
   ],
   "growth": {
-    "q0": -0.0608,
-    "q1": 0.2658,
+    "q0": 0.2658,
+    "q1": 0.086,
     "y0": 0.3164,
     "y1": 0.17889999
   },
@@ -225,9 +225,9 @@
   },
   "extras": {
     "beta": 0.633,
-    "enterprise_value": 7252579328,
-    "ev_ebitda": 33.856,
-    "ev_revenue": 12.373,
+    "enterprise_value": 7374374400,
+    "ev_ebitda": 34.425,
+    "ev_revenue": 12.581,
     "float_shares": 43388068,
     "short_shares": 7478001,
     "short_pct_float": 16.95,
@@ -238,14 +238,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 410,
+  "inst_count": 409,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.21333,
-      "actual": 0.35,
-      "surprise_pct": 64.07
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.19339,
@@ -263,6 +257,12 @@
       "estimate": 0.31057,
       "actual": 0.38,
       "surprise_pct": 22.36
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.32871,
+      "actual": 0.39,
+      "surprise_pct": 18.65
     }
   ],
   "insiders": [
@@ -276,21 +276,21 @@
       "date": "2026-05-20"
     },
     {
-      "name": "LEVY PAUL S",
-      "role": "Director",
-      "kind": "buy",
-      "text": "Purchase at price 64.90 per share.",
-      "value": 4867500,
-      "shares": 75000,
-      "date": "2026-03-13"
-    },
-    {
       "name": "CARPENITO ANTHONY M.",
       "role": "Director and Beneficial Owner of more than 10% of a Class of Security",
       "kind": "buy",
       "text": "Purchase at price 64.45 - 65.16 per share.",
       "value": 311857,
       "shares": 4800,
+      "date": "2026-03-13"
+    },
+    {
+      "name": "LEVY PAUL S",
+      "role": "Director",
+      "kind": "buy",
+      "text": "Purchase at price 64.90 per share.",
+      "value": 4867500,
+      "shares": 75000,
       "date": "2026-03-13"
     },
     {
@@ -339,21 +339,21 @@
       "date": "2025-06-09"
     },
     {
-      "name": "LEVY PAUL S",
-      "role": "Director and Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "sell",
-      "text": "Sale at price 80.91 per share.",
-      "value": 108774092,
-      "shares": 1344422,
-      "date": "2025-05-19"
-    },
-    {
       "name": "MILGRIM BRETT N",
       "role": "Officer and Director",
       "kind": "sell",
       "text": "Sale at price 80.91 per share.",
       "value": 52008279,
       "shares": 642810,
+      "date": "2025-05-19"
+    },
+    {
+      "name": "CHARLES DIRKSON R",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 80.91 per share.",
+      "value": 54885518,
+      "shares": 678372,
       "date": "2025-05-19"
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:29.661Z",
+  "updated_at": "2026-11-05T22:14:59.112Z",
   "source": "Yahoo Finance",
   "symbol": "HCC",
   "summary": "Warrior Met Coal, Inc. engages in the production and export of non-thermal steelmaking coal for the steel production by metal manufacturers in Europe, South America, and Asia. It offers hard-coking coal through the operation of underground mines located in Alabama. The company also sells natural gas extracted as a byproduct from coal production. Warrior Met Coal, Inc. was incorporated in 2015 and is headquartered in Brookwood, Alabama.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 1.43696,
+  "eps_estimate": 2.07588,
   "analysts": {
     "strong_buy": 0,
     "buy": 4,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 328589000,
-      "earnings": 36598000
-    },
-    {
       "q": "4Q2025",
       "revenue": 383988000,
       "earnings": 22962000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 509690000,
       "earnings": 87429000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 507928000,
+      "earnings": 49308000
     }
   ],
   "growth": {
-    "q0": 1.0527999,
-    "q1": 3.7179,
+    "q0": 3.7179,
+    "q1": -0.16139999,
     "y0": 5.0919,
     "y1": 0.2209
   },
@@ -207,18 +207,18 @@
       "date": "2026-06-30"
     },
     {
+      "name": "Dimensional Fund Advisors LP",
+      "kind": "institution",
+      "pct": 3.36,
+      "shares": 1773677,
+      "date": "2026-09-30"
+    },
+    {
       "name": "Dalal Street, LLC",
       "kind": "institution",
       "pct": 3.3,
       "shares": 1744050,
       "date": "2026-06-30"
-    },
-    {
-      "name": "SPDR SERIES TRUST-State Street SPDR S&P Metals & Mining ETF",
-      "kind": "fond",
-      "pct": 3.24,
-      "shares": 1713068,
-      "date": "2026-09-30"
     }
   ],
   "insider_net": {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.746,
-    "enterprise_value": 4172350464,
-    "ev_ebitda": 9.384,
-    "ev_revenue": 2.48,
+    "enterprise_value": 4186078976,
+    "ev_ebitda": 9.415,
+    "ev_revenue": 2.488,
     "float_shares": 51774030,
     "short_shares": 4252564,
     "short_pct_float": 11.04,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.0769,
   "inst_count": 465,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.51356,
-      "actual": 0.7,
-      "surprise_pct": 236.3
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.588,
@@ -269,6 +263,12 @@
       "estimate": 1.45905,
       "actual": 1.6537,
       "surprise_pct": 13.34
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.43696,
+      "actual": 0.93,
+      "surprise_pct": -35.28
     }
   ],
   "insiders": [
@@ -280,6 +280,15 @@
       "value": 5500000,
       "shares": 50000,
       "date": "2026-08-24"
+    },
+    {
+      "name": "WILLIAMS STEPHEN D",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 104.23 per share.",
+      "value": 500304,
+      "shares": 4800,
+      "date": "2026-08-19"
     },
     {
       "name": "SCHELLER WALTER J III",
@@ -300,15 +309,6 @@
       "date": "2026-08-19"
     },
     {
-      "name": "WILLIAMS STEPHEN D",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 104.23 per share.",
-      "value": 500304,
-      "shares": 4800,
-      "date": "2026-08-19"
-    },
-    {
       "name": "GANT KELLI K",
       "role": "Officer",
       "kind": "sell",
@@ -316,6 +316,15 @@
       "value": 2200000,
       "shares": 20000,
       "date": "2026-06-02"
+    },
+    {
+      "name": "WILLIAMS STEPHEN D",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 2534,
+      "date": "2026-04-23"
     },
     {
       "name": "CHAINEY KIMBERLY",
@@ -346,15 +355,6 @@
     },
     {
       "name": "SCHNORR LISA M.",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 2534,
-      "date": "2026-04-23"
-    },
-    {
-      "name": "WILLIAMS STEPHEN D",
       "role": "Director",
       "kind": "other",
       "text": null,

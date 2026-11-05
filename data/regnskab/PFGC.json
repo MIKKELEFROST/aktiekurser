@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-11-04T22:07:30.533Z",
+  "updated_at": "2026-11-05T22:14:59.872Z",
   "source": "Yahoo Finance",
   "symbol": "PFGC",
   "summary": "Performance Food Group Company, through its subsidiaries, markets and distributes food and food-related products in North America. It operates through three segments: Foodservice, Convenience, and Specialty. The company offers beef, pork, poultry, seafood, frozen food, refrigerated products, and dry groceries to disposables, cleaning and kitchen supplies, and related products, as well as value-added services, such as product selection and procurement, menu development, and operational strategies to independent restaurants, chain restaurants, and other institutional food-away-from-home locations. It also provides wholesale consumer products, including cigarettes and alternative nicotine products, candy, snacks, fresh products, groceries, dairy, bread, beverages, general merchandise, and health and beauty care products to traditional convenience stores, drug stores, mass merchants, grocery stores, liquor stores, and other specialty and small format stores. In addition, the company distributes candy, snacks, beverages, fresh and frozen perishable food, and other non-food items. Performance Food Group Company was founded in 1885 and is headquartered in Richmond, Virginia.",
   "industry": "Food Distribution",
   "website": "https://www.pfgc.com",
-  "employees": 43560,
+  "employees": 44000,
   "ceo": "Mr. Scott E. McPherson",
-  "next_earnings": "2026-11-04",
-  "earnings_estimated": false,
+  "next_earnings": "2027-02-03",
+  "earnings_estimated": true,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 1.26937,
+  "eps_estimate": 1.20328,
   "analysts": {
     "strong_buy": 1,
     "buy": 10,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.0757,
-    "q1": 0.22780001,
+    "q0": 0.22780001,
+    "q1": 0.29479998,
     "y0": 0.23629999,
     "y1": 0.19
   },
   "ratings": [
+    {
+      "date": "2026-11-05",
+      "firm": "Bernstein",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
     {
       "date": "2026-11-04",
       "firm": "TD Cowen",
@@ -137,13 +144,6 @@
     {
       "date": "2026-07-16",
       "firm": "Morgan Stanley",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-14",
-      "firm": "Wells Fargo",
       "from": "Overweight",
       "to": "Overweight",
       "action": "main"
@@ -231,10 +231,10 @@
   },
   "extras": {
     "beta": 0.891,
-    "enterprise_value": 22892812288,
-    "ev_ebitda": 13.455,
-    "ev_revenue": 0.356,
-    "float_shares": 154213811,
+    "enterprise_value": 25046618112,
+    "ev_ebitda": 14.197,
+    "ev_revenue": 0.384,
+    "float_shares": 153398331,
     "short_shares": 5351510,
     "short_pct_float": 5.46,
     "short_ratio": 3.66,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 699,
+  "inst_count": 700,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.20812,
-      "actual": 1.18,
-      "surprise_pct": -2.33
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.08927,
@@ -269,6 +263,12 @@
       "estimate": 1.59907,
       "actual": 1.59,
       "surprise_pct": -0.57
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.26937,
+      "actual": 1.32,
+      "surprise_pct": 3.99
     }
   ],
   "insiders": [
@@ -291,15 +291,6 @@
       "date": "2026-09-01"
     },
     {
-      "name": "BULMER DONALD S.",
-      "role": "Chief Technology Officer",
-      "kind": "sell",
-      "text": "Sale at price 105.29 - 106.33 per share.",
-      "value": 1258136,
-      "shares": 11888,
-      "date": "2026-08-25"
-    },
-    {
       "name": "DAVIS ERIKA T",
       "role": "Officer",
       "kind": "sell",
@@ -318,13 +309,13 @@
       "date": "2026-08-25"
     },
     {
-      "name": "GROSH CHASITY D",
-      "role": "Officer",
+      "name": "BULMER DONALD S.",
+      "role": "Chief Technology Officer",
       "kind": "sell",
-      "text": "Sale at price 104.42 per share.",
-      "value": 67142,
-      "shares": 643,
-      "date": "2026-08-21"
+      "text": "Sale at price 105.29 - 106.33 per share.",
+      "value": 1258136,
+      "shares": 11888,
+      "date": "2026-08-25"
     },
     {
       "name": "DAVIS ERIKA T",
@@ -345,21 +336,30 @@
       "date": "2026-08-21"
     },
     {
-      "name": "MCPHERSON SCOTT E",
-      "role": "Chief Executive Officer",
+      "name": "GROSH CHASITY D",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 104.42 per share.",
+      "value": 67142,
+      "shares": 643,
+      "date": "2026-08-21"
+    },
+    {
+      "name": "HOLM GEORGE L",
+      "role": "Officer and Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 36724,
+      "shares": 98549,
       "date": "2026-08-18"
     },
     {
-      "name": "BULMER DONALD S.",
-      "role": "Chief Technology Officer",
+      "name": "DAVIS ERIKA T",
+      "role": "Officer",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 17785,
+      "shares": 19316,
       "date": "2026-08-18"
     }
   ],

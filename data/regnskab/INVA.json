@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:29.826Z",
+  "updated_at": "2026-11-05T22:14:59.242Z",
   "source": "Yahoo Finance",
   "symbol": "INVA",
   "summary": "Innoviva, Inc. operates as a biopharmaceutical company in the United States and internationally. Its royalty portfolio includes RELVAR/BREO ELLIPTA, a once-daily combination medicine consisting of a LABA, vilanterol, and an inhaled corticosteroid, and fluticasone furoate; ANORO ELLIPTA, a once-daily medicine combining a long-acting muscarinic antagonist, umeclidinium bromide, and ABA, VI. The company also markets GIAPREZA for increasing blood pressure in adults with septic or other distributive shock; XACDURO, a co-packaged for intravenous use for the treatment of hospital-acquired and ventilator-associated bacterial pneumonia caused by Acinetobacter; XERAVA for the treatment of complicated intra-abdominal infections in adults; ZEVTERA an advanced-generation cephalosporin antibiotic for the treatment of staphylococcus aureus bacteremia, as well as with right-sided endocarditis, acute bacterial skin and skin structure infections, and community-acquired bacterial pneumonia; NUZOLVENCE for the treatment of uncomplicated urogenital gonorrhea in adults and adolescents. In addition, the company develops bacteriophages with potential use in a range of infectious and other serious diseases. It has a strategic partnership with Sarissa Capital Management LP; and LABA Collaboration Agreement with Glaxo Group Limited to develop and commercialize once-daily products for the treatment of chronic obstructive pulmonary disease and asthma. The company was formerly known as Theravance, Inc. and changed its name to Innoviva, Inc. in January 2016. Innoviva, Inc. was incorporated in 1996 and is headquartered in Burlingame, California.",
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 107800000,
-      "earnings": 89908000
-    },
-    {
       "q": "4Q2025",
       "revenue": 114613000,
       "earnings": 164153000
@@ -69,10 +64,22 @@
       "q": "2Q2026",
       "revenue": 119591000,
       "earnings": -83420000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 106120000,
+      "earnings": -73888000
     }
   ],
   "growth": null,
   "ratings": [
+    {
+      "date": "2026-11-05",
+      "firm": "Oppenheimer",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
     {
       "date": "2026-08-07",
       "firm": "Cantor Fitzgerald",
@@ -135,13 +142,6 @@
       "from": "Overweight",
       "to": "Overweight",
       "action": "main"
-    },
-    {
-      "date": "2025-09-30",
-      "firm": "Goldman Sachs",
-      "from": null,
-      "to": "Sell",
-      "action": "init"
     }
   ],
   "holders": [
@@ -155,9 +155,9 @@
     {
       "name": "Dimensional Fund Advisors LP",
       "kind": "institution",
-      "pct": 6.22,
-      "shares": 4494053,
-      "date": "2026-06-30"
+      "pct": 6.25,
+      "shares": 4513052,
+      "date": "2026-09-30"
     },
     {
       "name": "iShares Trust-iShares Core S&P Small-Cap ETF",
@@ -226,9 +226,9 @@
   },
   "extras": {
     "beta": 0.369,
-    "enterprise_value": 1264280960,
-    "ev_ebitda": 6.471,
-    "ev_revenue": 2.873,
+    "enterprise_value": 1288121984,
+    "ev_ebitda": 6.593,
+    "ev_revenue": 2.928,
     "float_shares": 67651395,
     "short_shares": 7265728,
     "short_pct_float": 13.66,
@@ -241,12 +241,6 @@
   "payout_ratio": 0,
   "inst_count": 428,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.385,
-      "actual": 0.3846,
-      "surprise_pct": -0.1
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.425,
@@ -264,6 +258,12 @@
       "estimate": 0.5,
       "actual": 0.5573,
       "surprise_pct": 11.46
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.34,
+      "actual": -1.03,
+      "surprise_pct": -402.94
     }
   ],
   "insiders": [

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:28.507Z",
+  "updated_at": "2026-11-05T22:14:58.096Z",
   "source": "Yahoo Finance",
   "symbol": "AMC",
   "summary": "AMC Entertainment Holdings, Inc. engages in the theatrical exhibition business in the United States and internationally. It owns, operates, or has interests in theatres. The company was founded in 1920 and is headquartered in Leawood, Kansas.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 0.135,
+  "eps_estimate": 0.035,
   "analysts": {
     "strong_buy": 0,
     "buy": 2,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 1300200000,
-      "earnings": -298200000
-    },
-    {
       "q": "4Q2025",
       "revenue": 1288300000,
       "earnings": -127400000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 1596700000,
       "earnings": -11400000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1711100000,
+      "earnings": 109300000
     }
   ],
   "growth": {
-    "q0": 1.6429,
-    "q1": 1.1944001,
+    "q0": 1.1944001,
+    "q1": 0.77779996,
     "y0": 1.0208,
     "y1": 4.25
   },
   "ratings": [
+    {
+      "date": "2026-11-05",
+      "firm": "StoneX",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-09-25",
       "firm": "Citigroup",
@@ -140,13 +147,6 @@
       "from": "Hold",
       "to": "Buy",
       "action": "up"
-    },
-    {
-      "date": "2026-02-26",
-      "firm": "Macquarie",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
     }
   ],
   "holders": [
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 2.241,
-    "enterprise_value": 9864543232,
-    "ev_ebitda": 16.909,
-    "ev_revenue": 1.886,
+    "enterprise_value": 10078768128,
+    "ev_ebitda": 17.276,
+    "ev_revenue": 1.927,
     "float_shares": 835344050,
     "short_shares": 47436660,
     "short_pct_float": 5.34,
@@ -246,12 +246,6 @@
   "payout_ratio": 1.9512,
   "inst_count": 391,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.21,
-      "actual": -0.21,
-      "surprise_pct": 0
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.25,
@@ -269,6 +263,12 @@
       "estimate": 0.03,
       "actual": 0.14,
       "surprise_pct": 366.67
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.135,
+      "actual": 0.13,
+      "surprise_pct": -3.7
     }
   ],
   "insiders": [

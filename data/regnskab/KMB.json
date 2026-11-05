@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:29.939Z",
+  "updated_at": "2026-11-05T22:14:59.326Z",
   "source": "Yahoo Finance",
   "symbol": "KMB",
   "summary": "Kimberly-Clark Corporation, together with its subsidiaries, manufactures and markets personal care products in the United States. It operates in two segments, North America and International Personal Care. The North America segment offers disposable diapers, training and youth pants, swimpants, baby wipes, feminine and incontinence care products, reusable underwear, facial and bathroom tissue, paper towels, napkins, wipers, tissue, towels, soaps and sanitizers, and other related products under the Huggies, Pull-Ups, Goodnites, Kotex, Poise, Depend, Kleenex, Scott, Cottonelle, Viva, Wypall, and other brand names. Its International Personal Care segment provides baby and child care, adult care and feminine care, including disposable diapers, training and youth pants, swimpants, baby wipes, feminine and incontinence care products, reusable underwear, and other related products under the Huggies, Kotex, Goodfeel, Intimus, Depend, and other brand names. The company sells its household use products directly to supermarkets, mass merchandisers, drugstores, warehouse clubs, variety and department stores, and other retail outlets, as well as through other distributors and e-commerce. It also sells its professional use products through distributors directly to manufacturing, lodging, office building, food service, and high-volume public facilities, as well as through e-commerce. Kimberly-Clark Corporation was founded in 1872 and is headquartered in Dallas, Texas.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 1.65076,
+  "eps_estimate": 1.64509,
   "analysts": {
     "strong_buy": 3,
     "buy": 4,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 4150000000,
-      "earnings": 446000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 4080000000,
       "earnings": 499000000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 4189000000,
       "earnings": 345000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 4134000000,
+      "earnings": 398000000
     }
   ],
   "growth": {
-    "q0": -0.093,
-    "q1": -0.1155,
+    "q0": -0.1155,
+    "q1": -0.0748,
     "y0": -0.0186,
     "y1": 0.0011
   },
@@ -223,18 +223,18 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 10,
-    "sells": 2,
-    "bought": 35040,
-    "sold": 5691,
-    "net_pct": 2.3
+    "buys": 7,
+    "sells": 1,
+    "bought": 14519,
+    "sold": 4095,
+    "net_pct": 0.8
   },
   "extras": {
     "beta": 0.276,
-    "enterprise_value": 40448204800,
-    "ev_ebitda": 11.62,
-    "ev_revenue": 2.439,
-    "float_shares": 331308586,
+    "enterprise_value": 41888272384,
+    "ev_ebitda": 12.033,
+    "ev_revenue": 2.526,
+    "float_shares": 331301934,
     "short_shares": 50588245,
     "short_pct_float": 17.37,
     "short_ratio": 11.19,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-09-04",
   "dividend_date": null,
   "payout_ratio": 1.002,
-  "inst_count": 2186,
+  "inst_count": 2184,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.75111,
-      "actual": 1.82,
-      "surprise_pct": 3.93
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.8118,
@@ -269,9 +263,42 @@
       "estimate": 2.00599,
       "actual": 2.12,
       "surprise_pct": 5.68
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.65076,
+      "actual": 1.7,
+      "surprise_pct": 2.98
     }
   ],
   "insiders": [
+    {
+      "name": "CULVER JOHN",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 172,
+      "date": "2026-11-02"
+    },
+    {
+      "name": "HSU MICHAEL D",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 10,
+      "date": "2026-11-02"
+    },
+    {
+      "name": "MAHLAN DEIRDRE ANN",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 39,
+      "date": "2026-11-02"
+    },
     {
       "name": "CARMICHAEL JOHN PATRICK",
       "role": "Officer",
@@ -333,33 +360,6 @@
       "text": null,
       "value": null,
       "shares": 2880,
-      "date": "2026-05-01"
-    },
-    {
-      "name": "FENSKE TAMERA",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 5462,
-      "date": "2026-05-01"
-    },
-    {
-      "name": "MCGEE GRANT B",
-      "role": "General Counsel",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 2304,
-      "date": "2026-05-01"
-    },
-    {
-      "name": "CHEN KATY",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 3456,
       "date": "2026-05-01"
     }
   ],

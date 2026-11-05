@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:31.454Z",
+  "updated_at": "2026-11-05T22:15:00.559Z",
   "source": "Yahoo Finance",
   "symbol": "MATX",
   "summary": "Matson, Inc., together with its subsidiaries, engages in the provision of ocean transportation and logistics services. It operates through two segments, Ocean Transportation and Logistics. The company offers ocean freight transportation services to the domestic non-contiguous economies of Hawaii, Alaska and Guam, and to other island economies in Micronesia; and transports dry containers of mixed commodities, refrigerated commodities, food products, beverages, building materials, automobiles, household goods, livestock, seafood, general sustenance cargo, e-commerce related goods, garments, consumer electronics, footwear, retail merchandise, and other merchandise. It also operates an expedited service from China to Long Beach, California, and various islands in the South Pacific, as well as Okinawa, Japan; and provides stevedoring, refrigerated cargo, inland transportation, container equipment maintenance, and other terminal services on the Hawaiian islands of Oahu, Hawaii, Maui, and Kauai, as well as in the Alaska terminal locations of Anchorage, Kodiak, and Dutch Harbor. In addition, the company provides multimodal transportation brokerage of domestic and international rail intermodal, long-haul and regional highway trucking, specialized hauling, flat-bed and project, less-than-truckload (LCL), and expedited freight services; LCL consolidation and freight forwarding services; warehousing, trans-loading, value-added packaging and distribution services; purchase order management, booking services, and non-vessel operating common carrier freight forwarding services. It serves the U.S. military, freight forwarders and non-vessel owning common carriers, retailers and consumer goods manufacturers, and other customers. The company was formerly known as Alexander & Baldwin Holdings, Inc. and changed its name to Matson, Inc. in June 2012. Matson, Inc. was founded in 1882 and is headquartered in Honolulu, Hawaii.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 6.26894,
+  "eps_estimate": 4.0935,
   "analysts": {
     "strong_buy": 1,
     "buy": 3,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 880100000,
-      "earnings": 134700000
-    },
-    {
       "q": "4Q2025",
       "revenue": 851900000,
       "earnings": 143100000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 969400000,
       "earnings": 129400000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1113500000,
+      "earnings": 209400000
     }
   ],
   "growth": {
-    "q0": 0.47849998,
-    "q1": -0.1101,
+    "q0": -0.1101,
+    "q1": 0.6703,
     "y0": 0.1915,
     "y1": 0.0214
   },
   "ratings": [
+    {
+      "date": "2026-11-05",
+      "firm": "Stephens & Co.",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-10-13",
       "firm": "JP Morgan",
@@ -140,13 +147,6 @@
       "from": "Hold",
       "to": "Hold",
       "action": "main"
-    },
-    {
-      "date": "2025-07-18",
-      "firm": "Jefferies",
-      "from": "Buy",
-      "to": "Hold",
-      "action": "down"
     }
   ],
   "holders": [
@@ -167,9 +167,9 @@
     {
       "name": "Dimensional Fund Advisors LP",
       "kind": "institution",
-      "pct": 6.5,
-      "shares": 1943301,
-      "date": "2026-06-30"
+      "pct": 6.12,
+      "shares": 1831276,
+      "date": "2026-09-30"
     },
     {
       "name": "iShares Trust-iShares Core S&P Small-Cap ETF",
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.329,
-    "enterprise_value": 7222809088,
-    "ev_ebitda": 10.707,
-    "ev_revenue": 2.088,
+    "enterprise_value": 6919887360,
+    "ev_ebitda": 10.258,
+    "ev_revenue": 2,
     "float_shares": 29195643,
     "short_shares": 1712916,
     "short_pct_float": 8.47,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.0968,
   "inst_count": 580,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 3.25333,
-      "actual": 4.24,
-      "surprise_pct": 30.33
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 3.685,
@@ -269,6 +263,12 @@
       "estimate": 3.82,
       "actual": 4.27,
       "surprise_pct": 11.78
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 6.26894,
+      "actual": 6.96,
+      "surprise_pct": 11.02
     }
   ],
   "insiders": [

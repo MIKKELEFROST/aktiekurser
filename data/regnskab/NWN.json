@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:30.372Z",
+  "updated_at": "2026-11-05T22:14:59.745Z",
   "source": "Yahoo Finance",
   "symbol": "NWN",
   "summary": "Northwest Natural Holding Company, through its subsidiary, Northwest Natural Gas Company, provides regulated natural gas distribution services to residential, commercial, and industrial customers in the United States. It operates through three segments: NWN Gas Utility, SiEnergy, and NWN Water. The company operates mist gas storage facility contracted to utilities, third-party marketers, and electric generators; offers natural gas asset management services; interstate storage; and operates an appliance retail center. It also engages in the gas storage, water and wastewater, non-regulated renewable natural gas, and other investment businesses. In addition, the company offers natural gas services in Oregon and southwest Washington; water and wastewater connections; and operation, maintenance, and management services to water and wastewater system owners. Northwest Natural Holding Company was founded in 1859 and is headquartered in Portland, Oregon.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": -0.87143,
+  "eps_estimate": 1.61167,
   "analysts": {
     "strong_buy": 0,
     "buy": 3,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 164728000,
-      "earnings": -29890000
-    },
-    {
       "q": "4Q2025",
       "revenue": 394157000,
       "earnings": 57793000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 243552000,
       "earnings": 600000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 177972000,
+      "earnings": -29840000
     }
   ],
   "growth": {
-    "q0": -0.19370002,
-    "q1": 0.1595,
+    "q0": 0.1595,
+    "q1": 0.0515,
     "y0": 0.0502,
     "y1": 0.0529
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.397,
-    "enterprise_value": 4788126720,
-    "ev_ebitda": 9.784,
-    "ev_revenue": 3.704,
+    "enterprise_value": 4834850304,
+    "ev_ebitda": 9.879,
+    "ev_revenue": 3.74,
     "float_shares": 41855710,
     "short_shares": 1954340,
     "short_pct_float": 6.31,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-10-30",
   "dividend_date": null,
   "payout_ratio": 0.65370005,
-  "inst_count": 438,
+  "inst_count": 435,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.826,
-      "actual": -0.73,
-      "surprise_pct": 11.62
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.36,
@@ -269,6 +263,12 @@
       "estimate": -0.07,
       "actual": 0.01,
       "surprise_pct": 114.29
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.87143,
+      "actual": -0.71,
+      "surprise_pct": 18.52
     }
   ],
   "insiders": [
@@ -345,21 +345,21 @@
       "date": "2026-03-23"
     },
     {
-      "name": "RUSH KIMBERLY HEITING",
-      "role": "President",
-      "kind": "sell",
-      "text": "Sale at price 52.53 per share.",
-      "value": 61,
-      "shares": 1,
-      "date": "2026-03-05"
-    },
-    {
       "name": "WEBER DAVID A",
       "role": "Officer",
       "kind": "sell",
       "text": "Sale at price 52.53 per share.",
       "value": 32,
       "shares": 0,
+      "date": "2026-03-05"
+    },
+    {
+      "name": "RUSH KIMBERLY HEITING",
+      "role": "President",
+      "kind": "sell",
+      "text": "Sale at price 52.53 per share.",
+      "value": 61,
+      "shares": 1,
       "date": "2026-03-05"
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:29.871Z",
+  "updated_at": "2026-11-05T22:14:59.278Z",
   "source": "Yahoo Finance",
   "symbol": "JBLU",
   "summary": "JetBlue Airways Corporation provides air transportation services. The company operates a fleet of Airbus A220, Airbus A320, Airbus A320 Restyled, Airbus A321, Airbus A321 with Mint, Airbus A321neo, Airbus A321neo with Mint, and Airbus A321neoLR with Mint aircraft. It also serves 100 destinations across the United States, the Caribbean, Latin America, Canada, and Europe. In addition, it operates airport lounges, as well as provides vacation services. JetBlue Airways Corporation was incorporated in 1998 and is based in Long Island City, New York.",
@@ -79,6 +79,13 @@
   },
   "ratings": [
     {
+      "date": "2026-11-05",
+      "firm": "Deutsche Bank",
+      "from": "Hold",
+      "to": "Buy",
+      "action": "up"
+    },
+    {
       "date": "2026-10-29",
       "firm": "Susquehanna",
       "from": "Neutral",
@@ -140,13 +147,6 @@
       "from": "Sell",
       "to": "Sell",
       "action": "main"
-    },
-    {
-      "date": "2026-08-24",
-      "firm": "TD Cowen",
-      "from": "Hold",
-      "to": "Hold",
-      "action": "main"
     }
   ],
   "holders": [
@@ -202,9 +202,9 @@
     {
       "name": "Dimensional Fund Advisors LP",
       "kind": "institution",
-      "pct": 3.49,
-      "shares": 13176202,
-      "date": "2026-06-30"
+      "pct": 3.56,
+      "shares": 13433800,
+      "date": "2026-09-30"
     },
     {
       "name": "Ameriprise Financial, Inc.",
@@ -224,17 +224,17 @@
   "insider_net": {
     "period": "6m",
     "buys": 7,
-    "sells": 8,
-    "bought": 381188,
-    "sold": 171599,
-    "net_pct": 0.5
+    "sells": 5,
+    "bought": 478508,
+    "sold": 115253,
+    "net_pct": 0.9
   },
   "extras": {
     "beta": 1.901,
-    "enterprise_value": 9036979200,
-    "ev_ebitda": 108.879,
-    "ev_revenue": 0.904,
-    "float_shares": 337937453,
+    "enterprise_value": 9180372992,
+    "ev_ebitda": 110.607,
+    "ev_revenue": 0.919,
+    "float_shares": 337835568,
     "short_shares": 106982384,
     "short_pct_float": 32.87,
     "short_ratio": 5.14,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 480,
+  "inst_count": 479,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "MITTAL NIKHIL",
+      "role": "Director",
+      "kind": "buy",
+      "text": "Purchase at price 3.24 per share.",
+      "value": 323844,
+      "shares": 100000,
+      "date": "2026-11-03"
+    },
     {
       "name": "CLEMENTS CAROL ANN",
       "role": "Chief Technology Officer",
@@ -352,15 +361,6 @@
       "value": 90965,
       "shares": 18193,
       "date": "2026-05-04"
-    },
-    {
-      "name": "WINKELMANN THOMAS",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 4.70 - 4.71 per share.",
-      "value": 166857,
-      "shares": 35473,
-      "date": "2026-05-01"
     }
   ],
   "dividends": [],

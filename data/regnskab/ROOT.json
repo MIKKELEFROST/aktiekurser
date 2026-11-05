@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:30.748Z",
+  "updated_at": "2026-11-05T22:15:00.022Z",
   "source": "Yahoo Finance",
   "symbol": "ROOT",
   "summary": "Root, Inc. provides insurance products and services in the United States. The company offers automobile and renters insurance products primarily through websites, mobile applications, and partnership channels. Root, Inc. was incorporated in 2015 and is headquartered in Columbus, Ohio.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 0.595,
+  "eps_estimate": 0.565,
   "analysts": {
     "strong_buy": 1,
     "buy": 0,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 387800000,
-      "earnings": -5400000
-    },
-    {
       "q": "4Q2025",
       "revenue": 397000000,
       "earnings": 5100000
@@ -69,15 +64,34 @@
       "q": "2Q2026",
       "revenue": 389200000,
       "earnings": 24100000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 381300000,
+      "earnings": 13800000
     }
   ],
   "growth": {
-    "q0": 2.7285998,
-    "q1": 0.43580002,
+    "q0": 0.43580002,
+    "q1": -0.38279998,
     "y0": 0.4493,
     "y1": -0.3684
   },
   "ratings": [
+    {
+      "date": "2026-11-05",
+      "firm": "Keefe, Bruyette & Woods",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-05",
+      "firm": "Wells Fargo",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
     {
       "date": "2026-10-12",
       "firm": "Wells Fargo",
@@ -132,20 +146,6 @@
       "firm": "Keefe, Bruyette & Woods",
       "from": "Outperform",
       "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-03-09",
-      "firm": "UBS",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-02-26",
-      "firm": "Wells Fargo",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 3.038,
-    "enterprise_value": 624021504,
-    "ev_ebitda": 6.827,
-    "ev_revenue": 0.398,
+    "enterprise_value": 674839360,
+    "ev_ebitda": 7.383,
+    "ev_revenue": 0.431,
     "float_shares": 12303036,
     "short_shares": 2075638,
     "short_pct_float": 16.09,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 231,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.47,
-      "actual": -0.3442,
-      "surprise_pct": 26.77
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.255,
@@ -269,6 +263,12 @@
       "estimate": 0.72,
       "actual": 1.797,
       "surprise_pct": 149.58
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.595,
+      "actual": 0.86,
+      "surprise_pct": 44.54
     }
   ],
   "insiders": [

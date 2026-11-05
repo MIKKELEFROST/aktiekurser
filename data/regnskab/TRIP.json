@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:31.137Z",
+  "updated_at": "2026-11-05T22:15:00.316Z",
   "source": "Yahoo Finance",
   "symbol": "TRIP",
   "summary": "Tripadvisor, Inc., an online travel company, engages in the provision of travel guidance products and services worldwide. The company operates through three segments: Experiences, Hotels and Other, and TheFork. The Experiences segment operates an online travel agency for tours, activities, and attractions, and acts as travel guidance platforms for travelers to discover, generate, and share authentic user-generated content in the form of ratings and reviews and opinions for destinations, points-of-interest, experiences, accommodations, restaurants, and cruises. The Hotels and Other segment primarily consist of the Tripadvisor hotel and restaurant guidance platform, which include hotel metasearch, and related advertising offerings primarily for hotels and restaurants. TheFork segment provides an online marketplace, which enables diners to discover and book online reservations at restaurants. Tripadvisor, Inc. was founded in 2000 and is headquartered in Needham, Massachusetts.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.45287,
+  "eps_estimate": 0.14492,
   "analysts": {
     "strong_buy": 1,
     "buy": 4,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 552500000,
-      "earnings": 53200000
-    },
-    {
       "q": "4Q2025",
       "revenue": 411000000,
       "earnings": -38000000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 441900000,
       "earnings": 22400000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 436400000,
+      "earnings": -313100000
     }
   ],
   "growth": {
-    "q0": -0.3033,
-    "q1": 2.623,
+    "q0": 2.623,
+    "q1": 1.1273999,
     "y0": -0.3419,
     "y1": 0.27969998
   },
@@ -186,6 +186,13 @@
       "date": "2026-06-30"
     },
     {
+      "name": "Dimensional Fund Advisors LP",
+      "kind": "institution",
+      "pct": 4.6,
+      "shares": 5388812,
+      "date": "2026-09-30"
+    },
+    {
       "name": "Vanguard Capital Management LLC",
       "kind": "institution",
       "pct": 4.46,
@@ -197,13 +204,6 @@
       "kind": "institution",
       "pct": 4.35,
       "shares": 5096996,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "Dimensional Fund Advisors LP",
-      "kind": "institution",
-      "pct": 4.25,
-      "shares": 4978278,
       "date": "2026-06-30"
     },
     {
@@ -223,17 +223,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 31,
+    "buys": 32,
     "sells": 3,
-    "bought": 458291,
+    "bought": 459598,
     "sold": 23908,
     "net_pct": 37.2
   },
   "extras": {
     "beta": 0.846,
-    "enterprise_value": 1157061760,
-    "ev_ebitda": 10.528,
-    "ev_revenue": 0.632,
+    "enterprise_value": 1246133248,
+    "ev_ebitda": 11.339,
+    "ev_revenue": 0.681,
     "float_shares": 115604259,
     "short_shares": 38397250,
     "short_pct_float": 38.79,
@@ -244,14 +244,8 @@
   "ex_dividend": "2019-11-19",
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 388,
+  "inst_count": 387,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.55156,
-      "actual": 0.65,
-      "surprise_pct": 17.85
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.13167,
@@ -269,9 +263,33 @@
       "estimate": 0.37791,
       "actual": 0.35,
       "surprise_pct": -7.39
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.45287,
+      "actual": 0.37,
+      "surprise_pct": -18.3
     }
   ],
   "insiders": [
+    {
+      "name": "NOONAN MICHAEL",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 9.22 per share.",
+      "value": 22368,
+      "shares": 2426,
+      "date": "2026-10-30"
+    },
+    {
+      "name": "DALTON KRISTEN ANN",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 9.22 per share.",
+      "value": 12051,
+      "shares": 1307,
+      "date": "2026-10-30"
+    },
     {
       "name": "AMBESKOVIC ALMIR",
       "role": "Officer",
@@ -343,24 +361,6 @@
       "value": null,
       "shares": 1306,
       "date": "2026-07-31"
-    },
-    {
-      "name": "RIJVERS CHRISTIAAN-PEPIJN",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 14.19 per share.",
-      "value": 12374,
-      "shares": 872,
-      "date": "2026-07-31"
-    },
-    {
-      "name": "DALTON KRISTEN ANN",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 15.00 per share.",
-      "value": 118620,
-      "shares": 7908,
-      "date": "2026-07-16"
     }
   ],
   "dividends": [

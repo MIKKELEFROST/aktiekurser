@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:29.595Z",
+  "updated_at": "2026-11-05T22:14:59.056Z",
   "source": "Yahoo Finance",
   "symbol": "GOOS",
   "summary": "Canada Goose Holdings Inc., together with its subsidiaries, designs, manufactures, and sells performance luxury outerwear, apparel, footwear, and accessories for men, women, youth, children, and babies. It operates through three segments: Direct-to-Consumer, Wholesale, and Other. The company offers leisure wear, including knitwear, sweats, and t-shirts; outerwear products, including rain and everyday collections, jackets for everyday occasions, fleece, and vests; footwear and accessories products, such as sneakers, boots, hats, scarves, gloves, hood trims, socks, bags and eyewear; and lightweight and heavyweight down jackets for the fall, winter, and spring seasons. It sells its products through e-commerce channels and directly operated retail stores. The company offers its products under Canada Goose, Snow Goose, and Baffin brands in Canada, the United States, North America, Greater China, rest of the Asia Pacific, Europe, the Middle East, and Africa. Canada Goose Holdings Inc. was founded in 1957 and is headquartered in Toronto, Canada.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": -0.17991,
+  "eps_estimate": 1.18245,
   "analysts": {
     "strong_buy": 0,
     "buy": 3,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 272600000,
-      "earnings": -15200000
-    },
-    {
       "q": "4Q2025",
       "revenue": 694500000,
       "earnings": 134800000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 118900000,
       "earnings": -90800000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 274000000,
+      "earnings": -26600000
     }
   ],
   "growth": {
-    "q0": -0.8165,
-    "q1": 0.1308,
+    "q0": 0.1308,
+    "q1": 0.2258,
     "y0": 0.2713,
     "y1": 0.113000005
   },
@@ -195,9 +195,9 @@
     {
       "name": "Fidelity Mt. Vernon Street Trust-Fidelity Growth Company Fund",
       "kind": "fond",
-      "pct": 2.8,
-      "shares": 1243851,
-      "date": "2026-08-31"
+      "pct": 2.52,
+      "shares": 1118551,
+      "date": "2026-09-30"
     },
     {
       "name": "JPMORGAN CHASE & CO",
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.85,
-    "enterprise_value": 1451553280,
-    "ev_ebitda": 5.867,
-    "ev_revenue": 0.943,
+    "enterprise_value": 1514056064,
+    "ev_ebitda": 6.12,
+    "ev_revenue": 0.984,
     "float_shares": 35425409,
     "short_shares": 5092546,
     "short_pct_float": 12.49,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 161,
+  "inst_count": 160,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.0804,
-      "actual": -0.09904,
-      "surprise_pct": -23.18
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.18933,
@@ -269,6 +263,12 @@
       "estimate": -0.7139,
       "actual": -0.63516,
       "surprise_pct": 11.03
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.17991,
+      "actual": -0.14294,
+      "surprise_pct": 20.55
     }
   ],
   "insiders": [
@@ -276,10 +276,46 @@
       "name": "Canada Goose Holdings Inc.",
       "role": "Issuer",
       "kind": "other",
+      "text": "Redemption, retraction, cancelation, repurchase at price 8.05 per share.",
+      "value": 467980,
+      "shares": 58127,
+      "date": "2026-10-30"
+    },
+    {
+      "name": "Canada Goose Holdings Inc.",
+      "role": "Issuer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 58127,
+      "date": "2026-10-30"
+    },
+    {
+      "name": "Canada Goose Holdings Inc.",
+      "role": "Issuer",
+      "kind": "other",
+      "text": "Redemption, retraction, cancelation, repurchase at price 7.96 per share.",
+      "value": 462923,
+      "shares": 58127,
+      "date": "2026-10-29"
+    },
+    {
+      "name": "Canada Goose Holdings Inc.",
+      "role": "Issuer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 58127,
+      "date": "2026-10-29"
+    },
+    {
+      "name": "Canada Goose Holdings Inc.",
+      "role": "Issuer",
+      "kind": "other",
       "text": "Redemption, retraction, cancelation, repurchase at price 7.79 per share.",
-      "value": 453041,
+      "value": 452751,
       "shares": 58127,
-      "date": "2026-09-30"
+      "date": "2026-10-28"
     },
     {
       "name": "Canada Goose Holdings Inc.",
@@ -288,34 +324,16 @@
       "text": null,
       "value": null,
       "shares": 58127,
-      "date": "2026-09-30"
+      "date": "2026-10-28"
     },
     {
       "name": "Canada Goose Holdings Inc.",
       "role": "Issuer",
       "kind": "other",
-      "text": "Redemption, retraction, cancelation, repurchase at price 7.72 per share.",
-      "value": 449031,
+      "text": "Redemption, retraction, cancelation, repurchase at price 8.11 per share.",
+      "value": 471293,
       "shares": 58127,
-      "date": "2026-09-29"
-    },
-    {
-      "name": "Canada Goose Holdings Inc.",
-      "role": "Issuer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 58127,
-      "date": "2026-09-29"
-    },
-    {
-      "name": "Canada Goose Holdings Inc.",
-      "role": "Issuer",
-      "kind": "other",
-      "text": "Redemption, retraction, cancelation, repurchase at price 7.65 per share.",
-      "value": 444613,
-      "shares": 58127,
-      "date": "2026-09-28"
+      "date": "2026-10-27"
     },
     {
       "name": "Canada Goose Holdings Inc.",
@@ -324,34 +342,16 @@
       "text": null,
       "value": null,
       "shares": 58127,
-      "date": "2026-09-28"
+      "date": "2026-10-27"
     },
     {
       "name": "Canada Goose Holdings Inc.",
       "role": "Issuer",
       "kind": "other",
-      "text": "Redemption, retraction, cancelation, repurchase at price 7.62 per share.",
-      "value": 442695,
+      "text": "Redemption, retraction, cancelation, repurchase at price 8.03 per share.",
+      "value": 466701,
       "shares": 58127,
-      "date": "2026-09-25"
-    },
-    {
-      "name": "Canada Goose Holdings Inc.",
-      "role": "Issuer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 58127,
-      "date": "2026-09-25"
-    },
-    {
-      "name": "Canada Goose Holdings Inc.",
-      "role": "Issuer",
-      "kind": "other",
-      "text": "Redemption, retraction, cancelation, repurchase at price 7.53 per share.",
-      "value": 437580,
-      "shares": 58127,
-      "date": "2026-09-24"
+      "date": "2026-10-26"
     },
     {
       "name": "Canada Goose Holdings Inc.",
@@ -360,7 +360,7 @@
       "text": null,
       "value": null,
       "shares": 58127,
-      "date": "2026-09-24"
+      "date": "2026-10-26"
     }
   ],
   "dividends": [],

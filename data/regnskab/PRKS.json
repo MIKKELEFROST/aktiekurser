@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:30.615Z",
+  "updated_at": "2026-11-05T22:14:59.930Z",
   "source": "Yahoo Finance",
   "symbol": "PRKS",
   "summary": "United Parks & Resorts Inc., together with its subsidiaries, operates as a theme park and entertainment company in the United States. The company owns and licenses a portfolio of theme parks, such as a marine-life theme park in San Diego, Orlando, and San Antonio under the SeaWorld brand; family-oriented destination theme parks in Tampa Bay and Williamsburg under the Busch Gardens brand; and South Seas-themed tropical setting water parks in Orlando and San Antonio under the Aquatica brand. It also engages in the operation of reservations only and all-inclusive marine life theme park under the Discovery Cove brand; Sesame Street theme parks in Philadelphia and San Diego under the Sesame Place brand; Water Country USA, a family water park; and Adventure Island, a park which features water rides, dining, and other attractions. The company was formerly known as SeaWorld Entertainment, Inc. and changed its name to United Parks & Resorts Inc. in February 2024. United Parks & Resorts Inc. was founded in 1959 and is headquartered in Orlando, Florida.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 2.04324,
+  "eps_estimate": 0.59135,
   "analysts": {
     "strong_buy": 0,
     "buy": 4,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 511851000,
-      "earnings": 89325000
-    },
-    {
       "q": "4Q2025",
       "revenue": 373547000,
       "earnings": 15053000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 483320000,
       "earnings": 63269000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 506455000,
+      "earnings": 79974000
     }
   ],
   "growth": {
-    "q0": 0.2691,
-    "q1": 0.2384,
+    "q0": 0.2384,
+    "q1": -0.19520001,
     "y0": -0.0752,
     "y1": 0.246
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.21,
-    "enterprise_value": 3863442688,
-    "ev_ebitda": 7.534,
-    "ev_revenue": 2.346,
+    "enterprise_value": 3937802240,
+    "ev_ebitda": 7.679,
+    "ev_revenue": 2.391,
     "float_shares": 17171661,
     "short_shares": 5132068,
     "short_pct_float": 29.39,
@@ -244,14 +244,8 @@
   "ex_dividend": "2016-09-27",
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 331,
+  "inst_count": 330,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 2.44776,
-      "actual": 1.61,
-      "surprise_pct": -34.23
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.66147,
@@ -269,9 +263,24 @@
       "estimate": 1.93334,
       "actual": 1.7795,
       "surprise_pct": -7.96
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 2.04324,
+      "actual": 1.9441,
+      "surprise_pct": -4.85
     }
   ],
   "insiders": [
+    {
+      "name": "LIPMAN NATHANIEL J",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 301,
+      "date": "2026-09-30"
+    },
     {
       "name": "SCHAEFER KIMBERLY K",
       "role": "Director",
@@ -288,15 +297,6 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 1825,
-      "date": "2026-09-30"
-    },
-    {
-      "name": "LIPMAN NATHANIEL J",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 301,
       "date": "2026-09-30"
     },
     {
@@ -318,30 +318,21 @@
       "date": "2026-08-06"
     },
     {
+      "name": "LIPMAN NATHANIEL J",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 207,
+      "date": "2026-06-30"
+    },
+    {
       "name": "CHAMBERS JAMES P",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 1098,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "NARANG NEHA JOGANI",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 830,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "HARTNETT TIMOTHY",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 1821,
       "date": "2026-06-30"
     },
     {
@@ -360,6 +351,15 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 1258,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "NARANG NEHA JOGANI",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 830,
       "date": "2026-06-30"
     }
   ],

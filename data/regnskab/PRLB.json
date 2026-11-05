@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:30.616Z",
+  "updated_at": "2026-11-05T22:14:59.930Z",
   "source": "Yahoo Finance",
   "symbol": "PRLB",
   "summary": "Proto Labs, Inc., together with its subsidiaries, operates as a digital manufacturer of custom parts in the United States and Europe. It offers manufacturing services, such as molding, computer numerical control machining, 3D printing, and sheet metal to developers, engineers, and supply chain teams. The company was incorporated in 1999 and is headquartered in Maple Plain, Minnesota.",
@@ -179,13 +179,6 @@
       "date": "2026-09-30"
     },
     {
-      "name": "Dimensional Fund Advisors LP",
-      "kind": "institution",
-      "pct": 4.83,
-      "shares": 1152305,
-      "date": "2026-06-30"
-    },
-    {
       "name": "State Street Corporation",
       "kind": "institution",
       "pct": 4.77,
@@ -198,6 +191,13 @@
       "pct": 4.42,
       "shares": 1054623,
       "date": "2026-06-30"
+    },
+    {
+      "name": "Dimensional Fund Advisors LP",
+      "kind": "institution",
+      "pct": 4.31,
+      "shares": 1028968,
+      "date": "2026-09-30"
     },
     {
       "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
@@ -223,17 +223,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 9,
+    "buys": 11,
     "sells": 3,
-    "bought": 30529,
+    "bought": 31999,
     "sold": 25663,
-    "net_pct": 1.6
+    "net_pct": 2.1
   },
   "extras": {
     "beta": 1.498,
-    "enterprise_value": 1502303616,
-    "ev_ebitda": 18.823,
-    "ev_revenue": 2.592,
+    "enterprise_value": 1439759232,
+    "ev_ebitda": 18.039,
+    "ev_revenue": 2.485,
     "float_shares": 23596155,
     "short_shares": 653218,
     "short_pct_float": 3.76,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 400,
+  "inst_count": 401,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -272,6 +272,24 @@
     }
   ],
   "insiders": [
+    {
+      "name": "GAWLICK RAINER",
+      "role": "Director",
+      "kind": "buy",
+      "text": "Purchase at price 68.18 per share.",
+      "value": 49090,
+      "shares": 720,
+      "date": "2026-11-03"
+    },
+    {
+      "name": "KRISHNA SURESH",
+      "role": "Officer and Director",
+      "kind": "buy",
+      "text": "Purchase at price 69.52 per share.",
+      "value": 52140,
+      "shares": 750,
+      "date": "2026-11-02"
+    },
     {
       "name": "WEHRWEIN SVEN A",
       "role": "Director",
@@ -343,24 +361,6 @@
       "value": 0,
       "shares": 2210,
       "date": "2026-05-19"
-    },
-    {
-      "name": "KENISON MICHAEL R.",
-      "role": "Chief Operating Officer",
-      "kind": "sell",
-      "text": "Sale at price 67.58 - 70.30 per share.",
-      "value": 1636166,
-      "shares": 23463,
-      "date": "2026-05-12"
-    },
-    {
-      "name": "KENISON MICHAEL R.",
-      "role": "Chief Operating Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 33.52 - 59.40 per share.",
-      "value": 617367,
-      "shares": 14960,
-      "date": "2026-05-12"
     }
   ],
   "dividends": [],

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:28.477Z",
+  "updated_at": "2026-11-05T22:14:58.074Z",
   "source": "Yahoo Finance",
   "symbol": "ALGT",
   "summary": "Allegiant Travel Company, a leisure travel company, provides travel and leisure services and products to residents of under-served cities in the United States. The company offers scheduled air transportation on limited-frequency, nonstop flights between underserved cities and leisure destinations. As of February 1, 2026, it operated a fleet of 106 Airbus A320 series aircraft and 16 Boeing 737 series aircraft. The company also provides air-related services and products in conjunction with air transportation, including larger seats, baggage fees, advance seat assignments, travel protection products, change fees, priority boarding, customer convenience fee, food and beverage purchases on board, and other air-related services, as well as use of its call center for purchases. In addition, it offers third party travel products, such as hotel rooms, rental cars, and travel insurance from a third-party insurer; air transportation services; and charter services on a year-round and ad-hoc basis. Further, the company owns and operates a golf course. Allegiant Travel Company was founded in 1997 and is based in Las Vegas, Nevada.",
@@ -7,10 +7,10 @@
   "website": "https://www.allegiantair.com",
   "employees": 8484,
   "ceo": "Mr. Gregory Clark Anderson CPA",
-  "next_earnings": "2026-11-04",
-  "earnings_estimated": false,
+  "next_earnings": "2027-02-03",
+  "earnings_estimated": true,
   "earnings_call": "2026-11-04",
-  "eps_estimate": -0.49995,
+  "eps_estimate": 0.73264,
   "analysts": {
     "strong_buy": 2,
     "buy": 9,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 561932000,
-      "earnings": -43574000
-    },
-    {
       "q": "4Q2025",
       "revenue": 656188000,
       "earnings": 31540000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 943490000,
       "earnings": -4860000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 961559000,
+      "earnings": -15178000
     }
   ],
   "growth": {
-    "q0": 0.7608,
-    "q1": -0.7432,
+    "q0": -0.7432,
+    "q1": -0.0494,
     "y0": 0.42200002,
     "y1": 0.8315
   },
@@ -193,17 +193,17 @@
       "date": "2026-06-30"
     },
     {
+      "name": "Dimensional Fund Advisors LP",
+      "kind": "institution",
+      "pct": 5.15,
+      "shares": 1407468,
+      "date": "2026-09-30"
+    },
+    {
       "name": "T. Rowe Price Investment Management, Inc.",
       "kind": "institution",
       "pct": 5.06,
       "shares": 1384404,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "Dimensional Fund Advisors LP",
-      "kind": "institution",
-      "pct": 4.92,
-      "shares": 1344801,
       "date": "2026-06-30"
     },
     {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.645,
-    "enterprise_value": 3821502720,
-    "ev_ebitda": 10.013,
-    "ev_revenue": 1.32,
+    "enterprise_value": 4013569792,
+    "ev_ebitda": 10.516,
+    "ev_revenue": 1.387,
     "float_shares": 24299903,
     "short_shares": 2122126,
     "short_pct_float": 9.22,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 406,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -1.79519,
-      "actual": -2.09,
-      "surprise_pct": -16.42
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.99302,
@@ -269,6 +263,12 @@
       "estimate": 1.26703,
       "actual": 2.19,
       "surprise_pct": 72.85
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.49995,
+      "actual": -0.03,
+      "surprise_pct": 94
     }
   ],
   "insiders": [
@@ -282,15 +282,6 @@
       "date": "2026-05-15"
     },
     {
-      "name": "KENNEDY THOMAS C",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 1000,
-      "date": "2026-05-13"
-    },
-    {
       "name": "VOGEL JENNIFER L",
       "role": "Director",
       "kind": "other",
@@ -301,6 +292,15 @@
     },
     {
       "name": "BRICKER JUDE I",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 1000,
+      "date": "2026-05-13"
+    },
+    {
+      "name": "KENNEDY THOMAS C",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

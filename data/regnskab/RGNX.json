@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:30.712Z",
+  "updated_at": "2026-11-05T22:14:59.995Z",
   "source": "Yahoo Finance",
   "symbol": "RGNX",
   "summary": "REGENXBIO Inc., a clinical-stage biotechnology company, provides gene therapies that deliver functional genes to cells with genetic defects in the United States. Its gene therapy product candidates are based on NAV Technology Platform, a proprietary adeno-associated virus gene delivery platform. The company's products in pipeline includes ABBV-RGX-314 for the treatment of wet age-related macular degeneration, diabetic retinopathy, and other chronic retinal diseases; and RGX-202 for the treatment of Duchenne muscular dystrophy, as well as RGX-121 for the treatment of mucopolysaccharidosis type II. It also develops RGX-111 for the treatment of mucopolysaccharidosis type I. In addition, the company licenses its NAV Technology Platform to other biotechnology and pharmaceutical companies. Further, it has a collaboration and license agreement with AbbVie Global Enterprises Ltd. to develop ABBV-RGX-314 and with Nippon Shinyaku Co., Ltd. to develop RGX-121 and RGX-111 outside the United States. REGENXBIO Inc. was incorporated in 2008 and is headquartered in Rockville, Maryland.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": -1.29811,
+  "eps_estimate": -0.97967,
   "analysts": {
     "strong_buy": 3,
     "buy": 7,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 29733000,
-      "earnings": -61941000
-    },
-    {
       "q": "4Q2025",
       "revenue": 30337000,
       "earnings": -67149000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 108019000,
       "earnings": 22709000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 9162000,
+      "earnings": -40738000
     }
   ],
   "growth": {
-    "q0": -0.08180001,
-    "q1": 0.2464,
+    "q0": 0.2464,
+    "q1": 0.2829,
     "y0": 0.0798,
     "y1": 0.1488
   },
@@ -223,17 +223,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 14,
+    "buys": 17,
     "sells": 3,
-    "bought": 247588,
+    "bought": 334392,
     "sold": 73803,
-    "net_pct": 4.2
+    "net_pct": 6.5
   },
   "extras": {
     "beta": 1.228,
-    "enterprise_value": 648625664,
-    "ev_ebitda": -4.36,
-    "ev_revenue": 3.717,
+    "enterprise_value": 653906688,
+    "ev_ebitda": -4.395,
+    "ev_revenue": 3.748,
     "float_shares": 57230797,
     "short_shares": 10043670,
     "short_pct_float": 16.1,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 234,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -1.29833,
-      "actual": -1.2,
-      "surprise_pct": 7.57
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.83912,
@@ -269,9 +263,42 @@
       "estimate": -0.10771,
       "actual": 0.43,
       "surprise_pct": 499.22
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -1.29811,
+      "actual": -1.20687,
+      "surprise_pct": 7.03
     }
   ],
   "insiders": [
+    {
+      "name": "PAKOLA STEPHEN J",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 34722,
+      "date": "2026-10-30"
+    },
+    {
+      "name": "CHAN MITCHELL",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 24305,
+      "date": "2026-10-30"
+    },
+    {
+      "name": "MALZAHN CRAIG",
+      "role": "Chief Technology Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 27777,
+      "date": "2026-10-30"
+    },
     {
       "name": "CIONGOLI GREGORY AUSTIN",
       "role": "Director",
@@ -334,33 +361,6 @@
       "value": 28486,
       "shares": 2404,
       "date": "2026-06-30"
-    },
-    {
-      "name": "TASSE DANIEL",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 9807,
-      "date": "2026-05-29"
-    },
-    {
-      "name": "MILLS KENNETH THOMAS",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 9807,
-      "date": "2026-05-29"
-    },
-    {
-      "name": "FOX ALLAN MARK",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 9807,
-      "date": "2026-05-29"
     }
   ],
   "dividends": [],

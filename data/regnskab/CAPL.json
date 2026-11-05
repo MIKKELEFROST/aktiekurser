@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:28.894Z",
+  "updated_at": "2026-11-05T22:14:58.392Z",
   "source": "Yahoo Finance",
   "symbol": "CAPL",
   "summary": "CrossAmerica Partners LP engages in the wholesale distribution of motor fuels, operation of convenience stores, and ownership and leasing of real estate used in the retail distribution of motor fuels in the United States. The company operates in two segments, Wholesale and Retail. The Wholesale segment engages in the wholesale distribution of motor fuels to lessee dealers and independent dealers. The Retail segment is involved in the sale of convenience merchandise; and retail sale of motor fuels at company operated retail sites and retail sites operated by commission agents. CrossAmerica GP LLC operates as the general partner of the company. The company was formerly known as Lehigh Gas Partners LP and changed its name to CrossAmerica Partners LP in October 2014. The company was founded in 1992 and is based in Allentown, Pennsylvania.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.42,
+  "eps_estimate": 0.17,
   "analysts": {
     "strong_buy": 0,
     "buy": 0,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 971847000,
-      "earnings": 12892000
-    },
-    {
       "q": "4Q2025",
       "revenue": 866287000,
       "earnings": 9513000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 1179017000,
       "earnings": 20102000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1194575000,
+      "earnings": 8074000
     }
   ],
   "growth": {
-    "q0": 1.349,
-    "q1": -0.1118,
+    "q0": -0.1118,
+    "q1": -0.39110002,
     "y0": 18.1643,
     "y1": -0.1353
   },
@@ -217,8 +217,8 @@
       "name": "Quadrant Private Wealth Management, LLC",
       "kind": "institution",
       "pct": 0.43,
-      "shares": 163356,
-      "date": "2026-06-30"
+      "shares": 164162,
+      "date": "2026-09-30"
     }
   ],
   "insider_net": {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.243,
-    "enterprise_value": 1663621504,
-    "ev_ebitda": 9.833,
-    "ev_revenue": 0.468,
+    "enterprise_value": 1628883840,
+    "ev_ebitda": 9.628,
+    "ev_revenue": 0.458,
     "float_shares": 18278881,
     "short_shares": 65945,
     "short_pct_float": 0.36,
@@ -246,12 +246,6 @@
   "payout_ratio": 1.5328,
   "inst_count": 71,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.07,
-      "actual": 0.1788,
-      "surprise_pct": 155.43
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.05,
@@ -269,9 +263,33 @@
       "estimate": 0.38,
       "actual": 0.5005,
       "surprise_pct": 31.71
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.42,
+      "actual": 0.164,
+      "surprise_pct": -60.95
     }
   ],
   "insiders": [
+    {
+      "name": "GANNON JUSTIN A",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 3154,
+      "date": "2026-07-23"
+    },
+    {
+      "name": "KIM MICKEY",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 3154,
+      "date": "2026-07-23"
+    },
     {
       "name": "VALOSKY KENNETH G",
       "role": "Director",
@@ -309,22 +327,13 @@
       "date": "2026-07-23"
     },
     {
-      "name": "GANNON JUSTIN A",
-      "role": "Director",
+      "name": "NIFONG CHARLES M JR",
+      "role": "Chief Executive Officer",
       "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 3154,
-      "date": "2026-07-23"
-    },
-    {
-      "name": "KIM MICKEY",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 3154,
-      "date": "2026-07-23"
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 12647,
+      "date": "2026-02-24"
     },
     {
       "name": "LYNCH KEENAN D",
@@ -351,15 +360,6 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 2904,
-      "date": "2026-02-24"
-    },
-    {
-      "name": "HRINAK DAVID",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 1832,
       "date": "2026-02-24"
     }
   ],

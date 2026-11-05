@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:30.338Z",
+  "updated_at": "2026-11-05T22:14:59.718Z",
   "source": "Yahoo Finance",
   "symbol": "NREF",
   "summary": "NexPoint Real Estate Finance, Inc. operates as a commercial mortgage real estate investment trust in the United States. It focuses on originating, structuring, and investing in first-lien mortgage loans, preferred equity, mezzanine loans, convertible notes, multifamily properties, and common equity investments, as well as multifamily and single-family rental commercial mortgage-backed securities securitizations, promissory notes, revolving credit facilities, and stock warrants or target assets. The company has elected to be taxed as a real estate investment trust (REIT) and would not be subject to federal corporate income taxes if it distributes at least 90% of its taxable income to its stockholders. NexPoint Real Estate Finance, Inc. was incorporated in 2019 and is based in Dallas, Texas.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.39667,
+  "eps_estimate": 0.41667,
   "analysts": {
     "strong_buy": 0,
     "buy": 0,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 12497000,
-      "earnings": 35032000
-    },
-    {
       "q": "4Q2025",
       "revenue": 11102000,
       "earnings": 13581000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 16539000,
       "earnings": 5433000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 17280000,
+      "earnings": -12201000
     }
   ],
   "growth": {
-    "q0": -0.22219999,
-    "q1": -0.1319,
+    "q0": -0.1319,
+    "q1": 0.0465,
     "y0": -0.0656,
     "y1": 0.0136
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.149,
-    "enterprise_value": 5224572928,
+    "enterprise_value": 5228531200,
     "ev_ebitda": null,
-    "ev_revenue": 34.532,
+    "ev_revenue": 34.559,
     "float_shares": 11378932,
     "short_shares": 502527,
     "short_pct_float": 6.3,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.8734,
   "inst_count": 116,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.47,
-      "actual": 0.51,
-      "surprise_pct": 8.51
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.49,
@@ -269,45 +263,15 @@
       "estimate": 0.39667,
       "actual": 0.46,
       "surprise_pct": 15.97
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.39667,
+      "actual": 0.52,
+      "surprise_pct": 31.09
     }
   ],
   "insiders": [
-    {
-      "name": "SAUTER DENNIS CHARLES JR",
-      "role": "General Counsel",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 7549,
-      "date": "2026-04-02"
-    },
-    {
-      "name": "WOOD CATHERINE D.",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 5518,
-      "date": "2026-04-02"
-    },
-    {
-      "name": "SWAIN CAROL",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 5518,
-      "date": "2026-04-02"
-    },
-    {
-      "name": "RICHARDS PAUL",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 21981,
-      "date": "2026-04-02"
-    },
     {
       "name": "LAFFER ARTHUR BETZ",
       "role": "Director",
@@ -359,7 +323,43 @@
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 2917,
+      "shares": 7549,
+      "date": "2026-04-02"
+    },
+    {
+      "name": "WOOD CATHERINE D.",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 5518,
+      "date": "2026-04-02"
+    },
+    {
+      "name": "SWAIN CAROL",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 5518,
+      "date": "2026-04-02"
+    },
+    {
+      "name": "RICHARDS PAUL",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 21981,
+      "date": "2026-04-02"
+    },
+    {
+      "name": "DONDERO JAMES DAVID",
+      "role": "President",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 38438,
       "date": "2026-03-13"
     }
   ],

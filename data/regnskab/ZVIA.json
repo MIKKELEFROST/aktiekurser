@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:31.434Z",
+  "updated_at": "2026-11-05T22:15:00.548Z",
   "source": "Yahoo Finance",
   "symbol": "ZVIA",
   "summary": "Zevia PBC develops, markets, sells, and distributes zero sugar beverages in the United States and Canada. The company offers soda, energy drinks, and organic tea under the Zevia brand name. It serves grocery distributors; national, convenience, natural products, and warehouse club retailers; and retailers through a network of grocery, drug, warehouse club, mass, natural, convenience, and e-commerce channels, as well as natural product stores and specialty outlets. The company was founded in 2007 and is headquartered in Encino, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": -0.0525,
+  "eps_estimate": -0.0325,
   "analysts": {
     "strong_buy": 0,
     "buy": 5,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 40844000,
-      "earnings": -2686000
-    },
-    {
       "q": "4Q2025",
       "revenue": 37868000,
       "earnings": -1311000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 45002000,
       "earnings": -2806000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 48343000,
+      "earnings": -2109000
     }
   ],
   "growth": {
-    "q0": -0.3125,
-    "q1": -0.625,
+    "q0": -0.625,
+    "q1": -16.6471,
     "y0": -0.086,
     "y1": 0.4118
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.916,
-    "enterprise_value": 45402724,
-    "ev_ebitda": -8.228,
-    "ev_revenue": 0.267,
+    "enterprise_value": 47566820,
+    "ev_ebitda": -8.62,
+    "ev_revenue": 0.28,
     "float_shares": 49534703,
     "short_shares": 938243,
     "short_pct_float": 1.69,
@@ -246,12 +246,6 @@
   "payout_ratio": null,
   "inst_count": 127,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.05,
-      "actual": -0.04,
-      "surprise_pct": 20
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.025,
@@ -269,6 +263,12 @@
       "estimate": -0.03,
       "actual": -0.02456,
       "surprise_pct": 18.13
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.0525,
+      "actual": -0.0282,
+      "surprise_pct": 46.29
     }
   ],
   "insiders": [
@@ -354,12 +354,12 @@
       "date": "2026-03-30"
     },
     {
-      "name": "SATYA GIRISH",
-      "role": "Chief Financial Officer",
+      "name": "TAYLOR AMY",
+      "role": "Chief Executive Officer",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 453901,
+      "shares": 1021277,
       "date": "2026-03-26"
     }
   ],

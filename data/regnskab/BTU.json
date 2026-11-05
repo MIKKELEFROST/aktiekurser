@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:28.851Z",
+  "updated_at": "2026-11-05T22:14:58.362Z",
   "source": "Yahoo Finance",
   "symbol": "BTU",
   "summary": "Peabody Energy Corporation engages in the production of metallurgical and thermal coal. It operates through Seaborne Thermal, Seaborne Metallurgical, Powder River Basin, and Other U.S. Thermal segments. The company operates mines in New South Wales and Queensland in Australia and in Alabama and Wyoming in the United States; mining, preparation, and sale of thermal coal, sold primarily to electric utilities; surface mining extraction processes, coal with a lower sulfur content, and Btu; and mining sub-bituminous coal deposits. It also supplies coal primarily to electricity generators, industrial facilities, and steel manufacturers. The company was founded in 1883 and is headquartered in Saint Louis, Missouri.",
@@ -7,8 +7,8 @@
   "website": "https://www.peabodyenergy.com",
   "employees": 5400,
   "ceo": "Mr. James C. Grech",
-  "next_earnings": "2026-11-04",
-  "earnings_estimated": false,
+  "next_earnings": "2027-02-04",
+  "earnings_estimated": true,
   "earnings_call": "2026-11-04",
   "eps_estimate": 0.63,
   "analysts": {
@@ -79,6 +79,13 @@
   },
   "ratings": [
     {
+      "date": "2026-11-05",
+      "firm": "StoneX",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
       "date": "2026-10-26",
       "firm": "B. Riley Securities",
       "from": "Neutral",
@@ -140,13 +147,6 @@
       "from": "Neutral",
       "to": "Neutral",
       "action": "main"
-    },
-    {
-      "date": "2026-02-12",
-      "firm": "Freedom Broker",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
     }
   ],
   "holders": [
@@ -181,9 +181,9 @@
     {
       "name": "Dimensional Fund Advisors LP",
       "kind": "institution",
-      "pct": 5.2,
-      "shares": 6337778,
-      "date": "2026-06-30"
+      "pct": 5.21,
+      "shares": 6341115,
+      "date": "2026-09-30"
     },
     {
       "name": "Vanguard Capital Management LLC",
@@ -230,11 +230,11 @@
     "net_pct": 3.7
   },
   "extras": {
-    "beta": 0.426,
-    "enterprise_value": 2466353920,
-    "ev_ebitda": 8.897,
-    "ev_revenue": 0.615,
-    "float_shares": 112727025,
+    "beta": null,
+    "enterprise_value": 2056448768,
+    "ev_ebitda": 7.261,
+    "ev_revenue": 0.502,
+    "float_shares": 112586346,
     "short_shares": 11866724,
     "short_pct_float": 13.57,
     "short_ratio": 4.95,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-08-12",
   "dividend_date": null,
   "payout_ratio": 0.2857,
-  "inst_count": 434,
+  "inst_count": 430,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -273,6 +273,15 @@
   ],
   "insiders": [
     {
+      "name": "ROBERTS MALCOLM JAMES",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 27.64 per share.",
+      "value": 1299,
+      "shares": 47,
+      "date": "2026-09-03"
+    },
+    {
       "name": "MALONE ROBERT A",
       "role": "Director",
       "kind": "other",
@@ -282,12 +291,12 @@
       "date": "2026-09-03"
     },
     {
-      "name": "GORMAN STEPHEN E",
+      "name": "HODGES GEORGANNE MARIE",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 27.64 per share.",
-      "value": 1410,
-      "shares": 51,
+      "value": 608,
+      "shares": 22,
       "date": "2026-09-03"
     },
     {
@@ -336,12 +345,12 @@
       "date": "2026-09-03"
     },
     {
-      "name": "ROBERTS MALCOLM JAMES",
-      "role": "Officer",
+      "name": "GORMAN STEPHEN E",
+      "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 27.64 per share.",
-      "value": 1299,
-      "shares": 47,
+      "value": 1410,
+      "shares": 51,
       "date": "2026-09-03"
     },
     {
@@ -351,15 +360,6 @@
       "text": "Stock Award(Grant) at price 27.64 per share.",
       "value": 636,
       "shares": 23,
-      "date": "2026-09-03"
-    },
-    {
-      "name": "GRECH JAMES C",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 27.64 per share.",
-      "value": 7380,
-      "shares": 267,
       "date": "2026-09-03"
     }
   ],

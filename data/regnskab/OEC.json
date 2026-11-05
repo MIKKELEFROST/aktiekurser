@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:30.398Z",
+  "updated_at": "2026-11-05T22:14:59.765Z",
   "source": "Yahoo Finance",
   "symbol": "OEC",
   "summary": "Orion S.A., together with its subsidiaries, engages in the manufacture and sale of carbon black products. The company operates in two segments, Specialty Carbon Black and Rubber Carbon Black. It offers post-treated specialty carbon black grades for coatings and printing applications, as well as high purity carbon black grades for the fiber industry; and conductive carbon black grades for batteries, polymers, and coatings. The company also provides rubber carbon black products for tires, such as high-reinforcing grades and semi-reinforcing grades under the ECORAX brand, as well as for mechanical rubber goods end users, including automotive production, construction, as well as certain food, consumer, and medical applications. It operates in the United States, Brazil, rest of the Americas, Germany, South Africa, Italy, Spain, Czech republic, Poland, Italy, Turkey, France, Rest of EMEA, China, the Republic of Korea, and rest of Asia. The company was formerly known as Orion Engineered Carbons S.A. and changed its name to Orion S.A. in June 2023. Orion S.A. was founded in 1862 and is headquartered in Senningerberg, Luxembourg.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.146,
+  "eps_estimate": -0.02664,
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 450900000,
-      "earnings": 0
-    },
-    {
       "q": "4Q2025",
       "revenue": 411700000,
       "earnings": -21100000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 500900000,
       "earnings": 0
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 472800000,
+      "earnings": -3100000
     }
   ],
   "growth": {
-    "q0": -0.4966,
-    "q1": 0.92160004,
+    "q0": 0.92160004,
+    "q1": null,
     "y0": -0.6663,
     "y1": 0.9865
   },
@@ -200,13 +200,6 @@
       "date": "2026-06-30"
     },
     {
-      "name": "Dimensional Fund Advisors LP",
-      "kind": "institution",
-      "pct": 3.49,
-      "shares": 1973595,
-      "date": "2026-06-30"
-    },
-    {
       "name": "Mackenzie Financial Corporation",
       "kind": "institution",
       "pct": 3.09,
@@ -219,6 +212,13 @@
       "pct": 2.94,
       "shares": 1661524,
       "date": "2026-06-30"
+    },
+    {
+      "name": "Dimensional Fund Advisors LP",
+      "kind": "institution",
+      "pct": 2.93,
+      "shares": 1656803,
+      "date": "2026-09-30"
     }
   ],
   "insider_net": {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.05,
-    "enterprise_value": 1407474816,
-    "ev_ebitda": 6.872,
-    "ev_revenue": 0.772,
+    "enterprise_value": 1428388224,
+    "ev_ebitda": 6.975,
+    "ev_revenue": 0.784,
     "float_shares": 51277958,
     "short_shares": 2203887,
     "short_pct_float": 4.02,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.3067,
   "inst_count": 243,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.2478,
-      "actual": 0.29,
-      "surprise_pct": 17.03
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.08484,
@@ -269,6 +263,12 @@
       "estimate": 0.1486,
       "actual": 0.14,
       "surprise_pct": -5.79
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.146,
+      "actual": 0.03,
+      "surprise_pct": -79.45
     }
   ],
   "insiders": [

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:29.179Z",
+  "updated_at": "2026-11-05T22:14:58.610Z",
   "source": "Yahoo Finance",
   "symbol": "DEC",
   "summary": "Diversified Energy Company, an independent energy company, engages in the production, transportation and marketing of natural gas, oil, and liquids primarily in the Appalachian and Central regions of the United States. It also operates in the Bossier and Haynesville shale formations and the Cotton Valley sandstones in East Texas and West Louisiana, the Barnett Shale in North Texas and the Mid-Continent producing areas across Central Texas, along with the Anadarko Basin across North Texas and Oklahoma and Permian Basin in West Texas and New Mexico. Diversified Energy Company was founded in 2001 and is headquartered in Birmingham, Alabama.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.494,
+  "eps_estimate": 1.37667,
   "analysts": {
     "strong_buy": 0,
     "buy": 9,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 388722000,
-      "earnings": 0
-    },
-    {
       "q": "4Q2025",
       "revenue": 666520000,
       "earnings": 0
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 520874000,
       "earnings": 246949000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 486881000,
+      "earnings": -202440000
     }
   ],
   "growth": {
     "q0": null,
-    "q1": null,
+    "q1": 4.9405,
     "y0": -0.3541,
     "y1": 1.6072999
   },
@@ -211,7 +211,7 @@
       "kind": "institution",
       "pct": 2.49,
       "shares": 1759706,
-      "date": "2026-06-30"
+      "date": "2026-09-30"
     },
     {
       "name": "Geode Capital Management, LLC",
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.315,
-    "enterprise_value": 3930016768,
-    "ev_ebitda": 3.907,
-    "ev_revenue": 2.022,
+    "enterprise_value": 3908078336,
+    "ev_ebitda": 3.885,
+    "ev_revenue": 2.011,
     "float_shares": 68881431,
     "short_shares": 7193338,
     "short_pct_float": 10.69,
@@ -257,6 +257,12 @@
       "estimate": 0.315,
       "actual": 0.5309,
       "surprise_pct": 68.54
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.494,
+      "actual": 0.6468,
+      "surprise_pct": 30.93
     }
   ],
   "insiders": [

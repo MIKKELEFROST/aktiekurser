@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:29.010Z",
+  "updated_at": "2026-11-05T22:14:58.481Z",
   "source": "Yahoo Finance",
   "symbol": "CLOV",
   "summary": "Clover Health Investments, Corp. provides medicare advantage plans in the United States. The company offers preferred provider organization and health maintenance organization plans to medicare-eligible individuals. It also operates Clover Assistant, a software platform for physicians to detect, identify, and manage chronic diseases. The company was founded in 2014 and is based in Wilmington, Delaware.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 0.01,
+  "eps_estimate": -0.02,
   "analysts": {
     "strong_buy": 1,
     "buy": 2,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 496650000,
-      "earnings": -24377000
-    },
-    {
       "q": "4Q2025",
       "revenue": 487707000,
       "earnings": -49320000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 743167000,
       "earnings": 28001000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 759304000,
+      "earnings": 6435000
     }
   ],
   "growth": {
-    "q0": 2.0303,
-    "q1": 0.5643,
+    "q0": 0.5643,
+    "q1": 0.072399996,
     "y0": 2.5897,
     "y1": 0.0714
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 2.48,
-    "enterprise_value": 2035560320,
-    "ev_ebitda": -113.364,
-    "ev_revenue": 0.822,
+    "enterprise_value": 2248022784,
+    "ev_ebitda": -125.196,
+    "ev_revenue": 0.908,
     "float_shares": 412697793,
     "short_shares": 25949084,
     "short_pct_float": 6.18,
@@ -246,12 +246,6 @@
   "payout_ratio": null,
   "inst_count": 298,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.02,
-      "actual": 0.0033,
-      "surprise_pct": -83.5
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.05,
@@ -269,6 +263,12 @@
       "estimate": 0.05,
       "actual": 0.074,
       "surprise_pct": 48
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.01,
+      "actual": 0.0277,
+      "surprise_pct": 177
     }
   ],
   "insiders": [

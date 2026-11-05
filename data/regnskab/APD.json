@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:28.549Z",
+  "updated_at": "2026-11-05T22:14:58.134Z",
   "source": "Yahoo Finance",
   "symbol": "APD",
   "summary": "Air Products and Chemicals, Inc. provides atmospheric gases, process and specialty gases, equipment, and related services in the Americas, Asia, Europe, the Middle East, India, and internationally. The company produces atmospheric gases, including oxygen, nitrogen, and argon; process gases, such as hydrogen, helium, carbon dioxide, carbon monoxide, and syngas; and specialty gases for customers in various industries, including refining, chemical, metals, manufacturing, electronics, energy production, medical, food, chemical and petrochemical manufacturing, oil and gas recovery and processing, and steel and primary metals processing. It also designs and manufactures equipment for air separation, hydrocarbon recovery and purification, natural gas liquefaction, and liquid helium and liquid hydrogen transport and storage. Air Products and Chemicals, Inc. was founded in 1940 and is headquartered in Allentown, Pennsylvania.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 3.61072,
+  "eps_estimate": 3.47969,
   "analysts": {
     "strong_buy": 4,
     "buy": 11,
@@ -24,12 +24,6 @@
   "target_low": 305,
   "target_analysts": 20,
   "statements": [
-    {
-      "year": "2022",
-      "revenue": 12698600000,
-      "net": 2243500000,
-      "margin": 17.7
-    },
     {
       "year": "2023",
       "revenue": 12600000000,
@@ -47,14 +41,15 @@
       "revenue": 12037300000,
       "net": -386500000,
       "margin": -3.2
+    },
+    {
+      "year": "2026",
+      "revenue": 12990900000,
+      "net": 532100000,
+      "margin": 4.1
     }
   ],
   "quarterly": [
-    {
-      "q": "3Q2025",
-      "revenue": 3166900000,
-      "earnings": 4900000
-    },
     {
       "q": "4Q2025",
       "revenue": 3102500000,
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 3161000000,
       "earnings": -1440800000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 3555600000,
+      "earnings": 584300000
     }
   ],
   "growth": {
-    "q0": 0.0651,
-    "q1": 0.1012,
-    "y0": 0.1183,
-    "y1": 0.0736
+    "q0": 0.1012,
+    "q1": 0.0962,
+    "y0": 0.0739,
+    "y1": 0.08140001
   },
   "ratings": [
     {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.669,
-    "enterprise_value": 89677692928,
-    "ev_ebitda": 19.276,
-    "ev_revenue": 7.116,
+    "enterprise_value": 90991534080,
+    "ev_ebitda": 19.559,
+    "ev_revenue": 7.22,
     "float_shares": 222367090,
     "short_shares": 4714546,
     "short_pct_float": 2.16,
@@ -244,14 +244,8 @@
   "ex_dividend": "2027-01-04",
   "dividend_date": null,
   "payout_ratio": 0.7566,
-  "inst_count": 2250,
+  "inst_count": 2251,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 3.38241,
-      "actual": 3.39,
-      "surprise_pct": 0.22
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 3.04039,
@@ -269,6 +263,12 @@
       "estimate": 3.34306,
       "actual": 3.47,
       "surprise_pct": 3.8
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 3.61072,
+      "actual": 3.61,
+      "surprise_pct": -0.02
     }
   ],
   "insiders": [
@@ -284,19 +284,19 @@
     {
       "name": "MANTLE RIDGE, L.P.",
       "role": "Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "other",
-      "text": "Stock Gift at price 0.00 per share.",
-      "value": 0,
-      "shares": 1759,
+      "kind": "sell",
+      "text": "Sale at price 284.21 per share.",
+      "value": 19944437,
+      "shares": 70175,
       "date": "2026-02-12"
     },
     {
       "name": "MANTLE RIDGE, L.P.",
       "role": "Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "sell",
-      "text": "Sale at price 284.21 per share.",
-      "value": 19944437,
-      "shares": 70175,
+      "kind": "other",
+      "text": "Stock Gift at price 0.00 per share.",
+      "value": 0,
+      "shares": 1759,
       "date": "2026-02-12"
     },
     {
@@ -318,6 +318,15 @@
       "date": "2025-12-03"
     },
     {
+      "name": "BOLS IVO",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 2746,
+      "date": "2025-12-02"
+    },
+    {
       "name": "SCHAEFFER MELISSA N",
       "role": "Chief Financial Officer",
       "kind": "other",
@@ -336,30 +345,21 @@
       "date": "2025-12-02"
     },
     {
-      "name": "BOLS IVO",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 2746,
-      "date": "2025-12-02"
-    },
-    {
-      "name": "PELLICCIOTTI WILLIAM J JR",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 850,
-      "date": "2025-12-01"
-    },
-    {
       "name": "MENEZES EDUARDO F",
       "role": "Chief Executive Officer",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 17376,
+      "date": "2025-12-01"
+    },
+    {
+      "name": "LEPORE MATTHEW",
+      "role": "General Counsel",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 2107,
       "date": "2025-12-01"
     }
   ],

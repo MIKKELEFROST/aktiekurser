@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:29.619Z",
+  "updated_at": "2026-11-05T22:14:59.076Z",
   "source": "Yahoo Finance",
   "symbol": "GSAT",
   "summary": "Globalstar, Inc. provides mobile satellite services in the United States, Canada, Europe, Central and South America, and internationally. It offers duplex two-way voice and data products, including mobile voice and data services and equipment for remote business continuity, recreational usage, safety, emergency preparedness and response, and other applications. The company also provides data transmissions using a mobile or fixed device that transmits the location of the device and other information to a central monitoring station, including commercial IoT products; communication and data transmissions using SPOT family of devices, such as SPOT X, SPOT Gen4, and SPOT Trace that emergency alerts, and transmit messages and the location of the device; and voice communication and data transmissions. In addition, it offers commercial IoT devices to track assets comprising cargo containers and rail cars, monitor utility meters, and monitor oil and gas assets; small satellite transmitter modules, such as the STX-3, ST-150 and ST100, and chips that enable an integrator's products to access its network; engineering and other communication services using MSS and terrestrial spectrum licenses; and hardware and software designs to develop specific applications operating over satellite network, as well as the installation of gateways and antennas. It distributes its products through retailers and sales force, as well as www.findmespot.com e-commerce website. The company serves forestry, maritime, government, oil and gas, mining, leisure, emergency services, construction, and transportation sectors. Globalstar, Inc. was founded in 1993 and is headquartered in Covington, Louisiana.",
@@ -8,9 +8,9 @@
   "employees": 477,
   "ceo": "Dr. Paul E. Jacobs Ph.D.",
   "next_earnings": "2026-11-05",
-  "earnings_estimated": true,
+  "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": 0.10002,
+  "eps_estimate": null,
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 73845000,
-      "earnings": -1583000
-    },
-    {
       "q": "4Q2025",
       "revenue": 71961000,
       "earnings": -14291000
@@ -69,10 +64,15 @@
       "q": "2Q2026",
       "revenue": 64772000,
       "earnings": -29183000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 70903000,
+      "earnings": -18355000
     }
   ],
   "growth": {
-    "q0": 7.3072996,
+    "q0": null,
     "q1": null,
     "y0": 4.5459,
     "y1": 0.2023
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.494,
-    "enterprise_value": 10862901248,
-    "ev_ebitda": 119.705,
-    "ev_revenue": 38.707,
+    "enterprise_value": 10967847936,
+    "ev_ebitda": 120.862,
+    "ev_revenue": 39.081,
     "float_shares": 52746552,
     "short_shares": 3899142,
     "short_pct_float": 7.49,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 415,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.03,
-      "actual": 0.01204,
-      "surprise_pct": 140.13
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.01398,
@@ -269,6 +263,12 @@
       "estimate": -0.09,
       "actual": -0.161,
       "surprise_pct": -78.89
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.10002,
+      "actual": -0.1129,
+      "surprise_pct": -212.88
     }
   ],
   "insiders": [
@@ -280,15 +280,6 @@
       "value": 140363,
       "shares": 1692,
       "date": "2026-09-21"
-    },
-    {
-      "name": "LYNCH JAMES F",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 82.52 per share.",
-      "value": 29839232,
-      "shares": 361600,
-      "date": "2026-09-18"
     },
     {
       "name": "MONROE JAMESIII",
@@ -306,6 +297,15 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 4000,
+      "date": "2026-09-18"
+    },
+    {
+      "name": "LYNCH JAMES F",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 82.52 per share.",
+      "value": 29839232,
+      "shares": 361600,
       "date": "2026-09-18"
     },
     {

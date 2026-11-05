@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:30.200Z",
+  "updated_at": "2026-11-05T22:14:59.618Z",
   "source": "Yahoo Finance",
   "symbol": "MTRX",
   "summary": "Matrix Service Company provides engineering, fabrication, construction, and maintenance services to support critical energy infrastructure and industrial markets in the United States, Canada, and internationally. It operates through three segments: Storage and Terminal Solutions, Utility and Power Infrastructure, and Process and Industrial Facilities. The Storage and Terminal Solutions segment offers engineering, procurement and construction (EPC), repair, and maintenance and fabrication services for liquid, cryogenic, and refrigerated storage and terminal facilities supporting energy markets, including LNG, NGLs, petroleum products, chemicals, hydrogen, and ammonia. This segment also manufactures and sells specialty, precision-engineered tank products, including geodesic domes, aluminum internal floating roofs, floating suction and skimmer systems, roof drain systems, and floating roof seals. The Utility and Power Infrastructure segment provides construction, maintenance, upgrades, and fabrication services for power generation facilities and power infrastructure system for power generation facilities and power infrastructure systems for various customers, such as public and private utilities, energy producers, and data centers. This segment also offers integrated EPC, fabrication, and upgrade services for LNG peak shaving facilities. The Process and Industrial Facilities segment engages in engineering, construction, maintenance, and repair services across various heavy industrial and energy transition markets comprising midstream and downstream energy, chemicals, mining and minerals, renewable fuels, and hydrogen, as well as involved in engineer and construct specialized infrastructure, and notably thermal vacuum test chambers for the aerospace and defense sectors. Matrix Service Company was founded in 1984 and is headquartered in Houston, Texas.",
@@ -7,10 +7,10 @@
   "website": "https://matrixservicecompany.com",
   "employees": 2370,
   "ceo": "Mr. Shawn P. Payne",
-  "next_earnings": "2026-11-04",
-  "earnings_estimated": false,
+  "next_earnings": "2027-02-03",
+  "earnings_estimated": true,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.18,
+  "eps_estimate": 0.17,
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 211884000,
-      "earnings": -3663000
-    },
-    {
       "q": "4Q2025",
       "revenue": 210508000,
       "earnings": -894000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 244531000,
       "earnings": 1142000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 219402000,
+      "earnings": 6189000
     }
   ],
   "growth": {
-    "q0": 19,
-    "q1": 9.5,
+    "q0": 9.5,
+    "q1": -0.0769,
     "y0": 1.2885001,
     "y1": 0.1681
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.012,
-    "enterprise_value": 66961764,
-    "ev_ebitda": 7.825,
-    "ev_revenue": 0.077,
+    "enterprise_value": 54796240,
+    "ev_ebitda": 6.404,
+    "ev_revenue": 0.063,
     "float_shares": 27154303,
     "short_shares": 1508682,
     "short_pct_float": 5.43,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 204,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.02,
-      "actual": -0.01,
-      "surprise_pct": -150
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.035,
@@ -269,16 +263,31 @@
       "estimate": 0.2,
       "actual": 0.16,
       "surprise_pct": -20
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.18,
+      "actual": 0.23,
+      "surprise_pct": 27.78
     }
   ],
   "insiders": [
     {
-      "name": "CAVANAH KEVIN S",
-      "role": "Chief Financial Officer",
+      "name": "CONNER CARLIN G",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 10325,
+      "date": "2026-11-03"
+    },
+    {
+      "name": "MILLER DAVID JAMES",
+      "role": "General Counsel",
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 18061,
+      "shares": 6646,
       "date": "2026-08-28"
     },
     {
@@ -300,13 +309,22 @@
       "date": "2026-08-28"
     },
     {
-      "name": "MILLER DAVID JAMES",
-      "role": "General Counsel",
+      "name": "CAVANAH KEVIN S",
+      "role": "Chief Financial Officer",
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 6646,
+      "shares": 18061,
       "date": "2026-08-28"
+    },
+    {
+      "name": "MILLER DAVID JAMES",
+      "role": "General Counsel",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 5432,
+      "date": "2026-08-25"
     },
     {
       "name": "SHEETS JUSTIN D",
@@ -327,15 +345,6 @@
       "date": "2026-08-25"
     },
     {
-      "name": "MILLER DAVID JAMES",
-      "role": "General Counsel",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 5432,
-      "date": "2026-08-25"
-    },
-    {
       "name": "CAVANAH KEVIN S",
       "role": "Chief Financial Officer",
       "kind": "sell",
@@ -352,15 +361,6 @@
       "value": 229378,
       "shares": 16991,
       "date": "2026-06-12"
-    },
-    {
-      "name": "CAVANAH KEVIN S",
-      "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 14.10 - 14.13 per share.",
-      "value": 796825,
-      "shares": 56509,
-      "date": "2026-06-05"
     }
   ],
   "dividends": [],

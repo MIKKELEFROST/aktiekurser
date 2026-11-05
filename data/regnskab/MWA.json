@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:30.212Z",
+  "updated_at": "2026-11-05T22:14:59.628Z",
   "source": "Yahoo Finance",
   "symbol": "MWA",
   "summary": "Mueller Water Products, Inc. manufactures and markets products and services for the transmission, distribution, and measurement of water used by municipalities, and the residential and non-residential construction industries in the United States, Canada, and internationally. It operates in two segments, Water Flow Solutions and Water Management Solutions. The Water Flow Solutions segment provides valves for water systems, such as iron gate, butterfly, tapping, check, knife, plug, and ball valves, which are used to control distribution and transmission of potable water and non-potable water, as well as in water transmission or distribution, water treatment facilities, or industrial applications. It also offers service brass products. The Water Management Solutions segment offers dry-barrel and wet-barrel fire hydrants for water infrastructure development; fire protection systems, and water infrastructure repair and replacement projects; pipe repair products, such as couplings, grips, and clamps used to repair leaks; residential, fire protection, and commercial water metering products and systems; water leak detection and pipe condition assessment products and services; machines and tools for tapping, drilling, extracting, installing, and stopping-off; gas valve products for use in gas distribution systems; and intelligent water solutions, including pressure control valves, advanced pressure management, network analytics, event management, and date logging. It sells its products under the Canada Valve, Centurion, Ez-Max, Hydro Gate, Hydro-Guard, HYMAX, HYMAX VERSA, Jones, Krausz, Milliken, Mueller Systems, Mueller, Pratt, Pratt Industrial, Repamax, Repaflex, Singer, Echologics, Echoshore, ePulse, Hersey, LeakFinderRT, Sentryx, and U.S. Pipe Valve and Hydrant brands. Mueller Water Products, Inc. was founded in 1857 and is headquartered in Atlanta, Georgia.",
@@ -7,10 +7,10 @@
   "website": "https://www.muellerwaterproducts.com",
   "employees": 3500,
   "ceo": "Mr. Paul  McAndrew",
-  "next_earnings": "2026-11-04",
-  "earnings_estimated": false,
+  "next_earnings": "2027-02-04",
+  "earnings_estimated": true,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.3762,
+  "eps_estimate": 0.2934,
   "analysts": {
     "strong_buy": 0,
     "buy": 2,
@@ -24,12 +24,6 @@
   "target_low": 21,
   "target_analysts": 6,
   "statements": [
-    {
-      "year": "2022",
-      "revenue": 1247400000,
-      "net": 76600000,
-      "margin": 6.1
-    },
     {
       "year": "2023",
       "revenue": 1275700000,
@@ -47,14 +41,15 @@
       "revenue": 1429700000,
       "net": 191700000,
       "margin": 13.4
+    },
+    {
+      "year": "2026",
+      "revenue": 1475000000,
+      "net": 221900000,
+      "margin": 15
     }
   ],
   "quarterly": [
-    {
-      "q": "3Q2025",
-      "revenue": 380800000,
-      "earnings": 52600000
-    },
     {
       "q": "4Q2025",
       "revenue": 318200000,
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 395900000,
       "earnings": 67300000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 376500000,
+      "earnings": 52300000
     }
   ],
   "growth": {
-    "q0": -0.01,
-    "q1": 0.0117,
-    "y0": 0.19469999,
-    "y1": 0.0044
+    "q0": 0.0117,
+    "q1": 0.0405,
+    "y0": 0.0011999999,
+    "y1": 0.0116
   },
   "ratings": [
     {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.959,
-    "enterprise_value": 3637482240,
-    "ev_ebitda": 10.085,
-    "ev_revenue": 2.459,
+    "enterprise_value": 3710861312,
+    "ev_ebitda": 10.288,
+    "ev_revenue": 2.509,
     "float_shares": 154820468,
     "short_shares": 6008670,
     "short_pct_float": 5.49,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.19510001,
   "inst_count": 591,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.33833,
-      "actual": 0.38,
-      "surprise_pct": 12.32
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.26333,
@@ -269,9 +263,24 @@
       "estimate": 0.39233,
       "actual": 0.5,
       "surprise_pct": 27.44
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.3762,
+      "actual": 0.38,
+      "surprise_pct": 1.01
     }
   ],
   "insiders": [
+    {
+      "name": "FEYERHERM RICHELLE R.",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 3122,
+      "date": "2026-11-02"
+    },
     {
       "name": "ORTIZ CHRISTINE",
       "role": "Director",
@@ -352,15 +361,6 @@
       "value": 295952,
       "shares": 10720,
       "date": "2026-03-17"
-    },
-    {
-      "name": "SENGSTACK GREGG C",
-      "role": "Director",
-      "kind": "buy",
-      "text": "Purchase at price 29.58 per share.",
-      "value": 739415,
-      "shares": 25000,
-      "date": "2026-02-25"
     }
   ],
   "dividends": [

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:31.265Z",
+  "updated_at": "2026-11-05T22:15:00.413Z",
   "source": "Yahoo Finance",
   "symbol": "VIAV",
   "summary": "Viavi Solutions Inc. engages in the provision of test and measurement and optical technologies for military, aerospace, railway and first responder communications in the Americas, the Asia-Pacific, Europe, the Middle East, and Africa. The company operates in two segments, Network and Service Enablement (NSE) and Optical Security and Performance Products (OSP). The NSE segment provides integrated portfolio of test, monitoring, assurance, and resilient PNT solutions that enable and secure critical infrastructure. This segment also offers instruments, microprobes, and perpetual software licenses that support the development, production, maintenance, and optimization of network systems, as well as repair, calibration, extended warranty, software support, technical assistance, training, and consulting services. The OSP segment leverages its core optical coating technologies and volume manufacturing capability to design, manufacture, and sell technologies for the anti-counterfeiting, 3D sensing, government and aerospace, automotive, and industrial markets. The company was formerly known as JDS Uniphase Corporation. Viavi Solutions Inc. was founded in 1923 and is headquartered in Chandler, Arizona.",
@@ -7,10 +7,10 @@
   "website": "https://www.viavisolutions.com",
   "employees": 4100,
   "ceo": "Mr. Oleg  Khaykin",
-  "next_earnings": "2026-11-04",
-  "earnings_estimated": false,
+  "next_earnings": "2027-02-03",
+  "earnings_estimated": true,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 0.40704,
+  "eps_estimate": 0.40372,
   "analysts": {
     "strong_buy": 1,
     "buy": 6,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 299100000,
-      "earnings": -21400000
-    },
-    {
       "q": "4Q2025",
       "revenue": 369300000,
       "earnings": -48100000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 443100000,
       "earnings": 32700000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 469300000,
+      "earnings": 76000000
     }
   ],
   "growth": {
-    "q0": 1.7136,
-    "q1": 0.8351,
+    "q0": 0.8351,
+    "q1": 0.48669997,
     "y0": 0.6437,
     "y1": 0.1868
   },
   "ratings": [
+    {
+      "date": "2026-11-05",
+      "firm": "Needham",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-09-23",
       "firm": "Rosenblatt",
@@ -139,13 +146,6 @@
       "firm": "Rosenblatt",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-04-30",
-      "firm": "UBS",
-      "from": "Neutral",
-      "to": "Neutral",
       "action": "main"
     }
   ],
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 15,
-    "sells": 15,
+    "sells": 13,
     "bought": 1800229,
-    "sold": 711173,
-    "net_pct": 58.2
+    "sold": 651808,
+    "net_pct": 63.4
   },
   "extras": {
     "beta": 1.314,
-    "enterprise_value": 7463832576,
-    "ev_ebitda": 26.762,
-    "ev_revenue": 4.916,
+    "enterprise_value": 7298509824,
+    "ev_ebitda": 26.169,
+    "ev_revenue": 4.807,
     "float_shares": 243472990,
     "short_shares": 11973323,
     "short_pct_float": 4.91,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 743,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.13134,
-      "actual": 0.15,
-      "surprise_pct": 14.21
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.1877,
@@ -269,6 +263,12 @@
       "estimate": 0.29847,
       "actual": 0.34,
       "surprise_pct": 13.91
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.40704,
+      "actual": 0.47,
+      "surprise_pct": 15.47
     }
   ],
   "insiders": [
@@ -309,6 +309,15 @@
       "date": "2026-09-22"
     },
     {
+      "name": "DASKAL ILAN",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 153798,
+      "date": "2026-09-22"
+    },
+    {
       "name": "SCRIVANICH LUKE MATTHEW",
       "role": "Officer",
       "kind": "other",
@@ -336,15 +345,6 @@
       "date": "2026-09-22"
     },
     {
-      "name": "DASKAL ILAN",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 153798,
-      "date": "2026-09-22"
-    },
-    {
       "name": "MCNAB PAUL A",
       "role": "Officer",
       "kind": "sell",
@@ -354,12 +354,12 @@
       "date": "2026-09-11"
     },
     {
-      "name": "SCRIVANICH LUKE MATTHEW",
-      "role": "Officer",
+      "name": "DASKAL ILAN",
+      "role": "Chief Financial Officer",
       "kind": "sell",
-      "text": "Sale at price 36.37 per share.",
-      "value": 869643,
-      "shares": 23911,
+      "text": "Sale at price 36.29 per share.",
+      "value": 2042764,
+      "shares": 56290,
       "date": "2026-08-31"
     }
   ],

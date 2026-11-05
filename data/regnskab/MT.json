@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:30.188Z",
+  "updated_at": "2026-11-05T22:14:59.610Z",
   "source": "Yahoo Finance",
   "symbol": "MT",
   "summary": "ArcelorMittal S.A., together with its subsidiaries, operates as integrated steel and mining companies in the Americas, Europe, Asia, and Africa. It offers semi-finished flat products, including slabs; finished flat products comprising plates, hot- and cold-rolled coils and sheets, hot-dipped and electro-galvanized coils and sheets, tinplate, and color coated coils and sheets; semi-finished long products, such as blooms and billets; finished long products consisting of bars, wire-rods, structural sections, rails, sheet piles, and wire-products; and seamless and welded pipes and tubes. The company also provides mining products, such as iron ore lumps, fines, concentrate, pellets, and sinter feeds; and coking coal. It sells its products to various customers in the automotive, appliance, engineering, construction, energy, and machinery industries through a centralized marketing organization, and distributors. The company operates iron ore mining activities in Brazil, Bosnia, Liberia, Mexico, South Africa, and Ukraine, as well as in India and in Canada. ArcelorMittal S.A. was founded in 1976 and is headquartered in Luxembourg, Luxembourg.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.93667,
+  "eps_estimate": 1.29667,
   "analysts": {
     "strong_buy": 2,
     "buy": 3,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 15657000000,
-      "earnings": 377000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 14971000000,
       "earnings": 177000000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 16761000000,
       "earnings": 683000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 16466000000,
+      "earnings": -391000000
     }
   ],
   "growth": {
-    "q0": 0.5108,
-    "q1": 0.5078,
+    "q0": 0.5078,
+    "q1": 1.0222,
     "y0": 0.015,
     "y1": 0.817
   },
@@ -158,17 +158,17 @@
       "date": "2026-06-30"
     },
     {
-      "name": "Dimensional Fund Advisors LP",
-      "kind": "institution",
-      "pct": 0.42,
-      "shares": 3253361,
-      "date": "2026-06-30"
-    },
-    {
       "name": "iShares Trust-iShares Core MSCI EAFE ETF",
       "kind": "fond",
       "pct": 0.42,
       "shares": 3228417,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Dimensional Fund Advisors LP",
+      "kind": "institution",
+      "pct": 0.4,
+      "shares": 3067991,
       "date": "2026-09-30"
     },
     {
@@ -190,7 +190,7 @@
       "kind": "fond",
       "pct": 0.21,
       "shares": 1612300,
-      "date": "2026-08-31"
+      "date": "2026-09-30"
     },
     {
       "name": "iShares Trust-iShares MSCI EAFE ETF",
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.704,
-    "enterprise_value": 102694395904,
-    "ev_ebitda": 18.843,
-    "ev_revenue": 1.634,
+    "enterprise_value": 105816129536,
+    "ev_ebitda": 19.416,
+    "ev_revenue": 1.684,
     "float_shares": 826444782,
     "short_shares": 1416340,
     "short_pct_float": 0.34,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-11-13",
   "dividend_date": null,
   "payout_ratio": 0.24260001,
-  "inst_count": 399,
+  "inst_count": 398,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.55308,
-      "actual": 0.62,
-      "surprise_pct": 12.1
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.54808,
@@ -269,6 +263,12 @@
       "estimate": 1.09,
       "actual": 0.89,
       "surprise_pct": -18.35
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.93667,
+      "actual": 1.15,
+      "surprise_pct": 22.78
     }
   ],
   "insiders": [],

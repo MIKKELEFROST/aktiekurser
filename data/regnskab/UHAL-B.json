@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:31.199Z",
+  "updated_at": "2026-11-05T22:15:00.366Z",
   "source": "Yahoo Finance",
   "symbol": "UHAL-B",
   "summary": "U-Haul Holding Company operates as a do-it-yourself moving and storage operator for household and commercial goods in the United States and Canada. It operates through three segments: Moving and Storage, Property and Casualty Insurance, and Life Insurance. It rents trucks, trailers, fixed and portable moving and storage units, specialty rental items, and self-storage spaces primarily to the household movers; and sells moving supplies, towing accessories, and propane. The company provides uhaul.com, an online marketplace that connects consumers to independent moving help service providers and independent self-storage affiliates; auto transport and toy hauler, and tow dolly options to transport the vehicles; and specialty boxes for dishes, computers, flat screen television, tapes, security locks, and packing supplies. In addition, it rents self-moving products and services through a network of managed retail stores and independent U-Haul dealers, and rents equipment. Further, the company provides moving and storage protection packages, such as Safemove and Safetow packages, which offer moving and towing customers with a damage waiver, cargo protection, and medical and life insurance coverage; Safestor that protects storage and U-Box customers from loss on their goods in storage; Safehaul, which protect customers' belongings in transit through its U-Box portable moving and storage units; Safemove Plus, which provides rental customers with a layer of primary liability protection; Safetrip, a supplemental roadside protection for the customers equipment; and loss adjusting and claims handling services. Additionally, it offers life and health insurance products to senior market through direct writing and reinsuring of life insurance, Medicare supplement, and annuity policies. The company was formerly known as AMERCO and changed its name to U-Haul Holding Company in December 2022. U-Haul Holding Company was founded in 1945 and is based in Reno, Nevada.",
@@ -7,10 +7,10 @@
   "website": "https://uhaul.com",
   "employees": 17697,
   "ceo": "Mr. Edward Joseph Shoen J.D.",
-  "next_earnings": "2026-11-04",
-  "earnings_estimated": false,
+  "next_earnings": "2027-02-03",
+  "earnings_estimated": true,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.73,
+  "eps_estimate": 0.12,
   "analysts": null,
   "target_mean": null,
   "target_high": null,
@@ -44,11 +44,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 1719922000,
-      "earnings": 105550000
-    },
-    {
       "q": "4Q2025",
       "revenue": 1415608000,
       "earnings": -36968000
@@ -62,11 +57,16 @@
       "q": "2Q2026",
       "revenue": 1682027000,
       "earnings": 122929000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1772675000,
+      "earnings": 136675000
     }
   ],
   "growth": {
-    "q0": 0.4759,
-    "q1": 1.4258,
+    "q0": 1.4258,
+    "q1": null,
     "y0": null,
     "y1": 0.9643
   },
@@ -82,9 +82,9 @@
     {
       "name": "Dimensional Fund Advisors LP",
       "kind": "institution",
-      "pct": 2.68,
-      "shares": 4703268,
-      "date": "2026-06-30"
+      "pct": 2.93,
+      "shares": 5140645,
+      "date": "2026-09-30"
     },
     {
       "name": "Blackrock Inc.",
@@ -153,9 +153,9 @@
   },
   "extras": {
     "beta": 1.07,
-    "enterprise_value": 17037181952,
-    "ev_ebitda": 22.414,
-    "ev_revenue": 2.798,
+    "enterprise_value": 17330716672,
+    "ev_ebitda": 22.8,
+    "ev_revenue": 2.846,
     "float_shares": 105971670,
     "short_shares": 915192,
     "short_pct_float": 0.92,
@@ -168,12 +168,6 @@
   "payout_ratio": 1.4286,
   "inst_count": 437,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.71373,
-      "actual": 0.4946,
-      "surprise_pct": -30.7
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.10858,
@@ -191,9 +185,24 @@
       "estimate": 0.54,
       "actual": 0.63,
       "surprise_pct": 16.67
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.73,
+      "actual": 0.71,
+      "surprise_pct": -2.74
     }
   ],
   "insiders": [
+    {
+      "name": "SHOEN MARK V",
+      "role": "Beneficial Owner of more than 10% of a Class of Security",
+      "kind": "sell",
+      "text": "Sale at price 50.11 - 52.85 per share.",
+      "value": 2360232,
+      "shares": 46000,
+      "date": "2026-11-02"
+    },
     {
       "name": "SHOEN MARK V",
       "role": "Beneficial Owner of more than 10% of a Class of Security",

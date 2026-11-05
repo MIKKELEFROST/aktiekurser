@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:31.392Z",
+  "updated_at": "2026-11-05T22:15:00.513Z",
   "source": "Yahoo Finance",
   "symbol": "XERS",
   "summary": "Xeris Biopharma Holdings, Inc., a commercial-stage biopharmaceutical company, engages in developing and commercializing therapies for chronic endocrine and neurological diseases in Illinois. It offers Gvoke, a ready-to-use liquid-stable glucagon for the treatment of severe hypoglycemia in pediatric and adult patients; Keveyis, a therapy for the treatment of hyperkalemic, hypokalemic, and related variants of primary periodic paralysis; and Recorlev, a cortisol synthesis inhibitor for the treatment of endogenous hypercortisolemia in adult patients with Cushing's syndrome. It is also developing XP-8121, a once-weekly subcutaneous injection of levothyroxine that is in phase 3 clinical trial for the treatment of hypothyroidism. The company was incorporated in 2005 and is headquartered in Chicago, Illinois.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.02667,
+  "eps_estimate": 0.03333,
   "analysts": {
     "strong_buy": 1,
     "buy": 5,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 74380000,
-      "earnings": 621000
-    },
-    {
       "q": "4Q2025",
       "revenue": 85807000,
       "earnings": 11081000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 92100000,
       "earnings": -31101000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 107225000,
+      "earnings": 11290000
     }
   ],
   "growth": {
-    "q0": 0,
-    "q1": -0.4445,
+    "q0": -0.4445,
+    "q1": 1.5,
     "y0": 0,
     "y1": 3.1852
   },
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 6,
-    "sells": 13,
+    "sells": 15,
     "bought": 154547,
-    "sold": 301498,
-    "net_pct": -2.6
+    "sold": 321498,
+    "net_pct": -2.9
   },
   "extras": {
     "beta": 0.837,
-    "enterprise_value": 2054710144,
-    "ev_ebitda": 42.131,
-    "ev_revenue": 6.126,
+    "enterprise_value": 2074765440,
+    "ev_ebitda": 42.543,
+    "ev_revenue": 6.186,
     "float_shares": 176066720,
     "short_shares": 8027654,
     "short_pct_float": 4.55,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 321,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.00333,
-      "actual": 0,
-      "surprise_pct": -100
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.045,
@@ -269,9 +263,33 @@
       "estimate": 0.0025,
       "actual": -0.0018,
       "surprise_pct": -172
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.02667,
+      "actual": 0.06,
+      "surprise_pct": 124.97
     }
   ],
   "insiders": [
+    {
+      "name": "PIEPER STEVEN",
+      "role": "Chief Financial Officer",
+      "kind": "sell",
+      "text": "Sale at price 10.23 per share.",
+      "value": 51174,
+      "shares": 5000,
+      "date": "2026-11-02"
+    },
+    {
+      "name": "MCCULLOCH KEVIN",
+      "role": "President",
+      "kind": "sell",
+      "text": "Sale at price 10.23 per share.",
+      "value": 153488,
+      "shares": 15000,
+      "date": "2026-11-02"
+    },
     {
       "name": "MCCULLOCH KEVIN",
       "role": "President",
@@ -343,24 +361,6 @@
       "value": 383176,
       "shares": 45000,
       "date": "2026-07-07"
-    },
-    {
-      "name": "HECHT BETH P",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 8.03 per share.",
-      "value": 133860,
-      "shares": 16666,
-      "date": "2026-07-01"
-    },
-    {
-      "name": "KREHER NERISSA C",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 33582,
-      "date": "2026-07-01"
     }
   ],
   "dividends": [],

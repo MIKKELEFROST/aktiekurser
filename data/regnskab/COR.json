@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-11-04T22:07:29.069Z",
+  "updated_at": "2026-11-05T22:14:58.521Z",
   "source": "Yahoo Finance",
   "symbol": "COR",
   "summary": "Cencora, Inc. sources and distributes pharmaceutical products in the United States and internationally. The company's U.S. Healthcare Solutions segment distributes generic and injectable pharmaceuticals, over-the-counter healthcare products, home healthcare supplies and equipment, and related services to acute care hospitals and health systems, independent and chain retail pharmacies, mail order pharmacies, medical clinics, long-term care and alternate site pharmacies, and other customers; distributes plasma and other blood products, vaccines, and other specialty pharmaceutical products; provides pharmacy management, staffing, and other consulting services; supply management software to retail and institutional healthcare providers; packaging solutions to institutional and retail healthcare providers; clinical trial support, product post-approval, and commercialization support services; data analytics, outcomes research, and other services for biotechnology and pharmaceutical manufacturers; pharmaceuticals, vaccines, parasiticides, diagnostics, micro feed ingredients, and other products to the companion animal and production animal markets; sales force services to manufacturers; and offers other services to physicians who specialize in various disease states, such as oncology, as well as to other healthcare providers, including hospitals and dialysis clinics. Its International Healthcare Solutions segment provides international pharmaceutical wholesale and related service, and global commercialization services; distributes pharmaceuticals, other healthcare products, and related services to pharmacies, doctors, health centers, and hospitals; and offers specialty transportation and logistics services for the biopharmaceutical industry. The company was formerly known as AmerisourceBergen Corporation and changed its name to Cencora, Inc. in August 2023. Cencora, Inc. was founded in 1871 and is headquartered in Conshohocken, Pennsylvania.",
   "industry": "Medical Distribution",
   "website": "https://www.cencora.com",
-  "employees": 47000,
+  "employees": null,
   "ceo": "Dr. Robert P. Mauch Ph.D., PharmD",
-  "next_earnings": "2026-11-04",
-  "earnings_estimated": false,
+  "next_earnings": "2027-02-03",
+  "earnings_estimated": true,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 4.57382,
+  "eps_estimate": 4.578,
   "analysts": {
     "strong_buy": 3,
     "buy": 7,
@@ -72,12 +72,26 @@
     }
   ],
   "growth": {
-    "q0": 0.1911,
-    "q1": 0.1221,
-    "y0": 0.1176,
-    "y1": 0.10520001
+    "q0": 0.1221,
+    "q1": 0.0911,
+    "y0": 0.0998,
+    "y1": 0.1093
   },
   "ratings": [
+    {
+      "date": "2026-11-05",
+      "firm": "Leerink Partners",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-05",
+      "firm": "Evercore ISI Group",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
     {
       "date": "2026-10-30",
       "firm": "Morgan Stanley",
@@ -130,20 +144,6 @@
     {
       "date": "2026-08-11",
       "firm": "Wells Fargo",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-07",
-      "firm": "Morgan Stanley",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-07",
-      "firm": "JP Morgan",
       "from": "Overweight",
       "to": "Overweight",
       "action": "main"
@@ -223,18 +223,18 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 12,
+    "buys": 16,
     "sells": 5,
-    "bought": 9554,
+    "bought": 18380,
     "sold": 15537,
-    "net_pct": -0.1
+    "net_pct": 0
   },
   "extras": {
-    "beta": 0.571,
-    "enterprise_value": 76812541952,
-    "ev_ebitda": 13.849,
-    "ev_revenue": 0.231,
-    "float_shares": 180249615,
+    "beta": null,
+    "enterprise_value": 73938567168,
+    "ev_ebitda": 13.151,
+    "ev_revenue": 0.219,
+    "float_shares": 180249459,
     "short_shares": 3932007,
     "short_pct_float": 2.35,
     "short_ratio": 3.16,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-08-14",
   "dividend_date": null,
   "payout_ratio": 0.1745,
-  "inst_count": 1895,
+  "inst_count": 1897,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 3.78544,
-      "actual": 3.84,
-      "surprise_pct": 1.44
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 4.03997,
@@ -269,6 +263,12 @@
       "estimate": 4.34768,
       "actual": 4.48,
       "surprise_pct": 3.04
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 4.57382,
+      "actual": 4.66,
+      "surprise_pct": 1.88
     }
   ],
   "insiders": [
@@ -280,6 +280,42 @@
       "value": 326327,
       "shares": 986,
       "date": "2026-11-02"
+    },
+    {
+      "name": "COOPER ELLEN",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 330.84 per share.",
+      "value": 30106,
+      "shares": 91,
+      "date": "2026-10-30"
+    },
+    {
+      "name": "TYLER LAUREN M.",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 330.84 per share.",
+      "value": 30106,
+      "shares": 91,
+      "date": "2026-10-30"
+    },
+    {
+      "name": "VERMA PAWAN",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 8538,
+      "date": "2026-10-30"
+    },
+    {
+      "name": "NALLY DENNIS M",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 330.84 per share.",
+      "value": 35069,
+      "shares": 106,
+      "date": "2026-10-30"
     },
     {
       "name": "SANCHEZ ROBERT E",
@@ -325,42 +361,6 @@
       "value": 3662663,
       "shares": 11300,
       "date": "2026-08-24"
-    },
-    {
-      "name": "COOPER ELLEN",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 311.34 per share.",
-      "value": 30200,
-      "shares": 97,
-      "date": "2026-07-31"
-    },
-    {
-      "name": "TYLER LAUREN M.",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 311.34 per share.",
-      "value": 30200,
-      "shares": 97,
-      "date": "2026-07-31"
-    },
-    {
-      "name": "NALLY DENNIS M",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 311.34 per share.",
-      "value": 35181,
-      "shares": 113,
-      "date": "2026-07-31"
-    },
-    {
-      "name": "CAMPBELL ELIZABETH S",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 240.53 per share.",
-      "value": 12000,
-      "shares": 49,
-      "date": "2026-06-30"
     }
   ],
   "dividends": [

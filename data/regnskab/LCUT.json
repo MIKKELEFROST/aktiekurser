@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:29.994Z",
+  "updated_at": "2026-11-05T22:14:59.448Z",
   "source": "Yahoo Finance",
   "symbol": "LCUT",
   "summary": "Lifetime Brands, Inc. designs, sources, and sells branded kitchenware, tableware, and other home solution products for use in the home, and market in the United States and internationally. The company offers kitchenware products, including kitchen tools, cutlery, kitchen scales, thermometers, cutting boards, shears, cookware, pantryware, spice racks, and bakeware; and tableware products comprising dinnerware, stemware, flatware, and giftware. It also provides home solutions, such as thermal beverageware, bath scales, weather and outdoor household, food storage, neoprene travel, and home décor products. It owns or licenses various brands, including the Built, Chef'n, Chicago Metallic, Copco, Dolly Parton, Elements, Farberware, Fitz & Floyd, Fred & Friends, Hoffritz, International Silver, Kamenstein, KitchenAid, Kizmos, Melannco, Mikasa, Mikasa Hospitality, Misto, Pfaltzgraff, PlanetBox, Rabbit, Sabatier, S'well, Taylor, Towle, Wallace, Wilton Armetale, and Year & Day. It serves mass market merchants, specialty stores, department stores, warehouse clubs, grocery stores, off-price retailers, food service distributors, food and beverage outlets, and e-commerce. The company sells its products directly, as well as through its retail websites. Lifetime Brands, Inc. was founded in 1945 and is headquartered in Garden City, New York.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.205,
+  "eps_estimate": 0.645,
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 171912000,
-      "earnings": -1189000
-    },
-    {
       "q": "4Q2025",
       "revenue": 204074000,
       "earnings": 18152000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 141569000,
       "earnings": 19609000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 177676000,
+      "earnings": -4195000
     }
   ],
   "growth": {
-    "q0": 0.8636,
-    "q1": -0.3857,
+    "q0": -0.3857,
+    "q1": 0.125,
     "y0": 1.5432,
     "y1": -0.4806
   },
@@ -165,18 +165,18 @@
       "date": "2026-06-30"
     },
     {
-      "name": "Dimensional Fund Advisors LP",
-      "kind": "institution",
-      "pct": 4.16,
-      "shares": 956773,
-      "date": "2026-06-30"
-    },
-    {
       "name": "Blackrock Inc.",
       "kind": "institution",
       "pct": 4.13,
       "shares": 948690,
       "date": "2026-06-30"
+    },
+    {
+      "name": "Dimensional Fund Advisors LP",
+      "kind": "institution",
+      "pct": 3.67,
+      "shares": 843447,
+      "date": "2026-09-30"
     },
     {
       "name": "Vanguard Capital Management LLC",
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.056,
-    "enterprise_value": 449149216,
-    "ev_ebitda": 9.824,
-    "ev_revenue": 0.679,
+    "enterprise_value": 458344768,
+    "ev_ebitda": 10.025,
+    "ev_revenue": 0.693,
     "float_shares": 11829365,
     "short_shares": 1577240,
     "short_pct_float": 12.03,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.1172,
   "inst_count": 138,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.14,
-      "actual": 0.11,
-      "surprise_pct": -21.43
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.31333,
@@ -269,6 +263,12 @@
       "estimate": -0.21333,
       "actual": 1.18,
       "surprise_pct": 653.13
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.205,
+      "actual": 0.37,
+      "surprise_pct": 80.49
     }
   ],
   "insiders": [

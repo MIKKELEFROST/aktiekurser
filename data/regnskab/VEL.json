@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:31.256Z",
+  "updated_at": "2026-11-05T22:15:00.405Z",
   "source": "Yahoo Finance",
   "symbol": "VEL",
   "summary": "Velocity Financial, Inc. operates as a real estate finance company in the United States. The company originates, securitizes, and manages a portfolio of loans, which are secured by real estate, including investor loans unit residential rental properties; residential rental properties office; and loans for multi-family, mixed use, and commercial properties. The company also provides warehouse and other properties. It offers its products through a network of independent mortgage brokers and direct borrower relationships. The company was founded in 2004 and is headquartered in Westlake Village, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 0.71333,
+  "eps_estimate": 0.71667,
   "analysts": {
     "strong_buy": 1,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 85772000,
-      "earnings": 25373000
-    },
-    {
       "q": "4Q2025",
       "revenue": 51609000,
       "earnings": 34797000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 48890000,
       "earnings": 25163000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 102149000,
+      "earnings": 26418000
     }
   ],
   "growth": {
-    "q0": 0.033800002,
-    "q1": -0.22940001,
+    "q0": -0.22940001,
+    "q1": 0.0049,
     "y0": -0.0355,
     "y1": 0.0808
   },
@@ -181,9 +181,9 @@
     {
       "name": "Dimensional Fund Advisors LP",
       "kind": "institution",
-      "pct": 1.66,
-      "shares": 656725,
-      "date": "2026-06-30"
+      "pct": 1.91,
+      "shares": 755068,
+      "date": "2026-09-30"
     },
     {
       "name": "Adage Capital Partners GP L.L.C.",
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.768,
-    "enterprise_value": 7601567744,
+    "enterprise_value": 7640654336,
     "ev_ebitda": null,
-    "ev_revenue": 26.756,
+    "ev_revenue": 26.893,
     "float_shares": 4951764,
     "short_shares": 1543019,
     "short_pct_float": 29.16,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 148,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.6,
-      "actual": 0.69,
-      "surprise_pct": 15
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.67,
@@ -269,6 +263,12 @@
       "estimate": 0.65,
       "actual": 0.71,
       "surprise_pct": 9.23
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.71333,
+      "actual": 0.76,
+      "surprise_pct": 6.54
     }
   ],
   "insiders": [
@@ -318,21 +318,21 @@
       "date": "2026-08-10"
     },
     {
-      "name": "SZCZEPANIAK MARK R",
-      "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 18.00 per share.",
-      "value": 7200,
-      "shares": 400,
-      "date": "2026-08-06"
-    },
-    {
       "name": "KELLY ROLAND THOMAS",
       "role": "General Counsel",
       "kind": "sell",
       "text": "Sale at price 18.00 per share.",
       "value": 28800,
       "shares": 1600,
+      "date": "2026-08-06"
+    },
+    {
+      "name": "SZCZEPANIAK MARK R",
+      "role": "Chief Financial Officer",
+      "kind": "sell",
+      "text": "Sale at price 18.00 per share.",
+      "value": 7200,
+      "shares": 400,
       "date": "2026-08-06"
     },
     {

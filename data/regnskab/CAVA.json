@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:28.918Z",
+  "updated_at": "2026-11-05T22:14:58.405Z",
   "source": "Yahoo Finance",
   "symbol": "CAVA",
   "summary": "CAVA Group, Inc. owns and operates a chain of restaurants under the CAVA brand in the United States. It also offers dips, spreads, and dressings through grocery stores. In addition, the company provides walk-the-line, online, and mobile ordering platforms. CAVA Group, Inc. was founded in 2006 and is headquartered in Washington, District Of Columbia.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 0.12039,
+  "eps_estimate": 0.02965,
   "analysts": {
     "strong_buy": 3,
     "buy": 16,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 292238000,
-      "earnings": 14747000
-    },
-    {
       "q": "4Q2025",
       "revenue": 274985000,
       "earnings": 4921000
@@ -69,15 +64,55 @@
       "q": "2Q2026",
       "revenue": 368436000,
       "earnings": 23017000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 356436000,
+      "earnings": 13198000
     }
   ],
   "growth": {
-    "q0": 0.0033000002,
-    "q1": -0.2588,
+    "q0": -0.2588,
+    "q1": 0.2821,
     "y0": 0.0152,
     "y1": 0.35439998
   },
   "ratings": [
+    {
+      "date": "2026-11-05",
+      "firm": "RBC Capital",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-05",
+      "firm": "BNP Paribas",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-05",
+      "firm": "Bernstein",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-05",
+      "firm": "Keybanc",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-05",
+      "firm": "TD Cowen",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-30",
       "firm": "Mizuho",
@@ -111,41 +146,6 @@
       "firm": "TD Cowen",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-10-08",
-      "firm": "Melius Research",
-      "from": "Hold",
-      "to": "Buy",
-      "action": "up"
-    },
-    {
-      "date": "2026-09-18",
-      "firm": "JP Morgan",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-09-17",
-      "firm": "RBC Capital",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-09-16",
-      "firm": "Seaport Global",
-      "from": null,
-      "to": "Buy",
-      "action": "init"
-    },
-    {
-      "date": "2026-08-13",
-      "firm": "DA Davidson",
-      "from": "Neutral",
-      "to": "Neutral",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.759,
-    "enterprise_value": 7129724928,
-    "ev_ebitda": 44.386,
-    "ev_revenue": 5.189,
+    "enterprise_value": 7324791296,
+    "ev_ebitda": 45.6,
+    "ev_revenue": 5.331,
     "float_shares": 107912574,
     "short_shares": 16139567,
     "short_pct_float": 14.66,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 682,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.12385,
-      "actual": 0.12,
-      "surprise_pct": -3.11
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.02643,
@@ -269,6 +263,12 @@
       "estimate": 0.18469,
       "actual": 0.19,
       "surprise_pct": 2.88
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.11981,
+      "actual": 0.11,
+      "surprise_pct": -8.19
     }
   ],
   "insiders": [

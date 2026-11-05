@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:29.293Z",
+  "updated_at": "2026-11-05T22:14:58.797Z",
   "source": "Yahoo Finance",
   "symbol": "ELF",
   "summary": "e.l.f. Beauty, Inc., a beauty company, provides cosmetics and skin care products worldwide. The company offers eye, lip, face, and skin care products. It offers products under the e.l.f. Cosmetics, e.l.f. Skin, Well People, Naturium, and Rhode brand names. The company sells its products through national and international retailers and direct-to-consumer through its e-commerce channel. The company was formerly known as J.A. Cosmetics Holdings, Inc. and changed its name to e.l.f. Beauty, Inc. in April 2016. e.l.f. Beauty, Inc. was founded in 2004 and is headquartered in Oakland, California.",
@@ -7,10 +7,10 @@
   "website": "https://www.elfbeauty.com",
   "employees": 849,
   "ceo": "Mr. Tarang P. Amin",
-  "next_earnings": "2026-11-04",
-  "earnings_estimated": false,
+  "next_earnings": "2027-02-03",
+  "earnings_estimated": true,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 0.59875,
+  "eps_estimate": 0.86363,
   "analysts": {
     "strong_buy": 1,
     "buy": 11,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 343936000,
-      "earnings": 2996000
-    },
-    {
       "q": "4Q2025",
       "revenue": 489505000,
       "earnings": 39376000
@@ -69,15 +64,41 @@
       "q": "2Q2026",
       "revenue": 479373000,
       "earnings": 66599000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 520816000,
+      "earnings": 30030000
     }
   ],
   "growth": {
-    "q0": -0.1195,
-    "q1": -0.3035,
+    "q0": -0.3035,
+    "q1": 0.56509995,
     "y0": 0.1682,
     "y1": 0.08229999
   },
   "ratings": [
+    {
+      "date": "2026-11-05",
+      "firm": "Citigroup",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-05",
+      "firm": "Piper Sandler",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-05",
+      "firm": "Evercore ISI Group",
+      "from": "In-Line",
+      "to": "In-Line",
+      "action": "main"
+    },
     {
       "date": "2026-10-22",
       "firm": "Canaccord Genuity",
@@ -125,27 +146,6 @@
       "firm": "Raymond James",
       "from": "Strong Buy",
       "to": "Strong Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-09-17",
-      "firm": "Bernstein",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-09-16",
-      "firm": "B. Riley Securities",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "reit"
-    },
-    {
-      "date": "2026-09-15",
-      "firm": "B of A Securities",
-      "from": "Buy",
-      "to": "Buy",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.584,
-    "enterprise_value": 7164450304,
-    "ev_ebitda": 34.204,
-    "ev_revenue": 4.066,
+    "enterprise_value": 7290137600,
+    "ev_ebitda": 34.804,
+    "ev_revenue": 4.137,
     "float_shares": 57403569,
     "short_shares": 4393442,
     "short_pct_float": 8.78,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 605,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.56702,
-      "actual": 0.68,
-      "surprise_pct": 19.93
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.72333,
@@ -269,6 +263,12 @@
       "estimate": 0.71748,
       "actual": 1.75,
       "surprise_pct": 143.91
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.59875,
+      "actual": 1.21,
+      "surprise_pct": 102.09
     }
   ],
   "insiders": [

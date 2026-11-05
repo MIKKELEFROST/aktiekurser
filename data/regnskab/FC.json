@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:29.407Z",
+  "updated_at": "2026-11-05T22:14:58.896Z",
   "source": "Yahoo Finance",
   "symbol": "FC",
   "summary": "Franklin Covey Co. provides training and consulting services in the areas of leadership, customer loyalty, execution, productivity, sales performance, and educational improvement for organizations and individuals worldwide. The company operates through four segments: North America, International Direct Offices, International Licensees, and Education Division. It offers a suite of individual-effectiveness and leadership-development training and products, such as The 7 Habits of Highly Effective People, The Speed of Trust, The Leader In Me, The Four Disciplines of Execution, Trust & Inspire, and Multipliers. The company also operates internet-based platforms, including All Access Pass and Leader in Me that offer training days and training course materials. The company was formerly known as Franklin Quest Co. and changed its name to Franklin Covey Co. in May 1997. Franklin Covey Co. was incorporated in 1983 and is based in Draper, Utah.",
@@ -7,22 +7,16 @@
   "website": "https://www.franklincovey.com",
   "employees": 1120,
   "ceo": "Mr. Paul S. Walker",
-  "next_earnings": "2026-11-04",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-06",
+  "earnings_estimated": true,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 0.665,
+  "eps_estimate": 0.255,
   "analysts": null,
   "target_mean": 31,
   "target_high": 38,
   "target_low": 25,
   "target_analysts": 3,
   "statements": [
-    {
-      "year": "2022",
-      "revenue": 262841000,
-      "net": 18430000,
-      "margin": 7
-    },
     {
       "year": "2023",
       "revenue": 280521000,
@@ -40,14 +34,15 @@
       "revenue": 267067000,
       "net": 3068000,
       "margin": 1.1
+    },
+    {
+      "year": "2026",
+      "revenue": 261455000,
+      "net": 4923000,
+      "margin": 1.9
     }
   ],
   "quarterly": [
-    {
-      "q": "3Q2025",
-      "revenue": 71248000,
-      "earnings": 4372000
-    },
     {
       "q": "4Q2025",
       "revenue": 64045000,
@@ -62,13 +57,18 @@
       "q": "2Q2026",
       "revenue": 67807000,
       "earnings": 3085000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 69957000,
+      "earnings": 7109000
     }
   ],
   "growth": {
-    "q0": 0.6234,
-    "q1": 6.0833,
-    "y0": 1.1804,
-    "y1": 0.1195
+    "q0": 6.0833,
+    "q1": 4.8251,
+    "y0": 0.5723,
+    "y1": null
   },
   "ratings": [
     {
@@ -209,9 +209,9 @@
     {
       "name": "Dimensional Fund Advisors LP",
       "kind": "institution",
-      "pct": 2.44,
-      "shares": 276029,
-      "date": "2026-06-30"
+      "pct": 2.47,
+      "shares": 279329,
+      "date": "2026-09-30"
     }
   ],
   "insider_net": {
@@ -224,9 +224,9 @@
   },
   "extras": {
     "beta": 0.774,
-    "enterprise_value": 181943792,
-    "ev_ebitda": 8.903,
-    "ev_revenue": 0.692,
+    "enterprise_value": 183750816,
+    "ev_ebitda": 8.992,
+    "ev_revenue": 0.699,
     "float_shares": 9345454,
     "short_shares": 819025,
     "short_pct_float": 8.65,
@@ -239,12 +239,6 @@
   "payout_ratio": 0,
   "inst_count": 160,
   "eps_history": [
-    {
-      "quarter": "2025-08-31",
-      "estimate": 0.63,
-      "actual": 0.40963,
-      "surprise_pct": -34.98
-    },
     {
       "quarter": "2025-11-30",
       "estimate": 0.13,
@@ -262,6 +256,12 @@
       "estimate": 0.36,
       "actual": 0.32367,
       "surprise_pct": -10.09
+    },
+    {
+      "quarter": "2026-08-31",
+      "estimate": 0.665,
+      "actual": 0.7149,
+      "surprise_pct": 7.5
     }
   ],
   "insiders": [

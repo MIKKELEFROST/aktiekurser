@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:30.559Z",
+  "updated_at": "2026-11-05T22:14:59.891Z",
   "source": "Yahoo Finance",
   "symbol": "PK",
   "summary": "Park Hotels & Resorts inc. is one of the largest publicly traded lodging real estate investment trusts. With a diverse portfolio of iconic and market-leading hotels and resorts with significant underlying real estate value, Park's portfolio currently consists of 30 premium branded hotels and resorts with approximately 21,000 rooms primarily located in prime city center and resort locations. Park Hotels & Resorts Inc. was incorporated in 1946 in Delaware and is based in Tyson, Virginia.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.02,
+  "eps_estimate": 0.10333,
   "analysts": {
     "strong_buy": 1,
     "buy": 5,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 610000000,
-      "earnings": -16000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 629000000,
       "earnings": -205000000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 680000000,
       "earnings": 47000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 602000000,
+      "earnings": -18000000
     }
   ],
   "growth": {
-    "q0": 1.1373,
-    "q1": 0.0877,
+    "q0": 0.0877,
+    "q1": -0.1848,
     "y0": 5.6713,
     "y1": 0.074099995
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.397,
-    "enterprise_value": 7147376640,
-    "ev_ebitda": 11.185,
-    "ev_revenue": 2.808,
+    "enterprise_value": 7195698176,
+    "ev_ebitda": 11.261,
+    "ev_revenue": 2.827,
     "float_shares": 192483470,
     "short_shares": 32004583,
     "short_pct_float": 22.14,
@@ -246,12 +246,6 @@
   "payout_ratio": 5.1852,
   "inst_count": 568,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.04333,
-      "actual": -0.1457,
-      "surprise_pct": -436.26
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.09667,
@@ -269,6 +263,12 @@
       "estimate": 0.22,
       "actual": 0.3259,
       "surprise_pct": 48.14
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.02,
+      "actual": -0.0056,
+      "surprise_pct": -128
     }
   ],
   "insiders": [
@@ -327,6 +327,15 @@
       "date": "2026-09-03"
     },
     {
+      "name": "BEDIENT PATRICIA M",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 1986,
+      "date": "2026-06-23"
+    },
+    {
       "name": "NAUGHTON TIMOTHY JAMES",
       "role": "Director",
       "kind": "other",
@@ -346,15 +355,6 @@
     },
     {
       "name": "BEDIENT PATRICIA M",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 1986,
-      "date": "2026-06-23"
-    },
-    {
-      "name": "KELLY CHRISTIE BARTON",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

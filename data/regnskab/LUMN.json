@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:30.072Z",
+  "updated_at": "2026-11-05T22:14:59.507Z",
   "source": "Yahoo Finance",
   "symbol": "LUMN",
   "summary": "Lumen Technologies, Inc., a networking company, provides integrated products and services to business and mass customers in the United States and internationally. The company operates in two segments, Business and Mass Markets. It offers dark fiber and conduit, edge cloud, internet protocol (IP), voice over IP, managed security, software-defined wide area networks, unified communications and collaboration, and optical services; ethernet and VPN data networks services; and legacy services to manage cash flow, including time division multiplexing voice and private line; other legacy services, such as Synchronous Optical Network (SONET) based ethernet, legacy data hosting services, and conferencing services; and managed and professional service solutions, as well as sells communications equipment. The company also provides high speed and lower speed broadband service to residential and small business customers; local and long-distance voice services, professional services, and other ancillary services; and federal broadband and state support programs. It serves its products and services under the Lumen, CenturyLink, Black Lotus Labs, and Quantum Fiber brand name. The company was formerly known as CenturyLink, Inc. and changed its name to Lumen Technologies, Inc. in September 2020. Lumen Technologies, Inc. was incorporated in 1968 and is headquartered in Monroe, Louisiana.",
@@ -7,10 +7,10 @@
   "website": "https://www.lumen.com",
   "employees": 24000,
   "ceo": "Ms. Kathleen E. Johnson",
-  "next_earnings": "2026-11-04",
-  "earnings_estimated": false,
+  "next_earnings": "2027-02-02",
+  "earnings_estimated": true,
   "earnings_call": "2026-11-04",
-  "eps_estimate": -0.23718,
+  "eps_estimate": -0.12592,
   "analysts": {
     "strong_buy": 1,
     "buy": 0,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 3087000000,
-      "earnings": -621000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 3041000000,
       "earnings": -2000000
@@ -69,15 +64,41 @@
       "q": "2Q2026",
       "revenue": 2805000000,
       "earnings": -201000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 2715000000,
+      "earnings": -265000000
     }
   ],
   "growth": {
-    "q0": -0.1859,
-    "q1": -1.5475,
+    "q0": -1.5475,
+    "q1": 0.8511,
     "y0": -5.4142,
     "y1": 0.65330005
   },
   "ratings": [
+    {
+      "date": "2026-11-05",
+      "firm": "TD Cowen",
+      "from": "Hold",
+      "to": "Hold",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-05",
+      "firm": "Goldman Sachs",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-05",
+      "firm": "Wells Fargo",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
     {
       "date": "2026-08-11",
       "firm": "Citigroup",
@@ -125,27 +146,6 @@
       "firm": "TD Cowen",
       "from": "Hold",
       "to": "Hold",
-      "action": "main"
-    },
-    {
-      "date": "2026-02-05",
-      "firm": "Citigroup",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-02-05",
-      "firm": "UBS",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-02-04",
-      "firm": "Goldman Sachs",
-      "from": "Neutral",
-      "to": "Neutral",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.973,
-    "enterprise_value": 16518365184,
-    "ev_ebitda": 7.391,
-    "ev_revenue": 1.396,
+    "enterprise_value": 16229561344,
+    "ev_ebitda": 7.262,
+    "ev_revenue": 1.372,
     "float_shares": 948496565,
     "short_shares": 64195776,
     "short_pct_float": 7.37,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.5,
   "inst_count": 774,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.26572,
-      "actual": -0.2,
-      "surprise_pct": 24.73
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.26982,
@@ -269,6 +263,12 @@
       "estimate": -0.14154,
       "actual": -0.07,
       "surprise_pct": 50.54
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.23718,
+      "actual": -0.14,
+      "surprise_pct": 40.97
     }
   ],
   "insiders": [

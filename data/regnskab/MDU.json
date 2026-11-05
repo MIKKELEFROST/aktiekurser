@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:31.475Z",
+  "updated_at": "2026-11-05T22:15:00.576Z",
   "source": "Yahoo Finance",
   "symbol": "MDU",
   "summary": "MDU Resources Group, Inc. engages in the regulated energy delivery businesses in the United States. The company operates through three segments: Electric, Natural Gas Distribution, and Pipeline. It generates, transmits, and distributes electricity in Montana, North Dakota, South Dakota, and Wyoming through approximately 3,400 miles of transmission and 4,900 miles of distribution lines, as well as 86 transmission and 299 distribution substations. The company also distributes natural gas in Idaho, Minnesota, Montana, North Dakota, Oregon, South Dakota, Washington, and Wyoming through approximately 22,000 miles of distribution and 540 miles transmission systems; and supplies related value-added services. In addition, it provides natural gas transportation and underground storage services through a regulated pipeline system primarily in the Rocky Mountain and northern Great Plains regions; and cathodic protection non-regulated energy-related services. Further, the company offers transportation and storage services. MDU Resources Group, Inc. was incorporated in 1924 and is headquartered in Bismarck, North Dakota.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.09772,
+  "eps_estimate": 0.38898,
   "analysts": {
     "strong_buy": 1,
     "buy": 5,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 315100000,
-      "earnings": 0
-    },
-    {
       "q": "4Q2025",
       "revenue": 534000000,
       "earnings": 76300000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 375200000,
       "earnings": 21300000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 347800000,
+      "earnings": 14000000
     }
   ],
   "growth": {
-    "q0": 0.0858,
-    "q1": 0.0513,
+    "q0": 0.0513,
+    "q1": 0.1273,
     "y0": 0.052699998,
     "y1": 0.0833
   },
@@ -181,9 +181,9 @@
     {
       "name": "Dimensional Fund Advisors LP",
       "kind": "institution",
-      "pct": 5.1,
-      "shares": 10435060,
-      "date": "2026-06-30"
+      "pct": 5.22,
+      "shares": 10679046,
+      "date": "2026-09-30"
     },
     {
       "name": "Earnest Partners LLC",
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.323,
-    "enterprise_value": 6664254976,
-    "ev_ebitda": 12.717,
-    "ev_revenue": 3.641,
+    "enterprise_value": 6700014080,
+    "ev_ebitda": 12.785,
+    "ev_revenue": 3.661,
     "float_shares": 209158878,
     "short_shares": 18161741,
     "short_pct_float": 11.28,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-09-10",
   "dividend_date": null,
   "payout_ratio": 0.5957,
-  "inst_count": 557,
+  "inst_count": 556,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.10701,
-      "actual": 0.09,
-      "surprise_pct": -15.9
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.36042,
@@ -269,6 +263,12 @@
       "estimate": 0.08711,
       "actual": 0.09,
       "surprise_pct": 3.32
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.09772,
+      "actual": 0.08,
+      "surprise_pct": -18.13
     }
   ],
   "insiders": [
@@ -318,24 +318,6 @@
       "date": "2026-03-31"
     },
     {
-      "name": "VOLLMER JASON L",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 15229,
-      "date": "2026-02-17"
-    },
-    {
-      "name": "JONES ANNE M",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 5523,
-      "date": "2026-02-17"
-    },
-    {
       "name": "SIEVERT STEPHANIE A.",
       "role": "Officer",
       "kind": "other",
@@ -360,6 +342,24 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 6920,
+      "date": "2026-02-17"
+    },
+    {
+      "name": "FOTI ANTHONY DONALD",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 8161,
+      "date": "2026-02-17"
+    },
+    {
+      "name": "BOESE DYKE",
+      "role": "Chief Investment Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 3702,
       "date": "2026-02-17"
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:28.887Z",
+  "updated_at": "2026-11-05T22:14:58.388Z",
   "source": "Yahoo Finance",
   "symbol": "CAI",
   "summary": "Caris Life Sciences, Inc., an artificial intelligence TechBio company, provides molecular profiling services in the United States and internationally. It develops and commercializes solutions to transform healthcare using molecular information, and artificial intelligence/machine learning algorithms. The company's molecular intelligence product portfolio includes MI Profile Platform, a whole exome sequencing (WES)/ whole transcriptome sequencing (WTS) tissue-based molecular profiling solutions; Caris Assure Platform WES/WTS blood-based molecular profiling solutions; Precision Whole Genome Platform, a whole genome sequencing (WGS) blood- and tissue-based profiling solutions; and Caris Detect, a WGS-based multi-cancer early detection solution; Caris WGS MRD a WGS and digital droplet polymerase reaction-based minimal residual disease solution; and Caris ChromoSeq, a WGS and WTS based assay for therapy selection in hematological cancers. It also offers pharma research and development services comprising laboratory delivery, strategic data, and research services to biopharmaceutical customers. The company provides its precision oncology solutions to customers, such as hospitals, institutions and patients. The company was founded in 2008 and is headquartered in Irving, Texas.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 0.02012,
+  "eps_estimate": 0.1122,
   "analysts": {
     "strong_buy": 1,
     "buy": 9,
@@ -39,11 +39,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 216833000,
-      "earnings": 24325000
-    },
-    {
       "q": "4Q2025",
       "revenue": 292886000,
       "earnings": 81957000
@@ -57,15 +52,34 @@
       "q": "2Q2026",
       "revenue": 263712000,
       "earnings": -637000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 275358000,
+      "earnings": 15250000
     }
   ],
   "growth": {
-    "q0": -0.7485,
-    "q1": -0.5993,
+    "q0": -0.5993,
+    "q1": 0,
     "y0": 1.3389,
     "y1": 1.6949
   },
   "ratings": [
+    {
+      "date": "2026-11-05",
+      "firm": "TD Cowen",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-05",
+      "firm": "BTIG",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "reit"
+    },
     {
       "date": "2026-10-27",
       "firm": "BTIG",
@@ -121,20 +135,6 @@
       "from": "Overweight",
       "to": "Overweight",
       "action": "main"
-    },
-    {
-      "date": "2026-07-06",
-      "firm": "Evercore ISI Group",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-02",
-      "firm": "BTIG",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "reit"
     }
   ],
   "holders": [
@@ -219,9 +219,9 @@
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 8942538752,
-    "ev_ebitda": 51.387,
-    "ev_revenue": 9.036,
+    "enterprise_value": 9047099392,
+    "ev_ebitda": 51.987,
+    "ev_revenue": 9.142,
     "float_shares": 134865727,
     "short_shares": 13589186,
     "short_pct_float": 11.8,
@@ -234,12 +234,6 @@
   "payout_ratio": 0,
   "inst_count": 383,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.13598,
-      "actual": 0.08,
-      "surprise_pct": 158.83
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.10421,
@@ -257,6 +251,12 @@
       "estimate": 0.01277,
       "actual": 0,
       "surprise_pct": -100
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.02012,
+      "actual": 0.05,
+      "surprise_pct": 148.51
     }
   ],
   "insiders": [
@@ -290,15 +290,6 @@
     {
       "name": "SPETZLER DAVID BAXLEY PH.D.",
       "role": "President",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 2.44 per share.",
-      "value": 3050000,
-      "shares": 1250000,
-      "date": "2026-09-04"
-    },
-    {
-      "name": "SPETZLER DAVID BAXLEY PH.D.",
-      "role": "President",
       "kind": "sell",
       "text": "Sale at price 24.76 - 25.32 per share.",
       "value": 14834107,
@@ -306,13 +297,13 @@
       "date": "2026-09-04"
     },
     {
-      "name": "FREDRICKSON DAVID PAUL",
-      "role": "Director",
+      "name": "SPETZLER DAVID BAXLEY PH.D.",
+      "role": "President",
       "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 13192,
-      "date": "2026-08-14"
+      "text": "Conversion of Exercise of derivative security at price 2.44 per share.",
+      "value": 3050000,
+      "shares": 1250000,
+      "date": "2026-09-04"
     },
     {
       "name": "CASTLEMAN PETER M",
@@ -343,6 +334,15 @@
     },
     {
       "name": "MINOR LLOYD B.",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 13192,
+      "date": "2026-08-14"
+    },
+    {
+      "name": "JOHANSEN LAURA I.",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

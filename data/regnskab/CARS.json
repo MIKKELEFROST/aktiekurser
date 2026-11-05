@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:28.905Z",
+  "updated_at": "2026-11-05T22:14:58.399Z",
   "source": "Yahoo Finance",
   "symbol": "CARS",
   "summary": "Cars.com Inc., an audience-driven technology company, provides solutions for the automotive industry in the United States. The company offers marketplace through Cars.com that allows OEMs and dealers to merchandise their inventory, as well as provides reputation management technology and digital financing tools. It also operates dealer websites to transform automotive retail processes; and trade and appraisal product, including AccuTrade, which uses demand data and diagnostic scans to determine the right trade-in offer for every VIN in minutes. In addition, the company offers media solution, such as Cars Social, allows dealers to target and serve native advertisements displaying real-time inventory to in-market car shoppers on Facebook, Instagram, and other social media platform; VIN Performance Media, a machine-learning for media campaign, including audience targeting, real-time inventory, and ad placement across search, social, and display; In-Market Video, provides OEMs and dealers to pinpoint serious, ready-to-buy shoppers geographically; and proprietary in-market media solutions. The company serves local dealers, OEMs, dealer groups, and auto-adjacent companies. Cars.com Inc. was founded in 1998 and is headquartered in Chicago, Illinois.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.53662,
+  "eps_estimate": 0.5858,
   "analysts": {
     "strong_buy": 1,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 181573000,
-      "earnings": 7658000
-    },
-    {
       "q": "4Q2025",
       "revenue": 183903000,
       "earnings": 7398000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 179934000,
       "earnings": 14263000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 181883000,
+      "earnings": 16339000
     }
   ],
   "growth": {
-    "q0": 0.118,
-    "q1": 0.3314,
+    "q0": 0.3314,
+    "q1": 0.0444,
     "y0": 0.1711,
     "y1": 0.1668
   },
   "ratings": [
+    {
+      "date": "2026-11-05",
+      "firm": "BTIG",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-07",
       "firm": "UBS",
@@ -140,13 +147,6 @@
       "from": "Buy",
       "to": "Buy",
       "action": "reit"
-    },
-    {
-      "date": "2026-02-27",
-      "firm": "Barrington Research",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
     }
   ],
   "holders": [
@@ -172,6 +172,13 @@
       "date": "2026-06-30"
     },
     {
+      "name": "Dimensional Fund Advisors LP",
+      "kind": "institution",
+      "pct": 6.67,
+      "shares": 3571881,
+      "date": "2026-09-30"
+    },
+    {
       "name": "Pacer Advisors, Inc.",
       "kind": "institution",
       "pct": 6.57,
@@ -184,13 +191,6 @@
       "pct": 6.55,
       "shares": 3508095,
       "date": "2026-07-31"
-    },
-    {
-      "name": "Dimensional Fund Advisors LP",
-      "kind": "institution",
-      "pct": 6.26,
-      "shares": 3352529,
-      "date": "2026-06-30"
     },
     {
       "name": "Hill Path Capital, LP",
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.706,
-    "enterprise_value": 1032676160,
-    "ev_ebitda": 6.567,
-    "ev_revenue": 1.423,
+    "enterprise_value": 1096380160,
+    "ev_ebitda": 6.972,
+    "ev_revenue": 1.511,
     "float_shares": 44722300,
     "short_shares": 8249065,
     "short_pct_float": 19.52,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 289,
+  "inst_count": 288,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.48705,
-      "actual": 0.48,
-      "surprise_pct": -1.45
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.54799,
@@ -269,6 +263,12 @@
       "estimate": 0.5131,
       "actual": 0.51,
       "surprise_pct": -0.6
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.53662,
+      "actual": 0.58,
+      "surprise_pct": 8.08
     }
   ],
   "insiders": [
@@ -309,6 +309,33 @@
       "date": "2026-06-12"
     },
     {
+      "name": "MCGOVERN DONALD A JR.",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 18267,
+      "date": "2026-06-05"
+    },
+    {
+      "name": "SUBRAMANIAN BALA",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 18267,
+      "date": "2026-06-05"
+    },
+    {
+      "name": "ROSS JENELL",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 18267,
+      "date": "2026-06-05"
+    },
+    {
       "name": "FORBES SCOTT EDWARD",
       "role": "Director",
       "kind": "other",
@@ -328,33 +355,6 @@
     },
     {
       "name": "HALE THOMAS E",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 18267,
-      "date": "2026-06-05"
-    },
-    {
-      "name": "GREENTHAL JILL A",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 18267,
-      "date": "2026-06-05"
-    },
-    {
-      "name": "MCGOVERN DONALD A JR.",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 18267,
-      "date": "2026-06-05"
-    },
-    {
-      "name": "SUBRAMANIAN BALA",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

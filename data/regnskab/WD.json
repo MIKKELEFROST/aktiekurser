@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:31.332Z",
+  "updated_at": "2026-11-05T22:15:00.460Z",
   "source": "Yahoo Finance",
   "symbol": "WD",
   "summary": "Walker & Dunlop, Inc., through its subsidiaries, originates, sells, and services a range of multifamily and other commercial real estate financing products and services for owners and developers of real estate in the United States. The company operates through three segments: Capital Markets, Servicing & Asset Management, and Corporate. The company offers first mortgage, second trust, supplemental, construction, mezzanine, preferred equity, and small-balance loans. It also provides finance for multifamily, manufactured housing communities, student housing, affordable housing, small balance loans, and senior housing properties under the Fannie Mae's Delegated Underwriting and Servicing program and Freddie Mac; and construction and permanent loans to developers and owners of multifamily housing, affordable housing, senior housing, and healthcare facilities. In addition, the company acts as a debt broker to work with life insurance companies, banks, and other institutional investors to find debt and/or equity solution for the borrowers' needs; and offers property sales brokerage services to owners and developers of multifamily properties, and commercial real estate and multifamily property appraisals for various investors. Further, it provides multifamily appraisal and valuation services; and real estate-related investment banking and advisory services, including housing market research. Additionally, the company offers servicing and asset-managing the portfolio of loans; originates loans through its principal lending and investing activities; and manages third-party capital invested in tax credit equity funds focused on the LIHTC sector and other commercial real estate sectors. Walker & Dunlop, Inc. was founded in 1937 and is headquartered in Bethesda, Maryland.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.92667,
+  "eps_estimate": 1.11,
   "analysts": {
     "strong_buy": 2,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 337675000,
-      "earnings": 33452000
-    },
-    {
       "q": "4Q2025",
       "revenue": 340024000,
       "earnings": -13911000
@@ -68,12 +63,17 @@
     {
       "q": "2Q2026",
       "revenue": 306690000,
-      "earnings": 2415000
+      "earnings": 3006000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 298449000,
+      "earnings": -37258000
     }
   ],
   "growth": {
-    "q0": -0.24040002,
-    "q1": 2.9643,
+    "q0": 2.9643,
+    "q1": 0.3824,
     "y0": 0.22209999,
     "y1": 0.2203
   },
@@ -179,17 +179,17 @@
       "date": "2026-06-30"
     },
     {
+      "name": "Dimensional Fund Advisors LP",
+      "kind": "institution",
+      "pct": 4.58,
+      "shares": 1571250,
+      "date": "2026-09-30"
+    },
+    {
       "name": "Vanguard Capital Management LLC",
       "kind": "institution",
       "pct": 4.35,
       "shares": 1493413,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "Dimensional Fund Advisors LP",
-      "kind": "institution",
-      "pct": 4.25,
-      "shares": 1458560,
       "date": "2026-06-30"
     },
     {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.487,
-    "enterprise_value": 3373333504,
+    "enterprise_value": 3482146048,
     "ev_ebitda": null,
-    "ev_revenue": 2.815,
+    "ev_revenue": 2.906,
     "float_shares": 32935209,
     "short_shares": 2327115,
     "short_pct_float": 8.33,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-08-20",
   "dividend_date": null,
   "payout_ratio": 2.4107,
-  "inst_count": 347,
+  "inst_count": 342,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.25,
-      "actual": 1.22,
-      "surprise_pct": -2.4
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.46,
@@ -269,6 +263,12 @@
       "estimate": 1.1325,
       "actual": 1.19,
       "surprise_pct": 5.08
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.92667,
+      "actual": 0.92,
+      "surprise_pct": -0.72
     }
   ],
   "insiders": [

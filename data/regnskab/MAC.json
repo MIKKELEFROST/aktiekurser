@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:31.440Z",
+  "updated_at": "2026-11-05T22:15:00.549Z",
   "source": "Yahoo Finance",
   "symbol": "MAC",
   "summary": "The Macerich Company is a fully integrated, self-managed, self-administered real estate investment trust (REIT). As a leading owner, operator, and developer of high-quality retail real estate in densely populated and attractive U.S. markets, Macerich's portfolio is concentrated in California, the Pacific Northwest, Phoenix/Scottsdale, and the Metro New York to Washington, D.C. corridor. Developing and managing properties that serve as community cornerstones, Macerich currently owns approximately 39 million square feet of real estate, consisting primarily of interests in 37 retail centers. The Macerich Company was incorporated in 1964 in Maryland and is based in Santa Monica, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": -0.01333,
+  "eps_estimate": 0.08333,
   "analysts": {
     "strong_buy": 4,
     "buy": 9,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 237232000,
-      "earnings": -87360000
-    },
-    {
       "q": "4Q2025",
       "revenue": 261704000,
       "earnings": -18760000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 233442000,
       "earnings": -27071000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 239929000,
+      "earnings": -16734000
     }
   ],
   "growth": {
-    "q0": 0.91550004,
-    "q1": 1.8344,
+    "q0": 1.8344,
+    "q1": 0.6847,
     "y0": 0.4158,
     "y1": 1.7971001
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 2.118,
-    "enterprise_value": 11792805888,
-    "ev_ebitda": 21.974,
-    "ev_revenue": 11.478,
+    "enterprise_value": 12122334208,
+    "ev_ebitda": 22.588,
+    "ev_revenue": 11.799,
     "float_shares": 283343343,
     "short_shares": 33576636,
     "short_pct_float": 16.56,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-12-14",
   "dividend_date": null,
   "payout_ratio": 1.8889,
-  "inst_count": 524,
+  "inst_count": 521,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.09802,
-      "actual": -0.1577,
-      "surprise_pct": -60.89
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.005,
@@ -269,6 +263,12 @@
       "estimate": -0.06,
       "actual": -0.123,
       "surprise_pct": -105
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.01333,
+      "actual": 0.0294,
+      "surprise_pct": 320.56
     }
   ],
   "insiders": [

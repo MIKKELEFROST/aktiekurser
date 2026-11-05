@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:30.201Z",
+  "updated_at": "2026-11-05T22:14:59.619Z",
   "source": "Yahoo Finance",
   "symbol": "MTSI",
   "summary": "MACOM Technology Solutions Holdings, Inc., together with its subsidiaries, provides analog semiconductor solutions for use in wireless and wireline applications across the radio frequency (RF), microwave, millimeter wave, and lightwave spectrum. The company offers a portfolio of standard and custom devices, including integrated circuits, multi-chip modules, diodes, amplifiers, switches and switch limiters, passive and active components, and subsystems. Its semiconductor products are electronic components that are incorporated in electronic systems, such as wireless base stations, optical networks, radar and medical systems, satellite networks, and test and measurement applications. The company serves carrier infrastructure, which comprise long-haul/metro, 5G and 6G infrastructure, satellite communications, and fiber-to-the-X/passive optical network; industrial and defense, including military and commercial radar, RF jammers, electronic countermeasures, and communication data links, as well as multi-market applications, such as industrial, medical, test and measurement, and scientific applications; and data centers. It sells its products through direct sales force, applications engineering staff, independent sales representatives, resellers, and distributors. The company operates in the United States, China, Japan, Singapore, South Korea, Taiwan, and internationally. MACOM Technology Solutions Holdings, Inc. was formerly known as M/A-Com Technology Solutions Holdings, Inc. and changed its name to MACOM Technology Solutions Holdings, Inc. in 2016. MACOM Technology Solutions Holdings, Inc. was founded in 1950 and is based in Lowell, Massachusetts.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 1.99954,
+  "eps_estimate": 2.03087,
   "analysts": {
     "strong_buy": 4,
     "buy": 10,
@@ -24,12 +24,6 @@
   "target_low": 300,
   "target_analysts": 16,
   "statements": [
-    {
-      "year": "2022",
-      "revenue": 675170000,
-      "net": 439955000,
-      "margin": 65.2
-    },
     {
       "year": "2023",
       "revenue": 648407000,
@@ -47,14 +41,15 @@
       "revenue": 967258000,
       "net": -54210000,
       "margin": -5.6
+    },
+    {
+      "year": "2026",
+      "revenue": 1327623000,
+      "net": 335251000,
+      "margin": 25.3
     }
   ],
   "quarterly": [
-    {
-      "q": "3Q2025",
-      "revenue": 261170000,
-      "earnings": 45120000
-    },
     {
       "q": "4Q2025",
       "revenue": 271612000,
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 342237000,
       "earnings": 100708000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 424819000,
+      "earnings": 139445000
     }
   ],
   "growth": {
-    "q0": 1.1272,
-    "q1": 0.991,
-    "y0": 0.58889997,
-    "y1": 0.5483
+    "q0": 0.991,
+    "q1": 0.9157,
+    "y0": 0.5244,
+    "y1": 0.1841
   },
   "ratings": [
+    {
+      "date": "2026-11-05",
+      "firm": "Needham",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-27",
       "firm": "Raymond James",
@@ -140,13 +147,6 @@
       "from": "Neutral",
       "to": "Neutral",
       "action": "main"
-    },
-    {
-      "date": "2026-05-08",
-      "firm": "Truist Securities",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
     }
   ],
   "holders": [
@@ -165,18 +165,18 @@
       "date": "2026-06-30"
     },
     {
-      "name": "Fidelity Select Portfolios-Select Semiconductors Portfolio",
-      "kind": "fond",
-      "pct": 4.89,
-      "shares": 3734864,
-      "date": "2026-08-31"
-    },
-    {
       "name": "Vanguard Portfolio Management LLC",
       "kind": "institution",
       "pct": 4.72,
       "shares": 3605324,
       "date": "2026-06-30"
+    },
+    {
+      "name": "Fidelity Select Portfolios-Select Semiconductors Portfolio",
+      "kind": "fond",
+      "pct": 4.09,
+      "shares": 3122564,
+      "date": "2026-09-30"
     },
     {
       "name": "Vanguard Capital Management LLC",
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 8,
-    "sells": 12,
+    "sells": 11,
     "bought": 12096,
-    "sold": 87417,
-    "net_pct": -1.5
+    "sold": 83699,
+    "net_pct": -1.4
   },
   "extras": {
     "beta": 1.827,
-    "enterprise_value": 17735612416,
-    "ev_ebitda": 64.247,
-    "ev_revenue": 15.237,
+    "enterprise_value": 17555376128,
+    "ev_ebitda": 63.594,
+    "ev_revenue": 15.082,
     "float_shares": 71280045,
     "short_shares": 2729544,
     "short_pct_float": 4.01,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 874,
+  "inst_count": 876,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.92868,
-      "actual": 0.94,
-      "surprise_pct": 1.22
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.99776,
@@ -269,6 +263,12 @@
       "estimate": 1.34816,
       "actual": 1.4,
       "surprise_pct": 3.85
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.99954,
+      "actual": 2.09,
+      "surprise_pct": 4.52
     }
   ],
   "insiders": [
@@ -280,15 +280,6 @@
       "value": 242988,
       "shares": 1027,
       "date": "2026-10-26"
-    },
-    {
-      "name": "HWANG DONGHYUN THOMAS",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 1439,
-      "date": "2026-10-21"
     },
     {
       "name": "DALY STEPHEN G",
@@ -306,6 +297,15 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 2277,
+      "date": "2026-10-21"
+    },
+    {
+      "name": "HWANG DONGHYUN THOMAS",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 1439,
       "date": "2026-10-21"
     },
     {
@@ -354,12 +354,12 @@
       "date": "2026-05-29"
     },
     {
-      "name": "BLAND CHARLES R",
+      "name": "SHANMUGARAJ MURUGESAN",
       "role": "Director",
       "kind": "other",
       "text": "Stock Gift at price 0.00 per share.",
       "value": 0,
-      "shares": 700,
+      "shares": 1400,
       "date": "2026-05-19"
     }
   ],

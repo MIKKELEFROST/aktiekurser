@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:29.154Z",
+  "updated_at": "2026-11-05T22:14:58.591Z",
   "source": "Yahoo Finance",
   "symbol": "CYTK",
   "summary": "Cytokinetics, Incorporated, a biopharmaceutical company, focuses on discovering, developing, and commercializing novel muscle activators and muscle inhibitors as potential treatments for debilitating diseases in the United States. The company markets MYQORZO, a novel, oral, and small molecule cardiac myosin inhibitor for the treatment of symptomatic oHCM. It also develops Aficamten, a novel, oral, and small molecule cardiac myosin inhibitor for the treatment of HCM; and omecamtiv mecarbil, a potential treatment across the continuum of care in heart failure with severely reduced ejection fraction. In addition, the company is involved in developing and Ulacamten, a novel, selective, oral, and small molecule cardiac myosin inhibitor designed to reduce the hypercontractility associated with heart failure with preserved ejection fraction in Phase 1 clinical trials; and CK-089, a fast skeletal muscle troponin activator in Phase 1 clinical trials. Cytokinetics, Incorporated was incorporated in 1997 and is headquartered in South San Francisco, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": -1.40609,
+  "eps_estimate": -1.38839,
   "analysts": {
     "strong_buy": 7,
     "buy": 13,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 1936000,
-      "earnings": -306178000
-    },
-    {
       "q": "4Q2025",
       "revenue": 17755000,
       "earnings": -183031000
@@ -69,15 +64,34 @@
       "q": "2Q2026",
       "revenue": 28624000,
       "earnings": -198762000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 47557000,
+      "earnings": -190069000
     }
   ],
   "growth": {
-    "q0": 0.0877,
-    "q1": 0.0744,
+    "q0": 0.0744,
+    "q1": 0.21209998,
     "y0": 0.1017,
     "y1": 0.2508
   },
   "ratings": [
+    {
+      "date": "2026-11-05",
+      "firm": "Citigroup",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-05",
+      "firm": "Leerink Partners",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
     {
       "date": "2026-10-19",
       "firm": "HC Wainwright & Co.",
@@ -132,20 +146,6 @@
       "firm": "RBC Capital",
       "from": "Outperform",
       "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-07",
-      "firm": "Citizens",
-      "from": "Market Outperform",
-      "to": "Market Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-07",
-      "firm": "Needham",
-      "from": "Buy",
-      "to": "Buy",
       "action": "main"
     }
   ],
@@ -223,17 +223,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 52,
-    "sells": 40,
-    "bought": 361272,
-    "sold": 401106,
-    "net_pct": -4.7
+    "buys": 48,
+    "sells": 35,
+    "bought": 322407,
+    "sold": 338335,
+    "net_pct": -2
   },
   "extras": {
     "beta": 0.473,
-    "enterprise_value": 8921318400,
-    "ev_ebitda": -12.83,
-    "ev_revenue": 131.836,
+    "enterprise_value": 9100658688,
+    "ev_ebitda": -13.088,
+    "ev_revenue": 134.486,
     "float_shares": 138490958,
     "short_shares": 18628116,
     "short_pct_float": 20.46,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 669,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -1.56583,
-      "actual": -1.5413,
-      "surprise_pct": 1.57
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -1.36778,
@@ -269,6 +263,12 @@
       "estimate": -1.60081,
       "actual": -1.5,
       "surprise_pct": 6.3
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -1.40609,
+      "actual": -1.37,
+      "surprise_pct": 2.57
     }
   ],
   "insiders": [
@@ -327,6 +327,24 @@
       "date": "2026-10-20"
     },
     {
+      "name": "WIERENGA WENDELL",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 63.92 per share.",
+      "value": 6200,
+      "shares": 97,
+      "date": "2026-10-16"
+    },
+    {
+      "name": "DALY JAMES M.",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 63.92 per share.",
+      "value": 12464,
+      "shares": 195,
+      "date": "2026-10-16"
+    },
+    {
       "name": "WYSENSKI NANCY J",
       "role": "Director",
       "kind": "other",
@@ -336,30 +354,12 @@
       "date": "2026-10-16"
     },
     {
-      "name": "HARRINGTON ROBERT ARTHUR",
+      "name": "HENDERSON JOHN TANNAHILL",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 63.92 per share.",
-      "value": 12464,
-      "shares": 195,
-      "date": "2026-10-16"
-    },
-    {
-      "name": "KAYE EDWARD M",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 63.92 per share.",
-      "value": 12464,
-      "shares": 195,
-      "date": "2026-10-16"
-    },
-    {
-      "name": "WIERENGA WENDELL",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 63.92 per share.",
-      "value": 6200,
-      "shares": 97,
+      "value": 22500,
+      "shares": 352,
       "date": "2026-10-16"
     }
   ],

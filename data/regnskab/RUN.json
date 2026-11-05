@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:30.762Z",
+  "updated_at": "2026-11-05T22:15:00.032Z",
   "source": "Yahoo Finance",
   "symbol": "RUN",
   "summary": "Sunrun Inc. designs, develops, installs, sells, owns, and maintains residential solar energy systems in the United States. The company sells solar energy systems and products, such as panels and racking; and solar leads generated to customers. It offers battery storage along with solar energy systems; and sells services to commercial developers through multi-family and new homes. Its primary customers are residential homeowners. The company markets and sells its products through direct-to-consumer approach across online, retail, mass media, digital media, canvassing, field marketing, and referral channels, as well as its partner network. It also operates distributed electricity power plants. Sunrun Inc. was founded in 2007 and is headquartered in San Francisco, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 0.3192,
+  "eps_estimate": 0.39163,
   "analysts": {
     "strong_buy": 3,
     "buy": 8,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 724557000,
-      "earnings": 16589000
-    },
-    {
       "q": "4Q2025",
       "revenue": 1158833000,
       "earnings": 103574000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 869988000,
       "earnings": 115152000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1099498000,
+      "earnings": 153246000
     }
   ],
   "growth": {
-    "q0": 4.32,
-    "q1": 0.0306,
+    "q0": 0.0306,
+    "q1": -1.0956,
     "y0": -0.18280001,
     "y1": -0.6674
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 2.321,
-    "enterprise_value": 18314713088,
-    "ev_ebitda": 21.788,
-    "ev_revenue": 5.269,
+    "enterprise_value": 18341206016,
+    "ev_ebitda": 21.819,
+    "ev_revenue": 5.277,
     "float_shares": 220924120,
     "short_shares": 71657132,
     "short_pct_float": 35.65,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 553,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.117,
-      "actual": 0.06,
-      "surprise_pct": -48.72
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.06338,
@@ -269,9 +263,24 @@
       "estimate": 0.24881,
       "actual": 0.42,
       "surprise_pct": 68.8
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.3192,
+      "actual": 0.56,
+      "surprise_pct": 75.44
     }
   ],
   "insiders": [
+    {
+      "name": "BARAK MARIA",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 9.35 per share.",
+      "value": 30444,
+      "shares": 3256,
+      "date": "2026-11-04"
+    },
     {
       "name": "STEELE JEANNA C",
       "role": "Officer",
@@ -309,21 +318,21 @@
       "date": "2026-10-06"
     },
     {
-      "name": "POWELL MARY G",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 7.76 per share.",
-      "value": 188939,
-      "shares": 24335,
-      "date": "2026-10-06"
-    },
-    {
       "name": "DICKSON PAUL S",
       "role": "President",
       "kind": "sell",
       "text": "Sale at price 7.76 per share.",
       "value": 122971,
       "shares": 15837,
+      "date": "2026-10-06"
+    },
+    {
+      "name": "POWELL MARY G",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 7.76 per share.",
+      "value": 188939,
+      "shares": 24335,
       "date": "2026-10-06"
     },
     {
@@ -351,15 +360,6 @@
       "text": "Sale at price 13.19 per share.",
       "value": 130517,
       "shares": 9897,
-      "date": "2026-07-06"
-    },
-    {
-      "name": "ABAJIAN DANNY",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": "Stock Gift at price 0.00 per share.",
-      "value": 0,
-      "shares": 17052,
       "date": "2026-07-06"
     }
   ],

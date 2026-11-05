@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:28.757Z",
+  "updated_at": "2026-11-05T22:14:58.295Z",
   "source": "Yahoo Finance",
   "symbol": "BIO",
   "summary": "Bio-Rad Laboratories, Inc. develops, manufactures, and distributes life science research and clinical diagnostic products in the United States, Europe, Asia, Canada, Latin America, and internationally. It operates through two segments, Life Science and Clinical Diagnostics. The Life Science segment develops, manufactures, and markets instruments, systems, reagents, and consumables to separate, purify, characterize, and quantify biological materials, including cells, proteins, and nucleic acids used in research and biopharmaceutical laboratory environments, as well as for biopharmaceutical manufacturing, quality control process, food safety, and science education applications. This segment serves universities and medical schools, industrial research organizations, government agencies, pharmaceutical manufacturers, biotechnology companies, food producers, and testing laboratories. Its Clinical Diagnostics segment designs, manufactures, markets, and supports diagnostic test systems, informatics systems, test kits, and specialized quality controls for clinical, hospital, diagnostic reference, and transfusion and physician office laboratories, as well as software. The company offers its products through its direct commercial organization, as well as through distributors, agents, brokers, and resellers. Bio-Rad Laboratories, Inc. was founded in 1952 and is headquartered in Hercules, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 2.225,
+  "eps_estimate": 3.02,
   "analysts": {
     "strong_buy": 1,
     "buy": 0,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 653000000,
-      "earnings": 0
-    },
-    {
       "q": "4Q2025",
       "revenue": 693200000,
       "earnings": 0
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 651000000,
       "earnings": 0
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 656400000,
+      "earnings": 0
     }
   ],
   "growth": {
-    "q0": -0.0155,
-    "q1": 0.2032,
+    "q0": 0.2032,
+    "q1": 0.5767,
     "y0": -0.047399998,
     "y1": 0.031400003
   },
   "ratings": [
+    {
+      "date": "2026-11-05",
+      "firm": "RBC Capital",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
     {
       "date": "2026-08-07",
       "firm": "RBC Capital",
@@ -140,13 +147,6 @@
       "from": "Equal-Weight",
       "to": "Equal-Weight",
       "action": "main"
-    },
-    {
-      "date": "2025-08-01",
-      "firm": "RBC Capital",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
     }
   ],
   "holders": [
@@ -172,17 +172,17 @@
       "date": "2026-06-30"
     },
     {
-      "name": "Dimensional Fund Advisors LP",
-      "kind": "institution",
-      "pct": 4.36,
-      "shares": 944548,
-      "date": "2026-06-30"
-    },
-    {
       "name": "SmallCap World Fund Inc",
       "kind": "fond",
       "pct": 4.29,
       "shares": 930906,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Dimensional Fund Advisors LP",
+      "kind": "institution",
+      "pct": 4.09,
+      "shares": 885977,
       "date": "2026-09-30"
     },
     {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.057,
-    "enterprise_value": 9776309248,
-    "ev_ebitda": 22.169,
-    "ev_revenue": 3.776,
+    "enterprise_value": 9912138752,
+    "ev_ebitda": 22.477,
+    "ev_revenue": 3.828,
     "float_shares": 21351235,
     "short_shares": 1097562,
     "short_pct_float": 6.91,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 542,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.93209,
-      "actual": 2.26,
-      "surprise_pct": 16.97
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 2.70008,
@@ -269,6 +263,12 @@
       "estimate": 1.74517,
       "actual": 2.62,
       "surprise_pct": 50.13
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 2.225,
+      "actual": 2.65,
+      "surprise_pct": 19.1
     }
   ],
   "insiders": [

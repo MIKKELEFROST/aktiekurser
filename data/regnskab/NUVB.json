@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:30.360Z",
+  "updated_at": "2026-11-05T22:14:59.733Z",
   "source": "Yahoo Finance",
   "symbol": "NUVB",
   "summary": "Nuvation Bio Inc., a clinical-stage biopharmaceutical company, focuses on developing product candidates for cancer treatment. The company's lead product candidate is IBTROZI (taletrectinib), a ROS1 inhibitor for the treatment of patients with ROS1+ non-small cell lung cancer. It is also developing Safusidenib, an inhibitor of mutant isocitrate dehydrogenase 1 in phase 3 clinical trials for the maintenance treatment of high-risk or high-grade IDH1-mutant astrocytoma with safusidenib against placebo. The company was founded in 2018 and is headquartered in New York, New York.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": -0.10333,
+  "eps_estimate": -0.09,
   "analysts": {
     "strong_buy": 3,
     "buy": 9,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 13120000,
-      "earnings": -55792000
-    },
-    {
       "q": "4Q2025",
       "revenue": 41865000,
       "earnings": -36592000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 31687000,
       "earnings": -62840000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 44951000,
+      "earnings": -41899000
     }
   ],
   "growth": {
-    "q0": 0.2593,
-    "q1": -0.0465,
+    "q0": -0.0465,
+    "q1": null,
     "y0": 0.413,
     "y1": 0.9483
   },
   "ratings": [
+    {
+      "date": "2026-11-05",
+      "firm": "RBC Capital",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
     {
       "date": "2026-09-30",
       "firm": "Citigroup",
@@ -140,13 +147,6 @@
       "from": "Outperform",
       "to": "Outperform",
       "action": "main"
-    },
-    {
-      "date": "2026-07-07",
-      "firm": "Truist Securities",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
     }
   ],
   "holders": [
@@ -174,9 +174,9 @@
     {
       "name": "Fidelity Mt. Vernon Street Trust-Fidelity Growth Company Fund",
       "kind": "fond",
-      "pct": 5.04,
-      "shares": 17697414,
-      "date": "2026-08-31"
+      "pct": 5.05,
+      "shares": 17725175,
+      "date": "2026-09-30"
     },
     {
       "name": "Vanguard Capital Management LLC",
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.731,
-    "enterprise_value": 1402075008,
-    "ev_ebitda": -10.349,
-    "ev_revenue": 8.252,
+    "enterprise_value": 1416119936,
+    "ev_ebitda": -10.453,
+    "ev_revenue": 8.335,
     "float_shares": 263647902,
     "short_shares": 63220203,
     "short_pct_float": 29.65,
@@ -246,12 +246,6 @@
   "payout_ratio": null,
   "inst_count": 326,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.15,
-      "actual": -0.1395,
-      "surprise_pct": 7
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.045,
@@ -269,6 +263,12 @@
       "estimate": -0.12,
       "actual": -0.15018,
       "surprise_pct": -25.15
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.10333,
+      "actual": -0.0905,
+      "surprise_pct": 12.42
     }
   ],
   "insiders": [

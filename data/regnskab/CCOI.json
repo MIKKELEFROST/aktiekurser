@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:28.942Z",
+  "updated_at": "2026-11-05T22:14:58.425Z",
   "source": "Yahoo Finance",
   "symbol": "CCOI",
   "summary": "Cogent Communications Holdings, Inc., through its subsidiaries, provides high-speed Internet access, private network, and data center colocation space services in North America, South America, Europe, Oceania, and Africa. It offers on-net Internet access and private network services to law firms, financial services firms, and advertising and marketing firms, as well as heath care providers, educational institutions and other professional services businesses, other Internet service providers, telephone companies, cable television companies, web hosting companies, media service providers, mobile phone operators, content delivery network companies, and commercial content and application service providers. The company also provides Internet access and private network services to customers that are not located in buildings directly connected to its network; and on-net services to customers located in buildings that are physically connected to its network. In addition, it offers off-net services to corporate customers using other carriers' circuits to provide the last mile portion of the link from the customers' premises to the network. Further, the company operates data centers that allow its customers to collocate their equipment and access the network. It serves primarily to small and medium-sized businesses, communications service providers, and other bandwidth-intensive organizations. Cogent Communications Holdings, Inc. was founded in 1999 and is headquartered in Washington, the District of Columbia.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": -0.855,
+  "eps_estimate": -0.815,
   "analysts": {
     "strong_buy": 0,
     "buy": 4,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 241949000,
-      "earnings": -41544000
-    },
-    {
       "q": "4Q2025",
       "revenue": 240518000,
       "earnings": -30781000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 235559000,
       "earnings": 66636000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 231203000,
+      "earnings": -29766000
     }
   ],
   "growth": {
-    "q0": 0.0172,
-    "q1": -1.6625,
+    "q0": -1.6625,
+    "q1": -0.84319997,
     "y0": -0.1181,
     "y1": -0.0272
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.774,
-    "enterprise_value": 2735401984,
-    "ev_ebitda": 16.796,
-    "ev_revenue": 3.109,
+    "enterprise_value": 2777577216,
+    "ev_ebitda": 17.055,
+    "ev_revenue": 3.157,
     "float_shares": 42011654,
     "short_shares": 7108242,
     "short_pct_float": 19.24,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-08-21",
   "dividend_date": null,
   "payout_ratio": 5.6232,
-  "inst_count": 286,
+  "inst_count": 285,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -1.22,
-      "actual": -0.87,
-      "surprise_pct": 28.69
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -1.07333,
@@ -269,11 +263,17 @@
       "estimate": -0.95,
       "actual": -0.4499,
       "surprise_pct": 52.64
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.855,
+      "actual": -0.4651,
+      "surprise_pct": 45.6
     }
   ],
   "insiders": [
     {
-      "name": "BROOKS STEVEN D",
+      "name": "KENNEDY SHERYL LYNN",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -318,7 +318,7 @@
       "date": "2026-09-30"
     },
     {
-      "name": "MONTAGNER MARC",
+      "name": "BROOKS STEVEN D",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -327,7 +327,7 @@
       "date": "2026-09-30"
     },
     {
-      "name": "KENNEDY SHERYL LYNN",
+      "name": "MONTAGNER MARC",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -354,7 +354,7 @@
       "date": "2026-09-02"
     },
     {
-      "name": "BROOKS STEVEN D",
+      "name": "KENNEDY SHERYL LYNN",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

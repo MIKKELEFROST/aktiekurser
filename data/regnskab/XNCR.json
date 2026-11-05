@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:31.396Z",
+  "updated_at": "2026-11-05T22:15:00.515Z",
   "source": "Yahoo Finance",
   "symbol": "XNCR",
   "summary": "Xencor, Inc., a clinical-stage biopharmaceutical company, focuses on the discovery and development of engineered antibodies for the treatment of cancer and autoimmune diseases. The company provides Ultomiris to treat patients with atypical hemolytic uremic syndrome, generalized myasthenia gravis, and neuromyelitis optica spectrum disororder; and Monjuvi for the treatment of patients with relapsed or refractory diffuse large B-cell lymphoma. It also develops XmAb819, a bispecific antibody to treat renal cell carcinoma; XmAb541, which is in Phase I for the treatment of ovarian cancer; XmAb808, a bispecific antibody that binds to the broadly expressed tumor antigen; XmAb942, which is in clinical development for patients with Crohn's disease and ulcerative colitis; Plamotamab, a bispecific T-cell, which is in Phase Ib study to treat rheumatoid arthritis; and XmAb657 for patients with idiopathic inflammatory myopathies. Further, the company develops Xaluritamig, a bispecific T-cell engager that treats prostate cancer; ASP2138 to treat gastric, gastroesophageal junction, and pancreatic cancers; JNJ-9401 to treat metastatic castration-resistant prostate cancer; Obexelimab, an antibody to treat patients with autoimmune diseases; Tobevibart, a treatment for chronic hepatitis Delta; Zaltenibart to treat paroxysmal nocturnal hemoglobinuria and other alternative pathway disorders; Teropavimab and zinlirvimab to treat human immunodeficiency virus; Novartis, an antibody drug candidate that uses XmAb Fc technologies; and JNJ-1493 to treat B-cell malignancies. The company was incorporated in 1997 and is headquartered in Pasadena, California.",
@@ -8,9 +8,9 @@
   "employees": 260,
   "ceo": "Dr. Bassil I. Dahiyat Ph.D.",
   "next_earnings": "2026-11-04",
-  "earnings_estimated": true,
+  "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": -0.34251,
+  "eps_estimate": -0.79478,
   "analysts": {
     "strong_buy": 3,
     "buy": 9,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 20999000,
-      "earnings": -6027000
-    },
-    {
       "q": "4Q2025",
       "revenue": 28237000,
       "earnings": -6653000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 51221000,
       "earnings": -21729000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 116520000,
+      "earnings": 39436000
     }
   ],
   "growth": {
-    "q0": -3.2814002,
-    "q1": -7.8309,
+    "q0": -7.8309,
+    "q1": 0.45810002,
     "y0": -1.4755,
     "y1": -0.1523
   },
   "ratings": [
+    {
+      "date": "2026-11-05",
+      "firm": "Cantor Fitzgerald",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "reit"
+    },
     {
       "date": "2026-10-27",
       "firm": "Truist Securities",
@@ -139,13 +146,6 @@
       "firm": "JP Morgan",
       "from": "Neutral",
       "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-09-01",
-      "firm": "Raymond James",
-      "from": "Strong Buy",
-      "to": "Strong Buy",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.773,
-    "enterprise_value": 1991843072,
-    "ev_ebitda": -9.674,
-    "ev_revenue": 18.975,
+    "enterprise_value": 2318254592,
+    "ev_ebitda": -11.259,
+    "ev_revenue": 22.084,
     "float_shares": 54251213,
     "short_shares": 12266541,
     "short_pct_float": 23.4,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 309,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.70483,
-      "actual": -0.08,
-      "surprise_pct": 88.65
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.58461,
@@ -269,6 +263,12 @@
       "estimate": -0.84227,
       "actual": -0.29,
       "surprise_pct": 65.57
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.34251,
+      "actual": 0.5,
+      "surprise_pct": 245.98
     }
   ],
   "insiders": [

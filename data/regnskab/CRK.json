@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:29.097Z",
+  "updated_at": "2026-11-05T22:14:58.544Z",
   "source": "Yahoo Finance",
   "symbol": "CRK",
   "summary": "Comstock Resources, Inc., an independent energy company, engages in the acquisition, exploration, development, and production of natural gas and oil properties in the United States. Its assets covering an area of approximately 1,069,991 acres are located in the Haynesville and Bossier shales located in North Louisiana and East Texas. Comstock Resources, Inc. has a strategic alliance with SOCAR. The company was incorporated in 1919 and is headquartered in Frisco, Texas.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.04144,
+  "eps_estimate": 0.09726,
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 449852000,
-      "earnings": 111128000
-    },
-    {
       "q": "4Q2025",
       "revenue": 789814000,
       "earnings": 280919000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 353282000,
       "earnings": 8766000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 384363000,
+      "earnings": 22270000
     }
   ],
   "growth": {
-    "q0": -0.5396,
-    "q1": -0.39209998,
+    "q0": -0.39209998,
+    "q1": 0.0635,
     "y0": -0.4014,
     "y1": 0.4175
   },
@@ -151,17 +151,17 @@
   ],
   "holders": [
     {
+      "name": "Dimensional Fund Advisors LP",
+      "kind": "institution",
+      "pct": 4.06,
+      "shares": 11920480,
+      "date": "2026-09-30"
+    },
+    {
       "name": "Blackrock Inc.",
       "kind": "institution",
       "pct": 4.03,
       "shares": 11835338,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "Dimensional Fund Advisors LP",
-      "kind": "institution",
-      "pct": 3.98,
-      "shares": 11676185,
       "date": "2026-06-30"
     },
     {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.502,
-    "enterprise_value": 7773079552,
-    "ev_ebitda": 7.889,
-    "ev_revenue": 4.129,
+    "enterprise_value": 7638013952,
+    "ev_ebitda": 7.752,
+    "ev_revenue": 4.057,
     "float_shares": 63466081,
     "short_shares": 25456813,
     "short_pct_float": 32.43,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 405,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.05463,
-      "actual": 0.09,
-      "surprise_pct": 64.74
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.11583,
@@ -269,6 +263,12 @@
       "estimate": 0.00995,
       "actual": 0.03,
       "surprise_pct": 201.51
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.04144,
+      "actual": 0.02,
+      "surprise_pct": -51.74
     }
   ],
   "insiders": [

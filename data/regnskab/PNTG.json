@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:30.597Z",
+  "updated_at": "2026-11-05T22:14:59.912Z",
   "source": "Yahoo Finance",
   "symbol": "PNTG",
   "summary": "The Pennant Group, Inc. provides healthcare services in the United States. It operates in two segments, Home Health and Hospice Services, and Senior Living Services. The company offers home health services, including clinical services, such as nursing, speech, occupational and physical therapy, medical social work, and home health aide services; and hospice services comprising clinical care, education, and counseling services for the physical, spiritual, and psychosocial needs of terminally ill patients and their families. It also provides senior living services, such as residential accommodations, activities, meals, housekeeping, and assistance in the activities of daily living to seniors who are independent or who require some support. The company operates home health, hospice, and home care agencies, as well as senior living communities in Alabama, Arizona, California, Colorado, Idaho, Montana, Nevada, Oklahoma, Oregon, Tennessee, Texas, Utah, Washington, Wisconsin, and Wyoming. The Company was incorporated in 2019 and is headquartered in Eagle, Idaho.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.35429,
+  "eps_estimate": 0.36571,
   "analysts": {
     "strong_buy": 1,
     "buy": 6,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 229039000,
-      "earnings": 6081000
-    },
-    {
       "q": "4Q2025",
       "revenue": 289323000,
       "earnings": 8637000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 297984000,
       "earnings": 9082000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 302251000,
+      "earnings": 9637000
     }
   ],
   "growth": {
-    "q0": 0.18100001,
-    "q1": 0.0756,
+    "q0": 0.0756,
+    "q1": 0.125,
     "y0": 0.1877,
     "y1": 0.1325
   },
   "ratings": [
+    {
+      "date": "2026-11-05",
+      "firm": "Oppenheimer",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
     {
       "date": "2026-08-20",
       "firm": "RBC Capital",
@@ -140,13 +147,6 @@
       "from": "Outperform",
       "to": "Outperform",
       "action": "main"
-    },
-    {
-      "date": "2026-01-07",
-      "firm": "Wells Fargo",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
     }
   ],
   "holders": [
@@ -160,9 +160,9 @@
     {
       "name": "Van Berkom & Associates Inc.",
       "kind": "institution",
-      "pct": 6.78,
-      "shares": 2369269,
-      "date": "2026-06-30"
+      "pct": 6.2,
+      "shares": 2165636,
+      "date": "2026-09-30"
     },
     {
       "name": "Wasatch Advisors LP",
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.299,
-    "enterprise_value": 1964247552,
-    "ev_ebitda": 26.341,
-    "ev_revenue": 1.783,
+    "enterprise_value": 2063795456,
+    "ev_ebitda": 27.676,
+    "ev_revenue": 1.873,
     "float_shares": 33200085,
     "short_shares": 1148410,
     "short_pct_float": 3.46,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 311,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.28667,
-      "actual": 0.3,
-      "surprise_pct": 4.65
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.31571,
@@ -269,6 +263,12 @@
       "estimate": 0.33,
       "actual": 0.36,
       "surprise_pct": 9.09
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.35429,
+      "actual": 0.35,
+      "surprise_pct": -1.21
     }
   ],
   "insiders": [
@@ -280,15 +280,6 @@
       "value": 36283,
       "shares": 5948,
       "date": "2026-10-23"
-    },
-    {
-      "name": "MORRIS GREGORY K. SR.",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 1900,
-      "date": "2026-10-15"
     },
     {
       "name": "SMITH BARRY M",
@@ -345,21 +336,30 @@
       "date": "2026-10-15"
     },
     {
+      "name": "MORRIS GREGORY K. SR.",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 1900,
+      "date": "2026-10-15"
+    },
+    {
+      "name": "GUERISOLI BRENT",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 38.52 per share.",
+      "value": 165067,
+      "shares": 4285,
+      "date": "2026-08-06"
+    },
+    {
       "name": "STEIK JASON PAUL",
       "role": "Officer",
       "kind": "sell",
       "text": "Sale at price 38.52 per share.",
       "value": 53700,
       "shares": 1394,
-      "date": "2026-08-06"
-    },
-    {
-      "name": "CHENEY KIRK S.",
-      "role": "General Counsel",
-      "kind": "sell",
-      "text": "Sale at price 38.52 per share.",
-      "value": 53661,
-      "shares": 1393,
       "date": "2026-08-06"
     }
   ],

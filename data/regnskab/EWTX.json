@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:29.386Z",
+  "updated_at": "2026-11-05T22:14:58.876Z",
   "source": "Yahoo Finance",
   "symbol": "EWTX",
   "summary": "Edgewise Therapeutics, Inc., a biopharmaceutical company, discovers, develops, and commercializes therapies for the treatment of muscle disorders. Its lead product candidate, sevasemten, an orally administered small molecule that is in Phase II clinical trials, designed to address the root cause of dystrophinopathies including Duchenne muscular dystrophy and Becker muscular dystrophy. The company develops EDG-7500, a small molecule for the treatment of hypertrophic cardiomyopathy and other severe cardiac disorders that is in Phase I clinical trials; and EDG-15400, a novel small molecule for the treatment of heart failure with preserved ejection fraction. In addition, it develops a pipeline of precision medicine product candidates that target key muscle proteins and modulators to address genetically defined muscle disorders. The company was incorporated in 2017 and is headquartered in Boulder, Colorado.",
@@ -7,10 +7,10 @@
   "website": "https://edgewisetx.com",
   "employees": 127,
   "ceo": "Dr. Kevin  Koch Ph.D.",
-  "next_earnings": "2026-11-05",
-  "earnings_estimated": true,
+  "next_earnings": "2026-11-04",
+  "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": 2.51313,
+  "eps_estimate": -0.46845,
   "analysts": {
     "strong_buy": 3,
     "buy": 9,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 0,
-      "earnings": -40666000
-    },
-    {
       "q": "4Q2025",
       "revenue": 0,
       "earnings": -50216000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 0,
       "earnings": -57327000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 0,
+      "earnings": 1166151000
     }
   ],
   "growth": {
-    "q0": 7.4439,
-    "q1": 0.0033000002,
+    "q0": 0.0033000002,
+    "q1": -0.1341,
     "y0": 2.3956,
     "y1": -1.8216001
   },
   "ratings": [
+    {
+      "date": "2026-11-05",
+      "firm": "Wedbush",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
     {
       "date": "2026-10-16",
       "firm": "William Blair",
@@ -140,13 +147,6 @@
       "from": "Neutral",
       "to": "Neutral",
       "action": "main"
-    },
-    {
-      "date": "2026-06-16",
-      "firm": "HC Wainwright & Co.",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "reit"
     }
   ],
   "holders": [
@@ -223,16 +223,16 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 8,
-    "sells": 7,
-    "bought": 341567,
-    "sold": 298659,
-    "net_pct": 8.8
+    "buys": 7,
+    "sells": 6,
+    "bought": 291567,
+    "sold": 243429,
+    "net_pct": 10
   },
   "extras": {
     "beta": 0.4,
-    "enterprise_value": 3635084544,
-    "ev_ebitda": -16.769,
+    "enterprise_value": 3618793984,
+    "ev_ebitda": -16.694,
     "ev_revenue": null,
     "float_shares": 74267848,
     "short_shares": 11751785,
@@ -246,12 +246,6 @@
   "payout_ratio": null,
   "inst_count": 323,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.40112,
-      "actual": -0.39,
-      "surprise_pct": 2.77
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.44237,
@@ -269,6 +263,12 @@
       "estimate": -0.47254,
       "actual": -0.53,
       "surprise_pct": -12.16
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 2.51313,
+      "actual": 9.65,
+      "surprise_pct": 283.98
     }
   ],
   "insiders": [

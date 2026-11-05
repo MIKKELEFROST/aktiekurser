@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:30.700Z",
+  "updated_at": "2026-11-05T22:14:59.986Z",
   "source": "Yahoo Finance",
   "symbol": "RELY",
   "summary": "Remitly Global, Inc., a cross-border payment company engages in the provision of digital financial services in the United States, Canada, and internationally. It offers cross-border remittances and complementary financial services through mobile application and website. Remitly Global, Inc. was incorporated in 2011 and is headquartered in Seattle, Washington.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 0.27955,
+  "eps_estimate": 0.36044,
   "analysts": {
     "strong_buy": 2,
     "buy": 8,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 419494000,
-      "earnings": 8829000
-    },
-    {
       "q": "4Q2025",
       "revenue": 442177000,
       "earnings": 41216000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 495156000,
       "earnings": 205908000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 509839000,
+      "earnings": 67553000
     }
   ],
   "growth": {
-    "q0": 0.5428,
-    "q1": -0.0763,
+    "q0": -0.0763,
+    "q1": -0.040799998,
     "y0": 0.7581,
     "y1": -0.1261
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.433,
-    "enterprise_value": 4734411264,
-    "ev_ebitda": 23.766,
-    "ev_revenue": 2.616,
+    "enterprise_value": 5094274048,
+    "ev_ebitda": 25.573,
+    "ev_revenue": 2.815,
     "float_shares": 200873349,
     "short_shares": 20327121,
     "short_pct_float": 10.15,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 486,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.177,
-      "actual": 0.1812,
-      "surprise_pct": 2.37
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.15762,
@@ -269,6 +263,12 @@
       "estimate": 0.31392,
       "actual": 1.1204,
       "surprise_pct": 256.91
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.27955,
+      "actual": 0.4957,
+      "surprise_pct": 77.32
     }
   ],
   "insiders": [
@@ -345,20 +345,20 @@
       "date": "2026-08-14"
     },
     {
-      "name": "HUG JOSHUA",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 23.65 - 23.84 per share.",
-      "value": 261195,
-      "shares": 11000,
-      "date": "2026-08-12"
-    },
-    {
       "name": "RIESE PHILLIP JOHN",
       "role": "Director",
       "kind": "sell",
       "text": "Sale at price 23.54 - 23.55 per share.",
       "value": 1643814,
+      "shares": 69818,
+      "date": "2026-08-12"
+    },
+    {
+      "name": "RIESE PHILLIP JOHN",
+      "role": "Director",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 0.64 per share.",
+      "value": 44684,
       "shares": 69818,
       "date": "2026-08-12"
     }

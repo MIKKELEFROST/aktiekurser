@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-04T22:07:31.024Z",
+  "updated_at": "2026-11-05T22:15:00.234Z",
   "source": "Yahoo Finance",
   "symbol": "SWKS",
   "summary": "Skyworks Solutions, Inc., together with its subsidiaries, develops, manufactures, and markets analog and mixed-signal semiconductor products and solutions in the United States, Taiwan, China, South Korea, Europe, the Middle East, Africa, and the Asia Pacific. The company offers amplifiers, antenna tuners, attenuators, automotive tuners and digital radios, wireless ASoC, DC/DC converters, demodulators, detectors, digital power isolators, diodes, directional couplers, diversity receive modules, filters, front-end modules, hybrids, light emitting diode drivers, low noise amplifiers, mixers, modulators, and optocouplers/optoisolators. It also provides phase locked loops, phase shifters, power dividers/combiners, power over ethernet, power isolators, ProSLIC family of subscriber line interface circuits, receivers, system in package, switches, synthesizers, timing devices, voltage-controlled oscillators/synthesizers, and voltage regulators. The company sells its products through direct sales force, electronic component distributors, and independent sales representatives. Its products are used in aerospace, automotive, broadband, cellular infrastructure, connected home, defense, entertainment and gaming, industrial, medical, smartphone, tablet, and wearables applications. The company was founded in 1962 and is headquartered in Irvine, California.",
   "industry": "Semiconductors",
   "website": "https://www.skyworksinc.com",
-  "employees": 10000,
+  "employees": null,
   "ceo": "Mr. Philip Gordon Brace",
   "next_earnings": "2027-02-02",
   "earnings_estimated": true,
@@ -79,6 +79,13 @@
   },
   "ratings": [
     {
+      "date": "2026-11-05",
+      "firm": "Barclays",
+      "from": "Overweight",
+      "to": "Equal-Weight",
+      "action": "down"
+    },
+    {
       "date": "2026-11-04",
       "firm": "Citigroup",
       "from": "Neutral",
@@ -140,13 +147,6 @@
       "from": "Neutral",
       "to": "Neutral",
       "action": "main"
-    },
-    {
-      "date": "2026-10-06",
-      "firm": "B. Riley Securities",
-      "from": "Neutral",
-      "to": "Buy",
-      "action": "up"
     }
   ],
   "holders": [
@@ -200,18 +200,18 @@
       "date": "2026-06-30"
     },
     {
+      "name": "Dimensional Fund Advisors LP",
+      "kind": "institution",
+      "pct": 5.49,
+      "shares": 8263901,
+      "date": "2026-09-30"
+    },
+    {
       "name": "SmallCap World Fund Inc",
       "kind": "fond",
       "pct": 5.18,
       "shares": 7799515,
       "date": "2026-09-30"
-    },
-    {
-      "name": "Dimensional Fund Advisors LP",
-      "kind": "institution",
-      "pct": 5.13,
-      "shares": 7719226,
-      "date": "2026-06-30"
     },
     {
       "name": "Geode Capital Management, LLC",
@@ -231,10 +231,10 @@
   },
   "extras": {
     "beta": 1.493,
-    "enterprise_value": 12732275712,
-    "ev_ebitda": 14.465,
-    "ev_revenue": 3.172,
-    "float_shares": 149433015,
+    "enterprise_value": 12279824384,
+    "ev_ebitda": 14.999,
+    "ev_revenue": 3.101,
+    "float_shares": 148665573,
     "short_shares": 22260153,
     "short_pct_float": 12.39,
     "short_ratio": 2.75,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-05-26",
   "dividend_date": null,
   "payout_ratio": 1.4714999,
-  "inst_count": 998,
+  "inst_count": 1000,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -273,15 +273,6 @@
   ],
   "insiders": [
     {
-      "name": "GIVENS JASON K",
-      "role": "General Counsel",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 42311,
-      "date": "2026-10-05"
-    },
-    {
       "name": "CLEMMER RICHARD L",
       "role": "Director",
       "kind": "other",
@@ -309,6 +300,15 @@
       "date": "2026-10-05"
     },
     {
+      "name": "GIVENS JASON K",
+      "role": "General Counsel",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 42311,
+      "date": "2026-10-05"
+    },
+    {
       "name": "CARTER PHILIP MATTHEW",
       "role": "Chief Financial Officer",
       "kind": "other",
@@ -318,12 +318,12 @@
       "date": "2026-09-08"
     },
     {
-      "name": "KING CHRISTINE",
+      "name": "BATEY ALAN S",
       "role": "Director",
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 4071,
+      "shares": 3664,
       "date": "2026-05-14"
     },
     {
@@ -336,7 +336,16 @@
       "date": "2026-05-14"
     },
     {
-      "name": "BEEBE KEVIN L",
+      "name": "KING CHRISTINE",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 4071,
+      "date": "2026-05-14"
+    },
+    {
+      "name": "MCBRIDE SUZANNE E",
       "role": "Director",
       "kind": "other",
       "text": null,
@@ -345,16 +354,7 @@
       "date": "2026-05-14"
     },
     {
-      "name": "SCHRIESHEIM ROBERT A",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 3664,
-      "date": "2026-05-14"
-    },
-    {
-      "name": "BATEY ALAN S",
+      "name": "GUERIN ERIC",
       "role": "Director",
       "kind": "other",
       "text": null,

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:29.245Z",
+  "updated_at": "2026-11-05T22:14:58.760Z",
   "source": "Yahoo Finance",
   "symbol": "DUOL",
   "summary": "Duolingo, Inc. operates as a mobile learning platform in the United States, the United Kingdom, and internationally. The company offers 250 language courses, including Spanish, English, French, German, Italian, Portuguese, Japanese, and Chinese through its Duolingo app. It also provides a digital English language proficiency assessment exam. The company was incorporated in 2011 and is headquartered in Pittsburgh, Pennsylvania.",
@@ -79,6 +79,27 @@
   },
   "ratings": [
     {
+      "date": "2026-11-05",
+      "firm": "Truist Securities",
+      "from": "Hold",
+      "to": "Hold",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-04",
+      "firm": "UBS",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-04",
+      "firm": "Scotiabank",
+      "from": "Sector Perform",
+      "to": "Sector Perform",
+      "action": "main"
+    },
+    {
       "date": "2026-11-04",
       "firm": "Citigroup",
       "from": "Neutral",
@@ -123,27 +144,6 @@
     {
       "date": "2026-11-04",
       "firm": "Needham",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-10-26",
-      "firm": "Goldman Sachs",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-09-29",
-      "firm": "DA Davidson",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-09-14",
-      "firm": "DA Davidson",
       "from": "Buy",
       "to": "Buy",
       "action": "main"
@@ -224,19 +224,19 @@
   "insider_net": {
     "period": "6m",
     "buys": 24,
-    "sells": 10,
+    "sells": 11,
     "bought": 410687,
-    "sold": 121908,
-    "net_pct": 70
+    "sold": 131908,
+    "net_pct": 66.3
   },
   "extras": {
     "beta": 1.02,
-    "enterprise_value": 4760912384,
-    "ev_ebitda": 26.593,
-    "ev_revenue": 4.158,
-    "float_shares": 39972785,
+    "enterprise_value": 6307260928,
+    "ev_ebitda": 37.875,
+    "ev_revenue": 5.335,
+    "float_shares": 40246808,
     "short_shares": 7103345,
-    "short_pct_float": 20.23,
+    "short_pct_float": 20.05,
     "short_ratio": 7.21,
     "last_split": null,
     "last_split_date": null
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 615,
+  "inst_count": 616,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "GORDON WILLIAM BINGHAM",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 132.14 - 139.20 per share.",
+      "value": 1363845,
+      "shares": 10000,
+      "date": "2026-11-02"
+    },
     {
       "name": "LILLY JOHN OSBORNE III",
       "role": "Director",
@@ -352,15 +361,6 @@
       "value": 567315,
       "shares": 4290,
       "date": "2026-08-18"
-    },
-    {
-      "name": "MEESE ROBERT",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 129.13 per share.",
-      "value": 174842,
-      "shares": 1354,
-      "date": "2026-08-17"
     }
   ],
   "dividends": [],

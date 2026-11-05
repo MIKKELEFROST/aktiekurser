@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:31.286Z",
+  "updated_at": "2026-11-05T22:15:00.428Z",
   "source": "Yahoo Finance",
   "symbol": "VNT",
   "summary": "Vontier Corporation provides mobility ecosystem solutions worldwide. It operates through three segments: Mobility Technologies, Repair Solutions, and Environmental and Fueling Solutions. The Mobility Technologies segment provides digitally enabled equipment and operating software solutions for mobility ecosystem, such as convenience retail operating platform, point-of-sale and payment solutions, remote diagnostics and site-management tools, workflow automation solutions, data analytics, operating software platform for electric vehicle charging networks, integrated solutions for alternative fuel dispensing, and IoT-based fleet telematics. Its Repair Solutions segment manufactures and distributes aftermarket vehicle repair tools, toolboxes, automotive diagnostic equipment and software through mobile franchise network. The Environmental and Fueling Solutions segment offers environmental monitoring and leak detection systems, forecourt controllers, vapor recovery equipment, and fuel dispenser systems for petroleum under the Gilbarco and Veeder-Root brands. The company markets its products and services to retail and commercial fueling, convenience store, and car wash operators; commercial vehicle repair businesses, fleet owners/operators and electric vehicle charging network operators, as well as direct sales personnel and independent distributors. It serves customers in North America, the Asia Pacific, Europe, and Latin America. Vontier Corporation was incorporated in 2019 and is headquartered in Raleigh, North Carolina.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.8427,
+  "eps_estimate": 0.96823,
   "analysts": {
     "strong_buy": 1,
     "buy": 5,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 752500000,
-      "earnings": 102800000
-    },
-    {
       "q": "4Q2025",
       "revenue": 808500000,
       "earnings": 123500000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 756700000,
       "earnings": 27400000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 736900000,
+      "earnings": 99000000
     }
   ],
   "growth": {
-    "q0": 0.0804,
-    "q1": 0.1258,
+    "q0": 0.1258,
+    "q1": 0.0884,
     "y0": 0.0917,
     "y1": 0.082399994
   },
@@ -193,6 +193,13 @@
       "date": "2026-06-30"
     },
     {
+      "name": "Dimensional Fund Advisors LP",
+      "kind": "institution",
+      "pct": 3.41,
+      "shares": 4605205,
+      "date": "2026-09-30"
+    },
+    {
       "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
       "kind": "fond",
       "pct": 3.3,
@@ -212,13 +219,6 @@
       "pct": 3.19,
       "shares": 4313572,
       "date": "2026-06-30"
-    },
-    {
-      "name": "Capitol Series Trust-FullerThaler Behavioral Small-Cap Equity Fund",
-      "kind": "fond",
-      "pct": 3.06,
-      "shares": 4131892,
-      "date": "2026-06-30"
     }
   ],
   "insider_net": {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.125,
-    "enterprise_value": 6615011840,
-    "ev_ebitda": 9.459,
-    "ev_revenue": 2.156,
+    "enterprise_value": 6752915968,
+    "ev_ebitda": 9.657,
+    "ev_revenue": 2.201,
     "float_shares": 134202224,
     "short_shares": 12306114,
     "short_pct_float": 12.08,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-09-03",
   "dividend_date": null,
   "payout_ratio": 0.041300002,
-  "inst_count": 642,
+  "inst_count": 640,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.76882,
-      "actual": 0.78,
-      "surprise_pct": 1.45
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.85032,
@@ -269,6 +263,12 @@
       "estimate": 0.80421,
       "actual": 0.89,
       "surprise_pct": 10.67
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.8427,
+      "actual": 0.92,
+      "surprise_pct": 9.17
     }
   ],
   "insiders": [
@@ -289,33 +289,6 @@
       "value": 33831,
       "shares": 1161,
       "date": "2026-06-26"
-    },
-    {
-      "name": "SYLVESTER MARYROSE T",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 28.91 per share.",
-      "value": 175050,
-      "shares": 6055,
-      "date": "2026-06-04"
-    },
-    {
-      "name": "BOYLAND GLORIA R",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 28.91 per share.",
-      "value": 175050,
-      "shares": 6055,
-      "date": "2026-06-04"
-    },
-    {
-      "name": "FOULKES DAVID M",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 28.91 per share.",
-      "value": 175050,
-      "shares": 6055,
-      "date": "2026-06-04"
     },
     {
       "name": "THOMAS JAMES DARRELL",
@@ -342,6 +315,33 @@
       "text": "Stock Award(Grant) at price 28.91 per share.",
       "value": 267562,
       "shares": 9255,
+      "date": "2026-06-04"
+    },
+    {
+      "name": "SYLVESTER MARYROSE T",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 28.91 per share.",
+      "value": 175050,
+      "shares": 6055,
+      "date": "2026-06-04"
+    },
+    {
+      "name": "BOYLAND GLORIA R",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 28.91 per share.",
+      "value": 175050,
+      "shares": 6055,
+      "date": "2026-06-04"
+    },
+    {
+      "name": "FOULKES DAVID M",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 28.91 per share.",
+      "value": 175050,
+      "shares": 6055,
       "date": "2026-06-04"
     },
     {

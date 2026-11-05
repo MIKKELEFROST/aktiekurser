@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:28.548Z",
+  "updated_at": "2026-11-05T22:14:58.130Z",
   "source": "Yahoo Finance",
   "symbol": "APA",
   "summary": "APA Corporation, an independent energy company, explores for, develops, and produces natural gas, crude oil, and natural gas liquids. The company has oil and gas operations in the United States, Egypt, and North Sea. It also has exploration and appraisal activities in Suriname, as well as holds interests in projects located in Uruguay and internationally. APA Corporation was incorporated in 1954 and is headquartered in Houston, Texas.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 1.59192,
+  "eps_estimate": 1.86275,
   "analysts": {
     "strong_buy": 2,
     "buy": 8,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 2018000000,
-      "earnings": 205000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 1978000000,
       "earnings": 279000000
@@ -69,15 +64,41 @@
       "q": "2Q2026",
       "revenue": 2399000000,
       "earnings": 747000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 2812000000,
+      "earnings": 698000000
     }
   ],
   "growth": {
-    "q0": 0.71169996,
-    "q1": 1.0469999,
+    "q0": 1.0469999,
+    "q1": 0.090500005,
     "y0": 0.7572,
     "y1": -0.1884
   },
   "ratings": [
+    {
+      "date": "2026-11-05",
+      "firm": "Barclays",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-05",
+      "firm": "Stephens & Co.",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-05",
+      "firm": "Evercore ISI Group",
+      "from": "In-Line",
+      "to": "In-Line",
+      "action": "main"
+    },
     {
       "date": "2026-10-20",
       "firm": "Susquehanna",
@@ -126,27 +147,6 @@
       "from": "Neutral",
       "to": "Neutral",
       "action": "main"
-    },
-    {
-      "date": "2026-10-12",
-      "firm": "Truist Securities",
-      "from": "Hold",
-      "to": "Hold",
-      "action": "main"
-    },
-    {
-      "date": "2026-10-09",
-      "firm": "Stephens & Co.",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
-      "action": "reit"
-    },
-    {
-      "date": "2026-09-21",
-      "firm": "Truist Securities",
-      "from": "Hold",
-      "to": "Hold",
-      "action": "main"
     }
   ],
   "holders": [
@@ -193,18 +193,18 @@
       "date": "2026-06-30"
     },
     {
-      "name": "Dimensional Fund Advisors LP",
-      "kind": "institution",
-      "pct": 4.81,
-      "shares": 16838388,
-      "date": "2026-06-30"
-    },
-    {
       "name": "Invesco Ltd.",
       "kind": "institution",
       "pct": 4.37,
       "shares": 15316704,
       "date": "2026-06-30"
+    },
+    {
+      "name": "Dimensional Fund Advisors LP",
+      "kind": "institution",
+      "pct": 4.28,
+      "shares": 14977643,
+      "date": "2026-09-30"
     },
     {
       "name": "Charles Schwab Investment Management, Inc.",
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.282,
-    "enterprise_value": 21096292352,
-    "ev_ebitda": 3.688,
-    "ev_revenue": 2.461,
+    "enterprise_value": 19947139072,
+    "ev_ebitda": 3.487,
+    "ev_revenue": 2.327,
     "float_shares": 348056708,
     "short_shares": 23339758,
     "short_pct_float": 8.78,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.21139999,
   "inst_count": 1134,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.79087,
-      "actual": 0.93,
-      "surprise_pct": 17.59
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.64206,
@@ -269,6 +263,12 @@
       "estimate": 1.87114,
       "actual": 1.89,
       "surprise_pct": 1.01
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.59192,
+      "actual": 1.94,
+      "surprise_pct": 21.87
     }
   ],
   "insiders": [

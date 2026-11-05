@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:30.878Z",
+  "updated_at": "2026-11-05T22:15:00.126Z",
   "source": "Yahoo Finance",
   "symbol": "SITM",
   "summary": "SiTime Corporation engages in the design, development, and sale of silicon timing systems solutions in Hong Kong, Taiwan, the United States, Singapore, and internationally. It offers various types of oscillators, as well as clock integrated circuits, resonators, and synchronization software for use in artificial intelligence systems, data center, communications, enterprise, automotive, industrial, aerospace, defense, mobile, Internet of Things, and consumer markets. The company was incorporated in 2003 and is based in Santa Clara, California.",
@@ -7,10 +7,10 @@
   "website": "https://www.sitime.com",
   "employees": 441,
   "ceo": "Mr. Rajesh  Vashist",
-  "next_earnings": "2026-11-04",
-  "earnings_estimated": false,
+  "next_earnings": "2027-02-03",
+  "earnings_estimated": true,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 3.55982,
+  "eps_estimate": 3.7058,
   "analysts": {
     "strong_buy": 4,
     "buy": 7,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 12
   },
-  "target_mean": 832.2727,
+  "target_mean": 845.9091,
   "target_high": 900,
   "target_low": 730,
   "target_analysts": 11,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 83567000,
-      "earnings": -8014000
-    },
-    {
       "q": "4Q2025",
       "revenue": 113284000,
       "earnings": 9166000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 157432000,
       "earnings": 18156000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 298671000,
+      "earnings": 4353000
     }
   ],
   "growth": {
-    "q0": 3.0917,
-    "q1": 1.4221001,
+    "q0": 1.4221001,
+    "q1": 1.2888,
     "y0": 2.4997,
     "y1": 0.33330002
   },
   "ratings": [
+    {
+      "date": "2026-11-05",
+      "firm": "Needham",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-11-03",
       "firm": "Rosenblatt",
@@ -140,13 +147,6 @@
       "from": "Equal-Weight",
       "to": "Overweight",
       "action": "up"
-    },
-    {
-      "date": "2026-05-07",
-      "firm": "Needham",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
     }
   ],
   "holders": [
@@ -181,9 +181,9 @@
     {
       "name": "Fidelity Mt. Vernon Street Trust-Fidelity Growth Company Fund",
       "kind": "fond",
-      "pct": 3.1,
-      "shares": 932471,
-      "date": "2026-08-31"
+      "pct": 3.13,
+      "shares": 941809,
+      "date": "2026-09-30"
     },
     {
       "name": "iShares Trust-iShares Core S&P Mid-Cap ETF",
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 2.907,
-    "enterprise_value": 12783473664,
-    "ev_ebitda": 278.866,
-    "ev_revenue": 27.324,
+    "enterprise_value": 11532217344,
+    "ev_ebitda": 251.57,
+    "ev_revenue": 24.649,
     "float_shares": 23111696,
     "short_shares": 1536625,
     "short_pct_float": 7.63,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 743,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.7103,
-      "actual": 0.87,
-      "surprise_pct": 22.48
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.2085,
@@ -269,6 +263,12 @@
       "estimate": 1.95425,
       "actual": 2.34,
       "surprise_pct": 19.74
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 3.55982,
+      "actual": 4.01,
+      "surprise_pct": 12.65
     }
   ],
   "insiders": [
@@ -309,21 +309,21 @@
       "date": "2026-08-31"
     },
     {
-      "name": "KREINDL TORSTEN G",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 700.00 - 750.12 per share.",
-      "value": 503791,
-      "shares": 695,
-      "date": "2026-08-17"
-    },
-    {
       "name": "FRANK EDWARD H",
       "role": "Director",
       "kind": "sell",
       "text": "Sale at price 745.00 per share.",
       "value": 745000,
       "shares": 1000,
+      "date": "2026-08-17"
+    },
+    {
+      "name": "KREINDL TORSTEN G",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 700.00 - 750.12 per share.",
+      "value": 503791,
+      "shares": 695,
       "date": "2026-08-17"
     },
     {

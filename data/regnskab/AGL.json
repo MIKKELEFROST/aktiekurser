@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:28.433Z",
+  "updated_at": "2026-11-05T22:14:58.044Z",
   "source": "Yahoo Finance",
   "symbol": "AGL",
   "summary": "agilon health, inc. provides healthcare services for seniors through primary care physicians in the communities of the United States. It offers a platform that manages the total healthcare needs of the patients by subscription-like per-member per-month. The company was formerly known as Agilon Health Topco, Inc. and changed its name to agilon health, inc. in March 2021. The company was founded in 2016 and is based in Westerville, Ohio.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": -0.73,
+  "eps_estimate": -2.97667,
   "analysts": {
     "strong_buy": 0,
     "buy": 5,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 1435321000,
-      "earnings": -110207000
-    },
-    {
       "q": "4Q2025",
       "revenue": 1569491000,
       "earnings": -188882000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 1494743000,
       "earnings": 17956000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1519486000,
+      "earnings": 34912000
     }
   ],
   "growth": {
-    "q0": 0.886,
-    "q1": 0.6674,
+    "q0": 0.6674,
+    "q1": -0.0398,
     "y0": 0.9928,
     "y1": 15.914599
   },
   "ratings": [
+    {
+      "date": "2026-11-05",
+      "firm": "Evercore ISI Group",
+      "from": "In-Line",
+      "to": "In-Line",
+      "action": "main"
+    },
     {
       "date": "2026-09-15",
       "firm": "Bernstein",
@@ -140,13 +147,6 @@
       "from": "Neutral",
       "to": "Sell",
       "action": "down"
-    },
-    {
-      "date": "2026-07-13",
-      "firm": "Wells Fargo",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
     }
   ],
   "holders": [
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 3.107,
-    "enterprise_value": 1321919360,
-    "ev_ebitda": -5.515,
-    "ev_revenue": 0.223,
+    "enterprise_value": 1463637120,
+    "ev_ebitda": -6.106,
+    "ev_revenue": 0.247,
     "float_shares": 10927552,
     "short_shares": 899148,
     "short_pct_float": 8.54,
@@ -246,12 +246,6 @@
   "payout_ratio": null,
   "inst_count": 253,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -3.3575,
-      "actual": -6.4025,
-      "surprise_pct": -90.69
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -6.85,
@@ -269,6 +263,12 @@
       "estimate": 0.27171,
       "actual": 2.1505,
       "surprise_pct": 691.47
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.73,
+      "actual": 2.0791,
+      "surprise_pct": 384.81
     }
   ],
   "insiders": [
@@ -336,15 +336,6 @@
       "date": "2026-05-07"
     },
     {
-      "name": "VENKATACHALIAH GIRISH",
-      "role": "Chief Technology Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 28000,
-      "date": "2026-04-01"
-    },
-    {
       "name": "GERTSCH TIMOTHY",
       "role": "Officer",
       "kind": "other",
@@ -360,6 +351,15 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 50000,
+      "date": "2026-04-01"
+    },
+    {
+      "name": "SCHWANEKE JEFFREY A",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 75000,
       "date": "2026-04-01"
     }
   ],

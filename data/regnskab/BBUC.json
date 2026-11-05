@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:28.698Z",
+  "updated_at": "2026-11-05T22:14:58.244Z",
   "source": "Yahoo Finance",
   "symbol": "BBUC",
   "summary": "Brookfield Business Corporation is a private equity firm specializing in growth capital, divestitures, and acquisitions. The firm typically invests in business services, infrastructure services, construction, energy, and industrials sector. The firm prefers to invest globally. It prefers to take majority controlling stake in companies. The firm seeks returns of at least 15%-20% on its investments. The firm was founded in 2016 and is based in Hamilton, Bermuda.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.58,
+  "eps_estimate": 0.61,
   "analysts": {
     "strong_buy": 4,
     "buy": 2,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 6919000000,
-      "earnings": 0
-    },
-    {
       "q": "4Q2025",
       "revenue": 0,
       "earnings": 0
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 0,
       "earnings": 0
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 0,
+      "earnings": 0
     }
   ],
   "growth": {
-    "q0": -0.5236,
-    "q1": 32.9372,
+    "q0": 32.9372,
+    "q1": null,
     "y0": 6.6772,
     "y1": 0.8205
   },
@@ -186,17 +186,17 @@
       "date": "2026-09-30"
     },
     {
+      "name": "Private Management Group, Inc.",
+      "kind": "institution",
+      "pct": 0.61,
+      "shares": 1249436,
+      "date": "2026-09-30"
+    },
+    {
       "name": "State Street Corporation",
       "kind": "institution",
       "pct": 0.48,
       "shares": 992179,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "Geode Capital Management, LLC",
-      "kind": "institution",
-      "pct": 0.48,
-      "shares": 991157,
       "date": "2026-06-30"
     }
   ],
@@ -210,9 +210,9 @@
   },
   "extras": {
     "beta": 1.4,
-    "enterprise_value": 57765969920,
-    "ev_ebitda": 8.743,
-    "ev_revenue": 2.144,
+    "enterprise_value": 57934430208,
+    "ev_ebitda": 8.769,
+    "ev_revenue": 2.15,
     "float_shares": 10290591,
     "short_shares": 2884236,
     "short_pct_float": 4.6,
@@ -225,12 +225,6 @@
   "payout_ratio": 0.0309,
   "inst_count": 237,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.4,
-      "actual": 1.2174,
-      "surprise_pct": 204.35
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.15,
@@ -248,6 +242,12 @@
       "estimate": 0.46,
       "actual": 1.002,
       "surprise_pct": 117.83
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.58,
+      "actual": 1.3566,
+      "surprise_pct": 133.9
     }
   ],
   "insiders": [

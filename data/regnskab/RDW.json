@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:30.687Z",
+  "updated_at": "2026-11-05T22:14:59.979Z",
   "source": "Yahoo Finance",
   "symbol": "RDW",
   "summary": "Redwire Corporation provides critical space solutions and space infrastructure for government and commercial customers in the United States, Europe, and internationally. It operates in two segments Space and Defense Tech. The company offers sensors and avionics systems, including star trackers and sun sensors, which are critical for accurate navigation and control of spacecraft; camera systems; infrared, space situational awareness, and position timing and navigation payloads; It also provides software suite that enables digital engineering and generation of high-fidelity, interactive modeling and simulations of individual components, entire spacecraft, and full constellations in a cloud-based environment. In addition, the company offers microgravity payloads, radio frequency systems, antennas, spacecraft platforms and missions, and in-space manufacturing and biotech facilities, as well as field-proven uncrewed airborne system (UAS) technology. Further, it provides combat-proven autonomous systems, optical sensors, advanced optics, resilient energy solutions, and radio frequency payloads, as well as provides intelligence, surveillance, and reconnaissance capabilities for customers including the U.S. Department of War, U.S. Federal Civilian Agencies and allied governments across multiple domains. Redwire Corporation was founded in 2010 and is headquartered in Jacksonville, Florida.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": -0.0925,
+  "eps_estimate": -0.09,
   "analysts": {
     "strong_buy": 0,
     "buy": 6,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 103432000,
-      "earnings": -41152000
-    },
-    {
       "q": "4Q2025",
       "revenue": 108794000,
       "earnings": -85473000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 117074000,
       "earnings": -40971000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 109035000,
+      "earnings": -23178000
     }
   ],
   "growth": {
-    "q0": 0.5157,
-    "q1": 0.5911,
+    "q0": 0.5911,
+    "q1": 0.2188,
     "y0": 0.5183,
     "y1": 0.2809
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 3.126,
-    "enterprise_value": 1554833280,
-    "ev_ebitda": -12.822,
-    "ev_revenue": 3.648,
+    "enterprise_value": 1455250688,
+    "ev_ebitda": -12.001,
+    "ev_revenue": 3.414,
     "float_shares": 246182942,
     "short_shares": 48862139,
     "short_pct_float": 22.69,
@@ -246,12 +246,6 @@
   "payout_ratio": null,
   "inst_count": 437,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.13,
-      "actual": -0.191,
-      "surprise_pct": -46.92
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.16,
@@ -269,9 +263,24 @@
       "estimate": -0.13,
       "actual": -0.09,
       "surprise_pct": 30.77
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.0925,
+      "actual": -0.06,
+      "surprise_pct": 35.14
     }
   ],
   "insiders": [
+    {
+      "name": "CANNITO PETER ANTHONY JR",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 190637,
+      "date": "2026-07-14"
+    },
     {
       "name": "EDMUNDS CHRIS",
       "role": "Chief Financial Officer",
@@ -300,15 +309,6 @@
       "date": "2026-07-14"
     },
     {
-      "name": "CANNITO PETER ANTHONY JR",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 190637,
-      "date": "2026-07-14"
-    },
-    {
       "name": "HESTON GREGORY L",
       "role": "Director",
       "kind": "other",
@@ -316,24 +316,6 @@
       "value": 0,
       "shares": 14735,
       "date": "2026-07-10"
-    },
-    {
-      "name": "MCCONVILLE JAMES",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 9772,
-      "date": "2026-05-21"
-    },
-    {
-      "name": "CALVELLI FRANK",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 9772,
-      "date": "2026-05-21"
     },
     {
       "name": "HAYES DOROTHY D.",
@@ -355,6 +337,24 @@
     },
     {
       "name": "BROTHERS LOUIS R JR",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 9772,
+      "date": "2026-05-21"
+    },
+    {
+      "name": "MCCONVILLE JAMES",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 9772,
+      "date": "2026-05-21"
+    },
+    {
+      "name": "CALVELLI FRANK",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:28.454Z",
+  "updated_at": "2026-11-05T22:14:58.059Z",
   "source": "Yahoo Finance",
   "symbol": "AKA",
   "summary": "a.k.a. Brands Holding Corp. operates a portfolio of online fashion brands in the United States, Australia, New Zealand, and internationally. The company offers dresses, tops, shoes, and accessories for customers between the ages of 15 and 25; dresses for special occasions for customers between 25 and 34; streetwear apparel, footwear, headwear, and accessories for male consumers between the ages of 18 and 35; and streetwear wardrobe staples through its online stores under the Princess Polly, Petal & Pup, Culture Kings, and mnml brands. It also operates physical retail stores. The company was founded in 2018 and is headquartered in San Francisco, California. a.k.a. Brands Holding Corp. is a subsidiary of New Excelerate, L.P.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": -0.6625,
+  "eps_estimate": -0.3575,
   "analysts": {
     "strong_buy": 0,
     "buy": 2,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 160524000,
-      "earnings": -3625000
-    },
-    {
       "q": "3Q2025",
       "revenue": 147077000,
       "earnings": -4960000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 160068000,
       "earnings": -161000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 161340000,
+      "earnings": -7727000
     }
   ],
   "growth": {
-    "q0": -0.8639,
-    "q1": 0.7352,
+    "q0": 0.7352,
+    "q1": null,
     "y0": 0.42150003,
     "y1": 0.33040002
   },
@@ -204,7 +204,7 @@
       "kind": "fond",
       "pct": 0.03,
       "shares": 3304,
-      "date": "2026-08-31"
+      "date": "2026-09-30"
     },
     {
       "name": "Vanguard Fiduciary Trust Co",
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.354,
-    "enterprise_value": 305592224,
-    "ev_ebitda": 30.105,
-    "ev_revenue": 0.506,
+    "enterprise_value": 310538208,
+    "ev_ebitda": 30.592,
+    "ev_revenue": 0.515,
     "float_shares": 894562,
     "short_shares": 10771,
     "short_pct_float": 1.13,
@@ -247,12 +247,6 @@
   "inst_count": 24,
   "eps_history": [
     {
-      "quarter": "2025-09-30",
-      "estimate": -0.38,
-      "actual": -0.35543,
-      "surprise_pct": 6.47
-    },
-    {
       "quarter": "2025-12-31",
       "estimate": -0.81333,
       "actual": -1.35,
@@ -263,9 +257,51 @@
       "estimate": -0.41,
       "actual": -0.01,
       "surprise_pct": 97.56
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.6625,
+      "actual": -0.7,
+      "surprise_pct": -5.66
     }
   ],
   "insiders": [
+    {
+      "name": "LONG CIARAN JOSEPH",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 1458,
+      "date": "2026-10-30"
+    },
+    {
+      "name": "TREMBLEY MICHAEL FRANK",
+      "role": "Chief Technology Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 1458,
+      "date": "2026-10-30"
+    },
+    {
+      "name": "WHITE KENNETH C",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 1250,
+      "date": "2026-10-30"
+    },
+    {
+      "name": "GRANT KEVIN J",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 1458,
+      "date": "2026-10-30"
+    },
     {
       "name": "LONG CIARAN JOSEPH",
       "role": "Chief Executive Officer",
@@ -319,42 +355,6 @@
       "value": 0,
       "shares": 2778,
       "date": "2026-08-03"
-    },
-    {
-      "name": "MCCORMICK MYLES B",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 2778,
-      "date": "2026-07-29"
-    },
-    {
-      "name": "GHOSH SOURAV",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 2778,
-      "date": "2026-07-29"
-    },
-    {
-      "name": "THOMPSON KELLY ANN",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 2778,
-      "date": "2026-07-29"
-    },
-    {
-      "name": "ESKENAZI ILENE",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 2778,
-      "date": "2026-07-29"
     }
   ],
   "dividends": [],

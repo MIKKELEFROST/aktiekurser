@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:30.039Z",
+  "updated_at": "2026-11-05T22:14:59.482Z",
   "source": "Yahoo Finance",
   "symbol": "LNC",
   "summary": "Lincoln National Corporation, through its subsidiaries, operates multiple insurance and retirement businesses in the United States. It operates through four segments: Life Insurance, Annuities, Group Protection, and Retirement Plan Services. The Life Insurance segment provides life insurance products, including term insurance, universal life insurance (UL), indexed universal life insurance, variable universal life insurance (VUL), linked-benefit UL and VUL products, and critical illness and long-term care riders. Its Annuities segment offers variable, fixed, and registered index-linked annuities. The Group Protection segment offers group nonmedical insurance products consisting of short and long-term disability and administration services, statutory disability; paid family medical leave administration and absence management services; term life; life; supplemental health insurance; accident, critical illness, and hospital indemnity benefits and dental and vision products to the employer marketplace through various forms of employee-paid and employer-paid plans. Its Retirement Plan Services segment provides employers with retirement plan products and services primarily in the defined contribution retirement plan marketplace; individual and group variable annuities, group fixed annuities, and mutual fund-based programs; and various plan services, including plan recordkeeping, compliance testing, participant education, and trust and custodial services. It distributes its products through consultants, brokers, planners, agents, financial advisors, third-party administrators, financial institutions, and other intermediaries. Lincoln National Corporation was founded in 1905 and is headquartered in Radnor, Pennsylvania.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 1.95366,
+  "eps_estimate": 2.05224,
   "analysts": {
     "strong_buy": 3,
     "buy": 3,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 4780000000,
-      "earnings": 411000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 4894000000,
       "earnings": 745000000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 4926000000,
       "earnings": 1321000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 5059000000,
+      "earnings": 1332000000
     }
   ],
   "growth": {
-    "q0": -0.0423,
-    "q1": -0.0714,
+    "q0": -0.0714,
+    "q1": 0.0954,
     "y0": -0.0404,
     "y1": 0.1043
   },
@@ -174,9 +174,9 @@
     {
       "name": "Dimensional Fund Advisors LP",
       "kind": "institution",
-      "pct": 4.48,
-      "shares": 8571956,
-      "date": "2026-06-30"
+      "pct": 4.72,
+      "shares": 9037930,
+      "date": "2026-09-30"
     },
     {
       "name": "iShares Trust-iShares Core S&P Small-Cap ETF",
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.143,
-    "enterprise_value": -29237178368,
+    "enterprise_value": -29357791232,
     "ev_ebitda": null,
-    "ev_revenue": -1.508,
+    "ev_revenue": -1.514,
     "float_shares": 171557872,
     "short_shares": 3894,
     "short_pct_float": 0,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-10-09",
   "dividend_date": null,
   "payout_ratio": 0.1535,
-  "inst_count": 800,
+  "inst_count": 798,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.86576,
-      "actual": 2.04,
-      "surprise_pct": 9.34
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.89689,
@@ -269,6 +263,12 @@
       "estimate": 1.95607,
       "actual": 2.24,
       "surprise_pct": 14.52
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.95366,
+      "actual": 1.72,
+      "surprise_pct": -11.96
     }
   ],
   "insiders": [
@@ -282,21 +282,21 @@
       "date": "2026-08-24"
     },
     {
-      "name": "WOODROFFE SEAN NIGEL",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 45.28 per share.",
-      "value": 498080,
-      "shares": 11000,
-      "date": "2026-08-17"
-    },
-    {
       "name": "CHESNEY CURTIS W",
       "role": "Officer",
       "kind": "other",
       "text": "Stock Gift at price 0.00 per share.",
       "value": 0,
       "shares": 637,
+      "date": "2026-08-17"
+    },
+    {
+      "name": "WOODROFFE SEAN NIGEL",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 45.28 per share.",
+      "value": 498080,
+      "shares": 11000,
       "date": "2026-08-17"
     },
     {
@@ -345,21 +345,21 @@
       "date": "2026-03-02"
     },
     {
-      "name": "COOPER ELLEN G",
-      "role": "Chief Executive Officer",
+      "name": "RALLIS ANDREW",
+      "role": "Officer",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 327514,
+      "shares": 30549,
       "date": "2026-02-19"
     },
     {
-      "name": "BEAZER CRAIGT T",
-      "role": "General Counsel",
+      "name": "KROLL BRIAN",
+      "role": "Officer",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 51340,
+      "shares": 20574,
       "date": "2026-02-19"
     }
   ],

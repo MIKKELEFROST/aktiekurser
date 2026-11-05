@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:30.125Z",
+  "updated_at": "2026-11-05T22:14:59.556Z",
   "source": "Yahoo Finance",
   "symbol": "MKSI",
   "summary": "MKS Inc. provides foundational technology solutions to semiconductor manufacturing, electronics and packaging, and specialty industrial applications in the United States, China, South Korea, Japan, Taiwan, Singapore, and internationally. The company operates through Vacuum Solutions Division (VSD), Photonics Solutions Division (PSD), and Material Solutions Division (MSD) segments. Its VSD segment provides foundational technology solutions, including pressure measurement and control, flow measurement and control, gas and vapor delivery, gas composition analysis, electronic control technology, reactive gas generation and delivery, power generation and delivery, and fiber optic temperature and position sensing. The PSD segment offers range of solutions, which include lasers, photonics, optics, precision motion control, and vibration control. Its MSD segment develops, process, and manufactures technologies comprising advanced surface modification, electroless and electrolytic plating, and surface finishing for chemistry, equipment, and services markets, as well as high-technology applications. In addition, the company sells its products and services through direct sales, network of independent distributors, and sales representatives, as well as websites, including product catalogs. MKS Inc. was formerly known as MKS Instruments, Inc. and changed its name to MKS Inc. in May 2025. The company was incorporated in 1961 and is based in Andover, Massachusetts.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 3.64856,
+  "eps_estimate": 3.94779,
   "analysts": {
     "strong_buy": 3,
     "buy": 9,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 988000000,
-      "earnings": 74000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 1033000000,
       "earnings": 108000000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 1248000000,
       "earnings": 175000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1413000000,
+      "earnings": 236000000
     }
   ],
   "growth": {
-    "q0": 0.8904,
-    "q1": 0.59830004,
+    "q0": 0.59830004,
+    "q1": 0.6814,
     "y0": 0.6693,
     "y1": 0.3391
   },
   "ratings": [
+    {
+      "date": "2026-11-05",
+      "firm": "Needham",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-26",
       "firm": "Morgan Stanley",
@@ -139,13 +146,6 @@
       "firm": "Citigroup",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-09",
-      "firm": "Mizuho",
-      "from": "Outperform",
-      "to": "Outperform",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 2.138,
-    "enterprise_value": 17448769536,
-    "ev_ebitda": 16.508,
-    "ev_revenue": 4.014,
+    "enterprise_value": 16757043200,
+    "ev_ebitda": 15.853,
+    "ev_revenue": 3.855,
     "float_shares": 67221995,
     "short_shares": 4910795,
     "short_pct_float": 8.26,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.1494,
   "inst_count": 990,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.85427,
-      "actual": 1.93,
-      "surprise_pct": 4.08
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 2.46259,
@@ -269,9 +263,24 @@
       "estimate": 2.96325,
       "actual": 3.3,
       "surprise_pct": 11.36
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 3.64856,
+      "actual": 4.18,
+      "surprise_pct": 14.57
     }
   ],
   "insiders": [
+    {
+      "name": "LEE JOHN TSENG-CHUNG",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 2157,
+      "date": "2026-10-30"
+    },
     {
       "name": "MORA ELIZABETH A",
       "role": "Director",
@@ -351,15 +360,6 @@
       "text": "Sale at price 330.38 - 338.58 per share.",
       "value": 6668075,
       "shares": 20000,
-      "date": "2026-05-27"
-    },
-    {
-      "name": "DONAHUE JOSEPH B",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 327.95 per share.",
-      "value": 688703,
-      "shares": 2100,
       "date": "2026-05-27"
     }
   ],

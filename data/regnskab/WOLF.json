@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:31.363Z",
+  "updated_at": "2026-11-05T22:15:00.489Z",
   "source": "Yahoo Finance",
   "symbol": "WOLF",
   "summary": "Wolfspeed, Inc., a semiconductor company, focuses on silicon carbide materials and devices for power applications in Europe, Hong Kong, Singapore, China, rest of Asia Pacific, Japan, the United States, and internationally. The company offers silicon carbide and gallium nitride (GaN) materials, including silicon carbide bare wafers, epitaxial wafers, and GaN epitaxial layers on silicon carbide wafers to manufacture products for RF, silicon carbide substrates, mosfets, schotky diodes, power, and other applications. It also provides power devices, such as silicon carbide Schottky diodes, metal oxide semiconductor field effect transistors (MOSFETs), and power modules for customers and distributors to use in various applications of automotive domains, including electric vehicles and fast charging, as well as existing and emerging applications in the industrial and energy domain, such as AI data centers, grid modernization, and renewable energy and storage. The company was formerly known as Cree, Inc. and changed its name to Wolfspeed, Inc. in October 2021. Wolfspeed, Inc. was founded in 1987 and is headquartered in Durham, North Carolina.",
@@ -7,10 +7,10 @@
   "website": "https://www.wolfspeed.com",
   "employees": 2371,
   "ceo": "Mr. Robert A. Feurle",
-  "next_earnings": "2026-11-04",
-  "earnings_estimated": false,
+  "next_earnings": "2027-02-03",
+  "earnings_estimated": true,
   "earnings_call": "2026-11-04",
-  "eps_estimate": -1.985,
+  "eps_estimate": -1.925,
   "analysts": {
     "strong_buy": 0,
     "buy": 0,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 196800000,
-      "earnings": -643600000
-    },
-    {
       "q": "4Q2025",
       "revenue": 168500000,
       "earnings": -150600000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 149600000,
       "earnings": -145400000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 155000000,
+      "earnings": -143800000
     }
   ],
   "growth": {
-    "q0": -2.6091,
-    "q1": 0.6849,
+    "q0": 0.6849,
+    "q1": 0.42790002,
     "y0": 0.383,
     "y1": 0.2242
   },
   "ratings": [
+    {
+      "date": "2026-11-05",
+      "firm": "TD Cowen",
+      "from": "Hold",
+      "to": "Hold",
+      "action": "main"
+    },
     {
       "date": "2026-10-21",
       "firm": "Susquehanna",
@@ -140,13 +147,6 @@
       "from": "Neutral",
       "to": "Underweight",
       "action": "down"
-    },
-    {
-      "date": "2025-04-02",
-      "firm": "Goldman Sachs",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
     }
   ],
   "holders": [
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 1895756800,
-    "ev_ebitda": -5.86,
-    "ev_revenue": 2.85,
+    "enterprise_value": 1915365120,
+    "ev_ebitda": -5.921,
+    "ev_revenue": 2.88,
     "float_shares": 31458597,
     "short_shares": 27376417,
     "short_pct_float": 51.81,
@@ -246,12 +246,6 @@
   "payout_ratio": null,
   "inst_count": 360,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.75,
-      "actual": -0.55,
-      "surprise_pct": 26.67
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.735,
@@ -269,9 +263,24 @@
       "estimate": -2.45,
       "actual": -2.26,
       "surprise_pct": 7.76
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -1.985,
+      "actual": -2.03,
+      "surprise_pct": -2.27
     }
   ],
   "insiders": [
+    {
+      "name": "ABATE ANTHONY M",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 7415,
+      "date": "2026-10-27"
+    },
     {
       "name": "MATTES ANDREAS W",
       "role": "Director",
@@ -300,33 +309,6 @@
       "date": "2026-10-27"
     },
     {
-      "name": "ABATE ANTHONY M",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 7415,
-      "date": "2026-10-27"
-    },
-    {
-      "name": "MATTES ANDREAS W",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 16529,
-      "date": "2026-09-01"
-    },
-    {
-      "name": "KOHN BRADLEY D",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 19835,
-      "date": "2026-09-01"
-    },
-    {
       "name": "EMERSON DAVID TODD",
       "role": "Chief Operating Officer",
       "kind": "other",
@@ -351,6 +333,24 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 33555,
+      "date": "2026-09-01"
+    },
+    {
+      "name": "MATTES ANDREAS W",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 16529,
+      "date": "2026-09-01"
+    },
+    {
+      "name": "KOHN BRADLEY D",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 19835,
       "date": "2026-09-01"
     },
     {

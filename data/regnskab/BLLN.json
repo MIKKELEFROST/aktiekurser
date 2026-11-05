@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:28.775Z",
+  "updated_at": "2026-11-05T22:14:58.310Z",
   "source": "Yahoo Finance",
   "symbol": "BLLN",
   "summary": "BillionToOne, Inc., a precision diagnostics company, quantifies biology to create molecular diagnostics. The company provides molecular counting platform, which is designed to detect and measure DNA molecules at the single-count level to help enhance disease detection. It also offers UNITY Complete, a non-invasive prenatal screen that assesses fetal risk for aneuploidies, recessive conditions, and fetal antigens from a maternal blood draw; Northstar Select, a liquid biopsy test that provides a list of mutations that are present in the tumor and types of mutations detected that include deletions, insertions, and point mutations; and Northstar Response, a methylation-based assay that quantifies the amount of cancer at the single molecule level without requiring a tissue biopsy, enabling real-time monitoring of patient response to therapy with unprecedented precision. BillionToOne, Inc. was incorporated in 2016 and is headquartered in Menlo Park, California.",
@@ -67,6 +67,13 @@
   },
   "ratings": [
     {
+      "date": "2026-11-05",
+      "firm": "BTIG",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "reit"
+    },
+    {
       "date": "2026-10-01",
       "firm": "Guggenheim",
       "from": "Buy",
@@ -127,13 +134,6 @@
       "firm": "Guggenheim",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-03-05",
-      "firm": "Wells Fargo",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
       "action": "main"
     }
   ],
@@ -211,17 +211,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 32,
-    "sells": 33,
-    "bought": 458068,
-    "sold": 445063,
+    "buys": 33,
+    "sells": 35,
+    "bought": 478068,
+    "sold": 467897,
     "net_pct": 0.1
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 4807101440,
-    "ev_ebitda": 95.685,
-    "ev_revenue": 12.096,
+    "enterprise_value": 4969424896,
+    "ev_ebitda": 98.916,
+    "ev_revenue": 12.504,
     "float_shares": 36706797,
     "short_shares": 2932232,
     "short_pct_float": 11.22,
@@ -232,7 +232,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 204,
+  "inst_count": 203,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -254,6 +254,33 @@
     }
   ],
   "insiders": [
+    {
+      "name": "TEN BOSCH JOHN RODERICK PH.D.",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 113.17 per share.",
+      "value": 320724,
+      "shares": 2834,
+      "date": "2026-11-02"
+    },
+    {
+      "name": "TSAO DAVID PH.D.",
+      "role": "Chief Technology Officer",
+      "kind": "sell",
+      "text": "Sale at price 107.31 - 113.16 per share.",
+      "value": 2184854,
+      "shares": 20000,
+      "date": "2026-11-02"
+    },
+    {
+      "name": "TSAO DAVID PH.D.",
+      "role": "Chief Technology Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 2.80 per share.",
+      "value": 56000,
+      "shares": 20000,
+      "date": "2026-11-02"
+    },
     {
       "name": "LYNCH THOMAS P",
       "role": "General Counsel",
@@ -316,33 +343,6 @@
       "value": 56000,
       "shares": 20000,
       "date": "2026-10-05"
-    },
-    {
-      "name": "ATAY OGUZHAN PH.D.",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 120.64 per share.",
-      "value": 1326919,
-      "shares": 10999,
-      "date": "2026-09-28"
-    },
-    {
-      "name": "ATAY OGUZHAN PH.D.",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 2.80 per share.",
-      "value": 23332,
-      "shares": 8333,
-      "date": "2026-09-28"
-    },
-    {
-      "name": "TEN BOSCH JOHN RODERICK PH.D.",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 120.00 per share.",
-      "value": 169920,
-      "shares": 1416,
-      "date": "2026-09-24"
     }
   ],
   "dividends": [],

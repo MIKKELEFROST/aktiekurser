@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:29.065Z",
+  "updated_at": "2026-11-05T22:14:58.517Z",
   "source": "Yahoo Finance",
   "symbol": "COOK",
   "summary": "Traeger, Inc., together with its subsidiaries, designs, sources, sells, and supports wood pellet fueled barbecue grills and flatrock flat top grills for retailers, distributors, and direct to consumers in the United States and internationally. The company's wood pellet grills are internet of things devices that allow owners to program, monitor, and control their grill through its Traeger app. It also produces a library of digital content, including instructional recipes and videos that demonstrate tips, tricks, and cooking techniques that empower Traeger owners to progress their cooking skills; and short- and long-form branded content highlighting stories, community members, and lifestyle content from the Traegerhood. In addition, the company provides wood pellets that are used to fire the grills; rubs, spices, and sauces; accessories, such as pop-and-lock accessory rail covers, drip trays, bucket liners, storage bins, and shelves; tools to aid in meal prep, cooking, and cleanup, including pellet storage systems, cleaning solutions, barbecue tools, and MEATER smart thermometer; replacement parts; and apparel and merchandise, including t-shirts, hooded sweatshirts, and baseball hats. Traeger, Inc. was founded in 1987 and is headquartered in Salt Lake City, Utah.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": -4.54429,
+  "eps_estimate": 2.49,
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 125396000,
-      "earnings": -89819000
-    },
-    {
       "q": "4Q2025",
       "revenue": 145358000,
       "earnings": -17200000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 120163000,
       "earnings": -8563000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 74682000,
+      "earnings": -28527000
     }
   ],
   "growth": {
-    "q0": 0.4654,
-    "q1": 3.98,
+    "q0": 3.98,
+    "q1": -0.19129999,
     "y0": 0.9924,
     "y1": 10.370601
   },
@@ -225,15 +225,15 @@
     "period": "6m",
     "buys": 6,
     "sells": 1,
-    "bought": 7964,
+    "bought": 7882,
     "sold": 2750,
     "net_pct": 1
   },
   "extras": {
     "beta": 1.957,
-    "enterprise_value": 507116576,
-    "ev_ebitda": 9.053,
-    "ev_revenue": 1.046,
+    "enterprise_value": 503870656,
+    "ev_ebitda": 8.995,
+    "ev_revenue": 1.039,
     "float_shares": 1624313,
     "short_shares": 66029,
     "short_pct_float": 7.76,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 87,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -1.92857,
-      "actual": -8.5,
-      "surprise_pct": -340.74
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.375,
@@ -269,9 +263,24 @@
       "estimate": -1.57,
       "actual": 0.53,
       "surprise_pct": 133.76
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -4.54429,
+      "actual": -6.77,
+      "surprise_pct": -48.98
     }
   ],
   "insiders": [
+    {
+      "name": "RICHMAN STEVEN PHILIP",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 307,
+      "date": "2026-11-02"
+    },
     {
       "name": "JOLLEY DAVID R",
       "role": "Director",
@@ -352,15 +361,6 @@
       "value": null,
       "shares": 37500,
       "date": "2026-02-02"
-    },
-    {
-      "name": "RICHMAN STEVEN PHILIP",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 20380,
-      "date": "2025-11-03"
     }
   ],
   "dividends": [],

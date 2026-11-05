@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T22:07:29.059Z",
+  "updated_at": "2026-11-05T22:14:58.513Z",
   "source": "Yahoo Finance",
   "symbol": "COLL",
   "summary": "Collegium Pharmaceutical, Inc., a specialty pharmaceutical company, engages in the development and commercialization of medicines for pain management. The company's portfolio includes Jornay PM, a central nervous system stimulant prescription medicine that contains methylphenidate HCl for the treatment of attention deficit hyperactivity disorder; Belbuca, a buccal film that contains buprenorphine for severe and persistent pain that requires an extended treatment period; Xtampza ER, an abuse-deterrent, extended-release, oral formulation of oxycodone for the management of pain severe enough to require daily; Nucynta ER and Nucynta IR, which are extended-release and immediate-release oral formulations of tapentadol, indicated for the management of acute, severe, and persistent pain; and Symproic, an oral formulation of naldemedine for the treatment of opioid-induced constipation in adult patients with chronic non-cancer pain. Collegium Pharmaceutical, Inc. was formerly known as Collegium Pharmaceuticals, Inc. and changed its name to Collegium Pharmaceutical, Inc. in October 2003. The company was incorporated in 2002 and is headquartered in Stoughton, Massachusetts.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 1.85671,
+  "eps_estimate": 1.98257,
   "analysts": {
     "strong_buy": 2,
     "buy": 5,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 209361000,
-      "earnings": 31507000
-    },
-    {
       "q": "4Q2025",
       "revenue": 205449000,
       "earnings": 16963000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 199878000,
       "earnings": -15051000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 216339000,
+      "earnings": 21759000
     }
   ],
   "growth": {
-    "q0": -0.1748,
-    "q1": -0.028199999,
+    "q0": -0.028199999,
+    "q1": -0.1153,
     "y0": 0.0052,
     "y1": -0.0269
   },
   "ratings": [
+    {
+      "date": "2026-11-05",
+      "firm": "Needham",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-09-23",
       "firm": "Oppenheimer",
@@ -139,13 +146,6 @@
       "firm": "Needham",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-01-09",
-      "firm": "Barclays",
-      "from": "Overweight",
-      "to": "Overweight",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.728,
-    "enterprise_value": 1860959744,
-    "ev_ebitda": 4.592,
-    "ev_revenue": 2.303,
+    "enterprise_value": 1859006336,
+    "ev_ebitda": 4.587,
+    "ev_revenue": 2.3,
     "float_shares": 29767550,
     "short_shares": 5375283,
     "short_pct_float": 19.72,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 372,
+  "inst_count": 365,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.86,
-      "actual": 2.25,
-      "surprise_pct": 20.97
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 2.1398,
@@ -269,6 +263,12 @@
       "estimate": 1.765,
       "actual": 1.92,
       "surprise_pct": 8.78
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.85671,
+      "actual": 1.96,
+      "surprise_pct": 5.56
     }
   ],
   "insiders": [
@@ -309,15 +309,6 @@
       "date": "2026-05-15"
     },
     {
-      "name": "DONOVAN MICHAEL",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 17482,
-      "date": "2026-05-14"
-    },
-    {
       "name": "SANTINI GINO",
       "role": "Director",
       "kind": "other",
@@ -345,7 +336,7 @@
       "date": "2026-05-14"
     },
     {
-      "name": "LURKER NANCY S",
+      "name": "BALICE-GORDON RITA J",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -354,7 +345,16 @@
       "date": "2026-05-14"
     },
     {
-      "name": "PAYA CARLOS V",
+      "name": "DONOVAN MICHAEL",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 17482,
+      "date": "2026-05-14"
+    },
+    {
+      "name": "LURKER NANCY S",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
