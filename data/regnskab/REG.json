@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:59.982Z",
+  "updated_at": "2026-11-06T21:46:49.200Z",
   "source": "Yahoo Finance",
   "symbol": "REG",
   "summary": "Regency Centers Corporation is a pre-eminent national owner, operator, and developer of shopping centers located in suburban trade areas with compelling demographics. Our portfolio includes thriving properties merchandised with highly productive grocers, restaurants, service providers, and best-in-class retailers that connect to their neighborhoods, communities, and customers. Operating as a fully integrated real estate company, Regency Centers is a qualified real estate investment trust (REIT) that is self-administered, self-managed, and an S&P 500 Index member. Regency Centers Corporation was incorporated in 1963 and is based in Jacksonville, Florida.",
@@ -7,10 +7,10 @@
   "website": "https://www.regencycenters.com",
   "employees": 503,
   "ceo": "Ms. Lisa  Palmer",
-  "next_earnings": "2026-11-05",
-  "earnings_estimated": false,
+  "next_earnings": "2027-02-04",
+  "earnings_estimated": true,
   "earnings_call": "2026-11-06",
-  "eps_estimate": 0.60323,
+  "eps_estimate": 0.6104,
   "analysts": {
     "strong_buy": 5,
     "buy": 7,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 380850000,
-      "earnings": 105960000
-    },
-    {
       "q": "4Q2025",
       "revenue": 396612000,
       "earnings": 199068000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 406318000,
       "earnings": 112351000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 411918000,
+      "earnings": 75125000
     }
   ],
   "growth": {
-    "q0": 0.0401,
-    "q1": -0.44,
+    "q0": -0.44,
+    "q1": -0.001,
     "y0": -0.1149,
     "y1": 0.0015
   },
   "ratings": [
+    {
+      "date": "2026-11-06",
+      "firm": "Evercore ISI Group",
+      "from": "In-Line",
+      "to": "In-Line",
+      "action": "main"
+    },
     {
       "date": "2026-10-23",
       "firm": "Wells Fargo",
@@ -137,13 +144,6 @@
     {
       "date": "2026-08-19",
       "firm": "Wells Fargo",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-17",
-      "firm": "Barclays",
       "from": "Overweight",
       "to": "Overweight",
       "action": "main"
@@ -230,11 +230,11 @@
     "net_pct": 1.7
   },
   "extras": {
-    "beta": 0.817,
-    "enterprise_value": 19487285248,
-    "ev_ebitda": 18.192,
-    "ev_revenue": 11.562,
-    "float_shares": 164374113,
+    "beta": null,
+    "enterprise_value": 19400024064,
+    "ev_ebitda": 17.822,
+    "ev_revenue": 11.367,
+    "float_shares": 164107184,
     "short_shares": 7154656,
     "short_pct_float": 5.28,
     "short_ratio": 5.21,
@@ -247,12 +247,6 @@
   "inst_count": 939,
   "eps_history": [
     {
-      "quarter": "2025-09-30",
-      "estimate": 0.55448,
-      "actual": 0.58,
-      "surprise_pct": 4.6
-    },
-    {
       "quarter": "2025-12-31",
       "estimate": 0.57651,
       "actual": 1.09,
@@ -261,14 +255,20 @@
     {
       "quarter": "2026-03-31",
       "estimate": 0.62171,
-      "actual": 0.68,
-      "surprise_pct": 9.38
+      "actual": 0.6431,
+      "surprise_pct": 3.44
     },
     {
       "quarter": "2026-06-30",
       "estimate": 0.58884,
-      "actual": 0.61,
-      "surprise_pct": 3.59
+      "actual": 0.6113,
+      "surprise_pct": 3.81
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.60323,
+      "actual": 0.6347,
+      "surprise_pct": 5.22
     }
   ],
   "insiders": [
@@ -336,6 +336,15 @@
       "date": "2026-05-11"
     },
     {
+      "name": "ANDERSON GARY E",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 1807,
+      "date": "2026-05-11"
+    },
+    {
       "name": "KLEIN KARIN M",
       "role": "Director",
       "kind": "other",
@@ -346,15 +355,6 @@
     },
     {
       "name": "FURPHY THOMAS W.",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 1807,
-      "date": "2026-05-11"
-    },
-    {
-      "name": "SIMMONS JAMES H III",
       "role": "Director",
       "kind": "other",
       "text": null,

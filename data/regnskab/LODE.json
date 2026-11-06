@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:59.487Z",
+  "updated_at": "2026-11-06T21:46:48.541Z",
   "source": "Yahoo Finance",
   "symbol": "LODE",
   "summary": "Comstock Inc. commercializes technologies, systems, and supply chains that extract, process, and convert under-utilized waste and natural resources into clean energy and clean energy supporting products in the United States. It operates through the Fuels, Metals, Mining, and Strategic Investments segments. The company develops and commercializes technology that extracts and converts wasted and unused lignocellulosic biomass into intermediates for refining into advanced renewable fuels. It also owns 100% in the Lucerne Project located in the Storey County, Nevada; and the Spring Valley Project situated in the Lyon County, Nevada. In addition, the company offers engineering and construction services; and invests in non-mining real estate, water rights, and securities investments. Comstock Inc. company was incorporated in 1999 and is based in Virginia City, Nevada.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 0.06,
+  "eps_estimate": -0.12,
   "analysts": null,
   "target_mean": null,
   "target_high": null,
@@ -44,11 +44,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 54080,
-      "earnings": -12888340
-    },
-    {
       "q": "4Q2025",
       "revenue": 374360,
       "earnings": -13267230
@@ -62,11 +57,16 @@
       "q": "2Q2026",
       "revenue": 272820,
       "earnings": 0
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 0,
+      "earnings": 0
     }
   ],
   "growth": {
-    "q0": 1.2742,
-    "q1": 0.5439,
+    "q0": 0.5439,
+    "q1": null,
     "y0": 0.4952,
     "y1": 0.3148
   },
@@ -198,12 +198,6 @@
   "inst_count": 140,
   "eps_history": [
     {
-      "quarter": "2025-09-30",
-      "estimate": -0.135,
-      "actual": -0.2188,
-      "surprise_pct": -62.07
-    },
-    {
       "quarter": "2025-12-31",
       "estimate": -0.13,
       "actual": -0.2631,
@@ -220,6 +214,12 @@
       "estimate": -0.12,
       "actual": -0.1497,
       "surprise_pct": -24.75
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.06,
+      "actual": 0.0344,
+      "surprise_pct": -42.67
     }
   ],
   "insiders": [

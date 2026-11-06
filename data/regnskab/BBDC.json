@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:58.240Z",
+  "updated_at": "2026-11-06T21:46:47.066Z",
   "source": "Yahoo Finance",
   "symbol": "BBDC",
   "summary": "Barings BDC, Inc. is a publicly traded Real Estate, externally managed investment company that has elected to be treated as a business development company under the Investment Company Act of 1940. It seeks to invest primarily in senior secured loans, first lien debt, unitranche, second lien debt, subordinated debt, equity co-investments and senior secured private debt investments in private middle-market companies that operate across a wide range of industries. It specializes in mezzanine, leveraged buyouts, management buyouts, ESOPs, change of control transactions, acquisition financings, growth financing, and recapitalizations in lower middle market, mature, and later stage companies. It invests in manufacturing and distribution; business services and technology; transportation and logistics; consumer product and services. It invests in United States. It invests in companies with EBITDA of $10 million to $75 million, typically in private equity sponsor backed. The firm prefers to invest in companies having maximum revenue of $200 million and having EBITDA value between $10 million and $75 million.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-06",
-  "eps_estimate": 0.26167,
+  "eps_estimate": 0.25167,
   "analysts": {
     "strong_buy": 1,
     "buy": 3,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 72404000,
-      "earnings": 23550000
-    },
-    {
       "q": "4Q2025",
       "revenue": 67969000,
       "earnings": 25238000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 65202000,
       "earnings": 18331000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 64294000,
+      "earnings": 24630000
     }
   ],
   "growth": {
-    "q0": -0.1823,
-    "q1": -0.0679,
+    "q0": -0.0679,
+    "q1": 0.026700001,
     "y0": -0.0714,
     "y1": -0.0224
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.715,
-    "enterprise_value": 2276110336,
+    "enterprise_value": 2258310144,
     "ev_ebitda": null,
-    "ev_revenue": 8.552,
+    "ev_revenue": 8.485,
     "float_shares": null,
     "short_shares": 2557016,
     "short_pct_float": 2.83,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-09-02",
   "dividend_date": null,
   "payout_ratio": 1.2683,
-  "inst_count": 231,
+  "inst_count": 234,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.274,
-      "actual": 0.32,
-      "surprise_pct": 16.79
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.262,
@@ -269,6 +263,12 @@
       "estimate": 0.245,
       "actual": 0.28,
       "surprise_pct": 14.29
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.26167,
+      "actual": 0.26,
+      "surprise_pct": -0.64
     }
   ],
   "insiders": [

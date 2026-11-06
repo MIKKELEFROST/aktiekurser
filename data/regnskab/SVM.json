@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:15:00.228Z",
+  "updated_at": "2026-11-06T21:46:49.508Z",
   "source": "Yahoo Finance",
   "symbol": "SVM",
   "summary": "Silvercorp Metals Inc., together with its subsidiaries, acquires, explores, develops, and mines mineral properties in China. It explores for copper, silver, gold, lead, and zinc metals. The company was formerly known as SKN Resources Ltd. and changed its name to Silvercorp Metals Inc. in May 2005. Silvercorp Metals Inc. was founded in 2003 and is headquartered in Vancouver, Canada.",
@@ -9,8 +9,8 @@
   "ceo": "Dr. Rui  Feng Ph.D.",
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
-  "earnings_call": null,
-  "eps_estimate": 0.07667,
+  "earnings_call": "2026-11-06",
+  "eps_estimate": 0.23,
   "analysts": {
     "strong_buy": 1,
     "buy": 4,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 83330000,
-      "earnings": -11516000
-    },
-    {
       "q": "4Q2025",
       "revenue": 126112000,
       "earnings": -15832000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 138665000,
       "earnings": 59375000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 72097000,
+      "earnings": 11504000
     }
   ],
   "growth": {
-    "q0": -0.2333,
-    "q1": 0.045500003,
+    "q0": 0.045500003,
+    "q1": -0.074099995,
     "y0": 0.0696,
     "y1": 0.9411
   },
@@ -230,11 +230,11 @@
     "net_pct": null
   },
   "extras": {
-    "beta": 2.049,
-    "enterprise_value": 1838938496,
-    "ev_ebitda": 5.949,
-    "ev_revenue": 3.712,
-    "float_shares": 189478688,
+    "beta": null,
+    "enterprise_value": 1779250560,
+    "ev_ebitda": 5.976,
+    "ev_revenue": 3.674,
+    "float_shares": 189481869,
     "short_shares": 27462343,
     "short_pct_float": 12.87,
     "short_ratio": 15.3,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-06-05",
   "dividend_date": null,
   "payout_ratio": 0.22729999,
-  "inst_count": 314,
+  "inst_count": 315,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.1,
-      "actual": 0.1,
-      "surprise_pct": 0
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.085,
@@ -269,6 +263,12 @@
       "estimate": 0.23333,
       "actual": 0.21,
       "surprise_pct": -10
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.07667,
+      "actual": 0.07,
+      "surprise_pct": -8.7
     }
   ],
   "insiders": [

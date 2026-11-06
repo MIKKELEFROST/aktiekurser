@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:15:00.301Z",
+  "updated_at": "2026-11-06T21:46:49.607Z",
   "source": "Yahoo Finance",
   "symbol": "TNDM",
   "summary": "Tandem Diabetes Care, Inc. designs, develops, and commercializes technology solutions for people living with diabetes in the United States and internationally. It's flagship products are the t:slim X2 insulin delivery system; and Tandem Mobi insulin pump, an automated insulin delivery system. The company also sells single-use products, including cartridges for storing and delivering insulin, and infusion sets that connect the insulin pump to the user's body. In addition, it offers Tandem Device Updater used to update the pump software from a personal computer; Tandem Source, a web-based data management platform, which provides a visual way to display diabetes therapy management data from the pumps, integrated CGMs; and Sugarmate, a mobile app used to help people visualize diabetes therapy data. The company has collaboration agreement with the University of Virginia Center for Diabetes Technology for research and development of fully automated closed-loop insulin delivery systems. The company was formerly known as Phluid Inc. and changed its name to Tandem Diabetes Care, Inc. in January 2008. Tandem Diabetes Care, Inc. was incorporated in 2006 and is headquartered in San Diego, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": -0.2402,
+  "eps_estimate": 0.17934,
   "analysts": {
     "strong_buy": 2,
     "buy": 11,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 249253000,
-      "earnings": -21165000
-    },
-    {
       "q": "4Q2025",
       "revenue": 290383000,
       "earnings": -589000
@@ -69,15 +64,34 @@
       "q": "2Q2026",
       "revenue": 254560000,
       "earnings": -21168000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 283690000,
+      "earnings": -7085000
     }
   ],
   "growth": {
-    "q0": 0.2252,
-    "q1": 18.934,
+    "q0": 18.934,
+    "q1": 0.6296,
     "y0": 0.7427,
     "y1": 1.2394
   },
   "ratings": [
+    {
+      "date": "2026-11-06",
+      "firm": "Barclays",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-06",
+      "firm": "Wells Fargo",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-10-07",
       "firm": "Barclays",
@@ -133,20 +147,6 @@
       "from": "Buy",
       "to": "Hold",
       "action": "init"
-    },
-    {
-      "date": "2026-06-01",
-      "firm": "Wells Fargo",
-      "from": "Equal-Weight",
-      "to": "Overweight",
-      "action": "up"
-    },
-    {
-      "date": "2026-05-28",
-      "firm": "Citigroup",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
     }
   ],
   "holders": [
@@ -227,14 +227,14 @@
     "sells": 1,
     "bought": 245673,
     "sold": 1700,
-    "net_pct": 42.7
+    "net_pct": 42.5
   },
   "extras": {
-    "beta": 1.595,
-    "enterprise_value": 1608731392,
-    "ev_ebitda": -64.264,
-    "ev_revenue": 1.545,
-    "float_shares": 63757057,
+    "beta": null,
+    "enterprise_value": 1549052288,
+    "ev_ebitda": 233.01,
+    "ev_revenue": 1.44,
+    "float_shares": 63954195,
     "short_shares": 15086560,
     "short_pct_float": 29.04,
     "short_ratio": 6.27,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 372,
+  "inst_count": 374,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.34036,
-      "actual": -0.31,
-      "surprise_pct": 8.92
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.08976,
@@ -269,6 +263,12 @@
       "estimate": -0.31876,
       "actual": -0.31,
       "surprise_pct": 2.75
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.2402,
+      "actual": -0.1,
+      "surprise_pct": 58.37
     }
   ],
   "insiders": [

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:59.140Z",
+  "updated_at": "2026-11-06T21:46:48.090Z",
   "source": "Yahoo Finance",
   "symbol": "HNST",
   "summary": "The Honest Company, Inc. a personal care company, provides personal care products for babies and adults. It offers wipes, personal care, diapers, and beauty products. In addition, it sells its products through retailers and websites, and third-party ecommerce sites. The Honest Company, Inc. was incorporated in 2011 and is headquartered in Los Angeles, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.00023,
+  "eps_estimate": 0.00658,
   "analysts": {
     "strong_buy": 0,
     "buy": 4,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 92571000,
-      "earnings": 758000
-    },
-    {
       "q": "4Q2025",
       "revenue": 88037000,
       "earnings": -23570000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 83303000,
       "earnings": 10687000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 84613000,
+      "earnings": 91319000
     }
   ],
   "growth": {
-    "q0": -0.96709996,
-    "q1": 0.19639999,
+    "q0": 0.19639999,
+    "q1": 1.5424,
     "y0": 0.23719999,
     "y1": -0.0222
   },
   "ratings": [
+    {
+      "date": "2026-11-06",
+      "firm": "B. Riley Securities",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "reit"
+    },
     {
       "date": "2026-08-13",
       "firm": "Morgan Stanley",
@@ -139,13 +146,6 @@
       "firm": "Morgan Stanley",
       "from": "Equal-Weight",
       "to": "Equal-Weight",
-      "action": "main"
-    },
-    {
-      "date": "2025-11-06",
-      "firm": "Telsey Advisory Group",
-      "from": "Market Perform",
-      "to": "Market Perform",
       "action": "main"
     }
   ],
@@ -230,11 +230,11 @@
     "net_pct": 2.9
   },
   "extras": {
-    "beta": 2.471,
-    "enterprise_value": 379951648,
-    "ev_ebitda": 48.5,
-    "ev_revenue": 1.111,
-    "float_shares": 96638550,
+    "beta": null,
+    "enterprise_value": 382707136,
+    "ev_ebitda": 28.317,
+    "ev_revenue": 1.146,
+    "float_shares": 98260241,
     "short_shares": 9461313,
     "short_pct_float": 9.64,
     "short_ratio": 6.04,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 202,
+  "inst_count": 206,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.00034,
-      "actual": 0.007,
-      "surprise_pct": 2158.82
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.01768,
@@ -269,6 +263,12 @@
       "estimate": 0.01438,
       "actual": 0.1034,
       "surprise_pct": 619.05
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.00023,
+      "actual": 0.0272,
+      "surprise_pct": 11726.09
     }
   ],
   "insiders": [

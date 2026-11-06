@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:15:00.564Z",
+  "updated_at": "2026-11-06T21:46:48.617Z",
   "source": "Yahoo Finance",
   "symbol": "MC",
   "summary": "Moelis & Company operates as an investment banking advisory company in North and South America, Europe, the Middle East, Asia, and Australia. It offers advisory services in the areas of mergers and acquisitions, recapitalizations and restructurings, capital markets transactions, and other corporate finance matters, as well as strategic advisory, capital markets, capital structure advisory, and private capital advisory. The company serves public multinational corporations, middle market private companies, financial sponsors, entrepreneurs, governments, and sovereign wealth funds clients. Moelis & Company was founded in 2007 and is headquartered in New York, New York.",
@@ -7,10 +7,10 @@
   "website": "https://www.moelis.com",
   "employees": 1416,
   "ceo": "Mr. Navid  Mahmoodzadegan J.D.",
-  "next_earnings": "2026-11-05",
-  "earnings_estimated": false,
+  "next_earnings": "2027-02-03",
+  "earnings_estimated": true,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.72314,
+  "eps_estimate": 1.1876,
   "analysts": {
     "strong_buy": 2,
     "buy": 2,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 375984000,
-      "earnings": 53366000
-    },
-    {
       "q": "4Q2025",
       "revenue": 487935000,
       "earnings": 87865000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 409387000,
       "earnings": 48593000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 425577000,
+      "earnings": 58656000
     }
   ],
   "growth": {
-    "q0": 0.0634,
-    "q1": 0.051,
+    "q0": 0.051,
+    "q1": 0.7071,
     "y0": 0.0299,
     "y1": 0.2566
   },
@@ -230,11 +230,11 @@
     "net_pct": 0.2
   },
   "extras": {
-    "beta": 1.843,
-    "enterprise_value": 4735632896,
+    "beta": null,
+    "enterprise_value": null,
     "ev_ebitda": null,
-    "ev_revenue": 3.009,
-    "float_shares": 73304526,
+    "ev_revenue": null,
+    "float_shares": 72668055,
     "short_shares": 5039905,
     "short_pct_float": 7.72,
     "short_ratio": 5.04,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-08-10",
   "dividend_date": null,
   "payout_ratio": 0.90589994,
-  "inst_count": 518,
+  "inst_count": 516,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.59667,
-      "actual": 0.68,
-      "surprise_pct": 13.97
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.83458,
@@ -269,6 +263,12 @@
       "estimate": 0.61047,
       "actual": 0.63,
       "surprise_pct": 3.2
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.72314,
+      "actual": 0.75,
+      "surprise_pct": 3.71
     }
   ],
   "insiders": [

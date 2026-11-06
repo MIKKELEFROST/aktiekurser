@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:58.630Z",
+  "updated_at": "2026-11-06T21:46:47.561Z",
   "source": "Yahoo Finance",
   "symbol": "DIOD",
   "summary": "Diodes Incorporated, together with its subsidiaries, provides semiconductor products in Asia, the Americas, and Europe. The company offers MOSFET and SiC MOSFET discrete semiconductor products; data line protection, power line protection, thyrister, USB Type-C protection, and transient voltage suppressor protection devices; Schottky diodes, small signal switching diodes, Zener diodes, and SiC diodes; and bridges, super barrier rectifiers, Schottky rectifiers, Schottky bridge rectifiers, and fast and ultra-fast rectifiers. It also provides avalanche transistors, gate driver transistors, and pre-bias transistors; power management devices, such as AC-DC and DC-DC converters, digital isolators and isolated gate drivers, USB power switches, low dropout, photocoupler, and linear voltage regulators; standard linear devices, such as operational amplifiers and comparators, current monitors, voltage references, and reset generators; LED lighting drivers; audio amplifiers; and sensor products, including Hall-effect sensors and motor drivers. In addition, the company offers mixed-signal products comprising high speed mux/demux, digital switches, interface, redrivers, universal level shifters/voltage translators, clock ICs, and packet switches; low-voltage complementary metal-oxide-semiconductor (CMOS) and CMOS devices, as well as ultra-low power CMOS logic and analog switches; and multichip products, co-packaged discrete, analog, and mixed-signal silicon in miniature packages. Further, it provides silicon and silicon epitaxial wafers; frequency control products; and contact image sensors. The company serves industrial, automotive, computing, consumer, and communications end-markets through direct sales, marketing personnel, independent sales representatives, and distributors. Diodes Incorporated was incorporated in 1959 and is headquartered in Plano, Texas.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 1.0525,
+  "eps_estimate": 1.03,
   "analysts": {
     "strong_buy": 1,
     "buy": 3,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 392170000,
-      "earnings": 14278000
-    },
-    {
       "q": "4Q2025",
       "revenue": 391578000,
       "earnings": 10202000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 445529000,
       "earnings": 0
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 532587000,
+      "earnings": 43712000
     }
   ],
   "growth": {
-    "q0": 1.8446001,
-    "q1": 2.0294,
+    "q0": 2.0294,
+    "q1": 1.5291001,
     "y0": 1.6332,
     "y1": 0.72760004
   },
   "ratings": [
+    {
+      "date": "2026-11-06",
+      "firm": "Needham",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-23",
       "firm": "Needham",
@@ -139,13 +146,6 @@
       "firm": "Truist Securities",
       "from": "Hold",
       "to": "Hold",
-      "action": "main"
-    },
-    {
-      "date": "2025-06-13",
-      "firm": "Benchmark",
-      "from": "Buy",
-      "to": "Buy",
       "action": "main"
     }
   ],
@@ -230,11 +230,11 @@
     "net_pct": -3.6
   },
   "extras": {
-    "beta": 1.977,
-    "enterprise_value": 3378306560,
-    "ev_ebitda": 15.267,
-    "ev_revenue": 2.067,
-    "float_shares": 45123763,
+    "beta": null,
+    "enterprise_value": 3092271360,
+    "ev_ebitda": 11.42,
+    "ev_revenue": 1.742,
+    "float_shares": 44772286,
     "short_shares": 2560821,
     "short_pct_float": 9.44,
     "short_ratio": 4.96,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 561,
+  "inst_count": 567,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.38333,
-      "actual": 0.37,
-      "surprise_pct": -3.48
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.27333,
@@ -269,6 +263,12 @@
       "estimate": 0.605,
       "actual": 0.7,
       "surprise_pct": 15.7
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.0525,
+      "actual": 1.18,
+      "surprise_pct": 12.11
     }
   ],
   "insiders": [

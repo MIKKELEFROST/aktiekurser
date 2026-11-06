@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:58.299Z",
+  "updated_at": "2026-11-06T21:46:47.148Z",
   "source": "Yahoo Finance",
   "symbol": "BJRI",
   "summary": "BJ's Restaurants, Inc. operates full-service restaurants in the United States. Its restaurants offer pizzas, crafts and other beers, appetizers, entrées, wings, pastas, sandwiches, specialty salads, and Pizookie desserts. The company was formerly known as Chicago Pizza & Brewery, Inc. and changed its name to BJ's Restaurants, Inc. in August 2004. BJ's Restaurants, Inc. was founded in 1978 and is based in Huntington Beach, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.16769,
+  "eps_estimate": 0.7115,
   "analysts": {
     "strong_buy": 0,
     "buy": 5,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 330157000,
-      "earnings": 465000
-    },
-    {
       "q": "4Q2025",
       "revenue": 355399000,
       "earnings": 12643000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 388888000,
       "earnings": 18782000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 358625000,
+      "earnings": 5317000
     }
   ],
   "growth": {
-    "q0": 3.1923,
-    "q1": 0.078,
+    "q0": 0.078,
+    "q1": 0.25620002,
     "y0": 0.0508,
     "y1": 0.1427
   },
@@ -230,11 +230,11 @@
     "net_pct": 2.6
   },
   "extras": {
-    "beta": 1.453,
-    "enterprise_value": 1733891968,
-    "ev_ebitda": 13.434,
-    "ev_revenue": 1.21,
-    "float_shares": 20449832,
+    "beta": null,
+    "enterprise_value": null,
+    "ev_ebitda": null,
+    "ev_revenue": null,
+    "float_shares": 20376220,
     "short_shares": 2176556,
     "short_pct_float": 12.19,
     "short_ratio": 5.02,
@@ -244,14 +244,8 @@
   "ex_dividend": "2020-03-09",
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 299,
+  "inst_count": 304,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.02502,
-      "actual": 0.04,
-      "surprise_pct": 59.87
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.62418,
@@ -269,6 +263,12 @@
       "estimate": 0.89568,
       "actual": 0.94,
       "surprise_pct": 4.95
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.16769,
+      "actual": 0.33,
+      "surprise_pct": 96.79
     }
   ],
   "insiders": [

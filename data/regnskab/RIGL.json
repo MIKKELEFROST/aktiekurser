@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:59.999Z",
+  "updated_at": "2026-11-06T21:46:49.223Z",
   "source": "Yahoo Finance",
   "symbol": "RIGL",
   "summary": "Rigel Pharmaceuticals, Inc., a biotechnology company, develops and provides therapies that enhance the lives of patients with hematologic disorders and cancer in the United States. The company offers TAVALISSE, an oral spleen tyrosine kinase inhibitor for the treatment of adult patients with chronic immune thrombocytopenia; REZLIDHIA, a non-intensive monotherapy to treat adult patients with relapsed or refractory (R/R) acute myeloid leukemia (AML) with a susceptible isocitrate dehydrogenase-1 (IDH1) mutation as detected by an FDA-approved test; and GAVRETO, a once daily, small molecule, oral, kinase inhibitor for the treatment of adult patients with metastatic rearranged during transfection (RET) fusion-positive non-small cell lung cancer (NSCLC), as well as to treat adult and pediatric patients twelve years of age and older with advanced or metastatic RET fusion-positive thyroid cancer. It also develops R289, an oral interleukin receptor-associated kinases 1 and 4 (IRAK1/4) inhibitor, which is being advanced to Phase 1b study for the treatment of hematology-oncology, autoimmune, and inflammatory diseases, as well as to treat lower-risk myelodysplastic syndrome. The company has strategic development collaboration with The University of Texas MD Anderson Cancer Center (MDACC) for the development of olutasidenib in AML and other hematologic cancers with IDH1mutations; and the Collaborative Network for Neuro-Oncology Clinical Trial (CONNECT) to conduct a Phase 2 clinical trial to evaluate olutasidenib in combination with temozolomide in patients with high-grade glioma harboring an IDH1 mutation. Rigel Pharmaceuticals, Inc. was incorporated in 1996 and is headquartered in South San Francisco, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.96354,
+  "eps_estimate": 1.03921,
   "analysts": {
     "strong_buy": 0,
     "buy": 3,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 69462000,
-      "earnings": 27900000
-    },
-    {
       "q": "4Q2025",
       "revenue": 69802000,
       "earnings": 268065000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 78703000,
       "earnings": 17290000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 80890000,
+      "earnings": 13185000
     }
   ],
   "growth": {
-    "q0": -0.34,
-    "q1": -0.072,
+    "q0": -0.072,
+    "q1": 0.29549998,
     "y0": -0.449,
     "y1": 0.39419997
   },
   "ratings": [
+    {
+      "date": "2026-11-06",
+      "firm": "Cantor Fitzgerald",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-10-19",
       "firm": "HC Wainwright & Co.",
@@ -140,13 +147,6 @@
       "from": "Hold",
       "to": "Buy",
       "action": "up"
-    },
-    {
-      "date": "2025-11-05",
-      "firm": "Cantor Fitzgerald",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
     }
   ],
   "holders": [
@@ -227,14 +227,14 @@
     "sells": 2,
     "bought": 72631,
     "sold": 5000,
-    "net_pct": 12.1
+    "net_pct": 12
   },
   "extras": {
-    "beta": 1.239,
-    "enterprise_value": 902711232,
-    "ev_ebitda": 10.064,
-    "ev_revenue": 3.261,
-    "float_shares": 14839844,
+    "beta": null,
+    "enterprise_value": 769204992,
+    "ev_ebitda": 9.667,
+    "ev_revenue": 2.669,
+    "float_shares": 14959095,
     "short_shares": 2732739,
     "short_pct_float": 15.02,
     "short_ratio": 11.44,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 240,
+  "inst_count": 242,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.93572,
-      "actual": 1.46,
-      "surprise_pct": 56.03
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.20146,
@@ -269,6 +263,12 @@
       "estimate": -0.07542,
       "actual": 0.88,
       "surprise_pct": 1266.8
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.96354,
+      "actual": 0.65,
+      "surprise_pct": -32.54
     }
   ],
   "insiders": [

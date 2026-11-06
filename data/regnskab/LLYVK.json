@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:59.477Z",
+  "updated_at": "2026-11-06T21:46:48.533Z",
   "source": "Yahoo Finance",
   "symbol": "LLYVK",
   "summary": "Liberty Live Holdings, Inc. operates as a live entertainment company. It promotes live music events; manages artists and athletes, and engages in music venue operations. The company also sells tickets for events and third-party clients. In addition, it offers advertising services; and creates and maintains relationships with sponsors. Liberty Live Holdings, Inc. is headquartered in Englewood, Colorado.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-11",
-  "eps_estimate": 1.06,
+  "eps_estimate": -2.98,
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
@@ -39,11 +39,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 0,
-      "earnings": -53000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 134560000,
       "earnings": 178566000
@@ -57,11 +52,16 @@
       "q": "2Q2026",
       "revenue": 147059000,
       "earnings": -268663000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 105923000,
+      "earnings": 333841000
     }
   ],
   "growth": {
-    "q0": 2.2519999,
-    "q1": null,
+    "q0": null,
+    "q1": 0.3,
     "y0": null,
     "y1": 0.56049997
   },
@@ -147,11 +147,11 @@
     "net_pct": null
   },
   "extras": {
-    "beta": 0.969,
-    "enterprise_value": 11777411072,
-    "ev_ebitda": -503.933,
-    "ev_revenue": 28.939,
-    "float_shares": 60047309,
+    "beta": null,
+    "enterprise_value": 11453929472,
+    "ev_ebitda": -631.036,
+    "ev_revenue": 25.388,
+    "float_shares": 60047383,
     "short_shares": 1742398,
     "short_pct_float": 3.59,
     "short_ratio": 5.75,
@@ -164,12 +164,6 @@
   "inst_count": 401,
   "eps_history": [
     {
-      "quarter": "2025-09-30",
-      "estimate": 1.17,
-      "actual": -0.84667,
-      "surprise_pct": -172.36
-    },
-    {
       "quarter": "2026-03-31",
       "estimate": -0.13,
       "actual": -3.2,
@@ -180,6 +174,12 @@
       "estimate": 0.42,
       "actual": -2.92,
       "surprise_pct": -795.24
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.06,
+      "actual": 3.6,
+      "surprise_pct": 239.62
     }
   ],
   "insiders": [

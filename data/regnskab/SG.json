@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:15:00.103Z",
+  "updated_at": "2026-11-06T21:46:49.351Z",
   "source": "Yahoo Finance",
   "symbol": "SG",
   "summary": "Sweetgreen, Inc., together with its subsidiaries, operates fast food restaurants serving healthy food and beverages in the United States. It accepts orders through its online and mobile ordering platforms, as well as sells gift cards that do not have an expiration date and can be redeemed. The company was founded in 2006 and is headquartered in Los Angeles, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": -0.25074,
+  "eps_estimate": -0.24702,
   "analysts": {
     "strong_buy": 2,
     "buy": 4,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 172393000,
-      "earnings": -36146000
-    },
-    {
       "q": "4Q2025",
       "revenue": 155194000,
       "earnings": -49722000
@@ -69,15 +64,55 @@
       "q": "2Q2026",
       "revenue": 192662000,
       "earnings": -26270000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 176018000,
+      "earnings": -30748000
     }
   ],
   "growth": {
-    "q0": -0.39450002,
-    "q1": 0.0225,
+    "q0": 0.0225,
+    "q1": 0.177,
     "y0": 0.71800005,
     "y1": -2.7833
   },
   "ratings": [
+    {
+      "date": "2026-11-06",
+      "firm": "DA Davidson",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-06",
+      "firm": "Oppenheimer",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-06",
+      "firm": "Keybanc",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-06",
+      "firm": "Wells Fargo",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-06",
+      "firm": "TD Cowen",
+      "from": "Hold",
+      "to": "Hold",
+      "action": "main"
+    },
     {
       "date": "2026-10-28",
       "firm": "UBS",
@@ -111,41 +146,6 @@
       "firm": "Morgan Stanley",
       "from": "Equal-Weight",
       "to": "Equal-Weight",
-      "action": "main"
-    },
-    {
-      "date": "2026-09-29",
-      "firm": "RBC Capital",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-09-28",
-      "firm": "Wells Fargo",
-      "from": "Equal-Weight",
-      "to": "Overweight",
-      "action": "up"
-    },
-    {
-      "date": "2026-09-11",
-      "firm": "TD Cowen",
-      "from": "Hold",
-      "to": "Hold",
-      "action": "main"
-    },
-    {
-      "date": "2026-09-08",
-      "firm": "Keybanc",
-      "from": "Sector Weight",
-      "to": "Overweight",
-      "action": "up"
-    },
-    {
-      "date": "2026-08-10",
-      "firm": "DA Davidson",
-      "from": "Neutral",
-      "to": "Neutral",
       "action": "main"
     }
   ],
@@ -230,11 +230,11 @@
     "net_pct": 3
   },
   "extras": {
-    "beta": 2.119,
-    "enterprise_value": 1617451520,
-    "ev_ebitda": -27.211,
-    "ev_revenue": 2.372,
-    "float_shares": 103338575,
+    "beta": null,
+    "enterprise_value": 1606843264,
+    "ev_ebitda": -23.448,
+    "ev_revenue": 2.344,
+    "float_shares": 103463421,
     "short_shares": 24099323,
     "short_pct_float": 25.76,
     "short_ratio": 4.77,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 318,
+  "inst_count": 317,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.105,
-      "actual": -0.1798,
-      "surprise_pct": -71.24
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.2475,
@@ -269,6 +263,12 @@
       "estimate": -0.11999,
       "actual": -0.1496,
       "surprise_pct": -24.68
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.25074,
+      "actual": -0.20328,
+      "surprise_pct": 18.93
     }
   ],
   "insiders": [

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:59.315Z",
+  "updated_at": "2026-11-06T21:46:48.319Z",
   "source": "Yahoo Finance",
   "symbol": "KFRC",
   "summary": "Kforce Inc. provides professional staffing services and solutions in the United States. It operates through two segments, Technology, and Finance and Accounting (FA). The Technology segment provides talent solutions to its clients in disciplines, such as systems and applications architecture and development; data management and analytics; cloud architecture and engineering; business and artificial intelligence; machine learning; project and program management; and network architecture and security. This segment serves clients in the financial and business services, communications, insurance, retail, and technology industries. Its FA segment offers talent solutions to its clients in finance and accounting roles, including financial planning and analysis, business intelligence analysis, general accounting, transactional accounting, business and cost analysis, and taxation and treasury, as well as consultants in mortgage servicing, customer and call center support, data entry, and other administrative roles. This segment serves clients in various industries, including financial and business services, healthcare, and manufacturing sectors. The company was founded in 1962 and is headquartered in Tampa, Florida.",
@@ -172,13 +172,6 @@
       "date": "2026-06-30"
     },
     {
-      "name": "New South Capital Management Inc",
-      "kind": "institution",
-      "pct": 3.5,
-      "shares": 625981,
-      "date": "2026-06-30"
-    },
-    {
       "name": "American Century Companies Inc",
       "kind": "institution",
       "pct": 2.95,
@@ -219,22 +212,29 @@
       "pct": 2.65,
       "shares": 474872,
       "date": "2026-09-30"
+    },
+    {
+      "name": "iShares Trust-iShares Russell 2000 ETF",
+      "kind": "fond",
+      "pct": 2.46,
+      "shares": 440232,
+      "date": "2026-09-30"
     }
   ],
   "insider_net": {
     "period": "6m",
     "buys": 3,
-    "sells": 2,
+    "sells": 3,
     "bought": 10310,
-    "sold": 7000,
-    "net_pct": 0.3
+    "sold": 10000,
+    "net_pct": 0
   },
   "extras": {
     "beta": 0.921,
-    "enterprise_value": 1098352384,
-    "ev_ebitda": 17.076,
-    "ev_revenue": 0.802,
-    "float_shares": 15406127,
+    "enterprise_value": 1055111616,
+    "ev_ebitda": 16.404,
+    "ev_revenue": 0.77,
+    "float_shares": 15421211,
     "short_shares": 1479602,
     "short_pct_float": 10.12,
     "short_ratio": 7.02,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-12-04",
   "dividend_date": null,
   "payout_ratio": 0.6681,
-  "inst_count": 342,
+  "inst_count": 344,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "DUNKEL DAVID L",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 58.10 - 59.10 per share.",
+      "value": 174925,
+      "shares": 3000,
+      "date": "2026-11-04"
+    },
     {
       "name": "DUNKEL DAVID L",
       "role": "Director",
@@ -352,15 +361,6 @@
       "value": 7410,
       "shares": 284,
       "date": "2026-03-20"
-    },
-    {
-      "name": "KELLY DAVID M",
-      "role": "Chief Operating Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 48027,
-      "date": "2025-12-31"
     }
   ],
   "dividends": [

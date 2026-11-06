@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:59.735Z",
+  "updated_at": "2026-11-06T21:46:48.915Z",
   "source": "Yahoo Finance",
   "symbol": "NVAX",
   "summary": "Novavax, Inc., a biotechnology company, engages in the discovery, development, and commercialization of vaccines to prevent serious infectious diseases in the United States, Europe, and internationally. The company commercializes Nuvaxovid, a COVID-19 vaccine; and R21 Matrix-M adjuvant malaria vaccine. It has license and collaboration agreements with Sanofi, Pfizer Inc., Takeda Pharmaceutical Company Limited, and Serum Life Sciences Limited for the to develop, manufacture, and commercialize the COVID-19 vaccine. The company was incorporated in 1987 and is headquartered in Gaithersburg, Maryland.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": -0.42,
+  "eps_estimate": -0.15,
   "analysts": {
     "strong_buy": 0,
     "buy": 5,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.1149,
-    "q1": -2.3525999,
+    "q0": -2.3525999,
+    "q1": null,
     "y0": -1.1442,
     "y1": 0.65269995
   },
   "ratings": [
+    {
+      "date": "2026-11-06",
+      "firm": "B. Riley Securities",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "reit"
+    },
     {
       "date": "2026-10-15",
       "firm": "Citigroup",
@@ -140,13 +147,6 @@
       "from": null,
       "to": "Overweight",
       "action": "init"
-    },
-    {
-      "date": "2025-10-23",
-      "firm": "HC Wainwright & Co.",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
     }
   ],
   "holders": [
@@ -190,7 +190,7 @@
       "kind": "institution",
       "pct": 4.17,
       "shares": 6880481,
-      "date": "2026-06-30"
+      "date": "2026-09-30"
     },
     {
       "name": "Shaw D.E. & Co., Inc.",
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 2.72,
-    "enterprise_value": 1334651008,
-    "ev_ebitda": -13.143,
-    "ev_revenue": 3.225,
+    "enterprise_value": 1191148160,
+    "ev_ebitda": -11.729,
+    "ev_revenue": 2.879,
     "float_shares": 146211190,
     "short_shares": 47348523,
     "short_pct_float": 28.89,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 347,
+  "inst_count": 348,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -1.16814,
-      "actual": -1.25,
-      "surprise_pct": -7.01
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.48933,
@@ -269,9 +263,24 @@
       "estimate": -0.38361,
       "actual": -0.32,
       "surprise_pct": 16.58
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.34595,
+      "actual": -0.19,
+      "surprise_pct": 45.08
     }
   ],
   "insiders": [
+    {
+      "name": "DOUGLAS RICHARD H",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 18880,
+      "date": "2026-06-18"
+    },
     {
       "name": "RODGERS RICHARD J.",
       "role": "Director",
@@ -301,15 +310,6 @@
     },
     {
       "name": "MCGLYNN MARGARET G",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 18880,
-      "date": "2026-06-18"
-    },
-    {
-      "name": "DOUGLAS RICHARD H",
       "role": "Director",
       "kind": "other",
       "text": null,

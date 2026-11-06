@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:59.856Z",
+  "updated_at": "2026-11-06T21:46:49.022Z",
   "source": "Yahoo Finance",
   "symbol": "PCTY",
   "summary": "Paylocity Holding Corporation provides cloud-based human capital management, finance, and IT software solutions in the United States. The company offers payroll solutions comprising payroll and tax services, global payroll, on-demand payment, garnishments, and elevate payroll; human resources (HR) solutions consisting of human resources, employee self-service, workflows and documents, HR compliance dashboard, and elevate HR and HR edge; time and labor solutions, including time and attendance, scheduling, and time collection; and talent solutions, such as recruiting, onboarding, learning, performance, compensation, and market pay. It also provides benefits solutions comprising benefit enrollment and updates, third-party administrative solutions, and retirement; employee experiences consisting of community, video, employee voice, recognition and rewards, data insights, and reporting; and Paylocity for finance solutions, such as headcount planning, expense management, accounts payable automation, corporate cards, and guided procurement. In addition, the company offers Paylocity for IT which includes access management and identity, and asset management; and implementation and training, client services, and tax and regulatory services. It serves for-profit and non-profit organizations across industries, including business services, financial services, healthcare, manufacturing, restaurants, retail, technology, and others. The company markets and sells its products through sales representatives. Paylocity Holding Corporation was founded in 1997 and is headquartered in Schaumburg, Illinois.",
@@ -7,10 +7,10 @@
   "website": "https://www.paylocity.com",
   "employees": 6900,
   "ceo": "Mr. Toby J. Williams J.D.",
-  "next_earnings": "2026-11-05",
-  "earnings_estimated": false,
+  "next_earnings": "2027-02-04",
+  "earnings_estimated": true,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 1.89438,
+  "eps_estimate": 1.89235,
   "analysts": {
     "strong_buy": 3,
     "buy": 15,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 408172000,
-      "earnings": 47991000
-    },
-    {
       "q": "4Q2025",
       "revenue": 416134000,
       "earnings": 50197000
@@ -69,15 +64,41 @@
       "q": "2Q2026",
       "revenue": 444734000,
       "earnings": 60303000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 451669000,
+      "earnings": 57642000
     }
   ],
   "growth": {
-    "q0": 0.0825,
-    "q1": 0.0229,
+    "q0": 0.0229,
+    "q1": 0.0465,
     "y0": 0.0499,
     "y1": 0.1096
   },
   "ratings": [
+    {
+      "date": "2026-11-06",
+      "firm": "Barclays",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-06",
+      "firm": "Citizens",
+      "from": "Market Outperform",
+      "to": "Market Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-06",
+      "firm": "BTIG",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-30",
       "firm": "Cantor Fitzgerald",
@@ -125,27 +146,6 @@
       "firm": "Barclays",
       "from": "Equal-Weight",
       "to": "Equal-Weight",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-20",
-      "firm": "TD Cowen",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-06",
-      "firm": "Barclays",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-05",
-      "firm": "TD Cowen",
-      "from": "Buy",
-      "to": "Buy",
       "action": "main"
     }
   ],
@@ -230,13 +230,13 @@
     "net_pct": 1.4
   },
   "extras": {
-    "beta": 0.409,
-    "enterprise_value": 8931673088,
-    "ev_ebitda": 20.869,
-    "ev_revenue": 5.042,
-    "float_shares": 42688041,
+    "beta": null,
+    "enterprise_value": 8852149248,
+    "ev_ebitda": 20.19,
+    "ev_revenue": 4.878,
+    "float_shares": 42090920,
     "short_shares": 3003652,
-    "short_pct_float": 7.21,
+    "short_pct_float": 7.2,
     "short_ratio": 4.6,
     "last_split": null,
     "last_split_date": null
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 638,
+  "inst_count": 646,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.57226,
-      "actual": 1.75,
-      "surprise_pct": 11.3
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.59642,
@@ -269,6 +263,12 @@
       "estimate": 1.61139,
       "actual": 1.84,
       "surprise_pct": 14.19
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.89438,
+      "actual": 2.09,
+      "surprise_pct": 10.33
     }
   ],
   "insiders": [

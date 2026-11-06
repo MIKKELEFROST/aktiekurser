@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:59.245Z",
+  "updated_at": "2026-11-06T21:46:48.219Z",
   "source": "Yahoo Finance",
   "symbol": "IONQ",
   "summary": "IonQ, Inc. develops quantum computing systems in the United States, Switzerland, and Internationally. It sells access to quantum computers of various qubit capacities. The company also makes access to its quantum computers through cloud platforms, such as Amazon Web Services (AWS), Braket, Microsoft's Azure Quantum, and Google's Cloud Marketplace, as well as through its cloud service. The company engages in quantum-safe communications and quantum detection systems. It provides contracts associated with the design, development, construction, and sale of specialized quantum computing hardware systems; maintenance and support services; and consulting services related to co-developing algorithms on quantum computing systems. In addition, it provides semiconductor manufacturing services. The company has a collaboration agreement with University of Chicago. The company was founded in 2015 and is headquartered in College Park, Maryland.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": -0.33727,
+  "eps_estimate": -0.33818,
   "analysts": {
     "strong_buy": 1,
     "buy": 11,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 39866000,
-      "earnings": -1054955000
-    },
-    {
       "q": "4Q2025",
       "revenue": 61890000,
       "earnings": 753667000
@@ -69,15 +64,41 @@
       "q": "2Q2026",
       "revenue": 80050000,
       "earnings": -1867742000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 173831000,
+      "earnings": 563957000
     }
   ],
   "growth": {
-    "q0": -0.9839,
-    "q1": -0.69089997,
+    "q0": -0.69089997,
+    "q1": 0.0054,
     "y0": -1.1764,
     "y1": -0.0294
   },
   "ratings": [
+    {
+      "date": "2026-11-06",
+      "firm": "B. Riley Securities",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "reit"
+    },
+    {
+      "date": "2026-11-06",
+      "firm": "Cantor Fitzgerald",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-06",
+      "firm": "Needham",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-11-02",
       "firm": "B. Riley Securities",
@@ -126,27 +147,6 @@
       "from": "Outperform",
       "to": "Outperform",
       "action": "main"
-    },
-    {
-      "date": "2026-09-09",
-      "firm": "Rosenblatt",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-09-09",
-      "firm": "Needham",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "reit"
-    },
-    {
-      "date": "2026-09-09",
-      "firm": "Cantor Fitzgerald",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "reit"
     }
   ],
   "holders": [
@@ -227,14 +227,14 @@
     "sells": 5,
     "bought": 37483,
     "sold": 15509,
-    "net_pct": 0.9
+    "net_pct": 0.8
   },
   "extras": {
-    "beta": 3.409,
-    "enterprise_value": 9202708480,
-    "ev_ebitda": -11.604,
-    "ev_revenue": 37.337,
-    "float_shares": 378384828,
+    "beta": null,
+    "enterprise_value": 10531751936,
+    "ev_ebitda": -10.79,
+    "ev_revenue": 27.683,
+    "float_shares": 429491633,
     "short_shares": 47907371,
     "short_pct_float": 11.77,
     "short_ratio": 1.84,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 1033,
+  "inst_count": 1041,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.44,
-      "actual": -3.58,
-      "surprise_pct": -713.64
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.4725,
@@ -269,6 +263,12 @@
       "estimate": -0.59865,
       "actual": -5.08,
       "surprise_pct": -748.58
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.79,
+      "actual": 1.35,
+      "surprise_pct": 270.89
     }
   ],
   "insiders": [

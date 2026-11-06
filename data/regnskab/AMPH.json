@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:58.105Z",
+  "updated_at": "2026-11-06T21:46:46.880Z",
   "source": "Yahoo Finance",
   "symbol": "AMPH",
   "summary": "Amphastar Pharmaceuticals, Inc., a bio-pharmaceutical company, develops, manufactures, markets, and sells generic and proprietary injectable, inhalation, and intranasal products in the United States, China, and France. It offers BAQSIMI, a dry nasal spray used in an emergency for the treatment of severe hypoglycemia; Primatene MIST, an epinephrine inhalation product for the temporary relief of mild symptoms of intermittent asthma; Glucagon for injection emergency kit; Enoxaparin, an injectable form of low molecular weight heparin for the prevention and treatment of deep vein thrombosis; and REXTOVY and Naloxone for opioid overdose. The company also provides Cortrosyn, a lyophilized power for use as a diagnostic agent in the screening of patients with adrenocortical insufficiency; Amphadase, a bovine-sourced hyaluronidase injection; Epinephrine injection for allergic reactions; Lidocaine jelly, an anesthetic product for urological procedures; Lidocaine topical solution for various procedures; Phytonadione injection, a vitamin K1 injection for newborn babies; and emergency syringe products, including atropine, calcium chloride, dextrose, epinephrine, lidocaine, and sodium bicarbonate. In addition, it offers Albuterol sulfate inhalation aerosol for the treatment or prevention of bronchospasm; Iron sucrose injection, an iron replacement product for the treatment of iron deficiency anemia in patients with chronic kidney disease; Teriparatide injection for managing daily osteoporosis therapy; and Ipratropium Bromide HFA inhalation aerosol, an anticholinergic indicated for the maintenance treatment of bronchospasm associated with chronic obstructive pulmonary disease. Further, the company provides active pharmaceutical ingredient (API) products, such as Recombinant Human Insulin and porcine insulin API. The company was founded in 1996 and is headquartered in Rancho Cucamonga, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.85867,
+  "eps_estimate": 0.79426,
   "analysts": {
     "strong_buy": 0,
     "buy": 0,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 191800000,
-      "earnings": 17350000
-    },
-    {
       "q": "4Q2025",
       "revenue": 183105000,
       "earnings": 24429000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 183903000,
       "earnings": 30348000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 207608000,
+      "earnings": 37763000
     }
   ],
   "growth": {
-    "q0": -0.0767,
-    "q1": 0.088,
+    "q0": 0.088,
+    "q1": 0.6976,
     "y0": -0.0887,
     "y1": 0.0709
   },
   "ratings": [
+    {
+      "date": "2026-11-06",
+      "firm": "Wells Fargo",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
     {
       "date": "2026-08-18",
       "firm": "Barclays",
@@ -140,13 +147,6 @@
       "from": "Buy",
       "to": "Hold",
       "action": "down"
-    },
-    {
-      "date": "2026-04-08",
-      "firm": "Barclays",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
-      "action": "main"
     }
   ],
   "holders": [
@@ -230,11 +230,11 @@
     "net_pct": 0.3
   },
   "extras": {
-    "beta": 0.938,
-    "enterprise_value": 1590112128,
-    "ev_ebitda": 8.175,
-    "ev_revenue": 2.178,
-    "float_shares": 31293039,
+    "beta": null,
+    "enterprise_value": 1640813568,
+    "ev_ebitda": 7.41,
+    "ev_revenue": 2.2,
+    "float_shares": 31377057,
     "short_shares": 4333767,
     "short_pct_float": 22.2,
     "short_ratio": 8.22,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 309,
+  "inst_count": 310,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.82534,
-      "actual": 0.93,
-      "surprise_pct": 12.68
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.91822,
@@ -269,6 +263,12 @@
       "estimate": 0.61378,
       "actual": 0.91,
       "surprise_pct": 48.26
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.85867,
+      "actual": 1.14,
+      "surprise_pct": 32.76
     }
   ],
   "insiders": [

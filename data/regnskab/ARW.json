@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:58.161Z",
+  "updated_at": "2026-11-06T21:46:46.957Z",
   "source": "Yahoo Finance",
   "symbol": "ARW",
   "summary": "Arrow Electronics, Inc. sources and engineers technology for manufacturers, service providers, and users of enterprise computing solutions in the Americas, Europe, the Middle East, Africa, and the Asia Pacific. It operates in two segments, Global Components and Global Enterprise Computing Solutions. The Global Components segment markets and distributes electronic components, including semiconductor products and related services; interconnect, passive, and electromechanical products comprising capacitors, resistors, potentiometers, power supplies, relays, switches, and connectors; and computing and memory products, as well as other products and services. Its Global Enterprise Computing Solutions segment offers computing solutions, such as datacenter, cloud, security, and analytics solutions, as well as engineering and integration support, warehousing and logistics, marketing resources, and authorized hardware and software training services. The company serves original equipment manufacturers, value-added resellers, managed service providers, contract manufacturers, and other commercial customers. Arrow Electronics, Inc. was founded in 1935 and is based in Centennial, Colorado.",
@@ -7,10 +7,10 @@
   "website": "https://www.arrow.com",
   "employees": 22230,
   "ceo": "Mr. William F. Austen",
-  "next_earnings": "2026-11-05",
-  "earnings_estimated": false,
+  "next_earnings": "2027-02-04",
+  "earnings_estimated": true,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 4.965,
+  "eps_estimate": 5.995,
   "analysts": {
     "strong_buy": 1,
     "buy": 1,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 1.0602,
-    "q1": 0.36560002,
+    "q0": 0.36560002,
+    "q1": 0.0402,
     "y0": 0.9632,
     "y1": 0.1058
   },
   "ratings": [
+    {
+      "date": "2026-11-06",
+      "firm": "Truist Securities",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-08-07",
       "firm": "Wells Fargo",
@@ -139,13 +146,6 @@
       "firm": "Wells Fargo",
       "from": "Underweight",
       "to": "Underweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-02-06",
-      "firm": "Truist Securities",
-      "from": "Hold",
-      "to": "Hold",
       "action": "main"
     }
   ],
@@ -231,10 +231,10 @@
   },
   "extras": {
     "beta": 1.213,
-    "enterprise_value": 12314614784,
-    "ev_ebitda": 8.374,
-    "ev_revenue": 0.343,
-    "float_shares": 50528214,
+    "enterprise_value": 11561726976,
+    "ev_ebitda": 6.831,
+    "ev_revenue": 0.297,
+    "float_shares": 50182879,
     "short_shares": 1330123,
     "short_pct_float": 3,
     "short_ratio": 2.55,
@@ -244,14 +244,8 @@
   "ex_dividend": "1986-12-17",
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 857,
+  "inst_count": 858,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 2.2925,
-      "actual": 2.41,
-      "surprise_pct": 5.13
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 3.565,
@@ -269,6 +263,12 @@
       "estimate": 4.46,
       "actual": 5.45,
       "surprise_pct": 22.2
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 4.965,
+      "actual": 6.22,
+      "surprise_pct": 25.28
     }
   ],
   "insiders": [
@@ -284,19 +284,19 @@
     {
       "name": "ZECH GRETCHEN K.",
       "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 228.36 - 228.92 per share.",
-      "value": 4783499,
-      "shares": 20931,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 81.05 per share.",
+      "value": 1161528,
+      "shares": 14331,
       "date": "2026-06-02"
     },
     {
       "name": "ZECH GRETCHEN K.",
       "role": "Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 81.05 per share.",
-      "value": 1161528,
-      "shares": 14331,
+      "kind": "sell",
+      "text": "Sale at price 228.36 - 228.92 per share.",
+      "value": 4783499,
+      "shares": 20931,
       "date": "2026-06-02"
     },
     {

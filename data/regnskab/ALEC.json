@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:58.069Z",
+  "updated_at": "2026-11-06T21:46:46.837Z",
   "source": "Yahoo Finance",
   "symbol": "ALEC",
   "summary": "Alector, Inc., a clinical stage biotechnology company, develops therapies to counteract the progression of neurodegeneration in the United States. Its pipeline includes Nivisnebart, an investigational human recombinant monoclonal antibody for treating prevalent neurodegenerative diseases; AL137, an anti-amyloid beta antibody paired in preclinical development for the potential treatment of Alzheimer's disease; and AL050, a GCase enzyme replacement therapy in preclinical development for the potential treatment of Parkinson's disease and Lewy body dementia in patients having GBA1 gene mutations. The company also develops its preclinical and research pipeline comprising AL064, a tau siRNA for Alzheimer's disease and other tauopathies; ADP062-ABC, an alpha-synuclein siRNA for Parkinson's disease; and ADP065-ABC, an NLRP3 siRNA for neurodegenerative conditions. It has a strategic collaboration agreement with GlaxoSmithKline plc for the development and commercialization of progranulin-elevating monoclonal antibodies, including Latozinemab and Nivisnebart. The company was founded in 2013 and is headquartered in South San Francisco, California.",
@@ -8,9 +8,9 @@
   "employees": 103,
   "ceo": "Dr. Arnon  Rosenthal Ph.D.",
   "next_earnings": "2026-11-05",
-  "earnings_estimated": true,
+  "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": 0.062,
+  "eps_estimate": 0.21,
   "analysts": {
     "strong_buy": 0,
     "buy": 3,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 3260000,
-      "earnings": -34667000
-    },
-    {
       "q": "4Q2025",
       "revenue": 6237000,
       "earnings": -37267000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 3320000,
       "earnings": -22990000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 162866000,
+      "earnings": 124600000
     }
   ],
   "growth": {
-    "q0": 1.1824,
-    "q1": 1.6176,
+    "q0": 1.6176,
+    "q1": 0.0952,
     "y0": 0.91940004,
     "y1": -5.5536
   },
@@ -227,14 +227,14 @@
     "sells": 6,
     "bought": 1281733,
     "sold": 227063,
-    "net_pct": 14.7
+    "net_pct": 10.6
   },
   "extras": {
-    "beta": 0.613,
-    "enterprise_value": 114537776,
-    "ev_ebitda": -0.962,
-    "ev_revenue": 8.262,
-    "float_shares": 76277308,
+    "beta": null,
+    "enterprise_value": 193456080,
+    "ev_ebitda": 4.588,
+    "ev_revenue": 1.115,
+    "float_shares": 101703884,
     "short_shares": 10254239,
     "short_pct_float": 9.73,
     "short_ratio": 1.72,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 186,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.41286,
-      "actual": -0.34,
-      "surprise_pct": 17.65
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.36333,
@@ -269,6 +263,12 @@
       "estimate": -0.22833,
       "actual": -0.21,
       "surprise_pct": 8.03
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.062,
+      "actual": 1.11,
+      "surprise_pct": 1690.32
     }
   ],
   "insiders": [
@@ -282,21 +282,21 @@
       "date": "2026-09-04"
     },
     {
-      "name": "ROSENTHAL ARNON",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 2.66 per share.",
-      "value": 193473,
-      "shares": 72606,
-      "date": "2026-09-03"
-    },
-    {
       "name": "BERKLEY NEIL LINDSAY",
       "role": "Chief Financial Officer",
       "kind": "sell",
       "text": "Sale at price 2.66 per share.",
       "value": 77948,
       "shares": 29251,
+      "date": "2026-09-03"
+    },
+    {
+      "name": "ROSENTHAL ARNON",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 2.66 per share.",
+      "value": 193473,
+      "shares": 72606,
       "date": "2026-09-03"
     },
     {
@@ -316,15 +316,6 @@
       "value": 0,
       "shares": 20000,
       "date": "2026-07-09"
-    },
-    {
-      "name": "YAFFE KRISTINE",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 28700,
-      "date": "2026-06-17"
     },
     {
       "name": "HAMMOND PAULA",
@@ -355,6 +346,15 @@
     },
     {
       "name": "DESOUZA ERROL B",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 28700,
+      "date": "2026-06-17"
+    },
+    {
+      "name": "SCHELLER RICHARD H",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

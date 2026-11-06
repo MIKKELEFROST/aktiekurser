@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:15:00.326Z",
+  "updated_at": "2026-11-06T21:46:49.643Z",
   "source": "Yahoo Finance",
   "symbol": "TRUP",
   "summary": "Trupanion, Inc., together with its subsidiaries, provides medical insurance for cats and dogs on subscription basis in the United States, Canada, and Continental Europe. The company operates in two segments, Subscription Business and Other Business. It serves pet owners and veterinarians. The company was formerly known as Vetinsurance International, Inc. and changed its name to Trupanion, Inc. in 2013. Trupanion, Inc. was founded in 2000 and is headquartered in Seattle, Washington.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 1.01,
+  "eps_estimate": 1.12,
   "analysts": {
     "strong_buy": 0,
     "buy": 2,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 366920000,
-      "earnings": 5873000
-    },
-    {
       "q": "4Q2025",
       "revenue": 376853000,
       "earnings": 5630000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 392934000,
       "earnings": 6831000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 405593000,
+      "earnings": 9282000
     }
   ],
   "growth": {
-    "q0": 0.317,
-    "q1": null,
+    "q0": null,
+    "q1": 0.2759,
     "y0": 0.4664,
     "y1": 0.0545
   },
@@ -169,7 +169,7 @@
       "kind": "institution",
       "pct": 8.29,
       "shares": 3636364,
-      "date": "2026-06-30"
+      "date": "2026-09-30"
     },
     {
       "name": "iShares Trust-iShares Core S&P Small-Cap ETF",
@@ -230,11 +230,11 @@
     "net_pct": 1.4
   },
   "extras": {
-    "beta": 1.304,
-    "enterprise_value": 1185828224,
-    "ev_ebitda": 29.108,
-    "ev_revenue": 0.78,
-    "float_shares": 33498932,
+    "beta": null,
+    "enterprise_value": 1209828096,
+    "ev_ebitda": 27.372,
+    "ev_revenue": 0.776,
+    "float_shares": 33035702,
     "short_shares": 3676788,
     "short_pct_float": 10.1,
     "short_ratio": 8.36,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 290,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.89,
-      "actual": 0.7669,
-      "surprise_pct": -13.83
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.16167,
@@ -269,6 +263,12 @@
       "estimate": 0.94,
       "actual": 0.8591,
       "surprise_pct": -8.61
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.01,
+      "actual": 0.9084,
+      "surprise_pct": -10.06
     }
   ],
   "insiders": [

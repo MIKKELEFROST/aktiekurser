@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:58.480Z",
+  "updated_at": "2026-11-06T21:46:47.380Z",
   "source": "Yahoo Finance",
   "symbol": "CLNE",
   "summary": "Clean Energy Fuels Corp. offers natural gas as alternative fuels for vehicle fleets and related fueling solutions in the United States and Canada. It supplies renewable natural gas (RNG), compressed natural gas (CNG), and liquefied natural gas (LNG) for medium and heavy-duty vehicles; and provides operation and maintenance services for public and private vehicle fleet customer stations. The company also designs, builds, operates, and maintains vehicle fueling stations; and sells and services compressors and other equipment that are used in RNG production and fueling stations. In addition, it transports and sells CNG, RNG, and LNG through virtual natural gas pipelines and interconnects; sells U.S. federal, state, and local government credits, such as RNG as a vehicle fuel, including Renewable Identification Numbers and Low Carbon Fuel Standards credits; and obtains federal, state, and local credits, grants, and incentives. Further, the company focuses on developing, owning, and operating dairy and other livestock waste RNG projects. It serves heavy-duty trucking, airports, refuse, public transit, industrial, and institutional energy users, as well as government fleets. The company was incorporated in 2001 and is headquartered in Newport Beach, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": -0.04,
+  "eps_estimate": -0.03333,
   "analysts": {
     "strong_buy": 0,
     "buy": 4,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 106137000,
-      "earnings": -23819000
-    },
-    {
       "q": "4Q2025",
       "revenue": 112319000,
       "earnings": -42998000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 106359000,
       "earnings": -14853000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 112179000,
+      "earnings": -5729000
     }
   ],
   "growth": {
     "q0": 0,
-    "q1": 0,
+    "q1": -1.6669999,
     "y0": -10.25,
     "y1": 0.5405
   },
@@ -230,11 +230,11 @@
     "net_pct": 1.2
   },
   "extras": {
-    "beta": 1.851,
-    "enterprise_value": 536035680,
-    "ev_ebitda": 38.553,
-    "ev_revenue": 1.212,
-    "float_shares": 174149357,
+    "beta": null,
+    "enterprise_value": 503222144,
+    "ev_ebitda": 20.72,
+    "ev_revenue": 1.122,
+    "float_shares": 174189730,
     "short_shares": 5813774,
     "short_pct_float": 3.52,
     "short_ratio": 3.8,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 256,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.04,
-      "actual": 0,
-      "surprise_pct": 100
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.03679,
@@ -269,6 +263,12 @@
       "estimate": -0.01,
       "actual": -0.01,
       "surprise_pct": 0
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.04,
+      "actual": 0.03,
+      "surprise_pct": 175
     }
   ],
   "insiders": [

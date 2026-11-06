@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:59.608Z",
+  "updated_at": "2026-11-06T21:46:48.742Z",
   "source": "Yahoo Finance",
   "symbol": "MSIF",
   "summary": "MSC Income Fund, Inc. is a Business Development Company specializing in middle market debt and debt and equity investments in lower middle market companies. The fund seeks to invest in management buyouts, recapitalizations, growth financings, refinancing and acquisitions of companies. It invests in companies with revenue between $10 million and $150 million.",
@@ -10,7 +10,7 @@
   "next_earnings": null,
   "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": 0.35118,
+  "eps_estimate": 0.35803,
   "analysts": {
     "strong_buy": 3,
     "buy": 3,
@@ -45,11 +45,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 35367000,
-      "earnings": 26529000
-    },
-    {
       "q": "4Q2025",
       "revenue": 34916000,
       "earnings": 30035000
@@ -63,11 +58,16 @@
       "q": "2Q2026",
       "revenue": 35700000,
       "earnings": 29272000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 35529000,
+      "earnings": 18146000
     }
   ],
   "growth": {
-    "q0": 0.0034,
-    "q1": 0.2787,
+    "q0": 0.2787,
+    "q1": 0,
     "y0": 0.0216,
     "y1": 0.0545
   },
@@ -225,9 +225,9 @@
   },
   "extras": {
     "beta": 0.76,
-    "enterprise_value": 1192685184,
+    "enterprise_value": 1188604032,
     "ev_ebitda": null,
-    "ev_revenue": 8.515,
+    "ev_revenue": 8.486,
     "float_shares": null,
     "short_shares": 443202,
     "short_pct_float": 0.98,
@@ -238,14 +238,8 @@
   "ex_dividend": "2026-12-02",
   "dividend_date": null,
   "payout_ratio": 0.554,
-  "inst_count": 181,
+  "inst_count": 182,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.35981,
-      "actual": 0.35,
-      "surprise_pct": -2.73
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.35013,
@@ -263,6 +257,12 @@
       "estimate": 0.36119,
       "actual": 0.33,
       "surprise_pct": -8.64
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.35118,
+      "actual": 0.34,
+      "surprise_pct": -3.18
     }
   ],
   "insiders": [

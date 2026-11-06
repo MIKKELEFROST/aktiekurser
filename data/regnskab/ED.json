@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:58.777Z",
+  "updated_at": "2026-11-06T21:46:47.634Z",
   "source": "Yahoo Finance",
   "symbol": "ED",
   "summary": "Consolidated Edison, Inc., through its subsidiaries, engages in the regulated electric, gas, and steam delivery businesses in the United States. The company offers electric services to approximately 3.7 million customers in New York City and Westchester County; gas to approximately 1.1 million customers in Manhattan, the Bronx, parts of Queens, and Westchester County; and steam to approximately 1,490 customers in parts of Manhattan. It also supplies electricity to approximately 0.3 million customers in southeastern New York and northern New Jersey; and gas to approximately 0.1 million customers in southeastern New York. In addition, the company operates 552 circuit miles of transmission lines; 16 transmission substations; 63 distribution substations; 89,675 in-service line transformers; 3,764 pole miles of overhead distribution lines; and 2,417 miles of underground distribution lines, as well as 4,374 miles of mains and 379, 939 service lines for natural gas distribution. Further, it invests in electric and gas transmission projects. The company primarily sells electricity to industrial, commercial, residential, and government customers. Consolidated Edison, Inc. was founded in 1823 and is based in New York, New York.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": 2.03013,
+  "eps_estimate": 1.04025,
   "analysts": {
     "strong_buy": 0,
     "buy": 3,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 4530000000,
-      "earnings": 688000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 3995000000,
       "earnings": 297000000
@@ -69,15 +64,34 @@
       "q": "2Q2026",
       "revenue": 4069000000,
       "earnings": 308000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 4913000000,
+      "earnings": 766000000
     }
   ],
   "growth": {
-    "q0": 0.0685,
-    "q1": 0.1688,
+    "q0": 0.1688,
+    "q1": 0.056799997,
     "y0": 0.0716,
     "y1": 0.0633
   },
   "ratings": [
+    {
+      "date": "2026-11-06",
+      "firm": "Barclays",
+      "from": "Underweight",
+      "to": "Underweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-06",
+      "firm": "Wells Fargo",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-10-22",
       "firm": "HSBC",
@@ -133,20 +147,6 @@
       "from": "Underweight",
       "to": "Underweight",
       "action": "main"
-    },
-    {
-      "date": "2026-07-23",
-      "firm": "Keybanc",
-      "from": "Underweight",
-      "to": "Underweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-06-02",
-      "firm": "Mizuho",
-      "from": "Outperform",
-      "to": "Neutral",
-      "action": "down"
     }
   ],
   "holders": [
@@ -230,11 +230,11 @@
     "net_pct": null
   },
   "extras": {
-    "beta": 0.223,
-    "enterprise_value": 71340384256,
-    "ev_ebitda": 11.577,
-    "ev_revenue": 4.033,
-    "float_shares": 369307175,
+    "beta": null,
+    "enterprise_value": 72959483904,
+    "ev_ebitda": 11.247,
+    "ev_revenue": 4.037,
+    "float_shares": 370610461,
     "short_shares": 12366786,
     "short_pct_float": 4.24,
     "short_ratio": 5.42,
@@ -243,15 +243,9 @@
   },
   "ex_dividend": "2026-11-18",
   "dividend_date": null,
-  "payout_ratio": 0.5725,
-  "inst_count": 1864,
+  "payout_ratio": 0.56380004,
+  "inst_count": 1866,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.75466,
-      "actual": 1.9,
-      "surprise_pct": 8.28
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.86039,
@@ -269,6 +263,12 @@
       "estimate": 0.77304,
       "actual": 0.83,
       "surprise_pct": 7.37
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 2.03013,
+      "actual": 2.07,
+      "surprise_pct": 1.96
     }
   ],
   "insiders": [

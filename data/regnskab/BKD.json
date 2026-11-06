@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:58.302Z",
+  "updated_at": "2026-11-06T21:46:47.147Z",
   "source": "Yahoo Finance",
   "symbol": "BKD",
   "summary": "Brookdale Senior Living Inc. owns, manages, and operates senior living communities in the United States. It operates in three segments: Independent Living, Assisted Living and Memory Care, and Continuing Care Retirement Communities (CCRCs). The Independent Living segment owns or leases communities comprising independent and assisted living units in a single community that are primarily designed for middle to upper income seniors. The Assisted Living and Memory Care segment owns or leases communities consisting of freestanding, multi-story communities and freestanding single-story communities, which offer housing and 24-hour assistance with activities of daily living for the Company's residents. This segment operates memory care communities for residents with Alzheimer's and other dementias. The CCRCs segment owns or leases communities that provides various living arrangements, such as independent and assisted living, memory care, and skilled nursing; and services to accommodate various levels of physical ability and healthcare needs. It manages communities on behalf of others. The company was incorporated in 2005 and is headquartered in Brentwood, Tennessee.",
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 813165000,
-      "earnings": -114726000
-    },
-    {
       "q": "4Q2025",
       "revenue": 754093000,
       "earnings": -39963000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 718583000,
       "earnings": 23268000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 712068000,
+      "earnings": -13906000
     }
   ],
   "growth": {
-    "q0": 0.89879996,
-    "q1": 0.8615,
+    "q0": 0.8615,
+    "q1": null,
     "y0": 0.1682,
     "y1": 1.1944001
   },
@@ -172,18 +172,18 @@
       "date": "2026-06-30"
     },
     {
-      "name": "Antipodes Partners Ltd.",
-      "kind": "institution",
-      "pct": 4.64,
-      "shares": 11091757,
-      "date": "2026-06-30"
-    },
-    {
       "name": "Vanguard Portfolio Management LLC",
       "kind": "institution",
       "pct": 4.53,
       "shares": 10817723,
       "date": "2026-06-30"
+    },
+    {
+      "name": "Antipodes Partners Ltd.",
+      "kind": "institution",
+      "pct": 4.28,
+      "shares": 10226971,
+      "date": "2026-09-30"
     },
     {
       "name": "Vanguard Capital Management LLC",
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.532,
-    "enterprise_value": 7773987328,
-    "ev_ebitda": 16.722,
-    "ev_revenue": 2.651,
+    "enterprise_value": 7683247616,
+    "ev_ebitda": 16.527,
+    "ev_revenue": 2.62,
     "float_shares": 235516923,
     "short_shares": 45639717,
     "short_pct_float": 19.25,
@@ -244,14 +244,8 @@
   "ex_dividend": "2008-10-08",
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 396,
+  "inst_count": 398,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.185,
-      "actual": -0.1976,
-      "surprise_pct": -6.81
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.175,
@@ -269,6 +263,12 @@
       "estimate": -0.04,
       "actual": -0.0212,
       "surprise_pct": 47
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.02,
+      "actual": -0.0246,
+      "surprise_pct": -23
     }
   ],
   "insiders": [

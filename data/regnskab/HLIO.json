@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:59.131Z",
+  "updated_at": "2026-11-06T21:46:48.078Z",
   "source": "Yahoo Finance",
   "symbol": "HLIO",
   "summary": "Helios Technologies, Inc., together with its subsidiaries, provides engineered motion control and electronic controls technology solutions in the Americas, Europe, the Middle East, Africa, and the Asia Pacific. It operates through two segments; Hydraulics and Electronics. The Hydraulics segment designs and manufactures hydraulic motion control and fluid conveyance technology products, including cartridge valves, manifolds, and quick release couplings, as well as engineers complete hydraulic system solutions. This segment sells its products under the Sun Hydraulics, Faster, NEM, Taimi, Daman, and Schultes brands. The Electronics segment designs and manufactures customized electronic controls systems, displays, wire harnesses, and software solutions. This segment sells its products under Enovation Controls, Murphy, Zero Off, HCT, Balboa Water Group, i3PD and Cygnus Reach and Joyonway brands. It markets and sells hydraulic products and engineered solutions through value-added distributors, as well as directly to original equipment manufacturers (OEMs); and electronic products to OEMs, distributors, and system integrators. It serves construction, material handling, agriculture, industrial, mobile, energy, recreational vehicles, marine, aerospace, and health and wellness sectors. The company was formerly known as Sun Hydraulics Corporation and changed its name to Helios Technologies, Inc. in June 2019. Helios Technologies, Inc. was incorporated in 1970 and is headquartered in Sarasota, Florida.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-06",
-  "eps_estimate": 0.75532,
+  "eps_estimate": 0.7421,
   "analysts": {
     "strong_buy": 2,
     "buy": 4,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 220300000,
-      "earnings": 10300000
-    },
-    {
       "q": "4Q2025",
       "revenue": 210700000,
       "earnings": 19500000
@@ -69,15 +64,34 @@
       "q": "2Q2026",
       "revenue": 231900000,
       "earnings": 21900000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 229700000,
+      "earnings": 17600000
     }
   ],
   "growth": {
-    "q0": 0.049099997,
-    "q1": -0.0838,
+    "q0": -0.0838,
+    "q1": 0.125,
     "y0": 0.24110001,
     "y1": 0.1157
   },
   "ratings": [
+    {
+      "date": "2026-11-06",
+      "firm": "Keybanc",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-06",
+      "firm": "Baird",
+      "from": "Outperform",
+      "to": "Neutral",
+      "action": "down"
+    },
     {
       "date": "2026-08-12",
       "firm": "Stifel",
@@ -132,20 +146,6 @@
       "firm": "Baird",
       "from": "Outperform",
       "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-05-12",
-      "firm": "Keybanc",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-04-14",
-      "firm": "Stifel",
-      "from": "Buy",
-      "to": "Buy",
       "action": "main"
     }
   ],
@@ -216,9 +216,9 @@
     {
       "name": "Thrivent Financial For Lutherans",
       "kind": "institution",
-      "pct": 2.79,
-      "shares": 918909,
-      "date": "2026-06-30"
+      "pct": 2.77,
+      "shares": 914199,
+      "date": "2026-09-30"
     }
   ],
   "insider_net": {
@@ -230,11 +230,11 @@
     "net_pct": 2.1
   },
   "extras": {
-    "beta": 1.306,
-    "enterprise_value": 2488641024,
-    "ev_ebitda": 14.14,
-    "ev_revenue": 2.792,
-    "float_shares": 32791426,
+    "beta": null,
+    "enterprise_value": 2224232704,
+    "ev_ebitda": 12.609,
+    "ev_revenue": 2.469,
+    "float_shares": 32614759,
     "short_shares": 1104675,
     "short_pct_float": 3.37,
     "short_ratio": 2.69,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-10-13",
   "dividend_date": null,
   "payout_ratio": 0.1402,
-  "inst_count": 375,
+  "inst_count": 378,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.656,
-      "actual": 0.72,
-      "surprise_pct": 9.76
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.71905,
@@ -269,6 +263,12 @@
       "estimate": 0.80326,
       "actual": 0.88,
       "surprise_pct": 9.55
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.75532,
+      "actual": 0.8,
+      "surprise_pct": 5.92
     }
   ],
   "insiders": [

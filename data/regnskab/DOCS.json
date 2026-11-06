@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:58.736Z",
+  "updated_at": "2026-11-06T21:46:47.584Z",
   "source": "Yahoo Finance",
   "symbol": "DOCS",
   "summary": "Doximity, Inc. operates a digital platform for medical professionals in the United States. Its Doximity platform includes a personalized newsfeed that presents clinical and professional content to members, which offers medical articles, clinical trials or research results in an easy-to-consume video format, professional updates and accomplishments of their peers and colleagues, clinical discussions, Op-Med articles for publication, and sponsored content from pharmaceutical manufacturers and health systems. The company also offers workflow tools, including Ask, a HIPAA-compliant AI assistant, to access and apply evidence-based medical information within clinical workflows; Scribe, a HIPAA-compliant, AI-powered clinical documentation tool; Telehealth tools for hospitals and health systems; and AMiON, an on-call scheduling tool. The company primarily serves physicians, nurse practitioners, physician assistants, medical students, pharmaceutical manufacturers, and healthcare systems. The company was formerly known as 3MD Communications, Inc. and changed its name to Doximity, Inc. in June 2010. Doximity, Inc. was incorporated in 2010 and is headquartered in San Francisco, California.",
@@ -7,10 +7,10 @@
   "website": "https://www.doximity.com",
   "employees": 880,
   "ceo": "Mr. Jeffrey A. Tangney",
-  "next_earnings": "2026-11-05",
-  "earnings_estimated": false,
+  "next_earnings": "2027-02-04",
+  "earnings_estimated": true,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.35021,
+  "eps_estimate": 0.41752,
   "analysts": {
     "strong_buy": 5,
     "buy": 3,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 168525000,
-      "earnings": 62059000
-    },
-    {
       "q": "4Q2025",
       "revenue": 185053000,
       "earnings": 61558000
@@ -69,15 +64,48 @@
       "q": "2Q2026",
       "revenue": 156618000,
       "earnings": 24315000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 174537000,
+      "earnings": 34730000
     }
   ],
   "growth": {
-    "q0": -0.2218,
-    "q1": -0.0923,
+    "q0": -0.0923,
+    "q1": 0.1374,
     "y0": -0.109799996,
     "y1": 0.1516
   },
   "ratings": [
+    {
+      "date": "2026-11-06",
+      "firm": "Canaccord Genuity",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-06",
+      "firm": "RBC Capital",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-06",
+      "firm": "Evercore ISI Group",
+      "from": "In-Line",
+      "to": "In-Line",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-06",
+      "firm": "Needham",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "reit"
+    },
     {
       "date": "2026-09-29",
       "firm": "Evercore ISI Group",
@@ -116,34 +144,6 @@
     {
       "date": "2026-08-07",
       "firm": "JP Morgan",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-07",
-      "firm": "Piper Sandler",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "reit"
-    },
-    {
-      "date": "2026-08-07",
-      "firm": "Evercore ISI Group",
-      "from": "In-Line",
-      "to": "In-Line",
-      "action": "main"
-    },
-    {
-      "date": "2026-06-29",
-      "firm": "B of A Securities",
-      "from": "Buy",
-      "to": "Underperform",
-      "action": "down"
-    },
-    {
-      "date": "2026-05-15",
-      "firm": "Goldman Sachs",
       "from": "Neutral",
       "to": "Neutral",
       "action": "main"
@@ -230,11 +230,11 @@
     "net_pct": 13.1
   },
   "extras": {
-    "beta": 1.291,
-    "enterprise_value": 5501671936,
-    "ev_ebitda": 26.399,
-    "ev_revenue": 8.392,
-    "float_shares": 123634977,
+    "beta": null,
+    "enterprise_value": 5224320512,
+    "ev_ebitda": 27.42,
+    "ev_revenue": 7.897,
+    "float_shares": 123931860,
     "short_shares": 9084487,
     "short_pct_float": 7.29,
     "short_ratio": 2.84,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 540,
+  "inst_count": 542,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.37911,
-      "actual": 0.45,
-      "surprise_pct": 18.7
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.44713,
@@ -269,6 +263,12 @@
       "estimate": 0.30268,
       "actual": 0.29,
       "surprise_pct": -4.19
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.35021,
+      "actual": 0.36,
+      "surprise_pct": 2.8
     }
   ],
   "insiders": [
@@ -354,7 +354,7 @@
       "date": "2026-09-01"
     },
     {
-      "name": "CABRAL TIMOTHY S",
+      "name": "WAMPLER KIRA SCHERER",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

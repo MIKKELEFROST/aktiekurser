@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:59.119Z",
+  "updated_at": "2026-11-06T21:46:48.058Z",
   "source": "Yahoo Finance",
   "symbol": "HEX.OL",
   "summary": "Hexagon Composites ASA, together with its subsidiaries, provides alternative fuel systems and solutions to commercial vehicles and gas distribution companies worldwide. The company operates in Hexagon Agility and Hexagon Digital Wave segments. It offers cylinder testing and monitoring technologies. The company was founded in 1985 and is headquartered in Ålesund, Norway.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-06",
   "earnings_estimated": false,
   "earnings_call": "2026-11-06",
-  "eps_estimate": -0.2,
+  "eps_estimate": -0.005,
   "analysts": {
     "strong_buy": 1,
     "buy": 3,
@@ -19,8 +19,8 @@
     "strong_sell": 0,
     "total": 4
   },
-  "target_mean": 20,
-  "target_high": 24,
+  "target_mean": 18.75,
+  "target_high": 20,
   "target_low": 16,
   "target_analysts": 4,
   "statements": [
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 537720000,
-      "earnings": -263566000
-    },
-    {
       "q": "4Q2025",
       "revenue": 831430000,
       "earnings": -87486000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 627000000,
       "earnings": -69883000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 929000000,
+      "earnings": -49423000
     }
   ],
   "growth": {
-    "q0": 0.6525,
-    "q1": 0.84519994,
+    "q0": 0.9903,
+    "q1": null,
     "y0": 0.746,
     "y1": 1.2102
   },
@@ -138,10 +138,10 @@
     "net_pct": null
   },
   "extras": {
-    "beta": 0.8,
-    "enterprise_value": 4295088640,
-    "ev_ebitda": 25.958,
-    "ev_revenue": 1.617,
+    "beta": 0.805,
+    "enterprise_value": 4169672960,
+    "ev_ebitda": 25.2,
+    "ev_revenue": 1.57,
     "float_shares": 210715191,
     "short_shares": null,
     "short_pct_float": null,
@@ -155,12 +155,6 @@
   "inst_count": 25,
   "eps_history": [
     {
-      "quarter": "2025-09-30",
-      "estimate": -0.795,
-      "actual": -0.5755,
-      "surprise_pct": 27.61
-    },
-    {
       "quarter": "2025-12-31",
       "estimate": -0.13,
       "actual": -0.51687,
@@ -171,13 +165,19 @@
       "estimate": -0.28,
       "actual": -0.06,
       "surprise_pct": 78.57
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.11,
+      "actual": -0.09,
+      "surprise_pct": 18.18
     }
   ],
   "insiders": [],
   "dividends": [
     {
       "date": "2010-05-07",
-      "amount": 0.2132
+      "amount": 0.2149
     },
     {
       "date": "2011-04-15",

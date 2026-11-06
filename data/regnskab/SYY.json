@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:15:00.244Z",
+  "updated_at": "2026-11-06T21:46:49.526Z",
   "source": "Yahoo Finance",
   "symbol": "SYY",
   "summary": "Sysco Corporation, through its subsidiaries, engages in the sale, marketing, and distribution of food and related products to restaurants, healthcare and educational facilities, lodging establishments, and other foodservice customers. It operates through U.S. Foodservice Operations, International Foodservice Operations, SYGMA, and Other segments. The company distributes frozen food, such as meats, seafood, fully prepared entrées, fruits, vegetables, and desserts; canned and dry food; fresh meats and seafood; dairy and beverage products; imported specialties; and fresh produce. It also supplies paper products, including disposable napkins, plates, and cups; tableware comprising glassware and silverware; cookware consisting of pots, pans, and utensils; restaurant and kitchen equipment and supplies; and cleaning supplies. The company operates in the United States, Canada, the United Kingdom, France, Sweden, and internationally. Sysco Corporation was incorporated in 1969 and is headquartered in Houston, Texas.",
@@ -10,7 +10,7 @@
   "next_earnings": "2027-02-02",
   "earnings_estimated": true,
   "earnings_call": "2026-11-03",
-  "eps_estimate": 1.05835,
+  "eps_estimate": 1.0559,
   "analysts": {
     "strong_buy": 2,
     "buy": 5,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 14
   },
-  "target_mean": 91.75,
+  "target_mean": 91.25,
   "target_high": 102,
   "target_low": 78,
   "target_analysts": 12,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.069,
-    "q1": 0.105399996,
-    "y0": 0.09729999,
-    "y1": 0.0585
+    "q0": 0.066599995,
+    "q1": 0.104499996,
+    "y0": 0.0967,
+    "y1": 0.0624
   },
   "ratings": [
+    {
+      "date": "2026-11-05",
+      "firm": "Citigroup",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-10-15",
       "firm": "Morgan Stanley",
@@ -140,27 +147,20 @@
       "from": "Overweight",
       "to": "Overweight",
       "action": "main"
-    },
-    {
-      "date": "2026-04-07",
-      "firm": "Piper Sandler",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
     }
   ],
   "holders": [
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 8.75,
+      "pct": 8.74,
       "shares": 43028910,
       "date": "2026-06-30"
     },
     {
       "name": "Vanguard Capital Management LLC",
       "kind": "institution",
-      "pct": 6.35,
+      "pct": 6.34,
       "shares": 31227007,
       "date": "2026-06-30"
     },
@@ -174,7 +174,7 @@
     {
       "name": "Vanguard Portfolio Management LLC",
       "kind": "institution",
-      "pct": 5.48,
+      "pct": 5.47,
       "shares": 26946494,
       "date": "2026-06-30"
     },
@@ -188,7 +188,7 @@
     {
       "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
       "kind": "fond",
-      "pct": 3.09,
+      "pct": 3.08,
       "shares": 15180954,
       "date": "2026-06-30"
     },
@@ -209,7 +209,7 @@
     {
       "name": "VANGUARD INDEX FUNDS-Vanguard Mid-Cap Index Fund",
       "kind": "fond",
-      "pct": 2.11,
+      "pct": 2.1,
       "shares": 10361884,
       "date": "2026-06-30"
     },
@@ -225,16 +225,16 @@
     "period": "6m",
     "buys": 26,
     "sells": 3,
-    "bought": 268683,
+    "bought": 270963,
     "sold": 15525,
-    "net_pct": 36.9
+    "net_pct": 37.2
   },
   "extras": {
     "beta": 0.647,
-    "enterprise_value": 50016894976,
-    "ev_ebitda": 11.056,
-    "ev_revenue": 0.587,
-    "float_shares": 490554936,
+    "enterprise_value": 49331449856,
+    "ev_ebitda": 10.904,
+    "ev_revenue": 0.579,
+    "float_shares": 490892398,
     "short_shares": 12300998,
     "short_pct_float": 2.86,
     "short_ratio": 2.65,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-10-02",
   "dividend_date": null,
   "payout_ratio": 0.5798,
-  "inst_count": 2097,
+  "inst_count": 2096,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "ONDROF THOMAS GERARD",
+      "role": "Director",
+      "kind": "buy",
+      "text": "Purchase at price 76.62 per share.",
+      "value": 191550,
+      "shares": 2500,
+      "date": "2026-11-04"
+    },
     {
       "name": "SEWELL BRANDON ELLIOT",
       "role": "Chief Financial Officer",
@@ -351,15 +360,6 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 6283,
-      "date": "2026-09-01"
-    },
-    {
-      "name": "GARRETT BRENNA C",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 10270,
       "date": "2026-09-01"
     }
   ],

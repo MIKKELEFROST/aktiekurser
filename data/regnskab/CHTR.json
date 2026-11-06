@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:58.462Z",
+  "updated_at": "2026-11-06T21:46:47.356Z",
   "source": "Yahoo Finance",
   "symbol": "CHTR",
   "summary": "Charter Communications, Inc. operates as a broadband connectivity company in the United States. The company offers subscription-based internet, mobile, video, and voice services; broadband connectivity services, including fixed internet, WiFi, and mobile; Spectrum internet products; advanced WiFi services; and in-home WiFi, which provides customers with high performance wireless routers and managed WiFi services to enhance their wireless internet experience. It also offers wireline voice communications services using voice over internet protocol technology; Call Guard, an advanced caller ID and robocall blocking solution; video programming and video services, including access to an interactive programming guide with parental controls, video on demand and pay-per-view services; and broadband communications solutions, such as internet access, data networking, fiber connectivity, video entertainment, and business telephone services. In addition, the company provides advertising services on cable television networks, various streaming services, and advertising platforms for local, regional and national businesses. Further, it offers production and technical services for regional sports networks; owns and manages local news channels, including Spectrum News NY1® and Spectrum News SoCal; and delivers broadband connectivity solutions to apartments, single-family gated communities, off-campus student housing, senior residences, and RV parks. The company was founded in 1993 and is headquartered in Stamford, Connecticut.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-06",
   "earnings_estimated": false,
   "earnings_call": "2026-11-06",
-  "eps_estimate": 8.845,
+  "eps_estimate": 13.77,
   "analysts": {
     "strong_buy": 0,
     "buy": 5,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 13672000000,
-      "earnings": 1137000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 13601000000,
       "earnings": 1332000000
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 13526000000,
       "earnings": 1292000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 14922000000,
+      "earnings": -2397000000
     }
   ],
   "growth": {
-    "q0": 0.060599998,
-    "q1": 0.33169997,
-    "y0": 0.1458,
-    "y1": 0.2178
+    "q0": 0.33169997,
+    "q1": 0.1745,
+    "y0": 0.1462,
+    "y1": 0.2175
   },
   "ratings": [
     {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.731,
-    "enterprise_value": 115493117952,
-    "ev_ebitda": 5.294,
-    "ev_revenue": 2.123,
+    "enterprise_value": 116162265088,
+    "ev_ebitda": 5.325,
+    "ev_revenue": 2.135,
     "float_shares": 115226829,
     "short_shares": 17430799,
     "short_pct_float": 43.85,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 1147,
+  "inst_count": 1149,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 9.29485,
-      "actual": 8.34,
-      "surprise_pct": -10.27
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 9.93393,
@@ -269,6 +263,12 @@
       "estimate": 10.06264,
       "actual": 10.66,
       "surprise_pct": 5.94
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 8.93302,
+      "actual": -20.5,
+      "surprise_pct": -329.49
     }
   ],
   "insiders": [
@@ -336,6 +336,15 @@
       "date": "2026-04-28"
     },
     {
+      "name": "NEWHOUSE MICHAEL A",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 918,
+      "date": "2026-04-21"
+    },
+    {
       "name": "PATTERSON MARTIN EDWARD",
       "role": "Director",
       "kind": "other",
@@ -351,15 +360,6 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 918,
-      "date": "2026-04-21"
-    },
-    {
-      "name": "GOODMAN KIM C",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 1407,
       "date": "2026-04-21"
     }
   ],

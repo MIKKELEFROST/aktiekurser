@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:59.520Z",
+  "updated_at": "2026-11-06T21:46:48.580Z",
   "source": "Yahoo Finance",
   "symbol": "LYFT",
   "summary": "Lyft, Inc. operates multimodal transportation networks that offer access to various transportation options through platform and mobile based applications in the United States and internationally. The company facilitates peer-to-peer ridesharing by connecting drivers who have vehicles with riders who need a ride. It also operates Lyft Platform that provides a marketplace where drivers can be matched with riders via the Lyft mobile application. The company's platform provides a ridesharing marketplace that connects drivers with riders; Express Drive, a car rental program for drivers; and a network of shared bikes and scooters in various cities to address the needs of riders for short trips. In addition, it offers licensing and data access agreements; sells bikes and bike station software and hardware; and provides advertising services. The company was formerly known as Zimride, Inc. and changed its name to Lyft, Inc. in April 2013. Lyft, Inc. was incorporated in 2007 and is headquartered in San Francisco, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.454,
+  "eps_estimate": 0.44111,
   "analysts": {
     "strong_buy": 4,
     "buy": 10,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 1685195000,
-      "earnings": 46074000
-    },
-    {
       "q": "4Q2025",
       "revenue": 1592700000,
       "earnings": 2755100000
@@ -69,15 +64,48 @@
       "q": "2Q2026",
       "revenue": 1843544000,
       "earnings": 50294000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1821822000,
+      "earnings": -9731000
     }
   ],
   "growth": {
-    "q0": 0.5185,
-    "q1": 0.2052,
+    "q0": 0.2052,
+    "q1": 0.65660006,
     "y0": 0.2018,
     "y1": 0.4362
   },
   "ratings": [
+    {
+      "date": "2026-11-06",
+      "firm": "Scotiabank",
+      "from": "Sector Perform",
+      "to": "Sector Perform",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-06",
+      "firm": "Truist Securities",
+      "from": "Hold",
+      "to": "Hold",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-06",
+      "firm": "Evercore ISI Group",
+      "from": "In-Line",
+      "to": "In-Line",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-06",
+      "firm": "Rosenblatt",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-11-02",
       "firm": "UBS",
@@ -119,34 +147,6 @@
       "from": null,
       "to": "Sector Perform",
       "action": "init"
-    },
-    {
-      "date": "2026-09-01",
-      "firm": "Rosenblatt",
-      "from": null,
-      "to": "Neutral",
-      "action": "init"
-    },
-    {
-      "date": "2026-08-10",
-      "firm": "Roth Capital",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "reit"
-    },
-    {
-      "date": "2026-08-10",
-      "firm": "Canaccord Genuity",
-      "from": "Hold",
-      "to": "Hold",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-07",
-      "firm": "UBS",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
     }
   ],
   "holders": [
@@ -230,11 +230,11 @@
     "net_pct": 9.9
   },
   "extras": {
-    "beta": 2.058,
-    "enterprise_value": 6591574016,
-    "ev_ebitda": 141.468,
-    "ev_revenue": 0.973,
-    "float_shares": 350691043,
+    "beta": null,
+    "enterprise_value": 6039749632,
+    "ev_ebitda": 588.727,
+    "ev_revenue": 0.874,
+    "float_shares": 351317079,
     "short_shares": 81464356,
     "short_pct_float": 21.71,
     "short_ratio": 8.53,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 677,
+  "inst_count": 675,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.07185,
-      "actual": 0.11,
-      "surprise_pct": 53.1
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.11808,
@@ -269,18 +263,15 @@
       "estimate": 0.1409,
       "actual": 0.13,
       "surprise_pct": -7.74
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.19576,
+      "actual": -0.03,
+      "surprise_pct": -115.32
     }
   ],
   "insiders": [
-    {
-      "name": "WHITESIDE JANEY",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 775,
-      "date": "2026-10-20"
-    },
     {
       "name": "STEPHENSON DAVID ELIOT",
       "role": "Director",
@@ -291,6 +282,15 @@
       "date": "2026-10-20"
     },
     {
+      "name": "WHITESIDE JANEY",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 775,
+      "date": "2026-10-20"
+    },
+    {
       "name": "LLEWELLYN LINDSAY CATHERINE",
       "role": "Officer",
       "kind": "sell",
@@ -298,15 +298,6 @@
       "value": 219711,
       "shares": 13204,
       "date": "2026-09-01"
-    },
-    {
-      "name": "BEGGS JILL",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 17.34 per share.",
-      "value": 40004,
-      "shares": 2307,
-      "date": "2026-08-27"
     },
     {
       "name": "LAWEE DAVID",
@@ -324,6 +315,15 @@
       "text": "Sale at price 17.34 per share.",
       "value": 103724,
       "shares": 5982,
+      "date": "2026-08-27"
+    },
+    {
+      "name": "BEGGS JILL",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 17.34 per share.",
+      "value": 40004,
+      "shares": 2307,
       "date": "2026-08-27"
     },
     {

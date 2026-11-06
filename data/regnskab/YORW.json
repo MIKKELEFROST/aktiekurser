@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:15:00.529Z",
+  "updated_at": "2026-11-06T21:46:49.929Z",
   "source": "Yahoo Finance",
   "symbol": "YORW",
   "summary": "The York Water Company impounds, purifies, and distributes drinking water. It owns and operates three wastewater collection systems; twelve wastewater collection and treatment systems; and two reservoirs, including Lake Williams and Lake Redman, which hold approximately 2.5 billion gallons of water. The company operates a 15-mile pipeline from the Susquehanna River to Lake Redman; and owns satellite groundwater systems in York, Adams, and Lancaster Counties, as well as two impounding dams on primary system located in York and Springfield Townships. It serves customers in the fixtures and furniture, electrical machinery, food products, paper, ordnance units, textile products, air conditioning systems, laundry detergents, barbells, and motorcycle industries in 58 municipalities within four counties in south-central Pennsylvania. The York Water Company was incorporated in 1816 and is based in York, Pennsylvania.",
@@ -7,8 +7,8 @@
   "website": "https://www.yorkwater.com",
   "employees": 129,
   "ceo": "Mr. Joseph Thomas Hand",
-  "next_earnings": "2026-11-05",
-  "earnings_estimated": true,
+  "next_earnings": "2026-11-06",
+  "earnings_estimated": false,
   "earnings_call": null,
   "eps_estimate": null,
   "analysts": {
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 19199000,
-      "earnings": 0
-    },
-    {
       "q": "3Q2025",
       "revenue": 20361000,
       "earnings": 0
@@ -69,6 +64,11 @@
       "q": "2Q2026",
       "revenue": 23515000,
       "earnings": 7615000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 24333000,
+      "earnings": 7809000
     }
   ],
   "growth": null,
@@ -204,17 +204,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 36,
+    "buys": 34,
     "sells": 1,
-    "bought": 9075,
+    "bought": 7947,
     "sold": 8000,
-    "net_pct": 0.7
+    "net_pct": 0
   },
   "extras": {
     "beta": 0.524,
-    "enterprise_value": 712982016,
-    "ev_ebitda": 15.668,
-    "ev_revenue": 8.547,
+    "enterprise_value": 712332864,
+    "ev_ebitda": 15.654,
+    "ev_revenue": 8.539,
     "float_shares": 14711696,
     "short_shares": 548129,
     "short_pct_float": 3.79,
@@ -225,14 +225,8 @@
   "ex_dividend": "2026-09-30",
   "dividend_date": null,
   "payout_ratio": 0.561,
-  "inst_count": 230,
+  "inst_count": 233,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.38,
-      "actual": 0.43,
-      "surprise_pct": 13.16
-    },
     {
       "quarter": "2026-03-31",
       "estimate": 0.31,
@@ -244,6 +238,12 @@
       "estimate": 0.4,
       "actual": 0.49,
       "surprise_pct": 22.5
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.5,
+      "actual": 0.48,
+      "surprise_pct": -4
     }
   ],
   "insiders": [
@@ -264,6 +264,24 @@
       "value": 40000,
       "shares": 1287,
       "date": "2026-10-20"
+    },
+    {
+      "name": "HAND JOSEPH THOMAS",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 29.16 per share.",
+      "value": 3500,
+      "shares": 120,
+      "date": "2026-10-16"
+    },
+    {
+      "name": "SNYDER MARK S",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 29.16 per share.",
+      "value": 350,
+      "shares": 12,
+      "date": "2026-10-16"
     },
     {
       "name": "POFF MATTHEW E",
@@ -290,24 +308,6 @@
       "text": "Stock Award(Grant) at price 29.16 per share.",
       "value": 3500,
       "shares": 120,
-      "date": "2026-10-16"
-    },
-    {
-      "name": "HAND JOSEPH THOMAS",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 29.16 per share.",
-      "value": 3500,
-      "shares": 120,
-      "date": "2026-10-16"
-    },
-    {
-      "name": "SNYDER MARK S",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 29.16 per share.",
-      "value": 350,
-      "shares": 12,
       "date": "2026-10-16"
     },
     {

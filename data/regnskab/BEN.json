@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:58.267Z",
+  "updated_at": "2026-11-06T21:46:47.093Z",
   "source": "Yahoo Finance",
   "symbol": "BEN",
   "summary": "Franklin Templeton Inc. is a publicly owned asset investment manager. Through its subsidiaries, the firm provides its services to individuals, institutions, pension plans, trusts, and partnerships. It launches equity, fixed income, balanced, and multi-asset mutual funds through its subsidiaries. The firm invests in the public equity, fixed income, and alternative markets. Franklin Resources, Inc. was founded in 1947 and is based in San Mateo, California with an additional office in Calgary, Alberta; Dubai, United Arab Emirates; Edinburgh, Midlothian; Fort Lauderdale, Florida; Hyderabad, India; London, Greater London; Rancho Cordova, California; Shanghai, Shanghai Province; Singapore; Stamford, Connecticut; and Vienna.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-06",
   "earnings_estimated": false,
   "earnings_call": "2026-11-06",
-  "eps_estimate": 0.77102,
+  "eps_estimate": 0.72984,
   "analysts": {
     "strong_buy": 0,
     "buy": 4,
@@ -24,12 +24,6 @@
   "target_low": 26,
   "target_analysts": 13,
   "statements": [
-    {
-      "year": "2022",
-      "revenue": 8275300000,
-      "net": 1291900000,
-      "margin": 15.6
-    },
     {
       "year": "2023",
       "revenue": 7849400000,
@@ -47,14 +41,15 @@
       "revenue": 8770700000,
       "net": 524900000,
       "margin": 6
+    },
+    {
+      "year": "2026",
+      "revenue": 9415300000,
+      "net": 1075300000,
+      "margin": 11.4
     }
   ],
   "quarterly": [
-    {
-      "q": "3Q2025",
-      "revenue": 2343700000,
-      "earnings": 117600000
-    },
     {
       "q": "4Q2025",
       "revenue": 2327100000,
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 2358400000,
       "earnings": 0
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 2434900000,
+      "earnings": 0
     }
   ],
   "growth": {
-    "q0": 0.1508,
-    "q1": 0.042600002,
-    "y0": 0.3075,
-    "y1": 0.0885
+    "q0": 0.042600002,
+    "q1": 0.0836,
+    "y0": 0.0291,
+    "y1": 0.1268
   },
   "ratings": [
     {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.602,
-    "enterprise_value": 20772864000,
-    "ev_ebitda": 11.546,
-    "ev_revenue": 2.228,
+    "enterprise_value": 19929456640,
+    "ev_ebitda": 11.077,
+    "ev_revenue": 2.137,
     "float_shares": 290137319,
     "short_shares": 17933593,
     "short_pct_float": 4.64,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-09-30",
   "dividend_date": null,
   "payout_ratio": 0.8912,
-  "inst_count": 921,
+  "inst_count": 922,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.58759,
-      "actual": 0.67,
-      "surprise_pct": 14.03
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.5489,
@@ -269,6 +263,12 @@
       "estimate": 0.66494,
       "actual": 0.72,
       "surprise_pct": 8.28
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.77102,
+      "actual": 0.94,
+      "surprise_pct": 21.92
     }
   ],
   "insiders": [

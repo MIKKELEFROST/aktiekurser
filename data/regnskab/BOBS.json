@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:58.328Z",
+  "updated_at": "2026-11-06T21:46:47.179Z",
   "source": "Yahoo Finance",
   "symbol": "BOBS",
   "summary": "Bob's Discount Furniture, Inc. engages in retailing home furnishings in the United States. It provides products in various categories, including upholstered living room furniture, bedroom, dining room, mattresses, and home decors. It sells its products through ecommerce channels. The company was formerly known as BDF Holding Corp. and changed its name to Bob's Discount Furniture, Inc. in October 2025. The company was founded in 1991 and is based in Manchester, Connecticut.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.26486,
+  "eps_estimate": 0.35683,
   "analysts": {
     "strong_buy": 4,
     "buy": 7,
@@ -52,15 +52,34 @@
       "q": "2Q2026",
       "revenue": 619570000,
       "earnings": 57797000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 680436000,
+      "earnings": 41650000
     }
   ],
   "growth": {
-    "q0": null,
-    "q1": 0.0195,
+    "q0": 0.0195,
+    "q1": 0.2917,
     "y0": -0.1313,
     "y1": 0.1432
   },
   "ratings": [
+    {
+      "date": "2026-11-06",
+      "firm": "RBC Capital",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-06",
+      "firm": "Evercore ISI Group",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
     {
       "date": "2026-10-13",
       "firm": "Evercore ISI Group",
@@ -116,20 +135,6 @@
       "from": "Outperform",
       "to": "Outperform",
       "action": "main"
-    },
-    {
-      "date": "2026-04-07",
-      "firm": "Evercore ISI Group",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-04-01",
-      "firm": "Craig-Hallum",
-      "from": null,
-      "to": "Buy",
-      "action": "init"
     }
   ],
   "holders": [
@@ -180,7 +185,7 @@
       "kind": "fond",
       "pct": 1.2,
       "shares": 1569800,
-      "date": "2026-08-31"
+      "date": "2026-09-30"
     },
     {
       "name": "Massachusetts Financial Services Co.",
@@ -246,6 +251,12 @@
       "estimate": 0.19954,
       "actual": 0.2,
       "surprise_pct": 0.23
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.26486,
+      "actual": 0.28,
+      "surprise_pct": 5.72
     }
   ],
   "insiders": [

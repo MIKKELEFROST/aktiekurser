@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:15:00.113Z",
+  "updated_at": "2026-11-06T21:46:49.362Z",
   "source": "Yahoo Finance",
   "symbol": "SHO",
   "summary": "Sunstone Hotel Investors, Inc. is a lodging real estate investment trust (REIT). Sunstone's strategy is to create long-term stakeholder value through the acquisition, active ownership, and disposition of well-located hotel and resort real estate. Sunstone Hotel Investors, Inc. was incorporated in 1995 and is based in Aliso Viejo, United States.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-06",
   "earnings_estimated": false,
   "earnings_call": "2026-11-06",
-  "eps_estimate": -0.015,
+  "eps_estimate": 0.005,
   "analysts": {
     "strong_buy": 0,
     "buy": 3,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 229323000,
-      "earnings": -2940000
-    },
-    {
       "q": "4Q2025",
       "revenue": 236966000,
       "earnings": 3232000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 277109000,
       "earnings": 25979000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 233718000,
+      "earnings": 38693000
     }
   ],
   "growth": {
-    "q0": 0.162,
-    "q1": -0.6795,
+    "q0": -0.6795,
+    "q1": -0.875,
     "y0": 1.6961,
     "y1": -0.2045
   },
@@ -223,17 +223,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 8,
+    "buys": 4,
     "sells": 1,
-    "bought": 186170,
+    "bought": 98936,
     "sold": 89631,
-    "net_pct": 3.4
+    "net_pct": 0.3
   },
   "extras": {
     "beta": 0.99,
-    "enterprise_value": 3540982784,
-    "ev_ebitda": 15.461,
-    "ev_revenue": 3.534,
+    "enterprise_value": 3418259712,
+    "ev_ebitda": 14.925,
+    "ev_revenue": 3.412,
     "float_shares": 183033918,
     "short_shares": 46301,
     "short_pct_float": 0.04,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-09-30",
   "dividend_date": null,
   "payout_ratio": 1.7142999,
-  "inst_count": 420,
+  "inst_count": 422,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.015,
-      "actual": -0.0179,
-      "surprise_pct": -19.33
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.04,
@@ -269,6 +263,12 @@
       "estimate": 0.82,
       "actual": 0.14,
       "surprise_pct": -82.93
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.015,
+      "actual": 0.21,
+      "surprise_pct": 1500
     }
   ],
   "insiders": [

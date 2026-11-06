@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-11-05T22:14:59.682Z",
+  "updated_at": "2026-11-06T21:46:48.839Z",
   "source": "Yahoo Finance",
   "symbol": "NKTX",
   "summary": "Nkarta, Inc., a clinical-stage biopharmaceutical company, develops and commercializes natural killer cell therapies for cancer and autoimmune disease treatment. Its lead product candidate is NKX019, a chimeric antigen receptor-natural killer (CAR NK) targeting the CD19 antigen, which is in Phase 1 clinical trial for the treatment of lupus nephritis; systemic sclerosis; idiopathic inflammatory myopathy; and antineutrophil cytoplasmic antibody (ANCA)-associated vasculitis, as well as for systemic lupus erythematosus and myasthenia gravis. The company has a research collaboration agreement with CRISPR Therapeutics AG. Nkarta, Inc. was incorporated in 2015 and is based in South San Francisco, California.",
   "industry": "Biotechnology",
   "website": "https://www.nkartatx.com",
-  "employees": 106,
+  "employees": 108,
   "ceo": "Mr. Paul J. Hastings",
   "next_earnings": "2026-11-10",
   "earnings_estimated": true,
   "earnings_call": null,
-  "eps_estimate": -0.38333,
+  "eps_estimate": -0.4,
   "analysts": {
     "strong_buy": 1,
     "buy": 6,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 0,
-      "earnings": -22977000
-    },
-    {
       "q": "3Q2025",
       "revenue": 0,
       "earnings": -21715000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 0,
       "earnings": -40368000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 0,
+      "earnings": -33326000
     }
   ],
   "growth": {
-    "q0": -0.3218,
-    "q1": -0.081099994,
+    "q0": -0.081099994,
+    "q1": null,
     "y0": -0.21040002,
     "y1": -0.0273
   },
@@ -190,7 +190,7 @@
       "kind": "institution",
       "pct": 4.4,
       "shares": 3150732,
-      "date": "2026-06-30"
+      "date": "2026-09-30"
     },
     {
       "name": "Monaco Asset Management SAM",
@@ -230,11 +230,11 @@
     "net_pct": null
   },
   "extras": {
-    "beta": 1.255,
-    "enterprise_value": 14685888,
-    "ev_ebitda": -0.129,
+    "beta": null,
+    "enterprise_value": 28004914,
+    "ev_ebitda": -0.224,
     "ev_revenue": null,
-    "float_shares": 60574518,
+    "float_shares": 60641849,
     "short_shares": 3423724,
     "short_pct_float": 5.98,
     "short_ratio": 5.19,
@@ -247,12 +247,6 @@
   "inst_count": 186,
   "eps_history": [
     {
-      "quarter": "2025-09-30",
-      "estimate": -0.30333,
-      "actual": -0.29,
-      "surprise_pct": 4.39
-    },
-    {
       "quarter": "2025-12-31",
       "estimate": -0.295,
       "actual": -0.37,
@@ -263,6 +257,12 @@
       "estimate": -0.36333,
       "actual": -0.54,
       "surprise_pct": -48.63
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.38333,
+      "actual": -0.45,
+      "surprise_pct": -17.39
     }
   ],
   "insiders": [
@@ -330,15 +330,6 @@
       "date": "2025-06-18"
     },
     {
-      "name": "HAGER ALICIA J",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 2.20 per share.",
-      "value": 21085,
-      "shares": 9584,
-      "date": "2025-01-15"
-    },
-    {
       "name": "BRANDENBERGER RALPH ERIK",
       "role": "Chief Technology Officer",
       "kind": "sell",
@@ -354,6 +345,15 @@
       "text": "Sale at price 2.20 per share.",
       "value": 19004,
       "shares": 8638,
+      "date": "2025-01-15"
+    },
+    {
+      "name": "LEVIN ALYSSA",
+      "role": "Chief Financial Officer",
+      "kind": "sell",
+      "text": "Sale at price 2.20 per share.",
+      "value": 12844,
+      "shares": 5838,
       "date": "2025-01-15"
     }
   ],

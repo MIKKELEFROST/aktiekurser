@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:58.357Z",
+  "updated_at": "2026-11-06T21:46:47.220Z",
   "source": "Yahoo Finance",
   "symbol": "BTG",
   "summary": "B2Gold Corp. operates as a gold producer company in Canada. The company operates the Fekola Mine in Mali; the Masbate Mine in the Philippines; the Otjikoto Mine in Namibia; the Goose Mine in Canada. It also owns 100% interest in the Gramalote gold project in Colombia. In addition, the company has a portfolio of other evaluation and exploration assets in Mali, Canada and Finland. The company was incorporated in 2006 and is headquartered in Vancouver, Canada.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.11946,
+  "eps_estimate": 0.18742,
   "analysts": {
     "strong_buy": 5,
     "buy": 6,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 782948000,
-      "earnings": 19313000
-    },
-    {
       "q": "4Q2025",
       "revenue": 1053977000,
       "earnings": 170584000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 789354000,
       "earnings": 417334000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 836466000,
+      "earnings": 408898000
     }
   ],
   "growth": {
-    "q0": -0.1467,
-    "q1": 0.70379996,
+    "q0": 0.70379996,
+    "q1": 0.15439999,
     "y0": 0.18120001,
     "y1": 0.6163
   },
@@ -231,10 +231,10 @@
   },
   "extras": {
     "beta": 1.358,
-    "enterprise_value": 6951058432,
-    "ev_ebitda": 3.349,
-    "ev_revenue": 1.837,
-    "float_shares": 1313577569,
+    "enterprise_value": 7227354112,
+    "ev_ebitda": 3.295,
+    "ev_revenue": 1.883,
+    "float_shares": 1309435772,
     "short_shares": 67240309,
     "short_pct_float": null,
     "short_ratio": 3.33,
@@ -243,15 +243,9 @@
   },
   "ex_dividend": "2026-09-10",
   "dividend_date": null,
-  "payout_ratio": 0.1455,
-  "inst_count": 453,
+  "payout_ratio": 0.097600006,
+  "inst_count": 452,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.12825,
-      "actual": 0.14,
-      "surprise_pct": 9.16
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.18083,
@@ -269,6 +263,12 @@
       "estimate": 0.073,
       "actual": 0.03,
       "surprise_pct": -58.9
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.12219,
+      "actual": 0.14,
+      "surprise_pct": 14.58
     }
   ],
   "insiders": [
@@ -280,6 +280,15 @@
       "value": 214306,
       "shares": 41500,
       "date": "2026-10-13"
+    },
+    {
+      "name": "Bartz, Eduard",
+      "role": "Senior Officer of Issuer",
+      "kind": "other",
+      "text": "Stock dividend at price 0.02 per share.",
+      "value": 1,
+      "shares": 78,
+      "date": "2026-10-01"
     },
     {
       "name": "Brown (Andrew Bruce)",
@@ -351,15 +360,6 @@
       "text": "Stock dividend at price 0.02 per share.",
       "value": null,
       "shares": 18,
-      "date": "2026-10-01"
-    },
-    {
-      "name": "Rajala (John Alex)",
-      "role": "Senior Officer of Issuer",
-      "kind": "other",
-      "text": "Stock dividend at price 0.02 per share.",
-      "value": 11,
-      "shares": 589,
       "date": "2026-10-01"
     }
   ],

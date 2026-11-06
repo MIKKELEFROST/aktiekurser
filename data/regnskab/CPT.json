@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:58.533Z",
+  "updated_at": "2026-11-06T21:46:47.448Z",
   "source": "Yahoo Finance",
   "symbol": "CPT",
   "summary": "Camden Property Trust, an S&P 500 Company, is a real estate company primarily engaged in the ownership, management, development, redevelopment, acquisition, and construction of multifamily apartment communities. Camden owns and operates 173 properties containing 58,811 apartment homes across the United States. Upon completion of 3 properties currently under development, the Company's portfolio will increase to 59,973 apartment homes in 176 properties. Camden Property Trust was established on May 25, 1993, and incorporated in Texas. Camden Property Trust is based in Houston, United States.",
@@ -7,10 +7,10 @@
   "website": "https://www.camdenliving.com",
   "employees": 1640,
   "ceo": "Mr. Alexander J. K. Jessett",
-  "next_earnings": "2026-11-05",
-  "earnings_estimated": false,
+  "next_earnings": "2027-02-04",
+  "earnings_estimated": true,
   "earnings_call": "2026-11-06",
-  "eps_estimate": null,
+  "eps_estimate": 0.15,
   "analysts": {
     "strong_buy": 1,
     "buy": 6,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 395676000,
-      "earnings": 108934000
-    },
-    {
       "q": "4Q2025",
       "revenue": 390794000,
       "earnings": 156036000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 392944000,
       "earnings": 18790000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 381061000,
+      "earnings": 900391000
     }
   ],
   "growth": {
-    "q0": null,
-    "q1": -0.6123,
+    "q0": -0.6123,
+    "q1": 1.2861,
     "y0": 0.7909,
     "y1": -0.6732
   },
   "ratings": [
+    {
+      "date": "2026-11-06",
+      "firm": "Evercore ISI Group",
+      "from": "In-Line",
+      "to": "In-Line",
+      "action": "main"
+    },
     {
       "date": "2026-10-19",
       "firm": "Wells Fargo",
@@ -139,13 +146,6 @@
       "firm": "Scotiabank",
       "from": "Sector Underperform",
       "to": "Sector Underperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-09-08",
-      "firm": "Mizuho",
-      "from": "Outperform",
-      "to": "Outperform",
       "action": "main"
     }
   ],
@@ -230,11 +230,11 @@
     "net_pct": -0.6
   },
   "extras": {
-    "beta": 0.768,
-    "enterprise_value": 15618527232,
-    "ev_ebitda": 17.471,
-    "ev_revenue": 9.873,
-    "float_shares": 100604989,
+    "beta": null,
+    "enterprise_value": 14735778816,
+    "ev_ebitda": 16.483,
+    "ev_revenue": 9.414,
+    "float_shares": 100229054,
     "short_shares": 5248649,
     "short_pct_float": 5.43,
     "short_ratio": 4.66,
@@ -246,12 +246,6 @@
   "payout_ratio": 1.3927001,
   "inst_count": 831,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.27944,
-      "actual": 0.21449,
-      "surprise_pct": -23.24
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.27648,
@@ -269,6 +263,12 @@
       "estimate": 0.27252,
       "actual": 0.18,
       "surprise_pct": -33.95
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.6271,
+      "actual": 8.71,
+      "surprise_pct": 1288.93
     }
   ],
   "insiders": [
@@ -289,33 +289,6 @@
       "value": 3372600,
       "shares": 30000,
       "date": "2026-06-05"
-    },
-    {
-      "name": "SEVILLA-SACASA FRANCES ALDRICH",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 2507,
-      "date": "2026-05-08"
-    },
-    {
-      "name": "BRUNNER HEATHER J",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 2507,
-      "date": "2026-05-08"
-    },
-    {
-      "name": "KHATOR RENU",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 2507,
-      "date": "2026-05-08"
     },
     {
       "name": "WESTBROOK KELVIN R",
@@ -360,6 +333,33 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 1350,
+      "date": "2026-05-08"
+    },
+    {
+      "name": "SEVILLA-SACASA FRANCES ALDRICH",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 2507,
+      "date": "2026-05-08"
+    },
+    {
+      "name": "BRUNNER HEATHER J",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 2507,
+      "date": "2026-05-08"
+    },
+    {
+      "name": "KHATOR RENU",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 2507,
       "date": "2026-05-08"
     }
   ],

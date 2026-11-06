@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:58.129Z",
+  "updated_at": "2026-11-06T21:46:46.908Z",
   "source": "Yahoo Finance",
   "symbol": "AOSL",
   "summary": "Alpha and Omega Semiconductor Limited designs, develops, and supplies power semiconductor products for computing, consumer electronics, communication, and industrial applications in Hong Kong, China, South Korea, the United States, and internationally. The company offers power discrete products, including industry standard trench metal-oxide-semiconductor field-effect transistors (MOSFETs), Shielded-Gate low- and mid-voltage MOSFETs, SuperJunction high-voltage MOSFETs, and trench-stop insulated gate bipolar transistors, as well as application-specific MOSFETs for smartphone battery management, dual MOSFETs for CPU power conversion, and high-power density MOSFETs for IBC power modules in AI data centers. It also provides power IC products, total power solutions for Intel panther lake and wildcat lake platforms, and the SmartClamp family of protected DrMOS for AI servers, data centers, and high-end graphics cards, as well as silicon carbide, IPM, HV gate drivers, and digital power products. Alpha and Omega Semiconductor Limited was incorporated in 2000 and is headquartered in Sunnyvale, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": -0.14,
+  "eps_estimate": -0.16,
   "analysts": {
     "strong_buy": 1,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 182501000,
-      "earnings": -2122000
-    },
-    {
       "q": "4Q2025",
       "revenue": 162263000,
       "earnings": -13293000
@@ -69,15 +64,41 @@
       "q": "2Q2026",
       "revenue": 170371000,
       "earnings": -13063000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 177756000,
+      "earnings": -6144000
     }
   ],
   "growth": {
-    "q0": -2.0769,
-    "q1": 0,
+    "q0": 0,
+    "q1": 0.29459998,
     "y0": -0.2849,
     "y1": 1.5701
   },
   "ratings": [
+    {
+      "date": "2026-11-06",
+      "firm": "B. Riley Securities",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-06",
+      "firm": "Stifel",
+      "from": "Hold",
+      "to": "Hold",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-06",
+      "firm": "Needham",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-23",
       "firm": "B. Riley Securities",
@@ -126,27 +147,6 @@
       "from": null,
       "to": "Buy",
       "action": "init"
-    },
-    {
-      "date": "2026-04-13",
-      "firm": "B. Riley Securities",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-02-06",
-      "firm": "Stifel",
-      "from": "Hold",
-      "to": "Hold",
-      "action": "main"
-    },
-    {
-      "date": "2025-11-06",
-      "firm": "Stifel",
-      "from": "Hold",
-      "to": "Hold",
-      "action": "main"
     }
   ],
   "holders": [
@@ -227,14 +227,14 @@
     "sells": 3,
     "bought": 3934101,
     "sold": 10707,
-    "net_pct": 320
+    "net_pct": 317.9
   },
   "extras": {
-    "beta": 2.768,
-    "enterprise_value": 487443424,
-    "ev_ebitda": 34.595,
-    "ev_revenue": 0.718,
-    "float_shares": 25100657,
+    "beta": null,
+    "enterprise_value": 410490400,
+    "ev_ebitda": 42.926,
+    "ev_revenue": 0.609,
+    "float_shares": 25138604,
     "short_shares": 3174338,
     "short_pct_float": 12.62,
     "short_ratio": 5.8,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 286,
+  "inst_count": 287,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.09,
-      "actual": 0.13,
-      "surprise_pct": 44.44
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.08333,
@@ -269,6 +263,12 @@
       "estimate": -0.24,
       "actual": -0.13,
       "surprise_pct": 45.83
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.14,
+      "actual": -0.07,
+      "surprise_pct": 50
     }
   ],
   "insiders": [

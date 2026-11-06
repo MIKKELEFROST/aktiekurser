@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:58.823Z",
+  "updated_at": "2026-11-06T21:46:47.707Z",
   "source": "Yahoo Finance",
   "symbol": "EOG",
   "summary": "EOG Resources, Inc., together with its subsidiaries, explores for, develops, produces, and markets crude oil, natural gas liquids, and natural gas in producing basins in the United States, the Republic of Trinidad and Tobago, and internationally. The company also offers crude oil and condensate, and gathering, processing and marketing. The company was formerly known as Enron Oil & Gas Company. EOG Resources, Inc. was incorporated in 1985 and is headquartered in Houston, Texas.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-06",
-  "eps_estimate": 4.45384,
+  "eps_estimate": 4.91821,
   "analysts": {
     "strong_buy": 1,
     "buy": 10,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 5847000000,
-      "earnings": 1471000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 5638000000,
       "earnings": 701000000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 8620000000,
       "earnings": 2724000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 8549000000,
+      "earnings": 2781000000
     }
   ],
   "growth": {
-    "q0": 0.6435,
-    "q1": 1.1666,
+    "q0": 1.1666,
+    "q1": 0.2638,
     "y0": 0.76919997,
     "y1": -0.09819999
   },
   "ratings": [
+    {
+      "date": "2026-11-06",
+      "firm": "Barclays",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
     {
       "date": "2026-10-20",
       "firm": "Susquehanna",
@@ -137,13 +144,6 @@
     {
       "date": "2026-08-27",
       "firm": "Citigroup",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-24",
-      "firm": "Goldman Sachs",
       "from": "Neutral",
       "to": "Neutral",
       "action": "main"
@@ -227,14 +227,14 @@
     "sells": 4,
     "bought": 83788,
     "sold": 54204,
-    "net_pct": 2
+    "net_pct": 2.1
   },
   "extras": {
-    "beta": 0.269,
-    "enterprise_value": 80480264192,
-    "ev_ebitda": 5.552,
-    "ev_revenue": 3.012,
-    "float_shares": 522703814,
+    "beta": null,
+    "enterprise_value": 77638180864,
+    "ev_ebitda": 4.725,
+    "ev_revenue": 2.61,
+    "float_shares": 516679899,
     "short_shares": 17207044,
     "short_pct_float": 3.67,
     "short_ratio": 5.5,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-10-16",
   "dividend_date": null,
   "payout_ratio": 0.314,
-  "inst_count": 2162,
+  "inst_count": 2161,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 2.44642,
-      "actual": 2.71,
-      "surprise_pct": 10.77
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 2.19582,
@@ -269,6 +263,12 @@
       "estimate": 4.96567,
       "actual": 5.07,
       "surprise_pct": 2.1
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 4.45384,
+      "actual": 4.87,
+      "surprise_pct": 9.34
     }
   ],
   "insiders": [
@@ -291,6 +291,15 @@
       "date": "2026-10-30"
     },
     {
+      "name": "YACOB EZRA Y",
+      "role": "Officer and Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 165.54 per share.",
+      "value": 360,
+      "shares": 2,
+      "date": "2026-10-30"
+    },
+    {
       "name": "KERR MICHAEL T.",
       "role": "Director",
       "kind": "other",
@@ -306,15 +315,6 @@
       "text": "Stock Award(Grant) at price 165.54 per share.",
       "value": 624,
       "shares": 3,
-      "date": "2026-10-30"
-    },
-    {
-      "name": "YACOB EZRA Y",
-      "role": "Officer and Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 165.54 per share.",
-      "value": 360,
-      "shares": 2,
       "date": "2026-10-30"
     },
     {
@@ -336,15 +336,6 @@
       "date": "2026-10-30"
     },
     {
-      "name": "CRISP CHARLES RICHARD",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 165.54 per share.",
-      "value": 42309,
-      "shares": 255,
-      "date": "2026-10-30"
-    },
-    {
       "name": "GAUT CHARLES CHRISTOPHER",
       "role": "Director",
       "kind": "other",
@@ -354,12 +345,21 @@
       "date": "2026-10-30"
     },
     {
-      "name": "LEITZELL JEFFREY R",
-      "role": "Chief Operating Officer",
+      "name": "CRISP CHARLES RICHARD",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 165.54 per share.",
+      "value": 42309,
+      "shares": 255,
+      "date": "2026-10-30"
+    },
+    {
+      "name": "YACOB EZRA Y",
+      "role": "Chief Executive Officer",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 13680,
+      "shares": 37905,
       "date": "2026-09-25"
     }
   ],

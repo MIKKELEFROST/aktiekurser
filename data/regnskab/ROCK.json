@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:15:00.017Z",
+  "updated_at": "2026-11-06T21:46:49.244Z",
   "source": "Yahoo Finance",
   "symbol": "ROCK",
   "summary": "Gibraltar Industries, Inc. manufactures and provides products and services for the residential, agtech, and infrastructure markets in the United States and internationally. The company operates through three segments: Residential, Agtech, and Infrastructure. The Residential segment offers roof and foundation ventilation products; mail systems and package solutions, including single mailboxes, and cluster style mail, and parcel boxes for single and multi-family housing; roof edgings and flashings; soffits and trim; drywall corner beads; metal roofing and accessories; rain dispersion products comprising gutters, downspouts and accessories; and exterior retractable awnings. The Agtech segment offers controlled environmental agriculture, and custom greenhouse solutions and structural canopies, including the designing, engineering, manufacturing, construction of the structure, and integration of subsystems for retail, fruits and vegetables, flowers, commercial, institutional and conservatories, and car wash structure applications. The Infrastructure segment offers expansion joints, structural bearings, rubber pre-formed seals and other sealants, elastomeric concrete, and bridge cable protection systems. The company serves home improvement retailers, wholesalers, distributors, and contractors, as well as institutional and commercial growers of fruit, vegetables, flowers, and plants. The company was founded in 1972 and is headquartered in Buffalo, New York.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 1.2025,
+  "eps_estimate": 1.0425,
   "analysts": {
     "strong_buy": 1,
     "buy": 2,
@@ -72,8 +72,8 @@
     }
   ],
   "growth": {
-    "q0": 0.0548,
-    "q1": 0.3717,
+    "q0": 0.3717,
+    "q1": 0.4,
     "y0": -0.03,
     "y1": 0.2459
   },
@@ -200,18 +200,18 @@
       "date": "2026-06-30"
     },
     {
+      "name": "Fidelity Puritan Trust-Fidelity Low-Priced Stock Fund",
+      "kind": "fond",
+      "pct": 4.16,
+      "shares": 1234867,
+      "date": "2026-08-31"
+    },
+    {
       "name": "State Street Corporation",
       "kind": "institution",
       "pct": 4.14,
       "shares": 1228984,
       "date": "2026-06-30"
-    },
-    {
-      "name": "Fidelity Puritan Trust-Fidelity Low-Priced Stock Fund",
-      "kind": "fond",
-      "pct": 4,
-      "shares": 1187805,
-      "date": "2026-07-31"
     },
     {
       "name": "GLOBAL X FUNDS-Global X US Infrastructure Development ETF",
@@ -231,10 +231,10 @@
   },
   "extras": {
     "beta": 1.314,
-    "enterprise_value": 2647755008,
-    "ev_ebitda": 13.142,
-    "ev_revenue": 1.832,
-    "float_shares": 29349648,
+    "enterprise_value": 2291615744,
+    "ev_ebitda": 11.417,
+    "ev_revenue": 1.42,
+    "float_shares": 29369533,
     "short_shares": 1969511,
     "short_pct_float": 10.88,
     "short_ratio": 4.69,
@@ -244,14 +244,8 @@
   "ex_dividend": "2008-12-30",
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 354,
+  "inst_count": 352,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.21,
-      "actual": 1.14,
-      "surprise_pct": -5.79
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.74333,
@@ -269,6 +263,12 @@
       "estimate": 1.0175,
       "actual": 1.11,
       "surprise_pct": 9.09
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.2025,
+      "actual": 1.01,
+      "surprise_pct": -16.01
     }
   ],
   "insiders": [
@@ -298,6 +298,15 @@
       "value": 34615,
       "shares": 1000,
       "date": "2026-05-20"
+    },
+    {
+      "name": "METCALF JAMES S",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 37.59 per share.",
+      "value": 114988,
+      "shares": 3059,
+      "date": "2026-05-07"
     },
     {
       "name": "NISH JAMES B",
@@ -346,15 +355,6 @@
     },
     {
       "name": "BARBERIO MARK G.",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 37.59 per share.",
-      "value": 114988,
-      "shares": 3059,
-      "date": "2026-05-07"
-    },
-    {
-      "name": "METCALF JAMES S",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 37.59 per share.",

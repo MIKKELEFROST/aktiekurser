@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:58.204Z",
+  "updated_at": "2026-11-06T21:46:47.020Z",
   "source": "Yahoo Finance",
   "symbol": "AVPT",
   "summary": "AvePoint, Inc. provides cloud-native data management software platform in North America, Europe, the Middle East, Africa, and the Asia Pacific. It also provides platform-as-a-service architecture to address critical operational challenges and the management of data to organizations that leverage third-party cloud vendors, including Microsoft, Salesforce, Google, AWS, Box, DropBox, and others; license and support; and maintenance services. Further, it provides AvePoint confidence platform including control suite, automates data governance, enforces policies, and optimizes SaaS investments, enables expense management and reduction, and provides insight into access, risk, and entitlements across collaborative platforms; resilience suite, that supports business continuity and compliance through Backup-as-a-Service, ransomware recovery, lifecycle management, and classification-driven protection; and modernization suite, that modernizes legacy systems and processes into AI-ready, SaaS-based experiences to accelerate employee engagement, digital transformation, and productivity. AvePoint, Inc. was incorporated in 2001 and is headquartered in Jersey City, New Jersey.",
@@ -10,14 +10,14 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.09362,
+  "eps_estimate": 0.10763,
   "analysts": {
-    "strong_buy": 4,
+    "strong_buy": 3,
     "buy": 9,
     "hold": 4,
     "sell": 0,
     "strong_sell": 0,
-    "total": 17
+    "total": 16
   },
   "target_mean": 17.59164,
   "target_high": 26,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 109728000,
-      "earnings": 13017000
-    },
-    {
       "q": "4Q2025",
       "revenue": 114687000,
       "earnings": 15644000
@@ -69,15 +64,41 @@
       "q": "2Q2026",
       "revenue": 124495000,
       "earnings": 27570000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 131104000,
+      "earnings": 17936000
     }
   ],
   "growth": {
-    "q0": -0.2364,
-    "q1": 0.0656,
+    "q0": 0.0656,
+    "q1": 0.16360001,
     "y0": 0.4188,
     "y1": 0.0999
   },
   "ratings": [
+    {
+      "date": "2026-11-06",
+      "firm": "Scotiabank",
+      "from": "Sector Outperform",
+      "to": "Sector Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-06",
+      "firm": "Evercore ISI Group",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-06",
+      "firm": "Cantor Fitzgerald",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-11-03",
       "firm": "TD Cowen",
@@ -126,27 +147,6 @@
       "from": "Outperform",
       "to": "Outperform",
       "action": "main"
-    },
-    {
-      "date": "2026-07-06",
-      "firm": "DA Davidson",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-05-08",
-      "firm": "Scotiabank",
-      "from": "Sector Outperform",
-      "to": "Sector Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-03-23",
-      "firm": "William Blair",
-      "from": "Outperform",
-      "to": "Market Perform",
-      "action": "down"
     }
   ],
   "holders": [
@@ -230,11 +230,11 @@
     "net_pct": 2.1
   },
   "extras": {
-    "beta": 1.088,
-    "enterprise_value": 3184844800,
-    "ev_ebitda": 60.598,
-    "ev_revenue": 6.832,
-    "float_shares": 141222038,
+    "beta": null,
+    "enterprise_value": 3056872192,
+    "ev_ebitda": 57.461,
+    "ev_revenue": 6.27,
+    "float_shares": 140228290,
     "short_shares": 12014287,
     "short_pct_float": 6.83,
     "short_ratio": 5.01,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 360,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.07154,
-      "actual": 0.1226,
-      "surprise_pct": 71.37
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.08898,
@@ -269,6 +263,12 @@
       "estimate": 0.0826,
       "actual": 0.1336,
       "surprise_pct": 61.74
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.09362,
+      "actual": 0.1262,
+      "surprise_pct": 34.8
     }
   ],
   "insiders": [

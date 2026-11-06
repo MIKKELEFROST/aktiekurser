@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:15:00.370Z",
+  "updated_at": "2026-11-06T21:46:49.705Z",
   "source": "Yahoo Finance",
   "symbol": "UMAC",
   "summary": "Unusual Machines, Inc. engages in the commercial drone industry. The company offers small drones and essential components. It distributes their products through B2B sale, e-commerce site, and retail channel. The company has a strategic collaboration with Lantronix Inc. for the development of autonomous drone components integrating edge AI compute with flight control systems. The company was formerly known as AerocarveUS Corporation and changed its name to Unusual Machines, Inc. in July 2022. Unusual Machines, Inc. was incorporated in 2019 and is headquartered in Orlando, Florida.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": -0.135,
+  "eps_estimate": -0.1,
   "analysts": {
     "strong_buy": 3,
     "buy": 6,
@@ -45,11 +45,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 2134590,
-      "earnings": 1603470
-    },
-    {
       "q": "4Q2025",
       "revenue": 4900000,
       "earnings": -10600000
@@ -63,15 +58,27 @@
       "q": "2Q2026",
       "revenue": 16722470,
       "earnings": -7783550
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 13903030,
+      "earnings": -25044950
     }
   ],
   "growth": {
-    "q0": 0.045900002,
-    "q1": -5.5789003,
+    "q0": -5.5789003,
+    "q1": 0.5164,
     "y0": 0.0215,
     "y1": -0.4667
   },
   "ratings": [
+    {
+      "date": "2026-11-06",
+      "firm": "Needham",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-23",
       "firm": "Piper Sandler",
@@ -134,13 +141,6 @@
       "from": null,
       "to": "Buy",
       "action": "init"
-    },
-    {
-      "date": "2026-04-22",
-      "firm": "Needham",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "reit"
     }
   ],
   "holders": [
@@ -221,14 +221,14 @@
     "sells": 12,
     "bought": 139930,
     "sold": 398141,
-    "net_pct": -8.3
+    "net_pct": -8
   },
   "extras": {
-    "beta": 14.971,
-    "enterprise_value": 337717056,
-    "ev_ebitda": -11.43,
-    "ev_revenue": 10.603,
-    "float_shares": 47474666,
+    "beta": null,
+    "enterprise_value": 300888608,
+    "ev_ebitda": -9.196,
+    "ev_revenue": 6.898,
+    "float_shares": 49332729,
     "short_shares": 9271393,
     "short_pct_float": 19.28,
     "short_ratio": 3.4,
@@ -238,14 +238,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": null,
-  "inst_count": 261,
+  "inst_count": 264,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.01,
-      "actual": -0.1415,
-      "surprise_pct": -1515
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.09,
@@ -263,6 +257,12 @@
       "estimate": 0.08333,
       "actual": -0.1269,
       "surprise_pct": -252.29
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.135,
+      "actual": -0.1334,
+      "surprise_pct": 1.19
     }
   ],
   "insiders": [

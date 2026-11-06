@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:59.524Z",
+  "updated_at": "2026-11-06T21:46:48.582Z",
   "source": "Yahoo Finance",
   "symbol": "LYV",
   "summary": "Live Nation Entertainment, Inc. operates as a live entertainment company worldwide. The company operates through Concerts, Ticketing, and Sponsorship & Advertising segments. Its Concerts segment promotes live music events in its owned or operated venues, and in rented third-party venues. This segment operates and manages music venues; produces music festivals; creates associated content; and offers management and other services to artists. The Ticketing segment manages the ticketing operations, including the provision of ticketing software and services to consumers with marketplace for tickets and event information through mobile apps, other websites, and retail outlets, as well as its websites, such as livenation.com and ticketmaster.com; and provides ticket resale services. This segment offers ticketing services for arenas, stadiums, amphitheaters, music clubs, concert promoters, professional sports franchises and leagues, college sports teams, performing arts venues, museums, and theaters. Its Sponsorship & Advertising segment sells international, national, and local sponsorships and placement of advertising, including signage, online advertising, and promotional programs; rich media offering, including advertising related with live streaming and music-related content; and ads through distribution network of venues, events, and websites. This segment also manages the development of strategic sponsorship programs, as well as develops, books, and produces custom events or programs for specific brands. It owns, operates, or leases entertainment venues. The company was formerly known as Live Nation, Inc. and changed its name to Live Nation Entertainment, Inc. in January 2010. Live Nation Entertainment, Inc. was incorporated in 2005 and is headquartered in Beverly Hills, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 1.50037,
+  "eps_estimate": -1.17503,
   "analysts": {
     "strong_buy": 3,
     "buy": 17,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 8499143000,
-      "earnings": 171608000
-    },
-    {
       "q": "4Q2025",
       "revenue": 6313500000,
       "earnings": -247156000
@@ -69,15 +64,34 @@
       "q": "2Q2026",
       "revenue": 7666858000,
       "earnings": 247902000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 10105035000,
+      "earnings": 432734000
     }
   ],
   "growth": {
-    "q0": 1.0553,
-    "q1": -0.108500004,
+    "q0": -0.108500004,
+    "q1": 0.9797,
     "y0": -0.8983,
     "y1": 5.1755
   },
   "ratings": [
+    {
+      "date": "2026-11-06",
+      "firm": "Wells Fargo",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-06",
+      "firm": "StoneX",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-20",
       "firm": "Susquehanna",
@@ -133,20 +147,6 @@
       "from": "Buy",
       "to": "Buy",
       "action": "main"
-    },
-    {
-      "date": "2026-07-31",
-      "firm": "Susquehanna",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-31",
-      "firm": "BTIG",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "reit"
     }
   ],
   "holders": [
@@ -230,11 +230,11 @@
     "net_pct": 0
   },
   "extras": {
-    "beta": 1.157,
-    "enterprise_value": 46621118464,
-    "ev_ebitda": 30.063,
-    "ev_revenue": 1.775,
-    "float_shares": 157240677,
+    "beta": null,
+    "enterprise_value": 48245231616,
+    "ev_ebitda": 28.544,
+    "ev_revenue": 1.731,
+    "float_shares": 159088096,
     "short_shares": 24193189,
     "short_pct_float": 15.38,
     "short_ratio": 12.4,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 1202,
+  "inst_count": 1201,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.49429,
-      "actual": 0.73,
-      "surprise_pct": -51.15
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -1.04725,
@@ -269,6 +263,12 @@
       "estimate": 0.57412,
       "actual": 1.05,
       "surprise_pct": 82.89
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.50037,
+      "actual": 1.69,
+      "surprise_pct": 12.64
     }
   ],
   "insiders": [

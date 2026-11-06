@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:15:00.300Z",
+  "updated_at": "2026-11-06T21:46:49.599Z",
   "source": "Yahoo Finance",
   "symbol": "TMDX",
   "summary": "TransMedics Group, Inc., a commercial-stage medical technology company, engages in transforming organ transplant therapy for end-stage organ failure patients in the United States and internationally. The company provides Organ Care System (OCS), a portable organ perfusion, optimization, and monitoring system that utilizes its proprietary and customized technology to replicate near-physiologic conditions for donor organs outside of the human body. Its OCS includes OCS LUNG for the preservation of standard criteria donor lungs for double-lung transplantation; OCS Heart, a technology for preservation of DBD donor hearts deemed unsuitable due to limitations of cold storage and for ex vivo reanimation, functional monitoring, and beating-heart preservation of donation-after-circulatory-death hearts; and OCS Liver for the preservation of DBD and DCD of donor livers. The company also developed national OCS program, a turnkey solution for outsourced organ retrieval; and provides OCS organ management and logistics services, including aviation and ground transportation, and other coordination activity. The company was founded in 1998 and is headquartered in Andover, Massachusetts.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.2934,
+  "eps_estimate": 0.49927,
   "analysts": {
     "strong_buy": 3,
     "buy": 6,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 143823000,
-      "earnings": 24319000
-    },
-    {
       "q": "4Q2025",
       "revenue": 160764000,
       "earnings": 105383000
@@ -69,15 +64,34 @@
       "q": "2Q2026",
       "revenue": 189948000,
       "earnings": 14682000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 203005000,
+      "earnings": 17073000
     }
   ],
   "growth": {
-    "q0": -0.5555,
-    "q1": -0.052600004,
+    "q0": -0.052600004,
+    "q1": 0.5465,
     "y0": -0.4241,
     "y1": 0.48990002
   },
   "ratings": [
+    {
+      "date": "2026-11-06",
+      "firm": "Needham",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-06",
+      "firm": "Canaccord Genuity",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-13",
       "firm": "Canaccord Genuity",
@@ -132,20 +146,6 @@
       "firm": "Evercore ISI Group",
       "from": "Outperform",
       "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-01",
-      "firm": "TD Cowen",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "reit"
-    },
-    {
-      "date": "2026-06-30",
-      "firm": "Canaccord Genuity",
-      "from": "Buy",
-      "to": "Buy",
       "action": "main"
     }
   ],
@@ -227,14 +227,14 @@
     "sells": 1,
     "bought": 153126,
     "sold": 9624,
-    "net_pct": 12.6
+    "net_pct": 12.5
   },
   "extras": {
-    "beta": 2.096,
-    "enterprise_value": 2917835264,
-    "ev_ebitda": 25.234,
-    "ev_revenue": 4.365,
-    "float_shares": 33559299,
+    "beta": null,
+    "enterprise_value": 2769883136,
+    "ev_ebitda": 22.06,
+    "ev_revenue": 3.807,
+    "float_shares": 33616147,
     "short_shares": 8769040,
     "short_pct_float": 39.37,
     "short_ratio": 11.14,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 492,
+  "inst_count": 496,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.36,
-      "actual": 0.66,
-      "surprise_pct": 83.33
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.37389,
@@ -269,6 +263,12 @@
       "estimate": 0.47536,
       "actual": 0.44,
       "surprise_pct": -7.44
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.2934,
+      "actual": 0.51,
+      "surprise_pct": 73.82
     }
   ],
   "insiders": [
@@ -336,25 +336,25 @@
       "date": "2026-06-15"
     },
     {
+      "name": "GUNDERSON THOMAS JAMES",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 2922,
+      "date": "2026-05-20"
+    },
+    {
+      "name": "LOVELL STEPHANIE",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 2922,
+      "date": "2026-05-20"
+    },
+    {
       "name": "BASILE EDWARD M.",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 2922,
-      "date": "2026-05-20"
-    },
-    {
-      "name": "WEILL DAVID",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 2922,
-      "date": "2026-05-20"
-    },
-    {
-      "name": "KANIA EDWIN M JR",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

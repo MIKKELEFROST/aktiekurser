@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:58.915Z",
+  "updated_at": "2026-11-06T21:46:47.820Z",
   "source": "Yahoo Finance",
   "symbol": "FIG",
   "summary": "Figma, Inc. develops and sells a collaborative, browser-based platform for designing, prototyping, building digital experiences, and subscriptions for access to its platform. The company offers Figma Design, a collaborative design tool for teams that explore ideas and gather feedback, build realistic prototypes, and streamline product development with design systems; Dev Mode to inspect designs and translate them into code without changing the design file; FigJam to define ideas, align decisions, and move work forwardall in one place; and Figma Slides, a presentation tool built for designers and their teams. It also provides Figma Draw to create expressive designs with illustration tools; Figma Buzz, which publishes brand templates to create social media assets, display ads, one-pagers, and others; Figma Sites to design, prototype, and publish; Payload CMS is an open-source, headless content management system and application framework acquired by Figma; Figma Make, an AI tool to design and prompt way to a functional prototype; Figma Weave for AI-powered media generation and editing. The company was incorporated in 2012 and is headquartered in San Francisco, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 0.0546,
+  "eps_estimate": 0.05226,
   "analysts": {
     "strong_buy": 2,
     "buy": 4,
@@ -60,12 +60,19 @@
     }
   ],
   "growth": {
-    "q0": -0.5864,
-    "q1": -0.3468,
-    "y0": -0.038900003,
-    "y1": 0.26450002
+    "q0": -0.3468,
+    "q1": 0.0335,
+    "y0": -0.0323,
+    "y1": 0.2559
   },
   "ratings": [
+    {
+      "date": "2026-11-05",
+      "firm": "JP Morgan",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-11-05",
       "firm": "RBC Capital",
@@ -128,83 +135,76 @@
       "from": "Buy",
       "to": "Buy",
       "action": "main"
-    },
-    {
-      "date": "2026-06-26",
-      "firm": "Wells Fargo",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
     }
   ],
   "holders": [
     {
       "name": "Greylock Xiv Gp LLC",
       "kind": "institution",
-      "pct": 12.84,
+      "pct": 12.76,
       "shares": 58420365,
       "date": "2026-06-30"
     },
     {
       "name": "Index Venture Associates VI Ltd",
       "kind": "institution",
-      "pct": 12.04,
+      "pct": 11.97,
       "shares": 54808069,
       "date": "2026-06-30"
     },
     {
       "name": "Sc Us (ttgp), Ltd.",
       "kind": "institution",
-      "pct": 5.87,
+      "pct": 5.84,
       "shares": 26728172,
       "date": "2026-06-30"
     },
     {
       "name": "FMR, LLC",
       "kind": "institution",
-      "pct": 3.85,
+      "pct": 3.83,
       "shares": 17519489,
       "date": "2026-06-30"
     },
     {
       "name": "Price (T.Rowe) Associates Inc",
       "kind": "institution",
-      "pct": 3.72,
+      "pct": 3.7,
       "shares": 16919384,
       "date": "2026-06-30"
     },
     {
       "name": "Two Sigma Investments, LP",
       "kind": "institution",
-      "pct": 2.8,
+      "pct": 2.78,
       "shares": 12727784,
       "date": "2026-06-30"
     },
     {
       "name": "UBS Group AG",
       "kind": "institution",
-      "pct": 2.74,
+      "pct": 2.73,
       "shares": 12490478,
       "date": "2026-06-30"
     },
     {
       "name": "Vanguard Portfolio Management LLC",
       "kind": "institution",
-      "pct": 2.29,
+      "pct": 2.27,
       "shares": 10412646,
       "date": "2026-06-30"
     },
     {
       "name": "Vanguard Capital Management LLC",
       "kind": "institution",
-      "pct": 1.93,
+      "pct": 1.92,
       "shares": 8778864,
       "date": "2026-06-30"
     },
     {
       "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
       "kind": "fond",
-      "pct": 1.87,
+      "pct": 1.86,
       "shares": 8504609,
       "date": "2026-06-30"
     }
@@ -212,19 +212,19 @@
   "insider_net": {
     "period": "6m",
     "buys": 9,
-    "sells": 29,
+    "sells": 31,
     "bought": 664664,
-    "sold": 2092568,
-    "net_pct": -14.5
+    "sold": 2106381,
+    "net_pct": -14.7
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 10196121600,
-    "ev_ebitda": -6.52,
-    "ev_revenue": 7.957,
-    "float_shares": 266222438,
+    "enterprise_value": 8260958208,
+    "ev_ebitda": -15.153,
+    "ev_revenue": 5.906,
+    "float_shares": 267576139,
     "short_shares": 37135410,
-    "short_pct_float": 18.61,
+    "short_pct_float": 18.42,
     "short_ratio": 3.29,
     "last_split": null,
     "last_split_date": null
@@ -232,14 +232,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 502,
+  "inst_count": 505,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.04676,
-      "actual": 0.132,
-      "surprise_pct": 182.29
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.06469,
@@ -257,9 +251,33 @@
       "estimate": 0.04083,
       "actual": 0.08,
       "surprise_pct": 95.93
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.0546,
+      "actual": 0.1,
+      "surprise_pct": 83.15
     }
   ],
   "insiders": [
+    {
+      "name": "HERB TYLER",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 21.26 - 22.00 per share.",
+      "value": 47890,
+      "shares": 2214,
+      "date": "2026-11-04"
+    },
+    {
+      "name": "MULLIGAN BRENDAN",
+      "role": "General Counsel",
+      "kind": "sell",
+      "text": "Sale at price 21.30 per share.",
+      "value": 247030,
+      "shares": 11599,
+      "date": "2026-11-03"
+    },
     {
       "name": "RADAKOVICH LYNN VOJVODICH",
       "role": "Director",
@@ -331,24 +349,6 @@
       "value": 60000,
       "shares": 2000,
       "date": "2026-08-27"
-    },
-    {
-      "name": "HERB TYLER",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 27.14 per share.",
-      "value": 49938,
-      "shares": 1840,
-      "date": "2026-08-21"
-    },
-    {
-      "name": "INDEX VENTURES VI JERSEY L.P.",
-      "role": "Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "sell",
-      "text": "Sale at price 25.39 per share.",
-      "value": 316740,
-      "shares": 12475,
-      "date": "2026-08-10"
     }
   ],
   "dividends": [],

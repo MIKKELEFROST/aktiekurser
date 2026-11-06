@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:59.171Z",
+  "updated_at": "2026-11-06T21:46:48.129Z",
   "source": "Yahoo Finance",
   "symbol": "HTZ",
   "summary": "Hertz Global Holdings, Inc. operates as a vehicle rental company. It operates through two segments: Americas RAC and International RAC. The company offers vehicle rental services under the Hertz, Dollar, and Thrifty brands from company-operated, licensee, and franchisee locations in the United States, Africa, Asia, Australia, Canada, the Caribbean, Europe, Latin America, the Middle East, and New Zealand. It also sells vehicles and value-added services. The company was founded in 1918 and is headquartered in Estero, Florida.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.24902,
+  "eps_estimate": -0.27414,
   "analysts": {
     "strong_buy": 0,
     "buy": 0,
@@ -72,8 +72,8 @@
     }
   ],
   "growth": {
-    "q0": 1.0752,
-    "q1": 0.56490004,
+    "q0": 0.56490004,
+    "q1": 0.45830002,
     "y0": 0.6039,
     "y1": 0.80910003
   },
@@ -223,18 +223,18 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 8,
+    "buys": 10,
     "sells": 1,
-    "bought": 724067,
+    "bought": 841253,
     "sold": 40919,
-    "net_pct": 17.4
+    "net_pct": 20.4
   },
   "extras": {
-    "beta": 2.194,
-    "enterprise_value": 21257580544,
-    "ev_ebitda": 57.298,
-    "ev_revenue": 2.387,
-    "float_shares": 170601201,
+    "beta": null,
+    "enterprise_value": 20279863296,
+    "ev_ebitda": 51.867,
+    "ev_revenue": 2.242,
+    "float_shares": 171086702,
     "short_shares": 126646046,
     "short_pct_float": 73.31,
     "short_ratio": 7.63,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 358,
+  "inst_count": 356,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.06529,
-      "actual": 0.12,
-      "surprise_pct": 83.8
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.51537,
@@ -269,9 +263,33 @@
       "estimate": -0.249,
       "actual": -0.11,
       "surprise_pct": 55.82
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.24902,
+      "actual": 0.14,
+      "surprise_pct": -43.78
     }
   ],
   "insiders": [
+    {
+      "name": "LARSEN NILS ERIK",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 58593,
+      "date": "2026-11-02"
+    },
+    {
+      "name": "DAVIS ROBERT EMERSON",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 58593,
+      "date": "2026-11-02"
+    },
     {
       "name": "BERG CHRISTOPHER G.",
       "role": "Officer",
@@ -343,24 +361,6 @@
       "value": 0,
       "shares": 31877,
       "date": "2026-05-28"
-    },
-    {
-      "name": "MOORE MICHAEL S",
-      "role": "Chief Operating Officer",
-      "kind": "sell",
-      "text": "Sale at price 6.07 per share.",
-      "value": 248346,
-      "shares": 40919,
-      "date": "2026-05-11"
-    },
-    {
-      "name": "VOUGESSIS EVANGELINE",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 4.61 per share.",
-      "value": 12502,
-      "shares": 2712,
-      "date": "2026-03-31"
     }
   ],
   "dividends": [],

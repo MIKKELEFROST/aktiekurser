@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:58.050Z",
+  "updated_at": "2026-11-06T21:46:46.814Z",
   "source": "Yahoo Finance",
   "symbol": "AHR",
   "summary": "American Healthcare REIT, Inc., a Maryland-based self-managed REIT, owns and operates a diversified portfolio of clinical healthcare real estate across the U.S., U.K., and the Isle of Man. Its focus includes senior housing, skilled nursing facilities (SNFs), outpatient medical (OM) buildings, and other healthcare-related properties. The company utilizes a fully integrated management platform and operates senior housing under the RIDEA structure. In addition to owning and operating properties, it has originated and acquired secured loans and may pursue other real estate-related investments opportunistically. The REIT seeks income-generating assets and selectively develops healthcare properties. It has elected to be taxed as a REIT under the U.S. Internal Revenue Code and intends to maintain compliance with REIT requirements. American Healthcare REIT, Inc. is based in Irvine, United States.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-06",
-  "eps_estimate": 0.16,
+  "eps_estimate": 0.2,
   "analysts": {
     "strong_buy": 6,
     "buy": 10,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 572937000,
-      "earnings": 55927000
-    },
-    {
       "q": "4Q2025",
       "revenue": 604080000,
       "earnings": 10775000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 674250000,
       "earnings": 30606000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 742149000,
+      "earnings": 31213000
     }
   ],
   "growth": {
-    "q0": -0.4032,
-    "q1": 0.39180002,
+    "q0": 0.39180002,
+    "q1": 0.5839,
     "y0": null,
     "y1": null
   },
@@ -227,14 +227,14 @@
     "sells": 5,
     "bought": 72550,
     "sold": 33000,
-    "net_pct": 3.1
+    "net_pct": 2.9
   },
   "extras": {
-    "beta": 0.791,
-    "enterprise_value": 13745494016,
-    "ev_ebitda": 30.723,
-    "ev_revenue": 5.488,
-    "float_shares": 216557803,
+    "beta": null,
+    "enterprise_value": 14382642176,
+    "ev_ebitda": 30.531,
+    "ev_revenue": 5.388,
+    "float_shares": 229949175,
     "short_shares": 33178088,
     "short_pct_float": 17.28,
     "short_ratio": 9.67,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-09-30",
   "dividend_date": null,
   "payout_ratio": 1.4925,
-  "inst_count": 789,
+  "inst_count": 791,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.15333,
-      "actual": 0.2681,
-      "surprise_pct": 74.85
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.15333,
@@ -269,6 +263,12 @@
       "estimate": 0.135,
       "actual": 0.1505,
       "surprise_pct": 11.48
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.16,
+      "actual": 0.1331,
+      "surprise_pct": -16.81
     }
   ],
   "insiders": [
@@ -318,6 +318,15 @@
       "date": "2026-06-26"
     },
     {
+      "name": "SMITH WILBUR H. III",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 2594,
+      "date": "2026-06-24"
+    },
+    {
       "name": "ESTES SCOTT A",
       "role": "Director",
       "kind": "other",
@@ -346,15 +355,6 @@
     },
     {
       "name": "HURLEY DIANNE",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 2594,
-      "date": "2026-06-24"
-    },
-    {
-      "name": "RICHARDSON VALERIE",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

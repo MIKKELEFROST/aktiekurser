@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-11-05T22:14:59.458Z",
+  "updated_at": "2026-11-06T21:46:48.505Z",
   "source": "Yahoo Finance",
   "symbol": "LFST",
   "summary": "LifeStance Health Group, Inc., through its subsidiaries, provides outpatient mental health services to children, adolescents, adults, and geriatrics in the United States. The company offers patients a multidisciplinary suite of mental health services, psychiatric evaluations and treatment, psychological, and neuropsychological testing, as well as individual, family, and group therapy. It also treats a range of mental health conditions, including anxiety, depression, bipolar disorder, eating disorders, psychotic disorders, and post-traumatic stress disorder. In addition, the company operates an outpatient mental health platform, as well as offers patient care virtually through its online delivery platform or in-person at its centers. LifeStance Health Group, Inc. was founded in 2017 and is headquartered in Scottsdale, Arizona.",
   "industry": "Medical Care Facilities",
   "website": "https://lifestance.com",
-  "employees": 8542,
+  "employees": 10961,
   "ceo": "Mr. David Patrick Bourdon",
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.08388,
+  "eps_estimate": 0.08659,
   "analysts": {
     "strong_buy": 2,
     "buy": 7,
@@ -72,12 +72,26 @@
     }
   ],
   "growth": {
-    "q0": 4.8089004,
-    "q1": -0.0222,
+    "q0": -0.0222,
+    "q1": 0.4997,
     "y0": 0.97099996,
     "y1": 0.1982
   },
   "ratings": [
+    {
+      "date": "2026-11-06",
+      "firm": "Canaccord Genuity",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-06",
+      "firm": "Keybanc",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-11-05",
       "firm": "BTIG",
@@ -132,20 +146,6 @@
       "firm": "BTIG",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-21",
-      "firm": "Canaccord Genuity",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-14",
-      "firm": "Barclays",
-      "from": "Overweight",
-      "to": "Overweight",
       "action": "main"
     }
   ],
@@ -231,10 +231,10 @@
   },
   "extras": {
     "beta": 1.3,
-    "enterprise_value": 5677217280,
-    "ev_ebitda": 42.052,
-    "ev_revenue": 3.582,
-    "float_shares": 290232364,
+    "enterprise_value": 5368808960,
+    "ev_ebitda": 33.335,
+    "ev_revenue": 3.202,
+    "float_shares": 288815895,
     "short_shares": 13769507,
     "short_pct_float": 7.54,
     "short_ratio": 2.99,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 428,
+  "inst_count": 429,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.03975,
-      "actual": 0.01444,
-      "surprise_pct": -63.67
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.05391,
@@ -269,6 +263,12 @@
       "estimate": 0.08247,
       "actual": 0.1092,
       "surprise_pct": 32.41
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.08388,
+      "actual": 0.1063,
+      "surprise_pct": 26.73
     }
   ],
   "insiders": [
@@ -318,6 +318,15 @@
       "date": "2026-08-11"
     },
     {
+      "name": "TPG GP A, L.L.C.",
+      "role": "Beneficial Owner of more than 10% of a Class of Security",
+      "kind": "sell",
+      "text": "Sale at price 10.62 per share.",
+      "value": 144890858,
+      "shares": 13643207,
+      "date": "2026-08-10"
+    },
+    {
       "name": "PAUNOVICH VUKASIN",
       "role": "Chief Technology Officer",
       "kind": "sell",
@@ -336,15 +345,6 @@
       "date": "2026-08-10"
     },
     {
-      "name": "TPG GP A, L.L.C.",
-      "role": "Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "sell",
-      "text": "Sale at price 10.62 per share.",
-      "value": 144890858,
-      "shares": 13643207,
-      "date": "2026-08-10"
-    },
-    {
       "name": "BURDICK KENNETH A",
       "role": "Director",
       "kind": "other",
@@ -354,12 +354,12 @@
       "date": "2026-07-06"
     },
     {
-      "name": "GOLTERMANN LORI",
+      "name": "BESSLER ROBERT",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 35492,
+      "shares": 17746,
       "date": "2026-07-02"
     }
   ],

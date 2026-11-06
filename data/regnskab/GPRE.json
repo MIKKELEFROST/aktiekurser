@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:59.064Z",
+  "updated_at": "2026-11-06T21:46:47.986Z",
   "source": "Yahoo Finance",
   "symbol": "GPRE",
   "summary": "Green Plains Inc. produces low-carbon fuels in the United States and internationally. It operates in two segments, Ethanol Production, and Agribusiness and Energy Services. The company produces, stores, and transports ethanol, distiller grains, and ultra-high protein and renewable corn oil. It is also involved in the grain procurement and commodity marketing businesses; and marketing ethanol for a third-party producer, as well as buys and sells ethanol, distiller grains, renewable corn oil, grain, natural gas, and other commodities in various markets. In addition, the company provides grain drying and storage services to grain producers. The company was formerly known as Green Plains Renewable Energy, Inc. and changed its name to Green Plains Inc. in May 2014. Green Plains Inc. was incorporated in 2004 and is headquartered in Omaha, Nebraska.",
@@ -7,10 +7,10 @@
   "website": "https://www.gpreinc.com",
   "employees": 642,
   "ceo": "Mr. Chris G. Osowski",
-  "next_earnings": "2026-11-05",
-  "earnings_estimated": false,
+  "next_earnings": "2027-02-04",
+  "earnings_estimated": true,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.61674,
+  "eps_estimate": 0.39268,
   "analysts": {
     "strong_buy": 0,
     "buy": 3,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 508487000,
-      "earnings": 11926000
-    },
-    {
       "q": "4Q2025",
       "revenue": 428849000,
       "earnings": 11940000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 446224000,
       "earnings": 67149000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 495990000,
+      "earnings": 85436000
     }
   ],
   "growth": {
-    "q0": 6.5304,
-    "q1": 4.311,
+    "q0": 4.311,
+    "q1": -0.2475,
     "y0": 1.9738001,
     "y1": -0.2323
   },
@@ -230,11 +230,11 @@
     "net_pct": null
   },
   "extras": {
-    "beta": 1.117,
-    "enterprise_value": 1320663168,
-    "ev_ebitda": 6.471,
-    "ev_revenue": 0.722,
-    "float_shares": 68924035,
+    "beta": null,
+    "enterprise_value": 1337004544,
+    "ev_ebitda": 4.637,
+    "ev_revenue": 0.736,
+    "float_shares": 68548110,
     "short_shares": 13100381,
     "short_pct_float": 21.14,
     "short_ratio": 9.24,
@@ -244,14 +244,8 @@
   "ex_dividend": "2019-05-23",
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 325,
+  "inst_count": 326,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.02952,
-      "actual": 0.0819,
-      "surprise_pct": 377.44
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.05482,
@@ -269,6 +263,12 @@
       "estimate": 0.63538,
       "actual": 0.83,
       "surprise_pct": 30.63
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.61674,
+      "actual": 1.03,
+      "surprise_pct": 67.01
     }
   ],
   "insiders": [
@@ -354,12 +354,12 @@
       "date": "2026-03-06"
     },
     {
-      "name": "OSOWSKI CHRIS",
-      "role": "Chief Executive Officer",
+      "name": "REIS ANN",
+      "role": "Chief Financial Officer",
       "kind": "other",
       "text": "Stock Award(Grant) at price 14.27 per share.",
-      "value": 1225008,
-      "shares": 85845,
+      "value": 300012,
+      "shares": 21024,
       "date": "2026-02-27"
     }
   ],

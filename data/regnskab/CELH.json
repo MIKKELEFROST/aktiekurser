@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:58.434Z",
+  "updated_at": "2026-11-06T21:46:47.323Z",
   "source": "Yahoo Finance",
   "symbol": "CELH",
   "summary": "Celsius Holdings, Inc. develops, processes, manufactures, markets, sells, and distributes functional energy drinks in the United States, North America, Europe, the Asia Pacific, and internationally. The company offers CELSIUS ESSENTIALS, a functional energy drink formulated with aminos; and CELSIUS Hydration, a line of zero-sugar hydration powders featuring electrolytes in various fruit-forward flavors, as well as ready-to-drink energy beverages, on-the-go powder and hydration sticks, and nutrition and wellness products under CELSIUS, Alani Nu, and Rockstar brand names. It distributes its products through direct-to-store delivery, independent distributors, supermarkets, convenience stores, drug stores, nutritional stores, food service providers, and mass merchants, as well as natural food stores, fitness centers, mass market retailers, vitamin specialty stores, club stores, gyms, and e-commerce platforms. The company was formerly known as Vector Ventures, Inc. and changed its name to Celsius Holdings, Inc. in January 2007. Celsius Holdings, Inc. was founded in 2004 and is headquartered in Boca Raton, Florida.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.33726,
+  "eps_estimate": 0.31184,
   "analysts": {
     "strong_buy": 6,
     "buy": 12,
@@ -72,12 +72,26 @@
     }
   ],
   "growth": {
-    "q0": -0.19700001,
-    "q1": 0.19940001,
+    "q0": 0.19940001,
+    "q1": -0.0184,
     "y0": 0.0584,
     "y1": 0.19530001
   },
   "ratings": [
+    {
+      "date": "2026-11-06",
+      "firm": "B. Riley Securities",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "reit"
+    },
+    {
+      "date": "2026-11-06",
+      "firm": "Needham",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-26",
       "firm": "JP Morgan",
@@ -130,20 +144,6 @@
     {
       "date": "2026-08-07",
       "firm": "JP Morgan",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-07",
-      "firm": "Bernstein",
-      "from": "Outperform",
-      "to": "Market Perform",
-      "action": "down"
-    },
-    {
-      "date": "2026-08-07",
-      "firm": "Piper Sandler",
       "from": "Overweight",
       "to": "Overweight",
       "action": "main"
@@ -231,10 +231,10 @@
   },
   "extras": {
     "beta": 0.95,
-    "enterprise_value": 9584418816,
-    "ev_ebitda": 14.268,
-    "ev_revenue": 3.145,
-    "float_shares": 193275760,
+    "enterprise_value": 9288932352,
+    "ev_ebitda": 13.792,
+    "ev_revenue": 2.931,
+    "float_shares": 192272590,
     "short_shares": 30105445,
     "short_pct_float": 12.1,
     "short_ratio": 4.84,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 691,
+  "inst_count": 696,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.27622,
-      "actual": 0.42,
-      "surprise_pct": 52.05
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.18991,
@@ -269,6 +263,12 @@
       "estimate": 0.41804,
       "actual": 0.36,
       "surprise_pct": -13.88
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.33726,
+      "actual": 0.41,
+      "surprise_pct": 21.57
     }
   ],
   "insiders": [
@@ -336,21 +336,21 @@
       "date": "2026-05-21"
     },
     {
-      "name": "RUSSELL JOYCE",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 51.31 per share.",
-      "value": 147773,
-      "shares": 2880,
-      "date": "2026-03-02"
-    },
-    {
       "name": "LAM THI TUYET TRINH",
       "role": "Officer",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 9238,
+      "date": "2026-03-02"
+    },
+    {
+      "name": "RUSSELL JOYCE",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 51.31 per share.",
+      "value": 147773,
+      "shares": 2880,
       "date": "2026-03-02"
     },
     {

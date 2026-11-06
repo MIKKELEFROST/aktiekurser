@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:58.603Z",
+  "updated_at": "2026-11-06T21:46:47.528Z",
   "source": "Yahoo Finance",
   "symbol": "DBX",
   "summary": "Dropbox, Inc. provides a content collaboration platform in the United States and internationally. The company's platform enables individuals, families, teams, and organizations to collaborate for free through its website or app, or through a paid subscription plan for premium features. Its platform consists of various elements, such as unified home for content, global sharing network, and product experiences and integrations. The company serves customers in the professional services, technology, media, education, industrial, consumer and retail, and financial services industries. The company was formerly known as Evenflow, Inc. and changed its name to Dropbox, Inc. in October 2009. Dropbox, Inc. was incorporated in 2007 and is headquartered in San Francisco, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.7279,
+  "eps_estimate": 0.82067,
   "analysts": {
     "strong_buy": 1,
     "buy": 0,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 634400000,
-      "earnings": 123800000
-    },
-    {
       "q": "4Q2025",
       "revenue": 636200000,
       "earnings": 108700000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 631500000,
       "earnings": 95800000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 637300000,
+      "earnings": 116100000
     }
   ],
   "growth": {
-    "q0": -0.0164,
-    "q1": 0.2069,
+    "q0": 0.2069,
+    "q1": 0.0425,
     "y0": 0.0784,
     "y1": 0.078099996
   },
   "ratings": [
+    {
+      "date": "2026-11-06",
+      "firm": "RBC Capital",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
     {
       "date": "2026-11-03",
       "firm": "Stephens & Co.",
@@ -139,13 +146,6 @@
       "firm": "JP Morgan",
       "from": "Neutral",
       "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-02-20",
-      "firm": "UBS",
-      "from": "Sell",
-      "to": "Sell",
       "action": "main"
     }
   ],
@@ -223,18 +223,18 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 16,
-    "sells": 34,
-    "bought": 2290322,
-    "sold": 1098472,
+    "buys": 17,
+    "sells": 35,
+    "bought": 2674122,
+    "sold": 1482272,
     "net_pct": 6.7
   },
   "extras": {
-    "beta": 0.589,
-    "enterprise_value": 10711278592,
-    "ev_ebitda": 12.904,
-    "ev_revenue": 4.231,
-    "float_shares": 129067415,
+    "beta": null,
+    "enterprise_value": 10616431616,
+    "ev_ebitda": 12.848,
+    "ev_revenue": 4.189,
+    "float_shares": 129519156,
     "short_shares": 22915870,
     "short_pct_float": 27.65,
     "short_ratio": 5.23,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 645,
+  "inst_count": 647,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.64868,
-      "actual": 0.74,
-      "surprise_pct": 14.08
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.66943,
@@ -269,9 +263,33 @@
       "estimate": 0.73872,
       "actual": 0.75,
       "surprise_pct": 1.53
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.7279,
+      "actual": 0.88,
+      "surprise_pct": 20.9
     }
   ],
   "insiders": [
+    {
+      "name": "HOUSTON ANDREW W",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 35.81 per share.",
+      "value": 13744185,
+      "shares": 383800,
+      "date": "2026-11-02"
+    },
+    {
+      "name": "HOUSTON ANDREW W",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 383800,
+      "date": "2026-11-02"
+    },
     {
       "name": "SCHUBACH SARAH ELIZABETH",
       "role": "Officer",
@@ -343,24 +361,6 @@
       "value": 74480,
       "shares": 2025,
       "date": "2026-09-15"
-    },
-    {
-      "name": "SCHUBACH SARAH ELIZABETH",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 36.78 per share.",
-      "value": 73229,
-      "shares": 1991,
-      "date": "2026-09-15"
-    },
-    {
-      "name": "ALKARMI ASHRAF",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 35.54 per share.",
-      "value": 1023454,
-      "shares": 28800,
-      "date": "2026-09-11"
     }
   ],
   "dividends": [],

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:58.312Z",
+  "updated_at": "2026-11-06T21:46:47.159Z",
   "source": "Yahoo Finance",
   "symbol": "BLND",
   "summary": "Blend Labs, Inc. provides a cloud-based software platform for financial services firms in the United States, India, and Mexico. The company offers a suite of products that powers digital-first consumer journeys for mortgages, home equity loans and lines of credit, vehicle loans, rapid home lending, personal loans, credit cards, and deposit accounts; and a suite of add-on products that offers to enhance consumers' journeys to homeownership, such as close, income verification for mortgage and home equity lines of credit, and home equity loans. It also provides Blend Builder to configure or build custom workflows from a pre-built set of components; verification components to automate confirmation tasks that are needed to underwrite a loan or approve the opening of a new deposit account; decisioning components to reduce the need for human intervention by automatically applying business rules throughout an application workflow configured by a financial services firm; AI capabilities; and workflow intelligence components to manage data collection and automate tasks throughout the loan origination process. In addition, the company offers application programming interfaces, which integrate the capabilities of technology, data, and service providers into software platform, as well as support services, professional and consulting services. It serves banks, credit unions, fintechs, and other non-bank mortgage lenders. The company was incorporated in 2012 and is headquartered in Novato, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.0075,
+  "eps_estimate": 0.01333,
   "analysts": {
     "strong_buy": 1,
     "buy": 4,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 32860000,
-      "earnings": 7974000
-    },
-    {
       "q": "4Q2025",
       "revenue": 32368000,
       "earnings": -7277000
@@ -69,15 +64,34 @@
       "q": "2Q2026",
       "revenue": 33837000,
       "earnings": -6410000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 32910000,
+      "earnings": -7077000
     }
   ],
   "growth": {
-    "q0": -0.6377,
-    "q1": -0.4752,
+    "q0": -0.4752,
+    "q1": 0.1765,
     "y0": -0.3466,
     "y1": 0.26319999
   },
   "ratings": [
+    {
+      "date": "2026-11-06",
+      "firm": "Wells Fargo",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-06",
+      "firm": "Citizens",
+      "from": "Market Outperform",
+      "to": "Market Outperform",
+      "action": "main"
+    },
     {
       "date": "2026-08-13",
       "firm": "Canaccord Genuity",
@@ -132,20 +146,6 @@
       "firm": "Wells Fargo",
       "from": "Overweight",
       "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-03-11",
-      "firm": "Citizens",
-      "from": "Market Outperform",
-      "to": "Market Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2025-11-10",
-      "firm": "UBS",
-      "from": "Neutral",
-      "to": "Neutral",
       "action": "main"
     }
   ],
@@ -227,14 +227,14 @@
     "sells": 12,
     "bought": 7822158,
     "sold": 298678,
-    "net_pct": 47.1
+    "net_pct": 46.6
   },
   "extras": {
-    "beta": 1.024,
-    "enterprise_value": 429065056,
-    "ev_ebitda": -29.623,
-    "ev_revenue": 3.306,
-    "float_shares": 175093175,
+    "beta": null,
+    "enterprise_value": 401754336,
+    "ev_ebitda": -49.679,
+    "ev_revenue": 3.094,
+    "float_shares": 176415463,
     "short_shares": 8991580,
     "short_pct_float": 4.41,
     "short_ratio": 5.08,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": null,
-  "inst_count": 241,
+  "inst_count": 240,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.012,
-      "actual": 0.0207,
-      "surprise_pct": 72.5
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.01,
@@ -269,6 +263,12 @@
       "estimate": 0.016,
       "actual": 0.0297,
       "surprise_pct": 85.63
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.0075,
+      "actual": 0.0218,
+      "surprise_pct": 190.67
     }
   ],
   "insiders": [

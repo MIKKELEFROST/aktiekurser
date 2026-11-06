@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:58.229Z",
+  "updated_at": "2026-11-06T21:46:47.053Z",
   "source": "Yahoo Finance",
   "symbol": "BAM",
   "summary": "Brookfield Asset Management Ltd. is a private equity firm specializing in acquisitions and growth capital investments. The firm primarily provides its services to institutional clients, high net worth individuals, financial institutions, public and private pension plans, sovereign wealth funds, endowments, and foundations. The firm manages separate client-focused public and private fund portfolios, listed partnerships, separate accounts, and co-investments. The firm invests in real assets, including real estate, infrastructure, renewable power, private equity, and credit. The firm employs fundamental and operational analysis to make its investments. The firm uses both in-house and external research to complement its investment process. Brookfield Asset Management Ltd. was founded in 2022 and is based in New York. Brookfield Asset Management Ltd. operates as a subsidiary of Brookfield Corporation.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-06",
   "earnings_estimated": false,
   "earnings_call": "2026-11-06",
-  "eps_estimate": 0.46464,
+  "eps_estimate": 0.48908,
   "analysts": {
     "strong_buy": 3,
     "buy": 7,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 19
   },
-  "target_mean": 55.81263,
+  "target_mean": 55.97053,
   "target_high": 70,
   "target_low": 44,
   "target_analysts": 19,
@@ -51,33 +51,40 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 1252000000,
-      "earnings": 724000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 1394000000,
       "earnings": 560000000
     },
     {
       "q": "1Q2026",
-      "revenue": 1338000000,
+      "revenue": 1426000000,
       "earnings": 617000000
     },
     {
       "q": "2Q2026",
-      "revenue": 1753000000,
+      "revenue": 1494000000,
       "earnings": 904000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 2149000000,
+      "earnings": 2645000000
     }
   ],
   "growth": {
-    "q0": 0.1333,
-    "q1": 0.043,
-    "y0": 0.1087,
-    "y1": 0.17559999
+    "q0": 0.040599998,
+    "q1": 0.17969999,
+    "y0": 0.1084,
+    "y1": 0.1751
   },
   "ratings": [
+    {
+      "date": "2026-11-05",
+      "firm": "JP Morgan",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-10-19",
       "firm": "Piper Sandler",
@@ -140,13 +147,6 @@
       "from": "Sector Outperform",
       "to": "Sector Outperform",
       "action": "main"
-    },
-    {
-      "date": "2026-05-06",
-      "firm": "JP Morgan",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
     }
   ],
   "holders": [
@@ -207,18 +207,18 @@
       "date": "2026-06-30"
     },
     {
+      "name": "CIBC Asset Management Inc.",
+      "kind": "institution",
+      "pct": 0.56,
+      "shares": 9119223,
+      "date": "2026-09-30"
+    },
+    {
       "name": "Principal Funds, Inc-MidCap Fund",
       "kind": "fond",
       "pct": 0.56,
       "shares": 9166959,
       "date": "2026-07-31"
-    },
-    {
-      "name": "WASHINGTON MUTUAL INVESTORS FUND",
-      "kind": "fond",
-      "pct": 0.52,
-      "shares": 8443576,
-      "date": "2026-09-30"
     }
   ],
   "insider_net": {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.322,
-    "enterprise_value": 93368287232,
-    "ev_ebitda": 24.378,
-    "ev_revenue": 16.275,
+    "enterprise_value": 90732822528,
+    "ev_ebitda": 23.69,
+    "ev_revenue": 15.815,
     "float_shares": 319530189,
     "short_shares": 23524624,
     "short_pct_float": 6.25,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-08-31",
   "dividend_date": null,
   "payout_ratio": 1.0805,
-  "inst_count": 909,
+  "inst_count": 905,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.40051,
-      "actual": 0.41,
-      "surprise_pct": 2.37
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.43696,
@@ -269,6 +263,12 @@
       "estimate": 0.43842,
       "actual": 0.44,
       "surprise_pct": 0.36
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.46519,
+      "actual": 0.47,
+      "surprise_pct": 1.03
     }
   ],
   "insiders": [

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:58.127Z",
+  "updated_at": "2026-11-06T21:46:46.913Z",
   "source": "Yahoo Finance",
   "symbol": "AORT",
   "summary": "Artivion, Inc. manufactures, processes, and distributes medical devices and implantable human tissues worldwide. The company offers On-X prosthetic aortic and mitral heart valves; On-X ascending aortic prosthesis; CarbonAid CO2 diffusion catheters; Chord-X ePTFE sutures; pyrolytic carbon coating services; E-vita Open NEO, a hybrid stent graft; Arcevo, an LSA hybrid stent graft system; AMDS hybrid prosthesis; and NEXUS ONE, an endovascular stent graft system. It also provides NEXUS DUO, an aortic arch system; NEXUS TRE, a custom-made three branch graft; E-vita thoracic 3G, a stent graft system; E-xtra Design Engineering, a range of stent graft systems for the treatment of aortic vascular diseases, such as TAAA and Artivex; E-nside, a multibranch stent graft system; E-tegra, an AAA stent graft system; E-ventus BX and Tuva BX balloon-expandable peripheral stent grafts; and E-liac, a stent graft used to treat aneurysmal iliac arteries. In addition, the company offers synthetic vascular grafts that are used in open aortic and peripheral vascular surgical procedures; BioGlue, a surgical sealant; CryoValve SG pulmonary heart valve; CryoPatch SG pulmonary cardiac patch; SynerGraft, a decellularization technology; vascular preservation services; and PhotoFix, a bovine pericardial patch fixated. It markets its products and preservation services primarily to physicians through a direct sales team to hospitals and other healthcare facilities. The company was formerly known as CryoLife, Inc. and changed its name to Artivion, Inc. in January 2022. Artivion, Inc. was incorporated in 1984 and is headquartered in Kennesaw, Georgia.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.066,
+  "eps_estimate": 0.12,
   "analysts": {
     "strong_buy": 2,
     "buy": 7,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 113388000,
-      "earnings": 6502000
-    },
-    {
       "q": "4Q2025",
       "revenue": 115992000,
       "earnings": 2426000
@@ -69,15 +64,34 @@
       "q": "2Q2026",
       "revenue": 125757000,
       "earnings": -13510000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 123790000,
+      "earnings": -7926000
     }
   ],
   "growth": {
-    "q0": -0.5875,
-    "q1": -0.2941,
+    "q0": -0.2941,
+    "q1": 0.375,
     "y0": -0.36830002,
     "y1": 0.88019997
   },
   "ratings": [
+    {
+      "date": "2026-11-06",
+      "firm": "Canaccord Genuity",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-06",
+      "firm": "Citizens",
+      "from": "Market Outperform",
+      "to": "Market Outperform",
+      "action": "main"
+    },
     {
       "date": "2026-10-20",
       "firm": "Jefferies",
@@ -129,20 +143,6 @@
     },
     {
       "date": "2026-04-07",
-      "firm": "Needham",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "reit"
-    },
-    {
-      "date": "2026-02-13",
-      "firm": "Canaccord Genuity",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-02-02",
       "firm": "Needham",
       "from": "Buy",
       "to": "Buy",
@@ -230,11 +230,11 @@
     "net_pct": -1.1
   },
   "extras": {
-    "beta": 1.277,
-    "enterprise_value": 1620253056,
-    "ev_ebitda": 25.43,
-    "ev_revenue": 3.437,
-    "float_shares": 46275992,
+    "beta": null,
+    "enterprise_value": 1594478720,
+    "ev_ebitda": 41.595,
+    "ev_revenue": 3.309,
+    "float_shares": 46308053,
     "short_shares": 3735523,
     "short_pct_float": 9.21,
     "short_ratio": 6.21,
@@ -244,14 +244,8 @@
   "ex_dividend": "2015-12-09",
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 292,
+  "inst_count": 294,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.152,
-      "actual": 0.16,
-      "surprise_pct": 5.26
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.176,
@@ -269,6 +263,12 @@
       "estimate": 0.09667,
       "actual": 0.13,
       "surprise_pct": 34.48
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.066,
+      "actual": 0.08,
+      "surprise_pct": 21.21
     }
   ],
   "insiders": [

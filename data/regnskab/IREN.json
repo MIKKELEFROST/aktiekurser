@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:59.255Z",
+  "updated_at": "2026-11-06T21:46:48.233Z",
   "source": "Yahoo Finance",
   "symbol": "IREN",
   "summary": "IREN Limited operates as a vertically integrated AI cloud services platform in Australia and Canada. It develops, owns, and operates data centers, including the associated land, grid connections, and substations, as well as buildings and cooling. The company also owns and operates compute layers, such as GPUs, CPUs, storage, servers, and networking deployed within that data center infrastructure; and software layers comprising managed services and enterprise support that enables customers to deploy, operate, and manage AI workloads. In addition, it is involved in Bitcoin mining. Further, its division IREN Europe operates a planned AI data center in Badajoz, Spain that deliver approximately 300MW of capacity, including managed services to customers seeking greater choice over where their AI workloads run and how their data and infrastructure are managed in Europe. The company was formerly known as Iris Energy Limited and changed its name to IREN Limited in November 2024. IREN Limited was incorporated in 2018 and is based in Sydney, Australia.",
@@ -7,10 +7,10 @@
   "website": "https://iren.com",
   "employees": 685,
   "ceo": "Mr. William  Roberts",
-  "next_earnings": "2026-11-05",
-  "earnings_estimated": false,
+  "next_earnings": "2027-02-04",
+  "earnings_estimated": true,
   "earnings_call": "2026-11-05",
-  "eps_estimate": -0.665,
+  "eps_estimate": -1.34,
   "analysts": {
     "strong_buy": 3,
     "buy": 13,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 244000000,
-      "earnings": 384611000
-    },
-    {
       "q": "4Q2025",
       "revenue": 184700000,
       "earnings": -155400000
@@ -69,15 +64,34 @@
       "q": "2Q2026",
       "revenue": 137200000,
       "earnings": -684000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 228000000,
+      "earnings": -263000000
     }
   ],
   "growth": {
-    "q0": -83.5062,
-    "q1": -45.366802,
+    "q0": -45.366802,
+    "q1": -4.278,
     "y0": -6.2390003,
     "y1": -0.16409999
   },
   "ratings": [
+    {
+      "date": "2026-11-06",
+      "firm": "HC Wainwright & Co.",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-06",
+      "firm": "Cantor Fitzgerald",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-10-30",
       "firm": "B. Riley Securities",
@@ -133,20 +147,6 @@
       "from": "Buy",
       "to": "Buy",
       "action": "reit"
-    },
-    {
-      "date": "2026-08-28",
-      "firm": "Macquarie",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-28",
-      "firm": "Freedom Capital Markets",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
     }
   ],
   "holders": [
@@ -227,16 +227,16 @@
     "sells": 1,
     "bought": 19358358,
     "sold": 11958,
-    "net_pct": 304.4
+    "net_pct": 232.2
   },
   "extras": {
-    "beta": 4.335,
-    "enterprise_value": 10498948096,
-    "ev_ebitda": 273.788,
-    "ev_revenue": 14.85,
-    "float_shares": 385775535,
+    "beta": null,
+    "enterprise_value": 14203163648,
+    "ev_ebitda": -463.353,
+    "ev_revenue": 20.436,
+    "float_shares": 415437389,
     "short_shares": 94617935,
-    "short_pct_float": 24.06,
+    "short_pct_float": 24.4,
     "short_ratio": 2.17,
     "last_split": null,
     "last_split_date": null
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 927,
+  "inst_count": 926,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.14333,
-      "actual": 0.00806,
-      "surprise_pct": -94.38
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.25,

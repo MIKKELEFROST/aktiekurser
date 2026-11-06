@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:58.516Z",
+  "updated_at": "2026-11-06T21:46:47.426Z",
   "source": "Yahoo Finance",
   "symbol": "COMP",
   "summary": "Compass, Inc. provides an end-to-end technology platform for residential real estate in the United States. The company offers the Compass Platform, a technology platform that provides an integrated suite of cloud-based software for customer relationship management, marketing, client service, brokerage services, and other functionalities for the real estate industry, as well as title, escrow, and mortgage services. It also operates Christie's International Real Estate (CIRE) platform, a multi-tenant technology platform for affiliates and its agents; Anywhere tools and services; and Compass Concierge, a program that provides home sellers with access to capital to front the cost of home improvement services. The company was formerly known as Urban Compass, Inc. and changed its name to Compass, Inc. in January 2021. Compass, Inc. was incorporated in 2012 and is headquartered in New York, New York.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.18705,
+  "eps_estimate": 0.02811,
   "analysts": {
     "strong_buy": 4,
     "buy": 5,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 1846000000,
-      "earnings": -4600000
-    },
-    {
       "q": "4Q2025",
       "revenue": 1699800000,
       "earnings": -42600000
@@ -69,15 +64,48 @@
       "q": "2Q2026",
       "revenue": 4306000000,
       "earnings": 92000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 3897000000,
+      "earnings": 62000000
     }
   ],
   "growth": {
-    "q0": 0.65970004,
-    "q1": -0.44939998,
+    "q0": -0.44939998,
+    "q1": null,
     "y0": 1.6292,
     "y1": -0.146
   },
   "ratings": [
+    {
+      "date": "2026-11-06",
+      "firm": "Barclays",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-06",
+      "firm": "Wells Fargo",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-06",
+      "firm": "StoneX",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-06",
+      "firm": "BTIG",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-30",
       "firm": "JP Morgan",
@@ -115,34 +143,6 @@
     },
     {
       "date": "2026-10-12",
-      "firm": "Wells Fargo",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-06",
-      "firm": "Zelman & Assoc",
-      "from": "Outperform",
-      "to": "Neutral",
-      "action": "down"
-    },
-    {
-      "date": "2026-08-05",
-      "firm": "Goldman Sachs",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-05",
-      "firm": "Oppenheimer",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-05",
       "firm": "Wells Fargo",
       "from": "Equal-Weight",
       "to": "Equal-Weight",
@@ -195,9 +195,9 @@
     {
       "name": "Fidelity Rutland Square TRT II-Strategic Advisers Fidelity U.S. Total ",
       "kind": "fond",
-      "pct": 2.88,
-      "shares": 21799445,
-      "date": "2026-08-31"
+      "pct": 2.9,
+      "shares": 22005345,
+      "date": "2026-09-30"
     },
     {
       "name": "SB Investment Advisers (UK) LTD",
@@ -225,16 +225,16 @@
     "period": "6m",
     "buys": 16,
     "sells": 3,
-    "bought": 590493,
+    "bought": 590139,
     "sold": 70368,
-    "net_pct": 4.8
+    "net_pct": 4.7
   },
   "extras": {
-    "beta": 2.358,
-    "enterprise_value": 11028523008,
-    "ev_ebitda": 31.691,
-    "ev_revenue": 1.045,
-    "float_shares": 734758655,
+    "beta": null,
+    "enterprise_value": 10237012992,
+    "ev_ebitda": 18.055,
+    "ev_revenue": 0.812,
+    "float_shares": 745550730,
     "short_shares": 57487595,
     "short_pct_float": 7.69,
     "short_ratio": 3.34,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 551,
+  "inst_count": 552,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.11272,
-      "actual": 0.1127,
-      "surprise_pct": -0.02
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.02381,
@@ -269,9 +263,24 @@
       "estimate": 0.24974,
       "actual": 0.1943,
       "surprise_pct": -22.2
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.18705,
+      "actual": 0.1519,
+      "surprise_pct": -18.79
     }
   ],
   "insiders": [
+    {
+      "name": "SORDELLO STEVEN J",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 2419,
+      "date": "2026-11-02"
+    },
     {
       "name": "GUSTAVSON TIMOTHY B",
       "role": "Officer",
@@ -352,15 +361,6 @@
       "value": null,
       "shares": 101733,
       "date": "2026-06-15"
-    },
-    {
-      "name": "MCCARTER JOSHUA N",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Gift at price 0.00 per share.",
-      "value": 0,
-      "shares": 35288,
-      "date": "2026-06-11"
     }
   ],
   "dividends": [],

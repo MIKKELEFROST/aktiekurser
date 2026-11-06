@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:58.349Z",
+  "updated_at": "2026-11-06T21:46:47.210Z",
   "source": "Yahoo Finance",
   "symbol": "BRT",
   "summary": "BRT Apartments Corp. is a real estate investment trust that owns, operates and, to a lesser extent, holds interests in joint ventures that own multi-family properties. As of March 11, 2026, BRT owns or has interests in 31 multi-family properties with 8,311 units in 11 states and has preferred equity investments in two multi-family properties. BRT Apartments Corp. was established on June 16, 1972 and is based in Great Neck, United States.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": true,
   "earnings_call": null,
-  "eps_estimate": -0.21,
+  "eps_estimate": -0.205,
   "analysts": {
     "strong_buy": 1,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 24434000,
-      "earnings": -2707000
-    },
-    {
       "q": "4Q2025",
       "revenue": 24291000,
       "earnings": -4321000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 24041000,
       "earnings": -3221000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 24735000,
+      "earnings": -3955000
     }
   ],
   "growth": {
-    "q0": -0.5,
-    "q1": 0.1087,
+    "q0": 0.1087,
+    "q1": -0.17860001,
     "y0": -0.1825,
     "y1": 0.0134000005
   },
@@ -218,7 +218,7 @@
       "kind": "institution",
       "pct": 0.95,
       "shares": 179132,
-      "date": "2026-06-30"
+      "date": "2026-09-30"
     }
   ],
   "insider_net": {
@@ -230,11 +230,11 @@
     "net_pct": 0
   },
   "extras": {
-    "beta": 0.886,
-    "enterprise_value": 742099520,
-    "ev_ebitda": 19.948,
-    "ev_revenue": 7.681,
-    "float_shares": 11034417,
+    "beta": null,
+    "enterprise_value": 729497920,
+    "ev_ebitda": 18.852,
+    "ev_revenue": 7.449,
+    "float_shares": 10397745,
     "short_shares": 435850,
     "short_pct_float": 4.04,
     "short_ratio": 6.29,
@@ -246,12 +246,6 @@
   "payout_ratio": 5,
   "inst_count": 155,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.15,
-      "actual": -0.14,
-      "surprise_pct": 6.67
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.15,
@@ -269,18 +263,15 @@
       "estimate": -0.195,
       "actual": -0.19,
       "surprise_pct": 2.56
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.21,
+      "actual": -0.23,
+      "surprise_pct": -9.52
     }
   ],
   "insiders": [
-    {
-      "name": "GINSBURG ALAN H",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Gift at price 13.43 per share.",
-      "value": 673232,
-      "shares": 50129,
-      "date": "2026-10-16"
-    },
     {
       "name": "GINSBURG ALAN H",
       "role": "Director",
@@ -291,21 +282,21 @@
       "date": "2026-10-16"
     },
     {
-      "name": "WEISS ELIE Y",
+      "name": "GINSBURG ALAN H",
       "role": "Director",
       "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 4250,
-      "date": "2026-01-09"
+      "text": "Stock Gift at price 13.43 per share.",
+      "value": 673232,
+      "shares": 50129,
+      "date": "2026-10-16"
     },
     {
-      "name": "GRASSI LOUIS C",
-      "role": "Director",
+      "name": "LUNDY MARK H",
+      "role": "Officer",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 4250,
+      "shares": 9193,
       "date": "2026-01-09"
     },
     {
@@ -327,15 +318,6 @@
       "date": "2026-01-09"
     },
     {
-      "name": "GOULD JEFFREY ALAN",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 13387,
-      "date": "2026-01-09"
-    },
-    {
       "name": "HURAND GARY J",
       "role": "Director",
       "kind": "other",
@@ -354,7 +336,25 @@
       "date": "2026-01-09"
     },
     {
-      "name": "RUBIN JEFFREY G",
+      "name": "GOULD JEFFREY ALAN",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 13387,
+      "date": "2026-01-09"
+    },
+    {
+      "name": "WEISS ELIE Y",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 4250,
+      "date": "2026-01-09"
+    },
+    {
+      "name": "GRASSI LOUIS C",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

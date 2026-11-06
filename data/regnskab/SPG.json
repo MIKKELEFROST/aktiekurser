@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:15:00.178Z",
+  "updated_at": "2026-11-06T21:46:49.439Z",
   "source": "Yahoo Finance",
   "symbol": "SPG",
   "summary": "Simon Property Group, Inc. is a self-administered and self-managed real estate investment trust (REIT). Simon Property Group, L.P., or the Operating Partnership, is our majority-owned partnership subsidiary that owns all of our real estate properties and other assets. In this package, the terms Simon, we, our, or the Company refer to Simon Property Group, Inc., the Operating Partnership, and its subsidiaries. We own, develop and manage premier shopping, dining, entertainment and mixed-use destinations, which consist primarily of malls, Premium Outlets, The Mills, and International Properties. At December 31, 2024, we owned or had an interest in 229 properties comprising 183 million square feet in North America, Asia and Europe. We also owned an 88% interest in The Taubman Realty Group, or TRG, which owns 22 regional, super-regional, and outlet malls in the U.S. and Asia. Additionally, at December 31, 2024, we had a 22.4% ownership interest in Klepierre, a publicly traded, Paris-based real estate company, which owns shopping centers in 14 European countries. Simon Property Group, Inc. was incorporated in 1960 and is based in Indianapolis, Indiana.",
@@ -7,10 +7,10 @@
   "website": "https://www.simon.com",
   "employees": 3100,
   "ceo": "Mr. Eli M. Simon",
-  "next_earnings": "2026-11-05",
-  "earnings_estimated": false,
+  "next_earnings": "2027-02-01",
+  "earnings_estimated": true,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 1.62333,
+  "eps_estimate": 1.83667,
   "analysts": {
     "strong_buy": 1,
     "buy": 5,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 1452930000,
-      "earnings": 606174000
-    },
-    {
       "q": "4Q2025",
       "revenue": 1639349000,
       "earnings": 3048269000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 1659709000,
       "earnings": 483139000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1681393000,
+      "earnings": 498959000
     }
   ],
   "growth": {
-    "q0": 0.0165,
-    "q1": 0.7596,
+    "q0": 0.7596,
+    "q1": 0.16870001,
     "y0": 0.054899998,
     "y1": 0.0863
   },
   "ratings": [
+    {
+      "date": "2026-11-06",
+      "firm": "Evercore ISI Group",
+      "from": "In-Line",
+      "to": "In-Line",
+      "action": "main"
+    },
     {
       "date": "2026-10-12",
       "firm": "Piper Sandler",
@@ -139,13 +146,6 @@
       "firm": "Citigroup",
       "from": "Neutral",
       "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-17",
-      "firm": "Barclays",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
       "action": "main"
     }
   ],
@@ -230,11 +230,11 @@
     "net_pct": null
   },
   "extras": {
-    "beta": 1.306,
-    "enterprise_value": 103804166144,
-    "ev_ebitda": 20.254,
-    "ev_revenue": 14.956,
-    "float_shares": 319848287,
+    "beta": null,
+    "enterprise_value": 107411709952,
+    "ev_ebitda": 20.636,
+    "ev_revenue": 15.015,
+    "float_shares": 339202155,
     "short_shares": 377,
     "short_pct_float": 0,
     "short_ratio": 0,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-09-09",
   "dividend_date": null,
   "payout_ratio": 0.621,
-  "inst_count": 1875,
+  "inst_count": 1879,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.675,
-      "actual": 1.597,
-      "surprise_pct": -4.66
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.97333,
@@ -269,27 +263,15 @@
       "estimate": 1.57027,
       "actual": 1.7291,
       "surprise_pct": 10.11
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.62333,
+      "actual": 1.9361,
+      "surprise_pct": 19.27
     }
   ],
   "insiders": [
-    {
-      "name": "RODKIN GARY M",
-      "role": "Director",
-      "kind": "buy",
-      "text": "Purchase at price 223.25 - 224.31 per share.",
-      "value": 10538,
-      "shares": 47,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "LEIBOWITZ REUBEN S",
-      "role": "Director",
-      "kind": "buy",
-      "text": "Purchase at price 223.94 - 225.03 per share.",
-      "value": 17525,
-      "shares": 78,
-      "date": "2026-06-30"
-    },
     {
       "name": "AEPPEL GLYN F",
       "role": "Director",
@@ -360,6 +342,24 @@
       "text": "Purchase at price 223.32 - 224.41 per share.",
       "value": 13004,
       "shares": 58,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "RODKIN GARY M",
+      "role": "Director",
+      "kind": "buy",
+      "text": "Purchase at price 223.25 - 224.31 per share.",
+      "value": 10538,
+      "shares": 47,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "LEIBOWITZ REUBEN S",
+      "role": "Director",
+      "kind": "buy",
+      "text": "Purchase at price 223.94 - 225.03 per share.",
+      "value": 17525,
+      "shares": 78,
       "date": "2026-06-30"
     }
   ],

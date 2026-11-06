@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:58.919Z",
+  "updated_at": "2026-11-06T21:46:47.821Z",
   "source": "Yahoo Finance",
   "symbol": "FIGS",
   "summary": "FIGS, Inc., together with its subsidiary, FIGS Canada, Inc., operates as a direct-to-consumer healthcare apparel and lifestyle company in the United States and internationally. The company designs and sells scrubwear and non-scrubwear offerings, such as outerwear, underscrubs, footwear, compression socks, lab coats, loungewear, and other apparel. It also offers sports apparel, performance leggings and tops, super-soft pima cotton tops, vests, fleeces, and jackets; and necessities comprising scrub caps, lanyards, badge reels, bags, baseball caps, and beanies. The company markets and sells its products to healthcare professionals through its direct-to-consumer digital platform comprising website, mobile app, and B2B business, as well as retail stores. FIGS, Inc. was incorporated in 2013 and is headquartered in Santa Monica, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.07214,
+  "eps_estimate": 0.11757,
   "analysts": {
     "strong_buy": 1,
     "buy": 4,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 151661000,
-      "earnings": 8746000
-    },
-    {
       "q": "4Q2025",
       "revenue": 201896000,
       "earnings": 18507000
@@ -69,15 +64,34 @@
       "q": "2Q2026",
       "revenue": 196619000,
       "earnings": 28379000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 190689000,
+      "earnings": 19281000
     }
   ],
   "growth": {
-    "q0": 0.4428,
-    "q1": 0.1757,
+    "q0": 0.1757,
+    "q1": 0.78330004,
     "y0": 0.8993,
     "y1": 0.0454
   },
   "ratings": [
+    {
+      "date": "2026-11-06",
+      "firm": "Barclays",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-06",
+      "firm": "Keybanc",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-11-03",
       "firm": "Barclays",
@@ -132,20 +146,6 @@
       "firm": "Keybanc",
       "from": "Overweight",
       "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-04-24",
-      "firm": "BTIG",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "reit"
-    },
-    {
-      "date": "2026-04-13",
-      "firm": "Morgan Stanley",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
       "action": "main"
     }
   ],
@@ -224,17 +224,17 @@
   "insider_net": {
     "period": "6m",
     "buys": 7,
-    "sells": 2,
+    "sells": 1,
     "bought": 108192,
-    "sold": 55982,
-    "net_pct": 0.7
+    "sold": 23597,
+    "net_pct": 1.1
   },
   "extras": {
-    "beta": 1.057,
-    "enterprise_value": 3406496000,
-    "ev_ebitda": 43.201,
-    "ev_revenue": 4.797,
-    "float_shares": 151485011,
+    "beta": null,
+    "enterprise_value": 3086095360,
+    "ev_ebitda": 33.752,
+    "ev_revenue": 4.12,
+    "float_shares": 151148905,
     "short_shares": 20068694,
     "short_pct_float": 21.79,
     "short_ratio": 5.38,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 342,
+  "inst_count": 341,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.0178,
-      "actual": 0.05,
-      "surprise_pct": 180.9
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.02075,
@@ -269,6 +263,12 @@
       "estimate": 0.0685,
       "actual": 0.1143,
       "surprise_pct": 66.86
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.07214,
+      "actual": 0.1,
+      "surprise_pct": 38.62
     }
   ],
   "insiders": [

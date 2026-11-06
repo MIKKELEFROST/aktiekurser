@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:59.584Z",
+  "updated_at": "2026-11-06T21:46:48.715Z",
   "source": "Yahoo Finance",
   "symbol": "MP",
   "summary": "MP Materials Corp., together with its subsidiaries, produces rare earth materials in the Western Hemisphere. It operates in two segments, Materials and Magnetics. The Materials segment owns and operates the Mountain Pass Rare Earth Mine and Processing facility located near Mountain Pass, San Bernardino County, California. The Magnetics segment produces magnetic precursor products, including NdPr metal; and manufactures NdFeB permanent magnets. MP Materials Corp. was founded in 2017 and is headquartered in Las Vegas, Nevada.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": -0.00962,
+  "eps_estimate": 0.01603,
   "analysts": {
     "strong_buy": 5,
     "buy": 13,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 53553000,
-      "earnings": -41780000
-    },
-    {
       "q": "4Q2025",
       "revenue": 52685000,
       "earnings": 9426000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 108490000,
       "earnings": -20296000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 147655000,
+      "earnings": -20710000
     }
   ],
   "growth": {
-    "q0": 0.90379995,
-    "q1": -0.8219,
+    "q0": -0.8219,
+    "q1": 2.3242998,
     "y0": 0.9508,
     "y1": 63.8847
   },
@@ -230,11 +230,11 @@
     "net_pct": -2.4
   },
   "extras": {
-    "beta": 2.108,
-    "enterprise_value": 6338215936,
-    "ev_ebitda": 155.822,
-    "ev_revenue": 15.227,
-    "float_shares": 144321060,
+    "beta": null,
+    "enterprise_value": 6025601536,
+    "ev_ebitda": 85.76,
+    "ev_revenue": 11.622,
+    "float_shares": 144429159,
     "short_shares": 36236316,
     "short_pct_float": 22.13,
     "short_ratio": 6.49,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 970,
+  "inst_count": 969,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.16217,
-      "actual": -0.1,
-      "surprise_pct": 38.34
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.01523,
@@ -269,6 +263,12 @@
       "estimate": -0.00366,
       "actual": -0.01,
       "surprise_pct": -173.22
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.00962,
+      "actual": 0.04,
+      "surprise_pct": 515.8
     }
   ],
   "insiders": [],

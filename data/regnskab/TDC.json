@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:15:00.255Z",
+  "updated_at": "2026-11-06T21:46:49.544Z",
   "source": "Yahoo Finance",
   "symbol": "TDC",
   "summary": "Teradata Corporation, together with its subsidiaries, provides an AI and knowledge platforms in the United States and internationally. It operates in two segments, Product Sales and Consulting Services. The company's AI and Knowledge platform designed for enterprise-grade workloads. Its consulting services include support services for organizations to establish data analytics and AI vision, enable a hybrid ecosystem architecture, and identify and operationalize opportunities. The company serves clients in financial services, healthcare and life sciences, public sector, manufacturing, retail, telecommunications, and travel/transportation sectors through a direct sales force. Teradata Corporation was incorporated in 1979 and is headquartered in San Diego, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.5785,
+  "eps_estimate": 0.56329,
   "analysts": {
     "strong_buy": 1,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 416000000,
-      "earnings": 40000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 421000000,
       "earnings": 37000000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 410000000,
       "earnings": 46000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 399000000,
+      "earnings": 38000000
     }
   ],
   "growth": {
-    "q0": -0.1965,
-    "q1": -0.23879999,
+    "q0": -0.23879999,
+    "q1": -0.044899996,
     "y0": 0.0498,
     "y1": 0.0756
   },
   "ratings": [
+    {
+      "date": "2026-11-06",
+      "firm": "Barclays",
+      "from": "Underweight",
+      "to": "Underweight",
+      "action": "main"
+    },
     {
       "date": "2026-10-30",
       "firm": "Citigroup",
@@ -139,13 +146,6 @@
       "firm": "Barclays",
       "from": "Underweight",
       "to": "Underweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-04-30",
-      "firm": "Citigroup",
-      "from": "Buy",
-      "to": "Buy",
       "action": "main"
     }
   ],
@@ -223,18 +223,18 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 15,
+    "buys": 16,
     "sells": 9,
-    "bought": 90598,
+    "bought": 92680,
     "sold": 167923,
-    "net_pct": -7.8
+    "net_pct": -7.6
   },
   "extras": {
-    "beta": 0.575,
-    "enterprise_value": 2903729920,
-    "ev_ebitda": 8.392,
-    "ev_revenue": 1.717,
-    "float_shares": 80683080,
+    "beta": null,
+    "enterprise_value": 2693872128,
+    "ev_ebitda": 12.357,
+    "ev_revenue": 1.609,
+    "float_shares": 80334204,
     "short_shares": 15026731,
     "short_pct_float": 22.71,
     "short_ratio": 9.07,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 618,
+  "inst_count": 621,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.53608,
-      "actual": 0.72,
-      "surprise_pct": 34.31
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.55604,
@@ -269,9 +263,24 @@
       "estimate": 0.56039,
       "actual": 0.69,
       "surprise_pct": 23.13
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.5785,
+      "actual": 0.7,
+      "surprise_pct": 21
     }
   ],
   "insiders": [
+    {
+      "name": "LEUKERT BERND",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 2082,
+      "date": "2026-11-02"
+    },
     {
       "name": "MCMILLAN STEPHEN",
       "role": "Chief Executive Officer",
@@ -352,15 +361,6 @@
       "value": 0,
       "shares": 8330,
       "date": "2026-07-31"
-    },
-    {
-      "name": "CHOU TIMOTHY C K",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 33.72 per share.",
-      "value": 190754,
-      "shares": 5657,
-      "date": "2026-06-08"
     }
   ],
   "dividends": [],

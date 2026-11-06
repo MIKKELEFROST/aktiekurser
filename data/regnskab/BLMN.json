@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:58.314Z",
+  "updated_at": "2026-11-06T21:46:47.158Z",
   "source": "Yahoo Finance",
   "symbol": "BLMN",
   "summary": "Bloomin' Brands, Inc., through its subsidiaries, owns and operates casual, polished casual, and fine dining restaurants in the United States and internationally. The company operates through U.S. and International Franchise segments. Its restaurant portfolio has four concepts, including Outback Steakhouse, a casual steakhouse restaurant; Carrabba's Italian Grill that offers authentic Italian cuisine; Bonefish Grill; and Fleming's Prime Steakhouse & Wine Bar, a contemporary steakhouse. Bloomin' Brands, Inc. was founded in 1988 and is based in Tampa, Florida.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-06",
   "earnings_estimated": false,
   "earnings_call": "2026-11-06",
-  "eps_estimate": -0.2378,
+  "eps_estimate": 0.14114,
   "analysts": {
     "strong_buy": 0,
     "buy": 2,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 928813000,
-      "earnings": -45859000
-    },
-    {
       "q": "4Q2025",
       "revenue": 975223000,
       "earnings": -13475000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 1015809000,
       "earnings": 31344000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 944345000,
+      "earnings": 0
     }
   ],
   "growth": {
-    "q0": -6.9266996,
-    "q1": -0.45720002,
+    "q0": -0.45720002,
+    "q1": -0.0557,
     "y0": -0.1526,
     "y1": 0.122600004
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.271,
-    "enterprise_value": 2798324480,
-    "ev_ebitda": 8.836,
-    "ev_revenue": 0.703,
+    "enterprise_value": 2755514112,
+    "ev_ebitda": 8.701,
+    "ev_revenue": 0.692,
     "float_shares": 83143048,
     "short_shares": 12194478,
     "short_pct_float": 16.69,
@@ -244,14 +244,8 @@
   "ex_dividend": "2025-08-19",
   "dividend_date": null,
   "payout_ratio": 0.45450002,
-  "inst_count": 329,
+  "inst_count": 330,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.12517,
-      "actual": -0.03,
-      "surprise_pct": 76.03
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.24422,
@@ -269,6 +263,12 @@
       "estimate": 0.28864,
       "actual": 0.39,
       "surprise_pct": 35.12
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.2378,
+      "actual": -0.17,
+      "surprise_pct": 28.51
     }
   ],
   "insiders": [
@@ -280,6 +280,42 @@
       "value": null,
       "shares": 60082,
       "date": "2026-10-01"
+    },
+    {
+      "name": "LEFFERTS KELLY",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 6481,
+      "date": "2026-09-03"
+    },
+    {
+      "name": "LEFFERTS KELLY",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 6481,
+      "date": "2026-09-03"
+    },
+    {
+      "name": "PACE PHILIP J",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 3241,
+      "date": "2026-09-03"
+    },
+    {
+      "name": "PACE PHILIP J",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 3241,
+      "date": "2026-09-03"
     },
     {
       "name": "HAFNER PATRICK M",
@@ -296,43 +332,7 @@
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 6481,
-      "date": "2026-09-03"
-    },
-    {
-      "name": "LEFFERTS KELLY",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 6481,
-      "date": "2026-09-03"
-    },
-    {
-      "name": "PACE PHILIP J",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 3241,
-      "date": "2026-09-03"
-    },
-    {
-      "name": "PACE PHILIP J",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 3241,
-      "date": "2026-09-03"
-    },
-    {
-      "name": "CHRISTEL ERIC C",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 25151,
+      "shares": 15385,
       "date": "2026-09-02"
     },
     {
@@ -345,7 +345,7 @@
       "date": "2026-09-02"
     },
     {
-      "name": "LEFFERTS KELLY",
+      "name": "PACE PHILIP J",
       "role": "Officer",
       "kind": "other",
       "text": null,

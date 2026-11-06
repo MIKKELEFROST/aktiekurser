@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:15:00.527Z",
+  "updated_at": "2026-11-06T21:46:49.927Z",
   "source": "Yahoo Finance",
   "symbol": "YELP",
   "summary": "Yelp Inc. operates a platform that connects consumers with local businesses in the United States and internationally. Its platform covers various categories, including restaurants, shopping, beauty and fitness, health, and other categories, as well as home, local, auto, professional, pets, events, real estate, and financial services. It provides free and paid advertising products to businesses, which include cost-per-click advertising and multi-location Ad products, RepairPal network, and business listing pages. The company also offers Yelp Connect that provides advertisers with a channel to market new offerings, such as new menu items and specials, and communicate business updates to customers; Yelp Guaranteed that provides limited coverage to consumers who hire a yelp guaranteed business through request-a-quote in the event; Nearby Jobs solutions; Yelp Guest Manager, a subscription-based suite of front-of-house management tools for restaurants, nightlife, and certain other venues, which include online reservations, a waitlist management solution, as well as through hostless kiosks, and seating and server rotation management tools; Yelp Fusion Insights program that offers business owners local analytics and insights; and Yelp Fusion, which offers free access to basic information through publicly available APIs and paid access to content and data for consumer-facing enterprise use. In addition, it provides content licensing and consumer-interactive tools. Further, the company offers its products directly through its sales force; indirectly through partners; and online through its website and business app, as well as non-advertising partner arrangements. It has partnership with DOORDASH to provide consumers with a service to place food orders for pickup and delivery. The company was formerly known as Yelp! Inc. and changed its name to Yelp Inc. in November 2005. Yelp Inc. was incorporated in 2004 and is based in San Francisco, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.8143,
+  "eps_estimate": 0.86347,
   "analysts": {
     "strong_buy": 0,
     "buy": 2,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 376038000,
-      "earnings": 39324000
-    },
-    {
       "q": "4Q2025",
       "revenue": 359989000,
       "earnings": 37796000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 375519000,
       "earnings": 31652000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 370919000,
+      "earnings": 34552000
     }
   ],
   "growth": {
-    "q0": -0.148,
-    "q1": -0.0324,
+    "q0": -0.0324,
+    "q1": 0.3195,
     "y0": -0.061,
     "y1": 0.1112
   },
   "ratings": [
+    {
+      "date": "2026-11-06",
+      "firm": "Evercore ISI Group",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
     {
       "date": "2026-10-13",
       "firm": "Morgan Stanley",
@@ -139,13 +146,6 @@
       "firm": "JP Morgan",
       "from": "Neutral",
       "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2025-04-17",
-      "firm": "Morgan Stanley",
-      "from": "Underweight",
-      "to": "Underweight",
       "action": "main"
     }
   ],
@@ -224,17 +224,17 @@
   "insider_net": {
     "period": "6m",
     "buys": 9,
-    "sells": 11,
+    "sells": 12,
     "bought": 99930,
-    "sold": 80878,
+    "sold": 81378,
     "net_pct": 0.5
   },
   "extras": {
-    "beta": 0.42,
-    "enterprise_value": 1225673856,
-    "ev_ebitda": 5.939,
-    "ev_revenue": 0.832,
-    "float_shares": 52509821,
+    "beta": null,
+    "enterprise_value": 1092873344,
+    "ev_ebitda": 5.363,
+    "ev_revenue": 0.745,
+    "float_shares": 52635018,
     "short_shares": 11409512,
     "short_pct_float": 34.76,
     "short_ratio": 7.92,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 422,
+  "inst_count": 423,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.52534,
-      "actual": 0.61,
-      "surprise_pct": 16.12
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.58,
@@ -269,9 +263,24 @@
       "estimate": 0.36375,
       "actual": 0.57,
       "surprise_pct": 56.7
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.42538,
+      "actual": 0.63,
+      "surprise_pct": 48.1
     }
   ],
   "insiders": [
+    {
+      "name": "AMARA CARMEN",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 19.21 per share.",
+      "value": 9605,
+      "shares": 500,
+      "date": "2026-11-02"
+    },
     {
       "name": "SCHWARZBACH DAVID ALAN",
       "role": "Chief Financial Officer",
@@ -352,15 +361,6 @@
       "value": 337500,
       "shares": 13500,
       "date": "2026-07-01"
-    },
-    {
-      "name": "AMARA CARMEN",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 24.00 per share.",
-      "value": 24000,
-      "shares": 1000,
-      "date": "2026-06-05"
     }
   ],
   "dividends": [],

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:15:00.439Z",
+  "updated_at": "2026-11-06T21:46:49.809Z",
   "source": "Yahoo Finance",
   "symbol": "VSAT",
   "summary": "Viasat, Inc. engages in the provision of broadband and communications products and services in the United States and internationally. It operates in segments, Communication Services; and Defense and Advanced Technologies. It offers satellite-based broadband and narrowband communications solutions; broadband services, including broadband internet access and voice over internet protocol; fixed and mobile broadband and narrowband services; develops and sells satellite, wireless products, and terminals; and design, develop, and produce space system solutions for geostationary, medium, and low earth orbit. The company also provides in-flight connectivity, narrowband safety operational data, and other complementary services; multimedia connectivity for military and government; tactical and beyond-line-of-sight communications; intelligence surveillance and reconnaissance; L-band advanced communications element terminals; enterprise connectivity solutions; Internet-of-Things; and L-band managed, energy, and prepaid internet services. In addition, it offers networking, cybersecurity, and information assurance products and services; high assurance internet protocol encryption solutions; MOJO expeditionary tactical gateway; government satellite communication systems, mobile and fixed broadband modems, ground and airborne terminals, antennas and gateways, Ka-band earth stations, and other multi-band/multi-function antennas, as well as design products for manpacks, aircraft, unmanned aerial vehicles, seagoing vessels, ground-mobile vehicles, space-based systems, and fixed applications. Further, the company designs and develops GEO, LEO, and MEO satellites, payload, antenna technologies, and other small satellite platforms; develops commercial communication satellite product, orchestration of sovereign and multi-orbit solutions, and direct-to-device; and licenses intellectual property. Viasat, Inc. was incorporated in 1986 and is headquartered in Carlsbad, California.",
@@ -7,10 +7,10 @@
   "website": "https://www.viasat.com",
   "employees": 7000,
   "ceo": "Mr. Mark D. Dankberg",
-  "next_earnings": "2026-11-05",
-  "earnings_estimated": false,
+  "next_earnings": "2027-02-04",
+  "earnings_estimated": true,
   "earnings_call": "2026-11-05",
-  "eps_estimate": -0.00667,
+  "eps_estimate": 0.01667,
   "analysts": {
     "strong_buy": 3,
     "buy": 6,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 1140893000,
-      "earnings": -61444000
-    },
-    {
       "q": "4Q2025",
       "revenue": 1157045000,
       "earnings": 24968000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 1156543000,
       "earnings": -51741000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1179996000,
+      "earnings": -128655000
     }
   ],
   "growth": {
-    "q0": -1.0741,
-    "q1": -0.9789,
+    "q0": -0.9789,
+    "q1": 3.3335001,
     "y0": -0.90870005,
     "y1": 0.77309996
   },
@@ -223,18 +223,18 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 44,
-    "sells": 21,
-    "bought": 439258,
-    "sold": 353731,
+    "buys": 45,
+    "sells": 23,
+    "bought": 461758,
+    "sold": 378231,
     "net_pct": 1.3
   },
   "extras": {
-    "beta": 1.731,
-    "enterprise_value": 14468533248,
-    "ev_ebitda": 10.394,
-    "ev_revenue": 3.128,
-    "float_shares": 135524166,
+    "beta": null,
+    "enterprise_value": 13427109888,
+    "ev_ebitda": 9.947,
+    "ev_revenue": 2.878,
+    "float_shares": 136396402,
     "short_shares": 11990127,
     "short_pct_float": 10.23,
     "short_ratio": 6.17,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 633,
+  "inst_count": 635,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.06,
-      "actual": 0.09,
-      "surprise_pct": 250
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.2405,
@@ -269,9 +263,42 @@
       "estimate": 0.095,
       "actual": 0.17,
       "surprise_pct": 78.95
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.00667,
+      "actual": -0.32,
+      "surprise_pct": -4697.6
     }
   ],
   "insiders": [
+    {
+      "name": "MILLER CRAIG ANDREW",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 70.01 - 70.38 per share.",
+      "value": 1579205,
+      "shares": 22500,
+      "date": "2026-11-04"
+    },
+    {
+      "name": "MILLER CRAIG ANDREW",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 34.00 per share.",
+      "value": 765000,
+      "shares": 22500,
+      "date": "2026-11-04"
+    },
+    {
+      "name": "PALMER BENJAMIN EDWARD",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 77.02 per share.",
+      "value": 154040,
+      "shares": 2000,
+      "date": "2026-11-02"
+    },
     {
       "name": "CHASE GARRETT L.",
       "role": "Chief Financial Officer",
@@ -329,33 +356,6 @@
     {
       "name": "CHANDRAN GIRISH",
       "role": "Chief Technology Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 15620,
-      "date": "2026-09-17"
-    },
-    {
-      "name": "DANKBERG MARK D",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Stock Gift at price 0.00 per share.",
-      "value": 0,
-      "shares": 36989,
-      "date": "2026-09-17"
-    },
-    {
-      "name": "DANKBERG MARK D",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 80325,
-      "date": "2026-09-17"
-    },
-    {
-      "name": "MILLER CRAIG ANDREW",
-      "role": "Officer",
       "kind": "other",
       "text": null,
       "value": null,

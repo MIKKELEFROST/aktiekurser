@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:15:00.191Z",
+  "updated_at": "2026-11-06T21:46:49.460Z",
   "source": "Yahoo Finance",
   "symbol": "SRPT",
   "summary": "Sarepta Therapeutics, Inc., a commercial-stage biopharmaceutical company, focuses on the discovery and development of RNA-targeted therapeutics, siRNA platform, gene therapy, and other genetic therapeutic modalities for the treatment of rare diseases. It offers EXONDYS 51 for the treatment of Duchenne in patients who have a confirmed mutation of the dystrophin gene that is amenable to exon 51 skipping; VYONDYS 53 for the treatment of Duchenne in patients who have a confirmed mutation of the dystrophin gene that is amenable to exon 53 skipping; AMONDYS 45 for the treatment of Duchenne in patients who have a confirmed mutation of the dystrophin gene that is amenable to exon 45 skipping; and ELEVIDYS, an AAV-based gene therapy, which is contraindicated in patients with any deletion in exon 8 and/or exon 9 in the Duchenne gene. The company also develops SRP-9003, a gene therapy program for the treatment of LGMD2E; SRP-1001 to selectively target and knockdown DUX4 using RNAi in Phase 1/2a clinical trials; and SRP-1003 for reduction of expression of the DMPK gene in Phase 1/2a clinical trials. It has collaboration and license agreements with F. Hoffman-La Roche Ltd; Arrowhead Pharmaceuticals, Inc.; University of Western Australia; Nationwide Children's Hospital; Hansa Biopharma; and Duke University. The company was incorporated in 1980 and is headquartered in Cambridge, Massachusetts.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.35734,
+  "eps_estimate": 0.11677,
   "analysts": {
     "strong_buy": 0,
     "buy": 7,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 399356000,
-      "earnings": -179947000
-    },
-    {
       "q": "4Q2025",
       "revenue": 442934000,
       "earnings": -412226000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 401251000,
       "earnings": -4890000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 381351000,
+      "earnings": -28461000
     }
   ],
   "growth": {
-    "q0": 3.7488,
-    "q1": 1.0326,
+    "q0": 1.0326,
+    "q1": -0.76839995,
     "y0": 1.8558999,
     "y1": -0.4334
   },
   "ratings": [
+    {
+      "date": "2026-11-06",
+      "firm": "RBC Capital",
+      "from": "Sector Perform",
+      "to": "Sector Perform",
+      "action": "main"
+    },
     {
       "date": "2026-10-08",
       "firm": "RBC Capital",
@@ -139,13 +146,6 @@
       "firm": "Needham",
       "from": "Underperform",
       "to": "Underperform",
-      "action": "reit"
-    },
-    {
-      "date": "2026-03-19",
-      "firm": "Oppenheimer",
-      "from": "Outperform",
-      "to": "Outperform",
       "action": "reit"
     }
   ],
@@ -230,11 +230,11 @@
     "net_pct": null
   },
   "extras": {
-    "beta": 0.454,
-    "enterprise_value": 2279779072,
-    "ev_ebitda": -130.028,
-    "ev_revenue": 1.155,
-    "float_shares": 100544249,
+    "beta": null,
+    "enterprise_value": 2058384896,
+    "ev_ebitda": 86.647,
+    "ev_revenue": 1.052,
+    "float_shares": 102075659,
     "short_shares": 22330342,
     "short_pct_float": 25.34,
     "short_ratio": 7.84,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 436,
+  "inst_count": 438,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.37175,
-      "actual": -0.13,
-      "surprise_pct": 65.03
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.76942,
@@ -269,6 +263,12 @@
       "estimate": 0.48606,
       "actual": 0.64,
       "surprise_pct": 31.67
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.35734,
+      "actual": 0.13,
+      "surprise_pct": -63.62
     }
   ],
   "insiders": [

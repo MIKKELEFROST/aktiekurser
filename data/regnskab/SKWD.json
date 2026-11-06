@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:15:00.135Z",
+  "updated_at": "2026-11-06T21:46:49.389Z",
   "source": "Yahoo Finance",
   "symbol": "SKWD",
   "summary": "Skyward Specialty Insurance Group, Inc., an insurance holding company, provides commercial property and casualty insurance coverages in the United States. It offers general liability, excess liability, and professional liability, as well as cyber and media liability insurance; commercial auto, group accident and health, property, agriculture, credit, and surety and workers' compensation; and property, agriculture, and credit specialty reinsurance. The company holds a strategic partnership with Slingshot Insurance for embedded insurance solutions. The company was formerly known as Houston International Insurance Group, Ltd. and changed its name to Skyward Specialty Insurance Group, Inc. in November 2020. Skyward Specialty Insurance Group, Inc. was incorporated in 2006 and is based in Houston, Texas.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-06",
-  "eps_estimate": 1.22362,
+  "eps_estimate": 1.26067,
   "analysts": {
     "strong_buy": 4,
     "buy": 5,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 382526000,
-      "earnings": 45901000
-    },
-    {
       "q": "4Q2025",
       "revenue": 385585000,
       "earnings": 43230000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 489533000,
       "earnings": 49038000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 455341000,
+      "earnings": 49796000
     }
   ],
   "growth": {
-    "q0": 0.16540001,
-    "q1": 0.0775,
+    "q0": 0.0775,
+    "q1": 0.080699995,
     "y0": 0.2591,
     "y1": 0.0983
   },
   "ratings": [
+    {
+      "date": "2026-11-06",
+      "firm": "Barclays",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-08-11",
       "firm": "TD Cowen",
@@ -136,13 +143,6 @@
     },
     {
       "date": "2026-05-08",
-      "firm": "Barclays",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-04-08",
       "firm": "Barclays",
       "from": "Overweight",
       "to": "Overweight",
@@ -230,11 +230,11 @@
     "net_pct": 1.2
   },
   "extras": {
-    "beta": 0.312,
-    "enterprise_value": 2587699712,
-    "ev_ebitda": 8.739,
-    "ev_revenue": 1.493,
-    "float_shares": 40489158,
+    "beta": null,
+    "enterprise_value": 2553808896,
+    "ev_ebitda": 8.168,
+    "ev_revenue": 1.414,
+    "float_shares": 40504621,
     "short_shares": 1844744,
     "short_pct_float": 4.54,
     "short_ratio": 4.97,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 347,
+  "inst_count": 346,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.885,
-      "actual": 1.05,
-      "surprise_pct": 18.64
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.01792,
@@ -269,6 +263,12 @@
       "estimate": 1.17277,
       "actual": 1.3,
       "surprise_pct": 10.85
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.22362,
+      "actual": 1.28,
+      "surprise_pct": 4.61
     }
   ],
   "insiders": [

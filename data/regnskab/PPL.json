@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:59.920Z",
+  "updated_at": "2026-11-06T21:46:49.113Z",
   "source": "Yahoo Finance",
   "symbol": "PPL",
   "summary": "PPL Corporation provides electricity and natural gas to approximately 3.6 million customers in the United States. It operates in three segments: Kentucky Regulated, Pennsylvania Regulated, and Rhode Island Regulated. The company engages in the transmission and distribution of electricity in eastern and central Pennsylvania; generation, transmission, distribution, and sale of electricity in Kentucky, Virginia, and Rhode Island; distribution and sale of natural gas in Kentucky and Rhode Island; sale of wholesale electricity in Kentucky; and generation of electricity from power plants in Kentucky. It generates electricity from coal, gas, hydro, and solar sources. The company was formerly known as PP&L Resources, Inc. and changed its name to PPL Corporation in 2000. PPL Corporation was founded in 1920 and is headquartered in Allentown, Pennsylvania.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-06",
   "earnings_estimated": false,
   "earnings_call": "2026-11-06",
-  "eps_estimate": 0.53008,
+  "eps_estimate": 0.46528,
   "analysts": {
     "strong_buy": 5,
     "buy": 11,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 2239000000,
-      "earnings": 318000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 2274000000,
       "earnings": 266000000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 2111000000,
       "earnings": 230000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 2497000000,
+      "earnings": 367000000
     }
   ],
   "growth": {
-    "q0": 0.1043,
-    "q1": 0.1348,
+    "q0": 0.1348,
+    "q1": 0.077,
     "y0": 0.0763,
     "y1": 0.0866
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.56,
-    "enterprise_value": 46924902400,
-    "ev_ebitda": 12.483,
-    "ev_revenue": 4.993,
+    "enterprise_value": 47135612928,
+    "ev_ebitda": 12.539,
+    "ev_revenue": 5.015,
     "float_shares": 750354936,
     "short_shares": 35520637,
     "short_pct_float": 5.41,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-09-10",
   "dividend_date": null,
   "payout_ratio": 0.65980005,
-  "inst_count": 1346,
+  "inst_count": 1343,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.45571,
-      "actual": 0.48,
-      "surprise_pct": 5.33
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.41521,
@@ -269,6 +263,12 @@
       "estimate": 0.34374,
       "actual": 0.33,
       "surprise_pct": -4
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.53008,
+      "actual": 0.54,
+      "surprise_pct": 1.87
     }
   ],
   "insiders": [
@@ -291,21 +291,21 @@
       "date": "2026-06-12"
     },
     {
-      "name": "BONENBERGER DAVID J",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 38.75 per share.",
-      "value": 8390,
-      "shares": 216,
-      "date": "2026-04-24"
-    },
-    {
       "name": "BELLAR LONNIE E",
       "role": "Officer",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 38.75 per share.",
       "value": 3156,
       "shares": 81,
+      "date": "2026-04-24"
+    },
+    {
+      "name": "BONENBERGER DAVID J",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 38.75 per share.",
+      "value": 8390,
+      "shares": 216,
       "date": "2026-04-24"
     },
     {
@@ -316,6 +316,33 @@
       "value": 0,
       "shares": 33000,
       "date": "2026-04-08"
+    },
+    {
+      "name": "CORNETT JOHN GREGORY",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 37.44 per share.",
+      "value": 77725,
+      "shares": 2076,
+      "date": "2026-02-20"
+    },
+    {
+      "name": "BELLAR LONNIE E",
+      "role": "General Counsel",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 3533,
+      "date": "2026-02-20"
+    },
+    {
+      "name": "BERGSTEIN JOSEPH P JR",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 21118,
+      "date": "2026-02-20"
     },
     {
       "name": "HENNINGER TADD J",
@@ -333,33 +360,6 @@
       "text": "Conversion of Exercise of derivative security at price 37.44 per share.",
       "value": 122878,
       "shares": 3282,
-      "date": "2026-02-20"
-    },
-    {
-      "name": "STARK WENDY E",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 37.44 per share.",
-      "value": 547410,
-      "shares": 14621,
-      "date": "2026-02-20"
-    },
-    {
-      "name": "CROCKETT JOHN R III",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 9227,
-      "date": "2026-02-20"
-    },
-    {
-      "name": "GOSMAN ANGELA K",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 8670,
       "date": "2026-02-20"
     }
   ],

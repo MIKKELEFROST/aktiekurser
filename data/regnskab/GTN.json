@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:59.083Z",
+  "updated_at": "2026-11-06T21:46:48.012Z",
   "source": "Yahoo Finance",
   "symbol": "GTN",
   "summary": "Gray Media, Inc., a multimedia company, owns and/or operates local television stations and digital assets in the United States. The company operates through Broadcasting, Production Companies, and Other segments. It also owns Gray Digital Media, a digital agency that provides clients with digital marketing strategies; and operates video production companies and studio production facilities. The company was formerly known as Gray Television, Inc. and changed its name to Gray Media, Inc. in July 2002. Gray Media, Inc. was founded in 1891 and is headquartered in Atlanta, Georgia.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-06",
   "earnings_estimated": false,
   "earnings_call": "2026-11-06",
-  "eps_estimate": 0.97,
+  "eps_estimate": 1.81,
   "analysts": {
     "strong_buy": 1,
     "buy": 2,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 749000000,
-      "earnings": -23000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 792000000,
       "earnings": -23000000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 839000000,
       "earnings": 21000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 972000000,
+      "earnings": 66000000
     }
   ],
   "growth": {
-    "q0": 5.7549,
-    "q1": 13.4041,
+    "q0": 13.4041,
+    "q1": null,
     "y0": 3.5863001,
     "y1": -1.2642
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.019,
-    "enterprise_value": 6799456768,
-    "ev_ebitda": 9.883,
-    "ev_revenue": 2.16,
+    "enterprise_value": 6789648384,
+    "ev_ebitda": 9.869,
+    "ev_revenue": 2.157,
     "float_shares": 83292634,
     "short_shares": 1938,
     "short_pct_float": 0,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-09-15",
   "dividend_date": null,
   "payout_ratio": 0.7442,
-  "inst_count": 237,
+  "inst_count": 238,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.33,
-      "actual": -0.204,
-      "surprise_pct": 38.18
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.11,
@@ -269,6 +263,12 @@
       "estimate": 0.25,
       "actual": 0.2626,
       "surprise_pct": 5.04
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.97,
+      "actual": 0.94889,
+      "surprise_pct": -2.18
     }
   ],
   "insiders": [
@@ -280,6 +280,15 @@
       "value": 230450,
       "shares": 55000,
       "date": "2026-05-19"
+    },
+    {
+      "name": "HARE RICHARD B",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 30741,
+      "date": "2026-05-06"
     },
     {
       "name": "GARCIA LUIS A.",
@@ -300,6 +309,15 @@
       "date": "2026-05-06"
     },
     {
+      "name": "MCTEAR PAUL H JR",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 30741,
+      "date": "2026-05-06"
+    },
+    {
       "name": "HOWELL ROBIN ROBINSON",
       "role": "Director",
       "kind": "other",
@@ -309,8 +327,8 @@
       "date": "2026-05-06"
     },
     {
-      "name": "HARE RICHARD B",
-      "role": "Director",
+      "name": "HOWELL HILTON H JR",
+      "role": "Chief Executive Officer",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
@@ -336,30 +354,12 @@
       "date": "2026-05-06"
     },
     {
-      "name": "MCTEAR PAUL H JR",
-      "role": "Director",
+      "name": "LATEK KEVIN PAUL",
+      "role": "Officer",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 30741,
-      "date": "2026-05-06"
-    },
-    {
-      "name": "HOWELL HILTON H JR",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 30741,
-      "date": "2026-05-06"
-    },
-    {
-      "name": "MCNAMARA SANDRA BRELAND",
-      "role": "Chief Operating Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 18989,
+      "shares": 36818,
       "date": "2026-02-27"
     }
   ],

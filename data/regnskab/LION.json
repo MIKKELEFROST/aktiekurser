@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T23:43:28.762Z",
+  "updated_at": "2026-11-06T21:46:48.525Z",
   "source": "Yahoo Finance",
   "symbol": "LION",
   "summary": null,
@@ -7,10 +7,10 @@
   "website": null,
   "employees": null,
   "ceo": null,
-  "next_earnings": "2026-11-05",
-  "earnings_estimated": false,
+  "next_earnings": "2027-02-04",
+  "earnings_estimated": true,
   "earnings_call": "2026-11-05",
-  "eps_estimate": -0.02261,
+  "eps_estimate": 0.18887,
   "analysts": {
     "strong_buy": 4,
     "buy": 4,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 475100000,
-      "earnings": -113500000
-    },
-    {
       "q": "4Q2025",
       "revenue": 724300000,
       "earnings": -46200000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 776600000,
       "earnings": -28800000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 668800000,
+      "earnings": -15500000
     }
   ],
   "growth": {
-    "q0": 0.88699996,
-    "q1": 17.887,
+    "q0": 17.887,
+    "q1": -0.6346,
     "y0": 5.3222,
     "y1": 0.2536
   },
@@ -240,12 +240,6 @@
   "inst_count": null,
   "eps_history": [
     {
-      "quarter": "2025-09-30",
-      "estimate": -0.17388,
-      "actual": -0.2,
-      "surprise_pct": -15.02
-    },
-    {
       "quarter": "2025-12-31",
       "estimate": 0.01847,
       "actual": 0.01,
@@ -262,6 +256,12 @@
       "estimate": -0.004,
       "actual": 0.06,
       "surprise_pct": 1600
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.02261,
+      "actual": 0.07,
+      "surprise_pct": 409.6
     }
   ],
   "insiders": [

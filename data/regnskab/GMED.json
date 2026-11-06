@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:59.046Z",
+  "updated_at": "2026-11-06T21:46:47.965Z",
   "source": "Yahoo Finance",
   "symbol": "GMED",
   "summary": "Globus Medical, Inc. develops and commercializes healthcare solutions for patients with musculoskeletal disorders in the United States and internationally. The company offers spine products comprising traditional fusion implants, such as pedicle screw and rod systems, plating systems, intervertebral spacers, and corpectomy devices; treatment options for motion preservation technologies consisting of dynamic stabilization, total disc replacement, and interspinous distraction devices; interventional solutions to treat vertebral compression fractures; and biologic solutions, such as allografts and synthetic alternatives. It also provides orthopedic trauma solutions, including limb reconstruction, fracture plating, intramedullary nailing, external fixation, and compression screw technologies; hip and knee arthroplasty solutions, including modular cement and cementless hip stems, acetabular cups, femoral heads, highly cross-linked liners, partial knee systems, cruciate retaining, posterior stabilized, and revision options; spinal cord stimulation services; and neuromonitoring services, which provide onsite and remote monitoring of the neurological systems. In addition, the company offers ExcelsiusGPS platform, a robotic guidance and navigation system for minimally invasive and open procedures; Surgimap, a surgical planning software platform; Excelsius3D, a platform combined with ExcelsiusGPS that provides an intraoperative and image-guided robotic navigation solution; ExcelsiusHub, which provides real-time patient array monitoring, tissue sparing drills, and registration flexibility; and ExcelsiusFlex, a total knee arthroplasty robotic solution. Further, it distributes human cells, tissues, and cellular and tissue-based products. The company sells its products through direct and distributor sales representatives; and independent sales agents. Globus Medical, Inc. was incorporated in 2003 and is headquartered in Audubon, Pennsylvania.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 1.19688,
+  "eps_estimate": 1.33888,
   "analysts": {
     "strong_buy": 3,
     "buy": 7,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 769048000,
-      "earnings": 118966000
-    },
-    {
       "q": "4Q2025",
       "revenue": 826420000,
       "earnings": 140594000
@@ -69,15 +64,48 @@
       "q": "2Q2026",
       "revenue": 789612000,
       "earnings": 151569000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 763719000,
+      "earnings": 141171000
     }
   ],
   "growth": {
-    "q0": 0.0143,
-    "q1": 0.046,
+    "q0": 0.046,
+    "q1": 0.0865,
     "y0": 0.2564,
     "y1": 0.078
   },
   "ratings": [
+    {
+      "date": "2026-11-06",
+      "firm": "Canaccord Genuity",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-06",
+      "firm": "Wells Fargo",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-06",
+      "firm": "Needham",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-06",
+      "firm": "BMO Capital",
+      "from": "Outperform",
+      "to": "Market Perform",
+      "action": "down"
+    },
     {
       "date": "2026-10-01",
       "firm": "RBC Capital",
@@ -119,34 +147,6 @@
       "from": null,
       "to": "Outperform",
       "action": "init"
-    },
-    {
-      "date": "2026-07-08",
-      "firm": "Stifel",
-      "from": "Hold",
-      "to": "Hold",
-      "action": "main"
-    },
-    {
-      "date": "2026-06-15",
-      "firm": "Piper Sandler",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-05-08",
-      "firm": "RBC Capital",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-05-08",
-      "firm": "Wells Fargo",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
     }
   ],
   "holders": [
@@ -230,11 +230,11 @@
     "net_pct": 3.5
   },
   "extras": {
-    "beta": 0.951,
-    "enterprise_value": 11210982400,
-    "ev_ebitda": 11.097,
-    "ev_revenue": 3.565,
-    "float_shares": 110916452,
+    "beta": null,
+    "enterprise_value": 10394378240,
+    "ev_ebitda": 9.813,
+    "ev_revenue": 3.311,
+    "float_shares": 109597430,
     "short_shares": 8189831,
     "short_pct_float": 7.38,
     "short_ratio": 5.17,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 810,
+  "inst_count": 816,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.78075,
-      "actual": 1.18,
-      "surprise_pct": 51.14
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.15362,
@@ -269,6 +263,12 @@
       "estimate": 1.09915,
       "actual": 1.34,
       "surprise_pct": 21.91
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.19688,
+      "actual": 1.23,
+      "surprise_pct": 2.77
     }
   ],
   "insiders": [

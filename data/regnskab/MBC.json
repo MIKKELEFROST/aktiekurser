@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:15:00.560Z",
+  "updated_at": "2026-11-06T21:46:48.608Z",
   "source": "Yahoo Finance",
   "symbol": "MBC",
   "summary": "MasterBrand, Inc. engages in the manufacture and sale of residential cabinets in the United States, Canada, and Mexico. The company offers a range of residential cabinetry products, such as stock, semi-custom, and premium cabinetry for the kitchen, bathroom, and other parts of the home. It sells its products to remodeling and new construction markets through dealers, retailers, and builders. MasterBrand, Inc. was founded in 1954 and is headquartered in Beachwood, Ohio.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.03,
+  "eps_estimate": -0.05667,
   "analysts": {
     "strong_buy": 0,
     "buy": 0,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 698900000,
-      "earnings": 0
-    },
-    {
       "q": "4Q2025",
       "revenue": 644600000,
       "earnings": 0
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 815200000,
       "earnings": 0
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1036800000,
+      "earnings": 0
     }
   ],
   "growth": {
-    "q0": -0.90910006,
-    "q1": -1.8335,
+    "q0": -1.8335,
+    "q1": -1.6667,
     "y0": -1.0403,
     "y1": 6.9995003
   },
   "ratings": [
+    {
+      "date": "2026-11-06",
+      "firm": "DA Davidson",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-10-27",
       "firm": "DA Davidson",
@@ -140,13 +147,6 @@
       "from": "Hold",
       "to": "Buy",
       "action": "up"
-    },
-    {
-      "date": "2022-12-19",
-      "firm": "Loop Capital",
-      "from": null,
-      "to": "Hold",
-      "action": "init"
     }
   ],
   "holders": [
@@ -230,11 +230,11 @@
     "net_pct": 37.9
   },
   "extras": {
-    "beta": 1.45,
-    "enterprise_value": 2976413696,
-    "ev_ebitda": 17.984,
-    "ev_revenue": 1.072,
-    "float_shares": 175097462,
+    "beta": null,
+    "enterprise_value": 2819780096,
+    "ev_ebitda": 22.558,
+    "ev_revenue": 0.905,
+    "float_shares": 175105645,
     "short_shares": 22489292,
     "short_pct_float": 12.37,
     "short_ratio": 6.35,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 457,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.36,
-      "actual": 0.33,
-      "surprise_pct": -8.33
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.14,
@@ -269,6 +263,12 @@
       "estimate": 0.07,
       "actual": 0.05,
       "surprise_pct": -28.57
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.03,
+      "actual": 0.1,
+      "surprise_pct": 233.33
     }
   ],
   "insiders": [

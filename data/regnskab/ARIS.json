@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:58.152Z",
+  "updated_at": "2026-11-06T21:46:46.943Z",
   "source": "Yahoo Finance",
   "symbol": "ARIS",
   "summary": "Aris Mining Corporation, together with its subsidiaries, engages in the acquisition, exploration, development, and operation of gold properties in Canada, Colombia, and Guyana. It also explores for silver and copper deposits. Aris Mining Corporation was formerly known as GCM Mining Corp. and changed its name to Aris Mining Corporation in September 2022. The company was founded in 2022 and is based in Vancouver, Canada.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 0.39,
+  "eps_estimate": 0.63,
   "analysts": {
     "strong_buy": 3,
     "buy": 3,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 258115000,
-      "earnings": 0
-    },
-    {
       "q": "4Q2025",
       "revenue": 308565000,
       "earnings": 0
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 330227000,
       "earnings": 0
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 295419000,
+      "earnings": 0
     }
   ],
   "growth": {
-    "q0": null,
-    "q1": 0.3696,
+    "q0": 0.3696,
+    "q1": 0.033299997,
     "y0": 0.5891,
     "y1": 0.3923
   },
@@ -207,18 +207,18 @@
       "date": "2026-09-30"
     },
     {
-      "name": "Fidelity Rutland Square TRT II-Strategic Advisers Fidelity Emerging Ma",
-      "kind": "fond",
-      "pct": 1.95,
-      "shares": 4033813,
-      "date": "2026-08-31"
-    },
-    {
       "name": "Morgan Stanley",
       "kind": "institution",
       "pct": 1.9,
       "shares": 3917134,
       "date": "2026-06-30"
+    },
+    {
+      "name": "Fidelity Rutland Square TRT II-Strategic Advisers Fidelity Emerging Ma",
+      "kind": "fond",
+      "pct": 1.88,
+      "shares": 3882367,
+      "date": "2026-09-30"
     }
   ],
   "insider_net": {
@@ -231,10 +231,10 @@
   },
   "extras": {
     "beta": 2.11,
-    "enterprise_value": 3324890112,
-    "ev_ebitda": 5.307,
-    "ev_revenue": 2.619,
-    "float_shares": 201886032,
+    "enterprise_value": 3247499008,
+    "ev_ebitda": 5.017,
+    "ev_revenue": 2.485,
+    "float_shares": 202179471,
     "short_shares": 5248821,
     "short_pct_float": null,
     "short_ratio": 3.19,
@@ -263,6 +263,12 @@
       "estimate": 0.4275,
       "actual": 0.47,
       "surprise_pct": 9.94
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.39,
+      "actual": 0.35,
+      "surprise_pct": -10.26
     }
   ],
   "insiders": [

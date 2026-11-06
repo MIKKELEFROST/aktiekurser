@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-11-05T22:14:58.647Z",
+  "updated_at": "2026-11-06T21:46:47.581Z",
   "source": "Yahoo Finance",
   "symbol": "DNOW",
   "summary": "DNOW Inc. distributes pipe, valves, fittings, and pumps in the United States, Canada, and internationally. The company offers flanges, gaskets, fasteners, electrical, instrumentation, artificial lift, and pumping systems, process and production equipment, production measurement technology, maintenance, repair and operating consumables (MRO), and general and specialty products; personal protective equipment; and mill, tools, safety supplies, as well as vapor recovery systems under EcoVapo brand. It also offers original equipment manufacturer equipment, including pumps, generator sets, air compressors, dryers, blowers, mixers, and valves; modular oil and gas wellsite facility solutions; and application systems, work processes, parts integration, optimization solutions, and after-sales support services. In addition, the company provides supply chain and materials management; inventory planning; integrated supply; integrated supply; product quality programs; manufacturer assessments; multiple daily deliveries; volume purchasing; truck stocking; technical support; training; just-in-time delivery; and on-site commissioning; after-market field repair and rental mobile pumping units; inventory and zone store management; order consolidation; product tagging and system interfaces tailored; supplier specifications; engineering of control packages; valve inspection and repair; product expediting, tracking and tracing; documentation services; and pressure testing services. It serves customers in the upstream, midstream, and Gas Utilities sectors, as well as downstream and industrial including crude oil refining, petrochemical and chemical processing, general industrials, pharmaceutical, mining, water/wastewater treatment, data centers, liquefied natural gas, and terminals and renewable natural gas facilities. The company was formerly known as NOW Inc. and changed its name to DNOW Inc. in January 2024. DNOW Inc. was founded in 1862 and is headquartered in Houston, Texas.",
   "industry": "Industrial Distribution",
   "website": "https://www.dnow.com",
-  "employees": 5100,
+  "employees": 4945,
   "ceo": "Mr. David A. Cherechinsky CPA",
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.148,
+  "eps_estimate": 0.066,
   "analysts": {
     "strong_buy": 0,
     "buy": 3,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": -0.43080002,
-    "q1": -0.56,
+    "q0": -0.56,
+    "q1": 13.667,
     "y0": -0.5977,
     "y1": 1.3814999
   },
   "ratings": [
+    {
+      "date": "2026-11-06",
+      "firm": "Susquehanna",
+      "from": "Positive",
+      "to": "Positive",
+      "action": "main"
+    },
     {
       "date": "2026-09-10",
       "firm": "Freedom Broker",
@@ -136,13 +143,6 @@
     },
     {
       "date": "2025-07-21",
-      "firm": "Stifel",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2025-06-27",
       "firm": "Stifel",
       "from": "Buy",
       "to": "Buy",
@@ -230,11 +230,11 @@
     "net_pct": 2
   },
   "extras": {
-    "beta": 0.974,
-    "enterprise_value": 3318679040,
-    "ev_ebitda": 21.978,
-    "ev_revenue": 0.813,
-    "float_shares": 177687221,
+    "beta": null,
+    "enterprise_value": 2845000960,
+    "ev_ebitda": 24.739,
+    "ev_revenue": 0.594,
+    "float_shares": 177230081,
     "short_shares": 9748488,
     "short_pct_float": 7.39,
     "short_ratio": 4.22,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 422,
+  "inst_count": 424,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.23333,
-      "actual": 0.26,
-      "surprise_pct": 11.43
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.14,
@@ -269,9 +263,33 @@
       "estimate": 0.085,
       "actual": 0.12,
       "surprise_pct": 41.18
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.148,
+      "actual": 0.18,
+      "surprise_pct": 21.62
     }
   ],
   "insiders": [
+    {
+      "name": "JOHNSON MARK B",
+      "role": "Chief Financial Officer",
+      "kind": "sell",
+      "text": "Sale at price 16.79 per share.",
+      "value": 1894600,
+      "shares": 112841,
+      "date": "2026-08-10"
+    },
+    {
+      "name": "JOHNSON MARK B",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 9.53 - 10.26 per share.",
+      "value": 724374,
+      "shares": 72166,
+      "date": "2026-08-10"
+    },
     {
       "name": "CHERECHINSKY DAVID A",
       "role": "Chief Executive Officer",
@@ -309,25 +327,7 @@
       "date": "2026-08-10"
     },
     {
-      "name": "JOHNSON MARK B",
-      "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 16.79 per share.",
-      "value": 1894600,
-      "shares": 112841,
-      "date": "2026-08-10"
-    },
-    {
-      "name": "JOHNSON MARK B",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 9.53 - 10.26 per share.",
-      "value": 724374,
-      "shares": 72166,
-      "date": "2026-08-10"
-    },
-    {
-      "name": "DAMIRIS GEORGE JOHN",
+      "name": "BONNO TERRY",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -336,16 +336,7 @@
       "date": "2026-05-20"
     },
     {
-      "name": "ALARIO RICHARD J",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 17122,
-      "date": "2026-05-20"
-    },
-    {
-      "name": "COPPINGER PAUL MAC",
+      "name": "COBB GALEN",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -354,7 +345,16 @@
       "date": "2026-05-20"
     },
     {
-      "name": "JADIN RONALD L",
+      "name": "REED SONYA",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 12122,
+      "date": "2026-05-20"
+    },
+    {
+      "name": "DAVID-GREEN KAREN",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

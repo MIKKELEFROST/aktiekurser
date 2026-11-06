@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-11-05T22:14:59.943Z",
+  "updated_at": "2026-11-06T21:46:49.148Z",
   "source": "Yahoo Finance",
   "symbol": "PTGX",
   "summary": "Protagonist Therapeutics, Inc. operates as a discovery and development company in the United States. It develops Icotyde, a first-in-class investigational targeted oral peptide for the treatment of adults and pediatric patients 12 years of age and older with moderate-to-severe plaque psoriasis; and Rusfertide, a first-in-class investigational injectable mimetic of the natural hormone hepcidin in Phase 3 development for the treatment of the rare blood disorder polycythemia vera. The company is also developing PN-881, a potential best-in-class oral peptide IL-17 antagonist, for the treatment of immune-mediated skin diseases in Phase 1 clinical trials; PN-477 and PN-458, which are development candidates for the treatment of obesity; PN-8047, an orally administered hepcidin functional mimetic small molecule; L-4R alpha antagonist for the treatment of atopic dermatitis and moderate-to-severe asthma; and amylinR-based oral and subcutaneous mono- and poly-agonists for the treatment of obesity. Protagonist Therapeutics, Inc. was incorporated in 2006 and is headquartered in Newark, California.",
   "industry": "Biotechnology",
   "website": "https://www.protagonist-inc.com",
-  "employees": 141,
+  "employees": 132,
   "ceo": "Dr. Dinesh V. Patel Ph.D.",
   "next_earnings": "2026-11-05",
   "earnings_estimated": true,
   "earnings_call": null,
-  "eps_estimate": 2.66118,
+  "eps_estimate": -0.50438,
   "analysts": {
     "strong_buy": 3,
     "buy": 11,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 4712000,
-      "earnings": -39339000
-    },
-    {
       "q": "4Q2025",
       "revenue": 7437000,
       "earnings": -44384000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 213475000,
       "earnings": 162849000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 274410000,
+      "earnings": 220015000
     }
   ],
   "growth": {
-    "q0": 5.2921996,
-    "q1": 0.269,
+    "q0": 0.269,
+    "q1": -2.8966,
     "y0": 3.3254,
     "y1": -1.0208
   },
   "ratings": [
+    {
+      "date": "2026-11-06",
+      "firm": "HC Wainwright & Co.",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-21",
       "firm": "TD Cowen",
@@ -140,13 +147,6 @@
       "from": "Outperform",
       "to": "Outperform",
       "action": "main"
-    },
-    {
-      "date": "2026-08-10",
-      "firm": "Goldman Sachs",
-      "from": "Neutral",
-      "to": "Buy",
-      "action": "up"
     }
   ],
   "holders": [
@@ -227,14 +227,14 @@
     "sells": 8,
     "bought": 438510,
     "sold": 461130,
-    "net_pct": -4.7
+    "net_pct": -4.8
   },
   "extras": {
-    "beta": 1.217,
-    "enterprise_value": 8503866880,
-    "ev_ebitda": 142.008,
-    "ev_revenue": 30.156,
-    "float_shares": 52888670,
+    "beta": null,
+    "enterprise_value": null,
+    "ev_ebitda": null,
+    "ev_revenue": null,
+    "float_shares": 52153416,
     "short_shares": 10297224,
     "short_pct_float": 18.49,
     "short_ratio": 12.29,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 512,
+  "inst_count": 514,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.64348,
-      "actual": -0.62,
-      "surprise_pct": 3.65
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.54149,
@@ -269,6 +263,12 @@
       "estimate": 1.92894,
       "actual": 2.29,
       "surprise_pct": 18.72
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 2.66118,
+      "actual": 3.07,
+      "surprise_pct": 15.36
     }
   ],
   "insiders": [

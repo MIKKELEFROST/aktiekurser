@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:59.796Z",
+  "updated_at": "2026-11-06T21:46:49.977Z",
   "source": "Yahoo Finance",
   "symbol": "OPK",
   "summary": "OPKO Health, Inc. operates as a healthcare company, in the United States, Ireland, Chile, Spain, Israel, Mexico, and internationally. The company operates in two segments, Pharmaceutical and Diagnostics. The Pharmaceutical segment develops MDX2001, a tetra-specific antibody targeting several types of solid tumors in Phase 1 clinical trials; MDX2003, a tetra-specific antibody targeting two antigens for hematological tumors in Phase 1 clinical trials; and MDX2004, a trispecific immune modulator to rebuild and sustain the patient's own immune system. This segment also engages in the development of Epstein Barr Virus vaccine; Rayaldee, a patented extended-release product for oral administration containing 30 mcg of a prohormone; OPK-88006 oral and injectable product to regulate blood glucose and reduce body weight; NGENLA, recombinant human growth hormone product developed for the long-term treatment of pediatric patients with growth hormone deficiency. The Diagnostics segment offers laboratory testing services, such as detection, diagnosis, evaluation, monitoring, and treatment of diseases, as well as esoteric testing, molecular diagnostics, anatomical pathology, genetics, women's health, and correctional healthcare under the BioReference brand; and 4Kscore test. OPKO Health, Inc. was founded in 2006 and is headquartered in Miami, Florida.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": -0.06333,
+  "eps_estimate": -0.06,
   "analysts": {
     "strong_buy": 3,
     "buy": 2,
@@ -72,8 +72,8 @@
     }
   ],
   "growth": {
-    "q0": null,
-    "q1": -0.676,
+    "q0": -0.676,
+    "q1": null,
     "y0": null,
     "y1": -0.63490003
   },
@@ -247,12 +247,6 @@
   "inst_count": 290,
   "eps_history": [
     {
-      "quarter": "2025-09-30",
-      "estimate": -0.045,
-      "actual": 0.03,
-      "surprise_pct": 166.67
-    },
-    {
       "quarter": "2025-12-31",
       "estimate": -0.07,
       "actual": -0.0358,
@@ -269,9 +263,24 @@
       "estimate": -0.11,
       "actual": -0.0261,
       "surprise_pct": 76.27
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.06333,
+      "actual": -0.05,
+      "surprise_pct": 21.05
     }
   ],
   "insiders": [
+    {
+      "name": "PAGANELLI JOHN A",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 1.78 - 1.82 per share.",
+      "value": 24577,
+      "shares": 13601,
+      "date": "2026-11-05"
+    },
     {
       "name": "PAGANELLI JOHN A",
       "role": "Director",
@@ -352,15 +361,6 @@
       "value": 891000,
       "shares": 675000,
       "date": "2025-08-08"
-    },
-    {
-      "name": "FROST PHILLIP MD ET AL",
-      "role": "Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "buy",
-      "text": "Purchase at price 1.48 per share.",
-      "value": 184650,
-      "shares": 125000,
-      "date": "2025-04-08"
     }
   ],
   "dividends": [],
