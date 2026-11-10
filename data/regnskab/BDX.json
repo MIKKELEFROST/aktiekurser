@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T00:26:49.007Z",
+  "updated_at": "2026-11-10T22:04:21.968Z",
   "source": "Yahoo Finance",
   "symbol": "BDX",
   "summary": "Becton, Dickinson and Company develops, manufactures, and sells medical supplies, devices, laboratory equipment, and diagnostic products for healthcare institutions, physicians, life science researchers, clinical laboratories, pharmaceutical industry, and the general public worldwide. It operates through Medical Essentials, Connected Care, BioPharma Systems, Interventional and Life Sciences segments. It provides peripheral intravenous (IV) and advanced peripheral catheters, central lines, acute dialysis catheters, vascular access technology, vascular care and preparation products, needle-free IV connectors and extensions sets, closed-system drug transfer devices, hazardous drug detections, hypodermic syringes and needles, anesthesia needles and trays, enteral syringes, and sharps disposal systems; IV medication safety and infusion therapy delivery systems, medication compounding workflow system, automated medication dispensing and supply management systems, informatics and analytics and pharmacy automation system, and medication inventory optimization and tracking system; hemodynamic monitoring system; and prefillable drug delivery systems. It also offers specimen and blood collection products; automated blood and tuberculosis culturing, molecular testing, and microorganism identification and drug susceptibility, as well as rapid diagnostic assays, microbiology laboratory automation products, and plated media products; and fluorescence-activated cell sorters and analyzers, antibodies and kits, reagent system, and solution for single-cell gene expression analysis, as well as clinical oncology, immunological, and transplantation diagnostic/monitoring reagents and analyzers. It provides hernia and soft tissue repair, biological and bioresorbable graft, biosurgery, and other surgical products; surgical infection prevention, peripheral intervention, and urology and critical care products. The company was founded in 1897 and is headquartered in Franklin Lakes, New Jersey.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 2.34869,
+  "eps_estimate": 2.34999,
   "analysts": {
     "strong_buy": 1,
     "buy": 8,
@@ -19,9 +19,9 @@
     "strong_sell": 1,
     "total": 16
   },
-  "target_mean": 224,
+  "target_mean": 226.14285,
   "target_high": 242,
-  "target_low": 165,
+  "target_low": 195,
   "target_analysts": 14,
   "statements": [
     {
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": -0.1929,
-    "q1": 0.041500002,
-    "y0": 0.0403,
-    "y1": 0.0762
+    "q0": -0.1924,
+    "q1": 0.044299997,
+    "y0": 0.040599998,
+    "y1": 0.0765
   },
   "ratings": [
+    {
+      "date": "2026-11-10",
+      "firm": "Barclays",
+      "from": "Underweight",
+      "to": "Underweight",
+      "action": "main"
+    },
     {
       "date": "2026-11-07",
       "firm": "JP Morgan",
@@ -139,13 +146,6 @@
       "firm": "RBC Capital",
       "from": "Sector Perform",
       "to": "Sector Perform",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-07",
-      "firm": "Citigroup",
-      "from": "Buy",
-      "to": "Buy",
       "action": "main"
     }
   ],
@@ -223,11 +223,11 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 4,
-    "sells": 11,
-    "bought": 92087,
-    "sold": 12096,
-    "net_pct": 7.3
+    "buys": 5,
+    "sells": 12,
+    "bought": 112326,
+    "sold": 15089,
+    "net_pct": 9
   },
   "extras": {
     "beta": 0.28,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-12-10",
   "dividend_date": null,
   "payout_ratio": 0.7249,
-  "inst_count": 1966,
+  "inst_count": 1969,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -272,6 +272,24 @@
     }
   ],
   "insiders": [
+    {
+      "name": "POLEN THOMAS E JR",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 210.00 per share.",
+      "value": 628530,
+      "shares": 2993,
+      "date": "2026-11-05"
+    },
+    {
+      "name": "POLEN THOMAS E JR",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 178.94 per share.",
+      "value": 3621567,
+      "shares": 20239,
+      "date": "2026-11-05"
+    },
     {
       "name": "FELD MICHAEL",
       "role": "Officer",
@@ -343,24 +361,6 @@
       "value": 0,
       "shares": 14342,
       "date": "2026-07-01"
-    },
-    {
-      "name": "FELD MICHAEL",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 152.80 per share.",
-      "value": 11460,
-      "shares": 75,
-      "date": "2026-06-26"
-    },
-    {
-      "name": "GARRISON MICHAEL DAVID",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 145.66 per share.",
-      "value": 160226,
-      "shares": 1100,
-      "date": "2026-06-24"
     }
   ],
   "dividends": [

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T00:26:50.027Z",
+  "updated_at": "2026-11-10T22:04:22.703Z",
   "source": "Yahoo Finance",
   "symbol": "KLTR",
   "summary": "Kaltura, Inc., together with its subsidiaries, provides various software-as-a-service (SaaS) products and solutions and a platform-as-a-service (PaaS) in the United States, Europe, the Middle East, Africa, and internationally. The company operates through two segments, Enterprise, Education, and Technology (EE&T); and Media and Telecom (M&T). The company creates, generates, manages, analyzes, distributes, publishes, and engages with live, real-time, and on-demand videos, and other forms; media content creation tools, AI-assisted and AI-generated content capabilities, content enrichment and repurposing, centralized content management, publishing, analytics, and content lifecycle management; and experience components, including live, real-time and on-demand video, audience interaction, moderation, analytics, and post-event content reuse. It offers cloud-based software systems designed for over-the-top and cloud television services. The company was incorporated in 2006 and is headquartered in New York, New York.",
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 43866000,
-      "earnings": -2628000
-    },
-    {
       "q": "4Q2025",
       "revenue": 45540000,
       "earnings": -576000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 46894000,
       "earnings": -5544000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 47265000,
+      "earnings": 0
     }
   ],
   "growth": {
-    "q0": -2,
-    "q1": -1.3333,
+    "q0": -1.3333,
+    "q1": -1,
     "y0": -0.8571,
     "y1": 3
   },
@@ -179,6 +179,13 @@
       "date": "2026-06-30"
     },
     {
+      "name": "Acadian Asset Management. LLC",
+      "kind": "institution",
+      "pct": 1.86,
+      "shares": 2830607,
+      "date": "2026-09-30"
+    },
+    {
       "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
       "kind": "fond",
       "pct": 1.73,
@@ -207,13 +214,6 @@
       "date": "2026-09-30"
     },
     {
-      "name": "Acadian Asset Management. LLC",
-      "kind": "institution",
-      "pct": 1.47,
-      "shares": 2250085,
-      "date": "2026-06-30"
-    },
-    {
       "name": "S Squared Technology, LLC",
       "kind": "institution",
       "pct": 1.27,
@@ -230,11 +230,11 @@
     "net_pct": -0.3
   },
   "extras": {
-    "beta": 1.174,
-    "enterprise_value": 230362256,
-    "ev_ebitda": 34.872,
-    "ev_revenue": 1.273,
-    "float_shares": 90696279,
+    "beta": null,
+    "enterprise_value": 226986656,
+    "ev_ebitda": 52.41,
+    "ev_revenue": 1.231,
+    "float_shares": 91606538,
     "short_shares": 1764344,
     "short_pct_float": 1.75,
     "short_ratio": 7.39,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": null,
-  "inst_count": 133,
+  "inst_count": 132,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.005,
-      "actual": 0.01,
-      "surprise_pct": 300
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0,
@@ -269,6 +263,12 @@
       "estimate": -0.01,
       "actual": 0.01,
       "surprise_pct": 200
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.01,
+      "actual": 0.02,
+      "surprise_pct": 300
     }
   ],
   "insiders": [

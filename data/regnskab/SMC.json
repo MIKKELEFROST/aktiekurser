@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T00:26:50.795Z",
+  "updated_at": "2026-11-10T22:04:23.232Z",
   "source": "Yahoo Finance",
   "symbol": "SMC",
   "summary": "Summit Midstream Corporation owns, develops, and operates midstream energy infrastructure assets primarily shale formations in the continental United States. It operates through Rockies, Permian, Piceance, Mid-Con, and Northeast segments. The company owns, develops, and operates natural gas, crude oil, produced water gathering systems, and transmission pipelines. It serves natural gas and crude oil producers. Summit Midstream Corporation was founded in 2009 and is based in Houston, Texas.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-09",
   "earnings_estimated": false,
   "earnings_call": "2026-11-10",
-  "eps_estimate": -0.29,
+  "eps_estimate": -0.53,
   "analysts": {
     "strong_buy": 0,
     "buy": 2,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 146883000,
-      "earnings": 0
-    },
-    {
       "q": "4Q2025",
       "revenue": 142294000,
       "earnings": -7312000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 155013000,
       "earnings": 4565000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 183005000,
+      "earnings": 15861000
     }
   ],
   "growth": {
-    "q0": null,
-    "q1": -2.2921,
+    "q0": -2.2921,
+    "q1": -27.163301,
     "y0": -2.1147,
     "y1": -0.4688
   },
@@ -174,11 +174,11 @@
     "net_pct": null
   },
   "extras": {
-    "beta": 0.875,
-    "enterprise_value": 1988729984,
-    "ev_ebitda": 9.862,
-    "ev_revenue": 3.404,
-    "float_shares": 3151762,
+    "beta": null,
+    "enterprise_value": 2013847680,
+    "ev_ebitda": 9.773,
+    "ev_revenue": 3.246,
+    "float_shares": 3151621,
     "short_shares": 159989,
     "short_pct_float": 1.75,
     "short_ratio": 1.65,
@@ -188,7 +188,7 @@
   "ex_dividend": "2020-02-06",
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 119,
+  "inst_count": 118,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -207,6 +207,12 @@
       "estimate": -0.355,
       "actual": 0.2065,
       "surprise_pct": 158.17
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.29,
+      "actual": 0.7354,
+      "surprise_pct": 353.59
     }
   ],
   "insiders": [
@@ -247,33 +253,6 @@
       "date": "2026-03-31"
     },
     {
-      "name": "MCNALLY ROBERT JOSEPH",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 3733,
-      "date": "2026-03-16"
-    },
-    {
-      "name": "JACOBE JAMES LEE",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 3733,
-      "date": "2026-03-16"
-    },
-    {
-      "name": "OATES ROMMEL M.",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 3733,
-      "date": "2026-03-16"
-    },
-    {
       "name": "PETERS JERRY L. CPA",
       "role": "Director",
       "kind": "other",
@@ -293,6 +272,33 @@
     },
     {
       "name": "STONE CAROLYN J",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 3733,
+      "date": "2026-03-16"
+    },
+    {
+      "name": "MCNALLY ROBERT JOSEPH",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 3733,
+      "date": "2026-03-16"
+    },
+    {
+      "name": "JACOBE JAMES LEE",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 3733,
+      "date": "2026-03-16"
+    },
+    {
+      "name": "OATES ROMMEL M.",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T00:26:49.169Z",
+  "updated_at": "2026-11-10T22:04:22.086Z",
   "source": "Yahoo Finance",
   "symbol": "CATX",
   "summary": "Perspective Therapeutics, Inc., a radiopharmaceutical development company, develops and commercializes precision targeted alpha therapies (TAT) to treat cancer in the United States. It discovers and develops its initial drug candidate VMT-a-NET that is in Phase 1/2a clinical trials for patients with unresectable or metastatic somatostatin receptor type 2 (SSTR2)-expressing neuroendocrine tumors that have not previously received peptide-targeted radiopharmaceutical therapy, such as Lutathera, a beta emitting therapy; VMT01, which is in Phase 1/2a clinical trials for second-line or later treatment of patients with progressive melanocortin 1 receptor (MC1R) positive metastatic melanoma; and PSV359, a targeted alpha therapy targeting fibroblast activation protein alpha. The company also develops Pluvicto, a betaemitting radioligand therapy to treat progressive prostate-specific membrane antigen (PSMA) positive metastatic castration-resistant prostate cancer. It has a clinical trial collaboration agreement with Bristol Myers Squibb to evaluate the safety and tolerability of [212Pb] VMT01 in combination with nivolumab in patients with histologically confirmed melanoma and positive MC1R imaging scans. The company was formerly known as Isoray, Inc. and changed its name to Perspective Therapeutics, Inc. in February 2022. Perspective Therapeutics, Inc. was founded in 2004 and is headquartered in Seattle, Washington.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-09",
   "earnings_estimated": true,
   "earnings_call": null,
-  "eps_estimate": -0.2453,
+  "eps_estimate": -0.26104,
   "analysts": {
     "strong_buy": 1,
     "buy": 13,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 16
   },
-  "target_mean": 10.57143,
+  "target_mean": 10.14286,
   "target_high": 15,
   "target_low": 4,
   "target_analysts": 14,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 209000,
-      "earnings": -25969000
-    },
-    {
       "q": "4Q2025",
       "revenue": 43000,
       "earnings": -37490000
@@ -69,15 +64,41 @@
       "q": "2Q2026",
       "revenue": 81000,
       "earnings": -26786000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 20000,
+      "earnings": -32442000
     }
   ],
   "growth": {
-    "q0": 0.2991,
-    "q1": 0.48389998,
-    "y0": 0.29569998,
-    "y1": -0.0438
+    "q0": 0.48389998,
+    "q1": 0.02,
+    "y0": 0.2963,
+    "y1": -0.0397
   },
   "ratings": [
+    {
+      "date": "2026-11-10",
+      "firm": "Truist Securities",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-10",
+      "firm": "Wedbush",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-10",
+      "firm": "Piper Sandler",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-10-26",
       "firm": "RBC Capital",
@@ -125,27 +146,6 @@
       "firm": "Piper Sandler",
       "from": "Overweight",
       "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-05-05",
-      "firm": "Wedbush",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "reit"
-    },
-    {
-      "date": "2026-04-20",
-      "firm": "Wedbush",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "reit"
-    },
-    {
-      "date": "2026-03-23",
-      "firm": "HC Wainwright & Co.",
-      "from": "Buy",
-      "to": "Buy",
       "action": "main"
     }
   ],
@@ -230,11 +230,11 @@
     "net_pct": null
   },
   "extras": {
-    "beta": 1.993,
-    "enterprise_value": -135244832,
-    "ev_ebitda": 1.116,
-    "ev_revenue": -330.672,
-    "float_shares": 70817409,
+    "beta": null,
+    "enterprise_value": -94693760,
+    "ev_ebitda": 0.744,
+    "ev_revenue": -430.426,
+    "float_shares": 74916354,
     "short_shares": 16679713,
     "short_pct_float": 17.45,
     "short_ratio": 6.96,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": null,
-  "inst_count": 168,
+  "inst_count": 167,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.32166,
-      "actual": -0.35,
-      "surprise_pct": -8.81
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.34395,
@@ -269,6 +263,12 @@
       "estimate": -0.27171,
       "actual": -0.22,
       "surprise_pct": 19.03
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.2453,
+      "actual": -0.27,
+      "surprise_pct": -10.07
     }
   ],
   "insiders": [

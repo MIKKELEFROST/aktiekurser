@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T00:26:50.169Z",
+  "updated_at": "2026-11-10T22:04:22.809Z",
   "source": "Yahoo Finance",
   "symbol": "MBX",
   "summary": "MBX Biosciences, Inc., a clinical-stage biopharmaceutical company, focuses on the discovery and development of precision peptide therapies for the treatment of endocrine and metabolic disorders. Its lead product candidate is Canvuparatide (MBX 2109), a parathyroid hormone peptide prodrug, which is in Phase 3 clinical trial for the treatment of chronic hypoparathyroidism. The company is also developing Imapextide (MBX 1416), a long-acting glucagon-like peptide-1 (GLP-1) receptor antagonist that is in Phase 2 clinical trial a potential therapy for post-bariatric hypoglycemia, a chronic complication of bariatric surgery. In addition, it is developing MBX 4291, a lead obesity product candidate, which is in investigational new drug-enabling studies for the treatment of obesity and co-morbidities. The company was founded in 2018 and is based in Carmel, Indiana.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-12",
   "earnings_estimated": true,
   "earnings_call": null,
-  "eps_estimate": -0.84465,
+  "eps_estimate": -0.93098,
   "analysts": {
     "strong_buy": 3,
     "buy": 8,
@@ -45,11 +45,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 0,
-      "earnings": -21618000
-    },
-    {
       "q": "4Q2025",
       "revenue": 0,
       "earnings": -22062000
@@ -63,11 +58,16 @@
       "q": "2Q2026",
       "revenue": 0,
       "earnings": -37095000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 0,
+      "earnings": -62421000
     }
   ],
   "growth": {
-    "q0": -0.3407,
-    "q1": -0.9,
+    "q0": -0.9,
+    "q1": -0.7974,
     "y0": -0.2831,
     "y1": -0.3019
   },
@@ -221,14 +221,14 @@
     "sells": 3,
     "bought": 169003,
     "sold": 70746,
-    "net_pct": 7.6
+    "net_pct": 7.7
   },
   "extras": {
-    "beta": 0.176,
-    "enterprise_value": 2057780992,
-    "ev_ebitda": -17.489,
+    "beta": null,
+    "enterprise_value": null,
+    "ev_ebitda": null,
     "ev_revenue": null,
-    "float_shares": 30989095,
+    "float_shares": 30570941,
     "short_shares": 4422964,
     "short_pct_float": 12.83,
     "short_ratio": 6.96,
@@ -240,12 +240,6 @@
   "payout_ratio": 0,
   "inst_count": 250,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.67719,
-      "actual": -0.63,
-      "surprise_pct": 6.97
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.59668,
@@ -263,6 +257,12 @@
       "estimate": -0.58569,
       "actual": -0.78,
       "surprise_pct": -33.18
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.84465,
+      "actual": -1.29,
+      "surprise_pct": -52.73
     }
   ],
   "insiders": [
@@ -305,18 +305,18 @@
     {
       "name": "AZOULAY SALOMON M.D.",
       "role": "Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 10.46 - 16.00 per share.",
-      "value": 815348,
+      "kind": "sell",
+      "text": "Sale at price 38.30 - 38.38 per share.",
+      "value": 2685515,
       "shares": 70003,
       "date": "2026-05-08"
     },
     {
       "name": "AZOULAY SALOMON M.D.",
       "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 38.30 - 38.38 per share.",
-      "value": 2685515,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 10.46 - 16.00 per share.",
+      "value": 815348,
       "shares": 70003,
       "date": "2026-05-08"
     },

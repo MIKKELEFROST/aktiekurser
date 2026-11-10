@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T00:26:49.683Z",
+  "updated_at": "2026-11-10T22:04:22.452Z",
   "source": "Yahoo Finance",
   "symbol": "FWONK",
   "summary": "Formula One Group, together with its subsidiaries, engages in the motorsports business in the United States, the United Kingdom, Spain, and internationally. The company holds commercial rights for the Fédération Internationale de l'Automobile (FIA) Formula One World Championship, an annual nine-month long motor race-based competition in which teams compete for the Constructors' championship and drivers compete for the Drivers' championship. It is also involved in filming, television production and post-production, and digital and social media activities; provision of freight, logistical, and travel related services, as well as technical support at Formula 1 events; production of the international television feed; and operation of the Formula 1 Paddock Club hospitality program, F2 and F3 race series, and F1 Academy. The company was founded in 1950 and is headquartered in Englewood, Colorado. Formula One Group operates as a subsidiary of Liberty Media Corporation.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.83333,
+  "eps_estimate": 0.90444,
   "analysts": {
     "strong_buy": 3,
     "buy": 12,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 17
   },
-  "target_mean": 121.88235,
+  "target_mean": 122.35294,
   "target_high": 134,
   "target_low": 113,
   "target_analysts": 17,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 1.2104,
-    "q1": 1.4442999,
-    "y0": -0.2881,
-    "y1": 0.1721
+    "q0": 1.3989999,
+    "q1": 3,
+    "y0": -0.2733,
+    "y1": 0.159
   },
   "ratings": [
+    {
+      "date": "2026-11-10",
+      "firm": "TD Cowen",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-11-06",
       "firm": "UBS",
@@ -140,27 +147,20 @@
       "from": "Equal-Weight",
       "to": "Equal-Weight",
       "action": "main"
-    },
-    {
-      "date": "2026-07-29",
-      "firm": "Guggenheim",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
     }
   ],
   "holders": [
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 6.2,
+      "pct": 6.19,
       "shares": 13900445,
       "date": "2026-06-30"
     },
     {
       "name": "Vanguard Capital Management LLC",
       "kind": "institution",
-      "pct": 4.35,
+      "pct": 4.34,
       "shares": 9751215,
       "date": "2026-06-30"
     },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.678,
-    "enterprise_value": 30513833984,
-    "ev_ebitda": 29.172,
-    "ev_revenue": 6.782,
+    "enterprise_value": 30935023616,
+    "ev_ebitda": 29.575,
+    "ev_revenue": 6.876,
     "float_shares": 244804300,
     "short_shares": 10085599,
     "short_pct_float": 4.51,
@@ -244,7 +244,7 @@
   "ex_dividend": "2023-07-20",
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 900,
+  "inst_count": 904,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -287,18 +287,18 @@
     {
       "name": "CAREY CHARLES GORDON",
       "role": "Director",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 33.22 per share.",
-      "value": 5548936,
+      "kind": "sell",
+      "text": "Sale at price 95.78 - 97.36 per share.",
+      "value": 16096910,
       "shares": 167036,
       "date": "2025-12-17"
     },
     {
       "name": "CAREY CHARLES GORDON",
       "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 95.78 - 97.36 per share.",
-      "value": 16096910,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 33.22 per share.",
+      "value": 5548936,
       "shares": 167036,
       "date": "2025-12-17"
     },
@@ -323,18 +323,18 @@
     {
       "name": "CAREY CHARLES GORDON",
       "role": "Director",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 33.22 per share.",
-      "value": 2691019,
+      "kind": "sell",
+      "text": "Sale at price 102.50 - 103.29 per share.",
+      "value": 8334322,
       "shares": 81006,
       "date": "2025-11-12"
     },
     {
       "name": "CAREY CHARLES GORDON",
       "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 102.50 - 103.29 per share.",
-      "value": 8334322,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 33.22 per share.",
+      "value": 2691019,
       "shares": 81006,
       "date": "2025-11-12"
     },
@@ -350,9 +350,9 @@
     {
       "name": "CAREY CHARLES GORDON",
       "role": "Director",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 33.22 per share.",
-      "value": 3625000,
+      "kind": "sell",
+      "text": "Sale at price 102.48 - 103.12 per share.",
+      "value": 11189255,
       "shares": 109121,
       "date": "2025-11-10"
     }

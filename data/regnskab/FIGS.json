@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T00:26:49.619Z",
+  "updated_at": "2026-11-10T22:04:22.411Z",
   "source": "Yahoo Finance",
   "symbol": "FIGS",
   "summary": "FIGS, Inc., together with its subsidiary, FIGS Canada, Inc., operates as a direct-to-consumer healthcare apparel and lifestyle company in the United States and internationally. The company designs and sells scrubwear and non-scrubwear offerings, such as outerwear, underscrubs, footwear, compression socks, lab coats, loungewear, and other apparel. It also offers sports apparel, performance leggings and tops, super-soft pima cotton tops, vests, fleeces, and jackets; and necessities comprising scrub caps, lanyards, badge reels, bags, baseball caps, and beanies. The company markets and sells its products to healthcare professionals through its direct-to-consumer digital platform comprising website, mobile app, and B2B business, as well as retail stores. FIGS, Inc. was incorporated in 2013 and is headquartered in Santa Monica, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.12,
+  "eps_estimate": 0.13833,
   "analysts": {
     "strong_buy": 1,
     "buy": 4,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.2,
+    "q0": 0.3833,
     "q1": 0.8083,
     "y0": 0.9263,
     "y1": 0.1246
   },
   "ratings": [
+    {
+      "date": "2026-11-10",
+      "firm": "Cantor Fitzgerald",
+      "from": null,
+      "to": "Overweight",
+      "action": "init"
+    },
     {
       "date": "2026-11-06",
       "firm": "Barclays",
@@ -139,13 +146,6 @@
       "firm": "BTIG",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-04-28",
-      "firm": "Keybanc",
-      "from": "Overweight",
-      "to": "Overweight",
       "action": "main"
     }
   ],
@@ -223,18 +223,18 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 0,
-    "sells": 0,
-    "bought": 0,
-    "sold": null,
-    "net_pct": null
+    "buys": 8,
+    "sells": 1,
+    "bought": 8703192,
+    "sold": 4044284,
+    "net_pct": 164.1
   },
   "extras": {
     "beta": 1.057,
     "enterprise_value": 3313202432,
     "ev_ebitda": 39.662,
     "ev_revenue": 4.423,
-    "float_shares": 151100832,
+    "float_shares": 151067677,
     "short_shares": 20068694,
     "short_pct_float": 21.93,
     "short_ratio": 5.38,
@@ -272,6 +272,24 @@
     }
   ],
   "insiders": [
+    {
+      "name": "SPEAR CATHERINE EVA",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 19.70 per share.",
+      "value": 79672395,
+      "shares": 4044284,
+      "date": "2026-11-09"
+    },
+    {
+      "name": "SPEAR CATHERINE EVA",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 0.85 - 1.37 per share.",
+      "value": 7773750,
+      "shares": 8595000,
+      "date": "2026-11-09"
+    },
     {
       "name": "WILKE JEFFREY A",
       "role": "Director",
@@ -336,15 +354,6 @@
       "date": "2026-06-03"
     },
     {
-      "name": "OUGHTRED SARAH",
-      "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 14.33 per share.",
-      "value": 338237,
-      "shares": 23597,
-      "date": "2026-05-04"
-    },
-    {
       "name": "HASSON HEATHER L",
       "role": "Officer, Director and Beneficial Owner",
       "kind": "sell",
@@ -352,15 +361,6 @@
       "value": 464203,
       "shares": 32385,
       "date": "2026-05-04"
-    },
-    {
-      "name": "OUGHTRED SARAH",
-      "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 14.44 per share.",
-      "value": 156980,
-      "shares": 10872,
-      "date": "2026-04-02"
     }
   ],
   "dividends": [],

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T00:26:50.712Z",
+  "updated_at": "2026-11-10T22:04:23.582Z",
   "source": "Yahoo Finance",
   "symbol": "SB",
   "summary": "Safe Bulkers, Inc., together with its subsidiaries, provides marine drybulk transportation services internationally. The company owns and operates a fleet of dry bulk vessels for transporting bulk cargoes comprising coal, grain, and iron ore. Its fleet consists of 45 vessels, including 8 Panamax class vessels, 12 Kamsarmax class vessels, 17 post-Panamax class vessels, and 8 Capesize class vessels with an aggregate carrying capacity of 4,559,000 deadweight tons. Safe Bulkers, Inc. was incorporated in 2007 and is based in Monaco.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-09",
   "earnings_estimated": false,
   "earnings_call": "2026-11-10",
-  "eps_estimate": 0.265,
+  "eps_estimate": 0.305,
   "analysts": {
     "strong_buy": 0,
     "buy": 2,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 76280000,
-      "earnings": 15784000
-    },
-    {
       "q": "4Q2025",
       "revenue": 75947000,
       "earnings": 9837000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 91221000,
       "earnings": 33157000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 95030000,
+      "earnings": 36967000
     }
   ],
   "growth": {
-    "q0": 1.2083,
-    "q1": 1.1786,
+    "q0": 1.1786,
+    "q1": -0.38889998,
     "y0": 2.2344,
     "y1": -0.32369998
   },
@@ -165,6 +165,13 @@
       "date": "2026-06-30"
     },
     {
+      "name": "Acadian Asset Management. LLC",
+      "kind": "institution",
+      "pct": 3.26,
+      "shares": 3320770,
+      "date": "2026-09-30"
+    },
+    {
       "name": "Renaissance Technologies, LLC",
       "kind": "institution",
       "pct": 2.76,
@@ -200,13 +207,6 @@
       "date": "2026-06-30"
     },
     {
-      "name": "Acadian Asset Management. LLC",
-      "kind": "institution",
-      "pct": 1.61,
-      "shares": 1636606,
-      "date": "2026-06-30"
-    },
-    {
       "name": "LSV Asset Management",
       "kind": "institution",
       "pct": 1.49,
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 1100922496,
-    "ev_ebitda": 6.825,
-    "ev_revenue": 3.58,
+    "enterprise_value": 1112123776,
+    "ev_ebitda": 6.894,
+    "ev_revenue": 3.617,
     "float_shares": 51072850,
     "short_shares": 3407468,
     "short_pct_float": 7.49,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-08-13",
   "dividend_date": null,
   "payout_ratio": 0.2727,
-  "inst_count": 223,
+  "inst_count": 224,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.095,
-      "actual": 0.12,
-      "surprise_pct": 26.32
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.14,
@@ -269,6 +263,12 @@
       "estimate": 0.215,
       "actual": 0.28,
       "surprise_pct": 30.23
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.265,
+      "actual": 0.31,
+      "surprise_pct": 16.98
     }
   ],
   "insiders": [

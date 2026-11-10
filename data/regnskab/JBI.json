@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T00:26:49.969Z",
+  "updated_at": "2026-11-10T22:04:22.669Z",
   "source": "Yahoo Finance",
   "symbol": "JBI",
   "summary": "Janus International Group, Inc. manufactures and supplies turn-key self-storage, commercial, and industrial building solutions in North America and internationally. The company provides roll up and swing doors, hallway systems, relocatable storage units, and facility and door automation technologies. It also offers access control technologies. Janus International Group, Inc. was founded in 2002 and is headquartered in Temple, Georgia.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-10",
   "earnings_estimated": false,
   "earnings_call": "2026-11-10",
-  "eps_estimate": 0.1775,
+  "eps_estimate": 0.1925,
   "analysts": {
     "strong_buy": 1,
     "buy": 2,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 219300000,
-      "earnings": 15200000
-    },
-    {
       "q": "4Q2025",
       "revenue": 226300000,
       "earnings": 7100000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 233500000,
       "earnings": 10700000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 213100000,
+      "earnings": -13300000
     }
   ],
   "growth": {
-    "q0": 0.1094,
-    "q1": 0.75,
+    "q0": 0.75,
+    "q1": null,
     "y0": -0.0792,
     "y1": 0.1765
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.358,
-    "enterprise_value": 1128462080,
-    "ev_ebitda": 7.729,
-    "ev_revenue": 1.251,
+    "enterprise_value": 1144834304,
+    "ev_ebitda": 7.841,
+    "ev_revenue": 1.269,
     "float_shares": 129986470,
     "short_shares": 5434875,
     "short_pct_float": 4.84,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 307,
+  "inst_count": 306,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.205,
-      "actual": 0.16,
-      "surprise_pct": -21.95
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.1225,
@@ -263,6 +257,12 @@
       "estimate": 0.16,
       "actual": 0.17,
       "surprise_pct": 6.25
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.1775,
+      "actual": 0.08,
+      "surprise_pct": -54.93
     }
   ],
   "insiders": [

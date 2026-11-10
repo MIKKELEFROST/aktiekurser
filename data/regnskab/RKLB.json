@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T00:26:50.642Z",
+  "updated_at": "2026-11-10T22:04:23.160Z",
   "source": "Yahoo Finance",
   "symbol": "RKLB",
   "summary": "Rocket Lab Corporation, a space company, provides launch services and space systems solutions in the United States, Canada, Japan, and internationally. The company operates through launch services and space systems segments. The company provides launch services, spacecraft design services, spacecraft components, spacecraft manufacturing, optical systems, and other spacecraft and on-orbit management solutions and constellation management services, as well as designs and manufactures small and medium-class rockets and develops flight and ground software. It also designs, manufactures, and sells Electron, an orbital small launch vehicle for small spacecraft launch services, as well as develops Neutron launch vehicles for large constellation deployments, interplanetary missions, and potentially for human spaceflight. In addition, the company designs and manufactures a range of components and subsystems for its launch vehicles and spacecraft. It serves commercial, aerospace prime contractors, and government customers. Rocket Lab Corporation was formerly known as Rocket Lab USA, Inc. and changed its name to Rocket Lab Corporation in August 2021. The company was founded in 2006 and is headquartered in Long Beach, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-09",
   "earnings_estimated": false,
   "earnings_call": "2026-11-09",
-  "eps_estimate": -0.0159,
+  "eps_estimate": -0.00679,
   "analysts": {
     "strong_buy": 5,
     "buy": 13,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 22
   },
-  "target_mean": 102.15,
+  "target_mean": 99.4,
   "target_high": 150,
-  "target_low": 64,
+  "target_low": 58,
   "target_analysts": 20,
   "statements": [
     {
@@ -72,12 +72,47 @@
     }
   ],
   "growth": {
-    "q0": 0.1846,
-    "q1": 0.8658,
-    "y0": 0.7484,
-    "y1": 2.2528
+    "q0": 0.8549,
+    "q1": 2.0741,
+    "y0": 0.7464,
+    "y1": 2.1167998
   },
   "ratings": [
+    {
+      "date": "2026-11-10",
+      "firm": "Barclays",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-10",
+      "firm": "Keybanc",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "reit"
+    },
+    {
+      "date": "2026-11-10",
+      "firm": "BTIG",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "reit"
+    },
+    {
+      "date": "2026-11-10",
+      "firm": "Piper Sandler",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-10",
+      "firm": "Cantor Fitzgerald",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-10-16",
       "firm": "Citizens",
@@ -112,41 +147,6 @@
       "from": "Buy",
       "to": "Buy",
       "action": "main"
-    },
-    {
-      "date": "2026-10-09",
-      "firm": "Barclays",
-      "from": null,
-      "to": "Overweight",
-      "action": "init"
-    },
-    {
-      "date": "2026-10-01",
-      "firm": "Citigroup",
-      "from": null,
-      "to": "Buy",
-      "action": "init"
-    },
-    {
-      "date": "2026-09-11",
-      "firm": "Raymond James",
-      "from": null,
-      "to": "Outperform",
-      "action": "init"
-    },
-    {
-      "date": "2026-08-31",
-      "firm": "B of A Securities",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-11",
-      "firm": "Citizens",
-      "from": "Market Outperform",
-      "to": "Market Outperform",
-      "action": "reit"
     }
   ],
   "holders": [
@@ -227,14 +227,14 @@
     "sells": 22,
     "bought": 6116781,
     "sold": 4260969,
-    "net_pct": 64.2
+    "net_pct": 58.7
   },
   "extras": {
-    "beta": 3.176,
-    "enterprise_value": 33050419200,
-    "ev_ebitda": -219.573,
-    "ev_revenue": 42.97,
-    "float_shares": 556842909,
+    "beta": null,
+    "enterprise_value": 32713084928,
+    "ev_ebitda": -190.271,
+    "ev_revenue": 37.094,
+    "float_shares": 588177624,
     "short_shares": 45295028,
     "short_pct_float": 7.62,
     "short_ratio": 2,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 1462,
+  "inst_count": 1464,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.10452,
-      "actual": -0.03,
-      "surprise_pct": 71.3
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.09803,
@@ -269,24 +263,30 @@
       "estimate": -0.07667,
       "actual": -0.08,
       "surprise_pct": -4.34
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.06645,
+      "actual": -0.12,
+      "surprise_pct": -80.59
     }
   ],
   "insiders": [
     {
       "name": "SPICE ADAM C",
       "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 1.09 per share.",
-      "value": 152771,
+      "kind": "sell",
+      "text": "Sale at price 51.28 - 54.78 per share.",
+      "value": 7398440,
       "shares": 140157,
       "date": "2026-11-02"
     },
     {
       "name": "SPICE ADAM C",
       "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 51.28 - 54.78 per share.",
-      "value": 7398440,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 1.09 per share.",
+      "value": 152771,
       "shares": 140157,
       "date": "2026-11-02"
     },
@@ -302,18 +302,18 @@
     {
       "name": "SPICE ADAM C",
       "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 1.09 per share.",
-      "value": 152771,
+      "kind": "sell",
+      "text": "Sale at price 62.26 - 62.97 per share.",
+      "value": 8777721,
       "shares": 140157,
       "date": "2026-09-02"
     },
     {
       "name": "SPICE ADAM C",
       "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 62.26 - 62.97 per share.",
-      "value": 8777721,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 1.09 per share.",
+      "value": 152771,
       "shares": 140157,
       "date": "2026-09-02"
     },

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T00:26:48.736Z",
+  "updated_at": "2026-11-10T22:04:21.687Z",
   "source": "Yahoo Finance",
   "symbol": "ACHR",
   "summary": "Archer Aviation Inc., together with its subsidiaries, designs and develops aircraft and related technologies and services for commercial and defense sectors in the United States and internationally. The company offers electric vertical takeoff and landing (eVTOL) aircraft for urban air taxi operations. Archer Aviation Inc. is based in San Jose, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-09",
   "earnings_estimated": false,
   "earnings_call": "2026-11-09",
-  "eps_estimate": -0.24503,
+  "eps_estimate": -0.23274,
   "analysts": {
     "strong_buy": 3,
     "buy": 4,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 0,
-      "earnings": -129900000
-    },
-    {
       "q": "4Q2025",
       "revenue": 300000,
       "earnings": -188900000
@@ -69,15 +64,34 @@
       "q": "2Q2026",
       "revenue": 5000000,
       "earnings": -263200000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 5100000,
+      "earnings": -274500000
     }
   ],
   "growth": {
-    "q0": -1.1215,
-    "q1": -0.6902,
+    "q0": -0.6902,
+    "q1": null,
     "y0": -0.53080004,
     "y1": 0.15720001
   },
   "ratings": [
+    {
+      "date": "2026-11-10",
+      "firm": "Needham",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-10",
+      "firm": "Cantor Fitzgerald",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-10-09",
       "firm": "Barclays",
@@ -130,20 +144,6 @@
     {
       "date": "2025-11-11",
       "firm": "Canaccord Genuity",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2025-11-07",
-      "firm": "JP Morgan",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2025-11-07",
-      "firm": "Needham",
       "from": "Buy",
       "to": "Buy",
       "action": "main"
@@ -230,11 +230,11 @@
     "net_pct": 0.1
   },
   "extras": {
-    "beta": 3.602,
-    "enterprise_value": 2292114432,
-    "ev_ebitda": -2.53,
-    "ev_revenue": 332.191,
-    "float_shares": 653134187,
+    "beta": null,
+    "enterprise_value": 2666554112,
+    "ev_ebitda": -2.632,
+    "ev_revenue": 222.213,
+    "float_shares": 672961880,
     "short_shares": 114809733,
     "short_pct_float": 17.15,
     "short_ratio": 4.43,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 676,
+  "inst_count": 675,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.20018,
-      "actual": -0.1155,
-      "surprise_pct": 42.3
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.1681,
@@ -269,6 +263,12 @@
       "estimate": -0.2506,
       "actual": -0.219,
       "surprise_pct": 12.61
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.24503,
+      "actual": -0.2238,
+      "surprise_pct": 8.66
     }
   ],
   "insiders": [

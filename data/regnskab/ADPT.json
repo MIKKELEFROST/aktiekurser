@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T00:26:48.757Z",
+  "updated_at": "2026-11-10T22:04:21.707Z",
   "source": "Yahoo Finance",
   "symbol": "ADPT",
   "summary": "Adaptive Biotechnologies Corporation, a commercial-stage company, develops an immune medicine platform for the diagnosis and treatment of various diseases. The company offers immunosequencing platform which combines a suite of proprietary chemistry, computational biology, and machine learning to generate clinical immunomics data to decode the adaptive immune system. It provides clonoSEQ diagnostic test which detects and monitors the remaining number of cancer cells that are present in a patient's body during and after treatment, known as Minimal Residual Disease (MRD). The company offers products and services for life sciences research, clinical diagnostics, and drug discovery applications. The company was formerly known as Adaptive TCR Corporation and changed its name to Adaptive Biotechnologies Corporation in December 2011. Adaptive Biotechnologies Corporation was incorporated in 2009 and is headquartered in Seattle, Washington.",
@@ -10,7 +10,7 @@
   "next_earnings": "2027-02-04",
   "earnings_estimated": true,
   "earnings_call": "2026-11-04",
-  "eps_estimate": -0.064,
+  "eps_estimate": -0.04034,
   "analysts": {
     "strong_buy": 2,
     "buy": 6,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 8
   },
-  "target_mean": 30.5,
+  "target_mean": 32.28571,
   "target_high": 35,
   "target_low": 21,
   "target_analysts": 7,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.2889,
-    "q1": 0.2308,
-    "y0": null,
-    "y1": null
+    "q0": 0.5518,
+    "q1": 0.2821,
+    "y0": 0.0462,
+    "y1": 0.71769994
   },
   "ratings": [
+    {
+      "date": "2026-11-10",
+      "firm": "Guggenheim",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-13",
       "firm": "TD Cowen",
@@ -137,13 +144,6 @@
     {
       "date": "2026-07-30",
       "firm": "Guggenheim",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-30",
-      "firm": "BTIG",
       "from": "Buy",
       "to": "Buy",
       "action": "main"
@@ -293,18 +293,18 @@
     {
       "name": "RUBINSTEIN JULIAN",
       "role": "President",
-      "kind": "sell",
-      "text": "Sale at price 26.58 - 28.90 per share.",
-      "value": 998097,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 12.14 per share.",
+      "value": 432706,
       "shares": 35643,
       "date": "2026-10-29"
     },
     {
       "name": "RUBINSTEIN JULIAN",
       "role": "President",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 12.14 per share.",
-      "value": 432706,
+      "kind": "sell",
+      "text": "Sale at price 26.58 - 28.90 per share.",
+      "value": 998097,
       "shares": 35643,
       "date": "2026-10-29"
     },

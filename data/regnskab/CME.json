@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T00:26:49.267Z",
+  "updated_at": "2026-11-10T22:04:22.152Z",
   "source": "Yahoo Finance",
   "symbol": "CME",
   "summary": "CME Group Inc., together with its subsidiaries, operates contract markets for the trading of futures and options on futures contracts worldwide. It offers futures and options products based on interest rates, equity indexes, and foreign exchange; and agricultural, energy, and metals commodities, as well as fixed income and foreign currency trading services. The company provides clearing house services, including clearing, settling, and guaranteeing futures and options contracts, and cleared swaps products traded through its exchanges. In addition, the company offers a range of market data services, including real-time and historical data services. It serves professional traders, financial institutions, institutional and individual investors, corporations, manufacturers, producers, governments, and central banks. CME Group Inc. partners with FutureSports to futures on sports indexes. The company was formerly known as Chicago Mercantile Exchange Holdings Inc. and changed its name to CME Group Inc. in July 2007. The company was founded in 1898 and is headquartered in Chicago, Illinois.",
@@ -74,8 +74,8 @@
   "growth": {
     "q0": 0.0923,
     "q1": -0.0117,
-    "y0": 0.1071,
-    "y1": 0.0672
+    "y0": 0.106800005,
+    "y1": 0.0685
   },
   "ratings": [
     {
@@ -207,17 +207,17 @@
       "date": "2026-06-30"
     },
     {
+      "name": "Mirabaud Asset Management Ltd",
+      "kind": "institution",
+      "pct": 2.44,
+      "shares": 8721000,
+      "date": "2026-09-30"
+    },
+    {
       "name": "Capital World Investors",
       "kind": "institution",
       "pct": 1.91,
       "shares": 6822315,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "JPMORGAN CHASE & CO",
-      "kind": "institution",
-      "pct": 1.61,
-      "shares": 5767731,
       "date": "2026-06-30"
     }
   ],
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-12-11",
   "dividend_date": null,
   "payout_ratio": 0.92620003,
-  "inst_count": 2379,
+  "inst_count": 2383,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -271,7 +271,98 @@
       "surprise_pct": 1.02
     }
   ],
-  "insiders": [],
+  "insiders": [
+    {
+      "name": "WINKLER JULIE",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 305.15 per share.",
+      "value": 3075607,
+      "shares": 10079,
+      "date": "2026-11-02"
+    },
+    {
+      "name": "SIEGEL HOWARD J",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 303.00 per share.",
+      "value": 606000,
+      "shares": 2000,
+      "date": "2026-11-02"
+    },
+    {
+      "name": "CUTINHO SUNIL KIRAN",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 298.70 per share.",
+      "value": 1493500,
+      "shares": 5000,
+      "date": "2026-10-27"
+    },
+    {
+      "name": "GEPSMAN MARTIN J",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 302.50 per share.",
+      "value": 121000,
+      "shares": 400,
+      "date": "2026-10-22"
+    },
+    {
+      "name": "SHEPARD WILLIAM R",
+      "role": "Director",
+      "kind": "buy",
+      "text": "Purchase at price 268.76 per share.",
+      "value": 78626,
+      "shares": 292,
+      "date": "2026-09-25"
+    },
+    {
+      "name": "SAMMANN DEREK LOUIS",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 275.09 per share.",
+      "value": 787858,
+      "shares": 2864,
+      "date": "2026-09-15"
+    },
+    {
+      "name": "VROMAN KENDAL L",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 275.09 per share.",
+      "value": 713033,
+      "shares": 2592,
+      "date": "2026-09-15"
+    },
+    {
+      "name": "COOK ELIZABETH A",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 280.11 per share.",
+      "value": 140055,
+      "shares": 500,
+      "date": "2026-09-14"
+    },
+    {
+      "name": "DUFFY TERRENCE A",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 274.41 - 275.03 per share.",
+      "value": 4116539,
+      "shares": 15000,
+      "date": "2026-09-10"
+    },
+    {
+      "name": "COOK ELIZABETH A",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 225.00 per share.",
+      "value": 145125,
+      "shares": 645,
+      "date": "2026-06-25"
+    }
+  ],
   "dividends": [
     {
       "date": "2018-09-07",

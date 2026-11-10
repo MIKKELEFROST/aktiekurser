@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T00:26:50.377Z",
+  "updated_at": "2026-11-10T22:04:22.959Z",
   "source": "Yahoo Finance",
   "symbol": "NXRT",
   "summary": "NexPoint Residential Trust, Inc. is a publicly traded real estate investment trust (REIT), primarily focused on acquiring, owning and operating well-located middle-income multifamily properties with value-add potential in large cities and suburban submarkets of large cities, primarily in the Southeastern and Southwestern United States. NXRT is externally advised by NexPoint Real Estate Advisors, L.P., an affiliate of NexPoint Advisors, L.P., an SEC-registered investment advisor, which has extensive real estate experience. NexPoint Residential Trust, Inc. is incorporated in Maryland.",
@@ -19,9 +19,9 @@
     "strong_sell": 1,
     "total": 6
   },
-  "target_mean": 25.25,
-  "target_high": 35,
-  "target_low": 18,
+  "target_mean": 18.25,
+  "target_high": 20,
+  "target_low": 17,
   "target_analysts": 4,
   "statements": [
     {
@@ -218,11 +218,11 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 0,
-    "sells": 0,
-    "bought": 0,
-    "sold": null,
-    "net_pct": null
+    "buys": 13,
+    "sells": 1,
+    "bought": 93086,
+    "sold": 15000,
+    "net_pct": 2.5
   },
   "extras": {
     "beta": 1.183,
@@ -239,7 +239,7 @@
   "ex_dividend": "2026-12-15",
   "dividend_date": null,
   "payout_ratio": 47.4315,
-  "inst_count": 300,
+  "inst_count": 299,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -268,6 +268,33 @@
   ],
   "insiders": [
     {
+      "name": "RICHARDS PAUL",
+      "role": "Officer",
+      "kind": "buy",
+      "text": "Purchase at price 15.91 - 16.78 per share.",
+      "value": 103053,
+      "shares": 6300,
+      "date": "2026-11-09"
+    },
+    {
+      "name": "MCGRANER MATTHEW RYAN",
+      "role": "Officer",
+      "kind": "buy",
+      "text": "Purchase at price 16.38 - 16.86 per share.",
+      "value": 199266,
+      "shares": 11992,
+      "date": "2026-11-06"
+    },
+    {
+      "name": "MITTS BRIAN D",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 17.07 per share.",
+      "value": 256050,
+      "shares": 15000,
+      "date": "2026-11-05"
+    },
+    {
       "name": "MCGRANER MATTHEW RYAN",
       "role": "Chief Investment Officer",
       "kind": "buy",
@@ -275,24 +302,6 @@
       "value": 201049,
       "shares": 10780,
       "date": "2026-10-05"
-    },
-    {
-      "name": "CONSTANTINO EDWARD N",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 3429,
-      "date": "2026-05-22"
-    },
-    {
-      "name": "MITTS BRIAN D",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 3429,
-      "date": "2026-05-22"
     },
     {
       "name": "MCGRANER MATTHEW RYAN",
@@ -341,15 +350,6 @@
     },
     {
       "name": "LAFFER ARTHUR BETZ",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 3429,
-      "date": "2026-05-22"
-    },
-    {
-      "name": "KAVANAUGH SCOTT F.",
       "role": "Director",
       "kind": "other",
       "text": null,

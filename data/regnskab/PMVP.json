@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T00:26:50.531Z",
+  "updated_at": "2026-11-10T22:04:23.076Z",
   "source": "Yahoo Finance",
   "symbol": "PMVP",
   "summary": "PMV Pharmaceuticals, Inc., a precision oncology company, engages in the discovery and development of small molecule therapies targeting p53 mutations and other p53-related cancers in the United States. It develops rezatapopt, a selective structural corrector of p53 Y220C mutations in Phase 2 clinical trials for tumor agnostic diseases. The company was formerly known as PJ Pharmaceuticals, Inc. and changed its name to PMV Pharmaceuticals, Inc. in July 2013. PMV Pharmaceuticals, Inc. was incorporated in 2013 and is headquartered in Princeton, New Jersey.",
@@ -7,10 +7,10 @@
   "website": "https://www.pmvpharma.com",
   "employees": 54,
   "ceo": "Dr. David H. Mack Ph.D.",
-  "next_earnings": "2026-11-16",
-  "earnings_estimated": true,
+  "next_earnings": "2026-11-10",
+  "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": -0.33,
+  "eps_estimate": -0.26,
   "analysts": {
     "strong_buy": 0,
     "buy": 5,
@@ -51,16 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 0,
-      "earnings": -21210000
-    },
-    {
-      "q": "3Q2025",
-      "revenue": 0,
-      "earnings": -21059000
-    },
-    {
       "q": "4Q2025",
       "revenue": 0,
       "earnings": -18037000
@@ -69,11 +59,21 @@
       "q": "1Q2026",
       "revenue": 0,
       "earnings": -18038000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 0,
+      "earnings": -18086000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 0,
+      "earnings": -34372000
     }
   ],
   "growth": {
-    "q0": 0.175,
-    "q1": 0.2353,
+    "q0": 0.2353,
+    "q1": 0.19610001,
     "y0": 0.1723,
     "y1": 0.2816
   },
@@ -188,9 +188,9 @@
     {
       "name": "Acadian Asset Management. LLC",
       "kind": "institution",
-      "pct": 4.15,
-      "shares": 2215894,
-      "date": "2026-06-30"
+      "pct": 4.28,
+      "shares": 2285479,
+      "date": "2026-09-30"
     },
     {
       "name": "Vanguard Capital Management LLC",
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 77,
+  "inst_count": 76,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.4025,
-      "actual": -0.4,
-      "surprise_pct": 0.62
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.395,
@@ -269,6 +263,12 @@
       "estimate": -0.4,
       "actual": -0.34,
       "surprise_pct": 15
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.33,
+      "actual": -0.2907,
+      "surprise_pct": 11.91
     }
   ],
   "insiders": [
@@ -300,24 +300,6 @@
       "date": "2025-09-10"
     },
     {
-      "name": "MACK DAVID HENRY",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 1.06 per share.",
-      "value": 62179,
-      "shares": 58411,
-      "date": "2025-07-01"
-    },
-    {
-      "name": "TICKTIN ROBERT",
-      "role": "Chief Operating Officer",
-      "kind": "sell",
-      "text": "Sale at price 1.06 per share.",
-      "value": 24651,
-      "shares": 23151,
-      "date": "2025-07-01"
-    },
-    {
       "name": "JALOTA DEEPIKA",
       "role": "Officer",
       "kind": "sell",
@@ -333,6 +315,24 @@
       "text": "Sale at price 1.06 per share.",
       "value": 30077,
       "shares": 28249,
+      "date": "2025-07-01"
+    },
+    {
+      "name": "MACK DAVID HENRY",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 1.06 per share.",
+      "value": 62179,
+      "shares": 58411,
+      "date": "2025-07-01"
+    },
+    {
+      "name": "TICKTIN ROBERT",
+      "role": "Chief Operating Officer",
+      "kind": "sell",
+      "text": "Sale at price 1.06 per share.",
+      "value": 24651,
+      "shares": 23151,
       "date": "2025-07-01"
     },
     {

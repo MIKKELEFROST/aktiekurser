@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T00:26:51.071Z",
+  "updated_at": "2026-11-10T22:04:23.428Z",
   "source": "Yahoo Finance",
   "symbol": "V",
   "summary": "Visa Inc. operates as a payments technology company in the United States and internationally. It operates VisaNet, a transaction processing network that enables authorization, clearing, and settlement of payment transactions. The company also offers credit, debit, and prepaid card products; tap to pay, tokenization, and click to pay services; Visa Direct, a platform which facilitates money movement, enabling clients to collect, hold, convert, and send funds across its network; and issuing solutions, such as airport lounge access, dining reservations, shopping experiences, event tickets, and seller offers. In addition, it provides acceptance solutions, an omnichannel payment integration with e-commerce platforms; risk detection and prevention solutions; and advisory and other services comprising consulting practice, proprietary analytics models, data scientists and economists, marketing services, and managed services. The company provides its services under the Visa, Visa Electron, V PAY, Interlink, and PLUS brands. It serves consumers, sellers, financial institutions, and government entities. Visa Inc. was founded in 1958 and is headquartered in San Francisco, California.",
@@ -19,7 +19,7 @@
     "strong_sell": 1,
     "total": 40
   },
-  "target_mean": 446.3346,
+  "target_mean": 447.41568,
   "target_high": 500,
   "target_low": 330,
   "target_analysts": 37,
@@ -74,10 +74,17 @@
   "growth": {
     "q0": 0.145,
     "q1": 0.0951,
-    "y0": 0.1329,
-    "y1": 0.14029999
+    "y0": 0.1328,
+    "y1": 0.1402
   },
   "ratings": [
+    {
+      "date": "2026-11-10",
+      "firm": "Citigroup",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-11-05",
       "firm": "Truist Securities",
@@ -140,83 +147,76 @@
       "from": "In-Line",
       "to": "In-Line",
       "action": "main"
-    },
-    {
-      "date": "2026-10-28",
-      "firm": "Oppenheimer",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
     }
   ],
   "holders": [
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 8.08,
+      "pct": 7.98,
       "shares": 137669061,
       "date": "2026-06-30"
     },
     {
       "name": "Vanguard Capital Management LLC",
       "kind": "institution",
-      "pct": 6.23,
+      "pct": 6.16,
       "shares": 106150500,
       "date": "2026-06-30"
     },
     {
       "name": "State Street Corporation",
       "kind": "institution",
-      "pct": 4.86,
+      "pct": 4.81,
       "shares": 82872209,
       "date": "2026-06-30"
     },
     {
       "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
       "kind": "fond",
-      "pct": 3.03,
+      "pct": 3,
       "shares": 51664314,
       "date": "2026-06-30"
     },
     {
       "name": "Geode Capital Management, LLC",
       "kind": "institution",
-      "pct": 2.74,
+      "pct": 2.7,
       "shares": 46646920,
       "date": "2026-09-30"
     },
     {
       "name": "Morgan Stanley",
       "kind": "institution",
-      "pct": 2.7,
+      "pct": 2.67,
       "shares": 45960354,
       "date": "2026-06-30"
     },
     {
       "name": "FMR, LLC",
       "kind": "institution",
-      "pct": 2.52,
+      "pct": 2.49,
       "shares": 42929995,
       "date": "2026-06-30"
     },
     {
       "name": "VANGUARD INDEX FUNDS-Vanguard 500 Index Fund",
       "kind": "fond",
-      "pct": 2.47,
+      "pct": 2.44,
       "shares": 42152408,
       "date": "2026-06-30"
     },
     {
       "name": "Vanguard Portfolio Management LLC",
       "kind": "institution",
-      "pct": 2.16,
+      "pct": 2.14,
       "shares": 36844619,
       "date": "2026-06-30"
     },
     {
       "name": "Price (T.Rowe) Associates Inc",
       "kind": "institution",
-      "pct": 2.08,
+      "pct": 2.06,
       "shares": 35472043,
       "date": "2026-06-30"
     }
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-11-10",
   "dividend_date": null,
   "payout_ratio": 0.2175,
-  "inst_count": 6026,
+  "inst_count": 6031,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -291,15 +291,6 @@
       "date": "2026-11-04"
     },
     {
-      "name": "MCINERNEY RYAN",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 416.22 per share.",
-      "value": 2445292,
-      "shares": 5875,
-      "date": "2026-11-02"
-    },
-    {
       "name": "TANEJA RAJAT",
       "role": "Officer",
       "kind": "sell",
@@ -309,21 +300,30 @@
       "date": "2026-11-02"
     },
     {
-      "name": "MCINERNEY RYAN",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 134.76 per share.",
-      "value": 791715,
-      "shares": 5875,
-      "date": "2026-11-02"
-    },
-    {
       "name": "TANEJA RAJAT",
       "role": "Officer",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 109.82 per share.",
       "value": 3779785,
       "shares": 34418,
+      "date": "2026-11-02"
+    },
+    {
+      "name": "MCINERNEY RYAN",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 416.22 per share.",
+      "value": 2445292,
+      "shares": 5875,
+      "date": "2026-11-02"
+    },
+    {
+      "name": "MCINERNEY RYAN",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 134.76 per share.",
+      "value": 791715,
+      "shares": 5875,
       "date": "2026-11-02"
     },
     {

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T00:26:50.652Z",
+  "updated_at": "2026-11-10T22:04:23.165Z",
   "source": "Yahoo Finance",
   "symbol": "RNGR",
   "summary": "Ranger Energy Services, Inc. provides onshore high specification well service rigs, wireline services, and complementary services to exploration and production companies in the United States. It operates through three segments: High Specification Rigs, Wireline Services, and Processing Solutions and Ancillary Services. The High Specification Rigs segment offers well service rigs and complementary equipment and services to facilitate operations throughout the lifecycle of a well; and well maintenance services. This segment has a fleet of 431 well service rigs. The Wireline Services segment provides wireline production and intervention services to provide information to identify and resolve well production problems through cased hole logging, perforating, mechanical, and pipe recovery services; wireline completion services that are used primarily for pump down perforating operations to create perforations or entry holes through the production casing; and pumping services. This segment has a fleet of 65 wireline units and 29 high-pressure pump trucks. The Processing Solutions and Ancillary Services segment rents well service-related equipment consisting of fluid pumps, power swivels, well control packages, hydraulic catwalks, frac tanks, pipe racks, and pipe handling tools; and coiled tubing, decommissioning, and snubbing services, as well as provides proprietary and modular equipment for the processing of natural gas streams. This segment also engages in the rental, installation, commissioning, operation, and maintenance of mechanical refrigeration units, nitrogen gas liquid stabilizer units, nitrogen gas liquid storage units, and related equipment. The company was founded in 2014 and is headquartered in Houston, Texas.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-09",
   "earnings_estimated": false,
   "earnings_call": "2026-11-10",
-  "eps_estimate": 0.37,
+  "eps_estimate": 0.25,
   "analysts": {
     "strong_buy": 1,
     "buy": 1,
@@ -19,8 +19,8 @@
     "strong_sell": 0,
     "total": 3
   },
-  "target_mean": 18.66667,
-  "target_high": 21,
+  "target_mean": 19,
+  "target_high": 22,
   "target_low": 15,
   "target_analysts": 3,
   "statements": [
@@ -51,16 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 140600000,
-      "earnings": 0
-    },
-    {
-      "q": "3Q2025",
-      "revenue": 128900000,
-      "earnings": 0
-    },
-    {
       "q": "4Q2025",
       "revenue": 142200000,
       "earnings": 3200000
@@ -69,11 +59,21 @@
       "q": "1Q2026",
       "revenue": 159100000,
       "earnings": 3000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 176500000,
+      "earnings": 0
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 162800000,
+      "earnings": 2500000
     }
   ],
   "growth": {
-    "q0": 1.0951,
-    "q1": 0.3538,
+    "q0": 0.3538,
+    "q1": 0.62770003,
     "y0": 0.4939,
     "y1": 0.24790001
   },
@@ -165,18 +165,18 @@
       "date": "2026-06-30"
     },
     {
+      "name": "Royce & Associates LP",
+      "kind": "institution",
+      "pct": 6.12,
+      "shares": 1432494,
+      "date": "2026-09-30"
+    },
+    {
       "name": "Dimensional Fund Advisors LP",
       "kind": "institution",
       "pct": 6.04,
       "shares": 1413823,
       "date": "2026-09-30"
-    },
-    {
-      "name": "Royce & Associates LP",
-      "kind": "institution",
-      "pct": 5.54,
-      "shares": 1296607,
-      "date": "2026-06-30"
     },
     {
       "name": "Encompass Capital Advisors, LLC",
@@ -230,11 +230,11 @@
     "net_pct": -1.8
   },
   "extras": {
-    "beta": 0.243,
-    "enterprise_value": 336723232,
-    "ev_ebitda": 4.413,
-    "ev_revenue": 0.555,
-    "float_shares": 18316529,
+    "beta": null,
+    "enterprise_value": 333541600,
+    "ev_ebitda": 4.159,
+    "ev_revenue": 0.521,
+    "float_shares": 18311406,
     "short_shares": 520387,
     "short_pct_float": 2.26,
     "short_ratio": 3.48,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.4,
   "inst_count": 207,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.38,
-      "actual": 0.1766,
-      "surprise_pct": -53.53
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.21,
@@ -269,6 +263,12 @@
       "estimate": 0.29667,
       "actual": 0.3322,
       "surprise_pct": 11.98
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.37,
+      "actual": 0.1125,
+      "surprise_pct": -69.59
     }
   ],
   "insiders": [
@@ -291,15 +291,6 @@
       "date": "2026-08-10"
     },
     {
-      "name": "KEARNEY MICHAEL CHARLES",
-      "role": "Director",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 15.69 per share.",
-      "value": 168071,
-      "shares": 10712,
-      "date": "2026-07-24"
-    },
-    {
       "name": "MASHINSKI CARLA S",
       "role": "Director",
       "kind": "other",
@@ -319,6 +310,15 @@
     },
     {
       "name": "WOOLVERTON SEAN C",
+      "role": "Director",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 15.69 per share.",
+      "value": 168071,
+      "shares": 10712,
+      "date": "2026-07-24"
+    },
+    {
+      "name": "KEARNEY MICHAEL CHARLES",
       "role": "Director",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 15.69 per share.",

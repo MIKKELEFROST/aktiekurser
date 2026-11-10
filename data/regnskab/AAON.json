@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T00:26:48.720Z",
+  "updated_at": "2026-11-10T22:04:21.667Z",
   "source": "Yahoo Finance",
   "symbol": "AAON",
   "summary": "AAON, Inc., together with its subsidiaries, engages in engineering, manufacturing, marketing, and selling air conditioning and heating equipment in the United States and Canada. The company operates through three segments: AAON Oklahoma, AAON Coil Products, and BASX. It offers rooftop units, data center cooling solutions, cleanroom systems, packaged outdoor mechanical rooms, air handling units, makeup air units, energy recovery units, condensing units, geothermal/water-source heat pumps, coils, and controls. The company markets and sells its products to retail, manufacturing, educational, lodging, supermarket, data centers, medical and pharmaceutical, and other commercial industries. It sells its products through a network of independent manufacturer representative organizations and internal sales force, as well as online. AAON, Inc. was incorporated in 1987 and is headquartered in Tulsa, Oklahoma.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-09",
   "earnings_estimated": false,
   "earnings_call": "2026-11-09",
-  "eps_estimate": 0.57833,
+  "eps_estimate": 0.7,
   "analysts": {
     "strong_buy": 1,
     "buy": 4,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 6
   },
-  "target_mean": 128.5,
+  "target_mean": 127,
   "target_high": 154,
-  "target_low": 110,
+  "target_low": 104,
   "target_analysts": 4,
   "statements": [
     {
@@ -72,12 +72,26 @@
     }
   ],
   "growth": {
-    "q0": 0.56310004,
-    "q1": 0.62560004,
-    "y0": 0.76669997,
-    "y1": 0.4962
+    "q0": 0.7949,
+    "q1": 0.3021,
+    "y0": 0.8901,
+    "y1": 0.46240002
   },
   "ratings": [
+    {
+      "date": "2026-11-10",
+      "firm": "Oppenheimer",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-10",
+      "firm": "Baird",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
     {
       "date": "2026-10-14",
       "firm": "Oppenheimer",
@@ -133,20 +147,6 @@
       "from": "Buy",
       "to": "Buy",
       "action": "main"
-    },
-    {
-      "date": "2025-08-12",
-      "firm": "Baird",
-      "from": "Outperform",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2025-06-16",
-      "firm": "Sidoti & Co.",
-      "from": "Neutral",
-      "to": "Buy",
-      "action": "up"
     }
   ],
   "holders": [
@@ -230,11 +230,11 @@
     "net_pct": 2.1
   },
   "extras": {
-    "beta": 1.459,
-    "enterprise_value": 5167594496,
-    "ev_ebitda": 17.222,
-    "ev_revenue": 2.674,
-    "float_shares": 68848789,
+    "beta": null,
+    "enterprise_value": 5578444288,
+    "ev_ebitda": 14.932,
+    "ev_revenue": 2.461,
+    "float_shares": 68853475,
     "short_shares": 6332352,
     "short_pct_float": 9.22,
     "short_ratio": 5.66,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-09-04",
   "dividend_date": null,
   "payout_ratio": 0.21049999,
-  "inst_count": 619,
+  "inst_count": 618,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.322,
-      "actual": 0.37,
-      "surprise_pct": 14.91
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.46,
@@ -269,6 +263,12 @@
       "estimate": 0.494,
       "actual": 0.69,
       "surprise_pct": 39.68
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.57833,
+      "actual": 0.83,
+      "surprise_pct": 43.52
     }
   ],
   "insiders": [
@@ -347,19 +347,19 @@
     {
       "name": "FIELDS GARY D.",
       "role": "Director",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 48.91 per share.",
-      "value": 1035571,
+      "kind": "sell",
+      "text": "Sale at price 140.34 per share.",
+      "value": 2971419,
       "shares": 21173,
       "date": "2026-05-26"
     },
     {
-      "name": "WICHMAN GORDON DOUGLAS",
-      "role": "Officer",
+      "name": "FIELDS GARY D.",
+      "role": "Director",
       "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 27.58 per share.",
-      "value": 82740,
-      "shares": 3000,
+      "text": "Conversion of Exercise of derivative security at price 48.91 per share.",
+      "value": 1035571,
+      "shares": 21173,
       "date": "2026-05-26"
     }
   ],

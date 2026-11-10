@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T00:26:50.434Z",
+  "updated_at": "2026-11-10T22:04:23.000Z",
   "source": "Yahoo Finance",
   "symbol": "OSG",
   "summary": "Octave Specialty Group, Inc., an insurance holding company, primarily engages in the specialty property and casualty insurance business in the United States and the United Kingdom. It operates in two segments, Specialty Property and Casualty Insurance; and Insurance Distribution. The Specialty Property and Casualty Insurance segment provides specialty property and casualty program insurance with a focus on commercial and personal liability risks. The Insurance Distribution segment offers property, niche specialty risk, accident and health, miscellaneous specialty, reinsurance, surety, marine and energy, specialty auto, excess and surplus lines commercial package, professional lines, and directors' and officers' insurance. The company was formerly known as Ambac Financial Group, Inc. and changed its name to Octave Specialty Group, Inc. in November 2025. The company was incorporated in 1991 and is headquartered in New York, New York.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-09",
   "earnings_estimated": false,
   "earnings_call": "2026-11-10",
-  "eps_estimate": -0.04667,
+  "eps_estimate": -0.11,
   "analysts": {
     "strong_buy": 1,
     "buy": 2,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 66606000,
-      "earnings": -112620000
-    },
-    {
       "q": "4Q2025",
       "revenue": 66903000,
       "earnings": -29982000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 82995000,
       "earnings": -14429000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 85343000,
+      "earnings": -13797000
     }
   ],
   "growth": {
-    "q0": 0.77779996,
-    "q1": -4.5,
+    "q0": -4.5,
+    "q1": 0.0991,
     "y0": 1.2931,
     "y1": 2.4706
   },
@@ -162,7 +162,7 @@
       "kind": "institution",
       "pct": 4.99,
       "shares": 2247591,
-      "date": "2026-06-30"
+      "date": "2026-09-30"
     },
     {
       "name": "Vanguard Capital Management LLC",
@@ -230,11 +230,11 @@
     "net_pct": null
   },
   "extras": {
-    "beta": 0.736,
-    "enterprise_value": 600200320,
-    "ev_ebitda": 81.46,
-    "ev_revenue": 1.872,
-    "float_shares": 42448862,
+    "beta": null,
+    "enterprise_value": 534118592,
+    "ev_ebitda": 52.612,
+    "ev_revenue": 1.574,
+    "float_shares": 42458028,
     "short_shares": 1362927,
     "short_pct_float": 3.26,
     "short_ratio": 2.57,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 208,
+  "inst_count": 209,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.23,
-      "actual": -0.21,
-      "surprise_pct": 8.7
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.205,
@@ -269,16 +263,22 @@
       "estimate": -0.005,
       "actual": -0.04,
       "surprise_pct": -700
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.04667,
+      "actual": -0.03,
+      "surprise_pct": 35.72
     }
   ],
   "insiders": [
     {
-      "name": "SMITH R. SHARON",
-      "role": "Officer",
+      "name": "LEBLANC CLAUDE L.",
+      "role": "Chief Executive Officer",
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 2539,
+      "shares": 26857,
       "date": "2026-10-02"
     },
     {
@@ -291,21 +291,21 @@
       "date": "2026-10-02"
     },
     {
+      "name": "SMITH R. SHARON",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 2539,
+      "date": "2026-10-02"
+    },
+    {
       "name": "LEBLANC CLAUDE L.",
       "role": "Chief Executive Officer",
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 26857,
-      "date": "2026-10-02"
-    },
-    {
-      "name": "SMITH R. SHARON",
-      "role": "Chief Operating Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 11779,
+      "shares": 39380,
       "date": "2026-07-09"
     },
     {
@@ -318,12 +318,12 @@
       "date": "2026-07-09"
     },
     {
-      "name": "LEBLANC CLAUDE L.",
-      "role": "Chief Executive Officer",
+      "name": "SMITH R. SHARON",
+      "role": "Chief Operating Officer",
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 39380,
+      "shares": 11779,
       "date": "2026-07-09"
     },
     {
@@ -336,12 +336,12 @@
       "date": "2026-03-10"
     },
     {
-      "name": "SMITH R. SHARON",
-      "role": "Chief Operating Officer",
+      "name": "LEBLANC CLAUDE L.",
+      "role": "Chief Executive Officer",
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 1541,
+      "shares": 24548,
       "date": "2026-03-03"
     },
     {
@@ -354,12 +354,12 @@
       "date": "2026-03-03"
     },
     {
-      "name": "LEBLANC CLAUDE L.",
-      "role": "Chief Executive Officer",
+      "name": "SMITH R. SHARON",
+      "role": "Chief Operating Officer",
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 24548,
+      "shares": 1541,
       "date": "2026-03-03"
     }
   ],

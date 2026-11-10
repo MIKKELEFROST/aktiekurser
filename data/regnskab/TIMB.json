@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T00:26:50.952Z",
+  "updated_at": "2026-11-10T22:04:23.339Z",
   "source": "Yahoo Finance",
   "symbol": "TIMB",
   "summary": "TIM S.A. engages in the telecommunications sector in Brazil. It offers landline switched telephone services in local, national, and international long-distance modes, as well as personal mobile and multimedia communication services. The company is based in Rio de Janeiro, Brazil. TIM S.A. is a subsidiary of TIM Brasil Serviços e Participações S.A.",
@@ -7,10 +7,10 @@
   "website": "https://www.tim.com.br",
   "employees": null,
   "ceo": "Mr. Alberto Mario Griselli",
-  "next_earnings": "2026-11-09",
-  "earnings_estimated": false,
+  "next_earnings": "2027-02-09",
+  "earnings_estimated": true,
   "earnings_call": "2026-11-10",
-  "eps_estimate": 0.47886,
+  "eps_estimate": 0.5548,
   "analysts": {
     "strong_buy": 1,
     "buy": 2,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 6711000000,
-      "earnings": 1208000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 6920000000,
       "earnings": 1331000000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 6902761000,
       "earnings": 969571000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 7069367000,
+      "earnings": 990745000
     }
   ],
   "growth": {
-    "q0": 0.026600001,
-    "q1": 0.0304,
+    "q0": 0.0304,
+    "q1": 0.0507,
     "y0": 0.0041,
     "y1": 0.1262
   },
@@ -230,11 +230,11 @@
     "net_pct": null
   },
   "extras": {
-    "beta": 0.13,
-    "enterprise_value": 20628944896,
-    "ev_ebitda": 1.814,
-    "ev_revenue": 0.753,
-    "float_shares": 477480466,
+    "beta": null,
+    "enterprise_value": 19485134848,
+    "ev_ebitda": 1.458,
+    "ev_revenue": 0.702,
+    "float_shares": 483034100,
     "short_shares": 2625171,
     "short_pct_float": 1.76,
     "short_ratio": 4.28,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-09-28",
   "dividend_date": null,
   "payout_ratio": 0.8819,
-  "inst_count": 212,
+  "inst_count": 208,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.4075,
-      "actual": 0.46643,
-      "surprise_pct": 14.46
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.42461,
@@ -269,6 +263,12 @@
       "estimate": 0.46737,
       "actual": 0.42,
       "surprise_pct": -10.14
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.47886,
+      "actual": 0.42576,
+      "surprise_pct": -11.09
     }
   ],
   "insiders": [],

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T00:26:50.888Z",
+  "updated_at": "2026-11-10T22:04:23.298Z",
   "source": "Yahoo Finance",
   "symbol": "SVRA",
   "summary": "Savara Inc., a clinical stage biopharmaceutical company, focuses on rare respiratory diseases in the United States. The company's lead product candidate is molgramostim, an inhaled granulocyte-macrophage colony-stimulating factor, which is in Phase 3 development stage for the treatment of autoimmune pulmonary alveolar proteinosis. Savara Inc. was founded in 2007 and is headquartered in Yardley, Pennsylvania.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-11",
   "earnings_estimated": true,
   "earnings_call": null,
-  "eps_estimate": -0.16898,
+  "eps_estimate": -0.16573,
   "analysts": {
     "strong_buy": 3,
     "buy": 6,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 0,
-      "earnings": -30401000
-    },
-    {
       "q": "3Q2025",
       "revenue": 0,
       "earnings": -29561000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 0,
       "earnings": -40228000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 0,
+      "earnings": -42989000
     }
   ],
   "growth": {
-    "q0": -0.207,
-    "q1": -0.2748,
+    "q0": -0.2748,
+    "q1": null,
     "y0": -0.22469999,
     "y1": 0.4346
   },
@@ -227,14 +227,14 @@
     "sells": 1,
     "bought": 615187,
     "sold": 394528,
-    "net_pct": 3.5
+    "net_pct": 4.1
   },
   "extras": {
-    "beta": 0.303,
-    "enterprise_value": 1138989056,
-    "ev_ebitda": -7.982,
+    "beta": null,
+    "enterprise_value": 1014741760,
+    "ev_ebitda": -6.506,
     "ev_revenue": null,
-    "float_shares": 129745083,
+    "float_shares": 112634921,
     "short_shares": 28737897,
     "short_pct_float": 16.35,
     "short_ratio": 11.92,
@@ -247,12 +247,6 @@
   "inst_count": 237,
   "eps_history": [
     {
-      "quarter": "2025-09-30",
-      "estimate": -0.132,
-      "actual": -0.14,
-      "surprise_pct": -6.06
-    },
-    {
       "quarter": "2025-12-31",
       "estimate": -0.11667,
       "actual": -0.13,
@@ -263,6 +257,12 @@
       "estimate": -0.146,
       "actual": -0.16,
       "surprise_pct": -9.59
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.16898,
+      "actual": -0.17,
+      "surprise_pct": -0.6
     }
   ],
   "insiders": [

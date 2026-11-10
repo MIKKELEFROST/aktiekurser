@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T00:26:51.145Z",
+  "updated_at": "2026-11-10T22:04:23.626Z",
   "source": "Yahoo Finance",
   "symbol": "WBTN",
   "summary": "WEBTOON Entertainment Inc. operates a storytelling platform in the United States, Korea, Japan, and internationally. Its platform allows a community of creators and users to discover, create, and share new content. The company's platform offers stories primarily in two ways, including web-comics, a graphical comic-like medium; and web-novel platforms, optimized for reading serialized text-based content. It also provides hosting services for web-comics through web and mobile applications, and paid content, advertising and IP adaptations. The company was founded in 2005 and is headquartered in Los Angeles, California. WEBTOON Entertainment Inc. is a subsidiary of NAVER Corporation.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-09",
   "earnings_estimated": false,
   "earnings_call": "2026-11-09",
-  "eps_estimate": 0.005,
+  "eps_estimate": 0.02,
   "analysts": {
     "strong_buy": 0,
     "buy": 2,
@@ -45,11 +45,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 378041000,
-      "earnings": -11647000
-    },
-    {
       "q": "4Q2025",
       "revenue": 330686000,
       "earnings": -307565000
@@ -63,15 +58,27 @@
       "q": "2Q2026",
       "revenue": 338465000,
       "earnings": -15248000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 362775000,
+      "earnings": -8370000
     }
   ],
   "growth": {
-    "q0": -0.875,
-    "q1": 0,
+    "q0": 0,
+    "q1": -0.7143,
     "y0": -0.5,
     "y1": 2.4
   },
   "ratings": [
+    {
+      "date": "2026-11-10",
+      "firm": "Evercore ISI Group",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
     {
       "date": "2026-08-11",
       "firm": "JP Morgan",
@@ -133,13 +140,6 @@
       "firm": "Evercore ISI Group",
       "from": "Outperform",
       "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2025-05-15",
-      "firm": "Goldman Sachs",
-      "from": "Buy",
-      "to": "Buy",
       "action": "main"
     }
   ],
@@ -224,11 +224,11 @@
     "net_pct": null
   },
   "extras": {
-    "beta": 2.65,
-    "enterprise_value": 842144896,
-    "ev_ebitda": -42.137,
-    "ev_revenue": 0.616,
-    "float_shares": 22952813,
+    "beta": null,
+    "enterprise_value": 886492928,
+    "ev_ebitda": -56.171,
+    "ev_revenue": 0.655,
+    "float_shares": 22965111,
     "short_shares": 4340168,
     "short_pct_float": 18.77,
     "short_ratio": 9.29,
@@ -240,12 +240,6 @@
   "payout_ratio": null,
   "inst_count": 150,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.07321,
-      "actual": 0.04,
-      "surprise_pct": 154.64
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.04,
@@ -263,6 +257,12 @@
       "estimate": 0.005,
       "actual": 0.04,
       "surprise_pct": 700
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.005,
+      "actual": 0.02,
+      "surprise_pct": 300
     }
   ],
   "insiders": [

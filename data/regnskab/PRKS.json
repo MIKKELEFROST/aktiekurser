@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T00:26:50.556Z",
+  "updated_at": "2026-11-10T22:04:23.091Z",
   "source": "Yahoo Finance",
   "symbol": "PRKS",
   "summary": "United Parks & Resorts Inc., together with its subsidiaries, operates as a theme park and entertainment company in the United States. The company owns and licenses a portfolio of theme parks, such as a marine-life theme park in San Diego, Orlando, and San Antonio under the SeaWorld brand; family-oriented destination theme parks in Tampa Bay and Williamsburg under the Busch Gardens brand; and South Seas-themed tropical setting water parks in Orlando and San Antonio under the Aquatica brand. It also engages in the operation of reservations only and all-inclusive marine life theme park under the Discovery Cove brand; Sesame Street theme parks in Philadelphia and San Diego under the Sesame Place brand; Water Country USA, a family water park; and Adventure Island, a park which features water rides, dining, and other attractions. The company was formerly known as SeaWorld Entertainment, Inc. and changed its name to United Parks & Resorts Inc. in February 2024. United Parks & Resorts Inc. was founded in 1959 and is headquartered in Orlando, Florida.",
@@ -19,8 +19,8 @@
     "strong_sell": 0,
     "total": 12
   },
-  "target_mean": 46.1,
-  "target_high": 55,
+  "target_mean": 46.3,
+  "target_high": 56,
   "target_low": 39,
   "target_analysts": 10,
   "statements": [
@@ -73,11 +73,18 @@
   ],
   "growth": {
     "q0": 0.0541,
-    "q1": -0.2549,
+    "q1": -0.0119,
     "y0": -0.2581,
     "y1": 0.5353
   },
   "ratings": [
+    {
+      "date": "2026-11-10",
+      "firm": "Guggenheim",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-11-06",
       "firm": "Citigroup",
@@ -140,34 +147,27 @@
       "from": "Buy",
       "to": "Buy",
       "action": "main"
-    },
-    {
-      "date": "2026-07-10",
-      "firm": "Citigroup",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
     }
   ],
   "holders": [
     {
       "name": "Hill Path Capital, LP",
       "kind": "institution",
-      "pct": 60,
+      "pct": 59.87,
       "shares": 27205306,
       "date": "2026-06-30"
     },
     {
       "name": "Nomura Holdings Inc.",
       "kind": "institution",
-      "pct": 9.86,
+      "pct": 9.84,
       "shares": 4470982,
       "date": "2026-06-30"
     },
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 7.93,
+      "pct": 7.91,
       "shares": 3593642,
       "date": "2026-06-30"
     },
@@ -181,22 +181,15 @@
     {
       "name": "Goldentree Asset Management LP",
       "kind": "institution",
-      "pct": 3,
+      "pct": 2.99,
       "shares": 1359953,
       "date": "2026-06-30"
     },
     {
       "name": "River Road Asset Management, LLC",
       "kind": "institution",
-      "pct": 2.92,
+      "pct": 2.91,
       "shares": 1322967,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "Hawk Ridge Capital Management, LP",
-      "kind": "institution",
-      "pct": 2.61,
-      "shares": 1182305,
       "date": "2026-06-30"
     },
     {
@@ -207,18 +200,25 @@
       "date": "2026-06-30"
     },
     {
+      "name": "Hawk Ridge Capital Management, LP",
+      "kind": "institution",
+      "pct": 2.6,
+      "shares": 1182305,
+      "date": "2026-06-30"
+    },
+    {
       "name": "Vanguard Portfolio Management LLC",
       "kind": "institution",
-      "pct": 2.45,
+      "pct": 2.44,
       "shares": 1109409,
       "date": "2026-06-30"
     },
     {
-      "name": "Goldman Sachs Group Inc",
-      "kind": "institution",
+      "name": "iShares Trust-iShares Core S&P Small-Cap ETF",
+      "kind": "fond",
       "pct": 2.32,
-      "shares": 1049822,
-      "date": "2026-06-30"
+      "shares": 1052203,
+      "date": "2026-09-30"
     }
   ],
   "insider_net": {
@@ -234,9 +234,9 @@
     "enterprise_value": 4330789888,
     "ev_ebitda": 8.617,
     "ev_revenue": 2.638,
-    "float_shares": 17207981,
+    "float_shares": 17267504,
     "short_shares": 5132068,
-    "short_pct_float": 29.39,
+    "short_pct_float": 29.27,
     "short_ratio": 6.93,
     "last_split": null,
     "last_split_date": null
@@ -244,7 +244,7 @@
   "ex_dividend": "2016-09-27",
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 329,
+  "inst_count": 328,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -273,15 +273,6 @@
   ],
   "insiders": [
     {
-      "name": "LIPMAN NATHANIEL J",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 301,
-      "date": "2026-09-30"
-    },
-    {
       "name": "SCHAEFER KIMBERLY K",
       "role": "Director",
       "kind": "other",
@@ -297,6 +288,15 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 1825,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "LIPMAN NATHANIEL J",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 301,
       "date": "2026-09-30"
     },
     {
@@ -318,33 +318,6 @@
       "date": "2026-08-06"
     },
     {
-      "name": "LIPMAN NATHANIEL J",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 207,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "SCHAEFER KIMBERLY K",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 415,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "GRAY WILLIAM",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 1258,
-      "date": "2026-06-30"
-    },
-    {
       "name": "CHAMBERS JAMES P",
       "role": "Director",
       "kind": "other",
@@ -360,6 +333,33 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 830,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "HARTNETT TIMOTHY",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 1821,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "HILL PATH CAPITAL PARTNERS LP",
+      "role": "Beneficial Owner of more than 10% of a Class of Security",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 1821,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "SCHAEFER KIMBERLY K",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 415,
       "date": "2026-06-30"
     }
   ],

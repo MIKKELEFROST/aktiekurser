@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T00:26:49.430Z",
+  "updated_at": "2026-11-10T22:04:22.277Z",
   "source": "Yahoo Finance",
   "symbol": "DOCS",
   "summary": "Doximity, Inc. operates a digital platform for medical professionals in the United States. Its Doximity platform includes a personalized newsfeed that presents clinical and professional content to members, which offers medical articles, clinical trials or research results in an easy-to-consume video format, professional updates and accomplishments of their peers and colleagues, clinical discussions, Op-Med articles for publication, and sponsored content from pharmaceutical manufacturers and health systems. The company also offers workflow tools, including Ask, a HIPAA-compliant AI assistant, to access and apply evidence-based medical information within clinical workflows; Scribe, a HIPAA-compliant, AI-powered clinical documentation tool; Telehealth tools for hospitals and health systems; and AMiON, an on-call scheduling tool. The company primarily serves physicians, nurse practitioners, physician assistants, medical students, pharmaceutical manufacturers, and healthcare systems. The company was formerly known as 3MD Communications, Inc. and changed its name to Doximity, Inc. in June 2010. Doximity, Inc. was incorporated in 2010 and is headquartered in San Francisco, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2027-02-04",
   "earnings_estimated": true,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.4513,
+  "eps_estimate": 0.45049,
   "analysts": {
     "strong_buy": 5,
     "buy": 3,
@@ -19,7 +19,7 @@
     "strong_sell": 1,
     "total": 21
   },
-  "target_mean": 30.83333,
+  "target_mean": 31.05556,
   "target_high": 41,
   "target_low": 18,
   "target_analysts": 18,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": -0.0189,
-    "q1": -0.0115,
-    "y0": -0.1091,
-    "y1": 0.1419
+    "q0": -0.0207,
+    "q1": -0.0135,
+    "y0": -0.1082,
+    "y1": 0.1454
   },
   "ratings": [
+    {
+      "date": "2026-11-10",
+      "firm": "Freedom Capital Markets",
+      "from": "Hold",
+      "to": "Hold",
+      "action": "main"
+    },
     {
       "date": "2026-11-06",
       "firm": "Canaccord Genuity",
@@ -140,13 +147,6 @@
       "from": "Equal-Weight",
       "to": "Underweight",
       "action": "down"
-    },
-    {
-      "date": "2026-08-07",
-      "firm": "JP Morgan",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
     }
   ],
   "holders": [
@@ -223,11 +223,11 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 20,
-    "sells": 10,
-    "bought": 642349,
-    "sold": 25832,
-    "net_pct": 13.1
+    "buys": 21,
+    "sells": 11,
+    "bought": 649849,
+    "sold": 36553,
+    "net_pct": 13
   },
   "extras": {
     "beta": 1.291,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 546,
+  "inst_count": 550,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -272,6 +272,24 @@
     }
   ],
   "insiders": [
+    {
+      "name": "CABRAL TIMOTHY S",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 35.00 per share.",
+      "value": 375235,
+      "shares": 10721,
+      "date": "2026-11-05"
+    },
+    {
+      "name": "CABRAL TIMOTHY S",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 7500,
+      "date": "2026-11-05"
+    },
     {
       "name": "WAMPLER KIRA SCHERER",
       "role": "Director",
@@ -343,24 +361,6 @@
       "value": 52660,
       "shares": 2000,
       "date": "2026-09-01"
-    },
-    {
-      "name": "WAMPLER KIRA SCHERER",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 2000,
-      "date": "2026-09-01"
-    },
-    {
-      "name": "CABRAL TIMOTHY S",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 8084,
-      "date": "2026-08-27"
     }
   ],
   "dividends": [],

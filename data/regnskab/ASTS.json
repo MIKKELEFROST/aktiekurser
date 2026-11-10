@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T00:26:48.917Z",
+  "updated_at": "2026-11-10T22:04:21.902Z",
   "source": "Yahoo Finance",
   "symbol": "ASTS",
   "summary": "AST SpaceMobile, Inc., together with its subsidiaries, designs and develops the constellation of BlueBird satellites in the United States. The company provides a cellular broadband network in space to be accessible directly by smartphones for commercial use and other applications, as well as for government use. Its SpaceMobile service provides cellular broadband services to end-users who are out of terrestrial cellular coverage. The company was founded in 2017 and is headquartered in Midland, Texas.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-09",
   "earnings_estimated": false,
   "earnings_call": "2026-11-09",
-  "eps_estimate": -0.40916,
+  "eps_estimate": -0.39351,
   "analysts": {
     "strong_buy": 1,
     "buy": 4,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 14739000,
-      "earnings": -122874000
-    },
-    {
       "q": "4Q2025",
       "revenue": 54305000,
       "earnings": -73966000
@@ -69,15 +64,34 @@
       "q": "2Q2026",
       "revenue": 31520000,
       "earnings": -230909000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 42321000,
+      "earnings": -132380000
     }
   ],
   "growth": {
-    "q0": 0.0908,
-    "q1": -0.5135,
+    "q0": -0.5135,
+    "q1": null,
     "y0": -0.518,
     "y1": 0.286
   },
   "ratings": [
+    {
+      "date": "2026-11-10",
+      "firm": "UBS",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-10",
+      "firm": "B. Riley Securities",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-10-23",
       "firm": "Scotiabank",
@@ -133,20 +147,6 @@
       "from": "Overweight",
       "to": "Overweight",
       "action": "main"
-    },
-    {
-      "date": "2026-07-29",
-      "firm": "Scotiabank",
-      "from": "Sector Underperform",
-      "to": "Sector Perform",
-      "action": "up"
-    },
-    {
-      "date": "2026-07-17",
-      "firm": "B. Riley Securities",
-      "from": "Neutral",
-      "to": "Buy",
-      "action": "up"
     }
   ],
   "holders": [
@@ -230,11 +230,11 @@
     "net_pct": 3.5
   },
   "extras": {
-    "beta": 2.847,
-    "enterprise_value": 12268266496,
-    "ev_ebitda": -30.194,
-    "ev_revenue": 106.404,
-    "float_shares": 272721329,
+    "beta": null,
+    "enterprise_value": 12846353408,
+    "ev_ebitda": -26.6,
+    "ev_revenue": 89.91,
+    "float_shares": 273503563,
     "short_shares": 65868038,
     "short_pct_float": 22.04,
     "short_ratio": 4.22,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": null,
-  "inst_count": 961,
+  "inst_count": 956,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.25804,
-      "actual": -0.45,
-      "surprise_pct": -74.39
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.2,
@@ -269,6 +263,12 @@
       "estimate": -0.33195,
       "actual": -0.77,
       "surprise_pct": -131.96
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.44791,
+      "actual": -0.44,
+      "surprise_pct": 1.77
     }
   ],
   "insiders": [

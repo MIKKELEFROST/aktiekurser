@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T00:26:50.731Z",
+  "updated_at": "2026-11-10T22:04:23.182Z",
   "source": "Yahoo Finance",
   "symbol": "SCM",
   "summary": "Stellus Capital Investment Corporation is a business development company specializing in investments in private middle-market companies. It invests through first lien, second lien, unitranche, and mezzanine debt financing, often with a corresponding equity investment. The fund prefers to invest in US and Canada. The fund seeks to invest in companies with an EBITDA between $5 million and $50 million.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-09",
   "earnings_estimated": false,
   "earnings_call": "2026-11-10",
-  "eps_estimate": 0.26,
+  "eps_estimate": 0.2575,
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 26275710,
-      "earnings": 6692030
-    },
-    {
       "q": "4Q2025",
       "revenue": 25214980,
       "earnings": 5214350
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 22302870,
       "earnings": 16206300
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 22396450,
+      "earnings": -6373880
     }
   ],
   "growth": {
-    "q0": -0.1875,
-    "q1": -0.1121,
+    "q0": -0.1121,
+    "q1": -0.0154,
     "y0": -0.2015,
     "y1": 0.0058
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.691,
-    "enterprise_value": 801334272,
+    "enterprise_value": 802188672,
     "ev_ebitda": null,
-    "ev_revenue": 8.254,
+    "ev_revenue": 8.263,
     "float_shares": null,
     "short_shares": 608305,
     "short_pct_float": 2.23,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-11-30",
   "dividend_date": null,
   "payout_ratio": 1.4506,
-  "inst_count": 77,
+  "inst_count": 78,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.32333,
-      "actual": 0.32,
-      "surprise_pct": -1.03
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.292,
@@ -269,6 +263,12 @@
       "estimate": 0.258,
       "actual": 0.26,
       "surprise_pct": 0.78
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.26,
+      "actual": 0.25,
+      "surprise_pct": -3.85
     }
   ],
   "insiders": [

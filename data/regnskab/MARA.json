@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T00:26:50.161Z",
+  "updated_at": "2026-11-10T22:04:22.802Z",
   "source": "Yahoo Finance",
   "symbol": "MARA",
   "summary": "MARA Holdings, Inc. operates as an energy and digital infrastructure company in North America, the Middle East, Europe, and Latin America. The company leverages Bitcoin Mining and Artificial Intelligence compute to monetize excess energy and underutilized power, optimize power management across operations and support AI inference applications. The company was formerly known as Marathon Digital Holdings, Inc. and changed its name to MARA Holdings, Inc. in August 2024. MARA Holdings, Inc. was incorporated in 2010 and is based in Hallandale Beach, Florida.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-09",
   "earnings_estimated": false,
   "earnings_call": "2026-11-09",
-  "eps_estimate": -0.1,
+  "eps_estimate": 1.37,
   "analysts": {
     "strong_buy": 2,
     "buy": 7,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 252410000,
-      "earnings": 123128000
-    },
-    {
       "q": "4Q2025",
       "revenue": 202314000,
       "earnings": -1709644000
@@ -69,15 +64,34 @@
       "q": "2Q2026",
       "revenue": 174881000,
       "earnings": -609685000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 164233000,
+      "earnings": 634357000
     }
   ],
   "growth": {
-    "q0": -1.2669001,
-    "q1": 2.7754998,
+    "q0": 2.7754998,
+    "q1": 2.2902,
     "y0": -0.91690004,
     "y1": 0.90400004
   },
   "ratings": [
+    {
+      "date": "2026-11-10",
+      "firm": "Guggenheim",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "reit"
+    },
+    {
+      "date": "2026-11-10",
+      "firm": "Rosenblatt",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-11-04",
       "firm": "Bernstein",
@@ -132,20 +146,6 @@
       "firm": "Rosenblatt",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-17",
-      "firm": "Piper Sandler",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-08",
-      "firm": "Morgan Stanley",
-      "from": "Underweight",
-      "to": "Underweight",
       "action": "main"
     }
   ],
@@ -230,11 +230,11 @@
     "net_pct": null
   },
   "extras": {
-    "beta": 5.253,
-    "enterprise_value": 4596531712,
-    "ev_ebitda": -2.447,
-    "ev_revenue": 5.716,
-    "float_shares": 378735557,
+    "beta": null,
+    "enterprise_value": 4801882624,
+    "ev_ebitda": -2.672,
+    "ev_revenue": 6.706,
+    "float_shares": 379820986,
     "short_shares": 111935490,
     "short_pct_float": 33.15,
     "short_ratio": 2.72,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 560,
+  "inst_count": 563,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.35333,
-      "actual": 0.3747,
-      "surprise_pct": 6.05
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.025,
@@ -269,6 +263,12 @@
       "estimate": -0.47667,
       "actual": -0.6224,
       "surprise_pct": -30.57
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.1,
+      "actual": -0.5473,
+      "surprise_pct": -447.3
     }
   ],
   "insiders": [

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T00:26:49.631Z",
+  "updated_at": "2026-11-10T22:04:22.419Z",
   "source": "Yahoo Finance",
   "symbol": "FLOC",
   "summary": "Flowco Holdings Inc., through its subsidiaries, provides production optimization, artificial lift, and emissions management and monetization solutions for the oil and natural gas industry in the United States. The company operates in two segments, Production Solutions and Natural Gas Technologies. The company involves in the renting, servicing, and sale of high-pressure gas lifts, conventional gas lifts, and plunger lifts; and manufacture and installation of methane abatement technologies that allow producers to reduce methane emissions associated with their wellsite operations, as well as offers digital solutions. It also manufactures, rents, services, and sells vapor recovery unit systems; and manufactures natural gas systems. Flowco Holdings Inc. was incorporated in 2024 and is headquartered in Houston, Texas.",
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 9
   },
-  "target_mean": 30.11111,
+  "target_mean": 29.88889,
   "target_high": 33,
-  "target_low": 27,
+  "target_low": 25,
   "target_analysts": 9,
   "statements": [
     {
@@ -68,10 +68,17 @@
   "growth": {
     "q0": -0.2791,
     "q1": -0.65129995,
-    "y0": -0.059899997,
-    "y1": 0.078099996
+    "y0": -0.059499998,
+    "y1": 0.0777
   },
   "ratings": [
+    {
+      "date": "2026-11-10",
+      "firm": "Citigroup",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-09-03",
       "firm": "Citigroup",
@@ -133,13 +140,6 @@
       "firm": "Evercore ISI Group",
       "from": "Outperform",
       "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2025-05-14",
-      "firm": "Piper Sandler",
-      "from": "Overweight",
-      "to": "Overweight",
       "action": "main"
     }
   ],
@@ -238,7 +238,7 @@
   "ex_dividend": "2026-11-13",
   "dividend_date": null,
   "payout_ratio": 0.25,
-  "inst_count": 246,
+  "inst_count": 242,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -266,6 +266,24 @@
     }
   ],
   "insiders": [
+    {
+      "name": "EDWARDS JOSEPH R",
+      "role": "Chief Executive Officer",
+      "kind": "buy",
+      "text": "Purchase at price 19.46 - 19.49 per share.",
+      "value": 798213,
+      "shares": 41000,
+      "date": "2026-11-05"
+    },
+    {
+      "name": "CHMELEV ALEXANDER",
+      "role": "Director",
+      "kind": "buy",
+      "text": "Purchase at price 18.86 per share.",
+      "value": 13206,
+      "shares": 700,
+      "date": "2026-11-05"
+    },
     {
       "name": "FAIRBANKS JONATHAN B.",
       "role": "Director and Beneficial Owner of more than 10% of a Class of Security",
@@ -305,37 +323,19 @@
     {
       "name": "FAIRBANKS JONATHAN B.",
       "role": "Director and Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 1143226,
-      "date": "2026-03-26"
-    },
-    {
-      "name": "FAIRBANKS JONATHAN B.",
-      "role": "Director and Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 7621511,
-      "date": "2026-03-26"
-    },
-    {
-      "name": "FAIRBANKS JONATHAN B.",
-      "role": "Director and Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 1143226,
-      "date": "2026-03-26"
-    },
-    {
-      "name": "FAIRBANKS JONATHAN B.",
-      "role": "Director and Beneficial Owner of more than 10% of a Class of Security",
       "kind": "sell",
       "text": "Sale at price 21.18 per share.",
       "value": 24774750,
       "shares": 1170000,
+      "date": "2026-03-26"
+    },
+    {
+      "name": "FAIRBANKS JONATHAN B.",
+      "role": "Director and Beneficial Owner of more than 10% of a Class of Security",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 1143226,
       "date": "2026-03-26"
     },
     {
@@ -350,10 +350,10 @@
     {
       "name": "FAIRBANKS JONATHAN B.",
       "role": "Director and Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "sell",
-      "text": "Sale at price 21.18 per share.",
-      "value": 24774750,
-      "shares": 1170000,
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 7621511,
       "date": "2026-03-26"
     }
   ],

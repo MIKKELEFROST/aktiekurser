@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T00:26:50.686Z",
+  "updated_at": "2026-11-10T22:04:23.567Z",
   "source": "Yahoo Finance",
   "symbol": "RXT",
   "summary": "Rackspace Technology, Inc. operates as a hybrid cloud and artificial intelligence solutions company in the United States, the United Kingdom, and internationally. It operates through two segments, Public Cloud and Private Cloud. The company offers programmatic infrastructure, including hardware and services for datacenter compute, network, storage, and data protection; cloud operating systems; platform-as-a-service; private cloud solutions; and private cloud services, such as managed, professional, elastic engineering, and security services, as well as an email platform for customers and carriers. It also provides a cloud platform that offers platform-related services, including cloud strategy and architecture, platform and infrastructure migrations, and modern cloud infrastructure; cloud apps that build and manage applications within a cloud technology stack; and cloud data, which helps accelerate the adoption of modern data solutions enabling business transformation. In addition, the company offers cloud security that provides security solutions in security threat assessment and prevention; proactive threat detection and response; rapid remediation; governance, risk, and compliance assistance across multiple cloud platforms; and privacy and data protection services, including detailed access restrictions and reporting. Further, it provides Rackspace AI, a portfolio of AI services and solutions to help organizations scale AI, as well as multi-cloud strategy, data and application modernization, cloud adoption, cloud-native enablement, SaaS lifecycle management, and data management services. The company serves the financial services, government, healthcare, manufacturing, non-profit, education, SaaS and ISV, consumer goods, oil and gas, and other industries. The company was formerly known as Rackspace Corp. and changed its name to Rackspace Technology, Inc. in June 2020. Rackspace Technology, Inc. was founded in 1998 and is headquartered in San Antonio, Texas.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-09",
   "earnings_estimated": false,
   "earnings_call": "2026-11-10",
-  "eps_estimate": -0.07965,
+  "eps_estimate": -0.05187,
   "analysts": {
     "strong_buy": 0,
     "buy": 0,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 671200000,
-      "earnings": -67100000
-    },
-    {
       "q": "4Q2025",
       "revenue": 682800000,
       "earnings": -32700000
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 670100000,
       "earnings": -67500000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 609100000,
+      "earnings": -53500000
     }
   ],
   "growth": {
-    "q0": -0.593,
-    "q1": -3.5939999,
-    "y0": -0.497,
-    "y1": 1.5042
+    "q0": -4.1870003,
+    "q1": 1.2387,
+    "y0": -0.4677,
+    "y1": 1.1848
   },
   "ratings": [
     {
@@ -227,14 +227,14 @@
     "sells": 10,
     "bought": 2818023,
     "sold": 991095,
-    "net_pct": 32.7
+    "net_pct": 31.4
   },
   "extras": {
-    "beta": 3.314,
-    "enterprise_value": 3891054080,
-    "ev_ebitda": 15.702,
-    "ev_revenue": 1.44,
-    "float_shares": 107107766,
+    "beta": null,
+    "enterprise_value": 3900092928,
+    "ev_ebitda": 15.325,
+    "ev_revenue": 1.477,
+    "float_shares": 110543651,
     "short_shares": 26053168,
     "short_pct_float": 21.6,
     "short_ratio": 4.57,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": null,
-  "inst_count": 234,
+  "inst_count": 232,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.05056,
-      "actual": -0.05,
-      "surprise_pct": 1.11
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.02889,
@@ -269,6 +263,12 @@
       "estimate": -0.09008,
       "actual": -0.08,
       "surprise_pct": 11.19
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.07965,
+      "actual": -0.06,
+      "surprise_pct": 24.67
     }
   ],
   "insiders": [
@@ -336,15 +336,6 @@
       "date": "2026-08-14"
     },
     {
-      "name": "ROBERTS ANTHONY C",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 37950,
-      "date": "2026-06-18"
-    },
-    {
       "name": "BENJAMIN JEFFREY D",
       "role": "Director",
       "kind": "other",
@@ -355,6 +346,15 @@
     },
     {
       "name": "GARBER MITCHELL ALAN",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 37950,
+      "date": "2026-06-18"
+    },
+    {
+      "name": "SCOTT ANTHONY",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

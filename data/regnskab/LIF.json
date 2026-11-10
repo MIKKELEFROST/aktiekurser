@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T00:26:50.092Z",
+  "updated_at": "2026-11-10T22:04:22.756Z",
   "source": "Yahoo Finance",
   "symbol": "LIF",
   "summary": "Life360, Inc. operates a technology platform to locate people, pets, and things in North America, Europe, the Middle East, Africa, and internationally. The company provides Life360 mobile application under the freemium model that offers communications, driving safety, digital safety, and location sharing; Life360 Platform that provides location coordination and safety, driving safety, digital safety, and emergency assistance services; and mobile-first technology platform that protects members data and ensures integrity, security, and performance. It also offers real-time location, location history, and smart notifications; location-specific alerts, driving alerts, and crime reports; crash detection, roadside assistance, family driving summaries, and individual driver reports; data breach alerts, identity theft protection, stolen funds reimbursement, and credit monitoring; and SOS with emergency dispatch, disaster response, medical assistance, and travel support, as well as related third-party services. Additionally, the company provides tile hardware tracking devices to locate lost devices sold through online and brick and mortar retail channels as well as websites; tile mobile application, which includes a free service and two paid subscription options, such as Premium and Premium Protect to offer additional services, including warranties and item reimbursement; Gold or Platinum Life360 subscriptions; and location tracking services. It sells its products through retailers and distributors, as well as through online retailers. Life360, Inc. was formerly known as LReady, Inc. and changed its name to Life360, Inc. in October 2011. The company was incorporated in 2007 and is based in San Mateo, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-09",
   "earnings_estimated": false,
   "earnings_call": "2026-11-09",
-  "eps_estimate": 0.28481,
+  "eps_estimate": 0.50874,
   "analysts": {
     "strong_buy": 1,
     "buy": 7,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 124497000,
-      "earnings": 9793000
-    },
-    {
       "q": "4Q2025",
       "revenue": 145979000,
       "earnings": 129655000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 158959000,
       "earnings": 5061000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 174137000,
+      "earnings": 22490000
     }
   ],
   "growth": {
-    "q0": 0.0165,
-    "q1": 0.44939998,
+    "q0": 0.44939998,
+    "q1": 1.1714,
     "y0": 0.2379,
     "y1": 0.3021
   },
   "ratings": [
+    {
+      "date": "2026-11-10",
+      "firm": "Evercore ISI Group",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
     {
       "date": "2026-10-30",
       "firm": "Citigroup",
@@ -139,13 +146,6 @@
       "firm": "Citigroup",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-06-22",
-      "firm": "DA Davidson",
-      "from": "Neutral",
-      "to": "Neutral",
       "action": "main"
     }
   ],
@@ -230,11 +230,11 @@
     "net_pct": -0.2
   },
   "extras": {
-    "beta": 1.101,
-    "enterprise_value": 3511270656,
-    "ev_ebitda": 140.659,
-    "ev_revenue": 6.133,
-    "float_shares": 78105457,
+    "beta": null,
+    "enterprise_value": 3526613760,
+    "ev_ebitda": 119.733,
+    "ev_revenue": 5.668,
+    "float_shares": 78369019,
     "short_shares": 8179374,
     "short_pct_float": 11.68,
     "short_ratio": 13.31,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 285,
+  "inst_count": 283,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.16629,
-      "actual": 0.2802,
-      "surprise_pct": 68.5
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.26302,
@@ -269,6 +263,12 @@
       "estimate": 0.1738,
       "actual": 0.3677,
       "surprise_pct": 111.57
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.28481,
+      "actual": 0.2901,
+      "surprise_pct": 1.86
     }
   ],
   "insiders": [
@@ -284,18 +284,18 @@
     {
       "name": "PROBER CHARLES J",
       "role": "Director",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 11.18 per share.",
-      "value": 88657,
+      "kind": "sell",
+      "text": "Sale at price 43.29 per share.",
+      "value": 343290,
       "shares": 7930,
       "date": "2026-10-13"
     },
     {
       "name": "PROBER CHARLES J",
       "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 43.29 per share.",
-      "value": 343290,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 11.18 per share.",
+      "value": 88657,
       "shares": 7930,
       "date": "2026-10-13"
     },
@@ -347,18 +347,18 @@
     {
       "name": "PROBER CHARLES J",
       "role": "Director",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 11.18 per share.",
-      "value": 88657,
+      "kind": "sell",
+      "text": "Sale at price 42.12 per share.",
+      "value": 334012,
       "shares": 7930,
       "date": "2026-09-14"
     },
     {
       "name": "PROBER CHARLES J",
       "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 42.12 per share.",
-      "value": 334012,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 11.18 per share.",
+      "value": 88657,
       "shares": 7930,
       "date": "2026-09-14"
     }

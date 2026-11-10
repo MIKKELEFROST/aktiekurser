@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T00:26:49.330Z",
+  "updated_at": "2026-11-10T22:04:22.203Z",
   "source": "Yahoo Finance",
   "symbol": "CRTO",
   "summary": "Criteo S.A., a technology company, provides platform to connects the commerce ecosystem for brands, agencies, retailers, and media owners to drive measurable business outcomes in North and South America, Europe, the Middle East, Africa, and the Asia-Pacific. It operates in two segments, Retail Media and Performance Media. The Retail Media segment connects brands to shoppers at the digital point of sale through personalized ads that appear on retailer websites and across the open internet. The Performance Media segment encompasses commerce activation, monetization, and services that enable advertisers to reach and convert consumers across channels. It also offers Commerce Max, a suite of retail media demand-side tools that allow brands, agencies, and retailers to plan and buy media across retailer and open internet inventory with closed-loop, product-level measurement, and return-on-ad-spend optimization; Commerce Growth, a solution for continuous customer acquisition and retention for performance marketers and agencies; and GO, an AI-driven solution that automates campaign creation and optimization. In addition, the company provides Commerce Yield, which offers monetization solutions that help retailers and marketplaces maximize the value of their digital assets through inventory and data management, packaging, and in-depth insights; Commerce Grid, a commerce-focused supply side platform for media owner data and inventory monetization; and Criteo Shopper Graph, which derives clients' proprietary commerce data, such as transaction activity on their digital properties. It serves retail, travel and marketplaces, and other commerce companies. Criteo S.A. was incorporated in 2005 and is headquartered in Paris, France.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 1.2565,
+  "eps_estimate": 1.2452,
   "analysts": {
     "strong_buy": 0,
     "buy": 5,
@@ -19,8 +19,8 @@
     "strong_sell": 0,
     "total": 11
   },
-  "target_mean": 19.35,
-  "target_high": 25,
+  "target_mean": 18.85,
+  "target_high": 21,
   "target_low": 14,
   "target_analysts": 10,
   "statements": [
@@ -75,9 +75,16 @@
     "q0": null,
     "q1": null,
     "y0": null,
-    "y1": 0.1464
+    "y1": 0.15100001
   },
   "ratings": [
+    {
+      "date": "2026-11-10",
+      "firm": "Morgan Stanley",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
     {
       "date": "2026-11-05",
       "firm": "Citigroup",
@@ -140,16 +147,16 @@
       "from": "Buy",
       "to": "Buy",
       "action": "main"
-    },
-    {
-      "date": "2026-06-23",
-      "firm": "DA Davidson",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
     }
   ],
   "holders": [
+    {
+      "name": "Acadian Asset Management. LLC",
+      "kind": "institution",
+      "pct": 4.02,
+      "shares": 1976438,
+      "date": "2026-09-30"
+    },
     {
       "name": "American Century Capital Portfolios, Inc.-Small Cap Value Fund",
       "kind": "fond",
@@ -162,6 +169,13 @@
       "kind": "fond",
       "pct": 1.88,
       "shares": 923152,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "VELA Investment Management, LLC",
+      "kind": "institution",
+      "pct": 1.62,
+      "shares": 795330,
       "date": "2026-09-30"
     },
     {
@@ -205,20 +219,6 @@
       "pct": 0.46,
       "shares": 226727,
       "date": "2026-09-30"
-    },
-    {
-      "name": "Seizert Capital Partners LLC",
-      "kind": "institution",
-      "pct": 0.41,
-      "shares": 201515,
-      "date": "2026-09-30"
-    },
-    {
-      "name": "PUBLIC EMPLOYEES RETIREMENT SYSTEM OF OHIO",
-      "kind": "institution",
-      "pct": 0.32,
-      "shares": 159520,
-      "date": "2026-06-30"
     }
   ],
   "insider_net": {
@@ -227,14 +227,14 @@
     "sells": 138,
     "bought": 4910543,
     "sold": 1448883,
-    "net_pct": -160.8
+    "net_pct": -161.1
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 696530048,
-    "ev_ebitda": 2.763,
-    "ev_revenue": 0.385,
-    "float_shares": 47935311,
+    "enterprise_value": 699015808,
+    "ev_ebitda": 2.958,
+    "ev_revenue": 0.386,
+    "float_shares": 48082999,
     "short_shares": 1351360,
     "short_pct_float": 3.88,
     "short_ratio": 4.57,
@@ -279,15 +279,6 @@
       "date": "2026-08-31"
     },
     {
-      "name": "DAMON RYAN",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 17.28 per share.",
-      "value": 13634,
-      "shares": 789,
-      "date": "2026-08-28"
-    },
-    {
       "name": "KOMASINSKI MICHAEL",
       "role": "Chief Executive Officer",
       "kind": "sell",
@@ -300,10 +291,28 @@
       "name": "DAMON RYAN",
       "role": "Officer",
       "kind": "sell",
+      "text": "Sale at price 17.28 per share.",
+      "value": 13634,
+      "shares": 789,
+      "date": "2026-08-28"
+    },
+    {
+      "name": "DAMON RYAN",
+      "role": "Officer",
+      "kind": "sell",
       "text": "Sale at price 17.37 per share.",
       "value": 37033,
       "shares": 2132,
       "date": "2026-08-24"
+    },
+    {
+      "name": "KOMASINSKI MICHAEL",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 17.23 per share.",
+      "value": 268082,
+      "shares": 15559,
+      "date": "2026-08-06"
     },
     {
       "name": "GLICKMAN SARAH JS",
@@ -321,15 +330,6 @@
       "text": "Sale at price 17.23 per share.",
       "value": 106447,
       "shares": 6178,
-      "date": "2026-08-06"
-    },
-    {
-      "name": "KOMASINSKI MICHAEL",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 17.23 per share.",
-      "value": 268082,
-      "shares": 15559,
       "date": "2026-08-06"
     },
     {

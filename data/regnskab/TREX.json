@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T00:26:50.986Z",
+  "updated_at": "2026-11-10T22:04:23.362Z",
   "source": "Yahoo Finance",
   "symbol": "TREX",
   "summary": "Trex Company, Inc. manufactures and sells composite decking and railing products in the United States. It offers decking products and accessories that can be used for protection against fading, staining, mold, and scratching, including Trex Transcend, which are decking products that can also be used as cladding; Trex Signature; Trex Transcend Lineage; Trex Select; Trex Enhance; Trex Hideaway fastener collection; and Trex DeckLighting, an outdoor lighting system that includes a post cap, deck rail, riser, a soffit, and a recessed deck lights. The company also offers railing products, such as Trex Signature X-Series Railing, Trex Signature aluminum railing, Trex Transcend Railing, Trex Select Railing, Trex Select T-Rail, Trex Enhance Railing; and fencing products, which includes Trex Seclusions that consists of structural posts, bottom rails, pickets, top rails, and decorative post caps. In addition, it acts as a licensor in various licensing agreements with third parties to manufacture and sell products under the Trex name, including Trex Outdoor Furniture; Trex RainEscape, an above joist deck drainage system; Trex Protect joist, beam and rim tape, a self-adhesive butyl tape that protects wooden deck framing/substructure elements; Trex RainEscape Soffit Light, a plug-and-play LED Soffit light that is installed in the under-deck ceiling of a two-story deck; Trex Seal Ledger Flashing Tape, butyl flashing tape with an aluminum liner; Trex Pergola, Pergolas made from low maintenance aluminum reinforced cellular PVC; Trex Lattice outdoor boards; Trex Cornhole boards; Trex Blade, a specialty saw blade for wood-alternative composite decking; Trex SpiralStairs; and Trex Outdoor Kitchen cabinetry. The company sells its products through wholesale distributors, retail lumber dealers, and Home Depot and Lowe's stores. Trex Company, Inc. was founded in 1996 and is headquartered in Winchester, Virginia.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 0.11241,
+  "eps_estimate": 0.11451,
   "analysts": {
     "strong_buy": 0,
     "buy": 14,
@@ -19,7 +19,7 @@
     "strong_sell": 1,
     "total": 20
   },
-  "target_mean": 62.89474,
+  "target_mean": 63.05263,
   "target_high": 75,
   "target_low": 46,
   "target_analysts": 19,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 1.8102001,
-    "q1": 0.0762,
-    "y0": -0.0041,
-    "y1": 0.1092
+    "q0": 1.8627,
+    "q1": 0.0672,
+    "y0": -0.0007,
+    "y1": 0.1042
   },
   "ratings": [
+    {
+      "date": "2026-11-10",
+      "firm": "DA Davidson",
+      "from": "Buy",
+      "to": "Neutral",
+      "action": "down"
+    },
     {
       "date": "2026-11-05",
       "firm": "Citigroup",
@@ -139,13 +146,6 @@
       "firm": "Stephens & Co.",
       "from": "Equal-Weight",
       "to": "Equal-Weight",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-15",
-      "firm": "Citigroup",
-      "from": "Neutral",
-      "to": "Neutral",
       "action": "main"
     }
   ],
@@ -223,17 +223,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 14,
-    "sells": 2,
-    "bought": 33460,
-    "sold": 2450,
-    "net_pct": 3.6
+    "buys": 17,
+    "sells": 5,
+    "bought": 39242,
+    "sold": 6150,
+    "net_pct": 3.8
   },
   "extras": {
     "beta": 1.51,
-    "enterprise_value": 5684959744,
-    "ev_ebitda": 17.726,
-    "ev_revenue": 4.434,
+    "enterprise_value": 6084707328,
+    "ev_ebitda": 18.972,
+    "ev_revenue": 4.746,
     "float_shares": 93629876,
     "short_shares": 10123913,
     "short_pct_float": 10.19,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 626,
+  "inst_count": 629,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -272,6 +272,60 @@
     }
   ],
   "insiders": [
+    {
+      "name": "RUDOLPH JACOB T",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 59.07 per share.",
+      "value": 116303,
+      "shares": 1969,
+      "date": "2026-11-09"
+    },
+    {
+      "name": "ZAMBANINI ADAM DANTE",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 55.84 per share.",
+      "value": 27920,
+      "shares": 500,
+      "date": "2026-11-09"
+    },
+    {
+      "name": "FERNANDEZ AMY M",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 57.87 per share.",
+      "value": 71238,
+      "shares": 1231,
+      "date": "2026-11-05"
+    },
+    {
+      "name": "RUDOLPH JACOB T",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 2800,
+      "date": "2026-11-05"
+    },
+    {
+      "name": "ZAMBANINI ADAM DANTE",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 56.01 per share.",
+      "value": 83511,
+      "shares": 1491,
+      "date": "2026-11-05"
+    },
+    {
+      "name": "ZAMBANINI ADAM DANTE",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 1491,
+      "date": "2026-11-05"
+    },
     {
       "name": "KEFFER DAVID CHRISTIAN",
       "role": "Director",
@@ -307,60 +361,6 @@
       "value": 52572,
       "shares": 1050,
       "date": "2026-08-07"
-    },
-    {
-      "name": "KEFFER DAVID CHRISTIAN",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 42.39 per share.",
-      "value": 120006,
-      "shares": 2831,
-      "date": "2026-07-29"
-    },
-    {
-      "name": "TASI IRENE",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 42.39 per share.",
-      "value": 46671,
-      "shares": 1101,
-      "date": "2026-07-29"
-    },
-    {
-      "name": "CLINE JAMES EARL",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 42.39 per share.",
-      "value": 120006,
-      "shares": 2831,
-      "date": "2026-07-29"
-    },
-    {
-      "name": "ROSE B. ANDREW",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 42.39 per share.",
-      "value": 69053,
-      "shares": 1629,
-      "date": "2026-07-29"
-    },
-    {
-      "name": "ROBINSON PATRICIA B",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 42.39 per share.",
-      "value": 120006,
-      "shares": 2831,
-      "date": "2026-07-29"
-    },
-    {
-      "name": "JUSTER KRISTINE L",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 42.39 per share.",
-      "value": 120006,
-      "shares": 2831,
-      "date": "2026-07-29"
     }
   ],
   "dividends": [],

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T00:26:49.120Z",
+  "updated_at": "2026-11-10T22:04:22.045Z",
   "source": "Yahoo Finance",
   "symbol": "BTU",
   "summary": "Peabody Energy Corporation engages in the production of metallurgical and thermal coal. It operates through Seaborne Thermal, Seaborne Metallurgical, Powder River Basin, and Other U.S. Thermal segments. The company operates mines in New South Wales and Queensland in Australia and in Alabama and Wyoming in the United States; mining, preparation, and sale of thermal coal, sold primarily to electric utilities; surface mining extraction processes, coal with a lower sulfur content, and Btu; and mining sub-bituminous coal deposits. It also supplies coal primarily to electricity generators, industrial facilities, and steel manufacturers. The company was founded in 1883 and is headquartered in Saint Louis, Missouri.",
@@ -13,15 +13,15 @@
   "eps_estimate": 0.31,
   "analysts": {
     "strong_buy": 0,
-    "buy": 5,
-    "hold": 1,
+    "buy": 4,
+    "hold": 2,
     "sell": 0,
     "strong_sell": 0,
     "total": 6
   },
-  "target_mean": 28.41667,
+  "target_mean": 26.41667,
   "target_high": 30,
-  "target_low": 26,
+  "target_low": 18,
   "target_analysts": 6,
   "statements": [
     {
@@ -75,9 +75,16 @@
     "q0": 5.5957003,
     "q1": 1.9475999,
     "y0": -3.0478,
-    "y1": 3.9167001
+    "y1": 2.9323
   },
   "ratings": [
+    {
+      "date": "2026-11-10",
+      "firm": "Jefferies",
+      "from": "Buy",
+      "to": "Hold",
+      "action": "down"
+    },
     {
       "date": "2026-11-05",
       "firm": "StoneX",
@@ -140,48 +147,41 @@
       "from": "Neutral",
       "to": "Neutral",
       "action": "main"
-    },
-    {
-      "date": "2026-03-12",
-      "firm": "UBS",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
     }
   ],
   "holders": [
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 15.47,
+      "pct": 15.46,
       "shares": 18844773,
       "date": "2026-06-30"
     },
     {
       "name": "State Street Corporation",
       "kind": "institution",
-      "pct": 9.14,
+      "pct": 9.13,
       "shares": 11126764,
       "date": "2026-06-30"
     },
     {
       "name": "Vanguard Portfolio Management LLC",
       "kind": "institution",
-      "pct": 6.7,
+      "pct": 6.69,
       "shares": 8157317,
       "date": "2026-06-30"
     },
     {
       "name": "iShares Trust-iShares Core S&P Small-Cap ETF",
       "kind": "fond",
-      "pct": 5.96,
+      "pct": 5.95,
       "shares": 7258466,
       "date": "2026-09-30"
     },
     {
       "name": "Dimensional Fund Advisors LP",
       "kind": "institution",
-      "pct": 5.21,
+      "pct": 5.2,
       "shares": 6341115,
       "date": "2026-09-30"
     },
@@ -202,7 +202,7 @@
     {
       "name": "SPDR SERIES TRUST-State Street SPDR S&P Metals & Mining ETF",
       "kind": "fond",
-      "pct": 4.03,
+      "pct": 4.02,
       "shares": 4904992,
       "date": "2026-09-30"
     },
@@ -216,7 +216,7 @@
     {
       "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
       "kind": "fond",
-      "pct": 3.18,
+      "pct": 3.17,
       "shares": 3869999,
       "date": "2026-06-30"
     }
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.426,
-    "enterprise_value": 1938356992,
-    "ev_ebitda": 7.041,
-    "ev_revenue": 0.473,
+    "enterprise_value": 2060257024,
+    "ev_ebitda": 7.484,
+    "ev_revenue": 0.503,
     "float_shares": 112727025,
     "short_shares": 11866724,
     "short_pct_float": 13.57,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-11-19",
   "dividend_date": null,
   "payout_ratio": 0.2857,
-  "inst_count": 431,
+  "inst_count": 426,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -273,12 +273,57 @@
   ],
   "insiders": [
     {
-      "name": "MALONE ROBERT A",
+      "name": "YEATES DARREN RONALD",
+      "role": "Chief Operating Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 27.64 per share.",
+      "value": 3593,
+      "shares": 130,
+      "date": "2026-09-03"
+    },
+    {
+      "name": "JARBOE SCOTT T",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 27.64 per share.",
+      "value": 2184,
+      "shares": 79,
+      "date": "2026-09-03"
+    },
+    {
+      "name": "ROBERTS MALCOLM JAMES",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 27.64 per share.",
+      "value": 1299,
+      "shares": 47,
+      "date": "2026-09-03"
+    },
+    {
+      "name": "SPURBECK MARK A",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 27.64 per share.",
+      "value": 2543,
+      "shares": 92,
+      "date": "2026-09-03"
+    },
+    {
+      "name": "CHAMPION WILLIAM H.",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 27.64 per share.",
-      "value": 1437,
-      "shares": 52,
+      "value": 2792,
+      "shares": 101,
+      "date": "2026-09-03"
+    },
+    {
+      "name": "HODGES GEORGANNE MARIE",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 27.64 per share.",
+      "value": 608,
+      "shares": 22,
       "date": "2026-09-03"
     },
     {
@@ -309,57 +354,12 @@
       "date": "2026-09-03"
     },
     {
-      "name": "GORMAN STEPHEN E",
+      "name": "MALONE ROBERT A",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 27.64 per share.",
-      "value": 1410,
-      "shares": 51,
-      "date": "2026-09-03"
-    },
-    {
-      "name": "WALKER CLAYTON D",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 27.64 per share.",
-      "value": 636,
-      "shares": 23,
-      "date": "2026-09-03"
-    },
-    {
-      "name": "CHAMPION WILLIAM H.",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 27.64 per share.",
-      "value": 2792,
-      "shares": 101,
-      "date": "2026-09-03"
-    },
-    {
-      "name": "HODGES GEORGANNE MARIE",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 27.64 per share.",
-      "value": 608,
-      "shares": 22,
-      "date": "2026-09-03"
-    },
-    {
-      "name": "YEATES DARREN RONALD",
-      "role": "Chief Operating Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 27.64 per share.",
-      "value": 3593,
-      "shares": 130,
-      "date": "2026-09-03"
-    },
-    {
-      "name": "JARBOE SCOTT T",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 27.64 per share.",
-      "value": 2184,
-      "shares": 79,
+      "value": 1437,
+      "shares": 52,
       "date": "2026-09-03"
     }
   ],

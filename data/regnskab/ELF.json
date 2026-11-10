@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T00:26:49.494Z",
+  "updated_at": "2026-11-10T22:04:22.327Z",
   "source": "Yahoo Finance",
   "symbol": "ELF",
   "summary": "e.l.f. Beauty, Inc., a beauty company, provides cosmetics and skin care products worldwide. The company offers eye, lip, face, and skin care products. It offers products under the e.l.f. Cosmetics, e.l.f. Skin, Well People, Naturium, and Rhode brand names. The company sells its products through national and international retailers and direct-to-consumer through its e-commerce channel. The company was formerly known as J.A. Cosmetics Holdings, Inc. and changed its name to e.l.f. Beauty, Inc. in April 2016. e.l.f. Beauty, Inc. was founded in 2004 and is headquartered in Oakland, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2027-02-03",
   "earnings_estimated": true,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 0.77134,
+  "eps_estimate": 0.76337,
   "analysts": {
     "strong_buy": 1,
     "buy": 11,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 18
   },
-  "target_mean": 129.625,
+  "target_mean": 131,
   "target_high": 140,
-  "target_low": 103,
+  "target_low": 110,
   "target_analysts": 16,
   "statements": [
     {
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": -0.378,
-    "q1": -0.41970003,
-    "y0": 0.24379998,
-    "y1": 0.0708
+    "q0": -0.38439998,
+    "q1": -0.3969,
+    "y0": 0.2466,
+    "y1": 0.0748
   },
   "ratings": [
+    {
+      "date": "2026-11-10",
+      "firm": "Morgan Stanley",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
     {
       "date": "2026-11-06",
       "firm": "UBS",
@@ -140,22 +147,15 @@
       "from": "Equal-Weight",
       "to": "Equal-Weight",
       "action": "main"
-    },
-    {
-      "date": "2026-10-14",
-      "firm": "Citigroup",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
     }
   ],
   "holders": [
     {
       "name": "BAILLIE GIFFORD & CO",
       "kind": "institution",
-      "pct": 11.92,
-      "shares": 7048752,
-      "date": "2026-06-30"
+      "pct": 11.83,
+      "shares": 6995123,
+      "date": "2026-09-30"
     },
     {
       "name": "Blackrock Inc.",
@@ -224,10 +224,10 @@
   "insider_net": {
     "period": "6m",
     "buys": 21,
-    "sells": 24,
+    "sells": 25,
     "bought": 516401,
-    "sold": 273416,
-    "net_pct": 16.8
+    "sold": 282381,
+    "net_pct": 16.2
   },
   "extras": {
     "beta": 1.584,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 612,
+  "inst_count": 618,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -276,6 +276,15 @@
       "name": "FRANKS JOSHUA ALLEN",
       "role": "Officer",
       "kind": "sell",
+      "text": "Sale at price 120.00 - 122.00 per share.",
+      "value": 1080047,
+      "shares": 8965,
+      "date": "2026-11-05"
+    },
+    {
+      "name": "FRANKS JOSHUA ALLEN",
+      "role": "Officer",
+      "kind": "sell",
       "text": "Sale at price 110.15 per share.",
       "value": 873072,
       "shares": 7926,
@@ -293,15 +302,6 @@
     {
       "name": "AMIN TARANG P",
       "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 26.84 per share.",
-      "value": 1905640,
-      "shares": 71000,
-      "date": "2026-10-01"
-    },
-    {
-      "name": "AMIN TARANG P",
-      "role": "Chief Executive Officer",
       "kind": "sell",
       "text": "Sale at price 102.84 - 105.01 per share.",
       "value": 4855661,
@@ -309,13 +309,13 @@
       "date": "2026-10-01"
     },
     {
-      "name": "FRANKS JOSHUA ALLEN",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 110.00 per share.",
-      "value": 22000,
-      "shares": 200,
-      "date": "2026-09-08"
+      "name": "AMIN TARANG P",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 26.84 per share.",
+      "value": 1905640,
+      "shares": 71000,
+      "date": "2026-10-01"
     },
     {
       "name": "FIELDS MANDY J",
@@ -329,20 +329,20 @@
     {
       "name": "FRANKS JOSHUA ALLEN",
       "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 110.00 per share.",
+      "value": 22000,
+      "shares": 200,
+      "date": "2026-09-08"
+    },
+    {
+      "name": "FRANKS JOSHUA ALLEN",
+      "role": "Officer",
       "kind": "other",
       "text": "Stock Gift at price 0.00 per share.",
       "value": 0,
       "shares": 3300,
       "date": "2026-09-04"
-    },
-    {
-      "name": "FRANKS JOSHUA ALLEN",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 110.00 per share.",
-      "value": 606320,
-      "shares": 5512,
-      "date": "2026-09-01"
     },
     {
       "name": "AMIN TARANG P",
@@ -354,13 +354,13 @@
       "date": "2026-09-01"
     },
     {
-      "name": "WATSON MAUREEN C",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 1939,
-      "date": "2026-08-20"
+      "name": "FRANKS JOSHUA ALLEN",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 110.00 per share.",
+      "value": 606320,
+      "shares": 5512,
+      "date": "2026-09-01"
     }
   ],
   "dividends": [],

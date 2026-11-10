@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T00:26:51.237Z",
+  "updated_at": "2026-11-10T22:04:23.516Z",
   "source": "Yahoo Finance",
   "symbol": "ZIP",
   "summary": "ZipRecruiter, Inc. operates an online marketplace that connects job seekers and employers in the United States and internationally. Its two-sided marketplace enables employers to post jobs and access other features, as well as the job seekers that apply to jobs with a single click. The company was incorporated in 2010 and is headquartered in Santa Monica, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-09",
   "earnings_estimated": false,
   "earnings_call": "2026-11-09",
-  "eps_estimate": 0.01416,
+  "eps_estimate": 0.05468,
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 114982000,
-      "earnings": -9822000
-    },
-    {
       "q": "4Q2025",
       "revenue": 111673000,
       "earnings": -835000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 118061000,
       "earnings": 43425000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 124444000,
+      "earnings": 5108000
     }
   ],
   "growth": {
-    "q0": -0.0098,
-    "q1": -0.45700002,
+    "q0": -0.45700002,
+    "q1": 0.90669996,
     "y0": 2.0582001,
     "y1": -0.71
   },
   "ratings": [
+    {
+      "date": "2026-11-10",
+      "firm": "UBS",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-08-06",
       "firm": "Goldman Sachs",
@@ -140,13 +147,6 @@
       "from": "Neutral",
       "to": "Neutral",
       "action": "main"
-    },
-    {
-      "date": "2025-08-12",
-      "firm": "JP Morgan",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
     }
   ],
   "holders": [
@@ -181,9 +181,9 @@
     {
       "name": "Acadian Asset Management. LLC",
       "kind": "institution",
-      "pct": 4.19,
-      "shares": 2900258,
-      "date": "2026-06-30"
+      "pct": 4.11,
+      "shares": 2846567,
+      "date": "2026-09-30"
     },
     {
       "name": "Vanguard Capital Management LLC",
@@ -227,14 +227,14 @@
     "sells": 18,
     "bought": 905548,
     "sold": 304757,
-    "net_pct": 18.3
+    "net_pct": 18.7
   },
   "extras": {
-    "beta": 1.553,
-    "enterprise_value": 443934240,
-    "ev_ebitda": 75.448,
-    "ev_revenue": 0.982,
-    "float_shares": 60363049,
+    "beta": null,
+    "enterprise_value": 435410656,
+    "ev_ebitda": 20.304,
+    "ev_revenue": 0.943,
+    "float_shares": 59954309,
     "short_shares": 3225614,
     "short_pct_float": 4.83,
     "short_ratio": 5.12,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 201,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.0124,
-      "actual": 0.0143,
-      "surprise_pct": 15.32
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.09734,
@@ -269,6 +263,12 @@
       "estimate": 0.09214,
       "actual": 0.0702,
       "surprise_pct": -23.81
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.01416,
+      "actual": 0.1011,
+      "surprise_pct": 613.98
     }
   ],
   "insiders": [
@@ -336,12 +336,12 @@
       "date": "2026-09-18"
     },
     {
-      "name": "BARTOLOME LORA K",
-      "role": "Officer",
+      "name": "SIEGEL IAN H",
+      "role": "Chief Executive Officer",
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 9837,
+      "shares": 256633,
       "date": "2026-09-15"
     },
     {

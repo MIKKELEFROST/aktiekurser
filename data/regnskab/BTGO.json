@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T00:26:49.115Z",
+  "updated_at": "2026-11-10T22:04:22.040Z",
   "source": "Yahoo Finance",
   "symbol": "BTGO",
   "summary": "Bitgo Holdings, Inc. operates as a digital asset infrastructure company in the United States and internationally. The company offers self-custody wallet, qualified custody, liquidity and prime, and infrastructure-as-a-service to investors, builders, and other participants in the digital asset ecosystem. Its clients range from crypto-native companies that use its self-custody wallet technology to financial services firms, digital asset ecosystem companies, technology platforms, corporations, and government agencies, as well as high net worth individuals. The company's principal markets include North America, Europe, and Asia. It serves institutional investors, trading firms, investment advisors, exchanges, and developers. Bitgo Holdings, Inc. was founded in 2013 and is headquartered in Sioux Falls, South Dakota.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-09",
   "earnings_estimated": false,
   "earnings_call": "2026-11-09",
-  "eps_estimate": -0.04,
+  "eps_estimate": -0.01,
   "analysts": {
     "strong_buy": 0,
     "buy": 10,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 12
   },
-  "target_mean": 10.375,
+  "target_mean": 10.20833,
   "target_high": 15,
   "target_low": 7.5,
   "target_analysts": 12,
@@ -47,15 +47,53 @@
       "q": "1Q2026",
       "revenue": 3773573000,
       "earnings": -60673000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 4329395000,
+      "earnings": -19025000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 2851864000,
+      "earnings": 44084000
     }
   ],
   "growth": {
-    "q0": null,
-    "q1": -1.1379,
+    "q0": -1.1379,
+    "q1": 1.3169999,
     "y0": -1.31,
     "y1": 4
   },
   "ratings": [
+    {
+      "date": "2026-11-10",
+      "firm": "Mizuho",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-10",
+      "firm": "Wells Fargo",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-10",
+      "firm": "Canaccord Genuity",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-10",
+      "firm": "Rosenblatt",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-08-21",
       "firm": "Canaccord Genuity",
@@ -96,34 +134,6 @@
       "firm": "Wedbush",
       "from": "Outperform",
       "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-13",
-      "firm": "Rosenblatt",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-05-14",
-      "firm": "Cantor Fitzgerald",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-04-01",
-      "firm": "Mizuho",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-03-27",
-      "firm": "Goldman Sachs",
-      "from": "Neutral",
-      "to": "Neutral",
       "action": "main"
     }
   ],
@@ -222,7 +232,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 94,
+  "inst_count": 95,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -241,18 +251,15 @@
       "estimate": -0.06667,
       "actual": -0.0335,
       "surprise_pct": 49.75
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.04,
+      "actual": -0.062,
+      "surprise_pct": -55
     }
   ],
   "insiders": [
-    {
-      "name": "REGINELLI EDWARD",
-      "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 5.02 per share.",
-      "value": 456,
-      "shares": 91,
-      "date": "2026-08-07"
-    },
     {
       "name": "FANG CHEN",
       "role": "Officer and Director",
@@ -275,10 +282,10 @@
       "name": "REGINELLI EDWARD",
       "role": "Chief Financial Officer",
       "kind": "sell",
-      "text": "Sale at price 4.89 per share.",
-      "value": 44101,
-      "shares": 9021,
-      "date": "2026-07-24"
+      "text": "Sale at price 5.02 per share.",
+      "value": 456,
+      "shares": 91,
+      "date": "2026-08-07"
     },
     {
       "name": "BELSHE MICHAEL A.",
@@ -287,6 +294,15 @@
       "text": "Sale at price 4.89 per share.",
       "value": 189149,
       "shares": 38691,
+      "date": "2026-07-24"
+    },
+    {
+      "name": "REGINELLI EDWARD",
+      "role": "Chief Financial Officer",
+      "kind": "sell",
+      "text": "Sale at price 4.89 per share.",
+      "value": 44101,
+      "shares": 9021,
       "date": "2026-07-24"
     },
     {
@@ -299,21 +315,21 @@
       "date": "2026-07-22"
     },
     {
-      "name": "REGINELLI EDWARD",
-      "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 4.97 - 5.12 per share.",
-      "value": 933,
-      "shares": 185,
-      "date": "2026-07-08"
-    },
-    {
       "name": "METTLER JODY",
       "role": "Chief Operating Officer",
       "kind": "sell",
       "text": "Sale at price 4.97 - 5.12 per share.",
       "value": 733,
       "shares": 145,
+      "date": "2026-07-08"
+    },
+    {
+      "name": "REGINELLI EDWARD",
+      "role": "Chief Financial Officer",
+      "kind": "sell",
+      "text": "Sale at price 4.97 - 5.12 per share.",
+      "value": 933,
+      "shares": 185,
       "date": "2026-07-08"
     },
     {

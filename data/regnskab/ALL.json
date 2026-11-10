@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T00:26:48.817Z",
+  "updated_at": "2026-11-10T22:04:21.823Z",
   "source": "Yahoo Finance",
   "symbol": "ALL",
   "summary": "The Allstate Corporation, together with its subsidiaries, provides property and casualty, and other insurance products in the United States and Canada. It operates in four segments: Allstate Protection; Run-off Property-Liability; Protection Services; and Corporate and Other. The company offers private passenger auto, homeowners, other personal lines and commercial insurance through exclusive agents, independent agents, contact centers and online under the Allstate, National General, Direct Auto and Answer Financial brands. It also provides consumer product protection plans, device and mobile data collection services, and analytic solutions using automotive telematics information, roadside assistance, and protection plans; and insurance products, such as identity protection and restoration. In addition, the company offers property and casualty insurance, as well as engages in company activities and certain non-insurance operations, including expenses associated with strategic initiatives. Further, it offers automotive protection; vehicle service contracts, guaranteed asset protection, road hazard tires and wheels, and paintless dent repair protection; and roadside assistance, mobility data collection services, and analytic solutions using automotive telematics information, identity theft protection, and remediation services. The Allstate Corporation was founded in 1931 and is headquartered in Northbrook, Illinois.",
@@ -10,7 +10,7 @@
   "next_earnings": "2027-02-03",
   "earnings_estimated": true,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 9.5723,
+  "eps_estimate": 9.59335,
   "analysts": {
     "strong_buy": 2,
     "buy": 8,
@@ -19,7 +19,7 @@
     "strong_sell": 2,
     "total": 25
   },
-  "target_mean": 274.95456,
+  "target_mean": 275.86365,
   "target_high": 370,
   "target_low": 191,
   "target_analysts": 22,
@@ -72,12 +72,33 @@
     }
   ],
   "growth": {
-    "q0": -0.33110002,
-    "q1": -0.22629999,
-    "y0": 0.0998,
-    "y1": -0.2593
+    "q0": -0.32959998,
+    "q1": -0.2242,
+    "y0": 0.1041,
+    "y1": -0.26049998
   },
   "ratings": [
+    {
+      "date": "2026-11-10",
+      "firm": "UBS",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-10",
+      "firm": "Morgan Stanley",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-10",
+      "firm": "Keefe, Bruyette & Woods",
+      "from": "Underperform",
+      "to": "Underperform",
+      "action": "main"
+    },
     {
       "date": "2026-11-09",
       "firm": "Piper Sandler",
@@ -125,27 +146,6 @@
       "firm": "Keefe, Bruyette & Woods",
       "from": "Underperform",
       "to": "Underperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-10-07",
-      "firm": "Mizuho",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-10-07",
-      "firm": "Barclays",
-      "from": "Underweight",
-      "to": "Underweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-10-06",
-      "firm": "Morgan Stanley",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
       "action": "main"
     }
   ],
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-08-31",
   "dividend_date": null,
   "payout_ratio": 0.0962,
-  "inst_count": 2278,
+  "inst_count": 2277,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -273,12 +273,12 @@
   ],
   "insiders": [
     {
-      "name": "DUGENSKE JOHN E",
-      "role": "Divisional Officer",
+      "name": "RIZZO MARIO",
+      "role": "Chief Operating Officer",
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 1581,
+      "shares": 19,
       "date": "2026-10-02"
     },
     {
@@ -291,6 +291,15 @@
       "date": "2026-10-02"
     },
     {
+      "name": "DUGENSKE JOHN E",
+      "role": "Divisional Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 1581,
+      "date": "2026-10-02"
+    },
+    {
       "name": "MERTEN JESSE E",
       "role": "Divisional Officer",
       "kind": "other",
@@ -300,13 +309,13 @@
       "date": "2026-10-02"
     },
     {
-      "name": "RIZZO MARIO",
-      "role": "Chief Operating Officer",
+      "name": "TRAQUINA PERRY M",
+      "role": "Director",
       "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 19,
-      "date": "2026-10-02"
+      "text": "Stock Award(Grant) at price 224.41 per share.",
+      "value": 41067,
+      "shares": 183,
+      "date": "2026-10-01"
     },
     {
       "name": "KEANE MARGARET M",
@@ -324,15 +333,6 @@
       "text": "Stock Award(Grant) at price 224.41 per share.",
       "value": 42413,
       "shares": 189,
-      "date": "2026-10-01"
-    },
-    {
-      "name": "TRAQUINA PERRY M",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 224.41 per share.",
-      "value": 41067,
-      "shares": 183,
       "date": "2026-10-01"
     },
     {
@@ -356,9 +356,9 @@
     {
       "name": "RIZZO MARIO",
       "role": "Officer of Subsidiary Company",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 92.46 per share.",
-      "value": 5198564,
+      "kind": "sell",
+      "text": "Sale at price 264.17 - 265.55 per share.",
+      "value": 14870514,
       "shares": 56225,
       "date": "2026-08-11"
     }

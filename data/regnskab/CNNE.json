@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T00:26:49.280Z",
+  "updated_at": "2026-11-10T22:04:22.162Z",
   "source": "Yahoo Finance",
   "symbol": "CNNE",
   "summary": "Cannae Holdings, Inc. is a principal investment firm. The firm primarily invests in restaurants, technology enabled healthcare services, financial services and more. It takes both minority and majority stakes. Cannae Holdings, Inc. was founded in 2014 and is based in Las Vegas, Nevada.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-09",
   "earnings_estimated": false,
   "earnings_call": "2026-11-09",
-  "eps_estimate": -0.19,
+  "eps_estimate": -0.405,
   "analysts": {
     "strong_buy": 1,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 106900000,
-      "earnings": -68400000
-    },
-    {
       "q": "4Q2025",
       "revenue": 103300000,
       "earnings": -93000000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 102200000,
       "earnings": 37500000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 68100000,
+      "earnings": -20200000
     }
   ],
   "growth": {
-    "q0": 0.8208,
-    "q1": 0.7902,
+    "q0": 0.7902,
+    "q1": 0.4571,
     "y0": 0.9388,
     "y1": -2.3
   },
@@ -230,11 +230,11 @@
     "net_pct": null
   },
   "extras": {
-    "beta": 1.191,
-    "enterprise_value": 848287616,
-    "ev_ebitda": -17,
-    "ev_revenue": 2.076,
-    "float_shares": 30813918,
+    "beta": null,
+    "enterprise_value": 727980416,
+    "ev_ebitda": -17.975,
+    "ev_revenue": 1.783,
+    "float_shares": 27867985,
     "short_shares": 3180955,
     "short_pct_float": 9.75,
     "short_ratio": 6.02,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-12-17",
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 277,
+  "inst_count": 279,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.295,
-      "actual": -1.06,
-      "surprise_pct": -259.32
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.375,
@@ -269,6 +263,12 @@
       "estimate": -0.42,
       "actual": 0.86,
       "surprise_pct": 304.76
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.19,
+      "actual": -0.14,
+      "surprise_pct": 26.32
     }
   ],
   "insiders": [

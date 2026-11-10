@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T00:26:50.644Z",
+  "updated_at": "2026-11-10T22:04:23.158Z",
   "source": "Yahoo Finance",
   "symbol": "RLGT",
   "summary": "Radiant Logistics, Inc., operates as a third-party logistics company, provides technology-enabled global transportation and value-added logistics services in the United States, Canada, and Mexico. The company offers domestic and international air and ocean freight forwarding, and freight brokerage services, including truckload, less-than-truckload (LTL), and intermodal. It also provides other value-added logistics services including materials management and distribution, customs house brokerage, global trade management, and related technology services, as well as arranging shipments, and heavyweight and small package air services. The company serves consumer goods, food and beverages, electronics, high-tech, aviation, automotive, military, government, manufacturing, and retail industries. The company was formerly known as Golf Two Inc. and changed its name to Radiant Logistics, Inc. in October 2005. Radiant Logistics, Inc. was incorporated in 2001 and is headquartered in Renton, Washington.",
@@ -7,8 +7,8 @@
   "website": "https://radiantdelivers.com",
   "employees": 1080,
   "ceo": "Mr. Bohn H. Crain",
-  "next_earnings": "2026-11-09",
-  "earnings_estimated": false,
+  "next_earnings": "2027-02-08",
+  "earnings_estimated": true,
   "earnings_call": "2026-11-09",
   "eps_estimate": 0.12,
   "analysts": {
@@ -24,12 +24,6 @@
   "target_low": 10,
   "target_analysts": 3,
   "statements": [
-    {
-      "year": "2022",
-      "revenue": 1478391000,
-      "net": null,
-      "margin": null
-    },
     {
       "year": "2023",
       "revenue": 1085486000,
@@ -47,19 +41,15 @@
       "revenue": 902696000,
       "net": 17291000,
       "margin": 1.9
+    },
+    {
+      "year": "2026",
+      "revenue": 934356000,
+      "net": 18786000,
+      "margin": 2
     }
   ],
   "quarterly": [
-    {
-      "q": "2Q2025",
-      "revenue": 220580000,
-      "earnings": 4907000
-    },
-    {
-      "q": "3Q2025",
-      "revenue": 226655000,
-      "earnings": 1293000
-    },
     {
       "q": "4Q2025",
       "revenue": 232130000,
@@ -69,15 +59,32 @@
       "q": "1Q2026",
       "revenue": 214135000,
       "earnings": 4671000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 261436000,
+      "earnings": 7517000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 279789000,
+      "earnings": 6141000
     }
   ],
   "growth": {
-    "q0": 0.33330002,
-    "q1": -0.2941,
+    "q0": -0.2941,
+    "q1": -0.18180001,
     "y0": -0.0962,
     "y1": 0.1596
   },
   "ratings": [
+    {
+      "date": "2026-11-10",
+      "firm": "Citizens",
+      "from": "Market Outperform",
+      "to": "Market Outperform",
+      "action": "main"
+    },
     {
       "date": "2026-09-15",
       "firm": "Citizens",
@@ -140,13 +147,6 @@
       "from": "Outperform",
       "to": "Outperform",
       "action": "main"
-    },
-    {
-      "date": "2015-07-29",
-      "firm": "Cowen & Co.",
-      "from": null,
-      "to": "Outperform",
-      "action": "init"
     }
   ],
   "holders": [
@@ -174,9 +174,9 @@
     {
       "name": "Royce & Associates LP",
       "kind": "institution",
-      "pct": 5.94,
-      "shares": 2790296,
-      "date": "2026-06-30"
+      "pct": 5.85,
+      "shares": 2750625,
+      "date": "2026-09-30"
     },
     {
       "name": "Vanguard Capital Management LLC",
@@ -230,11 +230,11 @@
     "net_pct": 0.7
   },
   "extras": {
-    "beta": 0.819,
-    "enterprise_value": 473457056,
-    "ev_ebitda": 14.453,
-    "ev_revenue": 0.507,
-    "float_shares": 35594158,
+    "beta": null,
+    "enterprise_value": 491624768,
+    "ev_ebitda": 12.743,
+    "ev_revenue": 0.498,
+    "float_shares": 35658944,
     "short_shares": 606587,
     "short_pct_float": 1.71,
     "short_ratio": 1.7,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 191,
+  "inst_count": 190,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.08344,
-      "actual": 0.09,
-      "surprise_pct": 7.86
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.08378,
@@ -269,6 +263,12 @@
       "estimate": 0.09,
       "actual": 0.15,
       "surprise_pct": 66.67
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.12,
+      "actual": 0.18,
+      "surprise_pct": 50
     }
   ],
   "insiders": [

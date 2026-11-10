@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-11-10T00:26:51.015Z",
+  "updated_at": "2026-11-10T22:04:23.387Z",
   "source": "Yahoo Finance",
   "symbol": "TTEC",
   "summary": "TTEC Holdings, Inc. operates as a customer experience (CX) company that designs, builds, and operates technology-enabled customer experiences across live interaction channels. It operates through TTEC Digital and TTEC Engage segments. The TTEC Digital segment provides CX technologies for contact center as a service, customer relationship management, and artificial intelligence (AI) and analytics; creates and implements strategic CX transformation roadmaps; sells, operates, and provides managed services for cloud platforms and premise based CX technologies; creates proprietary IP to support industry specific and custom client needs; and offers CX consulting services. The TTEC Engage segment provides digitally enabled CX operational and managed services; delivers data-driven omnichannel customer care, customer acquisition, growth and retention services, tech support, fraud mitigation, and back-office solutions; and offers solutions for AI operations, including data annotation and labeling. It serves clients in the financial services, healthcare, public sector, communication, technology, media and entertainment, travel and hospitality, automotive, and retail industries. The company operates in the United States, Canada, the Philippines, the Asia Pacific, India, Europe, the Middle East, Africa, and Latin America. The company was formerly known as TeleTech Holdings, Inc. and changed its name to TTEC Holdings, Inc. in May 1996. TTEC Holdings, Inc. was founded in 1982 and is headquartered in Austin, Texas.",
   "industry": "Information Technology Services",
   "website": "https://www.ttec.com",
-  "employees": 44900,
+  "employees": 51000,
   "ceo": "Mr. Kenneth D. Tuchman",
   "next_earnings": "2026-11-09",
   "earnings_estimated": false,
   "earnings_call": "2026-11-10",
-  "eps_estimate": 0.20333,
+  "eps_estimate": 0.46667,
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 519143000,
-      "earnings": -13371000
-    },
-    {
       "q": "4Q2025",
       "revenue": 569957000,
       "earnings": -172492000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 455495000,
       "earnings": -15378000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 492245000,
+      "earnings": -5034000
     }
   ],
   "growth": {
-    "q0": 0.6944,
-    "q1": -0.0070999996,
+    "q0": -0.0070999996,
+    "q1": 0.8333,
     "y0": -0.23030001,
     "y1": 0.2756
   },
@@ -230,11 +230,11 @@
     "net_pct": null
   },
   "extras": {
-    "beta": 0.901,
-    "enterprise_value": 926105216,
-    "ev_ebitda": 5.363,
-    "ev_revenue": 0.454,
-    "float_shares": 20306158,
+    "beta": null,
+    "enterprise_value": 896968320,
+    "ev_ebitda": 4.903,
+    "ev_revenue": 0.445,
+    "float_shares": 20359149,
     "short_shares": 4283616,
     "short_pct_float": 20.74,
     "short_ratio": 9.07,
@@ -244,14 +244,8 @@
   "ex_dividend": "2024-04-02",
   "dividend_date": null,
   "payout_ratio": 5.7778,
-  "inst_count": 107,
+  "inst_count": 105,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.225,
-      "actual": 0.12,
-      "surprise_pct": -46.67
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.36,
@@ -269,9 +263,24 @@
       "estimate": 0.23333,
       "actual": 0.03,
       "surprise_pct": -87.14
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.20333,
+      "actual": 0.22,
+      "surprise_pct": 8.2
     }
   ],
   "insiders": [
+    {
+      "name": "MCLEAN MARGARET B",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 20619,
+      "date": "2026-10-02"
+    },
     {
       "name": "WAGERS KENNETH R III",
       "role": "Chief Financial Officer",
@@ -291,15 +300,6 @@
       "date": "2026-10-02"
     },
     {
-      "name": "MCLEAN MARGARET B",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 20619,
-      "date": "2026-10-02"
-    },
-    {
       "name": "ABOU JOHN P.",
       "role": "Officer",
       "kind": "other",
@@ -307,6 +307,15 @@
       "value": null,
       "shares": 19481,
       "date": "2026-07-17"
+    },
+    {
+      "name": "MCLEAN MARGARET B",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 844,
+      "date": "2026-07-01"
     },
     {
       "name": "BROWN CHRISTOPHER JOHN",
@@ -323,8 +332,8 @@
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 844,
-      "date": "2026-07-01"
+      "shares": 9383,
+      "date": "2026-05-29"
     },
     {
       "name": "WAGERS KENNETH R III",
@@ -345,16 +354,7 @@
       "date": "2026-05-29"
     },
     {
-      "name": "MCLEAN MARGARET B",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 9383,
-      "date": "2026-05-29"
-    },
-    {
-      "name": "HOLTZMAN MARC L",
+      "name": "CONLEY GREGORY A",
       "role": "Director",
       "kind": "other",
       "text": null,
