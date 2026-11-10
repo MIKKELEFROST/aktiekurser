@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:48.600Z",
+  "updated_at": "2026-11-10T00:26:50.161Z",
   "source": "Yahoo Finance",
   "symbol": "MAR",
   "summary": "Marriott International, Inc. engages in the operation, franchising, and licensing of hotel, residential, timeshare, and other lodging properties in the United States, Canada, Europe, the Middle East, Africa, Greater China, the Asia-Pacific, and internationally. The company operates properties under the JW Marriott, The Ritz-Carlton, The Luxury Collection, W Hotels, St. Regis, EDITION, Bvlgari, Marriott Hotels, Sheraton, Westin, Autograph Collection, Renaissance Hotels, Le Méridien, Delta Hotels by Marriott, MGM Collection with Marriott Bonvoy, Tribute Portfolio, Gaylord Hotels, Design Hotels, Marriott Executive Apartments, Apartments by Marriott Bonvoy, Courtyard by Marriott, Fairfield by Marriott, Residence Inn by Marriott, SpringHill Suites by Marriott, Four Points by Sheraton, TownePlace Suites by Marriott, Aloft Hotels, AC Hotels by Marriott, Moxy Hotels, Element Hotels, Protea Hotels by Marriott, citizenM, City Express by Marriott, and Four Points Flex by Sheraton brands. It also operates residences, timeshares, and yachts. The company was formerly known as New Marriott MI, Inc. and changed its name to Marriott International, Inc. in May 1998. Marriott International, Inc. was founded in 1927 and is headquartered in Bethesda, Maryland.",
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 29
   },
-  "target_mean": 407.57693,
+  "target_mean": 415.80768,
   "target_high": 478,
-  "target_low": 280,
+  "target_low": 302,
   "target_analysts": 26,
   "statements": [
     {
@@ -73,11 +73,18 @@
   ],
   "growth": {
     "q0": 0.1046,
-    "q1": 0.21200001,
-    "y0": 0.19379999,
-    "y1": 0.1196
+    "q1": 0.2199,
+    "y0": 0.2015,
+    "y1": 0.1155
   },
   "ratings": [
+    {
+      "date": "2026-11-06",
+      "firm": "Citigroup",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-11-03",
       "firm": "Goldman Sachs",
@@ -139,13 +146,6 @@
       "firm": "Wells Fargo",
       "from": "Overweight",
       "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-10-19",
-      "firm": "Evercore ISI Group",
-      "from": "Outperform",
-      "to": "Outperform",
       "action": "main"
     }
   ],
@@ -216,9 +216,9 @@
     {
       "name": "Geode Capital Management, LLC",
       "kind": "institution",
-      "pct": 2.08,
-      "shares": 5347374,
-      "date": "2026-06-30"
+      "pct": 2.09,
+      "shares": 5388016,
+      "date": "2026-09-30"
     }
   ],
   "insider_net": {
@@ -231,20 +231,20 @@
   },
   "extras": {
     "beta": 1.138,
-    "enterprise_value": 124676431872,
-    "ev_ebitda": 25.238,
-    "ev_revenue": 16.446,
-    "float_shares": 220513890,
+    "enterprise_value": 124645531648,
+    "ev_ebitda": 25.232,
+    "ev_revenue": 16.442,
+    "float_shares": 220112184,
     "short_shares": 6658459,
     "short_pct_float": 2.91,
     "short_ratio": 4.75,
     "last_split": "1061:1000",
     "last_split_date": "2011-11-22"
   },
-  "ex_dividend": "2026-08-20",
+  "ex_dividend": "2026-11-19",
   "dividend_date": null,
   "payout_ratio": 0.2792,
-  "inst_count": 2281,
+  "inst_count": 2277,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -276,15 +276,6 @@
       "date": "2026-09-25"
     },
     {
-      "name": "HARRISON DEBORAH MARRIOTT",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 352.09 per share.",
-      "value": 1232313,
-      "shares": 3500,
-      "date": "2026-09-25"
-    },
-    {
       "name": "MARRIOTT DAVID SHEETS",
       "role": "Director",
       "kind": "sell",
@@ -294,13 +285,13 @@
       "date": "2026-09-25"
     },
     {
-      "name": "REID GRANT F",
+      "name": "HARRISON DEBORAH MARRIOTT",
       "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 370.98 per share.",
-      "value": 14516,
-      "shares": 39,
-      "date": "2026-06-30"
+      "kind": "sell",
+      "text": "Sale at price 352.09 per share.",
+      "value": 1232313,
+      "shares": 3500,
+      "date": "2026-09-25"
     },
     {
       "name": "LEWIS AYLWIN B",
@@ -309,6 +300,15 @@
       "text": "Stock Award(Grant) at price 370.98 per share.",
       "value": 3625,
       "shares": 9,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "REID GRANT F",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 370.98 per share.",
+      "value": 14516,
+      "shares": 39,
       "date": "2026-06-30"
     },
     {
@@ -339,7 +339,7 @@
       "date": "2026-05-13"
     },
     {
-      "name": "MCCARTHY MARGARET M",
+      "name": "HENDERSON FREDERICK A",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -348,7 +348,7 @@
       "date": "2026-05-11"
     },
     {
-      "name": "REID GRANT F",
+      "name": "LEWIS AYLWIN B",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

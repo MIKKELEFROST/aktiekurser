@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:46.738Z",
+  "updated_at": "2026-11-10T00:26:48.727Z",
   "source": "Yahoo Finance",
   "symbol": "ABNB",
   "summary": "Airbnb, Inc., together with its subsidiaries, operates a platform for stays, experiences, and services worldwide. The company's marketplace connects hosts and guests online or through mobile devices to book spaces, experiences, and services. It also offers gift cards. The company was formerly known as AirBed & Breakfast, Inc. and changed its name to Airbnb, Inc. in November 2010. Airbnb, Inc. was founded in 2007 and is headquartered in San Francisco, California.",
@@ -10,18 +10,18 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.83667,
+  "eps_estimate": 0.83095,
   "analysts": {
     "strong_buy": 4,
     "buy": 22,
-    "hold": 16,
-    "sell": 1,
+    "hold": 17,
+    "sell": 0,
     "strong_sell": 1,
     "total": 44
   },
-  "target_mean": 184.1795,
-  "target_high": 220,
-  "target_low": 135,
+  "target_mean": 202.8045,
+  "target_high": 245,
+  "target_low": 147,
   "target_analysts": 40,
   "statements": [
     {
@@ -72,12 +72,33 @@
     }
   ],
   "growth": {
-    "q0": 0.4941,
-    "q1": 0.5288,
-    "y0": 0.3139,
-    "y1": 0.1726
+    "q0": 0.48380002,
+    "q1": 0.618,
+    "y0": 0.384,
+    "y1": 0.13159999
   },
   "ratings": [
+    {
+      "date": "2026-11-09",
+      "firm": "Jefferies",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-09",
+      "firm": "Rothschild & Co",
+      "from": "Sell",
+      "to": "Neutral",
+      "action": "up"
+    },
+    {
+      "date": "2026-11-06",
+      "firm": "JP Morgan",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-11-06",
       "firm": "Citigroup",
@@ -126,83 +147,62 @@
       "from": "Buy",
       "to": "Buy",
       "action": "reit"
-    },
-    {
-      "date": "2026-11-06",
-      "firm": "Evercore ISI Group",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-11-06",
-      "firm": "Piper Sandler",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "reit"
-    },
-    {
-      "date": "2026-11-06",
-      "firm": "StoneX",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
     }
   ],
   "holders": [
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 7.88,
+      "pct": 7.79,
       "shares": 33056139,
       "date": "2026-06-30"
     },
     {
       "name": "Vanguard Capital Management LLC",
       "kind": "institution",
-      "pct": 6.34,
+      "pct": 6.27,
       "shares": 26615598,
       "date": "2026-06-30"
     },
     {
       "name": "Harris Associates L.P.",
       "kind": "institution",
-      "pct": 4.5,
+      "pct": 4.44,
       "shares": 18861551,
       "date": "2026-06-30"
     },
     {
       "name": "State Street Corporation",
       "kind": "institution",
-      "pct": 4.33,
+      "pct": 4.27,
       "shares": 18150096,
       "date": "2026-06-30"
     },
     {
       "name": "Invesco Ltd.",
       "kind": "institution",
-      "pct": 3.86,
+      "pct": 3.81,
       "shares": 16173900,
       "date": "2026-06-30"
     },
     {
       "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
       "kind": "fond",
-      "pct": 3,
+      "pct": 2.97,
       "shares": 12604814,
       "date": "2026-06-30"
     },
     {
       "name": "VANGUARD INDEX FUNDS-Vanguard 500 Index Fund",
       "kind": "fond",
-      "pct": 2.58,
+      "pct": 2.55,
       "shares": 10827635,
       "date": "2026-06-30"
     },
     {
       "name": "AQR Capital Management, LLC",
       "kind": "institution",
-      "pct": 2.53,
+      "pct": 2.5,
       "shares": 10624015,
       "date": "2026-06-30"
     },
@@ -210,13 +210,13 @@
       "name": "Geode Capital Management, LLC",
       "kind": "institution",
       "pct": 2.46,
-      "shares": 10340188,
-      "date": "2026-06-30"
+      "shares": 10432282,
+      "date": "2026-09-30"
     },
     {
       "name": "Morgan Stanley",
       "kind": "institution",
-      "pct": 2.41,
+      "pct": 2.38,
       "shares": 10104542,
       "date": "2026-06-30"
     }
@@ -224,19 +224,19 @@
   "insider_net": {
     "period": "6m",
     "buys": 50,
-    "sells": 46,
+    "sells": 44,
     "bought": 12347370,
-    "sold": 6141469,
-    "net_pct": 115.4
+    "sold": 6079719,
+    "net_pct": 122
   },
   "extras": {
-    "beta": null,
-    "enterprise_value": 91304747008,
-    "ev_ebitda": 29.013,
-    "ev_revenue": 6.553,
-    "float_shares": 410695882,
+    "beta": 1.272,
+    "enterprise_value": 101552144384,
+    "ev_ebitda": 32.249,
+    "ev_revenue": 7.289,
+    "float_shares": 408500463,
     "short_shares": 14631207,
-    "short_pct_float": 3.53,
+    "short_pct_float": 3.49,
     "short_ratio": 3.17,
     "last_split": null,
     "last_split_date": null
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 1917,
+  "inst_count": 1919,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -285,9 +285,9 @@
       "name": "BLECHARCZYK NATHAN",
       "role": "Officer, Director and Beneficial Owner",
       "kind": "other",
-      "text": "Stock Gift at price 0.00 per share.",
-      "value": 0,
-      "shares": 4077,
+      "text": null,
+      "value": null,
+      "shares": 17692,
       "date": "2026-10-26"
     },
     {
@@ -303,9 +303,9 @@
       "name": "BLECHARCZYK NATHAN",
       "role": "Officer, Director and Beneficial Owner",
       "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 17692,
+      "text": "Stock Gift at price 0.00 per share.",
+      "value": 0,
+      "shares": 4077,
       "date": "2026-10-26"
     },
     {
@@ -321,9 +321,9 @@
       "name": "BLECHARCZYK NATHAN",
       "role": "Officer, Director and Beneficial Owner",
       "kind": "other",
-      "text": "Stock Gift at price 0.00 per share.",
-      "value": 0,
-      "shares": 4077,
+      "text": null,
+      "value": null,
+      "shares": 17692,
       "date": "2026-10-12"
     },
     {
@@ -339,27 +339,27 @@
       "name": "BLECHARCZYK NATHAN",
       "role": "Officer, Director and Beneficial Owner",
       "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 17692,
-      "date": "2026-10-12"
-    },
-    {
-      "name": "MERTZ ELINOR",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "text": "Stock Gift at price 0.00 per share.",
       "value": 0,
-      "shares": 11204,
-      "date": "2026-09-28"
+      "shares": 4077,
+      "date": "2026-10-12"
     },
     {
       "name": "BLECHARCZYK NATHAN",
       "role": "Officer, Director and Beneficial Owner",
       "kind": "other",
-      "text": "Stock Gift at price 0.00 per share.",
-      "value": 0,
-      "shares": 4077,
+      "text": null,
+      "value": null,
+      "shares": 17692,
+      "date": "2026-09-28"
+    },
+    {
+      "name": "BLECHARCZYK NATHAN",
+      "role": "Officer, Director and Beneficial Owner",
+      "kind": "sell",
+      "text": "Sale at price 154.45 - 158.31 per share.",
+      "value": 2135172,
+      "shares": 13615,
       "date": "2026-09-28"
     }
   ],

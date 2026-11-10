@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:48.277Z",
+  "updated_at": "2026-11-10T00:26:49.985Z",
   "source": "Yahoo Finance",
   "symbol": "JKS",
   "summary": "Jinko Holdings Limited, together with its subsidiaries, engages in the design, development, production, and marketing of photovoltaic products. The company provides solar modules, silicon wafers, solar cells, recovered silicon materials, and silicon ingots. It offers solar system integration services; solar power generation and solar system EPC services; and energy storage system, as well as undertakes solar power projects. The company sells its products to distributors, project developers, system integrators, and manufacturers of solar power products under the JinkoSolar brand. As of December 31, 2025, it had an integrated annual capacity of 120 gigawatts (GW) for mono wafers; 95 GW for solar cells; and 130 GW for solar modules. It operates in China, the United States, India, Saudi Arabia, Australia, Pakistan, Brazil, Poland, Japan, Spain, and Germany. Jinko Holdings Limited was formerly known as JinkoSolar Holding Co., Ltd. and changed its name to Jinko Holdings Limited in October 2026. The company was founded in 2006 and is headquartered in Guangxin, the People's Republic of China.",
@@ -13,13 +13,13 @@
   "eps_estimate": null,
   "analysts": {
     "strong_buy": 0,
-    "buy": 2,
-    "hold": 4,
+    "buy": 4,
+    "hold": 2,
     "sell": 1,
     "strong_sell": 0,
     "total": 7
   },
-  "target_mean": 16.76833,
+  "target_mean": 15.60167,
   "target_high": 32.61,
   "target_low": 7,
   "target_analysts": 6,
@@ -79,6 +79,13 @@
   },
   "ratings": [
     {
+      "date": "2026-11-06",
+      "firm": "UBS",
+      "from": "Neutral",
+      "to": "Buy",
+      "action": "up"
+    },
+    {
       "date": "2026-11-03",
       "firm": "Freedom Broker",
       "from": "Hold",
@@ -136,13 +143,6 @@
     },
     {
       "date": "2025-11-19",
-      "firm": "Goldman Sachs",
-      "from": "Sell",
-      "to": "Sell",
-      "action": "main"
-    },
-    {
-      "date": "2025-10-08",
       "firm": "Goldman Sachs",
       "from": "Sell",
       "to": "Sell",
@@ -223,16 +223,16 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 5,
+    "buys": 1,
     "sells": 4,
-    "bought": 2907711,
+    "bought": 2000,
     "sold": 1314000,
-    "net_pct": 7.4
+    "net_pct": -5.3
   },
   "extras": {
     "beta": 0.338,
-    "enterprise_value": 40947892224,
-    "ev_ebitda": 10.65,
+    "enterprise_value": 40974442496,
+    "ev_ebitda": 10.657,
     "ev_revenue": 0.735,
     "float_shares": 31231329,
     "short_shares": 3165482,
@@ -284,8 +284,8 @@
     {
       "name": "MARKSCHEID STEPHEN",
       "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 25.00 per share.",
+      "kind": "buy",
+      "text": "Purchase at price 25.00 per share.",
       "value": 50000,
       "shares": 2000,
       "date": "2026-05-13"
@@ -293,8 +293,8 @@
     {
       "name": "MARKSCHEID STEPHEN",
       "role": "Director",
-      "kind": "buy",
-      "text": "Purchase at price 25.00 per share.",
+      "kind": "sell",
+      "text": "Sale at price 25.00 per share.",
       "value": 50000,
       "shares": 2000,
       "date": "2026-05-13"

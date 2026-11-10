@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:49.772Z",
+  "updated_at": "2026-11-10T00:26:51.095Z",
   "source": "Yahoo Finance",
   "symbol": "VIRT",
   "summary": "Virtu Financial, Inc. operates as a financial services company in the United States, Ireland, and internationally. It operates in two segments, Market Making and Execution Services. The company is involved in buying and selling securities to broker dealers, banks and institutions; trading direct to clients, exchanges, alternative trading systems, and other market centers; cash trading business; and pre- and post-trade services, data products, and compliance tools. It also provides agency execution services and trading venues for transparent trading in global equities, ETFs, fixed income, currencies, and commodities to institutions, banks, and broker dealers; agency-based and execution-only trading; workflow technology; trading analytics; foreign exchange, futures, and cryptocurrency products. The company was founded in 2008 and is headquartered in New York, New York.",
@@ -10,7 +10,7 @@
   "next_earnings": "2027-02-04",
   "earnings_estimated": true,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 1.65196,
+  "eps_estimate": 1.77422,
   "analysts": {
     "strong_buy": 2,
     "buy": 2,
@@ -19,8 +19,8 @@
     "strong_sell": 0,
     "total": 7
   },
-  "target_mean": 69.42857,
-  "target_high": 84,
+  "target_mean": 70.28571,
+  "target_high": 88,
   "target_low": 56,
   "target_analysts": 7,
   "statements": [
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": -0.107,
-    "q1": -0.17930001,
-    "y0": 0.26209998,
-    "y1": -0.00059999997
+    "q0": -0.040999997,
+    "q1": -0.1808,
+    "y0": 0.3224,
+    "y1": -0.0248
   },
   "ratings": [
+    {
+      "date": "2026-11-07",
+      "firm": "JP Morgan",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-10-09",
       "firm": "Morgan Stanley",
@@ -139,13 +146,6 @@
       "firm": "Goldman Sachs",
       "from": "Neutral",
       "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-04-10",
-      "firm": "Morgan Stanley",
-      "from": "Underweight",
-      "to": "Underweight",
       "action": "main"
     }
   ],
@@ -224,17 +224,17 @@
   "insider_net": {
     "period": "6m",
     "buys": 12,
-    "sells": 5,
+    "sells": 3,
     "bought": 247646,
-    "sold": 57954,
-    "net_pct": 4.3
+    "sold": 23954,
+    "net_pct": 5.1
   },
   "extras": {
     "beta": 0.69,
-    "enterprise_value": -6861435904,
+    "enterprise_value": -5721100288,
     "ev_ebitda": null,
-    "ev_revenue": -2.102,
-    "float_shares": 83443258,
+    "ev_revenue": -1.611,
+    "float_shares": 83718931,
     "short_shares": 5503282,
     "short_pct_float": 6.6,
     "short_ratio": 4.07,
@@ -243,8 +243,8 @@
   },
   "ex_dividend": "2026-09-01",
   "dividend_date": null,
-  "payout_ratio": 0.1595,
-  "inst_count": 641,
+  "payout_ratio": 0.141,
+  "inst_count": 643,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -282,21 +282,21 @@
       "date": "2026-08-20"
     },
     {
-      "name": "NIXON JOHN D",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Gift at price 59.98 per share.",
-      "value": 78694,
-      "shares": 1312,
-      "date": "2026-08-19"
-    },
-    {
       "name": "GRANO JOSEPH J JR",
       "role": "Director",
       "kind": "sell",
       "text": "Sale at price 60.94 per share.",
       "value": 511856,
       "shares": 8400,
+      "date": "2026-08-19"
+    },
+    {
+      "name": "NIXON JOHN D",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Gift at price 59.98 per share.",
+      "value": 78694,
+      "shares": 1312,
       "date": "2026-08-19"
     },
     {
@@ -327,34 +327,34 @@
       "date": "2026-07-31"
     },
     {
-      "name": "CRUGER WILLIAM FRANK JR",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 3392,
-      "date": "2026-07-01"
-    },
-    {
-      "name": "MOLLUSO JOSEPH",
-      "role": "President",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 7531,
-      "date": "2026-07-01"
-    },
-    {
-      "name": "NIXON JOHN D",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 3392,
-      "date": "2026-07-01"
-    },
-    {
       "name": "URBAN DAVID",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 3392,
+      "date": "2026-07-01"
+    },
+    {
+      "name": "GAMBALE VIRGINIA",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 3392,
+      "date": "2026-07-01"
+    },
+    {
+      "name": "VIOLA MICHAEL T",
+      "role": "Director and Beneficial Owner of more than 10% of a Class of Security",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 3392,
+      "date": "2026-07-01"
+    },
+    {
+      "name": "MINIERI JOANNE M",
       "role": "Director",
       "kind": "other",
       "text": null,

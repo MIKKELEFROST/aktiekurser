@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:49.633Z",
+  "updated_at": "2026-11-10T00:26:50.998Z",
   "source": "Yahoo Finance",
   "symbol": "TROX",
   "summary": "Tronox Holdings plc operates as a manufacturer of TiO2 pigment in North America, South and Central America, Europe, the Middle East, Africa, and the Asia Pacific. The company operates titanium-bearing mineral sand mines; and engages in beneficiation and smelting operations. It offers TiO2 pigment; ultrafine specialty TiO2; zircon; high purity pig iron; monazite; feedstock; and titanium tetrachloride products. The company's products are used for the manufacture of paints, coatings, plastics, and paper, as well as various other applications. Tronox Holdings plc was incorporated in 2018 and is based in Stamford, Connecticut.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": -0.23128,
+  "eps_estimate": -0.30061,
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
@@ -19,9 +19,9 @@
     "strong_sell": 1,
     "total": 8
   },
-  "target_mean": 5.125,
+  "target_mean": 4.2625,
   "target_high": 8,
-  "target_low": 4,
+  "target_low": 3,
   "target_analysts": 8,
   "statements": [
     {
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.6145,
-    "q1": 0.6727,
-    "y0": 0.0202,
-    "y1": 0.6905
+    "q0": 0.499,
+    "q1": 0.5727,
+    "y0": -0.0926,
+    "y1": 0.6301
   },
   "ratings": [
+    {
+      "date": "2026-11-09",
+      "firm": "JP Morgan",
+      "from": "Underweight",
+      "to": "Neutral",
+      "action": "up"
+    },
     {
       "date": "2026-10-20",
       "firm": "Truist Securities",
@@ -140,13 +147,6 @@
       "from": "Sell",
       "to": "Sell",
       "action": "main"
-    },
-    {
-      "date": "2026-04-28",
-      "firm": "Truist Securities",
-      "from": "Hold",
-      "to": "Sell",
-      "action": "down"
     }
   ],
   "holders": [
@@ -169,6 +169,13 @@
       "kind": "institution",
       "pct": 4.35,
       "shares": 6949900,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Deutsche Bank AG",
+      "kind": "institution",
+      "pct": 3.59,
+      "shares": 5736560,
       "date": "2026-09-30"
     },
     {
@@ -212,13 +219,6 @@
       "pct": 2.77,
       "shares": 4417557,
       "date": "2026-09-30"
-    },
-    {
-      "name": "VANGUARD FENWAY FUNDS-Vanguard PRIMECAP Core Fund",
-      "kind": "fond",
-      "pct": 2.59,
-      "shares": 4130659,
-      "date": "2026-06-30"
     }
   ],
   "insider_net": {
@@ -231,12 +231,12 @@
   },
   "extras": {
     "beta": 0.952,
-    "enterprise_value": 3736829184,
-    "ev_ebitda": 18.14,
-    "ev_revenue": 1.173,
+    "enterprise_value": 3752858624,
+    "ev_ebitda": 18.487,
+    "ev_revenue": 1.178,
     "float_shares": 118855404,
     "short_shares": 18746363,
-    "short_pct_float": 15.74,
+    "short_pct_float": 15.73,
     "short_ratio": 8.52,
     "last_split": "5:1",
     "last_split_date": "2012-07-26"
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-11-16",
   "dividend_date": null,
   "payout_ratio": 0.15529999,
-  "inst_count": 320,
+  "inst_count": 319,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -282,6 +282,15 @@
       "date": "2026-07-29"
     },
     {
+      "name": "KHAN MOAZZAM A",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 15690,
+      "date": "2026-04-28"
+    },
+    {
       "name": "NKOSI SIPHO ABEDNEGO",
       "role": "Director",
       "kind": "other",
@@ -301,15 +310,6 @@
     },
     {
       "name": "TURGEON JEAN-FRANCOIS",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 15690,
-      "date": "2026-04-28"
-    },
-    {
-      "name": "KHAN MOAZZAM A",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -345,21 +345,21 @@
       "date": "2026-04-28"
     },
     {
+      "name": "ROMANO JOHN D",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 6.59 per share.",
+      "value": 669635,
+      "shares": 101600,
+      "date": "2026-03-06"
+    },
+    {
       "name": "SRIVISAL JOHN",
       "role": "Chief Financial Officer",
       "kind": "sell",
       "text": "Sale at price 6.59 per share.",
       "value": 128297,
       "shares": 19461,
-      "date": "2026-03-06"
-    },
-    {
-      "name": "TURGEON JEAN-FRANCOIS",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 6.60 per share.",
-      "value": 122488,
-      "shares": 18563,
       "date": "2026-03-06"
     }
   ],

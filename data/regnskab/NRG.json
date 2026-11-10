@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:48.888Z",
+  "updated_at": "2026-11-10T00:26:50.340Z",
   "source": "Yahoo Finance",
   "symbol": "NRG",
   "summary": "NRG Energy, Inc., together with its subsidiaries, operates as an energy and home services company in the United States and Canada. It operates through the Texas, East, West/Other, Vivint Smart Home, and Corporate Activities segments. The company offers retail electricity, energy management, demand response and virtual power plant programs, carbon offsets, smart home security, and automation services. It also offers system power, distributed and backup generation, energy storage, energy management, renewable and low-carbon products, and carbon management solutions for large business and commercial customers; a cloud-based home platform, including hardware, software, sales, installation, customer service, technical support, and professional monitoring solutions; and generation portfolio includes fossil fuel and renewable generation assets diversified by fuel type and dispatch level, with ongoing development of new natural gas and renewable projects. In addition, the company trades in power, natural gas, and related products; environmental products; weather products; and financial products, including forwards, futures, options, and swaps. It offers its products and services under the NRG, Reliant, Direct Energy, Green Mountain Energy, and Vivint. It serves residential, commercial, government, industrial, data center, and wholesale customers. NRG Energy, Inc. was founded in 1989 and is headquartered in Houston, Texas.",
@@ -10,16 +10,16 @@
   "next_earnings": "2026-11-09",
   "earnings_estimated": false,
   "earnings_call": "2026-11-09",
-  "eps_estimate": 3.0285,
+  "eps_estimate": 2.4915,
   "analysts": {
-    "strong_buy": 3,
+    "strong_buy": 4,
     "buy": 12,
-    "hold": 3,
+    "hold": 2,
     "sell": 0,
     "strong_sell": 0,
     "total": 18
   },
-  "target_mean": 170.66667,
+  "target_mean": 166.94444,
   "target_high": 221,
   "target_low": 104,
   "target_analysts": 18,
@@ -51,16 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 6741000000,
-      "earnings": -121000000
-    },
-    {
-      "q": "3Q2025",
-      "revenue": 7635000000,
-      "earnings": 135000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 7753000000,
       "earnings": 50000000
@@ -69,13 +59,23 @@
       "q": "1Q2026",
       "revenue": 10256000000,
       "earnings": 108000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 7481000000,
+      "earnings": 489000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 9466000000,
+      "earnings": 544000000
     }
   ],
   "growth": {
-    "q0": 0.08939999,
-    "q1": 1.3957001,
+    "q0": 1.3957001,
+    "q1": 0.6302,
     "y0": 0.0668,
-    "y1": 0.2029
+    "y1": 0.19540001
   },
   "ratings": [
     {
@@ -209,9 +209,9 @@
     {
       "name": "Geode Capital Management, LLC",
       "kind": "institution",
-      "pct": 2.83,
-      "shares": 5976441,
-      "date": "2026-06-30"
+      "pct": 2.82,
+      "shares": 5939357,
+      "date": "2026-09-30"
     },
     {
       "name": "VANGUARD INDEX FUNDS-Vanguard 500 Index Fund",
@@ -231,10 +231,10 @@
   },
   "extras": {
     "beta": 1.201,
-    "enterprise_value": 40887455744,
-    "ev_ebitda": 12.569,
-    "ev_revenue": 1.234,
-    "float_shares": 209258230,
+    "enterprise_value": 42514485248,
+    "ev_ebitda": 13.069,
+    "ev_revenue": 1.283,
+    "float_shares": 209241413,
     "short_shares": 5978131,
     "short_pct_float": 3.8,
     "short_ratio": 1.89,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-11-02",
   "dividend_date": null,
   "payout_ratio": 0.4791,
-  "inst_count": 1381,
+  "inst_count": 1383,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 2.12647,
-      "actual": 2.78,
-      "surprise_pct": 30.73
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.89362,
@@ -269,18 +263,15 @@
       "estimate": 1.74005,
       "actual": 1.49,
       "surprise_pct": -14.37
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 3.0285,
+      "actual": 4.68,
+      "surprise_pct": 54.53
     }
   ],
   "insiders": [
-    {
-      "name": "CURCI BRIAN",
-      "role": "General Counsel",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 66,
-      "date": "2026-11-02"
-    },
     {
       "name": "PRUNER ALEXANDRA",
       "role": "Director",
@@ -291,12 +282,12 @@
       "date": "2026-11-02"
     },
     {
-      "name": "SPENCER GERALD ALFRED",
-      "role": "Officer",
+      "name": "CURCI BRIAN",
+      "role": "General Counsel",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 21,
+      "shares": 66,
       "date": "2026-11-02"
     },
     {
@@ -318,6 +309,15 @@
       "date": "2026-11-02"
     },
     {
+      "name": "SPENCER GERALD ALFRED",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 21,
+      "date": "2026-11-02"
+    },
+    {
       "name": "LIYANEARACHCHI DAK",
       "role": "Chief Technology Officer",
       "kind": "other",
@@ -336,30 +336,30 @@
       "date": "2026-11-02"
     },
     {
-      "name": "CARTER MATTHEW JR.",
+      "name": "POURBAIX ALEXANDER J.",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 219,
+      "shares": 64,
       "date": "2026-11-02"
     },
     {
-      "name": "CARRILLO RULE ANTONIO",
+      "name": "COX HEATHER",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 95,
+      "shares": 99,
       "date": "2026-11-02"
     },
     {
-      "name": "GAUDETTE ROBERT J",
-      "role": "Chief Executive Officer",
+      "name": "DONOHUE ELISABETH B",
+      "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 78,
+      "shares": 120,
       "date": "2026-11-02"
     }
   ],

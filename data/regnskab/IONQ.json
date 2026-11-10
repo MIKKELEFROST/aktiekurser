@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:48.219Z",
+  "updated_at": "2026-11-10T00:26:49.939Z",
   "source": "Yahoo Finance",
   "symbol": "IONQ",
   "summary": "IonQ, Inc. develops quantum computing systems in the United States, Switzerland, and Internationally. It sells access to quantum computers of various qubit capacities. The company also makes access to its quantum computers through cloud platforms, such as Amazon Web Services (AWS), Braket, Microsoft's Azure Quantum, and Google's Cloud Marketplace, as well as through its cloud service. The company engages in quantum-safe communications and quantum detection systems. It provides contracts associated with the design, development, construction, and sale of specialized quantum computing hardware systems; maintenance and support services; and consulting services related to co-developing algorithms on quantum computing systems. In addition, it provides semiconductor manufacturing services. The company has a collaboration agreement with University of Chicago. The company was founded in 2015 and is headquartered in College Park, Maryland.",
@@ -10,18 +10,18 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": -0.33818,
+  "eps_estimate": -0.39,
   "analysts": {
     "strong_buy": 1,
-    "buy": 11,
+    "buy": 10,
     "hold": 2,
     "sell": 0,
     "strong_sell": 0,
-    "total": 14
+    "total": 13
   },
-  "target_mean": 62.275,
-  "target_high": 80,
-  "target_low": 41.85,
+  "target_mean": 54.275,
+  "target_high": 70,
+  "target_low": 40,
   "target_analysts": 14,
   "statements": [
     {
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": -0.69089997,
-    "q1": 0.0054,
-    "y0": -1.1764,
-    "y1": -0.0294
+    "q0": -0.95,
+    "q1": -0.0392,
+    "y0": -1.1917,
+    "y1": -0.0395
   },
   "ratings": [
+    {
+      "date": "2026-11-07",
+      "firm": "Jefferies",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-11-06",
       "firm": "B. Riley Securities",
@@ -140,100 +147,93 @@
       "from": "Outperform",
       "to": "Outperform",
       "action": "reit"
-    },
-    {
-      "date": "2026-09-09",
-      "firm": "Mizuho",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
     }
   ],
   "holders": [
     {
       "name": "Morgan Stanley",
       "kind": "institution",
-      "pct": 6.43,
+      "pct": 6.08,
       "shares": 26279397,
       "date": "2026-06-30"
     },
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 5.11,
+      "pct": 4.83,
       "shares": 20896455,
       "date": "2026-06-30"
     },
     {
       "name": "Vanguard Capital Management LLC",
       "kind": "institution",
-      "pct": 3.81,
+      "pct": 3.61,
       "shares": 15598546,
       "date": "2026-06-30"
     },
     {
       "name": "Vanguard Portfolio Management LLC",
       "kind": "institution",
-      "pct": 3.41,
+      "pct": 3.23,
       "shares": 13959259,
       "date": "2026-06-30"
     },
     {
       "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
       "kind": "fond",
-      "pct": 2.61,
+      "pct": 2.47,
       "shares": 10666391,
       "date": "2026-06-30"
     },
     {
       "name": "State Street Corporation",
       "kind": "institution",
-      "pct": 1.99,
+      "pct": 1.88,
       "shares": 8123629,
       "date": "2026-06-30"
     },
     {
       "name": "UBS Group AG",
       "kind": "institution",
-      "pct": 1.93,
+      "pct": 1.83,
       "shares": 7896730,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "VANGUARD INDEX FUNDS-Vanguard Small-Cap Index Fund",
-      "kind": "fond",
-      "pct": 1.63,
-      "shares": 6652727,
       "date": "2026-06-30"
     },
     {
       "name": "Geode Capital Management, LLC",
       "kind": "institution",
-      "pct": 1.58,
-      "shares": 6459949,
+      "pct": 1.54,
+      "shares": 6662722,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "VANGUARD INDEX FUNDS-Vanguard Small-Cap Index Fund",
+      "kind": "fond",
+      "pct": 1.54,
+      "shares": 6652727,
       "date": "2026-06-30"
     },
     {
       "name": "Bank of America Corporation",
       "kind": "institution",
-      "pct": 1.58,
+      "pct": 1.5,
       "shares": 6473088,
       "date": "2026-06-30"
     }
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 8,
-    "sells": 5,
-    "bought": 37483,
-    "sold": 15509,
+    "buys": 7,
+    "sells": 4,
+    "bought": 33710,
+    "sold": 11736,
     "net_pct": 0.8
   },
   "extras": {
-    "beta": null,
-    "enterprise_value": 10531751936,
-    "ev_ebitda": -10.79,
-    "ev_revenue": 27.683,
+    "beta": 3.409,
+    "enterprise_value": 13225741312,
+    "ev_ebitda": -14.461,
+    "ev_revenue": 34.764,
     "float_shares": 429491633,
     "short_shares": 47907371,
     "short_pct_float": 11.77,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 1041,
+  "inst_count": 1037,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -266,9 +266,9 @@
     },
     {
       "quarter": "2026-09-30",
-      "estimate": -0.79,
+      "estimate": -0.774,
       "actual": 1.35,
-      "surprise_pct": 270.89
+      "surprise_pct": 274.42
     }
   ],
   "insiders": [

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:49.863Z",
+  "updated_at": "2026-11-10T00:26:51.168Z",
   "source": "Yahoo Finance",
   "symbol": "WLK",
   "summary": "Westlake Corporation manufactures and markets performance and essential materials, and housing and infrastructure products in the United States, Canada, Germany, China, Mexico, Brazil, France, Italy, and internationally. It operates through two segments, Performance and Essential Materials and The Housing and Infrastructure Products. The Performance and Essential Materials segment offers ethylene, polyethylene, chlor-alkali, chlorinated derivative products, ethylene dichloride, vinyl chloride monomer, polyvinyl chloride (PVC), epoxy specialty resins, and base epoxy resins and intermediaries. The Housing and Infrastructure Products segment provides residential PVC sidings; PVC trim and mouldings; architectural stone veneers; windows; PVC decking; polymer composite and cement roof tiles; PVC pipes and fittings for various water, sewer, electrical, and industrial applications; and PVC compounds for various housing, medical, and automobile products. This segment also offers consumer and commercial products, such as landscape edging; industrial, home, and office matting; marine dock edging; and masonry joint controls. It offers its products to chemical processors; plastics fabricators; small construction contractors; municipalities; and supply warehouses for use in various consumer and industrial markets, including residential construction, flexible and rigid packaging, automotive products, healthcare products, water treatment, wind turbines, and coatings, as well as other durable and non-durable goods. The company was formerly known as Westlake Chemical Corporation and changed its name to Westlake Corporation in February 2022. Westlake Corporation was founded in 1986 and is headquartered in Houston, Texas. Westlake Corporation is a subsidiary of TTWF LP.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 0.08077,
+  "eps_estimate": -0.11254,
   "analysts": {
     "strong_buy": 2,
     "buy": 4,
@@ -19,8 +19,8 @@
     "strong_sell": 1,
     "total": 17
   },
-  "target_mean": 79.17647,
-  "target_high": 114,
+  "target_mean": 77.70588,
+  "target_high": 105,
   "target_low": 65,
   "target_analysts": 17,
   "statements": [
@@ -72,12 +72,26 @@
     }
   ],
   "growth": {
-    "q0": 1.3231,
-    "q1": 1.4091,
-    "y0": 3.2447,
-    "y1": 0.17799999
+    "q0": 0.5498,
+    "q1": 1.2423,
+    "y0": 2.782,
+    "y1": 0.0104
   },
   "ratings": [
+    {
+      "date": "2026-11-09",
+      "firm": "Truist Securities",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-06",
+      "firm": "Citigroup",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-11-06",
       "firm": "UBS",
@@ -133,20 +147,6 @@
       "from": "Neutral",
       "to": "Neutral",
       "action": "main"
-    },
-    {
-      "date": "2026-09-25",
-      "firm": "UBS",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-09-11",
-      "firm": "Keybanc",
-      "from": null,
-      "to": "Overweight",
-      "action": "init"
     }
   ],
   "holders": [
@@ -231,10 +231,10 @@
   },
   "extras": {
     "beta": 0.649,
-    "enterprise_value": 12866347008,
-    "ev_ebitda": 10.41,
-    "ev_revenue": 1.125,
-    "float_shares": 33232702,
+    "enterprise_value": 12591389696,
+    "ev_ebitda": 10.187,
+    "ev_revenue": 1.101,
+    "float_shares": 33299203,
     "short_shares": 4259386,
     "short_pct_float": 13.06,
     "short_ratio": 4.7,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-08-25",
   "dividend_date": null,
   "payout_ratio": 0.69629997,
-  "inst_count": 484,
+  "inst_count": 488,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -266,9 +266,9 @@
     },
     {
       "quarter": "2026-09-30",
-      "estimate": 0.50229,
+      "estimate": 0.48465,
       "actual": 0.45,
-      "surprise_pct": -10.41
+      "surprise_pct": -7.15
     }
   ],
   "insiders": [
@@ -291,25 +291,7 @@
       "date": "2026-08-11"
     },
     {
-      "name": "MCCOLLUM MARK A",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 2168,
-      "date": "2026-08-07"
-    },
-    {
-      "name": "CREGG ROGER A",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 2168,
-      "date": "2026-08-07"
-    },
-    {
-      "name": "NORTHCUTT RONALD BRUCE",
+      "name": "CHAO CATHERINE T",
       "role": "Director",
       "kind": "other",
       "text": null,
@@ -355,6 +337,24 @@
     },
     {
       "name": "SABAT CAROLYN CHAO",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 2168,
+      "date": "2026-08-07"
+    },
+    {
+      "name": "MCCOLLUM MARK A",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 2168,
+      "date": "2026-08-07"
+    },
+    {
+      "name": "CREGG ROGER A",
       "role": "Director",
       "kind": "other",
       "text": null,

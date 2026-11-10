@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:48.239Z",
+  "updated_at": "2026-11-10T00:26:49.950Z",
   "source": "Yahoo Finance",
   "symbol": "IRTC",
   "summary": "iRhythm Holdings, Inc., a digital healthcare company, engages in the design, development, and commercialization of device-based technology that provides ambulatory cardiac monitoring services to diagnose arrhythmias in the United States. The company offers Zio ambulatory cardiac monitoring services, including long-term and short-term continuous monitoring and mobile cardiac telemetry monitoring services. It also provides Zio Monitor System, a prescription-only remote electrocardiogram (ECG) monitoring system consisting a patch ECG monitor that records the electric signal from the heart continuously for up to 14 days; Zio XT System, a prescription-only remote ECG monitoring system that consists of the Zio XT patch that records the electric signal from the heart continuously for up to 14 days; and Zio ECG Utilization Software System, which supports the capture and analysis of ECG data. In addition, the company offers Zio AT System, a prescription-only remote ECG monitoring system, which consists of the Zio AT patch that records the electric signal from the heart continuously for up to 14 days, as well as incorporates the Zio AT wireless gateway to provide connectivity between the patch and the ZEUS System during the patient wear period. It has a development collaboration agreement with BioIS to develop and commercialize pulse oximetry, accelerometry, and trending non-invasive blood pressure technologies for use within ambulatory cardiac monitoring products and services. The company was formerly known as iRhythm Technologies, Inc. and changed its name to iRhythm Holdings, Inc. in January 2026. iRhythm Holdings, Inc. was incorporated in 2006 and is headquartered in San Francisco, California.",
@@ -10,18 +10,18 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.05,
+  "eps_estimate": 0.1591,
   "analysts": {
     "strong_buy": 3,
-    "buy": 13,
-    "hold": 0,
+    "buy": 12,
+    "hold": 1,
     "sell": 0,
     "strong_sell": 0,
     "total": 16
   },
-  "target_mean": 171.33333,
-  "target_high": 196,
-  "target_low": 140,
+  "target_mean": 158,
+  "target_high": 206,
+  "target_low": 124,
   "target_analysts": 15,
   "statements": [
     {
@@ -72,12 +72,33 @@
     }
   ],
   "growth": {
-    "q0": -0.8276,
-    "q1": 0.4286,
-    "y0": 1.4345,
-    "y1": 1.6725999
+    "q0": -0.45139998,
+    "q1": 0.85160005,
+    "y0": 2.2216,
+    "y1": 0.1895
   },
   "ratings": [
+    {
+      "date": "2026-11-09",
+      "firm": "Truist Securities",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-09",
+      "firm": "Freedom Capital Markets",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-07",
+      "firm": "JP Morgan",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-11-06",
       "firm": "Citigroup",
@@ -123,27 +144,6 @@
     {
       "date": "2026-11-06",
       "firm": "BTIG",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-10-16",
-      "firm": "Piper Sandler",
-      "from": null,
-      "to": "Overweight",
-      "action": "init"
-    },
-    {
-      "date": "2026-10-06",
-      "firm": "Wells Fargo",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-10-06",
-      "firm": "Freedom Capital Markets",
       "from": "Buy",
       "to": "Buy",
       "action": "main"
@@ -214,10 +214,10 @@
       "date": "2026-06-30"
     },
     {
-      "name": "Geode Capital Management, LLC",
+      "name": "Eventide Asset Management LLC",
       "kind": "institution",
-      "pct": 2.68,
-      "shares": 881899,
+      "pct": 2.67,
+      "shares": 880338,
       "date": "2026-06-30"
     }
   ],
@@ -230,13 +230,13 @@
     "net_pct": 15.1
   },
   "extras": {
-    "beta": null,
-    "enterprise_value": 4541761536,
-    "ev_ebitda": 117.885,
-    "ev_revenue": 5.318,
-    "float_shares": 30887680,
+    "beta": 1.473,
+    "enterprise_value": 3147953152,
+    "ev_ebitda": 68.98,
+    "ev_revenue": 3.686,
+    "float_shares": 30940797,
     "short_shares": 3096052,
-    "short_pct_float": 9.48,
+    "short_pct_float": 9.42,
     "short_ratio": 6.26,
     "last_split": null,
     "last_split_date": null
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": null,
-  "inst_count": 427,
+  "inst_count": 428,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -282,21 +282,21 @@
       "date": "2026-09-02"
     },
     {
-      "name": "BLACKFORD QUENTIN S",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 124.65 per share.",
-      "value": 3348012,
-      "shares": 26859,
-      "date": "2026-08-10"
-    },
-    {
       "name": "MURPHY PATRICK MICHAEL",
       "role": "Officer",
       "kind": "sell",
       "text": "Sale at price 124.65 per share.",
       "value": 884156,
       "shares": 7093,
+      "date": "2026-08-10"
+    },
+    {
+      "name": "BLACKFORD QUENTIN S",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 124.65 per share.",
+      "value": 3348012,
+      "shares": 26859,
       "date": "2026-08-10"
     },
     {

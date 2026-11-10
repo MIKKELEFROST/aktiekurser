@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:49.769Z",
+  "updated_at": "2026-11-10T00:26:51.097Z",
   "source": "Yahoo Finance",
   "symbol": "VINP",
   "summary": "Vinci Compass Investments Ltd. operates as an asset management firm in Brazil. It operates through six segments: Global Investment Products and Solutions (IP&S), Credit, Private Equity, Equities, Real Assets, and Corporate Advisory. The Global IP&S segment provides access to a network of general partners and asset managers. This segment also offers proprietary investment solutions; multi-asset allocation strategies, as well as portfolio and management services; and liquid and alternative, separate mandates, commingled funds, brokerage, pension plans, solutions, and Vinci retirement services. The Credit segment operates public and private credit, opportunistic capital solutions, and agribusiness credit businesses. The Private Equity segment focuses on control and co-control investments, and minority investments in small-to-medium enterprises. The Equities segment delivers investment solutions; and sub-strategies to address different investor profiles and market conditions, including long only, dividends, small caps, long biased, and other specialized approaches. The Real Assets segment comprises investments focused on tangible, income-generating assets through real estate, infrastructure, and forestry. The Corporate Advisory segment provides financial and strategic advisory services, focusing on IPO advisory and mergers and acquisition transactions to entrepreneurs, corporate senior management teams, and boards of directors. Vinci Compass Investments Ltd. was formerly known as Vinci Partners Investments Ltd. and changed its name to Vinci Compass Investments Ltd. in July 2025. Vinci Compass Investments Ltd. was founded in 2009 and is headquartered in Rio De Janeiro, Brazil.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-12",
   "earnings_estimated": false,
   "earnings_call": "2026-11-12",
-  "eps_estimate": 1.09946,
+  "eps_estimate": 1.10788,
   "analysts": {
     "strong_buy": 3,
     "buy": 3,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 6
   },
-  "target_mean": 12.856645,
-  "target_high": 15.02116,
-  "target_low": 11.17569,
+  "target_mean": 12.735257,
+  "target_high": 15.013524,
+  "target_low": 10.480893,
   "target_analysts": 6,
   "statements": [
     {
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.2308,
-    "q1": -0.1265,
-    "y0": 0.2299,
-    "y1": 0.2005
+    "q0": 0.2402,
+    "q1": -0.14840001,
+    "y0": 0.28959998,
+    "y1": 0.1534
   },
   "ratings": [
+    {
+      "date": "2026-11-09",
+      "firm": "UBS",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-09-10",
       "firm": "JP Morgan",
@@ -140,13 +147,6 @@
       "from": "Buy",
       "to": "Buy",
       "action": "main"
-    },
-    {
-      "date": "2021-05-21",
-      "firm": "Itau BBA",
-      "from": null,
-      "to": "Outperform",
-      "action": "init"
     }
   ],
   "holders": [
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 3,
-    "sells": 48,
+    "sells": 44,
     "bought": 17579,
-    "sold": 410640,
-    "net_pct": -1.3
+    "sold": 388052,
+    "net_pct": -1.2
   },
   "extras": {
     "beta": 0.267,
-    "enterprise_value": 595669440,
-    "ev_ebitda": 1.836,
-    "ev_revenue": 0.564,
+    "enterprise_value": 596325952,
+    "ev_ebitda": 1.838,
+    "ev_revenue": 0.565,
     "float_shares": 22558334,
     "short_shares": 241403,
     "short_pct_float": 1.22,
@@ -273,15 +273,6 @@
   ],
   "insiders": [
     {
-      "name": "ZAREMBA BRUNO AUGUSTO SACCHI",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 11.43 per share.",
-      "value": 226485,
-      "shares": 19815,
-      "date": "2026-10-23"
-    },
-    {
       "name": "LOVISOTTO FERNANDO",
       "role": "Officer",
       "kind": "sell",
@@ -294,10 +285,10 @@
       "name": "ZAREMBA BRUNO AUGUSTO SACCHI",
       "role": "Officer",
       "kind": "sell",
-      "text": "Sale at price 10.87 - 10.88 per share.",
-      "value": 117120,
-      "shares": 10767,
-      "date": "2026-10-16"
+      "text": "Sale at price 11.43 per share.",
+      "value": 226485,
+      "shares": 19815,
+      "date": "2026-10-23"
     },
     {
       "name": "LOVISOTTO FERNANDO",
@@ -312,10 +303,10 @@
       "name": "ZAREMBA BRUNO AUGUSTO SACCHI",
       "role": "Officer",
       "kind": "sell",
-      "text": "Sale at price 10.72 - 11.47 per share.",
-      "value": 490745,
-      "shares": 43505,
-      "date": "2026-10-12"
+      "text": "Sale at price 10.87 - 10.88 per share.",
+      "value": 117120,
+      "shares": 10767,
+      "date": "2026-10-16"
     },
     {
       "name": "LOVISOTTO FERNANDO",
@@ -324,6 +315,15 @@
       "text": "Sale at price 11.34 - 11.47 per share.",
       "value": 245217,
       "shares": 21521,
+      "date": "2026-10-12"
+    },
+    {
+      "name": "ZAREMBA BRUNO AUGUSTO SACCHI",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 10.72 - 11.47 per share.",
+      "value": 490745,
+      "shares": 43505,
       "date": "2026-10-12"
     },
     {

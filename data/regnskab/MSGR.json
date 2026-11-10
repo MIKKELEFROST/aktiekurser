@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:48.739Z",
+  "updated_at": "2026-11-10T00:26:50.226Z",
   "source": "Yahoo Finance",
   "symbol": "MSGR",
   "summary": "MSG Rangers Corp. engages in the New York rangers business. It also operates Hartford Wolf Pack and the MSG Training Center. The company is based in New York, New York. MSG Rangers Corp. operates as a subsidiary of Madison Square Garden Sports Corp.",
@@ -7,24 +7,30 @@
   "website": "https://www.nhl.com",
   "employees": null,
   "ceo": "Mr. James Lawrence Dolan",
-  "next_earnings": "2026-11-06",
-  "earnings_estimated": false,
+  "next_earnings": "2027-02-04",
+  "earnings_estimated": true,
   "earnings_call": null,
-  "eps_estimate": -0.23,
+  "eps_estimate": -0.53,
   "analysts": {
     "strong_buy": 0,
-    "buy": 2,
+    "buy": 3,
     "hold": 0,
     "sell": 0,
     "strong_sell": 0,
-    "total": 2
+    "total": 3
   },
-  "target_mean": 267.5,
+  "target_mean": 266.33334,
   "target_high": 278,
   "target_low": 257,
-  "target_analysts": 2,
+  "target_analysts": 3,
   "statements": null,
-  "quarterly": [],
+  "quarterly": [
+    {
+      "q": "3Q2026",
+      "revenue": 14089000,
+      "earnings": 0
+    }
+  ],
   "growth": {
     "q0": null,
     "q1": null,
@@ -61,7 +67,15 @@
       "action": "init"
     }
   ],
-  "holders": [],
+  "holders": [
+    {
+      "name": "ProShares Trust-ProShares Ultra SmallCap600",
+      "kind": "fond",
+      "pct": 0,
+      "shares": 98,
+      "date": "2026-10-31"
+    }
+  ],
   "insider_net": {
     "period": "6m",
     "buys": 0,
@@ -72,7 +86,7 @@
   },
   "extras": {
     "beta": null,
-    "enterprise_value": null,
+    "enterprise_value": 3287625984,
     "ev_ebitda": null,
     "ev_revenue": null,
     "float_shares": null,
@@ -85,8 +99,15 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 29,
-  "eps_history": [],
+  "inst_count": 31,
+  "eps_history": [
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.23,
+      "actual": -1.2921,
+      "surprise_pct": -461.78
+    }
+  ],
   "insiders": [],
   "dividends": [],
   "splits": []

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:49.157Z",
+  "updated_at": "2026-11-10T00:26:50.581Z",
   "source": "Yahoo Finance",
   "symbol": "PWR",
   "summary": "Quanta Services, Inc. offers infrastructure solutions for the electric and gas utility, power generation, load center, manufacturing, communications, pipeline, and energy industries. The company's Electric Infrastructure Solutions segment engages in the design, procurement, construction, upgrade, repair, and maintenance of electric power transmission and distribution infrastructure and substation facilities; installation, maintenance, and upgrade of electric power infrastructure projects; installation of smart grid technologies on electric power networks; and design, installation, maintenance, and repair of commercial and industrial wirings. This segment offers aviation; emergency aerial firefighting services; emergency restoration; and other engineering and technical services; design and construction solutions to wireline and wireless communications, cable multi-system operators, technology companies, and other customers; engineering, procurement, new construction, and repair and maintenance services for renewable generation facilities; and training for electric workers, as well as training for the gas distribution and communications industries. Its Underground Utility and Infrastructure Solutions segment is involved in the transportation, distribution, storage, development, and processing of natural gas, oil, and other products, as well as owns and operates large load centers. This segment also engages in the design, engineering, procurement, construction, upgrade, and repair and maintenance services for natural gas systems; pipeline protection, integrity testing, rehabilitation, and replacement services; and catalyst replacement, high-pressure and critical-path turnaround, instrumentation and electrical, piping, fabrication, and storage tank services. The company was formerly known as Fabal Construction, Inc. and changed its name to Quanta Services, Inc. in November 1997. The company was incorporated in 1997 and is headquartered in Houston, Texas.",
@@ -14,14 +14,14 @@
   "analysts": {
     "strong_buy": 1,
     "buy": 24,
-    "hold": 4,
+    "hold": 5,
     "sell": 0,
-    "strong_sell": 1,
+    "strong_sell": 0,
     "total": 30
   },
-  "target_mean": 765.8683,
-  "target_high": 960,
-  "target_low": 410,
+  "target_mean": 770.42,
+  "target_high": 967,
+  "target_low": 420,
   "target_analysts": 29,
   "statements": [
     {
@@ -78,6 +78,13 @@
     "y1": 0.1911
   },
   "ratings": [
+    {
+      "date": "2026-11-09",
+      "firm": "Piper Sandler",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-11-02",
       "firm": "Oppenheimer",
@@ -140,13 +147,6 @@
       "from": "Market Perform",
       "to": "Outperform",
       "action": "up"
-    },
-    {
-      "date": "2026-09-09",
-      "firm": "Piper Sandler",
-      "from": null,
-      "to": "Overweight",
-      "action": "init"
     }
   ],
   "holders": [
@@ -209,9 +209,9 @@
     {
       "name": "Geode Capital Management, LLC",
       "kind": "institution",
-      "pct": 2.34,
-      "shares": 3523903,
-      "date": "2026-06-30"
+      "pct": 2.39,
+      "shares": 3602740,
+      "date": "2026-09-30"
     },
     {
       "name": "FMR, LLC",
@@ -223,17 +223,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 12,
-    "sells": 2,
-    "bought": 16159,
-    "sold": 159992,
-    "net_pct": -12.7
+    "buys": 0,
+    "sells": 0,
+    "bought": 0,
+    "sold": null,
+    "net_pct": null
   },
   "extras": {
     "beta": 1.284,
-    "enterprise_value": 81986519040,
-    "ev_ebitda": 22.505,
-    "ev_revenue": 2.199,
+    "enterprise_value": 94405328896,
+    "ev_ebitda": 25.914,
+    "ev_revenue": 2.532,
     "float_shares": 149305983,
     "short_shares": 3459110,
     "short_pct_float": 2.63,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-10-01",
   "dividend_date": null,
   "payout_ratio": 0.0398,
-  "inst_count": 2566,
+  "inst_count": 2561,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -273,15 +273,6 @@
   ],
   "insiders": [
     {
-      "name": "BENEBY DOYLE NOLAN",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 870,
-      "date": "2026-06-01"
-    },
-    {
       "name": "BAXTER WARNER L",
       "role": "Director",
       "kind": "other",
@@ -292,6 +283,24 @@
     },
     {
       "name": "WYRSCH MARTHA B.",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 559,
+      "date": "2026-06-01"
+    },
+    {
+      "name": "BENEBY DOYLE NOLAN",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 870,
+      "date": "2026-06-01"
+    },
+    {
+      "name": "LADHANI HOLLI C",
       "role": "Director",
       "kind": "other",
       "text": null,
@@ -319,15 +328,6 @@
     },
     {
       "name": "ROWE ROBERT SCOTT",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 559,
-      "date": "2026-06-01"
-    },
-    {
-      "name": "LADHANI HOLLI C",
       "role": "Director",
       "kind": "other",
       "text": null,
@@ -486,6 +486,10 @@
     },
     {
       "date": "2026-07-01",
+      "amount": 0.11
+    },
+    {
+      "date": "2026-10-01",
       "amount": 0.11
     }
   ],

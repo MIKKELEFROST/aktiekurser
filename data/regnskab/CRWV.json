@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:47.474Z",
+  "updated_at": "2026-11-10T00:26:49.333Z",
   "source": "Yahoo Finance",
   "symbol": "CRWV",
   "summary": "CoreWeave, Inc. operates as a cloud infrastructure technology company in the United States. The company offers CoreWeave Cloud platform that comprises proprietary software and cloud services that deliver the automation and efficiency needed to manage complex artificial intelligence (AI) infrastructure at scale. It also offers data and storage solutions, such as Local Object Transport Accelerator; infrastructure control solutions, including CoreWeave Kubernetes service; mission control services, including node, rack, and fleet lifecycle management; model and agent development tools comprising Weights & Biases, an AI developer platform; and runtime acceleration. In addition, the company offers graphics processing unit compute, CPU compute, networking services, managed services, and virtual and bare metal servers. Its services also include visual effects rendering, machine learning, pixel streaming, and batch processing. It has a collaboration with AdaniConneX to operate a data center in India. The company was formerly known as Atlantic Crypto Corporation and changed its name to CoreWeave, Inc. in December 2019. CoreWeave, Inc. was incorporated in 2017 and is based in Livingston, New Jersey.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-10",
   "earnings_estimated": false,
   "earnings_call": "2026-11-10",
-  "eps_estimate": -1.2082,
+  "eps_estimate": -1.20885,
   "analysts": {
     "strong_buy": 7,
     "buy": 25,
@@ -54,12 +54,26 @@
     }
   ],
   "growth": {
-    "q0": -13.680401,
-    "q1": -0.1173,
-    "y0": -1.8697,
-    "y1": 0.4857
+    "q0": -13.688299,
+    "q1": -0.113900006,
+    "y0": -1.8694999,
+    "y1": 0.491
   },
   "ratings": [
+    {
+      "date": "2026-11-09",
+      "firm": "Rosenblatt",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-09",
+      "firm": "Wells Fargo",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-11-04",
       "firm": "Citigroup",
@@ -112,20 +126,6 @@
     {
       "date": "2026-10-05",
       "firm": "Freedom Capital Markets",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-10-02",
-      "firm": "Cantor Fitzgerald",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "reit"
-    },
-    {
-      "date": "2026-10-01",
-      "firm": "Rosenblatt",
       "from": "Buy",
       "to": "Buy",
       "action": "main"
@@ -205,18 +205,18 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 102,
-    "sells": 131,
-    "bought": 8124455,
-    "sold": 25046310,
-    "net_pct": -14.1
+    "buys": 99,
+    "sells": 123,
+    "bought": 7902338,
+    "sold": 20500668,
+    "net_pct": -10.9
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 70154084352,
-    "ev_ebitda": 18.515,
-    "ev_revenue": 9.243,
-    "float_shares": 328318708,
+    "enterprise_value": 71665295360,
+    "ev_ebitda": 18.914,
+    "ev_revenue": 9.442,
+    "float_shares": 328302162,
     "short_shares": 69779354,
     "short_pct_float": 22.4,
     "short_ratio": 1.83,
@@ -226,7 +226,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": null,
-  "inst_count": 1332,
+  "inst_count": 1336,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -320,6 +320,15 @@
     {
       "name": "INTRATOR MICHAEL N",
       "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 107692,
+      "date": "2026-09-29"
+    },
+    {
+      "name": "INTRATOR MICHAEL N",
+      "role": "Chief Executive Officer",
       "kind": "sell",
       "text": "Sale at price 85.86 - 90.26 per share.",
       "value": 26661770,
@@ -333,15 +342,6 @@
       "text": null,
       "value": null,
       "shares": 107692,
-      "date": "2026-09-29"
-    },
-    {
-      "name": "INTRATOR MICHAEL N",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 85.57 - 88.95 per share.",
-      "value": 26713370,
-      "shares": 307692,
       "date": "2026-09-22"
     }
   ],

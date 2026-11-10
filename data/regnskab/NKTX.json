@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-11-06T21:46:48.839Z",
+  "updated_at": "2026-11-10T00:26:50.302Z",
   "source": "Yahoo Finance",
   "symbol": "NKTX",
   "summary": "Nkarta, Inc., a clinical-stage biopharmaceutical company, develops and commercializes natural killer cell therapies for cancer and autoimmune disease treatment. Its lead product candidate is NKX019, a chimeric antigen receptor-natural killer (CAR NK) targeting the CD19 antigen, which is in Phase 1 clinical trial for the treatment of lupus nephritis; systemic sclerosis; idiopathic inflammatory myopathy; and antineutrophil cytoplasmic antibody (ANCA)-associated vasculitis, as well as for systemic lupus erythematosus and myasthenia gravis. The company has a research collaboration agreement with CRISPR Therapeutics AG. Nkarta, Inc. was incorporated in 2015 and is based in South San Francisco, California.",
   "industry": "Biotechnology",
   "website": "https://www.nkartatx.com",
-  "employees": 108,
+  "employees": 103,
   "ceo": "Mr. Paul J. Hastings",
   "next_earnings": "2026-11-10",
   "earnings_estimated": true,
   "earnings_call": null,
-  "eps_estimate": -0.4,
+  "eps_estimate": -0.48,
   "analysts": {
     "strong_buy": 1,
     "buy": 6,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": -0.081099994,
+    "q0": -0.29729998,
     "q1": null,
-    "y0": -0.21040002,
-    "y1": -0.0273
+    "y0": -0.305,
+    "y1": 0.22649999
   },
   "ratings": [
+    {
+      "date": "2026-11-09",
+      "firm": "Needham",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "reit"
+    },
     {
       "date": "2026-08-14",
       "firm": "Stifel",
@@ -139,13 +146,6 @@
       "firm": "Mizuho",
       "from": "Outperform",
       "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2025-05-15",
-      "firm": "Needham",
-      "from": "Buy",
-      "to": "Buy",
       "action": "main"
     }
   ],
@@ -230,9 +230,9 @@
     "net_pct": null
   },
   "extras": {
-    "beta": null,
-    "enterprise_value": 28004914,
-    "ev_ebitda": -0.224,
+    "beta": 1.255,
+    "enterprise_value": 39477620,
+    "ev_ebitda": -0.321,
     "ev_revenue": null,
     "float_shares": 60641849,
     "short_shares": 3423724,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": null,
-  "inst_count": 186,
+  "inst_count": 184,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -276,6 +276,15 @@
       "date": "2026-06-18"
     },
     {
+      "name": "HASTINGS PAUL J",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 2.07 per share.",
+      "value": 53915,
+      "shares": 26046,
+      "date": "2026-01-15"
+    },
+    {
       "name": "MAHMOOD NADIR AHMEDUDDIN",
       "role": "President",
       "kind": "sell",
@@ -287,11 +296,11 @@
     {
       "name": "HASTINGS PAUL J",
       "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 2.07 per share.",
-      "value": 53915,
-      "shares": 26046,
-      "date": "2026-01-15"
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 94000,
+      "date": "2026-01-06"
     },
     {
       "name": "MAHMOOD NADIR AHMEDUDDIN",
@@ -314,20 +323,29 @@
     {
       "name": "HASTINGS PAUL J",
       "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 94000,
-      "date": "2026-01-06"
-    },
-    {
-      "name": "HASTINGS PAUL J",
-      "role": "Chief Executive Officer",
       "kind": "sell",
       "text": "Sale at price 1.79 per share.",
       "value": 3204,
       "shares": 1790,
       "date": "2025-06-18"
+    },
+    {
+      "name": "HASTINGS PAUL J",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 2.20 per share.",
+      "value": 38232,
+      "shares": 17378,
+      "date": "2025-01-15"
+    },
+    {
+      "name": "HAGER ALICIA J",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 2.20 per share.",
+      "value": 21085,
+      "shares": 9584,
+      "date": "2025-01-15"
     },
     {
       "name": "BRANDENBERGER RALPH ERIK",
@@ -336,24 +354,6 @@
       "text": "Sale at price 2.20 per share.",
       "value": 16383,
       "shares": 7447,
-      "date": "2025-01-15"
-    },
-    {
-      "name": "SHOOK DAVID M.D.",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 2.20 per share.",
-      "value": 19004,
-      "shares": 8638,
-      "date": "2025-01-15"
-    },
-    {
-      "name": "LEVIN ALYSSA",
-      "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 2.20 per share.",
-      "value": 12844,
-      "shares": 5838,
       "date": "2025-01-15"
     }
   ],

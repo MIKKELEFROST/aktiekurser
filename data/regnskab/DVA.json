@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:47.612Z",
+  "updated_at": "2026-11-10T00:26:49.453Z",
   "source": "Yahoo Finance",
   "symbol": "DVA",
   "summary": "DaVita Inc. provides kidney dialysis services for patients suffering from chronic kidney failure in the United States. The company operates kidney dialysis centers and provides related lab services in outpatient dialysis centers. It also offers outpatient, hospital inpatient, and home-based hemodialysis dialysis services; operates clinical laboratories that provide routine laboratory tests for dialysis and other physician-prescribed laboratory tests for ESRD patients; and management and administrative services to outpatient dialysis centers. In addition, the company offers integrated care and disease management services to patients in risk-based and other integrated care arrangements; clinical research programs; physician services; and comprehensive kidney care services. Further, it engages in the transplant software business. The company was formerly known as DaVita HealthCare Partners Inc. and changed its name to DaVita Inc. in September 2016. DaVita Inc. was incorporated in 1994 and is headquartered in Denver, Colorado.",
@@ -10,13 +10,13 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 4.23607,
+  "eps_estimate": 4.20178,
   "analysts": {
     "strong_buy": 0,
     "buy": 3,
-    "hold": 4,
+    "hold": 3,
     "sell": 0,
-    "strong_sell": 1,
+    "strong_sell": 2,
     "total": 8
   },
   "target_mean": 222.2857,
@@ -72,10 +72,10 @@
     }
   ],
   "growth": {
-    "q0": 0.2459,
+    "q0": 0.2358,
     "q1": 0.1506,
-    "y0": 0.36150002,
-    "y1": 0.1495
+    "y0": 0.3634,
+    "y1": 0.148
   },
   "ratings": [
     {
@@ -193,6 +193,13 @@
       "date": "2026-06-30"
     },
     {
+      "name": "Geode Capital Management, LLC",
+      "kind": "institution",
+      "pct": 2,
+      "shares": 1255164,
+      "date": "2026-09-30"
+    },
+    {
       "name": "Invesco Ltd.",
       "kind": "institution",
       "pct": 1.93,
@@ -212,28 +219,21 @@
       "pct": 1.7,
       "shares": 1068917,
       "date": "2026-09-30"
-    },
-    {
-      "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
-      "kind": "fond",
-      "pct": 1.62,
-      "shares": 1019274,
-      "date": "2026-06-30"
     }
   ],
   "insider_net": {
     "period": "6m",
     "buys": 18,
-    "sells": 8,
+    "sells": 7,
     "bought": 15046,
-    "sold": 739539,
+    "sold": 737355,
     "net_pct": -2.4
   },
   "extras": {
     "beta": 0.858,
-    "enterprise_value": 26797205504,
-    "ev_ebitda": 9.414,
-    "ev_revenue": 1.891,
+    "enterprise_value": 26213494784,
+    "ev_ebitda": 9.209,
+    "ev_revenue": 1.85,
     "float_shares": 33436382,
     "short_shares": 4905438,
     "short_pct_float": 15.31,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 876,
+  "inst_count": 877,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -282,51 +282,6 @@
       "date": "2026-10-27"
     },
     {
-      "name": "SCHECHTER ADAM H",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 278,
-      "date": "2026-08-14"
-    },
-    {
-      "name": "DESOER BARBARA J",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 278,
-      "date": "2026-08-14"
-    },
-    {
-      "name": "YALE PHYLLIS R",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 278,
-      "date": "2026-08-14"
-    },
-    {
-      "name": "ARWAY PAMELA M.",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 278,
-      "date": "2026-08-14"
-    },
-    {
-      "name": "HOLLAR JASON M",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 278,
-      "date": "2026-08-14"
-    },
-    {
       "name": "MOORE GREGORY J",
       "role": "Director",
       "kind": "other",
@@ -346,6 +301,51 @@
     },
     {
       "name": "SCHOPPERT WENDY LEE",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 278,
+      "date": "2026-08-14"
+    },
+    {
+      "name": "HOLLAR JASON M",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 278,
+      "date": "2026-08-14"
+    },
+    {
+      "name": "ARWAY PAMELA M.",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 278,
+      "date": "2026-08-14"
+    },
+    {
+      "name": "SCHECHTER ADAM H",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 278,
+      "date": "2026-08-14"
+    },
+    {
+      "name": "YALE PHYLLIS R",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 278,
+      "date": "2026-08-14"
+    },
+    {
+      "name": "DESOER BARBARA J",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

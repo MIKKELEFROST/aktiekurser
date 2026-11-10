@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:49.426Z",
+  "updated_at": "2026-11-10T00:26:50.812Z",
   "source": "Yahoo Finance",
   "symbol": "SOC",
   "summary": "Sable Offshore Corp. operates as an independent oil and gas company in the United States. The company operates through three platforms located in federal waters offshore California. It also owns and operates 16 federal leases across approximately 76,000 acres, as well as subsea pipelines that transports crude oil, natural gas, and produced water from the platforms to the onshore processing facilities. The company was formerly known as Flame Acquisition Corp. and changed its name to Sable Offshore Corp. in February 2024. Sable Offshore Corp. was incorporated in 2020 and is headquartered in Houston, Texas.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-09",
   "earnings_estimated": false,
   "earnings_call": "2026-11-09",
-  "eps_estimate": -0.285,
+  "eps_estimate": 0.28,
   "analysts": {
     "strong_buy": 1,
     "buy": 5,
@@ -45,11 +45,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 0,
-      "earnings": -110378000
-    },
-    {
       "q": "4Q2025",
       "revenue": 0,
       "earnings": -62174000
@@ -63,11 +58,16 @@
       "q": "2Q2026",
       "revenue": 137125000,
       "earnings": -64216000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 154370000,
+      "earnings": -269322000
     }
   ],
   "growth": {
-    "q0": 0.8047,
-    "q1": 1.4377999,
+    "q0": 1.4377999,
+    "q1": 1.4041001,
     "y0": 0.65790004,
     "y1": 1.8937
   },
@@ -225,9 +225,9 @@
   },
   "extras": {
     "beta": -0.095,
-    "enterprise_value": 1315136640,
-    "ev_ebitda": -3.718,
-    "ev_revenue": 9.503,
+    "enterprise_value": 1336242304,
+    "ev_ebitda": -3.777,
+    "ev_revenue": 9.655,
     "float_shares": 122316852,
     "short_shares": 54394946,
     "short_pct_float": 36.22,
@@ -238,14 +238,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 333,
+  "inst_count": 331,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.86,
-      "actual": -1.4595,
-      "surprise_pct": -69.71
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.59667,
@@ -263,6 +257,12 @@
       "estimate": 0.34333,
       "actual": -0.8879,
       "surprise_pct": -358.61
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.285,
+      "actual": -0.4156,
+      "surprise_pct": -45.82
     }
   ],
   "insiders": [
@@ -294,8 +294,8 @@
       "date": "2026-05-06"
     },
     {
-      "name": "PATRINELY GREGORY D.",
-      "role": "Chief Financial Officer",
+      "name": "FLORES JAMES CALDWELL",
+      "role": "President",
       "kind": "sell",
       "text": "Sale at price 13.33 - 13.56 per share.",
       "value": 1076266,
@@ -305,10 +305,10 @@
     {
       "name": "PATRINELY GREGORY D.",
       "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 200000,
+      "kind": "sell",
+      "text": "Sale at price 13.33 - 13.56 per share.",
+      "value": 1076266,
+      "shares": 80054,
       "date": "2026-04-29"
     },
     {
@@ -321,24 +321,6 @@
       "date": "2026-04-29"
     },
     {
-      "name": "DUENNER ANTHONY",
-      "role": "General Counsel",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 200000,
-      "date": "2026-04-29"
-    },
-    {
-      "name": "FLORES JAMES CALDWELL",
-      "role": "President",
-      "kind": "sell",
-      "text": "Sale at price 13.33 - 13.56 per share.",
-      "value": 1076266,
-      "shares": 80054,
-      "date": "2026-04-29"
-    },
-    {
       "name": "FLORES JAMES CALDWELL",
       "role": "President",
       "kind": "other",
@@ -350,6 +332,24 @@
     {
       "name": "PATRINELY GREGORY D.",
       "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 200000,
+      "date": "2026-04-29"
+    },
+    {
+      "name": "DUENNER ANTHONY",
+      "role": "General Counsel",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 200000,
+      "date": "2026-04-29"
+    },
+    {
+      "name": "FLORES JAMES CALDWELL",
+      "role": "President",
       "kind": "sell",
       "text": "Sale at price 16.69 per share.",
       "value": 4657667,

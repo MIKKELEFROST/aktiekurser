@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-11-06T21:46:49.193Z",
+  "updated_at": "2026-11-10T00:26:50.612Z",
   "source": "Yahoo Finance",
   "symbol": "RDNT",
   "summary": "RadNet, Inc., together with its subsidiaries, provides outpatient diagnostic imaging services in the United States and internationally. The company operates in two segments, Imaging Centers and Digital Health. Its services include magnetic resonance imaging, computed tomography, positron emission tomography, nuclear medicine, mammography, ultrasound, diagnostic radiology, fluoroscopy, and other related procedures, as well as multi-modality imaging services. The company also develops and sells computerized systems that distribute, display, store, and retrieve digital images; picture archiving communications systems and related services; and develops and deploys AI suites to enhance radiologist interpretations of breast, lung, and prostate images, as well as solutions for prostate cancer screening. In addition, it develops and delivers AI-powered health informatics solutions to drive quality, efficiency, and outcomes in imaging and radiology; informatics designed for outpatient radiology; and DeepHealth OS, a cloud-native operating system that helps in the operations of the radiology service. RadNet, Inc. was founded in 1981 and is headquartered in Los Angeles, California.",
   "industry": "Diagnostics & Research",
   "website": "https://www.radnet.com",
-  "employees": 11000,
+  "employees": 8844,
   "ceo": "Dr. Howard G. Berger M.D.",
-  "next_earnings": "2026-11-08",
-  "earnings_estimated": false,
+  "next_earnings": "2026-11-09",
+  "earnings_estimated": true,
   "earnings_call": "2026-11-09",
-  "eps_estimate": 0.22143,
+  "eps_estimate": 0.27143,
   "analysts": {
     "strong_buy": 2,
     "buy": 6,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 522869000,
-      "earnings": 5417000
-    },
-    {
       "q": "4Q2025",
       "revenue": 547712000,
       "earnings": -597000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 622720000,
       "earnings": 7530000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 638257000,
+      "earnings": 4153000
     }
   ],
   "growth": {
-    "q0": 0.1071,
-    "q1": 0.18010001,
+    "q0": 0.18010001,
+    "q1": 0.26790002,
     "y0": 0.31870002,
     "y1": 0.5944
   },
@@ -214,27 +214,27 @@
       "date": "2026-06-30"
     },
     {
-      "name": "Geode Capital Management, LLC",
-      "kind": "institution",
-      "pct": 2.36,
-      "shares": 1858508,
-      "date": "2026-06-30"
+      "name": "iShares Trust-iShares Russell 2000 ETF",
+      "kind": "fond",
+      "pct": 2.35,
+      "shares": 1850746,
+      "date": "2026-09-30"
     }
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 6,
+    "buys": 5,
     "sells": 3,
-    "bought": 37866,
+    "bought": 11874,
     "sold": 51516,
-    "net_pct": -0.2
+    "net_pct": -0.5
   },
   "extras": {
-    "beta": 1.402,
-    "enterprise_value": 7894897152,
-    "ev_ebitda": 28.59,
-    "ev_revenue": 3.48,
-    "float_shares": 65757067,
+    "beta": null,
+    "enterprise_value": 7725342720,
+    "ev_ebitda": 27.351,
+    "ev_revenue": 3.24,
+    "float_shares": 65816846,
     "short_shares": 9064501,
     "short_pct_float": 13.62,
     "short_ratio": 13.29,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 467,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.22667,
-      "actual": 0.2,
-      "surprise_pct": -11.77
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.20429,
@@ -269,6 +263,12 @@
       "estimate": 0.20143,
       "actual": 0.29,
       "surprise_pct": 43.97
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.22143,
+      "actual": 0.3,
+      "surprise_pct": 35.48
     }
   ],
   "insiders": [
@@ -309,24 +309,6 @@
       "date": "2026-06-15"
     },
     {
-      "name": "JACOBS LAURA PASTRE",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 2946,
-      "date": "2026-06-02"
-    },
-    {
-      "name": "SWARTZ DAVID L",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 2946,
-      "date": "2026-06-02"
-    },
-    {
       "name": "LEVITT LAWRENCE L",
       "role": "Director",
       "kind": "other",
@@ -337,6 +319,24 @@
     },
     {
       "name": "SPURLOCK GREGORY E.",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 2946,
+      "date": "2026-06-02"
+    },
+    {
+      "name": "JACOBS LAURA PASTRE",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 2946,
+      "date": "2026-06-02"
+    },
+    {
+      "name": "SWARTZ DAVID L",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -356,10 +356,10 @@
     {
       "name": "SORENSEN ALMA GREGORY",
       "role": "Officer and Director",
-      "kind": "other",
-      "text": "Stock Gift at price 0.00 per share.",
-      "value": 0,
-      "shares": 7000,
+      "kind": "sell",
+      "text": "Sale at price 61.84 - 63.59 per share.",
+      "value": 933014,
+      "shares": 15000,
       "date": "2026-03-19"
     }
   ],

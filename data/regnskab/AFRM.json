@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:46.803Z",
+  "updated_at": "2026-11-10T00:26:48.774Z",
   "source": "Yahoo Finance",
   "symbol": "AFRM",
   "summary": "Affirm Holdings, Inc. operates payment network in the United States, Canada, and internationally. Its platform offers pay-over-time solutions at checkout for both consumers and merchants. The company's commerce platform, agreements with originating banks, and capital markets partners enables consumers to pay for a purchase over time. It has active merchants covering small businesses, large enterprises, direct-to-consumer brands, brick-and-mortar stores, and companies with an omni-channel presence. The company's merchants represent a range of industries, including electronics; equipment and auto; fashion and beauty; general merchandise; home and lifestyle services; sporting goods and outdoors; and travel and ticketing. Affirm Holdings, Inc. was founded in 2012 and is headquartered in San Francisco, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2027-02-04",
   "earnings_estimated": true,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 1.09857,
+  "eps_estimate": 1.04537,
   "analysts": {
     "strong_buy": 6,
     "buy": 23,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 36
   },
-  "target_mean": 97.87176,
+  "target_mean": 96.22471,
   "target_high": 115,
   "target_low": 66,
   "target_analysts": 34,
@@ -72,12 +72,26 @@
     }
   ],
   "growth": {
-    "q0": 0.523,
-    "q1": 0.4699,
-    "y0": -0.45069999,
-    "y1": 0.3025
+    "q0": 0.4493,
+    "q1": 0.47939998,
+    "y0": -0.4364,
+    "y1": 0.2714
   },
   "ratings": [
+    {
+      "date": "2026-11-09",
+      "firm": "Cantor Fitzgerald",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-07",
+      "firm": "JP Morgan",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-11-06",
       "firm": "Stephens & Co.",
@@ -130,20 +144,6 @@
     {
       "date": "2026-10-23",
       "firm": "Truist Securities",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-10-13",
-      "firm": "Goldman Sachs",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-10-06",
-      "firm": "TD Cowen",
       "from": "Buy",
       "to": "Buy",
       "action": "main"
@@ -230,13 +230,13 @@
     "net_pct": 0.4
   },
   "extras": {
-    "beta": null,
-    "enterprise_value": 31964438528,
-    "ev_ebitda": 36.361,
-    "ev_revenue": 6.964,
-    "float_shares": 285093771,
+    "beta": 3.711,
+    "enterprise_value": 31351977984,
+    "ev_ebitda": 35.664,
+    "ev_revenue": 6.831,
+    "float_shares": 285354812,
     "short_shares": 17349593,
-    "short_pct_float": 5.89,
+    "short_pct_float": 5.86,
     "short_ratio": 4.14,
     "last_split": null,
     "last_split_date": null
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 924,
+  "inst_count": 923,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -275,18 +275,18 @@
     {
       "name": "O'HARE ROBERT WARREN",
       "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 80.02 per share.",
-      "value": 5248592,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 17.19 - 57.59 per share.",
+      "value": 1829545,
       "shares": 65591,
       "date": "2026-10-09"
     },
     {
       "name": "O'HARE ROBERT WARREN",
       "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 17.19 - 57.59 per share.",
-      "value": 1829545,
+      "kind": "sell",
+      "text": "Sale at price 80.02 per share.",
+      "value": 5248592,
       "shares": 65591,
       "date": "2026-10-09"
     },
@@ -311,19 +311,19 @@
     {
       "name": "ADKINS KATHERINE ELIZABETH",
       "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 70.13 - 75.53 per share.",
-      "value": 6086351,
-      "shares": 83328,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 22.30 - 23.35 per share.",
+      "value": 1897337,
+      "shares": 93922,
       "date": "2026-09-03"
     },
     {
       "name": "ADKINS KATHERINE ELIZABETH",
       "role": "Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 22.30 - 23.35 per share.",
-      "value": 1897337,
-      "shares": 93922,
+      "kind": "sell",
+      "text": "Sale at price 70.13 - 75.53 per share.",
+      "value": 6086351,
+      "shares": 83328,
       "date": "2026-09-03"
     },
     {
@@ -336,6 +336,15 @@
       "date": "2026-09-02"
     },
     {
+      "name": "O'HARE ROBERT WARREN",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 11987,
+      "date": "2026-09-01"
+    },
+    {
       "name": "LINFORD MICHAEL ALAN",
       "role": "President",
       "kind": "other",
@@ -345,21 +354,12 @@
       "date": "2026-09-01"
     },
     {
-      "name": "MICHALEK LIBOR",
-      "role": "President",
+      "name": "JIYANE SIPHELELE N",
+      "role": "Officer",
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 11364,
-      "date": "2026-09-01"
-    },
-    {
-      "name": "O'HARE ROBERT WARREN",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 11987,
+      "shares": 9038,
       "date": "2026-09-01"
     }
   ],

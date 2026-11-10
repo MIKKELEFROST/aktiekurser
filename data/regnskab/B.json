@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:47.044Z",
+  "updated_at": "2026-11-10T00:26:48.969Z",
   "source": "Yahoo Finance",
   "symbol": "B",
   "summary": "Barrick Mining Corporation engages in the exploration, development, production, and sale of mineral properties. It explores for gold, copper, silver, and energy materials. The company was formerly known as Barrick Gold Corporation and changed its name to Barrick Mining Corporation in May 2025. Barrick Mining Corporation was founded in 1983 and is based in Toronto, Canada.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-09",
   "earnings_estimated": false,
   "earnings_call": "2026-11-09",
-  "eps_estimate": 0.7896,
+  "eps_estimate": 0.85594,
   "analysts": {
     "strong_buy": 8,
     "buy": 9,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 4148000000,
-      "earnings": 1302000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 5997000000,
       "earnings": 2406000000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 5292000000,
       "earnings": 1217000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 5073000000,
+      "earnings": 1317000000
     }
   ],
   "growth": {
-    "q0": 0.3614,
-    "q1": -0.177,
+    "q0": -0.177,
+    "q1": 0.048499998,
     "y0": 0.4741,
     "y1": 0.17889999
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.2,
-    "enterprise_value": 74693976064,
-    "ev_ebitda": 5.788,
-    "ev_revenue": 3.616,
+    "enterprise_value": 77870530560,
+    "ev_ebitda": 6.035,
+    "ev_revenue": 3.77,
     "float_shares": 1640222577,
     "short_shares": 14502915,
     "short_pct_float": null,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-08-31",
   "dividend_date": null,
   "payout_ratio": 0.2377,
-  "inst_count": 1520,
+  "inst_count": 1521,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.61261,
-      "actual": 0.58,
-      "surprise_pct": -5.32
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.87794,
@@ -269,6 +263,12 @@
       "estimate": 0.82107,
       "actual": 0.82,
       "surprise_pct": -0.13
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.7896,
+      "actual": 0.82,
+      "surprise_pct": 3.85
     }
   ],
   "insiders": [],

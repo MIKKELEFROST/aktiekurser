@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:47.977Z",
+  "updated_at": "2026-11-10T00:26:49.750Z",
   "source": "Yahoo Finance",
   "symbol": "GOMX.ST",
   "summary": "GomSpace Group AB (publ), through its subsidiaries, manufactures and sells nanosatellites and components, and turnkey solutions for satellites in Denmark, Sweden, France, rest of Europe, the United States, Asia, and internationally. The company offers mission payloads, power and communication systems, command and data handling, attitude and orbit control system products, and structures; products from ground systems; and hands-off operations platform for satellite operations. It also provides maritime domain awareness, national security and defence, air traffic management, advanced missions, telecom, national capacity building solutions. The company serves the academic, government, and commercial markets. The company was formerly known as GS Sweden AB and changed its name to GomSpace Group AB (publ) in June 2017. GomSpace Group AB (publ) was founded in 2007 and is headquartered in Aalborg, Denmark.",
@@ -11,11 +11,18 @@
   "earnings_estimated": false,
   "earnings_call": null,
   "eps_estimate": null,
-  "analysts": null,
-  "target_mean": 12.9,
-  "target_high": 12.9,
-  "target_low": 12.9,
-  "target_analysts": 1,
+  "analysts": {
+    "strong_buy": 0,
+    "buy": 1,
+    "hold": 0,
+    "sell": 0,
+    "strong_sell": 0,
+    "total": 1
+  },
+  "target_mean": 14.5,
+  "target_high": 17,
+  "target_low": 12,
+  "target_analysts": 2,
   "statements": [
     {
       "year": "2021",
@@ -64,7 +71,12 @@
       "earnings": 0
     }
   ],
-  "growth": null,
+  "growth": {
+    "q0": null,
+    "q1": null,
+    "y0": null,
+    "y1": -0.0435
+  },
   "ratings": [],
   "holders": [],
   "insider_net": {
@@ -77,9 +89,9 @@
   },
   "extras": {
     "beta": 1.628,
-    "enterprise_value": 1998931456,
-    "ev_ebitda": 96.833,
-    "ev_revenue": 4.026,
+    "enterprise_value": 2181129984,
+    "ev_ebitda": 105.66,
+    "ev_revenue": 4.393,
     "float_shares": 171020267,
     "short_shares": null,
     "short_pct_float": null,

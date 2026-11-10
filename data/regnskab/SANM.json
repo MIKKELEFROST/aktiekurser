@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:49.297Z",
+  "updated_at": "2026-11-10T00:26:50.709Z",
   "source": "Yahoo Finance",
   "symbol": "SANM",
   "summary": "Sanmina Corporation provides integrated manufacturing solutions, components, products and repair, logistics, and after-market services in the Americas, the Asia Pacific, Europe, the Middle East, and Africa. The company operates through two businesses: Integrated Manufacturing Solutions; and Components, Products and Services. The company offers product design and engineering, including concept development, detailed design, prototyping, validation, preproduction, manufacturing design release, and product industrialization; assembly and test services; direct order fulfillment and logistics services; after-market product service and support; and supply chain management services, as well as engaging in the manufacture of components, subassemblies, and complete systems; and direct order fulfilment and logistics services. In addition, the company provides components, such as printed circuit boards, backplane fabrication and backplane assemblies, cable assemblies, fabricated metal parts, precision machined parts, and plastic injected molded parts; memory solutions; storage platforms; optical, radio frequency, and microelectronic solutions; defense and aerospace products, design, manufacturing, repair, and refurbishment services; and cloud-based manufacturing execution software. It offers its products and services primarily to original equipment manufacturers in the industrial, medical, defense and aerospace, automotive, communications networks, and cloud infrastructure industries. The company was formerly known as Sanmina-SCI Corp. Sanmina Corporation was incorporated in 1980 and is headquartered in San Jose, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-09",
   "earnings_estimated": false,
   "earnings_call": "2026-11-09",
-  "eps_estimate": 3.26922,
+  "eps_estimate": 2.9475,
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
@@ -19,17 +19,11 @@
     "strong_sell": 0,
     "total": 4
   },
-  "target_mean": 262.5,
+  "target_mean": 249,
   "target_high": 300,
   "target_low": 210,
   "target_analysts": 4,
   "statements": [
-    {
-      "year": "2022",
-      "revenue": 7890475000,
-      "net": 256121000,
-      "margin": 3.2
-    },
     {
       "year": "2023",
       "revenue": 8935048000,
@@ -47,14 +41,15 @@
       "revenue": 8128382000,
       "net": 245893000,
       "margin": 3
+    },
+    {
+      "year": "2026",
+      "revenue": 14525002000,
+      "net": 378021000,
+      "margin": 2.6
     }
   ],
   "quarterly": [
-    {
-      "q": "3Q2025",
-      "revenue": 2096392000,
-      "earnings": 48066000
-    },
     {
       "q": "4Q2025",
       "revenue": 3189693000,
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 3464016000,
       "earnings": 117129000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 3858022000,
+      "earnings": 117960000
     }
   ],
   "growth": {
-    "q0": 0.9576,
-    "q1": 0.2384,
-    "y0": 1.0044999,
-    "y1": 0.16290002
+    "q0": 0.2384,
+    "q1": -0.08229999,
+    "y0": 0.060100004,
+    "y1": 0.1533
   },
   "ratings": [
     {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.715,
-    "enterprise_value": 7759678464,
-    "ev_ebitda": 8.967,
-    "ev_revenue": 0.608,
+    "enterprise_value": 8800003072,
+    "ev_ebitda": 10.17,
+    "ev_revenue": 0.689,
     "float_shares": 51920295,
     "short_shares": 1676249,
     "short_pct_float": 5.52,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 746,
+  "inst_count": 742,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.565,
-      "actual": 1.67,
-      "surprise_pct": 6.71
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 2.145,
@@ -269,6 +263,12 @@
       "estimate": 2.79326,
       "actual": 3.31,
       "surprise_pct": 18.5
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 3.26922,
+      "actual": 4.43,
+      "surprise_pct": 35.51
     }
   ],
   "insiders": [
@@ -336,21 +336,21 @@
       "date": "2026-05-04"
     },
     {
-      "name": "REID ALAN MCWILLIAMS",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 218.17 per share.",
-      "value": 218170,
-      "shares": 1000,
-      "date": "2026-05-01"
-    },
-    {
       "name": "HEDLEY DAVID V. III",
       "role": "Director",
       "kind": "sell",
       "text": "Sale at price 219.52 per share.",
       "value": 109760,
       "shares": 500,
+      "date": "2026-05-01"
+    },
+    {
+      "name": "REID ALAN MCWILLIAMS",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 218.17 per share.",
+      "value": 218170,
+      "shares": 1000,
       "date": "2026-05-01"
     },
     {

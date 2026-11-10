@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:49.812Z",
+  "updated_at": "2026-11-10T00:26:51.129Z",
   "source": "Yahoo Finance",
   "symbol": "VST",
   "summary": "Vistra Corp., together with its subsidiaries, operates as an integrated retail electricity and power generation company in the United States. The company operates through five segments: Retail, Texas, East, West, and Asset Closure. The company retails electricity and natural gas to residential, commercial, and industrial customers across states in the United States and the District of Columbia. It is also involved in electricity generation, wholesale energy purchases and sales, commodity risk management, fuel procurement, and fuel logistics management activities. In addition, the company engages in decommissioning and reclamation of retired generation facilities, including mines, and battery removal and remediation activities. It serves approximately 5 million customers with a generation capacity of approximately 44,000 megawatts with a portfolio of natural gas, nuclear, coal, solar, and battery energy storage facilities. The company was formerly known as Vistra Energy Corp. and changed its name to Vistra Corp. in July 2020. Vistra Corp. was founded in 1882 and is based in Irving, Texas.",
@@ -14,12 +14,12 @@
   "analysts": {
     "strong_buy": 4,
     "buy": 17,
-    "hold": 1,
+    "hold": 2,
     "sell": 0,
-    "strong_sell": 1,
+    "strong_sell": 0,
     "total": 23
   },
-  "target_mean": 203.7143,
+  "target_mean": 202.66667,
   "target_high": 306,
   "target_low": 106,
   "target_analysts": 21,
@@ -74,10 +74,17 @@
   "growth": {
     "q0": 0.045700002,
     "q1": 0.3711,
-    "y0": 0.8312,
-    "y1": 0.0934
+    "y0": 0.97660005,
+    "y1": 0.0049
   },
   "ratings": [
+    {
+      "date": "2026-11-09",
+      "firm": "Scotiabank",
+      "from": "Sector Outperform",
+      "to": "Sector Outperform",
+      "action": "main"
+    },
     {
       "date": "2026-11-06",
       "firm": "Bernstein",
@@ -140,13 +147,6 @@
       "from": null,
       "to": "Outperformer",
       "action": "init"
-    },
-    {
-      "date": "2026-10-05",
-      "firm": "BMO Capital",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
     }
   ],
   "holders": [
@@ -195,9 +195,9 @@
     {
       "name": "Geode Capital Management, LLC",
       "kind": "institution",
-      "pct": 2.69,
-      "shares": 9037395,
-      "date": "2026-06-30"
+      "pct": 2.7,
+      "shares": 9076089,
+      "date": "2026-09-30"
     },
     {
       "name": "Morgan Stanley",
@@ -227,14 +227,14 @@
     "sells": 10,
     "bought": 22085,
     "sold": 163254,
-    "net_pct": -5.2
+    "net_pct": -5.1
   },
   "extras": {
     "beta": 1.375,
-    "enterprise_value": 60450856960,
-    "ev_ebitda": 9.096,
-    "ev_revenue": 3.147,
-    "float_shares": 312986532,
+    "enterprise_value": 64868200448,
+    "ev_ebitda": 8.254,
+    "ev_revenue": 3.151,
+    "float_shares": 316459890,
     "short_shares": 9946752,
     "short_pct_float": 3.43,
     "short_ratio": 1.42,
@@ -263,6 +263,12 @@
       "estimate": 1.65945,
       "actual": 0.76,
       "surprise_pct": -54.2
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 2.42935,
+      "actual": 3.23,
+      "surprise_pct": 32.96
     }
   ],
   "insiders": [
@@ -321,21 +327,21 @@
       "date": "2026-08-24"
     },
     {
-      "name": "ACOSTA ARCILIA C",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 165.04 - 170.00 per share.",
-      "value": 2512800,
-      "shares": 15000,
-      "date": "2026-06-18"
-    },
-    {
       "name": "SULT JOHN R",
       "role": "Director",
       "kind": "sell",
       "text": "Sale at price 170.00 per share.",
       "value": 1105000,
       "shares": 6500,
+      "date": "2026-06-18"
+    },
+    {
+      "name": "ACOSTA ARCILIA C",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 165.04 - 170.00 per share.",
+      "value": 2512800,
+      "shares": 15000,
       "date": "2026-06-18"
     },
     {

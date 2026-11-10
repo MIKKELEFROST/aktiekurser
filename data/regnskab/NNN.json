@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:48.857Z",
+  "updated_at": "2026-11-10T00:26:50.314Z",
   "source": "Yahoo Finance",
   "symbol": "NNN",
   "summary": "NNN REIT, Inc. is a REIT that invests in high-quality properties subjected generally to long-term, net leases with minimal ongoing capital expenditures. As of June 30, 2026, the Company owned 3,774 properties across 50 states, the District of Columbia and Puerto Rico, encompassing approximately 40.4 million square feet of gross leasable area, with a weighted average remaining lease term of 10.1 years. NNN REIT, Inc. was incorporated in August 1984 in Maryland and is based in Orlando, Florida.",
@@ -19,8 +19,8 @@
     "strong_sell": 3,
     "total": 18
   },
-  "target_mean": 46.25,
-  "target_high": 50.5,
+  "target_mean": 45.03125,
+  "target_high": 50,
   "target_low": 42,
   "target_analysts": 16,
   "statements": [
@@ -78,6 +78,13 @@
     "y1": 0.018
   },
   "ratings": [
+    {
+      "date": "2026-11-06",
+      "firm": "Citigroup",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-11-05",
       "firm": "RBC Capital",
@@ -140,13 +147,6 @@
       "from": "Neutral",
       "to": "Neutral",
       "action": "reit"
-    },
-    {
-      "date": "2026-08-06",
-      "firm": "RBC Capital",
-      "from": "Sector Perform",
-      "to": "Sector Perform",
-      "action": "main"
     }
   ],
   "holders": [
@@ -231,10 +231,10 @@
   },
   "extras": {
     "beta": 0.754,
-    "enterprise_value": 13032342528,
-    "ev_ebitda": 14.812,
-    "ev_revenue": 13.397,
-    "float_shares": 181515807,
+    "enterprise_value": 12966398976,
+    "ev_ebitda": 14.737,
+    "ev_revenue": 13.329,
+    "float_shares": 181645753,
     "short_shares": 7028368,
     "short_pct_float": 4.88,
     "short_ratio": 2.7,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-10-30",
   "dividend_date": null,
   "payout_ratio": 1.1579,
-  "inst_count": 802,
+  "inst_count": 804,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -291,12 +291,21 @@
       "date": "2026-10-30"
     },
     {
-      "name": "GULACSY ELIZABETH C.",
+      "name": "FRITSCH EDWARD J",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 41.52 per share.",
-      "value": 51028,
-      "shares": 1229,
+      "value": 53810,
+      "shares": 1296,
+      "date": "2026-10-30"
+    },
+    {
+      "name": "BEALL PAMELA K. M.",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 41.52 per share.",
+      "value": 39984,
+      "shares": 963,
       "date": "2026-10-30"
     },
     {
@@ -327,21 +336,12 @@
       "date": "2026-10-30"
     },
     {
-      "name": "FRITSCH EDWARD J",
+      "name": "GULACSY ELIZABETH C.",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 41.52 per share.",
-      "value": 53810,
-      "shares": 1296,
-      "date": "2026-10-30"
-    },
-    {
-      "name": "BEALL PAMELA K. M.",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 41.52 per share.",
-      "value": 39984,
-      "shares": 963,
+      "value": 51028,
+      "shares": 1229,
       "date": "2026-10-30"
     },
     {
@@ -354,12 +354,12 @@
       "date": "2026-07-31"
     },
     {
-      "name": "GULACSY ELIZABETH C.",
+      "name": "FRITSCH EDWARD J",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 48.14 per share.",
-      "value": 50017,
-      "shares": 1039,
+      "value": 53821,
+      "shares": 1118,
       "date": "2026-07-31"
     }
   ],

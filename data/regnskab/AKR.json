@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:46.828Z",
+  "updated_at": "2026-11-10T00:26:48.801Z",
   "source": "Yahoo Finance",
   "symbol": "AKR",
   "summary": "Acadia Realty Trust is an equity real estate investment trust focused on delivering long-term, profitable growth. Acadia owns and operates a high-quality real estate portfolio of street and open-air retail properties in the nation's most dynamic retail corridors, along with an investment management platform that targets opportunistic and value-add investments through its institutional co-investment vehicles. Acadia Realty Trust was established in 1993 and was incorporated in Maryland.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-02",
   "earnings_estimated": false,
   "earnings_call": "2026-11-02",
-  "eps_estimate": 0.1,
+  "eps_estimate": 0.06,
   "analysts": {
     "strong_buy": 0,
     "buy": 6,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 7
   },
-  "target_mean": 23.42857,
+  "target_mean": 23.14286,
   "target_high": 26,
   "target_low": 20,
   "target_analysts": 7,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.065,
-    "q1": null,
-    "y0": null,
-    "y1": null
+    "q0": -0.36099997,
+    "q1": -0.1107,
+    "y0": 0.412,
+    "y1": -0.1667
   },
   "ratings": [
+    {
+      "date": "2026-11-09",
+      "firm": "Citigroup",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-08-18",
       "firm": "Keybanc",
@@ -140,13 +147,6 @@
       "from": "Hold",
       "to": "Buy",
       "action": "up"
-    },
-    {
-      "date": "2025-04-01",
-      "firm": "Truist Securities",
-      "from": "Hold",
-      "to": "Hold",
-      "action": "main"
     }
   ],
   "holders": [
@@ -223,17 +223,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 4,
-    "sells": 1,
-    "bought": 46954,
-    "sold": 25000,
-    "net_pct": 3.4
+    "buys": 0,
+    "sells": 0,
+    "bought": 0,
+    "sold": null,
+    "net_pct": null
   },
   "extras": {
     "beta": 1.128,
-    "enterprise_value": 4873323520,
-    "ev_ebitda": 20.239,
-    "ev_revenue": 11.817,
+    "enterprise_value": 4912003584,
+    "ev_ebitda": 20.399,
+    "ev_revenue": 11.911,
     "float_shares": 137393004,
     "short_shares": 13361699,
     "short_pct_float": 22.01,
@@ -241,10 +241,10 @@
     "last_split": null,
     "last_split_date": null
   },
-  "ex_dividend": "2026-09-30",
+  "ex_dividend": "2026-12-31",
   "dividend_date": null,
   "payout_ratio": 2.9629998,
-  "inst_count": 392,
+  "inst_count": 387,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -273,11 +273,20 @@
     {
       "quarter": "2026-09-30",
       "estimate": 0.06,
-      "actual": -0.0238,
-      "surprise_pct": -139.67
+      "actual": 0.0586,
+      "surprise_pct": -2.33
     }
   ],
   "insiders": [
+    {
+      "name": "THURBER LYNN C",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 21.46 per share.",
+      "value": 231124,
+      "shares": 10770,
+      "date": "2026-05-13"
+    },
     {
       "name": "SPITZ WILLIAM T",
       "role": "Director",
@@ -294,15 +303,6 @@
       "text": "Stock Award(Grant) at price 21.46 per share.",
       "value": 120004,
       "shares": 5592,
-      "date": "2026-05-13"
-    },
-    {
-      "name": "THURBER LYNN C",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 21.46 per share.",
-      "value": 231124,
-      "shares": 10770,
       "date": "2026-05-13"
     },
     {
@@ -342,21 +342,21 @@
       "date": "2025-06-11"
     },
     {
-      "name": "SPITZ WILLIAM T",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 19.29 per share.",
-      "value": 120003,
-      "shares": 6221,
-      "date": "2025-05-08"
-    },
-    {
       "name": "THURBER LYNN C",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 19.29 per share.",
       "value": 231113,
       "shares": 11981,
+      "date": "2025-05-08"
+    },
+    {
+      "name": "SPITZ WILLIAM T",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 19.29 per share.",
+      "value": 120003,
+      "shares": 6221,
       "date": "2025-05-08"
     },
     {

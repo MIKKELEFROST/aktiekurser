@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:48.735Z",
+  "updated_at": "2026-11-10T00:26:50.222Z",
   "source": "Yahoo Finance",
   "symbol": "MSBI",
   "summary": "Midland States Bancorp, Inc. operates as a financial holding company for Midland States Bank that provides various banking products and services to individuals, businesses, municipalities, and other entities. It operates in Banking and Wealth Management segments. The company offers commercial loans; commercial real estate loans that include various property types, such as owner-occupied offices, warehouses and production facilities, office buildings, hotels, mixed-use residential and commercial facilities, retail centers, multifamily properties, assisted living facilities, and farmland; construction and land development loans, including loans to small and midsized businesses to construct owner-user properties, loans to developers of commercial real estate investment properties and residential developments, and loans to individual clients for construction of single family homes; and residential real estate loans comprising first and second mortgage loans, and home equity lines of credit. It also provides commercial equipment leasing; depository products consisting of checking, savings, money market, certificates of deposits, and sweep accounts; and trust and wealth management products and services, such as financial and estate planning, trustee and custodial services, investment management, tax and insurance planning, business planning, corporate retirement plan consulting and administration, and retail brokerage services. The company was founded in 1881 and is headquartered in Effingham, Illinois.",
@@ -186,11 +186,25 @@
       "date": "2026-06-30"
     },
     {
+      "name": "LSV Asset Management",
+      "kind": "institution",
+      "pct": 2.92,
+      "shares": 606769,
+      "date": "2026-09-30"
+    },
+    {
       "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
       "kind": "fond",
       "pct": 2.83,
       "shares": 589029,
       "date": "2026-06-30"
+    },
+    {
+      "name": "Geode Capital Management, LLC",
+      "kind": "institution",
+      "pct": 2.73,
+      "shares": 567062,
+      "date": "2026-09-30"
     },
     {
       "name": "American Century ETF Trust-Avantis U.S. Small Cap Value ETF",
@@ -205,35 +219,21 @@
       "pct": 2.71,
       "shares": 563718,
       "date": "2026-06-30"
-    },
-    {
-      "name": "Geode Capital Management, LLC",
-      "kind": "institution",
-      "pct": 2.58,
-      "shares": 537292,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "Hotchkis & Wiley Capital Management, LLC",
-      "kind": "institution",
-      "pct": 2.49,
-      "shares": 517334,
-      "date": "2026-06-30"
     }
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 17,
+    "buys": 16,
     "sells": 4,
-    "bought": 46986,
+    "bought": 37586,
     "sold": 12470,
-    "net_pct": 2.1
+    "net_pct": 1.5
   },
   "extras": {
     "beta": 0.631,
-    "enterprise_value": 1250040192,
+    "enterprise_value": 1264393728,
     "ev_ebitda": null,
-    "ev_revenue": 4.069,
+    "ev_revenue": 4.115,
     "float_shares": 19542141,
     "short_shares": 1049161,
     "short_pct_float": 5.47,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-11-13",
   "dividend_date": null,
   "payout_ratio": 0.5683,
-  "inst_count": 234,
+  "inst_count": 235,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "LUDWIG JEFFREY G",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 32.81 per share.",
+      "value": 168643,
+      "shares": 5140,
+      "date": "2026-11-02"
+    },
     {
       "name": "CASEY DANIEL EDWARD",
       "role": "Officer",
@@ -309,15 +318,6 @@
       "date": "2026-11-02"
     },
     {
-      "name": "LUDWIG JEFFREY G",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 32.81 per share.",
-      "value": 168643,
-      "shares": 5140,
-      "date": "2026-11-02"
-    },
-    {
       "name": "CASEY DANIEL EDWARD",
       "role": "Officer",
       "kind": "other",
@@ -329,18 +329,18 @@
     {
       "name": "MOONEY KYLE OWEN",
       "role": "Chief Operating Officer",
-      "kind": "sell",
-      "text": "Sale at price 33.33 per share.",
-      "value": 79992,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 28.43 per share.",
+      "value": 68232,
       "shares": 2400,
       "date": "2026-09-08"
     },
     {
       "name": "MOONEY KYLE OWEN",
       "role": "Chief Operating Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 28.43 per share.",
-      "value": 68232,
+      "kind": "sell",
+      "text": "Sale at price 33.33 per share.",
+      "value": 79992,
       "shares": 2400,
       "date": "2026-09-08"
     },
@@ -356,9 +356,9 @@
     {
       "name": "MOONEY KYLE OWEN",
       "role": "Chief Operating Officer",
-      "kind": "sell",
-      "text": "Sale at price 33.51 per share.",
-      "value": 40145,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 28.59 per share.",
+      "value": 34251,
       "shares": 1198,
       "date": "2026-08-11"
     }

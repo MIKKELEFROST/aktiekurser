@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:48.156Z",
+  "updated_at": "2026-11-10T00:26:49.887Z",
   "source": "Yahoo Finance",
   "symbol": "IBRX",
   "summary": "ImmunityBio, Inc., a biotechnology company, focuses on innovating, developing, and commercializing next-generation immunotherapies designed to activate the patient's immune system and deliver durable protection against cancer and infectious diseases. Its platforms for the development of biologic products and product candidates that include cytokine fusion proteins, DNA and vaccine vectors, and cell therapies. The company's platform has generated first-in-human therapeutic agents that are planned to be studied in clinical trials in liquid and solid tumors. Its lead biologic product candidate includes Anktiva, an FDA-approved immunotherapy in combination with bacillus calmette-guérin (BCG) for the treatment of adult patients with BCG unresponsive non-muscle invasive bladder cancer with carcinoma in situ, with or without papillary tumors; and 3M-052, a synthetic TLR7/8 agonist and 3M-052 formulations and related technology. The company has collaboration agreements with National Cancer Institute; Serum Institute of India Private Limited; and BeOne Medicines Ltd. It has license agreement with 3M Innovative Properties Company and Access to Advanced Health Institute. ImmunityBio, Inc. is based in San Diego, California.",
@@ -8,9 +8,9 @@
   "employees": 684,
   "ceo": "Mr. Richard Gerald Adcock",
   "next_earnings": "2026-11-09",
-  "earnings_estimated": true,
+  "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": -0.05,
+  "eps_estimate": -0.04333,
   "analysts": {
     "strong_buy": 1,
     "buy": 3,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 32061000,
-      "earnings": -67253000
-    },
-    {
       "q": "4Q2025",
       "revenue": 38285000,
       "earnings": -61944000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 51240000,
       "earnings": -230378000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 48841000,
+      "earnings": -184550000
     }
   ],
   "growth": {
-    "q0": 0.2857,
-    "q1": 0.2778,
+    "q0": 0.2778,
+    "q1": 0.0476,
     "y0": -1.4079,
     "y1": 0.9199
   },
@@ -207,18 +207,18 @@
       "date": "2026-06-30"
     },
     {
+      "name": "Geode Capital Management, LLC",
+      "kind": "institution",
+      "pct": 1,
+      "shares": 10606654,
+      "date": "2026-09-30"
+    },
+    {
       "name": "iShares Trust-iShares Russell 2000 ETF",
       "kind": "fond",
       "pct": 0.94,
       "shares": 9991183,
       "date": "2026-09-30"
-    },
-    {
-      "name": "Geode Capital Management, LLC",
-      "kind": "institution",
-      "pct": 0.93,
-      "shares": 9847896,
-      "date": "2026-06-30"
     }
   ],
   "insider_net": {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.174,
-    "enterprise_value": 9361186816,
-    "ev_ebitda": -39.784,
-    "ev_revenue": 56.463,
+    "enterprise_value": 10023583744,
+    "ev_ebitda": -42.6,
+    "ev_revenue": 60.459,
     "float_shares": 406690973,
     "short_shares": 122945839,
     "short_pct_float": 30.67,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": null,
-  "inst_count": 514,
+  "inst_count": 518,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.1,
-      "actual": -0.07,
-      "surprise_pct": 30
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.09667,
@@ -269,6 +263,12 @@
       "estimate": -0.08,
       "actual": -0.22,
       "surprise_pct": -175
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.05,
+      "actual": -0.0924,
+      "surprise_pct": -84.8
     }
   ],
   "insiders": [
@@ -280,6 +280,15 @@
       "value": 268760,
       "shares": 25000,
       "date": "2026-10-05"
+    },
+    {
+      "name": "COHEN CHERYL L",
+      "role": "Director",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 2.98 per share.",
+      "value": 166817,
+      "shares": 55979,
+      "date": "2026-10-02"
     },
     {
       "name": "COHEN CHERYL L",
@@ -297,7 +306,7 @@
       "text": "Conversion of Exercise of derivative security at price 2.98 per share.",
       "value": 166817,
       "shares": 55979,
-      "date": "2026-10-02"
+      "date": "2026-07-02"
     },
     {
       "name": "COHEN CHERYL L",
@@ -307,24 +316,6 @@
       "value": 1246941,
       "shares": 131210,
       "date": "2026-07-02"
-    },
-    {
-      "name": "COHEN CHERYL L",
-      "role": "Director",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 2.98 per share.",
-      "value": 166817,
-      "shares": 55979,
-      "date": "2026-07-02"
-    },
-    {
-      "name": "SELECKY CHRISTOBEL E.",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 9.02 per share.",
-      "value": 1439066,
-      "shares": 159478,
-      "date": "2026-07-01"
     },
     {
       "name": "SELECKY CHRISTOBEL E.",
@@ -339,10 +330,10 @@
       "name": "SELECKY CHRISTOBEL E.",
       "role": "Director",
       "kind": "sell",
-      "text": "Sale at price 9.00 - 9.01 per share.",
-      "value": 871216,
-      "shares": 96722,
-      "date": "2026-06-30"
+      "text": "Sale at price 9.02 per share.",
+      "value": 1439066,
+      "shares": 159478,
+      "date": "2026-07-01"
     },
     {
       "name": "SELECKY CHRISTOBEL E.",
@@ -350,6 +341,15 @@
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 2.84 - 2.99 per share.",
       "value": 284370,
+      "shares": 96722,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "SELECKY CHRISTOBEL E.",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 9.00 - 9.01 per share.",
+      "value": 871216,
       "shares": 96722,
       "date": "2026-06-30"
     },

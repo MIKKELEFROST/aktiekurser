@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:49.545Z",
+  "updated_at": "2026-11-10T00:26:50.916Z",
   "source": "Yahoo Finance",
   "symbol": "TDOC",
   "summary": "Teladoc Health, Inc. provides virtual healthcare services worldwide. It operates through Teladoc Health Integrated Care and BetterHelp segments. The Integrated Care segment offers virtual medical services, including general medical, expert medical services, specialty medical, chronic condition management, and mental health services, as well as technologies and enterprise telehealth solutions for hospitals and health systems. Its BetterHelp segment operates a mental health platform that provides online counselling and therapy services through websites, mobile applications, phones, and text-based interactions by its licensed clinicians. The company offers its products and services under the Teladoc and BetterHelp brands. It serves employers, health plans, hospitals and health systems, insurance companies, and financial services companies, as well as individual members. The company was formerly known as Teladoc, Inc. and changed its name to Teladoc Health, Inc. in August 2018. Teladoc Health, Inc. was incorporated in 2002 and is headquartered in New York, New York.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-28",
   "earnings_estimated": false,
   "earnings_call": "2026-10-28",
-  "eps_estimate": -0.13,
+  "eps_estimate": -0.095,
   "analysts": {
     "strong_buy": 1,
     "buy": 5,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 23
   },
-  "target_mean": 8.58333,
+  "target_mean": 8.80556,
   "target_high": 11.5,
   "target_low": 6,
   "target_analysts": 18,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": -0.2573,
-    "q1": 0.33,
-    "y0": -0.0361,
-    "y1": 0.0735
+    "q0": 0.081199996,
+    "q1": 0.40060002,
+    "y0": -0.08180001,
+    "y1": 0.2197
   },
   "ratings": [
+    {
+      "date": "2026-11-09",
+      "firm": "TD Cowen",
+      "from": "Hold",
+      "to": "Hold",
+      "action": "main"
+    },
     {
       "date": "2026-11-05",
       "firm": "Wells Fargo",
@@ -139,13 +146,6 @@
       "firm": "Canaccord Genuity",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-30",
-      "firm": "Evercore ISI Group",
-      "from": "In-Line",
-      "to": "In-Line",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.972,
-    "enterprise_value": 1900625536,
-    "ev_ebitda": 22.218,
-    "ev_revenue": 0.77,
+    "enterprise_value": 1822239232,
+    "ev_ebitda": 21.302,
+    "ev_revenue": 0.738,
     "float_shares": 181041317,
     "short_shares": 32070714,
     "short_pct_float": 17.68,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": null,
-  "inst_count": 471,
+  "inst_count": 466,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -318,33 +318,6 @@
       "date": "2026-09-03"
     },
     {
-      "name": "CATAPANO JOSEPH RONALD",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 6.30 per share.",
-      "value": 1726,
-      "shares": 274,
-      "date": "2026-09-02"
-    },
-    {
-      "name": "DIVITA CHARLESIII",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 6.30 per share.",
-      "value": 115478,
-      "shares": 18327,
-      "date": "2026-09-02"
-    },
-    {
-      "name": "VANDERVOORT ADAM C",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 6.30 per share.",
-      "value": 47717,
-      "shares": 7573,
-      "date": "2026-09-02"
-    },
-    {
       "name": "NUENO CARLOS PLANA",
       "role": "Officer",
       "kind": "sell",
@@ -360,6 +333,33 @@
       "text": "Sale at price 6.30 per share.",
       "value": 46356,
       "shares": 7357,
+      "date": "2026-09-02"
+    },
+    {
+      "name": "VANDERVOORT ADAM C",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 6.30 per share.",
+      "value": 47717,
+      "shares": 7573,
+      "date": "2026-09-02"
+    },
+    {
+      "name": "CATAPANO JOSEPH RONALD",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 6.30 per share.",
+      "value": 1726,
+      "shares": 274,
+      "date": "2026-09-02"
+    },
+    {
+      "name": "DIVITA CHARLESIII",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 6.30 per share.",
+      "value": 115478,
+      "shares": 18327,
       "date": "2026-09-02"
     }
   ],

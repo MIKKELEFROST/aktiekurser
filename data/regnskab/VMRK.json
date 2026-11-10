@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-11-06T21:46:49.790Z",
+  "updated_at": "2026-11-10T00:26:51.106Z",
   "source": "Yahoo Finance",
   "symbol": "VMRK",
   "summary": "Vivmark Residential focused on building, buying, and managing high-quality apartment communities across major U.S. metro areas. The company owns or held investments in more than 184,000 rental apartments across premier U.S. markets and over 11,100 apartments under construction. Vivmark Residential based in Chicago, Illinois.",
   "industry": "REIT - Residential",
   "website": "https://www.vivmarkresidential.com",
-  "employees": null,
+  "employees": 3011,
   "ceo": "Mr. Benjamin W. Schall",
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.43655,
+  "eps_estimate": 0.263,
   "analysts": {
     "strong_buy": 1,
     "buy": 9,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 22
   },
-  "target_mean": 71.62,
+  "target_mean": 71.67,
   "target_high": 80,
   "target_low": 63,
   "target_analysts": 20,
@@ -42,9 +42,16 @@
     "q0": null,
     "q1": null,
     "y0": null,
-    "y1": -0.0121
+    "y1": 0.0446
   },
   "ratings": [
+    {
+      "date": "2026-11-09",
+      "firm": "Cantor Fitzgerald",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-10-19",
       "firm": "Wells Fargo",
@@ -107,13 +114,6 @@
       "from": null,
       "to": "Buy",
       "action": "init"
-    },
-    {
-      "date": "2026-09-08",
-      "firm": "Mizuho",
-      "from": "Neutral",
-      "to": "Outperform",
-      "action": "up"
     }
   ],
   "holders": [
@@ -176,9 +176,9 @@
     {
       "name": "Geode Capital Management, LLC",
       "kind": "institution",
-      "pct": 6.01,
-      "shares": 22542725,
-      "date": "2026-06-30"
+      "pct": 5.72,
+      "shares": 21428492,
+      "date": "2026-09-30"
     },
     {
       "name": "VANGUARD INDEX FUNDS-Vanguard 500 Index Fund",
@@ -190,18 +190,18 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 0,
-    "sells": 0,
-    "bought": 0,
-    "sold": null,
-    "net_pct": null
+    "buys": 19,
+    "sells": 8,
+    "bought": 176980,
+    "sold": 58286,
+    "net_pct": 3.2
   },
   "extras": {
     "beta": 0.549,
-    "enterprise_value": null,
-    "ev_ebitda": null,
-    "ev_revenue": null,
-    "float_shares": null,
+    "enterprise_value": 69278105600,
+    "ev_ebitda": 52.21,
+    "ev_revenue": 19.766,
+    "float_shares": 771650040,
     "short_shares": 19913475,
     "short_pct_float": 3,
     "short_ratio": 3.5,
@@ -211,7 +211,7 @@
   "ex_dividend": "2026-10-05",
   "dividend_date": null,
   "payout_ratio": 0.96980006,
-  "inst_count": 1227,
+  "inst_count": 1241,
   "eps_history": [
     {
       "quarter": "2026-09-30",
@@ -294,21 +294,21 @@
       "date": "2026-08-18"
     },
     {
-      "name": "MUELLER CHARLES E. JR.",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 63.90 per share.",
-      "value": 511200,
-      "shares": 8000,
-      "date": "2026-08-18"
-    },
-    {
       "name": "HOWARD CHRISTOPHER",
       "role": "Director",
       "kind": "sell",
       "text": "Sale at price 64.00 per share.",
       "value": 543104,
       "shares": 8486,
+      "date": "2026-08-18"
+    },
+    {
+      "name": "MUELLER CHARLES E. JR.",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 63.90 per share.",
+      "value": 511200,
+      "shares": 8000,
       "date": "2026-08-18"
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:49.212Z",
+  "updated_at": "2026-11-10T00:26:50.632Z",
   "source": "Yahoo Finance",
   "symbol": "RGA",
   "summary": "Reinsurance Group of America, Incorporated provides life and health, and asset-intensive reinsurance in the United States, Latin America, Canada, Europe, the Middle East, Africa, Asia, and Australia. It offers individual and group life and health, disability, long-term care, and critical illness reinsurance; and financial solutions, such as asset-intensive reinsurance, longevity reinsurance, stable value products, pension risk transfer transactions, and capital solutions. The company also provides reinsurance for mortality, morbidity, lapse, and investment-related risks; coinsurance of payout annuities; underwritten annuities; funding agreement backed note program and other capital motivated solutions; and superannuation. Reinsurance Group of America, Incorporated was founded in 1973 and is headquartered in Chesterfield, Missouri.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-06",
-  "eps_estimate": 7.00566,
+  "eps_estimate": 7.3435,
   "analysts": {
     "strong_buy": 4,
     "buy": 3,
@@ -19,7 +19,7 @@
     "strong_sell": 1,
     "total": 10
   },
-  "target_mean": 279.77777,
+  "target_mean": 283.66666,
   "target_high": 302,
   "target_low": 236,
   "target_analysts": 9,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": -0.096,
-    "q1": 0.045900002,
-    "y0": 0.3148,
-    "y1": 0.0041
+    "q0": -0.0525,
+    "q1": 0.0428,
+    "y0": 0.3978,
+    "y1": -0.0538
   },
   "ratings": [
+    {
+      "date": "2026-11-09",
+      "firm": "Piper Sandler",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-10-21",
       "firm": "TD Cowen",
@@ -139,13 +146,6 @@
       "firm": "Barclays",
       "from": "Overweight",
       "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-22",
-      "firm": "TD Cowen",
-      "from": "Hold",
-      "to": "Hold",
       "action": "main"
     }
   ],
@@ -227,24 +227,24 @@
     "sells": 3,
     "bought": 37883,
     "sold": 16003,
-    "net_pct": 16.6
+    "net_pct": 16.8
   },
   "extras": {
-    "beta": null,
-    "enterprise_value": 17533929472,
-    "ev_ebitda": 6.706,
-    "ev_revenue": 0.642,
-    "float_shares": 65204542,
+    "beta": 0.399,
+    "enterprise_value": 17711063040,
+    "ev_ebitda": 6.774,
+    "ev_revenue": 0.648,
+    "float_shares": 64692786,
     "short_shares": 1040653,
-    "short_pct_float": 1.8,
+    "short_pct_float": 1.81,
     "short_ratio": 2.41,
     "last_split": null,
     "last_split_date": null
   },
-  "ex_dividend": "2026-08-18",
+  "ex_dividend": "2026-11-17",
   "dividend_date": null,
-  "payout_ratio": 0.16379999,
-  "inst_count": 863,
+  "payout_ratio": 0.146,
+  "inst_count": 859,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -336,12 +336,12 @@
       "date": "2026-05-20"
     },
     {
-      "name": "HAYDEN JOHN W",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 214.95 per share.",
-      "value": 88989,
-      "shares": 414,
+      "name": "BABEJ PETER",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 214.13 per share.",
+      "value": 131262,
+      "shares": 613,
       "date": "2026-05-20"
     },
     {
@@ -354,12 +354,12 @@
       "date": "2026-05-20"
     },
     {
-      "name": "BABEJ PETER",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 214.13 per share.",
-      "value": 131262,
-      "shares": 613,
+      "name": "HAYDEN JOHN W",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 214.95 per share.",
+      "value": 88989,
+      "shares": 414,
       "date": "2026-05-20"
     }
   ],

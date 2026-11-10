@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:48.300Z",
+  "updated_at": "2026-11-10T00:26:50.002Z",
   "source": "Yahoo Finance",
   "symbol": "KBDC",
   "summary": "Kayne Anderson BDC, Inc. is business development company and an externally managed, closed-end, non-diversified management investment company that intends to elect to be regulated as a BDC under the 1940 Act. The fund seeks to make investments in middle-market companies. It also makes debt investments in middle-market companies and investing primarily in first lien senior secured, unitranche, and split-lien loans to privately held middle-market companies. The fund considers between 80% and 90% of its portfolio (including investments purchased with proceeds from borrowings) will be invested in first lien senior secured, unitranche and split-lien term loans. The remaining 10% to 20% of its portfolio will be invested in higher-yielding investments, including, but not limited to, second lien loans, last-out or subordinated loans, non-investment grade broadly syndicated leveraged loans, high-yield bonds, structured products (including CLO liabilities), real estate related debt securities, equity securities purchased in conjunction with debt investments and other opportunistic investments.",
@@ -10,7 +10,7 @@
   "next_earnings": null,
   "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": 0.38989,
+  "eps_estimate": 0.4,
   "analysts": {
     "strong_buy": 2,
     "buy": 1,
@@ -66,12 +66,33 @@
     }
   ],
   "growth": {
-    "q0": -0.113900006,
-    "q1": -0.0853,
-    "y0": -0.025799999,
-    "y1": -0.0232
+    "q0": -0.090900004,
+    "q1": -0.0775,
+    "y0": -0.0248,
+    "y1": -0.025899999
   },
   "ratings": [
+    {
+      "date": "2026-11-09",
+      "firm": "UBS",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-09",
+      "firm": "Keefe, Bruyette & Woods",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-09",
+      "firm": "Wells Fargo",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
     {
       "date": "2026-09-01",
       "firm": "UBS",
@@ -120,57 +141,43 @@
       "from": "Overweight",
       "to": "Overweight",
       "action": "main"
-    },
-    {
-      "date": "2026-03-04",
-      "firm": "Keefe, Bruyette & Woods",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2025-11-19",
-      "firm": "RBC Capital",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2025-11-13",
-      "firm": "Keefe, Bruyette & Woods",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
     }
   ],
   "holders": [
     {
       "name": "Koch, Inc.                          ",
       "kind": "institution",
-      "pct": 15.88,
+      "pct": 15.93,
       "shares": 10485004,
       "date": "2026-06-30"
     },
     {
       "name": "STATE OF MICHIGAN RETIREMENT SYSTEM",
       "kind": "institution",
-      "pct": 9.94,
+      "pct": 9.98,
       "shares": 6566762,
       "date": "2026-09-30"
     },
     {
       "name": "Hf Capital, LLC",
       "kind": "institution",
-      "pct": 3.36,
+      "pct": 3.37,
       "shares": 2216905,
       "date": "2026-06-30"
     },
     {
       "name": "Pathstone Holdings, LLC",
       "kind": "institution",
-      "pct": 1.61,
+      "pct": 1.62,
       "shares": 1063041,
       "date": "2026-06-30"
+    },
+    {
+      "name": "Russell Investments Group, Ltd.",
+      "kind": "institution",
+      "pct": 1.25,
+      "shares": 819478,
+      "date": "2026-09-30"
     },
     {
       "name": "Putnam ETF Trust-Putnam BDC Income ETF",
@@ -180,13 +187,6 @@
       "date": "2026-07-31"
     },
     {
-      "name": "Russell Investments Group, Ltd.",
-      "kind": "institution",
-      "pct": 1.21,
-      "shares": 796324,
-      "date": "2026-06-30"
-    },
-    {
       "name": "Franklin Resources, Inc.",
       "kind": "institution",
       "pct": 1.18,
@@ -194,24 +194,24 @@
       "date": "2026-06-30"
     },
     {
+      "name": "Merit Financial Group, LLC",
+      "kind": "institution",
+      "pct": 1.18,
+      "shares": 774288,
+      "date": "2026-09-30"
+    },
+    {
       "name": "UBS Group AG",
       "kind": "institution",
-      "pct": 1.13,
+      "pct": 1.14,
       "shares": 747232,
       "date": "2026-06-30"
     },
     {
       "name": "Van Eck Associates Corporation",
       "kind": "institution",
-      "pct": 1.01,
+      "pct": 1.02,
       "shares": 669889,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "Morgan Stanley",
-      "kind": "institution",
-      "pct": 1,
-      "shares": 662123,
       "date": "2026-06-30"
     }
   ],
@@ -235,10 +235,10 @@
     "last_split": null,
     "last_split_date": null
   },
-  "ex_dividend": "2026-09-30",
+  "ex_dividend": "2026-12-31",
   "dividend_date": null,
-  "payout_ratio": 1.4678999,
-  "inst_count": 110,
+  "payout_ratio": 1.9047999,
+  "inst_count": 112,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -321,6 +321,15 @@
       "date": "2025-09-29"
     },
     {
+      "name": "RABIL ALBERT",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 15.84 per share.",
+      "value": 681437,
+      "shares": 43020,
+      "date": "2025-05-28"
+    },
+    {
       "name": "ROBO JAMES L",
       "role": "Director",
       "kind": "buy",
@@ -336,15 +345,6 @@
       "text": "Purchase at price 15.84 per share.",
       "value": 2608943,
       "shares": 164706,
-      "date": "2025-05-28"
-    },
-    {
-      "name": "RABIL ALBERT",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 15.84 per share.",
-      "value": 681437,
-      "shares": 43020,
       "date": "2025-05-28"
     },
     {

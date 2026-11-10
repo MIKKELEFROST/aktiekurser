@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:47.875Z",
+  "updated_at": "2026-11-10T00:26:49.664Z",
   "source": "Yahoo Finance",
   "symbol": "FRT",
   "summary": "Federal Realty Investment Trust is a recognized leader in the ownership, operation and redevelopment of high-quality retail-based properties located primarily in major coastal markets and select underserved regions with strong economic and demographic fundamentals. Federal Realty's mission is to deliver long-term, sustainable growth through investing in communities where retail demand exceeds supply. This includes a portfolio of open-air shopping centers and mixed-use destinationssuch as Santana Row, Pike & Rose, and Assembly Row, which together reflect the company's ability to create distinctive, high-performing environments that serve as vibrant destinations for their communities. Federal Realty's 103 properties include approximately 3,700 tenants in 28.8 million commercial square feet, and approximately 2,700 residential units. Federal Realty has increased its quarterly dividends to its shareholders for 59 consecutive years, the longest record in the REIT industry. Federal Realty Investment Trust is based in North Bethesda, Maryland. Federal Realty Investment Trust was incorporated in 1962 in Maryland.",
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 19
   },
-  "target_mean": 126.94737,
+  "target_mean": 126.47368,
   "target_high": 145,
   "target_low": 115,
   "target_analysts": 19,
@@ -75,9 +75,16 @@
     "q0": -0.5196,
     "q1": -0.5718,
     "y0": -0.1084,
-    "y1": -0.22620001
+    "y1": -0.2361
   },
   "ratings": [
+    {
+      "date": "2026-11-09",
+      "firm": "Citigroup",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-11-02",
       "firm": "Piper Sandler",
@@ -140,13 +147,6 @@
       "from": "Sector Outperform",
       "to": "Sector Outperform",
       "action": "main"
-    },
-    {
-      "date": "2026-09-04",
-      "firm": "JP Morgan",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
     }
   ],
   "holders": [
@@ -207,17 +207,17 @@
       "date": "2026-06-30"
     },
     {
+      "name": "Geode Capital Management, LLC",
+      "kind": "institution",
+      "pct": 3.07,
+      "shares": 2640733,
+      "date": "2026-09-30"
+    },
+    {
       "name": "Invesco Ltd.",
       "kind": "institution",
       "pct": 2.95,
       "shares": 2537702,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "AQR Capital Management, LLC",
-      "kind": "institution",
-      "pct": 2.94,
-      "shares": 2529007,
       "date": "2026-06-30"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.952,
-    "enterprise_value": 15002680320,
-    "ev_ebitda": 17.659,
-    "ev_revenue": 11.093,
+    "enterprise_value": 14945905664,
+    "ev_ebitda": 17.592,
+    "ev_revenue": 11.051,
     "float_shares": 79267146,
     "short_shares": 18261,
     "short_pct_float": 0.03,
@@ -244,7 +244,7 @@
   "ex_dividend": "2027-01-04",
   "dividend_date": null,
   "payout_ratio": 0.91,
-  "inst_count": 867,
+  "inst_count": 870,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -300,6 +300,15 @@
       "date": "2026-06-03"
     },
     {
+      "name": "BECKER DAWN M",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 11712,
+      "date": "2026-02-11"
+    },
+    {
       "name": "WOOD DONALD C.",
       "role": "Chief Executive Officer",
       "kind": "other",
@@ -318,13 +327,13 @@
       "date": "2026-02-11"
     },
     {
-      "name": "BECKER DAWN M",
-      "role": "Officer",
+      "name": "LAMB-HALE NICOLE",
+      "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 11712,
-      "date": "2026-02-11"
+      "shares": 1339,
+      "date": "2026-01-02"
     },
     {
       "name": "FAEDER DAVID W",
@@ -336,25 +345,16 @@
       "date": "2026-01-02"
     },
     {
+      "name": "STEINEL GAIL PATRICIA",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 1339,
+      "date": "2026-01-02"
+    },
+    {
       "name": "NADER ANTHONY P III",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 1339,
-      "date": "2026-01-02"
-    },
-    {
-      "name": "MCEACHIN THOMAS A",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 1339,
-      "date": "2026-01-02"
-    },
-    {
-      "name": "HOLLAND ELIZABETH I",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -364,10 +364,6 @@
     }
   ],
   "dividends": [
-    {
-      "date": "2016-09-20",
-      "amount": 0.98
-    },
     {
       "date": "2016-12-29",
       "amount": 0.98
@@ -523,6 +519,10 @@
     {
       "date": "2026-07-01",
       "amount": 1.13
+    },
+    {
+      "date": "2026-10-01",
+      "amount": 1.16
     }
   ],
   "splits": [

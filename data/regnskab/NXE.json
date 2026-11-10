@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:48.935Z",
+  "updated_at": "2026-11-10T00:26:50.375Z",
   "source": "Yahoo Finance",
   "symbol": "NXE",
   "summary": "NexGen Energy Ltd., an exploration and development stage company, engages in the acquisition, exploration, evaluation, and development of uranium properties in Canada. The company holds a 100% interest in the Rook I project that consists of 32 contiguous mineral claims totaling an area of approximately 35,065 hectares located in the southwestern Athabasca Basin of Saskatchewan. NexGen Energy Ltd. was founded in 2011 and is headquartered in Vancouver, Canada.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-09",
   "earnings_estimated": true,
   "earnings_call": null,
-  "eps_estimate": -0.041,
+  "eps_estimate": -0.04,
   "analysts": {
     "strong_buy": 9,
     "buy": 7,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 16
   },
-  "target_mean": 16.456789,
-  "target_high": 19.031237,
-  "target_low": 13.88234,
+  "target_mean": 16.45807,
+  "target_high": 19.032719,
+  "target_low": 13.883422,
   "target_analysts": 2,
   "statements": [
     {
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "4Q2024",
-      "revenue": 0,
-      "earnings": 0
-    },
-    {
       "q": "1Q2025",
       "revenue": 0,
       "earnings": 0
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 0,
       "earnings": 74545000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 0,
+      "earnings": -22265000
     }
   ],
   "growth": {
-    "q0": 0.3376,
-    "q1": 0.35169998,
+    "q0": 0.35169998,
+    "q1": -0.3713,
     "y0": 0.19389999,
     "y1": 0.0533
   },
@@ -168,8 +168,8 @@
   },
   "extras": {
     "beta": 1.659,
-    "enterprise_value": 4965966336,
-    "ev_ebitda": -45.771,
+    "enterprise_value": 5180528128,
+    "ev_ebitda": -47.749,
     "ev_revenue": null,
     "float_shares": 627070716,
     "short_shares": 45755157,
@@ -183,12 +183,6 @@
   "payout_ratio": 0,
   "inst_count": 398,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.04,
-      "actual": -0.0619,
-      "surprise_pct": -54.75
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.0425,
@@ -206,6 +200,12 @@
       "estimate": -0.04667,
       "actual": -0.041,
       "surprise_pct": 12.15
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.041,
+      "actual": -0.068,
+      "surprise_pct": -65.85
     }
   ],
   "insiders": [
@@ -219,21 +219,21 @@
       "date": "2026-07-03"
     },
     {
-      "name": "Gilman (Warren Philip)",
-      "role": "Director of Issuer",
-      "kind": "other",
-      "text": "Exercise of options at price 4.19 per share.",
-      "value": 1256100,
-      "shares": 300000,
-      "date": "2026-06-09"
-    },
-    {
       "name": "Wall (Bradley John)",
       "role": "Director of Issuer",
       "kind": "other",
       "text": "Acquisition in the public market at price 9.86 per share.",
       "value": 29577,
       "shares": 3000,
+      "date": "2026-06-09"
+    },
+    {
+      "name": "Gilman (Warren Philip)",
+      "role": "Director of Issuer",
+      "kind": "other",
+      "text": "Exercise of options at price 4.19 per share.",
+      "value": 1256100,
+      "shares": 300000,
       "date": "2026-06-09"
     },
     {
@@ -264,6 +264,15 @@
       "date": "2026-05-29"
     },
     {
+      "name": "Veenman (Sybil Elsa)",
+      "role": "Director of Issuer",
+      "kind": "other",
+      "text": "Disposition in the public market at price 11.75 per share.",
+      "value": 1892386,
+      "shares": 161109,
+      "date": "2026-05-28"
+    },
+    {
       "name": "Curyer (Leigh Robert)",
       "role": "Director of Issuer",
       "kind": "other",
@@ -288,15 +297,6 @@
       "text": "Disposition in the public market at price 11.75 per share.",
       "value": 3171420,
       "shares": 270000,
-      "date": "2026-05-28"
-    },
-    {
-      "name": "Veenman (Sybil Elsa)",
-      "role": "Director of Issuer",
-      "kind": "other",
-      "text": "Disposition in the public market at price 11.75 per share.",
-      "value": 1892386,
-      "shares": 161109,
       "date": "2026-05-28"
     }
   ],

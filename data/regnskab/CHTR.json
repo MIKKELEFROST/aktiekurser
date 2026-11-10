@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:47.356Z",
+  "updated_at": "2026-11-10T00:26:49.236Z",
   "source": "Yahoo Finance",
   "symbol": "CHTR",
   "summary": "Charter Communications, Inc. operates as a broadband connectivity company in the United States. The company offers subscription-based internet, mobile, video, and voice services; broadband connectivity services, including fixed internet, WiFi, and mobile; Spectrum internet products; advanced WiFi services; and in-home WiFi, which provides customers with high performance wireless routers and managed WiFi services to enhance their wireless internet experience. It also offers wireline voice communications services using voice over internet protocol technology; Call Guard, an advanced caller ID and robocall blocking solution; video programming and video services, including access to an interactive programming guide with parental controls, video on demand and pay-per-view services; and broadband communications solutions, such as internet access, data networking, fiber connectivity, video entertainment, and business telephone services. In addition, the company provides advertising services on cable television networks, various streaming services, and advertising platforms for local, regional and national businesses. Further, it offers production and technical services for regional sports networks; owns and manages local news channels, including Spectrum News NY1® and Spectrum News SoCal; and delivers broadband connectivity solutions to apartments, single-family gated communities, off-campus student housing, senior residences, and RV parks. The company was founded in 1993 and is headquartered in Stamford, Connecticut.",
@@ -7,10 +7,10 @@
   "website": "https://corporate.charter.com",
   "employees": 91900,
   "ceo": "Mr. Christopher L. Winfrey",
-  "next_earnings": "2026-11-06",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-29",
+  "earnings_estimated": true,
   "earnings_call": "2026-11-06",
-  "eps_estimate": 13.77,
+  "eps_estimate": 11.20333,
   "analysts": {
     "strong_buy": 0,
     "buy": 5,
@@ -19,7 +19,7 @@
     "strong_sell": 2,
     "total": 21
   },
-  "target_mean": 170.94444,
+  "target_mean": 169.88889,
   "target_high": 380,
   "target_low": 68,
   "target_analysts": 18,
@@ -72,12 +72,33 @@
     }
   ],
   "growth": {
-    "q0": 0.33169997,
-    "q1": 0.1745,
-    "y0": 0.1462,
-    "y1": 0.2175
+    "q0": 0.083500005,
+    "q1": 0.122700006,
+    "y0": 0.2811,
+    "y1": -0.076
   },
   "ratings": [
+    {
+      "date": "2026-11-09",
+      "firm": "TD Cowen",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-09",
+      "firm": "Wells Fargo",
+      "from": "Underweight",
+      "to": "Underweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-09",
+      "firm": "StoneX",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-11-03",
       "firm": "Citigroup",
@@ -125,27 +146,6 @@
       "firm": "TD Cowen",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-27",
-      "firm": "RBC Capital",
-      "from": "Sector Perform",
-      "to": "Sector Perform",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-27",
-      "firm": "Wells Fargo",
-      "from": "Underweight",
-      "to": "Underweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-27",
-      "firm": "Barclays",
-      "from": "Underweight",
-      "to": "Underweight",
       "action": "main"
     }
   ],
@@ -227,14 +227,14 @@
     "sells": 1,
     "bought": 15242,
     "sold": 87833,
-    "net_pct": -1.9
+    "net_pct": -2
   },
   "extras": {
     "beta": 0.731,
-    "enterprise_value": 116162265088,
-    "ev_ebitda": 5.325,
-    "ev_revenue": 2.135,
-    "float_shares": 115226829,
+    "enterprise_value": 142063845376,
+    "ev_ebitda": 6.388,
+    "ev_revenue": 2.553,
+    "float_shares": 110567357,
     "short_shares": 17430799,
     "short_pct_float": 43.85,
     "short_ratio": 5.47,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 1149,
+  "inst_count": 1152,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -266,9 +266,9 @@
     },
     {
       "quarter": "2026-09-30",
-      "estimate": 8.93302,
+      "estimate": 8.5003,
       "actual": -20.5,
-      "surprise_pct": -329.49
+      "surprise_pct": -341.17
     }
   ],
   "insiders": [
@@ -309,6 +309,15 @@
       "date": "2026-05-15"
     },
     {
+      "name": "NAIR BALAN",
+      "role": "Director",
+      "kind": "buy",
+      "text": "Purchase at price 175.46 per share.",
+      "value": 175460,
+      "shares": 1000,
+      "date": "2026-04-28"
+    },
+    {
       "name": "WINFREY CHRISTOPHER L",
       "role": "Chief Executive Officer",
       "kind": "buy",
@@ -327,34 +336,25 @@
       "date": "2026-04-28"
     },
     {
-      "name": "NAIR BALAN",
+      "name": "MARKLEY JOHN D JR",
       "role": "Director",
-      "kind": "buy",
-      "text": "Purchase at price 175.46 per share.",
-      "value": 175460,
-      "shares": 1000,
-      "date": "2026-04-28"
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 918,
+      "date": "2026-04-21"
+    },
+    {
+      "name": "DAVIS WADE",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 918,
+      "date": "2026-04-21"
     },
     {
       "name": "NEWHOUSE MICHAEL A",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 918,
-      "date": "2026-04-21"
-    },
-    {
-      "name": "PATTERSON MARTIN EDWARD",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 918,
-      "date": "2026-04-21"
-    },
-    {
-      "name": "SLASKI CAROLYN J.",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

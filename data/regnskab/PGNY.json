@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:49.052Z",
+  "updated_at": "2026-11-10T00:26:50.501Z",
   "source": "Yahoo Finance",
   "symbol": "PGNY",
   "summary": "Progyny, Inc., a benefits management company, provides fertility, family building, and women's health benefits solutions in the United States. It offers fertility benefits solutions, such as differentiated benefits plan design that includes smart cycle treatment bundle; personalized concierge-style member support services; and a selective network of fertility specialists. The company also offers Progyny Rx, an integrated pharmacy benefits solution that provides access to the medications needed during their treatment and offers care management services, as well as pregnancy and postpartum, menopause and midlife, benefit and leave navigation, and parent and child wellbeing solutions. In addition, it provides assistance service program where various services can be offered through a reimbursement program, including adoption, surrogacy, doula, and travel reimbursement when travel is required to receive medical services. The company was formerly known as Auxogyn, Inc. and changed its name to Progyny, Inc. in 2015. Progyny, Inc. was incorporated in 2008 and is headquartered in New York, New York.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 0.52535,
+  "eps_estimate": 0.54303,
   "analysts": {
     "strong_buy": 1,
     "buy": 9,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 12
   },
-  "target_mean": 34.41667,
+  "target_mean": 36.66667,
   "target_high": 40,
   "target_low": 30,
   "target_analysts": 12,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.0945,
-    "q1": 0.106400006,
-    "y0": 0.1018,
-    "y1": 0.1108
+    "q0": 0.1313,
+    "q1": 0.132,
+    "y0": 0.1168,
+    "y1": 0.1289
   },
   "ratings": [
+    {
+      "date": "2026-11-09",
+      "firm": "JP Morgan",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-11-05",
       "firm": "Leerink Partners",
@@ -140,13 +147,6 @@
       "from": "Buy",
       "to": "Buy",
       "action": "main"
-    },
-    {
-      "date": "2026-08-12",
-      "firm": "Barclays",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
-      "action": "main"
     }
   ],
   "holders": [
@@ -200,6 +200,13 @@
       "date": "2026-06-30"
     },
     {
+      "name": "Geode Capital Management, LLC",
+      "kind": "institution",
+      "pct": 3.26,
+      "shares": 2500603,
+      "date": "2026-09-30"
+    },
+    {
       "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
       "kind": "fond",
       "pct": 2.92,
@@ -212,13 +219,6 @@
       "pct": 2.64,
       "shares": 2028905,
       "date": "2026-08-31"
-    },
-    {
-      "name": "Geode Capital Management, LLC",
-      "kind": "institution",
-      "pct": 2.57,
-      "shares": 1969208,
-      "date": "2026-06-30"
     }
   ],
   "insider_net": {
@@ -227,16 +227,16 @@
     "sells": 12,
     "bought": 108676,
     "sold": 56961,
-    "net_pct": 3.5
+    "net_pct": 3.6
   },
   "extras": {
     "beta": 0.947,
-    "enterprise_value": 2394372864,
-    "ev_ebitda": 17.089,
-    "ev_revenue": 1.789,
-    "float_shares": 68394775,
+    "enterprise_value": 2477895680,
+    "ev_ebitda": 17.685,
+    "ev_revenue": 1.851,
+    "float_shares": 67079465,
     "short_shares": 4849079,
-    "short_pct_float": 9.39,
+    "short_pct_float": 9.27,
     "short_ratio": 4.06,
     "last_split": null,
     "last_split_date": null
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 438,
+  "inst_count": 440,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -293,19 +293,19 @@
     {
       "name": "GORDON KEVIN K",
       "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 27.94 per share.",
-      "value": 321358,
-      "shares": 11500,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 13.00 per share.",
+      "value": 286000,
+      "shares": 22000,
       "date": "2026-09-10"
     },
     {
       "name": "GORDON KEVIN K",
       "role": "Director",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 13.00 per share.",
-      "value": 286000,
-      "shares": 22000,
+      "kind": "sell",
+      "text": "Sale at price 27.94 per share.",
+      "value": 321358,
+      "shares": 11500,
       "date": "2026-09-10"
     },
     {
@@ -336,6 +336,15 @@
       "date": "2026-06-04"
     },
     {
+      "name": "CLAPP GEOFFREY",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 20.91 per share.",
+      "value": 269927,
+      "shares": 12909,
+      "date": "2026-06-02"
+    },
+    {
       "name": "LIVINGSTON MARK S",
       "role": "Chief Financial Officer",
       "kind": "sell",
@@ -351,15 +360,6 @@
       "text": "Sale at price 25.58 per share.",
       "value": 39137,
       "shares": 1530,
-      "date": "2026-06-02"
-    },
-    {
-      "name": "CLAPP GEOFFREY",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 20.91 per share.",
-      "value": 269927,
-      "shares": 12909,
       "date": "2026-06-02"
     }
   ],

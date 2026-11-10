@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:48.893Z",
+  "updated_at": "2026-11-10T00:26:50.342Z",
   "source": "Yahoo Finance",
   "symbol": "NRXS",
   "summary": "NeurAxis, Inc., a medical technology company, focuses on developing neuromodulation therapies to address chronic and debilitating conditions in children and adults in the United States. It offers IB-Stim, a percutaneous electrical nerve field stimulation system intended to be used in patients 8 years of age with functional abdominal pain associated with irritable bowel syndrome (IBS), functional dyspepsia (FD) and associated FD nausea symptoms. The company also offers rectal expulsion device, a screening tool that helps to detects evacuation disorders. It sells its products to healthcare companies, such as hospitals and clinics. The company was formerly known as Innovative Health Solutions, Inc. and changed its name to NeurAxis, Inc. in March 2022. NeurAxis, Inc. was founded in 2011 and is headquartered in Carmel, Indiana.",
@@ -10,7 +10,7 @@
   "next_earnings": null,
   "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": -0.21,
+  "eps_estimate": -0.18,
   "analysts": {
     "strong_buy": 0,
     "buy": 2,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 894090,
-      "earnings": -1897880
-    },
-    {
       "q": "3Q2025",
       "revenue": 811410,
       "earnings": -2321500
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 1928700,
       "earnings": -2277250
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 2027900,
+      "earnings": -6739050
     }
   ],
   "growth": {
-    "q0": 0.125,
-    "q1": -0.8182,
+    "q0": -0.8182,
+    "q1": null,
     "y0": 0.1354,
     "y1": 0.6447
   },
@@ -125,9 +125,9 @@
     {
       "name": "Money Concepts Capital Corporation",
       "kind": "institution",
-      "pct": 1.82,
-      "shares": 228029,
-      "date": "2026-06-30"
+      "pct": 1.88,
+      "shares": 235674,
+      "date": "2026-09-30"
     },
     {
       "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
@@ -165,11 +165,11 @@
       "date": "2026-06-30"
     },
     {
-      "name": "Geode Capital Management, LLC",
+      "name": "Parsons Capital Management Inc/RI",
       "kind": "institution",
-      "pct": 0.77,
-      "shares": 96361,
-      "date": "2026-06-30"
+      "pct": 0.72,
+      "shares": 90807,
+      "date": "2026-09-30"
     }
   ],
   "insider_net": {
@@ -182,9 +182,9 @@
   },
   "extras": {
     "beta": 1.382,
-    "enterprise_value": 68688872,
-    "ev_ebitda": -9.027,
-    "ev_revenue": 12.921,
+    "enterprise_value": 70321384,
+    "ev_ebitda": -9.242,
+    "ev_revenue": 13.228,
     "float_shares": 8332579,
     "short_shares": 412837,
     "short_pct_float": 4.2,
@@ -198,12 +198,6 @@
   "inst_count": 41,
   "eps_history": [
     {
-      "quarter": "2025-09-30",
-      "estimate": -0.2,
-      "actual": -0.24,
-      "surprise_pct": -20
-    },
-    {
       "quarter": "2025-12-31",
       "estimate": -0.215,
       "actual": -0.099,
@@ -214,6 +208,12 @@
       "estimate": -0.32,
       "actual": -0.19,
       "surprise_pct": 40.63
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.21,
+      "actual": -0.52,
+      "surprise_pct": -147.62
     }
   ],
   "insiders": [
@@ -248,27 +248,9 @@
       "name": "CARRICO THOMAS JOESEPH",
       "role": "Officer",
       "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 193678,
-      "date": "2026-08-24"
-    },
-    {
-      "name": "CARRICO THOMAS JOESEPH",
-      "role": "Officer",
-      "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 6.94 per share.",
       "value": 2125278,
       "shares": 306236,
-      "date": "2026-08-24"
-    },
-    {
-      "name": "CARRICO BRIAN ALLEN",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 199188,
       "date": "2026-08-24"
     },
     {
@@ -284,18 +266,36 @@
       "name": "MIRANDA ADRIAN",
       "role": "Officer",
       "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 6.94 per share.",
+      "value": 2340196,
+      "shares": 337204,
+      "date": "2026-08-24"
+    },
+    {
+      "name": "CARRICO THOMAS JOESEPH",
+      "role": "Officer",
+      "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 199106,
+      "shares": 193678,
+      "date": "2026-08-24"
+    },
+    {
+      "name": "CARRICO BRIAN ALLEN",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 199188,
       "date": "2026-08-24"
     },
     {
       "name": "MIRANDA ADRIAN",
       "role": "Officer",
       "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 6.94 per share.",
-      "value": 2340196,
-      "shares": 337204,
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 199106,
       "date": "2026-08-24"
     },
     {

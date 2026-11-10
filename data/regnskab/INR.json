@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:48.204Z",
+  "updated_at": "2026-11-10T00:26:49.927Z",
   "source": "Yahoo Finance",
   "symbol": "INR",
   "summary": "Infinity Natural Resources, Inc. engages in the acquisition, exploration, and development of properties to produce crude oil, natural gas, and natural gas liquids in the United States. The company holds interests in the Utica Shale Oil covering an area of approximately 64,000 net surface acres located in Ohio; and the Marcellus Shale Dry Gas covering an area of approximately 34,000 net surface acres and the Utica Deep Dry Gas covering an area of 34,000 net acres situated in Pennsylvania. The company was founded in 2017 and is based in Morgantown, West Virginia.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-09",
   "earnings_estimated": false,
   "earnings_call": "2026-11-10",
-  "eps_estimate": 0.842,
+  "eps_estimate": 0.735,
   "analysts": {
     "strong_buy": 2,
     "buy": 7,
@@ -45,11 +45,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 74476000,
-      "earnings": 17988000
-    },
-    {
       "q": "3Q2025",
       "revenue": 79726000,
       "earnings": 10404000
@@ -63,11 +58,16 @@
       "q": "2Q2026",
       "revenue": 171019000,
       "earnings": 31752000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 197583000,
+      "earnings": 0
     }
   ],
   "growth": {
-    "q0": 2.3856,
-    "q1": 45.815296,
+    "q0": 45.815296,
+    "q1": null,
     "y0": 0.90980005,
     "y1": 0.025999999
   },
@@ -136,11 +136,11 @@
       "action": "main"
     },
     {
-      "date": "2025-12-09",
-      "firm": "Roth Capital",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
+      "date": "2025-09-15",
+      "firm": "Raymond James",
+      "from": "Strong Buy",
+      "to": "Strong Buy",
+      "action": "reit"
     }
   ],
   "holders": [
@@ -225,9 +225,9 @@
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 1792685824,
-    "ev_ebitda": 4.436,
-    "ev_revenue": 3.43,
+    "enterprise_value": 1809836544,
+    "ev_ebitda": 4.479,
+    "ev_revenue": 3.463,
     "float_shares": 15076181,
     "short_shares": 3456179,
     "short_pct_float": 18.94,
@@ -241,12 +241,6 @@
   "inst_count": 178,
   "eps_history": [
     {
-      "quarter": "2025-09-30",
-      "estimate": 0.458,
-      "actual": 0.2487,
-      "surprise_pct": -45.7
-    },
-    {
       "quarter": "2025-12-31",
       "estimate": 0.62759,
       "actual": 0.0157,
@@ -257,6 +251,12 @@
       "estimate": 0.82667,
       "actual": -0.6461,
       "surprise_pct": -178.16
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.842,
+      "actual": 3.5705,
+      "surprise_pct": 324.05
     }
   ],
   "insiders": [

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:48.848Z",
+  "updated_at": "2026-11-10T00:26:50.305Z",
   "source": "Yahoo Finance",
   "symbol": "NMCO",
   "summary": null,
@@ -102,9 +102,9 @@
   },
   "extras": {
     "beta": 0.915,
-    "enterprise_value": 926963712,
+    "enterprise_value": 939271808,
     "ev_ebitda": null,
-    "ev_revenue": 14.251,
+    "ev_revenue": 14.44,
     "float_shares": null,
     "short_shares": 1000837,
     "short_pct_float": 1.68,
@@ -115,7 +115,7 @@
   "ex_dividend": "2026-10-01",
   "dividend_date": null,
   "payout_ratio": 1.6924001,
-  "inst_count": 68,
+  "inst_count": 67,
   "eps_history": [],
   "insiders": [
     {
@@ -128,12 +128,12 @@
       "date": "2026-10-23"
     },
     {
-      "name": "JONES NATHANIEL T",
-      "role": "Officer",
-      "kind": "buy",
-      "text": "Purchase at price 8.25 per share.",
-      "value": 3712,
-      "shares": 450,
+      "name": "BANK OF AMERICA CORPORATION",
+      "role": "Beneficial Owner of more than 10% of a Class of Security",
+      "kind": "sell",
+      "text": "Sale at price 8.76 - 8.80 per share.",
+      "value": 973,
+      "shares": 111,
       "date": "2026-10-20"
     },
     {
@@ -146,20 +146,20 @@
       "date": "2026-10-20"
     },
     {
-      "name": "BANK OF AMERICA CORPORATION",
-      "role": "Beneficial Owner of more than 10% of a Class of Security",
+      "name": "JONES NATHANIEL T",
+      "role": "Officer",
       "kind": "buy",
-      "text": "Purchase at price 8.76 - 8.78 per share.",
-      "value": 974,
-      "shares": 111,
+      "text": "Purchase at price 8.25 per share.",
+      "value": 3712,
+      "shares": 450,
       "date": "2026-10-20"
     },
     {
       "name": "BANK OF AMERICA CORPORATION",
       "role": "Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "sell",
-      "text": "Sale at price 8.76 - 8.80 per share.",
-      "value": 973,
+      "kind": "buy",
+      "text": "Purchase at price 8.76 - 8.78 per share.",
+      "value": 974,
       "shares": 111,
       "date": "2026-10-20"
     },
@@ -184,15 +184,6 @@
     {
       "name": "BANK OF AMERICA CORPORATION",
       "role": "Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "buy",
-      "text": "Purchase at price 10.74 per share.",
-      "value": 15043,
-      "shares": 1400,
-      "date": "2026-02-17"
-    },
-    {
-      "name": "BANK OF AMERICA CORPORATION",
-      "role": "Beneficial Owner of more than 10% of a Class of Security",
       "kind": "sell",
       "text": "Sale at price 10.74 per share.",
       "value": 15036,
@@ -203,17 +194,22 @@
       "name": "BANK OF AMERICA CORPORATION",
       "role": "Beneficial Owner of more than 10% of a Class of Security",
       "kind": "buy",
-      "text": "Purchase at price 10.20 per share.",
-      "value": 15292,
+      "text": "Purchase at price 10.74 per share.",
+      "value": 15043,
+      "shares": 1400,
+      "date": "2026-02-17"
+    },
+    {
+      "name": "BANK OF AMERICA CORPORATION",
+      "role": "Beneficial Owner of more than 10% of a Class of Security",
+      "kind": "sell",
+      "text": "Sale at price 10.21 per share.",
+      "value": 15315,
       "shares": 1500,
       "date": "2025-12-29"
     }
   ],
   "dividends": [
-    {
-      "date": "2023-06-14",
-      "amount": 0.05
-    },
     {
       "date": "2023-07-13",
       "amount": 0.05
@@ -368,6 +364,10 @@
     },
     {
       "date": "2026-09-15",
+      "amount": 0.069
+    },
+    {
+      "date": "2026-10-01",
       "amount": 0.069
     }
   ],

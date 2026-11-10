@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:48.340Z",
+  "updated_at": "2026-11-10T00:26:50.028Z",
   "source": "Yahoo Finance",
   "symbol": "KMDA",
   "summary": "Kamada Ltd. manufactures and sells plasma-derived protein therapeutics. Its products include KAMRAB/KEDRAB indicated as prophylaxis of rabies; CYTOGAM for prophylaxis of Cytomegalovirus disease in kidney, lung, liver, pancreas, heart, and heart/lung transplants; VARIZIG for post exposure prophylaxis of varicella; WINRHO SDF for immune thrombocytopenic purpura and suppression of rhesus isoimmunization; HEPAGAM B for prevention of hepatitis B recurrence liver transplants and post-exposure prophylaxis; GLASSIA for intravenous AATD; KAMRHO (D) IM for prophylaxis of hemolytic disease of newborns; and Echis coloratus and Vipera palaestinae Antiserum to treat snake bite. The company also distributes biopharmaceutical products in Israel, including BRAMITOB to manage chronic pulmonary infection; FOSTER to treat asthma; TRIMBOW for chronic obstructive pulmonary disease; PROVOCHOLINE for the diagnosis of bronchial airway hyperactivity; AEROBIKA, an OPEP device; RUPAFIN and RUPAFIN ORAL SOLUTION for allergic rhinitis and Urticaria; SINTREDIUS for rheumatoid arthritis, systemic lupus erythematosus, and mild-moderate juvenile dermatomyositis; IVIG for various immunodeficiency-related conditions; VARITECT for chicken pox and zoster herpes; ZUTECTRA and HEPATECT CP for prevention of hepatitis B; MEGALOTECT CP for CMV virus; RUCONEST for angioedema attack; HEPARIN SODIUM INJECTION for thrombo-embolic disorders and prophylaxis of deep vein thrombosis and thromboembolic events; ALBUMIN and ALBUMIN for blood plasma; Factor VIII for hemophilia type A; and Factor IX for hemophilia type B. In addition, it distributes COAGADEX to treat hereditary factor X deficiency; IXIARO for Japanese encephalitis; VIVOTIF for salmonella typhi; PROCYSBI for nephropathic cystinosis; LAMZEDE for alpha-mannosidosis; RYPLAZIM for hypoplasminogenemia; ELIGARD for prostate cancer; and BEVACIZUMAB KAMADA for various cancers. The company was incorporated in 1990 and is headquartered in Rehovot, Israel.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-09",
   "earnings_estimated": false,
   "earnings_call": "2026-11-09",
-  "eps_estimate": 0.1275,
+  "eps_estimate": 0.12,
   "analysts": {
     "strong_buy": 0,
     "buy": 3,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 153454740,
-      "earnings": 17287730
-    },
-    {
       "q": "4Q2025",
       "revenue": 137590370,
       "earnings": 10969540
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 164592750,
       "earnings": 27757290
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 165702270,
+      "earnings": 25444160
     }
   ],
   "growth": {
-    "q0": 0.41669998,
-    "q1": 1,
+    "q0": 1,
+    "q1": 0.4286,
     "y0": 0.3643,
     "y1": 0.2077
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.199,
-    "enterprise_value": 339355136,
-    "ev_ebitda": 8.178,
-    "ev_revenue": 1.769,
+    "enterprise_value": 360194624,
+    "ev_ebitda": 8.681,
+    "ev_revenue": 1.877,
     "float_shares": 33184009,
     "short_shares": 197486,
     "short_pct_float": 0.63,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.65790004,
   "inst_count": 77,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.0925,
-      "actual": 0.09,
-      "surprise_pct": -2.7
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.0775,
@@ -269,18 +263,15 @@
       "estimate": 0.1125,
       "actual": 0.16,
       "surprise_pct": 42.22
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.1275,
+      "actual": 0.14,
+      "surprise_pct": 9.8
     }
   ],
   "insiders": [
-    {
-      "name": "TSUR DAVID",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 8.18 per share.",
-      "value": 186725,
-      "shares": 22827,
-      "date": "2026-09-14"
-    },
     {
       "name": "LIVNEH NIR",
       "role": "General Counsel",
@@ -297,6 +288,15 @@
       "text": "Conversion of Exercise of derivative security at price 5.93 per share.",
       "value": 159897,
       "shares": 26964,
+      "date": "2026-09-14"
+    },
+    {
+      "name": "TSUR DAVID",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 8.18 per share.",
+      "value": 186725,
+      "shares": 22827,
       "date": "2026-09-14"
     },
     {

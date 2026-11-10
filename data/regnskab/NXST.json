@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:48.940Z",
+  "updated_at": "2026-11-10T00:26:50.377Z",
   "source": "Yahoo Finance",
   "symbol": "NXST",
   "summary": "Nexstar Media Group, Inc. operates as a diversified media company that produces and distributes local and national news, sports, and entertainment contents on the television and digital platforms in the United States. It owns, operates, programs, or provides sales and other services to power television and radio stations; and provides television programming services. The company offers video and display advertising platforms through its own and various third party websites, mobile and over-the-top applications, digital media solutions to media publishers and advertisers, and a consumer product reviews platform. In addition, it owns NewsNation, a national cable news network; and WGN-AM, a Chicago radio station, as well as owns and operates digital multicast networks. Further, its digital assets include 125 local websites, 229 mobile applications, 110 connected television applications, television channels from The CW and The Hill, BestReviews, and advertising solutions. Additionally, the company engages in the digital business. Its stations are affiliates of ABC, NBC, FOX, CBS, The CW, MyNetworkTV, and other broadcast television networks. Nexstar Media Group, Inc. was formerly known as Nexstar Broadcasting Group, Inc. and changed its name to Nexstar Media Group, Inc. in January 2017. The company was founded in 1996 and is headquartered in Irving, Texas.",
@@ -10,16 +10,16 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 17.86,
+  "eps_estimate": 17.14,
   "analysts": {
-    "strong_buy": 2,
+    "strong_buy": 1,
     "buy": 6,
-    "hold": 0,
+    "hold": 1,
     "sell": 0,
     "strong_sell": 0,
     "total": 8
   },
-  "target_mean": 246.75,
+  "target_mean": 246.25,
   "target_high": 290,
   "target_low": 205,
   "target_analysts": 8,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 2.2617,
+    "q0": 2.1302001,
     "q1": null,
-    "y0": 1.8616,
-    "y1": -0.259
+    "y0": 1.967,
+    "y1": -0.36740002
   },
   "ratings": [
+    {
+      "date": "2026-11-09",
+      "firm": "Citigroup",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-11-06",
       "firm": "Wells Fargo",
@@ -140,13 +147,6 @@
       "from": "Neutral",
       "to": "Neutral",
       "action": "main"
-    },
-    {
-      "date": "2026-02-27",
-      "firm": "Wells Fargo",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
     }
   ],
   "holders": [
@@ -174,7 +174,7 @@
     {
       "name": "Vanguard Capital Management LLC",
       "kind": "institution",
-      "pct": 4.23,
+      "pct": 4.22,
       "shares": 1302020,
       "date": "2026-06-30"
     },
@@ -200,16 +200,9 @@
       "date": "2026-06-30"
     },
     {
-      "name": "LSV Asset Management",
-      "kind": "institution",
-      "pct": 3.04,
-      "shares": 936383,
-      "date": "2026-06-30"
-    },
-    {
       "name": "FMR, LLC",
       "kind": "institution",
-      "pct": 3.04,
+      "pct": 3.03,
       "shares": 935092,
       "date": "2026-06-30"
     },
@@ -218,6 +211,13 @@
       "kind": "fond",
       "pct": 2.99,
       "shares": 921100,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Massachusetts Financial Services Co.",
+      "kind": "institution",
+      "pct": 2.73,
+      "shares": 841345,
       "date": "2026-06-30"
     }
   ],
@@ -231,10 +231,10 @@
   },
   "extras": {
     "beta": 0.954,
-    "enterprise_value": 17569232896,
-    "ev_ebitda": 10.341,
-    "ev_revenue": 2.99,
-    "float_shares": 28617215,
+    "enterprise_value": 17505116160,
+    "ev_ebitda": 8.249,
+    "ev_revenue": 2.57,
+    "float_shares": 28629961,
     "short_shares": 2807427,
     "short_pct_float": 12.69,
     "short_ratio": 7.42,
@@ -243,8 +243,8 @@
   },
   "ex_dividend": "2026-11-13",
   "dividend_date": null,
-  "payout_ratio": 1.4091,
-  "inst_count": 654,
+  "payout_ratio": 0.6733,
+  "inst_count": 653,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -327,7 +327,25 @@
       "date": "2026-06-26"
     },
     {
-      "name": "RUSSELL BLAKE F",
+      "name": "GLIHA LEE ANN",
+      "role": "Chief Financial Officer",
+      "kind": "sell",
+      "text": "Sale at price 170.81 per share.",
+      "value": 63712,
+      "shares": 373,
+      "date": "2026-06-16"
+    },
+    {
+      "name": "KNAPP LINDSEY",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 170.81 per share.",
+      "value": 15885,
+      "shares": 93,
+      "date": "2026-06-16"
+    },
+    {
+      "name": "WEITMAN GARY P",
       "role": "Officer",
       "kind": "sell",
       "text": "Sale at price 170.81 per share.",
@@ -342,24 +360,6 @@
       "text": "Sale at price 170.81 per share.",
       "value": 143480,
       "shares": 840,
-      "date": "2026-06-16"
-    },
-    {
-      "name": "ZIMMER DANA",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 170.81 per share.",
-      "value": 149630,
-      "shares": 876,
-      "date": "2026-06-16"
-    },
-    {
-      "name": "GLIHA LEE ANN",
-      "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 170.81 per share.",
-      "value": 63712,
-      "shares": 373,
       "date": "2026-06-16"
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:46.870Z",
+  "updated_at": "2026-11-10T00:26:48.838Z",
   "source": "Yahoo Finance",
   "symbol": "AMC",
   "summary": "AMC Entertainment Holdings, Inc. engages in the theatrical exhibition business in the United States and internationally. It owns, operates, or has interests in theatres. The company was founded in 1920 and is headquartered in Leawood, Kansas.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 0.035,
+  "eps_estimate": -0.05,
   "analysts": {
     "strong_buy": 0,
     "buy": 2,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 7
   },
-  "target_mean": 3.36667,
+  "target_mean": 3.975,
   "target_high": 5,
-  "target_low": 2.2,
+  "target_low": 2.6,
   "target_analysts": 6,
   "statements": [
     {
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 1.1944001,
-    "q1": 0.77779996,
-    "y0": 1.0208,
-    "y1": 4.25
+    "q0": 0.72220004,
+    "q1": 0.7361,
+    "y0": 0.8333,
+    "y1": 1.5208
   },
   "ratings": [
+    {
+      "date": "2026-11-06",
+      "firm": "Citigroup",
+      "from": "Sell",
+      "to": "Sell",
+      "action": "main"
+    },
     {
       "date": "2026-11-06",
       "firm": "Macquarie",
@@ -140,13 +147,6 @@
       "from": "Neutral",
       "to": "Neutral",
       "action": "main"
-    },
-    {
-      "date": "2026-05-07",
-      "firm": "Citigroup",
-      "from": "Sell",
-      "to": "Sell",
-      "action": "main"
     }
   ],
   "holders": [
@@ -193,6 +193,13 @@
       "date": "2026-09-30"
     },
     {
+      "name": "Geode Capital Management, LLC",
+      "kind": "institution",
+      "pct": 2.56,
+      "shares": 22810969,
+      "date": "2026-09-30"
+    },
+    {
       "name": "Citadel Advisors Llc",
       "kind": "institution",
       "pct": 2.29,
@@ -212,13 +219,6 @@
       "pct": 2.18,
       "shares": 19427596,
       "date": "2026-06-30"
-    },
-    {
-      "name": "Geode Capital Management, LLC",
-      "kind": "institution",
-      "pct": 1.95,
-      "shares": 17390399,
-      "date": "2026-06-30"
     }
   ],
   "insider_net": {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 2.241,
-    "enterprise_value": 9557322752,
-    "ev_ebitda": 12.057,
-    "ev_revenue": 1.694,
+    "enterprise_value": 9610878976,
+    "ev_ebitda": 12.124,
+    "ev_revenue": 1.704,
     "float_shares": 778913585,
     "short_shares": 47436660,
     "short_pct_float": 5.34,
@@ -244,7 +244,7 @@
   "ex_dividend": "2020-03-06",
   "dividend_date": null,
   "payout_ratio": 1.9512,
-  "inst_count": 396,
+  "inst_count": 398,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -291,6 +291,15 @@
       "date": "2026-02-27"
     },
     {
+      "name": "CHAVARRIA CARLA C",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 139598,
+      "date": "2026-02-27"
+    },
+    {
       "name": "COX CHRIS A",
       "role": "Officer",
       "kind": "other",
@@ -306,6 +315,15 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 174590,
+      "date": "2026-02-27"
+    },
+    {
+      "name": "GOODMAN SEAN D.",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 369940,
       "date": "2026-02-27"
     },
     {
@@ -342,24 +360,6 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 26206,
-      "date": "2026-02-27"
-    },
-    {
-      "name": "CHAVARRIA CARLA C",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 139598,
-      "date": "2026-02-27"
-    },
-    {
-      "name": "GOODMAN SEAN D.",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 369940,
       "date": "2026-02-27"
     }
   ],

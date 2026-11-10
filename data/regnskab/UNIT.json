@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:49.710Z",
+  "updated_at": "2026-11-10T00:26:51.051Z",
   "source": "Yahoo Finance",
   "symbol": "UNIT",
   "summary": "Uniti Group Inc. a digital infrastructure company in the United States. The company operates through three segments: Kinetic, Uniti Solutions, and Fiber Infrastructure. The Kinetic segment offers internet services, local and long-distance voice services, integrated voice and data services, and web conferencing products. The Uniti Solutions segment provides software solutions, including Secure Access Service Edge (SASE), Unified Communications as a Service (UCaaS), OfficeSuite UC, and associated network access products and services. The Fiber Infrastructure segment provides network bandwidth to other telecommunications carriers, network operators, content providers, and large cloud computing and storage service providers; network transport services to end users, ethernet and wave transport of up to 400 Gbps, dark fiber and colocation services; and fiber-to-the-tower connections. This segment also offers voice and data carrier services. Uniti Group Inc. was incorporated in 2024 and is based in Little Rock, Arkansas.",
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 722600000,
-      "earnings": 1563600000
-    },
-    {
       "q": "4Q2025",
       "revenue": 917300000,
       "earnings": -310500000
@@ -69,6 +64,11 @@
       "q": "2Q2026",
       "revenue": 909700000,
       "earnings": -171600000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 848100000,
+      "earnings": -260300000
     }
   ],
   "growth": null,
@@ -226,9 +226,9 @@
   },
   "extras": {
     "beta": 1.441,
-    "enterprise_value": 11785820160,
-    "ev_ebitda": 8.181,
-    "ev_revenue": 3.332,
+    "enterprise_value": 11750625280,
+    "ev_ebitda": 8.157,
+    "ev_revenue": 3.322,
     "float_shares": 178929688,
     "short_shares": 23274231,
     "short_pct_float": 19.99,
@@ -239,14 +239,8 @@
   "ex_dividend": "2024-06-14",
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 376,
+  "inst_count": 375,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.00986,
-      "actual": 0.1119,
-      "surprise_pct": 1234.89
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.36283,
@@ -264,11 +258,17 @@
       "estimate": -0.48174,
       "actual": -0.68,
       "surprise_pct": -41.15
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.5765,
+      "actual": -1.03,
+      "surprise_pct": -78.66
     }
   ],
   "insiders": [
     {
-      "name": "APPLEBY JARRETT B",
+      "name": "WEBER JOHANNES",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -277,7 +277,7 @@
       "date": "2026-05-21"
     },
     {
-      "name": "WEBER JOHANNES",
+      "name": "APPLEBY JARRETT B",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -295,12 +295,12 @@
       "date": "2026-03-13"
     },
     {
-      "name": "GUNDERMAN KENNETH A",
-      "role": "Chief Executive Officer",
+      "name": "FRILOUX MICHAEL",
+      "role": "Chief Technology Officer",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 66740,
+      "shares": 11968,
       "date": "2026-03-05"
     },
     {
@@ -322,21 +322,21 @@
       "date": "2026-03-05"
     },
     {
-      "name": "FRILOUX MICHAEL",
-      "role": "Chief Technology Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 11968,
-      "date": "2026-03-05"
-    },
-    {
       "name": "GUNDERMAN KENNETH A",
       "role": "Chief Executive Officer",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 191382,
+      "shares": 66740,
+      "date": "2026-03-05"
+    },
+    {
+      "name": "FRILOUX MICHAEL",
+      "role": "Chief Technology Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 37478,
       "date": "2026-02-27"
     },
     {

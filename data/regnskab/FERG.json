@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:47.810Z",
+  "updated_at": "2026-11-10T00:26:49.606Z",
   "source": "Yahoo Finance",
   "symbol": "FERG",
   "summary": "Ferguson Enterprises Inc. distributes essential water and air solutions to specialized professional in the United States and Canada. The company provides various products and services, including plumbing; pipe, valves, and fittings; heating, ventilation, and air conditioning; appliances; lighting; and water and wastewater solutions to residential and non-residential customers. It also supplies specialized water and wastewater treatment products to residential, commercial, and infrastructure contractors, as well as supplies pipe, valves, and fittings solutions to industrial customers. In addition, it offers customized solutions, such as virtual design, fabrication, valve actuation, pre-assembly, kitting, installation, and project management services, as well as after-sales support that comprises warranty, credit, project-based billing, returns and maintenance, and repair and operations support. The company sells its products through a network of distribution centers, branches, counter service and sales associates, showroom consultants, and e-commerce channels. Ferguson Enterprises Inc. was founded in 1953 and is headquartered in Newport News, Virginia.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-09",
   "earnings_estimated": false,
   "earnings_call": "2026-11-09",
-  "eps_estimate": 3.28747,
+  "eps_estimate": 2.4597,
   "analysts": {
     "strong_buy": 3,
     "buy": 13,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "4Q2024",
-      "revenue": 6872000000,
-      "earnings": 276000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 7495000000,
       "earnings": 389000000
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 8751000000,
       "earnings": 666000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 9026000000,
+      "earnings": 598000000
     }
   ],
   "growth": {
-    "q0": null,
-    "q1": 0.1716,
-    "y0": 0.0784,
-    "y1": 0.111899994
+    "q0": 0.1713,
+    "q1": 0.113800004,
+    "y0": 0.078099996,
+    "y1": 0.1126
   },
   "ratings": [
     {
@@ -200,6 +200,13 @@
       "date": "2026-06-30"
     },
     {
+      "name": "Geode Capital Management, LLC",
+      "kind": "institution",
+      "pct": 2.72,
+      "shares": 5256217,
+      "date": "2026-09-30"
+    },
+    {
       "name": "Bank Of New York Mellon Corporation",
       "kind": "institution",
       "pct": 2.58,
@@ -212,28 +219,21 @@
       "pct": 2.39,
       "shares": 4619995,
       "date": "2026-06-30"
-    },
-    {
-      "name": "VANGUARD INDEX FUNDS-Vanguard Mid-Cap Index Fund",
-      "kind": "fond",
-      "pct": 2.17,
-      "shares": 4202396,
-      "date": "2026-06-30"
     }
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 46,
+    "buys": 38,
     "sells": 8,
-    "bought": 67866,
+    "bought": 67067,
     "sold": 33601,
-    "net_pct": 11.6
+    "net_pct": 11.3
   },
   "extras": {
     "beta": 1.107,
-    "enterprise_value": 52037132288,
-    "ev_ebitda": 16.947,
-    "ev_revenue": 1.655,
+    "enterprise_value": 51659898880,
+    "ev_ebitda": 16.824,
+    "ev_revenue": 1.643,
     "float_shares": 192971020,
     "short_shares": 6326434,
     "short_pct_float": 3.64,
@@ -241,10 +241,10 @@
     "last_split": "947:1000",
     "last_split_date": "2018-06-11"
   },
-  "ex_dividend": "2026-08-21",
+  "ex_dividend": "2026-11-20",
   "dividend_date": null,
   "payout_ratio": 0.3357,
-  "inst_count": 1442,
+  "inst_count": 1450,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -263,98 +263,23 @@
       "estimate": 3.29893,
       "actual": 3.39,
       "surprise_pct": 2.76
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 3.28586,
+      "actual": 3.43,
+      "surprise_pct": 4.39
     }
   ],
   "insiders": [
     {
-      "name": "GRAHAM IAN T",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 230.00 per share.",
-      "value": 252310,
-      "shares": 1097,
-      "date": "2026-10-16"
-    },
-    {
-      "name": "PAISLEY JAMES A",
-      "role": "Officer",
+      "name": "Morrissey (Victoria)",
+      "role": null,
       "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 4120,
-      "date": "2026-10-12"
-    },
-    {
-      "name": "PAISLEY JAMES A",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 2056,
-      "date": "2026-10-12"
-    },
-    {
-      "name": "SCHLICHER JAKE",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 3761,
-      "date": "2026-10-12"
-    },
-    {
-      "name": "SCHLICHER JAKE",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 218.74 per share.",
-      "value": 686406,
-      "shares": 3138,
-      "date": "2026-10-12"
-    },
-    {
-      "name": "SCHLICHER JAKE",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 1876,
-      "date": "2026-10-12"
-    },
-    {
-      "name": "BRUNDAGE WILLIAM",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 9100,
-      "date": "2026-10-12"
-    },
-    {
-      "name": "BRUNDAGE WILLIAM",
-      "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 218.74 per share.",
-      "value": 1309378,
-      "shares": 5986,
-      "date": "2026-10-12"
-    },
-    {
-      "name": "THEES WILLIAM T JR",
-      "role": "Chief Operating Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 4206,
-      "date": "2026-10-12"
-    },
-    {
-      "name": "THEES WILLIAM T JR",
-      "role": "Chief Operating Officer",
-      "kind": "sell",
-      "text": "Sale at price 220.00 per share.",
-      "value": 772200,
-      "shares": 3510,
-      "date": "2026-10-12"
+      "text": "Bought at price 177.00 per share.",
+      "value": 354000,
+      "shares": 2000,
+      "date": "2025-01-06"
     }
   ],
   "dividends": [

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:48.521Z",
+  "updated_at": "2026-11-10T00:26:50.097Z",
   "source": "Yahoo Finance",
   "symbol": "LINC",
   "summary": "Lincoln Educational Services Corporation, together with its subsidiaries, provides various career-oriented postsecondary education services to high school graduates and working adults in the United States. It operates in two segments, Campus Operations and Transitional. The company offers associate's degree, and diploma and certificate programs in automotive technology; skilled trades programs, including electrical, heating and air conditioning repair, welding, computerized numerical control, and electrical and electronic systems technology; and health science and information technology programs. It operates schools under the Lincoln Technical Institute, Lincoln College of Technology, and Nashville Auto Diesel College brands. Lincoln Educational Services Corporation was founded in 1946 and is headquartered in Parsippany, New Jersey.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-09",
   "earnings_estimated": false,
   "earnings_call": "2026-11-09",
-  "eps_estimate": 0.122,
+  "eps_estimate": 0.452,
   "analysts": {
     "strong_buy": 1,
     "buy": 4,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 141389000,
-      "earnings": 3799000
-    },
-    {
       "q": "4Q2025",
       "revenue": 142872000,
       "earnings": 12700000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 142560000,
       "earnings": 1946000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 159177000,
+      "earnings": 4716000
     }
   ],
   "growth": {
-    "q0": -0.39720002,
-    "q1": -0.1035,
+    "q0": -0.1035,
+    "q1": 0.4286,
     "y0": -0.1466,
     "y1": 0.3514
   },
@@ -207,33 +207,33 @@
       "date": "2026-06-30"
     },
     {
-      "name": "Geode Capital Management, LLC",
-      "kind": "institution",
-      "pct": 2.77,
-      "shares": 877173,
-      "date": "2026-06-30"
-    },
-    {
       "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
       "kind": "fond",
       "pct": 2.7,
       "shares": 855707,
       "date": "2026-06-30"
+    },
+    {
+      "name": "Geode Capital Management, LLC",
+      "kind": "institution",
+      "pct": 2.64,
+      "shares": 837082,
+      "date": "2026-09-30"
     }
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 9,
+    "buys": 1,
     "sells": 10,
-    "bought": 23475,
+    "bought": 2495,
     "sold": 302415,
-    "net_pct": -11
+    "net_pct": -11.7
   },
   "extras": {
     "beta": 0.84,
-    "enterprise_value": 740632960,
-    "ev_ebitda": 12.214,
-    "ev_revenue": 1.298,
+    "enterprise_value": 744122304,
+    "ev_ebitda": 12.272,
+    "ev_revenue": 1.304,
     "float_shares": 27795629,
     "short_shares": 1949413,
     "short_pct_float": 7.15,
@@ -244,14 +244,8 @@
   "ex_dividend": "2014-12-11",
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 284,
+  "inst_count": 283,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.12,
-      "actual": 0.2024,
-      "surprise_pct": 68.67
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.42,
@@ -269,6 +263,12 @@
       "estimate": -0.006,
       "actual": 0.06,
       "surprise_pct": 1100
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.122,
+      "actual": 0.15,
+      "surprise_pct": 22.95
     }
   ],
   "insiders": [

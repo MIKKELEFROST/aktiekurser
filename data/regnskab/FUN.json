@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:47.894Z",
+  "updated_at": "2026-11-10T00:26:49.680Z",
   "source": "Yahoo Finance",
   "symbol": "FUN",
   "summary": "Six Flags Entertainment Corporation operates amusement parks and resort properties in North America. It operates amusement parks, water parks, and resorts in the United States, Mexico, and Canada. The company was formerly known as Cedar Fair, L.P. and changed its name to Six Flags Entertainment Corporation in July 2024. The company was founded in 1983 and is headquartered in Charlotte, North Carolina.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": -0.38167,
+  "eps_estimate": -0.635,
   "analysts": {
     "strong_buy": 2,
     "buy": 6,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 14
   },
-  "target_mean": 17,
+  "target_mean": 14.23077,
   "target_high": 23,
   "target_low": 5,
   "target_analysts": 13,
@@ -72,12 +72,26 @@
     }
   ],
   "growth": {
-    "q0": 0.34,
-    "q1": -0.1681,
-    "y0": -1.5411999,
-    "y1": 0.96919996
+    "q0": -0.098000005,
+    "q1": -0.13939999,
+    "y0": -1.6326,
+    "y1": 0.8972
   },
   "ratings": [
+    {
+      "date": "2026-11-09",
+      "firm": "JP Morgan",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-09",
+      "firm": "Citigroup",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-11-06",
       "firm": "Barclays",
@@ -132,20 +146,6 @@
       "firm": "JP Morgan",
       "from": "Neutral",
       "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-07",
-      "firm": "Barclays",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-07",
-      "firm": "Oppenheimer",
-      "from": "Outperform",
-      "to": "Outperform",
       "action": "main"
     }
   ],
@@ -230,11 +230,11 @@
     "net_pct": null
   },
   "extras": {
-    "beta": null,
-    "enterprise_value": null,
-    "ev_ebitda": null,
-    "ev_revenue": null,
-    "float_shares": null,
+    "beta": 0.499,
+    "enterprise_value": 6285365248,
+    "ev_ebitda": 7.918,
+    "ev_revenue": 2.055,
+    "float_shares": 86667032,
     "short_shares": 24592128,
     "short_pct_float": 29,
     "short_ratio": 6.45,
@@ -244,7 +244,7 @@
   "ex_dividend": "2024-06-05",
   "dividend_date": null,
   "payout_ratio": 3,
-  "inst_count": 396,
+  "inst_count": 392,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -282,15 +282,6 @@
       "date": "2026-08-12"
     },
     {
-      "name": "BENNETT CHRISTOPHER LAWRENCE",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 9343,
-      "date": "2026-07-29"
-    },
-    {
       "name": "HOFFMAN DAVID R",
       "role": "Officer",
       "kind": "other",
@@ -314,8 +305,8 @@
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 37337,
-      "date": "2026-06-25"
+      "shares": 9343,
+      "date": "2026-07-29"
     },
     {
       "name": "HOFFMAN DAVID R",
@@ -360,6 +351,15 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 18788,
+      "date": "2026-06-25"
+    },
+    {
+      "name": "BENNETT CHRISTOPHER LAWRENCE",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 37337,
       "date": "2026-06-25"
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:48.731Z",
+  "updated_at": "2026-11-10T00:26:50.217Z",
   "source": "Yahoo Finance",
   "symbol": "MRVL",
   "summary": "Marvell Technology, Inc., together with its subsidiaries, provides data infrastructure semiconductor solutions and spanning the data center core to network edge in the United States, Argentina, China, India, Israel, Japan, Singapore, South Korea, Taiwan, Vietnam, and internationally. The company develops and scales system-on-a-chip architectures, integrating analog, mixed-signal, and digital signal processing functionality. It offers a portfolio of ethernet solutions, including spanning controllers, network adapters, physical transceivers, and switches; single or multiple core processors; and custom application specific integrated circuits, interconnects, fibre channel adapters, and processors. The company also provides interconnect products, including pulse amplitude modulation, coherent and coherent-lite digital signal processors (DSPs), laser drivers, trans-impedance amplifiers, silicon photonics, co-packaged optics, linear pluggable optics chipsets, data center interconnect, active electrical cable DSPs and peripheral component interconnect express retimer solutions; fibre channel products comprising host bus adapters and controllers for server and storage system connectivity; storage controllers for hard disk drives and solid-state-drives; host system interfaces, including serial advanced technology attachment and serial attached SCSI, peripheral component interconnect express, compute express link switches, non-volatile memory express (NVMe), and NVMe over fabrics; and develops ultra accelerator linkTM switches and ethernet for scale-up networking switches. The company serves data centers, communications, and other markets. It offers its products through direct customers and distributors. Marvell Technology, Inc. was incorporated in 1995 and is headquartered in Wilmington, Delaware.",
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 44
   },
-  "target_mean": 311.2861,
+  "target_mean": 310.0666,
   "target_high": 450,
   "target_low": 175,
   "target_analysts": 41,
@@ -75,9 +75,16 @@
     "q0": 0.4486,
     "q1": 0.7003,
     "y0": 0.48680001,
-    "y1": 0.739
+    "y1": 0.7401
   },
   "ratings": [
+    {
+      "date": "2026-11-09",
+      "firm": "B. Riley Securities",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-11-03",
       "firm": "B. Riley Securities",
@@ -140,13 +147,6 @@
       "from": "Buy",
       "to": "Neutral",
       "action": "down"
-    },
-    {
-      "date": "2026-10-07",
-      "firm": "UBS",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
     }
   ],
   "holders": [
@@ -202,9 +202,9 @@
     {
       "name": "Geode Capital Management, LLC",
       "kind": "institution",
-      "pct": 2.41,
-      "shares": 21126096,
-      "date": "2026-06-30"
+      "pct": 2.47,
+      "shares": 21684849,
+      "date": "2026-09-30"
     },
     {
       "name": "Vanguard Portfolio Management LLC",
@@ -231,10 +231,10 @@
   },
   "extras": {
     "beta": 2.327,
-    "enterprise_value": 118463291392,
-    "ev_ebitda": 41.562,
-    "ev_revenue": 12.535,
-    "float_shares": 873830850,
+    "enterprise_value": 136922038272,
+    "ev_ebitda": 48.038,
+    "ev_revenue": 14.489,
+    "float_shares": 873839619,
     "short_shares": 24588610,
     "short_pct_float": 3.28,
     "short_ratio": 1.24,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-10-09",
   "dividend_date": null,
   "payout_ratio": 0.0789,
-  "inst_count": 3029,
+  "inst_count": 3037,
   "eps_history": [
     {
       "quarter": "2025-10-31",
@@ -282,21 +282,21 @@
       "date": "2026-11-02"
     },
     {
-      "name": "MURPHY MATTHEW JOSEPH",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 223.39 per share.",
-      "value": 1675425,
-      "shares": 7500,
-      "date": "2026-09-15"
-    },
-    {
       "name": "DURN DANIEL JAMES",
       "role": "Chief Financial Officer",
       "kind": "other",
       "text": null,
       "value": null,
       "shares": 6469,
+      "date": "2026-09-15"
+    },
+    {
+      "name": "MURPHY MATTHEW JOSEPH",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 223.39 per share.",
+      "value": 1675425,
+      "shares": 7500,
       "date": "2026-09-15"
     },
     {
@@ -347,19 +347,19 @@
     {
       "name": "MURPHY MATTHEW JOSEPH",
       "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 209.52 per share.",
-      "value": 1571400,
-      "shares": 7500,
-      "date": "2026-07-15"
-    },
-    {
-      "name": "MURPHY MATTHEW JOSEPH",
-      "role": "Chief Executive Officer",
       "kind": "other",
       "text": null,
       "value": null,
       "shares": 21497,
+      "date": "2026-07-15"
+    },
+    {
+      "name": "SCARPULLA JUSTIN",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 510,
       "date": "2026-07-15"
     }
   ],

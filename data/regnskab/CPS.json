@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:47.447Z",
+  "updated_at": "2026-11-10T00:26:49.314Z",
   "source": "Yahoo Finance",
   "symbol": "CPS",
   "summary": "Cooper-Standard Holdings Inc., through its subsidiary, manufactures sealing systems and fluid handling systems in the North America, Europe, the Asia Pacific, and the South America. The company offers sealing systems, such as dynamic seals, static seals, encapsulated glass, obstacle detection sensor system, variable extrusion, specialty sealing products, decorative trims, and frameless systems, as well as Fortrex materials platform, FlexiCore thermoplastic body seal, and FlushSeal sealing systems. It also provides fuel and brake delivery systems, including chassis and tank fuel lines, and bundles; metallic brake lines and bundles; quick connectors; low oligomer multi-layer convoluted tube; brake jounce lines; direct injection and port fuel rails; MagAlloy, a brake tube coating; ArmorTube, a brake tube coating; Series 300 and S300LT low temperature quick connect products; Gen III Posi-Lock quick connect products. In addition, the company offers fluid transfer systems comprising eCoFlow switch pump; heaters and coolant hoses; SAE and VDA quick connects; diesel particulate filter lines; charge air cooler ducts and assemblies; charged air cooling; transmission oil cooling hoses; multilayer tubing for glycol thermal management; PlastiCool 5000 high temperature MLT and 2000 multi-layer tubing for glycol thermal management; secondary air hoses; brake and clutch hoses; Easy-Lock, a quick connect; Ergo-Lock VDA quick connect and + VDA quick connect; plastic coolant hub; and TC3000 transmission oil cooling plastic tubing. Its products are primarily used in passenger vehicles and light trucks that are manufactured by automotive original equipment manufacturers and replacement markets. Cooper-Standard Holdings Inc. was founded in 1960 and is headquartered in Northville, Michigan.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 1.56,
+  "eps_estimate": null,
   "analysts": {
     "strong_buy": 0,
     "buy": 2,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 3
   },
-  "target_mean": 34,
+  "target_mean": 32,
   "target_high": 45,
-  "target_low": 25,
+  "target_low": 19,
   "target_analysts": 3,
   "statements": [
     {
@@ -72,12 +72,26 @@
     }
   ],
   "growth": {
-    "q0": 1.9017,
+    "q0": null,
     "q1": 4.3793,
     "y0": 2.4133,
     "y1": 0.7096
   },
   "ratings": [
+    {
+      "date": "2026-11-09",
+      "firm": "Freedom Broker",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-09",
+      "firm": "Citigroup",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-10-19",
       "firm": "Stifel",
@@ -133,20 +147,6 @@
       "from": "Buy",
       "to": "Buy",
       "action": "main"
-    },
-    {
-      "date": "2025-04-23",
-      "firm": "Citigroup",
-      "from": null,
-      "to": "Neutral",
-      "action": "init"
-    },
-    {
-      "date": "2022-02-18",
-      "firm": "Benchmark",
-      "from": "Buy",
-      "to": "Hold",
-      "action": "down"
     }
   ],
   "holders": [
@@ -195,9 +195,9 @@
     {
       "name": "Geode Capital Management, LLC",
       "kind": "institution",
-      "pct": 2.52,
-      "shares": 447506,
-      "date": "2026-06-30"
+      "pct": 2.5,
+      "shares": 444939,
+      "date": "2026-09-30"
     },
     {
       "name": "Dimensional Fund Advisors LP",
@@ -231,10 +231,10 @@
   },
   "extras": {
     "beta": 2.02,
-    "enterprise_value": 1435249664,
-    "ev_ebitda": 7.494,
-    "ev_revenue": 0.515,
-    "float_shares": 16765776,
+    "enterprise_value": 1450355328,
+    "ev_ebitda": 7.573,
+    "ev_revenue": 0.52,
+    "float_shares": 16765954,
     "short_shares": 769889,
     "short_pct_float": 4.59,
     "short_ratio": 2.91,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 185,
+  "inst_count": 184,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -318,21 +318,12 @@
       "date": "2026-03-13"
     },
     {
-      "name": "COUCH CHRISTOPHER C",
-      "role": "Chief Technology Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 17675,
-      "date": "2026-02-27"
-    },
-    {
-      "name": "OTT LAWRENCE E.",
+      "name": "CLARK PATRICK",
       "role": "Officer",
       "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 12529,
+      "text": "Stock Gift at price 0.00 per share.",
+      "value": 0,
+      "shares": 11326,
       "date": "2026-02-27"
     },
     {
@@ -345,21 +336,30 @@
       "date": "2026-02-27"
     },
     {
-      "name": "EDWARDS JEFFREY S.",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 97574,
-      "date": "2026-02-27"
-    },
-    {
       "name": "CLARK PATRICK",
       "role": "Officer",
       "kind": "other",
-      "text": "Stock Gift at price 0.00 per share.",
-      "value": 0,
-      "shares": 11326,
+      "text": null,
+      "value": null,
+      "shares": 20086,
+      "date": "2026-02-27"
+    },
+    {
+      "name": "VENKATASUBRAMANIAN SOMASUNDHAR",
+      "role": "Chief Technology Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 6834,
+      "date": "2026-02-27"
+    },
+    {
+      "name": "KANARY MARYANN PETERSON",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 8903,
       "date": "2026-02-27"
     }
   ],

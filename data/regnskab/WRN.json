@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:49.880Z",
+  "updated_at": "2026-11-10T00:26:51.181Z",
   "source": "Yahoo Finance",
   "symbol": "WRN",
   "summary": "Western Copper and Gold Corporation, an exploration stage company, engages in the exploration and development of mineral properties in Canada. It explores for gold, copper, silver, and molybdenum deposits. Its principal property is the Casino mineral property located in Yukon, Canada. The company was formerly known as Western Copper Corp. and changed its name to Western Copper and Gold Corporation in October 2011. Western Copper and Gold Corporation was incorporated in 2006 and is headquartered in Vancouver, Canada.",
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 0,
-      "earnings": -890290
-    },
-    {
       "q": "4Q2025",
       "revenue": 0,
       "earnings": -964410
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 0,
       "earnings": -1672450
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 0,
+      "earnings": -1677770
     }
   ],
   "growth": {
-    "q0": 0,
-    "q1": 0.0305,
+    "q0": 0.0305,
+    "q1": 0.0424,
     "y0": -0.472,
     "y1": 0.17959999
   },
@@ -193,13 +193,6 @@
       "date": "2026-07-31"
     },
     {
-      "name": "Waratah Capital Advisors Ltd.",
-      "kind": "institution",
-      "pct": 1.14,
-      "shares": 2588763,
-      "date": "2026-06-30"
-    },
-    {
       "name": "Euro Pacific Asset Management, LLC",
       "kind": "institution",
       "pct": 1.13,
@@ -219,6 +212,13 @@
       "pct": 0.81,
       "shares": 1824799,
       "date": "2026-06-30"
+    },
+    {
+      "name": "INVESTMENT MANAGERS SERIES TRUST-EuroPac Gold Fund",
+      "kind": "fond",
+      "pct": 0.8,
+      "shares": 1800000,
+      "date": "2026-07-31"
     }
   ],
   "insider_net": {
@@ -231,10 +231,10 @@
   },
   "extras": {
     "beta": 1.751,
-    "enterprise_value": 221119584,
-    "ev_ebitda": -29.394,
+    "enterprise_value": 209810816,
+    "ev_ebitda": -27.891,
     "ev_revenue": null,
-    "float_shares": 197003320,
+    "float_shares": 196960346,
     "short_shares": 2005840,
     "short_pct_float": 0.93,
     "short_ratio": 1.69,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 117,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.007,
-      "actual": 0,
-      "surprise_pct": 100
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.007,
@@ -269,9 +263,24 @@
       "estimate": -0.007,
       "actual": -0.00718,
       "surprise_pct": -2.57
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.007,
+      "actual": -0.00709,
+      "surprise_pct": -1.29
     }
   ],
   "insiders": [
+    {
+      "name": "Dirk (Robert)",
+      "role": "Senior Officer of Issuer",
+      "kind": "other",
+      "text": "Acquisition in the public market at price 1.64 per share.",
+      "value": 71209,
+      "shares": 43500,
+      "date": "2026-11-02"
+    },
     {
       "name": "Smith (Mark Elliot)",
       "role": "Director of Issuer",
@@ -352,15 +361,6 @@
       "value": null,
       "shares": 3914,
       "date": "2026-01-20"
-    },
-    {
-      "name": "Shaw (Shena)",
-      "role": "Senior Officer of Issuer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 15080,
-      "date": "2026-01-19"
     }
   ],
   "dividends": [],

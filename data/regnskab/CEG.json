@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:47.318Z",
+  "updated_at": "2026-11-10T00:26:49.201Z",
   "source": "Yahoo Finance",
   "symbol": "CEG",
   "summary": "Constellation Energy Corporation produces and sells energy products and services in the United States. The company operates through five segments: Mid-Atlantic, Midwest, New York, ERCOT, and Other Power Regions. It offers electricity, natural gas, energy-related products, and sustainable solutions. The company has approximately 31,676 megawatts of generating capacity consisting of nuclear, wind, solar, natural gas, and hydroelectric assets. It serves distribution utilities, municipalities, cooperatives, and commercial, industrial, public sector, and residential customers. The company was incorporated in 2021 and is headquartered in Baltimore, Maryland.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-09",
   "earnings_estimated": false,
   "earnings_call": "2026-11-09",
-  "eps_estimate": 3.87662,
+  "eps_estimate": 3.0362,
   "analysts": {
     "strong_buy": 6,
     "buy": 14,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 25
   },
-  "target_mean": 339.2452,
+  "target_mean": 337.76697,
   "target_high": 399,
   "target_low": 238,
   "target_analysts": 23,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 6570000000,
-      "earnings": 930000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 6074000000,
       "earnings": 432000000
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 7504000000,
       "earnings": 513000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 9550000000,
+      "earnings": 1835000000
     }
   ],
   "growth": {
-    "q0": 0.2752,
-    "q1": 0.32009998,
+    "q0": 0.32009998,
+    "q1": 0.0991,
     "y0": 0.301,
-    "y1": 0.099700004
+    "y1": 0.09689999
   },
   "ratings": [
     {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.127,
-    "enterprise_value": 109257760768,
-    "ev_ebitda": 13.74,
-    "ev_revenue": 3.494,
+    "enterprise_value": 112907132928,
+    "ev_ebitda": 14.199,
+    "ev_revenue": 3.611,
     "float_shares": 353145251,
     "short_shares": 11892121,
     "short_pct_float": 3.75,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-11-16",
   "dividend_date": null,
   "payout_ratio": 0.1592,
-  "inst_count": 2501,
+  "inst_count": 2504,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 3.12019,
-      "actual": 3.04,
-      "surprise_pct": -2.57
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 2.24578,
@@ -269,6 +263,12 @@
       "estimate": 2.28235,
       "actual": 2.55,
       "surprise_pct": 11.73
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 3.88995,
+      "actual": 5.06,
+      "surprise_pct": 30.08
     }
   ],
   "insiders": [
@@ -291,7 +291,16 @@
       "date": "2026-08-04"
     },
     {
-      "name": "HARRINGTON CHARLES L",
+      "name": "LAWLESS ROBERT J",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 305.71 per share.",
+      "value": 169975,
+      "shares": 556,
+      "date": "2026-04-28"
+    },
+    {
+      "name": "DE BALMANN YVES C",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 305.71 per share.",
@@ -318,7 +327,7 @@
       "date": "2026-04-28"
     },
     {
-      "name": "RICHARDSON JOHN M",
+      "name": "HOLZRICHTER JULIE",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 305.71 per share.",
@@ -327,7 +336,7 @@
       "date": "2026-04-28"
     },
     {
-      "name": "PATERSON EILEEN PATRICIA",
+      "name": "JAMIL DHIAA M",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 305.71 per share.",
@@ -336,16 +345,7 @@
       "date": "2026-04-28"
     },
     {
-      "name": "LAWLESS ROBERT J",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 305.71 per share.",
-      "value": 169975,
-      "shares": 556,
-      "date": "2026-04-28"
-    },
-    {
-      "name": "DE BALMANN YVES C",
+      "name": "HARRINGTON CHARLES L",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 305.71 per share.",

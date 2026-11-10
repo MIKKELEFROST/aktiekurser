@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:47.324Z",
+  "updated_at": "2026-11-10T00:26:49.204Z",
   "source": "Yahoo Finance",
   "symbol": "CEVA",
   "summary": "CEVA, Inc. provides silicon and software intellectual property (IP) solutions to semiconductor and original equipment manufacturer companies in the United States, Europe, the Middle East, the Asia Pacific, and internationally. The company offers PentaG-RAN, a hardware and software IP for implementing L1 PHY baseband processing in 5G and 5G-A base station and other cellular infrastructure system-on-chips (SoCs); Ceva XC20 DSPs and the PentaG2 platform support 5G/5G Advanced baseband for mobile broadband, RedCap, and IoT devices; Ceva-BX2 baseband processor; Ceva-XC21, high-efficiency vector DSP cores for 5G and 5G-advanced; Ceva-XC23, DSP for 5G and 5G-advanced; and Ceva-Waves Bluetooth platform, a set of hardware IP, software modules, and radios addressing a range of processes and nodes. It also provides Ceva-Waves Wi-Fi platform, a set of hardware IP and CPU-agnostic host software for energy-efficient SoC implementation of Wi-Fi subsystems; Ceva-Waves ultra-wideband platform; Ceva-Waves Links, which provide solutions for SoCs requiring multiple connectivity standards; and Ceva-Waves DragonFly, a turnkey platform for implementing NB-IoT cellular modem SoCs. In addition, the company offers Ceva-SensPro, a family of DSP cores; Ceva-BX1 audio digital signal controller IP; Ceva-ClearVox ENC software, a neural-network-based noise cancellation; Ceva-RealSpace, a spatial audio and head tracking software solution; and Ceva-MotionEngine, a sensor fusion software. Further, it provides Ceva-NeuPro-M, a neural processing unit (NPU) IP for generative AI; a Ceva-NeuPro-Nano, an NPU IP for embedded AI; and Ceva-NeuPro Studio, a software development environment for the development and deployment of AI models on the Ceva-NeuPro NPUs. The company was formerly known as ParthusCeva, Inc. and changed its name to CEVA, Inc. in December 2003. The company was incorporated in 1999 and is headquartered in Rockville, Maryland.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-09",
   "earnings_estimated": false,
   "earnings_call": "2026-11-09",
-  "eps_estimate": 0.18823,
+  "eps_estimate": 0.24541,
   "analysts": {
     "strong_buy": 1,
     "buy": 7,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 28384000,
-      "earnings": -2509000
-    },
-    {
       "q": "4Q2025",
       "revenue": 31291000,
       "earnings": -1098000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 29033000,
       "earnings": -2910000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 29063000,
+      "earnings": -2301000
     }
   ],
   "growth": {
-    "q0": 0.7112,
-    "q1": 0.3634,
+    "q0": 0.3634,
+    "q1": 1.786,
     "y0": 0.3048,
     "y1": 0.4644
   },
@@ -179,6 +179,13 @@
       "date": "2026-06-30"
     },
     {
+      "name": "Deutsche Bank AG",
+      "kind": "institution",
+      "pct": 4.37,
+      "shares": 1229023,
+      "date": "2026-09-30"
+    },
+    {
       "name": "Vanguard Capital Management LLC",
       "kind": "institution",
       "pct": 4.25,
@@ -212,13 +219,6 @@
       "pct": 3.01,
       "shares": 847027,
       "date": "2026-06-30"
-    },
-    {
-      "name": "AWM Investment Company, Inc.",
-      "kind": "institution",
-      "pct": 2.84,
-      "shares": 799806,
-      "date": "2026-06-30"
     }
   ],
   "insider_net": {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.982,
-    "enterprise_value": 488168000,
-    "ev_ebitda": -85.99,
-    "ev_revenue": 4.218,
+    "enterprise_value": 559679360,
+    "ev_ebitda": -98.587,
+    "ev_revenue": 4.836,
     "float_shares": 25581071,
     "short_shares": 2948372,
     "short_pct_float": 10.81,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 285,
+  "inst_count": 286,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.105,
-      "actual": 0.11,
-      "surprise_pct": 4.76
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.182,
@@ -269,6 +263,12 @@
       "estimate": 0.07342,
       "actual": 0.08,
       "surprise_pct": 8.96
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.18823,
+      "actual": 0.13,
+      "surprise_pct": -30.94
     }
   ],
   "insiders": [
@@ -300,15 +300,6 @@
       "date": "2026-08-07"
     },
     {
-      "name": "SILVER LOUIS",
-      "role": "Director",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 27.17 per share.",
-      "value": 353210,
-      "shares": 13000,
-      "date": "2026-06-09"
-    },
-    {
       "name": "MCMANAMON PETER",
       "role": "Director",
       "kind": "other",
@@ -319,6 +310,24 @@
     },
     {
       "name": "SILVER LOUIS",
+      "role": "Director",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 27.17 per share.",
+      "value": 353210,
+      "shares": 13000,
+      "date": "2026-06-09"
+    },
+    {
+      "name": "LIU JACLYN",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 3325,
+      "date": "2026-06-02"
+    },
+    {
+      "name": "FAINTUCH AMIR",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -345,16 +354,7 @@
       "date": "2026-06-02"
     },
     {
-      "name": "LIU JACLYN",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 3325,
-      "date": "2026-06-02"
-    },
-    {
-      "name": "MCMANAMON PETER",
+      "name": "SILVER LOUIS",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

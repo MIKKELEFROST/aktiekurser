@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:48.981Z",
+  "updated_at": "2026-11-10T00:26:50.448Z",
   "source": "Yahoo Finance",
   "symbol": "PACB",
   "summary": "Pacific Biosciences of California, Inc. designs, develops, and manufactures sequencing solutions to resolve genetically complex problems. The company provides sequencing systems; consumable products, including single molecule real-time (SMRT) technology; long-read sequencing; and various reagent kits designed for specific workflow, such as preparation kit to convert DNA into SMRTbell double-stranded DNA library formats, including molecular biology reagents, such as ligase, buffers, and exonucleases. It also offers binding kits, such as modified DNA polymerase used to bind SMRTbell libraries to the polymerase in preparation for sequencing; and sequencing kits comprise reagents required for on-instrument, real-time sequencing, including the phospholinked nucleotides. In addition, the company provides Revio, Vega, and Sequel instruments which conduct, monitor, and analyze single-molecule biochemical reactions on SMRT cell microchips; short-read sequencing; and onso instrument. It serves academic and governmental research institutions, commercial testing and service laboratories, genome centers, public health labs, hospitals and clinical research institutes, contract research organizations, pharmaceutical companies, and agricultural companies. The company markets its products through a sales force and distribution partners in Australia, certain parts of Asia, Europe, the Middle East, Africa, Central America, and South America. It has a collaboration with DNAstack Inc. to provide federated dataset of HiFi whole genome sequencing data. The company was formerly known as Nanofluidics, Inc. and changed its name to Pacific Biosciences of California, Inc. in 2005. Pacific Biosciences of California, Inc. was incorporated in 2000 and is headquartered in Menlo Park, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": -0.13205,
+  "eps_estimate": -0.12676,
   "analysts": {
     "strong_buy": 0,
     "buy": 4,
@@ -19,9 +19,9 @@
     "strong_sell": 1,
     "total": 8
   },
-  "target_mean": 2.54286,
-  "target_high": 3.05,
-  "target_low": 1.25,
+  "target_mean": 2.74286,
+  "target_high": 3,
+  "target_low": 2,
   "target_analysts": 7,
   "statements": [
     {
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": -0.1004,
-    "q1": 0.109799996,
-    "y0": 0.0228,
-    "y1": 0.1864
+    "q0": -0.0563,
+    "q1": 0.10560001,
+    "y0": 0.0732,
+    "y1": 0.1512
   },
   "ratings": [
+    {
+      "date": "2026-11-09",
+      "firm": "UBS",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-11-05",
       "firm": "Barclays",
@@ -140,13 +147,6 @@
       "from": "Neutral",
       "to": "Neutral",
       "action": "main"
-    },
-    {
-      "date": "2025-06-25",
-      "firm": "Barclays",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
-      "action": "main"
     }
   ],
   "holders": [
@@ -200,17 +200,17 @@
       "date": "2026-06-30"
     },
     {
-      "name": "Geode Capital Management, LLC",
-      "kind": "institution",
-      "pct": 2.45,
-      "shares": 7606518,
-      "date": "2026-06-30"
-    },
-    {
       "name": "iShares Trust-iShares Russell 2000 ETF",
       "kind": "fond",
       "pct": 2.38,
       "shares": 7388950,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Geode Capital Management, LLC",
+      "kind": "institution",
+      "pct": 2.13,
+      "shares": 6634439,
       "date": "2026-09-30"
     },
     {
@@ -231,10 +231,10 @@
   },
   "extras": {
     "beta": 2.202,
-    "enterprise_value": 1262281216,
-    "ev_ebitda": -8.248,
-    "ev_revenue": 7.821,
-    "float_shares": 304580089,
+    "enterprise_value": 1247458048,
+    "ev_ebitda": -7.639,
+    "ev_revenue": 7.729,
+    "float_shares": 306223839,
     "short_shares": 46933159,
     "short_pct_float": 17.36,
     "short_ratio": 2.56,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 293,
+  "inst_count": 291,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -266,21 +266,12 @@
     },
     {
       "quarter": "2026-09-30",
-      "estimate": -0.1311,
+      "estimate": -0.1281,
       "actual": -0.11,
-      "surprise_pct": 16.09
+      "surprise_pct": 14.13
     }
   ],
   "insiders": [
-    {
-      "name": "GIBSON JAMES R II",
-      "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 3.11 per share.",
-      "value": 2056921,
-      "shares": 661815,
-      "date": "2026-10-06"
-    },
     {
       "name": "GIBSON JAMES R II",
       "role": "Chief Financial Officer",
@@ -288,6 +279,15 @@
       "text": "Conversion of Exercise of derivative security at price 1.18 per share.",
       "value": 590000,
       "shares": 500000,
+      "date": "2026-10-06"
+    },
+    {
+      "name": "GIBSON JAMES R II",
+      "role": "Chief Financial Officer",
+      "kind": "sell",
+      "text": "Sale at price 3.11 per share.",
+      "value": 2056921,
+      "shares": 661815,
       "date": "2026-10-06"
     },
     {
@@ -345,21 +345,21 @@
       "date": "2026-03-03"
     },
     {
-      "name": "GIBSON CHRISTOPHER C.",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 53913,
-      "date": "2026-03-03"
-    },
-    {
       "name": "FARMER MICHELE CPA",
       "role": "Officer",
       "kind": "sell",
       "text": "Sale at price 1.51 per share.",
       "value": 4510,
       "shares": 2979,
+      "date": "2026-03-03"
+    },
+    {
+      "name": "GIBSON CHRISTOPHER C.",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 53913,
       "date": "2026-03-03"
     }
   ],

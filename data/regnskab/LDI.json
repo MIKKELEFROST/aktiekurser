@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:48.447Z",
+  "updated_at": "2026-11-10T00:26:50.074Z",
   "source": "Yahoo Finance",
   "symbol": "LDI",
   "summary": "loanDepot, Inc. engages in originating, financing, selling, and servicing residential mortgage loans in the United States. The company offers conventional agency-conforming and prime jumbo, federal assistance residential mortgage, and home equity lines of credit and closed-end second liens. It also provides title, escrow, and settlement services for mortgage loan transactions; real estate services that cover captive real estate referral business; and insurance services, including services to homeowners, as well as other consumer insurance policies. The company was founded in 2010 and is headquartered in Irvine, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-09",
   "earnings_estimated": false,
   "earnings_call": "2026-11-09",
-  "eps_estimate": -0.01,
+  "eps_estimate": -0.07333,
   "analysts": {
     "strong_buy": 0,
     "buy": 0,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 323324000,
-      "earnings": -4882000
-    },
-    {
       "q": "4Q2025",
       "revenue": 310260000,
       "earnings": -22480000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 337321000,
       "earnings": -4533000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 307145000,
+      "earnings": 0
     }
   ],
   "growth": {
-    "q0": 0.2593,
-    "q1": 0.2361,
+    "q0": 0.2361,
+    "q1": 0.1359,
     "y0": 0.175,
     "y1": 0.4156
   },
@@ -165,18 +165,18 @@
       "date": "2026-06-30"
     },
     {
-      "name": "Geode Capital Management, LLC",
-      "kind": "institution",
-      "pct": 1.7,
-      "shares": 3933045,
-      "date": "2026-06-30"
-    },
-    {
       "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
       "kind": "fond",
       "pct": 1.57,
       "shares": 3640384,
       "date": "2026-06-30"
+    },
+    {
+      "name": "Geode Capital Management, LLC",
+      "kind": "institution",
+      "pct": 1.43,
+      "shares": 3309819,
+      "date": "2026-09-30"
     },
     {
       "name": "iShares Trust-iShares Russell 2000 ETF",
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 3.216,
-    "enterprise_value": 5923788288,
+    "enterprise_value": 5927132672,
     "ev_ebitda": null,
-    "ev_revenue": 4.7,
+    "ev_revenue": 4.702,
     "float_shares": 109574262,
     "short_shares": 22376634,
     "short_pct_float": 19.13,
@@ -247,12 +247,6 @@
   "inst_count": 175,
   "eps_history": [
     {
-      "quarter": "2025-09-30",
-      "estimate": -0.01331,
-      "actual": -0.0135,
-      "surprise_pct": -1.43
-    },
-    {
       "quarter": "2025-12-31",
       "estimate": -0.02,
       "actual": -0.096,
@@ -261,14 +255,20 @@
     {
       "quarter": "2026-03-31",
       "estimate": -0.04,
-      "actual": -0.1469,
-      "surprise_pct": -267.25
+      "actual": -0.1003,
+      "surprise_pct": -150.75
     },
     {
       "quarter": "2026-06-30",
       "estimate": 0.025,
-      "actual": -0.1262,
-      "surprise_pct": -604.8
+      "actual": -0.0865,
+      "surprise_pct": -446
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.01,
+      "actual": -0.0911,
+      "surprise_pct": -811
     }
   ],
   "insiders": [

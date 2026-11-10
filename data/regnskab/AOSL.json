@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:46.908Z",
+  "updated_at": "2026-11-10T00:26:48.871Z",
   "source": "Yahoo Finance",
   "symbol": "AOSL",
   "summary": "Alpha and Omega Semiconductor Limited designs, develops, and supplies power semiconductor products for computing, consumer electronics, communication, and industrial applications in Hong Kong, China, South Korea, the United States, and internationally. The company offers power discrete products, including industry standard trench metal-oxide-semiconductor field-effect transistors (MOSFETs), Shielded-Gate low- and mid-voltage MOSFETs, SuperJunction high-voltage MOSFETs, and trench-stop insulated gate bipolar transistors, as well as application-specific MOSFETs for smartphone battery management, dual MOSFETs for CPU power conversion, and high-power density MOSFETs for IBC power modules in AI data centers. It also provides power IC products, total power solutions for Intel panther lake and wildcat lake platforms, and the SmartClamp family of protected DrMOS for AI servers, data centers, and high-end graphics cards, as well as silicon carbide, IPM, HV gate drivers, and digital power products. Alpha and Omega Semiconductor Limited was incorporated in 2000 and is headquartered in Sunnyvale, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": -0.16,
+  "eps_estimate": null,
   "analysts": {
     "strong_buy": 1,
     "buy": 1,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 4
   },
-  "target_mean": 40.5,
-  "target_high": 58,
-  "target_low": 25,
+  "target_mean": 29.75,
+  "target_high": 40,
+  "target_low": 22,
   "target_analysts": 4,
   "statements": [
     {
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0,
-    "q1": 0.29459998,
-    "y0": -0.2849,
-    "y1": 1.5701
+    "q0": null,
+    "q1": 0.375,
+    "y0": 0.2093,
+    "y1": 2.1324
   },
   "ratings": [
+    {
+      "date": "2026-11-07",
+      "firm": "Lake Street",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-11-06",
       "firm": "B. Riley Securities",
@@ -140,13 +147,6 @@
       "from": "Hold",
       "to": "Hold",
       "action": "main"
-    },
-    {
-      "date": "2026-05-01",
-      "firm": "Needham",
-      "from": null,
-      "to": "Buy",
-      "action": "init"
     }
   ],
   "holders": [
@@ -227,14 +227,14 @@
     "sells": 3,
     "bought": 3934101,
     "sold": 10707,
-    "net_pct": 317.9
+    "net_pct": 317.5
   },
   "extras": {
-    "beta": null,
-    "enterprise_value": 410490400,
-    "ev_ebitda": 42.926,
-    "ev_revenue": 0.609,
-    "float_shares": 25138604,
+    "beta": 2.768,
+    "enterprise_value": 565603968,
+    "ev_ebitda": 56.788,
+    "ev_revenue": 0.839,
+    "float_shares": 25154283,
     "short_shares": 3174338,
     "short_pct_float": 12.62,
     "short_ratio": 5.8,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 287,
+  "inst_count": 289,
   "eps_history": [
     {
       "quarter": "2025-12-31",

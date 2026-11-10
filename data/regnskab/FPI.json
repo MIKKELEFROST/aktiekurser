@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:47.865Z",
+  "updated_at": "2026-11-10T00:26:49.655Z",
   "source": "Yahoo Finance",
   "symbol": "FPI",
   "summary": "Farmland Partners Inc. is an internally managed real estate company that owns and seeks to acquire high-quality North American farmland and makes loans to third-party farmers (both tenant and non-tenant) and landowners secured by farm real estate and/or other agricultural related assets. As of September 30, 2026, the Company owned approximately 70,000 acres of farmland in 11 states, including Arkansas, California, Colorado, Illinois, Indiana, Louisiana, Missouri, Nebraska, South Carolina, Texas and West Virginia. In addition, the Company owns land and buildings for four agriculture equipment dealerships in Ohio leased to Ag Pro under the John Deere brand. The Company elected to be taxed as a real estate investment trust, or REIT, for U.S. federal income tax purposes, commencing with the taxable year ended December 31, 2014. Farmland Partners Inc. was established on September 27, 2013, and is based in Denver, United States.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-28",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": null,
+  "eps_estimate": 0.17,
   "analysts": {
     "strong_buy": 0,
     "buy": 0,
@@ -71,7 +71,12 @@
       "earnings": -15438000
     }
   ],
-  "growth": null,
+  "growth": {
+    "q0": -0.12550001,
+    "q1": -0.3438,
+    "y0": null,
+    "y1": null
+  },
   "ratings": [
     {
       "date": "2026-03-12",
@@ -190,9 +195,9 @@
     {
       "name": "Geode Capital Management, LLC",
       "kind": "institution",
-      "pct": 2.83,
-      "shares": 1186196,
-      "date": "2026-06-30"
+      "pct": 2.82,
+      "shares": 1182629,
+      "date": "2026-09-30"
     },
     {
       "name": "Two Sigma Investments, LP",
@@ -209,10 +214,10 @@
       "date": "2026-09-30"
     },
     {
-      "name": "Deutsche Bank AG",
+      "name": "State Street Corporation",
       "kind": "institution",
-      "pct": 2.24,
-      "shares": 940234,
+      "pct": 2.18,
+      "shares": 916218,
       "date": "2026-06-30"
     }
   ],
@@ -226,9 +231,9 @@
   },
   "extras": {
     "beta": 0.801,
-    "enterprise_value": 600339520,
-    "ev_ebitda": 27.05,
-    "ev_revenue": 12.121,
+    "enterprise_value": 603677056,
+    "ev_ebitda": 27.2,
+    "ev_revenue": 12.189,
     "float_shares": 38199362,
     "short_shares": 3910834,
     "short_pct_float": 11.56,
@@ -239,7 +244,7 @@
   "ex_dividend": "2027-01-04",
   "dividend_date": null,
   "payout_ratio": 2.2,
-  "inst_count": 253,
+  "inst_count": 255,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -359,10 +364,6 @@
     }
   ],
   "dividends": [
-    {
-      "date": "2017-06-28",
-      "amount": 0.128
-    },
     {
       "date": "2017-09-29",
       "amount": 0.128
@@ -517,6 +518,10 @@
     },
     {
       "date": "2026-07-01",
+      "amount": 0.09
+    },
+    {
+      "date": "2026-10-01",
       "amount": 0.09
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:47.820Z",
+  "updated_at": "2026-11-10T00:26:49.618Z",
   "source": "Yahoo Finance",
   "symbol": "FIG",
   "summary": "Figma, Inc. develops and sells a collaborative, browser-based platform for designing, prototyping, building digital experiences, and subscriptions for access to its platform. The company offers Figma Design, a collaborative design tool for teams that explore ideas and gather feedback, build realistic prototypes, and streamline product development with design systems; Dev Mode to inspect designs and translate them into code without changing the design file; FigJam to define ideas, align decisions, and move work forwardall in one place; and Figma Slides, a presentation tool built for designers and their teams. It also provides Figma Draw to create expressive designs with illustration tools; Figma Buzz, which publishes brand templates to create social media assets, display ads, one-pagers, and others; Figma Sites to design, prototype, and publish; Payload CMS is an open-source, headless content management system and application framework acquired by Figma; Figma Make, an AI tool to design and prompt way to a functional prototype; Figma Weave for AI-powered media generation and editing. The company was incorporated in 2012 and is headquartered in San Francisco, California.",
@@ -10,19 +10,19 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 0.05226,
+  "eps_estimate": 0.05933,
   "analysts": {
-    "strong_buy": 2,
+    "strong_buy": 1,
     "buy": 4,
-    "hold": 10,
+    "hold": 11,
     "sell": 0,
     "strong_sell": 0,
     "total": 16
   },
-  "target_mean": 29.9,
-  "target_high": 35,
+  "target_mean": 27.40909,
+  "target_high": 34,
   "target_low": 22,
-  "target_analysts": 10,
+  "target_analysts": 11,
   "statements": [
     {
       "year": "2024",
@@ -60,12 +60,19 @@
     }
   ],
   "growth": {
-    "q0": -0.3468,
-    "q1": 0.0335,
-    "y0": -0.0323,
-    "y1": 0.2559
+    "q0": -0.2584,
+    "q1": 0.012,
+    "y0": 0.1359,
+    "y1": 0.1751
   },
   "ratings": [
+    {
+      "date": "2026-11-06",
+      "firm": "Citigroup",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-11-05",
       "firm": "JP Morgan",
@@ -124,13 +131,6 @@
     },
     {
       "date": "2026-08-07",
-      "firm": "Citigroup",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-07-24",
       "firm": "Citigroup",
       "from": "Buy",
       "to": "Buy",
@@ -219,10 +219,10 @@
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 8260958208,
-    "ev_ebitda": -15.153,
-    "ev_revenue": 5.906,
-    "float_shares": 267576139,
+    "enterprise_value": 8775166976,
+    "ev_ebitda": -16.097,
+    "ev_revenue": 6.274,
+    "float_shares": 268899155,
     "short_shares": 37135410,
     "short_pct_float": 18.42,
     "short_ratio": 3.29,
@@ -232,7 +232,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 505,
+  "inst_count": 508,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -254,9 +254,9 @@
     },
     {
       "quarter": "2026-09-30",
-      "estimate": 0.0546,
+      "estimate": 0.05625,
       "actual": 0.1,
-      "surprise_pct": 83.15
+      "surprise_pct": 77.78
     }
   ],
   "insiders": [
@@ -281,15 +281,6 @@
     {
       "name": "RADAKOVICH LYNN VOJVODICH",
       "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 22.04 - 22.75 per share.",
-      "value": 458594,
-      "shares": 20266,
-      "date": "2026-10-15"
-    },
-    {
-      "name": "RADAKOVICH LYNN VOJVODICH",
-      "role": "Director",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 0.28 per share.",
       "value": 5756,
@@ -297,13 +288,13 @@
       "date": "2026-10-15"
     },
     {
-      "name": "HERB TYLER",
-      "role": "Officer",
+      "name": "RADAKOVICH LYNN VOJVODICH",
+      "role": "Director",
       "kind": "sell",
-      "text": "Sale at price 21.62 per share.",
-      "value": 30664,
-      "shares": 1418,
-      "date": "2026-10-05"
+      "text": "Sale at price 22.04 - 22.75 per share.",
+      "value": 458594,
+      "shares": 20266,
+      "date": "2026-10-15"
     },
     {
       "name": "MULLIGAN BRENDAN",
@@ -318,10 +309,10 @@
       "name": "HERB TYLER",
       "role": "Officer",
       "kind": "sell",
-      "text": "Sale at price 26.29 per share.",
-      "value": 37227,
-      "shares": 1416,
-      "date": "2026-09-03"
+      "text": "Sale at price 21.62 per share.",
+      "value": 30664,
+      "shares": 1418,
+      "date": "2026-10-05"
     },
     {
       "name": "MULLIGAN BRENDAN",
@@ -330,6 +321,15 @@
       "text": "Sale at price 25.73 - 26.35 per share.",
       "value": 2834526,
       "shares": 109106,
+      "date": "2026-09-03"
+    },
+    {
+      "name": "HERB TYLER",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 26.29 per share.",
+      "value": 37227,
+      "shares": 1416,
       "date": "2026-09-03"
     },
     {

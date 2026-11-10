@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:46.875Z",
+  "updated_at": "2026-11-10T00:26:48.842Z",
   "source": "Yahoo Finance",
   "symbol": "AMG",
   "summary": "Affiliated Managers Group, Inc., through its affiliates, operates as an investment management company providing investment management services to mutual funds, institutional clients,retails and high net worth individuals in the United States. It provides advisory or sub-advisory services to mutual funds. These funds are distributed to retail, high net worth and institutional clients directly and through intermediaries, including independent investment advisors, retirement plan sponsors, broker-dealers, major fund marketplaces, and bank trust departments. The company also offers investment products in various investment styles in the institutional distribution channel, including small, small/mid, mid, and large capitalization value and growth equity, and emerging markets. In addition, it offers quantitative, alternative, and fixed income products, and manages assets for foundations and endowments, defined benefit, and defined contribution plans for corporations and municipalities. Affiliated Managers Group provides investment management or customized investment counseling and fiduciary services. Affiliated Managers Group, Inc. was formed in 1993 and is based in West Palm Beach, Florida with additional offices in Prides Crossing, Massachusetts; Stamford, Connecticut; London, United Kingdom; Dubai, United Arab Emirates; Sydney, Australia; Hong Kong; Tokyo, Japan, Zurich, Switzerland and Delaware.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-09",
   "earnings_estimated": false,
   "earnings_call": "2026-11-09",
-  "eps_estimate": 8.78692,
+  "eps_estimate": 11.90275,
   "analysts": {
     "strong_buy": 1,
     "buy": 5,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 528000000,
-      "earnings": 212400000
-    },
-    {
       "q": "4Q2025",
       "revenue": 556600000,
       "earnings": 347600000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 640700000,
       "earnings": 185900000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 595200000,
+      "earnings": 173300000
     }
   ],
   "growth": {
-    "q0": 0.4405,
-    "q1": 0.2556,
+    "q0": 0.2556,
+    "q1": 0.16479999,
     "y0": 0.4278,
     "y1": 0.1601
   },
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 7,
-    "sells": 3,
+    "sells": 1,
     "bought": 81403,
-    "sold": 21902,
-    "net_pct": 5.7
+    "sold": 17500,
+    "net_pct": 6.2
   },
   "extras": {
     "beta": 1.052,
-    "enterprise_value": 12927040512,
-    "ev_ebitda": 20.663,
-    "ev_revenue": 5.694,
+    "enterprise_value": 13248221184,
+    "ev_ebitda": 21.177,
+    "ev_revenue": 5.836,
     "float_shares": 24845965,
     "short_shares": 945382,
     "short_pct_float": 4.92,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-08-10",
   "dividend_date": null,
   "payout_ratio": 0.0014,
-  "inst_count": 764,
+  "inst_count": 766,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 5.88127,
-      "actual": 6.1,
-      "surprise_pct": 3.72
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 8.83698,
@@ -269,6 +263,12 @@
       "estimate": 7.91847,
       "actual": 8.29,
       "surprise_pct": 4.69
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 8.78692,
+      "actual": 9.5,
+      "surprise_pct": 8.12
     }
   ],
   "insiders": [
@@ -320,19 +320,19 @@
     {
       "name": "HORGEN JAY C",
       "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 338.27 per share.",
-      "value": 5919725,
-      "shares": 17500,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 74.49 per share.",
+      "value": 5586750,
+      "shares": 75000,
       "date": "2026-06-08"
     },
     {
       "name": "HORGEN JAY C",
       "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 74.49 per share.",
-      "value": 5586750,
-      "shares": 75000,
+      "kind": "sell",
+      "text": "Sale at price 338.27 per share.",
+      "value": 5919725,
+      "shares": 17500,
       "date": "2026-06-08"
     },
     {
@@ -354,12 +354,12 @@
       "date": "2026-05-08"
     },
     {
-      "name": "RYAN DAVID CHRISTOPHER",
+      "name": "CATES G. STALEY",
       "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 305.06 per share.",
-      "value": 1037814,
-      "shares": 3402,
+      "kind": "buy",
+      "text": "Purchase at price 305.83 per share.",
+      "value": 458745,
+      "shares": 1500,
       "date": "2026-05-06"
     }
   ],

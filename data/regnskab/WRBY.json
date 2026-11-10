@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:46:49.878Z",
+  "updated_at": "2026-11-10T00:26:51.180Z",
   "source": "Yahoo Finance",
   "symbol": "WRBY",
   "summary": "Warby Parker Inc. sells eyewear products through its retail and e-commerce platform in the United States and Canada. The company offers eyeglasses and sunglasses; and single-vision, progressive, light-responsive, polarized, blue-light-filtering, tinted, non-prescription, and contact lenses. It also provides accessories, such as cases, pouches, lenses kit with anti-fog spray, travel cases, lenses cloth, anti-fog lens spray, and sun clip-ons through its stores, website, and mobile apps. In addition, the company offers eye exams and vision tests, as well as optical services. Warby Parker Inc. was incorporated in 2009 and is headquartered in New York, New York.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.09992,
+  "eps_estimate": 0.08674,
   "analysts": {
     "strong_buy": 2,
     "buy": 8,
@@ -19,8 +19,8 @@
     "strong_sell": 0,
     "total": 13
   },
-  "target_mean": 31,
-  "target_high": 35,
+  "target_mean": 32.25,
+  "target_high": 40,
   "target_low": 25,
   "target_analysts": 12,
   "statements": [
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 3.5151,
-    "q1": 0.3066,
-    "y0": 1.0088,
-    "y1": 0.4388
+    "q0": 2.9196,
+    "q1": 0.4603,
+    "y0": 1.0284,
+    "y1": 0.5028
   },
   "ratings": [
+    {
+      "date": "2026-11-06",
+      "firm": "UBS",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-11-06",
       "firm": "Citizens",
@@ -140,83 +147,76 @@
       "from": "Outperform",
       "to": "Outperform",
       "action": "main"
-    },
-    {
-      "date": "2025-12-16",
-      "firm": "Piper Sandler",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
     }
   ],
   "holders": [
     {
       "name": "FMR, LLC",
       "kind": "institution",
-      "pct": 14.39,
+      "pct": 14.32,
       "shares": 15577440,
       "date": "2026-06-30"
     },
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 14.14,
+      "pct": 14.07,
       "shares": 15309616,
       "date": "2026-06-30"
     },
     {
       "name": "JPMORGAN CHASE & CO",
       "kind": "institution",
-      "pct": 10.27,
+      "pct": 10.21,
       "shares": 11110949,
       "date": "2026-06-30"
     },
     {
       "name": "Durable Capital Partners Lp",
       "kind": "institution",
-      "pct": 5.91,
+      "pct": 5.88,
       "shares": 6396513,
       "date": "2026-06-30"
     },
     {
       "name": "iShares Trust-iShares Core S&P Small-Cap ETF",
       "kind": "fond",
-      "pct": 5.66,
+      "pct": 5.63,
       "shares": 6121596,
       "date": "2026-09-30"
     },
     {
       "name": "Vanguard Portfolio Management LLC",
       "kind": "institution",
-      "pct": 5.53,
+      "pct": 5.5,
       "shares": 5983328,
       "date": "2026-06-30"
     },
     {
       "name": "Fidelity Securities Fund-Fidelity Blue Chip Growth Fund",
       "kind": "fond",
-      "pct": 4.26,
+      "pct": 4.23,
       "shares": 4605777,
       "date": "2026-09-30"
     },
     {
       "name": "Vanguard Capital Management LLC",
       "kind": "institution",
-      "pct": 4.15,
+      "pct": 4.12,
       "shares": 4487337,
       "date": "2026-06-30"
     },
     {
       "name": "State Street Corporation",
       "kind": "institution",
-      "pct": 3.87,
+      "pct": 3.85,
       "shares": 4184803,
       "date": "2026-06-30"
     },
     {
       "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
       "kind": "fond",
-      "pct": 2.98,
+      "pct": 2.97,
       "shares": 3226137,
       "date": "2026-06-30"
     }
@@ -231,12 +231,12 @@
   },
   "extras": {
     "beta": 1.952,
-    "enterprise_value": 3210913280,
-    "ev_ebitda": 59.114,
-    "ev_revenue": 3.435,
-    "float_shares": 94926302,
+    "enterprise_value": 3732432384,
+    "ev_ebitda": 78.96,
+    "ev_revenue": 3.993,
+    "float_shares": 95182698,
     "short_shares": 20504550,
-    "short_pct_float": 23.58,
+    "short_pct_float": 23.54,
     "short_ratio": 5.88,
     "last_split": null,
     "last_split_date": null
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 418,
+  "inst_count": 417,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -302,18 +302,27 @@
     {
       "name": "BLUMENTHAL NEIL HARRIS",
       "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 29.99 per share.",
-      "value": 275908,
+      "kind": "other",
+      "text": null,
+      "value": null,
       "shares": 9200,
+      "date": "2026-07-06"
+    },
+    {
+      "name": "GILBOA DAVID ABRAHAM",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 54347,
       "date": "2026-07-06"
     },
     {
       "name": "BLUMENTHAL NEIL HARRIS",
       "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
+      "kind": "sell",
+      "text": "Sale at price 29.99 per share.",
+      "value": 275908,
       "shares": 9200,
       "date": "2026-07-06"
     },
@@ -327,24 +336,6 @@
       "date": "2026-07-06"
     },
     {
-      "name": "GILBOA DAVID ABRAHAM",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 54347,
-      "date": "2026-07-06"
-    },
-    {
-      "name": "BLUMENTHAL NEIL HARRIS",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 29.61 per share.",
-      "value": 6445120,
-      "shares": 217667,
-      "date": "2026-07-01"
-    },
-    {
       "name": "BLUMENTHAL NEIL HARRIS",
       "role": "Chief Executive Officer",
       "kind": "other",
@@ -354,12 +345,21 @@
       "date": "2026-07-01"
     },
     {
-      "name": "RAIDER JEFFREY JACOB",
-      "role": "Director",
+      "name": "GILBOA DAVID ABRAHAM",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 213746,
+      "date": "2026-07-01"
+    },
+    {
+      "name": "BLUMENTHAL NEIL HARRIS",
+      "role": "Chief Executive Officer",
       "kind": "sell",
-      "text": "Sale at price 29.72 per share.",
-      "value": 668700,
-      "shares": 22500,
+      "text": "Sale at price 29.61 per share.",
+      "value": 6445120,
+      "shares": 217667,
       "date": "2026-07-01"
     }
   ],
