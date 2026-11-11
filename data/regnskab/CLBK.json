@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:22.141Z",
+  "updated_at": "2026-11-11T23:05:22.203Z",
   "source": "Yahoo Finance",
   "symbol": "CLBK",
   "summary": "Columbia Financial, Inc. operates as a bank holding company for Columbia Bank that provides banking and other financial services to businesses and consumers in the United States. The company offers deposit products, including non-interest and interest-bearing demand accounts, savings and club deposits, money market accounts, and certificates of deposit. It also provides commercial loans, including multifamily and commercial real estate, commercial business, and construction loans; residential loans, such as one-to-four family residential real estate and one-to-four family residential loans; consumer loans, which includes home equity loans and advances, as well as automobile, personal, unsecured, and overdraft lines of credit; and securities activities. In addition, the company offers title insurance products; wealth management services; and cash management services comprising remote deposit, lockbox service, sweep accounts, and escrow services. Columbia Financial, Inc. was founded in 1926 and is based in Fair Lawn, New Jersey.",
@@ -151,6 +151,13 @@
   ],
   "holders": [
     {
+      "name": "FMR, LLC",
+      "kind": "institution",
+      "pct": 4.84,
+      "shares": 13056689,
+      "date": "2026-09-30"
+    },
+    {
       "name": "Dimensional Fund Advisors LP",
       "kind": "institution",
       "pct": 3.05,
@@ -212,13 +219,6 @@
       "pct": 1.04,
       "shares": 2806954,
       "date": "2026-06-30"
-    },
-    {
-      "name": "State Street Corporation",
-      "kind": "institution",
-      "pct": 1,
-      "shares": 2695891,
-      "date": "2026-06-30"
     }
   ],
   "insider_net": {
@@ -231,20 +231,20 @@
   },
   "extras": {
     "beta": 0.269,
-    "enterprise_value": 4096846848,
+    "enterprise_value": 4134558464,
     "ev_ebitda": null,
-    "ev_revenue": 14.883,
-    "float_shares": 261787383,
-    "short_shares": 22510180,
-    "short_pct_float": 11.75,
-    "short_ratio": 4.86,
+    "ev_revenue": 15.02,
+    "float_shares": 261787676,
+    "short_shares": 20081991,
+    "short_pct_float": 10.48,
+    "short_ratio": 6.27,
     "last_split": "22:10",
     "last_split_date": "2026-07-21"
   },
   "ex_dividend": "2026-11-10",
   "dividend_date": null,
-  "payout_ratio": 0,
-  "inst_count": 195,
+  "payout_ratio": 0.102,
+  "inst_count": 213,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -282,15 +282,6 @@
       "date": "2026-10-16"
     },
     {
-      "name": "KLIMOWICH JOHN",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 11.41 per share.",
-      "value": 685,
-      "shares": 60,
-      "date": "2026-10-02"
-    },
-    {
       "name": "KEMLY THOMAS J",
       "role": "Chief Executive Officer",
       "kind": "other",
@@ -312,10 +303,10 @@
       "name": "KLIMOWICH JOHN",
       "role": "Officer",
       "kind": "other",
-      "text": "Stock Award(Grant) at price 11.58 per share.",
+      "text": "Stock Award(Grant) at price 11.41 per share.",
       "value": 685,
-      "shares": 59,
-      "date": "2026-09-18"
+      "shares": 60,
+      "date": "2026-10-02"
     },
     {
       "name": "KEMLY THOMAS J",
@@ -330,10 +321,10 @@
       "name": "KLIMOWICH JOHN",
       "role": "Officer",
       "kind": "other",
-      "text": "Stock Award(Grant) at price 11.70 per share.",
+      "text": "Stock Award(Grant) at price 11.58 per share.",
       "value": 685,
-      "shares": 58,
-      "date": "2026-09-04"
+      "shares": 59,
+      "date": "2026-09-18"
     },
     {
       "name": "KEMLY THOMAS J",
@@ -354,11 +345,20 @@
       "date": "2026-09-04"
     },
     {
+      "name": "KLIMOWICH JOHN",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 11.70 per share.",
+      "value": 685,
+      "shares": 58,
+      "date": "2026-09-04"
+    },
+    {
       "name": "HOLLAND NOEL R",
       "role": "Director",
-      "kind": "buy",
-      "text": "Purchase at price 11.68 per share.",
-      "value": 234,
+      "kind": "other",
+      "text": "Stock Gift at price 0.00 per share.",
+      "value": 0,
       "shares": 20,
       "date": "2026-09-03"
     }
@@ -366,6 +366,10 @@
   "dividends": [
     {
       "date": "2026-08-12",
+      "amount": 0.05
+    },
+    {
+      "date": "2026-11-10",
       "amount": 0.05
     }
   ],

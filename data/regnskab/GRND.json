@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:22.518Z",
+  "updated_at": "2026-11-11T23:05:22.617Z",
   "source": "Yahoo Finance",
   "symbol": "GRND",
   "summary": "Grindr Inc. operates a social networking and dating application for the lesbian, gay, bisexual, transgender, and queer (LGBTQ) communities worldwide. It manages and operates Grindr platform, a social networking platform serving and addressing the needs of gay, bisexual, and sexually explorative adults. It also offers Grindr as the Global Gayborhood in Your Pocket brand. In addition, the company provides ad-supported service and a premium subscription version. Grindr Inc. was founded in 2009 and is headquartered in West Hollywood, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": null,
+  "eps_estimate": 0.1,
   "analysts": {
     "strong_buy": 3,
     "buy": 2,
@@ -71,7 +71,12 @@
       "earnings": -6599000
     }
   ],
-  "growth": null,
+  "growth": {
+    "q0": -0.0542,
+    "q1": null,
+    "y0": -0.3818,
+    "y1": 1.4483
+  },
   "ratings": [
     {
       "date": "2026-07-01",
@@ -195,13 +200,6 @@
       "date": "2026-06-30"
     },
     {
-      "name": "Quinn Opportunity Partners, LLC",
-      "kind": "institution",
-      "pct": 0.84,
-      "shares": 1482373,
-      "date": "2026-06-30"
-    },
-    {
       "name": "Tikvah Management LLC",
       "kind": "institution",
       "pct": 0.83,
@@ -213,6 +211,13 @@
       "kind": "institution",
       "pct": 0.78,
       "shares": 1379564,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Capital Management LLC",
+      "kind": "institution",
+      "pct": 0.77,
+      "shares": 1364113,
       "date": "2026-06-30"
     }
   ],
@@ -226,20 +231,20 @@
   },
   "extras": {
     "beta": 0.232,
-    "enterprise_value": 2701894144,
-    "ev_ebitda": 23.016,
-    "ev_revenue": 5.046,
+    "enterprise_value": 2717799936,
+    "ev_ebitda": 23.151,
+    "ev_revenue": 5.076,
     "float_shares": 48369107,
-    "short_shares": 8324503,
-    "short_pct_float": 17.51,
-    "short_ratio": 4.61,
+    "short_shares": 10057378,
+    "short_pct_float": 21.16,
+    "short_ratio": 4.93,
     "last_split": null,
     "last_split_date": null
   },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 261,
+  "inst_count": 264,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -306,19 +311,19 @@
     {
       "name": "BALANCE AUSTIN J",
       "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 15.46 per share.",
-      "value": 1385803,
-      "shares": 89638,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 4.20 per share.",
+      "value": 110477,
+      "shares": 26304,
       "date": "2026-08-31"
     },
     {
       "name": "BALANCE AUSTIN J",
       "role": "Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 4.20 per share.",
-      "value": 110477,
-      "shares": 26304,
+      "kind": "sell",
+      "text": "Sale at price 15.46 per share.",
+      "value": 1385803,
+      "shares": 89638,
       "date": "2026-08-31"
     },
     {

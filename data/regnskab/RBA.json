@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:23.126Z",
+  "updated_at": "2026-11-11T23:05:23.809Z",
   "source": "Yahoo Finance",
   "symbol": "RBA",
   "summary": "RB Global, Inc. operates a marketplace that provides insights, services, and transaction solutions for buyers and sellers of commercial assets and vehicles worldwide. The company's marketplace brands include Ritchie Bros., an auctioneer of commercial assets and vehicles; IAA, a digital marketplace that connects vehicle buyers and sellers; Rouse, which provides asset management, data-driven intelligence, and performance benchmarking system; SmartEquip, a technology platform that supports customers' management of the equipment lifecycle; and Veritread, an online marketplace for heavy haul transport solution. It also offers transaction, financial, loan payoff, appraisal, inspection, listing, refurbishing, transportation and logistics, data, parts, catastrophe response, and title services. In addition, it operates as a digital dealer for buying and selling heavy equipment and cars. The company serves customers across various asset classes, including automotive, commercial transportation, construction, government surplus, lifting and material handling, energy, mining, and agriculture. The company was formerly known as Ritchie Bros. Auctioneers Incorporated and changed its name to RB Global, Inc. in May 2023. The company was founded in 1958 and is headquartered in Westchester, Illinois.",
@@ -10,18 +10,18 @@
   "next_earnings": "2026-11-09",
   "earnings_estimated": false,
   "earnings_call": "2026-11-09",
-  "eps_estimate": 1.2436,
+  "eps_estimate": 1.23275,
   "analysts": {
-    "strong_buy": 4,
+    "strong_buy": 5,
     "buy": 6,
-    "hold": 2,
+    "hold": 1,
     "sell": 0,
     "strong_sell": 0,
     "total": 12
   },
-  "target_mean": 127.63636,
+  "target_mean": 127.27273,
   "target_high": 145,
-  "target_low": 104,
+  "target_low": 103,
   "target_analysts": 11,
   "statements": [
     {
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.1204,
-    "q1": 0.12640001,
-    "y0": 0.1038,
-    "y1": 0.0964
+    "q0": 0.1106,
+    "q1": 0.11399999,
+    "y0": 0.1104,
+    "y1": 0.0959
   },
   "ratings": [
+    {
+      "date": "2026-11-11",
+      "firm": "Barclays",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-11-10",
       "firm": "RBC Capital",
@@ -140,13 +147,6 @@
       "from": "Equal-Weight",
       "to": "Equal-Weight",
       "action": "reit"
-    },
-    {
-      "date": "2026-04-17",
-      "firm": "Stephens & Co.",
-      "from": null,
-      "to": "Equal-Weight",
-      "action": "init"
     }
   ],
   "holders": [
@@ -172,17 +172,17 @@
       "date": "2026-06-30"
     },
     {
+      "name": "FIL LTD",
+      "kind": "institution",
+      "pct": 5.81,
+      "shares": 10528776,
+      "date": "2026-09-30"
+    },
+    {
       "name": "Edgepoint Investment Group Inc.",
       "kind": "institution",
       "pct": 5.28,
       "shares": 9562646,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "FIL LTD",
-      "kind": "institution",
-      "pct": 4.85,
-      "shares": 8786787,
       "date": "2026-06-30"
     },
     {
@@ -231,20 +231,20 @@
   },
   "extras": {
     "beta": 0.473,
-    "enterprise_value": 22059800576,
-    "ev_ebitda": 15.759,
-    "ev_revenue": 4.386,
+    "enterprise_value": 22330595328,
+    "ev_ebitda": 16.103,
+    "ev_revenue": 4.44,
     "float_shares": 171391955,
-    "short_shares": 17397454,
-    "short_pct_float": 12.79,
-    "short_ratio": 9.63,
+    "short_shares": 18308844,
+    "short_pct_float": 13.46,
+    "short_ratio": 8.42,
     "last_split": "3:1",
     "last_split_date": "2008-04-28"
   },
-  "ex_dividend": "2026-08-25",
+  "ex_dividend": "2026-11-25",
   "dividend_date": null,
   "payout_ratio": 0.48650002,
-  "inst_count": 820,
+  "inst_count": 815,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -318,7 +318,7 @@
       "date": "2026-05-05"
     },
     {
-      "name": "DEWITT ADAM J",
+      "name": "SIEGER MICHAEL D",
       "role": "Director",
       "kind": "other",
       "text": null,
@@ -327,7 +327,7 @@
       "date": "2026-04-30"
     },
     {
-      "name": "SIEGER MICHAEL D",
+      "name": "DEWITT ADAM J",
       "role": "Director",
       "kind": "other",
       "text": null,
@@ -354,12 +354,12 @@
       "date": "2026-03-18"
     },
     {
-      "name": "WATT DARREN JEFFREY",
-      "role": "Officer",
+      "name": "KESSLER JAMES FRANCIS",
+      "role": "Chief Executive Officer",
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 13644,
+      "shares": 256716,
       "date": "2026-03-13"
     }
   ],

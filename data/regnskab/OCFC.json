@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:22.964Z",
+  "updated_at": "2026-11-11T23:05:23.156Z",
   "source": "Yahoo Finance",
   "symbol": "OCFC",
   "summary": "OceanFirst Financial Corp. operates as the bank holding company for OceanFirst Bank N.A. that provides community banking services to retail and commercial customers in the United States. The company accepts deposit products, such as money market accounts, savings accounts, interest-bearing checking accounts, non-interest-bearing accounts, and time deposits, including brokered deposits. It also offers commercial real estate, multi-family, land loans, construction, and commercial and industrial loans; fixed-rate and adjustable-rate mortgage loans that are secured by one-to-four family residences; and consumer loans, such as home equity loans and lines of credit, student loans, loans on savings accounts, overdraft line of credit, and other consumer loans. In addition, the company invests in mortgage-backed securities, securities issued by the U.S. government and agencies, corporate securities, and other investments; and provides bankcard services, trust and asset management products and services, deposit account services, sales of loans and investments, bank owned life insurance and commercial loan swap income. The company was founded in 1902 and is headquartered in Toms River, New Jersey.",
@@ -10,7 +10,7 @@
   "next_earnings": "2027-01-28",
   "earnings_estimated": true,
   "earnings_call": "2026-10-28",
-  "eps_estimate": 0.5,
+  "eps_estimate": 0.50429,
   "analysts": {
     "strong_buy": 1,
     "buy": 2,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 7
   },
-  "target_mean": 21.29167,
+  "target_mean": 21.54167,
   "target_high": 24.25,
-  "target_low": 18,
+  "target_low": 19.5,
   "target_analysts": 6,
   "statements": [
     {
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.2195,
+    "q0": 0.23,
     "q1": 0.216,
-    "y0": 0.2687,
-    "y1": 0.2433
+    "y0": 0.2937,
+    "y1": 0.22389999
   },
   "ratings": [
+    {
+      "date": "2026-11-11",
+      "firm": "Piper Sandler",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "reit"
+    },
     {
       "date": "2026-10-06",
       "firm": "Piper Sandler",
@@ -139,13 +146,6 @@
       "firm": "Keefe, Bruyette & Woods",
       "from": "Market Perform",
       "to": "Market Perform",
-      "action": "main"
-    },
-    {
-      "date": "2024-12-04",
-      "firm": "DA Davidson",
-      "from": "Neutral",
-      "to": "Neutral",
       "action": "main"
     }
   ],
@@ -227,24 +227,24 @@
     "sells": 3,
     "bought": 790504,
     "sold": 232593,
-    "net_pct": 30.7
+    "net_pct": 30
   },
   "extras": {
     "beta": 0.983,
-    "enterprise_value": 3888500992,
+    "enterprise_value": 3870443520,
     "ev_ebitda": null,
-    "ev_revenue": 7.63,
-    "float_shares": 86431691,
-    "short_shares": 5490853,
-    "short_pct_float": 5.8,
-    "short_ratio": 4.39,
+    "ev_revenue": 7.594,
+    "float_shares": 86156815,
+    "short_shares": 5431000,
+    "short_pct_float": 5.74,
+    "short_ratio": 4.28,
     "last_split": "3:2",
     "last_split_date": "2002-05-20"
   },
   "ex_dividend": "2026-11-09",
   "dividend_date": null,
   "payout_ratio": 1.1765,
-  "inst_count": 324,
+  "inst_count": 326,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -318,33 +318,6 @@
       "date": "2026-08-07"
     },
     {
-      "name": "GRASSI LOUIS C",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 104737,
-      "date": "2026-06-01"
-    },
-    {
-      "name": "BURAN JOHN R",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 226594,
-      "date": "2026-06-01"
-    },
-    {
-      "name": "BURAN JOHN R",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 226594,
-      "date": "2026-06-01"
-    },
-    {
       "name": "D IORIO STEVEN J",
       "role": "Director",
       "kind": "other",
@@ -360,6 +333,33 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 65323,
+      "date": "2026-06-01"
+    },
+    {
+      "name": "DELLIBOVI ALFRED A",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 52262,
+      "date": "2026-06-01"
+    },
+    {
+      "name": "YOH CAREN C",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 52262,
+      "date": "2026-06-01"
+    },
+    {
+      "name": "GRASSI LOUIS C",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 104737,
       "date": "2026-06-01"
     }
   ],

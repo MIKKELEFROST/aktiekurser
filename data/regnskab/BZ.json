@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:22.065Z",
+  "updated_at": "2026-11-11T23:05:22.122Z",
   "source": "Yahoo Finance",
   "symbol": "BZ",
   "summary": "Kanzhun Limited, together with its subsidiaries, operates an online recruitment platform in the People's Republic of China. It offers job seeking services that allow job seekers to receive job recommendations, initiate direct chats, and deliver resumes upon mutual consent, as well as value-added tools. The company also provides direct recruitment services to enterprise users to post jobs, receive personalized candidate recommendations, engage in direct communication, and receive resumes upon mutual consent. In addition, it offers online recruitment services through BOSS Zhipin, a mobile app; and management consultancy and technical services. Kanzhun Limited was founded in 2013 and is headquartered in Beijing, the People's Republic of China.",
@@ -51,6 +51,11 @@
   ],
   "quarterly": [
     {
+      "q": "2Q2025",
+      "revenue": 2102433000,
+      "earnings": 716398000
+    },
+    {
       "q": "3Q2025",
       "revenue": 2163281000,
       "earnings": 775420000
@@ -64,11 +69,6 @@
       "q": "1Q2026",
       "revenue": 2068792000,
       "earnings": 1156693000
-    },
-    {
-      "q": "2Q2026",
-      "revenue": 2398603000,
-      "earnings": 1945108000
     }
   ],
   "growth": {
@@ -158,6 +158,13 @@
       "date": "2026-06-30"
     },
     {
+      "name": "FIL LTD",
+      "kind": "institution",
+      "pct": 6.01,
+      "shares": 24934734,
+      "date": "2026-09-30"
+    },
+    {
       "name": "Blackrock Inc.",
       "kind": "institution",
       "pct": 4.41,
@@ -212,13 +219,6 @@
       "pct": 2.84,
       "shares": 11763812,
       "date": "2026-06-30"
-    },
-    {
-      "name": "Price (T.Rowe) Associates Inc",
-      "kind": "institution",
-      "pct": 2.26,
-      "shares": 9391204,
-      "date": "2026-06-30"
     }
   ],
   "insider_net": {
@@ -231,20 +231,20 @@
   },
   "extras": {
     "beta": 0.488,
-    "enterprise_value": -15312611328,
-    "ev_ebitda": -4.264,
-    "ev_revenue": -1.758,
+    "enterprise_value": -15270554624,
+    "ev_ebitda": -4.252,
+    "ev_revenue": -1.753,
     "float_shares": 271199833,
-    "short_shares": 28233772,
-    "short_pct_float": 7.46,
-    "short_ratio": 4.75,
+    "short_shares": 30223901,
+    "short_pct_float": 7.98,
+    "short_ratio": 6.65,
     "last_split": null,
     "last_split_date": null
   },
   "ex_dividend": "2026-09-28",
   "dividend_date": null,
   "payout_ratio": 0.1243,
-  "inst_count": 443,
+  "inst_count": 440,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -318,21 +318,30 @@
       "date": "2026-06-16"
     },
     {
-      "name": "WANG XIEHUA",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 150000,
-      "date": "2026-06-16"
-    },
-    {
       "name": "CHEN XU",
       "role": "President",
       "kind": "sell",
       "text": "Sale at price 13.20 per share.",
       "value": 1109,
       "shares": 84,
+      "date": "2026-06-16"
+    },
+    {
+      "name": "SUN YONGGANG",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 13.20 per share.",
+      "value": 7234,
+      "shares": 548,
+      "date": "2026-06-16"
+    },
+    {
+      "name": "WANG XIEHUA",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 150000,
       "date": "2026-06-16"
     },
     {
@@ -351,15 +360,6 @@
       "text": null,
       "value": null,
       "shares": 4212,
-      "date": "2026-06-16"
-    },
-    {
-      "name": "SUN YONGGANG",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 13.20 per share.",
-      "value": 7234,
-      "shares": 548,
       "date": "2026-06-16"
     }
   ],

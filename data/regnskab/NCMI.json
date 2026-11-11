@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:23.544Z",
+  "updated_at": "2026-11-11T23:05:23.070Z",
   "source": "Yahoo Finance",
   "symbol": "NCMI",
   "summary": "National CineMedia, Inc., through its subsidiary, National CineMedia, LLC, operates cinema advertising network in North America. The company engages in the sale of advertising to national, regional, and local businesses in Noovie, a cinema advertising and entertainment show seen on movie screens; and sells advertising on its Lobby Entertainment Network, a series of strategically placed screens located in movie theater lobbies, as well as other forms of advertising and promotions in theatre lobbies. It also sells digital advertising, including through NCM Boost, a data, insights and analytics platform that utilizes data; NCM Boost, a audience accelerator digital product; NCM Boomerang, retargeting solution designed to amplify post-theatre engagement; NCM Bullseye, an AI-generated creative to deliver dynamic and hyper-localized messaging; and NCM Blueprint, a real-time renovation permit data to identify homeowners who are actively engaged in remodelling projects. It offers its services to national and local sales groups. The company was incorporated in 2006 and is headquartered in Centennial, Colorado.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-10",
   "earnings_estimated": false,
   "earnings_call": "2026-11-10",
-  "eps_estimate": 0.03,
+  "eps_estimate": 0.47,
   "analysts": {
     "strong_buy": 1,
     "buy": 2,
@@ -19,8 +19,8 @@
     "strong_sell": 0,
     "total": 4
   },
-  "target_mean": 4.4375,
-  "target_high": 6,
+  "target_mean": 3.9375,
+  "target_high": 5,
   "target_low": 2.5,
   "target_analysts": 4,
   "statements": [
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 51800000,
-      "earnings": -10700000
-    },
-    {
       "q": "3Q2025",
       "revenue": 63400000,
       "earnings": 1600000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 58400000,
       "earnings": -9900000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 61400000,
+      "earnings": -17200000
     }
   ],
   "growth": {
-    "q0": 0,
-    "q1": 0.6786,
+    "q0": 0.6786,
+    "q1": null,
     "y0": 2.8889,
     "y1": -0.2941
   },
   "ratings": [
+    {
+      "date": "2026-11-11",
+      "firm": "StoneX",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-08-12",
       "firm": "Wedbush",
@@ -140,13 +147,6 @@
       "from": "Neutral",
       "to": "Outperform",
       "action": "up"
-    },
-    {
-      "date": "2025-03-14",
-      "firm": "Barrington Research",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
     }
   ],
   "holders": [
@@ -230,28 +230,22 @@
     "net_pct": 3.5
   },
   "extras": {
-    "beta": 1.753,
-    "enterprise_value": 134956928,
-    "ev_ebitda": 6.336,
-    "ev_revenue": 0.542,
-    "float_shares": 65595320,
-    "short_shares": 6548235,
-    "short_pct_float": 11.64,
-    "short_ratio": 4.9,
+    "beta": null,
+    "enterprise_value": 413807744,
+    "ev_ebitda": 121.708,
+    "ev_revenue": 1.675,
+    "float_shares": 65816400,
+    "short_shares": 6215255,
+    "short_pct_float": 11.04,
+    "short_ratio": 6.7,
     "last_split": "1:10",
     "last_split_date": "2023-08-04"
   },
   "ex_dividend": "2026-05-22",
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 141,
+  "inst_count": 139,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.01,
-      "actual": 0,
-      "surprise_pct": 100
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.27,
@@ -263,6 +257,12 @@
       "estimate": -0.085,
       "actual": -0.1,
       "surprise_pct": -17.65
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.03,
+      "actual": 0.33,
+      "surprise_pct": 1000
     }
   ],
   "insiders": [
@@ -330,6 +330,15 @@
       "date": "2026-07-02"
     },
     {
+      "name": "LESINSKI THOMAS F",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 103333,
+      "date": "2026-06-30"
+    },
+    {
       "name": "WOODS MARIA VG",
       "role": "Officer",
       "kind": "other",
@@ -345,15 +354,6 @@
       "text": null,
       "value": null,
       "shares": 51666,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "LESINSKI THOMAS F",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 103333,
       "date": "2026-06-30"
     }
   ],

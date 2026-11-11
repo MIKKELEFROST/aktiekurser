@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:22.802Z",
+  "updated_at": "2026-11-11T23:05:22.963Z",
   "source": "Yahoo Finance",
   "symbol": "MARA",
   "summary": "MARA Holdings, Inc. operates as an energy and digital infrastructure company in North America, the Middle East, Europe, and Latin America. The company leverages Bitcoin Mining and Artificial Intelligence compute to monetize excess energy and underutilized power, optimize power management across operations and support AI inference applications. The company was formerly known as Marathon Digital Holdings, Inc. and changed its name to MARA Holdings, Inc. in August 2024. MARA Holdings, Inc. was incorporated in 2010 and is based in Hallandale Beach, Florida.",
@@ -19,8 +19,8 @@
     "strong_sell": 1,
     "total": 15
   },
-  "target_mean": 17.68615,
-  "target_high": 30,
+  "target_mean": 16.91692,
+  "target_high": 27,
   "target_low": 10,
   "target_analysts": 13,
   "statements": [
@@ -78,6 +78,13 @@
     "y1": 0.90400004
   },
   "ratings": [
+    {
+      "date": "2026-11-11",
+      "firm": "JP Morgan",
+      "from": "Underweight",
+      "to": "Underweight",
+      "action": "main"
+    },
     {
       "date": "2026-11-10",
       "firm": "Guggenheim",
@@ -140,13 +147,6 @@
       "from": "Overweight",
       "to": "Overweight",
       "action": "main"
-    },
-    {
-      "date": "2026-08-07",
-      "firm": "Rosenblatt",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
     }
   ],
   "holders": [
@@ -200,6 +200,13 @@
       "date": "2026-09-30"
     },
     {
+      "name": "UBS Group AG",
+      "kind": "institution",
+      "pct": 2.82,
+      "shares": 10905705,
+      "date": "2026-09-30"
+    },
+    {
       "name": "Shaw D.E. & Co., Inc.",
       "kind": "institution",
       "pct": 2.69,
@@ -212,13 +219,6 @@
       "pct": 2.61,
       "shares": 10070534,
       "date": "2026-09-30"
-    },
-    {
-      "name": "VANGUARD INDEX FUNDS-Vanguard Small-Cap Index Fund",
-      "kind": "fond",
-      "pct": 2.15,
-      "shares": 8309976,
-      "date": "2026-06-30"
     }
   ],
   "insider_net": {
@@ -230,21 +230,21 @@
     "net_pct": null
   },
   "extras": {
-    "beta": null,
-    "enterprise_value": 4801882624,
-    "ev_ebitda": -2.672,
-    "ev_revenue": 6.706,
+    "beta": 5.253,
+    "enterprise_value": 5073067008,
+    "ev_ebitda": -2.885,
+    "ev_revenue": 7.085,
     "float_shares": 379820986,
-    "short_shares": 111935490,
-    "short_pct_float": 33.15,
-    "short_ratio": 2.72,
+    "short_shares": 112939212,
+    "short_pct_float": 33.34,
+    "short_ratio": 3.12,
     "last_split": "1:4",
     "last_split_date": "2019-04-08"
   },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 563,
+  "inst_count": 564,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -300,21 +300,21 @@
       "date": "2026-08-21"
     },
     {
-      "name": "THIEL FREDERICK G",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 9.21 per share.",
-      "value": 253321,
-      "shares": 27505,
-      "date": "2026-08-17"
-    },
-    {
       "name": "KHAN SALMAN HASSAN",
       "role": "Chief Financial Officer",
       "kind": "sell",
       "text": "Sale at price 9.21 per share.",
       "value": 147360,
       "shares": 16000,
+      "date": "2026-08-17"
+    },
+    {
+      "name": "THIEL FREDERICK G",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 9.21 per share.",
+      "value": 253321,
+      "shares": 27505,
       "date": "2026-08-17"
     },
     {
@@ -327,21 +327,21 @@
       "date": "2026-07-20"
     },
     {
-      "name": "THIEL FREDERICK G",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 10.90 per share.",
-      "value": 299804,
-      "shares": 27505,
-      "date": "2026-07-17"
-    },
-    {
       "name": "KHAN SALMAN HASSAN",
       "role": "Chief Financial Officer",
       "kind": "sell",
       "text": "Sale at price 10.90 per share.",
       "value": 174400,
       "shares": 16000,
+      "date": "2026-07-17"
+    },
+    {
+      "name": "THIEL FREDERICK G",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 10.90 per share.",
+      "value": 299804,
+      "shares": 27505,
       "date": "2026-07-17"
     },
     {
@@ -354,12 +354,12 @@
       "date": "2026-06-22"
     },
     {
-      "name": "THIEL FREDERICK G",
-      "role": "Chief Executive Officer",
+      "name": "KHAN SALMAN HASSAN",
+      "role": "Chief Financial Officer",
       "kind": "sell",
       "text": "Sale at price 14.25 per share.",
-      "value": 391946,
-      "shares": 27505,
+      "value": 228000,
+      "shares": 16000,
       "date": "2026-06-17"
     }
   ],

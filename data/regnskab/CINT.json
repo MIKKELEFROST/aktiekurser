@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:22.135Z",
+  "updated_at": "2026-11-11T23:05:22.199Z",
   "source": "Yahoo Finance",
   "symbol": "CINT",
   "summary": "CI&T Inc., together with its subsidiaries, provides strategy, design, and software engineering services in North America, Europe, Latin America, Asia Pacific, and worldwide. It is also involved in the development of customizable software through the implementation of software solutions, including machine learning, artificial intelligence, data analytics, cloud migration, and mobility technologies. The company offers business and digital strategy, working closely with clients to understand strategic objectives, organizational constraints, and market dynamics; customer-centered experience and design, analyze customer and user journeys to design digital products, services, and platforms that improve efficiency, engagement, and satisfaction; and software engineering and platform delivery solutions, that designs, builds, modernizes, and operates digital platforms using agile, Lean, and DevOps practices. CI&T Inc. was founded in 1995 and is headquartered in Campinas, Brazil.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-11",
   "earnings_estimated": false,
   "earnings_call": "2026-11-11",
-  "eps_estimate": 0.09838,
+  "eps_estimate": 0.1148,
   "analysts": {
     "strong_buy": 3,
     "buy": 5,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 127312000,
-      "earnings": 8863000
-    },
-    {
       "q": "4Q2025",
       "revenue": 134277000,
       "earnings": 14568000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 142820000,
       "earnings": 5750000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 146300000,
+      "earnings": 7600000
     }
   ],
   "growth": {
-    "q0": 0.093100004,
-    "q1": -0.18,
+    "q0": -0.18,
+    "q1": 0.125,
     "y0": -0.0403,
     "y1": 0.22860001
   },
@@ -165,6 +165,13 @@
       "date": "2026-09-30"
     },
     {
+      "name": "Aberdeen Group plc",
+      "kind": "institution",
+      "pct": 3.46,
+      "shares": 823885,
+      "date": "2026-09-30"
+    },
+    {
       "name": "ROYCE FUND-Royce Small-Cap Opportunity Fund",
       "kind": "fond",
       "pct": 1.48,
@@ -212,13 +219,6 @@
       "pct": 0.43,
       "shares": 103139,
       "date": "2026-06-30"
-    },
-    {
-      "name": "Citadel Advisors Llc",
-      "kind": "institution",
-      "pct": 0.43,
-      "shares": 102020,
-      "date": "2026-06-30"
     }
   ],
   "insider_net": {
@@ -231,27 +231,21 @@
   },
   "extras": {
     "beta": 0.821,
-    "enterprise_value": 498117888,
-    "ev_ebitda": 6.884,
-    "ev_revenue": 0.921,
+    "enterprise_value": 501957568,
+    "ev_ebitda": 6.937,
+    "ev_revenue": 0.928,
     "float_shares": 16252003,
-    "short_shares": 16864,
-    "short_pct_float": 0.11,
-    "short_ratio": 0.27,
+    "short_shares": 19002,
+    "short_pct_float": 0.13,
+    "short_ratio": 0.28,
     "last_split": null,
     "last_split_date": null
   },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 51,
+  "inst_count": 52,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.1003,
-      "actual": 0.09,
-      "surprise_pct": -10.27
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.09818,
@@ -269,6 +263,12 @@
       "estimate": 0.09542,
       "actual": 0.07,
       "surprise_pct": -26.64
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.09838,
+      "actual": 0.09,
+      "surprise_pct": -8.52
     }
   ],
   "insiders": [

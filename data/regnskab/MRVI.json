@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:22.872Z",
+  "updated_at": "2026-11-11T23:05:23.028Z",
   "source": "Yahoo Finance",
   "symbol": "MRVI",
   "summary": "Maravai LifeSciences Holdings, Inc., a life sciences company, provides products that enable the development of drug therapies, vaccines, drug therapies, cell and gene therapies, and diagnostics North America, Europe, the Middle East, Africa, the Asia Pacific, and Latin and Central America. It operates through two segments: TRILINK and CYGNUS. The TRILINK segment manufactures and sells products for use in the fields of gene therapy, vaccines, nucleoside chemistry, and oligonucleotide therapy, as well as molecular diagnostics, including reagents used in the chemical synthesis, modification, labelling, and purification of deoxyribonucleic acid (DNA) and ribonucleic acid (RNA). This segment also offers messenger RNA, oligonucleotides, CleanCap capping technology-based oligonucleotide building blocks, and custom enzyme development and manufacturing; and research products for labeling and detecting proteins in cells and tissue samples. The CYGNUS segment sells analytical products for use in biologic manufacturing process development, including custom product-specific development antibody and assay development services. This segment also provides HCP ELISA kits, other bioprocess impurity and contaminant ELISA kits, ancillary reagents, viral clearance prediction kits, and custom services. The company's products address the key phases of biopharmaceutical development and include nucleic acids for diagnostic and therapeutic applications, and antibody-based products to detect impurities during the production of biopharmaceutical products. It serves biopharmaceutical companies, and emerging biopharmaceutical and life sciences research companies; and academic research institutions and diagnostics companies. Maravai LifeSciences Holdings, Inc. was founded in 2014 and is headquartered in San Diego, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": -0.03311,
+  "eps_estimate": -0.03865,
   "analysts": {
     "strong_buy": 0,
     "buy": 5,
@@ -72,10 +72,10 @@
     }
   ],
   "growth": {
-    "q0": 0.1723,
+    "q0": 0.033800002,
     "q1": -1.666,
-    "y0": 0.7514,
-    "y1": -0.18190001
+    "y0": 0.76089996,
+    "y1": -0.1245
   },
   "ratings": [
     {
@@ -179,6 +179,13 @@
       "date": "2026-06-30"
     },
     {
+      "name": "FMR, LLC",
+      "kind": "institution",
+      "pct": 4.62,
+      "shares": 6900420,
+      "date": "2026-09-30"
+    },
+    {
       "name": "Millennium Management Llc",
       "kind": "institution",
       "pct": 4.36,
@@ -212,13 +219,6 @@
       "pct": 2.48,
       "shares": 3706103,
       "date": "2026-06-30"
-    },
-    {
-      "name": "First Eagle Investment Management, LLC",
-      "kind": "institution",
-      "pct": 2.46,
-      "shares": 3671287,
-      "date": "2026-06-30"
     }
   ],
   "insider_net": {
@@ -231,20 +231,20 @@
   },
   "extras": {
     "beta": 0.633,
-    "enterprise_value": 1494176768,
-    "ev_ebitda": -400.691,
-    "ev_revenue": 7.015,
+    "enterprise_value": 1470296064,
+    "ev_ebitda": -394.287,
+    "ev_revenue": 6.903,
     "float_shares": 106660227,
-    "short_shares": 13348935,
-    "short_pct_float": 10.6,
-    "short_ratio": 4.94,
+    "short_shares": 14053895,
+    "short_pct_float": 11.15,
+    "short_ratio": 5.4,
     "last_split": null,
     "last_split_date": null
   },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 262,
+  "inst_count": 267,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -291,33 +291,6 @@
       "date": "2026-06-09"
     },
     {
-      "name": "LUCIER GREGORY T",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 46293,
-      "date": "2026-05-26"
-    },
-    {
-      "name": "ECKERT ROBERT ANDREW",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 46293,
-      "date": "2026-05-26"
-    },
-    {
-      "name": "DEFORD JOHN A",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 46293,
-      "date": "2026-05-26"
-    },
-    {
       "name": "GRAY SUSANNAH",
       "role": "Director",
       "kind": "other",
@@ -354,12 +327,39 @@
       "date": "2026-05-26"
     },
     {
-      "name": "DOLAN CHRISTINE",
-      "role": "Officer",
+      "name": "LUCIER GREGORY T",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 46293,
+      "date": "2026-05-26"
+    },
+    {
+      "name": "ECKERT ROBERT ANDREW",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 46293,
+      "date": "2026-05-26"
+    },
+    {
+      "name": "DEFORD JOHN A",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 46293,
+      "date": "2026-05-26"
+    },
+    {
+      "name": "ORESHACK KURT",
+      "role": "General Counsel",
       "kind": "other",
       "text": "Stock Award(Grant) at price 4.15 per share.",
-      "value": 20775,
-      "shares": 5006,
+      "value": 3220,
+      "shares": 776,
       "date": "2026-05-15"
     }
   ],

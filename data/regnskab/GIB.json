@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:22.479Z",
+  "updated_at": "2026-11-11T23:05:22.581Z",
   "source": "Yahoo Finance",
   "symbol": "GIB",
   "summary": "CGI Inc. provides information technology and business process services in Western and Southern Europe, the United States, Canada, Scandinavia, Northwest and Central-East Europe, the United Kingdom, Australia, Germany, Finland, Poland, Baltics, and the Asia Pacific. It offers end-to-end services and solutions, including business and strategic IT consulting; systems integration, such as data integration, AI and automation integration, cloud integration, Internet of Things, enterprise application integration, application programming interface integration, and legacy system modernization; managed IT and business process; and application services comprising application management, DevSecOps, application modernization and rationalization, and quality engineering and assurance. The company also provides infrastructure services, which include legacy infrastructure modernization, cloud and hybrid infrastructure management, IT service management, FinOps-enabled cloud management, cyber resilience and compliance, site reliability engineering and AIOps, and infrastructure-as-code; and intellectual property business solutions. It serves banking and capital markets, communications and media, energy and utilities, government, health, insurance, life sciences, manufacturing, retail and consumer services, space, transportation, and logistics industries. The company was formerly known as CGI Group Inc. and changed its name to CGI Inc. in January 2019. CGI Inc. was founded in 1976 and is headquartered in Montreal, Canada.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-11",
   "earnings_estimated": false,
   "earnings_call": "2026-11-11",
-  "eps_estimate": 2.30121,
+  "eps_estimate": 2.36418,
   "analysts": {
     "strong_buy": 5,
     "buy": 3,
@@ -19,17 +19,11 @@
     "strong_sell": 1,
     "total": 15
   },
-  "target_mean": 82.11729,
-  "target_high": 88.89312,
-  "target_low": 73.46176,
+  "target_mean": 81.72957,
+  "target_high": 88.47341,
+  "target_low": 73.114914,
   "target_analysts": 3,
   "statements": [
-    {
-      "year": "2022",
-      "revenue": 12867200000,
-      "net": 1466100000,
-      "margin": 11.4
-    },
     {
       "year": "2023",
       "revenue": 14296400000,
@@ -47,14 +41,15 @@
       "revenue": 15912673000,
       "net": 1658300000,
       "margin": 10.4
+    },
+    {
+      "year": "2026",
+      "revenue": 16573609000,
+      "net": 1812600000,
+      "margin": 10.9
     }
   ],
   "quarterly": [
-    {
-      "q": "3Q2025",
-      "revenue": 4013837000,
-      "earnings": 381400000
-    },
     {
       "q": "4Q2025",
       "revenue": 4078355000,
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 4193022000,
       "earnings": 465201000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 4146063000,
+      "earnings": 460700000
     }
   ],
   "growth": {
-    "q0": 0.0804,
-    "q1": 0.115200005,
-    "y0": 0.075500004,
-    "y1": 0.0941
+    "q0": 0.115200005,
+    "q1": 0.0762,
+    "y0": 0.0876,
+    "y1": 0.0773
   },
   "ratings": [
     {
@@ -160,9 +160,9 @@
     {
       "name": "FIL LTD",
       "kind": "institution",
-      "pct": 6.77,
-      "shares": 12369259,
-      "date": "2026-06-30"
+      "pct": 7.37,
+      "shares": 13455000,
+      "date": "2026-09-30"
     },
     {
       "name": "Vanguard Capital Management LLC",
@@ -183,13 +183,6 @@
       "kind": "institution",
       "pct": 2.71,
       "shares": 4950938,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "1832 Asset Management L.P.",
-      "kind": "institution",
-      "pct": 2.24,
-      "shares": 4086494,
       "date": "2026-06-30"
     },
     {
@@ -219,6 +212,13 @@
       "pct": 1.65,
       "shares": 3016000,
       "date": "2026-06-30"
+    },
+    {
+      "name": "Beutel, Goodman & Company Ltd",
+      "kind": "institution",
+      "pct": 1.56,
+      "shares": 2845117,
+      "date": "2026-09-30"
     }
   ],
   "insider_net": {
@@ -231,27 +231,21 @@
   },
   "extras": {
     "beta": 0.17,
-    "enterprise_value": 20714360832,
-    "ev_ebitda": 7.099,
-    "ev_revenue": 1.26,
+    "enterprise_value": 20702093312,
+    "ev_ebitda": 7.095,
+    "ev_revenue": 1.259,
     "float_shares": 163045195,
-    "short_shares": 5155399,
+    "short_shares": 4874089,
     "short_pct_float": null,
-    "short_ratio": 12.06,
+    "short_ratio": 11.68,
     "last_split": "2:1",
     "last_split_date": "2000-01-18"
   },
   "ex_dividend": "2026-08-14",
   "dividend_date": null,
   "payout_ratio": 0.081999995,
-  "inst_count": 625,
+  "inst_count": 626,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 2.09042,
-      "actual": 2.13,
-      "surprise_pct": 1.89
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 2.10655,
@@ -269,6 +263,12 @@
       "estimate": 2.27788,
       "actual": 2.29,
       "surprise_pct": 0.53
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 2.30198,
+      "actual": 2.31,
+      "surprise_pct": 0.35
     }
   ],
   "insiders": [
@@ -289,33 +289,6 @@
       "value": 235527,
       "shares": 3226,
       "date": "2026-09-15"
-    },
-    {
-      "name": "Starace (Steven)",
-      "role": "Senior Officer of Issuer",
-      "kind": "other",
-      "text": "Exercise of options at price 45.50 per share.",
-      "value": 544860,
-      "shares": 11976,
-      "date": "2026-09-14"
-    },
-    {
-      "name": "Starace (Steven)",
-      "role": "Senior Officer of Issuer",
-      "kind": "other",
-      "text": "Disposition in the public market at price 71.52 per share.",
-      "value": 227150,
-      "shares": 3176,
-      "date": "2026-09-14"
-    },
-    {
-      "name": "Starace (Steven)",
-      "role": "Senior Officer of Issuer",
-      "kind": "other",
-      "text": "Disposition in the public market at price 71.53 per share.",
-      "value": 128750,
-      "shares": 1800,
-      "date": "2026-09-14"
     },
     {
       "name": "Starace (Steven)",
@@ -360,6 +333,33 @@
       "text": "Disposition in the public market at price 71.59 per share.",
       "value": 7159,
       "shares": 100,
+      "date": "2026-09-14"
+    },
+    {
+      "name": "Starace (Steven)",
+      "role": "Senior Officer of Issuer",
+      "kind": "other",
+      "text": "Disposition in the public market at price 71.60 per share.",
+      "value": 71600,
+      "shares": 1000,
+      "date": "2026-09-14"
+    },
+    {
+      "name": "Mango (Stephanie Anne)",
+      "role": "Senior Officer of Issuer",
+      "kind": "other",
+      "text": "Exercise of options at price 45.50 per share.",
+      "value": 690037,
+      "shares": 15167,
+      "date": "2026-09-14"
+    },
+    {
+      "name": "Mango (Stephanie Anne)",
+      "role": "Senior Officer of Issuer",
+      "kind": "other",
+      "text": "Disposition in the public market at price 71.95 per share.",
+      "value": 647577,
+      "shares": 9000,
       "date": "2026-09-14"
     }
   ],

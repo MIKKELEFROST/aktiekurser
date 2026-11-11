@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:21.722Z",
+  "updated_at": "2026-11-11T23:05:21.807Z",
   "source": "Yahoo Finance",
   "symbol": "AESI",
   "summary": "Atlas Energy Solutions Inc. produces proppants and provides logistics and distributed power solutions in the Permian Basin of West Texas and New Mexico. It operates through two segments: Sand and Logistics, and Power. The Sand and Logistics segment operates fourteen proppant production facilities, including large-scale in-basin plants and a distributed mining network. This segment sells products and services primarily to oil and natural gas exploration and production companies, hydraulic fracturing services, and oilfield services companies; and produces locally sourced proppants, such as 40/70-mesh and 100-mesh sand, as well as both dry and damp sand options. It also offers a differentiated logistics platform featuring a fleet of fit-for-purpose trucks, trailers, wellsite equipment, and a 42-mile Dune Express conveyor system for proppant delivery. The Power segment provides distributed power solutions through a fleet of natural gas-powered reciprocating generators designed for heavy-duty, mission-critical applications, primarily supporting oil and gas production and artificial lift operations. The company also offers transportation, storage, contract labor, and distributes power rentals to the oil and gas industry. Atlas Energy Solutions Inc. formerly known as New Atlas HoldCo. Inc. Atlas Energy Solutions Inc. was founded in 2017 and is headquartered in Austin, Texas.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-02",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": -0.16333,
+  "eps_estimate": -0.2175,
   "analysts": {
     "strong_buy": 3,
     "buy": 4,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 13
   },
-  "target_mean": 16.61538,
-  "target_high": 22,
-  "target_low": 11,
+  "target_mean": 15.38462,
+  "target_high": 21,
+  "target_low": 7,
   "target_analysts": 13,
   "statements": [
     {
@@ -72,12 +72,26 @@
     }
   ],
   "growth": {
-    "q0": 0.2219,
-    "q1": 0.7071,
-    "y0": -1.7085,
-    "y1": 0.8646
+    "q0": -0.036199998,
+    "q1": 0.6522,
+    "y0": -1.8105,
+    "y1": 0.82269996
   },
   "ratings": [
+    {
+      "date": "2026-11-11",
+      "firm": "Citigroup",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-11",
+      "firm": "Barclays",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
     {
       "date": "2026-11-09",
       "firm": "Stifel",
@@ -133,20 +147,6 @@
       "from": null,
       "to": "Sector Outperform",
       "action": "init"
-    },
-    {
-      "date": "2026-09-28",
-      "firm": "Barclays",
-      "from": "Underweight",
-      "to": "Equal-Weight",
-      "action": "up"
-    },
-    {
-      "date": "2026-09-03",
-      "firm": "Citigroup",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
     }
   ],
   "holders": [
@@ -181,9 +181,9 @@
     {
       "name": "UBS Group AG",
       "kind": "institution",
-      "pct": 3.07,
-      "shares": 3842286,
-      "date": "2026-06-30"
+      "pct": 3.25,
+      "shares": 4075700,
+      "date": "2026-09-30"
     },
     {
       "name": "State Street Corporation",
@@ -223,28 +223,28 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 0,
-    "sells": 0,
-    "bought": 0,
-    "sold": null,
-    "net_pct": null
+    "buys": 1,
+    "sells": 1,
+    "bought": 90866,
+    "sold": 890500,
+    "net_pct": -1.8
   },
   "extras": {
     "beta": 1.25,
-    "enterprise_value": 1746066176,
-    "ev_ebitda": 16.917,
-    "ev_revenue": 1.623,
+    "enterprise_value": 1723519872,
+    "ev_ebitda": 16.698,
+    "ev_revenue": 1.602,
     "float_shares": 88906735,
-    "short_shares": 22757413,
-    "short_pct_float": 25.38,
-    "short_ratio": 6.17,
+    "short_shares": 23117030,
+    "short_pct_float": 25.71,
+    "short_ratio": 6.28,
     "last_split": null,
     "last_split_date": null
   },
   "ex_dividend": "2025-08-14",
   "dividend_date": null,
   "payout_ratio": 7.4615,
-  "inst_count": 372,
+  "inst_count": 374,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -266,6 +266,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "SHEPARD GREGORY M",
+      "role": "Beneficial Owner of more than 10% of a Class of Security",
+      "kind": "sell",
+      "text": "Sale at price 5.16 - 5.56 per share.",
+      "value": 4754980,
+      "shares": 890500,
+      "date": "2026-11-10"
+    },
     {
       "name": "HOCK STACY",
       "role": "Beneficial Owner of more than 10% of a Class of Security",
@@ -345,15 +354,6 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 14632,
-      "date": "2026-03-04"
-    },
-    {
-      "name": "VOELTER DATHAN C",
-      "role": "General Counsel",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 88323,
       "date": "2026-03-04"
     }
   ],

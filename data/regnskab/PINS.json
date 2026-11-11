@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:23.062Z",
+  "updated_at": "2026-11-11T23:05:23.266Z",
   "source": "Yahoo Finance",
   "symbol": "PINS",
   "summary": "Pinterest, Inc. operates as a visual search and discovery platform in the United States, Canada, Europe, and internationally. The company's platform allows people to find ideas, such as recipes, home and style inspiration, and others; and to search, save, and shop the ideas. It also provides various advertising products to help advertisers meet users; and ad auction that allows to serve ads to users at relevant moments while optimizing business outcomes for advertisers. The company was formerly known as Cold Brew Labs Inc. and changed its name to Pinterest, Inc. in April 2012. Pinterest, Inc. was incorporated in 2008 and is headquartered in San Francisco, California.",
@@ -179,20 +179,6 @@
       "date": "2026-06-30"
     },
     {
-      "name": "UBS Group AG",
-      "kind": "institution",
-      "pct": 4.79,
-      "shares": 23988215,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "Victory Capital Management Inc.",
-      "kind": "institution",
-      "pct": 4.33,
-      "shares": 21678049,
-      "date": "2026-06-30"
-    },
-    {
       "name": "Vanguard Capital Management LLC",
       "kind": "institution",
       "pct": 4.04,
@@ -219,32 +205,46 @@
       "pct": 3.26,
       "shares": 16304976,
       "date": "2026-09-30"
+    },
+    {
+      "name": "State Street Corporation",
+      "kind": "institution",
+      "pct": 3.06,
+      "shares": 15317272,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "UBS Group AG",
+      "kind": "institution",
+      "pct": 2.79,
+      "shares": 13973866,
+      "date": "2026-09-30"
     }
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 33,
+    "buys": 34,
     "sells": 33,
-    "bought": 2144398,
+    "bought": 3127184,
     "sold": 2028938,
-    "net_pct": 1.6
+    "net_pct": 17.6
   },
   "extras": {
     "beta": 0.962,
-    "enterprise_value": 10657371136,
-    "ev_ebitda": 35.989,
-    "ev_revenue": 2.277,
+    "enterprise_value": 10594285568,
+    "ev_ebitda": 35.776,
+    "ev_revenue": 2.264,
     "float_shares": 492872638,
-    "short_shares": 46869291,
-    "short_pct_float": 12.39,
-    "short_ratio": 3.3,
+    "short_shares": 48220305,
+    "short_pct_float": 12.71,
+    "short_ratio": 3.37,
     "last_split": null,
     "last_split_date": null
   },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 956,
+  "inst_count": 955,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -273,6 +273,15 @@
   ],
   "insiders": [
     {
+      "name": "DIBBO JAMES",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 982786,
+      "date": "2026-11-09"
+    },
+    {
       "name": "SILBERMANN BENJAMIN",
       "role": "Director and Beneficial Owner of more than 10% of a Class of Security",
       "kind": "sell",
@@ -291,21 +300,21 @@
       "date": "2026-11-04"
     },
     {
-      "name": "RAJARAM GOKUL",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 22.84 per share.",
-      "value": 23982,
-      "shares": 1050,
-      "date": "2026-10-21"
-    },
-    {
       "name": "SILBERMANN BENJAMIN",
       "role": "Director and Beneficial Owner of more than 10% of a Class of Security",
       "kind": "sell",
       "text": "Sale at price 22.56 - 22.94 per share.",
       "value": 2132831,
       "shares": 93750,
+      "date": "2026-10-21"
+    },
+    {
+      "name": "RAJARAM GOKUL",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 22.84 per share.",
+      "value": 23982,
+      "shares": 1050,
       "date": "2026-10-21"
     },
     {
@@ -352,15 +361,6 @@
       "value": null,
       "shares": 93750,
       "date": "2026-10-07"
-    },
-    {
-      "name": "BROWN CLAUDE LEONARD",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 20.00 per share.",
-      "value": 244861,
-      "shares": 12240,
-      "date": "2026-10-05"
     }
   ],
   "dividends": [],

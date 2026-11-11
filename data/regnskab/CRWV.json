@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:22.206Z",
+  "updated_at": "2026-11-11T23:05:22.262Z",
   "source": "Yahoo Finance",
   "symbol": "CRWV",
   "summary": "CoreWeave, Inc. operates as a cloud infrastructure technology company in the United States. The company offers CoreWeave Cloud platform that comprises proprietary software and cloud services that deliver the automation and efficiency needed to manage complex artificial intelligence (AI) infrastructure at scale. It also offers data and storage solutions, such as Local Object Transport Accelerator; infrastructure control solutions, including CoreWeave Kubernetes service; mission control services, including node, rack, and fleet lifecycle management; model and agent development tools comprising Weights & Biases, an AI developer platform; and runtime acceleration. In addition, the company offers graphics processing unit compute, CPU compute, networking services, managed services, and virtual and bare metal servers. Its services also include visual effects rendering, machine learning, pixel streaming, and batch processing. It has a collaboration with AdaniConneX to operate a data center in India. The company was formerly known as Atlantic Crypto Corporation and changed its name to CoreWeave, Inc. in December 2019. CoreWeave, Inc. was incorporated in 2017 and is based in Livingston, New Jersey.",
@@ -10,19 +10,19 @@
   "next_earnings": "2026-11-10",
   "earnings_estimated": false,
   "earnings_call": "2026-11-10",
-  "eps_estimate": -1.20885,
+  "eps_estimate": -0.63649,
   "analysts": {
     "strong_buy": 7,
-    "buy": 25,
+    "buy": 24,
     "hold": 7,
     "sell": 2,
     "strong_sell": 1,
-    "total": 42
+    "total": 41
   },
-  "target_mean": 131.52632,
+  "target_mean": 125.45946,
   "target_high": 278,
   "target_low": 39,
-  "target_analysts": 38,
+  "target_analysts": 37,
   "statements": [
     {
       "year": "2025",
@@ -32,11 +32,6 @@
     }
   ],
   "quarterly": [
-    {
-      "q": "3Q2025",
-      "revenue": 1364676000,
-      "earnings": -110124000
-    },
     {
       "q": "4Q2025",
       "revenue": 1572000000,
@@ -51,15 +46,69 @@
       "q": "2Q2026",
       "revenue": 2575000000,
       "earnings": -626000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 3661000000,
+      "earnings": -709000000
     }
   ],
   "growth": {
-    "q0": -13.688299,
-    "q1": -0.113900006,
-    "y0": -1.8694999,
-    "y1": 0.491
+    "q0": -0.134,
+    "q1": 0.36169997,
+    "y0": -1.6764,
+    "y1": 0.4885
   },
   "ratings": [
+    {
+      "date": "2026-11-11",
+      "firm": "Citigroup",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-11",
+      "firm": "DA Davidson",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-11",
+      "firm": "Evercore ISI Group",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-11",
+      "firm": "Truist Securities",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-11",
+      "firm": "Needham",
+      "from": "Hold",
+      "to": "Hold",
+      "action": "reit"
+    },
+    {
+      "date": "2026-11-11",
+      "firm": "Stifel",
+      "from": "Hold",
+      "to": "Hold",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-11",
+      "firm": "Cantor Fitzgerald",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-11-09",
       "firm": "Rosenblatt",
@@ -77,55 +126,6 @@
     {
       "date": "2026-11-04",
       "firm": "Citigroup",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-10-23",
-      "firm": "UBS",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-10-23",
-      "firm": "Morgan Stanley",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
-      "action": "main"
-    },
-    {
-      "date": "2026-10-21",
-      "firm": "Piper Sandler",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-10-20",
-      "firm": "HSBC",
-      "from": "Reduce",
-      "to": "Reduce",
-      "action": "reit"
-    },
-    {
-      "date": "2026-10-19",
-      "firm": "Goldman Sachs",
-      "from": "Neutral",
-      "to": "Buy",
-      "action": "up"
-    },
-    {
-      "date": "2026-10-15",
-      "firm": "Mizuho",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-10-05",
-      "firm": "Freedom Capital Markets",
       "from": "Buy",
       "to": "Buy",
       "action": "main"
@@ -205,35 +205,29 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 99,
-    "sells": 123,
-    "bought": 7902338,
-    "sold": 20500668,
-    "net_pct": -10.9
+    "buys": 100,
+    "sells": 124,
+    "bought": 7936078,
+    "sold": 20514280,
+    "net_pct": -10.8
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 73088262144,
-    "ev_ebitda": 19.29,
-    "ev_revenue": 9.63,
-    "float_shares": 328302162,
-    "short_shares": 69779354,
-    "short_pct_float": 22.4,
-    "short_ratio": 1.83,
+    "enterprise_value": 89275072512,
+    "ev_ebitda": 17.158,
+    "ev_revenue": 9.03,
+    "float_shares": 332744750,
+    "short_shares": 74211562,
+    "short_pct_float": 23.82,
+    "short_ratio": 1.34,
     "last_split": null,
     "last_split_date": null
   },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": null,
-  "inst_count": 1342,
+  "inst_count": 1351,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.48219,
-      "actual": -0.22,
-      "surprise_pct": 54.37
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.68481,
@@ -251,17 +245,32 @@
       "estimate": -1.46997,
       "actual": -1.14,
       "surprise_pct": 22.45
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -1.55218,
+      "actual": -1.27,
+      "surprise_pct": 18.18
     }
   ],
   "insiders": [
     {
-      "name": "WHITMAN MARGARET C.",
-      "role": "Director",
+      "name": "JAIN SACHIN",
+      "role": "Chief Operating Officer",
+      "kind": "sell",
+      "text": "Sale at price 46.23 per share.",
+      "value": 629237,
+      "shares": 13611,
+      "date": "2026-11-09"
+    },
+    {
+      "name": "JAIN SACHIN",
+      "role": "Chief Operating Officer",
       "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 122,
-      "date": "2026-10-20"
+      "text": null,
+      "value": null,
+      "shares": 33740,
+      "date": "2026-11-06"
     },
     {
       "name": "HUTCHINS GLENN H",
@@ -270,6 +279,15 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 320,
+      "date": "2026-10-20"
+    },
+    {
+      "name": "WHITMAN MARGARET C.",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 122,
       "date": "2026-10-20"
     },
     {
@@ -320,29 +338,11 @@
     {
       "name": "INTRATOR MICHAEL N",
       "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 85.86 - 90.26 per share.",
-      "value": 26661770,
-      "shares": 307692,
-      "date": "2026-09-29"
-    },
-    {
-      "name": "INTRATOR MICHAEL N",
-      "role": "Chief Executive Officer",
       "kind": "other",
       "text": null,
       "value": null,
       "shares": 107692,
       "date": "2026-09-29"
-    },
-    {
-      "name": "INTRATOR MICHAEL N",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 85.57 - 88.95 per share.",
-      "value": 26713370,
-      "shares": 307692,
-      "date": "2026-09-22"
     }
   ],
   "dividends": [],

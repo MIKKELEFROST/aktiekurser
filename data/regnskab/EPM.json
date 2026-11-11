@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:22.352Z",
+  "updated_at": "2026-11-11T23:05:22.416Z",
   "source": "Yahoo Finance",
   "symbol": "EPM",
   "summary": "Evolution Petroleum Corporation, an energy company, engages in the ownership, exploitation, development, production, and investment of onshore oil and gas properties in the United States. The company was founded in 2003 and is based in Houston, Texas.",
@@ -7,10 +7,10 @@
   "website": "https://www.evolutionpetroleum.com",
   "employees": 11,
   "ceo": "Mr. Kelly W. Loyd",
-  "next_earnings": "2026-11-10",
-  "earnings_estimated": false,
+  "next_earnings": "2027-02-09",
+  "earnings_estimated": true,
   "earnings_call": "2026-11-11",
-  "eps_estimate": 0.0125,
+  "eps_estimate": 0.02,
   "analysts": {
     "strong_buy": 0,
     "buy": 4,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 21108000,
-      "earnings": 3412000
-    },
-    {
       "q": "3Q2025",
       "revenue": 21288000,
       "earnings": 824000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 24208000,
       "earnings": 4614000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 22573000,
+      "earnings": -2992000
     }
   ],
   "growth": {
     "q0": 0,
-    "q1": 0,
+    "q1": null,
     "y0": 1.52,
     "y1": 0.9231
   },
@@ -160,9 +160,9 @@
     {
       "name": "Wealthtrust Axiom, LLC",
       "kind": "institution",
-      "pct": 5.44,
-      "shares": 2212619,
-      "date": "2026-06-30"
+      "pct": 5.75,
+      "shares": 2335215,
+      "date": "2026-09-30"
     },
     {
       "name": "Dimensional Fund Advisors LP",
@@ -230,14 +230,14 @@
     "net_pct": null
   },
   "extras": {
-    "beta": 0.433,
-    "enterprise_value": 190457472,
-    "ev_ebitda": 8.136,
-    "ev_revenue": 2.206,
-    "float_shares": 35484518,
-    "short_shares": 3082501,
-    "short_pct_float": 8.27,
-    "short_ratio": 6.49,
+    "beta": null,
+    "enterprise_value": 202272512,
+    "ev_ebitda": 11.497,
+    "ev_revenue": 2.308,
+    "float_shares": 36552738,
+    "short_shares": 2626750,
+    "short_pct_float": 7.05,
+    "short_ratio": 9.05,
     "last_split": "1:40",
     "last_split_date": "2004-02-05"
   },
@@ -246,12 +246,6 @@
   "payout_ratio": 6,
   "inst_count": 151,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.01,
-      "actual": 0,
-      "surprise_pct": -100
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.0075,
@@ -263,18 +257,15 @@
       "estimate": 0.008,
       "actual": -0.02,
       "surprise_pct": -350
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.0125,
+      "actual": -0.01,
+      "surprise_pct": -180
     }
   ],
   "insiders": [
-    {
-      "name": "LOYD KELLY WILLIAM",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 168049,
-      "date": "2026-09-17"
-    },
     {
       "name": "STASH RYAN T.",
       "role": "Chief Financial Officer",
@@ -301,6 +292,33 @@
       "value": 0,
       "shares": 91120,
       "date": "2026-09-17"
+    },
+    {
+      "name": "LOYD KELLY WILLIAM",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 168049,
+      "date": "2026-09-17"
+    },
+    {
+      "name": "HARGRAVE MARJORIE ANNE",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 24214,
+      "date": "2025-12-04"
+    },
+    {
+      "name": "BIERRIA MYRA COLEMAN",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 24214,
+      "date": "2025-12-04"
     },
     {
       "name": "DOZIER WILLIAM E",
@@ -330,30 +348,12 @@
       "date": "2025-12-04"
     },
     {
-      "name": "HARGRAVE MARJORIE ANNE",
-      "role": "Director",
+      "name": "STASH RYAN T.",
+      "role": "Chief Financial Officer",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 24214,
-      "date": "2025-12-04"
-    },
-    {
-      "name": "BIERRIA MYRA COLEMAN",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 24214,
-      "date": "2025-12-04"
-    },
-    {
-      "name": "LOYD KELLY WILLIAM",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 102834,
+      "shares": 53419,
       "date": "2025-09-18"
     }
   ],

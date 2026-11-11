@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:21.795Z",
+  "updated_at": "2026-11-11T23:05:21.824Z",
   "source": "Yahoo Finance",
   "symbol": "AII",
   "summary": "American Integrity Insurance Group, Inc., together with its subsidiaries, operates as an insurance company in the United States. The company offers personal residential property insurance for single-family homeowners and condominium owners, as well as coverage for vacant dwellings and investment properties. It also provides manufactured home, commercial residential, dwelling property, and specialty insurance products. In addition, the company offers optional endorsements that provide higher levels of standard coverage and optional coverage, such as personal injury, animal liability, identity recovery, and golf cart physical; and flood insurance products. It distributes its products through the Voluntary Market, which includes partnerships with independent agents, national and regional insurance companies, homebuilder-affiliated agents, and direct-to-consumer channels. American Integrity Insurance Group, Inc. was incorporated in 2006 and is headquartered in Tampa, Florida.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-10",
   "earnings_estimated": false,
   "earnings_call": "2026-11-11",
-  "eps_estimate": 0.68333,
+  "eps_estimate": 0.82,
   "analysts": {
     "strong_buy": 4,
     "buy": 1,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 6
   },
-  "target_mean": 28.25,
-  "target_high": 31,
-  "target_low": 26,
+  "target_mean": 30,
+  "target_high": 33,
+  "target_low": 27,
   "target_analysts": 4,
   "statements": [
     {
@@ -39,16 +39,6 @@
   ],
   "quarterly": [
     {
-      "q": "1Q2025",
-      "revenue": 71886000,
-      "earnings": 38096000
-    },
-    {
-      "q": "2Q2025",
-      "revenue": 74499000,
-      "earnings": 27494000
-    },
-    {
       "q": "3Q2025",
       "revenue": 62026000,
       "earnings": 13163000
@@ -57,15 +47,32 @@
       "q": "4Q2025",
       "revenue": 68075000,
       "earnings": 20869000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 115171000,
+      "earnings": 34146000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 113492000,
+      "earnings": 28354000
     }
   ],
   "growth": {
-    "q0": -0.0376,
-    "q1": -0.24620001,
-    "y0": -0.2753,
-    "y1": -0.2354
+    "q0": -0.2613,
+    "q1": null,
+    "y0": -0.2784,
+    "y1": -0.2317
   },
   "ratings": [
+    {
+      "date": "2026-11-11",
+      "firm": "Citizens",
+      "from": "Market Outperform",
+      "to": "Market Outperform",
+      "action": "main"
+    },
     {
       "date": "2026-10-12",
       "firm": "Citizens",
@@ -128,28 +135,21 @@
       "from": "Outperform",
       "to": "Outperform",
       "action": "main"
-    },
-    {
-      "date": "2025-11-17",
-      "firm": "Citizens",
-      "from": "Market Outperform",
-      "to": "Market Outperform",
-      "action": "main"
     }
   ],
   "holders": [
-    {
-      "name": "Boston Partners",
-      "kind": "institution",
-      "pct": 7.79,
-      "shares": 1527196,
-      "date": "2026-06-30"
-    },
     {
       "name": "Wasatch Advisors LP",
       "kind": "institution",
       "pct": 6.42,
       "shares": 1257057,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Boston Partners",
+      "kind": "institution",
+      "pct": 6.05,
+      "shares": 1185443,
       "date": "2026-09-30"
     },
     {
@@ -219,27 +219,21 @@
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 284199520,
-    "ev_ebitda": 2.324,
-    "ev_revenue": 0.845,
-    "float_shares": 12316428,
-    "short_shares": 447629,
-    "short_pct_float": 3.76,
-    "short_ratio": 2.06,
+    "enterprise_value": 265508992,
+    "ev_ebitda": 1.834,
+    "ev_revenue": 0.685,
+    "float_shares": 12317522,
+    "short_shares": 535111,
+    "short_pct_float": 4.49,
+    "short_ratio": 2.71,
     "last_split": null,
     "last_split_date": null
   },
   "ex_dividend": "2026-03-16",
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 161,
+  "inst_count": 162,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.635,
-      "actual": 0.71,
-      "surprise_pct": 11.81
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.80333,
@@ -251,6 +245,12 @@
       "estimate": 0.88833,
       "actual": 1.78,
       "surprise_pct": 100.38
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.68333,
+      "actual": 1.44,
+      "surprise_pct": 110.73
     }
   ],
   "insiders": [

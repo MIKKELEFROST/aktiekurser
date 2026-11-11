@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:22.531Z",
+  "updated_at": "2026-11-11T23:05:22.632Z",
   "source": "Yahoo Finance",
   "symbol": "GWRE",
   "summary": "Guidewire Software, Inc. provides a platform for property and casualty (P&C) insurers the United States, Canada, other Americas, Europe, the Middle East, Africa, and Asia-Pacific. It offers Guidewire InsuranceSuite, such as PolicyCenter, ClaimCenter, BillingCenter, PricingCenter, and UnderwritingCente applications. The company also provides Guidewire InsuranceNow, a cloud-based application that offers policy administration, claims management, and billing functionality, plus pre-integrated document production, analytics, and other capabilities. In addition, it offers Guidewire Rating Management to manage the pricing of insurance services and products; Guidewire Reinsurance Management to use rules-based logic to execute reinsurance strategy through underwriting and claims processes; Guidewire Client Data Management that helps P&C insurers to capitalize on customer information; Guidewire Advanced Product Designer, a cloud-native application for insurance product design and management; Guidewire Product Content Management provides software tools and standards-based, line-of-business templates; and Guidewire ProNavigator, an AI-powered intelligent assistant. Further, the company provides Guidewire Digital Engagement Applications, which enable insurers to provide digital experiences; Guidewire HazardHub that allows insurers to understand, assess, price, and manage property risk; Guidewire Predict, a P&C-specific machine-learning platform; Guidewire Data Studio, Guidewire Canvas, Guidewire Compare, Guidewire industry Intel, and Guidewire Explore, an cloud-native applications; Guidewire Cyence, a cyber-risk economic modeling product; Guidewire DataHub, an operational data store; and Guidewire InfoCenter, a business intelligence warehouse for P&C insurers. The company was incorporated in 2001 and is headquartered in San Mateo, California.",
@@ -10,19 +10,19 @@
   "next_earnings": "2026-12-03",
   "earnings_estimated": true,
   "earnings_call": "2026-09-03",
-  "eps_estimate": 0.71947,
+  "eps_estimate": 0.722,
   "analysts": {
     "strong_buy": 5,
     "buy": 8,
-    "hold": 3,
+    "hold": 4,
     "sell": 0,
     "strong_sell": 0,
-    "total": 16
+    "total": 17
   },
-  "target_mean": 213.64285,
+  "target_mean": 211.06667,
   "target_high": 258,
   "target_low": 170,
-  "target_analysts": 14,
+  "target_analysts": 15,
   "statements": [
     {
       "year": "2023",
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.090100005,
-    "q1": -0.090299994,
-    "y0": 0.2133,
-    "y1": 0.2775
+    "q0": 0.0939,
+    "q1": -0.0889,
+    "y0": 0.2173,
+    "y1": 0.2795
   },
   "ratings": [
+    {
+      "date": "2026-11-11",
+      "firm": "Jefferies",
+      "from": null,
+      "to": "Hold",
+      "action": "init"
+    },
     {
       "date": "2026-10-02",
       "firm": "DA Davidson",
@@ -140,13 +147,6 @@
       "from": "Buy",
       "to": "Buy",
       "action": "main"
-    },
-    {
-      "date": "2026-09-04",
-      "firm": "Needham",
-      "from": "Hold",
-      "to": "Hold",
-      "action": "reit"
     }
   ],
   "holders": [
@@ -227,24 +227,24 @@
     "sells": 42,
     "bought": 368335,
     "sold": 259728,
-    "net_pct": 36.8
+    "net_pct": 36.9
   },
   "extras": {
     "beta": 0.998,
-    "enterprise_value": 13125527552,
-    "ev_ebitda": 80.315,
-    "ev_revenue": 8.896,
-    "float_shares": 74420646,
-    "short_shares": 3843147,
-    "short_pct_float": 5.26,
-    "short_ratio": 3.11,
+    "enterprise_value": 12686047232,
+    "ev_ebitda": 77.626,
+    "ev_revenue": 8.599,
+    "float_shares": 74422286,
+    "short_shares": 3461022,
+    "short_pct_float": 5.35,
+    "short_ratio": 2.91,
     "last_split": null,
     "last_split_date": null
   },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 771,
+  "inst_count": 769,
   "eps_history": [
     {
       "quarter": "2025-10-31",
@@ -291,21 +291,21 @@
       "date": "2026-11-02"
     },
     {
-      "name": "MULLEN JOHN P",
-      "role": "President",
-      "kind": "sell",
-      "text": "Sale at price 183.96 per share.",
-      "value": 331128,
-      "shares": 1800,
-      "date": "2026-10-26"
-    },
-    {
       "name": "ROSENBAUM MICHAEL GEORGE",
       "role": "Chief Executive Officer",
       "kind": "sell",
       "text": "Sale at price 187.19 per share.",
       "value": 224628,
       "shares": 1200,
+      "date": "2026-10-26"
+    },
+    {
+      "name": "MULLEN JOHN P",
+      "role": "President",
+      "kind": "sell",
+      "text": "Sale at price 183.96 per share.",
+      "value": 331128,
+      "shares": 1800,
       "date": "2026-10-26"
     },
     {

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:23.428Z",
+  "updated_at": "2026-11-11T23:05:23.607Z",
   "source": "Yahoo Finance",
   "symbol": "V",
   "summary": "Visa Inc. operates as a payments technology company in the United States and internationally. It operates VisaNet, a transaction processing network that enables authorization, clearing, and settlement of payment transactions. The company also offers credit, debit, and prepaid card products; tap to pay, tokenization, and click to pay services; Visa Direct, a platform which facilitates money movement, enabling clients to collect, hold, convert, and send funds across its network; and issuing solutions, such as airport lounge access, dining reservations, shopping experiences, event tickets, and seller offers. In addition, it provides acceptance solutions, an omnichannel payment integration with e-commerce platforms; risk detection and prevention solutions; and advisory and other services comprising consulting practice, proprietary analytics models, data scientists and economists, marketing services, and managed services. The company provides its services under the Visa, Visa Electron, V PAY, Interlink, and PLUS brands. It serves consumers, sellers, financial institutions, and government entities. Visa Inc. was founded in 1958 and is headquartered in San Francisco, California.",
@@ -19,7 +19,7 @@
     "strong_sell": 1,
     "total": 40
   },
-  "target_mean": 447.41568,
+  "target_mean": 449.06433,
   "target_high": 500,
   "target_low": 330,
   "target_analysts": 37,
@@ -78,6 +78,13 @@
     "y1": 0.1402
   },
   "ratings": [
+    {
+      "date": "2026-11-11",
+      "firm": "Bernstein",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
     {
       "date": "2026-11-10",
       "firm": "Citigroup",
@@ -140,13 +147,6 @@
       "from": "Overweight",
       "to": "Overweight",
       "action": "main"
-    },
-    {
-      "date": "2026-10-28",
-      "firm": "Evercore ISI Group",
-      "from": "In-Line",
-      "to": "In-Line",
-      "action": "main"
     }
   ],
   "holders": [
@@ -179,6 +179,13 @@
       "date": "2026-06-30"
     },
     {
+      "name": "FMR, LLC",
+      "kind": "institution",
+      "pct": 2.78,
+      "shares": 47947240,
+      "date": "2026-09-30"
+    },
+    {
       "name": "Geode Capital Management, LLC",
       "kind": "institution",
       "pct": 2.7,
@@ -190,13 +197,6 @@
       "kind": "institution",
       "pct": 2.67,
       "shares": 45960354,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "FMR, LLC",
-      "kind": "institution",
-      "pct": 2.49,
-      "shares": 42929995,
       "date": "2026-06-30"
     },
     {
@@ -223,28 +223,28 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 13,
-    "sells": 14,
-    "bought": 180582,
-    "sold": 210285,
+    "buys": 14,
+    "sells": 15,
+    "bought": 182449,
+    "sold": 212152,
     "net_pct": -1.9
   },
   "extras": {
     "beta": 0.786,
-    "enterprise_value": 782565572608,
-    "ev_ebitda": 24.578,
-    "ev_revenue": 17.048,
+    "enterprise_value": 784104030208,
+    "ev_ebitda": 24.626,
+    "ev_revenue": 17.082,
     "float_shares": 1699944506,
-    "short_shares": 20507586,
-    "short_pct_float": 1.19,
-    "short_ratio": 3.17,
+    "short_shares": 21364633,
+    "short_pct_float": 1.24,
+    "short_ratio": 3.45,
     "last_split": "4:1",
     "last_split_date": "2015-03-19"
   },
   "ex_dividend": "2026-11-10",
   "dividend_date": null,
   "payout_ratio": 0.2175,
-  "inst_count": 6031,
+  "inst_count": 6037,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -273,6 +273,24 @@
   ],
   "insiders": [
     {
+      "name": "ROTTENBERG JULIE B",
+      "role": "General Counsel",
+      "kind": "sell",
+      "text": "Sale at price 423.00 per share.",
+      "value": 789741,
+      "shares": 1867,
+      "date": "2026-11-09"
+    },
+    {
+      "name": "ROTTENBERG JULIE B",
+      "role": "General Counsel",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 134.76 per share.",
+      "value": 251597,
+      "shares": 1867,
+      "date": "2026-11-09"
+    },
+    {
       "name": "TANEJA RAJAT",
       "role": "Officer",
       "kind": "sell",
@@ -291,6 +309,15 @@
       "date": "2026-11-04"
     },
     {
+      "name": "MCINERNEY RYAN",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 416.22 per share.",
+      "value": 2445292,
+      "shares": 5875,
+      "date": "2026-11-02"
+    },
+    {
       "name": "TANEJA RAJAT",
       "role": "Officer",
       "kind": "sell",
@@ -306,15 +333,6 @@
       "text": "Conversion of Exercise of derivative security at price 109.82 per share.",
       "value": 3779785,
       "shares": 34418,
-      "date": "2026-11-02"
-    },
-    {
-      "name": "MCINERNEY RYAN",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 416.22 per share.",
-      "value": 2445292,
-      "shares": 5875,
       "date": "2026-11-02"
     },
     {
@@ -343,31 +361,9 @@
       "value": 687691,
       "shares": 1867,
       "date": "2026-09-09"
-    },
-    {
-      "name": "ROTTENBERG JULIE B",
-      "role": "General Counsel",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 134.76 per share.",
-      "value": 251597,
-      "shares": 1867,
-      "date": "2026-09-09"
-    },
-    {
-      "name": "MCINERNEY RYAN",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 379.65 per share.",
-      "value": 2230444,
-      "shares": 5875,
-      "date": "2026-09-01"
     }
   ],
   "dividends": [
-    {
-      "date": "2016-11-16",
-      "amount": 0.165
-    },
     {
       "date": "2017-02-15",
       "amount": 0.165
@@ -523,6 +519,10 @@
     {
       "date": "2026-08-11",
       "amount": 0.67
+    },
+    {
+      "date": "2026-11-10",
+      "amount": 0.78
     }
   ],
   "splits": [

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:23.592Z",
+  "updated_at": "2026-11-11T23:05:23.628Z",
   "source": "Yahoo Finance",
   "symbol": "VLN",
   "summary": "Valens Semiconductor Ltd., together with its subsidiaries, provides semiconductor products for the audio-video and automotive industries. It operates through the Cross Industry Business and Automotive segments. The company offers HDBaseT technology, which enables simultaneous delivery of ultra-high-definition digital video and audio, Ethernet, USB, control signals, and power through a single long-reach cable. It also provides plug-and-play convergence and distribution of different interfaces for the enterprise, education, industrial, digital signage, and medical markets. In addition, it offers MIPI A-PHY, a connectivity standard that is an enabler for advanced driver-assistance systems and automated driving systems. In addition, the company offers semiconductors and other components in VS100, VS2000, VS3000, VS6000, VS7000, VS6320, VA6000, and VA7000 product series. It sells its products through the direct sales force, and distributors and independent sales representatives. Valens Semiconductor Ltd. was incorporated in 2006 and is headquartered in Hod HaSharon, Israel.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-11",
   "earnings_estimated": false,
   "earnings_call": "2026-11-11",
-  "eps_estimate": -0.02,
+  "eps_estimate": -0.015,
   "analysts": {
     "strong_buy": 1,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 17335000,
-      "earnings": -7321000
-    },
-    {
       "q": "4Q2025",
       "revenue": 19403000,
       "earnings": -8770000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 18105000,
       "earnings": -8052000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 21912000,
+      "earnings": -5498000
     }
   ],
   "growth": {
-    "q0": 0.5,
-    "q1": 0.625,
+    "q0": 0.625,
+    "q1": 0.4,
     "y0": 0.0952,
     "y1": 0.39470002
   },
@@ -153,9 +153,9 @@
     {
       "name": "Value Base Ltd.",
       "kind": "institution",
-      "pct": 19.85,
-      "shares": 21491922,
-      "date": "2026-06-30"
+      "pct": 19.86,
+      "shares": 21503155,
+      "date": "2026-09-30"
     },
     {
       "name": "Marshall Wace LLP",
@@ -209,9 +209,9 @@
     {
       "name": "ARK ETF Trust-ARK Israel Innovative Technology ETF",
       "kind": "fond",
-      "pct": 1.16,
-      "shares": 1251107,
-      "date": "2026-09-30"
+      "pct": 1.13,
+      "shares": 1220746,
+      "date": "2026-10-31"
     },
     {
       "name": "Columbia Funds Series Trust I-Columbia Small Cap Value Discovery Fund",
@@ -231,27 +231,21 @@
   },
   "extras": {
     "beta": 1.235,
-    "enterprise_value": 93500888,
-    "ev_ebitda": -2.997,
-    "ev_revenue": 1.304,
+    "enterprise_value": 99997688,
+    "ev_ebitda": -3.205,
+    "ev_revenue": 1.395,
     "float_shares": 76479286,
-    "short_shares": 1497809,
-    "short_pct_float": 1.93,
-    "short_ratio": 2.69,
+    "short_shares": 1422593,
+    "short_pct_float": 1.83,
+    "short_ratio": 3.09,
     "last_split": null,
     "last_split_date": null
   },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 63,
+  "inst_count": 66,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.065,
-      "actual": -0.04,
-      "surprise_pct": 38.46
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.04,
@@ -268,6 +262,12 @@
       "quarter": "2026-06-30",
       "estimate": -0.04,
       "actual": -0.04,
+      "surprise_pct": 0
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.02,
+      "actual": -0.02,
       "surprise_pct": 0
     }
   ],
@@ -356,10 +356,10 @@
     {
       "name": "ROZENBERG HAINE YAEL",
       "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 2.35 - 2.36 per share.",
-      "value": 44206,
-      "shares": 18827,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 0.86 per share.",
+      "value": 1250,
+      "shares": 1453,
       "date": "2026-06-15"
     }
   ],

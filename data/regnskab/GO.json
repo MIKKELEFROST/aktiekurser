@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:22.505Z",
+  "updated_at": "2026-11-11T23:05:22.601Z",
   "source": "Yahoo Finance",
   "symbol": "GO",
   "summary": "Grocery Outlet Holding Corp. operates as a retailer of consumables and fresh products sold through independently operated stores in the United States. It offers perishable department products, including dairy and deli; produce and floral; and meat and seafood. The company also provides non-perishable department products, such as non-perishable grocery, general merchandise, health and beauty care, frozen foods, and beer and wine. It operates stores in California, Washington, Oregon, Pennsylvania, Tennessee, Idaho, Maryland, Nevada, North Carolina, New Jersey, Georgia, Ohio, Alabama, Delaware, Kentucky, and Virginia. The company was founded in 1946 and is headquartered in Emeryville, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-10",
   "earnings_estimated": false,
   "earnings_call": "2026-11-10",
-  "eps_estimate": 0.15137,
+  "eps_estimate": 0.1343,
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 14
   },
-  "target_mean": 11.07692,
+  "target_mean": 11.53846,
   "target_high": 17,
   "target_low": 6,
   "target_analysts": 13,
@@ -51,16 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 1179772000,
-      "earnings": 4961000
-    },
-    {
-      "q": "3Q2025",
-      "revenue": 1168153000,
-      "earnings": 11605000
-    },
-    {
       "q": "4Q2025",
       "revenue": 1215267000,
       "earnings": -218161000
@@ -69,15 +59,46 @@
       "q": "1Q2026",
       "revenue": 1166352000,
       "earnings": -180322000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 1192764000,
+      "earnings": 5626000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1178288000,
+      "earnings": 13289000
     }
   ],
   "growth": {
-    "q0": -0.2792,
-    "q1": -0.23719999,
-    "y0": -0.28280002,
-    "y1": 0.2347
+    "q0": -0.2932,
+    "q1": 0.45259997,
+    "y0": -0.2886,
+    "y1": 0.2066
   },
   "ratings": [
+    {
+      "date": "2026-11-11",
+      "firm": "Telsey Advisory Group",
+      "from": "Market Perform",
+      "to": "Market Perform",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-11",
+      "firm": "TD Cowen",
+      "from": "Hold",
+      "to": "Hold",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-11",
+      "firm": "Wells Fargo",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
     {
       "date": "2026-09-30",
       "firm": "B of A Securities",
@@ -122,27 +143,6 @@
     },
     {
       "date": "2026-05-14",
-      "firm": "DA Davidson",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-05-14",
-      "firm": "TD Cowen",
-      "from": "Hold",
-      "to": "Hold",
-      "action": "main"
-    },
-    {
-      "date": "2026-05-14",
-      "firm": "Wells Fargo",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
-      "action": "main"
-    },
-    {
-      "date": "2026-03-05",
       "firm": "DA Davidson",
       "from": "Neutral",
       "to": "Neutral",
@@ -230,28 +230,22 @@
     "net_pct": 4.4
   },
   "extras": {
-    "beta": 0.692,
-    "enterprise_value": 3150974976,
-    "ev_ebitda": 15.513,
-    "ev_revenue": 0.664,
-    "float_shares": 87185435,
-    "short_shares": 19865208,
-    "short_pct_float": 30.99,
-    "short_ratio": 9.28,
+    "beta": null,
+    "enterprise_value": 3152508928,
+    "ev_ebitda": 16.04,
+    "ev_revenue": 0.663,
+    "float_shares": 87256307,
+    "short_shares": 18252650,
+    "short_pct_float": 28.47,
+    "short_ratio": 8.08,
     "last_split": null,
     "last_split_date": null
   },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 341,
+  "inst_count": 344,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.18837,
-      "actual": 0.21,
-      "surprise_pct": 11.48
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.20864,
@@ -269,6 +263,12 @@
       "estimate": 0.12432,
       "actual": 0.2,
       "surprise_pct": 60.88
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.15137,
+      "actual": 0.16,
+      "surprise_pct": 5.7
     }
   ],
   "insiders": [
@@ -345,16 +345,16 @@
       "date": "2026-06-15"
     },
     {
-      "name": "JAROS CAREY",
+      "name": "THORNTON FELICIA D",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 18868,
+      "shares": 22022,
       "date": "2026-06-01"
     },
     {
-      "name": "LINDBERG ERIC J JR",
+      "name": "KOBAYASHI MICHAEL K",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

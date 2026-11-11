@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:21.911Z",
+  "updated_at": "2026-11-11T23:05:21.944Z",
   "source": "Yahoo Finance",
   "symbol": "ATRO",
   "summary": "Astronics Corporation, through its subsidiaries, designs and manufactures products for the aerospace, defense, and electronics industries in the United States, rest of North America, Asia, Europe, South America, and internationally. It operates in two segments, Aerospace and Test Systems. The Aerospace segment offers lighting and safety systems, electrical power generation systems, distribution and seat motions systems, aircraft structures, avionics products, systems certification, and other products. This segment serves airframe manufacturers (OEM) that build aircraft for the commercial transport, military, and general aviation markets; suppliers to OEMs; and aircraft operators, such as airlines; suppliers to the aircraft operators; and branches of the U.S. Department of Defense. The Test Systems segment designs, develops, manufactures, and maintains automated test systems that support the aerospace and defense, communications, and mass transit industries, as well as training and simulation devices for commercial and military applications. This segment serves OEMs and prime government contractors for electronics and military products. The company was incorporated in 1968 and is headquartered in East Aurora, New York.",
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 5
   },
-  "target_mean": 98,
+  "target_mean": 91.75,
   "target_high": 107,
-  "target_low": 90,
+  "target_low": 80,
   "target_analysts": 4,
   "statements": [
     {
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 204678000,
-      "earnings": 1314000
-    },
-    {
       "q": "3Q2025",
       "revenue": 211447000,
       "earnings": -11098000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 259957000,
       "earnings": 35060000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 271679000,
+      "earnings": 52204000
     }
   ],
   "growth": {
-    "q0": 0.7633,
-    "q1": 0.20799999,
-    "y0": 0.6179,
-    "y1": 0.131
+    "q0": 0.152,
+    "q1": 0.4441,
+    "y0": 0.65970004,
+    "y1": 0.1673
   },
   "ratings": [
+    {
+      "date": "2026-11-11",
+      "firm": "TD Cowen",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-23",
       "firm": "Keybanc",
@@ -136,13 +143,6 @@
     },
     {
       "date": "2025-06-12",
-      "firm": "Truist Securities",
-      "from": "Hold",
-      "to": "Hold",
-      "action": "main"
-    },
-    {
-      "date": "2025-04-17",
       "firm": "Truist Securities",
       "from": "Hold",
       "to": "Hold",
@@ -230,14 +230,14 @@
     "net_pct": null
   },
   "extras": {
-    "beta": 1.342,
-    "enterprise_value": 2881054720,
-    "ev_ebitda": 19.367,
-    "ev_revenue": 3.058,
-    "float_shares": 40328739,
-    "short_shares": 3218247,
-    "short_pct_float": 9.12,
-    "short_ratio": 5.22,
+    "beta": null,
+    "enterprise_value": 2993149696,
+    "ev_ebitda": 15.062,
+    "ev_revenue": 2.986,
+    "float_shares": 40455079,
+    "short_shares": 3143102,
+    "short_pct_float": 8.91,
+    "short_ratio": 5.94,
     "last_split": "1253:1000",
     "last_split_date": "2026-06-15"
   },
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 440,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.34722,
-      "actual": 0.40833,
-      "surprise_pct": 17.6
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.5,
@@ -269,6 +263,12 @@
       "estimate": 0.60792,
       "actual": 0.7,
       "surprise_pct": 15.15
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.72,
+      "actual": 0.81,
+      "surprise_pct": 12.5
     }
   ],
   "insiders": [
@@ -309,15 +309,6 @@
       "date": "2026-08-17"
     },
     {
-      "name": "GUNDERMANN PETER J",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 81.35 per share.",
-      "value": 1102292,
-      "shares": 13550,
-      "date": "2026-03-03"
-    },
-    {
       "name": "PEABODY MARK A",
       "role": "Officer",
       "kind": "other",
@@ -351,6 +342,15 @@
       "text": "Conversion of Exercise of derivative security at price 81.35 per share.",
       "value": 244050,
       "shares": 3000,
+      "date": "2026-03-03"
+    },
+    {
+      "name": "GUNDERMANN PETER J",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 81.35 per share.",
+      "value": 1102292,
+      "shares": 13550,
       "date": "2026-03-03"
     },
     {

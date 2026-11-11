@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:21.819Z",
+  "updated_at": "2026-11-11T23:05:21.841Z",
   "source": "Yahoo Finance",
   "symbol": "ALH",
   "summary": "Alliance Laundry Holdings Inc. designs, manufactures, and sells commercial laundry systems in the United States, the Czech Republic, Thailand, and internationally. The company offers washer extractors, top-load washers, and front-load washers; tumblers and small-chassis dryers; combination washer and dryer products; service parts and consumables; and equipment financing, laundromat site selection assistance, investment seminar training programs, computer-aided commercial laundry room design, sales and service training for distributors, technical assistance, and on-call installation and repair services. It also provides Speed Queen Insights, Huebsch Command, Primus i-Trace, and IPSO Connect, which offer performance reporting, issue and error alerts, machine control and programming, a mobile payment platform with an integrated loyalty program, and an integrated CRM and marketing system to vended laundry customers; UniMac Core, a cloud-based monitoring and reporting management tool that allows laundry managers to manage laundry operations from anywhere at any time; UniMac FireLinc system, a tool for digital record keeping simple and fire equipment bar code scanning; and a financing website that allows customers to manage bills, statements, and account balances. The company sells its products under the Speed Queen, Huebsch, UniMac, Primus, and IPSO brands. It distributes its products through a network of distributors and direct sales channels. The company serves healthcare facilities, fire stations, hotels, laundromats, communal laundry facilities, and other commercial applications, as well as household and individual users. The company was formerly known as ALH Holding Inc. and changed its name to Alliance Laundry Holdings Inc. in August 2025. Alliance Laundry Holdings Inc. was founded in 1908 and is headquartered in Ripon, Wisconsin.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-10",
   "earnings_estimated": false,
   "earnings_call": "2026-11-10",
-  "eps_estimate": 0.3201,
+  "eps_estimate": 0.30571,
   "analysts": {
     "strong_buy": 1,
     "buy": 6,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 8
   },
-  "target_mean": 31.125,
+  "target_mean": 30.875,
   "target_high": 37,
   "target_low": 26,
   "target_analysts": 8,
@@ -60,12 +60,33 @@
     }
   ],
   "growth": {
-    "q0": 0.1432,
-    "q1": 0.2984,
-    "y0": 0.3231,
-    "y1": 0.1073
+    "q0": 0.2738,
+    "q1": 0.0215,
+    "y0": 0.3693,
+    "y1": 0.078600004
   },
   "ratings": [
+    {
+      "date": "2026-11-11",
+      "firm": "Morgan Stanley",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-11",
+      "firm": "JP Morgan",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-11",
+      "firm": "Baird",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
     {
       "date": "2026-10-12",
       "firm": "Citigroup",
@@ -113,27 +134,6 @@
       "firm": "Citigroup",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-05-13",
-      "firm": "Baird",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-03-13",
-      "firm": "Citigroup",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2025-11-19",
-      "firm": "Morgan Stanley",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
       "action": "main"
     }
   ],
@@ -215,31 +215,25 @@
     "sells": 14,
     "bought": 891256,
     "sold": 26315028,
-    "net_pct": -64.6
+    "net_pct": -65
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 6523460096,
-    "ev_ebitda": 15.137,
-    "ev_revenue": 3.673,
-    "float_shares": 70799564,
-    "short_shares": 4256250,
-    "short_pct_float": 9.87,
-    "short_ratio": 3.71,
+    "enterprise_value": 6671812608,
+    "ev_ebitda": 15.025,
+    "ev_revenue": 3.708,
+    "float_shares": 69906938,
+    "short_shares": 3863865,
+    "short_pct_float": 9.52,
+    "short_ratio": 3.99,
     "last_split": null,
     "last_split_date": null
   },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 245,
+  "inst_count": 248,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.22452,
-      "actual": 0.28,
-      "surprise_pct": 24.71
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.23122,
@@ -257,6 +251,12 @@
       "estimate": 0.3415,
       "actual": 0.41,
       "surprise_pct": 20.06
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.3201,
+      "actual": 0.38,
+      "surprise_pct": 18.71
     }
   ],
   "insiders": [
@@ -308,15 +308,6 @@
     {
       "name": "NOLDEN DEAN J",
       "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 28.05 per share.",
-      "value": 431970,
-      "shares": 15400,
-      "date": "2026-08-05"
-    },
-    {
-      "name": "NOLDEN DEAN J",
-      "role": "Chief Financial Officer",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 12.46 per share.",
       "value": 191884,
@@ -328,9 +319,9 @@
       "role": "Chief Financial Officer",
       "kind": "sell",
       "text": "Sale at price 28.05 per share.",
-      "value": 129030,
-      "shares": 4600,
-      "date": "2026-08-04"
+      "value": 431970,
+      "shares": 15400,
+      "date": "2026-08-05"
     },
     {
       "name": "NOLDEN DEAN J",
@@ -338,6 +329,15 @@
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 12.46 per share.",
       "value": 57316,
+      "shares": 4600,
+      "date": "2026-08-04"
+    },
+    {
+      "name": "NOLDEN DEAN J",
+      "role": "Chief Financial Officer",
+      "kind": "sell",
+      "text": "Sale at price 28.05 per share.",
+      "value": 129030,
       "shares": 4600,
       "date": "2026-08-04"
     },

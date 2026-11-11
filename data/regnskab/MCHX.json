@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:22.815Z",
+  "updated_at": "2026-11-11T23:05:22.990Z",
   "source": "Yahoo Finance",
   "symbol": "MCHX",
   "summary": "Marchex, Inc., a conversation intelligence company, provides conversational analytics and related solutions in the United States, Canada, and internationally. Its products include Marketing Edge that identifies which campaigns and channels are driving inbound conversations, evaluates what happens during those conversations, and closes the sales loop by connecting converted sales to marketing driven leads; Sonar Business Text Messaging, an artificial intelligence (AI) powered intelligent workflow enabled mobile messaging solution that enables operations, sales, and marketing teams to communicate personally with field staff, prospects, and customers; and Marchex Platform Services, a robust API-based conversation intelligence product that allows executives, sales, customer engagement, and marketing teams to apply Marchex AI to most any calls, regardless of communication platform, to identify actionable insights from conversations with their customers. The company also provides Spotlight, an AI conversation analytics product for multi-location businesses; Engage, a solution that provides locations with applications to enhance their overall performance; Call Summary and Sentiment Suite, are capabilities powered by generative AI that analyze and generate summaries of consumer-to-business calls; and AI for Industry Solution, provides automatic lead qualification, identifying high value leads with industry specific indicators to target the most valuable opportunities, and improved attribution, allowing businesses to segment audiences and improve automated bidding using attributes such as product/service, lead outcome, lead value, and topics. Marchex, Inc. was incorporated in 2003 and is headquartered in Seattle, Washington.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-10",
   "earnings_estimated": false,
   "earnings_call": "2026-11-10",
-  "eps_estimate": 0.04,
+  "eps_estimate": 0.03,
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 11514000,
-      "earnings": -1020000
-    },
-    {
       "q": "4Q2025",
       "revenue": 10848000,
       "earnings": -2318000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 11002000,
       "earnings": -408000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 15974000,
+      "earnings": 1274000
     }
   ],
   "growth": {
-    "q0": 0,
-    "q1": 1.75,
+    "q0": 1.75,
+    "q1": 1.6667,
     "y0": 1.6667,
     "y1": 3
   },
@@ -231,27 +231,21 @@
   },
   "extras": {
     "beta": 1.852,
-    "enterprise_value": 49926856,
-    "ev_ebitda": -31.146,
-    "ev_revenue": 1.135,
+    "enterprise_value": 54356848,
+    "ev_ebitda": -33.909,
+    "ev_revenue": 1.236,
     "float_shares": 17677428,
-    "short_shares": 33482,
-    "short_pct_float": 0.15,
-    "short_ratio": 0.61,
+    "short_shares": 22295,
+    "short_pct_float": 0.1,
+    "short_ratio": 0.69,
     "last_split": null,
     "last_split_date": null
   },
   "ex_dividend": "2018-03-07",
   "dividend_date": null,
   "payout_ratio": 1,
-  "inst_count": 33,
+  "inst_count": 34,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.01,
-      "actual": 0,
-      "surprise_pct": -100
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.01,
@@ -269,9 +263,24 @@
       "estimate": 0.02,
       "actual": 0,
       "surprise_pct": -100
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.04,
+      "actual": 0.04,
+      "surprise_pct": 0
     }
   ],
   "insiders": [
+    {
+      "name": "HARTLESS TROY W",
+      "role": "President",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 87500,
+      "date": "2026-03-20"
+    },
     {
       "name": "NAGLE BRIAN",
       "role": "Chief Financial Officer",
@@ -288,15 +297,6 @@
       "text": null,
       "value": null,
       "shares": 62500,
-      "date": "2026-03-20"
-    },
-    {
-      "name": "HARTLESS TROY W",
-      "role": "President",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 87500,
       "date": "2026-03-20"
     },
     {

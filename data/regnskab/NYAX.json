@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T00:26:50.381Z",
+  "updated_at": "2026-11-11T23:05:23.152Z",
   "source": "Yahoo Finance",
   "symbol": "NYAX",
   "summary": "Nayax Ltd., a fintech company, designs, develops, and sells integrated POS devices and software for automated self-service customers in-house in the United States, Europe, the United Kingdom, Australia, Israel, and internationally. It offers POS, cashless payments, and charging stations, such as VPOS Touch, Onyx, Nova Market, DOT, Nova C4, Nova C3, EV-Meter, EV Kiosk, Nova 55F, Nova 22, Nova 156, Nova Modu, and Nova Kiosk; management suite and telemetry solutions, Nayax Core Management Suite, MoMa, Vending Management System, Nayax Energy Core, and Retail Management Cloud; marketing, loyalty, and consumer engagement platforms, such as Monyx Wallet and Weezmo; and payments and integrations solutions, including API Suite and Coinbridge. The company serves vending machines, kiosks, self-checkouts, ticketing machines, laundromats, gaming terminals, and EV charging stations. Nayax Ltd. has a strategic alliance with Getnet Payments S.L. The company was incorporated in 2005 and is headquartered in Herzliya, Israel.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-11",
   "earnings_estimated": false,
   "earnings_call": "2026-11-11",
-  "eps_estimate": 0.28,
+  "eps_estimate": null,
   "analysts": {
     "strong_buy": 1,
     "buy": 4,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 104280000,
-      "earnings": 3537000
-    },
-    {
       "q": "4Q2025",
       "revenue": 119454000,
       "earnings": 13171000
@@ -69,10 +64,15 @@
       "q": "2Q2026",
       "revenue": 122590000,
       "earnings": -10117000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 128037000,
+      "earnings": -1076000
     }
   ],
   "growth": {
-    "q0": 1.5135001,
+    "q0": null,
     "q1": null,
     "y0": 0.0802,
     "y1": null
@@ -160,27 +160,21 @@
   },
   "extras": {
     "beta": -0.129,
-    "enterprise_value": 1884446336,
-    "ev_ebitda": 55.41,
-    "ev_revenue": 4.158,
+    "enterprise_value": 1889518976,
+    "ev_ebitda": 55.559,
+    "ev_revenue": 4.169,
     "float_shares": 16824206,
-    "short_shares": 163303,
-    "short_pct_float": 0.74,
-    "short_ratio": 6.04,
+    "short_shares": 230861,
+    "short_pct_float": 1.04,
+    "short_ratio": 9.56,
     "last_split": null,
     "last_split_date": null
   },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 98,
+  "inst_count": 99,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.23174,
-      "actual": 0.1114,
-      "surprise_pct": -51.93
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.25175,
@@ -198,6 +192,12 @@
       "estimate": 0.12546,
       "actual": 0.1607,
       "surprise_pct": 28.09
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.28,
+      "actual": 0.3673,
+      "surprise_pct": 31.18
     }
   ],
   "insiders": [],

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:21.910Z",
+  "updated_at": "2026-11-11T23:05:21.943Z",
   "source": "Yahoo Finance",
   "symbol": "ATRA",
   "summary": "Atara Biotherapeutics, Inc. engages in the development of transformative therapies for patients with cancer and autoimmune disease in the United States and internationally. Its lead product includes Tab-cel (tabelecleucel), a T-cell immunotherapy program that is in Phase 3 clinical trials for the treatment of epstein-barr virus (EBV) with post-transplant lymphoproliferative disease, as well as other EBV-driven diseases. It also develops ATA3219, an allogeneic CAR T targeting CD19 intended to target B-cell malignancies and autoimmune diseases. The company has research collaboration agreements with Memorial Sloan Kettering Cancer Center, and Council of the Queensland Institute of Medical Research. Atara Biotherapeutics, Inc. was incorporated in 2012 and is headquartered in Thousand Oaks, California.",
@@ -7,10 +7,10 @@
   "website": "https://www.atarabio.com",
   "employees": 10,
   "ceo": "Dr. Anhco  Nguyen Ph.D.",
-  "next_earnings": "2026-11-12",
-  "earnings_estimated": true,
+  "next_earnings": "2026-11-10",
+  "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": -0.22,
+  "eps_estimate": -0.19,
   "analysts": {
     "strong_buy": 0,
     "buy": 2,
@@ -51,16 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "1Q2025",
-      "revenue": 98149000,
-      "earnings": 38010000
-    },
-    {
-      "q": "2Q2025",
-      "revenue": 17575000,
-      "earnings": 2387000
-    },
-    {
       "q": "3Q2025",
       "revenue": 3453000,
       "earnings": -4303000
@@ -69,11 +59,21 @@
       "q": "4Q2025",
       "revenue": 1595000,
       "earnings": -3400000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 630000,
+      "earnings": -4834000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1224000,
+      "earnings": -2229000
     }
   ],
   "growth": {
-    "q0": 0.3125,
-    "q1": 0.4571,
+    "q0": 0.4571,
+    "q1": null,
     "y0": -1.3696,
     "y1": 2.6263
   },
@@ -231,13 +231,13 @@
   },
   "extras": {
     "beta": 0.32,
-    "enterprise_value": 82114464,
-    "ev_ebitda": -7.426,
-    "ev_revenue": 13.257,
+    "enterprise_value": 81311448,
+    "ev_ebitda": -7.353,
+    "ev_revenue": 13.127,
     "float_shares": 4623068,
-    "short_shares": 350260,
-    "short_pct_float": 4.76,
-    "short_ratio": 8.52,
+    "short_shares": 296651,
+    "short_pct_float": 4.04,
+    "short_ratio": 9.41,
     "last_split": "1:25",
     "last_split_date": "2024-06-20"
   },
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 47,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.665,
-      "actual": -0.32,
-      "surprise_pct": 51.88
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.10333,
@@ -263,6 +257,12 @@
       "estimate": -0.25,
       "actual": -0.32,
       "surprise_pct": -28
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.22,
+      "actual": -0.15,
+      "surprise_pct": 31.82
     }
   ],
   "insiders": [
@@ -303,8 +303,8 @@
       "date": "2026-06-11"
     },
     {
-      "name": "FUST MATTHEW K.",
-      "role": "Director",
+      "name": "CIONGOLI GREGORY AUSTIN",
+      "role": "Director and Beneficial Owner of more than 10% of a Class of Security",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
@@ -312,8 +312,8 @@
       "date": "2026-06-09"
     },
     {
-      "name": "CIONGOLI GREGORY AUSTIN",
-      "role": "Director and Beneficial Owner of more than 10% of a Class of Security",
+      "name": "FUST MATTHEW K.",
+      "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,

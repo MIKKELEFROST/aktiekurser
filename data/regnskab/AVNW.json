@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:21.924Z",
+  "updated_at": "2026-11-11T23:05:21.957Z",
   "source": "Yahoo Finance",
   "symbol": "AVNW",
   "summary": "Aviat Networks, Inc. provides microwave networking and wireless access networking solutions in North America, Africa, the Middle East, Europe, Latin America, and the Asia Pacific. The company provides outdoor, indoor, and split-mount radios; microwave routers, and trunking; private LTE/5G, access and network management products; narrow band multi-point radios, designed, and optimised for SCADA and telemetry applications; and hosted software products, such as aviat design, frequency assurance, aviatcloud, and health assurance software. It also offers project services, which include design and engineering, site and path surveys, assembly and integration, project management, and install and commission; and managed services, such as network and interference monitoring, network health, onsite maintenance, and remote upgrades. The company serves communications service providers and private network operators, including transportation agencies, energy and utility companies, public safety agencies, and broadcast network operators, as well as federal, state, and local government agencies. It markets its products through a direct sales, service, and support organization; and indirect sales channels comprising dealers, resellers, and sales representatives, as well as online. The company was incorporated in 2006 and is headquartered in Austin, Texas.",
@@ -7,10 +7,10 @@
   "website": "https://www.aviatnetworks.com",
   "employees": 898,
   "ceo": "Mr. Peter A. Smith Ph.D.",
-  "next_earnings": "2026-11-10",
-  "earnings_estimated": false,
+  "next_earnings": "2027-02-09",
+  "earnings_estimated": true,
   "earnings_call": "2026-11-10",
-  "eps_estimate": 0.61143,
+  "eps_estimate": 0.34333,
   "analysts": {
     "strong_buy": 1,
     "buy": 7,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 8
   },
-  "target_mean": 32.75,
+  "target_mean": 32.625,
   "target_high": 42,
   "target_low": 25,
   "target_analysts": 8,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.13229999,
-    "q1": 9.6905,
-    "y0": 0.53360003,
-    "y1": 0.1745
+    "q0": -0.3642,
+    "q1": 10.3667,
+    "y0": 0.38959998,
+    "y1": 0.3179
   },
   "ratings": [
+    {
+      "date": "2026-11-11",
+      "firm": "B. Riley Securities",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "reit"
+    },
     {
       "date": "2026-08-28",
       "firm": "Roth Capital",
@@ -140,13 +147,6 @@
       "from": "Market Outperform",
       "to": "Market Outperform",
       "action": "reit"
-    },
-    {
-      "date": "2026-02-04",
-      "firm": "B. Riley Securities",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "reit"
     }
   ],
   "holders": [
@@ -160,9 +160,9 @@
     {
       "name": "Tieton Capital Management, LLC",
       "kind": "institution",
-      "pct": 5.26,
-      "shares": 676440,
-      "date": "2026-06-30"
+      "pct": 5.23,
+      "shares": 672270,
+      "date": "2026-09-30"
     },
     {
       "name": "Western Standard, LLC",
@@ -227,24 +227,24 @@
     "sells": 3,
     "bought": 119750,
     "sold": 16240,
-    "net_pct": 9.4
+    "net_pct": 9.3
   },
   "extras": {
     "beta": 0.78,
-    "enterprise_value": 271230432,
-    "ev_ebitda": 9.863,
-    "ev_revenue": 0.617,
-    "float_shares": 11395674,
-    "short_shares": 1176142,
-    "short_pct_float": 9.46,
-    "short_ratio": 10.62,
+    "enterprise_value": 239763056,
+    "ev_ebitda": 9.968,
+    "ev_revenue": 0.552,
+    "float_shares": 11495617,
+    "short_shares": 1092517,
+    "short_pct_float": 8.79,
+    "short_ratio": 9.46,
     "last_split": "2:1",
     "last_split_date": "2021-04-08"
   },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 173,
+  "inst_count": 174,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -282,6 +282,15 @@
       "date": "2026-10-08"
     },
     {
+      "name": "SMITH PETER A.",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 60041,
+      "date": "2026-09-03"
+    },
+    {
       "name": "CROKE GARY",
       "role": "Officer",
       "kind": "other",
@@ -311,11 +320,11 @@
     {
       "name": "SMITH PETER A.",
       "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 60041,
-      "date": "2026-09-03"
+      "kind": "sell",
+      "text": "Sale at price 19.69 per share.",
+      "value": 280901,
+      "shares": 14264,
+      "date": "2026-08-31"
     },
     {
       "name": "CROKE GARY",
@@ -338,11 +347,11 @@
     {
       "name": "SMITH PETER A.",
       "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 19.69 per share.",
-      "value": 280901,
-      "shares": 14264,
-      "date": "2026-08-31"
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 23357,
+      "date": "2026-08-28"
     },
     {
       "name": "CROKE GARY",
@@ -351,15 +360,6 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 1208,
-      "date": "2026-08-28"
-    },
-    {
-      "name": "BOASE ERIN",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 3826,
       "date": "2026-08-28"
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:21.905Z",
+  "updated_at": "2026-11-11T23:05:21.939Z",
   "source": "Yahoo Finance",
   "symbol": "ATEC",
   "summary": "Alphatec Holdings, Inc., a medical technology company, designs, develops, and advances technologies for the surgical treatment of spinal disorders in the United States and internationally. The company manufactures and sells implants, instruments, imaging equipment, and spare parts. It offers Alpha InformatiX product platform, including EOS imaging system that provides full-body imaging; SafeOp Neural InformatiX System that automates electromyographic, somatosensory evoked potential, and motor evoked potential monitoring; and Valence, an intra-operative system that integrates navigation and robotics into spine procedures, as well as Sigma Prone TransPsoas (PTP) Access and PTP Patient Positioning Systems. It also provides split-blade retractors; Sigma-ALIF Access System, a procedure-specific access system; spinal implants and fixation systems comprising NanoTec and Invictus, as well as various standalone implants for height restoration and stabilization. In addition, the company provides biologics comprising 3D ProFuse Osteoconductive Bioscaffold; AlphaGRAFT Demineralized Bone Matrix (DBM) comprising demineralized human tissue; BioCORE Moldable Bioactive Graft, a synthetic mineral-collagen composite matrix that can be molded to fit the bone defect; AlphaGRAFT DBM Fibers comprising demineralized fibers; AlphaGRAFT Cellular Bone Matrix (CBM), a growth factor-enriched cellular bone matrix; AlphaGRAFT CBM that is delivered in granular, fiber, or structural form; and Amnioshield Amniotic Tissue Barrier, an allograft for spinal surgical barrier applications. The company sells its products through a network of independent sales agents and direct sales representatives. The company was founded in 1990 and is headquartered in Carlsbad, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-10-29",
   "earnings_estimated": false,
   "earnings_call": "2026-10-29",
-  "eps_estimate": 0.12297,
+  "eps_estimate": 0.11997,
   "analysts": {
     "strong_buy": 3,
     "buy": 9,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 14
   },
-  "target_mean": 13.28571,
+  "target_mean": 12.92857,
   "target_high": 24,
   "target_low": 8,
   "target_analysts": 14,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 1.0495,
+    "q0": 0.9995,
     "q1": 0,
-    "y0": 4.8864,
-    "y1": 0.9135
+    "y0": 4.8464003,
+    "y1": 0.90949994
   },
   "ratings": [
+    {
+      "date": "2026-11-11",
+      "firm": "Freedom Capital Markets",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-11-04",
       "firm": "UBS",
@@ -140,13 +147,6 @@
       "from": "Outperform",
       "to": "Outperform",
       "action": "main"
-    },
-    {
-      "date": "2026-07-28",
-      "firm": "UBS",
-      "from": null,
-      "to": "Buy",
-      "action": "init"
     }
   ],
   "holders": [
@@ -223,28 +223,28 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 10,
+    "buys": 11,
     "sells": 3,
-    "bought": 702072,
+    "bought": 737072,
     "sold": 194218,
-    "net_pct": 1.6
+    "net_pct": 1.7
   },
   "extras": {
     "beta": 0.872,
-    "enterprise_value": 1682544896,
-    "ev_ebitda": 31.791,
-    "ev_revenue": 2.004,
+    "enterprise_value": 1623591808,
+    "ev_ebitda": 30.677,
+    "ev_revenue": 1.933,
     "float_shares": 122651993,
-    "short_shares": 13283446,
-    "short_pct_float": 10,
-    "short_ratio": 6.04,
+    "short_shares": 14251120,
+    "short_pct_float": 10.74,
+    "short_ratio": 3.78,
     "last_split": "1:12",
     "last_split_date": "2016-08-25"
   },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 377,
+  "inst_count": 376,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "VALENTINE KEITH C",
+      "role": "Director",
+      "kind": "buy",
+      "text": "Purchase at price 6.93 per share.",
+      "value": 242550,
+      "shares": 35000,
+      "date": "2026-11-10"
+    },
     {
       "name": "DEMSKI DAVID M",
       "role": "Director",
@@ -318,15 +327,6 @@
       "date": "2026-06-11"
     },
     {
-      "name": "VALENTINE KEITH C",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 32012,
-      "date": "2026-06-10"
-    },
-    {
       "name": "BERKOWITZ MORTIMERIII",
       "role": "Director",
       "kind": "other",
@@ -345,7 +345,7 @@
       "date": "2026-06-10"
     },
     {
-      "name": "BLACKFORD QUENTIN S",
+      "name": "VALENTINE KEITH C",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -354,7 +354,7 @@
       "date": "2026-06-10"
     },
     {
-      "name": "DEMSKI DAVID M",
+      "name": "BLACKFORD QUENTIN S",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:23.296Z",
+  "updated_at": "2026-11-11T23:05:23.513Z",
   "source": "Yahoo Finance",
   "symbol": "SVV",
   "summary": "Savers Value Village, Inc., a thrift operator, sells second-hand merchandise in retail stores in the United States, Canada, and Australia. It purchases secondhand textiles, including clothing, bedding, and bath items; shoes; accessories; housewares; books; and other goods from non-profit partners and then processes, selects, prices, merchandises, and sells them in its stores. The company operates stores under the Savers, Value Village, Value Village Boutique, Village des Valeurs, Unique, and 2nd Avenue brands. It serves retail and wholesale customers. The company was formerly known as S-Evergreen Holding LLC and changed its name to Savers Value Village, Inc. in January 2022. Savers Value Village, Inc. was founded in 1954 and is based in Bellevue, Washington.",
@@ -10,14 +10,14 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.18135,
+  "eps_estimate": 0.18124,
   "analysts": {
     "strong_buy": 0,
-    "buy": 7,
+    "buy": 8,
     "hold": 4,
     "sell": 0,
     "strong_sell": 0,
-    "total": 11
+    "total": 12
   },
   "target_mean": 14.22727,
   "target_high": 20,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.20899999,
-    "q1": 0.66650003,
+    "q0": 0.2083,
+    "q1": 0.65,
     "y0": 0.1104,
-    "y1": 0.1856
+    "y1": 0.18180001
   },
   "ratings": [
+    {
+      "date": "2026-11-11",
+      "firm": "BTIG",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "reit"
+    },
     {
       "date": "2026-09-18",
       "firm": "Wells Fargo",
@@ -140,13 +147,6 @@
       "from": null,
       "to": "Buy",
       "action": "init"
-    },
-    {
-      "date": "2025-08-01",
-      "firm": "Piper Sandler",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
     }
   ],
   "holders": [
@@ -231,13 +231,13 @@
   },
   "extras": {
     "beta": 1.225,
-    "enterprise_value": 2973092096,
-    "ev_ebitda": 12.033,
-    "ev_revenue": 1.671,
+    "enterprise_value": 2890139136,
+    "ev_ebitda": 11.698,
+    "ev_revenue": 1.624,
     "float_shares": 58681466,
-    "short_shares": 9667150,
-    "short_pct_float": 27.31,
-    "short_ratio": 7.07,
+    "short_shares": 9082648,
+    "short_pct_float": 25.66,
+    "short_ratio": 6.22,
     "last_split": null,
     "last_split_date": null
   },
@@ -300,12 +300,39 @@
       "date": "2026-08-11"
     },
     {
+      "name": "WALSH MARK T",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 10.92 - 12.38 per share.",
+      "value": 2400263,
+      "shares": 207941,
+      "date": "2026-08-07"
+    },
+    {
       "name": "MAHER MICHAEL W",
       "role": "Chief Financial Officer",
       "kind": "sell",
       "text": "Sale at price 12.31 - 12.33 per share.",
       "value": 613418,
       "shares": 49742,
+      "date": "2026-08-07"
+    },
+    {
+      "name": "GEISSER MELINDA L",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 10.98 - 12.48 per share.",
+      "value": 766200,
+      "shares": 65000,
+      "date": "2026-08-07"
+    },
+    {
+      "name": "MEDWAY RICHARD A",
+      "role": "General Counsel",
+      "kind": "sell",
+      "text": "Sale at price 10.98 - 12.48 per share.",
+      "value": 648900,
+      "shares": 55000,
       "date": "2026-08-07"
     },
     {
@@ -320,15 +347,6 @@
     {
       "name": "GEISSER MELINDA L",
       "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 10.98 - 12.48 per share.",
-      "value": 766200,
-      "shares": 65000,
-      "date": "2026-08-07"
-    },
-    {
-      "name": "GEISSER MELINDA L",
-      "role": "Officer",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 1.41 per share.",
       "value": 91650,
@@ -338,28 +356,10 @@
     {
       "name": "MEDWAY RICHARD A",
       "role": "General Counsel",
-      "kind": "sell",
-      "text": "Sale at price 10.98 - 12.48 per share.",
-      "value": 648900,
-      "shares": 55000,
-      "date": "2026-08-07"
-    },
-    {
-      "name": "MEDWAY RICHARD A",
-      "role": "General Counsel",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 1.41 - 3.16 per share.",
       "value": 106698,
       "shares": 55000,
-      "date": "2026-08-07"
-    },
-    {
-      "name": "WALSH MARK T",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 10.92 - 12.38 per share.",
-      "value": 2400263,
-      "shares": 207941,
       "date": "2026-08-07"
     }
   ],

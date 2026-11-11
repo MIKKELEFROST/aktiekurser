@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:23.202Z",
+  "updated_at": "2026-11-11T23:05:23.406Z",
   "source": "Yahoo Finance",
   "symbol": "SG",
   "summary": "Sweetgreen, Inc., together with its subsidiaries, operates fast food restaurants serving healthy food and beverages in the United States. It accepts orders through its online and mobile ordering platforms, as well as sells gift cards that do not have an expiration date and can be redeemed. The company was founded in 2006 and is headquartered in Los Angeles, California.",
@@ -200,13 +200,6 @@
       "date": "2026-06-30"
     },
     {
-      "name": "FMR, LLC",
-      "kind": "institution",
-      "pct": 3.15,
-      "shares": 3379698,
-      "date": "2026-06-30"
-    },
-    {
       "name": "Point72 Asset Management, L.P.",
       "kind": "institution",
       "pct": 3.07,
@@ -219,25 +212,32 @@
       "pct": 2.92,
       "shares": 3131712,
       "date": "2026-09-30"
+    },
+    {
+      "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
+      "kind": "fond",
+      "pct": 2.85,
+      "shares": 3062003,
+      "date": "2026-06-30"
     }
   ],
   "insider_net": {
     "period": "6m",
     "buys": 7,
-    "sells": 6,
+    "sells": 7,
     "bought": 168805,
-    "sold": 52720,
-    "net_pct": 3
+    "sold": 56720,
+    "net_pct": 2.9
   },
   "extras": {
     "beta": 2.119,
-    "enterprise_value": 1822921088,
-    "ev_ebitda": -27.983,
-    "ev_revenue": 2.66,
+    "enterprise_value": 1808615680,
+    "ev_ebitda": -27.763,
+    "ev_revenue": 2.639,
     "float_shares": 103508989,
-    "short_shares": 24099323,
-    "short_pct_float": 25.72,
-    "short_ratio": 4.77,
+    "short_shares": 21833197,
+    "short_pct_float": 23.3,
+    "short_ratio": 4.72,
     "last_split": null,
     "last_split_date": null
   },
@@ -276,6 +276,15 @@
       "name": "MCCONNELL JAMIE",
       "role": "Chief Financial Officer",
       "kind": "sell",
+      "text": "Sale at price 13.76 per share.",
+      "value": 55040,
+      "shares": 4000,
+      "date": "2026-11-10"
+    },
+    {
+      "name": "MCCONNELL JAMIE",
+      "role": "Chief Financial Officer",
+      "kind": "sell",
       "text": "Sale at price 6.21 per share.",
       "value": 93355,
       "shares": 15033,
@@ -289,15 +298,6 @@
       "value": 29864,
       "shares": 4809,
       "date": "2026-08-17"
-    },
-    {
-      "name": "RU NATHANIEL",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 24115,
-      "date": "2026-06-11"
     },
     {
       "name": "SINGER BRADLEY E",
@@ -354,13 +354,13 @@
       "date": "2026-06-11"
     },
     {
-      "name": "MCCONNELL JAMIE",
-      "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 8.00 per share.",
-      "value": 11208,
-      "shares": 1401,
-      "date": "2026-05-18"
+      "name": "RU NATHANIEL",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 24115,
+      "date": "2026-06-11"
     }
   ],
   "dividends": [],

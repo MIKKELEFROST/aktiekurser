@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:23.242Z",
+  "updated_at": "2026-11-11T23:05:23.460Z",
   "source": "Yahoo Finance",
   "symbol": "SNOW",
   "summary": "Snowflake Inc. provides a cloud-based data platform for various organizations in the United States and internationally. The company's platform includes artificial intelligence (AI) Data Cloud, which enables customers to consolidate data into a single source of truth to drive meaningful business insights, build data applications, and share data and data products, as well as applies AI for solving business problems. It serves financial services, advertising, media and entertainment, retail and consumer goods, healthcare and life sciences, manufacturing, technology, telecom, travel and hospitality, and government and defense industries, as well as the public sector. the company has a collaboration with OpenAI, L.L.C. for the development of AI solutions for joint enterprise customers that deliver tangible return on investment. The company was formerly known as Snowflake Computing, Inc. and changed its name to Snowflake Inc. in April 2019. Snowflake Inc. was incorporated in 2012 and is based in Menlo Park, California.",
@@ -75,7 +75,7 @@
     "q0": 0.71410006,
     "q1": 0.8602,
     "y0": 0.78169996,
-    "y1": 0.366
+    "y1": 0.367
   },
   "ratings": [
     {
@@ -186,17 +186,17 @@
       "date": "2026-06-30"
     },
     {
+      "name": "FMR, LLC",
+      "kind": "institution",
+      "pct": 2.41,
+      "shares": 8513049,
+      "date": "2026-09-30"
+    },
+    {
       "name": "State Street Corporation",
       "kind": "institution",
       "pct": 2.26,
       "shares": 7957874,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "FMR, LLC",
-      "kind": "institution",
-      "pct": 2.17,
-      "shares": 7653175,
       "date": "2026-06-30"
     },
     {
@@ -224,27 +224,27 @@
   "insider_net": {
     "period": "6m",
     "buys": 32,
-    "sells": 52,
+    "sells": 53,
     "bought": 2976196,
-    "sold": 3432760,
+    "sold": 3433600,
     "net_pct": -4.3
   },
   "extras": {
     "beta": 1.322,
-    "enterprise_value": 103022387200,
-    "ev_ebitda": -99.415,
-    "ev_revenue": 18.957,
+    "enterprise_value": 104650563584,
+    "ev_ebitda": -100.986,
+    "ev_revenue": 19.256,
     "float_shares": 343400598,
-    "short_shares": 18619824,
-    "short_pct_float": 5.41,
-    "short_ratio": 4.39,
+    "short_shares": 17435264,
+    "short_pct_float": 5.06,
+    "short_ratio": 4.04,
     "last_split": null,
     "last_split_date": null
   },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": null,
-  "inst_count": 2133,
+  "inst_count": 2136,
   "eps_history": [
     {
       "quarter": "2025-10-31",
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "SPEISER MICHAEL L",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 272.00 - 279.98 per share.",
+      "value": 231776,
+      "shares": 840,
+      "date": "2026-11-06"
+    },
     {
       "name": "DAGEVILLE BENOIT",
       "role": "Director",
@@ -302,18 +311,18 @@
     {
       "name": "SLOOTMAN FRANK",
       "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 311.06 - 320.00 per share.",
-      "value": 94930176,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 8.88 per share.",
+      "value": 2664000,
       "shares": 300000,
       "date": "2026-10-19"
     },
     {
       "name": "SLOOTMAN FRANK",
       "role": "Director",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 8.88 per share.",
-      "value": 2664000,
+      "kind": "sell",
+      "text": "Sale at price 311.06 - 320.00 per share.",
+      "value": 94930176,
       "shares": 300000,
       "date": "2026-10-19"
     },
@@ -336,30 +345,21 @@
       "date": "2026-10-07"
     },
     {
-      "name": "DAGEVILLE BENOIT",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Gift at price 0.00 per share.",
-      "value": 0,
-      "shares": 16668,
-      "date": "2026-09-23"
-    },
-    {
-      "name": "DAGEVILLE BENOIT",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 339.08 per share.",
-      "value": 16954000,
-      "shares": 50000,
-      "date": "2026-09-23"
-    },
-    {
       "name": "BEAULIER JONATHAN MEAD",
       "role": "Officer",
       "kind": "sell",
       "text": "Sale at price 336.36 per share.",
       "value": 253953,
       "shares": 755,
+      "date": "2026-09-23"
+    },
+    {
+      "name": "DAGEVILLE BENOIT",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Gift at price 0.00 per share.",
+      "value": 0,
+      "shares": 16668,
       "date": "2026-09-23"
     }
   ],

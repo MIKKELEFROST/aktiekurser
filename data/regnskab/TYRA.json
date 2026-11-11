@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:23.396Z",
+  "updated_at": "2026-11-11T23:05:23.572Z",
   "source": "Yahoo Finance",
   "symbol": "TYRA",
   "summary": "Tyra Biosciences, Inc., a clinical-stage biotechnology company, develops precision medicines for fibroblast growth factor receptor (FGFR) biology in the United States. The company offers SNÅP, a precision medicine platform that enables drug design through iterative molecular snapshots to predict genetic alterations for developing therapies targeting oncology and genetically defined conditions. Its lead product candidate is FGFR3, which is in clinical trials for the treatment of patients with metastatic urothelial carcinoma and other solid tumors. The company is also developing TYRA-300 for skeletal conditions, including achondroplasia, hypochondroplasia, dysplasia, and other FGFR3-driven genetic syndromes; TYRA-200, a candidate in clinical trial for intrahepatic cholangiocarcinoma; and TYRA-430 for the treatment of hepatocellular carcinoma. Tyra Biosciences, Inc. was incorporated in 2018 and is headquartered in Carlsbad, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-10",
   "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": -0.665,
+  "eps_estimate": -0.74,
   "analysts": {
     "strong_buy": 2,
     "buy": 12,
@@ -21,7 +21,7 @@
   },
   "target_mean": 47.45455,
   "target_high": 59,
-  "target_low": 29,
+  "target_low": 27,
   "target_analysts": 11,
   "statements": [
     {
@@ -72,12 +72,26 @@
     }
   ],
   "growth": {
-    "q0": -0.33,
-    "q1": -0.17639999,
-    "y0": -0.3117,
-    "y1": -0.0509
+    "q0": -0.2982,
+    "q1": -0.0438,
+    "y0": -0.336,
+    "y1": -0.054899998
   },
   "ratings": [
+    {
+      "date": "2026-11-11",
+      "firm": "Wedbush",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-11",
+      "firm": "HC Wainwright & Co.",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-09-22",
       "firm": "Oppenheimer",
@@ -133,20 +147,6 @@
       "from": null,
       "to": "Peer Perform",
       "action": "init"
-    },
-    {
-      "date": "2026-05-14",
-      "firm": "HC Wainwright & Co.",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "reit"
-    },
-    {
-      "date": "2026-04-15",
-      "firm": "Guggenheim",
-      "from": null,
-      "to": "Buy",
-      "action": "init"
     }
   ],
   "holders": [
@@ -160,9 +160,9 @@
     {
       "name": "FMR, LLC",
       "kind": "institution",
-      "pct": 14.95,
-      "shares": 8920513,
-      "date": "2026-06-30"
+      "pct": 17.66,
+      "shares": 10538463,
+      "date": "2026-09-30"
     },
     {
       "name": "Jupiter Topco LLC",
@@ -231,13 +231,13 @@
   },
   "extras": {
     "beta": 0.67,
-    "enterprise_value": 982433728,
-    "ev_ebitda": -6.143,
+    "enterprise_value": 755653696,
+    "ev_ebitda": -4.155,
     "ev_revenue": null,
-    "float_shares": 34651415,
-    "short_shares": 9495754,
-    "short_pct_float": 22.9,
-    "short_ratio": 10.93,
+    "float_shares": 40112897,
+    "short_shares": 9901757,
+    "short_pct_float": 23.88,
+    "short_ratio": 14.98,
     "last_split": null,
     "last_split_date": null
   },
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 233,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.51,
-      "actual": -0.5,
-      "surprise_pct": 1.96
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.52533,
@@ -269,6 +263,12 @@
       "estimate": -0.64471,
       "actual": -0.69,
       "surprise_pct": -7.02
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.665,
+      "actual": -0.74,
+      "surprise_pct": -11.28
     }
   ],
   "insiders": [

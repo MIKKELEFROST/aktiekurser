@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:22.431Z",
+  "updated_at": "2026-11-11T23:05:22.515Z",
   "source": "Yahoo Finance",
   "symbol": "FOSL",
   "summary": "Fossil Group, Inc., together with its subsidiaries, designs, develops, markets, and distributes consumer fashion accessories in the United States, Europe, Asia, and internationally. The company's products include traditional watches, smartwatches, jewelry, handbags, small leather goods, belts, and sunglasses. It also manufactures and distributes private label brands. The company offers its products under its proprietary brands, such as FOSSIL, SKAGEN, MICHELE, RELIC, and ZODIAC; and under the licensed brands, including ARMANI EXCHANGE, DIESEL, EMPORIO ARMANI, KATE SPADE NEW YORK, MICHAEL KORS, SKECHERS, and TORY BURCH. It sells its products through company-owned retail and outlet stores, department and specialty retail stores, mass market stores, e-commerce sites, licensed and franchised FOSSIL retail stores, retail concessions, and airlines, as well as operate stores under the WATCH STATION and WSI brands. The company was formerly known as Fossil, Inc. and changed its name to Fossil Group, Inc. in May 2013. Fossil Group, Inc. was founded in 1984 and is headquartered in Richardson, Texas.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-10",
   "earnings_estimated": false,
   "earnings_call": "2026-11-10",
-  "eps_estimate": -0.08,
+  "eps_estimate": 0.09,
   "analysts": {
     "strong_buy": 1,
     "buy": 3,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 4
   },
-  "target_mean": 9.25,
-  "target_high": 12,
-  "target_low": 7,
+  "target_mean": 12.125,
+  "target_high": 14,
+  "target_low": 10,
   "target_analysts": 4,
   "statements": [
     {
@@ -51,16 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 220400000,
-      "earnings": -2300000
-    },
-    {
-      "q": "3Q2025",
-      "revenue": 270200000,
-      "earnings": -39900000
-    },
-    {
       "q": "4Q2025",
       "revenue": 280500000,
       "earnings": -18600000
@@ -69,13 +59,23 @@
       "q": "1Q2026",
       "revenue": 224800000,
       "earnings": -800000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 209700000,
+      "earnings": -10600000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 271200000,
+      "earnings": 11700000
     }
   ],
   "growth": {
-    "q0": 0.873,
-    "q1": 1.5667,
-    "y0": -0.6842,
-    "y1": 1.0812
+    "q0": 1.6,
+    "q1": null,
+    "y0": -2.3367999,
+    "y1": 0.97480005
   },
   "ratings": [
     {
@@ -227,31 +227,25 @@
     "sells": 1,
     "bought": 129243,
     "sold": 55669,
-    "net_pct": 2.9
+    "net_pct": 2.8
   },
   "extras": {
-    "beta": 1.62,
-    "enterprise_value": 703602688,
-    "ev_ebitda": 22.69,
-    "ev_revenue": 0.714,
-    "float_shares": 45282123,
-    "short_shares": 5633860,
-    "short_pct_float": 9.9,
-    "short_ratio": 6.91,
+    "beta": null,
+    "enterprise_value": 730916992,
+    "ev_ebitda": 9.776,
+    "ev_revenue": 0.741,
+    "float_shares": 47250450,
+    "short_shares": 5520641,
+    "short_pct_float": 9.7,
+    "short_ratio": 7.02,
     "last_split": "3:2",
     "last_split_date": "2004-04-12"
   },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 154,
+  "inst_count": 156,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.36,
-      "actual": -0.63,
-      "surprise_pct": -75
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0,
@@ -269,6 +263,12 @@
       "estimate": -0.42,
       "actual": -0.13,
       "surprise_pct": 69.05
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.06,
+      "actual": 0.23,
+      "surprise_pct": 283.33
     }
   ],
   "insiders": [

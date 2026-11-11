@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:22.382Z",
+  "updated_at": "2026-11-11T23:05:22.453Z",
   "source": "Yahoo Finance",
   "symbol": "EW",
   "summary": "Edwards Lifesciences Corporation provides products and technologies to treat advanced cardiovascular diseases in the United States, Europe, Japan, and internationally. It offers transcatheter heart valve replacement products for minimally invasive replacement of aortic heart valves under the Edwards SAPIEN family of valves system; and transcatheter heart valve repair and replacement products to treat mitral and tricuspid valve diseases under the PASCAL and EVOQUE brands. The company also provides surgical structural heart solutions, such as aortic surgical valve under the INSPIRIS brand name; INSPIRIS RESILIA aortic valve, which offers RESILIA tissue and VFit technology; KONECT RESILIA, a pre-assembled tissue valve conduit for complex combined procedures; and MITRIS RESILIA valve. It distributes its products through a direct sales force and independent distributors. Edwards Lifesciences Corporation was founded in 1958 and is headquartered in Irvine, California.",
@@ -19,8 +19,8 @@
     "strong_sell": 1,
     "total": 30
   },
-  "target_mean": 111.64481,
-  "target_high": 120,
+  "target_mean": 112.42259,
+  "target_high": 126,
   "target_low": 84,
   "target_analysts": 27,
   "statements": [
@@ -74,10 +74,17 @@
   "growth": {
     "q0": 0.1393,
     "q1": 0.0798,
-    "y0": 0.1769,
-    "y1": 0.1292
+    "y0": 0.177,
+    "y1": 0.1232
   },
   "ratings": [
+    {
+      "date": "2026-11-11",
+      "firm": "TD Cowen",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-11-06",
       "firm": "UBS",
@@ -140,13 +147,6 @@
       "from": "Buy",
       "to": "Buy",
       "action": "reit"
-    },
-    {
-      "date": "2026-11-05",
-      "firm": "Wells Fargo",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
     }
   ],
   "holders": [
@@ -223,28 +223,28 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 20,
-    "sells": 22,
-    "bought": 396810,
-    "sold": 205285,
+    "buys": 21,
+    "sells": 23,
+    "bought": 397429,
+    "sold": 205904,
     "net_pct": 20.6
   },
   "extras": {
     "beta": 0.832,
-    "enterprise_value": 56368451584,
-    "ev_ebitda": 26.91,
-    "ev_revenue": 8.445,
+    "enterprise_value": 55965949952,
+    "ev_ebitda": 26.718,
+    "ev_revenue": 8.385,
     "float_shares": 573280750,
-    "short_shares": 9333399,
-    "short_pct_float": 1.85,
-    "short_ratio": 2.43,
+    "short_shares": 9382239,
+    "short_pct_float": 1.86,
+    "short_ratio": 2.58,
     "last_split": "3:1",
     "last_split_date": "2020-06-01"
   },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 1944,
+  "inst_count": 1943,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -273,22 +273,22 @@
   ],
   "insiders": [
     {
-      "name": "ZOVIGHIAN BERNARD J",
-      "role": "Chief Executive Officer",
+      "name": "LIPPIS DANIEL J",
+      "role": "Officer",
       "kind": "sell",
-      "text": "Sale at price 102.78 - 103.39 per share.",
-      "value": 2379779,
-      "shares": 23100,
-      "date": "2026-11-09"
+      "text": "Sale at price 104.25 per share.",
+      "value": 64531,
+      "shares": 619,
+      "date": "2026-11-10"
     },
     {
-      "name": "ZOVIGHIAN BERNARD J",
-      "role": "Chief Executive Officer",
+      "name": "LIPPIS DANIEL J",
+      "role": "Officer",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 72.68 per share.",
-      "value": 1678908,
-      "shares": 23100,
-      "date": "2026-11-09"
+      "value": 44989,
+      "shares": 619,
+      "date": "2026-11-10"
     },
     {
       "name": "BOBO DONALD E JR",
@@ -300,12 +300,30 @@
       "date": "2026-11-09"
     },
     {
+      "name": "ZOVIGHIAN BERNARD J",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 102.78 - 103.39 per share.",
+      "value": 2379779,
+      "shares": 23100,
+      "date": "2026-11-09"
+    },
+    {
       "name": "BOBO DONALD E JR",
       "role": "Officer",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 72.68 per share.",
       "value": 3554052,
       "shares": 48900,
+      "date": "2026-11-09"
+    },
+    {
+      "name": "ZOVIGHIAN BERNARD J",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 72.68 per share.",
+      "value": 1678908,
+      "shares": 23100,
       "date": "2026-11-09"
     },
     {
@@ -343,24 +361,6 @@
       "value": 44989,
       "shares": 619,
       "date": "2026-09-11"
-    },
-    {
-      "name": "DAHL ANDREW M",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 91.06 per share.",
-      "value": 49534,
-      "shares": 544,
-      "date": "2026-08-31"
-    },
-    {
-      "name": "BRULS ANNETTE",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 89.98 per share.",
-      "value": 237907,
-      "shares": 2644,
-      "date": "2026-08-28"
     }
   ],
   "dividends": [],

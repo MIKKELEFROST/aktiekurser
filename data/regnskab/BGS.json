@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-11-10T22:04:21.980Z",
+  "updated_at": "2026-11-11T23:05:22.015Z",
   "source": "Yahoo Finance",
   "symbol": "BGS",
   "summary": "B&G Foods, Inc. manufactures, sells, and distributes a portfolio of shelf-stable and frozen foods, and household products in the United States, Canada, and Puerto Rico. It operates through Specialty, Meals, Frozen & Vegetables, and Spices & Flavor Solutions segments. The company offers frozen and canned vegetables, vegetables, canola and other cooking oils, vegetable shortening, cooking sprays, oatmeal and other hot cereals, fruit spreads, canned meats and beans, bagel chips, spices, seasonings, hot sauces, wine vinegar, maple syrups, molasses, salad dressings, pizza crusts, Mexican-style sauces, dry soups, taco shells and kits, salsas, pickles, peppers, tomato-based products, crackers, baking powder and soda, corn starch, nut clusters, and other specialty products. It markets its products under various brands, including Crisco, Clabber Girl, Bear Creek, Polaner, Underwood, B&G, Grandma's, New York Style, B&M, Baker's Joy, Regina, TrueNorth, Static Guard, SugarTwin, Brer Rabbit, Ortega, Maple Grove Farms of Vermont, Cream of Wheat, Las Palmas, Victoria, Mama Mary's, Spring Tree, McCann's, Carey's, Vermont Maid, Green Giant, Dash, Spice Islands, Weber, Ac'cent, Tone's, Trappey's, Durkee, Wright's, B&G Sandwich Toppers, Bear Creek Country Kitchens, Canoleo, Cary's, Cream of Rice, Joan of Arc, MacDonald's, Molly McButter, New York Flatbreads, Old London, and Sa-són brands. The company sells and distributes its products directly, as well as through a network of independent brokers and distributors to supermarket chains, foodservice outlets, mass merchants, warehouse clubs, non-food outlets, and specialty distributors. The company was formerly known as B&G Foods Holdings Corp. and changed its name to B&G Foods, Inc. in October 2004. B&G Foods, Inc. was founded in 1889 and is headquartered in Parsippany, New Jersey.",
   "industry": "Packaged Foods",
   "website": "https://bgfoods.com",
-  "employees": 2294,
+  "employees": 2497,
   "ceo": "Mr. Robert D. Mills",
   "next_earnings": "2026-11-10",
   "earnings_estimated": false,
   "earnings_call": "2026-11-10",
-  "eps_estimate": 0.1525,
+  "eps_estimate": 0.26475,
   "analysts": {
     "strong_buy": 0,
     "buy": 0,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 5
   },
-  "target_mean": 3.6,
+  "target_mean": 3.42,
   "target_high": 5,
   "target_low": 3,
   "target_analysts": 5,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 424425000,
-      "earnings": -9772000
-    },
-    {
       "q": "3Q2025",
       "revenue": 439304000,
       "earnings": -19142000
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 383275000,
       "earnings": -3981000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 459782000,
+      "earnings": -32514000
     }
   ],
   "growth": {
-    "q0": 0.0167,
-    "q1": -0.0429,
-    "y0": 0.1074,
-    "y1": -0.1005
+    "q0": -0.0545,
+    "q1": null,
+    "y0": 0.1588,
+    "y1": -0.1357
   },
   "ratings": [
     {
@@ -230,28 +230,22 @@
     "net_pct": null
   },
   "extras": {
-    "beta": 0.62,
-    "enterprise_value": 2199831296,
-    "ev_ebitda": 8.504,
-    "ev_revenue": 1.242,
-    "float_shares": 77096476,
-    "short_shares": 13662540,
-    "short_pct_float": 17.74,
-    "short_ratio": 5.94,
+    "beta": null,
+    "enterprise_value": 2244797440,
+    "ev_ebitda": 9.536,
+    "ev_revenue": 1.253,
+    "float_shares": 76968515,
+    "short_shares": 14171420,
+    "short_pct_float": 18.4,
+    "short_ratio": 6.55,
     "last_split": null,
     "last_split_date": null
   },
   "ex_dividend": "2026-12-31",
   "dividend_date": null,
   "payout_ratio": 3.2759,
-  "inst_count": 248,
+  "inst_count": 249,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.1106,
-      "actual": 0.15,
-      "surprise_pct": 35.62
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.30125,
@@ -263,6 +257,12 @@
       "estimate": 0.0562,
       "actual": 0.06,
       "surprise_pct": 6.76
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.1525,
+      "actual": 0.21,
+      "surprise_pct": 37.7
     }
   ],
   "insiders": [
@@ -285,7 +285,25 @@
       "date": "2026-08-10"
     },
     {
-      "name": "CHASE DEBRA MARTIN",
+      "name": "POE ALFRED",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 26915,
+      "date": "2026-06-01"
+    },
+    {
+      "name": "MULLEN DENNIS M",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 26915,
+      "date": "2026-06-01"
+    },
+    {
+      "name": "MARCY CHARLES F",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -331,24 +349,6 @@
     },
     {
       "name": "BRUNTS DEANN L",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 26915,
-      "date": "2026-06-01"
-    },
-    {
-      "name": "POE ALFRED",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 26915,
-      "date": "2026-06-01"
-    },
-    {
-      "name": "MULLEN DENNIS M",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

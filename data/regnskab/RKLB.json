@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:23.160Z",
+  "updated_at": "2026-11-11T23:05:23.329Z",
   "source": "Yahoo Finance",
   "symbol": "RKLB",
   "summary": "Rocket Lab Corporation, a space company, provides launch services and space systems solutions in the United States, Canada, Japan, and internationally. The company operates through launch services and space systems segments. The company provides launch services, spacecraft design services, spacecraft components, spacecraft manufacturing, optical systems, and other spacecraft and on-orbit management solutions and constellation management services, as well as designs and manufactures small and medium-class rockets and develops flight and ground software. It also designs, manufactures, and sells Electron, an orbital small launch vehicle for small spacecraft launch services, as well as develops Neutron launch vehicles for large constellation deployments, interplanetary missions, and potentially for human spaceflight. In addition, the company designs and manufactures a range of components and subsystems for its launch vehicles and spacecraft. It serves commercial, aerospace prime contractors, and government customers. Rocket Lab Corporation was formerly known as Rocket Lab USA, Inc. and changed its name to Rocket Lab Corporation in August 2021. The company was founded in 2006 and is headquartered in Long Beach, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-09",
   "earnings_estimated": false,
   "earnings_call": "2026-11-09",
-  "eps_estimate": -0.00679,
+  "eps_estimate": 0.01187,
   "analysts": {
     "strong_buy": 5,
     "buy": 13,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 22
   },
-  "target_mean": 99.4,
+  "target_mean": 96.5,
   "target_high": 150,
   "target_low": 58,
   "target_analysts": 20,
@@ -72,12 +72,26 @@
     }
   ],
   "growth": {
-    "q0": 0.8549,
-    "q1": 2.0741,
-    "y0": 0.7464,
-    "y1": 2.1167998
+    "q0": 1.2194,
+    "q1": 1.5469,
+    "y0": 1.1251,
+    "y1": 1.6075
   },
   "ratings": [
+    {
+      "date": "2026-11-11",
+      "firm": "Morgan Stanley",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-11",
+      "firm": "Needham",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-11-10",
       "firm": "Barclays",
@@ -133,90 +147,76 @@
       "from": "Overweight",
       "to": "Overweight",
       "action": "main"
-    },
-    {
-      "date": "2026-10-15",
-      "firm": "Cantor Fitzgerald",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "reit"
-    },
-    {
-      "date": "2026-10-09",
-      "firm": "TD Cowen",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
     }
   ],
   "holders": [
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 6.78,
+      "pct": 6.42,
       "shares": 40580130,
       "date": "2026-06-30"
     },
     {
       "name": "Vanguard Portfolio Management LLC",
       "kind": "institution",
-      "pct": 4.53,
+      "pct": 4.29,
       "shares": 27118258,
       "date": "2026-06-30"
     },
     {
       "name": "Vanguard Capital Management LLC",
       "kind": "institution",
-      "pct": 4.23,
+      "pct": 4,
       "shares": 25299213,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "Invesco Ltd.",
-      "kind": "institution",
-      "pct": 3.07,
-      "shares": 18343547,
       "date": "2026-06-30"
     },
     {
       "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
       "kind": "fond",
-      "pct": 3.07,
+      "pct": 2.91,
       "shares": 18373240,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Invesco Ltd.",
+      "kind": "institution",
+      "pct": 2.9,
+      "shares": 18343547,
       "date": "2026-06-30"
     },
     {
       "name": "State Street Corporation",
       "kind": "institution",
-      "pct": 2.41,
+      "pct": 2.29,
       "shares": 14442067,
       "date": "2026-06-30"
     },
     {
       "name": "JPMORGAN CHASE & CO",
       "kind": "institution",
-      "pct": 2.31,
+      "pct": 2.18,
       "shares": 13805113,
       "date": "2026-06-30"
     },
     {
       "name": "VANGUARD INDEX FUNDS-Vanguard Mid-Cap Index Fund",
       "kind": "fond",
-      "pct": 2.1,
+      "pct": 1.98,
       "shares": 12540140,
       "date": "2026-06-30"
     },
     {
       "name": "Invesco QQQ Trust, Series 1",
       "kind": "fond",
-      "pct": 2.09,
+      "pct": 1.98,
       "shares": 12496543,
       "date": "2026-09-30"
     },
     {
       "name": "Geode Capital Management, LLC",
       "kind": "institution",
-      "pct": 1.82,
+      "pct": 1.73,
       "shares": 10919528,
       "date": "2026-09-30"
     }
@@ -227,24 +227,24 @@
     "sells": 22,
     "bought": 6116781,
     "sold": 4260969,
-    "net_pct": 58.7
+    "net_pct": 64.1
   },
   "extras": {
-    "beta": null,
-    "enterprise_value": 32713084928,
-    "ev_ebitda": -190.271,
-    "ev_revenue": 37.094,
+    "beta": 3.176,
+    "enterprise_value": 35146362880,
+    "ev_ebitda": -204.424,
+    "ev_revenue": 39.853,
     "float_shares": 588177624,
-    "short_shares": 45295028,
-    "short_pct_float": 7.62,
-    "short_ratio": 2,
+    "short_shares": 46410138,
+    "short_pct_float": 7.3,
+    "short_ratio": 2.3,
     "last_split": null,
     "last_split_date": null
   },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 1464,
+  "inst_count": 1465,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -275,18 +275,18 @@
     {
       "name": "SPICE ADAM C",
       "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 51.28 - 54.78 per share.",
-      "value": 7398440,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 1.09 per share.",
+      "value": 152771,
       "shares": 140157,
       "date": "2026-11-02"
     },
     {
       "name": "SPICE ADAM C",
       "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 1.09 per share.",
-      "value": 152771,
+      "kind": "sell",
+      "text": "Sale at price 51.28 - 54.78 per share.",
+      "value": 7398440,
       "shares": 140157,
       "date": "2026-11-02"
     },
@@ -302,18 +302,18 @@
     {
       "name": "SPICE ADAM C",
       "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 62.26 - 62.97 per share.",
-      "value": 8777721,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 1.09 per share.",
+      "value": 152771,
       "shares": 140157,
       "date": "2026-09-02"
     },
     {
       "name": "SPICE ADAM C",
       "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 1.09 per share.",
-      "value": 152771,
+      "kind": "sell",
+      "text": "Sale at price 62.26 - 62.97 per share.",
+      "value": 8777721,
       "shares": 140157,
       "date": "2026-09-02"
     },
@@ -345,21 +345,21 @@
       "date": "2026-08-27"
     },
     {
+      "name": "SPICE ADAM C",
+      "role": "Chief Financial Officer",
+      "kind": "sell",
+      "text": "Sale at price 69.53 - 71.17 per share.",
+      "value": 673790,
+      "shares": 9677,
+      "date": "2026-08-24"
+    },
+    {
       "name": "KLEIN FRANK",
       "role": "Chief Operating Officer",
       "kind": "sell",
       "text": "Sale at price 69.53 - 71.17 per share.",
       "value": 3181443,
       "shares": 45692,
-      "date": "2026-08-24"
-    },
-    {
-      "name": "CLEVENGER MARVIN BRADFORD",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 69.53 - 71.17 per share.",
-      "value": 1047972,
-      "shares": 15051,
       "date": "2026-08-24"
     }
   ],

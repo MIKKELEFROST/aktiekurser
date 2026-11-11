@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:22.593Z",
+  "updated_at": "2026-11-11T23:05:22.704Z",
   "source": "Yahoo Finance",
   "symbol": "HUMA",
   "summary": "Humacyte, Inc., together with its subsidiaries, engages in the development and manufacture of off-the-shelf, implantable, and bioengineered human tissues for the treatment of diseases and conditions across a range of anatomic locations in multiple therapeutic areas. The company using its proprietary and scientific technology platform to engineer and manufacture human acellular vessels (HAVs) to be implanted into patient without inducing a foreign body response or leading to immune rejection. It is developing a portfolio of HAVs, which would target the vascular repair, reconstruction, and replacement market, including vascular trauma; arteriovenous access for hemodialysis; peripheral arterial disease; pediatric heart surgery; and coronary artery bypass grafting, as well as for the delivery of cellular therapy, including pancreatic islet cell transplantation to treat Type 1 diabetes. Humacyte, Inc. was founded in 2004 and is headquartered in Durham, North Carolina.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-10",
   "earnings_estimated": false,
   "earnings_call": "2026-11-10",
-  "eps_estimate": -0.0825,
+  "eps_estimate": -0.08333,
   "analysts": {
     "strong_buy": 1,
     "buy": 3,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 6
   },
-  "target_mean": 1.625,
+  "target_mean": 1.64167,
   "target_high": 4,
-  "target_low": 0.5,
+  "target_low": 0.6,
   "target_analysts": 6,
   "statements": [
     {
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.25,
-    "q1": 0.4038,
-    "y0": -0.5385,
-    "y1": 0.3813
+    "q0": 0.35900003,
+    "q1": 0.1852,
+    "y0": -0.5481,
+    "y1": 0.32919997
   },
   "ratings": [
+    {
+      "date": "2026-11-11",
+      "firm": "Barclays",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
     {
       "date": "2026-11-10",
       "firm": "BTIG",
@@ -140,13 +147,6 @@
       "from": "Speculative Buy",
       "to": "Speculative Buy",
       "action": "main"
-    },
-    {
-      "date": "2026-05-26",
-      "firm": "HC Wainwright & Co.",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "reit"
     }
   ],
   "holders": [
@@ -202,9 +202,9 @@
     {
       "name": "UBS Group AG",
       "kind": "institution",
-      "pct": 1.02,
-      "shares": 2843493,
-      "date": "2026-06-30"
+      "pct": 1.08,
+      "shares": 3007277,
+      "date": "2026-09-30"
     },
     {
       "name": "Geode Capital Management, LLC",
@@ -231,27 +231,21 @@
   },
   "extras": {
     "beta": 2.679,
-    "enterprise_value": 113430696,
-    "ev_ebitda": -1.099,
-    "ev_revenue": 53.48,
+    "enterprise_value": 150877888,
+    "ev_ebitda": -1.462,
+    "ev_revenue": 71.135,
     "float_shares": 250790573,
-    "short_shares": 30251083,
-    "short_pct_float": 10.95,
-    "short_ratio": 4.96,
+    "short_shares": 28071815,
+    "short_pct_float": 10.17,
+    "short_ratio": 4.56,
     "last_split": null,
     "last_split_date": null
   },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 182,
+  "inst_count": 179,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.14825,
-      "actual": -0.11,
-      "surprise_pct": 25.8
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.135,
@@ -269,6 +263,12 @@
       "estimate": -0.10333,
       "actual": -0.16,
       "surprise_pct": -54.84
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.0825,
+      "actual": -0.06,
+      "surprise_pct": 27.27
     }
   ],
   "insiders": [
@@ -318,21 +318,21 @@
       "date": "2026-05-18"
     },
     {
-      "name": "CONSTANTINO MICHAEL T",
-      "role": "Director",
-      "kind": "buy",
-      "text": "Purchase at price 0.89 per share.",
-      "value": 9840,
-      "shares": 11000,
-      "date": "2026-05-18"
-    },
-    {
       "name": "PARIKH SHAMIK J",
       "role": "Officer",
       "kind": "sell",
       "text": "Sale at price 0.90 per share.",
       "value": 41147,
       "shares": 45887,
+      "date": "2026-05-18"
+    },
+    {
+      "name": "CONSTANTINO MICHAEL T",
+      "role": "Director",
+      "kind": "buy",
+      "text": "Purchase at price 0.89 per share.",
+      "value": 9840,
+      "shares": 11000,
       "date": "2026-05-18"
     },
     {

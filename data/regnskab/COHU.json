@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:22.170Z",
+  "updated_at": "2026-11-11T23:05:22.230Z",
   "source": "Yahoo Finance",
   "symbol": "COHU",
   "summary": "Cohu, Inc., through its subsidiaries, provides semiconductor test equipment and services in the United States, Taiwan, China, Malaysia, the Philippines, Singapore, and internationally. It supplies test and inspection metrology automation systems, micro-electromechanical system test modules, test contactors, thermal subsystems, and data analytics software for semiconductor manufacturers and test subcontractors. The company also provides semiconductor automated test equipment for wafer level and device package testing; various test handlers, including pick-and-place, turret, gravity, strip, film frame, laser marker, and thermal sub-systems; interface products comprising test contactors, and probe heads and pins; spares and kits; various parts and labor warranties on test and handling systems, and instruments; and training on the maintenance and operation of its systems, as well as application, data management software, and consulting services on its products. In addition, it offers data analytics product that includes DI-Core, a software suite used to optimize Cohu equipment performance, which provides real-time online performance monitoring and process control. Further, the company provides artificial intelligence process control and analytics-based monitoring software. It markets its products through direct sales force and independent sales representatives. The company was formerly known as Cohu Electronics, Inc. and changed its name to Cohu, Inc. in 1972. Cohu, Inc. was incorporated in 1947 and is headquartered in San Diego, California.",
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 8
   },
-  "target_mean": 72.75,
+  "target_mean": 73,
   "target_high": 90,
-  "target_low": 60,
+  "target_low": 62,
   "target_analysts": 8,
   "statements": [
     {
@@ -75,9 +75,16 @@
     "q0": 3.3667002,
     "q1": 38.571,
     "y0": 5.8352003,
-    "y1": 1.228
+    "y1": 1.2385
   },
   "ratings": [
+    {
+      "date": "2026-11-11",
+      "firm": "B. Riley Securities",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "reit"
+    },
     {
       "date": "2026-11-09",
       "firm": "B. Riley Securities",
@@ -140,13 +147,6 @@
       "from": null,
       "to": "Outperform",
       "action": "init"
-    },
-    {
-      "date": "2026-06-16",
-      "firm": "TD Cowen",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
     }
   ],
   "holders": [
@@ -227,24 +227,24 @@
     "sells": 15,
     "bought": 7156,
     "sold": 197431,
-    "net_pct": -13.5
+    "net_pct": -13.6
   },
   "extras": {
     "beta": 1.612,
-    "enterprise_value": 1882759552,
-    "ev_ebitda": 59.3,
-    "ev_revenue": 3.307,
+    "enterprise_value": 1890808448,
+    "ev_ebitda": 59.553,
+    "ev_revenue": 3.321,
     "float_shares": 46225369,
-    "short_shares": 8949519,
-    "short_pct_float": 22.81,
-    "short_ratio": 8.01,
+    "short_shares": 8791384,
+    "short_pct_float": 22.41,
+    "short_ratio": 7.02,
     "last_split": "2:1",
     "last_split_date": "1999-09-27"
   },
   "ex_dividend": "2020-02-24",
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 480,
+  "inst_count": 479,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -309,21 +309,21 @@
       "date": "2026-08-17"
     },
     {
-      "name": "CAGGIA ANDREW M",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 51.73 - 51.74 per share.",
-      "value": 789086,
-      "shares": 15252,
-      "date": "2026-08-05"
-    },
-    {
       "name": "RICHARDSON NINA LOUISE",
       "role": "Director",
       "kind": "sell",
       "text": "Sale at price 51.54 per share.",
       "value": 157455,
       "shares": 3055,
+      "date": "2026-08-05"
+    },
+    {
+      "name": "CAGGIA ANDREW M",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 51.73 - 51.74 per share.",
+      "value": 789086,
+      "shares": 15252,
       "date": "2026-08-05"
     },
     {
@@ -334,15 +334,6 @@
       "value": 57920,
       "shares": 1000,
       "date": "2026-07-15"
-    },
-    {
-      "name": "DONAHUE JAMES A",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 46.77 per share.",
-      "value": 479720,
-      "shares": 10257,
-      "date": "2026-05-22"
     },
     {
       "name": "JONES JEFFREY D",
@@ -360,6 +351,15 @@
       "text": "Sale at price 46.62 per share.",
       "value": 2105079,
       "shares": 45154,
+      "date": "2026-05-22"
+    },
+    {
+      "name": "DONAHUE JAMES A",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 46.77 per share.",
+      "value": 479720,
+      "shares": 10257,
       "date": "2026-05-22"
     }
   ],

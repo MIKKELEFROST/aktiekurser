@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:22.736Z",
+  "updated_at": "2026-11-11T23:05:22.872Z",
   "source": "Yahoo Finance",
   "symbol": "LAR",
   "summary": "Lithium Argentina AG, a resource company, engages in the operation and development of lithium projects in Argentina. It owns interests in the Cauchari-Olaroz project located in Jujuy province; and the Pastos Grandes project located in Salta Province of Argentina. The company was formerly known as Lithium Americas (Argentina) Corp. and changed its name to Lithium Argentina AG in January 2025. Lithium Argentina AG was incorporated in 2007 is headquartered in Zug, Switzerland.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-10",
   "earnings_estimated": false,
   "earnings_call": "2026-11-10",
-  "eps_estimate": 0.09,
+  "eps_estimate": 0.08,
   "analysts": {
     "strong_buy": 4,
     "buy": 2,
@@ -19,8 +19,8 @@
     "strong_sell": 0,
     "total": 8
   },
-  "target_mean": 10.1,
-  "target_high": 17.4,
+  "target_mean": 9.73125,
+  "target_high": 16.75,
   "target_low": 5,
   "target_analysts": 8,
   "statements": [
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 0,
-      "earnings": -4089000
-    },
-    {
       "q": "3Q2025",
       "revenue": 0,
       "earnings": -64408000
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 0,
       "earnings": 1385000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 0,
+      "earnings": 13037000
     }
   ],
   "growth": {
-    "q0": 1.225,
-    "q1": 0,
+    "q0": 0,
+    "q1": null,
     "y0": 1.4686,
-    "y1": 0.50020003
+    "y1": 0.18049999
   },
   "ratings": [
     {
@@ -186,13 +186,6 @@
       "date": "2026-06-30"
     },
     {
-      "name": "Connor Clark & Lunn Investment Management Ltd",
-      "kind": "institution",
-      "pct": 2.34,
-      "shares": 3844463,
-      "date": "2026-06-30"
-    },
-    {
       "name": "Mirae Asset Global ETFs Holdings Ltd.",
       "kind": "institution",
       "pct": 2.32,
@@ -214,6 +207,13 @@
       "date": "2026-09-30"
     },
     {
+      "name": "Connor Clark & Lunn Investment Management Ltd",
+      "kind": "institution",
+      "pct": 1.14,
+      "shares": 1867912,
+      "date": "2026-09-30"
+    },
+    {
       "name": "Seldon Capital LP",
       "kind": "institution",
       "pct": 1.13,
@@ -231,27 +231,21 @@
   },
   "extras": {
     "beta": 2.677,
-    "enterprise_value": 931414016,
-    "ev_ebitda": -25.05,
+    "enterprise_value": 877260992,
+    "ev_ebitda": -23.594,
     "ev_revenue": null,
     "float_shares": 137994972,
-    "short_shares": 6401071,
-    "short_pct_float": 4.13,
-    "short_ratio": 4.31,
+    "short_shares": 6887177,
+    "short_pct_float": 4.45,
+    "short_ratio": 4.57,
     "last_split": "2484:1000",
     "last_split_date": "2023-10-04"
   },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 218,
+  "inst_count": 221,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.0126,
-      "actual": -0.4,
-      "surprise_pct": -3074.6
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.03571,
@@ -263,6 +257,12 @@
       "estimate": 0.195,
       "actual": 0.0125,
       "surprise_pct": -93.59
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.08667,
+      "actual": 0.0425,
+      "surprise_pct": -50.96
     }
   ],
   "insiders": [

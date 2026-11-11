@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:22.713Z",
+  "updated_at": "2026-11-11T23:05:22.852Z",
   "source": "Yahoo Finance",
   "symbol": "KR",
   "summary": "The Kroger Co. operates as a food and drug retailer in the United States. The company operates combination food and drug stores, multi-department stores, marketplace stores, and price impact warehouses. Its combination food and drug stores offer natural food and organic sections, pharmacies, general merchandise, pet centers, fresh seafood, and organic produce; and its multi-department stores provide apparel, home fashion and furnishings, outdoor living, electronics, automotive products, and toys. The company's marketplace stores offer full-service grocery, pharmacy, health and beauty care, and perishable goods, as well as general merchandise, including apparel, home goods, and toys; and its price impact warehouse stores provide grocery, and health and beauty care items, as well as meat, dairy, baked goods, and fresh produce items. It also manufactures and processes food products for sale in its supermarkets and online; and sells fuel through its fuel centers. The company sells its products through its stores, fuel centers, and online platforms. The Kroger Co. was founded in 1883 and is based in Cincinnati, Ohio.",
@@ -10,16 +10,16 @@
   "next_earnings": "2026-12-03",
   "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": 1.15956,
+  "eps_estimate": 1.16166,
   "analysts": {
     "strong_buy": 1,
     "buy": 12,
-    "hold": 11,
+    "hold": 10,
     "sell": 0,
-    "strong_sell": 0,
+    "strong_sell": 1,
     "total": 24
   },
-  "target_mean": 69,
+  "target_mean": 69.27273,
   "target_high": 85,
   "target_low": 57,
   "target_analysts": 22,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 33940000000,
-      "earnings": 609000000
-    },
-    {
       "q": "3Q2025",
       "revenue": 33859000000,
       "earnings": -1320000000
@@ -69,13 +64,18 @@
       "q": "1Q2026",
       "revenue": 46121000000,
       "earnings": 903000000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 34621000000,
+      "earnings": 641000000
     }
   ],
   "growth": {
-    "q0": 0.1043,
-    "q1": 0.060500003,
-    "y0": 0.069699995,
-    "y1": 0.055
+    "q0": 0.106300004,
+    "q1": 0.060100004,
+    "y0": 0.07,
+    "y1": 0.0561
   },
   "ratings": [
     {
@@ -186,6 +186,13 @@
       "date": "2026-06-30"
     },
     {
+      "name": "FMR, LLC",
+      "kind": "institution",
+      "pct": 3.93,
+      "shares": 23207568,
+      "date": "2026-09-30"
+    },
+    {
       "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
       "kind": "fond",
       "pct": 2.96,
@@ -197,13 +204,6 @@
       "kind": "institution",
       "pct": 2.87,
       "shares": 16920677,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "FMR, LLC",
-      "kind": "institution",
-      "pct": 2.81,
-      "shares": 16603705,
       "date": "2026-06-30"
     },
     {
@@ -231,20 +231,20 @@
   },
   "extras": {
     "beta": 0.356,
-    "enterprise_value": 62653935616,
-    "ev_ebitda": 7.79,
-    "ev_revenue": 0.42,
+    "enterprise_value": 63002386432,
+    "ev_ebitda": 7.833,
+    "ev_revenue": 0.422,
     "float_shares": 587877898,
-    "short_shares": 30406092,
-    "short_pct_float": 5.17,
-    "short_ratio": 3.69,
+    "short_shares": 29065349,
+    "short_pct_float": 4.94,
+    "short_ratio": 4.26,
     "last_split": "2:1",
     "last_split_date": "2015-07-14"
   },
   "ex_dividend": "2026-11-16",
   "dividend_date": null,
   "payout_ratio": 0.77779996,
-  "inst_count": 1816,
+  "inst_count": 1812,
   "eps_history": [
     {
       "quarter": "2025-10-31",
@@ -284,15 +284,6 @@
     {
       "name": "ADCOCK MARY ELLEN",
       "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 60.64 - 60.74 per share.",
-      "value": 4425332,
-      "shares": 72901,
-      "date": "2026-09-18"
-    },
-    {
-      "name": "ADCOCK MARY ELLEN",
-      "role": "Officer",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 34.94 - 38.32 per share.",
       "value": 1741941,
@@ -300,7 +291,43 @@
       "date": "2026-09-18"
     },
     {
+      "name": "ADCOCK MARY ELLEN",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 60.64 - 60.74 per share.",
+      "value": 4425332,
+      "shares": 72901,
+      "date": "2026-09-18"
+    },
+    {
       "name": "BROWN KEVIN M",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 3660,
+      "date": "2026-07-15"
+    },
+    {
+      "name": "SARGENT RONALD L",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 7916,
+      "date": "2026-07-15"
+    },
+    {
+      "name": "HOGUET KAREN M",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 3660,
+      "date": "2026-07-15"
+    },
+    {
+      "name": "SOURRY KNOX JUDITH AMANDA",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -327,39 +354,12 @@
       "date": "2026-07-15"
     },
     {
-      "name": "SOURRY KNOX JUDITH AMANDA",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 3660,
-      "date": "2026-07-15"
-    },
-    {
       "name": "BUTIER MITCHELL R",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 3660,
-      "date": "2026-07-15"
-    },
-    {
-      "name": "SUTTON MARK S",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 3660,
-      "date": "2026-07-15"
-    },
-    {
-      "name": "SARGENT RONALD L",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 7916,
       "date": "2026-07-15"
     }
   ],

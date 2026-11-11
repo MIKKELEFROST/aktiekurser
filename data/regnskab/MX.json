@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:23.529Z",
+  "updated_at": "2026-11-11T23:05:23.053Z",
   "source": "Yahoo Finance",
   "symbol": "MX",
   "summary": "Magnachip Semiconductor Corporation, together with its subsidiaries, designs, manufactures, and supplies analog and mixed-signal semiconductor platform solutions for communications, the Internet of Things, consumer, computing, industrial, and automotive applications. It provides display solutions, including source and gate drivers, and timing controllers that cover a range of flat panel displays used in mobile communications, automotive, entertainment devices, monitors, notebook PCs, tablet PC and TVs, liquid crystal display, organic light emitting diodes (OLED), and micro light emitting diode (Micro LED) panel. The company also offers metal oxide semiconductor field-effect transistors, insulated-gate bipolar transistors, AC-DC converters, DC-DC converters, LED drivers, regulators, and power management integrated circuits for a range of devices comprising televisions, smartphones, mobile phones, wearable devices, desktop PCs, notebooks, tablet PCs, level shifter, and other consumer electronics, as well as for power suppliers, e-bikes, photovoltaic inverters, LED lighting, and motor drives; and OLED display driver integrated circuit products. It serves consumer, computing, communication, automotive and industrial electronics OEMs, original design manufacturers, and electronics manufacturing services companies, as well as subsystem designers in Korea, the Asia Pacific, the United States, and Europe. The company sells its products through a direct sales force and a network of agents and distributors. Magnachip Semiconductor Corporation was incorporated in 2003 and is based in Cheongju-si, South Korea.",
@@ -16,8 +16,54 @@
   "target_high": null,
   "target_low": null,
   "target_analysts": null,
-  "statements": null,
-  "quarterly": [],
+  "statements": [
+    {
+      "year": "2022",
+      "revenue": 337658000,
+      "net": -8036000,
+      "margin": -2.4
+    },
+    {
+      "year": "2023",
+      "revenue": 230051000,
+      "net": -36622000,
+      "margin": -15.9
+    },
+    {
+      "year": "2024",
+      "revenue": 231737000,
+      "net": -54308000,
+      "margin": -23.4
+    },
+    {
+      "year": "2025",
+      "revenue": 178860000,
+      "net": null,
+      "margin": null
+    }
+  ],
+  "quarterly": [
+    {
+      "q": "2Q2025",
+      "revenue": 47622000,
+      "earnings": 323000
+    },
+    {
+      "q": "3Q2025",
+      "revenue": 45946000,
+      "earnings": -13090000
+    },
+    {
+      "q": "4Q2025",
+      "revenue": 40570000,
+      "earnings": 0
+    },
+    {
+      "q": "1Q2026",
+      "revenue": 46208000,
+      "earnings": 0
+    }
+  ],
   "growth": null,
   "ratings": [
     {
@@ -128,6 +174,13 @@
       "date": "2026-06-30"
     },
     {
+      "name": "UBS Group AG",
+      "kind": "institution",
+      "pct": 2.4,
+      "shares": 914619,
+      "date": "2026-09-30"
+    },
+    {
       "name": "Acadian Asset Management. LLC",
       "kind": "institution",
       "pct": 1.75,
@@ -154,41 +207,86 @@
       "pct": 1.32,
       "shares": 503421,
       "date": "2026-09-30"
-    },
-    {
-      "name": "Connor Clark & Lunn Investment Management Ltd",
-      "kind": "institution",
-      "pct": 1.08,
-      "shares": 412849,
-      "date": "2026-06-30"
     }
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 0,
-    "sells": 0,
-    "bought": 0,
-    "sold": null,
-    "net_pct": null
+    "buys": 10,
+    "sells": 1,
+    "bought": 1261739,
+    "sold": 378252,
+    "net_pct": 18.5
   },
   "extras": {
     "beta": 1.72,
-    "enterprise_value": 57023948,
-    "ev_ebitda": -1.904,
-    "ev_revenue": 0.325,
-    "float_shares": 32355298,
-    "short_shares": 1092672,
-    "short_pct_float": 3.18,
-    "short_ratio": 0.65,
+    "enterprise_value": 58165484,
+    "ev_ebitda": -1.942,
+    "ev_revenue": 0.332,
+    "float_shares": 32585888,
+    "short_shares": 1035125,
+    "short_pct_float": 3.01,
+    "short_ratio": 1.14,
     "last_split": null,
     "last_split_date": null
   },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 85,
-  "eps_history": [],
+  "inst_count": 87,
+  "eps_history": [
+    {
+      "quarter": "2025-06-30",
+      "estimate": -0.125,
+      "actual": -0.08,
+      "surprise_pct": 36
+    },
+    {
+      "quarter": "2025-09-30",
+      "estimate": -0.08,
+      "actual": -0.01,
+      "surprise_pct": 87.5
+    },
+    {
+      "quarter": "2025-12-31",
+      "estimate": -0.32,
+      "actual": -0.08,
+      "surprise_pct": 75
+    },
+    {
+      "quarter": "2026-03-31",
+      "estimate": -0.22,
+      "actual": -0.11,
+      "surprise_pct": 50
+    }
+  ],
   "insiders": [
+    {
+      "name": "AMORUSO CRISTIANO",
+      "role": "Director",
+      "kind": "buy",
+      "text": "Purchase at price 2.36 - 2.46 per share.",
+      "value": 1371146,
+      "shares": 568009,
+      "date": "2026-11-09"
+    },
+    {
+      "name": "LEE CHAE",
+      "role": "Chief Executive Officer",
+      "kind": "buy",
+      "text": "Purchase at price 2.15 - 2.27 per share.",
+      "value": 155360,
+      "shares": 70000,
+      "date": "2026-11-06"
+    },
+    {
+      "name": "AMORUSO CRISTIANO",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 2.22 per share.",
+      "value": 840665,
+      "shares": 378252,
+      "date": "2026-11-06"
+    },
     {
       "name": "MARTINO CAMILLO",
       "role": "Director",
@@ -197,15 +295,6 @@
       "value": 0,
       "shares": 6764,
       "date": "2026-08-14"
-    },
-    {
-      "name": "AMORUSO CRISTIANO",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 46429,
-      "date": "2026-07-31"
     },
     {
       "name": "MARTINO CAMILLO",
@@ -235,6 +324,15 @@
       "date": "2026-07-31"
     },
     {
+      "name": "AMORUSO CRISTIANO",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 46429,
+      "date": "2026-07-31"
+    },
+    {
       "name": "LEE CHAE",
       "role": "Chief Executive Officer",
       "kind": "other",
@@ -244,15 +342,6 @@
       "date": "2026-07-01"
     },
     {
-      "name": "LEE SEUNGHOON",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 30000,
-      "date": "2026-06-01"
-    },
-    {
       "name": "PARK SHIN YOUNG",
       "role": "Chief Financial Officer",
       "kind": "other",
@@ -260,24 +349,6 @@
       "value": 0,
       "shares": 112500,
       "date": "2026-06-01"
-    },
-    {
-      "name": "NATHAN GILBERT E",
-      "role": "Director",
-      "kind": "buy",
-      "text": "Purchase at price 2.87 per share.",
-      "value": 63050,
-      "shares": 21994,
-      "date": "2026-03-16"
-    },
-    {
-      "name": "NATHAN GILBERT E",
-      "role": "Director",
-      "kind": "buy",
-      "text": "Purchase at price 2.75 - 2.79 per share.",
-      "value": 104924,
-      "shares": 38006,
-      "date": "2026-03-13"
     }
   ],
   "dividends": [],

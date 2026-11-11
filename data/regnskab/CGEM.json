@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:22.115Z",
+  "updated_at": "2026-11-11T23:05:22.180Z",
   "source": "Yahoo Finance",
   "symbol": "CGEM",
   "summary": "Cullinan Therapeutics, Inc., a clinical-stage biopharmaceutical company, develops therapies for autoimmune diseases and cancer in the United States. It engages in the development of CLN-978, a CD19xCD3 bispecific T cell engager for autoimmune diseases in Phase 1 clinical trials; Velinotamig, a BCMAxCD3 bispecific T cell in Phase 1 clinical trials in patients with autoimmune diseases; and CLN-049, a FLT3xCD3 bispecific T cell engager, which is in Phase 1 clinical trials in patients with relapsed and refractory acute myeloid leukemia or myelodysplastic syndrome. The company is also developing Zipalertinib, an orally available small-molecule, irreversible epidermal growth factor receptor inhibitor in Phase 2b portion of the REZILIENT1 clinical trial in patients with EGFR ex20ins non-small cell lung cancer. It has a license agreement with Chongqing Genrix Biopharmaceutical Co., Ltd to develop and commercialize velinotamig; a co-development agreement with Taiho Pharmaceutical Co., Ltd to develop zipalertinib; and a collaboration agreement with Adimab, LLC to discover and/or optimize antibodies. The company was formerly known as Cullinan Oncology, Inc. and changed its name to Cullinan Therapeutics, Inc. in April 2024. Cullinan Therapeutics, Inc. was incorporated in 2016 and is headquartered in Cambridge, Massachusetts.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-10",
   "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": -0.69919,
+  "eps_estimate": -0.74333,
   "analysts": {
     "strong_buy": 1,
     "buy": 11,
@@ -19,8 +19,8 @@
     "strong_sell": 0,
     "total": 12
   },
-  "target_mean": 34.6,
-  "target_high": 42,
+  "target_mean": 34.7,
+  "target_high": 44,
   "target_low": 27,
   "target_analysts": 10,
   "statements": [
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.092,
-    "q1": 0.21069999,
-    "y0": 0.0696,
-    "y1": 0.2094
+    "q0": 0.0346,
+    "q1": 0.16469999,
+    "y0": 0.113800004,
+    "y1": 0.2132
   },
   "ratings": [
+    {
+      "date": "2026-11-11",
+      "firm": "Wedbush",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
     {
       "date": "2026-10-28",
       "firm": "BTIG",
@@ -140,13 +147,6 @@
       "from": "Buy",
       "to": "Buy",
       "action": "main"
-    },
-    {
-      "date": "2026-06-11",
-      "firm": "Wedbush",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "reit"
     }
   ],
   "holders": [
@@ -231,20 +231,20 @@
   },
   "extras": {
     "beta": -0.056,
-    "enterprise_value": 422413568,
-    "ev_ebitda": -1.907,
+    "enterprise_value": 441492992,
+    "ev_ebitda": -2.02,
     "ev_revenue": null,
-    "float_shares": 48201022,
-    "short_shares": 7640003,
-    "short_pct_float": 16.53,
-    "short_ratio": 6.17,
+    "float_shares": 48625123,
+    "short_shares": 7928668,
+    "short_pct_float": 16.96,
+    "short_ratio": 10.01,
     "last_split": null,
     "last_split_date": null
   },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 256,
+  "inst_count": 257,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -275,6 +275,15 @@
     {
       "name": "MICHAELSON JENNIFER",
       "role": "Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 4.30 per share.",
+      "value": 17200,
+      "shares": 4000,
+      "date": "2026-09-08"
+    },
+    {
+      "name": "MICHAELSON JENNIFER",
+      "role": "Officer",
       "kind": "sell",
       "text": "Sale at price 21.57 per share.",
       "value": 172560,
@@ -286,9 +295,9 @@
       "role": "Officer",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 4.30 per share.",
-      "value": 17200,
-      "shares": 4000,
-      "date": "2026-09-08"
+      "value": 129000,
+      "shares": 30000,
+      "date": "2026-08-13"
     },
     {
       "name": "MICHAELSON JENNIFER",
@@ -304,9 +313,9 @@
       "role": "Officer",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 4.30 per share.",
-      "value": 129000,
-      "shares": 30000,
-      "date": "2026-08-13"
+      "value": 17200,
+      "shares": 4000,
+      "date": "2026-07-06"
     },
     {
       "name": "MICHAELSON JENNIFER",
@@ -315,15 +324,6 @@
       "text": "Sale at price 17.82 per share.",
       "value": 142560,
       "shares": 8000,
-      "date": "2026-07-06"
-    },
-    {
-      "name": "MICHAELSON JENNIFER",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 4.30 per share.",
-      "value": 17200,
-      "shares": 4000,
       "date": "2026-07-06"
     },
     {
@@ -347,19 +347,19 @@
     {
       "name": "MICHAELSON JENNIFER",
       "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 14.60 - 15.58 per share.",
-      "value": 116996,
-      "shares": 8000,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 4.30 per share.",
+      "value": 17200,
+      "shares": 4000,
       "date": "2026-05-05"
     },
     {
       "name": "MICHAELSON JENNIFER",
       "role": "Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 4.30 per share.",
-      "value": 17200,
-      "shares": 4000,
+      "kind": "sell",
+      "text": "Sale at price 14.60 - 15.58 per share.",
+      "value": 116996,
+      "shares": 8000,
       "date": "2026-05-05"
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:22.752Z",
+  "updated_at": "2026-11-11T23:05:22.890Z",
   "source": "Yahoo Finance",
   "symbol": "LGIH",
   "summary": "LGI Homes, Inc. engages in the design, construction, and sale of new homes in the United States. It markets and sells attached and detached entry-level homes and active adult offerings under the LGI Homes brand; and luxury homes under the Terrata Homes brand. The company also engages in the wholesale business, which includes building and selling homes to large institutions interested in acquiring single-family rental properties through bulk sales agreements. It operates in Texas, Arizona, Florida, Georgia, New Mexico, Colorado, North Carolina, South Carolina, Washington, Tennessee, Minnesota, Oklahoma, Alabama, California, Oregon, Nevada, West Virginia, Virginia, Pennsylvania, Maryland, and Utah. LGI Homes, Inc. was founded in 2003 and is headquartered in The Woodlands, Texas.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": 0.92,
+  "eps_estimate": 0.665,
   "analysts": {
     "strong_buy": 1,
     "buy": 0,
@@ -72,10 +72,10 @@
     }
   ],
   "growth": {
-    "q0": -0.0515,
-    "q1": 0.6458,
-    "y0": -0.032899998,
-    "y1": 0.1285
+    "q0": -0.31440002,
+    "q1": 0.25,
+    "y0": -0.1108,
+    "y1": 0.0539
   },
   "ratings": [
     {
@@ -200,13 +200,6 @@
       "date": "2026-06-30"
     },
     {
-      "name": "River Road Asset Management, LLC",
-      "kind": "institution",
-      "pct": 3.43,
-      "shares": 798542,
-      "date": "2026-06-30"
-    },
-    {
       "name": "Dimensional Fund Advisors LP",
       "kind": "institution",
       "pct": 3.32,
@@ -218,6 +211,13 @@
       "kind": "institution",
       "pct": 3.12,
       "shares": 725470,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Altshuler Shaham Ltd",
+      "kind": "institution",
+      "pct": 3.07,
+      "shares": 714265,
       "date": "2026-06-30"
     }
   ],
@@ -231,20 +231,20 @@
   },
   "extras": {
     "beta": 1.883,
-    "enterprise_value": 2563935744,
-    "ev_ebitda": 33.547,
-    "ev_revenue": 1.487,
+    "enterprise_value": 2502036480,
+    "ev_ebitda": 32.737,
+    "ev_revenue": 1.451,
     "float_shares": 20322702,
-    "short_shares": 3303432,
-    "short_pct_float": 22.54,
-    "short_ratio": 9.43,
+    "short_shares": 3065228,
+    "short_pct_float": 20.92,
+    "short_ratio": 7.96,
     "last_split": null,
     "last_split_date": null
   },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 340,
+  "inst_count": 339,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -272,15 +272,6 @@
     }
   ],
   "insiders": [
-    {
-      "name": "MERDIAN CHARLES MICHAEL",
-      "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 41.54 - 43.41 per share.",
-      "value": 303134,
-      "shares": 7211,
-      "date": "2026-03-09"
-    },
     {
       "name": "LIPAR ERIC THOMAS",
       "role": "Chief Executive Officer",
@@ -311,10 +302,28 @@
     {
       "name": "MERDIAN CHARLES MICHAEL",
       "role": "Chief Financial Officer",
+      "kind": "sell",
+      "text": "Sale at price 41.54 - 43.41 per share.",
+      "value": 303134,
+      "shares": 7211,
+      "date": "2026-03-09"
+    },
+    {
+      "name": "VAHRADIAN ROBERT KARNIG",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Gift at price 0.00 per share.",
+      "value": 0,
+      "shares": 1000,
+      "date": "2026-03-06"
+    },
+    {
+      "name": "GARBER SCOTT JAMES",
+      "role": "General Counsel",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 11218,
+      "shares": 4545,
       "date": "2026-03-06"
     },
     {
@@ -336,30 +345,21 @@
       "date": "2026-03-06"
     },
     {
-      "name": "VAHRADIAN ROBERT KARNIG",
-      "role": "Director",
+      "name": "MERDIAN CHARLES MICHAEL",
+      "role": "Chief Financial Officer",
       "kind": "other",
-      "text": "Stock Gift at price 0.00 per share.",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 1000,
+      "shares": 11218,
       "date": "2026-03-06"
     },
     {
       "name": "GARBER SCOTT JAMES",
       "role": "General Counsel",
       "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 4545,
-      "date": "2026-03-06"
-    },
-    {
-      "name": "MERDIAN CHARLES MICHAEL",
-      "role": "Chief Financial Officer",
-      "kind": "other",
       "text": "Stock Award(Grant) at price 36.52 - 56.50 per share.",
-      "value": 10911,
-      "shares": 223,
+      "value": 17697,
+      "shares": 386,
       "date": "2025-12-31"
     }
   ],

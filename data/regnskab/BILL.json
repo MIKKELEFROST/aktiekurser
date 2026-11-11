@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:21.990Z",
+  "updated_at": "2026-11-11T23:05:22.025Z",
   "source": "Yahoo Finance",
   "symbol": "BILL",
   "summary": "BILL Holdings, Inc. provides financial operations platform for small and midsize businesses worldwide. The company offers cloud-based payments, accounts payable, accounts receivable, and spend and expense management solutions. It also provides BILL Spend and Expense, a spend and expense management suite that provides a solution for businesses to have charge cards, build and monitor budgets, manage payments, and eliminate the need for manual expense reports. In addition, the company offers onboarding implementation support, and ongoing support and training services. Additionally, it provides payment services, including ACH, card, real-time, and cross-border payments, as well as checks and pay by card services; lending and deposit products; and value-added services. The company's artificial intelligence enabled financial software platform provides connections between suppliers and clients. It serves accounting firms, financial institutions, and software provider companies. The company was formerly known as Bill.com Holdings, Inc. and changed its name to BILL Holdings, Inc. in February 2023. BILL Holdings, Inc. was incorporated in 2006 and is headquartered in San Jose, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2027-02-04",
   "earnings_estimated": true,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.95563,
+  "eps_estimate": 0.96247,
   "analysts": {
     "strong_buy": 3,
     "buy": 10,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 22
   },
-  "target_mean": 60.15,
+  "target_mean": 60.35,
   "target_high": 75,
   "target_low": 50,
   "target_analysts": 20,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.4932,
-    "q1": 0.3353,
-    "y0": 0.4656,
-    "y1": 0.1232
+    "q0": 0.5039,
+    "q1": 0.3407,
+    "y0": 0.466,
+    "y1": 0.1274
   },
   "ratings": [
+    {
+      "date": "2026-11-11",
+      "firm": "Morgan Stanley",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
     {
       "date": "2026-11-09",
       "firm": "Citigroup",
@@ -139,13 +146,6 @@
       "firm": "Goldman Sachs",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-20",
-      "firm": "Morgan Stanley",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
       "action": "main"
     }
   ],
@@ -223,28 +223,28 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 9,
-    "sells": 4,
-    "bought": 263119,
-    "sold": 334342,
-    "net_pct": -2.2
+    "buys": 10,
+    "sells": 5,
+    "bought": 313119,
+    "sold": 394342,
+    "net_pct": -2.5
   },
   "extras": {
     "beta": 1.081,
-    "enterprise_value": 4911062528,
-    "ev_ebitda": 25.922,
-    "ev_revenue": 2.902,
+    "enterprise_value": 4905050624,
+    "ev_ebitda": 25.891,
+    "ev_revenue": 2.898,
     "float_shares": 76484002,
-    "short_shares": 10859833,
-    "short_pct_float": 18.94,
-    "short_ratio": 6.68,
+    "short_shares": 10822295,
+    "short_pct_float": 18.87,
+    "short_ratio": 8.06,
     "last_split": null,
     "last_split_date": null
   },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 494,
+  "inst_count": 495,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -273,8 +273,26 @@
   ],
   "insiders": [
     {
-      "name": "FELD PETER A.",
-      "role": "Director and Beneficial Owner of more than 10% of a Class of Security",
+      "name": "LACERTE RENE A",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 53.00 - 53.19 per share.",
+      "value": 3190785,
+      "shares": 60000,
+      "date": "2026-11-09"
+    },
+    {
+      "name": "LACERTE RENE A",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 5.26 per share.",
+      "value": 263000,
+      "shares": 50000,
+      "date": "2026-11-09"
+    },
+    {
+      "name": "KIRKPATRICK LEE T",
+      "role": "Director",
       "kind": "other",
       "text": null,
       "value": null,
@@ -282,8 +300,8 @@
       "date": "2026-10-16"
     },
     {
-      "name": "KIRKPATRICK LEE T",
-      "role": "Director",
+      "name": "FELD PETER A.",
+      "role": "Director and Beneficial Owner of more than 10% of a Class of Security",
       "kind": "other",
       "text": null,
       "value": null,
@@ -343,24 +361,6 @@
       "value": null,
       "shares": 48920,
       "date": "2026-08-28"
-    },
-    {
-      "name": "CIERI MICHAEL",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 35.68 - 37.10 per share.",
-      "value": 1204663,
-      "shares": 32875,
-      "date": "2026-05-29"
-    },
-    {
-      "name": "BOWMAN MARY KAY",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 18934,
-      "date": "2026-05-28"
     }
   ],
   "dividends": [],

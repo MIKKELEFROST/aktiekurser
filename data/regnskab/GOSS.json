@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:22.509Z",
+  "updated_at": "2026-11-11T23:05:22.606Z",
   "source": "Yahoo Finance",
   "symbol": "GOSS",
   "summary": "Gossamer Bio, Inc., a clinical-stage biopharmaceutical company, focuses on developing and commercializing seralutinib for the treatment of pulmonary hypertension and pulmonary arterial hypertension in the United States. The company develops GB002, an inhaled, small molecule, platelet-derived growth factor receptor, or PDGFR, colony-stimulatin factor 1 receptor and c-KIT inhibitor, which is in Phase 3 clinical trial for the treatment of PAH. It has license agreements with Pulmokine, Inc. to develop and commercialize GB002 and related backup compounds. The company was formerly known as FSG, Bio, Inc. and changed its name to Gossamer Bio, Inc. in 2017. The company was incorporated in 2015 and is headquartered in San Diego, California.",
@@ -8,9 +8,9 @@
   "employees": 161,
   "ceo": "Mr. Faheem  Hasnain",
   "next_earnings": "2026-11-10",
-  "earnings_estimated": true,
+  "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": -3.934,
+  "eps_estimate": -4.932,
   "analysts": {
     "strong_buy": 1,
     "buy": 3,
@@ -19,7 +19,7 @@
     "strong_sell": 1,
     "total": 8
   },
-  "target_mean": 95.4,
+  "target_mean": 91.4,
   "target_high": 160,
   "target_low": 22.4,
   "target_analysts": 6,
@@ -51,16 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 11489000,
-      "earnings": -38273000
-    },
-    {
-      "q": "3Q2025",
-      "revenue": 13294000,
-      "earnings": -48221000
-    },
-    {
       "q": "4Q2025",
       "revenue": 13799000,
       "earnings": -47238000
@@ -69,15 +59,39 @@
       "q": "1Q2026",
       "revenue": 16955000,
       "earnings": -46664000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 9238000,
+      "earnings": 16900000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 38431000,
+      "earnings": -48072000
     }
   ],
   "growth": {
-    "q0": 0.7658,
-    "q1": 0.7064,
+    "q0": 0.7064,
+    "q1": 0.6006,
     "y0": 0.6998,
     "y1": 0.1331
   },
   "ratings": [
+    {
+      "date": "2026-11-11",
+      "firm": "Piper Sandler",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-11",
+      "firm": "Wedbush",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-10-26",
       "firm": "Chardan Capital",
@@ -133,20 +147,6 @@
       "from": "Buy",
       "to": "Buy",
       "action": "main"
-    },
-    {
-      "date": "2026-05-26",
-      "firm": "HC Wainwright & Co.",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "reit"
-    },
-    {
-      "date": "2026-05-19",
-      "firm": "Barclays",
-      "from": "Underweight",
-      "to": "Underweight",
-      "action": "main"
     }
   ],
   "holders": [
@@ -186,6 +186,13 @@
       "date": "2026-06-30"
     },
     {
+      "name": "FMR, LLC",
+      "kind": "institution",
+      "pct": 4.76,
+      "shares": 290939,
+      "date": "2026-09-30"
+    },
+    {
       "name": "Fidelity Select Portfolios-Select Biotechnology Portfolio",
       "kind": "fond",
       "pct": 3.85,
@@ -212,13 +219,6 @@
       "pct": 2.38,
       "shares": 145374,
       "date": "2026-06-30"
-    },
-    {
-      "name": "Kalehua Capital Management LLC",
-      "kind": "institution",
-      "pct": 2.28,
-      "shares": 139367,
-      "date": "2026-06-30"
     }
   ],
   "insider_net": {
@@ -231,27 +231,21 @@
   },
   "extras": {
     "beta": 2.266,
-    "enterprise_value": 48089168,
-    "ev_ebitda": -0.303,
-    "ev_revenue": 0.902,
+    "enterprise_value": 51969388,
+    "ev_ebitda": -0.328,
+    "ev_revenue": 0.975,
     "float_shares": 4081076,
-    "short_shares": 1436240,
-    "short_pct_float": 23.82,
-    "short_ratio": 4.53,
+    "short_shares": 1339230,
+    "short_pct_float": 22.22,
+    "short_ratio": 5.6,
     "last_split": "1:80",
     "last_split_date": "2026-09-11"
   },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": null,
-  "inst_count": 155,
+  "inst_count": 148,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -15.77143,
-      "actual": -16.8,
-      "surprise_pct": -6.52
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -15.65333,
@@ -269,6 +263,12 @@
       "estimate": -9.98857,
       "actual": -8.168,
       "surprise_pct": 18.23
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -3.934,
+      "actual": 0.4426,
+      "surprise_pct": 111.25
     }
   ],
   "insiders": [

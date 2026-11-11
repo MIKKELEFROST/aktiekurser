@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:22.254Z",
+  "updated_at": "2026-11-11T23:05:22.310Z",
   "source": "Yahoo Finance",
   "symbol": "DGII",
   "summary": "Digi International Inc. provides business and mission-critical Internet of Things (IoT) connectivity products, services, and solutions in the United States, Europe, the Middle East, Africa, and internationally. It operates through IoT Products & Services, and IoT Solutions segments. The company offers cellular routers for mission-critical wireless connectivity; cellular modules to embed cellular communications abilities into the products to deploy and manage intelligent and secure cellular connected products; console servers to provide secure and remote access to network equipment in data centers and at edge locations; and radio frequency products, including embedded wireless modules, off-the-shelf gateways, modems, and adapters under the Digi XBee brand. It also provides embedded system products under the Digi Connect, and ConnectCore brands; and infrastructure management products comprising serial servers, which offers serial port-to-Ethernet integration of devices into wired Ethernet networks; and universal serial bus solutions. In addition, it provides Digi Remote Manager and Lighthouse, a recurring revenue cloud-based service that offers a secure environment for customers to manage connected device deployment and network devices; SmartSense by Digi for monitoring wirelessly the temperature of food and other perishable or sensitive goods, monitoring facilities or pharmacies by tracking the completion of operating tasks by employees, and quality control and incident management in food service, healthcare, and transportation/logistics industries; and Ventus for MNaaS solutions. Further, the company provides professional services, such as site planning, implementation management, application development, and customer training; data plan subscriptions; and enhanced technical support services, as well as Digi Wireless Design Services. Digi International Inc. was incorporated in 1985 and is headquartered in Hopkins, Minnesota.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-11",
   "earnings_estimated": false,
   "earnings_call": "2026-11-11",
-  "eps_estimate": 0.764,
+  "eps_estimate": 0.7325,
   "analysts": {
     "strong_buy": 0,
     "buy": 4,
@@ -24,12 +24,6 @@
   "target_low": 76,
   "target_analysts": 5,
   "statements": [
-    {
-      "year": "2022",
-      "revenue": 388225000,
-      "net": 19383000,
-      "margin": 5
-    },
     {
       "year": "2023",
       "revenue": 444849000,
@@ -47,14 +41,15 @@
       "revenue": 430221000,
       "net": 40804000,
       "margin": 9.5
+    },
+    {
+      "year": "2026",
+      "revenue": 535194000,
+      "net": 53692000,
+      "margin": 10
     }
   ],
   "quarterly": [
-    {
-      "q": "3Q2025",
-      "revenue": 114338000,
-      "earnings": 9981000
-    },
     {
       "q": "4Q2025",
       "revenue": 122462000,
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 138670000,
       "earnings": 15740000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 143319000,
+      "earnings": 14938000
     }
   ],
   "growth": {
-    "q0": 0.3643,
-    "q1": 0.308,
-    "y0": 0.28190002,
-    "y1": 0.1634
+    "q0": 0.308,
+    "q1": 0.2298,
+    "y0": 0.16,
+    "y1": 0.084
   },
   "ratings": [
     {
@@ -160,9 +160,9 @@
     {
       "name": "FMR, LLC",
       "kind": "institution",
-      "pct": 6.33,
-      "shares": 2403235,
-      "date": "2026-06-30"
+      "pct": 6.62,
+      "shares": 2512213,
+      "date": "2026-09-30"
     },
     {
       "name": "iShares Trust-iShares Core S&P Small-Cap ETF",
@@ -231,27 +231,21 @@
   },
   "extras": {
     "beta": 1.002,
-    "enterprise_value": 2637873408,
-    "ev_ebitda": 22.977,
-    "ev_revenue": 5.211,
+    "enterprise_value": 2558941440,
+    "ev_ebitda": 22.289,
+    "ev_revenue": 5.055,
     "float_shares": 36966026,
-    "short_shares": 1997810,
-    "short_pct_float": 7.33,
-    "short_ratio": 5.02,
+    "short_shares": 2105279,
+    "short_pct_float": 7.73,
+    "short_ratio": 6.15,
     "last_split": "3:2",
     "last_split_date": "1992-04-01"
   },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 408,
+  "inst_count": 411,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.508,
-      "actual": 0.56,
-      "surprise_pct": 10.24
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.54833,
@@ -269,6 +263,12 @@
       "estimate": 0.664,
       "actual": 0.75,
       "surprise_pct": 12.95
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.764,
+      "actual": 0.78,
+      "surprise_pct": 2.09
     }
   ],
   "insiders": [
@@ -284,19 +284,19 @@
     {
       "name": "LOCH JAMES J.",
       "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 69.42 - 70.31 per share.",
-      "value": 6944342,
-      "shares": 100000,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 13.76 - 21.53 per share.",
+      "value": 3393053,
+      "shares": 208042,
       "date": "2026-06-02"
     },
     {
       "name": "LOCH JAMES J.",
       "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 13.76 - 21.53 per share.",
-      "value": 3393053,
-      "shares": 208042,
+      "kind": "sell",
+      "text": "Sale at price 69.42 - 70.31 per share.",
+      "value": 6944342,
+      "shares": 100000,
       "date": "2026-06-02"
     },
     {
@@ -320,18 +320,18 @@
     {
       "name": "SCHNEIDER TERRENCE G",
       "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 65.61 per share.",
-      "value": 930474,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 16.75 per share.",
+      "value": 237548,
       "shares": 14182,
       "date": "2026-05-11"
     },
     {
       "name": "SCHNEIDER TERRENCE G",
       "role": "Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 16.75 per share.",
-      "value": 237548,
+      "kind": "sell",
+      "text": "Sale at price 65.61 per share.",
+      "value": 930474,
       "shares": 14182,
       "date": "2026-05-11"
     },

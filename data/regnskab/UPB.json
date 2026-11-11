@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:23.416Z",
+  "updated_at": "2026-11-11T23:05:23.593Z",
   "source": "Yahoo Finance",
   "symbol": "UPB",
   "summary": "Upstream Bio, Inc., a clinical-stage biotechnology company, develops treatments for inflammatory diseases focusing on severe respiratory disorders. It offers verekitug, which is in Phase 2 trials for the treatment of severe asthma and chronic rhinosinusitis with nasal polyps and chronic obstructive pulmonary disease and in Phase I clinical trial for treating chronic obstructive pulmonary disease. The company was incorporated in 2021 and is headquartered in Waltham, Massachusetts.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-10",
   "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": -0.72864,
+  "eps_estimate": -0.73927,
   "analysts": {
     "strong_buy": 1,
     "buy": 5,
@@ -19,8 +19,8 @@
     "strong_sell": 0,
     "total": 8
   },
-  "target_mean": 29.83333,
-  "target_high": 75,
+  "target_mean": 24,
+  "target_high": 40,
   "target_low": 9,
   "target_analysts": 6,
   "statements": [
@@ -66,12 +66,19 @@
     }
   ],
   "growth": {
-    "q0": -0.1566,
-    "q1": 0.0682,
-    "y0": -0.0915,
-    "y1": 0.0352
+    "q0": 0.052199997,
+    "q1": -0.05,
+    "y0": -0.102299996,
+    "y1": 0.033
   },
   "ratings": [
+    {
+      "date": "2026-11-11",
+      "firm": "HC Wainwright & Co.",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-09-02",
       "firm": "HC Wainwright & Co.",
@@ -134,22 +141,15 @@
       "from": null,
       "to": "Outperform",
       "action": "init"
-    },
-    {
-      "date": "2025-11-18",
-      "firm": "Evercore ISI Group",
-      "from": null,
-      "to": "Outperform",
-      "action": "init"
     }
   ],
   "holders": [
     {
       "name": "FMR, LLC",
       "kind": "institution",
-      "pct": 14.9,
-      "shares": 8162897,
-      "date": "2026-06-30"
+      "pct": 14.94,
+      "shares": 8181586,
+      "date": "2026-09-30"
     },
     {
       "name": "Orbimed Advisors LLC.",
@@ -225,27 +225,21 @@
   },
   "extras": {
     "beta": 1.608,
-    "enterprise_value": -64272672,
-    "ev_ebitda": 0.379,
-    "ev_revenue": -20.352,
+    "enterprise_value": -21449882,
+    "ev_ebitda": 0.122,
+    "ev_revenue": -7.474,
     "float_shares": 42809593,
-    "short_shares": 4480785,
-    "short_pct_float": 12.57,
-    "short_ratio": 5.02,
+    "short_shares": 3550200,
+    "short_pct_float": 9.95,
+    "short_ratio": 2.81,
     "last_split": null,
     "last_split_date": null
   },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": null,
-  "inst_count": 201,
+  "inst_count": 197,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.78278,
-      "actual": -0.63,
-      "surprise_pct": 19.52
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.69904,
@@ -263,6 +257,12 @@
       "estimate": -0.76091,
       "actual": -0.73,
       "surprise_pct": 4.06
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.72864,
+      "actual": -0.75,
+      "surprise_pct": -2.93
     }
   ],
   "insiders": [

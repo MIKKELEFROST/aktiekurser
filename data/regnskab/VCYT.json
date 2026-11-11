@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:23.435Z",
+  "updated_at": "2026-11-11T23:05:23.611Z",
   "source": "Yahoo Finance",
   "symbol": "VCYT",
   "summary": "Veracyte, Inc. operates as a diagnostics company in the United States and internationally. The company offers Afirma Genomic Sequencing Classifier for cancerous thyroid nodules; Decipher Prostate Genomic Classifiers for prostate cancer diagnosis; Decipher Bladder Genomic Classifier for bladder cancer diagnosis; Prosigna Breast Cancer Assay for breast cancer diagnosis; and Percepta Nasal Swab Test for lung cancer diagnosis. It also provides the nCounter analysis system services. The company was formerly known as Calderome, Inc. and changed its name to Veracyte, Inc. in March 2008. Veracyte, Inc. was incorporated in 2006 and is headquartered in South San Francisco, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.40729,
+  "eps_estimate": 0.38229,
   "analysts": {
     "strong_buy": 2,
     "buy": 7,
@@ -19,10 +19,10 @@
     "strong_sell": 0,
     "total": 12
   },
-  "target_mean": 52.1,
+  "target_mean": 46.22222,
   "target_high": 70,
-  "target_low": 35,
-  "target_analysts": 10,
+  "target_low": 30,
+  "target_analysts": 9,
   "statements": [
     {
       "year": "2022",
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": -0.2315,
-    "q1": -0.26709998,
-    "y0": 0.0928,
-    "y1": -0.1129
+    "q0": -0.2787,
+    "q1": -0.32689998,
+    "y0": 0.089700006,
+    "y1": -0.17040001
   },
   "ratings": [
+    {
+      "date": "2026-11-11",
+      "firm": "Stephens & Co.",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-11-10",
       "firm": "Piper Sandler",
@@ -140,13 +147,6 @@
       "from": "Overweight",
       "to": "Overweight",
       "action": "main"
-    },
-    {
-      "date": "2026-08-04",
-      "firm": "Morgan Stanley",
-      "from": "Underweight",
-      "to": "Underweight",
-      "action": "main"
     }
   ],
   "holders": [
@@ -160,9 +160,9 @@
     {
       "name": "FMR, LLC",
       "kind": "institution",
-      "pct": 9.55,
-      "shares": 7702746,
-      "date": "2026-06-30"
+      "pct": 8.07,
+      "shares": 6512651,
+      "date": "2026-09-30"
     },
     {
       "name": "Artisan Partners Limited Partnership",
@@ -231,20 +231,20 @@
   },
   "extras": {
     "beta": 1.96,
-    "enterprise_value": 1761830784,
-    "ev_ebitda": 16.172,
-    "ev_revenue": 3.028,
+    "enterprise_value": 1611737216,
+    "ev_ebitda": 14.794,
+    "ev_revenue": 2.77,
     "float_shares": 80192747,
-    "short_shares": 9821453,
-    "short_pct_float": 14.38,
-    "short_ratio": 6.64,
+    "short_shares": 9559148,
+    "short_pct_float": 13.99,
+    "short_ratio": 8.08,
     "last_split": null,
     "last_split_date": null
   },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 524,
+  "inst_count": 528,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -282,15 +282,6 @@
       "date": "2026-10-27"
     },
     {
-      "name": "EASTHAM KARIN",
-      "role": "Director",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 27.01 per share.",
-      "value": 270100,
-      "shares": 10000,
-      "date": "2026-10-27"
-    },
-    {
       "name": "HOLSTEIN JENS",
       "role": "Director",
       "kind": "sell",
@@ -306,6 +297,15 @@
       "text": "Conversion of Exercise of derivative security at price 35.30 per share.",
       "value": 529500,
       "shares": 15000,
+      "date": "2026-10-27"
+    },
+    {
+      "name": "EASTHAM KARIN",
+      "role": "Director",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 27.01 per share.",
+      "value": 270100,
+      "shares": 10000,
       "date": "2026-10-27"
     },
     {
@@ -336,15 +336,6 @@
       "date": "2026-09-14"
     },
     {
-      "name": "CHAMBERS REBECCA",
-      "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 42.81 - 43.71 per share.",
-      "value": 157394,
-      "shares": 3652,
-      "date": "2026-09-04"
-    },
-    {
       "name": "MCGUIRE ANNIE",
       "role": "General Counsel",
       "kind": "sell",
@@ -360,6 +351,15 @@
       "text": "Sale at price 42.89 - 43.66 per share.",
       "value": 564410,
       "shares": 13110,
+      "date": "2026-09-04"
+    },
+    {
+      "name": "CHAMBERS REBECCA",
+      "role": "Chief Financial Officer",
+      "kind": "sell",
+      "text": "Sale at price 42.81 - 43.71 per share.",
+      "value": 157394,
+      "shares": 3652,
       "date": "2026-09-04"
     }
   ],

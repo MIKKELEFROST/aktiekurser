@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:23.255Z",
+  "updated_at": "2026-11-11T23:05:23.472Z",
   "source": "Yahoo Finance",
   "symbol": "SPIR",
   "summary": "Spire Global, Inc. provides subscription-based data, insights, predictive analytics, and related project-based services in the Americas, Europe, the Middle East, Africa, and the Asia Pacific. The company offers Space Reconnaissance service, a mission-critical insights support defense, intelligence, and national security operations; Aviation service, a satellite-based aircraft tracking data to power applications; Weather and Climate, a space-based data, AI-powered insights, and predictive weather analytics; and Space Services solutions includes space-as-a- service, which delivers and develops infrastructure, including ground station network and cloud infrastructure to access spaces. It serves government, logistics, operations, insurance, energy, agriculture, and financial industries. It has strategic partnership with Schaeffler AG to develop space hardware subsystems, satellite platforms, and advanced radiofrequency (RF) and environmental sensing capabilities. The company was formerly known as Nanosatisfi, Inc. and changed its name to Spire Global, Inc. in July 2014. Spire Global, Inc. was founded in 2012 and is headquartered in Vienna, Virginia.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-10",
   "earnings_estimated": false,
   "earnings_call": "2026-11-10",
-  "eps_estimate": -0.215,
+  "eps_estimate": null,
   "analysts": {
     "strong_buy": 0,
     "buy": 4,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 4
   },
-  "target_mean": 20.875,
+  "target_mean": 19.875,
   "target_high": 24,
   "target_low": 15,
   "target_analysts": 4,
@@ -51,16 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 19182000,
-      "earnings": 119590000
-    },
-    {
-      "q": "3Q2025",
-      "revenue": 12670000,
-      "earnings": -19676000
-    },
-    {
       "q": "4Q2025",
       "revenue": 15825000,
       "earnings": -25094000
@@ -69,15 +59,27 @@
       "q": "1Q2026",
       "revenue": 15834000,
       "earnings": -25843000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 18048000,
+      "earnings": -19969000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 17998000,
+      "earnings": -20252000
     }
   ],
-  "growth": {
-    "q0": 0.4625,
-    "q1": 0.7436,
-    "y0": 0.4795,
-    "y1": 0.6158
-  },
+  "growth": null,
   "ratings": [
+    {
+      "date": "2026-11-11",
+      "firm": "Stifel",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-13",
       "firm": "Alliance Global Partners",
@@ -140,13 +142,6 @@
       "from": "Buy",
       "to": "Buy",
       "action": "main"
-    },
-    {
-      "date": "2026-01-06",
-      "firm": "HC Wainwright & Co.",
-      "from": null,
-      "to": "Buy",
-      "action": "init"
     }
   ],
   "holders": [
@@ -230,14 +225,14 @@
     "net_pct": 3.4
   },
   "extras": {
-    "beta": 3.169,
-    "enterprise_value": 288048320,
-    "ev_ebitda": -4.139,
-    "ev_revenue": 4.618,
-    "float_shares": 33957336,
-    "short_shares": 3696999,
-    "short_pct_float": 10.12,
-    "short_ratio": 5.46,
+    "beta": null,
+    "enterprise_value": 294668704,
+    "ev_ebitda": -4.378,
+    "ev_revenue": 4.352,
+    "float_shares": 34003300,
+    "short_shares": 3737144,
+    "short_pct_float": 10.23,
+    "short_ratio": 6.96,
     "last_split": "1:8",
     "last_split_date": "2023-08-31"
   },
@@ -246,12 +241,6 @@
   "payout_ratio": 0,
   "inst_count": 191,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.33,
-      "actual": -0.4,
-      "surprise_pct": -21.21
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.49667,
@@ -269,6 +258,12 @@
       "estimate": -0.265,
       "actual": -0.31,
       "surprise_pct": -16.98
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.215,
+      "actual": -0.2938,
+      "surprise_pct": -36.65
     }
   ],
   "insiders": [

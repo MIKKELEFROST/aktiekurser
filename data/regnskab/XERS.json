@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:23.491Z",
+  "updated_at": "2026-11-11T23:05:23.705Z",
   "source": "Yahoo Finance",
   "symbol": "XERS",
   "summary": "Xeris Biopharma Holdings, Inc., a commercial-stage biopharmaceutical company, engages in developing and commercializing therapies for chronic endocrine and neurological diseases in Illinois. It offers Gvoke, a ready-to-use liquid-stable glucagon for the treatment of severe hypoglycemia in pediatric and adult patients; Keveyis, a therapy for the treatment of hyperkalemic, hypokalemic, and related variants of primary periodic paralysis; and Recorlev, a cortisol synthesis inhibitor for the treatment of endogenous hypercortisolemia in adult patients with Cushing's syndrome. It is also developing XP-8121, a once-weekly subcutaneous injection of levothyroxine that is in phase 3 clinical trial for the treatment of hypothyroidism. The company was incorporated in 2005 and is headquartered in Chicago, Illinois.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.07,
+  "eps_estimate": 0.07125,
   "analysts": {
     "strong_buy": 1,
     "buy": 5,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 7
   },
-  "target_mean": 12.85714,
-  "target_high": 18,
-  "target_low": 8,
+  "target_mean": 17.28571,
+  "target_high": 21,
+  "target_low": 12,
   "target_analysts": 7,
   "statements": [
     {
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.1667,
-    "q1": 1.5,
+    "q0": 0.1875,
+    "q1": 2,
     "y0": 0,
-    "y1": 21.0053
+    "y1": 25.381102
   },
   "ratings": [
+    {
+      "date": "2026-11-11",
+      "firm": "Barclays",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-11-06",
       "firm": "Oppenheimer",
@@ -140,13 +147,6 @@
       "from": null,
       "to": "Overweight",
       "action": "init"
-    },
-    {
-      "date": "2025-11-07",
-      "firm": "Oppenheimer",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
     }
   ],
   "holders": [
@@ -202,9 +202,9 @@
     {
       "name": "Nuveen, LLC",
       "kind": "institution",
-      "pct": 2.4,
-      "shares": 4385141,
-      "date": "2026-06-30"
+      "pct": 2.27,
+      "shares": 4141888,
+      "date": "2026-09-30"
     },
     {
       "name": "Rosalind Advisors, Inc.",
@@ -231,20 +231,20 @@
   },
   "extras": {
     "beta": 0.837,
-    "enterprise_value": 2992606720,
-    "ev_ebitda": 50.776,
-    "ev_revenue": 8.126,
+    "enterprise_value": 2987125504,
+    "ev_ebitda": 50.683,
+    "ev_revenue": 8.111,
     "float_shares": 176515642,
-    "short_shares": 8027654,
-    "short_pct_float": 4.54,
-    "short_ratio": 2.46,
+    "short_shares": 8986870,
+    "short_pct_float": 5.08,
+    "short_ratio": 3.8,
     "last_split": null,
     "last_split_date": null
   },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 321,
+  "inst_count": 323,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -345,21 +345,21 @@
       "date": "2026-08-12"
     },
     {
-      "name": "HECHT BETH P",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 8.01 per share.",
-      "value": 133553,
-      "shares": 16666,
-      "date": "2026-08-03"
-    },
-    {
       "name": "MCCULLOCH KEVIN",
       "role": "President",
       "kind": "sell",
       "text": "Sale at price 8.02 per share.",
       "value": 120240,
       "shares": 15000,
+      "date": "2026-08-03"
+    },
+    {
+      "name": "HECHT BETH P",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 8.01 per share.",
+      "value": 133553,
+      "shares": 16666,
       "date": "2026-08-03"
     }
   ],

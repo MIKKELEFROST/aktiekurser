@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:22.482Z",
+  "updated_at": "2026-11-11T23:05:22.583Z",
   "source": "Yahoo Finance",
   "symbol": "GILT",
   "summary": "Gilat Satellite Networks Ltd., together with its subsidiaries, provides satellite-based broadband communication solutions in Israel, the United States, Peru, and internationally. It operates in three segments: Satellite Networks, Integrated Solutions, and Network Infrastructure and Services. The company designs and manufactures ground-based satellite communications equipment. Its portfolio consists of cloud-based satellite network platform, very small aperture terminals, amplifiers, modems, on-the-move antennas, ESA antennas, solid state power amplifiers, block upconverters, transceivers, and transportable and portable terminals. The company also develops, manufactures, and supplies products and solutions for mission-critical defense and broadcast satellite communications systems, advanced on-the-move and on-the-pause satellite communications equipment, systems, and solutions, including airborne, ground-mobile satellite systems and solutions; and provides terrestrial, including fiber optic and wireless network, and satellite network construction and operation services. In addition, it provides managed satellite network services, network planning and optimization, remote network operation, call center support, hub and field operations, and communication networks construction and installation services; connectivity services, internet access, and telephony services; and builds telecommunication infrastructure using fiber-optic and wireless technologies for broadband connectivity. The company sells its products and solutions to communication service providers, satellite operators, Mobile Network Operators, and system integrators that use satellite communications to serve enterprise, social inclusion solutions, and government and residential users; and defense and homeland security organizations, as well as directly to end-users. Gilat Satellite Networks Ltd. was incorporated in 1987 and is headquartered in Petah Tikva, Israel.",
@@ -7,21 +7,21 @@
   "website": "https://www.gilat.com",
   "employees": 1159,
   "ceo": "Mr. Adi  Sfadia",
-  "next_earnings": "2026-11-10",
-  "earnings_estimated": false,
+  "next_earnings": "2027-02-10",
+  "earnings_estimated": true,
   "earnings_call": "2026-11-10",
-  "eps_estimate": 0.14333,
+  "eps_estimate": 0.13,
   "analysts": {
     "strong_buy": 1,
-    "buy": 2,
-    "hold": 0,
+    "buy": 1,
+    "hold": 1,
     "sell": 0,
     "strong_sell": 0,
     "total": 3
   },
-  "target_mean": 19.2,
-  "target_high": 20,
-  "target_low": 18.4,
+  "target_mean": 14.7,
+  "target_high": 18.4,
+  "target_low": 11,
   "target_analysts": 2,
   "statements": [
     {
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": -0.2456,
-    "q1": -0.1667,
-    "y0": 0.0625,
-    "y1": 0.1275
+    "q0": -0.35,
+    "q1": -0.3056,
+    "y0": 0.0469,
+    "y1": 0.0497
   },
   "ratings": [
+    {
+      "date": "2026-11-11",
+      "firm": "Needham",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-11-10",
       "firm": "William Blair",
@@ -136,13 +143,6 @@
     },
     {
       "date": "2025-05-20",
-      "firm": "Needham",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "reit"
-    },
-    {
-      "date": "2025-02-26",
       "firm": "Needham",
       "from": "Buy",
       "to": "Buy",
@@ -230,28 +230,22 @@
     "net_pct": 0.3
   },
   "extras": {
-    "beta": 1.136,
-    "enterprise_value": 434344800,
-    "ev_ebitda": 7.738,
-    "ev_revenue": 0.89,
-    "float_shares": 76081422,
-    "short_shares": 2214383,
-    "short_pct_float": 3.69,
-    "short_ratio": 2.99,
+    "beta": null,
+    "enterprise_value": 309173728,
+    "ev_ebitda": 6.466,
+    "ev_revenue": 0.636,
+    "float_shares": 76110071,
+    "short_shares": 1993024,
+    "short_pct_float": 3.32,
+    "short_ratio": 2.09,
     "last_split": "1:20",
     "last_split_date": "2003-04-16"
   },
   "ex_dividend": "2021-01-08",
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 181,
+  "inst_count": 178,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.1,
-      "actual": 0.19,
-      "surprise_pct": 90
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.13667,
@@ -269,18 +263,15 @@
       "estimate": 0.1,
       "actual": 0.2,
       "surprise_pct": 100
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.14333,
+      "actual": 0.18,
+      "surprise_pct": 25.58
     }
   ],
   "insiders": [
-    {
-      "name": "OFEK AMIR YECHIEL",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 11.41 per share.",
-      "value": 44761,
-      "shares": 3923,
-      "date": "2026-08-06"
-    },
     {
       "name": "OFEK AMIR YECHIEL",
       "role": "Director",
@@ -291,13 +282,13 @@
       "date": "2026-08-06"
     },
     {
-      "name": "ARIEH ROHRSTOCK",
-      "role": "Officer",
+      "name": "OFEK AMIR YECHIEL",
+      "role": "Director",
       "kind": "sell",
-      "text": "Sale at price 15.23 per share.",
-      "value": 267582,
-      "shares": 17568,
-      "date": "2026-06-11"
+      "text": "Sale at price 11.41 per share.",
+      "value": 44761,
+      "shares": 3923,
+      "date": "2026-08-06"
     },
     {
       "name": "ARIEH ROHRSTOCK",
@@ -306,6 +297,15 @@
       "text": "Conversion of Exercise of derivative security at price 15.37 per share.",
       "value": 461100,
       "shares": 30000,
+      "date": "2026-06-11"
+    },
+    {
+      "name": "ARIEH ROHRSTOCK",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 15.23 per share.",
+      "value": 267582,
+      "shares": 17568,
       "date": "2026-06-11"
     },
     {
@@ -320,19 +320,19 @@
     {
       "name": "SFADIA ADI",
       "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 16.85 per share.",
-      "value": 825270,
-      "shares": 48978,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 17.00 per share.",
+      "value": 102170,
+      "shares": 6010,
       "date": "2026-03-18"
     },
     {
       "name": "SFADIA ADI",
       "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 17.00 per share.",
-      "value": 102170,
-      "shares": 6010,
+      "kind": "sell",
+      "text": "Sale at price 16.85 per share.",
+      "value": 825270,
+      "shares": 48978,
       "date": "2026-03-18"
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:22.604Z",
+  "updated_at": "2026-11-11T23:05:22.714Z",
   "source": "Yahoo Finance",
   "symbol": "HYLN",
   "summary": "Hyliion Holdings Corp. designs and develops power generators for stationary and mobile applications. Its primary product includes the KARNO Power Module, a fuel-agnostic power generating solution, which enables distributed power generation using conventional fuels, such as natural gas, propane or diesel; waste fuels, such as landfill and wellhead gas; zero carbon fuels, such as renewable hydrogen and ammonia. Hyliion Holdings Corp. was founded in 2015 and is headquartered in Cedar Park, Texas.",
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 1515000,
-      "earnings": -13414000
-    },
-    {
       "q": "3Q2025",
       "revenue": 759000,
       "earnings": -13337000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 4944000,
       "earnings": -13928000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 7452000,
+      "earnings": -11064000
     }
   ],
   "growth": {
-    "q0": 0.125,
-    "q1": 0.026400002,
+    "q0": 0.026400002,
+    "q1": null,
     "y0": 0.1487,
     "y1": -0.08930001
   },
@@ -207,17 +207,17 @@
       "date": "2026-06-30"
     },
     {
+      "name": "UBS Group AG",
+      "kind": "institution",
+      "pct": 1.46,
+      "shares": 2542550,
+      "date": "2026-09-30"
+    },
+    {
       "name": "Invesco Ltd.",
       "kind": "institution",
       "pct": 1.37,
       "shares": 2378173,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "Millennium Management Llc",
-      "kind": "institution",
-      "pct": 1.1,
-      "shares": 1904750,
       "date": "2026-06-30"
     }
   ],
@@ -230,14 +230,14 @@
     "net_pct": null
   },
   "extras": {
-    "beta": 3.725,
-    "enterprise_value": 499664256,
-    "ev_ebitda": -9.567,
-    "ev_revenue": 54.035,
-    "float_shares": 124709079,
-    "short_shares": 14990996,
-    "short_pct_float": 10.68,
-    "short_ratio": 8.03,
+    "beta": null,
+    "enterprise_value": 489010240,
+    "ev_ebitda": -9.952,
+    "ev_revenue": 30.678,
+    "float_shares": 124937136,
+    "short_shares": 14860277,
+    "short_pct_float": 10.59,
+    "short_ratio": 9.82,
     "last_split": null,
     "last_split_date": null
   },
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 217,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.09,
-      "actual": -0.08,
-      "surprise_pct": 11.11
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.09,
@@ -263,9 +257,24 @@
       "estimate": -0.07,
       "actual": -0.0795,
       "surprise_pct": -13.57
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.07,
+      "actual": -0.06,
+      "surprise_pct": 14.29
     }
   ],
   "insiders": [
+    {
+      "name": "OXHOLM JOSE MIGUEL",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 123733,
+      "date": "2026-09-30"
+    },
     {
       "name": "STANDLEY GREG",
       "role": "Officer",
@@ -282,15 +291,6 @@
       "text": null,
       "value": null,
       "shares": 127322,
-      "date": "2026-09-30"
-    },
-    {
-      "name": "OXHOLM JOSE MIGUEL",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 123733,
       "date": "2026-09-30"
     },
     {
@@ -339,21 +339,21 @@
       "date": "2026-05-26"
     },
     {
-      "name": "STANDLEY GREG",
-      "role": "Officer",
+      "name": "KNIGHT ROBERT M JR",
+      "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 2.05 per share.",
-      "value": 95946,
-      "shares": 46803,
+      "value": 125001,
+      "shares": 60976,
       "date": "2026-02-11"
     },
     {
-      "name": "PANZER JON T.",
-      "role": "Chief Financial Officer",
+      "name": "FREELAND RICHARD JOSEPH",
+      "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 2.05 per share.",
-      "value": 206250,
-      "shares": 100610,
+      "value": 125001,
+      "shares": 60976,
       "date": "2026-02-11"
     }
   ],

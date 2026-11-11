@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:22.728Z",
+  "updated_at": "2026-11-11T23:05:22.864Z",
   "source": "Yahoo Finance",
   "symbol": "KURA",
   "summary": "Kura Oncology, Inc., a clinical-stage biopharmaceutical company, develops medicines for the treatment of cancer. The company's first commercial product, KOMZIFTI (ziftomenib), a potent, selective, reversible and oral small molecule menin inhibitor; Darlifarnib, a Phase 1 first-in-human FIT-001 trial which includes multiple cohorts to evaluate darlifarnib in combination with other targeted therapies in large solid tumor indications; and KO-7246, a next-generation menin inhibitor, for use in diabetes and cardiometabolic disorders and additional next-generation menin inhibitors for use in combination with other therapies in solid tumors. The company is headquartered in San Diego, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-10",
   "earnings_estimated": false,
   "earnings_call": "2026-11-10",
-  "eps_estimate": -0.81091,
+  "eps_estimate": -0.734,
   "analysts": {
     "strong_buy": 3,
     "buy": 12,
@@ -51,16 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "1Q2025",
-      "revenue": 14108000,
-      "earnings": -57429000
-    },
-    {
-      "q": "2Q2025",
-      "revenue": 15288000,
-      "earnings": -66122000
-    },
-    {
       "q": "3Q2025",
       "revenue": 20750000,
       "earnings": -74116000
@@ -69,13 +59,23 @@
       "q": "4Q2025",
       "revenue": 17336000,
       "earnings": -80999000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 20874000,
+      "earnings": -68327000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 22839000,
+      "earnings": -70215000
     }
   ],
   "growth": {
-    "q0": 0.046,
-    "q1": 0.1433,
-    "y0": -0.0066000004,
-    "y1": 0.26770002
+    "q0": 0.2022,
+    "q1": null,
+    "y0": 0.0126,
+    "y1": 0.2468
   },
   "ratings": [
     {
@@ -230,28 +230,22 @@
     "net_pct": -2.6
   },
   "extras": {
-    "beta": 0.532,
-    "enterprise_value": 178861888,
-    "ev_ebitda": -0.565,
-    "ev_revenue": 2.316,
-    "float_shares": 70528868,
-    "short_shares": 14319826,
-    "short_pct_float": 16.52,
-    "short_ratio": 7.97,
+    "beta": null,
+    "enterprise_value": null,
+    "ev_ebitda": null,
+    "ev_revenue": null,
+    "float_shares": 70028716,
+    "short_shares": 12640858,
+    "short_pct_float": 14.59,
+    "short_ratio": 7.57,
     "last_split": null,
     "last_split_date": null
   },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": null,
-  "inst_count": 308,
+  "inst_count": 311,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.67578,
-      "actual": -0.85,
-      "surprise_pct": -25.78
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.48778,
@@ -263,6 +257,12 @@
       "estimate": -0.87556,
       "actual": -0.77,
       "surprise_pct": 12.06
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.81091,
+      "actual": -0.78,
+      "surprise_pct": 3.81
     }
   ],
   "insiders": [

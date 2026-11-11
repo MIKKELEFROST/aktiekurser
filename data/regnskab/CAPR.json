@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:22.079Z",
+  "updated_at": "2026-11-11T23:05:22.134Z",
   "source": "Yahoo Finance",
   "symbol": "CAPR",
   "summary": "Capricor Therapeutics, Inc., a clinical-stage biotechnology company, engages in the development of transformative cell and exosome-based therapeutics for treating duchenne muscular dystrophy (DMD) and other diseases with unmet medical needs in the United States. Its lead product candidate is the Deramiocel, an allogeneic cardiosphere-derived cells, which is in phase 3 clinical trial for the treatment of DMD. The company also develops Exosome protein-based vaccine, which is in preclinical trial to treat SARS-CoV-2; StealthX Exosome Platform, and exosome platform program consists of engineered exosomes for vaccine and therapeutic development and is in preclinical trial. In addition, it engages in developing StealthX, an engineered exosome-based vaccine candidate, under phase 1 clinical study for a range of therapeutic applications, including targeted RNA, protein, and small molecule therapeutics to treat or prevent a variety of diseases; It has license agreement with Johns Hopkins University, University of Rome License, and Cedars-Sinai Medical Center to develop and commercialize licensed products and licensed services under the licensed patent rights in all fields and a nonexclusive right to the know-how; Cell Line License Agreement with Life Technologies for the development of exosomes platform. The company was founded in 2005 and is headquartered in San Diego, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-10",
   "earnings_estimated": false,
   "earnings_call": "2026-11-10",
-  "eps_estimate": -0.40875,
+  "eps_estimate": -0.0825,
   "analysts": {
     "strong_buy": 1,
     "buy": 3,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 0,
-      "earnings": -25910790
-    },
-    {
       "q": "3Q2025",
       "revenue": 0,
       "earnings": -24570650
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 0,
       "earnings": -40733650
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 0,
+      "earnings": -42656100
     }
   ],
   "growth": {
-    "q0": 0.24309999,
-    "q1": 0.15439999,
+    "q0": 0.8669,
+    "q1": null,
     "y0": 0.35740003,
     "y1": 0.0008
   },
   "ratings": [
+    {
+      "date": "2026-11-11",
+      "firm": "Jones Trading",
+      "from": "Hold",
+      "to": "Buy",
+      "action": "up"
+    },
     {
       "date": "2026-09-14",
       "firm": "B. Riley Securities",
@@ -140,13 +147,6 @@
       "from": "Buy",
       "to": "Buy",
       "action": "main"
-    },
-    {
-      "date": "2026-03-13",
-      "firm": "Piper Sandler",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "reit"
     }
   ],
   "holders": [
@@ -231,27 +231,21 @@
   },
   "extras": {
     "beta": 0.767,
-    "enterprise_value": 425779616,
-    "ev_ebitda": -3.2,
+    "enterprise_value": 368803424,
+    "ev_ebitda": -2.772,
     "ev_revenue": null,
     "float_shares": 45545503,
-    "short_shares": 19860451,
-    "short_pct_float": 37.71,
-    "short_ratio": 5.5,
+    "short_shares": 18765089,
+    "short_pct_float": 35.63,
+    "short_ratio": 5.24,
     "last_split": "1:10",
     "last_split_date": "2019-06-05"
   },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 242,
+  "inst_count": 236,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.54143,
-      "actual": -0.54,
-      "surprise_pct": 0.26
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.55143,
@@ -263,6 +257,12 @@
       "estimate": -0.57556,
       "actual": -0.7,
       "surprise_pct": -21.62
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.40875,
+      "actual": -0.73,
+      "surprise_pct": -78.59
     }
   ],
   "insiders": [
@@ -276,15 +276,6 @@
       "date": "2026-06-25"
     },
     {
-      "name": "KRASNEY KAREN",
-      "role": "General Counsel",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 3.18 per share.",
-      "value": 76638,
-      "shares": 24100,
-      "date": "2026-06-25"
-    },
-    {
       "name": "BERGMANN ANTHONY",
       "role": "Chief Financial Officer",
       "kind": "sell",
@@ -294,6 +285,15 @@
       "date": "2026-06-25"
     },
     {
+      "name": "KRASNEY KAREN",
+      "role": "General Counsel",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 3.18 per share.",
+      "value": 76638,
+      "shares": 24100,
+      "date": "2026-06-25"
+    },
+    {
       "name": "BERGMANN ANTHONY",
       "role": "Chief Financial Officer",
       "kind": "other",
@@ -305,6 +305,15 @@
     {
       "name": "KRASNEY KAREN",
       "role": "General Counsel",
+      "kind": "sell",
+      "text": "Sale at price 30.00 per share.",
+      "value": 27000,
+      "shares": 900,
+      "date": "2026-06-24"
+    },
+    {
+      "name": "BERGMANN ANTHONY",
+      "role": "Chief Financial Officer",
       "kind": "sell",
       "text": "Sale at price 30.00 per share.",
       "value": 27000,
@@ -317,15 +326,6 @@
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 3.18 per share.",
       "value": 2862,
-      "shares": 900,
-      "date": "2026-06-24"
-    },
-    {
-      "name": "BERGMANN ANTHONY",
-      "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 30.00 per share.",
-      "value": 27000,
       "shares": 900,
       "date": "2026-06-24"
     },

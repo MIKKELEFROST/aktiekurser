@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T00:26:50.121Z",
+  "updated_at": "2026-11-11T23:05:22.915Z",
   "source": "Yahoo Finance",
   "symbol": "LPA",
   "summary": "Logistic Properties of the Americas develops, owns, manages, and operates industrial and logistics real estate properties in Costa Rica, Colombia, Peru, and Mexico. It serves third party logistics, retailer, consumer goods distribution, and other industries. Logistic Properties of the Americas is headquartered in San José, Costa Rica.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-10",
   "earnings_estimated": false,
   "earnings_call": "2026-11-11",
-  "eps_estimate": 0.07,
+  "eps_estimate": 0,
   "analysts": {
     "strong_buy": 1,
     "buy": 0,
@@ -36,13 +36,18 @@
       "q": "2Q2026",
       "revenue": 14742820,
       "earnings": 12733410
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 15375610,
+      "earnings": 2933200
     }
   ],
   "growth": {
     "q0": null,
     "q1": null,
     "y0": null,
-    "y1": 1.2540001
+    "y1": 1.2692
   },
   "ratings": [],
   "holders": [
@@ -82,13 +87,6 @@
       "date": "2026-06-30"
     },
     {
-      "name": "IEQ Capital, LLC",
-      "kind": "institution",
-      "pct": 0.06,
-      "shares": 17452,
-      "date": "2026-06-30"
-    },
-    {
       "name": "Blackrock Inc.",
       "kind": "institution",
       "pct": 0.05,
@@ -110,11 +108,18 @@
       "date": "2026-06-30"
     },
     {
-      "name": "FMR, LLC",
+      "name": "IEQ Capital, LLC",
+      "kind": "institution",
+      "pct": 0.04,
+      "shares": 13048,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "UBS Group AG",
       "kind": "institution",
       "pct": 0.03,
-      "shares": 9546,
-      "date": "2026-06-30"
+      "shares": 10415,
+      "date": "2026-09-30"
     }
   ],
   "insider_net": {
@@ -127,26 +132,32 @@
   },
   "extras": {
     "beta": 5.723,
-    "enterprise_value": 444298080,
-    "ev_ebitda": 14.204,
-    "ev_revenue": 7.971,
+    "enterprise_value": 445883008,
+    "ev_ebitda": 14.255,
+    "ev_revenue": 7.999,
     "float_shares": 5184629,
-    "short_shares": 70723,
-    "short_pct_float": 1.31,
-    "short_ratio": 0.33,
+    "short_shares": 101473,
+    "short_pct_float": 1.88,
+    "short_ratio": 0.48,
     "last_split": null,
     "last_split_date": null
   },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 41,
+  "inst_count": 40,
   "eps_history": [
     {
       "quarter": "2026-06-30",
       "estimate": 0.04,
       "actual": 0.023,
       "surprise_pct": -42.5
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.07,
+      "actual": -0.2388,
+      "surprise_pct": -441.14
     }
   ],
   "insiders": [

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:22.240Z",
+  "updated_at": "2026-11-11T23:05:22.298Z",
   "source": "Yahoo Finance",
   "symbol": "DC",
   "summary": "Dakota Gold Corp. engages in the acquisition, exploration, and development of mineral properties in the United States. The company primarily explores for gold deposits. The company was incorporated in 2017 and is based in Lead, South Dakota.",
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2024",
-      "revenue": 0,
-      "earnings": -9152810
-    },
-    {
       "q": "1Q2025",
       "revenue": 0,
       "earnings": -3745540
@@ -64,11 +59,21 @@
       "q": "1Q2026",
       "revenue": 0,
       "earnings": -8462440
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 0,
+      "earnings": -8349810
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 0,
+      "earnings": -8414960
     }
   ],
   "growth": {
-    "q0": 0.2938,
-    "q1": 0.20549999,
+    "q0": 0.20549999,
+    "q1": 0.1889,
     "y0": 0,
     "y1": 0.1667
   },
@@ -225,28 +230,22 @@
     "net_pct": 1.6
   },
   "extras": {
-    "beta": 1.273,
-    "enterprise_value": 767239936,
-    "ev_ebitda": -20.147,
+    "beta": null,
+    "enterprise_value": 722404992,
+    "ev_ebitda": -19.918,
     "ev_revenue": null,
-    "float_shares": 124104650,
-    "short_shares": 6768770,
-    "short_pct_float": 5.45,
-    "short_ratio": 4.37,
+    "float_shares": 124127580,
+    "short_shares": 6687982,
+    "short_pct_float": 5.38,
+    "short_ratio": 6.3,
     "last_split": null,
     "last_split_date": null
   },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 250,
+  "inst_count": 249,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.02,
-      "actual": -0.09,
-      "surprise_pct": -350
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.11,
@@ -264,6 +263,12 @@
       "estimate": -0.04914,
       "actual": -0.06,
       "surprise_pct": -22.1
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.06356,
+      "actual": -0.06,
+      "surprise_pct": 5.6
     }
   ],
   "insiders": [
@@ -288,18 +293,18 @@
     {
       "name": "GRAFTON JENNIFER",
       "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 6.12 per share.",
-      "value": 611690,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 5.09 per share.",
+      "value": 509000,
       "shares": 100000,
       "date": "2026-08-10"
     },
     {
       "name": "GRAFTON JENNIFER",
       "role": "Director",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 5.09 per share.",
-      "value": 509000,
+      "kind": "sell",
+      "text": "Sale at price 6.12 per share.",
+      "value": 611690,
       "shares": 100000,
       "date": "2026-08-10"
     },

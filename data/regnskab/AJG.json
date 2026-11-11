@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:21.808Z",
+  "updated_at": "2026-11-11T23:05:21.828Z",
   "source": "Yahoo Finance",
   "symbol": "AJG",
   "summary": "Arthur J. Gallagher & Co., together with its subsidiaries, provides insurance and reinsurance brokerage, consulting, and third-party property/casualty claims settlement and administration services to entities and individuals worldwide. The company operates in Brokerage and Risk Management segments. Its Brokerage segment offers retail and wholesale insurance and reinsurance brokerage services; assists retail brokers and other non-affiliated brokers in the placement of specialized and hard-to-place insurance; and acts as a brokerage wholesaler, managing general agent, and managing general underwriter for distributing specialized insurance coverages to underwriting enterprises. This segment performs activities, including marketing, underwriting, issuing policies, collecting premiums, appointing and supervising other agents, paying claims, and negotiating reinsurance; and offers services in the areas of insurance and reinsurance placement, risk of loss management, and management of employer sponsored benefit programs. The Risk Management segment provides contract claim settlement and administration services; and claims management, loss control consulting, and insurance property appraisal services. The company offers its services through a network of correspondent brokers and consultants. It serves commercial, industrial, public, religious, and nonprofit entities, as well as underwriting enterprises. The company was founded in 1927 and is headquartered in Rolling Meadows, Illinois.",
@@ -151,17 +151,17 @@
   ],
   "holders": [
     {
+      "name": "FMR, LLC",
+      "kind": "institution",
+      "pct": 8.22,
+      "shares": 21076184,
+      "date": "2026-09-30"
+    },
+    {
       "name": "Blackrock Inc.",
       "kind": "institution",
       "pct": 7.73,
       "shares": 19822870,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "FMR, LLC",
-      "kind": "institution",
-      "pct": 7.27,
-      "shares": 18645620,
       "date": "2026-06-30"
     },
     {
@@ -223,28 +223,28 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 21,
-    "sells": 7,
-    "bought": 118520,
-    "sold": 70086,
+    "buys": 22,
+    "sells": 8,
+    "bought": 133540,
+    "sold": 85106,
     "net_pct": 2.2
   },
   "extras": {
     "beta": 0.464,
-    "enterprise_value": 84254842880,
-    "ev_ebitda": 18.3,
-    "ev_revenue": 5.343,
+    "enterprise_value": 84780457984,
+    "ev_ebitda": 18.415,
+    "ev_revenue": 5.377,
     "float_shares": 253630880,
-    "short_shares": 7114399,
-    "short_pct_float": 2.81,
-    "short_ratio": 4.9,
+    "short_shares": 7583871,
+    "short_pct_float": 2.99,
+    "short_ratio": 4.7,
     "last_split": "2:1",
     "last_split_date": "2001-01-19"
   },
   "ex_dividend": "2026-12-07",
   "dividend_date": null,
   "payout_ratio": 0.41979998,
-  "inst_count": 1748,
+  "inst_count": 1747,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -273,20 +273,29 @@
   ],
   "insiders": [
     {
+      "name": "PIETRUCHA SUSAN E",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 282.30 per share.",
+      "value": 4240161,
+      "shares": 15020,
+      "date": "2026-11-09"
+    },
+    {
+      "name": "PIETRUCHA SUSAN E",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 86.17 per share.",
+      "value": 1294273,
+      "shares": 15020,
+      "date": "2026-11-09"
+    },
+    {
       "name": "MEAD CHRISTOPHER E.",
       "role": "Officer",
       "kind": "sell",
       "text": "Sale at price 279.72 per share.",
       "value": 2123075,
-      "shares": 7590,
-      "date": "2026-11-02"
-    },
-    {
-      "name": "MEAD CHRISTOPHER E.",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 86.17 per share.",
-      "value": 654030,
       "shares": 7590,
       "date": "2026-11-02"
     },
@@ -297,6 +306,15 @@
       "text": "Sale at price 275.00 - 275.91 per share.",
       "value": 8528401,
       "shares": 30996,
+      "date": "2026-11-02"
+    },
+    {
+      "name": "MEAD CHRISTOPHER E.",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 86.17 per share.",
+      "value": 654030,
+      "shares": 7590,
       "date": "2026-11-02"
     },
     {
@@ -343,24 +361,6 @@
       "value": 1034040,
       "shares": 12000,
       "date": "2026-09-02"
-    },
-    {
-      "name": "MISKEL CHRISTOPHER C.",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 262.00 per share.",
-      "value": 40000,
-      "shares": 152,
-      "date": "2026-09-01"
-    },
-    {
-      "name": "BAY WALTER D",
-      "role": "General Counsel",
-      "kind": "sell",
-      "text": "Sale at price 270.08 per share.",
-      "value": 3240972,
-      "shares": 12000,
-      "date": "2026-08-24"
     }
   ],
   "dividends": [

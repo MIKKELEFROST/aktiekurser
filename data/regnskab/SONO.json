@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-11-10T22:04:23.250Z",
+  "updated_at": "2026-11-11T23:05:23.468Z",
   "source": "Yahoo Finance",
   "symbol": "SONO",
   "summary": "Sonos, Inc., together with its subsidiaries, designs, develops, manufactures, and sells audio products and services in the Americas, Europe, the Middle East, Africa, and the Asia Pacific. The company offers wireless, portable, plug-in, and home theater speakers; and headphones, soundbars, components, and accessories. It offers its products through physical stores, websites, online retailers, and custom installers. The company was formerly known as Rincon Audio, Inc. and changed its name to Sonos, Inc. in May 2004. Sonos, Inc. was incorporated in 2002 and is based in Santa Barbara, California.",
   "industry": "Consumer Electronics",
   "website": "https://www.sonos.com",
-  "employees": 1404,
+  "employees": null,
   "ceo": "Mr. Thomas  Conrad",
-  "next_earnings": "2026-11-10",
-  "earnings_estimated": false,
+  "next_earnings": "2027-02-02",
+  "earnings_estimated": true,
   "earnings_call": "2026-11-10",
-  "eps_estimate": 0.05,
+  "eps_estimate": 0.6,
   "analysts": {
     "strong_buy": 0,
     "buy": 3,
@@ -24,12 +24,6 @@
   "target_low": 15.5,
   "target_analysts": 4,
   "statements": [
-    {
-      "year": "2022",
-      "revenue": 1752336000,
-      "net": 67383000,
-      "margin": 3.8
-    },
     {
       "year": "2023",
       "revenue": 1655255000,
@@ -47,14 +41,15 @@
       "revenue": 1443276000,
       "net": -61144000,
       "margin": -4.2
+    },
+    {
+      "year": "2026",
+      "revenue": 1546890000,
+      "net": 89600000,
+      "margin": 5.8
     }
   ],
   "quarterly": [
-    {
-      "q": "3Q2025",
-      "revenue": 287900000,
-      "earnings": -37858000
-    },
     {
       "q": "4Q2025",
       "revenue": 545662000,
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 375260000,
       "earnings": 29853000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 344441000,
+      "earnings": -5164000
     }
   ],
   "growth": {
-    "q0": 1.8333,
-    "q1": -0.3548,
-    "y0": 0.90620005,
-    "y1": 0.069699995
+    "q0": -0.3548,
+    "q1": 2,
+    "y0": 0.061,
+    "y1": 0.5172
   },
   "ratings": [
     {
@@ -223,35 +223,29 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 8,
+    "buys": 10,
     "sells": 3,
-    "bought": 352638,
+    "bought": 671358,
     "sold": 96476,
-    "net_pct": 13.1
+    "net_pct": 32.2
   },
   "extras": {
-    "beta": 1.941,
-    "enterprise_value": 1807977600,
-    "ev_ebitda": 16.232,
-    "ev_revenue": 1.213,
-    "float_shares": 98157978,
-    "short_shares": 12539614,
-    "short_pct_float": 17.62,
-    "short_ratio": 5.81,
+    "beta": null,
+    "enterprise_value": 1822956672,
+    "ev_ebitda": 13.305,
+    "ev_revenue": 1.178,
+    "float_shares": 98019222,
+    "short_shares": 16498578,
+    "short_pct_float": 23.19,
+    "short_ratio": 10.43,
     "last_split": null,
     "last_split_date": null
   },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 430,
+  "inst_count": 432,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.05,
-      "actual": -0.06,
-      "surprise_pct": -220
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.68,
@@ -269,17 +263,32 @@
       "estimate": 0.2,
       "actual": 0.27,
       "surprise_pct": 35
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.05,
+      "actual": 0.04,
+      "surprise_pct": -20
     }
   ],
   "insiders": [
     {
-      "name": "BOONE KAREN",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 18.12 - 18.13 per share.",
-      "value": 847636,
-      "shares": 46766,
-      "date": "2026-09-25"
+      "name": "LAZARUS EDWARD P",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 84397,
+      "date": "2026-11-06"
+    },
+    {
+      "name": "CASEY SAORI",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 234323,
+      "date": "2026-11-06"
     },
     {
       "name": "BOONE KAREN",
@@ -288,6 +297,15 @@
       "text": "Conversion of Exercise of derivative security at price 13.56 per share.",
       "value": 430747,
       "shares": 31766,
+      "date": "2026-09-25"
+    },
+    {
+      "name": "BOONE KAREN",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 18.12 - 18.13 per share.",
+      "value": 847636,
+      "shares": 46766,
       "date": "2026-09-25"
     },
     {
@@ -329,15 +347,6 @@
     {
       "name": "GENACHOWSKI JULIUS M",
       "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 16.50 - 17.00 per share.",
-      "value": 665142,
-      "shares": 39710,
-      "date": "2026-07-29"
-    },
-    {
-      "name": "GENACHOWSKI JULIUS M",
-      "role": "Director",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 13.56 per share.",
       "value": 538468,
@@ -345,22 +354,13 @@
       "date": "2026-07-29"
     },
     {
-      "name": "CONRAD THOMAS",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 81653,
-      "date": "2026-07-22"
-    },
-    {
-      "name": "LAZARUS EDWARD P",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 42982,
-      "date": "2026-05-15"
+      "name": "GENACHOWSKI JULIUS M",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 16.50 - 17.00 per share.",
+      "value": 665142,
+      "shares": 39710,
+      "date": "2026-07-29"
     }
   ],
   "dividends": [],

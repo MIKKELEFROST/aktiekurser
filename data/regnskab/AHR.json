@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:21.767Z",
+  "updated_at": "2026-11-11T23:05:21.821Z",
   "source": "Yahoo Finance",
   "symbol": "AHR",
   "summary": "American Healthcare REIT, Inc., a Maryland-based self-managed REIT, owns and operates a diversified portfolio of clinical healthcare real estate across the U.S., U.K., and the Isle of Man. Its focus includes senior housing, skilled nursing facilities (SNFs), outpatient medical (OM) buildings, and other healthcare-related properties. The company utilizes a fully integrated management platform and operates senior housing under the RIDEA structure. In addition to owning and operating properties, it has originated and acquired secured loans and may pursue other real estate-related investments opportunistically. The REIT seeks income-generating assets and selectively develops healthcare properties. It has elected to be taxed as a REIT under the U.S. Internal Revenue Code and intends to maintain compliance with REIT requirements. American Healthcare REIT, Inc. is based in Irvine, United States.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-06",
-  "eps_estimate": 0.2,
+  "eps_estimate": null,
   "analysts": {
     "strong_buy": 6,
     "buy": 10,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.39180002,
+    "q0": null,
     "q1": 0.5839,
     "y0": null,
     "y1": null
   },
   "ratings": [
+    {
+      "date": "2026-11-11",
+      "firm": "UBS",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-11-10",
       "firm": "Citigroup",
@@ -139,13 +146,6 @@
       "firm": "Truist Securities",
       "from": "Buy",
       "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-14",
-      "firm": "RBC Capital",
-      "from": "Outperform",
-      "to": "Outperform",
       "action": "main"
     }
   ],
@@ -224,27 +224,27 @@
   "insider_net": {
     "period": "6m",
     "buys": 9,
-    "sells": 5,
+    "sells": 6,
     "bought": 72550,
-    "sold": 33000,
-    "net_pct": 2.9
+    "sold": 35500,
+    "net_pct": 2.7
   },
   "extras": {
     "beta": 0.791,
-    "enterprise_value": 15092450304,
-    "ev_ebitda": 30.388,
-    "ev_revenue": 5.645,
-    "float_shares": 230536780,
-    "short_shares": 33178088,
-    "short_pct_float": 16.15,
-    "short_ratio": 9.67,
+    "enterprise_value": 15192240128,
+    "ev_ebitda": 30.589,
+    "ev_revenue": 5.682,
+    "float_shares": 230539101,
+    "short_shares": 33679925,
+    "short_pct_float": 16.39,
+    "short_ratio": 10.62,
     "last_split": null,
     "last_split_date": null
   },
   "ex_dividend": "2026-09-30",
   "dividend_date": null,
   "payout_ratio": 2.0408,
-  "inst_count": 796,
+  "inst_count": 799,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -273,6 +273,15 @@
   ],
   "insiders": [
     {
+      "name": "ESTES SCOTT A",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 59.32 per share.",
+      "value": 148300,
+      "shares": 2500,
+      "date": "2026-11-10"
+    },
+    {
       "name": "FOSTER MARK E.",
       "role": "Officer",
       "kind": "sell",
@@ -294,18 +303,18 @@
       "name": "PROSKY DANNY",
       "role": "Director",
       "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 2594,
+      "text": null,
+      "value": null,
+      "shares": 51798,
       "date": "2026-07-21"
     },
     {
       "name": "PROSKY DANNY",
       "role": "Director",
       "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 51798,
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 2594,
       "date": "2026-07-21"
     },
     {
@@ -316,6 +325,15 @@
       "value": 1267402,
       "shares": 25000,
       "date": "2026-06-26"
+    },
+    {
+      "name": "FOSTER MARK E.",
+      "role": "General Counsel",
+      "kind": "sell",
+      "text": "Sale at price 48.58 per share.",
+      "value": 121450,
+      "shares": 2500,
+      "date": "2026-06-24"
     },
     {
       "name": "ESTES SCOTT A",
@@ -337,24 +355,6 @@
     },
     {
       "name": "O'QUINN MARVIN R",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 2594,
-      "date": "2026-06-24"
-    },
-    {
-      "name": "HURLEY DIANNE",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 2594,
-      "date": "2026-06-24"
-    },
-    {
-      "name": "RICHARDSON VALERIE",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

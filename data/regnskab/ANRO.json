@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T22:04:21.862Z",
+  "updated_at": "2026-11-11T23:05:21.890Z",
   "source": "Yahoo Finance",
   "symbol": "ANRO",
   "summary": "Alto Neuroscience, Inc. operates as a clinical-stage biopharmaceutical company in the United States. The company's product pipeline includes ALTO-100, which is in Phase 2b clinical trial for the treatment of patients with bipolar depression (BPD). It also develops ALTO-300, a small molecule melatonergic agonist and serotonergic antagonist with antidepressant properties, which is in Phase 2b clinical trial to treat patients with major depressive disorder (MDD); ALTO-101, a novel small molecule phosphodiesterase 4 inhibitor that is in Phase 2 proof-of-concept (POC) trial for the treatment of cognitive impairment associated with schizophrenia; ALTO-203, a novel small-molecule histamine H3 receptor inverse agonist, which is in Phase 2 POC trial to treat patients with MDD and higher levels of anhedonia; ALTO-202, an investigational orally bioavailable antagonist of the GluN2B subunit of the NMDA receptor that is in Phase 1 clinical trial for the treatment of MDD; and ALTO-208, a fixed-dose combination of pramipexole and aprepitant, an antiemetic, neurokinin-1 (NK-1) receptor antagonist for patients with Parkinson's disease for patients with Parkinson's disease. The company was incorporated in 2019 and is headquartered in Mountain View, California.",
@@ -7,10 +7,10 @@
   "website": "https://www.altoneuroscience.com",
   "employees": 68,
   "ceo": "Dr. Amit  Etkin M.D., Ph.D.",
-  "next_earnings": "2026-11-11",
-  "earnings_estimated": true,
+  "next_earnings": "2026-11-10",
+  "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": -0.72167,
+  "eps_estimate": -0.56,
   "analysts": {
     "strong_buy": 0,
     "buy": 10,
@@ -51,16 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 0,
-      "earnings": -17706000
-    },
-    {
-      "q": "3Q2025",
-      "revenue": 0,
-      "earnings": -14181000
-    },
-    {
       "q": "4Q2025",
       "revenue": 0,
       "earnings": -16182000
@@ -69,15 +59,32 @@
       "q": "1Q2026",
       "revenue": 0,
       "earnings": -26237000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 0,
+      "earnings": -27638000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 0,
+      "earnings": -25124000
     }
   ],
   "growth": {
-    "q0": -0.38779998,
-    "q1": -0.6518,
+    "q0": -0.24440001,
+    "q1": 0.0813,
     "y0": null,
-    "y1": -0.1449
+    "y1": -0.2441
   },
   "ratings": [
+    {
+      "date": "2026-11-11",
+      "firm": "BTIG",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "reit"
+    },
     {
       "date": "2026-10-19",
       "firm": "HC Wainwright & Co.",
@@ -140,13 +147,6 @@
       "from": "Outperform",
       "to": "Outperform",
       "action": "main"
-    },
-    {
-      "date": "2026-04-02",
-      "firm": "HC Wainwright & Co.",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "reit"
     }
   ],
   "holders": [
@@ -230,28 +230,22 @@
     "net_pct": null
   },
   "extras": {
-    "beta": 1.446,
-    "enterprise_value": 870491520,
-    "ev_ebitda": -9.939,
+    "beta": null,
+    "enterprise_value": null,
+    "ev_ebitda": null,
     "ev_revenue": null,
-    "float_shares": 29594433,
-    "short_shares": 5204407,
-    "short_pct_float": 15.54,
-    "short_ratio": 7.5,
+    "float_shares": 24091711,
+    "short_shares": 5682860,
+    "short_pct_float": 16.97,
+    "short_ratio": 9.03,
     "last_split": null,
     "last_split_date": null
   },
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": null,
-  "inst_count": 173,
+  "inst_count": 174,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.64,
-      "actual": -0.52,
-      "surprise_pct": 18.75
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.51,
@@ -269,6 +263,12 @@
       "estimate": -0.77333,
       "actual": -0.65,
       "surprise_pct": 15.95
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.72167,
+      "actual": -0.54,
+      "surprise_pct": 25.17
     }
   ],
   "insiders": [
