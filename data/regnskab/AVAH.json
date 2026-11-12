@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T23:05:21.954Z",
+  "updated_at": "2026-11-12T22:41:28.960Z",
   "source": "Yahoo Finance",
   "symbol": "AVAH",
   "summary": "Aveanna Healthcare Holdings Inc., a diversified home care platform company, provides pediatric and adult healthcare services in the United States. Its patient-centered care delivery platform allows patients to remain in their homes and minimizes the overutilization of high-cost care settings, such as hospitals or skilled nursing facilities. The company operates through three segments: Private Duty Services (PDS), Home Health & Hospice (HHH), and Medical Solutions (MS). The PDS segment offers private duty nursing (PDN) services, which include in-home skilled nursing services to medically complex children and adults; nursing services in school settings in which its caregivers accompany patients to school; services to patients in its pediatric day healthcare centers; and non-clinical care, including support services and personal care services; and in-clinic and home-based therapy services, such as physical, occupational, and speech services. The HHH segment provides home health services, including in-home skilled nursing services; physical, occupational, and speech therapy services; and medical social and aide services, as well as hospice services for patients and their families when a life-limiting illness no longer responds to cure-oriented treatments. The MS segment offers enteral nutrition supplies and other products, including formulas, supplies, and pumps to adults and children delivered on a periodic or as-needed basis. The company was incorporated in 2016 and is headquartered in Atlanta, Georgia.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-12",
   "earnings_estimated": false,
   "earnings_call": "2026-11-12",
-  "eps_estimate": 0.2074,
+  "eps_estimate": 0.21419,
   "analysts": {
     "strong_buy": 2,
     "buy": 6,
@@ -51,16 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 589553000,
-      "earnings": 27025000
-    },
-    {
-      "q": "3Q2025",
-      "revenue": 621942000,
-      "earnings": 14064000
-    },
-    {
       "q": "4Q2025",
       "revenue": 662480000,
       "earnings": 178752000
@@ -69,11 +59,21 @@
       "q": "1Q2026",
       "revenue": 647915000,
       "earnings": 41653000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 670483000,
+      "earnings": 40293000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 695540000,
+      "earnings": 45451000
     }
   ],
   "growth": {
-    "q0": 0.3827,
-    "q1": 0.2599,
+    "q0": 0.2599,
+    "q1": 0.1607,
     "y0": 0.3737,
     "y1": 0.1012
   },
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 1,
-    "sells": 16,
+    "sells": 17,
     "bought": 75000,
-    "sold": 79871744,
-    "net_pct": -86.6
+    "sold": 94617824,
+    "net_pct": -88.5
   },
   "extras": {
     "beta": 2.009,
-    "enterprise_value": 4274378752,
-    "ev_ebitda": 13.734,
-    "ev_revenue": 1.642,
+    "enterprise_value": 4252556800,
+    "ev_ebitda": 13.664,
+    "ev_revenue": 1.634,
     "float_shares": 104420307,
     "short_shares": 7255556,
     "short_pct_float": 8.09,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 324,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.1305,
-      "actual": 0.15,
-      "surprise_pct": 14.94
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.15645,
@@ -269,6 +263,12 @@
       "estimate": 0.16718,
       "actual": 0.22,
       "surprise_pct": 31.59
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.2074,
+      "actual": 0.23,
+      "surprise_pct": 10.9
     }
   ],
   "insiders": [
@@ -297,6 +297,15 @@
       "text": "Sale at price 11.50 per share.",
       "value": 192625023,
       "shares": 16750002,
+      "date": "2026-08-21"
+    },
+    {
+      "name": "J.H. WHITNEY EQUITY PARTNERS VII, L.L.C.",
+      "role": "Beneficial Owner of more than 10% of a Class of Security",
+      "kind": "sell",
+      "text": "Sale at price 11.50 per share.",
+      "value": 169579886,
+      "shares": 14746077,
       "date": "2026-08-21"
     },
     {
@@ -351,15 +360,6 @@
       "text": "Sale at price 8.01 per share.",
       "value": 24030000,
       "shares": 3000000,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "J.H. WHITNEY CAPITAL PARTNERS, LLC",
-      "role": "Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "sell",
-      "text": "Sale at price 8.01 per share.",
-      "value": 19376470,
-      "shares": 2419035,
       "date": "2026-06-30"
     }
   ],

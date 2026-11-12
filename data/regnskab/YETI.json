@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T23:05:23.721Z",
+  "updated_at": "2026-11-12T22:41:31.108Z",
   "source": "Yahoo Finance",
   "symbol": "YETI",
   "summary": "YETI Holdings, Inc. designs, retails, and distributes outdoor products under the YETI brand name in the United States, Canada, Australia, New Zealand, Europe, and Japan. It offers hard coolers, including the YETI Tundra, YETI Roadie, YETI V Series hard coolers, YETI TANK ice bucket, and YETI Silo 6G water cooler, as well as related accessories comprising locks, dry baskets, beverage holders, and dividers. The company also provides soft cooler bags, such as under the Hopper collection and Daytrip collection; duffel bags, backpacks, luggage, and packing cubes comprising the Panga collection, Crossroads collection, Camino Caryall, SideKick Dry gear case, Cayo collection, and Ranchero collection; cargo and storage solutions that include the LoadOut GoBox, LoadOut bucket, and LoadOut swivel seat names; and outdoor living products, which consist of Trailhead camp chair, Lowlands blanket, Boomer dog bowls, Hondo beach chair, can crusher, and the YETI Fire Pit. In addition, it offers bottles and jugs under the Rambler, Yonder, and Silo collections; cups, mugs, and tumblers under the Rambler collection; Rambler products, including tableware, coffeeware, barware, and containers, as well as insulated bowls and food jars, ceramic-lined mugs and stackable cups, French presses, pitchers, wine chillers, wine tumblers, the beverage bucket, colsters, and cocktail shakers; and cookware. Further, the company provides apparel, such as hats, shirts, and sweatshirts, as well as ice substitutes and other YETI branded products. It sells its products through its direct-to-consumer channel, including websites, corporate sales programs, and retail stores, as well as through its wholesale channel. YETI Holdings, Inc. was founded in 2006 and is headquartered in Austin, Texas.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-12",
   "earnings_estimated": false,
   "earnings_call": "2026-11-12",
-  "eps_estimate": 0.84181,
+  "eps_estimate": 1.2188,
   "analysts": {
     "strong_buy": 2,
     "buy": 10,
@@ -51,16 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 445892000,
-      "earnings": 51151000
-    },
-    {
-      "q": "3Q2025",
-      "revenue": 487766000,
-      "earnings": 39400000
-    },
-    {
       "q": "4Q2025",
       "revenue": 583708000,
       "earnings": 58227000
@@ -69,11 +59,21 @@
       "q": "1Q2026",
       "revenue": 380414000,
       "earnings": 9851000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 483868000,
+      "earnings": 71317000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 509417000,
+      "earnings": 44373000
     }
   ],
   "growth": {
-    "q0": 0.38,
-    "q1": 0.32479998,
+    "q0": 0.32479998,
+    "q1": 0.3463,
     "y0": 0.1981,
     "y1": 0.1278
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.63,
-    "enterprise_value": 3460919296,
-    "ev_ebitda": 11.849,
-    "ev_revenue": 1.788,
+    "enterprise_value": 3316401664,
+    "ev_ebitda": 11.354,
+    "ev_revenue": 1.713,
     "float_shares": 72067677,
     "short_shares": 8117231,
     "short_pct_float": 14.52,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 623,
+  "inst_count": 624,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.58384,
-      "actual": 0.61,
-      "surprise_pct": 4.48
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.88342,
@@ -269,45 +263,15 @@
       "estimate": 0.54526,
       "actual": 0.67,
       "surprise_pct": 22.88
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.84181,
+      "actual": 0.91,
+      "surprise_pct": 8.1
     }
   ],
   "insiders": [
-    {
-      "name": "GIBEAU FRANK DONALD",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 3719,
-      "date": "2026-05-07"
-    },
-    {
-      "name": "AXELROD ELIZABETH L",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 3719,
-      "date": "2026-05-07"
-    },
-    {
-      "name": "ARENS ARNE MAGNUS",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 3719,
-      "date": "2026-05-07"
-    },
-    {
-      "name": "WELANDER JAN MAGNUS",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 6238,
-      "date": "2026-05-07"
-    },
     {
       "name": "MCCOY DUSTAN E",
       "role": "Director",
@@ -342,6 +306,42 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 6538,
+      "date": "2026-05-07"
+    },
+    {
+      "name": "GIBEAU FRANK DONALD",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 3719,
+      "date": "2026-05-07"
+    },
+    {
+      "name": "AXELROD ELIZABETH L",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 3719,
+      "date": "2026-05-07"
+    },
+    {
+      "name": "ARENS ARNE MAGNUS",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 3719,
+      "date": "2026-05-07"
+    },
+    {
+      "name": "WELANDER JAN MAGNUS",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 6238,
       "date": "2026-05-07"
     },
     {

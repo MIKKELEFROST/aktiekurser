@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T23:05:23.848Z",
+  "updated_at": "2026-11-12T22:41:30.899Z",
   "source": "Yahoo Finance",
   "symbol": "TSHA",
   "summary": "Taysha Gene Therapies, Inc., a clinical-stage biotechnology company, focuses on developing and commercializing adeno-associated virus-based gene therapies for the treatment of severe monogenic diseases of the central nervous system. The company primarily develops TSHA-120 for the treatment of giant axonal neuropathy; TSHA-102 for the treatment of Rett syndrome; TSHA-121 for the treatment of CLN7 disease; TSHA-118 for the treatment of CLN1 disease; TSHA-105 for the treatment of SLC13A5 deficiency; TSHA-113 for the treatment of tauopathies; TSHA-106 for the treatment of angelman syndrome; and TSHA-114 for the treatment of fragile X syndrome. The company has research, collaboration, and license agreement with The University of Texas Southwestern Medical Center. Taysha Gene Therapies, Inc. was incorporated in 2019 and is headquartered in Dallas, Texas.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-12",
   "earnings_estimated": false,
   "earnings_call": "2026-11-12",
-  "eps_estimate": -0.125,
+  "eps_estimate": -0.1325,
   "analysts": {
     "strong_buy": 3,
     "buy": 10,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 0,
-      "earnings": -32733000
-    },
-    {
       "q": "4Q2025",
       "revenue": 5485000,
       "earnings": -27851000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 0,
       "earnings": -46639000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 0,
+      "earnings": -39128000
     }
   ],
   "growth": {
-    "q0": -0.4289,
-    "q1": -0.8109,
+    "q0": -0.8109,
+    "q1": -0.1041,
     "y0": -0.491,
     "y1": 0.024300002
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.313,
-    "enterprise_value": 994245376,
-    "ev_ebitda": -6.542,
-    "ev_revenue": 181.266,
+    "enterprise_value": 995874560,
+    "ev_ebitda": -6.552,
+    "ev_revenue": 181.563,
     "float_shares": 232619084,
     "short_shares": 53478497,
     "short_pct_float": 16.67,
@@ -246,12 +246,6 @@
   "payout_ratio": 0,
   "inst_count": 282,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.09,
-      "actual": -0.08748,
-      "surprise_pct": 2.8
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.098,
@@ -269,6 +263,12 @@
       "estimate": -0.1075,
       "actual": -0.1316,
       "surprise_pct": -22.42
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.125,
+      "actual": -0.0937,
+      "surprise_pct": 25.04
     }
   ],
   "insiders": [
@@ -320,19 +320,19 @@
     {
       "name": "NAGENDRAN SUKUMAR",
       "role": "President",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 1.71 per share.",
-      "value": 32526,
-      "shares": 19021,
+      "kind": "sell",
+      "text": "Sale at price 4.46 per share.",
+      "value": 892000,
+      "shares": 200000,
       "date": "2026-04-10"
     },
     {
       "name": "NAGENDRAN SUKUMAR",
       "role": "President",
-      "kind": "sell",
-      "text": "Sale at price 4.46 per share.",
-      "value": 892000,
-      "shares": 200000,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 1.71 per share.",
+      "value": 32526,
+      "shares": 19021,
       "date": "2026-04-10"
     },
     {

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T23:05:23.306Z",
+  "updated_at": "2026-11-12T22:41:30.523Z",
   "source": "Yahoo Finance",
   "symbol": "REF",
   "summary": "Reformation Inc. manufactures and sells sustainable women's clothing and accessories in the United States and Internationally. It offers dresses, tops, pants, skirts, shorts, jeans, sweaters, shoes, jumpsuits, two-piece sets, outerwear, sleep and loungewear, swimwear, and accessories. The company also offers wedding collection. It retails its product through website, online channels, and stores, well as through wholesalers and other channels. The company was formerly known as REF Topco, Inc. and changed its name to Reformation Inc. in April 2025. Reformation Inc. was founded in 2009 and is headquartered in Vernon, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.15944,
+  "eps_estimate": 0.17152,
   "analysts": {
     "strong_buy": 2,
     "buy": 6,
@@ -47,9 +47,16 @@
     "q0": null,
     "q1": null,
     "y0": null,
-    "y1": -0.0619
+    "y1": -0.026500002
   },
   "ratings": [
+    {
+      "date": "2026-11-12",
+      "firm": "JP Morgan",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-11-06",
       "firm": "RBC Capital",
@@ -109,13 +116,6 @@
     {
       "date": "2026-08-24",
       "firm": "Guggenheim",
-      "from": null,
-      "to": "Buy",
-      "action": "init"
-    },
-    {
-      "date": "2026-08-24",
-      "firm": "BTIG",
       "from": null,
       "to": "Buy",
       "action": "init"
@@ -203,9 +203,9 @@
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 1382204032,
-    "ev_ebitda": 133.805,
-    "ev_revenue": 2.337,
+    "enterprise_value": 1346165632,
+    "ev_ebitda": 130.316,
+    "ev_revenue": 2.277,
     "float_shares": 15932511,
     "short_shares": 3520022,
     "short_pct_float": null,
@@ -219,12 +219,6 @@
   "inst_count": 53,
   "eps_history": [
     {
-      "quarter": "2026-06-30",
-      "estimate": 0.22282,
-      "actual": 0.2393,
-      "surprise_pct": 7.4
-    },
-    {
       "quarter": "2026-09-30",
       "estimate": 0.10589,
       "actual": 0.0226,
@@ -232,6 +226,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "REFO SCSP",
+      "role": "Beneficial Owner of more than 10% of a Class of Security",
+      "kind": "sell",
+      "text": "Sale at price 13.95 per share.",
+      "value": 2086864,
+      "shares": 149596,
+      "date": "2026-09-01"
+    },
     {
       "name": "AFLALO YAEL",
       "role": "Director and Beneficial Owner of more than 10% of a Class of Security",
@@ -246,54 +249,9 @@
       "role": "Beneficial Owner of more than 10% of a Class of Security",
       "kind": "sell",
       "text": "Sale at price 13.95 per share.",
-      "value": 2086864,
-      "shares": 149596,
-      "date": "2026-09-01"
-    },
-    {
-      "name": "REFO SCSP",
-      "role": "Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "sell",
-      "text": "Sale at price 13.95 per share.",
       "value": 41671426,
       "shares": 2987199,
       "date": "2026-07-31"
-    },
-    {
-      "name": "RAUCH STACEY S",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 9333,
-      "date": "2026-07-29"
-    },
-    {
-      "name": "BORENSTEIN HALI",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 1133332,
-      "date": "2026-07-29"
-    },
-    {
-      "name": "MILLER STEVEN CLIVE",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 9333,
-      "date": "2026-07-29"
-    },
-    {
-      "name": "AFLALO YAEL",
-      "role": "Director and Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "sell",
-      "text": "Sale at price 13.95 per share.",
-      "value": 16796205,
-      "shares": 1204029,
-      "date": "2026-07-29"
     },
     {
       "name": "TCHAKAROV IVAN",
@@ -320,6 +278,42 @@
       "text": null,
       "value": null,
       "shares": 9333,
+      "date": "2026-07-29"
+    },
+    {
+      "name": "COYLE JOHN",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 9333,
+      "date": "2026-07-29"
+    },
+    {
+      "name": "MOORE JOSHUA",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 256999,
+      "date": "2026-07-29"
+    },
+    {
+      "name": "RAUCH STACEY S",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 9333,
+      "date": "2026-07-29"
+    },
+    {
+      "name": "BORENSTEIN HALI",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 1133332,
       "date": "2026-07-29"
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T23:05:22.500Z",
+  "updated_at": "2026-11-12T22:41:29.573Z",
   "source": "Yahoo Finance",
   "symbol": "FLNG",
   "summary": "FLEX LNG Ltd., together with its subsidiaries, engages in the seaborne transportation of liquefied natural gas (LNG) worldwide. As of December 31, 2025, its fleet consists of 13 LNG carriers in operation. The company was incorporated in 2006 and is based in Hamilton, Bermuda.",
@@ -10,18 +10,18 @@
   "next_earnings": "2026-11-11",
   "earnings_estimated": false,
   "earnings_call": "2026-11-11",
-  "eps_estimate": 0.59632,
+  "eps_estimate": 0.62415,
   "analysts": {
     "strong_buy": 0,
     "buy": 0,
-    "hold": 2,
-    "sell": 3,
+    "hold": 3,
+    "sell": 2,
     "strong_sell": 0,
     "total": 5
   },
-  "target_mean": 26.125,
+  "target_mean": 24.875,
   "target_high": 30,
-  "target_low": 24.5,
+  "target_low": 20,
   "target_analysts": 4,
   "statements": [
     {
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.3868,
-    "q1": 0.77419996,
-    "y0": 0.1765,
-    "y1": -0.0179
+    "q0": 0.45150003,
+    "q1": 0.3721,
+    "y0": 0.2417,
+    "y1": -0.13260001
   },
   "ratings": [
+    {
+      "date": "2026-11-12",
+      "firm": "BTIG",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "reit"
+    },
     {
       "date": "2025-08-20",
       "firm": "Jefferies",
@@ -140,13 +147,6 @@
       "from": null,
       "to": "Hold",
       "action": "init"
-    },
-    {
-      "date": "2021-03-26",
-      "firm": "BTIG",
-      "from": "Buy",
-      "to": "Neutral",
-      "action": "down"
     }
   ],
   "holders": [
@@ -230,10 +230,10 @@
     "net_pct": null
   },
   "extras": {
-    "beta": 0.232,
-    "enterprise_value": 2765363968,
-    "ev_ebitda": 11.567,
-    "ev_revenue": 7.671,
+    "beta": null,
+    "enterprise_value": 2764527104,
+    "ev_ebitda": 10.779,
+    "ev_revenue": 7.428,
     "float_shares": 30894861,
     "short_shares": 4684273,
     "short_pct_float": 15.14,
@@ -247,10 +247,10 @@
   "inst_count": 276,
   "eps_history": [
     {
-      "quarter": "2025-12-31",
-      "estimate": 0.54104,
+      "quarter": "2025-09-30",
+      "estimate": 0.46,
       "actual": 0.43,
-      "surprise_pct": -20.52
+      "surprise_pct": -6.52
     },
     {
       "quarter": "2026-03-31",
@@ -259,16 +259,10 @@
       "surprise_pct": -13.62
     },
     {
-      "quarter": "2026-06-30",
-      "estimate": 0.60726,
-      "actual": 0.79,
-      "surprise_pct": 30.09
-    },
-    {
       "quarter": "2026-09-30",
-      "estimate": 0.63553,
+      "estimate": 0.62415,
       "actual": 0.65,
-      "surprise_pct": 2.28
+      "surprise_pct": 4.14
     }
   ],
   "insiders": [

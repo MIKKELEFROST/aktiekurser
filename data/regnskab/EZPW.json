@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T23:05:22.462Z",
+  "updated_at": "2026-11-12T22:41:29.533Z",
   "source": "Yahoo Finance",
   "symbol": "EZPW",
   "summary": "EZCORP, Inc. provides pawn services in the United States, Mexico, and Latin America. It operates through U.S. Pawn, Latin America Pawn, and Other Investments segments. The company retails merchandise, primarily collateral forfeited from pawn lending operations and pre-owned merchandise purchased from customers. It also provides pawn loans collateralized by tangible personal property, jewelry, consumer electronics, tools, sporting goods, and musical instruments. In addition, the company offers EZ+, a web-based application that allow customers to manage their pawn transactions, layaways, and loyalty rewards online. Further, the company operates under the EZPAWN, Value Pawn & Jewelry, Empeño Fácil, Cash Apoyo Efectivo, GuatePrenda, and MaxiEfectivo brands. EZCORP, Inc. was incorporated in 1989 and is headquartered in Austin, Texas.",
@@ -7,10 +7,10 @@
   "website": "https://www.ezcorp.com",
   "employees": 8500,
   "ceo": "Mr. Lachlan P. Given BBus",
-  "next_earnings": "2026-11-11",
-  "earnings_estimated": false,
+  "next_earnings": "2027-02-09",
+  "earnings_estimated": true,
   "earnings_call": "2026-11-12",
-  "eps_estimate": 0.43,
+  "eps_estimate": 0.625,
   "analysts": {
     "strong_buy": 1,
     "buy": 3,
@@ -24,12 +24,6 @@
   "target_low": 36,
   "target_analysts": 5,
   "statements": [
-    {
-      "year": "2022",
-      "revenue": 886225000,
-      "net": 50160000,
-      "margin": 5.7
-    },
     {
       "year": "2023",
       "revenue": 1049041000,
@@ -47,14 +41,15 @@
       "revenue": 1274280000,
       "net": 109613000,
       "margin": 8.6
+    },
+    {
+      "year": "2026",
+      "revenue": 1694710000,
+      "net": 165909000,
+      "margin": 9.8
     }
   ],
   "quarterly": [
-    {
-      "q": "3Q2025",
-      "revenue": 336813000,
-      "earnings": 26704000
-    },
     {
       "q": "4Q2025",
       "revenue": 382019000,
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 418748000,
       "earnings": 38199000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 447062000,
+      "earnings": 34303000
     }
   ],
   "growth": {
-    "q0": 0.2647,
-    "q1": 0.1364,
-    "y0": 0.42130002,
-    "y1": 0.0923
+    "q0": 0.8382,
+    "q1": -0.1034,
+    "y0": null,
+    "y1": null
   },
   "ratings": [
     {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.757,
-    "enterprise_value": 2271678976,
-    "ev_ebitda": 8.801,
-    "ev_revenue": 1.434,
+    "enterprise_value": 2242800640,
+    "ev_ebitda": 8.689,
+    "ev_revenue": 1.415,
     "float_shares": 55703337,
     "short_shares": 12864438,
     "short_pct_float": 28.39,
@@ -247,16 +247,16 @@
   "inst_count": 406,
   "eps_history": [
     {
-      "quarter": "2025-09-30",
-      "estimate": 0.298,
-      "actual": 0.34,
-      "surprise_pct": 14.09
-    },
-    {
       "quarter": "2025-12-31",
       "estimate": 0.426,
       "actual": 0.55,
       "surprise_pct": 29.11
+    },
+    {
+      "quarter": "2025-09-30",
+      "estimate": 0.29667,
+      "actual": 0.34,
+      "surprise_pct": 14.61
     },
     {
       "quarter": "2026-03-31",
@@ -265,10 +265,10 @@
       "surprise_pct": 43.21
     },
     {
-      "quarter": "2026-06-30",
-      "estimate": 0.408,
-      "actual": 0.47,
-      "surprise_pct": 15.2
+      "quarter": "2026-09-30",
+      "estimate": 0.43,
+      "actual": 0.43,
+      "surprise_pct": 0
     }
   ],
   "insiders": [
@@ -327,6 +327,15 @@
       "date": "2026-03-30"
     },
     {
+      "name": "APPEL MATTHEW W",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 25.60 per share.",
+      "value": 170010,
+      "shares": 6641,
+      "date": "2026-03-26"
+    },
+    {
       "name": "TILLETT GARY L",
       "role": "Director",
       "kind": "other",
@@ -346,15 +355,6 @@
     },
     {
       "name": "ESPINOSA PABLO LAGOS",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 25.60 per share.",
-      "value": 170010,
-      "shares": 6641,
-      "date": "2026-03-26"
-    },
-    {
-      "name": "APPEL MATTHEW W",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 25.60 per share.",

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T23:05:21.775Z",
+  "updated_at": "2026-11-12T22:41:28.742Z",
   "source": "Yahoo Finance",
   "symbol": "AAP",
   "summary": "Advance Auto Parts, Inc. provides automotive aftermarket parts. The company offers batteries and battery accessories; belts and hoses; brakes and brake pads; chassis parts; climate control parts; clutches and drive shafts; engines and engine parts; exhaust systems and parts; hub assemblies; ignition components and wires; radiators and cooling parts; starters and alternators; and steering and alignment parts. It also provides air conditioning chemicals and accessories; air fresheners; antifreeze and washer fluid; electrical wire and fuses; electronics; floor mats, seat covers, and interior accessories; hand and specialty tools; lighting products; performance parts; sealants, adhesives, and compounds; tire repair accessories; vent shades, mirrors, and exterior accessories; washes, waxes, and cleaning supplies; and wiper blades. In addition, the company offers air filters; fuel and oil additives; fuel filters; grease and lubricants; motor oil; oil filters; part cleaners and treatments; and transmission fluid. Further, it provides battery and wiper installation; engine light scanning; electrical system testing, including batteries, starters, and alternators; oil and battery recycling; and loaner tool program services. The company serves professional installers and do-it-yourself customers. It operates stores and independently owned branded stores in the United States, Canada, Puerto Rico, the U.S. Virgin Islands, Mexico, and various Caribbean islands primarily under the Advance Auto Parts and Carquest trade brands. The company also offers its products online. The company was founded in 1929 and is based in Raleigh, North Carolina.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-05",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.3355,
+  "eps_estimate": 0.33414,
   "analysts": {
     "strong_buy": 0,
     "buy": 2,
@@ -19,7 +19,7 @@
     "strong_sell": 2,
     "total": 26
   },
-  "target_mean": 48.45,
+  "target_mean": 48.55,
   "target_high": 70,
   "target_low": 32,
   "target_analysts": 20,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": -0.6099,
-    "q1": 0.1758,
-    "y0": 0.282,
-    "y1": 0.2079
+    "q0": -0.6115,
+    "q1": 0.18059999,
+    "y0": 0.28260002,
+    "y1": 0.2053
   },
   "ratings": [
+    {
+      "date": "2026-11-12",
+      "firm": "DA Davidson",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-11-09",
       "firm": "Mizuho",
@@ -139,13 +146,6 @@
       "firm": "Citigroup",
       "from": "Neutral",
       "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-21",
-      "firm": "Goldman Sachs",
-      "from": "Sell",
-      "to": "Sell",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.042,
-    "enterprise_value": 5285151744,
-    "ev_ebitda": 8.497,
-    "ev_revenue": 0.615,
+    "enterprise_value": 5273675776,
+    "ev_ebitda": 8.479,
+    "ev_revenue": 0.613,
     "float_shares": 60126388,
     "short_shares": 9548398,
     "short_pct_float": 25.62,
@@ -273,33 +273,6 @@
   ],
   "insiders": [
     {
-      "name": "HILSON JOAN M",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 46.92 per share.",
-      "value": 3249,
-      "shares": 69,
-      "date": "2026-10-23"
-    },
-    {
-      "name": "SMITH GREGORY L",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 46.92 per share.",
-      "value": 2430,
-      "shares": 51,
-      "date": "2026-10-23"
-    },
-    {
-      "name": "JOHNSON RICHARD A",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 46.92 per share.",
-      "value": 1045,
-      "shares": 22,
-      "date": "2026-10-23"
-    },
-    {
       "name": "LEE EUGENE I JR",
       "role": "Director",
       "kind": "other",
@@ -309,12 +282,12 @@
       "date": "2026-10-23"
     },
     {
-      "name": "FERRARO JOHN FRANCIS",
+      "name": "WINDOM BRENT",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 46.92 per share.",
-      "value": 6649,
-      "shares": 141,
+      "value": 2430,
+      "shares": 51,
       "date": "2026-10-23"
     },
     {
@@ -336,12 +309,12 @@
       "date": "2026-10-23"
     },
     {
-      "name": "WINDOM BRENT",
+      "name": "FERRARO JOHN FRANCIS",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 46.92 per share.",
-      "value": 2430,
-      "shares": 51,
+      "value": 6649,
+      "shares": 141,
       "date": "2026-10-23"
     },
     {
@@ -354,12 +327,39 @@
       "date": "2026-10-23"
     },
     {
+      "name": "JOHNSON RICHARD A",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 46.92 per share.",
+      "value": 1045,
+      "shares": 22,
+      "date": "2026-10-23"
+    },
+    {
+      "name": "SMITH GREGORY L",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 46.92 per share.",
+      "value": 2430,
+      "shares": 51,
+      "date": "2026-10-23"
+    },
+    {
       "name": "HILSON JOAN M",
       "role": "Director",
       "kind": "other",
+      "text": "Stock Award(Grant) at price 46.92 per share.",
+      "value": 3249,
+      "shares": 69,
+      "date": "2026-10-23"
+    },
+    {
+      "name": "LEE EUGENE I JR",
+      "role": "Director",
+      "kind": "other",
       "text": "Stock Award(Grant) at price 55.80 per share.",
-      "value": 3235,
-      "shares": 57,
+      "value": 21671,
+      "shares": 388,
       "date": "2026-07-24"
     }
   ],

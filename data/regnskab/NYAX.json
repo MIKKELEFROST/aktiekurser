@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T23:05:23.152Z",
+  "updated_at": "2026-11-12T22:41:30.319Z",
   "source": "Yahoo Finance",
   "symbol": "NYAX",
   "summary": "Nayax Ltd., a fintech company, designs, develops, and sells integrated POS devices and software for automated self-service customers in-house in the United States, Europe, the United Kingdom, Australia, Israel, and internationally. It offers POS, cashless payments, and charging stations, such as VPOS Touch, Onyx, Nova Market, DOT, Nova C4, Nova C3, EV-Meter, EV Kiosk, Nova 55F, Nova 22, Nova 156, Nova Modu, and Nova Kiosk; management suite and telemetry solutions, Nayax Core Management Suite, MoMa, Vending Management System, Nayax Energy Core, and Retail Management Cloud; marketing, loyalty, and consumer engagement platforms, such as Monyx Wallet and Weezmo; and payments and integrations solutions, including API Suite and Coinbridge. The company serves vending machines, kiosks, self-checkouts, ticketing machines, laundromats, gaming terminals, and EV charging stations. Nayax Ltd. has a strategic alliance with Getnet Payments S.L. The company was incorporated in 2005 and is headquartered in Herzliya, Israel.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-11",
   "earnings_estimated": false,
   "earnings_call": "2026-11-11",
-  "eps_estimate": null,
+  "eps_estimate": 0.28,
   "analysts": {
     "strong_buy": 1,
     "buy": 4,
@@ -72,12 +72,26 @@
     }
   ],
   "growth": {
-    "q0": null,
+    "q0": 1.5135001,
     "q1": null,
     "y0": 0.0802,
     "y1": null
   },
   "ratings": [
+    {
+      "date": "2026-11-12",
+      "firm": "Barclays",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-12",
+      "firm": "UBS",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-08-14",
       "firm": "Keefe, Bruyette & Woods",
@@ -133,20 +147,6 @@
       "from": "Market Perform",
       "to": "Market Perform",
       "action": "main"
-    },
-    {
-      "date": "2025-11-21",
-      "firm": "UBS",
-      "from": "Neutral",
-      "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2025-11-20",
-      "firm": "Keefe, Bruyette & Woods",
-      "from": "Market Perform",
-      "to": "Market Perform",
-      "action": "main"
     }
   ],
   "holders": [],
@@ -159,11 +159,11 @@
     "net_pct": null
   },
   "extras": {
-    "beta": -0.129,
-    "enterprise_value": 1889518976,
-    "ev_ebitda": 55.559,
-    "ev_revenue": 4.169,
-    "float_shares": 16824206,
+    "beta": null,
+    "enterprise_value": 2086397312,
+    "ev_ebitda": 62.349,
+    "ev_revenue": 4.375,
+    "float_shares": 17206393,
     "short_shares": 230861,
     "short_pct_float": 1.04,
     "short_ratio": 9.56,
@@ -176,10 +176,16 @@
   "inst_count": 99,
   "eps_history": [
     {
+      "quarter": "2025-09-30",
+      "estimate": 0.23174,
+      "actual": 0.1114,
+      "surprise_pct": -51.93
+    },
+    {
       "quarter": "2025-12-31",
-      "estimate": 0.25175,
-      "actual": 0.37324,
-      "surprise_pct": 48.26
+      "estimate": 0.24105,
+      "actual": 0.359,
+      "surprise_pct": 48.93
     },
     {
       "quarter": "2026-03-31",

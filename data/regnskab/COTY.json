@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T23:05:22.242Z",
+  "updated_at": "2026-11-12T22:41:29.280Z",
   "source": "Yahoo Finance",
   "symbol": "COTY",
   "summary": "Coty Inc., together with its subsidiaries, manufactures, markets, distributes, and sells branded beauty products in the United States and internationally. It operates through two segments: Prestige and Consumer Beauty. The company provides fragrances, color cosmetics, and skin and body care products. It offers prestige products through prestige retailers, including perfumeries, department stores, e-retailers, direct-to-consumer websites, and duty-free shops under Burberry, Calvin Klein, Chloe, Davidoff, Escada, Etro, Gucci, Hugo Boss, Infiniment Coty Paris, Jil Sander, Joop!, Kylie Cosmetics by Kylie Jenner, Lancaster, Marc Jacobs, Orveda, philosophy, and Tiffany & Co. brands. The company provides beauty products through hypermarkets, supermarkets, drug stores, pharmacies, mid-tier department stores, traditional food and drug retailers, and e-commerce retailers under the Adidas, David Beckham, Bozzano, Bourjois, Bruno Banani, CoverGirl, Jovan, LeGer by Lena Gercke, Max Factor, Mexx, Monange, Nautica, Paixao, Rimmel, Risque, Vera Wang, and Sally Hansen brands. It also sells its products through third-party distributors. Coty Inc. was founded in 1904 and is headquartered in New York, New York. Coty Inc. operates as a subsidiary of JAB Beauty B.V.",
@@ -10,7 +10,7 @@
   "next_earnings": "2027-02-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-05",
-  "eps_estimate": 0.16552,
+  "eps_estimate": 0.16518,
   "analysts": {
     "strong_buy": 0,
     "buy": 0,
@@ -19,8 +19,8 @@
     "strong_sell": 2,
     "total": 17
   },
-  "target_mean": 3.30286,
-  "target_high": 4.46,
+  "target_mean": 3.41,
+  "target_high": 4.5,
   "target_low": 1.5,
   "target_analysts": 14,
   "statements": [
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.1823,
-    "q1": 1.8797001,
-    "y0": 0.6664,
-    "y1": -0.21280001
+    "q0": 0.17989999,
+    "q1": 1.8613,
+    "y0": 0.6725,
+    "y1": -0.2159
   },
   "ratings": [
+    {
+      "date": "2026-11-12",
+      "firm": "Citigroup",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-11-09",
       "firm": "Barclays",
@@ -114,6 +121,13 @@
       "action": "main"
     },
     {
+      "date": "2026-08-20",
+      "firm": "RBC Capital",
+      "from": "Outperform",
+      "to": "Sector Perform",
+      "action": "down"
+    },
+    {
       "date": "2026-05-07",
       "firm": "Citigroup",
       "from": "Neutral",
@@ -133,20 +147,6 @@
       "from": "Outperform",
       "to": "Outperform",
       "action": "reit"
-    },
-    {
-      "date": "2026-04-14",
-      "firm": "Barclays",
-      "from": "Underweight",
-      "to": "Underweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-03-30",
-      "firm": "Deutsche Bank",
-      "from": "Hold",
-      "to": "Hold",
-      "action": "main"
     }
   ],
   "holders": [
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.851,
-    "enterprise_value": 6980615680,
-    "ev_ebitda": 8.973,
-    "ev_revenue": 1.207,
+    "enterprise_value": 6742652928,
+    "ev_ebitda": 8.667,
+    "ev_revenue": 1.166,
     "float_shares": 376932812,
     "short_shares": 39751492,
     "short_pct_float": 9.34,
@@ -273,6 +273,15 @@
   ],
   "insiders": [
     {
+      "name": "ZAFAR AYESHA",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 28150,
+      "date": "2026-10-19"
+    },
+    {
       "name": "BLAZEWICZ KRISTIN",
       "role": "Officer",
       "kind": "other",
@@ -288,15 +297,6 @@
       "text": null,
       "value": null,
       "shares": 67155,
-      "date": "2026-10-19"
-    },
-    {
-      "name": "ZAFAR AYESHA",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 28150,
       "date": "2026-10-19"
     },
     {
@@ -336,25 +336,25 @@
       "date": "2025-12-18"
     },
     {
+      "name": "HARF PETER",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 45000,
+      "date": "2025-11-14"
+    },
+    {
+      "name": "SINGER ROBERT STEVEN",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 25000,
+      "date": "2025-11-14"
+    },
+    {
       "name": "BALLINI BEATRICE",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 25000,
-      "date": "2025-11-14"
-    },
-    {
-      "name": "CREUS JOACHIM",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 25000,
-      "date": "2025-11-14"
-    },
-    {
-      "name": "PARIZE ISABELLE",
       "role": "Director",
       "kind": "other",
       "text": null,

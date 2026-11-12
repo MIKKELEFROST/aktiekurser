@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T23:05:22.350Z",
+  "updated_at": "2026-11-12T22:41:29.404Z",
   "source": "Yahoo Finance",
   "symbol": "DSP",
   "summary": "Viant Technology Inc. operates a cloud-based demand side platform (DSP) that enables the programmatic purchase of digital advertising across multiple channels, including connected TV (CTV), streaming audio, digital out-of-home, mobile, and desktop. It provides ViantAI, an artificial intelligence product suite; Holistic, Omnichannel DSP, an integrated platform that manages omnichannel campaigns and access metrics; Household ID, which combines digital and personal identifiers into a normalized household profile; IRIS_ID, a content identifier that allows partners to share video-level data to power planning, targeting, and measurement solutions in ad-supported streaming media; and Viant Data Platform, which offers the ability to integrate first-party data with data from top third-party data providers to obtain key insights, reporting, and attribution opportunities. The company also offers Direct Access, a supply path optimization program that creates a direct path to premium inventory; Advanced Reporting and Measurement that offers conversion lift, multitouch attribution, foot-traffic data reports, digital-out-of-home lift, sales reporting, and ROAS analytics; and Flexible Customer Engagement Model, which offers customers transparency and control over their advertising campaigns and underlying data infrastructure. The company sells its platform through a direct sales team focused on business development in various markets. It serves purchasers of programmatic advertising inventory and large, independent, and mid-market advertising agencies, as well as marketers. The company was formerly known as Interactive Media Holdings and changed its name to Viant Technology Inc. in January 2015. The company was founded in 1999 and is headquartered in Irvine, California.",
@@ -73,7 +73,7 @@
   ],
   "growth": {
     "q0": 0.35599998,
-    "q1": 0.22860001,
+    "q1": -0.6091,
     "y0": 0.3444,
     "y1": 0.2992
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.134,
-    "enterprise_value": 295989248,
-    "ev_ebitda": 10.316,
-    "ev_revenue": 0.716,
+    "enterprise_value": 288803712,
+    "ev_ebitda": 10.066,
+    "ev_revenue": 0.699,
     "float_shares": 19405633,
     "short_shares": 1941775,
     "short_pct_float": 9.46,
@@ -247,6 +247,12 @@
   "inst_count": 178,
   "eps_history": [
     {
+      "quarter": "2025-09-30",
+      "estimate": 0.13167,
+      "actual": 0.12,
+      "surprise_pct": -8.86
+    },
+    {
       "quarter": "2025-12-31",
       "estimate": 0.235,
       "actual": 0.22,
@@ -257,12 +263,6 @@
       "estimate": 0.07167,
       "actual": 0.07,
       "surprise_pct": -2.33
-    },
-    {
-      "quarter": "2026-06-30",
-      "estimate": 0.115,
-      "actual": 0.12,
-      "surprise_pct": 4.35
     },
     {
       "quarter": "2026-09-30",
@@ -300,24 +300,6 @@
       "date": "2026-08-10"
     },
     {
-      "name": "CAPITAL V LLC",
-      "role": "Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "sell",
-      "text": "Sale at price 10.47 - 11.70 per share.",
-      "value": 412933,
-      "shares": 37500,
-      "date": "2026-07-23"
-    },
-    {
-      "name": "VANDERHOOK TIMOTHY",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 10.47 - 11.70 per share.",
-      "value": 137644,
-      "shares": 12500,
-      "date": "2026-07-23"
-    },
-    {
       "name": "MADDEN LARRY",
       "role": "Chief Financial Officer",
       "kind": "sell",
@@ -336,13 +318,22 @@
       "date": "2026-07-23"
     },
     {
+      "name": "CAPITAL V LLC",
+      "role": "Beneficial Owner of more than 10% of a Class of Security",
+      "kind": "sell",
+      "text": "Sale at price 10.47 - 11.70 per share.",
+      "value": 412933,
+      "shares": 37500,
+      "date": "2026-07-23"
+    },
+    {
       "name": "VANDERHOOK TIMOTHY",
       "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
+      "kind": "sell",
+      "text": "Sale at price 10.47 - 11.70 per share.",
+      "value": 137644,
       "shares": 12500,
-      "date": "2026-07-21"
+      "date": "2026-07-23"
     },
     {
       "name": "VANDERHOOK CHRISTOPHER",
@@ -360,6 +351,15 @@
       "text": null,
       "value": null,
       "shares": 37500,
+      "date": "2026-07-21"
+    },
+    {
+      "name": "VANDERHOOK TIMOTHY",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 12500,
       "date": "2026-07-21"
     }
   ],

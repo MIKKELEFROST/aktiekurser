@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T23:05:22.416Z",
+  "updated_at": "2026-11-12T22:41:29.479Z",
   "source": "Yahoo Finance",
   "symbol": "EPM",
   "summary": "Evolution Petroleum Corporation, an energy company, engages in the ownership, exploitation, development, production, and investment of onshore oil and gas properties in the United States. The company was founded in 2003 and is based in Houston, Texas.",
@@ -10,7 +10,7 @@
   "next_earnings": "2027-02-09",
   "earnings_estimated": true,
   "earnings_call": "2026-11-11",
-  "eps_estimate": 0.02,
+  "eps_estimate": 0.0125,
   "analysts": {
     "strong_buy": 0,
     "buy": 4,
@@ -19,8 +19,8 @@
     "strong_sell": 0,
     "total": 4
   },
-  "target_mean": 5,
-  "target_high": 6,
+  "target_mean": 4.875,
+  "target_high": 5.5,
   "target_low": 4.5,
   "target_analysts": 4,
   "statements": [
@@ -74,8 +74,8 @@
   "growth": {
     "q0": 0,
     "q1": null,
-    "y0": 1.52,
-    "y1": 0.9231
+    "y0": 1.425,
+    "y1": 1.5882001
   },
   "ratings": [
     {
@@ -188,7 +188,7 @@
     {
       "name": "American Century Companies Inc",
       "kind": "institution",
-      "pct": 2.64,
+      "pct": 2.65,
       "shares": 1075062,
       "date": "2026-06-30"
     },
@@ -230,13 +230,13 @@
     "net_pct": null
   },
   "extras": {
-    "beta": null,
-    "enterprise_value": 202272512,
-    "ev_ebitda": 11.497,
-    "ev_revenue": 2.308,
-    "float_shares": 36552738,
+    "beta": 0.433,
+    "enterprise_value": 193262720,
+    "ev_ebitda": 10.985,
+    "ev_revenue": 2.205,
+    "float_shares": 35553321,
     "short_shares": 2626750,
-    "short_pct_float": 7.05,
+    "short_pct_float": 6.96,
     "short_ratio": 9.05,
     "last_split": "1:40",
     "last_split_date": "2004-02-05"
@@ -247,10 +247,16 @@
   "inst_count": 151,
   "eps_history": [
     {
-      "quarter": "2025-12-31",
-      "estimate": 0.0075,
+      "quarter": "2025-09-30",
+      "estimate": 0.01,
       "actual": 0,
       "surprise_pct": -100
+    },
+    {
+      "quarter": "2025-12-31",
+      "estimate": 0.00333,
+      "actual": 0.03,
+      "surprise_pct": 800.9
     },
     {
       "quarter": "2026-06-30",
@@ -266,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "LOYD KELLY WILLIAM",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 168049,
+      "date": "2026-09-17"
+    },
     {
       "name": "STASH RYAN T.",
       "role": "Chief Financial Officer",
@@ -292,33 +307,6 @@
       "value": 0,
       "shares": 91120,
       "date": "2026-09-17"
-    },
-    {
-      "name": "LOYD KELLY WILLIAM",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 168049,
-      "date": "2026-09-17"
-    },
-    {
-      "name": "HARGRAVE MARJORIE ANNE",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 24214,
-      "date": "2025-12-04"
-    },
-    {
-      "name": "BIERRIA MYRA COLEMAN",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 24214,
-      "date": "2025-12-04"
     },
     {
       "name": "DOZIER WILLIAM E",
@@ -348,12 +336,30 @@
       "date": "2025-12-04"
     },
     {
-      "name": "STASH RYAN T.",
-      "role": "Chief Financial Officer",
+      "name": "HARGRAVE MARJORIE ANNE",
+      "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 53419,
+      "shares": 24214,
+      "date": "2025-12-04"
+    },
+    {
+      "name": "BIERRIA MYRA COLEMAN",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 24214,
+      "date": "2025-12-04"
+    },
+    {
+      "name": "LOYD KELLY WILLIAM",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 102834,
       "date": "2025-09-18"
     }
   ],

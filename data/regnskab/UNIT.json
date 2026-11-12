@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T23:05:23.591Z",
+  "updated_at": "2026-11-12T22:41:30.945Z",
   "source": "Yahoo Finance",
   "symbol": "UNIT",
   "summary": "Uniti Group Inc. a digital infrastructure company in the United States. The company operates through three segments: Kinetic, Uniti Solutions, and Fiber Infrastructure. The Kinetic segment offers internet services, local and long-distance voice services, integrated voice and data services, and web conferencing products. The Uniti Solutions segment provides software solutions, including Secure Access Service Edge (SASE), Unified Communications as a Service (UCaaS), OfficeSuite UC, and associated network access products and services. The Fiber Infrastructure segment provides network bandwidth to other telecommunications carriers, network operators, content providers, and large cloud computing and storage service providers; network transport services to end users, ethernet and wave transport of up to 400 Gbps, dark fiber and colocation services; and fiber-to-the-tower connections. This segment also offers voice and data carrier services. Uniti Group Inc. was incorporated in 2024 and is based in Little Rock, Arkansas.",
@@ -19,9 +19,9 @@
     "strong_sell": 1,
     "total": 8
   },
-  "target_mean": 10.28125,
+  "target_mean": 8.8125,
   "target_high": 16,
-  "target_low": 5,
+  "target_low": 4,
   "target_analysts": 8,
   "statements": [
     {
@@ -73,6 +73,13 @@
   ],
   "growth": null,
   "ratings": [
+    {
+      "date": "2026-11-12",
+      "firm": "Citigroup",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-11-10",
       "firm": "JP Morgan",
@@ -135,27 +142,20 @@
       "from": "Equal-Weight",
       "to": "Equal-Weight",
       "action": "main"
-    },
-    {
-      "date": "2026-04-16",
-      "firm": "Barclays",
-      "from": "Equal-Weight",
-      "to": "Equal-Weight",
-      "action": "main"
     }
   ],
   "holders": [
     {
       "name": "Elliott Investment Management L.P.",
       "kind": "institution",
-      "pct": 24.31,
+      "pct": 24.3,
       "shares": 59012219,
       "date": "2026-06-30"
     },
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 12.42,
+      "pct": 12.41,
       "shares": 30138880,
       "date": "2026-06-30"
     },
@@ -204,14 +204,14 @@
     {
       "name": "State Street Corporation",
       "kind": "institution",
-      "pct": 3.65,
+      "pct": 3.64,
       "shares": 8848002,
       "date": "2026-06-30"
     },
     {
       "name": "Bracebridge Capital, LLC",
       "kind": "institution",
-      "pct": 3.31,
+      "pct": 3.3,
       "shares": 8023590,
       "date": "2026-06-30"
     }
@@ -226,9 +226,9 @@
   },
   "extras": {
     "beta": 1.441,
-    "enterprise_value": 11852372992,
-    "ev_ebitda": 8.488,
-    "ev_revenue": 3.236,
+    "enterprise_value": 11820805120,
+    "ev_ebitda": 8.465,
+    "ev_revenue": 3.228,
     "float_shares": 179004645,
     "short_shares": 23945400,
     "short_pct_float": 21.89,
@@ -242,22 +242,16 @@
   "inst_count": 373,
   "eps_history": [
     {
-      "quarter": "2025-12-31",
-      "estimate": -0.36283,
-      "actual": -1.19,
-      "surprise_pct": -227.98
+      "quarter": "2025-09-30",
+      "estimate": -0.00986,
+      "actual": 0.1119,
+      "surprise_pct": 1234.89
     },
     {
       "quarter": "2026-03-31",
       "estimate": -0.34402,
       "actual": -0.34,
       "surprise_pct": 1.17
-    },
-    {
-      "quarter": "2026-06-30",
-      "estimate": -0.48174,
-      "actual": -0.68,
-      "surprise_pct": -41.15
     },
     {
       "quarter": "2026-09-30",
@@ -268,7 +262,7 @@
   ],
   "insiders": [
     {
-      "name": "WEBER JOHANNES",
+      "name": "APPLEBY JARRETT B",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -277,7 +271,7 @@
       "date": "2026-05-21"
     },
     {
-      "name": "APPLEBY JARRETT B",
+      "name": "WEBER JOHANNES",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -295,12 +289,12 @@
       "date": "2026-03-13"
     },
     {
-      "name": "FRILOUX MICHAEL",
-      "role": "Chief Technology Officer",
+      "name": "GUNDERMAN KENNETH A",
+      "role": "Chief Executive Officer",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 11968,
+      "shares": 66740,
       "date": "2026-03-05"
     },
     {
@@ -322,21 +316,21 @@
       "date": "2026-03-05"
     },
     {
-      "name": "GUNDERMAN KENNETH A",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 66740,
-      "date": "2026-03-05"
-    },
-    {
       "name": "FRILOUX MICHAEL",
       "role": "Chief Technology Officer",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
-      "shares": 37478,
+      "shares": 11968,
+      "date": "2026-03-05"
+    },
+    {
+      "name": "GUNDERMAN KENNETH A",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 191382,
       "date": "2026-02-27"
     },
     {

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T23:05:23.659Z",
+  "updated_at": "2026-11-12T22:41:31.027Z",
   "source": "Yahoo Finance",
   "symbol": "VYLR",
   "summary": "Vylor Inc. operates as a seed and genetics company. It delivers a pipeline in the industry's elite germplasm and transformative sciences, such as biotechnology and gene editing. The company was founded in 1802 and is based in Johnston, Iowa.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-11",
   "earnings_estimated": false,
   "earnings_call": "2026-11-12",
-  "eps_estimate": -0.52074,
+  "eps_estimate": 0.11016,
   "analysts": {
     "strong_buy": 3,
     "buy": 9,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 2618000000,
-      "earnings": -320000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 3910000000,
       "earnings": -552000000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 6379000000,
       "earnings": 1161000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 938000000,
+      "earnings": -480000000
     }
   ],
   "growth": {
-    "q0": null,
-    "q1": -0.4993,
+    "q0": -0.4993,
+    "q1": -0.33560002,
     "y0": -0.3077,
     "y1": 0.1285
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.604,
-    "enterprise_value": 51145723904,
-    "ev_ebitda": 11.964,
-    "ev_revenue": 2.871,
+    "enterprise_value": 50858831872,
+    "ev_ebitda": 11.897,
+    "ev_revenue": 2.855,
     "float_shares": 665674793,
     "short_shares": 13947260,
     "short_pct_float": null,
@@ -244,8 +244,15 @@
   "ex_dividend": "2026-11-30",
   "dividend_date": null,
   "payout_ratio": null,
-  "inst_count": 102,
-  "eps_history": [],
+  "inst_count": 103,
+  "eps_history": [
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.52074,
+      "actual": -0.42,
+      "surprise_pct": 19.35
+    }
+  ],
   "insiders": [],
   "dividends": [],
   "splits": []

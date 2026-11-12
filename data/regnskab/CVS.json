@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T23:05:22.284Z",
+  "updated_at": "2026-11-12T22:41:29.329Z",
   "source": "Yahoo Finance",
   "symbol": "CVS",
   "summary": "CVS Health Corporation provides health solutions in the United States. The Health Care Benefits segment offers traditional, voluntary, and consumer-directed health insurance products and related services, including medical, pharmacy, dental, and behavioral health plans; medical management capabilities; Medicare Advantage and Medicare Supplement plans; prescription drug plans (PDPs); and Medicaid health care management services. It serves employer groups, individuals, college students, part-time and hourly workers, health plans, health care providers, governmental units, government-sponsored plans, labor groups, and expatriates. The Health Services segment offers pharmacy benefit management solutions, including plan design and administration, formulary management, retail pharmacy network management, specialty and mail-order pharmacy, clinical services, disease management, medical spend management services, and pharmacy and other administrative services. It serves employers, insurance companies, unions, government employee groups, health plans, PDPs, Medicaid managed care plans, CMS, plans offered on public health insurance exchanges, and other sponsors of health benefit plans. The Pharmacy & Consumer Wellness segment sells prescription and over-the-counter drugs, consumer health and beauty products, personal care products, and other general merchandise products. This segment also distributes prescription drugs; and provides related pharmacy consulting and other ancillary services to care facilities and other care settings. It operates online retail pharmacy websites, retail specialty pharmacy stores, and compounding pharmacies, as well as branches for infusion and enteral nutrition services. The company was formerly known as CVS Caremark Corporation and changed its name to CVS Health Corporation in September 2014. CVS Health Corporation was founded in 1963 and is headquartered in Woonsocket, Rhode Island.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 1.09773,
+  "eps_estimate": 1.0942,
   "analysts": {
     "strong_buy": 7,
     "buy": 18,
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.0070999996,
-    "q1": 0.0669,
-    "y0": 0.22389999,
-    "y1": 0.048899997
+    "q0": 0.0039,
+    "q1": 0.067600004,
+    "y0": 0.22469999,
+    "y1": 0.0494
   },
   "ratings": [
+    {
+      "date": "2026-11-12",
+      "firm": "Wells Fargo",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-11-06",
       "firm": "UBS",
@@ -139,13 +146,6 @@
       "firm": "Evercore ISI Group",
       "from": "Outperform",
       "to": "Outperform",
-      "action": "main"
-    },
-    {
-      "date": "2026-08-06",
-      "firm": "Barclays",
-      "from": "Overweight",
-      "to": "Overweight",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.58,
-    "enterprise_value": 174487994368,
-    "ev_ebitda": 10.09,
-    "ev_revenue": 0.417,
+    "enterprise_value": 175140536320,
+    "ev_ebitda": 10.127,
+    "ev_revenue": 0.419,
     "float_shares": 1276940829,
     "short_shares": 17875527,
     "short_pct_float": 1.41,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-10-22",
   "dividend_date": null,
   "payout_ratio": 0.3089,
-  "inst_count": 2625,
+  "inst_count": 2624,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -282,42 +282,6 @@
       "date": "2026-05-21"
     },
     {
-      "name": "BROWN C DAVID II",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 97.15 per share.",
-      "value": 150000,
-      "shares": 1544,
-      "date": "2026-05-14"
-    },
-    {
-      "name": "KIRBY JOHN SCOTT",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 97.15 per share.",
-      "value": 140576,
-      "shares": 1447,
-      "date": "2026-05-14"
-    },
-    {
-      "name": "SANSONE GUY P",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 97.15 per share.",
-      "value": 140576,
-      "shares": 1447,
-      "date": "2026-05-14"
-    },
-    {
-      "name": "AGUIRRE FERNANDO",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 97.15 per share.",
-      "value": 151845,
-      "shares": 1563,
-      "date": "2026-05-14"
-    },
-    {
       "name": "BALSER JEFFREY R M.D., PH.D.",
       "role": "Director",
       "kind": "other",
@@ -336,6 +300,42 @@
       "date": "2026-05-14"
     },
     {
+      "name": "AGUIRRE FERNANDO",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 97.15 per share.",
+      "value": 151845,
+      "shares": 1563,
+      "date": "2026-05-14"
+    },
+    {
+      "name": "SANSONE GUY P",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 97.15 per share.",
+      "value": 140576,
+      "shares": 1447,
+      "date": "2026-05-14"
+    },
+    {
+      "name": "KIRBY JOHN SCOTT",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 97.15 per share.",
+      "value": 140576,
+      "shares": 1447,
+      "date": "2026-05-14"
+    },
+    {
+      "name": "BROWN C DAVID II",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 97.15 per share.",
+      "value": 150000,
+      "shares": 1544,
+      "date": "2026-05-14"
+    },
+    {
       "name": "MANDADI TILAK",
       "role": "Officer",
       "kind": "sell",
@@ -345,21 +345,21 @@
       "date": "2026-05-08"
     },
     {
-      "name": "JOYNER JOHN DAVID",
-      "role": "Chief Executive Officer",
+      "name": "KHICHI SAMRAT S",
+      "role": "General Counsel",
       "kind": "other",
       "text": "Stock Award(Grant) at price 71.82 per share.",
-      "value": 6199933,
-      "shares": 86326,
+      "value": 899976,
+      "shares": 12531,
       "date": "2026-03-31"
     },
     {
-      "name": "NELSON STEVEN H",
+      "name": "CAPOZZI HEIDI B",
       "role": "Officer",
       "kind": "other",
       "text": "Stock Award(Grant) at price 71.82 per share.",
-      "value": 1599934,
-      "shares": 22277,
+      "value": 719996,
+      "shares": 10025,
       "date": "2026-03-31"
     }
   ],

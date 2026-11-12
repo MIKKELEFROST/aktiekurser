@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T23:05:22.262Z",
+  "updated_at": "2026-11-12T22:41:29.305Z",
   "source": "Yahoo Finance",
   "symbol": "CRWV",
   "summary": "CoreWeave, Inc. operates as a cloud infrastructure technology company in the United States. The company offers CoreWeave Cloud platform that comprises proprietary software and cloud services that deliver the automation and efficiency needed to manage complex artificial intelligence (AI) infrastructure at scale. It also offers data and storage solutions, such as Local Object Transport Accelerator; infrastructure control solutions, including CoreWeave Kubernetes service; mission control services, including node, rack, and fleet lifecycle management; model and agent development tools comprising Weights & Biases, an AI developer platform; and runtime acceleration. In addition, the company offers graphics processing unit compute, CPU compute, networking services, managed services, and virtual and bare metal servers. Its services also include visual effects rendering, machine learning, pixel streaming, and batch processing. It has a collaboration with AdaniConneX to operate a data center in India. The company was formerly known as Atlantic Crypto Corporation and changed its name to CoreWeave, Inc. in December 2019. CoreWeave, Inc. was incorporated in 2017 and is based in Livingston, New Jersey.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-10",
   "earnings_estimated": false,
   "earnings_call": "2026-11-10",
-  "eps_estimate": -0.63649,
+  "eps_estimate": -0.61853,
   "analysts": {
     "strong_buy": 7,
     "buy": 24,
@@ -19,10 +19,10 @@
     "strong_sell": 1,
     "total": 41
   },
-  "target_mean": 125.45946,
+  "target_mean": 121.26316,
   "target_high": 278,
   "target_low": 39,
-  "target_analysts": 37,
+  "target_analysts": 38,
   "statements": [
     {
       "year": "2025",
@@ -54,12 +54,33 @@
     }
   ],
   "growth": {
-    "q0": -0.134,
-    "q1": 0.36169997,
-    "y0": -1.6764,
-    "y1": 0.4885
+    "q0": -0.102,
+    "q1": -0.2508,
+    "y0": -1.7978,
+    "y1": 0.5607
   },
   "ratings": [
+    {
+      "date": "2026-11-12",
+      "firm": "Barclays",
+      "from": "Equal-Weight",
+      "to": "Equal-Weight",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-12",
+      "firm": "Macquarie",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-12",
+      "firm": "Argus Research",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-11-11",
       "firm": "Citigroup",
@@ -107,27 +128,6 @@
       "firm": "Cantor Fitzgerald",
       "from": "Overweight",
       "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-11-09",
-      "firm": "Rosenblatt",
-      "from": "Buy",
-      "to": "Buy",
-      "action": "main"
-    },
-    {
-      "date": "2026-11-09",
-      "firm": "Wells Fargo",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-11-04",
-      "firm": "Citigroup",
-      "from": "Buy",
-      "to": "Buy",
       "action": "main"
     }
   ],
@@ -213,9 +213,9 @@
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 89275072512,
-    "ev_ebitda": 17.158,
-    "ev_revenue": 9.03,
+    "enterprise_value": 96005431296,
+    "ev_ebitda": 18.452,
+    "ev_revenue": 9.711,
     "float_shares": 332744750,
     "short_shares": 74211562,
     "short_pct_float": 23.82,
@@ -226,8 +226,14 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": null,
-  "inst_count": 1351,
+  "inst_count": 1352,
   "eps_history": [
+    {
+      "quarter": "2025-09-30",
+      "estimate": -0.35129,
+      "actual": -0.0823,
+      "surprise_pct": 76.57
+    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.68481,
@@ -241,16 +247,10 @@
       "surprise_pct": -16.26
     },
     {
-      "quarter": "2026-06-30",
-      "estimate": -1.46997,
-      "actual": -1.14,
-      "surprise_pct": 22.45
-    },
-    {
       "quarter": "2026-09-30",
-      "estimate": -1.55218,
+      "estimate": -1.55274,
       "actual": -1.27,
-      "surprise_pct": 18.18
+      "surprise_pct": 18.21
     }
   ],
   "insiders": [
@@ -338,10 +338,10 @@
     {
       "name": "INTRATOR MICHAEL N",
       "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 107692,
+      "kind": "sell",
+      "text": "Sale at price 85.86 - 90.26 per share.",
+      "value": 26661770,
+      "shares": 307692,
       "date": "2026-09-29"
     }
   ],

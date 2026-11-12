@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T23:05:23.854Z",
+  "updated_at": "2026-11-12T22:41:30.905Z",
   "source": "Yahoo Finance",
   "symbol": "TTEK",
   "summary": "Tetra Tech, Inc. provides consulting and engineering services focusing on water, environment, and sustainable infrastructure in the United States and internationally. The company operates through two segments, Government Services Group (GSG) and Commercial/International Services Group (CIG). The GSG segment offers consulting and engineering services, including water resources analysis and water management, environmental monitoring, data analytics, government consulting, waste management, and civil infrastructure master planning and resilient engineering design for facilities, as well as transportation and local development projects primarily to government clients, including federal, state, and local, as well as international development agencies. It also offers sustainable solutions, such as energy management consulting, and greenhouse gas inventory assessment, certification, reduction, and management services. The CIG segment provides consulting and engineering services, including natural resources, energy, and utilities, as well as sustainable infrastructure master planning and engineering design for facilities; and transportation and local development projects to commercial and international clients, including the commercial and government sectors. The company offers early data collection and monitoring, data analysis and information management, science and engineering applied research, engineering design, project management, and operations and maintenance services; climate change consulting; greenhouse gas inventory assessment, certification, reduction, and management services; environmental remediation and reconstruction services, industrial water treatment and reuse services; and engineering services, such as data centers, advanced manufacturing, security systems, training and audiovisual facilities, clean rooms, laboratories, medical facilities, and disaster preparedness facilities. The company was founded in 1966 and is headquartered in Pasadena, California.",
@@ -7,8 +7,8 @@
   "website": "https://www.tetratech.com",
   "employees": 25000,
   "ceo": "Mr. Roger R. Argus",
-  "next_earnings": "2026-11-11",
-  "earnings_estimated": false,
+  "next_earnings": "2027-01-27",
+  "earnings_estimated": true,
   "earnings_call": "2026-11-12",
   "eps_estimate": 0.46833,
   "analysts": {
@@ -19,17 +19,11 @@
     "strong_sell": 0,
     "total": 8
   },
-  "target_mean": 40.16667,
+  "target_mean": 40.66667,
   "target_high": 44,
-  "target_low": 37,
+  "target_low": 38,
   "target_analysts": 6,
   "statements": [
-    {
-      "year": "2022",
-      "revenue": 2835580000,
-      "net": 263125000,
-      "margin": 9.3
-    },
     {
       "year": "2023",
       "revenue": 3751089000,
@@ -47,14 +41,15 @@
       "revenue": 4617360000,
       "net": 247724000,
       "margin": 5.4
+    },
+    {
+      "year": "2026",
+      "revenue": 4348300000,
+      "net": 439958000,
+      "margin": 10.1
     }
   ],
   "quarterly": [
-    {
-      "q": "3Q2025",
-      "revenue": 1163309000,
-      "earnings": 127745000
-    },
     {
       "q": "4Q2025",
       "revenue": 1037176000,
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 1108600000,
       "earnings": 109584000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1152900000,
+      "earnings": 131723000
     }
   ],
   "growth": {
     "q0": 0.040700004,
-    "q1": 0.0714,
+    "q1": 0.0643,
     "y0": 0.0109,
-    "y1": 0.0865
+    "y1": 0.0874
   },
   "ratings": [
+    {
+      "date": "2026-11-12",
+      "firm": "Baird",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-10-15",
       "firm": "RBC Capital",
@@ -139,13 +146,6 @@
       "firm": "Baird",
       "from": "Neutral",
       "to": "Neutral",
-      "action": "main"
-    },
-    {
-      "date": "2025-04-16",
-      "firm": "Keybanc",
-      "from": "Overweight",
-      "to": "Overweight",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.866,
-    "enterprise_value": 11201373184,
-    "ev_ebitda": 17.109,
-    "ev_revenue": 2.57,
+    "enterprise_value": 10422998016,
+    "ev_ebitda": 15.921,
+    "ev_revenue": 2.391,
     "float_shares": 254485117,
     "short_shares": 13592354,
     "short_pct_float": 5.97,
@@ -303,18 +303,18 @@
       "name": "RITRIEVI KIMBERLY E.",
       "role": "Director",
       "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 20968,
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 25883,
       "date": "2026-03-16"
     },
     {
       "name": "RITRIEVI KIMBERLY E.",
       "role": "Director",
       "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 25883,
+      "text": null,
+      "value": null,
+      "shares": 20968,
       "date": "2026-03-16"
     },
     {
@@ -354,12 +354,12 @@
       "date": "2026-02-04"
     },
     {
-      "name": "BIRKENBEUEL GARY R.",
+      "name": "RITRIEVI KIMBERLY E.",
       "role": "Director",
       "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 3640,
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 2208,
       "date": "2026-01-12"
     }
   ],

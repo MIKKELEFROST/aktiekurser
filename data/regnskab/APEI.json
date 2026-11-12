@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T23:05:21.896Z",
+  "updated_at": "2026-11-12T22:41:28.894Z",
   "source": "Yahoo Finance",
   "symbol": "APEI",
   "summary": "American Public Education, Inc., together with its subsidiaries, provides online and campus-based postsecondary education services in the United States. It operates through three segments: American Public University System, Rasmussen University, and Hondros College of Nursing. The company offers 181 degree programs, 110 certificate programs, and four diploma programs in various fields of study, including public service-focused fields, such as nursing, national security, military studies, intelligence, and homeland security, as well as traditional academic fields comprising business, health science, information technology, justice studies, education, and liberal arts; and career learning and leadership training in-person and online to the federal workforce. It also provides nursing-and health sciences-focused postsecondary education; and pre-licensure nursing education services focusing on a diploma in practical nursing and associate degree in nursing, as well as a bachelor of science in nursing. The company was incorporated in 1991 and is headquartered in Charles Town, West Virginia.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-09",
   "earnings_estimated": false,
   "earnings_call": "2026-11-09",
-  "eps_estimate": 1.055,
+  "eps_estimate": 0.36,
   "analysts": {
     "strong_buy": 1,
     "buy": 5,
@@ -72,8 +72,8 @@
     }
   ],
   "growth": {
-    "q0": 0.1967,
-    "q1": -0.1699,
+    "q0": -0.33169997,
+    "q1": 0.1967,
     "y0": 0.436,
     "y1": 0.1873
   },
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.449,
-    "enterprise_value": 670400704,
-    "ev_ebitda": 8.414,
-    "ev_revenue": 0.995,
+    "enterprise_value": 708263552,
+    "ev_ebitda": 8.889,
+    "ev_revenue": 1.051,
     "float_shares": 14860973,
     "short_shares": 2540554,
     "short_pct_float": 15.55,
@@ -247,6 +247,12 @@
   "inst_count": 291,
   "eps_history": [
     {
+      "quarter": "2025-09-30",
+      "estimate": 0.22,
+      "actual": 0.5387,
+      "surprise_pct": 144.86
+    },
+    {
       "quarter": "2025-12-31",
       "estimate": 0.54,
       "actual": 0.8816,
@@ -257,12 +263,6 @@
       "estimate": 0.74,
       "actual": 1.1926,
       "surprise_pct": 61.16
-    },
-    {
-      "quarter": "2026-06-30",
-      "estimate": 0.475,
-      "actual": 0.6361,
-      "surprise_pct": 33.92
     },
     {
       "quarter": "2026-09-30",
@@ -291,21 +291,21 @@
       "date": "2026-10-22"
     },
     {
-      "name": "FERNANDES NUNO S",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 45.13 per share.",
-      "value": 397144,
-      "shares": 8800,
-      "date": "2026-08-12"
-    },
-    {
       "name": "KENIGSBERG JAMES",
       "role": "Chief Technology Officer",
       "kind": "sell",
       "text": "Sale at price 45.72 per share.",
       "value": 60030,
       "shares": 1313,
+      "date": "2026-08-12"
+    },
+    {
+      "name": "FERNANDES NUNO S",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 45.13 per share.",
+      "value": 397144,
+      "shares": 8800,
       "date": "2026-08-12"
     },
     {
@@ -354,7 +354,7 @@
       "date": "2026-06-15"
     },
     {
-      "name": "BLEVINS GRANETTA B",
+      "name": "STATUTO RICHARD J",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

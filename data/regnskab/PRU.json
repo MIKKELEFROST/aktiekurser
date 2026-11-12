@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T23:05:23.779Z",
+  "updated_at": "2026-11-12T22:41:30.478Z",
   "source": "Yahoo Finance",
   "symbol": "PRU",
   "summary": "Prudential Financial, Inc., together with its subsidiaries, provides financial products and services in the United States, Japan and internationally. It operates through PGIM, Retirement Strategies, Group Insurance, Individual Life, and International Businesses segments. The PGIM segment offers investment management services and solutions related to public fixed income, public equity, real estate debt and equity, private credit and other alternatives, and multi-asset class strategies to institutional and retail clients, as well as its insurance and retirement businesses. The Retirement Strategies segment provides a range of retirement investment, and income products and services to retirement plan sponsors in the public, private, and not-for-profit sectors; group annuities and other products; international reinsurance; investment only products; and FlexGuard suite, Fixed annuities, and variable annuities, as well as develops and distributes individual variable and fixed annuity products. The Group Insurance segment offers various group life, and long-term and short-term group disability, as well as group corporate-, bank-, and trust-owned life insurance; and supplemental health solutions including accident, critical illness, and hospital indemnity. The Individual Life segment develops and distributes variable life, universal life, and term life insurance products. The International Businesses segment develops and distributes life insurance, retirement products, investment products, and certain accident and health products. The company provides its products and services to individual and institutional customers through its proprietary and third-party distribution networks, financial professionals, and trusted partnerships. Prudential Financial, Inc. was founded in 1875 and is headquartered in Newark, New Jersey.",
@@ -10,7 +10,7 @@
   "next_earnings": "2027-02-02",
   "earnings_estimated": true,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 2.99659,
+  "eps_estimate": 2.99085,
   "analysts": {
     "strong_buy": 0,
     "buy": 0,
@@ -19,9 +19,9 @@
     "strong_sell": 2,
     "total": 18
   },
-  "target_mean": 111.86667,
+  "target_mean": 114.06667,
   "target_high": 136,
-  "target_low": 92,
+  "target_low": 98,
   "target_analysts": 15,
   "statements": [
     {
@@ -72,12 +72,26 @@
     }
   ],
   "growth": {
-    "q0": -0.0919,
+    "q0": -0.0937,
     "q1": -0.109799996,
-    "y0": -0.0482,
-    "y1": 0.0023999999
+    "y0": -0.0471,
+    "y1": -0.0068
   },
   "ratings": [
+    {
+      "date": "2026-11-12",
+      "firm": "Wells Fargo",
+      "from": "Underweight",
+      "to": "Underweight",
+      "action": "main"
+    },
+    {
+      "date": "2026-11-12",
+      "firm": "Mizuho",
+      "from": "Neutral",
+      "to": "Neutral",
+      "action": "main"
+    },
     {
       "date": "2026-11-11",
       "firm": "UBS",
@@ -132,20 +146,6 @@
       "firm": "Morgan Stanley",
       "from": "Underweight",
       "to": "Underweight",
-      "action": "main"
-    },
-    {
-      "date": "2026-10-16",
-      "firm": "Keefe, Bruyette & Woods",
-      "from": "Market Perform",
-      "to": "Market Perform",
-      "action": "main"
-    },
-    {
-      "date": "2026-10-15",
-      "firm": "JP Morgan",
-      "from": "Neutral",
-      "to": "Neutral",
       "action": "main"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.828,
-    "enterprise_value": 61289897984,
-    "ev_ebitda": 11.606,
-    "ev_revenue": 0.992,
+    "enterprise_value": 61200719872,
+    "ev_ebitda": 11.589,
+    "ev_revenue": 0.99,
     "float_shares": 341898970,
     "short_shares": 13489785,
     "short_pct_float": 4.49,
@@ -275,37 +275,19 @@
     {
       "name": "KAPPLER ANN M",
       "role": "General Counsel",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 106.89 - 110.45 per share.",
-      "value": 319221,
-      "shares": 2919,
-      "date": "2026-11-06"
-    },
-    {
-      "name": "BOYLE ROBERT E",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 106.89 - 110.45 per share.",
-      "value": 312791,
-      "shares": 2876,
-      "date": "2026-11-06"
-    },
-    {
-      "name": "SULLIVAN ANDREW F",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 107.28 - 110.45 per share.",
-      "value": 405641,
-      "shares": 3705,
+      "kind": "sell",
+      "text": "Sale at price 120.60 per share.",
+      "value": 337318,
+      "shares": 2797,
       "date": "2026-11-06"
     },
     {
       "name": "KAPPLER ANN M",
       "role": "General Counsel",
-      "kind": "sell",
-      "text": "Sale at price 120.60 per share.",
-      "value": 337318,
-      "shares": 2797,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 106.89 - 110.45 per share.",
+      "value": 319221,
+      "shares": 2919,
       "date": "2026-11-06"
     },
     {
@@ -318,12 +300,30 @@
       "date": "2026-11-06"
     },
     {
+      "name": "SULLIVAN ANDREW F",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 107.28 - 110.45 per share.",
+      "value": 405641,
+      "shares": 3705,
+      "date": "2026-11-06"
+    },
+    {
       "name": "BOYLE ROBERT E",
       "role": "Officer",
       "kind": "sell",
       "text": "Sale at price 121.24 per share.",
       "value": 338745,
       "shares": 2794,
+      "date": "2026-11-06"
+    },
+    {
+      "name": "BOYLE ROBERT E",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 106.89 - 110.45 per share.",
+      "value": 312791,
+      "shares": 2876,
       "date": "2026-11-06"
     },
     {

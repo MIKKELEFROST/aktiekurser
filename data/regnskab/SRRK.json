@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T23:05:23.483Z",
+  "updated_at": "2026-11-12T22:41:30.740Z",
   "source": "Yahoo Finance",
   "symbol": "SRRK",
   "summary": "Scholar Rock Holding Corporation, a biopharmaceutical company, focuses on improving the lives of children and adults with spinal muscular atrophy (SMA) and other rare, severe, and debilitating neuromuscular diseases. The company's novel understanding of the molecular mechanisms of growth factor activation within the transforming growth factor beta (TGFß) superfamily has enabled the development of a proprietary platform. This platform is used for the development of monoclonal antibodies that locally and selectively target the precursor, or latent, forms of growth factors. The company is developing Apitegromab, an inhibitor of the activation of myostatin, which is in a Phase 2 clinical trial for the treatment of SMA and facioscapulohumeral muscular dystrophy (FSHD). Additionally, SRK-439, an anti-pro/latent myostatin antibody, is in a Phase 1 clinical trial for the treatment of patients with rare, severe, and debilitating neuromuscular diseases. SRK-181 is a Phase 2-ready investigational inhibitor of latent TGFß1 for the treatment of patients with solid tumors that are resistant to anti-PD-(L)1 antibody therapies. The company also offers products in pre-clinical development, including SRK-373, a selective inhibitor of the latent TGFß1 isoform with selective activity in the fibrotic extracellular matrix, for the treatment of fibrotic diseases, and SRK-256, an inhibitor of RGMc, or hemojuvelin, for the treatment of iron-restricted anemias. Scholar Rock Holding Corporation is also developing a pipeline that includes programs for the treatment of patients with rare, severe, and debilitating neuromuscular diseases. Scholar Rock Holding Corporation was founded in 2012 and is headquartered in Cambridge, Massachusetts.",
@@ -73,11 +73,18 @@
   ],
   "growth": {
     "q0": 0.4889,
-    "q1": 0.0301,
+    "q1": 0.085200004,
     "y0": 0.13159999,
     "y1": 0.123500004
   },
   "ratings": [
+    {
+      "date": "2026-11-12",
+      "firm": "Wolfe Research",
+      "from": "Outperform",
+      "to": "Peer Perform",
+      "action": "down"
+    },
     {
       "date": "2026-09-24",
       "firm": "Truist Securities",
@@ -140,62 +147,55 @@
       "from": "Strong Buy",
       "to": "Strong Buy",
       "action": "main"
-    },
-    {
-      "date": "2026-09-14",
-      "firm": "BMO Capital",
-      "from": "Outperform",
-      "to": "Outperform",
-      "action": "main"
     }
   ],
   "holders": [
     {
       "name": "FMR, LLC",
       "kind": "institution",
-      "pct": 14.95,
+      "pct": 14.92,
       "shares": 18207328,
       "date": "2026-09-30"
     },
     {
       "name": "Siren, L.L.C.",
       "kind": "institution",
-      "pct": 7.86,
+      "pct": 7.85,
       "shares": 9575013,
       "date": "2026-06-30"
     },
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 7.8,
+      "pct": 7.78,
       "shares": 9494084,
       "date": "2026-06-30"
     },
     {
       "name": "Samsara BioCapital, LLC",
       "kind": "institution",
-      "pct": 5.66,
+      "pct": 5.65,
       "shares": 6897652,
       "date": "2026-06-30"
     },
     {
       "name": "Price (T.Rowe) Associates Inc",
       "kind": "institution",
-      "pct": 5.58,
+      "pct": 5.57,
       "shares": 6794837,
       "date": "2026-06-30"
     },
     {
       "name": "Wellington Management Group, LLP",
       "kind": "institution",
-      "pct": 5.52,
+      "pct": 5.51,
       "shares": 6727085,
       "date": "2026-06-30"
     },
     {
       "name": "Orbis Allan Gray Ltd",
       "kind": "institution",
-      "pct": 4.87,
+      "pct": 4.86,
       "shares": 5933533,
       "date": "2026-06-30"
     },
@@ -231,10 +231,10 @@
   },
   "extras": {
     "beta": 0.788,
-    "enterprise_value": 5557438464,
-    "ev_ebitda": -13.726,
-    "ev_revenue": null,
-    "float_shares": 103882846,
+    "enterprise_value": 5474802688,
+    "ev_ebitda": -13.433,
+    "ev_revenue": 9604.917,
+    "float_shares": 104069820,
     "short_shares": 23477706,
     "short_pct_float": 24.02,
     "short_ratio": 13.37,
@@ -257,12 +257,6 @@
       "estimate": -0.78069,
       "actual": -0.83,
       "surprise_pct": -6.32
-    },
-    {
-      "quarter": "2026-06-30",
-      "estimate": -0.84281,
-      "actual": -0.84,
-      "surprise_pct": 0.33
     },
     {
       "quarter": "2026-09-30",
@@ -289,15 +283,6 @@
       "value": 0,
       "shares": 36652,
       "date": "2026-09-21"
-    },
-    {
-      "name": "PENG KATIE",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 53.56 - 54.96 per share.",
-      "value": 293405,
-      "shares": 5446,
-      "date": "2026-07-01"
     },
     {
       "name": "GILMAN MICHAEL Z",
@@ -333,6 +318,15 @@
       "text": "Sale at price 53.50 - 54.28 per share.",
       "value": 164067,
       "shares": 3053,
+      "date": "2026-07-01"
+    },
+    {
+      "name": "PENG KATIE",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 53.56 - 54.96 per share.",
+      "value": 293405,
+      "shares": 5446,
       "date": "2026-07-01"
     },
     {

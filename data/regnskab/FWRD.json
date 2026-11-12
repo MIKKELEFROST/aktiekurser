@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T23:05:22.544Z",
+  "updated_at": "2026-11-12T22:41:29.626Z",
   "source": "Yahoo Finance",
   "symbol": "FWRD",
   "summary": "Forward Air Corporation, together with its subsidiaries, operates as an asset-light freight and logistics company in the United States, Mexico, Europe, Asia, and Canada. The company operates through three segments: Expedited Freight, Omni Logistics, and Intermodal. Its Expedited Freight segment provides expedited regional, inter-regional, and national less-than-truckload services; local pick-up and delivery services; and other services, which include shipment consolidation and deconsolidation, warehousing, customs brokerage, and other handling. This segment offers expedited truckload brokerage, dedicated fleet, and high security and temperature-controlled logistics services. The Omni Logistics segment offers full suite of global logistics services, such as air and ocean freight consolidation and forwarding, customs brokerage, warehousing and distribution, value-added services, time-definite transportation services, and other supply chain solutions. Its Intermodal segment provides intermodal container drayage services; and contract and container freight station warehouse and handling services. The company serves freight forwarders, third-party logistics companies, integrated air cargo carriers and passenger, passenger and cargo airlines, steamship lines, and retailers. Forward Air Corporation was incorporated in 1981 and is headquartered in Dallas, Texas.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-09",
   "earnings_estimated": false,
   "earnings_call": "2026-11-09",
-  "eps_estimate": null,
+  "eps_estimate": 0.13,
   "analysts": {
     "strong_buy": 0,
     "buy": 2,
@@ -71,7 +71,12 @@
       "earnings": 11379000
     }
   ],
-  "growth": null,
+  "growth": {
+    "q0": 0.7857,
+    "q1": null,
+    "y0": null,
+    "y1": null
+  },
   "ratings": [
     {
       "date": "2026-11-10",
@@ -226,9 +231,9 @@
   },
   "extras": {
     "beta": 1.314,
-    "enterprise_value": 2520567808,
-    "ev_ebitda": 8.119,
-    "ev_revenue": 0.985,
+    "enterprise_value": 2483777536,
+    "ev_ebitda": 8.001,
+    "ev_revenue": 0.97,
     "float_shares": 27286896,
     "short_shares": 1830740,
     "short_pct_float": 8.18,
@@ -242,22 +247,16 @@
   "inst_count": 253,
   "eps_history": [
     {
-      "quarter": "2025-12-31",
-      "estimate": -0.265,
-      "actual": -0.1855,
-      "surprise_pct": 30
+      "quarter": "2025-09-30",
+      "estimate": -0.12,
+      "actual": 0.0728,
+      "surprise_pct": 160.67
     },
     {
       "quarter": "2026-03-31",
       "estimate": -0.374,
       "actual": -0.2032,
       "surprise_pct": 45.67
-    },
-    {
-      "quarter": "2026-06-30",
-      "estimate": -0.15333,
-      "actual": 1.5273,
-      "surprise_pct": 1096.09
     },
     {
       "quarter": "2026-09-30",
@@ -313,6 +312,15 @@
       "date": "2026-03-16"
     },
     {
+      "name": "HANCE MICHAEL L",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 10799,
+      "date": "2026-02-19"
+    },
+    {
       "name": "SMITH DOUGLAS JAMES",
       "role": "Officer",
       "kind": "other",
@@ -346,15 +354,6 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 10799,
-      "date": "2026-02-19"
-    },
-    {
-      "name": "BRANDT ERIC FREDERICK",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 8999,
       "date": "2026-02-19"
     }
   ],

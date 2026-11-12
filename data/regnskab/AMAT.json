@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T23:05:21.860Z",
+  "updated_at": "2026-11-12T22:41:28.854Z",
   "source": "Yahoo Finance",
   "symbol": "AMAT",
   "summary": "Applied Materials, Inc. provides materials engineering solutions, equipment, services, and software to the semiconductor and related industries in the United States, China, Korea, Taiwan, Japan, Southeast Asia, Europe, and internationally. The company operates through Semiconductor Systems and Applied Global Services (AGS) segments. The Semiconductor Systems segment includes semiconductor capital equipment to enable materials engineering steps, including etch, rapid thermal processing, deposition, chemical mechanical planarization, metrology and inspection, wafer packaging, and ion implantation. The AGS segment offers integrated solutions to optimize equipment and fab performance and productivity comprising spares, upgrades, services, and 200 millimeter and other equipment and factory automation software for semiconductor and other products. It serves manufacturers of semiconductor wafers and chips, and other electronic devices. Applied Materials, Inc. was incorporated in 1967 and is headquartered in Santa Clara, California.",
@@ -10,26 +10,20 @@
   "next_earnings": "2026-11-12",
   "earnings_estimated": false,
   "earnings_call": "2026-11-12",
-  "eps_estimate": 4.0544,
+  "eps_estimate": 4.24579,
   "analysts": {
     "strong_buy": 5,
-    "buy": 30,
+    "buy": 29,
     "hold": 6,
     "sell": 0,
     "strong_sell": 0,
-    "total": 41
+    "total": 40
   },
-  "target_mean": 620.78375,
+  "target_mean": 623.30554,
   "target_high": 900,
   "target_low": 358,
-  "target_analysts": 37,
+  "target_analysts": 36,
   "statements": [
-    {
-      "year": "2022",
-      "revenue": 25785000000,
-      "net": 6525000000,
-      "margin": 25.3
-    },
     {
       "year": "2023",
       "revenue": 26517000000,
@@ -47,14 +41,15 @@
       "revenue": 28368000000,
       "net": 6998000000,
       "margin": 24.7
+    },
+    {
+      "year": "2026",
+      "revenue": 34446000000,
+      "net": 10088000000,
+      "margin": 29.3
     }
   ],
   "quarterly": [
-    {
-      "q": "3Q2025",
-      "revenue": 6800000000,
-      "earnings": 1897000000
-    },
     {
       "q": "4Q2025",
       "revenue": 7012000000,
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 9115000000,
       "earnings": 2538000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 10409000000,
+      "earnings": 2718000000
     }
   ],
   "growth": {
-    "q0": 0.8684,
-    "q1": 0.77559996,
-    "y0": 0.35799998,
-    "y1": 0.45509997
+    "q0": 0.7839,
+    "q1": 0.5923,
+    "y0": 0.4479,
+    "y1": 0.2879
   },
   "ratings": [
     {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.673,
-    "enterprise_value": 293751848960,
-    "ev_ebitda": 28.927,
-    "ev_revenue": 9.526,
+    "enterprise_value": 311647469568,
+    "ev_ebitda": 30.689,
+    "ev_revenue": 10.106,
     "float_shares": 790478605,
     "short_shares": 14452231,
     "short_pct_float": 1.83,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.16479999,
   "inst_count": 4386,
   "eps_history": [
-    {
-      "quarter": "2025-10-31",
-      "estimate": 2.09366,
-      "actual": 2.17,
-      "surprise_pct": 3.65
-    },
     {
       "quarter": "2026-01-31",
       "estimate": 2.206,
@@ -269,6 +263,12 @@
       "estimate": 3.3944,
       "actual": 3.5,
       "surprise_pct": 3.11
+    },
+    {
+      "quarter": "2026-10-31",
+      "estimate": 4.0544,
+      "actual": 4.16,
+      "surprise_pct": 2.6
     }
   ],
   "insiders": [
@@ -336,6 +336,15 @@
       "date": "2026-06-16"
     },
     {
+      "name": "IANNOTTI THOMAS J",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 599.77 per share.",
+      "value": 5547872,
+      "shares": 9250,
+      "date": "2026-06-16"
+    },
+    {
       "name": "DICKERSON GARY E",
       "role": "Chief Executive Officer",
       "kind": "other",
@@ -345,21 +354,12 @@
       "date": "2026-06-16"
     },
     {
-      "name": "NALAMASU OMKARAM",
-      "role": "Chief Technology Officer",
+      "name": "DICKERSON GARY E",
+      "role": "Chief Executive Officer",
       "kind": "sell",
-      "text": "Sale at price 590.20 - 596.52 per share.",
-      "value": 20754197,
-      "shares": 35000,
-      "date": "2026-06-16"
-    },
-    {
-      "name": "IANNOTTI THOMAS J",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 599.77 per share.",
-      "value": 5547872,
-      "shares": 9250,
+      "text": "Sale at price 590.03 - 599.35 per share.",
+      "value": 49239084,
+      "shares": 83000,
       "date": "2026-06-16"
     }
   ],

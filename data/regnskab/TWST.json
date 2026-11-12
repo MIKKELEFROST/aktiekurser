@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T23:05:23.567Z",
+  "updated_at": "2026-11-12T22:41:30.915Z",
   "source": "Yahoo Finance",
   "symbol": "TWST",
   "summary": "Twist Bioscience Corporation manufactures and sells synthetic DNA-based products. It offers synthetic genes and gene fragments used in product development for therapeutics, diagnostics, chemicals/materials, food/agriculture, data storage, and various applications within academic research by biotech, pharma, industrial chemical, and agricultural companies, as well as academic labs; Oligo pools used in targeted NGS, CRISPR gene editing, mutagenesis experiments, DNA origami, DNA computing, data storage in DNA, and other applications; and immunoglobulin G proteins for customers focused on the pursuit of drug discovery and development. It provides NGS tools comprising library preparation kits, human exome kits, and fixed and custom panels, as well as alliance panels used within diagnostic tests for various indications, population genetics research and biomarker discovery, translational research, microbiology, and applied markets research; and methylation detection kits for cancer, and rare and inherited disease study, as well as fast hybridization and full RNA sequencing workflow solution. In addition, it offers synthetic SARS-CoV-2 RNA reference sequences as positive controls to develop both NGS and reverse transcription-polymerase chain reaction assays; synthetic monkeypox controls; and various respiratory viral controls, including for influenzas, respiratory syncytial virus, rhinoviruses, SARS, MERS, and coronaviruses. Further, it offers SARS-CoV-2 Research Panels, such as the Twist Respiratory Virus Panel and the Pan-Viral Research Panel, for the detection of disease in a research setting; precision DNA libraries for antibody engineering, affinity maturation, and humanization; and antibody optimization solution to enable simultaneous optimization of multiple characteristics of a given antibody. The company has a strategic collaboration with bitBiome Inc and Lilly TuneLab. The company was incorporated in 2013 and is headquartered in South San Francisco, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-12",
   "earnings_estimated": false,
   "earnings_call": "2026-11-12",
-  "eps_estimate": -0.203,
+  "eps_estimate": -0.138,
   "analysts": {
     "strong_buy": 2,
     "buy": 7,
@@ -24,12 +24,6 @@
   "target_low": 45,
   "target_analysts": 12,
   "statements": [
-    {
-      "year": "2022",
-      "revenue": 203565000,
-      "net": -217863000,
-      "margin": -107
-    },
     {
       "year": "2023",
       "revenue": 245109000,
@@ -47,14 +41,15 @@
       "revenue": 376572000,
       "net": -77670000,
       "margin": -20.6
+    },
+    {
+      "year": "2026",
+      "revenue": 459433000,
+      "net": -130202000,
+      "margin": -28.3
     }
   ],
   "quarterly": [
-    {
-      "q": "3Q2025",
-      "revenue": 99009000,
-      "earnings": -27138000
-    },
     {
       "q": "4Q2025",
       "revenue": 103698000,
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 118376000,
       "earnings": -35051000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 126644000,
+      "earnings": -20623000
     }
   ],
   "growth": {
-    "q0": 0.5489,
-    "q1": 0.72400004,
-    "y0": 0.4347,
-    "y1": 0.66550004
+    "q0": 0.72400004,
+    "q1": 0.814,
+    "y0": 0.8089,
+    "y1": 3.4375
   },
   "ratings": [
     {
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 10,
-    "sells": 68,
+    "sells": 67,
     "bought": 488156,
-    "sold": 1004854,
-    "net_pct": -47.9
+    "sold": 999893,
+    "net_pct": -47.6
   },
   "extras": {
     "beta": 2.222,
-    "enterprise_value": 8227282944,
-    "ev_ebitda": -71.367,
-    "ev_revenue": 19.054,
+    "enterprise_value": 7629053952,
+    "ev_ebitda": -66.177,
+    "ev_revenue": 17.668,
     "float_shares": 61882194,
     "short_shares": 9835760,
     "short_pct_float": 18.71,
@@ -246,12 +246,6 @@
   "payout_ratio": null,
   "inst_count": 532,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.5,
-      "actual": -0.45,
-      "surprise_pct": 10
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.52,
@@ -269,18 +263,15 @@
       "estimate": -0.28333,
       "actual": -0.5623,
       "surprise_pct": -98.46
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.203,
+      "actual": -0.3186,
+      "surprise_pct": -56.95
     }
   ],
   "insiders": [
-    {
-      "name": "CHO DENNIS",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 135.40 per share.",
-      "value": 128496,
-      "shares": 949,
-      "date": "2026-11-03"
-    },
     {
       "name": "FINN PATRICK JOHN",
       "role": "President",
@@ -288,6 +279,15 @@
       "text": "Sale at price 135.40 per share.",
       "value": 347306,
       "shares": 2565,
+      "date": "2026-11-03"
+    },
+    {
+      "name": "LEPROUST EMILY M",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 135.40 per share.",
+      "value": 619193,
+      "shares": 4573,
       "date": "2026-11-03"
     },
     {
@@ -309,12 +309,12 @@
       "date": "2026-11-03"
     },
     {
-      "name": "LEPROUST EMILY M",
-      "role": "Chief Executive Officer",
+      "name": "CHO DENNIS",
+      "role": "Officer",
       "kind": "sell",
       "text": "Sale at price 135.40 per share.",
-      "value": 619193,
-      "shares": 4573,
+      "value": 128496,
+      "shares": 949,
       "date": "2026-11-03"
     },
     {
@@ -345,21 +345,21 @@
       "date": "2026-10-05"
     },
     {
-      "name": "CHO DENNIS",
-      "role": "Officer",
+      "name": "FINN PATRICK JOHN",
+      "role": "President",
       "kind": "sell",
       "text": "Sale at price 188.88 per share.",
-      "value": 1797042,
-      "shares": 9514,
+      "value": 4856963,
+      "shares": 25714,
       "date": "2026-10-02"
     },
     {
-      "name": "LAPONIS ADAM",
-      "role": "Chief Financial Officer",
+      "name": "LEPROUST EMILY M",
+      "role": "Chief Executive Officer",
       "kind": "sell",
-      "text": "Sale at price 188.88 per share.",
-      "value": 1521838,
-      "shares": 8057,
+      "text": "Sale at price 188.88 - 200.00 per share.",
+      "value": 8769799,
+      "shares": 46391,
       "date": "2026-10-02"
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T23:05:23.119Z",
+  "updated_at": "2026-11-12T22:41:30.275Z",
   "source": "Yahoo Finance",
   "symbol": "NOVT",
   "summary": "Novanta Inc., together with its subsidiaries, provides precision medicine, precision manufacturing, medical solutions, robotics and automation solutions, and advanced surgery solutions in the United States and internationally. The company operates Automation Enabling Technologies and Medical Solutions segments. The Precision Medicine and Manufacturing segment designs, manufactures, and markets laser beam steering and scanning solutions, laser sources, robotic and precision motion, robotic end-of-arm tooling, and bearing spindles. This segment serves advanced industrial processes, advanced industrial and medical robotics, other medical and life science automation applications, and medical laser procedures, such as ophthalmology applications. The Medical Solutions segment provides a range of medical grade technologies, including medical insufflators, pumps, and related disposables; imaging, identification and RFID solutions; advanced motion control solutions; and light engines, and integrated operating room technologies. The company was formerly known as GSI Group, Inc. and changed its name to Novanta Inc. in May 2016. Novanta Inc. was incorporated in 1968 and is based in Bedford, Massachusetts.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-09",
   "earnings_estimated": false,
   "earnings_call": "2026-11-10",
-  "eps_estimate": 0.98667,
+  "eps_estimate": 0.96667,
   "analysts": {
     "strong_buy": 1,
     "buy": 2,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 3
   },
-  "target_mean": 194.5,
+  "target_mean": 185,
   "target_high": 195,
-  "target_low": 194,
+  "target_low": 175,
   "target_analysts": 2,
   "statements": [
     {
@@ -72,12 +72,19 @@
     }
   ],
   "growth": {
-    "q0": 0.084300004,
-    "q1": 0.074099995,
-    "y0": 0.12060001,
-    "y1": 0.1664
+    "q0": 0.0623,
+    "q1": 0.0073,
+    "y0": 0.1196,
+    "y1": 0.1593
   },
   "ratings": [
+    {
+      "date": "2026-11-12",
+      "firm": "Baird",
+      "from": "Outperform",
+      "to": "Outperform",
+      "action": "main"
+    },
     {
       "date": "2026-05-13",
       "firm": "Baird",
@@ -140,13 +147,6 @@
       "from": null,
       "to": "Hold",
       "action": "init"
-    },
-    {
-      "date": "2020-05-13",
-      "firm": "Baird",
-      "from": null,
-      "to": "Neutral",
-      "action": "main"
     }
   ],
   "holders": [
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.704,
-    "enterprise_value": 5423858176,
-    "ev_ebitda": 26.963,
-    "ev_revenue": 4.99,
+    "enterprise_value": 5408729600,
+    "ev_ebitda": 26.887,
+    "ev_revenue": 4.976,
     "float_shares": 37541221,
     "short_shares": 5248696,
     "short_pct_float": 15.95,
@@ -247,6 +247,12 @@
   "inst_count": 550,
   "eps_history": [
     {
+      "quarter": "2025-09-30",
+      "estimate": 0.81667,
+      "actual": 0.87,
+      "surprise_pct": 6.53
+    },
+    {
       "quarter": "2025-12-31",
       "estimate": 0.88,
       "actual": 0.91,
@@ -257,12 +263,6 @@
       "estimate": 0.77667,
       "actual": 0.81,
       "surprise_pct": 4.29
-    },
-    {
-      "quarter": "2026-06-30",
-      "estimate": 0.83,
-      "actual": 0.89,
-      "surprise_pct": 7.23
     },
     {
       "quarter": "2026-09-30",
@@ -354,12 +354,12 @@
       "date": "2026-03-02"
     },
     {
-      "name": "BURKE JOHN JOSEPH II",
-      "role": "Officer",
+      "name": "BUCKLEY ROBERT J",
+      "role": "Chief Financial Officer",
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 479,
+      "shares": 5426,
       "date": "2026-02-24"
     }
   ],

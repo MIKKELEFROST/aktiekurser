@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T23:05:23.642Z",
+  "updated_at": "2026-11-12T22:41:31.014Z",
   "source": "Yahoo Finance",
   "symbol": "VRTS",
   "summary": "Virtus Investment Partners, Inc. is a publicly owned investment manager. The firm primarily provides its services to individual and institutional clients. It launches separate client focused equity and fixed income portfolios. The firm launches equity, fixed income, and balanced mutual funds for its clients. It invests in the public equity, fixed income, and real estate markets. The firm also invests in exchange traded funds. It employs a multi manager approach for its products. The firm employs quantitative analysis to make its investments. It benchmarks the performance of its portfolios against the S&P 500 Index. The firm conducts in-house research to make its investments. Virtus Investment Partners, Inc. was founded in 1995 and is based in Hartford, Connecticut.",
@@ -10,7 +10,7 @@
   "next_earnings": "2027-02-05",
   "earnings_estimated": true,
   "earnings_call": "2026-11-09",
-  "eps_estimate": 5.1265,
+  "eps_estimate": 5.77725,
   "analysts": {
     "strong_buy": 1,
     "buy": 0,
@@ -19,10 +19,10 @@
     "strong_sell": 1,
     "total": 3
   },
-  "target_mean": 133,
+  "target_mean": 133.75,
   "target_high": 162,
   "target_low": 117,
-  "target_analysts": 3,
+  "target_analysts": 4,
   "statements": [
     {
       "year": "2022",
@@ -72,10 +72,10 @@
     }
   ],
   "growth": {
-    "q0": -0.21129999,
-    "q1": -0.29,
-    "y0": -0.1297,
-    "y1": -0.0584
+    "q0": -0.1364,
+    "q1": -0.2075,
+    "y0": -0.1287,
+    "y1": -0.083500005
   },
   "ratings": [
     {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.418,
-    "enterprise_value": 1275027968,
-    "ev_ebitda": 6.669,
-    "ev_revenue": 1.581,
+    "enterprise_value": 1263482496,
+    "ev_ebitda": 6.609,
+    "ev_revenue": 1.567,
     "float_shares": 6147802,
     "short_shares": 475067,
     "short_pct_float": 11.18,
@@ -247,6 +247,12 @@
   "inst_count": 327,
   "eps_history": [
     {
+      "quarter": "2025-09-30",
+      "estimate": 6.77225,
+      "actual": 6.69,
+      "surprise_pct": -1.21
+    },
+    {
       "quarter": "2025-12-31",
       "estimate": 6.5,
       "actual": 6.5,
@@ -257,12 +263,6 @@
       "estimate": 5.67167,
       "actual": 5.38,
       "surprise_pct": -5.14
-    },
-    {
-      "quarter": "2026-06-30",
-      "estimate": 6.0855,
-      "actual": 5.54,
-      "surprise_pct": -8.96
     },
     {
       "quarter": "2026-09-30",
@@ -298,24 +298,6 @@
       "value": 723820,
       "shares": 5000,
       "date": "2026-06-16"
-    },
-    {
-      "name": "MORRIS W. HOWARD JR.",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 137.93 per share.",
-      "value": 107447,
-      "shares": 779,
-      "date": "2026-05-20"
-    },
-    {
-      "name": "WEISENSEEL JOHN C",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 137.93 per share.",
-      "value": 107447,
-      "shares": 779,
-      "date": "2026-05-20"
     },
     {
       "name": "HOLT TIMOTHY A",
@@ -354,12 +336,30 @@
       "date": "2026-05-20"
     },
     {
-      "name": "MANDINACH BARRY M.",
-      "role": "Officer",
+      "name": "MORRIS W. HOWARD JR.",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 137.93 per share.",
+      "value": 107447,
+      "shares": 779,
+      "date": "2026-05-20"
+    },
+    {
+      "name": "WEISENSEEL JOHN C",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 137.93 per share.",
+      "value": 107447,
+      "shares": 779,
+      "date": "2026-05-20"
+    },
+    {
+      "name": "AYLWARD GEORGE ROBERT",
+      "role": "Chief Executive Officer",
       "kind": "other",
       "text": "Stock Award(Grant) at price 126.11 per share.",
-      "value": 390058,
-      "shares": 3093,
+      "value": 1600084,
+      "shares": 12688,
       "date": "2026-03-13"
     }
   ],

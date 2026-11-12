@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T23:05:23.538Z",
+  "updated_at": "2026-11-12T22:41:30.814Z",
   "source": "Yahoo Finance",
   "symbol": "TE",
   "summary": "T1 Energy Inc. provides energy solutions for solar modules and cells in the United States, Norway and internationally. It manufactures and sells photovoltaic solar modules. The company was formerly known as FREYR Battery, Inc. and changed its name to T1 Energy Inc. in February 2025. T1 Energy Inc. is headquartered in Austin, Texas.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-12",
   "earnings_estimated": false,
   "earnings_call": "2026-11-12",
-  "eps_estimate": -0.11944,
+  "eps_estimate": -0.07614,
   "analysts": {
     "strong_buy": 1,
     "buy": 5,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 210522000,
-      "earnings": -140822000
-    },
-    {
       "q": "4Q2025",
       "revenue": 358554000,
       "earnings": -190037000
@@ -69,15 +64,27 @@
       "q": "2Q2026",
       "revenue": 250128000,
       "earnings": -44526000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 196590000,
+      "earnings": -41555000
     }
   ],
   "growth": {
-    "q0": 0.66339993,
-    "q1": 0.8219,
+    "q0": 0.8219,
+    "q1": 0.85150003,
     "y0": 0.6735,
     "y1": 1.1468
   },
   "ratings": [
+    {
+      "date": "2026-11-12",
+      "firm": "BTIG",
+      "from": "Buy",
+      "to": "Buy",
+      "action": "main"
+    },
     {
       "date": "2026-10-23",
       "firm": "Needham",
@@ -140,13 +147,6 @@
       "from": "Buy",
       "to": "Buy",
       "action": "main"
-    },
-    {
-      "date": "2025-12-09",
-      "firm": "Alliance Global Partners",
-      "from": null,
-      "to": "Buy",
-      "action": "init"
     }
   ],
   "holders": [
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 2.491,
-    "enterprise_value": 1382558080,
-    "ev_ebitda": -14.7,
-    "ev_revenue": 1.387,
+    "enterprise_value": 1400229632,
+    "ev_ebitda": -14.888,
+    "ev_revenue": 1.405,
     "float_shares": 195094729,
     "short_shares": 79094334,
     "short_pct_float": 34.65,
@@ -253,22 +253,16 @@
       "surprise_pct": -136.53
     },
     {
-      "quarter": "2025-12-31",
-      "estimate": 0,
-      "actual": -0.4275,
-      "surprise_pct": 0
-    },
-    {
       "quarter": "2026-03-31",
       "estimate": -0.14333,
       "actual": -0.0963,
       "surprise_pct": 32.81
     },
     {
-      "quarter": "2026-06-30",
-      "estimate": -0.1,
-      "actual": -0.0986,
-      "surprise_pct": 1.4
+      "quarter": "2026-09-30",
+      "estimate": -0.11944,
+      "actual": -0.1964,
+      "surprise_pct": -64.43
     }
   ],
   "insiders": [
