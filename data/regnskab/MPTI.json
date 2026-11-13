@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T22:41:30.164Z",
+  "updated_at": "2026-11-13T22:07:34.927Z",
   "source": "Yahoo Finance",
   "symbol": "MPTI",
   "summary": "M-tron Industries, Inc. designs, manufactures, and markets frequency and spectrum control products to control the frequency and timing of signals in electronic circuits in the United States and internationally. The company provides radio frequency, microwave, and millimeter wave filters; cavity, crystal, ceramic, lumped element, and switched filters; high performance and high frequency oven-controlled crystal oscillators (OCXO), integrated phase-locked loops OCXOs, temperature-compensated crystal oscillators, voltage-controlled crystal oscillators, and low jitter and harsh environment oscillators; crystal resonators, integrated microwave assemblies, and solid-state power amplifier products. It serves commercial and military aerospace, defense, space, avionics, and industrial markets. The company was founded in 1965 and is headquartered in Orlando, Florida.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-12",
   "earnings_estimated": false,
   "earnings_call": "2026-11-12",
-  "eps_estimate": 0.585,
+  "eps_estimate": 0.615,
   "analysts": {
     "strong_buy": 0,
     "buy": 0,
@@ -51,16 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 13282000,
-      "earnings": 1560000
-    },
-    {
-      "q": "3Q2025",
-      "revenue": 14170000,
-      "earnings": 1832000
-    },
-    {
       "q": "4Q2025",
       "revenue": 14233000,
       "earnings": 3425000
@@ -69,11 +59,21 @@
       "q": "1Q2026",
       "revenue": 14686000,
       "earnings": 2388000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 15109000,
+      "earnings": 1870000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 15741000,
+      "earnings": 3049000
     }
   ],
   "growth": {
     "q0": null,
-    "q1": null,
+    "q1": -0.0448,
     "y0": -0.026700001,
     "y1": 0.14310001
   },
@@ -111,9 +111,9 @@
     {
       "name": "Gamco Investors, Inc ET AL",
       "kind": "institution",
-      "pct": 4.63,
-      "shares": 201280,
-      "date": "2026-06-30"
+      "pct": 4.62,
+      "shares": 201000,
+      "date": "2026-09-30"
     },
     {
       "name": "Vanguard Capital Management LLC",
@@ -184,12 +184,6 @@
   "inst_count": 168,
   "eps_history": [
     {
-      "quarter": "2025-09-30",
-      "estimate": 0.695,
-      "actual": 0.63,
-      "surprise_pct": -9.35
-    },
-    {
       "quarter": "2025-12-31",
       "estimate": 0.655,
       "actual": 0.99,
@@ -206,6 +200,12 @@
       "estimate": 0.59,
       "actual": 0.43,
       "surprise_pct": -27.12
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.585,
+      "actual": 0.7,
+      "surprise_pct": 19.66
     }
   ],
   "insiders": [

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T22:41:30.664Z",
+  "updated_at": "2026-11-13T22:07:35.466Z",
   "source": "Yahoo Finance",
   "symbol": "SID",
   "summary": "Companhia Siderúrgica Nacional, together with its subsidiaries, operates as an integrated steel producer in Brazil and internationally. It operates through five segments: Steel Industry, Mining, Logistics, Energy, and Cement. The Steel Segment offers produce and sells of flat and long steel. The Mining Segment engages in extraction, processing and marketing of iron ore, tin, limestone, and dolomite. The Logistics Segment supplies railways, port concessions, and road fleet. The Cement Segment produces and sells bagged and bulk cement, as well as aggregates, concrete, and other products. The Energy segment is involved in generation and commercialization of energy originating from renewables. It offers flat steel products, such as hot and cold rolled, galvanized, galvalume, pre-painted, and metal sheets products; coil, sheets, and derivatives; tiles and derivatives, pipes, and profiles; long steel products including, reinforcing bars, iron rods, and laminated profiles; food and chemical packaging solutions; and carbochemical products. It also provides steel cutting services; produces and sells cement; operates railways; and generates electric power from its hydroelectric power plants. In addition, the company offers steel solutions and distributions; packaging; logistics services; and certifications. Companhia Siderúrgica Nacional was founded in 1941 and is headquartered in São Paulo, Brazil.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-12",
   "earnings_estimated": false,
   "earnings_call": "2026-11-13",
-  "eps_estimate": -0.0115,
+  "eps_estimate": -0.0485,
   "analysts": {
     "strong_buy": 0,
     "buy": 0,
@@ -51,16 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 10693286000,
-      "earnings": -130369000
-    },
-    {
-      "q": "3Q2025",
-      "revenue": 11793868000,
-      "earnings": 76438000
-    },
-    {
       "q": "4Q2025",
       "revenue": 11403163000,
       "earnings": -721215000
@@ -69,11 +59,21 @@
       "q": "1Q2026",
       "revenue": 10603772000,
       "earnings": -555023000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 11306200000,
+      "earnings": -773058000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 10485800000,
+      "earnings": -1247288000
     }
   ],
   "growth": {
-    "q0": -2.0698,
-    "q1": 0.6896,
+    "q0": 0.6896,
+    "q1": null,
     "y0": 0.7911,
     "y1": 2.5207
   },
@@ -160,9 +160,9 @@
     {
       "name": "UBS Group AG",
       "kind": "institution",
-      "pct": 0.24,
-      "shares": 3149489,
-      "date": "2026-09-30"
+      "pct": 0.25,
+      "shares": 3340494,
+      "date": "2026-06-30"
     },
     {
       "name": "Dimensional Fund Advisors LP",
@@ -224,9 +224,9 @@
   },
   "extras": {
     "beta": 1.509,
-    "enterprise_value": 44445110272,
-    "ev_ebitda": 6.024,
-    "ev_revenue": 0.985,
+    "enterprise_value": 44369391616,
+    "ev_ebitda": 6.013,
+    "ev_revenue": 0.984,
     "float_shares": 624762641,
     "short_shares": 16521671,
     "short_pct_float": 2.14,
@@ -239,12 +239,6 @@
   "payout_ratio": 98.701,
   "inst_count": 82,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.11,
-      "actual": 0.01075,
-      "surprise_pct": -90.23
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.051,
@@ -262,6 +256,12 @@
       "estimate": -0.028,
       "actual": -0.11585,
       "surprise_pct": -313.75
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.0115,
+      "actual": -0.14969,
+      "surprise_pct": -1201.65
     }
   ],
   "insiders": [],

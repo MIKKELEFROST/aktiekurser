@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T22:41:30.614Z",
+  "updated_at": "2026-11-13T22:07:35.419Z",
   "source": "Yahoo Finance",
   "symbol": "SBH",
   "summary": "Sally Beauty Holdings, Inc. operates as a specialty retailer and distributor of professional beauty supplies. The company operates through two segments, Sally Beauty Supply and Beauty Systems Group. The Sally Beauty Supply segment offers beauty products, including hair color and care products, skin and nail care products, styling tools, and other beauty products for retail customers, salons, and salon professionals. This segment also provides products under Wella and L'Oreal brands, as well as Clairol, OPI, Wahl, and BaByliss Pro. The Beauty Systems Group segment offers professional beauty products, such as hair color and care products, skin and nail care products, styling tools, and other beauty items directly to salons, and licensed beauty professionals, and salon professionals through its professional-only stores, e-commerce platforms, and sales force, as well as through franchised stores under the Armstrong McCall store name. This segment also sells products under Paul Mitchell and Wella brands, including Matrix, Schwarzkopf, Kenra, Goldwell, Joico, Amika, and Moroccanoil. In addition, it operates company-operated stores, salon business consultants, digital platforms and franchised units in the United States, Puerto Rico, Canada, Mexico, Chile, the United Kingdom, Ireland, Belgium, France, the Netherlands, and Germany. Further, the company distributes its products through full-service/exclusive distributors and open-line distributors. Sally Beauty Holdings, Inc. was founded in 1964 and is headquartered in Plano, Texas.",
@@ -73,9 +73,9 @@
   ],
   "growth": {
     "q0": 0.090900004,
-    "q1": 0.0521,
-    "y0": 0.0837,
-    "y1": 0.0881
+    "q1": 0.0583,
+    "y0": 0.0904,
+    "y1": 0.089099996
   },
   "ratings": [
     {
@@ -186,13 +186,6 @@
       "date": "2026-09-30"
     },
     {
-      "name": "State Street Corporation",
-      "kind": "institution",
-      "pct": 4.89,
-      "shares": 4439992,
-      "date": "2026-06-30"
-    },
-    {
       "name": "Vanguard Capital Management LLC",
       "kind": "institution",
       "pct": 4.68,
@@ -207,34 +200,41 @@
       "date": "2026-09-30"
     },
     {
+      "name": "State Street Corporation",
+      "kind": "institution",
+      "pct": 4.68,
+      "shares": 4246189,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "American Century Companies Inc",
+      "kind": "institution",
+      "pct": 4.46,
+      "shares": 4044776,
+      "date": "2026-09-30"
+    },
+    {
       "name": "Fisher Asset Management, LLC",
       "kind": "institution",
       "pct": 3.88,
       "shares": 3523036,
-      "date": "2026-09-30"
-    },
-    {
-      "name": "FMR, LLC",
-      "kind": "institution",
-      "pct": 3.85,
-      "shares": 3494864,
       "date": "2026-09-30"
     }
   ],
   "insider_net": {
     "period": "6m",
     "buys": 1,
-    "sells": 1,
+    "sells": 2,
     "bought": 42771,
-    "sold": 42771,
-    "net_pct": 0
+    "sold": 92771,
+    "net_pct": -3.7
   },
   "extras": {
     "beta": 1.139,
-    "enterprise_value": 3100323328,
-    "ev_ebitda": 7.252,
-    "ev_revenue": 0.83,
-    "float_shares": 89289144,
+    "enterprise_value": 3026832128,
+    "ev_ebitda": 7.08,
+    "ev_revenue": 0.81,
+    "float_shares": 89243779,
     "short_shares": 18302666,
     "short_pct_float": 29.21,
     "short_ratio": 13.38,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 382,
+  "inst_count": 384,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -278,6 +278,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "GOSS JOHN HOWARD JR",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 20.00 per share.",
+      "value": 1000000,
+      "shares": 50000,
+      "date": "2026-11-10"
+    },
     {
       "name": "PLATZ MARLO MICHELLE CORMIER",
       "role": "Officer",
@@ -358,15 +367,6 @@
       "value": 244086,
       "shares": 15000,
       "date": "2025-12-01"
-    },
-    {
-      "name": "SPINKS MARK GREGORY",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 66007,
-      "date": "2025-11-14"
     }
   ],
   "dividends": [],

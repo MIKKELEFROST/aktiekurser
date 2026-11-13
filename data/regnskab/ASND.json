@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T22:41:28.935Z",
+  "updated_at": "2026-11-13T22:07:33.554Z",
   "source": "Yahoo Finance",
   "symbol": "ASND",
   "summary": "Ascendis Pharma A/S, operates as a biopharmaceutical company that focuses on developing TransCon-based therapies for unmet medical needs in Europe, the United States, and internationally. The company offers SKYTROFA for treating pediatric patients with growth hormone deficiency; and YORVIPATH, a once-daily subcutaneous injection for the treatment of adults with chronic hypoparathyroidism. It is also developing a pipeline of three independent endocrinology rare disease product candidates in clinical development, as well as focuses on advancing oncology therapeutic candidates. The company was incorporated in 2006 and is based in Hellerup, Denmark.",
@@ -10,7 +10,7 @@
   "next_earnings": null,
   "earnings_estimated": true,
   "earnings_call": null,
-  "eps_estimate": 1.12667,
+  "eps_estimate": 1.57,
   "analysts": {
     "strong_buy": 5,
     "buy": 15,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 21
   },
-  "target_mean": 301.81546,
-  "target_high": 339.01825,
-  "target_low": 258.56717,
+  "target_mean": 306.45804,
+  "target_high": 338.15836,
+  "target_low": 257.91135,
   "target_analysts": 21,
   "statements": [
     {
@@ -51,16 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 158045000,
-      "earnings": -38855000
-    },
-    {
-      "q": "3Q2025",
-      "revenue": 213634000,
-      "earnings": -60989000
-    },
-    {
       "q": "4Q2025",
       "revenue": 247500000,
       "earnings": -33562000
@@ -69,13 +59,23 @@
       "q": "1Q2026",
       "revenue": 246601000,
       "earnings": 629339000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 339285000,
+      "earnings": 206970000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 369657000,
+      "earnings": 73973000
     }
   ],
   "growth": {
     "q0": null,
-    "q1": null,
+    "q1": 4.6296,
     "y0": null,
-    "y1": -0.2393
+    "y1": -0.3643
   },
   "ratings": [
     {
@@ -151,31 +151,10 @@
   ],
   "holders": [
     {
-      "name": "Massachusetts Financial Services Co.",
-      "kind": "institution",
-      "pct": 0,
-      "shares": 1875301,
-      "date": "2026-06-30"
-    },
-    {
       "name": "Blackrock Inc.",
       "kind": "institution",
       "pct": 0,
       "shares": 2211833,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "Westfield Capital Management Co LP",
-      "kind": "institution",
-      "pct": 0,
-      "shares": 4798267,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "Capital International Investors",
-      "kind": "institution",
-      "pct": 0,
-      "shares": 1988614,
       "date": "2026-06-30"
     },
     {
@@ -219,24 +198,45 @@
       "pct": 0,
       "shares": 3445493,
       "date": "2026-09-30"
+    },
+    {
+      "name": "Westfield Capital Management Co LP",
+      "kind": "institution",
+      "pct": 0,
+      "shares": 5125027,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Massachusetts Financial Services Co.",
+      "kind": "institution",
+      "pct": 0,
+      "shares": 1896095,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Wellington Management Group, LLP",
+      "kind": "institution",
+      "pct": 0,
+      "shares": 1548636,
+      "date": "2026-06-30"
     }
   ],
   "insider_net": {
     "period": "6m",
     "buys": 6,
-    "sells": 3,
+    "sells": 2,
     "bought": 6250,
-    "sold": 22696,
-    "net_pct": -3.1
+    "sold": 3236,
+    "net_pct": 0.6
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 16665582592,
-    "ev_ebitda": 63.258,
-    "ev_revenue": 15.917,
-    "float_shares": 65641104,
+    "enterprise_value": 16966599680,
+    "ev_ebitda": 44.05,
+    "ev_revenue": 14.103,
+    "float_shares": 65430754,
     "short_shares": 2997710,
-    "short_pct_float": 5.39,
+    "short_pct_float": 5.41,
     "short_ratio": 4.24,
     "last_split": null,
     "last_split_date": null
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 487,
+  "inst_count": 488,
   "eps_history": [
     {
       "quarter": "2026-03-31",
@@ -257,6 +257,12 @@
       "estimate": 0.76667,
       "actual": 0.9,
       "surprise_pct": 17.39
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.15,
+      "actual": 1.71,
+      "surprise_pct": 48.7
     }
   ],
   "insiders": [

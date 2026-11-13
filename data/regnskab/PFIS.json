@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T22:41:30.422Z",
+  "updated_at": "2026-11-13T22:07:35.221Z",
   "source": "Yahoo Finance",
   "symbol": "PFIS",
   "summary": "Peoples Financial Services Corp. operates as the bank holding company for Peoples Security Bank and Trust Company that provides commercial and retail banking services in Pennsylvania, New Jersey and New York. The company accepts deposits through money market, negotiable order of withdrawal, savings, individual retirement, demand deposit, and certificates of deposit accounts. It also provides residential real estate, automobile, manufactured housing, personal, and home equity loans; and commercial real estate and working capital, as well as loans for equipment and other commercial needs. In addition, the company offers fiduciary and investment services, including investment management, IRA trustee, estate administration, living and life insurance trust, trustee under will, guardianship, custodial/IRA custodial, and corporate trust services, as well as pension and profit-sharing plans. Further, it provides wealth management products and services comprising investment portfolio management, estate and business succession planning, annuities, insurance, retirement plan, and tax planning, as well as education funding strategies; and securities, brokerage, and investor services. Additionally, the company offers remote deposit capture, automatic clearing house transaction, cash management, automated teller machine, point of sale transaction, safe deposit box, night depository, direct deposit, and official check services. It serves business, non-profit, governmental, municipal agency, and professional customers, as well as retail customers. The company was founded in 1905 and is headquartered in Moosic, Pennsylvania.",
@@ -137,6 +137,20 @@
       "date": "2026-06-30"
     },
     {
+      "name": "State Street Corporation",
+      "kind": "institution",
+      "pct": 2.8,
+      "shares": 280027,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "American Century Companies Inc",
+      "kind": "institution",
+      "pct": 2.77,
+      "shares": 277435,
+      "date": "2026-09-30"
+    },
+    {
       "name": "iShares Trust-iShares Russell 2000 ETF",
       "kind": "fond",
       "pct": 2.66,
@@ -158,20 +172,6 @@
       "date": "2026-09-30"
     },
     {
-      "name": "State Street Corporation",
-      "kind": "institution",
-      "pct": 2.12,
-      "shares": 212476,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "American Century Companies Inc",
-      "kind": "institution",
-      "pct": 2.03,
-      "shares": 202754,
-      "date": "2026-06-30"
-    },
-    {
       "name": "VANGUARD INDEX FUNDS-Vanguard Extended Market Index Fund",
       "kind": "fond",
       "pct": 1.07,
@@ -182,17 +182,17 @@
   "insider_net": {
     "period": "6m",
     "buys": 4,
-    "sells": 2,
+    "sells": 3,
     "bought": 2891,
-    "sold": 6484,
-    "net_pct": -0.4
+    "sold": 18441,
+    "net_pct": -1.9
   },
   "extras": {
     "beta": 0.757,
-    "enterprise_value": 718646912,
+    "enterprise_value": 722751936,
     "ev_ebitda": null,
-    "ev_revenue": 3.642,
-    "float_shares": 9170689,
+    "ev_revenue": 3.663,
+    "float_shares": 9174694,
     "short_shares": 330167,
     "short_pct_float": 3.59,
     "short_ratio": 5.95,
@@ -202,7 +202,7 @@
   "ex_dividend": "2026-11-30",
   "dividend_date": null,
   "payout_ratio": 0.4127,
-  "inst_count": 180,
+  "inst_count": 181,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -230,6 +230,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "NICHOLAS JAMES B",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 72.36 per share.",
+      "value": 865230,
+      "shares": 11957,
+      "date": "2026-11-10"
+    },
     {
       "name": "NICHOLAS JAMES B",
       "role": "Director",
@@ -309,15 +318,6 @@
       "text": "Conversion of Exercise of derivative security at price 51.80 per share.",
       "value": 12743,
       "shares": 246,
-      "date": "2026-03-11"
-    },
-    {
-      "name": "KOPLIN NEAL D",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 323,
       "date": "2026-03-11"
     }
   ],

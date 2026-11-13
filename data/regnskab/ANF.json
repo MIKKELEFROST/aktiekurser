@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T22:41:28.877Z",
+  "updated_at": "2026-11-13T22:07:33.498Z",
   "source": "Yahoo Finance",
   "symbol": "ANF",
   "summary": "Abercrombie & Fitch Co., through its subsidiaries, operates as an omnichannel retailer in the Americas, Europe, the Middle East, Africa, and the Asia-Pacific. It offers an assortment of apparel, personal care products, and accessories for men, women, and kids under the Abercrombie & Fitch, abercrombie kids, Your Personal Best, Hollister, and Gilly Hicks brands. The company sells products through its stores, various wholesale, franchise, and licensing arrangements, as well as e-commerce platforms. Abercrombie & Fitch Co. was founded in 1892 and is headquartered in New Albany, Ohio.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-24",
   "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": 3.10192,
+  "eps_estimate": 3.09359,
   "analysts": {
     "strong_buy": 1,
     "buy": 8,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 15
   },
-  "target_mean": 169,
+  "target_mean": 170.45454,
   "target_high": 200,
-  "target_low": 134,
+  "target_low": 150,
   "target_analysts": 11,
   "statements": [
     {
@@ -72,10 +72,10 @@
     }
   ],
   "growth": {
-    "q0": 0.31440002,
-    "q1": 0.319,
-    "y0": 0.3671,
-    "y1": -0.038900003
+    "q0": 0.3108,
+    "q1": 0.3211,
+    "y0": 0.3669,
+    "y1": -0.037
   },
   "ratings": [
     {
@@ -158,6 +158,13 @@
       "date": "2026-06-30"
     },
     {
+      "name": "FMR, LLC",
+      "kind": "institution",
+      "pct": 8.57,
+      "shares": 3637893,
+      "date": "2026-06-30"
+    },
+    {
       "name": "Vanguard Portfolio Management LLC",
       "kind": "institution",
       "pct": 5.78,
@@ -212,13 +219,6 @@
       "pct": 3.85,
       "shares": 1632944,
       "date": "2026-06-30"
-    },
-    {
-      "name": "iShares Trust-iShares Core S&P Mid-Cap ETF",
-      "kind": "fond",
-      "pct": 3.73,
-      "shares": 1582932,
-      "date": "2026-09-30"
     }
   ],
   "insider_net": {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.983,
-    "enterprise_value": 7111212544,
-    "ev_ebitda": 7.759,
-    "ev_revenue": 1.331,
+    "enterprise_value": 7050531328,
+    "ev_ebitda": 7.692,
+    "ev_revenue": 1.32,
     "float_shares": 39054903,
     "short_shares": 4721249,
     "short_pct_float": 15.45,
@@ -244,7 +244,7 @@
   "ex_dividend": "2020-03-05",
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 639,
+  "inst_count": 649,
   "eps_history": [
     {
       "quarter": "2025-10-31",
@@ -282,15 +282,6 @@
       "date": "2026-09-04"
     },
     {
-      "name": "HENCHEL GREGORY J",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 146.65 per share.",
-      "value": 4399500,
-      "shares": 30000,
-      "date": "2026-08-28"
-    },
-    {
       "name": "ROBINSON KENNETH B.",
       "role": "Director",
       "kind": "sell",
@@ -306,6 +297,15 @@
       "text": "Sale at price 147.50 per share.",
       "value": 737500,
       "shares": 5000,
+      "date": "2026-08-28"
+    },
+    {
+      "name": "HENCHEL GREGORY J",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 146.65 per share.",
+      "value": 4399500,
+      "shares": 30000,
       "date": "2026-08-28"
     },
     {
@@ -354,12 +354,12 @@
       "date": "2026-07-16"
     },
     {
-      "name": "HOROWITZ FRAN",
-      "role": "Chief Executive Officer",
+      "name": "ROBINSON KENNETH B.",
+      "role": "Director",
       "kind": "other",
-      "text": "Stock Gift at price 0.00 per share.",
-      "value": 0,
-      "shares": 25000,
+      "text": null,
+      "value": null,
+      "shares": 2089,
       "date": "2026-06-03"
     }
   ],

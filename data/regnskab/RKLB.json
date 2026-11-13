@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T22:41:30.548Z",
+  "updated_at": "2026-11-13T22:07:35.356Z",
   "source": "Yahoo Finance",
   "symbol": "RKLB",
   "summary": "Rocket Lab Corporation, a space company, provides launch services and space systems solutions in the United States, Canada, Japan, and internationally. The company operates through launch services and space systems segments. The company provides launch services, spacecraft design services, spacecraft components, spacecraft manufacturing, optical systems, and other spacecraft and on-orbit management solutions and constellation management services, as well as designs and manufactures small and medium-class rockets and develops flight and ground software. It also designs, manufactures, and sells Electron, an orbital small launch vehicle for small spacecraft launch services, as well as develops Neutron launch vehicles for large constellation deployments, interplanetary missions, and potentially for human spaceflight. In addition, the company designs and manufactures a range of components and subsystems for its launch vehicles and spacecraft. It serves commercial, aerospace prime contractors, and government customers. Rocket Lab Corporation was formerly known as Rocket Lab USA, Inc. and changed its name to Rocket Lab Corporation in August 2021. The company was founded in 2006 and is headquartered in Long Beach, California.",
@@ -13,14 +13,14 @@
   "eps_estimate": -0.0159,
   "analysts": {
     "strong_buy": 5,
-    "buy": 13,
+    "buy": 12,
     "hold": 4,
     "sell": 0,
     "strong_sell": 0,
-    "total": 22
+    "total": 21
   },
-  "target_mean": 96.6,
-  "target_high": 150,
+  "target_mean": 93.1,
+  "target_high": 127,
   "target_low": 58,
   "target_analysts": 20,
   "statements": [
@@ -73,9 +73,9 @@
   ],
   "growth": {
     "q0": 0.7061,
-    "q1": 1.2194,
-    "y0": 1.1155,
-    "y1": 1.9265
+    "q1": 1.3117999,
+    "y0": 1.1395,
+    "y1": 1.4614999
   },
   "ratings": [
     {
@@ -181,23 +181,16 @@
     {
       "name": "Invesco Ltd.",
       "kind": "institution",
-      "pct": 2.9,
-      "shares": 18343547,
-      "date": "2026-06-30"
+      "pct": 2.78,
+      "shares": 17579001,
+      "date": "2026-09-30"
     },
     {
       "name": "State Street Corporation",
       "kind": "institution",
-      "pct": 2.29,
-      "shares": 14442067,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "JPMORGAN CHASE & CO",
-      "kind": "institution",
-      "pct": 2.18,
-      "shares": 13805113,
-      "date": "2026-06-30"
+      "pct": 2.54,
+      "shares": 16077984,
+      "date": "2026-09-30"
     },
     {
       "name": "VANGUARD INDEX FUNDS-Vanguard Mid-Cap Index Fund",
@@ -219,6 +212,13 @@
       "pct": 1.73,
       "shares": 10919528,
       "date": "2026-09-30"
+    },
+    {
+      "name": "BAILLIE GIFFORD & CO",
+      "kind": "institution",
+      "pct": 1.65,
+      "shares": 10451797,
+      "date": "2026-09-30"
     }
   ],
   "insider_net": {
@@ -231,10 +231,10 @@
   },
   "extras": {
     "beta": 3.176,
-    "enterprise_value": 37320515584,
-    "ev_ebitda": -217.069,
-    "ev_revenue": 42.318,
-    "float_shares": 588177624,
+    "enterprise_value": 36005912576,
+    "ev_ebitda": -209.423,
+    "ev_revenue": 40.828,
+    "float_shares": 590503461,
     "short_shares": 46410138,
     "short_pct_float": 7.3,
     "short_ratio": 2.3,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 1465,
+  "inst_count": 1463,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -267,6 +267,15 @@
   ],
   "insiders": [
     {
+      "name": "ARMAGNO NINA M.",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 51.31 - 55.01 per share.",
+      "value": 576647,
+      "shares": 10926,
+      "date": "2026-11-02"
+    },
+    {
       "name": "SPICE ADAM C",
       "role": "Chief Financial Officer",
       "kind": "sell",
@@ -282,15 +291,6 @@
       "text": "Conversion of Exercise of derivative security at price 1.09 per share.",
       "value": 152771,
       "shares": 140157,
-      "date": "2026-11-02"
-    },
-    {
-      "name": "ARMAGNO NINA M.",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 51.31 - 55.01 per share.",
-      "value": 576647,
-      "shares": 10926,
       "date": "2026-11-02"
     },
     {
@@ -339,21 +339,21 @@
       "date": "2026-08-27"
     },
     {
-      "name": "SPICE ADAM C",
-      "role": "Chief Financial Officer",
-      "kind": "sell",
-      "text": "Sale at price 69.53 - 71.17 per share.",
-      "value": 673790,
-      "shares": 9677,
-      "date": "2026-08-24"
-    },
-    {
       "name": "KAMPANI ARJUN E",
       "role": "General Counsel",
       "kind": "sell",
       "text": "Sale at price 69.53 - 71.17 per share.",
       "value": 539896,
       "shares": 7754,
+      "date": "2026-08-24"
+    },
+    {
+      "name": "RICUPATI AGOSTINO",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 69.53 - 71.17 per share.",
+      "value": 46581,
+      "shares": 669,
       "date": "2026-08-24"
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T22:41:30.008Z",
+  "updated_at": "2026-11-13T22:07:34.758Z",
   "source": "Yahoo Finance",
   "symbol": "LGL",
   "summary": "The LGL Group, Inc., together with its subsidiaries, engages in the design, manufacture, and marketing of time and frequency instruments in the United States and internationally. It operates in two segments, Electronic Instruments and Merchant Investment. The company offers frequency and time reference standards; radio frequency (RF), digital, and optical time code distribution amplifiers; network time protocol (NTP) servers; and redundancy auto switches. It also provides time and frequency instrumentation, such as frequency standards, global positioning system/ global navigation system frequency, time standards, and time code generators; and ancillary products. Further, the company engages in the merchant investment activities. Its products are used in computer networking, satellite ground stations, electric utilities, metrology, broadcasting, metrology, and telecommunication systems. The company was formerly known as Lynch Corporation. The LGL Group, Inc. was founded in 1917 and is based in Orlando, Florida.",
@@ -10,7 +10,7 @@
   "next_earnings": null,
   "earnings_estimated": true,
   "earnings_call": null,
-  "eps_estimate": -0.07,
+  "eps_estimate": 0.21,
   "analysts": null,
   "target_mean": 16,
   "target_high": 16,
@@ -44,11 +44,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2023",
-      "revenue": 403000,
-      "earnings": -130000
-    },
-    {
       "q": "3Q2023",
       "revenue": 438000,
       "earnings": 108000
@@ -62,11 +57,16 @@
       "q": "2Q2026",
       "revenue": 1153000,
       "earnings": -353000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1464000,
+      "earnings": -45000
     }
   ],
   "growth": {
     "q0": null,
-    "q1": null,
+    "q1": 14.986,
     "y0": null,
     "y1": 2.1111
   },
@@ -75,9 +75,9 @@
     {
       "name": "Gamco Investors, Inc ET AL",
       "kind": "institution",
-      "pct": 5.32,
-      "shares": 670781,
-      "date": "2026-06-30"
+      "pct": 10.64,
+      "shares": 1341562,
+      "date": "2026-09-30"
     },
     {
       "name": "Bard Associates Inc.",
@@ -94,11 +94,18 @@
       "date": "2026-06-30"
     },
     {
+      "name": "McIntyre Freedman & Flynn Investment Advisers Inc.",
+      "kind": "institution",
+      "pct": 1.48,
+      "shares": 186264,
+      "date": "2026-09-30"
+    },
+    {
       "name": "Renaissance Technologies, LLC",
       "kind": "institution",
-      "pct": 1.34,
-      "shares": 169494,
-      "date": "2026-06-30"
+      "pct": 1.32,
+      "shares": 165894,
+      "date": "2026-09-30"
     },
     {
       "name": "Dimensional Fund Advisors LP",
@@ -106,13 +113,6 @@
       "pct": 0.8,
       "shares": 101146,
       "date": "2026-09-30"
-    },
-    {
-      "name": "McIntyre Freedman & Flynn Investment Advisers Inc.",
-      "kind": "institution",
-      "pct": 0.69,
-      "shares": 87500,
-      "date": "2026-06-30"
     },
     {
       "name": "Caldwell Sutter Capital, Inc.",
@@ -153,9 +153,9 @@
   },
   "extras": {
     "beta": 0.137,
-    "enterprise_value": 44165356,
-    "ev_ebitda": -45.438,
-    "ev_revenue": 9.675,
+    "enterprise_value": 45288088,
+    "ev_ebitda": -46.593,
+    "ev_revenue": 9.921,
     "float_shares": 5444891,
     "short_shares": 20373,
     "short_pct_float": 0.2,
@@ -166,16 +166,31 @@
   "ex_dividend": "1989-01-03",
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 27,
+  "inst_count": 28,
   "eps_history": [
     {
       "quarter": "2026-06-30",
       "estimate": 0.01,
       "actual": -0.06,
       "surprise_pct": -700
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.07,
+      "actual": 0,
+      "surprise_pct": 100
     }
   ],
   "insiders": [
+    {
+      "name": "HUVANE PATRICK",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 6.90 per share.",
+      "value": 66385,
+      "shares": 9621,
+      "date": "2026-07-15"
+    },
     {
       "name": "LAMB JASON D",
       "role": "Chief Executive Officer",
@@ -186,13 +201,13 @@
       "date": "2026-07-15"
     },
     {
-      "name": "HUVANE PATRICK",
-      "role": "Officer",
+      "name": "KALHA MANJIT",
+      "role": "Director",
       "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 6.90 per share.",
-      "value": 66385,
-      "shares": 9621,
-      "date": "2026-07-15"
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 2067,
+      "date": "2026-03-26"
     },
     {
       "name": "DEREMER DARLENE T",
@@ -240,16 +255,7 @@
       "date": "2026-03-26"
     },
     {
-      "name": "KALHA MANJIT",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 2067,
-      "date": "2026-03-26"
-    },
-    {
-      "name": "BILES LINDA M",
+      "name": "HUVANE PATRICK",
       "role": "Officer",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",
@@ -258,7 +264,7 @@
       "date": "2026-01-16"
     },
     {
-      "name": "HAYDEN TIFFANY RENEE",
+      "name": "BILES LINDA M",
       "role": "Officer",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

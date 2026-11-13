@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T22:14:59.680Z",
+  "updated_at": "2026-11-13T22:07:35.017Z",
   "source": "Yahoo Finance",
   "symbol": "NIQ",
   "summary": null,
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-12",
   "earnings_estimated": false,
   "earnings_call": "2026-11-12",
-  "eps_estimate": 0.23388,
+  "eps_estimate": 0.45182,
   "analysts": {
     "strong_buy": 5,
     "buy": 7,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 14
   },
-  "target_mean": 20.69231,
+  "target_mean": 21.34615,
   "target_high": 25,
   "target_low": 16,
   "target_analysts": 13,
@@ -39,11 +39,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 1052600000,
-      "earnings": -198600000
-    },
-    {
       "q": "4Q2025",
       "revenue": 1139100000,
       "earnings": -32200000
@@ -57,13 +52,18 @@
       "q": "2Q2026",
       "revenue": 1124200000,
       "earnings": -30500000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1119100000,
+      "earnings": 35800000
     }
   ],
   "growth": {
-    "q0": 6.7959995,
-    "q1": 1.2382,
-    "y0": 3.7491,
-    "y1": 0.1822
+    "q0": 1.2591001,
+    "q1": 0.55009997,
+    "y0": 4.0627,
+    "y1": 0.1236
   },
   "ratings": [
     {
@@ -153,17 +153,24 @@
       "date": "2026-06-30"
     },
     {
-      "name": "JNE Partners, LLP",
+      "name": "American Century Companies Inc",
       "kind": "institution",
-      "pct": 1.26,
-      "shares": 3729938,
-      "date": "2026-06-30"
+      "pct": 1.4,
+      "shares": 4131823,
+      "date": "2026-09-30"
     },
     {
       "name": "DnB Asset Management AS",
       "kind": "institution",
-      "pct": 1.24,
-      "shares": 3661841,
+      "pct": 1.27,
+      "shares": 3753672,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "JNE Partners, LLP",
+      "kind": "institution",
+      "pct": 1.26,
+      "shares": 3729938,
       "date": "2026-06-30"
     },
     {
@@ -200,13 +207,6 @@
       "pct": 0.95,
       "shares": 2788887,
       "date": "2026-06-30"
-    },
-    {
-      "name": "Alyeska Investment Group, L.p.",
-      "kind": "institution",
-      "pct": 0.94,
-      "shares": 2786499,
-      "date": "2026-06-30"
     }
   ],
   "insider_net": null,
@@ -228,12 +228,6 @@
   "inst_count": null,
   "eps_history": [
     {
-      "quarter": "2025-09-30",
-      "estimate": 0.0678,
-      "actual": 0.03,
-      "surprise_pct": -55.75
-    },
-    {
       "quarter": "2025-12-31",
       "estimate": 0.28943,
       "actual": 0.2,
@@ -250,6 +244,12 @@
       "estimate": 0.20279,
       "actual": 0.27,
       "surprise_pct": 33.14
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.23927,
+      "actual": 0.3,
+      "surprise_pct": 25.38
     }
   ],
   "insiders": [

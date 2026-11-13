@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-11-12T22:41:30.933Z",
+  "updated_at": "2026-11-13T22:07:35.716Z",
   "source": "Yahoo Finance",
   "symbol": "UGP",
   "summary": "Ultrapar Participações S.A., through its subsidiaries, operates in the energy, mobility, and logistics infrastructure sectors in Brazil, the rest of Europe, the United States, Canada, other Latin American countries, Oceania, and internationally. It operates through Ultragaz, Ipiranga, Ultracargo, and Hidrovias segments. The company distributes and sells oil-related products, biofuels, gasoline, ethanol, diesel, fuel oil, kerosene, natural gas for vehicles, and additive fuels under the Ipimax brand to carriers, resellers, and retailers; operates service stations under the Ipiranga brand and convenience stores under the AmPm brand; and produces and sells lubricants under the ICONIC brand. It also engages in the distribution of bulk and bottled liquefied petroleum gas for the residential, condominium, trade, services, industrial, and agribusiness sectors; operation of a natural gas pipeline network; and provision of renewable electricity for businesses and households, as well as compressed natural gas and biomethane for corporate clients. In addition, the company operates liquid bulk storage terminals in logistics centers; waterway and multimodal infrastructure; and port operations. Further, the company offers logistics solutions for handling grains, ores, and fertilizers; automotive services through Jet Oil units; and loyalty programs under the Km de Vantagens (KMV) brand. It also exports its products and services. Ultrapar Participações S.A. was founded in 1937 and is headquartered in São Paulo, Brazil.",
   "industry": "Oil & Gas Refining & Marketing",
   "website": "https://www.ultra.com.br",
-  "employees": 11557,
+  "employees": null,
   "ceo": "Mr. Rodrigo  de Almeida Pizzinatto",
   "next_earnings": "2026-11-11",
   "earnings_estimated": false,
   "earnings_call": "2026-11-12",
-  "eps_estimate": 0.159,
+  "eps_estimate": 0.234,
   "analysts": {
     "strong_buy": 2,
     "buy": 3,
@@ -72,8 +72,8 @@
     }
   ],
   "growth": {
-    "q0": 1.1342,
-    "q1": null,
+    "q0": null,
+    "q1": 1.1342,
     "y0": 2.1022,
     "y1": -0.2585
   },
@@ -181,9 +181,9 @@
     {
       "name": "American Century Companies Inc",
       "kind": "institution",
-      "pct": 0.36,
-      "shares": 4044297,
-      "date": "2026-06-30"
+      "pct": 0.41,
+      "shares": 4533621,
+      "date": "2026-09-30"
     },
     {
       "name": "American Century ETF Trust-Avantis Emerging Markets Equity ETF",
@@ -202,16 +202,9 @@
     {
       "name": "Renaissance Technologies, LLC",
       "kind": "institution",
-      "pct": 0.2,
-      "shares": 2237585,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "Jane Street Group, LLC",
-      "kind": "institution",
-      "pct": 0.18,
-      "shares": 1954795,
-      "date": "2026-06-30"
+      "pct": 0.21,
+      "shares": 2299287,
+      "date": "2026-09-30"
     },
     {
       "name": "Arrowstreet Capital, Limited Partnership",
@@ -219,6 +212,13 @@
       "pct": 0.16,
       "shares": 1779378,
       "date": "2026-06-30"
+    },
+    {
+      "name": "UBS Group AG",
+      "kind": "institution",
+      "pct": 0.13,
+      "shares": 1455162,
+      "date": "2026-09-30"
     }
   ],
   "insider_net": {
@@ -230,11 +230,11 @@
     "net_pct": null
   },
   "extras": {
-    "beta": 0.368,
-    "enterprise_value": 18192990208,
-    "ev_ebitda": 1.992,
-    "ev_revenue": 0.119,
-    "float_shares": 633519132,
+    "beta": null,
+    "enterprise_value": 21730848768,
+    "ev_ebitda": 1.815,
+    "ev_revenue": 0.135,
+    "float_shares": 630685411,
     "short_shares": 7217532,
     "short_pct_float": 0.93,
     "short_ratio": 1.44,
@@ -244,8 +244,14 @@
   "ex_dividend": "2026-08-26",
   "dividend_date": null,
   "payout_ratio": 0.4078,
-  "inst_count": 256,
+  "inst_count": 261,
   "eps_history": [
+    {
+      "quarter": "2025-09-30",
+      "estimate": 0.107,
+      "actual": 0.12274,
+      "surprise_pct": 14.71
+    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.07,
@@ -263,15 +269,19 @@
       "estimate": 0.2375,
       "actual": 0.29687,
       "surprise_pct": 25
-    },
-    {
-      "quarter": "2026-09-30",
-      "estimate": 0.234,
-      "actual": 0.25724,
-      "surprise_pct": 9.93
     }
   ],
-  "insiders": [],
+  "insiders": [
+    {
+      "name": "PIZZINATTO RODRIGO DE ALMEIDA",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 134638,
+      "date": "2026-04-20"
+    }
+  ],
   "dividends": [
     {
       "date": "2005-08-11",

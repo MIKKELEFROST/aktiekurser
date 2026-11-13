@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T22:41:29.383Z",
+  "updated_at": "2026-11-13T22:07:34.044Z",
   "source": "Yahoo Finance",
   "symbol": "DMRC",
   "summary": "Digimarc Corporation provides digital identity and authentication solutions in the United States and internationally. The company offers software subscriptions and software development services. It also provides physical digimarc solutions for anti-counterfeiting, counterfeiting deterrence, product swap prevention, recycling, and secure gift cards; and digital digimarc solutions for internal compliance, leak detection, piracy prevention, provenance and authenticity, and royalty monitoring. The company's commercial solutions run on the Illuminate platform, a software as a service cloud-based platform for digital connectivity. The company serves various industries in retail, CPG, media and technology, pharmaceutical, health and wellness, apparel, and automotive industries, as well as central banks and other government customers. The company was formerly known as Digimarc Parent, Inc. and changed its name to Digimarc Corporation in May 2026. The company was incorporated in 2008 and is headquartered in Beaverton, Oregon.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-12",
   "earnings_estimated": false,
   "earnings_call": "2026-11-12",
-  "eps_estimate": -0.13,
+  "eps_estimate": -0.125,
   "analysts": {
     "strong_buy": 1,
     "buy": 0,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 8010000,
-      "earnings": -8220000
-    },
-    {
       "q": "3Q2025",
       "revenue": 7627000,
       "earnings": -8152000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 7388000,
       "earnings": -12114000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 6446000,
+      "earnings": -8089000
     }
   ],
   "growth": {
-    "q0": -0.3,
-    "q1": -3.5,
+    "q0": -3.5,
+    "q1": null,
     "y0": 0.2768,
     "y1": 0.1358
   },
@@ -200,13 +200,6 @@
       "date": "2026-06-30"
     },
     {
-      "name": "Private Advisor Group, LLC",
-      "kind": "institution",
-      "pct": 2.53,
-      "shares": 566023,
-      "date": "2026-09-30"
-    },
-    {
       "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
       "kind": "fond",
       "pct": 2.27,
@@ -218,6 +211,13 @@
       "kind": "institution",
       "pct": 1.99,
       "shares": 446750,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Vanguard Portfolio Management LLC",
+      "kind": "institution",
+      "pct": 1.96,
+      "shares": 438768,
       "date": "2026-06-30"
     }
   ],
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 2.158,
-    "enterprise_value": 167859200,
-    "ev_ebitda": -6.949,
-    "ev_revenue": 5.329,
+    "enterprise_value": 162271376,
+    "ev_ebitda": -6.717,
+    "ev_revenue": 5.151,
     "float_shares": 16410569,
     "short_shares": 2489534,
     "short_pct_float": 26.34,
@@ -244,14 +244,8 @@
   "ex_dividend": "2014-05-01",
   "dividend_date": null,
   "payout_ratio": 1.913,
-  "inst_count": 141,
+  "inst_count": 137,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.06,
-      "actual": -0.1,
-      "surprise_pct": -66.67
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.015,
@@ -263,6 +257,12 @@
       "estimate": -0.095,
       "actual": -0.08,
       "surprise_pct": 15.79
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.135,
+      "actual": -0.13,
+      "surprise_pct": 3.7
     }
   ],
   "insiders": [
@@ -303,6 +303,15 @@
       "date": "2026-10-01"
     },
     {
+      "name": "BECK CHARLES",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 7.53 per share.",
+      "value": 19706,
+      "shares": 2617,
+      "date": "2026-08-14"
+    },
+    {
       "name": "RODRIGUEZ TONY",
       "role": "Chief Technology Officer",
       "kind": "other",
@@ -323,15 +332,6 @@
     {
       "name": "QUINN CARLE ANN",
       "role": "Chief Operating Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 7.53 per share.",
-      "value": 19706,
-      "shares": 2617,
-      "date": "2026-08-14"
-    },
-    {
-      "name": "BECK CHARLES",
-      "role": "Chief Financial Officer",
       "kind": "other",
       "text": "Stock Award(Grant) at price 7.53 per share.",
       "value": 19706,

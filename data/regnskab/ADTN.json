@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T22:41:28.782Z",
+  "updated_at": "2026-11-13T22:07:33.392Z",
   "source": "Yahoo Finance",
   "symbol": "ADTN",
   "summary": "ADTRAN Holdings, Inc. provides networking and communications platforms, software, systems, and services in the United States, Germany, the United Kingdom, and internationally. It operates through two segments, Network Solutions, and Services & Support. It offers residential gateways; ethernet passive optical network ONUs; gigabit passive optical network/XGS-PON ONTs; routers, and switches; edge cloud; carrier ethernet network interface devices; Optical Line Terminals; Packet Aggregation, Copper Access, and Oscilloquartz; optical transport and engine solutions; infrastructure monitoring solution; and training, professional, software, and managed services. The company provides various software, such as Mosaic One SaaS, n-Command, Procloud, MCP, AOE, and ACI-E. It serves large, medium, and small service providers; alternative service providers, such as utilities, municipalities and fiber overbuilders; cable/MSOs; and SMBs and distributed enterprises. ADTRAN Holdings, Inc. was incorporated in 1985 and is headquartered in Huntsville, Alabama.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": true,
   "earnings_call": "2026-11-03",
-  "eps_estimate": 0.02167,
+  "eps_estimate": 0.035,
   "analysts": {
     "strong_buy": 1,
     "buy": 5,
@@ -72,8 +72,8 @@
     }
   ],
   "growth": {
-    "q0": -0.8646,
-    "q1": -0.5476,
+    "q0": -0.78129995,
+    "q1": -0.6042,
     "y0": 0.26709998,
     "y1": 0.5441
   },
@@ -186,6 +186,13 @@
       "date": "2026-06-30"
     },
     {
+      "name": "UBS Group AG",
+      "kind": "institution",
+      "pct": 3.61,
+      "shares": 2940724,
+      "date": "2026-06-30"
+    },
+    {
       "name": "Two Sigma Investments, LP",
       "kind": "institution",
       "pct": 3.55,
@@ -212,28 +219,21 @@
       "pct": 3.21,
       "shares": 2619389,
       "date": "2026-06-30"
-    },
-    {
-      "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
-      "kind": "fond",
-      "pct": 3.15,
-      "shares": 2569422,
-      "date": "2026-06-30"
     }
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 9,
+    "buys": 10,
     "sells": 1,
-    "bought": 461070,
+    "bought": 501070,
     "sold": 9332,
-    "net_pct": 26.6
+    "net_pct": 29
   },
   "extras": {
     "beta": 1.56,
-    "enterprise_value": 957298368,
-    "ev_ebitda": 9.41,
-    "ev_revenue": 0.84,
+    "enterprise_value": 971108800,
+    "ev_ebitda": 9.546,
+    "ev_revenue": 0.852,
     "float_shares": 79083398,
     "short_shares": 12085395,
     "short_pct_float": 16.93,
@@ -244,8 +244,14 @@
   "ex_dividend": "2023-08-18",
   "dividend_date": null,
   "payout_ratio": 9,
-  "inst_count": 330,
+  "inst_count": 322,
   "eps_history": [
+    {
+      "quarter": "2025-09-30",
+      "estimate": 0.062,
+      "actual": 0.05,
+      "surprise_pct": -19.35
+    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.082,
@@ -259,12 +265,6 @@
       "surprise_pct": 50.01
     },
     {
-      "quarter": "2026-06-30",
-      "estimate": 0.035,
-      "actual": 0.04,
-      "surprise_pct": 14.29
-    },
-    {
       "quarter": "2026-09-30",
       "estimate": 0.035,
       "actual": 0.09,
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "STANTON THOMAS R",
+      "role": "Officer and Director",
+      "kind": "buy",
+      "text": "Purchase at price 4.30 per share.",
+      "value": 171920,
+      "shares": 40000,
+      "date": "2026-11-09"
+    },
     {
       "name": "SANTO TIMOTHY P",
       "role": "Officer",
@@ -351,15 +360,6 @@
       "text": "Stock Gift at price 0.00 per share.",
       "value": 0,
       "shares": 10469,
-      "date": "2026-05-20"
-    },
-    {
-      "name": "WILSON JAMES DENSON JR",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 14.72 per share.",
-      "value": 137367,
-      "shares": 9332,
       "date": "2026-05-20"
     }
   ],

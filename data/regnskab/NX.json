@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T22:41:30.312Z",
+  "updated_at": "2026-11-13T22:07:35.094Z",
   "source": "Yahoo Finance",
   "symbol": "NX",
   "summary": "Quanex Building Products Corporation, together with its subsidiaries, manufactures and distributes components for original equipment manufacturers (OEM) in the building products industry in the United States, Europe, Canada, Asia, and internationally. It offers energy-efficient flexible insulating glass spacers, extruded vinyl profiles, window and door screens, precision-formed metal and wood products, window and door seals, and window and door hardware. The company also solar panel sealants, trim moldings, vinyl decking, water retention barriers, conservatory roof components, and commercial access solutions. It sells its products through sales representatives, direct sales force, distributors, and independent sales agents. Quanex Building Products Corporation was founded in 1927 and is based in Houston, Texas.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-12-10",
   "earnings_estimated": true,
   "earnings_call": "2026-09-04",
-  "eps_estimate": 0.785,
+  "eps_estimate": 0.765,
   "analysts": {
     "strong_buy": 0,
     "buy": 2,
@@ -72,10 +72,10 @@
     }
   ],
   "growth": {
-    "q0": -0.0542,
-    "q1": -1.5,
-    "y0": -0.20979999,
-    "y1": 0.0853
+    "q0": -0.0783,
+    "q1": -3.5,
+    "y0": -0.2185,
+    "y1": 0.0542
   },
   "ratings": [
     {
@@ -179,6 +179,13 @@
       "date": "2026-09-30"
     },
     {
+      "name": "American Century Companies Inc",
+      "kind": "institution",
+      "pct": 4.9,
+      "shares": 2245416,
+      "date": "2026-09-30"
+    },
+    {
       "name": "Allspring Global Investments Holdings, LLC",
       "kind": "institution",
       "pct": 4.51,
@@ -212,13 +219,6 @@
       "pct": 3.97,
       "shares": 1818833,
       "date": "2026-09-30"
-    },
-    {
-      "name": "Systematic Financial Management, L.P.",
-      "kind": "institution",
-      "pct": 3.96,
-      "shares": 1815276,
-      "date": "2026-06-30"
     }
   ],
   "insider_net": {
@@ -231,10 +231,10 @@
   },
   "extras": {
     "beta": 0.964,
-    "enterprise_value": 1733098624,
-    "ev_ebitda": 8.269,
-    "ev_revenue": 0.93,
-    "float_shares": 39696785,
+    "enterprise_value": 1658206720,
+    "ev_ebitda": 7.912,
+    "ev_revenue": 0.89,
+    "float_shares": 39679537,
     "short_shares": 2933828,
     "short_pct_float": 8.92,
     "short_ratio": 7.3,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-09-15",
   "dividend_date": null,
   "payout_ratio": 0.32990003,
-  "inst_count": 287,
+  "inst_count": 286,
   "eps_history": [
     {
       "quarter": "2025-10-31",
@@ -271,7 +271,98 @@
       "surprise_pct": 20.15
     }
   ],
-  "insiders": [],
+  "insiders": [
+    {
+      "name": "CORNETT PAUL B.",
+      "role": "General Counsel",
+      "kind": "sell",
+      "text": "Sale at price 21.32 per share.",
+      "value": 117286,
+      "shares": 5500,
+      "date": "2026-11-02"
+    },
+    {
+      "name": "CORNETT PAUL B.",
+      "role": "General Counsel",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 19.45 per share.",
+      "value": 106975,
+      "shares": 5500,
+      "date": "2026-11-02"
+    },
+    {
+      "name": "TELEIOS CAPITAL PARTNERS GMBH",
+      "role": "Beneficial Owner of more than 10% of a Class of Security",
+      "kind": "sell",
+      "text": "Sale at price 15.94 - 16.51 per share.",
+      "value": 3233424,
+      "shares": 200000,
+      "date": "2025-12-17"
+    },
+    {
+      "name": "ZUEHLKE SCOTT M.",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 16600,
+      "date": "2025-12-04"
+    },
+    {
+      "name": "GARCIA GABRIELA",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 5700,
+      "date": "2025-12-04"
+    },
+    {
+      "name": "WILSON GEORGE LAVERNE",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 67900,
+      "date": "2025-12-04"
+    },
+    {
+      "name": "CORNETT PAUL B.",
+      "role": "General Counsel",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 13100,
+      "date": "2025-12-04"
+    },
+    {
+      "name": "GARCIA KIMBERLEY",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 9100,
+      "date": "2025-12-04"
+    },
+    {
+      "name": "NAVASCUES JESSICA",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 5200,
+      "date": "2025-12-04"
+    },
+    {
+      "name": "DAVIS SUSAN F",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 3530,
+      "date": "2025-10-31"
+    }
+  ],
   "dividends": [
     {
       "date": "2016-12-13",

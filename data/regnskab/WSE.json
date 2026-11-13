@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T22:41:31.075Z",
+  "updated_at": "2026-11-13T22:07:35.854Z",
   "source": "Yahoo Finance",
   "symbol": "WSE",
   "summary": "Wise Group plc provides cross-border and domestic financial services in the United Kingdom, the rest of Europe, the Asia-Pacific, North America, and internationally. It offers money transfers, currency conversions, and account services. The company's products include Wise Account, a solution for individual customers to send, spend, hold, and get paid in one or more currencies; Wise Business, which offers the main features of the Wise Account product along with business-specific functionalities designed to enable businesses to operate internationally, including managing their accounting and accounts payable and receivables; and Wise Platform, which enables banks, financial institutions, and enterprises to integrate into a global payment infrastructure, allowing institutional partners to send and receive payments. Wise Group plc was founded in 2010 and is based in London, the United Kingdom.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-12",
   "earnings_estimated": false,
   "earnings_call": "2026-10-15",
-  "eps_estimate": null,
+  "eps_estimate": 0.16,
   "analysts": {
     "strong_buy": 3,
     "buy": 9,
@@ -123,18 +123,18 @@
   ],
   "holders": [
     {
-      "name": "Capital International Investors",
-      "kind": "institution",
-      "pct": 4.49,
-      "shares": 45988256,
-      "date": "2026-06-30"
-    },
-    {
       "name": "VANGUARD WORLD FUND-Vanguard International Growth Fund",
       "kind": "fond",
       "pct": 3.77,
       "shares": 38601551,
       "date": "2026-08-31"
+    },
+    {
+      "name": "Capital International Investors",
+      "kind": "institution",
+      "pct": 3.55,
+      "shares": 36408349,
+      "date": "2026-09-30"
     },
     {
       "name": "Vanguard Capital Management LLC",
@@ -172,13 +172,6 @@
       "date": "2026-06-30"
     },
     {
-      "name": "Capital World Investors",
-      "kind": "institution",
-      "pct": 1.31,
-      "shares": 13441049,
-      "date": "2026-06-30"
-    },
-    {
       "name": "Wellington Management Group, LLP",
       "kind": "institution",
       "pct": 1.29,
@@ -191,6 +184,13 @@
       "pct": 1.05,
       "shares": 10731855,
       "date": "2026-07-31"
+    },
+    {
+      "name": "Ninety One UK Ltd",
+      "kind": "institution",
+      "pct": 0.7,
+      "shares": 7195705,
+      "date": "2026-09-30"
     }
   ],
   "insider_net": {
@@ -202,10 +202,10 @@
     "net_pct": null
   },
   "extras": {
-    "beta": 1.594,
-    "enterprise_value": 6528284672,
-    "ev_ebitda": 5.755,
-    "ev_revenue": 2.608,
+    "beta": null,
+    "enterprise_value": -22386450432,
+    "ev_ebitda": -19.915,
+    "ev_revenue": -8.076,
     "float_shares": 723007559,
     "short_shares": 4332344,
     "short_pct_float": null,
@@ -216,7 +216,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 530,
+  "inst_count": 531,
   "eps_history": [],
   "insiders": [
     {
@@ -274,15 +274,6 @@
       "date": "2026-10-26"
     },
     {
-      "name": "Gonazlez (Diana Avila)",
-      "role": null,
-      "kind": "other",
-      "text": "Sold at price 11.03 per share.",
-      "value": 50010,
-      "shares": 4534,
-      "date": "2026-10-20"
-    },
-    {
       "name": "Naidoo (Isabel)",
       "role": null,
       "kind": "other",
@@ -295,18 +286,27 @@
       "name": "Gonazlez (Diana Avila)",
       "role": null,
       "kind": "other",
+      "text": "Sold at price 11.03 per share.",
+      "value": 50010,
+      "shares": 4534,
+      "date": "2026-10-20"
+    },
+    {
+      "name": "Gonazlez (Diana Avila)",
+      "role": null,
+      "kind": "other",
       "text": "Sold at price 11.00 per share.",
       "value": 5126,
       "shares": 466,
       "date": "2026-10-19"
     },
     {
-      "name": "Gonazlez (Diana Avila)",
+      "name": "Basu (Rohan)",
       "role": null,
       "kind": "other",
       "text": "Sold at price 11.75 per share.",
-      "value": 142927,
-      "shares": 12164,
+      "value": 114268,
+      "shares": 9725,
       "date": "2026-10-16"
     }
   ],

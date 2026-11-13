@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T22:41:30.996Z",
+  "updated_at": "2026-11-13T22:07:35.777Z",
   "source": "Yahoo Finance",
   "symbol": "VLN",
   "summary": "Valens Semiconductor Ltd., together with its subsidiaries, provides semiconductor products for the audio-video and automotive industries. It operates through the Cross Industry Business and Automotive segments. The company offers HDBaseT technology, which enables simultaneous delivery of ultra-high-definition digital video and audio, Ethernet, USB, control signals, and power through a single long-reach cable. It also provides plug-and-play convergence and distribution of different interfaces for the enterprise, education, industrial, digital signage, and medical markets. In addition, it offers MIPI A-PHY, a connectivity standard that is an enabler for advanced driver-assistance systems and automated driving systems. In addition, the company offers semiconductors and other components in VS100, VS2000, VS3000, VS6000, VS7000, VS6320, VA6000, and VA7000 product series. It sells its products through the direct sales force, and distributors and independent sales representatives. Valens Semiconductor Ltd. was incorporated in 2006 and is headquartered in Hod HaSharon, Israel.",
@@ -75,7 +75,7 @@
     "q0": 0.5,
     "q1": 0.75,
     "y0": 0.2143,
-    "y1": 0.36360002
+    "y1": 0.4091
   },
   "ratings": [
     {
@@ -167,9 +167,16 @@
     {
       "name": "State Street Corporation",
       "kind": "institution",
-      "pct": 2.04,
-      "shares": 2213690,
-      "date": "2026-06-30"
+      "pct": 2.09,
+      "shares": 2261622,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Renaissance Technologies, LLC",
+      "kind": "institution",
+      "pct": 2.07,
+      "shares": 2236100,
+      "date": "2026-09-30"
     },
     {
       "name": "SPDR SERIES TRT-State Street SPDR S&P Kensho New Economies Composite E",
@@ -183,20 +190,13 @@
       "kind": "institution",
       "pct": 1.83,
       "shares": 1984537,
-      "date": "2026-06-30"
+      "date": "2026-09-30"
     },
     {
       "name": "Ameriprise Financial, Inc.",
       "kind": "institution",
       "pct": 1.55,
       "shares": 1682042,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "Renaissance Technologies, LLC",
-      "kind": "institution",
-      "pct": 1.36,
-      "shares": 1468229,
       "date": "2026-06-30"
     },
     {
@@ -223,20 +223,20 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 5,
-    "sells": 15,
-    "bought": 41716,
-    "sold": 102460,
+    "buys": 6,
+    "sells": 17,
+    "bought": 45229,
+    "sold": 106598,
     "net_pct": -1
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 86860000,
-    "ev_ebitda": -2.859,
-    "ev_revenue": 1.139,
+    "enterprise_value": 87948448,
+    "ev_ebitda": -2.895,
+    "ev_revenue": 1.153,
     "float_shares": 76867255,
     "short_shares": 1422593,
-    "short_pct_float": 1.83,
+    "short_pct_float": 1.81,
     "short_ratio": 3.09,
     "last_split": null,
     "last_split_date": null
@@ -272,6 +272,33 @@
     }
   ],
   "insiders": [
+    {
+      "name": "CHAIRMAN DAVID",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 1.66 per share.",
+      "value": 5843,
+      "shares": 3513,
+      "date": "2026-11-11"
+    },
+    {
+      "name": "CHAIRMAN DAVID",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 0.86 per share.",
+      "value": 3021,
+      "shares": 3513,
+      "date": "2026-11-11"
+    },
+    {
+      "name": "ROZENBERG HAINE YAEL",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 1.50 per share.",
+      "value": 938,
+      "shares": 625,
+      "date": "2026-11-09"
+    },
     {
       "name": "ROZENBERG HAINE YAEL",
       "role": "Officer",
@@ -334,33 +361,6 @@
       "value": 7519,
       "shares": 3750,
       "date": "2026-07-14"
-    },
-    {
-      "name": "LICHTMAN MOSHE",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 2.00 per share.",
-      "value": 7519,
-      "shares": 3750,
-      "date": "2026-07-14"
-    },
-    {
-      "name": "YAACOBI TAL",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 2.22 per share.",
-      "value": 3108,
-      "shares": 1400,
-      "date": "2026-07-01"
-    },
-    {
-      "name": "ROZENBERG HAINE YAEL",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 2.35 - 2.36 per share.",
-      "value": 44206,
-      "shares": 18827,
-      "date": "2026-06-15"
     }
   ],
   "dividends": [],

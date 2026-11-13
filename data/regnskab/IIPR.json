@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T22:41:29.853Z",
+  "updated_at": "2026-11-13T22:07:34.553Z",
   "source": "Yahoo Finance",
   "symbol": "IIPR",
   "summary": "Innovative Industrial Properties, Inc. is an internally managed real estate investment trust focused on the acquisition, ownership and management of specialized industrial properties and financial investments in the life science industry. As of June 30, 2026, we owned 108 properties comprising an aggregate of approximately 8.4 million rentable square feet in 19 states. Innovative Industrial Properties, Inc. was established on June 15th 2016 and is incorporated in Maryland.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-02",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": null,
+  "eps_estimate": 0.88,
   "analysts": {
     "strong_buy": 0,
     "buy": 3,
@@ -19,7 +19,7 @@
     "strong_sell": 1,
     "total": 7
   },
-  "target_mean": 62.15,
+  "target_mean": 63.35,
   "target_high": 90,
   "target_low": 46,
   "target_analysts": 5,
@@ -71,7 +71,12 @@
       "earnings": 28708000
     }
   ],
-  "growth": null,
+  "growth": {
+    "q0": -0.1698,
+    "q1": -0.0849,
+    "y0": 0.055999998,
+    "y1": 0.057800002
+  },
   "ratings": [
     {
       "date": "2026-11-04",
@@ -226,9 +231,9 @@
   },
   "extras": {
     "beta": 1.379,
-    "enterprise_value": 2191857664,
-    "ev_ebitda": 10.866,
-    "ev_revenue": 8.306,
+    "enterprise_value": 2134509184,
+    "ev_ebitda": 10.582,
+    "ev_revenue": 8.089,
     "float_shares": 26991524,
     "short_shares": 3784253,
     "short_pct_float": 21.04,
@@ -239,25 +244,19 @@
   "ex_dividend": "2026-09-30",
   "dividend_date": null,
   "payout_ratio": 1.7117,
-  "inst_count": 441,
+  "inst_count": 440,
   "eps_history": [
     {
-      "quarter": "2025-12-31",
-      "estimate": 1.04667,
-      "actual": 1.06,
-      "surprise_pct": 1.27
+      "quarter": "2025-09-30",
+      "estimate": 0.90333,
+      "actual": 0.97,
+      "surprise_pct": 7.38
     },
     {
       "quarter": "2026-03-31",
       "estimate": 1.07333,
       "actual": 1.0445,
       "surprise_pct": -2.69
-    },
-    {
-      "quarter": "2026-06-30",
-      "estimate": 1.025,
-      "actual": 0.9608,
-      "surprise_pct": -6.26
     },
     {
       "quarter": "2026-09-30",

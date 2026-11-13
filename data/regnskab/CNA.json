@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T22:41:29.246Z",
+  "updated_at": "2026-11-13T22:07:33.897Z",
   "source": "Yahoo Finance",
   "symbol": "CNA",
   "summary": "CNA Financial Corporation, an insurance holding company, primarily provides commercial property and casualty insurance products in the United States, Canada, the United Kingdom, Continental Europe, and internationally. It operates through Specialty, Commercial, International, and Life & Group segments. The company offers professional liability coverage and risk management services to various professional firms, including architects, real estate agents, and accounting and law firms; directors and officers, errors and omissions, employment practices, fiduciary, and fidelity and cyber coverage to small and mid-size firms, public and privately held firms, and not-for-profit organizations; professional and general liability, as well as associated casualty coverages for healthcare industry; surety and fidelity bonds; and warranty and alternative risks products. It also provides property, marine, boiler, and machinery coverage insurance products; casualty insurance products comprising workers' compensation, general and product liability, commercial auto, umbrella, and excess and surplus coverages; specialized loss-sensitive insurance programs and total risk management services; and a run-off long-term care business. The company was founded in 1853 and is based in Chicago, Illinois. CNA Financial Corporation is a subsidiary of Loews Corporation.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-02",
   "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": 1.08,
+  "eps_estimate": 1.13,
   "analysts": {
     "strong_buy": 0,
     "buy": 0,
@@ -72,8 +72,8 @@
     }
   ],
   "growth": {
-    "q0": -0.069,
-    "q1": 0.4458,
+    "q0": -0.025899999,
+    "q1": 0.0345,
     "y0": -0.1481,
     "y1": 0.0952
   },
@@ -193,6 +193,13 @@
       "date": "2026-06-30"
     },
     {
+      "name": "River Road Asset Management, LLC",
+      "kind": "institution",
+      "pct": 0.3,
+      "shares": 802360,
+      "date": "2026-06-30"
+    },
+    {
       "name": "Charles Schwab Investment Management, Inc.",
       "kind": "institution",
       "pct": 0.3,
@@ -212,28 +219,21 @@
       "pct": 0.28,
       "shares": 759740,
       "date": "2026-09-30"
-    },
-    {
-      "name": "River Road Asset Management, LLC",
-      "kind": "institution",
-      "pct": 0.25,
-      "shares": 663401,
-      "date": "2026-09-30"
     }
   ],
   "insider_net": {
     "period": "6m",
     "buys": 1,
-    "sells": 3,
+    "sells": 4,
     "bought": 845,
-    "sold": 54508,
-    "net_pct": -4.1
+    "sold": 94508,
+    "net_pct": -7.2
   },
   "extras": {
     "beta": 0.22,
-    "enterprise_value": 13987144704,
-    "ev_ebitda": 9.35,
-    "ev_revenue": 0.923,
+    "enterprise_value": 13997969408,
+    "ev_ebitda": 9.357,
+    "ev_revenue": 0.924,
     "float_shares": 20615404,
     "short_shares": 4006246,
     "short_pct_float": 18.56,
@@ -247,22 +247,16 @@
   "inst_count": 417,
   "eps_history": [
     {
-      "quarter": "2025-12-31",
-      "estimate": 1.34,
-      "actual": 1.16,
-      "surprise_pct": -13.43
+      "quarter": "2025-09-30",
+      "estimate": 1.32,
+      "actual": 1.5,
+      "surprise_pct": 13.64
     },
     {
       "quarter": "2026-03-31",
       "estimate": 1.24,
       "actual": 0.83,
       "surprise_pct": -33.06
-    },
-    {
-      "quarter": "2026-06-30",
-      "estimate": 1.05,
-      "actual": 1.19,
-      "surprise_pct": 13.33
     },
     {
       "quarter": "2026-09-30",
@@ -272,6 +266,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "WORMAN DOUGLAS MERLE",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 48.07 per share.",
+      "value": 1922800,
+      "shares": 40000,
+      "date": "2026-11-10"
+    },
     {
       "name": "SMITH AMY MARIE",
       "role": "Officer",
@@ -351,15 +354,6 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 33094,
-      "date": "2026-03-13"
-    },
-    {
-      "name": "HOPPER ROBERT JOSEPH",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 19888,
       "date": "2026-03-13"
     }
   ],

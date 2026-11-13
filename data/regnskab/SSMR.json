@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T22:41:30.744Z",
+  "updated_at": "2026-11-13T22:07:35.931Z",
   "source": "Yahoo Finance",
   "symbol": "SSMR",
   "summary": "Sunshine Silver Mining & Refining Company engages in the exploration and development of mineral properties in the United States. It primarily explores silver and copper deposits. The company's principal asset is the Sunshine Complex covering an area of 9,561 hectares located in the Coeur d'Alene Mining District located in the Silver Valley in Idaho. Sunshine Silver Mining & Refining Company was founded in 2010 and is headquartered in Kellogg, Idaho.",
@@ -9,7 +9,7 @@
   "ceo": "Ms. Heather Eileen White B.Sc., P. Eng",
   "next_earnings": "2026-11-12",
   "earnings_estimated": true,
-  "earnings_call": "2026-08-13",
+  "earnings_call": null,
   "eps_estimate": -0.07,
   "analysts": {
     "strong_buy": 2,
@@ -31,7 +31,18 @@
       "margin": null
     }
   ],
-  "quarterly": [],
+  "quarterly": [
+    {
+      "q": "2Q2026",
+      "revenue": 0,
+      "earnings": -16720760
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 0,
+      "earnings": -20914000
+    }
+  ],
   "growth": {
     "q0": null,
     "q1": null,
@@ -119,13 +130,6 @@
       "date": "2026-09-30"
     },
     {
-      "name": "Franklin Resources, Inc.",
-      "kind": "institution",
-      "pct": 1.39,
-      "shares": 2000000,
-      "date": "2026-06-30"
-    },
-    {
       "name": "Lingotto Investment Management LLP",
       "kind": "institution",
       "pct": 1.39,
@@ -137,6 +141,13 @@
       "kind": "institution",
       "pct": 1.33,
       "shares": 1913262,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Franklin Resources, Inc.",
+      "kind": "institution",
+      "pct": 1.22,
+      "shares": 1753000,
       "date": "2026-09-30"
     },
     {
@@ -174,14 +185,14 @@
     "sells": 1,
     "bought": 5485697,
     "sold": 555555,
-    "net_pct": -197.8
+    "net_pct": -198.1
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 1739491584,
-    "ev_ebitda": -32.776,
-    "ev_revenue": 4089.602,
-    "float_shares": 31394202,
+    "enterprise_value": 1683200768,
+    "ev_ebitda": -25.356,
+    "ev_revenue": 7277.353,
+    "float_shares": 31344525,
     "short_shares": 4195449,
     "short_pct_float": 18.96,
     "short_ratio": 6.41,
@@ -191,13 +202,19 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": null,
-  "inst_count": 84,
+  "inst_count": 89,
   "eps_history": [
     {
       "quarter": "2026-06-30",
       "estimate": -0.07,
       "actual": -0.13,
       "surprise_pct": -85.71
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.07,
+      "actual": -0.15,
+      "surprise_pct": -114.29
     }
   ],
   "insiders": [

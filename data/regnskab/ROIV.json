@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T22:41:30.563Z",
+  "updated_at": "2026-11-13T22:07:35.371Z",
   "source": "Yahoo Finance",
   "symbol": "ROIV",
   "summary": "Roivant Sciences Ltd., a clinical-stage biopharmaceutical company, focuses on the discovery, development, and commercialization of medicines and technologies. Its clinical product candidates include IMVT-1402, a fully human monoclonal antibody targeting FcRn in development across several IgG-mediated autoimmune indications; mosliciguat, an inhaled sGC activator in development for pulmonary hypertension associated with interstitial lung disease; neonatal fragment crystallizable receptor for the treatment of graves' disease, difficult-to-treat rheumatoid arthritis, sjögren's disease, myasthenia gravis, chronic inflammatory demyelinating polyneuropathy, and cutaneous lupus erythematosus indications; batoclimab, a fully human monoclonal antibody for the treatment of thyroid eye disease; and brepocitinib, a potent small molecule inhibitor of TYK2 and JAK1 in development for the treatment of dermatomyositis, non-infectious uveitis, cutaneous sarcoidosis, and other immune-mediated diseases. The company's lead program consists of mosliciguat, an inhaled sGC activator for the treatment of pulmonary hypertension associated with interstitial lung disease and other cardiopulmonary diseases. In addition, the company offers delivery platforms comprising a lipid nanoparticle (LNP) platform and a ligand conjugate platform. Roivant Sciences Ltd. was founded in 2014 and is based in London, United Kingdom.",
@@ -75,7 +75,7 @@
     "q0": -0.6268,
     "q1": -0.2489,
     "y0": -0.3667,
-    "y1": 0.078600004
+    "y1": -0.0949
   },
   "ratings": [
     {
@@ -186,6 +186,13 @@
       "date": "2026-09-30"
     },
     {
+      "name": "State Street Corporation",
+      "kind": "institution",
+      "pct": 3.09,
+      "shares": 22399587,
+      "date": "2026-09-30"
+    },
+    {
       "name": "Vanguard Capital Management LLC",
       "kind": "institution",
       "pct": 3.05,
@@ -212,29 +219,22 @@
       "pct": 2.56,
       "shares": 18556458,
       "date": "2026-06-30"
-    },
-    {
-      "name": "State Street Corporation",
-      "kind": "institution",
-      "pct": 2.46,
-      "shares": 17795975,
-      "date": "2026-06-30"
     }
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 20,
-    "sells": 17,
-    "bought": 2884091,
-    "sold": 6351876,
-    "net_pct": -2.2
+    "buys": 21,
+    "sells": 19,
+    "bought": 3136456,
+    "sold": 6839819,
+    "net_pct": -2.3
   },
   "extras": {
     "beta": 1.204,
-    "enterprise_value": 26797285376,
-    "ev_ebitda": -20.257,
-    "ev_revenue": 652.288,
-    "float_shares": 584402291,
+    "enterprise_value": 25449601024,
+    "ev_ebitda": -19.238,
+    "ev_revenue": 619.483,
+    "float_shares": 584837028,
     "short_shares": 45513591,
     "short_pct_float": 8.52,
     "short_ratio": 7.15,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 697,
+  "inst_count": 703,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -272,6 +272,33 @@
     }
   ],
   "insiders": [
+    {
+      "name": "PULIK RICHARD",
+      "role": "Chief Financial Officer",
+      "kind": "sell",
+      "text": "Sale at price 41.20 - 42.03 per share.",
+      "value": 12473272,
+      "shares": 300000,
+      "date": "2026-11-11"
+    },
+    {
+      "name": "PULIK RICHARD",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 3.85 per share.",
+      "value": 971605,
+      "shares": 252365,
+      "date": "2026-11-11"
+    },
+    {
+      "name": "VENKER ERIC",
+      "role": "President",
+      "kind": "sell",
+      "text": "Sale at price 40.44 - 41.00 per share.",
+      "value": 7617074,
+      "shares": 187943,
+      "date": "2026-11-10"
+    },
     {
       "name": "VENKER ERIC",
       "role": "President",
@@ -334,33 +361,6 @@
       "value": 79165,
       "shares": 17750,
       "date": "2026-10-01"
-    },
-    {
-      "name": "MANCHESTER KEITH S",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 5054,
-      "date": "2026-09-16"
-    },
-    {
-      "name": "FITZGERALD MEGHAN",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 5054,
-      "date": "2026-09-16"
-    },
-    {
-      "name": "MOMTAZEE JAMES C",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 5054,
-      "date": "2026-09-16"
     }
   ],
   "dividends": [],

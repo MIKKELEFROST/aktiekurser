@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T22:41:30.617Z",
+  "updated_at": "2026-11-13T22:07:35.423Z",
   "source": "Yahoo Finance",
   "symbol": "SBRA",
   "summary": "Sabra Health Care REIT, Inc. operates as a self-administered, self-managed real estate investment trust that, through its subsidiaries, owns and invests in real estate serving the healthcare industry throughout the United States and Canada. Sabra Health Care REIT, Inc. is incorporated on May 10th, 2010 and is based in Tustin, United States.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-02",
   "earnings_estimated": false,
   "earnings_call": "2026-11-03",
-  "eps_estimate": 0.14,
+  "eps_estimate": 0.165,
   "analysts": {
     "strong_buy": 1,
     "buy": 5,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 16
   },
-  "target_mean": 22.64286,
+  "target_mean": 22.5,
   "target_high": 25,
   "target_low": 19,
   "target_analysts": 14,
@@ -72,8 +72,8 @@
     }
   ],
   "growth": {
-    "q0": -0.12060001,
-    "q1": -0.0037,
+    "q0": 0.0364,
+    "q1": 0.005,
     "y0": null,
     "y1": null
   },
@@ -174,9 +174,9 @@
     {
       "name": "State Street Corporation",
       "kind": "institution",
-      "pct": 4.7,
-      "shares": 12305655,
-      "date": "2026-06-30"
+      "pct": 4.81,
+      "shares": 12605529,
+      "date": "2026-09-30"
     },
     {
       "name": "Vanguard Capital Management LLC",
@@ -224,16 +224,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 29,
-    "sells": 1,
+    "sells": 2,
     "bought": 99302,
-    "sold": 200000,
-    "net_pct": -2.7
+    "sold": 210000,
+    "net_pct": -3
   },
   "extras": {
     "beta": 0.644,
-    "enterprise_value": 7870327808,
-    "ev_ebitda": 20.141,
-    "ev_revenue": 8.515,
+    "enterprise_value": 7762923520,
+    "ev_ebitda": 19.866,
+    "ev_revenue": 8.399,
     "float_shares": 257835568,
     "short_shares": 17882953,
     "short_pct_float": 9.27,
@@ -244,25 +244,25 @@
   "ex_dividend": "2026-11-13",
   "dividend_date": null,
   "payout_ratio": 4.4444,
-  "inst_count": 645,
+  "inst_count": 644,
   "eps_history": [
     {
+      "quarter": "2025-09-30",
+      "estimate": 0.17667,
+      "actual": 0.1664,
+      "surprise_pct": -5.81
+    },
+    {
       "quarter": "2025-12-31",
-      "estimate": 0.16,
-      "actual": 0.1592,
-      "surprise_pct": -0.5
+      "estimate": 0.16639,
+      "actual": 0.11,
+      "surprise_pct": -33.89
     },
     {
       "quarter": "2026-03-31",
       "estimate": 0.16,
       "actual": 0.1606,
       "surprise_pct": 0.37
-    },
-    {
-      "quarter": "2026-06-30",
-      "estimate": 0.16667,
-      "actual": 0.1496,
-      "surprise_pct": -10.24
     },
     {
       "quarter": "2026-09-30",
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "FOSTER MICHAEL JEFFREY",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 20.98 per share.",
+      "value": 209800,
+      "shares": 10000,
+      "date": "2026-11-11"
+    },
     {
       "name": "MATROS RICHARD K",
       "role": "Chief Executive Officer",
@@ -318,24 +327,6 @@
       "date": "2026-08-31"
     },
     {
-      "name": "FOSTER MICHAEL JEFFREY",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 791,
-      "date": "2026-08-31"
-    },
-    {
-      "name": "MATROS RICHARD K",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 13867,
-      "date": "2026-08-31"
-    },
-    {
       "name": "COSTA MICHAEL LOURENCO",
       "role": "Chief Financial Officer",
       "kind": "other",
@@ -360,6 +351,15 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 382,
+      "date": "2026-08-31"
+    },
+    {
+      "name": "FOSTER MICHAEL JEFFREY",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 791,
       "date": "2026-08-31"
     }
   ],

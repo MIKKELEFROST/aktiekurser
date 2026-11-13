@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T22:41:29.947Z",
+  "updated_at": "2026-11-13T22:07:34.684Z",
   "source": "Yahoo Finance",
   "symbol": "KHC",
   "summary": "The Kraft Heinz Company, together with its subsidiaries, manufactures and markets food and beverage products in North America and internationally. Its products include condiments, sauces, dressings, and spreads; cheese, frozen potato products, and other frozen meals; meal kits, frozen snacks, and pickles; dry packaged desserts, refrigerated ready to eat desserts, and other dessert toppings; ready to drink and powdered beverages, and liquid concentrates; American sliced and recipe cheeses; mainstream coffee, coffee pods, and premium coffee; and cold cuts, bacon, and hot dogs. It offers its products under the Kraft, Oscar Mayer, Heinz, Philadelphia, Lunchables, Velveeta, Ore-Ida, Capri Sun, Maxwell House, Kool-Aid, Jell-O, ABC, Master, Quero, Golden Circle, Wattie's, Pudliszki, and Plasmon brands, as well as Bagel Bites, Claussen, A1, and Cool Whip. It sells its products through its own sales organizations, as well as through independent brokers, agents, and distributors to chain, wholesale, cooperative, and independent grocery accounts; convenience, value, and club stores; pharmacies and drug stores; mass merchants; foodservice distributors; institutions, including hotels, restaurants, bakeries, hospitals, health care facilities, and government agencies; and various e-commerce platforms and retailers. The company has a strategic partnership with the National Football League. The company was formerly known as H.J. Heinz Holding Corporation and changed its name to The Kraft Heinz Company in July 2015. The company was founded in 1869 and is headquartered in Pittsburgh, Pennsylvania.",
@@ -73,7 +73,7 @@
   ],
   "growth": {
     "q0": -0.35009998,
-    "q1": -0.121700004,
+    "q1": -0.128,
     "y0": -0.19479999,
     "y1": -0.016
   },
@@ -172,18 +172,11 @@
       "date": "2026-06-30"
     },
     {
-      "name": "Invesco Ltd.",
-      "kind": "institution",
-      "pct": 4.11,
-      "shares": 48696186,
-      "date": "2026-06-30"
-    },
-    {
       "name": "State Street Corporation",
       "kind": "institution",
-      "pct": 3.92,
-      "shares": 46379119,
-      "date": "2026-06-30"
+      "pct": 3.9,
+      "shares": 46215338,
+      "date": "2026-09-30"
     },
     {
       "name": "Vanguard Portfolio Management LLC",
@@ -219,6 +212,13 @@
       "pct": 1.62,
       "shares": 19198984,
       "date": "2026-09-30"
+    },
+    {
+      "name": "UBS Group AG",
+      "kind": "institution",
+      "pct": 1.55,
+      "shares": 18337903,
+      "date": "2026-09-30"
     }
   ],
   "insider_net": {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.103,
-    "enterprise_value": 44945526784,
-    "ev_ebitda": 8.323,
-    "ev_revenue": 1.814,
+    "enterprise_value": 45194133504,
+    "ev_ebitda": 8.369,
+    "ev_revenue": 1.824,
     "float_shares": 853978687,
     "short_shares": 102498237,
     "short_pct_float": 11.97,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-12-04",
   "dividend_date": null,
   "payout_ratio": 0.7306,
-  "inst_count": 1607,
+  "inst_count": 1608,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -271,7 +271,98 @@
       "surprise_pct": 25.14
     }
   ],
-  "insiders": [],
+  "insiders": [
+    {
+      "name": "FROST DIANA",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 23.05 per share.",
+      "value": 426532,
+      "shares": 18502,
+      "date": "2026-06-18"
+    },
+    {
+      "name": "CAHILL JOHN T",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 23.31 per share.",
+      "value": 305011,
+      "shares": 13085,
+      "date": "2026-05-14"
+    },
+    {
+      "name": "POPE JOHN C",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 23.31 per share.",
+      "value": 185011,
+      "shares": 7937,
+      "date": "2026-05-14"
+    },
+    {
+      "name": "COX L KEVIN",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 23.31 per share.",
+      "value": 185011,
+      "shares": 7937,
+      "date": "2026-05-14"
+    },
+    {
+      "name": "ALFONSO HUMBERTO P",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 23.31 per share.",
+      "value": 260023,
+      "shares": 11155,
+      "date": "2026-05-14"
+    },
+    {
+      "name": "PALMER ANTHONY J",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 23.31 per share.",
+      "value": 203496,
+      "shares": 8730,
+      "date": "2026-05-14"
+    },
+    {
+      "name": "GHERSON DIANE J.",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 23.31 per share.",
+      "value": 185011,
+      "shares": 7937,
+      "date": "2026-05-14"
+    },
+    {
+      "name": "KELLEY MARY LOU",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 23.31 per share.",
+      "value": 203496,
+      "shares": 8730,
+      "date": "2026-05-14"
+    },
+    {
+      "name": "SCETI ELIO LEONI",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 23.31 per share.",
+      "value": 260023,
+      "shares": 11155,
+      "date": "2026-05-14"
+    },
+    {
+      "name": "FOUCHE LORI DICKERSON",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 23.31 per share.",
+      "value": 185011,
+      "shares": 7937,
+      "date": "2026-05-14"
+    }
+  ],
   "dividends": [
     {
       "date": "2016-11-30",

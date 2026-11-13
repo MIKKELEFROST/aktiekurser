@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T22:41:31.112Z",
+  "updated_at": "2026-11-13T22:07:35.897Z",
   "source": "Yahoo Finance",
   "symbol": "YUMC",
   "summary": "Yum China Holdings, Inc. owns, operates, and franchises restaurants in the People's Republic of China. The company operates through two KFC, Pizza Hut, and All Other segments. It operates restaurants under the KFC, Pizza Hut, Taco Bell, Lavazza, Little Sheep, and Huang Ji Huang concepts. The company also offers online food delivery services. Yum China Holdings, Inc. was founded in 1987 and is headquartered in Shanghai, the People's Republic of China.",
@@ -151,17 +151,17 @@
   ],
   "holders": [
     {
-      "name": "JPMORGAN CHASE & CO",
-      "kind": "institution",
-      "pct": 7.16,
-      "shares": 24117074,
-      "date": "2026-06-30"
-    },
-    {
       "name": "Principal Financial Group, Inc.",
       "kind": "institution",
       "pct": 6.47,
       "shares": 21800611,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "JPMORGAN CHASE & CO",
+      "kind": "institution",
+      "pct": 6.05,
+      "shares": 20383040,
       "date": "2026-09-30"
     },
     {
@@ -224,17 +224,17 @@
   "insider_net": {
     "period": "6m",
     "buys": 19,
-    "sells": 5,
+    "sells": 6,
     "bought": 149631,
-    "sold": 53931,
-    "net_pct": 7.2
+    "sold": 56931,
+    "net_pct": 7
   },
   "extras": {
     "beta": 0.031,
-    "enterprise_value": 19144679424,
-    "ev_ebitda": 9.884,
-    "ev_revenue": 1.506,
-    "float_shares": 340481520,
+    "enterprise_value": 19357888512,
+    "ev_ebitda": 9.994,
+    "ev_revenue": 1.523,
+    "float_shares": 335364522,
     "short_shares": 4878990,
     "short_pct_float": 1.46,
     "short_ratio": 2.97,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-12-01",
   "dividend_date": null,
   "payout_ratio": 0.3854,
-  "inst_count": 1018,
+  "inst_count": 1013,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "DING JERRY",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 49.78 per share.",
+      "value": 149329,
+      "shares": 3000,
+      "date": "2026-11-09"
+    },
     {
       "name": "WANG WARTON",
       "role": "Officer",
@@ -352,15 +361,6 @@
       "value": null,
       "shares": 1318,
       "date": "2026-09-01"
-    },
-    {
-      "name": "HUANG DUODUO HOWARD",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 47.07 - 47.14 per share.",
-      "value": 1134520,
-      "shares": 24096,
-      "date": "2026-08-18"
     }
   ],
   "dividends": [

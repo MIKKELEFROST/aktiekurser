@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T22:41:30.522Z",
+  "updated_at": "2026-11-13T22:07:35.330Z",
   "source": "Yahoo Finance",
   "symbol": "REAL",
   "summary": "The RealReal, Inc. operates an online marketplace for resale luxury goods worldwide. It provides a range of product categories, including women's fashion, men's fashion, jewelry, and watches. The company sells products through its website, online marketplace, mobile app, and retail stores. The RealReal, Inc. was incorporated in 2011 and is headquartered in San Francisco, California.",
@@ -200,13 +200,6 @@
       "date": "2026-06-30"
     },
     {
-      "name": "American Century Companies Inc",
-      "kind": "institution",
-      "pct": 2.98,
-      "shares": 3718683,
-      "date": "2026-06-30"
-    },
-    {
       "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
       "kind": "fond",
       "pct": 2.76,
@@ -219,21 +212,28 @@
       "pct": 2.65,
       "shares": 3300000,
       "date": "2026-06-30"
+    },
+    {
+      "name": "State Street Corporation",
+      "kind": "institution",
+      "pct": 2.55,
+      "shares": 3184260,
+      "date": "2026-09-30"
     }
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 8,
-    "sells": 10,
-    "bought": 88540,
-    "sold": 339834,
-    "net_pct": -2.8
+    "buys": 9,
+    "sells": 13,
+    "bought": 124339,
+    "sold": 564423,
+    "net_pct": -4.8
   },
   "extras": {
     "beta": 2.893,
-    "enterprise_value": 2147024640,
-    "ev_ebitda": 60.922,
-    "ev_revenue": 2.744,
+    "enterprise_value": 2117093504,
+    "ev_ebitda": 60.073,
+    "ev_revenue": 2.706,
     "float_shares": 104783889,
     "short_shares": 17681577,
     "short_pct_float": 16.13,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": null,
-  "inst_count": 336,
+  "inst_count": 342,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -272,6 +272,42 @@
     }
   ],
   "insiders": [
+    {
+      "name": "SAHI LEVESQUE RATI",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 14.76 per share.",
+      "value": 1970342,
+      "shares": 133492,
+      "date": "2026-11-11"
+    },
+    {
+      "name": "SAHI LEVESQUE RATI",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 2.56 per share.",
+      "value": 91645,
+      "shares": 35799,
+      "date": "2026-11-11"
+    },
+    {
+      "name": "MADAN GOPAL AJAY",
+      "role": "Chief Financial Officer",
+      "kind": "sell",
+      "text": "Sale at price 14.65 per share.",
+      "value": 1040617,
+      "shares": 71027,
+      "date": "2026-11-11"
+    },
+    {
+      "name": "LO STEVE MING",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 14.90 per share.",
+      "value": 299043,
+      "shares": 20070,
+      "date": "2026-11-10"
+    },
     {
       "name": "KATZ KAREN W.",
       "role": "Director",
@@ -325,42 +361,6 @@
       "value": 927063,
       "shares": 84432,
       "date": "2026-08-21"
-    },
-    {
-      "name": "COLEMAN CARETHA",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 14150,
-      "date": "2026-07-27"
-    },
-    {
-      "name": "MCCAFFREY MARK D.",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 14150,
-      "date": "2026-07-27"
-    },
-    {
-      "name": "MCKEEHAN JENNIFER",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 14150,
-      "date": "2026-07-27"
-    },
-    {
-      "name": "KATZ KAREN W.",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 14150,
-      "date": "2026-07-27"
     }
   ],
   "dividends": [],

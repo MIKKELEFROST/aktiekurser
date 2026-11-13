@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T22:41:29.802Z",
+  "updated_at": "2026-11-13T22:07:34.499Z",
   "source": "Yahoo Finance",
   "symbol": "HTFL",
   "summary": "HeartFlow, Inc., a medical technology company, provides non-invasive solutions for diagnosing and managing coronary artery diseases the United States and worldwide. Its HeartFlow Platform uses AI and computational fluid dynamics to creates a personalized 3D model of a patient's heart from a single coronary computed tomography angiography, a specialized type of scan that provides detailed images of the heart's arteries. The company provides Heartflow RoadMap Analysis that offers an intuitive anatomic visualization of the coronary arteries; Heartflow FFRCT Analysis, which calculates blood flow and pinpoints clinically; and Heartflow Plaque Analysis that provides a comprehensive assessment of coronary plaque, enabling optimized medical treatment strategies. Its platform provides insights on blood flow, stenosis, and plaque volume and composition by overcoming the limitations of traditional non-invasive imaging tests. HeartFlow, Inc. was formerly known as Cardiovascular Simulation, Inc. and changed its name to HeartFlow, Inc. in May 2009. The company was incorporated in 2007 and is headquartered in San Francisco, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-12",
   "earnings_estimated": false,
   "earnings_call": "2026-11-12",
-  "eps_estimate": -0.10246,
+  "eps_estimate": -0.08637,
   "analysts": {
     "strong_buy": 2,
     "buy": 6,
@@ -19,8 +19,8 @@
     "strong_sell": 0,
     "total": 9
   },
-  "target_mean": 50.5,
-  "target_high": 64,
+  "target_mean": 52,
+  "target_high": 68,
   "target_low": 39,
   "target_analysts": 8,
   "statements": [
@@ -39,11 +39,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 46276000,
-      "earnings": -50855000
-    },
-    {
       "q": "4Q2025",
       "revenue": 49130000,
       "earnings": -24395000
@@ -57,13 +52,18 @@
       "q": "2Q2026",
       "revenue": 64082000,
       "earnings": -15743000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 72857000,
+      "earnings": -11505000
     }
   ],
   "growth": {
-    "q0": 0.62049997,
-    "q1": 0.2377,
-    "y0": 0.7442,
-    "y1": 0.3464
+    "q0": 0.2802,
+    "q1": 0.47919998,
+    "y0": 0.7963,
+    "y1": 0.1778
   },
   "ratings": [
     {
@@ -160,17 +160,17 @@
       "date": "2026-07-31"
     },
     {
-      "name": "FMR, LLC",
-      "kind": "institution",
-      "pct": 6.32,
-      "shares": 5491275,
-      "date": "2026-09-30"
-    },
-    {
       "name": "Blackrock Inc.",
       "kind": "institution",
       "pct": 5.98,
       "shares": 5197747,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "FMR, LLC",
+      "kind": "institution",
+      "pct": 5.54,
+      "shares": 4820944,
       "date": "2026-06-30"
     },
     {
@@ -212,17 +212,17 @@
   "insider_net": {
     "period": "6m",
     "buys": 17,
-    "sells": 20,
+    "sells": 19,
     "bought": 270776,
-    "sold": 471204,
-    "net_pct": -4.5
+    "sold": 448642,
+    "net_pct": -4
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 5003535360,
-    "ev_ebitda": -70.122,
-    "ev_revenue": 23.593,
-    "float_shares": 67249066,
+    "enterprise_value": 5124418560,
+    "ev_ebitda": -73.082,
+    "ev_revenue": 21.472,
+    "float_shares": 68010031,
     "short_shares": 5688103,
     "short_pct_float": 9.46,
     "short_ratio": 3.44,
@@ -232,14 +232,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": null,
-  "inst_count": 314,
+  "inst_count": 326,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.24,
-      "actual": -0.27,
-      "surprise_pct": -12.5
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.1562,
@@ -257,6 +251,12 @@
       "estimate": -0.13422,
       "actual": -0.07,
       "surprise_pct": 47.85
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.10246,
+      "actual": -0.03,
+      "surprise_pct": 70.72
     }
   ],
   "insiders": [
