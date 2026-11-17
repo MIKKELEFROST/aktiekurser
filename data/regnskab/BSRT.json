@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T22:07:33.744Z",
+  "updated_at": "2026-11-17T00:28:05.991Z",
   "source": "Yahoo Finance",
   "symbol": "BSRT",
   "summary": "BSR Real Estate Investment Trust is an internally managed, unincorporated, open-ended real estate investment trust. The REIT owns a portfolio of multifamily garden-style residential properties located in attractive primary markets in the Sunbelt region of the United States. BSR Real Estate Investment Trust was established on January 09, 2018 and incorporated in Ontario, Canada.",
@@ -11,11 +11,18 @@
   "earnings_estimated": false,
   "earnings_call": "2026-11-12",
   "eps_estimate": null,
-  "analysts": null,
-  "target_mean": null,
-  "target_high": null,
-  "target_low": null,
-  "target_analysts": null,
+  "analysts": {
+    "strong_buy": 1,
+    "buy": 3,
+    "hold": 3,
+    "sell": 0,
+    "strong_sell": 0,
+    "total": 7
+  },
+  "target_mean": 11.5,
+  "target_high": 13,
+  "target_low": 10.25,
+  "target_analysts": 7,
   "statements": [
     {
       "year": "2022",
@@ -44,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 33697000,
-      "earnings": 0
-    },
-    {
       "q": "3Q2025",
       "revenue": 33094000,
       "earnings": 0
@@ -62,9 +64,19 @@
       "q": "2Q2026",
       "revenue": 34207000,
       "earnings": 0
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 34520000,
+      "earnings": 0
     }
   ],
-  "growth": null,
+  "growth": {
+    "q0": null,
+    "q1": null,
+    "y0": null,
+    "y1": 0.5227
+  },
   "ratings": [],
   "holders": [
     {

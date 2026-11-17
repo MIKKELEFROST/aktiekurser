@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T22:07:34.537Z",
+  "updated_at": "2026-11-17T00:28:07.012Z",
   "source": "Yahoo Finance",
   "symbol": "IDR",
   "summary": "Idaho Strategic Resources, Inc., a resource-based company, engages in the exploration, development, and extraction of gold, silver, and base metal mineral resources in the North Idaho. The company was formerly known as New Jersey Mining Company and changed its name to Idaho Strategic Resources, Inc. in December 2021. Idaho Strategic Resources, Inc. was incorporated in 1996 and is based in Coeur d'Alene, Idaho.",
@@ -8,7 +8,7 @@
   "employees": 62,
   "ceo": "Mr. John A. Swallow",
   "next_earnings": "2026-11-16",
-  "earnings_estimated": true,
+  "earnings_estimated": false,
   "earnings_call": null,
   "eps_estimate": null,
   "analysts": {
@@ -51,16 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 9476740,
-      "earnings": 2767460
-    },
-    {
-      "q": "3Q2025",
-      "revenue": 11081270,
-      "earnings": 2974560
-    },
-    {
       "q": "4Q2025",
       "revenue": 14569710,
       "earnings": 9364680
@@ -69,6 +59,16 @@
       "q": "1Q2026",
       "revenue": 14482290,
       "earnings": 6387990
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 10732340,
+      "earnings": 3651600
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 11919410,
+      "earnings": 2642060
     }
   ],
   "growth": null,
@@ -99,9 +99,9 @@
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 0.91,
-      "shares": 1250250,
-      "date": "2026-06-30"
+      "pct": 0.95,
+      "shares": 1310071,
+      "date": "2026-09-30"
     },
     {
       "name": "State Street Corporation",
@@ -114,8 +114,8 @@
       "name": "Vanguard Capital Management LLC",
       "kind": "institution",
       "pct": 0.48,
-      "shares": 662444,
-      "date": "2026-06-30"
+      "shares": 665850,
+      "date": "2026-09-30"
     },
     {
       "name": "SPDR SERIES TRUST-State Street SPDR S&P Metals & Mining ETF",
@@ -148,9 +148,9 @@
     {
       "name": "Van Eck Associates Corporation",
       "kind": "institution",
-      "pct": 0.27,
-      "shares": 375376,
-      "date": "2026-06-30"
+      "pct": 0.26,
+      "shares": 354062,
+      "date": "2026-09-30"
     },
     {
       "name": "VanEck ETF Trust-VanEck Junior Gold Miners ETF",
@@ -177,9 +177,9 @@
   },
   "extras": {
     "beta": 1.079,
-    "enterprise_value": 264509408,
-    "ev_ebitda": 10.257,
-    "ev_revenue": 5.2,
+    "enterprise_value": 259286784,
+    "ev_ebitda": 10.054,
+    "ev_revenue": 5.097,
     "float_shares": 14946710,
     "short_shares": 1165299,
     "short_pct_float": 7.79,
@@ -190,14 +190,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 188,
+  "inst_count": 190,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.19,
-      "actual": 0.2,
-      "surprise_pct": 5.26
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.2,
@@ -215,6 +209,12 @@
       "estimate": 0.25,
       "actual": 0.23,
       "surprise_pct": -8
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.3,
+      "actual": 0.17,
+      "surprise_pct": -43.33
     }
   ],
   "insiders": [
@@ -237,21 +237,21 @@
       "date": "2026-01-16"
     },
     {
-      "name": "SWALLOW JOHN A",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 11.50 per share.",
-      "value": 132250,
-      "shares": 11500,
-      "date": "2026-01-07"
-    },
-    {
       "name": "HAYES MONIQUE D",
       "role": "Officer",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 11.50 per share.",
       "value": 74750,
       "shares": 6500,
+      "date": "2026-01-07"
+    },
+    {
+      "name": "SWALLOW JOHN A",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 11.50 per share.",
+      "value": 132250,
+      "shares": 11500,
       "date": "2026-01-07"
     },
     {

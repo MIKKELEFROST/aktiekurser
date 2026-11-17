@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T22:07:35.477Z",
+  "updated_at": "2026-11-17T00:28:08.064Z",
   "source": "Yahoo Finance",
   "symbol": "SKHY",
   "summary": "SK hynix Inc. through its subsidiaries, engages in research, develops, manufactures, distributes, and sells semiconductor devices in Korea, China, rest of Asia, the United States, Europe, and internationally. It offers DRAM, such as server memory, graphics memory, mobile memory, PC memory, consumer memory; NAND flash memory; SSD; and MCP products. It also engages in foundry business, produces non-memory semiconductors. The company serves its products for server, networking, mobile, personal computer, consumer, and automotive applications. The company was formerly known as Hynix Semiconductor Inc. and changed its name to SK hynix Inc. in March 2012. SK hynix Inc. was incorporated in 1949 and is headquartered in Icheon-si, South Korea.",
@@ -151,10 +151,31 @@
   ],
   "holders": [
     {
+      "name": "Van Eck Associates Corporation",
+      "kind": "institution",
+      "pct": 0.31,
+      "shares": 22432169,
+      "date": "2026-09-30"
+    },
+    {
       "name": "VanEck ETF Trust-VanEck Semiconductor ETF",
       "kind": "fond",
       "pct": 0.24,
       "shares": 17801800,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Blackrock Inc.",
+      "kind": "institution",
+      "pct": 0.18,
+      "shares": 13010177,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Morgan Stanley",
+      "kind": "institution",
+      "pct": 0.15,
+      "shares": 10652586,
       "date": "2026-09-30"
     },
     {
@@ -198,27 +219,6 @@
       "pct": 0.06,
       "shares": 4241521,
       "date": "2026-09-30"
-    },
-    {
-      "name": "NEW PERSPECTIVE FUND",
-      "kind": "fond",
-      "pct": 0.06,
-      "shares": 4029278,
-      "date": "2026-09-30"
-    },
-    {
-      "name": "Capital Research Global Investors",
-      "kind": "institution",
-      "pct": 0.04,
-      "shares": 3158643,
-      "date": "2026-09-30"
-    },
-    {
-      "name": "Direxion Shares ETF Trust-Direxion Daily Semiconductor Bull 3X ETF",
-      "kind": "fond",
-      "pct": 0.04,
-      "shares": 2765183,
-      "date": "2026-09-30"
     }
   ],
   "insider_net": {
@@ -231,10 +231,10 @@
   },
   "extras": {
     "beta": 2.466,
-    "enterprise_value": -97666734227456,
+    "enterprise_value": -97779225460736,
     "ev_ebitda": -0.452,
     "ev_revenue": -0.363,
-    "float_shares": 5760404800,
+    "float_shares": 5760332600,
     "short_shares": 36421251,
     "short_pct_float": null,
     "short_ratio": 1.68,
@@ -244,13 +244,19 @@
   "ex_dividend": "2026-08-31",
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 616,
+  "inst_count": 722,
   "eps_history": [
     {
       "quarter": "2026-06-30",
       "estimate": 4.87,
       "actual": 90.61569,
       "surprise_pct": 1760.69
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 6.49853,
+      "actual": 4.07355,
+      "surprise_pct": -37.32
     }
   ],
   "insiders": [],

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T22:07:34.430Z",
+  "updated_at": "2026-11-17T00:28:06.794Z",
   "source": "Yahoo Finance",
   "symbol": "HAWK",
   "summary": "HawkEye 360, Inc. operates as a space-enabled defense technology company in the United States. The company offers a shareable, battlefield-proven RF intelligence platform and database for warfighters during varied cycles of geopolitical volatility. The company's solutions include customized SIGINT solutions including hardware, algorithms, and software capabilities; monitoring maritime activity in a customer's regional domain; tracking military radar and air defense systems; tracking extremist group communications, movement, and activity; maintaining border security and providing tactical ISR on battlefield environments; ensuring navigational integrity of GNSS; and core signal processing algorithms used in national government SIGINT systems. The company designs, manufactures, owns, and operates a global constellation of satellites that collect data in proprietary formations. It also uses end-to-end signal processing algorithms to detect and characterize a wide set of emitter types, including radars, jammers, beacons, and mobile radio devices. Additionally, it provides proprietary analytics and insights to identify, track, analyze, and predict specific emitters, converting data into insights for our intelligence partners. The company caters to the United States Government defense, intelligence, and national security agencies, as well as allied international governments. The company has a strategic collaboration with ERA a.s. HawkEye 360, Inc. was incorporated in 2015 and is based in Herndon, Virginia.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-12",
   "earnings_estimated": false,
   "earnings_call": "2026-11-12",
-  "eps_estimate": 0.048,
+  "eps_estimate": 0.05667,
   "analysts": {
     "strong_buy": 3,
     "buy": 8,
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 11
   },
-  "target_mean": 28.6,
+  "target_mean": 27.7,
   "target_high": 41,
   "target_low": 21,
   "target_analysts": 10,
@@ -50,11 +50,18 @@
   ],
   "growth": {
     "q0": null,
-    "q1": 1.142,
+    "q1": 1.127,
     "y0": null,
-    "y1": 3.6364002
+    "y1": 3.0658998
   },
   "ratings": [
+    {
+      "date": "2026-11-13",
+      "firm": "Piper Sandler",
+      "from": "Overweight",
+      "to": "Overweight",
+      "action": "main"
+    },
     {
       "date": "2026-10-28",
       "firm": "RBC Capital",
@@ -117,13 +124,6 @@
       "from": null,
       "to": "Strong Buy",
       "action": "init"
-    },
-    {
-      "date": "2026-06-01",
-      "firm": "William Blair",
-      "from": null,
-      "to": "Outperform",
-      "action": "init"
     }
   ],
   "holders": [
@@ -135,11 +135,18 @@
       "date": "2026-06-30"
     },
     {
+      "name": "Blackrock Inc.",
+      "kind": "institution",
+      "pct": 7.12,
+      "shares": 6970966,
+      "date": "2026-09-30"
+    },
+    {
       "name": "FMR, LLC",
       "kind": "institution",
-      "pct": 2.68,
-      "shares": 2625250,
-      "date": "2026-06-30"
+      "pct": 4.05,
+      "shares": 3965271,
+      "date": "2026-09-30"
     },
     {
       "name": "Adage Capital Partners GP L.L.C.",
@@ -163,6 +170,13 @@
       "date": "2026-06-30"
     },
     {
+      "name": "Morgan Stanley",
+      "kind": "institution",
+      "pct": 1.55,
+      "shares": 1522164,
+      "date": "2026-09-30"
+    },
+    {
       "name": "Alliancebernstein L.P.",
       "kind": "institution",
       "pct": 1.27,
@@ -177,43 +191,29 @@
       "date": "2026-06-30"
     },
     {
-      "name": "Fidelity Securities Fund-Fidelity Small Cap Growth Fund",
-      "kind": "fond",
-      "pct": 0.84,
-      "shares": 822570,
-      "date": "2026-08-31"
-    },
-    {
-      "name": "Capital International Investors",
+      "name": "Massachusetts Financial Services Co.",
       "kind": "institution",
-      "pct": 0.81,
-      "shares": 790916,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "Jupiter Topco LLC",
-      "kind": "institution",
-      "pct": 0.78,
-      "shares": 764623,
-      "date": "2026-06-30"
+      "pct": 0.88,
+      "shares": 866881,
+      "date": "2026-09-30"
     }
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 17,
+    "buys": 3,
     "sells": 3,
-    "bought": 35440994,
+    "bought": 115000,
     "sold": 85734,
-    "net_pct": -233.1
+    "net_pct": 0.1
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 979217408,
-    "ev_ebitda": 381.167,
-    "ev_revenue": 5.027,
-    "float_shares": 68170096,
+    "enterprise_value": 1363906816,
+    "ev_ebitda": 530.91,
+    "ev_revenue": 7.002,
+    "float_shares": 68747456,
     "short_shares": 2955553,
-    "short_pct_float": 3.05,
+    "short_pct_float": 3.02,
     "short_ratio": 1.93,
     "last_split": null,
     "last_split_date": null
@@ -221,7 +221,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": null,
-  "inst_count": 177,
+  "inst_count": 178,
   "eps_history": [
     {
       "quarter": "2026-03-31",

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T22:07:33.382Z",
+  "updated_at": "2026-11-17T00:28:05.530Z",
   "source": "Yahoo Finance",
   "symbol": "ADIG",
   "summary": "ADI Global Distribution Inc. operates as a distributor of security, AV, and smart living products in the United States and internationally. The company sells video surveillance, power, automation, access control, AV, fire, intrusion, smart living, communications, and datacom and networking products. ADI Global Distribution Inc. was founded in 1929 and is based in Melville, New York.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-12",
   "earnings_estimated": false,
   "earnings_call": "2026-11-12",
-  "eps_estimate": 0.43785,
+  "eps_estimate": -0.16,
   "analysts": {
     "strong_buy": 0,
     "buy": 2,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 5
   },
-  "target_mean": 26.4,
+  "target_mean": 16.2,
   "target_high": 35,
-  "target_low": 20,
+  "target_low": 10,
   "target_analysts": 5,
   "statements": [
     {
@@ -40,14 +40,14 @@
     {
       "q": "3Q2026",
       "revenue": 1306000000,
-      "earnings": 0
+      "earnings": -655000000
     }
   ],
   "growth": {
     "q0": null,
     "q1": null,
     "y0": null,
-    "y1": 0.1708
+    "y1": 0.7407
   },
   "ratings": [
     {
@@ -102,10 +102,24 @@
       "date": "2026-09-30"
     },
     {
+      "name": "Blackrock Inc.",
+      "kind": "institution",
+      "pct": 13.6,
+      "shares": 10328096,
+      "date": "2026-09-30"
+    },
+    {
       "name": "Clayton, Dubilier & Rice, LLC",
       "kind": "institution",
       "pct": 9.87,
       "shares": 7495958,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Vanguard Portfolio Management LLC",
+      "kind": "institution",
+      "pct": 5.48,
+      "shares": 4160145,
       "date": "2026-09-30"
     },
     {
@@ -123,6 +137,13 @@
       "date": "2026-09-30"
     },
     {
+      "name": "Vanguard Capital Management LLC",
+      "kind": "institution",
+      "pct": 4.39,
+      "shares": 3329541,
+      "date": "2026-09-30"
+    },
+    {
       "name": "State Street Corporation",
       "kind": "institution",
       "pct": 3.8,
@@ -137,32 +158,11 @@
       "date": "2026-09-30"
     },
     {
-      "name": "iShares Trust-iShares Russell 2000 ETF",
-      "kind": "fond",
-      "pct": 2.35,
-      "shares": 1784603,
-      "date": "2026-09-30"
-    },
-    {
-      "name": "Geode Capital Management, LLC",
+      "name": "Ariel Investments, LLC",
       "kind": "institution",
-      "pct": 2.31,
-      "shares": 1753230,
+      "pct": 2.68,
+      "shares": 2031003,
       "date": "2026-09-30"
-    },
-    {
-      "name": "Fidelity Capital Trust-Fidelity Value Fund",
-      "kind": "fond",
-      "pct": 2.21,
-      "shares": 1675172,
-      "date": "2026-09-30"
-    },
-    {
-      "name": "Fidelity Puritan Trust-Fidelity Low-Priced Stock Fund",
-      "kind": "fond",
-      "pct": 1.92,
-      "shares": 1455123,
-      "date": "2026-08-31"
     }
   ],
   "insider_net": {
@@ -175,10 +175,10 @@
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 2603576320,
-    "ev_ebitda": 10.17,
-    "ev_revenue": 0.534,
-    "float_shares": 75882959,
+    "enterprise_value": 1953639808,
+    "ev_ebitda": 8.313,
+    "ev_revenue": 0.392,
+    "float_shares": 68459639,
     "short_shares": 3724236,
     "short_pct_float": null,
     "short_ratio": 6.63,
@@ -188,8 +188,15 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": null,
-  "inst_count": 251,
-  "eps_history": [],
+  "inst_count": 324,
+  "eps_history": [
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.43785,
+      "actual": 0.1053,
+      "surprise_pct": -75.95
+    }
+  ],
   "insiders": [
     {
       "name": "CARLET MICHAEL",

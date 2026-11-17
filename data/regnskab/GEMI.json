@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T22:07:34.335Z",
+  "updated_at": "2026-11-17T00:28:06.668Z",
   "source": "Yahoo Finance",
   "symbol": "GEMI",
   "summary": "Gemini Space Station, Inc. operates a cryptocurrency platform in the United States and internationally. The company offers Gemini, a platform that enables users to trade, custody, and earn in a range of digital assets and offerings; Gemini ActiveTrader for advanced charting, multiple order types, and the ability to monitor and execute in multiple markets; and Gemini Derivatives to trade perpetual contracts with cross-collateralization for risk and capital management. It also provides Gemini Prediction for trading event contracts; custody solutions; and Gemini Credit Card for users to earn crypto rewards. The company serves institutional investors, including asset managers, hedge funds, proprietary trading firms, and corporations, as well as individual retail users. Gemini Space Station, Inc. was founded in 2014 and is based in New York, New York.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-12",
   "earnings_estimated": false,
   "earnings_call": "2026-11-13",
-  "eps_estimate": -0.57,
+  "eps_estimate": -0.53,
   "analysts": {
     "strong_buy": 1,
     "buy": 2,
@@ -19,8 +19,8 @@
     "strong_sell": 0,
     "total": 10
   },
-  "target_mean": 5.225,
-  "target_high": 7,
+  "target_mean": 5.075,
+  "target_high": 6.5,
   "target_low": 3.5,
   "target_analysts": 10,
   "statements": [
@@ -60,10 +60,10 @@
     }
   ],
   "growth": {
-    "q0": 0.90440005,
-    "q1": 0.4987,
-    "y0": 0.763,
-    "y1": 0.2725
+    "q0": 0.5832,
+    "q1": 0.2919,
+    "y0": 0.8154,
+    "y1": 0.059
   },
   "ratings": [
     {
@@ -139,17 +139,17 @@
   ],
   "holders": [
     {
+      "name": "Blackrock Inc.",
+      "kind": "institution",
+      "pct": 7.08,
+      "shares": 3960301,
+      "date": "2026-09-30"
+    },
+    {
       "name": "Parafi Capital LP                          ",
       "kind": "institution",
       "pct": 6.13,
       "shares": 3428888,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "Blackrock Inc.",
-      "kind": "institution",
-      "pct": 5.09,
-      "shares": 2845263,
       "date": "2026-06-30"
     },
     {
@@ -160,25 +160,32 @@
       "date": "2026-09-30"
     },
     {
-      "name": "Marshall Wace LLP",
+      "name": "Vanguard Capital Management LLC",
       "kind": "institution",
-      "pct": 2.57,
-      "shares": 1436034,
-      "date": "2026-06-30"
+      "pct": 2.86,
+      "shares": 1598247,
+      "date": "2026-09-30"
     },
     {
       "name": "Morgan Stanley",
       "kind": "institution",
-      "pct": 2.29,
-      "shares": 1277798,
-      "date": "2026-06-30"
+      "pct": 2.85,
+      "shares": 1595264,
+      "date": "2026-09-30"
     },
     {
-      "name": "Vanguard Capital Management LLC",
+      "name": "Marshall Wace LLP",
       "kind": "institution",
-      "pct": 2.27,
-      "shares": 1270274,
-      "date": "2026-06-30"
+      "pct": 2.63,
+      "shares": 1471449,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Bitwise Funds Trust",
+      "kind": "institution",
+      "pct": 2.12,
+      "shares": 1184894,
+      "date": "2026-09-30"
     },
     {
       "name": "iShares Trust-iShares Russell 2000 ETF",
@@ -200,13 +207,6 @@
       "pct": 1.84,
       "shares": 1026123,
       "date": "2026-06-30"
-    },
-    {
-      "name": "Commonwealth Bank of Australia",
-      "kind": "institution",
-      "pct": 1.28,
-      "shares": 714284,
-      "date": "2026-06-30"
     }
   ],
   "insider_net": {
@@ -215,16 +215,16 @@
     "sells": 3,
     "bought": 7353814,
     "sold": 28078,
-    "net_pct": -248.4
+    "net_pct": -305.6
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 756179840,
-    "ev_ebitda": -2.283,
-    "ev_revenue": 3.839,
-    "float_shares": 46156022,
+    "enterprise_value": 730201920,
+    "ev_ebitda": -2.267,
+    "ev_revenue": 3.707,
+    "float_shares": 47043450,
     "short_shares": 14797524,
-    "short_pct_float": 26.52,
+    "short_pct_float": 27.2,
     "short_ratio": 8.04,
     "last_split": null,
     "last_split_date": null
@@ -232,14 +232,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 166,
+  "inst_count": 170,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -2.37155,
-      "actual": -5.964,
-      "surprise_pct": -151.48
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.96,
@@ -257,6 +251,12 @@
       "estimate": -0.66333,
       "actual": -0.8966,
       "surprise_pct": -35.17
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.57,
+      "actual": -0.4565,
+      "surprise_pct": 19.91
     }
   ],
   "insiders": [

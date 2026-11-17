@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T22:07:35.936Z",
+  "updated_at": "2026-11-17T00:28:08.340Z",
   "source": "Yahoo Finance",
   "symbol": "TSN",
   "summary": "Tyson Foods, Inc., together with its subsidiaries, operates as a food company worldwide. It operates through four segments: Beef, Pork, Chicken, and Prepared Foods. The company processes live fed cattle and hogs; fabricates dressed beef and pork carcasses into primal and sub-primal meat cuts, as well as case ready beef and pork, and fully cooked meats; raises and processes chickens into fresh, frozen, and value-added chicken products, including breaded chicken strips, nuggets, patties, and other ready-to-fix or fully cooked chicken parts; and supplies poultry breeding stock. It also manufactures and markets frozen and refrigerated food products, including ready-to-eat sandwiches, flame-grilled hamburgers, Philly steaks, pepperoni, bacon, breakfast sausage, turkey, lunchmeat, hot dogs, flour and corn tortilla products, appetizers, snacks, prepared meals, ethnic foods, side dishes, meat dishes, breadsticks, and processed meats under the Tyson, Jimmy Dean, Hillshire Farm, Ball Park, Wright, Aidells, Gallo Salame, ibp, and State Fair brands. The company sells its products through its sales staff to grocery retailers, grocery wholesalers, meat distributors, warehouse club stores, military commissaries, industrial food processing companies, chain restaurants or their distributors, live markets, international export companies, and domestic distributors who serve restaurants and food service operations, such as plant and school cafeterias, convenience stores, hospitals, and other vendors, as well as through independent brokers and trading companies. Tyson Foods, Inc. was founded in 1935 and is headquartered in Springdale, Arkansas.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-16",
   "earnings_estimated": false,
   "earnings_call": "2026-11-16",
-  "eps_estimate": 0.59996,
+  "eps_estimate": 0.98684,
   "analysts": {
     "strong_buy": 3,
     "buy": 2,
@@ -19,17 +19,11 @@
     "strong_sell": 1,
     "total": 13
   },
-  "target_mean": 63,
+  "target_mean": 63.27273,
   "target_high": 75,
   "target_low": 56,
-  "target_analysts": 12,
+  "target_analysts": 11,
   "statements": [
-    {
-      "year": "2022",
-      "revenue": 53282000000,
-      "net": 3238000000,
-      "margin": 6.1
-    },
     {
       "year": "2023",
       "revenue": 52881000000,
@@ -47,14 +41,15 @@
       "revenue": 54441000000,
       "net": 474000000,
       "margin": 0.9
+    },
+    {
+      "year": "2026",
+      "revenue": 56419000000,
+      "net": 453000000,
+      "margin": 0.8
     }
   ],
   "quarterly": [
-    {
-      "q": "3Q2025",
-      "revenue": 13860000000,
-      "earnings": 47000000
-    },
     {
       "q": "4Q2025",
       "revenue": 14313000000,
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 13868000000,
       "earnings": 182000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 14585000000,
+      "earnings": -74000000
     }
   ],
   "growth": {
-    "q0": -0.4783,
-    "q1": 0.0042,
-    "y0": -0.14899999,
-    "y1": 0.094799995
+    "q0": 0.0174,
+    "q1": 0.0777,
+    "y0": 0.1265,
+    "y1": 0.2447
   },
   "ratings": [
     {
@@ -153,16 +153,16 @@
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 9.3,
-      "shares": 26216957,
-      "date": "2026-06-30"
+      "pct": 9.56,
+      "shares": 26946155,
+      "date": "2026-09-30"
     },
     {
       "name": "Vanguard Capital Management LLC",
       "kind": "institution",
-      "pct": 6.54,
-      "shares": 18433920,
-      "date": "2026-06-30"
+      "pct": 6.56,
+      "shares": 18495559,
+      "date": "2026-09-30"
     },
     {
       "name": "Pzena Investment Management LLC",
@@ -174,9 +174,9 @@
     {
       "name": "Vanguard Portfolio Management LLC",
       "kind": "institution",
-      "pct": 5.51,
-      "shares": 15528970,
-      "date": "2026-06-30"
+      "pct": 5.37,
+      "shares": 15145805,
+      "date": "2026-09-30"
     },
     {
       "name": "State Street Corporation",
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.374,
-    "enterprise_value": 28219758592,
-    "ev_ebitda": 10.18,
-    "ev_revenue": 0.507,
+    "enterprise_value": 28064964608,
+    "ev_ebitda": 10.124,
+    "ev_revenue": 0.504,
     "float_shares": 274493130,
     "short_shares": 11002837,
     "short_pct_float": 3.99,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-12-01",
   "dividend_date": null,
   "payout_ratio": 1.2530999,
-  "inst_count": 1157,
+  "inst_count": 1148,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.83474,
-      "actual": 1.15,
-      "surprise_pct": 37.77
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.94098,
@@ -269,6 +263,12 @@
       "estimate": 0.98669,
       "actual": 0.99,
       "surprise_pct": 0.34
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.61138,
+      "actual": 0.61,
+      "surprise_pct": -0.23
     }
   ],
   "insiders": [
@@ -300,7 +300,7 @@
       "date": "2026-07-10"
     },
     {
-      "name": "BRONCZEK DAVID J",
+      "name": "MARTINEZ MARIA N.",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 65.26 per share.",
@@ -336,6 +336,15 @@
       "date": "2026-02-06"
     },
     {
+      "name": "WHITE NOEL W",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 65.26 per share.",
+      "value": 190000,
+      "shares": 2911,
+      "date": "2026-02-06"
+    },
+    {
       "name": "BOND SARAH R.",
       "role": "Director",
       "kind": "other",
@@ -345,16 +354,7 @@
       "date": "2026-02-06"
     },
     {
-      "name": "TYSON OLIVIA",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 65.26 per share.",
-      "value": 190000,
-      "shares": 2911,
-      "date": "2026-02-06"
-    },
-    {
-      "name": "MARTINEZ MARIA N.",
+      "name": "BORRAS MARIA CLAUDIA",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 65.26 per share.",

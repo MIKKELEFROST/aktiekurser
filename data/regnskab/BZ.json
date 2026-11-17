@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T22:07:33.775Z",
+  "updated_at": "2026-11-17T00:28:06.027Z",
   "source": "Yahoo Finance",
   "symbol": "BZ",
   "summary": "Kanzhun Limited, together with its subsidiaries, operates an online recruitment platform in the People's Republic of China. It offers job seeking services that allow job seekers to receive job recommendations, initiate direct chats, and deliver resumes upon mutual consent, as well as value-added tools. The company also provides direct recruitment services to enterprise users to post jobs, receive personalized candidate recommendations, engage in direct communication, and receive resumes upon mutual consent. In addition, it offers online recruitment services through BOSS Zhipin, a mobile app; and management consultancy and technical services. Kanzhun Limited was founded in 2013 and is headquartered in Beijing, the People's Republic of China.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-25",
   "earnings_estimated": false,
   "earnings_call": "2026-11-25",
-  "eps_estimate": 2.30764,
+  "eps_estimate": 2.29764,
   "analysts": {
     "strong_buy": 6,
     "buy": 15,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 22
   },
-  "target_mean": 21.216948,
-  "target_high": 27.248917,
-  "target_low": 17.03472,
+  "target_mean": 20.794092,
+  "target_high": 27.282495,
+  "target_low": 17.054207,
   "target_analysts": 21,
   "statements": [
     {
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 2102433000,
-      "earnings": 716398000
-    },
-    {
       "q": "3Q2025",
       "revenue": 2163281000,
       "earnings": 775420000
@@ -69,13 +64,18 @@
       "q": "1Q2026",
       "revenue": 2068792000,
       "earnings": 1156693000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 2398603000,
+      "earnings": 1945108000
     }
   ],
   "growth": {
-    "q0": 0.0684,
-    "q1": 0.1176,
-    "y0": 0.1105,
-    "y1": 0.120699994
+    "q0": 0.0637,
+    "q1": 0.1146,
+    "y0": 0.1074,
+    "y1": 0.1251
   },
   "ratings": [
     {
@@ -167,9 +167,16 @@
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 4.41,
-      "shares": 18266420,
-      "date": "2026-06-30"
+      "pct": 5.61,
+      "shares": 23244304,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Morgan Stanley",
+      "kind": "institution",
+      "pct": 3.48,
+      "shares": 14409885,
+      "date": "2026-09-30"
     },
     {
       "name": "Perseverance Asset Management International",
@@ -186,18 +193,11 @@
       "date": "2026-09-30"
     },
     {
-      "name": "Coreview Capital Management Ltd.",
+      "name": "Vanguard Capital Management LLC",
       "kind": "institution",
-      "pct": 3.01,
-      "shares": 12480785,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "Morgan Stanley",
-      "kind": "institution",
-      "pct": 2.99,
-      "shares": 12405907,
-      "date": "2026-06-30"
+      "pct": 2.95,
+      "shares": 12243286,
+      "date": "2026-09-30"
     },
     {
       "name": "Krane Shares Trust-KraneShares CSI China Internet ETF",
@@ -207,11 +207,11 @@
       "date": "2026-06-30"
     },
     {
-      "name": "Vanguard Capital Management LLC",
+      "name": "Coreview Capital Management Ltd.",
       "kind": "institution",
-      "pct": 2.84,
-      "shares": 11763812,
-      "date": "2026-06-30"
+      "pct": 2.94,
+      "shares": 12189066,
+      "date": "2026-09-30"
     },
     {
       "name": "Price (T.Rowe) Associates Inc",
@@ -227,13 +227,13 @@
     "sells": 5,
     "bought": 758794,
     "sold": 671920,
-    "net_pct": 59.3
+    "net_pct": 5.7
   },
   "extras": {
     "beta": 0.488,
-    "enterprise_value": -16723138560,
-    "ev_ebitda": -4.656,
-    "ev_revenue": -1.92,
+    "enterprise_value": -16664906752,
+    "ev_ebitda": -4.64,
+    "ev_revenue": -1.913,
     "float_shares": 271199833,
     "short_shares": 30223901,
     "short_pct_float": 7.98,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-09-28",
   "dividend_date": null,
   "payout_ratio": 0.1243,
-  "inst_count": 442,
+  "inst_count": 446,
   "eps_history": [
     {
       "quarter": "2025-09-30",
@@ -309,6 +309,15 @@
       "date": "2026-09-04"
     },
     {
+      "name": "SUN YONGGANG",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 13.20 per share.",
+      "value": 7234,
+      "shares": 548,
+      "date": "2026-06-16"
+    },
+    {
       "name": "WANG XIEHUA",
       "role": "Director",
       "kind": "sell",
@@ -318,21 +327,21 @@
       "date": "2026-06-16"
     },
     {
-      "name": "WANG XIEHUA",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 150000,
-      "date": "2026-06-16"
-    },
-    {
       "name": "CHEN XU",
       "role": "President",
       "kind": "sell",
       "text": "Sale at price 13.20 per share.",
       "value": 1109,
       "shares": 84,
+      "date": "2026-06-16"
+    },
+    {
+      "name": "WANG XIEHUA",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 150000,
       "date": "2026-06-16"
     },
     {
@@ -351,15 +360,6 @@
       "text": null,
       "value": null,
       "shares": 4212,
-      "date": "2026-06-16"
-    },
-    {
-      "name": "SUN YONGGANG",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 13.20 per share.",
-      "value": 7234,
-      "shares": 548,
       "date": "2026-06-16"
     }
   ],

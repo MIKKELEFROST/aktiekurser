@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T22:07:33.620Z",
+  "updated_at": "2026-11-17T00:28:05.833Z",
   "source": "Yahoo Finance",
   "symbol": "BARK",
   "summary": "BARK, Inc., a dog-centric company, provides products, services, and content for dogs. The company operates in two segments, Direct to Consumer and Commerce. It provides subscription products, including monthly themed boxes of toys and treats to a dog's home, as well as kibble, treats, toppers, dental, and others. The company also offers toys, including beds, leashes, apparel, and other accessories and products under the BarkBox, Super Chewer, and BARK Bright names. The company also offers air travel experience to dogs under the BARK Air name. The company sells its products through a network of retail partners, as well as directly to consumers. BARK, Inc. was founded in 2011 and is headquartered in Brooklyn, New York.",
@@ -10,7 +10,7 @@
   "next_earnings": "2027-02-04",
   "earnings_estimated": true,
   "earnings_call": "2026-11-05",
-  "eps_estimate": null,
+  "eps_estimate": -0.28,
   "analysts": {
     "strong_buy": 0,
     "buy": 2,
@@ -72,10 +72,10 @@
     }
   ],
   "growth": {
-    "q0": null,
-    "q1": null,
+    "q0": 0.53330004,
+    "q1": -0.8571,
     "y0": 0.3692,
-    "y1": null
+    "y1": 0.622
   },
   "ratings": [
     {
@@ -172,17 +172,17 @@
       "date": "2026-09-30"
     },
     {
+      "name": "Vanguard Capital Management LLC",
+      "kind": "institution",
+      "pct": 2.58,
+      "shares": 230174,
+      "date": "2026-09-30"
+    },
+    {
       "name": "Hurricane Capital Advisors LLC",
       "kind": "institution",
       "pct": 2.41,
       "shares": 214795,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "Vanguard Capital Management LLC",
-      "kind": "institution",
-      "pct": 2.11,
-      "shares": 187845,
       "date": "2026-06-30"
     },
     {
@@ -200,24 +200,24 @@
       "date": "2026-06-30"
     },
     {
-      "name": "Nano Cap New Millennium Growth Fund L P",
+      "name": "Morgan Stanley",
       "kind": "institution",
       "pct": 0.97,
-      "shares": 86500,
-      "date": "2026-06-30"
+      "shares": 86348,
+      "date": "2026-09-30"
     },
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 0.92,
-      "shares": 81569,
-      "date": "2026-06-30"
+      "pct": 0.88,
+      "shares": 78840,
+      "date": "2026-09-30"
     },
     {
-      "name": "Geode Capital Management, LLC",
+      "name": "Nano Cap New Millennium Growth Fund L P",
       "kind": "institution",
-      "pct": 0.73,
-      "shares": 65221,
+      "pct": 0.86,
+      "shares": 76500,
       "date": "2026-09-30"
     }
   ],
@@ -231,10 +231,10 @@
   },
   "extras": {
     "beta": 1.964,
-    "enterprise_value": 105987192,
-    "ev_ebitda": -3.808,
-    "ev_revenue": 0.302,
-    "float_shares": 5969861,
+    "enterprise_value": 107413024,
+    "ev_ebitda": -3.859,
+    "ev_revenue": 0.306,
+    "float_shares": 5930383,
     "short_shares": 568928,
     "short_pct_float": 10.56,
     "short_ratio": 16.5,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": null,
-  "inst_count": 82,
+  "inst_count": 80,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -263,6 +263,12 @@
       "estimate": -0.73,
       "actual": -0.2,
       "surprise_pct": 72.6
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.425,
+      "actual": 0.1034,
+      "surprise_pct": 124.33
     }
   ],
   "insiders": [
@@ -274,24 +280,6 @@
       "value": 0,
       "shares": 50000,
       "date": "2026-07-02"
-    },
-    {
-      "name": "MEEKER MATT",
-      "role": "Officer and Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 36611,
-      "date": "2026-06-08"
-    },
-    {
-      "name": "KOEHLER ALLISON",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 10460,
-      "date": "2026-06-08"
     },
     {
       "name": "DOSTIE BRIAN",
@@ -309,6 +297,24 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 13514,
+      "date": "2026-06-08"
+    },
+    {
+      "name": "MEEKER MATT",
+      "role": "Officer and Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 36611,
+      "date": "2026-06-08"
+    },
+    {
+      "name": "KOEHLER ALLISON",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 10460,
       "date": "2026-06-08"
     },
     {
@@ -339,16 +345,16 @@
       "date": "2025-12-10"
     },
     {
-      "name": "MCLAUGHLIN ELIZABETH",
-      "role": "Director",
+      "name": "BLACK MICHAEL SCOTT",
+      "role": "Officer",
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 185139,
+      "shares": 200000,
       "date": "2025-08-20"
     },
     {
-      "name": "MCGINTY JAMES J",
+      "name": "MCLAUGHLIN ELIZABETH",
       "role": "Director",
       "kind": "other",
       "text": null,

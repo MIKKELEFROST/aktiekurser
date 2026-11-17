@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T22:07:34.180Z",
+  "updated_at": "2026-11-17T00:28:06.503Z",
   "source": "Yahoo Finance",
   "symbol": "ETRA",
   "summary": "Electra Therapeutics, Inc. is a clinical-stage biopharmaceutical company. The company develops therapies that targets signal regulatory proteins for the treatment of novel targets for treatment of immune-mediated diseases and cancer. Its lead product candidate is ipsoprubart, that targets signal regulatory protein on the cell surface of myeloid and T cells and depletes pathological immune cells, treatment for secondary hemophagocytic lymphohistiocytosis and T/NK Cell Malignancies; ELA822, a novel SIRP-specific monoclonal antibody for deplete activated T cells, treatment for T cell mediated immune disorders. Electra Therapeutics, Inc. was incorporated in 2018 and is based in South San Francisco, California.",
@@ -10,7 +10,7 @@
   "next_earnings": null,
   "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": -2.9552,
+  "eps_estimate": -0.4383,
   "analysts": {
     "strong_buy": 1,
     "buy": 5,
@@ -31,7 +31,13 @@
       "margin": null
     }
   ],
-  "quarterly": [],
+  "quarterly": [
+    {
+      "q": "3Q2026",
+      "revenue": 0,
+      "earnings": -23928000
+    }
+  ],
   "growth": {
     "q0": null,
     "q1": null,
@@ -84,73 +90,73 @@
   ],
   "holders": [
     {
+      "name": "Eqt Fund Management S.a R.l.",
+      "kind": "institution",
+      "pct": 6.04,
+      "shares": 3795281,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Blue Owl Capital Holdings LP",
+      "kind": "institution",
+      "pct": 4.15,
+      "shares": 2611143,
+      "date": "2026-09-30"
+    },
+    {
       "name": "Sanofi",
       "kind": "institution",
-      "pct": 4.03,
+      "pct": 3.92,
       "shares": 2461948,
       "date": "2026-09-30"
     },
     {
       "name": "Jefferies Financial Group Inc.",
       "kind": "institution",
-      "pct": 3.67,
+      "pct": 3.57,
       "shares": 2244333,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "JPMORGAN CHASE & CO",
+      "kind": "institution",
+      "pct": 3.33,
+      "shares": 2095670,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "MIC Capital Management UK LLP",
+      "kind": "institution",
+      "pct": 3.15,
+      "shares": 1977170,
       "date": "2026-09-30"
     },
     {
       "name": "AB CAP FUND, INC.-AB Small Cap Growth Portfolio",
       "kind": "fond",
-      "pct": 1.25,
+      "pct": 1.22,
       "shares": 764375,
       "date": "2026-09-30"
     },
     {
-      "name": "Monashee Investment Management LLC",
+      "name": "Maven Securities Limited",
       "kind": "institution",
-      "pct": 0.16,
-      "shares": 100000,
+      "pct": 0.32,
+      "shares": 200000,
       "date": "2026-09-30"
     },
     {
-      "name": "Squarepoint Ops LLC",
+      "name": "Vanguard Capital Management LLC",
       "kind": "institution",
-      "pct": 0.07,
-      "shares": 43768,
+      "pct": 0.31,
+      "shares": 194739,
       "date": "2026-09-30"
     },
     {
-      "name": "Y Intercept (Hong Kong) Ltd",
+      "name": "Victory Capital Management Inc.",
       "kind": "institution",
-      "pct": 0.03,
-      "shares": 21103,
-      "date": "2026-09-30"
-    },
-    {
-      "name": "AB VARIABLE PRODUCTS SERIES FUND, INC.-AB Small Cap Growth Portfolio",
-      "kind": "fond",
-      "pct": 0.03,
-      "shares": 15358,
-      "date": "2026-09-30"
-    },
-    {
-      "name": "American Century-American Century Federated Managed Volatility Fund II",
-      "kind": "fond",
-      "pct": 0.02,
-      "shares": 10000,
-      "date": "2026-09-30"
-    },
-    {
-      "name": "Federated Hermes Index Trust-Federated Hermes Max-Cap Index Fund",
-      "kind": "fond",
-      "pct": 0,
-      "shares": 45,
-      "date": "2026-09-30"
-    },
-    {
-      "name": "Federated Hermes Index Trust-Federated Hermes Mid-Cap Index Fund",
-      "kind": "fond",
-      "pct": 0,
-      "shares": 44,
+      "pct": 0.28,
+      "shares": 177688,
       "date": "2026-09-30"
     }
   ],
@@ -164,10 +170,10 @@
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 772052608,
+    "enterprise_value": 755555520,
     "ev_ebitda": null,
     "ev_revenue": null,
-    "float_shares": 28566218,
+    "float_shares": 24872094,
     "short_shares": 484020,
     "short_pct_float": null,
     "short_ratio": 1.13,
@@ -177,8 +183,15 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": null,
-  "inst_count": 32,
-  "eps_history": [],
+  "inst_count": 43,
+  "eps_history": [
+    {
+      "quarter": "2026-09-30",
+      "estimate": -2.9552,
+      "actual": -3.47,
+      "surprise_pct": -17.42
+    }
+  ],
   "insiders": [
     {
       "name": "GORDON CARL L",

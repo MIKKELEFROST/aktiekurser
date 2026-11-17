@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T22:07:35.325Z",
+  "updated_at": "2026-11-17T00:28:07.860Z",
   "source": "Yahoo Finance",
   "symbol": "RDDT",
   "summary": "Reddit, Inc. operates a digital community in the United States and internationally. The company's platform enables user to engage in conversations, explore passions, research new hobbies, exchange goods and services, create new communities and experiences, share laughs, and find belonging. It also organizes communities based on specific interests that enable users to engage in conversations by sharing experiences, submitting links, uploading images and videos, and replying to one another. Reddit, Inc. was founded in 2005 and is headquartered in San Francisco, California.",
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 32
   },
-  "target_mean": 150.0138,
+  "target_mean": 148.46207,
   "target_high": 272,
-  "target_low": 100,
+  "target_low": 85,
   "target_analysts": 29,
   "statements": [
     {
@@ -67,9 +67,9 @@
   ],
   "growth": {
     "q0": 0.45900002,
-    "q1": 0.2037,
-    "y0": 0.7008,
-    "y1": 0.2035
+    "q1": 0.19510001,
+    "y0": 0.70669997,
+    "y1": 0.1754
   },
   "ratings": [
     {
@@ -145,6 +145,13 @@
   ],
   "holders": [
     {
+      "name": "Blackrock Inc.",
+      "kind": "institution",
+      "pct": 7.53,
+      "shares": 11057912,
+      "date": "2026-09-30"
+    },
+    {
       "name": "State Street Corporation",
       "kind": "institution",
       "pct": 6.34,
@@ -152,11 +159,18 @@
       "date": "2026-09-30"
     },
     {
-      "name": "Blackrock Inc.",
+      "name": "Vanguard Capital Management LLC",
       "kind": "institution",
-      "pct": 5.45,
-      "shares": 8004079,
-      "date": "2026-06-30"
+      "pct": 6.34,
+      "shares": 9319817,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Vanguard Portfolio Management LLC",
+      "kind": "institution",
+      "pct": 5.07,
+      "shares": 7447527,
+      "date": "2026-09-30"
     },
     {
       "name": "BAILLIE GIFFORD & CO",
@@ -164,20 +178,6 @@
       "pct": 4.83,
       "shares": 7092609,
       "date": "2026-09-30"
-    },
-    {
-      "name": "Vanguard Portfolio Management LLC",
-      "kind": "institution",
-      "pct": 4.72,
-      "shares": 6937449,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "Vanguard Capital Management LLC",
-      "kind": "institution",
-      "pct": 4.11,
-      "shares": 6038213,
-      "date": "2026-06-30"
     },
     {
       "name": "Capital World Investors",
@@ -221,13 +221,13 @@
     "sells": 19,
     "bought": 467760,
     "sold": 458360,
-    "net_pct": 0.7
+    "net_pct": 0.2
   },
   "extras": {
     "beta": 2.275,
-    "enterprise_value": 16220457984,
-    "ev_ebitda": 17.537,
-    "ev_revenue": 5.251,
+    "enterprise_value": 14930591744,
+    "ev_ebitda": 16.143,
+    "ev_revenue": 4.834,
     "float_shares": 141342680,
     "short_shares": 22137442,
     "short_pct_float": 15.18,
@@ -238,7 +238,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 1284,
+  "inst_count": 1282,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -278,15 +278,6 @@
     {
       "name": "HUFFMAN STEVE LADD",
       "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 155.33 - 163.72 per share.",
-      "value": 2744446,
-      "shares": 17308,
-      "date": "2026-10-13"
-    },
-    {
-      "name": "HUFFMAN STEVE LADD",
-      "role": "Chief Executive Officer",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 25.29 per share.",
       "value": 437719,
@@ -294,13 +285,13 @@
       "date": "2026-10-13"
     },
     {
-      "name": "FILI-KRUSHEL PATRICIA D",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 122,
-      "date": "2026-10-05"
+      "name": "HUFFMAN STEVE LADD",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 155.33 - 163.72 per share.",
+      "value": 2744446,
+      "shares": 17308,
+      "date": "2026-10-13"
     },
     {
       "name": "FARRELL SARAH E",
@@ -339,13 +330,13 @@
       "date": "2026-10-05"
     },
     {
-      "name": "HUFFMAN STEVE LADD",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 142.44 - 147.25 per share.",
-      "value": 2507354,
-      "shares": 17308,
-      "date": "2026-09-29"
+      "name": "FILI-KRUSHEL PATRICIA D",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 122,
+      "date": "2026-10-05"
     },
     {
       "name": "HUFFMAN STEVE LADD",
@@ -353,6 +344,15 @@
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 25.29 per share.",
       "value": 437719,
+      "shares": 17308,
+      "date": "2026-09-29"
+    },
+    {
+      "name": "HUFFMAN STEVE LADD",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 142.44 - 147.25 per share.",
+      "value": 2507354,
       "shares": 17308,
       "date": "2026-09-29"
     }

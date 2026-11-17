@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T22:07:35.029Z",
+  "updated_at": "2026-11-17T00:28:07.500Z",
   "source": "Yahoo Finance",
   "symbol": "NMRA",
   "summary": "Neumora Therapeutics, Inc., a clinical-stage biopharmaceutical company, engages in developing therapeutic treatments for brain diseases, neuropsychiatric disorders, and neurodegenerative diseases in the United States. The company develops navacaprant (NMRA-140), a novel once-daily oral kappa opioid receptor antagonist, which is in phase 3 clinical trials for the treatment of major depressive disorder. It also develops NMRA-511 that is in Phase 1b clinical trials in patients with agitation associated with dementia due to Alzheimer's disease; and NMRA-861 and NMRA-898, a M4 muscarinic receptor positive allosteric modulators (PAMs) for schizophrenia and other neuropsychiatric disorders. In addition, the company's preclinical phase product includes NMRA-GCase, an activator program for the treatment of Parkinson's Disease; NMRA-CK1d, a casein kinase 1 isoform delta (CK1d) inhibitor program for Amyotrophic Lateral Sclerosis; and NMRA-215 a brain-penetrant oral NLRP3 inhibitor for the treatment of obesity. The company was formerly known as RBNC Therapeutics, Inc. and changed its name to Neumora Therapeutics, Inc. in October 2021. Neumora Therapeutics, Inc. was incorporated in 2019 and is headquartered in Watertown, Massachusetts.",
@@ -8,9 +8,9 @@
   "employees": 63,
   "ceo": "Dr. Joshua  Pinto Ph.D.",
   "next_earnings": "2026-11-16",
-  "earnings_estimated": true,
+  "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": -0.19279,
+  "eps_estimate": -0.1719,
   "analysts": {
     "strong_buy": 2,
     "buy": 5,
@@ -51,16 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 0,
-      "earnings": -52731000
-    },
-    {
-      "q": "3Q2025",
-      "revenue": 0,
-      "earnings": -56755000
-    },
-    {
       "q": "4Q2025",
       "revenue": 0,
       "earnings": -59449000
@@ -69,11 +59,21 @@
       "q": "1Q2026",
       "revenue": 0,
       "earnings": -53458000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 0,
+      "earnings": -43082000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 0,
+      "earnings": -34440000
     }
   ],
   "growth": {
-    "q0": 0.44919997,
-    "q1": 0.5089,
+    "q0": 0.5089,
+    "q1": 0.45,
     "y0": 0.4035,
     "y1": 0.2991
   },
@@ -160,9 +160,9 @@
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 4.15,
-      "shares": 7791869,
-      "date": "2026-06-30"
+      "pct": 4.33,
+      "shares": 8140913,
+      "date": "2026-09-30"
     },
     {
       "name": "Softbank Group Corporation",
@@ -176,14 +176,28 @@
       "kind": "institution",
       "pct": 2.49,
       "shares": 4669585,
-      "date": "2026-06-30"
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Affinity Asset Advisors, Llc",
+      "kind": "institution",
+      "pct": 2.39,
+      "shares": 4500000,
+      "date": "2026-09-30"
     },
     {
       "name": "MIC Capital Management UK LLP",
       "kind": "institution",
       "pct": 2.37,
       "shares": 4460700,
-      "date": "2026-06-30"
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Exor N.V.",
+      "kind": "institution",
+      "pct": 2.24,
+      "shares": 4215662,
+      "date": "2026-09-30"
     },
     {
       "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
@@ -205,20 +219,6 @@
       "pct": 1.49,
       "shares": 2803916,
       "date": "2026-09-30"
-    },
-    {
-      "name": "FMR, LLC",
-      "kind": "institution",
-      "pct": 1.39,
-      "shares": 2604191,
-      "date": "2026-09-30"
-    },
-    {
-      "name": "ICONIQ Capital, LLC",
-      "kind": "institution",
-      "pct": 1.36,
-      "shares": 2559090,
-      "date": "2026-06-30"
     }
   ],
   "insider_net": {
@@ -231,8 +231,8 @@
   },
   "extras": {
     "beta": 3.144,
-    "enterprise_value": 17776930,
-    "ev_ebitda": -0.086,
+    "enterprise_value": 17006556,
+    "ev_ebitda": -0.082,
     "ev_revenue": null,
     "float_shares": 116412791,
     "short_shares": 7006355,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": null,
-  "inst_count": 161,
+  "inst_count": 165,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.3356,
-      "actual": -0.35,
-      "surprise_pct": -4.29
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.32707,
@@ -269,18 +263,15 @@
       "estimate": -0.24298,
       "actual": -0.23,
       "surprise_pct": 5.34
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.19279,
+      "actual": -0.18,
+      "surprise_pct": 6.63
     }
   ],
   "insiders": [
-    {
-      "name": "AURORA DALJIT SINGH",
-      "role": "Chief Operating Officer",
-      "kind": "sell",
-      "text": "Sale at price 1.51 - 1.60 per share.",
-      "value": 269967,
-      "shares": 176060,
-      "date": "2026-08-21"
-    },
     {
       "name": "AURORA DALJIT SINGH",
       "role": "Chief Operating Officer",
@@ -292,12 +283,12 @@
     },
     {
       "name": "AURORA DALJIT SINGH",
-      "role": "Officer",
+      "role": "Chief Operating Officer",
       "kind": "sell",
-      "text": "Sale at price 1.49 - 1.65 per share.",
-      "value": 431674,
-      "shares": 277773,
-      "date": "2026-08-19"
+      "text": "Sale at price 1.51 - 1.60 per share.",
+      "value": 269967,
+      "shares": 176060,
+      "date": "2026-08-21"
     },
     {
       "name": "AURORA DALJIT SINGH",
@@ -306,6 +297,15 @@
       "text": "Conversion of Exercise of derivative security at price 0.72 per share.",
       "value": 175502,
       "shares": 243753,
+      "date": "2026-08-19"
+    },
+    {
+      "name": "AURORA DALJIT SINGH",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 1.49 - 1.65 per share.",
+      "value": 431674,
+      "shares": 277773,
       "date": "2026-08-19"
     },
     {

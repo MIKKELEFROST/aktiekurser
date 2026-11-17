@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T22:07:35.877Z",
+  "updated_at": "2026-11-17T00:28:08.577Z",
   "source": "Yahoo Finance",
   "symbol": "XPEV",
   "summary": "XPeng Inc. operates as a physical AI company. It has developed a Physical AI architecture covering Turing AI chips, foundation models, and integrated software and hardware applications. The company's products include smart EVs, robotaxis, and humanoid robots. XPeng Inc. was founded in 2015 and is headquartered in Guangzhou, the People's Republic of China.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-16",
   "earnings_estimated": false,
   "earnings_call": "2026-11-16",
-  "eps_estimate": -0.705,
+  "eps_estimate": -0.13,
   "analysts": {
     "strong_buy": 6,
     "buy": 13,
@@ -19,9 +19,9 @@
     "strong_sell": 2,
     "total": 25
   },
-  "target_mean": 17.988567,
-  "target_high": 25.403852,
-  "target_low": 10.01531,
+  "target_mean": 18.010735,
+  "target_high": 25.435156,
+  "target_low": 10.027653,
   "target_analysts": 25,
   "statements": [
     {
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 20380950000,
-      "earnings": -380868000
-    },
-    {
       "q": "4Q2025",
       "revenue": 22253759000,
       "earnings": 383208000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 19743593000,
       "earnings": -1337064000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 24276048000,
+      "earnings": -867975000
     }
   ],
   "growth": {
-    "q0": -3.4062,
-    "q1": -1.25,
+    "q0": -1.25,
+    "q1": 0.85230005,
     "y0": -6.6735997,
     "y1": 0.9355
   },
@@ -165,18 +165,18 @@
       "date": "2026-09-30"
     },
     {
+      "name": "Morgan Stanley",
+      "kind": "institution",
+      "pct": 1.43,
+      "shares": 11188425,
+      "date": "2026-09-30"
+    },
+    {
       "name": "TMT General Partner Ltd",
       "kind": "institution",
       "pct": 1.31,
       "shares": 10285837,
       "date": "2026-09-30"
-    },
-    {
-      "name": "Morgan Stanley",
-      "kind": "institution",
-      "pct": 1.22,
-      "shares": 9586523,
-      "date": "2026-06-30"
     },
     {
       "name": "UBS Group AG",
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.979,
-    "enterprise_value": 7866515456,
-    "ev_ebitda": -5.919,
-    "ev_revenue": 0.104,
+    "enterprise_value": 7780413952,
+    "ev_ebitda": -5.854,
+    "ev_revenue": 0.103,
     "float_shares": 709812856,
     "short_shares": 45795145,
     "short_pct_float": 6.04,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": null,
-  "inst_count": 294,
+  "inst_count": 289,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.46767,
-      "actual": -0.16,
-      "surprise_pct": 65.79
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.063,
@@ -269,6 +263,12 @@
       "estimate": -0.765,
       "actual": -1.29,
       "surprise_pct": -68.63
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.705,
+      "actual": -0.93,
+      "surprise_pct": -31.91
     }
   ],
   "insiders": [],

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T22:07:34.180Z",
+  "updated_at": "2026-11-17T00:28:06.504Z",
   "source": "Yahoo Finance",
   "symbol": "ETR",
   "summary": "Entergy Corporation, together with its subsidiaries, engages in the production and retail distribution of electricity in the United States. It generates, transmits, distributes, and sells electric power in portions of Arkansas, Louisiana, Mississippi, and Texas, including the City of New Orleans. It also engages in the ownership of interests in non-nuclear power plants that sell electric power to wholesale customers, as well as provides decommissioning services to other nuclear power plant owners. It generates electricity through gas, nuclear, coal, hydro, and solar power sources. The company sells energy to retail power providers, utilities, electric power co-operatives, power trading organizations, and other power generation companies. The company's power plants have approximately 25,000 megawatts of electric generating capacity. It delivers electricity to 3.1 million utility customers in Arkansas, Louisiana, Mississippi, and Texas. Entergy Corporation was founded in 1913 and is headquartered in New Orleans, Louisiana.",
@@ -19,7 +19,7 @@
     "strong_sell": 1,
     "total": 24
   },
-  "target_mean": 120.38095,
+  "target_mean": 120.57143,
   "target_high": 131,
   "target_low": 91,
   "target_analysts": 21,
@@ -74,8 +74,8 @@
   "growth": {
     "q0": 0.42270002,
     "q1": 0.1608,
-    "y0": 0.12560001,
-    "y1": 0.1618
+    "y0": 0.1263,
+    "y1": 0.16139999
   },
   "ratings": [
     {
@@ -153,37 +153,37 @@
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 8.86,
-      "shares": 42324362,
-      "date": "2026-06-30"
+      "pct": 9,
+      "shares": 43015303,
+      "date": "2026-09-30"
     },
     {
       "name": "Vanguard Capital Management LLC",
       "kind": "institution",
-      "pct": 6.39,
-      "shares": 30538725,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "Vanguard Portfolio Management LLC",
-      "kind": "institution",
-      "pct": 5.62,
-      "shares": 26857755,
-      "date": "2026-06-30"
+      "pct": 6.4,
+      "shares": 30573636,
+      "date": "2026-09-30"
     },
     {
       "name": "State Street Corporation",
       "kind": "institution",
-      "pct": 5.35,
-      "shares": 25587118,
-      "date": "2026-06-30"
+      "pct": 5.62,
+      "shares": 26831484,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Vanguard Portfolio Management LLC",
+      "kind": "institution",
+      "pct": 5.53,
+      "shares": 26425424,
+      "date": "2026-09-30"
     },
     {
       "name": "JPMORGAN CHASE & CO",
       "kind": "institution",
-      "pct": 5.21,
-      "shares": 24917975,
-      "date": "2026-06-30"
+      "pct": 4.43,
+      "shares": 21175921,
+      "date": "2026-09-30"
     },
     {
       "name": "Bank of America Corporation",
@@ -207,17 +207,17 @@
       "date": "2026-06-30"
     },
     {
-      "name": "FMR, LLC",
-      "kind": "institution",
-      "pct": 2.77,
-      "shares": 13241867,
-      "date": "2026-06-30"
-    },
-    {
       "name": "Geode Capital Management, LLC",
       "kind": "institution",
       "pct": 2.61,
       "shares": 12462961,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "FMR, LLC",
+      "kind": "institution",
+      "pct": 2.57,
+      "shares": 12287486,
       "date": "2026-09-30"
     }
   ],
@@ -227,13 +227,13 @@
     "sells": 5,
     "bought": 40432,
     "sold": 39753,
-    "net_pct": 0.1
+    "net_pct": 0
   },
   "extras": {
     "beta": 0.427,
-    "enterprise_value": 84404649984,
-    "ev_ebitda": 14.264,
-    "ev_revenue": 6.014,
+    "enterprise_value": 83578011648,
+    "ev_ebitda": 14.125,
+    "ev_revenue": 5.955,
     "float_shares": 475629116,
     "short_shares": 16650525,
     "short_pct_float": 3.92,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-11-13",
   "dividend_date": null,
   "payout_ratio": 0.5858,
-  "inst_count": 1759,
+  "inst_count": 1761,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -275,19 +275,19 @@
     {
       "name": "VIAMONTES ELIECER",
       "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 103.93 per share.",
-      "value": 942437,
-      "shares": 9068,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 49.54 - 82.79 per share.",
+      "value": 404984,
+      "shares": 6928,
       "date": "2026-09-14"
     },
     {
       "name": "VIAMONTES ELIECER",
       "role": "Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 49.54 - 82.79 per share.",
-      "value": 404984,
-      "shares": 6928,
+      "kind": "sell",
+      "text": "Sale at price 103.93 per share.",
+      "value": 942437,
+      "shares": 9068,
       "date": "2026-09-14"
     },
     {
@@ -298,51 +298,6 @@
       "value": 594720,
       "shares": 5600,
       "date": "2026-09-10"
-    },
-    {
-      "name": "HYLAND MARY ELISE",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 218,
-      "date": "2026-08-31"
-    },
-    {
-      "name": "LEVENICK STUART L",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 218,
-      "date": "2026-08-31"
-    },
-    {
-      "name": "PUCKETT KAREN ANN",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 218,
-      "date": "2026-08-31"
-    },
-    {
-      "name": "FREDERICKSON PHILIP L",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 218,
-      "date": "2026-08-31"
-    },
-    {
-      "name": "BLACK JOHN H",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 218,
-      "date": "2026-08-31"
     },
     {
       "name": "ROPP RALPH LEWIS",
@@ -361,13 +316,54 @@
       "value": 0,
       "shares": 218,
       "date": "2026-08-31"
+    },
+    {
+      "name": "BLACK JOHN H",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 218,
+      "date": "2026-08-31"
+    },
+    {
+      "name": "ELLIS BRIAN W",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 218,
+      "date": "2026-08-31"
+    },
+    {
+      "name": "FREDERICKSON PHILIP L",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 218,
+      "date": "2026-08-31"
+    },
+    {
+      "name": "PUCKETT KAREN ANN",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 218,
+      "date": "2026-08-31"
+    },
+    {
+      "name": "HYLAND MARY ELISE",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 218,
+      "date": "2026-08-31"
     }
   ],
   "dividends": [
-    {
-      "date": "2016-11-08",
-      "amount": 0.435
-    },
     {
       "date": "2017-02-07",
       "amount": 0.435
@@ -523,6 +519,10 @@
     {
       "date": "2026-08-13",
       "amount": 0.64
+    },
+    {
+      "date": "2026-11-13",
+      "amount": 0.68
     }
   ],
   "splits": [

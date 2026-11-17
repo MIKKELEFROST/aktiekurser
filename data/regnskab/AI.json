@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T22:07:33.425Z",
+  "updated_at": "2026-11-17T00:28:05.582Z",
   "source": "Yahoo Finance",
   "symbol": "AI",
   "summary": "C3.ai, Inc. operates as an enterprise artificial intelligence application software company in North America, Europe, the Middle East, Africa, the Asia Pacific, and internationally. It offers C3 agentic AI platform, an application development and runtime environment that enables customers to design, develop, and deploy enterprise AI applications; C3 AI Studio, an integrated development environment in the C3 Agentic AI Platform that enables engineers, data scientists, and business analysts to design, build, test, and deploy AI applications; C3 AI Applications, a portfolio of industry-specific enterprise AI applications that enables the digital transformation of organizations globally; and C3 Generative AI, a library of agentic AI applications to retrieve data, analyze information, surface insights, and orchestrate workflows. The company also provides C3 Code, a solution that enables users to build, configure, and deploy a complete and production-grade Enterprise AI applications automatically, including data pipelines, AI models, business logic, security controls, and user interfaces. It has strategic partnerships with Microsoft, AWS, Google Cloud, McKinsey & Company, and Baker Hughes. The company was formerly known as C3 IoT, Inc. and changed its name to C3.ai, Inc. in June 2019. C3.ai, Inc. was incorporated in 2009 and is headquartered in Redwood City, California.",
@@ -51,6 +51,11 @@
   ],
   "quarterly": [
     {
+      "q": "2Q2025",
+      "revenue": 70261000,
+      "earnings": -116769000
+    },
+    {
       "q": "3Q2025",
       "revenue": 75147000,
       "earnings": -104668000
@@ -64,11 +69,6 @@
       "q": "1Q2026",
       "revenue": 51600000,
       "earnings": -115570000
-    },
-    {
-      "q": "2Q2026",
-      "revenue": 52375000,
-      "earnings": -92812000
     }
   ],
   "growth": {
@@ -153,30 +153,37 @@
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 9.06,
-      "shares": 14255067,
-      "date": "2026-06-30"
+      "pct": 9.36,
+      "shares": 14722038,
+      "date": "2026-09-30"
     },
     {
       "name": "Vanguard Portfolio Management LLC",
       "kind": "institution",
-      "pct": 5.7,
-      "shares": 8967629,
-      "date": "2026-06-30"
+      "pct": 5.68,
+      "shares": 8935187,
+      "date": "2026-09-30"
     },
     {
       "name": "Vanguard Capital Management LLC",
       "kind": "institution",
-      "pct": 3.81,
-      "shares": 5991015,
-      "date": "2026-06-30"
+      "pct": 3.8,
+      "shares": 5977756,
+      "date": "2026-09-30"
     },
     {
-      "name": "Morgan Stanley",
+      "name": "BNP Paribas Financial Markets",
       "kind": "institution",
-      "pct": 3.2,
-      "shares": 5025836,
-      "date": "2026-06-30"
+      "pct": 3.02,
+      "shares": 4749309,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Federated Hermes, Inc.",
+      "kind": "institution",
+      "pct": 2.76,
+      "shares": 4339222,
+      "date": "2026-09-30"
     },
     {
       "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
@@ -193,31 +200,24 @@
       "date": "2026-09-30"
     },
     {
+      "name": "State Street Corporation",
+      "kind": "institution",
+      "pct": 2.37,
+      "shares": 3720410,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Morgan Stanley",
+      "kind": "institution",
+      "pct": 2.37,
+      "shares": 3725053,
+      "date": "2026-09-30"
+    },
+    {
       "name": "Geode Capital Management, LLC",
       "kind": "institution",
       "pct": 2.31,
       "shares": 3640229,
-      "date": "2026-09-30"
-    },
-    {
-      "name": "BNP Paribas Financial Markets",
-      "kind": "institution",
-      "pct": 2.25,
-      "shares": 3543864,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "State Street Corporation",
-      "kind": "institution",
-      "pct": 2.22,
-      "shares": 3488324,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "GLOBAL X FUNDS-Global X Artificial Intelligence & Technology ETF",
-      "kind": "fond",
-      "pct": 2.15,
-      "shares": 3385796,
       "date": "2026-09-30"
     }
   ],
@@ -227,14 +227,14 @@
     "sells": 16,
     "bought": 16421015,
     "sold": 3163671,
-    "net_pct": -30510.5
+    "net_pct": 1421.8
   },
   "extras": {
     "beta": 2.132,
-    "enterprise_value": 1349008896,
-    "ev_ebitda": -3.017,
-    "ev_revenue": 5.805,
-    "float_shares": 144156827,
+    "enterprise_value": 1125524864,
+    "ev_ebitda": -2.518,
+    "ev_revenue": 4.843,
+    "float_shares": 144193806,
     "short_shares": 42148513,
     "short_pct_float": 28.42,
     "short_ratio": 8.04,
@@ -273,15 +273,6 @@
   ],
   "insiders": [
     {
-      "name": "LEVIN RICHARD C PH.D.",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 27365,
-      "date": "2026-10-26"
-    },
-    {
       "name": "HYTEN JOHN E.",
       "role": "Director",
       "kind": "other",
@@ -292,6 +283,15 @@
     },
     {
       "name": "CLAYVILLE MICHAEL WAYNE",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 27365,
+      "date": "2026-10-26"
+    },
+    {
+      "name": "LEVIN RICHARD C PH.D.",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

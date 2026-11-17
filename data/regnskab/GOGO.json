@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T22:07:34.381Z",
+  "updated_at": "2026-11-17T00:28:06.728Z",
   "source": "Yahoo Finance",
   "symbol": "GOGO",
   "summary": "Gogo Inc., together with its subsidiaries, provides broadband connectivity services to the aviation industry in the United States and internationally. The company's product platform includes networks, antennas, and airborne equipment and software. The company offers in-flight systems; in-flight services; aviation partner support; and engineering, design, and development services, as well as production operations functions. It offers voice and data, in-flight entertainment, and other services. In addition, the company's infrastructure includes networks, towers, cyber security software and data centers to support in-flight connectivity services, as well as in the provision of telecommunications services. The company sells its products primarily to aircraft operators and original equipment manufacturers of business aviation aircraft through a distribution network of independent dealers. Gogo Inc. was founded in 1991 and is headquartered in Broomfield, Colorado.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-06",
   "earnings_estimated": false,
   "earnings_call": "2026-11-06",
-  "eps_estimate": null,
+  "eps_estimate": 0.03,
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
@@ -71,7 +71,12 @@
       "earnings": -3200000
     }
   ],
-  "growth": null,
+  "growth": {
+    "q0": 4.7037,
+    "q1": -0.2533,
+    "y0": 0.3387,
+    "y1": 0.45450002
+  },
   "ratings": [
     {
       "date": "2026-05-21",
@@ -150,21 +155,21 @@
       "kind": "institution",
       "pct": 17.13,
       "shares": 23239011,
-      "date": "2026-06-30"
+      "date": "2026-09-30"
     },
     {
       "name": "Nantahala Capital Management, LLC",
       "kind": "institution",
-      "pct": 6.41,
-      "shares": 8697731,
-      "date": "2026-06-30"
+      "pct": 8.27,
+      "shares": 11214792,
+      "date": "2026-09-30"
     },
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 4.51,
-      "shares": 6123992,
-      "date": "2026-06-30"
+      "pct": 4.56,
+      "shares": 6189702,
+      "date": "2026-09-30"
     },
     {
       "name": "Bank of America Corporation",
@@ -178,28 +183,14 @@
       "kind": "institution",
       "pct": 2.61,
       "shares": 3542895,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "State Street Corporation",
-      "kind": "institution",
-      "pct": 2.45,
-      "shares": 3324718,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "Qube Research & Technologies Ltd",
-      "kind": "institution",
-      "pct": 2.31,
-      "shares": 3134054,
-      "date": "2026-06-30"
+      "date": "2026-09-30"
     },
     {
       "name": "Capco Asset Management, LLC",
       "kind": "institution",
-      "pct": 2.08,
-      "shares": 2818662,
-      "date": "2026-06-30"
+      "pct": 2.29,
+      "shares": 3106283,
+      "date": "2026-09-30"
     },
     {
       "name": "Citadel Advisors Llc",
@@ -214,6 +205,20 @@
       "pct": 1.87,
       "shares": 2541020,
       "date": "2026-06-30"
+    },
+    {
+      "name": "Goldman Sachs Group Inc",
+      "kind": "institution",
+      "pct": 1.71,
+      "shares": 2314277,
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Morgan Stanley",
+      "kind": "institution",
+      "pct": 1.63,
+      "shares": 2213386,
+      "date": "2026-09-30"
     }
   ],
   "insider_net": {
@@ -226,10 +231,10 @@
   },
   "extras": {
     "beta": 1.23,
-    "enterprise_value": 1252438144,
-    "ev_ebitda": 7.621,
-    "ev_revenue": 1.403,
-    "float_shares": 96487192,
+    "enterprise_value": 1223954176,
+    "ev_ebitda": 7.448,
+    "ev_revenue": 1.371,
+    "float_shares": 93971114,
     "short_shares": 14659022,
     "short_pct_float": 18.62,
     "short_ratio": 8.66,
@@ -239,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 244,
+  "inst_count": 241,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -286,15 +291,6 @@
       "date": "2026-09-29"
     },
     {
-      "name": "GORDON CRYSTAL L",
-      "role": "General Counsel",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 17743,
-      "date": "2026-04-01"
-    },
-    {
       "name": "GOLDFINE LEIGH",
       "role": "Officer",
       "kind": "other",
@@ -309,8 +305,8 @@
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 43801,
-      "date": "2026-03-20"
+      "shares": 17743,
+      "date": "2026-04-01"
     },
     {
       "name": "GOLDFINE LEIGH",
@@ -346,6 +342,15 @@
       "text": null,
       "value": null,
       "shares": 50539,
+      "date": "2026-03-20"
+    },
+    {
+      "name": "GORDON CRYSTAL L",
+      "role": "General Counsel",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 43801,
       "date": "2026-03-20"
     },
     {

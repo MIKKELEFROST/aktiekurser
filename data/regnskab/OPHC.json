@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T22:07:35.142Z",
+  "updated_at": "2026-11-17T00:28:07.624Z",
   "source": "Yahoo Finance",
   "symbol": "OPHC",
   "summary": "OptimumBank Holdings, Inc. operates as the bank holding company for OptimumBank, which provides various consumer and commercial banking services to individuals and businesses. The company accepts interest-bearing and noninterest-bearing, savings, money market, and NOW accounts, as well as time deposits, wire transfers, ACH services, and certificates of deposit. It also offers multi-family real estate, residential and commercial real estate, and land and construction loans; commercial loans for working capital purposes or acquiring equipment, inventory, and furniture; and consumer loans for various purposes, including purchases of automobiles, recreational vehicles, boats, home improvements, lines of credit, personal, and deposit account collateralized loans. In addition, the company provides debit and ATM cards; cash management, notary, and night depository services; and direct deposits, money orders, cashier's checks, domestic collections, and banking by mail. OptimumBank Holdings, Inc. was founded in 2000 and is headquartered in Fort Lauderdale, Florida.",
@@ -67,9 +67,9 @@
   ],
   "growth": {
     "q0": null,
-    "q1": null,
+    "q1": 1,
     "y0": null,
-    "y1": 0.102
+    "y1": -0.0767
   },
   "ratings": [
     {
@@ -114,7 +114,7 @@
       "kind": "institution",
       "pct": 4.03,
       "shares": 406480,
-      "date": "2026-06-30"
+      "date": "2026-09-30"
     },
     {
       "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
@@ -124,10 +124,31 @@
       "date": "2026-06-30"
     },
     {
+      "name": "Mink Brook Asset Management LLC                          ",
+      "kind": "institution",
+      "pct": 1.85,
+      "shares": 187103,
+      "date": "2026-09-30"
+    },
+    {
       "name": "Renaissance Technologies, LLC",
       "kind": "institution",
       "pct": 1.54,
       "shares": 155100,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Blackrock Inc.",
+      "kind": "institution",
+      "pct": 1.24,
+      "shares": 125155,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Morgan Stanley",
+      "kind": "institution",
+      "pct": 1.08,
+      "shares": 109348,
       "date": "2026-09-30"
     },
     {
@@ -138,32 +159,11 @@
       "date": "2026-06-30"
     },
     {
-      "name": "Dimensional Fund Advisors LP",
+      "name": "Walleye Capital LLC",
       "kind": "institution",
-      "pct": 1.01,
-      "shares": 101901,
+      "pct": 1.03,
+      "shares": 104127,
       "date": "2026-09-30"
-    },
-    {
-      "name": "Morgan Stanley",
-      "kind": "institution",
-      "pct": 0.99,
-      "shares": 100002,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "Geode Capital Management, LLC",
-      "kind": "institution",
-      "pct": 0.96,
-      "shares": 97087,
-      "date": "2026-09-30"
-    },
-    {
-      "name": "Mink Brook Asset Management LLC                          ",
-      "kind": "institution",
-      "pct": 0.78,
-      "shares": 78552,
-      "date": "2026-06-30"
     }
   ],
   "insider_net": {
@@ -175,13 +175,13 @@
     "net_pct": null
   },
   "extras": {
-    "beta": 0.278,
-    "enterprise_value": 111073160,
+    "beta": null,
+    "enterprise_value": 108940464,
     "ev_ebitda": null,
-    "ev_revenue": 1.952,
-    "float_shares": 10350900,
+    "ev_revenue": 1.724,
+    "float_shares": 10276041,
     "short_shares": 98751,
-    "short_pct_float": 0.95,
+    "short_pct_float": 0.88,
     "short_ratio": 1.59,
     "last_split": "1:10",
     "last_split_date": "2016-01-12"
@@ -189,14 +189,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 38,
+  "inst_count": 45,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.15,
-      "actual": 0.18,
-      "surprise_pct": 20
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.2,
@@ -214,6 +208,12 @@
       "estimate": 0.235,
       "actual": 0.28,
       "surprise_pct": 19.15
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.4,
+      "actual": 0.3,
+      "surprise_pct": -25
     }
   ],
   "insiders": [
@@ -229,8 +229,8 @@
     {
       "name": "BLISKO MICHAEL",
       "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 4.09 per share.",
+      "kind": "buy",
+      "text": "Purchase at price 4.09 per share.",
       "value": 31084,
       "shares": 7600,
       "date": "2025-12-04"
@@ -238,8 +238,8 @@
     {
       "name": "BLISKO MICHAEL",
       "role": "Director",
-      "kind": "buy",
-      "text": "Purchase at price 4.09 per share.",
+      "kind": "sell",
+      "text": "Sale at price 4.09 per share.",
       "value": 31084,
       "shares": 7600,
       "date": "2025-12-04"

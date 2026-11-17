@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T22:07:35.890Z",
+  "updated_at": "2026-11-17T00:28:08.590Z",
   "source": "Yahoo Finance",
   "symbol": "YEXT",
   "summary": "Yext, Inc. operates a platform that offers answers to consumer questions in North America and internationally. The company operates Yext Digital Presence platform, a cloud-based platform that allows its customers to provide answers to consumer questions, to control the information about their businesses and the content of their landing pages, and to manage their consumer reviews, as well as to offer customers the ability to update their information and content through its publisher network of maps, apps, search engines, GPS systems, digital assistants, vertical directories, and social networks. Its platform also enables its customers to centralize, control and manage data fields, including store information comprising name, address, phone number, and holiday hours; professional information, such as headshot, specialties, and education; job information consisting of title and description; FAQs; and other information. In addition, the company offers professional services to customize the Yext platform, such as custom building landing pages and data integrations, as well as maintenance and other services; and a digital client engagement platform for financial services. The company serves various industries, such as healthcare, hospitality, food services, retail, and financial services. Yext, Inc. was incorporated in 2006 and is headquartered in New York, New York.",
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 113094000,
-      "earnings": 26751000
-    },
-    {
       "q": "3Q2025",
       "revenue": 111998000,
       "earnings": 6136000
@@ -69,6 +64,11 @@
       "q": "1Q2026",
       "revenue": 107917000,
       "earnings": 2625000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 111103000,
+      "earnings": 13149000
     }
   ],
   "growth": {
@@ -158,6 +158,13 @@
       "date": "2026-06-30"
     },
     {
+      "name": "Blackrock Inc.",
+      "kind": "institution",
+      "pct": 8,
+      "shares": 7920440,
+      "date": "2026-09-30"
+    },
+    {
       "name": "Lead Edge Capital Management, Llc",
       "kind": "institution",
       "pct": 7.92,
@@ -165,25 +172,18 @@
       "date": "2026-06-30"
     },
     {
-      "name": "Blackrock Inc.",
-      "kind": "institution",
-      "pct": 7.47,
-      "shares": 7395204,
-      "date": "2026-06-30"
-    },
-    {
       "name": "Vanguard Portfolio Management LLC",
       "kind": "institution",
-      "pct": 4.66,
-      "shares": 4608840,
-      "date": "2026-06-30"
+      "pct": 4.48,
+      "shares": 4439016,
+      "date": "2026-09-30"
     },
     {
       "name": "Vanguard Capital Management LLC",
       "kind": "institution",
-      "pct": 3.76,
-      "shares": 3719823,
-      "date": "2026-06-30"
+      "pct": 3.79,
+      "shares": 3754367,
+      "date": "2026-09-30"
     },
     {
       "name": "Acadian Asset Management. LLC",
@@ -214,10 +214,10 @@
       "date": "2026-09-30"
     },
     {
-      "name": "iShares Trust-iShares Russell 2000 ETF",
-      "kind": "fond",
-      "pct": 2.3,
-      "shares": 2274908,
+      "name": "Arrowstreet Capital, Limited Partnership",
+      "kind": "institution",
+      "pct": 2.33,
+      "shares": 2308686,
       "date": "2026-09-30"
     }
   ],
@@ -227,13 +227,13 @@
     "sells": 1,
     "bought": 1271497,
     "sold": 30000,
-    "net_pct": 17.8
+    "net_pct": 16.8
   },
   "extras": {
     "beta": 1.093,
-    "enterprise_value": 892033088,
-    "ev_ebitda": 22.386,
-    "ev_revenue": 2.014,
+    "enterprise_value": 897971776,
+    "ev_ebitda": 22.535,
+    "ev_revenue": 2.027,
     "float_shares": 65219048,
     "short_shares": 6491574,
     "short_pct_float": 11.21,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 231,
+  "inst_count": 232,
   "eps_history": [
     {
       "quarter": "2025-10-31",
@@ -273,24 +273,6 @@
   ],
   "insiders": [
     {
-      "name": "TANG ALLAN",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 6075,
-      "date": "2026-09-18"
-    },
-    {
-      "name": "BOND DARRYL",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 40937,
-      "date": "2026-09-18"
-    },
-    {
       "name": "SHIN HO",
       "role": "General Counsel",
       "kind": "other",
@@ -306,6 +288,24 @@
       "text": null,
       "value": null,
       "shares": 78125,
+      "date": "2026-09-18"
+    },
+    {
+      "name": "BOND DARRYL",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 40937,
+      "date": "2026-09-18"
+    },
+    {
+      "name": "TANG ALLAN",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 6075,
       "date": "2026-09-18"
     },
     {
@@ -327,24 +327,6 @@
       "date": "2026-07-13"
     },
     {
-      "name": "TANG ALLAN",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 6075,
-      "date": "2026-06-18"
-    },
-    {
-      "name": "BOND DARRYL",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 40938,
-      "date": "2026-06-18"
-    },
-    {
       "name": "SHIN HO",
       "role": "General Counsel",
       "kind": "other",
@@ -360,6 +342,24 @@
       "text": null,
       "value": null,
       "shares": 644562,
+      "date": "2026-06-18"
+    },
+    {
+      "name": "BOND DARRYL",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 40938,
+      "date": "2026-06-18"
+    },
+    {
+      "name": "TANG ALLAN",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 6075,
       "date": "2026-06-18"
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T22:07:33.389Z",
+  "updated_at": "2026-11-17T00:28:05.537Z",
   "source": "Yahoo Finance",
   "symbol": "ADRX",
   "summary": "ADARx Pharmaceuticals, Inc. operates as a clinical-stage biotechnology company that focuses on developing siRNA therapeutics to treat a broad spectrum of diseases. The company offers hepatic-targeted programs, including Agazisiran, a complement factor B (CFB) program that represents a pipeline-in-a-product opportunity, where a single therapeutic candidate has the potential to address multiple indications; Onvuzosiran, a clinical program for the prevention of HAE attacks; and ADX-626, a Factor XI (FXI) program for secondary stroke prevention with additional clinical potential for stroke prevention in atrial fibrillation. It also offers extrahepatic-targeted programs, such as ADX-077, an adipose-targeted obesity program designed to reduce body weight and fat while preserving lean mass; and ADX-199, a neuron-targeted program designed to selectively silence and degrade amyloid-ß precursor protein (APP) mRNA in neurons, which is genetically linked to Alzheimer's disease. The company was incorporated in 2019 and is based in San Diego, California.",
@@ -10,7 +10,7 @@
   "next_earnings": null,
   "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": -0.39184,
+  "eps_estimate": -0.36844,
   "analysts": {
     "strong_buy": 2,
     "buy": 3,
@@ -31,12 +31,18 @@
       "margin": null
     }
   ],
-  "quarterly": [],
+  "quarterly": [
+    {
+      "q": "3Q2026",
+      "revenue": 2217000,
+      "earnings": -28117000
+    }
+  ],
   "growth": {
     "q0": null,
     "q1": null,
     "y0": null,
-    "y1": 0.25370002
+    "y1": 0.2857
   },
   "ratings": [
     {
@@ -70,6 +76,13 @@
   ],
   "holders": [
     {
+      "name": "FMR, LLC",
+      "kind": "institution",
+      "pct": 3.57,
+      "shares": 3646090,
+      "date": "2026-09-30"
+    },
+    {
       "name": "SmallCap World Fund Inc",
       "kind": "fond",
       "pct": 3.18,
@@ -77,66 +90,59 @@
       "date": "2026-09-30"
     },
     {
+      "name": "Blackrock Inc.",
+      "kind": "institution",
+      "pct": 2.29,
+      "shares": 2336110,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Capital International Investors",
+      "kind": "institution",
+      "pct": 2.09,
+      "shares": 2132301,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Siren, L.L.C.",
+      "kind": "institution",
+      "pct": 1.88,
+      "shares": 1925794,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Marshall Wace LLP",
+      "kind": "institution",
+      "pct": 1.3,
+      "shares": 1333496,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Capital World Investors",
+      "kind": "institution",
+      "pct": 1.17,
+      "shares": 1200000,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Franklin Templeton, Inc.",
+      "kind": "institution",
+      "pct": 0.88,
+      "shares": 900000,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Massachusetts Financial Services Co.",
+      "kind": "institution",
+      "pct": 0.64,
+      "shares": 650360,
+      "date": "2026-09-30"
+    },
+    {
       "name": "Fidelity Contrafund",
       "kind": "fond",
       "pct": 0.46,
       "shares": 467700,
-      "date": "2026-09-30"
-    },
-    {
-      "name": "AB CAP FUND, INC.-AB Small Cap Growth Portfolio",
-      "kind": "fond",
-      "pct": 0.42,
-      "shares": 430729,
-      "date": "2026-09-30"
-    },
-    {
-      "name": "AB DISCOVERY GROWTH FUND, INC.",
-      "kind": "fond",
-      "pct": 0.42,
-      "shares": 427316,
-      "date": "2026-09-30"
-    },
-    {
-      "name": "Fidelity Select Portfolios-Select Health Care Portfolio",
-      "kind": "fond",
-      "pct": 0.39,
-      "shares": 400000,
-      "date": "2026-09-30"
-    },
-    {
-      "name": "Fidelity Securities Fund-Fidelity Blue Chip Growth Fund",
-      "kind": "fond",
-      "pct": 0.32,
-      "shares": 328200,
-      "date": "2026-09-30"
-    },
-    {
-      "name": "Fidelity Mt. Vernon Street Trust-Fidelity Growth Company Fund",
-      "kind": "fond",
-      "pct": 0.31,
-      "shares": 312500,
-      "date": "2026-09-30"
-    },
-    {
-      "name": "Fidelity Advisor Series VII-Fidelity Advisor Health Care Fund",
-      "kind": "fond",
-      "pct": 0.2,
-      "shares": 208000,
-      "date": "2026-09-30"
-    },
-    {
-      "name": "Fidelity Puritan Trust-Fidelity Balanced Fund",
-      "kind": "fond",
-      "pct": 0.13,
-      "shares": 136300,
-      "date": "2026-09-30"
-    },
-    {
-      "name": "Fidelity Advisor Series VII-Fidelity Advisor Biotechnology Fund",
-      "kind": "fond",
-      "pct": 0.12,
-      "shares": 126400,
       "date": "2026-09-30"
     }
   ],
@@ -150,9 +156,9 @@
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 1526314752,
-    "ev_ebitda": -14.519,
-    "ev_revenue": 249.113,
+    "enterprise_value": 1450645888,
+    "ev_ebitda": -13.799,
+    "ev_revenue": 236.763,
     "float_shares": 49423510,
     "short_shares": 1801373,
     "short_pct_float": null,
@@ -163,8 +169,15 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": null,
-  "inst_count": 37,
-  "eps_history": [],
+  "inst_count": 49,
+  "eps_history": [
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.25367,
+      "actual": -1.74,
+      "surprise_pct": -585.93
+    }
+  ],
   "insiders": [
     {
       "name": "CHIMOVITS EREZ",

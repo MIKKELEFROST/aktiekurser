@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T22:07:34.172Z",
+  "updated_at": "2026-11-17T00:28:06.494Z",
   "source": "Yahoo Finance",
   "symbol": "ESP",
   "summary": "Espey Mfg. & Electronics Corp. engages in the manufacture and sale of electronic equipment primarily for military and industrial applications in the United States and internationally. Its principal products include power supplies, power converters, filters, power transformers, magnetic components, power distribution equipment, UPS systems, and antennas for use in AC and DC locomotives, shipboard power and radar, airborne power, ground-based radar, and ground mobile power applications. The company also provides various services, such as design and development to specification, build to print, design services, design studies, environmental testing services, metal fabrication, and painting services, as well as automatic testing equipment development services. In addition, it produces individual components, which include inductors, as well as paints, wires, qualifies, and test items; populates printed circuit boards; and fabricates metalwork. The company serves industrial manufacturers and defense companies, the government of the United States, foreign governments, and foreign electronic equipment companies through its direct sales organization and outside sales representatives. Espey Mfg. & Electronics Corp. was incorporated in 1928 and is based in Saratoga Springs, New York.",
@@ -7,10 +7,10 @@
   "website": "https://www.espey.com",
   "employees": 144,
   "ceo": "Mr. David A. O'Neil CPA",
-  "next_earnings": "2026-11-16",
-  "earnings_estimated": true,
+  "next_earnings": "2026-11-13",
+  "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": 0.91,
+  "eps_estimate": 0.93,
   "analysts": {
     "strong_buy": 0,
     "buy": 0,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "1Q2019",
-      "revenue": 9218140,
-      "earnings": 0
-    },
-    {
       "q": "3Q2025",
       "revenue": 9092880,
       "earnings": 0
@@ -69,10 +64,15 @@
       "q": "2Q2026",
       "revenue": 13471890,
       "earnings": 0
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 10608950,
+      "earnings": 0
     }
   ],
   "growth": {
-    "q0": 0.1974,
+    "q0": null,
     "q1": null,
     "y0": -0.041100003,
     "y1": 0.0643
@@ -118,16 +118,23 @@
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 3.81,
-      "shares": 115929,
-      "date": "2026-06-30"
+      "pct": 4.16,
+      "shares": 126384,
+      "date": "2026-09-30"
     },
     {
       "name": "Vanguard Capital Management LLC",
       "kind": "institution",
-      "pct": 3.22,
-      "shares": 98005,
-      "date": "2026-06-30"
+      "pct": 3.28,
+      "shares": 99775,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Renaissance Technologies, LLC",
+      "kind": "institution",
+      "pct": 3.19,
+      "shares": 96911,
+      "date": "2026-09-30"
     },
     {
       "name": "Dimensional Fund Advisors LP",
@@ -135,20 +142,6 @@
       "pct": 3.06,
       "shares": 92908,
       "date": "2026-09-30"
-    },
-    {
-      "name": "Renaissance Technologies, LLC",
-      "kind": "institution",
-      "pct": 3.05,
-      "shares": 92712,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "American Century Companies Inc",
-      "kind": "institution",
-      "pct": 2.37,
-      "shares": 71928,
-      "date": "2026-06-30"
     },
     {
       "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
@@ -162,7 +155,7 @@
       "kind": "institution",
       "pct": 1.85,
       "shares": 56247,
-      "date": "2026-06-30"
+      "date": "2026-09-30"
     },
     {
       "name": "iShares Trust-iShares Russell 2000 ETF",
@@ -179,11 +172,18 @@
       "date": "2026-09-30"
     },
     {
-      "name": "Arrowstreet Capital, Limited Partnership",
+      "name": "State Street Corporation",
       "kind": "institution",
-      "pct": 1.25,
-      "shares": 38064,
-      "date": "2026-06-30"
+      "pct": 1.09,
+      "shares": 33224,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Fidelity Salem Street Trust-Fidelity Small Cap Index Fund",
+      "kind": "fond",
+      "pct": 0.84,
+      "shares": 25597,
+      "date": "2026-08-31"
     }
   ],
   "insider_net": {
@@ -196,10 +196,10 @@
   },
   "extras": {
     "beta": 0.4,
-    "enterprise_value": 94169008,
-    "ev_ebitda": 7.778,
-    "ev_revenue": 2.042,
-    "float_shares": 2277057,
+    "enterprise_value": 73669088,
+    "ev_ebitda": 6.059,
+    "ev_revenue": 1.546,
+    "float_shares": 2238582,
     "short_shares": 31951,
     "short_pct_float": 1.34,
     "short_ratio": 1,
@@ -208,15 +208,9 @@
   },
   "ex_dividend": "2026-09-18",
   "dividend_date": null,
-  "payout_ratio": 0.2571,
-  "inst_count": 117,
+  "payout_ratio": 0.2577,
+  "inst_count": 122,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.67,
-      "actual": 0.76,
-      "surprise_pct": 13.43
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.8,
@@ -228,6 +222,12 @@
       "estimate": 0.96,
       "actual": 1.15,
       "surprise_pct": 19.79
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.91,
+      "actual": 0.75,
+      "surprise_pct": -17.58
     }
   ],
   "insiders": [
@@ -243,19 +243,19 @@
     {
       "name": "CORR PAUL J",
       "role": "Director",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 13.98 per share.",
-      "value": 32154,
-      "shares": 2300,
+      "kind": "sell",
+      "text": "Sale at price 63.51 - 64.49 per share.",
+      "value": 13545,
+      "shares": 211,
       "date": "2026-09-25"
     },
     {
       "name": "CORR PAUL J",
       "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 63.51 - 64.49 per share.",
-      "value": 13545,
-      "shares": 211,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 13.98 per share.",
+      "value": 32154,
+      "shares": 2300,
       "date": "2026-09-25"
     },
     {

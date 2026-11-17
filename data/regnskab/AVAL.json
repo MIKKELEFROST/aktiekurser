@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T22:07:33.583Z",
+  "updated_at": "2026-11-17T00:28:05.790Z",
   "source": "Yahoo Finance",
   "symbol": "AVAL",
   "summary": "Grupo Aval Acciones y Valores S.A. provides a range of financial services and products in Colombia and Central America. The company offers traditional deposit services and products, including checking accounts, savings accounts, time deposits, and other deposits. It also provides commercial loans comprising general purpose loans, working capital loans, leases, loans funded by development banks, corporate credit cards, and overdraft loans; consumer loans, such as payroll loans, personal loans, automobile and other vehicle loans, credit cards, overdrafts, leases, and general-purpose loans; and microcredit and mortgage loans. In addition, the company offers pension and severance fund management services; investment banking services, including services relating to capital markets, mergers and acquisitions, and delivering financial consulting services; mobile and online banking services; and bancassurance, insurance, trust, bonded warehousing, real estate escrow, merchandise and document storage and deposit, customs agency, cargo management, surety bond and merchandise distribution, and payment and collection services, as well as provides deposit and lending operations in foreign currencies. Further, it is involved in equity investments in various sectors, including infrastructure, energy and gas, agribusiness, and hotels; and providing treasury operations. The company was incorporated in 1994 and is headquartered in Bogotá, Colombia.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-10",
   "earnings_estimated": false,
   "earnings_call": "2026-11-11",
-  "eps_estimate": 0.15624,
+  "eps_estimate": 0.15939,
   "analysts": {
     "strong_buy": 0,
     "buy": 0,
@@ -19,10 +19,10 @@
     "strong_sell": 1,
     "total": 3
   },
-  "target_mean": 5.1,
+  "target_mean": 4.73333,
   "target_high": 5.2,
-  "target_low": 5,
-  "target_analysts": 2,
+  "target_low": 4,
+  "target_analysts": 3,
   "statements": [
     {
       "year": "2022",
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 4489000000000,
-      "earnings": 521000000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 4391600000000,
       "earnings": 344400000000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 4778000000000,
       "earnings": 577500000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 4834800000000,
+      "earnings": 368300000000
     }
   ],
   "growth": {
-    "q0": 0.3229,
-    "q1": -0.5813,
+    "q0": -0.5813,
+    "q1": null,
     "y0": 3.4253,
     "y1": 0.1993
   },
@@ -151,18 +151,18 @@
   ],
   "holders": [
     {
-      "name": "Truffle Hound Capital, LLC                          ",
-      "kind": "institution",
-      "pct": 0.26,
-      "shares": 1000000,
-      "date": "2026-06-30"
-    },
-    {
       "name": "Renaissance Technologies, LLC",
       "kind": "institution",
-      "pct": 0.23,
-      "shares": 865172,
-      "date": "2026-06-30"
+      "pct": 0.21,
+      "shares": 807897,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Truffle Hound Capital, LLC                          ",
+      "kind": "institution",
+      "pct": 0.19,
+      "shares": 700000,
+      "date": "2026-09-30"
     },
     {
       "name": "Pekin Hardy Strauss, Inc.",
@@ -172,32 +172,18 @@
       "date": "2026-09-30"
     },
     {
-      "name": "Banco BTG Pactual SA",
+      "name": "Marshall Wace LLP",
       "kind": "institution",
-      "pct": 0.06,
-      "shares": 226559,
-      "date": "2026-06-30"
+      "pct": 0.07,
+      "shares": 258539,
+      "date": "2026-09-30"
     },
     {
       "name": "Stokes Family Office, LLC",
       "kind": "institution",
       "pct": 0.06,
-      "shares": 210123,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "Jane Street Group, LLC",
-      "kind": "institution",
-      "pct": 0.05,
-      "shares": 188639,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "UBS Group AG",
-      "kind": "institution",
-      "pct": 0.04,
-      "shares": 146322,
-      "date": "2026-06-30"
+      "shares": 210700,
+      "date": "2026-09-30"
     },
     {
       "name": "Vise Technologies, Inc.                          ",
@@ -219,6 +205,20 @@
       "pct": 0.03,
       "shares": 118855,
       "date": "2026-06-30"
+    },
+    {
+      "name": "UBS Group AG",
+      "kind": "institution",
+      "pct": 0.03,
+      "shares": 121417,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Dimensional Fund Advisors LP",
+      "kind": "institution",
+      "pct": 0.03,
+      "shares": 114163,
+      "date": "2026-09-30"
     }
   ],
   "insider_net": {
@@ -247,12 +247,6 @@
   "inst_count": 69,
   "eps_history": [
     {
-      "quarter": "2025-09-30",
-      "estimate": 0.09551,
-      "actual": 0.1181,
-      "surprise_pct": 23.65
-    },
-    {
       "quarter": "2025-12-31",
       "estimate": 0.10167,
       "actual": 0.38067,
@@ -263,6 +257,12 @@
       "estimate": 0.17,
       "actual": 0.15551,
       "surprise_pct": -8.52
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.15624,
+      "actual": 0.10312,
+      "surprise_pct": -34
     }
   ],
   "insiders": [],

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T22:07:34.606Z",
+  "updated_at": "2026-11-17T00:28:07.070Z",
   "source": "Yahoo Finance",
   "symbol": "IQ",
   "summary": "iQIYI, Inc. provides online entertainment video services in the People's Republic of China. The company operates a platform that provides a collection of internet video content, such as professionally produced content licensed from professional content providers and self-produced content. It also engages in the production, aggregation, and distribution of online long-form videos, micro dramas, micro animations, micro variety shows, edited video clips, and video blogs; and provision of experience services, online mobile games, comics, and others. In addition, the company provides membership, online brand and performance-based advertising, and content distribution services. Further, it is involved in the talent agency and IP licensing activities. The company was formerly known as Qiyi.com, Inc. and changed its name to iQIYI, Inc. in November 2017. The company was incorporated in 2009 and is based in Beijing, the People's Republic of China. iQIYI, Inc. is a subsidiary of Baidu Holdings Limited.",
@@ -10,18 +10,18 @@
   "next_earnings": "2026-11-16",
   "earnings_estimated": false,
   "earnings_call": "2026-11-16",
-  "eps_estimate": -0.06924,
+  "eps_estimate": 0.02378,
   "analysts": {
     "strong_buy": 2,
     "buy": 6,
     "hold": 10,
-    "sell": 1,
-    "strong_sell": 0,
+    "sell": 0,
+    "strong_sell": 1,
     "total": 19
   },
-  "target_mean": 1.345888,
-  "target_high": 1.9244683,
-  "target_low": 0.50074303,
+  "target_mean": 1.3475646,
+  "target_high": 1.9268398,
+  "target_low": 0.50166065,
   "target_analysts": 18,
   "statements": [
     {
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 6682385000,
-      "earnings": -248932000
-    },
-    {
       "q": "4Q2025",
       "revenue": 6794198000,
       "earnings": -5816000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 6287064000,
       "earnings": -287504000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 6007418000,
+      "earnings": -173285000
     }
   ],
   "growth": {
-    "q0": 0.5384,
-    "q1": -0.78379995,
+    "q0": -0.78379995,
+    "q1": 0.625,
     "y0": -2.6581,
     "y1": 1.9814
   },
@@ -167,9 +167,9 @@
     {
       "name": "Morgan Stanley",
       "kind": "institution",
-      "pct": 5.9,
-      "shares": 31309511,
-      "date": "2026-06-30"
+      "pct": 5.92,
+      "shares": 31421266,
+      "date": "2026-09-30"
     },
     {
       "name": "T. ROWE PRICE Intl Fd.S, INC.-T. Rowe Price Emerging Markets Discovery",
@@ -181,9 +181,9 @@
     {
       "name": "Vanguard Capital Management LLC",
       "kind": "institution",
-      "pct": 2.93,
-      "shares": 15539216,
-      "date": "2026-06-30"
+      "pct": 3.11,
+      "shares": 16508573,
+      "date": "2026-09-30"
     },
     {
       "name": "UBS Group AG",
@@ -195,9 +195,9 @@
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 2.41,
-      "shares": 12810248,
-      "date": "2026-06-30"
+      "pct": 2.25,
+      "shares": 11921468,
+      "date": "2026-09-30"
     },
     {
       "name": "FIL LTD",
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.099,
-    "enterprise_value": 10762320896,
-    "ev_ebitda": 2.045,
-    "ev_revenue": 0.414,
+    "enterprise_value": 10700353536,
+    "ev_ebitda": 2.034,
+    "ev_revenue": 0.412,
     "float_shares": 524505488,
     "short_shares": 70554227,
     "short_pct_float": 15.92,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 167,
+  "inst_count": 165,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.15319,
-      "actual": -0.15,
-      "surprise_pct": 2.08
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.06136,
@@ -269,6 +263,12 @@
       "estimate": -0.09228,
       "actual": -0.13,
       "surprise_pct": -40.88
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.06924,
+      "actual": -0.03,
+      "surprise_pct": 56.67
     }
   ],
   "insiders": [],

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T22:07:35.770Z",
+  "updated_at": "2026-11-17T00:28:08.438Z",
   "source": "Yahoo Finance",
   "symbol": "VINP",
   "summary": "Vinci Compass Investments Ltd. operates as an asset management firm in Brazil. It operates through six segments: Global Investment Products and Solutions (IP&S), Credit, Private Equity, Equities, Real Assets, and Corporate Advisory. The Global IP&S segment provides access to a network of general partners and asset managers. This segment also offers proprietary investment solutions; multi-asset allocation strategies, as well as portfolio and management services; and liquid and alternative, separate mandates, commingled funds, brokerage, pension plans, solutions, and Vinci retirement services. The Credit segment operates public and private credit, opportunistic capital solutions, and agribusiness credit businesses. The Private Equity segment focuses on control and co-control investments, and minority investments in small-to-medium enterprises. The Equities segment delivers investment solutions; and sub-strategies to address different investor profiles and market conditions, including long only, dividends, small caps, long biased, and other specialized approaches. The Real Assets segment comprises investments focused on tangible, income-generating assets through real estate, infrastructure, and forestry. The Corporate Advisory segment provides financial and strategic advisory services, focusing on IPO advisory and mergers and acquisition transactions to entrepreneurs, corporate senior management teams, and boards of directors. Vinci Compass Investments Ltd. was formerly known as Vinci Partners Investments Ltd. and changed its name to Vinci Compass Investments Ltd. in July 2025. Vinci Compass Investments Ltd. was founded in 2009 and is headquartered in Rio De Janeiro, Brazil.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-12",
   "earnings_estimated": false,
   "earnings_call": "2026-11-12",
-  "eps_estimate": 1.10788,
+  "eps_estimate": 1.28128,
   "analysts": {
     "strong_buy": 3,
     "buy": 3,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 6
   },
-  "target_mean": 12.4365635,
-  "target_high": 14.661396,
-  "target_low": 10.235073,
+  "target_mean": 12.381953,
+  "target_high": 14.617166,
+  "target_low": 9.978568,
   "target_analysts": 6,
   "statements": [
     {
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 241313000,
-      "earnings": 0
-    },
-    {
       "q": "4Q2025",
       "revenue": 260294000,
       "earnings": 0
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 279773000,
       "earnings": 0
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 313641000,
+      "earnings": 175548000
     }
   ],
   "growth": {
-    "q0": 0.2402,
-    "q1": -0.14840001,
+    "q0": -0.14840001,
+    "q1": 0.65790004,
     "y0": 0.28959998,
     "y1": 0.1534
   },
@@ -181,9 +181,9 @@
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 1.04,
-      "shares": 528770,
-      "date": "2026-06-30"
+      "pct": 1.03,
+      "shares": 525898,
+      "date": "2026-09-30"
     },
     {
       "name": "UBS Group AG",
@@ -207,51 +207,45 @@
       "date": "2026-09-30"
     },
     {
-      "name": "MIRABELLA FINANCIAL SERVICES LLP",
+      "name": "State Street Corporation",
       "kind": "institution",
-      "pct": 0.32,
-      "shares": 161015,
-      "date": "2026-06-30"
+      "pct": 0.31,
+      "shares": 159186,
+      "date": "2026-09-30"
     },
     {
-      "name": "Marshall Wace LLP",
+      "name": "MIRABELLA FINANCIAL SERVICES LLP",
       "kind": "institution",
-      "pct": 0.32,
-      "shares": 161858,
-      "date": "2026-06-30"
+      "pct": 0.25,
+      "shares": 129439,
+      "date": "2026-09-30"
     }
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 3,
-    "sells": 41,
-    "bought": 17579,
-    "sold": 381846,
-    "net_pct": -1.2
+    "buys": 0,
+    "sells": 0,
+    "bought": 0,
+    "sold": null,
+    "net_pct": null
   },
   "extras": {
     "beta": 0.267,
-    "enterprise_value": 609456192,
-    "ev_ebitda": 1.878,
-    "ev_revenue": 0.577,
-    "float_shares": 22558334,
+    "enterprise_value": 591528320,
+    "ev_ebitda": 1.681,
+    "ev_revenue": 0.524,
+    "float_shares": 23181152,
     "short_shares": 251551,
     "short_pct_float": 1.27,
     "short_ratio": 1.86,
     "last_split": null,
     "last_split_date": null
   },
-  "ex_dividend": "2026-08-25",
+  "ex_dividend": "2026-11-27",
   "dividend_date": null,
-  "payout_ratio": 0.5495,
+  "payout_ratio": 0.66190004,
   "inst_count": 62,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.02892,
-      "actual": 0.8933,
-      "surprise_pct": -13.18
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.25856,
@@ -269,6 +263,12 @@
       "estimate": 1.0765,
       "actual": 0.702,
       "surprise_pct": -34.79
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.10788,
+      "actual": 2.4392,
+      "surprise_pct": 120.17
     }
   ],
   "insiders": [

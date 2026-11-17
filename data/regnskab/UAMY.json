@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T22:07:35.708Z",
+  "updated_at": "2026-11-17T00:28:08.365Z",
   "source": "Yahoo Finance",
   "symbol": "UAMY",
   "summary": "United States Antimony Corporation produces and sells antimony, zeolite, and precious metals in the United States and Canada. It operates in two segments: Antimony and Zeolite. The company offers antimony trioxide that is primarily used in conjunction with a halogen to form a synergistic flame retardant system for plastics, rubber, fiberglass, textile goods, paints, coatings, and paper, as well as color fastener in paints and as a phosphorescent agent in fluorescent light bulbs; antimony metal for use in bearings, storage batteries, and ordnance; and antimony trisulfide used as a primer in ammunition. The company also offers coarse and fine zeolite for soil amendment and fertilizer, water filtration, mine underground ventilation, sewage treatment, nuclear waste and other environmental cleanup, odor control, gas separation, and animal nutrition applications, as well as catalysts, petroleum refining, concrete, solar energy and heat exchange, desiccants, pellet binding, horse and kitty litter, floor cleaner, traction control, ammonia removal from mining waste, and carriers for insecticides, pesticides and herbicides. In addition, it recovers unrefined and refined gold and silver. United States Antimony Corporation was founded in 1968 and is headquartered in Dallas, Texas.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-12",
   "earnings_estimated": false,
   "earnings_call": "2026-11-12",
-  "eps_estimate": -0.015,
+  "eps_estimate": 0.01,
   "analysts": {
     "strong_buy": 0,
     "buy": 4,
@@ -72,10 +72,10 @@
     }
   ],
   "growth": {
-    "q0": 0.625,
-    "q1": 2,
-    "y0": -0.8333,
-    "y1": 2.4319
+    "q0": 2,
+    "q1": 2.25,
+    "y0": -1.125,
+    "y1": 2.2353
   },
   "ratings": [
     {
@@ -153,9 +153,9 @@
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 7.58,
-      "shares": 11345023,
-      "date": "2026-06-30"
+      "pct": 7.72,
+      "shares": 11556029,
+      "date": "2026-09-30"
     },
     {
       "name": "Price (T.Rowe) Associates Inc",
@@ -167,9 +167,9 @@
     {
       "name": "Van Eck Associates Corporation",
       "kind": "institution",
-      "pct": 5.72,
-      "shares": 8559868,
-      "date": "2026-06-30"
+      "pct": 5.51,
+      "shares": 8240352,
+      "date": "2026-09-30"
     },
     {
       "name": "State Street Corporation",
@@ -181,9 +181,9 @@
     {
       "name": "Vanguard Capital Management LLC",
       "kind": "institution",
-      "pct": 3.69,
-      "shares": 5524344,
-      "date": "2026-06-30"
+      "pct": 3.78,
+      "shares": 5653592,
+      "date": "2026-09-30"
     },
     {
       "name": "SPDR SERIES TRUST-State Street SPDR S&P Metals & Mining ETF",
@@ -207,17 +207,17 @@
       "date": "2026-06-30"
     },
     {
+      "name": "Marshall Wace LLP",
+      "kind": "institution",
+      "pct": 2.64,
+      "shares": 3954186,
+      "date": "2026-09-30"
+    },
+    {
       "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
       "kind": "fond",
       "pct": 2.64,
       "shares": 3953900,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "TR PRICE-Price (T.Rowe) Real Assets Trust I",
-      "kind": "fond",
-      "pct": 2.43,
-      "shares": 3644400,
       "date": "2026-06-30"
     }
   ],
@@ -230,13 +230,13 @@
     "net_pct": null
   },
   "extras": {
-    "beta": null,
-    "enterprise_value": 400104864,
-    "ev_ebitda": -18.021,
-    "ev_revenue": 10.564,
-    "float_shares": 131672722,
+    "beta": 0.443,
+    "enterprise_value": 364265792,
+    "ev_ebitda": -16.407,
+    "ev_revenue": 9.618,
+    "float_shares": 131633896,
     "short_shares": 38669691,
-    "short_pct_float": 26.84,
+    "short_pct_float": 26.91,
     "short_ratio": 6.4,
     "last_split": null,
     "last_split_date": null
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 297,
+  "inst_count": 302,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.015,
-      "actual": -0.04,
-      "surprise_pct": -366.67
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0,
@@ -269,6 +263,12 @@
       "estimate": -0.02,
       "actual": 0,
       "surprise_pct": 100
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -0.015,
+      "actual": -0.06,
+      "surprise_pct": -300
     }
   ],
   "insiders": [

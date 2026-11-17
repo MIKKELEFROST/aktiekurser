@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T22:07:35.735Z",
+  "updated_at": "2026-11-17T00:28:08.397Z",
   "source": "Yahoo Finance",
   "symbol": "USAS",
   "summary": "Americas Gold and Silver Corporation, together with its subsidiaries, engages in the exploration, development, and production of mineral properties in the Americas. The company explores for gold, silver, zinc, lead, and other by-products. The company was formerly known as Americas Silver Corporation and changed its name to Americas Gold and Silver Corporation in September 2019. The company was incorporated in 1998 and is headquartered in Toronto, Canada.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-13",
   "earnings_estimated": false,
   "earnings_call": "2026-11-13",
-  "eps_estimate": 0.025,
+  "eps_estimate": 0.035,
   "analysts": {
     "strong_buy": 4,
     "buy": 6,
@@ -51,16 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 37021120,
-      "earnings": -20764660
-    },
-    {
-      "q": "3Q2025",
-      "revenue": 43048880,
-      "earnings": -22101310
-    },
-    {
       "q": "4Q2025",
       "revenue": 51138850,
       "earnings": -52322150
@@ -69,13 +59,23 @@
       "q": "1Q2026",
       "revenue": 93109720,
       "earnings": 0
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 64585870,
+      "earnings": 0
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 73263710,
+      "earnings": 0
     }
   ],
   "growth": {
-    "q0": 2.5923998,
-    "q1": 1.6417,
-    "y0": 1.7778,
-    "y1": 1.9634
+    "q0": 1.6417,
+    "q1": 0.2174,
+    "y0": 1.2466,
+    "y1": 7.8846
   },
   "ratings": [
     {
@@ -144,13 +144,6 @@
   ],
   "holders": [
     {
-      "name": "Merk Investments LLC",
-      "kind": "institution",
-      "pct": 5.72,
-      "shares": 19392000,
-      "date": "2026-06-30"
-    },
-    {
       "name": "ASA Gold & Precious Metals Ltd",
       "kind": "fond",
       "pct": 4.99,
@@ -163,6 +156,13 @@
       "pct": 4.42,
       "shares": 14989183,
       "date": "2026-06-30"
+    },
+    {
+      "name": "Tidal Investments LLC",
+      "kind": "institution",
+      "pct": 4.31,
+      "shares": 14607734,
+      "date": "2026-09-30"
     },
     {
       "name": "TR PRICE-Price (T.Rowe) Real Assets Trust I",
@@ -188,9 +188,16 @@
     {
       "name": "Van Eck Associates Corporation",
       "kind": "institution",
-      "pct": 2.27,
-      "shares": 7711429,
-      "date": "2026-06-30"
+      "pct": 2.44,
+      "shares": 8270848,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Vanguard Capital Management LLC",
+      "kind": "institution",
+      "pct": 2.32,
+      "shares": 7854269,
+      "date": "2026-09-30"
     },
     {
       "name": "VanEck ETF Trust-VanEck Junior Gold Miners ETF",
@@ -198,13 +205,6 @@
       "pct": 1.96,
       "shares": 6656644,
       "date": "2026-09-30"
-    },
-    {
-      "name": "Vanguard Capital Management LLC",
-      "kind": "institution",
-      "pct": 1.87,
-      "shares": 6337708,
-      "date": "2026-06-30"
     },
     {
       "name": "Alps Advisors Inc.",
@@ -224,10 +224,10 @@
   },
   "extras": {
     "beta": 2.21,
-    "enterprise_value": 913307712,
-    "ev_ebitda": 19.34,
-    "ev_revenue": 5.03,
-    "float_shares": 280785793,
+    "enterprise_value": 771163712,
+    "ev_ebitda": 14.225,
+    "ev_revenue": 3.81,
+    "float_shares": 283867641,
     "short_shares": 22772297,
     "short_pct_float": 6.75,
     "short_ratio": 6.47,
@@ -239,12 +239,6 @@
   "payout_ratio": 0,
   "inst_count": 237,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.02,
-      "actual": -0.0157,
-      "surprise_pct": 21.5
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.04,
@@ -262,6 +256,12 @@
       "estimate": 0.03,
       "actual": -0.00272,
       "surprise_pct": -109.07
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.025,
+      "actual": -0.0144,
+      "surprise_pct": -157.6
     }
   ],
   "insiders": [

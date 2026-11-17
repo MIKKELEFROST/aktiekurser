@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T22:07:35.528Z",
+  "updated_at": "2026-11-17T00:28:08.125Z",
   "source": "Yahoo Finance",
   "symbol": "SPOT",
   "summary": "Spotify Technology S.A., together with its subsidiaries, provides audio streaming subscription services worldwide. It operates in two segments, Premium and Ad-Supported. The Premium segment offers online and offline streaming access to its catalog of music and podcasts, including video, lossless music, and audiobooks in select markets through subscription offerings primarily sold directly to end users and partners. The Ad-Supported segment provides limited on-demand online access to its catalog of music and online and offline access to its catalog of podcasts on computers, tablets, mobile devices, and other smart devices. The company also offers sales, distribution and marketing, contract research and development, and customer and other support services. Spotify Technology S.A. was incorporated in 2006 and is headquartered in Stockholm, Sweden.",
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 41
   },
-  "target_mean": 636.8074,
-  "target_high": 738.25543,
-  "target_low": 452.03574,
+  "target_mean": 635.8753,
+  "target_high": 736.2257,
+  "target_low": 450.79294,
   "target_analysts": 38,
   "statements": [
     {
@@ -153,9 +153,16 @@
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 5.29,
-      "shares": 10890937,
-      "date": "2026-06-30"
+      "pct": 5.28,
+      "shares": 10868860,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Morgan Stanley",
+      "kind": "institution",
+      "pct": 3.85,
+      "shares": 7932217,
+      "date": "2026-09-30"
     },
     {
       "name": "BAILLIE GIFFORD & CO",
@@ -163,13 +170,6 @@
       "pct": 3.66,
       "shares": 7544450,
       "date": "2026-09-30"
-    },
-    {
-      "name": "Morgan Stanley",
-      "kind": "institution",
-      "pct": 3.6,
-      "shares": 7418358,
-      "date": "2026-06-30"
     },
     {
       "name": "State Street Corporation",
@@ -231,10 +231,10 @@
   },
   "extras": {
     "beta": 1.464,
-    "enterprise_value": 116378042368,
-    "ev_ebitda": 42.059,
-    "ev_revenue": 6.187,
-    "float_shares": 157048165,
+    "enterprise_value": 119095083008,
+    "ev_ebitda": 43.041,
+    "ev_revenue": 6.331,
+    "float_shares": 157050220,
     "short_shares": 3063181,
     "short_pct_float": 1.94,
     "short_ratio": 1.72,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 1870,
+  "inst_count": 1884,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -275,18 +275,18 @@
     {
       "name": "SODERSTROM GUSTAV STIG VICTOR",
       "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 527.05 - 533.97 per share.",
-      "value": 11085113,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 151.25 per share.",
+      "value": 3162638,
       "shares": 20910,
       "date": "2026-10-12"
     },
     {
       "name": "SODERSTROM GUSTAV STIG VICTOR",
       "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 151.25 per share.",
-      "value": 3162638,
+      "kind": "sell",
+      "text": "Sale at price 527.05 - 533.97 per share.",
+      "value": 11085113,
       "shares": 20910,
       "date": "2026-10-12"
     },
@@ -302,15 +302,6 @@
     {
       "name": "SODERSTROM GUSTAV STIG VICTOR",
       "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 537.19 - 549.49 per share.",
-      "value": 11380738,
-      "shares": 20913,
-      "date": "2026-09-14"
-    },
-    {
-      "name": "SODERSTROM GUSTAV STIG VICTOR",
-      "role": "Chief Executive Officer",
       "kind": "other",
       "text": "Conversion of Exercise of derivative security at price 151.25 per share.",
       "value": 3163091,
@@ -318,13 +309,13 @@
       "date": "2026-09-14"
     },
     {
-      "name": "JENKINS DUSTEE",
-      "role": "Officer",
+      "name": "SODERSTROM GUSTAV STIG VICTOR",
+      "role": "Chief Executive Officer",
       "kind": "sell",
-      "text": "Sale at price 512.50 - 513.43 per share.",
-      "value": 1954343,
-      "shares": 3810,
-      "date": "2026-08-14"
+      "text": "Sale at price 537.19 - 549.49 per share.",
+      "value": 11380738,
+      "shares": 20913,
+      "date": "2026-09-14"
     },
     {
       "name": "JENKINS DUSTEE",
@@ -336,13 +327,13 @@
       "date": "2026-08-14"
     },
     {
-      "name": "NORSTROM ALEX",
-      "role": "Chief Executive Officer",
+      "name": "JENKINS DUSTEE",
+      "role": "Officer",
       "kind": "sell",
-      "text": "Sale at price 499.96 - 506.04 per share.",
-      "value": 2729435,
-      "shares": 5436,
-      "date": "2026-08-03"
+      "text": "Sale at price 512.50 - 513.43 per share.",
+      "value": 1954343,
+      "shares": 3810,
+      "date": "2026-08-14"
     },
     {
       "name": "NORSTROM ALEX",
@@ -356,10 +347,19 @@
     {
       "name": "SODERSTROM GUSTAV STIG VICTOR",
       "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 500.03 - 511.64 per share.",
-      "value": 10567336,
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 151.25 per share.",
+      "value": 3150991,
       "shares": 20833,
+      "date": "2026-08-03"
+    },
+    {
+      "name": "NORSTROM ALEX",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 499.96 - 506.04 per share.",
+      "value": 2729435,
+      "shares": 5436,
       "date": "2026-08-03"
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T22:07:34.717Z",
+  "updated_at": "2026-11-17T00:28:07.202Z",
   "source": "Yahoo Finance",
   "symbol": "KRYS",
   "summary": "Krystal Biotech, Inc., a commercial-stage biotechnology company, discovers, develops, manufactures, and commercializes genetic medicines to treat diseases with high unmet medical needs in the United States. The company commercializes VYJUVEK (beremagene geperpavec-svdt, or B-VEC) for the treatment of dystrophic epidermolysis bullosa (DEB). It also develops KB803 for ocular complications of dystrophic epidermolysis bullosa; KB801 for neurotrophic keratitis; KB407, which is in Phase 1 clinical trials for treating cystic fibrosis; KB111 for Hailey-Hailey disease; KB707 for solid tumors; KB304 for dynamic wrinkles; KB707 that is in Phase 1/2 clinical trials for the treatment of anti-PD-1 relapsed/refractory; KB408, which is in Phase 1 clinical trials for treating Alpha-1 antitrypsin deficiency; and KB301 that is in Phase 2 clinical trials for treating aesthetic skin conditions, as well as in open label study with ophthalmic B-VEC for treating for ocular complications of deb. Krystal Biotech, Inc. was founded in 2016 and is headquartered in Pittsburgh, Pennsylvania.",
@@ -73,7 +73,7 @@
   ],
   "growth": {
     "q0": 0.30629998,
-    "q1": 0.225,
+    "q1": 0.138,
     "y0": 0.1712,
     "y1": 0.1519
   },
@@ -160,9 +160,9 @@
     {
       "name": "Blackrock Inc.",
       "kind": "institution",
-      "pct": 14.11,
-      "shares": 4181432,
-      "date": "2026-06-30"
+      "pct": 12.12,
+      "shares": 3590630,
+      "date": "2026-09-30"
     },
     {
       "name": "Avoro Capital Advisors LLC",
@@ -179,13 +179,6 @@
       "date": "2026-09-30"
     },
     {
-      "name": "Vanguard Portfolio Management LLC",
-      "kind": "institution",
-      "pct": 5.31,
-      "shares": 1574905,
-      "date": "2026-06-30"
-    },
-    {
       "name": "State Street Corporation",
       "kind": "institution",
       "pct": 4.79,
@@ -193,11 +186,18 @@
       "date": "2026-09-30"
     },
     {
+      "name": "Vanguard Portfolio Management LLC",
+      "kind": "institution",
+      "pct": 4.34,
+      "shares": 1286854,
+      "date": "2026-09-30"
+    },
+    {
       "name": "Vanguard Capital Management LLC",
       "kind": "institution",
-      "pct": 4.19,
-      "shares": 1240567,
-      "date": "2026-06-30"
+      "pct": 4.04,
+      "shares": 1196682,
+      "date": "2026-09-30"
     },
     {
       "name": "iShares Trust-iShares Core S&P Mid-Cap ETF",
@@ -227,14 +227,14 @@
     "sells": 7,
     "bought": 4691,
     "sold": 126642,
-    "net_pct": -3.7
+    "net_pct": -3.6
   },
   "extras": {
     "beta": 0.648,
-    "enterprise_value": 8155096576,
-    "ev_ebitda": 35.606,
-    "ev_revenue": 17.35,
-    "float_shares": 23653141,
+    "enterprise_value": 7924548096,
+    "ev_ebitda": 34.6,
+    "ev_revenue": 16.86,
+    "float_shares": 23656401,
     "short_shares": 3044878,
     "short_pct_float": 16.81,
     "short_ratio": 11.26,
@@ -244,19 +244,25 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 597,
+  "inst_count": 601,
   "eps_history": [
     {
-      "quarter": "2025-09-30",
-      "estimate": 1.12216,
-      "actual": 2.66,
-      "surprise_pct": 137.04
+      "quarter": "2025-12-31",
+      "estimate": 1.60667,
+      "actual": 1.7,
+      "surprise_pct": 5.81
     },
     {
       "quarter": "2026-03-31",
       "estimate": 1.41892,
       "actual": 1.83,
       "surprise_pct": 28.97
+    },
+    {
+      "quarter": "2026-06-30",
+      "estimate": 1.91436,
+      "actual": 1.79,
+      "surprise_pct": -6.5
     },
     {
       "quarter": "2026-09-30",
@@ -267,15 +273,6 @@
   ],
   "insiders": [
     {
-      "name": "KRISHNAN KRISH S",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 354.54 - 366.56 per share.",
-      "value": 8983084,
-      "shares": 25000,
-      "date": "2026-09-04"
-    },
-    {
       "name": "KRISHNAN SUMA M",
       "role": "Officer, Director and Beneficial Owner",
       "kind": "sell",
@@ -285,13 +282,13 @@
       "date": "2026-09-04"
     },
     {
-      "name": "ROSSI DINO A",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Gift at price 0.00 per share.",
-      "value": 0,
-      "shares": 3691,
-      "date": "2026-08-14"
+      "name": "KRISHNAN KRISH S",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 354.54 - 366.56 per share.",
+      "value": 8983084,
+      "shares": 25000,
+      "date": "2026-09-04"
     },
     {
       "name": "ROSSI DINO A",
@@ -300,6 +297,15 @@
       "text": "Sale at price 325.60 - 333.23 per share.",
       "value": 8227953,
       "shares": 25000,
+      "date": "2026-08-14"
+    },
+    {
+      "name": "ROSSI DINO A",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Gift at price 0.00 per share.",
+      "value": 0,
+      "shares": 3691,
       "date": "2026-08-14"
     },
     {
@@ -321,20 +327,20 @@
       "date": "2026-06-25"
     },
     {
-      "name": "KRISHNAN KRISH S",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 300.75 - 312.23 per share.",
-      "value": 7702984,
-      "shares": 25000,
-      "date": "2026-06-04"
-    },
-    {
       "name": "KRISHNAN SUMA M",
       "role": "Officer, Director and Beneficial Owner",
       "kind": "sell",
       "text": "Sale at price 300.75 - 311.65 per share.",
       "value": 7702825,
+      "shares": 25000,
+      "date": "2026-06-04"
+    },
+    {
+      "name": "KRISHNAN KRISH S",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 300.75 - 312.23 per share.",
+      "value": 7702984,
       "shares": 25000,
       "date": "2026-06-04"
     },
@@ -348,11 +354,11 @@
       "date": "2026-05-26"
     },
     {
-      "name": "KRISHNAN KRISH S",
-      "role": "Chief Executive Officer",
+      "name": "KRISHNAN SUMA M",
+      "role": "Officer, Director and Beneficial Owner",
       "kind": "sell",
-      "text": "Sale at price 257.31 - 266.56 per share.",
-      "value": 6579164,
+      "text": "Sale at price 257.32 - 266.42 per share.",
+      "value": 6580270,
       "shares": 25000,
       "date": "2026-03-04"
     }
