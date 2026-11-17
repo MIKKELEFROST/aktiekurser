@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T00:28:07.310Z",
+  "updated_at": "2026-11-17T23:38:39.027Z",
   "source": "Yahoo Finance",
   "symbol": "LYCA",
   "summary": "Lycia Therapeutics, Inc., a biotechnology company, engages in the discovery and development of therapeutics designed to degrade disease-causing extracellular proteins for the treatment of autoimmune, inflammatory, and allergic diseases. The company develops the LYTAC platform, a modular technology designed to create therapeutics that selectively reduce the levels of pathogenic proteins. Its therapeutic candidate LCA-0061 degrades immunoglobulin E (IgE) for the treatment of allergic diseases, including food allergy. The company also develops LCA-0062, a follow-on program designed to degrade IgE for the treatment of allergic diseases. Additionally, it develops LCA-0321, a candidate designed to selectively degrade TSHR autoantibodies (thyrotropin receptor antibodies, or TRAbs), the pathogenic drivers of Graves' disease. Lycia Therapeutics, Inc. was incorporated in 2019 and is headquartered in South San Francisco, California.",
@@ -11,16 +11,43 @@
   "earnings_estimated": false,
   "earnings_call": null,
   "eps_estimate": null,
-  "analysts": null,
-  "target_mean": null,
-  "target_high": null,
-  "target_low": null,
-  "target_analysts": null,
-  "statements": null,
+  "analysts": {
+    "strong_buy": 0,
+    "buy": 5,
+    "hold": 0,
+    "sell": 0,
+    "strong_sell": 0,
+    "total": 5
+  },
+  "target_mean": 54,
+  "target_high": 75,
+  "target_low": 43,
+  "target_analysts": 4,
+  "statements": [
+    {
+      "year": "2025",
+      "revenue": null,
+      "net": -36460000,
+      "margin": null
+    }
+  ],
   "quarterly": [],
-  "growth": null,
+  "growth": {
+    "q0": null,
+    "q1": null,
+    "y0": null,
+    "y1": 0.42990002
+  },
   "ratings": [],
-  "holders": [],
+  "holders": [
+    {
+      "name": "RBB Fund, Inc.-Adara Smaller Companies Fund",
+      "kind": "fond",
+      "pct": 0.04,
+      "shares": 22444,
+      "date": "2026-10-31"
+    }
+  ],
   "insider_net": {
     "period": "6m",
     "buys": 0,
@@ -31,9 +58,9 @@
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 575037632,
-    "ev_ebitda": -17.513,
-    "ev_revenue": 129.659,
+    "enterprise_value": 608879488,
+    "ev_ebitda": -18.544,
+    "ev_revenue": 137.29,
     "float_shares": 8593922,
     "short_shares": 304185,
     "short_pct_float": null,

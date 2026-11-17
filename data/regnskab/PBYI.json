@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T00:28:07.684Z",
+  "updated_at": "2026-11-17T23:38:39.279Z",
   "source": "Yahoo Finance",
   "symbol": "PBYI",
   "summary": "Puma Biotechnology, Inc., a biopharmaceutical company, focuses on the development and commercialization of products to enhance cancer care in the United States and internationally. It offers NERLYNX, an oral version of neratinib that is used to treat adult patients with early stage HER2-overexpressed/amplified breast cancer; and advanced or metastatic HER2-positive breast cancer when combined with capecitabine. The company also develops alisertib, a small molecule inhibitor of aurora kinase A for the treatment of hormone receptor positive breast cancer, triple negative breast cancer, small cell lung cancer, and head and neck cancer. It sells its products through specialty pharmacy and distributor networks. The company has license agreements with Pfizer Inc. for the development, manufacture, and commercialization of neratinib (oral), neratinib (intravenous), PB357, and related compounds, as well as sub-license agreements with Specialised Therapeutics Asia Pte Ltd., Medison Pharma Ltd., Pint Pharma International SA, Knight Therapeutics, Inc., Pierre Fabre Medicament SAS, and Bixink Therapeutics Co., Ltd. Puma Biotechnology, Inc. was founded in 2010 and is headquartered in Los Angeles, California.",
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 54500000,
-      "earnings": 8800000
-    },
-    {
       "q": "4Q2025",
       "revenue": 75500000,
       "earnings": 13400000
@@ -69,6 +64,11 @@
       "q": "2Q2026",
       "revenue": 56500000,
       "earnings": 8200000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 0,
+      "earnings": 6000000
     }
   ],
   "growth": null,
@@ -157,7 +157,7 @@
       "kind": "institution",
       "pct": 7.99,
       "shares": 4131299,
-      "date": "2026-06-30"
+      "date": "2026-09-30"
     },
     {
       "name": "American Century Companies Inc",
@@ -219,16 +219,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 8,
-    "sells": 10,
+    "sells": 11,
     "bought": 239000,
-    "sold": 208564,
-    "net_pct": 0.4
+    "sold": 223564,
+    "net_pct": 0.2
   },
   "extras": {
     "beta": 1.33,
-    "enterprise_value": 276015424,
-    "ev_ebitda": 7.765,
-    "ev_revenue": 1.191,
+    "enterprise_value": 265934240,
+    "ev_ebitda": 7.481,
+    "ev_revenue": 1.147,
     "float_shares": 40437420,
     "short_shares": 4298038,
     "short_pct_float": 9.74,
@@ -239,14 +239,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 218,
+  "inst_count": 213,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.09,
-      "actual": 0.21,
-      "surprise_pct": 133.33
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.23,
@@ -267,6 +261,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "MILLER MICHAEL PATRICK",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 8.10 per share.",
+      "value": 121456,
+      "shares": 15000,
+      "date": "2026-11-11"
+    },
     {
       "name": "WILSON TROY EDWARD",
       "role": "Director",
@@ -346,15 +349,6 @@
       "text": "Sale at price 7.20 per share.",
       "value": 194311,
       "shares": 27000,
-      "date": "2026-06-12"
-    },
-    {
-      "name": "DORVAL ALLISON",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 7.20 per share.",
-      "value": 83579,
-      "shares": 11610,
       "date": "2026-06-12"
     }
   ],

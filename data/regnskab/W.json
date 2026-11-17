@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T00:28:08.493Z",
+  "updated_at": "2026-11-17T23:38:39.731Z",
   "source": "Yahoo Finance",
   "symbol": "W",
   "summary": "Wayfair Inc. engages in the e-commerce business in the United States and internationally. It provides online selections of furniture, décor, housewares, and home improvement products through its sites comprising Wayfair, Joss & Main, AllModern, Birch Lane, Perigold, and Wayfair Professional. The company offers its products under the Three Posts and Mercury Row brands. Wayfair Inc. was founded in 2002 and is headquartered in Boston, Massachusetts.",
@@ -14,15 +14,15 @@
   "analysts": {
     "strong_buy": 5,
     "buy": 16,
-    "hold": 11,
+    "hold": 12,
     "sell": 0,
     "strong_sell": 1,
-    "total": 33
+    "total": 34
   },
-  "target_mean": 137.68967,
+  "target_mean": 137.1,
   "target_high": 165,
   "target_low": 83,
-  "target_analysts": 29,
+  "target_analysts": 30,
   "statements": [
     {
       "year": "2022",
@@ -73,9 +73,9 @@
   ],
   "growth": {
     "q0": 0.1541,
-    "q1": 0.8783,
-    "y0": 0.17909999,
-    "y1": 0.3508
+    "q1": 0.89,
+    "y0": 0.17959999,
+    "y1": 0.3498
   },
   "ratings": [
     {
@@ -165,6 +165,13 @@
       "date": "2026-09-30"
     },
     {
+      "name": "AQR Capital Management, LLC",
+      "kind": "institution",
+      "pct": 6.52,
+      "shares": 7240276,
+      "date": "2026-09-30"
+    },
+    {
       "name": "Blackrock Inc.",
       "kind": "institution",
       "pct": 4.74,
@@ -179,11 +186,11 @@
       "date": "2026-09-30"
     },
     {
-      "name": "Jupiter Topco LLC",
+      "name": "Janus Henderson Group Ltd.",
       "kind": "institution",
-      "pct": 4.03,
-      "shares": 4469109,
-      "date": "2026-06-30"
+      "pct": 3.92,
+      "shares": 4354947,
+      "date": "2026-09-30"
     },
     {
       "name": "Renaissance Technologies, LLC",
@@ -212,28 +219,21 @@
       "pct": 3.66,
       "shares": 4058496,
       "date": "2026-09-30"
-    },
-    {
-      "name": "Growth Fund of America",
-      "kind": "fond",
-      "pct": 3.38,
-      "shares": 3757466,
-      "date": "2026-09-30"
     }
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 8,
-    "sells": 15,
-    "bought": 155222,
-    "sold": 682995,
-    "net_pct": -12
+    "buys": 10,
+    "sells": 17,
+    "bought": 159664,
+    "sold": 898995,
+    "net_pct": -19.5
   },
   "extras": {
     "beta": 3.109,
-    "enterprise_value": 17774759936,
-    "ev_ebitda": 43.566,
-    "ev_revenue": 1.346,
+    "enterprise_value": 17206874112,
+    "ev_ebitda": 42.174,
+    "ev_revenue": 1.303,
     "float_shares": 114344822,
     "short_shares": 9781336,
     "short_pct_float": 11.31,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 631,
+  "inst_count": 639,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -272,6 +272,42 @@
     }
   ],
   "insiders": [
+    {
+      "name": "SHAH NIRAJ S",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 111.08 - 114.05 per share.",
+      "value": 12048383,
+      "shares": 108000,
+      "date": "2026-11-12"
+    },
+    {
+      "name": "CONINE STEVEN K",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 111.08 - 114.05 per share.",
+      "value": 12048378,
+      "shares": 108000,
+      "date": "2026-11-12"
+    },
+    {
+      "name": "LAWTON HARRY A III",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 2221,
+      "date": "2026-11-11"
+    },
+    {
+      "name": "SNEED MICHAEL E",
+      "role": "Director",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 2221,
+      "date": "2026-11-11"
+    },
     {
       "name": "BLOTNER JON",
       "role": "Officer",
@@ -325,42 +361,6 @@
       "value": 7296707,
       "shares": 69000,
       "date": "2026-10-12"
-    },
-    {
-      "name": "CONINE STEVEN K",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 103.66 - 107.31 per share.",
-      "value": 7296709,
-      "shares": 69000,
-      "date": "2026-10-12"
-    },
-    {
-      "name": "BLOTNER JON",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 104.13 per share.",
-      "value": 630611,
-      "shares": 6056,
-      "date": "2026-10-02"
-    },
-    {
-      "name": "TAN-MARTIN FIONA",
-      "role": "Chief Technology Officer",
-      "kind": "sell",
-      "text": "Sale at price 102.18 per share.",
-      "value": 715260,
-      "shares": 7000,
-      "date": "2026-10-01"
-    },
-    {
-      "name": "BLOTNER JON",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 23451,
-      "date": "2026-10-01"
     }
   ],
   "dividends": [],

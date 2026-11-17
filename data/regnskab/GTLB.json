@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T00:28:06.771Z",
+  "updated_at": "2026-11-17T23:38:38.781Z",
   "source": "Yahoo Finance",
   "symbol": "GTLB",
   "summary": "GitLab Inc., together with its subsidiaries, develops software for the software development lifecycle in the United States, Europe, and the Asia Pacific. The company provides GitLab, an intelligent orchestration platform for DevSecOps, which is a single application offering the entire software development lifecycle, including software, project plans, code, security scans, compliance checks, and deployment configurations. It also offers the GitLab Duo Agent Platform, which enables intelligent orchestration of teams and AI agents to execute tasks autonomously across planning, development, security, and deployment. This platform combines conversational AI assistance, purpose-built agents for specialized tasks, workflow automation, and enterprise controls. In addition, it offers related training and professional services. The company was formerly known as GitLab B.V. and changed its name to GitLab Inc. in July 2015. GitLab Inc. was founded in 2011 and is based in San Francisco, California.",
@@ -8,8 +8,8 @@
   "employees": 2580,
   "ceo": "Mr. William  Staples",
   "next_earnings": "2026-12-01",
-  "earnings_estimated": true,
-  "earnings_call": "2026-09-01",
+  "earnings_estimated": false,
+  "earnings_call": "2026-12-01",
   "eps_estimate": 0.19976,
   "analysts": {
     "strong_buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "2Q2025",
-      "revenue": 235960000,
-      "earnings": -9208000
-    },
-    {
       "q": "3Q2025",
       "revenue": 244353000,
       "earnings": -8276000
@@ -69,6 +64,11 @@
       "q": "1Q2026",
       "revenue": 264158000,
       "earnings": -4972000
+    },
+    {
+      "q": "2Q2026",
+      "revenue": 286254000,
+      "earnings": -36844000
     }
   ],
   "growth": {
@@ -151,17 +151,17 @@
   ],
   "holders": [
     {
-      "name": "AQR Capital Management, LLC",
-      "kind": "institution",
-      "pct": 6.25,
-      "shares": 10338016,
-      "date": "2026-06-30"
-    },
-    {
       "name": "Blackrock Inc.",
       "kind": "institution",
       "pct": 6.13,
       "shares": 10143173,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "AQR Capital Management, LLC",
+      "kind": "institution",
+      "pct": 5.52,
+      "shares": 9133936,
       "date": "2026-09-30"
     },
     {
@@ -186,6 +186,13 @@
       "date": "2026-09-30"
     },
     {
+      "name": "Shaw D.E. & Co., Inc.",
+      "kind": "institution",
+      "pct": 3.77,
+      "shares": 6241275,
+      "date": "2026-09-30"
+    },
+    {
       "name": "VANGUARD HORIZON FUNDS-Vanguard Capital Opportunity Fund",
       "kind": "fond",
       "pct": 3.3,
@@ -200,24 +207,17 @@
       "date": "2026-06-30"
     },
     {
-      "name": "Shaw D.E. & Co., Inc.",
+      "name": "Disciplined Growth Investors, Inc.",
       "kind": "institution",
-      "pct": 2.53,
-      "shares": 4190123,
-      "date": "2026-06-30"
+      "pct": 1.99,
+      "shares": 3293080,
+      "date": "2026-09-30"
     },
     {
-      "name": "Impactive Capital, LP",
-      "kind": "institution",
-      "pct": 2.51,
-      "shares": 4157224,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "Atreides Management, LP",
-      "kind": "institution",
-      "pct": 2.04,
-      "shares": 3373169,
+      "name": "VANGUARD INDEX FUNDS-Vanguard Small-Cap Index Fund",
+      "kind": "fond",
+      "pct": 1.98,
+      "shares": 3272283,
       "date": "2026-06-30"
     }
   ],
@@ -227,13 +227,13 @@
     "sells": 6,
     "bought": 15526548,
     "sold": 2525440,
-    "net_pct": 320.2
+    "net_pct": 400.1
   },
   "extras": {
     "beta": 0.943,
-    "enterprise_value": 6674149888,
-    "ev_ebitda": -112.346,
-    "ev_revenue": 6.325,
+    "enterprise_value": 6216000000,
+    "ev_ebitda": -104.634,
+    "ev_revenue": 5.891,
     "float_shares": 138679506,
     "short_shares": 13032338,
     "short_pct_float": 7.92,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 601,
+  "inst_count": 612,
   "eps_history": [
     {
       "quarter": "2025-10-31",

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T00:28:06.348Z",
+  "updated_at": "2026-11-17T23:38:38.536Z",
   "source": "Yahoo Finance",
   "symbol": "DIS",
   "summary": "The Walt Disney Company operates as an entertainment company in Americas, Europe, and the Asia Pacific. It operates in three segments: Entertainment, Sports, and Experiences. The company produces and distributes film and television content under the ABC Television Network, Disney, Freeform, FX, Fox, National Geographic, and Star brand television channels, as well as ABC television stations and A+E television networks; and produces original content under the Disney Branded Television, FX Productions, Lucasfilm, Marvel, National Geographic Studios, Pixar, Searchlight Pictures, Twentieth Century Studios, 20th Television, and Walt Disney Pictures banners. It also provides direct-to-consumer streaming services through Disney+, Disney+ Hotstar, and Hulu; sports-related video streaming content through ESPN, ESPN on ABC, ESPN+ DTC, and Star; sale/licensing of film and episodic content to television and video-on-demand services; theatrical, home entertainment, and music distribution services; DVD and Blu-ray discs, electronic home video licenses, and VOD rental services; staging and licensing of live entertainment events; and post-production services. In addition, the company operates theme parks and resorts, such as Walt Disney World Resort, Disneyland Resort, Disneyland Paris, Hong Kong Disneyland Resort, Shanghai Disney Resort, Disney Cruise Line, Disney Vacation Club, National Geographic Expeditions, and Adventures by Disney, as well as Aulani, a Disney resort and spa in Hawaii. Further, it licenses its intellectual property (IP) to a third party that owns and operates Tokyo Disney Resort; licenses trade names, characters, visual, literary, and other IP for use on merchandise, published materials, and games; operates a direct-to-home satellite distribution platform; sells branded merchandise through retail, online, and wholesale businesses; and develops and publishes books, comic books, and magazines. The company was founded in 1923 and is based in Burbank, California.",
@@ -10,26 +10,20 @@
   "next_earnings": "2026-11-17",
   "earnings_estimated": false,
   "earnings_call": "2026-11-17",
-  "eps_estimate": 1.68241,
+  "eps_estimate": 1.915,
   "analysts": {
     "strong_buy": 5,
-    "buy": 21,
+    "buy": 22,
     "hold": 4,
     "sell": 1,
     "strong_sell": 0,
-    "total": 31
+    "total": 32
   },
-  "target_mean": 126.78833,
+  "target_mean": 127.5371,
   "target_high": 144,
   "target_low": 86,
-  "target_analysts": 30,
+  "target_analysts": 31,
   "statements": [
-    {
-      "year": "2022",
-      "revenue": 82722000000,
-      "net": 3145000000,
-      "margin": 3.8
-    },
     {
       "year": "2023",
       "revenue": 88898000000,
@@ -47,14 +41,15 @@
       "revenue": 94425000000,
       "net": 12404000000,
       "margin": 13.1
+    },
+    {
+      "year": "2026",
+      "revenue": 102344000000,
+      "net": 9899000000,
+      "margin": 9.7
     }
   ],
   "quarterly": [
-    {
-      "q": "3Q2025",
-      "revenue": 22464000000,
-      "earnings": 1313000000
-    },
     {
       "q": "4Q2025",
       "revenue": 25981000000,
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 25248000000,
       "earnings": 2638000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 25947000000,
+      "earnings": 2612000000
     }
   ],
   "growth": {
-    "q0": 0.5157,
-    "q1": 0.202,
-    "y0": 0.1693,
-    "y1": 0.0799
+    "q0": 0.1748,
+    "q1": 0.1911,
+    "y0": 0.067,
+    "y1": 0.1201
   },
   "ratings": [
     {
@@ -216,9 +216,9 @@
     {
       "name": "Wellington Management Group, LLP",
       "kind": "institution",
-      "pct": 1.85,
-      "shares": 31986559,
-      "date": "2026-06-30"
+      "pct": 1.68,
+      "shares": 29029939,
+      "date": "2026-09-30"
     }
   ],
   "insider_net": {
@@ -227,13 +227,13 @@
     "sells": 5,
     "bought": 57003,
     "sold": 23782,
-    "net_pct": 1
+    "net_pct": 1.2
   },
   "extras": {
     "beta": 1.426,
-    "enterprise_value": 252623732736,
-    "ev_ebitda": 12.051,
-    "ev_revenue": 2.555,
+    "enterprise_value": 249584762880,
+    "ev_ebitda": 11.906,
+    "ev_revenue": 2.525,
     "float_shares": 1723889669,
     "short_shares": 21133406,
     "short_pct_float": 1.22,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-06-30",
   "dividend_date": null,
   "payout_ratio": 0.3093,
-  "inst_count": 3886,
+  "inst_count": 3904,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.02382,
-      "actual": 1.11,
-      "surprise_pct": 8.42
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.5758,
@@ -269,6 +263,12 @@
       "estimate": 1.8544,
       "actual": 2.06,
       "surprise_pct": 11.09
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.67883,
+      "actual": 1.77,
+      "surprise_pct": 5.43
     }
   ],
   "insiders": [

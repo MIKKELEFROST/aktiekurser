@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T00:28:06.608Z",
+  "updated_at": "2026-11-17T23:38:38.691Z",
   "source": "Yahoo Finance",
   "symbol": "FOUR",
   "summary": "Shift4 Payments, Inc. engages in the provision of software and payment processing solutions in the United States and internationally. The company offers a payments platform, which provides omnichannel card acceptance; and processing solutions across multiple payment types, including credit, debit, contactless card, Europay, MasterCard and Visa, QR Pay, and mobile wallets, as well as alternative payment methods, such as Apple Pay, Google Pay, Alipay, and WeChat Pay. It also provides technology solutions, such as SkyTab POS, which provides purpose-built POS workstations; SkyTab Mobile, which provides pay-at-the-table, order-at-the-table, delivery, customer feedback, and email marketing solutions; SkyTab Venue, which provides mobile ordering, countertop POS, self-service kiosk, and digital wallet solutions; Lighthouse, a cloud-based suite of business intelligence tools that includes customer engagement, social media management, online reputation management, scheduling and product pricing, extensive reporting, and analytics; The Giving Block, a cryptocurrency donation marketplace; Shift4Shop, an e-commerce platform that creates a web store and tools to manage product catalog, order fulfillment and inventory management, search engine optimization, and secure hosting; and Marketplace, which enables integrations into third-party applications, as well as loyalty and inventory management. In addition, the company offers merchant operations and support services, including underwriting, onboarding, and activation; training; risk management; and support services. Further, it provides software partner operations and support services, including software integrations and compliance management; partner support; and partner services. The company distributes its products through independent software vendors, internal sales and support networks, enterprises, and value-added resellers. Shift4 Payments, Inc. was founded in 1999 and is headquartered in Center Valley, Pennsylvania.",
@@ -19,7 +19,7 @@
     "strong_sell": 0,
     "total": 25
   },
-  "target_mean": 49.40909,
+  "target_mean": 49.18182,
   "target_high": 77,
   "target_low": 38,
   "target_analysts": 22,
@@ -74,8 +74,8 @@
   "growth": {
     "q0": -0.1709,
     "q1": 0.0432,
-    "y0": -0.014099999,
-    "y1": 0.104499996
+    "y0": -0.0159,
+    "y1": 0.109799996
   },
   "ratings": [
     {
@@ -155,7 +155,7 @@
       "kind": "institution",
       "pct": 9.56,
       "shares": 7161844,
-      "date": "2026-06-30"
+      "date": "2026-09-30"
     },
     {
       "name": "Blackrock Inc.",
@@ -163,13 +163,6 @@
       "pct": 7.48,
       "shares": 5606187,
       "date": "2026-09-30"
-    },
-    {
-      "name": "Durable Capital Partners Lp",
-      "kind": "institution",
-      "pct": 5.9,
-      "shares": 4423633,
-      "date": "2026-06-30"
     },
     {
       "name": "Neuberger Berman Group, LLC",
@@ -219,21 +212,28 @@
       "pct": 2.48,
       "shares": 1858421,
       "date": "2026-09-30"
+    },
+    {
+      "name": "Janus Henderson Group Ltd.",
+      "kind": "institution",
+      "pct": 2.45,
+      "shares": 1836244,
+      "date": "2026-09-30"
     }
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 0,
-    "sells": 0,
-    "bought": 0,
-    "sold": null,
-    "net_pct": null
+    "buys": 7,
+    "sells": 1,
+    "bought": 57697,
+    "sold": 19058,
+    "net_pct": 0.2
   },
   "extras": {
     "beta": 1.475,
-    "enterprise_value": 8596618240,
-    "ev_ebitda": 9.489,
-    "ev_revenue": 1.746,
+    "enterprise_value": 8516428800,
+    "ev_ebitda": 9.4,
+    "ev_revenue": 1.73,
     "float_shares": 40054540,
     "short_shares": 13987280,
     "short_pct_float": 18.99,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-10-15",
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 467,
+  "inst_count": 456,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "LAUBER DAVID TAYLOR",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 44.38 per share.",
+      "value": 845754,
+      "shares": 19058,
+      "date": "2026-11-16"
+    },
     {
       "name": "CRUZ CHRISTOPHER NESTOR",
       "role": "Chief Financial Officer",
@@ -352,15 +361,6 @@
       "value": 0,
       "shares": 1600,
       "date": "2026-03-17"
-    },
-    {
-      "name": "ISAACMAN JARED",
-      "role": "Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "buy",
-      "text": "Purchase at price 45.75 per share.",
-      "value": 2004879,
-      "shares": 43827,
-      "date": "2026-03-10"
     }
   ],
   "dividends": [],

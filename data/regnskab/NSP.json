@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T00:28:07.540Z",
+  "updated_at": "2026-11-17T23:38:39.188Z",
   "source": "Yahoo Finance",
   "symbol": "NSP",
   "summary": "Insperity, Inc. engages in the provision of human resources (HR) and business solutions to improve business performance for small and medium-sized businesses primarily in the United States. It offers Insperity HR360 solution, a full-service PEO solution delivering HR technology, compliance, and strategic support for small and midsize businesses; Insperity HRCore, a streamlined HR platform for payroll, compliance, and workforce management; and Insperity HRScale, a scalable HR solution combining Insperity expertise with Workday technology for businesses. The company also provides performance solutions, including talent acquisition, retirement, and insurance services; contractor management; and Perks+ services. In addition, it offers human capital management and payroll services solution; integrated payroll; benefits administration; HR administration and employee onboarding; time and attendance; and performance management services. The company was formerly known as Administaff, Inc. and changed its name to Insperity, Inc. in March 2011. Insperity, Inc. was founded in 1986 and is headquartered in Kingwood, Texas.",
@@ -174,9 +174,9 @@
     {
       "name": "Bank of America Corporation",
       "kind": "institution",
-      "pct": 7.53,
-      "shares": 2868150,
-      "date": "2026-06-30"
+      "pct": 6.29,
+      "shares": 2395323,
+      "date": "2026-09-30"
     },
     {
       "name": "Vanguard Portfolio Management LLC",
@@ -202,16 +202,9 @@
     {
       "name": "Charles Schwab Investment Management, Inc.",
       "kind": "institution",
-      "pct": 4.28,
-      "shares": 1629903,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "Goldman Sachs Group Inc",
-      "kind": "institution",
-      "pct": 4.23,
-      "shares": 1611778,
-      "date": "2026-06-30"
+      "pct": 4.58,
+      "shares": 1744832,
+      "date": "2026-09-30"
     },
     {
       "name": "Vanguard Capital Management LLC",
@@ -219,21 +212,28 @@
       "pct": 4.11,
       "shares": 1566448,
       "date": "2026-09-30"
+    },
+    {
+      "name": "State Street Corporation",
+      "kind": "institution",
+      "pct": 3.82,
+      "shares": 1455143,
+      "date": "2026-09-30"
     }
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 0,
-    "sells": 0,
-    "bought": 0,
-    "sold": null,
-    "net_pct": null
+    "buys": 15,
+    "sells": 1,
+    "bought": 334928,
+    "sold": 5178,
+    "net_pct": 16.1
   },
   "extras": {
     "beta": 0.493,
-    "enterprise_value": 1828806400,
-    "ev_ebitda": 37.323,
-    "ev_revenue": 0.265,
+    "enterprise_value": 1730899456,
+    "ev_ebitda": 35.324,
+    "ev_revenue": 0.251,
     "float_shares": 35702147,
     "short_shares": 2767707,
     "short_pct_float": 8.99,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-09-02",
   "dividend_date": null,
   "payout_ratio": 34.2857,
-  "inst_count": 405,
+  "inst_count": 403,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -272,6 +272,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "CLIFFORD TIMOTHY T",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 50.19 per share.",
+      "value": 259884,
+      "shares": 5178,
+      "date": "2026-11-13"
+    },
     {
       "name": "DUFFY SEAN PATRICK",
       "role": "Officer",
@@ -346,15 +355,6 @@
     },
     {
       "name": "MORPHY JOHN M",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 6201,
-      "date": "2026-05-18"
-    },
-    {
-      "name": "RAWSON RICHARD GLEEN",
       "role": "Director",
       "kind": "other",
       "text": "Stock Award(Grant) at price 0.00 per share.",

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T00:28:06.524Z",
+  "updated_at": "2026-11-17T23:38:38.643Z",
   "source": "Yahoo Finance",
   "symbol": "EXFY",
   "summary": "Expensify, Inc. provides a cloud-based expense management software platform in the United States and internationally. The company offers Expensify, a platform that engages in managing corporate cards, paying bills, generating invoices, collecting payments, and booking travel, as well as track and submit plans for individuals. It serves individuals and corporations, small and midsized businesses, and enterprises. The company was founded in 2008 and is based in San Francisco, California.",
@@ -172,13 +172,6 @@
       "date": "2026-09-30"
     },
     {
-      "name": "AQR Capital Management, LLC",
-      "kind": "institution",
-      "pct": 2.61,
-      "shares": 2085857,
-      "date": "2026-06-30"
-    },
-    {
       "name": "Arrowstreet Capital, Limited Partnership",
       "kind": "institution",
       "pct": 2.61,
@@ -193,20 +186,6 @@
       "date": "2026-09-30"
     },
     {
-      "name": "Palogic Value Management, LP",
-      "kind": "institution",
-      "pct": 2.21,
-      "shares": 1768456,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "Castleknight Management LP",
-      "kind": "institution",
-      "pct": 2.16,
-      "shares": 1730062,
-      "date": "2026-06-30"
-    },
-    {
       "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
       "kind": "fond",
       "pct": 2.08,
@@ -219,21 +198,42 @@
       "pct": 1.86,
       "shares": 1485096,
       "date": "2026-09-30"
+    },
+    {
+      "name": "VANGUARD WORLD FUND-Vanguard Information Technology Index Fund",
+      "kind": "fond",
+      "pct": 1.85,
+      "shares": 1484705,
+      "date": "2026-08-31"
+    },
+    {
+      "name": "Two Sigma Investments, LP",
+      "kind": "institution",
+      "pct": 1.65,
+      "shares": 1322250,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Palogic Value Management, LP",
+      "kind": "institution",
+      "pct": 1.33,
+      "shares": 1065359,
+      "date": "2026-09-30"
     }
   ],
   "insider_net": {
     "period": "6m",
     "buys": 14,
-    "sells": 9,
+    "sells": 11,
     "bought": 716519,
-    "sold": 136143,
-    "net_pct": 2.7
+    "sold": 1053905,
+    "net_pct": -1.5
   },
   "extras": {
     "beta": 1.722,
-    "enterprise_value": 100995920,
-    "ev_ebitda": -7.436,
-    "ev_revenue": 0.742,
+    "enterprise_value": 93142472,
+    "ev_ebitda": -6.858,
+    "ev_revenue": 0.685,
     "float_shares": 57425356,
     "short_shares": 992444,
     "short_pct_float": 1.48,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 132,
+  "inst_count": 136,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -272,6 +272,24 @@
     }
   ],
   "insiders": [
+    {
+      "name": "MCLAUGHLIN STEVEN J",
+      "role": "Beneficial Owner of more than 10% of a Class of Security",
+      "kind": "sell",
+      "text": "Sale at price 1.83 - 1.84 per share.",
+      "value": 660596,
+      "shares": 360214,
+      "date": "2026-11-13"
+    },
+    {
+      "name": "MCLAUGHLIN STEVEN J",
+      "role": "Beneficial Owner of more than 10% of a Class of Security",
+      "kind": "sell",
+      "text": "Sale at price 1.69 - 1.85 per share.",
+      "value": 988746,
+      "shares": 557548,
+      "date": "2026-11-11"
+    },
     {
       "name": "LIU YING",
       "role": "Director",
@@ -343,24 +361,6 @@
       "value": 32400,
       "shares": 30000,
       "date": "2026-05-01"
-    },
-    {
-      "name": "ALVAREZ DIVO CARLOS EDUARDO",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 1.01 per share.",
-      "value": 31035,
-      "shares": 30728,
-      "date": "2026-04-28"
-    },
-    {
-      "name": "LIU YING",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 5376,
-      "date": "2026-04-02"
     }
   ],
   "dividends": [],

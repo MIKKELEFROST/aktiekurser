@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T00:28:08.177Z",
+  "updated_at": "2026-11-17T23:38:39.564Z",
   "source": "Yahoo Finance",
   "symbol": "SUPV",
   "summary": "Grupo Supervielle S.A., a financial services holding company, provides various banking products and services in Argentina. The company operates through Personal & Business Banking, Corporate Banking, Bank Treasury, Insurance, and Asset Management and Other Services segments. It offers savings and checking accounts, and time deposits; personal, mortgage, unsecured, and car loans; overdrafts; loans with special facilities for project and working capital financing; and leasing, bank guarantees for tenants, salary advances, domestic and international factoring, international guarantees and letters of credit, payroll payment plans, and credit and debit cards, as well as financial services and investments, such as mutual funds, guarantees, and benefit payments for senior citizens. The company also provides foreign trade and cash management; advisory services; treasury services; insurance products comprising life, home, personal accidents, technology, ATMs, protected bag and content, and integral insurance product for entrepreneurs and SME customers and other insurance policies; and asset management and other services, as well as operates as a digital online broker. It operates through a network of branches, ATMs, and self-service terminals. The company was formerly known as Inversiones y Participaciones S.A. and changed its name to Grupo Supervielle S.A. in November 2008. Grupo Supervielle S.A. was founded in 1887 and is based in Buenos Aires, Argentina.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-16",
   "earnings_estimated": false,
   "earnings_call": "2026-11-17",
-  "eps_estimate": 0.2222,
+  "eps_estimate": 0.14,
   "analysts": {
     "strong_buy": 2,
     "buy": 0,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 5
   },
-  "target_mean": 11.8,
+  "target_mean": 11.42,
   "target_high": 15,
-  "target_low": 8.5,
+  "target_low": 8.1,
   "target_analysts": 5,
   "statements": [
     {
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 149134000000,
-      "earnings": -50274000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 307331700000,
       "earnings": -19525300000
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 357848700000,
       "earnings": 12800000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 304279000000,
+      "earnings": 6826600000
     }
   ],
   "growth": {
-    "q0": 1.5587,
-    "q1": 3.0377,
-    "y0": 2.2542,
-    "y1": 1.5419999
+    "q0": 1.8814,
+    "q1": 4.0863,
+    "y0": 1.4301,
+    "y1": 6.0785
   },
   "ratings": [
     {
@@ -153,23 +153,23 @@
     {
       "name": "MAK Capital One LLC",
       "kind": "institution",
-      "pct": 5.58,
-      "shares": 4250000,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "Mirae Asset Global ETFs Holdings Ltd.",
-      "kind": "institution",
-      "pct": 2.02,
-      "shares": 1535574,
-      "date": "2026-06-30"
+      "pct": 5.91,
+      "shares": 4500000,
+      "date": "2026-09-30"
     },
     {
       "name": "Long Focus Capital Management, LLC",
       "kind": "institution",
-      "pct": 1.88,
-      "shares": 1431131,
-      "date": "2026-06-30"
+      "pct": 1.77,
+      "shares": 1349455,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Mirae Asset Global ETFs Holdings Ltd.",
+      "kind": "institution",
+      "pct": 1.68,
+      "shares": 1276697,
+      "date": "2026-09-30"
     },
     {
       "name": "GLOBAL X FUNDS-Global X MSCI Argentina ETF",
@@ -207,17 +207,17 @@
       "date": "2026-09-30"
     },
     {
-      "name": "Brevan Howard Capital Management LP",
-      "kind": "institution",
-      "pct": 0.91,
-      "shares": 697057,
-      "date": "2026-06-30"
-    },
-    {
       "name": "Ping Capital Management, Inc.                          ",
       "kind": "institution",
       "pct": 0.76,
       "shares": 579200,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Point72 Asset Management, L.P.",
+      "kind": "institution",
+      "pct": 0.34,
+      "shares": 256656,
       "date": "2026-09-30"
     }
   ],
@@ -244,14 +244,8 @@
   "ex_dividend": "2025-05-19",
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 64,
+  "inst_count": 67,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.09194,
-      "actual": -0.39772,
-      "surprise_pct": -532.59
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.02948,
@@ -269,6 +263,12 @@
       "estimate": 0.15457,
       "actual": 0.27614,
       "surprise_pct": 78.65
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.2222,
+      "actual": 0.07863,
+      "surprise_pct": -64.61
     }
   ],
   "insiders": [],

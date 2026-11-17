@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T00:28:06.678Z",
+  "updated_at": "2026-11-17T23:38:38.733Z",
   "source": "Yahoo Finance",
   "symbol": "GFF",
   "summary": "Griffon Corporation, through its subsidiaries, provides home and building, and consumer and professional products in the United States, Europe, Canada, Australia, and internationally. The Home and Building Products segment manufactures and markets residential and sectional commercial garage doors, rolling steel service doors, fire doors, shutters, steel security grilles, and room dividers. This segment also sells garage door openers. Its Consumer and Professional Products segment manufactures and markets long-handled engineered tools, including shovels, spades, scoops, rakes, hoes, cultivators, weeders, post hole diggers, scrapers, edgers, and forks; wheelbarrows and lawn carts; snow tools comprising pushers, roof rakes, sled sleigh shovels, and ice scrapers; and pruning products, such as pruners, loppers, shears, and other tools. This segment also offers striking tools, including axes, picks, mattocks, mauls, wood splitters, sledgehammers, pry bars, and repair handles; hand tools comprising hammers, screwdrivers, pliers, adjustable wrenches, handsaws, tape measures, levels, clamps, trowels, and other hand tools; indoor and outdoor planters and lawn accessories; and garden hoses and hose reels. In addition, this segment provides home organization products, including wire and wood shelving, containers, storage cabinets, and other closet and home organization accessories; residential, industrial, and commercial fans; and cleaning products, such as brooms, brushes, squeegees, and other cleaning products. It serves independent professional installing dealers and home center retail chains; and industrial distributors, homebuilders, and e-commerce platforms, as well as mass market, specialty, and hardware retailers. The company was formerly known as Instrument Systems Corporation and changed its name to Griffon Corporation in 1995. Griffon Corporation was incorporated in 1959 and is headquartered in New York, New York.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-17",
   "earnings_estimated": false,
   "earnings_call": "2026-11-17",
-  "eps_estimate": 1.58586,
+  "eps_estimate": 1.345,
   "analysts": {
     "strong_buy": 1,
     "buy": 6,
@@ -24,12 +24,6 @@
   "target_low": 120,
   "target_analysts": 7,
   "statements": [
-    {
-      "year": "2022",
-      "revenue": 2848488000,
-      "net": -191558000,
-      "margin": -6.7
-    },
     {
       "year": "2023",
       "revenue": 2685183000,
@@ -47,14 +41,15 @@
       "revenue": 2519926000,
       "net": 51110000,
       "margin": 2
+    },
+    {
+      "year": "2026",
+      "revenue": 1848378000,
+      "net": 321239000,
+      "margin": 17.4
     }
   ],
   "quarterly": [
-    {
-      "q": "3Q2025",
-      "revenue": 662182000,
-      "earnings": 43636000
-    },
     {
       "q": "4Q2025",
       "revenue": 649088000,
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 481370000,
       "earnings": 51632000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 490888000,
+      "earnings": 185902000
     }
   ],
   "growth": {
-    "q0": 0.0298,
-    "q1": -0.0095,
-    "y0": -0.044499997,
-    "y1": 0.1294
+    "q0": -0.072399996,
+    "q1": 0.066700004,
+    "y0": 0.1172,
+    "y1": 0.1391
   },
   "ratings": [
     {
@@ -186,17 +186,17 @@
       "date": "2026-09-30"
     },
     {
-      "name": "Voss Capital, LP",
-      "kind": "institution",
-      "pct": 3.35,
-      "shares": 1516857,
-      "date": "2026-06-30"
-    },
-    {
       "name": "FMR, LLC",
       "kind": "institution",
       "pct": 3.25,
       "shares": 1471656,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Voss Capital, LP",
+      "kind": "institution",
+      "pct": 3.11,
+      "shares": 1410000,
       "date": "2026-09-30"
     },
     {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.442,
-    "enterprise_value": 5754301952,
-    "ev_ebitda": 11.356,
-    "ev_revenue": 2.25,
+    "enterprise_value": 5971263488,
+    "ev_ebitda": 11.784,
+    "ev_revenue": 2.335,
     "float_shares": 42280806,
     "short_shares": 1415389,
     "short_pct_float": 4.95,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-08-31",
   "dividend_date": null,
   "payout_ratio": 0.1754,
-  "inst_count": 479,
+  "inst_count": 484,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.515,
-      "actual": 1.54,
-      "surprise_pct": 1.65
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.346,
@@ -269,6 +263,12 @@
       "estimate": 1.34106,
       "actual": 1.51,
       "surprise_pct": 12.6
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 1.58586,
+      "actual": 1.61,
+      "surprise_pct": 1.52
     }
   ],
   "insiders": [

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T00:28:08.130Z",
+  "updated_at": "2026-11-17T23:38:39.529Z",
   "source": "Yahoo Finance",
   "symbol": "SR",
   "summary": "Spire Inc., together with its subsidiaries, engages in the purchase, retail distribution, and sale of natural gas to residential, commercial, industrial, and other end-users of natural gas in the United States. The company operates through three segments: Gas Utility, Gas Marketing, and Midstream. It is also involved in the marketing of natural gas and related services; and transportation and storage of natural gas. In addition, the company engages in the operation of propane through its propane pipeline, risk management, and other activities. Spire Inc. was formerly known as The Laclede Group, Inc. and changed its name to Spire Inc. in April 2016. Spire Inc. was founded in 1857 and is based in Saint Louis, Missouri.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-17",
   "earnings_estimated": false,
   "earnings_call": "2026-11-17",
-  "eps_estimate": -1.02125,
+  "eps_estimate": 1.815,
   "analysts": {
     "strong_buy": 1,
     "buy": 5,
@@ -24,12 +24,6 @@
   "target_low": 79,
   "target_analysts": 10,
   "statements": [
-    {
-      "year": "2022",
-      "revenue": 2198500000,
-      "net": 205700000,
-      "margin": 9.4
-    },
     {
       "year": "2023",
       "revenue": 2666300000,
@@ -47,14 +41,15 @@
       "revenue": 2476400000,
       "net": 256600000,
       "margin": 10.4
+    },
+    {
+      "year": "2026",
+      "revenue": 2478300000,
+      "net": 480400000,
+      "margin": 19.4
     }
   ],
   "quarterly": [
-    {
-      "q": "3Q2025",
-      "revenue": 334100000,
-      "earnings": -43400000
-    },
     {
       "q": "4Q2025",
       "revenue": 762200000,
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 420200000,
       "earnings": 210900000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 339400000,
+      "earnings": -94600000
     }
   ],
   "growth": {
-    "q0": -1.1729,
-    "q1": 0.0655,
-    "y0": -0.0967,
-    "y1": 0.3662
+    "q0": 0.0254,
+    "q1": 0.0864,
+    "y0": 0.3483,
+    "y1": 0.1401
   },
   "ratings": [
     {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.512,
-    "enterprise_value": 12492846080,
-    "ev_ebitda": 12.971,
-    "ev_revenue": 4.682,
+    "enterprise_value": 12382896128,
+    "ev_ebitda": 12.857,
+    "ev_revenue": 4.641,
     "float_shares": 57681686,
     "short_shares": 2803181,
     "short_pct_float": 6.44,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-12-11",
   "dividend_date": null,
   "payout_ratio": 0.71959996,
-  "inst_count": 537,
+  "inst_count": 533,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.38331,
-      "actual": -0.47,
-      "surprise_pct": -22.62
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.64334,
@@ -269,6 +263,12 @@
       "estimate": -0.29857,
       "actual": -0.26,
       "surprise_pct": 12.92
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -1.02125,
+      "actual": -0.99,
+      "surprise_pct": 3.06
     }
   ],
   "insiders": [

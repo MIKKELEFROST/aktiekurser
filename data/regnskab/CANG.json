@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T00:28:06.043Z",
+  "updated_at": "2026-11-17T23:38:38.375Z",
   "source": "Yahoo Finance",
   "symbol": "CANG",
   "summary": "Cango Inc. operates bitcoin mining business with mining operations across North America, the Middle East, South America, and East Africa. It also operates an online international used car export business through AutoCango.com. Cango Inc. was founded in 2010 and is headquartered in Dallas, Texas.",
@@ -51,6 +51,11 @@
   ],
   "quarterly": [
     {
+      "q": "2Q2025",
+      "revenue": 1001766870,
+      "earnings": -2116011660
+    },
+    {
       "q": "3Q2025",
       "revenue": 1588578950,
       "earnings": 263919150
@@ -64,11 +69,6 @@
       "q": "1Q2026",
       "revenue": 690536460,
       "earnings": -1767301360
-    },
-    {
-      "q": "2Q2026",
-      "revenue": 341449900,
-      "earnings": -548894680
     }
   ],
   "growth": {
@@ -123,10 +123,31 @@
       "date": "2026-09-30"
     },
     {
+      "name": "Goldman Sachs Group Inc",
+      "kind": "institution",
+      "pct": 0.13,
+      "shares": 451698,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Mirae Asset Global ETFs Holdings Ltd.",
+      "kind": "institution",
+      "pct": 0.13,
+      "shares": 446578,
+      "date": "2026-09-30"
+    },
+    {
       "name": "GLOBAL X FUNDS-Global X Blockchain ETF",
       "kind": "fond",
       "pct": 0.1,
       "shares": 359935,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Vident Advisory, LLC                          ",
+      "kind": "institution",
+      "pct": 0.06,
+      "shares": 205565,
       "date": "2026-09-30"
     },
     {
@@ -158,31 +179,10 @@
       "date": "2026-09-30"
     },
     {
-      "name": "SBI Securities Co., Ltd.",
+      "name": "Citadel Advisors Llc",
       "kind": "institution",
-      "pct": 0,
-      "shares": 10124,
-      "date": "2026-09-30"
-    },
-    {
-      "name": "Mariner, LLC",
-      "kind": "institution",
-      "pct": 0,
-      "shares": 11255,
-      "date": "2026-09-30"
-    },
-    {
-      "name": "BNP Paribas Financial Markets",
-      "kind": "institution",
-      "pct": 0,
-      "shares": 11243,
-      "date": "2026-09-30"
-    },
-    {
-      "name": "Morgan Stanley",
-      "kind": "institution",
-      "pct": 0,
-      "shares": 11418,
+      "pct": 0.01,
+      "shares": 37934,
       "date": "2026-09-30"
     }
   ],
@@ -196,9 +196,9 @@
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 102961840,
-    "ev_ebitda": 1.46,
-    "ev_revenue": 0.185,
+    "enterprise_value": 102141400,
+    "ev_ebitda": 1.448,
+    "ev_revenue": 0.183,
     "float_shares": null,
     "short_shares": 1292527,
     "short_pct_float": 11.54,
@@ -209,7 +209,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 37,
+  "inst_count": 33,
   "eps_history": [
     {
       "quarter": "2025-12-31",

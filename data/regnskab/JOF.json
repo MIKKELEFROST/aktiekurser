@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T00:28:07.124Z",
+  "updated_at": "2026-11-17T23:38:38.929Z",
   "source": "Yahoo Finance",
   "symbol": "JOF",
   "summary": "Japan Smaller Capitalization Fund, Inc. is a closed-ended equity mutual fund launched by Nomura Asset Management U.S.A. Inc. It is managed by Nomura Asset Management Co., Ltd. The fund invests in the public equity markets of Japan. It invests in stocks traded on the Tokyo, Osaka and Nagoya Stock Exchanges, JASDAQ, Mothers, Hercules, Centrex, and other indices. The fund seeks to invest in stocks of companies operating across diversified sectors. It primarily invests in stocks of small cap companies. The fund benchmarks the performance of its portfolio against the The Russell/Nomura Small Cap Index. It was formerly known as Japan OTC Equity Fund, Inc. Japan Smaller Capitalization Fund, Inc. was formed on March 22, 1990 and is domiciled in the United States.",
@@ -29,13 +29,6 @@
       "date": "2026-09-30"
     },
     {
-      "name": "Lazard Asset Management LLC",
-      "kind": "institution",
-      "pct": 13.96,
-      "shares": 3560978,
-      "date": "2026-06-30"
-    },
-    {
       "name": "City of London Investment Management Co. Limited",
       "kind": "institution",
       "pct": 12.64,
@@ -43,18 +36,25 @@
       "date": "2026-09-30"
     },
     {
-      "name": "1607 Capital Partners, LLC",
+      "name": "Lazard Asset Management LLC",
       "kind": "institution",
-      "pct": 10.68,
-      "shares": 2724109,
-      "date": "2026-06-30"
+      "pct": 12.18,
+      "shares": 3104739,
+      "date": "2026-09-30"
     },
     {
       "name": "Saba Capital Management, L.P.",
       "kind": "institution",
-      "pct": 7.64,
-      "shares": 1948781,
-      "date": "2026-06-30"
+      "pct": 10.04,
+      "shares": 2561512,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "1607 Capital Partners, LLC",
+      "kind": "institution",
+      "pct": 8.93,
+      "shares": 2277641,
+      "date": "2026-09-30"
     },
     {
       "name": "Exch Listed Fd.s TRT-Saba Opportunistically Hedged Closed-End Fd.s ETF",
@@ -62,13 +62,6 @@
       "pct": 2.37,
       "shares": 603212,
       "date": "2026-08-31"
-    },
-    {
-      "name": "Bank of America Corporation",
-      "kind": "institution",
-      "pct": 1.74,
-      "shares": 443293,
-      "date": "2026-06-30"
     },
     {
       "name": "HC Capital Trust-The Institutional International Equity Portfolio",
@@ -85,6 +78,13 @@
       "date": "2026-06-30"
     },
     {
+      "name": "Bank of America Corporation",
+      "kind": "institution",
+      "pct": 1.51,
+      "shares": 386199,
+      "date": "2026-09-30"
+    },
+    {
       "name": "Morgan Stanley",
       "kind": "institution",
       "pct": 1.09,
@@ -94,17 +94,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 5,
+    "buys": 6,
     "sells": 1,
-    "bought": 129978,
+    "bought": 136778,
     "sold": 16200,
-    "net_pct": -103.9
+    "net_pct": -103.7
   },
   "extras": {
     "beta": 0.552,
-    "enterprise_value": 271351104,
+    "enterprise_value": 266761024,
     "ev_ebitda": null,
-    "ev_revenue": 28.448,
+    "ev_revenue": 27.967,
     "float_shares": null,
     "short_shares": 10951,
     "short_pct_float": null,
@@ -112,12 +112,21 @@
     "last_split": null,
     "last_split_date": null
   },
-  "ex_dividend": "2026-11-16",
+  "ex_dividend": "2026-12-15",
   "dividend_date": null,
   "payout_ratio": 0.3058,
-  "inst_count": 67,
+  "inst_count": 66,
   "eps_history": [],
   "insiders": [
+    {
+      "name": "SABA CAPITAL MANAGEMENT, L.P.",
+      "role": "Beneficial Owner of more than 10% of a Class of Security",
+      "kind": "buy",
+      "text": "Purchase at price 10.78 per share.",
+      "value": 73304,
+      "shares": 6800,
+      "date": "2026-11-12"
+    },
     {
       "name": "SABA CAPITAL MANAGEMENT, L.P.",
       "role": "Beneficial Owner of more than 10% of a Class of Security",
@@ -198,22 +207,9 @@
       "value": 24993,
       "shares": 3306,
       "date": "2025-01-13"
-    },
-    {
-      "name": "OUIMET PAIGE",
-      "role": "Director",
-      "kind": "buy",
-      "text": "Purchase at price 8.02 per share.",
-      "value": 24950,
-      "shares": 3111,
-      "date": "2024-12-11"
     }
   ],
   "dividends": [
-    {
-      "date": "1998-11-19",
-      "amount": 0.005
-    },
     {
       "date": "1999-11-19",
       "amount": 0.007
@@ -368,6 +364,10 @@
     },
     {
       "date": "2026-10-15",
+      "amount": 0.096
+    },
+    {
+      "date": "2026-11-16",
       "amount": 0.096
     }
   ],
