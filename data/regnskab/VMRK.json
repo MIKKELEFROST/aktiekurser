@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T23:38:39.708Z",
+  "updated_at": "2026-11-18T23:09:46.454Z",
   "source": "Yahoo Finance",
   "symbol": "VMRK",
   "summary": "Vivmark Residential focused on building, buying, and managing high-quality apartment communities across major U.S. metro areas. The company owns or held investments in more than 184,000 rental apartments across premier U.S. markets and over 11,100 apartments under construction. Vivmark Residential based in Chicago, Illinois.",
@@ -132,13 +132,6 @@
       "date": "2026-09-30"
     },
     {
-      "name": "NORGES BANK",
-      "kind": "institution",
-      "pct": 7.27,
-      "shares": 56318518,
-      "date": "2026-06-30"
-    },
-    {
       "name": "Vanguard Capital Management LLC",
       "kind": "institution",
       "pct": 6.31,
@@ -186,15 +179,22 @@
       "pct": 2.44,
       "shares": 18886657,
       "date": "2026-06-30"
+    },
+    {
+      "name": "VANGUARD INDEX FUNDS-Vanguard Mid-Cap Index Fund",
+      "kind": "fond",
+      "pct": 2.13,
+      "shares": 16537002,
+      "date": "2026-06-30"
     }
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 20,
-    "sells": 8,
-    "bought": 177180,
-    "sold": 58286,
-    "net_pct": 3.2
+    "buys": 21,
+    "sells": 10,
+    "bought": 177950,
+    "sold": 85786,
+    "net_pct": 2.5
   },
   "extras": {
     "beta": 0.549,
@@ -211,7 +211,7 @@
   "ex_dividend": "2026-10-05",
   "dividend_date": null,
   "payout_ratio": 0.96940005,
-  "inst_count": 1324,
+  "inst_count": 1327,
   "eps_history": [
     {
       "quarter": "2026-09-30",
@@ -221,6 +221,33 @@
     }
   ],
   "insiders": [
+    {
+      "name": "BRESLIN SEAN JOSEPH",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 64.86 per share.",
+      "value": 1297200,
+      "shares": 20000,
+      "date": "2026-11-16"
+    },
+    {
+      "name": "BIRENBAUM MATTHEW H",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Gift at price 0.00 per share.",
+      "value": 0,
+      "shares": 770,
+      "date": "2026-11-13"
+    },
+    {
+      "name": "BIRENBAUM MATTHEW H",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 64.28 per share.",
+      "value": 482100,
+      "shares": 7500,
+      "date": "2026-11-13"
+    },
     {
       "name": "BRESLIN SEAN JOSEPH",
       "role": "Officer",
@@ -283,33 +310,6 @@
       "value": 16080,
       "shares": 250,
       "date": "2026-08-19"
-    },
-    {
-      "name": "SCHULMAN EDWARD M",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 64.29 per share.",
-      "value": 1066893,
-      "shares": 16595,
-      "date": "2026-08-18"
-    },
-    {
-      "name": "SWANEZY SUSAN",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 63.80 per share.",
-      "value": 1001660,
-      "shares": 15700,
-      "date": "2026-08-18"
-    },
-    {
-      "name": "HOWARD CHRISTOPHER",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 64.00 per share.",
-      "value": 543104,
-      "shares": 8486,
-      "date": "2026-08-18"
     }
   ],
   "dividends": [

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T23:38:38.424Z",
+  "updated_at": "2026-11-18T23:09:45.331Z",
   "source": "Yahoo Finance",
   "symbol": "CHYM",
   "summary": "Chime Financial, Inc., a financial technology company, provides digital consumer banking and payment solutions in the United States and internationally. The company offers various products, such as spending, including checking accounts, debit cards, ATM and cash deposit networks, paycheck, outbound instant transfer; Chime Plus, a fee-free mobile banking experience; liquidity products, such as SpotMe, MyPay, and Instant Loans; building credit solutions comprising chime card and credit builder credit card, and FICO score tracking; savings and perks products; community focused products, including Pay Anyone and SpotMe Boosts; Enterprise offers Chime Workplace, a suite of financial services and employee benefits tools to their employees; and other support and operations. The company was formerly known as 1Debit Inc. and changed its name to Chime Financial, Inc. in June 2019. Chime Financial, Inc. was incorporated in 2012 and is headquartered in San Francisco, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": null,
+  "eps_estimate": 0.36,
   "analysts": {
     "strong_buy": 6,
     "buy": 15,
@@ -19,8 +19,8 @@
     "strong_sell": 0,
     "total": 23
   },
-  "target_mean": 41.90476,
-  "target_high": 50,
+  "target_mean": 42.38095,
+  "target_high": 55,
   "target_low": 34,
   "target_analysts": 21,
   "statements": [
@@ -59,7 +59,12 @@
       "earnings": 43724000
     }
   ],
-  "growth": null,
+  "growth": {
+    "q0": null,
+    "q1": null,
+    "y0": null,
+    "y1": 0.584
+  },
   "ratings": [
     {
       "date": "2026-11-06",
@@ -207,10 +212,10 @@
   "insider_net": {
     "period": "6m",
     "buys": 23,
-    "sells": 29,
+    "sells": 30,
     "bought": 3126033,
-    "sold": 20520276,
-    "net_pct": -37.8
+    "sold": 20680376,
+    "net_pct": -38
   },
   "extras": {
     "beta": null,
@@ -227,7 +232,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 483,
+  "inst_count": 486,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -255,6 +260,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "FEUILLE JAMES",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 33.43 - 34.36 per share.",
+      "value": 5416180,
+      "shares": 160100,
+      "date": "2026-11-17"
+    },
     {
       "name": "DST GLOBAL ADVISORS, LTD.",
       "role": "Beneficial Owner of more than 10% of a Class of Security",
@@ -335,15 +349,6 @@
       "value": 109309929,
       "shares": 3216189,
       "date": "2026-09-14"
-    },
-    {
-      "name": "FEUILLE JAMES",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 32.89 - 33.15 per share.",
-      "value": 11611184,
-      "shares": 351890,
-      "date": "2026-09-11"
     }
   ],
   "dividends": [],

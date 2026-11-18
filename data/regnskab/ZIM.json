@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T23:38:39.800Z",
+  "updated_at": "2026-11-18T23:09:46.531Z",
   "source": "Yahoo Finance",
   "symbol": "ZIM",
   "summary": "ZIM Integrated Shipping Services Ltd., together with its subsidiaries, provides container shipping and related services in Israel and internationally. The company offers door-to-door and port-to-port transportation services for various types of customers, including end-users, consolidators, and freight forwarders. It also provides ZIMonitor, a reefer cargo tracking service, a device attached to the engine of the reefer, and allows customers to track and monitor, cargo, such as pharmaceuticals, food and delicate electronics. As of December 31, 2025, it operated a fleet of 128 vessels, such as 115 container vessels and 13 vehicle transport vessels, as well as a network of 56 weekly lines. ZIM Integrated Shipping Services Ltd. was incorporated in 1945 and is headquartered in Haifa, Israel.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-18",
   "earnings_estimated": false,
   "earnings_call": "2026-11-18",
-  "eps_estimate": 5.11,
+  "eps_estimate": null,
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 1777200000,
-      "earnings": 123000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 1484700000,
       "earnings": 38100000
@@ -69,10 +64,15 @@
       "q": "2Q2026",
       "revenue": 1780700000,
       "earnings": 63500000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 2712000000,
+      "earnings": 829900000
     }
   ],
   "growth": {
-    "q0": 3.9775,
+    "q0": null,
     "q1": null,
     "y0": 1.5635,
     "y1": -0.17889999
@@ -179,6 +179,13 @@
       "date": "2026-09-30"
     },
     {
+      "name": "Millennium Management Llc",
+      "kind": "institution",
+      "pct": 1.63,
+      "shares": 1962017,
+      "date": "2026-09-30"
+    },
+    {
       "name": "Alliancebernstein L.P.",
       "kind": "institution",
       "pct": 1.62,
@@ -191,13 +198,6 @@
       "pct": 1.6,
       "shares": 1933212,
       "date": "2026-09-30"
-    },
-    {
-      "name": "Millennium Management Llc",
-      "kind": "institution",
-      "pct": 1.53,
-      "shares": 1851020,
-      "date": "2026-06-30"
     },
     {
       "name": "Menora Mivtachim Holdings Ltd.",
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-03-20",
   "dividend_date": null,
   "payout_ratio": 1.087,
-  "inst_count": 326,
+  "inst_count": 325,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 1.05813,
-      "actual": 1.02661,
-      "surprise_pct": -2.98
-    },
     {
       "quarter": "2025-12-31",
       "estimate": -0.61652,
@@ -263,6 +257,12 @@
       "estimate": 2.44,
       "actual": 0.7335,
       "surprise_pct": -69.94
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 5.11,
+      "actual": 5.9402,
+      "surprise_pct": 16.25
     }
   ],
   "insiders": [

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T23:38:39.511Z",
+  "updated_at": "2026-11-18T23:09:46.292Z",
   "source": "Yahoo Finance",
   "symbol": "SNEX",
   "summary": "StoneX Group Inc. operates as a global financial services network that connects companies, organizations, traders, and investors to a market ecosystem in the United States, Europe, South America, the Middle East, Asia, and internationally. The company operates through four segments: Commercial, Institutional, Self-Directed/Retail, and Payments. The Commercial segment provides risk management and hedging, voice brokerage, market intelligence, physical trading, and commodity financing, marketing, procurement, logistics, and price management services; and engages in the risk management and hedging services, execution and clearing of exchange-traded and OTC products. This segment also acts as an institutional dealer in fixed income securities to serve asset managers, commercial bank trust and investment departments, broker-dealers, and insurance companies; and engages in asset management business. The Self-Directed/Retail segment provides trading services and solutions in the global financial markets, including spot foreign exchange, precious metals trading, contracts for differences, and spread bets; and wealth management services, as well as offering physical gold and other precious metals in various forms and denominations through Stonexbullion.com. The company was formerly known as INTL FCStone Inc. and changed its name to StoneX Group Inc. in July 2020. StoneX Group Inc. was founded in 1924 and is headquartered in New York, New York.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-18",
   "earnings_estimated": false,
   "earnings_call": "2026-11-19",
-  "eps_estimate": 0.92,
+  "eps_estimate": null,
   "analysts": {
     "strong_buy": 0,
     "buy": 1,
@@ -24,12 +24,6 @@
   "target_low": 66,
   "target_analysts": 1,
   "statements": [
-    {
-      "year": "2022",
-      "revenue": 66036000000,
-      "net": 207100000,
-      "margin": 0.3
-    },
     {
       "year": "2023",
       "revenue": 60856100000,
@@ -47,14 +41,15 @@
       "revenue": 132378200000,
       "net": 305900000,
       "margin": 0.2
+    },
+    {
+      "year": "2026",
+      "revenue": 162443300000,
+      "net": 525400000,
+      "margin": 0.3
     }
   ],
   "quarterly": [
-    {
-      "q": "3Q2025",
-      "revenue": 0,
-      "earnings": 85700000
-    },
     {
       "q": "4Q2025",
       "revenue": 0,
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 0,
       "earnings": 127900000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 0,
+      "earnings": 84200000
     }
   ],
   "growth": {
-    "q0": 0.2827,
+    "q0": null,
     "q1": null,
-    "y0": 0.7303,
-    "y1": 0.0216
+    "y0": 0.1003,
+    "y1": 0.0634
   },
   "ratings": [
     {
@@ -182,14 +182,14 @@
   "insider_net": {
     "period": "6m",
     "buys": 36,
-    "sells": 32,
+    "sells": 31,
     "bought": 1758193,
-    "sold": 1641681,
-    "net_pct": 1
+    "sold": 1640181,
+    "net_pct": 1.1
   },
   "extras": {
     "beta": 0.631,
-    "enterprise_value": -8377798144,
+    "enterprise_value": -8385035264,
     "ev_ebitda": null,
     "ev_revenue": -0.054,
     "float_shares": 108866253,
@@ -202,14 +202,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 633,
+  "inst_count": 634,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.67111,
-      "actual": 0.71724,
-      "surprise_pct": 6.87
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.88,
@@ -227,6 +221,12 @@
       "estimate": 0.82,
       "actual": 1.0384,
       "surprise_pct": 26.63
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.92,
+      "actual": 0.6802,
+      "surprise_pct": -26.07
     }
   ],
   "insiders": [
