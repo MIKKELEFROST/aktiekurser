@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18T23:09:45.617Z",
+  "updated_at": "2026-11-19T23:19:28.255Z",
   "source": "Yahoo Finance",
   "symbol": "GBDC",
   "summary": "Golub Capital BDC, Inc. (GBDC) is a Private Debt, business development company and operates as an externally managed closed-end non-diversified management investment company. It invests in debt and minority equity investments in middle-market companies that are, in most cases, sponsored by private equity investors. It typically invests in diversified consumer services, automobiles, healthcare technology, insurance, health care equipment and supplies, hotels, restaurants and leisure, healthcare providers and services, IT services and specialty retails. It seeks to invest in the United States. It primarily invests in first lien traditional senior debt, first lien one stop, junior debt and equity, senior secured, one stop, unitranche, second lien, subordinated and mezzanine loans of middle-market companies, and warrants.",
@@ -10,7 +10,7 @@
   "next_earnings": "2027-02-03",
   "earnings_estimated": true,
   "earnings_call": "2026-11-18",
-  "eps_estimate": 0.322,
+  "eps_estimate": 0.38,
   "analysts": {
     "strong_buy": 2,
     "buy": 4,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 7
   },
-  "target_mean": 13.625,
+  "target_mean": 13.45833,
   "target_high": 14,
-  "target_low": 13,
+  "target_low": 12,
   "target_analysts": 6,
   "statements": [
     {
@@ -72,10 +72,10 @@
     }
   ],
   "growth": {
-    "q0": -0.1297,
-    "q1": -0.0359,
-    "y0": -0.0543,
-    "y1": -0.052199997
+    "q0": 0.027,
+    "q1": -0.0175,
+    "y0": -0.0037,
+    "y1": -0.0558
   },
   "ratings": [
     {
@@ -153,57 +153,64 @@
     {
       "name": "STRS Ohio",
       "kind": "institution",
-      "pct": 6.94,
+      "pct": 6.98,
       "shares": 18032440,
       "date": "2026-09-30"
     },
     {
       "name": "HighTower Advisors, LLC",
       "kind": "institution",
-      "pct": 2.65,
+      "pct": 2.66,
       "shares": 6882620,
       "date": "2026-09-30"
     },
     {
       "name": "Van Eck Associates Corporation",
       "kind": "institution",
-      "pct": 1.69,
+      "pct": 1.7,
       "shares": 4383826,
       "date": "2026-09-30"
     },
     {
       "name": "UBS Group AG",
       "kind": "institution",
-      "pct": 1.51,
+      "pct": 1.52,
       "shares": 3931965,
       "date": "2026-09-30"
     },
     {
       "name": "Corient Private Wealth LP",
       "kind": "institution",
-      "pct": 1.5,
+      "pct": 1.51,
       "shares": 3900325,
       "date": "2026-09-30"
     },
     {
       "name": "Sage Mountain Advisors, LLC",
       "kind": "institution",
-      "pct": 1.46,
+      "pct": 1.47,
       "shares": 3787045,
       "date": "2026-09-30"
     },
     {
       "name": "OMERS Administration Corporation",
       "kind": "institution",
-      "pct": 1.44,
+      "pct": 1.45,
       "shares": 3744872,
       "date": "2026-09-30"
     },
     {
       "name": "Ares Management LLC",
       "kind": "institution",
-      "pct": 1.4,
+      "pct": 1.41,
       "shares": 3631015,
+      "date": "2026-09-30"
+    },
+    {
+      "name": "VanEck ETF Trust-VanEck BDC Income ETF",
+      "kind": "fond",
+      "pct": 1.33,
+      "shares": 3430593,
       "date": "2026-09-30"
     },
     {
@@ -211,13 +218,6 @@
       "kind": "institution",
       "pct": 1.32,
       "shares": 3422189,
-      "date": "2026-09-30"
-    },
-    {
-      "name": "VanEck ETF Trust-VanEck BDC Income ETF",
-      "kind": "fond",
-      "pct": 1.32,
-      "shares": 3430593,
       "date": "2026-09-30"
     }
   ],
@@ -230,10 +230,10 @@
     "net_pct": null
   },
   "extras": {
-    "beta": 0.444,
-    "enterprise_value": 7654137344,
+    "beta": null,
+    "enterprise_value": 7362861056,
     "ev_ebitda": null,
-    "ev_revenue": 9.559,
+    "ev_revenue": 9.567,
     "float_shares": null,
     "short_shares": 14386807,
     "short_pct_float": 5.71,
@@ -243,8 +243,8 @@
   },
   "ex_dividend": "2026-09-14",
   "dividend_date": null,
-  "payout_ratio": 2.1818,
-  "inst_count": 359,
+  "payout_ratio": 3.7297,
+  "inst_count": 360,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -293,8 +293,8 @@
     {
       "name": "GOLUB DAVID B",
       "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 15.13 per share.",
+      "kind": "buy",
+      "text": "Purchase at price 15.13 per share.",
       "value": 91687363,
       "shares": 6059971,
       "date": "2025-05-27"
@@ -302,8 +302,8 @@
     {
       "name": "GOLUB LAWRENCE E",
       "role": "Chairman of the Board",
-      "kind": "sell",
-      "text": "Sale at price 15.13 per share.",
+      "kind": "buy",
+      "text": "Purchase at price 15.13 per share.",
       "value": 91687363,
       "shares": 6059971,
       "date": "2025-05-27"
@@ -329,8 +329,8 @@
     {
       "name": "GOLUB DAVID B",
       "role": "Chief Executive Officer",
-      "kind": "buy",
-      "text": "Purchase at price 15.13 per share.",
+      "kind": "sell",
+      "text": "Sale at price 15.13 per share.",
       "value": 91687363,
       "shares": 6059971,
       "date": "2025-05-27"
@@ -338,8 +338,8 @@
     {
       "name": "GOLUB LAWRENCE E",
       "role": "Chairman of the Board",
-      "kind": "buy",
-      "text": "Purchase at price 15.13 per share.",
+      "kind": "sell",
+      "text": "Sale at price 15.13 per share.",
       "value": 91687363,
       "shares": 6059971,
       "date": "2025-05-27"

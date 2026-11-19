@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18T23:09:45.134Z",
+  "updated_at": "2026-11-19T23:19:27.439Z",
   "source": "Yahoo Finance",
   "symbol": "ATAT",
   "summary": "Atour Lifestyle Holdings Limited, through its subsidiaries, develops lifestyle brands in the People's Republic of China. The company operates hospitality and retail businesses; and provides hotel management services, including day-to-day management services for the hotels on behalf of franchisees, as well as sells hotel supplies and other products. It also operates travel agency. Atour Lifestyle Holdings Limited was incorporated in 2012 and is headquartered in Shanghai, China.",
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 21
   },
-  "target_mean": 49.531544,
-  "target_high": 60.59391,
-  "target_low": 42.918922,
+  "target_mean": 49.465416,
+  "target_high": 60.513012,
+  "target_low": 42.86162,
   "target_analysts": 19,
   "statements": [
     {
@@ -172,6 +172,13 @@
       "date": "2026-09-30"
     },
     {
+      "name": "NORGES BANK",
+      "kind": "institution",
+      "pct": 3.61,
+      "shares": 4029737,
+      "date": "2026-06-30"
+    },
+    {
       "name": "Bright Valley Capital Ltd",
       "kind": "institution",
       "pct": 3.4,
@@ -212,28 +219,21 @@
       "pct": 2.09,
       "shares": 2330914,
       "date": "2026-09-30"
-    },
-    {
-      "name": "Blackrock Inc.",
-      "kind": "institution",
-      "pct": 1.89,
-      "shares": 2104582,
-      "date": "2026-09-30"
     }
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 0,
-    "sells": 0,
-    "bought": 0,
-    "sold": null,
-    "net_pct": null
+    "buys": 1,
+    "sells": 2,
+    "bought": 106571,
+    "sold": 118429,
+    "net_pct": -0.1
   },
   "extras": {
     "beta": 0.672,
-    "enterprise_value": 148730928,
-    "ev_ebitda": 0.051,
-    "ev_revenue": 0.012,
+    "enterprise_value": 247340400,
+    "ev_ebitda": 0.085,
+    "ev_revenue": 0.02,
     "float_shares": 83890996,
     "short_shares": 2314525,
     "short_pct_float": 2.54,
@@ -271,7 +271,35 @@
       "surprise_pct": 9.71
     }
   ],
-  "insiders": [],
+  "insiders": [
+    {
+      "name": "WANG SHOUDONG",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 0.03 - 8.91 per share.",
+      "value": 669197,
+      "shares": 106571,
+      "date": "2026-11-13"
+    },
+    {
+      "name": "WANG SHOUDONG",
+      "role": "Chief Financial Officer",
+      "kind": "sell",
+      "text": "Sale at price 37.97 - 38.13 per share.",
+      "value": 2337767,
+      "shares": 61476,
+      "date": "2026-11-13"
+    },
+    {
+      "name": "GAO LIJUN",
+      "role": "Officer and Director",
+      "kind": "sell",
+      "text": "Sale at price 37.55 per share.",
+      "value": 2138659,
+      "shares": 56953,
+      "date": "2026-11-13"
+    }
+  ],
   "dividends": [
     {
       "date": "2023-09-05",

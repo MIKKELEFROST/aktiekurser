@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18T23:09:45.788Z",
+  "updated_at": "2026-11-19T23:19:28.488Z",
   "source": "Yahoo Finance",
   "symbol": "INTU",
   "summary": "Intuit Inc. provides financial management, payments and capital, compliance, and marketing products and services in the United States. The company operates in two segments: Global Business Solutions and Consumer. Its Global Business Solutions segment provides QuickBooks services, which include financial and business management online services, desktop software, payroll solutions, time tracking, merchant payment processing and bill pay solutions, checking accounts, and financing services for small and mid-market businesses; and Mailchimp, a marketing automation and customer relationship management. The Consumer segment provides TurboTax, a do-it-yourself and assisted income tax preparation products and services; Credit Karma, a personal finance solution that provides recommendations for credit card, home, auto, and personal loan, and insurance products; online savings and checking accounts; and access to its credit scores and reports, credit and identity monitoring, credit report dispute, credit building tools, debt pay-down assistance, credit card rewards optimization, and connected account capabilities. This segment also offers ProTax offerings which include Lacerte, ProSeries, and ProFile desktop tax-preparation software products; and ProConnect Tax Online, electronic tax filing service, and bank products and related services. It sells products and services through direct sales channels, multichannel shop-and-buy experiences, online application stores, and partner and other channels. Intuit Inc. has a strategic collaboration with Aprio, LLP to develop AI-powered solutions designed to help identify tax planning opportunities, benchmark business performance, improve financial visibility, and support more informed decision-making across industries, including construction, dental, wealth management, and tax. Intuit Inc. was founded in 1983 and is headquartered in Mountain View, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-19",
   "earnings_estimated": false,
   "earnings_call": "2026-11-19",
-  "eps_estimate": 2.6409,
+  "eps_estimate": 3.93521,
   "analysts": {
     "strong_buy": 5,
     "buy": 15,
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 3885000000,
-      "earnings": 446000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 4651000000,
       "earnings": 693000000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 4354000000,
       "earnings": 363000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 4354000000,
+      "earnings": 695000000
     }
   ],
   "growth": {
-    "q0": -0.2093,
-    "q1": -0.051799998,
+    "q0": -0.051799998,
+    "q1": 0.0515,
     "y0": -0.019,
     "y1": 0.1306
   },
@@ -214,11 +214,11 @@
       "date": "2026-09-30"
     },
     {
-      "name": "Morgan Stanley",
+      "name": "NORGES BANK",
       "kind": "institution",
-      "pct": 1.61,
-      "shares": 4296344,
-      "date": "2026-09-30"
+      "pct": 2.01,
+      "shares": 5375785,
+      "date": "2026-06-30"
     }
   ],
   "insider_net": {
@@ -231,10 +231,10 @@
   },
   "extras": {
     "beta": 0.921,
-    "enterprise_value": 86947635200,
-    "ev_ebitda": 12.695,
-    "ev_revenue": 4.054,
-    "float_shares": 260870438,
+    "enterprise_value": 84930002944,
+    "ev_ebitda": 12.4,
+    "ev_revenue": 3.96,
+    "float_shares": 260942592,
     "short_shares": 8871536,
     "short_pct_float": 3.82,
     "short_ratio": 2.7,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-10-08",
   "dividend_date": null,
   "payout_ratio": 0.2916,
-  "inst_count": 2508,
+  "inst_count": 2513,
   "eps_history": [
-    {
-      "quarter": "2025-10-31",
-      "estimate": 3.09288,
-      "actual": 3.34,
-      "surprise_pct": 7.99
-    },
     {
       "quarter": "2026-01-31",
       "estimate": 3.6826,
@@ -269,6 +263,12 @@
       "estimate": 3.58739,
       "actual": 4.03,
       "surprise_pct": 12.34
+    },
+    {
+      "quarter": "2026-10-31",
+      "estimate": 2.6409,
+      "actual": 2.91,
+      "surprise_pct": 10.19
     }
   ],
   "insiders": [
@@ -288,6 +288,15 @@
       "text": null,
       "value": null,
       "shares": 1396,
+      "date": "2026-10-01"
+    },
+    {
+      "name": "COZZENS TYLER RALPH",
+      "role": "General Counsel",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 251,
       "date": "2026-10-01"
     },
     {
@@ -318,15 +327,6 @@
       "date": "2026-10-01"
     },
     {
-      "name": "COZZENS TYLER RALPH",
-      "role": "General Counsel",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 251,
-      "date": "2026-10-01"
-    },
-    {
       "name": "GOODARZI SASAN K",
       "role": "Chief Executive Officer",
       "kind": "other",
@@ -354,12 +354,12 @@
       "date": "2026-09-01"
     },
     {
-      "name": "AUJLA SANDEEP S",
-      "role": "Chief Financial Officer",
+      "name": "COZZENS TYLER RALPH",
+      "role": "General Counsel",
       "kind": "other",
       "text": null,
       "value": null,
-      "shares": 7215,
+      "shares": 1859,
       "date": "2026-09-01"
     }
   ],

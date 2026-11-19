@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18T23:09:46.180Z",
+  "updated_at": "2026-11-19T23:19:29.073Z",
   "source": "Yahoo Finance",
   "symbol": "RERE",
   "summary": "ATRenew Inc., together with its subsidiaries, sell pre-owned consumer electronics through its online platforms and other channels in the People's Republic of China. It provides services to third-party merchants to sell the products through its platforms. ATRenew Inc. was formerly known as AiHuiShou International Co. Ltd. and changed its name to ATRenew Inc. November 2021. The company was incorporated in 2011 and is headquartered in Shanghai, the People's Republic of China.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-19",
   "earnings_estimated": false,
   "earnings_call": "2026-11-19",
-  "eps_estimate": 0.709,
+  "eps_estimate": 0.84318,
   "analysts": {
     "strong_buy": 0,
     "buy": 4,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 4
   },
-  "target_mean": 6.637527,
-  "target_high": 8.082192,
-  "target_low": 5.509193,
+  "target_mean": 6.6286654,
+  "target_high": 8.071402,
+  "target_low": 5.5018377,
   "target_analysts": 4,
   "statements": [
     {
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 5149155000,
-      "earnings": 90817000
-    },
-    {
       "q": "4Q2025",
       "revenue": 6254191000,
       "earnings": 130335000
@@ -69,11 +64,16 @@
       "q": "2Q2026",
       "revenue": 6609290000,
       "earnings": 129132000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 6452942000,
+      "earnings": 139549000
     }
   ],
   "growth": {
-    "q0": 0.4957,
-    "q1": 0.53290004,
+    "q0": 0.53290004,
+    "q1": 0.1402,
     "y0": 0.6165,
     "y1": 0.35880002
   },
@@ -182,9 +182,9 @@
   },
   "extras": {
     "beta": 0.462,
-    "enterprise_value": -257291472,
-    "ev_ebitda": -0.369,
-    "ev_revenue": -0.011,
+    "enterprise_value": -279045184,
+    "ev_ebitda": -0.4,
+    "ev_revenue": -0.012,
     "float_shares": 131711508,
     "short_shares": 1846991,
     "short_pct_float": 1.5,
@@ -195,14 +195,8 @@
   "ex_dividend": "2026-04-06",
   "dividend_date": null,
   "payout_ratio": 0.3557,
-  "inst_count": 89,
+  "inst_count": 90,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.431,
-      "actual": 0.47402,
-      "surprise_pct": 9.98
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.569,
@@ -220,6 +214,12 @@
       "estimate": 0.58239,
       "actual": 0.62808,
       "surprise_pct": 7.85
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.709,
+      "actual": 0.66701,
+      "surprise_pct": -5.92
     }
   ],
   "insiders": [
@@ -235,19 +235,19 @@
     {
       "name": "ZHU RUI",
       "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 4.00 per share.",
-      "value": 19048,
-      "shares": 4762,
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 15000,
       "date": "2026-06-10"
     },
     {
       "name": "ZHU RUI",
       "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 15000,
+      "kind": "sell",
+      "text": "Sale at price 4.00 per share.",
+      "value": 19048,
+      "shares": 4762,
       "date": "2026-06-10"
     },
     {

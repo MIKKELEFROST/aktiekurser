@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18T23:09:45.545Z",
+  "updated_at": "2026-11-19T23:19:28.139Z",
   "source": "Yahoo Finance",
   "symbol": "EXPD",
   "summary": "Expeditors International of Washington, Inc., together with its subsidiaries, provides logistics services in the Americas, North Asia, South Asia, Europe, and Middle East, Africa, and India. The company offers airfreight services, such as air freight consolidation and forwarding; ocean freight and ocean services, including ocean freight consolidation, direct ocean forwarding, and order management; customs brokerage and other services, import, intra-continental ground transportation and delivery, and warehousing and distribution services; and customs clearance, purchase order management, vendor consolidation, time-definite transportation services, temperature-controlled transit, cargo insurance, specialized cargo monitoring and tracking, and other logistics solutions. It also provides optimization, trade compliance consulting, cargo insurance, cargo security, and solutions. In addition, it acts as a freight consolidator or as an agent for the airline that carries the shipment. Further, the company provides ancillary services that include preparation of shipping and customs documentation, packing, crating, insurance services, and the preparation of documentation to comply with local export and import laws. The company was incorporated in 1979 and is headquartered in Bellevue, Washington.",
@@ -10,19 +10,19 @@
   "next_earnings": "2026-11-03",
   "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": 2.28943,
+  "eps_estimate": 2.531,
   "analysts": {
-    "strong_buy": 0,
+    "strong_buy": 1,
     "buy": 3,
-    "hold": 10,
-    "sell": 4,
-    "strong_sell": 1,
+    "hold": 9,
+    "sell": 3,
+    "strong_sell": 2,
     "total": 18
   },
-  "target_mean": 195.4,
+  "target_mean": 200.25,
   "target_high": 245,
-  "target_low": 100,
-  "target_analysts": 15,
+  "target_low": 115,
+  "target_analysts": 16,
   "statements": [
     {
       "year": "2022",
@@ -72,10 +72,10 @@
     }
   ],
   "growth": {
-    "q0": 0.53650004,
-    "q1": 0.1847,
-    "y0": 0.45349997,
-    "y1": 0.016
+    "q0": 0.6987,
+    "q1": 0.20899999,
+    "y0": 0.50009996,
+    "y1": 0.0286
   },
   "ratings": [
     {
@@ -223,18 +223,18 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 0,
-    "sells": 0,
-    "bought": 0,
-    "sold": null,
-    "net_pct": null
+    "buys": 1,
+    "sells": 1,
+    "bought": 1400,
+    "sold": 2500,
+    "net_pct": -0.1
   },
   "extras": {
     "beta": 1.068,
-    "enterprise_value": 24116119552,
-    "ev_ebitda": 16.971,
-    "ev_revenue": 1.82,
-    "float_shares": 128152668,
+    "enterprise_value": 23872100352,
+    "ev_ebitda": 16.799,
+    "ev_revenue": 1.802,
+    "float_shares": 128142339,
     "short_shares": 4880391,
     "short_pct_float": 4.36,
     "short_ratio": 4.16,
@@ -244,7 +244,7 @@
   "ex_dividend": "2026-12-01",
   "dividend_date": null,
   "payout_ratio": 0.2008,
-  "inst_count": 1417,
+  "inst_count": 1419,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -273,6 +273,15 @@
   ],
   "insiders": [
     {
+      "name": "EMMERT MARK A",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 192.13 per share.",
+      "value": 480325,
+      "shares": 2500,
+      "date": "2026-11-16"
+    },
+    {
       "name": "GULYAS DIANE H.",
       "role": "Director",
       "kind": "other",
@@ -288,6 +297,24 @@
       "text": null,
       "value": null,
       "shares": 1738,
+      "date": "2026-05-07"
+    },
+    {
+      "name": "HACKETT DAVID A",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 146,
+      "date": "2026-05-07"
+    },
+    {
+      "name": "SCHOONOVER GABE O",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 149,
       "date": "2026-05-07"
     },
     {
@@ -327,39 +354,12 @@
       "date": "2026-05-07"
     },
     {
-      "name": "HACKETT DAVID A",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 146,
-      "date": "2026-05-07"
-    },
-    {
-      "name": "SCHOONOVER GABE O",
-      "role": "Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 149,
-      "date": "2026-05-07"
-    },
-    {
       "name": "WALL DANIEL R.",
       "role": "Chief Executive Officer",
       "kind": "other",
       "text": null,
       "value": null,
       "shares": 9434,
-      "date": "2026-05-06"
-    },
-    {
-      "name": "DICKERMAN JEFFREY F",
-      "role": "General Counsel",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 987,
       "date": "2026-05-06"
     }
   ],

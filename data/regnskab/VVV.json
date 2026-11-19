@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18T23:09:46.472Z",
+  "updated_at": "2026-11-19T23:19:29.525Z",
   "source": "Yahoo Finance",
   "symbol": "VVV",
   "summary": "Valvoline Inc. provides automotive preventive maintenance through its retail stores in the United States and Canada. The company offers oil changes; battery, bulb, and wiper replacements; tire rotations; and other maintenance services. It also operates and franchises service centers and retail locations. The company was founded in 1866 and is headquartered in Lexington, Kentucky.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-19",
   "earnings_estimated": false,
   "earnings_call": "2026-11-19",
-  "eps_estimate": 0.42262,
+  "eps_estimate": 0.34661,
   "analysts": {
     "strong_buy": 2,
     "buy": 10,
@@ -24,12 +24,6 @@
   "target_low": 34,
   "target_analysts": 16,
   "statements": [
-    {
-      "year": "2022",
-      "revenue": 1236100000,
-      "net": null,
-      "margin": null
-    },
     {
       "year": "2023",
       "revenue": 1443500000,
@@ -47,14 +41,15 @@
       "revenue": 1710300000,
       "net": 210700000,
       "margin": 12.3
+    },
+    {
+      "year": "2026",
+      "revenue": 2064300000,
+      "net": 85900000,
+      "margin": 4.2
     }
   ],
   "quarterly": [
-    {
-      "q": "3Q2025",
-      "revenue": 453800000,
-      "earnings": 25000000
-    },
     {
       "q": "4Q2025",
       "revenue": 461800000,
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 544600000,
       "earnings": 64500000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 554100000,
+      "earnings": 9400000
     }
   ],
   "growth": {
-    "q0": -0.0608,
-    "q1": -0.063200004,
-    "y0": 0.1094,
-    "y1": 0.1103
+    "q0": -0.063200004,
+    "q1": 0.0335,
+    "y0": 0.112799995,
+    "y1": 0.26479998
   },
   "ratings": [
     {
@@ -223,18 +223,18 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 9,
+    "buys": 15,
     "sells": 2,
-    "bought": 36513,
+    "bought": 47575,
     "sold": 6551,
-    "net_pct": 7.7
+    "net_pct": 10.6
   },
   "extras": {
     "beta": 1.015,
-    "enterprise_value": 6113106944,
-    "ev_ebitda": 12.704,
-    "ev_revenue": 3.113,
-    "float_shares": 127074796,
+    "enterprise_value": 6152658944,
+    "ev_ebitda": 12.786,
+    "ev_revenue": 3.133,
+    "float_shares": 127060762,
     "short_shares": 14150675,
     "short_pct_float": 12.41,
     "short_ratio": 5.26,
@@ -244,14 +244,8 @@
   "ex_dividend": "2022-12-01",
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 565,
+  "inst_count": 566,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.46862,
-      "actual": 0.45,
-      "surprise_pct": -3.97
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.32567,
@@ -269,9 +263,69 @@
       "estimate": 0.50185,
       "actual": 0.57,
       "surprise_pct": 13.58
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.42262,
+      "actual": 0.42,
+      "surprise_pct": -0.62
     }
   ],
   "insiders": [
+    {
+      "name": "CALDWELL JONATHAN L",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 874,
+      "date": "2026-11-16"
+    },
+    {
+      "name": "FLEES LORI ANN",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 6700,
+      "date": "2026-11-16"
+    },
+    {
+      "name": "FULCHER LINNE",
+      "role": "Chief Operating Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 1340,
+      "date": "2026-11-16"
+    },
+    {
+      "name": "WORSHAM ADAM C",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 604,
+      "date": "2026-11-16"
+    },
+    {
+      "name": "DENNY JORDAN M.",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 404,
+      "date": "2026-11-16"
+    },
+    {
+      "name": "O'DANIEL JULIE MARIE",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 1140,
+      "date": "2026-11-16"
+    },
     {
       "name": "O'DANIEL JULIE MARIE",
       "role": "Officer",
@@ -307,60 +361,6 @@
       "value": 0,
       "shares": 3527,
       "date": "2026-11-12"
-    },
-    {
-      "name": "WORSHAM ADAM C",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 1588,
-      "date": "2026-11-12"
-    },
-    {
-      "name": "DENNY JORDAN M.",
-      "role": "Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 0.00 per share.",
-      "value": 0,
-      "shares": 530,
-      "date": "2026-11-12"
-    },
-    {
-      "name": "WORSHAM ADAM C",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 2573,
-      "date": "2026-09-02"
-    },
-    {
-      "name": "O'DANIEL JULIE MARIE",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 33.82 per share.",
-      "value": 125116,
-      "shares": 3700,
-      "date": "2026-08-21"
-    },
-    {
-      "name": "DENNY JORDAN M.",
-      "role": "Officer",
-      "kind": "buy",
-      "text": "Purchase at price 33.20 per share.",
-      "value": 49999,
-      "shares": 1506,
-      "date": "2026-08-12"
-    },
-    {
-      "name": "CALDWELL JONATHAN L",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 40.00 per share.",
-      "value": 114040,
-      "shares": 2851,
-      "date": "2026-06-25"
     }
   ],
   "dividends": [

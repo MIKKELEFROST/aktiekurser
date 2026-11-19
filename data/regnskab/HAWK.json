@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18T23:09:45.686Z",
+  "updated_at": "2026-11-19T23:19:28.350Z",
   "source": "Yahoo Finance",
   "symbol": "HAWK",
   "summary": "HawkEye 360, Inc. operates as a space-enabled defense technology company in the United States. The company offers a shareable, battlefield-proven RF intelligence platform and database for warfighters during varied cycles of geopolitical volatility. The company's solutions include customized SIGINT solutions including hardware, algorithms, and software capabilities; monitoring maritime activity in a customer's regional domain; tracking military radar and air defense systems; tracking extremist group communications, movement, and activity; maintaining border security and providing tactical ISR on battlefield environments; ensuring navigational integrity of GNSS; and core signal processing algorithms used in national government SIGINT systems. The company designs, manufactures, owns, and operates a global constellation of satellites that collect data in proprietary formations. It also uses end-to-end signal processing algorithms to detect and characterize a wide set of emitter types, including radars, jammers, beacons, and mobile radio devices. Additionally, it provides proprietary analytics and insights to identify, track, analyze, and predict specific emitters, converting data into insights for our intelligence partners. The company caters to the United States Government defense, intelligence, and national security agencies, as well as allied international governments. The company has a strategic collaboration with ERA a.s. HawkEye 360, Inc. was incorporated in 2015 and is based in Herndon, Virginia.",
@@ -55,13 +55,6 @@
     "y1": 4.1349
   },
   "ratings": [
-    {
-      "date": "2026-11-13",
-      "firm": "Piper Sandler",
-      "from": "Overweight",
-      "to": "Overweight",
-      "action": "main"
-    },
     {
       "date": "2026-10-28",
       "firm": "RBC Capital",
@@ -123,6 +116,13 @@
       "firm": "Raymond James",
       "from": null,
       "to": "Strong Buy",
+      "action": "init"
+    },
+    {
+      "date": "2026-06-01",
+      "firm": "William Blair",
+      "from": null,
+      "to": "Outperform",
       "action": "init"
     }
   ],
@@ -200,18 +200,18 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 8,
-    "sells": 3,
-    "bought": 145002,
-    "sold": 85734,
-    "net_pct": 0.3
+    "buys": 9,
+    "sells": 4,
+    "bought": 212138,
+    "sold": 108734,
+    "net_pct": 0.5
   },
   "extras": {
     "beta": null,
-    "enterprise_value": 1357947776,
-    "ev_ebitda": 528.59,
-    "ev_revenue": 6.972,
-    "float_shares": 68747456,
+    "enterprise_value": 1350002304,
+    "ev_ebitda": 525.497,
+    "ev_revenue": 6.931,
+    "float_shares": 73721268,
     "short_shares": 2955553,
     "short_pct_float": 3.02,
     "short_ratio": 1.93,
@@ -221,7 +221,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": null,
-  "inst_count": 183,
+  "inst_count": 184,
   "eps_history": [
     {
       "quarter": "2026-03-31",
@@ -243,6 +243,15 @@
     }
   ],
   "insiders": [
+    {
+      "name": "MONEY ARTHUR L",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 18.55 per share.",
+      "value": 426650,
+      "shares": 23000,
+      "date": "2026-11-17"
+    },
     {
       "name": "FOX ALEX J",
       "role": "Officer",
@@ -269,6 +278,15 @@
       "value": 24620,
       "shares": 1383,
       "date": "2026-11-16"
+    },
+    {
+      "name": "MONEY ARTHUR L",
+      "role": "Director",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 0.23 per share.",
+      "value": 15441,
+      "shares": 67136,
+      "date": "2026-11-13"
     },
     {
       "name": "BURNS WILLIAM JOSEPH",
@@ -314,24 +332,6 @@
       "value": 118000,
       "shares": 50000,
       "date": "2026-06-03"
-    },
-    {
-      "name": "MONEY ARTHUR L",
-      "role": "Director",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 0.01 per share.",
-      "value": 2,
-      "shares": 17045,
-      "date": "2026-05-08"
-    },
-    {
-      "name": "WINNEFELD JAMES A. JR.",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 6363,
-      "date": "2026-05-08"
     }
   ],
   "dividends": [],
