@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-11-19T23:19:28.810Z",
+  "updated_at": "2026-11-20T22:47:11.165Z",
   "source": "Yahoo Finance",
   "symbol": "NGVC",
   "summary": "Natural Grocers by Vitamin Cottage, Inc., together with its subsidiaries, retails natural and organic groceries, dietary supplements, and body care products in the United States. The company's stores offer natural and organic grocery products, such as organic produce; private label repackaged bulk products, including dried fruits, nuts, grains, granolas, teas, herbs, and spices, as well as peanut and almond butters; private label products comprising grocery staples, household products, bulk foods, and vitamins and dietary supplements, as well as organic eggs, organic flavored coffee, and organic mustard; dry, frozen, and canned groceries; meat and seafood products; dairy products, dairy substitutes, and eggs; prepared foods; bread and baked products; beverages; and beer, wine, and hard cider products. Its stores also provide name-brand supplements, as well as private label dietary supplements; body care products consisting of cosmetics, skin care, hair care, fragrance, and personal care products containing natural and organic ingredients; pet care and food products; household and general merchandise, including cleaning supplies, paper products, and dish and laundry soaps, as well as other common household products, such as diapers; and books and handouts. The company operates its retail stores under the Natural Grocers, Vitamin Cottage, Health Hotline, Natural Grocers by Vitamin Cottage trademark, as well as Vitamin Cottage Natural Grocers and Health Hotline trademarks. The company also offers science-based nutrition education programs to help customers make informed health and nutrition choices. The company was formerly known as Vitamin Cottage Natural Food Markets, Inc. and changed its name to Vitamin Cottage Natural Food Markets, Inc. in April 2012. Natural Grocers by Vitamin Cottage, Inc. was founded in 1955 and is headquartered in Lakewood, Colorado.",
   "industry": "Grocery Stores",
   "website": "https://www.naturalgrocers.com",
-  "employees": 3455,
+  "employees": null,
   "ceo": null,
-  "next_earnings": "2026-11-19",
-  "earnings_estimated": false,
+  "next_earnings": "2027-02-04",
+  "earnings_estimated": true,
   "earnings_call": "2026-11-19",
-  "eps_estimate": 0.56333,
+  "eps_estimate": 0.465,
   "analysts": {
     "strong_buy": 0,
     "buy": 4,
@@ -19,17 +19,11 @@
     "strong_sell": 0,
     "total": 4
   },
-  "target_mean": 42.25,
+  "target_mean": 41,
   "target_high": 54,
   "target_low": 35,
   "target_analysts": 4,
   "statements": [
-    {
-      "year": "2020",
-      "revenue": 1036842000,
-      "net": null,
-      "margin": null
-    },
     {
       "year": "2021",
       "revenue": 1055516000,
@@ -47,14 +41,15 @@
       "revenue": 1330836000,
       "net": null,
       "margin": null
+    },
+    {
+      "year": "2026",
+      "revenue": 1355228000,
+      "net": 47132000,
+      "margin": 3.5
     }
   ],
   "quarterly": [
-    {
-      "q": "2Q2024",
-      "revenue": 0,
-      "earnings": 0
-    },
     {
       "q": "2Q2025",
       "revenue": 0,
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 334739000,
       "earnings": 11073000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 347534000,
+      "earnings": 11291000
     }
   ],
   "growth": {
-    "q0": 0.1046,
-    "q1": 0.1224,
-    "y0": 0.0533,
-    "y1": 0.1028
+    "q0": -0.051,
+    "q1": -0.0517,
+    "y0": 0.053600002,
+    "y1": 0.128
   },
   "ratings": [
     {
@@ -230,11 +230,11 @@
     "net_pct": 0
   },
   "extras": {
-    "beta": 1.247,
-    "enterprise_value": 946118144,
-    "ev_ebitda": 9.89,
-    "ev_revenue": 0.704,
-    "float_shares": 12552614,
+    "beta": null,
+    "enterprise_value": 913916992,
+    "ev_ebitda": 9.529,
+    "ev_revenue": 0.674,
+    "float_shares": 9434849,
     "short_shares": 942809,
     "short_pct_float": 9.85,
     "short_ratio": 9.08,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-08-17",
   "dividend_date": null,
   "payout_ratio": 0.278,
-  "inst_count": 229,
+  "inst_count": 230,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.42,
-      "actual": 0.51,
-      "surprise_pct": 21.43
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.46,
@@ -269,6 +263,12 @@
       "estimate": 0.52,
       "actual": 0.48,
       "surprise_pct": -7.69
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.56333,
+      "actual": 0.4878,
+      "surprise_pct": -13.41
     }
   ],
   "insiders": [
@@ -300,15 +300,6 @@
       "date": "2026-05-29"
     },
     {
-      "name": "ROONEY DAVID C.",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 1532,
-      "date": "2026-03-05"
-    },
-    {
       "name": "BUFFA SANDRA M",
       "role": "Director",
       "kind": "other",
@@ -319,6 +310,15 @@
     },
     {
       "name": "CERKOVNIK EDWARD",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 1532,
+      "date": "2026-03-05"
+    },
+    {
+      "name": "ROONEY DAVID C.",
       "role": "Director",
       "kind": "other",
       "text": null,

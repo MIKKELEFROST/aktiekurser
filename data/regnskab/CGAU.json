@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-19T23:19:27.701Z",
+  "updated_at": "2026-11-20T22:47:10.453Z",
   "source": "Yahoo Finance",
   "symbol": "CGAU",
   "summary": "Centerra Gold Inc. engages in the operation, development, exploration, and acquisition of gold and copper properties in North America, Turkey, and internationally. The company also owns and operates a molybdenum business unit, which includes a metallurgical processing facility and two primary molybdenum properties. The company was incorporated in 2002 and is headquartered in Toronto, Canada.",
@@ -15,9 +15,9 @@
     "strong_buy": 1,
     "buy": 4,
     "hold": 4,
-    "sell": 0,
+    "sell": 1,
     "strong_sell": 1,
-    "total": 10
+    "total": 11
   },
   "target_mean": 16,
   "target_high": 16,
@@ -74,8 +74,8 @@
   "growth": {
     "q0": -0.1174,
     "q1": 0.1269,
-    "y0": 0.4034,
-    "y1": 0.2736
+    "y0": 0.41919997,
+    "y1": 0.2595
   },
   "ratings": [
     {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 1.62,
-    "enterprise_value": 3280774656,
-    "ev_ebitda": 3.646,
-    "ev_revenue": 1.794,
+    "enterprise_value": 3114364928,
+    "ev_ebitda": 3.461,
+    "ev_revenue": 1.703,
     "float_shares": 192872782,
     "short_shares": 4579979,
     "short_pct_float": null,
@@ -330,18 +330,18 @@
       "name": "Centerra Gold Inc.",
       "role": "Issuer",
       "kind": "other",
-      "text": "Redemption, retraction, cancelation, repurchase at price 19.91 per share.",
-      "value": 320518,
-      "shares": 16100,
+      "text": null,
+      "value": null,
+      "shares": 77700,
       "date": "2026-10-30"
     },
     {
       "name": "Centerra Gold Inc.",
       "role": "Issuer",
       "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 77700,
+      "text": "Redemption, retraction, cancelation, repurchase at price 19.91 per share.",
+      "value": 320518,
+      "shares": 16100,
       "date": "2026-10-30"
     },
     {
@@ -507,6 +507,10 @@
     {
       "date": "2026-08-19",
       "amount": 0.05
+    },
+    {
+      "date": "2026-11-19",
+      "amount": 0.049
     }
   ],
   "splits": []

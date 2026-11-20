@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-19T23:19:28.230Z",
+  "updated_at": "2026-11-20T22:47:10.740Z",
   "source": "Yahoo Finance",
   "symbol": "FSLY",
   "summary": "Fastly, Inc. operates an edge cloud platform for processing, serving, and securing its customer's applications in the United States, the Asia Pacific, Europe, and internationally. The edge cloud is a category of Infrastructure as a Service that enables developers to build, secure, and deliver digital experiences at the edge of the internet. The company offers network services to speed up and optimize the delivery of web and application traffic; content delivery network, such as dynamic site acceleration, origin shield, instant purge, surrogate keys, programmatic control, content compression, reliability features, fanout, domainr, modern protocols and performance services; staging environment; and video/ streaming solutions and services, including live streaming, live event monitoring, video on demand, cache reservation, and media shield. It also provides security solutions, such as DDoS protection, next-gen WAF, bot management, API and ATO protection, advanced rate limiting, privacy, and compliance services; load balancing; image optimization; and origin connect. In addition, the company offers professional services comprising managed and response security services; managed CDN; and support plans services. It serves customers operating in ecommerce, streaming media, gaming, digital publishing, and high tech to financial services industries. The company was formerly known as SkyCache, Inc. and changed its name to Fastly, Inc. in May 2012. Fastly, Inc. was incorporated in 2011 and is headquartered in San Francisco, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-04",
   "earnings_estimated": false,
   "earnings_call": "2026-11-04",
-  "eps_estimate": 0.17264,
+  "eps_estimate": 0.17106,
   "analysts": {
     "strong_buy": 1,
     "buy": 5,
@@ -72,10 +72,10 @@
     }
   ],
   "growth": {
-    "q0": 0.4387,
+    "q0": 0.4255,
     "q1": 0.1425,
-    "y0": 3.8265,
-    "y1": 0.1437
+    "y0": 3.7688,
+    "y1": 0.1576
   },
   "ratings": [
     {
@@ -226,14 +226,14 @@
     "buys": 8,
     "sells": 44,
     "bought": 69707,
-    "sold": 1198674,
-    "net_pct": -13.5
+    "sold": 1261689,
+    "net_pct": -14.2
   },
   "extras": {
     "beta": 0.187,
-    "enterprise_value": 2930800896,
-    "ev_ebitda": -119.264,
-    "ev_revenue": 4.075,
+    "enterprise_value": 2763152896,
+    "ev_ebitda": -112.442,
+    "ev_revenue": 3.842,
     "float_shares": 154413480,
     "short_shares": 19426907,
     "short_pct_float": 13.98,
@@ -244,7 +244,7 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": null,
-  "inst_count": 462,
+  "inst_count": 463,
   "eps_history": [
     {
       "quarter": "2025-12-31",
@@ -273,13 +273,40 @@
   ],
   "insiders": [
     {
+      "name": "WONG RICHARD",
+      "role": "Chief Financial Officer",
+      "kind": "sell",
+      "text": "Sale at price 16.01 - 16.20 per share.",
+      "value": 875688,
+      "shares": 54207,
+      "date": "2026-11-18"
+    },
+    {
+      "name": "BERGMAN ARTUR",
+      "role": "Chief Technology Officer",
+      "kind": "sell",
+      "text": "Sale at price 16.20 - 17.99 per share.",
+      "value": 1233450,
+      "shares": 72683,
+      "date": "2026-11-18"
+    },
+    {
       "name": "COMPTON CHARLES LACEY III",
       "role": "Chief Executive Officer",
       "kind": "sell",
-      "text": "Sale at price 24.98 per share.",
-      "value": 223346,
-      "shares": 8941,
-      "date": "2026-10-26"
+      "text": "Sale at price 16.20 - 18.10 per share.",
+      "value": 931841,
+      "shares": 55728,
+      "date": "2026-11-18"
+    },
+    {
+      "name": "LOVETT SCOTT R",
+      "role": "Officer",
+      "kind": "sell",
+      "text": "Sale at price 16.20 per share.",
+      "value": 239517,
+      "shares": 14785,
+      "date": "2026-11-17"
     },
     {
       "name": "BERGMAN ARTUR",
@@ -288,6 +315,15 @@
       "text": "Sale at price 24.60 - 25.61 per share.",
       "value": 943620,
       "shares": 37039,
+      "date": "2026-10-26"
+    },
+    {
+      "name": "COMPTON CHARLES LACEY III",
+      "role": "Chief Executive Officer",
+      "kind": "sell",
+      "text": "Sale at price 24.98 per share.",
+      "value": 223346,
+      "shares": 8941,
       "date": "2026-10-26"
     },
     {
@@ -325,42 +361,6 @@
       "value": 2121949,
       "shares": 77046,
       "date": "2026-09-22"
-    },
-    {
-      "name": "LOVETT SCOTT R",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 23.56 - 25.38 per share.",
-      "value": 1030529,
-      "shares": 41815,
-      "date": "2026-09-17"
-    },
-    {
-      "name": "FORD JEFFREY",
-      "role": "Officer",
-      "kind": "sell",
-      "text": "Sale at price 23.57 - 25.37 per share.",
-      "value": 1129538,
-      "shares": 45832,
-      "date": "2026-09-17"
-    },
-    {
-      "name": "BERGMAN ARTUR",
-      "role": "Chief Technology Officer",
-      "kind": "sell",
-      "text": "Sale at price 25.30 per share.",
-      "value": 55660,
-      "shares": 2200,
-      "date": "2026-09-17"
-    },
-    {
-      "name": "BERGMAN ARTUR",
-      "role": "Chief Technology Officer",
-      "kind": "sell",
-      "text": "Sale at price 23.60 - 25.14 per share.",
-      "value": 825151,
-      "shares": 33579,
-      "date": "2026-09-15"
     }
   ],
   "dividends": [],

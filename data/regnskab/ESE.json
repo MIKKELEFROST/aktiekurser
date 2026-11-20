@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-11-19T23:19:28.105Z",
+  "updated_at": "2026-11-20T22:47:10.658Z",
   "source": "Yahoo Finance",
   "symbol": "ESE",
   "summary": "ESCO Technologies Inc. provides engineered components and systems for aviation, navy, defense, and industrial customers. The Aerospace & Defense segment designs and manufactures specialty filtration products, including hydraulic filter elements and fluid control devices used in commercial and defense aerospace applications; miniature electro-explosive devices for military aircraft ejection seats and missile arming devices; manufactures and sells mission-critical bushings, pins, sleeves, and precision-tolerance machined components for landing gear, rotor heads, engine mounts, flight controls, and actuation systems for the aerospace and defense industries; designs, develops and manufactures elastomeric-based signature reduction solutions for U.S. naval vessels; and provides mission-critical signature and power management solutions. The Utility Solutions Group segment develops, manufactures, and delivers diagnostic testing solutions; and designs and manufactures decision support tools for the renewable energy industry, primarily wind and solar. The RF Test & Measurement segment designs and manufactures products and systems to measure and control RF energy for research and development, regulatory compliance, and medical and security applications; and turnkey systems, such as RF test facilities and measurement systems, acoustic test enclosures, RF and magnetically shielded rooms, and secure communication facilities. This segment also supplies RF absorptive materials, filters, antennas, field probes, test cells, proprietary measurement software, and other test accessories; and offers calibration and product tests, feedthrough capacitors, high current power, telephone, data and control line filters, and high-altitude electromagnetic protection filters. It distributes its products through distributors, sales representatives, direct sales teams, and in-house sales personnel. The company was incorporated in 1990 and is based in Saint Louis, Missouri.",
   "industry": "Scientific & Technical Instruments",
   "website": "https://www.escotechnologies.com",
-  "employees": 3359,
+  "employees": null,
   "ceo": "Mr. Bryan H. Sayler",
-  "next_earnings": "2026-11-19",
-  "earnings_estimated": false,
+  "next_earnings": "2027-02-04",
+  "earnings_estimated": true,
   "earnings_call": "2026-11-19",
-  "eps_estimate": 2.59668,
+  "eps_estimate": 1.7866,
   "analysts": {
     "strong_buy": 2,
     "buy": 2,
@@ -24,12 +24,6 @@
   "target_low": 331,
   "target_analysts": 4,
   "statements": [
-    {
-      "year": "2022",
-      "revenue": 857502000,
-      "net": 82320000,
-      "margin": 9.6
-    },
     {
       "year": "2023",
       "revenue": 956033000,
@@ -47,14 +41,15 @@
       "revenue": 1095388000,
       "net": 299223000,
       "margin": 27.3
+    },
+    {
+      "year": "2026",
+      "revenue": 1322021000,
+      "net": 147249000,
+      "margin": 11.1
     }
   ],
   "quarterly": [
-    {
-      "q": "3Q2025",
-      "revenue": 352674000,
-      "earnings": 218652000
-    },
     {
       "q": "4Q2025",
       "revenue": 289659000,
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 339027000,
       "earnings": 32735000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 383994000,
+      "earnings": 51090000
     }
   ],
   "growth": {
-    "q0": 0.1193,
-    "q1": 0.0942,
-    "y0": 0.38729998,
-    "y1": 0.1024
+    "q0": 0.08939999,
+    "q1": 0.1004,
+    "y0": 0.12640001,
+    "y1": 0.17709999
   },
   "ratings": [
     {
@@ -230,11 +230,11 @@
     "net_pct": null
   },
   "extras": {
-    "beta": 1.054,
-    "enterprise_value": 5998335488,
-    "ev_ebitda": 19.422,
-    "ev_revenue": 4.647,
-    "float_shares": 20671907,
+    "beta": null,
+    "enterprise_value": 5758272512,
+    "ev_ebitda": 18.255,
+    "ev_revenue": 4.356,
+    "float_shares": 20733691,
     "short_shares": 501615,
     "short_pct_float": 2.65,
     "short_ratio": 1.86,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.0594,
   "inst_count": 601,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 2.135,
-      "actual": 2.32,
-      "surprise_pct": 8.67
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 1.32,
@@ -269,9 +263,42 @@
       "estimate": 2.11768,
       "actual": 2.2,
       "surprise_pct": 3.89
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 2.59668,
+      "actual": 2.67,
+      "surprise_pct": 2.82
     }
   ],
   "insiders": [
+    {
+      "name": "TUCKER CHRISTOPHER L.",
+      "role": "Chief Financial Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 6682,
+      "date": "2026-11-16"
+    },
+    {
+      "name": "SCHATZ DAVID M",
+      "role": "General Counsel",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 3545,
+      "date": "2026-11-16"
+    },
+    {
+      "name": "SAYLER BRYAN H",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 18278,
+      "date": "2026-11-16"
+    },
     {
       "name": "VALDEZ GLORIA L",
       "role": "Director",
@@ -334,33 +361,6 @@
       "value": 321602,
       "shares": 1349,
       "date": "2026-02-05"
-    },
-    {
-      "name": "HESS JANICE L.",
-      "role": "Director",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 204.97 per share.",
-      "value": 1152546,
-      "shares": 5623,
-      "date": "2025-12-01"
-    },
-    {
-      "name": "KHILNANI VINOD M",
-      "role": "Director",
-      "kind": "sell",
-      "text": "Sale at price 217.33 - 224.04 per share.",
-      "value": 702364,
-      "shares": 3216,
-      "date": "2025-11-26"
-    },
-    {
-      "name": "SAYLER BRYAN H",
-      "role": "Chief Executive Officer",
-      "kind": "sell",
-      "text": "Sale at price 220.00 per share.",
-      "value": 2152260,
-      "shares": 9783,
-      "date": "2025-11-26"
     }
   ],
   "dividends": [

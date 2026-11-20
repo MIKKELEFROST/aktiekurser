@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-19T23:19:28.252Z",
+  "updated_at": "2026-11-20T22:47:10.753Z",
   "source": "Yahoo Finance",
   "symbol": "GAP",
   "summary": "The Gap, Inc. operates as an apparel retail company in the United States, Canada, Japan, Taiwan, and internationally. The company offers apparel, accessories, and personal care products for men, women, and children under the Old Navy, Gap, Banana Republic, and Athleta brands. The company offers its products through company-operated stores, franchise stores, websites, and third-party arrangements, as well as licensing partnerships. It has franchise agreements to operate Old Navy, Gap, Banana Republic, and Athleta in Asia, Europe, Latin America, the Middle East, and Africa. The Gap, Inc. was incorporated in 1969 and is headquartered in San Francisco, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-19",
   "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": 0.7803,
+  "eps_estimate": 0.5982,
   "analysts": {
     "strong_buy": 1,
     "buy": 7,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 22
   },
-  "target_mean": 26.26111,
-  "target_high": 42,
-  "target_low": 21,
+  "target_mean": 24.21111,
+  "target_high": 36,
+  "target_low": 20,
   "target_analysts": 18,
   "statements": [
     {
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 3942000000,
-      "earnings": 236000000
-    },
-    {
       "q": "4Q2025",
       "revenue": 4236000000,
       "earnings": 171000000
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 3651000000,
       "earnings": 501000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 4011000000,
+      "earnings": 311000000
     }
   ],
   "growth": {
-    "q0": 0.2585,
-    "q1": 0.5883,
-    "y0": 0.12529999,
-    "y1": 0.0915
+    "q0": 0.32930002,
+    "q1": 0.10609999,
+    "y0": 0.0872,
+    "y1": 0.0884
   },
   "ratings": [
     {
@@ -223,18 +223,18 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 12,
+    "buys": 13,
     "sells": 3,
-    "bought": 705367,
+    "bought": 711604,
     "sold": 1027538,
-    "net_pct": -0.3
+    "net_pct": -0.2
   },
   "extras": {
-    "beta": 2.062,
-    "enterprise_value": 10204199936,
-    "ev_ebitda": 6.951,
-    "ev_revenue": 0.666,
-    "float_shares": 201249687,
+    "beta": null,
+    "enterprise_value": 9415079936,
+    "ev_ebitda": 4.172,
+    "ev_revenue": 0.612,
+    "float_shares": 201667840,
     "short_shares": 23806271,
     "short_pct_float": 12.64,
     "short_ratio": 4.54,
@@ -246,12 +246,6 @@
   "payout_ratio": 0.2048,
   "inst_count": 689,
   "eps_history": [
-    {
-      "quarter": "2025-10-31",
-      "estimate": 0.58792,
-      "actual": 0.62,
-      "surprise_pct": 5.46
-    },
     {
       "quarter": "2026-01-31",
       "estimate": 0.45692,
@@ -269,9 +263,24 @@
       "estimate": 0.48201,
       "actual": 0.52,
       "surprise_pct": 7.88
+    },
+    {
+      "quarter": "2026-10-31",
+      "estimate": 0.7803,
+      "actual": 0.82,
+      "surprise_pct": 5.09
     }
   ],
   "insiders": [
+    {
+      "name": "GRUBER JULIE GROLLMUS",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 6237,
+      "date": "2026-11-17"
+    },
     {
       "name": "GRUBER JULIE GROLLMUS",
       "role": "Officer",
@@ -347,15 +356,6 @@
     {
       "name": "FISHER ROBERT J.",
       "role": "Director and Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 20779,
-      "date": "2026-06-30"
-    },
-    {
-      "name": "SHATTUCK MAYO ADAMS III",
-      "role": "Director",
       "kind": "other",
       "text": null,
       "value": null,
