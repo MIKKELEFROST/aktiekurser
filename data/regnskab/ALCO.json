@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20T22:47:10.205Z",
+  "updated_at": "2026-11-24T03:01:32.442Z",
   "source": "Yahoo Finance",
   "symbol": "ALCO",
   "summary": "Alico, Inc., together with its subsidiaries, operates as an agribusiness and land management company in the United States. It engages in the grazing and hunting leasing, management, and/or conservation of unimproved native pastureland, and activities related to rock mining royalties and other business; and owning or leasing of improved farmland. The company was incorporated in 1960 and is based in Fort Myers, Florida.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-23",
   "earnings_estimated": false,
   "earnings_call": "2026-11-24",
-  "eps_estimate": -1.53,
+  "eps_estimate": null,
   "analysts": {
     "strong_buy": 0,
     "buy": 2,
@@ -24,12 +24,6 @@
   "target_low": 45,
   "target_analysts": 2,
   "statements": [
-    {
-      "year": "2022",
-      "revenue": 91947000,
-      "net": 12459000,
-      "margin": 13.6
-    },
     {
       "year": "2023",
       "revenue": 39846000,
@@ -47,14 +41,15 @@
       "revenue": 44066000,
       "net": -147334000,
       "margin": -334.3
+    },
+    {
+      "year": "2026",
+      "revenue": 18114000,
+      "net": null,
+      "margin": null
     }
   ],
   "quarterly": [
-    {
-      "q": "3Q2025",
-      "revenue": 802000,
-      "earnings": -8493000
-    },
     {
       "q": "4Q2025",
       "revenue": 1887000,
@@ -69,14 +64,14 @@
       "q": "2Q2026",
       "revenue": 9040000,
       "earnings": 2125000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 1847000,
+      "earnings": -3406000
     }
   ],
-  "growth": {
-    "q0": 0.27719998,
-    "q1": null,
-    "y0": 0.9933,
-    "y1": -19.6364
-  },
+  "growth": null,
   "ratings": [
     {
       "date": "2026-08-12",
@@ -210,9 +205,9 @@
   },
   "extras": {
     "beta": 0.942,
-    "enterprise_value": 304914240,
-    "ev_ebitda": 161.075,
-    "ev_revenue": 17.864,
+    "enterprise_value": 290818976,
+    "ev_ebitda": 153.629,
+    "ev_revenue": 17.038,
     "float_shares": 5607171,
     "short_shares": 185321,
     "short_pct_float": 3.27,
@@ -223,14 +218,8 @@
   "ex_dividend": "2026-10-02",
   "dividend_date": null,
   "payout_ratio": 0.95239997,
-  "inst_count": 158,
+  "inst_count": 159,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": -0.39,
-      "actual": -2.1169,
-      "surprise_pct": -442.79
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0,
@@ -248,6 +237,12 @@
       "estimate": -0.73,
       "actual": 0.29,
       "surprise_pct": 139.73
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": -1.53,
+      "actual": -0.44,
+      "surprise_pct": 71.24
     }
   ],
   "insiders": [

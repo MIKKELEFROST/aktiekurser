@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20T22:47:10.231Z",
+  "updated_at": "2026-11-24T03:01:32.472Z",
   "source": "Yahoo Finance",
   "symbol": "AMTM",
   "summary": "Amentum Holdings, Inc. engages in the provision of engineering and technology solutions in the United States and internationally. It operates through two segments, Digital Solutions and Global Engineering Solutions. The company offers digital and data-driven solutions, including intelligence analytics, space system development, cybersecurity, and IT to the federal government and commercial clients. It also provides large-scale environmental remediation, nuclear power solutions, platform engineering, sustainment, and supply chain management for the U.S. government and allied nations. The company was incorporated in 2023 and is headquartered in Chantilly, Virginia.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-23",
   "earnings_estimated": false,
   "earnings_call": "2026-11-24",
-  "eps_estimate": 0.65549,
+  "eps_estimate": 0.58412,
   "analysts": {
     "strong_buy": 2,
     "buy": 3,
@@ -41,14 +41,15 @@
       "revenue": 14393000000,
       "net": 66000000,
       "margin": 0.5
+    },
+    {
+      "year": "2026",
+      "revenue": 13825000000,
+      "net": 338000000,
+      "margin": 2.4
     }
   ],
   "quarterly": [
-    {
-      "q": "3Q2025",
-      "revenue": 3925000000,
-      "earnings": 40000000
-    },
     {
       "q": "4Q2025",
       "revenue": 3237000000,
@@ -63,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 3490000000,
       "earnings": 66000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 3620000000,
+      "earnings": 174000000
     }
   ],
   "growth": {
-    "q0": 0.0405,
-    "q1": 0.0817,
-    "y0": 0.109,
-    "y1": 0.0721
+    "q0": 0.0817,
+    "q1": 0.0397,
+    "y0": 0.051599998,
+    "y1": 0.118
   },
   "ratings": [
     {
@@ -225,10 +231,10 @@
   },
   "extras": {
     "beta": 0.156,
-    "enterprise_value": 8599524352,
-    "ev_ebitda": 8.548,
-    "ev_revenue": 0.609,
-    "float_shares": 152457084,
+    "enterprise_value": 8509057536,
+    "ev_ebitda": 8.458,
+    "ev_revenue": 0.602,
+    "float_shares": 152219912,
     "short_shares": 14048894,
     "short_pct_float": 9.13,
     "short_ratio": 7.55,
@@ -238,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 602,
+  "inst_count": 601,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.59159,
-      "actual": 0.63,
-      "surprise_pct": 6.49
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.51706,
@@ -263,6 +263,12 @@
       "estimate": 0.61103,
       "actual": 0.67,
       "surprise_pct": 9.65
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.65549,
+      "actual": 0.71,
+      "surprise_pct": 8.32
     }
   ],
   "insiders": [
@@ -294,12 +300,39 @@
       "date": "2026-11-17"
     },
     {
+      "name": "ARNETTE STEPHEN A",
+      "role": "Chief Operating Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 15589,
+      "date": "2026-11-17"
+    },
+    {
+      "name": "BRUNING JILL L",
+      "role": "Chief Technology Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 5938,
+      "date": "2026-11-17"
+    },
+    {
       "name": "MULLEN SEAN THOMAS",
       "role": "Officer",
       "kind": "other",
       "text": null,
       "value": null,
       "shares": 5938,
+      "date": "2026-11-17"
+    },
+    {
+      "name": "BURTON DARREN",
+      "role": "Officer",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 7423,
       "date": "2026-11-17"
     },
     {
@@ -327,33 +360,6 @@
       "text": null,
       "value": null,
       "shares": 39618,
-      "date": "2026-11-06"
-    },
-    {
-      "name": "JOHNSON TRAVIS BARTON",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 12097,
-      "date": "2026-11-06"
-    },
-    {
-      "name": "ARNETTE STEPHEN A",
-      "role": "Chief Operating Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 12702,
-      "date": "2026-11-06"
-    },
-    {
-      "name": "BRUNING JILL L",
-      "role": "Chief Technology Officer",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 4839,
       "date": "2026-11-06"
     }
   ],

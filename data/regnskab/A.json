@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20T22:47:10.142Z",
+  "updated_at": "2026-11-24T03:01:32.377Z",
   "source": "Yahoo Finance",
   "symbol": "A",
   "summary": "Agilent Technologies, Inc. provides application focused solutions to the life sciences, diagnostics, and applied chemical markets worldwide. The company operates through three segments: Life Sciences and Diagnostics Markets, Agilent CrossLab, and Applied Markets. The Life Sciences and Diagnostics Markets segment offers liquid chromatography systems and components; and liquid chromatography mass spectrometry systems. This segment is also involved in the genomics, contract development and manufacturing organization, pathology, companion diagnostics, and biomolecular analysis businesses. The Agilent CrossLab segment provides various services, including repairs, parts, maintenance, installations, training, compliance support, software as a service, asset management, consulting, and other custom services. This segment also offers consumables, including gas chromatography and liquid chromatography columns, sample preparation products, custom chemistries, and various laboratory supplies; software and informatics solutions comprising software for instrument control, data acquisition, data analysis, secure storage of results, and laboratory information and workflow management; and OpenLab laboratory software, an open software platform that enables customers to capture, analyze, and share scientific data throughout the lab and across the enterprise. In addition, it provides automated sample preparation solutions, such as liquid handling, plate management, consumables, and scheduling software. The Applied Markets segment offers products in the areas of gas chromatography, mass spectrometry, spectroscopy, vacuum technology, and remarketed instruments. It markets its products through direct sales, distributors, resellers, manufacturer's representatives, and electronic commerce. Agilent Technologies, Inc. was incorporated in 1999 and is headquartered in Santa Clara, California.",
@@ -25,12 +25,6 @@
   "target_analysts": 20,
   "statements": [
     {
-      "year": "2022",
-      "revenue": 6848000000,
-      "net": 1254000000,
-      "margin": 18.3
-    },
-    {
       "year": "2023",
       "revenue": 6833000000,
       "net": 1240000000,
@@ -47,14 +41,15 @@
       "revenue": 6948000000,
       "net": 1303000000,
       "margin": 18.8
+    },
+    {
+      "year": "2026",
+      "revenue": 7551000000,
+      "net": 1457000000,
+      "margin": 19.3
     }
   ],
   "quarterly": [
-    {
-      "q": "3Q2025",
-      "revenue": 1861000000,
-      "earnings": 434000000
-    },
     {
       "q": "4Q2025",
       "revenue": 1798000000,
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 1878000000,
       "earnings": 362000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 2040000000,
+      "earnings": 451000000
     }
   ],
   "growth": {
     "q0": 0.0861,
     "q1": 0.0999,
-    "y0": 0.1094,
-    "y1": 0.0833
+    "y0": 0.1093,
+    "y1": 0.0834
   },
   "ratings": [
     {
@@ -223,25 +223,25 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 5,
+    "buys": 7,
     "sells": 2,
-    "bought": 67658,
+    "bought": 74146,
     "sold": 2234,
-    "net_pct": 12.1
+    "net_pct": 12.7
   },
   "extras": {
     "beta": 1.237,
-    "enterprise_value": 51823407104,
-    "ev_ebitda": 24.915,
-    "ev_revenue": 7.03,
-    "float_shares": 281195839,
+    "enterprise_value": 52020756480,
+    "ev_ebitda": 25.01,
+    "ev_revenue": 7.057,
+    "float_shares": 281150730,
     "short_shares": 4892390,
     "short_pct_float": 1.97,
     "short_ratio": 2.27,
     "last_split": "1398:1000",
     "last_split_date": "2014-11-03"
   },
-  "ex_dividend": "2026-10-06",
+  "ex_dividend": "2027-01-05",
   "dividend_date": null,
   "payout_ratio": 0.1998,
   "inst_count": 1751,
@@ -279,6 +279,33 @@
       "text": "Stock Award(Grant) at price 0.00 per share.",
       "value": 0,
       "shares": 14731,
+      "date": "2026-11-17"
+    },
+    {
+      "name": "RIEMANN ANGELICA",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 6210,
+      "date": "2026-11-17"
+    },
+    {
+      "name": "KIRKWOOD JONAH PREVOST",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 6176,
+      "date": "2026-11-17"
+    },
+    {
+      "name": "ZHANG JIANMIAO MIKE",
+      "role": "Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 0.00 per share.",
+      "value": 0,
+      "shares": 2974,
       "date": "2026-11-17"
     },
     {
@@ -334,33 +361,6 @@
       "value": 0,
       "shares": 8872,
       "date": "2026-05-19"
-    },
-    {
-      "name": "BRAWLEY OTIS W",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 111.75 per share.",
-      "value": 340390,
-      "shares": 3046,
-      "date": "2026-03-19"
-    },
-    {
-      "name": "WILSON DOW R",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 111.75 per share.",
-      "value": 241156,
-      "shares": 2158,
-      "date": "2026-03-19"
-    },
-    {
-      "name": "BROWN JUDY LYNNE GAWLIK",
-      "role": "Director",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 111.75 per share.",
-      "value": 241156,
-      "shares": 2158,
-      "date": "2026-03-19"
     }
   ],
   "dividends": [

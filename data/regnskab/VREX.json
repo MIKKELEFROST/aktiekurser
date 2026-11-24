@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20T22:47:11.685Z",
+  "updated_at": "2026-11-24T03:01:34.014Z",
   "source": "Yahoo Finance",
   "symbol": "VREX",
   "summary": "Varex Imaging Corporation designs, manufactures, and sells X-ray imaging components. It operates through two segments, Medical and Industrial. The Medical segment designs, manufactures, sells, and services X-ray imaging components, comprising X-ray tubes, digital detectors and accessories, ionization chambers, high voltage connectors, image-processing software and workstations, 3D reconstruction software, computer-aided diagnostic software, collimators, automatic exposure control devices, generators, and heat exchangers. This segment's products are used in a range of applications, including CT, mammography, oncology, cardiac, surgery, dental, and other diagnostic radiography uses. The Industrial segment designs, develops, manufactures, sells, and services Linatron X-ray linear accelerators, non-intrusive cargo inspection systems, X-ray tubes, digital detectors, high voltage connectors, and coolers for use in security and inspection applications, such as baggage screening at airports, cargo screening at ports and borders, and nondestructive testing, irradiation, and inspection in various applications. It sells its products through imaging system original equipment manufacturers, independent service companies, and distributors, as well as directly to end-users. The company has operations in North America, Latin America, Europe, the Middle East, India, Africa, Asia, and Australia. The company was incorporated in 2016 and is headquartered in Salt Lake City, Utah.",
@@ -7,10 +7,10 @@
   "website": "https://www.vareximaging.com",
   "employees": 2500,
   "ceo": "Mr. Sunny S. Sanyal",
-  "next_earnings": "2026-12-01",
-  "earnings_estimated": true,
+  "next_earnings": "2026-11-23",
+  "earnings_estimated": false,
   "earnings_call": null,
-  "eps_estimate": 0.29,
+  "eps_estimate": 0.18,
   "analysts": {
     "strong_buy": 0,
     "buy": 0,
@@ -24,12 +24,6 @@
   "target_low": 18.9,
   "target_analysts": 2,
   "statements": [
-    {
-      "year": "2022",
-      "revenue": 859400000,
-      "net": 30300000,
-      "margin": 3.5
-    },
     {
       "year": "2023",
       "revenue": 893400000,
@@ -47,14 +41,15 @@
       "revenue": 844600000,
       "net": -70300000,
       "margin": -8.3
+    },
+    {
+      "year": "2026",
+      "revenue": 856100000,
+      "net": 3700000,
+      "margin": 0.4
     }
   ],
   "quarterly": [
-    {
-      "q": "3Q2025",
-      "revenue": 228900000,
-      "earnings": 12200000
-    },
     {
       "q": "4Q2025",
       "revenue": 209600000,
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 210500000,
       "earnings": 15700000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 220000000,
+      "earnings": -6200000
     }
   ],
   "growth": {
-    "q0": -0.21620001,
-    "q1": -0.052600004,
-    "y0": -0.066700004,
-    "y1": 0.2738
+    "q0": -0.052600004,
+    "q1": 0.0952,
+    "y0": 0.38959998,
+    "y1": null
   },
   "ratings": [
     {
@@ -231,8 +231,8 @@
   },
   "extras": {
     "beta": 1.035,
-    "enterprise_value": 1056793984,
-    "ev_ebitda": 10.621,
+    "enterprise_value": 1057214976,
+    "ev_ebitda": 10.625,
     "ev_revenue": 1.222,
     "float_shares": 41372933,
     "short_shares": 2033287,
@@ -244,14 +244,8 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 253,
+  "inst_count": 254,
   "eps_history": [
-    {
-      "quarter": "2025-09-30",
-      "estimate": 0.1825,
-      "actual": 0.37,
-      "surprise_pct": 102.74
-    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.126,
@@ -269,6 +263,12 @@
       "estimate": 0.198,
       "actual": 0.31,
       "surprise_pct": 56.57
+    },
+    {
+      "quarter": "2026-09-30",
+      "estimate": 0.29,
+      "actual": 0.06,
+      "surprise_pct": -79.31
     }
   ],
   "insiders": [
@@ -318,24 +318,6 @@
       "date": "2026-03-20"
     },
     {
-      "name": "CHERTOFF JOCELYN D.",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 8483,
-      "date": "2026-02-09"
-    },
-    {
-      "name": "GUERTIN TIMOTHY E",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 8483,
-      "date": "2026-02-09"
-    },
-    {
       "name": "TSINGOS CHRISTINE A",
       "role": "Director",
       "kind": "other",
@@ -355,6 +337,24 @@
     },
     {
       "name": "BARDWELL KATHLEEN",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 8483,
+      "date": "2026-02-09"
+    },
+    {
+      "name": "KUNKEL JAY K.",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 8483,
+      "date": "2026-02-09"
+    },
+    {
+      "name": "CHERTOFF JOCELYN D.",
       "role": "Director",
       "kind": "other",
       "text": null,

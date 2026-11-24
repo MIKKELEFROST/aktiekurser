@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20T22:47:10.856Z",
+  "updated_at": "2026-11-24T03:01:33.130Z",
   "source": "Yahoo Finance",
   "symbol": "HPE",
   "summary": "Hewlett Packard Enterprise Company, together with its subsidiaries, develops intelligent solutions in the United States, the Americas, Europe, the Middle East, Africa, the Asia Pacific, Japan, and internationally. It operates in five segments: Server, Hybrid Cloud, Networking, Financial Services, and Corporate Investments and Other. The company offers general-purpose servers, workload-optimized servers, and integrated systems, including HPE ProLiant Rack and Tower servers; HPE Synergy; HPE Scale Up servers; HPE Edgeline servers; HPE Cray EX; HPE Cray XD; and HPE NonStop. It also provides cloud-native and hybrid solutions, such as HPE Alletra Storage; HPE InfoSight; HPE CloudPhysics; and HPE GreenLake. In addition, the company develops and sells networking and security products and services comprising hardware products, which include Wi-Fi and private cellular access points, MX and PTX routers, and gateways, as well as QFX, EX, and CX switches; software products, such as Mist and Aruba Central; and services comprising professional, maintenance, support services, management software, and education and training programs. Further, it offers investment solutions, including leasing, financing, IT consumption, utility programs, and asset management services, as well as supports financial solutions for on-premise flexible consumption models. The company serves commercial and large enterprise groups, as well as business and public sector enterprises. It sells its products through resellers, distribution partners, master area partners, original equipment manufacturers, independent software vendors, systems integrators, and advisory firms. The company was founded in 1939 and is headquartered in Spring, Texas.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-23",
   "earnings_estimated": false,
   "earnings_call": "2026-11-23",
-  "eps_estimate": 1.28821,
+  "eps_estimate": 1.07493,
   "analysts": {
     "strong_buy": 5,
     "buy": 10,
@@ -24,12 +24,6 @@
   "target_low": 52,
   "target_analysts": 21,
   "statements": [
-    {
-      "year": "2022",
-      "revenue": 28496000000,
-      "net": 868000000,
-      "margin": 3
-    },
     {
       "year": "2023",
       "revenue": 29135000000,
@@ -47,14 +41,15 @@
       "revenue": 34296000000,
       "net": -59000000,
       "margin": -0.2
+    },
+    {
+      "year": "2026",
+      "revenue": 46739000000,
+      "net": 4317000000,
+      "margin": 9.2
     }
   ],
   "quarterly": [
-    {
-      "q": "3Q2025",
-      "revenue": 9679000000,
-      "earnings": 146000000
-    },
     {
       "q": "4Q2025",
       "revenue": 9301000000,
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 12213000000,
       "earnings": 1511000000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 14547000000,
+      "earnings": 1788000000
     }
   ],
   "growth": {
-    "q0": 1.0778,
-    "q1": 0.65370005,
-    "y0": 0.9797,
-    "y1": 0.24139999
+    "q0": 0.65370005,
+    "q1": 0.42,
+    "y0": 0.2009,
+    "y1": 0.15529999
   },
   "ratings": [
     {
@@ -223,17 +223,17 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 12,
+    "buys": 11,
     "sells": 8,
-    "bought": 3536962,
+    "bought": 3505670,
     "sold": 639471,
-    "net_pct": 543
+    "net_pct": 507.4
   },
   "extras": {
     "beta": 1.466,
-    "enterprise_value": 74553376768,
-    "ev_ebitda": 10.821,
-    "ev_revenue": 1.781,
+    "enterprise_value": 77911859200,
+    "ev_ebitda": 11.308,
+    "ev_revenue": 1.861,
     "float_shares": 1321796504,
     "short_shares": 46411069,
     "short_pct_float": 3.98,
@@ -244,14 +244,8 @@
   "ex_dividend": "2026-09-17",
   "dividend_date": null,
   "payout_ratio": 0.2874,
-  "inst_count": 2188,
+  "inst_count": 2189,
   "eps_history": [
-    {
-      "quarter": "2025-10-31",
-      "estimate": 0.5819,
-      "actual": 0.62,
-      "surprise_pct": 6.55
-    },
     {
       "quarter": "2026-01-31",
       "estimate": 0.58689,
@@ -269,6 +263,12 @@
       "estimate": 0.93739,
       "actual": 1.11,
       "surprise_pct": 18.41
+    },
+    {
+      "quarter": "2026-10-31",
+      "estimate": 1.28821,
+      "actual": 1.43,
+      "surprise_pct": 11.01
     }
   ],
   "insiders": [
