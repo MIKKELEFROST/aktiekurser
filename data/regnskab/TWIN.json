@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24T03:01:33.946Z",
+  "updated_at": "2026-11-25T01:07:58.222Z",
   "source": "Yahoo Finance",
   "symbol": "TWIN",
   "summary": "Twin Disc, Incorporated engages in the design, manufacture, and sale of marine and heavy duty off-highway power transmission equipment in the United States, the Netherlands, China, Australia, Finland, Italy, and internationally. The company operates in two segments, Manufacturing and Distribution. It offers marine transmissions, azimuth drives, surface drives, propellers, and boat management systems, as well as power-shift transmissions, hydraulic torque converters, power take-offs, industrial clutches, controls systems, and braking systems. The company also provides third-party manufactured products. It sells its products through a direct sales force and distributor network to customers primarily in the pleasure craft, commercial, and military marine markets, as well as the energy and natural resources, government, military, and industrial markets. The company was incorporated in 1918 and is headquartered in Milwaukee, Wisconsin.",
@@ -8,7 +8,7 @@
   "employees": 1087,
   "ceo": "Mr. John H. Batten",
   "next_earnings": "2027-02-03",
-  "earnings_estimated": true,
+  "earnings_estimated": false,
   "earnings_call": "2026-11-04",
   "eps_estimate": null,
   "analysts": {
@@ -219,16 +219,16 @@
   "insider_net": {
     "period": "6m",
     "buys": 4,
-    "sells": 2,
+    "sells": 3,
     "bought": 145357,
-    "sold": 17686,
+    "sold": 20029,
     "net_pct": 4.3
   },
   "extras": {
     "beta": 0.473,
-    "enterprise_value": 359737440,
-    "ev_ebitda": 11.161,
-    "ev_revenue": 0.922,
+    "enterprise_value": 344907744,
+    "ev_ebitda": 10.7,
+    "ev_revenue": 0.884,
     "float_shares": 10446647,
     "short_shares": 404479,
     "short_pct_float": 4.34,
@@ -262,6 +262,15 @@
   ],
   "insiders": [
     {
+      "name": "GIESSELMAN JANET PLAUT",
+      "role": "Director",
+      "kind": "sell",
+      "text": "Sale at price 21.38 per share.",
+      "value": 50093,
+      "shares": 2343,
+      "date": "2026-11-20"
+    },
+    {
       "name": "KNUTSON JEFFREY SCOTT CPA",
       "role": "Chief Financial Officer",
       "kind": "sell",
@@ -280,21 +289,21 @@
       "date": "2026-09-03"
     },
     {
-      "name": "BATTEN JOHN H",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 24.01 per share.",
-      "value": 2339750,
-      "shares": 97449,
-      "date": "2026-08-05"
-    },
-    {
       "name": "KNUTSON JEFFREY SCOTT CPA",
       "role": "Chief Financial Officer",
       "kind": "other",
       "text": "Stock Award(Grant) at price 24.01 per share.",
       "value": 1137402,
       "shares": 47372,
+      "date": "2026-08-05"
+    },
+    {
+      "name": "BATTEN JOHN H",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Stock Award(Grant) at price 24.01 per share.",
+      "value": 2339750,
+      "shares": 97449,
       "date": "2026-08-05"
     },
     {
@@ -341,15 +350,6 @@
       "value": 108032,
       "shares": 6000,
       "date": "2026-02-27"
-    },
-    {
-      "name": "BATTEN JOHN H",
-      "role": "Chief Executive Officer",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 18.05 per share.",
-      "value": 9658,
-      "shares": 535,
-      "date": "2026-02-26"
     }
   ],
   "dividends": [

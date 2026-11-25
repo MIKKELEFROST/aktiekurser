@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24T03:01:33.789Z",
+  "updated_at": "2026-11-25T01:07:57.984Z",
   "source": "Yahoo Finance",
   "symbol": "SJM",
   "summary": "The J. M. Smucker Company manufactures and markets branded food and beverage products worldwide. The company operates through five segments: U.S. Retail Coffee, U.S. Retail Frozen Handheld and Spreads, U.S. Retail Pet Foods, Sweet Baked Snacks, and Away From Home. It offers coffee, sweet baked goods, pet snacks, frozen handheld products, peanut butter, cat and dog food, fruit and specialty spreads, cookies, frozen sandwiches and snacks, hot beverages, portion control products, toppings and syrups, baking mixes and ingredients, and flour. The company provides its products under the Folgers, Café Bustelo, Dunkin', Jif, Smucker's, Uncrustables, Meow Mix, Milk-Bone, Pup-Peroni, Canine Carry Outs, Hostess, and 1850 brand names. It sells its products through direct sales and brokers to food retailers, club stores, discount and dollar stores, online retailers, pet specialty stores, distributors, drug stores, military commissaries, mass merchandisers, supermarket chains, national mass retailers, convenience stores, vending channels, and foodservice distributors and operators. The J. M. Smucker Company was founded in 1897 and is headquartered in Orrville, Ohio.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-24",
   "earnings_estimated": false,
   "earnings_call": "2026-11-24",
-  "eps_estimate": 2.56442,
+  "eps_estimate": 2.48606,
   "analysts": {
     "strong_buy": 3,
     "buy": 7,
@@ -19,9 +19,9 @@
     "strong_sell": 0,
     "total": 19
   },
-  "target_mean": 142.375,
+  "target_mean": 142.9375,
   "target_high": 160,
-  "target_low": 120,
+  "target_low": 125,
   "target_analysts": 16,
   "statements": [
     {
@@ -51,11 +51,6 @@
   ],
   "quarterly": [
     {
-      "q": "3Q2025",
-      "revenue": 2330100000,
-      "earnings": 241300000
-    },
-    {
       "q": "4Q2025",
       "revenue": 2339400000,
       "earnings": -724200000
@@ -69,13 +64,18 @@
       "q": "2Q2026",
       "revenue": 2219300000,
       "earnings": 324300000
+    },
+    {
+      "q": "3Q2026",
+      "revenue": 2283200000,
+      "earnings": 248700000
     }
   ],
   "growth": {
-    "q0": 0.2212,
-    "q1": 0.0685,
-    "y0": 0.1785,
-    "y1": 0.0212
+    "q0": 0.0446,
+    "q1": -0.0979,
+    "y0": 0.1917,
+    "y1": 0.014099999
   },
   "ratings": [
     {
@@ -231,9 +231,9 @@
   },
   "extras": {
     "beta": 0.252,
-    "enterprise_value": 21080981504,
-    "ev_ebitda": 9.312,
-    "ev_revenue": 2.302,
+    "enterprise_value": 20874813440,
+    "ev_ebitda": 9.221,
+    "ev_revenue": 2.28,
     "float_shares": 104520075,
     "short_shares": 3146553,
     "short_pct_float": 3.02,
@@ -246,12 +246,6 @@
   "payout_ratio": 2.0561,
   "inst_count": 1202,
   "eps_history": [
-    {
-      "quarter": "2025-10-31",
-      "estimate": 2.10062,
-      "actual": 2.1,
-      "surprise_pct": -0.03
-    },
     {
       "quarter": "2026-01-31",
       "estimate": 2.26287,
@@ -269,9 +263,24 @@
       "estimate": 2.21641,
       "actual": 3.24,
       "surprise_pct": 46.18
+    },
+    {
+      "quarter": "2026-10-31",
+      "estimate": 2.56442,
+      "actual": 3.2,
+      "surprise_pct": 24.78
     }
   ],
   "insiders": [
+    {
+      "name": "SMUCKER MARK TIMOTHY",
+      "role": "Chief Executive Officer",
+      "kind": "other",
+      "text": "Conversion of Exercise of derivative security at price 108.90 per share.",
+      "value": 9237007,
+      "shares": 84821,
+      "date": "2026-08-31"
+    },
     {
       "name": "SMUCKER MARK TIMOTHY",
       "role": "Chief Executive Officer",
@@ -291,13 +300,13 @@
       "date": "2026-08-31"
     },
     {
-      "name": "SMUCKER MARK TIMOTHY",
-      "role": "Chief Executive Officer",
+      "name": "MARSHALL TUCKER H",
+      "role": "Chief Financial Officer",
       "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 108.90 per share.",
-      "value": 9237007,
-      "shares": 84821,
-      "date": "2026-08-31"
+      "text": "Conversion of Exercise of derivative security at price 108.90 - 125.82 per share.",
+      "value": 2200383,
+      "shares": 18482,
+      "date": "2026-08-28"
     },
     {
       "name": "MARSHALL TUCKER H",
@@ -305,15 +314,6 @@
       "kind": "sell",
       "text": "Sale at price 131.91 - 132.26 per share.",
       "value": 2440547,
-      "shares": 18482,
-      "date": "2026-08-28"
-    },
-    {
-      "name": "MARSHALL TUCKER H",
-      "role": "Chief Financial Officer",
-      "kind": "other",
-      "text": "Conversion of Exercise of derivative security at price 108.90 - 125.82 per share.",
-      "value": 2200383,
       "shares": 18482,
       "date": "2026-08-28"
     },
