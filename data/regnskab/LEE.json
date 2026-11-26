@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25T01:07:57.240Z",
+  "updated_at": "2026-11-26T00:44:34.694Z",
   "source": "Yahoo Finance",
   "symbol": "LEE",
   "summary": "Lee Enterprises, Incorporated, a digital-first subscription and marketing services company, provides local news and information, and advertising services in the United States. The company offers digital subscription platforms; daily and weekly newspapers; and niche products for national and international news are accessible across digital and print formats through websites and mobile applications. It also provides subscription services through digital and print subscriptions; and omni-channel marketing solutions, including digital, print, programmatic, video, and social media campaigns. In addition, the company offers commercial printing, distribution, and other digital services through SaaS content management solution. Lee Enterprises, Incorporated was founded in 1890 and is based in Davenport, Iowa.",
@@ -75,7 +75,7 @@
       "kind": "fond",
       "pct": 0.37,
       "shares": 218400,
-      "date": "2026-06-30"
+      "date": "2026-09-30"
     },
     {
       "name": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
@@ -94,21 +94,21 @@
   ],
   "insider_net": {
     "period": "6m",
-    "buys": 27,
+    "buys": 28,
     "sells": 1,
-    "bought": 795168,
+    "bought": 818717,
     "sold": 24000,
-    "net_pct": 5
+    "net_pct": 5.1
   },
   "extras": {
     "beta": 0.481,
-    "enterprise_value": 557026432,
-    "ev_ebitda": 10.493,
-    "ev_revenue": 1.077,
+    "enterprise_value": 570044992,
+    "ev_ebitda": 10.738,
+    "ev_revenue": 1.102,
     "float_shares": 3748853,
-    "short_shares": 510265,
-    "short_pct_float": 7.28,
-    "short_ratio": 14.77,
+    "short_shares": 495388,
+    "short_pct_float": 7.06,
+    "short_ratio": 13.67,
     "last_split": "1:10",
     "last_split_date": "2021-03-15"
   },
@@ -116,8 +116,36 @@
   "dividend_date": null,
   "payout_ratio": 0,
   "inst_count": 91,
-  "eps_history": [],
+  "eps_history": [
+    {
+      "quarter": "2024-06-30",
+      "estimate": 0.68,
+      "actual": -0.73,
+      "surprise_pct": -207.35
+    },
+    {
+      "quarter": "2024-09-30",
+      "estimate": 0.65,
+      "actual": -1.69,
+      "surprise_pct": -360
+    },
+    {
+      "quarter": "2024-12-31",
+      "estimate": -0.4,
+      "actual": -2.8,
+      "surprise_pct": -600
+    }
+  ],
   "insiders": [
+    {
+      "name": "HOFFMANN DAVID HENRY",
+      "role": "Director and Beneficial Owner of more than 10% of a Class of Security",
+      "kind": "buy",
+      "text": "Purchase at price 6.20 - 6.61 per share.",
+      "value": 149628,
+      "shares": 23549,
+      "date": "2026-11-24"
+    },
     {
       "name": "HOFFMANN DAVID HENRY",
       "role": "Director and Beneficial Owner of more than 10% of a Class of Security",
@@ -197,15 +225,6 @@
       "text": "Stock Award(Grant) at price 8.00 per share.",
       "value": 42504,
       "shares": 5313,
-      "date": "2026-08-31"
-    },
-    {
-      "name": "HOFFMANN DAVID HENRY",
-      "role": "Director and Beneficial Owner of more than 10% of a Class of Security",
-      "kind": "other",
-      "text": "Stock Award(Grant) at price 8.00 per share.",
-      "value": 62504,
-      "shares": 7813,
       "date": "2026-08-31"
     }
   ],
