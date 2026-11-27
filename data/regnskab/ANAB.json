@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-26T00:44:33.513Z",
+  "updated_at": "2026-11-27T00:47:16.947Z",
   "source": "Yahoo Finance",
   "symbol": "ANAB",
   "summary": "AnaptysBio, Inc. discovers and out-licenses therapeutic bodies in the United States. The company manages financial collaborations for Jemperli, a PD-1 antagonist for various solid tumor indications; and Quimilza, an IL-36R antagonist mAb, which has completed two registration-enabling global Phase 3 trials, and GEMINI-1 and GEMINI-2, evaluating the safety and efficacy of Quimilza in patients with generalized pustular psoriasis. It has a collaboration and exclusive license agreement with GSK plc to develop Jemperli as a monotherapy; and an exclusive license agreement with Vanda Pharmaceuticals Inc. for the development and commercialization of Quimilza. The company was formerly known as Anaptys Biosciences, Inc. and changed its name to AnaptysBio, Inc. in July 2006. AnaptysBio, Inc. was incorporated in 2005 and is based in San Diego, California.",
@@ -10,7 +10,7 @@
   "next_earnings": "2026-11-12",
   "earnings_estimated": true,
   "earnings_call": null,
-  "eps_estimate": 2.01,
+  "eps_estimate": 0.86,
   "analysts": {
     "strong_buy": 3,
     "buy": 5,
@@ -24,12 +24,6 @@
   "target_low": 60,
   "target_analysts": 8,
   "statements": [
-    {
-      "year": "2022",
-      "revenue": 10287000,
-      "net": -128724000,
-      "margin": -1251.3
-    },
     {
       "year": "2023",
       "revenue": 17157000,
@@ -47,9 +41,20 @@
       "revenue": 234603000,
       "net": -13232000,
       "margin": -5.6
+    },
+    {
+      "year": "2026",
+      "revenue": null,
+      "net": 130996000,
+      "margin": null
     }
   ],
   "quarterly": [
+    {
+      "q": "2Q2025",
+      "revenue": 22263000,
+      "earnings": -38630000
+    },
     {
       "q": "3Q2025",
       "revenue": 76320000,
@@ -61,21 +66,16 @@
       "earnings": 49614000
     },
     {
-      "q": "2Q2026",
-      "revenue": 27488000,
-      "earnings": 177317000
-    },
-    {
       "q": "3Q2026",
       "revenue": 30274000,
       "earnings": 3876000
     }
   ],
   "growth": {
-    "q0": 0.2722,
+    "q0": -0.4557,
     "q1": null,
-    "y0": 8.5988,
-    "y1": 0.5409
+    "y0": null,
+    "y1": 0.7736
   },
   "ratings": [
     {
@@ -234,7 +234,7 @@
     "enterprise_value": 1629182720,
     "ev_ebitda": 180.719,
     "ev_revenue": 27.134,
-    "float_shares": 19956160,
+    "float_shares": 19909781,
     "short_shares": 4805396,
     "short_pct_float": 35.79,
     "short_ratio": 11.61,
@@ -244,8 +244,14 @@
   "ex_dividend": null,
   "dividend_date": null,
   "payout_ratio": 0,
-  "inst_count": 320,
+  "inst_count": 321,
   "eps_history": [
+    {
+      "quarter": "2025-09-30",
+      "estimate": -1.25072,
+      "actual": 0.52,
+      "surprise_pct": 141.58
+    },
     {
       "quarter": "2025-12-31",
       "estimate": 0.93347,
@@ -253,16 +259,10 @@
       "surprise_pct": 69.26
     },
     {
-      "quarter": "2026-06-30",
-      "estimate": 0.14149,
-      "actual": 4.93,
-      "surprise_pct": 3384.35
-    },
-    {
       "quarter": "2026-09-30",
-      "estimate": 0.53088,
+      "estimate": 0.87,
       "actual": 0.11,
-      "surprise_pct": -79.28
+      "surprise_pct": -87.36
     }
   ],
   "insiders": [
@@ -294,6 +294,15 @@
       "date": "2026-09-15"
     },
     {
+      "name": "RENTON HOLLINGS C",
+      "role": "Director",
+      "kind": "other",
+      "text": null,
+      "value": null,
+      "shares": 6030,
+      "date": "2026-06-15"
+    },
+    {
       "name": "ORWIN JOHN A",
       "role": "Director",
       "kind": "other",
@@ -304,15 +313,6 @@
     },
     {
       "name": "SCHMID JOHN P",
-      "role": "Director",
-      "kind": "other",
-      "text": null,
-      "value": null,
-      "shares": 6030,
-      "date": "2026-06-15"
-    },
-    {
-      "name": "RENTON HOLLINGS C",
       "role": "Director",
       "kind": "other",
       "text": null,
